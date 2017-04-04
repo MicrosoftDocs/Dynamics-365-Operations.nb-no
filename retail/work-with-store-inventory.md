@@ -33,9 +33,8 @@ Du kan bruke følgende typer dokumenter til å styre organisasjonens lager.
 
 ## <a name="purchase-orders"></a>Bestillinger
 Bestillinger opprettes ved hovedkontoret. Hvis et lager for detaljhandel er inkludert i bestillingshodet, kan bestillingen mottas i butikken ved hjelp av moderne POS (MPOS) eller sky POS i Microsoft Dynamics 365 for operasjoner - detaljhandel. Når du har antallet som er mottatt på lageret, kan de lagres lokalt for ytterligere endringer. Antallene kan eventuelt lagres og sendes til hovedkontoret. På hovedkontoret, antallene som ble mottatt på lageret, vises i Dynamics 365 for operasjoner, i den **får nå** på bestillingen.
-Overføringsordrer
----------------
 
+## <a name="transfer-orders"></a>Overføringsordrer
 En overføringsordre kan angi at en bestemt butikk er en lokasjon som varer kan sendes fra. I dette tilfellet vises overføringsordren i butikken som en plukking forespørsel i MPOS eller sky POS. Når antall er plukket, er de utført og sendt til hovedkontoret. På hovedkontoret, vises antallet som ble plukket i butikken i Dynamics 365 for operasjoner, i den **leverer nå** i overføringsordren. En overføringsordre kan angi at en bestemt butikk er en lokasjon som varer kan sendes til. I dette tilfellet vises overføringsordren i butikken som en mottakende forespørsel i MPOS eller sky POS. Når du har antallet som er mottatt på lageret, kan de lagres lokalt for ytterligere endringer. Antallene kan eventuelt lagres og sendes til hovedkontoret. På hovedkontoret, antallene som ble mottatt på lageret, vises i Dynamics 365 for operasjoner, i den **får nå** i overføringsordren.
 
 ## <a name="stock-counts"></a>Lagerantall
