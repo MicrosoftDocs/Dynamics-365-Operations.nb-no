@@ -1,0 +1,42 @@
+---
+title: Administrere oppdateringer av standardkostnader
+description: "Oppdateringer av standard kostprisdata kan behandles ved hjelp av to ulike måter - enversjonsmåten og toversjonsmåten."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: CostingVersion
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 69992
+ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: mguada
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: 7e0f0817ff37c82ed98a51f10bcdde7e785a19a3
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="manage-standard-cost-updates"></a>Administrere oppdateringer av standardkostnader
+
+Oppdateringer av standard kostprisdata kan behandles ved hjelp av to ulike måter - enversjonsmåten og toversjonsmåten. 
+
+Enversjonsmåten bruker én etterkalkuleringsversjon som inneholder alle kostnadsposter. Disse postene inneholder de opprinnelige kostnadene og alle kostnadsoppdateringer.
+Toversjonsmåten bruker én versjon som inneholder poster for de opprinnelige kostnadene, og en ny versjon som inneholder poster for alle kostnadsoppdateringer. En viktig fordel med toversjonsmåten er den klare avmerkingen og sporingen av kostoppdateringer i en egen kostnadsberegningsversjon, uten at den opprinnelige kostnadsberegningsversjonen påvirkes. Toversjonsmåten kan brukes til å identifisere flere inkrementelle oppdateringer, hvor hver inkrementelle oppdatering har en egen etterkalkuleringsversjon som inneholder de inkrementelle kostprispostene. **Eksempel** Følgende eksempel viser hvordan enversjons- og toversjonsmåten kan brukes til å oppdatere standardkostnader i et produksjonsmiljø. For eksempel oppdateringer som gjenspeiler nye varer eller korrigeringer av feil. Anta at én enkelt etterkalkuleringsversjon representerer standardkostnadene for inneværende år. Identifikatoren for denne versjonen er 2016-STD. Versjon 2016-STD inneholder gjeldende aktive kostnader for alle varer. Den inneholder også alle rutingrelaterte kostnadskategorier og beregningsformler av indirekte kostnader som var kjent ved starten av året 2016. 2016-STD er den opprinnelige kostnadsberegningsversjonen.
+-   **Enversjons tilnærming til oppdateringer av kostprisdata** − I enversjonsmåten inneholder den opprinnelige etterkalkuleringsversjonen 2016-STD alle kostprisposter. Kostnad oppdateringer registreres i 2016-STD og settes til statusen "Venter". De uavsluttede kostnadene kan angis manuelt for nye innkjøpte varer, eller de kan beregnes for en produsert vare skal gjenspeile rettelser. Når Enversjonsmåten brukes, krever stykklisteberegningene ikke en fallback datakilden fordi alle aktive kostpriser finnes i kostnadsberegningsversjonen. Nå de uavsluttede kostprisene blir aktivert, vil den opprinnelige etterkalkuleringsversjonen 2016-STD igjen inneholde alle gjeldende aktive kostpriser.
+-   **Toversjons tilnærming til oppdateringer av kostprisdata** − Toversjonsmåten krever en ekstra etterkalkuleringsversjon som bare inneholder kostnadsoppdateringene. Identifikatoren for denne versjonen er 2016-STD-ENDRINGER. Kostnadsoppdateringer registreres i 2016-STD-ENDRINGER og settes til statusen Venter. Med toversjonsmåten krever stykklisteberegninger for uavsluttede kostpriser for produserte varer en tilbakefallsdatakilde. Dette skyldes at den ekstra etterkalkuleringsversjonen 2016-STD-ENDRINGER inneholder bare et delsett av kostnadsdata. Tilbakefallsprinsippet kan uttrykkes som de aktive kostprisene eller som etterkalkuleringsversjonen 2016-STD, fordi begge identifiserer kilden til kostnadsdataene når de ikke er inkludert i 2016-STD-ENDRINGER. Etter at de ventende kostnadne blir aktive, vil etterkalkuleringsversjon 2016-STD-CHANGES inneholde gjeldende aktive kostnader som gjenspeiler oppdateringene, mens den opprinnelige etterkalkuleringsversjonen 2016-STD vil være urørt. Når toversjonsmåten brukes, skal blkkeringspolicyer for den opprinnelige etterkalkuleringsversjonen settes opp for å forhindre oppdateringer. Det må defineres nøyaktig de samme blokkeringspolicyene for den andre kostnadsberegningsversjonen, med unntak av den angitte fra-datoen og den selektive bruken av sperrepolicyer for å tillate oppdateringer. Den angitte fra-datoen må oppdateres med hvert sett med endringer for å gjenspeile den planlagte aktiveringsdatoen.
+
+I dette eksemplet brukes en ekstra kostnadsberegningsversjon til å håndtere oppdateringer gjennom året 2016. Mer enn en ekstra kostnadsberegningsversjon kan brukes, for eksempel en egen versjon for hvert sett med oppdateringer. Når mer enn én ekstra etterkalkulering brukes, må tilbakefallsprinsippet uttrykkes som de aktive kostprisene fordi de aktive kostprisene er spredt over flere etterkalkuleringsversjoner.
+
+
+
+

@@ -1,0 +1,122 @@
+---
+title: Finansrapportering
+description: "Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for operasjoner og hvordan du bruker de økonomiske rapporteringsfunksjoner. Den inneholder en beskrivelse av økonomiske standardrapportene som tilbys."
+author: RobinARH
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: FinancialReports
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 10444
+ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: d13747f17b5f382b3a530b1f166681eeec0b9d73
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="financial-reporting"></a>Finansrapportering
+
+Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for operasjoner og hvordan du bruker de økonomiske rapporteringsfunksjoner. Den inneholder en beskrivelse av økonomiske standardrapportene som tilbys.
+
+<a name="accessing-financial-reporting"></a>Tilgang til finansrapportering
+-----------------------------
+
+Du kan finne den **finansiell rapportering** -menyen i følgende plasserer i Dynamics 365 for operasjoner:
+
+-   **Finans**&gt;**forespørsler og rapporter**
+-   **Budsjettering**&gt;**Inquires og rapporter**&gt;**Grunnleggende budsjettering**
+-   **Budsjettering**&gt;**forespørsler og rapporter**&gt;**budsjettplanlegging**
+-   **Budsjettering**&gt;**forespørsler og rapporter**&gt;**budsjettkontroll**
+-   Konsolideringer
+
+Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du angi følgende informasjon for den juridiske enheten:
+
+-   Økonomisk kalender
+-   Finans
+-   Kontoplan
+-   Valuta
+
+Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine. De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.
+
+### <a name="duties"></a>Plikter
+
+| Etikett for plikt                            | Beskrivelse                                                             | Navn på applikasjonsobjekttre                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| Vedlikehold finansrapporteringssikkerhet | Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver. | FinansrapportersikkerhetVedlikehold |
+| Vedlikehold finansrapporter            | Utform og vedlikehold finansrapporter.                                  | FinansrapporterVedlikehold         |
+| Generer finansrapporter            | Generer og oppdater finansrapporter.                                 | FinansrapporterGenerer         |
+| Gå gjennom finansresultat          | Gå gjennom og analyser finansresultat.                               | FinansrapporterUtførGjennomgang       |
+
+### <a name="privileges"></a>Rettigheter
+
+| Etikett for rettighet                       | Beskrivelse                                                             | Navn på applikasjonsobjekttre                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| Vedlikehold finansrapporteringssikkerhet | Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver. | FinansrapportersikkerhetVedlikehold |
+| Vedlikehold finansrapporter            | Utform og vedlikehold finansrapporter.                                  | FinansapporterVedlikeholdRapporter  |
+| Generer finansrapporter            | Generer og oppdater finansrapporter.                                 | FinansrapporterGenererRapporter  |
+| Vis finansrapporter                | Vis finansrapporter.                                                 | FinansrapporterVis             |
+
+### <a name="roles"></a>Roller
+
+| Etikett for rettighet                       | Avgift                                  | Roller                                                                           |
+|---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
+| Vedlikehold finansrapporteringssikkerhet | Vedlikehold finansrapporteringssikkerhet | Sikkerhetsadministrator                                                          |
+| Vedlikehold finansrapporter            | Vedlikehold finansrapporter            | Regnskapssjef, leder for regnskap, økonomisk kontroller, budsjettbehandling |
+| Generer finansrapporter            | Generer finansrapporter            | Administrerende Direktør, CFO, regnskapsfører                                                            |
+| Vis finansrapporter                | Gå gjennom finansresultat          | Ikke tilordnet                                                                   |
+
+Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter. **Merk:** sysadmin-rollen er lagt til alle roller i finansiell rapportering.
+
+## <a name="default-reports"></a>Standardrapporter
+Finansrapportering gir 22 standard finansrapporter. Hver rapport bruker hovedkontoen standardkategoriene i Dynamics 365 for operasjoner. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. Hver rapport i den følgende tabell kobler til en blanding av Office-presentasjon om rapporten.
+
+| Standardrapport                                                                                         | beskrivelse                                                                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [12 Month Rolling Single Column Income Statement – Default](https://mix.office.com/watch/76kc7bm3wnt1) | Vis organisasjonens fortjeneste for de siste 12 månedene i én enkelt kolonne.                                                                                                                                                                                                                                      |
+| [12 Month Trend Income Statement – Default](https://mix.office.com/watch/12brmfge5p8r)                 | Vis organisasjonens fortjeneste for hver av de 12 siste månedene. Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.                                                                                                                                                                                             |
+| [Actual vs Budget – Default](https://mix.office.com/watch/fi439lkwr0no)                                | Vis detaljert saldoinformasjon for alle kontoer for det opprinnelige budsjettet, og sammenlign det reviderte budsjettet med faktiske data som har et avvik.                                                                                                                                                                          |
+| [Audit Details – Default](https://mix.office.com/watch/1i15nzd3nwkyh)                                  | Vis detaljert saldoinformasjon for alle kontoer. Denne rapporten viser debet- og kreditsaldoer i rapporteringsvalutaen og i lokal valuta, sammen med mer transaksjonsinformasjon, som for eksempel bruker-ID-en, brukeren som sist endret dataene, datoen for siste endring og journal-ID-en. |
+| [Balance List – Default](https://mix.office.com/watch/1kezwu2a10fq4)                                   | Vis detaljert saldoinformasjon for alle kontoer. Denne rapporten viser åpnings- og lukkingssaldoer og debet- og kreditsaldoer for den aktuelle perioden og året hittil, sammen med mer transaksjonsinformasjon, for eksempel bilaget.                                                                    |
+| [Balance Sheet – Default](https://mix.office.com/watch/zkgq0u7visw9)                                   | Vis organisasjonens finansiell stilling for året.                                                                                                                                                                                                                                                             |
+| [Balance Sheet and Income Statement Side by Side - Default](https://mix.office.com/watch/zkgq0u7visw9) | Vis finansiell stilling og lønnsomhet i organisasjonen for året side ved side.                                                                                                                                                                                                                              |
+| [Cash Flow – Default](https://mix.office.com/watch/jd3go9pz6390)                                       | Få innsikt i kontanter som kommer inn til og går ut av organisasjonen.                                                                                                                                                                                                                                   |
+| [Detailed JE and TB Review – Default](https://mix.office.com/watch/1sw9fmtwgjb1f)                      | Vis åpningssaldo og aktivitetsinformasjon for alle kontoer.                                                                                                                                                                                                                                                      |
+| [Detailed Trial Balance - Default](https://mix.office.com/watch/1ewwgbpv0iwrl)                         | Vis saldoinformasjon for alle kontoer som har debet- og kreditsaldoer, og nettoen for disse saldoene, sammen med transaksjonsdato, bilag og journalbeskrivelse.                                                                                                                                  |
+| [Expenses Three Year Quarterly Trend – Default](https://mix.office.com/watch/gwm4zu7tmtj8)             | Få innsikt i utgifter for de siste 12 kvartalene over de siste tre årene.                                                                                                                                                                                                                                   |
+| [Financial Captions JE and TB Review – Default](https://mix.office.com/watch/1sw9fmtwgjb1f)            | Se en oversikt over saldoer og aktivitet for finansoverskriftene aktiva, gjeld, eierens egenkapital, omsetning, utgift, gevinst eller tap.                                                                                                                                                                           |
+| [Income Statement – Default](https://mix.office.com/watch/sbuhgl5hzuhi)                                | Vis organisasjonens lønnsomhet for inneværende periode og hittil i år.                                                                                                                                                                                                                                   |
+| [Ledger Transaction List – Default](https://mix.office.com/watch/19h9v2rmh48vy)                        | Vis detaljert saldoinformasjon for alle kontoer. Denne rapporten viser debet- og kreditsaldoer sammen med mer transaksjonsinformasjon som transaksjonsdato, journalnummer, bilag, posteringstype og sporingsnummer.                                                                            |
+| [Ratios – Default](https://mix.office.com/watch/b08hfc5h92me)                                          | Vis solvens, lønnsomhet og effektivitetsrate for organisasjonen for året.                                                                                                                                                                                                                           |
+| [Rolling 12 Month Expenses – Default](https://mix.office.com/watch/iywod5qmqhz7)                       | Få innsikt i utgifter for hver av de siste 12 månedene. Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.                                                                                                                                                                                                       |
+| [Rolling Quarter Income Statement – Default](https://mix.office.com/watch/1k4yl6a6oyxqc)               | Vise organisasjonens lønnsomhet kvartalsvis for det siste året og hittil i år.                                                                                                                                                                                                                   |
+| [Side by Side Balance Sheet – Default](https://mix.office.com/watch/zkgq0u7visw9)                      | Vis organisasjonens finansiell stilling for året. Denne rapporten viser aktiva, gjeld og egenkapital for aksjeeiere side ved side.                                                                                                                                                                                |
+| [Summary Trial Balance – Default](https://mix.office.com/watch/1ewwgbpv0iwrl)                          | Vis saldoinformasjon for alle kontoer som har åpnings- og avslutningssaldo og debet- og kreditsaldoer, sammen med deres nettoforskjell.                                                                                                                                                                  |
+| [Summary Trial Balance Year Over Year – Default](https://mix.office.com/watch/1ewwgbpv0iwrl)           | Vis informasjon om kundesaldo for alle kontoer som har åpning og lukking saldoer og debet- og kreditsaldoer sammen med sine net forskjell for inneværende år og fjoråret.                                                                                                                           |
+| [Weekly Sales and Discounts - Default](https://mix.office.com/watch/112ng0hy5de0j)                     | Få innsikt i salg og rabatter for hver uke i en måned. Denne rapporten inneholder totalt fire uker.                                                                                                                                                                                                              |
+| [Budsjettmidlene - standard](https://mix.office.com/watch/15hcpezcbx7tv)                         | Vis en detaljert sammenligning av reviderte budsjettet, faktiske utgifter, Budsjettreservasjoner og budsjettmidlene for alle kontoer                                                                                                                                                                                  |
+
+## <a name="opening-financial-reports"></a>Åpne finansrapporter
+Når du klikker **Finansrapportering**-menyen, vises listen over standard finansrapporter for firmaet. Deretter kan du åpne eller endre en rapport. Velg rapportnavnet for å åpne en av standardrapportene. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du åpner en rapport for første gang i August 2016, genereres for eksempel rapporten for 31. juli 2016. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
+
+## <a name="creating-and-modifying-financial-reports"></a>Opprette og endre finansrapporter
+Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport. Hvis du har de nødvendige tillatelsene, kan du opprette en ny økonomisk rapport ved å klikke **ny** i handlingsruten. En rapport designer-programmet er lastet ned til enheten. Du kan deretter opprette den nye rapporten etter rapportgeneratoren starter. Når du har lagret den nye rapporten, vises den i finansrapportlisten. Listen viser bare rapporter som er opprettet for firmaet som du bruker i Dynamics 365 for operasjoner. Hvis du vil ha mer informasjon om prosessen med å opprette og endre økonomiske rapporter i Dynamics 365 for operasjoner, se disse [blogginnlegg](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) fra Dynamics økonomisk rapportering blogg. **Merk:** som du laster ned rapporten designer-klienten på må ha versjon 4.6.2 av Microsoft .NET Framework som er installert på datamaskinen. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [her](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruker krom, må du installere en ClickOnce-utvidelse for å kunne laste ned rapport designer-klienten. Hvis du kjører i modus for incognito, må du kontrollere ClickOnce-utvidelse er aktivert for incognito modus. Du kan også endre en rapport som vises i finansrapportlisten. Når området rundt rapportnavnet er merket, klikker du **Rediger** i handlingsruten. Rapportutformingsprogrammet starter.
+
+<a name="see-also"></a>Se også
+--------
+
+[View financial reports](view-financial-reports.md)
+
+[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+

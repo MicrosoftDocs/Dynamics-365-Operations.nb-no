@@ -1,0 +1,39 @@
+---
+title: Lagerbrikkeopptelling
+description: "Denne artikkelen inneholder informasjon om brikkeopptelling, som du bruker til å sammenligne det faktiske innholdet i et lager med lagerbeholdningen."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: InventJournalCount, InventJournalCountTag
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 11594
+ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
+ms.search.region: Global
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
+ms.openlocfilehash: 896b91647b65843bf67211cab68b4dd08e379b18
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="inventory-tag-counting"></a>Lagerbrikkeopptelling
+
+Denne artikkelen inneholder informasjon om brikkeopptelling, som du bruker til å sammenligne det faktiske innholdet i et lager med lagerbeholdningen. 
+
+Ved å lage linjer på de **Brikkeopptelling** siden du har sett et brikkenummer på hver lagervare, for eksempel et tall fra 1 til 500. Når du teller angir du varenummeret og antallet på en tilsvarende brikke. Denne brikken kan deretter brukes som grunnlag for inndata i brikkeopptellingsjournalen. Når du har postert brikkeopptellingsjournalen, opprettes en ny opptellingsjournal på **Opptelling**-siden. Den nye journalen er basert på brikkeopptellingsjournallinjene du opprettet. Hvis du teller varer ved hjelp av brikker etter en bestemt lagerdimensjon, velger du dimensjonen på **Visningsdimensjoner**-siden som vises når du oppretter brikkeopptellingsjournalen. Hvis du for eksempel vil telle varer på et bestemt lager, merker du av for **Lager**. Hvis glidebryteren **Lås varer under opptelling** på siden **Parametere for beholdnings- og lagerstyring** er valgt, kan ikke varer oppdateres fysisk under tellingen. Varer i brikkeopptellingsjournaler er imidlertid ikke låst under telling. Lagertransaksjoner opprettes ikke før brikkeopptellingslinjene er postert og overført til en opptellingsjournal. Hvis brikker er angitt i tilfeldig rekkefølge og du vil vite hvilke brikker som mangler, klikker du kolonnehodet **Brikke** for å sortere linjene etter brikke.
+
+<a name="see-also"></a>Se også
+--------
+
+[Cycle counting](../warehousing/cycle-counting.md)
+
+

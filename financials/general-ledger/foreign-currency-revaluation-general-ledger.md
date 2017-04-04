@@ -1,0 +1,117 @@
+---
+title: Revaluering av utenlandsk valuta for finans
+description: "Dette emnet gir en oversikt over følgende for finans utenlandsk valuta omvurdering - installasjonen, kjører prosessen, beregning for prosessen, og hvordan du reversere transaksjonene for revaluering, om nødvendig."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: CurrencyLedgerGainLossAccount
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 62153
+ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
+ms.openlocfilehash: 5d6d13fe44eef7766b4dcaf274c3522bce3da816
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
+
+Dette emnet gir en oversikt over følgende for finans utenlandsk valuta omvurdering - installasjonen, kjører prosessen, beregning for prosessen, og hvordan du reversere transaksjonene for revaluering, om nødvendig. 
+
+Som en del av en periodeslutt krever regnskapskonvensjoner at finanskontosaldi i utenlandsk valuta revalueres ved å bruke ulike valutakurstyper (gjeldende, historisk, gjennomsnitt, osv.). En regnskapskonvensjon krever for eksempel at aktiva og passiva revalueres med den gjeldende valutakursen, anleggsmidler med den historiske kursen og resultatkontoer med det månedlige gjennomsnittet. Revaluering av utenlandsk valuta i økonomimodulen kan brukes til å revaluere balansen og resultatet. 
+
+> [!NOTE]
+> Revaluering av utenlandsk valuta er også tilgjengelig i (AR) for kunder og leverandører (AP). Hvis du bruker disse modulene, skal utestående transaksjoner revalueres ved hjelp av revaluering av utenlandsk valuta i disse modulene. Revaluering av utenlandsk valuta i kunder og leverandører oppretter en regnskapspost i økonomimodulen for å gjenspeile urealisert fortjeneste eller tap, noe som sikrer at underfinans og økonomimodul kan avstemmes. Fordi revalueringen av utenlandsk valuta i kunder og leverandører oppretter regnskapsposter i økonomimodulen, skal hovedkontoene for kunder og leverandører utelates fra revaluering av utenlandsk valuta i økonomimodulen. 
+
+Når du kjører revalueringsprosessen, blir saldoen i hver hovedkonto postert i utenlandsk valuta revaluert. Transaksjonene for urealisert fortjeneste eller tap som opprettes under revalueringsprosessen, genereres av systemet. To transaksjoner kan opprettes en for du regnskapsvalutaen og en annen for rapporteringsvalutaen, hvis det er relevant. Hver regnskaps-oppføring skal bokføre urealisert vinning eller tap og hovedkontoen som revaluert.
+
+## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargjøre for kjøring av revaluering av utenlandsk valuta
+Følgende oppsett kreves før du kan kjøre revalueringprosessen.
+
+-   På **Hovedkonto**-siden:
+-   Hvis hovedkontoen skal revalueres i økonomimodul, velger du **Revaluering av utenlandsk valuta**. Hvis hovedkontoen ikke skal revalueres (for eksempel for AR og AP ved revaluering i underfinansene), fjerner du avmerkingen.
+-   Hvis hovedkontoen er markert for revaluering, angir du **valutakurstypen**. Denne valutakurstypen skal brukes for revaluering av hovedkontoen. Et separat felt, **Valutakurstype for finansrapportering**, er tilgjengelig for finansrapportering. De to feltene holdes synkronisert, slik at ulike valutakurstyper kan brukes for revaluering og finansrapportering.
+
+-   På **Finans**-siden:
+-   Angi **valutakurstypen**. Hvis valutakurstypen ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
+-   Angi kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Kontoene for realisert fortjeneste og realisert tap brukes for utligning av AR- og AP-transaksjoner, og kontoene for urealisert fortjeneste og urealisert tap brukes for revaluering av åpne transaksjoner og hovedkontoene i økonomimodulen.
+
+-   På siden **Valutarevalueringskontoer**:
+-   Velg ulike revalueringskontoer for valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
+
+## <a name="process-foreign-currency-revaluation"></a>Behandle en revaluering av utenlandsk valuta
+Når oppsettet er fullført, kan du bruke siden **Revaluering av utenlandsk valuta** til å revaluere saldoene fra hovedkontoene. Du kan kjøre prosessen i sanntid eller planlegge å kjøre den ved hjelp av en satsvis jobb. 
+
+Siden **Revaluering av utenlandsk valuta** viser loggen for hver revalueringsprosess, inkludert da prosessen ble kjørt, hvilke kriterier som ble definert, en kobling til bilaget som ble opprettes for revalueringen, og en post hvis en tidligere revaluering ble tilbakeført. For å kjøre revalueringsprosessen klikk knappen **Revaluering av utenlandsk valuta**. 
+
+Verdiene **Fra-dato** og **Til dato** definerer datointervallet for å beregne saldo for utenlandsk valuta som skal revalueres. Når du revaluerer resultatkontoer, revalueres summen av alle transaksjoner som forekommer i datointervallet. Når du revaluerer balansekontoer, ignoreres Fra-datoen. I stedet bestemmes saldoen som skal revalueres ved å gå fra begynnelsen av regnskapsåret til Til-datoen. 
+
+Den **dato for sats** kan brukes til å angi datoen for valutakursen bør standard. Du kan for eksempel revaluere saldoene mellom datoen området av januar 1 til 31, men du kan bruke valutakursen som er definert for 1. februar. 
+
+Velg hvilke hovedkontoer som skal revalueres: Alle, Balanse eller Resultat. Bare hoved konti som er merket for revaluering (på hoved-kontoside) revaluert. Hvis du vil begrense ytterligere primære kontointervallet, bruke postene **å inkludere** kategorien for å definere en rekke hovedkontoer eller individuelle hoved-kontoer. 
+
+Revaluering prosessen kan kjøres for en eller flere juridiske enheter. Oppslag, vises bare de juridiske enhetene som du har tilgang til. Velg de juridiske enhetene du vil kjøre omvurdering. 
+
+Revalueringen kan kjøres for én eller flere utenlandske valutaer. Oppslaget inkluderer alle valutaer som ble bokført innenfor datointervallet relevante for typen hovedkontoen (balanse eller resultat) for de juridiske enhetene valgt å revaluere. Du regnskapsvalutaen skal tas med i listen, men ingenting revaluert Hvis du regnskapsvalutaen er valgt. 
+
+Angi **forhåndsvisning før bokføring** til **Ja** Hvis du vil se resultatet av revaluering av Finans. Forhåndsvisningen i finans er forskjellig fra simulering i revaluering av AR og AP utenlandsk valuta. Simuleringen i AR og AP er en rapport, men økonomimodulen er en forhåndsvisning som kan posteres, uten å måtte kjøre revaluering prosessen på nytt. Resultatet av forhåndsvisningen kan eksporteres til Microsoft Excel for å bevare historikken over hvordan beløpene ble beregnet. Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen. Fra forhåndsvisningen har brukeren muligheten til å postere resultatet av alle juridiske enheter ved hjelp av **Poster**-knappen. Hvis det er et problem med resultatene for en juridisk enhet, har brukeren også mulighet til å postere et delsett av de juridiske enhetene ved hjelp av knappen **Velg juridiske enheter for postering**. 
+
+Når utenlandsk valuta omvurdering prosessen er fullført, opprettes en post for å spore loggen for hver kjøring.  Bli vil opprettet en egen oppføring for hver juridisk enhet og posteringslag.
+
+## <a name="calculate-unrealized-gainloss"></a>Beregne urealisert tap/fortjeneste
+Transaksjonene for urealisert tap/fortjeneste blir opprettet på en annen måte mellom revaluering av økonomimodulen og AR- og AP-revaluering. I AR og AP tilbakeføres den tidligere revalueringen fullstendig (forutsatt at transaksjonen ikke er utlignet ennå), og en ny revalueringstransaksjon opprettes for urealisert fortjeneste/tap basert på den nye valutakursen. Dette er fordi vi revaluerer hver enkelt transaksjon i AR og AP. I Økonomi tilbakeføres revaluering av tidligere ikke. I stedet opprettes det en transaksjon for delta mellom saldoen for hovedkontoen, inkludert eventuelle tidligere revalueringsbeløp og den nye verdien som er basert på valutakursen for datoen satsen. 
+
+**Eksempel** finnes følgende saldoene for hovedkontoen 110110.
+
+|            |                    |                        |                       |
+|------------|--------------------|------------------------|-----------------------|
+| **Dato**   | **Finanskonto** | **Transaksjonsbeløp** | **Regnskapsbeløp** |
+| 20. januar | 110110 (kontant)      | 500 EUR (debet)        | 1000 USD (debet)      |
+
+Hovedkontoen er revaluert den 31.  Urealisert tap/vinning beregnes på denne måten.
+
+|                                             |                                            |                                  |                                    |                             |
+|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
+| **Gjeldende saldo i transaksjonsvaluta** | **Gjeldende saldo i regnskapsvaluta** | **Valutakursen ved revaluering** | **Nytt regnskapsvalutabeløp** | **Urealisert fortjeneste/tap**    |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 tap (833,33 – 1000) |
+
+Følgende regnskappost opprettes.
+
+|            |                          |           |            |
+|------------|--------------------------|-----------|------------|
+| **Dato**   | **Finanskonto**       | **Debet** | **Kreditt** |
+| 31. januar | 110110 (kontant)            |           | 166.67     |
+| 31. januar | 801400 (urealisert tap) | 166.67    |            |
+
+Ingen nye transaksjoner posteres for februar måned.  Hovedkontoen er revaluert på februar 28.
+
+|                                             |                                            |                                  |                                    |                             |
+|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
+| **Gjeldende saldo i transaksjonsvaluta** | **Gjeldende saldo i regnskapsvaluta** | **Valutakursen ved revaluering** | **Nytt regnskapsvalutabeløp** | **Urealisert fortjeneste/tap**    |
+| 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | 416,67 fortjeneste (1250 – 833,33) |
+
+Følgende regnskappost opprettes.
+
+|             |                          |           |            |
+|-------------|--------------------------|-----------|------------|
+| **Dato**    | **Finanskonto**       | **Debet** | **Kreditt** |
+| 28. februar | 110110 (kontant)            | 416.67    |            |
+| 28. februar | 801600 (urealisert fortjeneste) |           | 416.67     |
+
+## <a name="reverse-foreign-currency-revaluation"></a>Tilbakefør revaluering av utenlandsk valuta
+Hvis du vil tilbakeføre revalueringstransaksjonen, velger du knappen **Tilbakefør transaksjon** på siden **Revaluering av utenlandsk valuta**. Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført. 
+
+Du kan reversere resultatene av revalueringen ikke datorekkefølge, men du må kanskje også tilbakeføre en mer oppdatert revaluering for å sikre riktig saldo for hver revaluerte hovedkonto. For tilbakeføringer kan oppstå utdatert rekkefølgen fordi det er ingen måte å kontrollere hvilke konti som viktigste revalueres og frekvensen for når de vurderes. En organisasjon kan for eksempel velge å revaluere de viktigste kontantkontoer Kvartalvis, men alle andre primære kontoer hver måned.
+
+
