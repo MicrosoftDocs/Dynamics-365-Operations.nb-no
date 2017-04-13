@@ -48,10 +48,10 @@ Du kan bruke jobbtyper til å gruppere lignende jobber i kategorier. Jobbtyper e
 ## <a name="job-functions"></a>Jobbfunksjoner
 Jobben knutepunkter beskrive på høyt nivå, funksjonelle kategorier og relatere avgifter på høyt nivå. Jobbfunksjoner er ikke nødvendig. Du kan bruke jobbfunksjoner sammen med jobbtyper, til å filtrere kompensasjonsplaner på bestemte jobber. Du tilordninger jobbfunksjoner og jobbtyper med kompensasjonsplaner ved å definere rettighetsregler i den **rettighetsregler** siden. Du kan deretter knytte et sett med nivåer til en kompensasjonsplanen som gjelder den bestemte kombinasjonen av jobbtype og jobbfunksjon som du har definert gjennom en rettighetsregel. (Disse funksjonene gjelder både faste kompensasjonsplaner og variable kompensasjonsplaner.) Imidlertid Hvis du planlegger å bruke jobbfunksjoner når du setter opp rettighetsregler for kompensasjonsstyring, bør du konfigurere jobbfunksjoner før du setter opp jobber. Tabellen nedenfor viser noen eksempler på jobbfunksjoner.
 
-| Jobb           | Jobbfunksjon      |
-|---------------|-------------------|
-| Salgssjef | Mellomstor nivå Manager |
-| Regnskapsfører    | Teknikere     |
+| Jobb           | Jobbfunksjon         |
+|---------------|----------------------|
+| Salgssjef | Mellomstor nivå Manager    |
+| Regnskapsfører    | Teknikere        |
 
 Du opprettholder jobbfunksjoner ved hjelp av den **jobbfunksjoner** siden. På den **jobbfunksjoner** side, angir du en kode-ID og en kort beskrivelse av jobbfunksjonen.
 

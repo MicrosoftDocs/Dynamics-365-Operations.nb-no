@@ -56,10 +56,6 @@ En jobb er en samling oppgaver og ansvarsområder som kreves av en person som ut
 Du kan opprette jobboppgaver som beskriver de grunnleggende oppgavene som må fullføres av en arbeider i en stilling for jobben. Den samme jobboppgaven kan legges til flere jobber, og stillinger for disse jobbene arver disse jobboppgavene. Eksempler på jobboppgaver er oppført i tabellen nedenfor.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Jobb</th>
