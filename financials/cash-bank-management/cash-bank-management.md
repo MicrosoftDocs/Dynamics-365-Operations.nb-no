@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene. 
 
 Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. Du kan også avstemme bankkontoutdrag og skrive ut bankdata i standardrapporter.
@@ -69,4 +72,6 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenario: Bruk en kundebetaling for å utligne flere fakturaen som strekker seg over flere rabattperioder](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

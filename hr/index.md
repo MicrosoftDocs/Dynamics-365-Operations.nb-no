@@ -98,3 +98,5 @@ Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som 
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 
+
+
