@@ -1,5 +1,5 @@
 ---
-title: Bruk sporing for nedbryting
+title: Bruke sporing for nedbryting
 description: "Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Bruk sporing for nedbryting
+# <a name="use-tracing-for-explosion"></a>Bruke sporing for nedbryting
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting.
 
@@ -43,6 +46,8 @@ Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Ned
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Hovedplaner](master-plans.md)
+
+
 
 

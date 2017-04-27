@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Kundeposteringsprofiler styrer postering av kundetransaksjoner til økonomimodulen.
 
 <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
@@ -126,7 +129,7 @@ Hvis du vil ha samme posteringsprofil for alle kundetransaksjoner, definerer du 
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Tabellrestriksjoner**
 
 For transaksjoner med den valgte posteringsprofilen kan du angi om transaksjonene skal utlignes automatisk, om rente skal beregnes, og om purringer blir utstedt. Du kan også velge kontoen som brukes når transaksjoner med den valgte posteringsprofilen er lukket.
 
@@ -139,6 +142,8 @@ Angi følgende verdier for å definere posteringsprofilen:
 | **Rente**          | Merk av for dette valget hvis rente skal beregnes på utestående saldoer for kundekontoer som bruker denne profilen. Hvis merket fjernes for dette valget, vil det ikke beregnes renter for disse kundene.                                           |
 | **Purring** | Merk av for dette valget hvis purrebrev skal genereres for kundekontoer som bruker denne profilen. Hvis merket fjernes for dette valget, vil det ikke genereres purrebrev for disse kundene.                                                 |
 | **Lukke**             | Velg en posteringsprofil som du vil bytte til når transaksjoner med denne posteringsprofilen er lukket. En transaksjon anses som lukket når den er fullstendig utlignet.                                                                           |
+
+
 
 
 

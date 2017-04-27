@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="packing-materials-and-fees"></a>Emballasjematerialer og gebyrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Emballasjematerialegebyrer betales til et resirkuleringsfirma med bestemte intervaller. Et beløp betales per vektenhet for hvert materiale som en emballasjeenhet består av. Emballasjematerialegebyrer beregnes og rapporteres, men ingen finanstransaksjoner posteres fordi gebyrene ikke regnes som avgifter som må betales til en myndighet.
 
 Emballasjevekt og -gebyrer beregnes for både salgsordrelinjer og bestillingslinjer.
@@ -52,7 +55,7 @@ Når du oppretter en salgsordrelinje, kontrollerer systemet om emballasjeenheter
 ## <a name="packing-units-on-purchase-order-lines"></a>Emballasjeenheter på bestillingslinjer
 Emballasjematerialetransaksjoner for en bestillingslinje opprettes ikke av systemet. Du kan opprette transaksjoner for fakturerte bestillingslinjer manuelt på siden **Emballasjematerialetransaksjoner**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Angi kundens lisensnumre for packagingmaterialfee
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Angi kundens lisensnumre for emballasjegebyr
 Hvis kundene betaler emballasjegebyrene, angir du kundenes lisensnumre for emballasjegebyr på siden **Kunder**. Når et lisensnummer er tilordnet en kunde, beregnes emballasjegebyrene automatisk når salgsordrene faktureres. Etter fakturering fjernes merket for **Beregn gebyr** på siden **Emballasjematerialetransaksjoner** fordi du ikke trenger å beregne og skrive ut rapporten. Du kan skrive ut emballasjevekten og informere kundene om at de må betale gebyrene. 
 
 Hvis firmaet betaler emballasjegebyrene, angir du ikke kundens lisensnumre. Etter fakturering merker du av for **Beregn gebyr** på siden **Emballasjematerialetransaksjoner**. Dette viser at gebyrene beregnes når en rapport opprettes. Du kan skrive ut vekten på fakturaen og angi at firmaet betaler gebyrene.
@@ -60,6 +63,8 @@ Hvis firmaet betaler emballasjegebyrene, angir du ikke kundens lisensnumre. Ette
 ## <a name="print-packaging-material-weights-on-invoices"></a>Skrive ut emballasjevekt på fakturaer
 Du kan skrive ut emballasjevekten på fakturaen og angi hvem som betaler emballasjegebyrene. Vekten summeres etter emballasjekode.
  
+
+
 
 
 

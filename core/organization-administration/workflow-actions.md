@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Arbeidsflythandlinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer handlingene som hver deltaker i en godkjenningsprosess for arbeidsflyt kan utføre.
 
-En arbeidsflyt kan omfatte flere grupper av personer: avsenderen, personer tilordnet oppgaver, beslutningstakere og godkjennere. I følgende arbeidsflyt for reiseregning nedenfor er Erik avsenderen, medlemmer av køen er personer som er tilordnet oppgaven, Jon er beslutningstaker, og Dag, Jorunn og Karen er godkjennerne.   [![Arbeidsflyten\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) delene nedenfor forklarer arbeidsflythandlingen som hver gruppe kan utføre.
+En arbeidsflyt kan omfatte flere grupper av personer: avsenderen, personer tilordnet oppgaver, beslutningstakere og godkjennere. I følgende arbeidsflyt for reiseregning nedenfor er Erik avsenderen, medlemmer av køen er personer som er tilordnet oppgaven, Jon er beslutningstaker, og Dag, Jorunn og Karen er godkjennerne.   [![Arbeidsflyt\_MedManuellBeslutning](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Delene nedenfor forklarer arbeidsflythandlinger som hver gruppe kan utføre.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Handlinger en avsender kan utføre
 Avsenderen starter en arbeidsflyt ved å sende et dokument til behandling. For eksempel må Erik klikke **Send** -knappen på siden **Reiseregning** for å sende reiseregningen.
@@ -63,7 +66,7 @@ Et medlem av en arbeidselementkø kan noen ganger godta en aktivitet, men derett
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Handlinger som en beslutningstaker kan utføre
 Vanligvis tilordnes et dokument til en beslutningstaker fordi det er et spørsmål som må besvares av beslutningstaker. Svaret på spørsmålet er vanligvis **Ja** eller **Nei** eller **Sann** eller **Usann**. Hvis beslutningstakeren ikke velger et av disse valgene, kan han eller hun delegere beslutningen.
 
-### <a name="choice-1-or-choice-2"></a>\[Valg 1\] eller \[valg 2\]
+### <a name="choice-1-or-choice-2"></a>\[Valg 1\] eller \[Valg 2\]
 
 En beslutningstaker må svare på spørsmål som er knyttet til dokumentet. Svaret på spørsmålet er vanligvis **Ja** eller **Nei** eller **Sann** eller **Usann**. Svaret som en beslutningstaker velger, bestemmer arbeidsflytgrenen som brukes til å behandle dokumentet. Eksempelvis tilordnes Eriks reiseregningen til Jon. Jon må bestemme om informasjonen i dokumentet krever et kall til Eriks sjef. Hvis Jon bestemmer seg for at det kreves en samtale, tilordnes reiseregningen til Anita, som deretter må ringe Eriks sjef. Hvis Jon bestemmer seg for at en samtale ikke er nødvendig, tilordnes reiseregningen til Dag for godkjenning.
 
@@ -89,5 +92,7 @@ Når en godkjenner delegerer et dokument, tilordnes det til en annen bruker for 
 ### <a name="request-change"></a>Be om endring
 
 Når en godkjenner ber om en endring i et dokument, sendes det tilbake til avsenderen. For eksempel har Erik sendt en reiseregning på NOK 12 000, og dette dokumentet er tilordnet Jorunn. Hvis Jorunn ber om en endring, sendes reiseregningsrapporten tilbake til Erik. Erik kan deretter sende reiseregningen på nytt. Han kan foreta de forespurte endringer først, eller han kan sende originalversjonen av reiseregningen på nytt. Hvis Erik sender reiseregningsrapporten på nytt, sendes den til Dag for godkjenning, fordi han er den første godkjenneren i godkjenningsprosessen.
+
+
 
 

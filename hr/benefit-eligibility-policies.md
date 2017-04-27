@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Policyer for fordelsrettigheter
 
-Dette emnet gir informasjon om fordel berettigelse policyer, hvilke hjelp du definerer hvem som er kvalifisert for bestemte fordeler.
+[!include[banner](includes/banner.md)]
+
+
+Dette emnet inneholder informasjon om policyer for fordelsrettigheter, som hjelper deg med å definere hvem som er kvalifisert for spesifikke fordeler
 
 Når du oppretter fordeler, kan du bestemme hvilke fordeler som skal være tilgjengelige for ansatte. Tabellen nedenfor viser eksempler på fordeler du kan gjøre tilgjengelige for bestemte ansatte.
 
@@ -38,7 +41,7 @@ Når du oppretter fordeler, kan du bestemme hvilke fordeler som skal være tilgj
 | Mobiltelefon     | Salgsstab, ledere         |
 | Parkeringsoblater   | Ledere                      |
 
-Følgende komponenter i brukes til å opprette policyer for arbeidstillatelse:
+Følgende komponenter brukes til å opprette rettighetspolicyer:
 
 -   Policyregeltyper
 -   Policyer for fordelsrettigheter
@@ -51,5 +54,7 @@ Du kan definere omfanget av regelen i policyen. Hvis du for eksempel oppretter e
 --------
 
 [Definere og administrere et fordelsprogram](manage-benefit-program.md)
+
+
 
 

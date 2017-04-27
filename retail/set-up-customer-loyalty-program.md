@@ -1,6 +1,6 @@
 ---
-title: Definer et fordelsprogram for kunde
-description: "Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for operasjoner, kan du definere enkle eller komplekse lojalitetsprogrammer som gjelder på tvers av juridiske enheter i et hvilket som helst kanal for detaljhandel."
+title: Konfigurere et fordelsprogram for kunde
+description: "Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for Operations kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Definer et fordelsprogram for kunde
+# <a name="set-up-a-customer-loyalty-program"></a>Konfigurere et fordelsprogram for kunde
 
-Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for operasjoner, kan du definere enkle eller komplekse lojalitetsprogrammer som gjelder på tvers av juridiske enheter i et hvilket som helst kanal for detaljhandel.
+[!include[banner](includes/banner.md)]
+
+
+Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for Operations kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal.
 
 <a name="loyalty-features"></a>Fordelsfunksjoner
 ----------------
@@ -37,11 +40,11 @@ Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
 -   Definer flere typer belønninger du tilbyr i fordelsprogrammene, og spor deltakelse i fordelsprogrammene.
 -   Definer fordelsprogrammer som representerer de ulike fordelsinsentivene du tilbyr. Du kan inkludere fordelsprogramlag for å gi større insitamenter og fordeler for kunder som handler oftere eller bruker mer penger i butikkene.
 -   Definer opptjeningsregler for å identifisere aktivitetene som en kunde må fullføre for å oppnå fordeler. Du kan også definere innløsingsregler for å identifisere når og hvordan en kunde kan løse inn fordeler.
--   Utstede lojalitet kort fra retail-kanalen som deltar i din lojalitetsprogrammer og koble fordelskort til én eller flere lojalitetsprogrammer som kunden kan delta i. Du kan også koble en kundepost til lojalitet kort, slik at kunden kan applikasjonsutvalget lojalitet poeng fra flere kort og løse dem inn.
+-   Utsted fordelskort fra en hvilken som helst kanal for detaljhandel som deltar i fordelsprogrammet, og koble fordelskort til ett eller flere fordelsprogrammer som kunden kan delta i. Du kan også koble en kundepost til et fordelskort for å la kunden samle fordelspoeng fra flere kort og løse dem inn.
 -   Juster fordelskort manuelt, eller overføre fordelssaldoen fra ett kort til et annet for å ta hensyn til eller belønner en kunde.
 
-## <a name="setting-up-loyalty-programs"></a>Definere lojalitetsprogrammer
-Du må definere flere komponenter for å aktivere funksjonen lojalitet i Dynamics 365 for operasjoner - detaljhandel. Diagrammet nedenfor illustrerer fordelskomponentene og hvordan de er relatert til hverandre. ![Prosessflyt for fordelsoppsett](./media/loyaltyprocess.gif)
+## <a name="setting-up-loyalty-programs"></a>Konfigurering av fordelsprogrammer
+Du må definere flere komponenter for å aktivere fordelsfunksjonen i Dynamics 365 for Operations - Retail. Diagrammet nedenfor illustrerer fordelskomponentene og hvordan de er relatert til hverandre. ![Prosessflyt for fordelsoppsett](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Fordelskomponenter
 Tabellen nedenfor beskriver hver komponent og hvor den brukes i fordelsoppsettet.
@@ -64,10 +67,12 @@ Tabellen nedenfor beskriver prosessene som må kjøres for å sende fordelskonfi
 
 | Prosessnavn                         | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                    | Sidenavn                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (fordelsinformasjon)           | Kjør denne prosessen for å sende dataene lojalitet fra Dynamics 365 for operasjoner til retail butikker. Det er lurt å planlegge denne prosessen til å kjøres ofte, slik at fordelsdata sendes til alle butikker.                                                                                                                                                                                               | Distribusjonsplan                |
+| 1050 (fordelsinformasjon)           | Kjør denne prosessen for å sende fordelsdataene fra Microsoft Dynamics 365 for Operations til detaljhandelbutikkene. Det er lurt å planlegge denne prosessen til å kjøres ofte, slik at fordelsdata sendes til alle butikker.                                                                                                                                                                                               | Distribusjonsplan                |
 | Behandle fordelsplaner              | Kjør denne prosessen for å knytte fordelsplaner til detaljhandelskanalene som fordelsplanen er tilordnet til. Denne prosessen kan planlegges å kjøres som en satsvis prosess. Hvis du endrer fordelskonfigurasjonsdata, for eksempel fordelsplaner, fordelsprogrammer eller fordelspoeng, må du kjøre denne prosessen.                                                                                               | Behandle fordelsplaner              |
-| Behandle frakoblede fordelstransaksjoner | Kjør denne prosessen for å oppdatere fordelskort til å ta med transaksjoner som ble behandlet frakoblet. Denne prosessen gjelder bare hvis den **tjene frakoblet** er merket på den ** delte parametere ** side, slik at belønning kan være opptjent frakoblet.                                                                                                                                               | Behandle frakoblede fordelstransaksjoner |
+| Behandle frakoblede fordelstransaksjoner | Kjør denne prosessen for å oppdatere fordelskort til å ta med transaksjoner som ble behandlet frakoblet. Denne prosessen gjelder bare hvis det er merket av for **Opptjen frakoblet** på siden **Delte parametere** for detaljhandel , slik at belønninger kan opptjenes frakoblet.                                                                                                                                               | Behandle frakoblede fordelstransaksjoner |
 | Oppdater lag for fordelskort            | Kjør denne prosessen for å evaluere kundens opptjeningsaktivitet mot reglene for lag i et fordelsprogram, og oppdater kundens lagstatus. Denne prosessen kreves bare hvis du endrer lagreglene i fordelsprogrammer og du vil at de oppdaterte reglene skal brukes i ettertid for fordelskort som allerede er utstedt. Denne prosessen kan kjøres som en satsvis prosess eller for individuelle kort. | Oppdater lag for fordelskort            |
+
+
 
 
 

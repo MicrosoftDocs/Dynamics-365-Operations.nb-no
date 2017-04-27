@@ -1,5 +1,5 @@
 ---
-title: "Forespørsel om tilbud (tilbudsforespørsler)"
+title: "Tilbudsforespørsler"
 description: "Denne artikkelen gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Forespørsel om tilbud (tilbudsforespørsler)
+# <a name="request-for-quotations-rfqs"></a>Tilbudsforespørsler
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.
 
@@ -37,9 +40,9 @@ Prosessen for tilbudsforespørsel omfatter følgende oppgaver:
 
 Illustrasjonen nedenfor gir en oversikt over forespørselsprosessen.  
 
-[![Forespørsel om tilbud-prosess](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Tilbudsforespørselsprosess](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Du kan opprette en tilbudsforespørsel fra planlagte bestillinger, fra en innkjøpsrekvisisjon eller fra en manuell oppføring. Tilbudsforespørselen du oppretter, kalles en tilbudsforespørselssak, og dette er det grunnleggende dokumentet du bruker til å utarbeide en tilbudsforespørsel til hver leverandør. Når du klargjør RFQ saken, og Legg til leverandører, klikker du **sende** journal genereres på Forespørselen saken og en forespørsel for hver leverandør som du sendte Forespørselen til. Du kan konfigurere innstillingene for utskriftsbehandling for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send for å generere et svarark som leverandøren kan fylle ut.  
+Du kan opprette en tilbudsforespørsel fra planlagte bestillinger, fra en innkjøpsrekvisisjon eller fra en manuell oppføring. Tilbudsforespørselen du oppretter, kalles en tilbudsforespørselssak, og dette er det grunnleggende dokumentet du bruker til å utarbeide en tilbudsforespørsel til hver leverandør. Når du har klargjort tilbudsforespørselssaken og lagt til leverandørene, klikker du på **Send** i tilbudsforespørselssaken, og en tilbudsforespørselsjournal opprettes for hver leverandør som du har sendt en tilbudsforespørsel til. Du kan konfigurere innstillingene for utskriftsbehandling for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send for å generere et svarark som leverandøren kan fylle ut.  
 
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende den på nytt til leverandøren når du er ferdig.  
 
@@ -49,18 +52,18 @@ Hvis en ny gjentakelse av et svar er nødvendig for en bestemt leverandør, klik
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil forespørselssvaret ha et poengpanel der du kan gi poeng. Den totale poengsummen vil vises når du sammenligner svarene på **Sammenlign svar**-siden, der du også kan sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.  
 
-Når du bestemmer deg for et bud eller delvise bud, kan du godta dem og avvise resten. Journaler for godkjenning, journaler for avslag og tilhørende rapporter genereres. Disse skrives ut, arkiveres, og sendes i henhold til dine innstillinger for utskriftsbehandling. Når du godkjenner et bud eller bestemte linjer i et bud, genereres en avtale eller Kjøp for bestilling, eller en innkjøpsrekvisisjon er oppdatert, avhengig av typen RFQ kjøp. Du kan opprette en forretningsavtale som du senere kan bruke for alle svarene, uavhengig av om du har godkjent eller avvist dem.  
+Når du bestemmer deg for et bud eller delvise bud, kan du godta dem og avvise resten. Journaler for godkjenning, journaler for avslag og tilhørende rapporter genereres. Disse blir skrevet ut, arkivert og sendt i henhold til innstillingene for utskriftsbehandling. Når du godkjenner et bud eller bestemte linjer i et bud, genereres en kjøpsavtale eller en bestilling, eller en innkjøpsrekvisisjon oppdateres, avhengig av typen tilbudsforespørsel. Du kan opprette en forretningsavtale som du senere kan bruke for alle svarene, uavhengig av om du har godkjent eller avvist dem.  
 
 Statusen for en tilbudsforespørsel vises i toppteksten for tilbudsforespørselen og avhenger av statusen til tilbudsforespørselslinjene. Statusen angir i hvilken utstrekning du har behandlet tilbudsforespørselen. Hver tilbudsforespørselhar to statusverdier: lavest og høyest. Den laveste statusen er det minst avanserte stadiet for en linje i tilbudsforespørselen, og den høyeste statusen er det mest avanserte stadiet for en linje i tilbudsforespørselen. Hvis det minst avanserte stadiet i en tilbudsforespørsel for eksempel er for en linje som er opprettet, er **Opprettet** den laveste statusen for tilbudsforespørselen. Hvis det mest avanserte stadiet i tilbudsforespørselen er for en linje som er sendt til leverandører, er **Sendt** den høyeste statusen for tilbudsforespørselen. Statusene oppdateres automatisk når du behandler en tilbudsforespørsel.  
 
 Du kan vise de laveste og høyeste statusene for et tilbudsforespørselshode på **Alle tilbudsforespørsler**-siden. Du kan vise de laveste og høyeste statusene for en tilbudsforespørselslinje i kategorien **Linjer** på siden **Tilbudsforespørsler**.  
 
-Her er rekkefølgen av statusene for behandling av tilbudsforespørsler:
+Her er rekkefølgen til statusene for behandling av en tilbudsforespørsel:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Godkjent**/**avbrutt**/**avvist**
+1.  **Opprettet**
+2.  **Sendt**
+3.  **Mottatt**
+4.  **Godkjent**/**Annullert**/**Avvist**
 
 Statusene beskrives nærmere i senere i denne artikkelen.
 
@@ -72,7 +75,7 @@ Før du kan opprette en tilbudsforespørselssak, må du angi informasjon om tilb
 -   Leveringsinformasjon og betalingsbetingelser.
 -   Felt som skal inkluderes i svar på tilbudsforespørsel
 
-Du kan overstyre disse verdiene for en bestemt tilbudsforespørselssak. Du må også konfigurere endringsprosessen. Som en del av denne konfigurasjonen kan du aktivere feltlås. Når feltlåsing er aktivert, må en innkjøpsansvarlig som ønsker å endre en tilbudsforespørsel først klikke **Opprett** i delen **Endring** i kategorien **Tilbud**. Etter at Forespørselen er blitt oppdatert med endringen, må Innkjøpsansvarlig fullføre prosessen ved å klikke **Fullfør**. ** ** The fullføre handlingen genererer en e-postmelding som varsler leverandører om endrede Forespørselen. Du velger malen for e-postvarsling som sendes til leverandører på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes, kan den inneholde følgende tokener:
+Du kan overstyre disse verdiene for en bestemt tilbudsforespørselssak. Du må også konfigurere endringsprosessen. Som en del av denne konfigurasjonen kan du aktivere feltlås. Når feltlåsing er aktivert, må en innkjøpsansvarlig som ønsker å endre en tilbudsforespørsel først klikke **Opprett** i delen **Endring** i kategorien **Tilbud**. Når tilbudsforespørselen er oppdatert med endringen, må innkjøpsansvarlig fullføre prosessen ved å klikke på **Fullfør**. Dette genererer en e-postmelding som varsler leverandørene om den endrede forespørselen. Du velger malen for e-postvarsling som sendes til leverandører på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes, kan den inneholde følgende tokener:
 
 -   %Årsak til retur av bud%
 -   %Årsak til endring%
@@ -124,7 +127,7 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres når du oppretter e
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**                         | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode**                   | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
 | Opprett tilbudsforespørselshodet og -linjen.    | Opprettet                      | Opprettet                                         | Opprettet                    | Opprettet                     |
 | Send tilbudsforespørselen til en bestemt leverandør. | Sendt                         | Sendt                                            | Sendt                       | Sendt                        |
 | Legg til en annen leverandør.                | Opprettet                      | Sendt (Tilbudsforespørselen er bare sendt til én leverandør.) | Opprettet                    | Sendt                        |
@@ -146,7 +149,7 @@ Hvis et spørreskjema er knyttet til tilbudsforespørselssaken, må du manuelt a
 
 Hvis du må angi alternative linjer, og forespørselssaken tillater dette, klikker du **Legg til linje** i hurtigkategorien **Innkjøpstilbudslinjer**. Deretter skriver du inn produktinformasjonen, for eksempel varenummeret eller innkjøpskategorien, antall, pris og rabatt.  
 
-Hvis du har skrevet inn et svar, men krever et nytt tilbud fra leverandøren, kan du sende Forespørselen på nytt. Dette vil generere en ny journal, og rapporten som du kan bruke til å be om endringer fra leverandøren.  
+Hvis du har skrevet inn et svar, men krever et nytt tilbud fra leverandøren, kan du sende tilbudsforespørselen på nytt. Dette genererer en ny journal og rapport som du kan bruke til å be om endringer fra leverandøren.  
 
 Du kan se en oversikt over alle tilbudsforespørsler og statusen deres på siden **Oppfølging av tilbudsforespørsel**.  
 
@@ -154,7 +157,7 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres når du mottar bud 
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**                                     | **Status for laveste bud ** | **Høyeste budstatus ** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
 | Registrer én leverandørs bud, og lagre det.        | Sendt                  | Mottatt               | Sendt                         | Mottatt                      | Sendt                       | Mottatt                    |
 | Registrer den andre leverandørens bud, og lagre det. | Mottatt              | Mottatt               | Mottatt                     | Mottatt                      | Mottatt                   | Mottatt                    |
 
@@ -183,9 +186,11 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres etter som du godtar
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**              | **Status for laveste bud ** | **Høyeste budstatus ** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
 | Godta et av budene. | Mottatt              | Godtatt               | Mottatt                     | Godtatt                      | Mottatt                   | Godtatt                    |
 | Avvis de andre budene.  | Avslått              | Godtatt               | Avslått                     | Godtatt                      | Avslått                   | Godtatt                    |
+
+
 
 
 

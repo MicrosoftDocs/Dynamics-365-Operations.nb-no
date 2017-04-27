@@ -1,5 +1,5 @@
 ---
-title: Godkjenne en justert prognose
+title: Autoriser en justert prognose
 description: "Ikke alle prognosedata må autoriseres umiddelbart. Denne artikkelen forklarer hvordan du kan angi perioden som en prognose er autorisert for. Den forklarer også hvordan du godkjenner prognosen for bestemte firmaer og prognosemodeller."
 author: YuyuScheller
 manager: AnnBe
@@ -26,25 +26,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="authorize-an-adjusted-forecast"></a>Godkjenne en justert prognose
+# <a name="authorize-an-adjusted-forecast"></a>Autoriser en justert prognose
+
+[!include[banner](../includes/banner.md)]
+
 
 Ikke alle prognosedata må autoriseres umiddelbart. Denne artikkelen forklarer hvordan du kan angi perioden som en prognose er autorisert for. Den forklarer også hvordan du godkjenner prognosen for bestemte firmaer og prognosemodeller.
 
 Ikke alle prognosedata må autoriseres umiddelbart. Du kan angi i start- og sluttdatoene for perioden som prognosen er autorisert for. Denne funksjonen lar deg låse bestemt perioder. 
 
-Start- og sluttdatoene du angir må samsvare med de start- og sluttdatoene for kategorien som prognosen er generert i. Systemet håndhever denne begrensningen, og justerer automatisk datoer, hvis justering er nødvendig. 
+Start- og sluttdatoene du angir, må samsvare med start- og sluttdatoene for perioden som prognosen er generert i. Systemet håndhever denne begrensningen, og justerer automatisk datoene hvis justering er nødvendig. 
 
 I **Detaljer** -kategorien på siden **Autorisasjon** kan du vise detaljer om prognosen som sist ble generert. 
 
 Du kan velge firmaene og prognosemodellene for å autorisere prognosen for bruk. Rutenettet omfatter som standard alle firmaene som prognosebehov er opprettet for. Prognosemodellen som samsvarer med den gjeldende prognoseplanen som er angitt i hovedplanleggingsparametere, er forhåndsutfylt for hvert firma. Du kan imidlertid endre denne prognosemodellen til en hvilken som helst prognosemodell som tilhører selskapet. Hvis ingen prognosebehovsdata er generert for et selskap som er valgt, får du en advarsel ved importen. 
 
-Det er svært viktig at du forstår hvordan avmerkingsboksen **Lagre de manuelle justeringene som er gjort i behovsprognosen for basislinjen** fungerer. Hvis du har foretatt manuelle justeringer til statistisk grunnlinjen prognose, er de justerte verdiene autorisert for bruk, selv om det er merket. Endringene forkastes imidlertid etter godkjenning. Neste gang det opprettes en prognose, er denne prognosen derfor bare en statistisk prognose og har ikke noen manuell overstyring, selv om **Overfør manuelle justeringer til behovsprognosen** er valgt. Derfor kan du betrakte avmerkingsboksen **Lagre de manuelle justeringene som er gjort i behovsprognosen for basislinjen** som en mekanisme som lar deg beholde eller forkaste alle manuelle endringer.
+Det er svært viktig at du forstår hvordan avmerkingsboksen **Lagre de manuelle justeringene som er gjort i behovsprognosen for basislinjen** fungerer. Hvis du har foretatt manuelle justeringer i den statistiske basislinjeprognosen, er de justerte verdiene autorisert for bruk, selv om denne avmerkingsboksen er deaktivert. Endringene forkastes imidlertid etter godkjenning. Neste gang det opprettes en prognose, er denne prognosen derfor bare en statistisk prognose og har ikke noen manuell overstyring, selv om **Overfør manuelle justeringer til behovsprognosen** er valgt. Derfor kan du betrakte avmerkingsboksen **Lagre de manuelle justeringene som er gjort i behovsprognosen for basislinjen** som en mekanisme som lar deg beholde eller forkaste alle manuelle endringer.
 
 <a name="see-also"></a>Se også
 --------
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Gjøre manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
+
+
 
 

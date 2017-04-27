@@ -1,6 +1,6 @@
 ---
-title: Organisasjoner og organisasjonshierarkier (handel essentials)
-description: "Grunnleggende om handel har tre typer interne organisasjoner som du kan definere for å hjelpe en organisasjon utfører en forretningsprosess eller oppnå et mål."
+title: Organisasjoner og organisasjonshierarkier (Grunnleggende om handel)
+description: "Grunnleggende om handel har tre typer interne organisasjoner som du kan definere for å hjelpe en organisasjon utføre en forretningsprosess eller oppnå et mål."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisasjoner og organisasjonshierarkier (handel essentials)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisasjoner og organisasjonshierarkier (Grunnleggende om handel)
 
-Grunnleggende om handel har tre typer interne organisasjoner som du kan definere for å hjelpe en organisasjon utfører en forretningsprosess eller oppnå et mål. 
+[!include[banner](includes/banner.md)]
+
+
+Grunnleggende om handel har tre typer interne organisasjoner som du kan definere for å hjelpe en organisasjon utføre en forretningsprosess eller oppnå et mål. 
 
 En organisasjon er en gruppe personer som samarbeider for å utføre en forretningsprosess eller oppnå et mål. Et organisasjonshierarki representerer relasjonene mellom forretningsenhetene som utgjør organisasjonen.
 
@@ -68,6 +71,8 @@ Tabellen nedenfor beskriver scenariene for Grunnleggende om handel hvor organisa
 | Behandle detaljhandelsetterfylling                                                    | Grupper butikker for å etterfylle beholdning basert på etterfyllingsregler.                                                                                                                                                                                                                                          | Detaljhandeletterfylling |
 | Rapportere data for butikker                                                         | Grupper butikker for rapportering.                                                                                                                                                                                                                                                                                | Detaljhandelsrapportering     |
 | Postere beholdning, beregne utdrag eller postere utdrag for en gruppe butikker | Opprett en gruppe med butikker som kan tilordnes til en satsvis jobb. Når du definerer en satsvis jobb for å postere lager, beregne utdrag eller postere utdrag, kan du angi hvilket hierarki jobben gjelder. Når butikker legges til i eller fjernes fra hierarkiet, trenger du ikke å endre den satsvise jobben. | Retail POS-postering   |
+
+
 
 
 

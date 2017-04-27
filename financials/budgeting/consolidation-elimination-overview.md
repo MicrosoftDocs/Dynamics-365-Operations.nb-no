@@ -86,5 +86,5 @@ Alternativet **Finansrapportering** er løsningen. Organisasjonshierarkier som h
 Du kan konsolidere dataene ved å bruke alternativet **Eksport av firmasaldoer** til å eksportere fra én forekomst og deretter bruke alternativet **Konsolider med import** på den andre forekomsten.
 
 
-Hvis du vil ha mer informasjon, se [revalution valuta i et konsolideringsfirma](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Hvis du vil ha mer informasjon, se [Revaluering av valuta i et konsolideringsfirma](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

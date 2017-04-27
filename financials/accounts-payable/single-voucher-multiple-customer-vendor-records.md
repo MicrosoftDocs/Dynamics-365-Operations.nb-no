@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere poster for kunde eller leverandør
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
 
 Noen eksempler der ett bilag brukes for flere kunder eller leverandører, inkluderer saldooverføringer mellom kunder, og motregningssaldoer mellom kunder og leverandører i den samme organisasjonen. 
@@ -91,10 +94,10 @@ Hvis brukeren er misfornøyd med kontantrabatten som tildeles på tvers av alle 
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bilag** | **Kontotype** | **Konto**  | **Beskrivelse** | **Debet** | **Kreditt** | **Offset type** | **Offset account** |
-| GNJL001     | Leverandør           | 1001         | INV1            |           | 100,00     | Finans          | &lt;tom&gt;      |
-| GNJL001     | Finans           | 606300-001-- | INV1            |   50,00   |            | Finans          | &lt;tom&gt;      |
-| GNJL001     | Finans           | 606300-002-- | INV1            |   50,00   |            | Finans          | &lt;tom&gt;      |
+| **Bilag** | **Kontotype** | **Konto**  | **Beskrivelse** | **Debet** | **Kreditt** | **Motregningstype** | **Motkonto** |
+| GNJL001     | Leverandør           | 1001         | INV1            |           | 100,00     | Finans          | &lt;tomt&gt;:      |
+| GNJL001     | Finans           | 606300-001-- | INV1            |   50,00   |            | Finans          | &lt;tomt&gt;:      |
+| GNJL001     | Finans           | 606300-002-- | INV1            |   50,00   |            | Finans          | &lt;tomt&gt;:      |
 | GNJL002     | Leverandør           | 1001         | INV2            |           | 200,00     | Finans          | 606300-003--       |
 | GNJL003     | Leverandør           | 1001         | INV3            |           | 300,00     | Finans          | 606300-004--       |
 
@@ -248,5 +251,7 @@ Flere bilag må angis i journalen for å registrere motregningstransaksjonen for
 | 002         | Leverandør           | 1001        |                 |  75,00    |            | Finans          | 999999---          |
 
  
+
+
 
 

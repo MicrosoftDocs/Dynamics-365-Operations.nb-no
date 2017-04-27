@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-statuses"></a>Beholdningsstatuser
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du kan bruke lagerstatusene til å kategorisere og holde orden på lager.
 
 Du kan bruke lagerstatuser til å kategorisere beholdning. Du kan deretter utføre aktuelle handlinger, for eksempel etterfylling eller plasseringsarbeid. 
@@ -47,5 +50,7 @@ Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lager
 Når du har definert beholdningsstatuser, kan du angi standard beholdningsstatus for et område, en vare og et lager. Du kan også angi en standardstatus for salg, overføring og bestillinger. Standardstatus for salgsordrer og utgående overføringsordre kan ikke ha alternativet **Lagerblokkering** satt til **Ja**. Lagerstatusen som arves fra standardinnstillingene for område, lager, vare, bestilling, overføringsordre eller salgsordre, kan endres ved hjelp av den mobile enheten, eller på bestillings-, salgsordre- eller overføringsordrelinjen. 
 
 Hvis du planlegger dekning for varer som har en tilgjengelig lagerstatus, velger du alternativet **Dekningsplanlegg etter dimensjon** for en lagringsdimensjon på siden **Lagringsdimensjonsgrupper**. Når du åpner veiviseren **Varedekning**, vises varer som har en tilgjengelig status, på **Status**-siden. Hvis du vil opprette dekningsinnstillinger for disse varene, velger du IDen for lagerstatus for de tilgjengelige lagerstatusene. Basert på dekningsinnstillingene kan du beregne varebehovene og forhåndsberegne forsyning og behov for tilgjengelige varer under hovedplanlegging. Du kan ikke opprette et oppsett av varedekning som har en blokkert lagerstatus. Bruk i stedet **Varedekning**-siden til å opprette eller endre varedekningsparameterne.
+
+
 
 

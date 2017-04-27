@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-rules"></a>Overvåkingspolicyregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter. Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.  Hver policyregel er en forekomst av en policyregeltype. For hver policyregeltype kan bare én policyregel være aktiv om gangen. 
 
 <a name="queries-and-query-types"></a>Spørringer og spørringstyper
@@ -97,5 +100,7 @@ Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise par
 --------
 
 [Overvåkingspolicybrudd og -saker](audit-policy-violations-cases.md)
+
+
 
 

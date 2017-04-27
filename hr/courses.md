@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-training-courses"></a>Definer opplæringskurs
 
+[!include[banner](includes/banner.md)]
+
+
 Personaladministratorer og ledere kan bruke kursfunksjonene til å vedlikeholde opplysningene om opplæringen som tilbys ansatte.
 
  <a name="set-up-prerequisites"></a> Definer forutsetninger
@@ -85,7 +88,7 @@ For hvert kurs kan du for eksempel utføre følgende oppgaver.
 -   Anbefale hoteller for kursdeltakere
 -   Opprette en kursbeskrivelse som du deretter annonserer i Ansattselvbetjening
 
-  >**Legg merke til** du kan slette et kurs bare hvis ingen er registrert for den. 
+  >**Obs!** Du kan slette et kurs bare hvis ingen er registrert for kurset. 
     
 ## <a name="course-statuses"></a>Kursstatuser
 Tabellen nedenfor viser de mulige kursstatusene og handlingene du kan fullføre når kurset er en bestemt status.
@@ -132,7 +135,9 @@ Kursdeltakere er arbeidere, søkere eller kontakter som deltar på et opplæring
 <a name="workflow"></a>Arbeidsflyt
 --------
 
-Ansatte som registrerer deg for en vei gjennom den **ansatte selvbetjening** side kan ha registreringen rutes gjennom arbeidsflyt for godkjenning.  En arbeidsflyt kan tilordnes til et kurs på den **Generelt** hurtigfanen på den **kurs** siden.
+Ansatte som registrerer seg for et kurs via siden **Ansattselvbetjening**, kan rute registreringen gjennom arbeidsflyt for godkjenning.  En arbeidsflyt kan tilordnes til et kurs i hurtigfanen **Generelt** på siden **Kurs**.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering. 
 
 Bruk siden **Standard kostnadskonverteringer** til å konvertere lagermodellen for et parti valgte varer fra en faktisk kostnad til standard kostnad. Konverteringsprosessen går ut på å utføre en nødvendig lagerlukking, utføre flere trinn i løpet av en overgangsperiode, som er definert av en startdato for overgang og en dato for planlagt konvertering, samt utføre konverteringen og en tilhørende lagerlukking.
@@ -36,12 +39,12 @@ Bruk siden **Standard kostnadskonverteringer** til å konvertere lagermodellen f
 -   Konverteringstrinn i løpet av overgangsperioden − Bruk siden **Standard kostnadskonverteringer** til å opprette en konverteringspost som også inneholder den brukerdefinerte ID-en for en ny etterkalkuleringsversjon. Du identifiserer varene som krever konvertering, og angir deretter varenes ventende standardkostnader i den nye etterkalkuleringsversjonen. Du utfører en kontroll av de valgte varene for å finne problemer som kan forhindre konvertering, og deretter utfører du en ny kontroll. Når varene har bestått kontrollen, endrer du statusen fo rkonverteringsposten til **Klar**. På den planlagte konverteringsdatoen utfører du konverteringen og eventuelt en lagerlukking. Varens lagerbevegelser i løpet av overgangsperioden blir postert og vurdert i henhold til den gamle lagermodellen. Etter at konverteringen er fullført, revalueres deretter lagerbevegelsene til standardkostnaden.
 -   Lagerlukking før konverteringen − Lagerlukkingen kan tas med som en del av konverteringen på den planlagte konverteringsdatoen, eller den kan utføres som et separat trinn før konverteringen.
 
-Når konverteringsprosessen er fullført, baseres lagermodellen for hver vare på standardkostnaden, og varens standardkostnad blir aktivert. Påfølgende lagertransaksjoner blir vurdert etter varens standardkostnad. I tillegg konverterer systemet varens fysiske lagertransaksjoner for mottak og avganger til standardkostnad basert på konverteringsdatoen. Systemet konverterer også varens økonomiske lagerbeholdning til standardkostnad, og posterer verdiforskjellen som en lagerrevaluering. Eventuelle transaksjoner som foregår etter konverteringen, vurderes etter varens standardkostnad. Du kan ikke angi tilbakedaterte transaksjoner før konverteringsdatoen, fordi en lagerlukking må gjennomføres én dag før startdatoen for konverteringen. En konvertering kan bare utføres hvis en lagerlukking er utført en dag før. Denne lagerlukkingen kan ikke avbrytes.
+Når konverteringsprosessen er fullført, baseres lagermodellen for hver vare på standardkostnaden, og varens standardkostnad blir aktivert. Påfølgende lagertransaksjoner blir vurdert etter varens standardkostnad. I tillegg konverterer systemet varens fysiske lagertransaksjoner for mottak og avganger til standardkostnad basert på konverteringsdatoen. Systemet konverterer også varens økonomiske lagerbeholdning til standardkostnad, og posterer verdiforskjellen som en lagerrevaluering. Eventuelle transaksjoner som foregår etter konverteringen, vurderes etter varens standardkostnad. Du kan ikke angi tilbakedaterte transaksjoner før konverteringsdatoen, for en lagerlukking må utføres en dag før konverteringsdatoen. En konvertering kan bare utføres hvis en lagerlukking ble utført en dag før. Denne lagerlukkingen kan ikke avbrytes.
 
-## <a name="1-define-a-standard-cost-conversion-record-and-the-associated-costing-version"></a>1. Angi en konverteringspost for standard kostpris og den tilhørende kostversjonen
+## <a name="1-define-a-standard-cost-conversion-record-and-the-associated-costing-version"></a>1. Definer en standard kostnadskonverteringspost og den tilhørende kostversjonen
 Bruk siden **Standard kostnadskonverteringer** til å opprette en konverteringspost. Du kan bare opprette en ny konverteringspost når de eksisterende konverteringspostene er fullført. Lengden på den planlagte overgangsperioden defineres av startdato for overgangen og den planlagte konverteringsdatoen. En planlagt overgangsperiode kan være så kort som én dag. En planlagt overgangsperiode bidrar til å sikre at konverteringen har nok tid til å fullføre alle trinnene. En lagerlukking må gjennomføres på en dato som er før startdatoen for overgangen, slik at utligningene er fullført før du starter konverteringsprosessen. Hvis du vil forsikre deg om at startdatoen for overgangen og lagerlukkingsdatoen er riktig justert, kan du enten endre startdatoen for overgangen til én dag etter en eksisterende lagerlukking eller utføre en lagerlukking. Når du angir en konverteringspost, angir du også en brukerdefinert ID for en ny kostversjon som vil inneholde standardkostnad for konverterte varer. Når du lagrer konverteringspostinformasjon, blir etterkalkuleringsversjonen opprettet automatisk.
 
-## <a name="2-review-and-change-the-new-costing-version-for-the-conversion-record"></a>2. Se gjennom og endre den nye kostversjonen for konverteringsposten
+## <a name="2-review-and-change-the-new-costing-version-for-the-conversion-record"></a>2. Gjennomgå og endre de nye etterkalkuleringsversjonene for konverteringsposten
 Den nye etterkalkuleringsversjonen er dedikert til konverteringsposten, noe som gjenspeiles i etterkalkuleringstypen **Konvertering**. Den dedikerte etterkalkuleringsversjonen ligner på en etterkalkuleringsversjon for standardkostnader, og den inneholder varekostpostene for varer som er knyttet til konverteringsposten. Den dedikerte etterkalkuleringsversjonen for en konverteringspost har følgende innstillinger, som du bør gå gjennom og endre i de ulike kategoriene etter behov:
 
 -   **Etterkalkuleringstype:** Dette feltet skal settes til **Standardkostnad**.
@@ -57,25 +60,25 @@ Den nye etterkalkuleringsversjonen er dedikert til konverteringsposten, noe som 
 
 Varekostnadsinformasjon i den dedikerte etterkaluleringsversjonen kan bare vedlikeholdes fra siden **Standard kostnadskonverteringer**. Du kan ikke bruke siden **Oppsett av etterkalkuleringsversjon** eller **Vedlikehold av etterkalkuleringsversjon** til å beregne kostnader for etterkalkuleringsversjonen under konvertering. Du kan imidlertid bruke disse sidene til å vedlikeholde den dedikerte etterkalkuleringsversjonen når du har fullført konverteringsprosessen.
 
-## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Angi elementene til å konvertere til standardkostnad
+## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Identifiser varene som skal konverteres til standardkostnad.
 Bruk siden **Standard kostnadskonverteringer** til å identifisere de individuelle varene som skal konverteres til standardkostnad. Du kan legge til flere elementer ved hjelp av siden **Legg til varer i standard kostnadskonvertering**. Generelt bør du ta med alle produserte varer i en enkelt konverteringspost slik at kostnadene blir beregnet på rett måte.
 
-## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Angi eller Beregn den uavsluttede standardkostnaden for hver vare som konverteres
+## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Angi eller beregne den ventende standardkostnaden for hver vare som konverteres
 Bruk **Varepris**-siden til å angi uavsluttede standardkostnader i den dedikerte etterkalkuleringsversjonen for kjøpte varer og overføringsvarer. Kostnadsposter gjelder bare for stedet, og du må angi varens uavsluttede kostpriser for hvert sted. Bruk **Varepris**-siden til å beregne uavsluttede standardkostnader for produserte varer. De uavsluttede kostnadene for en produsert vare bør beregnes for hvert produksjonssted, hvis ikke stedet representerer et overføringssted. I slike tilfeller bør de uavsluttede kostnadene angis manuelt. Noen varer kan ha produktdimensjoner som farge, størrelse eller konfigurasjon. På siden **Standard kostnadskonverteringer** viser avmerkingsboksen **Bruk kostpris etter variant** standardkostnaden for hver kombinasjon av produktdimensjoner. Når merket er fjernet fra avmerkingsboksen, trenger du bare å angi en ventende kostnad for varen.
 
-## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Kontroller og løs eventuelle problemer for varene som konverteres
+## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Kontrollere og løse eventuelle problemer for varene som konverteres
 Bruk rapporten **Kontroller for standard kostnadskonvertering** til å rapportere problemer for varer som konverteres. Hvis det ikke er problemer med varen, endres statusen i konverteringsposten til **Kontrollert**. Hvis en vare har problemer, må du løse problemene og deretter kjøre rapporten på nytt til statusen for varen endres til **Kontrollert**. Hvis du ikke kan løse problemet innen rimelig tid, kan du slette varen fra konverteringsposten og konvertere varen senere.
 
-## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Endre statusen til konverteringsposten til klar
+## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Endre statusen til konverteringsposten til Klar
 Når du endrer statusen til konverteringsposten til **Klar**, utfører systemet en sluttkontroll før en standard kostnadskonvertering kjøres. Statusen endres bare til **Klar** når følgende vilkår er oppfylt:
 
 -   Hver vare i konverteringsposten har statusen **Kontrollert**.
 -   En lagerlukking ble utført på en dato som er én dag før startdatoen for overgangen. Hvis du vil forsikre deg om at startdatoen for overgangen og lagerlukkingsdatoen er riktig justert, kan du enten endre startdatoen for overgangen til én dag etter en eksisterende lagerlukking eller utføre en lagerlukking.
 
-## <a name="7-back-up-the-database-before-conversion"></a>7. ta sikkerhetskopi av databasen før konvertering
+## <a name="7-back-up-the-database-before-conversion"></a>7. Sikkerhetskopiere databasen før konvertering
 Sikkerhetskopien sørger for at du kan gjenopprette databasen hvis det oppstår feil i konverteringen.
 
-## <a name="8-perform-the-conversion-when-the-conversion-record-has-a-ready-status"></a>8. utføre konverteringen når konverteringsposten har statusen klar
+## <a name="8-perform-the-conversion-when-the-conversion-record-has-a-ready-status"></a>8. Utføre konverteringen når konverteringsposten har statusen Klar
 Konverteringsprosessen krever at det gjennomføres lagerlukking på en dato som er én dag før den planlagte konverteringsdatoen. Dette kravet sørger for at tilbakedaterte transaksjoner ikke kan angis i overgangsperioden. Hvis det ikke er gjennomført lagerlukking, blir du spurt om du vil gjennomføre den som en del av konverteringsprosessen. Konverteringen håndterer ett element om gangen. Den starter med de laveste varene i en produktstruktur, basert på varens lavnivåkode. Når en vare er konvertert, endres statusen i konverteringsposten til **Konvertert**. Hvis konverteringsprosessen blir avbrutt, har varer som ikke er konvertert, fremdeles statusen **Kontrollert**. En vellykket konverteringsprosess har følgende innvirkninger:
 
 -   Statusen til konverteringsposten endres fra **Klar** til **Fullført**, og statusen for hver valgte vare endres fra **Kontrollert** til **Konvertert**.
@@ -83,7 +86,7 @@ Konverteringsprosessen krever at det gjennomføres lagerlukking på en dato som 
 -   Standardkostnader for konverterte varer er aktivert i den dedikerte etterkalkuleringsversjonen.
 -   Etterkalkuleringstypen til etterkalkuleringsversjonen endres fra **Konverstering** til **Standardkostnad**, og etterkalkuleringsversjonen fungerer nå som alle andre etterkalkuleringsversjoner for standardkostnader.
 
-## <a name="9-validate-and-reconcile-the-inventory-values-for-the-converted-items"></a>9. Valider og avstemme lagerverdiene for de konverterte varene
+## <a name="9-validate-and-reconcile-the-inventory-values-for-the-converted-items"></a>9. Validere og avstemme lagerverdiene for de konverterte varene
 I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i rapporten **Lagerverdi** kan du vise lagerverdi på en bestemt dato.
 
 -   Analyser revalueringsavvik. Bruk rapporten **Avviksanalyserapport** til å vise lagerrevalueringsavvik for de konverterte varene. Du kan også bruke siden **Standard kostnadstransaksjoner** til å vise lagerrevalueringstransaksjoner for de konverterte varene som har lager.
@@ -96,6 +99,8 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 <a name="see-also"></a>Se også
 --------
 
-[Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+[Forutsetninger for standard kostnadskonvertering](prerequisites-standard-cost-conversion.md)
+
+
 
 

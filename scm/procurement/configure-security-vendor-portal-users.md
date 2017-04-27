@@ -1,6 +1,6 @@
 ---
-title: "Leverandør portal brukersikkerhet"
-description: "Denne artikkelen forklarer hvordan du konfigurerer sikkerhet for eksterne leverandører som bruker leverandørportalen. Denne informasjonen gjelder bare for februar-2016 &amp;mai 2016 versjoner av Dynamics AX."
+title: "Brukersikkerhet for leverandørportal"
+description: "Denne artikkelen forklarer hvordan du konfigurerer sikkerhet for eksterne leverandører som bruker leverandørportalen. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-portal-user-security"></a>Leverandør portal brukersikkerhet
+# <a name="vendor-portal-user-security"></a>Brukersikkerhet for leverandørportal
 
-Denne artikkelen forklarer hvordan du konfigurerer sikkerhet for eksterne leverandører som bruker leverandørportalen. Denne informasjonen gjelder bare for februar-2016 &amp;mai 2016 versjoner av Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Leverandør portal-funksjonaliteten er erstattet med utvidede leverandør samarbeidsfunksjoner i Dynamics 365 operasjoner versjon 1611. Hvis du vil ha mer informasjon om hvordan du konfigurerer sikkerhet for samarbeid med leverandøren, se [satt opp og vedlikeholde leverandør samarbeid](set-up-maintain-vendor-collaboration.md). Leverandørportalen viser et begrenset sett med informasjon om bestillinger for eksterne leverandører. Det er viktig at du riktig definerer brukertillatelser for leverandørportalen i Microsoft Dynamics AX, slik at leverandører ikke får utilsiktet tilgang til mer informasjon i Dynamics AX-installasjonen. **Viktig:** i motsetning til andre brukere, skal ikke eksterne leverandører rollen **SystemUser**. Rollen **SystemUser** gir tilgang til et sett med rettigheter som ikke er egnet for eksterne brukere.
+
+Denne artikkelen forklarer hvordan du konfigurerer sikkerhet for eksterne leverandører som bruker leverandørportalen. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX.
+
+Funksjonen for leverandørportal er erstattet med utvidede leverandørsamarbeidsfunksjoner i Dynamics 365 Operations versjon 1611. Hvis du vil ha mer informasjon om hvordan du konfigurerer sikkerhet for leverandørsamarbeid, kan du se [Konfigurere og vedlikehold leverandørsamarbeid](set-up-maintain-vendor-collaboration.md). Leverandørportalen viser et begrenset sett med informasjon om bestillinger for eksterne leverandører. Det er viktig at du riktig definerer brukertillatelser for leverandørportalen i Microsoft Dynamics AX, slik at leverandører ikke får utilsiktet tilgang til mer informasjon i Dynamics AX-installasjonen. **Viktig:** i motsetning til andre brukere, skal ikke eksterne leverandører rollen **SystemUser**. Rollen **SystemUser** gir tilgang til et sett med rettigheter som ikke er egnet for eksterne brukere.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>Definere leverandørportalbruker
 Før du oppretter en brukerkonto for en person som skal bruke leverandørportalen, må du definere leverandøren for å tillate leverandørportalsamarbeid. Bruk feltet **Bestillingssamarbeid** i **Generelt** kategorien på **Leverandører** siden. Eksterne leverandører som bruker leverandørportalen må ha følgende oppsett:
@@ -44,6 +47,8 @@ Hvis samme person krever tilgang til leverandørportalen for flere leverandørko
 <a name="see-also"></a>Se også
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Leverandørsamarbeid](collaborate-vendors-vendor-portal.md)
+
+
 
 

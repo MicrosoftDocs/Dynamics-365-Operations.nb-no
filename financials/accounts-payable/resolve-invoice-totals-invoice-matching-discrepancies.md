@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Løse avvik under kontroll for fakturatotaler
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Én type fakturakontrollvalidering er kontroll av fakturatotaler. For å angi at systemet skal utføre kontroll av fakturatotaler går du til siden **Leverandørparametere**, kategorien **Fakturavalidering** og setter alternativet **Samsvar fakturatotaler** til **Ja**. 
@@ -39,6 +42,8 @@ Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren h
 -   Godta prisavviket og postere fakturaen som har samsvarende avvik. Systemet kan være konfigurert til å kreve godkjenning før det kan postere hvis det finnes samsvarende avvik. I så fall må du godkjenne det samsvarende avviket og du kan eventuelt skrive inn en merknad om godkjenning. Du kan deretter velge å postere fakturaen.
 -   Korriger fakturabeløpet til det forventede beløpet og poster fakturaen.
 -   Be om at leverandøren krediterer hele beløpet og gir deg en ny, korrigert faktura.
+
+
 
 
 

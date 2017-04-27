@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-sepa-direct-debit-mandate"></a>Definere SEPA-avtalegiromandat
 
+[!include[banner](../includes/banner.md)]
 
 
-Med en SEPA-avtalegiro (Single Euro Payment Area) kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat. Mandatet som kunden signerer, tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. Dette emnet er organisert for å vise prosessen med å definere mandates for SEPA direkte debet.
+
+
+Med en SEPA-avtalegiro (Single Euro Payment Area) kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat. Mandatet som kunden signerer, tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. Dette emnet er organisert slik at det viser prosessen med å definere SEPA-avtalegiromandater.
 
 ## <a name="prerequisites"></a>Forutsetninger
 Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
@@ -37,15 +40,17 @@ Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/område | Primæradressen for den juridiske enheten må være i følgende land: Østerrike, Belgia, Tyskland, Spania, Frankrike, Italia eller Nederland. |
 
-1. Angi en nummerserie for direkte debet mandates mandat hver AvtaleGiro må ha et unikt nummer. Bruk siden**Nummerserier** til å opprette en nummerserie for avtalegiromandater. Du bruker denne identifikatoren til å tilordne nummerserien til systemet for avtalegiromandat på siden **Kundeparametere**.
+1. Angi en nummerserie for avtalegiromandater. Hver avtalegiromandat må ha et unikt nummer. Bruk siden**Nummerserier** til å opprette en nummerserie for avtalegiromandater. Du bruker denne identifikatoren til å tilordne nummerserien til systemet for avtalegiromandat på siden **Kundeparametere**.
 
-2. Definere kundeparametere for direkte debet mandates bruk av **Kundeparametere** siden for å definere parametere for mandates for direkte debet. Til å definere parametere, på den **direkte debet** endrer parametere du trenger. På den **nummerserier** kategorien, oppdatere den **direkte debet mandat-ID** felt med nummerserien du har angitt tidligere.
+2. Definere kundeparametre for avtalegiromandater. Bruk siden **Kundeparametere** til å definere parametere for avtalegiromandater. For å definere parametere i kategorien **Avtalegiro** endrer du standardparameterne etter behov. I kategorien **Nummerserier** oppdaterer du feltet **ID for avtalegiromandat** med nummerserien som du tidligere definerte.
 
-3. Definere en betalingsmåte for direkte debet mandatene du må definere en betalingsmetode for mandates for direkte debet. Du bruker denne betalingsmåten til å utføre spørringer for fakturaer du vil generere avtalegirobetaling for. Bruk siden **Betalingsmåter** til å definere betalingsmetoder. Hvis du vil definere en betalingsmåte for avtalegiromandater, må du følge disse tilleggstrinnene for en betalingsmåte:
+3. Definere en betalingsmåte for avtalegiromandater. Du må definere en betalingsmåte for avtalegiromandater. Du bruker denne betalingsmåten til å utføre spørringer for fakturaer du vil generere avtalegirobetaling for. Bruk siden **Betalingsmåter** til å definere betalingsmetoder. Hvis du vil definere en betalingsmåte for avtalegiromandater, må du følge disse tilleggstrinnene for en betalingsmåte:
 
 -   I feltet **Betalingsmiddel** velger du **Elektronisk betaling**.
--   Valgfritt: Hvis du forventer at hver av kundene dine har flere mandatene, i den **perioden** feltet velger du **faktura**. Det blir opprettet en egen betaling for hver faktura og hver betaling skal bruke mandat som er angitt for fakturaen.
+-   Valgfritt: Hvis du forventer at hver av kundene har flere mandater, velger du **Faktura** i **Periode**-feltet. Det blir opprettet en egen betaling for hver faktura, og hver betaling bruker mandatet som er angitt for fakturaen.
 -   Velg **Krever mandat**-alternativet for å opprette betalinger ved hjelp av avtalegiromandater. **Krever mandat**-alternativet er bare tilgjengelig hvis du velger **Elektronisk betaling** i feltet **Betalingstype**.
 
-Se også [direkte debet-oversikt](sepa-direct-debit-overview.md) 
+Se også [Oversikt over avtalegiro](sepa-direct-debit-overview.md) 
+
+
 

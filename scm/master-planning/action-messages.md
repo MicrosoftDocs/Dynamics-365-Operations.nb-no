@@ -1,5 +1,5 @@
 ---
-title: udokumenterte
+title: udokumentert
 description: En handlingsmelding er et systemgenerert forslag til endring av en eksisterende planlagt eller autorisert ordre.
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="undocumented"></a>udokumenterte
+# <a name="undocumented"></a>udokumentert
 
 En handlingsmelding er et systemgenerert forslag til endring av en eksisterende planlagt eller autorisert ordre.
 

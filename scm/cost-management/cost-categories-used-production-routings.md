@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kostnadskategorier som brukes i produksjonsruting
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om kostnadskategorier som brukes i produksjonsmiljøer som bruker ruting.
 
 Kostnadskategorier gjelder for produksjonsmiljøer som bruker ruting. De tilordnes til operasjonsressurser og rutingsoperasjoner for å definere timekostnader og segmentere kostnadsbidrag i de beregnede kostnadene for en produsert vare. Kostnadsgruppene som er tilordnet kostnadskategoriene, klassifiserer bidrag til produksjonskostnader basert på operasjonsressurser og typen aktivitet, for eksempel oppsettstid og kjøretid. Ved å spesifisere tilordninger for kostnadsgrupper kan administrasjonskostnader i produksjonen beregnes basert på rutingsinformasjon. 
@@ -51,5 +54,7 @@ Kostprisposten for en kostnadskategori kan være områdespesfikk eler gjelde hel
 En rutingsoperasjon arver generelt kostnadskategoriene som er tilordnet til operasjonsressursen eller hovedoperasjonen. Når en produksjonsordre opprettes, gjenspeiler rutingsoperasjonene i produksjonsruten den valgte ruteversjonen. Du kan overstyre kostnadskategoriene som er tilordnet til operasjonene i produksjonsruten. 
 
 Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. I dette tilfellet kreves en kostnadskategori for produksjon og prosjekter. Du må definere mer prosjektrelatert informasjon når en kostnadskategori er flagget for bruk i prosjekter.
+
+
 
 

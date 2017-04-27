@@ -1,5 +1,5 @@
 ---
-title: "Gjør manuelle justeringer i den opprinnelige prognose"
+title: Foreta manuelle justeringer i basislinjeprognosen
 description: "Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gjør manuelle justeringer i den opprinnelige prognose
+# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
 
@@ -35,11 +38,11 @@ Før du gjør manuelle justeringer, er det viktig at du forstår noen nøkkelbeg
 ## <a name="grid-on-the-adjusted-demand-forecast-page"></a>Rutenett på siden Justert behovsprognose
 Siden **Justert behovsprognose** inneholder et rutenett med følgende struktur:
 
--   Den første kolonnen viser varene, varefordelingsnøkler, firmaer, og så videre som prognosen er generert for. Undertittelen på siden gir en beskrivelse av gjeldende prognosedimensjoner som vises i rutenettet. Hvis undertittelen på siden er for eksempel **firma / område / vare tildelingsnøkkel**, og ett med radoverskrifter i rutenettet er **USMF / 1 / D\_fordelt til datoer**, denne raden viser prognosen for firmaet USMF, område 1, og den **D\_fordelt til datoer** varetildelingsnøkkelen.
+-   Den første kolonnen viser varene, varefordelingsnøkler, firmaer, og så videre som prognosen er generert for. Undertittelen på siden gir en beskrivelse av gjeldende prognosedimensjoner som vises i rutenettet. Hvis undertittelen på siden for eksempel er **firma / område / varefordelingsnøkkel**, og en av radoverskriftene i rutenettet er **USMF / 1 / D\_Alloc**, viser denne raden prognosen for firmaet USMF, område 1, og varefordelingsnøkkel **D\_Alloc**.
 -   Etterfølgende kolonner representerer prognoseperioder som prognosen er generert for. Hver kolonneoverskrift er den første datoen i prognoseperioden som kolonnen viser.
 -   Verdiene i cellene representerer prognosen for én vare, varefordelingsnøkkel og så videre, for den bestemte prognoseperioden.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Prognose aggregasjon og deaggregation
+## <a name="forecast-aggregation-and-deaggregation"></a>Prognoseaggregering og -deaggregering
 Undertittelen på siden viser nivået på prognoseaggregering. 
 
 Hvis undertittelen på siden for eksempel er **firma / område / tilordningsnøkkel / varenummer / farge / størrelse / konfigurasjon / stil**, er det ingen prognoseaggregering, og prognosen vises på nivået for varen og dens dimensjoner. For å endre aggregering bruk siden **Endre prognosedimensjoner** som du kan åpne fra programmenyen. 
@@ -50,7 +53,7 @@ Hvis du endrer aggregering for å la siden vise mer aggregerte data, kan du bruk
 
 Du har for eksempel generert prognosen på varenivå, men du vet at behovet for denne varen vil øke på tvers av alle områder på grunn av en kampanje eller en annen lignende hendelse. I så fall kan du sette aggregeringen til **firma / varefordelingsnøkkel / vare** på siden **Endre prognosedimensjoner**. Du kan justere den globale prognosen for varen på tvers av alle områder i rutenettet **Justert behovsprognose**. Hvis du vil se effekten av endringen på tvers av alle områder, kan du åpne siden **Behovsprognoselinjer**. På denne siden vises én linje for varen for hvert område, det justerte prognoseantallet og det opprinnelige prognoseantallet. 
 
-Når det foretas justeringen av prognoseberegnede antall på et oppsamlet nivå, bruker systemet vektet fordeling til å distribuere endringen mellom linjene oppretter samlingen. 
+Når justeringen av det prognoseberegnede antall er utført på et aggregert nivå, bruker systemet avveid tildeling for å distribuere endringen mellom linjene som oppretter aggregeringen. 
 
 Du kan også gjøre manuelle justeringer på siden **Behovsprognoselinjer** ved å endre enten **Totalt antall**-verdien eller **Antall**-cellene i deaggregeringsrutenettet.
 
@@ -69,15 +72,17 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 **Merknader:**
 
 -   Konfidensintervallet som vises i delen **Prognose** på siden, representerer forskjellen mellom den øvre grensen for konfidensintervallet og den nedre grensen for konfidensintervallet. Hvis du vil se verdiene for øvre og nedre grense, holder du musepekeren over diagrammet i delen **Grafisk presentasjon av historisk behov og prognose**.
--   Hvis du bruker Dynamics-365 for operasjoner etterspørselen prognoser Microsoft Learning hvis maskinen Azure-tjenesten, kan du angi selvtillit nivå prosenten som skal ha prognosen som genereres. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
+-   Hvis du bruker Dynamics 365 for Operations behovsprognose og Microsoft Azure Machine Learning Service, kan du angi konfidensnivåprosenten som prognosen som genereres, skal ha. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 
 <a name="see-also"></a>Se også
 --------
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
+
+
 
 

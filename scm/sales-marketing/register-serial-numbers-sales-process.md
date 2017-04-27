@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprosessen
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
 
 Mange firmaer vil bare ha serienumre for service- og garantiformål, og trenger ikke vedlikeholde serienumrene på lageret fra mottak til avgang. I slike tilfeller lar Microsoft Dynamics 365 for Operations deg registrere serienumre på følgesedler eller fakturaer når varer selges. Hvis en vare returneres til deg senere, kan du spore den til en faktura for å finne ut om du solgte produktet, og om tjenesten eller garantiforpliktelsene er gyldige.
@@ -65,7 +68,7 @@ Ja, kan du kjøre en spørring på følgeseddeljournallinjen eller fakturajourna
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Kan jeg vise de serialiserte varene jeg har på lager?
 Nei, du kan ikke vise de serialiserte varene du har på lager fordi serienumre ikke registreres for varer før varene er solgt.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jeg registrere serienumre for varer catchweight?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jeg registrere serienumre for faktisk vekt-varer?
 Nei, du kan ikke registrere serienumre for faktisk vekt-varer under salgsprosessen. Hvis et produkt er definert som en faktisk vekt-vare, kan du ikke tilordne produktet til en sporingsdimensjonsgruppe som er konfigurert til å bruke serienumre bare i løpet av salgsprosessen.
 Kan jeg registrere serienumre på salgsstedet?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Ja, salgsstedet ber brukeren om å angi et serienummer når brukeren selger en v
 Denne funksjonaliteten er tilgjengelig for alle roller som kan vedlikeholde salgsfølgesedler og salgsfakturaer. Oppgavene nedenfor gir brukerne mulighet til å korrigere serienumre og registrere tomme oppføringer for serienumre som ikke kan leses eller skannes:
 -   Vedlikeholde rettelser av serienumre
 -   Vedlikeholde registrering av ikke-lesbare serienumre
+
+
 
 
 

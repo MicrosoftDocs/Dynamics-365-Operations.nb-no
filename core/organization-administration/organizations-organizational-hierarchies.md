@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>Organisasjoner og organisasjonshierarkier
 
+[!include[banner](../includes/banner.md)]
+
+
 En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 
 <a name="organizations"></a>Organisasjoner
 -------------
 
-I Microsoft Dynamics 365 for operasjoner, kan du definere følgende typer interne organisasjoner: juridiske enheter, operative enheter og team.
+I Microsoft Dynamics 365 for Operations kan du definere følgende typer interne organisasjoner: juridiske enheter, driftsenheter og team.
 
 Alle interne organisasjoner er typer av **Part**-enheten. Disse organisasjonene bruker derfor adresseboken til å lagre adresse- og kontaktinformasjon. En part, som kan være enten en person eller organisasjon, kan tilhøre én eller flere adressebøker.
 ### <a name="legal-entities"></a>Juridiske enheter
 
-En juridisk enhet er en organisasjon som har en registrert eller lovfestet juridisk struktur. Juridiske enheter kan inngå juridiske kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen. Et firma er en type juridisk enhet. I denne versjonen av Microsoft Dynamics 365 for operasjoner, selskaper er bare slags juridisk enhet som du kan opprette, og hver juridisk enhet som er tilknyttet et firma-IDen. Denne tilknytningen finnes fordi noen funksjonsområder i programmet bruker en firma-ID eller dataområde-ID, i sine datamodeller. I disse funksjonsområdene brukes firmaer som en grense for datasikkerhet. Brukere har bare tilgang til data for firmaet de er logget på.
+En juridisk enhet er en organisasjon som har en registrert eller lovfestet juridisk struktur. Juridiske enheter kan inngå juridiske kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen. Et firma er en type juridisk enhet. I denne versjonen av Microsoft Dynamics 365 for Operations er firmaer det eneste typen juridisk enhet som du kan opprette, og hver juridisk enhet er tilknyttet en firma-ID. Denne tilknytningen finnes fordi noen funksjonsområder i programmet bruker en firma-ID eller dataområde-ID, i sine datamodeller. I disse funksjonsområdene brukes firmaer som en grense for datasikkerhet. Brukere har bare tilgang til data for firmaet de er logget på.
 
 ### <a name="operating-units"></a>Driftsenheter
 
-En driftsenhet er en organisasjon som brukes til å fordele kontrollen over økonomiske ressurser og driftsprosesser i en virksomhet. Personer i en driftsenhet har plikt til å gjøre mest mulig ut av knappe ressurser, forbedre prosesser og gjøre rede for egen ytelse. I Microsoft Dynamics 365 for operasjoner omfatter hvilke typer driftsenheter kostsentre, forretningsenheter, verdistrømmer, avdelinger og kanaler for detaljhandel. Følgende tabell inneholder mer informasjon om hver type driftsenhet.
+En driftsenhet er en organisasjon som brukes til å fordele kontrollen over økonomiske ressurser og driftsprosesser i en virksomhet. Personer i en driftsenhet har plikt til å gjøre mest mulig ut av knappe ressurser, forbedre prosesser og gjøre rede for egen ytelse. I Microsoft Dynamics 365 for Operations omfatter driftsenhetstypene kostsentre, forretningsenheter, verdistrømmer, avdelinger og detaljhandelskanaler. Følgende tabell inneholder mer informasjon om hver type driftsenhet.
 | Driftsenhetstype | Beskrivelse                                                                                                                                    | Formål                                                                                                                                 |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Kostsenter         | En driftsenhet der ledere er ansvarlige for budsjetterte og faktiske utgifter.                                                      | Brukes for behandling og driftskontroll for forretningsprosesser som strekker seg over juridiske enheter.                                         |
@@ -55,7 +58,9 @@ Et team er en organisasjon der medlemmene deler et felles ansvar, en felles inte
 Organisasjonshierarkier
 --------------------------
 
-Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulike perspektiver. Du kan for eksempel definere et hierarki av juridiske enheter for avgiftsrapportering, juridisk eller lovpålagt rapportering. Definer et hierarki som er basert på driftsenheter, for å rapportere finansinformasjon som ikke er lovpålagt, men som brukes til internkontroll. Du kan for eksempel opprette et innkjøpshierarki for å styre innkjøpspolicyer, -regler og -forretningsprosesser. Hierarki er tilordnet et formål i Microsoft Dynamics 365 for operasjoner. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet. Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
+Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulike perspektiver. Du kan for eksempel definere et hierarki av juridiske enheter for avgiftsrapportering, juridisk eller lovpålagt rapportering. Definer et hierarki som er basert på driftsenheter, for å rapportere finansinformasjon som ikke er lovpålagt, men som brukes til internkontroll. Du kan for eksempel opprette et innkjøpshierarki for å styre innkjøpspolicyer, -regler og -forretningsprosesser. Hvert hierarki er tilordnet et formål i Microsoft Dynamics 365 for Operations. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet. Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
+
+
 
 
 

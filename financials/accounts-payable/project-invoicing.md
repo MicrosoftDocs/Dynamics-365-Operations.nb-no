@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Prosjektfakturering
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer.
 
 Prosjekttypen avgjør hvilken faktureringsprosess som skal brukes. Det er bare de to eksterne prosjekttyper, Etter regning og Fastpris, som kan faktureres. Etter regning-prosjekter og fastprisprosjekter er alltid knyttet til prosjektkontrakt.
@@ -103,7 +106,7 @@ Du kan for eksempel sette opp følgende faktureringstidsplan:
 Når delbetalingene er klare for fakturering, bruker du fremgangsmåten for fakturering av a konto-beløp.
 
 ## <a name="vendor-invoicing"></a>Leverandørfakturering
-Når du bestiller en vare fra en leverandør og tilordner varen til et prosjekt, bestemmer linjeegenskapen som du velger for bestillingslinjen for varen, om den innkjøpte varen faktureres til en kunde. Hvis du setter opp standard linjeegenskaper, de vises for varen på bestillingslinjen (linje detaljer &gt;prosjektet &gt;linjeegenskap). Det finnes to metoder å endre linjeegenskapen på:
+Når du bestiller en vare fra en leverandør og tilordner varen til et prosjekt, bestemmer linjeegenskapen som du velger for bestillingslinjen for varen, om den innkjøpte varen faktureres til en kunde. Hvis du setter opp standard linjeegenskaper, vises de for varen på bestillingslinjen (Linjedetaljer &gt; Prosjekt &gt; Linjeegenskap). Det finnes to metoder å endre linjeegenskapen på:
 
 -   Fakturer prosjektets kunde for varen: Sett linjeegenskapen for varen til en belastbar verdi på bestillingen, og fakturer deretter kunden ved hjelp av riktig prosjektfaktureringsmåte.
 -   Ikke fakturer prosjektets kunde for varen: Ikke velg linjeegenskapen **Belastbar** på bestillingslinjen for varen. Du kan deretter fakturere bestillingen, og mer er det ikke nødvendig å gjøre.
@@ -118,5 +121,7 @@ Det samme dokumentet kan inkludere transaksjoner som er valgt for kreditering, k
 For å kreditere et fakturert beløp velger du først det fakturerte beløpet som skal krediteres, og deretter oppretter du en kreditnota. Du oppretter en kreditnota ved å følge samme fremgangsmåte som for generering av en kundefaktura. 
 
 Du kan opprette en faktura som har et negativt beløp, som blir en faktura som klassifiseres som en kreditnota. For å opprette og skrive ut en kreditnota må du velge transaksjonene som tidligere er postert for en kundefaktura, og deretter redigere transaksjonene. Med mindre primæradressen til den juridiske enheten er i Tyskland, vil tittelen på fakturaen være "Korrigerende faktura".
+
+
 
 

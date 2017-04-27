@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Konfigurere reiseregning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du konfigurerer Reiseregning og utlegg i Microsoft Dynamics AX. I området Reiseregning og utlegg kan du blant annet lagre informasjon om betalingsmåter, reiserekvisisjoner, reiseregninger og retningslinjer. 
 
 Fordi mange av valgene du gjør når du planlegger konfigurasjonen for Reiseregning og utlegg, er basert på organisasjonens hierarki og økonomiske struktur, må du referere til planleggingsdokumentene for disse områdene.
@@ -133,6 +136,8 @@ Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og p
 -   Når utløper policyen?
 -   Hva er policyregelen?
 -   Hva er resultatet av policyregelen?
+
+
 
 
 

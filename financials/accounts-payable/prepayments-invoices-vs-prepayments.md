@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Med den ene metoden oppretter du en forskuddsbetalt faktura som er knyttet til en bestilling. Med den andre metoden oppretter du journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
 
 Organisasjoner kan utstede forskuddsbetalinger til leverandører for varer eller tjenester før varene eller tjenestene er oppfylt. To metoder kan brukes til å utstede forskuddsbetalinger til leverandører. Hvis du vil redusere risikoen, kan du spore forskuddsbetalinger ved å definere forskuddsbetalingen på en bestilling. For denne metoden må du opprette en forskuddsbetalt faktura som er knyttet til en bestilling. Denne metoden kalles forskuddsfakturering. Organisasjoner som ikke vil følge opp forskuddsbetalinger så tett, eller ikke mottar en forskuddsbetalt faktura fra leverandøren, kan bruke journalbilag for forskuddsbetaling i stedet for faktureringsmåten forskuddsbetaling. Du kan opprette journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling. Du kan ikke spore hvilke forskuddsbetalinger til en leverandør som gjøres mot hvilke bestillinger for denne metoden. Du kan imidlertid merke en postert forskuddsbetaling for utligning mot en bestilling.
@@ -47,9 +50,9 @@ Regnskapspraksis i mange land/regioner krever at forskuddsbetaling (betalinger p
 1.  Definer en posteringsprofil for forskuddsbetalinger.
 2.  I Kundeparametere og Leverandørparametere, under **Finans og merverdiavgift**, velger du den nye posteringsprofilen ved hjelp av parameteren **Posteringsprofil for betalingsjournal med forskuddsbetaling**.
 3.  Opprett en betalingsjournal, og opprett deretter den nye betalingen.
-4.  Du kan flagge betalingen som en forskuddsbetaling. Hvis en betaling er flagget som en forskuddsbetaling, kan betalingen posteres til finanskontoene som er definert i posteringsprofilen som du opprettet i trinn 1 og 2. I tillegg, hvis betalingen er flagget som en forskuddsbetaling, beregnes skatt. Noen myndigheter krever at avgiftene betales når det registreres en forskuddsbetaling, selv om det ikke er en faktura.
+4.  Du kan flagge betalingen som en forskuddsbetaling. Hvis en betaling er flagget som en forskuddsbetaling, posteres betalingen til finanskontoer som er definert i posteringsprofilen som du definerer i trinn 1 og 2. Hvis betalingen er flagget som en forskuddsbetaling, beregnes også skatt. Noen myndigheter krever at avgiftene betales når det registreres en forskuddsbetaling, selv om det ikke er en faktura.
 5.  Poster forskuddsbetalingen.
-6.  Valgfritt: Du kan utligne forskuddsbetaling mot bestillingen eller salgsordren før du oppretter fakturaen. På salgsordre eller bestilling bestillingssiden i handlingsruten, kan du bruke **utligne transaksjoner**.
+6.  Valgfritt: Du kan utligne forskuddsbetalingen mot bestillingen eller salgsordren før du oppretter fakturaen. I handlingsruten på salgsordre- eller bestillingssiden bruker du **Utlign transaksjoner**.
 7.  Når leverandøren leverer varene eller tjenestene, kan du registrere fakturaen. Hvis du har utlignet forskuddsbetalingen mot bestillingen eller salgsordren i trinn 6, utlignes automatisk forskuddsbetalingen mot fakturaen som du opprettet. Hvis du ikke utlignet forskuddsbetalingen mot bestillingen eller salgsordren, kan du manuelt utligne den mot fakturaen ved hjelp av **Utlign transaksjoner** på kunde- eller leverandørsiden. Forskuddsbetalingsbeløpet tilbakeføres deretter ut fra den midlertidig AP/AR-finanskontoen. I tillegg, hvis merverdiavgift er beregnet, tilbakestilles de fordi fakturaen har de faktiske mva-beløpene.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Oversikt over forskuddsfaktureringsprosessen
@@ -60,6 +63,8 @@ Forskuddsbetalte fakturaer er vanlig forretningspraksis. En leverandør sender f
 3.  Leverandørkoordinatoren registrerer den forskuddsbetalte fakturaen mot bestillingen, og deretter betales den forskuddsbetalte fakturaen.
 4.  Når leverandøren har levert varene eller tjenestene, og de tilknyttede leverandørfakturaene er mottatt, bruker leverandørkoordinatoren forskuddsbetalingsbeløpet som allerede er betalt mot fakturaen.
 5.  Leverandørkoordinatoren betaler og utligner det gjenstående beløpet på fakturaen.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Bruk en kundebetaling skal utlignes mot flere fakturaer som strekker seg over flere rabattperioder
+title: "Bruke én kundebetaling for å utligne flere fakturaer som strekker seg over flere rabattperioder"
 description: "Denne artikkelen viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer."
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruk en kundebetaling skal utlignes mot flere fakturaer som strekker seg over flere rabattperioder
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruke én kundebetaling for å utligne flere fakturaer som strekker seg over flere rabattperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 
-Fabrikam selger varer til kunden 4032. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt i 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Settement-parametere er plassert på den **Kundeparametere** siden.
+Fabrikam selger varer til kunden 4032. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Kundeparametere**.
 
 ## <a name="invoices"></a>Fakturaer
 Kunde 4032 har tre fakturaer på til sammen 3 000,00:
 
--   Faktura FTI-10040 for 1000,00, er angitt på 15 mai. Denne fakturaen er kvalifisert for en kontantrabatt på 1 prosent hvis det blir betalt i 14 dager.
--   Faktura FTI-10041 for 1000,00, ble angitt i juni 25. Denne fakturaen er kvalifisert for en kontantrabatt på 1 prosent hvis det blir betalt i 14 dager.
--   Faktura FTI-10042 for 1000,00, ble angitt i juni 25. Denne fakturaen er kvalifisert for en kontantrabatt på 2 prosent hvis det er betalt i fem dager og 1 prosent rabatt hvis den er betalt i 14 dager.
+-   Faktura FTI-10040 på 1 000,00 ble registrert 15. mai. Denne fakturaen er kvalifisert for en kontantrabatt på 1 prosent hvis den betales innen 14 dager.
+-   Faktura FTI-10041 på 1 000,00 ble registrert 25. juni. Denne fakturaen er kvalifisert for en kontantrabatt på 1 prosent hvis den betales innen 14 dager.
+-   Faktura FTI-10042 på 1 000,00 ble registrert 25. juni. Denne fakturaen er kvalifisert for en kontantrabatt på 2 prosent hvis den betales innen fem dager, og 1 prosent rabatt hvis den betales innen 14 dager.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Utligne alle fakturaer 29. juni
 Hvis Magnus oppretter en betalingsjournal for å utligne disse fakturaene fullt ut 29. juni, er betalingen 2 970,00. Summen av alle rabattbeløp er 30,00. Magnus oppretter en betaling for kunde 4032, og åpner deretter siden **Utlign transaksjoner**. På siden **Utlign transaksjoner** merker Magnus alle tre fakturalinjene for utligning:
@@ -76,7 +79,7 @@ Kunde 4032 kan betale et delbeløp, for eksempel halvparten av hver faktura. Mag
 | Valgt                 | Normal            | FTI-10041 | 4032    | 25/6/2015 | 25/7/2015 | 10041   | 1 000,00                             |                                       | USD      | 495.00           |
 | Valgt og uthevet | Normal            | FTI-10042 | 4032    | 25/6/2015 | 25/7/2015 | 10042   | 1 000,00                             |                                       | USD      | 490.00           |
 
-Magnus kan også manuelt angi beløp for 1,485.00 før han åpner den **utligne transaksjoner** siden. Hvis Magnus registrerer beløpet manuelt, og deretter merker du alle tre transaksjoner, men han ikke justere verdien i den **beløp som skal utlignes** feltet for hver transaksjon han mottar følgende melding når han lukker siden:
+Magnus kan også angi betalingsbeløpet på 1 485,00 manuelt før han åpner siden **Utlign transaksjoner**. Hvis Magnus registrerer betalingsbeløpet manuelt og deretter merker alle tre transaksjonene, men ikke justerer verdien i feltet **Beløp som skal utlignes** for hver transaksjon, mottar han følgende melding når han lukker siden:
 
 > Totalbeløpet av merkede transaksjoner er forskjellig fra journalbeløpet. Vil du endre journalbeløpet?
 
@@ -95,6 +98,8 @@ Magnus viser informasjonen på siden **Kundetransaksjoner**.
 | FTI-10042  | Faktura          | 25/6/2015 | 10042   | 1 000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Betaling          | 29/6/2015 |         |                                      | 1 485,00                              | 0,00     | USD      |
 | DISC-10040 | Kontantrabatt    | 29/6/2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

@@ -52,13 +52,13 @@ Som en del av prosessen for aktivering av lageroppsett må du definere lagersone
 -   **Lokasjonstyper** – En logisk eller fysisk gruppering av lagerlokasjonene. Du kan for eksempel opprette en lokasjonstype for alle oppsamlingslokasjoner. Obligatoriske innstillinger på **Lagerstyringsparametere**-siden driver prosessen med å definere oppsamlingslokasjonstypene og endelig leveringslokasjonstype.
 -   **Lokasjoner** – Det laveste nivået av lokasjonsinformasjon. Lokasjoner brukes til å spore hvor lagerbeholdningen lagres og plukkes på et lager.
 
-Enhetene som du oppretter for å definere oppsettet for lageret, brukes i spørringene som du definerer i arbeidsmaler for å drive arbeidsordrer i lageret. Derfor, når du definerer sonene, vurderer lokasjonstyper og så videre hvordan ulike områder i lageret brukes til forskjellige prosesser. I tillegg må du vurdere faktorer som for eksempel fysiske egenskaper for et bestemt område. Det kan for eksempel være områder der du kan bruke bare en bestemt type trucken. Eller, hvis firmaet har både produksjon og ferdige varer innenfor de samme fasilitetene, kanskje du vil opprette et enkelt lager i Dynamics 365 for operasjoner, men Separer to operasjoner ved å opprette to zone-grupper. Gi enheter beskrivende navn, slik at det er enkelt å identifisere dem. Når du bruker dem i mal-spørringer.
+Enhetene som du oppretter for å definere oppsettet for lageret, brukes i spørringene som du definerer i arbeidsmaler for å drive arbeidsordrer i lageret. Derfor, når du definerer sonene, vurderer lokasjonstyper og så videre hvordan ulike områder i lageret brukes til forskjellige prosesser. I tillegg må du vurdere faktorer som for eksempel fysiske egenskaper for et bestemt område. Det kan for eksempel være områder der du bare kan bruke en bestemt type truck. Eller, hvis firmaet har produksjonsvarer og ferdige varer innenfor de samme fasilitetene, kan det hende at du vil opprette et enkelt lager i Dynamics 365 for Operations, men dele inn de to operasjonene ved å opprette to sonegrupper. Gi enhetene beskrivende navn slik at det er enkelt å identifisere dem når du bruker dem i malspørringer.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Lagringsgrenser for lokasjon, lokasjonsprofiler og faste plukklokasjoner
 
 Du må vurdere det fysiske oppsettet av lageret, både for å bestemme lagringskapasiteter (lokasjonslagringsgrenser og lokasjonsprofiler), og som en del av dine forsøk på å oppnå optimale lagerprosesser. 
 
-Plasseringen lagring begrensninger å garantere at arbeidet ikke er opprettet for å be om at lageret bli plassert på et sted som ikke har den fysisk kapasiteten til å overføre lageret. For eksempel hvis noen steder i et lager kan inneholde bare én pall per lokasjon, kan lokasjon lagring grenser aktiveres. Den ** antall ** verdien kan settes til **1**, og ** enhet ** verdien kan settes til **PL** i et bestemt sted profil grupperingen. 
+Lagringsgrenser for lokasjonen garanterer at arbeid ikke opprettes for å be om at lageret blir plassert på en lokasjon som ikke har den fysiske kapasiteten til å føre lageret. Hvis for eksempel noen steder i et lager kan inneholde bare én pall per lokasjon, kan lokasjonslagringsgrenser aktiveres. **Antall**verdien kan settes til **1**, og **Enhet**-verdien kan settes til **PL** i en bestemt lokasjonsprofilgruppering. 
 
 Hvis mer avanserte beregninger kreves for å styre lokasjonskapasitetsbegrensningene, kan lokasjonsprofilinnstillingene brukes. I så fall vurderes vekt og volum når kapasitetsberegninger utføres. 
 
@@ -66,7 +66,7 @@ For å oppnå optimale utgående prosesser, bør du vurdere om du vil bruke fast
 
 ### <a name="location-setup-wizard"></a>Veiviser for lokasjonsoppsett
 
-Du kan raskt lage innen et lager, kan du bruke den ** lokasjonsoppsettet ** veiviseren. Som en del av denne prosessen kan du enkelt beholde formatet til lokasjonsnavnene.
+Du kan bruke **Veiviser for lokasjonsoppsett** for å raskt lage lokasjonene i et lager. Som en del av denne prosessen kan du enkelt beholde formatet til lokasjonsnavnene.
 
 ## <a name="warehouse-processes"></a>Lagerprosesser
 Som en del av konfigurasjonen av lageret er det viktig at du aktiverer lagerprosesser i henhold til bedriftens behov. De viktigste komponentene du må konfigurere, er bølgemaler, arbeidsmaler, arbeidsutvalg og lokasjonsdirektiver.
@@ -75,7 +75,7 @@ Som en del av konfigurasjonen av lageret er det viktig at du aktiverer lagerpros
 
 Bølgemaler bidrar til å aktivere den utgående "Frigi til lager"-prosessen. Så snart ordrelinjer frigis (enten direkte fra kildedokumenter, via prosesser for satsvise jobber eller via belastninger som allerede er opprettet), brukes funksjonen for bølgemal. 
 
-Du kan opprette tre typer wave-maler: **levering**, **produksjonsordre**, og **Kanban**. Parametere brukes til å definere hvor langt systemet automatisk skal gå i arbeid for utgående behandling. En bølgemal velges basert på bølgemalrekkefølgen og -kriteriene som er angitt i malen. Hvis en mal vises øverst i rekkefølgen, kontrolleres først vilkårene i denne malen. Hvis vilkårene kan oppfylles, behandles bølgemalen. Hvis ikke kontrolleres kriteriene i neste mal og så videre. Det er derfor lurt å plassere malen som har de mest spesifikke kriteriene, øverst på listen for bølgemalensekvens slik at den blir behandlet først. Du vil for eksempel behandle alt arbeid for en bestemt transportør i dag og midlertidig utsette behandlingen av arbeidet for andre transportører. I så fall skal bølgemalen som velger arbeid for transportøren, vises høyere i sekvensen enn andre maler. Hvis ikke kan det hende at arbeidet for andre transportører behandles før arbeidet for denne leverandøren er fullført. 
+Du kan opprette tre typer bølgemaler: **Forsendelse**, **Produksjonsordre** og **Kanban**. Parametere brukes til å definere hvor langt systemet automatisk skal gå i utgående arbeidsbehandling. En bølgemal velges basert på bølgemalrekkefølgen og -kriteriene som er angitt i malen. Hvis en mal vises øverst i rekkefølgen, kontrolleres først vilkårene i denne malen. Hvis vilkårene kan oppfylles, behandles bølgemalen. Hvis ikke kontrolleres kriteriene i neste mal og så videre. Det er derfor lurt å plassere malen som har de mest spesifikke kriteriene, øverst på listen for bølgemalensekvens slik at den blir behandlet først. Du vil for eksempel behandle alt arbeid for en bestemt transportør i dag og midlertidig utsette behandlingen av arbeidet for andre transportører. I så fall skal bølgemalen som velger arbeid for transportøren, vises høyere i sekvensen enn andre maler. Hvis ikke kan det hende at arbeidet for andre transportører behandles før arbeidet for denne leverandøren er fullført. 
 
 Du må angi metodene for bølgeprosess i hver bølgemal. Metodene som er tilgjengelige, varierer avhengig av bølgemaltypen.
 
@@ -107,6 +107,6 @@ Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knytt
 <a name="see-also"></a>Se også
 --------
 
-[Konfigurere plasseringer i et WMS-aktiverte lager (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurere lokasjoner i et WMS-aktivert lager (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
 

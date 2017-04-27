@@ -1,6 +1,6 @@
 ---
 title: Behandle tildelinger
-description: "Denne artikkelen inneholder informasjon om tildelinger, alternativer for behandling av dem i Microsoft Dynamics 365 for operasjoner, og hvordan de kan brukes i planleggingen av budsjettet. Tildelinger brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å garantere at utgifter eller inntekter belastes til riktig objekt i regnskapet."
+description: "Denne artikkelen inneholder informasjon om tildelinger, alternativene for behandling av dem i Microsoft Dynamics 365 for Operations, og hvordan de kan brukes i planleggingen av budsjettet. Tildelinger brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å garantere at utgifter eller inntekter belastes til riktig objekt i regnskapet."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Behandle tildelinger
 
-Denne artikkelen inneholder informasjon om tildelinger, alternativer for behandling av dem i Microsoft Dynamics 365 for operasjoner, og hvordan de kan brukes i planleggingen av budsjettet. Tildelinger brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å garantere at utgifter eller inntekter belastes til riktig objekt i regnskapet.
+Denne artikkelen inneholder informasjon om tildelinger, alternativene for behandling av dem i Microsoft Dynamics 365 for Operations, og hvordan de kan brukes i planleggingen av budsjettet. Tildelinger brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å garantere at utgifter eller inntekter belastes til riktig objekt i regnskapet.
 
-Microsoft Dynamics-365 for operasjoner har det følgende funksjonalitet til å støtte denne prosessen:
+Microsoft Dynamics 365 for Operations har følgende funksjonalitet for å støtte denne prosessen:
 
--   Tildele transaksjonsbeløpene manuelt ved hjelp av handlingen delt i regnskapsdistribusjoner, eller ved å angi standardmaler for finansdimensjon for et dokument. Hvis du vil ha mer informasjon, se [regnskapsdistribusjoner.](\accounts-payable\accounting-distributions.md)
+-   Fordel transaksjonsbeløpene manuelt ved hjelp av Del-handlingen regnskapsdistribusjoner, eller ved å bruke standardmaler for finansdimensjon på et dokument. Hvis du vil ha mer informasjon, kan du se [Regnskapsdistribusjoner](\accounts-payable\accounting-distributions.md).
 -   Fordel transaksjonsbeløp automatisk basert på fordelingsbetingelser som er definert på den individuelle hovedkontoen. Tildelingskontooppføringer genereres for hver journal basert på prosentandelen og finanskontoen når en regnskapsoppføring oppfyller vilkårene som er definert som kildefinanskontoen.
 -   Fordel finanssaldoer eller faste beløp automatisk basert på finansfordelingsregler. Finansfordelingsreglene behandles på periodisk basis ved hjelp av fordelingsjournaler. 
 

@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Avledede tablåer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten.
 
-Formålet med avledede bøker er å forenkle postering av boken anleggsmiddeltransaksjoner som er planlagt for regelmessige intervaller.  Du kan velge én bok som den primære boken. Dette er vanligvis tablået som brukes til regnskapsavskrivning. Du knytter det deretter til de andre tablåene som brukes til å postere transaksjoner i samme intervaller som det primære tablået. Tablåer for avskrivning av skatt brukes ofte som avledede tablåer. 
+Formålet med avledede tablåer er å forenkle postering av anleggsmiddeltablåtransaksjoner som er planlagt for regelmessige intervaller.  Du kan velge ett tablå som det primære tablået. Dette er vanligvis tablået som brukes til regnskapsavskrivning. Du knytter det deretter til de andre tablåene som brukes til å postere transaksjoner i samme intervaller som det primære tablået. Tablåer for avskrivning av skatt brukes ofte som avledede tablåer. 
 
 De vanligste transaksjonene som brukes til å postere til avledede tablåer, er anskaffelse, anskaffelsesjusteringer og anleggsmidler. 
 
@@ -42,6 +45,8 @@ Når transaksjonen er postert, genereres en anskaffelsestransaksjon på 1500,00 
 > [!NOTE]                                                                                                                               
 > Tablåer som brukes til å postere transaksjoner i intervaller som er forskjellig fra intervallene til det primære tablået, må knyttes til de faste anleggsmidlene som separate tablåer, og ikke som avledede tablåer.  
 
-Hvis du vil ha mer informasjon, se [postering med avledede bøker](post-derived-value-models.md).
+Hvis du vil ha mer informasjon, kan du se [Postere med avledede tablåer](post-derived-value-models.md).
+
+
 
 

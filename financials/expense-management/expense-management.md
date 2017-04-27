@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Reiseregning og utlegg
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planlegging av reiseregning](plan-expense-management.md) Det kommer mer informasjon senere. Kom tilbake snart.
+
+
 
 

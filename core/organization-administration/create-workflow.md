@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Opprette en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du oppretter en arbeidsflyt.
 
 <a name="open-the-workflow-editor"></a>Åpne redigeringsprogrammet for arbeidsflyt
 ------------------------
 
-Microsoft Dynamics-365 for operasjoner-modul som du arbeider i, bestemmer hvilke typer arbeidsflyt som du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
+Microsoft Dynamics 365 for Operations-modulen som du arbeider i, bestemmer hvilke typer arbeidsflyt som du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
 
 1.  Åpne modulen du vil opprette en ny arbeidsflyt for. Hvis du for eksempel vil opprette en arbeidsflyt for innkjøpsrekvisisjoner, klikker du **Innkjøp og leverandører**.
-2.  Klikk **Setup**&gt;**\[Modulnavn\] arbeidsflyter**.
+2.  Klikk **Oppsett** &gt; **\[Arbeidsflyter for\] modulnavn**.
 3.  På listesiden som vises klikker du **Ny** i handlingsruten.
 4.  På siden **Opprett arbeidsflyt** velger du typen arbeidsflyt å opprette, og deretter klikker du **Opprett arbeidsflyt**. Redigeringsprogrammet for arbeidsflyt åpnes. Du kan nå bruke fremgangsmåtene nedenfor for utforme arbeidsflyten.
 
@@ -75,6 +78,8 @@ Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgan
 3.  Hvis alle problemer med feil og advarsler er løst, vises **Aktiver arbeidsflyt**-siden. Velg ett av følgende alternativer:
     -   Hvis du vil aktivere denne versjonen av arbeidsflyten, klikker du **Aktiver den nye versjonen**. Når en arbeidsflyt er aktiv, kan brukere sende dokumenter til den for behandling.
     -   Hvis du ikke vil aktivere denne versjonen, klikker du **Ikke aktiver den nye versjonen**. Du kan aktivere arbeidsflyten senere.
+
+
 
 
 

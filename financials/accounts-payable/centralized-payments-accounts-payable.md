@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Sentraliserte betalinger for Leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. I tillegg sparer organisasjonen tid, fordi betalingsprosessen er strømlinjeformet.
@@ -66,14 +69,14 @@ Fabrikam Øst har en åpen faktura for leverandørkonto 100, Fourth Coffee. Fabr
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
 | Skal betales fra Fabrikam Øst (Fabrikam) | 600,00       |               |
 | Leverandører (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                          | Debetbeløp | Kreditbeløp |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fakturaen
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
 | Skal betales fra Fabrikam Øst (Fabrikam) | 580,00       |               |
 | Leverandører (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                          | Debetbeløp | Kreditbeløp |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fabrikam 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp            | Kreditbeløp           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fabrikam 
 | Realisert tap (Fabrikam)          | EUR 0,00 / USD 12,90    |                         |
 | Skal betales fra Fabrikam Øst (Fabrikam) |                         | EUR 0,00 / USD 12,90    |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                          | Debetbeløp            | Kreditbeløp           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fakturaen
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp            | Kreditbeløp           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fakturaen
 | Realisert tap (Fabrikam)          | EUR 0,00 / USD 12,66    |                         |
 | Skal betales fra Fabrikam Øst (Fabrikam) |                         | EUR 0,00 / USD 12,66    |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                          | Debetbeløp            | Kreditbeløp           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam Øst har en åpen faktura for leverandør 100, Fourth Coffee. Fakturaen
 | Kontantrabatt (Fabrikam Øst)    |                         | EUR 11,28 / USD 13,61   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Eksempel 5: Leverandørkreditnota med hovedbetaling
-Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Betalingen utlignes med en åpen faktura for Fabrikam Vest-leverandør 3004 og en åpen kreditnota for Fabrikam Øst-leverandør 100. Betalingen velges som hovedbetaling i den **utligne transaksjoner** siden.
+Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Betalingen utlignes med en åpen faktura for Fabrikam Vest-leverandør 3004 og en åpen kreditnota for Fabrikam Øst-leverandør 100. Betalingen velges som hovedbetaling på siden **Utlign transaksjoner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Fakturaen posteres til Fabrikam West for leverandør 3004
 
@@ -224,7 +227,7 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 | Skal betales fra Fabrikam Vest (Fabrikam) | 100,00       |               |
 | Leverandører (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
 | Skal betales fra Fabrikam (Fabrikam Øst) | 25,00        |               |
 | Leverandører (Fabrikam Øst)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam Vest-postering**
 
 | Konto                          | Debetbeløp | Kreditbeløp |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 | Skal betales til Fabrikam (Fabrikam Vest)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Eksempel 6: Leverandørkreditnota uten hovedbetaling
-Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Betalingen utlignes med en åpen faktura for Fabrikam Vest-leverandør 3004 og en åpen kreditnota for Fabrikam Øst-leverandør 100. Betalingen ikke er valgt som hovedbetaling i den **utligne transaksjoner** siden.
+Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Betalingen utlignes med en åpen faktura for Fabrikam Vest-leverandør 3004 og en åpen kreditnota for Fabrikam Øst-leverandør 100. Betalingen velges ikke som hovedbetaling på siden **Utlign transaksjoner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Fakturaen posteres til Fabrikam West for leverandør 3004
 
@@ -273,21 +276,21 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
 | Skal betales fra Fabrikam Vest (Fabrikam) | 75,00        |               |
 | Leverandører (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                                | Debetbeløp | Kreditbeløp |
 |----------------------------------------|--------------|---------------|
 | Skal betales fra Fabrikam Vest (Fabrikam Øst) | 25,00        |               |
 | Leverandører (Fabrikam Øst)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam Vest-postering**
 
 | Konto                              | Debetbeløp | Kreditbeløp |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 | Skal betales til Fabrikam (Fabrikam Vest)      |              | 75,00         |
 | Leverandører (Fabrikam Vest)     | 25,00        |               |
 | Skal betales til Fabrikam Øst (Fabrikam Vest) |              | 25,00         |
+
+
 
 
 

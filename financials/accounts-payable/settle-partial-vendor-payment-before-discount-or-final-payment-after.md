@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis leverandørbetaling før rabattdatoen med en endelig betaling etter rabattdatoen"
+title: "Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen"
 description: Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelig betaling etter rabattdatoen
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 
-Fabrikam Innkjøp av varer fra leverandøren 3057. Fabrikam mottar en kontantrabatt på 1 prosent hvis fakturaen er betalt i 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Parametere for utligning er plassert på den **leverandørparametere** siden.
+Fabrikam kjøper varer fra leverandøren 3057. Fabrikam får en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Leverandørparametere**.
 
 ## <a name="invoice-on-june-25"></a>Faktura 25. juni
-Juni 25, April legger inn og posterer en faktura for 1 000,00 for leverandøren 3057. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
+25. juni registreres og posteres en faktura på 1 000,00 for leverandøren 3057. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
 
 | Bilag   | transaksjonstype | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo   | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Fakt-10020 | Faktura          | 25/6/2015 | 10020   |                                      | 1 000,00                              | -1 000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Delvis betaling 2. juli
-2. juli ønsker April å utligne 300,00 for denne fakturaen. Betalingen er kvalifisert for rabatt fordi Fabrikam får rabatter på delbetalinger. Derfor betaler April 297,00 og får 3,00 i rabatt. Hun oppretter en betalingsjournal og angir en linje for leverandøren 3057. Hun åpner den **utligne transaksjoner** side, slik at hun kan merke fakturaen for utligning.
+2. juli ønsker April å utligne 300,00 for denne fakturaen. Betalingen er kvalifisert for rabatt fordi Fabrikam får rabatter på delbetalinger. Derfor betaler April 297,00 og får 3,00 i rabatt. Hun oppretter en betalingsjournal og angir en linje for leverandør 3057. Hun åpner siden **Utlign transaksjoner**, slik at hun kan merke fakturaen for utligning.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -91,7 +94,7 @@ April posterer deretter betalingen. Når hun åpner siden **Leverandørtransaksj
 | APP-10021  | Betaling          | 15/7/2015 |         | 700,00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Gjenstående betaling 15. juli, Bruk kontantrabatt = Alltid
-Hvis leverandøren lar April ta en rabatt, selv om hun betaler etter rabattdatoen, kan hun endre verdien i den **Bruk kontantrabatt** feltet til **alltid**. Den **beregne kontantrabatter for delvise betalinger**, overstyres innstillingen, og rabatten er tatt. Betalingsbeløpet er 693,00, og rabatten er de gjenværende 7,00.
+Hvis leverandøren lar April ta rabatt selv om hun betaler etter rabattdatoen, kan hun endre verdien i feltet **Bruk kontantrabatt** til **Alltid**. Innstillingen **Beregn kontantrabatter for delvise betalinger** overstyres, og rabatten utføres. Betalingsbeløpet er 693,00, og rabatten er de gjenværende 7,00.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -116,6 +119,8 @@ April posterer deretter betalingen. Når hun åpner siden **Leverandørtransaksj
 | RAB-10020 | Kontantrabatt    | 1/7/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | APP-10021  | Betaling          | 15/7/2015 |         | 693,00                               |                                       | 0,00    | USD      |
 | RAB-10021 | Kontantrabatt    | 15/7/2015 |         | 7,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

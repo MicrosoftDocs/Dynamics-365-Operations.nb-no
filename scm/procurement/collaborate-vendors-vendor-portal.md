@@ -1,6 +1,6 @@
 ---
-title: "Samarbeide med leverandører ved hjelp av portalområdet for leverandør"
-description: "Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen gjelder bare for februar-2016 &amp;mai 2016 versjoner av Dynamics AX."
+title: "Samarbeide med leverandører ved hjelp av leverandørportalen"
+description: "Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av portalområdet for leverandør
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av leverandørportalen
 
-Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen gjelder bare for februar-2016 &amp;mai 2016 versjoner av Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Leverandør portal-funksjonaliteten er erstattet med utvidede leverandør samarbeidsfunksjoner i Dynamics 365 operasjoner versjon 1611. Hvis du vil ha mer informasjon om det nye samarbeidsfunksjonalitet for leverandøren, se [ved hjelp av leverandøren samarbeid til å arbeide med eksterne leverandører,](vendor-collaboration-work-external-vendors.md).  
+
+Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX.
+
+Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Funksjonen for leverandørportal er erstattet med utvidede leverandørsamarbeidsfunksjoner i Dynamics 365 Operations versjon 1611. Hvis du vil ha mer informasjon om den nye leverandørsamarbeidsfunksjonen, kan du se [Bruke leverandørsamarbeid til å arbeide med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
 
 Leverandørportalen er utformet for leverandører som ikke har EDI-integrasjon (utveksling av elektroniske data) med Microsoft Dynamics AX for å utveksle bestillingsinformasjon. Med portalen kan innkjøpsagenter sende en bestilling til leverandøren og deretter motta et bekreftet eller avvist svar direkte i Dynamics AX.  
 
@@ -66,9 +69,9 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 | Du sender den nye versjonen av bestillingen til leverdnaørportalen. | En ny versjon er registrert på leverandørportalen, og statusen endres til **Til ekstern vurdering**. |
 | Leverandøren godkjenner den nye versjonen av bestillingen.           | Statusen endres til **Bekreftet**.                                                                |
 
-Klikk for å se hvilke versjoner av Bestillingen som er sendt til leverandøren, og leverandørens svar, **journaler**&gt;**bekreftelse forespørsler om** fra Bestillingen.  
+Hvis du vil se hvilke versjoner av bestillingen som er sendt til leverandøren og svarene fra leverandøren, klikker du **Journaler** &gt; **Forespørsler om bekreftelse** fra bestillingen.  
 
-Bestillinger som er sendt til leverandøren for svar og har statusen **Til ekstern vurdering**, vises enten i listen **Bestillingene er sendt til leverandørportalen. Venter på svar.** ekker **Bestillingene er sendt til leverandørportalen. Svaret krever handling.**. Når du endrer en ordre som er sendt til leverandøren, slik at endres statusen tilbake til **Godkjent**, vises ikke ordren lenger i disse listene. Hvis du vil se om det har tidligere vært et svar til ordren fra tabellen Leverandør, klikker du **journaler**&gt;**bekreftelse forespørsler om**.  
+Bestillinger som er sendt til leverandøren for svar og har statusen **Til ekstern vurdering**, vises enten i listen **Bestillingene er sendt til leverandørportalen. Venter på svar.** ekker **Bestillingene er sendt til leverandørportalen. Svaret krever handling.**. Når du endrer en ordre som er sendt til leverandøren, slik at endres statusen tilbake til **Godkjent**, vises ikke ordren lenger i disse listene. For å se om det allerede er et svar på ordren fra leverandøren, kan du klikke **Journaler** &gt; **Forespørsler om bekreftelse**.  
 
 Leverandører trenger ikke bekrefte bestillingen på leverandørportalen. De kan også sende en e-postmelding eller formidle at de godtar en bestilling via andre kanaler. Deretter kan du bekrefte ordren manuelt i Dynamics AX. I så fall får du en advarsel om at ordren blir bekreftet, selv om det ikke finnes noe svar fra leverandøren. Bestillingen vil vises i bekreftelsesloggen på leverandørportalen som en åpen bekreftet ordre som ikke har noen svar. I tillegg vil ikke leverandøren lenger ha muligheten til å bekrefte eller avvise bestillingen.  
 
@@ -97,5 +100,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 [Konfigurering av sikkerhet for brukere av leverandørsamarbeid](configure-security-vendor-portal-users.md)
 
 [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Fastslå hvilken versjon av Stykklisten"
-description: "Under behovsnedbrytingen finne vil planleggingsmotoren en gyldig stykklisteversjon på grunnlag av området hvis en vare har en standard ordretype for produksjon."
+title: "Fastslå stykklisteversjon"
+description: "Hvis en vare har produksjon som type standard bestilling, finner planleggingsmotoren en gyldig stykklisteversjon basert på området når behov brytes ned."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Fastslå hvilken versjon av Stykklisten
+# <a name="determine-the-bom-version"></a>Fastslå stykklisteversjon
 
-Under behovsnedbrytingen finne vil planleggingsmotoren en gyldig stykklisteversjon på grunnlag av området hvis en vare har en standard ordretype for produksjon. 
+[!include[banner](../includes/banner.md)]
+
+
+Hvis en vare har produksjon som type standard bestilling, finner planleggingsmotoren en gyldig stykklisteversjon basert på området når behov brytes ned. 
 
 Områdedimensjonen er alltid kjent og angis i behovstransaksjonen. Følgende prosess brukes til å fastsette hvilken stykklisteversjon som skal brukes:
 
@@ -38,6 +41,8 @@ Områdedimensjonen er alltid kjent og angis i behovstransaksjonen. Følgende pro
 -   Hvis det ikke finnes noen generell stykklisteversjon som kan brukes, vil nedbrytingen av behov stoppe her.
 
 En gyldig stykklisteversjon må oppfylle de obligatoriske kriteriene for dato og antall, uansett om den er områdespesifikk eller generell.
+
+
 
 
 

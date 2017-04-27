@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Lineær levetidsavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
 
 Når du definerer en avskrivningsprofil for anleggsmidler og velger Lineær levetid i feltet Metode på siden Avskrivningsprofiler, avskrives anleggsmidlene som har denne avskrivningsprofilen basert på den samlede levetiden til anleggsmiddelet. Dette er vanligvis det samme avskrivningsbeløpet i hver avskrivningsperiode. 
@@ -57,7 +60,7 @@ Hvis du velger for eksempel Årlig, posteres den årlige avskrivningen bare én 
 
 Hvis du velger Skattemessig i feltet Avskrivningsår, brukes lineær levetidsavskrivning. Det beregnes basert på regnskapsåret, som er definert av den økonomiske kalenderen som er angitt for tablået, eller av den økonomiske kalenderen som er valgt på Finans-siden. Regnskapskalendere defineres på Regnskapskalendere-siden.
 
-For regnskapsåret juli 1 til 30. juni starter for eksempel avskrivningsberegningen juli 1. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver regnskapsperiode. Lengden på det neste regnskapsåret baseres på regnskapsperiodene som du definerer når du oppretter et nytt regnskapsår på skjemaet med regnskapskalendere. 
+For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver regnskapsperiode. Lengden på det neste regnskapsåret baseres på regnskapsperiodene som du definerer når du oppretter et nytt regnskapsår på skjemaet med regnskapskalendere. 
 
 Hvis du velger Regnskapsår, er følgende alternativer tilgjengelige i Periodefrekvens-feltet:
 -   Årlig posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret, som ett beløp på den siste dagen i regnskapsåret.
@@ -98,9 +101,11 @@ Levetiden for anskaffelsesjusteringen er den samme som den til anleggsmidlet, og
 | År 3 | 14,000 / 5 = 2,800                        | 10,200 - 2,800 = 7,400                |
 | År 4 | 14,000 / 5 = 2,800                        | 7,400 - 2,800 = 4,600                 |
 | År 5 | 14,000 / 5 = 2,800                        | 4,600 - 2,800 = 1,800                 |
-| År 6 | Gjenværende 800\*                           | 1,800 – 800 = 1,000                   |
+| År 6 | Gjenværende 800*\*                           | 1,800 – 800 = 1,000                   |
 
-\*Fordi gjenværende beløp er mindre enn avskrivningsbeløpet, tas det gjenstående beløpet minus skrapverdien.
+\*Fordi gjenværende beløp er mindre en avskrivningsbeløpet, brukes bare gjenværende beløp minus enn restverdien.
+
+
 
 
 

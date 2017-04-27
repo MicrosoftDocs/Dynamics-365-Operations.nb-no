@@ -1,5 +1,5 @@
 ---
-title: "Avansert bankavstemming MT940 Import – Oppgrader sammensatt enhet"
+title: "Avansert bankavstemming MT940-import – oppgradering for sammensatt dataenhet"
 description: "Et serienummer må legges til importenheten for bankkontoutdraget for å støtte MT940-formatet."
 author: twheeloc
 manager: AnnBe
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avansert bankavstemming MT940 Import – Oppgrader sammensatt enhet
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avansert bankavstemming MT940-import – oppgradering for sammensatt dataenhet
+
+[!include[banner](../includes/banner.md)]
+
 
 Et serienummer må legges til importenheten for bankkontoutdraget for å støtte MT940-formatet. 
 
 Bruk fremgangsmåten nedenfor for å legge til importenheten for bankkontoutdrag for å støtte MT940-formatet.
 
 1.  Kompiler og synkroniser følgende:
-    -   Sammensatt enhet\\BankStatementImportEntity
-    -   Enheten\\BankStatementBalanceEntity
-    -   Enheten\\BankStatementDocumentEntity
-    -   Enheten\\BankStatementEntity
-    -   Enheten\\BankStatementLineEntity
+    -   Sammensatt Entity\\BankStatementImportEntity
+    -   Entity\\BankStatementBalanceEntity
+    -   Entity\\BankStatementDocumentEntity
+    -   Entity\\BankStatementEntity
+    -   Entity\\BankStatementLineEntity
     -   Tabeller\\BankStatementStaging
 
-2.  Behandling av\\data prosjekter.
+2.  Databehandling\\dataprosjekter.
     1.  Laste inn MT940-importprosjekter
         1.  Endre XSLT.
             -   Klikk **Vis tilordning**.
@@ -58,6 +61,8 @@ Bruk fremgangsmåten nedenfor for å legge til importenheten for bankkontoutdrag
                 -   Kontroller at **SequenceNumber** er tilordnet fra Kilde til Oppsamling.
 
 3.  Importer det nye utdraget.
+
+
 
 
 

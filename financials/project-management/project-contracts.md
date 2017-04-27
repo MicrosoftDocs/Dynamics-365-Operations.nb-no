@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Prosjektkontrakter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Operations.
 
 Prosjekttypen du oppretter for en prosjektkontrakt, fastsetter metoden som brukes til å fakturere prosjektkunder. Du kan endre en prosjektkontrakt og det tilknyttede prosjektet, men du kan ikke endre prosjekttypen. 
@@ -192,7 +195,7 @@ Tabellen nedenfor illustrerer dette scenarioet mer detaljert.
 <tbody>
 <tr class="odd">
 <td><strong>Fokus </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Detaljer</strong></td>
 </tr>
 <tr class="even">
 <td>Finansieringsregler</td>
@@ -220,17 +223,17 @@ Tabellen nedenfor illustrerer dette scenarioet mer detaljert.
 </tr>
 <tr class="odd">
 <td>Transaksjon 2</td>
-<td><strong>Transaksjonsbeløp:</strong> 5,000.00<strong>Funding:</strong> transaksjonen betales i henhold til reglene for alle tre. <strong>Regel 1</strong><ph id="t1">
-</ph><ul>
+<td><strong>Transaksjonsbeløp:</strong> 5 000,00<strong>Finansiering:</strong> Transaksjonen betales i henhold til alle tre regler.<strong>Regel 1</strong>
+<ul>
 <li>Finansieringskilde 2: 450,00</li>
 <li>Finansieringskilde 3: 450,00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Regel 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Regel 2</strong>
+<ul>
 <li>Finansieringskilde 3: 250,00 (= 750,00 - 50,00 - 450,00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Regel 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Regel 3</strong>
+<ul>
 <li>Finansieringskilde 1: 3 850,00 (= 5 000,00 - 450,00 - 450,00 - 250,00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ Når du definerer prosjektkontrakten, godtar du å fakturere kunden månedlig fo
 -   Du oppretter en kundefaktura på slutten av hver kalendermåned i løpet av prosjektet.
 
 I løpet av den første måneden registrerer konsulentene totalt 800 timer på prosjektet. Kostnaden for kontorutstyr som belastes prosjektet, er 2000. På slutten av måneden kan du derfor opprette en faktura på 122 000, som beregnes til 800 timer til 150 per time, pluss 2 000 for kontorrekvisita.
+
+
 
 

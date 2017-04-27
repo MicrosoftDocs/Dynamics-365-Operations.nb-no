@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Salgsavtaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
 
 En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall for et bestemt beløp over tid, i bytte mot spesialpriser, spesialrabatter og andre spesielle vilkår, for eksempel betaling og levering. Prisene og rabattene i salgsavtalen overstyrer priser og rabatter som er angitt i en eventuell forretningsavtale.  
@@ -36,7 +39,7 @@ Gyldighetsperioden for en salgsavtale er definert av feltene **Gyldig fra** og *
 
 Du kan opprette en salgsordre direkte fra en salgsavtale ved hjelp av **Frigivelsesordre**-handlingen. Du kan også velge en gyldig salgsavtale når du tar i mot ordrer (se "Bruke salgsavtaler i ordreprosessen" i denne artikkelen).  
 
-**Merk:** i tidligere versjoner, salgsavtaler ble referert til som rammeordrer.
+**Obs! ** I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en salgsavtale uttrykker en forpliktelse til å selge noe. Det er vanligvis to kategorier av forpliktelse:
@@ -93,21 +96,23 @@ Hvis du har opprettet (frigitt) en salgsordre mot en salgsavtale, kan noen felt 
 | Felt                                                             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ønsket forsendelsesdato                                               | Hvis du endrer den ønskede forsendelsesdatoen til en dato som er tidligere enn **Gyldighetsdato**-verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. Hvis du endrer den ønskede forsendelsesdatoen til en dato som er senere enn **Utløpsdato**-verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. |
-| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount | Hvis du endrer verdien i noen av disse feltene, og hvis det er merket av for **Pris og rabatt er fast** på en tilknyttet salgsavtalelinje, vises en meldingsboks der du blir bedt om å lagre endringen. Klikk **Ja** til å fjerne koblingen til salgsavtalelinjen og Omberegn pris. Klikk **ingen** å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                   |
-| Nettobeløp                                                        | Hvis du angir et beløp som overstiger beløpet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede beløpet. Klikk **Ja** til å fjerne koblingen til salgsavtalelinjen og Omberegn pris. Klikk **ingen** å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                 |
-| Antall                                                          | Hvis du angir et antall som overstiger antallet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede antallet. Klikk **Ja** til å fjerne koblingen til salgsavtalelinjen og Omberegn pris. Klikk **ingen** å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                            |
+| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount | Hvis du endrer verdien i noen av disse feltene, og hvis det er merket av for **Pris og rabatt er fast** på en tilknyttet salgsavtalelinje, vises en meldingsboks der du blir bedt om å lagre endringen. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                   |
+| Nettobeløp                                                        | Hvis du angir et beløp som overstiger beløpet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede beløpet. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                 |
+| Antall                                                          | Hvis du angir et antall som overstiger antallet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede antallet. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare som er bestilt fra en salgsavtale
-Når en kunde returnerer et produkt som ble bestilt fra en salgsavtale, kan Microsoft Dynamics 365 for operasjoner finne og Oppdater automatisk relaterte salgsavtalen-engasjement for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
+Når en kunde returnerer et produkt som er bestilt gjennom en salgsavtale, kan Microsoft Dynamics 365 for Operations finne og automatisk oppdatere den aktuelle salgsavtaleforpliktelsen for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
 
 Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling**-kontrollen på ** Returordre**-siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling**.  
 
 **Obs! ** En returordre kan bare kobles til én salgsavtale. Hvis en kunde returnerer flere produkter som ble bestilt gjennom flere salgsavtaler, må du opprette en ny returordre for hvert produkt og opprette en kobling til den tilhørende salgsavtalen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk søk etter salgsavtaler
-I noen situasjoner der salgsordrer er opprettet indirekte, som når du oppretter en kreditnota eller konserninterne salgsordrer, kan du kontrollere om Microsoft Dynamics 365 for operasjoner søker automatisk etter gjeldende salgsavtaler.
+I noen tilfeller der salgsordrer opprettes indirekte, for eksempel når du oppretter en kreditnota eller konserninterne salgsordrer, kan du kontrollere om Microsoft Dynamics 365 for Operations søker automatisk etter gjeldende salgsavtaler.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>finansdimensjoner i salgsavtaler
 Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en salgsavtale. Du kan endre dimensjonene i et avtalehode eller en avtalelinje når som helst. I dette tilfellet kopieres dimensjonene automatisk til frigivelseshodet eller frigivelseslinjen i frigivelsesordrer.
+
+
 
 

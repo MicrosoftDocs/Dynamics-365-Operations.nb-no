@@ -1,6 +1,6 @@
 ---
-title: "Bruke oppslag til å finne informasjon"
-description: "I Microsoft Dynamics 365 for operasjoner har mange felt oppslag som kan hjelpe deg å finne den riktige verdien ønsket. Flere forbedringer har blitt lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjøre brukere mer produktive. I dette emnet du vil lære mer om disse nye funksjonene lookup og får noen nyttige tips for å få optimal bruk av oppslag i systemet."
+title: "Bruke oppslag for å finne informasjon"
+description: "I Microsoft Dynamics 365 for Operations har mange felt oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Bruke oppslag til å finne informasjon
+# <a name="use-lookups-to-find-information"></a>Bruke oppslag for å finne informasjon
 
-I Microsoft Dynamics 365 for operasjoner har mange felt oppslag som kan hjelpe deg å finne den riktige verdien ønsket. Flere forbedringer har blitt lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjøre brukere mer produktive. I dette emnet du vil lære mer om disse nye funksjonene lookup og får noen nyttige tips for å få optimal bruk av oppslag i systemet.  
+[!include[banner](../includes/banner.md)]
 
-<a name="responsive-lookups"></a>Følsom oppslag
+
+I Microsoft Dynamics 365 for Operations har mange felt oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.  
+
+<a name="responsive-lookups"></a>Responsive oppslag
 ------------------
 
-I tidligere versjoner av Dynamics 365 for operasjoner, når du bruker en kontroll med oppslag, må en bruker en eksplisitt tiltakene for å åpne rullegardinmenyen. Dette kan ha vært ved å skrive inn en stjerne (\*) i kontrollen for å filtrere oppslaget basert på gjeldende verdi i kontrollen, når du klikker rullegardinlisten, eller ved å bruke den **Alt**+**pil ned** hurtigtast. Oppslag-kontrollene har blitt endret på følgende måter å justere bedre med gjeldende web-fremgangsmåter:
+Ved samhandling med en oppslagskontroll i tidligere versjoner av Dynamics 365 for Operations, måtte brukere utføre en eksplisitt handling for å åpne rullegardinmenyen. Dette var for eksempel å skrive inn en stjerne (\*) i kontrollen for å filtrere oppslaget basert på gjeldende verdi i kontrollen, klikke på rullegardinlisten eller hurtigtasten bruke **Alt**+**pil ned**. Oppslagskontrollene er endret på følgende måter for å fungere bedre med gjeldende webfremgangsmåter:
 
--   Oppslag rullegardinmenyene åpnes nå automatisk etter en liten pause i å skrive, med rullegardinlisten innholdet menyen filtrert basert på verdien for kontrollen for oppslag.
-    -   Legg merke til at den gamle virkemåten for automatisk åpning av rullegardinlisten etter å skrive inn en stjerne (\*) har blitt avverget.
--   Når du har åpnet rullegardinmenyen oppslag, skjer følgende:
-    -   Markøren blir værende i oppslag-kontrollen (i stedet for å flytte inn i rullegardinmenyen fokus) slik at du kan fortsette å gjøre endringer i verdien for kontrollen. Brukeren kan imidlertid fortsatt bruke den **pil opp** og **pil ned** til å endre rader i på rullegardinmenyen, og Skriv inn for å merke gjeldende rad i på rullegardinmenyen.
-    -   Justerer innholdet i i rullegardinmenyen når endringer er gjort i slå opp verdien.
+-   Rullegardinmenyer for oppslag åpnes nå automatisk etter en liten pause i skrivingen, med innholdet i rullegardinmenyen filtrert basert på verdien i oppslagskontrollen.
+    -   Legg merke til at den gamle virkemåten for automatisk åpning av rullegardinlisten etter å ha skrevet inn en stjerne (\*) er fjernet.
+-   Når rullegardinmenyen for oppslag er åpnet, skjer følgende:
+    -   Markøren forblir i oppslagskontrollen (i stedet for å flytte fokus til rullegardinmenyen), slik at du kan fortsette å gjøre endringer i verdien i kontrollen. Brukeren kan imidlertid fortsatt bruke **pil opp** og **pil ned** til å endre rader i på rullegardinmenyen, og Skriv inn for å merke gjeldende rad på rullegardinmenyen.
+    -   Innholdet på rullegardinmenyen justeres etter at verdien i oppslagskontrollen er endret.
 
-Anta for eksempel at et oppslagsfelt kalt **by**. 
+Anta for eksempel at et oppslagsfelt kalles **By**. 
 
-Når fokuset er i den **by** -feltet, kan du starte etter byen som du vil bruke, ved å skrive inn noen få bokstaver, som "Kol."  Etter at du slutter å skrive, åpnes oppslag automatisk, filtrert til disse byene som begynner med "k". 
+Når fokus er i **By**-feltet, kan du begynne å søke etter byen som du vil bruke, ved å skrive inn noen få bokstaver, for eksempel "col."  Når at har sluttet å skrive, åpnes oppslaget automatisk, filtrert etter byene som begynner med "col". 
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
+[![Eksempel på forutseende oppslag](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
 
-Markøren er på dette tidspunktet fremdeles i oppslagsfeltet. Hvis du fortsetter å skrive slik at verdien er "kolonner", justeres innholdet oppslag automatisk for å gjenspeile den siste verdien i kontrollen. 
+Markøren er på dette tidspunktet fremdeles i oppslagsfeltet. Hvis du fortsetter å skrive slik at verdien er "colum", justeres innholdet oppslag automatisk for å gjenspeile den siste verdien i kontrollen. 
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
+![Eksempel på oppdatering av oppslagsfilter](./media/updatefilterlookupexample.png) 
 
-Selv om fokus er fremdeles i oppslag-kontrollen, kan du også bruke den **pil opp** eller **pil ned** til å merke raden som du vil merke. Hvis du trykker **Enter** den merkede raden vil bli valgt fra oppslaget og verdien vil bli oppdatert. 
+Selv om fokus fremdeles er i oppslagskontrollen, kan du også bruke **pil opp** eller **pil ned** til å merke raden som du vil velge. Hvis du trykker på **Enter**, velges den merkede raden fra oppslaget, og verdien i kontrollen oppdateres. 
 
-![changingSelectionLookup](./media/changingselectionlookup.png)
+![Endre valg i oppslag](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Å skrive inn mer enn IDer
-Når du angir data, er det naturlig for brukere å prøve å identifisere en enhet, for eksempel en kunde eller leverandør i navnet i stedet for en identifikator som representerer enheten. I den gjeldende versjonen av Dynamics 365 for operasjoner, mange (men ikke alle) oppslag nå dataregistrering kontekstavhengig. Denne kraftige funksjonen gjør det mulig for brukeren å skrive inn IDen eller tilsvarende navnet i oppslag-kontrollen. 
+## <a name="typing-in-more-than-ids"></a>Skrive inn mer enn ID-er
+Ved angivelse av data, er det naturlig for brukere å prøve å identifisere en enhet, for eksempel en kunde eller leverandør, etter navnet i stedet for en identifikator som representerer enheten. I gjeldende versjon av Dynamics 365 for Operations vil mange (men ikke alle) oppslag nå tillate kontekstavhengig angivelse av data. Denne kraftige funksjonen lar brukere skrive inn ID-en eller det tilsvarende navnet, i oppslagskontrollen. 
 
-Anta for eksempel at **kundekontoen** -feltet når du oppretter en salgsordre. Dette feltet viser den **konto-ID** for kunden, men en bruker vanligvis vil angi en **kontonavnet** i stedet for en **konto-ID** for dette feltet når du oppretter en salgsordre, for eksempel "Skog Wholesales" i stedet for "US-003."
+La oss for eksempel se på **Kundekonto**-feltet ved oppretting av en salgsordre. Dette feltet viser **konto-ID** for kunden, men en bruker foretrekker vanligvis å angi et **kontonavn** i stedet for en **konto-ID** for dette feltet ved oppretting av en salgsordre, for eksempel "Forest Wholesales" i stedet for "US-003".
 
-Hvis brukeren startet til å skrive inn et **konto-ID** i oppslag-kontroll på rullegardinmenyen vil åpnes automatisk som beskrevet i den forrige delen, og brukeren ser oppslaget som vist nedenfor.
+Hvis brukeren begynte å skrive inn en **konto-ID** i oppslagskontrolle, åpnes rullegardinmenyen automatisk som beskrevet i den forrige delen, og brukeren ser oppslaget som vist nedenfor.
 
-[![Kontekstavhengige oppslag når du angir en kundekonto-ID](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontekstavhengig oppslag når det angis en kundekonto-ID](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
-Brukeren kan imidlertid nå også angi begynnelsen på en **kontonavnet** også. Hvis det blir funnet, vil brukeren se følgende oppslaget. Legg merke til hvordan **navn** flyttes kolonnen til å være den første kolonnen i oppslaget, og hvordan oppslaget er sortert og filtrert basert på den **navn** kolonnen.
+Brukeren kan imidlertid nå også angi begynnelsen på et **kontonavnet**. Hvis dette blir funnet, vil brukeren se oppslaget nedenfor. Legg merke til hvordan **Navn**-kolonnen flyttes slik at det er den første kolonnen i oppslaget, og hvordan oppslaget sorteres og filtreres basert på **Navn**-kolonnen.
 
-[![Kontekstavhengige oppslag når det angis et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontekstavhengig oppslag når det angis et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Ved hjelp av kolonneoverskriftene i rutenettet for mer avansert filtrering og sortering
-Oppslag-forbedringer som er beskrevet i de forrige to delene betydelig forbedre en brukers mulighet til å navigere radene i et oppslag som er basert på et "begynner med" Søk på den **ID** eller **navnet** i oppslaget. Det finnes imidlertid situasjoner der mer avansert filtrering (eller sortering) er nødvendig for å finne den riktige raden. I slike tilfeller må brukeren bruke alternativer for filtrering og sortering i rutenettet kolonneoverskriftene i oppslaget. Anta for eksempel at en ansatt angir en salgsordrelinje som trenger å finne høyre "kabel" som produktet. Å skrive inn "kabel" i den **varenummer** kontroll ikke er nyttig, fordi det ikke finnes noen produktnavn som begynner med "kabel." 
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Bruke kolonneoverskriftene i rutenett for mer avansert filtrering og sortering
+Oppslagsforbedringene som er beskrevet i de forrige to delene, forbedre betydelig brukeres mulighet til å navigere i oppslagsradene basert på et "begynner med"-søk for **ID**- eller **Navn**-feltet i oppslaget. Det finnes imidlertid situasjoner der mer avansert filtrering (eller sortering) er nødvendig for å finne den riktige raden. I slike tilfeller må brukeren bruke filtrerings- og sorteringsalternativene i kolonneoverskriftene i rutenettet i oppslaget. Anta for eksempel at en ansatt angir en salgsordrelinje som må riktig "kabel" som produkt. Det er ikke særlig nyttig å skrive inn "kabel" i **Varenummer**-kontrollen, fordi det ikke finnes produktnavn som begynner med "kabel". 
 
-![emptyitemlookup](./media/emptyitemlookup.png) 
+![Oppslag med tomt element](./media/emptyitemlookup.png) 
 
-I stedet, må brukeren fjerne verdien for kontrollen oppslag, åpne rullegardinmenyen oppslag og filtrere rullegardinmenyen ved hjelp av kolonneoverskriften rutenett, som vist nedenfor. En mus (eller trykk) bruker kan ganske enkelt klikk (eller rør) en kolonneoverskrift for å få tilgang til filtrerings- og sorteringsalternativer for den aktuelle kolonnen. For en bruker tastatur, brukeren bare trenger å trykke **Alt**+**ned****pil** en gang til for å flytte fokus til rullegardinmenyen, etter som brukeren kan tab til den riktige kolonnen, og trykk deretter **Ctrl**+**G** å åpne i rutenett-kolonnen hodet rullegardinmenyen. 
+Brukeren må i stedet fjerne verdien i oppslagskontrollen, åpne rullegardinmenyen for oppslaget og filtrere rullegardinmenyen ved hjelp av kolonneoverskriften i rutenett, som vist nedenfor. En bruker som bruker mus (eller berøring) kan ganske enkelt klikk på (eller berøre) en kolonneoverskrift for å få tilgang til filtrerings- og sorteringsalternativene for den aktuelle kolonnen. En bruker som bruker tastatur trenger bare å trykke på **Alt**+**Pil** **ned** en gang til for å flytte fokus til rullegardinmenyen, og deretter kan brukeren bruker Tab-tasten for å gå til riktig kolonne og trykke på **Ctrl**+**G** for å åpne rullegardinmenyen for kolonneoverskriften i rutenettet. 
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
+[![Oppslag for rutenettfilterelement](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
 
-Etter at filteret er brukt (se bildet nedenfor), kan brukeren finne og merke raden som vanlig. 
+Når filteret er brukt (se bildet nedenfor), kan brukeren søke etter og merke raden som vanlig. 
 
-![filtereditemlookup](./media/filtereditemlookup.png)
+![Elementoppslag med filterredigering](./media/filtereditemlookup.png)
+
+
 
 

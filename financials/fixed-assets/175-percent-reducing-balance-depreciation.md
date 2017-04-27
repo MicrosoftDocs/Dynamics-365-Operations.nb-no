@@ -54,9 +54,9 @@ Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgj
 
 ### <a name="fiscal"></a>Skattemessig
 
-Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [regnskapskalendere regnskapsår og perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
-For regnskapsåret juli 1 til 30. juni starter for eksempel avskrivningsberegningen juli 1. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
+For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen den 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
 
 Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
@@ -81,6 +81,6 @@ Avskrivingsmetoden 175 % saldoavskrivning dividerer 175 prosent med antall levet
 | År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 - 1 478,75 = 3 746,25 | 4 225 - 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
-> Vanligvis når beløpet som er beregnet ved hjelp av 175 % redusert saldoavskrivningsmetode blir mindre enn beløpet som beregnes ved hjelp av den lineære metoden, er det en konvertering til metoden for lineær for resten av levetiden.
+> Vanligvis når beløpet som beregnes ved å bruke 175% saldoavskrivningsmetode, blir mindre enn beløpet som ville blitt beregnet ved hjelp av den lineære metoden, går man over til lineær avskrivning resten av levetiden.
 
 

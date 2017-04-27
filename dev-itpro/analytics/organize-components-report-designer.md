@@ -49,18 +49,18 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 ### <a name="create-a-report-group"></a>Opprette en rapportgruppe
 
 1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2.  På den **fil** -menyen klikker du **ny**&gt;**gruppen rapportdefinisjonen** til å åpne en ny rapportgruppe i viewer-vinduet. Alternativt kan du klikke på **rapportgruppe** knappen ![rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "rapportgruppe") på verktøylinjen.
+2.  På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på verktøylinjen.
 3.  Klikk kategorien **Rapportgruppe**. Hvis du vil overstyre informasjonen i de individuelle rapportdefinisjonene for generering av denne rapporten, merker du av for **Overstyre firma, detaljer og innstillinger fra individuelle rapportdefinisjoner**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
 4.  Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
 5.  I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
-6.  Klikk **fil**&gt;**lagre** til å lagre den nye rapportgruppen.
+6.  Klikk **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
 
 ### <a name="modify-a-report-group"></a>Endre en rapportgruppe
 
 1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2.  Dobbeltklikk rapportgruppen du vil endre.
 3.  I kategorien **Rapportgruppe** gjør du de ønskede endringene.
-4.  På den **fil** -menyen klikker du **lagre** Klikk for å lagre den endrede rapportgruppen også, den **lagre** knappen ![lagre](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "lagre") på verktøylinjen.
+4.  På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen. Du kan også klikke **Lagre**-knappen ![Lagre](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Lagre") på verktøylinjen.
 
 **Obs! ** Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
 
@@ -68,7 +68,7 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 
 1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2.  Åpne rapportgruppen som skal genereres.
-3.  Klikk på **Generer rapport** knappen ![Generer rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generer rapport") til å generere rapporter.
+3.  Klikk **Generer rapport**-knappen ![Generer rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generer rapport") for å generere rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
@@ -104,8 +104,8 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 <td>Angi detaljnivået som rapportene inneholder.
 <ul>
 <li><strong>Økonomisk</strong> – En overordnet sammendragsrapport. Du kan ikke drille ned til kontoer og dimensjoner, bortsett fra kontoene og dimensjonene som lagt til gjennom et rapporteringstre.</li>
-<li><strong>Økonomiske &amp;konto</strong> − en rapport som inneholder et sammendrag på høyt nivå og kontodetaljer.</li>
-<li><strong>Økonomisk, konto, &amp;transaksjonen</strong> − en rapport som inneholder et sammendrag på høyt nivå og detaljer om transaksjonen.</li>
+<li><strong>Økonomisk og Konto</strong> − En rapport som inneholder et overordnet sammendrag og kontodetaljer.</li>
+<li><strong>Økonomisk, Konto og Transaksjon</strong> − En rapport som inneholder et overordnet sammendrag og transaksjonsdetaljer.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</t
 <a name="see-also"></a>Se også
 --------
 
-[Økonomisk rapportering for Microsoft Dynamics-365 for operasjoner](financial-reporting-intro.md)
+[Finansrapportering for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

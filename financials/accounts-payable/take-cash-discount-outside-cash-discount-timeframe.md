@@ -1,5 +1,5 @@
 ---
-title: Ta en kontantrabatt utenfor perioden kontantrabatt
+title: Bruke en kontantrabatt utenfor kontantrabattperioden
 description: Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ta en kontantrabatt utenfor perioden kontantrabatt
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Bruke en kontantrabatt utenfor kontantrabattperioden
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 
-I juni 28 oppretter April en faktura for 2,000.00 for 3052 for leverandør. Fakturaen har en kontantrabatt på 1 prosent hvis fakturaen er betalt i 14 dager.
+28. juni opprettes en faktura på 1 000,00 for leverandøren 3052. Fakturaen har en kontantrabatt på 1 prosent hvis fakturaen betales innen 14 dager.
 
 ## <a name="use-cash-discount-option--always"></a>Alternativet Bruk kontantrabatt = Alltid
 April oppretter en betaling 1. juli som er etter rabattdatoen. April åpner siden **Utlign transaksjoner** for å vise transaksjonene som kan utlignes. 
 
-April markerer fakturaen for betaling. Ingen kontantrabatt brukes fordi betalingen er etter rabattdatoen. Leverandøren har imidlertid gitt April godkjenning for å få kontantrabatt likevel. Derfor April endrer verdien i den **Bruk kontantrabatt** feltet til **alltid**.
+April markerer fakturaen for betaling. Ingen kontantrabatt brukes fordi betalingen er etter rabattdatoen. Leverandøren har imidlertid gitt godkjenning for å få kontantrabatt likevel. Derfor endres verdien i feltet **Bruk kontantrabatt** til **Alltid**.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Kontantrabattdato | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Verd
 | Bruk kontantrabatt            | Normal    |
 | Kontantrabatt brukt          | 0,00      |
 | Kontantrabattbeløp som skal brukes | -5,05     |
+
+
 
 
 

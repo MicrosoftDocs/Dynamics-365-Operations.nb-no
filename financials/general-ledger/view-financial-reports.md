@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Vis finansrapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics AX. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 
 <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
@@ -48,7 +51,7 @@ Du kan endre rapportdatoen, bruke attributt- og dimensjonsfiltre eller endre bud
 
 -   Hvis du vil endre basisperioden og basisåret i en rapport, velger du en basisperiode og et basisår og klikker deretter **OK**.
 -   Hvis du vil bruke attributtfiltre på en rapport, velger du **Legg til et attributtfilter**. Velg attributtet, skriv inn attributtverdien, og klikk deretter **OK**. Hvis du for eksempel velger attributtet **Kontokategori**, angir du **SALG** som attributtverdi. Hvis du vil fjerne et attributtfilter, klikker du **Fjern**.
--   Hvis du vil bruke dimensjonsfiltre i en rapport, kan du velge **legger til et dimensjonsfilter**. Velg dimensjonen, og deretter skriver du inn dimensjons-ID eller Velg dimensjonen i listen. Hvis du vil fjerne et dimensjonsfilter, klikker du **Fjern**.
+-   Hvis du vil bruke dimensjonsfiltre på en rapport, velger du **Legg til et dimensjonsfilter**. Velg dimensjon, og skriv deretter inn dimensjons-ID eller velg dimensjon i listen. Hvis du vil fjerne et dimensjonsfilter, klikker du **Fjern**.
 -   Hvis du vil endre scenariet i rapporten **Faktisk kontra budsjett**, velger du et nytt scenario og klikker deretter **OK**. Hvis det valgte scenariet er for et annet år, må du passe på å oppdatere basisåret. Hvis det gjeldende scenariet for eksempel er for FY2015 og du velger et nytt scenario som er for FY2016, må du endre basisåret til **2016**.
 
 Når du klikker **OK**, brukes alle alternativene du har valgt, på rapporten. Hvis du bestemmer deg for at du ikke vil bruke de valgte alternativene, velger du **Avbryt**.
@@ -66,7 +69,7 @@ En finansrapport kan når som helst vises i en hvilken som helst valuta. Hvis du
 En finansrapport kan inneholde detaljlinjer og sammendragslinjer. Detaljlinjer er linjer som inneholder hovedkontoer eller dimensjoner. Sammendragslinjer er beskrivelses-, total- og beregningslinjer. Klikk **Vis**, og klikk deretter **Bare sammendragslinjer** for å vise bare sammendragslinjer i en rapport. Rapporten er skjult og viser bare sammendragslinjer. Klikk **Vis**, og klikk deretter **Bare sammendragslinjer** på nytt for å vise detaljlinjene sammen med sammendragslinjene.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Åpne en finansrapport fra en tidligere måned
-Du kan vise rapporter for gjeldende måned eller tidligere måneder uten å generere rapporten på nytt. Klikk for å åpne rapporten for forrige måned, **Vis**, og klikk deretter **forrige rapporter**. Det vises en liste over tidligere måneder som rapporten er generert for. Utvid måneden du vil vise rapporten for, velg datoen, og klikk deretter **OK**. Rapporten for den tidligere måneden vises. Hvis du vil gå tilbake til rapporten for gjeldende måned, klikker du **Avbryt**.
+Du kan vise rapporter for gjeldende måned eller tidligere måneder uten å generere rapporten på nytt. Hvis du vil åpne rapporten for en tidligere måned, klikker du på **Vis** og deretter på **Tidligere rapporter**. Det vises en liste over tidligere måneder som rapporten er generert for. Utvid måneden du vil vise rapporten for, velg datoen, og klikk deretter **OK**. Rapporten for den tidligere måneden vises. Hvis du vil gå tilbake til rapporten for gjeldende måned, klikker du **Avbryt**.
 
 ## <a name="print-a-financial-report"></a>Skrive ut en finansrapport
 Hvis du vil skrive ut en finansrapport, klikker du **Skriv ut** i handlingsruten og følger deretter ett eller flere av disse trinnene for å angi alternativene for utskrift:
@@ -85,5 +88,7 @@ Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten
 --------
 
 [Finansrapportering for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

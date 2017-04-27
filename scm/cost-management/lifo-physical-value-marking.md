@@ -47,7 +47,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   4a. Fysisk lagermottak av et antall på 1 til kost USD 30,00 per stykk.
 -   4b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   5a. Fysisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
--   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
+-   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med LIFO-metoden blir den sist økonomisk oppdaterte avgangen utlignet mot den sist økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD 10,00.
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO uten Ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) **Nøkkel til diagrammet**
@@ -55,16 +55,16 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatet Quantity@Unitpris.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-with-the-include-physical-value-option"></a>LIFO når alternativet Ta med fysisk verdi brukes
-Hvis den **ta med fysisk verdi** er merket for et element i den **modell servicevaregrupper** siden, bruker systemet mottakstransaksjoner for både fysiske og økonomiske til å beregne løpende gjennomsnittlig kostpris. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. Illustrasjonen nedenfor viser disse transaksjonene:
+Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på siden **Varemodellgrupper**, bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kost USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kost USD 10,00 per stykk.
@@ -78,16 +78,16 @@ Hvis den **ta med fysisk verdi** er merket for et element i den **modell service
 -   6a. Fysisk lageravgang av et antall på 1 til kostpris USD 21,25 per stykk.
 -   7. Lagerlukking utføres. I samsvar med LIFO-metoden blir den siste avgangstransaksjonen justert eller utlignet mot den sist oppdaterte tilgangen.
 
-Transaksjonen 6a justeres mot tilgangstransaksjonen 4b. Systemet vil ikke utligne disse transaksjonene, fordi mottaket oppdateres fysisk, men ikke økonomisk. I stedet vil bare en justering på USD 8,75 posteres mot den fysiske avgangstransaksjonen. Transaksjonen 5b justeres mot den fysiske mottakstransaksjonen 3a. Systemet vil ikke utligne disse transaksjonene, fordi de ikke er økonomisk oppdatert. I stedet vil bare en justering med beløpet USD 3,75 gjøres i denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 20,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. ![LIFO med Ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) **Nøkkel til diagrammet**
+Transaksjonen 6a justeres mot tilgangstransaksjonen 4b. Systemet vil ikke utligne disse transaksjonene, fordi mottaket bare oppdateres fysisk, ikke økonomisk. I stedet vil bare en justering på USD 8,75 posteres mot den fysiske avgangstransaksjonen. Transaksjonen 5b justeres mot den fysiske mottakstransaksjonen 3a. Systemet vil ikke utligne disse transaksjonene, fordi de ikke er økonomisk oppdatert. I stedet vil bare en justering med beløpet USD 3,75 gjøres i denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 20,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. ![LIFO med Ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) **Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatet Quantity@Unitpris.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
@@ -111,11 +111,11 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatet Quantity@Unitpris.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 

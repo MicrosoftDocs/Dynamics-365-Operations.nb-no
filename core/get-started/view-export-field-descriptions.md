@@ -36,9 +36,9 @@ Ikke alle sider har feltbeskrivelser. Vi vil bare gi beskrivelser for de mer kom
 Hvis du har tilgang til utviklingsmiljøet i Dynamics 365 for Operations, kan du legge til nye feltbeskrivelser og tilpasse eksisterende beskrivelser. Du kan for eksempel legge til firmaspesifikk informasjon i en feltbeskrivelse. Hvis du vil ha mer informasjon, kan du se [hjelpen for å tilpasse felt](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se feltbeskrivelsene i brukergrensesnittet.
-Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskrivelse er tilgjengelig, kan du se navnet på feltet når du holder pekeren over feltet. (Merk: I versjon 7.0.0 beskrivelser kan vises bare på den **feltet beskrivelser** siden.) Følgende illustrasjon viser feltbeskrivelsen av som vises når du holder pekeren over den **låse elementer under antall** feltet. 
+Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskrivelse er tilgjengelig, kan du se navnet på feltet når du holder pekeren over feltet. (Obs!  I versjon 7.0.0 kan feltbeskrivelser bare vises på siden **Feltbeskrivelser**.) Illustrasjon nedenfor viser feltbeskrivelsen som vises når du holder pekeren over feltet **Lås varer under opptelling**. 
 
-[![Eksempel på et felt-beskrivelse](./media/field-description.png)](./media/field-description.png)
+[![Eksempel på en feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruk siden Feltbeskrivelser til å vise og eksportere felthjelp
 Siden **Feltbeskrivelser** lar deg vise og eksportere feltbeskrivelser. Du kan se feltbeskrivelsene som er tilgjengelige for én side om gangen.
@@ -73,7 +73,7 @@ Det finnes flere måter å søke etter en side på i feltet **Velg en side**. I 
     -   Hvis det finnes mer enn ett treff, vises ingen beskrivelser. Du må åpne rullegardinlisten, og velg siden du vil bruke.
     -   Hvis navnet du skrev inn er en del av navnet på en annen side, vises beskrivelsene for siden. Hvis du imidlertid åpner rullegardinlisten, vises flere sider som inneholder dette navnet.
 
-For eksempel ingen beskrivelser vises når du skriver inn **opptelling** i den *** velger du et felt i side ***. Du åpner rullegardinlisten og ser at det er to sider med navnet **Opptelling**, i tillegg til flere sider som inneholder ordet Opptelling i navnet. Hvis du velger siden som har **InventJournalCount** som navn på applikasjonsobjekttre, vises feltbeskrivelsene for denne siden. Hvis du imidlertid åpner rullegardinlisten på nytt, ser du at listen nå inneholder alle sider som har "InventJournalCount"» som en del av navnet på applikasjonsobjekttreet.
+Ingen beskrivelser vises for eksempel når du skriver inn **Opptelling** i feltet ****Velg en side****. Du åpner rullegardinlisten og ser at det er to sider med navnet **Opptelling**, i tillegg til flere sider som inneholder ordet Opptelling i navnet. Hvis du velger siden som har **InventJournalCount** som navn på applikasjonsobjekttre, vises feltbeskrivelsene for denne siden. Hvis du imidlertid åpner rullegardinlisten på nytt, ser du at listen nå inneholder alle sider som har "InventJournalCount"» som en del av navnet på applikasjonsobjekttreet.
 
 ## <a name="troubleshooting"></a>Feilsøking
 Dette avsnittet inneholder informasjon om hvordan du feilsøker problemer som kan oppstå når du bruker feltbeskrivelser.

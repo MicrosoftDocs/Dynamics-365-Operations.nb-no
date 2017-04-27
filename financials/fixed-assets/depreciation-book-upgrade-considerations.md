@@ -1,6 +1,6 @@
 ---
-title: Oppgrader avskrivning bok-oversikt
-description: "I tidligere versjoner var det to vurdering konsepter for anleggsmidler - verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen."
+title: "Oversikt over oppgradering for avskrivningstablå"
+description: "I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="depreciation-book-upgrade-overview"></a>Oppgrader avskrivning bok-oversikt
+# <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering for avskrivningstablå
 
-I tidligere versjoner var det to vurdering konsepter for anleggsmidler - verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen. 
+[!include[banner](../includes/banner.md)]
 
-Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå vil bli flyttet til et journalnavn for økonomimodulen med posteringslaget som er satt til **ingen**. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner. 
+
+I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen. 
+
+Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til **Ingen**. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner. 
 
 Før du kjører dataoppgraderingen, må du forstå de to alternativene som er tilgjengelige for oppgradering av journallinjer for avskrivningstablå til transaksjonsbilag, og nummerserien som brukes for bilagsserien. 
 
-Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet for å optimalisere ytelsen til dataoppgraderingen. Oppgraderingen kan ikke bruke rammeverket for nummerserie, men vil i stedet tildele bilag med en settbasert tilnærmingsmåte. Ny nummerserien skal opprettes etter oppgraderingen, med den **neste angitt** basert på riktig måte på de oppgraderte transaksjonene. Som standard blir nummerseriene som brukes i FADBUpgr\#\#\#\#\#\#\#\#\# format. Det finnes noen parametere for å justere formatet når du bruker denne fremgangsmåten:
+Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet for å optimalisere ytelsen til dataoppgraderingen. Oppgraderingen kan ikke bruke rammeverket for nummerserie, men vil i stedet tildele bilag med en settbasert tilnærmingsmåte. Etter oppgraderingen vil den nye nummerserien opprettes med **Neste nummerserie** basert på riktig måte på de oppgraderte transaksjonene Nummerserien brukes som standard i formatet FADBUpgr\#\#\#\#\#\#\#\#\#. Det finnes noen få tilgjengelige parametere for å justere formatet når du bruker denne fremgangsmåten:
 
--   **Nummerseriekode** -koden som identifiserer nummerserien. Denne nummerseriekode kan ikke eksistere siden opprettes etter oppgraderingen.
+-   **Nummerseriekode** – Koden for å identifisere nummerserien. Denne nummerseriekoden kan ikke eksistere siden den opprettes av oppgraderingen.
     -   Konstantnavn: **NumberSequenceDefaultCode**
     -   Standardverdi: "FADBUpgr"
 -   **Prefiks** – Konstantsstrengverdien som skal brukes som et prefiks for bilagsnumrene.
     -   Konstantnavn: **NumberSequenceDefaultParameterPrefix**
     -   Standardverdi: "FADBUpgr"
 -   **Alfanumerisk lengde** – Lengden på det alfanumeriske segmentet i nummerserien.
-    -   Konstant navn: ** NumberSequenceDefaultParameterAlpanumericLength **
+    -   Konstantnavn: **NumberSequenceDefaultParameterAlpanumericLength **
     -   Standardverdi: 9
 -   **Startnummer** – Det første tallet som skal brukes i nummerserien.
-    -   Konstant navn: ** NumberSequenceDefaultParameterStartNumber **
+    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber **
     -   Standardverdi: 1
 
-Alternativ 2: **eksisterende brukerdefinert nummerserie** -dette alternativet lar deg definere nummerserien som skal brukes for oppgraderingen. Vurder å bruke dette alternativet hvis du har behov for avansert nummerseriekonfigurasjon. Hvis du vil bruke en nummerserie, må du endre klassen upgrade ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med følgende informasjon:
+Alternativ 2: **Eksisterende brukerdefinert nummerserie** - Dette alternativet lar deg definere nummerserien som skal brukes for oppgraderingen. Vurder å bruke dette alternativet hvis du har behov for avansert nummerseriekonfigurasjon. Hvis du vil bruke en nummerserie, må du endre oppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med følgende informasjon:
 
 -   **Nummerseriekode** – Koden til nummerserien.
-    -   Konstant navn: ** NumberSequenceExistingCode **
+    -   Konstantnavn: **NumberSequenceExistingCode **
     -   Standardverdi: Ingen standard. Dette må oppdateres til nummerseriekoden.
 -   **Felles nummerserie** – En boolsk verdi for å identifisere omfanget for nummerserien. Bruk "true" for nummerserier som deles på tvers av alle firmaer, og "false" for et firmaomfang. Når du bruker "false", må nummerserien med det angitte navnet finnes i hvert firma som inneholder avskrivningstablåtransaksjoner. Det finnes delte nummerserier i hver partisjon som inneholder avskrivningstablåtransaksjoner.
-    -   Konstant navn: ** NumberSequenceExistingIsShared **
+    -   Konstantnavn: **NumberSequenceExistingIsShared **
     -   Standardverdi: true
 
-Parameterne er plassert i begynnelsen av ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans-klassen. 
+Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
 
-*Angi en foretrekke tilnærming av bilag tildeling*<ph id="t1">
-</ph>*/ / SANN hvis du vil bruke en eksisterende nummerseriekode*<ph id="t2">
-</ph>*/ / USANN, hvis du har tenkt å bruke systemet nummersekvensen (standard)* const boolsk NumberSequenceUseExistingCode = false;  
+*// Angi en foretrukket metode for fordeling av bilag* 
+*// true, hvis du vil bruke en eksisterende nummerseriekode* 
+*// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;  
 
-*Hvis bruker sekvens tilnærming systemdefinerte tall, angir du parameterne for nummerserien. *<ph id="t3">
-</ph>*/ / Vil bli opprettet en ny nummerserie med disse parameterne.* Str Const NumberSequenceDefaultCode = FADBUpgr; str Const NumberSequenceDefaultParameterPrefix = FADBUpgr; int Const NumberSequenceDefaultParameterAlpanumericLength = 9; int Const NumberSequenceDefaultParameterStartNumber = 1;   
+*// Hvis bruker fremgangsmåten for systemdefinert nummerserie, angir du parameterne for nummerserien.*
+*// Det opprettes en ny nummerserie med disse parameterne.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
-*Hvis bruker eksisterende tall sekvens-metoden, angir du eksisterende nummerseriekode. *<ph id="t4">
-</ph>*/ / Bilagstilordning går rad for rad for eksisterende nummerserier.* Str Const NumberSequenceExistingCode = ''; */ / Angi omfanget av eksisterende nummerseriekoden*<ph id="t5">
-</ph>*/ / SANN hvis den angitte nummerserien er delt*<ph id="t6">
-</ph>*/ / USANN hvis den angitte nummerserien er per firma*<ph id="t7">
-</ph>*/ / standard systemdefinerte nummerserien som skal brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.* const boolean NumberSequenceExistingIsShared = true; 
+*// Hvis du bruker fremgangsmåten for eksisterende nummerserie, angir du den eksisterende nummerseriekoden.* 
+*// Bilagstilordning går rad for rad for eksisterende nummerserier.* const str NumberSequenceExistingCode = ''; *// Angi omfanget for den eksisterende nummerseriekoden* 
+*// true, hvis den angitte nummerserien er delt* 
+*// false, hvis den angitte nummerserien er per firma* 
+*// Standard systemdefinert nummerserie brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.* const boolean NumberSequenceExistingIsShared = true; 
 
 Bygg på nytt prosjektet som inneholder klassen når konstantene har blitt endret. 
 
-Når du bruker systemgenerert nummer rekkefølge tilnærmingen (alternativ 1), vil oppgraderingen bruke set-basert behandling til å tildele bilagsnumre som er angitt i parameterne oppgraderingsskriptet. Det vil også opprette en ny nummerserie med angitte parametere etter tildelingen. 
+Når du bruker fremgangsmåten for systemgenerert nummerserie (alternativ 1), bruker oppgraderingen settbasert behandling for å tildele bilagsnumrene som er angitt i parameterne for oppgraderingsskriptet. Dette oppretter også en ny nummerserie med angitte parametere etter tildelingen. 
 
-Når du bruker fremgangsmåten for brukerdefinert nummerserie (alternativ 2), sjekker dataoppgraderingen om nummerserien med det angitte omfanget finnes i databasen for hver partisjon og firma med avskrivningstablåtransaksjoner. Hvis den finnes, bruker oppgraderingen rad for rad-behandling til å tildele bilagsnumre som angitt av nummerserien ved hjelp av nummerserierammeverket. Hvis nummerserien ikke eksisterer med det angitte omfanget, oppgraderingen vil bruke standard systemdefinerte tall sekvens tilnærmingen til å tildele bilagsnumre til og oppretter en ny nummerserie med parametere angitt som standard etter tildelingen.
+Når du bruker fremgangsmåten for brukerdefinert nummerserie (alternativ 2), sjekker dataoppgraderingen om nummerserien med det angitte omfanget finnes i databasen for hver partisjon og firma med avskrivningstablåtransaksjoner. Hvis den finnes, bruker oppgraderingen rad for rad-behandling for å tildele bilagsnumre som angis av nummerserien ved hjelp av rammeverket for nummerserier. Hvis nummerserien ikke finnes med angitte omfanget, bruker oppgraderingen fremgangsmåten for standard systemdefinert nummerserie for å tildele bilagsnumrene, og det opprettes en ny nummerserie med angitte standardparametere etter tildelingen.
 
 For begge fremgangsmåtene vil skriptet for dataoppgradering også bruke nummerserien for **Bilagsserie**-feltet på de nye journalnavnene for økonomimodulen som er opprettet for de tidligere journalnavnene for avskrivningstablå.
+
+
 
 

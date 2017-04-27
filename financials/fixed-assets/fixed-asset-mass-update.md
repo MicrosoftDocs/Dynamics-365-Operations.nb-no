@@ -1,6 +1,6 @@
 ---
 title: Masseoppdatering av faste anleggsmidler
-description: "Hvis du bruker bøker, kan du endre avskrivningskonvensjonene for grupper av aktiva som er en del av den samme adresseboken."
+description: "Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Masseoppdatering av faste anleggsmidler
 
-Hvis du bruker bøker, kan du endre avskrivningskonvensjonene for grupper av aktiva som er en del av den samme adresseboken.
+[!include[banner](../includes/banner.md)]
+
+
+Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået.
 
 Hvis du for eksempel driver virksomhet i USA, og du plasserer mer enn 40 prosent av anleggsmidlene i bruk i løpet av fjerde kvartal av året, må du bruke avskrivningskonvensjonen for midten av kvartalet. Du kan bruke masseoppdateringsprosessen for å endre alle anleggsmidler som skal bruke den nye avskrivningskonvensjonen. 
 
@@ -36,6 +39,8 @@ Når du oppdaterer avskrivningskonvensjonen for anleggsmidler, sletter du alle a
 Når du skal oppdatere avskrivningskonvensjonen for anleggsmidler som allerede er avhendet, må du først slette de eksisterende avhendingstransaksjonene. Du må også slette alle transaksjoner som ble generert på grunnlag av avhendingsprosessen. 
 
 Når du har oppdatert avskrivningskonvensjonen for anleggsmidler, kan du behandle avskrivning og ekstraordinær avskrivning for hvert anleggsmiddel. Du kan også gjøre manuelle avskrivningsjusteringer hvis justeringer er nødvendig.
+
+
 
 
 

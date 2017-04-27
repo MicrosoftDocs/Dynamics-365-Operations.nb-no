@@ -41,23 +41,23 @@ Hvis du vil oppgradere til den nyeste versjonen, kan du se [Prosess for å oppgr
 <thead>
 <tr class="header">
 <th><strong>Frigi</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>Lære mer</strong></strong></th>
+<th><strong><strong>Versjon</strong></strong></th>
+<th><strong><strong>Build-nummer</strong></strong></th>
+<th><strong><strong>Tilgjengelighet</strong></strong></th>
+<th><strong><strong>Få mer informasjon</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations-plattformen</td>
-<td>Platform-oppdatering 4</td>
+<td>Plattformoppdatering 4</td>
 <td>7.0.4425.16160</td>
-<td>Februar 2017</td>
+<td>2017. februar</td>
 <td><ol>
-<li>Gå til den <a href="https://roadmap.dynamics.com/">Dynamics 365 veikart</a>.</li>
-<li>Velg den <strong>Hva er nytt</strong> i kategorien.</li>
-<li>I den <strong>programmer</strong> delen velger <strong>Dynamics 365 for drift</strong>.</li>
-<li>I den <strong>områder</strong> delen velger <strong>sky plattform</strong>.</li>
+<li>Gå til <a href="https://roadmap.dynamics.com/">veikartet for Dynamics 365</a>.</li>
+<li>Velg kategorien <strong>Hva er nytt</strong>.</li>
+<li>I delen <strong>Programmer</strong> velger du <strong>Dynamics 365 for Operations</strong>.</li>
+<li>I delen <strong>Områder</strong> velger du <strong>Skyplattform</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">

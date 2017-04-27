@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Oversikt over utligning for sentraliserte betalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Dette eliminerer behovet for å legge inn den samme transaksjonen i flere juridiske enheter, og sparer tid ved å strømlinjeforme betalingsforslagsprosessen, utligningsprosessen, redigering av åpne transaksjoner og redigering av lukkede transaksjoner for sentraliserte betalinger. 
 
 Når en kunde- eller leverandørbetaling blir lagt inn i en juridisk enhet og blir utlignet mot en faktura som ble lagt inn i en annen juridisk enhet, blir den nødvendige utligningen, forfall til- og forfall fra-transaksjonene generert automatisk for hver juridiske enhet. Det blir opprettet en utligningspost for hver kombinasjon av faktura og betaling i transaksjonen. Hver utligningspost blir tilordnet et nytt bilagsnummer, som er basert på betalingsbilag-nummerserien som er angitt på siden **Kundeparametere** for kunder og siden **Leverandørparametere** for leverandører. 
@@ -108,6 +111,8 @@ For leverandørbetalinger bruker forfall til- og forfall fra-transaksjonene i de
 
 ## <a name="withholding-tax"></a>Kildeskatt
 Leverandørkontoen som er knyttet til fakturaen, brukes til å bestemme om kildeskatt skal beregnes. Hvis det brukes kildeskatt, blir den beregnet i den juridiske enheten som er knyttet til fakturaen. Hvis de juridiske enhetene bruker forskjellige valutaer, brukes valutakursen fra den juridiske enheten som er knyttet til fakturaen.
+
+
 
 
 

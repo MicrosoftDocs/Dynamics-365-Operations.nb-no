@@ -1,6 +1,6 @@
 ---
-title: "Initialisere frø data i et nytt miljø for detaljhandel"
-description: Denne artikkelen beskriver dataene som er opprettet som en del av initialiseringsprosessen for Microsoft Dynamics-365 for operasjoner - handel.
+title: "Initialisere utgangsverdidata i et nytt miljø for detaljhandel"
+description: Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Microsoft Dynamics 365 Operations - Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Initialisere frø data i et nytt miljø for detaljhandel
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Initialisere utgangsverdidata i et nytt miljø for detaljhandel
 
-Denne artikkelen beskriver dataene som er opprettet som en del av initialiseringsprosessen for Microsoft Dynamics-365 for operasjoner - handel.
+[!include[banner](includes/banner.md)]
+
+
+Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Microsoft Dynamics 365 Operations - Retail.
 
 Etter at detaljhandelsløsningen er distribuert via Microsoft Dynamics Lifecycle Services (LCS) må du initialisere detaljhandelskonfigurasjonen for å opprette grunnleggende konfigurasjonsdata. **Viktig:** Før du initialiserer detaljhandelskonfigurasjonen må du kontrollere at du har angitt et språk og postadresse for hver juridiske enhet der du vil definere detaljhandelsbutikker. Dette trinnet må fullføres for hver juridiske enhet som du bruker for detaljhandel. Bruk følgende fremgangsmåte for å initialisere detaljhandelskonfigurasjonen.
 
-1.  Starte Dynamics-365 for operasjoner-klienten.
-2.  Klikk **Retail og commerce**&gt;**Hovedkontor installasjonsprogrammet**&gt;**parametere**&gt;**parametere for detaljhandel**.
+1.  Start Dynamics 365 for Operations-klienten.
+2.  Klikk **Detaljhandel og handel** &gt; **Hovedkvarteroppsett** &gt; **Parametere** &gt; **Detaljhandelsparametere**.
 3.  Klikk **Initialiser**.
 
 Initialisering oppretter følgende standardkonfigurasjonsdata:
@@ -50,13 +53,15 @@ Initialisering oppretter følgende standardkonfigurasjonsdata:
 -   Maler for validering av enhet
 -   Satsvis jobb for å tømme økthistorikk for Commerce Data Exchange
 
-I tillegg logging som er knyttet til betalingen kort bransjen (PCI) er aktivert for Dynamics-365 for databasen for operasjoner. **Obs!** Det finnes et alternativ for å konfigurere Detaljhandel Planlegger separat. Dette alternativet lar deg tilbakestille Detaljhandel Planlegger-konfigurasjonen til standardinnstillingene. Når initialiseringen er fullført, må du konfigurere tilleggsdata for detaljhandel. Her er noen eksempler:
+I tillegg aktiveres logging som er knyttet til betalingskortbransjen (PCI) for Dynamics 365 for Operations-databasen. **Obs!** Det finnes et alternativ for å konfigurere Detaljhandel Planlegger separat. Dette alternativet lar deg tilbakestille Detaljhandel Planlegger-konfigurasjonen til standardinnstillingene. Når initialiseringen er fullført, må du konfigurere tilleggsdata for detaljhandel. Her er noen eksempler:
 
 -   Detaljhandelsparametere
 -   Parametre for Detaljhandel Planlegger
 -   Detaljhandelskanaler
 -   Kasser og enheter
 -   Assortement
+
+
 
 
 

@@ -40,7 +40,7 @@ En overføringsjournalhendelse registreres. Hendelsen overfører ett stykk av va
 
 ### <a name="example-2-cost-entries-are-created"></a>Eksempel 2: Kostnadsoppføringer opprettes
 
-En overføringsjournalhendelse registreres. Hendelsen overfører ett stykk av vare A fra området 1 til 2-området. Områdedimensjonen er en del av kostobjektet. Derfor oppretter hendelsen to lagertransaksjoner og to kostnadsoppføringer.
+En overføringsjournalhendelse registreres. Hendelsen overfører ett stykk av vare A fra område 1 til område 2. Områdelagerdimensjonen regnes som en del av kostnadsobjektet. Derfor oppretter hendelsen to lagertransaksjoner og to kostnadsoppføringer.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Eksempel 3: Én kostnadsoppføring opprettes
 
@@ -59,11 +59,11 @@ Den nye **Kostnadsoppføringer**-siden lar deg vise og styre registrering av ant
 | 00002   | 20.01.2015 | Bestilling | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31.01.2015 | Justering     | 100001 | 0000101 |               |               |          | 15,00   |
 
-**Kostnadsoppføringer**-siden aktiverer filtrering etter dokument-ID og dokumentdato. **Merk:** kostposter er bare tilgjengelige for [kostsentre](cost-object.md) eller frigitte produkter.
+**Kostnadsoppføringer**-siden aktiverer filtrering etter dokument-ID og dokumentdato. **Obs! ** Kostnadsoppføringer er bare tilgjengelige for [kostnadsobjekter](cost-object.md) eller frigitte produkter.
 
 <a name="see-also"></a>Se også
 --------
 
-[Cost objects](cost-object.md)
+[Kostnadsobjekter](cost-object.md)
 
 

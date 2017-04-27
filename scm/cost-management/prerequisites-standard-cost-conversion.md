@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forutsetninger for standard kostnadskonvertering
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet beskriver oppgaver som må utføres før du kjører en standard kostnadskonvertering. 
 
 Før du kjører en standard kostnadskonvertering, gjør du følgende:
@@ -38,7 +41,7 @@ Før du kjører en standard kostnadskonvertering, gjør du følgende:
     -   Kostgruppen som er tilordnet en produsert vare, kan fungerer som utgangspunkt for tilordning av finanskontoer som er knyttet til standardkostnader, som tilordning av finanskontoer for avvik i produksjon.
 
 3.  Tilordne et **standard ordreantall** til en produsert vare når den har konstantkostnader. Standard ordreantall for en produsert vare fungerer som en regnskapspartistørrelse for amortisering eller proporsjonal fordeling av konstante kostnader. Disse kan omfatte oppstillingstid i ruteoperasjoner eller en konstant komponentmengde i en stykkliste.
-4.  Tilordne **økonomikontoer** som er knyttet til standard kostpris, særlig revalueringsavvik. Bruk av **postering** siden (**Lagerstyring**&gt;**Setup**) til å tilordne økonomikontoer som er relatert til standard kostpris. For standard kostnadskonverteringsprosessen må du som et minimum, tilordne kontoen for revalueringsavvik for alle varer og kostgrupper. Bruk **Kontoplan**-siden for å definere økonomikontoene som trengs for standard kostpris. Bruk siden **Transaksjonskombinasjoner** til å aktivere kostrelasjoner (for tabeller, grupper og alle) før du definerer vareposteringsreglene.
+4.  Tilordne **økonomikontoer** som er knyttet til standard kostpris, særlig revalueringsavvik. Bruk **Postering**-siden (**Lagerstyring** &gt; **Oppsett**) til å tilordne økonomikontoer som er relatert til standard kostpris. For standard kostnadskonverteringsprosessen må du som et minimum, tilordne kontoen for revalueringsavvik for alle varer og kostgrupper. Bruk **Kontoplan**-siden for å definere økonomikontoene som trengs for standard kostpris. Bruk siden **Transaksjonskombinasjoner** til å aktivere kostrelasjoner (for tabeller, grupper og alle) før du definerer vareposteringsreglene.
 5.  Definer lagerparameterne som er relatert til standard kostpris. Bruk kategorien **Nummerserier** på siden **Parametere for beholdnings- og lagerstyring** for å tilordne en nummerserie til revalueringsbilag. Det genereres et revalueringsbilag når standardkostnadskonverteringen oppretter en endring av varens lagerverdi. Bruk siden **Parametere for beholdnings- og lagerstyring** for å definere kostkontrollparametere (i kategorien **Lagerregnskap**) for å definere to parametere som er relatert til standard kostpris.
     -   Bruk feltet **Oppdeling av kostnader** til å velge Nei eller Underfinans. Valget Underfinans betegnes som aktiv kostnadsoppdeling. Aktiv kostnadsoppdeling er svært viktig for beregning, opprettholding og visning av kostgruppesegmentering gjennom en produktstruktur på flere nivåer for varer med standard kostpris. Når kostnadsoppdelingen er aktiv, kan du rapportere og analysere følgende i formatet enkelt nivå, flere nivåer eller totalt:
         1.  Beholdning
@@ -47,6 +50,8 @@ Før du kjører en standard kostnadskonvertering, gjør du følgende:
 
         Aktiv kostnadsoppdeling betyr at hvis du aktiverer prisen for en produsert vare, lagres resultatet i kostgruppesegmenteringen i varens kostprispost. Hvis du ikke legger inn en verdi i feltet **Oppdeling av kostnader**, blir ikke kostgruppesegmenteringen opprettholdt for varer med standard kostpris. Det vil si at standard kostpris for en produsert vare vil bli beregnet og opprettholdt som et enkeltbeløp uten kostgruppesegmentering, og kostbidragene for produserte komponenter vil bli aggregert inn i dette enkeltbeløpet.
     -   Bruk feltet **Avvik for standard** til å velge summert eller per kostgruppe. Valget av per kostgruppe gjør at du kan identifisere avvik i innkjøpspris og produksjonsavvik etter kostgruppe. Dette gir også mulighet til å identifisere de fire typene produksjonsavvik (avvik i partistørrelse, antall, pris og erstatning). Hvis du valgte summert, kan du ikke identifisere avvik etter kostgruppe, og du kan ikke identifisere de fire typene produksjonsavvik. Du kan bare vise en oppsummering av produksjonsavviket. Policyen om avvik for standard kostpris er uavhengig av policyen for kostnadsoppdeling. Det vil si at hvis du velger ingen policy for kostnadsoppdeling samt avvik per kostgruppe, vil produksjonsavvik etter kostgruppe fremdeles vil bli fanget opp.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
+title: Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger
 description: Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene.
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger
+
+[!include[banner](includes/banner.md)]
+
 
 Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene. 
 
 Eksemplet nedenfor brukes til å illustrere begreper som er beskrevet i dette emnet.
 
-|**Avdeling**|**Position**|**Job**|
+|**Avdeling**|**Stilling**|**Jobb**|
 |---|---|---|
 |**Salg**|Salgssjef (øst)|Salgssjef|
 |**Salg**|Salgssjef (vest)|Salgssjef|
 |**Salg**|Salgssjef (sentralt)|Salgssjef|
-|**Accounting**|Regnskapsansvarlig|Regnskapssjef|
-|**Accounting**|Regnskap -A|Regnskapsfører|
-|**Human resources**|Personale (øst)|Personale|
-|**Human resources**|Personale (vest)|Personale|
-|**Human resources**|Personale (sentralt)|Personale|
+|**Regnskap**|Regnskapsansvarlig|Regnskapssjef|
+|**Regnskap**|Regnskap -A|Regnskapsfører|
+|**Personale**|Personale (øst)|Personale|
+|**Personale**|Personale (vest)|Personale|
+|**Personale**|Personale (sentralt)|Personale|
 
  
  <a name="departments"></a>Avdelinger
@@ -79,7 +82,7 @@ Du kan opprette jobboppgaver som beskriver de grunnleggende oppgavene som må fu
 
 ### <a name="job-functions"></a>Jobbfunksjoner
 
-Jobbfunksjoner er som jobboppgaver. En jobbfunksjon beskriver en eller flere oppgaver, plikter eller ansvarsområder som er tilordnet til en jobb. Jobbfunksjoner kan tilordnes jobber og brukes til å definere og implementere rettighetsregler for kompensasjonsplaner. Eksempler på jobbfunksjoner er oppført i følgende tabell.
+Jobbfunksjoner er som jobboppgaver. En jobbfunksjon beskriver en eller flere oppgaver, plikter eller ansvarsområder som er tilordnet til en jobb. Jobbtyper kan være knyttet til jobber og brukes til å definere og implementere rettighetsregler for kompensasjonsplaner. Eksempler på jobbfunksjoner er oppført i tabellen nedenfor.
 
 | Jobb           | Jobbfunksjon                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Bruk ansvarsområder for å angi arbeidsrollene, prosessene og produktene som en
 <a name="positions"></a>Stillinger
 ----------
 
-Stillinger er et viktig element i det nederste nivået i et organisasjonshierarki. En stilling er én enkeltforekomst av en jobb. For eksempel er plassering, "(Øst), mva-sjef" bare én av stillinger som er knyttet til jobben "Salgssjef". Stillinger finnes i en avdeling, og tilordnes til arbeidere.
+Stillinger er et viktig element i det nederste nivået i et organisasjonshierarki. En stilling er én enkeltforekomst av en jobb. Stillingen "Salgssjef (øst)" er for eksempel bare én av stillingene som er knyttet til jobben "Salgssjef". Stillinger finnes i en avdeling, og tilordnes til arbeidere.
 ### <a name="position-creation-and-maintenance"></a>Opprettelse og vedlikehold av stilling
 
 -   Du kan vise en logg over stillingsrelaterte systemendringer på en lett tilgjengelig listeside.
@@ -161,6 +164,8 @@ For noen poster kan du angi fremtidige endringer i posten. Følgende informasjon
 </table>
 
 Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling eller en jobb og angi en dato når endringene i stillingen eller jobben skal tre i kraft. En stilling kan for eksempel bare tilordnes én arbeider, men Sanjay Patel, som er tilordnet til stillingen regnskapsfører-A, skal slutte om to uker. Joe Healy erstatter Sanjay Patel når han slutter. Selv om Sanjay fremdeles er tilordnet stillingen sin, kan du tilordne Joe Healy til samme stilling slik at tilordningen bare gjelder etter Sanjays siste dag.
+
+
 
 
 

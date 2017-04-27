@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="address-books"></a>Adressebøker
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="how-do-i-check-for-duplicate-records"></a>Hvordan kontrollerer jeg duplikate poster?
@@ -53,7 +56,7 @@ Du kan oppdatere navnet på en partspost, og adressene som er knyttet til posten
 ## <a name="can-i-merge-two-or-more-party-records-into-one-record"></a>Kan jeg slå sammen to eller flere partsposter til én post?
 Noen ganger kan det hende at du vil slå sammen to eller flere partsposter til én enkelt post. Dette kan skje hvis du oppretter én eller flere dupliserte partiposter, enten med hensikt eller ved et uhell. Når du fletter partsposter, velger du én oppføring som skal beholdes. Informasjonen fra de andre postene flettes deretter inn i denne posten. Du oppdager for eksempel at informasjon om Fabrikam er lagret i tre partsposter: A, B og C. Du vil beholde partspost A. Derfor vil informasjonen som er lagret i partsposter B og C, slås sammen med partspost A. Det finnes situasjoner der du ikke kan flette partsposter:
 
--   Du kan ikke flette partsposter som er knyttet til den samme partsrollen, for eksempel kunde eller leverandør, i den samme juridiske enheten. Hvis du for eksempel part A er knyttet til en kunde i juridisk enhet 123 og part B er knyttet til en annen kunde i juridisk enhet 123. Disse party oppføringene kan ikke flettes fordi hvis de ble slått sammen, flettede partspost ville være knyttet til flere kunder i samme juridiske enhet, og dette er ikke tillatt. Postene kan imidlertid flettes hvis part B knyttes til en leverandør i den juridiske enheten 123 eller til en kunde i en annen juridisk enhet.
+-   Du kan ikke flette partsposter som er knyttet til den samme partsrollen, for eksempel kunde eller leverandør, i den samme juridiske enheten. For eksempel er part A knyttet til en kunde i den juridiske enheten 123 og part B er knyttet til en annen kunde i den juridiske enheten 123. Disse partsoppføringene kan ikke slås sammen fordi hvis de ble slått sammen, vil sammenslåtte partsposter være knyttet til flere kunder i samme juridiske enhet, og dette er ikke tillatt. Postene kan imidlertid flettes hvis part B knyttes til en leverandør i den juridiske enheten 123 eller til en kunde i en annen juridisk enhet.
 -   Du kan ikke flette interne partiorganisasjonsposter i den samme juridiske enheten, teamet eller driftsenheten.
 
 ## <a name="should-i-create-a-party-record-in-the-global-address-book-or-in-another-place-such-as-the-customer-or-vendor-page"></a>Bør jeg opprette en partspost i den globale adresseboken eller et annet sted, for eksempel på kunde- eller leverandørsiden?
@@ -64,5 +67,7 @@ Du kan angi partsposter i den globale adresseboken eller på den rette enhetssid
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversette adresseinformasjon for partsposter?
 Du kan definere oversettelser av adresseinformasjon slik at informasjonen vises på ditt brukerspråk (systemspråk) i Microsoft Dynamics 365 for Operations, men på et annet språk på dokumenter som salgsordrer. Du kan angi oversettelser for land-/områdenavn, adresseformål og navnerekkefølger. Systemspråket ditt er eksempelvis dansk, og du oppretter en salgsordre for en kunde i Frankrike. I så fall kan du vise kundeposten på dansk i programmet, men vise adresseinformasjonen på fransk på den utskrevne salgsordren. Når du definerer oversettelser, bør du angi en oversettelse for hvert element i listen. Alle elementer som du ikke angir en oversettelse for, vises på systemspråket. Systemspråket ditt er eksempelvis dansk, og du sender et dokument til en kunde i Spania. Hvis du ikke har angitt spanske (ESP) oversettelser for adresseinformasjonen, vil denne informasjonen vises på dansk både i programmet og på det utskrevne dokumentet.
+
+
 
 

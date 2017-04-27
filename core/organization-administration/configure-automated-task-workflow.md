@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurere en automatisert oppgave i en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert oppgave.
 
 Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den automatiserte oppgaven.
@@ -92,16 +95,18 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
+
+
 
 
 

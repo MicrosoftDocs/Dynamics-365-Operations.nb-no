@@ -1,6 +1,6 @@
 ---
 title: Oversikt over nummerserier
-description: "Nummerserier i Microsoft Dynamics 365 for operasjoner brukes til å generere lesbar, unike identifikatorer for hoveddataposter og transaksjonsoppføringer som krever identifikatorer. En hoveddatapost eller transaksjonspost som krever en ID kalles en <em>referanse</em>."
+description: "Nummerserier i Microsoft Dynamics 365 for Operations brukes til å generere lesbare, unike ID-er for hoveddataposter og transaksjonsposter som krever ID-er. En hoveddatapost eller transaksjonspost som krever en ID kalles en <em>referanse</em>."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="number-sequence-overview"></a>Oversikt over nummerserier
 
-Nummerserier i Microsoft Dynamics 365 for operasjoner brukes til å generere lesbar, unike identifikatorer for hoveddataposter og transaksjonsoppføringer som krever identifikatorer. En hoveddatapost eller transaksjonspost som krever en ID kalles en <em>referanse</em>.
+[!include[banner](../includes/banner.md)]
 
-Før du kan opprette nye poster for en referanse i Microsoft Dynamics 365 for operasjoner, må du angi en nummerserie og knytte den til referansen. Vi anbefaler at du bruker sidene i **Organisasjonsstyring** til å konfigurere nummerserier. Hvis modulspesifikke innstillinger kreves, kan du bruke parametersiden i en modul til å angi nummerserier for referansene i denne modulen. I **Kundereskontro** og **Leverandører** kan du for eksempel definere nummerseriegrupper for å tildele spesifikke nummerserier til bestemte kunder eller leverandører. Når du har definert en nummerserie, må du angi et område, som angir hvilken organisasjon som bruker nummerserien. Omfanget kan være **Delt**, **Firma**, **Juridisk enhet** eller **Driftsenhet**. Omfangene **Juridisk enhet** og **Firma** kan kombineres med **Regnskapskalenderperiode** for å opprette enda mer spesifikke nummerserier. Nummerserieformater består av segmenter. Nummerserier med et annet omfang enn **Delt**, kan inneholde segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholdet et segment for en juridisk enhet. Hvis du tar med et omfangssegment i nummerserieformatet, kan du identifisere omfanget til en bestemt post ved å se på nummeret. I tillegg til segmenter som tilsvarer omfang, kan nummerserieformater inneholde **Konstant** og **Alfanumeriske segmenter**. Et **Konstant**-segment inneholder et sett med bokstaver, tall eller symboler som ikke endres. Et **Alfanumerisk** segment inneholder et sett med bokstaver eller tall som øker hver gang et tall brukes. Bruk et nummertegn (\#) som representerer stigende numre og en ampersand (&) til å representere bokstaver stigende. Hvis du for eksempel formatet \#\#\#\#\#\_2017 oppretter sekvensen 00001\_2017, 00002\_2017, og så videre.
+
+Nummerserier i Microsoft Dynamics 365 for Operations brukes til å generere lesbare, unike ID-er for hoveddataposter og transaksjonsposter som krever ID-er. En hoveddatapost eller transaksjonspost som krever en ID kalles en <em>referanse</em>.
+
+Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse i Microsoft Dynamics 365 for Operations. Vi anbefaler at du bruker sidene i **Organisasjonsstyring** til å konfigurere nummerserier. Hvis modulspesifikke innstillinger kreves, kan du bruke parametersiden i en modul til å angi nummerserier for referansene i denne modulen. I **Kundereskontro** og **Leverandører** kan du for eksempel definere nummerseriegrupper for å tildele spesifikke nummerserier til bestemte kunder eller leverandører. Når du har definert en nummerserie, må du angi et område, som angir hvilken organisasjon som bruker nummerserien. Omfanget kan være **Delt**, **Firma**, **Juridisk enhet** eller **Driftsenhet**. Omfangene **Juridisk enhet** og **Firma** kan kombineres med **Regnskapskalenderperiode** for å opprette enda mer spesifikke nummerserier. Nummerserieformater består av segmenter. Nummerserier med et annet omfang enn **Delt**, kan inneholde segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholdet et segment for en juridisk enhet. Hvis du tar med et omfangssegment i nummerserieformatet, kan du identifisere omfanget til en bestemt post ved å se på nummeret. I tillegg til segmenter som tilsvarer omfang, kan nummerserieformater inneholde **Konstant** og **Alfanumeriske segmenter**. Et **Konstant**-segment inneholder et sett med bokstaver, tall eller symboler som ikke endres. Et **Alfanumerisk** segment inneholder et sett med bokstaver eller tall som øker hver gang et tall brukes. Bruk et nummertegn (\#) for å angi økende tall og et ampersandtegn (&) for å angi økende bokstaver. Formatet \#\#\#\#\#\_2017 oppretter for eksempel serien 00001\_2017, 00002\__2017 og så videre.
 Eksempler på nummerserier
 ------------------------
 
@@ -73,6 +76,8 @@ Nummerserier kan være sammenhengende og ikke-sammenhengende. En ubrutt nummerse
 ### <a name="automatic-cleanup-of-number-sequences"></a>Automatisk opprydding av nummerserier
 
 Hvis det oppstår et strømbrudd, en programfeil eller annen uventet feil, kan ikke systemet resirkulere numre automatisk for ubrutte nummerserier. Du kan kjøre oppryddingsprosessen manuelt eller automatisk for å gjenopprette de tapte numrene. Vurder serverbruken nøye når du planlegger oppryddingsprosessen. Vi anbefaler at du foretar oppryddingen som en satsvis jobb i perioder med liten aktivitet.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Bruke rask import/eksport
+title: Bruke hurtigimport/-eksport
 description: "Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kjøre Test Data Transfer-verktøyet (beta) for Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kjøre overføringsverktøy for testdata (beta) for Dynamics AX (AX 2012)
+
+[!include[banner](../../includes/banner.md)]
+
 
 Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn.
 
@@ -36,5 +39,7 @@ Vi har lagt til funksjonen for hurtigimport/-eksport for å la brukere importere
 -   Du trenger ikke å opprette en behandlingsgruppe for å bruke hurtigimport/-eksport. Systemet oppretter en automatisk når du import- eller eksportjobben utføres. Du kan også velge å beholde historikken over dataene som importeres med hurtigimport/-eksport.
 
   Vær oppmerksom på at hurtigimport/-eksport forutsetter at du er kjent med DIXF-konseptet.
+
+
 
 

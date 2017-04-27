@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du utelater utestående fra de historiske dataene som brukes til å beregne en behovsprognose. Ved å ekskludere utestående kan du forbedre nøyaktighet av prognosen.
 
-Du kan utelate outliers for å forbedre nøyaktigheten av prognosen. Denne oppgaven er valgfri. Her er en oversikt over prosessen:
+Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppgaven er valgfri. Her er en oversikt over prosessen:
 
-1.  Klikk **Master planning**&gt;**oppsett**&gt;**etterspørselen prognoser**&gt;**fjerning av Outlier** å åpne den **fjerning av Outlier** -siden der du kan bruke en spørring til å velge transaksjonene som skal ekskluderes.
+1.  Klikk **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Fjerning av utestående** for å åpne **Fjerning av utestående**-siden der du kan bruke en spørring for å velge transaksjonen som skal ekskluderes.
 2.  Velg firmaet som spørringen gjelder for, og skriv inn et navn og en beskrivelse. **Spørringsdato**-feltet settes automatisk til den gjeldende datoen.
 3.  Merk av for **Aktiv** for å utelate transaksjoner som blir funnet av spørringen, fra historiske data. Denne innstillingen trer i kraft når du oppretter en basislinjeprognose.
 4.  På **Spørring etter fjerning av utestående**-siden kan du legge til, fjerne og velge kriteriene som definerer hvilke transaksjoner som skal utelates når basislinjeprognosen beregnes. Velg for eksempel en bestemt vare eller ordretransaksjon som skal ekskluderes.
@@ -43,8 +46,10 @@ Du kan utelate outliers for å forbedre nøyaktigheten av prognosen. Denne oppga
 <a name="see-also"></a>Se også
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Innføring i behovsprognoser](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
+
+
 
 

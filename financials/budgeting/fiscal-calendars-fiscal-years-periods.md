@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskapskalendere, regnskapsår og perioder
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 
 Økonomiske kalendere gir et rammeverk for den økonomiske aktiviteten i en organisasjon. Hver regnskapskalender inneholder ett eller flere regnskapsår, og hvert regnskapsår inneholder flere perioder. Økonomiske kalendere kan følge kalenderåret fra 1. januar til 31. desember, eller den kan være basert på datoer du velger. Noen organisasjoner velger for eksempel en økonomisk kalender som starter 1. juli ett år og slutter 30. juni det påfølgende året. 
@@ -39,7 +42,7 @@ Du kan opprette og slette regnskapskalendere, regnskapsår og perioder på Regns
 
 En avslutningsperiode brukes til å skille økonomimodultransaksjoner som genereres når et regnskapsår avsluttes. Når avslutningstransaksjonene er i en regnskapsperiode, er det enklere å opprette regnskapsoppgjør som enten inkluderer eller ekskluderer ulike typer avslutningsoppføringer. Hvis et regnskapsår er delt opp i tolv regnskapsperioder, er avslutningsperioden vanligvis den trettende perioden. En avslutningsperiode kan imidlertid opprettes fra enhver periode med statusen Åpen. 
 
-Når du oppretter en avslutningsperiode, velger du en periode som har statusen Åpen og har datoene du vil bruke. Den nye avslutningsperioden kopierer start- og sluttdatoene fra den eksisterende perioden. Den opprinnelige perioden finnes fortsatt. Du kan for eksempel velge perioden 12, som er den siste perioden i regnskapsåret, og som har datoer for August 1 August 31. Du kan angi et navn for avslutningsperioden, for eksempel Lukk. Etter at du har opprettet den nye avslutningsperioden, har du nå den opprinnelige perioden og avslutningsperioden. Begge har datoer som begynner 1. august og slutter 31. august.
+Når du oppretter en avslutningsperiode, velger du en periode som har statusen Åpen og har datoene du vil bruke. Den nye avslutningsperioden kopierer start- og sluttdatoene fra den eksisterende perioden. Den opprinnelige perioden finnes fortsatt. La oss si at du velger Periode 12, som er siste periode i regnskapsåret, og som har datoene fra 1. august til og med 31. august. Du skriver inn et navn for avslutningsperioden, for eksempel Slutt. Etter at du har opprettet den nye avslutningsperioden, har du nå den opprinnelige perioden og avslutningsperioden. Begge har datoer som begynner 1. august og slutter 31. august.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Velge regnskapskalendere for finans, anleggsmidler og budsjettsykluser
 Økonomiske kalendere brukes til avskrivning av anleggsmidler, økonomiske transaksjoner og budsjettsykluser. Når du oppretter en økonomisk kalender, kan du bruke den til flere formål. Du kan velge en økonomisk kalender for en verdimodell eller et avskrivningstablå for å gjøre den om til en anleggsmiddelkalender. Du kan velge en økonomisk kalender for en finans for å gjøre den om til en finanskalender. Du kan også velge en økonomisk kalender for en budsjettsyklus for å gjøre den om til en budsjettkalender. Du kan bruke samme regnskapskalender for alle disse.
@@ -58,6 +61,8 @@ Budsjettsykluser er tidsrommet et budsjett brukes i. Budsjettsykluser kan inklud
 
 ## <a name="maintain-periods-for-your-organization"></a>Vedlikeholde perioder for organisasjonen
 Du kan bruke Finanskalender-siden til å vise detaljene for regnskapskalenderen, regnskapsåret og periodene som brukes i organisasjonen. Du kan også endre statusen for periodene og velge hvilke brukere som kan postere regnskapstransaksjoner til perioder. I begynnelsen av en ny periode vil du for eksempel kanskje at en gruppe brukere skal fullføre posteringene av finanstransaksjoner i den forrige perioden, mens andre grupper bare arbeider i den nye perioden.
+
+
 
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Arbeidsflytelementer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver de ulike elementene som utgjør en arbeidsflyt.
 
 En arbeidsflyt består av elementer. Delene nedenfor beskriver hver elementtype.
@@ -55,14 +58,14 @@ En *godkjenningsprosess* er en prosess som består av separate trinn. I hvert go
 -   Be om en endring i dokumentet
 -   Tilordne dokumentet til en annen bruker for godkjenning
 
-## <a name="lineitem-workflow-elements"></a>Lineitem-arbeidsflytelementer
-Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som den *dokumentarbeidsflyt*.) Du kan legge til en *linjeelementarbeidsflyt* elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen. ![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif) I dette scenariet kan det hende at du vil opprette følgende arbeidsflyter for linjeelement:
+## <a name="lineitem-workflow-elements"></a>Elementer for arbeidsflyt for linjeelementer
+Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som *dokumentarbeidsflyten*.) Du kan legge til et *arbeidsflyt for linjeelementer*-elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen. ![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif) I dette scenariet kan det hende at du vil opprette følgende arbeidsflyter for linjeelement:
 
 -   **Arbeidsflyt for linjeelement 1** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 1111.
 -   **Arbeidsflyt for linjeelement 2** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 2222.
 -   **Arbeidsflyt for linjeelement 3** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 3333.
 
-## <a name="flowcontrol-elements"></a>Flowcontrol elementer
+## <a name="flowcontrol-elements"></a>Flytkontrollelementer
 Følgende elementer lar deg utforme arbeidsflyter som har alternative grener eller grener som kjøres samtidig.
 
 ### <a name="manual-decision"></a>Manuell beslutning
@@ -80,5 +83,7 @@ En *parallellaktivitet* er et arbeidsflytelement som omfatter to eller flere arb
 ### <a name="subworkflow"></a>Underarbeidsflyt
 
 En *underarbeidsflyt* er en arbeidsflyt som kjøres i en annen arbeidsflyt.
+
+
 
 

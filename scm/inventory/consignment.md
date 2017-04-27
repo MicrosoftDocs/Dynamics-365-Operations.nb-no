@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consignment"></a>Forsendelse
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du bruker prosesser for innkommende forsendelseslager.
 
-Forsendeleslager er lager som eies av en leverandør, men lagres på ditt område. Når du er klar til å forbruke eller bruke lageret, kan du ta over eierskapet for lageret. Dette emnet inneholder informasjon om hvordan du får fysisk leverandøren eies lagerbeholdningen uten å opprette transaksjoner i Finans, hvordan du starter en produksjonsprosess der leverandøren eies-lager kan reserveres fysisk. Og hvordan du endrer eierskap for råvarer for å kunne behandle forbruk som en del av behandlingen av produksjon. Det inneholder også informasjon om hvordan leverandører kan overvåke forbruk av lagerbeholdningen ved hjelp av grensesnittet for leverandørsamarbeid. Hvis du vil ha informasjon om hvordan du aktiverer og konfigurerer innkommende forsendelsesprosesser, kan du se [Definere forsendelse](set-up-consignment.md).
+Forsendeleslager er lager som eies av en leverandør, men lagres på ditt område. Når du er klar til å forbruke eller bruke lageret, kan du ta over eierskapet for lageret. Dette emnet inneholder informasjon om hvordan du fysisk mottar leverandøreid lagerbeholdning uten å opprette transaksjoner fra økonomimodulen, hvordan du starter en produksjonsprosess der leverandøreid lagerbeholdning kan reserveres fysisk , og hvordan du endrer eierskap for råvarer for å kunne behandle forbruket som en del av behandlingen av produksjonsordre. Det inneholder også informasjon om hvordan leverandører kan overvåke forbruk av lagerbeholdningen ved hjelp av grensesnittet for leverandørsamarbeid. Hvis du vil ha informasjon om hvordan du aktiverer og konfigurerer innkommende forsendelsesprosesser, kan du se [Definere forsendelse](set-up-consignment.md).
 
 ## <a name="overview-of-the-consignment-process"></a>Oversikt over forsendelsesprosessen
 Dette eksemplet har firmaet USMF en forsendelsesavtale med leverandøren US-104 for råvaren M9211CI.
@@ -57,9 +60,9 @@ USMF utfører flere regelmessige prosesser:
 Leverandøren, US-104, kan overvåke oppdateringer ved hjelp av siden **Forsendelseslager for beholdning**.
 
 ## <a name="consignment-replenishment-orders"></a>Etterfyllingsordrer for forsendelse
-En etterfyllingsordre for forsendelse er et dokument som brukes til å be om og holde oversikt over lagerantall av produkter som en leverandør har til hensikt å levere innenfor et bestemt datointervall ved å opprette bestilte lagertransaksjoner. Dette baseres vanligvis på prognose og faktisk etterspørsel av bestemte produkter. Lagerbeholdningen som skal mottas mot etterfyllingsordre for forsendelse forblir i leverandørens eierskap. Bare besittelse av produktene som er knyttet til oppdateringen av det fysiske mottaket registreres, og derfor utføres ingen økonomimodultransaksjoner. **Eier**-dimensjonen brukes til å skille informasjon om hvilken lagerbeholdning som eies av leverandøren og hvilken som eies av den juridiske enheten for mottak. Forsendelse etterfylling ordrelinjene har en **Åpen ordre** status så lenge det fullstendige antallet linjer som ikke er mottatt eller avbrutt. Når hele antallet er mottatt eller avbrutt, endres statusen til **fullført**. Den fysiske lagerbeholdningen som er knyttet til en etterfyllingsordre for forsendelse kan registreres ved hjelp av en registreringsprosess i tillegg til en oppdateringsprosess for produktmottak. Registreringen kan utføres som del av vareankomstprosessen eller ved å oppdatere ordrelinjene manuelt. Når oppdateringsprosess for produktmottak brukes, opprettes en post i produktkvitteringsjournalen, som kan brukes til å bekrefte mottak av varer til leverandørene. 
+En etterfyllingsordre for forsendelse er et dokument som brukes til å be om og holde oversikt over lagerantall av produkter som en leverandør har til hensikt å levere innenfor et bestemt datointervall ved å opprette bestilte lagertransaksjoner. Dette baseres vanligvis på prognose og faktisk etterspørsel av bestemte produkter. Lagerbeholdningen som skal mottas mot etterfyllingsordre for forsendelse forblir i leverandørens eierskap. Bare besittelse av produktene som er knyttet til oppdateringen av det fysiske mottaket registreres, og derfor utføres ingen økonomimodultransaksjoner. **Eier**-dimensjonen brukes til å skille informasjon om hvilken lagerbeholdning som eies av leverandøren og hvilken som eies av den juridiske enheten for mottak. Etterfyllingsordrelinjer for forsendelse har statusen **Åpen ordre** så lenge det fullstendige antallet linjer ikke er mottatt eller kansellert. Når det fullstendige antallet er mottatt eller kansellert, endres statusen til **Fullført**. Den fysiske lagerbeholdningen som er knyttet til en etterfyllingsordre for forsendelse kan registreres ved hjelp av en registreringsprosess i tillegg til en oppdateringsprosess for produktmottak. Registreringen kan utføres som del av vareankomstprosessen eller ved å oppdatere ordrelinjene manuelt. Når oppdateringsprosess for produktmottak brukes, opprettes en post i produktkvitteringsjournalen, som kan brukes til å bekrefte mottak av varer til leverandørene. 
 
-[![forsendelse etterfyllingsordre](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![forsendelse-etterfylling-ordre](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Endringsjournal for lagereierskap
 Endring av eier av lagerbeholdningen fra leverandør til den juridiske enhet av mottak, gjøres ved hjelp av en endringsjournal for lagereierskap. Ingen forventede lagertransaksjoner opprettes for journalen. De eneste lagertransaksjonene som opprettes er de som er knyttet til en postert journal. Når journalen posteres:
@@ -69,14 +72,16 @@ Endring av eier av lagerbeholdningen fra leverandør til den juridiske enhet av 
 
 Det er ikke mulig å oppdatere antallet på bestillingslinjene for forsendelsen når bestillingen er opprettet. 
 
-[![eier-endre-lagerjournal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Endringsjournal for lagereierskap](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbeid i forsendelsesprosesser
 Grensesnittet for leverandørsamarbeid har tre sider som er knyttet til prosessen for innkommende forsendelse:
 
--   **Bestillinger****bruker forsendelse lager** -viser detaljert bestillingsinformasjon knyttet til endring av eierskap fra forsendelse-prosessen.
+-   **Bruk av forsendelseslager** **for bestillinger** – Viser detaljert bestillingsinformasjon knyttet til endring av eierskap fra forsendelsesprosessen.
 -   **Produkter mottatt fra forsendelseslager** – Viser informasjon om varene og antallet som oppdateres på mottakssedler under prosessen for endring av eierskapet.
 -   **Forsendelseslager for beholdning** – Viser informasjon om forsendelsesvarene som det forventes at de leverer, og varene som allerede er fysisk tilgjengelige hos kunden.
+
+
 
 
 

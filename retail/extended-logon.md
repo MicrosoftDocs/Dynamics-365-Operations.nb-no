@@ -1,5 +1,5 @@
 ---
-title: "Sette opp utvidet pålogging funksjonaliteten for skyen POS- og MPOS"
+title: "Definere utvidet påloggingsfunksjonalitet for Skysalgssted og MPOS"
 description: "Denne wikien dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Sette opp utvidet pålogging funksjonaliteten for skyen POS- og MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Definere utvidet påloggingsfunksjonalitet for Skysalgssted og MPOS
 
 Denne wikien dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.
 
 <a name="setting-up-extended-logon"></a>Definere utvidet pålogging
 =========================
 
-Kan du finne oppsettet for strekkodemasker på **detaljhandel og commerce**&gt;**kanaloppsett**&gt;**POS installasjonsprogrammet**&gt;**POS profiler**&gt;**Funksjonalitetsprofiler**. Hurtigkategorien **Funksjoner** inneholder følgende alternativer som er knyttet til utvidet pålogging.
+Du kan finne oppsettet for strekkodemasker på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Funksjonalitetsprofiler**. Hurtigkategorien **Funksjoner** inneholder følgende alternativer som er knyttet til utvidet pålogging.
 
 ### <a name="staff-bar-code-logon"></a>Strekkodepålogging for stab
 
@@ -53,7 +53,7 @@ Når alternativet **Stabspålogging med kort krever passord** er aktivert, velge
 <a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
 ===========================
 
-Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **utvidet Logg på** i POS. Deretter Søk for en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK **-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
+Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK **-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
 
 <a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
 ==========================

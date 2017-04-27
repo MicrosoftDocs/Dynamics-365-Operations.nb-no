@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Kostgrupper
 
+[!include[banner](../includes/banner.md)]
+
+
 Kostgrupper gir grunnlaget for segmentering og analyse av kostbidrag i de beregnede kostnadene for en produsert vare, for eksempel kostbidragene for materialer, arbeidskraft og indirekte kostnader. Begrepet "kostgruppesegmentering" har flere synonymer innenfor produksjonsindustrien, for eksempel kostnadsspesifikasjon, nedbryting av kostnader eller kostnadsklassifisering. 
 
 Begrepet "kostgruppesegmentering" har flere synonymer innenfor produksjonsindustrien, for eksempel kostnadsspesifikasjon, nedbryting av kostnader eller kostnadsklassifisering. Kostgruppesegmentering kan tjene flere formål. Her er noen eksempler:
@@ -48,6 +51,8 @@ En kostgruppe kan tilordnes en kostgruppetype og virkemåte for ekstra segmenter
 
 -   **Kostgruppetype** − Hver kostgruppe må tilordnes en kostgruppetype for å angi at kostgruppen gjelder direkte materialer, direkte produksjon, eller direkte utsetting, eller for å angi den som indirekte eller udefinert. En kostgruppe som er definert som direkte materiale, kan tilordnes varer. En kostgruppe definert som direkte produksjon kan tilordnes kostnadskategorier. En kostgruppe for direkte utsetting kan tilordnes til produkttypen service, slik at du kan klassifisere kostnader tilknyttet serviceinnkjøpet utsettingsaktiviteter. En indirekte kostgruppe kan tilordnes indirekte kostnader som tillegg eller satser. En kostgruppe som er definert som udefinert, kan tilordnes varer, kostnadskategorier eller indirekte kostnader. Tilordning av en kostgruppetype tjener flere hensikter. For det første begrenser det muligheten til å tilordne en kostgruppe og til å vise en liste med aktuelle kostgrupper. For det andre gir det ekstra segmentering til rapportering. For det tredje kan det brukes til å tilordne finanskontoer for avvik.
 -   **Virkemåte** − Hver kostgruppe kan, men må ikke, tilordnes en virkemåte for å angi at kostgruppen gjelder faste eller variable kostnader. En kostgruppe som nullverdi for virkemåte, behandles som en variabel kostnad. Tilordning av virkemåte tjener bare rapporteringsformål. Kostnader kan for eksempel vises med segmentering etter faste og variable kostnader i kostarket og på siden **Opprullet kost per kostgruppe**. Hvis du tilordner en fortjenesteinnstillingsprosent til hver kostgruppe, gir stykklisteberegningen en foreslått salgspris basert på kostnader pluss påslag.
+
+
 
 
 

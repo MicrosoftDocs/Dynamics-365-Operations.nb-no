@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger **Manuelt** i feltet **Metode** på siden **Avskrivningsprofiler**, bestemmes avskrivningen for anleggsmidler som er tilordnet avskrivningsprofilen, av prosenten du angir for hvert intervall i kalenderåret. Intervallene du angir prosenter for, posteres i henhold til verdien du velger i **Periodefrekvens** i **Generelt**-hurtigkategorien av på siden **Avskrivningsprofiler**. Her er verdiene du kan velge:
@@ -63,13 +66,15 @@ Hvis du velger **Månedlig** i feltet** Periodefrekvens**, må du definere 12 ma
 | Januar  | (11 000 – 1 000) × 10 % = 1 000 |
 | Februar | (11 000 – 1 000) × 50 % = 5 000 |
 
-Hvis du velger **halvårlig** i den *** periode frekvens ** feltet ** du definere to manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for disse intervallene.
+Hvis du velger **Halvårlig** i ****Periodefrekvens**-feltet**, må du definere to manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for disse intervallene.
 
 | Intervall    | Avskrivningsbeløp            |
 |-------------|--------------------------------|
 | 30. juni     | (11 000 – 1 000) × 10 % = 1 000 |
 | 31. desember | (11 000 – 1 000) × 50 % = 5 000 |
 
-Totalen prosenten for alle intervallene behøver ikke å være 100. Imidlertid du mottar en melding hvis verdien i den **kumulativ prosent** på den **aktivaavskrivning planer for** siden er ikke **100**.
+Den totale prosenten for alle intervallene behøver ikke å være 100. Imidlertid du mottar en melding hvis verdien i feltet **Kumulert prosent** på siden **Planer for anleggsmidlets avskrivningsprofil** ikke er **100**.
+
+
 
 

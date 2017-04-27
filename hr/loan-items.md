@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
+[!include[banner](includes/banner.md)]
+
+
 Utlånsvarer er poster som hjelper ledere med å spore fysiske varer som firmaet låner ut til arbeidere. 
 
 Punktene nedenfor viser eksempler på elementer som et firma kan låne ut til ansatte:
@@ -39,7 +42,7 @@ Hver fysiske vare må ha en tilsvarende utlånsvare. Hver utlånsvarepost må be
 
 Når du låner ut en vare, må du registrere datoen da varen ble utlånt, og den planlagte returdatoen. Når varen returneres, må du registrere den faktiske returdatoen.
 
-Ansatte kan vise poster for varene som er utlånt til dem ved å bruke Employee Self-Service arbeidsområdet. De kan også redigere eksisterende poster eller angi nye elementer for lån, hvis de har mottatt flere fysiske elementer.  Arbeidsflyten kan defineres til å Ruteendringer for nye eller eksisterende utlånsvarer gjennom en godkjenningsprosess. 
+Ansatte kan vise postene for varene som er lånt ut til dem, ved hjelp av området for ansattselvbetjening. De kan også redigere eksisterende poster eller angi nye elementer for lån, hvis de har mottatt flere fysiske elementer.  Arbeidsflyten kan defineres til å Ruteendringer for nye eller eksisterende utlånsvarer gjennom en godkjenningsprosess. 
 
 Ledere kan vise utlånte varer til sine direkte underordnede. De kan også få tilgang til å legge til nye utlånsvarer på vegne av ansatte.
 
@@ -52,6 +55,8 @@ Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. De
 <a name="see-also"></a>Se også
 --------
 
-[Human resources](index.md)
+[Personale](index.md)
+
+
 
 

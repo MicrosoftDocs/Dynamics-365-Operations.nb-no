@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
 
+[!include[banner](../includes/banner.md)]
+
+
 Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan utgiften, avgiften eller gebyrene skal gjøres rede for på en leverandørfaktura. Alle beløp som må redegjøres for når leverandørfakturaen er journalføres, har én eller flere regnskapsdistribusjoner. 
 
 <a name="accounting-distributions"></a>Regnskapsdistribusjoner 
@@ -244,6 +247,8 @@ Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet
 Før du posterer en leverandørfaktura, kan du vise den fullstendige regnskapsoppføringen for fakturaen, som inkluderer debet og kredit, for å bekrefte at fakturaen posteres på de riktige kontoene. Denne visningen av den fullstendige regnskapsoppføringen kalles en underfinansjournal. 
 
 Hvis underfinansjournaloppføringen er feil når du forhåndsviser den før du journalfører leverandørfakturaen, kan du ikke endre underfinansjournaloppføringen. I stedet må du endre regnskapsdistribusjonene eller posteringsprofilen. Regnskapsdistribusjonene brukes til å definere én side av regnskapsoppføringen, debet eller kredit. Motkontooppføringen i underfinansjournalen opprettes ved å bruke posteringsprofilene, for eksempel fra leverandørkontoen eller avgift.
+
+
 
 
 

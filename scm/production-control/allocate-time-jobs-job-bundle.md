@@ -1,5 +1,5 @@
 ---
-title: Tilordne tid til jobber i en jobbunt
+title: Tildele tid til jobber i en jobbunt
 description: "I produksjonsutførelse kan du bunte jobber. Deretter kan du starte flere jobber samtidig på Jobbliste-siden."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Tilordne tid til jobber i en jobbunt
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Tildele tid til jobber i en jobbunt
+
+[!include[banner](../includes/banner.md)]
+
 
 I produksjonsutførelse kan du bunte jobber. Deretter kan du starte flere jobber samtidig på Jobbliste-siden.
 
@@ -107,5 +110,7 @@ Vurder de tre jobbene som utføres av en arbeider med en timebetaling på USD 12
 | Jobb 3 | (3,33 ÷ 5) × USD 12,00                 | 8,00 USD                | 5 timer        | 40,00 USD         |
 
 Den korrigerte kostnaden per time og jobbtiden posteres i en produksjonsjournal. **Obs!** Hvis du velger **Kostnadskategori** alternativet på **Generelt** kategorien på siden **Standarder for produksjonsordre**, overføres faktisk tid for hver jobb til en produksjonsjournal, der kostnadene brukes i kostnadskategorien for den bestemte jobben.
+
+
 
 

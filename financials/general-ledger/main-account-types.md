@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Hovedkontotyper
 
+[!include[banner](../includes/banner.md)]
+
+
 Hovedkontotypene bestemmer hvordan en hovedkonto brukes i kontoplanen.
 
 Du må velge en hovedkontotype når du oppretter en hovedkonto på siden Hovedkontoer - kontoplan.
@@ -35,6 +38,8 @@ Du må velge en hovedkontotype når du oppretter en hovedkonto på siden Hovedko
 -   Balanse, aktiva, gjeld og egenkapital – disse hovedkontoene brukes som transaksjonskontoer for å registrere beløpene som en juridisk enhet eier eller skylder.
 -   Total – disse hovedkontoene brukes til å legge til kontointervaller. Konfigurer hovedkontotypen Total ved hjelp av Kontointervall-siden, som viser summen av gruppesaldoer for alle kontointervaller. Få tilgang til Kontointervall-siden ved å klikke Totaler i kategorien Generelt når du har valgt en totalkontotype.
 -   Rapportering – disse hovedkontoene brukes bare for rapportering av regnskapsoppgjør for Brasil.
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Produktmottak mot kjøpsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt.
 
 Produktmottak er prosessen med å registrere at produkter som ble bestilt, er mottatt, slik at bestillingslinjer deretter kan behandles for fakturering. I noen tilfeller går produkter gjennom forhåndsregistreringen, der tilleggsinformasjon fra leverandøren registreres før varene mottas. Når produkter ankommer, merkes de først som **Registrert**. Produktene kan deretter gå gjennom flere prosesser, for eksempel kvalitetsstyring, før de til slutt merkes som **Mottatt**.
@@ -52,19 +55,21 @@ Du kan velge flere ordrer og behandle mottak på alle ordrer samtidig. Denne fre
 
 Bestillinger kan opprettes fra en salgsordre der alternativet **Direktelevering** er valgt. Når direktelevering brukes, ankommer produktene aldri på lageret, men de leveres direkte fra leverandøren til kunden. I slike tilfeller registreres mottaket vanligvis direkte på bestillingen. Mottaket kan utføres automatisk, for eksempel via integrering av utveksling av elektroniske data (EDI) med leverandøren. Hvis bestillingen er en konsernintern bestilling, automatiserer Microsoft Dynamics 365 for Operations mottaket på den konserninterne salgsordren når forsendelse skjer. Når direktelevering brukes, registreres produkter fremdeles som beholdning, selv om de ikke mottas fysisk på lageret. Når produktmottaket registreres på bestillingen, oppdateres derfor salgsordren automatisk med en følgeseddel, slik at den totale endringen i beholdningen er 0 (null). I situasjoner med direktelevering bør du ikke kreve forhåndsregistrering. Hvis du bruker lagre som er aktivert for lagerstyring, kan du omgå kravet til nummerskiltregistrering ved å angi et virtuelt lager i stedet. Du angir dette lageret lager i feltet **Lager for direktelevering** på produktet. 
 
-Når produktkvitteringen har blitt behandlet på Bestillingen, PO-statusen er satt til **mottatt** for å angi at fakturaen kan behandles for ordren. Du kan se gjennom informasjon om produkter som allerede er mottatt ved hjelp av siden **Produktkvitteringsjournaler**.  
+Når produktmottak er behandlet på bestillingen, sette bestillingsstatusen til **Mottatt** for å angi at fakturaen kan behandles for ordren. Du kan se gjennom informasjon om produkter som allerede er mottatt ved hjelp av siden **Produktkvitteringsjournaler**.  
 
 Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Bestilling**. Informasjonen i journalene inneholder informasjon om antall, datoer og dimensjoner.
 
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversikt over bestilling](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Opprett bestilling](purchase-order-creation.md)
 
 [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
 
 [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

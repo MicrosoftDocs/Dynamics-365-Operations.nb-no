@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder og -konvensjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over avskrivningskonvensjoner og avskrivningsmetoder som støttes av Microsoft Dynamics AX.
 
 Du kan velge forskjellige avskrivningsmetoder og -konvensjoner. Formålet med metodene er å tildele den avskrivbare verdien til anleggsmiddelet i regnskapsperioder. Den avskrivbare verdien til anleggsmiddelet er anskaffelsesprisen minus eventuell svinnverdi. 
@@ -66,26 +69,27 @@ Du kan velge mellom følgende avskrivningsmetoder:
 <a name="see-also"></a>Se også
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Avskrivning av anleggsmidler](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Lineær levetidsavskrivning](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Redusere saldoavskrivning](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Manuell avskrivning](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Faktoravskrivning](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Forbruksavskrivning](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Gjenstående lineær levetidsavskrivning](straight-line-life-remaining-depreciation.md)
 
-[125 % redusert saldoavskrivning](125-percent-reducing-balance-depreciation.md)
+[125 prosent redusert saldoavskrivning](125-percent-reducing-balance-depreciation.md)
 
-[150 % redusert saldoavskrivning](150-percent-reducing-balance-depreciation.md)
+[150 prosent redusert saldoavskrivning](150-percent-reducing-balance-depreciation.md)
 
-[175 % redusert saldoavskrivning](175-percent-reducing-balance-depreciation.md)
+[175 prosent redusert saldoavskrivning](175-percent-reducing-balance-depreciation.md)
 
-[200 % redusert saldoavskrivning](200-percent-reducing-balance-depreciation.md)
+[200 prosent redusert saldoavskrivning](200-percent-reducing-balance-depreciation.md)
+
 
 

@@ -59,5 +59,5 @@ Følgende begrensninger gjelder når du oppretter koblinger i posteringsdefinisj
 -   Du kan tilordne en posteringsdefinisjon til en hvilken som helst transaksjonstype, men transaksjonstypen må være i samme modul som posteringsdefinisjonen. Bruk siden **Definisjoner for transaksjonspostering** for å se hvilken modul en transaksjonstype er i.
 
 
-Hvis du vil ha mer informasjon, se [postering definisjoner eksempler](/general-ledger/example-posting-definitions.md). 
+Hvis du vil ha mer informasjon, kan du se [Eksempler på posteringsdefinisjoner](/general-ledger/example-posting-definitions.md). 
 

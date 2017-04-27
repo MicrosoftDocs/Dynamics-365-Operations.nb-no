@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis leverandørbetaling med rabatter på kreditnotaer for leverandør"
+title: "Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer"
 description: Denne artikkelen leder deg gjennom et scenario der en kreditnota utlignes mot en faktura.
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Utligne en delvis leverandørbetaling med rabatter på kreditnotaer for leverandør
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen leder deg gjennom et scenario der en kreditnota utlignes mot en faktura.
 
 Fabrikams leverandører gi kontantrabatter på kreditnotaer. Leverandør 3050 gir Fabrikam en kontantrabatt på 1 prosent hvis en faktura betales innen 14 dager.
 
 ## <a name="invoice-and-credit-memo"></a>Faktura og kreditnota
-I juni 29 April, oppretter du en faktura for 1 000,00 for leverandør 3050. 2. juli oppretter hun en kreditnota for 200,00. April åpner **Utlign transaksjoner** på **Leverandører**-siden. Hun kan bruke siden **Utligne transaksjoner** til å merke både kreditnotaen og fakturaen for utligning. Det beregnes rabatt på 2,00 på kreditnotaen. Den totale verdien til kreditnotaen reduseres dermed til 198,00.
+29. juni opprettes en faktura på 1 000,00 for leverandøren 3050. 2. juli oppretter hun en kreditnota på 200,00. April åpner **Utlign transaksjoner** på **Leverandører**-siden. Hun kan bruke siden **Utligne transaksjoner** til å merke både kreditnotaen og fakturaen for utligning. Det beregnes rabatt på 2,00 på kreditnotaen. Den totale verdien til kreditnotaen reduseres dermed til 198,00.
 
 | Merk                     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ April kan gå gjennom leverandørtransaksjonene på **Leverandørtransaksjoner**
 | Fakt-10071  |                  | 02.07.2015  | K10071 | 200,00                               |                                       | 0,00    | USD      |
 | RAB-10071 |  Kontantrabatt   | 02.07.2015  |         | 2,00                                 |                                       | 0,00    | USD      |
 | RAB-10071 |  Kontantrabatt   | 02.07.2015  |         |                                      | 2,00                                  | 0,00    | USD      |
+
+
 
 
 

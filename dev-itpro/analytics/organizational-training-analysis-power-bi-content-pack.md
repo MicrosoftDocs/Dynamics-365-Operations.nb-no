@@ -1,6 +1,6 @@
 ---
-title: "Organisatoriske opplæring strømmen BI-innhold"
-description: "Dette emnet beskriver Dynamics-365 for operasjoner - organisatoriske opplæring strømmen BI-innhold. Det forklarer hvordan du får tilgang til innhold pack, og beskriver datamodell og enheter som ble brukt til å lage innhold pack."
+title: "Organisasjonsopplæring-innhold for Power BI"
+description: "Dette emnet beskriver Dynamics 365 for Operations - Organisasjonsopplæringsinnhold for Power BI. Det forklarer hvordan du kan få tilgang til innholdspakken, og beskriver datamodellen og enhetene som brukes til å bygge innholdspakken."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Organisatoriske opplæring strømmen BI-innhold
+# <a name="organizational-training-power-bi-content"></a>Organisasjonsopplæring-innhold for Power BI
 
-Dette emnet beskriver Dynamics-365 for operasjoner - organisatoriske opplæring strømmen BI-innhold. Det forklarer hvordan du får tilgang til innhold pack, og beskriver datamodell og enheter som ble brukt til å lage innhold pack.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Tilgang til innhold pack
+
+Dette emnet beskriver Dynamics 365 for Operations - Organisasjonsopplæringsinnhold for Power BI. Det forklarer hvordan du kan få tilgang til innholdspakken, og beskriver datamodellen og enhetene som brukes til å bygge innholdspakken.
+
+<a name="accessing-the-content-pack"></a>Tilgang til innholdspakken
 --------------------------
 
-Du kan finne den organisatoriske opplæring innhold pack i delte aktiva biblioteket i Microsoft Dynamics Lifecycle tjenester (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innhold pack og koble den til din Microsoft Dynamics-365 for operasjoner data, se [strømmen BI-innhold i LCS fra Microsoft og partnere på](power-bi-content-microsoft-partners.md).
+Du kan finne Organisasjonsopplæring-innholdspakken i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og kobler den til Microsoft Dynamics 365 for Operations-data, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som er inkludert i innhold pack
-Når du har koblet innhold pack til din Dynamics 365 for operasjoner data, vise rapportene organisasjonens data. Hvis du aldri har brukt Microsoft Power BI før, kan du lære mer om det på den [veiledende læring side for strøm BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som er inkludert i innhold pack har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som er inkludert i innholdspakken
+Når du har knyttet innholdspakken til Dynamics 365 for Operations-dataene dine, viser rapportene organisasjonens data. Hvis du aldri har brukt Microsoft Power BI før, kan du finne ut mer på siden [Guided Learning for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som er inkludert i innholdspakken, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
 
 | Rapporter          | Innhold                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| Kurset analyse | Registrering av plassering, deltakere på kurset ved status og Registreringsliste |
+| Kursanalyse | Registrering etter plassering, deltakere på kurset etter status og registreringsliste |
 | Kurstyper    | Kurstyper etter kompetanse                                                       |
 
-Du kan filtrere diagrammer og fliser på disse rapportene og feste diagrammer og fliser på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filter og PIN-koden i strømmen BI, se [opprette og konfigurere en instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Dynamics 365 for operasjoner data brukes til å fylle ut rapporter i organisasjonens opplæring innhold pack. Tabellen nedenfor viser enhetene som innhold pack er basert på.
+Dynamics 365 for Operations-data brukes til å fylle ut rapporter i Organisasjonsopplæring-innholdspakken. Tabellen nedenfor viser enhetene som innholdspakken er basert på.
 
 | Enhet                    | Innhold                                                         | Relasjoner med andre enheter                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Opplæring\_CalendarOffset  | Kalenderen forskyvninger stykke rapporter                                | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_firma         | Selskaper til å filtrere rapporter med                                   | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_kurs          | Kurset, beskrivelse, instruktør navn, plassering, plass og status | Opplæring\_opplæring for CourseAgenda\_opplæring for CourseAttendees\_CourseSkill                                                                                                                             |
-| Opplæring\_CourseAgenda    | Agenda, kurs og start- og sluttidspunktene                          | Opplæring\_Company opplæring\_opplæring for CalendarOffset\_dato opplæring\_kurs                                                                                                                         |
-| Opplæring\_CourseAttendees | Dato for navn, status, jobb og registrering                         | Opplæring\_Company opplæring\_CalendarOffset opplæring\_dato opplæring\_demografi opplæring\_ansettelse opplæring\_kurs opplæring\_opplæring for WorkerName\_WorkerTitle opplæring\_jobb opplæring\_posisjon |
-| Opplæring\_CourseSkill     | Kompetanse, kompetanse og nivå                                     | Opplæring\_kurs                                                                                                                                                                                   |
-| Opplæring\_dato            | Dager, uker, måneder og år                                   | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_demografi    | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status         | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_ansettelse      | Startdato, sluttdato og dato for overgang                        | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_jobb             | Funksjons-, type- og tittel                                        | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_posisjon        | Posisjon, tittel og tilsvarende fulltidsekvivalente (FTE)                  | Opplæring\_opplæring for CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Opplæring\_WorkerName      | Fornavn, Etternavn og fullt navn                             | Opplæring\_CourseAttendees                                                                                                                                                                          |
-| Opplæring\_WorkerTitle     | Tittel og ansiennitet                                         | Opplæring\_CourseAttendees                                                                                                                                                                          |
+| Training\_CalendarOffset  | Kalenderforskyvninger for å dele opp rapporter                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Company         | Selskaper til å filtrere rapporter etter                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Course          | Kurs, beskrivelse, instruktørnavn, sted, rom og status | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
+| Training\_CourseAgenda    | Agenda, kurs og start- og sluttidspunktene                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
+| Training\_CourseAttendees | Navn, status, jobb og registreringsdato                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
+| Training\_CourseSkill     | Kompetanse, kompetansetype og nivå                                     | Training\_Course                                                                                                                                                                                   |
+| Training\_Date            | Dager, uker, måneder og år.                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Demographics    | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Employment      | Startdato, sluttdato og overgangsdato                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Job             | Funksjon, type og tittel                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees                                                                                                                                                                          |
+| Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees                                                                                                                                                                          |
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnet mål brukes deretter til å beregne viktige ytelsesindikatorer (KPIer) og rapporter som brukes i content pack. Hvis du vil ta med flere beregninger i rapporter og instrumentbord, kan du laste ned og endre filen Training.pbix fra LCS. Denne filen er standard datamodellen som ble brukt til å opprette innhold pack. Når du har gjort endringene, kan du opprette en organisatorisk innholdspakken og instrumentbord som inneholder informasjon som du har lagt til.
+Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdspakken. Hvis du vil ta med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen Training.pbix fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette innholdspakken. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
@@ -71,6 +74,8 @@ Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power 
 -   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Legge til Power BI-fliser i arbeidsområder](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

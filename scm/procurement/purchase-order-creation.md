@@ -33,7 +33,7 @@ Når du oppretter en bestilling, angis generell informasjon om hele ordren i bes
 
 Du kan også opprette bestillinger ved å kopiere linjer fra et annet bestillingsdokument eller en salgsordre. I slike tilfeller kan du snu fortegnet på beholdningen, slik du vil snu fortegnet på en faktura for å angi kreditnota.  
 
-Selv om du kan opprette bestillinger manuelt, genereres de vanligvis fra andre prosesser. Ordre kan opprettes automatisk basert på andre dokumenter, for eksempel rekvisisjoner. De kan også opprettes som en del av prosessen gjennom planlagte POs for hovedplanlegging. Hvis du bruker kjøpsavtaler, POs kan opprettes av den **frigivelsesordre** handling. Det er også mer avanserte metoder for å automatisk opprette en bestilling. Bestillinger kan for eksempel opprettes når du bruker direktelevering eller konserninterne bestillingskjeder.
+Selv om du kan opprette bestillinger manuelt, genereres de vanligvis fra andre prosesser. Ordre kan opprettes automatisk basert på andre dokumenter, for eksempel rekvisisjoner. De kan også opprettes som en del av hovedplanleggingsprosessen gjennom planlagte bestillinger. Hvis du bruker kjøpsavtaler, kan bestillinger opprettes av **Frigivelsesordre**-handlingen. Det er også mer avanserte metoder for å automatisk opprette en bestilling. Bestillinger kan for eksempel opprettes når du bruker direktelevering eller konserninterne bestillingskjeder.
 
 ## <a name="creating-a-purchase-order-header"></a>Opprette et bestillingshode
 Når du oppretter en ny bestilling, vises en dialogboks der du kan angi den vanligste informasjonen for bestillingshodet. Når du klikker **OK** for å lukke dialogboksen, opprettes bestillingen, og du kan deretter angi tilleggsinformasjon i hodet.  
@@ -84,7 +84,7 @@ Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempe
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversikt over bestilling](purchase-order-overview.md)
 
 [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
 

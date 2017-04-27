@@ -1,6 +1,6 @@
 ---
 title: Finansjournaltyper
-description: "Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journal navn-siden til å definere journaler som du kan bruke i hele Microsoft Dynamics 365 for operasjoner."
+description: "Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journalnavn-siden til å definere journaler som du kan bruke i Microsoft Dynamics AX 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Finansjournaltyper
 
-Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journal navn-siden til å definere journaler som du kan bruke i hele Microsoft Dynamics 365 for operasjoner.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journalnavn-siden til å definere journaler som du kan bruke i Microsoft Dynamics AX 365 for Operations.
 
 | Journaltype                      | Formål                                                                                                                                                                                                                                                                                                                                                     | Angi transaksjoner på denne siden                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler
 | Leverandør: bankremisse            | Opprett en remitteringsfil for egenveksel som kan sendes til organisasjonens bank.                                                                                                                                                                                                                                                                      | Remitteringsjournal                                             |
 | Leverandørbetaling               | Opprette transaksjoner for leverandørbetaling.                                                                                                                                                                                                                                                                                                                    | Betalingsjournal                                                |
 | Leverandørtrekking egenveksel       | Trekke leverandøregenveksler som betalingsmåte. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Opprett og poster trekkjournal automatisk ved postering av fakturaer** på siden **Betalingsmåter – leverandører**.                                                                                                                                          | Journal for egenvekseltrekking                                   |
-| Leverandør Fakturapulje ekskl. postere | Opprett leverandørfakturatransaksjoner som ennå ikke er postert til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Leverandørfakturapulje uten posteringsdetaljer                  |
+| Leverandørfakturapulje ekskl. postere | Opprett leverandørfakturatransaksjoner som ennå ikke er postert til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Leverandørfakturapulje uten posteringsdetaljer                  |
 | Leverandørfakturapulje               | Opprett transaksjoner for leverandørfakturapulje.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Registrering av leverandørfaktura          | Poster leverandørfakturaer som er i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Leverandørtilbaketrekking egenveksel     | Trekk tilbake en egenveksel som tidligere er innfridd av organisasjonens bank.                                                                                                                                                                                                                                                                      | Journal for egenvekseltilbaketrekking                                 |
 | Leverandøravregning egenveksel     | Opprett transaksjoner for leverandøravregning egenveksel.                                                                                                                                                                                                                                                                                                          | Journal for egenvekselavregning                                 |
+
+
 
 
 

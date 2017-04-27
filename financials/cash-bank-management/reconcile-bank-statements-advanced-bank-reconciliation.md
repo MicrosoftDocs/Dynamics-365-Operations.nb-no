@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag med avansert bankavstemming
 
+[!include[banner](../includes/banner.md)]
+
+
 Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Operations. Dette emnet beskriver avstemmingsprosessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
@@ -74,7 +77,7 @@ Det finnes tre måter for å utligne eller avstemme bankkontoutdragstransaksjone
 -   Utligne transaksjoner med en tilbakeføring for bankkontoutdragstransaksjon.
 -   Merke transaksjonene som **Ny**, slik at de kan posteres senere som en banktransaksjon i Dynamics 365 for Operations.
 
-For å samsvare med transaksjoner manuelt, kan du velge hvilke transaksjoner i den **Bank setningen transaksjoner** rutenett, tilsvarende transaksjonen i den **operasjoner banktransaksjoner** rutenett, og klikk deretter **stemmer overens med**. De valgte transaksjonene flyttes fra øvre rutenett for ikke-utlignede transaksjoner til nedre rutenett for utlignede transaksjoner. I tillegg oppdateres utlignede og ikke-utlignede totalbeløp. Du kan ha transaksjonsutligninger av typen en-til-en, mange-til-en og mange-til-mange. Utligninger må følge reglene for tillatte datoforskjeller og tilordning av transaksjonstype. Disse reglene settes på siden **Parametere for kontant- og bankbehandling**.
+Hvis du vil utligne transaksjoner manuelt, velger du transaksjonene i rutenettet **Bankkontoutdragstransaksjoner**, velger tilsvarende transaksjoner i rutenettet **Operations-banktransaksjoner**, og klikker deretter **Samsvar**. De valgte transaksjonene flyttes fra øvre rutenett for ikke-utlignede transaksjoner til nedre rutenett for utlignede transaksjoner. I tillegg oppdateres utlignede og ikke-utlignede totalbeløp. Du kan ha transaksjonsutligninger av typen en-til-en, mange-til-en og mange-til-mange. Utligninger må følge reglene for tillatte datoforskjeller og tilordning av transaksjonstype. Disse reglene settes på siden **Parametere for kontant- og bankbehandling**.
 
 Øredifferanser kan oppstå i avstemmingen. Du kan utligne én enkelt bankkontoutdragstransaksjon med én enkelt Operations-banktransaksjon som har øredifferanser, hvis øredifferansene er innenfor toleransebeløpet som er definert av feltet **Tillatt øredifferanse** for bankkontoen. Beløpet vises i feltet **Korreksjonsbeløp** i den samsvarende Operations-banktransaksjonen. Når bankavstemmingen er merket som avstemt, posteres rettelser automatisk ved hjelp av hovedkontoen som er definert i den tilknyttede banktransaksjonstypen. Rettelser støttes ikke for dokumenttypene **Sjekk** og **Innskudd**. 
 
@@ -90,5 +93,7 @@ Når alle utdragslinjer er behandlet, må du merke bankavstemmingsregneark som a
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Postere nye transaksjoner som er tilknyttet den valgte avstemmingen
 Bankkontoutdragstransaksjoner du merket som **Ny** på avstemmingsregnearket, posteres på siden **Bankkontoutdrag**. På siden **Bankkontoutdrag** velger du utdrags-ID for å vise utdragsdetaljene. På **Regnskap**-menyen kan du bruke alternativene **Vis distribusjoner** og **Vis regnskap** for å vise detaljene bak de nye transaksjonene og de tilhørende bankpostene. Velg alternativet **Poster** for å postere bankkontoutdragslinjer som er merket som **Ny** i økonomimodulen. Vær oppmerksom på at posteringer bare kan fullføres én gang per bankkontoutdrag.
+
+
 
 

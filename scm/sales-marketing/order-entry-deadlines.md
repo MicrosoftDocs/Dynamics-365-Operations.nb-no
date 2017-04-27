@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Ordrefrister
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om tidsfrister for ordreregistrering. En tidsfrist for ordreregistrering er en tidsgrense som bestemmer om en kundeordre skal behandles (og oppfylles) som om den ble mottatt på gjeldende dag eller neste dag.
 
 I mange firmaer blir bare salgsordrer som mottas før et bestemt tidspunkt på dagen, behandlet som om de ble mottatt på denne dagen. Alle ordrer som mottas etter dette tidspunktet, behandles som om de ble mottatt neste arbeidsdag. Denne fristen for ordrer kalles tidsfrister for ordreregistrering.  
@@ -43,7 +46,7 @@ Hvis firmaet består av flere områder, kan du definere tidsfrister for ordre fo
 På siden **Aktiver ordrefristkombinasjoner** definerer du kombinasjoner av områder og ordrefristgrupper som er tillatt.
 
 ## <a name="example-order-entry-deadline"></a>Eksempel: Tidsfrist for ordre
-Tidsfrister for ordreregistrering på tirsdager er satt til 16.00. På en bestemt tirsdag klokken 17:00 prøver du å angi gjeldende dato som forsendelsesdatoen. (Vær oppmerksom på at det ikke er noen leveringstiden for eksempel.) Hvis du **leveringsdatokontroll** er merket, får en advarsel om at datoen er ikke gyldig. Denne advarselen vises på siden **Tilgjengelige leverings- og mottaksdatoer**, der du deretter kan velge alternative datoer.
+Tidsfrister for ordreregistrering på tirsdager er satt til 16.00. På en bestemt tirsdag klokken 17:00 prøver du å angi gjeldende dato som forsendelsesdatoen. (Vær oppmerksom på at det er ingen leveringstiden i dette eksemplet.) Hvis det er merket av for **Leveringsdatokontroll**, vises en advarsel som sier at datoen ikke er gyldig. Denne advarselen vises på siden **Tilgjengelige leverings- og mottaksdatoer**, der du deretter kan velge alternative datoer.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Eksempel: Ulike tidsfrister for ordre per område
 Firmaet består av to områder. Områdene finnes i ulike tidssoner, som vist i følgende tabell.
@@ -55,7 +58,7 @@ Firmaet består av to områder. Områdene finnes i ulike tidssoner, som vist i f
 
 Område A og B har definert følgende tidsfrister for ordrer.
 
-| Dag i uken             | A: bestille tidsfrister (PST) | B: bestille tidsfrister (EST) |
+| Dag i uken             | A: Ordrefrister (PST) | B: Ordrefrister (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Mandag                      | 13:00:00                          | 14:00:00                          |
 | Tirsdag                     | 13:00:00                          | 14:00:00                          |
@@ -67,7 +70,7 @@ Du er ordrebehandler i Utah, der tidssonen er Rocky Mountains (normaltid). Dette
 
 Følgende tabell viser tidsfristene for ordrer for område A og B, omregnet til tidssonen Rocky Mountains (normaltid).
 
-| Området A: PST         | Området A: MST        | Området B: EST           | Området B: MST        |
+| Område A: PST         | Område A: MST        | Område B: EST           | Område B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 14:00:00                 | 12:00:00              |
 
@@ -95,7 +98,7 @@ Du er ordrebehandler i Utah, der tidssonen er Rocky Mountains (normaltid). Dette
 
 Følgende tabell viser tidsfristene for ordrer for område A og B, omregnet til tidssonen Rocky Mountains (normaltid).
 
-| Området A: PST         | Området A: MST        | Området B: EST           | Området B: MST        |
+| Område A: PST         | Område A: MST        | Område B: EST           | Område B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 13:00:00                 | 11:00:00              |
 
@@ -104,6 +107,8 @@ Følgende tabell viser tidsfristene for ordrer for område A og B, omregnet til 
 <a name="see-also"></a>Se også
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Leveringsplaner](delivery-schedules.md)
+
+
 
 

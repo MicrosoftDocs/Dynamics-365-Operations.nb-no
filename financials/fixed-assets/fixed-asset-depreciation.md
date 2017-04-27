@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anleggsmidler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over avskrivning for anleggsmidler.
 
 Avskrivning er en periodisk transaksjon som vanligvis reduserer verdien til anleggsmidlene i balansen, og kostnadsføres som en utgift i en resultatkonto. Derfor brukes vanligvis en hovedkonto til å kreditere den periodiske avskrivningen i balansen. En motkonto er en konto i resultatdelen av kontoplanen.
@@ -51,6 +54,8 @@ Hvert tablå inneholder en kalender som skal brukes ved avskrivning av anleggsmi
 
 Du kan opprette delte kalendere ved hjelp av siden **Økonomiske kalendere** i økonomimodulen.
 
-Hvis du vil ha mer informasjon, se [avskrivningsmetoder og -konvensjoner](depreciation-methods-conventions.md).
+Hvis du vil ha mer informasjon, se [Avskrivningsmetoder og -konvensjoner](depreciation-methods-conventions.md).
+
+
 
 

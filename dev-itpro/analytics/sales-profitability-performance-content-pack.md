@@ -1,6 +1,6 @@
 ---
-title: "Salg og fortjeneste ytelse strømmen BI-innhold"
-description: "Dette emnet beskriver hva som er inkludert i Dynamics-365 for operasjoner - salg og fortjeneste ytelse content pack for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert i pakken innhold og gir informasjon om datamodell og enheter som brukes til å lage innhold pack."
+title: Resultat av salg og fortjeneste for Power BI-innhold
+description: "Dette emnet beskriver hva som er inkludert i Dynamics 365 for Operations - Resultat av salg og fortjeneste-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,84 +24,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Salg og fortjeneste ytelse strømmen BI-innhold
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Resultat av salg og fortjeneste for Power BI-innhold
 
-Dette emnet beskriver hva som er inkludert i Dynamics-365 for operasjoner - salg og fortjeneste ytelse content pack for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert i pakken innhold og gir informasjon om datamodell og enheter som brukes til å lage innhold pack.
+Dette emnet beskriver hva som er inkludert i Dynamics 365 for Operations - Resultat av salg og fortjeneste-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken.
 
 <a name="overview"></a>Oversikt
 --------
 
-Denne innholdspakken ble opprettet for salgssjefer å overvåke salg hovedmål for omsetning, bruttofortjeneste og Bruttofortjeneste marger. Den bruker salg transaksjonsdata fra Dynamics 365 for operasjoner, og inneholder både en aggregert visning av salgstallene for firmaet og en oppdeling av salgsytelse for kunder og produkter. Ved å utheve endringer i inntekt og fortjeneste vekst over tid, kan rapporter brukes til å varsle ledere om positive og negative trender for individuelle kunder og produkter. Kategori og regionale ledere vil finne det nyttig å ha diagrammer som sammenligner inntekter og lønnsomhet for ulike produktkategorier og kundegrupper til hverandre for å sortere ut Etterslengere og ledere. En omfattende rapport som tegner inntegninger individuelle kunden omsetning og fortjenestemargin gir kontoadministratorer en data-støttet foundation for å attune sine anstrengelser for salg og markedsføring i respektive profil for hver kunde. Salgs- og lønnsomhet ytelse innhold pack muliggjør salgssjefer til å analysere salg ytelse ved å:
+Denne innholdspakken ble laget for salgssjefer for å overvåke salghovedmål for omsetning, bruttofortjeneste og bruttofortjeneste. Den bruker salgstransaksjonsdata fra Dynamics 365 for Operations, og gir både en aggregert visning av salgstall for hele selskapet og en analyse av salgsresultat for kunder og produkter. Ved å utheve endringer i inntekts- og fortjenestevekst over tid, kan rapporter brukes til å varsle ledere om positive og negative trender for enkeltkunder og -produkter. For kategori- og distriktsledere kan det være nyttig å ha diagrammer som sammenligner inntekter og lønnsomhet for ulike produktkategorier og kundegrupper med hverandre for å sortere ut etternølere og ledere. En omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde. Resultat av salg og fortjeneste-innholdspakken lar salgssjefer analysere salgsresultat ved å:
 
--   Inntekt, år-til-dato (etter kundegruppe og individuelle kunder, salg kategorier, og enkelte produkter og områder)
--   Inntektsendring, år-over-år (etter kunde regioner og salget kategorier)
+-   Inntekt, hittil i år (etter kundegruppe og enkeltkunder, salgkategorier og enkeltprodukter og områder)
+-   Inntektsendring, årlig (etter kundeområder og salgskategorier)
 
-Lønnsomhet kan analyseres ved:
+Lønnsomhet kan analyseres etter:
 
--   Bruttofortjeneste og fortjenestemargin (ved kundegrupper og produktkategorier salg)
--   Bruttofortjeneste endring, år-over-år
--   Kundelønnsomhet (etter omsetning kontra Bruttofortjeneste)
+-   Bruttofortjeneste og fortjenestemargin (etter kundegrupper og salgskategorier for produkt)
+-   Bruttofortjenesteendring, årlig
+-   Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
-## <a name="accessing-the-content-pack"></a>Tilgang til innhold pack
-Salgs- og lønnsomhet ytelse strøm BI innhold pack er publisert som et anleggsmiddel for implementering i livssyklusen tjenester (LCS), og kan nås fra Dynamics 365 for operasjoner. Hvis du vil ha mer informasjon om hvordan du får tilgang til og starte strømmen BI-rapporter, se [strømmen BI-innhold i LCS fra Microsoft og partnere på](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Tilgang til innholdspakken
+Resultat av salg og fortjeneste-innholdspakken for Power BI publiseres som et implementeringsaktiva i Lifecycle Services (LCS) og er tilgjengelig fra Dynamics 365 for Operations. Hvis du vil ha mer informasjon om hvordan du får tilgang til og åpner Power BI-rapporter, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-included-in-the-content-pack"></a>Mål som er inkludert i innhold pack
-Content pack inneholder en rapport som består av et sett med mål visualized som tabeller, diagrammer og fliser. Tabellen nedenfor gir en oversikt over visualisations i innhold pack.
+## <a name="metrics-included-in-the-content-pack"></a>Mål som er inkludert i innholdspakken
+Resultat av salg og fortjeneste-innholdspakken inneholder en rapport som består av et sett med mål som vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
 
 |                        |                                            |                                                         |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Rapportside**        | **Charts**                                 | **Side ved side**                                               |
-| Omsetning per kunde    | Topp 10-kunder etter inntekt                | Totalinntekt                                           |
-|                        | Samlet omsetning av kundegruppe            | YOY vekst i inntekt                                      |
-|                        | Gjennomsnittlig Kundeomsetning etter kundegruppe | Bruttofortjeneste                                            |
-|                        | Inntekt & Bruttofortjeneste etter kunde   |                                                         |
-| Omsetning etter produkt     | Inntekt & Bruttofortjeneste etter kategori   | Total \#av produkter                                    |
-|                        | Topp 10 produkter etter inntekt                 | Totalt antall aktive produkter og prosent av total |
-|                        | Samlet omsetning etter kategori            | Antall produkter regnskap for 80 % inntekt           |
-| Inntekter per periode\*    | Omsetning etter måned                           | YOY vekst i inntekt                                      |
-|                        | Etterfølgende omsetning avvik, YOY             | YOY omsetning vekst %                                    |
-|                        | Totalt salg avvik etter kunde-område    |                                                         |
-| Omsetning per lokasjon    | Inntekter fra salg etter poststed                      |                                                         |
-|                        | YOY omsetning vekst %                       |                                                         |
-|                        | Inntekter fra salg etter region                    |                                                         |
-| Kundelønnsomhet | Bruttofortjeneste kontra omsetning per kunde   | Bruttofortjeneste, Bruttofortjeneste, YOY vekst i inntekt          |
-| Fortjenesteanalyse | Omsetning og Bruttofortjeneste per måned          |                                                         |
-|                        | Topp 15 kunder etter Bruttofortjeneste           |                                                         |
-|                        | Bruttofortjeneste etter måned, YOY                 |                                                         |
+| **Rapportside**        | **Diagrammer**                                 | **Fliser**                                               |
+| Inntekt etter kunde    | De ti viktigste kundene etter inntekt                | Totalinntekt                                           |
+|                        | Total inntekt etter kundegruppe            | Årlig inntekstvekst                                      |
+|                        | Gjennomsnittlig kundeinntekt etter kundegruppe | Bruttofortjeneste                                            |
+|                        | Inntekt og bruttofortjeneste etter kundegruppe   |                                                         |
+| Inntekt etter produkt     | Inntekt og bruttofortjeneste etter salgskategori   | Total \# produkter                                    |
+|                        | De ti viktigste produktene etter inntekt                 | Totalt antall aktive produkter og prosentdeler av total |
+|                        | Total inntekt etter salgskategori            | Antall produkter som står for 80 % av inntekten           |
+| Inntekt etter periode\*    | Inntekt etter måned                           | Årlig inntekstvekst                                      |
+|                        | Etterfølgende årlig inntektsavvik             | Årlig inntekstvekst i %                                    |
+|                        | Totalt salgsavvik etter kundeområde    |                                                         |
+| Inntekt etter lokasjon    | Salgsinntekt etter by                      |                                                         |
+|                        | Årlig inntekstvekst i %                       |                                                         |
+|                        | Salgsinntekt etter område                    |                                                         |
+| Kundelønnsomhet | Bruttofortjeneste kontra inntekt, etter kunder   | Fortjenestemargin, bruttofortjeneste, årlig inntektsvekst          |
+| Fortjenesteanalyse | Inntekt og bruttofortjeneste etter måned          |                                                         |
+|                        | De 15 viktigste kundene etter bruttofortjeneste           |                                                         |
+|                        | Bruttofortjeneste etter måned, årlig                 |                                                         |
 
-\*Omsetning dette og siste år og vekst etter kategori.
+\* Inntekt i år og forrige år. og vekst etter salgskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Dynamics 365 for operasjoner data brukes til å fylle ut rapporten i salg og fortjeneste ytelse innhold pack. Dette er representert som samlet mål mellomlagres i butikken enhet, som er en Microsoft SQL-database som er optimalisert for analyse. Les mer om det i bloggen [strømmen BI-integrasjon med enhet-butikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Samlet mål i denne innholdspakken er delsett av samlet mål som var tilgjengelige i kuben, salg i Dynamics AX 2012 og AX 2012 R3. For å stadium i kubens samlet mål i butikken enhet må du gjøre dem distribueres. Hvis du vil ha mer informasjon, se fremgangsmåten for hvordan du trinn samlet mål i enhet-butikken i bloggen [strømmen BI-integrasjon med enhet-butikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Følgende viktige samlet mål for fakturaen linjer enheten som skal brukes som grunnlag for innhold pack.
+Dynamics 365 for Operations-data brukes til å fylle ut rapportsider i Resultat av salg og fortjeneste-innholdspakken. Dette representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL-database som er optimalisert for analyse. Les mer om dette i bloggen [Power BI-integrering med enhetsbutikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Dynamics AX 2012 og AX 2012 R3. For å plassere kubens aggregerte målinger i enhetsbutikken må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i bloggen [Power BI-integrering med enhetsbutikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Deaggregerte nøkkelmålingene for fakturalinjer, som du finner nedenfor, brukes som grunnlag for innholdspakken.
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entity**    | **Viktige samlet mål**               | **Datakilde for Dynamics 365 for operasjoner** | **Field**                                    | **Description**                          |
-| Fakturalinjer | Omsetning                                      | CustInvoiceTrans                                | Sum(LineAmountMST)                           | Beløp i regnskapsvaluta            |
-|               | Solgte varers kost                           | InventTrans                                     | SUM (CostAmountPosted + CostAmountAdjustment) | Kostbeløp + justering                 |
-|               | Linje av provisjonsbeløpet – regnskapsvalutaen | CustInvoiceTrans                                | Sum(CommissAmountMST)                        | Provisjonsbeløpet i regnskapsvalutaen |
+| **Enhet**    | **Aggregerte nøkkelmålinger**               | **Datakilde for Dynamics 365 for Operations** | **Felt**                                    | **Beskrivelse**                          |
+| Fakturalinjer | Omsetning                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløp i regnskapsvaluta            |
+|               | Solgte varers kost                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Kostnadsbeløp + justering                 |
+|               | Provisjonslinjebeløp – regnskapsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisjonsbeløp i regnskapsvaluta |
 
-Tabellen nedenfor viser viktige samlet målene for enheten som fakturaen linjer som brukes til å opprette flere beregnede mål i den innholdspakken dataset.
+Tabellen nedenfor viser aggregerte nøkkelmålinger for fakturalinjeenheten som brukes til å opprette flere beregnede målinger i datasettet for innholdspakken.
 
 |                   |                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Measure**       | **Beregnet som**                                                                                |
-| Bruttofortjeneste      | SUM (omsetning – VAREFORBRUK – provisjon – merverdiavgift (inkludert i Kundefakturalinjebeløp))          |
-| Bruttofortjeneste      | SUM (Bruttofortjeneste / (inntekter - merverdiavgift (inkludert i Kundefakturalinjebeløp)))             |
-| Inntekt forrige år | Omsetning fjor = BEREGN (SUMMER ('Fakturalinjene'\[inntekt\]), SAMEPERIODLASTYEAR (datoer\[dato\]) |
+| **Måling**       | **Beregnet som**                                                                                |
+| Bruttofortjeneste      | SUM(Inntekt – Vareforbruk – Provisjon – Merverdiavgift (inkludert i kundefakturalinjebeløp)          |
+| Bruttofortjeneste      | SUM(Bruttofortjeneste / (Inntekt - Merverdiavgift (inkludert i kundefakturalinjebeløp)))             |
+| Inntekt forrige år | Inntekt forrige år = CALCULATE(SUM('Fakturalinjer'\[Inntekt\]), SAMEPERIODLASTYEAR((Datoer\[Dato\]) |
 
-Følgende nøkkel dimensjoner i den **kube for salg** brukes som filtre kan skjære samlet mål for å oppnå større tetthet og dypere analytisk kunnskap.
+Nøkkeldimensjonene nedenfor i **salgskuben** brukes som filtre kan dele opp de aggregerte målingene for å gi flere detaljer og dypere analytisk innsikt.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
-| **Entity**       | **Eksempler på attributtene**                           |
-| Kunder        | Kundegrupper, kunden regioner, adresse, bransje |
-| Produkter         | Produktnummer, produktnavn, Varenavn for grupper       |
-| Salgskategorier | Salg kategorinavn                                 |
-| Juridiske enheter   | Navn på juridisk enhet                                   |
+| **Enhet**       | **Eksempler på attributter**                           |
+| Kunder        | Kundegrupper, kundeområder, adresse, bransje |
+| Produkter         | Produktnummer, produktnavn, navn på varegrupper       |
+| Salgskategorier | Navn på salgskategorier                                 |
+| Juridiske enheter   | Navn på juridiske enheter                                   |
 | Datoer            | Datoer                                                |
 
-Content pack viser data for gjeldende kalenderåret som standard, men du kan åpne rapportinndelingen filtre og endre datofilteret. Du kan også endre firma.
+Innholdspakken viser data for gjeldende kalenderår som standard, men du kan åpne delen med rapportfiltre og endre datofilteret. Du kan også endre firmafilteret.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:

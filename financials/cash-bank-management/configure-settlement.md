@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-settlement"></a>Konfigurere utligning
 
+[!include[banner](../includes/banner.md)]
+
+
 Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder. 
 
-Følgende parametere påvirker hvordan utligninger skal behandles i Microsoft Dynamics 365 for operasjoner. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
+Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Operations. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
 
 -   **Automatisk utligning** – Sett dette alternativet til **Ja** hvis en transaksjon skal utlignes automatisk mot andre åpne transaksjoner når den posteres. Hvis dette alternativet er satt til **Nei**, kan brukere utligne transaksjoner manuelt når de registrerer betalinger, eller senere, ved å bruke siden **Utlign transaksjoner**.
--   **Håndtering av kontantrabatt** – angi hvordan en [kontantrabatt håndteres når en faktura er betalt for mye for](cash-discount-handling-overpayments.md). Kontantrabatten kan reduseres for en overbetaling, den kan behandles som en forskjell, eller det kan være på konto for kunden eller leverandøren.
+-   **Håndtering av kontantrabatt** – Angi hvordan en [kontantrabatt håndteres når en faktura er overbetalt](cash-discount-handling-overpayments.md). Når det gjelder en overbetaling, kan kontantrabatten reduseres, behandles som en differanse eller forbli på kontoen for kunden eller leverandøren.
     -   **Løs** – Kontantrabattbeløpet blir redusert med overbetalingsbeløpet. Dette gjelder alltid, uansett om overbetalingsbeløpet er mindre eller større enn beløpet som er angitt i feltet **Maksimal over- eller underbetaling**.
     -   **Spesifikk** – Overbetalingsbeløpet blir enten postert til en finanskonto for kontantrabattdifferanse eller forblir en saldo på kundens eller leverandørens konto. Den spesifikke virkemåten avhenger av om overbetalingsbeløpet er mellom 0,00 og beløpet som er angitt i feltet **Maksimal over- eller underbetaling**, eller om overbetalingsbeløpet er større enn beløpet for **Maksimal over- eller underbetaling**.
 -   **Maksimal øredifferanse** – Angi den maksimale øredifferansen som er tillatt for de utlignede transaksjonene. Hvis differansen er lik eller mindre enn øredifferansen som er angitt i dette feltet, posteres differansen til finanskontoen for øredifferanse som er angitt på siden **Kontoer for automatiske transaksjoner**.
@@ -45,15 +48,17 @@ Følgende parametere påvirker hvordan utligninger skal behandles i Microsoft Dy
     -   Hvis dette alternativet er satt til **Ja** og en bruker endrer verdien i feltet **Beløp som skal utlignes** på **Utlign transaksjoner**-siden, beregnes rabatten automatisk og vises som standardoppføringen i feltet **Kontantrabattbeløp som skal brukes**.
     -   Hvis dette alternativet er satt til **Nei** og en bruker endrer verdien i feltet **Beløp som skal utlignes** på **Utlign transaksjoner**-siden, er standardoppføringen i feltet **Kontantrabattbeløp som skal brukes** lik **0** (null).
 -   **Beregn kontantrabatter for kreditnotaer** – Sett dette alternativet til **Ja** for å beregne en kontantrabatt for kreditnotaer automatisk. I Kunde er en kreditnotatransaksjon en negativ transaksjon som har en verdi i **Faktura**-feltet på siden **Fritekstfaktura** eller en retur på **Salgsordre**-siden.
-    -   Effekten av dette alternativet er avhengig av verdien i feltet **Bruk kontantrabatt** på siden **Utlign transaksjoner**. Hvis dette alternativet er satt til **Ja**, rabatten, hentes når den *** Bruk Kontantrabatt *** feltet er satt til **Normal**. Når den *** Bruk Kontantrabatt *** feltet er satt til **alltid**, kontantrabatten utføres alltid, uavhengig av innstillingen i dette feltet. Når den *** Bruk Kontantrabatt *** feltet er satt til **aldri**, kontantrabatten er aldri tatt, uavhengig av innstillingen i dette feltet.
+    -   Effekten av dette alternativet er avhengig av verdien i feltet **Bruk kontantrabatt** på siden **Utlign transaksjoner**. Hvis dette alternativet er satt til **Ja**, brukes rabatten når feltet ****Bruk kontantrabatt**** er satt til **Normal**. Når feltet ****Bruk kontantrabatt**** er satt til **Alltid**, brukes alltid kontantrabatten, uavhengig av innstillingen for dette feltet. Når feltet ****Bruk kontantrabatt**** er satt til **Aldri**, brukes aldri kontantrabatten, uavhengig av innstillingen for dette feltet.
     -   Hvis dette alternativet er satt til **Ja** og en kreditnota er merket på **Utlign transaksjoner**-siden, beregnes rabatten automatisk og vises som standardoppføringen i feltet **Kontantrabattbeløp som skal brukes**.
     -   Hvis dette alternativet er satt til **Nei** og en kreditnota er merket på **Utlign transaksjoner**-siden, er standardoppføringen i feltet **Kontantrabattbeløp som skal brukes** lik **0** (null).
 -   **Motkontoer for rabatt (bare AP)** – Definer standard finanskonto for kontantrabatt som skal brukes for regnskapsoppføringen for kontantrabatter.
     -   **Bruk Hovedkonto for leverandørrabatter** – Kontantrabatten posteres på hovedkontoen som er definert på siden **Kontantrabattoppsett**.
     -   **Kontoer på fakturalinjene** – Kontantrabatten posteres på finanskontoer på den opprinnelige fakturaen.
 -   **Marker linjer i fritekstfakturaer og rentenotaer (bare AR)** – Sett dette alternativet til **Ja** for å aktivere knappen **Marker fakturalinjer** på sidene **Angi kundebetalinger**, **Journalbilag for betaling** og **Utlign transaksjoner**. Brukere kan bruke denne knappen til å merke individuelle linjer for utligning.
--   **Prioriter utligning (bare AR)** – Sett dette alternativet til **Ja** for å aktivere knappen **Merk etter prioritet** på sidene **Angi kundebetalinger** og **Utlign transaksjoner**. Denne knappen kan brukere gi forhåndsbestemte utligning rekkefølgen til transaksjoner.  Når ordren utligning er utlignet mot en transaksjon, rekkefølgen og betaling fordelingen kan endres før postering.
--   **Bruk prioritet for automatiske utligninger** – setter dette alternativet til **Ja** å bruke den angitte prioritetsrekkefølgen når transaksjonene utlignes automatisk. Dette feltet er tilgjengelig bare hvis den **Prioriter utligning** og **automatisk utligning** er angitt til **Ja**.
+-   **Prioriter utligning (bare AR)** – Sett dette alternativet til **Ja** for å aktivere knappen **Merk etter prioritet** på sidene **Angi kundebetalinger** og **Utlign transaksjoner**. Brukere kan bruke denne knappen til å tilordne den forhåndsbestemte utligningsrekkefølgen til transaksjoner.  Når utligningsrekkefølgen er brukt på en transaksjon, kan rekkefølgen og betalingsfordelingen endres før postering.
+-   **Bruk prioritet for automatiske utligninger** – Sett dette alternativet til **Ja** for å bruke den angitte prioritetsrekkefølgen når transaksjonene utlignes automatisk. Dette feltet er tilgjengelig bare hvis **Prioriter utligning** og **Automatisk utligning** er angitt til **Ja**.
+
+
 
 
 

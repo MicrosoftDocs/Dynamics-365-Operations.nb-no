@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Definere rentesatser for en rentekode
 
+[!include[banner](../includes/banner.md)]
+
+
 Rentekoder inneholder innstillinger som bestemmer nå renter belastes og hvordan de beregnes på forfalte kontoer.
 
 Du kan definere en enkelt rentekode og bruke den på flere kundeposteringsprofiler, faktureringskoder eller på bestemte fakturalinjer. Når rentekodedetaljene er endret vil alle funksjonene som bruker koden implementere endringene for nye transaksjoner. For hver rentekode kan du definere to typer satser:
@@ -44,17 +47,17 @@ Du kan definere rentesatser som beregner en bestemt prosent.
 
 -   Rentebeløp gjelder for alle valutaer.
 -   Valgfrie rentebeløpsgrenser kan angis.
--   **Prosent** er valgt ** ** i den **beregner renten som er basert på** i den **Sett opp rentekoder** siden.
+-   **Prosent** velges i **Beregn rente basert på**-feltet på siden **Definer rentekoder**.
 
-For eksempel vil angi en rentekode som vurderer 5 prosent rente for hver to måneder at fakturabetalingen overskrider transaksjonen forfallsdatoen, skriver du inn 2 i den **beregne rente hver** -feltet og velger **måned**.
+For eksempel, for å definere en rentekode som setter 5 prosent rente for annenhver måned som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 2 i feltet **Beregn renter hver** og velger **Måned**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Rentesatser basert på beløp
 Du kan definere rentesatser som beregner et bestemt beløp per valuta.
 -   Et rentebeløp angis for hver valuta i rentekoden.
 -   Valgfrie rentebeløpsgrenser kan angis.
--   ** Beløp ** er valgt i den **beregner renten som er basert på** i den **Sett opp rentekoder** siden.
+-   **Beløp** velges i **Beregn rente basert på**-feltet på **Definer rentekoder**-siden.
 
-For eksempel vil angi en rentekode som vurderer interesse 25,00 for hver 20 dager at fakturabetalingen overskrider transaksjonen forfallsdatoen, skriver du inn 20 i den **beregne rente hver** -feltet og velger **dag**.
+For eksempel, for å definere en rentekode som setter en rente på 25,00 for hver 20. dag som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 20 i feltet **Beregn renter hver** og velger **Dag**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Rentesatser basert på intervaller
 Du kan definere rentesatser som varierer avhengig av forfalt beløp, antall dager beløpet er forsinket eller antall måneder beløpet er forsinket.
@@ -73,7 +76,7 @@ Du definerer en rentekode som setter rente én gang for hver tredje måned faktu
 
 Slik definerer du intervallinformasjonen.
 
-| **From value** | **Interest value** |
+| **Fra verdi** | **Renteverdi** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Du definerer en rentekode som setter rente én gang for hver 15. dag fakturabeta
 
 Slik definerer du intervallinformasjonen.
 
-| **From value** | **Interest value** |
+| **Fra verdi** | **Renteverdi** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | sept.                 |
@@ -115,7 +118,7 @@ Du definerer en rentekode som setter rente én gang for hver måned fakturabetal
 
 Slik definerer du intervallinformasjonen.
 
-| **From value** | **Interest value** |
+| **Fra verdi** | **Renteverdi** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Slik definerer du intervallinformasjonen.
 Rentekoder har gyldighet fra en dato. Hvis du vil endre rentesatsen, kan du opprette en **ny versjon** som gjelder fra og med en fremtidig dato.
 
 For å vise forskjellige versjoner, kan du bruke **Per dato**-menyvalget for å velge fristen. Du kan også velge **Vis alle poster** for å vise alle rentekoder på siden.
+
+
 
 

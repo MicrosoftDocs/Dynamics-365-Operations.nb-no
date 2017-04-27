@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurere et godkjenningstrinn i en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.
 
 Når du skal konfigurere et godkjenningstrinn i redigeringsprogrammet for arbeidsflyt, høyreklikker du godkjenningstrinnet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningstrinnet.
@@ -124,10 +127,10 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     </tr>
     <tr class="even">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil tilordne trinnet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil tilordne trinnet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil videresende dokumentet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil videresende dokumentet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
 
 5.  Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
 6.  Hvis brukerne i videresendingsbanen ikke svarer innen tidsfristen, vil systemet automatisk utføre en handling med dokumentet. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i kategorien **Avslutt handling**.
+
+
 
 
 

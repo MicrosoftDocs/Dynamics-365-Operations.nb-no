@@ -32,7 +32,7 @@ Denne artikkelen inneholder retningslinjer for bruk av total kostnadsfordeling (
 
 Totalkostnadfordeling (TKF) er en metode for å beregne kostnaden mellom hovedformelvaren for en partiordre og koproduktene som er definert for formelen. Denne metoden er dynamisk. Den beregner kostnaden som et veid gjennomsnitt mellom antallene som er ferdigmeldt for formelvaren, og koproduktene. Når TKF brukes, slipper du å se gjennom kostnadsfordelinger for hver partiordre. Hvis TKF ikke brukes, bruker formelberegningen eksisterende funksjonalitet.
 
-## <a name="using-tca-for-coproducts"></a>Ved hjelp av TCA for coproducts
+## <a name="using-tca-for-coproducts"></a>Bruke TKF for koprodukter
 Her er noen retningslinjer for bruk av TKF for koprodukter:
 
 -   Hvis du setter gllidebryteren **Total kostnadsfordeling** til **Ja** for en formelversjon, må koprodukter må ha en kostpris som er større enn 0 (null). Verdien kan hentes fra den aktive kostnadsversjonen for det samme området, eller for det første området for en formel som ikke er områdespesifikk. Denne betingelsen blir validert når formelen er godkjent.
@@ -46,7 +46,7 @@ Her er noen retningslinjer for bruk av TKF for koprodukter:
 -   Når en partiordre opprettes manuelt eller en planlagt partiordre blir autorisert, kopieres verdien for glidebryteren **Total kostnadsfordeling** for formelversjonen til partiordren. Du kan imidlertid endre denne innstillingen på partiordren. Hvis gliebryteren **Total kostnadsfordeling** er satt til **Nei** for formelversjonen og deretter endres til **Ja** for partiordren, endres metoden for kostnadsfordeling for hver linje som er satt til **Manuell**, til **TKF**. Kostnadsfordelingen **Ingen** forblir uendret. Hvis glidebryteren **Total kostnadsfordeling** er satt til **Ja** for formelversjonen og deretter endres til **Nei** for partiordren, endres metoden for kostnadsfordeling for hvert koprodukt som er satt til typen **Produksjon**, til **Manuell**. Enhver beregnet prosent for kostnadsfordeling forblir uendret.
 -   Siden **Kostnadsfordeling for koprodukt** viser den beregnede kostnadsfordelingsprosenten. Du kan åpne denne siden fra **Partiordre**-siden. Denne informasjonen er nyttig når produktene og antallene som er rapportert, er forskjellig fra de planlagte eller påbegynte antallene i partiordren. Når kostnaden er fullført, vises disse nye prosentvise fordelingene fra TKF på siden **Kostnadsfordeling for koprodukt**.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Beregning av byrde for biprodukter borte
+## <a name="calculating-the-burden-for-byproducts"></a>Beregning av belastningen for biprodukter
 Feltet **Kostnadsfordeling for biprodukt** på **Koprodukter**-siden er et opplistingsfelt som bare brukes for biprodukter. For koprodukter er verdien i dette feltet alltid **Ingen**. For biproduktlinjer bestemmer dette feltet hvordan kostnadsbeløpet for biproduktlinjen blir lagt til den totale kostnaden for produksjonen. Følgende alternativer er tilgjengelige:
 
 -   **Ingen** – Intet beløp blir lagt til den totale kostnaden for produksjonen for denne biproduktlinjen.

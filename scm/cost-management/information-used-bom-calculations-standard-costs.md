@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bom-calculations-with-standard-costs"></a>Stykklisteberegninger med standardkostnader
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Informasjonen om innkjøpte varer som brukes i stykklisteberegninger for standard kostpris, er blant annet:
@@ -78,6 +81,8 @@ Informasjonen om etterkalkuleringsversjonen som brukes i stykklisteberegninger f
 -   Innholdet i etterkalkuleringsversjonen må inkludere kostnader − Innholdet må inkludere kostnader. Om ønskelig kan det inkludere salgspriser, slik at foreslåtte salgspriser kan beregnes for produserte varer.
 
 Det kan angis flere kilder til informasjon når en stykklisteberegning initialiseres. Dette inkluderer området, beregningsdatoen og etterkalkuleringsversjonen.
+
+
 
 
 

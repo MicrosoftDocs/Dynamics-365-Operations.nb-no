@@ -1,6 +1,6 @@
 ---
 title: "Konfigurere globale adressebøker"
-description: "Denne artikkelen beskriver vurderinger og beslutninger som du må gjøre i planleggingsprosessen, før du setter opp og konfigurere den globale adresseboken og eventuelle flere adressebøker i Microsoft Dynamics 365 for operasjoner. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet."
+description: "Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-global-address-books"></a>Konfigurere globale adressebøker
 
-Denne artikkelen beskriver vurderinger og beslutninger som du må gjøre i planleggingsprosessen, før du setter opp og konfigurere den globale adresseboken og eventuelle flere adressebøker i Microsoft Dynamics 365 for operasjoner. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
 
 <a name="global-address-book"></a>Global adressebok
 -------------------
@@ -61,6 +64,8 @@ Når du oppretter den globale adresseboken, kan du opprette flere adressebøker 
 Du kan opprette adressebøker når som helst, og du kan også angi sikkerhetsparametere for adressebøkene når som helst. Du trenger ikke angi tilgangsrettigheter for en adressebok, men hvis du ikke gjør det, kan alle ansatte i organisasjonen se alle partsposter i denne adresseboken. Du kan definere tilgangsrettigheter til partsposter via adressebøker. Sikkerhetsrettigheter er basert på team. Denne tilnærmingen sikrer at bare arbeidere som er tilordnet et team som har tilgang til en adressebok, kan vise partipostene i denne adresseboken. Du må velge teamene som har tilgang til hver adressebok. For hver adressebok kan du angi tilgangsrettigheter som kan gi eller nekte tilgang for bestemte team. Hvis du gir et team rettigheter til en adressebok, kan alle medlemmer av teamet vise postene i adresseboken. Hvis du ikke gir et team tilgang til en adressebok, kan medlemmer av teamet ikke vise adresseboken eller innholdet. **Beslutning:**
 
 -   Hvilke team skal ha tilgang til hver nye adressebok du vil opprette?
+
+
 
 
 

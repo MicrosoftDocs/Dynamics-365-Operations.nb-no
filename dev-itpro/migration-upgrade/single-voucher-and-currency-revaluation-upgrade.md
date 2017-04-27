@@ -1,6 +1,6 @@
 ---
-title: Enkelt bilag og valuta omvurdering oppgradering for Microsoft Dynamics 365 for operasjoner versjon 1611
-description: "Noen organisasjoner angi journaler som inneholder en enkelt bilag som har mer enn én kunde eller leverandør, og de også kjøre kunder eller forretningsforbindelser skyldig utenlandsk valuta omvurdering. Dette emnet beskriver fremgangsmåten som disse organisasjonene bør følge når de oppgraderer til Microsoft Dynamics 365 for operasjoner versjon 1611."
+title: Oppgradering av enkelt bilag og revaluering av valuta for Microsoft Dynamics 365 for Operations versjon 1611
+description: "Noen organisasjoner angi journaler som inneholder ett enkelt bilag som har mer enn én kunde eller leverandør, og de kjører også prosess for revaluering av utenlandsk valuta for kunder eller leverandører. Dette emnet beskriver fremgangsmåten som disse organisasjonene bør følge når de oppgraderer til Microsoft Dynamics 365 for Operations versjon 1611."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Enkelt bilag og valuta omvurdering oppgradering for Microsoft Dynamics 365 for operasjoner versjon 1611
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Oppgradering av enkelt bilag og revaluering av valuta for Microsoft Dynamics 365 for Operations versjon 1611
 
-Noen organisasjoner angi journaler som inneholder en enkelt bilag som har mer enn én kunde eller leverandør, og de også kjøre kunder eller forretningsforbindelser skyldig utenlandsk valuta omvurdering. Dette emnet beskriver fremgangsmåten som disse organisasjonene bør følge når de oppgraderer til Microsoft Dynamics 365 for operasjoner versjon 1611.
+Noen organisasjoner angi journaler som inneholder ett enkelt bilag som har mer enn én kunde eller leverandør, og de kjører også prosess for revaluering av utenlandsk valuta for kunder eller leverandører. Dette emnet beskriver fremgangsmåten som disse organisasjonene bør følge når de oppgraderer til Microsoft Dynamics 365 for Operations versjon 1611.
 
-Bruk følgende fremgangsmåte når du oppgraderer til Microsoft Dynamics 365 for operasjoner versjon 1611.
+Bruk fremgangsmåten nedenfor når du oppgraderer til Microsoft Dynamics 365 for Operations versjon 1611.
 
-1.  Før du oppgraderer til Dynamics 365 for operasjoner, kjøre revaluering prosessene fremmed valuta for kunder og leverandører. Angi de **metoden** feltet til **fakturadato**. Det opprettes en revalueringstransaksjon som reverserer de siste revalueringen av utenlandsk valuta. Det er derfor verdsatt deres opprinnelige regnskapsvalutaen de åpne transaksjonene.
-2.  Oppgrader til Dynamics 365 for operasjoner versjon 1611.
-3.  Kjør utestående fordringer og kontoer skyldig utenlandsk valuta omvurdering prosesser på nytt. Denne gangen, angir du **metoden** feltet til **Standard**. Det opprettes en ny revalueringstransaksjon som er basert på gjeldende valutakurser. Denne transaksjonen registreres urealisert tap/vinning og den riktige leverandørsammendrag.
+1.  Kjør prosessene for revaluering av utenlandsk valuta for kunder og leverandører før du oppgraderer til Dynamics 365 for Operations. Sett **Metode**-feltet til **Fakturadato**. Det opprettes en revalueringstransaksjon som tilbakefører den siste revalueringen av utenlandsk valuta. De åpne transaksjonene verdsettes derfor etter sin opprinnelige regnskapsvaluta.
+2.  Oppgrader til Dynamics 365 for Operations versjon 1611.
+3.  Kjør prosessene for revaluering av utenlandsk valuta for leverandører og kunder på nytt. Denne gangen setter du **Metode**-feltet til **Standard**. Det opprettes en ny revalueringstransaksjon som er basert på gjeldende valutakurser. Denne transaksjonen registreres urealisert fortjeneste/tap og riktig finanskonto.
 
 
 

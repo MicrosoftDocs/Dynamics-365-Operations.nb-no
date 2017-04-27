@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
+[!include[banner](../includes/banner.md)]
+
+
 Arbeidsflytprosessen flytter innkjøpsrekvisisjoner gjennom vurderingsprosessen, fra den innledende statusen Utkast til den endelige statusen Godkjent. Når en innkjøpsrekvisisjon sendes til gjennomgang, starter arbeidsflytprosessen. Når en innkjøpsrekvisisjon er godkjent, kan en bestilling genereres for innkjøpsrekvisisjonslinjene og sendes til leverandøren for å bli oppfylt.
 
 Før en innkjøpsrekvisisjon kan sendes til gjennomgang, må en arbeidsflyt konfigureres. Arbeidsflytprosessen kan inneholde ett eller flere gjennomgangstrinn i en hvilken som helst rekkefølge. Arbeidsflytprosessen kan også konfigureres slik at den hopper over gjennomgangsoppgavene og godkjenner innkjøpsrekvisisjonen automatisk. Du kan konfigurere arbeidsflyten til å sende innkjøpsrekvisisjonen som ett enkelt dokument, eller du kan distribuere individuelle innkjøpsrekvisisjonslinjene til de riktige kontrollørene. Du kan også opprette et scenario der innkjøpsrekvisisjonen rutes som ett dokument til noen kontrollører, og valgte innkjøpsrekvisisjonslinjer rutes til andre kontrollører.  
@@ -106,12 +109,14 @@ Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt,
 <a name="see-also"></a>Se også
 --------
 
-[Opprette en innkjøpsrekvisisjon for forbruk (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Opprette en rekvisisjon for forbruk (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Arbeidsflyter for innkjøp og leverandører](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Oversikt over innkjøpsrekvisisjon](purchase-requisitions-overview.md)
+
+
 
 

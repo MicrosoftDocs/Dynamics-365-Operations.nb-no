@@ -1,6 +1,6 @@
 ---
-title: "Project kostnadsbelastning på kjøpsmottak"
-description: "Dette emnet beskriver hvordan påløpte kostnader for prosjekt fra innkjøp mottak kan spores i Microsoft Dynamics 365 for operasjoner."
+title: "Påløpte prosjektkostnader på kjøpsmottak"
+description: "Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Project kostnadsbelastning på kjøpsmottak
+# <a name="project-cost-accrual-on-purchase-receipts"></a>Påløpte prosjektkostnader på kjøpsmottak
 
-Dette emnet beskriver hvordan påløpte kostnader for prosjekt fra innkjøp mottak kan spores i Microsoft Dynamics 365 for operasjoner. 
+[!include[banner](../includes/banner.md)]
 
-Fakturaer for et prosjekt kommer ofte senere enn varene og tjenestene er levert, som kan ha betydelig innvirkning på prosjekt viktige ytelsesindikatorer (KPIer). Det er viktig å kunne spore disse transaksjonene i både økonomisk og project-rapporter.
 
-Følgende eksempelscenario illustrerer dette. 
+Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Operations. 
 
-Konsulenttjenester for Contoso har startet et nytt prosjekt for sky-distribusjon. Det opprettes en bestilling for å kjøpe en datamaskin for prosjektet. Datamaskinen vil koste $1500 og installeringstjenester vil koste $150. Leverandøren har levert og installert på datamaskinen, men fakturaen har nådd ikke Contoso konsulenttjenester. Prosjektlederen vil se prosjektet kostnadsbelastning for $1650 før fakturaen er levert. Denne kostnaden skal også gjenspeiles i selskapets måned slutten regnskapsoppgjør. 
+Fakturaer for et prosjekt ankommer ofte etter at varene og tjenestene er levert, noe som kan ha betydelig innvirkning på prosjektets nøkkelytelsesindikatorer (KPI-er). Det er viktig å kunne spore disse transaksjonene i både økonomisk rapporter og prosjektrapporter.
 
-Påløpne kostnader må være registrert på økonomiske nivå og prosjektnivå for rapportering. Økonomisk oppdatering av produkt-mottaket kan spores i Dynamics 365 for operasjoner, for kategoriene element og innkjøp. 
+Eksemplet nedenfor illustrerer dette. 
 
-For varer, på den **leverandørparametere** velger du **postere produktkvitteringer til finans** alternativet.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+Contoso Consulting har startet et nytt skydistribusjonsprosjekt. Det opprettes en bestilling for å kjøpe en datamaskin for prosjektet. Datamaskinen vil koste USD 1 500, og installeringstjenester vil koste USD 150. Leverandøren har levert og installert datamaskinen, men fakturaen har ennå ikke ankommet Contoso Consulting. Prosjektlederen vil gjerne se de påløpte prosjektkostnadene på USD 1 650 før fakturaen leveres. Denne kostnaden skal også gjenspeiles i selskapets regnskapsoppgjør ved månedsslutt. 
 
-For innkjøpskategorier på den **Kategoripolicyregelen** velger **kjøp** policyer, og velg **Avsett innkjøpsutgift ved mottak** for hver innkjøpskategori.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+De påløpte kostnadene må være registrert på finansnivå og prosjektnivå for rapporteringsformål. Den økonomiske oppdatering av produktmottaket kan spores i Dynamics 365 for Operations for vare- og innkjøpskategoriene. 
 
-Den **kjøpe utgift ikke-fakturert** og **kjøp belastning** kontoer i **Posteringsoppsett** vil bli brukt ved postering av bilag som er knyttet til produktkvitteringen.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
+For varer går du til siden **Leverandørparametere** og velger alternativet **Poster mottakssedler til finans**.
+[![Avsetninger1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
-Ved hjelp av denne samme scenario, la oss se hvordan postering av en produkt-tilgang vil ha innvirkning på finans- og prosjektinformasjon. 
+For innkjøpskategorier går du til siden **Kategoripolicyregel**, velger **Innkjøpspolicyer** og velger deretter **Avsett innkjøpsutgift ved mottak** for hver innkjøpskategori.
+[![Avsetninger2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
-**Trinn 1:** opprette og bekrefte en ny bestilling for prosjektet til å registrere innkjøp av en datamaskin for installasjon av $1500 og tjenester for $150.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+Kontoene **Innkjøpsutgift, ikke-fakturert** og **Innkjøp, avsetning** i **Posteringsoppsett** vil bli brukt ved postering av bilag som er knyttet til mottaksseddelen.
+[![Avsetninger3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
+
+La oss bruke det samme scenariet og se hvordan postering av en mottaksseddel vil ha innvirkning på finans- og prosjektinformasjon. 
+
+**Trinn 1:** Opprett og bekreft en ny bestilling for prosjektet for å registrere innkjøp av en datamaskin til USD 1 500 og installasjonstjenester til USD 150.
+[![Avsetninger4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Når bestillingen er bekreftet, blir det opprettet transaksjoner for den igangsatte kostnaden for prosjektet. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Avsetninger5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
-> Transaksjonene for den igangsatte kostnaden vil ha den **transaksjonsopprinnelse** -feltet satt til **bestillingen**. Opprette og bekrefter en bestilling opprettes ikke transaksjoner for et prosjekt. 
+> Transaksjonene for den igangsatte kostnaden vil feltet **Transaksjonsopprinnelse** satt til **Bestilling**. Oppretting og bekreftelse av en bestilling oppretter ikke transaksjoner for et prosjekt. 
 
-**Trinn 2:** levert varer og tjenester, og en produkt-bekreftelse er registrert. 
+**Trinn 2:** Varer og tjenester blir levert, og en mottaksseddel registreres. 
 
-Postering av en produkt-tilgang vil generere og postere et bilag i Finans. Bilaget debet kjøp utgifter, ikke-fakturert konto og kreditere inngående Avsetningskonto. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+Postering av en mottaksseddel vil generere og postere et bilag i Finans. Bilaget vil debitere kontoen Innkjøpsutgift, ikke-fakturert og kreditere kontoen Innkjøpsavsetning. 
+[![Avsetninger6](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
-> Postering av en produktkvittering bruker posteringsoppsettet for innkjøpskategorier og produkter, og ikke posteringsoppsettet for project-kategorier. Dette installasjonsprogrammet må justeres for å gjenspeile riktig økonomiske virkningen av Påløpte innkjøp. 
+> Postering av en mottaksseddel bruker posteringsoppsettet for innkjøpskategorier og produkter, og ikke posteringsoppsettet for prosjektkategorier. Oppsettet må justeres for å gjenspeile riktig økonomiske innvirkningen av Innkjøpsavsetning. 
 
-Det er mulig å tilordne innkjøpskategorier til prosjektkategorier på den **innkjøpskategori** siden.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+Det er mulig å tilordne innkjøpskategorier til prosjektkategorier på siden **Innkjøpskategori**.
+[![Avsetninger7](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
-**Trinn 3:** opprette en leverandørfaktura for utkast. 
+**Trinn 3:** Opprett et leverandørfakturautkast. 
 
-I Dynamics 365 for operasjoner påvirker postering av en produktkvittering ikke project-informasjon. For å unngå dette, kan du generere en leverandørfaktura utkast direkte etter bokføring av mottaket. Gå til den **bestillingen** siden &gt;**kategorien faktura**&gt;**generere**&gt;**faktura**. Dette oppretter en ventende fakturadokumentet som oppdaterer prosjektinformasjon. 
+I Dynamics 365 for Operations vil ikke postering av en produktkvittering påvirke prosjektinformasjonen. For å omgå dette kan du generere et leverandørfakturautkast direkte etter postering av mottaksseddelen. Gå til siden **Bestilling** &gt; kategorien **Faktura** &gt; **Generer** &gt; **Faktura**. Dette oppretter et ventende fakturadokumentet som oppdaterer prosjektinformasjonen. 
 
-Opprette en leverandørfaktura utkast genererer ventende prosjekttransaksjoner. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+Oppretting av et leverandørfakturautkast genererer ventende prosjekttransaksjoner. 
+[![Avsetninger8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
-I den **utført kostnaden** siden postene som er opprettet i trinn 1, vil bli lukket og nye oppføringer vil bli opprettet for å gjenspeile kostnader engasjement kommer fra den ventende leverandørfakturaen. Den **transaksjonsopprinnelse** -feltet for den igangsatte kostnaden vil bli satt til **leverandørfakturaen**.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+På siden **Igangsatt kost** vil poster som ble opprettet i trinn 1, bli lukket, og nye poster vil bli opprettet for å gjenspeile igansatt kost som kommer fra den ventende leverandørfakturaen. Feltet **Transaksjonsopprinnelse** for den igangsatte kostnaden vil bli satt til **Leverandørfaktura**.
+[![Avsetninger9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
-Leverandørfakturaen, forblir i en ventetilstand til faktiske leverandørfakturaen kommer.
+Leverandørfakturaen forblir i en ventetilstand til den faktiske leverandørfakturaen ankommer.
+
+
 
 

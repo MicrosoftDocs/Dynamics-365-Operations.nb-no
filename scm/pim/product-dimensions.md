@@ -1,6 +1,6 @@
 ---
 title: Produktdimensjoner
-description: "Det finnes fire produktdimensjoner - farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres."
+description: "Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Produktdimensjoner
 
-Det finnes fire produktdimensjoner - farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
+[!include[banner](../includes/banner.md)]
+
+
+Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
 
 Produktdimensjoner er egenskaper som brukes til å identifisere en produktvariant. Du kan bruke kombinasjoner av produktdimensjoner til å definere produktvariantene. Du må definere minst én produktdimensjon for en produktstandard for å opprette en produktvariant.
 Produktvarianter
 ----------------
 
-Produktvarianter omtales også som varer. En vare er et materielt produkt, som ikke er det samme som en tjeneste. Det er også mulig å definere en mal for produktet med tjenestetypen. Når du bruker tjenestetypen, kan du angi produktvarianter som omfatter tjenester. Du kan for eksempel angi en produktstandard for konsulentarbeid og produktvarianter for arbeid som utføres av seniorkonsulenter og juniorkonsulenter.
+Produktvarianter omtales også som varer. En vare er et materielt produkt, som ikke er det samme som en tjeneste. Det er også mulig å definere en produktstandard tjenestetypen. Når du bruker tjenestetypen, kan du angi produktvarianter som omfatter tjenester. Du kan for eksempel angi en produktstandard for konsulentarbeid og produktvarianter for arbeid som utføres av seniorkonsulenter og juniorkonsulenter.
 
 ## <a name="product-dimensions"></a>Produktdimensjoner
-Følgende produktdimensjoner er tilgjengelige: konfigurasjon, farge, størrelse og stil. En produktvariant kan genereres basert på produkt-dimensjonsverdier.
+Følgende produktdimensjoner er tilgjengelige: konfigurasjon, farge, størrelse og stil. En produktvariant kan genereres basert på produktdimensjonsverdiene.
 
-Produkt dimensjoner verdier slik for eksempel størrelse, farge og stil som kan opprettes på den **størrelse**, **farge** og **stil** sider, som er tilgjengelig fra følgende steder: **behandling av produktinformasjon**&gt;**Setup**&gt;**dimensjon og variant grupper**&gt;**farger/størrelser/stiler**. Produktdimensjonsverdier for konfigurasjonsdimensjonen opprettes vanligvis ved hjelp av produktkonfiguratoren eller den dimensjonsbaserte konfiguratoren. Produktdimensjoner kan også opprettes og vedlikeholdes på **Produktdimensjoner**-siden, som er tilgjengelig fra følgende steder:
--   Klikk **produktinformasjonsbehandling**&gt;**produkter**&gt;**produktstandarder**. På den **handlingsruten**, klikker du **produktdimensjoner**.
--   Klikk **produktinformasjonsbehandling**&gt;**produkter**&gt;**alle produkter og produktstandarder**. Velg en produktstandard. På den **handlingsruten**, klikker du **produktdimensjoner**.
--   Klikk **produktinformasjonsbehandling**&gt;**utgitt produkter**. Velg en produktstandard. På den **handlingsruten**, klikker du **produkt**. I gruppen **Produktstandard** klikker du **Produktdimensjoner**.
+Produktdimensjonsverdier som størrelse, farge og stil kan opprettes på sidene **Størrelse**, **Farge** og **Stil**, som er tilgjengelige fra følgende steder: **Produktinformasjonsbehandling** &gt; **Oppsett** &gt; **Dimensjons- og variantgrupper** &gt; **Størrelser/farger/stiler**. Produktdimensjonsverdier for konfigurasjonsdimensjonen opprettes vanligvis ved hjelp av produktkonfiguratoren eller den dimensjonsbaserte konfiguratoren. Produktdimensjoner kan også opprettes og vedlikeholdes på **Produktdimensjoner**-siden, som er tilgjengelig fra følgende steder:
+-   Klikk på **Produktinformasjonsbehandling** &gt; **Produkter** &gt; **Produktstandarder**. I **handlingsruten** klikker du på **Produktdimensjoner**.
+-   Klikk på **Produktinformasjonsbehandling** &gt; **Produkter** &gt; **Alle produkter og produktstandarder**. Velg en produktstandard. I **handlingsruten** klikker du på **Produktdimensjoner**.
+-   Klikk på **Behandling av produktinformasjon** &gt; **Frigitte produkter**. Velg en produktstandard. I **handlingsruten** klikker du på **Produkt**. I gruppen **Produktstandard** klikker du **Produktdimensjoner**.
 
 Antallet varianter du kan opprette for en vare, er begrenset av antallet mulige kombinasjoner av produktdimensjoner.
 | **Tips! **                                                                                                                                              |
@@ -64,6 +67,8 @@ Et firma selger dongeribukser. Varen dongeribukser bruker produktdimensjonene Fa
 | Brun | L    |
 | Brun | XL   |
 | Brun | XXL  |
+
+
 
 
 

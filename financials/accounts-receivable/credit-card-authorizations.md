@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Oppsett av kredittkort, autorisasjon og registrering
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over kredittkortautorisering i Microsoft Dynamics AX. Den inneholder informasjon om å sette opp en betalingstjeneste, legge til et kredittkort til en salgsordre og annullere en autorisering.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Konfigurere kredittkortbetalingstjenesten
@@ -55,7 +58,7 @@ Du kan kreve verdi for kortbekreftelse, som noen ganger kalles kortets sikkerhet
 
 ### <a name="address-verification"></a>Adressebekreftelse
 
-Informasjon om adressebekreftelse sendes alltid til betalingsleverandøren. Du kan bestemme hvor mye informasjon som er nødvendig for en transaksjon som skal godtas. Husk å sjekke med leverandøren din for å finne ut om den godtar denne informasjonen. Her er alternativene for adressebekreftelse:
+Informasjon om adressebekreftelse sendes alltid til betalingsleverandøren. Du kan bestemme hvor mye informasjon som er nødvendig for at en transaksjon skal godtas. Husk å ta kontakt med leverandøren din for å finne ut om de godtar denne informasjonen. Her er alternativene for adressebekreftelse:
 -   **Alltid godta transaksjon** – godta transaksjonen uavhengig av resultatet av adressebekreftelse.
 -   **Kontoinnehaver** – sammenlign kortinnehaverens navn fra transaksjonen med kredittkortfirmaets informasjon.
 -   **Faktureringsadresse** – sammenlign kortinnehaverens navn og faktureringsadresse fra transaksjonen med kredittkortfirmaets informasjon.
@@ -68,10 +71,12 @@ For hver kredittkorttype som støttes, kan du angi nivået for datastøtte. Niv�
 -   **Nivå 3** – overfør all nivå 2-informasjon, pluss ordrelinjeinformasjon.
 
 ## <a name="partial-payments"></a>Delbetalinger
-Hvis du leverer en del av en bestilling, mengden av delvis bestilling er fanget og autorisering, som var for hele ordren, er lukket. En ny godkjenning sendes deretter til det gjenstående beløpet for ordren som ikke er levert.
+Hvis du sender en del av en ordre, registreres beløpet for den delvise ordren, og autorisasjonen, som var for beløpet for hele ordren, lukkes. En ny godkjenning sendes deretter for det gjenstående beløpet for ordren som ikke er levert.
 
 ## <a name="voiding-an-authorization"></a>Annullere en autorisasjon 
 Hvis du vil annullere en kredittkortautorisasjon, kan du endre betalingsmåten til en annen metode som ikke har en type kredittkort
+
+
 
 
 

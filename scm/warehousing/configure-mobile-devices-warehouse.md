@@ -1,5 +1,5 @@
 ---
-title: Definere mobile enheter for lageret arbeid
+title: Konfigurere mobilenheter for lagerarbeid
 description: "Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobile enheter for lageret arbeid
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
 
 Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet.
 
@@ -35,7 +35,7 @@ Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere
 -   Opprett arbeid som skal utføres via en annen prosess. Mottak av en vare for en bestilling kan for eksempel opprette plasseringsarbeid for en annen arbeider.
 -   Utføre arbeid som ble opprettet av en annen prosess (eksisterende arbeid), for eksempel plasseringsarbeid som ble opprettet da du mottok en vare for en bestilling.
 
-Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi de **modus** feltet til **indirekte**. En liste over **Aktivitetskode** alternativer og deretter blir tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet er for. Hvis du vil opprette et menyelement for å generere lager arbeid, kan du angi de **modus** feltet til **arbeide**. En liste over **arbeide prosessen med å opprette** alternativer og deretter blir tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**, og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. **Merk:** flere felt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for å åpne menyen element, og om menyelementet brukes til å utføre eksisterende arbeid. For informasjon om ekstra feltvalgene, kan du se delen "mer element menyalternativer" senere i denne artikkelen.
+Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus**-feltet til **Indirekte**. En liste over **Aktivitetskode**-alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess**-alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**, og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. **Merk:** Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i denne artikkelen.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menyelementer for aktiviteter og forespørsler
 Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du opprette et menyelement for å utføre en generell aktivitet eller en spørring som ikke fører til arbeid. Disse omfatter for eksempel ny utskrift av nummerskiltetiketter og forespørsler om varene på en lokasjon. Følgende tabell viser alternativene som er tilgjengelige.
@@ -190,7 +190,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurere menyelementer for å behandle eksisterende arbeid
-I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Noen flere alternativer deretter blir tilgjengelige på den **Generelt** i kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere klasser for arbeid på den **arbeider klassen** hurtigfanen. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige.
+I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Noen tilleggsalternativer blir deretter tilgjengelige i **Generelt**-kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigfanen **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige.
 
 <table>
 
@@ -210,7 +210,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="even">
 <td>Systemstyrt</td>
-<td>Microsoft Dynamics-365 for operasjoner kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>System rettet arbeid</strong> i handlingsruten til å åpne den <strong>System-rettet sorteringsrekkefølge</strong> -siden der du kan definere sorteringskriterier for arbeid. Sorteringskriteriene styre rekkefølgen som arbeideren utfører arbeid i. Du kan legge til så mange kriterier som du krever.</td>
+<td>Microsoft Dynamics 365 for Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
 </tr>
 <tr class="odd">
 <td>Brukerstyrt</td>
@@ -230,7 +230,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="even">
 <td>Validert brukerstyrt</td>
-<td>Arbeideren velger arbeidet som skal utføres når arbeid er tilknyttet en større enhet, for eksempel en last eller forsendelse. Arbeideren bestemmer rekkefølgen som elementene er plukket i. Hvis du velger dette alternativet, er følgende felt obligatoriske:
+<td>Arbeideren velger arbeidet som skal utføres når arbeid er tilknyttet en større enhet, for eksempel en last eller forsendelse. Arbeideren bestemmer hvilken rekkefølge varene skal plukkes i. Hvis du velger dette alternativet, er følgende felt obligatoriske:
 <ul>
 <li><strong>Validert brukerstyrt felt</strong> – Velg feltet som arbeideren skanner for å gruppere arbeidet.</li>
 <li><strong>Validert brukerstyrt etikett</strong> – Angi teksten som informerer arbeideren om hva som skal skannes når plukkarbeid grupperes av systemet.</li>
@@ -271,7 +271,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="even">
 <td>Forankring</td>
-<td>Velg dette alternativet for å tillate arbeidere å angi en lokasjon som overstyrer den foreslåtte oppsamlings- eller lastingslokasjonen. Alt gjenstående plasseringsarbeid sendes til den nye lokasjon. Dette alternativet er for eksempel nyttig når en arbeider må plassere varene for ordre 1 på en oppsamlingslokasjon ved Sone 1, men ikke kan gjøre det fordi en tidligere last ikke er fjernet fra lokasjonen. I stedet for å vente på 1 Dock oppsamling plasseringen blir tilgjengelig, arbeideren kan bestemmer deg for å bruke oppsamling plasseringen for Dock-2. I slike tilfeller overstyrer arbeideren oppsamling plassering. Plasseringslokasjonen hvor alle de andre elementene for arbeidsordren oppdateres deretter til oppsamlingslokasjonen for Sone 2. Hvis du velger dette alternativet, må du angi <strong>Forankre etter</strong>-feltet.</td>
+<td>Velg dette alternativet for å tillate arbeidere å angi en lokasjon som overstyrer den foreslåtte oppsamlings- eller lastingslokasjonen. Alt gjenstående plasseringsarbeid sendes til den nye lokasjon. Dette alternativet er for eksempel nyttig når en arbeider må plassere varene for ordre 1 på en oppsamlingslokasjon ved Sone 1, men ikke kan gjøre det fordi en tidligere last ikke er fjernet fra lokasjonen. I stedet for å vente på at oppsamlingslokasjonen ved Sone 1 blir tilgjengelig, kan arbeideren bestemme å bruke oppsamlingslokasjonen ved Sone 2. I slike tilfeller overstyrer arbeideren oppsamlingslokasjonen. Plasseringslokasjonen hvor alle de andre elementene for arbeidsordren oppdateres deretter til oppsamlingslokasjonen for Sone 2. Hvis du velger dette alternativet, må du angi <strong>Forankre etter</strong>-feltet.</td>
 </tr>
 <tr class="odd">
 <td>Forankre etter</td>
@@ -380,7 +380,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Arbeidsmalkode</td>
-<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. For eksempel hvis du mottar et element for en bestilling, vil lagerplassering arbeidet bli generert basert på malen arbeid. Hvis du ikke merker en mal for arbeid, tilordner Microsoft Dynamics 365 for operasjoner en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
+<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Microsoft Dynamics 365 for Operations en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 
 [Visningsinnstillinger for lagermobilenheten](change-warehouse-mobile-device-displays.md)
 
-[Definer et menyelement for mobil enhet for å fullføre arbeidet av typen bestilling (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Definer et menyelement for mobil enhet til å registrere mottatte varer (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Definere et menyelement for mobilenhet for å registrere mottatte varer (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

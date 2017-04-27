@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Purringer og importinkassoer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.
 
 <a name="letters-of-credit"></a>Purringer
 -----------------
 
-Purringer, brukes for internasjonale transaksjoner og garanterer at betalinger skal foretas. En rembursen er en avtale som utstedes av en bank, der banken godtar å garantere betaling på vegne av et kjøp, forutsatt at vilkårene i avtalen mellom kjøper og selger er oppfylt. En rembursen er også referert til som en documentary kreditt (DC).
+Remburser brukes i internasjonale transaksjoner og bidrar til å garantere at betalinger blir foretatt. En remburs er en avtale som utstedes av en bank, der banken godtar å garantere betaling på vegne av en kjøper, så lenge vilkårene i avtalen mellom kjøper og selger er oppfylt. En remburs også omtales som en vareremburs eller bankremburs.
 
 Når det gjelder en importremburs, er den juridiske enheten kjøperen eller søkeren for rembursen. Når det gjelder en eksportremburs, er den juridiske enheten selgeren eller mottakeren av rembursen. Følgende parter er involvert i en remburs:
 
@@ -50,5 +53,7 @@ En remburs kan enten være **gjenkallelig** eller **ugjenkallelig**. En remburs 
 En importinkasso er en avtale mellom banken og eksportøren (selgeren) der banken avtaler å levere forsendelsesdokumentasjonen til den internasjonale importøren (kjøperen). Banken forventes å levere forsendelsesdokumentasjonen ved mottak av kontant betaling for de sendte varene, eller ved mottak av en signert anvisning mot betalingen. 
 
 En importinkasso er med på å garantere at selgeren betales når kjøperen henter forsendelsesdokumentene for å motta de importerte varene.
+
+
 
 

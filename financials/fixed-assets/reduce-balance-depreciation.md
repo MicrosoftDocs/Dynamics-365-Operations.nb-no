@@ -1,9 +1,9 @@
 ---
-title: Redusere saldoavskrivning
+title: Redusere saldoavskriving
 description: Denne artikkelen gir en oversikt over redusert saldoverdimetode for avskrivning.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Redusere saldoavskrivning
+# <a name="reduce-balance-depreciation"></a>Redusere saldoavskriving
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen gir en oversikt over redusert saldoverdimetode for avskrivning.
 
@@ -57,7 +60,7 @@ Hvis du velger for eksempel Årlig, posteres den årlige avskrivningen bare én 
 
 ### <a name="fiscal"></a>Skattemessig
 
-Hvis du velger Regnskapsår i Avskrivningsår-feltet, brukes den lineære avskrivningsmetoden. Det beregnes basert på regnskapsåret, som er definert på siden Regnskapskalendere for den økonomiske kalenderen som er valgt på finanssiden. For regnskapsåret juli 1 til 30. juni starter for eksempel avskrivningsberegningen juli 1. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres for hver regnskapsperiode. Lengden på det neste regnskapsåret baseres på regnskapsperiodene som du definerer når du oppretter et nytt regnskapsår på siden med regnskapskalendere.
+Hvis du velger Regnskapsår i Avskrivningsår-feltet, brukes den lineære avskrivningsmetoden. Det beregnes basert på regnskapsåret, som er definert på siden Regnskapskalendere for den økonomiske kalenderen som er valgt på finanssiden. For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres for hver regnskapsperiode. Lengden på det neste regnskapsåret baseres på regnskapsperiodene som du definerer når du oppretter et nytt regnskapsår på siden med regnskapskalendere.
 
 
 Hvis du velger Regnskapsår, er følgende alternativer tilgjengelige i Periodefrekvens-feltet:
@@ -73,12 +76,14 @@ Ifølge Saldoverdi-metoden beregnes 30 prosent av avskrivningsgrunnlaget (netto 
 
 | Periode | Beregning av årlig avskrivningsbeløp | Netto bokverdi på slutten av året |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | (11,000 - 1,000) \* 30% = 3,000           | (11 000 - 1 000) - 3 000 = 7 000      |
-| År 2 | (7,000 - 1,000) \* 30% = 1,800            | (7 000 -1 800) = 5 200                |
-| År 3 | (5,200 - 1,000) \* 30% = 1,260            | (5 200 - 1 260) = 3 940               |
+| År 1 | (11 000 - 1 000) \* 30 % = 3 000           | (11 000 - 1 000) - 3 000 = 7 000      |
+| År 2 | (7 000 - 1 000) \* 30 % = 1 800            | (7 000 -1 800) = 5 200                |
+| År 3 | (5 200 - 1 000) \* 30 % = 1 260            | (5 200 - 1 260) = 3 940               |
 
  
 -
+
+
 
 
 

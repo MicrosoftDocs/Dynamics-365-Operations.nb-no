@@ -47,7 +47,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   4a. Fysisk lagermottak av et antall på 1 til kost USD 30,00 per stykk.
 -   4b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   5a. Fysisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
--   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
+-   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med FIFO-metoden blir den først økonomisk oppdaterte avgangen utlignet mot den først økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD -10,00.
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner. Illustrasjonene nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![FIFO uten Ta med fysisk verdi](./media/fifowithoutincludephysicalvalue.gif) **Nøkkel til diagrammet**
@@ -55,16 +55,16 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatetQuantity@Unitprice.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>FIFO når alternativet Ta med fysisk verdi brukes
-Hvis den **ta med fysisk verdi** er merket for et element i den **varemodellgruppe** siden, bruker systemet mottakstransaksjoner for både fysiske og økonomiske til å beregne løpende gjennomsnittlig kostpris. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi**, vil lagerlukking med FIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. Illustrasjonen nedenfor viser disse transaksjonene:
+Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på siden **Varemodellgruppe**, bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi**, vil lagerlukking med FIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kost USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kost USD 10,00 per stykk.
@@ -83,16 +83,16 @@ Transaksjon 5b utlignes mot 1b. Det vi være en justering på negative USD 11,25
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatetQuantity@Unitprice.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="fifo-with-marking"></a>FIFO med merking
-Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. La oss si at kundeserviceavdelingen godtar en hasteordre fra en viktig kunde. Fordi dette er en hasteordre, må du betale en høyere pris for denne varen for å imøtekomme kundens forespørsel. Du må kontrollere at denne lagerkostnaden gjenspeiles i bidraget, eller kostnader for solgte varer (Vareforbruk), for denne salgsordrefakturaen. Når bestillingen posteres, skjer tilgangen til lager med en kost på USD 120,00. Hvis dette salgsordredokumentet merkes mot bestillingen før følgeseddelen eller fakturaen posteres, vil solgte varers kost (Vareforbruk) være USD 120,00, ikke det gjeldende glidende gjennomsnittet av varens kost. Hvis bestillingens følgeseddel eller faktura posteres før merkingen skjer, vil solgte varers kost posteres med det glidende gjennomsnittet av kostprisen. Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. Når en tilgangstransaksjon samsvarer med en avgangstransaksjon, vil vurderingsmetoden som er definert i lagermodellgruppen ignoreres, og systemet utligner disse transaksjonene mot hverandre. Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. Du kan også merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. Illustrasjonen nedenfor viser disse transaksjonene:
+Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. La oss si at kundeserviceavdelingen godtar en hasteordre fra en viktig kunde. Fordi dette er en hasteordre, må du betale en høyere pris for denne varen for å imøtekomme kundens forespørsel. Du må kontrollere at denne lagerkostnaden gjenspeiles i bidraget, eller kostnader for solgte varer (Vareforbruk), for denne salgsordrefakturaen. Når bestillingen posteres, skjer tilgangen til lager med en kost på USD 120,00. Hvis dette salgsordredokumentet merkes mot bestillingen før følgeseddelen eller fakturaen posteres, vil solgte varers kost (Vareforbruk) være USD 120,00, ikke det gjeldende glidende gjennomsnittet av varens kost. Hvis bestillingens følgeseddel eller faktura posteres før merkingen skjer, vil solgte varers kost posteres med det glidende gjennomsnittet av kostprisen. Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. Når en tilgangstransaksjon samsvares med en avgangstransaksjon, ses det bort fra vurderingsmetoden som er definert i varemodellgruppen, og systemet utligner disse transaksjonene mot hverandre. Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. Du kan også merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kost USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kost USD 10,00 per stykk.
@@ -111,11 +111,11 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil verdien til lagertransaksjonen som er angitt i formatetQuantity@Unitprice.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
 -   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 

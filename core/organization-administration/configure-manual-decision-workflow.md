@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuell beslutning i en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer egenskapene i en manuell beslutning.
 
 Når du skal konfigurere en manuell beslutning i redigeringsprogrammet for arbeidsflyt, høyreklikker du den manuelle beslutningen og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den manuelle beslutningen.
@@ -95,8 +98,8 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
 
 1.  I den venstre ruten klikker du **Varslinger**.
 2.  Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:
-    -   **\[Valg 1\]** – den tilordnede brukeren har valgt **\[valg 1\]**.
-    -   **\[Alternativ 2\]** – den tilordnede brukeren har valgt **\[valg 2\]**.
+    -   **\[Valg 1\]** – Den tilordnede brukeren har valgt **\[Valg 1\]**.
+    -   **\[Valg 2\]** – Den tilordnede brukeren har valgt **\[Valg 2\]**.
     -   **Deleger** – Den tilordnede brukeren har tilordnet beslutningen til en annen bruker.
     -   **Eskaler** – Den tilordnede brukeren har ikke tatt beslutningen innen fristen.
 
@@ -148,10 +151,10 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     </tr>
     <tr class="even">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil tilordne beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil tilordne beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <li>I <strong>Køtype</strong>-listen velger du <strong>Betingede arbeidselementkøer</strong>.</li>
     <li>I <strong>Kønavn</strong>-listen velger du <strong>Betinget kø</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Merk:</strong> dette alternativet brukes for bare noen få arbeidsflyter, for eksempel saksbehandling.</td>
+    </ol>
+    <strong>Merk</strong>: Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     |----------|----------------------------|
     | 1        | Tilordne til: Doris           |
     | 2        | Tilordne til: Elin            |
-    | 3        | Endelig handling: \[valg 1\] |
+    | 3        | Endelig handling: \[Valg 1\] |
 
-    I dette eksempelet tilordnes den forfalte beslutningen til Doris. Hvis Doris ikke tar beslutningen innen tidsfristen, tilordnes beslutningen til Elin. Hvis Elin ikke gjøre beslutningen i tildelt tidsrom, velger systemet **\[valg 1\]** som beslutningen.
+    I dette eksempelet tilordnes den forfalte beslutningen til Doris. Hvis Doris ikke tar beslutningen innen tidsfristen, tilordnes beslutningen til Elin. Hvis Elin ikke tar beslutningen innen tidsfristen, velges **\[Valg 1\]** som beslutningen.
 3.  Klikk **Legg til videresending** for å legge til en bruker i videresendingsbanen. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 4.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil videresende beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil videresende beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt
     -   **År** – Velg dagen, uken og måneden da beslutningen må være tatt. Du vil for eksempel at beslutningen skal tas innen fredag i den tredje uken i desember.
 
 4.  Hvis tidsgrensen overskrides, vil systemet ta beslutningen. I listen **Handling** velger du alternativet som systemet skal velge.
+
+
 
 
 

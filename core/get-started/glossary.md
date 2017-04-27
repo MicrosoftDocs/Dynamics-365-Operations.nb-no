@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for operasjoner ordliste
+title: Ordliste for Dynamics 365 for Operations
 description: Microsoft Dynamics 365 for Operations-ordlisten definerer viktige termer og begreper i Dynamics 365 for Operations-produktet.
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for operasjoner ordliste
+# <a name="dynamics-365-for-operations-glossary"></a>Ordliste for Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations-ordlisten definerer viktige termer og begreper i Dynamics 365 for Operations-produktet. 
 
@@ -249,7 +252,7 @@ Kjøretøyet som brukes for distribusjon på testing av brukeraksept (UAT) og pr
 
 Et Visual Studio-verktøy som du brukte til å opprette, oppdatere og inspisere modellelementene.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. konfigurasjon av \financial-dimensions\dimension-based**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\finans-dimensjoner\dimensjon-basert konfigurasjon**
 
 En konfigurasjonsteknologi som brukes til å opprette produktvarianter ved å velge verdier for produktdimensjoner.
 
@@ -499,7 +502,7 @@ En del av et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimensjon**
 
-Størrelse, farge eller konfigurasjon produktet attributtene som brukes til... konfigurasjon av \financial-dimensions\dimension-based.
+Størrelse-, farge- eller konfigurasjonsproduktattributtene som brukes for ..\financial-dimensions\dimension-based konfigurasjon.
 
 ###### <a name="product-family"></a>**produktfamilie**
 
@@ -697,7 +700,7 @@ En driftsenhet som styrer én eller flere produksjonsflyter.
 
 En metode for modellering av produktstandarder og søking etter produktvariantkonfigurasjoner.
 
-###### <a name="vat-value-added-tax"></a>**MVA (merverdiavgift)**
+###### <a name="vat-value-added-tax"></a>**Mva (merverdiavgift)**
 
 En avgift på varer i hvert produksjonstrinn basert på merverdien som er tilført i løpet av trinnet.
 
@@ -722,5 +725,7 @@ En person som antar rollen som en ansatt eller en entreprenør og som betales mo
 ###### <a name="workspace"></a>**arbeidsområde**
 
 En side som gir en oversikt over én av aktivitetene som brukeren utfører. Siden bruker fliser, lister og diagrammer til å vise ventende arbeid og tilknyttede data fra flere kilder, og siden viser ofte brukte oppgaver relatert til disse dataene. Fliser som vises i Sammendrag-delen i arbeidsområdet, vises også i den relaterte delen i instrumentbordet.
+
+
 
 

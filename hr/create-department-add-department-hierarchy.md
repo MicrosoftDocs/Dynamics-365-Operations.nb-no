@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Opprette en avdeling, og knytte den til avdelingshierarkiet
 
+[!include[banner](includes/banner.md)]
+
+
 En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
 
-En avdeling kan inneholde en gruppe med kostsentre. Stillinger kan tilordnes til avdelinger. Klikk for å opprette en avdeling, **Personale**&gt;**avdelinger**&gt;**avdeling**. Tabellen nedenfor beskriver feltene som er tilgjengelige.
+En avdeling kan inneholde en gruppe med kostsentre. Stillinger kan tilordnes til avdelinger. Hvis du vil opprette en avdeling, klikker du **Personale** &gt; **Avdelinger** &gt; **Avdeling**. Følgende tabell beskriver feltene som er tilgjengelige.
 
 | Felt               | Beskrivelse                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ En avdeling kan inneholde en gruppe med kostsentre. Stillinger kan tilordnes til
 
 Bruk følgende fremgangsmåte for å legge til en avdeling i avdelingshierarkiet.
 
-1.  Klikk **Personale**&gt;**avdelinger**&gt;**avdelingshierarki**.
+1.  Klikk **Personale** &gt; **Avdelinger** &gt; **Avdelingshierarki**.
 2.  Klikk **Rediger**, og velg deretter organisasjonen som avdelingen skal være under.
 3.  Klikk **Sett inn**, og velg **Avdeling** i listen.
 4.  Velg avdelingen som skal legges til hierarkiet, i listen over avdelinger som vises.
-5.  Lagre endringene. Du får en melding som at det er opprettet en kladdeversjon av hierarkiet.
-6.  Når du er klar, klikker du **Publiser** i hierarkidesigner. Du kan angi en gyldig dato som angir når hierarkiet skal publiseres. Hvis du vil legge til en ny avdeling i begynnelsen av neste kalenderår, kan du for eksempel angi gyldighetsdatoen til 1. januar i det nye kalenderåret. Hierarkiendringene vil tre i kraft på denne datoen.
+5.  Lagre endringene. Du får en melding om at det har blitt opprettet en kladdeversjon av hierarkiet.
+6.  Når du er klar, klikker du **Publiser** i hierarkidesigneren. Du kan angi en gyldig dato som angir når hierarkiet skal publiseres. Hvis du vil legge til en ny avdeling i begynnelsen av neste kalenderår, kan du for eksempel angi gyldighetsdatoen til 1. januar i det nye kalenderåret. Hierarkiendringene vil tre i kraft på denne datoen.
+
+
 
 
 

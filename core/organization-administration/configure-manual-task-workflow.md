@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurere en manuell oppgave i en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 
 Når du skal konfigurere en manuell oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den manuelle oppgaven.
@@ -124,10 +127,10 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
     </tr>
     <tr class="even">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil tilordne oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil tilordne oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
     <li>I <strong>Køtype</strong>-listen velger du <strong>Betingede arbeidselementkøer</strong>.</li>
     <li>I <strong>Kønavn</strong>-listen velger du <strong>Betinget kø</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Merk:</strong> dette alternativet brukes for bare noen få arbeidsflyter, for eksempel saksbehandling.</td>
+    </ol>
+    <strong>Merk</strong>: Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil videresende oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil videresende oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
 6.  Hvis brukerne i videresendingsbanen ikke fullfører oppgaven innen tidsfristen, vil systemet utføre en handling med oppgaven. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i kategorien **Avslutt handling**.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Angi når systemet skal utføre en handling med oppgaven automatisk
-Du kan konfigurere systemet slik at det utfører en handling med den manuelle oppgaven når bestemte betingelser er oppfylt. En oppgave krever for eksempel at noen i reiseregningsavdelingen går gjennom kvitteringene som følger med reiseregningen. I henhold til firmapolicyen må denne oppgaven utføres hvis det totale beløpet for utgiftene i regningen er større enn USD 100. I dette scenariet kan du konfigurere systemet automatisk merker oppgaven som **fullført** når samlet beløp er mindre enn 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling med den manuelle oppgaven.
+Du kan konfigurere systemet slik at det utfører en handling med den manuelle oppgaven når bestemte betingelser er oppfylt. En oppgave krever for eksempel at noen i reiseregningsavdelingen går gjennom kvitteringene som følger med reiseregningen. I henhold til firmapolicyen må denne oppgaven utføres hvis det totale beløpet for utgiftsrapporten er større enn USD 100. I dette scenariet kan du konfigurere systemet til automatisk å merke oppgaven som **Fullført** når samlet beløp er mindre enn 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling med den manuelle oppgaven.
 
 1.  I den venstre ruten klikker du **Automatiske handlinger**.
 2.  Merk av for **Aktiver automatiske handlinger**.
@@ -308,10 +311,10 @@ Du kan sende meldinger til personer når en manuell oppgave er delegert, videres
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et b
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Angi en tidsgrense for arbeidsflytelementet**.
 3.  I **Varighet**-feltet angir du når oppgaven må være fullført. Velg ett av følgende alternativer:
-    -   **Timer** – angi antall timer som oppgaven må være fullført i. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
-    -   **Dager** – angi antall dager som oppgaven må fullføres i. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
+    -   **Timer** – Angi hvor mange timer det kan gå før oppgaven må være fullført. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
+    -   **Dager** – Angi hvor mange dager det kan gå før oppgaven må være fullført. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
     -   **Uker** – Angi hvor mange uker det kan gå før oppgaven må være fullført.
     -   **Måneder** – Velg dagen og uken da oppgaven må være fullført. Du vil for eksempel at oppgaven skal fullføres innen fredag i den tredje uken i måneden.
     -   **År** – Velg dagen, uken og måneden da oppgaven må være fullført. Du vil for eksempel at oppgaven skal fullføres innen fredag i den tredje uken i desember.
@@ -343,6 +346,8 @@ Når den manuelle oppgaven tilordnes en bruker, må brukeren utføre en handling
 5.  Merk av for **Deleger** hvis brukeren skal kunne tilordne oppgaven til andre brukere.
 6.  Merk av for **Tilordne på nytt** hvis brukeren skal kunne tilordne oppgaven på nytt til andre brukere i arbeidselementkøen.
 7.  Merk av for **Frigi** hvis brukeren skal kunne tilordne oppgaven på nytt til arbeidselementkøen. En annen bruker kan deretter fullføre oppgaven.
+
+
 
 
 

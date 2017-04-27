@@ -1,6 +1,6 @@
 ---
 title: "Utforme et spørreskjema"
-description: "Dette emnet beskriver prosessen for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform."
+description: "Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Utforme et spørreskjema
 
-Dette emnet beskriver prosessen for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
+Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
 Et nøye utformet spørreskjema kan være med på å øke kvaliteten på dataene du samler inn. Gjennom nøye utforming kan du bedre velge de riktige alternativene til rett tid for et spørreskjema. Følgende punkt kan gjøre det enklere å planlegge et effektivt spørreskjema:
 
@@ -87,14 +87,14 @@ Spørreskjemaparametere er valgfrie. Du trenger ikke å bruke dem, avhengig av f
 
 Spørreskjemaparametere definerer anonymitet, nummerseriekoder og referansetyper i et spørreskjema. Når en organisasjon distribuerer et spørreskjema, kan alternativet for å la respondenter være anonyme være av betydning. 
 
-Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse nummerseriekoder, verdier, tilordnes automatisk til elementer. 
+Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse nummerseriekodene tilordnes verdier automatisk til elementer. 
 
 Du bør definere alle parametere før du begynner å opprette dataene. Du kan endre innstillingene for spørreskjemaparametere når som helst.
 
 ## <a name="questionnaire-components"></a>Spørreskjemakomponenter
-Spørreskjemaer omfatter tre hovedelementene: svargrupper som inneholder svar for flere valg spørsmål, spørsmål og selve spørreskjemaet. Du kan også gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
+Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Spørreskjemakomponenter](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Svargrupper og svar
 
@@ -235,6 +235,6 @@ Alternativt kan du definere du et spørreskjema slik at hvis en respondent velge
 
 [Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
 
-[Vise og evaluere resultatene for spørreskjemaer](evaluate-questionnaire-results.md)
+[Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
 
 

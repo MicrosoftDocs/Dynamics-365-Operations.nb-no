@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Revaluering av valuta i et konsolideringsfirma
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt kjøre valutarevaluering hvis det er endringer i valutakurser, slik at kontosaldoene revalueres på riktig måte. Når du konsoliderer de opprinnelig dataene, kan du bruke kategorien **Omveksling av valuta** for å velge de opprinnelige valutakursene for omveksling i løpet av konsolideringsprosessen. Når en ny valutakurs angis (for eksempel i neste måned), må du revaluere kontosaldoene. Urealisert fortjeneste og tap oppdateres deretter tilsvarende, basert på den nye valutakursen og datoen. Eksemplet nedenfor illustrerer regnskapsoppføringer som opprettes under prosessen.
@@ -33,7 +36,7 @@ Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt 
 ## <a name="company-setup"></a>Firmaoppsett
 -   **Kilde/driftsselskap (USMF)** – Amerikanske dollar (USD) brukes som regnskaps- og rapporteringsvaluta.
 -   **Konsolidert firma (CON)** – Euro (EUR) brukes som regnskaps- og rapporteringsvaluta.
-    -   ** Realisert agio ** – finanskonto 801500
+    -   **Realisert fortjeneste ** – Finanskonto 801500
     -   **Realisert tap** – Finanskonto 801600
     -   **Urealisert fortjeneste** – Finanskonto 801600
     -   **Urealisert tap** – Finanskonto 801400
@@ -82,6 +85,8 @@ Du vil se tilleggstransaksjoner for rapporteringsvalutabeløpene.
 | 130100         | EUR      | -500,00 | Opprinnelig beløp -500 × 1                          |
 | 801400         | EUR      | 250     | 500 – 333,33 = 166,67 166,67 + 83,33 = 250           |
 | 801600         | EUR      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
+
+
 
 
 

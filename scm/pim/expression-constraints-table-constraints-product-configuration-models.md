@@ -40,7 +40,7 @@ Tabellbegrensninger viser kombinasjonene av verdier som er tillatt for attributt
 
 ### <a name="example-of-a-table-constraint"></a>Eksempel på tabellbegrensning
 
-Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene som er definert den ** arkiv slutt ** og **Front grill** attributtet typer.
+Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper **og **Frontgrill**.
 
 | Attributtype | Verdier                      |
 |----------------|-----------------------------|
@@ -61,8 +61,8 @@ Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen *
 Du kan opprette systemdefinerte og brukerdefinerte tabellbegrensninger. Hvis du vil ha mer informasjon, se [Sy
 stemdefinerte og brukerdefinerte tabellbegrensninger](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvilken syntaks bør brukes til å skrive begrensninger?
-Du må bruke OML-syntaks (Optimization Modeling Language) når skriver begrensningene. Systemet bruker Microsoft Problemløseren Foundation begrensning Problemløseren til å løse begrensningene.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvilken syntaks skal brukes for å skrive begrensninger?
+Du må bruke OML-syntaks (Optimization Modeling Language) når skriver begrensningene. Systemet bruker Microsoft Solver Foundation-begrensningsløseren til å løse begrensningene.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Bør jeg bruke tabellbegrensninger eller uttrykksbegrensninger?
 Du kan enten bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. Du bygger opp en tabellbegrensning som en matrise, mens en uttrykksrestriksjon er et enkeltuttrykk. Når du konfigurerer et produkt, spiller det ingen rolle hvilken type betingelse som brukes. Følgende eksempel viser forskjellen mellom de to metodene.  
@@ -111,32 +111,32 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 <td>Dette er tilfelle hvis den første betingelsen er Usann, den andre betingelsen er Sann, eller begge deler.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operator:</strong> betyr [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix notasjon:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infiksnotasjon:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Og</td>
 <td>Dette gjelder bare hvis alle betingelsene er oppfylt. Hvis antallet betingelser er 0 (null), gir den <strong>True</strong>.</td>
-<td>Og argumenter, infix: en &amp;b &amp; ... &amp;z</td>
+<td>And[argumenter], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator:</strong> og [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notasjon:</strong> x == 2 &amp;y &lt;= 2</li>
+<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infiksnotasjon:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Eller</td>
 <td>Dette er tilfelle hvis en betingelse er Sann. Hvis antallet betingelser er 0 (null), gir den <strong>False</strong>.</td>
-<td>Eller argumenter, infix: en | b | ... | z</td>
+<td>Or[argumenter], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator:</strong> eller [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notasjon:</strong> x == 2 | y &lt;= 2</li>
+<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infiksnotasjon:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Pluss</td>
 <td>Det summerer betingelsene. Hvis antallet betingelser er 0 (null), gir den <strong>0</strong>.</td>
-<td>Pluss argumenter, infix: en + b +... + z</td>
+<td>Plus[argumenter], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operator:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infiksnotasjon:</strong> x + y + 2 == z</li>
@@ -160,7 +160,7 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 <tr class="odd">
 <td>Klokkeslett</td>
 <td>Dette tar produktet for betingelsene. Hvis antallet betingelser er 0 (null), gir den <strong>1</strong>.</td>
-<td>Ganger argumenter, infix: en * b *... * z</td>
+<td>Times[argumenter], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operator:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infiksnotasjon:</strong> x * y * 2 == z</li>
@@ -168,8 +168,8 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 </tr>
 <tr class="even">
 <td>Styrke</td>
-<td>Dette krever en eksponentiell verdi. Dette gjelder eksponentiering fra høyre mot venstre. (Med andre ord, det er høyre-associative.) Derfor <strong>Power [a, b, c]</strong> tilsvarer <strong>Power [, strøm [b, c]]</strong>. <strong>Styrke</strong> kan bare brukes med en positiv konstant som eksponent.</td>
-<td>Strøm [argumenter], infix: en ^ b ^... ^ z</td>
+<td>Dette krever en eksponentiell verdi. Dette gjelder eksponentiering fra høyre mot venstre. Det vil si den er høyre-assosiativ, og derfor tilsvarer <strong>Kraft[a, b, c]</strong> <strong>Kraft[a, Kraft[b, c]]</strong>. <strong>Styrke</strong> kan bare brukes med en positiv konstant som eksponent.</td>
+<td>Styrke[argumenter], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
 <li><strong>Infiksnotasjon:</strong> x ^ 2 == y</li>
@@ -192,7 +192,7 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 <td>Dette gir det logisk motsatte av betingelsen. Dette må ha nøyaktig én betingelse.</td>
 <td>Not[uttrykk], infiks: !uttrykk</td>
 <td><ul>
-<li><strong>Operator:</strong> ikke [x] &amp;ikke [y == 3]</li>
+<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infiksnotasjon:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -204,7 +204,7 @@ Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
 | Infiksnotasjon    | beskrivelse                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Tillegg                                                                                      |
-| X \*y \*z       | Multiplikasjon                                                                                |
+| x \* y \* z       | Multiplikasjon                                                                                |
 | x - y             | Binær subtraksjon oversettes på samme måte som binær addisjon med en negert andreverdi. |
 | x ^ y ^ z         | Eksponentiering med høyre-assosiativitet                                                   |
 | !x                | Boolsk ikke                                                                                   |
@@ -213,14 +213,14 @@ Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
 | x & y & z         | Boolsk og                                                                                   |
 | x == y == z       | Likhet                                                                                      |
 | x != y != z       | Spesifikk                                                                                      |
-| X &lt;y &lt;z   | Mindre enn                                                                                     |
-| X &gt;y &gt;z   | Større enn                                                                                  |
-| X &lt;= y &lt;= z | Mindre eller lik                                                                         |
-| X &gt;= y &gt;= z | Større enn eller lik                                                                      |
+| x &lt; y &lt; z   | Mindre enn                                                                                     |
+| x &gt; y &gt; z   | Større enn                                                                                  |
+| x &lt;= y &lt;= z | Mindre eller lik                                                                         |
+| x &gt;= y &gt;= z | Større enn eller lik                                                                      |
 | (x)               | Parenteser overstyrer standardprioritet.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres ikke uttrykksbegrensningene mine riktig?
-Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en oversikt over reserverte nøkkelord som du ikke kan bruke:
+Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en liste over reserverte nøkkelord som du ikke kan bruke:
 
 -   Tak
 -   Element
@@ -246,8 +246,8 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 <a name="see-also"></a>Se også
 --------
 
-[Opprette et uttrykk begrensning (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Opprette en uttrykksbegrensning (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Legge til en beregning i en konfigurasjon for produktmodell (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Legge til beregning for produktkonfigurasjonsmodell (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

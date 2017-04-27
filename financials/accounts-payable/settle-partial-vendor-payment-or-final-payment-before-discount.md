@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis leverandørbetaling og siste avdrag i sin helhet før rabattdatoen"
+title: "Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen"
 description: "Denne artikkelen leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Utligne en delvis leverandørbetaling og siste avdrag i sin helhet før rabattdatoen
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført.
 
-Fabrikam kjøper varer fra leverandøren 3064. Leverandøren gir Fabrikam en kontantrabatt på 1 prosent hvis fakturaen er betalt i 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Parametere for utligning er plassert på den **leverandørparametere** siden. 25 juni registrerer April en faktura for 1 000,00 for leverandøren 3064.
+Fabrikam kjøper varer fra leverandøren 3064. Leverandøren gir Fabrikam en kontantrabatt på 1 prosent hvis fakturaen betales innen 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Leverandørparametere**. 25 juni registrerer April en faktura for 1 000,00 for leverandøren 3064.
 
 ## <a name="vendor-invoice-on-june-25"></a>Leverandørfaktura 25. juni.
-Juni 25, April legger inn og posterer en faktura for 1 000,00 for leverandøren 3064. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
+25. juni registreres og posteres en faktura på 1 000,00 for leverandøren 3064. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
 
 | Bilag   | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April klikker kategorien **Kontantrabatt** for å vise rabattbeløpet.
 | 25/7/2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Delbetaling 1. juli ved hjelp av siden Utlign transaksjoner
-April kan opprette en betalingsjournal for denne betalingen ved å åpne siden **Betalingsjournal** i leverandørmodulen. Hun oppretter en ny journal, og angir en linje for leverandøren 3064. Hun åpner den **utligne transaksjoner** side, slik at hun kan merke fakturaen for utligning. April markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **-500,00**. Hun ser at verdien i feltet **Kontantrabattbeløp** er **-10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **-5,05**. April utligner derfor -505,05 av denne fakturaen.
+April kan opprette en betalingsjournal for denne betalingen ved å åpne siden **Betalingsjournal** i leverandørmodulen. Det opprettes en ny journal, og angis en linje for leverandøren 3064. Hun åpner siden **Utlign transaksjoner**, slik at hun kan merke fakturaen for utligning. April markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **-500,00**. Hun ser at verdien i feltet **Kontantrabattbeløp** er **-10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **-5,05**. April utligner derfor -505,05 av denne fakturaen.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 | Kontantrabatt brukt          | 0,00      |
 | Kontantrabattbeløp som skal brukes | -5,00     |
 
-April lukker siden **Utlign transaksjoner**. Det opprettes en betalingslinje for 495,00 i journalen, og deretter posterer April journalen. April kan se gjennom transaksjonene i den **leverandørtransaksjoner** siden. Hun ser at fakturaen har en saldo på-500.00. Hun ser også en betaling på 495,00 og en kontantrabatt på 5,00.
+April lukker siden **Utlign transaksjoner**. Det opprettes en betalingslinje for 495,00 i journalen, og deretter posterer April journalen. April kan se gjennom leverandørtransaksjonene på siden **Leverandørtransaksjoner**. Hun ser at fakturaen har en saldo på -500,00. Hun ser også en betaling på 495,00 og en kontantrabatt på 5,00.
 
 | Bilag    | transaksjonstype | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April posterer betalingsjournalen og går gjennom leverandørtransaksjonene på 
 | DISC-10010 | Kontantrabatt    | 1/7/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10011  | Betaling          | 8/7/2015  |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10011 | Kontantrabatt    | 8/7/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

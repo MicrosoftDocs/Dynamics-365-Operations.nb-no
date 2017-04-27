@@ -1,6 +1,6 @@
 ---
-title: Rapportere produksjonsordrer som ferdigmeldt
-description: "Ferdigmelding er et trinn i produksjonen. På dette stadiet, er et ferdig produkt rapportert og flyttet fra produksjonsordren til lageret."
+title: Rapportere produksjonsordre som ferdigstilt
+description: "Rapportere som ferdigstilt er et produksjonsstadium. På dette stadiet blir et ferdigstilt produkt rapportert og flyttet fra produksjonsordren til lageret."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-production-orders-as-finished"></a>Rapportere produksjonsordrer som ferdigmeldt
+# <a name="report-production-orders-as-finished"></a>Rapportere produksjonsordre som ferdigstilt
 
-Ferdigmelding er et trinn i produksjonen. På dette stadiet, er et ferdig produkt rapportert og flyttet fra produksjonsordren til lageret.
+[!include[banner](../includes/banner.md)]
+
+
+Rapportere som ferdigstilt er et produksjonsstadium. På dette stadiet blir et ferdigstilt produkt rapportert og flyttet fra produksjonsordren til lageret.
 
 Når et antall av ferdigvarene rapporteres som ferdig i en produksjonsordre, oppdateres antallet som beholdning på lageret. Delvise antall for det opprinnelig planlagte ordreantallet kan rapporteres som fullført. Det er også mulig å rapportere antall feil med en tilknyttet feilårsak når antall rapporteres som ferdig. Når produksjonsordren når stadiet Ferdigmeldt, angir det at ingen flere antall skal rapporteres for produksjonsordren.
 Følgende kjennetegn er også knyttet til **Rapporter som fullført**-prosessen:
@@ -44,5 +47,7 @@ Antallet rapporteres til utleveringsstedet. Lagerarbeid blir deretter generert f
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Angi en produksjonsordre som Ferdigmelding
 Du kan sette en produksjonsordre til **Ferdigmeld** ved hjelp av standard oppdateringsfunksjonen for produksjonsordre eller via rute- og jobbkortjournaler eller via journalen **Ferdigmeld**. Du kan også oppdatere stadiet til **Ferdigmeld** via sidene for jobbkortterminalen og jobbkortenheten når du rapporterer om den siste jobben i produksjonsordren. Til slutt kan du aktivere alternativet **Ferdigmeld** som en prosess for den håndholdte lagerenhetsløsningen.  
+
+
 
 

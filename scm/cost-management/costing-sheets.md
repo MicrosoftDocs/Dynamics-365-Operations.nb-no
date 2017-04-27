@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Kostark
 
+[!include[banner](../includes/banner.md)]
+
+
 Definisjon av kostark innebærer to mål. Som det første målet definerer du formatet for visning av informasjon om kostnader for solgte varer for en produsert vare eller produksjonsordre. Den formaterte visningen kalles et kostark. Som det andre målet definerer du grunnlaget for beregning av indirekte kostnader. Oppsetet av kostarket byger på kostgruppefunksjonen for visning av informasjon og for de indirekte kostnadsberegningsformlene. De to målene for oppsett av etterkalkuleringsark er beskrevet i denne artikkelen. 
 
 Et kostark er den formaterte visningen av informasjon om kostnader for solgte varer for en produsert vare eller produksjonsordre. Når du definerer et kostark, kan du definere formatet for informasjonen og også definere grunnlaget for beregning av indirekte kostnader. Oppsettet av kostarket bygger på kostgruppefunksjonene for visning av informasjon og for formlene som brukes til å beregne indirekte kostnader. Her er mer informasjon om de to målene for oppsett av kostark:
@@ -43,6 +46,8 @@ To blokkeringspolicyer for en kostnadsversjon fastslår om uavsluttede kostnader
 Når du har definert kostarkformatet og beregninger for indirekte kostnader, må du utføre et eget trinn for å validere og lagre informasjonen. Kostarket representerer et firmaformat for å vise informasjon om kostnadene for solgte varer på en konsekvent måte. 
 
 Kostarket vises som en del av siden **Beregn varekostnad**. Kostarket kan vises for en produsert vares beregnede kostnadspost på **Varepris**-siden, eller for en ordrespesifikk beregningspost på siden **Resultater for stykklisteberegning**  Det kan også vises som en del av **Prisberegning**-siden for en produksjonsordre.
+
+
 
 
 

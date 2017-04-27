@@ -1,5 +1,5 @@
 ---
-title: "POS maskinvare Tilbehør"
+title: Maskinvare og periferiutstyr for salgssted
 description: "Moderne salgssted for detaljhandel (POS) og skybasert salgssted kan bruke en rekke maskinvareenheter for salgssted med flere grensesnitt og distribusjonsalternativer for å oppnå ulike forretningsscenarioer for en forhandler."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POS maskinvare Tilbehør
+# <a name="pos-hardware-peripherals"></a>Maskinvare og periferiutstyr for salgssted
+
+[!include[banner](includes/banner.md)]
+
 
 Moderne salgssted for detaljhandel (POS) og skybasert salgssted kan bruke en rekke maskinvareenheter for salgssted med flere grensesnitt og distribusjonsalternativer for å oppnå ulike forretningsscenarioer for en forhandler. 
 
@@ -63,6 +66,8 @@ Listen nedenfor inkluderer enhetsmodeller, i hver klasse, som er testet internt 
 
 -   Strekkode – Honeywell 1900, HP-LS2208
 -   Kortleser – Magtek EV - 21073075
+
+
 
 
 

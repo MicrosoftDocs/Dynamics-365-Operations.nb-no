@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Oppdatere standardkostnader for en ny produsert vare
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir råd for å oppdatere standardkostnader for en ny produsert vare. 
 
 Retningslinjene antar at du bruker en toversjons tilnærming til å oppdatere standardkostnader. I denne fremgangsmåten, inneholder én etterkalkuleringsversjon standardkostnader som opprinnelig ble definert for den frosne perioden, og den andre etterkalkuleringsversjonen inneholder de inkrementelle oppdateringene som gjelder for de nye produserte varene. De inkrementelle oppdateringene blir lagt inn som kostnadsposter i den andre etterkalkuleringsversjonen, og til slutt aktivert. Toversjonsmåten krever at du definerer enda en etterkalkuleringsversjon. Her følger retningslinjene for å definere denne etterkalkuleringsversjonen:
@@ -47,6 +50,8 @@ Hvis du vi legge til nye produksjonsvarer i hele den frosne perioden, kan du gj�
 5.  Bruk siden **Oppsett av etterkalkuleringsversjon** for å endre blokkeringsflagget for å tillate aktivering av ventende kostnadsposter i den andre etterkalkuleringsversjonen.
 6.  Bruk siden **Aktiver priser** (som du åpner fra siden **Vedlikehold av etterkalkuleringsversjon**) for å aktivere alle ventende kostnadsposter i den andre etterkalkuleringsversjonen. Du kan også aktivere de ventende kostnadspostene for enkelte varer ved å klikke knappen **Aktiver** på **Varepris**-siden.
 7.  For å unngå ytterligere datavedlikehold kan du bruke siden **Oppsett av etterkalkuleringsversjon** til å endre blokkeringsflaggene som er vedlagt den andre etterkalkuleringsversjonen. Blokkeringspolicyene forhindrer innlegging av nye uavsluttede kostnader og aktivering av uavsluttede kostpriser.
+
+
 
 
 

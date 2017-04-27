@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-element-dimensions"></a>Kostnadselementdimensjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Som en av de viktige søylene i kostnadsregnskap, brukes kostnadelementdimensjoner til å kategorisere og spore hvor kostnadene flyter til. 
 
 Et kostnadselement tilsvarer et kostnadsrelevant element i kontoplanen. I utgangspunktet kan det være en hvilken som helst type element på laveste nivå i et firma der kostnadene kan flyte til. Kostnadselementene som konsept strekker seg fra finanskontoer til alle kostnadsrelevante ressurser. Kostnadsregnskap støtter for øyeblikket finanskontoer.
@@ -71,5 +74,7 @@ For å forenkle oppsettet av medlemmene av kostnadselementdimensjoner i kostnads
 
 ## <a name="implementation-considerations"></a>Informasjon om implementering
 Når kostnadselementer representerer det laveste nivået av kostnadsdetaljer, må du kontrollere at alle kostnadselementer som er nødvendig for å lage lederrapporteringen er tatt med når du implementerer kostnadselementstrukturen. Det kan være vanskelig å finne et passende antall kostnadselementer for kostnadskontroll. Når du har tusenvis av kostnadselementer, kan det være vanskelig å styre hvert kostnadselement. Du kan eventuelt gruppere kostnadselementer og styre kostnadskontroll på et aggregert nivå.
+
+
 
 

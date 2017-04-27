@@ -46,12 +46,12 @@ I tillegg til finansrapporter kan du bruke følgende rapporter til å vise økon
 
 -   **Dimensjonsoppgave** – Denne rapporten viser transaksjoner etter dag og konto, og det finnes også alternativer for å vise transaksjoner etter dimensjon og periode.
 -   **Finanstransaksjonsliste** – Denne rapporten viser transaksjoner i transaksjons-, regnskaps- og rapporteringsvalutaer for en konto.
--   **Skriv ut journalen** – denne rapporten viser resultatet av en postert journal. Du kan kjøre rapporten ved journalbatchnummer eller journaltypen, eller du kan legge til flere felt.
+-   **Skriv ut journal** – Denne rapporten viser resultatet av en postert journal. Du kan kjøre rapporten med journalpartinummer eller journaltypen, eller du kan legge til flere felt.
 -   **Posterte transaksjoner etter journal** – Denne rapporten viser transaksjonene som er postert til en journal, gruppert etter bilag.
 -   **Transaksjonsliste etter dato** – Denne rapporten viser alle transaksjonene etter dato, sammen med journalnummeret, bilaget og finanskontoen. Den viser også transaksjonene i transaksjons-, regnskaps- og rapporteringsvalutaene.
 -   **Transaksjonsopprinnelse** – Denne transaksjonsrapporten viser kontoen etter journal og etter transaksjons-, regnskaps- og rapporteringsvalutaen. Den viser også hver linjene i journalen som ble brukt som motkonto.
 
 
-Hvis du vil ha mer informasjon, se [finanskontosaldi](general-ledger-account-balances.md), [regnskap kilde explorer](\financials\accounts-payable\accounting-source-explorer) og [finansiell rapportering](financial-reporting-getting-started.md)
+Hvis du vil ha mer informasjon, kan du se [Kontosaldoer i økonomimodulen](general-ledger-account-balances.md), [Regnskapskildeutforsker](\financials\accounts-payable\accounting-source-explorer) og [Finansrapportering](financial-reporting-getting-started.md)
 
 

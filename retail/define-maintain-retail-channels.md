@@ -1,6 +1,6 @@
 ---
 title: Definere og vedlikeholde detaljhandelskanaler
-description: "Denne artikkelen gir en oversikt over prosessen for å definere murstein og mørtel butikker, som kalles detaljhandel i Microsoft Dynamics 365 for operasjoner. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk."
+description: "Denne artikkelen inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Operations. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedlikeholde detaljhandelskanaler
 
-Denne artikkelen gir en oversikt over prosessen for å definere murstein og mørtel butikker, som kalles detaljhandel i Microsoft Dynamics 365 for operasjoner. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
+[!include[banner](includes/banner.md)]
 
-Støtter flere kanaler for detaljhandel, for eksempel nettbutikker, telefonsentre og murstein og mørtel butikker handel og handel i Dynamics 365 for operasjoner. I Detaljhandel og handel kalles en fysisk butikk for en detaljhandelsbutikk. Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte. Du må definere alle disse elementene for en detaljhandelsbutikk, før du oppretter den. Når du har opprettet en detaljhandelsbutikk, tilordner du produktene du vil den skal føre. Du tilordner også ansatte, kasser og kunder til butikken. Til slutt legger du til den nye butikken i et organisasjonshierarki.
+
+Denne artikkelen inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Operations. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
+
+Detaljhandel og handel i Microsoft Dynamics 365 for Operations støtter flere detaljhandelskanaler, for eksempel nettbutikker, telefonsentre og fysiske butikker. I Detaljhandel og handel kalles en fysisk butikk for en detaljhandelsbutikk. Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte. Du må definere alle disse elementene for en detaljhandelsbutikk, før du oppretter den. Når du har opprettet en detaljhandelsbutikk, tilordner du produktene du vil den skal føre. Du tilordner også ansatte, kasser og kunder til butikken. Til slutt legger du til den nye butikken i et organisasjonshierarki.
 
 ## <a name="setting-up-retail-stores"></a>Definere detaljhandelsbutikker
-Før du kan definere en forhandler i Dynamics 365 for operasjoner, må du fullføre enkelte nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
+Før du kan definere en detaljhandelsbutikk i Dynamics 365 for Operations, må du fullføre noen nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
 
 ### <a name="prerequisites"></a>Nødvendig programvare
 
@@ -49,7 +52,7 @@ Du må fullføre følgende oppgaver før du kan definere en detaljhandelsbutikk:
 8.  Definer detaljprodukter. Som en del av denne oppgaven definerer du også detaljprodukthierarkier, produktvarianter og produktsortimenter.
 9.  Definer produktgrupper.
 10. Definer produktpriser for detaljhandel. Som en del av denne oppgaven definerer du også prisjusteringer, rabatter og rabattperioder.
-11. Definere stabsmedlemmer. **Merk:** må du også tilordne tillatelser til arbeidere, slik at de kan logge på og utføre oppgaver ved å bruke Dynamics-365 for operasjoner for Retail POS-systemet.
+11. Definere stabsmedlemmer. **Obs! ** Du må også tilordne aktuelle tillatelser til arbeiderne, slik at de kan logge på og utføre oppgaver ved hjelp av Dynamics 365 for Operations for Retail POS-systemet.
 12. Konfigurer Retail POS-profilene som skal tilordnes butikken. Denne oppgaven omfatter mange andre oppgaver, for eksempel å definere kasser, definere frakoblede profiler og definere kvitteringsformater og -profiler.
 
 Se gjennom alle oppgavene som er inkludert i forutsetningen, og fullfør bare de oppgavene som gjelder for deg.
@@ -77,5 +80,7 @@ Når du har angitt detaljene for detaljhandelsbutikken, fullfører du disse oppg
 
 ## <a name="organization-hierarchies"></a>Organisasjonshierarkier
 Detaljhandel bruker organisasjonshierarkier i Microsoft Dynamics AX til å strukturere detaljhandelskanaler. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten. Når du definerer butikker, kan du legge dem til i et organisasjonshierarki. Butikken lagrer og deler data som brukes for sortimenter, etterfylling og rapportering.
+
+
 
 

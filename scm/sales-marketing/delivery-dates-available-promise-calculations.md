@@ -28,23 +28,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-promising"></a>Ordrebekreftelse
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
 
 Ordrebekreftelse beregner de tidligste leverings- og mottaksdatoene og er basert på kontrollmetoden for leveringsdato og transportdager. Du kan velge blant fire kontrollmetoder for leveringsdato:
 
--   **Salgsleveringstid** – salg leveringstiden er tiden mellom opprettelsen av salgsordren og leveringen av varene. For beregning av dato for levering er basert på en standardantall dager, og anser ikke lager, kjente behovsbetinget eller planlagt forsyning.
--   **ATP (tilgjengelig for ordre)** – ATP er antallet av en vare som er tilgjengelig og kan være lovet til en kunde på en bestemt dato. ATP-beregningen inkluderer ikke igangsatt lager, leveringstider, planlagte mottak, og avganger.
+-   **Salgsleveringstid** – Salgsleveringstiden er tiden mellom opprettelsen av salgsordren og leveringen av varene. Beregningen av leveringsdato er basert på et standard antall dager, og vurderer ikke lagertilgjengelighet, kjente behov eller planlagt forsyning.
+-   **ATP (tilgjengelig for ordre)** – ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde på en bestemt dato. ATP-beregningen inkluderer ikke igangsatt lager, leveringstider, planlagte mottak, og avganger.
 -   **ATP + Avgang-margin **– Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
 -   **CTP (leveringskapasitet) **– Tilgjengelighet beregnes via nedbryting.
 
 ## <a name="atp-calculations"></a>ATP-beregninger
-ATP-antallet er beregnet ved hjelp av metoden "Kumulativ ATP med blikk fremover". Den største fordelen med denne metoden for beregning av ATP er at den kan håndtere tilfeller der summen av avganger mellom mottak er større enn siste mottak (for eksempel når et antall fra et tidligere mottak må brukes til å oppfylle et behov). Metoden "Kumulativ ATP med blikk fremover" beregningen omfatter alle avganger til det kumulative antallet som skal motta overskrider det kumulative antallet i avgang. Derfor evaluerer denne ATP-beregningsmetoden om noe av antallet fra en tidligere periode kan brukes i en senere periode.  
+ATP-antallet beregnes basert på metoden "kumulativ ATP med blikk fremover". Den største fordelen med denne ATP-beregningsmetoden er at den kan håndtere tilfeller der summen av avganger mellom mottak er større enn siste mottak (for eksempel når et antall fra et tidligere mottak må brukes for å oppfylle et behov). Beregningsmetoden "kumulativ ATP med blikk fremover" inneholder alle avganger helt til det kumulative antallet som skal mottas, overskrider det kumulative antallet i avgang. Derfor evaluerer denne ATP-beregningsmetoden om noe av antallet fra en tidligere periode kan brukes i en senere periode.  
 
 ATP-antallet er den ikke-fordelte lagerbalansen i den første perioden. Vanligvis beregnes det for hver periode der det er planlagt et mottak. Programmet beregner ATP-perioden i dager og beregner gjeldende dato som den første datoen for ATP-antallet. I den første perioden tar ATP med lagerbeholdning minus kundeordrer som forfaller eller er forfalt.  
 
 ATP beregnes ved hjelp av følgende formel:  
 
-ATP = ATP for forrige periode + mottakene for gjeldende periode – problemer for gjeldende periode-netto avgangsantall for hver fremtidige periode, til perioden da summen av mottak for alle fremtidige perioder, opptil og inkludert den fremtidige perioden, overstiger summen av avganger opptil og inkludert den fremtidige perioden.  
+ATP = ATP for forrige periode + mottak for gjeldende periode - avganger for gjeldende periode - netto avgangsantall for hver fremtidige periode, til perioden da summen av mottak for alle fremtidige perioder, opptil og inkludert den fremtidige perioden, er større enn summen av avganger, opptil og inkludert den fremtidige perioden.  
 
 Når det ikke er flere avganger eller mottak å vurdere, er ATP-antallet for de etterfølgende datoene det samme som det sist beregnede ATP-antallet.  
 
@@ -66,8 +69,10 @@ En kunde ringer og ønsker å bestille 150 stykk av det samme produktet. Når du
 
 Du oppretter en salgsordrelinje for produktet og angir **150** som antall.  
 
-Fordi leveringsdatokontrollen er metoden ATP, beregnes ATP-data for å finne den tidligst mulige forsendelsesdatoen. Basert på innstillingene, forsinket bestillingen og ordren anses og resulterende ATP-antallet for gjeldende dato er 0. I morgen, når forsinkede bestillingen er forventet å bli mottatt, ATP-antallet beregnes som mer enn 0 (i dette tilfellet det beregnes som 125). 10 dager fra nå, når flere bestillingen 100 enheter forventes å bli mottatt blir ATP-antallet imidlertid mer enn 150.  
+Fordi leveringsdatokontrollen er metoden ATP, beregnes ATP-data for å finne den tidligst mulige forsendelsesdatoen. Basert på innstillingene vurderes den forsinkede bestillingen og salgsordren, og det resulterende ATP-antallet for den gjeldende datoen er 0. I morgen, når den forsinkede bestillingen forventes å mottas, beregnes ATP-antallet som mer enn 0 (i dette tilfellet beregnes det som 125). Men 10 dager fra nå, når tilleggsbestillingen på 100 enheter forventes å bli mottatt, blir ATP-antallet mer enn 150.  
 
-Derfor forsendelsesdatoen er satt til 10 dager fra nå, basert på ATP-beregningen. Derfor kan du informere kunden om at det forespurte antallet kan leveres 10 dager fra nå.
+Derfor settes forsendelsesdatoen til 10 dager fra nå basert på ATP-beregningen. Derfor kan du informere kunden om at det forespurte antallet kan leveres 10 dager fra nå.
+
+
 
 

@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Avrundingsbeløp for avskrivningsberegninger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen omhandler feltet Avrundingsavskrivning som finnes på Tablåoppsett-sidene.
 
-Avrunding av avskrivningsbeløpet er angitt for hver bok. Avrunding av avskrivningsbeløpet brukes i avskrivningsprofilen for anleggsmidlet som viser fremtidig avskrivning og verdien for et anleggsmiddel, og også i avskrivningsforslag. Angi det laveste avskrivningsbeløpet som er tillatt for tablået. 
+Avrundingsbeløp for avskrivning angis for hvert tablå. Avrundingsbeløp for avskrivning brukes i avskrivningsprofilen for anleggsmiddel som viser fremtidig avskrivning og verdi for anleggsmiddelet, også i avskrivningsforslag. Angi det laveste avskrivningsbeløpet som er tillatt for tablået. 
 
 Uavhengig av avrundingen som er angitt, blir avskrivningsbeløpet i den siste avskrivningsperioden ikke avrundet. På slutten av siste avskrivningsperiode må verdien av anleggsmiddelet være 0 (null) eller skrapverdien, hvis skrapverdi brukes.
 
@@ -43,6 +46,8 @@ Avskrivning uten avrunding beregnes som 2 444,44. Som følgende tabell viser var
 | Avrunding 1,00   | 2 444,00            |
 | Avrunding 10,00  | 2 440,00            |
 | Avrunding 100,00 | 2 400,00            |
+
+
 
 
 

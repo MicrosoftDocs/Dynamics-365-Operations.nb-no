@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Bonusavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over funksjonaliteten for bonusavskrivning.
 
 For bonusavskrivning kan du ta ekstra- eller bonusavskrivningsbeløp i det første året som anleggsmidlet brukes og avskrives. Bonusavskrivning må utføres før alle andre avskrivningsberegninger. Derfor er det best å bruke bonusavskrivning med tablåer der funksjonen Poster i økonomimodul er deaktivert. Du kan bruke alternativet **Slett transaksjoner som ikke er postert til økonomimodulen** for å slette historiske transaksjoner for tablåer som ikke posterer til økonomimodulen. Du kan deretter bruke bonusavskrivning senere i livssyklusen til aktiva ved å slette avskrivningstransaksjoner som allerede er postert. 
@@ -61,5 +64,7 @@ Når bonusavskrivning beregnes ved av forslagsprosessen, opprettes det en bonusa
 Du kan opprette et ubegrenset antall bonusavskrivningsposter. Når du har tildelt disse postene til tablået for anleggsmiddelgruppe, brukes de for anleggsmiddeltablået. 
 
 Bonusavskrivning angis som en prosent eller et fast beløp. Når du posterer avskrivningsforslag, posteres bonusavskrivningstransaksjoner til tablået som transaksjoner som er atskilte fra avskrivningstransaksjonene.
+
+
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Bestillinger for et prosjekt
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver flere metoder du kan bruke til å opprette bestillinger for et prosjekt. Hvilken metode du bruker, er avhengig av formålet med bestillingen og når de innkjøpte varene forbrukes og belastes et prosjekt.
 
-I Microsoft Dynamics 365 for operasjoner, kan du bruke flere metoder for å opprette bestillinger for et prosjekt. Hvilken metode du bruker, er avhengig av formålet med bestillingen, når de innkjøpte varene forbrukes, og når de innkjøpte varene skal belastes et prosjekt.
+Du kan bruke flere metoder til å opprette bestillinger for et prosjekt i Microsoft Dynamics 365 for Operations. Hvilken metode du bruker, er avhengig av formålet med bestillingen, når de innkjøpte varene forbrukes, og når de innkjøpte varene skal belastes et prosjekt.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Metoder for å opprette en bestilling
 
@@ -72,5 +75,7 @@ Du kan bruke én av følgende metoder til å opprette en bestilling i prosjektst
 
 > [!NOTE] 
 > Når du oppdaterer leverandørfakturaen eller følgeseddelen, blir du bedt om å oppdatere følgeseddelen for varebehovet.
+
+
 
 

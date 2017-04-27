@@ -1,6 +1,6 @@
 ---
-title: Konsernkontogrupper og flere konsernkontoer
-description: Dette emnet gir informasjon om konsernkontogrupper og flere konsernkontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for operasjoner.
+title: Konsolideringskontogrupper og flere konsolideringskontoer
+description: Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsernkontogrupper og flere konsernkontoer
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolideringskontogrupper og flere konsolideringskontoer
 
-Dette emnet gir informasjon om konsernkontogrupper og flere konsernkontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for operasjoner.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for Operations.
 
 <a name="consolidation-account-groups"></a>Konsolideringskontogrupper
 ----------------------------
 
-Konsernkontogrupper kan du opprette grupper med kontoer som du vil bruke til å konsolidere dataene. Som oftest en konsernkontogruppen representerer en offentlig obligatorisk Kontoplan eller tilordner kontoer til en gruppe som er definert av selskapets hovedkontor. Du kan finne konsolidering kontogrupper i den **oppsett** området i den **konsolideringer** modul. Når du legger til en ny gruppe, angir du en unik ID for kontogruppen og et navn.
+Med konsolideringskontogrupper kan du opprette grupper med kontoer som du vil bruke til å konsolidere dataene. Som oftest representerer en konsolideringskontogruppe en lovpålagt kontoplan eller tilordner kontoer til en gruppe som er definert av selskapets hovedkontor. Du kan finne konsolideringskontogrupper i **Oppsett**-området i **Konsolideringer**-modulen. Når du legger til en ny gruppe, angir du en unik ID for kontogruppen og et navn.
 
 ## <a name="additional-consolidation-accounts"></a>Flere konsolideringskontoer
-Flere konsernkontoer kan du tilordne en konto fra en eksisterende kontoplanen til en konsernkontogruppen. Deretter kan du angi en verdi for konsolidering konto og et navn. 
+Med flere konsolideringskontoer kan du tilordne en konto fra en eksisterende kontoplan til en konsolideringskontogruppe. Deretter kan du angi en verdi og et navn for konsolideringskontoen. 
 
-Finner du ytterligere konsolidering kontoer i den **Setup** området i den **konsolideringer** modul. Når du oppretter en ny konto for konsolidering, må du angi følgende informasjon:
+Du kan finne flere konsolideringskontoer i **Oppsett**-området i **Konsolideringer**-modulen. Når du oppretter en ny konsolideringskonto, må du angi følgende informasjon:
 
--   **Hovedkontoen** – dette feltet er et oppslagsfelt som viser alle hovedkontoer som er basert på kontoplanen som du valgte på siden. Når du velger en-konto, angis navnet automatisk i den **Main kontonavnet** feltet.
--   **Konsernkontogruppen** – Bruk dette feltet til å angi gruppe hvis du vil tilordne til kontoen. Hvis du konsoliderer på to forskjellige måter, må du legge til samme konto alle fire konsernkontogrupper.
--   **Konsernkonto** – angi verdien for konsolideringskontoen. Denne verdien må ikke være en konto fra en kontoplan. Det kan være en hvilken som helst verdi du trenger.
--   **Navn på konsernkonto** – angi navnet på kontoen som du vil det skal vises i forespørsler og rapporter.
--   **SAT nivå** – dette feltet brukes til å rapportere kontoutdrag til Meksikanske skattemyndighetene. 
+-   **Hovedkonto** – Dette feltet er et oppslagsfelt som viser alle hovedkontoer som er basert på kontoplanen som du valgte på siden. Når du velger en konto, angis navnet automatisk i feltet **Navn på hovedkonto**.
+-   **Konsernkontogruppe** – Bruk dette feltet til å angi gruppen du vil tilordne kontoen til. Hvis du konsoliderer på to forskjellige måter, må du legge til samme konto i alle fire konsolideringskontogrupper.
+-   **Konsolideringskonto** – Angi verdien for konsolideringskontoen. Denne verdien må ikke være en konto fra en kontoplan. Det kan være en hvilken som helst verdi du trenger.
+-   **Navn på konsolideringskonto** – Angi navnet på kontoen slik du vil at det skal vises i forespørsler og rapporter.
+-   **SAT-nivå** – Dette feltet brukes til å rapportere kontoutdrag til meksikanske skattemyndigheter. 
 
-Når du er ferdig med å opprette kontogrupper for konsolidering og flere konsernkontoer, velger du gruppen i Konsolider online prosessen.
+Når du er ferdig med å opprette konsolideringskontogruppene og ekstra konsolideringskontoer, kan du velge gruppen i den elektroniske konsolideringsprosessen.
+
+
 
 
 

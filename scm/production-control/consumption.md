@@ -29,20 +29,23 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="calculate-material-consumption"></a>Beregne materialforbruk
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om ulike alternativer som er knyttet til beregning av materialforbruk. 
 
 Følgende alternativer som er knyttet til beregningen av materialforbruk, er tilgjengelige i fanen **Oppsett** og **Trinnforbruk** i hurtigfanen **Linjedetaljer** på **Stykkliste**-siden.
 
 ## <a name="variable-and-constant-consumption"></a>Variabelt og konstant forbruk
-I den **forbruket er**, kan du velge om forbruk skal beregnes som et konstant antall eller et variabelt antall. Velg **konstant** Hvis et fast antall eller volum er nødvendig for produksjonen, uansett antall som produseres. Velg **Variabel**, som er standardinnstillingen, hvis den nødvendige mengden materiale i ferdigvarene er proporsjonal med antall ferdigvarer som produseres.
+I feltet **Forbruk er** kan du velge om forbruk skal beregnes som et konstant antall eller et variabelt antall. Velg **Konstant** hvis et fast antall eller volum eller kreves for produksjonen, uansett antallet som produseres. Velg **Variabel**, som er standardinnstillingen, hvis den nødvendige mengden materiale i ferdigvarene er proporsjonal med antall ferdigvarer som produseres.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Beregne forbruk med en formel
 I **Formel**-feltet kan du definere forskjellige formler for beregning av materialforbruk. Hvis du bruker standardverdien **Standard**, beregnes ikke forbruket av en formel. Følgende formler fungerer sammen med feltet **Høyde**, **Bredde**, **Dybde**, **Tetthet** og **Konstant**:
 
--   Høyde \*konstant
--   Høyde \*bredde \*konstant
--   Høyde \*bredde \*dybde \*konstant
--   (Høyde \*bredde \*dybde / tetthet) \*Konstant
+-   Høyde \* Konstant
+-   Høyde \* Bredde \* Konstant
+-   Høyde \* Bredde \* Dybde \* Konstant
+-   (Høyde \* Bredde \* Dybde/Tetthet) \* Konstant
 
 ## <a name="rounding-up-and-multiples"></a>Avrunding opp og faktorer
 Sammen gjør feltet **Avrundes opp** og **Faktorer** det mulig å runde opp materialforbruksverdien. Du kan for eksempel runde opp verdien i henhold til håndteringsenheten der råvarene plukkes for produksjon. Følgende alternativer er tilgjengelige i **Avrundes opp**-feltet: **Antall**, **Mål** og **Forbruk**.
@@ -53,7 +56,7 @@ Hvis du velger **Antall** som avrundingsmåte, må antallet være et multiplumst
 
 ### <a name="measurement"></a>Mål
 
-Vanligvis merker du av for **Mål** som avrundingsmåte når råvarene har bestemte dimensjoner. Et metallrør på 2 meter kreves for eksempel for en ferdigvare, og metallrørene kommer i 4,5 meters lengder. I dette tilfellet kan avrundingsmåten **Mål** brukes til å beregne hvor mange metallrør som kreves for å produsere et gitt antall enheter av ferdigvaren. For eksempel den **formelen** -feltet er satt til **høyde \*konstant**. Den **høyde** -feltet er satt til **2** for å angi lengden på tube som kreves for den ferdige varen. **Flere**-feltet settes til **4,5** for å angi at røret plukkes i lengder på 4,5 meter. Her er beregningen:
+Vanligvis merker du av for **Mål** som avrundingsmåte når råvarene har bestemte dimensjoner. Et metallrør på 2 meter kreves for eksempel for en ferdigvare, og metallrørene kommer i 4,5 meters lengder. I dette tilfellet kan avrundingsmåten **Mål** brukes til å beregne hvor mange metallrør som kreves for å produsere et gitt antall enheter av ferdigvaren. I dette eksemplet er **Formel**-feltet satt til **Høyde \* Konstant**. **Høyde**-feltet er satt til **2** for å angi lengden på røret som kreves for den ferdige varen. **Flere**-feltet settes til **4,5** for å angi at røret plukkes i lengder på 4,5 meter. Her er beregningen:
 
 1.  Antallet som kreves for 10 stykker av ferdigvaren: 10 ÷ 2 = 5 stykker
 2.  Totalt forbruk: 4,5 x 5 = 22,5 meter med metallrør
@@ -78,5 +81,7 @@ Trinnforbruk brukes til å beregne konstant forbruk i antallsintervaller. Hvis d
 | 200,00      | 40,0000  |
 
 Stykklisteantallet er 1, og produksjonsantallet er 110. Formelen for forbruket er av Fra serie (Antall) = Forbruk. Ettersom produksjonsantallet er 110, kommer det inn under "Fra 100-serien." Derfor er antallet 20.
+
+
 
 

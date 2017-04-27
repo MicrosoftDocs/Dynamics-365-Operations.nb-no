@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Oppdatere standardkostnader i et ikke-produksjonsmiljø
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir råd for å oppdatere standardkostnader i et ikke-produksjonsmiljø.
 
 Retningslinjene antar at du bruker en toversjons tilnærming til å oppdatere standardkostnad. I denne fremgangsmåten, inneholder én etterkalkuleringsversjon standardkostnader som opprinnelig ble definert for den frosne perioden, og den andre etterkalkuleringsversjonen inneholder de inkrementelle oppdateringene. Hver oppdatering angis som en kostnadspost som er vedlagt i den andre etterkalkuleringsversjonen, og til slutt den er aktivert. En alternativ fremgangsmåte med én versjon bruker settet med standardkostnader som opprinnelig var definert. Toversjonsmåten krever at du definerer enda en etterkalkuleringsversjon. Her følger retningslinjene for å definere denne etterkalkuleringsversjonen:
@@ -46,6 +49,8 @@ Hvis du skal rette, justere eller oppdatere standardkostnader for mye varer, gj�
 4.  Bruk siden **Vedlikehold av etterkalkuleringsversjon** for å endre blokkeringsflagget for å tillate aktivering av ventende kostnadsposter som er vedlagt den andre etterkalkuleringsversjonen.
 5.  Bruk siden **Aktiver priser** (som du åpner fra siden **Vedlikehold av etterkalkuleringsversjon** for å aktivere alle ventende varekostnadsposter som er vedlagt den andre etterkalkuleringsversjonen. Du kan også aktivere de ventende kostnadspostene for enkelte varer ved å klikke knappen **Aktiver ventende pris** på **Varepris**-siden.
 6.  For å unngå ytterligere datavedlikehold kan du bruke siden **Oppsett av etterkalkuleringsversjon** til å endre blokkeringsflaggene som er vedlagt den andre etterkalkuleringsversjonen. Blokkeringspolicyene forhindrer innlegging av nye uavsluttede kostnader og aktivering av uavsluttede kostpriser.
+
+
 
 
 

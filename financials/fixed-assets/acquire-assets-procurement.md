@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Skaffe anleggsmidler ved hjelp av innkjøp
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelene beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler.
 
  Følgende metoder er tilgjengelige for integrering av Anleggsmidler og Leverandører, og du må bruke den samme metoden for alle anleggsmidler:
@@ -103,6 +106,8 @@ Nedenfor vises noen varianter av dette scenariet:
 -   Hvis bare et delvis antall mottas, opprettes ingen aktivaanskaffelse for den første leverandørfakturaen på grunn av brukergrupperestriksjoner. Det kan bare posteres en anskaffelse for den andre leverandørfakturaen som fullfører det bestilte antallet, hvis det allerede er registrert en anskaffelsestransaksjon for den første leverandørfakturaen, og hvis du er medlem i en brukergruppe som kan postere anskaffelser.
 
 
-Hvis du vil ha mer informasjon, se [faste anleggsmidler integrering](fixed-asset-integration.md).
+Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
+
+
 
 

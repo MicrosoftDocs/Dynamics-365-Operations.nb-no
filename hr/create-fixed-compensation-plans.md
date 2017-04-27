@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-fixed-compensation-plans"></a>Opprette faste kompensasjonsplaner
 
-Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Dette emnet beskriver komponentene må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+[!include[banner](includes/banner.md)]
 
-Beløp for fast kompensasjon kan beregnes for de ansatte basert på ulike faktorer, for eksempel ytelse, område og budsjettøkninger. Microsoft Dynamics-365 for operasjoner støtter trinn, Karakter og typer av band kompensasjon.
+
+Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+
+Beløp for fast kompensasjon kan beregnes for de ansatte basert på ulike faktorer, for eksempel ytelse, område og budsjettøkninger. Microsoft Dynamics 365 for Operations støtter kompensasjon av typene trinn, klasse og segment.
 
 ## <a name="fixed-compensation-components"></a>Komponenter i fast kompensasjon
 ### <a name="compensation-levels"></a>Kompensasjonsnivåer
 
-Du kan bruke **kompensasjonsnivåer** til å angi kompensasjon for ulike jobber, for å garantere at de ansatte som holder disse jobbene er ganske betalt. På den **kompensasjonsnivåer** siden du kan angi kompensasjonsnivåer som er nødvendig for hvert trinn, Karakter og band plan. Bruk knappene **Opp** og **Ned** til å plassere nivåene i riktig rekkefølge i henhold til typen. Når du angir kompensasjonsnivåer for en jobb, er du med på å garantere at alle ansatte som har en stilling med denne jobben, får betalt på samme nivå.
+Du kan bruke **Kompensasjonsnivåer** til å angi kompensasjon for ulike jobber, for å bidra til å sikre at de ansatte som har disse jobbene, blir rettferdig betalt. På siden **Kompensasjonsnivåer** kan du angi kompensasjonsnivåer som er nødvendig for hver trinn-, klasse- og segmentplan. Bruk knappene **Opp** og **Ned** til å plassere nivåene i riktig rekkefølge i henhold til typen. Når du angir kompensasjonsnivåer for en jobb, er du med på å garantere at alle ansatte som har en stilling med denne jobben, får betalt på samme nivå.
 
 ### <a name="reference-points"></a>Referansepunkt
 
-**Referansepunkt** er kolonnene i rutenettet som definerer kompensasjonsområdene for hvert nivå. Kompensasjonsnivået er raden i rutenettet. Vanlig referansepunkt for en plan av typen karakter er maksimum, minimum og et midtpunkt. Du kan opprette referansepunkt på den **referansepunktoppsett** siden.
+**Referansepunkt** er kolonnene i rutenettet som definerer kompensasjonsområdene for hvert nivå. Kompensasjonsnivået er raden i rutenettet. Vanlige referansepunkt for en plan av typen klasse er minimum, midtpunkt og maksimum. Du oppretter referansepunkt på siden **Referansepunktoppsett**.
 
 ### <a name="compensation-grids"></a>Kompensasjonsrutenett
 
@@ -56,11 +59,11 @@ Du kan utforme den faste kompensasjonsplanen slik at alle komponentene du har ko
 
 Du kan bruke innstillingen **Utenfor område-toleranse** til å angi hvor strengt du vil sikre at kompensasjonsbeløp er mellom minimums- og maksimumsbeløpene. En **hard** toleranse krever at kompensasjon må være innenfor området som er definert for et gitt nivå. En **myk** toleranse varsler deg når kompensasjonsbeløpet er utenfor området, men lar deg fortsette. Hvis du setter toleransen til **Ingen**, kan du angi ønsket kompensasjonsbeløp for en ansatt uten å få advarsler eller feilmeldinger. 
 
-Den **ansettelsesregelen** innstillingen lar deg angi om alle ansatte skal motta den samme økningen, uansett dato som de ble ansatt (**ansettelsesregelen** = **ingen**), eller om ansatte skal motta en prosentandel av bonus, basert på hvor lenge de ble ansatt under syklusen (**ansettelsesregelen** = **prosent**). 
+Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få den samme økningen, uavhengig av ansettelsesdatoen (**Ansettelsesregel** = **Ingen**), eller om ansatte skal få en prosent av belønningen, basert på hvor lenge de var ansatt i syklusen (**Ansettelsesregel** = **Prosent**). 
 
 En **områdeutnyttelsesmatrise** er nyttig hvis du ønsker å redusere tiden det tar for ansatte å nå midtpunktet i området, eller å øke tiden det tar for ansatte å nå det største referansepunktet i området. La oss si at du vil gi ansatte som er i de nederste 25 prosentene av området, 110 prosent av målbelønningen deres, men vil gi ansatte som er i de øverste 25 prosentene av området, bare 80 prosent av målbelønningen, for å unngå at de når maksimumet så raskt. 
 
-Når du har definert alt det grunnleggende i den faste kompensasjonsplanen, kan du definere en kompensasjonsstruktur for planen. Klikk **definerer en kompensasjon**. En glidebryter dialogboks åpnes som gir deg tre alternativer:
+Når du har definert alt det grunnleggende i den faste kompensasjonsplanen, kan du definere en kompensasjonsstruktur for planen. Klikk **Angi kompensasjon**. En dialogboks med en glidebryter åpnes og inneholder tre alternativer:
 
 -   Opprett et nytt kompensasjonsrutenett ved å velge et referansepunktoppsett og gi rutenettet et navn.
 -   Opprett et nytt kompensasjonsrutenett ved å kopiere et eksisterende rutenett du kan bruke som utgangspunkt.
@@ -71,7 +74,7 @@ Når du har valgt et alternativ, åpnes siden **Kompensasjonsstruktur**, og du k
 ## <a name="fixed-compensation-enrollment"></a>Fast kompensasjonsregistrering
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Avgjøre hvem som har rett til planen
 
-Det første trinnet i registreringen av ansatte i en fast kompensasjonsplan, er å avgjøre hvem som har rett til kompensasjonen som er definert i planen. Du kan ikke tilordne planen til ansatte før du har avgjort hvem som er berettiget. Hvis du vil definere berettigelse, kan du åpne den **rettighetsregler** siden. Her oppretter du en ny arbeidstillatelse regel for kompensasjonsplanen og definere kriteriene som en ansatt må oppfylle for å være berettiget til en plan. Du kan begrense rettighet basert på avdeling, fagforening, kompensasjonsområde (lokasjon), jobb, jobbfunksjon, jobbtype og/eller kompensasjonsnivå. Ansatte kan registreres i en kompensasjonsplan bare hvis de oppfyller alle betingelsene som er angitt i rettighetsregelen. 
+Det første trinnet i registreringen av ansatte i en fast kompensasjonsplan, er å avgjøre hvem som har rett til kompensasjonen som er definert i planen. Du kan ikke tilordne planen til ansatte før du har avgjort hvem som er berettiget. Du definerer berettigelse ved å åpne siden **Rettighetsregler**. Her oppretter du en ny rettighetsregel for kompensasjonsplanen og definerer vilkårene som en ansatt må oppfylle for å ha rett til en plan. Du kan begrense rettighet basert på avdeling, fagforening, kompensasjonsområde (lokasjon), jobb, jobbfunksjon, jobbtype og/eller kompensasjonsnivå. Ansatte kan registreres i en kompensasjonsplan bare hvis de oppfyller alle betingelsene som er angitt i rettighetsregelen. 
 
 **Obs! ** Rettighetsregler brukes til å fastsette berettigelse for både faste og variable kompensasjonsplaner. 
 
@@ -83,7 +86,7 @@ Rettighetsregelen vurderer verdien i bestemte felt i postene Jobb, Stilling og A
     -   **Nivå**-feltet i **Kompensasjon**-fanen
 -   På **Stillinger**-siden vurderer rettighetsregelen feltene **Avdeling** og **Kompensasjonsområde**.
 
-Rettighetsregelen vurderes også fagforeninger som er knyttet til ansatt (på den **ansatte** side på den **arbeider**, klikk **personlig informasjon**&gt;**fagforeninger**).
+Rettighetsregelen vurderer også fagforeninger som er knyttet til den ansatte (Klikk **Personlige opplysninger** &gt; **Fagforeninger** i **Arbeider**-fanen på **Ansatte**-siden).
 
 ### <a name="define-fixed-compensation-actions"></a>Definere handlinger for fast kompensasjon
 
@@ -93,7 +96,7 @@ Når den faste kompensasjonen er definert for en ansatt, kan bare handlinger av 
 
 ### <a name="enroll-the-employee"></a>Registrere den ansatte
 
-Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-siden, og velg den ansatte du vil registrere i kompensasjonsplanen. I handlingsruten, klikker du **kompensasjon**&gt;**fast plan**. Nå kan du opprette en ny handlingen for fast kompensasjon for den ansatt. 
+Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-siden, og velg den ansatte du vil registrere i kompensasjonsplanen. I handlingsruten klikker du **Kompensasjon** &gt; **Fast plan**. Nå kan du opprette en ny handling for fast kompensasjon. for den ansatte. 
 
 **Obs! ** Feltet for kompensasjonsplan viser bare planene som en ansatt har rett til i henhold til rettighetsreglene som ble definert for hver plan. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
 
@@ -103,5 +106,7 @@ Systemet kontrollerer at kompensasjonsbeløpet som er angitt for en kompensasjon
 --------
 
 [Kompensasjonsplaner](compensation-plans.md)
+
+
 
 

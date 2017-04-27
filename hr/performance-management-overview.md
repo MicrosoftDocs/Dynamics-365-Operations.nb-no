@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Oversikt over ytelsesstyring
 
+[!include[banner](includes/banner.md)]
+
+
 Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
 
 Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å administrere prosessen:
@@ -34,7 +37,7 @@ Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å admini
 -   Mål
 -   Medarbeidersamtale
 
-Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsen](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Ytelsesjournal
 Som ansatt, før du fullfører vurderingen, samler du ofte informasjon om aktiviteter eller hendelser som bidro til din suksess i løpet av en vurderingsperiode. Ytelsesjournalen er stedet der du kan dokumentere de aktivitetene og hendelsene. Du kan dessuten opprette fremtidige aktiviteter som må fullføres for å hjelpe deg med å oppnå et mål, oppfylle kravene i en utviklingsplan eller oppfylle en ytelsesforpliktelse. Ytelsesjournaler er ikke nødvendig for å opprette mål eller ytelsesvurderinger. 
@@ -132,7 +135,7 @@ Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av e
 Arbeidsflyten Vurdering av arbeider har to elementer:
 
 1.  Godkjenn vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Pågår** til **Klar til vurdering**. Endre tilordningen for å bruke lederhierarkiet der det overordnede nivået for ansattlinje = 1.
-2.  Endelig vurdering. Legg til dette elementet for å kontrollere statusen endres fra **klar til gjennomgang** til **endelig gjennomgang**. Endre tilordningen av å bruke lederhierarkiet der Employee.line manager nivå = 1 Hvis du vil at manager til å godkjenne den endelige gjennomgangen. Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den. Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.
+2.  Endelig vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Klar til vurdering** til **Endelig vurdering**. Endre tilordningen for å bruke lederhierarkiet der ledernivå på Employee.line = 1, hvis du vil at lederen skal godkjenne den endelige gjennomgangen. Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den. Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.
 
 ## <a name="setup"></a>Konfigurer
 Det finnes tre sider som hjelper deg med å angi informasjon som kreves for å fullføre ytelsesprosessen: siden **Målinger**, **Kildetyper for ytelsesjournal** og **Vurderingstyper**.
@@ -148,5 +151,7 @@ Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra. Du 
 ### <a name="review-types"></a>Vurderingstyper
 
 Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.
+
+
 
 

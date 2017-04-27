@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Lagerlokasjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Lagerlokasjoner brukes med grunnleggende lageraktiviteter (WMS I) til å angi hvor varene er lagret, og der varer hentes fra i et WMS I-lager.
 
 Dette emnet gjelder funksjoner i beholdningstyringsmodulen. Det gjelder ikke for funksjoner i lagerstyringsmodulen.
@@ -64,6 +67,8 @@ Det er mulig å kopiere lokasjoner fra ett lager til et annet og opprette lokasj
 <a name="see-also"></a>Se også
 --------
 
-[Opprette et nytt oppsett for lageret (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Opprette et nytt oppsett for lager (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

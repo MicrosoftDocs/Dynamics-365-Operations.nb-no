@@ -1,5 +1,5 @@
 ---
-title: Reservere den samme satsvise jobben for en salgsordre
+title: Reservere samme parti for en salgsordre
 description: "Denne artikkelen beskriver hvordan du konfigurerer et produkt til å godta reservasjon for lager mot en enkelt satsvis jobb for lager."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservere den samme satsvise jobben for en salgsordre
+# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservere samme parti for en salgsordre
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du konfigurerer et produkt til å godta reservasjon for lager mot en enkelt satsvis jobb for lager.
 
@@ -42,6 +45,8 @@ Når du reserverer beholdning for et produkt på en salgsordrelinje som er defin
 -   Partidisposisjonskoden har **Blokker reservering** for salg flagget som **Blokkert**.
 -   Partiet er utløpt, basert på utløpsdatoen og eventuelle gjeldende salgbare dager for kunde. Varen kan fortsett vurderes for reservasjon hvis varemodellgruppen for varen er FEFO-datokontrollert, og hvis best-før-datoen er valgt som plukkekriteriet.
 -   Partiet har ikke nok holdbarhetsdager igjen, basert på utløpsdatoen og best-før-datoen, i tillegg til eventuelle salgbare dager for kunde.
+
+
 
 
 

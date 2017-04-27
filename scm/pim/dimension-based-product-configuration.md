@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="dimension-based-product-configuration"></a>Dimensjonsbasert produktkonfigurasjon
 
+[!include[banner](../includes/banner.md)]
+
+
 Dimensjonsbasert produktkonfigurasjon representerer en enkel løsning for oppretting av mange produktvarianter fra én enkelt produktstandard og dens stykkliste.
 
-Dimension-baserte produktkonfigurasjon er en av de tre innebygde produkt konfigurasjon teknologiene. De to andre teknologiene er forhåndsdefinerte varianter og restriksjonsbasert konfigurasjon. Alle tre teknologiene bruker en produktstandard som utgangspunkt og lar brukeren opprette mange produktvarianter for én produktstandard.
+Dimensjonsbasert produktkonfigurasjon er én av tre innebygde teknologiene for produktkonfigurasjon. De to andre teknologiene er forhåndsdefinerte varianter og restriksjonsbasert konfigurasjon. Alle tre teknologiene bruker en produktstandard som utgangspunkt og lar brukeren opprette mange produktvarianter for én produktstandard.
 
 ## <a name="key-concepts"></a>Nøkkelbegreper
 Dimensjonsbasert produktkonfigurasjon er basert på følgende nøkkelbegreper:
@@ -68,10 +71,12 @@ Konfigurasjonsruten bestemmer rekkefølgen på konfigurasjonsgruppene, slik de v
 Konfigurasjonsreglene representerer en mekanisme for å sikre at et produkt som er inkludert i én konfigurasjonsgruppe i en stykkliste, fremtvinger en inkludering eller en utelukkelse av et produkt i en annen konfigurasjonsgruppe i samme stykklisten.
 
 ## <a name="product-modeling-process"></a>Produktmodelleringsprosess
-Den naturlige sekvensen i utviklingen av en produktmodell for et dimensjonsbasert produkt starter med definisjonen av de relevante konfigurasjonsgruppene. Det er viktig å sikre at alle produkter som skal brukes i stykklisten, er frigitt til firmaet som produktmodellen er utviklet for. Med disse byggesteinene i stedet, kan brukeren opprette Stykklisten og tilordne konfigurasjonsgrupper til alle relevante stykklistelinjer. Når Stykklisten er ferdig, kan du definere en konfigurasjonsrute for rekkefølgen konfigurasjonsgrupper i riktig rekkefølge. \[overskrifts-IDen = "vedlegg\_282671" align = "alignnone" width = "1187"\][![dimensjon-baserte produktmodeller prosessen](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) dimensjon-baserte produktmodeller prosessen\[/bildetekst\] Hvis det finnes bestemte produkter fra ulike konfigurasjonsgrupper som må eller kan ikke brukes sammen, kan du opprette Konfigurasjonsregler som vil gjennomføre disse relasjonene for produktet. Etter at stykklisten er knyttet sammen med en dimensjonsbasert produktstandard via en stykklisteversjon og begge er godkjent og aktivert, kan du opprette produktkonfigurasjoner og skrive inn et navn for hver konfigurasjon. Du kan definere konfigurasjonene før eventuelle transaksjoner er generert, eller du kan gjøre det når det er behov for en bestemt konfigurasjon.
+Den naturlige sekvensen i utviklingen av en produktmodell for et dimensjonsbasert produkt starter med definisjonen av de relevante konfigurasjonsgruppene. Det er viktig å sikre at alle produkter som skal brukes i stykklisten, er frigitt til firmaet som produktmodellen er utviklet for. Med disse byggeblokkene på plass kan brukeren opprette stykklisten og tilordne konfigurasjonsgrupper til alle relevante stykklistelinjer. Når stykklisten er fullført, kan en konfigurasjonsrute defineres for å ordne konfigurasjonsgruppene i riktig rekkefølge. \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimensjonsbasert produktmodelleringsprosess](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimensjonsbasert produktmodelleringsprosess\[/caption\] Hvis det finnes bestemte produkter fra ulike konfigurasjonsgrupper som må eller ikke kan brukes sammen, kan du opprette konfigurasjonsregler som håndhever disse produktrelasjonene. Etter at stykklisten er knyttet sammen med en dimensjonsbasert produktstandard via en stykklisteversjon og begge er godkjent og aktivert, kan du opprette produktkonfigurasjoner og skrive inn et navn for hver konfigurasjon. Du kan definere konfigurasjonene før eventuelle transaksjoner er generert, eller du kan gjøre det når det er behov for en bestemt konfigurasjon.
 
 ### <a name="suggested-use"></a>Foreslått bruk
 
 Teknologien for dimensjonsbasert konfigurasjon passer best for produkter med begrenset varians og kombinasjonen av de standard produktdimensjonene størrelse, farge, stil, og konfigurasjon er ikke egnet til å identifisere en bestemt produktvariant. Et eksempel kan være sykkel med rammehøyde, hjulstørrelse, bremstyper og ulike gir.
+
+
 
 

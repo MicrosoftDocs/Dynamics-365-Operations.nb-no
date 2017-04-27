@@ -1,5 +1,5 @@
 ---
-title: "Kanban-overføringskort støtte for strekkode skannere"
+title: "Støtte for Kanban-overføringskort for strekkodelesere"
 description: "Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-overføringskort støtte for strekkode skannere
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
+
+[!include[banner](../includes/banner.md)]
+
 
 Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 
@@ -46,13 +49,13 @@ I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, s
 <a name="registration-mode-select"></a>Registreringsmodusen Velg
 ------------------------
 
-Når du bruker en strekkodeleser til å velge en jobb, visningsmodus for endringer for kanban-kortet. I denne modusen gjelder følgende betingelser:
+Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
 
 -   Bare den skannede Kanban-jobben vises.
 -   Detaljene om den valgte jobben vises i hurtigkategorien **Detaljer**.
 -   **Meldinger**-hurtigkategorien viser meldinger bare for den valgte jobben.
 -   Du kan endre statusen på jobben ved hjelp av funksjonene som er tilgjengelige i handlingsruten. Kanban-overføringskortet fortsetter å vise bare én jobb i denne perioden.
--   Du kan oppdatere informasjonen i listen over jobber manuelt ved å klikke **Oppdater** (SKIFT + F5) i handlingsruten. Når du oppdaterer informasjonen, vises alle resultatene for jobbfilteret på nytt.
+-   Du kan oppdatere informasjonen i listen over jobber manuelt ved å klikke **Oppdater** (SKIFT+F5) i handlingsruten. Når du oppdaterer informasjonen, vises alle resultatene for jobbfilteret på nytt.
 
 ## <a name="job-status-and-possible-actions"></a>Jobbstatus og mulige handlinger
 Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-Kanbaner, bestemmer om du kan behandle jobben ytterligere. Tabellen nedenfor viser informasjon om disse statusene og oppgavene:
@@ -185,6 +188,8 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 </tr>
 </tbody>
 </table>
+
+
 
 
 

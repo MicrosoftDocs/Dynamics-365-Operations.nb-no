@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Finplanlegging
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om finplanlegging, som er en mer detaljert versjon av planlegging enn grovplanlegging. Du kan bruke jobbplanlegging for å planlegge individuelle jobber eller butikkordrer og styre produksjonsmiljøet.
 
 Du kan bruke jobbplanlegging for å planlegge individuelle jobber eller butikkordrer og styre produksjonsmiljøet. Finplanlegging deler hver operasjon inn i individuelle oppgaver eller jobber. Disse jobbene tilordnes deretter til operasjonsressursene som skal utføre dem. Finplanlegging lar deg også synkronisere alle jobber som er referert til av den valgte jobben. Du kan angi startdato og -klokkeslett eller sluttdato og -klokkeslett for jobben, og deretter kjøre planleggingen. Tidspunktet du angir, kan være start- eller sluttidspunktet, avhengig av planleggingsretningen. Denne funksjonen er nyttig når for eksempel en jobb bare kan kjøres på én maskin om gangen, eller når du ønsker å optimere jobben som kjøres for hver ressurs.
@@ -39,7 +42,7 @@ Finplanleggingsprosessen omfatter følgende oppgaver:
 -   Dele operasjoner inn i jobber.
 -   Planlegge jobber, basert på datoene og klokkeslettene for ressursene som er angitt for den tilknyttede operasjonen.
 -   Beregne start- og sluttidspunkter for hver jobb. Du kan bruke begrenset kapasitet for å være sikker på at det ikke finnes tidsoverlapping.
--   Avgjøre hvilke ressurser i ressursgruppen til å kjøre jobben på. Denne oppgaven krever at det angis en ressursgruppe for en operasjon. Finplanlegging velger ressurser eller ressursgrupper basert på kortest leveringstid og vurderer også eventuelle tidligere reserveringer for ressursene.
+-   Avgjør hvilke ressurser i ressursgruppen til å kjøre jobben på. Denne oppgaven krever at det angis en ressursgruppe for en operasjon. Finplanlegging velger ressurser eller ressursgrupper basert på kortest leveringstid og vurderer også eventuelle tidligere reserveringer for ressursene.
 -   Dele opp operasjoner i jobber når du kjører finplanlegging. Jobbene planlegges etter dato og klokkeslett i den rekkefølgen som er angitt av produksjonsruten. Oppsettet for operasjonen bestemmer jobbene som deles opp i planleggingsprosessen. Rutegruppen som er tilordnet til operasjonen, kontrollerer om jobber genereres. En jobb genereres bare hvis den har en viss varighet. En transporttidsjobb genereres for eksempel hvis transporttid er angitt for den valgte operasjonen.
 
 ## <a name="scheduling-direction"></a>Planleggingsretning
@@ -73,5 +76,7 @@ Ressurser tilordnes til jobber via finplanlegging. Du kan opprette maksimale kap
 
 ## <a name="resource-efficiency"></a>Ressurseffektivitet
 Finplanlegging tar hensyn til effektivitetsprosenter som er angitt for ressursene. Effektivitetsprosenter reduserer eller øker tiden som er reservert for ressursen. Derfor blir også leveringstiden økt eller redusert. Følgende formel brukes ved beregningen: Planleggingstid = tid x 100 ÷ effektivitetsprosenten. I denne formelen inneholder *tid* både kjøretiden og oppstillingstiden.
+
+
 
 

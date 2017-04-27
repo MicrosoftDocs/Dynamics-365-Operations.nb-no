@@ -28,44 +28,47 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen.
 
 Arbeidsområde for regnskapsperiodeavslutning
 
-Den **nær finansperiode** arbeidsområde kan du spore økonomiske lukking-prosesser på tvers av firmaer, områder og personer. Avhengig av visningen av den **nær finansperiode** arbeidsområde, vil du se enten for alle aktiviteter og status for en avsluttende tidsplan, eller bare oppgavene som er tilordnet til deg. 
+I arbeidsområdet **Regnskapsperiodeavslutning** kan du spore prosessene for regnskapsavslutning på tvers av firmaer, områder og personer. Avhengig av visningen av arbeidsområdet **Regnskapsperiodeavslutning** vil du se alle oppgaver og statuser for en avslutningstidsplan eller bare oppgavene som er tilordnet til deg. 
 
-Du må først velge en avsluttende tidsplan øverst i arbeidsområdet. Alle data som vises i arbeidsområdet er deretter filtrert etter den valgte lukking tidsplanen.
+Du må først velge en avslutningstidsplan øverst i arbeidsområdet. Alle data som vises i arbeidsområdet, blir deretter filtrert etter den valgte avslutningstidsplanen.
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 
-Flisene **Sammendrag** gir en oversikt over prosessen, og indikatorer hjelper deg med å holde avslutningsprosessen i rute. Du kan vise aktiviteter som er utløpt forfallsdato, gjenværende aktivitetene for i dag, aktiviteter som forfaller i dag, men er blokkert på grunn av avhengigheter og alle gjenstående oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte lukking tidsplanen.
+Flisene **Sammendrag** gir en oversikt over prosessen, og indikatorer hjelper deg med å holde avslutningsprosessen i rute. Du kan vise oppgaver som er utløpt, gjenværende oppgaver for i dag, oppgaver som forfaller i dag, men som er blokkert på grunn av avhengigheter, og alle andre oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte avslutningstidsplanen.
 
 ### <a name="tasks-and-status-section"></a>Delen Oppgaver og status
 
-I den **aktiviteter og** -delen, status for samlede avsluttende tidsplan er inndelt i ulike måter: status etter firma, status etter område og status etter person som er ansvarlig. Du kan vise statusen for alle aktivitetene i avsluttende planlegge, bare aktiviteter som forfaller i dag, eller aktiviteter som har forfalt ved å endre filteret på toppen av listen over kort. Du kan også velge firma-filter for å vise statusen for et bestemt selskap. Hver status-kategorien gir en oppdeling av både prosentandelen som er fullført og antall oppgaver som gjenstår. Velg kortet eller **Vis detaljer** handlingen til å filtrere listen over detaljert oppgaver ved det valgte kortet. 
+I inndelingen **Oppgaver og status** er statusen for den overordnede avslutningstidsplanen delt inn på forskjellige måter: status etter firma, status etter område og status etter person som er ansvarlig. Du kan vise statusen for alle oppgaver i avslutningstidsplanen, bare oppgaver som forfaller i dag eller oppgaver som er forfalt, ved å endre filteret øverst på kortlisten. Du kan også velge firmafilteret for å vise statusen for et bestemt firma. Hver statuskategori gir en detaljert oversikt over både prosenten som er fullført og hvor mange oppgaver som gjenstår. Klikk kortet eller handlingen **Vis detaljer om** for å filtrere den detaljerte oppgavelisten etter det valgte kortet. 
 
-Den siste fanen er for detaljert aktivitets-listen. Denne listen viser full oppgavelisten kan filtreres slik at den viser bare aktivitetene som du er interessert i. Du kan filtrere listen over oppgaver på flere måter. Du kan for eksempel filtrere etter oppgave forfallsdato, tilknyttede selskap og tilknyttede området. Du kan også velge å vise eller skjule fullførte oppgaver i oppgavelisten. 
+Den siste kategorien er for den detaljerte oppgavelisten. Denne listen viser hele oppgavelisten og kan filtreres slik at den viser bare viser oppgavene som du er interessert i. Du kan filtrere listen over oppgaver på flere måter. Du kan for eksempel filtrere etter forfallsdato for oppgave, tilknyttet firma og tilknyttet området. Du kan også velge å vise eller skjule fullførte oppgaver i oppgavelisten. 
 
 To indikatorer brukes for oppgaver:
 
--   Et utropstegn ikon angir at oppgaven er forfalt. Forfallsdatoen er også uthevet i rødt for aktiviteter som har forfalt.
--   En hengelås-ikon angir at aktiviteten er avhengig av andre aktiviteter som ikke er fullført ennå. En aktivitet som er blokkert av avhengigheter kan ikke merkes som fullført. Du kan angi avhengigheter for en aktivitet ved hjelp av **angir avhengighet** handling.
+-   Et utropstegnikon angir at oppgaven er forfalt. Forfallsdatoen er også uthevet i rødt for aktiviteter som har forfalt.
+-   En hengelåsikon angir at oppgaven er avhengig av andre aktiviteter som ikke er fullført ennå. En oppgave som er blokkert av avhengigheter, kan ikke merkes som fullført. Du kan angi avhengigheter for en oppgave ved hjelp av handlingen **Angi avhengighet**.
 
-Navnet på aktiviteten er en hyperkobling til Microsoft Dynamics 365 for operasjoner-siden eller andre webside hvor brukeren må gå for å fullføre arbeidet. Du kan angi denne hyperkoblingen ved hjelp av **aktivitetskobling** -feltet når du redigerer eller opprette en oppgave. 
+Oppgavenavnet er en hyperkobling til Microsoft Dynamics 365 for Operations-siden eller en annen nettside brukeren må gå til for å fullføre arbeidet. Du kan angi denne hyperkoblingen ved hjelp av **Oppgavekobling**-feltet når du redigerer eller oppretter en oppgave. 
 
-Du kan legge ved filer, notater, bilder og URL-adresser til en aktivitet ved hjelp av den **vedlegg** handling. Du kan for eksempel angi journalnumre som brukes som en del av en oppgave, legge til kommentarer om en bestemt aktivitet, eller legge ved en rapportfil som ble skrevet ut for en aktivitet. Et ikon vises i den **vedlegg** kolonnen for aktiviteten hvis det finnes et vedlegg. 
+Du kan knytte filer, notater, bilder og nettadresser til en oppgave ved hjelp av handlingen **Vedlegg**. Du kan for eksempel angi journalnumre som brukes som en del av en oppgave, legge til kommentarer om en bestemt oppgave eller legge ved en rapportfil som ble skrevet ut for en oppgave. Et ikon vises i **Vedlegg**-kolonnen for oppgaven hvis det finnes et vedlegg. 
 
-Den **fullføre oppgaven** alternativet må velges manuelt etter at aktiviteten er fullført. Når en aktivitet er merket som fullført, den **fullført dato** feltet oppdateres automatisk til den gjeldende dato og klokkeslett. Avhengighet indikatorer oppdateres også etter behov.
+Alternativet **Oppgave fullført** må velges manuelt etter at oppgaven er fullført. Når en oppgave er merket som fullført, oppdateres feltet **Fullføringsdato** automatisk til gjeldende dato og klokkeslett. Avhengighetsindikatorer oppdateres også etter behov.
 
 ## <a name="all-financial-period-close-tasks-list-page"></a>Listeside for alle oppgaver ved regnskapsperiodeavslutning
-Du kan vise alle gjeldende og forrige periode Lukk aktiviteter fra det **alle finansperiode Lukk aktiviteter** listesiden. Listesiden denne er best til historisk analyse av avslutningsprosessen, fordi den inneholder informasjon om den planlagte forfallsdato, den faktiske sluttdatoen, og personen som har fullført oppgaven. Du kan enkelt eksportere informasjonen på denne listeside til Microsoft Excel for rapportering og overvåking formål.
+Du kan vise alle gjeldende og forrige periodes avslutningsoppgaver fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**. Denne listesiden bør brukes for historiske analyse av avslutningsprosessen, fordi den inneholder informasjon om den planlagte forfallsdato, den faktiske sluttdatoen og personen som fullførte oppgaven. Du kan enkelt eksportere informasjonen på denne listesiden til Microsoft Excel for rapportering og revisjon.
 
 ## <a name="financial-period-close-configuration-page"></a>Side for konfigurasjon av regnskapsperiodeavslutning
-Før du kan bruke den **nær finansperiode** arbeidsområde, må du konfigurere prosessen i Microsoft Dynamics 365 for operasjoner ved hjelp av den **økonomisk periode Lukk konfigurasjon** siden. (Klikk **Økonomi**&gt;**Lukk periode**&gt;**økonomisk periode Lukk konfigurasjon**.)
+Før du kan bruke arbeidsområdet **Regnskapsperiodeavslutning**, må du konfigurere prosessen i Microsoft Dynamics 365 for Operations ved hjelp av siden **Konfigurasjon av regnskapsperiodeavslutning**. (Klikk **Økonomimodul** &gt; **Periodeavslutning** &gt; **Konfigurasjon av regnskapsperiodeavslutning**.)
 
 ### <a name="resources"></a>Ressurser
 
-På den **ressurser** i kategorien kan du definere hvem som er involvert i de avsluttende prosessene. Alle ansatte som skal være ansvarlig for en avsluttende oppgave må først være tilordnet her. Du må også angi den ansattes visning av arbeidsområdet. Følgende alternativer er tilgjengelige:
+I kategorien **Ressurser** definerer du personene som er involvert i avslutningsprosessene. Alle ansatte som skal være ansvarlige for en avslutningsoppgave, må først tilordnes her. Du må også angi den ansattes visning av arbeidsområdet. Følgende alternativer er tilgjengelige:
 
 -   **Bare tilordnede oppgaver** – Brukeren ser bare oppgavene som er tilordnet ham eller henne.
 -   **Alle oppgaver og status** – Brukeren ser alle avslutningsoppgaver og statusen for hele prosessen.
@@ -78,30 +81,32 @@ Du kan bruke oppgaveområder til å gruppere avslutningsoppgaver i logiske eiers
 
 ### <a name="calendars"></a>Kalendere
 
-Opprett og Rediger økonomiske avsluttende kalendere ved hjelp av kategorien kalendere.  Dette er der du vil definere virkedager for lukking av prosesser, og vil bli brukt til planlegging av oppgaver for lukking.  Opprette en ny kalender, og angi arbeidsdager som skal brukes for aktivitetsplanlegging av.  Det er best å opprette en kalender for lang periode, for eksempel et år eller flere år, siden det kan redigeres etter oppretting.  Når du har opprettet kalenderen, klikker du Rediger-knappen for å oppdatere kalenderen for bestemte dager, for eksempel ferier.  Lukke aktiviteter planlegges på dager når verdien for kontrollen er satt til åpen.  Hvis lukke aktiviteter ikke skal planlegge på en bestemt dag, bør denne dagen har kontroll-verdien som er angitt til lukket.
+Opprett og rediger regnskapskalendere for avslutning ved hjelp av kategorien Kalendere.  Her definerer du virkedager for å avslutningsprosesser, og denne brukes til planlegging av avslutningsoppgaver.  Opprett en ny kalender, og angi virkedagene som skal brukes for oppgaveplanlegging.  Det er best å opprette en kalender for lengre tidsrom, for eksempel ett eller flere år, siden dette kan redigeres etter oppretting.  Når du har opprettet kalenderen, klikker du Rediger-knappen for å oppdatere kalenderen for bestemte dager, for eksempel ferier.  Avslutningsoppgaver planlegges på dager Kontrollverdi er satt til Åpen.  Hvis du avslutningsoppgaver ikke skal planlegges på en bestemt dag, må Kontrollverdi være satt Lukket.
 
 ### <a name="templates"></a>Maler
 
-Du bruker en økonomisk Lukk mal til å definere alle aktiviteter som er del av en avsluttende prosess. En avsluttende oppgave er en regelmessig innsats for arbeid som er tilordnet til en person å fullføre som en del av hver prosess for lukking. I malen, en relativ forfallsdato dato må defineres for hver aktivitet i avsluttende. Den relative forfallsdatoen dato er antallet dager før eller etter den definerte periodens slutten dato som aktiviteten vil bli forfaller hver periode. En forfallstidspunktet også er tildelt hver aktivitet. Forfallstidspunktet angis ved hjelp av konteksten til din tidssone, og vil bli konvertert til tidssonen for hver bruker. 
+Du kan bruke en mal for regnskapsavslutning til å definere alle oppgaver som er en del av en avslutningsprosess. En avslutningsoppgave er en gjentakende arbeidsinnsats som er tilordnet til en person for fullføring som en del av hver avslutningsprosess. I malen må det være definert en relativ forfallsdato for hver avslutningsoppgave. Den relative forfallsdatoen er antall dager før eller etter den definerte periodesluttdatoen som oppgaven forfaller på for hver periode. Et forfallstidspunkt tilordnes også til hver oppgave. Forfallstidspunktet angis ved hjelp av konteksten til din tidssone, og konverteres til tidssonen for hver bruker. 
 
-Du kan tilordne en oppgave i malen til ett eller flere firmaer der dette gjelder. Hvis en annen person er tilordnet til å fullføre arbeidet innsatsen i hvert firma, kan det være nyttig å opprette flere aktiviteter for den samme innsatsen for arbeid. Opprett én oppgave for hvert firma. 
+Du kan tilordne en oppgave i malen til ett eller flere firmaer der denne oppgaven gjelder. Hvis en annen person er tilordnet for å fullføre arbeidsinnsatsen i hvert firma, kan det være nyttig å opprette flere oppgaver for den samme arbeidsinnsatsen. Opprett én oppgave for hvert firma. 
 
-Den **aktivitetskobling** er knyttet til aktiviteten arbeid innsats og kan brukes til å gå direkte til den tilknyttede siden fra aktivitetskoblingen i arbeidsområdet. For eksempel en avsluttende oppgave skal kjøre valuta omvurdering for leverandører kan kobles til den tilknyttede **revaluering av utenlandsk valuta** -siden i Microsoft Dynamics 365 for operasjoner. Du kan også koble til en ekstern nettadresse. 
+Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Microsoft Dynamics 365 for Operations. Du kan også koble til en ekstern nettadresse. 
 
-> [! Tips] Hvis du vil koble en bestemt Management Reporter-rapport til en økonomisk periode Lukk aktivitet, kan du bruke rapporten URL-adressen. Hvis du vil ha tilgang til URL-adressen for rapporten, åpner du rapporten i report designer, og klikk deretter **fil**&gt;**vise rapporten** å åpne rapporten i en webleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 
+> Tips: Hvis du vil koble en spesifikk Management Reporter-rapport til en oppgave ved regnskapsperiodeavslutning, kan du bruke nettadressen for rapporten. Hvis du vil ha tilgang til nettadressen for rapporten, åpner du rapporten i rapportutformingen, og deretter klikker du **Fil** &gt; **Vis rapport** for å åpne rapporten i en nettleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 
 
-Du kan definere aktivitetsavhengigheter i malen. Hvis en aktivitet er satt opp, avhenger av én eller flere aktiviteter, kan aktiviteten ikke merkes som fullført før alle avhengigheter er fullført. 
+Du kan definere oppgaveavhengigheter i malen. Hvis en oppgave er definert til å være avhengig av én eller flere oppgaver, kan den ikke merkes som fullført før alle avhengigheter er fullført. 
 
-Du kan opprette flere økonomiske Lukk maler. Du kan deretter bruke ulike maler til å spore de avsluttende prosessene for perioden forskjellig, for eksempel måned slutten eller slutten av året, eller spore firmaer som bruker forskjellige avsluttende prosesser. Når du oppretter en mal, kan du kopiere den til en ny mal og foreta de nødvendige endringene. Du kan tilordne bare én mal til hver avsluttende tidsplan.
+Du kan opprette flere maler for regnskapsavslutning. Du kan deretter bruke de forskjellige malene til å spore avslutningsprosessene for forskjellige periodetyper, for eksempel månedsavslutning eller årsavslutning, eller til å spore firmaer som bruker de forskjellige avslutningsprosesser. Når én mal er opprettet, kan du kopiere den til en ny mal og gjøre de nødvendige endringene. Bare én mal kan tilordnes hver avslutningstidsplan.
 
 ### <a name="closing-schedules"></a>Lukkingstidsplaner
 
-Du kan bruke en avsluttende plan til å tilordne en økonomisk Lukk mal til en bestemt økonomisk periode som må lukkes. Oppgaver fra malen deretter genereres automatisk for den angitte perioden, og den nye tidsplanen for lukking er lagt til i arbeidsområdet. Når du oppretter en ny plan for lukking av **sluttdato for perioden** feltet brukes til å fastslå den faktiske forfallsdatoen sluttdatoene for aktivitetene lukking, basert på den relative forfallsdatoen dato som er tilordnet i økonomiske Lukk malen. 
+Du kan bruke en avslutningstidsplan til å tilordne en mal for regnskapsavslutning til en bestemt regnskapsperiode som skal avsluttes. Oppgavene fra malen genereres deretter automatisk for den angitte perioden, og den nye avslutningstidsplanen blir lagt til arbeidsområdet. Når du oppretter en ny avslutningstidsplan, brukes feltet **Periodens sluttdato** til å fastsette de faktiske forfallsdatoene for avslutningsoppgavene, basert på den relative forfallsdatoen som er tilordnet i malen for regnskapsavslutning. 
 
-Tilordne kalender som er egnet for lukking planen, for å angi arbeidsdager som skal brukes ved aktivitetsplanlegging av. Hvis du ikke definerer en bestemt kalender, forfallsdatoene datoer vil bruke alle dager i uken. 
+Tilordne den aktuelle kalenderen til avslutningstidsplanen for å angi virkedager som skal brukes ved oppgaveplanleggingen. Hvis du ikke definerer en bestemt kalender, bruker forfallsdatoene for oppgavene alle ukedagene. 
 
-Du må også definere selskapene som skal knyttes til den avsluttende tidsplanen. Hvis malen oppgavene tilordnes til flere firmaer, opprettes separate oppgaver for hvert firma som er i avsluttende tidsplanen og tildelt aktiviteten mal. 
+Du må også definere firmaene som skal knyttes til avslutningstidsplanen. Hvis maloppgaver tilordnes til flere firmaer, blir det opprettet separate oppgaver for hvert firma som er i avslutningstidsplanen, og de blir tildelt maloppgaven. 
 
-Etter en tidsplan for lukkingen er fullført, velger du **lukket** alternativ for den. Oppgaveloggen vil fremdeles være tilgjengelig fra den **alle finansperiode Lukk aktiviteter** listeside, men lukking-tidsplanen, fjernes fra arbeidsområdet. Etter at en lukking tidsplan er merket som **lukket**, du kan ikke legge til aktiviteter, redigere aktiviteter eller fjerne oppgaver fra den.
+Når en avslutningstidsplan er fullført, velger du alternativet **Lukket** for den. Oppgaveloggen vil fortsatt være tilgjengelig fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**, men avslutningstidsplanen vil bli fjernet fra arbeidsområdet. Når en avslutningstidsplan er merket som **Lukket**, kan du ikke legge til oppgaver i den, redigerer oppgaver eller fjerne oppgaver fra den.
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="lean-manufacturing-overview"></a>Oversikt over lean manufacturing
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Microsoft Dynamics AX.
 
 Lean-produksjon tilbyr verktøy som du kan bruke til å modellere lean-operasjoner. Disse verktøyene støtter og fremmer følgende konsepter og forretningsaktiviteter:
@@ -49,7 +52,7 @@ For å opprette et grunnlag for lean-produksjon modelleres produksjons- og logis
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Bruke kanbaner til å signalisere behovskrav
 Et pull-system produserer varer bare når varer er nødvendige. Denne fremgangsmåten reduserer leveringstider og overflødig lager. Du kan bruke kanbaner til å planlegge, spore og behandle krav som er basert på produksjonsflyter. Hvis du vil opprette en kanban-struktur, oppretter du kanban-regler som definerer når kanbaner opprettes, og hvordan kravene oppfylles. Du kan opprette to typer kanban-regler. Produksjonsregler oppretter kanban-jobber for prosesser, og kanban-regler for uttak oppretter kanban-jobber for overføring. Du kan definere følgende etterfyllingsstrategier:
--   Kanban-regler med **Fast antall** er knyttet til et bestemt antall behandlingsenheter, som betyr at antall aktive kanbaner er konstant. Når alle produktene fra en Kanban forbrukes og tømmes manuelt for behandling av enheter, opprettes en ny kanban av samme type. Når du oppretter fast antall kanban-regler, kan du beregne optimal kanban-antall og produktantall for som brukes. Beregningen tar i betraktning prognose, faktisk etterspørsel fra åpne ordrer, leveringstid for å etterfylle varer og historiske behov.
+-   Kanban-regler med **Fast antall** er knyttet til et bestemt antall behandlingsenheter, som betyr at antall aktive kanbaner er konstant. Når alle produktene fra en kanban forbrukes og tømmes manuelt for behandling av enheter, opprettes en ny kanban av samme type. Når du oppretter et fast antall kanban-regler, kan du beregne optimalt kanban-antall og produktantall for som brukes. Beregningen tar i betraktning prognose, faktisk etterspørsel fra åpne ordrer, leveringstid for å etterfylle varer og historiske behov.
 -   **Planlagte** kanban-regler etterfyller behov som er beregnet av hovedplanlegging. Hovedplanlegging genererer planlagte Kanbaner som kan autoriseres til Kanbaner.
 -   Kanban-regler for **hendelse** etterfyller behov som kommer fra salgsordrelinjer, stykklistelinjer for produksjon, Kanban-linjer eller minimumslagerinnstillinger. Når hendelses-Kanbaner genereres, knyttes de til kildebehov.
 
@@ -76,6 +79,8 @@ Kanban-jobber er fullstendig integrert med prosesser for lagertransaksjoner i Mi
 I tillegg støtter lean-produksjon innkjøps- og faktureringsprosesser for tjenester som er referert til av aktiviteter i underleveranser.
 -   Du kan tilordne kjøpsavtalelinjer og tjenester til aktiviteter i underleveranser.
 -   Du kan opprette periodiske bestillinger og mottaksmeldinger for å støtte kjøp og fakturering av tjenestene.
+
+
 
 
 

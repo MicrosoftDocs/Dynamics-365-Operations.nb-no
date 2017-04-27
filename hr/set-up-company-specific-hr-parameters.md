@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Definere firmaspesifikke parametere for Personale
 
+[!include[banner](includes/banner.md)]
+
+
 Innstillingene for noen parametere for Personale deles mellom firmaer, mens innstillingene for andre parametere er firmaspesifikke. Denne artikkelen forklarer hvordan du konfigurerer firmaspesifikke Personale-parametere.
 
 To sider brukes til å angi Personale-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parameterne som er firmaspesifikke (altså innstillingene gjelder ett enkelt firma), bruker du siden **Personalparametere**. På siden **Personalparametere** er innstillingene delt inn i seks kategorier:
@@ -42,9 +45,9 @@ Hver kategori inneholder informasjon som gjelder ett enkelt firma. Innstillingen
 
 Innstillingene i kategorien **Rekruttering** definerer dokumenttypene som skal brukes korrespondanse som sendes automatisk til søkerne, og rekrutteringsprosjektet som skal brukes for uanmodede søknader (søknader som ikke er for et bestemt rekrutteringsprosjekt). Perioden som er definert for aldersfordeling for rekrutteringsprosjekt bestemmer Rekrutteringsprosjektene som er inkludert i flisen **Aldersfordelingsprosjekter** i arbeidsområdet **Rekrutteringsstyring** . Perioden som er definert for advarselen for tidsfrist for søknad brukes til å vise rekrutteringsprosjekter som nærmer seg sin Søknadsfrist på flisen **Søknadsfristen nærmer seg** i arbeidsområdet **Rekruttering**. 
 
-Innstillingene på den **kompensasjon** kategorien definerer om brukere må bekrefte at de ønsker å lagre informasjon for en fast eller variabel kompensasjonsplan. Hvis du velger den **Aktiver Lagre validering** merket, helst at brukere lukker en kompensasjon-relaterte side, får de en melding som spør om de vil lagre posten. Noen sider i kompensasjonsstyring la ikke brukere sletter informasjon. Derfor ved å be brukerne bekrefte at de vil lagre informasjon, kan du kunne begrense mengden av informasjon som lagres, men som ikke kan slettes senere. Hvis det ikke er merket av for **Aktiver lagring av validering**, lagres alltid poster umiddelbart, muligens før brukeren er klar. Hvis du bruker ytelsesstyring, lar kategorien **Kompensasjon** deg også velge en vurderingsmodell å bruke i stedet for modellen som er tilordnet til kompensasjonsplaner når ytelse rangeres. 
+Innstillingene i kategorien **Kompensasjon** definerer om brukere må bekrefte at de vil lagre informasjon for en fast eller variabel kompensasjonsplan. Hvis du merker av for **Aktiver lagring av validering**, mottar brukere en melding som spør om de vil lagre posten hver gang de lukker en kompensasjonsrelatert side. Noen av sidene i kompensasjonsstyring lar ikke brukere slette informasjon. Derfor ved å be brukerne bekrefte at de vil lagre informasjon, kan du kunne begrense mengden av informasjon som lagres, men som ikke kan slettes senere. Hvis det ikke er merket av for **Aktiver lagring av validering**, lagres alltid poster umiddelbart, muligens før brukeren er klar. Hvis du bruker ytelsesstyring, lar kategorien **Kompensasjon** deg også velge en vurderingsmodell å bruke i stedet for modellen som er tilordnet til kompensasjonsplaner når ytelse rangeres. 
 
-Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde tall sekvens referanser og koder, kan du bruke den **nummerserier** listesiden (Klikk **organisasjonsadministrasjon**&gt;**nummerserier**&gt;**nummerserier**). 
+Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier** (klikk på **Organisasjonsstyring** &gt; **Nummerserier** &gt; **Nummerserier**). 
 
 Innstillingene i kategorien **FMLA** definerer hvor mange timer en ansatt må arbeide for å være kvalifisert for FMLA-fordeler, lengden på ansettelse som er nødvendig for berettigelse, og ansettelsesforholdets startdato som brukes til å fastslå lengden på ansettelse. Innstillingene definerer også antallet FMLA-timer som ansatte er berettiget til og FMLA-kalenderen som brukes til å beregne hvor mange FMLA-timer ansatte har brukt. Kategorien **FMLA** er bare tilgjengelig for firmaer i USA. 
 
@@ -54,5 +57,7 @@ Innstillingene i kategorien **FMLA** definerer hvor mange timer en ansatt må ar
 --------
 
 [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md)
+
+
 
 

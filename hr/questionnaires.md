@@ -1,6 +1,6 @@
 ---
 title: "Spørreskjemaer"
-description: "Dette emnet gir generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene."
+description: "Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="questionnaires"></a>Spørreskjemaer
 
-Dette emnet gir generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
+[!include[banner](includes/banner.md)]
 
-Du kan tilpasse et spørreskjema for å passe til dine spesifikke behov ved hjelp av forskjellige funksjoner som er tilgjengelige i Microsoft Dynamics 365 for operasjoner. Her er noen eksempler på hvordan spørreskjemaer kan brukes:
+
+Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
+
+Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike funksjoner som er tilgjengelige i Microsoft Dynamics 365 for Operations. Her er noen eksempler på hvordan spørreskjemaer kan brukes:
 
 -   Teste ferdighetene til ansatte og søkere.
 -   Vurdere om kursdeltakere har lært kursmateriellet.
@@ -42,9 +45,9 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 
 | Emne| beskrivelse|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Denne artikkelen inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer.                                                                                        |
+| [Utforme et spørreskjema](design-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
+| [Distribuere og fylle ut et spørreskjema](distribute-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer.                                                                       |
+| [Vise og evaluere resultatene i et spørreskjema](evaluate-questionnaire-results.md) | Denne artikkelen inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer.                                                                                        |
 
 
 
@@ -55,6 +58,8 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 
 [Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
 
-[Vise og evaluere resultatene for spørreskjemaer](evaluate-questionnaire-results.md)
+[Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
+
+
 
 

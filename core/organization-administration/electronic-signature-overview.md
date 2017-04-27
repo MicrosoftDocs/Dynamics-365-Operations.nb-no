@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Oversikt over elektronisk signatur
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-an-electronic-signature"></a>Hva er en elektronisk signatur?
@@ -35,7 +38,7 @@ Denne artikkelen gir en oversikt over elektroniske signaturer, og beskriver hvor
 En elektronisk signatur bekrefter identiteten til en person som er i ferd med å starte eller godkjenne en dataprosess. I noen bransjer er en elektronisk signatur like bindende som er håndskrevet signatur. Elektroniske signaturer er et krav til samsvar med lovgivning for flere regulerte industrier, for eksempel legemiddelindustrien, matvareindustrien og romfarts- og forsvarsindustrien. De er også nødvendig for samsvar med lovgivningen i 21 CFR Part 11 som er utstedt av Food and Drug Administration (FDA) i USA. **Obs! ** En elektronisk signatur alene er ikke det samme som en digital signatur. En elektronisk signatur er bare en erstatning for en håndskrevet signatur, mens en digital signatur gir flere sikkerhetstiltak. En digital signatur kan hjelpe med å identifisere om en annen bruker eller prosess har endret dataene på en ulovlig måte. En digital signatur kan også verifiseres, og denne verifiseringen kan ikke imøtegås av eieren av sertifikatet som ble brukt til å signere dataene. Som beskrevet nedenfor har elektroniske signaturer i Microsoft Dynamics 365 for Operations innebygd funksjonalitet for digital signatur.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektroniske signaturer i Dynamics 365 for Operations
-I Dynamics 365 for Operations kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt. Elektroniske signaturer har innebygd funksjonalitet for digital signatur. Alle brukere som signerer dokumenter, må ha et gyldig kryptografisk sertifikat. Når et dokument signeres, valideres den private nøkkelen som er tilordnet dette sertifikatet. Dynamics 365 for Operations registrerer informasjon om elektronisk signatur i en logg for å angi et revisjonsspor. Hvis du vil definere elektroniske signaturer, kan du se [opprette elektroniske signaturer (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+I Dynamics 365 for Operations kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt. Elektroniske signaturer har innebygd funksjonalitet for digital signatur. Alle brukere som signerer dokumenter, må ha et gyldig kryptografisk sertifikat. Når et dokument signeres, valideres den private nøkkelen som er tilordnet dette sertifikatet. Dynamics 365 for Operations registrerer informasjon om elektronisk signatur i en logg for å angi et revisjonsspor. Hvis du vil definere elektroniske signaturer, kan du se [Opprette elektroniske signaturer (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Brukere som trenger tilgang til elektroniske signaturer
 Tre typer brukere krever vanligvis sikkerhetstilgang til elektroniske signaturer: administratorer for elektroniske signaturer, signatarer og revisorer for elektroniske signaturer.
@@ -78,6 +81,8 @@ Noen ganger kan det hende at du vil at en bruker skal signere for en annen bruke
 1.  På siden **Alternativer** i kategorien **Kontoer**, klikker du **Angi godkjenner**.
 2.  I feltet **Bruker-ID for godkjenner** velger du ID-en for brukeren som må signere for en annen brukers endringer.
 3.  I feltet **Signer for bruker-ID** velger du ID-en til brukeren som har endringer det må signeres for.
+
+
 
 
 

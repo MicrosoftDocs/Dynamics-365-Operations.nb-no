@@ -1,5 +1,5 @@
 ---
-title: Oversikt over kvalitet
+title: Oversikt over kvalitetsstyring
 description: "Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Operations for å forbedre produktkvalitet i forsyningskjeden."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Oversikt over kvalitet
+# <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Operations for å forbedre produktkvalitet i forsyningskjeden.
 
@@ -344,7 +347,7 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 </tr>
 <tr class="even">
 <td>Testvariabelresultater</td>
-<td>Bruk denne siden til å definere, redigere og vise de mulige testresultatene for en testvariabel som er knyttet til en kvalitetstest. For hvert resultat tilordner du statusen <strong>bestått</strong> eller <strong>mislykket</strong>. Du må definere en variabel og resultatene for hver kvalitative test som defineres på siden <strong>Tester</strong>. (Kvalitative tester testtypen er satt til <strong>alternativet</strong> på den <strong>tester</strong> siden.) Bruk av <strong>testgrupper</strong> siden til å tilordne en testvariabel og standardresultatet til en enkelt kvalitetstest.</td>
+<td>Bruk denne siden til å definere, redigere og vise de mulige testresultatene for en testvariabel som er knyttet til en kvalitetstest. For hvert resultat tilordner du statusen <strong>bestått</strong> eller <strong>mislykket</strong>. Du må definere en variabel og resultatene for hver kvalitative test som defineres på siden <strong>Tester</strong>. (For kvalitative tester er testtypen satt til <strong>Alternativ</strong> på <strong>Tester</strong>-siden.) Bruk <strong>Testgrupper</strong>-siden til å tilordne en testvariabel og standardresultatet til en enkelt kvalitetstest.</td>
 <td>En produksjonsfirma som produserer kjeks, bruker en inspeksjonstest til det ferdige produktet. Denne inspeksjonstesten har flere variabler. Én variabel er smak, og de mulige resultatene for denne variabelen er god og dårlig. En annen variabel er farge, og de mulige resultatene er for mørk, for lys og riktig. Statusen <strong>bestått</strong> eller <strong>mislykket</strong> tilordnes hvert resultat. Under inspeksjonstesten for hver variabel rapporterer inspektøren testresultatet ved å velge ett av resultatene.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 <a name="see-also"></a>Se også
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Kvalitetsstyringsprosesser](quality-management-processes.md)
 
 [Aktivere behandling av avvik](enable-nonconformance-management.md)
+
+
 
 

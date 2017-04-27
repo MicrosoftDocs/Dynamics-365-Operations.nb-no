@@ -27,32 +27,35 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer. Betalingsforslag brukes ofte til å opprette leverandørbetalinger fordi spørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på kriterier som forfallsdato og kontantrabatt. 
 
 Organisasjoner bruker ofte betalingsforslag til å opprette leverandørbetalinger fordi betalingsforslagsspørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på forfallsdatoen, kontantrabatten og andre kriterier. 
 
-Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alternativer for å velge fakturaer som skal betales. Den **Parameter** kategorien inneholder alternativer som et flertall av organisasjonen ofte bruker. På den **poster du vil inkludere** hurtigfanen, kan du angi hvilke fakturaer eller leverandører som skal inkluderes for betaling ved å definere områder for ulike egenskaper. For eksempel hvis du ønsker å betale et bestemt område av leverandører, kan du definere et filter for leverandør-området. Denne funksjonaliteten brukes ofte til å velge fakturaer for en bestemt av betalingsmåte. For eksempel, hvis du definerer et filter der **betalingsmåte** = **se**, bare fakturaer som har denne betalingsmåten som er valgt for betaling, forutsatt at de også oppfyller andre vilkår som er angitt i spørringen. **Avanserte parametere**-kategorien inneholder flere alternativer, der kanskje ikke alle er relevante for organisasjonen. Denne kategorien inneholder for eksempel alternativer for å betale fakturaer for sentraliserte betalinger.
+Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alternativer for å velge fakturaer som skal betales. **Parameter**-kategorien inneholder alternativer som et flertall av organisasjonen ofte bruker. På hurtigfanen **Poster som skal inkluderes** kan du angi hvilke fakturaer eller leverandører som skal inkluderes for betaling ved å definere områder for ulike egenskaper. Hvis du for eksempel ønsker å betale et bestemt område av leverandører, kan du definere et filter for leverandørområdet. Denne funksjonaliteten brukes ofte til å velge fakturaer for en bestemt betalingsmåte. Hvis du for eksempel definerer et filter der **Betalingsmåte** = **Sjekk**, velges bare fakturaer som har denne betalingsmåten for betaling, forutsatt at de også oppfyller andre vilkår som er angitt i spørringen. **Avanserte parametere**-kategorien inneholder flere alternativer, der kanskje ikke alle er relevante for organisasjonen. Denne kategorien inneholder for eksempel alternativer for å betale fakturaer for sentraliserte betalinger.
 
 ## <a name="parameters"></a>Parametere
--   **Velge fakturaer ved** – fakturaer innenfor datointervallet som er angitt av den **fra dato** og **til dato** felt kan velges etter forfallsdato, kontantrabattdato eller begge deler. Hvis du bruker kontantrabattdatoen, systemet søker etter fakturaer som har en dato for kontantrabatt mellom den fra dato og til dato. Systemet bestemmer deretter om fakturaen er kvalifisert for kontantrabatt ved hjelp av øktdatoen, for å være sikker på at kontantrabattdatoen ikke allerede er passert.
+-   **Velg fakturaer etter** – Fakturaer innenfor datointervallet som er angitt av feltene **Fra dato** og **Til dato**, kan velges etter forfallsdato, kontantrabattdato eller begge deler. Hvis du bruker kontantrabattdatoen, søker systemet etter fakturaer som har en kontantrabattdato mellom Fra dato og Til dato. Systemet bestemmer deretter om fakturaen er kvalifisert for kontantrabatt ved hjelp av øktdatoen, for å være sikker på at kontantrabattdatoen ikke allerede er passert.
 -   **Fra dato** og** Til dato** – Fakturaer som har en forfallsdato eller kontantrabattdato innenfor dette datointervallet, velges for betaling.
 -   **Betalingsdato** – Hvis en dato er definert, opprettes alle fakturaer på denne datoen. Feltet **Minste betalingsdato** ignoreres.
--   **Minste betalingsdato** – Angi minste betalingsdato. For eksempel den **fra datoen** og **til datoen** felt angir et område fra September 1 til 10 September, og den minste betalingsdatoen er 5 September. I dette tilfellet har alle fakturaer med forfallsdato fra September 1 til 5 September en betalingsdato for September 5. Alle fakturaer med forfallsdato fra September 5 til 10 September har imidlertid en betalingsdato som er lik forfallsdatoen for hver faktura.
+-   **Minste betalingsdato** – Angi minste betalingsdato. Feltene **Fra dato** og **Til dato** angir for eksempel et område fra 1. september til 10. september, og den minste betalingsdatoen er 5. september. I dette tilfellet har alle fakturaer med forfallsdato fra 1. september til 5. september, betalingsdatoen for 5. september. Alle fakturaer med forfallsdato fra 5. september til 10. september har imidlertid en betalingsdato som er lik forfallsdatoen for hver faktura.
 -   **Beløpsgrense** – Angi maksimalt totalbeløp for alle betalinger.
--   **Opprett betalinger uten forhåndsvisning av faktura** – Hvis dette alternativet er satt til **Ja**, betalinger vil bli opprettet umiddelbart på de **leverandørbetalinger** siden. Den **betalingsforslag** blir siden utelatt. Derfor opprettes betalinger raskere. Betalinger kan fremdeles endres på **Leverandørbetalinger**-siden. Du kan også gå tilbake til **Betalingsforslag**-siden ved hjelp av knappen **Rediger fakturaer for valgt betaling**.
+-   **Opprett betalinger uten forhåndsvisning av faktura** – Hvis du setter alternativet til **Ja**, opprettes betalinger umiddelbart på **Leverandørbetalinger**-siden. **Betalingsforslag**-siden utelates. Derfor opprettes betalinger raskere. Betalinger kan fremdeles endres på **Leverandørbetalinger**-siden. Du kan også gå tilbake til **Betalingsforslag**-siden ved hjelp av knappen **Rediger fakturaer for valgt betaling**.
 
 ## <a name="advanced-options"></a>Avanserte alternativer
 -   **Kontroller leverandørsaldo** – Hvis dette alternativet er satt til **Ja**, kontroller systemet at en leverandør ikke har en debetsaldo før en faktura betales. Hvis en leverandør har en debetsaldo, opprettes ingen betaling. Leverandøren kan for eksempel ha kreditnotaer og betalinger som er postert, men ennå ikke er utlignet. I så fall skal leverandøren ikke betales. I stedet må kreditnotaene eller betalingene utlignes mot de utestående fakturaene.
 -   **Slett negative betalinger** – Dette alternativet fungerer forskjellig, avhengig av om betalingene er for enkeltvise fakturaer eller summen av fakturaer som oppfyller betalingskriteriene. Dette er definert i betalingsmåten.
 -   **Betaling for hver faktura** – Hvis alternativet **Slett negative betalinger** er satt til **Ja**, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges bare fakturaen for betaling. Den eksisterende betalingen utlignes ikke mot fakturaen. Hvis alternativet **Slett negative betalinger** er satt til **Nei**, og en faktura og en betaling ikke er utlignet, velges både fakturaen og betalingen for betaling. Det opprettes en betaling for betalingen, og en refusjon (negativ betaling) opprettes for betalingen.
--   **Betaling for summen av fakturaer** – Hvis alternativet **Slett negative betalinger** er satt til **Ja**, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges både den ikke utlignede fakturaen og betalingen for betaling og beløpene legges sammen, som gir det totale betalingsbeløpet. Unntak oppstår bare hvis summen resulterer i en refusjon. I så fall velges verken fakturaen eller betalingen. Hvis den ** Slett betaling ** alternativet er satt til **ingen**, og en faktura og betaling ikke er utlignet, både fakturaen og betalingen velges for betaling og beløp legges sammen for å produsere det totale betalingsbeløpet.
+-   **Betaling for summen av fakturaer** – Hvis alternativet **Slett negative betalinger** er satt til **Ja**, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges både den ikke utlignede fakturaen og betalingen for betaling og beløpene legges sammen, som gir det totale betalingsbeløpet. Unntak oppstår bare hvis summen resulterer i en refusjon. I så fall velges verken fakturaen eller betalingen. Hvis alternativet **Slett negative betalinger** er satt til **Nei**, og en faktura og betaling ikke er utlignet, velges både fakturaen og betalingen for betaling og beløpene legges sammen, som gir totalt betalingsbeløp.
 -   **Skriv bare ut rapport** – Sett dette alternativet til **Ja** hvis du vil se resultatene av betalingsforslaget i en rapport, men uten å opprette betalinger.
 -   **Inkluder leverandørfakturaer fra andre juridiske enheter** – Hvis organisasjonen har en sentralisert prosess for betaling, og betalingsforslaget må inneholde fakturaer fra andre juridiske enheter som er inkludert i søkekriteriene, setter du dette alternativet til **Ja**.
 -   **Foreslå separat leverandørbetaling per juridisk enhet** – Hvis dette alternativet settes til **Ja**, opprettes det en egen betaling for hver juridiske enhet per leverandør. Leverandøren på betalingen er leverandøren fra fakturaen fra hver juridiske enhet. Hvis dette alternativet settes til **Nei**, og den samme leverandøren har fakturaer i flere juridiske enheter, opprettes det én betaling for det samlede beløpet for de valgte fakturaene. Leverandøren på betalingen er leverandøren i den gjeldende juridiske enheten. Hvis leverandørkontoen ikke eksisterer i den gjeldende juridiske enheten, brukes leverandørkontoen for den første fakturaen som skal betales.
--   **Betalingsvaluta** – dette feltet angir valutaen som alle betalinger som er opprettet i. Hvis det ikke er definert en valuta, betales hver faktura i valutaen på fakturaen.
+-   **Betalingsvaluta** – dette feltet angir valutaen som alle betalinger er opprettet i. Hvis det ikke er definert en valuta, betales hver faktura i valutaen på fakturaen.
 -   **Betalingsukedag** – Angi ukedagen som betalingen skal utføres på. Dette feltet brukes bare hvis betalingsmetoden er definert for å summere fakturaer for betaling på en bestemt dag i uken.
--   **Motkontotypen** og **motkonto** – definere disse feltene til å definere en bestemt kontotype (som **Finans** eller **Bank**) og motkonto (for eksempel en bestemt bankkonto). Betalingsmåten for fakturaen som definerer standard Motkontotype og motkonto, men du kan bruke disse feltene til å overstyre standardverdiene.
--   **Flere filtre** – på den **poster du vil inkludere** hurtigfanen, kan du definere flere områder av kriteriene. Hvis du vil betale en rekke leverandører, kan du for eksempel definere et filter for leverandør-området. Denne funksjonaliteten brukes ofte til å velge fakturaer for en bestemt av betalingsmåte. For eksempel, hvis du definerer et filter der **betalingsmåte** = **se**, bare fakturaer som har denne betalingsmåten som er valgt for betaling, forutsatt at de også oppfyller andre vilkår som er angitt i spørringen.
+-   **Motkontotype** og **Motkonto** – angi disse feltene til å definere en bestemt kontotype (som **Finans** eller **Bank**) og motkonto (for eksempel en bestemt bankkonto). Betalingsmåten for fakturaen definerer standard motkontotype og motkonto, men du kan bruke disse feltene til å overstyre standardverdiene.
+-   **Flere filtre** – I hurtigfanen **Poster som skal inkluderes** kan du definere flere kriterieområder. Hvis du for eksempel ønsker å betale et område av leverandører, kan du definere et filter for leverandørområdet. Denne funksjonaliteten brukes ofte til å velge fakturaer for en bestemt betalingsmåte. Hvis du for eksempel definerer et filter der **Betalingsmåte** = **Sjekk**, velges bare fakturaer som har denne betalingsmåten for betaling, forutsatt at de også oppfyller andre vilkår som er angitt i spørringen.
 
 ## <a name="scenarios"></a>Scenarier
 | Leverandør | Faktura | Fakturadato | Fakturabeløp | Forfallsdato | Kontantrabattdato | Kontantrabattbeløp |
@@ -66,7 +69,7 @@ Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alt
 
 ### <a name="option-1-by-cash-discount"></a>Alternativ 1: Etter kontantrabatt
 
-April velger **kontantrabatt** som forslag. Hun skriver inn en dato området av juni 26 til 10 juli. De følgende er inkludert i forslaget:
+April velger **kontantrabatt** som forslag. Hun skriver inn datoområdet 26. juni til 10. juli. Følgende fakturaer inkluderes i forslaget:
 
 -   1002, fordi rabattdatoen 4. juli er i betalingsdatoområdet.
 -   1004, fordi rabattdatoen 1. juli er i betalingsdatoområdet.
@@ -78,7 +81,7 @@ Følgende fakturaer inkluderes ikke i forslaget:
 
 ### <a name="option-2-by-due-date"></a>Alternativ 2: Etter forfallsdato
 
-April velger **Per forfallsdato** som forslag. Hun skriver inn en dato området av juni 26 til 10 juli. De følgende er inkludert i forslaget:
+April velger **Per forfallsdato** som forslag. Hun skriver inn datoområdet 26. juni til 10. juli. Følgende fakturaer inkluderes i forslaget:
 
 -   1003, fordi forfallsdatoen 29. juli er i betalingsdatoområdet.
 
@@ -90,7 +93,7 @@ Følgende fakturaer inkluderes ikke i forslaget:
 
 ### <a name="option-3-by-due-date-and-cash-discount"></a>Alternativ 3: Etter forfallsdato og kontantrabatt
 
-April velger **Forfallsdato og kontantrabatt** som forslag. Hun skriver inn en dato området av juni 26 til 10 juli. De følgende er inkludert i forslaget:
+April velger **Forfallsdato og kontantrabatt** som forslag. Hun skriver inn datoområdet 26. juni til 10. juli. Følgende fakturaer inkluderes i forslaget:
 
 -   1003, fordi forfallsdatoen 29. juli er i betalingsdatoområdet.
 -   1002, fordi rabattdatoen 4. juli er i betalingsdatoområdet.
@@ -109,12 +112,14 @@ Dimensjonskontroll lar deg kontrollere gruppering av genererte linjer etter beta
 
 -   **Dimensionskontroll**-feltet er deaktivert. Betalingsforslaget fungerer som for alle andre land.
 -   **Dimensionskontroll**-feltet er aktivert uten å definere dimensjonene ytterligere. Betalingsforslaget opprettes uten å ta hensyn til dimensjoner. Den opprettede transaksjonen arver ingen dimensjoner fra den utlignede posten.
--   **Dimensionskontroll**-feltet er aktivert og de ytterligere dimensjonene er aktivert. Nå kan du definere hvordan dimensjonene skal kopieres til journalen. For eksempel: • Velg den **forretningsenheten** alternativet for å opprette et betalingsforslag per forretningsenhet for metoden for betaling, • velg den **CostCenter** for å opprette et betalingsforslag per kostsenter for metoden for betaling
+-   **Dimensionskontroll**-feltet er aktivert og de ytterligere dimensjonene er aktivert. Nå kan du definere hvordan dimensjonene skal kopieres til journalen. For eksempel: • Merk av for **BusinessUnit** for å opprette et betalingsforslag per forretningsenhet for betalingsmåten, • merk av for **CostCenter** for å opprette et betalingsforslag per kostsenter for betalingsmåten
 
 **Obs!** Hvis du velger flere dimensjoner i det tredje alternativet, opprettes et betalingsforslag for dimensjonskombinasjonen.
 
 #### <a name="bank-account-selection"></a>Bankkontovalg
 
-Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan sette opp disse kombinasjonene i **betalingsmåter** side ved hjelp av den **bankkonti** knapp tilgjengelig for hver metode for betaling med **posteringstypen for kontoen** = **Bank**.
+Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan definere disse kombinasjonene på siden **Betalingsmåter** ved hjelp av **Bankkontoer**-knappen som er tilgjengelig for hver betalingsmåte med **Kontotype for postering** = **Bank**.
+
+
 
 

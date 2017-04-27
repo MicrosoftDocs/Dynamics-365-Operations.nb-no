@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Kostnadsberegning for produksjonsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om kostnadsestimat for produksjonen. Kostnadsestimat for produksjonen gir deg forventede kostnader til materialer og kapasitetsforbruk som går med i produksjon av en vare i produksjonsforslagets antall. 
 
 Når du oppretter en produksjonsordre, må du beregne produksjonskostnader. Formålet er å gi et estimat for vare- og ruteforbruk for produksjonsprosessen, fordi disse estimatene brukes som grunnlaget for fremtidige planleggings- og produksjonsprosesser.
@@ -59,6 +62,8 @@ Et kostnadsestimat gir også følgende informasjon:
 -   Sammenligninger av kostnadsinformasjon fra tidligere produksjoner
 -   Budsjett- og prognoseinformasjon
 -   Estimater for produksjonsstørrelsen som kreves for å beholde en bestemt kostnad
+
+
 
 
 

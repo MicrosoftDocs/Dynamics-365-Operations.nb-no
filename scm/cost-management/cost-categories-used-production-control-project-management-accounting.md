@@ -28,14 +28,19 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 
+[!include[banner](../includes/banner.md)]
+
+
 Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. Denne artikkelen inneholder informasjon om kostnadskategorier som må du definere for disse typene produksjonsarbeid for produksjon og prosjekter.
 
-Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. I dette tilfellet kreves en kostnadskategori for produksjon og prosjekter. Når en kostnadskategori brukes i produksjon og prosjekter, det må defineres prosjektrelatert tilleggsinformasjon. For eksempel så kan timekostnadene tilknyttet prosjektene, være forskjellige fra timekostnadene som er tilknyttet produksjonen. Du kan bruke siden **Kostnadskategorier** for å definere en kostnadskategori som brukes i produksjonsstyring og i prosjektstyring og regnskap. **Obs!** Kostnadsregnskap har en **Prosjektkategorier**-side, men denne siden har ingen relasjon til funksjonene som er beskrevet i dette emnet. Når du bruker en kostnadskategori i prosjekter, har **Kostnadskategorier**-siden flere kategorier som viser prosjektrelatert tilleggsinformasjon. Denne informasjonen inkluderer kategorigruppen, en linjeegenskap og finanskontoer som er tilordnet til kostnadskategorien.
+Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. I dette tilfellet kreves en kostnadskategori for produksjon og prosjekter. Det må defineres prosjektrelatert tilleggsinformasjon når en kostnadskategori brukes i produksjon og prosjekter. For eksempel så kan timekostnadene tilknyttet prosjektene, være forskjellige fra timekostnadene som er tilknyttet produksjonen. Du kan bruke siden **Kostnadskategorier** for å definere en kostnadskategori som brukes i produksjonsstyring og i prosjektstyring og regnskap. **Obs!** Kostnadsregnskap har en **Prosjektkategorier**-side, men denne siden har ingen relasjon til funksjonene som er beskrevet i dette emnet. Når du bruker en kostnadskategori i prosjekter, har **Kostnadskategorier**-siden flere kategorier som viser prosjektrelatert tilleggsinformasjon. Denne informasjonen inkluderer kategorigruppen, en linjeegenskap og finanskontoer som er tilordnet til kostnadskategorien.
 
 -   Kostnadskategorien må være tilordnet en kategorigruppe som støtter en transaksjonstype av typen **Timer**.
 -   Linjeegenskapen angir standardinformasjonen om hvordan rapporterte timer kan belastes et prosjekt.
 -   Finanskontoene som er relatert til kostnader og salg, er vanligvis definert for kategorigruppen som er tilordnet til kostnadskategorien. Imidlertid kan bestemte kontoer defineres for en individuell kostnadskategori.
 
 Tilleggsknappene på **Kostnadskategorier**-siden gir tilgang til prosjektrelatert informasjon om en valgt kostnadskategori. Du kan for eksempel vise prosjektrelaterte transaksjoner, definere ansatte eller prosjekter, definere timekostnader og salgspriser og vise rapporter.
+
+
 
 

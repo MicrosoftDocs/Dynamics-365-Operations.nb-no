@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis kundebetaling før rabattdatoen med en endelig betaling etter rabattdatoen"
+title: "Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen"
 description: "Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis kundebetaling før rabattdatoen med en endelig betaling etter rabattdatoen
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen.
 
-Fabrikam selger varer til kunden 4027. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt i 14 dager. Fakturaer må betales innen 30 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Parametere for utligning er plassert på den **Kundeparametere** siden.
+Fabrikam selger varer til kunden 4027. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fakturaer må betales innen 30 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Kundeparametere**.
 
 ## <a name="invoice"></a>Faktura
-25. juni, Magnus legger inn og posterer en faktura for 1 000,00 for kunden 4027. Magnus kan vise denne fakturaen ved hjelp av **transaksjoner** -knappen på den **kunder** siden.
+25. juni legger Magnus inn og posterer en faktura på 1 000,00 for kunden 4027. Magnus kan vise denne fakturaen ved hjelp av **Transaksjoner**-knappen på siden **Kunder**.
 
 | Bilag   | transaksjonstype | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Fabrikam selger varer til kunden 4027. Fabrikam tilbyr en kontantrabatt på 1 pr
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Valgt | Normal            | FTI-10020 | 4027    | 25/6/2015 | 25/7/2015 | 10020   | 1 000,00                             | USD      | 297.00           |
 
-Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Hvis du ikke endrer verdien for **Beløp som skal utlignes** til 297,00, vil verdiene for **Kontantrabattbeløp** som vises, variere. Imidlertid 3,00 kommer som kontantrabatten når betalingen er postert, fordi justerer automatisk utligning av ** beløpet som skal utlignes ** verdi for deg.
+Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Hvis du ikke endrer verdien for **Beløp som skal utlignes** til 297,00, vil verdiene for **Kontantrabattbeløp** som vises, variere. Imidlertid vil 3,00 behandles som kontantrabatten når betalingen er postert, fordi utligning justerer automatisk verdien for **Beløp som skal utlignes** for deg.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fo
 | ARP-10020  |                  | 1/7/2015  |         |                                      | 297.00                                | 0,00    | USD      |
 | RAB-10020 |                  | 1/7/2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 11/7/2015 |         |                                      | 700.00                                | 0,00    | USD      |
+
+
 
 
 

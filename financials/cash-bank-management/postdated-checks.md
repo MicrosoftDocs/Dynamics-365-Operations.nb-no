@@ -1,6 +1,6 @@
 ---
 title: Etterdaterte sjekker
-description: "Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for operasjoner. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen."
+description: "Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Etterdaterte sjekker
 
-Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for operasjoner. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics-365 for operasjoner støtter behandling av hele syklusen for etterdaterte sjekker i både kunder og leverandører, som vist i følgende tabell.
+
+Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
+
+Microsoft Dynamics 365 for Operations støtter hele forvaltningssyklusen for etterdaterte sjekker i både Kunder og Leverandører, som vist i følgende tabell.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ Microsoft Dynamics-365 for operasjoner støtter behandling av hele syklusen for 
 </tr>
 <tr class="even">
 <td>Registrere og postere en etterdatert sjekk for en leverandør</td>
-<td>Registrere detaljer om en etterdaterte sjekk du utsteder til en leverandør. Når betalingen er postert, leverandør-ansvar er gjenkjent, men bankkontoen er ikke ennå kredit. I stedet brukes en avregningskonto for dette formålet.</td>
+<td>Registrere detaljer om en etterdaterte sjekk du utsteder til en leverandør. Når betalingen er postert, er leverandøren gjenkjent, men bankkontoen ennå ikke kredit. I stedet brukes en avregningskonto for dette formålet.</td>
 </tr>
 <tr class="odd">
 <td>Registrere og postere en etterdatert sjekk for en kunde</td>
-<td>Registrer informasjonen i en etterdatert sjekk som du mottar fra en kunde. Når betalingen er postert, kunden fordringer kreditt, men bankkontoen er ikke ennå debet. I stedet brukes en avregningskonto for dette formålet.</td>
+<td>Registrer informasjonen i en etterdatert sjekk som du mottar fra en kunde. Når betalingen er postert, er kunden kredit, men bankkontoen ikke ennå debet. I stedet brukes en avregningskonto for dette formålet.</td>
 </tr>
 <tr class="even">
-<td>Registrere og postere en etterdatert Erstatningssjekk for en kunde eller leverandør</td>
+<td>Registrere og postere en erstatning for etterdatert sjekk for en kunde eller leverandør</td>
 <td>
 Hvis den opprinnelige sjekken til en leverandør eller kunde blir mistet eller skadet, kan du utstede en erstatning for den etterdaterte sjekken. Når du registrerer sjekkdetaljene, må du oppgi en referanse til den opprinnelige sjekken og angi at den nye sjekken er en erstatning for den opprinnelige. Du kan også postere erstatningssjekken.</td>
 </tr>
@@ -69,17 +72,19 @@ Hvis den opprinnelige sjekken til en leverandør eller kunde blir mistet eller s
 </tr>
 <tr class="odd">
 <td>Avbryte en etterdatert sjekk for en leverandør</td>
-<td>Du kan avbryte en postert etterdatert sjekk i disse situasjonene:-kontrollen returneres av banken.
--Kontrollen brukes på en faktura som er feil.
--En kontant utbetaling mot sjekken.
+<td>Du kan avbryte en postert etterdatert sjekk i disse situasjonene: – Sjekken returneres av banken.
+– Sjekken brukes på feil faktura.
+– Det er gjort en kontantbetaling mot sjekken.
 </td>
 </tr>
 <tr class="even">
-<td>Stopp betaling for etterdatert sjekk</td>
-<td>Du kan stoppe betaling av en etterdatert sjekk som ble utstedt til en leverandør, på grunn av for eksempel utilstrekkelige midler, endring av vilkårene i avtalen med leverandøren, mottak av defekte varer fra leverandøren, eller retur av varer til leverandøren. Du kan Stopp betaling på sjekker som ikke har fjernet.</td>
+<td>Stoppe betaling av en etterdatert sjekk</td>
+<td>Du kan stoppe betaling av en etterdatert sjekk som ble utstedt til en leverandør, på grunn av for eksempel utilstrekkelige midler, endring av vilkårene i avtalen med leverandøren, mottak av defekte varer fra leverandøren, eller retur av varer til leverandøren. Du kan bare stoppe betaling av sjekker som ikke er avregnet.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

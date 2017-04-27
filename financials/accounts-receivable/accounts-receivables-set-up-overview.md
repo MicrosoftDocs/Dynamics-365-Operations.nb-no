@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurere Kunder og Kreditt og innkreving
 
+[!include[banner](../includes/banner.md)]
+
+
 Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende betalinger fra kunder.
 
 Du kan definere kundegrupper, kunder, posteringsprofiler, ulike betalingsalternativer, rentenotaer, purringer, provisjoner, parametere som angår kunder, tillegg, leveringer og mål, veksler og andre typer informasjon om kunder og kreditt og innkreving.
 Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kunder og Kreditt og innkreving. Tabelloppføringene er organisert etter oppgave og deretter alfabetisk etter sidenavn.
 
-| ![Legg merke til](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "notat")**Obs!**          |
+| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**          |
 |--------------------------------------------------------------------------------------------------|
 | For enkelte av sidene i tabellen må du oppgi informasjon eller parameterinnstillinger for at du skal kunne navigere til dem. |
 
@@ -98,14 +101,16 @@ Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kund
 |                                                      | Innstillinger for kundekontakter og e-post | Sett opp kontakter for kunder med tilhørende e-postadresser. Disse adressene vises på siden Innkrevinger og vil bli brukt til å opprette e-postmeldinger som går til kunder. Du kan også definere en standard innkrevingskontakt for hver kunde, som vises først på Innkrevinger-siden. |
 |                                                      | Kundepuljer                       | Definer kundepuljer, som er spørringer som definerer en gruppe kundekontoer som kan vises og administreres for purringer eller aldersfordelingsprosesser.                                                                                                                           |
 |                                                      | Kundeposteringsprofil             | Definer profilene som styrer postering av kundetransaksjoner til økonomimodulen.                                                                                                                                                                                      |
-|                                                      | Kundeårsakskoder                | Definere koder for kunden.                                                                                                                                                                                                                                                    |
-|                                                      | Årsakskoder for kunde-totalavskrivning      | Definere kunde totalavskrivning koder som skal brukes for avskrivningstransaksjoner.                                                                                                                                                                                             |
+|                                                      | Kundeårsakskoder                | Definer kundeårsakskoder.                                                                                                                                                                                                                                                    |
+|                                                      | Årsakskoder for kundeavskrivning      | Definer årsakskoder for kundeavskrivning som skal brukes for avskrivningstransaksjoner.                                                                                                                                                                                             |
 |                                                      | Skjemaoppsett                           | Definer skjemamerknadsparametere for tilbud, bekreftelser, plukklister, følgesedler, kundefakturaer, fritekstfakturaer og rentenotaer.                                                                                                                               |
 |                                                      | Interesser                             | Definer og administrer rentekoder.                                                                                                                                                                                                                                                 |
-|                                                      | NSF-informasjon.                     | Definer informasjon om manglende dekning for bankkontoen som skal brukes når en betaling er merket som transaksjon uten dekning på Innkrevinger-siden.                                                                                                                                              |
+|                                                      | Informasjon om manglende dekning.                     | Definer informasjon om manglende dekning for bankkontoen som skal brukes når en betaling er merket som transaksjon uten dekning på Innkrevinger-siden.                                                                                                                                              |
 |                                                      | Informasjon om selger              | Definer e-postadressen til selgere. Disse adressene vises på Innsamlinger-siden, og du kan bruke dem til å sende e-post til en selger fra denne siden.                                                                                                                |
 
  
-Hvis du vil ha mer informasjon, se [kreditt og samlinger i Kunder](collections-credit-accounts-receivable.md).
+Hvis du vil ha mer informasjon, kan du se [Kredit og innkreving i Kunder](collections-credit-accounts-receivable.md).
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-overview"></a>Oversikt over transportstyring
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet gir en oversikt over transportstyringsfunksjonaliteten i Microsoft Dynamics 365 for Operations
 
 Med Transportstyring kan du administrere firmaets transport og identifisere leverandør- og rutingløsninger for innkommende og utgående ordrer. Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse. I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring i Microsoft Dynamics 365 for Operations.
@@ -70,7 +73,7 @@ I Transportstyring kan transportplanlegging baseres på ordrer eller på forsend
 ![Laste inn tegning](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Innkommende transport
-Når du bestiller varer fra en leverandør, og varene må leveres til lageret, kanskje du vil ordne transporten av varene selv. Du kan bruke Dynamics 365 for operasjoner for å planlegge transport og mottak av innkommende belastningen. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last. 
+Når du bestiller varer fra en leverandør og varene må leveres til lageret, kan det være aktuelt å ordne med transporten av varene selv. Du kan bruke Dynamics 365 for Operations til å planlegge transport og mottak av en innkommende last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last. 
 
 ![Forretningsprosessflyt for transport av innkommende last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
@@ -81,5 +84,7 @@ Du kan planlegge og behandle en utgående last for å sende bestemte varer fra l
 
 ## <a name="load-building"></a>Lastplanlegging
 Dynamics 365 for Operations inneholder strategi for bygging av laster som heter Volumbasert lastplanleggingsstrategi. Med denne strategien kan du bruke de maksimale verdiene som er angitt for høyde og vekt i lastmalen, eller du kan overstyre innstillingene ved å angi nye verdier. Hvis du vil bruke denne strategien, velger du den i feltet **Strategi for lastplanlegging** i hurtigfanen **Oppsett** på siden **Arbeidsområde for lastplanlegging**. I tillegg kan du legge til dine egne strategier for lastplanlegging ved å opprette en ny klasse i applikasjonsobjekttreet (AOT).
+
+
 
 

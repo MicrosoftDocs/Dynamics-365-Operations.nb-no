@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Alternativer for grovplanlegging
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 
 Grovplanlegging beregner følgende informasjon for en produksjonsordre:
@@ -128,6 +131,8 @@ Du kan lagre de gjeldende verdiene som standardverdier. Det finnes to alternativ
 <a name="see-also"></a>Se også
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Grovplanlegging](operations-scheduling.md)
+
+
 
 

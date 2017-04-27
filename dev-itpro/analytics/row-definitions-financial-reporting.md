@@ -45,7 +45,7 @@ En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i h
 En raddefinisjon kan inneholde opptil 20 000 finansdimensjonsrader og kan inneholder følgende informasjon:
 
 -   Beskrivende tekst som gir mening i rapporten ved å opprette inndelingsoverskrifter, linjer og mellomrom, for eksempel **Kontanter** eller **Totalomsetning**
--   Koblinger til økonomiske data, som kan inneholde dimensjonsverdier i Microsoft Dynamics 365 for drift **notat:** kan du definere en raddefinisjon trekker data fra finansdimensjoner systemet hver gang rapporten blir generert.
+-   Koblinger til økonomiske data, som kan inneholde dimensjonsverdier i Microsoft Dynamics 365 for Operations. **Obs! ** Du kan definere en raddefinisjon for å hente ut data fra finansdimensjonssystemet hver gang rapporten blir generert.
 -   Totaler og formler for rader som er basert på de økonomiske dataen som er koblet
 
 Hver rad i en raddefinisjon inneholder vanligvis én av følgende typer informasjon:
@@ -64,7 +64,7 @@ En dimensjon er en overlapping av data og verdier. Du kan gruppere data og verdi
 
 | Alternativ                | Beskrivelse                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimensjon             | Mønsteret som identifiserer dimensjonen som skal legges til raddefinisjonen. Dette mønsteret inneholder en ampersand (&) eller nummertegn (\#) for hver posisjon i dimensjoner. Bruk vanligvis bare &-tegn for hovedkontodimensjonen og bare nummertegn (#) for andre dimensjoner. |
+| Dimensjon             | Mønsteret som identifiserer dimensjonen som skal legges til raddefinisjonen. Dette mønsteret inneholder ett &-tegn eller nummertegn (\#) for hver posisjon i dimensjonene. Bruk vanligvis bare &-tegn for hovedkontodimensjonen og bare nummertegn (#) for andre dimensjoner. |
 | Start på dimensjonsområde | Den første verdien for denne dimensjonen som skal legges til raddefinisjonen.                                                                                                                                                                                                                 |
 | Slutt på dimensjonsområde   | Den siste verdien for denne dimensjonen som skal legges til raddefinisjonen.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 1.  I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
 2.  På **Rediger**-menyen klikker du **Sett inn rader fra dimensjoner**.
 3.  I dialogboksen **Sett inn rader fra dimensjoner**, i **Dimensjoner**-raden, velger du cellen for dimensjonen som skal overføres til raddefinisjonen, og deretter klikker du **Bare &&&**.
-4.  Hvis du vil begrense raddefinisjonen for et bestemt områder dimensjonsverdier, angir du startverdien for dimensjonen i cellen **Start på dimensjonsområde**, og deretter angir du sluttverdien for dimensjonen i cellen **Slutt på dimensjonsområde**. Hvis du vil ta med alle verdier for den valgte dimensjonen, lar du disse cellene være tomme. **Merk:** jokertegn (\* eller?) områder i dimensjon kan ikke returnere alle resultatene som du vil, avhengig av hvordan ERP-database, sorterer data.
+4.  Hvis du vil begrense raddefinisjonen for et bestemt områder dimensjonsverdier, angir du startverdien for dimensjonen i cellen **Start på dimensjonsområde**, og deretter angir du sluttverdien for dimensjonen i cellen **Slutt på dimensjonsområde**. Hvis du vil ta med alle verdier for den valgte dimensjonen, lar du disse cellene være tomme. **Obs! ** Jokertegn (\* eller?) i dimensjonsområder kan ikke returnere alle resultatene som du vil ha, avhengig av hvordan ERP-databasen sorterer data.
 5.  I feltet **Kode for startrad** angir du radkoden for den første dimensjonsverdien som skal legges til raddefinisjonen.
-6.  I feltet **Øk hver rad med** angir du avstanden mellom etterfølgende radkoder. Hvis den første raden er 100 og økningsverdien er 30, har de nye radene første kodene 100, 130, 160, 190 og 220. Bruk en inkrementell verdi som gir nok plass til å sette inn nye rader format og formel.
+6.  I feltet **Øk hver rad med** angir du avstanden mellom etterfølgende radkoder. Hvis den første radkoden for eksempel er 100 og økningsverdien er 30, har de første nye radene kodene 100, 130, 160, 190 og 220. Bruk en inkrementell verdi som gir nok plass til å sette inn nye format- og formelrader.
 7.  Klikk **OK**. Én linje for hver valgte dimensjonsverdi legges til raddefinisjonen.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Justere avrunding i en raddefinisjon
@@ -146,7 +146,7 @@ Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er
 
 1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
 2.  Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
-3.  Klikk verktøylinjeknappen for formatet som skal brukes. For eksempel hvis du vil rykke inn en rad, merker du raden, og klikk deretter **Øk innrykk**![Øk innrykk](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Øk innrykk") på verktøylinjen.
+3.  Klikk verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter på **Øk innrykk** ![Øk innrykk](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Øk innrykk") på verktøylinjen.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner mens du utformer rapporter
 
@@ -173,6 +173,6 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 <a name="see-also"></a>Se også
 --------
 
-[Økonomisk rapportering for Microsoft Dynamics-365 for operasjoner](financial-reporting-intro.md)
+[Finansrapportering for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

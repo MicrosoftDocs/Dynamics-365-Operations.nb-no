@@ -1,5 +1,5 @@
 ---
-title: "Plasser budsjettering feilsøking"
+title: "Feilsøke stillingsbudsjettering"
 description: "Denne artikkelen inneholder svar på spørsmål du kan ha når du konfigurerer stillingsbudsjettering. Det tar for seg vanlige spørsmål om hvordan du oppretter budsjettetkostnadselementer, kompensasjonsgrupper og kompensasjonsrutenett."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="position-budgeting-troubleshooting"></a>Plasser budsjettering feilsøking
+# <a name="position-budgeting-troubleshooting"></a>Feilsøke stillingsbudsjettering
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder svar på spørsmål du kan ha når du konfigurerer stillingsbudsjettering. Det tar for seg vanlige spørsmål om hvordan du oppretter budsjettetkostnadselementer, kompensasjonsgrupper og kompensasjonsrutenett. 
 
@@ -58,6 +61,8 @@ Datoene på prognosestillingens linje for kostnadselement må være innenfor fø
 -   Aktiverings- og pensjonavgangsdatoene for stillingen.
 -   Aktiverings- og utløpsdatoene for budsjettkostnadselementet.
 -   Start- og sluttdatoene for budsjettsyklusen som er knyttet til budsjettplanleggingsprosessen for prognosestillingen.
+
+
 
 
 

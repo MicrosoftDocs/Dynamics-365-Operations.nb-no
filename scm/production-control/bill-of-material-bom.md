@@ -1,6 +1,6 @@
 ---
 title: Stykklister og formler
-description: "Denne artikkelen inneholder informasjon om stykklister malstykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Angi nødvendige materialer eller ingredienser for et bestemt produkt stykklister og formler. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonsstykkliste-kontekst."
+description: "Denne artikkelen inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Stykklister og formler
 
-Denne artikkelen inneholder informasjon om stykklister malstykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Angi nødvendige materialer eller ingredienser for et bestemt produkt stykklister og formler. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonsstykkliste-kontekst. 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst. 
 
 <a name="bills-of-materials"></a>Stykklister
 ------------------
@@ -38,7 +41,7 @@ En stykkliste (BOM) definerer komponentene som kreves for å produsere et produk
 
 Når den kombineres med en rute eller produksjonsflyt som beskriver operasjonene og ressursene som kreves for å lage et produkt, danner stykklisten grunnlaget for beregning av estimert kost for produktet.  
 
-En Stykkliste er en enkelt enhet som er beskrevet i følgende informasjon:
+En stykkliste er en enkeltenhet som beskrives med følgende informasjon:
 
 -   BOM-ID
 -   Navn på stykklisten
@@ -49,7 +52,7 @@ En Stykkliste er en enkelt enhet som er beskrevet i følgende informasjon:
 
 ### <a name="formulas-co-products-and-by-products"></a>Formler, koprodukter og biprodukter
 
-En formel er en undertype av stykklister som vanligvis brukes til prosessproduksjon. I tillegg til komponenter og ingredienser beskriver en formel koprodukter og biprodukter. I den faktiske versjonen krever definisjonen av koprodukter og biprodukter for formelen formel-versjonen. En formel er vanligvis definert for ett bestemt ferdig produkt (en formel eller planlegging element) som er definert i formelversjonen.
+En formel er en undertype av stykklister som vanligvis brukes til prosessproduksjon. I tillegg til komponenter og ingredienser beskriver en formel koprodukter og biprodukter. I den faktiske versjonen krever definisjonen av koprodukter og biprodukter for formelen formelversjonen. En formel er vanligvis definert for ett bestemt ferdig produkt (et formel- eller planleggingselement) som er definert i formelversjonen.
 
 ### <a name="boms-in-the-product-lifecycle"></a>Stykklister i livssyklusen for produktet
 
@@ -61,7 +64,7 @@ I livssyklusen for produktet kan mange typer stykklister opprettes av ulike års
 -   **Produksjonsstykkliste** – Dette er den faktiske stykklisten som brukes i en bestemt produksjon. En produksjonsstykkliste må ta hensyn til de faktiske ressursene som brukes til å produsere produktet. Når en produksjonsordre, partiordre eller Kanban opprettes, blir de mange nivåene med stykklister som vises som fantomer, slått sammen til ett nivå og fordelt over operasjonene for ordren.
 -   **Stykkliste for etterkalkulering** – Denne stykklisten brukes til å beregne estimert kost for et produkt. Du kan for eksempel bruke en stykkliste for etterkalkulering når standardkost brukes, eller når den estimerte planlagte kostnaden for et bestemt produkt beregnes. Stykklister for etterkalkulering kan referere til en bestemt blanding av materialer og ressurser som forventes å bli brukt. Du kan derfor bruke stykklisten for etterkalkulering til å opprette en representativ estimert kost for en periode og unngå avvik over tid.
 
-Hvilke typer Stykklisten som faktisk er brukt i en implementering avhenger av implementeringen, og også forretningsscenarier og krav. I enkle implementeringer kan en stykkliste for planlegging, produksjonsstykkliste og stykkliste for etterkalkulering modelleres som én stykkliste. Et større sett med stykklistetyper blir sannsynligvis nødvendig i miljøer med hyppige tekniske endringer og flere alternative ruter.
+Hvilke typer stykkliste som faktisk brukes i en implementering, er avhengig av implementeringen og også forretningsscenarier og behov. I enkle implementeringer kan en stykkliste for planlegging, produksjonsstykkliste og stykkliste for etterkalkulering modelleres som én stykkliste. Et større sett med stykklistetyper blir sannsynligvis nødvendig i miljøer med hyppige tekniske endringer og flere alternative ruter.
 
 ### <a name="approval-of-boms-and-formulas"></a>Godkjenning av stykklister og formler
 
@@ -78,7 +81,7 @@ Før en stykklisteversjon kan brukes i planleggingen eller produksjonsprosessen,
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Aktivering av standard stykkliste- eller formelversjon
 
-Hvis du vil angi en bestemt stykkliste eller formel som standard stykklisteversjon eller formelversjon som skal brukes av hovedplanlegging eller brukes til å opprette produksjonsordrer, må du aktivere versjonen. Når en versjon er aktivert, kontrolleres unikheten i versjon for de angitte betingelsene (for eksempel punktum, område eller antall). Du får en feilmelding hvis versjonen som du prøver å aktivere er i konflikt med en versjon som allerede er aktiv. Du må deretter enten deaktivere versjonen som er i konflikt, eller endre versjonsbegrensningene (vanligvis perioden) for å unngå en tvetydig aktivering.
+Hvis du vil angi en bestemt stykkliste eller formel som standard stykklisteversjon eller formelversjon som skal brukes av hovedplanlegging eller brukes til å opprette produksjonsordrer, må du aktivere versjonen. Når en versjon er aktivert, kontrolleres unikheten i versjonen for de angitte betingelsene (for eksempel periode, område eller antall). Du får en feilmelding hvis versjonen som du prøver å aktivere, er i konflikt med en versjon som allerede er aktiv. Du må deretter enten deaktivere versjonen som er i konflikt, eller endre versjonsbegrensningene (vanligvis perioden) for å unngå en tvetydig aktivering.
 
 ### <a name="product-change-with-case-management"></a>Produktendring med saksbehandling
 
@@ -114,5 +117,7 @@ Velg linjetypen** Tilknyttet forsyning** når du vil opprette en underproduksjon
 Velg linjetypen **Leverandør** hvis produksjonsprosessen bruker en underleverandør og du vil at en underproduksjon eller bestilling skal opprettes automatisk for underleverandøren.  
 
 **Merknad om underleveranseoperasjoner i en stykkliste:** Tjenesten eller arbeidet som utføres av underleverandøren, må opprettes som en servicevare som spores i beholdning. Du må knytte servicevaren til den overordnede varen som en stykklistelinje. Ruten må inneholde en operasjon som er tilordnet underleverandørens operasjonsressurs.
+
+
 
 

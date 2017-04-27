@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="explosion-of-a-bom-version"></a>Nedbryting av en stykklisteversjon
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver et scenario som involverer nedbrytingen av en stykklisteversjon (BOM) for hovedplanlegging.
 
 En vellykket behovsnedbrytning av en stykklisteversjon resulterer i et behov for hver stykklistelinjevare på et bestemte område eller muligens ved et bestemt lager. For en områdespesifikk stykkliste kan det være definert et bestemt lager for hver stykklistelinje. Varens dimensjonsinnstillinger angir dessuten om lageret er påkrevd for hver stykklistelinje. Det resulterende behovet for hver stykklistelinje blir deretter utgangspunktet for en ytterligere behovsnedbrytning. Dette hovedplanleggingsscenariet omfatter følgende betingelser:
@@ -41,8 +44,10 @@ Illustrasjonen nedenfor viser hvordan behovsnedbrytningen for hovedplanlegging f
 <a name="see-also"></a>Se også
 --------
 
-[Hovedplanlegging - hvordan stykklisteversjonen bestemmes](master-plan-bom-version-determined.md)
+[Hovedplanlegging – hvordan stykklisteversjon fastsettes](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
+
+
 
 

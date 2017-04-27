@@ -1,6 +1,6 @@
 ---
-title: Budsjett planleggingsdokumenter justering
-description: "Justering-dokumenter gir en fortellende beskrivelsen for de ber om et budsjett til å forklare hvorfor et bestemt budsjett er nødvendig."
+title: Dokumenter for budsjettplanleggingsjusteringer
+description: "Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett for å forklare hvorfor et bestemt budsjett er nødvendig."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,47 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-planning-justification-documents"></a>Budsjett planleggingsdokumenter justering
+# <a name="budget-planning-justification-documents"></a>Dokumenter for budsjettplanleggingsjusteringer
 
-Justering-dokumenter gir en fortellende beskrivelsen for de ber om et budsjett til å forklare hvorfor et bestemt budsjett er nødvendig. 
+[!include[banner](../includes/banner.md)]
 
-En budsjettplanmal er opprettet av budsjettbehandling i Microsoft Word og tilordnet den gjeldende budsjettplanleggingsprosessen. Budsjett eierne kan deretter åpne malen og data fylles ut automatisk i Word basert på budsjettet forespørselen. De kan deretter legge til ekstra tekst eller data før du lagrer og legge sine personlige justeringsdokumentet til budsjettplanen.
+
+Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett for å forklare hvorfor et bestemt budsjett er nødvendig. 
+
+En budsjettplanmal opprettes av budsjettansvarlig i Microsoft Word og tilordnes den gjeldende budsjettplanleggingsprosessen. Budsjetteierne kan deretter åpne malen og la data fylles ut automatisk i Word basert på budsjettforespørselen. De kan deretter legge til ekstra tekst eller data før de lagrer og knytter det personlige justeringsdokumentet til budsjettplanen.
 
 ##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Definer Microsoft Dynamics Office-tillegget for Microsoft Word
 
 1.  Åpne et nytt Microsoft Word-dokument.
-2.  Klikk **Sett inn** på båndet, og velg **Store**.
-3.  Søke etter Microsoft Dynamics Office-tillegg, og klikk **Legg til**.
-4.  Klikk i den høyre ruten i Word, **legge til informasjon om server**.
-5.  Skriv inn eller lime inn URL-adressen for serveren, og klikk **OK**.
+2.  Klikk **Sett inn** på båndet, og klikk **Butikk**.
+3.  Søk etter Microsoft Dynamics Office-tillegg, og klikk **Legg til**.
+4.  Klikk **Legg til serverinformasjon** i den høyre ruten i Word.
+5.  Skriv inn eller lim inn URL-adressen for serveren, og klikk **OK**.
 
-##### <a name="define-the-justification-template-in-microsoft-word"></a>Definere justering-malen i Microsoft Word
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Definere justeringsmalen i Microsoft Word
 
-1.  Klikk **Design** i Microsoft Dynamics-kontor tillegget etter at du har logget på.
-2.  For informasjon, kan du bruke den **legge til feltene** knappen.
-3.  Velg datakilden for enhet for BudgetPlanJustification, og klikk **neste**. **Merk:** denne enheten er nødvendig for et dokument for justering. Andre enheter som kan brukes, men opplasting tilbake til Microsoft Dynamics 365 for operasjoner mislykkes hvis denne enheten ikke er inkludert.
-4.  Legge til BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter og DocumentNumber etikettene og verdiene i Word-dokumentet. **Merk:** du kan bruke egendefinerte etiketter, i stedet for standard etikettene, hvis nødvendig.
-5.  Klikk **gjort** å fullføre inndelingen for topptekst.
-6.  For linje nivå detaljer av budsjettbeløp for planen, klikker du **Legg til tabell**.
-7.  På nytt, velger du datakilden for enhet for BudgetPlanJustification, og klikk **neste**.
-8.  Legge til felt for EffectiveDate, ScenarioName, AccountDisplayValue og AccountingCurrencyExpenseAmount. **Merk:** Hvis det finnes kommentarer til å legge til i individuelle budsjettplanlinjer, de kan legges til i tabellen her.
-9.  Legg til eventuelle instruksjoner for å tilby sluttbrukeren, og utføre nødvendige formatering eller stiler i dokumentet.
+1.  Klikk **Utforming** i Microsoft Dynamics Office-tillegget etter at du har logget på.
+2.  For hodeinformasjon bruker du **Legg til felt**-knappen.
+3.  Velg datakilden for enhet for BudgetPlanJustification, og klikk **Neste**. **Merk:** Denne enheten er nødvendig for alle justeringsdokumenter. Andre enheter kan brukes, men opplastingen tilbake til Microsoft Dynamics 365 for Operations mislykkes hvis denne enheten ikke er inkludert.
+4.  Legg til etikettene og verdiene for BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter og DocumentNumber i Word-dokumentet. **Merk:** Du kan bruke egendefinerte etiketter i stedet for standardetikettene, hvis nødvendig.
+5.  Klikk **Utført** for å fullføre topptekstdelen.
+6.  For linjenivådetaljer for budsjettplanbeløp klikker du **Legg til tabell**.
+7.  Velg igjen datakilden for enhet for BudgetPlanJustification, og klikk **Neste**.
+8.  Legg til felt for EffectiveDate, ScenarioName, AccountDisplayValue og AccountingCurrencyExpenseAmount. **Merk:** Hvis det finnes kommentarer som kan legges til i individuelle budsjettplanlinjer, kan de legges til i tabellen her.
+9.  Legg til eventuelle instruksjoner til sluttbrukeren, og angi nødvendig formatering eller stiler i dokumentet.
 10. Lagre dokumentet på den lokale datamaskinen, og lukk filen før du fortsetter.
 
-##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Definere budsjettplanleggingsprosessen for å bruke malen for justering
+##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Konfigurere budsjettplanprosessen for å bruke justeringsmalen
 
-1.  I Microsoft Dynamics 365 for operasjoner, kan du gå til **budsjettering**&gt;**Setup**&gt;**budsjettplanlegging**&gt;**begrunnelse dokumentmaler**.
-2.  Klikk **ny**, og bla til det nylig opprettede Microsoft Word-dokumentet.
-3.  Skriv inn et navn på mal for skjerm og en beskrivelse. Click **OK**.
-4.  Gå til **budsjettering**&gt;**Setup**&gt;**budsjett****planlegging**&gt;**budsjett planleggingsprosessen**.
-5.  Velg prosess der justeringsmal som skal brukes, og klikk **Rediger**.
-6.  I den **begrunnelse dokumentmal** feltet, velg den relevante malen, og lagre.
+1.  I Microsoft Dynamics 365 for Operations går du til **Budsjettering** &gt; **Oppsett** &gt; **Budsjettplanlegging** &gt; **Maler for justeringsdokument**.
+2.  Klikk **Ny**, og bla til det nylig opprettede Microsoft Word-dokumentet.
+3.  Angi et malvisningsnavn og en beskrivelse. Klikk **OK**.
+4.  Gå til **Budsjettering** &gt; **Oppsett** &gt; **Budsjett** **planlegging** &gt; **Budsjettplanleggingsprosess**.
+5.  Velg prosessen der justeringsmalen skal brukes, og klikk **Rediger**.
+6.  I feltet **Mal for justeringsdokument** velger og lagrer du den relevante malen.
 
-##### <a name="edit-and-save-personalized-justification-documents"></a>Redigere og lagre tilpassede begrunnelse dokumenter
+##### <a name="edit-and-save-personalized-justification-documents"></a>Redigere og lagre tilpassede justeringsdokumenter
 
-1.  Oppretter en ny budsjettplan i Dynamics 365 for operasjoner, eller åpne en eksisterende budsjettplan.
-2.  I den **justering** -menyen, velg **opprette ny justering**.
-3.  Fyll ut detaljene, kan du velge å laste opp egendefinerte dokumentet fra den **justering** -menyen.
+1.  Opprett en ny budsjettplan eller åpne en eksisterende budsjettplan i Dynamics 365 for Operations.
+2.  På **Justering**-rullegardinmenyen velger du **Opprett ny justering**.
+3.  Når du har fylt ut detaljene, velger du å laste opp det egendefinerte dokumentet fra **Justering**-rullegardinmenyen.
+
+
 
 
 

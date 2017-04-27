@@ -1,6 +1,6 @@
 ---
 title: "Vurdere kunde- og produktlønnsomhet"
-description: "Denne artikkelen forklarer hvordan du kan bruke den i minnet og sanntid analytics til å få tilgang til, utforske og få innsikt i kundene og lønnsomhet for produkt fra din Microsoft Dynamics-365 for operasjoner data."
+description: "Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over kunde- og produktlønnsomhet fra data i Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="assess-customer-and-product-profitability"></a>Vurdere kunde- og produktlønnsomhet
 
-Denne artikkelen forklarer hvordan du kan bruke den i minnet og sanntid analytics til å få tilgang til, utforske og få innsikt i kundene og lønnsomhet for produkt fra din Microsoft Dynamics-365 for operasjoner data. 
+[!include[banner](includes/banner.md)]
 
-Som en del av Dynamics 365 for operasjoner, kan brukere studere lønnsomhet for de viktigste kundene (10 til 100) på tvers av ulike nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
+
+Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over kunde- og produktlønnsomhet fra data i Microsoft Dynamics 365 for Operations. 
+
+Som en del av Dynamics 365 for Operations, kan brukere lese om lønnsomhet til de viktigste kundene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
 
 -   Salgsbeløp
 -   Antall
@@ -38,8 +41,8 @@ Som en del av Dynamics 365 for operasjoner, kan brukere studere lønnsomhet for 
 
 For denne vurderingen kan du bruke den medfølgende rapporten **Toppkunder**, som du kan åpne fra følgende plasseringer:
 
--   **Retail store management** arbeidsområde Dynamics 365 for drift &gt;**detaljhandel og commerce**&gt;**kanaler**&gt;**Retail butikk management**&gt;**rapporter**&gt;**topp-rapport for kunder**
--   **Forespørsler og rapporter** delen Dynamics 365 for drift &gt;**Retail og commerce**&gt;**forespørsler og rapporter**&gt;**mva-rapporter**&gt;**topp-rapport for kunder**
+-   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for beste kunder**
+-   Delen **Forespørsler og rapporter** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for beste kunder**
 
 På samme måte kan brukere lese om lønnsomhet til de viktigste produktene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
 
@@ -50,8 +53,10 @@ På samme måte kan brukere lese om lønnsomhet til de viktigste produktene (10 
 
 For denne vurderingen kan du bruke den medfølgende rapporten **Topprodukter**, som du kan åpne fra følgende plasseringer:
 
--   **Retail store management** arbeidsområde Dynamics 365 for drift &gt;**Retail og commerce**&gt;**kanaler**&gt;**Retail butikk management**&gt;**rapporter**&gt;**øverst i rapporten**
--   **Kategori og produkt management** arbeidsområde Dynamics 365 for drift &gt;**Retail og commerce**&gt;**produkter og kategorier**&gt;**Retail butikk management**&gt;**rapporter**&gt;**øverst i rapporten**
--   **Forespørsler og rapporter** delen Dynamics 365 for drift &gt;**Retail og commerce**&gt;**forespørsler og rapporter**&gt;**mva-rapporter**&gt;**øverst i rapporten**
+-   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**
+-   Arbeidsområdet **Kategori- og produktstyring** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Produkter og kategorier** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**
+-   Delen **Forespørsler og rapporter** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport om topprodukter**
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: Tildeling av data for budsjettplanlegging
-description: Denne artikkelen beskriver de ulike tildelingsmetoder som er tilgjengelige i Microsoft Dynamics 365 operasjoner og hvordan de kan brukes.
+description: Denne artikkelen beskriver de ulike tildelingsmetoder som er tilgjengelige i Microsoft Dynamics 365 for Operations, og hvordan de kan brukes.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Tildeling av data for budsjettplanlegging
 
-Denne artikkelen beskriver de ulike tildelingsmetoder som er tilgjengelige i Microsoft Dynamics 365 operasjoner og hvordan de kan brukes.  
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver de ulike tildelingsmetoder som er tilgjengelige i Microsoft Dynamics 365 for Operations, og hvordan de kan brukes.  
 
 Du kan distribuere dataene i en budsjettplan på flere måter for å vise nøyaktig de forventede beløpene.
 
 ## <a name="allocation-methods"></a>Tildelingsmetoder
 Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og bruke finansfordelingsregler) kan opprette budsjettplanlinjer som er basert på linjene i den samme budsjettplanen. Tre andre metoder (aggregere, distribuere og kopiere fra budsjettplanen) kan opprette budsjettplanlinjer i andre budsjettplaner. Du kan angi målscenariet for alle seks tildelingsmetoder. Målscenariet kan være det samme som kildescenariet eller forskjellig fra kildescenariet. Du kan også angi om nye linjer legges til budsjettplanen eller erstatter gjeldende linjer i budsjettplanen.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1">
-</ph>**tildeles på tvers av perioder** – en periodetildelingsnøkkel kategori brukes til å fordele budsjettplanlinjene fra Kildebudsjettplanscenariet på tvers av perioder i mål-scenario. Kildebeløpet tilordnes til flere linjer i målscenariet, basert på prosentdelen og datoen som er definert i periodetildelingsperioden.         
+[![Tildele på tvers av perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Tildele på tvers av perioder** – En periodetildelingskategori brukes for å tildele budsjettplanlinjer fra kildebudsjettplanscenariet på tvers av perioder i målscenariet. Kildebeløpet tilordnes til flere linjer i målscenariet, basert på prosentdelen og datoen som er definert i periodetildelingsperioden.         
 
 [![Tildele til dimensjoner](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Tildele til dimensjoner** – Budsjettplanlinjene tildeles fra kildebudsjettplanleggingsscenariet til én eller flere linjer i målscenariet, basert på prosentdelene og finansdimensjonene som er definert i en valgt budsjettfordelingsbetingelse.           
@@ -69,6 +72,8 @@ Deretter oppretter du en stadietildeling på siden **Budsjettplanleggingskonfigu
 
 Til slutt legger du til en automatisert oppgave for tildeling for budsjettplanleggingsstadiet på det aktuelle arbeidsflytstadiet. I eksemplet nedenfor er to tildelinger for budsjettplanleggingsstadiet (uthevet i rødt) satt inn i arbeidsflyten.
 
-[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Tildelinger for budsjettplanleggingsstadium](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Arbeidspolicyer for lager
 
+[!include[banner](../includes/banner.md)]
+
+
 En ny lagerarbeidspolicy introduseres i Microsoft Dynamics AX 7.0.1 (oppdateringen fra mai 2016). Denne arbeidspolicyen kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon.
 
-Denne arbeidspolicyen kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon. Du kan definere arbeidspolicyen ved hjelp av en kombinasjon av **arbeidsordretyper**, en **lagerplassering** og et **produkt**. Produkt L0101 er rapportert som ferdige, for eksempel til målplassering 001. Den ferdige varen forbrukes senere i en annen produksjonsordre på Utleveringssted 001. I så fall kan du definere en policy for arbeidet til å hindre at arbeidet for ferdige varer lagerplassering blir opprettet når du rapporterer produkt L0101 som ferdige, til målplassering 001. Arbeidspolicyen er en enkeltenhet som kan beskrives ved hjelp av følgende informasjon:
+Denne arbeidspolicyen kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon. Du kan definere arbeidspolicyen ved hjelp av en kombinasjon av **arbeidsordretyper**, en **lagerplassering** og et **produkt**. Produkt L0101 rapporteres for eksempel som ferdig til utleveringslokasjon 001. Den ferdige varen forbrukes senere i en annen produksjonsordre på utleveringslokasjon 001. I så fall kan du definere en arbeidspolicy for å hindre at arbeidet for plassering av ferdigvarer blir opprettet når du rapporterer produkt L0101 som ferdige, til utleveringslokasjon 001. Arbeidspolicyen er en enkeltenhet som kan beskrives ved hjelp av følgende informasjon:
 
 -   **Arbeidspolicynavn **(den unike ID-en for arbeidspolicyen)
 -   **Arbeideordretyper **og** arbeidsopprettelsesmetode**
@@ -55,7 +58,7 @@ Du kan velge et produkt som arbeidspolicyen gjelder for. Du kan bruke arbeidspol
 ## <a name="example"></a>Eksempel
 I eksemplet nedenfor er det to produksjonsordrer, PRD-001 og PRD 00*2*. Produksjonsordren PRD-001 har en operasjon kalt **Montering**, der produktet SC1 rapporteres som ferdig til lokasjonen O1. Produksjonsordren PRD-002 er en operasjon kalt **Maling**, og den bruker SC1-produktet fra lokasjonen O1. Produksjonsordren PRD-002 bruker også råvaren RM1 fra lokasjonen O1. RM1 er lagret i lagerlokasjonen BULK-001 og blir plukket til lokasjon O1 av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen PRD-002 frigis. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Arbeidspolicyer for lager](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Når du skal konfigurere en arbeidspolicy for lageret i dette scenariet, bør du vurdere følgende informasjon:
 
@@ -66,12 +69,12 @@ Her er et eksempel på arbeidspolicyen som du kan sette opp, basert på disse he
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Ingen plassert 01'                    |-Ferdig vare som er plassert<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Arbeidspolicynavn**<br>                 |**Arbeidsordretyper**<br>                               |
+| Ingen plassering 01     `                    |– Plassering av ferdigvare<br>                           |
+|                                         |**Lokasjoner**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Produkter** <br>                                      |
+|                                         |- SC1                                                  |
 
 Fremgangsmåtene nedenfor inneholder trinnvise instruksjoner om hvordan du definerer lagerarbeidspolicyen i dette scenariet. Et eksempeloppsett som viser hvordan du rapporterer en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert beskrives også.
 
@@ -244,5 +247,7 @@ TRINN (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

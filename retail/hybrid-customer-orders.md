@@ -1,6 +1,6 @@
 ---
-title: Hybrid kundeordrer
-description: "En kundeordre hybrid er en enkelt ordre som inneholder produkter som kan overføres ut av butikken av kunden, i tillegg til produktene som skal plukkes opp eller sendt senere."
+title: Hybridkundeordrer
+description: "En hybridkundeordre er en enkelt ordre som inneholder produkter som kan utføres fra butikken av kunden, i tillegg til produkter som skal hentes eller sendes senere."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrid kundeordrer
+# <a name="hybrid-customer-orders"></a>Hybridkundeordrer
 
-En kundeordre hybrid er en enkelt ordre som inneholder produkter som kan overføres ut av butikken av kunden, i tillegg til produktene som skal plukkes opp eller sendt senere.
+[!include[banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for operasjoner - detaljhandel, kan du velge enten bære alle produkter eller utføre valgte produkter for en kundeordre. Produktet linjer som er merket som utfører automatisk faktureres etter at bestillingen er opprettet, på samme måte dette er det samme for en ordre som skal plukkes opp når ordren opprettes. Det forfalte beløpet på hybrid bestemmes ordrer ved å legge prosenten innskudd på plukke og Lever produktlinjene med full mengden bære ut linjer. For hybrid ordrer veksler systemet mellom kunde bestilling modus og kontant og ta modus som følger:
 
--   Hvis alle produkter i handlekurven er satt til **utføre levering**, bestillingen vil bli behandlet som en kontant og ta med transaksjon.
--   Hvis noen av eller alle linjene i handlekurven er satt til enten **plukke** eller **leverer levering**, bestillingen vil bli behandlet som en kundetransaksjon rekkefølge.
+En hybridkundeordre er en enkelt ordre som inneholder produkter som kan utføres fra butikken av kunden, i tillegg til produkter som skal hentes eller sendes senere.
 
-Hvis en handlevogn linje er valgt og **Velg valgt**, **Lever valgt**, eller **utfører valgte** er valgt, settes bare bestemte handlekurv linjen med den leveringsmetoden. I så fall fortsetter nedstrøms flyten av operasjonen som vanlig. Imidlertid Hvis **Velg valgt**, **Lever valgt**, eller **utfører valgte** velges uten en handlevogn linje blir valgt, en ny side åpnes som viser alle linjene for handlekurv. På dette skjermbildet kan du velge flere linjer samtidig for å angi leveringsmåte. Når du bruker denne metoden for å velge linjer, vil bli overstyrt forrige leveringsmåte som er knyttet til linjen.
+I Microsoft Dynamics 365 for Operations - Retail kan du velge å utføre alle produkter eller utføre valgte produkter for en kundeordre. Produktlinjer som er merket som utfør, faktureres automatisk etter at ordren er opprettet. Dette gjelder også for en ordre som skal hentes etter at ordren er opprettet. Beløpet å betale på hybridordrer bestemmes ved å legge innbetalingsprosenten på produktlinjene for plukking og sending til hele beløpet for utføringslinjene. For hybridordrer veksler systemet mellom kundeordremodus og hentesalgmodus som følger:
+
+-   Hvis alle produkter i handlekurven er satt til **Utfør levering**, vil ordren bli behandlet som en hentesalgstransaksjon.
+-   Hvis noen av eller alle linjene i handlekurven er satt til enten **Plukk** eller **send levering**, vil ordren bli behandlet som en kundeordretransaksjon.
+
+Hvis en handlevognlinje er valgt og **Velg valgt**, **Valgt for forsendelse** eller **Utfør valgte** er valgt, angis bare den bestemte handlekurvlinjen med denne leveringsmetoden. I så fall fortsetter nedstrømsflyten av operasjonen som vanlig. Hvis **Velg valgt**, **Valgt for forsendelse**, eller **Utfør valgte** velges uten at en handlevognlinje blir valgt, åpnes imidlertid en ny side som viser alle handlekurvlinjene. På dette skjermbildet kan du velge flere linjer samtidig for å angi leveringsmåte. Når du bruker denne metoden for å velge linjer, vil tidligere leveringsmåter som er knyttet til linjen, bli overstyrt.
 
 <a name="see-also"></a>Se også
 --------
 
-[Oversikt over ordrer for kunde](customer-orders-overview.md)
+[Oversikt over kundeordrer](customer-orders-overview.md)
+
+
 
 

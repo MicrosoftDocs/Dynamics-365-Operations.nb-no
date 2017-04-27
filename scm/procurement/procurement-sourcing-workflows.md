@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen. Hvis du vil konfigurere en godkjenningsprosess, kan du opprette en arbeidsflyt.
 
 En arbeidsflyt representerer en forretningsprosess. Den definerer hvordan et dokument går gjennom systemet, og angir hvem som må utføre en oppgave eller godkjenne et dokument. Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 -   **Konsekvente prosesser** – Du kan definere godkjenningsprosessen for bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter. Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.
 -   **Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for en bestemt arbeidsflytforekomst. Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.
--   **Sentralisert arbeidsliste**– brukere kan vise en sentralisert arbeidsliste for å vise arbeidsflytoppgavene og -godkjenningene som er tilordnet til dem på tvers av alle arbeidsflyter som de deltar i. Dette er tilgjengelig på siden arbeid elementer.
+-   **Sentralisert arbeidsliste**– Brukere kan vise en sentralisert arbeidsliste for å vise arbeidsflytoppgavene og -godkjenningene som er tilordnet på tvers av alle arbeidsflyter de deltar i. Dette er tilgjengelig på siden Arbeidselementer.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> Arbeidsflyttypene som du kan opprette
 Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
@@ -46,7 +49,7 @@ Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
 | Bestillingslinjearbeidsflyt     | Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillingslinjer. |
 
 ## <a name="creating-a-workflow"></a>Opprette en arbeidsflyt
-Hvis du vil opprette en arbeidsflyt, kan du gå til innkjøp og leverandører &gt;Setup &gt;for innkjøp og leverandører arbeidsflyter og opprette en ny arbeidsflyt ved å velge hvilken type arbeidsflyten du vil opprette.  
+Hvis du vil opprette en arbeidsflyt, kan du gå til Innkjøp og leverandører &gt; Oppsett &gt; Arbeidsflyter for innkjøp og leverandører, og opprette en ny arbeidsflyt ved å velge typen arbeidsflyt som du vil opprette.  
 
 Du kan dra arbeidsflytelementer til utformingen og koble elementene til en flyt på arbeidsflytlerretet. Arbeidsflytelementene må konfigureres. For arbeidsflytelementer for godkjenning og oppgave kan du konfigurere hvilken deltaker som skal utføre handlingen.
 Deltakertyper
@@ -69,6 +72,8 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 
 [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
+
+
 
 

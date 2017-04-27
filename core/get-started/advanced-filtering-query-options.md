@@ -1,5 +1,5 @@
 ---
-title: "Avansert filtrering og spørringssyntaks"
+title: "Avansert synstaks for filtrering og spørringer"
 description: "Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren &quot;treff&quot; i dialogboksen Avansert filter/sortering."
 author: jasongre
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Avansert filtrering og spørringssyntaks
+# <a name="advanced-filtering-and-query-syntax"></a>Avansert synstaks for filtrering og spørringer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren "treff" i dialogboksen Avansert filter/sortering.
 
@@ -55,76 +58,76 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <td><strong>Smith</strong> finner &quot;Smith&quot;.</td>
 </tr>
 <tr class="even">
-<td>! <em>verdien</em> (utropstegn)</td>
+<td>!<em>verdi</em> (utropstegn)</td>
 <td>Ikke lik verdien som er angitt</td>
 <td>Skriv inn et utropstegn foran verdien som skal utelates.</td>
-<td><strong>! Smith</strong> finner alle verdier unntatt &quot;Smith&quot;.</td>
+<td><strong>!Smith</strong> finner alle verdier unntatt &quot;Smith&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>fra-verdi</em>..<em>til-verdi</em> (dobbelt punktum)</td>
 <td>Mellom de to verdiene som er atskilt med doble punktum</td>
 <td>Skriv inn fra-verdien, deretter to punktum og så til-verdien.</td>
-<td><strong>1..10</strong> finner alle verdier fra 1 til 10. Men i et string-felt, <strong>A.. C</strong> finner alle verdier som starter med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;. Denne spørringen finner for eksempel ikke &quot;Ca&quot;. Du finner alle verdier fra &quot;A*&quot; gjennom &quot;C*&quot;, type <strong>A.. D</strong>.</td>
+<td><strong>1..10</strong> finner alle verdier fra 1 til og med 10. I en streng finner imidlertid felt <strong>A..C</strong> alle verdier som begynner med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;. Denne spørringen finner for eksempel ikke &quot;Ca&quot;. Hvis du vil finne alle verdier fra &quot;A*&quot; til og med &quot;C*&quot;, skriver du inn <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>verdi</em> (dobbelt punktum)</td>
 <td>Mindre enn eller lik verdien som er angitt</td>
 <td>Skriv inn de to punktumene og deretter verdien.</td>
-<td><strong>.. 1000</strong> finner du et tall som er mindre enn eller lik 1000, som &quot;100&quot;, &quot;999.95&quot;, og &quot;1 000&quot;.</td>
+<td><strong>..1000</strong> finner et hvilket som helst tall som er mindre enn eller lik 1 000, for eksempel &quot;100&quot;, &quot;999,95&quot; og &quot;1 000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>verdi</em>.. (dobbelt punktum)</td>
 <td>Større enn eller lik verdien som er angitt</td>
 <td>Skriv inn verdien og deretter to punktumene.</td>
-<td><strong>1000..</strong> Søker etter et tall som er større enn eller lik 1 000, for eksempel &quot;1 000&quot;, &quot;1 000,01&quot;, og &quot;1 000 000&quot;.</td>
+<td><strong>1000..</strong> finner et hvilket som helst tall som er større enn eller lik 1 000, for eksempel &quot;1,000&quot;, &quot;1,000,01&quot;, og &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>verdien</em> (større enn-tegnet)</td>
+<td>&gt;<em>verdi</em> (større enn-tegn)</td>
 <td>Større enn verdien som er angitt</td>
-<td>Skriv inn et større enn-tegnet (<strong>&gt;</strong>) og deretter verdien.</td>
-<td><strong>&gt;1000</strong> finner du et tall som er større enn 1000, som &quot;1000,01&quot;, &quot;20 000&quot;, og &quot;1 000 000&quot;.</td>
+<td>Skriv inn et større enn-tegn (<strong>&gt;</strong>) og deretter verdien.</td>
+<td><strong>&gt;1000</strong> finner et hvilket som helst tall som er større enn 1 000, for eksempel &quot;1000,01&quot;, &quot;20,000&quot; og &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>verdien</em> (mindre enn-tegnet)</td>
+<td>&lt;<em>verdi</em> (mindre enn-tegn)</td>
 <td>Mindre enn verdien som er angitt</td>
-<td>Skriv inn et mindre enn-tegnet (<strong>&lt;</strong>) og deretter verdien.</td>
-<td><strong>&lt;1000</strong> finner du et tall som er mindre enn 1000 som &quot;999,99&quot;, &quot;1&quot;, og &quot;-200&quot;.</td>
+<td>Skriv inn et mindre enn-tegn (<strong>&lt;</strong>) og deretter verdien.</td>
+<td><strong>&lt;1000</strong> finner et hvilket som helst tall som er mindre enn 1 000, for eksempel &quot;999,99&quot;, &quot;1&quot; og &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>verdien</em>* (stjerne)</td>
+<td><em>verdi</em>* (stjerne)</td>
 <td>Begynner fra verdien som er angitt</td>
 <td>Skriv inn startverdien og deretter en stjerne (<strong>*</strong>).</td>
-<td><strong>S *</strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, som &quot;Stockholm&quot;, &quot;Sydney&quot;, og &quot;San Francisco&quot;.</td>
+<td><strong>S*</strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, for eksempel &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>verdi</em> (stjerne)</td>
 <td>Slutter med verdien som er angitt</td>
 <td>Skriv inn en stjerne og deretter sluttverdien.</td>
-<td><strong>* Øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som &quot;Nordøst&quot; og &quot;Sørøst&quot;.</td>
+<td><strong>*øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som i &quot;nordøst&quot; og &quot;sydøst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>verdien</em>* (stjerne)</td>
+<td>*<em>verdi</em>* (stjerne)</td>
 <td>Inneholder verdien som er angitt</td>
 <td>Skriv inn en stjerne, deretter en verdi og så en ny stjerne.</td>
-<td><strong>*te*</strong> finner en hvilken som helst streng som inneholder &quot;te&quot;, som &quot;Nordøst&quot; og &quot;Sørøst&quot;.</td>
+<td><strong>*øs*</strong> finner en hvilken som helst streng som inneholder &quot;øs&quot;, som i &quot;nordøst&quot; og &quot;sørøst&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (spørsmålstegn)</td>
 <td>Har ett eller flere ukjente tegn</td>
 <td>Skriv inn et spørsmålstegn i posisjonen for det ukjente tegnet i verdien.</td>
-<td><strong>Sm? th</strong> finner &quot;Smith&quot; og &quot;Smyth&quot;.</td>
+<td><strong>Sm?th</strong> finner &quot;Smith&quot; og &quot;Smyth&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>verdi</em>,<em>verdi</em> (komma)</td>
 <td>Samsvarer med verdiene som er atskilt med komma</td>
 <td>Skriv inn alle kriteriene atskilt med komma.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> finner nøyaktig &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> finner nøyaktig &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finner nøyaktig &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-setning</span>) (SQL-setning i parenteser)</td>
 <td>Samsvarer med en definert spørring</td>
 <td>Skriv inn en spørring som et SQL-setning i parenteser.</td>
-<td><strong><span class="code">(datakilde. Feltnavn! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>T</td>
@@ -137,7 +140,7 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <td>Samsvare verdien eller verdiområdet som er angitt av parameterne for <strong>SysQueryRangeUtil</strong>-metoden</td>
 <td>Skriv inn en <strong>SysQueryRangeUtil</strong>-metode med parametere som angir verdien eller verdiområdet.</td>
 <td><ol>
-<li>Klikk <strong>kunder</strong>&gt;<strong>fakturaer</strong>&gt;<strong>åpne kundefakturaer</strong>.</li>
+<li>Klikk <strong>Kunder</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åpne kundefakturaer</strong>.</li>
 <li>Trykk Ctrl+Skift+F3 for å åpne <strong>Forespørsel</strong>-siden.</li>
 <li>Klikk <strong>Legg til</strong> i kategorien <strong>Område</strong>.</li>
 <li>I <strong>Tabell</strong>-feltet velger du <strong>Åpne kundetransaksjoner</strong>.</li>
@@ -228,6 +231,8 @@ Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQuery
 </tr>
 </tbody>
 </table>
+
+
 
 
 

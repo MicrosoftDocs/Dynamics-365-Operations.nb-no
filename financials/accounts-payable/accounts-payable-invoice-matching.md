@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Fakturasamsvar for leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
 
 Ved dokumentsamsvar kalles forskjeller mellom disse dokumentene samsvarende avvik. Samsvarende avvik blir sammenlignet med toleransen som er angitt. Hvis et samsvarsavvik er større enn toleranseprosenten eller -beløpet, vises ikoner for samsvarsavvik på siden Leverandørfaktura og på siden Fakturahistorikk og samsvarende detaljer. 
@@ -48,9 +51,9 @@ Du kan bruke følgende typer fakturasamsvar for leverandører:
 
 Toveis samsvar og treveis samsvar sammenligner alltid prisinformasjon med enhetsprisen. Du kan også konfigurere disse samsvarspolicyene for å sammenligne prisinformasjon med pristotalen.
 -   Nettoenhetspriskontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne netto enhetspris for hver linje på fakturaen med tilhørende netto enhetspris i bestillingen. Netto enhetspris fastsettes med følgende formel: nettobeløpet for linjen / antallet for linjen.
--   Pristotalkontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne nettobeløpet (pristotal) for hver linje på fakturaen med tilhørende nettobeløp på bestillingen. Nettobeløpet er avhengig av følgende formel: (salgspris \*linje antall) + linjetillegg - linjerabatter
+-   Pristotalkontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne nettobeløpet (pristotal) for hver linje på fakturaen med tilhørende nettobeløp på bestillingen. Nettobeløpet fastsettes med følgende formel: (enhetspris \* linjeantall) + linjetillegg - linjerabatter
 
-Fakturakontrollberegninger utføres vanligvis automatisk når du redigerer leverandørfakturaer på siden Leverandørfaktura. Du kan også utføre fakturakontroll ved forespørsel, etter behov. Fakturakontroll på forespørsel kontrolleres for den juridiske enheten av det automatisk oppdatere hodet Fakturastatus til på kontoene leverandørparametere side på kategorien faktura validering. Fakturakontroll kan også utføres som en del av en prosess for gjennomgang av faktura. Du kan vise resultatene av fakturakontroll på Leverandørfaktura-siden og relaterte fakturakontrollsider.
+Fakturakontrollberegninger utføres vanligvis automatisk når du redigerer leverandørfakturaer på siden Leverandørfaktura. Du kan også utføre fakturakontroll ved forespørsel, etter behov. Fakturakontroll ved behov kontrolleres for den juridiske enheten av Oppdater fakturahodestatus automatisk på siden Leverandørparametere på Fakturavalidering-fanen. Fakturakontroll kan også utføres som en del av en fakturavurderingsprosess. Du kan vise resultatene av fakturakontroll på Leverandørfaktura-siden og relaterte fakturakontrollsider.
 
 ## <a name="invoice-totals-matching"></a> Samsvar av fakturatotaler
 Du kan bruke kontroll av fakturatotaler som hjelp for å sørge for at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik. Seks totaler sammenlignes på Samsvar av fakturatotaler-detaljsiden, som vist i følgende tabell. Hvis den tillatte toleransen for samsvar av fakturatotaler er 20 %, betraktes 100 %-avviksprosenten for det totale rabattbeløpet som et samsvarsavvik.
@@ -165,7 +168,7 @@ De samme linjebeløpene sammenlignes på Fakturakontrolldetaljer-siden som for t
 Treveis samsvar kontrolleres for den juridiske enheten av feltet Linjekontrollpolicy på siden Leverandørparametere. Avhengig av valget i feltet Tillat overstyring av kontrollpolicy kan du velge treveis samsvar for en bestemt leverandør, vare eller kombinasjon av vare og leverandør på siden Kontrollpolicy, og for en bestemt bestilling på siden Bestilling.
 
 ## <a name="charges-matching"></a> Samsvar av tillegg
-Du kan bruke samsvar av tillegg som hjelp for å sørge for at tilleggsbeløp ikke avviker fra forventede beløp med mer enn en godkjent avviksprosent. Det totale beløpet for hver tilleggskoden som gjelder for fakturaen og bestillingen ordren sammenlignes i Sammenlign tilleggsverdier - faktura: side, som vist i følgende tabell. Hvis den tillatte toleransen for tilleggskoden er 25 %, betraktes 99999999999,99 %-avviksprosenten for lisenstilleggskoden som et samsvarsavvik.
+Du kan bruke samsvar av tillegg som hjelp for å sørge for at tilleggsbeløp ikke avviker fra forventede beløp med mer enn en godkjent avviksprosent. Totalbeløpene for hver tilleggskode som gjelder for fakturaen og bestillingen, sammenlignes på siden Sammenlign verdier for tillegg - Faktura: som vist i følgende tabell. Hvis den tillatte toleransen for tilleggskoden er 25 %, betraktes 99999999999,99 %-avviksprosenten for lisenstilleggskoden som et samsvarsavvik.
 
 > [!NOTE] 
 > En avviksprosent på 99999999999,99 % betyr at det forventede beløpet basert på bestillingen er null, og det faktiske beløpet på fakturaen er en positiv verdi. 
@@ -188,7 +191,9 @@ Leverandørfakturaer er ofte basert på produktkvitteringer som representerer fa
 -   Legge inn fakturabeløp som ikke ble tatt med i den opprinnelige bestillingen, slik at fakturainformasjonen samsvarer med fakturaen du har mottatt fra leverandøren. Du kan sammenligne tilleggene for bestillingene med tilleggene for fakturaene. Om nødvendig kan du legge til tillegg på fakturaer og tilordne dem til fakturalinjer.
 -   Vise og godkjenne avvik i prissamsvar mellom netto enhetspris i fakturaen og netto enhetspris i bestillingen. Du kan definere pristoleranseprosenter for juridiske enheter, leverandører og varer. Hvis prisen i leverandørfakturalinjen ikke er innenfor den tillatte pristoleransen, kan du lagre fakturaen til den blir godkjent for postering, eller til du mottar en rettelse fra leverandøren.
 
-Hvis du vil ha mer informasjon, se [policyer treveis](three-way-matching-policies.md).
+Hvis du vil ha mer informasjon, se [Treveis kontrollpolicyer](three-way-matching-policies.md).
+
+
 
 
 

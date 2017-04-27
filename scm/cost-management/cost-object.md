@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Kostnadsobjekter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvordan kostnader og antall akkumuleres. Et kostnadsobjekt er en enhet som kostnader og antall akkumuleres for. En kostnadsobjektenhet kan være et produkt eller produktvarianter, for eksempel varianter for stil og farge.  
 
 <a name="cost-objects"></a>Kostnadsobjekter
@@ -65,19 +68,21 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
     -   Postert antall
 -   Feltet **Gjennomsnittlig enhetskostnad** er et beregnet felt. Verdien beregnes ved å dele **Verdi**-verdien på **Antall**-verdien.
 
-**Merk:** den ** ta med fysisk verdi ** parameteren har ingen innvirkning på de foregående beregningene.
+**Obs!**  Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
 
 <a name="see-also"></a>Se også
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Produktdimensjonsgruppe](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Lagringsdimensjonsgruppe](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Sporingsdimensjonsgruppe](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Hva er ny eller endret i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Hva er nytt eller endret i Microsoft Dynamics AX?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Kostnadsoppføringer](cost-entries.md)
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter av tilbakeføringer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver potensielle konsekvenser av å tilbakeføre en anleggsmiddeltransaksjon. 
 
 Du kan tilbakeføre anleggsmiddeltransaksjoner, og transaksjoner som er tilknyttet et anleggsmiddel. Du kan også oppheve en tilbakeført transaksjon. 
@@ -90,6 +93,8 @@ Avskrivningen er undervurdert med 16,95 (983,62 - 966,67).
 <a name="see-also"></a>Se også
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Avskrivning av anleggsmidler](fixed-asset-depreciation.md)
+
+
 
 

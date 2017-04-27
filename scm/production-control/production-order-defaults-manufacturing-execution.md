@@ -1,5 +1,5 @@
 ---
-title: "Standarder for produksjon rekkefølgen i produksjonsutførelse"
+title: "Standardverdier for produksjonsordre i produksjonsutførelse"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Standarder for produksjon rekkefølgen i produksjonsutførelse
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Standardverdier for produksjonsordre i produksjonsutførelse
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Du bør nøye vurdere alle innstillingene på den **produksjon rekkefølgen standarder** siden før ansatte starter å gjøre registreringer på produksjonsjobber. Hvis firmaet ditt bruker multisite-funksjonaliteten, vil du kanskje definere forskjellige standarder for produksjonsordrer for hvert område. Ordrestandardene for integrasjon med produksjonskontroll defineres i følgende kategorier på siden **Standarder for produksjonsordre**:
+
+Du bør nøye vurdere alle innstillingene på siden **Standarder for produksjonsordre** før arbeidere begynner å gjøre registreringer på produksjonsjobber. Hvis firmaet ditt bruker multisite-funksjonaliteten, vil du kanskje definere forskjellige standarder for produksjonsordrer for hvert område. Ordrestandardene for integrasjon med produksjonskontroll defineres i følgende kategorier på siden **Standarder for produksjonsordre**:
 
 -   **Generelt** – generelle ordrestandarder for produksjonsjobber i produksjonsutførelse.
 -   **Start** – Ordrestandarder som brukes når produksjonsjobber eller -operasjoner startes.
@@ -68,6 +71,8 @@ Materialforbruk under ferdigmeldingsprosessen for en produksjonsordre styres av 
 -   **Trekkprinsipp** – Når en produksjonsordre ferdigmeldt, forbrukes mengder av materiale i henhold til trekkprinsippet som er angitt på produksjonsstykklistelinjene. Bare materiallinjer der trekkprinsippet er satt til **Fullfør**, vil bli brukt under produksjonsstart.
 -   **Alltid** – materialantall som er proporsjonalt med antall som er ferdigmeldt, forbrukes alltid.
 -   **Aldri** – antall av materialet forbrukes aldri.
+
+
 
 
 

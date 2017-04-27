@@ -28,19 +28,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="adjust-on-hand-inventory-cost-values"></a>Justere kostnadsverdier for lagerbeholdning
 
+[!include[banner](../includes/banner.md)]
+
+
 Bruk siden Justering av lagerbeholdning til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt.
 
-Du kan bruke siden **Justering av lagerbeholdning** til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt. **Merk:** til å åpne den **regulering av lagerbeholdning** side på den **lukking og justering** side, velger posten til en fullført Lagerlukkingsprosessen, og klikk deretter **justering**&gt;**på lager**. **Eksempel:** Du har følgende transaksjoner i februar:
+Du kan bruke siden **Justering av lagerbeholdning** til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt. **Obs!** Du åpner siden **Justering av lagerbeholdning** ved å velge posten for en fullført lagerlukkingsprosess på siden **Lukking og justering** og deretter klikke **Justering** &gt; **Beholdning**. **Eksempel:** Du har følgende transaksjoner i februar:
 
 -   1. februar: Et økonomisk lagermottak av et antall på 2 til en kostnad på USD 10,00
 -   5. februar: Et økonomisk lagermottak av et antall på 1 til en kostnad på USD 13,00
 -   19. februar: En økonomisk lageravgang av et antall på 1 til en løpende gjennomsnittlig kostnad på USD 11,00
 
-Denne varen ble definert med først inn, først ut (FIFO) lagermodellen, og lagerlukkingen ble utført per 28. Økonomisk avgangstransaksjonen for USD 11.00 blir utlignet mot økonomisk mottak som er datert 1. februar, og vil bli gjort en justering av USD 1.00. Følgende lagermottak vil dermed inneholde åpne lagerantall:
+Denne varen ble definert med først-inn-først-ut-lagermodellen, og lagerlukkingen ble utført per 28. februar. Den økonomiske avgangstransaksjonen på USD 11,00 vil bli utlignet til det økonomiske mottaket datert 1. februar, og en justering på USD 1,00 blir foretatt. Følgende lagermottak vil dermed inneholde åpne lagerantall:
 
 -   1. februar: Et antall på 1 til en kostnad på USD 10,00
 -   5. februar: Et antall på 1 til en kostnad på USD 13,00
 
 Når du skal definere disse to varenes kost til USD 15,00, bruker du alternativet for lagerjustering til å justere åpne lagerantall per siste lagerlukkingsperiode. **Obs! ** Posteringsdatoen for lagerjusteringstransaksjonen blir datoen for den siste lagerlukkingen. Denne datoen kan ikke endres.
+
+
 
 

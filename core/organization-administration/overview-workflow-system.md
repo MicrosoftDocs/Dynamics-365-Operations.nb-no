@@ -1,6 +1,6 @@
 ---
-title: Oversikt over Workflow-systemet
-description: Denne artikkelen beskriver workflow-systemet i Microsoft Dynamics 365 for operasjoner.
+title: Oversikt over arbeidsflytsystemet
+description: Denne artikkelen beskriver arbeidsflytsystemet i Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Oversikt over Workflow-systemet
+# <a name="workflow-system-overview"></a>Oversikt over arbeidsflytsystemet
 
-Denne artikkelen beskriver workflow-systemet i Microsoft Dynamics 365 for operasjoner.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver arbeidsflytsystemet i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Hva er arbeidsflyt?
 -----------------
@@ -34,7 +37,7 @@ Denne artikkelen beskriver workflow-systemet i Microsoft Dynamics 365 for operas
 Begrepet *arbeidsflyt* kan defineres på to måter: som et system og en forretningsprosess.
 ### <a name="workflow-is-a-system"></a>Workflow er et system
 
-Arbeidsflyt er et system som er installert med Dynamics 365 for operasjoner, og som kjører på Application Object Server (AOS). Arbeidsflytsystemet inneholder funksjonalitet du kan bruke til å opprette enkle arbeidsflyter eller forretningsprosesser.
+Arbeidsflyt er et system som installeres med Dynamics 365 for Operations, og som kjøres på Application Object Server (AOS). Arbeidsflytsystemet inneholder funksjonalitet du kan bruke til å opprette enkle arbeidsflyter eller forretningsprosesser.
 
 ### <a name="workflow-is-a-business-process"></a>Arbeidsflyt er en forretningsprosess
 
@@ -46,6 +49,7 @@ Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 -   **Konsekvente prosesser** – Du kan definere hvordan bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter, skal behandles. Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.
 -   **Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for arbeidsflytforekomster. Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.
 -   **Sentralisert arbeidsliste** – Brukere kan vise en sentralisert arbeidsliste som viser arbeidsflytoppgavene og -godkjenningene som er tilordnet til dem.
+
 
 
 

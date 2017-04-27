@@ -1,6 +1,6 @@
 ---
-title: Oversikt over ordrer for kunde
-description: "Dette emnet gir informasjon om kundeordrer i Retail moderne POS (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen."
+title: Oversikt over kundeordrer
+description: "Dette emnet gir informasjon om kundeordrer i Moderne salgssted for detaljhandel (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -25,75 +25,80 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="customer-orders-overview"></a>Oversikt over ordrer for kunde
+# <a name="customer-orders-overview"></a>Oversikt over kundeordrer
 
-Dette emnet gir informasjon om kundeordrer i Retail moderne POS (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
+[!include[banner](includes/banner.md)]
 
-I en omni-kanals retail-verden gir mange detaljister muligheten til kundens ordrer og spesialordrer, til forskjellige behov for produkt og gjennomføring. Her er noen vanlige scenarier:
+
+Dette emnet gir informasjon om kundeordrer i Moderne salgssted for detaljhandel (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
+
+Omnikanal for detaljhandel gir mulighet for kundeordrer og spesialordrer, eller spesialordrer, for å møte ulike behov. Her er noen vanlige scenarier:
 
 -   En kunde ønsker produkter som skal leveres til en bestemt adresse på en bestemt dato.
 -   En kunde ønsker å plukke opp produkter fra en butikk eller lokasjon som er forskjellig fra butikken eller plasseringen der kunden kjøpte disse produktene.
 -   En kunde ønsker noen andre til å plukke opp produkter som kunden har kjøpt.
 
-Forhandlere kan også bruke kundeordrer for å minimere tapt salg som lager driftsstans ellers kan det hende, fordi varene kan leveres eller plukket på et annet tidspunkt eller sted.
+Forhandlere kan også bruke kundeordrer for å minimere tapt salg som ellers kan forårsakes av lagernedetid, fordi varene kan leveres eller hentes på et annet tidspunkt eller sted.
 
 ## <a name="set-up-customer-orders"></a>Definer kundeordrer
-Her er noen av parameterne som kan angis i den **parametere for detaljhandel** siden for å definere hvordan kundeordrer er oppfylt:
+Her er noen av parameterne som kan angis på siden **Parametere for detaljhandel** for å definere hvordan kundeordrer er oppfylt:
 
--   **Standard innskudd prosent** – Angi beløpet som kunden må betale som et innskudd før en ordre kan bekreftes. Innbetalingsbeløpet i standard beregnes som en prosentandel av order-verdien. Avhengig av rettigheter, Knytt en butikk kan kanskje overstyre beløpet ved hjelp av **overstyring av innbetaling**.
--   **Prosent for annulleringsgebyr** – Hvis et gebyr vil bli brukt når en kundebestilling er avbrutt, angi beløpet for gebyret.
--   **Kode for annulleringsgebyr** – Hvis et gebyr vil bli brukt når en kundebestilling er avbrutt, at tillegget vises under en tilleggskode i ordren i Microsoft Dynamics AX. Bruk denne parameteren til å definere tilleggskoden for annulleringen.
--   **Levering tilleggskoden** – forhandlere kan belaste en ekstra avgift for forsendelse av varer til en kunde. Hvor mye strøm som levering vises under en tilleggskode i ordren i Dynamics AX. Bruk denne parameteren til å tilordne levering tilleggskoden til forsendelsestillegg på kundeordren.
--   **Refundere forsendelseskostnadene** – angi om forsendelseskostnadene som er knyttet til en kundeordre refundable.
--   **Maksimalt beløp uten godkjenning** – Hvis forsendelseskostnader er refundable, angir den maksimale mengden levering gebyr refusjoner over returordrer. Hvis dette beløpet overstiges, er manager overstyring nødvendig for å fortsette med refusjonen. Refundert forsendelseskostnader kan overskride beløpet som opprinnelig ble betalt til følgende scenarier:
-    -   Gebyrer, brukes på nivået av salgsordrehodet, og når et antall av en produktserie returneres, maksimal refusjon for forsendelsestillegg som er tillatt for produktene og antallet kan ikke bestemmes på måten som passer for alle detaljkunder.
-    -   Forsendelseskostnader er påløpt for hver forekomst av levering. Hvis en kunde returnerer varer flere ganger, og fra forhandleren policyen angir at forhandleren vil bære kostnaden for retur forsendelseskostnader, blir mer enn faktiske forsendelseskostnadene i retur forsendelseskostnadene.
+-   **Standard innbetalingsprosent** – Angi beløpet som kunden må betale som et innskudd før en ordre kan bekreftes. Standard innbetalingsbeløp beregnes som en prosentdel av ordreverdien. Avhengig av rettigheter kan en butikkmedarbeider kanskje overstyre beløpet ved hjelp av **Overstyring av innbetaling**.
+-   **Prosent for annulleringsgebyr** – Hvis et gebyr skal brukes når en kundebestilling annulleres, angir du beløpet for gebyret.
+-   **Kode for annulleringsgebyr** – Hvis et gebyr skal brukes når en kundebestilling annulleres, vises dette gebyret under en gebyrkode i salgsordren i Microsoft Dynamics AX. Bruk denne parameteren til å definere koden for annulleringsgebyr.
+-   **Kode for forsendelsesgebyr** – Forhandlere kan belaste en ekstra avgift for forsendelse av varer til en kunde. Beløpet for forsendelsesgebyret vises under en gebyrkode i salgsordren i Dynamics AX. Bruk denne parameteren til å tilordne koden for forsendelsesgebyr til forsendelsegebyret på kundeordren.
+-   **Refundering av forsendelseskostnader** – Angi om forsendelseskostnadene som er knyttet til en kundeordre, kan refunderes.
+-   **Maksimumsbeløp uten godkjenning** – Hvis forsendelseskostnader kan refunderes, angir du maksimumsbeløpet for refundereringer av forsendelseskostnader på tvers av returordrer. Hvis dette beløpet overstiges, er lederoverstyring nødvendig for å fortsette med refunderingen. En refundering av forsendelseskostnader kan overskride beløpet som opprinnelig ble betalt, i følgende scenarier:
+    -   Gebyrer brukes på nivået til salgsordrehodet, og når et antall av en produktserie returneres, kan ikke maksimal refundering av forsendelseskostnader som er tillatt for produktene og antallet, bestemmes på en måte som passer for alle detaljkunder.
+    -   Forsendelseskostnader påløpes for hver forekomst av levering. Hvis en kunde returnerer varer flere ganger, og forhandlerens policy angir at forhandleren skal betale returgebyrene, blir returgebyrene større enn de faktiske forsendelseskostnadene.
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaksjonsflyt for kundeordrer
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Opprette en kundeordre i moderne Priskontroll
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Opprett en kundeordre i moderne salgssted for detaljhandel
 
 1.  Legg til en kunde i transaksjonen.
-2.  Legge til produkter i handlekurven.
-3.  Klikk **opprette kundeordre**, og velg deretter typen bestilling. Ordretypen kan være enten **kundeordre** eller **tilbud**.
-4.  Klikk **Lever valgt** eller **Send alle** for å levere produkter til en adresse i kundekontoen, kan du angi ønsket forsendelsesdato, og angi forsendelseskostnader.
-5.  Klikk **plukke opp valgt** eller **avhenting alle** å velge produkter som plukkes fra det gjeldende lageret eller en annen på en bestemt dato.
+2.  Legg til produkter i handlevognen.
+3.  Klikk **Opprett kundeordre**, og velg deretter ordretypen. Ordretypen kan være enten **kundeordre** eller **tilbud**.
+4.  Klikk **Valgt for forsendelse** eller **Send alle** for å levere produktene til en adresse i kundekontoen, angi ønsket forsendelsesdato, og angi forsendelseskostnader.
+5.  Klikk **Valgt for plukking** eller **Plukk alle** for å velge produkter som plukkes fra det gjeldende lageret eller et annet lager på en bestemt dato.
 6.  Samle innbetalingsbeløpet, hvis det kreves et depositum.
 
-### <a name="edit-an-existing-customer-order"></a>Redigere en eksisterende kunde.
+### <a name="edit-an-existing-customer-order"></a>Rediger en eksisterende kundeordre
 
-1.  Klikk på hjemmesiden, **finne en bestilling**.
-2.  Finn og velg rekkefølgen for å redigere. Nederst på siden, klikker du **Rediger**.
+1.  Klikk **Finn en ordre** på startsiden.
+2.  Finn og velg ordren for å redigere. Klikk **Rediger** nederst på siden.
 
-### <a name="pick-up-an-order"></a>Plukke opp en ordre
+### <a name="pick-up-an-order"></a>Hent en ordre
 
-1.  Klikk på hjemmesiden, **finne en bestilling**.
-2.  Velg ordren som skal plukke opp. Nederst på siden, klikker du **plukking og pakking av**.
-3.  Klikk **plukke opp**.
+1.  Klikk **Finn en ordre** på startsiden.
+2.  Velg ordren som skal hentes. Klikk **Plukk og pakking** nederst på siden.
+3.  Klikk **Plukk**.
 
 ### <a name="cancel-an-order"></a>Annullere en ordre
 
-1.  Klikk på hjemmesiden, **finne en bestilling**.
-2.  Velg rekkefølgen for å avbryte. Nederst på siden, klikker du **avbryte**.
+1.  Klikk **Finn en ordre** på startsiden.
+2.  Velg ordren som skal annulleres. Klikk **Avbryt** nederst på siden.
 
 #### <a name="create-a-return-order"></a>Opprette en returordre
 
-1.  Klikk på hjemmesiden, **finne en bestilling**.
-2.  Velg rekkefølgen for å gå tilbake, Velg fakturaen for bestillingen, og velg produktlinje for varer å gå tilbake.
-3.  Nederst på siden, klikker du **ordreretur**.
+1.  Klikk **Finn en ordre** på startsiden.
+2.  Velg ordren som skal returneres, velg fakturaen for ordren, og velg produktlinjen for varen som skal returneres.
+3.  Klikk **Returordre** nederst på siden.
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkron transaksjonsflyt for kundeordrer
-Kundeordrer kan opprettes fra poenget med salg (POS) klienten i modus for synkron eller asynkron modus.
+Kundeordrer kan opprettes fra salgssted-klienten i synkron eller asynkron modus.
 
-### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Aktiver kundeordrer i asynkron modus
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>La kundeordrer opprettes i asynkron modus
 
-1.  I Dynamics AX, klikker du **detaljhandel og commerce**&gt;**kanaloppsett**&gt;**POS installasjonsprogrammet**&gt;**profil POS**&gt;**Funksjonalitetsprofiler**.
-2.  På den **Generelt** hurtigfanen satt til **Opprett kundeordre i asynkron modus** å **Ja**.
+1.  I Dynamics AX klikker du **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofil** &gt; **Funksjonalitetsprofiler**.
+2.  På **Generelt**-hurtigfanen angir du **Opprett kundeordre i asynkron modus** til **Ja**.
 
-Når den **opprette kundeordre i asynkron modus** alternativet er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om detaljhandel Transaction Service (RTS) er tilgjengelig. Hvis du setter dette alternativet til å **ingen**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, er de hentes og settes inn i Dynamics AX ved å trekke (P) jobber. Tilsvarende salgsordrene som er opprettet i Dynamics AX når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
+Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om RTS er tilgjengelig. Hvis du setter dette alternativet til **Nei**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, hentes og settes de inn i Dynamics AX ved hentejobber (P-jobber). De tilsvarende salgsordrene opprettes i Dynamics AX når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
 
 <a name="see-also"></a>Se også
 --------
 
-[Hybrid kundeordrer](hybrid-customer-orders.md)
+[Hybridkundeordrer](hybrid-customer-orders.md)
+
+
 
 

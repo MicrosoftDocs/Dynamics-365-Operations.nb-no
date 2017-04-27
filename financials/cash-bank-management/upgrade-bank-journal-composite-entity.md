@@ -1,5 +1,5 @@
 ---
-title: Oppdatere bank journal sammensatt enhet
+title: Oppdatere sammensatt enhet for bankjournal
 description: "Fremgangsmåten nedenfor kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Oppdatere bank journal sammensatt enhet
+# <a name="update-the-bank-journal-composite-entity"></a>Oppdatere sammensatt enhet for bankjournal
+
+[!include[banner](../includes/banner.md)]
+
 
 Fremgangsmåten nedenfor kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
 
 Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
 
 1.  Kompiler og synkroniser følgende sammensatte enheter for bankjournalen, enheter og oppsamlingstabeller:
-    -   Sammensatt enhet\\BankJournalEntity
-    -   Enheten\\BankJournalHeaderEntity
-    -   Enheten\\BankJournalLineEntity
-    -   Tabellen\\BankJournalHeaderStaging
-    -   Tabellen\\BankJournalLineStaging
+    -   Sammensatt Entity\\BankJournalEntity
+    -   Entity\\BankJournalHeaderEntity
+    -   Entity\\BankJournalLineEntity
+    -   Table\\BankJournalHeaderStaging
+    -   Table\\BankJournalLineStaging
 
-2.  Behandling av\\data prosjekter
+2.  Databehandling\\dataprosjekter
     -   Viser **Banktransaksjon**-typen på **Kildedata**-oppsettet.
         -   Kildedataformat = XML-element
         -   Enhetsnavn = Bankjournal
@@ -49,6 +52,8 @@ Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionTyp
             -   Kontroller at Banktransaksjon-typen er tilordnet fra Kilde til Oppsamling.
 
 3.  Importer det nye utdraget.
+
+
 
 
 

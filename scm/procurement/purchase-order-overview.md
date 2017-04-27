@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder generell informasjon om bestillinger og koblinger til flere artikler som er knyttet til de ulike stadiene som en bestilling går gjennom.
 
 En bestilling er et dokument som representerer en avtale med en leverandør om å kjøpe varer eller tjenester. Dokumentet bidrar også til å holde oversikt over produktkvitteringer som er gjort mot ordren og, senere, regnskap for leverandørfakturaer som leverandøren veksler mot ordren.  
 
-Siden **Bestillinger** inneholder en oversikt over ordrene som er tilgjengelige og lar deg endre disse ordrene. Når du åpner en bestilling, kan du velge **Topptekst**-visningen, som inneholder informasjon som er angitt bare én gang for hver bestilling, for eksempel leverandørdetaljer. Du kan også velge **Linjer**-visningen, der du kan endre ordrelinjer. Vanligvis kan du bytte mellom disse to visningene når du endrer POs. Tillegg som ikke er nevnt direkte på den **bestillinger**, men de er tilgjengelige via menyer i ordrehodet og på linjene.  
+Siden **Bestillinger** inneholder en oversikt over ordrene som er tilgjengelige og lar deg endre disse ordrene. Når du åpner en bestilling, kan du velge **Topptekst**-visningen, som inneholder informasjon som er angitt bare én gang for hver bestilling, for eksempel leverandørdetaljer. Du kan også velge **Linjer**-visningen, der du kan endre ordrelinjer. Vanligvis kan du bytte mellom disse to visningene når du endrer bestillinger. Tillegg vises ikke direkte på siden **Bestillinger**, men de er tilgjengelige via menyer i ordrehodet og -linjene.  
 
 Det finnes mange rapporter der du kan vise informasjon om bestillinger, produktkvitteringer og leverandørfakturaer. Disse rapportene er finnes i modulene **Innkjøp og leverandører** og **Leverandører**.  
 
-Arbeidsområdene **Bestillingsklargjøring** og **Bestillingsmottak og oppfølging** lar deg vise lister over bestillinger i de ulike stadiene som de har kommet til. De gir også et sammendrag av handlinger som må utføres. Arbeidsområdet **Bestillingsklargjøring** fokuserer på oppretting av bestilling og gjennomgang, behandling av ordren til godkjenning og bekreftelse med leverandøren. Den **bestillinger mottas og oppfølging** arbeidsområde fokuserer på behandling av mottak av varer eller tjenester mot POs. Det inneholder lister som gir innsikt i mottak som er forfalt, eller som snart forfaller for levering av leverandøren. Disse arbeidsområdene brukes ikke til å utføre de relaterte mottaksaktivitetene som gjøres på lageret. Disse aktivitetene utføres ved hjelp av sider i modulene **Beholdningsstyring** og **Lagerstyring**. Behandling av leverandørfakturaer skal gjøres ved hjelp av arbeidsområdet **Leverandørfakturaregistrering**, og betalinger skal gjøres ved hjelp av arbeidsområdet **Leverandørbetalinger**.  
+Arbeidsområdene **Bestillingsklargjøring** og **Bestillingsmottak og oppfølging** lar deg vise lister over bestillinger i de ulike stadiene som de har kommet til. De gir også et sammendrag av handlinger som må utføres. Arbeidsområdet **Bestillingsklargjøring** fokuserer på oppretting av bestilling og gjennomgang, behandling av ordren til godkjenning og bekreftelse med leverandøren. Arbeidsområdet **Bestillingsmottak og oppfølging** fokuserer på behandling av mottak av varer eller tjenester mot bestillinger. Det inneholder lister som gir innsikt i mottak som er forfalt, eller som snart forfaller for levering av leverandøren. Disse arbeidsområdene brukes ikke til å utføre de relaterte mottaksaktivitetene som gjøres på lageret. Disse aktivitetene utføres ved hjelp av sider i modulene **Beholdningsstyring** og **Lagerstyring**. Behandling av leverandørfakturaer skal gjøres ved hjelp av arbeidsområdet **Leverandørfakturaregistrering**, og betalinger skal gjøres ved hjelp av arbeidsområdet **Leverandørbetalinger**.  
 
 Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilling går gjennom:
 
@@ -45,7 +48,7 @@ Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilli
 -   [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Bestillingstyper
-Det finnes tre typer POs. Når du oppretter en bestilling, må du angi hvilken. Du kan definere en standard ordretype for nye bestillinger på siden **Parametere for innkjøp og leverandører**.
+Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi type. Du kan definere en standard ordretype for nye bestillinger på siden **Parametere for innkjøp og leverandører**.
 
 | Bestillingstype        | Beskrivelse                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Opprett bestilling](purchase-order-creation.md)
 
 [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
 
 [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

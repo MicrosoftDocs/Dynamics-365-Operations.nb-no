@@ -102,7 +102,7 @@ Det finnes to metoder for å planlegge regelmessig oppretting av syklustellingsa
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Opprette syklustellingsarbeid basert på terskelparameterne for varer
 
-Syklustellingsarbeid kan opprettes når antallet varer synker under en bestemt terskelverdi på en lokasjon. Det finnes for eksempel 60 elementer på et sted som har en terskel på 40 for syklustelling. Under en salgsordretransaksjon 25 varene plukkes fra plasseringen og sette inn en oppsamling sted. Siden det nye vareantallet på 35 er mindre enn terskelantallet, opprettes syklustellingsarbeid automatisk for lokasjonen.
+Syklustellingsarbeid kan opprettes når antallet varer synker under en bestemt terskelverdi på en lokasjon. Det finnes for eksempel 60 elementer på en lokasjon der terskelverdien for syklustelling er 40. Under en salgsordretransaksjon plukkes 25 varer fra lokasjonen og plasseres i en oppsamlingslokasjon. Siden det nye vareantallet på 35 er mindre enn terskelantallet, opprettes syklustellingsarbeid automatisk for lokasjonen.
 
 ### <a name="schedule-cycle-counting-work"></a>Planlegge syklustellingsarbeid
 
@@ -129,7 +129,7 @@ Følgende eksempel viser hvordan du kan utføre spotsyklustelling ved hjelp av e
 ## <a name="resolve-cycle-counting-differences"></a>Løse syklustellingsdifferanser
 Det oppstår en syklustellingsdifferanse i følgende scenarier: hvis **Er en syklustellingsansvarlig** er angitt til **Nei** for en arbeidsbruker-ID:
 
--   Verdien for syklustellingen ikke er innenfor avviksgrensene som er angitt i feltene **Grense for største prosent** eller **Grense for største antall** på siden **Arbeidsbrukere**. For eksempel antallet på lager i et sted er 50, og avviksgrensen for for brukeren arbeid er 10. Hvis arbeidet brukeren angir en verdi som ikke er mellom 40 og 60, oppstår det en forskjell.
+-   Verdien for syklustellingen ikke er innenfor avviksgrensene som er angitt i feltene **Grense for største prosent** eller **Grense for største antall** på siden **Arbeidsbrukere**. Lagerbeholdningsantallet på en lokasjon er for eksempel 50, og avviksgrensen for arbeidsbrukeren er 10. Hvis arbeidsbrukeren angir en verdi som ikke er mellom 40 og 60, oppstår det en forskjell.
 -   Den opptalte verdien avviker fra lagerbeholdningsantallet, og det er ikke angitt avviksgrenser.
 
 Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte verdien på siden **Syklustelling venter på gjennomgang**. Du kan kontrollere den endrede tellingen av vareantallet på siden **Beholdning etter lokasjon**. Tellingsverdien avvises hvis forskjellen ikke kan godkjennes.

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan innkjøpsagenter samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager.
 
 Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Operations. Det lar leverandører arbeide med bestillings-, faktura- og forsendelseslagerinformasjon. Dette emnet beskriver hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger og forsendelseslager. Det beskriver også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling. Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
@@ -64,11 +67,11 @@ Hvis du vil dele prisinformasjon, for eksempel enhetspris, rabatter og tillegg v
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeide med bestillinger med leverandørsamarbeid
 ### <a name="sending-a-po-to-the-vendor"></a>Sende en bestilling til leverandøren
 
-Bestillinger klargjøres i Dynamics 365 for Operations. Når Bestillingen har statusen **godkjent**, du sender den til leverandør ved hjelp av ** Send bekreftelse ** handling på den **bestilling** siden. Statusen for bestillingen endres til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid, der de kan godta, avvise eller foreslå endringer i ordren. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
+Bestillinger klargjøres i Dynamics 365 for Operations. Når bestillingen har statusen **Godkjent**, sender du den til leverandøren ved hjelp av handlingen **Send for bekreftelse** på **Bestilling**-siden. Statusen for bestillingen endres til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid, der de kan godta, avvise eller foreslå endringer i ordren. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekreftelse og godkjenning av bestillingen av leverandøren
 
-Når en leverandør har godtatt en bestilling, kan bestillingen bekreftes automatisk, eller det kan hende den må bekreftes manuelt. Dette er avhengig av om den ** leverandør aktivering **-feltet er satt til **aktive (bestilling er bekreftet av automatisk)** for leverandøren, eller til **aktive (bestilling er ikke automatisk bekreftet)**.  
+Når en leverandør har godtatt en bestilling, kan bestillingen bekreftes automatisk, eller det kan hende den må bekreftes manuelt. Dette er avhengig av om feltet **Leverandøraktivering** er satt til **Aktiv (bestilling bekreftes automatisk)** for leverandøren, eller til **Aktiv (bestilling bekreftes ikke automatisk)**.  
 
 Tabellen nedenfor viser den vanlige utveksling av informasjon, avhengig av hvordan leverandøren svarer når du sender dem en bestilling for bekreftelse.
 
@@ -95,19 +98,19 @@ Tabellen nedenfor viser den vanlige utveksling av informasjon, avhengig av hvord
 <td>Leverandørsvaret registreres som <strong>Avvist</strong>, og statusen for bestillingen blir værende <strong>Til ekstern vurdering</strong>. Avslaget mottas sammen med leverandørmerknaden.</td>
 </tr>
 <tr class="odd">
-<td>Leverandøren <strong>godtar rekkefølgen med endringer</strong>. Endringene foreslås på linjenivå. Det er mulig å godta eller avvise enkeltlinjer. Andre mulige endringer omfatter:
+<td>Leverandøren <strong>godtar ordren med endringer</strong>. Endringer blir foreslått på linjenivå. Det er mulig å godta eller avvise enkeltlinjer. Andre mulige endringer omfatter:
 <ul>
 <li>Endre datoer eller antall.</li>
 <li>Dele linjer for ulike leveringsdatoer eller antall.</li>
 <li>Erstatte en vare.</li>
 </ul>
 Prisinformasjon og tillegg kan ikke endres av leverandøren. Forslag til endringer i disse kan gjøres ved hjelp av merknader.</td>
-<td>Leverandør-svar som er registrert som <strong>godkjent med endringer</strong>, <strong></strong>og status for Bestillingen forblir <strong>til eksterne vurdering</strong>.</td>
+<td>Leverandørsvaret registreres som <strong>Godtatt med endringer</strong>, <strong></strong>og statusen for bestillingen blir forblir <strong>Til ekstern vurdering</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-Du kan bruke den **bestilling****forberedelse** arbeidsområde til å overvåke hvilke POs leverandøren har svart på. Arbeidsområdet inneholder to lister som inneholder bestillinger med statusen **til eksterne vurdering**:
+Du kan bruke arbeidsområdet **Bestillings****klargjøring** til å overvåke hvilke bestillinger leverandøren har svart på. Arbeidsområdet inneholder to lister som inneholder bestillinger med statusen **Til eksterne vurdering**:
 
 -   Til ekstern vurdering krever handling.
 -   Til ekstern vurdering, venter på svar fra leverandør.
@@ -125,7 +128,7 @@ Når du avbryter en bestilling, endres statusen til **Godkjent**. Du må sende b
 Du kan legge til vedlegg, for eksempel filer, bilder og merknader, i bestillingen ved hjelp av dokumentbehandlingssystemet. Vedlegg som er lagt til med begrensningen av typen **Ekstern**, vil være synlig for leverandøren når du sender bestillingen til dem.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Statuser og versjoner for bestilling
-Denne delen beskriver de ulike statusene som en bestilling kan ha på tidspunktet den bekreftes, og på hvilket tidspunkt nye versjoner av bestillingen gjøres tilgjengelig for leverandøren. Det er forskjeller i dette, avhengig av om du bruker endringsadministrasjon for bestillinger. 
+Denne delen beskriver de ulike statusene som en bestilling kan ha på tidspunktet den bekreftes, og på hvilket tidspunkt nye versjoner av bestillingen gjøres tilgjengelig for leverandøren. Det finnes forskjeller for dette avhengig av om du bruker endringsadministrasjon for bestillinger. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versjoner og status hvis du ikke bruker endringsadministrasjon
 
@@ -168,6 +171,8 @@ Hvis du bruker forsendelseslager, kan leverandører bruke grensesnittet for leve
 -   **Bruk av forsendelseslager for bestillinger** – Bestillinger for forsendelseslager blir generert når eierskap av lageret endres fra leverandøren til firmaet. En produktkvittering posteres samtidig. Disse forsendelsesbestillingene vises bare på siden **Bruk av forsendelseslager for bestillinger**. De er ikke inkludert på siden **Alle bekreftede bestillinger** i modulen **Leverandørsamarbeid**.
 -   **Produkter mottatt fra forsendelseslager** – Denne siden viser alle transaksjoner der eierskapet for produkter er blitt overført til fra leverandøren til firmaet. Leverandører kan bruke denne informasjonen for fakturere kunden.
 -   **Forsendelseslager for beholdning** – Denne siden viser forsendelseslageret for beholdning som eies av leverandøren som er mottatt på lageret ditt.
+
+
 
 
 

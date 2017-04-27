@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="correct-a-free-text-invoice"></a>Korrigere en fritekstfaktura
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
 
-Hvis du vil rette en fritekstfaktura som allerede er bokført, kan du åpne bokførte fritekstfakturaen. På den **faktura** velger **avbryte**, og velg deretter **rett faktura**. Velg en årsakskode, legg til kommentarer, og velg datoen for ny, korrigert faktura. Du kan endre den rettede fakturaen og postere den. 
+Hvis du vil rette en fritekstfaktura som allerede er postert, kan du åpne den posterte fritekstfakturaen. På **Faktura**-siden velger du **Avbryt**, og velger deretter **Rett faktura**. Velg en årsakskode, legg til kommentarer, og velg datoen for ny, korrigert faktura. Du kan endre den rettede fakturaen og postere den. 
 
 Når du posterer den rettede fakturaen, opprettes en annulleringsfaktura for et kreditbeløp som er lik det opprinnelige fakturabeløpet. Den kombinerte saldoen mellom den opprinnelige fakturaen og annulleringsfakturaen er derfor 0 (null). Annulleringsfakturaen utlignes mot den opprinnelige fakturaen. 
 
@@ -43,9 +46,11 @@ Når du posterer den rettede fakturaen, får du tre fakturaer:
 Du kan identifisere annullerings- og korrigeringsfakturaer på to måter:
 
 -   Siden **Alle fritekstfakturaer** inneholder en **Korrigering**-kolonne der du kan se hvilke fakturaer som er annulleringsfakturaer, og hvilke som er korrigeringsfakturaer.
--   Viser statusen for hodet i fritekstfakturaen **Cancelling faktura '\[fakturanummer\]'** eller **Corrected faktura '\[fakturanummer\]'**.
+-   Toppteksten i fritekstfakturaen viser statusen **Annulleringsfaktura \[fakturanummeret\]** eller **Rettet faktura\[ fakturanummer\]**.
 
 > [!NOTE]
-> Denne funksjonen er tilgjengelig bare hvis den **ledige Korreksjon av fritekstfaktura** konfigurasjonsnøkkelen er valgt.
+> Denne funksjonen er bare tilgjengelig hvis konfigurasjonsnøkkelen **Korreksjon av fritekstfaktura** er valgt.
+
+
 
 

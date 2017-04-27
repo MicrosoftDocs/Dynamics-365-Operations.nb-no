@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-payable"></a>Konfigurere Leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver sidene du bruker til å definer grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics AX. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Forutsetninger for oppsett av Leverandører
@@ -40,7 +43,7 @@ Før du kan konfigurere Leverandører må du fullføre følgende konfigurasjon:
     -   Hvis du planlegger å kjøre kursjusteringer, må du konfigurere valutakoder på siden Valutaer, konfigurere valutakurstyper på siden Valutakurstyper og konfigurere valutakurser på siden Valutakurser.
 -   I Kontant- og bankbetaling definerer du bankkontoer som skal brukes med betalingsmåter.
 
-## <a name="setup-pages-for-accounts-payable"></a>Konfigurasjonssidene for leverandører
+## <a name="setup-pages-for-accounts-payable"></a>Konfigurasjonssider for Leverandører
 
 Bruk de følgende sidene til å sette opp den grunnleggende funksjonaliteten i Leverandører for hver juridiske enhet. Sidene vises i rekkefølgen som anbefales for oppsett. Du kan gjøre oppsettet enklere ved å opprette maler fra de første postene som opprettes. I en mal angis verdiene vanligvis i mange felt for å reflektere funksjonene som organisasjonen ønsker å implementere for en bestemt type leverandør.
 1.  På siden Betalingsbetingelser definerer du betalingsbetingelsene du tilordner til salgsordrer, bestillinger, kunder og leverandører, og som bestemmer forfallsdatoer for fakturaers.
@@ -51,15 +54,15 @@ Bruk de følgende sidene til å sette opp den grunnleggende funksjonaliteten i L
 6.  På siden Skjemaoppsett definerer du formatet for forskjellige dokumenter som er knyttet til leverandører, og som firmaet bruker til å holde oversikt over mottak fra leverandører og til å registrere årsaker til betalingsflyten til leverandører.
 7.  På siden leverandører oppretter og vedlikeholder du leverandørkontoer, og skattemyndighetene som organisasjonen din rapporterer merverdiavgift til.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Valgfri Konfigurasjonssidene for leverandører
+## <a name="optional-setup-pages-for-accounts-payable"></a>Valgfrie sider for leverandøroppsett
 I tillegg til den grunnleggende funksjonaliteten har Leverandører andre funksjoner som du kan definere.
 
 De ekstra oppsettssidene organiseres etter funksjonalitet.
 
-**Policies**
+**Policyer**
 -   På siden Leverandørfakturapolicy angir du leverandørfakturapolicyer.
 
-**Invoice matching**
+**Fakturakontroll**
 
 -   På siden Toleranse for fakturatotaler definerer du toleranser for fakturatotaler.
 -   Angi toveis og treveis kontrollpolicyer på Kontrollpolicy-siden.
@@ -68,39 +71,39 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
 -   Angi toleransegrupper for leverandørpriser på siden Pristoleransegrupper for leverandør.
 -   På siden Toleranser for tillegg definerer du toleranser for tillegg.
 
-**Workflow**
+**Arbeidsflyt**
 
 -   På siden Arbeidsflyter for leverandørreskontro definerer du arbeidsflytkonfigurasjoner for journalgodkjenninger og innkjøpsrekvisisjoner.
 
-**Reasons**
+**Årsaker**
 
 -   På siden Leverandørårsaker definerer du årsakskoder.
 
-**Charges**
+**Tillegg**
 
 -   På siden Tilleggskode definerer du koder for tilleggene som skal brukes i bestillinger.
--   På siden leverandøren tillegg gruppen Opprett og vedlikehold tilleggsgrupper for leverandører.
+-   På siden Leverandørtilleggsgruppe oppretter og vedlikeholder du tilleggsgrupper for leverandører.
 -   På siden Varetilleggsgrupper  oppretter og vedlikeholder du tilleggsgrupper for varer.
 -   På Automatiske gebyrer-siden definerer du gebyrene som tilordnes ordrer automatisk.
 
-**Supplementary items**
+**Tilleggsvarer**
 
 -   På Tilleggsvaregrupper - Leverandør -siden oppretter og vedlikeholder du tilleggsvaregrupper for leverandører.
 -   På Tilleggsvaregrupper - Lager -siden oppretter og vedlikeholder du tilleggsvaregrupper for varer.
 
-**Distribution**
+**Distribusjon**
 
 -   På Leveringsbetingelser-siden oppretter og vedlikeholder du betingelsene for en vares overføring fra selger til kjøper.
 -   På Leveringsmåter-siden oppretter og vedlikeholder du transportmåtene som brukes ved levering av en ordre fra selgeren til kjøperen.
 -   På Fraktsone-siden oppretter og vedlikeholder du identifikatorer og beskrivelser av mottaksadresser.
 
-**Forms**
+**Skjemaer**
 
 -   På Skjemamerknader-siden oppretter du standardteksten som skal vises på forskjellige sider.
 -   På Skjemasorteringsparametere-siden definerer du sorteringsrekkefølgen for rekvisisjoner, mottakslister, følgesedler og fakturaer.
 -   På Oppsett for utskriftsbehandling-siden definerer du utskriftsbehandlingsinformasjon for originaler og kopier av sider.
 
-**Payments**
+**Betalinger**
 
 -   På Kontantrabatt-siden definerer og administrer du betingelsene for å oppnå kontantrabatter. Kontantrabattkodene er knyttet til leverandører, og brukes på bestillinger.
 -   På Betalingsplaner-siden definerer du betalingsplaner som brukes til å administrere avdragsbetalinger til leverandører.
@@ -108,17 +111,17 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
 -   På Betalingsgebyr-siden oppretter og vedlikeholder du betalingsgebyrer som er knyttet til leverandører.
 -   På Betalingsinstruksjon-siden oppretter og vedlikeholder du betalingsinstruksjoner.
 
-**Statistics**
+**Statistikk**
 
 -   På Definisjoner av aldersfordelingsperiode-siden setter du opp brukerdefinerte intervaller som brukes til å analysere modenhetsdistribusjon for leverandørkontoer.
 -   På Bransje-siden oppretter du bransjekoder (LOB) som er tilordnet til leverandører.
 
-**Avgift 1099**
+**1099-avgift**
 
--   På den **1099-feltene** siden, kontroller og Oppdater minimumsbeløpene som må rapporteres til den tjenesten IRS (Internal Revenue), basert på de nyeste IRS-kravene.
+-   På **1099-felt**-siden kontrollerer og oppdaterer du minimumsbeløpene som må rapporteres til det amerikanske skattevesenet, Internal Revenue Service (IRS), basert på de nyeste IRS-kravene.
 
 ## <a name="optional-setup-for-other-modules"></a>**Valgfritt oppsett for andre moduler**
-**Organization administration**
+**Organisasjonsstyring**
 
 -   På Nummerserier-siden definerer du nummerseriegrupper for fakturanumre.
 -   På de følgende sidene definerer du adresseinformasjon:
@@ -126,7 +129,7 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
     -   NAF-koder
     -   Import av postnumre
 
-**General ledger**
+**Økonomi**
 
 -   På Finansdimensjoner-siden definerer du finansdimensjoner.
 -   På de følgende sidene definerer du avgiftsinformasjon:
@@ -139,9 +142,10 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
     -   Skattemyndigheter
     -   Mva-utligningsperioder
 
-**Cash and bank management**
+**Kontant- og bankbehandling**
 
 -   På siden Koder for betalingsformål definerer du sentralbankens formålskode.
+
 
 
 

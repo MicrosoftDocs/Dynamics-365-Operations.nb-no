@@ -1,5 +1,5 @@
 ---
-title: Standardinnstillingene for bestilling for dimensjoner og produktvarianter
+title: Standard ordreinnstillinger for dimensjoner og produktvarianter
 description: "Standard ordreinnstillinger definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen. Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer. Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardinnstillingene for bestilling for dimensjoner og produktvarianter
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standard ordreinnstillinger for dimensjoner og produktvarianter
+
+[!include[banner](../includes/banner.md)]
+
 
 Standard ordreinnstillinger definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen. Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer. Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon.
 
-Du kan definere standard ordreinnstillinger på siden **Standard ordreinnstillinger**. Hvis du vil åpne denne siden, kan du gå til **behandling av produktinformasjon**&gt;**produkter**&gt;**utgitt produkter**&gt; velger du frigitt produkt &gt;på den **planlegger** eller *** administrere lager *** handlingsruten &gt;**bestille innstillinger**&gt;**Standard ordreinnstillinger**.
+Du kan definere standard ordreinnstillinger på siden **Standard ordreinnstillinger**. Hvis du vil åpne denne siden, går du til **Behandling av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter** &gt; velg et frigitt produkt&gt; i handlingsruten **Planlegg** eller ****Administrer lager**** &gt; **Ordreinnstillinger** &gt; **Standard ordreinnstillinger**.
 
 ## <a name="default-order-settings"></a>Standard ordreinnstillinger
 Det finnes tre typer standard ordreinnstillinger for kjøp, salg og lager. Standard ordreinnstillinger for kjøp brukes ved opprettelse av:
@@ -70,13 +73,13 @@ Standard lagerordreinnstillinger gjelder også ved opprettelse av:
 -   Planlagte produksjonsordrer
 
 ## <a name="full-definition-of-a-released-product"></a>Fullstendig definisjon av et frigitt produkt
-Når du oppretter en transaksjon, må du angi hele definisjonen av et frigitt produkt på linjen før Dynamics 365 for operasjoner som forsøker å identifisere standardinnstillingene for bestilling. Hele definisjonen av frigitt produkt betyr at varenummeret og alle aktive produktdimensjoner, for eksempel konfigurasjon, størrelse, stil og farge, er angitt på transaksjonen. Hvis du for eksempel manuelt oppretter en bestillingslinje for en frigitt produktvariant, må du angi alle de obligatoriske dimensjonene før område, lager, antall og leveringstid vil vises som standard på ordrelinjen. 
+Når du oppretter en transaksjon, må du angi hele definisjonen av et frigitt produkt på linjen før Dynamics 365 for Operations som forsøker å identifisere standard ordreinnstillinger. Den fullstendige definisjonen for frigitt produkt betyr at varenummeret og alle de aktive produktdimensjonene, for eksempel konfigurasjon, størrelse, stil og farge, er angitt for transaksjonen. Hvis du for eksempel manuelt oppretter en bestillingslinje for en frigitt produktvariant, må du angi alle de obligatoriske dimensjonene før område, lager, antall og leveringstid vil vises som standard på ordrelinjen. 
 
-Ikke alle standardparametere for ordreinnstillinger brukes når du oppretter ordre- eller journallinjer. Antall og leveringstider viser som standard når det passer. For eksempel når du beregner en kladdelinje, vises bare område og lager som standard når linjen er opprettet. Selvsagt ingen bruker som standard antallet eller sjekker for flere og minimums utføres ved opprettelse av linjen eller bokføring av kladden. 
+Ikke alle standardparametere for ordreinnstillinger brukes når du oppretter ordre- eller journallinjer. Antall og leveringstider vil bare vises som standard når det passer. Når du for eksempel teller en journallinje, vises bare området og lageret som standard når linjen opprettes. Tilbakestilling til standard antall eller kontroller på flere og minimum utføres selvsagt ikke ved oppretting av linjen eller postering av journalen. 
 
-Systemet prøver alltid å finne et standardområde og -lager når det opprettes en ordre- eller journallinje. Området vises ikke alltid som standard fra ordreinnstillingene. Når du for eksempel oppretter en salgsordre eller en bestilling, brukes området fra ordrehodet automatisk på ordrelinjene. Når du oppretter en stykklistelinje, brukes området fra stykklistehodet. Etter at området er angitt, vil bli brukt til å søke etter et hvilket som helst område bestemte innstillinger som kan brukes som standard for lageret. 
+Systemet prøver alltid å finne et standardområde og -lager når det opprettes en ordre- eller journallinje. Området vises ikke alltid som standard fra ordreinnstillingene. Når du for eksempel oppretter en salgsordre eller en bestilling, brukes området fra ordrehodet automatisk på ordrelinjene. Når du oppretter en stykklistelinje, brukes området fra stykklistehodet. Når området er fastslått, brukes det til å finne alle områdespesifikke ordreinnstillinger som deretter kan brukes som standard for lageret. 
 
-Standard ordretype, kjøp og lager-leveringstider kan overstyres av dekningsregler for varen på den **varedekning** siden. Selv om standardinnstillingene for bestilling ikke Tillat for forskjellen mellom produksjon og leveringstiden for overføring, kan dekningsregler for varen for den. Oppsett av varedekning brukes imidlertid bare av MRP ved oppretting av planlagte produksjonsordrer og overføringsordrer, og brukes ikke ved manuell oppretting av produksjons- og overføringsordrer. 
+Standard ordretype, kjøpet og lagerleveringstiden kan overstyres av dekningsregler for varen på **Varedekning**-siden. Selv om standard ordreinnstillinger ikke tillater et skille mellom produksjons og overføringstid, tillater dekningsreglene for varen dette. Oppsett av varedekning brukes imidlertid bare av MRP ved oppretting av planlagte produksjonsordrer og overføringsordrer, og brukes ikke ved manuell oppretting av produksjons- og overføringsordrer. 
 
 ## <a name="default-order-settings-rules"></a>Regler for standard ordreinnstillinger
 Du kan definere generelle standard ordreinnstillinger og et hvilken som helst antall regler for standard ordreinnstilling som gjelder bare under bestemte vilkår, for eksempel som en spesifikk kombinasjon av produktdimensjon eller produktdimensjoner. Du kan ikke definere lagerspesifikke ordreinnstillinger.
@@ -87,13 +90,13 @@ Reglene for standard ordreinnstillinger har rangeringer. Jo høyere rangering, j
 
 ### <a name="default-order-settings-for-released-products"></a>Standard ordreinnstillinger for frigitte produkter
 
-Du kan definere generelle ordreinnstillinger eller områdespesifikke ordreinnstillinger for spesifikke frigitte produkter. De generelle ordreinnstillingene har alltid rangeringen null. Hvis du definerer nye salg, kjøp og lagerordreinnstillinger samtidig, anbefaler vi at du bruker **Detaljvisning** på siden **Standard ordreinnstillinger**. Hvis du vil bytte til detaljvisningen, kan du gå til den **alternativer** handlingsruten &gt;**siden Alternativer for**&gt;**endrer visning**&gt;**visningen Detaljer**.
+Du kan definere generelle ordreinnstillinger eller områdespesifikke ordreinnstillinger for spesifikke frigitte produkter. De generelle ordreinnstillingene har alltid rangeringen null. Hvis du definerer nye salg, kjøp og lagerordreinnstillinger samtidig, anbefaler vi at du bruker **Detaljvisning** på siden **Standard ordreinnstillinger**. Hvis du vil bytte til detaljvisningen, kan du gå til handlingsruten **Alternativer** &gt; **Sidealternativer** &gt; **Endre visning** &gt; **Detaljvisning**.
 
 ### <a name="site-specific-order-settings"></a>Områdespesifikke ordreinnstillinger
 
-Hvis du vil opprette områdespesifikke ordreinnstillinger, klikker du **Ny**. I **visningen Detaljer**, Fyll ut området i den **innstillinger som gjelder for**&gt;**området** feltet. I **Rutenettvisning** fyller du ut området i **Område**-kolonnen. Den nye regelen får automatisk en ny rangeringsverdi som er høyere enn null. Du kan opprette så mange områdespesifikke regler som du har behov for, og du kan tilordne alle de områdespesifikke reglene til samme rangering, for å angi at de er like viktig. 
+Hvis du vil opprette områdespesifikke ordreinnstillinger, klikker du **Ny**. I **Detaljvisning** fyller du ut området i **Innstillinger som kan brukes for** &gt; **Område**-feltet. I **Rutenettvisning** fyller du ut området i **Område**-kolonnen. Den nye regelen får automatisk en ny rangeringsverdi som er høyere enn null. Du kan opprette så mange områdespesifikke regler som du har behov for, og du kan tilordne alle de områdespesifikke reglene til samme rangering, for å angi at de er like viktig. 
 
-Hvis du er i **Detaljvisning**, får du ikke en oversikt over reglene som er opprettet for varen. Aktiver/deaktiver **Vis/skjul liste** for å se informasjon om oversikt. Når en ordrelinje for alle typer blir opprettet, og det er ingen områder som er angitt, søker Dynamics 365 for operasjoner med ingen området som er angitt for en regel. Dette kan bidra til å bestemme et standardområde på ordrelinjen. Dette området brukes deretter til å søke etter en områdespesifikk regel der et standardlager kan ha blitt angitt. Dette lageret brukes for ordrelinjen.
+Hvis du er i **Detaljvisning**, får du ikke en oversikt over reglene som er opprettet for varen. Aktiver/deaktiver **Vis/skjul liste** for å se informasjon om oversikt. Når det opprettes en ordrelinje av hvilken som helst type og det ikke er angitt område for den, søker Dynamics 365 for Operations etter en regel uten angitt område. Dette kan bidra til å bestemme et standardområde på ordrelinjen. Dette området brukes deretter til å søke etter en områdespesifikk regel der et standardlager kan ha blitt angitt. Dette lageret brukes for ordrelinjen.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Spesifikke ordreinnstillinger for produktdimensjon
 
@@ -103,8 +106,8 @@ Tenk deg følgende eksempelprodukt:
 
 |                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
-| **Product name**                                    | Fotoelektrisk sensor                    |
-| **Item number**                                     | XW56                                    |
+| **Produktnavn**                                    | Fotoelektrisk sensor                    |
+| **Varenummer**                                     | XW56                                    |
 | **Konfigurasjon** (brukes til å angi type lys) | C1-Synlig rødt lys, C2-infrarødt lys |
 | **Stil** (brukes til å angi den tekniske revisjonen)  | R1, R2, R3                              |
 
@@ -140,7 +143,7 @@ Tenk deg reglene nedenfor for standard ordreinnstillinger.
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systemet går gjennom settet med regler to ganger for å finne området og lageret. Når en bestillingslinje blir opprettet for konfigurasjon C1, stil R2, bestemmes området basert på regelen med rangering 10. Deretter søker systemet etter en regel for 2-området for å finne et lager. Regel 20 blir funnet, og fordi den har en høyere rangering, vil lageret på bestillingslinjen være 22 og ikke 21. 
+Systemet går gjennom settet med regler to ganger for å finne området og lageret. Når det opprettes bestillingslinjer for konfigurasjon C1, stil R2, bestemmes området basert på regelen med rangering 10. Deretter søker systemet etter en regel for område 2 for å finne et lager. Regel 20 blir funnet, og fordi den har en høyere rangering, vil lageret på bestillingslinjen være 22 og ikke 21. 
 
 Som en generell veiledning vil spesifikke regler og regler for dimensjonene som er viktigere enn andre dimensjoner, få høyere rangering, mens mer generelle regler får lavere rangeringer. 
 
@@ -148,7 +151,7 @@ Regelen med rangeringen null fungerer som et sikkerhetsnett. Hvis ingen andre re
 
 Siden rangeringsnummeret er så viktig, finnes det i handlingsruten **Standard ordreinnstillinger** funksjoner for å flytte en regel opp eller ned og nummerere reglene, slik at de er alltid med økes med 10. 
 
-Det kan opprettes mange regler for et frigitt produkt. Hvis du vil ha mer informasjon om hva hver enkelt regel overstyrer og hvorfor det er nødvendig, anbefaler vi at du bruker **Rutenettvisning** på siden **Standard ordreinnstillinger**. Du kan aktivere rutenettvisning ved å gå til den **alternativer** handlingsruten &gt;**siden Alternativer for**&gt;**endrer visning**&gt;**rutenettvisning**. Det kan vises svært mange kolonner i rutenettet, spesielt for kategoriene salg og lager. For å begrense antall kolonner som vises i rutenettet, grupper av kolonner kan være skjult eller vises ved hjelp av knappene på den **Standard ordreinnstillinger**&gt;**kolonnevisning** menyen.
+Det kan opprettes mange regler for et frigitt produkt. Hvis du vil ha mer informasjon om hva hver enkelt regel overstyrer og hvorfor det er nødvendig, anbefaler vi at du bruker **Rutenettvisning** på siden **Standard ordreinnstillinger**. Du kan aktivere rutenettvisning ved å gå til handlingsruten **Alternativer** &gt; **Sidealternativer** &gt; **Endre visning** &gt; **Rutenettvisning**. Det kan vises svært mange kolonner i rutenettet, spesielt for kategoriene salg og lager. Hvis du vil begrense hvor mange kolonner som vises i rutenettet, kan grupper av kolonner skjules eller vises ved hjelp av knappene på menyen **Standard ordreinnstillinger** &gt; **Kolonnevisning**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Spesifikke ordreinnstillinger for frigitt produktvariant
 
@@ -165,5 +168,7 @@ Hvis regelsystemet for standard ordreinnstillinger er for tungvint, er det mulig
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Rangeringen i dette tilfellet har ingen betydning, slik at du kan velge å skjule den. Denne løsningen introduserer potensielt et vedlikeholdsproblem. Du bør imidlertid vurdere å bruke dette oppsettet Hvis du vil integrere med PLM-systemer (Product Lifecycle Management).
+
+
 
 

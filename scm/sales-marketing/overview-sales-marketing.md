@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Salg og markedsføring
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg.
 
 <a name="marketing"></a>Markedsføring
@@ -35,11 +38,11 @@ Du bruker markedsføringskampanjer og aktiviteter for å finne og bygge relasjon
 
 ### <a name="relationships"></a>Relasjoner
 
-I salg og markedsføring kan de første samhandlingene du har med potensielle kunder, oppstå i ulike situasjoner. Du finner for eksempel en potensiell kunde mens du deltar på en varemesse, eller du kan ha et mulig kundeemne med en kunde etter at organisasjonen har kjørt en masseutsendelseskampanje. Det er svært viktig at du forstår flyten for enheten for en part før denne parten blir en kunde. Grafikken nedenfor viser flyten for enhetsrelasjoner når en potensiell kunde blir en faktisk kunde. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+I salg og markedsføring kan de første samhandlingene du har med potensielle kunder, oppstå i ulike situasjoner. Du finner for eksempel en potensiell kunde mens du deltar på en varemesse, eller du kan ha et mulig kundeemne med en kunde etter at organisasjonen har kjørt en masseutsendelseskampanje. Det er svært viktig at du forstår flyten for enheten for en part før denne parten blir en kunde. Grafikken nedenfor viser flyten for enhetsrelasjoner når en potensiell kunde blir en faktisk kunde. [![Salg og markedsføring 01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampanjer
 
-En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I Microsoft Dynamics 365 for operasjoner, kan du opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, til å maksimere den potensielle kunden. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
+En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I i Microsoft Dynamics 365 for Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
 
 ## <a name="sales"></a>Salg
 Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg](./media/sales01.jpg)](./media/sales01.jpg)
@@ -50,7 +53,7 @@ Du kan opprette salgstilbud for å presentere et tilbud av varer eller tjenester
 
 ### <a name="up-sellcross-sell"></a>Mersalg/kryssalg
 
-Mersalg og kryssalg er teknikker for å selge produkter når en ordre registreres for en kunde. Ved mersalg blir det foreslått et annet produkt i stedet gjeldende produkt. Ved kryssalg blir det foreslått et produkt i tillegg gjeldende produkt. Når du setter opp produktlister, kan du opprette spesifikke regler for å angi når et produkt skal foreslås som et kryss-salg eller opp-salg.
+Mersalg og kryssalg er teknikker for å selge produkter når en ordre registreres for en kunde. Ved mersalg blir det foreslått et annet produkt i stedet gjeldende produkt. Ved kryssalg blir det foreslått et produkt i tillegg gjeldende produkt. Når du setter opp produktlister, kan du opprette spesifikke regler for å angi når et produkt skal foreslås som et kryssalgs- eller mersalgsprodukt.
 
 ### <a name="sales-orders"></a>Salgsordrer
 
@@ -117,5 +120,7 @@ En fritekstfaktura er en faktura som ikke er knyttet til en salgsordre. Den inne
 #### <a name="pro-forma-invoice"></a>Proformafaktura
 
 En proformafaktura er en faktura som er klargjort som et estimat av det faktiske fakturabeløpet før fakturaen posteres. Du kan skrive ut en proformafaktura for enten en kundefaktura eller en fritekstfaktura.
+
+
 
 

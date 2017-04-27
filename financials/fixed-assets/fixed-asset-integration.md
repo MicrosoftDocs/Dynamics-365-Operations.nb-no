@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Integrering av anleggsmidler
 
+[!include[banner](../includes/banner.md)]
+
+
 Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
 
 <a name="general-ledger"></a>Økonomimodul
@@ -82,7 +85,7 @@ Integreringen for hver ordrelinje aktiveres i kategorien **Anleggsmidler** på h
 ## <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 Du kan knytte et prosjekt til et anleggsmiddel som påvirkes av prosjektet. Du kan også knytte hver fase, oppgave eller underprosjekt til et annet anleggsmiddel. Ett anleggsmiddel kan være knyttet til hver prosjektpost. Du kan opprette tilordningen når du registrerer et anleggsmiddelnummer i **Anleggsmiddel**-nummerfeltet på **Prosjekter**-siden. Prosjekttypen må være enten **Intern** eller **Kostnadsprosjekt**. 
 
-Du kan også bruke **Prosjekter**-siden til å vise detaljer om anleggsmidler som er knyttet til prosjekter. Hvis du vil vise anleggsmiddelposten, klikker du anleggsmiddelkoblingen i hurtigfanen **Konfigurer** for å åpne **Anleggsmidler**-siden. Deretter **prosjekter**&gt;**alle prosjekter** til å vise prosjekter som er knyttet til aktivaet. 
+Du kan også bruke **Prosjekter**-siden til å vise detaljer om anleggsmidler som er knyttet til prosjekter. Hvis du vil vise anleggsmiddelposten, klikker du anleggsmiddelkoblingen i hurtigfanen **Konfigurer** for å åpne **Anleggsmidler**-siden. Klikk deretter **Prosjekter** &gt; **Alle prosjekter** for å vise prosjektene som er knyttet til anleggsmidlet. 
 
 Du knytter vanligvis anleggsmidler til prosjekter når prosjektene er knyttet til arbeid, vedlikehold eller forbedringer av anleggsmidlet. Når prosjektet er fullført, blir det ikke automatisk opprettet en oppskrivingsjustering for anleggsmidlet. Derfor må du opprette oppskrivingsjusteringen manuelt, hvis det kreves en oppskrivning. 
 
@@ -90,6 +93,8 @@ Hvis du vil slette tilordningen mellom et prosjekt og et anleggsmiddel, fjerner 
 
 Du kan også angi et anleggsmiddel du oppretter eller produserer i forbindelse med et estimatprosjekt. Når estimatprosjektet avsluttes, kan du automatisk postere en anleggsmiddelanskaffelsestransaksjon.
 
-Hvis du vil ha mer informasjon, se [skaffe anleggsmidler gjennom innkjøp](acquire-assets-procurement.md)
+Hvis du vil ha mer informasjon, se [Skaffe anleggsmidler ved hjelp av innkjøp](acquire-assets-procurement.md)
+
+
 
 

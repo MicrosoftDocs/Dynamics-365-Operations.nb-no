@@ -1,6 +1,6 @@
 ---
 title: "Kontosaldoer i økonomimodulen"
-description: "Denne artikkelen beskriver to måter å vise kontosaldoene for finans - listesiden for råbalanse og økonomiske rapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer."
+description: "Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldoer i økonomimodulen
 
-Denne artikkelen beskriver to måter å vise kontosaldoene for finans - listesiden for råbalanse og økonomiske rapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer.
 
 Brukere kan vise saldoer på flere ulike måter i økonomimodulen. Noen av de vanligste alternativene er som følger:
 
@@ -46,6 +49,8 @@ Når en bruker endrer parameterne, oppdateres saldoene. Brukerne kan også velge
 
 Brukere kan drille ned i saldoene for å vise transaksjonene som utgjør saldoen.    
 
-Hvis du vil ha mer informasjon, se [vise økonomiske rapporter](view-financial-reports.md).
+Hvis du vil ha mer informasjon, kan du se [Vis finansrapporter](view-financial-reports.md).
+
+
 
 

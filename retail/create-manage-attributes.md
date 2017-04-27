@@ -1,6 +1,6 @@
 ---
 title: Opprett og administrer attributter
-description: Denne artikkelen beskriver attributtene i Microsoft Dynamics 365 for operasjoner. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
+description: Denne artikkelen beskriver attributter i Microsoft Dynamics 365 for Operations. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-and-manage-attributes"></a>Opprett og administrer attributter
 
-Denne artikkelen beskriver attributtene i Microsoft Dynamics 365 for operasjoner. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
+Denne artikkelen beskriver attributter i Microsoft Dynamics 365 for Operations. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 
 Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt. Du kan for eksempel angir produktets minnestørrelse og harddiskkapasitet og angi om produktet er Energy star-kompatibel. Attributter kan knyttes til forskjellige detaljhandelsenheter, for eksempel produktkategorier og kanaler for detaljhandel, og du kan angi standardverdier for dem.. Produkter arver sine attributter og standardverdier for disse attributtene når de er knyttet til produktkategorier eller kanaler for detaljhandel. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for kanal for detaljhandel, eller i en detaljhandelskatalog.
 
@@ -130,49 +130,49 @@ Garanti for projiseringsrør
 
 **12**
 
-\#av projeksjon rør
+\# Antall projiseringsrør
 
 **1**–**5**
 
 **3**
 
 ## <a name="attribute-type"></a>Attributtype
-  [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for operasjoner attributtet følgende typer:
+  [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for Operations følgende attributtyper:
 
 -   **Valutaen** – Denne attributtypen støtter valutaverdier. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
 -   **Dato og klokkeslett** – Denne attributtypen støtter dato- og klokkeslettverdier. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
 -   **Desimal** – Denne attributtypen støtter numeriske verdier som inneholder desimaler. Den støtter også måleenheter. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
 -   **Heltall** – Denne attributtypen støtter numeriske verdier. Den støtter også måleenheter. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
 -   **Tekst** – Denne attributtypen støtter tekstverdier. Den støtter også et forhåndsdefinert sett med verdier (opplisting).
--   **Boolsk** – denne attributtypen støtter binære verdier (**SANN**/**false**).
+-   **Boolsk** – Denne attributtypen støtter binære verdier (**sann**/**usann**).
 -   **Referanse**
 
 ## <a name="attribute"></a>Attributt
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) i tillegg til navn, navn, beskrivelse og hjelpetekst, én eller flere av følgende typer informasjon kan registreres for et attributt:
+  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) I tillegg til navn, egendefinert navn, beskrivelse og hjelpetekst, kan én eller flere av følgende typer informasjon registreres for et attributt:
 
 -   Standardverdi
 -   Attributtmetadata, for eksempel metadata som indikerer om attributtet kan søkes i, finjusteres eller sorteres
 
 ## <a name="attribute-group"></a>Attributtgruppe
-  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) etter at attributtene er definert, kan de grupperes i attributtgrupper. Attributtgrupper gir grupperinger av individuelle attributter, og kan tilordnes til detaljhandelskategorier eller kanaler for detaljhandel.
+  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Når attributter er definerte, kan de grupperes i attributtgrupper. Attributtgrupper gir grupperinger av individuelle attributter, og kan tilordnes til detaljhandelskategorier eller kanaler for detaljhandel.
 
 ## <a name="assigning-attribute-groups-to-retail-categories"></a>Tilordne attributtgrupper til detaljhandelskategorier
-  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) én eller flere attributtgrupper kan knyttes til kategorinoder i kategorihierarkiet for retail-produktet. Når varer er kategorisert, arver de attributtene som er inkludert i attributtgruppene.
+  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) Én eller flere attributtgrupper kan knyttes til kategorinoder i kategorihierarkiet for detaljhandelsprodukt. Når varer er kategorisert, arver de attributtene som er inkludert i attributtgruppene.
 
 ## <a name="assigning-attribute-groups-to-retail-stores"></a>Tilordne attributtgrupper til detaljhandelsbutikker
-  [![createandmanageattribute-13-1024 x 576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) én eller flere attributtgrupper kan tilknyttes én eller flere detaljhandel i retail butikker hierarkiet. Når varer er supplert for spesifikke detaljhandelsbutikker, arver de attributtene som er inkludert i attributtgruppene.
+  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) Én eller flere attributtgrupper kan knyttes til én eller flere detaljhandelsbutikker i hierarkiet for detaljhandelsbutikker. Når varer er supplert for spesifikke detaljhandelsbutikker, arver de attributtene som er inkludert i attributtgruppene.
 
 ## <a name="overriding-attribute-values"></a>Overstyre attributtverdier
 ### <a name="at-the-product-level"></a>På produktnivå
 
-  [![createandmanageattribute-14-1024 x 576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) standardverdier for attributter kan overstyres på produktnivå (det vil si for enkeltprodukter).
+  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Standardverdiene for attributter kan overstyres på produktnivå (det vil si for enkeltprodukter).
 
 ### <a name="in-a-retail-catalog"></a>I detaljhandelskatalog
 
-  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) standardverdier for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte retail kanaler.
+  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Standardverdiene for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte kanaler for detaljhandel.
 
 ### <a name="at-the-retail-channel-level"></a>På nivå for kanal for detaljhandel
 
-  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) standardverdier for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte retail kanaler.
+  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardverdiene for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte kanaler for detaljhandel.
 
 

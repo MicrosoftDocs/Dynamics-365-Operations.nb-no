@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis kundebetaling med rabatter på kreditnotaer"
+title: "Utligne en delvis kundebetaling som har rabatter på kreditnotaer"
 description: "Denne artikkelen leder deg gjennom et scenario der en kontantrabatt blir utført på en kreditnota når den opprinnelige fakturaen har kontantrabatt."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis kundebetaling med rabatter på kreditnotaer
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis kundebetaling som har rabatter på kreditnotaer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen leder deg gjennom et scenario der en kontantrabatt blir utført på en kreditnota når den opprinnelige fakturaen har kontantrabatt. 
 
-Fabrikam tillater kunder å ta kontantrabatter for delvise betalinger og også kreditnotaer. En kontantrabatt kan tas på en kreditnota når kreditnotaen er utstedt for en faktura som kunden tok en kontantrabatt på. I stedet for å gi kredit for hele beløpet, kan du kreditere kundens saldo for et beløp som ekskluderer kontantrabattprosenten som kunden tok. Parametere for utligning er plassert på den **Kundeparametere** siden.
+Fabrikam tillater kunder å ta kontantrabatter for delvise betalinger og også kreditnotaer. En kontantrabatt kan tas på en kreditnota når kreditnotaen er utstedt for en faktura som kunden tok en kontantrabatt på. I stedet for å gi kredit for hele beløpet, kan du kreditere kundens saldo for et beløp som ekskluderer kontantrabattprosenten som kunden tok. Du finner parameterne for utligning på siden **Kundeparametere**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura/kreditnota
 Kunde 4035 har en faktura for 1000,00 og en kreditnota for 100,00. Hvert dokument har 1 prosent rabatt ved betaling innen 14 dager. Magnus kan vise denne informasjonen på siden **Kundetransaksjoner**.
@@ -59,5 +62,7 @@ Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**.
 | Kontantrabattbeløp som skal brukes | -1.00     |
 
 Utligningen skal være 100,00, og inkluderer en betaling på 99,00 og en rabatt på 1,00.
+
+
 
 

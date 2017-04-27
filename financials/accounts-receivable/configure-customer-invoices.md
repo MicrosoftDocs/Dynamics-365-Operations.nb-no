@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 En **kundefaktura for en salgsordre** er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde. Denne typen kundefaktura opprettes basert på en salgsordre, som inneholder ordrelinjer og varenumre. Varenumrene er spesifisert og postert i finans. Underfinansjournaloppføringer er ikke tilgjengelig for en kundefaktura for en salgsordre. 
@@ -55,7 +58,7 @@ Vis statusen for salgsordrene på listesiden **Alle salgsordrer**.
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidere salgsordrer eller følgesedler for postering
 Bruk denne fremgangsmåten når én eller flere salgsordrer er klare til fakturering, og du vil konsolidere dem i én enkelt faktura. 
 
-Du kan velge flere fakturaer på **Salgsordre**-listesiden og deretter bruke **Generer fakturaer** for å konsolidere dem. På den **postering av faktura** siden, kan du endre den **Samleordre** innstillingen til å summere etter ordrenummer (der det er flere følgesedler for en enkelt ordre) eller etter fakturakonto (der det er flere ordrer for en enkelt faktura-konto). Bruk av **ordne** for å konsolidere ordrer til enkelt fakturaer, basert på den **Samleordre** innstillinger.
+Du kan velge flere fakturaer på **Salgsordre**-listesiden og deretter bruke **Generer fakturaer** for å konsolidere dem. På siden **Postering av faktura** kan du endre innstillingen **Samleordre** for å summere etter ordrenummer (der det finnes flere følgesedler for én enkelt ordre) eller etter fakturakonto (der det er flere salgsordrer for én enkelt fakturakonto). Bruk knappen **Ordne** for å konsolidere salgsordrer til enkeltfakturaer basert på **Samleordre**-innstillingene.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Tilleggsinnstillinger som endrer posteringsvirkemåten
 Følgende felt endrer virkemåten for posteringsprosessen.
@@ -123,8 +126,8 @@ Følgende felt endrer virkemåten for posteringsprosessen.
 <td>Kontroller kredittgrense</td>
 <td>Velg informasjonen som skal analyseres når en kredittgrensekontroll utføres.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Ingen</strong> - Det er ingen krav til kontroll av kredittgrense.</li>
+<li><strong>Saldo</strong> - Kredittgrensen kontrolleres mot kundesaldoen.</li>
 <li><strong>Saldo + følgeseddel eller produktkvittering</strong> – Kredittgrensen kontrolleres mot kundesaldoen og leveranser.</li>
 <li><strong>Saldo+Alt</strong> - Kredittgrensen kontrolleres mot kundesaldoen, leveranser og åpne ordrer.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Følgende felt endrer virkemåten for posteringsprosessen.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

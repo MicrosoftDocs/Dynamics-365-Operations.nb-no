@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Oppdatere standard kostpris i et produksjonsmiljø
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir veiledning for hvordan du kan oppdatere standardkostnader i et produksjonsmiljø. 
 
 Oppdateringer kan gjenspeile nye varer, kostnadskategorier eller formler for beregning av indirekte kostnader. De kan også gjenspeile korrigeringer og kostnadsendringer. Typen oppdatering påvirker trinnene som må fullføres for å oppdatere standard kostpris, som vist i følgende tilfeller:
@@ -43,5 +46,7 @@ Oppdateringer kan gjenspeile nye varer, kostnadskategorier eller formler for ber
 -   Beregn kostnadene for en nyprodusert vare på grunnlag av den definerte, godkjente og aktive stykklisten og ruteinformasjonen.
 
 Hvert tilfelle krever nøye overveielse om hvordan standard kostpris skal oppdateres.
+
+
 
 

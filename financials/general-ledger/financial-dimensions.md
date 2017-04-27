@@ -28,13 +28,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-dimensions"></a>Finansdimensjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer de forskjellige typene finansdimensjoner og hvordan de er definert.
 
 Bruk Finansdimensjoner-siden til å opprette finansdimensjoner som du kan bruke som kontosegmenter for kontoplaner. Det finnes to typer finansdimensjoner, egendefinerte dimensjoner og enhetsstøttede dimensjoner. Egendefinerte dimensjoner deles på tvers av juridiske enheter, og verdiene angis og vedlikeholdes av brukeren. Enhetsstøttede dimensjoner er dimensjoner med verdier som er definert andre steder i systemet, for eksempel kunder eller butikker. Noen enhetsstøttede dimensjoner deles på tvers av juridiske enheter, og noen enhetsstøttede dimensjoner er firmaspesifikke. 
 
 Når du har opprettet finansdimensjonene, bruker du Finansdimensjonsverdier-siden til å tilordne flere egenskaper til hver finansdimensjon. 
 
-Selv om du kan bruke økonomiske dimensjoner til å representere juridiske enheter uten juridiske enheter i Microsoft Dynamics 365 for operasjoner, finansdimensjoner ikke er utviklet for å håndtere den operative eller bedriften trenger med juridiske enheter. Enhetsinternt regnskap funksjonaliteten i Microsoft Dynamics 365 for operasjoner er utviklet for å håndtere bare regnskap oppføringene som er opprettet ved hver transaksjon. 
+Selv om du kan bruke finansdimensjoner til å representere juridiske enheter uten å opprette de juridiske enhetene i Microsoft Dynamics 365 for Operations, er ikke finansdimensjoner utviklet for å håndtere de drifts- og forretningsmessige behovene til juridiske enheter. Funksjonen internenhetsregnskap i Microsoft Dynamics 365 for Operations er utviklet for bare å håndtere regnskapsoppføringene som opprettes av hver transaksjon. 
 
 Før du setter opp finansdimensjoner som juridiske enheter, vurderer du forretningsprosessene i følgende områder for å se om dette oppsettet fungerer for din organisasjon:
 
@@ -48,29 +51,31 @@ Her er noen eksempler på begrensninger:
 -   Du kan bare bruke mva-funksjonaliteten med juridiske enheter, ikke med finansdimensjoner.
 -   Noen rapporter omfatter ikke finansdimensjoner, så du kan ikke alltid rapportere etter finansdimensjon med mindre disse rapportene endres.
 
-**Custom dimensions** 
+**Egendefinerte dimensjoner** 
 
-Hvis du vil opprette en brukerdefinert finansdimensjon, i feltet Bruk verdier fra-feltet, velger du &lt;egendefinert dimension&gt;. Du kan også angi en kontomaske for å begrense mengden og typen informasjon som du kan angi for dimensjonsverdier. Du kan angi tegn som forblir de samme for hver dimensjonsverdi, for eksempel bokstaver eller en bindestrek. Du kan også angi nummertegnene (\#) og &-tegn (&) som plassholdere for bokstaver og tall som endres hver gang det opprettes en dimensjonsverdi. Bruk et nummertegn (\#) som en plassholder for et tall og en ampersand (&) som en plassholder for en bokstav. 
+For å opprette en brukerdefinert finansdimensjon velger du &lt; Egendefinerte dimensjoner &gt; i feltet Bruk verdier fra. Du kan også angi en kontomaske for å begrense mengden og typen informasjon som du kan angi for dimensjonsverdier. Du kan angi tegn som forblir de samme for hver dimensjonsverdi, for eksempel bokstaver eller en bindestrek. Du kan også angi nummertegn (\#) og og-tegn (&) om plassholdere for bokstaver og tall som vil endres hver gang en dimensjonsverdi opprettes. Bruk et nummertegn (\#) som plassholder for et tall og et og-tegn (&) som plassholder for en bokstav. 
 
 **Eksempel** 
 
-Hvis du vil begrense dimensjonsverdien brev kopi og tre tall, angir du CC -\#\#\# som Formatmaske. Dette feltet er bare tilgjengelig når du velger &lt;egendefinert dimension &gt;i Bruk verdier fra-feltet. 
+Hvis du vil begrense dimensjonsverdien til bokstavene CC og tre tall, kan du angi CC-\#\#\# som formatmaske. Dette feltet er bare tilgjengelig når du velger &lt; Egendefinert dimensjon &gt; i feltet Bruk verdier fra. 
 
-**Enheten støttet dimensjoner** 
+**Enhetsstøttede dimensjoner** 
 
-Hvis du vil opprette finansdimensjon en enhet som er tatt i Bruk verdier fra-feltet, velger du en systemdefinert enhet å basere finansdimensjonen på. Finansdimensjonsverdier opprettes fra dette utvalget. Hvis du for eksempel vil opprette dimensjonsverdier for prosjekter, velger du Prosjekter. En dimensjonsverdi opprettes for hvert prosjektnavn. Siden med dimensjonsverdier viser verdiene for enheten, og hvis de er firmaspesifikke, firmaet for verdien. 
+Hvis du vil opprette en enhetsstøttet finansdimensjon, velger du en systemdefinert enhet som basis for finansdimensjonen, i feltet Bruk verdier fra. Finansdimensjonsverdier opprettes fra dette utvalget. Hvis du for eksempel vil opprette dimensjonsverdier for prosjekter, velger du Prosjekter. En dimensjonsverdi opprettes for hvert prosjektnavn. Siden med dimensjonsverdier viser verdiene for enheten, og hvis de er firmaspesifikke, firmaet for verdien. 
 
 **Aktivering av dimensjoner** 
 
 Aktivering av finansdimensjonen oppdaterer tabellen med finansdimensjonsnavnet og fjerner slettede dimensjoner. Du kan angi dimensjonsverdier før du aktiverer en finansdimensjon, men en finansdimensjon kan ikke brukes noe sted før den er aktivert. Du kan for eksempel ikke legge til en finansdimensjon i en kontostruktur før finansdimensjonen er aktivert. Hvis du klikker Aktiver, oppdateres alle dimensjoner med statusendringer. 
 
-**Translations** 
+**Oversettelser** 
 
-Siden tekst oversettelse kan du skrive inn teksten som skal vises på ulike språk for den valgte finansdimensjonen. På siden Oversetting av hovedkonto kan du angi tekst som skal vises på ulike språk for hovedkontoen. 
+På siden Tekstoversettelse kan du angi tekst som skal vises på ulike språk for den valgte finansdimensjonen. På siden Oversetting av hovedkonto kan du angi tekst som skal vises på ulike språk for hovedkontoen. 
 
-**Legal entity overrides** 
+**Overstyringer for juridisk enhet** 
 
-Ikke alle dimensjonene som er gyldig for alle juridiske enheter og noen kan bare være relevant for en bestemt tidsperiode. I denne situasjonen kan delen Overstyringer for juridisk enhet brukes til å identifisere hvilke firmaer dimensjonen skal suspenderes for, hvem som er eier, og tidsperioden dimensjonen er aktiv.
+Ikke alle dimensjoner er gyldige for alle juridiske enheter, og noen er kanskje bare relevante i en bestemt tidsperiode. I denne situasjonen kan delen Overstyringer for juridisk enhet brukes til å identifisere hvilke firmaer dimensjonen skal suspenderes for, hvem som er eier, og tidsperioden dimensjonen er aktiv.
+
+
 
 
 

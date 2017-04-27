@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integrasjon av budsjettplanlegging med andre moduler
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Periodiske prosesser for å generere budsjettplaner
@@ -49,13 +52,13 @@ De grunnleggende elementene i den periodiske prosessen er den samme for alle pro
 
 Det finnes tre handlinger for hver generasjonsprosess:
 
--   **Opprette en ny budsjettplan** oppretter en ny plan som har attributtene som er valgt i den ** mål ** delen. Disse attributtene trenger ikke å være unike. To planer kan derfor ha samme navn og andre verdier.
+-   **Opprett en ny budsjettplan** oppretter en ny plan som har attributtene som er valgt i **Mål **-delen. Disse attributtene trenger ikke å være unike. To planer kan derfor ha samme navn og andre verdier.
 -   **Erstatt eksisterende budsjettplanscenario** sletter alle data i målbudsjettplanen i det valgte budsjettplanscenarioet og oppretter nye linjer som bruker de valgte kildedataene.
 -   **Oppdater eksisterende budsjettplanscenario, og tilføy nye data** oppdaterer eksisterende linjer i målplanen som samsvarer med kildelinjene, og legger til nye linjer for nye data. Samsvaret er basert på finanskontoen, dato, budsjettklasse og diverse andre felt. Når du for eksempel genererer budsjettplaner fra prognosestillinger, er stillingsnummeret et viktig felt. Alle linjer som har et stillingsnummer som samsvarer med kildestillingsnummeret, erstattes med de nye linjene fra kilden.
 
 ### <a name="source"></a>Kilde
 
-For alle prosesser i **kilde** i kategorien kan du filtrere data ved hjelp av den **filteret** knappen. Som standard legges bestemte felt i filteret for hver prosess. For prosessen **Generer budsjettplan fra økonomimodul** er for eksempel kategoriene **Finanskonto** og **Hovedkonto** tilgjengelige, og de vises på siden for generering. Alle felt som du legger til i filteret, legges også til på siden, sammen med eventuelle kriterier du legger til.
+For alle prosesser kan du bruke **Kilde**-kategorien til å filtrere data ved hjelp av **Filter**-knappen. Som standard legges bestemte felt til i filteret for hver prosess. For prosessen **Generer budsjettplan fra økonomimodul** er for eksempel kategoriene **Finanskonto** og **Hovedkonto** tilgjengelige, og de vises på siden for generering. Alle felt som du legger til i filteret, legges også til på siden, sammen med eventuelle kriterier du legger til.
 
 ### <a name="target"></a>Mål
 
@@ -63,7 +66,7 @@ Alternativet **Historisk** i kategorien **Mål** lar deg bruke datoene fra kilde
 
 Feltet **Aggreger total etter** øverst på siden bestemmer også datoen som skal brukes. Dette feltet summerer beløpene, og angir valgfritt den gyldige datoen til den første dagen i regnskapsåret eller regnskapsperioden. 
 
-Mange av feltene i kategorien **Mål** blir redigerbare eller skrivebeskyttet, avhengig av handlingen du har valgt. Når du endrer fra å opprette en ny budsjettplan for å oppdatere en eksisterende plan, blir feltet **Navn på budsjettplan** utilgjengelig, og feltene som er knyttet til å velge en eksisterende plan, blir tilgjengelige. På begge **mål** kategorien og ** kilde **-kategorien i **Finans** feltet alltid ikke er tilgjengelig, fordi verdien bestemmes av den valgte budsjettplanleggingsprosessen. 
+Mange av feltene i kategorien **Mål** blir redigerbare eller skrivebeskyttet, avhengig av handlingen du har valgt. Når du endrer fra å opprette en ny budsjettplan for å oppdatere en eksisterende plan, blir feltet **Navn på budsjettplan** utilgjengelig, og feltene som er knyttet til å velge en eksisterende plan, blir tilgjengelige. I både kategoriene **Mål** og **Kilde** er feltet **Finans** alltid utilgjengelig, fordi verdien bestemmes av den valgte budsjettplanleggingsprosessen. 
 
 Feltet **Budsjettklasse** lar deg angi budsjettplanlinjene som utgiftstransaksjoner eller inntektstransaksjoner. Vanligvis er inntektstransaksjoner krediteringer til en finanskonto og lagres derfor som negative beløp. Vanligvis vises disse transaksjonene også som negative beløp i budsjettplanen. Ved å sette inn budsjettklassen som et felt i planoppsettet, kan du imidlertid aktivere at inntekter skal vises som positive beløp.
 
@@ -73,7 +76,7 @@ Tre felt tilbyr ekstra funksjonalitet: **Faktor**, **Minimum** og **Avrundings**
 
 Verdien i feltet **Faktor** multipliseres med kildebeløpet for å angi beløpet i budsjettplanen. Du kan deretter gjøre justeringer når du oppretter budsjettplanlinjer. Du kan for eksempel angi **1,03** for en 3-prosents økning. Faktoren må være et positivt tall. 
 
-**Minimum** feltet lar deg angi terskelbeløpet for å opprette en budsjettplanlinje. Hvis kildebeløpet er mindre enn dette tallet, blir ikke budsjettplanlinjen opprettet. En verdi på **0,00** gjør det mulig for alle beløp, men ikke begrense linjer som positive beløp. (Ingen verdi begrenser linjer som positive beløp. Negative beløp er alltid inkludert, og representerer vanligvis kreditposter.)
+**Minimum** feltet lar deg angi terskelbeløpet for å opprette en budsjettplanlinje. Hvis kildebeløpet er mindre enn dette tallet, blir ikke budsjettplanlinjen opprettet. En verdi på **0,00** tillater alle beløp, men begrenser ikke linjer til positive beløp. (Ingen verdi begrenser linjer til positive beløp. Negative beløp er alltid inkludert, og representerer vanligvis kreditposter.)
 
 Feltet **Avrundingsregel** lar deg angi presisjonen for budsjettplanlinjene som er opprettet. Du kan runde av beløp til den nærmeste 1,00 10,00, 100,00 og så videre, i valuta.
 
@@ -86,13 +89,13 @@ I målet settes feltet **Budsjettklasse** til enten **Utgift** eller **Omsetning
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Generer budsjettplan fra anleggsmidler
 
-Prosessen **Generer budsjettplan fra anleggsmidler** har ikke noe alternativ for å aggregere etter periode eller dag. Det er også noe alternativ for å angi planen som historisk. Du kan bruke denne periodiske prosessen å ta med forventet transaksjoner for anleggsmidler i budsjettet planleggingen.
+Prosessen **Generer budsjettplan fra anleggsmidler** har ikke noe alternativ for å aggregere etter periode eller dag. Det finnes heller ingen alternativer for å angi planen som historisk. Du kan bruke denne periodiske prosessen til å ta med forventede transaksjoner for anleggsmidler i budsjettplanleggingen.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Generer budsjettplanlinjer fra prognosestillinger
 
 Prosessen **Generer budsjettplan fra prognosestillinger** tilordner kildeprognosestillingen til budsjettplanlinjen. Du kan vise stillingen ved å legge til prognosestillingen som en rad i budsjettplanoppsettet eller bruke forespørselen **Budsjettplanlinjer**. Hvis du ikke vil at prognosestillingen skal tilordnes til budsjettplanlinjer, setter du alternativet **Inkluder stilling i budsjettplanlinje** til **Nei**.
 
-Linjer i budsjettplanen samles etter finanskonto og posisjon. Du kan utelate hvor posisjon, slik at linjene samles etter finanskonto bare. På kategorien **Mål** angir du **Inkluder stilling i budsjettplan** som **Nei**.
+Linjer i budsjettplanen samles etter finanskonto og posisjon. Du kan imidlertid utelate posisjonsnummeret, slik at linjene bare samles etter finanskonto. På kategorien **Mål** angir du **Inkluder stilling i budsjettplan** som **Nei**.
 
 I feltet **FTE-scenario for budsjettplan** kan du velge et scenario for å inkludere antall fulltidsekvivalenter (heltidsansatte) i budsjettplanen. Dette feltet er begrenset til antallstypescenarier som er inkludert i oppsettet for målbudsjettplanen. Hvis du velger et FTE-scenario, må du også velge en FTE-hovedkonto. Denne kontoen brukes til å opprette budsjettplanlinjene for antall. 
 
@@ -140,5 +143,7 @@ Velg en linje, og klikk knappen **Budsjettplanlinjer** for å kjøre spørringen
 Bruk knappene **Forsyningsprognose** og **Behovsprognose** for å kjøre disse spørringene. I begge tilfeller søker spørringen etter prognoselinjene som kan ha opprettet budsjettplanlinjene. 
 
 Flere rapporter som er tilgjengelige, inkluderer rapporten **Prognosestillinger etter budsjettplan**. Denne rapporten er spesielt nyttig når du vil finne ut om en stilling er riktig fordelt til budsjettplaner.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Lagerjournaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning. 
 
 Lagerjournaler i Microsoft Dynamics 365 for Operations brukes til å postere fysiske lagertransaksjoner av forskjellige typer, for eksempel postering av avganger og mottak, lagerbevegelser, oppretting av stykklister og avstemmingen av fysisk lager. Alle disse lagerjournalene brukes på lignende måte, men de er delt inn i forskjellige typer.
@@ -72,7 +75,7 @@ Produksjonsinnleveringsjournalene fungerer som vareankomstjournalene, men brukes
 
 ### <a name="counting"></a>Opptelling
 
-Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer telle grupper, se [Definer lageropptellingsjournal prosesser (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer opptellingsgrupper, se [Definere prosesser for lageropptelling (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Brikkeopptelling
 
@@ -89,5 +92,7 @@ En journallinje er bare tilgjengelig for én bruker av gangen. Hvis flere bruker
 
 ## <a name="posting-journal-lines"></a>Posteringsjournallinjer
 Du kan postere journallinjene du oppretter, når som helst før du låser en vare fra flere transaksjoner. Dataene du angir i en journal, forblir i journalen, selv om du lukker journalen uten å postere linjene.
+
+
 
 

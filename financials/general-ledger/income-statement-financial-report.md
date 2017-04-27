@@ -1,6 +1,6 @@
 ---
 title: Finansrapport for resultatregnskap
-description: "Denne artikkelen beskriver Standardrapporten for resultatregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten."
+description: "Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
 
-Denne artikkelen beskriver Standardrapporten for resultatregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
 
 <a name="default-income-statement-report"></a>Standardrapport for resultatregnskap
 -------------------------------
@@ -61,10 +64,12 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finansrapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis finansrapporter](view-financial-reports.md)
 
-[Dynamics økonomisk rapportering blogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

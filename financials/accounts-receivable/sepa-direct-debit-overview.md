@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sepa-direct-debit-overview"></a>Oversikt over SEPA-avtalegiro
 
+[!include[banner](../includes/banner.md)]
+
+
 Felles eurobetalingsområde (SEPA) er satt opp av EU-kommisjonen, og angir at alle elektroniske betalinger betraktes som innenlandsbetalinger, uavhengig av landet/regionen der personen, virksomheten eller organisasjonen, og banken befinner seg. Det er ingen forskjell mellom nasjonale betalinger og betalinger over grenser. SEPA omfatter de 28 EU-medlemslandene pluss Island, Liechtenstein, Norge, Sveits, Monaco og San Marino. SEPA bidrar til å danne ett marked for betalingstransaksjoner i EØS. I siste instans forventes det at SEPA til slutt reduserer antall betalingsformater som banker, bedrifter og enkeltpersoner må arbeide med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hva er målet med SEPA AvtaleGiro?
+<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hva er formålet med SEPA-avtalegiroer?
 ---------------------------------------
 
-SEPA direkte debet gjør det mulig for en kreditor å samle inn midler fra kundens bankkonto, forutsatt at en signert mandat er gitt av kunden til kreditor. Kunden signerer en mandat som tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. 
+Med en SEPA-avtalegiro kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat. Kunden signerer en mandat som tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. 
 
 SEPA-avtalegiro oppretter, for første gang, et betalingsmiddel som kan brukes for både nasjonale og internasjonale avtalegiroer i euro i alle de 32 SEPA-landene/-områdene. 
 
@@ -60,7 +63,7 @@ B2B-SEPA-avtalegiroskjemaet gjelder for bedriftstransaksjoner og bygger på hove
 Ja. Du kan bruke skjemaet COR1 for SEPA-avtalegiromandater i Østerrike, Belgia, Tyskland, Frankrike, Italia, Spania og Nederland. Skjemaet gir en kortere forhåndsvarsling for avtalegirosamlingen for kreditoren.
 
 ## <a name="what-are-international-bank-account-numbers-iban-and-bank-identifier-codes-bic"></a>Hva er internasjonale bankkontonumre (IBAN) og bankidentifiseringskoder (BIC)?
-IBAN (International Bank Account Number) og BIC (Bank Identifier Code) brukes til å identifisere kontoer i 32 SEPA-land/-områder. Angi BIC i feltet SWIFT-kode og IBAN i IBAN-feltet. Begge feltene er plassert i hurtigfanen Tilleggsidentifikasjon i fanen Bankkonto på Bankkonto-siden. Dette gjelder for både kreditorens bankkonto og kundens bankkonto.
+IBAN (International Bank Account Number) og BIC (Bank Identifier Code) brukes til å identifisere kontoer i 32 SEPA-land/-områder. Angi BIC i SWIFT-kodefeltet og IBAN i IBAN-feltet. Begge feltene er plassert i hurtigfanen Tilleggsidentifikasjon i fanen Bankkonto på Bankkonto-siden. Dette gjelder for både kreditorens bankkonto og kundens bankkonto.
 
 ## <a name="where-do-i-enter-creditor-identifiers-direct-debit-ids"></a>Hvor angir jeg kreditor-ID-er (Direkte debet-ID-er)?
 I SEPA identifiseres hver kreditor av en unik kreditor-ID. Denne identifikatoren lar kunden og kundebanken filtrere hver avtalegiro, og behandler eller avviser deretter eller direkte debet i henhold til instruksjoner for kunden. Kreditorer må be om denne identifikatoren gjennom banken. Angi denne identifikatoren i Direkte debet-ID-feltet for bankkontoen for den juridiske enheten.
@@ -69,7 +72,7 @@ I SEPA identifiseres hver kreditor av en unik kreditor-ID. Denne identifikatoren
 Kunden signerer en mandat som tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. Kunden kan utstede mandatet i papirform eller elektronisk. Mandatet utløper som standard 36 måneder etter at avtalegiroen sist ble startet.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Hvor angir jeg filformatet SEPA-avtalegiro (ISO 20022)
-SEPA-dataformater er basert på meldingsstandardene i ISO 20022. Du kontrollerer generisk elektronisk rapportering avmerkingsboksen og velg SEPA direkte debet-format som en konfigurasjon for Eksporter format når du konfigurerer kontoer fordringer betalingsmåter. Du bruker denne betalingsmåten når du genererer en betalingsfil i en kundebetalingsjournal.
+SEPA-dataformater er basert på meldingsstandardene i ISO 20022. Merk av for Generell elektronisk rapportering, og velg formatet SEPA-avtalegiro som eksportformatkonfigurasjon når du konfigurerer betalingsmåte for leverandører. Du bruker denne betalingsmåten når du genererer en betalingsfil i en kundebetalingsjournal.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>I hvilke filformater kan jeg generere betalingsfiler for SEPA-avtalegiro?
 Du kan generere elektroniske betalingsfiler for SEPA-avtalegiroer i følgende formater:
@@ -78,6 +81,8 @@ Du kan generere elektroniske betalingsfiler for SEPA-avtalegiroer i følgende fo
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Hvordan fungerer refunderinger og returer med SEPA-avtalegiroer?
 I henhold til begge SEPA-avtalegiroskjemaer har kunder bestemte rettigheter til refusjoner. Kunden kan tilbakekalle autoriserte transaksjoner i løpet av en periode på åtte uker etter forfallsdato, uten å måtte oppgi årsak. Når det gjelder uautoriserte transaksjoner, utvides perioden til 13 måneder etter forfallsdatoen. Tilbakeføringer av betalinger som er utført, gjøres manuelt ved hjelp av Avbryt betaling-knappen på Kundetransaksjoner-siden.
+
+
 
 
 

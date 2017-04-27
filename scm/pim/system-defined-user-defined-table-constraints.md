@@ -1,6 +1,6 @@
 ---
 title: Systemdefinerte og brukerdefinerte tabellbegrensninger
-description: Denne artikkelen beskriver to typer tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell - brukerdefinerte og systemdefinerte. Tabellbegrensninger representerer matriser for tillatte attributtkombinasjoner, der hver enkelt rad definerer et sett med mulige attributtverdier.
+description: 'Denne artikkelen forklarer de to typene tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell: brukerdefinert og systemdefinert. Tabellbegrensninger representerer matriser for tillatte attributtkombinasjoner, der hver enkelt rad definerer et sett med mulige attributtverdier.'
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerte og brukerdefinerte tabellbegrensninger
 
-Denne artikkelen beskriver to typer tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell - brukerdefinerte og systemdefinerte. Tabellbegrensninger representerer matriser for tillatte attributtkombinasjoner, der hver enkelt rad definerer et sett med mulige attributtverdier.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen forklarer de to typene tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell: brukerdefinert og systemdefinert. Tabellbegrensninger representerer matriser for tillatte attributtkombinasjoner, der hver enkelt rad definerer et sett med mulige attributtverdier.
 
 Tabellbegrensninger representerer matriser av kombinasjoner av attributter som er tillatt for komponenter i en produktkonfigurasjonsmodell. Hver rad i tabellen definerer et sett med mulige attributtverdier. Du kan angi to typer begrensninger i en produktkonfigurasjonsmodell:
 
@@ -57,11 +60,13 @@ En systemdefinert tabellbegrensning oppretter en dynamisk tilordning mellom en a
 
 Når du oppretter en systemdefinert tabellbegrensning, velger du en tabell, definerer eventuelt spørringen som skal brukes, og knytter deretter attributtyper til feltene i den valgte tabellen. Felttypene må samsvare med typene attributtyper.  
 
-En tabellbegrensning kan tre i kraft på en produktmodell for konfigurasjon, skal tabellbegrensningen inkluderes i en begrensning på én av komponentene i modellen. Prosedyren er å opprette en ny begrensning, Velg betingelsestype for tabellen, og velg deretter tabelldefinisjonen betingelsen du bruker. Til slutt må alle felt i tabellbegrensningen tilordnes til attributter i produktkonfigurasjonsmodellen.
+Før en tabellbegrensning kan tre i kraft i en produktkonfigurasjonsmodell, må tabellbegrensningen inkluderes i en betingelse på en av komponentene for modellen. Fremgangsmåten er å opprette en ny begrensning, velge tabellbegrensningstypen og deretter velge definisjonen av tabellbegrensning som skal brukes. Til slutt må alle felt i tabellbegrensningen tilordnes til attributter i produktkonfigurasjonsmodellen.
 
 <a name="see-also"></a>Se også
 --------
 
 [Nøkkelbegreper i produktkonfigurasjonsmodeller](product-configuration-models.md)
+
+
 
 

@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
-Dette emnet gir en oversikt over leverandører.
+[!include[banner](../includes/banner.md)]
 
-Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenn fakturaene ved hjelp av en journal eller **leverandørfakturaen** siden. Du kan bruke fakturasamsvar, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
+
+Dette emnet gir en oversikt over leverandører. 
+
+Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller **Leverandørfaktura**-siden. Du kan bruke fakturasamsvar, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
+
+
 
 

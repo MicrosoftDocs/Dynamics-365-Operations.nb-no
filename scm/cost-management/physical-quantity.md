@@ -1,5 +1,5 @@
 ---
-title: Lager objektverdier
+title: Beholdningsobjektverdier
 description: Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes.
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Lager objektverdier
+# <a name="inventory-object-values"></a>Beholdningsobjektverdier
 
 Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes. 
 
-En ny funksjon som heter ** fysisk antall ** kan du se verdiene for et bestemt lager-objekt. Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres. Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md). Hvis du vil se verdiene for et bestemt lager-objekt, klikker du **fysisk antall** på den **kostobjekt** siden. Her er hvordan verdien av et objekt på lager beregnes: Inventory-objektet. Verdi = kostnader-objekt. Gjennomsnittlig enhetskost × Inventory-objektet. Antallet i følgende eksempel viser hvordan verdiene for et lager-objekt og et objekt med kostnaden beregnes. To produktkvitteringshendelser er registrert for vare A:
+En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt beholdningsobjekt. Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres. Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md). Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden. Slik beregnes verdien til et beholdningsobjekt: beholdningsobjekt.verdi = kostnadsobjekt.gjennomsnittlig enhetskostnad × beholdningsobjekt.antall. Eksemplet nedenfor viser hvordan verdiene til et beholdningsobjekt og et kostnadsobjekt beregnes. To produktkvitteringshendelser er registrert for vare A:
 
--   Produktkvittering 1: antall = 100 PCer., beløp = $1,000.00, området = 1, lager = 11, satsvis Nr. = B1
--   Produktkvittering 2: antall = 50 PCer., beløp = $800.00, området = 1, lager = 11, satsvis Nr. = B2
+-   Produktkvittering 1: Antall = 100 stk., Beløp = USD 1 000,00, Område = 1, Lager = 11, Partinr. = B1
+-   Produktkvittering 2: Antall = 50 stk., Beløp = USD 800,00, Område = 1, Lager = 11, Partinr. = B2
 
 Følgende tabell viser resultatet av beregningen for et kostnadsobjekt. Du kan vise resultatet på **Kostnadsobjekt**-siden.
 
@@ -130,10 +130,10 @@ Følgende tabell viser resultatet av beregningen for et beholdningsobjekt. Du ka
 <a name="see-also"></a>Se også
 --------
 
-[Cost objects](cost-object.md)
+[Kostnadsobjekter](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Kostnadsoppføringer](cost-entries.md)
 
-[Hva er nye og endrede i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Hva er nytt og endret i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

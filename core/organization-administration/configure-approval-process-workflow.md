@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
 
-Hvis du vil konfigurere en godkjenningsprosess i redigeringsprogrammet for arbeidsflyt, Høyreklikk elementet godkjenning, og klikk deretter **Egenskaper** til å åpne den **Egenskaper** skjema.
+Når du skal konfigurere en godkjenningsprosess i redigeringsprogrammet for arbeidsflyt, høyreklikker du godkjenningstrinnet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.
 Gi navn til godkjenningsprosessen
 -------------------------
 
@@ -40,14 +40,14 @@ Bruk fremgangsmåten nedenfor for å sette et navn på godkjenningsprosessen.
 Du kan konfigurere systemet slik at det automatisk utfører en handling på dokumenter som oppfyller bestemte betingelser. Systemet kan for eksempel godkjenne reiseregninger med totalsummer som er mindre enn USD 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling på dokumentet.
 1.  I den venstre ruten klikker du **Automatiske handlinger**.
 2.  Merk av for **Aktiver automatiske handlinger**.
-3.  Click **Add condition**.
+3.  Klikk **Legg til betingelse**.
 4.  Angi en betingelse.
 5.  Angi flere betingelser om nødvendig.
 6.  Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:
     1.  Klikk **Test** for å åpne skjemaet **Test arbeidsflytbetingelse**.
     2.  Velg en post i **Valider betingelse**-området i skjemaet.
     3.  Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
-    4.  Klikk **OK** eller **avbryte** å gå tilbake til den **Egenskaper** skjema.
+    4.  Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.
 
 7.  I listen **Autofullføringshandling** velger du handlingen som systemet skal utføre på dokumentet.
 
@@ -55,11 +55,11 @@ Du kan konfigurere systemet slik at det automatisk utfører en handling på doku
 Du kan sende meldinger til personer når et dokument er godkjent, avvist, delegert eller videresendt, eller når det er bedt om en endring. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 1.  I den venstre ruten klikker du **Varslinger**.
 2.  Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:
-    -   **Representant** – når et dokument er knyttet til en annen bruker for godkjenning.
-    -   **Eskaler** – når den tilordnede brukeren ikke har gjort noe på et dokument i tildelt tidsrom.
-    -   **Godkjenne** – når et dokument er blitt godkjent.
-    -   **Avvis** – når et dokument er blitt avvist.
-    -   **Be om endring** – når den tildelte brukeren har bedt om en endring i et dokument som ble sendt.
+    -   **Representant** – Når et dokument er tilordnet til en annen bruker for godkjenning.
+    -   **Videresend** – Når den tilordnede brukeren ikke har gjort noe på et dokument i tildelt tidsrom.
+    -   **Godkjenn** – Når et dokument er godkjent.
+    -   **Avvis** – Når et dokument er avvist.
+    -   **Be om endring** – Når den tilordnede brukeren har bedt om en endring i et dokument som ble sendt.
 
 3.  Velg raden for en hendelse du valgte i trinn 2.
 4.  Klikk kategorien **Varslingstekst**.
@@ -70,8 +70,8 @@ Du kan sende meldinger til personer når et dokument er godkjent, avvist, delege
     3.  I listen som vises, velger du plassholderen du vil sette inn.
     4.  Klikk **Sett inn**.
 
-7.  Hvis du vil legge til oversettelser av meldingen, klikker du **oversettelser av**. I skjemaet som vises, gjør du følgende:
-    1.  Click **Add**.
+7.  Hvis du vil legge til oversettelser av varslingen, klikker du **Oversettelser**. I skjemaet som vises, gjør du følgende:
+    1.  Klikk **Legg til**.
     2.  I listen som vises, velger du språket teksten skal angis på.
     3.  I tekstboksen **Oversatt tekst** legger du inn teksten.
     4.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere.
@@ -112,11 +112,11 @@ Du kan sende meldinger til personer når et dokument er godkjent, avvist, delege
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Bestemte Microsoft Dynamics 365 for operasjoner brukere</td>
+    <td><strong>Bruker</strong></td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li>Den <strong>brukere</strong>: listen inneholder alle Microsoft Dynamics 365 for brukere av operasjoner. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Microsoft Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -150,10 +150,10 @@ Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et b
 ## <a name="specify-which-actions-are-available-to-the-user"></a>Angi hvilke handlinger som er tilgjengelige for brukeren
 Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en handling med dokument. Følg denne fremgangsmåten for å angi hvilke handlinger brukeren kan utføre med det sendte dokumentet.
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
-2.  Velg den **Godkjenn** Hvis brukeren kan godkjenne dokumentet.
-3.  Velg den **avvise** for brukeren kan avvise dokumentet.
-4.  Velg den **be om endring** for brukeren kan be om endringer i dokumentet.
-5.  Velg den **representant** Hvis brukeren kan tilordne dokumentet til en annen bruker for godkjenning.
+2.  Merk av for **Godkjenn** hvis brukeren kan godkjenne dokumentet.
+3.  Merk av for **Avvis** hvis brukeren kan avvise dokumentet.
+4.  Merk av for **Be om endring** hvis du brukeren kan be om endringer av dokumentet.
+5.  Merk av for **Representant** hvis brukeren kan tilordne dokumentet til en annen bruker for godkjenning.
 
 **Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal ** er utgått.
 

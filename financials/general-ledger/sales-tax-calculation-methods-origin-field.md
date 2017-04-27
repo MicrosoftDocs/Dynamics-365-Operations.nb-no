@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beregningsmåter av merverdiavgift i grunnlagsfeltet
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver alternativene i Opprinnelse-feltet på siden for mva-koder, og hvordan mva beregnes basert på det valgte alternativet for en mva-kode.
 
 For hver mva-kode du oppretter på siden Mva-koder, må du velge beregningsmåten som skal brukes for grunnlagsbeløpet for merverdiavgift i grunnlagsfeltet.
@@ -124,5 +127,7 @@ Dokumentet / journalen er satt til Beløp inkludert merverdiavgift = Nei Transak
 [Bestemme mva-satser basert på feltene Grensegrunnlag og Beregningsmåte](marginal-base-field.md)
 
 [Hele beløp og alternativer for intervallberegning for mva-koder](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Definere og generere positive betalingsfiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler. 
 
 Definer positiv betaling for å generere en elektronisk liste over sjekker som leveres til banken. Når sjekken presenteres til banken, sammenligner banken deretter sjekken med listen over sjekker. Hvis sjekken samsvarer med en sjekk i listen, betales sjekken av banken. Hvis sjekken ikke samsvarer med en sjekk i listen, beholder banken sjekken til gjennomgang.
 
 ## <a name="security-for-positive-pay-files"></a>Sikkerhetsnøkkel for positive lønnsfiler
-Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Fordi positive Betal-filer kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for operasjoner. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
+Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Siden positive lønnsfiler kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for Operations. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Når kontrollene som er oppført i en positiv lønnsfilen er betalt, får du et 
 
 ## <a name="recall-a-positive-pay-file"></a>Tilbakekalle en positiv betalingsfil
 Hvis du må endre en positiv betalingsfil, kan du tilbakekalle den. På siden **Sammendrag av positiv betalingsfil** velger du en positiv betalingsfil som har statusen **Opprettet**, og deretter velger du handlingen **Tilbakekall**. For hver kontroll i den positive betalingsfilen tilbakestilles feltet som angir om kontrollen er inkludert i en positiv betalingsfil. Du kan deretter opprette en ny positiv betalingsfil med kontrollen som ble tilbakekalt.
+
+
 
 

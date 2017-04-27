@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Konfigurere egenskapene for en arbeidsflyt
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer de ulike egenskapene i en arbeidsflyt.
 
 Hvis du vil konfigurere egenskapene for en arbeidsflyt, kan du åpne arbeidsflyten i redigeringsprogrammet for arbeidsflyt. Klikk lerretet i redigeringsprogrammet for arbeidsflyt, og klikk deretter **Egenskaper** for å åpne **Egenskaper**-siden. Du kan deretter bruke fremgangsmåten nedenfor for å konfigurere de ulike egenskapene for arbeidsflyten.
@@ -147,10 +150,10 @@ Når et dokument sendes til behandling, opprettes det en arbeidsflytforekomst. D
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemt Dynamics 365 for operasjoner brukere</td>
+    <td>Bestemte Dynamics 365 for Operations-brukere</td>
     <td><ol>
     <li>I kategorien <strong>Mottaker</strong> klikker du <strong>Bruker</strong>.</li>
-    <li>På den <strong>bruker</strong> i kategorien for <strong>brukere</strong> listen inneholder alle Dynamics 365 for brukere av operasjoner. Velg brukerne du vil sende varslinger til, og flytt disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li>I kategorien <strong>Bruker</strong> inkluderer <strong>Tilgjengelige brukere</strong>-listen alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Hvis du vil angi kommentarer om endringene du gjorde i arbeidsflyten, følger du
 2.  I feltet **Skriv inn kommentarer om arbeidsflyten** angir du kommentarene dine.
 3.  Gå gjennom kommentarene dine. Når du har lagt til kommentarer, kan du ikke endre dem.
 4.  Klikk **Legg til** for å legge til kommentarene dine i **Kommentarlogg**-området.
+
+
 
 
 

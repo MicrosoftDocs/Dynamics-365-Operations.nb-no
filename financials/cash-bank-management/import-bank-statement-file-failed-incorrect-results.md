@@ -1,6 +1,6 @@
 ---
-title: "Bank setningen fil import feilsøking"
-description: "Det er viktig at bankkontoutdragsfilen fra banken, stemmer overens med oppsettet som støtter Microsoft Dynamics 365 for operasjoner. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses."
+title: "Feilsøking for import av bankkontoutdragsfil"
+description: "Det er viktig at bankkontoutdragsfilen fra banken stemmer overens med oppsettet som Microsoft Dynamics 365 for Operations støtter. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Bank setningen fil import feilsøking
+# <a name="bank-statement-file-import-troubleshooting"></a>Feilsøking for import av bankkontoutdragsfil
 
-Det er viktig at bankkontoutdragsfilen fra banken, stemmer overens med oppsettet som støtter Microsoft Dynamics 365 for operasjoner. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses.
+[!include[banner](../includes/banner.md)]
+
+
+Det er viktig at bankkontoutdragsfilen fra banken stemmer overens med oppsettet som Microsoft Dynamics 365 for Operations støtter. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses.
 
 <a name="what-is-the-error"></a>Hva er feilen?
 ------------------
@@ -34,16 +37,16 @@ Det er viktig at bankkontoutdragsfilen fra banken, stemmer overens med oppsettet
 Når du har forsøkt å importere en bankkontoutdragsfil, går du til jobbloggen for databehandling og kjøringsdetaljene for å finne feilen. Feilen kan være til hjelp ved at du peker på utdraget, saldoen eller utdragslinjen. Det er imidlertid ikke sannsynligvis at dette gir nok informasjon til at du finner feltet eller elementet som forårsaker problemet.
 
 ## <a name="what-are-the-differences"></a>Hva er forskjellene?
-Sammenlign Oppsettsdefinisjonen for bank-filen til Microsoft Dynamics 365 for operasjoner import definisjon, og Legg merke til noen forskjeller i felt og elementer. Sammenligne bankkontoutdragsfilen relaterte utvalg Dynamics 365 for operasjoner-filen. Eventuelle forskjeller bør være lett å se i ISO20022-filer.
+Sammenlign bankfiloppsettsdefinisjonen med Microsoft Dynamics 365 for Operations-importdefinisjonen, og merk deg forskjellene i feltene og elementene. Sammenlign bankkontoutdragsfilen med den tilknyttede Dynamics 365 for Operations-eksempelfilen. Eventuelle forskjeller bør være lett å se i ISO20022-filene.
 
 ## <a name="transformations"></a>Transformasjoner
 Endringen må vanligvis foretas i én av tre transformasjoner. Hver enkelt transformasjon er skrevet for en bestemt standard.
 
 | Ressursnavn                                         | Filnavn                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_til\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_til\_avstemming\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_til\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>Feilsøking av transformasjoner
 ### <a name="adjust-the-bai2-and-mt940-files"></a>Juster BAI2- og MT940-filene
@@ -68,7 +71,7 @@ Hvis du vil ha mer informasjon, se <https://msdn.microsoft.com/en-us/library/ms2
 5.  Angi inndataene til plasseringen av bankkontoutdragsfilen.
 6.  Definer en plassering og et filnavn for utdataene.
 7.  Angi de nødvendige bruddpunktene.
-8.  Klikk på menyen, **XML**&gt;**starte feilsøking XSLT**.
+8.  Klikk **XML** på menyen &gt; **Start XSLT Debugging**.
 
 ### <a name="format-the-xslt-output"></a>Formater XSLT-utdataene
 
@@ -76,7 +79,7 @@ Når transformeringen kjøres, opprettes det en utdatafil som du kan vise i Visu
 
 ### <a name="adjust-the-transformation"></a>Juster transformasjonen
 
-Juster transformasjonen for å hente det riktige feltet eller elementet i bankkontoutdragsfilen. Tilordne deretter feltet eller elementet til den aktuelle Dynamics 365 for operasjoner elementet.
+Juster transformasjonen for å hente det riktige feltet eller elementet i bankkontoutdragsfilen. Tilordne deretter feltet eller elementet til det aktuelle elementet i Dynamics 365 for Operations.
 
 ### <a name="debitcredit-indicator"></a>Indikator for debet/kredit
 
@@ -95,6 +98,8 @@ Tabellen nedenfor inneholder eksempler på definisjonene av tekniske oppsett for
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
+
 
 
 

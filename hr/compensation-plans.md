@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Kompensasjonsplaner
 
+[!include[banner](includes/banner.md)]
+
+
 Kompensasjons- og fordelsansvarlige kan bruke kompensasjonsstyring til å vedlikeholde og behandle faste og variable kompensasjonsplaner for ansatte i organisasjonen.
 
 ### <a name="introduction"></a>Innledning
 
-Kompensasjonsstyring brukes til å kontrollere levering av grunnlønn og bonuser. Den ansattes faste grunnlønn og styres tilleggsøkninger med faste kompensasjonsplaner. Betaling av insitamentutbetalinger, for eksempel bonuser, ytelsestillegg, aksjeopsjoner og tilskudd, og også engangsbonuser, kontrolleres via variable kompensasjonsplaner. 
+Kompensasjonsstyring brukes til å kontrollere levering av grunnlønn og bonuser. En ansatts faste grunnlønn og personlige tilleggsøkninger styres via faste kompensasjonsplaner. Betaling av insitamentutbetalinger, for eksempel bonuser, ytelsestillegg, aksjeopsjoner og tilskudd, og også engangsbonuser, kontrolleres via variable kompensasjonsplaner. 
 
 Ansatte kan knyttes til én eller flere planer av begge typer. En ansatt må oppfylle følgende krav for å være kvalifisert for registrering i en kompensasjonsplan:
 -   Den ansatte må ha en aktiv stillingstilordningen.
@@ -54,7 +57,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 <td>Faste kompensasjonshandlinger har to formål:
 <ul>
 <li>Handlinger kan angi hvilken type informasjon som må registreres når kompensasjonen til en ansatt endres. Du kan for eksempel kreve at årsaken til at en endring, for eksempel en forfremmelse eller degradering, registreres.</li>
-<li>Handlinger kan sikre at en beregning brukes når planer for fast kompensasjon er behandlet.  For eksempel handlinger av typen egenkapital sammenlignes de ansatte lønnen til minimum referansepunkt for nivået for ansatt, og sikre at ansatt få betales minst minimum.</li>
+<li>Handlinger kan sikre at en beregning brukes når planer for fast kompensasjon er behandlet.  Eksempelvis vil handlinger av typen Egenkapital sammenligne ansattbetalingen med minste referansepunkt for nivået for den ansatte og sikre at den ansatte betales minst minimum.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 </tr>
 <tr class="even">
 <td>Lønnsfrekvenser</td>
-<td>Lønnsfrekvenser brukes til å definere tidsperioden som er angitt for kompensasjon.  For eksempel lønnssats Betal frekvens hjelper du forstår Hvis kompensasjon beløpet er angitt som en årslønn kontra en time. Lønnsfrekvenser er også brukt til å angi omregningsfaktorer for å konvertere kompensasjonsbeløp fra månedlig, Ukentlig, annenhver uke og hver time betale frekvenser til en årlig lønnsfrekvens.</td>
+<td>Lønnsfrekvenser brukes til å definere tidsperioden som er angitt for kompensasjon.  Eksempelvis hjelper lønnsfrekvensen deg med å forstå om kompensasjonsbeløpet er angitt som en årslønn kontra en timelønn. Lønnsfrekvenser er også brukt til å definere omregningsfaktorer for å konvertere kompensasjonsbeløp fra frekvensen månedlig, ukentlig, lønn annenhver uke og timelønn til en årlig lønnsfrekvens.</td>
 </tr>
 <tr class="odd">
 <td>Kompensasjonsregioner</td>
@@ -107,7 +110,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 </tr>
 <tr class="even">
 <td>Kompensasjonsrutenett</td>
-<td>Kompensasjonsrutenett inneholde kompensasjonsstrukturen.  Kompensasjonsrutenett kan brukes av én eller flere kompensasjonsplaner.</td>
+<td>Kompensasjonsrutenett inneholder kompensasjonsstrukturen.  Kompensasjonsrutenett kan brukes av én eller flere kompensasjonsplaner.</td>
 </tr>
 <tr class="odd">
 <td>Ytelsesplaner</td>
@@ -126,9 +129,11 @@ En prosesshendelse beregner kompensasjonsinformasjon for en bestemt periode for 
 <a name="compensation-events"></a>Kompensasjonshendelser
 -------------------
 
-Hver gang en prosesshendelse kjøres, opprettes en kompensasjon-hendelse.  Kompensasjonshendelser inneholder resultatene av kompensasjonsprosessen for hver ansatt som er inkludert i prosesshendelsen.  Når beregningene er riktige, kan du laste inn kompensasjon-hendelse for å oppdatere kompensasjonsposter for ansatte som er berørt av prosesshendelsen.
+Hver gang en prosesshendelse kjøres, opprettes en kompensasjonshendelse.  Kompensasjonshendelser inneholder resultatene av kompensasjonsprosessen for hver ansatt som er inkludert i prosesshendelsen.  Når beregningene er riktige, kan du laste inn kompensasjonshendelsen for å oppdatere kompensasjonsposter for ansatte som er berørt av prosesshendelsen.
 
 ## <a name="recommendations"></a> Anbefalinger
 Når du kjører en prosesshendelse, kan du anbefale justeringer for en ansatts personlige tilleggsøkning eller bonusbeløp basert på de beregnede retningslinjeøkningene for prosesshendelsen. Hvis du gjøre anbefalinger for ansatte, må du aktivere anbefalinger når du definerer kompensasjonsplaner, eller når du definerer prosesshendelsen.
+
+
 
 

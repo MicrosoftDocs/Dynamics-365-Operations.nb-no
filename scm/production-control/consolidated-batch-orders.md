@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Konsoliderte partiordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver begrepet konsoliderte partiordrer.
 
 En bulkvare som produseres anses som en overordnet vare, mens en pakket vare anses som en underordnet vare. Forholdet mellom bulkvaren og den pakkede varen uttrykkes i en bulkvarekonvertering. Denne bulkvarekonverteringen er definert i selve bulkvaren.  
@@ -41,6 +44,8 @@ En konsolidert partiordre kan inneholde en hvilken som helst kombinasjon av føl
 -   Flere bulkordrer og flere pakkede ordrer
 -   Flere bulkordrer og én enkelt pakket ordre
 -   Bare pakkede ordrer
+
+
 
 
 

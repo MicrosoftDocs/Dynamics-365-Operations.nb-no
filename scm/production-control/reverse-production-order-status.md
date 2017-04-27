@@ -1,5 +1,5 @@
 ---
-title: Omvendt produksjonsordrestatus
+title: Reversere produksjonsordrestatusen
 description: "Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Omvendt produksjonsordrestatus
+# <a name="reverse-the-production-order-status"></a>Reversere produksjonsordrestatusen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre. 
 
@@ -49,5 +52,7 @@ Når du tilbakefører statusen for en produksjonsordre fra **Frigitt** til **Pla
 
 ## <a name="from-started-to-released"></a>Fra Startet til Frigitt
 Når du tilbakefører statusen for en produksjonsordre fra **Startet** til **Frigitt**, blir alle varer som er rapportert som avsluttet, tilbakestilt. Hvis emballasje er plukket, eller inngående og utgående leveringer er gjort til produksjon, tilbakeføres også disse innstillingene. **Gjenværende status**-feltet på stykklistelinjene i produksjonsordren endres fra **Avsluttet** til **Materialforbruk**. Hvis tidspunkt er registrert, eller hvis antall er blitt rapportert som fullført for operasjonene i produksjonsruten, tilbakeføres disse innstillingene. **Gjenværende status**-feltet endres fra **Avsluttet** til **Ruteforbruk** i produksjonsruten. Innstillingene for alle varer som blir postert som pågår eller varer i arbeid, blir tilbakeført. På siden **Produksjonsordredetaljer** tilbakestilles felt som viser et antall som ble startet eller ferdigmeldt. Datoene for disse transaksjonene tilbakestilles også.
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>Oversikt over innkjøp og leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i modulen Innkjøp og leverandører.
 
 Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for produkter og tjenester gjennom å fremskaffe produktet, mottak, fakturering og behandling av betaling til leverandører. Du kan konfigurere innkjøpsprosesser mot bestemte forretningsbehov ved å definere innkjøpspolicyer og -arbeidsflyter.
@@ -37,14 +40,14 @@ Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for e
   
 Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel *som sendes til flere potensielle leverandører. Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer. Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.  
 
-Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel *til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert til å bruke den **leverandøren** portal, * * bestilling forespørsel-funksjonalitet er deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
+Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel *til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
 
 *Leverandørkataloger *kan brukes til å samle inn informasjon om produktsortimentet som leverandører kan levere. Leverandører kan publisere sine egne kataloger slik at det blir enklere å oppdatere katalogen. Det er mulig å knytte en *liste over godkjente leverandører* til et produkt, og dette kan være til hjelp for leverandørvalg når nye bestillinger åpnes, og forhindre bruken av utilsiktede leverandører.
 
 ## <a name="procurement"></a>Innkjøp
 *Bestillinger *kan opprettes på flere forskjellige måter, blant annet:
 
--   Som et resultat av hovedplanlegging, som har identifisert et behov krever som et kjøp. Denne prosessen genererer planlagte bestillinger og bestillinger genereres når disse er gitt ut.
+-   Som et resultat av hovedplanlegging, som har identifisert et behov som krever som et kjøp. Denne prosessen genererer planlagte bestillinger, og når de frigis, genereres det bestillinger.
 -   Ved hjelp av behandling av innkjøpsrekvisisjoner som fører til innkjøp.
 -   Via behandling av kjøpsavtaler, der bestillinger opprettes som frigitte ordrer fra avtalene. Dette brukes vanligvis når kjøpsavtaler brukes til å representere rammebestillinger.
 -   Manuelt, når bestillingen som opprettes, ikke er basert på et annet dokument.
@@ -53,7 +56,7 @@ Bestillinger som er konfigurert med *arbeidsflyter for godkjenning av kjøp*, kr
 
 Bestillinger *bekreftes* for å representere at det er opprettet en avtale med leverandøren. Bestillingen går deretter gradvis gjennom ulike tilstander og blir til slutt fakturert eller avbrutt.  
 
-Når du oppretter en bestilling, mange av feltene er forhåndsutfylt med verdier som standard fra informasjonen som er lagret om leverandøren i den **leverandører** siden. Dette betyr at det er et begrenset antall felt du trenger å fylle ut på bestillingen, selv om du kan velge å overstyre standardverdiene.
+Når du oppretter en bestilling, er mange av feltene forhåndsutfylt med verdier som standard fra informasjonen som er lagret om leverandøren i på **Leverandører**-siden. Dette betyr at det er et begrenset antall felt du trenger å fylle ut på bestillingen, selv om du kan velge å overstyre standardverdiene.
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
@@ -86,5 +89,7 @@ Fakturerte bestillinger registrerer gjelden i leverandørkontoen i leverandører
 
 ## <a name="vendor-performance"></a>Leverandørytelse
 Ytelse og gjennomgang av innkjøp støttes via *innkjøps- og leverandørrapporter,* som inkluderer forbruksanalyse og analyse av leverandørytelse.
+
+
 
 

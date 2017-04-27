@@ -49,7 +49,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Lagre som                           | Lagre gjeldende raddefinisjon, kolonnedefinisjon, rapporteringstredefinisjon eller rapportdefinisjon med et nytt navn.                                                                            |
 | Egenskaper                        | Åpne dialogboksen **Egenskaper** der du kan endre navnet og beskrivelsen for en rapport.                                                                                                   |
 | Generer                          | Generer gjeldende rapport. Denne kommandoen er tilgjengelig fra en rapportdefinisjon.                                                                                                                 |
-| Vis rapport                       | Åpne den nyeste versjonen av den genererte rapporten i Dynamics 365 for operasjoner. Denne kommandoen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport.                                 |
+| Vis rapport                       | Åpne den nyeste versjonen av den genererte rapporten i Dynamics 365 for Operations. Denne kommandoen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport.                                 |
 | Sist brukte rapportdefinisjoner         | Vis en liste over rapporter som nylig er opprettet eller endret. Du kan deretter velge en rapport i listen.                                                                                    |
 | Sist brukte raddefinisjoner            | Vis en liste over raddefinisjoner som nylig er opprettet eller endret. Du kan deretter velge en raddefinisjon i listen.                                                                    |
 | Sist brukte kolonnedefinisjoner         | Vis en liste over kolonnedefinisjoner som nylig er opprettet eller endret. Du kan deretter velge en kolonnedefinisjon i listen.                                                              |
@@ -80,7 +80,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Sett inn kolonne                          | Sette inn en tom kolonne i kolonnedefinisjonen. Denne kommandoen er tilgjengelig fra en kolonnedefinisjon.                                                                                                             |
 | Slett kolonne                          | Slett den valgte kolonnen fra kolonnedefinisjonen. Denne kommandoen er tilgjengelig fra en kolonnedefinisjon.                                                                                                         |
 | Sette inn rapporteringsenheter fra dimensjoner | Åpne dialogboksen **Rapporteringsenheter fra dimensjoner** der du kan velge dimensjonsverdier som skal tas med i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon. |
-| Importer dimensjonssetthierarki         | Åpne dialogboksen **Dimensjonssetthierarki** der du kan importere et dimensjonssetthierarki fra de økonomiske dataene. Denne kommandoen er tilgjengelig fra en rapportering treet definisjon for en... \financial-dimensions\dimension-based system.  |
+| Importer dimensjonssetthierarki         | Åpne dialogboksen **Dimensjonssetthierarki** der du kan importere et dimensjonssetthierarki fra de økonomiske dataene. Denne kommandoen er tilgjengelig fra en ..\financial-dimensions\dimension-based system.  |
 | Sett inn rapporteringsenhet                  | Sette inn en tom rad i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon.                                                                                                |
 | Slett rapporteringsenhet                  | Slett den merkede raden for rapporteringsenhet fra rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon.                                                                             |
 
@@ -159,7 +159,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 
 | Kommando | beskrivelse                                                  |
 |---------|--------------------------------------------------------------|
-| Hjelp    | Åpne Dynamics-365 for operasjoner hjelp wiki-siden for finansrapportering. |
+| Hjelp    | Åpne wiki-siden for hjelp for Dynamics 365 for Operations for finansrapportering. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Verktøylinjeknapper for Rapportutforming
@@ -171,7 +171,7 @@ Standardverktøylinjen gir rask tilgang til filen og redigeringskommandoer. Denn
 
 | Knapp                                                                                                                                                                                   | Beskrivelse                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![New button](./media/rowc130389.png)](./media/rowc130389.png)                              | Opprett en ny (tom) rapportdefinisjon, raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon.                                                                               |
+| [![Ny-knappen](./media/rowc130389.png)](./media/rowc130389.png)                              | Opprett en ny (tom) rapportdefinisjon, raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon.                                                                               |
 | [![Åpne-knappen](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Åpne en eksisterende raddefinisjon, kolonnedefinisjon, rapporteringstredefinisjon eller rapportdefinisjon.                                                                                   |
 | [![Lagre-knappen](./media/savec130389.png)](./media/savec130389.png)                           | Lagre gjeldende raddefinisjon, kolonnedefinisjon, rapporteringstredefinisjon eller rapportdefinisjon.                                                                                   |
 | [![Kopier-knappen](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopier den valgte teksten til utklippstavlen.                                                                                                                                               |
@@ -181,14 +181,14 @@ Standardverktøylinjen gir rask tilgang til filen og redigeringskommandoer. Denn
 | [![Gjør om-knappen](./media/redoc130389.png)](./media/redoc130389.png)                           | Gjør om den siste angrehandlingen.                                                                                                                                                          |
 | [![Søk-knappen](./media/findc130389.png)](./media/findc130389.png)                           | Åpne dialogboksen **Søk og erstatt** der du kan søke etter og erstatte tekst i det aktive vinduet.                                                                                  |
 | [![Sett inn rad-knappen](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Sette inn en tom rad i raddefinisjon eller en tom overskriftsrad i kolonnedefinisjonen. Denne knappen er tilgjengelig fra en rad- eller kolonnedefinisjon.                    |
-| [![Sett inn kolonne for](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Sette inn en tom kolonne i kolonnedefinisjonen. Denne knappen er tilgjengelig fra en kolonnedefinisjon.                                                                                  |
+| [![Sett inn kolonne-knappen](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Sette inn en tom kolonne i kolonnedefinisjonen. Denne knappen er tilgjengelig fra en kolonnedefinisjon.                                                                                  |
 | [![Lås-knappen](./media/lockc130389.png)](./media/lockc130389.png)                           | Angi et passord for gjeldende byggeblokk. Denne knappen er tilgjengelig for brukere som har **Utformer**- eller **Administrator**-rollen.                                                 |
-| [![Rad kobling-knappen](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Åpne dialogboksen **Radkoblinger** der du kan angi kildene for datakoblinger i raddefinisjoner og rapporteringstredefinisjoner. Denne knappen er tilgjengelig fra en raddefinisjon. |
-| [![Heve nivået for knappen](./media/promotec130389.png)](./media/promotec130389.png)                  | Forfremme en enhet i rapporteringstredefinisjonen. Når du velger en underordnet enhet og deretter klikker **Forfrem**, flyttes den underordnede enheten til samme nivå som den overordnede enheten.                |
-| [![Senke nivået for knappen](./media/demotec130389.png)](./media/demotec130389.png)                     | Senk en enhet i rapporteringstredefinisjonen. Når du velger en enhet og deretter klikker **Senk**, blir enheten en underordnet av den foregående enheten.                               |
-| [![Utvid knappen](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Vis alle enheter i rapporteringstredefinisjonen på nivået til den valgte enheten.                                                                                                   |
-| [![Skjul-knapp](./media/collapsec130389.png)](./media/collapsec130389.png)               | Skjul rapporteringstreet.                                                                                                                                                           |
-| [![Hjelp-knapp](./media/helpc130389.png)](./media/helpc130389.png)                           | Åpne Hjelp.                                                                                                                                                                             |
+| [![Radkobling-knappen](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Åpne dialogboksen **Radkoblinger** der du kan angi kildene for datakoblinger i raddefinisjoner og rapporteringstredefinisjoner. Denne knappen er tilgjengelig fra en raddefinisjon. |
+| [![Forfrem-knappen](./media/promotec130389.png)](./media/promotec130389.png)                  | Forfremme en enhet i rapporteringstredefinisjonen. Når du velger en underordnet enhet og deretter klikker **Forfrem**, flyttes den underordnede enheten til samme nivå som den overordnede enheten.                |
+| [![Senk-knappen](./media/demotec130389.png)](./media/demotec130389.png)                     | Senk en enhet i rapporteringstredefinisjonen. Når du velger en enhet og deretter klikker **Senk**, blir enheten en underordnet av den foregående enheten.                               |
+| [![Vis-knappen](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Vis alle enheter i rapporteringstredefinisjonen på nivået til den valgte enheten.                                                                                                   |
+| [![Skjul-knappen](./media/collapsec130389.png)](./media/collapsec130389.png)               | Skjul rapporteringstreet.                                                                                                                                                           |
+| [![Hjelp-knappen](./media/helpc130389.png)](./media/helpc130389.png)                           | Åpne Hjelp.                                                                                                                                                                             |
 
 ### <a name="formatting-toolbar"></a>Formateringsverktøylinjen
 
@@ -196,16 +196,16 @@ Formateringsverktøylinjen gir enkel tilgang til kommandoer for stil. Denne verk
 
 | Knapp                                                                                                                                                                                                   | Beskrivelse                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Stil for skrift](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Bruke den valgte skriftstilen på gjeldende tekst.      |
+| [![Skriftstil-knappen](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Bruke den valgte skriftstilen på gjeldende tekst.      |
 | [![Skrift-knappen](./media/fonttype.png)](./media/fonttype.png)                                                 | Bruk den valgte skriften for gjeldende tekst.              |
 | [![Skriftstørrelse-knappen](./media/fontsize.png)](./media/fontsize.png)                                            | Bruk den valgte skriftstørrelsen (i punkter) for gjeldende tekst. |
 | [![Fet-knappen](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gjør gjeldende tekst fet.                             |
 | [![Kursiv-knappen](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Gjør gjeldende tekst kursiv.                           |
-| [![Understreking-knappen](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Gjør gjeldende tekst understreket.                             |
+| [![Understrek-knappen](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Gjør gjeldende tekst understreket.                             |
 | [![Reduser innrykk-knappen](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Reduser innrykket for gjeldende tekst.                |
 | [![Øk innrykk-knappen](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Øk innrykket for gjeldende tekst.                |
-| [![Bakgrunn farge-knappen](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Endre bakgrunnsfargen for gjeldende celle.        |
-| [![Skrift farge-knappen](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Endre fargen for gjeldende tekst.                   |
+| [![Bakgrunnsfarge-knappen](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Endre bakgrunnsfargen for gjeldende celle.        |
+| [![Skriftfarge-knappen](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Endre fargen for gjeldende tekst.                   |
 
 ### <a name="report-designer-toolbar"></a>Verktøylinje for Rapportutforming
 
@@ -213,11 +213,11 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 
 | Knapp                                                                                                                                                                                          | Beskrivelse                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![Rapporten definisjon-knappen](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis rapportdefinisjon som vises på **Vindu**-menyen.                                                                                                            |
-| [![Rad definisjon-knappen](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis raddefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                                    |
-| [![Kolonnen definisjon-knappen](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis kolonnedefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                                 |
-| [![Rapportering av treet definisjon-knappen](./media/treec130389.png)](./media/treec130389.png)             | Vis rapporteringstredefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                         |
-| [![Rapporten visning-knappen](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportvisning, og vis den nyeste versjonen av den genererte rapporten. Denne knappen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport. |
+| [![Rapportdefinisjon-knappen](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis rapportdefinisjon som vises på **Vindu**-menyen.                                                                                                            |
+| [![Raddefinisjon-knappen](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis raddefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                                    |
+| [![Kolonnedefinisjon-knappen](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis kolonnedefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                                 |
+| [![Rapporteringstredefinisjon-knappen](./media/treec130389.png)](./media/treec130389.png)             | Vis rapporteringstredefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                         |
+| [![Rapportvisning-knappen](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportvisning, og vis den nyeste versjonen av den genererte rapporten. Denne knappen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport. |
 | [![Generer rapport-knappen](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generer en rapport fra den aktive rapportdefinisjonen. Denne knappen er tilgjengelig fra en rapportdefinisjon.                                                                      |
 
 
@@ -227,6 +227,6 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 
 [Økonomisk rapportering for Microsoft Dynamics ERP](financial-reporting-intro.md)
 
-[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
+[Generer en finansrapport](\financials\general-ledger\generate-financial-report.md)
 
 

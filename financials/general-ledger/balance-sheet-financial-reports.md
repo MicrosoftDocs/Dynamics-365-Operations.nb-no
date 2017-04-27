@@ -1,6 +1,6 @@
 ---
 title: Finansrapporter for balanse
-description: "Denne artikkelen beskriver standardrapportene for balanseregnskap. Den beskriver også byggeblokker som er knyttet til disse rapportene."
+description: "Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Finansrapporter for balanse
 
-Denne artikkelen beskriver standardrapportene for balanseregnskap. Den beskriver også byggeblokker som er knyttet til disse rapportene. 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene. 
 
 <a name="default-balance-sheet-reports"></a>Standardrapporter for balanse
 -----------------------------
@@ -72,10 +75,12 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finansrapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis finansrapporter](view-financial-reports.md)
 
-[Dynamics økonomisk rapportering blogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

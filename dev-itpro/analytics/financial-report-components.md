@@ -101,7 +101,7 @@ Du kan lagre en eksisterende byggeblokkgruppe med et nytt navn. Du kan deretter 
 
 ### <a name="export-a-building-block-group"></a> Eksportere en byggeblokkgruppe
 
-Du kan eksportere en byggeblokk gruppe eller bestemt rapport byggeblokkene i en byggeblokk-gruppe. Du kan bruke den eksporterte byggeblokk-gruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom byggeblokk grupper eller Dynamics 365 for operasjoner installasjoner. Rapportgeneratoren inkluderer de refererte skriftstilene og dimensjonssettene sammen med gruppen byggeblokk.
+Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom byggeblokkgrupper eller Dynamics 365 for Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
 2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som skal eksporteres, og deretter klikker du **Eksporter**.
 3.  I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:

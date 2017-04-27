@@ -1,6 +1,6 @@
 ---
 title: "Vise og evaluere resultatene i et spørreskjema"
-description: "Dette emnet forklarer hvordan du kan vise og evaluere resultatene for spørreskjemaer som respondentene har fullført."
+description: "Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Vise og evaluere resultatene i et spørreskjema
 
-Dette emnet forklarer hvordan du kan vise og evaluere resultatene for spørreskjemaer som respondentene har fullført. 
+Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
 Etter at respondentene har fylt ut et spørreskjema, kan du vise og evaluere spørreskjemaresultatene på følgende måter:
 

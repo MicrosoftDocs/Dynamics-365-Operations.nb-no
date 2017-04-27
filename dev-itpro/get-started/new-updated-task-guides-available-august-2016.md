@@ -1,6 +1,6 @@
 ---
-title: "Nye eller oppdaterte oppgaven støttelinjer (August 2016)"
-description: "Dette emnet viser de nye eller oppdaterte oppgaven støttelinjene som ble gitt til Microsoft (August 2016 - alle språk) APQC Unified bibliotek for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang."
+title: Nye eller oppdaterte oppgaveveiledninger (august 2016)
+description: "Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Nye eller oppdaterte oppgaven støttelinjer (August 2016)
+# <a name="new-or-updated-task-guides-august-2016"></a>Nye eller oppdaterte oppgaveveiledninger (august 2016)
 
-Dette emnet viser de nye eller oppdaterte oppgaven støttelinjene som ble gitt til Microsoft (August 2016 - alle språk) APQC Unified bibliotek for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang.
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Aktivitet leder i den (August 2016 - alle språk) APQC Unified bibliotek for Microsoft Dynamics AX
+
+Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang.
+
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Oppgaveveiledninger i (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 ---------------------------------------------------------------------------------------------------
 
-Den (August 2016 - alle språk) APQC Unified biblioteket inneholder på oppgaven GUIDene som er ment å brukes for å få hjelp med Microsoft Dynamics AX Plattformoppdatering 2 (August 2016), Dynamics AX kan oppdatere 2016 program, og slipp av Microsoft Dynamics AX-februar 2016. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nye eller endrede](whats-new-changed.md). Lokaliserte versjoner av oppgaven støttelinjene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et bibliotek for aktivitet guide, kan du se [komme i gang med hjelp](help-overview.md).
+(August 2016 – alle språk) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Microsoft Dynamics AX platformoppdatering 2 (august 2016), Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nytt eller endret](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
 ### <a name="data-access"></a>Datatilgang
 
@@ -97,10 +100,12 @@ Den (August 2016 - alle språk) APQC Unified biblioteket inneholder på oppgaven
 <a name="see-also"></a>Se også
 --------
 
-[Ny oppgave leder (februar 2016)](new-task-guides-available-february-2016.md)
+[Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
 
-[Nye eller oppdaterte oppgaven leder (mai 2016)](new-updated-task-guides-available-may-2016.md)
+[Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nye eller oppdaterte oppgaven leder (November 2016)](new-task-guides-november-2016.md)
+[Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

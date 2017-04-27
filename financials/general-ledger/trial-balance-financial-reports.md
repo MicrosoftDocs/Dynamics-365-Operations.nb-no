@@ -1,6 +1,6 @@
 ---
 title: "Finansrapporter for råbalanse"
-description: "Denne artikkelen beskriver standardrapportene for råbalanse. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav."
+description: "Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Finansrapporter for råbalanse
 
-Denne artikkelen beskriver standardrapportene for råbalanse. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav. 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav. 
 
 <a name="default-trial-balance-reports"></a>Standardrapporter for råbalanse
 -----------------------------
@@ -51,7 +54,7 @@ Finansrapportene for råbalanse bruker byggeblokkene nedenfor.
 
 ### <a name="row-definition"></a>Raddefinisjon
 
-Raddefinisjonen, råbalanse – standard, inneholder én rad som trekker i alle kontoene for hoveddokumentet. Derfor kan alle generere rapporten uten å gjøre endringer. Når du viser rapporten, kan du drille ned i hver enkelt rad for å vise detaljer om hver konto. Du kan endre raddefinisjonen slik at den inneholder flere detaljer. Hvis du vil endre raddefinisjonen Råbalanse – standard slik at den inneholder rader for alle kontoer, kan du følge fremgangsmåten nedenfor.
+Raddefinisjonen, råbalanse – standard, inneholder én rad som trekker inn alle hovedkontiene. Derfor kan alle generere rapporten uten å gjøre endringer. Når du viser rapporten, kan du drille ned i hver enkelt rad for å vise detaljer om hver konto. Du kan endre raddefinisjonen slik at den inneholder flere detaljer. Hvis du vil endre raddefinisjonen Råbalanse – standard slik at den inneholder rader for alle kontoer, kan du følge fremgangsmåten nedenfor.
 
 1.  Klikk **Rediger**, og klikk deretter **Sett inn rader fra dimensjoner**. Kommandoen **Sett inn rader fra dimensjoner** lar deg velge dimensjonene som du vil ha i raddefinisjonen. Du skal bruke **Hovedkonto** for denne raddefinisjonen.
 2.  Kontroller at **Hovedkonto** inneholder bare &-tegn, og klikk deretter **OK**.
@@ -100,10 +103,12 @@ Hver rapport for råbalanse bruker en annen kolonnedefinisjon. Disse kolonnedefi
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finansrapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis finansrapporter](view-financial-reports.md)
 
-[Dynamics økonomisk rapportering blogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

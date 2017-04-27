@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 
 <a name="overview"></a>Oversikt
 --------
 
-Mva-rammeverket støtter mange typer indirekte Avgiftstyper, blant annet merverdiavgift, merverdiavgift (mva), mva for varer og tjenester (GST), enhetsbaserte gebyrer og withholding tax. Disse mva beregnes og dokumentert ved transaksjoner for innkjøp og salg. Med jevne mellomrom, må de rapporteres og betales til skattemyndighetene. 
+Merverdiavgiftsrammeverket støtter mange typer indirekte avgifter, blant annet skatter, merverdiavgift (mva), mva for varer og tjenester (GST), enhetsbaserte gebyrer og kildeskatt. Disse avgiftene beregnes og dokumenteres under transaksjoner for innkjøp og salg. De må regelmessig rapporteres og betales til skattemyndighetene. 
 
 Diagrammet nedenfor viser enhetene for mva-oppsett og hvordan de er relatert.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Mva-oversikt](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-For hver mva-et firma må ta hensyn til, må du definere en mva-kode. En mva-kode inneholder mva-satser og beregningsreglene for merverdiavgiften. 
+For hver type merverdiavgift som et firma må ta hensyn til, må en mva-kode defineres. En mva-kode inneholder mva-satser og beregningsreglene for merverdiavgiften. 
 
 Hver mva-kode må være koblet til en mva-utligningsperiode. Mva-utligningsperioder definerer intervallene for rapportering og betaling av merverdiavgifter til skattemyndighetene. Hver mva-utligningsperiode må tilordnes en skattemyndighet. En skattemyndighet representerer enheten som merverdiavgift rapporteres og betales til. Den definerer også oppsettet for mva-rapporten. Skattemyndighetene kan være relatert til leverandørkontoer. 
 
@@ -69,26 +72,28 @@ På hver transaksjon (salg/kjøp-dokumentlinjer, journaler og så videre), må d
 For hver transaksjon kan du slå opp den beregnede merverdiavgiften ved å åpne **Mva-transaksjon**-siden. Du kan slå opp merverdiavgiften for en dokumentlinje eller for hele dokumentet. Du kan justere den beregnede merverdiavgiften for bestemte dokumenter (for eksempel leverandørfaktura og økonomijournaler) hvis det opprinnelige dokumentet viser beløp som er avvikende.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mva-utligning og -rapportering
-Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Microsoft Dynamics-365 for operasjoner gir funksjonalitet som lar deg utligne mva-konti for intervallet og saldoer til mva-oppgjørskontoen, som angitt i finansposteringsgrupper-forskyvning. Du får tilgang til denne funksjonaliteten på den **utligne og postere merverdiavgift** siden. Du må angi mva-utligningsperioden som skal utlignes merverdiavgift for. 
+Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Microsoft Dynamics 365 for Operations inneholder funksjonalitet som lar deg utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
 
 Etter at merverdiavgiften er betalt skal saldoen på mva-oppgjørskontoen balanseres mot bankkontoen. Hvis skattemyndigheten som er angitt for utligningsperioden for merverdiavgift, er knyttet til en leverandørkonto, posteres mva-saldoen som en åpen leverandørfaktura og kan inkluderes i det vanlige betalingsforslaget.
 
 ## <a name="conditional-sales-tax"></a>Betinget mva.
-Betinget merverdiavgift er en merverdiavgift som betales proporsjonalt til det faktiske beløpet som betales på en faktura. Standard mva beregnes derimot på faktureringstidspunktet. Betinget merverdiavgift må betales til skattemyndighetene når betalingen er postert, ikke når fakturaen er bokført. Når fakturaen er bokført, må transaksjonen rapporteres i sales tax book-rapporten. Imidlertid må transaksjonen utelates fra rapporten mva-betaling. 
+Betinget merverdiavgift er en merverdiavgift som betales proporsjonalt til det faktiske beløpet som betales på en faktura. Standard merverdiavgift beregnes derimot på faktureringstidspunktet. Betinget merverdiavgift må betales til skattemyndighetene ved betalingsposteringen, og ikke ved fakturapostering. Når fakturaen posteres, må transaksjonen rapporteres i sales tax book-rapporten. Transaksjonen må imidlertid utelates fra mva-betalingsrapporten. 
 
-Hvis du merker av for betinget mva i parameterskjemaet for økonomimodulen, kan ingen merverdiavgift trekkes fra før du har betalt fakturaen. Dette er et juridisk krav i noen land/regioner.
+Hvis du merker av for Betinget mva. i parameterskjemaet for økonomimodulen, kan ingen merverdiavgift trekkes fra før du har betalt fakturaen. Dette er et lovefestet krav i noen land/områder.
 
 > [!NOTE]
-> Når du merker av for betinget mva, må du definere mva-koder og mva-grupper, og du kan også opprette finansposteringsgrupper, til å støtte funksjonaliteten. |
+> Når du merker av for Betinget mva., må du definere mva-koder og mva-grupper og opprette finansposteringsgrupper for å støtte funksjonen. |
 
 ###  <a name="example"></a>Eksempel
 
-Du utligner merverdiavgift hver måned. I juni 15 oppretter du en kundefaktura 10 000 pluss merverdiavgift.
--   Merverdiavgiften er 25 prosent eller 2 500.
--   Fakturabetalingen forfaller 30 juli.
+Du utligner merverdiavgift hver måned. Den 15. juni oppretter du en kundefaktura på EUR 10 000 pluss mva.
+-   Mva er 25 prosent eller 2 500.
+-   Fakturabetalingen forfaller 30. juli.
 
-Du vanligvis måtte utligne og betale 2 500 til skattemyndighetene når fakturaen er postert i juni, selv om du ikke har mottatt betalingen fra kunden. 
+Vanligvis ville du måtte utligne og betale 2 500 til skattemyndighetene når fakturaen er postert i juni, selv om du ikke har mottatt betalingen fra kunden. 
 
-Imidlertid Hvis du bruker en betinget mva, utligner du med skattemyndighetene når du mottar betaling fra kunden på 30 juli.
+Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene når du mottar betaling fra kunden den 30. juli.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Oversikt over fakturaer for leverandør"
+title: "Oversikt over leverandørfakturaer"
 description: "Denne artikkelen inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester."
 author: twheeloc
 manager: AnnBe
@@ -25,20 +25,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-invoices-overview"></a>Oversikt over fakturaer for leverandør
+# <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester. 
 
 <a name="vendor-invoices"></a>Leverandørfakturaer
 ---------------
 
-En leverandørfaktura fra en bestilling er en faktura som lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør. Leverandørfakturaen inneholder et hode, og én eller flere linjer for varer eller tjenester. En leverandørfaktura fullfører syklus fra bestilling til produktet mottak til leverandørfakturaen. 
+En leverandørfaktura fra en bestilling er en faktura som lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør. Leverandørfakturaen inneholder et hode og én eller flere linjer for varer eller tjenester. En leverandørfaktura fullfører syklusen fra bestilling til produktkvittering og leverandørfaktura. 
 
 Selv om noen leverandørfakturaer er koblet til en bestilling, kan også leverandørfakturaer inneholde linjer som ikke samsvarer med bestillingslinjer. Du kan også opprette leverandørfakturaer som ikke er knyttet til noen bestilling. Disse leverandørfakturaene kan representere pågående tjenester, for eksempel en strømregning, og du trenger ikke å referere til en bestilling når du legger dem til. 
 
 Det finnes flere måter å angi en leverandørfaktura:
 
--   Ankomstregistrering for leverandør kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, slik at du kan avsette utgiften. Du kan velge de fakturaene ved hjelp av fakturagodkjenningsjournalen leverandør, og Bokfør dem leverandørsaldoen å reversere avsetningen.
+-   I leverandørfakturaregisteret kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, slik at du kan avsette utgiften. Ved hjelp av journalen for godkjenning av leverandørfaktura kan du velge disse fakturaene og postere dem til leverandørsaldoen for å reversere avsetningen.
 -   I leverandørfakturajournalen kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, i én operasjon.
 -   Leverandørfakturapuljen i kombinasjon med leverandørfakturaregisteret lar deg raskt skrive inn fakturaer for å avsette utgiften. Du kan åpne de tilknyttede bestillingene senere for å postere fakturaen mot utgiftskontoen.
 -   På sidene **Åpne leverandørfakturaer** og **Ventende leverandørfakturaer** kan du opprette leverandørfakturaer fra bekreftede bestillinger.
@@ -57,7 +60,7 @@ Når du åpner en leverandørfaktura fra en tilknyttet bestilling, opprettes fak
 Hvis den juridiske enheten bruker fakturakontroll, kan du vise resultatene av antallssamsvaret i **Samsvar i antall i produktkvittering**-kolonnen. Du kan også bruke **Samsvarende detaljer**-menykommando på **Gjennomgang**-fanen for å vise resultatene av antallssamsvaret.
 
 ## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a>Legger til en linje som ikke var på bestillingen.
-Du kan legge til en ny linje som ikke var på bestilling til leverandørfakturaen. Du må velge et tall eller innkjøp for varekategorien. Du kan deretter legge til antall, priser og beløp på linjen. Linjen inkluderes bare i kontrollpolicyer for fakturatotaler.
+Du kan legge til en ny linje som ikke var på bestillingen, i leverandørfakturaen. Du må velge et varenummer eller en innkjøpskategori. Du kan deretter legge til antall, priser og beløp på linjen. Linjen inkluderes bare i kontrollpolicyer for fakturatotaler.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Sende en leverandørfaktura til vurdering
 Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du klikker kontrollen. I stedet for **Poster**-knappen vises en **Send**-knapp som du kan bruke til å sende leverandørfakturaen gjennom vurderingsprosessen.
@@ -74,6 +77,8 @@ Dette alternativet forutsetter at minst én produktkvittering er postert for bes
 ## <a name="working-with-multiple-invoices"></a>Arbeide med flere fakturaer
 
 Du kan arbeide med flere fakturaer samtidig og postere alle samtidig. Hvis du må opprette flere fakturaer, bruker du **Ventende leverandørfakturaer**-siden. Hvis du må postere og skrive ut flere leverandørfakturaer, bruker du fakturagodkjenningsjournalsiden. Hvis du bruker fakturagodkjenningsjournalen, må minst én produktkvittering posteres for bestillingen, og en faktura for bestillingen må posteres i en ankomstregistrering. Den økonomiske informasjonen for fakturaen kommer fra fakturaen som ble postert i registret.
+
+
 
 
 

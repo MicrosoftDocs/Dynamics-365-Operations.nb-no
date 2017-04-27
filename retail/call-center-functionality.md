@@ -1,6 +1,6 @@
 ---
 title: Telefonsenterfunksjonalitet
-description: Denne artikkelen gir en oversikt av call center salg i Microsoft Dynamics 365 for operasjoner.
+description: Denne artikkelen gir en oversikt over telefonsenterspesifikke salgsfunksjoner i Microsoft Dynamics 365 for Operations.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="call-center-functionality"></a>Telefonsenterfunksjonalitet
 
-Denne artikkelen gir en oversikt av call center salg i Microsoft Dynamics 365 for operasjoner.
+[!include[banner](includes/banner.md)]
 
-Detaljhandel og handel i Microsoft Dynamics AX støtter telefonsentre som en kanal for detaljhandel. I et telefonsenter tar arbeidere imot ordrer fra kunder over telefon og oppretter salgsordrer. Telefonsenterfunksjonaliteten omfatter funksjoner som er utviklet for å gjøre det enklere å ta imot telefonordrer og håndtere kundeservice under oppfyllelsen av ordren. Hvis du for eksempel call center arbeidere kan angi betalingsinformasjon direkte i salgsordren, og kan vise en detaljert oversikt over kostnader og betalinger før de sender inn bestillingen. Arbeidere har også alternativer for styring av priser, og de har tilgang til forskjellige data om kunder, produkter og priser fra siden **Salgsordre**. Telefonsentre har også forbedret funksjonalitet for sporing av kundehistorikk og ordrestatus. Hvert telefonsenter kan ha sine egne brukere, betalingsmåter, prisgrupper, finansdimensjoner og leveringsmåter. Du kan konfigurere disse alternativene når du oppretter telefonsenteret. Du kan også bruke siden **Telefonsenter** til å aktivere eller deaktivere følgende funksjonsgrupper som er unike for telefonsentre:
+
+Denne artikkelen gir en oversikt over telefonsenterspesifikke salgsfunksjoner i Microsoft Dynamics 365 for Operations.
+
+Detaljhandel og handel i Microsoft Dynamics AX støtter telefonsentre som en kanal for detaljhandel. I et telefonsenter tar arbeidere imot ordrer fra kunder over telefon og oppretter salgsordrer. Telefonsenterfunksjonaliteten omfatter funksjoner som er utviklet for å gjøre det enklere å ta imot telefonordrer og håndtere kundeservice under oppfyllelsen av ordren. Telefonsenterarbeidere kan for eksempel angi betalingsinformasjon direkte i salgsordren, og kan vise en detaljert oversikt over gebyrer og betalinger før de sender ordren. Arbeidere har også alternativer for styring av priser, og de har tilgang til forskjellige data om kunder, produkter og priser fra siden **Salgsordre**. Telefonsentre har også forbedret funksjonalitet for sporing av kundehistorikk og ordrestatus. Hvert telefonsenter kan ha sine egne brukere, betalingsmåter, prisgrupper, finansdimensjoner og leveringsmåter. Du kan konfigurere disse alternativene når du oppretter telefonsenteret. Du kan også bruke siden **Telefonsenter** til å aktivere eller deaktivere følgende funksjonsgrupper som er unike for telefonsentre:
 
 -   **Ordrefullføring** – Denne gruppen inneholder funksjoner som er relatert til betalinger og ordrefullføring på siden **Salgsordre**.
 -   **Styrt salg** – Denne gruppen inneholder funksjoner som er knyttet til kildekoder, skript og katalogforespørsler.
@@ -44,6 +47,8 @@ Når du aktiverer disse funksjonene i innstillingene for telefonsenter, blir de 
 -   Salgsassistenter kan legge til en forhandlers kuponger i ordren.
 -   Salgassistenter kan selge kontinuitetsprogrammer.
 -   Ordrer kan settes på vent manuelt eller automatisk, for å angi at andre undersøkelser kreves før ordren kan behandles.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Planlegge din Kontoplan
+title: Planlegge kontoplanen
 description: "Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Planlegge din Kontoplan
+# <a name="plan-your-chart-of-accounts"></a>Planlegge kontoplanen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
 
@@ -34,7 +37,7 @@ Hvis du vil spore og vedlikeholde økonomisk informasjon i en organisasjon, kan 
 
 Kontoplanen er en strukturert liste over den juridiske enhetens finanskontoer. Listen brukes til å utarbeide økonomiske rapporter til myndigheter og eiere. Kontoene grupperes i kontotyper og aggregeres deretter ytterligere i større, overordnede kategorier. På det øverste nivået grupperes kontoene som henholdsvis inntekter og kostnader (driftskontoer) og aktiva og gjeld (balansekontoer). 
 
-En kontoplan kan deles og brukes av alle juridiske enheter i en organisasjon. Kontoplanen som brukes av en juridisk enhet som er definert på den **Finans** siden. 
+En kontoplan kan deles og brukes av alle juridiske enheter i en organisasjon. Kontoplanen som brukes av en juridisk enhet, er definert på **Finans**-siden. 
 
 Her er noen av faktorene du må vurdere når du planlegger strukturen til kontoplanen for organisasjonen:
 
@@ -48,10 +51,12 @@ Det er lurt å koble hovedkontoene til hovedkontokategorier, slik at du kan dra 
 
 Bruk siden **Konfigurer kontostrukturer** til å opprette kontostrukturer. Kontostrukturer brukes til å definere gyldige kombinasjoner. Kombinasjonene, sammen med hovedkontoer, utgjør en kontoplan. 
 
-**Legal entity overrides** 
+**Overstyringer for juridisk enhet** 
 
-Ikke alle hovedkontoer er gyldige for alle juridiske enheter, og noen kan bare være relevant for en bestemt tidsperiode. I denne situasjonen kan delen Overstyringer for juridisk enhet brukes til å identifisere hvilke firmaer hovedkontoen skal suspenderes for, hvem som er eier, og tidsperioden dimensjonen er aktiv. Overstyringene på det delte nivået kan ikke være mer begrensende enn overstyringer på nivået for juridisk enhet.
+Ikke alle hovedkontoer er gyldige for alle juridiske enheter, og noen er kanskje bare relevante i en bestemt tidsperiode. I denne situasjonen kan delen Overstyringer for juridisk enhet brukes til å identifisere hvilke firmaer hovedkontoen skal suspenderes for, hvem som er eier, og tidsperioden dimensjonen er aktiv. Overstyringene på det delte nivået kan ikke være mer begrensende enn overstyringer på nivået for juridisk enhet.
 
-Hvis du vil ha mer informasjon, se [finansdimensjoner](financial-dimensions.md).
+Hvis du vil ha mer informasjon, kan du se [Finansdimensjoner](financial-dimensions.md).
+
+
 
 

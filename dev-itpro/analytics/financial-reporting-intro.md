@@ -85,6 +85,6 @@ Hvis du vil ha mer informasjon, kan du se avsnittet "Interaktive komponenter og 
 
 #<a name="see-also"></a>Se også
 
-[Generere en finansrapport] ((dynamics365\operations\financials\general-ledger\generate-økonomisk-rapport)
+[Generere en finansrapport] ((dynamics365\operations\finans\økonomi-modul\generere-økonomisk-rapport)
 
 

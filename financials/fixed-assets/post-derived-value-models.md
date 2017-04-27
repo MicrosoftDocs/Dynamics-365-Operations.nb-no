@@ -1,5 +1,5 @@
 ---
-title: "Postere med avledede bøker"
+title: "Postere med avledede tablåer"
 description: "Denne artikkelen beskriver hvordan du bruker avledede tablåer."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Postere med avledede bøker
+# <a name="post-with-derived-books"></a>Postere med avledede tablåer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du bruker avledede tablåer.
 
@@ -49,11 +52,13 @@ Informasjonen nedenfor beskriver hvordan du kan angi avskrivningsmetoder med fun
 
 Tablåene kan deretter knyttes til bestemte anleggsmidler. 
 
-Når en anskaffelse posteres for et anleggsmiddel med adresseboken VM 1, posteres anskaffelsen ikke bare på VM 1, men også på den avledede boken VM 2. Statusen for begge bøker for anleggsmiddel oppdateres til åpen.
+Når en anskaffelse posteres for et anleggsmiddel med tablået VM 1, posteres anleggsmiddelet ikke bare på VM 1, men også på det avledede tablået VM 2. Statusen for begge anleggsmiddeltablåer oppdateres til Åpen.
 
 > [!NOTE]                                                                                                         
 > Hvis du ikke bruker avledede tablåer, må du postere anskaffelsen av anleggsmiddelet både for tablå VM 1 og tablå VM 2.
 
-Hvis du vil ha mer informasjon, se [avledet bøker](derived-books.md)
+Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md)
+
+
 
 

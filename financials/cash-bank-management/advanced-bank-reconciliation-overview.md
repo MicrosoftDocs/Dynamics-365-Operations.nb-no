@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Oversikt over avansert bankavstemming
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver flyten for den avanserte bankavstemmingsprosessen. Funksjonen for den avanserte bankavstemmingen lar deg importere bankkontoutdrag som kan avstemmes automatisk fra banktransaksjoner.
 
 Funksjonen for avanserte bankavstemming lar deg importere bankkontoutdrag. Det importerte bankkontoutdraget kan deretter avstemmes automatisk fra banktransaksjoner. Her er noen av trinnene i flyten for den avanserte bankavstemmingen.
@@ -38,13 +41,15 @@ Funksjonen for avanserte bankavstemming lar deg importere bankkontoutdrag. Det i
     -   Funksjonen kan utvides til et hvilken som helst format.
 
 2.  Definer en nummerserie som skal brukes for avansert bankavstemming, og definer samsvarsregler for bankavstemmingen.
-    -   En søkeregel for avstemming er et sett med kriterier som brukes til å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for operasjoner bank transaksjonslinjer i løpet av avstemmingsprosessen. Avhengig av firmaets praksis, kan du sette opp mer enn én samsvarende regelen til å automatisere og optimalisere avstemmingsprosessen.
+    -   En samsvarsregel for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for Operations-banktransaksjonslinjer under avstemmingsprosessen. Avhengig av firmaets praksis, kan du definere én eller flere samsvarsregler for å automatisere og optimalisere avstemmingsprosessen.
 
-3.  Avstemme bankkontoutdrag med Dynamics 365 for operasjoner banktransaksjoner.
+3.  Avstem bankkontoutdrag med banktransaksjoner i Dynamics 365 for Operations.
     -   Utfør automatiske samsvaring og oppretting av avstemmingsjournaler.
-    -   Ser du bankkontoutdrag og Dynamics 365 for operasjoner banktransaksjoner side ved side.
-    -   Postere automatisk Dynamics 365 for operasjoner banktransaksjoner hvis de vises på et bankkontoutdrag, men vises ikke i Dynamics 365 for operasjoner.
+    -   Vis bankkontoutdrag og banktransaksjoner i Dynamics 365 for Operations ved siden av hverandre.
+    -   Bokfør banktransaksjoner i Dynamics 365 for Operations automatisk hvis de vises i et bankkontoutdrag, men ikke vises i Dynamics 365 for Operations.
     -   Generer et avstemmingsutdrag.
+
+
 
 
 

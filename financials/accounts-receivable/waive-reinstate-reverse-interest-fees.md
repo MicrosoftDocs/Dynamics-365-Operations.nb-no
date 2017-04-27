@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Frafalle, gjenoppta eller reversere rentegebyrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan frafall, gjenopptakelse og snudd avregning for renter og gebyrer.
 
 Du kan bruke knappene i kategorien **Innkrevning** på listesiden **Alle kunder** til å frafalle, tilbakeføre eller gjenoppta tillegg:
@@ -43,7 +46,7 @@ Alle disse handlingene endrer en rentenota. En rentenota er et forretningsdokume
 | Tilbakeføre hele rentenotaer. – eller – Tilbakeføre valgte rentetransaksjoner som er en del av rentenotaer. **Obs!** Du kan ikke tilbakeføre et gebyr. Du kan imidlertid tilbakeføre en hel rentenota som inneholder et gebyr. | Tilleggene forfaller ikke lenger fra kunden. Tilleggene forfaller imidlertid igjen hvis du beregner renten på nytt. | Prosessen er den samme som prosessen for frafalte rentenotaer eller valgte rentetransaksjoner. En kreditnota, eller justeringsfaktura, opprettes for kunden. Denne kreditnotaen brukes til å utilgne rentenotaen automatisk. Du kan bruke en separat prosess til å beregne rente på nytt og opprette en ny rentenota.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Du kan også bruke en separat prosess for å skrive av gjeldssanering. Denne prosessen markerer alle kundetransaksjoner for utligning i stedet for å frafalle bare tilleggene som er del av rentenotaer.
+> Du kan også bruke en separat prosess for å avskrive misligholdt gjeld. Denne prosessen markerer alle kundetransaksjoner for utligning i stedet for å frafalle bare tilleggene som er del av rentenotaer.
 
 ## <a name="adjust-interest-for-invoices"></a>Justere rente for fakturaer
 I tillegg til å justere rentenotaer kan du fjerne rentetillegg på fakturaer ved hjelp av en av prosessene nedenfor. Begge prosessene foretar også justeringer av de relaterte rentenotaene.
@@ -89,5 +92,7 @@ Du kan tilbakeføre rentetransaksjoner ved hjelp av **Transaksjonsrenter**-knapp
 Du kan vise den detaljerte historikken for justeringer som er foretatt for rentenotaer, for eksempel brukeren som la inn justeringen, justeringstypen, beløpet og når justeringen ble lagt inn. Du ønsker for eksempel kanskje å vise de tidligere justeringene som er lagt inn for en rentenota, før du oppretter en ny rentenota. 
 
 Du kan tilbakeføre rentetransaksjoner ved hjelp av **Historikk**-knappen i kategorien **Innkrevning** på siden **Kunde**.
+
+
 
 

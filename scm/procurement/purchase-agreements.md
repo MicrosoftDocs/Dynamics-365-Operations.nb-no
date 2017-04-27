@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter. 
 
 Kjøpsavtaler kan gjelde et bestemt antall av et produkt, et bestemt valutabeløp for et produkt eller et bestemt valutabeløp for varene i en innkjøpskategori. Prisene og rabattene i kjøpsavtalen overstyrer prisene og rabattene som er angitt i en eventuell forretningsavtale.  
@@ -70,7 +73,7 @@ Oppfyllelsesantall og -beløp vises i fanen **Oppfyllelse** i hurtigfanen **Linj
 Du kan få tilgang til PO-linjene og fakturalinjene som bidrar til oppfyllelsesberegningen, ved å velge **Relatert informasjon**-handlingen på linjene eller i overskriften til en kjøpsavtale.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Bekreftelser og versjonshistorikk for kjøpsavtaler
-Når du bekrefter en kjøpsavtale, lagres den gjeldende versjonen av kjøpsavtalen i en historikktabell. Hvis du endrer kjøpsavtalen, kan du bekrefte den på nytt hvis du vil lagre en annen versjon av kjøpsavtalen i historikken. Hvis du ikke bekrefter en kjøpsavtale, kan du fortsatt bruke den til å opprette POs. Imidlertid er ikke logginformasjon for kjøpsavtalen lagret. Du kan forhåndsvise eller skrive ut alle versjoner av avtalen. Deretter kan du dele endringene med leverandøren for å få dem godkjent.
+Når du bekrefter en kjøpsavtale, lagres den gjeldende versjonen av kjøpsavtalen i en historikktabell. Hvis du endrer kjøpsavtalen, kan du bekrefte den på nytt hvis du vil lagre en annen versjon av kjøpsavtalen i historikken. Hvis du ikke bekrefter en kjøpsavtale, kan du fortsatt bruke den til å opprette bestillinger. Historikkinformasjon for kjøpsavtalen lagres imidlertid ikke. Du kan forhåndsvise eller skrive ut alle versjoner av avtalen. Deretter kan du dele endringene med leverandøren for å få dem godkjent.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Bruke kjøpsavtaler i bestillingsprosessen
 Når du oppretter en bestilling, kan du bruke en kjøpsavtale på den. Informasjon fra vilkårene for avtalen, som betalingsbetingelser, leveringsbetingelser og leveringsadresse, kopieres deretter til overskriften til bestillingen. Hvis PO-en inneholder én eller flere linjer for produkter eller kategorier som er dekket av avtalen, brukes prisene og rabattene fra kjøpsavtalen for disse linjene. Beløpet eller antallet på ordrelinjen bidrar til oppfyllelsen av forpliktelsen i kjøpsavtalen. Den samme bestillingen kan inneholde både linjer som ikke knyttet til en kjøpsavtale, og linjer som har en forpliktelse for en kjøpsavtale.  
@@ -91,8 +94,10 @@ Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøp
 <a name="see-also"></a>Se også
 --------
 
-[Opprette en kjøpsavtale (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Opprette en ny kjøpsavtale (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Opprett en frigivelsesordre for innkjøp fra en kjøpsavtale (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

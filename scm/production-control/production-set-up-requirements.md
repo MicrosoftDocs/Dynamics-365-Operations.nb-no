@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Krav til produksjonsoppsett
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om krav til oppsett før du kan arbeide med produksjonskontroll. 
 
 Produksjonskontroll er integrert med funksjonene i andre moduler. Denne egenskapen gjør det mulig å endre produksjonsordrer samtidig som de oppdateres automatisk i alle andre tilknyttede prosesser og beregninger i systemet. Følgende oppsettprosesser er ført opp i rekkefølgen de bør fullføres i.
@@ -76,6 +79,8 @@ Hvis du arbeider med ruter, må du definere operasjoner for hver produksjonsrute
 1.  **Produksjonsgrupper** – Konfigurer produksjonsgrupper for å fastsette forhold mellom produksjonsordren og finanskontoene. Finanskontoene brukes til å postere eller gruppere ordrene for rapportering.
 2.  **Produksjonspuljer** – Opprett produksjonspuljer for å gruppere produksjonsordrer slik at du kan behandle produksjonsordrer det haster med, eller for å slette og postere grupper av ordrer.
 3.  **Egenskaper** – Definer egenskaper for å opprette spesielle attributter som du kan tilordne til ressursene for å kontrollere rekkefølgen på produksjoner. Disse attributtene er knyttet til driftstidsmalen.
+
+
 
 
 

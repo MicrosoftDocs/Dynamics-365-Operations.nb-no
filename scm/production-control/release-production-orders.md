@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="release-production-orders"></a>Frigi produksjonsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 En frigitt produksjonsordre er en ordre som har blitt autorisert for produksjon. Begrepet frigitt brukes til å beskrive en tilstand i livssyklusen til produksjonsordren, der produksjonsordren er tilgjengelig for utføring på produksjonsgulvet og for lagerprosesser. 
 
 <a name="characteristics-of-the-released-state"></a>Egenskapene for tilstanden Frigitt
@@ -42,7 +45,7 @@ En frigitt produksjonsordre er en ordre som har blitt autorisert for produksjon.
 -   For materialer som er fysisk reservert, genereres lagerarbeid for å plukke materialer til produksjonsordren.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Frigi jobber til shop floor
-Når en produksjonsordre er frigitt, blir produksjonsjobber som er knyttet til ordren, synlige og klar for registrering. Operatørene kan utføre jobbregistreringer, for eksempel Start, Stopp og er fullført, enten de **jobb kort terminal** siden eller **jobb card-enheten** siden. Registrert tid og antall overføres automatisk fra registreringen sidene til produksjonsjournaler å holde rede på forbruk av tid og antall.
+Når en produksjonsordre er frigitt, blir produksjonsjobber som er knyttet til ordren, synlige og klar for registrering. Operatørene kan utføre jobbregistreringer, for eksempel Start, Stopp og Fullføring, på siden **Jobbkortterminal** eller **Jobbkortenhet**. Registrert tid og antall overføres automatisk fra registreringsidene til produksjonsjournaler for å holde oversikt over forbruk av tid og antall.
 
 ## <a name="route-cards"></a>Rutekort
 Et rutekort gir en oversikt over informasjon som kommer fra rute- og operasjonsoppsett og fra operasjons- og jobbplanleggingsmetoder.
@@ -54,11 +57,13 @@ En rutejobb gir detaljert informasjon om hver jobb i en operasjon, og inkluderer
 Et jobbkort viser de individuelle jobbnumrene til en bestemt operasjon. Én jobb vises på hver side. Jobbene på et jobbkort, og estimert tid, kommer fra informasjonen om ruten og operasjonsoppsettet. Du kan åpne siden **Produksjonsjournallinjer**, **jobbkort** fra et jobbkort. De som driver operasjonsressurser, kan gi tilbakemelding om produksjonsprosessen. Det er felt der du kan angi forbruksstatistikk og informasjon som antall feil.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Lagerarbeid for råvareplukking
-Arbeid for råvareplukking genereres under frigivelsen. Arbeid genereres bare for materialmengden som er fysisk reservert for produksjonsordren før ordren ble utgitt. Følgende oppsett er nødvendig for å generere arbeid lager for plukking av råvarer:
+Arbeid for råvareplukking genereres under frigivelsen. Arbeid genereres bare for materialmengden som er fysisk reservert for produksjonsordren før ordren ble frigitt. Følgende oppsett er nødvendig for å generere lagerarbeid for plukking av råvarer:
 
 -   Et lokasjonsdirektiv for råvareplukking som bestemmer lagerlokasjonen materialene skal plukkes fra
 -   En bølgemal for råmaterialer, der policyer konfigureres for utførelse av lagerarbeid
 -   Et produksjonsinnleveringssted som bestemmer hvor materialene plasseres
+
+
 
 
 

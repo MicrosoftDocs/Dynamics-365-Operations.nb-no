@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="nonconformance-management"></a>Behandling av avvik
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver det grunnleggende oppsettet som kreves for å bruke avvik. Ekstra oppsett er nødvendig hvis du vil bruke kvalitetsordrer. 
 
 Følg disse trinnene for å aktivere behandling av avvik:
@@ -34,7 +37,7 @@ Følg disse trinnene for å aktivere behandling av avvik:
 1.  Definer lagerstyringsparameterne som er knyttet til avvik:
     -   Sett alternativet **Bruk kvalitetsstyring** til **Ja**.
     -   I **Timepris**-feltet angir du en timepris for arbeid i lokal valuta. Timeprisen brukes til å beregne kostnader for operasjoner som er knyttet til et avvik. Timeprisen og de beregnede kostnadene gir referanseinformasjon for et avvik. De samhandler ikke med annen funksjonalitet.
-    -   Bruk av **kvalitetsstyring** kategorien på den **rapportoppsett** siden for å definere hvilken type dokument skal skrives ut. Du kan skrive ut en avviksrapport, en avviksbrikke eller et rettelsesrapporten. Du kan definere flere poster for å skrive ut forskjellige dokumenttyper i en rapport, eller for å skrive ut interne og eksterne merknader. Det kan være nyttig å bruke **Dokumenttype**-siden til å definere en unik dokumenttype for avvik, og en unik dokumenttype for rettelser. La oss for eksempel si at du vil angi merknader om et avvik ved hjelp av den unike dokumenttypen for avvik. I dette tilfellet kan du identifisere den unike dokumenttypen i rapportalternativene.
+    -   Bruk **Kvalitetsstyring**-kategorien på siden **Rapportoppsett** til å definere hvilken type dokument som skal skrives ut. Du kan skrive ut en avviksrapport, en avviksbrikke og en korrigeringsrapport. Du kan definere flere poster for å skrive ut forskjellige dokumenttyper i en rapport, eller for å skrive ut interne og eksterne merknader. Det kan være nyttig å bruke **Dokumenttype**-siden til å definere en unik dokumenttype for avvik, og en unik dokumenttype for rettelser. La oss for eksempel si at du vil angi merknader om et avvik ved hjelp av den unike dokumenttypen for avvik. I dette tilfellet kan du identifisere den unike dokumenttypen i rapportalternativene.
     -   Aktiver nummerserier for avvik og rettelsesreferanser.
 
 2.  Aktiver brukergodkjenning av avvik. Bruk **Navn**-feltet på **Brukere**-siden til å tilordne en ansatt til hver bruker som må godkjenne et avvik. Systemet bruker de ansatte som endrer statusen for et avvik, til å spore avvikshistorikken. Brukere kan ikke godkjenne et avvik med mindre de har fått tilordnet en ansatt-ID.
@@ -47,10 +50,12 @@ Følg disse trinnene for å aktivere behandling av avvik:
 <a name="see-also"></a>Se også
 --------
 
-[Opprette og behandle et avvik (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Opprette og behandle et avvik (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Kvalitetsstyringsprosesser](quality-management-processes.md)
 
-[Definer forutsetninger for avvik management (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Definere forutsetninger for behandling av avvik (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

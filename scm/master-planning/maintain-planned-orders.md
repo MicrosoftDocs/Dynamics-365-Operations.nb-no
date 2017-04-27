@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Vedlikehold planlagte ordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir informasjon om hvordan du behandler planlagte ordrer. Den beskriver hvordan du kan oppdatere statusen for planlagte ordrer, autorisere dem og filtrere etter planlagte ordrer som har samme status som en valgt planlagt ordre.
 
 Du kan administrere planlagte bestillinger fra arbeidsområdet **Hovedplanlegging**, listen **Planlagt bestilling** eller listene **Planlagte produksjonsordrer**, **Planlagte bestillinger** og **Overføringsforslag**. Du kan bruke **Status**-feltet til å spore fremdriften. Følgende verdier brukes:
@@ -48,6 +51,8 @@ Når en planlagt bestilling autoriseres, flyttes den til bestillingsdelen i den 
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Hovedplaner](master-plans.md)
+
+
 
 

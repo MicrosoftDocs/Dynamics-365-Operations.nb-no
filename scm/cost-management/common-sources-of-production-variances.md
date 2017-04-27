@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Vanlige kilder til produksjonsavvik
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver forskjellige vanlige kilder til hver type produksjonsavvik. 
 
 Her er noen vanlige kilder til et **partistørrelsesavvik**:
@@ -57,6 +60,8 @@ Her er noen vanlige kilder til et avvik i **produksjonserstatning**:
 -   Du legger manuelt til en operasjon til produksjonsruten og rapporterer operasjonen som forbrukt.
 -   Når du oppretter produksjonsordren, velger du en stykklisteversjon som avviker fra stykklisteversjonen den som ble brukt i standard kostnadsberegning.
 -   Når du oppretter produksjonsordren, velger du ruteversjonen som avviker fra ruteversjonen som ble brukt i standard kostnadsberegning.
+
+
 
 
 

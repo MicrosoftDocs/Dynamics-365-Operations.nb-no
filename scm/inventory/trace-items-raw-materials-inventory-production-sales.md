@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing av varer og råmaterialer i beholdning, produksjon og salg
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser. 
 
 Sporingsfunksjonalitet for varer finnes på **Varesporing**-siden. Delene nedenfor beskriver hvordan du kan bruke varesporing og hva alternativene og begrensninger er.
@@ -97,7 +100,7 @@ Resultatene av en sporing vises i kronologisk rekkefølge i treet i hurtigkatego
 For å redusere mengden informasjon i sporingsdetaljene inneholder bare noden for den første forekomsten for varen eller råvaren detaljer. Hvis en valgt node ikke inneholder detaljer, kan du vise noden som inneholder detaljer, ved å klikke **Gå til sporet linje**. Du kan deretter gå tilbake til noden du forlot, ved å klikke **Gå tilbake**.
 
 ## <a name="can-i-view-only-a-particular-type-of-document-for-example-can-i-view-only-production-orders-customers-or-vendors"></a>Kan jeg vise bare en bestemt type dokument? Kan jeg for eksempel bare vise produksjonsordrer, kunder eller leverandører?
-Ja, du kan åpne listesider som inneholder bare en bestemt type dokument eller transaksjon fra sporingsdetaljene. Du får tilgang til disse sidene fra menyelementet **Sporing** i handlingsruten, i gruppene **Vare**, **Salg**, **Kjøp**, **Produksjon** og **Kvalitet**. For eksempel vil vise en liste over leverandører i sporing detaljene, klikker du **sporing**&gt;**kjøp**&gt;**leverandører**. Listesidene oppsummer dokumenter eller transaksjoner fra sporingsdetaljene. Listesidene **Ventende transaksjoner**, **Ventende ordrer** og ** Ikke leverte salgsordrer** viser også informasjon som ikke er inkludert i sporingsdetaljene for salgsordrer. I tillegg viser de alltid resultatene per gjeldende dato, selv om et datointervall er angitt. Tabellen nedenfor beskriver tilleggsinformasjonen disse sidene kan inneholde.
+Ja, du kan åpne listesider som inneholder bare en bestemt type dokument eller transaksjon fra sporingsdetaljene. Du får tilgang til disse sidene fra menyelementet **Sporing** i handlingsruten, i gruppene **Vare**, **Salg**, **Kjøp**, **Produksjon** og **Kvalitet**. Hvis du for eksempel vil vise en liste over leverandørene i sporingsdetaljene, klikker du **Sporing** &gt; **Kjøp** &gt; **Leverandører**. Listesidene oppsummer dokumenter eller transaksjoner fra sporingsdetaljene. Listesidene **Ventende transaksjoner**, **Ventende ordrer** og ** Ikke leverte salgsordrer** viser også informasjon som ikke er inkludert i sporingsdetaljene for salgsordrer. I tillegg viser de alltid resultatene per gjeldende dato, selv om et datointervall er angitt. Tabellen nedenfor beskriver tilleggsinformasjonen disse sidene kan inneholde.
 
 | Lister                    | Beskrivelse                                                                                                                                                                                                                                                                                                                   |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -125,7 +128,7 @@ Når du har kjørt sporingen, kan du bruke følgende alternativer på knappen **
 Hvis du vil bruke alternativet **Ny bakover** eller **Ny forover**, må du bruke funksjonen **Åpne i et nytt vindu** til å vise en ny sporing i et nytt vindu.
 
 ## <a name="can-i-save-the-trace-details"></a>Kan jeg lagre sporingsdetaljene?
-Du kan lagre informasjonen på den **detaljer** kategorien som en XML-fil ved å klikke **eksportere** under den *** sporing *** handling i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for **Vis dokument**. **Obs!** Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge **Åpne med** og deretter velge programmet som skal brukes til å vise innholdet.
+Du kan lagre informasjonen i kategorien **Detaljer** som en XML-fil, ved å klikke på **Eksporter** under ****Sporing****-handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for **Vis dokument**. **Obs!** Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge **Åpne med** og deretter velge programmet som skal brukes til å vise innholdet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jeg beregne en saldo for en bestemt vare eller ingrediens?
 Du kan eksportere informasjonen fra sammendragssidene til Microsoft Excel. Åpne den aktuelle siden, klikk ikonet **Åpne i Microsoft Office**, og velg deretter **Eksporter til Microsoft Excel**. Denne funksjonaliteten er spesielt nyttig når du vil beregne en massesaldo for en vare eller ingrediens fra siden **Transaksjonsammendrag**. På siden **Transaksjonssammendrag** kan du filtrere varen eller ingrediensen, og partiet hvis du vil, og deretter eksportere informasjonen til Excel. I Excel kan du for eksempel finne beholdningsantallet, antallet som ble solgt, og beløpet som ble brukt i produksjon.
@@ -136,7 +139,9 @@ Sporingsdetaljene inkluderer informasjon om kvalitetsordrer og avvik som gjelder
 ## <a name="are-there-any-reporting-capabilities-that-are-related-to-item-tracing"></a>Finnes det rapporteringsfunksjoner som er relatert til varesporing?
 Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av varen eller råvaren som er sendt, og hvilke kunder den er sendt til. For en en spørring som er knyttet til samsvar, kan du generere rapporten for alle kunder. For en spørring som er knyttet til kundeservice, kan du generere rapporten for en valgt kunde. Hvis produktet var råvare som ble brukt i produksjonen av en ferdigvare, blir ferdigvaren også tatt med. **Obs!** Hvis du bruker funksjonene for sletting eller arkivering av salgsordrer, inneholder rapportresultatene også salgsordrer som er slettet eller arkivert.
 
-## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore coproducts og biprodukter borte?
+## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore koprodukter og biprodukter?
 Du kan spore koprodukter, men du kan ikke spore et biprodukt fordi sporingsdimensjoner vanligvis ikke er tilordnet til biprodukter. Når du sporer en vare, inkluderes eventuelle relaterte koprodukter i sporingsdetaljene. En node som inneholder et koprodukt inneholder ordet "koprodukt" i detaljene. Du kan også vise detaljer om et koprodukt ved å velge noden i sporingsdetaljene og deretter klikke hurtigfanen **Produksjon**.
+
+
 
 

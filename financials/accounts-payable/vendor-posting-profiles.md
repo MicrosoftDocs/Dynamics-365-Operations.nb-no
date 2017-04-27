@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-posting-profiles"></a>Leverandørposteringsprofiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Leverandørposteringsprofiler styrer postering av leverandørtransaksjoner til økonomimodulen.
 
 <a name="vendor-posting-profiles"></a>Leverandørposteringsprofiler
@@ -146,6 +149,8 @@ Angi følgende verdier for å definere posteringsprofilen:
 | **Utligning** | Merk av for dette valget for å aktivere automatisk utligning for transaksjoner med denne posteringsprofilen. Hvis merket fjernes for dette valget, må du manuelt utligne transaksjoner ved hjelp av Utlign åpne transaksjoner-siden. |
 | **Avbryt**     | Merk av for dette valget hvis du ønsker å ha muligheten til å avbryte transaksjoner med denne posteringsprofilen.                                                                                                               |
 | **Lukke**      | Velg en posteringsprofil som du vil bytte til når transaksjoner med denne posteringsprofilen er lukket. En transaksjon anses som lukket når den er fullstendig utlignet.                                       |
+
+
 
 
 

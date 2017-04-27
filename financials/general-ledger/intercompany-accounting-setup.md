@@ -1,6 +1,6 @@
 ---
-title: Konserninternt Regnskapsoppsett
-description: "Dette emnet forklarer hvordan du konfigurerer konserninternt regnskap, slik at du kan bruke konserninterne kladder for finans tildelinger og finansjournaler, for eksempel daglige journaler, leverandøren fakturaen Kjøpskladder og utbetalingskladder."
+title: Oppsett av konserninternt regnskap
+description: "Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,25 +25,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="intercompany-accounting-setup"></a>Konserninternt Regnskapsoppsett
+# <a name="intercompany-accounting-setup"></a>Oppsett av konserninternt regnskap
 
-Dette emnet forklarer hvordan du konfigurerer konserninternt regnskap, slik at du kan bruke konserninterne kladder for finans tildelinger og finansjournaler, for eksempel daglige journaler, leverandøren fakturaen Kjøpskladder og utbetalingskladder.
+[!include[banner](../includes/banner.md)]
 
-Konserninterne kladder kan opprettes i ulike scenarier, for eksempel for daglige journaler, leverandørfakturajournaler, finans tildelinger og sentralisert betaling. Hvis du vil aktivere disse scenariene, må du definere konserninternt regnskap.
+
+Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler.
+
+Konserninterne journaler kan opprettes i ulike scenarier, for eksempel daglige journaler, leverandørfakturajournaler, finansfordelinger og sentraliserte betalinger. Hvis du vil aktivere disse scenariene, må du definere konserninternt regnskap.
 
 ## <a name="define-main-accounts"></a>Definere hovedkontoer
-Først må du opprette de konserninterne hovedkontoene som skal brukes til regnskapsoppføringer for betaling til og betaling fra. Det er lurt å bruke unike hovedkontoer for hvert firma for å forenkle avstemmingen og elimineringen av konserninterne regnskapsoppføringer. Hvis du bruker en handelspartner eller importfilfeltet dimensjon til å identifisere parten som konserninterne, kan du definere denne dimensjonen som en fast dimensjon på hovedkontoen som er definert i det konserninterne regnskapet. Når du setter opp hovedkontoene, bør du angi den **Main kontotypen** feltet til **balansen** på den **Main kontoer** siden.
+Først må du opprette de konserninterne hovedkontoene som skal brukes til regnskapsoppføringer for betaling til og betaling fra. Det er lurt å bruke unike hovedkontoer for hvert firma for å forenkle avstemmingen og elimineringen av konserninterne regnskapsoppføringer. Hvis du bruker en handelspartner eller motpartsdimensjon til å den konserninterne parten, kan du definere denne dimensjonen som en fast dimensjon i hovedkontoen som er definert i Konserninternt regnskap. Når du definerer hovedkontoene, bør du sette feltet **Hovedkontotype** til **Balanse** på siden **Hovedkontoer**.
 
 ## <a name="define-journal-names"></a>Definere journalnavn
-Deretter må du definere et journalnavn. Angi de **journaltypen** feltet til **daglig** på den **journalnavn** siden. Det er lurt å bruke et spesifikt journalnavn for konserninternt regnskap.
+Deretter må du definere et journalnavn. Angi feltet **Journaltype** til **Daglig** på siden **Journalnavn**. Det er lurt å bruke et spesifikt journalnavn for konserninternt regnskap.
 
-## <a name="define-intercompany-accounting-setup"></a>Definere konserninternt Regnskapsoppsett
-Den **i det konserninterne regnskapet** siden brukes til å opprette par med juridiske enheter kan transact med hverandre. Konserninternt regnskap installasjonsprogrammet deles slik at oppsettet er synlig fra alle juridiske enheter. Når du oppretter en ny juridisk enhet-par, sikrer du at du er klar over hvilke juridisk enhet er definert som det opprinnelige selskapet kontra målfirmaet. Når du angir konserninterne transaksjoner, bestemmer transaksjonen hvilke juridisk enhet starter eller opprinnelige for transaksjonen. Konserninternt regnskap for eksempel er satt opp for USMF (opprinnelig) og USSI (målet). Hvis en bruker er aktiv i USSI, og angir en konsernintern transaksjon som inkluderer USMF, bokfører transaksjonen ikke fordi konserninternt regnskap defineres bare for USMF som avsenderen. Hvis et selskap kan denne formen er hentet en transaksjon, må du opprette noen andre juridisk enhet for gjensidig oppsettet. 
+## <a name="define-intercompany-accounting-setup"></a>Definere oppsett av konserninternt regnskap
+Siden **Konserninternt regnskap** brukes til å opprette par med juridiske enheter som kan utføre transaksjoner med hverandre. Oppsettet av konserninternt regnskap er delt, slik at oppsettet er synlig fra alle juridiske enheter. Når du oppretter et nytt par av juridisk enhet, sikrer du at du er klar over hvilken juridisk enhet som er definert som det opprinnelige firmaet kontra målfirmaet. Når du angir konserninterne transaksjoner, bestemmer transaksjonen hvilken juridisk enhet som starter eller er opprinnelsen for transaksjonen. Konserninternt regnskap er for eksempel satt opp for USMF (opprinnelig) og USSI (målet). Hvis en bruker er aktiv i USSI og angir en konsernintern transaksjon med USMF, posterer ikke transaksjonen fordi konserninternt regnskap bare defineres for USMF som avsender. Hvis et av firmaene kan være opprinnelsen for en transaksjon, må du opprette et nytt juridisk enhet-par for det gjensidige oppsettet. 
 
-Velg den **debiterer (skal betales fra)** og **kreditkonto (som)** for både det opprinnelige varelageret og destinasjonsvarelageret juridisk enhet. Definere hvilke **journalnavnet** vil bli brukt når transaksjonen blir opprettet i målfirmaet. Journal for det opprinnelige selskapet er allerede kjent fordi den er valgt av brukeren når du oppretter en konsernintern transaksjon. 
+Velg **Debetkonto (skal betales fra)** og **Kreditkonto (skal betales til)** for både opprinnelig juridisk enhet og mål for juridisk enhet. Definer hvilket **journalnavn** som skal brukes når transaksjonen blir opprettet i målfirmaet. Journalen for det opprinnelige firmaet er allerede kjent fordi den velges av brukeren under oppretting av den konserninterne transaksjonen. 
 
-Til slutt velger du hvilke juridisk enhet vil motta regnskap som støtter beløp, for eksempel kontantrabatt eller realisert agio/disagio for sentralisert betaling. 
+Til slutt velger du hvilken juridisk enhet som skal motta regnskapet for beløp som støttes, for eksempel kontantrabatt eller realisert fortjeneste/tap for sentraliserte betalinger. 
 
-Et gjensidig forhold kan enkelt defineres på den **konserninternt regnskap** side ved hjelp av den **opprette gjensidig forhold** -knappen etter at de første par juridisk enhet er opprettet. Når det opprettes en motsvarende paret, kopieres informasjonen for målfirmaet til det opprinnelige selskapet og vice versa. Journal som er definert for målfirmaet forblir. De fleste organisasjoner bruker samme navnekonvensjonen for journalnavn, slik at journalnavnet er den samme. Hvis journalnavnet er forskjellig, vises en advarsel på feltet for å informere om at kladden ikke finnes, og du kan velge en annen kladd.
+En motsvarende relasjon kan enkelt defineres på siden **Konserninternt regnskap** ved hjelp av knappen **Opprett motsvarende relasjon** etter at det første paret av juridisk enhet er opprettet. Når det gjensidige paret opprettes, kopieres informasjonen for målfirmaet til det opprinnelige firmaet og vice versa. Journalen som er definert for målfirmaet, beholdes. De fleste organisasjoner bruker samme navnekonvensjonen for journalnavn, slik at journalnavnet er det samme. Hvis journalnavnet er forskjellig, vises en advarsel på feltet for å informere om at journalen ikke finnes, og du kan velge en annen journal.
+
+
 
 

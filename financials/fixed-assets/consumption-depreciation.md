@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Forbruksavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over forbruksmetoden for avskrivning.
 
 Hvis du definerer en avskrivingsprofil for anleggsmidler og velger **Forbruk** i feltet **Metode** på siden **Avskrivningsprofiler**, tilordnes anleggsmidler til avskrivningsprofilen basert på bruken. Du trenger ikke definere prosenter og intervaller på siden **Avskrivningsprofiler**. Når du har opprettet en avskrivingsprofil som bruker forbruksmetoden, kan du definere metoden på ulike måter.
@@ -64,5 +67,7 @@ Følgende faktor for forbruksavskrivning er definert for 31. januar:
 -   Estimert antall for et anleggsmiddel er 2 000.
 
 Avskrivningsforslaget den 31. januar er som følger: estimert antall × prosent × enhetsavskrivning 2 000 x 0,10 x 1,5 = 300
+
+
 
 

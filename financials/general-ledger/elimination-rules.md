@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Elimineringsregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
 
-Elimineringstransaksjoner er nødvendige når en overordnet juridisk enhet handler med én eller flere underordnede juridiske enheter og bruker konsolidert finansrapportering. Konsoliderte regnskapsoppgjør kan bare omfatte transaksjoner som forekommer mellom den konsoliderte organisasjonen og andre enheter utenfor denne organisasjonen. Derfor må transaksjoner mellom juridiske enheter som er en del av den samme organisasjonen fjernes, eller elimineres, fra økonomimodulen, slik at de ikke vises i økonomiske rapporter. Det finnes flere måter å rapportere om elimineringer på:
+Elimineringstransaksjoner er nødvendige når en overordnet juridisk enhet handler med én eller flere underordnede juridiske enheter og bruker konsolidert finansrapportering. Konsoliderte regnskapsoppgjør kan bare omfatte transaksjoner som forekommer mellom den konsoliderte organisasjonen og andre enheter utenfor denne organisasjonen. Derfor må transaksjoner mellom juridiske enheter som er en del av samme organisasjon, fjernes, eller elimineres, fra økonomimodulen, slik at de ikke vises i finansrapporter. Det finnes flere måter å rapportere om elimineringer på:
 
 -   En elimineringsregel kan opprettes og behandles i et konsoliderings- eller elimineringsfirma.
 -   Finansrapportering kan brukes til å vise elimineringskontoene og -dimensjonene i en bestemt rad eller kolonne.
@@ -129,27 +132,29 @@ Den juridiske enheten, juridisk enhet A, selge noe til en annen juridisk enhet i
 Alle disse transaksjonene genererer transaksjoner mellom firmaene som posteres til forfall-til- og forfall-fra-kontoer. I tillegg kan disse transaksjonene omfatte påslags- og avslagsbeløp når beløpet for konserninternt salg ikke er likt kostnadene for varene som ble solgt.
 
 ## <a name="set-up-elimination-rules"></a>Definere elimineringsregler
-Når du definerer elimineringsregler i Dynamics 365 for operasjoner, anbefaler vi at du oppretter en finansdimensjon spesielt for eliminering formål. De fleste kundene gi den navnet handel Partner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du passe på å har primære kontoer som er spesifikke for bare konserninterne transaksjoner. 
+Når du definerer elimineringsregler i Dynamics 365 for Operations, anbefaler vi at du oppretter en finansdimensjon spesielt for elimineringsformål. De fleste kunder gir den navnet Handelspartner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du sørge for å ha hovedkontoer som er spesifikke for bare konserninterne transaksjoner. 
 
-Oppsettet for elimineringer som finnes i Oppsett-området i modulen konsolideringer. Når du skriver inn en beskrivelse av regelen, må du velge selskapet som vil postere elimineringsjournalen til. Dette bør være et selskap som har **Bruk til finanseliminering** valgt i oppsettet for juridisk enhet. 
+Oppsettet for elimineringer finnes i Oppsett-området i modulen Konsolideringer. Når du har skrevet inn en beskrivelse av regelen, må du velge firmaet som elimineringsjournalen skal postere til. Dette bør være et firma som har valgt **Brukes til finanseliminering** under oppsettet av den juridiske enheten. 
 
-Du kan angi en dato da elimineringsregelen trer i kraft, og når den er utløpt, om nødvendig. Du må angi **aktive** til **Ja** Hvis du vil at den skal være tilgjengelig i forslagsprosessen eliminering. Velg et journalnavn som har en **eliminering**.
+Du kan angi en dato da elimineringsregelen trer i kraft, og når den utløpes, om nødvendig. Du må angi **Aktiv** til **Ja** hvis du vil at den skal være tilgjengelig i elimineringsforslagsprosessen. Velg et journalnavn som har en type **Eliminering**.
 
-Når du har definert grunnleggende, kan du definere de faktiske behandlingen av reglene ved å klikke **linjer**. Det finnes to alternativer for elimineringer, eliminere hvor bevegelse eller definere et fast beløp. 
+Når du har definert det grunnleggende, kan du definere de faktiske behandlingsreglene ved å klikke **Linjer**. Det finnes to alternativer for elimineringer: eliminere netto endringsbeløp eller definere et fast beløp. 
 
-Velg kildekontoen. Du kan bruke en stjerne (\*) som et jokertegn. For eksempel 1\* merker alle kontoer som starter med 1 som en datakilde for tildelingen. 
+Velg kildekontoen. Du kan bruke stjerne (\*) som et jokertegn. 1\* velger for eksempel alle kontoer som starter med 1, som en kilde for datatildelingen. 
 
-Når du har valgt kilden kontoene, den **konto spesifikasjonen** bestemmer kontoen fra målfirmaet som brukes. Velg **kilde** Hvis du vil bruke samme hovedkontoen som er definert i den **kilde** konto. Hvis du velger **brukerdefinerte**, og deretter må du angi en målkonto. 
+Når du har valgt kildekontoene, bestemmer **kontospesifikasjonen** kontoen fra målfirmaet som brukes. Velg **Kilde** hvis du vil bruke den samme hovedkontoen som er definert i **Kilde**-kontoen. Hvis du velger **Brukerdefinert**, må du angi en målkonto. 
 
-I dimensjon-spesifikasjonen fungerer på samme måte. Hvis du velger **kilde**, vil den bruke de samme dimensjonene i målfirmaet som kilde-selskapet. Hvis du velger **brukerdefinerte**, må du angi dimensjoner i målfirmaet ved å klikke på **målet dimensjoner** menyelementet. 
+Dimensjonsspesifikasjonen fungerer på samme måte. Hvis du velger **Kilde**, vil den bruke de samme dimensjonene i målfirmaet som kildefirmaet. Hvis du velger **Brukerdefinert**, må du angi dimensjoner i målfirmaet ved å klikke **Måldimensjoner**-menyelementet. 
 
-Velg Kildedimensjoner og finansdimensjoner og verdiene som brukes som en kilde for eliminering.
+Velg kildedimensjoner og finansdimensjoner og verdiene som brukes som en kilde for eliminering.
 
 ## <a name="process-elimination-transactions"></a>Behandle elimineringstransaksjoner
-Det er to måter å behandle elimineringstransaksjoner, under Konsolider online prosessen eller ved å opprette en elimineringsjournalen og kjøre eliminering forslagsprosessen. Denne delen fokuserer på å opprette kladden og kjøre elimineringsprosessen. 
+Det er to måter å behandle elimineringstransaksjoner på, under den elektroniske konsolideringsprosessen eller ved å opprette en elimineringsjournal og kjøre elimineringsforslagsprosessen. Denne delen fokuserer på å opprette journalen og kjøre elimineringsprosessen. 
 
-I et selskap som er definert som et elimineringsfirma, velger du **elimineringsjournalen** i modulen konsolideringer. Når du har valgt journalnavnet, klikker du **linjer**. Du kan kjøre forslaget ved å velge den **forslag** -menyen og deretter velge **Elimineringsforslag**.
+I et firma som er definert som et elimineringsfirma, velger du **Elimineringsjournal** i modulen Konsolideringer. Når du har valgt journalnavnet, klikker du **Linjer**. Du kan kjøre forslaget ved å velge **Forslag**-menyen og deretter velge **Elimineringsforslag**.
 
-Velg firmaet som er kilden til de konsoliderte dataene, og deretter velger du regelen du vil behandle. Angi en startdato for å starte søket for eliminering beløp, og en sluttdato for å avslutte søket datoen for eliminering beløp. Den **GL Bokføringsdato** -feltet er datoen som brukes for postering av journal til finans. Når du klikker **OK**, kan du se gjennom beløpene og postere journalen.
+Velg firmaet som er kilden til de konsoliderte dataene, og velg deretter regelen du vil behandle. Angi en startdato for å starte søket for elimineringsbeløp, og en sluttdato for å avslutte søkedatoen for elimineringsbeløp. Feltet **FIN-posteringsdato** brukes til å postere journalen til økonomimodulen. Når du klikker **OK**, kan du se gjennom beløpene og postere journalen.
+
+
 
 

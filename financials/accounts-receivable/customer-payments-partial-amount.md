@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-payments-for-a-partial-amount"></a>Kundebetalinger for et delbeløp
 
+[!include[banner](../includes/banner.md)]
+
+
 Noen ganger betaler kunder et beløp som er mindre enn beløpet på en faktura. Denne artikkelen beskriver de ulike alternativene for håndtering av dette. Hvilke alternativer som er tilgjengelige, avhenger av dine forretningsbehov og konfigurasjon.
 
 <a name="partial-payment-with-no-discount"></a>Delbetaling uten rabatt
@@ -38,12 +41,12 @@ Kunder kan utføre en delbetaling fordi de ikke har nok kontanter for hånden ti
 Du kan tilby kunder en kontantrabatt for å betale en faktura før forfallsdatoen. Du kan for eksempel registrere en faktura for 100,00 som angir en kontantrabatt på 2 prosent hvis fakturaen betales innen ti dager. Forfallsdatoen er om 30 dager. Hvis du mottar en betaling på 98,00 innen ti dager, kan du angi betalingen av 98,00. Deretter, når fakturaen er merket for utligning, brukes kontantrabatten automatisk.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Delbetalinger med kontantrabatter
-Når kunder foretar en delbetaling, kan det hende at de har tenkt å lage en ekstra delbetaling for å utligne fullt ut fakturaen. For å få en kontantrabatt for en delbetaling, må du angi den ** beregne kontantrabatter for delvise betalinger ** å **Ja** på den **Kundeparametere** siden. 
+Når kunder foretar en delbetaling, kan det hende at de har tenkt å lage en ekstra delbetaling for å utligne fullt ut fakturaen. Hvis tar en kontantrabatt for en delbetaling, må du angi alternativet **Beregn kontantrabatter for delvise betalinger** som **Ja** på siden **Leverandørparametere**. 
 
 Du tilbyr for eksempel en kontantrabatt på 2 prosent hvis fakturaen er betalt innen ti dager etter at den utstedes. Det posteres en faktura på 100,00. Hvis du mottar en betaling på 49,00 innen ti dager, kan du angi et kreditbeløp på 49,00 i en betalingsjournal. Når du utligner delbetalingen delvis på siden **Utlign transaksjoner**, vises **1,00** i feltet **Kontantrabattbeløp som skal brukes**. Rabattbeløpet posteres til en kontantrabattkonto. 
 
 > [!NOTE] 
-> Hvis du angir en akontobetaling og la hele fakturabeløpet i den **beløp som skal utlignes** -feltet i **kontantrabattbeløp til å ta** feltet beregnes automatisk når du bokfører transaksjoner.
+> Hvis du angir en delbetaling og lar det fullstendige fakturabeløpet stå i feltet **Beløp som skal utlignes**, beregnes feltet **Kontantrabattbeløp som skal brukes** automatisk på nytt når du posterer transaksjonene.
 
 ## <a name="credit-notes-with-discounts"></a>Kreditnotaer med rabatter
 Hvis kunder returnerer noen av varene på en faktura, kan du utstede en kreditnota. Hvis det ble brukt en kontantrabatt på den opprinnelige fakturaen, skal kreditnotaen til kunden være netto av kontantrabatten som ble brukt for kunden. Hvis alternativet **Beregn kontantrabatter for kreditnotaer ** er satt til **Ja** på siden **Kundeparametere**, beregnes rabatten automatisk for kreditnotaen. 
@@ -54,6 +57,8 @@ Du tilbyr for eksempel betalingsbetingelser som angir en kontantrabatt på 2 pro
 Når kunder betaler, kan det være et lite beløp som fremdeles må utlignes. Eksempel: Du fakturerer kunden 1 000,00, og kunden betaler 999,90. Hvis det gjenstående beløpet er mindre enn beløpet som er angitt for overbetalinger eller underbetalinger på siden **Kundeparametere**, posteres differansen automatisk til en finanskonto for overbetaling/underbetaling.
 
 ## <a name="full-settlement"></a>Full utligning
-Kunder kan lage en delbetaling der det gjenstående beløpet ikke skal betales, men er større enn underbetaling beløpet som er angitt på den **konto leverandørparametere** siden. Hvis du vil merke fakturaen som helt utlignet, kan du bruke den **Full utligning** alternativet på den **utligner transaksjonen** siden. (Du kan aktivere funksjonen Full utligning ved hjelp av en konfigurasjonsnøkkel.) Eksempel: En faktura posteres for 1 000,00, og kunden betaler 990,00. Du har avtalt at kunden ikke har til å betale de resterende 10,00. Når du har merket for utligning fakturaen, kan du også merke select **Full utligning**. Fakturaen vil deretter anses som fullstendig utlignet. Differansen på 10,00 posteres til en kontantrabattkonto som et ekstra kontantrabattbeløp.
+Kunder kan utføre en delbetaling der det restbeløpet ikke blir betalt, men det er større enn underbetalingsbeløpet som er angitt på siden **Leverandørparametere**. Hvis du vil merke fakturaen som er fullstendig utlignet, kan du bruke alternativet **Full utligning** på siden **Utlign transaksjon**. (Du kan aktivere funksjonen Full utligning ved hjelp av en konfigurasjonsnøkkel.) Eksempel: En faktura posteres for 1 000,00, og kunden betaler 990,00. Du har avtalt at kunden ikke behøver å betale de gjenværende 10,00. Når du har merket fakturaen for utligning, kan du også merke av for **Full utligning**. Fakturaen vil deretter anses som fullstendig utlignet. Differansen på 10,00 posteres til en kontantrabattkonto som et ekstra kontantrabattbeløp.
+
+
 
 

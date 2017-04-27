@@ -1,6 +1,6 @@
 ---
 title: Oversikt over avansert bankavstemming
-description: Avanserte bankavstemmingen, kan du importere elektroniske bankkontoutdrag og avstemme automatisk med banktransaksjoner i Microsoft Dynamics 365 for operasjoner.  Denne artikkelen beskriver prosessen for definisjon av avstemming.
+description: Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Operations.  Denne artikkelen beskriver prosessen for definisjon av avstemming.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,34 +26,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Oversikt over avansert bankavstemming
 
-Avanserte bankavstemmingen, kan du importere elektroniske bankkontoutdrag og avstemme automatisk med banktransaksjoner i Microsoft Dynamics 365 for operasjoner.  Denne artikkelen beskriver prosessen for definisjon av avstemming.  
+[!include[banner](../includes/banner.md)]
 
-Det finnes en rekke deler må defineres før du kan bruke funksjonen Avansert bankavstemming. Hvis du vil ha mer informasjon om hvordan du konfigurerer bank utdrag import, se [definert importprosessen bank setningen](set-up-advanced-bank-reconciliation-import-process.md).  Krav til oppsett av avstemmingsprosessen er beskrevet nedenfor.
+
+Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Operations.  Denne artikkelen beskriver prosessen for definisjon av avstemming.  
+
+Det finnes en rekke deler som må defineres før du kan bruke den avanserte funksjonen for bankavstemming. Hvis du vil ha mer informasjon om hvordan du konfigurerer import for bankkontoutdrag, se [Definere prosessen for import av bankkontoutdrag](set-up-advanced-bank-reconciliation-import-process.md).  Krav til oppsett av avstemmingsprosessen er beskrevet nedenfor.
 
 ## <a name="transaction-codes"></a>Transaksjonskoder
-Transaksjonskoder kan brukes som en del av avstemmingen av samsvarende regler.  Transaksjonskoder bidrar til å samsvare med bare de samme typene transaksjoner mellom Dynamics 365 for operasjoner og kontoutskriften.  Hvis du vil utføre denne typen samsvarer, må du først definere brukes til banktransaksjoner fra Dynamics 365 for operasjoner deretter tilordne disse typene til setningen transaksjonskoder som brukes av banken.  Transaksjonstypene for Dynamics 365 for transaksjoner for operasjoner som er definert i den **Banktransaksjonstype** siden.  Dette er også her du definerer hovedkontoen som skal brukes for posteringer som er tilknyttet denne transaksjonstypen. 
+Transaksjonskoder kan brukes som en del av samsvarsregler for bankavstemmingen.  Transaksjonskoder bidrar til å samsvare med bare de samme typene transaksjoner mellom Dynamics 365 for Operations og bankkontoutdraget.  Hvis du vil utføre denne typen samsvar, må du først definere transaksjonstypene som brukes for banktransaksjoner fra Dynamics 365 for Operations, og deretter tilordne disse typene til utdragstransaksjonskoder som brukes av banken.  Transaksjonstypene for banktransaksjoner i Dynamics 365 for Operations er definert på siden **Banktransaksjonstype**.  Det er også her du definerer hovedkontoen som skal brukes for posteringer som er tilknyttet denne transaksjonstypen. 
 
-Når din Dynamics 365 for transaksjonskoder for operasjoner bank er definert, tilordne du deretter dem til transaksjonskoder som brukes i din elektroniske bankkontoutdrag.  Denne tilordningen er gjort ved hjelp av den **Transaksjonskodetilordning** siden.  Tilordning av transaksjonen fullføres separat for hver bankkonto.
+Når transaksjonskoder i Dynamics 365 for Operations er definert, tilordner du dem til transaksjonskoder som brukes i dine elektroniske bankkontoutdrag.  Denne tilordningsprosessen gjøres ved hjelp av siden **Transaksjonskodetilordning**.  Transaksjonskodetilordning fullføres separat for hver bankkonto.
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>Samsvarsregler og samsvarsregelsett
-Samsvarende regler kan du definere vilkår for automatisk avstemming mellom Dynamics 365 for operasjoner banktransaksjoner og bankkontoutdragstransaksjonene.  Oppsett av søkeregler utføres på **regler for avstemming** siden.  Hvis du vil ha mer informasjon, se [Sett opp regler for bankavstemming](set-up-bank-reconciliation-matching-rules.md). 
+Med samsvarsregler kan du definere vilkår for automatisk avstemming mellom Dynamics 365 for Operations -banktransaksjoner og bankkontoutdragstransaksjoner.  Oppsett av samsvarsregler utføres på siden **Samsvarsregler for avstemming**.  Hvis du vil ha mer informasjon, kan du se [Definere samsvarsregler for bankavstemming](set-up-bank-reconciliation-matching-rules.md). 
 
-Samsvarsregelsett brukes til å definere en gruppe med samsvarende regler som kjøres i rekkefølge under avstemming av banken.  Samsvarende regelsett er konfigurert på den **regelsett for avstemming** siden.
+Samsvarsregelsett brukes til å definere en gruppe med samsvarsregler som kjøres i rekkefølge under avstemmingen av bankkontoutdrag.  Samsvarsregelsett konfigureres på siden **Samsvarsregelsett for avstemming**.
 
 ## <a name="cash-and-bank-management-parameters"></a>Parametere for kontant- og bankbehandling
-Antall parametere er spesifikke for avanserte bankavstemming prosessen på den **parametere for kontant- og** siden.  Den **Vis setningen linjebeløpet i debet/kredit** endrer visningen av beløpene på de **bankkontoutdrag** siden.  Hvis dette alternativet er valgt, vises bank setningen transaksjonsbeløpene i separate debet og kredit-kolonnene.  Hvis det ikke er merket, vises transaksjonsbeløpene bank-setning i en enkelt beløp-kolonne med det riktige tegnet. 
+Det er flere parametere som er spesifikke for den avanserte bankavstemmingsprosessen på siden **Parametere for kontant- og bankbehandling**.  **Vis utdragslinjebeløp i debet/kredit** endrer visningen av beløpene på siden **Bankkontoutdrag**.  Hvis dette alternativet er valgt, vises transaksjonsbeløpene fra bankkontoutdrag i separate debet og kreditkolonner.  Hvis det ikke er valgt, vises transaksjonsbeløpene fra bankkontoutdrag i én enkelt beløpskolonne med riktig fortegn. 
 
-Validering-alternativene som er angitt på siden parametere overstyrer valgene som er angitt i samsvarende regler.  For eksempel du kan manuelt eller med automatisk dokumenter utenfor forskjellen datoen angitt på parametere-siden.  Også, hvis muligheten til å **bekrefte transaksjonen typetilordning** er valgt, må transaksjonstypene tilordnes mellom Dynamics-365 for banktransaksjonen for operasjoner og bankkontoutdragstransaksjonen for at transaksjonene manuelt eller automatisk samkjøres. 
+Valideringsalternativene som er angitt på parametersiden, overstyrer valgene som er angitt i samsvarsregler.  Du kan for eksempel ikke manuelt eller automatisk samsvare dokumenter utenfor datoforskjellen som er angitt på parametersiden.  Hvis alternativet **Valider tilordning av transaksjonstype** er valgt, må transaksjonstypene tilordnes mellom Dynamics 365 for Operations-banktransaksjonen og bankkontoutdragstransaksjonen for at transaksjonene kan samsvares manuelt eller automatisk. 
 
-Du må også konfigurere de nødvendige nummerseriene i den **parametere for kontant- og** siden.  På den **nummerserier** kategorien, Angi nummerseriekoder for nedlastingen **-ID, ID-setningen, avstemme ID og Bank avstemming** referanser.
+Du må også konfigurere de nødvendige nummerseriene på siden **Parametere for kontant- og bankbehandling**.  I kategorien **Nummerserier** angir du nummerseriekoder for referansene **nedlastings-ID, Utdrags-ID, avstemmings-ID og bankavstemming**.
 
 ## <a name="bank-account-reconciliation-options"></a>Alternativer for bankkontoavstemming
-Du må først aktivere avanserte bankavstemmingen for bankkontoen.  Mange flere alternativer er tilgjengelige på den **bankkonto** side når Avansert bankavstemming-funksjonalitet er aktivert. 
+Du må først aktivere avansert bankavstemming for bankkontoen.  Mange flere alternativer er tilgjengelige på siden **Bankkonto** når funksjonalitet for avanserte bankavstemming er aktivert. 
 
-**Bruk bankkontoutdrag som bekreftelse av elektronisk betaling** funksjonalitet som integrerer funksjonaliteten for bank-avstemming med statusene for elektronisk betaling.  Når dette er aktivert, et bankdokument opprettes automatisk for elektronisk betaling-statusen er satt til **sendt**.  I tillegg til statusen for elektronisk betaling vil bli oppdatert fra **sendt** til **mottatt** etter at betalingen er avstemt, avstemmes og posteres. 
+Funksjonen **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** integrerer funksjonaliteten for bankavstemming med statusene for elektroniske betalinger.  Når dette er aktivert, opprettes et bankdokument automatisk for den elektroniske betalingen der statusen er satt til **Sendt**.  I tillegg vil statusen for elektronisk betaling bli oppdatert fra **Sendt** til **Mottatt** etter at betalingen er samsvart, avstemt og postert. 
 
-Den **bankkonto navnet i setninger** -feltet er navnet som brukes for bankkontoen på de elektroniske bankkontoutdrag.  Dette navnet brukes når du bestemmer hvilke transaksjoner som skal importeres for en bankkonto fra en setning som kan inneholde informasjon om flere bankkontoer. 
+Feltet **Banknavn i bankkontoutdrag** er navnet som brukes for bankkontoen på de elektroniske bankkontoutdragene.  Dette navnet brukes når du bestemmer hvilke transaksjoner som skal importeres for en bankkonto fra et utdrag som kan inneholde informasjon om flere bankkontoer. 
 
-Muligheten til å **Avstem etter import** automatisk validere bankkontoutdraget, opprette en ny bankavstemmingen og regneark, og Kjør samsvarende regelsettet som standard.  Denne funksjonen automatiserer prosessen frem til transaksjonene manuelt må kontrolleres.  Innstillingen på bankkontoen som standard når du importerer.
+Alternativet **Avstem etter import** vil automatisk validere bankkontoutdraget, opprette en ny bankavstemmingen og regneark, og kjør Standard samsvarsregelsett.  Denne funksjonen automatiserer prosessen frem til transaksjonene som må kontrolleres manuelt.  Innstillingen på bankkontoen brukes som standard når du importerer.
+
+
 
 

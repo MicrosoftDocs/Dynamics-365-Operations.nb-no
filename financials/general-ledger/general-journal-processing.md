@@ -1,6 +1,6 @@
 ---
 title: Behandling av generell journal
-description: "Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for operasjoner som kan hjelpe lag finanskladd behandling enklere, og som også bidrar til å garantere at riktige data er registrert og intern kontroll ikke er skadet."
+description: "Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,32 +28,35 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver funksjoner i Microsoft Dynamics AX som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
 
 Journalnavn
 
-En av de viktigste områdene til å definere er journalnavn. Det er lurt å definere bestemte journalnavn for hver formål, for eksempel konserninterne avsetning justering og feilretting. Du kan tilpasse hvert journalnavn for å gjøre registrering av data for hvert formål enkelt og sikkert. 
+Ett av de viktigste områdene å konfigurere er journalnavn. Det er lurt å definere bestemte journalnavn for hvert formål, for eksempel konsernintern, justering av avsetning og korrigering. Du kan tilpasse hvert enkelt journalnavn for å gjøre dataregistrering enkelt og sikker for hvert formål. 
 
 På siden **Journalnavn** kan du definere følgende elementer:
 
--   **Arbeidsflytgodkjenning** – Hvis du vil øke den interne kontrollen, definerer du journalarbeidsflyter som etablerer materialgrenser for gjennomgangs- og godkjenningstrinnene, basert på kriterier som total debetbeløp. Du konfigurerer arbeidsflyter for finanskladdene på den ** Finans arbeidsflyter ** siden.
+-   **Arbeidsflytgodkjenning** – Hvis du vil øke den interne kontrollen, definerer du journalarbeidsflyter som etablerer materialgrenser for gjennomgangs- og godkjenningstrinnene, basert på kriterier som total debetbeløp. Du konfigurerer arbeidsflyter for økonomijournaler på siden** Arbeidsflyter for økonomimodul**.
 -   **Standardverdier** – Velg standardverdier for motkontoer, valuta og finansdimensjoner.
 -   **Journalkontroll** – Du kan definere begrensninger for firma, kontotype og segmentverdier. 
 
 **Eksempler**
 
-Et journalnavn kan bare brukes til justeringer. I så fall kan du angi at bare **Finans**-kontotypen er gyldig på tvers av alle firmaer. [![Konto for journaltypene kontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Et journalnavn kan bare brukes til justeringer. I så fall kan du angi at bare **Finans**-kontotypen er gyldig på tvers av alle firmaer. [![Journalkontrollkontotyper](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
-Et journalnavn kan bare brukes bare for et bestemt segment eller et område for hovedkontoer. [![Journal kontroll segment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+Et journalnavn kan bare brukes bare for et bestemt segment eller et område for hovedkontoer. [![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Alternativet **Automatisk tilbakeføring** er tilgjengelig i økonomijournaler. Du har for eksempel en justering av avsetning der det faktiske dokumentet ikke har blitt behandlet ennå, som vist i illustrasjonen nedenfor.
-[![Finanskladd tilbakeføring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Tilbakeføring for økonomijournal](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Microsoft Excel-tillegget for loggoppføringen gir et ekstra nivå av automatisering og gjør dataregistrering enklere. Handlingen **Åpne linjer i Excel** er tilgjengelig på sidene **Økonomijournal** og **Journalbilag**. 
+Microsoft Excel-tillegget for journaloppføring gir et ekstra nivå med automatisering og gjør dataregistrering enklere. Handlingen **Åpne linjer i Excel** er tilgjengelig på sidene **Økonomijournal** og **Journalbilag**. 
 
 På siden **Periodiske journaler** kan du definere at gjentakelsesjournaler skal automatisere behandlingen av journalen. 
 
-Du kan bruke bilagsmaler til enhver tid. På den **finanskladder** siden, den **lagre** og **Velg bilagsmal** handlinger blir funnet på den **Journalbilag** side, under **funksjoner** for bilagslinjene.
+Du kan bruke bilagsmaler til enhver tid. På siden **Økonomijournaler** finnes handlingene **Lagre** og **Velg bilagsmal** på **Journalbilag**-siden, under **Funksjoner** for bilagslinjene.
 
 ## <a name="related-setup"></a>Relatert oppsett
 Dette oppsettet er ikke spesifikk for økonomijournaler, men vil garantere at dataregistrering er riktig og enkel.
@@ -78,6 +81,7 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å garantere at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatorisk og riktig data alltid registreres.
 
-Hvis du vil ha mer informasjon, se [planlegging: kontoplanen](plan-chart-of-accounts.md). 
+Hvis du vil ha mer informasjon, se [Planlegging: kontoplan](plan-chart-of-accounts.md). 
+
 
 

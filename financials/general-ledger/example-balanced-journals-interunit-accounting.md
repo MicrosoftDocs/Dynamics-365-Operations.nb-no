@@ -1,5 +1,5 @@
 ---
-title: Balansert journaler for interenhetsregnskap
+title: Balanserte journaler for interenhetsregnskap
 description: "Denne artikkelen viser hvordan en journal belastes automatisk når en balanserende finansdimensjon er valgt på Finans-siden."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Balansert journaler for interenhetsregnskap
+# <a name="balanced-journals-for-interunit-accounting"></a>Balanserte journaler for interenhetsregnskap
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen viser hvordan en journal belastes automatisk når en balanserende finansdimensjon er valgt på Finans-siden. 
 
@@ -34,9 +37,9 @@ Hvis kontooppføringer ikke balanseres på nivået for verdiene for finansdimens
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP-OU\_256 | 100,00 D |
+| 6100 – MSP – OU\_256 | 100,00 D |
 | 6100 – NY – OU\_249  | 100,00 D |
-| 2100 – MSP-OU\_256 | 200,00 K |
+| 2100 – MSP – OU\_256 | 200,00 K |
 
 I dette tilfellet bestemmes følgende saldoer: 
 
@@ -47,8 +50,10 @@ Følgende regnskapsoppføringer opprettes derfor automatisk for å balansere jou
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Enhetsinternt debet) – MSP-OU\_256 | 100,00 D |
-| (Enhetsinternt kredit) – NY – OU\_249 | 100,00 K |
+| (Enhetsintern debet) – MSP – OU\_256 | 100,00 D |
+| (Enhetsintern kredit) – NY – OU\_249 | 100,00 K |
+
+
 
 
 

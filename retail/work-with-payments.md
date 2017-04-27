@@ -1,5 +1,5 @@
 ---
-title: "Betalingsmåter i et kundesenter"
+title: "Betalingsmåter i et telefonsenter"
 description: "Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Detaljhandel og handel."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Betalingsmåter i et kundesenter
+# <a name="payment-methods-in-a-call-center"></a>Betalingsmåter i et telefonsenter
+
+[!include[banner](includes/banner.md)]
+
 
 Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Detaljhandel og handel.
 
@@ -43,6 +46,8 @@ Hvis du sender en kredittkortbetaling fra siden **Salgsordre** og får en meldin
 
 -   Sjekksperrer lar økonomiansatte behandle ordrer som sperret fordi en sjekk ble brukt når betalingsmåte, og sjekken overskrider terskelbeløpet for sjekksperring. Sperring kan frigis manuelt, eller den utløper automatisk ved slutten av perioden som er konfigurert.
 -   Du kan angi terskler for refunderinger som utstedes via sjekker eller kredittkort, der overskridelse av tersklene gjør at refunderingene må godkjennes manuelt. Refundering som overskrider terskelbeløpet, legges til i godkjenningskøen. Når du har godkjent refunderingen, kan retursalgsordren faktureres.
+
+
 
 
 

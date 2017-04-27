@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Tilbakeføre en leverandørbetaling
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver forskjellene mellom tilbakeføring, sletting, annullering og avvisning av en betaling. Den beskriver også de to metodene for å tilbakeføre en sjekk for leverandør. 
 
-Noen ganger når en leverandørbetaling er postert, må betalingen tilbakeføres. Tilbakeføring er forskjellig fra sletting, annullering eller avvisning av en betaling. Du kan bare slette en betaling hvis statusen er **Opprettet**. Denne statusen angir at betalingen er opprettet, men ennå ikke er generert. Alltid denne begrensningen gjelder uavhengig av betalingsmåten. Du kan annullere ikke-posterte sjekker etter at de har blitt generert, men før de er bokført. Hvis den genererte betalingen utføres som en elektronisk fondet overføring (EFT), kan du avvise betaling før den posteres. Hvis du vil avvise en betaling, kan du endre den **betalingsstatus** verdi. En betaling som er annullert eller avvist kan genereres på nytt etter den **betalingsstatus** verdien er endret tilbake til **ingen**. 
+Noen ganger når en leverandørbetaling er postert, må betalingen tilbakeføres. Tilbakeføring er forskjellig fra sletting, annullering eller avvisning av en betaling. Du kan bare slette en betaling hvis statusen er **Opprettet**. Denne statusen angir at betalingen er opprettet, men ennå ikke har blitt generert. Denne begrensningen gjelder alltid, uavhengig av valgt betalingsmåte. Du kan annullere ikke-posterte sjekker etter at de har blitt generert, men før de er bokført. Hvis den genererte betalingen utføres som en elektronisk pengeoverføring (EFT), kan du avvise betalingen før den posteres. Hvis du vil avvise en betaling, kan du endre **Betalingsstatus**-verdien. En betaling som er annullert eller avvist, kan genereres på nytt etter **Betalingsstatus**-verdien er endret tilbake til **Ingen**. 
 
-Når det posteres en betaling, brukes tilbakeføringer. Betalinger som gjøres elektronisk kan ikke angres etter at de er bokført. I stedet må du opprette en ny transaksjon for betaling for å få ansvaret tilbake på leverandørens konto. Det finnes to metoder for å tilbakeføre posterte sjekker. I én metode posteres tilbakeføringer umiddelbart når du klikker **Betalingsannullering** på **Sjekk**-siden. I den andre metoden kan du klikke **Betalingsannullering** på **Sjekk**-siden, så sendes tilbakeføringen til journalen for banksjekkannullering i bankstyringen, der en kontrollør kan postere eller avvise tilbakeføringen. 
+Når en betaling er postert, brukes tilbakeføringer. Betalinger som gjøres elektronisk, kan ikke tilbakeføres etter at de er postert. I stedet må det opprettes en ny transaksjon for betalingsbeløpet for å få gjelden tilbake på leverandørens konto. Det finnes to metoder for å tilbakeføre posterte sjekker. I én metode posteres tilbakeføringer umiddelbart når du klikker **Betalingsannullering** på **Sjekk**-siden. I den andre metoden kan du klikke **Betalingsannullering** på **Sjekk**-siden, så sendes tilbakeføringen til journalen for banksjekkannullering i bankstyringen, der en kontrollør kan postere eller avvise tilbakeføringen. 
 
 Hvis du vil vite hvilken metode organisasjonen din bruker, ser du siden **Parametere for kontant- og bankbehandling**. Hvis alternativet **Bruk vurderingsprosess for betalingsannulleringer** er satt til **Ja**, sendes tilbakeføringer til journalen for banksjekkannullering for gjennomgang. Tabellen nedenfor beskriver hva som skiller sjekkannuleringsmetodene fra hverandre.
 
@@ -57,7 +60,7 @@ Hvis du er en bruker som gjennomgå tilbakeføringer, kan du enten godkjenne og 
 -   Hvis du vil avvise tilbakeføringen, sletter du journalen for sjekkannullering.
 
 > [!NOTE]
-> Hvis du sletter journalen, tilbakeføringen er fjernet fra systemet, men den opprinnelige sjekken blir værende på den **se** siden. Statusen til sjekken vil ikke lenger være **Venter på annullering**.
+> Hvis du sletter journalen, fjernes tilbakeføringen fra systemet, men den opprinnelige sjekken forblir på **Sjekk**-siden. Statusen til sjekken vil ikke lenger være **Venter på annullering**.
 
 ## <a name="results-of-posting-a-reversal"></a>Resultater av å postere en tilbakeføring
 Når du posterer en sjekktilbakeføring, skjer følgende:
@@ -78,6 +81,8 @@ Hvis sjekken som ble tilbakeført, var utstedt for en kunderefundering, skjer og
 
 -   Det blir postert en transaksjon mot kundekontoen for betalingstilbakeføringen, og utligningen mellom den opprinnelige betalingen og dokumentet som betalingen opprinnelig ble utlignet mot, blir tilbakeført (det blir opprettet en negativ betaling).
 -   Det blir brukt en betalingstilbakeføring på den opprinnelige betalingen. Feltet **Siste utligningsbilag** på **Kundetransaksjoner**-siden for den opprinnelige kundebetalingen blir oppdatert slik at det gjenspeiler bilagsnummeret til den tilbakeførte transaksjonen.
+
+
 
 
 

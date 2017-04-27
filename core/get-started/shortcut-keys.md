@@ -1,6 +1,6 @@
 ---
 title: Hurtigtaster
-description: "Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner."
+description: "Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
-Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner. 
+[!include[banner](../includes/banner.md)]
+
+
+Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations. 
 
 **Obs! ** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 
@@ -40,7 +43,7 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Flytt til neste/forrige alternativ på en meny            | Pil ned / Pil opp            |
 | Lukk en kategori i handlingsruten eller en meny          | ESC                              |
 | Simuler et høyreklikk                            | Skift+F10                        |
-| Åpne Dynamics-365 for operasjoner hurtigmeny | Ctrl+F10                         |
+| Åpne hurtigmenyen for Dynamics 365 for Operations | Ctrl+F10                         |
 | Bruk standardknappen i et skjema / en dialogboks       | Alt+Enter                        |
 | Klikk en knapp eller flis                            | Enter eller Mellomrom                   |
 | Vis oppdatert informasjon for en flis for antall         | Alt+Pil opp                     |
@@ -64,7 +67,7 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen) | Ctrl+F2                                   |
 | Lukk faktaboksruten (med fokus i faktaboksruten)                         | ESC                                       |
 | Flytt til neste/forrige faktaboks (med fokus i faktaboksruten)              | Alt+Skift+Pil ned / Alt+Skift+Pil opp |
-| Flytte til den &lt;n&gt;te faktaboks (med fokus i ruten faktaboks)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flytt til &lt;n&gt;. faktaboks (med fokus i faktaboksruten)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Utvid en faktaboks (med fokus på faktabokshodet)                             | Mellomrom eller Enter                            |
 | Skjul gjeldende faktaboks                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Gå til neste/forrige felt                     | Tab / Skift+Tab                              |
 | Gå til neste/forrige kategori                       | Alt+Skift+Høyrepil / Alt+Skift+Venstrepil |
 | Gå til neste/forrige hurtigkategori                   | Alt+Skift+Pil ned / Alt+Skift+Pil opp    |
-| Flytte til den &lt;n&gt;te hurtigfanen                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flytte til den &lt;n&gt;te-kategorien                         | ALT + SKIFT +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Gå til &lt;n&gt;. hurtigkategori                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Gå til &lt;n&gt;. kategori                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Utvid en hurtigkategori (med fokus på hurtigkategorihodet) | Mellomrom eller Enter                               |
 | Skjul gjeldende hurtigkategori                        | Alt+0                                        |
 | Bytt til rutenettvisning                                 | Ctrl+Skift+G                                 |
@@ -152,7 +155,7 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Åpne oppslag, kombinasjonsboks, datovelger, nedtrekksdialog           | Alt+Pil ned                |
 | Lukk oppslag, kombinasjonsboks, datovelger, nedtrekksdialog          | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent) | Alt+Pil ned                |
-| Åpne kontrollens Forbedret forhåndsvisning                        | Alt+Pil opp                  |
+| Åpne kontrollens forbedrede forhåndsvisning                        | Alt+Pil opp                  |
 | Merk tekst i gjeldende felt                           | Ctrl+A                        |
 | Gå til / forlat tekstområdet i en HTML-redigeringskontroll        | Alt+Pil ned / Alt+Pil opp |
 
@@ -174,18 +177,18 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Gå til skrivebordet                                                       | Alt+Skift+Home  |
 | Gå til navigasjonsfeltet                                                  | Alt+Skift+F1    |
 | Gå til navigasjonsruten                                                 | Alt+F1          |
-| Favoritt/un-favorite et skjema (med fokus på et skjema i navigasjonsruten) | SKIFT + F         |
+| Angi/fjerne et skjema som favoritt (med fokus på et skjema i navigasjonsruten) | Skift+F         |
 | Gå til firmavelgeren                                                  | Ctrl+Skift+O    |
 | Gå til navigasjonssøk                                                   | Ctrl+/ eller Alt+G |
-| Åpne Hjelp-ruten                                                        | CTRL +?          |
-| Åpne spor-parser                                                     | Alt + Skift + T     |
+| Åpne hjelperuten                                                        | Ctrl+?          |
+| Åpne Trace Parser                                                     | Alt+Skift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Snarveier for segmenterte oppføringer
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Slik gjør du det**                                                                                                          | **Trykk**                        |
 | Åpne rullegardinlisten (når rullegardinlisten er lukket)                                                             | Alt+Pil ned                   |
 | Flytt fokus til inndatafeltet for det gjeldende segmentet i rullegardinlisten (når rullegardinlisten allerede er åpen) | Alt+Pil ned                   |
 | Lukk rullegardinlisten                                                                                                | Alt+Pil opp                     |
@@ -199,5 +202,7 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for operasjoner.
 | Gå til toppen/bunnen av oppslaget                                                                                    | Home / End                       |
 
  
+
+
 
 

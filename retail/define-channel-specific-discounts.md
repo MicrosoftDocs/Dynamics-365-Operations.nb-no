@@ -34,14 +34,14 @@ Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskri
 <a name="channel-specific-discounts"></a>Kanalspesifikke rabatter
 --------------------------
 
-Forhandlere gir ofte ulike rabatter i forskjellige kanaler. Dette er kan gjøres til adresse lokal markedsforhold eller å forholde seg til konkurrerende forhandlere.
+Forhandlere tilbyr ofte ulike rabatter i forskjellige kanaler. Det kan gjøres for å målrette lokale markedsforhold eller for å forholde seg til konkurrerende forhandlere.
 
-Handel og handel i Microsoft Dynamics 365 for operasjoner bruker prisgrupper for å definere kanal-spesifikke rabatter. Prisgrupper kan tilordnes til én eller flere av følgende enheter: kanaler, kataloger, tilknytninger og fordelsprogrammer. Denne artikkelen inneholder informasjon om kanaler, men de samme konseptene gjelder for katalograbatter, tilknytningsrabatter og lojalitetsrabatter.
+Detaljhandel og handel i Microsoft Dynamics 365 for Operations bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper kan tilordnes til én eller flere av følgende enheter: kanaler, kataloger, tilknytninger og fordelsprogrammer. Denne artikkelen inneholder informasjon om kanaler, men de samme konseptene gjelder for katalograbatter, tilknytningsrabatter og lojalitetsrabatter.
 
 ## <a name="price-groups"></a>Prisgrupper
-\[overskrifts-IDen = "vedlegg\_256084" align = "alignnone" width = "640"\][![pris grupper](./media/price-groups-1024x608.png)](./media/price-groups.png) pris gruppen koblinger for detaljhandel\[/bildetekst\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Price groups](./media/price-groups-1024x608.png)](./media/price-groups.png) Prisgrupper Prisgruppekoblinger for Detaljhandel\[/caption\]
 
-Diagrammet ovenfor illustrerer forholdet mellom enheter som kan være på en transaksjon (kanal, katalog, ansettelsesforhold, kunde-, lojalitet kort) og ulike rabattyper som kan konfigureres. Alle transaksjoner skjer i en kanal, slik at kanalen er garantert å finnes på en transaksjon. De gjenværende enhetene er valgfrie. Det er en kobling til en relatert prisgruppe på hver hoveddataside der du kan vise og legge til prisgrupper etter behov. En prisgruppe brukes til å relatere fire forskjellige typer enheter til rabatter, prisjusteringer og forretningsavtaler. Vi anbefaler at du planlegge en strategi for hvordan du får navnet ditt prisgrupper for å holde orden på dem. Ett alternativ er å bruke en bokstav eller tall prefiks eller suffiks til å skille mellom de forskjellige typene. For eksempel 1-xxxxx for prisgrupper for kanalen og 2-xxxxx i katalogen prisgrupper. Det er fire forespørselssider som fokuserer på hver detaljhandelsenhet som kan ha rabatter som er knyttet til dem.
+Diagrammet over illustrerer relasjonen mellom enheter som kan være på en transaksjon (kanal, katalog, tilknytning, kunde, fordelskort) og de ulike typene rabatter som kan konfigureres. Alle transaksjoner skjer i en kanal, slik at kanalen er garantert å finnes på en transaksjon. De gjenværende enhetene er valgfrie. Det er en kobling til en relatert prisgruppe på hver hoveddataside der du kan vise og legge til prisgrupper etter behov. En prisgruppe brukes til å relatere fire forskjellige typer enheter til rabatter, prisjusteringer og forretningsavtaler. Vi anbefaler at du planlegger en strategi for hvordan du navngir prisgrupper for å holde orden på dem. Ett alternativ er å bruke en bokstav eller tallprefiks eller suffiks til å skille mellom de ulike typene. For eksempel 1-xxxxx for kanalprisgrupper og 2-xxxxx i katalogprisgrupper. Det er fire forespørselssider som fokuserer på hver detaljhandelsenhet som kan ha rabatter som er knyttet til dem.
 
 -   **Prisgrupper for detaljhandelskanal **– Denne siden viser en liste over kanaler og rabatter som er koblet sammen for hver prisgruppe.
 -   **Katalogprisgrupper **– Denne siden viser en liste over kanaler og rabatter som er koblet sammen for hver prisgruppe.
@@ -62,6 +62,6 @@ Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 <a name="see-also"></a>Se også
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Prisjusteringer og rabatter](price-adjustments-discounts.md)
 
 

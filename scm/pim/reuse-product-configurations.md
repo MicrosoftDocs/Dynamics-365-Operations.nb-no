@@ -1,5 +1,5 @@
 ---
-title: "Bruk produktkonfigurasjoner på nytt"
+title: Gjenbruk av produktkonfigurasjoner
 description: "Du kan angi at du vil bruke en eksisterende konfigurasjon for et produkt på nytt automatisk. Deretter, når en bruker har fullført en konfigurasjonsøkt, kontrollerer systemet om det allerede finnes en konfigurasjon som tilsvarer brukerens valg. Hvis en tilsvarende konfigurasjon blir funnet, brukes konfigurasjons-IDen, den tilsvarende stykklisten og ruten på nytt."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Bruk produktkonfigurasjoner på nytt
+# <a name="reuse-product-configurations"></a>Gjenbruk av produktkonfigurasjoner
+
+[!include[banner](../includes/banner.md)]
+
 
 Du kan angi at du vil bruke en eksisterende konfigurasjon for et produkt på nytt automatisk. Deretter, når en bruker har fullført en konfigurasjonsøkt, kontrollerer systemet om det allerede finnes en konfigurasjon som tilsvarer brukerens valg. Hvis en tilsvarende konfigurasjon blir funnet, brukes konfigurasjons-IDen, den tilsvarende stykklisten og ruten på nytt.
 
@@ -41,5 +44,7 @@ Hvis du vil muliggjøre gjenbruk av konfigurasjoner, må du angi følgende infor
 
 ## <a name="resetting-configuration-reuse"></a>Tilbakestilling av gjenbruk av konfigurasjon
 Når du tilbakestiller gjenbruk av konfigurasjon, tas det ikke lenger hensyn til tidligere opprettede konfigurasjoner. Du bør tilbakestille gjenbruk av konfigurasjon hvis stykklisten eller ruten ble endret, men ingen attributter ble endret. Du tilbakestiller gjenbruk av konfigurasjon for hurtigfanen **Generelt** for komponenten.
+
+
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="physical-and-financial-updates"></a>Fysiske og finansielle oppdateringer
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet gir en oversikt over hvilke typer transaksjoner som øker eller reduserer lagerantallet. 
 
-Lagertransaksjoner kan oppdateres fysisk og økonomisk oppdatert i Microsoft Dynamics 365 for operasjoner. Noen typer fysiske og finansielle transaksjoner øker lagerantallet, mens andre reduserer antallet.
+Lagertransaksjoner kan oppdateres fysisk og finansielt i Microsoft Dynamics 365 for Operations. Noen typer fysiske og finansielle transaksjoner øker lagerantallet, mens andre reduserer antallet.
 
 ## <a name="physical-increases"></a>Fysiske økninger
 Når en fysisk transaksjon blir postert, er statusen til transaksjonsposten **Mottatt**. Følgende transaksjoner regnes som fysisk økning:
@@ -49,10 +52,10 @@ Når en finansiell tilgangstransaksjon blir postert, blir statusen til transaksj
 -   Lagerjournaler med positivt antall, for eksempel bevegelse, resultat, opptelling, stykklister og overføring
 
 ## <a name="transactions-that-increase-quantity"></a>Transaksjoner som øker antallet
-Transaksjoner som øker antallet posteres til løpende gjennomsnittlig kostpris. Dynamics 365 for operasjoner, beregner en løpende gjennomsnittlig kostpris basert på kostnaden til hver av disse transaksjonene for hver lagerdimensjon som spores økonomisk. Hvis du vil ha informasjon om løpende gjennomsnittlige kostpriser, se [Løpende gjennomsnittlig kostpris](running-average-cost-price.md).
+Transaksjoner som øker antallet posteres til løpende gjennomsnittlig kostpris. Dynamics 365 for Operations beregner en løpende gjennomsnittlig kostpris basert på kostnaden til hver av disse transaksjonene for hver lagerdimensjon som spores økonomisk. Hvis du vil ha informasjon om løpende gjennomsnittlige kostpriser, se [Løpende gjennomsnittlig kostpris](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Transaksjoner som reduserer antallet
-Dynamics 365 for operasjoner bruker den beregnede løpende gjennomsnittlige kostprisen når det posteres en transaksjon som reduserer antallet, uansett lagermodellen som er knyttet til dette lageret. Transaksjonen som reduserer antallet, må ikke tidligere ha vært knyttet til en annen transaksjon før postering. Hvis den fysiske lagerbeholdningen blir negativ, bruker Dynamics 365 for operasjoner lagerkost som er definert for varen på den **elementet** siden. **Obs!** Hvis multisite-funksjonalitet er aktivert, blir denne kostnaden i stedet den definerte lagerkostnaden som defineres for et område på siden **Standard ordreinnstillinger**.
+Dynamics 365 for Operations bruker beregnet løpende gjennomsnitt for kostpris når det posteres en transaksjon som reduserer antallet, uavhengig av lagermodellen som er tilknyttet den beholdningen. Transaksjonen som reduserer antallet, må ikke tidligere ha vært knyttet til en annen transaksjon før postering. Hvis den fysiske lagerbeholdningen blir negativ, bruker Dynamics 365 for Operations lagerkosten som er definert for varen på **Vare**-siden. **Obs!** Hvis multisite-funksjonalitet er aktivert, blir denne kostnaden i stedet den definerte lagerkostnaden som defineres for et område på siden **Standard ordreinnstillinger**.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Fysisk avgang i forhold til økonomiske avganger
 Når en fysisk avgangstransaksjon blir postert, er statusen til transaksjonsposten **Fratrukket**. Følgende transaksjoner regnes som fysisk avgang:
@@ -69,5 +72,7 @@ Når en økonomisk transaksjon blir postert, er statusen til transaksjonsposten 
 -   Lagerjournaler med negativt antall, for eksempel bevegelse, resultat, opptelling, stykklister og overføring
 
 Transaksjoner som reduserer antallet posteres til løpende gjennomsnittlig kostpris. Prosedyren for lagerlukking er derfor nødvendig for å utligne avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagermodellen som er tilordnet hver vare.
+
+
 
 

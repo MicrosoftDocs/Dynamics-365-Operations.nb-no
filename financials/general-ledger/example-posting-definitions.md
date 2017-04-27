@@ -1,6 +1,6 @@
 ---
 title: Posteringsdefinisjoner
-description: Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner skal brukes for bestillingsdisposisjoner og budsjettbevilgninger.
+description: Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Postering definisjon eksempler
+# <a name="posting-definition-examples"></a>Eksempler på posteringsdefinisjoner
 
-Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner skal brukes for bestillingsdisposisjoner og budsjettbevilgninger.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.
 
 Før du leser dette emnet, bør du være kjent med posteringsdefinisjoner og posteringsdefinisjoner for transaksjon. Hvis du vil ha informasjon, se [Posteringsdefinisjoner](posting-definitions.md). Eksemplene nedenfor kan settes opp på siden **Posteringsdefinisjoner**. Hvert eksempel inneholder disse delene:
 
@@ -39,7 +42,7 @@ Før du leser dette emnet, bør du være kjent med posteringsdefinisjoner og pos
 
 Når et samsvar oppstår mellom kontoer og dimensjonsverdier i **Samsvarskriterier**-ruten for posteringsdefinisjonen og kontoene og dimensjonsverdiene for transaksjonen, genereres finansoppføringer basert på **Genererte oppføringer**-ruten for posteringsdefinisjonen. 
 > [!NOTE]
-> Hvis du vil tilknytte en posteringsdefinisjon med en bestemt transaksjon, kan du bruke den **posteringsdefinisjoner for transaksjon** siden. Når du knytter en posteringsdefinisjon til en transaksjonstype, og velg **Bruk posteringsdefinisjoner** på den **økonomimodulparametere** siden, må alle transaksjoner av den valgte transaksjonstypen bruke postering definisjoner.
+> Bruk siden **Definisjoner for transaksjonspostering** for å knytte en posteringsdefinisjon til en bestemt transaksjonstype. Når du har knyttet en posteringsdefinisjon til en transaksjonstype og valgt**Bruk posteringsdefinisjoner** på siden **Parametere for økonomimodul**, må alle transaksjoner med den valgte transaksjonstypen bruke posteringsdefinisjoner.
 
 ## <a name="example-purchase-order-encumbrances"></a>Eksempel: bestillingsdisposisjoner
 Når du aktiverer disposisjonsbehandling ved å velge **Aktiver disposisjonsprosess** på **Økonomiparametere**, må posteringsdefinisjoner brukes til å registrere disposisjoner i økonomimodulen for alle kontoer som skal reserveres. I de fleste tilfeller reserveres alle utgiftskontoer i balansen. 
@@ -69,7 +72,7 @@ Kontoene og dimensjonsverdiene kommer fra regnskapsdistribusjonene du angir for 
 
 | Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1 OU\_3566-opplæring | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansoppføringer som er generert fra posteringsdefinisjonen
 
@@ -77,10 +80,10 @@ Genererte finansoppføringer opprettes for å registrere disposisjonene.
 
 | Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1 OU\_3566-opplæring | 250,00 |        |         |
-| 300144-OU\_1 OU\_3566-opplæring |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
+| 300144-OU\_1-OU\_3566-opplæring |        | 250,00 |         |
 
-I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Derfor, når 606500-OU\_1 OU\_3566-opplæring evalueres, genererte poster opprettes for kontoene som er definert i den **generert oppføringer** rute for posteringsdefinisjonen.
+I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Når 606500-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor genererte oppføringer for kontoene som er definert i **Genererte oppføringer**-ruten for posteringsdefinisjonen.
 
 ## <a name="example-budget-appropriations"></a>Eksempel: budsjettbevilgninger
 Når du aktiverer budsjettbevilgning ved å velge **Aktiver budsjettbevilgning** på **Økonomiparametere**-siden, må posteringsdefinisjoner brukes til å registrere budsjettregisteroppføringer i økonomimodulen. Når en budsjettkontrollkonfigurasjon er aktivert og er slått på, kan posteringsdefinisjoner og posteringsdefinisjoner for transaksjon brukes til å støtte registreringen av oppføringer for avsetninger, endringer, overføringer, prosjekter, anleggsmidler og forsynings- og behovsprognoser til økonomimodulen. 
@@ -110,7 +113,7 @@ Du angir kontoene, dimensjonsverdiene og beløpene for budsjettkontooppføringen
 
 | Konto + dimensjoner           | Debet | Kreditt | Kommentar |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1 OU\_3566-opplæring |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-opplæring |       | 250,00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansoppføringer som er generert fra posteringsdefinisjonen
 
@@ -118,10 +121,12 @@ Genererte finansposter opprettes for å registrere det opprinnelige budsjettet i
 
 | Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1 OU\_3566-opplæring |        | 250,00 |         |
-| 300146-OU\_1 OU\_3566-opplæring | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-opplæring |        | 250,00 |         |
+| 300146-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
 
-I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Derfor, når 606400-OU\_1 OU\_3566-opplæring evalueres, genererte postene opprettes.
+I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Når 606400-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor de genererte finanspostene.
+
+
 
 
 

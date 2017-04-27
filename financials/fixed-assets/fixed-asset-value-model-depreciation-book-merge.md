@@ -1,6 +1,6 @@
 ---
 title: "Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer"
-description: "I tidligere versjoner var det to vurdering konsepter for anleggsmidler - verdimodeller og avskrivningstablåer. I Microsoft Dynamics-365 for operasjoner 1611 utgitt er verdi modellen funksjonaliteten og funksjonaliteten for anleggsmiddelavskrivning bok flettet inn i et enkelt konsept som er kjent som en bok."
+description: "I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
 
-I tidligere versjoner var det to vurdering konsepter for anleggsmidler - verdimodeller og avskrivningstablåer. I Microsoft Dynamics-365 for operasjoner 1611 utgitt er verdi modellen funksjonaliteten og funksjonaliteten for anleggsmiddelavskrivning bok flettet inn i et enkelt konsept som er kjent som en bok.
+[!include[banner](../includes/banner.md)]
 
-Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. [![Adresseboken som en sammenslåing av verdien verdimodellen og avledningstablået funksjonaliteten til adresseboken](./media/fixed-assets.png)](./media/fixed-assets.png) på grunn av denne flettingen, kan du nå bruke et enkelt sett med sider, forespørsler og rapporter for alle aktiva-prosesser. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den nye funksjonaliteten for tablåer.
+
+I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.
+
+Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. [![Tablåer som en sammenslåing av verdimodell og avskrivningtablåfunksjonalitet](./media/fixed-assets.png)](./media/fixed-assets.png) På grunn av denne sammenslåingen, kan du nå bruke ett enkelt sett med sider, forespørsler og rapporter for alle prosesser for anleggsmidlet. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den nye funksjonaliteten for tablåer.
 
 ## <a name="setup"></a>Konfigurer
 Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjournalen for anleggsmiddel. Tablåer har et nytt alternativ, **Poster i økonomimodul**, som lar deg deaktivere postering i økonomimodulen og postere bare til underfinansjournal for anleggsmiddel. Denne funksjonen ligner tidligere posteringsvirkemåte for avskrivningstablåer. Journalnavnoppsettet har et nytt posteringslag som heter Ingen. Dette posteringslaget ble lagt til spesifikt for anleggsmiddeltransaksjoner. Hvis du vil postere transaksjoner for tablåer som ikke poster til økonomimodulen, må du bruke et journalnavn med posteringslaget satt til **Ingen**.
@@ -66,5 +69,7 @@ Forespørsler og rapporter støtter alle tablåer. Rapporter som ikke finnes i t
 
 ## <a name="upgrade"></a>Oppgrader
 Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes imidlertid til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til **Ingen**.
+
+
 
 

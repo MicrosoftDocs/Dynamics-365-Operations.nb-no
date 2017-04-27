@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertere regnskaps- eller rapporteringsvalutaer
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Et firma som må endre regnskapsvalutaen eller rapporteringsvalutaen, har to alternativer. Det første alternativet er å opprette et nytt firma, og starte på nytt. Det andre alternativet er å kjøre konverteringsprosessen for regnskaps- og rapporteringsvaluta. Dette er en svært tidkrevende prosess som endrer hver transaksjon i systemet. Det kreves også noe oppsett før prosessen kan kjøres.
@@ -72,6 +75,8 @@ Etter valutaomregningen må du generere alle avstemmingsrapporter på nytt for �
 -   Hvis konverteringen av finansregnskapsvalutaen fører til avrundingsdifferanser, posteres ikke disse forskjellene ved hjelp av bilaget der avrundingsdifferansen oppstod. I stedet posteres forskjellene ved hjelp av bilaget som ble angitt for omregningsposteringene. Etter omregningen inkluderer alle rapporter som kontrollerer på bilag og dato, disse avrundingsdifferansene. Dette er riktig, og kan ignoreres.
 -   Hvis avstemmingsrapportene for kunde og leverandør viser et differansebeløp på totallinjen, og ingen differansebeløp fantes før omregningen, må dette differansebeløpet posteres. Kontoen er sammendragskontoen for kunder og leverandører. Motkontoen er finanskontoen for omregningstap eller omregningsgevinst.
 
-Når alle finanstransaksjonsjournaler er slettet, kan du journalføre finanstransaksjonene. Klikk **Økonomi**&gt;**periodisk**&gt;**journaler**&gt;**journalføring**. Du kan revaluere beløp i utenlandsk valuta når etter valutakonverteringen hvis revaluering er nødvendig. Du kan revaluere beløp i utenlandsk valuta ved å velge **Standard** i **Metode**-feltet for revalueringen.
+Når alle finanstransaksjonsjournaler er slettet, kan du journalføre finanstransaksjonene. Klikk **Økonomimodul** &gt; **Periodisk** &gt; **Journaler** &gt; **Journalføring**. Du kan revaluere beløp i utenlandsk valuta når etter valutakonverteringen hvis revaluering er nødvendig. Du kan revaluere beløp i utenlandsk valuta ved å velge **Standard** i **Metode**-feltet for revalueringen.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-guarantee"></a>Garantibrev
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om garantibrev. I et garantibrev godtar en bank å betale et bestemt beløp til en person hvis en av bankens kundene misligholder en betaling eller forpliktelse til denne personen. 
 
 Et garantibrev er en avtale der en bank (garantisten) skal betale et angitt pengebeløp til en person (mottakeren) hvis en bankkunde (oppdragsgiveren) unnlater å betale gjeld eller en forpliktelse til mottakeren. Garantibrev kan ikke overføres. De gjelder bare mottakeren som er nevnt ved navn i avtalen. Oppdragsgiveren kan be om en økning eller reduksjon i verdien til et garantibrev, underlagt vilkårene i avtalen. 
@@ -55,6 +58,8 @@ Tabellen nedenfor beskriver handlingene du kan utføre for et garantibrev.
 | Utvid              | Når du har gitt mottakeren garantibrevet, utvider du gyldighetsperioden hvis en forlengelse er nødvendig. |
 | Annuller              | Når garantibrevets formål ikke gjelder lenger, annullerer du avtalen.                  |
 | Avvikle           | Når mottakeren fremviser garantibrevet for banken, innløser du garantibrevet.                      |
+
+
 
 
 

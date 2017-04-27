@@ -1,5 +1,5 @@
 ---
-title: "Håndtering av kontantrabatt for overbetalinger"
+title: "Håndtere kontantrabatter for overbetalinger"
 description: "Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Håndtering av kontantrabatt for overbetalinger
+# <a name="handling-cash-discounts-for-overpayments"></a>Håndtere kontantrabatter for overbetalinger
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler. 
 
@@ -133,6 +136,8 @@ Kontantrabattbeløpet reduseres fra 10,50 til 10,00. Betalingen og fakturaen bet
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**) | 10,50        |               |
 | Kundereskontro                                                                              |              | 10,50         |
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Etterkalkuleringsversjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om kostnadsversjoner, hvordan du vedlikeholder dem, og hvilke typer data som du kan inkludere dem i. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader.
 
 En etterkalkuleringsversjon kan tjene ett eller flere formål avhengig av dataene som ligger i etterkalkuleringsversjonen. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader. En etterkalkuleringsversjon kan inneholde et sett med standard kostnadsposter, eller et sett med planlagte kostnadsposter som er basert på etterkalkuleringsversjonen som er tilordnet etterkalkuleringsversjonen.
@@ -63,5 +66,7 @@ Hovedgrunnen til å aktivere innkjøpsprisdata er å definere innkjøpsprisposte
 Hvis du vil aktivere innkjøpsprisinnhold, kan du først definere en stykklisteberegningsgruppe som inneholder en kostprismodell for varens innkjøpspris, og tilordne stykklisteberegningsgruppen til innkjøpte varer. Du bruker deretter en kostprismodell for stykklisteberegningsgruppen når du utfører stykklisteberegninger med planlagte kostnader til å beregne salgsprisen på produserte varer. 
 
 Innkjøpsprisposter for varer brukes også som referanseinformasjon. Ved å endre statusen for en vares kjøpsprispost fra **Ventende** til **Aktiv** kan du oppdatere varens grunnleggende innkjøpspris. Den grunnleggende kjøpsprisen er ikke stedsbestemt og kan overstyres manuelt. Varens grunnleggende innkjøpspris brukes som en standard innkjøpspris på bestillinger.
+
+
 
 

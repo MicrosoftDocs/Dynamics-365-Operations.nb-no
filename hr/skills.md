@@ -39,18 +39,18 @@ Eksempler på kompetanser du kan spore, omfatter følgende:
 Før du kan tilordne en kompetanse til en person eller en jobb, opprette et kompetansesøk eller opprette en kompetanseprofil, må du angi informasjon om kompetansen på **Kompetanse**-siden. Du kan velge en ferdighetstype og en vurderingsmodell for hver kompetanse.
 
 ## <a name="rating-models"></a>Vurderingsmodeller
-Vurderingsmodeller bidrar til å vurdere en persons faktiske kompetansenivå, nivået de bør arbeide for å oppnå, eller kompetansenivået som kreves for en jobb. Du kan angi opptil ti nivåer for en vurderingsmodell.  Hvert nivå i en vurderingsmodell er tilordnet en faktor.  Faktoren verdien vil bli brukt til å normalisere resultatene av ferdigheter som bruker forskjellige vurderingsmodeller.  Faktoren må være et tall mellom 0-9 og hvert nivå må ha en unik faktor.  Nivåer med høyere faktorverdier vektlegges mer i en vurderingsmodell.
+Vurderingsmodeller bidrar til å vurdere en persons faktiske kompetansenivå, nivået de bør arbeide for å oppnå, eller kompetansenivået som kreves for en jobb. Du kan angi opptil ti nivåer for en vurderingsmodell.  Hvert nivå i en vurderingsmodell tilordnes en faktor.  Omregningsverdien brukes til å normalisere resultatene for kompetanse som bruker forskjellige vurderingsmodeller.  Faktoren må være et tall mellom 0-9 og hvert nivå må ha en unik faktor  Nivåer med høyere faktorverdier vektlegges mer i en vurderingsmodell.
 
 ## <a name="specify-job-skills"></a>Angi jobbkompetanse
-Når du angir opplysninger om en jobb, kan du angi ferdighetene som en person skal ha til å utføre arbeidet som kreves for prosjektet.  I tillegg kan du angi ønsket nivået for hver kompetanse i tillegg på kompetansens betydning. Forskjellige jobber kan kreve forskjellige betydningsnivåer for den sammen kompetansen.
+Når du angir informasjon om en jobb, kan du angi kompetansen som en person skal ha for å utføre arbeidet som kreves for jobben.  I tillegg kan du angi ønsket nivå for hver type kompetanse samt betydningsnivåer til kompetansen. Forskjellige jobber kan kreve forskjellige betydningsnivåer for den sammen kompetansen.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Angi kompetanse for ansatte, søkere eller kontakter
 Du kan angi målkompetanse eller faktisk kompetanse for arbeidere, søkere eller kontakter. En målkompetanse er en kompetanse en person ønsker å oppnå. En faktisk kompetanse er en kompetanse en person har.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a>Kompetansetilordning og kompetansetilordningsprofiler
-Du kan opprette et kompetansesøk for å finne en arbeider, søker eller kontaktperson som er kvalifisert til å utføre en bestemt type oppgave. Kompetansesøk søker utseende på tvers av kunnskaper, utdannelse, sertifikater, plasseringen av klarerings- og oppleve og returnere et resultat som oppfyller vilkårene som er angitt.  Det kan for eksempel være nyttig å vite hvilke arbeidere i organisasjonen opptjent deres CPA.
+Du kan opprette et kompetanesøk for å finne en arbeider, søker eller kontaktperson som er kvalifisert til å utføre en bestemt type oppgave. Kompetanesøk søker på tvers av ferdigheter, utdanning, sertifikater, tillitsverv og prosjekterfaring, og returnerer et resultat som samsvarer med kriteriene som er angitt.  Det kan for eksempel være nyttig å vite hvilke ansatte i organisasjonen som har opptjent deres CPA.
 
-Kompetansesøk-profiler kan du søke etter gjeldende ansatte eller kandidater med kvalifikasjoner som tilsvarer bedriftens behov.  Du kan for eksempel opprette en profil for kompetansesøk for en åpen stilling i organisasjonen. Ved å opprette en profil for en bestemt jobb og kopiere kompetanse, utdanning og sertifikater fra denne jobben til profilen, kan du raskt søke arbeidere, søkere og kontaktpersoner som samsvarer med ett eller flere av kriteriene som er angitt på profilen, og vise en liste over kandidater som har kvalifikasjoner som nærmest oppfyller kompetansen som kreves for jobben.
+Med profiler for kompetansesøk kan du søke etter nåværende ansatte eller kandidater med kvalifikasjoner som direkte samsvarer med bedriftens behov.  Du kan for eksempel opprette en profil for kompetansesøk for en åpen stilling i organisasjonen. Ved å opprette en profil for en bestemt jobb og kopiere kompetanse, utdanning og sertifikater fra denne jobben til profilen, kan du raskt søke arbeidere, søkere og kontaktpersoner som samsvarer med ett eller flere av kriteriene som er angitt på profilen, og vise en liste over kandidater som har kvalifikasjoner som nærmest oppfyller kompetansen som kreves for jobben.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Du kan opprette en analyse av kompetanseprofil for å vise en kompetanseliste fo
 <a name="see-also"></a>Se også
 --------
 
-[Human resources](index.md)
+[Personale](index.md)
 
 

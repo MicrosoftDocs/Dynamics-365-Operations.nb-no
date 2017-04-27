@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapporteringstredefinisjoner finansrapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen.
 
 Finansrapporter støtter fleksibel rapportering, slik at du enkelt kan gjøre endringer når forretningsstrukturen endres. Rapporter bygges opp av ulike komponenter eller byggeblokker. Én av disse byggeblokkene er en rapporteringstredefinisjon. En rapporteringstredefinisjon bidrar til å definere strukturen og hierarkiet i organisasjonen. Den er en hierarkisk struktur på tvers av dimensjoner som basert på dimensjonsrelasjonene i de økonomiske dataen. Den inneholder informasjon på rapporteringsenhetsnivå og et sammendragsnivå for alle enheter i treet. Rapporteringstredefinisjonene kan kombineres med kolonnedefinisjoner og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer. En rapporteringsenhet brukes for hver boks i et organisasjonskart. En rapporteringsenhet kan være én enkelt avdeling fra de økonomiske dataene, eller det kan være en overordnet sammendragsenhet som kombinerer informasjon fra andre rapporteringsenheter. For en rapportdefinisjon som inkluderer et rapporteringstre genereres en rapport for hver rapporteringsenhet og for sammendragsnivået. Alle disse rapportene bruke rad- og kolonnedefinisjoner som er angitt i rapportdefinisjonen, med mindre rapportdefinisjonen angir at rapporteringstreet fra raddefinisjonen skal brukes. Rad- og kolonnedefinisjoner er viktige komponenter i utformingen og funksjonaliteten til økonomiske rapporter. Rapporteringtrær øke funksjonaliteten til komponenter og støtter fleksibel rapportering etter hvert som forretningsstrukturen endres. Finansrapporter som ikke er basert på et rapporteringstre bruker bare noen av funksjonene i finansrapportering. Du kan bruke flere rapporteringstredefinisjoner sammen med samme rad og kolonnedefinisjoner til å vise organisasjonens data på forskjellige måter.
@@ -49,7 +52,7 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 
 | Rapporteringstrekolonne | beskrivelse|
 |---|---|
-| Firma               | Firmanavnet for rapporteringsenheten. Den **@ANY** -verdien tilordnes vanligvis bare sammendrag nivå, gjør det mulig for rapportering treet som skal brukes for alle firmaer. Alle underordnede grener har et tilordnet firma.|
+| Firma               | Firmanavnet for rapporteringsenheten. **@ANY**-verdien, som vanligvis bare tilordnes til sammendragsnivået, gjør det mulig å bruke rapporteringstreet for alle firmaer. Alle underordnede grener har et tilordnet firma.|
 | Enhetsnavn             | Koden som identifiserer rapporteringsenheten i det grafiske rapporteringstreet. Pass på å opprette et unik fargekodingssystem som er konsekvent, og som skal være enkelt for brukerne å forstå. |
 | Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i kategorien **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen.|
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert.|
@@ -58,15 +61,15 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 | Ekstern kobling         | Radkoblingen som skal brukes for denne rapporteringsenheten. Radkoblinger er definert for raddefinisjonen for å identifisere rapporten som skal kobles til.|
 | Ekstern fil         | Filbanen til regnearket for finansrapportering som det skal hentes data fra.|
 | Sidealternativer          | Denne kolonnen angir om detaljene for rapporteringsenhet undertrykkes når rapporten vises eller skrives ut.|
-| Opprulling i %              | Prosentdelen av rapporteringsenheten som skal tilordnes til den overordnede enheten. Prosentdelen du angir i denne kolonnen, gjelder for hver rad i raddefinisjonen før verdien i raden legges til den overordnede rapporten. Hvis en underordnet enhet for eksempel skal deles likt mellom to avdelinger, blir beløpene i hver rad multiplisert med 50 prosent før verdien legges til i avdelingsrapporten. Én rapporteringsenhet kan ikke ha to overordnede enheter. Hvis du vil tilordne beløpene fra en rapportering til to overordnede enheter, kan du opprette en annen rapporteringsenhet som har samme dimensjon for å rulle opp de ekstra 50 prosentene. Skriv inn hele prosentdeler uten desimaltegn. **25** representerer for eksempel 25 prosent allokering til overordnet. Hvis du tar med et desimaltegn (**,25**), vil 0,25 prosent allokeres til overordnet. Hvis du vil bruke en prosent som er mindre enn 1 prosent, kan du bruke den **Tillat samleoppdatering &lt;1%** alternativ i rapportdefinisjonen. Dette alternativet er i kategorien **Tilleggsalternativer** i dialogboksen **Rapportinnstillinger**. Du kan åpne denne dialogboksen fra **Annet**-knappen i kategorien **Innstillinger** i rapportdefinisjonen. |
+| Opprulling i %              | Prosentdelen av rapporteringsenheten som skal tilordnes til den overordnede enheten. Prosentdelen du angir i denne kolonnen, gjelder for hver rad i raddefinisjonen før verdien i raden legges til den overordnede rapporten. Hvis en underordnet enhet for eksempel skal deles likt mellom to avdelinger, blir beløpene i hver rad multiplisert med 50 prosent før verdien legges til i avdelingsrapporten. Én rapporteringsenhet kan ikke ha to overordnede enheter. Hvis du vil tilordne beløpene fra en rapportering til to overordnede enheter, kan du opprette en annen rapporteringsenhet som har samme dimensjon for å rulle opp de ekstra 50 prosentene. Skriv inn hele prosentdeler uten desimaltegn. **25** representerer for eksempel 25 prosent allokering til overordnet. Hvis du tar med et desimaltegn (**,25**), vil 0,25 prosent allokeres til overordnet. Hvis du vil bruke en prosentdel som er mindre enn én prosent, kan du bruke alternativet **Tillat opprulling &lt;1%** i rapportdefinisjonen. Dette alternativet er i kategorien **Tilleggsalternativer** i dialogboksen **Rapportinnstillinger**. Du kan åpne denne dialogboksen fra **Annet**-knappen i kategorien **Innstillinger** i rapportdefinisjonen. |
 | Enhetssikkerhet         | Begrensninger for brukere og grupper som har tilgang til informasjon for rapporteringsenheten.|
 | Tilleggstekst       | Tekst som er inkludert i rapporten.|
 
 Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
 1.  Åpne Rapportutforming.
-2.  Klikk **fil**&gt;**nye**&gt;**rapportering treet definisjon**.
-3.  Klikk **Rediger**&gt;**Sett inn rapportering enheter fra dimensjoner**.
+2.  Klikk **Fil** &gt; **Ny** &gt; **Rapporteringstredefinisjon**.
+3.  Klikk **Rediger** &gt; **Sett inn rapporteringsenheter fra dimensjoner**.
 4.  I dialogboksen **Sett inn rapporteringsenheter fra dimensjoner** merker du av for hver dimensjon som skal tas med i rapporteringstreet. Dialogboksen **Sett inn rapporteringsenheter fra dimensjoner** inneholder delene nedenfor.
 
     | Seksjon                          | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -85,7 +88,7 @@ Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
 9.  Gjenta trinn 7 til 8 for hver dimensjon i området **Segmenter hierarki og områder**.
 10. Når du er ferdig med å definere hvordan rapportenhetene skal hentes inn i det nye rapporteringstreet, klikker du **OK**.
-11. Klikk **fil**&gt;**lagre** til å lagre rapportering treet. Skriv inn et unikt navn og beskrivelse for rapporteringstreet, og klikk deretter **OK**.
+11. Klikk **Fil** &gt; **Lagre** for å lagre rapporteringstreet. Skriv inn et unikt navn og beskrivelse for rapporteringstreet, og klikk deretter **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Åpne en eksisterende rapporteringstredefinisjon
 
@@ -121,7 +124,7 @@ Du kan ordne organisasjonsstrukturen i en rapporteringstredefinisjon ved å flyt
 1.  Åpne rapporteringstreet som skal endres i Rapportutforming.
 2.  Velg en rapporteringsenhet i den grafiske visningen av rapporteringstredefinisjonen.
 3.  Dra enheten til en ny plassering. Du kan også høyreklikke enheten og deretter velge **Forfremme rapporteringsenhet** eller **Senk rapporteringsenhet**.
-4.  Klikk **fil**&gt;**lagre** til å lagre endringene.
+4.  Klikk **Fil** &gt; **Lagre** for å lagre endringene.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Legge til tekst om en rapporteringsenhet
 
@@ -189,7 +192,7 @@ I diagrammet nedenfor har rapporteringstre en organisasjonsstruktur som er delt 
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Sett inn rapporteringsenheter fra dimensjoner
 
-Illustrasjonen nedenfor viser et eksempel på dialogboksen **Sett inn rapporteringsenheter fra dimensjoner**. I dette eksemplet returnerer resultatene kombinasjonen av forretningsenheter, kostsentre og avdelinger. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) den resulterende rapportering tre definisjonen er sortert etter forretningsenhet, og deretter etter kostsenter, og deretter etter avdeling. Dimensjonen for den femte rapportering enheten er **konsernet = \[001\], kostsenter =\[\], avdeling = \[022\]**, og identifiserer en rapportering enhet for kontoer som er spesifikke for business unit 001 og 022-avdelingen. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Sett inn rapporteringsenheter fra dimensjoner**. I dette eksemplet returnerer resultatene kombinasjonen av forretningsenheter, kostsentre og avdelinger. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) Den resulterende rapporteringstredefinisjonen er sortert etter forretningsenhet, deretter etter kostsenter og til slutt etter avdeling. Dimensjonen for den femte rapporteringsenheten er **Forretningsenhet = \[001\], Kostsenter =\[\], Avdeling = \[022\]**, og identifiserer en rapporteringsenhet for kontoer som er spesifikke for forretningsenhet 001 og avdeling 022. [![Rapporteringstre](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på opprulling av data
 
@@ -205,6 +208,8 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 
 # <a name="see-also"></a>Se også
 
-[Financial reporting](financial-reporting-intro.md)
+[Finansrapportering](financial-reporting-intro.md)
+
+
 
 

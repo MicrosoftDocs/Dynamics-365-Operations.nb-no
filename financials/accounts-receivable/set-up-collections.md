@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Definer kreditt og innkreving
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene.
 
 <a name="set-up-aging-period-definitions"></a>Definer definisjoner av aldersfordelingsperiode
@@ -46,7 +49,7 @@ Hvis flere mennesker i organisasjonen gjør innkrevingsarbeid, kan du definere e
 ## <a name="set-up-a-collections-case-category"></a>Definer en inkassosakskategori
 Hvis du vil organisere innkrevingsarbeidet ved hjelp av saker, definerer du en sakskategori med kategoritypen **Innkrevinger**. Dette oppsettet er bare nødvendig hvis du vil bruke saksfunksjonaliteten på siden **Innkrevinger**.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Definer journalnavn (utligningen, writeoff og NSF)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Definer journalnavn for (utligning, avskrivning og ingen dekning)
 Definere journalnavn som brukes når transaksjoner behandles på siden **Innkrevinger**. Denne prosessen inkluderer utligning av en transaksjon, avskriving av en transaksjon og behandling av en betaling uten dekning.
 
 | Beskrivelse | Journaltype     |
@@ -55,7 +58,7 @@ Definere journalnavn som brukes når transaksjoner behandles på siden **Innkrev
 | Avskrivning   | Daglig            |
 | Ingen dekning         | Kundebetaling |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Angi en årsakskode for writeoff-transaksjoner
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Definer en årsakskode for avskrivningstransaksjoner
 Definer standard årsakskode som skal brukes når transaksjoner avskrives på siden **Innkrevinger**. Du kan endre koden i løpet av avskrivingsprosessen.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Definer en mappe for e-postvedlegg og opprett e-postmaler
@@ -67,7 +70,7 @@ Definer kundeparametere som vises i fanen **Innkrevinger**.
 ## <a name="optional-set-up-collections-agents"></a>Valgfritt: Definer innkrevingsagenter
 Hvis flere mennesker i organisasjonen gjør innkrevingsarbeid, kan du definere innkrevingsagenter. En innkrevingsagent er en arbeider som er definert som en bruker på siden **Brukerforbindelser**. Du kan tilordne kundepuljer (kundespørringer) til innkrevingsagenter for å hjelpe agentene å organisere arbeidet sitt. Innkrevingsagentene legges til teamet som velges på siden **Kundeparametere**. Hvis et team ikke er valgt på den siden, opprettes det automatisk et nytt team kalt **Innkrevinger**, og innkrevingsagentene legges til det teamet.
 
-## <a name="set-up-a-writeoff-account"></a>Sette opp en konto for writeoff
+## <a name="set-up-a-writeoff-account"></a>Definer en avskrivningskonto
 Definer avskrivningskontoen som anvendes for økonomimodulens avskrivingsoppføring når en transaksjon skrives av. Denne kontoen lagres på kundeposteringsprofilen.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Definer informasjon om manglende dekning for bankkontoer
@@ -82,11 +85,13 @@ Definer e-postadresser for kundekontakter hvis du vil sende e-postmeldinger til 
 På hurtigfanen **Kreditt og innkreving** for en bruker, i feltet **Innkrevingskontakt**, velger du personen i kundeorganisasjonen som arbeider med din innkrevingsagent. Denne personen brukes som standardkontakt på siden **Innkrevinger**, og e-postmeldinger sendes til vedkommende. 
 
 > [!NOTE] 
-> Hvis en kontakt samlinger ikke er angitt for en kunde, brukes primær kontaktperson for kunden. Hvis det ikke er angitt hovedkontakt, sendes e-postmeldinger til den første adressen som er oppført på **Kontakter**-siden.
+> Hvis innkrevingskontakt ikke er angitt for en kunde, brukes kundens hovedkontakt. Hvis det ikke er angitt hovedkontakt, sendes e-postmeldinger til den første adressen som er oppført på **Kontakter**-siden.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Definer e-postinnstillinger for selgere
 Definer e-postadresser for selgere hvis du vil sende e-postmeldinger til selgere fra siden **Innsamlinger**. Definer en e-postadresse for hver selter i hver provisjonssalgsgruppe. Selgeren som er merket av som **Kontakt**, er standardselgeren som e-postmeldinger sendes til. 
 
 Hvis det ikke er angitt en selger, brukes kundeorganisasjonens hovedselger. Hvis det ikke er angitt hovedselger, sendes e-post meldinger til den første selgeren som er oppført på siden.
+
+
 
 

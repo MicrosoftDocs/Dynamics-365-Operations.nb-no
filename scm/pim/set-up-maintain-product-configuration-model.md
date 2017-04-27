@@ -1,5 +1,5 @@
 ---
-title: Konfigurere en produktmodell for konfigurasjon
+title: Definere en produktkonfigurasjonsmodell
 description: "Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produktkonfigurasjonsmodell."
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Konfigurere en produktmodell for konfigurasjon
+# <a name="set-up-a-product-configuration-model"></a>Definere en produktkonfigurasjonsmodell
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produktkonfigurasjonsmodell.
 
 | Oppgave                                                        | beskrivelse                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Opprette en produktstandard.                                    | Opprett en produktstandard fra **Produktstandard**-listen. Frigi produktstandarden for alle relevante selskaper. For en produktstandard som brukes som en versjon for en produktmodell for konfigurasjon, eller som en underkomponent **restriksjonsbaserte konfigurasjon** må være valgt i konfigurasjonsteknologi og konfigurasjonsdimensjonen må være valgt for produktdimensjonsgruppen. |
+| Opprette en produktstandard.                                    | Opprett en produktstandard fra **Produktstandard**-listen. Frigi produktstandarden for alle relevante selskaper. For en produktstandard som brukes som en versjon for en produktkonfigurasjonsmodell eller som en underkomponent, må **Restriksjonsbasert konfigurasjon** velges som konfigurasjonsteknologi og konfigurasjonsdimensjonen må bare velges for produktdimensjonsgruppen. |
 | Opprette komponenter.                                          | Opprett komponenter på **Komponenter**-siden. Komponentene er byggesteinene i en produktkonfigurasjonsmodell og kan brukes på nytt i flere produktkonfigurasjonsmodeller.                                                                                                                                                                                                                      |
 | Opprette attributtyper.                                     | Opprett attributtyper på **Attributtyper**-siden. Attributtyper spesifiserer hvilke datatyper for alle attributter som brukes i produktkonfigurasjonsmodeller. Attributtypene **Boolsk**, **Tekst** med en fast liste og **Heltall** med et område angir settet med verdier som er tilgjengelige når du konfigurerer en produktvariant basert på en produktkonfigurasjonsmodell.       |
 | Opprette en produktkonfigurasjonsmodell.                       | Opprett en produktkonfigurasjonsmodell på siden **Ny produktkonfigurasjonsmodell**.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produ
 | Teste en produktkonfigurasjonsmodell.                         | Test produktkonfigurasjonsmodellen fra siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** eller **Produktkonfigurasjonsmodeller**. Testing av produktkonfigurasjonsmodellene simulerer produktmodellkonfigurasjonsprosessen som skjer under ordrebehandlingen.                                                                                                |
 | Opprette malen produktkonfigurasjonsmodellen.                | Opprett en mal for produktkonfigurasjonsmodellen på siden **Konfigurasjonsmaler**. En konfigurasjonsmal inneholder verdier for attributter i produktkonfigurasjonsmodellen. Velg attributtverdiene på **Konfigurer linje**-siden. Du kan velge å laste inn en mal for produktmodellkonfigurasjon under produktmodellkonfigurasjonen.                                                   |
 | Konfigurere en vare.                                          | Produktkonfigurasjonsmodeller kan konfigureres fra en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

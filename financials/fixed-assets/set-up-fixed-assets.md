@@ -3,7 +3,7 @@ title: Definere anleggsmidler
 description: Dette emnet gir en oversikt over oppsett av anleggsmiddelmodulen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-fixed-assets"></a>Definere anleggsmidler
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet gir en oversikt over oppsett av anleggsmiddelmodulen.
 
 <a name="overview"></a>Oversikt
@@ -43,9 +46,9 @@ Anleggsmidler blir tilordnet til en gruppe når de opprettes. Som standard tilor
 Du bør definere avskrivningsprofiler først. I avskrivningsprofilen kan du konfigurere hvordan en anleggsmiddelverdi avskrives over tid. Du må definere metoden for avskrivning, avskrivningsåret (kalenderår eller regnskapsår) og frekvensen for avskrivning.
 
 ## <a name="books"></a>Tablåer
-Etter at du har definert avskrivningsprofiler, må du opprette de nødvendige tablåene for anleggsmidlene. Hvert tablå sporer en uavhengig økonomisk livssyklus for et anleggsmiddel. Tablåer kan konfigureres til å postere tilknyttede transaksjoner til økonomimodulen. Denne konfigurasjonen er standardinnstillingen, fordi den brukes vanligvis for bedrifts finansrapportering. Bøker som ikke postere til finans poster bare for anleggsmiddel-underfinansjournal og brukes vanligvis for mva-rapporteringsformål.
+Etter at du har definert avskrivningsprofiler, må du opprette de nødvendige tablåene for anleggsmidlene. Hvert tablå sporer en uavhengig økonomisk livssyklus for et anleggsmiddel. Tablåer kan konfigureres til å postere tilknyttede transaksjoner til økonomimodulen. Denne konfigurasjonen er standardinnstillingen, fordi den brukes vanligvis for firmaets finansrapportering. Tablåer som ikke posterer til økonomimodulen, posterer bare til underfinansjournalen for anleggsmiddel, og brukes vanligvis for skatteformål.
 
-En primær avskrivningsprofil er tilordnet til hvert tablå. Tablåer har også en alternativ avskrivningsprofil, hvis denne typen profil brukes. Hvis du vil inkludere anleggsmiddeltablået i avskrivninger automatisk, må du aktivere alternativet Beregner avskrivning. Hvis dette alternativet ikke er valgt for et anleggsmiddel, hopper avskrivningsforslaget aktivaet.
+En primær avskrivningsprofil er tilordnet til hvert tablå. Tablåer har også en alternativ avskrivningsprofil, hvis denne typen profil brukes. Hvis du vil inkludere anleggsmiddeltablået i avskrivninger automatisk, må du aktivere alternativet Beregner avskrivning. Hvis dette alternativet ikke er valgt for et anleggsmiddel, hopper avskrivningsforslaget over anleggsmidlet.
 
 Du kan også sette opp avledede tablåer. De angitte avledede transaksjonene blir postert som en nøyaktig kopi av den primære transaksjonen mot de avledede tablåene. Derfor defineres avledede transaksjoner vanligvis for anskaffelse og salg, ikke for avskrivningstransaksjoner.
 
@@ -62,14 +65,16 @@ Du kan også definere særskilte avskrivningsfradrag eller bonusavskrivning for 
 ## <a name="fixed-asset-parameters"></a>Parametere for anleggsmidler
 Det siste trinnet er å oppdatere parameterne for anleggsmidler.
 
-Feltet Kapitaliseringsterskel bestemmer hvilke anleggsmidler som avskrives. Hvis en innkjøpslinje er merket som et anleggsmiddel, men den ikke oppfyller de angitte kapitaliseringsterskelen, et anleggsmiddel opprettes eller oppdateres fortsatt, men alternativet Beregn avskrivning er satt til Nei. Anleggsmidlet avskrives ikke derfor automatisk som en del av avskrivningsforslagene.
+Feltet Kapitaliseringsterskel bestemmer hvilke anleggsmidler som avskrives. Hvis en innkjøpslinje er merket som et anleggsmiddel, men den ikke oppfyller den angitte kapitaliseringsterskelen, opprettes og oppdateres likevel et anleggsmiddel, men alternativet Beregn avskrivning er satt til Ingen. Anleggsmidlet avskrives derfor ikke automatisk som en del av avskrivningsforslagene.
 
 Ett viktig alternativ er Opprett automatisk avskrivningsjusteringsbeløp med avhending. Når du setter dette alternativet til Ja, justeres anleggsmiddelavskrivningen automatisk, basert på innstillingene for avskrivning ved avhending av anleggsmidler. Et annet alternativ lar deg trekke fra kontantrabatt fra anskaffelsesbeløpet når du kjøper anleggsmidler ved hjelp av en leverandørfaktura.
 
-I hurtigfanen Bestillinger kan du konfigurere hvordan du vil at anleggsmidlene skal opprettes som en del av innkjøpsprosessen. Det første alternativet er Tillat anleggsmiddelanskaffelse fra innkjøp. Hvis du setter dette alternativet til Ja, oppstår anleggsmiddelanskaffelsen når fakturaen posteres. Hvis du setter dette alternativet til Nei, kan du fremdeles plassere et aktiva på en bestilling (Inngående) og en faktura, men posteres ikke anskaffelsen. Postering må gjøres fra anleggsmiddeljournalen som et separat trinn. Opprett aktivaet under produktet mottaksseddel eller faktura alternativet kan du opprette et nytt aktivum "på sparket" under postering, slik at den ikke har kan defineres som et anleggsmiddel før transaksjonen. Det siste alternativet, Søk etter opprettelse av anleggsmidler under linjeregistrering, gjelder bare for innkjøpsrekvisisjoner.
+I hurtigfanen Bestillinger kan du konfigurere hvordan du vil at anleggsmidlene skal opprettes som en del av innkjøpsprosessen. Det første alternativet er Tillat anleggsmiddelanskaffelse fra innkjøp. Hvis du setter dette alternativet til Ja, oppstår anleggsmiddelanskaffelsen når fakturaen posteres. Hvis du setter dette alternativet til Nei, kan du fremdeles plassere et anleggsmiddel på en bestilling og faktura, men anskaffelsen posteres ikke. Postering må gjøres fra anleggsmiddeljournalen som et separat trinn. Med alternativet Opprett anleggsmiddel under postering av mottaksseddel eller faktura kan du opprette nye aktiva "på direkten" ved postering, slik at det ikke trenger være definert som et anleggsmiddel før transaksjonen. Det siste alternativet, Søk etter opprettelse av anleggsmidler under linjeregistrering, gjelder bare for innkjøpsrekvisisjoner.
 
 Du kan konfigurere årsakskoder til å være nødvendige for endringer av et anleggsmiddel eller for bestemte anleggsmiddeltransaksjoner.
 
 Til slutt definerer du nummerserier for anleggsmidler i kategorien Nummerserier. Anleggsmiddelnummerserien kan overstyres av gruppenummersekvensen for anleggsmiddelet hvis det er angitt.
+
+
 
 

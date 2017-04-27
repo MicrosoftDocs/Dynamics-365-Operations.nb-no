@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Definere og behandle gjentakende fakturaer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du konfigurerer og behandler gjentakende fakturaer. Du kan bruke gjentakende fakturaer hvis du må fakturere kunder for det samme beløpet regelmessig.
 
 <a name="create-a-recurring-free-text-invoice-template"></a>Opprette en mal for gjentakende fritekstfaktura
@@ -61,5 +64,7 @@ Skrive ut gjentakende fritekstfakturaer
 ----------------------------------
 
 Når gjentakende fakturaer er postert, kan du skrive ut fakturaene på listesiden for fritekstfakturaer. Du kan skrive ut fakturaene som er valgt, eller du kan velge et område med fakturaer som skal skrives ut.
+
+
 
 

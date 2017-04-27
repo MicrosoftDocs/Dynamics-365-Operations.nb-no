@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Slå sammen lagerpartier
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti. 
 
 Når du slår sammen partier, kan beregninger være med på å optimalisere egenskapene og partiattributtene i det sammenslåtte partiet. Etter at du har kildepartiene, kan du se gjennom og endre det sammenslåtte partiet før du posterer det. Du kan også overføre partisammenslåingen til en lagerjournal for godkjenning. Lageret kan deretter reserveres eller posteres direkte fra denne lagerjournalen. Når du posterer et sammenslått parti, justeres beholdningen for kildepartiene og det sammenslåtte partiet.
@@ -48,7 +51,7 @@ Ja, det er enkelte ting du må definere før du kan bruke verktøyene for sammen
 <tbody>
 <tr class="odd">
 <td>Journalnavn, beholdning</td>
-<td>Du må opprette et journalnavn som skal brukes som standard når du posterer partisammenslåinger i lagerjournaler. Valgfritt, men anbefalt: Du kan angi at reserveringer foretas automatisk når partisammenslåingen overføres til lagerjournalen. Ellers er det fare for at det kan gjøres en endring av lagerbeholdning etter at opplysningene om partisammenslåingen er definert og journalen er postert. Hvis du vil aktivere automatiske reserveringer for journalnavnet, velger du <strong>automatisk</strong> i den <strong><strong>reservering</strong></strong> feltet.</td>
+<td>Du må opprette et journalnavn som skal brukes som standard når du posterer partisammenslåinger i lagerjournaler. Valgfritt, men anbefalt: Du kan angi at reserveringer foretas automatisk når partisammenslåingen overføres til lagerjournalen. Ellers er det fare for at det kan gjøres en endring av lagerbeholdning etter at opplysningene om partisammenslåingen er definert og journalen er postert. Hvis du vil aktivere automatiske reservasjoner for journalnavnet, velger du <strong>Automatisk</strong> i <strong><strong>Reservering</strong></strong>-feltet.</td>
 </tr>
 <tr class="even">
 <td>Parametere for beholdnings- og lagerstyring</td>
@@ -134,9 +137,11 @@ Postering fungerer på to måter, avhengig av om du bruker en godkjenningsproses
 -   **Overfør til journal** – Overfører informasjon om partisammenslåingen til en lagerjournal. Hvis du har definert automatiske reservasjoner, er antallene i kildepartiene reservert. Detaljene for partisammenslåingen kan ikke endres. Hvis du må endre partisammenslåingen, må du slette journalen. Journalen kan brukes som en oppgave som en annen ansatt må utføre senere. Reservering av partiantallet til journallinjen er sikret. Denne tildelingen gjør det mulig for en kvalitetsplanlegger eller en lagersjef å opprette oppgaver for de ansatte.
 -   **Poster partisammenslåingen** – Posterer partisammenslåingen direkte. Denne handlingen kan utføres etter at den fysiske sammenslåingen er foretatt.
 
-Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle partisammenslåinger**. Klikk **Journal**&gt;**Post**. Når en journal er bokført, kan du ikke endre detaljene i det sammenslåtte partiet. Når du har overført en partisammenslåing til en lagerjournal, kan du bare endre detaljene hvis journalen er slettet.
+Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle partisammenslåinger**. Klikk **Journal** &gt; **Poster**. Når en journal er bokført, kan du ikke endre detaljene i det sammenslåtte partiet. Når du har overført en partisammenslåing til en lagerjournal, kan du bare endre detaljene hvis journalen er slettet.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Etter at jeg har flettet en catchweight vare, Hvorfor kan jeg ikke se catchweight informasjonen i lagerjournalen?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se informasjon om faktisk vekt i lagerjournalen når jeg har flettet en faktisk vekt-vare?
 Du kan slå sammen partier med faktisk vekt-varer på samme måte som alle andre varer. Informasjon om faktisk vekt vises imidlertid ikke i lagerjournalen. Vi anbefaler at du kontrollerer informasjonen for faktisk vekt før du overfører pafrtisammenslåingen til lagerjournalen.
+
+
 
 

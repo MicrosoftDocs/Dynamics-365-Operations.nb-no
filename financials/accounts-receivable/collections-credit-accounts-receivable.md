@@ -1,6 +1,6 @@
 ---
 title: Kredit og innkreving i Kunder
-description: "Opplysninger om kunde samlinger behandles i ett sentralt visning ved hjelp av Microsoft Dynamics-365 for samlinger på Operasjoner-siden. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden."
+description: "Informasjon om kundesamlinger behandles i en sentral visning ved hjelp av siden Microsoft Dynamics 365 for Operations-samlinger. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
 
-Opplysninger om kunde samlinger behandles i ett sentralt visning ved hjelp av Microsoft Dynamics-365 for samlinger på Operasjoner-siden. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
+[!include[banner](../includes/banner.md)]
+
+
+Informasjon om kundesamlinger behandles i en sentral visning ved hjelp av siden Microsoft Dynamics 365 for Operations-samlinger. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 
 Før du begynner å sette opp eller arbeide med samlinger, bør du forstår disse begrepene:
 -   Øyeblikksbilder av aldersfordeling for kunder inneholder informasjon på et gitt tidspunkt
@@ -55,9 +58,9 @@ For hver aldersfordelingsperiode i definisjonen av aldersfordelingsperiode oppre
 Kundepuljer er spørringer som definerer en gruppe kundeposter som kan vises og administreres for innkrevinger eller aldersfordelingsprosesser. Bruk kundepuljer for å filtrere informasjon på listesiden Aldersfordelte saldoer, Innkrevingsaktiviteter og Innkrevingssaker. Du bruker også kundepuljer til å filtrere kundekontoene som inkluderes når øyeblikksbilder av aldersfordeling opprettes.
 
 ## <a name="collections-agents"></a>Innkrevingsagenter
-Som standard kan Microsoft Dynamics 365 for operasjoner brukere vise all kundeinformasjon på samlinger listesider. Du kan bruke poster for innkrevingsagenter til å bestemme hvilke kundepuljer som er tilgjengelige for å filtrere informasjon på innkrevingslistesidene og på Innkrevinger-siden. 
+Microsoft Dynamics 365 for Operations-brukere kan vise all kundeinformasjon på innkrevingslistesidene. Du kan bruke poster for innkrevingsagenter til å bestemme hvilke kundepuljer som er tilgjengelige for å filtrere informasjon på innkrevingslistesidene og på Innkrevinger-siden. 
 
-En innkrevingsagent er en person som arbeider med kunder for å sørge for at betalinger kreves inn i tide. I Microsoft Dynamics 365 for operasjoner er samlinger agenter arbeidere som er tilordnet til brukere i siden for konfigurasjon av brukeren.
+En innkrevingsagent er en person som arbeider med kunder for å sørge for at betalinger kreves inn i tide. I Microsoft Dynamics 365 for Operations er innkrevingsagenter arbeidere som er tilordnet til brukere på Brukeroppsett-siden.
 
 ## <a name="collections-list-pages"></a> Listesider for innkrevinger 
 Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
@@ -67,7 +70,7 @@ Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 
 > [!NOTE]
 > Et øyeblikksbilde av aldersfordeling må opprettes før du kan vise informasjon på disse listesidene. Informasjon vises bare for kunder som det er opprettet et øyeblikksbilde av aldersfordeling for. Postene som vises på listesiden, kan også filtreres, på følgende måte:
-<li>Som standard en Microsoft Dynamics-365 for operasjoner brukeren har tilgang til alle kunder som har en aldersfordeling snapshot.</li>
+<li>Som standard har en Microsoft Dynamics 365 for Operations-bruker tilgang til alle kunder som har et øyeblikksbilde av aldersfordeling.</li>
 <li>Hvis det finnes kundepuljer, må en bruker defineres som en innkrevingsagent for å bruke puljer til å filtrere informasjon på innkrevingslistesidene. Informasjon er begrenset til kundene som er med i den valgte kundepuljen.</li>
 <li>Hvis en bruker er konfigurert som innkrevingsagent, er det bare puljene som er valgt for denne innkrevingsagenten, som er tilgjengelige på listesiden. Hvis Tillat agent å vise alle kundepuljer er valgt på siden Innkrevingsagent for innkrevingsagenten, er alle puljer tilgjengelige for denne agenten.</li>
 
@@ -75,7 +78,7 @@ Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 ## <a name="collections-page"></a> Innkrevingssiden
 Bruk siden Innkrevinger til å vise, administrere og utføre handlinger på innkrevingsinformasjon, aktiviteter og saker for en kunde. 
 
-Den øvre ruten viser saker for den valgte kunden. Den midtre ruten viser transaksjoner for kunden. Den nedre ruten viser aktiviteter for kunden. Du kan opprette innkrevingssaker for å spore innkrevingsinformasjon for én eller flere transaksjoner og aktiviteter. Informasjonen i de øvre og nedre ruten kan filtreres etter sak. 
+Den øvre ruten viser saker for den valgte kunden. Den midtre ruten viser transaksjonene for kunden. Den nedre ruten viser aktiviteter for kunden. Du kan opprette innkrevingssaker for å spore innkrevingsinformasjon for én eller flere transaksjoner og aktiviteter. Informasjonen i de øvre og nedre ruten kan filtreres etter sak. 
 
 Faktabokser viser informasjon om aldersfordelte saldoer og kredittgrense for den valgte kunden. Denne informasjonen er lagret i øyeblikksbildet av aldersfordeling. Om nødvendig kan du oppdatere øyeblikksbildet av aldersfordeling med gjeldende informasjon. 
 
@@ -86,7 +89,7 @@ Du kan frafalle, gjenoppta eller reversere hele rentenotaer eller gebyrer og tra
 
 Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer. Bruk fremgangsmåten i delen Opprette avskrivningstransaksjoner i ett trinn for å skrive av alle tilleggene som en kunde skylder.
 
-## <a name="create-writeoff-transactions"></a>Opprett transaksjoner for writeoff
+## <a name="create-writeoff-transactions"></a>Opprette avskrivningstransaksjoner
 Du kan skrive av misligholdt gjeld ved å klikke Avskriv i innkrevingsskjemaet og på listesiden Aldersfordelte saldoer, Kunder og Åpne kundefakturaer. 
 
 Når du avskriver transaksjoner for en kunde, merkes alle transaksjoner for kunden automatisk for utligning. Beløpet som avskrives, avhenger av nettobeløpet for de merkede transaksjonene. Avskrivningstransaksjonen opprettes i en økonomijournal og kan inneholde opptil tre typer journallinjer.
@@ -100,6 +103,8 @@ Behandle betalinger uten dekning
 --------------------------------------------
 
 Du kan behandle betalinger uten dekning ved å klikke Betaling uten dekning på Innkrevinger-siden. Når du klikker denne knappen, blir betalingen avbrutt. Hvis det forekommer et gebyr for betalingen uten dekning for kunden, blir det opprettet en tilleggstransaksjon i en betalingsjournal. Gebyrbeløpet er basert på innstillingene for de automatiske tilleggene. De automatiske tilleggene som gjelder for betalinger uten dekning, angis av gebyrgruppen som er valgt på Bankkontoer-siden for den aktuelle bankkontoen.
+
+
 
 
 

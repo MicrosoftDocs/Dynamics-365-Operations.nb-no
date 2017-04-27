@@ -27,29 +27,34 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Filformater for betalingsmåter
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.
 
-Det finnes to metoder du kan bruke til å få filformater for bruk med betalingen, elektroniske filformater for rapportering (ER) eller et X ++-filformater. Når du setter opp en betalingsmåte for en kunde eller leverandør, angir du hvilke filformater og standarder som skal brukes for betalinger og hvordan betalinger vil bli behandlet. Du kan velge mellom følgende typer formater:
+Det finnes to metoder du kan bruke til å få filformater for bruk med betalingsmåten, ER-filformater (elektronisk rapportering) eller et X ++-filformater. Når du setter opp en betalingsmåte for en kunde eller leverandør, angir du hvilke filformater og standarder som skal brukes for betalinger og hvordan betalinger vil bli behandlet. Du kan velge blant følgende typer formater:
 
 -   Eksporter
 -   Importer
 -   Retur
 -   Remittering
 
-### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: Elektronisk rapportering-filformater
+### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: formater for elektronisk rapportering
 
-Filformater som er basert på ER konfigurasjoner, må du importere konfigurasjonene fra Lifecycle tjenester (LCS). Hvis du vil ha mer informasjon, se [laste ned elektronisk rapportering konfigurasjoner fra levetidstjenester](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du har importert rapportering konfigurasjoner for de filformater, importerte formatene vil være tilgjengelig til å velge på den **betalingsmåter for** siden. Prosessen med å importere og velge filformatene for Europa ligner på fremgangsmåten for Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**. Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
 
-### <a name="method-2-x-file-formats"></a>Metode 2: X ++-filformater
+### <a name="method-2-x-file-formats"></a>Metode 2: X++-filformater
 
-For å velge filformatene som er basert på X ++-kode, kan du fullføre trinnene nedenfor.
+For å velge filformatene som er basert på X++-kode, kan du fullføre trinnene nedenfor.
 
-1.  Gå til den **betalingsmåter for** siden.
-2.  På den **filformater** hurtigfanen, klikker du **Setup**.
-3.  Velg kategorien som samsvarer med filtypen format.
-4.  Velg et filformat fra den **tilgjengelig** og flytte den til den **merket** liste med pil-kontrollen.
-5.  Lukk den **filformater for betalingsmåter for** siden.
-6.  På den **filformater** hurtigfanen, velger du filformatet du bruker for betalingsmåte fra det aktuelle filen format-feltet. Generelt elektronisk rapporteringsalternativer bør settes til **ingen** for X ++-filformater.
+1.  Gå til siden **Betalingsmåter**.
+2.  På **Filformater**-hurtigfanen klikker du **Oppsett**.
+3.  Velg kategorien som samsvarer med filformattypen.
+4.  Velg et filformat fra **Tilgjengelig**-listen og flytt det til **Valgt**-listen med pilkontrollen.
+5.  Lukk siden **Filformater for betalingsmåter**.
+6.  På **Filformater**-hurtigfanen velger du filformatet som skal brukes for betalingsmåten, fra det aktuelle filformatfeltet. Alternativene for generell elektronisk rapportering skal settes til **Ingen** for X++-filformater.
+
+
 
 
 

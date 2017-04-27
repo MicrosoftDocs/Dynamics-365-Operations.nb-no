@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Kongifurere en arbeidsflyt for linjeelement
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emnet forklarer hvordan du konfigurerer et arbeidsflytelement for linjeelement.
 
 Når du skal konfigurere en arbeidsflyt for linjeelement i redigeringsprogrammet for arbeidsflyt, høyreklikker du elementet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Du kan deretter bruke fremgangsmåten nedenfor for å konfigurere egenskapene for arbeidsflyten for linjeelementet.
 
-## <a name="name-the-lineitem-workflow-element"></a>Gi navn til arbeidsflytelementet som lineitem
+## <a name="name-the-lineitem-workflow-element"></a>Navnet på arbeidsflyten for linjeelement
 Følg denne fremgangsmåten for å sette et navn på arbeidsflyten for linjeelement.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -50,6 +53,8 @@ Følg denne fremgangsmåten for å angi om den samme arbeidsflyten skal brukes t
     6.  Hvis du vil kontrollere om settet med betingelsene du har skrevet inn, er riktig konfigurert, klikker du **Test**. På **Test arbeidsflytbetingelse**-siden i **Valider betingelse**-området velger du en post, og deretter klikker du **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte. Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
 
     I kategorien **Arbeidsflyt** velger du arbeidsflyten som skal brukes til å behandle linjeelementer som oppfyller settet med betingelser som du har definert.
+
+
 
 
 

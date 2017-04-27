@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Innkjøpskataloger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver, på et høyt nivå, hvordan innkjøpere kan opprette og vedlikeholde innkjøpskataloger. Innkjøpskataloger definerer varene og tjenestene som de ansatte i firmaet kan bestille for intern bruk.
 
 Innkjøpsansvarlige kan opprette og vedlikeholde kataloger for varene og tjenestene som kan kjøpes for intern bruk i organisasjonen. Når kataloger er satt opp, kan de ansatte i firmaet opprette innkjøpsrekvisisjoner for å bestille fra dem. Katalogene kan brukes til å fremtvinge innkjøpspolicyer, slik at ansatte bare kan bestille varene og tjenestene som er tillatt for den juridiske enheten for innkjøp. Når du oppretter en innkjøpskatalog, bør du vurdere følgende oppgaver:
 
 -   Konfigurer innkjøpskategorihierarkiet før du oppretter katalogen.
--   Bestem hvilke varer du vil at de ansatte skal kunne bestille. Du kan vise eller skjule bestemte produkter i en node i katalogen, eller du kan vise eller skjule alle produkter i en node.
+-   Bestem hvilke varer du vil at de ansatte skal kunne bestille. Du kan vise eller skjule bestemte produkter i en katalognode, eller du kan vise eller skjule alle produkter i en node.
 -   Bestem hvor mange innkjøpskataloger du trenger. Tilgang til en innkjøpskatalog bestemmes av katalogpolicyregelen som du konfigurerer for den juridiske enheten og driftsenheten som en ansatt er tilordnet.
 
 Flere faktorer bestemmer produktene som ansatte kan bestille og innkjøpskategoriene som de kan bruke når de oppretter innkjøpsrekvisisjoner:
@@ -52,7 +55,7 @@ Tabellen nedenfor beskriver oppgavene som må fullføres før en innkjøper kan 
 ## <a name="setting-up-a-catalog"></a>Definere en katalog.
 Når forutsetningene er oppfylt, kan du opprette en kataloger. Du kan opprette enten en katalog som brukes i hele organisasjonen, eller flere kataloger som brukes av de forskjellige avdelingene i organisasjonen. Hvis du oppretter en katalog for hele organisasjonen, kontrolleres tilgangen til katalogen av policyregler for innkjøp.  
 
-Katalogen definerer hvilke varer som er tilgjengelig når innkjøpsrekvisisjoner opprettes, men du kan bruke policyregler for tilgang til innkjøpskatalog for å bruke flere begrensninger. Siden nodene i en katalog er innkjøpskategorier, kan de deaktiveres av en policyregel for kategoritilgang. I dette tilfellet er produktene i denne kategorien ikke tilgjengelig for ansatte på innkjøpsrekvisisjoner. Du definerer policyregler for tilgang til på den **innkjøpspolicyer** siden. Tabellen nedenfor beskriver oppgavene som må fullføres hvis du vil definere en katalog.
+Katalogen definerer hvilke varer som er tilgjengelig når innkjøpsrekvisisjoner opprettes, men du kan bruke policyregler for tilgang til innkjøpskatalog for å bruke flere begrensninger. Siden nodene i en katalog er innkjøpskategorier, kan de deaktiveres av en policyregel for kategoritilgang. I dette tilfellet er produktene i denne kategorien ikke tilgjengelige for ansatte til bruk på innkjøpsrekvisisjoner. Du definerer tilgang til innkjøpskatalog på siden **Innkjøpspolicyer**. Tabellen nedenfor beskriver oppgavene som må fullføres hvis du vil definere en katalog.
 
 | Oppgave                                                   | Rolle             | Beskrivelse                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Oppdateringer publiseres enten automatisk eller manuelt, avhengig av hvilket alt
 <a name="see-also"></a>Se også
 --------
 
-[Definere et innkjøpskategorihierarki (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Definere et innkjøpskategorihierarki (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

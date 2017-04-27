@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha.
 
 Avhengig av oppsettet for organisasjonen kan du opprette innkjøpsrekvisisjoner for produkter som organisasjonen din bruker. En innkjøpsrekvisisjon er et internt dokument som gir innkjøpsavdelingen autorisasjon til å kjøpe inn varer eller tjenester.  
@@ -48,7 +51,7 @@ Du kan konfigurere arbeidsflytprosessen for innkjøpsrekvisisjon for å sende en
 
 Diagrammet nedenfor viser statusene som er tilordnet til en innkjøpsrekvisisjon og en innkjøpsrekvisisjonslinje når de flyttes i arbeidsflytprosessen.  
 
-[![Innkjøpsrekvisisjonshodet og status for linjen](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statuser for innkjøpsrekvisisjonshode og -linjer](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relasjoner mellom status for innkjøpsrekvisisjonshode og linjer
 
@@ -77,7 +80,7 @@ Den overordnede statusen for en innkjøpsrekvisisjon bestemmes av statusen for i
 <td>Hvis arbeidsflyten er konfigurert til å rute innkjøpsrekvisisjonslinjene til individuelle kontrollører, kan hver linje ha statusen <strong>Til vurdering</strong> eller <strong>Avvist</strong>. Statusen for innkjøpsrekvisisjonen oppdateres når kontrollprosessen er fullført for alle innkjøpsrekvisisjonslinjer og ingen vurderingstrinn gjenstår for innkjøpsrekvisisjonen.
 <ul>
 <li><strong>Til vurdering</strong> – Innkjøpsrekvisisjonslinjene er sendt til gjennomgang. Når arbeidsflytprosessen er fullført for en innkjøpsrekvisisjonslinje, forblir statusen for denne linjen <strong>Til vurdering</strong> til alle gjenværende innkjøpsrekvisisjonslinjer er gjennomgått.</li>
-<li><strong>Avviste</strong> – en innkjøpsrekvisisjonslinje har blitt forkastet. Innkjøpsrekvisisjonslinjer som er avvist kan endres og sendes på nytt.</li>
+<li><strong>Avvist</strong> – En innkjøpsrekvisisjonslinje er avvist. Innkjøpsrekvisisjonslinjer som er avvist kan endres og sendes på nytt.</li>
 </ul>
 Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kontrollprosessen på nytt for alle linjene i innkjøpsrekvisisjonen som fortsatt er til vurdering. <strong>Obs!</strong> Du kan tilbakekalle en innkjøpsrekvisisjon som allerede er sendt. Når du tilbakekaller en innkjøpsrekvisisjon, blir også alle andre innkjøpsrekvisisjonslinjer tilbakekalt. Innkjøpsrekvisisjonslinjer som har blitt tilbakekalt, kan slettes.</td>
 </tr>
@@ -133,7 +136,7 @@ Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kon
 Du kan distribuere kostnadene for et produkt som er inkludert i en innkjøpsrekvisisjon, til flere finanskontoer. Hvis organisasjonen bruker dimensjoner, for eksempel kostsentre og avdelinger, kan du distribuere kostnaden for et produkt til dimensjoner for finansielle kontoer.
 
 ## <a name="requisition-purposes"></a>Rekvisisjonsformål
-Rekvisisjonsformål gjør prosessen med å oppfylle rekvisisjonsbehov mer fleksibel. Når du oppretter en rekvisisjon, kan du tilordne ett av to formål til den: forbruk eller etterfylling. Avhengig av formålet for innkjøpsrekvisisjon og oppsettet av organisasjonen, kan innkjøpsrekvisisjon behovet oppfylles av en bestilling, overføringsordre, produksjonsordre eller kanban.  
+Rekvisisjonsformål gjør prosessen med å oppfylle rekvisisjonsbehov mer fleksibel. Når du oppretter en rekvisisjon, kan du tilordne ett av to formål til den: forbruk eller etterfylling. Avhengig av rekvisisjonsformålet og oppsettet av organisasjonen, kan rekvisisjonsbehovet oppfylles av en bestilling, overføringsordre, produksjonsordre eller kanban.  
 
 I innkjøpspolicyene kan du kontrollere rekvisisjonsformålene som er tilgjengelige når en rekvisisjon opprettes for organisasjonen.
 
@@ -152,7 +155,7 @@ Hvis du vil bruke innkjøpsrekvisisjoner som har etterfylling som formål, må d
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Innkjøpsrekvisisjoner og forespørsler om tilbud
 I noen tilfeller må du starte en prosess for tilbudsforespørsel for å identifisere leverandøren og prisen for produkter som er forespurt i en innkjøpsrekvisisjon. En tilbudsforespørsel kan bli generert når innkjøpsrekvisisjonen er til vurdering. Når du godkjenner et bud, overføres informasjon om leverandør, pris og så videre, til rekvisisjonen.  
 
-Du kan sette en innkjøpsrekvisisjon på vent ved å velge den **på vent** merket i den **detaljer for innkjøpsrekvisisjon** siden. Behandling av innkjøpsrekvisisjonen kan fortsette etter at du har fjernet hold ved å fjerne merket for.  
+Du kan sette en innkjøpsrekvisisjon på vent ved å merke av for **På vent** på siden **Detaljer om innkjøpsrekvisisjon**. Behandling av innkjøpsrekvisisjonen kan fortsette bare etter at du fjerner sperren ved å fjerne merket.  
 
 **Obs!** I eProcurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
 
@@ -178,7 +181,7 @@ Hvis du vil opprette en bestilling for innkjøpsrekvisisjonslinjer som ikke er k
 
 Prosessen for behovskonsolidering starter når en innkjøpsrekvisisjon er godkjent i en arbeidsflyt, og, hvis budsjettkontroll er er konfigurert for organisasjonen, når budsjettreservasjonene og forhåndsdisposisjoner er registrert. Diagrammet nedenfor viser prosessflyten for behovskonsolidering.  
 
-[![Prosessflyten for behovskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Prosessflyt for behovskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgende:
 
@@ -192,8 +195,10 @@ Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgend
 <a name="see-also"></a>Se også
 --------
 
-[Opprette en innkjøpsrekvisisjon for forbruk (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Opprette en rekvisisjon for forbruk (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Arbeidsflyten for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
+
+
 
 

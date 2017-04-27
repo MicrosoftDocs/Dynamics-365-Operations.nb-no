@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Karanteneordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan karanteneordrer brukes til å blokkere beholdning. 
 
-Karanteneordrer kan brukes til å blokkere lager. Du kan for eksempel karantene elementer kvalitetskontroll grunner. Lager som har blitt satt i karantene overføres til et karantenelager. **Obs!** Hvis du bruker avanserte lagerstyringsprosesser (i Lagerstyring), brukes behandling av karanteneordrer bare for retur av salgsordrer.
+Karanteneordrer kan brukes til å blokkere lager. Du kan for eksempel sette varer i karantene av kvalitetskontrollgrunner. Beholdning som har blitt satt i karantene overføres til et karantenelager. **Obs!** Hvis du bruker avanserte lagerstyringsprosesser (i Lagerstyring), brukes behandling av karanteneordrer bare for retur av salgsordrer.
 
-## <a name="quarantine-onhand-inventory-items"></a>Karantene onhand varer
+## <a name="quarantine-onhand-inventory-items"></a>Sette lagerbeholdningsvarer i karantene
 Når du setter varer i karantene, kan du opprette karanteneordrene manuelt eller konfigurere systemet til å opprette karanteneordrene automatisk under innkommende behandling. Du kan opprette karanteneordrer automatisk ved å velge **Karantenestyring** i kategorien **Beholdningspolicyer** på siden **Varemodellgrupper**. Du må også angi et standard karantenelager i feltet **Karantenelager** for de mottakende lagrene. Når den fysiske lagerbeholdningen er registrert i en bestilling eller produksjonsordre, flyttes varer i karantene automatisk til et karantenelager i Microsoft Dynamics 365 for Operations. Denne bevegelsen oppstår fordi statusen for karanteneordren er endret til **Startet**. Når du opprette karanteneordrer manuelt, trenger ikke den gjeldende varen være definert for karantenestyring i den tilknyttede varemodellgruppen. For denne prosessen må du angi lagerbeholdningen som skal være satt i karantene, og karantenelageret som skal brukes. Du kan bruke karanteneordrestatusene til å planlegge prosessen.
 
 ## <a name="quarantine-order-statuses"></a>Statuser for karanteneordrer
@@ -64,6 +67,8 @@ Du kan kassere beholdning som en del av karantenebestillingsprosessen. Når du b
 <a name="see-also"></a>Se også
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Lagerblokkering](inventory-blocking.md)
+
+
 
 

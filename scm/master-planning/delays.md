@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Forsinkelser
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om forsinkede datoer i hovedplanlegging. En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato.
 
 Hovedplanlegging kan beregne den tidligste fullføringsdatoen for en transaksjon, basert på leveringstider, materialtilgjengelighet, tilgjengelig kapasitet og forskjellige planleggingsparametere. 
@@ -41,11 +44,13 @@ Du kan konfigurere hvordan forsinkelser beregnes for en dekningsgruppe. Du kan d
 
 På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for beregning av forsinkelser. Hvis en ordre er utført etter dette tidspunktet, legges det til én dag i forsinkelsen av ordren. 
 
-**Merk:** i tidligere versjoner, beregnet forsinkelser som var kjent som *terminmeldinger*, forsinket datoen var kjent som den *termindatoen*, og en forsinket transaksjon ble referert til som *en transaksjon som ble Sett fremtidige*.
+**Obs!**  I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen*, og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.
 
 <a name="see-also"></a>Se også
 --------
 
 [Dekningsinnstillinger](coverage-settings.md)
+
+
 
 

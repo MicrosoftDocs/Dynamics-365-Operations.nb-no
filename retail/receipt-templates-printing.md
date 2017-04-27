@@ -1,6 +1,6 @@
 ---
 title: Kvitteringsmaler og utskrift
-description: "Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for operasjoner - Retail inkluderer oppsett skjemautformer som du kan bruke til å opprette og endre forskjellige typer skjemaoppsett."
+description: "Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Operations - Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="receipt-templates-and-printing"></a>Kvitteringsmaler og utskrift
 
-Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for operasjoner - Retail inkluderer oppsett skjemautformer som du kan bruke til å opprette og endre forskjellige typer skjemaoppsett.
+[!include[banner](includes/banner.md)]
 
-**Viktig:** du må definere skjemaoppsett og mottak profiler for å skrive ut kvitteringer og andre dokumenter fra moderne Kvitteringen og sky POS. Du kan inkludere flere skjemaoppsett i en profil for mottak. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
+
+Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Operations - Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
+
+**Viktig! ** Du må konfigurere skjemaoppsett og kvitteringsprofiler for å skrive ut kvitteringer og andre dokumenter fra moderne salgssted for detaljhandel og skysalgssted. Du kan inkludere flere skjemaoppsett i en kvitteringsprofil. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
 
 ## <a name="set-up-a-receipt-format"></a>Konfigurere en kvitteringsprofil
-1.  Klikk **Retail og commerce**&gt;**kanaloppsett**&gt;**POS installasjonsprogrammet**&gt;**POS**&gt;**mottak Formater**.
+1.  Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
 2.  På siden **Kvitteringsformat** klikker du **Ny** for å opprette et nytt skjemaoppsett, eller velger et eksisterende skjemaoppsett.
 3.  I **Kvitteringsformat**-feltet skriver du inn en ID for skjemaoppsettet, og deretter velger du kvitteringstypen som oppsettet brukes for. Du kan også skrive inn en beskrivelse og et kort navn for kvitteringen i **Tittel**-feltet.
 4.  På hurtigkategorien **Generelt** velg et alternativ for å definere virkemåten for utskrift:
@@ -44,11 +47,11 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
 ## <a name="design-a-receipt-format"></a>Utforme et kvitteringsformat
 Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokumentet. Siden **Utforming av kvitteringsformat** består av tre deler: **hode**, **linjer** og **bunntekst**. Noen typer skjemaoppsett bruker elementer fra alle tre delene, mens andre typer bruker elementer fra bare én eller to deler. Hvis du vil vise elementene som er tilgjengelige for hver del, klikker du den aktuelle knappen i navigasjonsruten til venstre på siden.
 
-1.  Klikk **Retail og commerce**&gt;**kanaloppsett**&gt;**POS installasjonsprogrammet**&gt;**POS**&gt;**mottak Formater**.
+1.  Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
 2.  På siden **Kvitteringsformat** velger du et skjemaoppsett, og klikk deretter **Utforming**.
 3.  Klikk **Kjør** for å installere utformingsverten for detaljhandel.
-4.  I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å installere ettklikksutformingen. (Varselfeltet kan vises på et annet sted i andre lesere.) Fremdriftsindikatoren viser fremdriften for installasjonen.
-5.  Når installasjonen er fullført, angir du Dynamics-365 for operasjoner brukernavn og passord, og klikk deretter **logge på** til å starte utformingen.
+4.  I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å installere ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.) Fremdriftsindikatoren viser fremdriften for installasjonen.
+5.  Når installasjonen er fullført, angir du Microsoft Dynamics 365 for Operations-brukernavnet og passordet, og klikk deretter på **Logg på** for å starte utformingen.
 6.  Når legitimasjonen er validert og utformingen starter, kan du begynne å utforme kvitteringsformatet eller endre et eksisterende format.
 7.  Hvis du vil opprette elementene for skjemaet, velger du delen **Hode**, **Linjer** eller **Bunntekst**, og deretter drar du et element fra denne delen til arbeidsområdet. De fleste elementene inneholder variabler som automatisk fylles ut med data fra databasen. Andre elementer, for eksempel **Tekst**, lar deg skrive ut egendefinert tekst på kvitteringen. **Obs!** Du kan angi hvor mange linjer som hver del skal omfatte, ved å justere antallet nederst til høyre i denne delen. For å gjøre det lettere å endre en del kan du øke høyden ved å dra størrelseslinjen nederst i delen. Høyden på delen i arbeidsområdet påvirker ikke antall linjer på selve kvitteringen.
 8.  Når du har dratt et element til arbeidsområdet, angir du egenskapene for delen i **Objektinformasjon**-ruten nederst på siden. Angi én eller flere av følgende innstillinger:
@@ -63,9 +66,11 @@ Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokum
 ## <a name="assign-receipt-profiles"></a>Tilordne kvitteringsprofiler
 Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
-1.  Åpne maskinvareprofilen ved å klikke **Retail og commerce**&gt;**kanaloppsett**&gt;**POS installasjonsprogrammet**&gt;**POS profiler**&gt;**maskinvareprofil**.
+1.  Åpne maskinvareprofilen ved å klikke på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofil**.
 2.  Velge skriveren, og deretter i feltet **Kvitteringsprofil **tilordne kvitteringsprofilen som skal brukes for kassen.
 
 **Obs!** Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
+
+
 
 

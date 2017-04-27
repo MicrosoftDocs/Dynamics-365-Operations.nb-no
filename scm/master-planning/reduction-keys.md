@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Reduksjonsnøkler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Eksempel 1: Prosent - reduksjonsprinsipp for reduksjonsnøkkelprognose
@@ -58,7 +61,7 @@ Hvis du kjører prognoseplanlegging 1. januar, forbrukes behovene i behovsprogno
 | April                | 750                       |
 | Mai til desember | 1 000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Eksempel 2: Transaksjoner reduksjonsnøkkelen prognose Reduksjonsprinsipp
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Eksempel 2: Transaksjoner - reduksjonsprinsipp for reduksjonsnøkkelprognose
 Dette eksemplet viser hvordan faktiske ordrer som skjer i periodene som er definert av reduksjonsnøkkelen, reduserer behovene i behovsprognosen.
 
 -   På **Hovedplaner**-siden, i **Reduksjonsprinsipp**-feltet, velger du **Transaksjoner - reduksjonsnøkkel**.
@@ -82,7 +85,7 @@ Hvis du bruker den samme behovsprognosen på 1 000 stykker per måned, overføre
 | April                | 881                       |
 | Mai til desember | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Transaksjoner dynamisk periode prognose Reduksjonsprinsipp
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Transaksjoner - reduksjonsprinsipp for dynamisk periodeprognose
 I de fleste tilfeller er systemer er satt opp slik at transaksjoner reduserer behovsprognose i bestemte perioder for prognose: uker, måneder og så videre. Disse er definert i reduksjonsnøkkelen. Tiden mellom to behovsprognoselinjer kan imidlertid også *angi* en periode.
 
 1.  Opprett en behovsprognose for følgende datoer og antall.
@@ -129,6 +132,8 @@ Her er et sammendrag av reduksjonen **Transaksjoner - dynamisk periode**:
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Hovedplaner](master-plans.md)
+
+
 
 

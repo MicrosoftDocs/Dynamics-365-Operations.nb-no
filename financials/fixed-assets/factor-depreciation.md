@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Faktoravskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over faktoravskrivningsmetoden.
 
 Faktorer er prosentandeler som brukes til å avskrive midler. Når du definerer en avskrivningsprofil for anleggsmidler og velger **Faktor** i **Metode**-feltet på **Avskrivningsprofiler**, kan du definere progressiv, degressiv eller lineær avskrivning:
@@ -39,14 +42,14 @@ Faktorer er prosentandeler som brukes til å avskrive midler. Når du definerer 
 Reglene og eksemplene nedenfor indikerer hvordan du kan definere faktorer for hver avskrivningstype. 
 
 > [!NOTE] 
-> Når du velger **faktor** i den **metoden** -feltet i **faktor** feltet og **intervall** feltet, vises.
+> Når du velger **Faktor** i **Metode**-feltet, vises **Faktor**-feltet og **Intervall**-feltet.
 
 ## <a name="progressive-depreciation"></a>Progressiv avskrivning
 Verdien i **Faktor**-feltet er større enn **50**.
 
 ### <a name="example"></a>Eksempel
 
-Anskaffelsesprisen er 100 000, faktoren er 70, levetiden er 10 år og avskrivningen begynner med 1. Avskrivningsbeløp og netto bokført verdi beløp vises bare for de første seks årene av levetiden.
+Anskaffelsesprisen er 100 000, faktoren er 70, levetiden er 10 år og avskrivningen starter 1. januar. Avskrivningsbeløpet og beløpet for netto bokført verdi vises kun i de første seks årene av levetiden.
 
 | År | Periode      | Avskrivningsbeløp | Netto bokført verdibeløp |
 |------|-------------|---------------------|-----------------------|
@@ -62,7 +65,7 @@ Verdien i **Faktor**-feltet er mindre enn **50**.
 
 ### <a name="example"></a>Eksempel
 
-Anskaffelsesprisen er 100 000, faktoren er 20, levetiden er 10 år og avskrivningen begynner med 1. Avskrivningsbeløp og netto bokført verdi beløp vises bare for de første seks årene av levetiden.
+Anskaffelsesprisen er 100 000, faktoren er 20, levetiden er 10 år og avskrivningen starter 1. januar. Avskrivningsbeløpet og beløpet for netto bokført verdi vises kun i de første seks årene av levetiden.
 
 | År | Periode      | Avskrivningsbeløp | Netto bokført verdibeløp |
 |------|-------------|---------------------|-----------------------|
@@ -75,5 +78,7 @@ Anskaffelsesprisen er 100 000, faktoren er 20, levetiden er 10 år og avskrivni
 
 ## <a name="straight-line-depreciation"></a>Lineær avskrivning
 Verdien i **Faktor**-feltet er lik **50**. I dette tilfellet er avskrivningen den samme i hver periode, og du bør vurdere hvilke implikasjoner dette valget kan ha for andre felt. Les mer i [Lineær levetidsavskrivning](straight-line-service-life-depreciation.md).
+
+
 
 

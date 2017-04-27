@@ -43,11 +43,11 @@ Flisene **Sammendrag** gir en oversikt over fakturaer for den valgte leverandør
 Ved å klikke en flis, vises det en filtrert visning av siden **Fakturaliste**.
 ### <a name="tabular-lists"></a>Tabellister
 
-I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister. Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes. Den siste Tabelliste er et alternativ for å finne fakturaer. Du kan filtrere når du søker, slik at for raskere søk.
+I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister. Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes. Den siste tabellisten er et alternativ for å finne fakturaer. Du kan filtrere når du søker, slik at søk utføres raskere.
 Side med liste over alle leverandørfakturaer
 -----------------------------
 
-Du kan vise alle posterte og uposterte leverandørfakturaer i den **samarbeid leverandørfakturaer** listesiden. Du kan bruke denne listesiden til å vise betalingsstatusen for fakturaene. Betalingsstatusene inkluderer Ikke-bokført, Ubetalt, Delvis betalt og Fullt betalt.
+Du kan vise alle posterte og uposterte leverandørfakturaer på listesiden **Leverandørsamarbeidsfakturaer**. Du kan bruke denne listesiden til å vise betalingsstatusen for fakturaene. Betalingsstatusene inkluderer Ikke-bokført, Ubetalt, Delvis betalt og Fullt betalt.
 Opprette en ny faktura fra en bestilling
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Du kan opprette en ny leverandørfaktura ved å velge handlingen **Ny** i arbeid
 
 
 
-Hvis du vil ha mer informasjon, se [samarbeider med leverandører ved hjelp av portalområdet for leverandør](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Hvis du vil ha mer informasjon, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

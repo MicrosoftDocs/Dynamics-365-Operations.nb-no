@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder eksempler på treveis samsvar.
 
 <a name="example-three-way-matching-for-items"></a>Eksempel: Treveis kontrollpolicyer for varer
@@ -62,7 +65,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Han angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
-    -   For varer som krever toveis eller treveis samsvar, er prisene på fakturalinjen innenfor toleransen som er definert i Microsoft Dynamics 365 for Operations.This inneholder følgende typer samsvarer med pris:
+    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Operations. Dette inkluderer følgende typer prissamsvar:
         -   Nettoenhetspriskontroll – Nettoenhetsprisen på fakturalinjen samsvarer med nettoenhetsprisen på bestillingslinjen, innenfor toleranseprosenten. I dette eksemplet er toleransen for nettoenhetsprisen +8 %.
         -   Pristotalkontroll – Nettobeløpet på fakturalinjen samsvarer med nettobeløpet på bestillingslinjen, innenfor toleranseprosenten, beløpet eller prosenten og beløpet. I dette eksemplet er toleransen for pristotalkontroll +15 %.
 
@@ -75,7 +78,7 @@ Papirfakturaen fra Contoso inneholder følgende informasjon.
 | Mva                         |          |            | 0,00       |
 | Sum                       |          |            | 44 500,00  |
 
-I Microsoft Dynamics 365 for operasjoner inneholder fakturalinjen følgende informasjon.
+Fakturalinjen inneholder følgende informasjon i Microsoft Dynamics 365 for Operations.
 
 | Varenummer                 | Antall | Enhetspris | Nettobeløp for linje | Kontrollpolicy    | Samsvar i antall i produktkvittering | Prissamsvar | Pristotalsamsvar |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -111,7 +114,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 1.  Varene ankommer. Sammy, en arbeider i mottaksavdelingen på Malaysia-kontoret til Fabrikam, blir avbrutt og bokfører ikke produktkvitteringen med en gang.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
-    -   For varer som krever toveis eller treveis samsvar, er prisene på fakturalinjen innenfor toleransen som er definert i Microsoft Dynamics 365 for operasjoner. Dette omfatter følgende typer samsvarer med pris:
+    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Operations. Dette inkluderer følgende typer prissamsvar:
         -   Nettoenhetspriskontroll – Nettoenhetsprisen på fakturalinjen samsvarer med nettoenhetsprisen på bestillingslinjen, innenfor toleranseprosenten. I dette eksemplet er toleransen for nettoenhetsprisen +2 %.
         -   Pristotalkontroll – Nettobeløpet på fakturalinjen samsvarer med nettobeløpet på bestillingslinjen, innenfor toleranseprosenten, beløpet eller prosenten og beløpet. I dette eksemplet er toleransen for pristotalkontroll +10 %.
 
@@ -124,7 +127,7 @@ Papirfakturaen fra Contoso inneholder følgende informasjon.
 | USB-enhet             | 200      | 10,05      | 2 010,00   |
 | Totalt faktura         |          |            | 7 092,00   |
 
-I Microsoft Dynamics 365 for operasjoner inneholder fakturalinjen følgende informasjon.
+Fakturalinjen inneholder følgende informasjon i Microsoft Dynamics 365 for Operations.
 
 | Varenummer           | Antall | Enhetspris | Nettobeløp for linje | Kontrollpolicy    | Samsvar i antall i produktkvittering | Prissamsvar | Pristotalsamsvar |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -140,6 +143,8 @@ Merk følgende:
 Hvis godkjenning er nødvendig for at fakturaer kan posteres med fakturauoverensstemmelser, må Godkjenn postering med samsvarende avvik på siden Fakturakontrolldetaljer velges før fakturaen kan posteres med prissamsvarsfeil og antallsamsvarsfeil. Hvis godkjenning ikke kreves, kan fakturabehandlingen fortsette hvis det ikke er andre posteringsfeil.
 
 
-Hvis du vil ha mer informasjon, se [kontoer leverandørfakturasamsvar](accounts-payable-invoice-matching.md).
+Hvis du vil ha mer informasjon, kan du se [Fakturasamsvar for leverandører](accounts-payable-invoice-matching.md).
+
+
 
 

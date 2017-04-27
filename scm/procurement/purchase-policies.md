@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Innkjøpspolicyer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
 
 En innkjøpspolicy består av et sett med policyregler. Når du definerer en policyregel, velger du først en regeltype. Du oppretter deretter en regel for regeltypen ved å definere innstillingene, startdato og sluttdato for regelen.  
@@ -41,13 +44,13 @@ Flere regler kan påvirke brukerne i en organisasjon, avhengig av hvordan du kon
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Eksempel 1: Enkel konfigurasjon av innkjøpspolicy
 
-Organisasjoner som er små og mindre kompleks kan definere innkjøp policyer for juridisk enhet, og kan bruke bare selskaper organisasjonshierarkiet.  
+Organisasjoner som er små og mindre komplekse kan definere innkjøpspolicyer etter juridisk enhet, og kan bare bruke organisasjonshierarkiet Firmaer.  
 
 For Fabrikam, en liten bedrift, varierer innkjøpskravene lite på tvers av organisasjonen. Innkjøpsreglene varierer bare mellom organisasjonens juridiske enheter. For eksempel kjøper ansatte i Fabrikam Canada og ansatte i Fabrikam USA varer og tjenester fra ulike kataloger og forskjellige leverandører. Dermed angir Fabrikam dets innkjøpspolicyer på nivået for juridisk enhet.  
 
-Fabrikam oppretter to innkjøpspolicyer. A-policyen brukes på den amerikanske juridisk enheten 1111. B-policyen brukes på den kanadiske juridisk enheten 2222. Når en ansatt i juridisk enhet 1111 oppretter en innkjøpsrekvisisjon, er policyregler avledet fra policyen A. For eksempel er produktkatalogen som ser ansatt som angitt i katalogpolicyregel for policyen A.  
+Fabrikam oppretter to innkjøpspolicyer. A-policyen brukes på den juridiske enheten for USA, 1111. B-policyen brukes på den juridiske enheten for Canada, 2222. Når en ansatt i den juridiske enheten 1111 oppretter en innkjøpsrekvisisjon, avledes policyreglene fra policyen A. Produktkatalogen som den ansatte ser, er for eksempel angitt i katalogpolicyregel for policyen A.  
 
-Når en ansatt i juridisk enhet 2222 oppretter en innkjøpsrekvisisjon, er policyregler avledet fra policyen B.  
+Når en ansatt i den juridiske enheten 2222 oppretter en innkjøpsrekvisisjon, avledes policyreglene fra policyen B.  
 
 **Merk:** Hvis en ansatt for juridisk enhet 1111 kjøper en vare på vegne av en ansatt for juridisk enhet 2222, brukes policyreglene som er angitt for den juridiske enheten 2222 (det vil si policyreglene fra policyen B).
 
@@ -117,7 +120,7 @@ Kontrollregel for etterfylling er en valgfri regel som definerer feltene som må
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Konsolideringsregel for bestillingsopprettelse og behov
 
-Kjøp rekkefølgen oppretting og etterspørsel konsolidering regelen definerer policyreglene som skal brukes når en bestilling blir generert fra en godkjent innkjøpsrekvisisjonen. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
+Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene skal brukes når en bestilling genereres fra en godkjent innkjøpsrekvisisjon. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
 
 -   I kategorien **Bestillingsdeling** kan du definere vilkår for å dele innkjøpsrekvisisjonslinjene inn i separate bestillinger.
 -   I kategorien **Pris-/rabattoverføring** kan du definere når du skal omberegne prisavtalen når en bestilling opprettes:
@@ -126,7 +129,7 @@ Kjøp rekkefølgen oppretting og etterspørsel konsolidering regelen definerer p
 
     Du kan også tillate at bestilleren endrer metoden for pris- og rabattoverføring for enkeltlinjer i innkjøpsrekvisisjonen, uavengig av regelen for overføring av priser/tabatter som er definert. Velg alternativet **Tillat manuell overstyring av innkjøpsrekvisisjonslinje** hvis du vil aktivere denne funksjonen.
 -   I kategorien **Overføring av varebeskrivelse** kan du overføre varebeskrivelsen fra rekvisisjonen når den kommer fra en Tilbudsforespørsel.
--   I kategorien **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet er beregnet ved hjelp av følgende formel: (\[antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabatt-prosent) ÷ 100 innkjøpsrekvisisjonslinjer som overskrider pristoleransen du angir holdes i manuell behandling. Reglene du konfigurerer i kategorien **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
+-   I kategorien **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet beregnes ved å bruke følgende formel: (\[Antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabattprosent) ÷ 100. Innkjøpsrekvisisjonslinjer som overskrider pristoleransen du har angitt, blir låst for manuell behandling. Reglene du konfigurerer i kategorien **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
 -   I kategorien **Feilbehandling** kan du konfigurere behandlingsregelen som skal brukes for en innkjøpsrekvisisjon hvis den ikke kan valideres når bestillingen opprettes, på grunn av en leverandørfeil eller en pristoleransefeil. Velg ett av følgende alternativer:
     -   **Ingen handling** – innkjøpsrekvisisjonslinjene forblir på siden **Frigi godkjente innkjøpsrekvisisjoner**. Statusen for innkjøpsrekvisisjonslinjene blir værende **Godkjent**. Feilene må imidlertid løses før en bestilling kan genereres for innkjøpsrekvisisjonslinjene.
     -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis han eller hun fortsatt ønsker å rekvirere linjevarene.
@@ -141,6 +144,8 @@ Kjøp rekkefølgen oppretting og etterspørsel konsolidering regelen definerer p
     -   **Ikke tillat etterspørselskonsolidering** – ingen godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. Dette alternativet er valgt som standard og gjelder bare for innkjøpsrekvisisjonslinjer som krever manuell behandling ved oppretting av bestillinger.
     -   **Tillat alltid etterspørselskonsolidering** – alle godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. **Obs!** Hvis du velger alternativet **Tillat alltid etterspørselskonsolidering** i kategorien **Behovskonsolidering**, men du velger alternativet **Opprett automatisk bestillinger** i kategorien **Manuell bestillingsopprettelse**, blir alle innkjøpsrekvisisjoner låst for manuell behandling.
     -   **Tillat etterspørselskonsolidering under disse betingelsene** – Definer kriteriene som bestemmer om godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. For hver type innkjøpsrekvisisjonslinje kan du angi kriteriene etter innkjøpskategori og leverandør. Hvis du velger **Tillat etterspørselskonsolidering under disse betingelsene**, kan du angi kriteriene etter innkjøpskategori og leverandør for hver type innkjøpsrekvisisjonslinje. Når du velger en innkjøpskategori, blir alle underkategorier for denne innkjøpskategorien også valgt. Hvis du velger **Alle** for en bestemt linjetype, er alle innkjøpsrekvisisjonslinjene for denne linjetypen berettiget til behovskonsolidering.
+
+
 
 
 

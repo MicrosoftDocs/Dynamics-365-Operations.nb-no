@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Overvåkingspolicybrudd og -saker
 
+[!include[banner](../includes/banner.md)]
+
+
 Artikkelen forklarer hvordan overvåkingssaker genereres basert på brudd på overvåkingspolicyregler. Den inneholder også informasjon om de forskjellige måtene overvåkingspolicyer bruker datoområdet for dokumentvalg.
 
 <a name="how-audit-cases-are-generated"></a>Hvordan overvåkingssaker genereres
@@ -39,10 +42,10 @@ Overvåkingspolicyer kjører i satsvis modus. Når du kjører en overvåkingspol
 
 Hver policyregel vurderer et sett med dokumenter. Policyregelen velger dokumenter som er i datoområdet for dokumentutvalg og oppfyller de angitte kriteriene. En policyregel kan for eksempel velge utgiftsrapporter som har måltider som overskrider 500,00. En annen policyregel kan velge leverandørfakturaer som betales til en bestemt leverandør. Det genereres et brudd for hvert dokument som velges i settet. Dette bruddet er en post der et bestemt dokument, for eksempel faktura 12345, ikke er i tråd med policyregelen. 
 
-Flere poster for overvåkingsbrudd grupperes og knyttes til overvåkingssaker. Saker for hver overvåkingspolicy grupperes som standard etter overvåkingspolicyregel. Hvis du vil, kan du velge andre grupperingskriterier ved på siden **Kriterier for saksgruppering**. Du kan for eksempel gruppere utgifter topp av prosjektfakturaer-ID og leverandør av leverandørkontoen. I dette tilfellet alle utgifter hodet overtredelser som har samme prosjekt-IDen blir gruppert i samme tilfelle, og alle leverandørfakturaer som har samme leverandørkonto blir gruppert i samme tilfelle. 
+Flere poster for overvåkingsbrudd grupperes og knyttes til overvåkingssaker. Saker for hver overvåkingspolicy grupperes som standard etter overvåkingspolicyregel. Hvis du vil, kan du velge andre grupperingskriterier ved på siden **Kriterier for saksgruppering**. Du kan for eksempel gruppere utgiftshoder etter prosjekt-ID og leverandørfakturaer etter leverandørkonto. I dette tilfellet grupperes alle utgiftshodebrudd som har samme prosjekt-ID, i samme sak, og alle leverandørfakturaer som har samme leverandørkonto, grupperes i samme sak. 
 
 > [!NOTE]
-> For overvåkingspolicyregler som er basert på en **like** spørringstype, brudd som ikke er gruppert etter policyregel eller vilkårene som er angitt i den **Case grupperingskriteriene** siden. I stedet grupperes de etter kriteriene som er innebygd i overvåkingspolicyregelen. Hvis en policyregel for eksempel evaluerer utgiftsrapporter for dupliserte utgifter av samme beløp, forretningsenhets-ID og dato, er alle utgifter som har de samme verdiene i disse feltene, én sak. Alle utgifter som har andre verdier, er en separat sak.
+> Når det gjelder overvåkingspolicyregler som er basert på spørringstypen **Duplikat**, grupperes ikke brudd etter policyregel eller kriteriene som er angitt på siden **Kriterier for saksgruppering**. I stedet grupperes de etter kriteriene som er innebygd i overvåkingspolicyregelen. Hvis en policyregel for eksempel evaluerer utgiftsrapporter for dupliserte utgifter av samme beløp, forretningsenhets-ID og dato, er alle utgifter som har de samme verdiene i disse feltene, én sak. Alle utgifter som har andre verdier, er en separat sak.
 
 Etter at overvåkingssakene er generert, behandles de ved hjelp av de vanlige fremgangsmåtene for saksbehandling.
 
@@ -56,6 +59,8 @@ Her er noen andre måter en overvåkingspolicy bruker datoområdet for dokumentv
 -   Når det gjelder policyregler som er basert på spørringstypen **Listesøk**, evaluerer policyen dokumenter basert på overvåkede enheter som er gyldige på den siste dagen i datoområdet for dokumentvalg.
 
 
-Hvis du vil ha mer informasjon, se [Overvåk policyregler](audit-policy-rules.md)
+Hvis du vil ha mer informasjon, se [Overvåkingspolicyregler](audit-policy-rules.md)
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Etterfylling
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring.
 
 Denne artikkelen beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring. Informasjonen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Det finnes tre etterfyllingsstrategier:
@@ -67,6 +70,8 @@ Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter
 | Lokasjonsprofiler       | Lokasjonsprofiler er nødvendig for å opprette lokasjoner.                                                                                                                                                                                       |
 | Lokasjonsdirektiver     | Lokasjonsdirektiver er nødvendig for å veilede arbeidet til lokasjoner der etterfylling er nødvendig, og til lokasjoner som beholdning hentes fra.                                                                                     |
 | Arbeidsmaler          | Arbeidsmaler av typen **Etterfylling** er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner.                                                                                           |
+
+
 
 
 

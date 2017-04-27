@@ -1,5 +1,5 @@
 ---
-title: Tilordne forskjellige kostnader dimensjonsmedlemmer for elementet til et felles sett med dimensjonsmedlemmer
+title: Tilordne forskjellige medlemmer av kostnadelementdimensjoner til et felles sett med dimensjonsmedlemmer
 description: "Ved tilordning av forskjellige medlemmer av kostnadselementdimensjon til et felles sett med medlemmer av kostnadselementdimensjoner, slår du sammen data i et felles format for analyseformål."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Tilordne forskjellige kostnader dimensjonsmedlemmer for elementet til et felles sett med dimensjonsmedlemmer
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Tilordne forskjellige medlemmer av kostnadelementdimensjoner til et felles sett med dimensjonsmedlemmer
 
 Ved tilordning av forskjellige medlemmer av kostnadselementdimensjon til et felles sett med medlemmer av kostnadselementdimensjoner, slår du sammen data i et felles format for analyseformål.
 
@@ -38,10 +38,10 @@ Eksemplet nedenfor viser hvordan du, som kostnadskontrollør, kan opprette en ny
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Importerte medlemmer av kostnadelementdimensjoner fra den amerikanske kontoplanen | Importerte medlemmer av kostnadelementdimensjoner fra den franske kontoplanen | Tilordning av amerikanske og fransk medlemmer av kostnadselementdimensjoner til et felles sett |
 | 5001: Salg                                                           | 5001: Salg og markedsføring                                               | 5000: Salg og markedsføring                                             |
-| 5030: Reklame                                                     | 6390: aksje kjøp\*                                                    | 7000: Renholdsutgifter                                                 |
+| 5030: Reklame                                                     | 6390: Lagerinnkjøp\*                                                    | 7000: Renholdsutgifter                                                 |
 | 7001: Renholdsutgifter                                               | 7001: Reiseutgifter                                                      | 7001: Reiseutgifter                                                   |
 
-\*Lager kjøp fransk kost elementet dimensjon medlemmet er ikke tilordnet.
+\*Lagerinnkjøp for franske medlem av kostnadselementdimensjon er ikke tilordnet.
 
 ## <a name="currency-conversion"></a>Valutaomregning
 De ulike kontoplanene som du bruker, kan være konfigurert til å bruke ulike valutaer. I så fall må du huske å angi en valutaomregning, slik at kostnadsdata behandles ved hjelp av riktig valuta, som definert i kostnadsregnskapsfinans der medlemmene av kostnadselementdimensjonen er brukt. Hvis Amerikanske dollar (USD) brukes i kostnadsregnskapsfinans i eksemplet ovenfor, må du opprette en valutaomregning fra USD til euro (EUR) for å behandle transaksjoner for de tilordnede medlemmene av kostnadselementdimensjonen.

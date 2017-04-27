@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgrupper
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver prosessen for å oppdatere erstatningskostnader og forsikrede verdier for anleggsmidler.
 
 Du kan få beskjed regelmessig om at kostnadene ved erstatning eller forsikring av bestemte anleggsmidler er endret. Lederen kan for eksempel informere deg om at inflasjonene var 3 prosent i fjor, slik at du må øke erstatningskostnaden for alle anleggsmidler med 3 prosent. 
@@ -38,18 +41,18 @@ Hvis du vil beregne erstatningskostnader og forsikrede verdier på nytt for anle
 
 Når du bruker skjemaet Oppdater erstatningskostnader og forsikrede verdier for å omberegne erstatningskostnaden og den forsikrede verdien for anleggsmidlene, brukes følgende formler:
 
--   \[(Asset gruppe erstatning kostnad faktor / 100) + 1\]\* Anleggsmidlets eksisterende erstatningskostnad
--   \[(Gruppe anleggsmidler faktor for forsikret verdi / 100) + 1\]\* Anleggsmidlets eksisterende forsikrede verdien
+-   \[(Anleggsmiddelgruppens erstatningskostnadsfaktor / 100) + 1\] \* Anleggsmidlets eksisterende erstatningskostnad
+-   \[(Anleggsmiddelgruppens faktor for forsikret verdi / 100) + 1\] \* Anleggsmidlets eksisterende forsikrede verdi
 
 > [!NOTE] 
 > Når du bruker skjemaet Oppdater erstatningskostnader og forsikrede verdier, oppdateres både erstatningskostnaden og den forsikrede verdien for de valgte anleggsmidlene. Du kan ikke angi at bare én verdi skal oppdateres. Hvis du vil la den ene verdien være den samme og oppdatere den andre verdien, kan du angi 0 (null) som faktor i Anleggsmiddelgrupper-skjemaet. En nullverdi eller tom faktorverdi fører til at beregningen utelates i oppdateringen. Den bokførte verdien og netto bokført verdi for anleggsmidler berøres ikke av den periodiske oppdateringen. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Hvordan du bruker en dato til å velge hvilke varer som skal oppdateres
-Som standard oppdaterer den periodiske prosessen de valgte anleggsmidlene som ikke ble oppdatert på den gjeldende dagen, men som kan ha blitt oppdatert på tidligere dager. For eksempel &lt;gjeldende dato betyr "før i dag." Du kan endre datoen i oppdateringen erstatning og forsikrede verdier-skjemaet ved å klikke Velg-knappen. Datokriteriene du angir, sammenlignes med datoen for den siste periodiske oppdateringen for anleggsmidlet (feltet Siste periodiske verdi-/kostnadsoppdatering i skjemaet Anleggsmidler). Hver gang du oppdaterer erstatningskostnaden eller den forsikrede verdien for et anleggsmiddel, oppdateres feltet Siste periodiske verdi-/kostnadsoppdatering automatisk med gjeldende dato. 
+Som standard oppdaterer den periodiske prosessen de valgte anleggsmidlene som ikke ble oppdatert på den gjeldende dagen, men som kan ha blitt oppdatert på tidligere dager. &lt; gjeldende dato betyr for eksempel "før dagens dato". Du kan endre datoen i skjemaet Oppdater erstatningskostnader og forsikrede verdier ved å klikke på Velg-knappen. Datokriteriene du angir, sammenlignes med datoen for den siste periodiske oppdateringen for anleggsmidlet (feltet Siste periodiske verdi-/kostnadsoppdatering i skjemaet Anleggsmidler). Hver gang du oppdaterer erstatningskostnaden eller den forsikrede verdien for et anleggsmiddel, oppdateres feltet Siste periodiske verdi-/kostnadsoppdatering automatisk med gjeldende dato. 
 
 Eksempel 
 
-Du oppdaterte erstatningskostnaden for kjøretøy, kontormøbler og bygningsgrupper med 5 prosent i går, og nå anser du disse anleggsmidlene som nøyaktig oppdatert. Hvis du vil utelate disse anleggsmidlene når du oppdaterer alle andre anleggsmidler i dag, angir du en dato i sist periodiske verdi/update kostnadsfelt som er før i går (&lt; gårsdagens dato) fordi den siste oppdateringen for kjøretøy, kontormøbler og bygninger grupper oppstod utenfor Datokriteriene du angav.
+Du oppdaterte erstatningskostnaden for kjøretøys-, kontormøbler- og bygningsgrupper med 5 prosent i går, og nå anser du disse anleggsmidlene som nøyaktig oppdatert. Hvis du vil utelate disse anleggsmidlene når du oppdaterer alle andre anleggsmidler i dag, angir du en dato i feltet Siste periodiske verdi-/kostnadsoppdatering som er før i går (&lt; gårsdagens dato), fordi den siste periodiske oppdateringen for kjøretøy, kontormøbler og bygninger forekom utenfor datokriteriene du angav.
 
 ## <a name="cumulative-effect-of-each-update"></a> Akkumulert effekt for hver oppdatering
 Hver oppdatering har en akkumulert effekt. Du må derfor planlegge oppdateringen nøye. Hvis du for eksempel øker alle anleggsmidler med 3 prosent på tirsdag, og deretter øker kontormøbler med 4 prosent på fredag, vil kontormøbler øke med totalt 7,12 prosent.
@@ -72,6 +75,8 @@ Neste dag gir sjefen deg beskjed om at datamaskiner ble redusert med 8 prosent, 
 
 > [!NOTE]  
 > Du kan ikke tilbakeføre faktoren –10 ved å angi en faktor med positiv 10 (eller en faktor på 2, forskjellen mellom –10 og –8), fordi beløpene ikke vil beregnes slik du har til hensikt å gjøre. 
+
+
 
 
 

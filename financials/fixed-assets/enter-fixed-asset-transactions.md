@@ -1,5 +1,5 @@
 ---
-title: Alternativer for transaksjonen for aktiva
+title: Alternativer for anleggsmiddeltransaksjon
 description: Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjonen for aktiva
+# <a name="fixed-asset-transaction-options"></a>Alternativer for anleggsmiddeltransaksjon
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 
@@ -36,7 +39,7 @@ Du kan definere anleggsmidler for integrasjon med Leverandører, Kunder, Innkjø
 Du kan registrere anleggsmiddeltransaksjoner på Journalbilag-siden. Denne siden kan åpnes fra Fakturajournal-siden. Du kan også åpne siden Journalbilag fra Fakturagodkjenningsjournal-siden. I feltet Motkontotype velger du Anleggsmiddel. Deretter velger du et anleggmiddelnummer i Motkonto-feltet. I kategorien Anleggsmidler angir du verdier i feltene Transaksjonstype og Tablå.
 
 ## <a name="accounts-receivable"></a>Kundereskontro
-Du kan angi anleggsmiddeltransaksjoner i fritekst faktura-siden.  På siden Fritekst fakturaen, i rutenettet for linjer på fakturaen, kan du velge et linjeelement. Klikk hurtigfanen Linjedetaljer. Angi nummeret og tablået for anleggsmiddelet i avhendingstransaksjonen. Når det gjelder fritekstfakturaer, er anleggsmiddeltransaksjoner alltid av typen Avhendingssalg.
+Du kan registrere anleggsmiddeltransaksjoner på Fritekstfaktura-siden.  På siden Fritekstfakturaer, i rutenettet Fakturalinjer, velger du en linjevare. Klikk hurtigfanen Linjedetaljer. Angi nummeret og tablået for anleggsmiddelet i avhendingstransaksjonen. Når det gjelder fritekstfakturaer, er anleggsmiddeltransaksjoner alltid av typen Avhendingssalg.
 
 ## <a name="procurement-and-sourcing"></a>Innkjøp og leverandører
 Du kan registrere anleggsmiddeltransaksjoner på Bestilling-siden. Angi nødvendig informasjon for å opprette en salgsordre, og klikk deretter OK. Klikk hurtigfanen Linjedetaljer på siden Bestilling. Deretter angir du informasjon om anleggsmiddelet i kategorien Anleggsmidler. 
@@ -65,6 +68,8 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 
 
 
-Hvis du vil ha mer informasjon, se [faste anleggsmidler integrering](fixed-asset-integration.md).
+Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
+
+
 
 

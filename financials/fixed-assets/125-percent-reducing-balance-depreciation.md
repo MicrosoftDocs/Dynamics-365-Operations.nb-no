@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125 prosent redusert saldoavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **125 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt til avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. Denne prosenten beregnes på grunnlag av anleggsmidlets levetid. Hvis anleggsmidlet for eksempel har en levetid på fem år, beregnes prosenten som 25 prosent (125 % ÷ 5).
@@ -56,7 +59,7 @@ Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgj
 
 Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 125 % saldoverdiavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. 
 
-For regnskapsåret juli 1 til 30. juni starter for eksempel avskrivningsberegningen juli 1. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
+For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen den 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
 
 Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
@@ -81,6 +84,8 @@ Metoden 125 % saldoavskrivning dividerer 125 prosent med antall levetidsår. Avs
 | År 3 | 5 625 × 25 % = 1 406,25                        | (6 625 – 1 406,25) = 5 218.75 | (5 625 – 1 406,25) = 4 218,75         |
 
 > [!NOTE] 
-> Vanligvis når beløpet som er beregnet ved hjelp av 125 % redusert saldoavskrivningsmetode blir mindre enn beløpet som beregnes ved hjelp av den lineære metoden, er det en konvertering til metoden for lineær for resten av levetiden.
+> Vanligvis når beløpet som beregnes ved å bruke 125% saldoavskrivningsmetode, blir mindre enn beløpet som ville blitt beregnet ved hjelp av den lineære metoden, går man over til lineær avskrivning resten av levetiden.
+
+
 
 

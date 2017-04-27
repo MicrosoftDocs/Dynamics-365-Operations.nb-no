@@ -1,6 +1,6 @@
 ---
-title: Slip betalingsrapport for Europa
-description: Dette emnet gir informasjon om betaling slip rapporter for Europa.
+title: Betalingsseddelrapport for Europa
+description: Dette emnet gir informasjon om betalingsseddelrapport for Europa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,39 +24,44 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-slip-report-for-europe"></a>Slip betalingsrapport for Europa
+# <a name="payment-slip-report-for-europe"></a>Betalingsseddelrapport for Europa
 
-Dette emnet gir informasjon om betaling slip rapporter for Europa.
+[!include[banner](../includes/banner.md)]
 
-Funksjonaliteten for betaling slip rapporter er tilgjengelig for juridiske enheter som har den primære adressen i Danmark, Belgia, Norge, Sveits og Finland. Bedrifter knytte ofte utskrevne betalingsbilag til fakturaer for å oppgi en betalingsreferanse for postering, utligning. Betalingsbilaget kan brukes til prosjekt- eller tjenestefakturaer, purringer, rentenotaer og kontoutdrag, i tillegg til salgsfakturaer og fritekstfakturaer.
 
-## <a name="set-up-a-creditor-id-number-denmark-only"></a>Sette opp en kreditor ID-nummer (bare Danmark)
-Følg disse trinnene for å angi firmaets kreditor identifikasjon (ID)-nummer. Finansinstitusjonen gir dette nummeret. Den brukes som referanse når du mottar kundebetalinger gjennom finansinstitusjoner.
+Dette emnet gir informasjon om betalingsseddelrapport for Europa.
 
-1.  Klikk **organisasjonsadministrasjon**&gt;**Setup**&gt;**organisasjonen**&gt;**juridiske enheter**.
-2.  På den **bankkontoinformasjon** hurtigfanen i den **ID for FI-kreditor** angir det unike kreditor i åtte-sifret ID-nummeret.
+Funksjonaliteten for betalingsseddelrapport er tilgjengelig for juridiske enheter som har den primære adressen i Danmark, Belgia, Norge, Sveits og Finland. Bedrifter knytter ofte utskrevne betalingsbilag til fakturaer som skal gi en betalingsreferanse for postering og utligning. Betalingsbilaget kan brukes til prosjekt- eller tjenestefakturaer, purringer, rentenotaer og kontoutdrag, i tillegg til salgsfakturaer og fritekstfakturaer.
+
+## <a name="set-up-a-creditor-id-number-denmark-only"></a>Definere et ID-nummer for kreditor (bare Danmark)
+Følg disse trinnene for å angi firmakreditorens identifikasjonsnummer. Finansinstitusjonen gir dette nummeret. Dette nummeret brukes som referanse når du mottar kundebetalinger via finansinstitusjoner.
+
+1.  Klikk **Organisasjonsstyring** &gt; **Oppsett** &gt; **Organisasjon** &gt; **Juridiske enheter**.
+2.  På hurtigfanen **Bankkontoinformasjon** i feltet **ID for FI-kreditor** angir du det unike 8-sifrede ID-nummeret for kreditoren.
 3.  Lukk skjemaet for å lagre endringene.
 
-## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Definer en betalings slip Vedleggsformat for fakturaer, rentenotaer, purringer og kontoutdrag
-Følg disse trinnene for å definere et format for betaling slip vedlegg som følger med salgsfakturaer, fritekstfakturaer, rentenotaer, purringer og kontoutdrag.
+## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Definere et format for betalingsseddelvedlegg for fakturaer, rentenotaer, purrebrev og kontoutdrag
+Følg denne fremgangsmåten for å definere et format for et betalingsbilagsvedlegg for salgsfakturaer, fritekstfakturaer, rentenotaer, purringer og kontoutdrag.
 
-1.  Klikk **kunder**&gt;**Setup**&gt;**skjemaer**&gt;**skjemaoppsett**.
-2.  På den **faktura** -kategorien i den **tilknyttet betalingsvedlegg på kundefaktura** velger betalingsformatet for slip-vedlegg.
-3.  På den **fritekstfaktura**, **rentenotaen**, **purringen**, og **konto setningen** velger en betaling slip Vedleggsformat for hver dokumenttype.
+1.  Klikk **Kunder** &gt; **Oppsett** &gt; **Skjemaer** &gt; **Skjemaoppsett**.
+2.  Velg format for betalingsseddelvedlegg i **Faktura**-kategorien i feltet **Tilknyttet betalingsvedlegg på kundefaktura**.
+3.  Velg et format for betalingsseddelvedlegg for hver dokumenttype i kategoriene **Fritekstfaktura**, **Rentenota**, **Purring** og **Kontoutdrag**.
 4.  Lukk skjemaet for å lagre endringene.
 
-Følg disse trinnene for å definere et format for betaling slip vedlegg som følger med prosjektfakturaer.
+Følg denne fremgangsmåten for å definere et format for et betalingsseddelvedlegg som skal følge prosjektfakturaer.
 
-1.  Klikk **prosjekt prosjektstyring og regnskap**&gt;**Setup**&gt;**skjemaer**&gt;**skjemaoppsett**.
-2.  I den **tilknyttet betalingsvedlegg** velger betalingsformatet for slip-vedlegg.
+1.  Klikk på **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Skjemaer** &gt; **Skjemaoppsett**.
+2.  I feltet **Tilknyttet betalingsvedlegg** velger du format for betalingsseddelvedlegg.
 
-## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Tilordne en betalingsformatet for slip vedlegg til en kundekonto
-Når du setter opp slip vedlegg betalingsformatet for salgsfakturaer, fritekstfakturaer, rentenotaer, purringer, kontoutdrag og prosjektfakturaer, kan du tilordne bestemte formater for en valgt kunde.
+## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Tilordne et format for betalingsseddelvedlegg til en kundekonto
+Når du har satt opp formatet for betalingsseddelvedlegg for salgsfakturaer, fritekstfakturaer, rentenotaer, purringer, kontoutdrag og prosjektfakturaer, kan du tilordne bestemte formater for en valgt kunde.
 
-1.  Klikk **kunder**&gt;**vanlige**&gt;**kunder**&gt;**alle kunder**.
-2.  Opprette en ny kunde, eller velg en eksisterende kunde.
-3.  På den **faktura- og** hurtigfanen i den **på en kundefaktura**, **på en fritekstfaktura**, **på en rentenota**, **på en purring**, **på en prosjektfaktura**, og **på et kontoutdrag** felt, velger du formatet for betaling slip vedlegg som skal følge dokumenter for hver type som sendes til den valgte kunden.
+1.  Klikk **Kunder** &gt; **Felles** &gt; **Kunder** &gt; **Alle kunder**.
+2.  Opprett en ny kunde, eller velg en eksisterende kunde.
+3.  På hurtigfanen **Faktura og levering** i feltene **På en kundefaktura**, **På en fritekstfaktura**, **På en rentenota**, **På en purring**, **På en prosjektfaktura** og **På et kontoutdrag**, velger du formatet for betalingsseddelvedlegg som skal følge dokumenter for hver type som sendes til den valgte kunden.
 4.  Lukk skjemaet for å lagre endringene.
+
+
 
 
 

@@ -73,9 +73,9 @@ Forskjellen i enhetsprisen, 2,00, posteres til kontoen Prisdifferanse for gliden
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Justering av produkt og lager for glidende gjennomsnitt
 Hvis du vil justere den glidende gjennomsnittskostnaden for et produkt, er det tillatt med lagerjusteringer per dagens dato. Du kan ikke tilbakedatere en lagerjustering for å rette opp den glidende gjennomsnittskostnaden for et produkt. Du kan ikke ha kostnadsflyten gjennom etterfølgende transaksjoner. I dette eksemplet justeres den glidende gjennomsnittskostnaden til et produkt.
 1.  Velg produktet som du vil justere den glidende gjennomsnittskostnaden for.
-    | **Note**                                                                                    |
+    | **Obs!**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | Den ** revaluering for glidende gjennomsnitt ** siden undersøker lageret som er tilgjengelig for et produkt. |
+    | Siden **Revaluering for glidende gjennomsnitt** undersøker lageret som er tilgjengelig for et produkt. |
 
     Det valgte produktet har et postert antall på 1, en postert verdi på 12,00, en postert enhetskostnad på 12,00 og en enhetskostnad på 12,00.
 2.  Oppdater feltet **Enhetskostnad** til 16,00. Systemet beregner de gjenværende feltene.
@@ -88,7 +88,7 @@ Hvis du vil justere den glidende gjennomsnittskostnaden for et produkt, er det t
 På siden **Utligninger på bilag** kan du se en justering på 4,00 postert til kontoen Revaluering av kostnad for glidende gjennomsnitt.
 
 ## <a name="moving-average-with-production"></a>Glidende gjennomsnitt med produksjon
-Glidende gjennomsnitt støtter produserte varer. Hvis du planlegger å bruke glidende gjennomsnitt i et produksjonsmiljø, den **Bruk estimert kostpris** glidebryteren i den ** parametere for produksjonskontroll ** side bør være merkede. Dette betyr at kostprisen som blir beregnet under forhåndsberegning, brukes i stedet for den faktiske kostprisen for stykklisteberegningen.
+Glidende gjennomsnitt støtter produserte varer. Hvis du planlegger å bruke glidende gjennomsnitt i et produksjonsmiljø, må du bruke glidebryteren **Bruk estimert kostpris** på siden **Parametere for produksjonskontroll**. Dette betyr at kostprisen som blir beregnet under forhåndsberegning, brukes i stedet for den faktiske kostprisen for stykklisteberegningen.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Glidende gjennomsnitt med en tilbakedatert transaksjon
 Tilbakedaterte transaksjoner tilordnes den gjeldende, glidende gjennomsnittskostnaden, og produktets fysiske antall oppdateres, men produktets glidende gjennomsnittskostnad påvirkes ikke. I dette eksemplet med glidende gjennomsnitt posteres en tilbakedatert transaksjon for et glidende gjennomsnittsprodukt.

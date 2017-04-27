@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-forecasts-and-budgets"></a>Prosjektprognoser og -budsjetter
 
+[!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics-365 for operasjoner inneholder to måter å administrere og kontrollere prosjekter: prognoser for project og project budsjetter. 
+
+
+Du kan styre og kontrollere prosjekter i Microsoft Dynamics 365 for Operations på to måter: prosjektprognoser og prosjektbudsjetter. 
 
 Du kan bruke prosjektprognose hvis organisasjonen har et driftsperspektiv, og hvis den fokuserer på inntekter og kostnader som er avledet fra bestemte transaksjoner. Bruk prosjektbudsjettering hvis organisasjonen fokuserer mer på økonomiske beløp. 
 
@@ -45,9 +48,9 @@ Hver metode har sine fordeler. Du bør vurdere følgende punkt før du velger en
 | **Transaksjonsvariabler ** | Når du angir prognosetransaksjoner, kan du bruke alle attributter som finnes for en faktisk transaksjon. Dette muliggjør flere detaljer i prognosen. Du kan for eksempel angi detaljer for antall, ansatte, varer eller linjeegenskaper.         | Når du angir detaljer for budsjett, kan du bare bruke beløp, kategorier og aktiviteter.                                                                                    |
 | **Sikkerhet **              | Prognose er basert på transaksjonene som du angir i prognoseskjemaene, og omfatter ingen prosesskontrollmekanisme. Alle arbeidere som har tillatelser for et prognoseskjema, kan se gjennom informasjon uten godkjenning.                                        | Budsjettering bruker arbeidsflytsystemet, som muliggjør endringsadministrasjon og lar deg beholde en logg over endringene.                                                       |
 | **Oppføringstyper **           | Prognosetransaksjonsoppføringer er basert på antall enheter og på kostnad og salgsenhetspriser.                                                                                                                                                       | Budsjettdetaljer er basert på beløp som deles mellom kostnader og inntekter.                                                                                        |
-| **Forecast models**       | Fordi hver prognose må være knyttet til en modell, kan du opprette flere prognosemodeller og også definere undermodeller.                                                                                                                               | Prosjektbudsjetteringsgrenser prognosemodeller som er brukt for budsjettering. Færre prognosemodeller kan øke konsekvensen i prognoser.                           |
+| **Prognosemodeller**       | Fordi hver prognose må være knyttet til en modell, kan du opprette flere prognosemodeller og også definere undermodeller.                                                                                                                               | Prosjektbudsjetteringsgrenser prognosemodeller som er brukt for budsjettering. Færre prognosemodeller kan øke konsekvensen i prognoser.                           |
 | **Kostnadsoverskridelser **         | Du kan bare tillate eller ikke tillate innlegging av transaksjoner som vil føre til en kostnadsoverskridelse.                                                                                                                                                                | Prosjektbudsjettering gir ekstra kontrollalternativer for brukere. Du kan tillate advarsler og overskridelser.                                                                   |
-| **Control**               | Prognosestyring utføres ved hjelp av prognosereduksjon. Faktiske beløp trekkes fra prognosetransaksjonssaldoer uten revisjonsspor. Dette kan gjøre det vanskeligere å spore hvor de faktiske transaksjonene fant sted.                   | I prosjektbudsjettkontroll er faktiske beløp trukket fra beløpene i det gjenstående budsjettet. Dette fører til et tydeligere revisjonsspor.                                   |
+| **Styring **               | Prognosestyring utføres ved hjelp av prognosereduksjon. Faktiske beløp trekkes fra prognosetransaksjonssaldoer uten revisjonsspor. Dette kan gjøre det vanskeligere å spore hvor de faktiske transaksjonene fant sted.                   | I prosjektbudsjettkontroll er faktiske beløp trukket fra beløpene i det gjenstående budsjettet. Dette fører til et tydeligere revisjonsspor.                                   |
 
 ## <a name="project-forecasts"></a>Prosjektprognoser
 Når du bruker prosjektprognoser, kan du angi prognosetransaksjoner i prognoseskjemaer for hver transaksjonstype. Hver attributt som er tilgjengelig for en faktisk transaksjon, kan brukes for en prognosetransaksjon – for eksempel linjelønnsomhet, linjeattributter, arbeidere eller beskrivelser. Du kan også prosjektere hvor lenge etter at du har pådratt deg en kostnad, du vil fakturere en kunde. 
@@ -62,7 +65,7 @@ Prognosemodeller kan bruke prognosereduksjon som styremekanismen for prosjekter.
 
 Du kan revidere, kopiere, slette eller overføre prosjektprognoser til et økonomimodulbudsjett. Det finnes imidlertid ingen prosesskontroll. Alle arbeidere med tillatelse for et prognoseskjema, kan gjøre endringer uten gjennomgang.
 
--   ** Revidere ** – du kan endre en prognosetransaksjon i skjemaene der de opprinnelige postene som ble gjort.
+-   **Revider** – Du kan revidere en prognosetransaksjon i de samme skjemaene der de opprinnelige oppføringene ble gjort.
 -   **Kopier eller slett** – Når du kopierer prognosetransaksjoner, kopierer du transaksjonslinjene for én prognosemodell til en annen prognosemodell. Når du sletter en prognose, sletter du også prognosetransaksjonene fra en prognosemodell. Hvis du vil begrense prognosetransaksjonene du vil kopiere eller slette, velger du bestemte transaksjonstyper og datoer. Dette gjør at du kan kopiere eller slette bestemte deler av en prognose.
 -   **Overføring** – Når du overfører en prosjektprognose til et økonomimodulbudsjett, overfører du prognosetransaksjonene for en prognosemodell til et økonomimodulbudsjett. Du kan overskrive alle tidligere overførte transaksjoner i økonomimodulbudsjettet som du overfører prosjektprognosen til.
 
@@ -78,6 +81,8 @@ Prosjektbudsjetter knyttes automatisk til to prognosemodeller, én for opprinnel
 ## <a name="forecast-models"></a>Prognosemodeller
 Prognosemodeller har et enkeltlagshierarki. Dette betyr at én prosjektprognose må være tilknyttet én prognosemodell.
 
-Hvis du bruker project prognoser, kan du identifisere modeller som undermodeller. Du kan deretter opprette prognoser etter avdeling, tidsperiode eller region. Du kan for eksempel opprette en prognosemodell for et år og deretter opprette undermodeller for de regionale prognosene for Nordøst, Sørøst, Nordvest og Sørvest som regionale kontorer sender. Ved å velge forskjellige alternativer i tilgjengelige rapporter, kan du vise informasjon ved totalt prognosen eller undermodellen.
+Hvis du bruker prosjektprognoser, kan du identifisere modeller som undermodeller. Du kan deretter opprette prognoser etter avdeling, tidsperiode eller område. Du kan for eksempel opprette en prognosemodell for et år og deretter opprette undermodeller for de regionale prognosene for Nordøst, Sørøst, Nordvest og Sørvest som regionale kontorer sender. Ved å velge forskjellige alternativer i de tilgjengelige rapportene kan du vise informasjon etter samlet prognose eller etter undermodell.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere kostprissendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris.
 
 Du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris. Bruk denne separate kostnadsberegningsversjonen til å angi uavsluttede kostprisposter som gjenspeiler inkrementelle kostprisendringer, og til å beregne kostprisenes innvirkning på produserte varer. Siden tilbakefallsprinsippet for aktive kostnader vil bli brukt i stykklisteberegningene, må bare de inkrementelle kostprisendringene angis.
@@ -54,5 +57,7 @@ Scenariene nedenfor viser hvordan kostversjonen for simulering brukes til å sim
 -   Simuler kostprisendringen i en beregningsformel for indirekte kostnader. Kostprisendringen kan for eksempel gjenspeile en forventet økning eller reduksjon i de generelle administrasjonskostnadene for produksjon. Definer den endrede beregningsformelen for indirekte kostnader ved å angi en uavsluttet kostnadspost i kostnadsberegningsversjonen for simulering på siden **Oppsett av kostark**, hvor du også validerer og lagrer endringen.
 
 Når du har angitt de simulerte kostprisendringene, beregner du kostprisen for produserte varer som påvirkes av kostprisendringene. Bruk **Beregning**-siden for kostnadsberegningsversjonen for simulering, og identifiser de valgte produserte varene som vil bli påvirket av kostprisendringene. Stykklisteberegningene vil gjelde alle produserte varer hvis du ikke velger bestemte varer. Du kan også bruke alternativet for stykklisteberegning for brukssted. Vis varekostprispostene i kostnadsberegningsversjonen for simulering for å analysere hvordan de simulerte kostprisendringene påvirket kostprisen for de valgte produserte varene. Bruk sidene **Varepris** og **Beregn varekostnad** for å vise og analysere kostnadene.
+
+
 
 

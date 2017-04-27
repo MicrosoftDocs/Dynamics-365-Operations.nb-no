@@ -1,6 +1,6 @@
 ---
 title: "Analysere salgstrender og -mønstre"
-description: "Du kan studere salg trender og mønstre i sanntid i Microsoft Dynamics 365 for operasjoner - handel."
+description: "Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 365 for Operations - Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -27,17 +27,22 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Analysere salgstrender og -mønstre
 
-Du kan studere salg trender og mønstre i sanntid i Microsoft Dynamics 365 for operasjoner - handel.
+[!include[banner](includes/banner.md)]
 
-Som en del av Dynamics 365 for operasjoner, brukere kan studere salg trender og mønstre i sanntid på tvers av ulike nivåer av organisasjonshierarkiet over en periode på flere år ved hjelp av out-of-box **kanal salg etter år** rapport. Du kan åpne denne rapporten fra et av følgende steder:
 
--   **Retail store management** arbeidsområde Dynamics 365 for drift &gt;**Retail og commerce**&gt;**kanaler**&gt;**Retail butikk management**&gt;**rapporter**&gt;**kanal salg per år**
--   **Retail store Finans** arbeidsområde Dynamics 365 for drift &gt;**Retail og commerce**&gt;**kanaler**&gt;**Retail store Finans**&gt;**rapporter**&gt;**kanal salg per år**
--   **Forespørsler og rapporter** delen Dynamics 365 for drift &gt;**Retail og commerce**&gt;**forespørsler og rapporter**&gt;**mva-rapporter**&gt;**kanal salg per år**
+Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 365 for Operations - Retail.
+
+Som en del av Dynamics 365 for Operations kan brukere studere salgstrender og -mønstre i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet i en periode på flere år ved å åpne den medfølgende rapporten **Kanalsalg etter år**. Du kan åpne denne rapporten fra et av følgende steder:
+
+-   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
+-   Arbeidsområdet **Finans for detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
+-   Delen **Forespørsler og rapporter** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter år**
 
 Brukerne kan også studere salgstrender og -mønstre etter time på tvers av forskjellige nivåer i organisasjonshierarkiet i en valgt periode år ved å åpne den medfølgende rapporten **Kanalsalg etter time**. Du kan åpne denne rapporten fra et av følgende steder:
 
--   **Retail store management** arbeidsområde Dynamics 365 for drift &gt;**detaljhandel og commerce**&gt;**kanaler**&gt;**Retail butikk management**&gt;**rapporter**&gt;**kanal salg per time**
--   **Retail store Finans** arbeidsområde Dynamics 365 for drift &gt;**Retail og commerce**&gt;**kanaler**&gt;**Retail store Finans**&gt;**rapporter**&gt;**kanal salg per time**
--   **Forespørsler og rapporter** delen Dynamics 365 for drift &gt;**Retail og commerce**&gt;**forespørsler og rapporter**&gt;**mva-rapporter**&gt;**kanal salg per time**
+-   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
+-   Arbeidsområdet **Finans for detaljhandelsbutikk** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
+-   Delen **Forespørsler og rapporter** i Dynamics 365 for Operations &gt; **Detaljhandel og handel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter time**
+
+
 

@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Sentraliserte betalinger for kunder
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter. I tillegg sparer organisasjonen tid, fordi prosessene for betalingsforslag, utligninger og redigering av åpne og lukkede transaksjoner for sentraliserte betalinger er strømlinjeformet. 
 
-Det finnes mange juridiske enheter for operasjoner i en organisasjon for sentralisert betaling, og hver juridisk enhet for operativsystemet administrerer sin egen kundefakturainformasjon. Betalinger for alle operative juridiske enheter mottas fra en juridisk person, som er kjent som den juridiske enheten for betalingen. Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene. Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene, og hvordan kontantrabattransaksjoner i forbindelse med sentraliserte betalinger skal håndteres. 
+Det finnes mange juridiske enheter for operasjoner i en sentralisert betalingsorganisasjon, og hver juridiske enhet administrerer sin egen kundefakturainformasjon. Betalinger for alle de operative juridiske enhetene mottas av en juridisk enhet, som kalles den juridiske enheten for betalingen. Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene. Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene, og hvordan kontantrabattransaksjoner i forbindelse med sentraliserte betalinger skal håndteres. 
 
 I eksemplene nedenfor ser du hvordan postering håndteres i ulike scenarier. Følgende konfigurasjon antas for alle disse eksemplene:
 
@@ -66,14 +69,14 @@ Fabrikam mottar en betaling på 600,00 til Fabrikams kundekonto 4000, Gastronor 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                         | Debetbeløp | Kreditbeløp |
 |---------------------------------|--------------|---------------|
 | Kunder (Fabrikam)  | 600,00       |               |
 | Skal betales til Fabrikam Øst (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                             | Debetbeløp | Kreditbeløp |
 |-------------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam mottar en betaling på 580,00 til Fabrikams kundekonto 4000, Gastronor 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                         | Debetbeløp | Kreditbeløp |
 |---------------------------------|--------------|---------------|
 | Kunder (Fabrikam)  | 580,00       |               |
 | Skal betales til Fabrikam Øst (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                             | Debetbeløp | Kreditbeløp |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam mottar en betaling på 600,00 euro (EUR) for Fabrikams kundekonto 4000,
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                         | Debetbeløp            | Kreditbeløp           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam mottar en betaling på 600,00 euro (EUR) for Fabrikams kundekonto 4000,
 | Skal betales til Fabrikam Øst (Fabrikam) | EUR 0,00 / USD 12,90    |                         |
 | Realisert gevinst (Fabrikam)        |                         | EUR 0,00 / USD 12,90    |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                             | Debetbeløp            | Kreditbeløp           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam Øst posterer en betaling fra Fabrikam-kunde 4000, Gastronor Delikatess
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                         | Debetbeløp            | Kreditbeløp           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam Øst posterer en betaling fra Fabrikam-kunde 4000, Gastronor Delikatess
 | Skal betales til Fabrikam Øst (Fabrikam) | EUR 0,00 / USD 13,46    |                         |
 | Realisert gevinst (Fabrikam)        |                         | EUR 0,00 / USD 13,46    |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                             | Debetbeløp            | Kreditbeløp           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam Øst posterer en betaling fra Fabrikam-kunde 4000, Gastronor Delikatess
 | Kunder (Fabrikam Øst) |                         | EUR 12,00 / USD 14,47   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Eksempel 5: Kundekreditnota med hovedbetaling
-Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen velges som hovedbetaling i den **utligne transaksjoner** siden.
+Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen velges som hovedbetaling på siden **Utlign transaksjoner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Fakturaen posteres til Fabrikam Vest for kunde 10000
 
@@ -224,7 +227,7 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                           | Debetbeløp | Kreditbeløp |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam)    | 100,00       |               |
 | Skal betales til Fabrikam Vest (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                             | Debetbeløp | Kreditbeløp |
 |-------------------------------------|--------------|---------------|
 | Kunder (Fabrikam Øst) | 25,00        |               |
 | Skal betales til Fabrikam (Fabrikam Øst)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam Vest-postering**
 
 | Konto                             | Debetbeløp | Kreditbeløp |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam Vest) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Eksempel 6: Kundekreditnota uten hovedbetaling
-Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen ikke er valgt som hovedbetaling i den **utligne transaksjoner** siden.
+Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen velges ikke som hovedbetaling på siden **Utlign transaksjoner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Fakturaen posteres til Fabrikam Vest for kunde 10000
 
@@ -273,21 +276,21 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
 
-**Fabrikam posting**
+**Fabrikam-postering**
 
 | Konto                         | Debetbeløp | Kreditbeløp |
 |---------------------------------|--------------|---------------|
 | Kunder (Fabrikam)  | 75,00        |               |
 | Skal betales til Fabrikam Vest (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam Øst-postering**
 
 | Konto                              | Debetbeløp | Kreditbeløp |
 |--------------------------------------|--------------|---------------|
 | Kunder (Fabrikam Øst)  | 25,00        |               |
 | Skal betales til Fabrikam Vest (Fabrikam Øst) |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam Vest-postering**
 
 | Konto                                | Debetbeløp | Kreditbeløp |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam Vest)    |              | 75,00         |
 | Skal betales fra Fabrikam Øst (Fabrikam Vest) | 25,00        |               |
 | Kunder (Fabrikam Vest)    |              | 25,00         |
+
+
 
 
 

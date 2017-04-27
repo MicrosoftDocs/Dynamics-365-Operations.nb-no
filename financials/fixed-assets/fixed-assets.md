@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-home-page"></a>Startside for anleggsmidler
 
-Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en person eller organisasjon.
+[!include[banner](../includes/banner.md)]
+
+
+Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en person eller organisasjon. 
 
 Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle dem ved å avskrive dem og angi en kapitaliseringsterskel for å bestemme avskrivning. Du kan beregne justeringer for anleggsmidler og også kvitte deg med dem. Når du bruker økonomimodulen med anleggsmidler, kan du vise gjeldende verdi for alle anleggsmidler. Behandlingen av anleggsmidler må samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land/område. Kravene kan inneholde regler for registrering av anskaffelses- og avhendingstransaksjoner, avskrivning, levetid, oppskrivinger og nedskrivinger av anleggsmidler. Anleggsmiddelfunksjonalitet inneholder mange av disse standardene og reglene.
+
+
 
 
 

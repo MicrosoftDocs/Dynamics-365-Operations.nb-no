@@ -1,6 +1,6 @@
 ---
-title: "Skjermen prognosen nøyaktighet"
-description: "Denne artikkelen beskriver hvilke typer prognosetransaksjoner nøyaktigheten at Microsoft Dynamics 365 for operasjonene beregnes, og forklarer hvordan du kan vise de nøyaktige verdiene."
+title: "Overvåke prognosenøyaktighet"
+description: "Denne artikkelen beskriver typene prognosenøyaktighet som Microsoft Dynamics 365 for Operations beregner, og forklarer hvordan du kan vise nøyaktighetsverdiene."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>Skjermen prognosen nøyaktighet
+# <a name="monitor-forecast-accuracy"></a>Overvåke prognosenøyaktighet
 
-Denne artikkelen beskriver hvilke typer prognosetransaksjoner nøyaktigheten at Microsoft Dynamics 365 for operasjonene beregnes, og forklarer hvordan du kan vise de nøyaktige verdiene.
+[!include[banner](../includes/banner.md)]
 
-Dynamics 365 for operasjoner beregner følgende typer prognosen nøyaktighet:
+
+Denne artikkelen beskriver typene prognosenøyaktighet som Microsoft Dynamics 365 for Operations beregner, og forklarer hvordan du kan vise nøyaktighetsverdiene.
+
+Dynamics 365 for Operations beregner følgende typer prognosenøyaktighet:
 
 -   Historisk prognosenøyaktighet, ved å sammenligne den historiske prognosen som hovedplanlegging bruker, med historisk behov. For å vise verdiene (både absolutte verdier og prosentverdier) for historisk prognosenøyaktighet klikk **Vis nøyaktighet** på siden **Detaljer om behovsprognose**.
 -   Den beregnede nøyaktigheten for prognosemodellen som brukes til å generere prediksjoner. Du kan vise nøyaktighet i prosent under **Modelldetaljer - MAPE** på siden **Detaljer om behovsprognose**. 
 
-**Merk:** Hvis du bruker Dynamics-365 for operasjoner behov prognostisering Microsoft Learning hvis maskinen Azure service, beregning av intern modell nøyaktighet er basert på datasettet test. Hvis du vil angi størrelsen på test-datasett, kan du angi de **TEST\_SATT\_størrelse\_PROSENT** parameter i den **etterspørselen prognoser parametere** siden. For eksempel hvis du setter verdien til **20**, vil de siste 20 prosentene av historiske data bli brukt til å beregne den interne modellnøyaktigheten.
+**Obs!** Hvis du bruker Dynamics 365 for Operations behovsprognose og Microsoft Azure Machine Learning-tjenesten, er beregning av intern modellnøyaktighet basert på testdatasettet. Hvis du vil angi størrelsen på testdatasettet, kan du angi **TEST\_SET\_SIZE\_PERCENT**-parameteren på siden **Parametere for behovsprognose**. For eksempel hvis du setter verdien til **20**, vil de siste 20 prosentene av historiske data bli brukt til å beregne den interne modellnøyaktigheten.
 
 
 <a name="see-also"></a>Se også
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Godkjenne den justerte prognosen](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

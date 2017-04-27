@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
+[!include[banner](../includes/banner.md)]
+
+
 Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling. 
 
 En transportbehandlingsmotor beregner oppgaver, for eksempel transportørens transportsats. Med motorsystemet kan du endre beregningsstrategier under kjøring, basert på data i Microsoft Dynamics 365 for Operations. En transportbehandlingsmotor ligner en plugin-modul som er relatert til en bestemt transportørkontrakt.
@@ -58,7 +61,7 @@ En transportbehandlingsmotor krever at du definerer initialiseringsdata for å f
 I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene for transportbehandlingsmotoren for å konfigurere initialiseringsdataene. **Eksempel på konfigurasjon av en ratemotor som refererer til en kjørelengdemotor** Eksemplet nedenfor viser oppsettet som kreves for en ratemotor som er basert på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til en kjørelengdemotor.
 | Parameter             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-typen som tolker dataene for tilordning av satsgrunnlag for et bestemt skjema. Syntaksen for parameterverdien består av to segmenter som er atskilt med en loddrett linje ()|). Det første segmentet inneholder samlingsnavnet som definerer tilordnertypen. Det andre segmentet angir det fullstendig kvalifiserte navnet på tilordnertypen. Dette inkluderer navneområdet for typen. |
+| *RateBaseAssigner*    | .NET-typen som tolker dataene for tilordning av satsgrunnlag for et bestemt skjema. Syntaksen for parameterverdien består av to segmenter som er avgrenset av en loddrett strek (|). Det første segmentet inneholder samlingsnavnet som definerer tilordnertypen. Det andre segmentet angir det fullstendig kvalifiserte navnet på tilordnertypen. Dette inkluderer navneområdet for typen. |
 | *MileageEngineCode*   | Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | Kode for generell motor som identifiserer fordelingsmotoren i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | **Transittidmotor** og **Kjørelengdemotor** | Henter metadataene direkte fra kjørelengdemotorens skjema for konfigurasjonsoppsett.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Eksempel på metadata for en ratemotor** Transportbehandlingsmotoren krever identifikasjon av den opprinnelige adressen, målfylke og land/region, og start- og sluttpunktet for forsendelsen. Når disse kravene brukes, ser metadataene ut som dataene i tabellen nedenfor. Tabellen inneholder også informasjon om hvilken type inndata som kreves.
--   Definere denne informasjonen i **transport management**&gt;**Setup** på den **Rate basistypen** siden.
+-   Definer denne informasjonen i **Transportstyring** &gt; **Oppsett** på siden **Vurderingsgrunnlagstype**.
 
 | Rekkefølge | Navn                          | Felttype | Datatype | Oppslagstype    | Obligatorisk |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
+
+
 
 
 

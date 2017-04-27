@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du registrerer konto- og dimensjonkombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
 
-Brukere angi kombinasjoner av konto og dimensjon på ulike sider, for eksempel sider for finanskladder, budsjettering og posteringsdefinisjoner. De gyldige kombinasjonene av konto og dimensjon avhenger av kontostrukturene som tilordnes finans, og de avanserte reglene som er tilordnet kontostrukturene. Når brukere angir en kombinasjon, kan de manuelt skrive inn verdiene eller dra nytte av en rik, oppslag-opplevelse. Når du angir feltet, kan du begynne å skrive inn og søker verdien og beskrivelsen. Hvis du skriver inn 180 søkes for eksempel alle verdier som begynner med denne kombinasjon av tall. Eller du kan skrive inn kontanter og søker en verdi som er en beskrivelse som begynner med kontanter. Du kan også bruke jokertegn, som \*kontanter eller \*180 søke Hvis verdien eller beskrivelsen inneholder søkevilkåret. 
+Brukere angir kombinasjoner av konto og dimensjon på ulike sider, for eksempel sider for økonomijournaler, budsjettering og posteringsdefinisjoner. De gyldige kombinasjonene av konto og dimensjon avhenger av kontostrukturene som tilordnes finans, og de avanserte reglene som er tilordnet kontostrukturene. Når brukere angir en kombinasjon, kan de skrive inn verdiene manuelt eller bruke en omfattende oppslagsfunksjon. Når du angir feltet, kan du begynne å skrive inn, så søkes det etter verdien og beskrivelsen. Hvis du for eksempel skriver inn 180, søkes det etter alle verdier som begynner med denne nummerkombinasjonen. Eller du kan skrive inn kontant, så søkes det etter en verdi som har en beskrivelse som begynner med kontant. Du kan også bruke jokertegn, som \*kontant eller \*180 for å søke hvis verdien eller beskrivelsen inneholder søkevilkåret. 
 
 Tabellen nedenfor beskriver hurtigtastene som kan brukes når oppslaget er lukket.
 
@@ -108,5 +111,7 @@ Tabellen nedenfor beskriver hurtigtastene som kan brukes når oppslaget er åpen
 </table>
 
  
+
+
 
 

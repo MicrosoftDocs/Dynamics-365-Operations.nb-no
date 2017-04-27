@@ -1,5 +1,5 @@
 ---
-title: "Utligne en delvis leverandørbetaling med flere rabattperioder"
+title: "Utligne en delvis leverandørbetaling som har flere rabattperioder"
 description: "Denne artikkelen leder deg gjennom et scenario der flere delvise betalinger foretas til en leverandør som har flere kontantrabatter."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Utligne en delvis leverandørbetaling med flere rabattperioder
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Utligne en delvis leverandørbetaling som har flere rabattperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen leder deg gjennom et scenario der flere delvise betalinger foretas til en leverandør som har flere kontantrabatter. 
 
 Leverandør 3054 tilbyr Fabrikam en kontantrabatt på 2 prosent hvis en faktura er betalt innen fem dager og en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager.
 
 ## <a name="invoice"></a>Faktura
-I juni 28 oppretter April en faktura for 1 000,00 for leverandøren 3054. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
+28. juni opprettes en faktura på 1 000,00 for leverandøren 3054. April kan se transaksjonene på siden **Leverandørtransaksjoner**.
 
 | Bilag   | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ De følgende kontantrabattdatoene og -beløpene er tilgjengelige for denne faktu
 | 25/7/2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="payment-on-july-2"></a>Betaling 2. juli
-Juli 2 ønsker April å betale 300.00 mot denne fakturaen. Hun oppretter en engangs betaling ved hjelp av den **betalingsjournal** siden i leverandørmodulen. Hun legger til en linje for leverandør 3054 og angir et betalingsbeløp på **300,00**. April åpner deretter **Utlign transaksjoner**-siden, slik at hun kan merke av for fakturaen som skal utlignes. Hun oppdaterer verdien i feltet **Beløp som skal utlignes** til **300,00** og ser at verdien i feltet **Kontantrabattbeløp som skal brukes** endres til **6,12**. Fordi denne betalingen foretas i den første rabattperioden, brukes en rabatt på 2 prosent.
+2. juli vil April betale 300,00 for denne fakturaen. Hun oppretter en engangsbetaling ved hjelp av siden **Betalingsjournal** for Leverandører. Hun legger til en linje for leverandør 3054 og angir et betalingsbeløp på **300,00**. April åpner deretter **Utlign transaksjoner**-siden, slik at hun kan merke av for fakturaen som skal utlignes. Hun oppdaterer verdien i feltet **Beløp som skal utlignes** til **300,00** og ser at verdien i feltet **Kontantrabattbeløp som skal brukes** endres til **6,12**. Fordi denne betalingen foretas i den første rabattperioden, brukes en rabatt på 2 prosent.
 
 | Merk | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ På siden **Leverandørtransaksjoner** ser April at den nye saldoen er 200,00.
 | APP-10061  | 12/7/2015 |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10061 | 12/7/2015 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 20/7/2015 |         | 200,00                               |                                       | 0,00    | USD      |
+
+
 
 
 

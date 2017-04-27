@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-accounts-receivable"></a>Lukk Kunde
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Tabellen nedenfor viser sidene som støtter lukkingsprosessen for Kunder.
 
 > [!NOTE] 
-> Du må angi informasjon for å åpne noen av sidene i tabellen, eller angi parameterinnstillingene.
+> Hvis du vil åpne noen av sidene i tabellen, må du angi informasjon eller parameterinnstillinger.
 
 **Oppgave for forretningsprosesskomponent**                   
 
@@ -43,13 +46,13 @@ Lukke perioder i økonomimodulen
 |Bekreft salgsordre                   | Oppdater salgsordrer.                                                                       |
 |Revaluering av utenlandsk valuta          | Generer transaksjoner som oppdaterer verdien til åpne kundetransaksjoner i utenlandsk valuta.                                                                                                                         |
 | Journal                              | Poster fakturaer, betalinger og egenveksler.                                             |
-| Journalbilag                      | -   **Payment journal** – Generate, process, and post payments.
+| Journalbilag                      | -   **Betalingsjournal** – Generer, behandle og poster betalinger.
                                          -   **Draw bill of exchange journal** – Post bills of exchange.
                                          -   **Protest bill of exchange journal** – Post protested bills of exchange.
                                          -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
                                          -   **Remittance journal** – Post remittances.
                                          -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Følgebrevpostering | Oppdater følgesedler for salgsordrer.                                                     | | Fritekstfaktura-post | Postere fritekstfakturaer.                                                                   | | Postering av faktura | Postere fakturaer for salgsordrer.                                                            | | Postering av plukkliste | Oppdater plukkliste for salgsordrer.                                                      |
+| Følgebrevpostering                 | Oppdater følgesedler for salgsordrer.                                                     | | Poster fritekstfaktura               | Poster fritekstfakturaer.                                                                   | | Postering av faktura                      | Poster fakturaer for salgsordrer.                                                            | | Postering av plukkliste                 | Oppdater plukkliste for salgsordrer.                                                      |
 
 **Oppgave for forretningsprosesskomponent**   
 
@@ -58,6 +61,8 @@ Opprette og sende inn EU-salgslisten
 | Sidenavn                            | Bruk                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |EU-salgsliste                         | Rapport om EU-salg til skattemyndighetene for merverdiavgiftdeklarasjonsformål.                                                                                                                           |
+
+
 
 
 

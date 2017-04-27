@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Refundere kunder
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver hvordan du oppretter refusjonstransaksjoner for en kundegruppe. Hvis en kunde har en kreditsaldo, kan du refundere kunden for saldobeløpet. 
 
 Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
@@ -47,6 +50,8 @@ Når du oppretter refusjonstransaksjoner, opprettes en leverandørfaktura for be
     Kreditbeløpene overføres til leverandørkontoene til kundene og behandles som ordinære betalinger. Hvis en kunde ikke har en leverandørkonto, opprettes det automatisk en engangsleverandørkonto for kunden.
 3.  Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon**-siden.
 4.  Opprett en betaling for leverandørfakturaer som ble opprettet av refusjonsprosessen, i Leverandører.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Konfigurere sikkerhet for kostnadsregnskap analysen strømmen BI-innhold"
-description: "Dette emnet forklarer hvordan du kan overføre tilgang til brukersikkerhet i kostnadsregnskap radnivå sikkerhet i Microsoft Power BI. Denne funksjonaliteten hjelper med å garantere at brukere bare se strømmen BI data som de har tilgang til."
+title: Konfigurere sikkerhet for Kostnadsregnskapsanalyse-innhold for Power BI
+description: "Dette emnet forklarer hvordan du kan overføre tilgangsnivåsikkerhet i Kostnadsregnskap til radnivåsikkerhet i Microsoft Power BI. Denne funksjonaliteten lar brukere bare se Power BI-data som de har tilgang til."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,38 +24,43 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurere sikkerhet for kostnadsregnskap analysen strømmen BI-innhold
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurere sikkerhet for Kostnadsregnskapsanalyse-innhold for Power BI
 
-Dette emnet forklarer hvordan du kan overføre tilgang til brukersikkerhet i kostnadsregnskap radnivå sikkerhet i Microsoft Power BI. Denne funksjonaliteten hjelper med å garantere at brukere bare se strømmen BI data som de har tilgang til.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emnet forklarer hvordan du kan overføre tilgangsnivåsikkerhet i Kostnadsregnskap til radnivåsikkerhet i Microsoft Power BI. Denne funksjonaliteten lar brukere bare se Power BI-data som de har tilgang til.
 
 <a name="overview"></a>Oversikt
 --------
 
-Den **Kostregnskapsanalyse** Microsoft Power BI-innhold bruker strøm BI radnivå sikkerhet til å begrense tilgangen til en bruker. Sikkerhet er basert på tilgangsnivå organisasjonshierarkiet som er definert i parametere for kostnadsregnskap. For mer informasjon om den **Kostregnskapsanalyse** strømmen BI innhold, se [Kostregnskapsanalyse strømmen BI-innhold](cost-accounting-analysis-content-pack.md).
+**Kostregnskapsanalyse**-innholdet for Microsoft Power BI bruker Power BI-radnivåsikkerhet til å begrense brukertilgangen. Sikkerheten er basert på organisasjonshierarkiet for tilgangsnivå som er definert i parametere for kostnadsregnskapet. Hvis du vil ha mer informasjon om **Kostregnskapsanalyse**-innhold for Power BI, kan du se [Kostnadsregnskapsanalyse-innhold for Power BI](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Konfigurer
-Hvis du vil overføre access brukersikkerhet til strøm BI, må eieren av strømmen BI-innhold følger du denne fremgangsmåten. **Merk:** brukeren som publiserer den **Kostregnskapsanalyse** strømmen BI-innhold blir automatisk eieren. Bare en eier kan konfigurere sikkerhet for strøm BI. I tillegg til en eier legger til andre brukere på PowerBI.com, ingen unntatt eieren kan se alle dataene i den **Kostregnskapsanalyse** strømmen BI-innhold.
+For å overføre tilgangsnivåsikkerhet til Power BI må eieren av Power BI-innholdet følge fremgangsmåten nedenfor. **Obs! ** Brukeren som publiserer **Kostregnskapsanalyse**-innholdet for Power BI blir automatisk eieren. Bare en eier kan konfigurere sikkerhet for Power BI. Før en eier legger til andre brukere på PowerBI.com, kan ingen unntatt eieren se alle dataene i Power BI-innholdet **Kostnadsregnskapsanalyse**.
 
-1.  Publisere definisjonsfilen til strøm BI.
+1.  Publisere definisjonsfilen til Power BI.
 2.  Logg på PowerBI.com.
-3.  Finne datasettet for den **Kostregnskapsanalyse** strømmen BI-innhold.
+3.  Finn datasettet for **Kostnadsregnskapsanalyse**-innhold for Power BI.
 4.  Åpne sikkerhetssiden. 
 
     [![Åpne sikkerhetssiden](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
 
-5.  Den **kostnader objekt Kontroller** rolle er allerede opprettet. Legge til andre medlemmer som er en del av organisasjonshierarkiet for kostnadsregnskap-tilgangsnivå. 
+5.  Rollen **Kontroller for kostnadsobjekt** er allerede opprettet. Legg til andre medlemmer som er en del av organisasjonshierarkiet for tilgangsnivået for kostnadsregnskap. 
 
     [![Legge til medlemmer](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
 
-Brukere som er lagt til i **kostnader objekt Kontroller** rolle vil bare se dataene de har lov til å se, i henhold til definisjonen i kostnadsregnskap-tilgangsnivå organisasjonshierarkiet. **Merk:** rad brukersikkerhet gjelder brikker og rapporter i Microsoft Dynamics 365 for operasjoner som er innebygd fra strømmen BI.
+Brukere som legges til i rollen **Kontroller for kostnadsobjekt**, kan bare se dataene som de har tillatelse til å se i henhold til definisjonen i organisasjonshierarkiet for tilgangsnivået for kostnadsregnskap. **Obs! ** Radnivåsikkerhet gjelder for fliser og rapporter i Microsoft Dynamics 365 for Operations som bygges inn fra Power BI.
 
-## <a name="updating-security"></a>Oppdatering sikkerhetsoppdatering
-Hvis oppdateringer gjøres i access brukersikkerhet i kostnadsregnskapet, og du vil strømmen BI skal gjenspeile oppdateringer, må du oppdatere enheten butikken for den **Kostregnskapsanalyse** strømmen BI-innhold. Når du har fullført enhet butikken oppdateringen fra Dynamics 365 for operasjoner, må du oppdatere artefakter i PowerBI.com. Hvis du vil ha mer informasjon om hvordan du gjør en enhet butikk-oppdatering, kan du se [oppdatering enhet butikken](power-bi-integration-entity-store.md#update-entity-store). Eieren av den **Kostregnskapsanalyse** strømmen BI-innhold må også gjøre en enhet butikken oppdatering hvis nye brukere får tilgang til organisasjonshierarkiet. I tillegg eieren må legge til nye brukere til den **kostnader objekt Kontroller** rolle i PowerBI.com, slik at sikkerheten på radnivå er brukt for dem.
+## <a name="updating-security"></a>Oppdatere sikkerhet
+Hvis oppdateringer gjøres i tilgangsnivåsikkerhet i kostnadsregnskapet og du vil at Power BI skal gjenspeile disse oppdateringene, må du oppdatere enhetsbutikken for **Kostnadsregnskapsanalyse**-innholdet for Power BI. Når du har fullført oppdateringen av enhetsbutikken fra Dynamics 365 for Operations, må du oppdatere artefaktene på PowerBI.com. Hvis du vil ha mer informasjon om hvordan du utfører en oppdatering for enhetsbutikk, kan du se [Oppdatere enhetsbutikken](power-bi-integration-entity-store.md#update-entity-store). Eieren av **Kostnadsregnskapsanalyse**-innholdet for Power BI må også utføre en oppdatering av enhetsbutikken hvis nye brukere gis tilgang til organisasjonshierarkiet. I tillegg må eieren legge til nye brukere i rollen **Kontroller for kostnadsobjekt** på PowerBI.com, slik at radnivåsikkerhet gjelder for dem.
 
-## <a name="disabling-security"></a>Deaktivering av sikkerhet
-Vi antar at organisasjonen ønsker å begrense tilgang til data. Hvis en eller annen grunn sikkerhetsparameterene er deaktivert når du kjører kostnadsregnskap, eieren må legge til brukere i den **regnskapsfører** rolle i BI strøm i stedet. Hvis du endrer sikkerhet fra en aktivert tilstand til en deaktivert, er det en god idé å fjerne brukere fra den **kostnader objekt Kontroller** rolle. Og omvendt Hvis du reaktivere sikkerhet. Brukere kan tilhøre begge rollene. Felles tilgang er union av begge rollene. Med den **Kostregnskapsanalyse** strømmen BI innhold, og brukere som har felles tilgang har ubegrenset tilgang til data. Hvis målet ditt er å bruke begrenset tilgang, brukere må tilordnes bare til de **kostnader objekt Kontroller** rolle. Disse sikkerhetsoppdateringene på radnivå trer i kraft umiddelbart. Berørte brukere bør oppdatere sine lesere.
+## <a name="disabling-security"></a>Deaktivere sikkerhet
+Vi antar at organisasjonen vil begrense tilgang til data. Hvis sikkerhetsparameterene er deaktivert av en eller annen grunn ved kjøring av kostnadsregnskap, må eieren legge brukere til i rollen **Regnskapsfører** i Power BI i stedet. Hvis du endrer sikkerhet fra en aktivert tilstand til en deaktivert tilstand, er det en god idé å fjerne brukere fra rollen **Kontroller for kostnadsobjekt**. Utfør dette omvendt hvis du aktiverer sikkerhet på nytt. Brukere kan tilhøre begge rollene. Felles tilgang er foreningen av begge rollene. For **Kostnadsregnskapsanalyse**-innhold for Power BI har brukere med felles tilgang ubegrenset tilgang til data. Hvis målet ditt er å bruke begrenset tilgang, må brukere bare tilordnes til rollen **Kontroller for kostnadsobjekt**. Disse oppdateringene for radnivåsikkerhet trer i kraft umiddelbart. Berørte brukere må oppdatere nettleseren.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-Hvis du vil vite mer om strøm Annenhver rad for brukersikkerhet, kan du se [administrere sikkerhet på modellen i strømmen BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+Hvis du vil ha mer informasjon om radnivåsikkerhet i Power BI, kan du se [Administrere sikkerhet for modellen i Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
 
 

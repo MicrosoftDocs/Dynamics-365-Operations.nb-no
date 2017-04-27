@@ -1,6 +1,6 @@
 ---
 title: Opprette variable kompensasjonsplaner
-description: "Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Dette emnet beskriver komponentene må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan."
+description: "Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Dette emnet beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
+[!include[banner](includes/banner.md)]
+
+
 Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Denne artikkelen beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
 
 Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere faktorer, for eksempel den ansattes ytelse, den ansattes kompensasjonsnivå og ytelsen til avdelingen.
@@ -39,34 +42,34 @@ Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere
 
 ### <a name="describe-vesting-rules"></a>Beskrive overdragelsesregler
 
-Firmaer kan eventuelt også definere **overdragelsesregler**. Overdragelsesregler beskriver hvordan den variable bonusen skal fordeles over tid. En overdragelsesregelen kan for eksempel angi at ansatt vil motta 25 prosent av hans eller hennes totale belønningen hvert år i de neste fire årene. Overdragelsesregler er bare informativt.
+Firmaer kan eventuelt også definere **overdragelsesregler**. Overdragelsesregler beskriver hvordan den variable bonusen skal fordeles over tid. En overdragelsesregel kan for eksempel angi at ansatt vil motta 25 prosent av hans eller hennes totale belønning hvert år i de neste fire årene. Overdragelsesregler er kun til informasjon.
 
 ## <a name="variable-compensation-plans"></a>Variable kompensasjonsplaner
 Den **variable kompensasjonsplanen** inneholder reglene, beregningsmetodene og standardverdiene for beregningen av variabel kompensasjon for ansatte som er registrert. Når du oppretter en variabel kompensasjonsplan, må du angi den variable kompensasjonstypen. Den variable kompensasjonstypen bestemmer om systemet beregner et valutabeløp eller antall enheter som bonusen. Du må også angi beregningsmetoden:
 
--   **Tidspunkt** – beregningen for den variable bonusen som er basert på fast kompensasjon som ansatt har på en bestemt dato. Denne datoen er angitt for prosesshendelsen når nye kompensasjonsbeløp er behandlet.
--   **Sammensatt** – Et belønningsbeløp beregnes for hver unike lønnssats for fast kompensasjon som den ansatte hadde mellom startdatoen og sluttdatoen for syklusen i prosesshendelsen. Kursene blir deretter lagt sammen for å bestemme den endelige belønningen. Under syklusen overført for eksempel en ansatt til en annen posisjon som hadde en annen lønnssats. I dette tilfellet justeres den variable belønningen etter hvor lenge den ansatte hadde hver lønnssats.
+-   **Tidspunkt** – beregningen av den variable bonusen er basert på den faste kompensasjonen som ansatt har på en bestemt dato. Denne datoen er angitt for prosesshendelsen når nye kompensasjonsbeløp er behandlet.
+-   **Sammensatt** – Et belønningsbeløp beregnes for hver unike lønnssats for fast kompensasjon som den ansatte hadde mellom startdatoen og sluttdatoen for syklusen i prosesshendelsen. Satsene blir deretter lagt sammen for å bestemme den endelige belønningen. Under syklusen blir for eksempel en ansatt overført til en annen stilling som hadde en annen lønnssats. I dette tilfellet justeres den variable belønningen etter hvor lenge den ansatte hadde hver lønnssats.
 
 Beløpet i den variable belønningen kan være basert på en prosent av den ansattes vanlige grunnlagsinntekt eller et angitt antall enheter.
 
--   Velg alternativet **Prosent av grunnlag** for å angi en standardprosent, og angi om grunnlaget skal være den ansattes faste lønnssats eller kontrollpunktet for den ansattes kompensasjonsnivå. Kompensasjonsnivået er angitt på den ansattes jobb. En av referansepunktene fra kompensasjonsstrukturen kan angis som kontrollpunktet på den faste kompensasjonsplanen. Systemet bruker kompensasjonsnivået fra den ansatte jobben og kryssreferere det med kontrollpunktet som er oppført på den faste kompensasjonsplanen til den ansatte for å finne control point beløpet til den ansattes kompensasjonsnivå. Control point beløpet vil deretter bli brukt i stedet for den ansattes faste lønnssats som grunnlag for belønningen.
--   Velg alternativet **Antall enheter** for å angi et standard antall enheter, verdien til hver enhet og valutaen for enhetsverdien hvis kompensasjonsplanen gjelder en ikke-monetær belønning (for eksempel 200 enheter av beholdning med en verdi på NOK 400), eller bare antallet enheter hvis kompensasjonsplanen gjelder en kontantbelønning. For en kontantbonus får ansatt det angitte antallet enheter av valutaen som brukes for hans eller hennes faste kompensasjonsplaner samtidig (for eksempel 500 enheter 1 USD). Kontrollen én relasjon kan brukes til å angi om det er en direkte-tilordningen mellom antall enheter og enhetsverdien. Når du oppretter en variabel kompensasjonsplan for en kontant-baserte plan ved hjelp av antall enheter, låses automatisk dette alternativet til å **Ja**, og enhetsverdien er **1,0000**.
+-   Velg alternativet **Prosent av grunnlag** for å angi en standardprosent, og angi om grunnlaget skal være den ansattes faste lønnssats eller kontrollpunktet for den ansattes kompensasjonsnivå. Kompensasjonsnivået er angitt på den ansattes jobb. Ett av referansepunktene fra kompensasjonsstrukturen kan angis som kontrollpunktet på den faste kompensasjonsplanen. Systemet bruker kompensasjonsnivået fra den ansattes jobb og kryssrefererer det med kontrollpunktet som er oppført i den ansattes faste kompensasjonsplan, for å finne kontrollpunktbeløpet for den ansattes kompensasjonsnivå. Kontrollpunktbeløpet brukes deretter som grunnlaget for belønningen i stedet for den ansattes faste lønnssats.
+-   Velg alternativet **Antall enheter** for å angi et standard antall enheter, verdien til hver enhet og valutaen for enhetsverdien hvis kompensasjonsplanen gjelder en ikke-monetær belønning (for eksempel 200 enheter av beholdning med en verdi på NOK 400), eller bare antallet enheter hvis kompensasjonsplanen gjelder en kontantbelønning. Når det gjelder en kontantbelønning, får den ansatte det angitte antallet enheter av valutaen som brukes i hans eller hennes faste kompensasjonsplan (for eksempel 500 enheter på NOK 10). Kontrollen for én-til-én-relasjon kan brukes til å angi om det er en direkte én-til-én-tilordning mellom antallet enheter og enhetsverdien. Når du oppretter en variabel kompensasjonsplan for en kontantbasert plan ved hjelp av antallet enheter, låses dette alternativet automatisk til **Ja**, og enhetsverdien er **10,0000**.
 
-Den **ansettelsesregelen** innstillingen lar deg angi om alle ansatte skal motta den samme økningen, uavhengig av datoen de ble leid inn (**ansettelsesregelen** = **ingen**), eller om ansatte skal motta en prosentandel av bonusen som er basert på lengden på ansettelsesforholdet under syklusen (**ansettelsesregelen** = **prosent**). 
+Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få den samme økningen, uavhengig av ansettelsesdatoen (**Ansettelsesregel** = **Ingen**), eller om ansatte skal få en prosent av belønningen som er basert på hvor lenge de har vært ansatt, i syklusen (**Ansettelsesregel** = **Prosent**). 
 
-**Utnyttelse** kan du justere bonusen til en ansatt, basert på ytelsen til den ansattes avdeling. Ytelsesmål kan angis for hver avdeling i den **avdelinger** side, under **tilknyttede skjemaer**&gt;**kompensasjon**&gt;**ytelse**. Belønningen som ansatte i denne avdelingen får, avhenger av verdien av den **prosent av det oppnådde målet** -feltet, som angir avdelingens ytelse:
+**Utnyttelse** lar deg justere bonusen til en ansatt, basert på ytelsen til den ansattes avdeling. Ytelsesmål kan angis for hver avdeling på siden **Avdelinger**, under **Tilknyttede skjemaer** &gt; **Kompensasjon** &gt; **Ytelse**. Belønningen som ansatte i denne avdelingen får, avhenger av verdien i feltet **Prosent av mål oppnådd**, som angir avdelingens ytelse:
 
 -   Hvis ytelsen til avdelingen er 100 prosent, tas prosenten som er angitt i feltet **Utbetaling ved 100 %**, med i beregningen av belønningen for ansatte i denne avdelingen.
--   Hvis ytelsen til avdelingen er over 100 prosent, legger systemet sammen prosenten som er angitt i feltet **For 1 % over mål**, med prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Høyeste tillatte utbetaling**, er nådd.
+-   Hvis ytelsen til avdelingen er over 100 prosent, legger systemet sammen prosenten som er angitt i feltet **For 1 % over mål**, med prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Høyeste tillatte utbetaling**, er nådd.
 -   Hvis ytelsen til avdelingen er under 100 prosent, trekker systemet prosenten som er angitt i feltet **For 1 % under mål**, fra prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Laveste tillatte utbetaling**, er nådd.
 
 Du kan angi** toleransenivåer** for terskelprosentene, slik at det vises en advarsel hvis utnyttelsen fører til at prosentandelen havner utenfor terskelprosenten. 
 
-Som standard leter systemet etter avdelingen som er angitt på den ansattes stilling. Men kan belønningen for noen ansatte avhenge av ytelsen til flere avdelinger. I dette tilfellet kan de ulike avdelingene, og prosentandelen av bonusen som er allokert til ytelsen til hver avdeling angi på den ansattes registrering for variabel kompensasjon. Hvis du vil ha mer informasjon, kan du se delen "variabel kompensasjon for registrering" som følger. 
+Som standard leter systemet etter avdelingen som er angitt på den ansattes stilling. Belønningen for noen ansatte kan imidlertid avhenge av ytelsen til flere avdelinger. I dette tilfellet kan de ulike avdelingene og prosentandelen av belønningen som er tilordnet til ytelsen til hver avdeling, angis i den ansattes variable kompensasjonsregistrering. Hvis du vil ha mer informasjon, kan du se delen «Variabel kompensasjonsregistrering» nedenfor. 
 
 Utnyttelse brukes bare hvis **Betal for ytelse** er valgt når kompensasjonsprosessen kjøres. 
 
-Den **nivåer, overstyrer** i kategorien kan du overstyre standard prosentandelen eller antallet enheter, basert på ansatt kompensasjonsnivå av bonusen. Hvis **overstyrer Aktiver nivåer** er satt til **Ja** for ansatte som er registrert i den variable kompensasjonsplanen, tar systemet nivå fra jobb for en ansatt, og deretter ser etter den i nivåene overstyrer tabellen for å finne den prosentandelen eller antallet enheter for nivået. Hvis nivået ikke blir funnet i nivået overstyrer tabellen, standard prosentandelen eller antallet enheter fra den **Generelt** kategorien brukes. Prosent og antall enheter som kan også overstyres i den ansattes registrering i den variable kompensasjonsplanen.
+Fanen **Nivåoverstyringer** lar deg overstyre belønningens standardprosent eller standard antall enheter basert på kompensasjonsnivået til den ansatte. Hvis **Aktiver overstyringer for nivåer** er satt til **Ja** for ansatte som er registrert i den variable kompensasjonsplanen, bruker systemet nivået fra en ansatts jobb og ser deretter etter det i tabellen for nivåoverstyringer for å finne prosenten eller antallet enheter for dette nivået. Hvis nivået ikke blir funnet i tabellen for nivåoverstyringer, brukes standard prosent eller antall enheter fra **Generelt**-fanen. Prosent og antall enheter kan også overstyres i den ansattes registrering i den variable kompensasjonsplanen.
 
 ## <a name="variable-compensation-enrollment"></a>Variabel kompensasjonsregistrering
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Avgjøre hvem som har rett til planen
@@ -80,7 +83,7 @@ Når du er klar til å registrere ansatte i en variabel kompensasjonsplan, må d
     -   Feltene **Funksjon** og **Jobbtype** i fanen **Jobbklassifisering**
     -   **Nivå**-feltet i **Kompensasjon**-fanen
 -   På **Stillinger**-siden: Feltene **Avdeling** og **Kompensasjonsområde**
--   På den **ansatte** side: informasjon om fagforeninger som er knyttet til ansatt under **personlig informasjon**&gt;**fagforeninger** på den *** arbeider *** kategorien
+-   På **Ansatte**-siden: Informasjonen om fagforeninger som er knyttet til den ansatte under **Personlige opplysninger** &gt; **Fagforeninger** i  ****Arbeider ****-fanen
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Aktivere registrering for den variable kompensasjonsplanen
 
@@ -88,19 +91,21 @@ På siden **Variable kompensasjonsplaner** setter du alternativet **Aktiver regi
 
 ### <a name="enroll-the-employee"></a>Registrere den ansatte
 
-Du kan nå registrere ansatte i den variable kompensasjonsplanen. Hvis du vil registrere en ansatt, kan du gå til **Ansatte**-siden og velge den ansatte. Klikk på handlingsruten **kompensasjon**&gt;**registrering av variabel plan**. 
+Du kan nå registrere ansatte i den variable kompensasjonsplanen. Hvis du vil registrere en ansatt, kan du gå til **Ansatte**-siden og velge den ansatte. Klikk deretter **Kompensasjon** &gt; **Registrering av variabel plan** i handlingsruten. 
 
-**Obs! ** **Registrering** må settes til **Ja** for den variable kompensasjonsplanen. Den **planlegger** feltet viser bare planer som ansatt er kvalifisert for, basert på rettighetsregler som er definert for disse planene. Hvis en rettighetsregel ikke er angitt for en plan, vil ingen ansatte være kvalifisert for denne planen. 
+**Obs! ** **Registrering** må settes til **Ja** for den variable kompensasjonsplanen. **Plan**-feltet viser bare planene som den ansatte har rett til i henhold til rettighetsreglene som defineres for disse planene. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
 
-Forsikre deg om at den **ikrafttredelsesdato** -feltet er satt på riktig måte. Hvis du bruker den variable kompensasjonsplanen i **sammensatte** beregningsmåten, den effektive datoen for registreringen kan vurderes under beregningen av den ansattes belønning. 
+Kontroller at feltet **Ikrafttredelsesdato** er riktig angitt. Hvis den variable kompensasjonsplanen bruker beregningsmetoden **Sammensatt**, blir kanskje ikrafttredelsesdatoen for registreringen vurdert i beregningen av den ansattes belønning. 
 
-Du kan bruke den **overstyrer** kategorien for å overstyre bestemte verdier for ansatt. For eksempel hvis **ansettelsesregelen** er satt til **prosent** på planen, og en forskjellig ansettelsesdato som skal brukes ved beregningen av den ansattes ansettelsesprosenten, kan du angi ansettelsesdatoen i den **ansettelsesregeldato** feltet. Du kan også overstyre enten den **belønningsprosent** verdi eller **antall enheter** verdien for en bestemt ansatt, avhengig av innstillingene i planen. Disse verdiene blir fortsatt tas i betraktning ved ansettelsesregelen ytelsesfaktorer og andre innstillinger i planen. 
+Du kan bruke **Overstyrer**-fanen til å overstyre bestemte verdier for den ansatte. Hvis **Ansettelsesregel** er satt til **Prosent** i planen, og en annen ansettelsesdato skal brukes i beregningen av den ansattes ansettelsesprosent, kan du angi ansettelsesdatoen i feltet **Ansettelsesregeldato**. Du kan også overstyre **Belønningsprosent**-verdien eller **Antall enheter**-verdien for en bestemt ansatt, avhengig av innstillingene for planen. Disse verdiene er fortsatt gjeldende i ansettelsesregelen, ytelsesfaktorer og andre innstillinger for planen. 
 
-**Organisasjonsmessige overstyringer** brukes til å basere bonusen til en ansatt på ytelsen til én eller flere avdelinger. Prosentandelen som er fordelt på tvers av avdelinger, bør utgjøre 100 prosent. Den ansattes individuelle ytelse regnes også. Disse innstillingene brukes bare hvis **Betal for ytelse** er valgt når kompensasjonsprosessen kjøres.
+**Organisasjonsmessige overstyringer** brukes til å basere belønningen til en ansatt på ytelsen til én eller flere avdelinger. Prosenten som er fordelt på tvers av avdelinger skal til sammen utgjøre 100 prosent. Det tas også hensyn til den ansattes individuelle ytelse. Disse innstillingene brukes bare hvis **Betal for ytelse** er valgt når kompensasjonsprosessen kjøres.
 
 <a name="see-also"></a>Se også
 --------
 
 [Kompensasjonsplaner](compensation-plans.md)
+
+
 
 

@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Utligne en delvis kundebetaling som har flere rabattperioder
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen viser hvordan delvis kundebetalinger gjøres opp når det er flere rabattperioder.
 
-Fabrikam tilbyr kunde 4031 to kontantrabattperioder. Kunden mottar en kontantrabatt på 2 prosent hvis fakturaen er betalt innen fem dager og 1% kontantrabatt hvis fakturaen er betalt innen 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Parametere for utligning er plassert på den **Kundeparametere** siden.
+Fabrikam tilbyr kunde 4031 to kontantrabattperioder. Kunden mottar en kontantrabatt på 2 prosent hvis fakturaen er betalt innen fem dager og 1% kontantrabatt hvis fakturaen er betalt innen 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Kundeparametere**.
 
 ## <a name="invoice"></a>Faktura
-25. juni, Magnus legger inn og posterer en faktura for 1 000,00 for kunden 4031. Når han vurderer kontantrabatter for denne fakturaen, ser Magnus 4031 kunden mottar 20,00 rabatt Hvis fakturaen betales innen 30. Hvis fakturaen er betalt av juli 9, mottar kunden 10,00 rabatt.
+25. juni legger Magnus inn og posterer en faktura på 1 000,00 for kunden 4031. Når han ser gjennom kontantrabattene for denne fakturaen, ser Magnus at kunde 4031 får 20,00 i rabatt hvis fakturaen betales innen 30. juni. Hvis fakturaen betales innen 9. juli, får kunden 10,00 i rabatt.
 
 | Kontantrabattdato | Kontantrabattbeløp | Beløp i transaksjonsvaluta |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Fakturasaldoen er nå 0,00. Magnus viser informasjonen på siden **Kundetransaks
 | DISC-10030 |  Kontantrabatt   | 28/6/2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Betaling         | 8/7/2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | DISC-1031  |  Kontantrabatt   | 8/7/2015  |         |                                      | 7,00                                  | 0,00    | USD      |
+
+
 
 
 

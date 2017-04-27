@@ -1,5 +1,5 @@
 ---
-title: Hovedplanlegging for sitedekning, lager ikke obligatorisk
+title: "Hovedplanlegging for områdedekning, lager ikke obligatorisk"
 description: "Dette emnet beskriver hvordan en vare som har et områdedimensjonssett for dekning planlegges."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hovedplanlegging for sitedekning, lager ikke obligatorisk
+# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hovedplanlegging for områdedekning, lager ikke obligatorisk
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emnet beskriver hvordan en vare som har et områdedimensjonssett for dekning planlegges.
 
@@ -39,9 +42,9 @@ Dette hovedplanleggingsscenariet omfatter følgende betingelser:
 -   Lagerdimensjonen er ikke angitt for dekningsplanlegging. Derfor samles tilbud og etterspørsel etter område, og kanskje også andre dekningsplanlagte dimensjoner.
 
 Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det refereres til i grafikken, og plasseringene, er følgende:
--   Varedekning er definert for varen. Klikk **produktinformasjonsbehandling &gt;produkter&gt; utgitt produkter**. Velg varen, og klikk deretter **planlegger &gt;varedekning**.
--   Påfyllingsrelasjoner er definert for lageret. Klikk **Inventory management &gt;Setup &gt;Lageroppdeling &gt;lagre**. På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.
--   Standard ordretype er satt til Produksjon, Bestilling eller Kanban. Klikk **produktinformasjonsbehandling &gt;produkter&gt; utgitt produkter**. Velg varen, og klikk deretter **planlegger &gt;Standard ordreinnstillinger**. I **Standard ordreinnstillinger**-skjemaet kan du se feltet **Standard ordretype**.
+-   Varedekning er definert for varen. Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Varedekning**.
+-   Påfyllingsrelasjoner er definert for lageret. Klikk **Lagerstyring &gt; Oppsett &gt; Lageroppdeling &gt; Lagre**. På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.
+-   Standard ordretype er satt til Produksjon, Bestilling eller Kanban. Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Standard ordreinnstillinger**. I **Standard ordreinnstillinger**-skjemaet kan du se feltet **Standard ordretype**.
 
 ![Behov for sitedekning, lager ikke obligatorisk    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
@@ -50,7 +53,7 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 <a name="see-also"></a>Se også
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
 
 [Hovedplanlegging – område- og lagerdekning, lager obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -58,6 +61,8 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 
 [Hovedplanlegging – område- og lagerdekning, lager obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Hovedplanlegging - hvordan stykklisteversjonen bestemmes](master-plan-bom-version-determined.md)
+[Hovedplanlegging – hvordan stykklisteversjon fastsettes](master-plan-bom-version-determined.md)
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger.
 
 Når du har opprettet en bestilling, må den kanskje går gjennom en godkjenningsprosess. Når leverandøren har godtatt ordren, settes bestillingen til statusen **Bekreftet**.
@@ -73,12 +76,14 @@ Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avb
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversikt over bestilling](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Opprett bestilling](purchase-order-creation.md)
 
 [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Beregninger for produktmodeller for konfigurasjon av vanlige spørsmål"
-description: Denne artikkelen beskriver beregninger for produktmodeller for konfigurasjon og forklarer hvordan du bruker beregninger med begrensninger.
+title: "Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller"
+description: Denne artikkelen beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>Beregninger for produktmodeller for konfigurasjon av vanlige spørsmål
+# <a name="calculations-for-product-configuration-models-faq"></a>Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller
 
-Denne artikkelen beskriver beregninger for produktmodeller for konfigurasjon og forklarer hvordan du bruker beregninger med begrensninger.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikkelen beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 
 Beregninger kan brukes for aritmetiske eller logiske operasjoner. De supplerer uttrykksbegrensninger i produktkonfigurasjonsmodeller. Du kan definere beregninger på **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** siden, og deretter lage uttrykk for beregningene i redigeringsprogrammet for uttrykk. Hvis du vil ha mer informasjon, se Opprett beregninger.
 
@@ -45,9 +48,9 @@ Et målattributt er et attributt som mottar resultatet av beregningsuttrykk.
 
 I følgende uttrykk er målattributtet er et mål for en bordduk:  
 
-**Uttrykk:** Hvis\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
+**Uttrykk:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
 
-**DecimalAttribute1** er lengden på definisjonstabellen til og **decimalAttribute2** er duk lengden. Uttrykket returnerer verdien **True** til målattributtet hvis **decimalAttribute2** er større enn eller lik **decimalAttribute1**. Hvis ikke, returnerer uttrykket verdien **False**. Dukmålingen er derfor akseptabel hvis duklengden er lik eller overskrider bordlengden.
+**DecimalAttribute1** er bordlengden og **decimalAttribute2** er lengden på bordduken. Uttrykket returnerer verdien **True** til målattributtet hvis **decimalAttribute2** er større enn eller lik **decimalAttribute1**. Hvis ikke, returnerer uttrykket verdien **False**. Dukmålingen er derfor akseptabel hvis duklengden er lik eller overskrider bordlengden.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Hvilke attributtyper kan angis for målattributter?
 Alle attributtyper som produktkonfiguratoren støtter, kan settes til målattributter unntatt tekst uten en fast liste.
@@ -57,11 +60,11 @@ Nei, verdien for et målattributt kan ikke begrense verdiene for inndataattribut
 
 ### <a name="example"></a>Eksempel
 
-Målet for beregningen er lengden på en strømkabel og inndataverdien er en farge i følgende uttrykk:  
+I uttrykket nedenfor er målet for beregningen lengden av en strømkabel og inndataverdien er en farge:  
 
-**Uttrykk:**\[Hvis fargen == "Grønn", 1.5, 1.0\]  
+**Uttrykk:** \[Hvis farge == "Grønn", 1,5, 1,0\]  
 
-Når du konfigurerer varen, lengden på strømledningen er satt til **1.5** Hvis du angir **grønn** som verdi for farge-attributtet. Hvis du angir en annen farge, er angis lengden som **1,0**. Men siden beregningene er enveis, setter ikke beregningen verdien for fargeattributtet til **grønt** når du angir en lengde på **1,5**.
+Når du konfigurerer varen, settes lengden på strømledningen til **1,5** hvis du angir **grønn** som fargeattributt. Hvis du angir en annen farge, er angis lengden som **1,0**. Men siden beregningene er enveis, setter ikke beregningen verdien for fargeattributtet til **grønt** når du angir en lengde på **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Hva skjer hvis en beregning er et målattributt av heltallstypen, men en beregning genererer et desimaltall?
 Hvis et målattributt er av heltallstypen, men en beregning genererer et desimaltall, returneres bare heltallsverdien for det beregnede resultatet. Desimaldelen fjernes, og resultatet avrundes ikke. Resultatet 12,70 vises for eksempel som 12.
@@ -72,10 +75,10 @@ Beregninger skjer når alle inndataattributter har fått en verdi.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kan jeg skrive over verdien som er beregnet for målattributtet?
 Du kan overskrive verdien som beregnes for målattributtet, med mindre målattributtet er angitt som skjult eller skrivebeskyttet.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hvordan angir jeg en Målattributtet skjult eller readonly?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hvordan oppretter jeg et målattributt som skjult eller skrivebeskyttet?
 Hvis du vil angi et attributt som skjulte eller skrivebeskyttet, gjør du følgende.
 
-1.  Klikk **produktinformasjonsbehandling**&gt;**vanlige**&gt;**produktkonfigurasjonsmodeller**.
+1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
 2.  Velg en produktkonfigurasjonsmodell, og deretter på handlingsruten klikker du **Rediger**.
 3.  På siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** velger du attributtet som skal brukes som et målattributt.
 4.  På **Attributter** hurtigkategorien, velg **Skjult** eller **Skrivebeskyttet**.
@@ -93,13 +96,15 @@ Denne meldingen vises når en beregning inneholder en feil eller når en selvmot
 -   En konflikt finnes mellom følgende to elementer:
     -   Verdiene som er tilgjengelige for et attributt, og som er begrenset av en begrensning
     -   En verdi som genereres av en beregning
--   Verdiene som returneres av beregningen, er utenfor domenet for attributtet. Et eksempel er et heltall fra \[1..10\] som er beregnet til 0.
+-   Verdiene som returneres av beregningen, er utenfor domenet for attributtet. Et eksempel er et heltall fra \[1 til 10\] som beregnes til 0.
 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Hvorfor mottar jeg en feilmelding selv om jeg validerte produktmodellen min uten problemer?
 Beregninger er ikke inkludert i valideringen. Du må teste produktkonfigurasjonsmodellen for å finne feil i beregninger. Følgende trinn forklarer hvordan du tester en produktkonfigurasjonsmodell.
 
-1.  Klikk **produktinformasjonsbehandling**&gt;**vanlige**&gt;**produktkonfigurasjonsmodeller**.
+1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
 2.  Velg en produktkonfigurasjonsmodell, og deretter på handlingsruten, i gruppen **Kjør** klikker du **Test**.
+
+
 
 
 
