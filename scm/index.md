@@ -1,6 +1,6 @@
 ---
-title: Hjemmeside for forsyningskjedeadministrasjon
-description: "Denne siden viser til ressurser som hjelper deg med å bruke Microsoft Dynamics 365 for operasjoner - forsyning forsyningskjede mer effektivt."
+title: Startside for forsyningskjedeadministrasjon
+description: "Denne siden peker til ressurser som gjør det enklere å bruke administrasjonen av Microsoft Dynamics 365 for Operations – Supply Chain mer effektivt."
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,35 +25,35 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="supply-chain-management-home-page"></a>Hjemmeside for forsyningskjedeadministrasjon
+# <a name="supply-chain-management-home-page"></a>Startside for forsyningskjedeadministrasjon
 
 [!include[banner](includes/banner.md)]
 
-Denne siden viser til ressurser som hjelper deg med å bruke Microsoft Dynamics 365 for operasjoner - forsyning forsyningskjede mer effektivt. 
+Denne siden peker til ressurser som gjør det enklere å bruke administrasjonen av Microsoft Dynamics 365 for Operations – Supply Chain mer effektivt. 
 
-## <a name="whats-new-and-in-development"></a>Hva er nytt og utvikling
-Gå til den <a href="https://roadmap.dynamics.com/">Dynamics 365 veikart</a> å se hvilke nye funksjoner er utgitt og nye funksjoner er under utvikling. 
+## <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for å se hvilke nye funksjoner er utgitt og hvilke nye funksjoner som er under utvikling. 
 
-## <a name="core-concepts-and-tasks"></a>Core konsepter og oppgaver
-*  Velg et funksjonsområde for å lære mer om det i den venstre ruten. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle innkommende forhåndsvarsler i Lagerstyring</a> (video) 
+## <a name="core-concepts-and-tasks"></a>Kjernekonsepter og -oppgaver
+*  I ruten til venstre velger du et funksjonsområde du vil finne ut mer om. 
+*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle innkommende forhåndsvarsler for forsendelse i lagerstyring</a> (video) 
 
 
 ## <a name="blogs"></a>Blogger
-Det er mange emner om produksjon og administrasjon av forsyningskjede på den <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX produksjon R & D Teamblogg</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">forsyningskjedeadministrasjon i Dynamics AX R & D Teamblogg</a>. De fleste av disse ble skrevet for tidligere versjoner av Dynamics 365 for Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teambloggen</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i Dynamics AX R & D-teambloggen </a>. De fleste av disse ble skrevet for tidligere versjoner av Dynamics 365 for Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
 
-Du kan for eksempel lese siste innlegg om: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Kunngjøring av Dynamics 365 for operasjoner – lager</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Forbedret pakking funksjonalitet (Dynamics 365 for operasjoner 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Direkteoverføre fra produksjonsordrer til overføringsordrer</a>
+Du kan for eksempel lese nylige innlegg om: 
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Kunngjøring av Dynamics 365 for Operations – Warehousing</a>
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Forbedret pakkefunksjonalitet (Dynamics 365 for Operations 1611)</a>
+* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Direkteoverføring fra produksjonsordrer til overføringsordrer</a>
 
 ## <a name="white-papers"></a>Hvitbøker
-* Den <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for operasjoner – komme i gang med kostnadsregnskap</a> hvitboka beskriver de grunnleggende trinnene for å konfigurere Microsoft Dynamics 365 for operasjoner – kostnader regnskap for å gjøre analysen av faktiske kostnader. Den inneholder også en rekke prosedyrer som du kan fullføre i samme rekkefølge som de vises.
-* Den <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for operasjoner - Lean Manufacturing: mulighet til å løfte og finplanlegging for Kanban</a> hvitboka beskriver detaljene for kanban planlegging og introduserer konseptet med å ta ordre som bruker kompatible promise (CTP)-metoden for leveringsdatokontroll. Den forklarer også hvordan CTP kan kombineres med Kanbaner til å modellere Nedsette å bestille eller til kundespesifikasjon scenarier.
-* Den <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for operasjoner - stykklisteberegning ved hjelp av et ark med etterkalkulering</a> hvitboka beskriver hvordan du setter opp et kostark som inneholder materiale og produksjon, og hvordan oppsettet påvirker stykklisteberegningen resultater. Du kan gjøre øvelsene i tillegg for læring, og bruke kunnskapen du har fått lese dette dokumentet for å gjøre en analyse for beregning av Stykkliste.
+* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations - Getting Started with Cost Accounting</a> inneholder de grunnleggende trinnene for å konfigurere Microsoft Dynamics 365 for Operations – Kostnadsregnskap for å utføre den faktiske kostnadsanalysen. Den inneholder også en rekke prosedyrer som du kan fullføre i samme rekkefølge som de vises.
+* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a> beskriver detaljene for planlegging av Kanban-jobber, og introduserer i tillegg konseptet med å ta imot salgsordrer som bruker CTP-metoden (Capable To Promise) for leveringsdatokontroll. Den forklarer også hvordan CTP kan kombineres med hendelses-Kanbaner til å modellere monter-til-ordre- eller bygg-til-ordre-scenarier.
+* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations - BOM Calculation by Using a Costing Sheet</a> beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. Du kan gjennomføre øvelsene i opplæringstillegget, og du kan bruke kunnskapen du har fått ved å lese dette dokumentet, til å analysere stykklisteberegning.
 
-## <a name="elearning-courses"></a>e-læring kurs
-Hvis du vil ha informasjon om Microsoft Dynamics 365 for operasjoner opplæring, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-læringsportalen</a>. (krever CustomerSource-konto) 
+## <a name="elearning-courses"></a>e-læringskurs
+Hvis du vil ha informasjon om opplæring i Microsoft Dynamics 365 for Operations, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-læringsportalen</a>. (krever en CustomerSource-konto) 
 
 
 

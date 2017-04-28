@@ -1,6 +1,6 @@
 ---
-title: Introduksjon til Dynamics 365 for operasjoner
-description: "Microsoft Dynamics-365 for operasjoner er Microsofts forretningsprogrammet for bedrifter. Denne siden hjelper deg å lære og få start ved hjelp av produktet."
+title: "Innføring i Dynamics 365 for Operations"
+description: "Microsoft Dynamics 365 for Operations er Microsofts forretningsprogram for bedrifter. På denne siden finner du ut mer om og kommer i gang med å bruke produktet."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Introduksjon til Dynamics 365 for operasjoner
+# <a name="introduction-to-dynamics-365-for-operations"></a>Innføring i Dynamics 365 for Operations
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics-365 for operasjoner er Microsofts forretningsprogrammet for bedrifter. Det gjør det mulig for personer å ta smartere avgjørelser raskt gjennom intelligent brukergrensesnitt som gir tilgang til real-time innsikt og data. Det gjør at firmaer kan transformasjon og innnovate ved å levere anerkjent forretningslogikk som gjør det mulig å utforme sine forretningsprosesser raskere. Den gir bedriftene fleksibilitet til å vokse i sitt eget tempo, og gjør forretninger nesten hvor som helst, når som helst, de kan skalere sine operasjoner globalt for å oppfylle forretningsbehov. 
+Microsoft Dynamics 365 for Operations er Microsofts forretningsprogram for bedrifter. Brukere kan bruke programmet til raskt å ta smartere avgjørelser ved hjelp av et intelligent brukergrensesnitt som gir tilgang til sanntidsinnsikter og -data. Det gir virksomheter muligheten til å transformere og innovere ved å formidle dokumentert forretningslogikk som kan brukes til å utforme forretningsprosessene på nytt raskere. Det gir virksomheter fleksibiliteten til vekst i sitt eget tempo, og muligheten til å gjøre forretninger i praksis hvor som helst og når som helst. På denne måten kan de skalere sin drift globalt for å dekke forretningsbehov. 
 
-Ved hjelp av denne brukerhåndboken kan du lære hvordan du gjør Dynamics 365 for operasjoner arbeider for bedriften.    
+Ved hjelp av denne brukerveiledningen kan du finne ut hvordan du får Dynamics 365 for Operations til å fungere for virksomheten.    
 
 <table>
 <colgroup>
@@ -38,52 +38,52 @@ Ved hjelp av denne brukerhåndboken kan du lære hvordan du gjør Dynamics 365 f
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Kort organisasjonen</a></p>
+<td><p><a href="get-started/onboarding-home.md">Jobbintroduksjon for organisasjonen</a></p>
 <p>Finans</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Leverandør</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Kunder</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Budsjettering</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Kontant- og bankbehandling</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Kostnadsregnskap</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Anleggsmidler</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">Økonomimodul</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Prosjektstyring</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></li></ul>
 <p><a href="dev-itpro/lcs-solutions/country-region.md">Regionale funksjoner</a></p>
 <p>Personale</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR strategi</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">Personalstrategi</a></li>
   <li><a href="human-resources/manage-recruiting-process.md">Rekruttere, ansette og motivere</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Ansatte opplæring</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">USA-funksjoner</a></li>
+  <li><a href="human-resources/performance-management-overview.md">Lære opp ansatte</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Fordeler</a></li>
+  <li><a href="human-resources/questionnaires.md">Spørreskjema</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">Amerikanske funksjoner</a></li>
 </ul></td>
   <td>
-  <p>Handel</p>
+  <p>Detaljhandel</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS og sky POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Endelig utvikler og administrasjon</a></li></ul>
+<li><a href="retail/call-center-functionality.md">Telefonsenter</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Kanaloppsett og -behandling</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">Mobilsalgssted og skysalgssted</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Utvikler og administrasjon for detaljhandel </a></li></ul>
   <p>Forsyningskjedeadministrasjon</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>Utvikler & admin-funksjonalitet</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobileapper</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Kostnadsstyring</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Lagerstyring</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Hovedplanlegging</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Innkjøp og leverandører</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Behandling av produktinformasjon</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Produksjonskontroll</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Salg og markedsføring</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportstyring</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Lagerstyring</a></li></ul>
+  <p>Utvikler- og administratorfunksjonalitet</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analyse</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Dataenheter</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobilapper</a></li>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office-integrering</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administrasjon</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Utviklerverktøy</a></li></ul></td>
 </tr>
 </tbody>
 </table>
