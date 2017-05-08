@@ -22,10 +22,14 @@
 ## [Dato for avveid gjennomsnitt](weighted-average-date.md)
 ## [Direkte utligning med fysisk verdi og merking](weighted-average-physical-value-marking.md)
 # Produksjonsetterkalkulering
+## [Amortisere konstante kostnader for en produsert vare](amortize-constant-costs-manufactured-item.md)
+## [Backflush-etterkalkulering](backflush-costing.md)
+## [Stykklisteberegninger](bom-calculations.md)
 ## [Stykklisteberegningsgruppe](bom-calculation-groups.md)
 ## [Vanlige kilder til produksjonsavvik](common-sources-of-production-variances.md)
 ## [Kostnadskategori brukt i produksjonsruting](cost-categories-used-production-routings.md)
 ## [Kostnadskategori brukt i produksjonskontroll og i prosjektstyring og regnskap](cost-categories-used-production-control-project-management-accounting.md)
+## [Vise tillegg for en produsert vare](charges-manufactured-item.md)
 ## [Kostnadsanalyse for produksjonsordre](production-order-cost-analysis.md)
 ## [Kostnadsberegning for produksjonsordre](production-order-cost-estimation.md)
 ## [Produksjonspostering](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Oppdatere standardkostnad i et produksjonsmiljø](update-standard-costs-manufacturing-environment.md)
 ## [Oppdatere standardkostnad for en ny produsert vare](update-standard-costs-new-manufactured-item.md)
 ## [Oppdatere standardkostnad i et ikke-produksjonsmiljø](update-standard-costs-non-manufacturing-environment.md)
+
 
 

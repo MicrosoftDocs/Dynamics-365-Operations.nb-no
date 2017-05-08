@@ -170,6 +170,7 @@
 ## [Kostnadselementdimensjoner](cost-accounting/cost-elements.md)
 ## [Kostnadsobjektdimensjoner](cost-accounting/cost-objects.md)
 ## [Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer](cost-accounting/map-cost-elements-dimension-members.md)
+## [Beregning av indirekte kostnader](cost-accounting/overhead-calculation.md)
 ## [Mobilt arbeidsområde for kostnadskontroll](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Power BI-innhold for analyse av kostnadsregnskap](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [Prosjekttilbud](project-management/project-quotations.md)
 ## [Prosjektressurser](project-management/project-resourcing.md)
 ## [Arbeidsnedbrytningsstrukturer](project-management/work-breakdown-structures.md)
+## [Mobilt arbeidsområde for registrering av prosjekttid](project-management/project-time-entry-mobile-workspace.md)
 # [Lokaliseringer](localizations/TOC.md)
+
+# [Personale](/dynamics365/operations/human-resources/index)
+
+# [Detaljhandel](/dynamics365/operations/retail/index)
+
+# [Forsyningskjedeadministrasjon](/dynamics365/operations/supply-chain/index)
+
+# [Utvikler og administrator](/dynamics365/operations/dev-itpro/index)
+
+# Andre ressurser
+## [Ordliste for Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Hva er nytt eller endret?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

@@ -60,3 +60,15 @@
 #### [Vanlige spørsmål om oppdateringer av lønnsdata](localizations/noam-usa-payroll-data-updates.md)
 #### [Generere lønnsrapporter](localizations/noam-usa-generate-payroll-reports.md)
 
+# [Financials](/dynamics365/operations/financials/index)
+
+# [Detaljhandel](/dynamics365/operations/retail/index)
+
+# [Forsyningskjedeadministrasjon](/dynamics365/operations/supply-chain/index)
+
+# [Utvikler og administrator](/dynamics365/operations/dev-itpro/index)
+
+# Andre ressurser
+## [Ordliste for Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [Hva er nytt eller endret?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

@@ -68,3 +68,16 @@
 ## [Oversikt over grunnleggende om handel](commerce-essentials.md)
 ## [Organisasjoner og organisasjonshierarkier (grunnleggende om handel)](organizational-hierarchies-commerce-essentials.md)
 # [Innhold for IT-ekspert og utvikler](dev-itpro/TOC.md)
+
+# [Financials](/dynamics365/operations/financials/index)
+
+# [Personale](/dynamics365/operations/human-resources/index)
+
+# [Forsyningskjedeadministrasjon](/dynamics365/operations/supply-chain/index)
+
+# [Utvikler og administrator](/dynamics365/operations/dev-itpro/index)
+
+# Andre ressurser
+## [Ordliste for Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Hva er nytt eller endret?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

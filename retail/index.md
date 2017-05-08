@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail gir en fullstendig shoppingopplevelse med
 Denne siden peker til ressurser som gjør det enklere å bruke Microsoft Dynamics 365 for Operations - Retail mer effektivt. I ruten helt til venstre velger du et funksjonsområde du vil finne ut mer om. 
 
 ## <a name="set-up-retail-channels"></a>Definere detaljhandelskanaler
-Når du definerer detaljhandelsopplevelsen, må du bestemme hvordan du vil definere og konfigurere driften av den fysiske butikken (kalt *detaljhandelsbutikk* i Dynamics 365 for Operations) og nettbutikken. 
+Når du definerer detaljhandelsopplevelsen, må du bestemme hvordan du vil definere og konfigurere butikker – fysisk butikk, nettbutikk og telefonsenter. 
 
-Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, prisgrupper, salgsstedsløsninger, inntektskontoer, utgiftskontoer og medarbeidere. Når du har opprettet detaljhandelsbutikken, kan du tilordne produktene du vil at butikken skal føre. Du tilordner også ansatte, kasser og kunder til butikken. Til slutt legger du til den nye butikken i et organisasjonshierarki.
-
-Når du oppretter nettbutikken, må du definere komponenter, for eksempel sortimenter, attributter, betalingsmåter og leveringsmetoder. Du kan også definere priser, kampanjer, rabatter og leveringsvilkår som er spesifikke for nettbutikken.
+Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, leveringsmåter, prisgrupper, inntekts-/utgiftskontoer, registre og medarbeidere. Når du har opprettet detaljhandelsbutikken, kan du opprette et produktsortiment du vil at butikken skal føre. Du kan også definere butikkspesifikke priser og rabatter som skal gjelde for produkter som er til salgs i butikken.
 
 -   [Definere kanaler for detaljhandel](define-maintain-retail-channels.md)
 -   [Oversikt over nettbutikk](online-stores.md)
@@ -49,10 +48,10 @@ Du kan definere et telefonsenter som en type kanal for detaljhandel. I et telefo
 -   [Telefonsenterfunksjonalitet](call-center-functionality.md)
 -   [Opprette telefonsenterkataloger](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definere løsninger for salgssted og mobilsalgssted
-Retail Modern POS (MPOS) for detaljhandel er en salgsstedsapp for PCer, nettbrett og telefoner. Selgere kan behandle salgstransaksjoner og kundeordrer, og kan utføre daglige operasjoner og lagerstyring med mobile enheter hvor som helst i butikken, og i tillegg til PC-baserte registre. Skysalgssted er et leserbasert salgssted. 
+## <a name="define-your-pos-solutions"></a>Definere løsninger for salgssted
+Retail Modern POS (MPOS) for detaljhandel er en salgsstedsapp for PCer, nettbrett og telefoner. Selgere kan behandle salgstransaksjoner og kundeordrer, utføre kundeaktiviteter og utføre daglige operasjoner og lagerstyring med mobile enheter hvor som helst i butikken, og i tillegg til PC-baserte registre. Cloud POS er et nettleserbasert salgssted som kan åpnes i alle typer standard nettlesere. 
 
-Det finnes flere komponenter du kan konfigurere for å definere relasjonene mellom en butikk, kasser på salgsstedet eller kanaler i butikken, og de eksterne enhetene for detaljhandel som de kassene eller kanalene bruker til å behandle transaksjoner. Du må også definere egenskapene for en bestemt forekomst av salgsstedet, inkludert maskinvareprofilen eller oppsettet for eksterne enheter for detaljhandel som skal brukes i kassen, butikken som kassen er tilordnet til, og den visuelle opplevelsen for brukeren som logger på den kassen.
+Det finnes flere komponenter du kan konfigurere for å definere relasjonene mellom en butikk, kasser på salgsstedet i butikken, og de eksterne enhetene for detaljhandel som de kassene bruker til å behandle transaksjoner. Du må også definere egenskapene for en bestemt forekomst av salgsstedet, inkludert maskinvareprofilen eller oppsettet for eksterne enheter for detaljhandel som skal brukes i kassen, butikken som kassen er tilordnet til, den visuelle opplevelsen for brukeren som logger på den kassen, og funksjonene som er aktivert i registret. Du må også definere om registret kan brukes i frakoblet tilstand.
 
 -   [Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Konfigurere og installere MPOS](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Du kan finne meninger, nyheter og annen informasjon om Microsoft Dynamics 365 fo
 Det finnes mange emner om detaljhandel i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX-produktteambloggen</a>. Noen av disse innleggene ble skrevet for tidligere versjoner av Dynamics 365 for Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community-bloggen</a> gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
+
+
 

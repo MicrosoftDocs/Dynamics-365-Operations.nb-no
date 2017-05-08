@@ -1,6 +1,6 @@
 ---
-title: Startside for BI &amp; og rapportering
-description: Denne emnelisten viser ressursene for BI &amp; og rapportering som er tilgjengelige i Microsoft Dynamics 365 for Operations.
+title: Startside for BI og rapportering
+description: Dette emnet viser ressursene for BI og rapportering som er tilgjengelige i Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,20 +16,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: fad93826b0798e2028f75457d5bbdbd1f9639a5b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 7163951249cbea6d528440aef9bf38bcf4c4f7e5
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>Startside for BI &amp; og rapportering
+# <a name="bi-amp-reporting-home-page"></a>Startside for BI og rapportering
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne emnelisten viser ressursene for BI &amp; og rapportering som er tilgjengelige i Microsoft Dynamics 365 for Operations. 
+Dette emnet viser ressursene for BI og rapportering som er tilgjengelige i Microsoft Dynamics 365 for Operations. 
 
 <a name="working-with-aggregate-data"></a>Arbeide med aggregerte data
 ---------------------------
@@ -67,10 +68,10 @@ Denne emnelisten viser ressursene for BI &amp; og rapportering som er tilgjengel
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 -   [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 -   [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Utvide listen over elektroniske rapporteringsfunksjoner](general-electronic-reporting-formulas-list-extension.md)
+-   [Utvide listen over funksjoner for elektronisk rapportering (ER)](general-electronic-reporting-formulas-list-extension.md)
 -   [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 -   [Mål for elektronisk rapportering](electronic-reporting-destinations.md)
--   [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
+-   [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 -   [Bruk en elektronisk rapporteringskonfigurasjon til å forsyne Power BI med data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER Opprette en konfigurasjonsleverandør og merke den som aktiv](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (oppgaveveiledning)
 -   [ER Utforme domenespesifikk datamodell](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (oppgaveveiledning)

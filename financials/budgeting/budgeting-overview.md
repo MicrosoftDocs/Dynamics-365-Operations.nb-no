@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: f7b4efc06b8e64c05da026850b41cb5b68c33ec3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: aacce0449c9490c4ab66cacb9945ed64fa40de34
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -40,8 +41,8 @@ Ressursplanleggingssyklusen for et selskap består vanligvis av planlegging, bud
 -   [Grunnleggende budsjettering: Oversikt og konfigurasjon](basic-budgeting-overview-configuration.md)
 -   [Budsjettkontroll: Oversikt og konfigurasjon](budget-control-overview-configuration.md)
 -   [Budsjettplanlegging: Oversikt og konfigurasjon](budget-planning-overview-configuration.md)
--   [Stillingsprognoser](position-forecasting.md)
--   [Dokumenter for budsjettplanleggingsjusteringer](budget-planning-justification-docs.md)
+-   [Stillingsprognose](position-forecasting.md)
+-   [Justeringsdokumenter for budsjettplanlegging](budget-planning-justification-docs.md)
 -   [Microsoft Excel-maler for budsjettplanlegging](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-dynamics-365-for-operations"></a>Budsjetteringsverktøy i Dynamics 365 for Operations
@@ -52,7 +53,7 @@ Ytterligere funksjoner for planlegging og budsjettering er tilgjengelige i hele 
 -   **Arbeidsstyrkebudsjetter** – Arbeidsstyrkebudsjettering inneholder detaljert planlegging av budsjettkostnadskomponent for stillinger, kompensasjonsgrupper og så videre.
 -   **Anleggsmiddelbudsjetter** – Basert på anleggsmiddelinformasjon kan du beregne planlagt avskrivning og registrere andre planlagte transaksjoner som er relaterte til anleggsmidler.
 -   **Prosjektbudsjetter** – I prosjektmodulen kan du opprette detaljert prosjektprognoser. Prosjektprognosene vil inneholde informasjon om planlagte timer, utgifter, avgifter og varer.
--   **Behovsprognose **– Du kan beregne fremtidig beholdningsbehov og opprette behovsprognoser basert på historiske transaksjonsdata.
+-   **Behovsprognose** – Du kan beregne fremtidig beholdningsbehov og opprette behovsprognoser basert på historiske transaksjonsdata.
 
 Hvis du vil ha informasjon om hvordan du kobler planlegging data fra andre moduler i budsjettplaner, kan du se [Integrasjon av budsjettplanlegging med andre moduler](budget-planning-integration-other-modules.md).
 
