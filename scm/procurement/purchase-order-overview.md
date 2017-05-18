@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: aed1a411aaefeebb96c2b922afc2e3e7f82cdbb7
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 71cdef49e5fc0ebac0ebcf4aaeeb7e6c97bb8393
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -61,7 +62,7 @@ Bestillinger inneholder flere statusfelt som viser fremdriften for bestillingen.
 
 -   **Åpen ordre** – Ordre er opprettet, og antall er bestilt.
 -   **Mottatt** – Noen av antallene er mottatt, men de er ikke fakturert ennå.
--   **Fakturert** – Hele antallet i ordren er fakturert. **Obs! ** Hvis en ordre er *delvis* fakturert, er ikke statusen **Mottatt** eller **Fakturert** riktig. Ordren vil derfor fortsatt ha statusen **Åpen ordre**.
+-   **Fakturert** – Hele antallet i ordren er fakturert. **Obs!** Hvis en ordre er *delvis* fakturert, er ikke statusen **Mottatt** eller **Fakturert** riktig. Ordren vil derfor fortsatt ha statusen **Åpen ordre**.
 -   **Avbrutt** – En ordre ble bekreftet, men senere avbrutt. Derfor angir denne statusen at det finnes ikke lenger noen åpne antall i bestilling.
 
 Feltet **Dokumentstatus** lar deg raskt se gjennom ordrefremdriften når det gjelder dokumenter som har blitt behandlet. Det viser statusen for det nyeste dokumentet som er fullført for ordren. Følgende verdier er tilgjengelige:

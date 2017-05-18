@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -70,9 +71,9 @@ Først må du definere behandlingsgruppen for bankkontoutdrag for ISO20022-bankk
 7.  Når enheten for bankkontoutdrag er lastet opp og tilordningen er fullført, klikker du handlingen **Vis kart** for enheten.
 8.  Enheten for bankkontoutdrag er en sammensatt enhet som består av fire separate enheter. Velg **BankStatementDocumentEntity** i listen, og klikk deretter handlingen **Vis kart**.
 9.  Klikk **Ny** i kategorien **Transformasjoner**.
-10. For serienummer 1 klikker du **Last opp fil** og velger** ISO20022XML-to-Reconciliation.xslt**-filen som *du lagret tidligere. **Obs! ** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. For serienummer 1 klikker du **Last opp fil** og velger **ISO20022XML-to-Reconciliation.xslt**-filen som du lagret tidligere. **Obs!** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Klikk på **Ny**.
-12. For serienummer 2 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som *du lagret tidligere.
+12. For serienummer 2 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som du lagret tidligere.
 13. Klikk **Bruk transformasjoner**.
 
 Når behandlingsgruppen for format er definert, er neste trinn å definere formatreglene for bankkontoutdrag for ISO20022 bankkontoutdrag.
@@ -88,8 +89,8 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 
 1.  Gå til **Kontant- og bankbehandling** &gt; **Bankkontoer**.
 2.  Velg bankkontoen, og åpne den for å vise detaljene.
-3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen **til **Ja**.
-4.  Sett feltet **Utdragsformat **til formatet som du opprettet tidligere, for eksempel **ISO20022**.
+3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen**til **Ja**.
+4.  Sett feltet **Utdragsformat**til formatet som du opprettet tidligere, for eksempel **ISO20022**.
 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Definere import av MT940-bankkontoutdrag
 Først må du definere behandlingsgruppen for bankkontoutdrag for MT940-bankkontoutdrag ved hjelp av rammeverket for dataenhet.
@@ -103,11 +104,11 @@ Først må du definere behandlingsgruppen for bankkontoutdrag for MT940-bankkont
 7.  Når enheten for bankkontoutdrag er lastet opp og tilordningen er fullført, klikker du handlingen **Vis kart** for enheten.
 8.  Enheten for bankkontoutdrag er en sammensatt enhet som består av fire separate enheter. Velg **BankStatementDocumentEntity** i listen, og klikk deretter handlingen **Vis kart**.
 9.  Klikk **Ny** i kategorien **Transformasjoner**.
-10. For serienummer 1 klikker du **Last opp fil** og velger**MT940TXT-to-MT940XML.xslt**-filen som *du lagret tidligere.
+10. For serienummer 1 klikker du **Last opp fil** og velger **MT940TXT-to-MT940XML.xslt**-filen som du lagret tidligere.
 11. Klikk **Ny**.
-12. For serienummer 2 klikker du **Last opp fil** og velger ** MT940XML-to-Reconciliation.xslt**-filen som *du lagret tidligere. **Obs! ** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. For serienummer 2 klikker du **Last opp fil** og velger **MT940XML-to-Reconciliation.xslt**-filen som du lagret tidligere. **Obs!** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Klikk på **Ny**.
-14. For serienummer 3 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som *du lagret tidligere.
+14. For serienummer 3 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som du lagret tidligere.
 15. Klikk **Bruk transformasjoner**.
 
 Når behandlingsgruppen for format er definert, er neste trinn å definere formatreglene for bankkontoutdrag for MT940 bankkontoutdrag.
@@ -123,9 +124,9 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 
 1.  Gå til **Kontant- og bankbehandling** &gt; **Bankkontoer**.
 2.  Velg bankkontoen, og åpne den for å vise detaljene.
-3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen **til **Ja**.
+3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen**til **Ja**.
 4.  Når du blir bedt om å bekrefte valget og aktivere avanserte bankavstemming, klikker du **OK**.
-5.  Sett feltet **Utdragsformat **til formatet som du opprettet tidligere, for eksempel **MT940**.
+5.  Sett feltet **Utdragsformat**til formatet som du opprettet tidligere, for eksempel **MT940**.
 
 ## <a name="set-up-the-import-of-bai2-bank-statements"></a>Definere import av BAI2-bankkontoutdrag
 Først må du definere behandlingsgruppen for bankkontoutdrag for BAI2-bankkontoutdrag ved hjelp av rammeverket for dataenhet.
@@ -139,11 +140,11 @@ Først må du definere behandlingsgruppen for bankkontoutdrag for BAI2-bankkonto
 7.  Når enheten for bankkontoutdrag er lastet opp og tilordningen er fullført, klikker du handlingen **Vis kart** for enheten.
 8.  Enheten for bankkontoutdrag er en sammensatt enhet som består av fire separate enheter. Velg **BankStatementDocumentEntity** i listen, og klikk deretter handlingen **Vis kart**.
 9.  Klikk **Ny** i kategorien **Transformasjoner**.
-10. For serienummer 1 klikker du **Last opp fil** og velger **BAI2CSV-to-BAI2XML.xslt**-filen som *du lagret tidligere.
+10. For serienummer 1 klikker du **Last opp fil** og velger **BAI2CSV-to-BAI2XML.xslt**-filen som du lagret tidligere.
 11. Klikk **Ny**.
-12. For serienummer 2 klikker du **Last opp fil** og velger ** BAI2XML-to-Reconciliation.xslt**-filen som *du lagret tidligere. **Obs! ** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. For serienummer 2 klikker du **Last opp fil** og velger **BAI2XML-to-Reconciliation.xslt**-filen som du lagret tidligere. **Obs!** Dynamics 365 for Operations-transformeringsfiler er bygget for standardformatet. Siden banker ofte avviker fra dette formatet, må du kanskje oppdatere transformeringsfilen som skal tilordnes til bankkontoutdragsformatet. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Klikk på **Ny**.
-14. For serienummer 3 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som *du lagret tidligere.
+14. For serienummer 3 klikker du **Last opp fil** og velger **BankReconciliation-to-Composite.xslt**-filen som du lagret tidligere.
 15. Klikk **Bruk transformasjoner**.
 
 Når behandlingsgruppen for format er definert, er neste trinn å definere formatreglene for bankkontoutdrag for BAI2 bankkontoutdrag.
@@ -159,9 +160,9 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 
 1.  Gå til **Kontant- og bankbehandling** &gt; **Bankkontoer**.
 2.  Velg bankkontoen, og åpne den for å vise detaljene.
-3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen **til **Ja**.
+3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen**til **Ja**.
 4.  Når du blir bedt om å bekrefte valget og aktivere avanserte bankavstemming, klikker du **OK**.
-5.  Sett feltet **Utdragsformat **til formatet som du opprettet tidligere, for eksempel **BAI2**.
+5.  Sett feltet **Utdragsformat**til formatet som du opprettet tidligere, for eksempel **BAI2**.
 
 ## <a name="test-the-bank-statement-import"></a>Teste import av bankkontoutdrag
 Det siste trinnet er å teste at du kan importere bankkontoutdraget.

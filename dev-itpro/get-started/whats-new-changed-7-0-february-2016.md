@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016.
 
@@ -331,8 +335,8 @@ Denne funksjonen fungerer uavhengig av etterkalkuleringsmetoder som er tilordnet
 <tr class="even">
 <td>Tilgang til veiledet prosedyremessig hjelp (oppgaveveiledning) og fremgangsmåter ved å klikke **Hjelp**.</td>
 <td>Hjelpesystemet for AX 2012 peker til HTML-emner som er lagret på en lokal webserver. Kunder og partnere kan opprette sin egen hjelp.</td>
-<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsoft wiki. Hvis du vil ha mer informasjon, kan du se [Hjelp for Dynamics AX – Komme i gang](help-overview.md) og [Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md).</td>
-<td>Oppgaveveiledninger gir en veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan laste ned og tilpasse oppgaveveiledningene som Microsoft tilbyr. Wikien gir en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjonen. Derfor garanterer det at du har tilgang til den nyeste tekniske informasjonen.</td>
+<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsofts nettsted for dokumenter. Hvis du vil ha mer informasjon, kan du se [Hjelp for Dynamics AX – Komme i gang](help-overview.md) og [Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Oppgaveveiledninger gir en veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan laste ned og tilpasse oppgaveveiledningene som Microsoft tilbyr. Emnet gir en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjonen. Derfor garanterer det at du har tilgang til den nyeste tekniske informasjonen.</td>
 </tr>
 </tbody>
 </table>
@@ -1076,5 +1080,7 @@ Ingen nye funksjoner er lagt til.
 [Hva er nytt eller endret?](whats-new-changed.md)
 
 [Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md)
+
+
 
 

@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 19eeee753c15cf2670948ce2c615a112813c16ad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2112d6dd45c76af3cea75a4e06b06f9577c572ad
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="master-planning-and-multisite-functionality"></a>Hovedplanlegging og multisite-funksjonalitet
+
+[!include[banner](../includes/banner.md)]
+
 
 Hovedplanlegging tar hensyn til innstillingene for område- og lagerdimensjonene. 
 
@@ -37,7 +41,7 @@ Når en dimensjon er obligatorisk, må du angi en dimensjonsverdi for alle lager
 
 Når lageret ikke er satt til obligatorisk, kan det være at det ikke er kjent fra det opprinnelige behovet. Planleggingsmotoren må bestemme hvilket lager som skal brukes, basert på innstillingene som er angitt for varen, individuelle lagre og detaljene i ordrelinjen.
 
-Følgende wiki-artikler beskriver hvordan planleggingsmotoren fungerer, når forskjellige innstillinger er definert, for å bestemme hvilket lager som skal brukes.
+Følgende emner beskriver hvordan planleggingsmotoren fungerer når forskjellige innstillinger er definert for å bestemme hvilket lager som skal brukes.
 
 [Hovedplanlegging – område- og lagerdekning, lager obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -48,5 +52,7 @@ Følgende wiki-artikler beskriver hvordan planleggingsmotoren fungerer, når for
 [Hovedplanlegging – område- og lagerdekning, lager ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Hovedplanlegging – hvordan stykklisteversjon fastsettes](master-plan-bom-version-determined.md)
+
+
 
 

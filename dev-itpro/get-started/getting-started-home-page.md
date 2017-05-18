@@ -3,7 +3,7 @@ title: Hvor du skal begynne
 description: "Start her for å komme raskt i gang og lære om Microsoft Dynamics 365 for Operations UI."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Hvor du skal begynne
+
+[!include[banner](../includes/banner.md)]
+
 
 Start her for å komme raskt i gang og lære om Microsoft Dynamics 365 for Operations UI.
 
@@ -36,7 +40,7 @@ Ressursene nedenfor gir en oversikt over hvordan du arbeider med partneren for �
 - [Oversikt over FastTrack for Microsoft Dynamics 365](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Registrere deg for et abonnement](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations-kunder](../lifecycle-services/lcs-works-lcs.md) 
-- [Hvordan kunder som har kjøpt Microsoft Dynamics 365 for Operations via en leverandør av skytjenester, kan få den lokale versjonen av Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
+- [Hvordan kunder som har kjøpt Microsoft Dynamics 365 for Operations via en leverandør av skytjenester, kan få den lokale versjonen av Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Brukergrensesnitt
 Ressursene nedenfor gir informasjon om brukeropplevelsen Dynamics 365 for Operations. 
@@ -71,12 +75,12 @@ Oppgaveopptakeren er et verktøy i Microsoft Dynamics 365 for Operations du kan 
 <a name="see-also"></a>Se også
 --------
 
-[Opprette nye biblioteker for opplæring for Dynamics 365 for Operations i Lifecycle Services ved hjelp av oppgaveopptakeren (ekstern kobling)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

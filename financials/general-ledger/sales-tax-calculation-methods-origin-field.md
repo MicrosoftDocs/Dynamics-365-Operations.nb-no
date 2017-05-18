@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Skattemyndighetene har innført spesielle avgifter på en vare. Avgiftsbeløpene
 -   MERVERDIAVGIFT = 25%, ved bruk av beregningsmåten prosent av bruttobeløp
 
 Hvis nettobeløpet er 10,00, er AVGIFT 1 1,00 (10,00 x 10%) og AVGIFT 2 = 2,00 (10,00 x 20%). Beløpene er som følger: bruttobeløp: nettobeløp + AVGIFT 1 beløp AVGIFT 2 beløp (10,00 + 1,00 + 2,00) = 13,00 MERVERDIAVGIFT = 13,00 x 25% = 3,25 Total AVGIFT og MERVERDIAVGIFT: 1,00 + 2,00 + 3,25 = 6,25 totalbeløp: 10,00 + 6,25 = 16,25
-| **Obs! **                                                                                                                                                                                                                 |
+| **Obs!**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Bare én avgiftskode med opprinnelse = prosenten av bruttobeløpet kan brukes for en transaksjon. Hvis mer enn én eller slik avgiftskode bestemmes for en transaksjon, vises en feil om at merverdiavgift ikke kan beregnes. |
 
@@ -68,7 +69,7 @@ Gitt følgende mva-koder:
 -   MERVERDIAVGIFT 1 = 25%, ved bruk av metoden prosent av bruttobeløp
 
 Nettobeløp: 10,00 AVGIFT 1: 10,00 x 10% = 1,00 AVGIFT 2: 1,00 x 20% = 0,20 bruttobeløp: 10,00 + 1,00 + 0,20 = 11,20 MERVERDIAVGIFT: 11,20 x 25% = 2,80 total AVGIFT og MERVERDIAVGIFT: 1,00 + 0,20 + 2,80 = 4,00 totalbeløp: 10,00 + 4,00 = 14,00
-| **Obs! **                                                                                                                                                                                                                    |
+| **Obs!**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mva-beregninger med flere nivåer er ikke mulig. En avgift kan ikke beregnes basert på en avgift som allerede er beregnet basert på en annen avgift. Flere mva på mva-koder på enkeltnivå kan beregnes på en transaksjon. |
 
@@ -77,7 +78,7 @@ Når du velger Beløp per enhet i grunnlagsfeltet, beregnes merverdiavgift som e
 ### <a name="example"></a>Eksempel
 
 Mva-koden er definert som: USD 1,20 per enhet = boks på en salgsfakturalinje 25 bokser for en vare selges Mva-sats beregnes som 25 x 1,20 = 30,00
-| **Obs! **                                                                                                                                                                                                 |
+| **Obs!**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis transaksjonen angis i en annen enhet enn enheten som er angitt i mva-koden, omregnes den automatisk basert på enhetsomregningene som er angitt på Enhetsomregninger-siden. |
 

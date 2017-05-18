@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 84b9f91f49e988244b98aeb7a6a6344548d6a8c0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fb9f7b8aa9198b66f196613641de5237fac2ac2c
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Retningslinjene antar at du bruker en toversjons tilnærming til å oppdatere st
 -   Tilordne en etterkalkuleringstype for **standardkostnad**.
 -   Tilordne en signifikant identifikator som identifiserer innholdet i etterkalkuleringsversjonen, for eksempel **2016-OPPDATERINGER**.
 -   I feltgruppen **Tillat pristyper** må du kontrollere at **Kostpris** er satt til **Ja**.
--   Tillat at kostnadsposter kan angis for alle områder (det vil si, la **Område **-feltet stå tomt). Hvis du angir et område, kan kostnadsposter angis bare for dette området.
+-   Tillat at kostnadsposter kan angis for alle områder (det vil si, la **Område**-feltet stå tomt). Hvis du angir et område, kan kostnadsposter angis bare for dette området.
 -   Bruk tilbakefallsprinsippet **Aktiv**.
 
 Hvis du vi legge til nye produksjonsvarer i hele den frosne perioden, kan du gjøre følgende.

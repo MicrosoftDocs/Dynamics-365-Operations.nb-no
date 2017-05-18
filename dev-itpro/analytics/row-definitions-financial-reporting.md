@@ -1,16 +1,16 @@
 ---
 title: Raddefinisjoner i Utforming av finansrapport
 description: "En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
+
+[!include[banner](../includes/banner.md)]
+
 
 En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.
 
@@ -45,7 +49,7 @@ En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i h
 En raddefinisjon kan inneholde opptil 20 000 finansdimensjonsrader og kan inneholder følgende informasjon:
 
 -   Beskrivende tekst som gir mening i rapporten ved å opprette inndelingsoverskrifter, linjer og mellomrom, for eksempel **Kontanter** eller **Totalomsetning**
--   Koblinger til økonomiske data, som kan inneholde dimensjonsverdier i Microsoft Dynamics 365 for Operations. **Obs! ** Du kan definere en raddefinisjon for å hente ut data fra finansdimensjonssystemet hver gang rapporten blir generert.
+-   Koblinger til økonomiske data, som kan inneholde dimensjonsverdier i Microsoft Dynamics 365 for Operations. **Obs!** Du kan definere en raddefinisjon for å hente ut data fra finansdimensjonssystemet hver gang rapporten blir generert.
 -   Totaler og formler for rader som er basert på de økonomiske dataen som er koblet
 
 Hver rad i en raddefinisjon inneholder vanligvis én av følgende typer informasjon:
@@ -73,7 +77,7 @@ Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 1.  I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
 2.  På **Rediger**-menyen klikker du **Sett inn rader fra dimensjoner**.
 3.  I dialogboksen **Sett inn rader fra dimensjoner**, i **Dimensjoner**-raden, velger du cellen for dimensjonen som skal overføres til raddefinisjonen, og deretter klikker du **Bare &&&**.
-4.  Hvis du vil begrense raddefinisjonen for et bestemt områder dimensjonsverdier, angir du startverdien for dimensjonen i cellen **Start på dimensjonsområde**, og deretter angir du sluttverdien for dimensjonen i cellen **Slutt på dimensjonsområde**. Hvis du vil ta med alle verdier for den valgte dimensjonen, lar du disse cellene være tomme. **Obs! ** Jokertegn (\* eller?) i dimensjonsområder kan ikke returnere alle resultatene som du vil ha, avhengig av hvordan ERP-databasen sorterer data.
+4.  Hvis du vil begrense raddefinisjonen for et bestemt områder dimensjonsverdier, angir du startverdien for dimensjonen i cellen **Start på dimensjonsområde**, og deretter angir du sluttverdien for dimensjonen i cellen **Slutt på dimensjonsområde**. Hvis du vil ta med alle verdier for den valgte dimensjonen, lar du disse cellene være tomme. **Obs!** Jokertegn (\* eller?) i dimensjonsområder kan ikke returnere alle resultatene som du vil ha, avhengig av hvordan ERP-databasen sorterer data.
 5.  I feltet **Kode for startrad** angir du radkoden for den første dimensjonsverdien som skal legges til raddefinisjonen.
 6.  I feltet **Øk hver rad med** angir du avstanden mellom etterfølgende radkoder. Hvis den første radkoden for eksempel er 100 og økningsverdien er 30, har de første nye radene kodene 100, 130, 160, 190 og 220. Bruk en inkrementell verdi som gir nok plass til å sette inn nye format- og formelrader.
 7.  Klikk **OK**. Én linje for hver valgte dimensjonsverdi legges til raddefinisjonen.
@@ -97,9 +101,9 @@ Følg fremgangsmåten nedenfor hvis du vil justere avrunding i en balanse.
     -   **Raden Samlet gjeld og egenkapital** – Radkoden for raden i balansen som inneholder samlet gjeld og egenkapital.
     -   **Grense for justeringsbeløp** – Et positivt heltall som angir grensen for automatiske justeringer. Dette beløpe blir sammenlignet med den absolutte verdien av den faktiske avrundingsdifferansen.
 
-    **Obs! ** Disse radkodene må være koblet til de økonomiske dataen. Raden må med andre ord ha en dimensjonsverdi i cellen **Kobling til finansdimensjoner**. **Ikke** refererer til raden for beskrivelse (**DESC**), beregnet (**CALC**) eller summert (**TOT**).
+    **Obs!** Disse radkodene må være koblet til de økonomiske dataen. Raden må med andre ord ha en dimensjonsverdi i cellen **Kobling til finansdimensjoner**. **Ikke** refererer til raden for beskrivelse (**DESC**), beregnet (**CALC**) eller summert (**TOT**).
 
-Beløpene i balansen vil nå være i balanse når avrunding er aktivert. **Obs! ** Grensen for justering brukes basert på alternativet **Avrundingspresisjon**, som er angitt for rapportdefinisjonen. Hvis du for eksempel velger å runde av rapporten til tusener og angi **2** i feltet **Grense for justeringsbeløp**, vises en advarsel når verdien som identifiseres i feltet **Raden Avrundingsjustering**, økes eller reduseres med mer enn 2 000.
+Beløpene i balansen vil nå være i balanse når avrunding er aktivert. **Obs!** Grensen for justering brukes basert på alternativet **Avrundingspresisjon**, som er angitt for rapportdefinisjonen. Hvis du for eksempel velger å runde av rapporten til tusener og angi **2** i feltet **Grense for justeringsbeløp**, vises en advarsel når verdien som identifiseres i feltet **Raden Avrundingsjustering**, økes eller reduseres med mer enn 2 000.
 
 ## <a name="format-row-and-column-text"></a>Formatere rad- og kolonnetekst
 Du kan tilpasse utseendet på rapportene ved å endre skrifter og formatere tekst. Avsnittene nedenfor beskriver hvordan du kan formatere utseendet på rader og kolonner i rapporter.
@@ -117,7 +121,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <tr class="odd">
 <td>Opprette en skriftstil</td>
 <td><ol>
-<li>På <strong>Format </strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
+<li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
 <li>Klikk <strong>Ny</strong> i dialogboksen <strong>Stiler og formatering</strong>, og skriv deretter inn et unikt navn for den nye stilen.</li>
 <li>Velg skriftene du vil bruke, og klikk deretter <strong>OK</strong>.</li>
 </ol></td>
@@ -125,7 +129,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <tr class="even">
 <td>Endre en skriftstil</td>
 <td><ol>
-<li>På <strong>Format </strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
+<li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
 <li>Velg en stil å endre i dialogboksen <strong>Stiler og formatering</strong>, og klikk deretter <strong>Endre</strong>.</li>
 <li>Velg skriftene du vil bruke, og klikk deretter <strong>OK</strong>.</li>
 </ol></td>
@@ -173,6 +177,8 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 <a name="see-also"></a>Se også
 --------
 
-[Finansrapportering for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Finansrapportering](financial-reporting-intro.md)
+
+
 
 

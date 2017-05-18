@@ -1,6 +1,6 @@
 ---
 title: Nye oppgaveveiledninger (februar 2016)
-description: Denne wikien viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
+description: Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,17 +16,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 6462951cba3c289368887a037d4b71187f4523df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d9e6620c1f4c808646e6f5c3b9f5b607c64c51df
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
-Denne wikien viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
 
 <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
@@ -723,5 +727,7 @@ Denne wikien viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotek
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

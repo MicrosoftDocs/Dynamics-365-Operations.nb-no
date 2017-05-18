@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 4d243e6a9a68b69a6b32748344fc606ff3f2d965
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: eeed8bc4ad0fc24b04055e26bb33c2c56856c52b
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ Du får for eksempel en kontantrabatt på 2 prosent hvis fakturaen er betalt inn
 ## <a name="credit-notes-with-cash-discounts"></a>Kreditnotaer med kontantrabatter
 Du kan returnere noen av elementene på en faktura og motta en kreditnota. Hvis en kontantrabatt ble brukt på den opprinnelige fakturaen, kan du trekke fra verdien av rabatten og få en refundering for riktig beløp. Hvis alternativet **Beregn kontantrabatter for kreditnotaer** er satt til **Ja** på siden **Leverandørparametere**, beregnes rabatten automatisk for kreditnotaen. 
 
-Du får for eksempel en kontantrabatt på 2 prosent hvis fakturaen er betalt innen 10 dager etter at den utstedes. Det posteres en faktura på 100,00. Hvis du returnerer varene og mottar en kreditnota, kan du angi kreditnotaen for hele beløpet i den opprinnelige fakturaen 100,00, sammen med 2 prosent kontantrabatt, som også er definert i kreditnotaen.  Når du viser kreditnotaen på siden **Utlign åpne transaksjoner**, vises ** 98,00** i feltet **Beløp som skal utlignes**, og **-2,00** vises i feltet **Kontantrabattbeløp**. Rabattbeløpet posteres til en kontantrabattkonto.
+Du får for eksempel en kontantrabatt på 2 prosent hvis fakturaen er betalt innen 10 dager etter at den utstedes. Det posteres en faktura på 100,00. Hvis du returnerer varene og mottar en kreditnota, kan du angi kreditnotaen for hele beløpet i den opprinnelige fakturaen 100,00, sammen med 2 prosent kontantrabatt, som også er definert i kreditnotaen.  Når du viser kreditnotaen på siden **Utlign åpne transaksjoner**, vises **98,00** i feltet **Beløp som skal utlignes**, og **-2,00** vises i feltet **Kontantrabattbeløp**. Rabattbeløpet posteres til en kontantrabattkonto.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Overbetalings-/underbetalingsbeløp
 Du kan foreta en delbetaling der beløpet som fremdeles skal utlignes, er svært lite. Anta for eksempel at leverandørfakturaen gjelder 1 000,00, og du betaler 999,90. Hvis det gjenstående beløpet er mindre enn beløpet som er angitt for overbetalinger eller underbetalinger på siden **Leverandørparametere**, posteres differansen automatisk til en finanskonto for overbetaling/underbetaling.

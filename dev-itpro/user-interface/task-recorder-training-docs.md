@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 38bce4a843f0db575c8d1ba08b7dc2ece8366663
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d2e1ff40f5735f69a3fcdf3a85335f157e1a1a6f
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -72,7 +73,7 @@ Slik ser tittelmerknaden ut i «boblen» i oppgaveveiledningen.
 
 [![Skjerm2](./media/screen2.png)](./media/screen2.png)
 
--   **Obs! ** En notatmerknad vises etter trinnteksten som oppgaveopptakeren genererer automatisk. I oppgaveveiledningen vises den bare hvis brukeren klikker **Vis mer**-koblingen i boblen i oppgaveveiledningen. Bruk denne typen merknad til å beskrive det en bruker må vite for å kunne fullføre trinnet.
+-   **Obs!** En notatmerknad vises etter trinnteksten som oppgaveopptakeren genererer automatisk. I oppgaveveiledningen vises den bare hvis brukeren klikker **Vis mer**-koblingen i boblen i oppgaveveiledningen. Bruk denne typen merknad til å beskrive det en bruker må vite for å kunne fullføre trinnet.
 
 Dette er redigeringsruten du ser når du legger til en merknad mens du lager opptaket. Angi en tittelmerknad i **Merknader**-boksen. 
 
@@ -108,7 +109,7 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 6.  Velg biblioteknoden for forretningsprosess som er knyttet til oppgaveopptaket, i treet.
 7.  Klikk **OK**.
 8.  Klikk **Start**.
-9.  Nå kan du gå gjennom opptaket og endre eventuelle trinn ved å ta dem opp på nytt mens du går gjennom opptaket. **Obs! ** Hvis du bare vil endre teksten i et opptak, kan du åpne det i modusen **Redigere en merknad i opptaket**, og deretter lagre det.
+9.  Nå kan du gå gjennom opptaket og endre eventuelle trinn ved å ta dem opp på nytt mens du går gjennom opptaket. **Obs!** Hvis du bare vil endre teksten i et opptak, kan du åpne det i modusen **Redigere en merknad i opptaket**, og deretter lagre det.
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
 

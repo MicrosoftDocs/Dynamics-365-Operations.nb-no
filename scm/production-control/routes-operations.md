@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 556b9859d0b162b11f0bcbfc6552f6fd9a900596
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7193e3aeac651effe64877c607fc76eef8782731
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -123,7 +124,7 @@ Du kan også angi at en operasjonsrelasjon er spesifikk for et sted. På denne m
 
 Operasjonsrelasjoner gir deg stor fleksibilitet når du definerer rutene. Muligheten til å definere standardegenskaper bidrar også til å redusere mengden hoveddata som du må vedlikeholde. Men denne fleksibiliteten betyr også at du må være oppmerksom på konteksten som du endrer en operasjonsrelasjon i.  
 
-**Obs! ** Siden de operajonsegenskapene lagres i operasjonsrelasjoner per operasjon per rute, har alle forekomster av den samme operasjonen (for eksempel Montering) samme oppstillingstid, operasjonstid, ressurskrav og så videre. Hvis to forekomster av en operasjon må utføres i samme rute, men har forskjellige operasjonstid, må du derfor opprette to forskjellige operasjoner, for eksempel Montering1 og Montering2.
+**Obs!** Siden de operajonsegenskapene lagres i operasjonsrelasjoner per operasjon per rute, har alle forekomster av den samme operasjonen (for eksempel Montering) samme oppstillingstid, operasjonstid, ressurskrav og så videre. Hvis to forekomster av en operasjon må utføres i samme rute, men har forskjellige operasjonstid, må du derfor opprette to forskjellige operasjoner, for eksempel Montering1 og Montering2.
 
 ### <a name="modifying-product-specific-routes"></a>Endre produktspesifikke ruter
 
@@ -133,7 +134,7 @@ På **Rute**-siden kan du endre operasjonsegenskapene for operasjonen, for eksem
 
 Du kan også manuelt opprette en operasjon som er spesifikk for en rute og et frigitt produkt ved hjelp av funksjonen **Kopier og rediger relasjon**.  
 
-**Obs! ** Hvis du legger til en ny operasjon i en rute på **Rute**-siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
+**Obs!** Hvis du legger til en ny operasjon i en rute på **Rute**-siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Vedlikeholde operasjonsrelasjoner per rute
 

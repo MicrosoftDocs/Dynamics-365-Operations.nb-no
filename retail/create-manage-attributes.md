@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Opprett og administrer attributter
+
+[!include[banner](includes/banner.md)]
+
 
 Denne artikkelen beskriver attributter i Microsoft Dynamics 365 for Operations. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 
@@ -34,110 +38,28 @@ Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefine
 
 #### <a name="examples"></a>Eksempler
 
-Kategori
+| Kategori   | Attributt                | Tillatte verdier          | Standardverdi |
+|------------|--------------------------|-----------------------------|---------------|
+| TV og video | Merke                    | En gyldig Merke-verdi       | Ingen          |
+| TV         | Skjermstørrelse              | 20″–80″                     | Ingen          |
+| TV         | Loddrett oppløsning      | 480i, 720p, 1080i eller 1080p | 1080p         |
+| TV         | Oppdateringsfrekvens for skjerm      | 60 Hz, 120 Hz eller 240 Hz       | 60 Hz          |
+| TV         | HDMI-innganger              | 0–10                        | 3             |
+| TV         | DVI-innganger               | 0–10                        | 1             |
+| TV         | Komposittinnganger         | 0–10                        | 2             |
+| TV         | Komponentinnganger         | 0–10                        | 1             |
+| LCD-SKJERM        | 3D Ready                 | Ja eller No                   | Ja           |
+| LCD-SKJERM        | 3D Enabled               | Ja eller No                   | Ingen            |
+| Plasma     | Driftstemperatur fra      | 0–43 grader              | 32            |
+| Plasma     | Driftstemperatur til        | 0–43 grader              | 100           |
+| Projektor | Garanti for projiseringsrør | 6, 12 eller 18 måneder         | 12            |
+| Projektor | #  Antall projiseringsrør    | 1–5                         | 3             |
 
-Attributt
-
-Tillatte verdier
-
-Standardverdi
-
-TV og video
-
-Merke
-
-En gyldig **Merke**-verdi
-
-Ingen
-
-TV
-
-Skjermstørrelse
-
-**20"**–**80"**
-
-Ingen
-
-Loddrett oppløsning
-
-**480i**, **720p**, **1080i** eller **1080p**
-
-**1080p**
-
-Oppdateringsfrekvens for skjerm
-
-**60 Hz**, **120 Hz** eller **240 Hz**
-
-**60 Hz**
-
-HDMI-innganger
-
-**0**–**10**
-
-**3**
-
-DVI-innganger
-
-**0**–**10**
-
-**1**
-
-Komposittinnganger
-
-**0**–**10**
-
-**2**
-
-Komponentinnganger
-
-**0**–**10**
-
-**1**
-
-LCD-SKJERM
-
-3D Ready
-
-**Ja** eller **No**
-
-**Ja**
-
-3D Enabled
-
-**Ja** eller **No**
-
-**Antall**
-
-Plasma
-
-Driftstemperatur fra
-
-**0**–**43** grader
-
-**0**
-
-Driftstemperatur til
-
-**0**–**43** grader
-
-**37**
-
-Projektor
-
-Garanti for projiseringsrør
-
-**6**, **12** eller **18** måneder
-
-**12**
-
-\# Antall projiseringsrør
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Attributtype
-  [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for Operations følgende attributtyper:
+  [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for Operations følgende attributtyper:
 
 -   **Valutaen** – Denne attributtypen støtter valutaverdier. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
 -   **Dato og klokkeslett** – Denne attributtypen støtter dato- og klokkeslettverdier. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.
@@ -174,5 +96,7 @@ Garanti for projiseringsrør
 ### <a name="at-the-retail-channel-level"></a>På nivå for kanal for detaljhandel
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardverdiene for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte kanaler for detaljhandel.
+
+
 
 

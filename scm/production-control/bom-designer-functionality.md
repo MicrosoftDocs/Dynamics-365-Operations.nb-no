@@ -3,7 +3,7 @@ title: Funksjonaliteten for stykklisteutforming
 description: "Denne artikkelen beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funksjonaliteten for stykklisteutforming
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
 
@@ -95,7 +99,7 @@ Filteret som brukes for stykklisten og ruten, vises i overskriften for stykklist
 Når du bruker stykklisteutformingen for å se gjennom eller redigere stykklister som består av én eller flere nivåer av fantomer, vil ruten som er knyttet til den øverste varen vanligvis strekke seg over hele stykklistehierarkiet. Hvis du vil forenkle oversikten, kan du låse ruten på øverste nivå i visningen ved å klikke **Vis** &gt; **Lås rute**. Hvis du vil låse opp ruten, klikker du **Vis** &gt; **Lås opp rute**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Legge til og redigere stykklister og stykklistelinjer
-Bruk funksjonene **Stykklistelinjer ** eller **Stykkliste** til å endre stykklistelinjene eller stykklisten. Når du velger en node i treet, bestemmer nodetypen funksjonene som er tilgjengelige.
+Bruk funksjonene **Stykklistelinjer** eller **Stykkliste** til å endre stykklistelinjene eller stykklisten. Når du velger en node i treet, bestemmer nodetypen funksjonene som er tilgjengelige.
 
 | Funksjon                            | beskrivelse                                                                                               | Nodetype og betingelser                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i Stykk
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Stykkliste         | Bruk avmerkingsboksene for å velge kriteriene som vises i trestrukturen. Stykklisteutforming viser de valgte kriteriene nederst i begge kategorier. |
 | Rute       | Bruk avmerkingsboksene for å velge kriteriene som vises for rutene.                                                                                    |
+
+
 
 
 

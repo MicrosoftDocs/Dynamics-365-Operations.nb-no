@@ -1,9 +1,9 @@
 ---
 title: Finansrapportering for Dynamics 365 for Operations
 description: "Finansrapportering for Dynamics 365 for Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Finansrapportering for Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Finansrapportering for Dynamics 365 for Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.
 
@@ -36,15 +40,14 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 | Komponent        | Funksjoner                                                                                                                                                                                                                                                                           | Tilleggsinformasjon                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Rapportutforming  | Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport. Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen. Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov. |                                                                                                 |
-| Webvisningsprogram       | Vis finansrapporter i en nettleser. Webvisningsprogrammet krever ikke at serverkomponenter for finansrapportering er installert.                                                                                                                                                        | [Webvisningsprogram](financial-reporter-designer-web-client.md)            |
-| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.                                                                                                                                                                                          | [Generere en rapport](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.                                                                                                                                                                                          | [Generere en finansrapport](generate-financial-report.md) |
 
 ## <a name="features"></a>Funksjoner
 <table>
 <thead>
 <tr class="header">
 <th>Funksjon</th>
-<th>Beskrivelse</th>
+<th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -78,13 +81,15 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 <li>Legg til dimensjonsfiltre for å begrense rapportinnholdet til en bestemt dimensjon eller en kombinasjon av dimensjoner.</li>
 <li>Legg til attributtfiltre for å begrense rapportinnholdet til et bestemt attributt en kombinasjon av attributter.</li>
 </ul>
-Hvis du vil ha mer informasjon, kan du se avsnittet "Interaktive komponenter og navigasjonsfunksjoner" i <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Grensesnitt for skrivebordsvisning</a>.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Se også
+[Generere en finansrapport](generate-financial-report.md)
 
-[Generere en finansrapport] ((dynamics365\operations\finans\økonomi-modul\generere-økonomisk-rapport)
+
+
 
 

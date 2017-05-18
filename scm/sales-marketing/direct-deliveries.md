@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c59f82103371ca1a8d43a7dba22213cdd8b13c3c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7c51d5505ead8e18f17917a4a02c2e0ee8265516
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,9 +36,9 @@ Denne artikkelen gir informasjon om direkte leveringer. Direkte leveringer er le
 
 Direkte leveringer sparer leveringstid og reduserer kostnadene som er knyttet til ha beholdning, fordi produktene ikke oppbevares i lageret før du sender dem til kunden.  
 
-Du kan opprette direkte leveringer fra **Salgsordre**-siden. Opprett først en salgsordre og ordrelinjer. Velg deretter **Direkte levering** i **Sales order**-fanen i handlingsruten. Angi til slutt linjene som må behandles som en direkte levering. En kobling opprettes nå mellom salgsordrelinjene for direkteleverineng og de tilsvarende bestillingslinjene.  
+Du kan opprette direkte leveringer fra **Salgsordre**-siden. Opprett først en salgsordre og ordrelinjer. Velg deretter **Direkte levering** i **Salgsordre**-fanen i handlingsruten. Angi til slutt linjene som må behandles som en direkte levering. En kobling opprettes nå mellom salgsordrelinjene for direkteleverineng og de tilsvarende bestillingslinjene.  
 
-**Obs! ** Hvis en del av det bestilte antallet allerede er levert, må du dele det gjenstående antallet. Opprett en ny linje for antallet som må leveres direkte, og trekk dette antallet fra antallet på den opprinnelige linjen. Hvis det opprinnelige antallet var 15, og 5 er levert, må du for eksempel opprette en ny linje for det gjenværende antallet på 10 og deretter redusere det opprinnelige antallet med det beløpet.  
+**Obs!** Hvis en del av det bestilte antallet allerede er levert, må du dele det gjenstående antallet. Opprett en ny linje for antallet som må leveres direkte, og trekk dette antallet fra antallet på den opprinnelige linjen. Hvis det opprinnelige antallet var 15, og 5 er levert, må du for eksempel opprette en ny linje for det gjenværende antallet på 10 og deretter redusere det opprinnelige antallet med det beløpet.  
 
 Når du har opprettet direkteleveringskoblingen mellom salgsordrelinjene og bestillingslinjene, kan du oppdatere salgsordren ved hjelp av en følgeseddel. Kjøre enten en følgeseddeloppdatering eller en fakturaoppdatering fra bestillingen. Du må fakturaoppdatere salgsordren fra **Salgsordre**-siden. En fakturaoppdatering kan ikke forårsake at antallet på salgsordren overskrider antallet som er registrert som mottatt. En salgsordrelinje har for eksempel 10 stykker, men bare 5 stykker fra salgsordrelinjen har blitt oppdatert ved hjelp av en følgeseddel. Hvis du velger **Alle** i **Antall**-listen når du foretar fakturaoppdatering av salgsordren, er det bare varene som er fysisk mottatt eller oppdatert ved hjelp av en følgeseddel, som blir fakturaoppdatert. Hele salgsordrelinjen oppdateres ikke.
 

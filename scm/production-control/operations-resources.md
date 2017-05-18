@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f77fe37933854d66c35a4a14e6dfb6db398eb034
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53700246fb072c4d9afb2e475ae27892700a078a
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -46,7 +47,7 @@ Operasjonsressurser er maskiner, verktøy, ansatte, lokaler, fysiske områder el
 -   **Fasilitet** – En bygging eller fast struktur som kreves for å utføre en aktivitet.
 
 ## <a name="calendars"></a>Kalendere
-En kalender kan tilordnes til en operasjonsressurs, og beskriver kapasiteten (i timer) for ressursen. Arbeidstider for ressursen operasjoner, avhenger av kalenderen som er tilordnet ressursgruppen som ressursen operasjoner er en del av. Du kan angi en ikrafttredelsesdato og utløpsdato for kalenderen som er tilordnet. Deretter kan du tilordne mer enn én kalender til en operasjonsressurs. Datoene for de tilordnede kalenderne kan imidlertid ikke overlappe, og operasjonsressursen kan bare tilordnes én kalender samtidig. **Obs! ** Hvis det ikke finnes gjeldende arbeidskalendere for en ressursgruppe, hvis for eksempel den siste eller eneste tilordnede kalenderen er utløpt, har du ikke lenger tilgang til operasjonsressursene som er tilordnet ressursgruppen for produksjonsplanlegging og grovplanlegging. Du kan også tilordne en kalender til en ressursgruppe for å angi arbeidstidene for både ressursgruppen og alle operasjonsressursene som er tilordnet ressursgruppen. Kapasiteten for ressursgruppen beregnes som summen av kapasitetene for hver operasjonsressurs som er tilordnet denne ressursgruppen. Kalenderen som er tilordnet en ressursgruppe, kan endres over tid.
+En kalender kan tilordnes til en operasjonsressurs, og beskriver kapasiteten (i timer) for ressursen. Arbeidstider for ressursen operasjoner, avhenger av kalenderen som er tilordnet ressursgruppen som ressursen operasjoner er en del av. Du kan angi en ikrafttredelsesdato og utløpsdato for kalenderen som er tilordnet. Deretter kan du tilordne mer enn én kalender til en operasjonsressurs. Datoene for de tilordnede kalenderne kan imidlertid ikke overlappe, og operasjonsressursen kan bare tilordnes én kalender samtidig. **Obs!** Hvis det ikke finnes gjeldende arbeidskalendere for en ressursgruppe, hvis for eksempel den siste eller eneste tilordnede kalenderen er utløpt, har du ikke lenger tilgang til operasjonsressursene som er tilordnet ressursgruppen for produksjonsplanlegging og grovplanlegging. Du kan også tilordne en kalender til en ressursgruppe for å angi arbeidstidene for både ressursgruppen og alle operasjonsressursene som er tilordnet ressursgruppen. Kapasiteten for ressursgruppen beregnes som summen av kapasitetene for hver operasjonsressurs som er tilordnet denne ressursgruppen. Kalenderen som er tilordnet en ressursgruppe, kan endres over tid.
 
 ## <a name="resource-capabilities"></a>Ressursfunksjoner
 En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Deretter kan du tilordne én eller funksjoner til en operasjonsressurs. Planleggingsmotoren tildeler deretter ressurser ved å sammenligne ressurskravene for hver aktivitet med egenskapene til de tilgjengelige operasjonsressursene. Funksjoner som kan tilordnes til alle typer operasjonsressurser (**Verktøy**, **Leverandør**, **Maskin**, **Personale**, **Lokasjon** eller **Lokaler**). Du kan tilordne funksjoner til operasjonsressurser i en begrenset tid ved å definere en startdato og utløpsdato for funksjonstilordningen. Hvis du vil ha mer informasjon, se [Ressursfunksjoner](resource-capabilities.md).

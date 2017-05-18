@@ -3,7 +3,7 @@ title: Kvalitetsstyringsprosesser
 description: "Denne artikkelen inneholder informasjon om kvalitetsstyringsprosessen for materiell med avvik. Det beskriver hvordan du kan bruke kvalitetskontrollfunksjonen, hvordan du definerer og vedlikeholder avvik og hvordan du håndterer korrigeringer."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 53 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 2deec6d262e87daf4704ce21ce64546f9c9d638b
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3523a89768bc3aee2aab250ee134128fcc3eeeef
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="quality-management-processes"></a>Kvalitetsstyringsprosesser
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder informasjon om kvalitetsstyringsprosessen for materiell med avvik. Det beskriver hvordan du kan bruke kvalitetskontrollfunksjonen, hvordan du definerer og vedlikeholder avvik og hvordan du håndterer korrigeringer.
 
@@ -52,7 +56,9 @@ Produkttesting kalles ofte kvalitetskontroll og bruker kvalitetsordrer. Ved hjel
 -   Registrere testresultatene i en kvalitetsordre, vurdere testresultatene mot akseptabelt kvalitetsnivå og skrive ut et analysesertifikat med testresultatene.
 
 ## <a name="nonconformance"></a>Avvik
-Et avvik beskriver en vare som har et kvalitetsproblem.** **I avviksprosessen kan du opprette en avviksordre som beskriver et antall materialer med avvik, problemkilden, problemtypen og utdypende forklaring. Du kan definere en klassifikasjon av problemtyper for å gjøre analysen av materialene med avvik enklere. Du kan også skrive ut en avviksbrikke og en avviksrapport til veiledning for disposisjonen av materiell med avvik. Brikken og rapporten kan eksempelvis vise tilstanden **Kan ikke brukes** eller **Begrenset bruk**. Tabellen nedenfor viser seks standard avvikstyper og beskriver informasjonen som må registreres for hver type.
+Et avvik beskriver en vare som har et kvalitetsproblem. Avviksprosessen lar deg opprette en avviksordre som beskriver antallet materiell med avvik, problemkilde, problemtype og en utdypende forklaring. Du kan definere en klassifikasjon av problemtyper for å gjøre analysen av materialene med avvik enklere. Du kan også skrive ut en avviksbrikke og en avviksrapport til veiledning for disposisjonen av materiell med avvik. Brikken og rapporten kan eksempelvis vise tilstanden **Kan ikke brukes** eller **Begrenset bruk**. 
+
+Tabellen nedenfor viser seks standard avvikstyper og beskriver informasjonen som må registreres for hver type.
 
 | Avvikstype   | Kildeinformasjon                                                                                                                                                                                                                          |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,10 +78,16 @@ Du kan angi merknader for et avvik ved å knytte til et dokument. Det er lurt å
 Avviksrapporten viser den avviksnummer, vare og problemtype. Avhengig av rapportoppsettpolicyen kan det hende at rapporten også viser tilknyttede merknader om avviket. Avviksbrikken viser lignende informasjon og inkluderer også karantenesonen og -typen (for eksempel **Begrenset bruk** eller **Kan ikke brukes**) som du tilordnet avviket for å lede disposisjonen av feilmaterialet.
 
 ## <a name="approved-nonconformance"></a>Godkjent avvik
-Du kan velge om du vil definere en eller flere tilknyttede operasjoner for et godkjent avvik. En tilknyttet operasjon beskriver arbeidet som skal utføres, og inneholder en liste over kvalitetsoperasjonene som du har definert, og beskrivende tekst om årsaken til arbeidet. Når en operasjon er definert, kan du velge å definere ulike tillegg, varer og timelistearbeidstimer som må til for å utføre arbeidet. De beregnede kostnadene er vist for den tilknyttede operasjonen, og de totale beregnede kostnadene er vist for avviket. De beregnede kostnadene og underliggende detaljene (om varer, arbeidstimer og tillegg) representerer referanseinformasjon, og de brukes bare innenfor kvalitetsstyringsfunksjonen. Du kan velge å opprette en kvalitetsordre fra et avvik ved å utføre en spørring for kvalitetsordrer først, og deretter opprette den nye kvalitetsordren. En kvalitetsordre kan for eksempel identifisere et behov for å teste feilmaterialet (eller teste på nytt). Den nyopprettede kvalitetsordren viser koblingen til det opprinnelige avviket. Du kan velge å koble ett avvik til et annet og opprette et nytt avvik fra et eksisterende avvik. Koblingen kan for eksempel reflektere sammenhengen mellom kvalitetsproblemer.
+Du kan velge om du vil definere en eller flere tilknyttede operasjoner for et godkjent avvik. En tilknyttet operasjon beskriver arbeidet som skal utføres, og inneholder en liste over kvalitetsoperasjonene som du har definert, og beskrivende tekst om årsaken til arbeidet. Når en operasjon er definert, kan du velge å definere ulike tillegg, varer og timelistearbeidstimer som må til for å utføre arbeidet. De beregnede kostnadene er vist for den tilknyttede operasjonen, og de totale beregnede kostnadene er vist for avviket. De beregnede kostnadene og underliggende detaljene (om varer, arbeidstimer og tillegg) representerer referanseinformasjon, og de brukes bare innenfor kvalitetsstyringsfunksjonen. 
+
+Du kan velge å opprette en kvalitetsordre fra et avvik ved å utføre en spørring for kvalitetsordrer først, og deretter opprette den nye kvalitetsordren. En kvalitetsordre kan for eksempel identifisere et behov for å teste feilmaterialet (eller teste på nytt). Den nyopprettede kvalitetsordren viser koblingen til det opprinnelige avviket. 
+
+Du kan velge å koble ett avvik til et annet og opprette et nytt avvik fra et eksisterende avvik. Koblingen kan for eksempel reflektere sammenhengen mellom kvalitetsproblemer.
 
 ## <a name="correction-handling"></a>Rettelseshåndtering
-På **Rettelser**-siden kan du opprette en liste over avvik som må korrigeres. Hver rettelse er tilknyttet diagnosetypen som forårsaket problemet som ble oppdaget. **Rettelser**-siden inneholder også informasjon om hvem som må utføre en korrigerende handling, og når. Du kan beskrive detaljene for problemet og den korrigerende handlingen som kreves, ved å knytte et dokument til rettelsen. Når avviket er tatt hånd om eller løst, lukker du rettelsen ved å velge **Fullført**-alternativet. Du kan også angi at løsningen var en kortsiktig løsning. Det er lurt å definere en unik dokumenttype for rettelser ved hjelp av **Dokumenttype**-siden. Du kan deretter bruke **Rapportoppsett**-siden til å definere om kommentarer for denne dokumenttypen skrives ut på rettelsesrapporten. En utskrevet rettelsesrapport viser informasjon om avviket og de tilknyttede avviksmerknadene. Rapporten inneholder også rettelsesinformasjonen, for eksempel diagnosetypen og de tilknyttede rettelsesmerknadene.
+På **Rettelser**-siden kan du opprette en liste over avvik som må korrigeres. Hver rettelse er tilknyttet diagnosetypen som forårsaket problemet som ble oppdaget. **Rettelser**-siden inneholder også informasjon om hvem som må utføre en korrigerende handling, og når. Du kan beskrive detaljene for problemet og den korrigerende handlingen som kreves, ved å knytte et dokument til rettelsen. Når avviket er tatt hånd om eller løst, lukker du rettelsen ved å velge **Fullført**-alternativet. Du kan også angi at løsningen var en kortsiktig løsning. 
+
+Det er lurt å definere en unik dokumenttype for rettelser ved hjelp av **Dokumenttype**-siden. Du kan deretter bruke **Rapportoppsett**-siden til å definere om kommentarer for denne dokumenttypen skrives ut på rettelsesrapporten. En utskrevet rettelsesrapport viser informasjon om avviket og de tilknyttede avviksmerknadene. Rapporten inneholder også rettelsesinformasjonen, for eksempel diagnosetypen og de tilknyttede rettelsesmerknadene.
 
 <a name="see-also"></a>Se også
 --------
@@ -91,5 +103,7 @@ På **Rettelser**-siden kan du opprette en liste over avvik som må korrigeres. 
 [Definer kvalitetsordrer (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Kontrollere varekvaliteten (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

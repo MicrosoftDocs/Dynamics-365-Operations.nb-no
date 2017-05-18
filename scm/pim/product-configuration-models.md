@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 15af90d007d77a490db7cb540ef96b4104dbba7e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35c3d59abe8c2cb4d2db9fa1cf581f022dbc8c39
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen definerer termer og begreper som er relevante for produktkonfigurasjonsmodeller. Produktkonfigurasjonsmodeller lar deg bygge en generell produktstruktur som kan brukes til å konfigurere mange produktvarianter for ett enkelt produkt.
 
@@ -75,7 +79,7 @@ Hvis attributtypen er <strong>Boolsk</strong>, <strong>Heltall</strong> med et o
 <td>Begrensninger</td>
 <td>Begrensninger beskriver begrensningene for produktmodellkonfigurasjonen. Begrensninger brukes til å garantere at bare gyldige brukere velges når et produkt konfigureres. Begrensninger kan være uttrykksbegrensninger eller tabellbegrensninger:
 <ul>
-<li>Uttrykksbegrensninger kan bare brukes for komponenten som de er tilknyttet. Uttrykksbegrensningene for en komponent kan referere attributter for delkomponenter for komponenten. Produktkonfigurasjonsløseren brukes til å løse begrensningene, og du må bruke problemløsersyntaksen når du skriver begrensningene. Hvis du vil ha mer informasjon, kan du se wiki-koblingen om uttrykksbegrensninger og tabellbegrensninger.</li>
+<li>Uttrykksbegrensninger kan bare brukes for komponenten som de er tilknyttet. Uttrykksbegrensningene for en komponent kan referere attributter for delkomponenter for komponenten. Produktkonfigurasjonsløseren brukes til å løse begrensningene, og du må bruke problemløsersyntaksen når du skriver begrensningene. Hvis du vil ha mer informasjon, kan du se emnekoblingen om uttrykksbegrensninger og tabellbegrensninger.</li>
 <li>Tabellbegrensninger må defineres før de kan brukes på en komponent i en produktkonfigurasjonsmodell. Tabellbegrensninger kan være enten brukerdefinerte eller systemdefinerte. En brukerdefinert tabellbegrensning er en matrisetype som kan brukes til å beskrive settet med kombinasjoner for attributtverdiene som er angitt av attributtyper. Hvis for eksempel høyttalere blir produsert, kan matrisen for en brukerdefinert tabellbegrensningen inneholde kolonner for høyttalerutførelse og grill.</li>
 </ul>
 <strong>Eksempel</strong> Høyttalere som er tilgjengelige i fire utførelser: svart, eik, Rosewood og hvitt. Høyttalerne kan ha én av tre frontgriller: svart, metall eller hvit. Svart er tilgjengelig for alle griller, men de andre utførelsene er begrenset til spesifikke griller. Tabellen nedenfor viser et eksempel på informasjonen som vises i kategorien <strong>Tillatte kombinasjoner</strong> på siden <strong>Rediger tabellbegrensning</strong>.
@@ -147,6 +151,8 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 </tr>
 </tbody>
 </table>
+
+
 
 
 

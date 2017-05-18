@@ -18,10 +18,11 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b887fc5d03ea8982515e92725ce98cc416e56f9e
-ms.openlocfilehash: 011beec07bf1ab858892ab1c374f1acf3839e877
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: c372d9bd3bb8b2cc3a4d334f2603cbd57e941689
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -35,7 +36,7 @@ Hver betalingstype som en forhandler godtar, må konfigureres i Detaljhandel og 
 
 Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger. Selv om kontanter er den vanligste formen for betaling, kan forhandlerne også mottar betaling i form av sjekker, kort, bilag og så videre. Hver betalingstype som en forhandler godtar, må konfigureres i Detaljhandel i Microsoft Dynamics 365 for Operations når systemet konfigureres. Listen nedenfor beskriver hver betalingstype som kan settes opp i Detaljhandel i Microsoft Dynamics 365 for Operations:
 
--   **Kontant ** – Penger i den fysiske formen av valuta, for eksempel pengesedler og mynter. Valutaen kan være enten firmavalutaen eller butikkens lokale valuta.
+-   **Kontant** – Penger i den fysiske formen av valuta, for eksempel pengesedler og mynter. Valutaen kan være enten firmavalutaen eller butikkens lokale valuta.
 -   **Sjekk** – Et omsettelig dokument som instruerer om betaling av et bestemt beløp av en angitt valuta, og dette trekkes fra en spesifikk bank. En sjekk er vanligvis gyldig på ubestemt tid eller i seks måneder etter utstedelsesdatoen, med mindre en annen gyldighetsperioden er angitt. Denne perioden varierer avhengig av banken som sjekken trekkes fra. Det finnes ulike typer sjekker, for eksempel ordresjekker, blankosjekker, ihendehaversjekker og kryssede sjekker. Du kan definere sjekker som betalingsmåte for hver butikk. Sjekker kan tas imot i valutaen som er definert på firmanivå eller butikknivå. Du må definere sjekker som betalingsmåte før du godkjenner en sjekk som betaling i en butikk.
 -   **Valuta** – Den primære betalingsmåten bortsett fra firmaets standardvaluta. Mynter og papirpenger er begge former for valuta. Valutabetalingsmåten representerer all valutaer som brukes i Detaljhandel og handel. Før du kan bruke denne betalingsmåten, må du definere valutaer og angi handelskursinformasjon for valutaene.
 -   **Kort** – Alle typer kort som brukes i Detaljhandel og handel, for eksempel debetkort og kredittkort. Det er lurt å definere én betalingsmåte på organisasjonsnivå som representerer alle korttyper. Deretter defineres en betalingsmåte på butikknivå for hvert kort eller sett med kort behandles ved hjelp av de samme innstillingene. Du må definere produsentkortene som er tilgjengelige på markedet, for eksempel debet- og kredittkort, før du kan godta kort som betaling i en butikk.

@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emnet forklarer hvordan du laster ned konfigurasjoner for elektronisk rapportering (ER) for fra Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -43,9 +47,10 @@ Denne opplæringen leder deg gjennom prosessen med å laste ned nyeste versjon a
     1.  Klikk **Legg til** for å legge til et nytt repositorium.
     2.  Velg **LCS** som type repositorium.
     3.  Klikk **Opprett repositorium**.
-    4.  Angi et navn og en beskrivelse for repositoriet.
-    5.  Klikk **OK** for å bekrefte den nye repositoriumoppføringen.
-    6.  I rutenettet velger du det nye repositoriet i **LCS**-typen.
+    4. Hvis du blir bedt om det, følger du autorisasjonsinstruksjonene.
+    5.  Angi et navn og en beskrivelse for repositoriet.
+    6.  Klikk **OK** for å bekrefte den nye repositoriumoppføringen.
+    7.  I rutenettet velger du det nye repositoriet i **LCS**-typen.
 
 6.  Klikk **Åpne** for å vise listen over ER-konfigurasjoner for det valgte repositoriet. [![Oppdatere-er-fra-LCS-for-MS-merke-LCS-repositorium](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Velg ER-konfigurasjonen du må ha, i konfigurasjonstreet i den venstre ruten.
@@ -58,5 +63,7 @@ Denne opplæringen leder deg gjennom prosessen med å laste ned nyeste versjon a
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
+
+
 
 

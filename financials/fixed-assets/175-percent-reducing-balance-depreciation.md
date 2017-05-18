@@ -3,7 +3,7 @@ title: 175 prosent saldoavskrivning
 description: Denne artikkelen gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 812fbb3cc3159783e9908e537c366ffc7f934092
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: cf428d61f89ea70a83e440c656fbc84d7dbded8d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 prosent saldoavskrivning
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 
@@ -54,7 +58,7 @@ Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgj
 
 ### <a name="fiscal"></a>Skattemessig
 
-Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder.](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
 For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen den 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
 
@@ -82,5 +86,7 @@ Avskrivingsmetoden 175 % saldoavskrivning dividerer 175 prosent med antall levet
 
 > [!NOTE] 
 > Vanligvis når beløpet som beregnes ved å bruke 175% saldoavskrivningsmetode, blir mindre enn beløpet som ville blitt beregnet ved hjelp av den lineære metoden, går man over til lineær avskrivning resten av levetiden.
+
+
 
 

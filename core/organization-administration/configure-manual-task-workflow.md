@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 408e2bc6ca1cd506a89ba9676fb457df8fd4e214
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a62b56bd2ac0a7484471190c5f342a1db335ab07
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -323,7 +324,7 @@ Du kan sende meldinger til personer når en manuell oppgave er delegert, videres
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
-Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et bestemt tidspunkt. **Obs! ** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
+Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Angi en tidsgrense for arbeidsflytelementet**.

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 631fec1dc135565e6d38e7faf193a7a898b508cb
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9e9e6a9900f7a20da71596c6effaf37f3f8b5354
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -68,7 +69,7 @@ Tabellen nedenfor viser et eksempel på en raddefinisjon som bruker grunnleggend
 
 | Radkode | Beskrivelse                      | Formatkode | Relaterte formler/rader/enheter | Formatoverstyring | Normal saldo | Utskriftskontroll | Kolonnebegrensning | Radmodifikator               | Kobling til finansdimensjoner |
 |----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 1000      | Kontanter i begynnelsen av perioden (NP) |             |                             |                 |                |               |                    | Kontomodifikator = \[/BB\] | +Segment2 = \[1100\]         |
+| 100      | Kontanter i begynnelsen av perioden (NP) |             |                             |                 |                |               |                    | Kontomodifikator = \[/BB\] | +Segment2 = \[1100\]         |
 | 130      | Kontanter i begynnelsen av perioden      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
 | 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
 | 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
@@ -95,7 +96,7 @@ Tabellen nedenfor viser et eksempel på en raddefinisjon som bruker fremtvinging
 | Radkode | Beskrivelse               | Formatkode | Relaterte formler/rader/enheter     | Formatoverstyring      | Normal saldo | Utskriftskontroll | Kolonnebegrensning | Radmodifikator | Kobling til finansdimensjoner               |
 |----------|---------------------------|-------------|---------------------------------|----------------------|----------------|---------------|--------------------|--------------|--------------------------------------------|
 | 50       | Statistisk informasjon   | REM         |                                 |                      |                |               |                    |              |                                            |
-| 1000      | Antall ansatte – USA            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
+| 100      | Antall ansatte – USA            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 115      | Antall ansatte – internasjonalt | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 190      | Salg i USA                  |             |                                 |                      | K              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[00\]    |
@@ -196,7 +197,7 @@ I dette eksemplet betyr beregningsformelen **@100+@330** at beløpet i rad 100 l
 | 370      | Kontanter i begynnelsen av året   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Kontanter i begynnelsen av perioden | TOT         | 340+370                    |               |              |                              |
 
-Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter**, må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall. **Obs!** Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten **A.BRUTTO\_\_FORTJENESTE/A.SALG** Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@GROSS\_MARGIN/@SALES**).
+Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter**, må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall. **Obs!** Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten **A.BRUTTO\_FORTJENESTE/A.SALG** Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt rad
 

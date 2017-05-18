@@ -1,6 +1,6 @@
 ---
 title: "Konfigurere Leverandører"
-description: "Denne artikkelen beskriver sidene du bruker til å definer grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics AX. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører."
+description: "Denne artikkelen beskriver sidene du bruker til å definere grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics 365 for Operations. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: b06623a0eb754654f41c50b92af67dc94a069663
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8581401bfefe4ddf29f32691b5678317e392db96
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver sidene du bruker til å definer grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics AX. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører.
+Denne artikkelen beskriver sidene du bruker til å definere grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics 365 for Operations. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Forutsetninger for oppsett av Leverandører
 ----------------------------------------
@@ -145,6 +146,7 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
 **Kontant- og bankbehandling**
 
 -   På siden Koder for betalingsformål definerer du sentralbankens formålskode.
+
 
 
 

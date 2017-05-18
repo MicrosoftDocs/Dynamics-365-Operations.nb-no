@@ -3,7 +3,7 @@ title: Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodel
 description: "Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger. Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1fe8a0d90a3f707fa7b0fea0310c819ce5040a42
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1a08f537d87178973b3ce90bcb60b891bef1141e
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger. Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. 
 
@@ -40,7 +44,7 @@ Tabellbegrensninger viser kombinasjonene av verdier som er tillatt for attributt
 
 ### <a name="example-of-a-table-constraint"></a>Eksempel på tabellbegrensning
 
-Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper **og **Frontgrill**.
+Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper** og **Frontgrill**.
 
 | Attributtype | Verdier                      |
 |----------------|-----------------------------|
@@ -85,7 +89,7 @@ Når du konfigurerer et produkt ved hjelp av følgende begrensningsoppsett, er d
 (Farge == "Svart" & (størrelse == "30" | størrelse == "50")) | (farge == "Rød" & størrelse = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Bør jeg bruke operatorer eller infiksnotasjoner når jeg skriver uttrykksbegrensninger?
-Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon. For operatorene **Min**, **Maks** og **Abs ** kan du ikke bruke en infix-notasjon. Disse operatorene er inkludert som standard i de fleste programmeringsspråk.
+Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon. For operatorene **Min**, **Maks** og **Abs** kan du ikke bruke en infix-notasjon. Disse operatorene er inkludert som standard i de fleste programmeringsspråk.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Hvilke operatorer og infiksnotasjoner kan jeg bruke når jeg skriver uttrykksbegrensninger?
 Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når du skriver en uttrykksrestriksjon for en komponent i en produktkonfigurasjonsmodell. I eksemplene i den første tabellen kan du se hvordan du skriver inn et uttrykk med infiksnotasjon eller operatorer.
@@ -209,7 +213,7 @@ Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
 | x ^ y ^ z         | Eksponentiering med høyre-assosiativitet                                                   |
 | !x                | Boolsk ikke                                                                                   |
 | x -: y            | Boolsk implikasjon                                                                           |
-|  x  | y | z         | Boolsk eller                                                                                    |
+| x | y | z         | Boolsk eller                                                                                    |
 | x & y & z         | Boolsk og                                                                                   |
 | x == y == z       | Likhet                                                                                      |
 | x != y != z       | Spesifikk                                                                                      |
@@ -249,5 +253,7 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 [Opprette en uttrykksbegrensning (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
 [Legge til beregning for produktkonfigurasjonsmodell (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+
+
 
 

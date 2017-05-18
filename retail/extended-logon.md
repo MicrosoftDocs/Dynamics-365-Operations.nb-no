@@ -1,6 +1,6 @@
 ---
 title: "Definere utvidet påloggingsfunksjonalitet for Skysalgssted og MPOS"
-description: "Denne wikien dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel."
+description: "Dette emnet dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 0dc80784a5c9a7de6009826284cb68f1aee83f70
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 499fd5947a96f4a44f09883d5dd0d6124758e47a
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Definere utvidet påloggingsfunksjonalitet for Skysalgssted og MPOS
 
-Denne wikien dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.
+[!include[banner](includes/banner.md)]
+
+
+Dette emnet dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.
 
 <a name="setting-up-extended-logon"></a>Definere utvidet pålogging
 =========================
@@ -53,7 +57,7 @@ Når alternativet **Stabspålogging med kort krever passord** er aktivert, velge
 <a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
 ===========================
 
-Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK **-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
+Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
 
 <a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
 ==========================
@@ -69,5 +73,7 @@ Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenhete
 ====================
 
 Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne hans eller hennes kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
+
+
 
 

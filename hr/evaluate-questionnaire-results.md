@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Vise og evaluere resultatene i et spørreskjema
+
+[!include[banner](includes/banner.md)]
+
 
 Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
@@ -56,7 +60,8 @@ På **Svar**-siden kan du vise detaljer om svar, poeng respondenten har fått, s
 -   **Svarrapport** – Denne rapporten viser svarene som respondenten valgte for hvert spørsmål i spørreskjemaet.
 -   **Feil svar** – Denne rapporten viser informasjon som er knyttet til de uriktige svarene som respondenten har valgt.
 
-**Obs! ** **Resultater**-rapporten er bare tilgjengelig hvis du bruker resultatgrupper i spørreskjemaet, og hvis du har valgt **Resultatside** på **Spørreskjemaer**-siden. **Svar**-rapporten og **Feil svar**-rapporten er bare tilgjengelige hvis du har valgt **Svarrapport** på **Spørreskjemaer**-siden.
+> **Obs! **
+>   **Resultater**-rapporten er bare tilgjengelig hvis du bruker resultatgrupper i spørreskjemaet, og hvis du har valgt **Resultatside** på **Spørreskjemaer**-siden. **Svar**-rapporten og **Feil svar**-rapporten er bare tilgjengelige hvis du har valgt **Svarrapport** på **Spørreskjemaer**-siden.
 
 ## <a name="questionnaire-statistics"></a>Spørreskjemastatistikk
 Du kan bruke spørreskjemastatistikk til å analysere resultatene av et utfylt spørreskjema, basert på beregninger du definerer. Hvis du vil definere beregninger, må du utføre følgende oppgaver:
@@ -79,5 +84,7 @@ Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på
 [Bruke spørreskjemaer](questionnaires.md)
 
 [Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
+
+
 
 

@@ -3,7 +3,7 @@ title: Posteringsdefinisjoner
 description: "Denne artikkelen inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem. Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f4d7fdd8cfa7a540fce219f6ae4792e57dfbe44
-ms.openlocfilehash: 357ae498e84ef27e46142c7dcc0f90ecb0ee9f1c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aea0a5c078e4fb3a47cce3a7b427b56bf7a9bcf5
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="posting-definitions"></a>Posteringsdefinisjoner
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem. Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer.
 
@@ -59,5 +63,7 @@ Følgende begrensninger gjelder når du oppretter koblinger i posteringsdefinisj
 -   Du kan tilordne en posteringsdefinisjon til en hvilken som helst transaksjonstype, men transaksjonstypen må være i samme modul som posteringsdefinisjonen. Bruk siden **Definisjoner for transaksjonspostering** for å se hvilken modul en transaksjonstype er i.
 
 
-Hvis du vil ha mer informasjon, kan du se [Eksempler på posteringsdefinisjoner](/general-ledger/example-posting-definitions.md). 
+Hvis du vil ha mer informasjon, kan du se [Eksempler på posteringsdefinisjoner](example-posting-definitions.md). 
+
+
 

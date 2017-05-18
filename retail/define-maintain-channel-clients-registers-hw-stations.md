@@ -1,6 +1,6 @@
 ---
-title: Definere og vedlikeholde kanalklienter, registre og maskinvarestasjoner
-description: Denne wikien beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
+title: Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner
+description: Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,19 +17,23 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definere og vedlikeholde kanalklienter, registre og maskinvarestasjoner
+# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner
 
-Denne wikien beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
+[!include[banner](includes/banner.md)]
 
-**Obs! ** For spesifikke installasjonsinstruksjoner, kan du se [Konfigurasjon og installasjon av Maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md) og [Nedlasting og installasjon av moderne salgssted for enhetsaktivering av Moderne salgssted og skysalgssted](retail-modern-pos-device-activation.md).
+
+Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
+
+**Obs!** For spesifikke installasjonsinstruksjoner, kan du se [Konfigurasjon og installasjon av Maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md) og [Nedlasting og installasjon av moderne salgssted for enhetsaktivering av Moderne salgssted og skysalgssted](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Nøkkelkomponenter
 Flere komponenter brukes til å definere relasjonene mellom en butikk, kasser på salgsstedet eller kanaler i butikken, og de eksterne detaljhandelsenhetene som disse kassene eller kanalene bruker for å behandle transaksjoner. Dette avsnittet beskriver hver komponent og forklarer hvordan den skal brukes i en distribusjon av detaljhandelsbutikk.
@@ -60,16 +64,19 @@ Navigering: Klikk **Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhande
 
 ### <a name="hardware-station-profile"></a>Profil for maskinvarestasjon
 
-Navigering: Klikk **Handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Profiler for maskinvarestasjon**. Mens selve maskinvarestasjonen er angitt på kanalnivå og inkluderer forekomstspesifikk informasjon, for eksempel URL-adressen for maskinvarestasjonen, inneholder profilen for maskinvarestasjon informasjon som kan være statisk eller delt på tvers av flere maskinvarestasjoner. Den statiske informasjon inkluderer porten som skal brukes, pakken for maskinvarestasjonen og maskinvareprofilen. Den statiske informasjon inneholder også en beskrivelse av hvilken type maskinvarestasjon som distribueres, for eksempel **Gå til kassen **eller **Returer**, avhengig av maskinvaren som kreves for hver bestemte maskinvarestasjon.
+Navigering: Klikk **Handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Profiler for maskinvarestasjon**. Mens selve maskinvarestasjonen er angitt på kanalnivå og inkluderer forekomstspesifikk informasjon, for eksempel URL-adressen for maskinvarestasjonen, inneholder profilen for maskinvarestasjon informasjon som kan være statisk eller delt på tvers av flere maskinvarestasjoner. Den statiske informasjon inkluderer porten som skal brukes, pakken for maskinvarestasjonen og maskinvareprofilen. Den statiske informasjon inneholder også en beskrivelse av hvilken type maskinvarestasjon som distribueres, for eksempel **Gå til kassen**eller **Returer**, avhengig av maskinvaren som kreves for hver bestemte maskinvarestasjon.
 
 ## <a name="scenarios"></a>Scenarier
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med tilkoblede eksterne enheter
 
-[![Tradisjonelt fast salgssted](./media/traditional-300x279.png)](./media/traditional.png) Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for fast salgssted, må du først gå til kassen og tilordne en maskinvareprofil til den. Du kan finne kassen på salgsstedet under **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Når du har tilordnet maskinvareprofilen, synkroniserer du endringer til kanaldatabasen ved hjelp av distribusjonsplanen "Kasser". Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**. Deretter definerer du en "lokal" maskinvarestasjon på kanalen. Klikk **Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelsbutikker**, og velg butikk. I hurtigfanen **Maskinvarestasjoner** klikker du **Legg til** for å legge til en maskinvarestasjon. Skriv inn en beskrivelse, skriv inn **localhost** som vertsnavnet, og synkroniser deretter endringene til kanalen ved hjelp av distribusjonsplan "Kanalkonfigurasjon". Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**. Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen **localhost**. Sett maskinvarestasjonen til **Aktive**. Maskinvareprofilen som brukes i dette scenariet skal komme fra kassen på salgsstedet. En profil for maskinvarestasjon er ikke nødvendig for dette scenariet. **Obs! ** Noen endringer i maskinvareprofil, for eksempel endringer i kassaskuffer, krever at det åpnes et nytt skift etter at endringene er synkronisert til kanalen. **Obs! ** Skybasert salgssted må bruke den frittstående maskinvarestasjonen for å kommunisere med eksterne detaljhandelsenheter.
+[![Tradisjonelt fast salgssted](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for fast salgssted, må du først gå til kassen og tilordne en maskinvareprofil til den. Du kan finne kassen på salgsstedet under **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Når du har tilordnet maskinvareprofilen, synkroniserer du endringer til kanaldatabasen ved hjelp av distribusjonsplanen "Kasser". Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**. Deretter definerer du en "lokal" maskinvarestasjon på kanalen. Klikk **Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelsbutikker**, og velg butikk. I hurtigfanen **Maskinvarestasjoner** klikker du **Legg til** for å legge til en maskinvarestasjon. Skriv inn en beskrivelse, skriv inn **localhost** som vertsnavnet, og synkroniser deretter endringene til kanalen ved hjelp av distribusjonsplan "Kanalkonfigurasjon". Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**. Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen **localhost**. Sett maskinvarestasjonen til **Aktive**. Maskinvareprofilen som brukes i dette scenariet skal komme fra kassen på salgsstedet. En profil for maskinvarestasjon er ikke nødvendig for dette scenariet. **Obs!** Noen endringer i maskinvareprofil, for eksempel endringer i kassaskuffer, krever at det åpnes et nytt skift etter at endringene er synkronisert til kanalen. **Obs!** Skybasert salgssted må bruke den frittstående maskinvarestasjonen for å kommunisere med eksterne detaljhandelsenheter.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS en frittstående maskinvarestasjon
+[![Delte eksterne enheter](./media/shared-300x254.png)](./media/shared.png)
 
-\[caption id="attachment\_340041" align="alignleft" width="300"\][![Delte eksterne enheter](./media/shared-300x254.png)](./media/shared.png) Shared peripherals\[/caption\] I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Profiler for maskinvarestasjon**. Når du har opprettet profilen for maskinvarestasjon, kan du gå til den spesifikke detaljhandelskanalen (**Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelbutikker**), og legge til en ny maskinvarestasjon. Tilordne denne nye maskinvarestasjonen til profilen for maskinvarestasjon som ble opprettet tidligere. Deretter angir du en beskrivelse som hjelper kassereren med å identifisere maskinvarestasjonen. I feltet **Vertsnavn** angir du URL-adressen for vertsmaskinen i følgende format: **https://&lt;Maskinnavn:Port&gt;/Maskinvarestasjon**. (Erstatt **&lt;Maskinnavn:Port&gt;** med det faktiske maskinnavnet på maskinvarestasjonen og porten som er angitt i profilen for maskinvarestasjonen.) For en frittstående maskinvarestasjon må du også angi terminal-ID-en for elektronisk pengeoverføring (EFT). Denne verdien identifiserer EFT-terminalen som er koblet til maskinvarestasjonen når betalingstilkoblingen kommuniserer med betalingsleverandøren. Deretter, fra selve maskinvarestasjonen, går du til kanalen og velg maskinvarestasjonen. Klikk deretter **Last ned** og installer maskinvarestasjonen. Deretter, fra MPOS eller Cloud POS, bruker du operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen som ble installert tidligere. Velg **Par** for å opprette en sikker relasjon mellom salgsstedet og maskinvarestasjonen. Dette trinnet må fullføres én gang for hver kombinasjon av salgssted og en maskinvarestasjon. Når maskinvarestasjonen er sammenkoblet, brukes den samme operasjonen for å aktivere maskinvarestasjonen når den er i bruk. I dette scenariet skal maskinvareprofilen tilordnes profilen for maskinvarestasjon i stedet for kassen. Hvis maskinvarestasjonen en eller annen grunn ikke har en maskinvareprofil direkte tilordnet, brukes i stedet maskinvareprofilen som er tilordnet kassen.
+I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Profiler for maskinvarestasjon**. Når du har opprettet profilen for maskinvarestasjon, kan du gå til den spesifikke detaljhandelskanalen (**Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelbutikker**), og legge til en ny maskinvarestasjon. Tilordne denne nye maskinvarestasjonen til profilen for maskinvarestasjon som ble opprettet tidligere. Deretter angir du en beskrivelse som hjelper kassereren med å identifisere maskinvarestasjonen. I feltet **Vertsnavn** angir du URL-adressen for vertsmaskinen i følgende format: **https://&lt;Maskinnavn:Port&gt;/Maskinvarestasjon**. (Erstatt **&lt;Maskinnavn:Port&gt;** med det faktiske maskinnavnet på maskinvarestasjonen og porten som er angitt i profilen for maskinvarestasjonen.) For en frittstående maskinvarestasjon må du også angi terminal-ID-en for elektronisk pengeoverføring (EFT). Denne verdien identifiserer EFT-terminalen som er koblet til maskinvarestasjonen når betalingstilkoblingen kommuniserer med betalingsleverandøren. Deretter, fra selve maskinvarestasjonen, går du til kanalen og velg maskinvarestasjonen. Klikk deretter **Last ned** og installer maskinvarestasjonen. Deretter, fra MPOS eller Cloud POS, bruker du operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen som ble installert tidligere. Velg **Par** for å opprette en sikker relasjon mellom salgsstedet og maskinvarestasjonen. Dette trinnet må fullføres én gang for hver kombinasjon av salgssted og en maskinvarestasjon. Når maskinvarestasjonen er sammenkoblet, brukes den samme operasjonen for å aktivere maskinvarestasjonen når den er i bruk. I dette scenariet skal maskinvareprofilen tilordnes profilen for maskinvarestasjon i stedet for kassen. Hvis maskinvarestasjonen en eller annen grunn ikke har en maskinvareprofil direkte tilordnet, brukes i stedet maskinvareprofilen som er tilordnet kassen.
 
 ## <a name="client-maintenance"></a>Klientvedlikehold
 ### <a name="registers"></a>Kasser
@@ -152,5 +159,7 @@ Aktiveringsrelatert tilleggsinformasjon inkluderer arbeideren som endret aktiver
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alle endringer i en klient på salgsstedet, unntatt endringer i statusen for enhetsaktivering, må synkroniseres til kanaldatabasen for å tre i kraft. Hvis du vil synkronisere endringer til kanaldatabasen, går du til **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**, og kjører den nødvendige distribusjonsplan. For klientendringer må du kjøre distribusjonsplanene "Kasser" og "Kanalkonfigurasjon".
+
+
 
 

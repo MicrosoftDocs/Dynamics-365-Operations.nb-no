@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 444ffcc8a14650085e24d0ea0d7f725e9d324d69
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f3d34f9ee0c9db97e79b8577d006b198f9a5cb29
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,8 +42,8 @@ Du kan se etter like poster direkte fra **Global adressebok**-listesiden. I hand
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Kan jeg legge til eller slette partsposter samlet fra en adressebok?
 Ja, du kan legge til flere partsposter i en adressebok og også fjerne flere partsposter.
 
--   For å legge til flere partsposter i en adressebok velger du partene i listen på listesiden **Global adressebok**. I handlingsruten i fanen **Part** i gruppen **Vedlikehold **klikker du **Tilordne parter**. Velg adressebøkene der du vil legge til de valgte partspostene, og klikk deretter **OK**. Alle de valgte partspostene legges til i adressebøkene du valgte.
--   For å fjerne flere partsposter fra en adressebok velger du partene i listen på listesiden **Global adressebok**. I handlingsruten i fanen **Part** i gruppen **Vedlikehold **klikker du **Fjern parter**. Velg adressebøkene du vil fjerne partene fra, og klikk deretter **OK**. Alle de valgte partspostene fjernes adressebøkene du valgte.
+-   For å legge til flere partsposter i en adressebok velger du partene i listen på listesiden **Global adressebok**. I handlingsruten i fanen **Part** i gruppen **Vedlikehold**klikker du **Tilordne parter**. Velg adressebøkene der du vil legge til de valgte partspostene, og klikk deretter **OK**. Alle de valgte partspostene legges til i adressebøkene du valgte.
+-   For å fjerne flere partsposter fra en adressebok velger du partene i listen på listesiden **Global adressebok**. I handlingsruten i fanen **Part** i gruppen **Vedlikehold**klikker du **Fjern parter**. Velg adressebøkene du vil fjerne partene fra, og klikk deretter **OK**. Alle de valgte partspostene fjernes adressebøkene du valgte.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Kan jeg endre partstypen for en post, eller må jeg slette den gamle posten og opprette en ny?
 Noen ganger må du kanskje endre partstypen for en post fra person til organisasjon eller fra organisasjon til person. Nora er eksempelvis medlem av salgsteamet for Fabrikam Storbritannia. På en varemesse i London møter hun seks nye kundeemner. Nora lager en kundeemnepost for parten for hvert kundeemne. Når Nora lagrer postene, opprettes også hver post i den globale adresseboken. Fabrikam har satt standard partstype til organisasjon, men to av de nye kundeemnene bør ha posttypen person. Derfor, når Nora kommer tilbake fra varemessen, må hun endre partstypen for de to kundeemnepostene. Hvis du vil endre en partspost fra én partstype til en annen, må du først opprette en ny partspost av riktig type i den globale adresseboken. Deretter knytter du den gamle partposten til denne nye posten. Når du har gjort den nye partstilknytningen, sletter du den opprinnelige partposten med feil posttype.

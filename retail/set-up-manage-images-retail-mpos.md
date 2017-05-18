@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dbcf6d2ca3a6009c1631636309ff55cebb0551e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: e144b05ec516d297c3cf81081936d306b9cb9026
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -80,14 +81,14 @@ Som du lærte i forrige del, støtter media malen for en gitt enhet bare én fel
 1.  Klikk på **Detaljhandel og handel** &gt; **Katalogadministrasjon** &gt; **Katalogbilder**.
 2.  På siden **Katalogbilder** klikker du **Definer mal for medier**. I dialogboksen **Definer mal for medier** i feltet **Enhet** skal **Katalog** være valgt.
 3.  På **Mediebane** hurtigkategorien legg merke bildeplasseringen.
-4.  På den **Generer bilde-URL-adresser for Excel** hurtigkategorien, klikker du **Generer**. **Viktig:** når mediemalen endres, må du klikke **Generer** før du kan bruke funksjonalitet for Rediger i Excel. [![Excel1](./media/excel1.jpg)](./media/excel1.jpg) Du ser nå en forhåndsvisning av bilde URL-adressene som ble generert basert på den siste lagrede media-malen. [![Excel2](./media/excel2.png)](./media/excel2.png) **Obs! ** URL-adressene som er generert for Excel, bruker banen og konvensjonene for mediemalen som er definert. Disse konvensjonene inkluderer konvensjoner for filnavn. Forventningen er at du har angitt de fysiske bildene utenfor Dynamics AX, og at bildene kan hentes fra URL-adressene som er avledet fra mediemalen som du tidligere har definert. Du kan overskrive disse avledede URL-adresser ved hjelp av kommandoen Rediger i Excel-funksjonalitet.
+4.  På den **Generer bilde-URL-adresser for Excel** hurtigkategorien, klikker du **Generer**. **Viktig:** når mediemalen endres, må du klikke **Generer** før du kan bruke funksjonalitet for Rediger i Excel. [![Excel1](./media/excel1.jpg)](./media/excel1.jpg) Du ser nå en forhåndsvisning av bilde URL-adressene som ble generert basert på den siste lagrede media-malen. [![Excel2](./media/excel2.png)](./media/excel2.png) **Obs!** URL-adressene som er generert for Excel, bruker banen og konvensjonene for mediemalen som er definert. Disse konvensjonene inkluderer konvensjoner for filnavn. Forventningen er at du har angitt de fysiske bildene utenfor Dynamics AX, og at bildene kan hentes fra URL-adressene som er avledet fra mediemalen som du tidligere har definert. Du kan overskrive disse avledede URL-adresser ved hjelp av kommandoen Rediger i Excel-funksjonalitet.
 5.  Klikk **Rediger i Excel**.
 6.  Når Microsoft Excel-regnearket åpnes, klikker du **Aktiver redigering** når du blir bedt om det.
 7.  Når du blir bedt om det, klikker du **Klarer tillegget** i høyre rute, og vent til tillegget har fullført installasjonen. [![Klarer tillegget](./media/excel4.jpg)](./media/excel4.jpg)
 8.  Hvis du blir bedt om å logge på, Skriv inn påloggingsinformasjonen du brukte til å logge på HK. [![Ledetekst for pålogging](./media/excel5.png)](./media/excel5.png)
 9.  Når du har logget på, bør du kunne se en oversikt over bilde URL-adresser for de ulike katalogoppføringene.
 10. Du redigere, legge til og fjerne bilde URL-adressene for forskjellige enhetsvarer.
-11. Du kan overskrive bilde URL-adressene for alle enheter unntatt produkter. Endre eksisterende bilde-URL-EN, slik at den bruker den nye Måladressen for bildet, og oppdater filnavnet med det nye filnavnet for bildefilen. Filnavnet må være unikt for å garantere at posten er unik. [![Overskrive bilde URL-adresser i Excel](./media/excel6.jpg)](./media/excel6.jpg) **Obs! ** Når du overskriver bilde-URL-adresser for produktenheter ved hjelp av kommandoen Rediger i Excel-funksjonalitet eller på enhetsvaresiden, viser MPOS alltid alle bilde-URL-adresser for mediemal sammen med de overskrevne bilde-URL-adressene.
+11. Du kan overskrive bilde URL-adressene for alle enheter unntatt produkter. Endre eksisterende bilde-URL-EN, slik at den bruker den nye Måladressen for bildet, og oppdater filnavnet med det nye filnavnet for bildefilen. Filnavnet må være unikt for å garantere at posten er unik. [![Overskrive bilde URL-adresser i Excel](./media/excel6.jpg)](./media/excel6.jpg) **Obs!** Når du overskriver bilde-URL-adresser for produktenheter ved hjelp av kommandoen Rediger i Excel-funksjonalitet eller på enhetsvaresiden, viser MPOS alltid alle bilde-URL-adresser for mediemal sammen med de overskrevne bilde-URL-adressene.
 12. Når du har gjort endringene, klikker du **Publiser i Excel** for å opprette en ny eksplisitt tilknytningsoppføring.
 13. Gå tilbake til HK, og klikk **OK**.
 14. Kjør de riktige synkroniseringsjobber for enheten, og sjekk forhåndsvisningen på enhetssiden eller i MPOS.
@@ -110,7 +111,7 @@ For alle enheter unntatt produkter, kan du overskrive bilde URL-adressen for en 
 4.  Klikk **OK**. Bilde-URL-en blir oppdatert for dette katalogbildet, og det vises en forhåndsvisning. [![Forhåndsvisning3](./media/preview3.png)](./media/preview3.png)
 5.  Du kan også se forhåndsvisningen av bildet for alle overskrevne bilde-URL-adresser på **Katalogbilder** gallerisiden.
 
-**[![Forhåndsvisning4](./media/preview-4.png)](./media/preview-4.png)Obs! ** For øyeblikket viser ikke galleriet bildeforhåndsvisninger for bilde-URL-adresser for mediemaler. For enhetene katalog, arbeider, kunde og kategori, hvis brukeren eksplisitt angir en URL-adresse fra denne siden, anbefaler vi at du angir hvilket bilde er standardbilde, fordi Detaljhandelsserver-klienter viser bare ett bilde per katalog, kunde, arbeider og kategori. Hvis brukeren ikke angir et standardbilde, bestemmer systemet standardbildet og sender det til Detaljhandelstjeneste anroper (MPOS eller e-handel).
+**[![Forhåndsvisning4](./media/preview-4.png)](./media/preview-4.png)Obs!** For øyeblikket viser ikke galleriet bildeforhåndsvisninger for bilde-URL-adresser for mediemaler. For enhetene katalog, arbeider, kunde og kategori, hvis brukeren eksplisitt angir en URL-adresse fra denne siden, anbefaler vi at du angir hvilket bilde er standardbilde, fordi Detaljhandelsserver-klienter viser bare ett bilde per katalog, kunde, arbeider og kategori. Hvis brukeren ikke angir et standardbilde, bestemmer systemet standardbildet og sender det til Detaljhandelstjeneste anroper (MPOS eller e-handel).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Overskrive bilde-URL-en for katalogproduktbildene fra siden Forhåndsvisning
 
@@ -122,7 +123,7 @@ For å overskrive bilde-URL-ene for katalogproduktbildene må du først bruke si
 4.  Klikk **Legg til**, og Overskriv bilde-URL-en med en ny URL-adresse.
 5.  Klikk **OK**. Du nå se en forhåndsvisning av det nye bildet, og du kan angi det som standardbildet.
 
-**[![Kat3](./media/cat3.png)](./media/cat3.png)Obs! ** Etter kategoribildetilknytning må du publisere kanalen og kjøre kanaljobben for å bidra til å garantere at endringene publiseres til kanaldatabasen.
+**[![Kat3](./media/cat3.png)](./media/cat3.png)Obs!** Etter kategoribildetilknytning må du publisere kanalen og kjøre kanaljobben for å bidra til å garantere at endringene publiseres til kanaldatabasen.
 
 ## <a name="setting-up-images-to-appear-in-offline-mode-for-mpos"></a>Definere bilder som skal vises i frakoblet modus for MPOS
 MPOS kan kjøre i tilkoblet modus (når MPOS er koblet til Retail Server) eller i frakoblet modus (når det er ingen Retail-Server eller nettverkstilkobling, og transaksjonene er lagret i en lokal database frakoblet). Når MPOS kjøres i frakoblet modus, kan den kan ikke hente bilder fra den eksterne bildeserveren å vise fra Retail-Server, fordi Retail servertilkoblingen er brutt. Men kan du fremdeles sette opp bilder slik at de vises når MPOS kjøres i frakoblet modus.

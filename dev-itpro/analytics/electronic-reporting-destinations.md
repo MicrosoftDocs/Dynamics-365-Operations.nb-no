@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Når du har opprettet en referanse, kan du opprette et mål for hver mappe eller
 
 [![Opprette et filmål](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Obs! ** Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
+**Obs!** Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
 
 [![Dialogboksen Innstillinger for mål](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -60,7 +61,7 @@ Forskjellige måltyper støttes. Du kan deaktivere eller aktivere alle typer sam
 
 ### <a name="email-destination"></a>E-postmål
 
-Sett **Aktivert **til **Ja** for å sende en utdatafil via e-post. Når dette alternativet er aktivert, kan du angi e-postmottakere og redigere emnet og brødteksten i e-postmeldingen. Du kan definere konstante tekster for e-postemnet og meldingsteksten, eller du kan bruke ER-formler for å opprette e-posttekster dynamisk. Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som utskriftsbehandlingsfunksjonen i Dynamics 365 for Operations fullfører den. Du kan eventuelt løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen gjennom en formel.
+Sett **Aktivert**til **Ja** for å sende en utdatafil via e-post. Når dette alternativet er aktivert, kan du angi e-postmottakere og redigere emnet og brødteksten i e-postmeldingen. Du kan definere konstante tekster for e-postemnet og meldingsteksten, eller du kan bruke ER-formler for å opprette e-posttekster dynamisk. Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som utskriftsbehandlingsfunksjonen i Dynamics 365 for Operations fullfører den. Du kan eventuelt løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen gjennom en formel.
 
 ### <a name="email-address-types"></a>Typer e-postadresser
 
@@ -88,11 +89,11 @@ Bruk denne e-posttypen hvis konfigurasjonen du bruker, har en node i datakildene
 
 [![Tilordne en datakilde for en e-postadresse for et e-postmål](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Obs! ** En SMTP-server (Simple Mail Transfer Protocol) må være konfigurert og tilgjengelig. Du kan angi SMTP-serveren i Dynamics 365 for Operations på **Systemadministrasjon** &gt; **Oppsett** &gt; **E-post** &gt; **E-postparametere**.
+**Obs!** En SMTP-server (Simple Mail Transfer Protocol) må være konfigurert og tilgjengelig. Du kan angi SMTP-serveren i Dynamics 365 for Operations på **Systemadministrasjon** &gt; **Oppsett** &gt; **E-post** &gt; **E-postparametere**.
 
 ### <a name="archive-destination"></a>Arkivmål
 
-Du kan bruke dette alternativet for å sende utdata til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Sett **Aktivert** til **Ja **for å sende utdata til et mål som er definert av den valgte dokumenttypen. Bare dokumenttyper der gruppen er satt til **Fil** er tilgjengelige for valg. Du definerer dokumenttyper under **Organisasjonsstyring** &gt; **Dokumentbehandling** &gt; **Dokumenttyper**. Konfigurasjonen for ER-mål er den samme som konfigurasjonen for systemet for dokumentbehandling.
+Du kan bruke dette alternativet for å sende utdata til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Sett **Aktivert** til **Ja**for å sende utdata til et mål som er definert av den valgte dokumenttypen. Bare dokumenttyper der gruppen er satt til **Fil** er tilgjengelige for valg. Du definerer dokumenttyper under **Organisasjonsstyring** &gt; **Dokumentbehandling** &gt; **Dokumenttyper**. Konfigurasjonen for ER-mål er den samme som konfigurasjonen for systemet for dokumentbehandling.
 
 [![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
@@ -130,7 +131,7 @@ To typer rettigheter og plikter brukes for ER-mål. Én type styrer muligheten t
 | PaymAccountsPayablePaymentsClerk    | Leverandørbetalingsassistent            | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 | PaymAccountsReceivablePaymentsClerk | Kundebetalingsassistent         | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 
-**Obs! ** To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
+**Obs!** To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jeg har importert elektroniske konfigurasjoner, og jeg kan se dem på siden Elektroniske rapporteringskonfigurasjoner. Hvorfor jeg kan ikke se dem på siden Mål for elektronisk rapportering?

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 68cac68e1ea3db35b44c91f2c1901abf2aa521be
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b79b21c6c4ceebfd24225643d099a2e2789d303
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Flere innstillingene bestemmer hvordan produksjonsplaner beregnes. Du definerer 
 
 Planleggingsretningen er grunnleggende for planleggingsprosessen. Produksjon kan planlegges fremover eller bakover fra en hvilken som helst dato, avhengig av tidspunkt for behov og planlegging.
 
--   **Planlegging fremover **– du kan planlegge at produksjonen skal starte så tidlig som mulig. Produksjonen kan startes i dag, i morgen eller fra en hvilken som helst dato i fremtiden. Produksjonen planlegges for start den tidligste mulige datoen, og planlegges fremover i tid til den tidligste mulige sluttdatoen.
+-   **Planlegging fremover**– du kan planlegge at produksjonen skal starte så tidlig som mulig. Produksjonen kan startes i dag, i morgen eller fra en hvilken som helst dato i fremtiden. Produksjonen planlegges for start den tidligste mulige datoen, og planlegges fremover i tid til den tidligste mulige sluttdatoen.
 -   **Planlegging bakover**– du kan planlegge at produksjonen skal starte så sent som mulig. Tidsplanen baseres på datoen da produksjonen må være fullført, og teller bakover til den seneste mulige datoen da produksjonen kan startes uten at fristen som er satt som mål, overskrides.
 
 Følgende alternativer er tilgjengelige:
@@ -98,7 +99,7 @@ Når referanser avhenger av produksjonsordrer, er de også kjent som underproduk
 
 ### <a name="synchronize-references"></a>Synkroniser referanser
 
-Du kan synkronisere referanser med produksjonsordren. Hvis dette alternativet velges, flyttes datoene for underproduksjonene og justeres når det gjøres endringer i produksjonsordreplanen. Hvis en produksjonsordre har én eller flere underproduksjoner, kan det hende at du vil planlegge underproduksjonene sammen med hovedproduksjonen. I så fall kan ikke hovedproduksjonen startes før de tilknyttede underproduksjonene er fullført. Velg derfor denne avmerkingsboksen hvis planleggingen av underproduksjoner skal baseres på start- og sluttidspunkt for den valgte produksjonen. Du kan bare merke av i denne avmerkingsboksen hvis det også er merket av for** Planreferanser**.
+Du kan synkronisere referanser med produksjonsordren. Hvis dette alternativet velges, flyttes datoene for underproduksjonene og justeres når det gjøres endringer i produksjonsordreplanen. Hvis en produksjonsordre har én eller flere underproduksjoner, kan det hende at du vil planlegge underproduksjonene sammen med hovedproduksjonen. I så fall kan ikke hovedproduksjonen startes før de tilknyttede underproduksjonene er fullført. Velg derfor denne avmerkingsboksen hvis planleggingen av underproduksjoner skal baseres på start- og sluttidspunkt for den valgte produksjonen. Du kan bare merke av i denne avmerkingsboksen hvis det også er merket av for**Planreferanser**.
 
 ## <a name="cancellation"></a>Annullering
 ### <a name="cancel-queue-time"></a>Avbryt køtid

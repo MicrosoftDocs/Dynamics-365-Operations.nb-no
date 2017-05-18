@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ Ordrebekreftelse beregner de tidligste leverings- og mottaksdatoene og er basert
 
 -   **Salgsleveringstid** – Salgsleveringstiden er tiden mellom opprettelsen av salgsordren og leveringen av varene. Beregningen av leveringsdato er basert på et standard antall dager, og vurderer ikke lagertilgjengelighet, kjente behov eller planlagt forsyning.
 -   **ATP (tilgjengelig for ordre)** – ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde på en bestemt dato. ATP-beregningen inkluderer ikke igangsatt lager, leveringstider, planlagte mottak, og avganger.
--   **ATP + Avgang-margin **– Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
--   **CTP (leveringskapasitet) **– Tilgjengelighet beregnes via nedbryting.
+-   **ATP + Avgang-margin**– Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
+-   **CTP (leveringskapasitet)**– Tilgjengelighet beregnes via nedbryting.
 
 ## <a name="atp-calculations"></a>ATP-beregninger
 ATP-antallet beregnes basert på metoden "kumulativ ATP med blikk fremover". Den største fordelen med denne ATP-beregningsmetoden er at den kan håndtere tilfeller der summen av avganger mellom mottak er større enn siste mottak (for eksempel når et antall fra et tidligere mottak må brukes for å oppfylle et behov). Beregningsmetoden "kumulativ ATP med blikk fremover" inneholder alle avganger helt til det kumulative antallet som skal mottas, overskrider det kumulative antallet i avgang. Derfor evaluerer denne ATP-beregningsmetoden om noe av antallet fra en tidligere periode kan brukes i en senere periode.  

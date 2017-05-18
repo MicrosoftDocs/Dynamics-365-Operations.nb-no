@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Eksempler på nummerserier
 Eksemplene nedenfor viser hvordan du bruker segmenter til å opprette nummerserieformater. Eksemplene viser særlig virkningen av bruken av omfangssegmenter.
 ### <a name="expense-report-numbers"></a>Reiseregningsnumre
 
-I eksemplet nedenfor konfigureres reiseregningsnumre for den juridiske enheten som heter **CS**. **Område: **Reiseregninger **Referanse: **Reiseregningsnummer **Omfang: **Juridisk enhet **Juridisk enhet: **CS
+I eksemplet nedenfor konfigureres reiseregningsnumre for den juridiske enheten som heter **CS**. **Område:**Reiseregninger **Referanse:**Reiseregningsnummer **Omfang:**Juridisk enhet **Juridisk enhet:**CS
 | Segmenter  | Segmenttype | Verdi     |
 |-----------|--------------|-----------|
 | Segment 1 | Juridisk enhet | CS        |
@@ -49,7 +50,7 @@ I eksemplet nedenfor konfigureres reiseregningsnumre for den juridiske enheten s
 
 ### <a name="sales-order-numbers"></a>Salgsordrenumre
 
-I eksemplet nedenfor konfigureres salgsordrenumre for firma-IDen **CEU**. **Område: **Salg **Referanse: **Salgsordre **Omfang: **Firma **Firma: **CEU
+I eksemplet nedenfor konfigureres salgsordrenumre for firma-IDen **CEU**. **Område:**Salg **Referanse:**Salgsordre **Omfang:**Firma **Firma:**CEU
 | Segmenter  | Segmenttype | Verdi    |
 |-----------|--------------|----------|
 | Segment 1 | Konstant     | SO-      |
@@ -59,7 +60,7 @@ I eksemplet nedenfor konfigureres salgsordrenumre for firma-IDen **CEU**. **Omr�
 
 ### <a name="purchase-requisition-numbers"></a>Innkjøpsrekvisisjonsnumre
 
-I eksemplet nedenfor gjelder innkjøpsrekvisisjonsnumre for hele organisasjonen. **Område: **Kjøp **Referanse: **Innkjøpsrekvisisjon **Omfang: **Delt
+I eksemplet nedenfor gjelder innkjøpsrekvisisjonsnumre for hele organisasjonen. **Område:**Kjøp **Referanse:**Innkjøpsrekvisisjon **Omfang:**Delt
 | Segmenter  | Segmenttype | Verdi    |
 |-----------|--------------|----------|
 | Segment 1 | Konstant     | Req      |

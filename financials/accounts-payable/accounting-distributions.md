@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a98ce08dc115bc96cec07c2d6ced10d774785fe9
-ms.openlocfilehash: b1057caae6f47e5a17e194834fbbcb9d7d731605
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 527ca0aa977c928204a1db165a77e20483931bda
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Generiske funksjoner for regnskapsdistribusjon gir følgende alternativer for be
     -   **Del**-knappen kan være aktivert for overordnede distribusjoner. **Del** genererer nye regnskapsdistribusjoner, og delingen kan være basert på prosent, beløp eller antall.
     -   **Fordel likt**-knappen kan brukes sammen med **Del** til å fordele beløpet likt på tvers av alle distribusjoner automatisk.
     -   **Tilbakestill**-knappen kan aktiveres for overordnede distribusjoner når det finnes flere fordelinger. **Tilbakestill** reverserer manuelle endringer i distribusjonen ved å slette alle eksisterende distribusjoner og generere de standard distribusjonene på nytt.
-    -   Alle underordnede distribusjoner, for eksempel rabatt, tillegg og merverdiavgift, følger alltid den overordnede distribusjonen. Du kan vise relasjonen overordnet/underordnet på **Referanse** &gt; **Parent information**.
+    -   Alle underordnede distribusjoner, for eksempel rabatt, tillegg og merverdiavgift, følger alltid den overordnede distribusjonen. Du kan vise relasjonen overordnet/underordnet på **Referanse** &gt; **Overordnet informasjon**.
     -   Hovedkontoen og finansdimensjonen kan redigeres for underordnede også.
     -   Finansdimensjonene på regnskapsdistribusjonene følger et tilbakestillingsmønster som et dokument kan utvide. Se de beslektede artiklene hvis du vil ha mer informasjon.
     -   Avviksdistribusjoner kan genereres i samsvarsscenarier, for eksempel samsvar mellom en leverandørfaktura og en bestilling. Du kan vise samsvarsrelasjonene mellom regnskapsdistribusjon på **Referanse** &gt; **Dokumentinformasjon**.

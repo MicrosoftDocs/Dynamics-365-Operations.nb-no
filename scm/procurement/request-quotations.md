@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende
 
 Når du mottar bud, må du angi dem på siden **Svar på tilbudsforespørsel**. Hvis du velger alternativet **Kopier data til svar**, kopieres data som antall og datoer fra tilbudsforespørselssaken til svaret. Du kan endre disse dataene slik at de gjenspeiler leverandørens bud.  
 
-Hvis en ny gjentakelse av et svar er nødvendig for en bestemt leverandør, klikker du **Retur **på siden** Svar på tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til innstillingene for utskriftsbehandling.  
+Hvis en ny gjentakelse av et svar er nødvendig for en bestemt leverandør, klikker du **Retur**på siden**Svar på tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til innstillingene for utskriftsbehandling.  
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil forespørselssvaret ha et poengpanel der du kan gi poeng. Den totale poengsummen vil vises når du sammenligner svarene på **Sammenlign svar**-siden, der du også kan sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.  
 
@@ -107,7 +108,7 @@ Hvis tilbudsforespørselen er av typen **Kjøpsavtale**:
 -   Tilbudsforespørselen brukes for en avtale om å kjøpe et spesifikt antall eller en verdi av et produkt over tid. Du må velge datointervallet som gjelder for kjøpsavtalen, og navnet på personen som administrerer kjøpsavtalen.
 -   Når du godkjenner et bud, genereres en kjøpsavtale.
 
-Du kan opprette en tilbudsforespørsel fra en innkjøpsrekvisisjon bare hvis statusen for innkjøpsrekvisisjonen er **Til vurdering **og du er tildelt den neste arbeidsflytoppgaven. Linjene i innkjøpsrekvisisjonen oppdateres automatisk når du godtar linjer fra forespørselsvar (bud) som du mottok fra leverandører. Du kan ikke fullføre, avvise, godkjenne eller utføre noen andre handlinger for innkjøpsrekvisisjonen, mens tilbudsforespørselen behandles.  
+Du kan opprette en tilbudsforespørsel fra en innkjøpsrekvisisjon bare hvis statusen for innkjøpsrekvisisjonen er **Til vurdering**og du er tildelt den neste arbeidsflytoppgaven. Linjene i innkjøpsrekvisisjonen oppdateres automatisk når du godtar linjer fra forespørselsvar (bud) som du mottok fra leverandører. Du kan ikke fullføre, avvise, godkjenne eller utføre noen andre handlinger for innkjøpsrekvisisjonen, mens tilbudsforespørselen behandles.  
 
 Når du oppretter en tilbudsforespørsel, kan du velge en bestemt forespørselstype. Forespørselstypen bestemmer settet med poengkriterier som brukes til å gi poeng på svar på forespørselen.  
 
@@ -133,7 +134,7 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres når du oppretter e
 | Legg til en annen leverandør.                | Opprettet                      | Sendt (Tilbudsforespørselen er bare sendt til én leverandør.) | Opprettet                    | Sendt                        |
 | Send tilbudsforespørselen til den andre leverandøren. | Sendt                         | Sendt                                            | Sendt                       | Sendt                        |
 
-**Obs! ** Du kan legge til flere leverandører i en tilbudsforespørsel når som helst, og de laveste og høyeste statusene endres for å gjenspeile de nye leverandørene. Hvis du for eksempel har mottatt bud fra alle leverandørene og godtatt minst én linje i et bud, er den laveste statusen i tilbudsforespørselshodet **Avvist**, og den høyeste statusen er **Godtatt**. Hvis du legger til en ny leverandør, er **Opprettet** nå den laveste statusen for en linje. Den laveste statusen i tilbudsforespørselshodet endres derfor til **Opprettet**, og den høyeste statusen forblir **Godtatt**.
+**Obs!** Du kan legge til flere leverandører i en tilbudsforespørsel når som helst, og de laveste og høyeste statusene endres for å gjenspeile de nye leverandørene. Hvis du for eksempel har mottatt bud fra alle leverandørene og godtatt minst én linje i et bud, er den laveste statusen i tilbudsforespørselshodet **Avvist**, og den høyeste statusen er **Godtatt**. Hvis du legger til en ny leverandør, er **Opprettet** nå den laveste statusen for en linje. Den laveste statusen i tilbudsforespørselshodet endres derfor til **Opprettet**, og den høyeste statusen forblir **Godtatt**.
 
 ## <a name="amending-an-rfq"></a>Endre en tilbudsforespørsel
 Noen ganger må du endre en tilbudsforespørsel etter at du har sendt den. Dette kan skje fordi, for eksempel leveringsdatoene er endret, eller du vil ha flere produkter eller ulikt antall produkter. Du kan konfigurere endringsprosessen slik at den er mer restriktiv eller mindre restriktiv.  
@@ -157,11 +158,11 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres når du mottar bud 
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Handling**                                     | **Status for laveste bud ** | **Høyeste budstatus ** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
+| **Handling**                                     | **Status for laveste bud** | **Høyeste budstatus** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
 | Registrer én leverandørs bud, og lagre det.        | Sendt                  | Mottatt               | Sendt                         | Mottatt                      | Sendt                       | Mottatt                    |
 | Registrer den andre leverandørens bud, og lagre det. | Mottatt              | Mottatt               | Mottatt                     | Mottatt                      | Mottatt                   | Mottatt                    |
 
-**Obs! ** Hvis du returnerer et bud til en leverandør for å foreta videre forhandlinger, er laveste og høyeste status fortsatt **Mottatt**.
+**Obs!** Hvis du returnerer et bud til en leverandør for å foreta videre forhandlinger, er laveste og høyeste status fortsatt **Mottatt**.
 
 ### <a name="accepting-and-rejecting-bids-and-transferring-accepted-bids-to-downstream-documents"></a>Godta og avvise bud, og overføre godtatte bud til nedstrøms dokumenter
 
@@ -186,7 +187,7 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres etter som du godtar
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Handling**              | **Status for laveste bud ** | **Høyeste budstatus ** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
+| **Handling**              | **Status for laveste bud** | **Høyeste budstatus** | **Laveste status for tilbudsforespørselshode** | **Høyeste status for tilbudsforespørselshode** | **Laveste status for tilbudsforespørselslinje** | **Høyeste status for tilbudsforespørselslinje** |
 | Godta et av budene. | Mottatt              | Godtatt               | Mottatt                     | Godtatt                      | Mottatt                   | Godtatt                    |
 | Avvis de andre budene.  | Avslått              | Godtatt               | Avslått                     | Godtatt                      | Avslått                   | Godtatt                    |
 
