@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 721b293d1f8c76458ca510732f9bb94f003ac6e3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 796ed86b9a351d690edbee1adc0631d62b8011ac
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,13 +43,13 @@ Som en del av konfigurasjonen for mobil enhet, kan du definere ulike oppsett for
 
 CSS- og ASPX-filene må være plassert i en bestemt katalog slik at programmet Internet Information Services (IIS) kan laste dem inn. Det kan være nyttig å definere forskjellige CSS-filer hvis du kjører funksjonen for mobilenhet i ulike lesere eller på ulike typer maskinvare som krever annen oppsettskontroll. Enkle innstillinger, for eksempel bakgrunnsfargen, skriften og skriftstørrelsen for tekst, og bredden og virkemåten for knapper, kan lett kontrolleres av annen bruk av CSS-filer. ASPX-filen brukes til å vise mobilområdet på ASP.NET-programmet på serversiden. Filen styrer hvordan den overordnede strukturen for HTML legges ut. Det er lurt å tilpasse denne funksjonaliteten bare hvis du har alvorlige strukturelle problemer med HTML og JavaScript, og du må endre denne koden for de bestemte enhetene. For å tilordne HTML-kontroller på siden for mobil enhet for å bruke hurtigtaster velger du siden **Innstillinger for visning av mobilenhet** feltet **Hurtigtast**, og tilordner de numeriske kodene for tastene. Du kan bruke menyen **Vis koder for hurtigtaster** på den mobile enheten til å finne den numeriske tegnkodene. Legg merke til at tilordningene kan variere, avhengig av maskinvaren som brukes. Du må bruke følgende syntaks for å opprette tilknytningen:
 
-&lt;control name&gt;(&lt;key name&gt;)=&lt;key code&gt;;
+&lt;kontrollnavn&gt;(&lt;nøkkelnavn&gt;)=&lt;nøkkelkode&gt;;
 
 Her er en forklaring på delene av syntaksen:
 
--   **&lt;control name&gt;** – Navnet på kontrollen, for eksempel en knapp, som vises i HTML.
--   **(&lt;key name&gt;)** – Navnet på tastaturtasten som du lager snarveien for.
--   **&lt;Key code&gt;** – Den numeriske tegnkoden for tasten du vil bruke som hurtigtasten.
+-   **&lt;kontrollnavn&gt;** – Navnet på kontrollen, for eksempel en knapp, som vises i HTML.
+-   **(&lt;nøkkelnavn&gt;)** – Navnet på tastaturtasten som du lager snarveien for.
+-   **&lt;nøkkelkode&gt;** – Den numeriske tegnkoden for tasten du vil bruke som hurtigtasten.
 
 Her er et eksempel:
 
@@ -64,9 +65,9 @@ Request.UserHostAddress=&lt;user host address&gt;|HostName=&lt;user host name&gt
 
 Her er en forklaring på delene av uttrykket:
 
--   **&lt;user host address&gt;** – et vanlig .NET-utrykk som samsvarer med anmoderens IP-adresse.
--   **&lt;user host name&gt;** – et vanlig .NET-utrykk som samsvarer med anmoderens nettverksnavn.
--   **&lt;user agent&gt;** – et vanlig .NET-uttrykk som samsvarer med identifikatoren til nettleseren anmoderen bruker.
+-   **&lt;brukervertsadresse&gt;** – et vanlig .NET-utrykk som samsvarer med anmoderens IP-adresse.
+-   **&lt;brukervertnavn&gt;** – et vanlig .NET-utrykk som samsvarer med anmoderens nettverksnavn.
+-   **&lt;brukeragent&gt;** – et vanlig .NET-uttrykk som samsvarer med identifikatoren til nettleseren anmoderen bruker.
 
 Følgende eksempel aktiverer bruk av Internet Explorer 8:
 

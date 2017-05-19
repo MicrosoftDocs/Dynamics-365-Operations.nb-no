@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 3c7c189b1ed9ca8a69ddd710b7b1345e9b41a680
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6c7158a4d0f941bf564c107bfb2560de6a09570
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -100,7 +101,7 @@ Resultatene av en sporing vises i kronologisk rekkefølge i treet i hurtigkatego
 For å redusere mengden informasjon i sporingsdetaljene inneholder bare noden for den første forekomsten for varen eller råvaren detaljer. Hvis en valgt node ikke inneholder detaljer, kan du vise noden som inneholder detaljer, ved å klikke **Gå til sporet linje**. Du kan deretter gå tilbake til noden du forlot, ved å klikke **Gå tilbake**.
 
 ## <a name="can-i-view-only-a-particular-type-of-document-for-example-can-i-view-only-production-orders-customers-or-vendors"></a>Kan jeg vise bare en bestemt type dokument? Kan jeg for eksempel bare vise produksjonsordrer, kunder eller leverandører?
-Ja, du kan åpne listesider som inneholder bare en bestemt type dokument eller transaksjon fra sporingsdetaljene. Du får tilgang til disse sidene fra menyelementet **Sporing** i handlingsruten, i gruppene **Vare**, **Salg**, **Kjøp**, **Produksjon** og **Kvalitet**. Hvis du for eksempel vil vise en liste over leverandørene i sporingsdetaljene, klikker du **Sporing** &gt; **Kjøp** &gt; **Leverandører**. Listesidene oppsummer dokumenter eller transaksjoner fra sporingsdetaljene. Listesidene **Ventende transaksjoner**, **Ventende ordrer** og ** Ikke leverte salgsordrer** viser også informasjon som ikke er inkludert i sporingsdetaljene for salgsordrer. I tillegg viser de alltid resultatene per gjeldende dato, selv om et datointervall er angitt. Tabellen nedenfor beskriver tilleggsinformasjonen disse sidene kan inneholde.
+Ja, du kan åpne listesider som inneholder bare en bestemt type dokument eller transaksjon fra sporingsdetaljene. Du får tilgang til disse sidene fra menyelementet **Sporing** i handlingsruten, i gruppene **Vare**, **Salg**, **Kjøp**, **Produksjon** og **Kvalitet**. Hvis du for eksempel vil vise en liste over leverandørene i sporingsdetaljene, klikker du **Sporing** &gt; **Kjøp** &gt; **Leverandører**. Listesidene oppsummer dokumenter eller transaksjoner fra sporingsdetaljene. Listesidene **Ventende transaksjoner**, **Ventende ordrer** og **Ikke leverte salgsordrer** viser også informasjon som ikke er inkludert i sporingsdetaljene for salgsordrer. I tillegg viser de alltid resultatene per gjeldende dato, selv om et datointervall er angitt. Tabellen nedenfor beskriver tilleggsinformasjonen disse sidene kan inneholde.
 
 | Lister                    | Beskrivelse                                                                                                                                                                                                                                                                                                                   |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

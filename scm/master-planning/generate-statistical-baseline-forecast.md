@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c0c918b94fe96d123bb6c25c42fe168a026cd8a9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36b307870f2427cc43a189e92cbd8c30f6ddb0c1
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,14 +40,14 @@ For å generere en behovsprognose går du til **Hovedplanlegging &gt; Prognose &
 
 Prognoseperioden kan velges på tidspunktet for generering av prognosen. Tilgjengelige verdier er: dag, uke og måned. 
 
-Antall perioder å generere en prognose for settes i feltet** Prognosehorisont**. 
+Antall perioder å generere en prognose for settes i feltet**Prognosehorisont**. 
 
 Når prognosestrategien er satt til **Kopier over historisk behov**, ignoreres slutten av den historiske horisonten. Systemet kopierer antall perioder som er angitt i feltet **Prognosehorisont** for å prognostisere behov, fra og med datoen som er angitt **Fra-dato** feltet under **Historisk horisont**. Når du kopierer historisk behov fra en bestemt dato fremover, kan produksjonsplanleggere gjøre planen for neste kvartal på to måter:
 
 -   Ved å kopiere behov fra samme kvartal i fjor.
 -   Ved å kopiere behov fra forrige kvartal.
 
-For å unngå forvirring i produksjonsplanene, kan et bestemt antall prognoseperioder låses. Dette nummeret angis **Låsningshorisont** feltet. På siden **Justert behovsprognose **er cellene for låste perioder deaktivert, for å gi en visuell indikasjon på at disse verdiene ikke skal endres. 
+For å unngå forvirring i produksjonsplanene, kan et bestemt antall prognoseperioder låses. Dette nummeret angis **Låsningshorisont** feltet. På siden **Justert behovsprognose**er cellene for låste perioder deaktivert, for å gi en visuell indikasjon på at disse verdiene ikke skal endres. 
 
 Startdatoen for behovsprognose for basislinje behøver ikke være gjeldende dato eller en dato i fremtiden. Hvis du vil angi en annen startdato, kan du bruke feltet **Startdato for basislinjeprognose - Fra-dato**. I juni, kan brukerne for eksempel generere en prognose for neste år. Fordi prognoseperioder mellom slutten av historiske behov og starten på basislinjen mangler, er det ikke sikkert at forutsigelser blir nøyaktige. Hvis du bruker behovsprognosetjenesten for Microsoft Dynamics 365 for Operations, er det fire måter som du kan fylle ut manglene på. Du kan velge metoden du vil ha ved å angi parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametere for behovsprognose**. 
 

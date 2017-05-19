@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 893c6d42fc3de3e07d63f0ac61a287e81685cbad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 31eec04ef088fee61e30818a3bde094658c5a9c1
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,7 +88,7 @@ En stykklisteberegning genererer advarsler. Du kan vise advarslene om en valgt v
 -   Identifiser når en vare på en stykklistelinje har en utdatert kostnad. Advarselen viser til en sammenligning av beregningsdatoen og antallet dager som er angitt for største tillatte alder for kostnad.
 -   Identifiser når en vare på en stykklistelinje har en fortjeneste i prosent som er mindre enn den du ønsker.
 
-Du kan definere flere stykklisteberegningsgrupper, avhengig av dine behov for variasjoner i advarsler. Én stykklisteberegningsgruppe som for eksempel har advarselsbetingelser for en aktiv stykkliste, et komponentantall som er 0 (null) og komponentkostnad som er 0 (null), kan være nok. Når du starter en stykklisteberegning, kan du overstyre advarselsbetingelsene som er tilordnet stykklisteberegningsgruppen. Du kan også legge til eller fjerne advarselsbetingelser. Hvis gjeldende situasjon for eksempel ikke omfatter rutedata, kan du fjerne den gjeldende advarselsbetingelsen for en aktiv rute. **Obs! ** Timeregistrering inkluderer en **Beregningsgrupper**-side, men siden har ingen relasjon til stykklisteberegningsgrupper. I Timeregistrering kan arbeidere tilordnes til beregningsgrupper som gjenspeiler grupperingen av arbeidere som er tilknyttet samme arbeidsleder eller overordnet. Beregning av arbeiderregistreringer kan gjøres automatisk eller manuelt av en arbeidsleder eller overordnet.
+Du kan definere flere stykklisteberegningsgrupper, avhengig av dine behov for variasjoner i advarsler. Én stykklisteberegningsgruppe som for eksempel har advarselsbetingelser for en aktiv stykkliste, et komponentantall som er 0 (null) og komponentkostnad som er 0 (null), kan være nok. Når du starter en stykklisteberegning, kan du overstyre advarselsbetingelsene som er tilordnet stykklisteberegningsgruppen. Du kan også legge til eller fjerne advarselsbetingelser. Hvis gjeldende situasjon for eksempel ikke omfatter rutedata, kan du fjerne den gjeldende advarselsbetingelsen for en aktiv rute. **Obs!** Timeregistrering inkluderer en **Beregningsgrupper**-side, men siden har ingen relasjon til stykklisteberegningsgrupper. I Timeregistrering kan arbeidere tilordnes til beregningsgrupper som gjenspeiler grupperingen av arbeidere som er tilknyttet samme arbeidsleder eller overordnet. Beregning av arbeiderregistreringer kan gjøres automatisk eller manuelt av en arbeidsleder eller overordnet.
 
 
 

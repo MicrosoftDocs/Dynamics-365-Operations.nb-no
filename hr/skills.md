@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Justere kompetansen til arbeidsstyrken etter bedriftens behov
+
+[!include[banner](includes/banner.md)]
+
 
 Du kan følge opp ferdighetene som ansatte, søkere eller kontaktpersoner har eller bør ha for å oppfylle rollen effektivt. Du kan også angi kompetansen som kreves for en bestemt jobb.
 
@@ -52,24 +56,12 @@ Du kan opprette et kompetanesøk for å finne en arbeider, søker eller kontaktp
 
 Med profiler for kompetansesøk kan du søke etter nåværende ansatte eller kandidater med kvalifikasjoner som direkte samsvarer med bedriftens behov.  Du kan for eksempel opprette en profil for kompetansesøk for en åpen stilling i organisasjonen. Ved å opprette en profil for en bestemt jobb og kopiere kompetanse, utdanning og sertifikater fra denne jobben til profilen, kan du raskt søke arbeidere, søkere og kontaktpersoner som samsvarer med ett eller flere av kriteriene som er angitt på profilen, og vise en liste over kandidater som har kvalifikasjoner som nærmest oppfyller kompetansen som kreves for jobben.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Obs! </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bare arbeidere, søkere eller kontaktpersoner som er valgt for inkludering i kompetansesøk, kan vises i resultatlisten for kompetansesøk eller inkluderes i en kompetanseprofil. Hvis du vil ta med en arbeider, søker eller kontaktperson i kompetansesøk, angir du valget <strong>Inkluder i kompetansesøk</strong> til Ja i de følgende sidene:
-<ul>
-<li>Arbeider</li>
-<li>Ansatt</li>
-<li>Søker</li>
-<li>Kontakter</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Obs!** Bare arbeidere, søkere eller kontaktpersoner som er valgt for inkludering i kompetansesøk, kan vises i resultatlisten for kompetansesøk eller inkluderes i en kompetanseprofil. Hvis du vil ta med en arbeider, søker eller kontaktperson i kompetansesøk, angir du valget **Inkluder i kompetansesøk** til Ja i de følgende sidene:
+
+> + Arbeider
+> + Ansatt
+> + Søker
+> + Kontakter
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Kompetansegapanalyse og kompetanseprofilanalyse
 Du kan opprette en analyse av kompetanseprofil for å vise en kompetanseliste for en arbeider, søker eller kontaktperson fra en bestemt dato. Du kan opprette en kompetansegapanalyse hvis du vil sammenligne kompetansen til en person med kompetansen som kreves for en bestemt jobb.  
@@ -80,5 +72,7 @@ Du kan opprette en analyse av kompetanseprofil for å vise en kompetanseliste fo
 --------
 
 [Personale](index.md)
+
+
 
 

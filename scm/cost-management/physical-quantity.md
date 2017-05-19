@@ -3,7 +3,7 @@ title: Beholdningsobjektverdier
 description: Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 05
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,19 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 7a0a2af2094e3e5be757d3dd82255769677b96ea
-ms.openlocfilehash: 8898d5d91ffb4f73ea68f1251e1a99440e81bcd4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d177903e3c79226e90a1f2eb3d55e3c670446a44
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="inventory-object-values"></a>Beholdningsobjektverdier
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes. 
 
-En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt beholdningsobjekt. Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres. Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md). Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden. Slik beregnes verdien til et beholdningsobjekt: beholdningsobjekt.verdi = kostnadsobjekt.gjennomsnittlig enhetskostnad × beholdningsobjekt.antall. Eksemplet nedenfor viser hvordan verdiene til et beholdningsobjekt og et kostnadsobjekt beregnes. To produktkvitteringshendelser er registrert for vare A:
+En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt beholdningsobjekt. 
+
+Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres. Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md). 
+
+Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden. Slik beregnes verdien til et beholdningsobjekt: 
+
+Beholdningsobjekt.Verdi = Kostnadsobjekt.Gjennomsnittlig enhetskostnad × Beholdningsobjektet.Antall 
+
+Eksemplet nedenfor viser hvordan en verdiene til et beholdningsobjekt og et kostnadsobjekt beregnes. To produktkvitteringshendelser er registrert for vare A:
 
 -   Produktkvittering 1: Antall = 100 stk., Beløp = USD 1 000,00, Område = 1, Lager = 11, Partinr. = B1
 -   Produktkvittering 2: Antall = 50 stk., Beløp = USD 800,00, Område = 1, Lager = 11, Partinr. = B2
@@ -135,5 +147,7 @@ Følgende tabell viser resultatet av beregningen for et beholdningsobjekt. Du ka
 [Kostnadsoppføringer](cost-entries.md)
 
 [Hva er nytt og endret i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+
+
 
 

@@ -3,7 +3,7 @@ title: Systemkrav
 description: I dette emnet finner du systemkravene for den gjeldende versjonen av Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>Systemkrav
+
+[!include[banner](../includes/banner.md)]
+
 
 I dette emnet finner du systemkravene for den gjeldende versjonen av Microsoft Dynamics 365 for Operations.
 
@@ -43,6 +47,8 @@ Du finner den nyeste versjonen av hver nettleser ved å gå til programvareprodu
 -   Hvis du vil ta skjermbilder som genereres fra Oppgaveopptaker, og ta dem med i Microsoft Word-dokumenter, må du ha en Chrome-tillegget installert. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Redigeringsprogrammet for arbeidsflyt startes som et ClickOnce-program. Bare Microsoft Edge og Internet Explorer (på en støttet versjon av Microsoft Windows) støtter ClickOnce-programmer. ClickOnce-redigeringsprogrammet for arbeidsflyt krever en 64-biters kompatibelt operativsystem.
 -   Rapportutforming for finansrapportering startes som et ClickOnce-program. Det krever et 64-biters kompatibelt operativsystem. Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming. Hvis du bruker Chrome i inkognitomodus, må du kontrollere at ClickOnce-tillegget også er aktivert for inkognitomodus.
+-   Hvis du vil forhåndsvise PDF-filer, anbefaler vi at du bruker moderne nettlesere som Microsoft Edge (siste offentlig tilgjengelige versjon) på Windows 10 eller Google Chrome (siste offentlig tilgjengelige versjon) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-nettbrett.
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Støttede nettlesere for Skybasert salgssted for detaljhandel
 
@@ -56,7 +62,7 @@ Skybasert salgssted for detaljhandel for Microsoft Dynamics 365 for Operations k
 -   Dynamics 365 for Operations er utformet for nettverk med ventetid på mindre enn 150 millisekunder (ms). Dette er ventetiden fra en nettleserklient til Microsoft Azure-datasenteret som er vert for Dynamics 365 for Operations. Vi anbefaler at du tester nettverksventetiden på <http://www.azurespeed.com>.
 -   Båndbreddekrav for Dynamics 365 for Operations er avhengig av scenariet. De vanligste scenarier krever en båndbredde på mer enn 50 kilobyte per sekund (kbps). For scenarier som har krav til høy nyttelast, for eksempel arbeidsområder eller scenarier med omfattende tilpassing, anbefales imidlertid mer båndbredde.
 
-Generelt er Dynamics 365 for Operations optimalisert for Internett. Antall rundturer fra en nettleserklient til Azure-datasenteret er svært lite, og hele nyttelasten er komprimert. **Advarsel! ** Ikke beregne krav til båndbredde fra en klientplassering ved å multiplisere antallet brukere med minimum båndbreddekrav. Samtidig bruk av en bestemt plassering er svært vanskelig å beregne. Kunder som er bekymret for krav til båndbredde kan bruke en forhåndsversjon av Dynamics 365 for Operations.
+Generelt er Dynamics 365 for Operations optimalisert for Internett. Antall rundturer fra en nettleserklient til Azure-datasenteret er svært lite, og hele nyttelasten er komprimert. **Advarsel!** Ikke beregne krav til båndbredde fra en klientplassering ved å multiplisere antallet brukere med minimum båndbreddekrav. Samtidig bruk av en bestemt plassering er svært vanskelig å beregne. Kunder som er bekymret for krav til båndbredde kan bruke en forhåndsversjon av Dynamics 365 for Operations.
 
 ## <a name="net-framework-requirements"></a>.NET Framework-krav
 Dynamics 365 for Operations krever .NET Framework versjon 4.6.2 for alle ClickOnce-programmer, for eksempel dokumentrutingsagenten. Hvis du vil lese installasjonsinstruksjonene, kan du se [Installere .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
@@ -84,7 +90,7 @@ Dynamics 365 for Operations krever .NET Framework versjon 4.6.2 for alle ClickOn
 
 -   Maskinvarestasjon for detaljhandel er et 32-biters program, men det kan kjøres på både x86- og x64 arkitekturer.
 -   Maskinvarestasjon for detaljhandel støttes på følgende operativsystemer:
-    -   Utgavene Windows 7 Professional, Enterprise og Ultimate **Obs! ** Windows 7 støttes bare hvis Internet Explorer 11 er installert manuelt på systemet.
+    -   Utgavene Windows 7 Professional, Enterprise og Ultimate **Obs!** Windows 7 støttes bare hvis Internet Explorer 11 er installert manuelt på systemet.
     -   Utgavene Windows 8.1 Update 1 Professional, Enterprise og Embedded
     -   Utgavene Windows 10 Pro, Enterprise og Enterprise LTSB
 
@@ -117,11 +123,13 @@ Datamaskinen må oppfylle alle systemkrav for installasjon og bruk av følgende 
 -   Minst 10 GB ledig plass (kanaldatabasen kan kreve svært mye plass)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Krav for utvikling på lokale virtuelle maskiner
-Hvis du vil ha informasjon om kravene til utvikling på lokale virtuelle maskiner (VM-er), kan du se [Virtuelle maskiner som kjører lokalt](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+Hvis du vil ha informasjon om kravene til utvikling på lokale virtuelle maskiner (VM-er), kan du se [Virtuelle maskiner som kjører lokalt](../dev-tools/access-instances.md).
 
 <a name="see-also"></a>Se også
 --------
 
 [Få en evalueringsversjon av Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

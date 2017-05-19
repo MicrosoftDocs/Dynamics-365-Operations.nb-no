@@ -1,9 +1,9 @@
 ---
 title: Tilbakestille data for finansrapportering etter gjenoppretting av en database
 description: Dette emnet beskriver hvordan du tilbakestiller data for finansrapportering etter gjenoppretting av en Microsoft Dynamics 365 for Operations-database.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Tilbakestille data for finansrapportering etter gjenoppretting av en database
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emnet beskriver hvordan du tilbakestiller data for finansrapportering etter gjenoppretting av en Microsoft Dynamics 365 for Operations-database. 
 
@@ -34,7 +38,7 @@ Det finnes flere scenarier der du kanskje må gjenopprette din Dynamics 365 for 
 Eksporter først rapportutformingene i Rapportutforming ved å gjøre følgende:
 
 1.  Gå til **Firma** &gt; **Byggeblokkgrupper** i Rapportutforming.
-2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. **Obs! ** For Dynamics 365 for Operations støttes bare én byggeblokkgruppe, **Standard**.
+2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. **Obs!** For Dynamics 365 for Operations støttes bare én byggeblokkgruppe, **Standard**.
 3.  Velg rapportdefinisjonene som skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
     -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten. Når du velger rapporter å eksportere, velges tilhørende rader, kolonner, trær og dimensjonssett.
@@ -43,7 +47,11 @@ Eksporter først rapportutformingene i Rapportutforming ved å gjøre følgende:
 5.  Skriv inn et filnavn, og velger en sikkert plassering der du vil lagre de eksporterte rapportdefinisjonene.
 6.  Klikk på **Lagre**.
 
-Filen kan kopieres eller lastet opp til en sikker plassering, slik at den kan importeres til et annet miljø på et annet tidspunkt. Du finner informasjon om hvordan du bruker en Microsoft Azure-lagringskonto i [overføre data med kommandolinjeverktøyet AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Obs! ** Microsoft tilbyr ingen lagringskonto som en del av Dynamics 365 for Operations-avtalen. Du må kjøpe en lagringskonto eller bruke en lagringskonto fra et eget Azure-abonnement. **Viktig! ** Vær oppmerksom på virkemåten til D-stasjonen på virtuelle Azure-maskiner. Ikke lagre eksporterte byggeblokkgrupper her permanent. Hvis du vil ha mer informasjon om midlertidige stasjoner, kan du se [Forstå den midlertidige stasjonen på virtuelle Windows Azure-maskiner](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Filen kan kopieres eller lastet opp til en sikker plassering, slik at den kan importeres til et annet miljø på et annet tidspunkt. Du finner informasjon om hvordan du bruker en Microsoft Azure-lagringskonto i [overføre data med kommandolinjeverktøyet AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft tilbyr ingen lagringskonto som en del av Dynamics 365 for Operations-avtalen. Du må kjøpe en lagringskonto eller bruke en lagringskonto fra et eget Azure-abonnement. 
+> [!WARNING]
+> Vær oppmerksom på virkemåten til D-stasjonen på virtuelle Azure-maskiner. Ikke lagre eksporterte byggeblokkgrupper her permanent. Hvis du vil ha mer informasjon om midlertidige stasjoner, kan du se [Forstå den midlertidige stasjonen på virtuelle Windows Azure-maskiner](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Stoppe tjenester
 Bruk Eksternt skrivebord til å koble til alle datamaskinene i miljøet, og stopp følgende Windows-tjenester ved hjelp av Services.msc:
@@ -96,7 +104,9 @@ Bruk Services.msc til å starte tjenestene du stoppet tidligere:
 Importer rapportutformingene fra Rapportutforming ved hjelp av filen som opprettes under eksporten:
 
 1.  Gå til **Firma** &gt; **Byggeblokkgrupper** i Rapportutforming.
-2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. **Obs! ** For Dynamics 365 for Operations støttes bare én byggeblokkgruppe, **Standard**.
+2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. 
+    > [!NOTE]
+    > For Dynamics 365 for Operations støttes bare én byggeblokkgruppe, **Standard**.
 3.  Velg **Standard**-byggeblokken, og klikk på **Importer**.
 4.  Velg filen som inneholder de eksporterte rapportdefinisjonene, og klikk på **Åpne**.
 5.  I dialogboksen Importer velger rapportdefinisjonene som skal importers:
@@ -104,6 +114,8 @@ Importer rapportutformingene fra Rapportutforming ved hjelp av filen som opprett
     -   Hvis du vil importere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, velger du rapporter, rader, kolonner, trær eller dimensjonssett som skal importeres.
 
 6.  Klikk på **Importer**.
+
+
 
 
 

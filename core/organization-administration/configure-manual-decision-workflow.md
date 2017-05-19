@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: d57b00de54a0966f94b98885c9ffbf02a1838c90
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -326,7 +327,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
 6.  Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i kategorien **Avslutt handling**.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
-Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt. **Obs! ** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
+Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Angi en tidsgrense for arbeidsflytelementet**.

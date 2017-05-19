@@ -18,10 +18,11 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: bf5b75572529bb497d3079752de187f30aa59294
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: e979eaddb04c96fabb6e5e2693b300674fad8ee2
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -52,7 +53,7 @@ Butikkens språk brukes også for POS-påloggingshovedskjermen fordi brukeren ik
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurere språkinnstillingene for butikken
 
-Butikkens språkinnstillinger settes fra **Alle detaljhandelsbutikker** på siden **Retail Store** under **Generelt &gt; Regionale innstillinger &gt; Språk. **Bruk rullegardinlisten for å velge språk for hver butikk.
+Butikkens språkinnstillinger settes fra **Alle detaljhandelsbutikker** på siden **Detaljhandel** under **Generelt &gt; Regionale innstillinger &gt; Språk. **Bruk rullegardinlisten for å velge språk for hver butikk.
 
 ## <a name="user-interface-language"></a>Språk for brukergrensesnittet
 POS-brukerens språkinnstilling bestemmer oversettelser som brukes i brukergrensesnittet for programmet. Dette inkluderer alle etiketter, menyer og lister som ikke anses data. Ett unntak er teksten som vises på POS-knappegrupper. Knappegruppene støtter ikke oversettelser, slik at de alltid vises teksten som er definert på-knappen. For å støtte oversatte knapper, må du kopiere og opprettholder egen knapp rutenett og tilordne dem til brukere etter behov.

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 09c7fce1fa83d6a8d6391db667b7260d2a199390
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: bca8431e88ea73060c75774ae55611f95016e9a1
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -62,10 +63,10 @@ Et frittstående skift angis på kasseskuffnivå. Denne fremgangsmåten beskrive
 6.  Angi kontantbeløpet, og klikk deretter **Lagre** for å lagre kasseoppgjøret.
 7.  Velg **Lukk skift** for å lukke skiftet.
 
-**Obs! ** Andre operasjoner er tilgjengelige under skiftet, avhengig av forretningsprosessene som er på plass. OPerasjonene **Deponer til safe**, **Deponer til bank** og **Fjerning av betalingsmidler** kan brukes for å fjerne penger fra kassen i løpet av dagen eller før skiftet lukkes. Hvis det er lite penger igjen i en kasse, kan operasjonen **Flytoppføring** brukes for å legge til kontanter i kassen.
+**Obs!** Andre operasjoner er tilgjengelige under skiftet, avhengig av forretningsprosessene som er på plass. OPerasjonene **Deponer til safe**, **Deponer til bank** og **Fjerning av betalingsmidler** kan brukes for å fjerne penger fra kassen i løpet av dagen eller før skiftet lukkes. Hvis det er lite penger igjen i en kasse, kan operasjonen **Flytoppføring** brukes for å legge til kontanter i kassen.
 
 ## <a name="shared-shifts"></a>Delte skift
-Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller et sett med kassaskuffer hele arbeidsdagen. Vanligvis brukes et delt skift i mobile salgsstedsmiljøer. I et mobilt miljø er ikke hver kassereren tildelt og ansvarlig for én enkelt kassaskuff. I stedet må alle kasserere kunne utføre et salg og legge til kontanter i kassaskuffen som er nærmest dem. I dette scenariet er pengeskuffene som deles mellom kasserere inkludert i et delt skift. Alle kassaskuffer i et delt skift er inkludert i det samme skiftet for aktiviteter som er knyttet til behandling av kontanter for skiftet. Derfor skal startbeløpet for skiftet inkludere summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. På samme måte skal kassaoppgjøret være summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. **Obs! ** Bare ett delt skift kan være åpent om gangen i hver butikk. Delte skift og frittstående skift kan brukes i den samme butikken.
+Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller et sett med kassaskuffer hele arbeidsdagen. Vanligvis brukes et delt skift i mobile salgsstedsmiljøer. I et mobilt miljø er ikke hver kassereren tildelt og ansvarlig for én enkelt kassaskuff. I stedet må alle kasserere kunne utføre et salg og legge til kontanter i kassaskuffen som er nærmest dem. I dette scenariet er pengeskuffene som deles mellom kasserere inkludert i et delt skift. Alle kassaskuffer i et delt skift er inkludert i det samme skiftet for aktiviteter som er knyttet til behandling av kontanter for skiftet. Derfor skal startbeløpet for skiftet inkludere summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. På samme måte skal kassaoppgjøret være summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. **Obs!** Bare ett delt skift kan være åpent om gangen i hver butikk. Delte skift og frittstående skift kan brukes i den samme butikken.
 
 ### <a name="set-up-a-shared-shift"></a>Definere et delte skift
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 9b690b80f148e7ccecba19850bd78c81216d8658
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3b424d34a1469ac37e96927dea5627f5f2fed8ee
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Hvis du velger for eksempel **Årlig**, posteres den årlige avskrivningen bare 
 Hvis du velger **Skattemessig** i feltet **Avskrivningsår** , brukes avskrivning for gjenværende lineær levetid. Avskrivning beregnes basert på de gjenværende regnskapsårene. For regnskapsåret 1. juli 2015 til 30. juni 2016 starter for eksempel avskrivningsberegningen 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres for hver regnskapsperiode. Lengden på det neste regnskapsåret bestemmes av regnskapsperiodene som er definert på siden **Regnskapskalendere**. Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
 -   **Årlig** posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret, som ett beløp på den siste dagen i regnskapsåret.
--   **Regnskapsperiode **beregner totalbeløpet for avskrivningen for regnskapsåret. Dette beløpet avsettes deretter i regnskapsperiodene som defineres på siden **Regnskapskalendere** for regnskapskalenderen som er angitt for tablået.
+-   **Regnskapsperiode**beregner totalbeløpet for avskrivningen for regnskapsåret. Dette beløpet avsettes deretter i regnskapsperiodene som defineres på siden **Regnskapskalendere** for regnskapskalenderen som er angitt for tablået.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel på lineær avskrivning for et uendret anleggsmiddel
 Et anleggsmiddel har følgende kjennetegn.

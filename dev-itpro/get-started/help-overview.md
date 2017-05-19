@@ -3,7 +3,7 @@ title: Hjelpeoversikt
 description: "Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen."
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 240060606c8a2955c3f0a0d47fb25b0cde64c187
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="help-overview"></a>Hjelpeoversikt
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
 
@@ -37,18 +41,18 @@ Dynamics 365 for Operations inkluderer et hjelpesystem som er basert på to hove
 Du har tilgang til både artikler og oppgaveveiledninger fra Hjelp-ruten i Dynamics 365 for Operations, som vist i følgende skjermbilde. [![Hjelp-rute](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Denne artikkelen beskriver hjelpesystemet og forklarer hvordan du kan opprette egendefinerte dokumentasjons- og opplæringsressurser for organisasjonen.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
-docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) er den viktigste kilden til produktdokumentasjonen for Dynamics 365 for Operations. Området tilbyr følgende funksjoner:
+docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations) er den viktigste kilden til produktdokumentasjonen for Dynamics 365 for Operations. Området tilbyr følgende funksjoner:
 
 -   **Tilgang til det mest oppdaterte innholdet** – Området gir oss en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor garanterer det at du har tilgang til den nyeste tekniske informasjonen.
--    **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
--   ** Tilgang til ulike typer innhold** – Området lar deg raskt få tilgang ulike typer innhold om Dynamics 365 for Operations, for eksempel Microsoft Office Mix-presentasjoner, oppgaveveiledninger, videoer og wiki-artikler.
--    **Innhold som støtter forretningsprosesser** – Området inneholder forretningsprosessfokusert innhold som drar nytte av Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
+-   **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
+-   **Tilgang til ulike typer innhold** – Området lar deg raskt få tilgang ulike typer innhold om Dynamics 365 for Operations, for eksempel Microsoft Office Mix-presentasjoner, oppgaveveiledninger, videoer og emner.
+-   **Innhold som støtter forretningsprosesser** – Området inneholder forretningsprosessfokusert innhold som drar nytte av Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 Vi har flyttet alt innhold fra vår tidligere hjelp-wiki til dokumenter. Vi er svært fornøyde med det nye området, og det håper vi du også blir.
 
 ### <a name="when-can-we-use-it"></a>Når kan vi bruke den?
 
-Du kan lese innhold på docs nå – den er helt offentlig og søkbar uten å logge på. Du kan bruke hvilke som helst av dine favorittsøkemotorer til å finne innhold. Du kan kommentere artikler på webområdet hvis du velger det, ved å logge på med en GitHub-konto.
+Du kan lese innhold på docs nå – den er helt offentlig og søkbar uten å logge på. Du kan bruke hvilke som helst av dine favorittsøkemotorer til å finne innhold. Du kan kommentere artikler på nettstedet hvis du velger det, ved å logge på.
 
 
 ## <a name="task-guides"></a>Oppgaveveiledninger
@@ -68,7 +72,7 @@ Hvis du vil ha mer informasjon om Oppgaveopptaker, kan du se [Oppgaveopptaker i 
 Du kan opprette dine egne oppgaveregistreringer, eller du kan laste ned og tilpasse oppgaveregistering som Microsoft tilbyr. Du kan derfor opprette tilpasset Hjelp for organisasjonen som viser din spesifikke Dynamics 365 for Operations-implementering. For å vise en oppgaveregistrering i Dynamics 365 for Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek i LCS. Hvis du er partner og du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Hvis du vil se fullstendige instruksjoner, kan du se [Bruke oppgaveregistreringer til å opprette dokumentasjon og opplæring](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Hjelp i produktet
-Hvis du vil ha tilgang til hjelpeinnhold i Dynamics 365 for Operations, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl + Skift +?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Hvis du vil ha tilgang til hjelpeinnhold i Dynamics 365 for Operations, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl + Skift +?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger. [![Hjelp-rute](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>Tilgang til artikler fra Hjelp-ruten
 
@@ -83,7 +87,7 @@ Før du kan få tilgang til oppgaveveiledninger fra **Hjelp**-ruten må en syste
 
 [![Skjemaet Systemparametere med innstillinger for hjelp](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) På **Systemparametere**-siden følger du disse trinnene:
 
-1.  **Viktig: **Første gang du åpner kategorien Hjelp, må du koble til Lifecycle Services. Husk å klikke koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og klikk OK for å få tilgang til parameterskjemaet.[![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+1.  **Viktig:**Første gang du åpner kategorien Hjelp, må du koble til Lifecycle Services. Husk å klikke koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og klikk OK for å få tilgang til parameterskjemaet.[![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
 2.  Velg Lifecycle Services-prosjektet du vil koble til.
 3.  Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
 4.  Angi visningsrekkefølge for BPM-bibliotekene. Dette bestemmer hvilken rekkefølge oppgaveregistreringer fra bibliotekene skal vises i, i Hjelp-ruten.
@@ -101,13 +105,13 @@ Tabellen nedenfor viser webområder som tilbyr Dynamics 365 for Operations-innho
 
 | Område                                                                     | beskrivelse                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365 for Operations.                                                                                                                                                               |
+| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365 for Operations.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Operations-prosjekter, fra førsalg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
 | [CustomerSource](http://www.customersource.com/)\*                       | Inneholder omfattende opplæringsressurser og er det primære brukerstøtteområdet for Dynamics 365 for Operations. Pålogging kan være nødvendig for å få tilgang til bestemte ressurser på området.                                                                      |
 | [Kundestøtteblogg](http://aka.ms/AXSupportBlog)                              | Gir tips som posteres av Dynamics 365 for Operations-kundestøtteteamet.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Er vert for innhold fra tidligere versjoner som er skrevet for utviklere.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Vert for innhold fra tidligere versjoner som er skrevet for IT-medarbeidere og programbrukere.                                                                                                                                           |
-| [Dynamics-fellesskapet](http://community.dynamics.com/en/)                  | Vert for blogger, forum og videoer.                                                                                                                                                                                                           |
+| [Dynamics-fellesskapet](http://community.dynamics.com/)                  | Vert for blogger, forum og videoer.                                                                                                                                                                                                           |
 | [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Gir informasjon om evaluering og salg.                                                                                                                                                                                                 |
 
 
@@ -125,6 +129,8 @@ Tabellen nedenfor viser webområder som tilbyr Dynamics 365 for Operations-innho
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
+
+
 
 
 

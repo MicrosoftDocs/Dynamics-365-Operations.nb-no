@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 40fbf8b4fdfed32dd67013b6b21cc2c8ee3d31e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: c41343c73d01235deee30fed4ff899cb8a6f50a5
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -46,7 +47,7 @@ Du må fullføre følgende oppgaver hvis du vil definere en nettbutikk.
 7.  Hvis du lar kunder bestille produkter på Internett og deretter hente dem i en lokal butikk, kan du tilordne butikklokatorgrupper til nettbutikken.
 8.  Tilordne attributter for kanaler, produkter og salgsordrer til nettbutikken. Kanalattributter gjelder for hele nettbutikken, produktattributter gjelder for produktene som tilbys i nettbutikken, og salgsordreattributter gjelder for salgsordrene som genereres fra nettbutikken.
 9.  Tilordne attributter for å angi egenskaper som bestemmer hvordan attributtene fungerer i nettbutikken. Du kan for eksempel angi attributter som skal være obligatoriske eller søkbare.
-10. Publiser nettbutikken for å generere butikkstrukturen på ditt valg av tredjeparts nettbutikk. **Viktig! ** Før du publiserer nettbutikken, må du definere en leveringslokasjon for den.
+10. Publiser nettbutikken for å generere butikkstrukturen på ditt valg av tredjeparts nettbutikk. **Viktig!** Før du publiserer nettbutikken, må du definere en leveringslokasjon for den.
 
 ## <a name="retail-channel-navigation-hierarchies"></a>Navigasjonshierarkier for detaljhandelskanal
 Før du oppretter en nettbutikk, må du definere navigasjonshierarkiet for detaljhandelskanal du vil bruke for den. Navigasjonshierarkiet for detaljhandelskanal representerer kategorihierarkiet som vises i nettbutikken etter at lageret er publisert. Når du publiserer detaljhandelsproduktkataloger i nettbutikken, tilordnes produktene i katalogen til kategoriene i navigasjonshierarkiet for detaljhandelskanalen. Hierarkiet brukes deretter av kunder til å navigere i nettbutikken.

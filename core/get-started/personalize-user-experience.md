@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Alle personlige innstillinger, av en hvilken som helst type, som en bruker gjør
 ## <a name="systemwide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
 I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-menyknappen. Når du åpner **Innstillinger** menyen, vises en rekke valg. Hvis du velger **Alternativer**, åpnes brukerens **Alternativer** side. Der finner du fire alternativkategorier: **Visuelt**, **Innstillinger**, **Konto** og **Arbeidsflyt**.
 
--   **Visuelt: **bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
+-   **Visuelt:**bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
 -   **Innstillinger:** Her kan du velge standarder for hver gang du åpner Dynamics 365 for Operations, inkludert firma, startside og standardmodus for Vis/Rediger (som bestemmer om en side er låst for visning eller åpnet for redigering av hver gang du åpner den). Du finner også alternativer for språk, tidssone og dato, klokkeslett og nummerformat. Til slutt inneholder denne siden en rekke diverse innstillinger som vil være forskjellig fra versjon til versjon.
--   **Konto: **Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
--   **Arbeidsflyt: **dette er der du kan velge arbeidsflytrelaterte alternativer.
+-   **Konto:**Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
+-   **Arbeidsflyt:**dette er der du kan velge arbeidsflytrelaterte alternativer.
 
 ## <a name="implicit-personalizations"></a>Implisitte tilpasninger
 Implisitte tilpasninger er de personlige tilpasningene som utføres ved å samarbeide med visse Kontroller som husker gjeldende synlig status. 

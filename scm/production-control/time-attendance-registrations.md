@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ I firmaer som bruker Timeregistrering, må ansatte registrere tiden de bruker p�
 -   Arbeidere, som må bruke timeregistrering med jevne mellomrom, for eksempel daglig, ukentlig eller annenhver uke.
 -   Arbeidsledere, ledere og lønnsansvarlige som beregner, godkjenner og overfører arbeiderregistreringer for videre behandling.
 
-| **Obs! **                                                                                                                                                                                                                                                    |
+| **Obs!**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis du kjører Timeregistrering sammen med produksjonsutførelse, blir alle registreringer på prosjekter, prosjektaktiviteter, indirekte aktiviteter, fraværskoder overtid og fleksitid registrert og brukt til å beregne lønn i begge modulene. |
 
@@ -53,7 +54,7 @@ Etter oppsettet kan arbeiderne angi ulike typer registreringer.
 -   Tids- og vareforbruk på produksjonsjobber.
 -   Tid brukt på en maskin på produksjonsgulvet, hvis maskinen er definert som en ressurs.
 
-| **Obs! **                                                                                                                                                                                                                      |
+| **Obs!**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | En arbeider kan automatisk tilordnes tidsregistreringer som er gjort på en bestemt maskin på produksjonsgulvet, hvis arbeideren velger å arbeide som assistent for maskinen når han eller hun starter produksjonsjobben. |
 
@@ -82,7 +83,7 @@ På samme måte som du tilordner en beregningsgruppe til en tidsregistreringsarb
 -   Legge til manuelle bonuser.
 -   Legge inn tilleggsinformasjon om fraværsregistreringer.
 
-| **Obs! **                                                                                                                                                                             |
+| **Obs!**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis det er beregnet overtid for bestemte ansatte, kan overtiden tilordnes bestemte jobber i løpet av dagen. Dette er relevant hvis jobbkostnadene beregnes på grunnlag av den ansattes lønn. |
 
@@ -102,7 +103,7 @@ Når registreringer er godkjent, kan de overføres til den periodiske lønnsjobb
 ## <a name="reversing-transferred-registrations"></a>Tilbakeføre overførte registreringer
 Du kan gjøre oppgaven med å tilbakeføre transaksjoner – tilbakestille dem – til lønnsperiodens lønnsoverføring kjøres. Dette betyr at lønnsdata er overført til en ekstern fil. Når de er tilbakeført, trekkes alle registreringer tilbake, og alle transaksjoner som er postert på produksjonsordrer eller prosjekter, blir motregnet og gjort nøytral.
 
-| **Obs! **                                                 |
+| **Obs!**                                                 |
 |----------------------------------------------------------|
 | Den eksterne filen kan importeres til et lønningssystem. |
 

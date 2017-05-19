@@ -3,7 +3,7 @@ title: Opprette bestillinger
 description: "Denne artikkelen beskriver prosessen og alternativene når du oppretter en bestilling manuelt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: de8fa93bfc0119d6f9433fb4215c326abdda2899
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b87e4be4541ce5a33b3f6ed0ffe3b08f6447d293
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="create-purchase-orders"></a>Opprette bestillinger
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver prosessen og alternativene når du oppretter en bestilling manuelt.
 
@@ -66,7 +70,7 @@ Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av 
 Tillegg kan legges automatisk til bestillingslinjer hvis automatiske tillegg er definert for leverandøren eller leverandørtilleggsgruppen, og for varen eller varens kostnadsgruppe. Imidlertid legges vanligvis tillegg til manuelt på ordrelinjenivå. Hvis du vil legge til et tillegg, åpner du siden **Vedlikehold tillegg** ved hjelp av handlingen **Vedlikehold tillegg** på siden **Finans** -menyen i visningen **Linjer**. Fordelen med å legge til tillegg direkte på ordrelinjenivå er at tillegget kan tildeles som en lagerkost. Hvis du vil definere tilleggskoder for kontoproduktkostnader, bruker du debetalternativet **Vare**. Disse tilleggstypene må tildeles fra bestillingshodet til linjene før ordren kan bekreftes. Du kan for eksempel tilordne tillegg basert på antallet på hver linje. Kategorien for tillegg påvirker også hvordan tillegg etterberegnes. Faste tillegg angir for eksempel et fast beløp, og prosenttillegg beregnes som en prosent av nettobeløpet for ordrelinjen. Bestillinger kan tilordnes til en last, og lasten kan inneholde et estimat over den forventede kostnaden for transportkostnadene. Du kan tildele denne utgiften fra lasten tilbake til bestillingslinjene.
 
 ## <a name="purchase-order-actions"></a>Bestillingshandlinger
-Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](/dynamics365/operations/action-search) for å finne det relevante menyelementet.  
+Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](/dynamics365/operations/get-started/action-search) for å finne det relevante menyelementet.  
 
 Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer**, som du kan åpne i handlingsruten.  
 
@@ -91,5 +95,7 @@ Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempe
 [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

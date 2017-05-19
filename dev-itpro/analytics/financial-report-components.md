@@ -1,16 +1,16 @@
 ---
 title: Komponenter for finansrapport
 description: "Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 18 - 54 - 02
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: a423dff4d8796f454c9c4db03c8ceb2b8c3d6456
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fb857a16f159d28acb129beaf51d2241391b103d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-report-components"></a>Komponenter for finansrapport
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper. 
 
@@ -106,7 +110,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som skal eksporteres, og deretter klikker du **Eksporter**.
 3.  I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
-    -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten. **Obs! ** Når du velger rapporter å eksportere, velges tilhørende rader, kolonner, trær og dimensjonssett.
+    -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten. **Obs!** Når du velger rapporter å eksportere, velges tilhørende rader, kolonner, trær og dimensjonssett.
 
 4.  Når du er ferdig med å velge elementene som skal eksporteres, velger **Eksporter**.
 5.  I dialogboksen **Lagre som** velger du plasseringen byggeblokkgruppen skal eksporteres til.
@@ -127,7 +131,7 @@ Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe, eller
 
 ### <a name="undo-a-checkout-of-a-building-block"></a> Angre en utsjekking av en byggeblokk
 
-Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til byggeblokken. Noen ganger glemmer brukere å lukke en byggeblokk eller å avslutte systemet uten å lukke byggeblokken. Derfor forblir byggeblokken utsjekket, og ingen andre brukere kan åpne den. I slike tilfeller kan en administrator for finansrapportering bruke dialogboksen **Utsjekkede elementer** for å sjekke inn byggeblokker som brukere latt være utsjekket. **Obs! ** Du må ha administratorrolle for å sjekke inn byggeblokker ved hjelp av dialogboksen **Utsjekkede elementer**.
+Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til byggeblokken. Noen ganger glemmer brukere å lukke en byggeblokk eller å avslutte systemet uten å lukke byggeblokken. Derfor forblir byggeblokken utsjekket, og ingen andre brukere kan åpne den. I slike tilfeller kan en administrator for finansrapportering bruke dialogboksen **Utsjekkede elementer** for å sjekke inn byggeblokker som brukere latt være utsjekket. **Obs!** Du må ha administratorrolle for å sjekke inn byggeblokker ved hjelp av dialogboksen **Utsjekkede elementer**.
 1.  På **Verktøy**-menyen i Rapportutforming klikker du **Utsjekkede elementer**.
 2.  I dialogboksen **Utsjekkede elementer** velger du **Vis elementer fra alle brukere**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut og hvilke brukere som har sjekket dem ut.
 3.  Velg en byggeblokk, og klikk deretter **Angre utsjekking**.
@@ -135,6 +139,8 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 
 # <a name="see-also"></a>Se også
 
-[Økonomisk rapportering for Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Finansrapportering](financial-reporting-intro.md)
+
+
 
 

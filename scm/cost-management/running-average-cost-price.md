@@ -3,7 +3,7 @@ title: "Løpende gjennomsnittlig kostpris"
 description: "Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe. Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-07 15 - 11 - 47
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,19 +18,25 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 685dfaa877699db3c36cc1ea77d956461f8e68ec
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53690038068d7a2cae43585fd2eb896d662ee3e4
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="running-average-cost-price"></a>Løpende gjennomsnittlig kostpris
 
+[!include[banner](../includes/banner.md)]
+
+
 Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe. Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres.
 
-Systemet estimerer denne løpende gjennomsnittlige kostprisen for en vare ved hjelp av følgende formel: Estimert pris = (fysisk beløp + finansielt beløp) ÷ (fysisk antall + finansielt antall)
+Systemet estimerer denne løpende gjennomsnittlige kostprisen for en vare ved å bruke følgende formel: 
+
+Estimert pris = (fysisk beløp + finansielt beløp) / (fysisk antall + finansielt antall)
 
 ## <a name="using-the-running-average-cost-price"></a>Bruke det glidende gjennomsnittet av kostprisen
 Følgende tabell viser når systemet posterer lagertransaksjoner ved bruk av løpende gjennomsnittlig kostpris, og når kostprisen som er definert i hovedposten for varen, blir brukt i stedet.
@@ -41,7 +47,9 @@ Følgende tabell viser når systemet posterer lagertransaksjoner ved bruk av lø
 | Telleren\*, nevneren\*\* eller begge deler er negative. | Ingen                                                       | Ja                                                               |
 | Nevneren\*\* er 0 (null).                        | Ingen                                                       | Ja                                                               |
 
-\* Teller = (fysisk beløp + finansielt beløp) \*\* nevner = (fysisk antall + finansielt antall) **Obs! ** Hvis **Ta med fysisk verdi** ikke er merket av for en vare, bruker systemet 0 (null) for både det fysiske beløpet og det fysiske antallet. Hvis du vil ha informasjon om dette alternativet, kan du se [Ta med fysisk verdi](include-physical-value.md).
+\* Teller = (fysisk beløp + finansielt beløp) \*\* Nevner = (fysisk antall + finansielt antall) 
+
+**Obs!** Hvis **Ta med fysisk verdi** ikke er merket av for en vare, bruker systemet 0 (null) for både det fysiske beløpet og det fysiske antallet. Hvis du vil ha informasjon om dette alternativet, kan du se [Ta med fysisk verdi](include-physical-value.md).
 
 ## <a name="avoiding-pricing-amplification"></a>Unngå prisforsterking
 I sjeldne tilfeller prissetter systemet flere avganger før det har mange nok mottak å basere prisen på. Dette scenariet kan føre til at beregninger av løpende gjennomsnittlig kostpris kan bli for høy. Du kan imidlertid utføre tiltak slik at du unngår for høy prising eller reduserer virkingen når det oppstår. **Scenario** Følgende transaksjoner skjer for en vare som du har valgt alternativet **Ta med fysisk verdi** for:
@@ -50,7 +58,11 @@ I sjeldne tilfeller prissetter systemet flere avganger før det har mange nok mo
 2.  Du utsteder et antall på 200 finansielt.
 3.  Du mottar fysisk et antall på 101 for USD 202,00.
 
-Når du undersøker den estimerte løpende gjennomsnittlige kostprisen for varen, kan du forvente en kostpris på USD 1,51. Du finner i stedet antatt glidende gjennomsnitt på USD 102,00, som er basert på følgende formel: Estimert pris = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102. Denne prissettingsforhøyelsen skjer fordi når 200 varer blir utstedt finansielt i trinn 2, må systemet prise 100 av varene før det har noen tilsvarende mottak. Dette fører til negativ beholdning. Systemet estimerer deretter en enhetspris på USD 1,00, som vi kan forvente. Når de tilsvarende 100 mottakene kommer, er de imidlertid på en enhetspris på USD 2,00 hver. **Obs!** Selv om avgangene resultater i en negativ beholdning, er beholdningen positiv når avgangsprisen beregnes. Derfor blir løpende gjennomsnittlig kostpris brukt, i stedet for prisen på hovedvaren. På dette stadiet har systemet en lagerverdimotregning på USD 100,00. Selv om motregningen ble bygd opp over 100 artikler, der det var en enhetsmotregning på USD 1,00 hver, har vi nå bare én artikkel i beholdningen. Motregningen på USD 100,00 er derfor tilordnet denne ene artikkelen. Resultatet er for høy estimert kostpris. **Obs!**Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51. Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:
+Når du undersøker den estimerte løpende gjennomsnittlige kostprisen for varen, kan du forvente en kostpris på USD 1,51. Du finner i stedet antatt glidende gjennomsnitt på USD 102,00, som er basert på følgende formel: Estimert pris = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102. Denne prissettingsforhøyelsen skjer fordi når 200 varer blir utstedt finansielt i trinn 2, må systemet prise 100 av varene før det har noen tilsvarende mottak. Dette fører til negativ beholdning. Systemet estimerer deretter en enhetspris på USD 1,00, som vi kan forvente. Når de tilsvarende 100 mottakene kommer, er de imidlertid på en enhetspris på USD 2,00 hver. 
+
+**Obs!** Selv om avgangene resultater i en negativ beholdning, er beholdningen positiv når avgangsprisen beregnes. Derfor blir løpende gjennomsnittlig kostpris brukt, i stedet for prisen på hovedvaren. På dette stadiet har systemet en lagerverdimotregning på USD 100,00. Selv om motregningen ble bygd opp over 100 artikler, der det var en enhetsmotregning på USD 1,00 hver, har vi nå bare én artikkel i beholdningen. Motregningen på USD 100,00 er derfor tilordnet denne ene artikkelen. Resultatet er for høy estimert kostpris. 
+
+**Obs!**Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51. Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:
 
 -   Du må estimere avgangspriser for beholdningsverdi og -antall.
 -   Du må justere beholdningsverdien og -antallet for avgang og mottak.
@@ -63,5 +75,7 @@ Hvis forretningsmodellen din tillater følgende fremgangsmåter, kan de imidlert
 -   Hvis du *ikke* velger **Ta med fysisk verdi** for en vare, må du fjerne merket for **Økonomisk negativt lager** på siden **Varemodellgrupper**.
 
 Tenk også på at den maksimale motregningen til den fysiske lagerverdien, er begrenset av antallet fysiske transaksjoner og forskjellen mellom fysiske og finansielle priser. Så lenge alle fysiske transaksjoner til slutt blir oppdatert finansielt, kan ikke den fysiske verdien stige til ekstreme nivåer. Legg til slutt merke til at forsterkingseffekten vil minske betraktelig når den akkumulerte motregningen blir spredd utover flere varer, i stedet for bare en.
+
+
 
 

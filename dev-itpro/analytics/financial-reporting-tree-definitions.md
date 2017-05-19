@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 288605570462c2e7659a894731c12933410d7636
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7e6a3c25dd97d242e28bff319c75a64718c39f55
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -74,9 +75,9 @@ Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
     | Seksjon                          | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
     |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Segmentering av rapporteringsdimensjon | Bruk knappene **Del segmenter** og **Kombiner segmenter** for å endre antall segmenter og lengden på segmenter. **Obs! ** Du kan bare kombinere segmenter som du har delt. Hvis du vil kombinere flere dimensjoner, kan du bruke jokertegn i dimensjonsverdiene.                                                                                                                                                                                                          |
+    | Segmentering av rapporteringsdimensjon | Bruk knappene **Del segmenter** og **Kombiner segmenter** for å endre antall segmenter og lengden på segmenter. **Obs!** Du kan bare kombinere segmenter som du har delt. Hvis du vil kombinere flere dimensjoner, kan du bruke jokertegn i dimensjonsverdiene.                                                                                                                                                                                                          |
     | Inkluder/tegnposisjon       | Dette avsnittet viser dimensjonene som er definert i de økonomiske dataene, og viser antall tegn i den lengste verdien som er definert for hver dimensjon. Merk av for en dimensjon for å inkludere denne dimensjonen i hierarkiet for rapporteringstreet.                                                                                                                                                                                           |
-    | Segmenter hierarki og områder     | Dette avsnittet viser dimensjonshierarkiet. Du kan flytte dimensjonene i listen for å endre rapporteringsrekkefølgen. Du kan angi en rekke verdier i hver dimensjon i feltene **Fra dimensjon** og **Til dimensjon**. Hvis du ikke angir et område, settes alle dimensjonsverdier inn i rapporteringstreet. **Obs! ** Hvis du bruker mer enn én dimensjon, blir bare dimensjonskombinasjoner som er postert returnert i resultatene. |
+    | Segmenter hierarki og områder     | Dette avsnittet viser dimensjonshierarkiet. Du kan flytte dimensjonene i listen for å endre rapporteringsrekkefølgen. Du kan angi en rekke verdier i hver dimensjon i feltene **Fra dimensjon** og **Til dimensjon**. Hvis du ikke angir et område, settes alle dimensjonsverdier inn i rapporteringstreet. **Obs!** Hvis du bruker mer enn én dimensjon, blir bare dimensjonskombinasjoner som er postert returnert i resultatene. |
 
     Hvis du vil vise et skjermbilde som viser et eksempel på dialogboksen **Sette inn rapporteringsenheter fra dimensjoner**, kan du se avsnittet "Eksempel på Sett inn rapporteringsenheter fra dialogboksen Dimensjoner" senere i denne artikkelen.
 5.  Hvis du vil opprette flere segmenter (for eksempel ved å dele opp ett segment i to kortere segmenter), klikker du den aktuelle posisjonen i feltet **Tegnposisjon**, og deretter klikker du **Del segmenter**.
@@ -100,7 +101,7 @@ Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
 Når du bruker et rapporteringstre, kan du samle beløp fra underordnede rapporteringsenheter på det nivået for den overordnede rapporteringsenheten. Dette aggregeringen kalles å rulle opp dataene. Følgende regler brukes til å rulle opp beløp til overordnede enheter i et rapporteringstre:
 
--   I et rapporterings må underordnede enheter inneholde dimensjoner, med mindre det er et rapporteringstre med ett nivå. Overordnede enheter inneholder vanligvis ikke dimensjoner i et rapporteringstre. **Obs! ** Hvis du angir dimensjoner for både underordnede enheter og overordnede enheter, kan det føre til duplisering av data i rapporten.
+-   I et rapporterings må underordnede enheter inneholde dimensjoner, med mindre det er et rapporteringstre med ett nivå. Overordnede enheter inneholder vanligvis ikke dimensjoner i et rapporteringstre. **Obs!** Hvis du angir dimensjoner for både underordnede enheter og overordnede enheter, kan det føre til duplisering av data i rapporten.
 -   Rapportenheter som inneholder dimensjoner i rapporteringstreet tilsvarer dimensjonene som brukes i rad- og kolonnedefinisjonene. Kombinasjonen av dimensjonene bestemmer beløpene som returneres for denne enheten. I eksempel 2 senere i denne artikkelen, returnerer linje 6 og 7 verdier bare for henholdsvis avdeling 00 og 01.
 -   Beløpene for overordnede rapporteringsenheter som ikke inneholder dimensjoner i rapporteringstreet, bestemmes fra rapporten for den underordnede enheten, og beløpet rulles opp til den angitte overordnede enheten. Hvis den overordnede enheten (se Contoso USA i eksempel 2 for eksempler på opprulling) for eksempel har to underordnede enheter (022 og 023) og ikke inneholder dimensjoner, genereres en rapport for hver underordnet og overordnet enhet. Den overordnede totalen er summen av de to underordnede beløpene.
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9db73514d71239d75dc63fcf6e9f45923b1272f4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c65f7e44459478cac7663575abe588ad057f18e0
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ Dataene som du bruker når du beregner satser i Microsoft Dynamics 365 for Opera
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Krever alle motorkonfigurasjoner metadata?
 Nei, transportbehandlingsmotorer som brukes til å hente dataene som kreves for satsberegning fra eksterne systemer, trenger ikke metadata. Satsdataene for disse motorene kan hentes fra eksterne transportsystemer, vanligvis via en webtjeneste. Du kan for eksempel bruke en kjørelengdemotor som henter data direkte fra Bing-kart, slik at du ikke trenger et metadata for denne motoren.
-| **Obs! **                                                                                                                                                                                                                                                                                                                                                                     |
+| **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transportbehandlingsmotorer som leveres med Microsoft Dynamics 365 for Operations, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio-verktøy for Microsoft Dynamics 365 for Operations. |
 

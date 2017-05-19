@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 33851ff7c9ee2c50544589ade0191798a13706e7
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c7ab943d368c82e7d6c586ec5105210a928e2d31
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -68,7 +69,7 @@ April posterer deretter betalingen. Fakturaen har nå en saldo på 700,00. April
 | RAB-10020 | Kontantrabatt    | 1/7/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>Gjenstående betaling 15. juli, Bruk kontantrabatt = Normal
-April betaler resten av fakturaen 15. juli, som er etter rabattperioden. På siden **Utlign åpne transaksjoner** vises ingen rabattbeløpet i feltet **Beregnet kontantrabatt **, og verdien i feltet **Kontantrabattbeløp** er **0,00**. Når April betaler de gjenværende 700,00, hentes ingen ekstra rabatt.
+April betaler resten av fakturaen 15. juli, som er etter rabattperioden. På siden **Utlign åpne transaksjoner** vises ingen rabattbeløpet i feltet **Beregnet kontantrabatt**, og verdien i feltet **Kontantrabattbeløp** er **0,00**. Når April betaler de gjenværende 700,00, hentes ingen ekstra rabatt.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

@@ -3,7 +3,7 @@ title: Konfigurere en parallell aktivitet i en arbeidsflyt
 description: "Hvis du vil konfigurere en parallell aktivitet, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 818fb054742b935d002a7341e54a37eca0bb4761
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce3fca9d2dbca046232365b1375bfd920d5b10fd
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurere en parallell aktivitet i en arbeidsflyt
+
+[!include[banner](../includes/banner.md)]
+
 
 Hvis du vil konfigurere en parallell aktivitet, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt.
 
@@ -41,11 +45,13 @@ Følg denne fremgangsmåten for å angi et navn for en parallell aktivitet.
 Følg denne fremgangsmåten for å legge til og konfigurere grenene til denne parallelle aktiviteten.
 1.  Dobbeltklikk den parallelle aktiviteten for å vise grenene til den parallelle aktiviteten.
 2.  Hvis du vil legge til en gren, kan du dra **Gren**-elementet fra **Arbeidsflytelementer**-området til et innsettingspunkt på lerretet. Den følgende illustrasjonen viser et innsettingspunkt. ![Innsettingspunkt](./media/workflow_insertionpoint.gif)
-    | **Obs! **                                                                                                         |
+    | **Obs!**                                                                                                         |
     |------------------------------------------------------------------------------------------------------------------|
     | Rekkefølgen på grenene er ikke viktig fordi alle grenene til en parallell aktivitet kjøres samtidig. |
 
-3.  Hvis du vil konfigurere hver gren, kan du se [Konfigurere en parallell gren](http://axhelp.dynamics.com/en/wiki/configure-a-parallel-branch/).
+3.  Hvis du vil konfigurere hver gren, kan du se [Konfigurere en parallell gren](configure-parallel-branch-workflow.md).
+
+
 
 
 

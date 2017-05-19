@@ -1,16 +1,16 @@
 ---
 title: Grensesnitt for Rapportutforming
 description: Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 18 - 50 - 10
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 58c56aca6f339a5ec13703605334dd45b208ab2c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3a82d877b2fb87eef6f2b16d528ed42debbb2874
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="report-designer-interface"></a>Grensesnitt for Rapportutforming
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov. 
 
@@ -159,7 +163,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 
 | Kommando | beskrivelse                                                  |
 |---------|--------------------------------------------------------------|
-| Hjelp    | Åpne wiki-siden for hjelp for Dynamics 365 for Operations for finansrapportering. |
+| Hjelp    | Åpne emnesiden for hjelp for Dynamics 365 for Operations for finansrapportering. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Verktøylinjeknapper for Rapportutforming
@@ -225,8 +229,10 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 <a name="see-also"></a>Se også
 --------
 
-[Økonomisk rapportering for Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Finansrapportering](financial-reporting-intro.md)
 
-[Generer en finansrapport](\financials\general-ledger\generate-financial-report.md)
+[Generere en finansrapport](generate-financial-report.md)
+
+
 
 

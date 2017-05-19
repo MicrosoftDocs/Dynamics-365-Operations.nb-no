@@ -3,7 +3,7 @@ title: "Kostnadsoppføringer"
 description: "Denne artikkelen inneholder informasjon om kostnadsoppføringer og når de opprettes. En kostnadsoppføring er en oppføring som registrerer antall og kostnad for en bestemt hendelse."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Kostnadsoppføringer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder informasjon om kostnadsoppføringer og når de opprettes. En kostnadsoppføring er en oppføring som registrerer antall og kostnad for en bestemt hendelse.
 
@@ -53,17 +57,22 @@ Den nye **Kostnadsoppføringer**-siden lar deg vise og styre registrering av ant
 -   Noen dager etter at fakturahendelsen er registrert, øker kostnadene til NOK 110,00. Derfor er totalbeløpet NOK 11 000. Det opprettes et andre bilag for å gjøre rede for differansen på NOK 1 000.
 -   Noen dager senere registreres et tilleggsgebyr på NOK 150,00 på bestillingen for å dekke transportkostnadene.
 
-| Bilag | Dato       | Referanse      | Nummer | Parti-ID  | Referanseparti | Returparti-ID | Antall | Beløp  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01.01.2015 | Bestilling | 100001 | 0000101 |               |               | 1 00,00   | 1000,00 |
-| 00002   | 20.01.2015 | Bestilling | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31.01.2015 | Justering     | 100001 | 0000101 |               |               |          | 15,00   |
+| Bilag | Dato       | Referanse      | Tall | Parti-ID  | Antall | Beløp  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01.01.2015 | Bestilling | 100001 | 0000101 | 1 00,00   | 1000,00 |
+| 00002   | 20.01.2015 | Bestilling | 100001 | 0000101 |          | 100,00  |
+| 00003   | 31.01.2015 | Justering     | 100001 | 0000101 |          | 15,00   |
 
-**Kostnadsoppføringer**-siden aktiverer filtrering etter dokument-ID og dokumentdato. **Obs! ** Kostnadsoppføringer er bare tilgjengelige for [kostnadsobjekter](cost-object.md) eller frigitte produkter.
+**Kostnadsoppføringer**-siden aktiverer filtrering etter dokument-ID og dokumentdato. 
+
+> [!NOTE]
+> Kostnadsoppføringer er bare tilgjengelige for [kostnadsobjekter](cost-object.md) eller frigitte produkter.
 
 <a name="see-also"></a>Se også
 --------
 
 [Kostnadsobjekter](cost-object.md)
+
+
 
 

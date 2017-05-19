@@ -3,7 +3,7 @@ title: Lagerkonfigurasjon
 description: Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Lagerkonfigurasjon
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 
-**Merk:** Denne artikkelen gjelder funksjoner i modulen ** Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
+**Merk:** Denne artikkelen gjelder funksjoner i modulen **Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageroppsett
 Lagerstyringssystemet i Microsoft Dynamics 365 for Operations gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
@@ -66,7 +70,7 @@ For å oppnå optimale utgående prosesser, bør du vurdere om du vil bruke fast
 
 ### <a name="location-setup-wizard"></a>Veiviser for lokasjonsoppsett
 
-Du kan bruke **Veiviser for lokasjonsoppsett** for å raskt lage lokasjonene i et lager. Som en del av denne prosessen kan du enkelt beholde formatet til lokasjonsnavnene.
+Du kan bruke veiviseren for **lokasjonsoppsett** for å raskt lage lokasjonene i et lager. Som en del av denne prosessen kan du enkelt beholde formatet til lokasjonsnavnene.
 
 ## <a name="warehouse-processes"></a>Lagerprosesser
 Som en del av konfigurasjonen av lageret er det viktig at du aktiverer lagerprosesser i henhold til bedriftens behov. De viktigste komponentene du må konfigurere, er bølgemaler, arbeidsmaler, arbeidsutvalg og lokasjonsdirektiver.
@@ -75,7 +79,12 @@ Som en del av konfigurasjonen av lageret er det viktig at du aktiverer lagerpros
 
 Bølgemaler bidrar til å aktivere den utgående "Frigi til lager"-prosessen. Så snart ordrelinjer frigis (enten direkte fra kildedokumenter, via prosesser for satsvise jobber eller via belastninger som allerede er opprettet), brukes funksjonen for bølgemal. 
 
-Du kan opprette tre typer bølgemaler: **Forsendelse**, **Produksjonsordre** og **Kanban**. Parametere brukes til å definere hvor langt systemet automatisk skal gå i utgående arbeidsbehandling. En bølgemal velges basert på bølgemalrekkefølgen og -kriteriene som er angitt i malen. Hvis en mal vises øverst i rekkefølgen, kontrolleres først vilkårene i denne malen. Hvis vilkårene kan oppfylles, behandles bølgemalen. Hvis ikke kontrolleres kriteriene i neste mal og så videre. Det er derfor lurt å plassere malen som har de mest spesifikke kriteriene, øverst på listen for bølgemalensekvens slik at den blir behandlet først. Du vil for eksempel behandle alt arbeid for en bestemt transportør i dag og midlertidig utsette behandlingen av arbeidet for andre transportører. I så fall skal bølgemalen som velger arbeid for transportøren, vises høyere i sekvensen enn andre maler. Hvis ikke kan det hende at arbeidet for andre transportører behandles før arbeidet for denne leverandøren er fullført. 
+Du kan opprette tre typer bølgemaler: 
+-   **Forsendelse**
+-   **Produksjonsordre**
+-   **Kanban** 
+
+Parametere brukes til å definere hvor langt systemet automatisk skal gå i utgående arbeidsbehandling. En bølgemal velges basert på bølgemalrekkefølgen og -kriteriene som er angitt i malen. Hvis en mal vises øverst i rekkefølgen, kontrolleres først vilkårene i denne malen. Hvis vilkårene kan oppfylles, behandles bølgemalen. Hvis ikke kontrolleres kriteriene i neste mal og så videre. Det er derfor lurt å plassere malen som har de mest spesifikke kriteriene, øverst på listen for bølgemalensekvens slik at den blir behandlet først. Du vil for eksempel behandle alt arbeid for en bestemt transportør i dag og midlertidig utsette behandlingen av arbeidet for andre transportører. I så fall skal bølgemalen som velger arbeid for transportøren, vises høyere i sekvensen enn andre maler. Hvis ikke kan det hende at arbeidet for andre transportører behandles før arbeidet for denne leverandøren er fullført. 
 
 Du må angi metodene for bølgeprosess i hver bølgemal. Metodene som er tilgjengelige, varierer avhengig av bølgemaltypen.
 
@@ -107,6 +116,8 @@ Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knytt
 <a name="see-also"></a>Se også
 --------
 
-[Konfigurere lokasjoner i et WMS-aktivert lager (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurere lokasjoner i et WMS-aktivert lager (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

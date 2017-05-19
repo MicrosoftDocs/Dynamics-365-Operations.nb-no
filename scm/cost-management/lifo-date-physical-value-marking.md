@@ -3,7 +3,7 @@ title: LIFO-dato med fysisk verdi og merking
 description: "Sist inn, først ut etter dato (LIFO-dato) er en lagermodell basert på LIFO-prinsippet. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. Med LIFO-datoen, hvis det ikke er et mottak før avgangen, utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-23 23 - 07 - 14
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,19 +18,27 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 7a2430de79cd56441c8101336992d4a10889a126
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 08b1e3947064fdd7d4c30f7c718bedc692521887
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 
+[!include[banner](../includes/banner.md)]
+
+
 Sist inn, først ut etter dato (LIFO-dato) er en lagermodell basert på LIFO-prinsippet. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. Med LIFO-datoen, hvis det ikke er et mottak før avgangen, utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak. 
 
-Hvis det ikke er et mottak før avgangen når du bruker LIFO-datolagermodellen (Sist inn, først ut etter dato), utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak. Når du bruker LIFO-dato, trenger du ikke å bruke LIFO-datoregelen. Når du bruker dato for avveid gjennomsnitt, kan du i stedet merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. En periodisk lagerlukking anbefales når du bruker LIFO-datolagermodellen. Eksemplene nedenfor viser effekten når LIFO-dato brukes med tre forskjellige konfigurasjoner:
+Hvis det ikke er et mottak før avgangen når du bruker LIFO-datolagermodellen (Sist inn, først ut etter dato), utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak. Når du bruker LIFO-dato, trenger du ikke å bruke LIFO-datoregelen. Når du bruker dato for avveid gjennomsnitt, kan du i stedet merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. 
+
+En periodisk lagerlukking anbefales når du bruker LIFO-datolagermodellen. 
+
+Eksemplene nedenfor viser effekten når LIFO-dato brukes med tre forskjellige konfigurasjoner:
 
 -   LIFO-dato når alternativet **Ta med fysisk verdi** ikke brukes
 -   LIFO-dato når alternativet **Ta med fysisk verdi** brukes
@@ -50,7 +58,11 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   5b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   6. Lagerlukking utføres. I samsvar med LIFO-datometoden blir den sist økonomisk oppdaterte avgangen utlignet mot den sist økonomisk oppdaterte tilgangen etter dato. Avgangstransaksjonen justeres med USD 5,00. Disse transaksjonene utlignes mot hverandre.
 
-Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithoutincludephysicalvalue.gif) **Nøkkel til diagram**
+Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. 
+
+Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithoutincludephysicalvalue.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -64,7 +76,11 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO-dato når alternativet Ta med fysisk verdi brukes
-Du kan merke av i boksen **Ta med fysisk verdi** for en vare på **Varemodellgrupper**-siden. I dette tilfellet bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for boksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-datolagermodellen bare utligne transaksjoner som er økonomisk oppdatert. I dette eksemplet er det merket av for Ta med fysisk verdi for varemodellgruppen. Illustrasjonen nedenfor viser disse transaksjonene:
+Du kan merke av i boksen **Ta med fysisk verdi** for en vare på **Varemodellgrupper**-siden. I dette tilfellet bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for boksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-datolagermodellen bare utligne transaksjoner som er økonomisk oppdatert. 
+
+I dette eksemplet er det merket av for Ta med fysisk verdi for varemodellgruppen. 
+
+Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kost USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kost USD 10,00 per stykk.
@@ -77,7 +93,11 @@ Du kan merke av i boksen **Ta med fysisk verdi** for en vare på **Varemodellgru
 -   5b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   6. Lagerlukking utføres. I samsvar med LIFO-datometoden blir den sist oppdaterte avgangen justert eller utlignet mot den sist oppdaterte tilgangen etter dato. Disse transaksjonene blir ikke utlignet av hverandre, fordi den økonomiske mottakstransaksjonen justeres mot en fysisk oppdateringstransaksjon. I stedet vil bare en justering med USD 6,67 gjøres i avgangstransaksjonen.
 
-Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 20,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithincludephysicalvalue.gif) **Nøkkel til diagram**
+Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 20,00. 
+
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithincludephysicalvalue.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -91,7 +111,21 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-date-with-marking"></a>LIFO-dato med merking
-Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. La oss si at kundeserviceavdelingen godtar en hasteordre fra en viktig kunde. Fordi dette er en hasteordre, blir du nødt til å betale en høyere pris for denne varen for å imøtekomme kundens forespørsel. Du må kontrollere at denne lagerkostnaden gjenspeiles i bidraget, eller kostnader for solgte varer (Vareforbruk), for denne salgsordrefakturaen. Når bestillingen posteres, skjer tilgangen til lager med en kost på USD 120,00. Hvis dette salgsordredokumentet merkes mot bestillingen før følgeseddelen eller fakturaen posteres, vil solgte varers kost (Vareforbruk) være USD 120,00, ikke det gjeldende glidende gjennomsnittet av varens kost. Hvis bestillingens følgeseddel eller faktura posteres før merkingen skjer, vil solgte varers kost posteres med det glidende gjennomsnittet av kostprisen. Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. En mottakstransaksjon er for eksempel merket for en avgangstransaksjon. I dette tilfellet ignoreres vurderingsmetoden som er definert i varens varemodellgruppe, og systemet utligner disse transaksjonene mot hverandre. Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. Du kan også merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. Illustrasjonen nedenfor viser disse transaksjonene:
+Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. 
+
+La oss si at kundeserviceavdelingen godtar en hasteordre fra en viktig kunde. Fordi dette er en hasteordre, blir du nødt til å betale en høyere pris for denne varen for å imøtekomme kundens forespørsel. Du må kontrollere at denne lagerkostnaden gjenspeiles i bidraget, eller kostnader for solgte varer (Vareforbruk), for denne salgsordrefakturaen. 
+
+Når bestillingen posteres, skjer tilgangen til lager med en kost på USD 120,00. Hvis dette salgsordredokumentet merkes mot bestillingen før følgeseddelen eller fakturaen posteres, vil solgte varers kost (Vareforbruk) være USD 120,00, ikke det gjeldende glidende gjennomsnittet av varens kost. Hvis bestillingens følgeseddel eller faktura posteres før merkingen skjer, vil solgte varers kost posteres med det glidende gjennomsnittet av kostprisen. 
+
+Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. 
+
+En mottakstransaksjon er for eksempel merket for en avgangstransaksjon. I dette tilfellet ignoreres vurderingsmetoden som er definert i varens varemodellgruppe, og systemet utligner disse transaksjonene mot hverandre. 
+
+Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. 
+
+Du kan også merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. 
+
+Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kost USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kost USD 10,00 per stykk.
@@ -105,7 +139,11 @@ Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til 
 -   6a. Fysisk lageravgang av et antall på 1 til kostpris USD 21,25 per stykk.
 -   7. Lagerlukking utføres. Fordi den økonomisk oppdaterte FIFO-transaksjonen er merket mot en eksisterende tilgang, utlignes disse transaksjonene mot hverandre, og det gjøres ingen justering.
 
-Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking](./media/lifodatewithmarking.gif) **Nøkkel til diagrammet**
+Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. 
+
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking](./media/lifodatewithmarking.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -117,6 +155,8 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
+
+
 
 
 

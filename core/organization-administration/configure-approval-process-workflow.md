@@ -3,7 +3,7 @@ title: Konfigurere en godkjenningsprosess i en arbeidsflyt
 description: "Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkjenningsprosess i en arbeidsflyt
+
+[!include[banner](../includes/banner.md)]
+
 
 Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
 
@@ -132,7 +136,7 @@ Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er persone
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
 Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.
-| **Obs! **                                                                                                                                                |
+| **Obs!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Alternativene du velger her, overstyrer alternativene du valgte i områdene **Tildeling** og **Eskalering** i hvert godkjenningstrinn. |
 
@@ -155,13 +159,15 @@ Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en ha
 4.  Merk av for **Be om endring** hvis du brukeren kan be om endringer av dokumentet.
 5.  Merk av for **Representant** hvis brukeren kan tilordne dokumentet til en annen bruker for godkjenning.
 
-**Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal ** er utgått.
+**Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal** er utgått.
 
 ## <a name="configure-the-approval-steps"></a> Konfigurere godkjenningstrinnene
 En godkjenningsprosess består av godkjenningstrinn. Fullfør fremgangsmåten nedenfor for å legge til trinn i godkjenningsprosessen og konfigurere trinnene.
 1.  Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt. Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.
 2.  Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.
-3.  Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere et godkjenningstrinn](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere et godkjenningstrinn](configure-approval-step-workflow.md).
+
+
 
 
 

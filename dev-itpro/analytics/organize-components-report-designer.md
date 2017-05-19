@@ -1,16 +1,16 @@
 ---
 title: Organisere rapportkomponenter i rapportutforming
 description: "Når du har utformet byggeblokker og genererte rapporter, er det nyttig å organisere disse objektene slik at de blir enklere for brukerne å finne. Denne artikkelen beskriver hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 19 - 06 - 25
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -18,22 +18,26 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: c8efd57805cd89eb8cdfabe81a60704bb4390194
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ca6d02d41be67447719819e27fbcf3f615eced63
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i rapportutforming
 
+[!include[banner](../includes/banner.md)]
+
+
 Når du har utformet byggeblokker og genererte rapporter, er det nyttig å organisere disse objektene slik at de blir enklere for brukerne å finne. Denne artikkelen beskriver hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming.
 
 Du kan gi nytt navn til mapper, rapporter, byggeblokker og andre objekter i rapportutforming, for å bidra til å organisere filene dine. Avhengig av hvilken type objekt du gir nytt navn, må du kanskje oppdatere tilknytninger til dette objektet.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
-I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. **Obs! ** Når du gir nytt navn til en byggeblokk, må du oppdatere alle rapporteringsdefinisjoner som bruker byggeblokken. Hvis ikke, kan ikke en ny rapport genereres.
+I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. **Obs!** Når du gir nytt navn til en byggeblokk, må du oppdatere alle rapporteringsdefinisjoner som bruker byggeblokken. Hvis ikke, kan ikke en ny rapport genereres.
 
 ### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
 
@@ -62,7 +66,7 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 3.  I kategorien **Rapportgruppe** gjør du de ønskede endringene.
 4.  På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen. Du kan også klikke **Lagre**-knappen ![Lagre](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Lagre") på verktøylinjen.
 
-**Obs! ** Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
+**Obs!** Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapport for en rapportgruppe
 
@@ -154,6 +158,8 @@ Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</t
 <a name="see-also"></a>Se også
 --------
 
-[Finansrapportering for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Finansrapportering](financial-reporting-intro.md)
+
+
 
 

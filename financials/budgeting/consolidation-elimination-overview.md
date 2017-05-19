@@ -3,7 +3,7 @@ title: Konsoliderings- og elimineringsoversikt
 description: "Denne artikkelen inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål."
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 3868605826e3c6f0714736ffa8630d1569e17d6f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7ea83b349e5c4ab187cc06cf4df38ac15ea02a7d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="consolidation-and-elimination-overview"></a>Konsoliderings- og elimineringsoversikt
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål.
 
@@ -86,5 +90,7 @@ Alternativet **Finansrapportering** er løsningen. Organisasjonshierarkier som h
 Du kan konsolidere dataene ved å bruke alternativet **Eksport av firmasaldoer** til å eksportere fra én forekomst og deretter bruke alternativet **Konsolider med import** på den andre forekomsten.
 
 
-Hvis du vil ha mer informasjon, se [Revaluering av valuta i et konsolideringsfirma](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Hvis du vil ha mer informasjon, se [Revaluering av valuta i et konsolideringsfirma](..\general-ledger\currency-revaluation-consolidation-company.md).
+
+
 

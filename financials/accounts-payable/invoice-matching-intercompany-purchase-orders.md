@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 45d0b24ed0a79176803a6efefc216f7e30fec86c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0b1570d31ffd55f913e4b5e7fc3bf21630ddabd6
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -65,7 +66,7 @@ I dette eksemplet brukes følgende tilleggoppsett for leverandørfakturakontroll
 Du følger eksempelvis disse trinnene.
 1.  Opprett salgsordren SO999 for kunde 4020 i Fabrikam Innkjøp. Ordren inneholder ett linjeelement: 100 batterier (vare B-R14) til en enhetspris på 1,00 per stykk. Den konserninterne bestillingen ICPO333 opprettes automatisk i Fabrikam Innkjøp for leverandør 3024, og salgsordren ICSO999 opprettes automatisk i Fabrikam Salg.
 2.  Utfør en fakturaoppdatering for ICSO999 i Fabrikam Salg. Posteringen er ikke vellykket, fordi varen ikke finnes på lager og er ennå ikke mottatt. Derfor kan ikke den finansielle informasjonen oppdateres.
-3.  Registrer at varene er mottatt, og posterer en følgeseddel for ICS0999 i Fabrikam Salg. En produktkvittering for ICPO333 posteres automatisk i Fabrikam Innkjøp. Det mottatte antallet av vare B-R14 i Fabrikam Innkjøp endres til 100.
+3.  Registrer at varene er mottatt, og posterer en følgeseddel for ICSO999 i Fabrikam Salg. En produktkvittering for ICPO333 posteres automatisk i Fabrikam Innkjøp. Det mottatte antallet av vare B-R14 i Fabrikam Innkjøp endres til 100.
 4.  Utfør en fakturaoppdatering for ICSO999 i Fabrikam Salg. Posteringen er vellykket i begge de juridiske enhetene. Det innkjøpte antallet av vare B-R14 i Fabrikam Innkjøp endres til 100. 
 
 

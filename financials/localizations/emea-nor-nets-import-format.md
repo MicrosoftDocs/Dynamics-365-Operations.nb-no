@@ -17,10 +17,11 @@ ms.search.region: Norway
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: bec019d218d80ba059d5a1c232072f46b1ae3ee2
-ms.openlocfilehash: 4b3d7802d63b36deb996e7cff79252255b20da02
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 46b289218ce0b3f6ca1e04d80131ce521d7cf589
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---

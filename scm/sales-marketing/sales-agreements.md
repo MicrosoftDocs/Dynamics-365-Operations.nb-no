@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 4dd1eae27ae33837fbab16f764083168578d0a29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69535f07cadda4f17bb5d846132ffe614495553e
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,20 +40,20 @@ Gyldighetsperioden for en salgsavtale er definert av feltene **Gyldig fra** og *
 
 Du kan opprette en salgsordre direkte fra en salgsavtale ved hjelp av **Frigivelsesordre**-handlingen. Du kan også velge en gyldig salgsavtale når du tar i mot ordrer (se "Bruke salgsavtaler i ordreprosessen" i denne artikkelen).  
 
-**Obs! ** I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
+**Obs!** I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en salgsavtale uttrykker en forpliktelse til å selge noe. Det er vanligvis to kategorier av forpliktelse:
 
--   **Verdiforpliktelse **– kunden godtar å kjøpe produkter for et bestemt beløp.
--   **Antallsforpliktelse **– kunden godtar å kjøpe et bestemt antall produkter.
+-   **Verdiforpliktelse**– kunden godtar å kjøpe produkter for et bestemt beløp.
+-   **Antallsforpliktelse**– kunden godtar å kjøpe et bestemt antall produkter.
 
 En kontrakt kan dessuten forplikte kunden til å kjøpe et bestemt produkt eller produkter i en produktkategori. Ved å kombinere disse to faktorene (verdi kontra antall, og bestemte produkter kontra produktkategorier) får vi fire typer forpliktelse:
 
 -   **Produktantallsforpliktelse** – kunden godtar å kjøpe et bestemt antall produkter. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og av antallet og enheten som ble avtalt. **Beløp**-feltet er ikke tilgjengelig.
--   **Produktverdiforpliktelse **– kunden godtar å kjøpe bestemte produkter for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og beløpet som ble avtalt. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
--   **Verdiforpliktelse for produktkategori ** – kunden godtar å kjøpe produkter for en bestemt salgskategori for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av en kategori i hierarkiet av salgskategorier og et beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
--   **Verdiforpliktelse ** – kunden godtar å kjøpe hvilke som helst produkter i alle innkjøpskategorier for et bestemt beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
+-   **Produktverdiforpliktelse**– kunden godtar å kjøpe bestemte produkter for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og beløpet som ble avtalt. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
+-   **Verdiforpliktelse for produktkategori** – kunden godtar å kjøpe produkter for en bestemt salgskategori for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av en kategori i hierarkiet av salgskategorier og et beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
+-   **Verdiforpliktelse** – kunden godtar å kjøpe hvilke som helst produkter i alle innkjøpskategorier for et bestemt beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
 
 Linjer i den samme salgsavtalen kan ha ulike typer forpliktelser.
 
@@ -103,9 +104,9 @@ Hvis du har opprettet (frigitt) en salgsordre mot en salgsavtale, kan noen felt 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare som er bestilt fra en salgsavtale
 Når en kunde returnerer et produkt som er bestilt gjennom en salgsavtale, kan Microsoft Dynamics 365 for Operations finne og automatisk oppdatere den aktuelle salgsavtaleforpliktelsen for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
 
-Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling**-kontrollen på ** Returordre**-siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling**.  
+Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling**-kontrollen på **Returordre**-siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling**.  
 
-**Obs! ** En returordre kan bare kobles til én salgsavtale. Hvis en kunde returnerer flere produkter som ble bestilt gjennom flere salgsavtaler, må du opprette en ny returordre for hvert produkt og opprette en kobling til den tilhørende salgsavtalen.
+**Obs!** En returordre kan bare kobles til én salgsavtale. Hvis en kunde returnerer flere produkter som ble bestilt gjennom flere salgsavtaler, må du opprette en ny returordre for hvert produkt og opprette en kobling til den tilhørende salgsavtalen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk søk etter salgsavtaler
 I noen tilfeller der salgsordrer opprettes indirekte, for eksempel når du oppretter en kreditnota eller konserninterne salgsordrer, kan du kontrollere om Microsoft Dynamics 365 for Operations søker automatisk etter gjeldende salgsavtaler.

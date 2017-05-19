@@ -3,7 +3,7 @@ title: FIFO med fysisk verdi og merking
 description: "FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først. Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk verdi og merking
+
+[!include[banner](../includes/banner.md)]
+
 
 FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først. Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen. 
 
@@ -50,7 +54,9 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med FIFO-metoden blir den først økonomisk oppdaterte avgangen utlignet mot den først økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD -10,00.
 
-Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner. Illustrasjonene nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![FIFO uten Ta med fysisk verdi](./media/fifowithoutincludephysicalvalue.gif) **Nøkkel til diagrammet**
+Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner. Illustrasjonene nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![FIFO uten ta med fysisk verdi](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -78,7 +84,9 @@ Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på
 -   6a. Fysisk lageravgang av et antall på 1 til kostpris USD 21,25 per stykk.
 -   7. Lagerlukking utføres. I samsvar med FIFO-metoden blir den første økonomiske avgangstransaksjonen justert eller utlignet mot den først oppdaterte tilgangen, enten økonomisk eller fysisk.
 
-Transaksjon 5b utlignes mot 1b. Det vi være en justering på negative USD 11,25 for denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. ![FIFO med Ta med fysisk verdi](./media/fifowithincludephysicalvalue.gif) **Nøkkel til diagrammet**
+Transaksjon 5b utlignes mot 1b. Det vi være en justering på negative USD 11,25 for denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. ![FIFO med ta med fysisk verdi](./media/fifowithincludephysicalvalue.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -106,7 +114,9 @@ Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til 
 -   6a. Fysisk lageravgang av et antall på 1 til kostpris USD 21,25 per stykk.
 -   7. Lagerlukking utføres. Siden den økonomisk oppdaterte FIFO-transaksjonen er merket mot en eksisterende tilgang, utlignes disse transaksjonene mot hverandre, og det gjøres ingen justering.
 
-Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningen FIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. ![FIFO med merking](./media/fifowithmarking.gif) **Nøkkel til diagrammet**
+Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningen FIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. ![FIFO med merking](./media/fifowithmarking.gif) 
+
+**Nøkkel til diagrammet**
 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
@@ -118,6 +128,8 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
+
+
 
 
 

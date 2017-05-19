@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>Masseansettelsesprosjekter
+
+[!include[banner](includes/banner.md)]
+
 
 Med masseansettelsesprosjekter kan personalespesialister å opprette flere stillinger og effektivt ansette arbeidere i disse stillingene.
 
@@ -46,7 +50,7 @@ På siden **Masseansettelsesprosjekter** velger du "Sommerjobber"-prosjektet og 
 
 Når du har valgt studenter som du vil ansette i praktikantstillingene, angir du hver students informasjon i **Stillingsdetaljer** for stillingen som du ansetter dem i. Når du har angitt alle detaljene, velger du stillingen på Masseansettelsesprosjekter-siden, og klikk deretter **Ansett**. En stillingspost opprettes for hver stilling, og en arbeiderpost opprettes og tilordnes til riktig stilling for hver person du ansetter.
 
-## <a name="masshire-project-statuses"></a>Statuser for masseansettelsesprosjekter
+## <a name="mass-hire-project-statuses"></a>Statuser for masseansettelsesprosjekt
 Et masseansettelsesprosjekt kan ha følgende statuser.
 -   Opprettet
 -   Åpen
@@ -92,6 +96,8 @@ På siden **Masseansettelsesprosjekt** klikker du **Åpne prosjekt** eller **Luk
 </table>
 
  
+
+
 
 
 

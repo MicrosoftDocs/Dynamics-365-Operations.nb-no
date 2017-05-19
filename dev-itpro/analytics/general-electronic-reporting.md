@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ ER-motoren har følgende funksjoner:
 ## <a name="concepts"></a>Begreper
 ### <a name="components"></a>Komponenter
 
-ER støtter de to komponenttypene **Datamodell** og **Format **.
+ER støtter de to komponenttypene **Datamodell** og **Format**.
 
 #### <a name="data-model-components"></a>Datamodellkomponenter
 
@@ -112,7 +113,7 @@ Tilgang til ER-formatkomponenter avhenger av innstillingen for ISO-kode for land
 
 #### <a name="configuration"></a>Konfigurasjon
 
-En ER-konfigurasjon er wrapper for en bestemt ER-komponent: **Datamodell** eller **Format**. En konfigurasjon kan inneholde forskjellige versjoner av en bestemt ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **UTKAST**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i Dynamics 365 for Operations. Hver modellkonfigurasjon inneholder en **Datamodell**-komponent. En ny formatkonfigurasjon kan komme fra (utledes) en bestemt datamodellkonfigurasjon. Formatkonfigurasjonen som opprettes, presenteres i konfigurasjonstreet som en underordnet av den opprinnelige datamodellkonfigurasjonen. Formatkonfigurasjonen som opprettes, inneholder en **Format **-komponent. **Datamodell**-komponenten for den opprinnelige modellkonfigurasjonen settes automatisk inn i **Format**-komponenten for den underordnede formatkonfigurasjonen som standard datakilde. En ER-konfigurasjon er delt for Dynamics 365 for Operations-firmaer.
+En ER-konfigurasjon er wrapper for en bestemt ER-komponent: **Datamodell** eller **Format**. En konfigurasjon kan inneholde forskjellige versjoner av en bestemt ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **UTKAST**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i Dynamics 365 for Operations. Hver modellkonfigurasjon inneholder en **Datamodell**-komponent. En ny formatkonfigurasjon kan komme fra (utledes) en bestemt datamodellkonfigurasjon. Formatkonfigurasjonen som opprettes, presenteres i konfigurasjonstreet som en underordnet av den opprinnelige datamodellkonfigurasjonen. Formatkonfigurasjonen som opprettes, inneholder en **Format**-komponent. **Datamodell**-komponenten for den opprinnelige modellkonfigurasjonen settes automatisk inn i **Format**-komponenten for den underordnede formatkonfigurasjonen som standard datakilde. En ER-konfigurasjon er delt for Dynamics 365 for Operations-firmaer.
 
 #### <a name="provider"></a>Leverandør
 
@@ -173,7 +174,7 @@ Eieren av en komponent (modell eller format) som er opprettet, kan bruke ER for 
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importere en ER-komponent fra LCS til bruk internt
 
-ER lar deg importere ER-komponenter fra LCS til gjeldende Dynamics 365 for Operations-forekomst. Et repositorium av typen **LCS-prosjekt ** kreves. Når en ER-komponent er importert fra LCS til gjeldende Dynamics 365 for Operations-forekomst, blir eieren av forekomsten forbruker av tjenesten, som tilbys av eieren (forfatter) av den importerte komponenten. Hvis en formatkomponent for eksempel er utformet for å generere et bestemt elektronisk dokument fra Dynamics 365 for Operations, som har et spesifikt format for land/områder (lokaliseringsscenario), antas det at tjenesteforbrukeren kan hente eventuelle oppdateringer som gjøres for formatet, slik at det overholder juridisk krav. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Importere en konfigurasjon fra Lifecycle Services** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) .
+ER lar deg importere ER-komponenter fra LCS til gjeldende Dynamics 365 for Operations-forekomst. Et repositorium av typen **LCS-prosjekt** kreves. Når en ER-komponent er importert fra LCS til gjeldende Dynamics 365 for Operations-forekomst, blir eieren av forekomsten forbruker av tjenesten, som tilbys av eieren (forfatter) av den importerte komponenten. Hvis en formatkomponent for eksempel er utformet for å generere et bestemt elektronisk dokument fra Dynamics 365 for Operations, som har et spesifikt format for land/områder (lokaliseringsscenario), antas det at tjenesteforbrukeren kan hente eventuelle oppdateringer som gjøres for formatet, slik at det overholder juridisk krav. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Importere en konfigurasjon fra Lifecycle Services** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) .
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Bygge et format ved å velge et annet format som basis (tilpasning)
 

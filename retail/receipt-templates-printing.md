@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Operations - Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 
-**Viktig! ** Du må konfigurere skjemaoppsett og kvitteringsprofiler for å skrive ut kvitteringer og andre dokumenter fra moderne salgssted for detaljhandel og skysalgssted. Du kan inkludere flere skjemaoppsett i en kvitteringsprofil. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
+**Viktig!** Du må konfigurere skjemaoppsett og kvitteringsprofiler for å skrive ut kvitteringer og andre dokumenter fra moderne salgssted for detaljhandel og skysalgssted. Du kan inkludere flere skjemaoppsett i en kvitteringsprofil. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
 
 ## <a name="set-up-a-receipt-format"></a>Konfigurere en kvitteringsprofil
 1.  Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
@@ -67,7 +68,7 @@ Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokum
 Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 1.  Åpne maskinvareprofilen ved å klikke på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofil**.
-2.  Velge skriveren, og deretter i feltet **Kvitteringsprofil **tilordne kvitteringsprofilen som skal brukes for kassen.
+2.  Velge skriveren, og deretter i feltet **Kvitteringsprofil**tilordne kvitteringsprofilen som skal brukes for kassen.
 
 **Obs!** Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
 

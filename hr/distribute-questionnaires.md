@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Distribuere og fylle ut et spørreskjema
+
+[!include[banner](includes/banner.md)]
+
 
 Dette emnet forklarer hvordan du distribuerer spørreskjemaene du utformer, slik at de er tilgjengelige for personen eller personene som skal fylle dem ut. 
 
@@ -45,7 +49,7 @@ Du kan definere spørreskjemagrupper og deretter inkludere respondenter som et s
 
 Du kan opprette spørreskjemagrupper fra følgende sider:
 
--   **Spørreskjemagrupper **– Bare personer i en spørreskjemagruppe kan fylle ut et valgt spørreskjema. La oss si at den planlagte målgruppen for eksempel er leverandører, så du oppretter en spørreskjemagruppe som er spesifikk for disse respondentene.
+-   **Spørreskjemagrupper**– Bare personer i en spørreskjemagruppe kan fylle ut et valgt spørreskjema. La oss si at den planlagte målgruppen for eksempel er leverandører, så du oppretter en spørreskjemagruppe som er spesifikk for disse respondentene.
 -   **Medlemmer av spørreskjemagruppe** – Du kan legge til personer i spørreskjemagruppene.
 
 Hvis du vil tilordne en spørreskjemagruppe til et spørreskjema, klikker du **Brukerrettigheter** på **Spørreskjemaer**-siden. Når spørreskjemaet er lagret som aktivt, kan medlemmene av spørreskjemagruppen fylle det ut. Denne funksjonaliteten er nyttig hvis du vil teste et spørreskjema på en utvalgt gruppe personer før du distribuerer den til en større gruppe, eller hvis du vil utforme et spørreskjema for en bestemt målgruppe.
@@ -53,7 +57,8 @@ Hvis du vil tilordne en spørreskjemagruppe til et spørreskjema, klikker du **B
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte svarøkter i et spørreskjema
 Planlagte svarøkter er spørreskjemaer du har utformet og valgt respondentene for. 
 
-**Obs! ** Før du kan definere planlagte svarøkter, må du utforme et spørreskjema. 
+> **Obs! **
+>   Før du kan definere planlagte svarøkter, må du utforme et spørreskjema. 
 
 Du kan opprette en planlagt svarøkt for én ansatt på siden **Planlagt svarøkt**. Listen på siden viser alle planlagte spørreskjemaer. 
 
@@ -99,7 +104,8 @@ Klikk **Funksjoner** &gt; **Start** for å gjøre spørreskjemaet tilgjengelig f
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Varsle respondenter om spørreskjemaer som er tilgjengelige for dem
 Når du distribuerer et spørreskjema, må du varsle respondentene om at spørreskjemaet er tilgjengelige for dem. 
 
-**Obs! ** Respondentene må være brukere i Microsoft Dynamics 365 for Operations for å kunne fylle ut et spørreskjema.
+> **Obs!**
+>  Respondentene må være brukere i Microsoft Dynamics 365 for Operations for å kunne fylle ut et spørreskjema.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Varsle respondenter om en planlagt svarøkt
 
@@ -109,12 +115,14 @@ Hvis du bruker en planlagt svarøkt, må du varsle personen direkte, for eksempe
 
 Bruk siden **Spørreskjemaplaner** til å klargjøre og sende e-post til alle respondenter som er tilordnet spørreskjemaet. Skriv inn e-postteksten i fanen **E-post for ansattselvbetjening**. Når tidsplanen er startet, klikker du **Funksjoner** &gt; **Send e-post** for å generere og sende e-postmeldingen til respondentene. Respondentene kan deretter logge seg på webområdet og fylle ut spørreskjemaet. 
 
-**Obs! ** Før du kan bruke e-postfunksjonaliteten, må IT-administratoren angi e-postinnstillingene på siden **E-postparametere**.
+> **Obs! **
+>  Før du kan bruke e-postfunksjonaliteten, må IT-administratoren angi e-postinnstillingene på siden **E-postparametere**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Avslutte et planlagt spørreskjema
 Du kan avslutte et planlagt spørreskjema når alle respondentene har fullført sin svarøkt. Når et planlagt spørreskjema er avsluttet, kan du ikke kopiere innstillingene til en ny plan. 
 
-**Obs! ** If én eller flere respondenter ikke har fylt ut spørreskjemaet, men du likevel vil avslutte planleggingen, må du først slette disse respondentene fra listen, på siden **Planlagt svarøkt**. Du kan deretter avslutte tidsplanen.
+> **Obs! **
+>  Hvis én eller flere respondenter ikke har fylt ut spørreskjemaet, men du likevel vil avslutte planleggingen, må du først slette disse respondentene fra listen, på siden **Planlagt svarøkt**. Du kan deretter avslutte tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Fylle ut spørreskjemaer
 Når du har utformet og distribuert et spørreskjema, kan spørreskjemaet fylles ut av valgte respondenter. Du kan fylle ut spørreskjemaene som er tilgjengelige for deg fra to steder:
@@ -132,5 +140,7 @@ Spørreskjemaer kan gjøres tilgjengelige for bestemte brukere eller brukergrupp
 [Bruke spørreskjemaer](questionnaires.md)
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
+
+
 
 

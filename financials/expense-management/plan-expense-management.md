@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Reiseregning og utlegg er tett integrert med økonomistyring av organisasjonen. 
 
 ### <a name="per-diems"></a>Kostgodtgjørelse
 
-Du må definere kostgodtgjørelse for ansatte som organisasjonen gir. Fordi kostgodtgjørelse vanligvis brukes til å dekke utgifter som måltider, overnatting og andre tilfeldige utgifter, kan du opprette regler for kostgodtgjørelse som organisasjonen skal tilby. Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler. Når du definerer en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester. Du kan også definere kostgodtgjørelsessatser for å angi minimum og maksimum antall timer som kostgodtgjørelsessatsen kan brukes på en arbeiders reise. **Beslutninger: **
+Du må definere kostgodtgjørelse for ansatte som organisasjonen gir. Fordi kostgodtgjørelse vanligvis brukes til å dekke utgifter som måltider, overnatting og andre tilfeldige utgifter, kan du opprette regler for kostgodtgjørelse som organisasjonen skal tilby. Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler. Når du definerer en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester. Du kan også definere kostgodtgjørelsessatser for å angi minimum og maksimum antall timer som kostgodtgjørelsessatsen kan brukes på en arbeiders reise. **Beslutninger:**
 
 -   Standard kostgodtgjørelsesregler for de første og siste dagene:
     -   Hva er minste antall timer en ansatt kan kreve for en dag og fremdeles motta kostgodtgjørelse?
@@ -127,7 +128,7 @@ For utgiftsrelaterte avgifter må du bestemme hva som inkluderes eller aktivert 
 Legg merke til at hvis du, under planlegging av økonomimodulen, har besluttet å bruke amerikanske regler for merverdiavgift og use tax, som gjøres ved å velge Ja i feltet **Bruk avgiftsregler for merverdiavgift**, kan du ikke aktivere skatterefusjon på utgifter.
 
 ## <a name="policies"></a>Policyer
-Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og penger når ansatte pådrar seg utgifter på organisasjonens vegne. Policyer sikre at ansatte holder seg innenfor budsjettet, inneholder all nødvendig informasjon, og at penger bare brukes etter behov. Du må ta følgende avgjørelser for hver utgiftsrapportpolicy og hver utgiftsrapportgodkjenning du oppretter. **Beslutninger: **
+Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og penger når ansatte pådrar seg utgifter på organisasjonens vegne. Policyer sikre at ansatte holder seg innenfor budsjettet, inneholder all nødvendig informasjon, og at penger bare brukes etter behov. Du må ta følgende avgjørelser for hver utgiftsrapportpolicy og hver utgiftsrapportgodkjenning du oppretter. **Beslutninger:**
 
 -   Hva er navnet på policyen?
 -   Hva er utgiftspolicyen for?

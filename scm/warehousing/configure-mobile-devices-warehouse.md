@@ -3,7 +3,7 @@ title: Konfigurere mobilenheter for lagerarbeid
 description: "Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet.
 
@@ -315,7 +319,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="even">
 <td>Vis beholdningsstatus</td>
-<td>Velg dette alternativet for å vise status for varer på lager. Hvis du vil ha mer informasjon, se <a href="/inventory/inventory-statuses.md">Fordeler ved å bruke lagerstatuser</a>. Dette alternativet er tilgjengelig for alle menyelementer som bruker eksisterende arbeid, unntatt syklustelling.</td>
+<td>Velg dette alternativet for å vise status for varer på lager. Dette alternativet er tilgjengelig for alle menyelementer som bruker eksisterende arbeid, unntatt syklustelling.</td>
 </tr>
 <tr class="odd">
 <td>Vis sammendrag for plukkskjermbilde</td>
@@ -412,5 +416,7 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 [Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [Definere et menyelement for mobilenhet for å registrere mottatte varer (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Fordeler ved å bruke lagerstatuser](../inventory/inventory-statuses.md)
+
 
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 42dc414ff2bb6359b47d89c3bd3c510e4258f816
-ms.openlocfilehash: b2229466040351d8c2b9494b30b4c928651820b8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 11a4633b0a1254f3a8cbdcba8d7aa99bb7c936c1
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -44,7 +45,7 @@ Ekstern simulator for Microsoft Dynamics 365 for Operations - Retail er et verkt
 -   **Skuff 2** – Ved å definere en ekstra kassaskuff i simulatoren for eksterne enheter, kan du simulere scenarier som omfatter én enkelt kasse på salgsstedet som har to aktive skift.
 -   **Skanner** – Den virtuelle strekkodeskanneren som simulatoren for eksterne enheter støtter, kan utstede hendelser for strekkodeskanning.
 -   **Vekt** – En virtuell vekt lar deg simulere samhandling med varer som veies på salgsstedet.
--   **PIN-kodetastatur (Personal Identification Number)** – Du kan simulere handlinger på et PIN-kodetastatur. **Obs! ** Du må implementere støtte for et fysisk PIN-kodetastatur via betalingskoblingen.
+-   **PIN-kodetastatur (Personal Identification Number)** – Du kan simulere handlinger på et PIN-kodetastatur. **Obs!** Du må implementere støtte for et fysisk PIN-kodetastatur via betalingskoblingen.
 -   **Signaturregistrering** – Simulatoren for eksterne enheter inneholder en virtuell enhet for registrering av signatur som du kan konfigurere til å be om signaturer som kreves for enkelte betalingsmidler, for eksempel kundekontobetalinger.
 
 Du kan også bruke simulatoren for eksterne enheter til å simulere hendelser for tastaturkortlesere som kommer fra en strekkodeskanner og kortleser. Simulatoren for eksterne enheter støtter spesielt kobling og innebygging av objekter for Retail POS-enheter (OPOS).
@@ -71,7 +72,7 @@ Du kan bruke simulatoren for eksterne enheter til å teste produktstrekkoder, kv
 4.  Bruk tabellen nedenfor til å definere de virtuelle enhetene som skal testes. Her er en forklaring for kolonnene i tabellen:
     -   **Enhet** – Denne kolonnen inneholder navnet på hurtigfanen du viser for å konfigurere enheten.
     -   **Enhetstype** – Denne kolonnen viser verdien som du velger i feltet som er merket med navnet på enheten.
-    -   **Enhetsnavn** – Denne kolonnen inneholder den nøyaktige verdien som du angir for enhetsnavnet. **Viktig! ** Enhetsnavnene som angis her, er nødvendige, fordi maskinvarestasjonen bruker disse spesifikke navnene for å kommunisere med enhetene. Hvis du ikke bruker disse spesifikke navnene, kan ikke enheten brukes.
+    -   **Enhetsnavn** – Denne kolonnen inneholder den nøyaktige verdien som du angir for enhetsnavnet. **Viktig!** Enhetsnavnene som angis her, er nødvendige, fordi maskinvarestasjonen bruker disse spesifikke navnene for å kommunisere med enhetene. Hvis du ikke bruker disse spesifikke navnene, kan ikke enheten brukes.
 
     | Enhet            | Enhetstype | Enhetsnavn              |
     |-------------------|-------------|--------------------------|
@@ -85,7 +86,7 @@ Du kan bruke simulatoren for eksterne enheter til å teste produktstrekkoder, kv
     | PIN-kodetastatur           | OPOS        | MockOPOSPinPad           |
     | Signaturregistrering | OPOS        | MockOPOSSignatureCapture |
 
-**Obs! ** Det kreves ikke et bestemt oppsett i maskinvareprofilen for å simulere hendelser for tastaturkortleser fra strekkodeskanner og kortleser.
+**Obs!** Det kreves ikke et bestemt oppsett i maskinvareprofilen for å simulere hendelser for tastaturkortleser fra strekkodeskanner og kortleser.
 
 ### <a name="assign-the-hardware-profile-to-a-register"></a>Tilordne maskinvareprofilen til en kasse
 
@@ -105,7 +106,7 @@ Når dataene er synkronisert, er den nye maskinvareprofilen og endringene for ka
 
 ## <a name="install-the-peripheral-simulator"></a>Installere simulatoren for eksterne enheter
 1.  Gå til **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**.
-2.  Klikk på **Last ned**, og klikk deretter på **PeripheralSimulator**. **Obs! ** Du må deaktivere popup-blokkeringer før du kan laste ned simulatoren for eksterne enheter.
+2.  Klikk på **Last ned**, og klikk deretter på **PeripheralSimulator**. **Obs!** Du må deaktivere popup-blokkeringer før du kan laste ned simulatoren for eksterne enheter.
 3.  Når nedlastingen er fullført, kan du åpne mappen **Nedlastinger** og dobbeltklikke på **VirtualPeripherals.msi** for å starte installasjonsprogrammet.
 4.  Installer simulatoren for eksterne enheter ved hjelp av standardinnstillingene.
 

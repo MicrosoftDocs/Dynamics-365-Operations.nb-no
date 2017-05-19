@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ac8d6c064ca826cc1c2fed07578ca9ce0c66ef66
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -62,11 +63,11 @@ ER-formeldesigneren kan brukes til å definere et uttrykk som transformerer data
 -   Fra en ER-datamodell til et ER-format.
 -   Fra Dynamics 365 for Operations-datakilder og kjøretidsparametere til et ER-format.
 
-Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette eksemplet returnerer uttrykket verdien for **Intrastat.AmountMST**-feltet for **Intrastat**-tabellen i Dynamics 365 for Operations, når denne verdien er avrundet til to desimalplasser. [![bilde-uttrykk-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I dette eksemplet er resultatet av det utformede uttrykket utfylt i **Transaction.InvoicedAmount**-komponenten for datamodellen **Avgiftsrapporteringsmodell**. [![bilde-uttrykk-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)Ved kjøretid vil den utformede formelen, **ROUND (Intrastat.AmountMST, 2)**, avrunde verdien i **AmountMST**-feltet for hver post i **Intrastat**-tabellen til to desimalplasser, og fylle ut den avrundede verdien i **Transaction.InvoicedAmount**-komponenten for **Avgiftsrapportering**-datamodellen.
+Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette eksemplet returnerer uttrykket verdien for **Intrastat.AmountMST**-feltet for **Intrastat**-tabellen i Dynamics 365 for Operations, når denne verdien er avrundet til to desimalplasser. [![bilde-uttrykk-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I dette eksemplet er resultatet av det utformede uttrykket utfylt i **Transaction.InvoicedAmount**-komponenten for datamodellen **Avgiftsrapporteringsmodell**. [![bilde-uttrykk-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Ved kjøretid vil den utformede formelen, **ROUND (Intrastat.AmountMST, 2)**, avrunde verdien i **AmountMST**-feltet for hver post i **Intrastat**-tabellen til to desimalplasser, og fylle ut den avrundede verdien i **Transaction.InvoicedAmount**-komponenten for **Avgiftsrapportering**-datamodellen.
 
 ### <a name="data-formatting"></a>Dataformatering
 
-ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)Når formatkomponenter refererer til **TrimmedString **-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Når formatkomponenter refererer til **TrimmedString **-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ### <a name="process-flow-control"></a>Prosessflytkontroll
 
@@ -103,7 +104,7 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 
 #### <a name="constants"></a>Konstanter
 
-Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20 **bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""War and Peace"" Volume 1"** tekststrengen **Leo Tolstoy "War and Peace" Volume 1**.
+Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20 **bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""Krig og fred"" Del 1"** tekststrengen **Leo Tolstoy "Krig og fred" Del 1**.
 
 #### <a name="operators"></a>Operatører
 
@@ -210,7 +211,7 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 <td>Del den angitte listen i grupper, der hver inneholder det angitte antallet poster. Returnere resultatet som en ny gruppeliste som inneholder følgende elementer:
 <ul>
 <li>Grupper som vanlige lister (<strong>Value</strong>-komponent)</li>
-<li>Gjeldende gruppenummer (<strong>BatchNumber </strong>-komponent)</li>
+<li>Gjeldende gruppenummer (<strong>Gruppenummer</strong>-komponent)</li>
 </ul></td>
 <td>I eksemplet nedenfor opprettes <strong>Linjer</strong>-datakilden som en postliste med tre poster, som er delt inn i grupper, som hver inneholder opptil to poster. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>Her vises ønsket formatoppsett, der bindinger til <strong>Linjer</strong>-datakilden opprettes for å generere utdata i XML-format, som viser enkeltnoder for hver gruppe og postene i den. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Følgende er resultatet av å kjøre det utformede formatet. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
@@ -523,27 +524,27 @@ FORMATELEMENTNAME ()
 
 Returnerer navnet på elementet til det gjeldende formatet. Returnerer tom streng når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av.
 
-Se oppgaveveiledningen **ER Bruke data med formatet utdata for telling og summering** (en del av forretningsprosessen **Anskaffe/utvikle komponenter for IT-tjeneste/-løsning **) for å lære mer om bruk av disse funksjonene.
+Se oppgaveveiledningen **ER Bruke data med formatet utdata for telling og summering** (en del av forretningsprosessen **Anskaffe/utvikle komponenter for IT-tjeneste/-løsning**) for å lære mer om bruk av disse funksjonene.
 
 SUMIFS (nøkkelstreng for summering, kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
 
-Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer **for de gjeldende filene er deaktivert.
+Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
 
 SUMIF (nøkkelstreng for summering, kriterieområdestreng, kriterieverdistreng)
 
-Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer **for de gjeldende filene er deaktivert.
+Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
 
 COUNTIFS (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
 
-Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer **for de gjeldende filene er deaktivert.
+Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
 
 COUNTIF (områdekriteriestreng, kriterieverdistreng)
 
-Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller den angitte betingelsen (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer **for de gjeldende filene er deaktivert.
+Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller den angitte betingelsen (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
 
 COLLECTEDLIST (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
 
-Returnerer en liste over nodeverdier for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en tom liste når flagget **Samle inn utdatadetaljer **for de gjeldende filene er slått av.
+Returnerer en liste over nodeverdier for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en tom liste når flagget **Samle inn utdatadetaljer**for de gjeldende filene er slått av.
 
 ### <a name="other-business-domainspecific-functions"></a>Andre funksjoner (spesifikke for forretningsområder)
 

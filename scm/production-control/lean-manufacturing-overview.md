@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 3c608f13c93446329702f07ef7e8bb08a29d87b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8cb9428ff6be93f9a395ec3085ef1fda05847a8a
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Lean-produksjon tilbyr verktøy som du kan bruke til å modellere lean-operasjon
 -   Overvåke og vedlikeholde kanban-jobber.
 
 Arkitekturen for lean-produksjon i Microsoft Dynamics AX 7 består av produksjonsflyter, aktiviteter og kanban-regler. Disse strukturene er fullstendig integrert med Microsoft Dynamics AX-7-prosesser. Du kan bruke lean-produksjon i et produksjonsmiljø med blandet modus som kombinerer forskjellige strategier for forsyning, produksjon, leverandører. Disse strategiene omfatter produksjonsordrer, partiordrer for prosessindustrier, bestillinger og overføringsordrer.
-| **Viktig! **                                                                                                                                                                                                                                                                |
+| **Viktig!**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Du kan bruke Microsoft Dynamics AX 7 til å støtte implementeringen av lean-produksjon med kanbaner. En vellykket implementering av lean-prinsipper avhenger imidlertid av interne forretningsprosesser som du bruker, og faktiske produksjonsbetingelser og miljøet. |
 

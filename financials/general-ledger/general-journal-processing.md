@@ -3,7 +3,7 @@ title: Behandling av generell journal
 description: "Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 50cd203025be8857de943e458fc32315e494fb7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c020566928cecc15bd7de504164f5adbf34eda44
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver funksjoner i Microsoft Dynamics AX som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
+Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
 
 Journalnavn
 
@@ -82,6 +83,7 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å garantere at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatorisk og riktig data alltid registreres.
 
 Hvis du vil ha mer informasjon, se [Planlegging: kontoplan](plan-chart-of-accounts.md). 
+
 
 
 

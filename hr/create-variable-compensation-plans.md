@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere
 ## <a name="variable-compensation-components"></a>Komponenter i variabel kompensasjon
 ### <a name="create-compensation-types"></a>Opprette kompensasjonstyper
 
-**Typer av variabel kompensasjon **er en nødvendig komponent. Typer av variabel kompensasjon gjør at du kan beskrive typene variabel kompensasjon som organisasjonen gir. De lar deg også angi om kompensasjonen skal være i kontanter eller i ikke-monetære form, for eksempel beholdning.
+**Typer av variabel kompensasjon**er en nødvendig komponent. Typer av variabel kompensasjon gjør at du kan beskrive typene variabel kompensasjon som organisasjonen gir. De lar deg også angi om kompensasjonen skal være i kontanter eller i ikke-monetære form, for eksempel beholdning.
 
 ### <a name="describe-vesting-rules"></a>Beskrive overdragelsesregler
 
@@ -63,7 +64,7 @@ Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få 
 -   Hvis ytelsen til avdelingen er over 100 prosent, legger systemet sammen prosenten som er angitt i feltet **For 1 % over mål**, med prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Høyeste tillatte utbetaling**, er nådd.
 -   Hvis ytelsen til avdelingen er under 100 prosent, trekker systemet prosenten som er angitt i feltet **For 1 % under mål**, fra prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Laveste tillatte utbetaling**, er nådd.
 
-Du kan angi** toleransenivåer** for terskelprosentene, slik at det vises en advarsel hvis utnyttelsen fører til at prosentandelen havner utenfor terskelprosenten. 
+Du kan angi**toleransenivåer** for terskelprosentene, slik at det vises en advarsel hvis utnyttelsen fører til at prosentandelen havner utenfor terskelprosenten. 
 
 Som standard leter systemet etter avdelingen som er angitt på den ansattes stilling. Belønningen for noen ansatte kan imidlertid avhenge av ytelsen til flere avdelinger. I dette tilfellet kan de ulike avdelingene og prosentandelen av belønningen som er tilordnet til ytelsen til hver avdeling, angis i den ansattes variable kompensasjonsregistrering. Hvis du vil ha mer informasjon, kan du se delen «Variabel kompensasjonsregistrering» nedenfor. 
 
@@ -76,7 +77,7 @@ Fanen **Nivåoverstyringer** lar deg overstyre belønningens standardprosent ell
 
 Når du er klar til å registrere ansatte i en variabel kompensasjonsplan, må du først å avgjøre hvem som har rett til kompensasjonen som er angitt i planen. Du kan ikke tilordne planen til ansatte med mindre du finner ut hvem som er berettiget. Du definerer berettigelse ved å åpne siden **Rettighetsregler** for å opprette en ny rettighetsregel for planen, og deretter definerer du vilkårene som en ansatt må oppfylle for å ha rett til kompensasjonsplanen. Du kan begrense rettighet etter avdeling, fagforening, kompensasjonsområde (lokasjon), jobb, jobbfunksjon, jobbtype og/eller kompensasjonsnivå. Ansatte kan registreres i en kompensasjonsplan bare hvis de oppfyller **alle** kriteriene som er angitt i rettighetsregelen. 
 
-**Obs! ** Rettighetsregler avgjør berettigelse for både faste kompensasjonsplaner og variable kompensasjonsplaner. Rettighetsreglene bruker følgende felt i poster for jobb, stilling og ansatt til å avgjøre om en ansatt har rett til en kompensasjonsplan:
+**Obs!** Rettighetsregler avgjør berettigelse for både faste kompensasjonsplaner og variable kompensasjonsplaner. Rettighetsreglene bruker følgende felt i poster for jobb, stilling og ansatt til å avgjøre om en ansatt har rett til en kompensasjonsplan:
 
 -   På **Jobb**-siden:
     -   **Jobb**-feltet
@@ -93,7 +94,7 @@ På siden **Variable kompensasjonsplaner** setter du alternativet **Aktiver regi
 
 Du kan nå registrere ansatte i den variable kompensasjonsplanen. Hvis du vil registrere en ansatt, kan du gå til **Ansatte**-siden og velge den ansatte. Klikk deretter **Kompensasjon** &gt; **Registrering av variabel plan** i handlingsruten. 
 
-**Obs! ** **Registrering** må settes til **Ja** for den variable kompensasjonsplanen. **Plan**-feltet viser bare planene som den ansatte har rett til i henhold til rettighetsreglene som defineres for disse planene. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
+**Obs!** **Registrering** må settes til **Ja** for den variable kompensasjonsplanen. **Plan**-feltet viser bare planene som den ansatte har rett til i henhold til rettighetsreglene som defineres for disse planene. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
 
 Kontroller at feltet **Ikrafttredelsesdato** er riktig angitt. Hvis den variable kompensasjonsplanen bruker beregningsmetoden **Sammensatt**, blir kanskje ikrafttredelsesdatoen for registreringen vurdert i beregningen av den ansattes belønning. 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: bbf08a9620dbc8ad928fe40a3ae5e9b2a2fcb373
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 77e3dc8e8d7b81a366bdf3a164e38c394c90e15f
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ Du kan bruke **Kompensasjonsnivåer** til å angi kompensasjon for ulike jobber,
 
 Når du definerer nivåene og referansepunktene, kan de kombineres slik at de danner et **kompensasjonsrutenett**. På siden **Kompensasjonsrutenett** definerer du informasjon om rutenettet. Angi for eksempel hva rutenettet skal brukes til, hvilken type plan det skal brukes med, og hvilke referansepunkt eller kolonner som kreves i rutenettet. Når du er ferdig med å registrere denne informasjonen, klikker du **Kompensasjonsstruktur** for å legge til nivåer og beløp i rutenettet. 
 
-**Tips! ** Bruk**Masseendring**-funksjonen på kompensasjonsstrukturen for å angi startbeløp, og øk dem deretter med prosent eller beløp over alle nivåene eller referansepunktene.
+**Tips!** Bruk**Masseendring**-funksjonen på kompensasjonsstrukturen for å angi startbeløp, og øk dem deretter med prosent eller beløp over alle nivåene eller referansepunktene.
 
 ### <a name="pay-frequencies"></a>Lønnsfrekvenser
 
@@ -76,7 +77,7 @@ Når du har valgt et alternativ, åpnes siden **Kompensasjonsstruktur**, og du k
 
 Det første trinnet i registreringen av ansatte i en fast kompensasjonsplan, er å avgjøre hvem som har rett til kompensasjonen som er definert i planen. Du kan ikke tilordne planen til ansatte før du har avgjort hvem som er berettiget. Du definerer berettigelse ved å åpne siden **Rettighetsregler**. Her oppretter du en ny rettighetsregel for kompensasjonsplanen og definerer vilkårene som en ansatt må oppfylle for å ha rett til en plan. Du kan begrense rettighet basert på avdeling, fagforening, kompensasjonsområde (lokasjon), jobb, jobbfunksjon, jobbtype og/eller kompensasjonsnivå. Ansatte kan registreres i en kompensasjonsplan bare hvis de oppfyller alle betingelsene som er angitt i rettighetsregelen. 
 
-**Obs! ** Rettighetsregler brukes til å fastsette berettigelse for både faste og variable kompensasjonsplaner. 
+**Obs!** Rettighetsregler brukes til å fastsette berettigelse for både faste og variable kompensasjonsplaner. 
 
 Rettighetsregelen vurderer verdien i bestemte felt i postene Jobb, Stilling og Ansatt til å avgjøre om en ansatt har rett til en kompensasjonsplan:
 
@@ -98,7 +99,7 @@ Når den faste kompensasjonen er definert for en ansatt, kan bare handlinger av 
 
 Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-siden, og velg den ansatte du vil registrere i kompensasjonsplanen. I handlingsruten klikker du **Kompensasjon** &gt; **Fast plan**. Nå kan du opprette en ny handling for fast kompensasjon. for den ansatte. 
 
-**Obs! ** Feltet for kompensasjonsplan viser bare planene som en ansatt har rett til i henhold til rettighetsreglene som ble definert for hver plan. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
+**Obs!** Feltet for kompensasjonsplan viser bare planene som en ansatt har rett til i henhold til rettighetsreglene som ble definert for hver plan. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
 
 Systemet kontrollerer at kompensasjonsbeløpet som er angitt for en kompensasjonsplan av typen klasse eller segment, er innenfor de minste og største referansepunktene for gitt kompensasjonsnivå i den ansattes jobb. Hvis kompensasjonsbeløpet er utenfor tillatt område, vises en advarsel eller feilmelding, avhengig av toleransenivået som er angitt i den faste kompensasjonsplanen.
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: nb-no
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -122,7 +123,7 @@ For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft 
 -   **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCO-ene brukes til å teste POS-komponenten for Microsoft Dynamics 365 for Operations - Retail. Derfor bidrar testingen til å garantere at hvis Microsoft Dynamics 365 for Operations - Retail støtter en enhetsklassen gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
 -   **Tjenesteobjekt** – Tjenesteobjektet leverer kommunikasjon mellom kontrollobjektet (CCO) og enheten. Tjenesteobjektet for en enhet leveres vanligvis av enhetsprodusenten. I noen tilfeller må du imidlertid laste ned tjenesteobjektet fra produsentens nettsted. Et nyere tjenesteobjekt kan for eksempel være tilgjengelig. Hvis du vil finne adressen til produsentens nettsted, kan du se i maskinvaredokumentasjonen.
 
-[![Kontrollobjekt og tjenesteobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen. **Obs! ** OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Microsoft Dynamics 365 for Operations - Retail må først støtte enhetstypen eller klassen gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
+[![Kontrollobjekt og tjenesteobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen. **Obs!** OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Microsoft Dynamics 365 for Operations - Retail må først støtte enhetstypen eller klassen gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
 
 ### <a name="windows"></a>Windows
 
@@ -333,7 +334,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 
 ### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Alle Modern POS-klienter som har en dedikert IIS-maskinvarestasjon
 
-**Obs! ** Når IIS-maskinvarestasjonen er "dedikert", er det et 1-1-relasjon mellom salgsstedsklienten og maskinvarestasjonen.
+**Obs!** Når IIS-maskinvarestasjonen er "dedikert", er det et 1-1-relasjon mellom salgsstedsklienten og maskinvarestasjonen.
 
 <table>
 <colgroup>
@@ -417,7 +418,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 
 ### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Alle Modern POS-klienter som har en delt IIS-maskinvarestasjon
 
-**Obs! ** Når IIS-maskinvarestasjonen er "delt", kan flere enheter bruke maskinvarestasjonen samtidig. I slike scenarier bør du bruke bare enhetene som vises i tabellen nedenfor. Hvis du prøver å dele enheter som ikke vises her, for eksempel strekkodeskannere og kortlesere, vil det oppstå feil når flere enheter forsøker å kreve den samme eksterne enheten. I fremtiden vil en slik konfigurasjon bli eksplisitt forhindret.
+**Obs!** Når IIS-maskinvarestasjonen er "delt", kan flere enheter bruke maskinvarestasjonen samtidig. I slike scenarier bør du bruke bare enhetene som vises i tabellen nedenfor. Hvis du prøver å dele enheter som ikke vises her, for eksempel strekkodeskannere og kortlesere, vil det oppstå feil når flere enheter forsøker å kreve den samme eksterne enheten. I fremtiden vil en slik konfigurasjon bli eksplisitt forhindret.
 
 <table>
 <colgroup>
@@ -472,7 +473,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfigurasjon for scenarier som støttes
-Hvis du vil ha mer informasjon om hvordan du kan opprette maskinvareprofiler, kan du se [Definere og vedlikeholde kanalklienter, inkludert kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md). **Obs! ** For Microsoft Dynamics 365 for Operations versjon 1611 brukes ikke lenger profilen for maskinvarestasjon. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
+Hvis du vil ha mer informasjon om hvordan du kan opprette maskinvareprofiler, kan du se [Definere og vedlikeholde kanalklienter, inkludert kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md). **Obs!** For Microsoft Dynamics 365 for Operations versjon 1611 brukes ikke lenger profilen for maskinvarestasjon. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderne POS for Windows med en IPC-maskinvarestasjon (innebygd)
 
@@ -480,7 +481,7 @@ Denne konfigurasjonen er mest vanlig konfigurasjonen for tradisjonelle, fast kas
 
 1.  Opprett en maskinvareprofil der alle nødvendige enheter er konfigurert.
 2.  Tilordne maskinvareprofilen til kassen på salgsstedet.
-3.  Opprett en maskinvarestasjon av **Dedikert**-typen for detaljhandelsbutikken der kassen på salgsstedet skal brukes. Beskrivelse er valgfritt. **Obs! ** Du behøver ikke å angi eventuelle andre egenskaper for maskinvarestasjonen. All annen nødvendig informasjonen, for eksempel maskinvareprofilen, kommer fra selve kassen.
+3.  Opprett en maskinvarestasjon av **Dedikert**-typen for detaljhandelsbutikken der kassen på salgsstedet skal brukes. Beskrivelse er valgfritt. **Obs!** Du behøver ikke å angi eventuelle andre egenskaper for maskinvarestasjonen. All annen nødvendig informasjonen, for eksempel maskinvareprofilen, kommer fra selve kassen.
 4.  Klikk på **Detaljhandel og handel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
 5.  Velg distribusjonsplanen **1090** for å synkronisere den nye maskinvareprofilen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 6.  Velg distribusjonsplanen **1040** for å synkronisere den nye maskinvarestasjonen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
@@ -494,7 +495,7 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som har en maskinv
 1.  Opprett en maskinvareprofil der alle nødvendige enheter er konfigurert.
 2.  Opprett en maskinvarestasjon av **Dedikert**-typen for detaljhandelsbutikken der kassen på salgsstedet skal brukes.
 3.  Angi følgende egenskaper for den dedikerte maskinvarestasjonen:
-    -   **Vertsnavn** – Navnet på vertsdatamaskinen der maskinvarestasjonen skal kjøres. **Obs! ** Cloud POS kan løse **localhost** for å finne den lokale datamaskinen der Cloud POS kjøres. Sertifikatet som kreves for å koble Cloud POS sammen med maskinvarestasjonen, må imidlertid også ha "Localhost" som navnet på datamaskinen. For å unngå problemer anbefaler vi at du angir en forekomst av hver dedikerte maskinvarestasjon for butikken etter behov. For hver enkelt maskinvarestasjon må vertsnavnet være navnet på den spesifikke datamaskinen der maskinvarestasjonen skal distribueres.
+    -   **Vertsnavn** – Navnet på vertsdatamaskinen der maskinvarestasjonen skal kjøres. **Obs!** Cloud POS kan løse **localhost** for å finne den lokale datamaskinen der Cloud POS kjøres. Sertifikatet som kreves for å koble Cloud POS sammen med maskinvarestasjonen, må imidlertid også ha "Localhost" som navnet på datamaskinen. For å unngå problemer anbefaler vi at du angir en forekomst av hver dedikerte maskinvarestasjon for butikken etter behov. For hver enkelt maskinvarestasjon må vertsnavnet være navnet på den spesifikke datamaskinen der maskinvarestasjonen skal distribueres.
     -   **Port** – Porten som skal brukes for kommunikasjon mellom maskinvarestasjonen og Modern POS-klienten.
     -   **Maskinvareprofil** – Hvis maskinvareprofilen ikke er angitt på selve maskinvarestasjonen, brukes maskinvareprofilen som er tilordnet kassen.
     -   **EFT-salgsstedsnummer** – EFT-terminal-ID-en skal brukes ved sending av EFT-autoriseringer. Denne ID-en leveres av kredittkortbehandleren.
@@ -541,16 +542,16 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som deler maskinva
 14. Velg maskinvarestasjonen som skal brukes, og klikk deretter på **Par**.
 15. Gjenta trinn 14 for hver maskinvarestasjon som Modern POS bruker.
 16. Når all nødvendig maskinvarestasjoner er sammenkoblet, klikker du på **Lukk**.
-17. På siden for valg av maskinvarestasjonen klikker du på den sist valgte maskinvarestasjonen for å aktivere den. **Obs! ** Hvis enheter ofte bruker forskjellig maskinvarestasjoner, anbefaler vi at du konfigurerer Modern POS til å spørre kasserere å velge en maskinvarestasjon når de begynner betalingsprosessen. Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Velg kassen, og sett deretter alternativet **Velg ved betalingen** til **Ja**. Bruk distribusjonsplanen **1090** for å synkronisere endringer i kanaldatabasen.
+17. På siden for valg av maskinvarestasjonen klikker du på den sist valgte maskinvarestasjonen for å aktivere den. **Obs!** Hvis enheter ofte bruker forskjellig maskinvarestasjoner, anbefaler vi at du konfigurerer Modern POS til å spørre kasserere å velge en maskinvarestasjon når de begynner betalingsprosessen. Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Velg kassen, og sett deretter alternativet **Velg ved betalingen** til **Ja**. Bruk distribusjonsplanen **1090** for å synkronisere endringer i kanaldatabasen.
 
 ## <a name="extensibility"></a>Utvidelsesmuligheter
 Hvis du vil ha informasjon om scenarier for utvidelsesmuligheter for maskinvarestasjonen, kan du se [Utvidelsesmuligheter for maskinvarestasjon](dev-itpro/hardware-station-extensibility.md).
 
 ## <a name="security"></a>Sikkerhet
-I henhold til gjeldende sikkerhetsstandarder skal følgende innstillinger brukes i et produksjonsmiljø: **Obs! ** Installasjonsprogrammet for maskinvarestasjonen vil automatisk utføre disse endringene i registret som en del av installasjonen gjennom selvbetjening.
+I henhold til gjeldende sikkerhetsstandarder skal følgende innstillinger brukes i et produksjonsmiljø: **Obs!** Installasjonsprogrammet for maskinvarestasjonen vil automatisk utføre disse endringene i registret som en del av installasjonen gjennom selvbetjening.
 
 -   SSL (Secure Sockets Layer) må deaktiveres.
--   Bare TLS (Transport Layer Security) versjon 1.2 (eller gjeldende nyeste versjon) skal være aktivert og brukes. **Obs! ** SSL og alle versjon av TLS, unntatt TLS 1.2, er deaktivert som standard. Følg denne fremgangsmåten for å redigere eller aktivere disse verdiene:
+-   Bare TLS (Transport Layer Security) versjon 1.2 (eller gjeldende nyeste versjon) skal være aktivert og brukes. **Obs!** SSL og alle versjon av TLS, unntatt TLS 1.2, er deaktivert som standard. Følg denne fremgangsmåten for å redigere eller aktivere disse verdiene:
     1.  Trykke på Windows-logotasten+R for å åpne et **Kjør**-vindu.
     2.  I **Åpne**-feltet skriver du inn **Regedit**, og deretter klikker du på **OK**.
     3.  Hvis det vises en **Brukerkontokontroll**-melding, klikker du på **Ja**.
@@ -571,7 +572,7 @@ I henhold til gjeldende sikkerhetsstandarder skal følgende innstillinger brukes
 -   Cross-origin-ressursdeling må være deaktivert og må angi de tillatte opprinnelsene som godtas.
 -   Bare klarerte sertifiseringsinstanser skal brukes til å skaffe sertifikater som skal brukes på datamaskiner som kjører maskinvarestasjonen.
 
-**Obs! ** Det er svært viktig at du ser gjennom retningslinjene for sikkerhet for IIS og kravene til betalingskortbransjen (PCI).
+**Obs!** Det er svært viktig at du ser gjennom retningslinjene for sikkerhet for IIS og kravene til betalingskortbransjen (PCI).
 
 ## <a name="peripheral-simulator"></a>Ekstern simulator
 Hvis du vil ha mer informasjon, kan du se [Simulator for eksterne detaljhandelsenheter](retail-peripheral-simulator.md).
@@ -726,7 +727,7 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en dedikert (ikke delt) II
 
 ### <a name="shared-iis-hardware-station"></a>Delt IIS-maskinvarestasjon
 
-De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestasjon sammen med Modern POS for Windows og Cloud POS. **Obs! ** Bare en skriver, betalingsterminal og kassaskuff støttes.
+De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestasjon sammen med Modern POS for Windows og Cloud POS. **Obs!** Bare en skriver, betalingsterminal og kassaskuff støttes.
 
 #### <a name="printer"></a>Skriver
 
