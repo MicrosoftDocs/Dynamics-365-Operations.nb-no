@@ -1,6 +1,6 @@
 ---
 title: Ordliste for Dynamics 365 for Operations
-description: Microsoft Dynamics 365 for Operations-ordlisten definerer viktige termer og begreper i Dynamics 365 for Operations-produktet.
+description: Ordlisten for Microsoft Dynamics 365 for Operations definerer viktige termer og begreper i Dynamics 365 for Operations-produktet.
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/10/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations-ordlisten definerer viktige termer og begreper i Dynamics 365 for Operations-produktet. 
+Ordlisten for Microsoft Dynamics 365 for Operations definerer viktige termer og begreper i Dynamics 365 for Operations-produktet. 
 
 ### <a name="a"></a>**A**
 
@@ -49,9 +49,9 @@ Et system for elektronisk pengeoverføring tilgjengelig i USA som muliggjør ove
 
 ###### <a name="actual-quantity"></a>**faktisk antall**
 
-Målt antall som går inn for eller ut fra en aktivitet.
+Målt antall som går inn i eller ut fra en aktivitet.
 
-###### <a name="address-verification-service"></a>**adressebekreftelsesservice**
+###### <a name="address-verification-service"></a>**adresseverifiseringstjeneste**
 
 Tjenesten som tilbys av en kredittkortbehandler som validerer at faktureringsadressen fra en kortinnehaver stemmer overens med informasjonen til den utstedende banken.
 
@@ -75,7 +75,7 @@ Antall dager i en tidsperiode som brukes til å rapportere en forfalt kundebetal
 
 ###### <a name="balance-sheet"></a>**balanseregnskap**
 
-Oversikt over den økonomiske situasjonen i en organisasjon som rapporterer statusen for eiendeler, gjeld og egenkapital på en bestemt dato.
+Oversikt over den økonomiske situasjonen i en organisasjon som rapporterer statusen for aktiva, gjeld og egenkapital på en bestemt dato.
 
 ###### <a name="balance-sheet-account"></a>**balansekonto**
 
@@ -83,11 +83,11 @@ En konto som beskriver verdiendringene som rapporteres i en balanse.
 
 ###### <a name="bank-reconciliation"></a>**bankavstemming**
 
-En fremgangsmåte for avstemming av en finanskonto som representerer en bankkonto, ved å kontrollere finanskontopostene mot bankkontoutdragspostene.
+En fremgangsmåte for avstemming av en finanskonto som representerer en bankkonto, ved å kontrollere finanskontooppføringer mot bankkontoutdragsoppføringer.
 
-###### <a name="batch-attribute"></a>**partiattributt**
+###### <a name="batch-attribute"></a>**bunkeattributt**
 
-En produktattributt for en prosessbunke eller en overføringsbunke.
+Et produktattributt for en prosessbunke eller en overføringsbunke.
 
 ###### <a name="best-before-date"></a>**best før-dato**
 
@@ -103,7 +103,7 @@ Et kildedokument som dokumenterer en ubetinget forespørsel til en tredjepart om
 
 ###### <a name="bill-of-materials"></a>**stykkliste**
 
-En liste over produkter og mengdene av disse som trengs for å produsere ett produkt.
+En liste over produkter og antallet av disse som trengs for å produsere ett produkt.
 
 ###### <a name="blocking"></a>**blokkering**
 
@@ -111,7 +111,7 @@ Handlingen med å sette et dokument eller et produkt på vent.
 
 ###### <a name="budget-control"></a>**budsjettkontroll**
 
-En regel med å godkjenne utgifter først når budsjettmidler kan reserveres for å oppfylle fremtidige betalingsforpliktelser.
+En fremgangsmåte for å autorisere utgifter først når budsjettmidler kan reserveres for å oppfylle fremtidige betalingsforpliktelser.
 
 ###### <a name="budget-control-dimension"></a>**budsjettkontrolldimensjon**
 
@@ -135,9 +135,9 @@ En planleggingsstruktur som brukes til å planlegge budsjettmiddeltildelinger og
 
 ###### <a name="bulk-item"></a>**bulkvare**
 
-En formelvare innleveres til en til en aktivitet for levering av produktet.
+En formelvareinnlevering til en aktivitet for produktlevering.
 
-###### <a name="bundle"></a>**gruppe**
+###### <a name="bundle"></a>**bunt**
 
 Kombinasjonen av et antall produkter for salg som én enhet.
 
@@ -145,7 +145,7 @@ Kombinasjonen av et antall produkter for salg som én enhet.
 
 En delvis uavhengig driftsenhet som er opprettet for å nå strategiske forretningsmål.
 
-### <a name="c"></a>**K**
+### <a name="c"></a>**C**
 
 ###### <a name="capacity-load"></a>**kapasitetsbelastning**
 
@@ -161,9 +161,9 @@ Budsjettet som overføres fra ett regnskapsår til neste, og som er reservert fo
 
 ###### <a name="cash-generating-unit"></a>**kontantgenererende enhet**
 
-Den minste gruppen med klassifiseringsbare aktiva som genererer kontanter uavhengig av andre aktiva i en organisasjon. Disse gruppene med anleggsmidler brukes til å måle verdiforringelse som vil påløpe.
+Den minste gruppen med klassifiseringsbare aktiva som genererer kontanter uavhengig av andre aktiva i en organisasjon. Disse gruppene med aktiva brukes til å måle verdiforringelse som vil påløpe.
 
-###### <a name="catch-weight"></a>**variabel vekt**
+###### <a name="catch-weight"></a>**faktisk vekt**
 
 Faktisk eller pålydende vekt av en salgsvare eller lagervare.
 
@@ -185,7 +185,7 @@ Et kildedokument som dokumenterer mer enn én referansebestilling.
 
 ###### <a name="contractor"></a>**oppdragstaker**
 
-Rolle som brukes av en person som deltar i en entreprenør–arbeidsgiver-relasjon med en juridisk enhet.
+Rolle som brukes av en person som deltar i en oppdragstaker–arbeidsgiver-relasjon med en juridisk enhet.
 
 ###### <a name="co-product"></a>**koprodukt**
 
@@ -231,11 +231,11 @@ En informasjonsstruktur som representerer dataegenskapene ved en enhet.
 
 ###### <a name="delegate"></a>**representant**
 
-En representant er en type som representerer referanser til metoder med en bestemt parameter-liste og returtype.
+En representant er en type som representerer referanser til metoder med en bestemt parameterliste og returtype.
 
 ###### <a name="delivery-note"></a>**følgeseddel**
 
-Et forretningsdokument som dokumenterer levering av varer mellom to parter.
+Et forretningsdokument som dokumenterer levering av produkter mellom to parter.
 
 ###### <a name="demand-forecast"></a>**behovsprognose**
 
@@ -249,11 +249,11 @@ En forretningsprosess som beregner fremtidige behov og oppretter behovsprognoser
 
 Kjøretøyet som brukes for distribusjon på testing av brukeraksept (UAT) og produksjonsmiljøer.
 
-###### <a name="designer"></a>**utforming**
+###### <a name="designer"></a>**designer**
 
 Et Visual Studio-verktøy som du brukte til å opprette, oppdatere og inspisere modellelementene.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\finans-dimensjoner\dimensjon-basert konfigurasjon**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**dimensjonsbasert produktkonfigurasjon**
 
 En konfigurasjonsteknologi som brukes til å opprette produktvarianter ved å velge verdier for produktdimensjoner.
 
@@ -269,7 +269,7 @@ En metode for å sette en operasjonsprosess på vent mens bestilte varer er i en
 
 Et programtjeneste som brukes til lagring og behandling av dokumenter i en organisasjon.
 
-###### <a name="duty"></a>**avgift**
+###### <a name="duty"></a>**plikt**
 
 I sikkerhetsmodellen finnes et sett med tilgangsrettigheter for program som er nødvendige for at en bruker kan utføre arbeidsoppgavene sine.
 
@@ -281,7 +281,7 @@ Nettverksystem for overføring av midler fra én bankkonto til en annen.
 
 ###### <a name="event"></a>**hendelse**
 
-En hendelse gjør det mulig for en klasse eller et objekt å varsle andre klasser eller objekter når noe interessert skjer.
+En hendelse gjør det mulig for en klasse eller et objekt å varsle andre klasser eller objekter når noe interesserant skjer.
 
 ###### <a name="epe-every-product-every"></a>**EPE (Every Product Every)**
 
@@ -301,7 +301,7 @@ Finansdataklassifikator som opprettes fra parter, lokasjoner, produkter og aktiv
 
 Dataelement i domenet for en finansdimensjon.
 
-###### <a name="financial-statement"></a>**finansrapport**
+###### <a name="financial-statement"></a>**regnskapsoppgjør**
 
 Rapport som dokumenterer en organisasjons økonomiske og finansielle stilling.
 
@@ -313,9 +313,9 @@ Kostnad som er uavhengig av endringer i produktet levering ytelse eller avgang.
 
 En valuta som har en fast valutakurs i forhold til en annen valuta.
 
-###### <a name="fixed-quantity-kanban"></a>**fast Kanban-antall**
+###### <a name="fixed-quantity-kanban"></a>**Kanban med fast antall**
 
-En type kanban som brukes når antall Kanbaner som er tilordnet til en kanban-regel er konstant.
+En type Kanban som brukes når antall Kanbaner som er tilordnet til en Kanban-regel er konstant.
 
 ###### <a name="flexible-authentication"></a>**fleksibel godkjenning**
 
@@ -339,13 +339,13 @@ Et dokument som ofte brukes av enheter i offentlig sektor til å sette til side 
 
 Tidsperioden utover en angitt dato da en forpliktelse kan bli oppfylt uten forsinkelse.
 
-###### <a name="gst-goods-and-services-tax"></a>**GST (Goods and Services Tax)**
+###### <a name="gst-goods-and-services-tax"></a>**GST (goods and services tax)**
 
 En merverdiavgift som er pålagt i enkelte land/områder.
 
 ### <a name="i"></a>**I**
 
-###### <a name="intercompany"></a>**konserninternt**
+###### <a name="intercompany"></a>**konsernintern**
 
 Oppstår mellom eller i relasjon til to eller flere juridiske enheter som er en del av den samme organisasjonen som konsoliderer kontoene til de juridiske enhetene.
 
@@ -359,11 +359,11 @@ En produktfamiliegruppering som brukes for prognose og behovsplanlegging.
 
 ###### <a name="item-relation"></a>**varerelasjon**
 
-En referanse til varetildelingsgruppen eller varen og dens produktdimensjoner i en kanban-regel.
+En referanse til varetildelingsgruppen eller varen og dens produktdimensjoner i en Kanban-regel.
 
 ### <a name="k"></a>**K**
 
-###### <a name="kanban"></a>**kanban**
+###### <a name="kanban"></a>**Kanban**
 
 Et signal som viser et behov for et produktantall.
 
@@ -371,17 +371,17 @@ Et signal som viser et behov for et produktantall.
 
 Definerer sekvensen med aktiviteter som utføres for Kanbaner som er opprettet for en Kanban-regel.
 
-###### <a name="kanban-job"></a>**kanban-jobb**
+###### <a name="kanban-job"></a>**Kanban-jobb**
 
 Prosess eller overføringsaktivitet i en produksjonsflyt som utløses av en Kanban.
 
-###### <a name="kanban-job-consumption"></a>**kanban-jobbforbruk**
+###### <a name="kanban-job-consumption"></a>**Kanban-jobbforbruk**
 
 Uttaket av produktkomponenter fra lageret for å fullføre Kanban-produksjonsjobbene.
 
-###### <a name="kanban-product-quantity"></a>**kanban-produktantall**
+###### <a name="kanban-product-quantity"></a>**Kanban-produktantall**
 
-Antall varebehov som ligger på en kanban som er basert på en kanban-regel.
+Antall varebehov som ligger på en Kanban som er basert på en Kanban-regel.
 
 ###### <a name="kanban-rule"></a>**Kanban-regel**
 
@@ -393,13 +393,13 @@ En regel i et system for lean manufacturing som realiserer policyer for material
 
 En filosofi der produksjonsoperasjonene fremmer lean-produksjonsflyter og lean-forretningsaktiviteter.
 
-###### <a name="lean-schedule-group"></a>**lean-planleggingsgruppe**
+###### <a name="lean-schedule-group"></a>**lean-planleggingsgrupper**
 
-En måte å aggregere varer for produksjon på, for eksempel basert på en oppsettgruppe, forsendelsesgruppe eller transportgruppe.
+En metode for å aggregere varer for produksjon, for eksempel basert på en oppsettgruppe, forsendelsesgruppe eller transportgruppe.
 
 ###### <a name="ledger-account"></a>**finanskonto**
 
-Klassifikator opprettet fra en kombinasjon av hovedkontoverdi og andre finansdimensjonsverdier som er oppført i en kontoplan, og som brukes til å klassifisere de økonomiske konsekvensene av økonomisk aktivitet.
+Klassifiserer opprettet fra en kombinasjon av hovedkontoverdi og andre finansdimensjonsverdier som er oppført i en kontoplan, og som brukes til å klassifisere de økonomiske konsekvensene av økonomisk aktivitet.
 
 ###### <a name="license-code"></a>**lisenskode**
 
@@ -411,9 +411,9 @@ En parts evne til å bruke omsetningsaktiva til å utligne kortsiktig gjeld.
 
 ### <a name="m"></a>**M**
 
-###### <a name="manufacturing-overhead-based-on-material"></a>**administrasjonskostnader i produksjon basert på materiale**
+###### <a name="manufacturing-overhead-based-on-material"></a>**indirekte kostnader i produksjonen basert på materiale**
 
-Administrasjonskostnader i produksjonen uttrykkes som beregningsformler for indirekte kostnad for en tilleggsprosent. En kostgruppe som er tilordnet til materialkomponenter fungerer som grunnlag for en beregningsformel. Beregningsformler kan defineres for individuelle produkter eller varegrupper som tilordnes til produkter, for å gi mer fleksibilitet ved beregning av administrasjonskostnader i produksjonen som er basert på materiale.
+Indirekte kostnader i produksjonen uttrykkes som beregningsformler for indirekte kostnad for en tilleggsprosent. En kostgruppe som er tilordnet til materialkomponenter fungerer som grunnlag for en beregningsformel. Beregningsformler kan defineres for individuelle produkter eller varegrupper som tilordnes til produkter, for å gi mer fleksibilitet ved beregning av administrasjonskostnader i produksjonen som er basert på materiale.
 
 ###### <a name="master-scheduling"></a>**hovedplanlegging**
 
@@ -421,7 +421,7 @@ Prosessen for generering av en timeplan for å samsvare forsyning med behov.
 
 ###### <a name="model"></a>**modell**
 
-En modell inneholder kodeelementer og referanse til metadata. Det opprettes og inspiseres i Visual Studio.
+En modell inneholder kodeelementer og referanse til metadata. Den opprettes og inspiseres i Visual Studio.
 
 ###### <a name="model-element"></a>**modellelement**
 
@@ -431,11 +431,11 @@ En modell er en gruppe med elementer (kildefiler og metadata) som utgjør en dis
 
 ###### <a name="nbv-net-book-value"></a>**netto bokført verdi**
 
-Verdien for et anleggsmiddel beregnes som differansen mellom den opprinnelig kostnaden for anleggsmidlene minus de akkumulerte avskrivningene.
+Verdien for et anleggsmiddel beregnes som differansen mellom den opprinnelig kostnaden for anleggsmiddelet minus de akkumulerte avskrivningene.
 
 ### <a name="o"></a>**O**
 
-###### <a name="object-permission"></a>**objekttillatelse**
+###### <a name="object-permission"></a>**objekttillatelser**
 
 En tillatt opprettings-, lese-, oppdaterings-, slette- eller kjøreoperasjonen for et objekt som kan sikres.
 
@@ -445,7 +445,7 @@ En organisasjon som fordeler styringen av økonomiske ressurser og driftsprosess
 
 ###### <a name="output-product"></a>**resultatprodukt**
 
-De fysiske produktene som resulterer av en aktivitet.
+De fysiske produktene som er resultatet fra en aktivitet.
 
 ###### <a name="overlayering"></a>**overlag**
 
@@ -467,7 +467,7 @@ En person eller organisasjon som deltar i økonomiske aktiviteter.
 
 ###### <a name="pegging"></a>**utligning**
 
-Prosessen med å spore antallet av en ønsket var til kilden.
+Prosessen med å spore antallet av en ønsket vare til kilden.
 
 ###### <a name="pegging-event"></a>**utligningshendelse**
 
@@ -483,7 +483,7 @@ Forutsett etterspørsel etter et produkt fra en juridisk enhet som har rollen so
 
 ###### <a name="post"></a>**postere**
 
-Registrere pengeverdien av en økonomisk hendelse i en bestemt konto eller vil oppsummere og omklassifisere generelle og underordnede kontooppføringer i generelle og underordnede kontooppføringer i økonomimodulen.
+Registrere pengeverdien av en økonomisk hendelse i en bestemt konto eller å oppsummere og omklassifisere generelle og underordnede kontooppføringer i økonomijournal i generelle og underordnede kontooppføringer i finanskontooppføringer.
 
 ###### <a name="preparer"></a>**klargjører**
 
@@ -503,11 +503,11 @@ En del av et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimensjon**
 
-Størrelse-, farge- eller konfigurasjonsproduktattributtene som brukes for ..\financial-dimensions\dimension-based konfigurasjon.
+Størrelse-, farge- eller konfigurasjonsproduktattributtene som brukes for dimensjonsbasert produktkonfigurasjon.
 
 ###### <a name="product-family"></a>**produktfamilie**
 
-En unik gruppering av varer, tjenester eller rettigheter som enten deltar i samme produksjons- eller leveringsaktiviteter, eller som tilbys til de samme markedssegmentene. I Dynamics 365 for Operations er gruppering representert ved hjelp av en prognosetildelingsnøkkel.
+En unik gruppering av varer, tjenester eller rettigheter som deltar i samme produksjons- eller leveringsaktiviteter, eller som tilbys til de samme markedssegmentene. I Dynamics 365 for Operations er gruppering representert ved hjelp av en prognosetildelingsnøkkel.
 
 ###### <a name="product-master"></a>**produktstandard**
 
@@ -577,7 +577,7 @@ En fremgangsmåte for justering av to eller flere kontoer eller utdrag slik at t
 
 En metode som brukes til å øke eller redusere prognosebehov i hovedplanleggingen, basert på brukerdefinerte prosentandeler som brukes i bestemte perioder.
 
-###### <a name="register"></a>**registrere**
+###### <a name="register"></a>**kasse**
 
 Et register som brukes til å registrere driftskonsekvensene og de juridiske og økonomiske konsekvensene av ressursflythendelser i et regnskapssystem.
 
@@ -597,7 +597,7 @@ Personen som ber om de økonomiske ressursene.
 
 Produkt med distribusjon som er begrenset eller regulert av en offentlig myndighet.
 
-### <a name="s"></a>**L**
+### <a name="s"></a>**S**
 
 ###### <a name="sales-agreement"></a>**salgsavtale**
 
@@ -613,7 +613,7 @@ En policy som autoriserer parter til å endre salgsordrevilkårene og kontroller
 
 ###### <a name="sales-quotation"></a>**salgstilbud**
 
-Et kildedokument som dokumenterer et tilbud om å forsyne et produktantall til en bestemt pris og innen en angitt dato som svar på en tilbudsforespørsel i en salgsprosess.
+Et kildedokument som dokumenterer et tilbud om å levere et produktantall til en bestemt pris og innen en angitt dato som svar på en tilbudsforespørsel i en salgsprosess.
 
 ###### <a name="security-role"></a>**sikkerhetsrolle**
 
@@ -621,9 +621,9 @@ Et definert sett med tilgangsrettigheter for programmet. En sikkerhetsrolle som 
 
 ###### <a name="segregation-of-duties"></a>**arbeidsdeling**
 
-Et utformingsprinsipp som brukes til å redusere risikoen for bedrageri, uregelmessigheter og feil som skiller registrering, bekreftelse, godkjenning, forvaring av anleggsmidler og periodiske gjennomgangsplikter for folk som deltar i, dokumenterer eller registrerer de økonomiske konsekvensene av økonomiske transaksjoner.
+Et utformingsprinsipp som brukes til å redusere risikoen for bedrageri, uregelmessigheter og feil som skiller registrering, bekreftelse, godkjenning, forvaring av aktiva og periodiske gjennomgangsplikter for personer som deltar i, dokumenterer eller registrerer de økonomiske konsekvensene av økonomiske transaksjoner.
 
-###### <a name="sequencing"></a>**sekvens**
+###### <a name="sequencing"></a>**sekvensering**
 
 Rekkefølgen jobber behandles i eller operasjoner utføres i på et produksjonsanlegg, for å oppnå målene.
 
@@ -631,9 +631,9 @@ Rekkefølgen jobber behandles i eller operasjoner utføres i på et produksjonsa
 
 Et aktiva som brukes av flere enn én kontantgenererende enhet (CGU). Et eksempel er et distribusjonssenter som brukes til å oppbevare varer før de transporteres til forskjellige markeder som deler det samme distribusjonssenteret.
 
-###### <a name="single-use-kanban"></a>**kanban for engangsbruk**
+###### <a name="single-use-kanban"></a>**Kanban for engangsbruk**
 
-Type kanban som brukes med en regel for kanban med fast antall for å dekke en spesielt høy etterspørsel. En kanban for engangsbruk utløser ikke en ny kanban når den blir slettet.
+Type Kanban som brukes med en regel for Kanban med fast antall for å dekke en spesielt høy etterspørsel. En Kanban for engangsbruk utløser ikke en ny Kanban når den blir slettet.
 
 ###### <a name="smart-rounding"></a>**smart avrunding**
 
@@ -661,17 +661,17 @@ En finansdimensjon som er tilordnet til en tabell eller visning i databasen som 
 
 Tiden det tar å produsere én enhet av et produkt.
 
-###### <a name="task-guide"></a>**Oppgaveveiledning**
+###### <a name="task-guide"></a>**oppgaveveiledning**
 
-En kontrollert, veiledet opplevelse gjennom trinnene i en oppgaveregistrering. En oppgaveveiledning fører brukeren gjennom opplevelsen som ble registrert. Alle virkemåter for sikkerhet, data og program er de samme når du fullfører en oppgaveveiledning som når de er uten oppgaveveiledningen. Oppgaveveiledningen bruker den samme instrumenteringen som Oppgaveregistrering for å vite når en bruker har fullført det aktuelle trinnet, slik at den kan be brukeren om å gjøre det neste trinnet i registreringen.
+En kontrollert, veiledet opplevelse gjennom trinnene i et oppgaveopptak. En oppgaveveiledning fører brukeren gjennom opplevelsen som ble registrert. Alle virkemåter for sikkerhet, data og program er de samme når du fullfører en oppgaveveiledning som når de er uten oppgaveveiledningen. Oppgaveveiledningen bruker den samme instrumenteringen som Oppgaveopptaker for å vite når en bruker har fullført det aktuelle trinnet, slik at den kan be brukeren om å gjøre det neste trinnet i registreringen.
 
-###### <a name="task-recorder"></a>**Oppgaveregistrering**
+###### <a name="task-recorder"></a>**Oppgaveopptaker**
 
-Et verktøy som er forhåndsinstallert i Dynamics 365 for Operations. Når du registrerer, registrerer det alle hendelser som angis av brukeren i Dynamics 365 for Operations-brukergrensesnittet som blir utført mot serveren, inkludert verdier som blir lagt til, innstillinger som endres, data som fjernes, osv.
+Et verktøy som er forhåndsinstallert i Dynamics 365 for Operations. Under opptaket registreres alle hendelser som angis av brukeren i Dynamics 365 for Operations-brukergrensesnittet som blir utført mot serveren, inkludert verdier som blir lagt til, innstillinger som endres, data som fjernes og så videre.
 
-###### <a name="task-recording"></a>**Oppgaveregistrering**
+###### <a name="task-recording"></a>**Oppgaveopptak**
 
-En fil som inneholder handlinger og merknader som registreres når Oppgaveregistrering kjøres i Microsoft Dynamics 365 for Operations.
+En fil som inneholder handlinger og merknader som registreres når Oppgaveopptak kjøres i Microsoft Dynamics 365 for Operations.
 
 ###### <a name="three-way-matching-policy"></a>**treveis kontrollpolicy**
 
@@ -701,9 +701,9 @@ En driftsenhet som styrer én eller flere produksjonsflyter.
 
 En metode for modellering av produktstandarder og søking etter produktvariantkonfigurasjoner.
 
-###### <a name="vat-value-added-tax"></a>**Mva (merverdiavgift)**
+###### <a name="vat-value-added-tax"></a>**mva (merverdiavgift)**
 
-En avgift på varer i hvert produksjonstrinn basert på merverdien som er tilført i løpet av trinnet.
+En avgift på produkter i hvert produksjonstrinn basert på merverdien som er tilført i løpet av trinnet.
 
 ###### <a name="vendor-catalog"></a>**leverandørkatalog**
 
@@ -713,7 +713,7 @@ En liste over produkttilbud som er tilgjengelige for kjøp fra en leverandør.
 
 Et kildedokumentet som dokumenterer en forespørsel om leverandørbetaling. En leverandørfaktura kan vise til én eller flere bestillinger. Når leverandørfakturaen er autorisert, kan leverandøren betales.
 
-### <a name="w"></a>**O**
+### <a name="w"></a>**W**
 
 ###### <a name="work-cell"></a>**arbeidscelle**
 
@@ -721,7 +721,7 @@ Ressursgruppe som deltar i en produksjonsflytaktivitet.
 
 ###### <a name="worker"></a>**arbeider**
 
-En person som antar rollen som en ansatt eller en entreprenør og som betales mot utveksling av tjenester.
+En person som antar rollen som en ansatt eller en oppdragstaker og som betales mot utveksling av tjenester.
 
 ###### <a name="workspace"></a>**arbeidsområde**
 
