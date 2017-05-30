@@ -1,15 +1,15 @@
 ---
 title: Infokoder
 description: Denne artikkelen gir en oversikt om informasjonskoder, informasjonskodegrupper og hvordan de brukes.
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -47,13 +47,12 @@ I Dynamics 365 for Operations - Retail kan du opprette grupper av infokoder. Inf
 -   Koble informasjonskoder til andre koder eller informasjonskodegrupper for å samle inn informasjon om et produkt eller en transaksjon, uten å definere en egen informasjonskode eller koblede informasjonskoden for hvert scenario.
 
 ## <a name="info-code-examples"></a>Informasjonskodeeksempler
-**Eksempel 1: Bruke infokoder på nytt** Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, utløses en annen informasjonskode like etter. Når du selger enkelte produkter, kan du eksempel be kassereren om å spørre kunden om de vil kjøpe batterier og en produktgaranti. Når det gjelder andre produkter, kan du be kassereren om å spørre kunden om de vil kjøpe batterier, og også be om postnummeret deres. Hvis du oppretter koblede informasjonskoder for disse scenariene, må du definere alle variantene av informasjonskoden, slik at kassereren blir bedt om å be om riktig informasjon. Hvis du bruker informasjonskodegrupper, kan du definere vanlige informasjonskoder, for eksempel forespørsel om batterier, én gang og deretter bruke dem på nytt i flere informasjonskodegrupper. Du kan også bruke prioritering i informasjonskodegruppene til å identifisere rekkefølgen spørsmålene vises i. **Eksempel 2: Koble infokoder til infokodegrupper** Når du selger visse produkter, for eksempel mobilenheter, er det alltid aktuelt å samle inn et sett med spesifikk informasjon, for eksempel telefonnummer, MEID-nummer (Mobile Equipment Identifier) og serienummer. Du vil imidlertid også samle inn annen informasjon for et nettbrett enn for en mobiltelefon. Du kan definere en informasjonskodegruppe som inkluderer spørsmål om telefonnummeret, MEID-nummeret og serienummeret, og deretter koble informasjonskodegruppen til en individuell informasjonskode. Når den produktspesifikke informasjonskoden utløses, kan informasjonskodegruppen utløses i neste omgang, slik at du kan samle inn fellesdataene uten å måtte definere flere sett med koblede informasjonskoder for hver enhet.
+**Eksempel 1: Bruke infokoder på nytt** Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, utløses en annen informasjonskode like etter. Når du selger enkelte produkter, kan du eksempel be kassereren om å spørre kunden om de vil kjøpe batterier og en produktgaranti. Når det gjelder andre produkter, kan du be kassereren om å spørre kunden om de vil kjøpe batterier, og også be om postnummeret deres. Hvis du oppretter koblede informasjonskoder for disse scenariene, må du definere alle variantene av informasjonskoden, slik at kassereren blir bedt om å be om riktig informasjon. Hvis du bruker informasjonskodegrupper, kan du definere vanlige informasjonskoder, for eksempel forespørsel om batterier, én gang og deretter bruke dem på nytt i flere informasjonskodegrupper. Du kan også bruke prioritering i informasjonskodegruppene til å identifisere rekkefølgen spørsmålene vises i.
+
+
+**Eksempel 2: Koble infokoder til infokodegrupper** Når du selger visse produkter, for eksempel mobilenheter, er det alltid aktuelt å samle inn et sett med spesifikk informasjon, for eksempel telefonnummer, MEID-nummer (Mobile Equipment Identifier) og serienummer. Du vil imidlertid også samle inn annen informasjon for et nettbrett enn for en mobiltelefon. Du kan definere en informasjonskodegruppe som inkluderer spørsmål om telefonnummeret, MEID-nummeret og serienummeret, og deretter koble informasjonskodegruppen til en individuell informasjonskode. Når den produktspesifikke informasjonskoden utløses, kan informasjonskodegruppen utløses i neste omgang, slik at du kan samle inn fellesdataene uten å måtte definere flere sett med koblede informasjonskoder for hver enhet.
 
  
--
-
-
-
 
 
 
