@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som trinnet skal tilordnes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som trinnet kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som trinnet kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som trinnet skal tilordnes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som trinnet skal tilordnes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Trinnet tilordnes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Trinnet tilordnes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Trinnet tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
@@ -211,13 +209,11 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som dokumentet videresendes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som dokumentet kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som dokumentet kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som dokumentet skal videresendes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som dokumentet skal videresendes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Dokumentet videresendes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Dokumentet videresendes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Dokumentet videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>

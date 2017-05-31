@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -195,13 +195,11 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen skal tilordnes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal tilordnes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal tilordnes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen tilordnes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen tilordnes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
@@ -228,18 +226,16 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>En arbeidselementkø</td>
     <td><ol>
     <li>Når du har valgt <strong>Kø</strong>, klikker du <strong>Købasert</strong>-kategorien.</li>
-    <li>Gjør følgende for å tilordne beslutningen til en bestemt kø:
-    <ol>
+    <li>Gjør følgende for å tilordne beslutningen til en bestemt kø: <ol>
     <li>I <strong>Køtype</strong>-listen velger du <strong>Arbeidselementkøer</strong>.</li>
     <li>Velg køen i <strong>Kønavn</strong>-listen.</li>
     </ol></li>
-    <li>Hvis en bestemt betingelse skal bestemme hvilken kø beslutningen skal tilordnes til, følger du denne fremgangsmåten:
-    <ol>
+    <li>Hvis en bestemt betingelse skal bestemme hvilken kø beslutningen skal tilordnes til, følger du denne fremgangsmåten: <ol>
     <li>I <strong>Køtype</strong>-listen velger du <strong>Betingede arbeidselementkøer</strong>.</li>
     <li>I <strong>Kønavn</strong>-listen velger du <strong>Betinget kø</strong>.</li>
     </ol></li>
     </ol>
-    <strong>Merk</strong>: Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
+    <strong>Merk:</strong> Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
     </tr>
     </tbody>
     </table>
@@ -285,13 +281,11 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen videresendes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen videresendes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen videresendes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>

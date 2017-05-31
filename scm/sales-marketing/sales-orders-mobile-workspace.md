@@ -3,10 +3,10 @@ title: "Det mobile arbeidsområdet Salgsordrer"
 description: "Dette emnet gir informasjon om det mobile arbeidsområdet for salgsordrer, som er tilgjengelig for Microsoft Dynamics 365 for Operations-mobilappen. Dette arbeidsområdet holder deg oppdatert om salgsordrene hvor som helst og når som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for salgsordrer, som e
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Oversikt over det mobile arbeidsområdet for salgsordrer
 ---------------------------------------------
 
-Det mobile arbeidsområdet **Salgsordrer** har tilgang til Microsoft Dynamics 365 for Operations og lar deg vise detaljert informasjon om hver salgsordre. Denne informasjonen inkluderer statusen for ordren, kontaktinformasjon for kunden og kontaktinformasjon for ordremottakeren Det mobile arbeidsområdet **Salgsordrer** inneholder en øyeblikkelig visning av salgsordrer. Du kan vise alle salgsordrer, vise salgsordrer etter kunde eller vise informasjon om en bestemt salgsordre. Det mobile arbeidsområdet inneholder to visninger som lar deg analysere salgsordrer i dybden.
+Det mobile arbeidsområdet **Salgsordrer** har tilgang til Microsoft Dynamics 365 for Operations og lar deg vise detaljert informasjon om hver salgsordre. Denne informasjonen inkluderer statusen for ordren, kontaktinformasjon for kunden og kontaktinformasjon for ordremottakeren Det mobile arbeidsområdet **Salgsordrer** inneholder en øyeblikkelig visning av salgsordrer. Du kan vise alle salgsordrer, vise salgsordrer etter kunde eller vise informasjon om en bestemt salgsordre. 
+
+Det mobile arbeidsområdet inneholder to visninger som lar deg analysere salgsordrer i dybden.
 
 ### <a name="view-all-sales-orders"></a>Vis alle salgsordrer
 
@@ -50,6 +52,7 @@ Denne visningen viser alle salgsordrer.
     -   Søk etter status
     -   Søk etter frigivelsesstatus
     -   Søk etter opprettingsdato og -klokkeslett
+    
 -   Når du har valgt salgsordrene, kan du vise detaljene for bestemte ordrer. Du kan vise følgende informasjon:
     -   Informasjon om navn og adresse for kunde
     -   Forskjellige datoer for salgsordren, for eksempel ønsket forsendelsesdato og bekreftet forsendelsesdato
@@ -65,6 +68,7 @@ Denne visningen viser salgsordrer etter kunde.
 -   Bruk et av filtrene nedenfor for å vise ordrer for en kunde:
     -   Søk etter navn
     -   Søk etter konto
+
 -   Når du velger en kunde, kan du vise følgende informasjon:
     -   Navn på kunde og gruppe
     -   Kontaktinformasjon for kunde
@@ -96,7 +100,7 @@ Før du kan bruke det mobile arbeidsområdet for **Salgsordrer**, må du kontrol
 <tr class="odd">
 <td>Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere må implementeres.</td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 må være implementert.</td>
@@ -104,9 +108,9 @@ Før du kan bruke det mobile arbeidsområdet for **Salgsordrer**, må du kontrol
 <td>KB 4013633 (en X++ oppdatering eller hurtigreparasjon for metadata) inneholder fire mobile arbeidsområder for forsyningskjedeadministrasjon. Systemadministrator må følge disse trinnene for å implementere KB 4013633:
 <ol>
 <li>Last ned KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installer hurtigreparasjonen for metadata</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
 </ol></td>
 </tr>
 <tr class="odd">

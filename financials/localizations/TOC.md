@@ -67,6 +67,7 @@
 ### [CODA-bankkontoutdrag](emea-bel-coda-bank-statement-import.md)
 ### [Intervat-avgiftsdeklarering](emea-bel-intervat-tax-declaration.md)
 ### [Oppsett for PRODCOM-rapport](emea-bel-prodcom-report.md)
+### [Avstemmingsrapporter](emea-bel-reconciliation-reports.md)
 
 ## Tsjekkia
 ### [Kontantrabatt på kreditnota](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Avskrivningssuspensjon](emea-cze-depreciation-suspension-holidays.md)
 ### [Avskrivning av anleggsmidler](emea-cze-fixed-assets-depreciation.md)
 ### [Halvårsavskrivning](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Mva-rapportering ](emea-cze-intra-community-vat-transactions.md)
 ### [Mva-oppgave](emea-cze-vat-statement-details.md)
 ## Estland
 ### [Mva-oppgave](emea-est-vat-statement-details.md)

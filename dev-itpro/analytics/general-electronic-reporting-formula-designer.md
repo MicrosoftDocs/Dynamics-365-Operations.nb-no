@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -474,7 +474,7 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 </tr>
 <tr class="even">
 <td>FORMAT (streng 1, streng 2 [, streng, 3, ...])</td>
-<td>Returner den angitte strengen, som formateres ved hjelp av forekomster av <strong>%N</strong> med det <em>n</em>. argumentet. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
+<td>Returner den angitte strengen, som formateres ved hjelp av forekomster av <strong>%N</strong> med det <em>n</em>-te argumentet. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
 <td>I dette eksemplet returnerer <strong>PaymentModel</strong>-datakilden listen over kundeposter via <strong>Kunder</strong>-komponenten og behandlingsdatodatoverdien via <strong>ProcessingDate</strong>-feltet. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> I ER-formatet som er utformet for å generere en elektronisk fil for utvalgte kunder, velges <strong>PaymentModel</strong> som en datakilde og styrer prosessflyten. Et unntak for sluttbrukere iverksettes når en valgt kunde stoppes for datoen da rapporten behandles. Formelen som er utviklet for denne typen behandlingskontroll kan bruke følgende ressurser:
 <ul>
 <li>Dynamics 365 for Operations-etiketten SYS70894, som har følgende tekst:

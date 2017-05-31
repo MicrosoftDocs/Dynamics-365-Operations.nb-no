@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Viser økonomiske data eller data fra et Excel-regneark når du bruker kolonnen <strong>Kobling til finansdimensjoner</strong> eller <strong>Kobling til regneark</strong> i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for de etterfølgende radene:
-    <ul>
+    <td>Viser økonomiske data eller data fra et Excel-regneark når du bruker kolonnen <strong>Kobling til finansdimensjoner</strong> eller <strong>Kobling til regneark</strong> i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for de etterfølgende radene: <ul>
     <li><strong>Registerkode/attributtkategori</strong> ACTUAL</li>
     <li><strong>Registerkode/attributtkategori</strong> ACTUAL</li>
     <li><strong>Regnskapsår:</strong> BASE</li>
@@ -359,7 +358,7 @@ Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med
     <li><strong>Tidsrom som er dekket:</strong> PERIODIC</li>
     <li><strong>Kolonnebredde:</strong> 14</li>
     </ul>
-    Du kan endre disse standardinnstillingene.</td>
+Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -387,12 +386,11 @@ Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Viser data som er trukket ut fra et Excel-regneark. Når du velger kolonnetypen <strong>WKS</strong>, angis standardinnstillingene automatisk for de etterfølgende radene:
-    <ul>
+    <td>Viser data som er trukket ut fra et Excel-regneark. Når du velger kolonnetypen <strong>WKS</strong>, angis standardinnstillingene automatisk for de etterfølgende radene: <ul>
     <li><strong>Regnskapsår:</strong> PERIODIC</li>
     <li><strong>Periode:</strong> BASE</li>
     </ul>
-    Du kan endre disse standardinnstillingene.</td>
+Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

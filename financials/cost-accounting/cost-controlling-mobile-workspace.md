@@ -3,10 +3,10 @@ title: "Mobilt arbeidsområde for kostnadskontroll"
 description: "Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll, som er tilgjengelig for Microsoft Dynamics 365 for Operations-mobilappen. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -36,11 +36,15 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll, 
 <a name="overview-of-the-cost-controlling-mobile-workspace"></a>Oversikt over det mobile arbeidsområdet for kostnadskontroll
 -------------------------------------------------
 
-Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusene for individuelle kostnadselementer. En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte ber om lederen om tillatelse til å delta på konferansen. Lederen åpner det mobile arbeidsområdet for **kostnadskontroll** på mobilenheten for å se om han/hun har budsjettert for at den ansatte kan delta på konferansen.
+Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusene for individuelle kostnadselementer. 
+
+En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte ber om lederen om tillatelse til å delta på konferansen. Lederen åpner det mobile arbeidsområdet for **kostnadskontroll** på mobilenheten for å se om han/hun har budsjettert for at den ansatte kan delta på konferansen.
 
 ### <a name="data-security"></a>Datasikkerhet
 
-Dataene i arbeidsområdet for **kostnadskontroll** er sikret gjennom brukerlegitimasjon. Kostsenterledere kan bare se data for sitt eget kostsenter. Tilgangsnivåsikkerhet behandles i modulen **Kostnadsregnskap**. Regnskapsførere definerer konfigurasjonen av det mobile arbeidsområdet for **kostnadskontroll** i modulen **Kostnadsregnskap**. Når arbeidsområdet er publisert til Microsoft Dynamics-365 for Operations-mobilappen, er det tilgjengelig i appen. Dette sikrer at alle kostsenterledere i organisasjonen ser dataene i det samme formatet.
+Dataene i arbeidsområdet for **kostnadskontroll** er sikret gjennom brukerlegitimasjon. Kostsenterledere kan bare se data for sitt eget kostsenter. Tilgangsnivåsikkerhet behandles i modulen **Kostnadsregnskap**. 
+
+Regnskapsførere definerer konfigurasjonen av det mobile arbeidsområdet for **kostnadskontroll** i modulen **Kostnadsregnskap**. Når arbeidsområdet er publisert til Microsoft Dynamics-365 for Operations-mobilappen, er det tilgjengelig i appen. Dette sikrer at alle kostsenterledere i organisasjonen ser dataene i det samme formatet.
 
 ### <a name="actions-views-and-links"></a>Handlinger, visninger og koblinger
 
@@ -87,7 +91,7 @@ Før du kan bruke det mobile arbeidsområdet for **kostnadskontroll**, må du ko
 <tr class="odd">
 <td>Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere må implementeres.</td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 må være implementert.</td>
@@ -95,9 +99,9 @@ Før du kan bruke det mobile arbeidsområdet for **kostnadskontroll**, må du ko
 <td>KB 4013633 (en X++ oppdatering eller hurtigreparasjon for metadata) inneholder fire mobile arbeidsområder for forsyningskjedeadministrasjon. Systemadministrator må følge disse trinnene for å implementere KB 4013633:
 <ol>
 <li>Last ned KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installer hurtigreparasjonen for metadata</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
 </ol></td>
 </tr>
 <tr class="odd">

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Beregning av indirekte kostnader kjører policyene for kostnadsregnskap i riktig
 -   Regnskapsår
 -   Regnskapsperiode
 
-Beregning av indirekte kostnader kjøres uavhengig av versjonen. Derfor kan du beregne budsjettversjonen før den faktiske versjonen. Beregning av indirekte kostnader består av fire trinn, som vist i illustrasjonen nedenfor. I hvert trinn opprettes et journalhode med journaloppføringer. Dette journalhodet inneholder inndataene for hvert beregningstrinn. Policyer og regler som brukes på hver journallinje, og kostposter, genereres som utdata. Derfor må du alltid full sporbarhet. [![Beregning av indirekte kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Beregning av indirekte kostnader kjøres uavhengig av versjonen. Derfor kan du beregne budsjettversjonen før den faktiske versjonen. Beregning av indirekte kostnader består av fire trinn, som vist i illustrasjonen nedenfor. I hvert trinn opprettes et journalhode med journaloppføringer. Dette journalhodet inneholder inndataene for hvert beregningstrinn. Policyer og regler som brukes på hver journallinje, og kostposter, genereres som utdata. Derfor må du alltid full sporbarhet. 
+[![Beregning av indirekte kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og tildele den indirekte kostnaden for strøm
 I finansbokføring registreres noen kostnader, for eksempel strøm, som et engangsbeløp. Derfor finnes ikke detaljert lederinnsikt for kostnadsregnskap. For å gi riktig lederinnsikt på tvers av alle organisasjonsenheter og nivåer i kostnadsregnskap, må kostnader flyte gjennom organisasjonsenhetene. Denne flyten må være basert på en nøyaktig oversikt over forbruk eller en virkelig vurdering. I økonomimodulen kan en strømkostnad posteres som vist i tabellen nedenfor.
@@ -622,7 +623,7 @@ Hvis du vil ha mer informasjon om policyen for sats for indirekte kostnader, kan
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Trinn 4: Behandle beregning av kostnadstildeling
 
-Tildelinger brukes til å tildele saldoen på et kostnadsobjekt til andre kostnadsobjekter ved å bruke et tildelingsgrunnlag. Microsoft Dynamics 365 for Operations støtter gjensidig tildelingsmetode. I den gjensidige tildelingsmetoden gjenkjennes fullstendig de gjensidige tjenestene som hjelpekostnadsobjekter utveksler. Systemet fastslår automatisk riktig rekkefølge for tildelingene. Saldoen på et kostnadsobjekt tildeles av ett enkelt tildelingsgrunnlag. Tildelinger på tvers av dimensjoner for kostnadsobjekter og deres respektive medlemmer, støttes. Tildelingsrekkefølgen styres av kostnadskontrollenheten. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Tildelinger brukes til å tildele saldoen på et kostnadsobjekt til andre kostnadsobjekter ved å bruke et tildelingsgrunnlag. Microsoft Dynamics 365 for Operations støtter gjensidig tildelingsmetode. I den gjensidige tildelingsmetoden gjenkjennes fullstendig de gjensidige tjenestene som hjelpekostnadsobjekter utveksler. Systemet fastslår automatisk riktig rekkefølge for tildelingene. Saldoen på et kostnadsobjekt tildeles av ett enkelt tildelingsgrunnlag. Tildelinger på tvers av dimensjoner for kostnadsobjekter og deres respektive medlemmer, støttes. Tildelingsrekkefølgen styres av kostnadskontrollenheten. [![Gjensidige metode](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definere kostnadstildelingen
 
