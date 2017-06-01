@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 17a5dcf0f406380fbc4ff242932516894562fe5d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -30,7 +30,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 Dette emnet viser de mobile arbeidsområdene som nylig er lansert for Microsoft Dynamics 365 for Operations-mobilappen.
@@ -51,9 +50,9 @@ Dette emnet viser de mobile arbeidsområdene som nylig er lansert for Microsoft 
 | Mobilt arbeidsområde     | beskrivelse                                                                                                                                                                         | Få mer informasjon                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kostnadskontroll     | Kostsenterledere se kostsenterresultater når som helst og hvor som helst.                                                                                               | [Mobilt arbeidsområde for kostnadskontroll](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Lagerbeholdning     | Få mobil innsikt i reservert og tilgjengelig lagerbeholdning når som helst og hvor som helst.                                                                                                    | [Mobilt arbeidsområde for lagerbeholdning](/dynamics365/operations/scm/production-control/inventory-on-hand-mobile-workspace)       |
-| Salgsordre         | Hold deg oppdatert om salgsordrene når som helst og hvor som helst.                                                                                                                          | [Det mobile arbeidsområdet Salgsordrer](/dynamics365/operations/scm/production-control/sales-orders-mobile-workspace)                 |
-| Leverandørsamarbeid | Leverandørene kan holde seg oppdaterte på bestillinger som er sendt til dem for godkjenning, og vise informasjon om nye og oppdaterte bestillinger og kontakter. | [Mobilt arbeidsområde for leverandørsamarbeid](/dynamics365/operations/scm/procurement/vendor-collaboration-mobile-workspace) |
+| Lagerbeholdning     | Få mobil innsikt i reservert og tilgjengelig lagerbeholdning når som helst og hvor som helst.                                                                                                    | [Mobilt arbeidsområde for lagerbeholdning](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
+| Salgsordre         | Hold deg oppdatert om salgsordrene når som helst og hvor som helst.                                                                                                                          | [Det mobile arbeidsområdet Salgsordrer](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
+| Leverandørsamarbeid | Leverandørene kan holde seg oppdaterte på bestillinger som er sendt til dem for godkjenning, og vise informasjon om nye og oppdaterte bestillinger og kontakter. | [Mobilt arbeidsområde for leverandørsamarbeid](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Funksjonalitet for mobilt arbeidsområde som ble lansert i desember 2016
 | Mobilt arbeidsområde        | beskrivelse                                                                    | Få mer informasjon                                                                                                            |

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Når en ansatt i den juridiske enheten 2222 oppretter en innkjøpsrekvisisjon, a
 
 Alle innkjøpsregler ble definert i et enkelt organisasjonshierarki, organisasjonshierarkiet Firmaer, i det forrige eksemplet. En kompleks organisasjon kan imidlertid definere policyer for flere organisasjonshierarkier.  
 
+
 Contoso er et stort firma som krever komplekse innkjøpsregler for å styre rekvisisjonsprosessen. Contoso har definert regler for to ulike organisasjonshierarkier: Avdeling og Global innkjøpskontroll.  
 
 Policyen 123 er definert for organisasjonshierarkiet Avdeling for Salg Storbritannia – salgsavdeling. I policyen 123 angir kontrollregelen for innkjøpsrekvisisjon at det må iverksettes begrensninger for minimum ordreantall. I denne regelen er alternativet **Benytt begrensninger for minimumsbestillingsantall** valgt.  
@@ -93,6 +94,9 @@ Kategoripolicyregelen definerer hvordan brukere kan velge leverandører for hver
 ### <a name="re-approval-rule-for-purchase-orders"></a>Regel for ny godkjenning for bestillinger
 
 Regelen for ny godkjenning er en valgfri regel som definerer kriteriene for å kreve ny godkjenning når en bestilling endres. De valgte feltene evalueres i arbeidsflyten for bestillingen når vilkåret Krever ny godkjenning av bestilling er definert i arbeidsflyten.
+
+> [!NOTE]
+> Regnskapsdistribusjonen tilbakestilles alltid når en godkjent bestilling med endringsadministrasjon aktivert, endres. Derfor bør du være oppmerksom på at hvis du vil unngå ny godkjenning av en bestilling når bestemte felt er endret, skal IKKE feltet Accounting distribution.changed tas med som et merket felt for ny godkjenning. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Regel for tilbudsforespørsel for innkjøpsrekvisisjon
 

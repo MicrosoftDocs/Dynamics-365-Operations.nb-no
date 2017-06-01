@@ -4,6 +4,7 @@
 ## Opprette behovsprognose
 ### [Oversikt over behovsprognose](master-planning/introduction-demand-forecasting.md)
 ### [Definere en behovsprognose](master-planning/demand-forecasting-setup.md)
+### [Importere historiske data for behovsprognoser](master-planning/import-historical-data.md)
 ### [Generere en statistisk basislinjeprognose](master-planning/generate-statistical-baseline-forecast.md)
 ### [Utføre manuell justering i basislinjeprognose](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Autorisere en justert prognose](master-planning/authorize-adjusted-forecast.md)

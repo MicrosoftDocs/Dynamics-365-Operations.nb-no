@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: a62b56bd2ac0a7484471190c5f342a1db335ab07
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som oppgaven skal tilordnes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som oppgaven kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som oppgaven kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som oppgaven skal tilordnes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som oppgaven skal tilordnes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Oppgaven tilordnes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Oppgaven tilordnes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Oppgaven tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
@@ -139,18 +137,16 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
     <td>En arbeidselementkø</td>
     <td><ol>
     <li>Når du har valgt <strong>Kø</strong>, klikker du <strong>Købasert</strong>-kategorien.</li>
-    <li>Gjør følgende for å tilordne oppgaven til en bestemt kø:
-    <ol>
+    <li>Gjør følgende for å tilordne oppgaven til en bestemt kø: <ol>
     <li>I <strong>Køtype</strong>-listen velger du <strong>Arbeidselementkøer</strong>.</li>
     <li>Velg køen i <strong>Kønavn</strong>-listen.</li>
     </ol></li>
-    <li>Hvis en bestemt betingelse skal bestemme hvilken kø oppgaven skal tilordnes til, følger du denne fremgangsmåten:
-    <ol>
+    <li>Hvis en bestemt betingelse skal bestemme hvilken kø oppgaven skal tilordnes til, følger du denne fremgangsmåten: <ol>
     <li>I <strong>Køtype</strong>-listen velger du <strong>Betingede arbeidselementkøer</strong>.</li>
     <li>I <strong>Kønavn</strong>-listen velger du <strong>Betinget kø</strong>.</li>
     </ol></li>
     </ol>
-    <strong>Merk</strong>: Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
+    <strong>Merk:</strong> Dette alternativet brukes bare i noen få arbeidsflyter, for eksempel saksbehandling.</td>
     </tr>
     </tbody>
     </table>
@@ -196,13 +192,11 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som oppgaven skal videresendes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som oppgaven kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter:
-    <ol>
+    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som oppgaven kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som oppgaven skal videresendes til:
-    <ul>
+    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som oppgaven skal videresendes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Oppgaven videresendes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Oppgaven videresendes bare til den siste brukeren i området.</li>
     <li><strong>Utelat brukere med følgende vilkår</strong> – Oppgaven videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>

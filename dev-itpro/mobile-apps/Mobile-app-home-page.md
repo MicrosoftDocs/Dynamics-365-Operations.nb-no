@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Startside for Dynamics 365 for Operations-mobilappen
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Navigasjon i mobilappen består av fire enkle begreper: instrumentbord, arbeidso
 ## <a name="implementation-process"></a>Implementeringsprosess
 Illustrasjonen nedenfor viser prosessen for å implementere Dynamics 365 for Operations-mobilappen i organisasjonen. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Implementeringsprosess for mobilapper](./media/mobile-implementation-process_4.png)
 
 Tabellen nedenfor inneholder koblinger til ressurser som kan bidra til å implementere Microsoft Dynamics 365 for Operations-mobilappen i organisasjonen. Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.
 
@@ -85,7 +83,7 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan bidra til å implem
 <td>1</td>
 <td>Systemansvarlig</td>
 <td>Implementer Dynamics 365 for Operations for organisasjonen.</td>
-<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, kan du se <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan bidra til å implem
 <td>Laste ned og installere KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</td>
 <td>Se &quot;Forutsetninger&quot;-avsnittet i emnet om det mobile arbeidsområdet som organisasjonen vil bruke:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobile arbeidsområder for kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilt arbeidsområde for lagerbeholdning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobile arbeidsområder for salgsordrer</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobile arbeidsområder for kostnadskontroll</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobilt arbeidsområde for lagerbeholdning</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobile arbeidsområder for salgsordrer</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Det mobile arbeidsområdet Reiseregning og utlegg</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Systemansvarlig</td>
 <td>Publisere de mobile arbeidsområdene som leveres av Microsoft.</td>
-<td>Se &quot;Forutsetninger&quot;-avsnittet i emnet om det mobile arbeidsområdet som organisasjonen vil bruke:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobile arbeidsområder for kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilt arbeidsområde for lagerbeholdning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobile arbeidsområder for salgsordrer</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Publisere mobile arbeidsområder</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Utvikler eller uavhengig programvareleverandør (ISV)</td>
 <td>Bruk mobilrammeverket for Dynamics 365 for Operations til å opprette egendefinerte mobile arbeidsområder.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations-mobilrammeverk</a></li>
+<li><a href="mobile-platform.md">Dynamics 365 for Operations-mobilrammeverk</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">X++-API-er for Dynamics 365 for Operations-arbeidsområde </a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan bidra til å implem
 <td>5</td>
 <td>ISV</td>
 <td>Opprett en distribuerbar pakke som inneholder egendefinerte mobile arbeidsområder, og laste opp pakken til Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Generere en distribuerbar pakke</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Opprette en distribuerbar pakke</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Systemansvarlig</td>
 <td>Bruk den distribuerbare pakken som inneholder de egendefinerte arbeidsområdene fra den uavhengige programvareleverandøren.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Bruke en distribuerbar pakke på Microsoft Dynamics 365 for Operations-systemet</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke på Microsoft Dynamics 365 for Operations-systemet</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Systemansvarlig</td>
 <td>Publisere de egendefinerte mobile arbeidsområdene som leveres av den uavhengige programvareleverandøren.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere mobile arbeidsområder</a></td>
+<td><a href="publish-mobile-workspace.md">Publisere mobile arbeidsområder</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan bidra til å implem
 <td>9</td>
 <td>Bruker</td>
 <td>Logg på og bruk Dynamics 365 for Operations-mobilappen. Appen inneholder de mobile arbeidsområdene som er publisert.</td>
-<td>Microsoft tilbyr følgende mobile arbeidsområder:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobile arbeidsområder for kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilt arbeidsområde for lagerbeholdning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobile arbeidsområder for salgsordrer</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
-</ul></td>
+<td>Hvis du vil se en oversikt over mobile arbeidsområder fra Microsoft, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er lansert for Dynamics 365 for Operations-mobilappen</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Se også
---------
-
-[Mobile arbeidsområder som nylig er lansert for Dynamics 365 for Operations-mobilappen](mobile-workspaces-released.md)
 
 
 

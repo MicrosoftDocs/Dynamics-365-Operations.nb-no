@@ -3,10 +3,10 @@ title: "Mobilt arbeidsområde for lagerbeholdning"
 description: "Dette emnet gir informasjon om det mobile arbeidsområdet for lagerbeholdning, som er tilgjengelig for Microsoft Dynamics 365 for Operations-mobilappen. Dette arbeidsområdet gir deg mobil innsikt i reservert og tilgjengelig lager når som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e703ae80800b993ebca1c7bee455af1be41c7d5f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,15 +37,21 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for lagerbeholdning, s
 <a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Oversikt over mobilt arbeidsområde for lagerbeholdning
 --------------------------------------------------
 
-Selskaper har vanligvis flere leveringer og flere mottak til lager hver dag. Disse flyttingene endrer kontinuerlig lagerbeholdningsstatusen. Det mobile arbeidsområdet for **lagerbeholdning** lar deg se status for firmaene i lagerbeholdningen, slik at du kan få den nyeste innsikten i lagerdata på den mobile enheten du velger. Uansett om du arbeider i lager, innkjøp, salg, produksjon eller management, eller har andre roller, kan du få tilgang til dataene i lagerbeholdningen når som helst og hvor som helst. Det mobile arbeidsområdet gir en umiddelbar oversikt over lagerstatusen på tvers av kontorer. Du kan vise lagerbeholdning på tvers av kontorer, gjeldende materialreservasjoner og ureservert lagerbeholdning. Du kan også angi varenumrene for å spørre om lagerbeholdning og filtrert søke etter produkter på lager eller varianter. Spesielt inneholder mobil arbeidsområdet disse funksjonene:
+Selskaper har vanligvis flere leveringer og flere mottak til lager hver dag. Disse flyttingene endrer kontinuerlig lagerbeholdningsstatusen. Det mobile arbeidsområdet for **lagerbeholdning** lar deg se status for firmaene i lagerbeholdningen, slik at du kan få den nyeste innsikten i lagerdata på den mobile enheten du velger. Uansett om du arbeider i lager, innkjøp, salg, produksjon eller management, eller har andre roller, kan du få tilgang til dataene i lagerbeholdningen når som helst og hvor som helst. 
+
+Det mobile arbeidsområdet gir en umiddelbar oversikt over lagerstatusen på tvers av kontorer. Du kan vise lagerbeholdning på tvers av kontorer, gjeldende materialreservasjoner og ureservert lagerbeholdning. Du kan også angi varenumrene for å spørre om lagerbeholdning og filtrert søke etter produkter på lager eller varianter. 
+
+Spesielt inneholder mobil arbeidsområdet disse funksjonene:
 
 -   Du kan søke etter produktnummeret eller produktnavnet for å finne produkter å vise lagerbeholdning status for.
+
 -   For de valgte produktene kan du vise følgende informasjon:
     -   Lagerbeholdning etter område
     -   Lagerbeholdning etter lager
     -   Lagerbeholdning etter lokasjon
     -   Lagerbeholdning etter parti (for partikontrollerte produkter)
     -   Lagerbeholdning etter beholdningsstatus
+    
 -   Lagerbeholdning for produktet vises på følgende måter:
     -   Etter fysisk lager (denne visningen representerer den totale mengden).
     -   Etter fysisk reservert (denne visningen representerer den reserverte mengden).
@@ -71,7 +77,7 @@ Før du kan bruke det mobile arbeidsområdet for **lagerbeholdning**, må du kon
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere må implementeres.</td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 må være implementert.</td>
@@ -79,9 +85,9 @@ Før du kan bruke det mobile arbeidsområdet for **lagerbeholdning**, må du kon
 <td>KB 4013633 (en X++ oppdatering eller hurtigreparasjon for metadata) inneholder fire mobile arbeidsområder for forsyningskjedeadministrasjon. Systemadministrator må følge disse trinnene for å implementere KB 4013633:
 <ol>
 <li>Last ned KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installer hurtigreparasjonen for metadata</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -114,7 +120,7 @@ Last ned og installer Microsoft Dynamics 365 for Operations-appen fra appbutikke
 
 ## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Vise lagerbeholdningen for et produkt ved å bruke det mobile arbeidsområdet for lagerbeholdning
 1.  Velg **Lagerbeholdning**-arbeidsområdet på mobilenheten.
-2.  Velg **Kontroller lagerbeholdning for en vare**. Du kan se en liste over produkter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Dynamics 365 for Operations-mobilplattform](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/) for mer informasjon.
+2.  Velg **Kontroller lagerbeholdning for en vare**. Du kan se en liste over produkter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Dynamics 365 for Operations-mobilplattform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon.
 3.  Hvis elementet ikke finnes i listen, velger du **Søk mer** for å utføre en online søk i Dynamics 365 for Operations. Søk etter produktnummer, eller bytte til et søk etter produktnavn.
 4.  Velg et produkt. Hvis varen har et bilde, vises bildet.
 5.  Velg ett av følgende alternativer for å vise statusen for lagerbeholdningen:
