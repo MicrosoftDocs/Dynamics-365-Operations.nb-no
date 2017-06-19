@@ -1,4 +1,4 @@
-# [Oversikt over lokalisering](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Oversikt over lokalisering](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Asia/Stillehavskysten
 ## Australia
 ### [Bankfilformater](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Bokføre forhåndsanskaffelsen for et anleggsmiddel](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Postnumre](emea-import-create-postal-codes-manually.md)
 ## [Registrerings-ID-er](emea-registration-ids.md)
+## [Snudd avregning](emea-reverse-charge.md)
 ## [Oversikt over SEPA-kredittoverføring](../accounts-payable/sepa-credit-transfer.md)
 ## [Oversikt over SEPA-avtalegiro](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Definere signatarer for utskriftsskjemaer](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [Journallisterapport](emea-deu-journal-list-report.md)
 ### [Skrive ut en egen etikett for kreditnotaer som stammer fra salg](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungarn
-### [Metoder for avskrivning av anleggsmidler](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Metoder for avskrivning av anleggsmidler](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Lavkostanleggsmidler](emea-hun-low-cost-fixed-assets.md)
 ### [Flytte et anleggsmiddel til lager](emea-hun-fixed-asset-to-inventory.md)
 ## Italia
@@ -138,6 +139,7 @@
 ### [Revalueringsgruppe for anleggsmiddel](emea-esp-fixed-asset-group-revaluation.md)
 ### [Fellesskapsmerverdiavgift](emea-esp-intra-community-vat.md)
 ### [Engangskunder](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Skrive ut sjekker med spansk oppsett](emea-esp-print-checks-with-spanish-layout.md)
 ### [Alternativer for egenveksel](emea-esp-promissory-note-options.md)
 ### [Salgs- og kjøpssykluser](emea-esp-sales-purchase-cycle.md)
 ### [Spesielle oppføringer og åpningsark](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Regnskapsbøker](latam-bra-fiscal-books.md)
 #### [Regnskapsdokumenter for ICMS-avgift](latam-bra-icms-tax-fiscal-documents.md)
 #### [Importere regnskapsdokumenter](latam-bra-import-fiscal-documents.md)
+#### [Eksportere og importere transaksjoner for juridisk enhet fra konsolideringen for økonomimodulen](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Importere og kontrollere XML-dokumenter og DANFE-filer for NF-e](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Behandle elektroniske betalingsremitteringer](latam-bra-process-electronic-payment-remittances.md)
 #### [Regnskapsdokumenter](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Tekstplassholdere for regnskapsdokument](latam-bra-fiscal-document-text-placeholders.md)
 #### [Kjøpskomplementære regnskapsdokumenter](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Journaler som ble generert under prosessen for elektronisk betalingsretur](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e-prosess](latam-bra-nf-e-process.md)
 ### [Parametere for juridiske enheter](latam-bra-legal-entity-parameters.md)
+### [Anskaffe et anleggsmiddel for CIAP](latam-bra-ciap-fixed-asset.md)
+### [Avhende et anleggsmiddel for CIAP](latam-bra-ciap-fixed-asset.md)
 ### [Avgifter](latam-bra-calculate-taxes.md)
 #### [Avgiftsattributter](latam-bra-tax-attributes.md)
 #### [Avgiftsbetalinger](latam-bra-tax-payments.md)

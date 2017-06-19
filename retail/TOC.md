@@ -15,8 +15,9 @@
 ## [Konfigurere og installere en maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md)
 ## [Timeregistrering for detaljhandel](retail-time-attendance.md)
 # Modern Point of Sale (MPOS) og Cloud POS
-## Eksterne enheter for maskinvare
+## Maskinvare og periferiutstyr
 ### [Oversikt over eksterne enheter for detaljhandel](retail-peripherals-overview.md)
+### [Simulator for eksterne enheter for detaljhandel](retail-peripheral-simulator.md)
 ### [Microsoft-testede maskinvareenheter for salgssted](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md)
 ## Skjermoppsett
@@ -42,6 +43,7 @@
 ## Kvitteringer
 ### [Definere kvitteringsmaler](receipt-templates-printing.md) 
 ### [Sende e-postkvitteringer fra MPOS](email-receipts.md)
+## [Oppgaveopptaker og hjelp for salgssted](task-recorder-retail-pos.md)
 # Overvåkning og analyse
 ## [Overvåke salgs- og marginytelse](monitor-sales-margin-performance.md)
 ## [Analysere salgstrender og -mønstre](analyze-sales-trends-patterns.md)
@@ -53,6 +55,7 @@
 ## [Prisjusteringer og rabatter](price-adjustments-discounts.md)
 ## [Fastslå den optimale kombinasjonen av overlappende rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definere kanalspesifikke rabatter](define-channel-specific-discounts.md)
+## [Opprette kuponger for detaljhandelssalg](retail-coupons.md)
 # Produkter og varehandel
 ## [Detaljhandelshierarkier](retail-hierarchies.md)
 ## [Opprette og administrere attributter](create-manage-attributes.md)
@@ -60,7 +63,8 @@
 ## [Definere strekkoder](set-up-bar-codes.md)
 ## [Definere strekkodemasker](set-up-bar-code-masks.md)
 ## [Definere sortimenter](set-up-assortments.md)
-# Fordel
+## [Selge og returnere produkter utenfor et sortiment](sell-return-outside-assortments.md)
+# Lojalitet
 ## [Definere et fordelsprogram for kunde](set-up-customer-loyalty-program.md)
 # Lager
 ## [Administrere butikklager](work-with-store-inventory.md)
@@ -69,15 +73,15 @@
 ## [Organisasjoner og organisasjonshierarkier (grunnleggende om handel)](organizational-hierarchies-commerce-essentials.md)
 # [Innhold for IT-ekspert og utvikler](dev-itpro/TOC.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Finans](/dynamics365/unified-operations/financials/index)
 
-# [Personale](/dynamics365/operations/human-resources/index)
+# [Personale](/dynamics365/unified-operations/talent/index)
 
-# [Forsyningskjedeadministrasjon](/dynamics365/operations/supply-chain/index)
+# [Forsyningskjedeadministrasjon](/dynamics365/unified-operations/supply-chain/index)
 
-# [Utvikler og administrator](/dynamics365/operations/dev-itpro/index)
+# [Utvikler og administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Andre ressurser
-## [Ordliste for Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Hva er nytt eller endret?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Ordliste for Dynamics 365 for Retail](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

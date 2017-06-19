@@ -21,4 +21,5 @@
 # Spore vare og parti
 ## [Slå sammen lagerparti](merge-inventory-batches.md)
 ## [Spore vare og råmateriale](trace-items-raw-materials-inventory-production-sales.md)
+## [Registrere serienummer i salgsprosessen](../sales-marketing/register-serial-numbers-sales-process.md)
 

@@ -43,6 +43,8 @@
 ### [Definere leverandørkontoer](procurement/set-up-vendor-accounts.md)
 ### [Leverandørsamarbeid med eksterne leverandører](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Leverandørsamarbeid med kunder](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Bruke eksterne kataloger for PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
+### [Definere en ekstern katalog for PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
 ### [Samarbeide med leverandører ved hjelp av leverandørportalen](procurement/collaborate-vendors-vendor-portal.md)
 ### [Mobilt arbeidsområde for leverandørsamarbeid](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Brukersikkerhet for leverandørportal](procurement/configure-security-vendor-portal-users.md)
@@ -50,19 +52,37 @@
 ### [Kjøpsavtaler](procurement/purchase-agreements.md)
 ## Mottakssedler og fakturering
 ### [Mottaksseddel mot bestillinger](procurement/product-receipt-against-purchase-orders.md)
-### [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Leverandørposteringsprofiler](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Leverandørposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Behandling av produktinformasjon
-## Produktinformasjon
-### [Stykkliste og formel](production-control/bill-of-material-bom.md)
-### [Funksjonalitet for stykklisteutforming](production-control/bom-designer-functionality.md)
-### [Produktdimensjon](pim/product-dimensions.md)
-### [Standard ordreinnstillinger for dimensjoner og produktvarianter](production-control/default-order-settings.md)
-### [Produktnummerterminologi](pim/product-variant-identification-nomenclature.md)
-### [Vanlige spørsmål om produktrelatert oversettelse](pim/translations-product-related-information.md)
-### [Registrere serienummer i salgsprosessen](sales-marketing/register-serial-numbers-sales-process.md)
-### [Søke etter produkt under ordreregistrering](pim/search-products-product-variants.md)
-## Opprette produktkonfigurasjon
+## [Oversikt over produktinformasjon](pim/product-information.md)
+## Vedlikehold produktkategorier
+## Vedlikehold produktinformasjon
+### Vedlikehold produktdefinisjon
+#### [Produktnummerterminologi](pim/product-variant-identification-nomenclature.md)
+#### Produktmaler
+#### [Produktdimensjon](pim/product-dimensions.md)
+#### Produktattributter
+#### Produktbilder og -vedlegg
+#### Produktidentifikatorer
+#### [Vanlige spørsmål om oversettelse av produktinformasjon](pim/translations-product-related-information.md)
+### Frigi produkter til juridiske enheter
+### Søke etter produkter
+#### [Søke etter produkt under ordreregistrering](pim/search-products-product-variants.md)
+### Klargjøre produkt for planlegging
+#### [Standard ordreinnstillinger for dimensjoner og produktvarianter](production-control/default-order-settings.md)
+#### Prognosemodeller og varefordelingsnøkler
+### Klargjøre produkt for produksjon
+#### Stykkliste og formel
+##### [Stykklister og formler](production-control/bill-of-material-bom.md)
+##### [Bruke stykklisteutformingen](production-control/bom-designer-functionality.md)
+##### [Bruke formeldesigneren](production-control/formula-designer.md)
+#### Ruter
+#### Lean manufacturing
+### Klargjøre produkter for lager og logistikk
+### Estimere kost for produkter
+#### [Stykklisteberegninger](cost-management/bom-calculations.md)
+## Vedlikeholde produktkonfigurasjonsmodeller
 ### [Bygge en produktkonfigurasjonsmodell](pim/build-product-configuration-model.md)
 ### [Vanlige spørsmål om beregning for produktkonfigurasjonsmodell](pim/calculate-product-configuration-models.md)
 ### [Konfigurasjonsregel](pim/configuration-rules.md)
@@ -71,6 +91,8 @@
 ### [Bruke produktkonfigurasjon på nytt](pim/reuse-product-configurations.md)
 ### [Definere en konfigurasjonsmodell](pim/set-up-maintain-product-configuration-model.md)
 ### [Systemdefinert og brukerdefinert tabellbegrensning](pim/system-defined-user-defined-table-constraints.md)
+## Importere produktinformasjonsdata
+## Eksportere produktinformasjonsdata
 # Produksjonskontroll
 ## [Oversikt over produksjonsprosess](production-control/production-process-overview.md)
 ## [Blandet modusplanlegging: Kombinere diskret, behandle og lean-leverandører](production-control/mixed-mode-plan.md)
@@ -96,6 +118,8 @@
 #### [Reversere produksjonsordrestatusen](production-control/reverse-production-order-status.md)
 #### [Rapportere produksjonsordrer som ferdigstilte](production-control/report-production-orders-as-finished.md)
 #### [Rapportere stykklister som ferdigstilte](production-control/report-boms-as-finished.md)
+#### [Direkteoverføring fra produksjonsordrer til utleveringsporter](production-control/cross-docking-opportunities.md)
+#### [Registrere materialforbruk med en mobil enhet](production-control/register-material-consumption-hand-held-device.md)
 #### [Materialerstatning i produksjon](production-control/substitute-items-bom-lines.md)
 #### [Registrering for produksjonsutførelse](production-control/registration-manufacturing-execution.md)
 #### [Tilbakemeldinger på produksjon](production-control/production-feedback.md)
@@ -111,7 +135,8 @@
 #### [Modellere en lean-organisasjon](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Operasjonsressurser](production-control/operations-resources.md)
 ### Planlegge Kanban-jobber
-#### [Kanban-jobbplanlegging for lean-varehandel](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Visuell planlegging for lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
+#### [Kanban-jobbplanlegging for lean manufacturingl](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [Finplanlegging](production-control/job-scheduling.md)
 ### Operere Kanban-jobber
 #### [Støtte for Kanban-overføringskort for strekkodelesere](production-control/kanban-transfer-board-support-barcode-scanner.md)
@@ -128,6 +153,7 @@
 #### [Grovplanlegging](production-control/operations-scheduling.md)
 #### [Alternativer for grovplanlegging](production-control/operation-scheduling-options.md)
 #### [Finplanlegging](production-control/job-scheduling.md)
+#### [Gantt-diagram til finplanlegging](production-control/visual-scheduling-production.md)
 ### Operere produksjonsjobber
 #### [Konsoliderte partiordrer](production-control/consolidated-batch-orders.md)
 #### [Materialerstatning i produksjon](production-control/substitute-items-bom-lines.md)
@@ -162,25 +188,34 @@
 ## [Transportstyring](transportation/transportation-management-overview.md)
 ## [Transportmotor](transportation/transportation-management-engines.md)
 # Lagerstyring
-## Definere 
+## Avansert lagerstyring
+### [Overfør fra AX 2012 til Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
+## Oppsett 
 ### [Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver](warehousing/control-warehouse-location-directives.md)
 ### [Administrere lagerarbeidere](warehousing/manage-warehouse-workers.md)
 ### [Definere oppsett](warehousing/warehouse-configuration.md)
 ### [Arbeidspolicyer for lager](warehousing/warehouse-work-policies.md)
 ### [Måleenhet og lagringspolicyer](warehousing/unit-measure-stocking-policies.md)
-### [Power BI-innhold for lager](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Power BI-innhold for lager](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Parti- og nummerskiltbekreftelse](warehousing/batch-and-license-plate-confirmation.md)
+### [Flytting av beholdning med tilknyttet arbeid](warehousing/move-inventory-associated-work.md)
+### [Systemgruppering i en åpen arbeidsliste](warehousing/system-group-on-open-work-list.md)
+### [Produktbekreftelse for gruppeplukking](warehousing/cluster-picking-item-confirmation.md)
 ## Plukk og pakking
 ### [Pakkematerialer og -gebyrer](warehousing/pack-materials-packing-material-fees.md)
+### [Stykkplukkingsbekreftelse](warehousing/piece-picking-confirmation.md)
 ## Lageropptelling
 ### [Blokkere lager](inventory/inventory-blocking.md)
 ### [Syklustelling](warehousing/cycle-counting.md)
+### [Delvis lokasjonssyklustelling](warehousing/partial-location-cycle-counting.md)
 ### [Lagerjournal](inventory/inventory-journals.md)
 ### [Lagerlokasjon](inventory/inventory-locations.md)
-### [Lagerstatus](inventory/inventory-statuses.md)
+### [Beholdningsstatus](inventory/inventory-statuses.md)
 ### [Lagerbrikkeopptelling](inventory/inventory-tag-counting.md)
 ## Containerbruk 
 ## Etterfylling
 ### [Etterfylling](warehousing/replenishment.md)
+### [Etterfylling med uttak – Kanbaner](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobilenheter
 ### [Installere og konfigurere lagerappen ](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurere feltnavn i lagerapp](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -188,15 +223,15 @@
 ### [Portal for lagermobilenheter (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Innstillinger for visning av lagermobilenhet](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Finans](/dynamics365/unified-operations/financials/index)
 
-# [Personale](/dynamics365/operations/human-resources/index)
+# [Personale](/dynamics365/unified-operations/talent/index)
 
-# [Detaljhandel](/dynamics365/operations/retail/index)
+# [Detaljhandel](/dynamics365/unified-operations/retail/index)
 
-# [Utvikler og administrator](/dynamics365/operations/dev-itpro/index)
+# [Utvikler og administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Andre ressurser
-## [Ordliste for Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [Hva er nytt eller endret?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Finance and Operations-ordliste](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
