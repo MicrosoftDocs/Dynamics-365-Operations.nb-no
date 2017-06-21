@@ -3,7 +3,7 @@ title: Kostnadselementdimensjoner
 description: "Som en av de viktige søylene i kostnadsregnskap, brukes kostnadelementdimensjoner til å kategorisere og spore hvor kostnadene flyter til."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

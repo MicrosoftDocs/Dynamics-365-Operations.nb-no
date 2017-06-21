@@ -3,7 +3,7 @@ title: "Feilsøke stillingsbudsjettering"
 description: "Denne artikkelen inneholder svar på spørsmål du kan ha når du konfigurerer stillingsbudsjettering. Det tar for seg vanlige spørsmål om hvordan du oppretter budsjettetkostnadselementer, kompensasjonsgrupper og kompensasjonsrutenett."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

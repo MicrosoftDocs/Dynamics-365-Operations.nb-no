@@ -3,7 +3,7 @@ title: "Utligne en delvis leverandørbetaling som har flere rabattperioder"
 description: "Denne artikkelen leder deg gjennom et scenario der flere delvise betalinger foretas til en leverandør som har flere kontantrabatter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

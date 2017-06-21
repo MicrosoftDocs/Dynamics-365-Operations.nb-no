@@ -3,7 +3,7 @@ title: Finansfordelingsregler
 description: Denne artikkelen gir generell informasjon om finanstildelingsregler. Den beskriver de ulike komponentene i disse tildelingsreglene og tildelingsmetodene som kan brukes for dem.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

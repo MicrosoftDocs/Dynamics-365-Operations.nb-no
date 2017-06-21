@@ -3,7 +3,7 @@ title: "Kontosaldoer i økonomimodulen"
 description: "Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

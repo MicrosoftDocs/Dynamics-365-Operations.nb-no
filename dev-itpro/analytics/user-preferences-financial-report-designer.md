@@ -3,7 +3,7 @@ title: Brukerinnstillinger i Utforming av finansrapport
 description: "Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen. Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -3,7 +3,7 @@ title: "Tilbakemeldinger på produksjon"
 description: "Denne artikkelen inneholder informasjon om tilbakemelding om produksjon, slik at arbeidere får tilbakemelding om produksjonsjobber. Artikkelen inneholder informasjon om de forskjellige metodene for at tilbakemelding om produksjon kan oppdateres."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

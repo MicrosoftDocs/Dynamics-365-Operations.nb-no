@@ -3,7 +3,7 @@ title: Definere veksler
 description: "Dette emnet beskriver fremgangsmåten for hvordan du konfigurerer veksler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

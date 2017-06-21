@@ -3,7 +3,7 @@ title: Konfigurere Kunder og Kreditt og innkreving
 description: "Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende betalinger fra kunder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Utligne en delvis leverandørbetaling som har rabatter på leverandørkr
 description: Denne artikkelen leder deg gjennom et scenario der en kreditnota utlignes mot en faktura.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

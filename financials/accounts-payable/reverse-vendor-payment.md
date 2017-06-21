@@ -3,7 +3,7 @@ title: "Tilbakeføre en leverandørbetaling"
 description: "Denne artikkelen beskriver forskjellene mellom tilbakeføring, sletting, annullering og avvisning av en betaling. Den beskriver også de to metodene for å tilbakeføre en sjekk for leverandør."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

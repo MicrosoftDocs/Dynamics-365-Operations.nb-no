@@ -3,7 +3,7 @@ title: Oppsett av konserninternt regnskap
 description: "Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

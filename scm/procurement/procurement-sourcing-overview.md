@@ -3,7 +3,7 @@ title: "Oversikt over innkjøp og leverandører"
 description: "Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i modulen Innkjøp og leverandører."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

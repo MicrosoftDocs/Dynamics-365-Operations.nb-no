@@ -3,7 +3,7 @@ title: Etterkalkuleringsversjoner
 description: "Denne artikkelen inneholder informasjon om kostnadsversjoner, hvordan du vedlikeholder dem, og hvilke typer data som du kan inkludere dem i. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

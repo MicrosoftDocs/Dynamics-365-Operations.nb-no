@@ -3,7 +3,7 @@ title: Frafalle, gjenoppta eller reversere rentegebyrer
 description: Denne artikkelen beskriver hvordan frafall, gjenopptakelse og snudd avregning for renter og gebyrer.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

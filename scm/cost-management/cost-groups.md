@@ -1,9 +1,9 @@
 ---
 title: Kostgrupper
-description: Kostgrupper gir grunnlaget for segmentering og analyse av kostbidrag i de beregnede kostnadene for en produsert vare, for eksempel kostbidragene for materialer, arbeidskraft og indirekte kostnader. Begrepet &quot;kostgruppesegmentering&quot; har flere synonymer innenfor produksjonsindustrien, for eksempel kostnadsspesifikasjon, nedbryting av kostnader eller kostnadsklassifisering.
+description: Kostgrupper gir grunnlaget for segmentering og analyse av kostbidrag i de beregnede kostnadene for en produsert vare, for eksempel kostbidragene for materialer, arbeidskraft og indirekte kostnader. Begrepet "kostgruppesegmentering" har flere synonymer innenfor produksjonsindustrien, for eksempel kostnadsspesifikasjon, nedbryting av kostnader eller kostnadsklassifisering.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

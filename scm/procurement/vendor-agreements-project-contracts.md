@@ -3,7 +3,7 @@ title: "Leverandøravtaler for etterbetaling"
 description: "Denne artikkelen beskriver PWP-betingelser som gjelder for leverandøravtaler. PWP-betingelser lar deg delvis eller fullstendig holde tilbake betaling til en leverandør til kunden i prosjektet betaler deg. Denne artikkelen inneholder også et reelt eksempel for å vise hvordan du kan bruke PWP-betingelser for et prosjekt."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

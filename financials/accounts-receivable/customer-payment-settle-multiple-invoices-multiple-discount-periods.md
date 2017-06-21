@@ -3,7 +3,7 @@ title: "Bruke én kundebetaling for å utligne flere fakturaer som strekker seg 
 description: "Denne artikkelen viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

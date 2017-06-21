@@ -3,7 +3,7 @@ title: Partiattributter
 description: "Denne artikkelen inneholder informasjon om bunkeattributter. Partiattributter er egenskaper til råvarer og ferdige produkter som utgjør lagerpartier. Artikkelen forklarer også hvordan du tilordner bunkeattributter, og hvordan du kan søke etter dem når du reserverer partier."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

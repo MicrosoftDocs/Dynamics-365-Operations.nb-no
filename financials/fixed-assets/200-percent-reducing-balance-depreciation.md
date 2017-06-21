@@ -3,7 +3,7 @@ title: 200 prosent redusert saldoavskrivning
 description: Denne artikkelen gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

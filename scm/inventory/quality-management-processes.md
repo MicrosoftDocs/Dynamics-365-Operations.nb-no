@@ -3,7 +3,7 @@ title: Kvalitetsstyringsprosesser
 description: "Denne artikkelen inneholder informasjon om kvalitetsstyringsprosessen for materiell med avvik. Det beskriver hvordan du kan bruke kvalitetskontrollfunksjonen, hvordan du definerer og vedlikeholder avvik og hvordan du håndterer korrigeringer."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgru
 description: "Denne artikkelen beskriver prosessen for å oppdatere erstatningskostnader og forsikrede verdier for anleggsmidler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

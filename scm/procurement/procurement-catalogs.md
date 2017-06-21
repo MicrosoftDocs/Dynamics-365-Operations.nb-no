@@ -3,7 +3,7 @@ title: "Innkjøpskataloger"
 description: "Denne artikkelen beskriver, på et høyt nivå, hvordan innkjøpere kan opprette og vedlikeholde innkjøpskataloger. Innkjøpskataloger definerer varene og tjenestene som de ansatte i firmaet kan bestille for intern bruk."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

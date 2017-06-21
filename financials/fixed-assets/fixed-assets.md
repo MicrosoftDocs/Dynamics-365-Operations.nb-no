@@ -3,7 +3,7 @@ title: Startside for anleggsmidler
 description: "Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

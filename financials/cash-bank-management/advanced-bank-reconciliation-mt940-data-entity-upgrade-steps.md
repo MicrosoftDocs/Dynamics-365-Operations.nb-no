@@ -3,7 +3,7 @@ title: "Avansert bankavstemming MT940-import – oppgradering for sammensatt dat
 description: "Et serienummer må legges til importenheten for bankkontoutdraget for å støtte MT940-formatet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

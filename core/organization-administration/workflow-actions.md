@@ -3,7 +3,7 @@ title: Arbeidsflythandlinger
 description: "Denne artikkelen forklarer handlingene som hver deltaker i en godkjenningsprosess for arbeidsflyt kan utføre."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

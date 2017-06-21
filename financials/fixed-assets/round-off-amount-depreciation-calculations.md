@@ -3,7 +3,7 @@ title: "Avrundingsbeløp for avskrivningsberegninger"
 description: "Denne artikkelen omhandler feltet Avrundingsavskrivning som finnes på Tablåoppsett-sidene."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

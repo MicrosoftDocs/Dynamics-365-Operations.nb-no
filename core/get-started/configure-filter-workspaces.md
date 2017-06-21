@@ -3,7 +3,7 @@ title: "Konfigurere og filtrere arbeidsområder"
 description: "Denne artikkelen gir en oversikt over hvordan du konfigurerer og filtrerer arbeidsområder."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

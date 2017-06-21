@@ -3,7 +3,7 @@ title: Reversere produksjonsordrestatusen
 description: "Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

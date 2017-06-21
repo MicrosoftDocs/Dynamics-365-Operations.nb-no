@@ -3,7 +3,7 @@ title: "Håndtere kontantrabatter for overbetalinger"
 description: "Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

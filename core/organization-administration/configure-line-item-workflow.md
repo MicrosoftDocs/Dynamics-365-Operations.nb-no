@@ -3,7 +3,7 @@ title: Kongifurere en arbeidsflyt for linjeelement
 description: Dette emnet forklarer hvordan du konfigurerer et arbeidsflytelement for linjeelement.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

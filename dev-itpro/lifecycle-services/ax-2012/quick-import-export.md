@@ -3,7 +3,7 @@ title: Bruke hurtigimport/-eksport
 description: "Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
 ms.service: 

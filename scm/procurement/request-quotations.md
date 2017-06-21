@@ -3,7 +3,7 @@ title: "Tilbudsforespørsler"
 description: "Denne artikkelen gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

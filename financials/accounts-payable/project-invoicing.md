@@ -3,7 +3,7 @@ title: Prosjektfakturering
 description: "Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

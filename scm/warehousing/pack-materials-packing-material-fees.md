@@ -3,7 +3,7 @@ title: Emballasjematerialer og gebyrer
 description: "Emballasjematerialegebyrer betales til et resirkuleringsfirma med bestemte intervaller. Et beløp betales per vektenhet for hvert materiale som en emballasjeenhet består av. Emballasjematerialegebyrer beregnes og rapporteres, men ingen finanstransaksjoner posteres fordi gebyrene ikke regnes som avgifter som må betales til en myndighet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

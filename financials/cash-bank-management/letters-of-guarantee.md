@@ -3,7 +3,7 @@ title: Garantibrev
 description: "Denne artikkelen inneholder informasjon om garantibrev. I et garantibrev godtar en bank å betale et bestemt beløp til en person hvis en av bankens kundene misligholder en betaling eller forpliktelse til denne personen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

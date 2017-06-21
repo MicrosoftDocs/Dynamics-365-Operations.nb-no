@@ -3,7 +3,7 @@ title: Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 description: "Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
