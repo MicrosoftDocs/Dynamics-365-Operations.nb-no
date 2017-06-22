@@ -1,237 +1,1648 @@
-# [Kostnadsstyring](cost-management/TOC.md)
-# [Lagerstyring](inventory/TOC.md)
-# Hovedplanlegging
-## Opprette behovsprognose
-### [Oversikt over behovsprognose](master-planning/introduction-demand-forecasting.md)
-### [Definere en behovsprognose](master-planning/demand-forecasting-setup.md)
-### [Importere historiske data for behovsprognoser](master-planning/import-historical-data.md)
-### [Generere en statistisk basislinjeprognose](master-planning/generate-statistical-baseline-forecast.md)
-### [Utføre manuell justering i basislinjeprognose](master-planning/manual-adjustments-baseline-forecast.md)
-### [Autorisere en justert prognose](master-planning/authorize-adjusted-forecast.md)
-### [Overvåke prognosenøyaktighet](master-planning/monitor-forecast-accuracy.md)
-### [Fjerne utestående fra historiske transaksjonsdata](master-planning/remove-historical-outliers-calculating-demand-forecast.md)
-### [Reduksjonsnøkler](master-planning/reduction-keys.md)
-## Hovedplan
-### [Handlingsmeldinger](master-planning/action-messages.md)
-### [Dekningsinnstillinger](master-planning/coverage-settings.md)
-### [Forsinkelser](master-planning/delays.md)
-### [Hovedplaner](master-planning/master-plans.md)
-### [Hovedplaner og multisite-funksjonalitet](master-planning/master-plan-multisite-functionality.md)
-#### [Planlegge for områdedekning, obligatorisk lager](master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-#### [Planlegge for områdedekning, ikke obligatorisk lager](master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-#### [Planlegge for område- og lagerdekning, obligatorisk lager](master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-#### [Planlegge for område- og lagerdekning, ikke obligatorisk lager](master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-#### [Fastslå stykklisteversjonen](master-planning/master-plan-bom-version-determined.md)
-### [Nedbryting av en stykklisteversjon](master-planning/master-plan-explosion-bom-version.md)
-### [Vedlikeholde planlagte ordrer](master-planning/maintain-planned-orders.md)
-### [Spore en nedbryting](master-planning/trace-explosion.md)
-# Innkjøp og leverandører
-## [Oversikt over innkjøp og leverandører](procurement/procurement-sourcing-overview.md)
-## [Arbeidsflyt for innkjøp og leverandører](procurement/procurement-sourcing-workflows.md)
-## [Innkjøpspolicyer](procurement/purchase-policies.md)
-## [Innkjøpskataloger](procurement/procurement-catalogs.md)
-## [Innkjøpsrekvisisjoner](procurement/purchase-requisitions-overview.md)
-### [Arbeidsflyt for innkjøpsrekvisisjon](procurement/purchase-requisitions-workflow.md) 
-## [Tilbudsforespørsler (RFQer)](procurement/request-quotations.md)
-## Bestillinger
-### [Oversikt over bestilling](procurement/purchase-order-overview.md)
-### [Opprette bestillinger](procurement/purchase-order-creation.md)
-### [Godkjenne og bekrefte bestillinger](procurement/purchase-order-approval-confirmation.md)
-## Leverandørbehandling og samarbeid
-### [Definere og vedlikeholde leverandørsamarbeid](procurement/set-up-maintain-vendor-collaboration.md)
-### [Administrere brukere av leverandørsamarbeid](procurement/manage-vendor-collaboration-users.md)
-### [Definere leverandørkontoer](procurement/set-up-vendor-accounts.md)
-### [Leverandørsamarbeid med eksterne leverandører](procurement/vendor-collaboration-work-external-vendors.md)
-### [Leverandørsamarbeid med kunder](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
-### [Bruke eksterne kataloger for PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
-### [Definere en ekstern katalog for PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
-### [Samarbeide med leverandører ved hjelp av leverandørportalen](procurement/collaborate-vendors-vendor-portal.md)
-### [Mobilt arbeidsområde for leverandørsamarbeid](procurement/vendor-collaboration-mobile-workspace.md)
-### [Brukersikkerhet for leverandørportal](procurement/configure-security-vendor-portal-users.md)
-## Priser og rabatter
-### [Kjøpsavtaler](procurement/purchase-agreements.md)
-## Mottakssedler og fakturering
-### [Mottaksseddel mot bestillinger](procurement/product-receipt-against-purchase-orders.md)
-### [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Leverandørposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-# Behandling av produktinformasjon
-## [Oversikt over produktinformasjon](pim/product-information.md)
-## Vedlikehold produktkategorier
-## Vedlikehold produktinformasjon
-### Vedlikehold produktdefinisjon
-#### [Produktnummerterminologi](pim/product-variant-identification-nomenclature.md)
-#### Produktmaler
-#### [Produktdimensjon](pim/product-dimensions.md)
-#### Produktattributter
-#### Produktbilder og -vedlegg
-#### Produktidentifikatorer
-#### [Vanlige spørsmål om oversettelse av produktinformasjon](pim/translations-product-related-information.md)
-### Frigi produkter til juridiske enheter
-### Søke etter produkter
-#### [Søke etter produkt under ordreregistrering](pim/search-products-product-variants.md)
-### Klargjøre produkt for planlegging
-#### [Standard ordreinnstillinger for dimensjoner og produktvarianter](production-control/default-order-settings.md)
-#### Prognosemodeller og varefordelingsnøkler
-### Klargjøre produkt for produksjon
-#### Stykkliste og formel
-##### [Stykklister og formler](production-control/bill-of-material-bom.md)
-##### [Bruke stykklisteutformingen](production-control/bom-designer-functionality.md)
-##### [Bruke formeldesigneren](production-control/formula-designer.md)
-#### Ruter
-#### Lean manufacturing
-### Klargjøre produkter for lager og logistikk
-### Estimere kost for produkter
-#### [Stykklisteberegninger](cost-management/bom-calculations.md)
-## Vedlikeholde produktkonfigurasjonsmodeller
-### [Bygge en produktkonfigurasjonsmodell](pim/build-product-configuration-model.md)
-### [Vanlige spørsmål om beregning for produktkonfigurasjonsmodell](pim/calculate-product-configuration-models.md)
-### [Konfigurasjonsregel](pim/configuration-rules.md)
-### [Dimensjonsbasert konfigurasjon](pim/dimension-based-product-configuration.md)
-### [Uttrykksbegrensning og tabellbegrensning](pim/expression-constraints-table-constraints-product-configuration-models.md)
-### [Bruke produktkonfigurasjon på nytt](pim/reuse-product-configurations.md)
-### [Definere en konfigurasjonsmodell](pim/set-up-maintain-product-configuration-model.md)
-### [Systemdefinert og brukerdefinert tabellbegrensning](pim/system-defined-user-defined-table-constraints.md)
-## Importere produktinformasjonsdata
-## Eksportere produktinformasjonsdata
-# Produksjonskontroll
-## [Oversikt over produksjonsprosess](production-control/production-process-overview.md)
-## [Blandet modusplanlegging: Kombinere diskret, behandle og lean-leverandører](production-control/mixed-mode-plan.md)
-## [Administrere utsettingsarbeid i produksjon](production-control/manage-subcontract-work-production.md)
-## Stykkproduksjon
-### Opprettholde produksjonshoveddata
-#### [Krav til produksjonsoppsett](production-control/production-set-up-requirements.md)
-#### [Stykklister og formler](production-control/bill-of-material-bom.md)
-#### [Funksjonalitet for stykklisteutforming](production-control/bom-designer-functionality.md)
-#### [Stykklisteberegninger](cost-management/bom-calculations.md)
-#### [Operasjonsressurser](production-control/operations-resources.md)
-#### [Ressursfunksjoner](production-control/resource-capabilities.md)
-#### [Ruter og operasjoner](production-control/routes-operations.md)
-#### [Standardverdier for produksjonsordre i produksjonsutførelse](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Arbeidspolicyer for lager](warehousing/warehouse-work-policies.md)
-### Planlegge produksjonsoperasjoner
-#### [Grovplanlegging](production-control/operations-scheduling.md)
-#### [Finplanlegging](production-control/job-scheduling.md)
-#### [Alternativer for grovplanlegging](production-control/operation-scheduling-options.md)
-### Operere produksjonsjobber
-#### [Opprette produksjonsordrer](production-control/create-production-orders.md)
-#### [Frigi produksjonsordrer](production-control/release-production-orders.md)
-#### [Reversere produksjonsordrestatusen](production-control/reverse-production-order-status.md)
-#### [Rapportere produksjonsordrer som ferdigstilte](production-control/report-production-orders-as-finished.md)
-#### [Rapportere stykklister som ferdigstilte](production-control/report-boms-as-finished.md)
-#### [Direkteoverføring fra produksjonsordrer til utleveringsporter](production-control/cross-docking-opportunities.md)
-#### [Registrere materialforbruk med en mobil enhet](production-control/register-material-consumption-hand-held-device.md)
-#### [Materialerstatning i produksjon](production-control/substitute-items-bom-lines.md)
-#### [Registrering for produksjonsutførelse](production-control/registration-manufacturing-execution.md)
-#### [Tilbakemeldinger på produksjon](production-control/production-feedback.md)
-#### [Timeregistrering](production-control/time-attendance-registrations.md)
-### Behandle finans i produksjon
-#### [Tildele tid til jobber i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
-#### [Beregne materialforbruk](production-control/consumption.md)
-#### [Produksjonspostering](cost-management/production-posting.md)
-## Lean manufacturing 
-### [Oversikt over lean-varehandel](production-control/lean-manufacturing-overview.md)
-### [Aktivitetsbasert utsetting](production-control/activity-based-subcontracting.md)
-### Opprettholde produksjonshoveddata
-#### [Modellere en lean-organisasjon](production-control/lean-manufacturing-modeling-lean-organization.md)
-#### [Operasjonsressurser](production-control/operations-resources.md)
-### Planlegge Kanban-jobber
-#### [Visuell planlegging for lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
-#### [Kanban-jobbplanlegging for lean manufacturingl](production-control/lean-manufacturing-kanban-job-scheduling.md)
-#### [Finplanlegging](production-control/job-scheduling.md)
-### Operere Kanban-jobber
-#### [Støtte for Kanban-overføringskort for strekkodelesere](production-control/kanban-transfer-board-support-barcode-scanner.md)
-#### [Tilbakemeldinger på produksjon](production-control/production-feedback.md)
-## Prosessproduksjon
-### Opprettholde produksjonshoveddata
-#### [Stykklister og formler](production-control/bill-of-material-bom.md)
-#### [Operasjonsressurser](production-control/operations-resources.md)
-#### [Ressursfunksjoner](production-control/resource-capabilities.md)
-#### [Partiattributter](production-control/batch-attributes.md)
-#### [Standardverdier for produksjonsordre i produksjonsutførelse](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Krav til produksjonsoppsett](production-control/production-set-up-requirements.md)
-### Planlegge produksjonsoperasjoner
-#### [Grovplanlegging](production-control/operations-scheduling.md)
-#### [Alternativer for grovplanlegging](production-control/operation-scheduling-options.md)
-#### [Finplanlegging](production-control/job-scheduling.md)
-#### [Gantt-diagram til finplanlegging](production-control/visual-scheduling-production.md)
-### Operere produksjonsjobber
-#### [Konsoliderte partiordrer](production-control/consolidated-batch-orders.md)
-#### [Materialerstatning i produksjon](production-control/substitute-items-bom-lines.md)
-#### [Registrering for produksjonsutførelse](production-control/registration-manufacturing-execution.md)
-#### [Tilbakemeldinger på produksjon](production-control/production-feedback.md)
-#### [Timeregistrering](production-control/time-attendance-registrations.md) 
-### Behandle finans i produksjon
-#### [Tildele tid til jobber i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
-#### [Beregne materialforbruk](production-control/consumption.md)
-#### [Produksjonspostering](cost-management/production-posting.md)
-# Salg og markedsføring
-## [Markedsføring](sales-marketing/overview-sales-marketing.md)
-## Salgsordrer
-### [Ordrebekreftelse](sales-marketing/delivery-dates-available-promise-calculations.md)
-### [Leveringsalternativer](sales-marketing/delivery-alternatives.md)
-### [Ordrefrister](sales-marketing/order-entry-deadlines.md)
-### [Direkte leveringer](sales-marketing/direct-deliveries.md)
-### [Leveringsplaner](sales-marketing/delivery-schedules.md)
-### [Serienumre i salgsprosessen](sales-marketing/register-serial-numbers-sales-process.md)
-### [Reservasjon fra samme parti](sales-marketing/reserve-same-batch-sales-order.md)
-## [Salgsavtaler](sales-marketing/sales-agreements.md)
-## Salgstilbud
-### [Prissimulering](sales-marketing/price-simulation.md)
-## Returer
-### [Salgsreturer](warehousing/sales-returns.md)
-# Transportstyring
-## [En ny transportmotor](transportation/create-new-transportation-management-engine.md)
-## [Opprette et fraktbrev](transportation/create-bill-of-lading.md)
-## [Planlegge frakttransportruter](transportation/plan-freight-transportation-routes-multiple-stops.md)
-## [Planlegge laster ved hjelp av hubkonsolidering](transportation/plan-loads-hub-consolidation.md)
-## [Avstemme frakt](transportation/reconcile-freight-transportation-management.md)
-## [Transportstyring](transportation/transportation-management-overview.md)
-## [Transportmotor](transportation/transportation-management-engines.md)
-# Lagerstyring
-## Avansert lagerstyring
-### [Overfør fra AX 2012 til Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
-## Oppsett 
-### [Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver](warehousing/control-warehouse-location-directives.md)
-### [Administrere lagerarbeidere](warehousing/manage-warehouse-workers.md)
-### [Definere oppsett](warehousing/warehouse-configuration.md)
-### [Arbeidspolicyer for lager](warehousing/warehouse-work-policies.md)
-### [Måleenhet og lagringspolicyer](warehousing/unit-measure-stocking-policies.md)
-### [Power BI-innhold for lager](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
-### [Parti- og nummerskiltbekreftelse](warehousing/batch-and-license-plate-confirmation.md)
-### [Flytting av beholdning med tilknyttet arbeid](warehousing/move-inventory-associated-work.md)
-### [Systemgruppering i en åpen arbeidsliste](warehousing/system-group-on-open-work-list.md)
-### [Produktbekreftelse for gruppeplukking](warehousing/cluster-picking-item-confirmation.md)
-## Plukk og pakking
-### [Pakkematerialer og -gebyrer](warehousing/pack-materials-packing-material-fees.md)
-### [Stykkplukkingsbekreftelse](warehousing/piece-picking-confirmation.md)
-## Lageropptelling
-### [Blokkere lager](inventory/inventory-blocking.md)
-### [Syklustelling](warehousing/cycle-counting.md)
-### [Delvis lokasjonssyklustelling](warehousing/partial-location-cycle-counting.md)
-### [Lagerjournal](inventory/inventory-journals.md)
-### [Lagerlokasjon](inventory/inventory-locations.md)
-### [Beholdningsstatus](inventory/inventory-statuses.md)
-### [Lagerbrikkeopptelling](inventory/inventory-tag-counting.md)
-## Containerbruk 
-## Etterfylling
-### [Etterfylling](warehousing/replenishment.md)
-### [Etterfylling med uttak – Kanbaner](warehousing/material-replenishment-withdrawal-kanban.md)
-## Mobilenheter
-### [Installere og konfigurere lagerappen ](warehousing/install-configure-warehousing-app.md)
-### [Konfigurere feltnavn i lagerapp](warehousing/configure-app-field-names-priorities-warehouse.md)
-### [Definere mobilenheter for lagerarbeid](warehousing/configure-mobile-devices-warehouse.md)
-### [Portal for lagermobilenheter (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
-### [Innstillinger for visning av lagermobilenhet](warehousing/change-warehouse-mobile-device-displays.md)
+# [Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Finans](/dynamics365/unified-operations/financials/index)
+## [Komme i gang](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Registrere deg for et abonnement](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Få tilgang til den lokale versjonen av Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Distribuere et demomiljø](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utgåtte funksjoner](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [AX 2012-funksjoner er ikke implementert ennå](/dynamics365/unified-operations//dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Funksjoner som ikke er implementert i lokale distribusjoner](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Personale](/dynamics365/unified-operations/talent/index)
+### Utforske brukergrensesnittet
+#### [Handlingssøk](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avansert syntaks for filtrering og spørring](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dynamics 365 for økonomi og operasjonene, Enterprise edition-klient på vanlige spørsmål](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere og filtrere arbeidsområder](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vise sider side ved side ved å bruke ikonet Åpne i nytt vindu](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Navigasjonssøk](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilpasse brukeropplevelsen](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hurtigtaster](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Administrere hvordan sider vises](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Forstå Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Detaljhandel](/dynamics365/unified-operations/retail/index)
+### Få hjelp og støtte
+#### [Oversikt over Hjelp](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Koble til Hjelp](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vise og eksportere feltbeskrivelser](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Oppgaveveiledninger og oppgaveregistrering
+##### [Oppgaveregistrering](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette dokumentasjon eller opplæring](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lands-/områdespesifikt hjelpeinnhold](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ordliste](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Utvikler og administrator](/dynamics365/unified-operations/dev-itpro/index)
+## Samsvar
+### [Regler for overvåkingspolicy](/dynamics365/unified-operations/financials/general-ledger/audit-policy-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Brudd på og saker for overvåkingspolicy](/dynamics365/unified-operations/financials/general-ledger/audit-policy-violations-cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# Andre ressurser
-## [Finance and Operations-ordliste](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-## [Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Kostnadsstyring
+### Innholdspakke for Power BI
+#### [Innholdspakke for kostnadsstyring](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Forhåndsbestemt kostnad
+#### [Kostark](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Etterkalkuleringsversjon](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Simulere kostnadsendring ved hjelp av en etterkalkuleringsversjon for planlagt kostnad](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lageretterkalkulering
+#### [Justere kostnadsverdi for lagerbeholdning](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsobjekt](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsoppføring](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostgruppe](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [FIFO med fysisk verdi og merking](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ta med fysisk verdi](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerobjektverdi](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerlukking](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO-dato med fysisk verdi og merking](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO med fysisk verdi og merking](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Glidende gjennomsnitt](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fysisk og økonomisk oppdatering](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Løpende gjennomsnittlig kostpris](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spore glidende gjennomsnitt av kostpris per lagerdimensjon](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dato for avveid gjennomsnitt](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Direkte utligning med fysisk verdi og merking](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Produksjonsetterkalkulering
+#### [Amortisere konstante kostnader for en produsert vare](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Backflush-etterkalkulering](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Stykklisteberegninger](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Stykklisteberegningsgruppe](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vanlige kilder til produksjonsavvik](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadskategori brukt i produksjonsruting](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadskategori brukt i produksjonskontroll og i prosjektstyring og regnskap](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vise tillegg for en produsert vare](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsanalyse for produksjonsordre](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsberegning for produksjonsordre](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Produksjonspostering](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere et produkt som kan produseres eller fremskaffes](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Metode for total kostnadsfordeling](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Standardkostnad
+#### [Stykklisteberegninger med standardkostnad](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Behandle oppdatering av standardkostnad](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Forutsetning for konvertering av standardkostnad](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over konvertering av standardkostnad](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppdatere standardkostnad i et produksjonsmiljø](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppdatere standardkostnad for en ny produsert vare](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppdatere standardkostnad i et ikke-produksjonsmiljø](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
+## [Økonomisk administrasjon](/dynamics365/unified-operations/financials/TOC)
+
+### [Finans](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kontoer
+##### [Oversikt over avsetninger](/dynamics365/unified-operations/financials/general-ledger/accruals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elimineringsregler](/dynamics365/unified-operations/financials/general-ledger/elimination-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kombinasjoner av konto og dimensjon](/dynamics365/unified-operations/financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Balanserte journaler for interenhetsregnskap](/dynamics365/unified-operations/financials/general-ledger/example-balanced-journals-interunit-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Posteringsdefinisjoner](/dynamics365/unified-operations/financials/general-ledger/posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Eksempler på posteringsdefinisjon ](/dynamics365/unified-operations/financials/general-ledger/example-posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontosaldoer i økonomimodulen](/dynamics365/unified-operations/financials/general-ledger/general-ledger-account-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hovedkontotyper](/dynamics365/unified-operations/financials/general-ledger/main-account-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge kontoplanen](/dynamics365/unified-operations/financials/general-ledger/plan-chart-of-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Regnskapskildeutforsker](/dynamics365/unified-operations/financials/accounts-payable/accounting-source-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Regnskapsdistribusjoner](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Behandle tildelinger](/dynamics365/unified-operations/financials/general-ledger/process-allocations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finansdimensjoner](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konvertere regnskaps- eller rapporteringsvalutaer](/dynamics365/unified-operations/financials/general-ledger/convert-accounting-reporting-currencies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsolideringskontogrupper og kontoer](/dynamics365/unified-operations/financials/budgeting/consolidation-account-groups-consolidation-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsoliderings- og elimineringsoversikt](/dynamics365/unified-operations/financials/budgeting/consolidation-elimination-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Regnskapskalendere, regnskapsår og perioder](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Journaler og finans
+##### [Behandling av generell journal](/dynamics365/unified-operations/financials/general-ledger/general-journal-processing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppsett for konserninternt regnskap](/dynamics365/unified-operations/financials/general-ledger/intercompany-accounting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finansfordelingsregler](/dynamics365/unified-operations/financials/general-ledger/ledger-allocation-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finansjournaltyper](/dynamics365/unified-operations/financials/general-ledger/ledger-journal-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Publisere journallinjer og dokumenter fra Excel](/dynamics365/unified-operations/financials/general-ledger/open-lines-excel-journals-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vise journaloppføringer og transaksjoner](/dynamics365/unified-operations/financials/general-ledger/view-journal-entries-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Revaluering av valuta i et konsolideringsfirma](/dynamics365/unified-operations/financials/general-ledger/currency-revaluation-consolidation-company?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Revaluering av utenlandsk valuta for finans](/dynamics365/unified-operations/financials/general-ledger/foreign-currency-revaluation-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Importere valutakurser](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lukking av periodeslutt
+##### [Lukke økonomimodulen ved periodeslutt](/dynamics365/unified-operations/financials/general-ledger/close-general-ledger-at-period-end?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidsområde for regnskapsperiodeavslutning](/dynamics365/unified-operations/financials/general-ledger/financial-period-close-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Årsavslutning](/dynamics365/unified-operations/financials/general-ledger/year-end-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Merverdiavgift
+##### [Oversikt over merverdiavgift](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mva-satser basert på grensegrunnlaget og beregningsmetodene](/dynamics365/unified-operations/financials/general-ledger/marginal-base-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mva-betalinger og avrundingsregler](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beregningsmåter for merverdiavgift i grunnlagsfeltet](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hele beløp og alternativer for intervallberegning for mva-koder](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Leverandører](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere Leverandør](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Treveis kontrollpolicyer](/dynamics365/unified-operations/financials/accounts-payable/three-way-matching-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Samsvar for kundefaktura](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-invoice-matching?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fakturasamsvar og konserninterne bestillinger](/dynamics365/unified-operations/financials/accounts-payable/invoice-matching-intercompany-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over positiv betaling](/dynamics365/unified-operations/financials/accounts-payable/positive-pay-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere og generere positive betalingsfiler](/dynamics365/unified-operations/financials/accounts-payable/set-up-generate-positive-pay-files?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler](/dynamics365/unified-operations/financials/accounts-payable/default-offset-accounts-vendor-invoice-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Løse avvik under kontroll for fakturatotaler](/dynamics365/unified-operations/financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverandørposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Revaluering av utenlandsk valuta for leverandører og kunder](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobile fakturagodkjenninger](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Automatisering av leverandørfaktura](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Betalinger og utligninger
+##### [Sentraliserte betalinger leverandører](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere utligning](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidsområde for leverandørbetalinger](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette leverandørbetalinger ved hjelp av et betalingsforslag](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilbakeføre en leverandørbetaling](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektronisk rapportering for leverandørsjekker](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oversikt over forskuddsbetalte fakturaer og forskuddsbetalinger](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis leverandørbetaling før rabattdatoen](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis leverandørbetaling som har flere rabattperioder](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis leverandørbetaling eller endelig betaling før rabatt](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkelt bilag med flere poster for kunde eller leverandør](/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruke en kontantrabatt utenfor kontantrabattperioden](/dynamics365/unified-operations/financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruke en rabatt som er større enn beregnet rabatt for en leverandørbetaling](/dynamics365/unified-operations/financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverandørbetalinger for et delbeløp](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Kunde](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kredit og innkrevinger i Kunde](/dynamics365/unified-operations/financials/accounts-receivable/collections-credit-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere Kunde, kredit og innkrevinger](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivables-set-up-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere kredit og innkrevinger](/dynamics365/unified-operations/financials/accounts-receivable/set-up-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere og behandle gjentakende fakturaer](/dynamics365/unified-operations/financials/accounts-receivable/set-up-process-recurring-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kundeposteringsprofiler](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over SEPA-avtalegiro](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kredittkortoppsett, autorisasjon og registrering](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Korrigere en fritekstfaktura](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere rentesatser for en rentekode](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Frafalle, gjenoppta eller reversere rentegebyrer](/dynamics365/unified-operations/financials/accounts-receivable/waive-reinstate-reverse-interest-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en kundefaktura](/dynamics365/unified-operations/financials/accounts-receivable/configure-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere veksler](/dynamics365/unified-operations/financials/accounts-receivable/set-up-bills-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lukke Kunde](/dynamics365/unified-operations/financials/accounts-receivable/close-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Betalinger og utligninger
+##### [Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sentraliserte betalinger for kunde](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne delvis kundebetaling eller endelig betaling før rabatt](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis kundebetaling som har rabatter på kreditnotaer](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligne en delvis kundebetaling som har flere rabattperioder](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Refundere kunder](/dynamics365/unified-operations/financials/accounts-receivable/reimburse-customers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kundebetalinger for et delbeløp](/dynamics365/unified-operations/financials/accounts-receivable/customer-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Kontant- og bankbehandling](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kontantstrømprognose](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbeidsområde for bank](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kontantrabatter](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over utligning](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over utligning for sentraliserte betalinger](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Purringer](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Purringer og importsamlinger](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit-import-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Garantibrev](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-guarantee?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Etterdaterte sjekker](/dynamics365/unified-operations/financials/cash-bank-management/postdated-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Håndtere kontantrabatter for overbetalinger](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere sentraliserte betalinger](/dynamics365/unified-operations/financials/cash-bank-management/set-up-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Automatisk utligning og prioritering](/dynamics365/unified-operations/financials/accounts-receivable/automatic-settlement-prioritization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Avansert bankavstemming
+##### [Oversikt over avansert bankavstemming](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere prosessen for avansert bankavstemmingsimport](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere samsvarsregler for bankavstemming](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MT940-import av avansert bankavstemming – oppgradering for sammensatt dataenhet](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oversikt over avansert bankavstemming](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Feilsøking av import av bankkontoutdragsfil](/dynamics365/unified-operations/financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppdatere sammensatt enhet for bankjournal](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Anleggsmidler](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbeidsområde for anleggsmiddel](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over oppgradering av avskrivningstablå](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avledede tablåer](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Postere med avledede tablåer](/dynamics365/unified-operations/financials/fixed-assets/post-derived-value-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Postere anleggsmiddeltransaksjoner til posteringslag](/dynamics365/unified-operations/financials/fixed-assets/post-fixed-asset-transactions-posting-layers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Alternativer for transaksjon av anleggsmiddel](/dynamics365/unified-operations/financials/fixed-assets/enter-fixed-asset-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgrupper](/dynamics365/unified-operations/financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Posteringskontoer for avhending av anleggsmiddel](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-disposal-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Masseoppdatering av faste anleggsmidler](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-mass-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skaffe aktiva ved hjelp av innkjøp](/dynamics365/unified-operations/financials/fixed-assets/acquire-assets-procurement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Definisjon og integrering
+##### [Definere anleggsmidler](/dynamics365/unified-operations/financials/fixed-assets/set-up-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Integrering av anleggsmidler](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Avskrivningsmetoder
+##### [125 % redusert saldoavskrivning](/dynamics365/unified-operations/financials/fixed-assets/125-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [150 % redusert saldoavskrivning](/dynamics365/unified-operations/financials/fixed-assets/150-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [175 % redusert saldoavskrivning](/dynamics365/unified-operations/financials/fixed-assets/175-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [200 % redusert saldoavskrivning](/dynamics365/unified-operations/financials/fixed-assets/200-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bonusavskrivning](/dynamics365/unified-operations/financials/fixed-assets/bonus-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Forbruksavskrivning](/dynamics365/unified-operations/financials/fixed-assets/consumption-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningseffekter med tilbakeføringer](/dynamics365/unified-operations/financials/fixed-assets/depreciation-effects-reversals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningsmetoder og -konvensjoner](/dynamics365/unified-operations/financials/fixed-assets/depreciation-methods-conventions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktoravskrivning](/dynamics365/unified-operations/financials/fixed-assets/factor-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Posteringskontoer for anskaffelse av anleggsmiddel](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-acquisition-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anleggsmidler](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Manuell avskrivning](/dynamics365/unified-operations/financials/fixed-assets/manual-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Redusere saldoavskrivning](/dynamics365/unified-operations/financials/fixed-assets/reduce-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avrundingsbeløp for avskrivningsberegninger](/dynamics365/unified-operations/financials/fixed-assets/round-off-amount-depreciation-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Gjenstående lineær levetidsavskrivning](/dynamics365/unified-operations/financials/fixed-assets/straight-line-life-remaining-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lineær levetidsavskrivning](/dynamics365/unified-operations/financials/fixed-assets/straight-line-service-life-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Budsjettering](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over budsjettplanlegging ](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over budsjettkontroll ](/dynamics365/unified-operations/financials/budgeting/budget-control-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over budsjettering ](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Stillingsprognose](/dynamics365/unified-operations/financials/budgeting/position-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Justeringsdokumenter for budsjettplanlegging](/dynamics365/unified-operations/financials/budgeting/budget-planning-justification-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette et budsjett fra transaksjonskontoer og totalkontoer](/dynamics365/unified-operations/financials/budgeting/create-budget-transaction-accounts-total-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budsjettplanleggingsmaler for Excel](/dynamics365/unified-operations/financials/budgeting/budget-planning-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Feilsøking av stillingsbudsjettering](/dynamics365/unified-operations/financials/budgeting/position-budgeting-set-up-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budsjettplanlegging](/dynamics365/unified-operations/financials/budgeting/budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Datafordeling for budsjettplanlegging](/dynamics365/unified-operations/financials/budgeting/budget-planning-data-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Integrering av budsjettplanlegging med andre moduler](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Finansrapporter for balanse](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generere en finansrapport](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Finansrapport for resultatregnskap](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Finansrapporter for råbalanse](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vise finansrapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapportutforming](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Kostnadsregnskap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Betingelser](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Praktiske laboratorier (/ dynamics365-samlet-operasjoner/Finans/hvitt papir)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Kostnadselementdimensjoner](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsobjektdimensjoner](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensjonshierarki](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Grunnleggende tildeling](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beregning av indirekte kostnader](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Policy for opprullet kost og beregning av administrasjonskostnader](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilgangsrettigheter for en kostnad object-kontroller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbeidsområde for kostnadskontroll](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobilt arbeidsområde for kostnadskontroll](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI-innhold for analyse av kostnadsregnskap](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Offentlig sektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planlegge for funksjonalitet for offentlig sektor](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverandør i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/accounts-payable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bestillingskoder i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/purchase-order-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Postering av definisjoner i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/posting-definitions-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge for engangsleverandører i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/plan-one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Engangsleverandører i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kunde i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/accounts-receivable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktureringsklassifiseringer og faktureringskoder i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/billing-classifications-billing-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utligningsprioritet i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/settlement-priority-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fritekstfakturaer i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/free-text-invoices-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Refusjoner i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/reimbursements-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budsjettering i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/budgeting-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Budsjettanalyse i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/budget-analysis-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Foreløpige budsjetter og fordelinger i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/preliminary-budgets-apportionments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anleggsmidler i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/fixed-asset-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Finans i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/general-ledger-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avansert finansoppføringer i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/advanced-ledger-entries-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Årsavslutningsbehandling i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/year-end-processing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avledede økonomiske hierarkier i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/derived-financial-hierarchies-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Innkjøp og leverandører i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sikkerhetsroller i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/security-roles-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Midler i offentlig sektor](/dynamics365/unified-operations/financials/public-sector/funds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Finansrapportering](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Generere en finansrapport](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Komponenter for finansrapport](/dynamics365/unified-operations/dev-itpro/analytics/financial-report-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportutforming](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Brukerinnstillinger](/dynamics365/unified-operations/dev-itpro/analytics/user-preferences-financial-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Avanserte alternativer for formatering](/dynamics365/unified-operations/dev-itpro/analytics/advanced-formatting-options-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisere Rapportkomponenter](/dynamics365/unified-operations/dev-itpro/analytics/organize-components-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportdefinisjoner](/dynamics365/unified-operations/dev-itpro/analytics/design-financial-report-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raddefinisjoner](/dynamics365/unified-operations/dev-itpro/analytics/row-definitions-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kolonnedefinisjoner](/dynamics365/unified-operations/dev-itpro/analytics/column-definitions-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Endre definisjonen celler for rad](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tilbakestille økonomisk rapportering oppstillingsdatabasen når du gjenoppretter en database](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Oversikt over lokalisering](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+### Asia/Stillehavskysten
+#### Australia
+##### [Bankfilformater](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Business Activity Statement ](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning for lavverdipulje](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Kina
+##### [Stykklistesammenligning](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kinesiske bilag](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere avgiftsintegrering](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vanlige spørsmål om mva-kundefakturaer](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anleggsmidler for avskrivningsmetoder ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Importere dataenheten Chinese Golden Tax](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kostmodell med månedlig gjennomsnitt](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokføre lagerhovedkontoer etter område](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere negativ debet og kredit ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Japan
+##### [Bankbetalingsgebyrer som er dekket av leverandører](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsoliderte fakturaer](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Anleggsmidler
+###### [Tildelingsregler](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vanlige spørsmål om avskrivning](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Likt delt avskrivningsmetode](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Verdiforringelsesregnskap](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Verdiforringelsesregnskap for CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Definere ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Definere reduksjonsoppføringer](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Betale en leverandør ved å godkjenne en veksel](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beregning av progressiv kildeskatt](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Malaysia
+##### [Goods and Services Tax ](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Singapore
+##### [Generere rapporten GST-05](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Thailand
+##### [Lagerkortrapporter](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Urealisert mva](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kildeskatt](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Europa
+#### [Forskuddsinnehavere](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redigere faktura-IDer på salgsordrer](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [EU-innførselssertifikater](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapportering av EU-salgsliste](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Valutakursjusteringer](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Filformater for betalingsmåter](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avhending av anleggsmidler i Estland og Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Faktura- og følgeseddelnummerering for Latvia og Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tidsfrister for utstedelse av faktura](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [OIOUBL-standarder](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapport for betalingsseddel](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Håndkasse](/dynamics365/unified-operations/financials/localizations/emea-petty-cash?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bokføre forhåndsanskaffelsen for et anleggsmiddel](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Postnumre](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Registrerings-ID-er](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over SEPA-kredittoverføring](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over SEPA-avtalegiro](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere signatarer for utskriftsskjemaer](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kursjusteringer for mva](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vise transaksjoner ved utligning](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Østerrike
+##### [Halvårsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Emballasjematerialegebyrer](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mva-oppgave](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Belgia
+##### [CODA-bankkontoutdrag](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Intervat-avgiftsdeklarering](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppsett for PRODCOM-rapport](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avstemmingsrapporter](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Tsjekkia
+##### [Kontantrabatt på kreditnota](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avrunding av avskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningssuspensjon](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Halvårsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mva-rapportering ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mva-oppgave](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Estland
+##### [Mva-oppgave](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frankrike
+##### Offentlig sektor
+###### [Regnskap i offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Forpliktelser](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Betalingssperrer for leverandørfaktura](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kronologiske fakturaer og bilag](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Nedsettende avskrivning](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NAF-koder og siret-numre](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Straff for forfalte kundebetalinger](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skrive ut tekst for refusjon av engangsbeløp på en kundefaktura](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [RB/SL-avskrivning](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tyskland
+##### [Avskrivning for ekstraanskaffelser](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Revisjonsfil ](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Journallisterapport](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skrive ut en egen etikett for kreditnotaer som stammer fra salg](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ungarn
+##### [Metoder for avskrivning av anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lavkostanleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Flytte et anleggsmiddel til lager](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Italia
+##### [Detaljer om mva-oppgaver](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Svartelisterapport](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kompetansedato](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bekreftelse på følgeseddeldato på fakturaer](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dele opp betaling for fakturaer som er utstedt til offentlig administrasjon](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kildeskatt](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Latvia
+##### [Regnskap for anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Plassering av endringssporing for anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapporten Skatt på naturressurser](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Detaljer om mva-oppgave](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Litauen
+##### [Oppgave for reparasjon av anleggsmiddel](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Detaljer om mva-oppgave](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Norge
+##### [Format for nettoimport](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Polen
+##### [Beregne linjerabatter fra enhetsprisen](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rettelsesmerknader](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Duplisere salgsfakturanummerering](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anleggsmidler](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvidelse for avhendingsfunksjonalitet for anleggsmiddel](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Returnerbar emballasje](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Merverdiavgiftrapporter](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Standard revisjonsfil (/ dynamics365/webdel-operasjoner/Finans/Lokaliseringer/SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Omsetnings- og saldoutdrag](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Spania
+##### [Bruke kontantrabatter i fakturaen](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativer for veksel](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Betinget mva.](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fakturakonto for regnskapsdata](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Revalueringsgruppe for anleggsmiddel](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fellesskapsmerverdiavgift](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Engangskunder](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skrive ut sjekker med spansk oppsett](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativer for egenveksel](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Salgs- og kjøpssykluser](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Spesielle oppføringer og åpningsark](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sverige
+##### [Importere betalingsformater](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sveits
+##### [Importere kundebetalinger i ESR](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Storbritannia
+##### [Skjema for byggebransjen ](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Latin-Amerika
+#### Brasil
+##### [Regnskapsbøker](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Regnskapsdokumenter for ICMS-avgift](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importere regnskapsdokumenter](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Eksportere og importere transaksjoner for juridisk enhet fra konsolideringen for økonomimodulen](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importere og kontrollere XML-dokumenter og DANFE-filer for NF-e](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Behandle elektroniske betalingsremitteringer](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Regnskapsdokumenter](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tekstplassholdere for regnskapsdokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kjøpskomplementære regnskapsdokumenter](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Refererte regnskapsdokumenter](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Salgskomplementære regnskapsdokumenter](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Utføre service på elektronisk regnskapsdokument](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Journaler som ble generert under prosessen for elektronisk betalingsretur](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NF-e-prosess](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Parametere for juridiske enheter](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anskaffe et anleggsmiddel for CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avhende et anleggsmiddel for CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avgifter](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Avgiftsattributter](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Avgiftsbetalinger](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mexico
+##### [Deklareringsrapport for justeringsinflasjon](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [DIOT-deklareringsutdrag](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektroniske fakturaer ](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektroniske finanskontoutdrag](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ISR-deklareringsrapport](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Nord-Amerika
+#### [1099-rapportering ved årsavslutning i USA](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Personale
+
+### Rekrutterer
+#### [Administrere en rekrutteringsprosess](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Masseansettelsesprosjekter](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Lønn, USA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lønnsoppsett
+##### [Definere lønn for arbeidere](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere arbeidssykluser og arbeidsperioder](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere planer for fordelsavsetning ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere fordeler](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frekvenser og sykluser
+#### [Oppgaver i betalingssyklus og betalingsperiode](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppgaver i lønnsberegning og -hyppighet](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppgaver i arbeidsplan og permisjon](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Koder og avgifter
+##### [Inntektskode og gruppeoppgaver for inntektskode](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgaver i avgiftsinformasjon](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-information-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tredjemannsutlegg, mva-utskrivninger og bonusutbetaling
+##### [Definere tredjemannsutlegg og mva-utskrivninger](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrere arbeidere i tredjemannsutlegg og mva-utskrivninger](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere bonusinntekter ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vanlige spørsmål om tredjemannsutlegg, mva-utskrivninger og administrative avgifter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Oppgaver i lønnsbehandling
+##### [Generere inntekter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earnings-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utstede arbeiderbetalinger](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-issue-worker-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokføre lønn og generere leverandørfakturaer](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vanlige spørsmål om lønnsoppgaver og generering av betalinger](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Fullføre betalingsprosessen
+##### [Behandle eksisterende lønnsbetalinger](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Behandle eksisterende inntekter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-earnings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Behandle lønnsoppgaver](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Vedlikehold og rapportering
+##### [Vanlige spørsmål om oppdateringer av lønnsdata](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-data-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Generere lønnsrapporter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Forretningsanalyse](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Access privilegerte BI innhold](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Strøm BI innhold frigitt](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fordeler](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over kontant](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+#### [Oversikt for CFO](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensasjon](/dynamics365/unified-operations/dev-itpro/analytics/compensation-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensasjon og fordeler](/dynamics365/unified-operations/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostregnskapsanalyse](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sikkerhetsnøkkel for kostnadsregnskap analysen](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsstyring](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utskriftsbehandling for kredit og innkreving](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
+#### [Ansattes kompetanser og utvikling](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Medarbeiderutvikling](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Økonomiske resultater](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Administrasjon av aktiva](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Opplæring](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Organisasjonsmessige opplæring](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Praksis manager](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Produksjonsmiljøet](/dynamics365/unified-operations/dev-itpro/analytics/production-performance-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bruke analyse for innkjøp](/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Recruiting](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kanal-ytelse for detaljhandel](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Salg og lønnsomhet ytelse](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverandørbetalinger](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Lager-ytelse](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mål for arbeidsstyrke](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Rapportere og skrive ut og dokumenter
+#### [Dokumentet Reporting Services-oversikt](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skrive ut](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Aktiver skriver nettverksenheter](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kjør agenten dokumentet ruting som en Windows-tjeneste](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hindre at tidkrevende rapporter tidsavbrudd](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Liste over SQL Server Reporting Services-rapporter](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lage rapportering](/dynamics365/unified-operations/dev-itpro/analytics/create-nextgen-reporting-solutions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installere rapporten utformingsmaler](/dynamics365/unified-operations/dev-itpro/analytics/install-modern-report-design-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utvide rapporten menyelementer](/dynamics365/unified-operations/dev-itpro/analytics/extend-report-menu-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Egendefinert utforming business dokumenter](/dynamics365/unified-operations/dev-itpro/analytics/custom-designs-business-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Elektronisk rapportering
+#### [Oversikt](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Administrere livssyklusen konfigurasjon](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en konfigurasjon](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere den elektroniske rapporteringsrammeverk](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Last ned konfigurasjoner](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Import elektronisk rapportering konfigurasjoner](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-import-ger-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til en funksjon](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Formeldesigner](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bygge inn bilder og figurer i forretningsdokumenter som er generert ved hjelp av verktøyet for elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-embed-images-shapes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Endre et elektronisk format for rapportering ved å utføre en Microsoft Excel-mal](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mål](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere elektronisk rapportering med Power BI](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generere elektroniske dokumenter og og oppdatere programmet data ved hjelp av verktøyet for elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Analyseverktøy og -effekter
+#### [Analyse, samlet mål og KPI-modeller](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Modellering og samle data](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til Kontekstbasert BI skjemaene](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Samlet mål-rapport](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Samle data enheter rapport](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapport om viktigste indikator (KPI)](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI-integrering](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [BI innebygde strøm-integrering](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Innebygde privilegerte BI i arbeidsområder](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til strøm BI i arbeidsområder](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fest Power BI-rapporterer til arbeidsområder](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Strøm BI integrasjon med enhet-lager](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redigere og distribuere Power BI-rapporter med enhetslager](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Lagerstyring
+### Opprette lageroppsett
+### Innkommende prosess
+#### [Ankomstoversikt](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Utgående prosess
+### Definere lagersporing
+#### [Lagerjournaler](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerlokasjoner](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beholdningsstatuser](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reservere lagerantall](/dynamics365/unified-operations/supply-chain/inventory/reserve-inventory-quantities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reservere samme parti for en salgsordre](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Forsendelseslager
+#### [Forsendelse](/dynamics365/unified-operations/supply-chain/inventory/consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere forsendelse](/dynamics365/unified-operations/supply-chain/inventory/set-up-consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kvalitetsstyring
+#### [Mobilt arbeidsområde for lagerbeholdning](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivere kvalitetsstyring](/dynamics365/unified-operations/supply-chain/inventory/enable-quality-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerblokkering](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avviksstyring](/dynamics365/unified-operations/supply-chain/inventory/enable-nonconformance-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Karanteneordre](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kvalitetsstyringsprosess](/dynamics365/unified-operations/supply-chain/inventory/quality-management-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Spore vare og parti
+#### [Slå sammen lagerparti](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spore vare og råmateriale](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Registrere serienummer i salgsprosessen](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process)
+
+## Logistikk
+### Transportstyring
+#### [En ny transportmotor](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette et fraktbrev](/dynamics365/unified-operations/supply-chain/transportation/create-bill-of-lading?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planlegge frakttransportruter](/dynamics365/unified-operations/supply-chain/transportation/plan-freight-transportation-routes-multiple-stops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planlegge laster ved hjelp av hubkonsolidering](/dynamics365/unified-operations/supply-chain/transportation/plan-loads-hub-consolidation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avstemme frakt](/dynamics365/unified-operations/supply-chain/transportation/reconcile-freight-transportation-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Transportstyring](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Transportmotor](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Lagerstyring
+#### Definere 
+##### [Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Administrere lagerarbeidere](/dynamics365/unified-operations/supply-chain/warehousing/manage-warehouse-workers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere oppsett](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidspolicyer for lager](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Måleenhet og lagringspolicyer](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Power BI-innhold for lager](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+##### [Parti- og nummerskiltbekreftelse](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produktbekreftelse for gruppeplukking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Blandet nummerskilt mottak](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Flytting av varer med tilknyttet arbeid i Lagerstyring](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Systemgruppering i en åpen arbeidsliste](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Plukk og pakking
+##### [Velg eldste partiet på en mobil enhet](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Stykkplukkingsbekreftelse](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pakkematerialer og -gebyrer](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lageropptelling
+##### [Blokkere lager](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Syklustelling](/dynamics365/unified-operations/supply-chain/warehousing/cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delvis lokasjonssyklustelling](/dynamics365/unified-operations/supply-chain/warehousing/partial-location-cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerjournal](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerlokasjon](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beholdningsstatus](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerbrikkeopptelling](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Containerbruk 
+#### Etterfylling
+##### [Etterfylling](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Etterfylling med uttak – Kanbaner](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mobilenheter
+##### [Installere og konfigurere lagerappen ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere feltnavn i lagerapp](/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere mobilenheter for lagerarbeid](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Portal for lagermobilenheter (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Innstillinger for visning av lagermobilenhet](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Hovedplanlegging
+### Opprette behovsprognose
+#### [Oversikt over behovsprognose](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere en behovsprognose](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Importere historiske data for behovsprognoser](/dynamics365/unified-operations/supply-chain/master-planning/import-historical-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generere en statistisk basislinjeprognose](/dynamics365/unified-operations/supply-chain/master-planning/generate-statistical-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utføre manuell justering i basislinjeprognose](/dynamics365/unified-operations/supply-chain/master-planning/manual-adjustments-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Autorisere en justert prognose](/dynamics365/unified-operations/supply-chain/master-planning/authorize-adjusted-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Overvåke prognosenøyaktighet](/dynamics365/unified-operations/supply-chain/master-planning/monitor-forecast-accuracy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fjerne utestående fra historiske transaksjonsdata](/dynamics365/unified-operations/supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reduksjonsnøkler](/dynamics365/unified-operations/supply-chain/master-planning/reduction-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Hovedplan
+#### [Handlingsmeldinger](/dynamics365/unified-operations/supply-chain/master-planning/action-messages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dekningsinnstillinger](/dynamics365/unified-operations/supply-chain/master-planning/coverage-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Forsinkelser](/dynamics365/unified-operations/supply-chain/master-planning/delays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hovedplaner](/dynamics365/unified-operations/supply-chain/master-planning/master-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hovedplaner og multisite-funksjonalitet](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-multisite-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge for områdedekning, obligatorisk lager](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge for områdedekning, ikke obligatorisk lager](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge for område- og lagerdekning, obligatorisk lager](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planlegge for område- og lagerdekning, ikke obligatorisk lager](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fastslå stykklisteversjonen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-bom-version-determined?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Nedbryting av en stykklisteversjon](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-explosion-bom-version?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vedlikeholde planlagte ordrer](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spore en nedbryting](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Ordrebehandling
+### Innkjøp og leverandører
+#### [Oversikt over innkjøp og leverandører](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbeidsflyt for innkjøp og leverandører](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Innkjøpspolicyer](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Innkjøpskataloger](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Innkjøpsrekvisisjoner](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidsflyt for innkjøpsrekvisisjon](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Tilbudsforespørsler (RFQer)](/dynamics365/unified-operations/supply-chain/procurement/request-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Bestillinger
+##### [Oversikt over bestilling](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette bestillinger](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Godkjenne og bekrefte bestillinger](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Priser og rabatter
+##### [Kjøpsavtaler](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mottakssedler og fakturering
+##### [Mottaksseddel mot bestillinger](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverandørposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Leverandørbehandling og samarbeid
+##### [Definere og vedlikeholde leverandørsamarbeid](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Administrere brukere av leverandørsamarbeid](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere leverandørkontoer](/dynamics365/unified-operations/supply-chain/procurement/set-up-vendor-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverandørsamarbeid med eksterne leverandører](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverandørsamarbeid med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definere en ekstern katalog for PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/set-up-external-catalog-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruke eksterne kataloger for PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Samarbeide med leverandører ved hjelp av leverandørportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mobilt arbeidsområde for leverandørsamarbeid](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Brukersikkerhet for leverandørportal](/dynamics365/unified-operations/supply-chain/procurement/configure-security-vendor-portal-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Salg og markedsføring
+#### [Markedsføring](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Salgsordre
+##### [Ordrebekreftelse](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leveringsalternativer](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tidsfrister for ordreregistrering](/dynamics365/unified-operations/supply-chain/sales-marketing/order-entry-deadlines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Direkte leveringer](/dynamics365/unified-operations/supply-chain/sales-marketing/direct-deliveries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leveringsplaner](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-schedules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Serienumre i salgsprosessen](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Reservasjon fra samme parti](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Det mobile arbeidsområdet Salgsordrer](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Salgsavtaler](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Salgstilbud
+##### [Prissimulering](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Returer
+##### [Salgsreturer](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Organisasjonsstyring](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisasjoner og organisasjonshierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurere organisasjonshierarki](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Adressebøker](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Global adressebok](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere globale adressebøker](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oversikt over nummerserie](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oversikt over elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oversikt over saksbehandling](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere sakssikkerhet, prosesser og kategorier](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette postmaler](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurere og sende e-post](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Dato-/klokkeslettdata og tidssoner](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Utforme arbeidsflyter
+#### [Oversikt over arbeidsflytsystem](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arkitektur](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-system-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Handlinger](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-actions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elementer](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en arbeidsflyt](/dynamics365/unified-operations/fin-and-ops/organization-administration/create-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en godkjenningsprosess](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-process-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere et godkjenningstrinn](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-step-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en automatisert oppgave](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-automated-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en betinget beslutning](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-conditional-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en arbeidsflyt for linjeelement](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-line-item-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en manuell beslutning](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en manuell oppgave](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en parallell aktivitet](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-activity-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere en parallell avdeling](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere egenskaper for arbeidsflyt](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere den satsvise jobben for meldingsbehandling](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapport for arbeidsflyttyper](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Produksjon
+### [Oversikt over produksjonsprosess](/dynamics365/unified-operations/supply-chain/production-control/production-process-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Blandet modusplanlegging: Kombinere diskret, behandle og lean-leverandører](/dynamics365/unified-operations/supply-chain/production-control/mixed-mode-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Administrere utsettingsarbeid i produksjon](/dynamics365/unified-operations/supply-chain/production-control/manage-subcontract-work-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Stykkproduksjon
+#### Opprettholde produksjonshoveddata
+##### [Krav til produksjonsoppsett](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Stykklister og formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Funksjonalitet for stykklisteutforming](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Stykklisteberegninger](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produksjonsparametere i produksjonsutførelse](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjonsressurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ressursfunksjoner](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ruter og operasjoner](/dynamics365/unified-operations/supply-chain/production-control/routes-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidspolicyer for lager](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Planlegge produksjonsoperasjoner
+##### [Grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Gantt-diagram til finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativer for grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Operere produksjonsjobber
+##### [Opprette produksjonsordrer](/dynamics365/unified-operations/supply-chain/production-control/create-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Frigi produksjonsordrer](/dynamics365/unified-operations/supply-chain/production-control/release-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Reversere produksjonsordrestatusen](/dynamics365/unified-operations/supply-chain/production-control/reverse-production-order-status?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapportere produksjonsordrer som ferdigstilte](/dynamics365/unified-operations/supply-chain/production-control/report-production-orders-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapportere stykklister som ferdigstilte](/dynamics365/unified-operations/supply-chain/production-control/report-boms-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materialerstatning i produksjon](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering for produksjonsutførelse](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilbakemeldinger på produksjon](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Timeregistrering](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Behandle finans i produksjon
+##### [Tildele tid til jobber i en jobbunt](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beregne materialforbruk](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produksjonspostering](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Administrere råvarer
+##### [Direkteoverføring fra produksjonsordrer til utleveringsporter](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrere materialforbruk med en mobil enhet](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lean manufacturing 
+#### [Oversikt over lean-varehandel](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivitetsbasert utsetting](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Opprettholde produksjonshoveddata
+##### [Modellere en lean-organisasjon](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjonsressurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Planlegge Kanban-jobber
+##### [Visuell planlegging for lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-lean-manufacturing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kanban-jobbplanlegging for lean manufacturingl](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-kanban-job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Operere Kanban-jobber
+##### [Støtte for Kanban-overføringskort for strekkodelesere](/dynamics365/unified-operations/supply-chain/production-control/kanban-transfer-board-support-barcode-scanner?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilbakemeldinger på produksjon](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Prosessproduksjon
+#### Opprettholde produksjonshoveddata
+##### [Stykklister og formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjonsressurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ressursfunksjoner](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Partiattributter](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produksjonsparametere i produksjonsutførelse](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Krav til produksjonsoppsett](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Planlegge produksjonsoperasjoner
+##### [Grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativer for grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Operere produksjonsjobber
+##### [Konsoliderte partiordrer](/dynamics365/unified-operations/supply-chain/production-control/consolidated-batch-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materialerstatning i produksjon](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering for produksjonsutførelse](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilbakemeldinger på produksjon](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Timeregistrering](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Behandle finans i produksjon
+##### [Tildele tid til jobber i en jobbunt](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beregne materialforbruk](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produksjonspostering](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Behandling av produktinformasjon
+### [Oversikt over produktinformasjon](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Vedlikehold produktkategorier
+### Vedlikehold produktinformasjon
+#### Vedlikehold produktdefinisjon
+##### [Produktnummerterminologi](/dynamics365/unified-operations/supply-chain/pim/product-variant-identification-nomenclature?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Produktmaler
+##### [Produktdimensjon](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Produktattributter
+##### Produktbilder og -vedlegg
+##### Produktidentifikatorer
+##### [Vanlige spørsmål om oversettelse av produktinformasjon](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frigi produkter til juridiske enheter
+#### Søke etter produkter
+##### [Søke etter produkt under ordreregistrering](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Klargjøre produkt for planlegging
+##### [Standard ordreinnstillinger for dimensjoner og produktvarianter](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Prognosemodeller og varefordelingsnøkler
+#### Klargjøre produkt for produksjon
+##### Stykkliste og formel
+###### [Stykklister og formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bruke stykklisteutformingen](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bruke formeldesigneren](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Ruter
+##### Lean manufacturing
+#### Klargjøre produkter for lager og logistikk
+#### Estimere kost for produkter
+##### [Stykklisteberegninger](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Vedlikeholde produktkonfigurasjonsmodeller
+#### [Bygge en produktkonfigurasjonsmodell](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vanlige spørsmål om beregning for produktkonfigurasjonsmodell](/dynamics365/unified-operations/supply-chain/pim/calculate-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurasjonsregel](/dynamics365/unified-operations/supply-chain/pim/configuration-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensjonsbasert konfigurasjon](/dynamics365/unified-operations/supply-chain/pim/dimension-based-product-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uttrykksbegrensning og tabellbegrensning](/dynamics365/unified-operations/supply-chain/pim/expression-constraints-table-constraints-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bruke produktkonfigurasjon på nytt](/dynamics365/unified-operations/supply-chain/pim/reuse-product-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere en konfigurasjonsmodell](/dynamics365/unified-operations/supply-chain/pim/set-up-maintain-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemdefinert og brukerdefinert tabellbegrensning](/dynamics365/unified-operations/supply-chain/pim/system-defined-user-defined-table-constraints?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Importere produktinformasjonsdata
+### Eksportere produktinformasjonsdata
+
+## [Prosjektstyring og regnskap](/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konsernintern fakturering](/dynamics365/unified-operations/financials/project-management/intercompany-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kjøpsmottak for avsetning av prosjektkostnad](/dynamics365/unified-operations/financials/accounts-payable/project-cost-accrual-purchase-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosjektfakturering](/dynamics365/unified-operations/financials/accounts-payable/project-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosjektkontrakter](/dynamics365/unified-operations/financials/project-management/project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosjektprognoser og budsjetter](/dynamics365/unified-operations/financials/project-management/project-forecasts-budgets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Bestillinger for et prosjekt](/dynamics365/unified-operations/financials/project-management/project-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosjekttilbud](/dynamics365/unified-operations/financials/project-management/project-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosjektressurser](/dynamics365/unified-operations/financials/project-management/project-resourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Arbeidsnedbrytningsstrukturer](/dynamics365/unified-operations/financials/project-management/work-breakdown-structures?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Mobilt arbeidsområde for registrering av prosjekttid](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Utvikling og administrasjon ved hjelp av plattformen enhetlig operasjoner](/dynamics365/unified-operations/dev-itpro/index)
+
+### [Oversikt over utviklingen og administrasjon](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemkrav](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over standarddata for demo](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hjelpesystemet
+##### [Oversikt over hjelp-system](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koble hjelpesystemet](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner plattformen oppdateringen 7 (2017 mai)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner plattformen oppdateringen 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner plattform-oppdateringen av 5 (mars 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner Plattformoppdatering 4 (februar 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner versjon 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operasjoner Plattformoppdatering 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppdatering for Dynamics AX-plattformen 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Dynamics AX application versjon 7.0.1 (2016 mai)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX-Plattformoppdatering 1 (kanskje 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX 7.0 (februar 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Veiledning oppdatert oppgave
+###### [Veiledning for november 2016-aktivitet](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veiledning for august 2016-aktivitet](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [2016 mai oppgaven veiledning](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veiledning for februar 2016-aktivitet](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+### [Utvikle og tilpasse ved hjelp av Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arkitekturen i Application bunken og server](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Få et evalueringseksemplar](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Registrere deg for et abonnement](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Få tilgang til Dynamics 365 for økonomi og operasjonene, Enterprise edition forekomster](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemkrav for utvikling](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Program for eksempel fleet
+##### [Fleet Management sample application](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fleet oversikt over programmet prøve](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Visual Studio-verktøy
+##### [Oversikt over verktøy for utvikling](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opplæring i verktøy for utvikling](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Programmet Explorer](/dynamics365/unified-operations/dev-itpro/dev-tools/application-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lage og feilsøke et prosjekt](/dynamics365/unified-operations/dev-itpro/dev-tools/build-debug-project?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bygge operasjoner](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koderedigering](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette en modell og data elementer](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette en ny bruker på en maskin med utvikling](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapport om tilpasning](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utviklingsverktøy](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Element-utviklere](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruk av element](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Eksportere og importere en modell](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metadatasøket i Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Modeller](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Prosjekter i Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktøy tilleggsprogrammer for Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Deaktivere tilpasning av modellen, og Skriv funksjonalitet](/dynamics365/unified-operations/dev-itpro/dev-tools/lock-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppdater Visual Studio-utviklingsverktøy](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### X ++ programmeringsspråk
+##### [X ++-og feilsøking](/dynamics365/unified-operations/dev-itpro/dev-tools/new-x-debugger-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Feilsøke X ++ mot en kopi av en produksjonsdatabase](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Feilsøke X ++-kode](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [EventHandlerResult-klasser i spørringer og -svar-scenarier](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skrive forretningslogikken ved hjelp av C ### og X ++-kildekoden](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Støtte for programmering](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LINQ-leverandør for C#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Redigering av anbefalte fremgangsmåter](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Explorer programegenskaper](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Språkreferanse for X++
+###### [X++ language reference](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-language-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++ variabler og datatyper](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-variables-data-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-setninger, løkker og unntak](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-statements-loops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-operatorer](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operators?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Operatorforrang X ++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operator-precedence?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-klasser og metoder](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-classes-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Valg av X ++-data og manipulere](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-makroer](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-attributt-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++ og C ### sammenligning](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-syntaksen](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kompileringstiden funksjoner
+##### [X ++-kompileringstiden funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kjøretids-funksjoner
+##### [X ++ kjøretid bedriftsfunksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-business-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ beholder kjøretids-funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-container-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ kjøretid konverteringsfunksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-conversion-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ kjøretid datofunksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-date-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ matematiske kjøretids-funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-math-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ gjenspeiling kjøretids-funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-reflection-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ kjøretids-funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-økt kjøretids-funksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-session-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ kjøretid strengfunksjoner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-string-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Systemtabeller
+##### [System tables](/dynamics365/unified-operations/dev-itpro/dev-ref/system-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Systemklasser
+##### [API-klasse og tabellreferanse](/dynamics365/unified-operations/dev-itpro/dev-ref/api-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [En klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/a-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [B-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/b-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [C-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/c-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [D-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/d-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [E-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/e-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FieldBinding til FormBuildAnimateControl](/dynamics365/unified-operations/dev-itpro/dev-ref/fieldbinding-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormBuildButtonControl til FormBuildFastTabSummarySeparator](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildbuttoncontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormBuildFilterPaneControl til FormBuildRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildfilterpanecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormBuildReferenceControl til FormButtonSeparatorControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormChangeTracker til FormControlEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formchangetracker-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormDataObject til FormFastTabHeaderControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formdataobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormFastTabSummarySeparator til FormGridControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formfasttabsummaryseparator-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormGroupControl til FormIntControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formgroupcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormListBoxControl til FormNotifyEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formlistboxcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormObject til FormRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormReferenceControl til FormStringControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F-klasser: FormTabControl til FormWindowControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formtabcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [G-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/g-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [H-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/h-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Jeg klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/i-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [J-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/j-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [K-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/k-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [L-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/l-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [M-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/m-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [N-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/n-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [O klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/o-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [P-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/p-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Q-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/q-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [R-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/r-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [S-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/s-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [T-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/t-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [U-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/u-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [V-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [W-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tilpasse med utvidelser og overlayering
+##### Utvidelsesmuligheter
+##### [Tilpasse elementer med filtyper](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Klasse-utvidelser](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvid RunBase-klasse](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvide området sekvens nummerserie](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Databasesynkronisering
+#### Flytte pakker mellom miljøer
+##### Opprette og bruke en distribueres pakke
+##### [Fortløpende levering](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+#### Startside for ytelse
+##### [Ta en sporing med Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [PerfSDK og testing av flere brukere med Visual Studio Team Services](/dynamics365/unified-operations/dev-itpro/perf-test/perfsdk-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Feilsøke problemer og analysere ytelsesproblemer med Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-parser?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tidtaker for ytelse](/dynamics365/unified-operations/dev-itpro/perf-test/performance-timer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Teste støtte i Visual Studio
+##### [Teste og valideringer](/dynamics365/unified-operations/dev-itpro/perf-test/testing-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Teste prosjekter i Visual Studio](/dynamics365/unified-operations/dev-itpro/perf-test/testing-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Distribusjon med sammenhengende lag og test automatisering](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Datoer
+##### [Datoen effectivity](/dynamics365/unified-operations/dev-itpro/dev-tools/date-effectivity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lisensiering
+##### [ISV-lisensiering](/dynamics365/unified-operations/dev-itpro/dev-tools/isv-licensing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Brukergrensesnittet utvikling](/dynamics365/unified-operations/dev-itpro/user-interface/user-interface-development-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Opplæring
+##### [Bygge skjemaet leie gebyrtype](/dynamics365/unified-operations/dev-itpro/user-interface/build-rental-charge-type-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bygge kundeskjemaet](/dynamics365/unified-operations/dev-itpro/user-interface/build-customer-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bygge navigasjon](/dynamics365/unified-operations/dev-itpro/user-interface/build-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette et arbeidsområde](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Skjemaer
+##### [Navigasjon i Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppsettet i Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Symbolskriften](/dynamics365/unified-operations/dev-itpro/user-interface/symbol-font?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Teste skjemaer ved hjelp av egendefinerte mønstre](/dynamics365/unified-operations/dev-itpro/user-interface/testing-forms-custom-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette og bruke dyp koblinger](/dynamics365/unified-operations/dev-itpro/user-interface/create-deep-links?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilgjengelighet i skjemaer, -produkter, og kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilpasse feltet for hjelp](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kontroller
+##### [LØSNING Kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/action-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inndatakontroller og kolonnestørrelser rutenett](/dynamics365/unified-operations/dev-itpro/user-interface/sizing-input-controls-grid-columns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Støtte for avmerkingsboksen i tre kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/check-box-tree-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Filtre](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vert for PowerApps-kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Vindusbehandling
+##### [Overføre kontekst menyen kode](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dobbeltklikk kode for musen for overføring](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontekstbasert dataregistrering for oppslag](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [HierarchyViewer-kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppslag-kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontroller for filopplasting](/dynamics365/unified-operations/dev-itpro/user-interface/file-upload-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Systemdefinert knapper](/dynamics365/unified-operations/dev-itpro/user-interface/system-defined-buttons?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bilder](/dynamics365/unified-operations/dev-itpro/user-interface/images-form-grid?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Farger for skriften og bakgrunnsfargen for inndata, tabell og rutenettet kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/specify-color-font-background-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Støtte og toveis tekst på høyre-mot-venstre-språk](/dynamics365/unified-operations/dev-itpro/user-interface/bidirectional-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Symbol for arbeidsområdet brikker](/dynamics365/unified-operations/dev-itpro/user-interface/create-icons-workspace-tiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible kontrollerer - offentlig JavaScript APIs](/dynamics365/unified-operations/dev-itpro/user-interface/public-javascript-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sjekkliste for kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/control-checklist?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Meldinger
+##### [Skyvekontrollen og MessageBox](/dynamics365/unified-operations/dev-itpro/user-interface/slider-messagebox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Meldingssenter, meldingslinjen og meldingsinformasjon API](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-api-center-bar-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Meldingssenter, meldingslinjen og meldingsinformasjon FAQ](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-user?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Primærskjemaet mønster retningslinjer
+##### [Velg et mønster i skjemaet](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skjemaet stiler og mønstre](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Skjemaet mønstre
+##### [Generelle formatet retningslinjer](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Detaljer om overordnet skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Detaljer om transaksjonen skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/details-transaction-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skjemaet listen over delen skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/section-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vis siden skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/list-page-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkelt detaljer skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/simple-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkel liste og detaljer skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkel liste skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tabell med innholdet skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/table-of-contents-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgaven doble skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/task-double-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgaven Enkeltskjema mønster](/dynamics365/unified-operations/dev-itpro/user-interface/task-single-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Veiviseren skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/wizard-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbeidsområdet skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sekundære skjemaet mønstre
+##### [Avansert merking skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/advanced-selection-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dialogboksen skjema mønster](/dynamics365/unified-operations/dev-itpro/user-interface/dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Slipp dialogboksen skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/drop-dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Slå opp skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/lookup-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktaboks for skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sub mønstre
+##### [Egendefinert Filter gruppe subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dimensjonen oppføring control subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dimensjonen uttrykksverktøyet subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Subpattern for felt og feltgrupper](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Filtre og verktøylinjen subpatterns](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fyll subpattern tekst](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vannrette felt og knapper gruppen subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Subpattern for forhåndsvisning av bilde](/dynamics365/unified-operations/dev-itpro/user-interface/image-preview-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vis ruten subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/list-panel-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Nestede subpattern for enkel liste og detaljer](/dynamics365/unified-operations/dev-itpro/user-interface/nested-simple-list-details-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delen diagram skjemaet mønster](/dynamics365/unified-operations/dev-itpro/user-interface/section-chart-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delen privilegerte BI-subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-powerbi-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Subpattern for delen Beslektede koblinger](/dynamics365/unified-operations/dev-itpro/user-interface/section-related-links-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delen stablet diagram subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-stacked-chart-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Subpattern for delen kategorier-listen.](/dynamics365/unified-operations/dev-itpro/user-interface/section-tabbed-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delen brikker subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tiles-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Feltene i tabell subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/tabular-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktøylinjen og feltene subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktøylinjen og subpattern i listen](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Subpattern for arbeidsområdet Sidegruppe-filteret](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kontroll-utvidelse
+##### [Bygge en extensible kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/build-extensible-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hurtigtaster for extensible kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/keyboard-shortcuts-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible programming kontrollreferanse](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-control-programming-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Control extensibility](/dynamics365/unified-operations/dev-itpro/user-interface/control-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette lokaliserbare etiketter](/dynamics365/unified-operations/dev-itpro/user-interface/create-localizable-labels-client?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible control retningslinjer for oppsett](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-controls-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontrollere teksten som genererer Oppgaveregistrering for en kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-control-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Bygge arbeidsområder
+##### [Bygge operative arbeidsområder](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Side ved side og listen hurtigbufring for delte arbeidsområder](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Oppgaveregistrering
+##### [Oppgaveregistrering i Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hurtigreferanse for registrering av oppgaven](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Frigi løsninger ved hjelp av levetidstjenester
+#### [Utvikle og frigi](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
+#### [Sette opp og publisere](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
+#### [Legge til en metode](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
+#### [Definere Business prosessen modell biblioteker](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
+#### [Overføre kode](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
+#### [Validere et program](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
+#### [Behandle og bruke data pakker](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
+#### [Sikkerhetskopiere en database for løsning](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
+
+#### [Lokaliseringer](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
+##### [Klassifisere lokaliseringsfunksjoner](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
+##### [Land/område-konteksten](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
+##### [Forskriftsmessige sertifiseringer](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
+##### [Forskriftsmessig oppdateringer](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
+##### [Atskilte lokaliseringsmodeller](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
+##### [Sende et varsel for overholdelse](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
+
+
+### [Dataenheter](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Standard data enheter
+##### [Enheter datarapport](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: leverandører og avgifter](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: kunde](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: startsaldoer](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: budsjettplanlegging](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: budsjettering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: etterkalkulering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: administrasjon for reiseregning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: anleggsmidler](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: finans](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: Global adressebok](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: Personale](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: Lagerstyring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: hovedplanlegging](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: innkjøp og leverandører](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: behandling av produktinformasjon](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: produksjonskontroll](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: prosjektregnskap](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: offentlig sektor](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: detaljhandel](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: salg og markedsføring kjøring av kode](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: salg og markedsføring før mva](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: systemadministrasjon](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Data enheter: arbeidsflyt](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Overfører enheter
+##### [Konfigurasjon av data prosjekter](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Konfigurere datamaler](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiere konfigurasjonsdata mellom firmaer](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anbefalte fremgangsmåter for å importere ved hjelp av den generelle journal enheten bilag](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Opprette data-enheter
+##### [Enheter og pakker rammeverk for data](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bygge og benytte](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Virkemåten egenskaper](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beregn kolonner og virtuelle felt](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Firmaene virkemåte](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lands-/ regionkodene og konfigurasjonsnøkler](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arv mønstre](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Veiviseren for regler](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metadataegenskaper](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valideringer, standarder og ikke-tilordnede feltene](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Databehandling og integrering ved hjelp av data-enheter](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvikle en enhet for dataoverføring av](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvikle sammensatt enheter](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Gjentakende integreringer](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Sikkerhets- og enheter](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Feilsøking i forbindelse med godkjenning for tjenesten](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Service-sluttpunkt](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Mobilapper
+#### [Startside for mobilt program](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobil arbeidsområder som nylig er utgitt](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Publisere mobile arbeidsområder](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobil arbeidsområdet X ++-APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Office-integrering
+#### [Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opplæring i Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bruke Excel-tillegg](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette åpne i Excel erfaringer](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til maler i åpne linjene i Excel-meny](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilpasse åpne i Microsoft Office-menyen](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere og sende e-post](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Feilsøking](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Finans-utvikling
+#### [Dimensjoner](/dynamics365/unified-operations/dev-itpro/financial/dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legg til dimensjoner i en Excel-mal](/dynamics365/unified-operations/dev-itpro/financial/dimensions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension-støtte for kontroll dialogboksen oppføring](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensjonen oppføring kontroll-overføring](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Implementeringen av dimensjonen oppføring kontroll](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-uptake?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensjonen uttrykksverktøyet subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurasjonsnøkkel for finansdimensjon for å integrere programmer](/dynamics365/unified-operations/dev-itpro/financial/financial-dimension-configuration-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivere finansdimensjoner](/dynamics365/unified-operations/dev-itpro/financial/activate-financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Finansdimensjoner og hovedkontoer på et høyre-mot-venstre-språk](/dynamics365/unified-operations/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Foreta en sikkerhetskopiering-tabell som skal forbrukes som en finansdimensjon](/dynamics365/unified-operations/dev-itpro/financial/dimensionable-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentert oppføring kontroll-overføring](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Støtte for kontroll dialogboksen Segmentert oppføring](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentert oppføring control metadata](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-metadata-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentert oppføring control overføring veiledning](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-migration-guidance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Metoder for kostnadskontroll parm Segmentert oppføring](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-parm-method-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Gjøre mulighet å slå opp verdier for finansdimensjoner i Microsoft Excel-maler](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette valutakursleverandører](/dynamics365/unified-operations/dev-itpro/financial/create-exchange-rate-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Angi chain utvikling
+#### [Håndboken for Gantt-utvikling](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en ny transportstyringsmotor](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Detaljhandel development library](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Distribusjon
+#### [Distribuere en Microsoft Dynamics 365 for økonomi og operasjonene, Enterprise edition demo miljø](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Azure Resource Manager-kort](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Azure ExpressRoute og Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Distribuere egendefinert kode
+##### [Opprette en distribuerbar pakke](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruke en distribueres pakke](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installere en pakke som distribueres](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Cloud-leverandøren nedlastinger og Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Oppgradering og overføring](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oppgradere fra AX 2012, Dynamics 365 for økonomi og operasjoner](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysere - Bruk verktøyet oppgradering analyzer til å planlegge oppgradering](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysere – Bruk koden oppgradering tjenesten til å beregne å oppgradere kode](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysere - distribuere et sandbox-miljø](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgradering - dataoppgradering i et utviklingsmiljø](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgradering - dataoppgradering AX 2012 oppgaver](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgradering - dataoppgradering i et miljø med sandkasse](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valider - overgangen testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valider-App valideringsprosessen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valider - funksjonelle testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valider – Klargjør for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+##### Endringer som påvirker oppgradering fra AX 2012
+###### [Enkelt bilaget og valutaoppgradering revaluering](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Project resource planlegging datamodellen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Arbeidsflyt-delsystemet endres](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Hvorfor vi flyttet fra kuber til å samle modeller](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Overføre en oppgradert Salgskube til lageret for enhet](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Koden migrering og oppgradering
+##### [Gjøre klar til å overføre kode](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurer tilordning av Visual Studio Team Services under overføringen av kode](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dele modeller](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bruke representanter for å løse avhengigheter mellom modeller](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Oppgradere til en ny oppdatering
+##### [Gjøre klar til å flytte til den siste oppdateringen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Versjoner og oppdatere policyen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgradere til den siste oppdateringen av plattformen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgrader Dynamics plattformen til August 2016 versjon](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgradere en sandbox-miljø](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppgrader data i utviklings- eller demo miljøer](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppdatere utviklingsverktøy](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Hurtigreparasjoner og vedlikehold
+##### [Laster ned hurtigreparasjoner fra livssyklustjenester](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installere en hurtigreparasjon for metadata](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installere en økonomisk rapportering binær hurtigreparasjon](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oppdatering Reporting Services i et miljø med én boks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Deprecations
+##### [Avskrevne APIer](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utgåtte funksjoner](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+
+### Systemadministrasjon
+#### [Plattformen månedlige oppdateringene vanlige spørsmål](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til koblinger i organisasjonens juridiske vilkårene og personvernerklæringen](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisenskoder og konfigurasjon for rapport](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Firmaene deling av data](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vedlikeholdsmodus](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sikkerhet
+##### [Rollebasert sikkerhet](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sikkerhetsarkitektur](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Satsvis behandling
+##### [Oversikt over satsvis behandling](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Oversikt over satsvis server](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Lifecycle Services
+#### [Oversikt over livssyklustjenester](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LCS for kunder](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LCS for partnere](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Noe nytt](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kjente problemer](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Brukerhåndbok for Dynamics livssyklustjenester](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurere sikkerhet](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Søk etter problemet](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurasjonsbehandling](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Definer Konfigurasjonsbehandling](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurer tjenesten for kode-oppgradering](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en metodologi](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Business prosessen modell](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Business prosessen biblioteker i business prosessen modell](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Flytskjema for prosessen modell Business](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laste opp egendefinerte forretningsprosesser](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Overvåking og diagnose](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Dynamics AX 2012 levetidstjenester funksjoner
+##### Distribusjon
+###### [Skyen er vert miljøer](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiere en konfigurasjon](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Planlegge en distribusjon av Dynamics AX 2012 R3 om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere Dynamics AX 2012 R3 om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et miljø for Dynamics AX 2012 R3-demo](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et utviklingsmiljø om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et miljø med høy tilgjengelighet på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et testmiljø om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Administrere Dynamics AX 2012 R3 distribusjonen på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bli med i Enterprise Portal-servere i en enkelt serverfarm](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Inngangspunkt for posten i Dynamics AX Enterprise Portal](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et Retail e-handel dev/testmiljø om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere en Retail grunnleggende demo miljø på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et Retail grunnleggende dev/testmiljø om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuere et Retail bevegelighet dev/testmiljø om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Feilsøking i forbindelse med distribusjonen av Dynamics AX 2012 R3 om Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Oppdateringer for Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Importer/eksporter framework Brukerhåndbok](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Installere](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installere for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installere versjonen av Dynamics AX 2012 R2 CU7 for SQL Server-2014](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Overfør data](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Konfigurere versjonen av inkluderinger for Serverside](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiere og sammenligne enhetsdata mellom firmaer](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopier data mellom firmaer i Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopier data mellom forekomster av Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Opprette en egendefinert målenhet](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importer/eksporter framework enheter](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importere data fra en CSV-datakilde](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importere data fra ODBC-datakilde](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Demofiler](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Rask Import-eksport](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Tabeller 
+###### [Opprette tabeller](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Egenskaper for tabell](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Dynamics AX 2012 LCS verktøy
+###### [Prosjekter](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Metoder](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tilpasning analyse](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Infrastruktur estimator](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Lisens størrelse estimator](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Forespørsler om forslag (/ dynamics365/webdel-operasjoner/utvikler-itpro/RFP) svar](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Systemdiagnose](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Installer og Kjør systemdiagnostikken](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Oppgrader analyse](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bruk profiler](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Dynamics AX 2012 nedlastbare verktøy
+###### [Kode-verktøyet bruker oppgraderingsveiledningen (avskrevet)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Levetidstjenester nedlastbare verktøy](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Teste verktøy overføre Data (beta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installere](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Kjør](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Importer demodata for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Utviklingsverktøy for sikkerhet](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installere](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Brukerhåndbok](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Definer eller Rediger oppføringen peker tillatelser](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ytelsen Benchmark programvare utvikling Toolkit](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Oppgraderingsveileder sikkerhetsverktøy](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Intelligent Data Management Framework IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Oversikt](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installasjonsveiledning](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Konfigurasjon](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Analyse](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Fjern og arkiv](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Opprett arkiv objekter](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Opprette Fjern objekter](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Planlegge fjerning og analyse av oppgaver](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Fjerne eller arkivere jobber](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Vedlikehold](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Feilsøke](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Håndteringen av databaser
+#### [Kopiere en database fra Azure, SQL-Database til en SQL Server-miljø](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kopiere en database fra SQL Server til et produksjonsmiljø Azure, SQL-databasen](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Gjenopprette en database på et-produksjonsmiljø](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Eksportere en kopi av en database for å gjenopprette senere](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Støtte
+#### [Få kundestøtte for Dynamics 365 for økonomi og operasjonene, Enterprise edition og livssyklustjenester](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
+#### [Logg en billett for premier-støtte](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
+#### [Sende en forespørsel til utviklergruppen for Dynamics-tjenesten](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
+#### [Definer kundestøtte for Dynamics 365 for økonomi og operasjonene, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
+#### [Vanlige spørsmål om planlagt vedlikehold-vinduet](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
+#### [Skyen drift og vedlikehold](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Administrere Økonomi og har støtte for operasjoner](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+<!-- Retail section -->
+# [Dynamics 365 for detaljhandel](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Betalinger
+### [Betalingsmåter](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Telefonsenter
+### [Oversikt over telefonsenter](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Telefonsenterkataloger](/dynamics365/unified-operations/retail/call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette en telefonsenterkatalog](/dynamics365/unified-operations/retail/create-call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere svindelvarsler](/dynamics365/unified-operations/retail/set-up-fraud-alerts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere alternativer for ordrebehandling](/dynamics365/unified-operations/retail/set-up-order-processing-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere et kontinuitetsprogram for et telefonsenter](/dynamics365/unified-operations/retail/set-up-continuity-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ordresperrer](/dynamics365/unified-operations/retail/work-with-order-holds?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Betalingsalternativer](/dynamics365/unified-operations/retail/work-with-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Kanaloppsett og -behandling
+### [Initialisere data for utgangsverdi i et miljø for detaljhandel](/dynamics365/unified-operations/retail/enable-configure-retail-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere kanaler for detaljhandel](/dynamics365/unified-operations/retail/define-maintain-retail-channels?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oversikt over nettbutikk](/dynamics365/unified-operations/retail/online-stores?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurere og installere en maskinvarestasjon for detaljhandel](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Timeregistrering for detaljhandel](/dynamics365/unified-operations/retail/retail-time-attendance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Modern Point of Sale (MPOS) og Cloud POS
+### Eksterne enheter for maskinvare
+#### [Oversikt over eksterne enheter for detaljhandel](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Microsoft-testede maskinvareenheter for salgssted](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Skjermoppsett
+#### [Konfigurere skjermoppsett for salgssted](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installere utforming av oppsett for Retail POS](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Salgsstedsprogram og språkinnstillinger for bruker](/dynamics365/unified-operations/retail/pos-application-user-language-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere bilder for MPOS](/dynamics365/unified-operations/retail/set-up-manage-images-retail-mpos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oversikt over informasjonskoder](/dynamics365/unified-operations/retail/info-codes-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+### Produktanbefalinger
+#### [Oversikt over personlige produktanbefalinger](/dynamics365/unified-operations/retail/personalized-product-recommendations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Legge til en kontroll for anbefalinger i en salgsstedsenhet](/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Frakoblet funksjonalitet for salgssted](/dynamics365/unified-operations/retail/pos-offline-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Behandling av skift og kassaskuff](/dynamics365/unified-operations/retail/shift-drawer-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kundeordrer
+#### [Oversikt over kundeordrer](/dynamics365/unified-operations/retail/customer-orders-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hybride kundeordrer](/dynamics365/unified-operations/retail/hybrid-customer-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Salgsmedarbeidere
+#### [Spore provisjoner på salgssted ved hjelp av salgsgrupper](/dynamics365/unified-operations/retail/pos-sales-groups-track-commissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Enhetsaktivering
+#### [Konfigurere og installere MPOS](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definere utvidet pålogging for Skysalgssted og MPOS](/dynamics365/unified-operations/retail/extended-logon?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Administrere kontoer for detaljhandel og enheter fra hovedkvarter](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kvitteringer
+#### [Definere kvitteringsmaler](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Sende e-postkvitteringer fra MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Oppgaveopptaker og hjelp for salgssted](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+## Overvåkning og analyse
+### [Overvåke salgs- og marginytelse](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Analysere salgstrender og -mønstre](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vurdere salgsytelse etter produkt](/dynamics365/unified-operations/retail/sales-performance-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vurdere kunde- og produktlønnsomhet](/dynamics365/unified-operations/retail/assess-customer-product-profitability?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Analysere butikkytelse](/dynamics365/unified-operations/retail/store-performance-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere RFM-analyse](/dynamics365/unified-operations/retail/set-up-rfm-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Rabatter og prisjusteringer
+### [Prisjusteringer og rabatter](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Fastslå den optimale kombinasjonen av overlappende rabatter](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere kanalspesifikke rabatter](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette kuponger for detaljhandelssalg](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+## Produkter og varehandel
+### [Detaljhandelshierarkier](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette og administrere attributter](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere detaljhandelsprodukter](/dynamics365/unified-operations/retail/set-up-retail-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere strekkoder](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere strekkodemasker](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere sortimenter](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Selge og returnere produkter utenfor et sortiment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+## Lojalitet
+### [Definere et fordelsprogram for kunde](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Lager
+### [Administrere butikklager](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Grunnleggende om handel
+### [Oversikt over grunnleggende om handel](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisasjoner og organisasjonshierarkier i Commerce-grunnleggende](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Detaljhandel utvikling og administrasjon](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Arkitektur
+#### [Komponentene i Microsoft Dynamics 365 for økonomi og operasjonene, Enterprise edition - Retail](/dynamics365/unified-operations/retail/retail-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Serverarkitektur for detaljhandel](/dynamics365/unified-operations/retail/dev-itpro/retail-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kanal-kommunikasjon for detaljhandel](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [MPOS-arkitektur](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arkitekturen i Retail butikken for publisering](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Resultat for detaljhandelskanal for Power BI-innhold](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+
+### Distribusjon og hurtigreparasjoner
+#### [Detaljhandel Lager skalaenheten konfigurering og installering](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Detaljhandel Lager systemet, før du begynner](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail POS moderne konfigurering og installering](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Administrere kontoer for detaljhandel og enheter fra hovedkvarter](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail POS Utstyrsaktivering](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sikre du retail POS sky](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Detaljhandel maskinvare konfigurasjon og installasjon](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Detaljhandel komponent hendelser for diagnostikk og feilsøking](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bruke en distribueres pakke](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Støtte for oppgradering og N-1
+#### [Oversikt over støtte for oppgradering og N-1](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installere komponenter for N-1](/dynamics365/unified-operations/retail/dev-itpro/n-1-installation-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Utvidelsesmuligheter
+#### Salgssted
+##### [Retail POS skjermoppsett](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Install den POS-utformingen](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere MPOS for frakoblet modus](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MPOS og sky POS utløse utvidelse](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Opprette en Retail-opplevelsen app](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oversikt over maskinvare-stasjon og utvidelse](/dynamics365/unified-operations/retail/dev-itpro/hardware-station-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Detaljhandelsserver
+##### [Utvide en Retail Server OData-kontroller](/dynamics365/unified-operations/retail/dev-itpro/extend-retail-server-odata-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [OData-og Web-API](/dynamics365/unified-operations/retail/dev-itpro/odata-controllers-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail Server kunde og forbruker APIer](/dynamics365/unified-operations/retail/dev-itpro/retail-server-customer-consumer-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvid metadataene](/dynamics365/unified-operations/retail/dev-itpro/extend-metadata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvid commerce runtime for å støtte POS frakoblet modus](/dynamics365/unified-operations/retail/dev-itpro/call-crt-service-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Commerce-kjøretid
+##### [Commerce runtime oversikt](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Commerce runtime og fleksibilitet for Retail-Server](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Legge til innstillingen kundedata i en kanaldatabase](/dynamics365/unified-operations/retail/dev-itpro/add-customer-preference-channel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Legge til egenskaper i en salgsordre](/dynamics365/unified-operations/retail/dev-itpro/add-properties-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Commerce runtime fleksibilitet og utløsere](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility-trigger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Eksemplet utløser: blokkering av transaksjonen](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-blocking-transaction?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utløser-eksempel: returretningslinjer](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-return-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### e-handel
+##### [Konfigurere en nettbutikk](/dynamics365/unified-operations/retail/dev-itpro/configure-online-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurere godkjenningsleverandører](/dynamics365/unified-operations/retail/dev-itpro/configure-authentication-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [e-handel-plattform](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [e-handel platform SDK](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Betalingskobling
+##### [Implementering av en betalingskobling og betaling-enhet (hvitboken)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Distribuere en betalingskobling](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Opprette en Windows-installasjon for en betalingskobling](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### SDK for detaljhandel
+#### [SDK-oversikt for detaljhandel](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Integrere Retail SDK med kontinuerlig Bygg systemet](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Detaljhandel SDK utvidelse eksempler](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Detaljhandel SDK emballasje](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Detaljhandel SDK eksempler](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Commerce-kjøretid
+#### [Lojalitet utvidelse](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+# [Dynamics 365 for medarbeidere](/dynamics365/unified-operations/talent/index)
+
+## Utvikle en personalstrategi
+### [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere jobbkomponenter](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette en avdeling og knytte den til avdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere parametere for Personale på tvers av juridiske enheter](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere firmaspesifikke parametere for Personale](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vanlige spørsmål om personalhandlinger](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Bruke en arbeidsflyt til å administrere informasjon om ansatte](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Motivere ansatte
+### [Kompensasjonsplaner](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette planer for fast kompensasjon](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Opprette variable kompensasjonsplaner](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Behandle kompensasjon](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Utvikle og lære opp ansatte
+### [Oversikt over ytelsesstyring](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Justere ferdigheter med forretningsbehov for arbeidsstyrke](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definere opplæringskurs](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Opprette og vedlikeholde fordeler
+### [Administrere et fordelsprogram](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Policyer for fordelsrettigheter](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Administrere varer som er lånt ut til arbeidere](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Samle inn informasjon ved hjelp av spørreskjemaer
+### [Spørreskjemaer](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Utforme et spørreskjema](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Distribuere og fylle ut et spørreskjema](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Evaluere resultatene i et spørreskjema](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Arbeidsplass sikkerhet og overholdelse (USA)
+### [Bekreftelse for I-9-ansettelse](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Overholde ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/supply-chain/toc.json)
