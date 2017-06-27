@@ -3,7 +3,7 @@ title: Rapportere stykklister som ferdige
 description: "Denne artikkelen gir informasjon om å rapportere stykklister som ferdige."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

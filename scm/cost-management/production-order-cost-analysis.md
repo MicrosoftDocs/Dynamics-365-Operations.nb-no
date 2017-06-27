@@ -3,7 +3,7 @@ title: Kostnadsanalyse for produksjonsordrer
 description: "Denne artikkelen inneholder informasjon om kostnadsanalysen som du kan utføre for fullførte og gjeldende produksjonsordrer. Du kan analysere de estimerte kostnadene og faktiske kostnadene ved hjelp av siden Prisberegning eller rapporten Kostnadsestimater og etterkalkuleringer. Du kan vise informasjon om de estimerte og faktiske kostnadene (og antallene) for hver komponentvare, rutingoperasjon og indirekte kostnad."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

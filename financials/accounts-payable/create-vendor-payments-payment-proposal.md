@@ -3,7 +3,7 @@ title: "Opprette leverandørbetalinger ved hjelp av et betalingsforslag"
 description: "Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer. Betalingsforslag brukes ofte til å opprette leverandørbetalinger fordi spørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på kriterier som forfallsdato og kontantrabatt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

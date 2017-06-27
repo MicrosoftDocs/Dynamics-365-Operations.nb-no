@@ -3,7 +3,7 @@ title: Forutsetninger for standard kostnadskonvertering
 description: "Dette emnet beskriver oppgaver som må utføres før du kjører en standard kostnadskonvertering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

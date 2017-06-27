@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 262704
-ms.assetid: 0327a01b-3b24-41be-afa6-ffa6c365cb0b
 ms.search.region: Norway
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30

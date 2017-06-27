@@ -3,7 +3,7 @@ title: Produksjonspostering
 description: Denne artikkelen inneholder informasjon om ulike typer posteringer i produksjonsprosessen.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Ressursfunksjoner
 description: "Denne artikkelen inneholder informasjon ressursfunksjoner. En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Artikkelen forklarer hvordan funksjonene og relaterte konsepter, for eksempel ferdighetsnivå og prioritet, brukes til å velge riktige ressurser for en aktivitet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

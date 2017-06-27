@@ -3,7 +3,7 @@ title: Simulere kostprissendinger ved hjelp av en kostnadsberegningsversjon for 
 description: "Denne artikkelen beskriver hvordan du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

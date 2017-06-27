@@ -3,7 +3,7 @@ title: Startside for kunder
 description: "Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

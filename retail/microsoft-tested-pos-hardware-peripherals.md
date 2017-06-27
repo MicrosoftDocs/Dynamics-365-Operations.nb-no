@@ -3,12 +3,13 @@ title: Maskinvare og periferiutstyr for salgssted
 description: "Moderne salgssted for detaljhandel (POS) og skybasert salgssted kan bruke en rekke maskinvareenheter for salgssted med flere grensesnitt og distribusjonsalternativer for å oppnå ulike forretningsscenarioer for en forhandler."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36

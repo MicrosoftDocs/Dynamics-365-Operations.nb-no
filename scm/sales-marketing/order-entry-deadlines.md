@@ -3,7 +3,7 @@ title: Ordrefrister
 description: "Denne artikkelen inneholder informasjon om tidsfrister for ordreregistrering. En tidsfrist for ordreregistrering er en tidsgrense som bestemmer om en kundeordre skal behandles (og oppfylles) som om den ble mottatt på gjeldende dag eller neste dag."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

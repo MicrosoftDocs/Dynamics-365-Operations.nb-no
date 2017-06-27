@@ -3,7 +3,7 @@ title: Revaluering av utenlandsk valuta for finans
 description: "Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

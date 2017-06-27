@@ -3,7 +3,7 @@ title: "Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller"
 description: Denne artikkelen beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

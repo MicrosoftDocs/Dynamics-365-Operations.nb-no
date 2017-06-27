@@ -3,7 +3,7 @@ title: Hovedkontotyper
 description: Hovedkontotypene bestemmer hvordan en hovedkonto brukes i kontoplanen.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

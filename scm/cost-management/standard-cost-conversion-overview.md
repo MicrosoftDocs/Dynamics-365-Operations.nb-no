@@ -3,7 +3,7 @@ title: Oversikt  over standard kostnadskonvertering
 description: "Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

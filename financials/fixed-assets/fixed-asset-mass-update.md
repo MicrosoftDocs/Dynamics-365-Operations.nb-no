@@ -3,7 +3,7 @@ title: Masseoppdatering av faste anleggsmidler
 description: "Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Direkte leveringer
 description: "Denne artikkelen gir informasjon om direkte leveringer. Direkte leveringer er leveringer som sendes direkte fra leverandøren til kunden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

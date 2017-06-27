@@ -3,7 +3,7 @@ title: "Kundebetalinger for et delbeløp"
 description: "Noen ganger betaler kunder et beløp som er mindre enn beløpet på en faktura. Denne artikkelen beskriver de ulike alternativene for håndtering av dette. Hvilke alternativer som er tilgjengelige, avhenger av dine forretningsbehov og konfigurasjon."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

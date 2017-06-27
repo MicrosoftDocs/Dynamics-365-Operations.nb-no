@@ -3,7 +3,7 @@ title: Utligne en delvis kundebetaling som har flere rabattperioder
 description: "Denne artikkelen viser hvordan delvis kundebetalinger gjøres opp når det er flere rabattperioder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Utligne en delvis kundebetaling og den endelige betalingen i sin helhet 
 description: Denne artikkelen gir scenarier som viser hvordan du registrerer delvise betalinger for en kunde og tar kontantrabatter i kontantrabattperioden.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

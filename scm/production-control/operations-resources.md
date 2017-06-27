@@ -3,7 +3,7 @@ title: Operations-ressurser
 description: "Operasjonsressurser utfører aktivitetene for et prosjekt eller en produksjonsprosess. De kan være av forskjellige typer og kan ha forskjellige funksjoner."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
