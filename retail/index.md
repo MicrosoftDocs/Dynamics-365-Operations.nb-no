@@ -1,96 +1,99 @@
 ---
-title: Startside for detaljhandel
-description: "Startside for Dynamics 365 for Operations – Retail"
+title: Microsoft Dynamics 365 for Retail
+description: Startside for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2017-6-19
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a1004022b1b9dfc43bd2ef5b9f59c759397a3af1
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 6684e1f3703df8eb821b442c98d187ffcf931796
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="retail-home-page"></a>Startside for detaljhandel
+# <a name="welcome-to-dynamics-365-for-retail"></a>Velkommen til Dynamics 365 for Retail
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for Operations – Retail gir en fullstendig shoppingopplevelse med en sømløs og differensierende omnikanalløsning som er moderne, mobil og global. Ende-til-ende-funksjoner, fra moderne programvareløsninger for salgssted (POS), store operasjoner, varehandel, e-handel, kundeservice, markedsføring og kundeservice, til forsyningskjede, finans og mer, kan distribueres på måten som passer best for din virksomhet.
+Microsoft Dynamics 365 for Retail er en ende-til-ende-detaljhandelsløsning som leverer enhetlig handel på tvers av alle kanaler. Den omfatter salg, mobilitet, intelligens og produktivitet for å hjelpe forhandlere og arbeidere med å oppnå mer ved å bruke den mobile skyen. Retail formidler omfattende støtte for bruk av en rekke forretningsprosesser, for eksempel funksjoner for varehandels-, lager- og kanaladministrasjon. Løsningen formidler også dyptgående kundeopplevelser på tvers av alle berøringspunkter.
 
-Denne siden peker til ressurser som gjør det enklere å bruke Microsoft Dynamics 365 for Operations - Retail mer effektivt. I ruten helt til venstre velger du et funksjonsområde du vil finne ut mer om. 
+Følgende tre produkter henger nøye sammen:
 
-## <a name="set-up-retail-channels"></a>Definere detaljhandelskanaler
-Når du definerer detaljhandelsopplevelsen, må du bestemme hvordan du vil definere og konfigurere butikker – fysisk butikk, nettbutikk og telefonsenter. 
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+- Microsoft Dynamics 365 for Retail
+- Microsoft Dynamics 365 for Talent
 
-Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, leveringsmåter, prisgrupper, inntekts-/utgiftskontoer, registre og medarbeidere. Når du har opprettet detaljhandelsbutikken, kan du opprette et produktsortiment du vil at butikken skal føre. Du kan også definere butikkspesifikke priser og rabatter som skal gjelde for produkter som er til salgs i butikken.
+Den samme funksjonaliteten kan forekomme i alle tre produkter. I emner som hovedsakelig er relatert til Retail, vil produktnavnet derfor være Microsoft Dynamics 365 for Retail. I emner som hovedsakelig er relatert til Talent, vil produktnavnet være Microsoft Dynamics 365 for Talent. Og til slutt vil produktnavnet i emner som er relatert til kjerneproduktet (Finance and Operations), være Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
--   [Definere kanaler for detaljhandel](define-maintain-retail-channels.md)
--   [Oversikt over nettbutikk](online-stores.md)
+I ruten til venstre velger du et funksjonsområde du vil finne ut mer om.
 
-## <a name="set-up-a-call-center"></a>Definere et telefonsenter
-Du kan definere et telefonsenter som en type kanal for detaljhandel. I et telefonsenter tar arbeidere imot ordrer fra kunder over telefon og oppretter salgsordrer. For å hjelpe arbeiderne med å ta imot ordrer og utføre kundeservice i hele bestillingsprosessen, kan du definere hva en salgsordre skal inneholde, hvordan prisene skal kontrolleres og hvilke data om kunder, produkter og priser du kan få tilgang til. Du kan også definere brukere, betalingsmåter, prisgrupper, finansdimensjoner og leveringsmetoder for hvert telefonsenter.
+## <a name="channel-management"></a>Kanaladministrasjon
+Når du definerer detaljhandelsopplevelsen, må du bestemme hvordan du vil definere og konfigurere butikker. De kan være fysiske butikker, nettbutikker eller telefonsentre.
 
--   [Telefonsenterfunksjonalitet](call-center-functionality.md)
--   [Opprette telefonsenterkataloger](create-call-center-catalogs.md)
+Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, leveringsmåter, prisgrupper, inntekts- og utgiftskontoer, registre og medarbeidere. Når du har opprettet detaljhandelsbutikken, kan du opprette et produktsortiment du vil at butikken skal føre. Du kan også definere butikkspesifikke priser og rabatter som gjelder for produkter som er til salgs i butikken.
 
-## <a name="define-your-pos-solutions"></a>Definere løsninger for salgssted
-Retail Modern POS (MPOS) for detaljhandel er en salgsstedsapp for PCer, nettbrett og telefoner. Selgere kan behandle salgstransaksjoner og kundeordrer, utføre kundeaktiviteter og utføre daglige operasjoner og lagerstyring med mobile enheter hvor som helst i butikken, og i tillegg til PC-baserte registre. Cloud POS er et nettleserbasert salgssted som kan åpnes i alle typer standard nettlesere. 
+## <a name="clienteling-and-loyalty"></a>Kundeaktiviteter og lojalitet
+Kundebehov endrer seg hele tiden. Du må kunne holde tritt med endringene i kjøpemønstre og trender raskt og effektivt, slik at du kan målrette og tiltrekke deg nye kunder, men du må samtidig sørge for at din eksisterende kundebase er tilfreds.
 
-Det finnes flere komponenter du kan konfigurere for å definere relasjonene mellom en butikk, kasser på salgsstedet i butikken, og de eksterne enhetene for detaljhandel som de kassene bruker til å behandle transaksjoner. Du må også definere egenskapene for en bestemt forekomst av salgsstedet, inkludert maskinvareprofilen eller oppsettet for eksterne enheter for detaljhandel som skal brukes i kassen, butikken som kassen er tilordnet til, den visuelle opplevelsen for brukeren som logger på den kassen, og funksjonene som er aktivert i registret. Du må også definere om registret kan brukes i frakoblet tilstand.
+I tillegg har kunder mange alternativer for å skaffe seg det de ønsker, når de ønsker det, og til en pris de kan leve med. For å opprettholde kundelojaliteten, kan du bruke personlige varslinger og tilbud som gjør handling enklere.
 
--   [Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md)
--   [Konfigurere og installere MPOS](retail-modern-pos-device-activation.md)
--   [Frakoblet funksjonalitet for salgssted](pos-offline-functionality.md)
+## <a name="hardware-and-peripherals"></a>Maskinvare og eksterne enheter
+Moderne salgssted (MPOS) og Cloud POS for Retail kan bruke en rekke eksterne enheter for maskinvare. Både MPOS og Cloud POS tilbyr flere grensesnitts- og utviklingsalternativer som du kan bruke i dine ulike forretningsscenarier.
 
-## <a name="set-up-a-customer-loyalty-program"></a>Definere et fordelsprogram for kunde
-Du kan definere et fordelsprogram slik at kunder kan sanke poeng basert på bestemte vilkår, og poengene kan beregnes på ulike måter. Fordelsprogrammet kan være enkelt eller avansert, og det gjelder på tvers av juridiske enheter i en hvilket som helst kanal for detaljhandel.
--   [Definere et fordelsprogram for kunde](set-up-customer-loyalty-program.md)
+Simulatoren for eksterne enheter for Retail inkluderer en virtuell simulator og en POS-simulator. Den virtuelle simulatoren støtter hovedsakelig testing av scenarier som vanligvis krever eksterne enheter for et fysisk POS. Ved hjelp av POS-simulatoren kan du teste kompatibiliteten for fysiske eksterne enheter med Retail uten at du trenger å bruke POS-klienten.
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Definere rabatter og prisjusteringer
-Du kan justere prisene for produkter, og du kan også definere rabatter som gjelder for en linjevare eller en transaksjon på salgsstedet, i en salgsordre via et telefonsenter, eller i en elektronisk ordre. 
--   [Prisjusteringer og rabatter](price-adjustments-discounts.md)
--   [Definere kanalspesifikke rabatter](define-channel-specific-discounts.md)
--   [Fastslå den optimale kombinasjonen av overlappende rabatter](optimal-combination-overlapping-discounts.md)
+## <a name="intelligence"></a>Intelligens
+Avansert analyse formidler effekten av maskinopplæring til detaljhandelsutfordringer, og den legger til rette for forutsigende, optimalisert og personlig innsikt som bidrar til vekst og lønnsomhet. Ved hjelp av Retail kan du levere visuelle rapporter om alle typer enheter, enten det er tilkoblede eller frakoblede. I tillegg kan du hjelpe kunder med å identifisere produkter og tjenester som dekker deres behov før kjøpstidspunktet.
 
-## <a name="set-up-retail-products"></a>Definere detaljhandelsprodukter
-Før du kan tilby produkter for salg i kanalene for detaljhandel, må du opprette og konfigurere produktene i Dynamics 365 for Operations. Du kan opprette produktene, definere produktegenskaper og -attributter og tilordne produktene til detaljhandelskategorihierarkier. For å gjøre produktene tilgjengelige for kanalene for detaljhandel og legge dem til i et aktivt utvalg, må du deretter frigi produktene til de juridiske enhetene der de er tilgjengelige.
--   [Definere detaljhandelsprodukter](set-up-retail-products.md)
+## <a name="monitoring-and-diagnosis"></a>Overvåkning og diagnose
+Ved hjelp av Retail kan du overvåke salgs- og marginytelsen i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet.
 
-## <a name="monitor-and-analyze-performance"></a>Overvåke og analysere ytelse
-Ved hjelp av data fra Dynamics 365 for Operations kan du analysere butikkytelse, kunde- og produktlønnsomhet, salgstrender og mer.
--   [Vurdere kunde- og produktlønnsomhet](assess-customer-product-profitability.md)
--   [Analysere butikkytelse](store-performance-information.md)
+## <a name="merchandising"></a>Varehandel
+Før du kan tilby produkter for salg i kanalene for detaljhandel, må du opprette og konfigurere produktene i Retail. Du kan opprette produktene, definere produktegenskaper og -attributter og tilordne produktene til detaljhandelskategorihierarkier. For å gjøre produktene tilgjengelige for kanalene for detaljhandel og legge dem til i et aktivt utvalg, må du deretter frigi produktene til de juridiske enhetene der de er tilgjengelige.
+
+Du kan justere prisene for produkter, og du kan også definere rabatter som gjelder for en linjevare eller en transaksjon på POS, i en salgsordre via et telefonsenter, eller i en elektronisk ordre.
+
+## <a name="store-operations-and-pos"></a>Butikkprosesser og POS
+MPOS er en POS-app for PC-er, nettbrett og telefoner. Selgere kan behandle salgstransaksjoner og kundeordrer, utføre kundeaktiviteter og utføre daglige operasjoner og lagerstyring på mobile enheter hvor som helst i butikken, og også PC-baserte registre. Cloud POS er et nettleserbasert POS som kan åpnes i alle typer standard nettlesere.
+
+Du konfigurerer flere komponenter for å definere relasjonene mellom en butikk, kasser på POS i butikken, og de eksterne enhetene for detaljhandel som de kassene bruker til å behandle transaksjoner. Du må også definere egenskapene til en bestemt forekomst av POS. Disse kjennetegnene inkluderer maskinvareprofilen eller oppsettet for eksterne enheter for detaljhandel som skal brukes i kassen, butikken som kassen er tilordnet til, den visuelle opplevelsen for brukeren som logger på den kassen, og funksjonene som er aktivert i registret. Du må også definere om registret kan brukes i frakoblet tilstand.
+
+## <a name="workforce-management"></a>Administrasjon av arbeidsstyrke
+For å være lønnsomme i et miljø der marginer stadig reduseres, må forhandlere hele tiden prøve å redusere sine driftskostnader. For de fleste forhandlere er stabskostnaden en betydelig del av driftskostnadene. Ved å kontrollere denne kostnaden kan forhandlere på denne måten ha stor innflytelse på bunnlinjen. I tillegg vil en produktiv arbeidsstyrke med friere tøyler føre til en forbedre kundeopplevelse.
+
+Ved hjelp av Retail kan butikksjefer sette opp og publisere skiftlister og tidsplaner for arbeidere i butikker, føye til instruksjoner for de ulike skiftene, og kopiere tidsplaner fra en tidligere uke til den gjeldende uken. I tillegg får sjefer bedre oversikt når det gjelder fraværsforespørsler som detaljhandelsarbeidere sender inn, og de kan godta eller avslå de forespørslene. De får også oversikt når det gjelder forespørsler om "skiftbytte" og "skifttilbud", og de kan godta eller avslå de forespørslene.
+
+Butikkmedarbeidere får oversikt over skift og tilordnede tidsplaner, sammen med instruksjoner for skiftene, og får i tillegg oversikt over kollegaer som er tilordnet til skift. De kan også sende fraværsforespørsler, forespørsler om skiftbytte med kollegaer, og forespørsler om skifttilbud.
 
 ## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere detaljhandelsmiljøer
-Hvis du har blitt bedt om å tilpasse miljøet, eller hvis du skal distribuere og vedlikeholde systemet, kontrollerer du innholdet for utvikleren og systemadministratoren som er spesifikt for detaljhandelen, i tillegg til det mer generelle innholdet for Microsoft Dynamics 365 for Operations. 
--   [Dynamics 365 for Operations - Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations for utviklere og IT-eksperter](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+Hvis du har blitt bedt om å tilpasse miljøet, eller hvis du har ansvar for å distribuere og vedlikeholde systemet, må du sørge for at du ser innholdet for utvikleren og systemadministratoren som er spesifikt for Retail, i tillegg til det mer generelle innholdet.
+
+- [Dynamics 365 for Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
+- [Microsoft Dynamics 365 for Retail for IT-eksperter og utviklere](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 ### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
-Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for å se hvilke nye funksjoner er utgitt og hvilke nye funksjoner som er under utvikling. 
+Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling.
 
 ### <a name="blogs"></a>Blogger
-Du kan finne meninger, nyheter og annen informasjon om Microsoft Dynamics 365 for Operations - Retail og andre løsninger i <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365-bloggen</a>.
+Du kan finne meninger, nyheter og annen informasjon om Retail og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog).
 
-Det finnes mange emner om detaljhandel i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX-produktteambloggen</a>. Noen av disse innleggene ble skrevet for tidligere versjoner av Dynamics 365 for Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
+Det finnes mange innlegg om Retail i [produktteambloggen for Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for den tidligere versjonen av Retail, gjelder fortsatt de samme begrepene. og fremgangsmåtene ligner på den gjeldende versjonen.
 
-<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community-bloggen</a> gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
-
-
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
