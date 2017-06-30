@@ -2,23 +2,23 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: Operations
+  - name: 'Finance and Operations, Enterprise'
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
     items:
     - name: Utvikler og administrator
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
-    - name: Financials
+    - name: Finans
       tocHref: /dynamics365/unified-operations/financials/
       topicHref: /dynamics365/unified-operations/financials/index
-    - name: Personale
-      tocHref: /dynamics365/unified-operations/talent/
-      topicHref: /dynamics365/unified-operations/talent/index
-    - name: Detaljhandel
-      tocHref: /dynamics365/unified-operations/retail/
-      topicHref: /dynamics365/unified-operations/retail/index
     - name: Forsyningskjede
  
       tocHref: /dynamics365/unified-operations/supply-chain/
       topicHref: /dynamics365/unified-operations/supply-chain/index
+  - name: Talent
+    tocHref: /dynamics365/unified-operations/talent/
+    topicHref: /dynamics365/unified-operations/talent/index
+  - name: Retail
+    tocHref: /dynamics365/unified-operations/retail/
+    topicHref: /dynamics365/unified-operations/retail/index
