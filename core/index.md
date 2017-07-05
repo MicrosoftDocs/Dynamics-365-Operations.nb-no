@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
-ms.openlocfilehash: 8703b3bc5642e6dbe9dd399ced5af6da25f9b226
+ms.sourcegitcommit: bb0700ad317fa8faf5dc83ea523dd151f0f4a811
+ms.openlocfilehash: 713178e79000e4358104038295452db0ba025195
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -41,21 +41,21 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 <tbody>
 <tr class="odd">
 <td><h3>Finans</h3>
-<p>Samsvar</p>
+<p><a href="../financials/general-ledger/audit-policy-rules">Samsvar</a></p>
 <p>Økonomistyring</p>
-<ul><li><a href="../financials/accounts-payable/accounts-payable">Leverandører</a></li>
+<ul style="list-style-type:none">
+<li><a href="../financials/accounts-payable/accounts-payable">Leverandører</a></li>
 <li><a href="../financials/accounts-receivable/accounts-receivable">Kunder</a></li>
 <li><a href="../financials/budgeting/budgeting-overview">Budsjettering</a></li>
 <li><a href="../financials/cash-bank-management/cash-bank-management">Kontant- og bankbehandling</a></li>
 <li><a href="../financials/cost-accounting/cost-accounting-home-page">Kostnadsregnskap</a></li>
 <li><a href="../financials/fixed-assets/fixed-assets">Anleggsmidler</a></li>
 <li><a href="../financials/general-ledger/general-ledger">Økonomimodul</a></li>
-
 <li><a href="../financials/public-sector/public-sector-functionality">Offentlig sektor</a></li>
 <li><a href="../dev-itpro/lcs-solutions/country-region">Regionale forskriftsmessige funksjoner</a></li></ul>
 <p><a href="../financials/project-management/overview-project-management-accounting">Prosjektstyring</a></p>
 <H3>Personale</h3>
-  <ul>
+  <ul style="list-style-type:none">
 <li><a href="hr/manage-recruiting-process">Rekruttering</a></li>
 <li><a href="hr/localizations/noam-usa-payroll">US payroll</a></li>
 </ul>
@@ -63,19 +63,19 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 <p><a href="../supply-chain/cost-management/costing-sheets">Kostnadsstyring</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Lagerstyring</a></p>
 <p>Logistikk</p>
-<ul><li><a href="../supply-chain/transportation/transportation-management-overview">Transportstyring</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">Lagerstyring</a></li></ul></li>
+<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">Transportstyring</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">Lagerstyring</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planlegging</a></p>
   <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Behandling av produktinformasjon</a></p>
   <p><a href="../supply-chain/production-control/create-production-orders">Produksjonskontroll</a></p>
 <p>Ordrebehandling</p>
-  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Innkjøp og leverandører</a></li>
+  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Innkjøp og leverandører</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Salg og markedsføring</a></li></ul>
 </td>
 <td>
 <h3>Plattform for enhetlig drift</h3>
 <p>Intelligens</p>
-<ul><li><a href="../dev-itpro/analytics/analytics">Analyse</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">Analyse</a></li>
  <li><a href="../dev-itpro/analytics/document-reporting-services">Forretningsdokumenter</a></li>
 <li><a href="../dev-itpro/analytics/financial-reporting-intro">Finansrapportering</a></li>
 <li><a href="../dev-itpro/analytics/general-electronic-reporting">Forskriftsmessig rapportering</a></li></ul>
@@ -83,33 +83,34 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 <p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobil plattform</a></p>
 
  <p>Utviklerfunksjonalitet</p>
-<ul>
-<li><a href="../dev-itpro/continuous-delivery-home-page">Kontinuerlig levering</a></li>
+<ul style="list-style-type:none">
+<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Kontinuerlig levering</a></li>
 <li><a href="../dev-itpro/get-started/demo-data">Demonstrasjonsdata</a></li>
 <li><a href="../dev-itpro/dev-tools/developer-home-page">Utviklerverktøy</a></li>
 <li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Utvidelsesmuligheter</a></li>
 <li><p>Integrering</p>
-<ul><li><a href="../dev-itpro/data-entities/data-entities">Dataenheter</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">Dataenheter</a></li>
 <li><a href="../dev-itpro/office-integration/office-integration">Office-integrering</a></li></ul></li></ul>
 
 <p>Administratorfunksjonalitet<p>
-<ul>
-<li><a href="../get-started/onboarding-home">Jobbintroduksjon for organisasjonen</a></li>
-<li><a href="../dev-itpro/deploy-demo-environment">Distribusjon og betjening</a></li>
+<ul style="list-style-type:none">
+<li><a href="../fin-and-ops/get-started/onboarding-home">Jobbintroduksjon for organisasjonen</a></li>
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">Distribusjon og betjening</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Oppgradering</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Databehandling</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organisasjonsstyring</a></li>
 <li><a href="../dev-itpro/sysadmin/system-administration-home-page">Systemadministrasjon</a></li>
-<ul>
+</ul>
 </td>
 <td>
-<h3>Dynamics 365 for Talent</h3>
+<h3>Relaterte produkter</h3>
+<h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">Fordeler</a></p>
 <p><a href="../talent/performance-management-overview">Utvikling og opplæring for ansatte</a></p>
 <p><a href="../talent/questionnaires">Spørreskjema</a></p>
 
-<h3>Dynamics 365 for Retail</h3>
+<h4>Dynamics 365 for Retail</h4>
 <p><a href="../retail/call-center-functionality">Telefonsenter</p>
 <p><a href="../retail/define-maintain-retail-channels">Kanaloppsett og -behandling</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS og Cloud POS</p>

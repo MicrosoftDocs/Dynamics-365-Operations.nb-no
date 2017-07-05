@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,18 +32,19 @@ ms.lasthandoff: 06/21/2017
 
 Microsoft Dynamics 365 for Talent forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Disse prosessene omfatter ansattbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn.
 
-Dynamics 365 for Talent er nært knyttet til Personale i Dynamics 365 for Finance and Operations, Enterprise edition. Den samme funksjonaliteten kan forekomme i begge produkter. Det kan føre til at produktnavnet i emner som hovedsakelig er relatert til Personale, vil være Dynamics 365 for Finance and Operations, Enterprise Edition, mens produktnavnet i emner som hovedsakelig er relatert til Talent, vil være Dynamics 365 for Talent. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+Med Talent kan du utføre disse oppgavene:
 
-Med Talent kan du fullføre disse oppgavene:
++ Administrere organisasjonsstrukturer.
++ Vedlikeholde omfattende informasjon om arbeider fra ansettelse til pensjonering.
++ Definere og administrere fordelsplaner, registrere arbeidere, tilordne avhengig dekning og angi mottakere.
++ Opprette og overvåke fraværspolicyer.
++ Implementere og spore profilbasert tidsadministrasjon og generere lønnsinformasjon du vil eksportere til et lønnssystem.
++ Behandle arbeiderkompetanser.
++ Gå gjennom ytelse og implementere arbeidermål.
++ Definere, levere og analysere kurs som inneholder agendaer, økter og spor.
 
-> + Administrere organisasjonsstrukturer.
-> + Vedlikeholde omfattende informasjon om arbeider fra ansettelse til pensjonering.
-> + Definere og administrere fordelsplaner, registrere arbeidere, tilordne avhengig dekning og angi mottakere.
-> + Opprette og overvåke fraværspolicyer.
-> + Implementere og spore profilbasert tidsadministrasjon og generere lønnsinformasjon du vil eksportere til et lønnssystem.
-> + Behandle arbeiderkompetanser.
-> + Gå gjennom ytelse og implementere arbeidermål.
-> + Definere, levere og analysere kurs som inneholder agendaer, økter og spor.
+> [!NOTE] 
+> Dynamics 365 for Talent er nært knyttet til Personale i Dynamics 365 for Finance and Operations, Enterprise edition. Den samme funksjonaliteten kan forekomme i begge produkter. Det kan føre til at produktnavnet i emner som hovedsakelig er relatert til Personale, vil være Dynamics 365 for Finance and Operations, Enterprise Edition, mens produktnavnet i emner som hovedsakelig er relatert til Talent, vil være Dynamics 365 for Talent. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Utvikle en strategi for administrasjon av personale
 ---------------------------------------------------------
