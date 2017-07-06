@@ -40,7 +40,7 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finans</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Samsvar</a></p>
 <p>Økonomistyring</p>
 <ul style="list-style-type:none">
