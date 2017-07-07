@@ -31,6 +31,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[Retail name](../includes/retail-name.md)]
 
 Bruk feltet <strong>Varenummer </strong> til å søke etter produkter og produktvarianter når du oppretter en salgsordrelinje eller en bestillingslinje manuelt.  Dermed kan du raskt finne produktvarianter når du bare har konfigurasjonsstrengen eller én av produktdimensjonene tilgjengelige.
 
