@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Dato for avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt. I avveid gjennomsnitt-prinsippet verdsettes frigivelser fra lageret til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden. Når du kjører en lageravslutning ved hjelp av dato for avveid gjennomsnitt, utlignes alle daglige mottak mot en virtuell avgang. Denne virtuelle avgangen inneholder totalt mottatt antall og verdi for den aktuelle dagen. Den virtuelle frigivelsen har et tilsvarende virtuelt mottak, som frigivelsene utlignes mot. Derfor får alle avgangene samme gjennomsnittskostnad. Du kan se på denne virtuelle avgangen som en virtuell overføring, som kalles *overføring av avveid gjennomsnitt fra lagerlukking*. 
