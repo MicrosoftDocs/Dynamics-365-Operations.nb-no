@@ -114,7 +114,7 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 <p><a href="../retail/call-center-functionality">Telefonsenter</p>
 <p><a href="../retail/define-maintain-retail-channels">Kanaloppsett og -behandling</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS og Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Utvikler og administrasjon for detaljhandel</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Utvikling og administrasjon av Retail</p>
 
 </td>
 </tr>
