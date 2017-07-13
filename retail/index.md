@@ -43,7 +43,7 @@ Den samme funksjonaliteten kan forekomme i alle tre produkter. I emner som hoved
 I ruten til venstre velger du et funksjonsområde du vil finne ut mer om.
 
 ## <a name="channel-management"></a>Kanaladministrasjon
-Når du definerer detaljhandelsopplevelsen, må du bestemme hvordan du vil definere og konfigurere butikker. De kan være fysiske butikker, nettbutikker eller telefonsentre.
+Når du definerer Retail-opplevelsen, må du bestemme hvordan du vil definere og konfigurere butikker. De kan være fysiske butikker, nettbutikker eller telefonsentre.
 
 Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, leveringsmåter, prisgrupper, inntekts- og utgiftskontoer, registre og medarbeidere. Når du har opprettet detaljhandelsbutikken, kan du opprette et produktsortiment du vil at butikken skal føre. Du kan også definere butikkspesifikke priser og rabatter som gjelder for produkter som er til salgs i butikken.
 
@@ -80,7 +80,7 @@ Ved hjelp av Retail kan butikksjefer sette opp og publisere skiftlister og tidsp
 
 Butikkmedarbeidere får oversikt over skift og tilordnede tidsplaner, sammen med instruksjoner for skiftene, og får i tillegg oversikt over kollegaer som er tilordnet til skift. De kan også sende fraværsforespørsler, forespørsler om skiftbytte med kollegaer, og forespørsler om skifttilbud.
 
-## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere detaljhandelsmiljøer
+## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere Retail-miljøer
 Hvis du har blitt bedt om å tilpasse miljøet, eller hvis du har ansvar for å distribuere og vedlikeholde systemet, må du sørge for at du ser innholdet for utvikleren og systemadministratoren som er spesifikt for Retail, i tillegg til det mer generelle innholdet.
 
 - [Dynamics 365 for Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
