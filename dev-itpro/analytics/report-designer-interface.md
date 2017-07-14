@@ -3,7 +3,7 @@ title: Grensesnitt for Rapportutforming
 description: Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,27 +19,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="report-designer-interface"></a>Grensesnitt for Rapportutforming
+# Grensesnitt for Rapportutforming
+<a id="report-designer-interface" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov. 
 
-<a name="report-designer-menu-commands"></a>Menykommandoer for Rapportutforming
+Menykommandoer for Rapportutforming
+<a id="report-designer-menu-commands" class="xliff"></a>
 -----------------------------
 
 Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når du utformer finansrapporter. Noen menykommandoer og alternativer er bare tilgjengelige i spesielle tilfeller. Kommandoene for forfremmelse og degradering av rapporteringsenheter er for eksempel bare tilgjengelige når du endrer en rapporteringstredefinisjon.
 
-### <a name="file-menu"></a>Fil-menyen
+### Fil-menyen
+<a id="file-menu" class="xliff"></a>
 
 **Fil**-menyen er tilgjengelig for alle brukere, og den inneholder kommandoene nedenfor.
 
@@ -53,14 +56,15 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Lagre som                           | Lagre gjeldende raddefinisjon, kolonnedefinisjon, rapporteringstredefinisjon eller rapportdefinisjon med et nytt navn.                                                                            |
 | Egenskaper                        | Åpne dialogboksen **Egenskaper** der du kan endre navnet og beskrivelsen for en rapport.                                                                                                   |
 | Generer                          | Generer gjeldende rapport. Denne kommandoen er tilgjengelig fra en rapportdefinisjon.                                                                                                                 |
-| Vis rapport                       | Åpne den nyeste versjonen av den genererte rapporten i Dynamics 365 for Operations. Denne kommandoen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport.                                 |
+| Vis rapport                       | Åpne den nyeste versjonen av den genererte rapporten i Finance and Operations. Denne kommandoen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport.                                 |
 | Sist brukte rapportdefinisjoner         | Vis en liste over rapporter som nylig er opprettet eller endret. Du kan deretter velge en rapport i listen.                                                                                    |
 | Sist brukte raddefinisjoner            | Vis en liste over raddefinisjoner som nylig er opprettet eller endret. Du kan deretter velge en raddefinisjon i listen.                                                                    |
 | Sist brukte kolonnedefinisjoner         | Vis en liste over kolonnedefinisjoner som nylig er opprettet eller endret. Du kan deretter velge en kolonnedefinisjon i listen.                                                              |
 | Sist brukte rapporteringstredefinisjoner | Vis en liste over rapporteringstredefinisjoner som nylig er opprettet eller endret. Du kan deretter velge en rapporteringstredefinisjon i listen.                                              |
 | Avslutt                              | Avslutt Rapportutforming.                                                                                                                                                                            |
 
-### <a name="edit-menu"></a>Rediger-menyen
+### Rediger-menyen
+<a id="edit-menu" class="xliff"></a>
 
 **Rediger**-menyen er tilgjengelig for brukere som har **Utformer**- eller **Administrator**-rollen. Denne menyen inneholder følgende kommandoer:
 
@@ -88,7 +92,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Sett inn rapporteringsenhet                  | Sette inn en tom rad i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon.                                                                                                |
 | Slett rapporteringsenhet                  | Slett den merkede raden for rapporteringsenhet fra rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon.                                                                             |
 
-### <a name="view-menu"></a>Vis-menyen
+### Vis-menyen
+<a id="view-menu" class="xliff"></a>
 
 **Vis**-menyen er tilgjengelig for alle brukere, og den inneholder kommandoene nedenfor.
 
@@ -99,7 +104,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Statuslinje      | Vis eller skjul statusinformasjonen i vinduet **Rapportutforming**. |
 | Velkomstside    | Åpne **Velkommen**-siden.                                             |
 
-### <a name="format-menu"></a>Format-menyen
+### Format-menyen
+<a id="format-menu" class="xliff"></a>
 
 **Format**-menyen er tilgjengelig for brukere som har **Utformer**- eller **Administrator**-rollen. Denne menyen inneholder følgende kommandoer:
 
@@ -110,7 +116,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Skjul                  | Skjul den merkede kolonnen. Denne kommandoen er tilgjengelig fra en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon.                                                                                        |
 | Vis                | Vis de skjulte kolonnene mellom de merkede kolonnene. Denne kommandoen er tilgjengelig fra en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon.                                                      |
 
-### <a name="company-menu"></a>Firma-menyen
+### Firma-menyen
+<a id="company-menu" class="xliff"></a>
 
 **Firma**-menyen er tilgjengelig for brukere som har **Utformer**- eller **Administrator**-rollen. Denne menyen inneholder følgende kommandoer:
 
@@ -119,7 +126,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Firmaer             | Åpne dialogboksen **Firmaer** der du kan opprette og endre firmaer.                                          |
 | Byggeblokkgrupper | Åpne dialogboksen **Byggeblokkgrupper** der du kan opprette, endre, importere og eksportere byggeblokkgrupper. |
 
-### <a name="go-menu"></a>Start-menyen
+### Start-menyen
+<a id="go-menu" class="xliff"></a>
 
 **Start**-menyen er tilgjengelig for alle brukere, og den inneholder kommandoene nedenfor. **Obs!**  Disse har ingen synlig effekt hvis navigasjonsruten ikke vises.
 
@@ -131,7 +139,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Rapporteringstredefinisjoner | Vis rapporteringstredefinisjoner i navigasjonsruten.                            |
 | Sikkerhet                   | Vis sikkerhetsinformasjon for brukere, grupper og firmaer i navigasjonsruten. |
 
-### <a name="tools-menu"></a>Verktøy-menyen
+### Verktøy-menyen
+<a id="tools-menu" class="xliff"></a>
 
 **Verktøy**-menyen er tilgjengelige for alle brukere, men enkelte kommandoer har begrenset tilgjengelighet. Denne menyen inneholder følgende kommandoer:
 
@@ -144,7 +153,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Oppdater hurtigbufrede økonomiske data | Oppdater dataene i kolonnen finansdimensjoner.                                                                                                                                                               |
 | Opsjoner                       | Åpne dialogboksen **Alternativer** der du kan endre brukerinnstillingene for Rapportutforming.                                                                                                                       |
 
-### <a name="window-menu"></a>Vindu-menyen
+### Vindu-menyen
+<a id="window-menu" class="xliff"></a>
 
 **Vindu**-menyen er tilgjengelig for alle brukere, og den inneholder kommandoene nedenfor.
 
@@ -157,19 +167,22 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Frys loddrett      | Frys den merkede kolonnen, slik at når du blar, vises denne kolonnen fortsatt i vinduet. Denne kommandoen er tilgjengelig for brukere som har **Utformer**- eller **Administrator**-rollen. |
 | Liste over åpne vinduer | Vis en liste over vinduer som er åpne. Velg et vindu for å flytte det fremst.                                                                                                               |
 
-### <a name="help-menu"></a>Hjelp-menyen
+### Hjelp-menyen
+<a id="help-menu" class="xliff"></a>
 
 **Hjelp**-menyen er tilgjengelig for alle brukere, og den inneholder kommandoene nedenfor.
 
 | Kommando | beskrivelse                                                  |
 |---------|--------------------------------------------------------------|
-| Hjelp    | Åpne emnesiden for hjelp for Dynamics 365 for Operations for finansrapportering. |
+| Hjelp    | Åpne emnesiden for hjelp for Finance and Operations for finansrapportering. |
 |         |                                                              |
 
-## <a name="report-designer-toolbar-buttons"></a>Verktøylinjeknapper for Rapportutforming
+## Verktøylinjeknapper for Rapportutforming
+<a id="report-designer-toolbar-buttons" class="xliff"></a>
 Tabellen nedenfor beskriver knappene på verktøylinjen som du kan bruke når du utformer rapporter. Noen verktøylinjeknapper er bare tilgjengelige i spesielle tilfeller. Knappene for forfremmelse og degradering av rapporteringsenheter er for eksempel bare tilgjengelige når du endrer en rapporteringstredefinisjon.
 
-### <a name="standard-toolbar"></a>Standardverktøylinjen
+### Standardverktøylinjen
+<a id="standard-toolbar" class="xliff"></a>
 
 Standardverktøylinjen gir rask tilgang til filen og redigeringskommandoer. Denne verktøylinjen inneholder knappene nedenfor.
 
@@ -194,7 +207,8 @@ Standardverktøylinjen gir rask tilgang til filen og redigeringskommandoer. Denn
 | [![Skjul-knappen](./media/collapsec130389.png)](./media/collapsec130389.png)               | Skjul rapporteringstreet.                                                                                                                                                           |
 | [![Hjelp-knappen](./media/helpc130389.png)](./media/helpc130389.png)                           | Åpne Hjelp.                                                                                                                                                                             |
 
-### <a name="formatting-toolbar"></a>Formateringsverktøylinjen
+### Formateringsverktøylinjen
+<a id="formatting-toolbar" class="xliff"></a>
 
 Formateringsverktøylinjen gir enkel tilgang til kommandoer for stil. Denne verktøylinjen inneholder knappene nedenfor.
 
@@ -211,7 +225,8 @@ Formateringsverktøylinjen gir enkel tilgang til kommandoer for stil. Denne verk
 | [![Bakgrunnsfarge-knappen](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Endre bakgrunnsfargen for gjeldende celle.        |
 | [![Skriftfarge-knappen](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Endre fargen for gjeldende tekst.                   |
 
-### <a name="report-designer-toolbar"></a>Verktøylinje for Rapportutforming
+### Verktøylinje for Rapportutforming
+<a id="report-designer-toolbar" class="xliff"></a>
 
 Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å navigere i rapportutformingen. Denne verktøylinjen inneholder knappene nedenfor.
 
@@ -226,7 +241,8 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 
 
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Finansrapportering](financial-reporting-intro.md)

@@ -1,15 +1,15 @@
 ---
 title: "Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer"
-description: "I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå."
+description: "I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I versjonen Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
@@ -17,24 +17,26 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ed01fc3c5f2f8b0870f22b39a8b0f6e98596af21
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: add41ceb1dd31d5b5aa26916114d7d7864cb1626
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
+# Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
+<a id="fixed-asset-value-model-and-depreciation-book-merge" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I 1611-versjonen av Microsoft Dynamics 365 for Operations er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.
+I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I versjonen Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.
 
 Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. [![Tablåer som en sammenslåing av verdimodell og avskrivningtablåfunksjonalitet](./media/fixed-assets.png)](./media/fixed-assets.png) På grunn av denne sammenslåingen, kan du nå bruke ett enkelt sett med sider, forespørsler og rapporter for alle prosesser for anleggsmidlet. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den nye funksjonaliteten for tablåer.
 
-## <a name="setup"></a>Konfigurer
+## Konfigurer
+<a id="setup" class="xliff"></a>
 Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjournalen for anleggsmiddel. Tablåer har et nytt alternativ, **Poster i økonomimodul**, som lar deg deaktivere postering i økonomimodulen og postere bare til underfinansjournal for anleggsmiddel. Denne funksjonen ligner tidligere posteringsvirkemåte for avskrivningstablåer. Journalnavnoppsettet har et nytt posteringslag som heter Ingen. Dette posteringslaget ble lagt til spesifikt for anleggsmiddeltransaksjoner. Hvis du vil postere transaksjoner for tablåer som ikke poster til økonomimodulen, må du bruke et journalnavn med posteringslaget satt til **Ingen**.
 
 |                                                  |                                 |                                 |                                                         |
@@ -46,7 +48,8 @@ Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjo
 | Avledede tablåer                                    | Ikke tillatt                     | Tillatt                         | Tillatt                                                 |
 | Avskrivningsprofiloverstyring på anleggsmiddelnivået | Tillatt                         | Ikke tillatt                     | Tillatt                                                 |
 
-## <a name="processes"></a>Prosesser
+## Prosesser
+<a id="processes" class="xliff"></a>
 Prosesser bruker nå en felles side. Noen prosesser tillates bare hvis alternativet **Poster til økonomimodul** er satt til **Ingen** i tablåoppsettet.
 
 |                                |                           |                     |                                          |
@@ -57,7 +60,8 @@ Prosesser bruker nå en felles side. Noen prosesser tillates bare hvis alternati
 | Slett historiske transaksjoner | Tillatt                   | Ikke tillatt         | Tillatt, med mindre du legger til i økonomimodulen |
 | Masseoppdatering                    | Tillatt                   | Ikke tillatt         | Tillatt, med mindre du legger til i økonomimodulen |
 
-## <a name="inquiries-and-reports"></a>Forespørsler og rapporter
+## Forespørsler og rapporter
+<a id="inquiries-and-reports" class="xliff"></a>
 Forespørsler og rapporter støtter alle tablåer. Rapporter som ikke finnes i tabellen nedenfor støttet tidligere både avskrivningstablåer for verdimodeller, og fortsetter å støtte alle tablåtyper. **Posteringslag**-feltet er også lagt til i rapporter, slik at du lettere kan gjenkjenne transaksjonsposteringene.
 
 |                                       |                                |                          |                          |
@@ -68,7 +72,8 @@ Forespørsler og rapporter støtter alle tablåer. Rapporter som ikke finnes i t
 | Anleggsmiddelbasis                     | Tillatt                        | Ikke tillatt              | Tillatt                  |
 | Relevans av anleggsmidler i midten av kvartalet | Tillatt                        | Ikke tillatt              | Tillatt                  |
 
-## <a name="upgrade"></a>Oppgrader
+## Oppgrader
+<a id="upgrade" class="xliff"></a>
 Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes imidlertid til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til **Ingen**.
 
 

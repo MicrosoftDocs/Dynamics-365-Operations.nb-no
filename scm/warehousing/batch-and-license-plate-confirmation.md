@@ -1,0 +1,48 @@
+---
+title: Parti- og nummerskiltbekreftelse
+description: Dette emnet beskriver hvordan du definerer og bruker parti- og nummerskiltbekreftelse fra en mobilenhet.
+author: Mirzaab
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 269384
+ms.search.region: Global
+ms.author: mirzaab
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 70a8c18560f0cfc7a44625520f2f035a6004618a
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/20/2017
+
+
+---
+
+# Parti- og nummerskiltbekreftelse
+<a id="batch-and-license-plate-confirmation" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Partibekreftelse lar deg bekrefte at det riktige partiet velges fra mobilenheten. Første gang du plukker arbeid bare for parti over-varer, der *parti over* angir at partiet går høyere enn plasseringen i søkehierarkiet, må du bekrefte at partiet som plukkes, samsvarer med partiet på arbeidslinjen. 
+
+Nummerskiltbekreftelse lar deg bekrefte at det nummerskiltet velges fra mobilenheten. Når du plukker arbeid fra en stadielokasjon, må du bekrefte at nummerskilt som plukkes, svarer til nummerskiltet som er knyttet til arbeidet. Hvis arbeidet startes ved å skanne et nummerskilt, utelates dette bekreftelsestrinnet.
+
+## Der det er aktuelt
+<a id="where-it-applies" class="xliff"></a>
+Bekreftelse gjelder i følgende scenarier:
+
+- Partibekreftelse gjelder for de første plukkingene av arbeid for parti over-varer.
+- Nummerskiltbekreftelse gjelder for plukking fra stadielokasjoner.
+
+## Konfigurere parti- og nummerskiltbekreftelse
+<a id="set-up-batch-and-license-plate-confirmation" class="xliff"></a>
+Du kan konfigurere parti- og nummerskiltbekreftelse fra menyelementene på mobilenheten.  
+1.  Gå til arbeidsbekreftelsesoppsettet fra menyelementene på mobilenheten.  
+2.  Velg alternativet for partibekreftelse eller nummerskiltbekreftelse. Begge alternativene er tilgjengelige for arbeidstypeplukk der automatisk bekreftelse ikke er aktivert.  
+

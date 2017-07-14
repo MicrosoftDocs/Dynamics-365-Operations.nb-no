@@ -1,6 +1,6 @@
 ---
 title: Oppgradere budsjettplanlegging
-description: "Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført."
+description: "Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: ryansand
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fafa323c3949c09707c81ec41edae25ad2677eeb
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 83e93df3284760c46cb95b931f32cc9990ef2db1
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
+# Oppgradere budsjettplanlegging
+<a id="upgrade-budget-planning" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
+Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
 
-Budsjettplanlegging i Microsoft Dynamics 365 for Operations har mange forbedringer som ikke var tilgjengelige i Microsoft Dynamics AX 2012. Dette emnet beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i dette emnet. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
+Budsjettplanlegging i Microsoft Dynamics 365 for Finance and Operations har mange forbedringer som ikke var tilgjengelige i Microsoft Dynamics AX 2012. Dette emnet beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i dette emnet. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
 
-## <a name="overview-of-changes"></a>Oversikt over endringer
-Mange store endringer er gjort i budsjettering for Dynamics 365 for Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Dynamics 365 for Operations:
+## Oversikt over endringer
+<a id="overview-of-changes" class="xliff"></a>
+Mange store endringer er gjort i budsjettering for Finande and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance and Operations:
 
 -   Budsjettplanmaler (budsjettplanleggingskonfigurasjon)
 -   Budsjettplanmapper (budsjettplanleggingskonfigurasjon)
@@ -47,35 +49,41 @@ Mange store endringer er gjort i budsjettering for Dynamics 365 for Operations. 
 
 Enkelte nye konsepter kan ikke oppgraderes direkte fra den tidligere funksjonaliteten. Derfor må du fullføre en ny konfigurasjon for å ta hensyn til disse nye begrepene. Avsnittene nedenfor beskriver begrepene som har erstattet elementene i listen ovenfor.
 
-### <a name="columns"></a>Kolonner
+### Kolonner
+<a id="columns" class="xliff"></a>
 
 Kolonner er et nytt begrep som erstatter deler av Excel-malen og også matrisefelt. Kolonner kan representere periode, måned, kvartal, år eller all tid. Tidsreferansen er dynamisk. Den peker til en relativ periode eller år med hensyn til budsjettprosessen. Kolonnen **Januar foregående år** refererer for eksempel til regnskapsperiode 1 for år -1. En kolonne er spesifikk for et budsjettplanscenario, for eksempel faktiske eller budsjettforespørsler.
 
-### <a name="layouts"></a>Oppsett
+### Oppsett
+<a id="layouts" class="xliff"></a>
 
-Oppsett er et nytt begrep som erstatter Excel-malen. Oppsett inneholder kolonnene som definerer hvilke budsjett eller faktiske data og perioder som skal vises. Oppsett deles også mellom klienten og Excel-tillegget. Når du angir eller viser data i Dynamics 365 for Operations-klienten, er brukeropplevelsen derfor bedre enn brukeropplevelsen i AX 2012. Hvis du vil skrive inn data i Dynamics 365 for Operations-klienten, er du ikke lenger begrenset til visning og registrering av ett enkelt scenario i en transaksjonsvisning. I stedet lar en sammenligning deg enkelt vise og angi beløp for flere perioder og or kontoer samtidig. Oppsett kan også defineres, slik at du kan angi og Vis valuta, kommentarer og andre valgfrie data. Oppsett lar deg også definere hvilke finansdimensjoner og dimensjonsbeskrivelser som skal vises. Oppsett omfatter også scenariebegrensninger for å definere hvilke kolonner i en mal som kan redigeres, og hvilke kolonner som skal være tilgjengelige i Excel. Når du har definert et oppsett, genereres en mal for den. Denne malen oppretter igjen den tilsvarende Excel-malen. Deretter kan du redigere Excel-malen for å legge til flere formler og formatering og deretter laste den opp på nytt. Oppsett tilordnes deretter til hver stadieregel på siden **Budsjettplanleggingsprosess**. Derfor erstatter oppsettene maler som var tilordnet og brukes på lignende måte.
+Oppsett er et nytt begrep som erstatter Excel-malen. Oppsett inneholder kolonnene som definerer hvilke budsjett eller faktiske data og perioder som skal vises. Oppsett deles også mellom klienten og Excel-tillegget. Når du angir eller viser data i Finance and Operations-klienten, er brukeropplevelsen derfor bedre enn brukeropplevelsen i AX 2012. Hvis du vil skrive inn data i Finance and Operations-klienten, er du ikke lenger begrenset til visning og registrering av ett enkelt scenario i en transaksjonsvisning. I stedet lar en sammenligning deg enkelt vise og angi beløp for flere perioder og or kontoer samtidig. Oppsett kan også defineres, slik at du kan angi og Vis valuta, kommentarer og andre valgfrie data. Oppsett lar deg også definere hvilke finansdimensjoner og dimensjonsbeskrivelser som skal vises. Oppsett omfatter også scenariebegrensninger for å definere hvilke kolonner i en mal som kan redigeres, og hvilke kolonner som skal være tilgjengelige i Excel. Når du har definert et oppsett, genereres en mal for den. Denne malen oppretter igjen den tilsvarende Excel-malen. Deretter kan du redigere Excel-malen for å legge til flere formler og formatering og deretter laste den opp på nytt. Oppsett tilordnes deretter til hver stadieregel på siden **Budsjettplanleggingsprosess**. Derfor erstatter oppsettene maler som var tilordnet og brukes på lignende måte.
 
-### <a name="budget-planning-processes"></a>Budsjettplanleggingsprosesser
+### Budsjettplanleggingsprosesser
+<a id="budget-planning-processes" class="xliff"></a>
 
-Budsjettplanleggingsprosesser er stort sett de samme som i AX 2012. De viktigste endringene er erstatning av maler med oppsett. Hvis prosesser tidligere ble fullført i AX 2012, oppdateres prosessene til statusen pågår, slik at du kan utføre endringer. Du må tilordne oppsett du trenger for hver stadieregel for å angi hvilke scenarier og tidsperioder som vises når planen åpnes i klienten. Oppsettene bestemmer også hvilken Excel-mal som åpnes utenfor Dynamic 365 for Operations, slik at du kan vise budsjettet. **Standard kontostruktur** er et nytt obligatorisk felt for budsjettplanleggingsprosessen. Tilordne den primære kontostrukturen som skal brukes for budsjettering, for hver budsjettplanleggingsprosess.
+Budsjettplanleggingsprosesser er stort sett de samme som i AX 2012. De viktigste endringene er erstatning av maler med oppsett. Hvis prosesser tidligere ble fullført i AX 2012, oppdateres prosessene til statusen pågår, slik at du kan utføre endringer. Du må tilordne oppsett du trenger for hver stadieregel for å angi hvilke scenarier og tidsperioder som vises når planen åpnes i klienten. Oppsettene bestemmer også hvilken Excel-mal som åpnes utenfor Dynamic 365 for Finance and Operations, slik at du kan vise budsjettet. **Standard kontostruktur** er et nytt obligatorisk felt for budsjettplanleggingsprosessen. Tilordne den primære kontostrukturen som skal brukes for budsjettering, for hver budsjettplanleggingsprosess.
 
-### <a name="attachments"></a>Vedlegg
+### Vedlegg
+<a id="attachments" class="xliff"></a>
 
-I AX 2012 ble justeringsdokumenter lagret i en vedleggsmappe. Ingen tidligere justeringsdokumenter blir oppgradert. Justeringsdokumenter lagres nå i databasen. Hvis denne informasjonen skal lagres i den oppgraderte versjonen, kan du laste opp de endelige justeringsdokumentene for hver plan som et vedlegg, ved hjelp av **Justering** -knappen i handlingsruten. I AX 2012 ble Excel-regneark for hver budsjettplanen opprettet basert på malen. I Dynamics 365 for Operations åpner alle planer en kopi av oppsettet. Imidlertid blir ingen endringer i Excel-filen lagret. Formler eller støtteinformasjon som ble brukt per plan, må legges til via kommentarer, et justeringsdokumentet eller en annen tilleggsprosess.
+I AX 2012 ble justeringsdokumenter lagret i en vedleggsmappe. Ingen tidligere justeringsdokumenter blir oppgradert. Justeringsdokumenter lagres nå i databasen. Hvis denne informasjonen skal lagres i den oppgraderte versjonen, kan du laste opp de endelige justeringsdokumentene for hver plan som et vedlegg, ved hjelp av **Justering** -knappen i handlingsruten. I AX 2012 ble Excel-regneark for hver budsjettplanen opprettet basert på malen. I Finance and Operations åpner alle planer en kopi av oppsettet. Imidlertid blir ingen endringer i Excel-filen lagret. Formler eller støtteinformasjon som ble brukt per plan, må legges til via kommentarer, et justeringsdokumentet eller en annen tilleggsprosess.
 
-## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurere et oppgradert miljø fra AX 2012
+## Konfigurere et oppgradert miljø fra AX 2012
+<a id="configuring-an-upgraded-environment-from-ax-2012" class="xliff"></a>
 I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata for å finne ut hvordan du konfigurerer det oppgraderte systemet. Standard konfigurasjonsdata for kolonner ble opprettet for å bidra med oppgraderingsprosessen. Du kan oppdatere eller slette disse standarddataene hvis de ikke oppfyller dine krav til konfigurasjon. **Obs!** De er nye obligatoriske felt som ikke angis i systemet. Hvis du står fast på en side, for eksempel siden **Budsjettplanleggingskonfigurasjon**, og kan ikke forlate den, kan du lukke nettleseren og åpne den til en annen side for å registrere informasjon i riktig rekkefølge. Det er obligatoriske felt som ikke er angitt ennå. Derfor kan det oppstå problemer før alt er konfigurert og alle nødvendige felt er angitt. Dette emnet beskriver hvordan du angir disse feltene etter behov. Her er noen av disse obligatoriske feltene:
 
 -   Siden **Budsjettplanleggingsprosess**: Feltet **Standard kontostruktur**
 -   Siden **Budsjettplanleggingsprosess**: **Oppsett**-feltet i hurtigfanen **Stadiumsregler og oppsett for budsjettplanlegging**
 
-### <a name="define-columns-and-layouts"></a>Definere kolonner og oppsett
+### Definere kolonner og oppsett
+<a id="define-columns-and-layouts" class="xliff"></a>
 
 1.  På siden **Budsjettplanleggingskonfigurasjon** klikker du på kategorien **Kolonner**. Som en del av oppgraderingen opprettes nye kolonner automatisk basert på budsjettplanlinjene. Kolonner bruker nå dynamiske datoer, der klokkeslett og år forskyves fra regnskapsåret som er definert i budsjettplanleggingsprosessen. **Obs!** Av ytelseshensyn under oppgraderingen antas det at alle budsjettsykluser representerer kalenderår, ikke regnskapsår. Hvis du bruker regnskapsår, må du redigere for riktig tilordning av kolonner til regnskapsåret. Disse elementene finnes for eksempel i AX 2012:
     -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
     -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
 
-    Følgende kolonner vil bli opprettet i Dynamics 365 for Operations:
+    Følgende kolonner vil bli opprettet i Finance and Operations:
     | Kolonnenavn    | Budsjettplanscenario | Tidsperiode for kolonne | Årsforskyvning |
     |----------------|----------------------|--------------------|-------------|
     | Jan scenario 1 | Faktiske beløp              | 1                  | 0           |
@@ -92,7 +100,8 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
 4.  I hurtigfanen **Oppsettelementer** klikker du på **Legg til** for å legge til metadata for hver rad, for eksempel en valuta, en merknad eller en budsjettklasse, som bestemmer omsetnings- kontra utgiftsrader. Deretter legger du til kolonner for tidsperioden, og scenarier som gjelder denne budsjettsyklusen og dette stadiet. Du kan gjøre disse endringene manuelt i klienten eller ved hjelp av Excel-tillegget som peker til dataenheten for oppsettelementer for budsjettplanen.
 5.  For hvert element i oppsettet velger du om kolonnen kan redigeres og om kolonnen også skal vises i Excel-arbeidsboken for dette oppsettet. **Obs!** Du bør vurdere et oppsett med tolv månedlige kolonner for alle budsjettplanscenarioer for denne prosessen for våre historiske planer.
 
-### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Oppdatere budsjettplanleggingsprosesser til å bruke det passende oppsettet for hver budsjettstadium
+### Oppdatere budsjettplanleggingsprosesser til å bruke det passende oppsettet for hver budsjettstadium
+<a id="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage" class="xliff"></a>
 
 1.  På siden **Budsjettplanleggingsprosess** velger du prosessen som skal konfigureres.
 2.  Klikk på **Rediger** i handlingsruten.
@@ -100,24 +109,30 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
 4.  I hurtigfanen **Stadiumsregler og oppsett for budsjettplanlegging** i **Oppsett**-feltet, velger du et oppsett som tidligere ble konfigurert og som passer for dette stadiet.
 5.  Fortsett å velge samme eller andre oppsett for de ulike budsjettplanleggingsstadiene, og lagre deretter endringene.
 
-## <a name="additional-features-to-consider-in-your-budgeting-process"></a>Flere funksjoner som bør vurderes i budsjetteringsprosessen
-### <a name="budget-planning-workspace"></a>Arbeidsområde for budsjettplanlegging
+## Flere funksjoner som bør vurderes i budsjetteringsprosessen
+<a id="additional-features-to-consider-in-your-budgeting-process" class="xliff"></a>
+### Arbeidsområde for budsjettplanlegging
+<a id="budget-planning-workspace" class="xliff"></a>
 
 Dette arbeidsområdet er utformet for både budsjetteier og individuelle budsjettbidragsytere. Det inneholder koblinger til budsjettdokumenter som krever din oppmerksomhet. Det har også rapporter og nøkkelytelsesindikatorer (KPI-er) for budsjettprosessen. Budsjettadministrator kan angi gjeldende budsjettplanleggingsprosess for alle brukere på siden **Budsjetteringsparametere**. I kategorien **Innstillinger for arbeidsområde** inneholder hurtigfanen **Budsjettplanlegging** et felt der du kan velge budsjettplanleggingsprosessen.
 
-### <a name="alternate-layouts"></a>Alternative oppsett
+### Alternative oppsett
+<a id="alternate-layouts" class="xliff"></a>
 
 Alternative oppsett er en ny funksjon som lar deg vise planer i ulike oppsett. Ett eller flere oppsett kan angis som alternativer. Du kan deretter vise en budsjettplan i et månedlig eller kvartalsvis oppsett. Du definerer alternative oppsett i hurtigfanen **Stadiumsregler og oppsett for budsjettplanlegging** på siden **Budsjettplanleggingsprosess**.
 
-### <a name="budget-milestones"></a>Milepæler for budsjett
+### Milepæler for budsjett
+<a id="budget-milestones" class="xliff"></a>
 
 Som en del av budsjettprosessen er det viktig at du forstår viktige datoer og tidsfrister. Du kan nå konfigurere datoer slik at de har beskrivelser. Budsjettbrukerne ser disse beskrivelsene når de åpner budsjetter for å redigere eller vise alt som er tilordnet dem.
 
-### <a name="copy-from-budget-plan-allocation"></a>Kopiere fra budsjettplantildeling
+### Kopiere fra budsjettplantildeling
+<a id="copy-from-budget-plan-allocation" class="xliff"></a>
 
 En ny tildelingsmetode lar deg distribuere fra en overordnet plan til en underordnet plan uten å måtte gå gjennom en mellomnivå i hierarkiet. Denne metoden er spesielt nyttig for kunder som tidligere har opprettet finansdimensjon for budsjettdistribusjon og godkjenninger.
 
-### <a name="generating-budget-plans-from-new-budget-sources"></a>Generere budsjettplaner fra nye budsjettkilder
+### Generere budsjettplaner fra nye budsjettkilder
+<a id="generating-budget-plans-from-new-budget-sources" class="xliff"></a>
 
 Alternativene nedenfor ble lagt til som periodisk prosesser. Disse alternativene lar deg generere en budsjettplan ved hjelp av eksisterende data fra en annen modul som startpunkt:
 
@@ -126,27 +141,33 @@ Alternativene nedenfor ble lagt til som periodisk prosesser. Disse alternativene
 -   Generere budsjettplan fra prosjekt
 -   Generere budsjettplan fra budsjettregister
 
-### <a name="more-complete-tracking-of-amounts"></a>Mer fullstendig sporing av beløp
+### Mer fullstendig sporing av beløp
+<a id="more-complete-tracking-of-amounts" class="xliff"></a>
 
-I AX 2012 hadde budsjettplanlegging et beløp for én plan som ble lagret for hver verdi. I Dynamics 365 for Operations er datamodellen utvidet. Det er nå beløp for regnskapsvaluta, transaksjonsvaluta og rapporteringsvaluta for hver verdi. Under oppgraderingen fylles disse nye kolonnene ut automatisk for eksisterende data.
+I AX 2012 hadde budsjettplanlegging et beløp for én plan som ble lagret for hver verdi. I Finance and Operations er datamodellen utvidet. Det er nå beløp for regnskapsvaluta, transaksjonsvaluta og rapporteringsvaluta for hver verdi. Under oppgraderingen fylles disse nye kolonnene ut automatisk for eksisterende data.
 
-### <a name="do-not-convert-currency-in-aggregation"></a>Ikke konverter valuta i aggregering
+### Ikke konverter valuta i aggregering
+<a id="do-not-convert-currency-in-aggregation" class="xliff"></a>
 
 Når en underordnet plan aggregeres til et overordnet nivå, blir beløpene vanligvis automatisk konvertert fra transaksjonsvalutaen til regnskapsvalutaen for organisasjonen. Når du setter alternativt **Ikke konverter valuta i aggregering** til **Nei**, forblir de aggregerte beløpene i den opprinnelige valutaen. Dette alternativet gir derfor for mer nøyaktige justeringer som påvirkes av fluktueringer i vekslingskurs.
 
-### <a name="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget"></a>Se tilbake fra en budsjettplan til andre moduler som bidrar til budsjettet
+### Se tilbake fra en budsjettplan til andre moduler som bidrar til budsjettet
+<a id="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget" class="xliff"></a>
 
 Budsjettplaner kan genereres fra behov, forsyningsprognoser, prosjekt og andre områder. Forespørselen Budsjettplaner etter dimensjonssett inneholder flere alternativer som lar deg kjøre spørringer for å identifisere dataene som var kilden til budsjettplanen.
 
-### <a name="overwrite-or-append-to-plan-for-allocation-schedules"></a>Overskrive eller tilføye i plan for tildelingsplaner
+### Overskrive eller tilføye i plan for tildelingsplaner
+<a id="overwrite-or-append-to-plan-for-allocation-schedules" class="xliff"></a>
 
 Hvis det finnes flere kilder for beløpene som må distribueres, kan du angi at beløpene skal være additive. I så fall overskriver ikke beløpene eventuelle eksisterende beløp. I stedet legges de til de eksisterende beløpene.
 
-### <a name="default-financial-dimension-set-for-budget-planning-configuration"></a>Standard finansdimensjon som er angitt for budsjettplanleggingskonfigurasjon
+### Standard finansdimensjon som er angitt for budsjettplanleggingskonfigurasjon
+<a id="default-financial-dimension-set-for-budget-planning-configuration" class="xliff"></a>
 
 Siden **Budsjettplanleggingskonfigurasjon** inneholder nå et felt der du kan angi standard finansdimensjonssett. Selv om dette feltet er et valgfritt felt, kan det være nødvendig for enkelte forespørsler. Det kan være nødvendig hvis du vil gruppere eller filtrere rapportgruppering etter dimensjonssett.
 
-### <a name="data-entities"></a>Dataenheter
+### Dataenheter
+<a id="data-entities" class="xliff"></a>
 
 Flere dataenheter er lagt til for å muliggjøre rask implementering av budsjettplanlegging. Enhetene lar deg også gjøre mange endringer til Excel. Du trenger derfor ikke opprette ett element om gangen i klienten. Her er en liste over nye dataoppføringer:
 

@@ -1,16 +1,16 @@
 ---
 title: Oversikt over kvalitetsstyring
-description: "Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Operations for å forbedre produktkvalitet i forsyningskjeden."
+description: "Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations for å forbedre produktkvalitet i forsyningskjeden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,28 +19,30 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
+# Oversikt over kvalitetsstyring
+<a id="quality-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Operations for å forbedre produktkvalitet i forsyningskjeden.
+Denne artikkelen beskriver hvordan du kan bruke kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations for å forbedre produktkvalitet i forsyningskjeden.
 
-Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsespunktet. Fordi diagnosetyper er knyttet til rettelsesrapportering, kan Microsoft Dynamics 365 for Operations planlegge oppgaver for å rette opp problemer og hindre at de skjer igjen.
+Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsespunktet. Fordi diagnosetyper er knyttet til rettelsesrapportering, kan Microsoft Dynamics 365 for Finance and Operations planlegge oppgaver for å rette opp problemer og hindre at de skjer igjen.
 
 I tillegg til funksjonalitet for håndtering av avvik inneholder kvalitetsstyring funksjonalitet for å spore problemer etter problemtype (selv interne problemer) og identifisere løsninger som kortsiktige eller langsiktige. Statistikk om nøkkelytelsesindikator (KPI-er) gir innsikt i loggen for tidligere avviksproblemer og løsninger som ble brukt til å rette feilene. Du kan bruke historiske data for å undersøke effektiviteten til tidligere kvalitetsmål og bestemme nødvendige tiltak som skal brukes i fremtiden.
 
-Når du definerer en kvalitetstilknytning, kan Microsoft Dynamics 365 for Operations generere kvalitetsordrer for diverse forretningsprosesser, hendelser og betingelser. Kvalitetstilknytningen kan dekke en bestemt vare, en bestemt varegruppe eller alle varer.
+Når du definerer en kvalitetstilknytning, kan Finance and Operations generere kvalitetsordrer for diverse forretningsprosesser, hendelser og betingelser. Kvalitetstilknytningen kan dekke en bestemt vare, en bestemt varegruppe eller alle varer.
 
-## <a name="examples-of-the-use-of-quality-management"></a>Eksempler på bruk av kvalitetsstyring
+## Eksempler på bruk av kvalitetsstyring
+<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
 Kvalitetsstyring er fleksibelt og kan implementeres på forskjellige måter for å oppfylle kravene til bestemte typer forsyningskjedeoperasjoner. Følgende eksempel viser mulig bruk av disse funksjonene.
 
 -   Start en prosess for kvalitetskontroll automatisk basert på forhåndsdefinerte kriterier (ved lagerregistrering av en bestilling fra en bestemt leverandør).
@@ -50,7 +52,8 @@ Kvalitetsstyring er fleksibelt og kan implementeres på forskjellige måter for 
 -   Angi et akseptabelt kvalitetsnivå for å kontrollere kvalitetsmåltoleranser.
 -   Angi ressursene som en inspeksjonsoperasjon krever, for eksempel et testområde og testinstrumenter.
 
-## <a name="working-with-quality-associations"></a>Arbeide med kvalitetstilknytninger
+## Arbeide med kvalitetstilknytninger
+<a id="working-with-quality-associations" class="xliff"></a>
 Forretningsprosessen som bruker en kvalitetstilknytning, kan knyttes til ulike kildedokumenter, for eksempel bestillinger, salgsordrer eller produksjonsordrer. 
 
 Hver kvalitetstilknytningspost definerer settet med tester, det akseptable kvalitetsnivået og samplingplanen som gjelder for kvalitetsordrene som genereres. Du må definere en kvalitetstilknytningspost for hver variasjon i en forretningsprosess. Du kan for eksempel definere en kvalitetstilknytning som genererer en kvalitetsordre når et produkt for bestillingsmottak oppdateres. Avhengig av oppsettet for utførelsesplanen kan selve utløsingsprosessen blokkeres når det finnes en åpen kvalitetsordre, eller de neste prosessene, for eksempel bestillingsfakturering, kan blokkeres. 
@@ -295,7 +298,8 @@ Tabellen nedenfor inneholder mer informasjon om hvordan kvalitetsordrer kan gene
 </tbody>
 </table>
 
-## <a name="quality-management-pages"></a>Kvalitetsstyringssider
+## Kvalitetsstyringssider
+<a id="quality-management-pages" class="xliff"></a>
 <table>
 <colgroup>
 <col width="33%" />
@@ -356,7 +360,8 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 
 
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Kvalitetsstyringsprosesser](quality-management-processes.md)

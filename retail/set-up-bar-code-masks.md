@@ -3,40 +3,44 @@ title: Definere strekkodemasker
 description: Dette emnet beskriver hvordan du definerer tegn for strekkodemaske, strekkodemasker og hvordan du kan tilordne strekkodemasker til strekkoder.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-bar-code-masks"></a>Definere strekkodemasker
+# Definere strekkodemasker
+<a id="set-up-bar-code-masks" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Dette emnet beskriver hvordan du definerer tegn for strekkodemaske, strekkodemasker og hvordan du kan tilordne strekkodemasker til strekkoder.
 
-<a name="set-up-bar-code-mask-characters"></a>Definere tegn for strekkodemaske
+Definere tegn for strekkodemaske
+<a id="set-up-bar-code-mask-characters" class="xliff"></a>
 -------------------------------
 
-Strekkodemasker brukes til å opprette strekkoder og raskt identifisere strekkoder som skannes inn på salgsstedet (POS). Masker består av tegn som fungerer som plassholdere som angir formatet for strekkodene som blir opprettet. Hvis du vil konfigurere en strekkodemaske, må du definere tegn for strekkodemasken. Gå til **Detaljhandel og handel** &gt; **Lagerstyring** &gt; **Strekkoder og etiketter** &gt; **Masketegn**. Klikk på **Ny** for å opprette tegn for strekkodemaske. Masketegn kan opprettes for å angi strekkodedataene nedenfor.
+Strekkodemasker brukes til å opprette strekkoder og raskt identifisere strekkoder som skannes inn på salgsstedet (POS). Masker består av tegn som fungerer som plassholdere som angir formatet for strekkodene som blir opprettet. Hvis du vil konfigurere en strekkodemaske, må du definere tegn for strekkodemasken. Gå til **Detaljhandel** &gt; **Lagerstyring** &gt; **Strekkoder og etiketter** &gt; **Masketegn**. Klikk på **Ny** for å opprette tegn for strekkodemaske. Masketegn kan opprettes for å angi strekkodedataene nedenfor.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +57,14 @@ Strekkodemasker brukes til å opprette strekkoder og raskt identifisere strekkod
 | **Ansatt**         | Angir strekkodesegmentet for ansatt-ID-nummeret som brukes for strekkodepålogging på salgsstedet.                                  |
 | **Kunde**         | Viser kunde-ID-segment.                                                                                  |
 | **Dataoppføring**       | *Ikke implementert ennå.*                                                                                          |
-| **Rabattkode**    | Angir rabattkoden for en strekkode som brukes til å legge til en rabatt i en transaksjons på salgsstedet             |
+| **Rabattkode**    | *Avskrevet* per vår 2017-versjonen av 365 Dynamics for Retail. Tidligere: Angir rabattkoden for en strekkode som brukes til å legge til en rabatt i en transaksjon på salgsstedet.                                                                   |
+| **Kupongkode**      | Angir kupongkoden for en strekkode som brukes til å legge til en rabatt i en detaljhandelsordre. Dette erstattet rabattkoden.     |
 | **Gavekort**        | Angir et gavekortnummer ved utstedelse av eller betaling med gavekort.                                               |
 | **Fordelskort**     | Legger til en fordelskunde i transaksjonen, og kan brukes ved betaling av fordel.                             |
 
-## <a name="define-bar-code-masks"></a>Definere strekkodemasker
-Når tegn for strekkodemaske er angitt for de nødvendige strekkodemaskene, går du til **Detaljhandel og handel** &gt; **Lagerstyring** &gt; **Strekkoder og etiketter** &gt; **Oppsett for strekkodemaske**. På denne siden kan du definere strekkodemasker som bruker de tidligere angitte tegnene. Disse strekkodemaskene brukes ved generering av strekkoder, og vil også bidra til å identifisere strekkoder som skannes på salgsstedet.
+## Definere strekkodemasker
+<a id="define-bar-code-masks" class="xliff"></a>
+Når tegn for strekkodemaske er angitt for de nødvendige strekkodemaskene, går du til **Detaljhandel** &gt; **Lagerstyring** &gt; **Strekkoder og etiketter** &gt; **Oppsett for strekkodemaske**. På denne siden kan du definere strekkodemasker som bruker de tidligere angitte tegnene. Disse strekkodemaskene brukes ved generering av strekkoder, og vil også bidra til å identifisere strekkoder som skannes på salgsstedet.
 
 1.  Klikk på **Ny** for å opprette en ny strekkodemaske.
 2.  Angi verdier i feltene **Maske-ID** og **Beskrivelse**, og velg deretter en type for strekkodemaske i **Type**-feltet.
@@ -73,7 +79,8 @@ Eksempel: Hvis du vil opprette en strekkodemaske med maske-ID Produkt, gjør du 
 4.  Legg til et maskesegment. Produkt-maskesegmentet blir valgt.
 5.  Angi en lengde for produktsegmentet, for eksempel 10. Lengden må samsvare med lengden på en produkt-ID som vanligvis brukes i butikken. Masken vises som en forhåndsvisning i **Generelt**-delen under **Maske**.
 
-## <a name="assign-bar-code-masks-to-bar-codes"></a>Tilordne strekkodemasker til strekkoder
+## Tilordne strekkodemasker til strekkoder
+<a id="assign-bar-code-masks-to-bar-codes" class="xliff"></a>
 Strekkodemasker må tilordnes til strekkoder før de kan brukes. Vi fortsetter med det forrige eksemplet, og gjør følgende for å tilordne strekkodemasken til en strekkode:
 
 1.  Gå til **Organisasjonsstyring** &gt; **Oppsett** &gt; **Strekkoder**. Klikk på **Ny** for å opprette en ny strekkode.

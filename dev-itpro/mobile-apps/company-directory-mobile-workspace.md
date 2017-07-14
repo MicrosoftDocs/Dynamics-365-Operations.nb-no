@@ -1,0 +1,100 @@
+---
+title: "Mobilt arbeidsområde for firmakatalog"
+description: "Dette emnet gir informasjon om det mobile arbeidsområdet for firmakatalog, som lar brukere vise og kontakte andre ansatte i organisasjonen."
+author: jcart1106
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Talent, Operations, UnifiedOperations
+ms.search.region: Global
+ms.author: JCart
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: afda8eb49fd8baa74abdac89fdf265631fda595b
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/13/2017
+
+---
+
+# Mobilt arbeidsområde for firmakatalog
+<a id="company-directory-mobile-workspace" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Dette emnet gir informasjon om det mobile arbeidsområdet **Firmakatalog**. Dette arbeidsområdet lar brukere vise og kontakte andre ansatte i organisasjonen.
+
+Dette mobile arbeidsområdet kan brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+
+## Oversikt
+<a id="overview" class="xliff"></a>
+Det mobile arbeidsområdet **Firmakatalog** lar brukere utføre disse oppgavene:
+
+- Vis en liste over ansatte i organisasjonen.
+- Søk etter ansatte i organisasjonen.
+- Vis kontaktinformasjon for ansatte.
+- Kontakt ansatte fra profilinformasjonen.
+
+## Forutsetninger
+<a id="prerequisites" class="xliff"></a>
+Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende forutsetninger.
+
+<table>
+<thead>
+<tr class="header">
+<th>Forutsetning</th>
+<th>Rolle</th>
+<th>beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Et av følgende produkter må distribueres i organisasjonen:
+<ul><li>Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</li>
+<li>Microsoft Dynamics 365 for Talent</li>
+</ul>
+</td>
+<td>Systemansvarlig</td>
+<td>Hvis du ikke allerede har Finance and Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Talent distribuert i organisasjonen, kan en systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/en-us/dynamics365/talent">nettsiden for Talent</a>.
+</td>
+</tr>
+<tr class="even">
+<td>Det mobile arbeidsområdet <strong>Firmakatalog</strong> må publiseres.</td>
+<td>Systemansvarlig</td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
+</tr>
+</tbody>
+</table>
+
+## Laste ned og installere mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
+Last ned og installer mobilappen Dynamics 365 for Unified Operations:
+
+-   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logge på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+1.  Start appen på mobilenheten.
+2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
+3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
+4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
+
+[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+
+## Vise firmakatalogen ved hjelp av det mobile arbeidsområdet
+<a id="view-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+1.  Velg arbeidsområdet **Firmakatalog** i mobilappen. Det vises en liste over ansatte.
+3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+
+## Søke etter firmakatalogen ved hjelp av det mobile arbeidsområdet
+<a id="search-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+1.  Velg arbeidsområdet **Firmakatalog** i mobilappen.
+2.  I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.
+3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+

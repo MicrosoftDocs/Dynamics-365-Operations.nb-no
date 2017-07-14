@@ -1,0 +1,96 @@
+---
+title: "Mobilt arbeidsområde for fakturagodkjenning"
+description: "Dette emnet gir informasjon om det mobile arbeidsområdet for fakturagodkjenning. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode."
+author: abruer
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.region: Global
+ms.author: abruer
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 70f3e0fe53fc0b1daa471a7022f5659d09caa867
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/13/2017
+
+---
+
+# Mobilt arbeidsområde for fakturagodkjenning
+<a id="invoice-approvals-mobile-workspace" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Dette emnet gir informasjon om det mobile arbeidsområdet **Fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
+
+Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+
+## Oversikt
+<a id="overview" class="xliff"></a>
+
+Med det mobilie arbeidsområdet **Fakturagodkjenninger**  kan regnskapsassistenter og -sjefer vise fakturaene som er tilordnet til dem, som en del av arbeidsflytprosessen leverandørfakturahode. Du kan vise fakturainformasjon, og til og med linje- og distribusjonsdetaljer, som hjelper deg å ta informerte beslutninger om godkjenning. Fra arbeidsområdet kan du utføre handlinger for å flytte fakturaen gjennom arbeidsflytprosessen. 
+
+## Forutsetninger
+<a id="prerequisites" class="xliff"></a>
+
+Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende forutsetninger.
+
+<table>
+<thead>
+<tr class="header">
+<th>Forutsetning</th>
+<th>Rolle</th>
+<th>beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise-versjon oppdatert juli 2017 må være distribuert i organisasjonen.</td>
+<td>Systemansvarlig</td>
+<td>Se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.
+</td>
+</tr>
+<tr class="even">
+<td>Det mobile arbeidsområdet <strong>Fakturagodkjenning</strong> må publiseres.</td>
+<td>Systemansvarlig</td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
+</tr>
+</tbody>
+</table>
+
+## Laste ned og installere mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
+
+Last ned og installer mobilappen Dynamics 365 for Unified Operations:
+
+-   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logge på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+
+1.  Start appen på mobilenheten.
+2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
+3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
+4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
+
+    [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+
+## Godkjenne fakturaer ved hjelp av det mobile arbeidsrområdet Fakturagodkjenning
+<a id="approve-invoices-by-using-the-invoice-approvals-mobile-workspace" class="xliff"></a>
+1.  Velg **Fakturagodkjenning**-arbeidsområdet på mobilenheten.
+2.  Velg fakturaen som er tilordnet til deg av arbeidsflytprosessen leverandørfakturahode.
+3.  På siden **Fakturaopplysninger** kan du se gjennom fakturahodeinformasjonen, for eksempel leverandør- og datoinformasjon.
+4.  Velg en linje på fakturaen for å vise mer detaljert informasjon om den i  **fakturalinjedetaljer**-visningen.
+5.  I visningen **Fakturalinjedetaljer** velger du **Distribusjoner** for å vise linjedistribusjonene. Her kan du vise regnskapet for fakturalinjen. Informasjonen som vises, inkluderer finansdimensjonene og hovedkontoen.
+6.  På siden **Fakturadetaljer** velger du **Distribusjoner** for å vise alle distribusjonene. Her kan du vise regnskapet for hele fakturaen. Informasjonen som vises, inkluderer finansdimensjonene og hovedkontoene. 
+7.  Velg **Vedlegg** for å vise notater eller filer som er knyttet til fakturaen.
+8.  På siden **Fakturadetaljer** velger du riktig handling i arbeidsflyten forl å fullføre gjennomgangen.
+9.  Velg **Ferdig**.
+

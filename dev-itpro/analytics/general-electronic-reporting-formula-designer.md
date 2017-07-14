@@ -3,7 +3,7 @@ title: Formeldesigner i elektronisk rapportering
 description: "Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke Microsoft Excel-lignende formler for datatransformasjon for å oppfylle kravene for fullføringen og formatering for dette dokumentet. Ulike typer funksjoner som støttes: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner)."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,27 +18,29 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
+# Formeldesigner i elektronisk rapportering
+<a id="formula-designer-in-electronic-reporting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke Microsoft Excel-lignende formler for datatransformasjon for å oppfylle kravene for fullføringen og formatering for dette dokumentet. Ulike typer funksjoner som støttes: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner).
 
-<a name="formula-designer-overview"></a>Oversikt over formeldesigner
+Oversikt over formeldesigner
+<a id="formula-designer-overview" class="xliff"></a>
 -------------------------
 
 Elektronisk rapportering (ER) støtter formeldesigneren. Under utformingen kan du derfor konfigurere uttrykk som kan brukes til følgende oppgaver ved kjøretid:
 
--   transformere data som er mottatt fra en Microsoft Dynamics 365 for Operations-database og som skal fylles ut i en ER-datamodell som er utformet for å være en datakilde for ER-formater (filtrering, gruppering, datatypekonvertering og så videre)
+-   transformere data som er mottatt fra en Microsoft Dynamics 365 for Finance and Operations-database og som skal fylles ut i en ER-datamodell som er utformet for å være en datakilde for ER-formater (filtrering, gruppering, datatypekonvertering og så videre)
 -   formatere data som må sendes til et elektronisk dokument som genereres i henhold til oppsettet og betingelser for et bestemt ER-format (i henhold til forespurt språk eller kultur, koding og så videre).
 -   kontroll av prosessen for generering av elektronisk dokument (aktivering/deaktivering av utdataene for bestemte elementer i formatet avhengig av databehandling, avbryte dokumentopprettelse, vise meldinger for sluttbrukere og så videre)
 
@@ -54,22 +56,26 @@ Formeldesignersiden kan åpnes når du gjør noe av følgende:
 -   Definerer betingelsene for prosesskontrollvalideringer.
 -   Definerer meldingsteksten for prosesskontrollvalideringer.
 
-## <a name="designing-er-formulas"></a>Utforme ER-formler
-### <a name="data-binding"></a>Databinding
+## Utforme ER-formler
+<a id="designing-er-formulas" class="xliff"></a>
+### Databinding
+<a id="data-binding" class="xliff"></a>
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som transformerer data som mottas fra datakilder, slik at dataene kan fylles ut i dataforbruker ved kjøretid:
 
--   Fra Dynamics 365 for Operations-datakilder og kjøretidsparametere til en ER-datamodell.
+-   Fra Finance and Operations-datakilder og kjøretidsparametere til en ER-datamodell.
 -   Fra en ER-datamodell til et ER-format.
--   Fra Dynamics 365 for Operations-datakilder og kjøretidsparametere til et ER-format.
+-   Fra Finance and Operations-datakilder og kjøretidsparametere til en ER-dataformat.
 
-Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette eksemplet returnerer uttrykket verdien for **Intrastat.AmountMST**-feltet for **Intrastat**-tabellen i Dynamics 365 for Operations, når denne verdien er avrundet til to desimalplasser. [![bilde-uttrykk-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I dette eksemplet er resultatet av det utformede uttrykket utfylt i **Transaction.InvoicedAmount**-komponenten for datamodellen **Avgiftsrapporteringsmodell**. [![bilde-uttrykk-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Ved kjøretid vil den utformede formelen, **ROUND (Intrastat.AmountMST, 2)**, avrunde verdien i **AmountMST**-feltet for hver post i **Intrastat**-tabellen til to desimalplasser, og fylle ut den avrundede verdien i **Transaction.InvoicedAmount**-komponenten for **Avgiftsrapportering**-datamodellen.
+Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette eksemplet returnerer uttrykket verdien for **Intrastat.AmountMST**-feltet for **Intrastat**-tabellen i Finance and Operations, når denne verdien er avrundet til to desimalplasser. [![bilde-uttrykk-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I dette eksemplet er resultatet av det utformede uttrykket utfylt i **Transaction.InvoicedAmount**-komponenten for datamodellen **Avgiftsrapporteringsmodell**. [![bilde-uttrykk-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Ved kjøretid vil den utformede formelen, **ROUND (Intrastat.AmountMST, 2)**, avrunde verdien i **AmountMST**-feltet for hver post i **Intrastat**-tabellen til to desimalplasser, og fylle ut den avrundede verdien i **Transaction.InvoicedAmount**-komponenten for **Avgiftsrapportering**-datamodellen.
 
-### <a name="data-formatting"></a>Dataformatering
+### Dataformatering
+<a id="data-formatting" class="xliff"></a>
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Når formatkomponenter refererer til **TrimmedString **-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-### <a name="process-flow-control"></a>Prosessflytkontroll
+### Prosessflytkontroll
+<a id="process-flow-control" class="xliff"></a>
 
 ER-formeldesigneren kan brukes til å definere uttrykk som styrer prosessflyten for generering av dokumenter. Du kan:
 
@@ -92,7 +98,8 @@ Hver regel av prosessflytkontrollen er utviklet som en enkelt validering. Illust
 
 [![bilde-fil-kontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-### <a name="basic-syntax"></a>Grunnleggende syntaks
+### Grunnleggende syntaks
+<a id="basic-syntax" class="xliff"></a>
 
 ER-uttrykk kan inneholde én eller flere av følgende elementer:
 
@@ -102,11 +109,13 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 -   Baner
 -   Funksjoner
 
-#### <a name="constants"></a>Konstanter
+#### Konstanter
+<a id="constants" class="xliff"></a>
 
 Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20 **bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""Krig og fred"" Del 1"** tekststrengen **Leo Tolstoy "Krig og fred" Del 1**.
 
-#### <a name="operators"></a>Operatører
+#### Operatører
+<a id="operators" class="xliff"></a>
 
 Tabellen nedenfor viser de aritmetiske operatorene som du kan bruke til å utføre grunnleggende matematiske operasjoner, for eksempel addisjon, subtraksjon, multiplikasjon og divisjon.
 
@@ -134,7 +143,8 @@ Du kan også bruke et &-tegn (&) som en tekstsammenkoblingsoperator for å koble
 |----------|-------------|------------------------------------------------|
 | &        | Sammenslåing | "Ingenting å skrive ut" & ": " & "Finner ingen poster" |
 
-#### <a name="operator-precedence"></a>Operatorprioritet
+#### Operatorprioritet
+<a id="operator-precedence" class="xliff"></a>
 
 Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultatet av uttrykket** 1 + 4 / 2** varierer for eksempel, avhengig av om addisjonen eller divisjonen utføres først. Du kan bruke parenteser til å definere hvordan uttrykk evalueres. Hvis du for eksempel vil angi at addisjonen skal utføres først, kan du endre det forrige uttrykket til **(1 + 4) / 2**. Hvis operasjonsrekkefølgen som skal utføres i et uttrykk ikke er uttrykkelig definert, er rekkefølgen basert på standardrekkefølgen som er tilordnet til operatorene støttes. Tabellen nedenfor viser operatorene og prioriteten som er tilordnet hver av dem. Operatorer som har høyere prioritet (for eksempel 7) evalueres før operatorer som har lavere prioritet (for eksempel 1).
 
@@ -150,42 +160,71 @@ Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultat
 
 Operatorer på samme linje har samme prioritet. Hvis et uttrykk inneholder mer enn én av disse operatorene, evalueres uttrykket fra venstre mot høyre. Uttrykket **1 + 6 / 2 \* 3 &gt; 5** returnerer for eksempel **sann**. Vi anbefaler at du bruker parenteser for å eksplisitt angi ønsket evalueringsrekkefølgen for uttrykk, for å gjøre det enklere å lese og vedlikeholde uttrykkene.
 
-#### <a name="references"></a>Referanser
+#### Referanser
+<a id="references" class="xliff"></a>
 
 Alle datakilder for gjeldende ER-komponent (en modell eller et format) som er tilgjengelige under utformingen av et uttrykk, kan brukes som navngitte referanser. Gjeldende ER-datamodell inneholder for eksempel datakilden **ReportingDate** som returnerer en verdi for **DATETIME**-datatypen. Hvis du vil ha verdien riktig formatert i det genererende dokumentet, kan du referere til datakilden i uttrykket slik **DATETIMEFORMAT (ReportingDate, "dd-MM-åååå")** Alle tegn i navnet til en referansedatakilde som ikke representerer en bokstav i alfabetet, må stå etter et enkelt anførselstegn ('). Hvis navnet på en referansedatakilde inneholder minst ett symbol som ikke representerer en bokstav i alfabetet (for eksempel skilletegn eller andre skriftlige symboler), må navnet være omsluttet av enkle anførselstegn. Her er noen eksempler:
 
 -   Datakilden **Today’s date & time** må refereres i ER-uttrykket slik: **'Today''s date & time’**
 -   Metoden **name()** for datakilden **Customers** må refereres i ER-uttrykk slik: **Customers.’name()’**
 
-#### <a name="path"></a>Bane
+Legg merke til at følgende syntaks brukes til å kalle metoder i Dynamics 365 for Operation-datakilder med parametere:
+
+- Det må henvises til isLanguageRTL-metoden for systemdatakilden med en EN-US-parameter av strengdatatypen i et ER-uttrykk, som følger: System.'isLanguageRTL'("EN-US").
+- Anførselstegn er ikke obligatorisk når et metodenavn inneholder bare alfanumeriske symboler. De er obligatorisk for en metode i en tabell når navnet inneholder parentes.
+
+Når du legger til en systemdatakilde i en ER-tilordning som refererer til programglassen Global i Dynamics-365 for Operastion, returnerer uttrykket den boolske verdien USANN. Det endrede uttrykket, System.’ isLanguageRTL'("AR") returnerer en boolsk verdi, SANN.
+
+Vær oppmerksom på at overgangen til slike metodeparameterne kan defineres med følgende begrensninger:
+
+- Bare konstanter kan sendes til slike metoder, da verdien deres defineres under utformingen.
+- Bere primitive (grunnleggende) datatyper støttes for slike parametere (heltall, reelle, boolske, strenger, osv.).
+
+#### Bane
+<a id="path" class="xliff"></a>
 
 Når et uttrykk refererer til en strukturert datakilde, kan du bruke banedefinisjonen for å velge et bestemt primitivt element i denne datakilden. Tegnet punktum (.) brukes til å skille enkeltelementene i en strukturert datakilde. Gjeldende ER-datamodell inneholder for eksempel datakilden **InvoiceTransactions** som returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit** som returnerer numeriske verdier. Du kan derfor utforme følgende uttrykk for å beregne det fakturerte beløpet: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
 
-#### <a name="functions"></a>Funksjoner
+#### Funksjoner
+<a id="functions" class="xliff"></a>
 
 Den neste delen beskrives funksjonene som kan brukes i ER-uttrykk. Alle datakilder i uttrykkskonteksten (gjeldende ER-datamodell eller ER-format), i tillegg til konstanter, kan brukes som parametere for funksjonsanrop i henhold til listen over argumenter for anropsfunksjoner. Gjeldende ER-datamodell inneholder for eksempel datakilden **InvoiceTransactions** som returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit** som returnerer numeriske verdier. For å beregne det fakturerte beløpet kan du derfor utforme følgende uttrykk som bruker den innebygde ER-avrundingsfunksjonen: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
 
-## <a name="supported-functions"></a>Funksjoner som støttes
+## Funksjoner som støttes
+<a id="supported-functions" class="xliff"></a>
 Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å utforme ER-datamodeller og ER-rapporter. Denne listen over funksjoner ikke er fast, og kan utvides av utviklere. Hvis du vil se en oversikt over funksjonene som du kan bruke, kan du gå til funksjonsruten i ER-formeldesigner.
 
-### <a name="date-and-time-functions"></a>Dato- og klokkeslettfunksjoner
+### Dato- og klokkeslettfunksjoner
+<a id="date-and-time-functions" class="xliff"></a>
 
 | Funksjon                                   | Beskrivelse                                                                                                                                                                                                                                                                                                                                                      | Eksempel                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ADDDAYS (dato/klokkeslett, dager)                   | Legg til det angitte antallet dager i den angitte dato-/klokkeslettverdien.                                                                                                                                                                                                                                                                                                | **ADDDAYS (NOW(), 7)** Returnerer datoen og klokkeslettet sju dager i fremtiden.                                                                                                                                                                                                                            |
-| DATETODATETIME (dato)                      | Konverter den angitte datoverdien til en dato-/klokkeslettverdi.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. 'getCurrentDate()')** returnerer gjeldende dato for Dynamics 365 for Operations-økten, 12/24/2015, som **12/24/2015 12:00:00 AM**. I dette eksemplet er **CompInfo** en ER-datakilde av typen **Dynamics 365 for Operations/tabell** som refererer til CompanyInfo-tabellen. |
-| NOW ()                                     | Returnerer gjeldende dato og klokkeslett for Dynamics 365 for Operations-programserveren som en dato-/klokkeslettverdi.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
-| TODAY ()                                   | Returnerer gjeldende dato for Dynamics 365 for Operations-programserveren som en datoverdi.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
+| DATETODATETIME (dato)                      | Konverter den angitte datoverdien til en dato-/klokkeslettverdi.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. "getCurrentDate()')** returnerer den gjeldende Finance and Operations-øktens dato12/24/2015, som **12/24/2015 12:00:00 AM**. I dette eksemplet er **CompInfo** en ER-datakilde av typen **Finance and Operations/tabell** som refererer til CompanyInfo-tabellen. |
+| NOW ()                                     | Returnerer gjeldende dato og klokkeslett for Finance and Operations-programserveren som en dato-/klokkeslettverdi.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
+| TODAY ()                                   | Returnerer gjeldende dato og klokkeslett for Finance and Operations-programserveren som en datoverdi.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
 | NULLDATE ()                                | Returnerer en **nullverdi** for dato.                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                       |
 | NULLDATETIME ()                            | Returnerer **nullverdi** for dato/klokkeslett.                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                       |
-| DATETIMEFORMAT (dato/klokkeslett, format)          | Konverter den angitte dato-/klokkeslettverdien til en streng i det angitte formatet. (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)                                                                        | **DATETIMEFORMAT (NOW(), "dd-MM-åååå")** returnerer gjeldende dato for Dynamics 365 for Operations-programserveren, 12/24/2015, som **"24-12-2015"**, i henhold til det angitte egendefinerte formatet.                                                                                                          |
-| DATETIMEFORMAT (dato/klokkeslett, format, kultur) | Konverter den angitte dato-/klokkeslettverdien til en streng i angitt format og [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** returnerer gjeldende dato for Dynamics 365 for Operations-programserveren, 12/24/2015, som **"24.12.2015"**, i henhold til den valgte tyske kulturen.                                                                                                             |
-| SESSIONTODAY ()                            | Returnerer gjeldende dato for Dynamics 365 for Operations-økten som en datoverdi.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
-| SESSIONNOW ()                              | Returnerer gjeldende dato og klokkeslett for Dynamics 365 for Operations-økten som en verdi for dato og klokkeslett.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
-| DATEFORMAT (dato, format)                  | Returnerer strengrepresentasjon av dato ved hjelp av angitt format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-åååå")** returnerer gjeldende dato for Dynamics 365 for Operations-økten 12/24/2015 som “**24-12-2015**” i henhold til det angitte egendefinerte formatet.                                                                                                                      |
-| DATEFORMAT (dato, format, kultur)         | Konverter den angitte datoverdien til en streng i angitt format og [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerer gjeldende dato for Dynamics 365 for Operations-økten, 12/24/2015, som **"24.12.2015"**, i henhold til den valgte tyske kulturen.                                                                                                                       |
+| DATETIMEFORMAT (dato/klokkeslett, format)          | Konverter den angitte dato-/klokkeslettverdien til en streng i det angitte formatet. (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)                                                                        | **DATETIMEFORMAT (NOW(), "dd-MM-åååå")** returnerer gjeldende dato for Finance and Operations-programserveren, 12/24/2015, som **"24-12-2015"**, i henhold til det angitte egendefinerte formatet.                                                                                                          |
+| DATETIMEFORMAT (dato/klokkeslett, format, kultur) | Konverter den angitte dato-/klokkeslettverdien til en streng i angitt format og [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** returnerer gjeldende dato for Finance and Operations-programserveren, 12/24/2015, som **"24.12.2015"**, i henhold til den valgte tyske kulturen.                                                                                                             |
+| SESSIONTODAY ()                            | Returnerer gjeldende dato og klokkeslett for Dynamics 365 for Finance and Operations-økten som en datoverdi.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
+| SESSIONNOW ()                              | Returnerer gjeldende dato og klokkeslett for Dynamics 365 for Finance and Operations-økten som en verdi for dato og klokkeslett.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
+| DATEFORMAT (dato, format)                  | Returnerer strengrepresentasjon av dato ved hjelp av angitt format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-åååå")** returnerer gjeldende dato for Dynamics 365 for Finance and Operations-økten 12/24/2015 som “**24-12-2015**” i henhold til det angitte egendefinerte formatet.                                                                                                                      |
+| DATEFORMAT (dato, format, kultur)         | Konverter den angitte datoverdien til en streng i angitt format og [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** returnerer gjeldende dato for Finance and Operations-økten, 12/24/2015, som **"24.12.2015"**, i henhold til den valgte tyske kulturen.                                                                                                                       |
+| DAYOFYEAR (dato)              | Returnerer heltallsrepresentasjon av antall dager mellom 1. januar og den angitte datoen.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-ÅÅÅÅ"))** returnerer **61**.
+**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-ÅÅÅÅ"))** returnerer **1**.                                                                                                                       |
 
-### <a name="list-functions"></a>Listefunksjoner
+**Datakonversjonsfunksjoner**
+
+| Funksjon                                   | beskrivelse                                                                                                                                                                                                                                                                                                                                                      | Eksempel                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DATETODATETIME (dato)                 | Konverter den angitte datoverdien til en dato-/klokkeslettverdi.           | **DATETODATETIME (CompInfo. "getCurrentDate()')** returnerer den gjeldende Finance and Operations-øktens dato12/24/2015, som **12/24/2015 12:00:00 AM**. I dette eksemplet er **CompInfo** en ER-datakilde av typen **Finance and Operations/tabell** som refererer til **CompanyInfo**-tabellen.                                                                                                                       |
+| DATEVALUE (streng, format)              | Returnerer datarepresentasjon av en streng ved hjelp av et angitt format.       | **DATEVALUE ("21-DES-2016", "dd-MMM-åååå")** returnerer dato 12/21/2016 i henhold til angitte egendefinerte formatet og standardprogrammets **EN-US**-kultur.                                                                                                                       |
+| DATEVALUE (streng, format, kultur)              | Returnerer datorepresentasjon av en streng ved hjelp av angitt format og kultur       | **DATEVALUE ("21-Gen-2016", "dd-MMM-åååå", "IT")** returnerer datoen 01/21/2016 i henhold til angitt egendefinert format og kultur. Det vil oppstå et unntak for dette funksjonskallet, **DATEVALUE ("21-Gen-2016", "dd-MMM-åååå", "EN-US")** som informerer om ag en angitt streng ikke gjenkjennes som en gyldig dato.                                                                                                                       |
+| DATETIMEVALUE (streng, format)              | Returnerer dato-/klokkeslettrepresentasjon av en streng ved hjelp av et angitt format.       | **DATETIMEVALUE ("21-DES-2016 02:55:00", "dd-MMM-åååå: hh:mm:ss")** returnerer 2:55:00: AM den 21 DES 2016 i henhold til angitt egendefinert format og standardprogrammets **EN-US**-kultur.                                                                                                                       |
+| DATETIMEVALUE (streng, format, kultur)              | Returnerer dato-/klokkeslettrepresentasjon av en streng ved hjelp av angitt format og kultur.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-åååå: hh:mm:ss", "IT")** returnerer 2:55:00: AM den 21 DES 2016 i henhold til angitt et egendefinert format og kultur. Det vil oppstå et unntak for dette funksjonskallet, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-åååå hh:mm:ss", "EN-US")** som informerer om at en angitt streng ikke gjenkjennes som et gyldig klokkeslett.                                                                                                                       |
+### Listefunksjoner
+<a id="list-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -325,17 +364,19 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 </tbody>
 </table>
 
-### <a name="logical-functions"></a>Logiske funksjoner
+### Logiske funksjoner
+<a id="logical-functions" class="xliff"></a>
 
 | Funksjon                                                                                | beskrivelse                                                                                                                                                                                                                                                                     | Eksempel                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CASE (uttrykk, alternativ 1, resultat 1 \[, alternativ 2, resultat 2\] ... \[, standardresultat\]) | Evaluer den angitte uttrykksverdien mot de angitte alternative alternativene. Returner resultatet av alternativet som er lik verdien for uttrykket. Hvis ikke, returner det valgfrie angitte standardresultatet (den siste parameteren som ikke innledes av et alternativ). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "VINTER", "11", "VINTER", "12", "VINTER", "")** returnere strengen **"VINTER"** når gjeldende dato for Dynamics 365 for Operations-økten er mellom oktober og desember. Ellers returneres en tom streng. |
+| CASE (uttrykk, alternativ 1, resultat 1 \[, alternativ 2, resultat 2\] ... \[, standardresultat\]) | Evaluer den angitte uttrykksverdien mot de angitte alternative alternativene. Returner resultatet av alternativet som er lik verdien for uttrykket. Hvis ikke, returner det valgfrie angitte standardresultatet (den siste parameteren som ikke innledes av et alternativ). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "VINTER", "11", "VINTER", "12", "VINTER", "")** returnere strengen **"VINTER"** når gjeldende dato for Finance and Operations-økten er mellom oktober og desember. Ellers returneres en tom streng. |
 | IF (betingelse, verdi 1, verdi 2)                                                        | Returner den angitte verdien 1 når den gitte betingelsen er oppfylt. Hvis ikke returner verdi 2. Hvis verdien 1 og verdien 2 er poster eller postlister, vil resultatet bare inneholde feltene som finnes i begge listene.                                                                     | **IF (1=2, "betingelsen er oppfylt", "betingelsen er ikke oppfylt")** returnerer strengen **"betingelse er ikke oppfylt"**.                                                                                                                                                      |
 | NOT (betingelse)                                                                         | Returner den omvendte logiske verdien til den angitte betingelsen.                                                                                                                                                                                                                   | **NOT (SANN)** returnerer **USANN**.                                                                                                                                                                                                                            |
 | AND (betingelse 1\[, betingelse 2, ...\])                                                 | Returnerer **SANN** hvis *alle* angitte betingelser er oppfylt. Hvis ikke, returnes **USANN**.                                                                                                                                                                                            | **AND (1=1, "a"="a")** returnerer **SANN**. **AND (1=2, "a"="a")** returnerer **USANN**.                                                                                                                                                                           |
 | OR (betingelse 1\[, betingelse 2, ...\])                                                  | Returnerer **USANN** hvis *alle* angitte betingelser ikke er oppfylt. Returnerer **SANN** hvis *en* angitt betingelse er oppfylt.                                                                                                                                                                 | **OR (1=2, "a"="a")** returnerer **SANN**.                                                                                                                                                                                                                      |
 
-### <a name="mathematical-functions"></a>Matematiske funksjoner
+### Matematiske funksjoner
+<a id="mathematical-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -394,14 +435,29 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 </tbody>
 </table>
 
-### <a name="record-functions"></a>Registreringsfunksjoner
+**Datakonversjonsfunksjoner**
 
-| Funksjon             | Beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
+| Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| VALUE (streng) | Konverter den angitte strengen til et tall. Komma og punktum-tegn (.) regnes som desimalskilletegn, og en foranstilt bindestrek (-) brukes som negativt fortegn. Hvis det finnes andre ikke-numeriske tegn i den angitte strengen, oppstår det en feil.                                                                                  | **VALUE ("1 234,56")** genererer et unntak.   |
+| NUMBERVALUE (streng, desimaltegn, skilletegn for siffergruppering) | Konverter den angitte strengen til et tall. Det angitte symbolet brukes til å skille heltall og deler av et desimaltall, og det angitte tusenskilletegnet brukes også.                                                                                  | **NUMBERVALUE("1 234,56", ",", " ")** returnerer verdien **1234.56**.    |
+| INTVALUE (streng) | Returnerer heltallsrepresentasjon av en streng. Tilgjengelige desimaldeler avkortes.                                                                                  | **INTVALUE ("100,77")** returnerer **100**. |
+| INTVALUE (tall) | Returnerer heltallsrepresentasjon av et nummer. Tilgjengelige desimaldeler avkortes.                                                                                  | **INTVALUE ("-100,77")** returnerer **-100**. |
+| INT64VALUE (streng) | Returnerer int64-representasjon av en streng. Tilgjengelige desimaldeler avkortes.                                                                                  | **INT64VALUE (“22565422744”)** returnerer **22565422744**. |
+| INT64VALUE (tall) | Returnerer int64-representasjon av et nummer. Tilgjengelige desimaldeler avkortes.                                                                                  | **INT64VALUE (“22565422744,00”)** returnerer **22565422744**. |
+
+
+
+### Registreringsfunksjoner
+<a id="record-functions" class="xliff"></a>
+
+| Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NULLCONTAINER (liste) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten. **Obs!**  Denne funksjonen er foreldet. Bruk **EMPTYRECORD** i stedet.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
-| EMPTYRECORD (post) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten. **Obs!**  En **null**post er en post der alle felt har en tom verdi (**0** \[null\] for tall, en tom streng for strenger og så videre). | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen.   |
+| EMPTYRECORD (post) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten. **Obs!**  En **null** post er en post der alle felt har en tom verdi (**0** \[null\] for tall, en tom streng for strenger og så videre). | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen.   |
 
-### <a name="text-functions"></a>Tekstfunksjoner
+### Tekstfunksjoner
+<a id="text-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -469,29 +525,29 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 </tr>
 <tr class="odd">
 <td>TEXT (inndata)</td>
-<td>Returner angitte inndata, som konverteres til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for den gjeldende forekomsten av Dynamics 365 for Operations. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
-<td>Hvis serverinnstillingen for Dynamics 365 for Operations-forekomsten er definert som <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returneres gjeldende dato for Dynamics 365 Operations-økten, 12/17/2015, som tekststrengen <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returnerer <strong>&quot;0.33&quot;</strong>.</td>
+<td>Returner angitte inndata, som konverteres til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for den gjeldende forekomsten av Finance and Operations. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
+<td>Hvis de nasjonale innstillingene for Finance and Operations-forekomstens server er definert som <strong>EN-US</strong>, returnerer <strong>TEXT (NOW ())</strong> gjeldende dato for Finance and Operations-økten, 12/17/2015, som tekststrengen <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returnerer <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>FORMAT (streng 1, streng 2 [, streng, 3, ...])</td>
 <td>Returner den angitte strengen, som formateres ved hjelp av forekomster av <strong>%N</strong> med det <em>n</em>-te argumentet. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
 <td>I dette eksemplet returnerer <strong>PaymentModel</strong>-datakilden listen over kundeposter via <strong>Kunder</strong>-komponenten og behandlingsdatodatoverdien via <strong>ProcessingDate</strong>-feltet. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> I ER-formatet som er utformet for å generere en elektronisk fil for utvalgte kunder, velges <strong>PaymentModel</strong> som en datakilde og styrer prosessflyten. Et unntak for sluttbrukere iverksettes når en valgt kunde stoppes for datoen da rapporten behandles. Formelen som er utviklet for denne typen behandlingskontroll kan bruke følgende ressurser:
 <ul>
-<li>Dynamics 365 for Operations-etiketten SYS70894, som har følgende tekst:
+<li>Finance and Operations-etiketten SYS70894, som har følgende tekst:
 <ul>
 <li><strong>For EN-US-språk:</strong> &quot;Nothing to print&quot;</li>
 <li><strong>For DE-språk:</strong> &quot;Nichts zu drucken&quot;</li>
 </ul></li>
-<li>Dynamics 365 for Operations-etiketten SYS18389, som har følgende tekst:
+<li>Finance and Operations-etiketten SYS18389, som har følgende tekst:
 <ul>
 <li><strong>For EN-US-språk:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
 <li><strong>For DE-språk:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
-Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) Hvis en rapport behandles for <strong>Litware Retail-kunden</strong> 17. desember 2015 i <strong>EN-US</strong>-kulturen og <strong>EN-US</strong>-språket, returnerer denne formelen teksten nedenfor, som kan vises som en unntaksmelding for sluttbrukeren: &quot;Ingenting å skrive ut. Litware Retail-kunden stoppes for 12/17/2015.&quot; Hvis den samme rapporten behandles for <strong>Litware Retail-kunden</strong> 17. desember 2015, i <strong>DE</strong>-kulturen og <strong>DE</strong>-språket, returnerer denne formelen følgende tekst som bruker et annet datoformat: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Obs!</strong>  Følgende syntaks brukes i ER-formler for etiketter:
+Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) Hvis en rapport behandles for <strong>Litware Retail-kunden</strong> 17. desember 2015 i <strong>EN-US</strong>-kulturen og <strong>EN-US</strong>-språket, returnerer denne formelen teksten nedenfor, som kan vises som en unntaksmelding for sluttbrukeren: &quot;Ingenting å skrive ut. Litware Retail-kunden stoppes for 12/17/2015.&quot; Hvis den samme rapporten behandles for <strong>Litware Retail-kunden</strong> 17. desember 2015, i <strong>DE</strong>-kulturen og <strong>DE</strong>-språket, returnerer denne formelen følgende tekst som bruker et annet datoformat: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Merk:</strong> Følgende syntaks brukes i ER-formler for etiketter:
 <ul>
-<li><strong>For etiketter fra Dynamics 365 for Operations-ressurser:</strong> <strong>@&quot;X&quot;</strong>, der X er etikett-ID-en i applikasjonsobjekttreet (AOT)</li>
-<li><strong>For etiketter som ligger i ER-konfigurasjoner:</strong> <strong>@&quot;ER_LABEL:X&quot;</strong>, der X er etikett-ID-en i ER-konfigurasjonen</li>
+<li><strong>For etiketter fra Finance and Operations-ressurser:</strong> <strong>@&quot;X&quot;</strong>, der X er etikett-ID-en i applikasjonsobjekttreet (AOT)</li>
+<li><strong>For etiketter som ligger i ER-konfigurasjoner:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, der X er etikett-ID-en i ER-konfigurasjonen</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -501,7 +557,7 @@ Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &q
 </tr>
 <tr class="even">
 <td>NUMERALSTOTEXT (tall, språk, valuta, flagg for utskrift av valutanavn, desimaler)</td>
-<td>Returnerer nummeret stavet (konvertert) til tekststrenger i det definerte språket. Språkkoden er valgfri: Når den er definert som tom streng, brukes språkkoden for kjørekontekst (definert for generering mapper og filer) i stedet. Valutakoden er valgfri. Når den er definert som tom streng, hentes firmavalutaen. Merk at parameteren <strong>Skriv ut valutanavn</strong> og parameteren <strong>Desimaler</strong> bare analyseres for følgende språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, <strong>RU</strong>. Merk at parameteren <strong>Skriv ut valutanavn</strong> bare analyseres for Dynamics 365 for Operations-firmaer med landkontekst som støtter valutanedgangen.</td>
+<td>Returnerer nummeret stavet (konvertert) til tekststrenger i det definerte språket. Språkkoden er valgfri: Når den er definert som tom streng, brukes språkkoden for kjørekontekst (definert for generering mapper og filer) i stedet. Valutakoden er valgfri. Når den er definert som tom streng, hentes firmavalutaen. Merk at parameteren <strong>Skriv ut valutanavn</strong> og parameteren <strong>Desimaler</strong> bare analyseres for følgende språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, <strong>RU</strong>. Merk at parameteren <strong>Skriv ut valutanavn</strong> bare analyseres for Finance and Operations-firmaer med landkontekst som støtter valutanedgangen.</td>
 <td>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, usann, 2) returnerer “One Thousand Two Hundred Thirty Four and 56” NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, usann, 0) returnerer “Sto dwadzieścia” NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, sann, 2) returnerer “Сто двадцать евро 21 евроцент”</td>
 </tr>
 <tr class="odd">
@@ -509,63 +565,70 @@ Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &q
 <td>Returnerer en streng med en angitt lengde der begynnelsen av gjeldende streng fylles ut med angitte tegn.</td>
 <td>PADLEFT (“1234”, 10, “ “) returnerer tekststrengen “      1234”</td>
 </tr>
+<tr class="even">
+<td>TRIM (streng)</td>
+<td>Returnerer angitt tekst etter avkorting av innledende og etterfølgende mellomrom og fjerner flere mellomrom mellom ord. </td>
+<td><strong>TRIM ("     Eksempeltekst")</strong> returnerer <strong>"Eksempeltekst".</strong></td>
+=======
+<td>GETENUMVALUEBYNAME (bane til kilde for opplistingsdata, tekst i etikett for opplistingsverdi)</td>
+<td>Returnerer en verdi for en bestemt kilde for opplistingsdata med angitt tekst for denne etiketten for opplisting.</td>
+<td>Følgende eksempel viser opplistingen ReportDirection i en datamodell. Legg merke til at etiketter er definert for opplistingsverdier.
+Følgende eksempler viser:
+<ul><li>Modellopplisting <strong>ReportDirection</strong> satt inn i en rapport som en datakilde <strong>$Direction</strong></li>
+<li>ER-uttrykk <strong>$IsArrivals</strong> utformet for å bruke modellopplisting som parameter for denne funksjonen. Verdien til dette uttrykket er <strong>SANN</strong></li></ul></td>
+</tr>
 </tbody>
 </table>
 
-### <a name="data-collection-functions"></a>Datainnsamlingsfunksjoner
+**Datakonversjonsfunksjoner**
 
-Funksjon
+| Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| TEXT (inndata) | Returner angitte inndata, som konverteres til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for den gjeldende forekomsten av Finance and Operations.
+For verdier for real-typen begrenses strengkonverteringen til to desimalplasser.| Hvis de nasjonale innstillingene for Finance and Operations-forekomstens server er definert som **EN-US, returnerer TEXT (NOW ())** gjeldende dato for Finance and Operations-økten, 12/17/2015, som tekststrengen **12/17/2015 07:59:23 AM**.
+**TEXT (1/3) returnerer "0,33"**. |
+| QRCODE (streng) | Returnerer QR-kodebilde i base64-binærformat for en gitt streng. | **QRCODE ("eksempeltekst")** returnerer **U2FtcGxlIHRleHQ =**.   |
 
-beskrivelse
+### Datainnsamlingsfunksjoner
+<a id="data-collection-functions" class="xliff"></a>
 
-Eksempel
+| Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| FORMATELEMENTNAME () | Returnerer navnet på elementet til det gjeldende formatet. Returnerer tom streng når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av.| Se oppgaveveiledningen **ER Bruke data med formatet utdata for telling og summering** (en del av forretningsprosessen **Anskaffe/utvikle komponenter for IT-tjeneste/-løsning**) for å lære mer om bruk av disse funksjonene. |
+| SUMIFS (nøkkelstreng for summering, kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) |Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. |            |
+| SUMIF (nøkkelstreng for summering, kriterieområdestreng, kriterieverdistreng) | Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert.|           |
+| COUNTIFS (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert.|     |
+| COUNTIF (områdekriteriestreng, kriterieverdistreng) | Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller den angitte betingelsen (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert.|          |
+| COLLECTEDLIST (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returnerer en liste over nodeverdier for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en tom liste når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av.|               |   
 
-FORMATELEMENTNAME ()
 
-Returnerer navnet på elementet til det gjeldende formatet. Returnerer tom streng når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av.
 
-Se oppgaveveiledningen **ER Bruke data med formatet utdata for telling og summering** (en del av forretningsprosessen **Anskaffe/utvikle komponenter for IT-tjeneste/-løsning**) for å lære mer om bruk av disse funksjonene.
 
-SUMIFS (nøkkelstreng for summering, kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
-
-Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
-
-SUMIF (nøkkelstreng for summering, kriterieområdestreng, kriterieverdistreng)
-
-Returnerer en sum av nodeverdier (med navnet som er definert som en nøkkel) for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
-
-COUNTIFS (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
-
-Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
-
-COUNTIF (områdekriteriestreng, kriterieverdistreng)
-
-Returnerer antallet noder for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller den angitte betingelsen (område og verdi). Returnerer en nullverdi når flagget **Samle inn utdatadetaljer**for de gjeldende filene er deaktivert.
-
-COLLECTEDLIST (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\])
-
-Returnerer en liste over nodeverdier for XML, som har blitt samlet inn i løpet av denne formatkjøringen, og som oppfyller de angitte betingelsene (område og verdi). Returnerer en tom liste når flagget **Samle inn utdatadetaljer**for de gjeldende filene er slått av.
-
-### <a name="other-business-domainspecific-functions"></a>Andre funksjoner (spesifikke for forretningsområder)
+### Andre funksjoner (spesifikke for forretningsområder)
+<a id="other-business-domainspecific-functions" class="xliff"></a>
 
 | Funksjon                                                                         | beskrivelse                                                                                                                                                                                                                                                        | Eksempel                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CONVERTCURRENCY (beløp, kildevaluta, målvaluta, dato, firma)        | Konverter det angitte pengebeløpet fra kildevalutaen til målvalutaen ved å bruke innstillingene for det aktuelle Dynamics 365 for Operations-firmaet på den angitte datoen.                                                                            | **CONVERTCURRENCY (1, "EUR", "NOK", TODAY(), "DEMF")** returnerer tilsvarende én euro i amerikanske dollar på gjeldende øktdato, basert på innstillingene for DEMF-firmaet.                                                                                                                                  |
-| ROUNDAMOUNT (tall, desimaler, avrundingsregel)                                       | Avrunder det angitte beløpet i henhold til den angitte avrundingsregelen og det angitte antallet desimalplasser. **Obs!**  Avrundingaregelen må være angitt som en verdi av **RoundOffType**-opplistingen i Dynamics 365 for Operations.                          | Hvis parameteren **model.RoundOff** er satt til ****Downward****, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.78**. Hvis parameteren **model.RoundOff** er satt til **Normal** eller **Avrundes opp**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.79**. |
+| CONVERTCURRENCY (beløp, kildevaluta, målvaluta, dato, firma)        | Konverter det angitte pengebeløpet fra kildevalutaen til målvalutaen ved å bruke innstillingene for det aktuelle Finance and Operations-firmaet på den angitte datoen.                                                                            | **CONVERTCURRENCY (1, "EUR", "NOK", TODAY(), "DEMF")** returnerer tilsvarende én euro i amerikanske dollar på gjeldende øktdato, basert på innstillingene for DEMF-firmaet.                                                                                                                                  |
+| ROUNDAMOUNT (tall, desimaler, avrundingsregel)                                       | Avrunder det angitte beløpet i henhold til den angitte avrundingsregelen og det angitte antallet desimalplasser. **Obs!**  Avrundingaregelen må være angitt som en verdi av **RoundOffType**-opplistingen i Finance and Operations.                          | Hvis parameteren **model.RoundOff** er satt til ****Downward****, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.78**. Hvis parameteren **model.RoundOff** er satt til **Normal** eller **Avrundes opp**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.79**. |
 | CURCredRef (sifre)                                                              | Returner en kreditorreferanse basert på sifrene i det angitte fakturanummeret.                                                                                                                                                                                  | **CURCredRef ("VEND-200002")** returnerer **"2200002"**.                                                                                                                                                                                                                                                         |
 | MOD\_97 (sifre)                                                                 | Returner en kreditorreferanse som et MOD97-uttrykk basert på sifrene i det angitte fakturanummeret.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** returnerer **"20000285"**.                                                                                                                                                                                                                                                           |
 | ISOCredRef (sifre)                                                              | Returner en ISO-kreditorreferanse basert på sifrene og de alfabetiske symbolene i det angitte fakturanummeret. **Obs!**  Inndataparameteren må oversettes før den sendes til denne funksjonen for å eliminere symboler fra bokstaver som ikke er ISO-kompatible. | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
 | CN\_GBT\_AdditionalDimensionID (streng, tall)                                  | Hent ekstra finansdimensjons-ID. Dimensjoner er representert i denne strengen som IDer atskilt med komma. Tall definerer seriekoden for den forespurte dimensjonen i denne strengen.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) returnerer “CC”                                                                                                                                                                                                                                      |
-| GetCurrentCompany ()                                                             | Returnerer koden for det gjeldende firmaet som er loggført.                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                               |
+| GetCurrentCompany ()                                                             | Returnerer tekstrepresentasjon av en kode for en juridisk enhet (firma) som en bruker nettopp logget på.                                                                                                                                                                                                                    | **GETCURRENTCOMPANY ()** returnerer **USMF** for en bruker som er logget på Finance and Operations-firmaet **Contoso Entertainment System USA**.                                                                                                                                                                                                                                                                                                              |
 | CH\_BANK\_MOD\_10 (sifre)                                                       | Returnerer en kreditorreferanse som et MOD10-uttrykk basert på sifrene i det angitte fakturanummeret.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") returnerer 3                                                                                                                                                                                                                                                                   |
 | FA\_SUM (anleggsmiddelkode, verdimodellkode, startdato, sluttdato)               | Returnerer den klargjorte databeholderen for et anleggsmiddelbeløp for en periode.                                                                                                                                                                                         | FA\_SUM ("COMP-000001", “Current”, Date1, Date2) returnerer den klargjorte databeholderen for anleggsmidlet "COMP-000001" med verdimodellen “Gjeldende” for en periode fra Date1 til Date2.                                                                                                                        |
-| FA\_BALANCE (anleggsmiddelkode, verdimodellkode, rapporteringsår, rapporteringsdato) | Returnerer den klargjorte databeholderen for faste anleggsmiddelsaldoer. Rapporteringsår må angis som en verdi for Dynamics-365 for Operations-opplistingen **AssetYear**.                                                                                           | FA\_SUM ("COMP 000001", "Gjeldende", AxEnumAssetYear.ThisYear, SESSIONTODAY ()) returnerer den klargjorte databeholderen for saldoer for anleggsmidlet "COMP-000001" med verdimodellen "Gjeldende" på den gjeldende datoen for 365 for Operations-økten.                                                                |
+| FA\_BALANCE (anleggsmiddelkode, verdimodellkode, rapporteringsår, rapporteringsdato) | Returnerer den klargjorte databeholderen for faste anleggsmiddelsaldoer. Rapporteringsår må angis som en verdi for Finance and Operations-opplistingen **AssetYear**.                                                                                           | FA\_SUM ("COMP 000001", "Gjeldende", AxEnumAssetYear.ThisYear, SESSIONTODAY ()) returnerer den klargjorte databeholderen for saldoer for anleggsmidlet "COMP-000001" med verdimodellen "Gjeldende" på den gjeldende datoen for 365 for Finance and Operations-økten.                                                                |
+| TABLENAME2ID (streng)                                                       | Returnerer heltallsrepresentasjon for en tabell-ID for et angitt tabellnavn.                                                                                                                                                                      | **TABLENAME2ID ("Intrastat")** returnerer **1510**.                                                                                                                                                                                                                                                                   |
+| ISVALIDCHARACTERISO7064 (streng)                                                       | Returnerer den boolske verdien **SANN** når en angitt streng representerer et gyldig internasjonalt bankkontonummer (IBAN). Returnerer ellersk en boolsk **USANN**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerer **SANN**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerer **USANN**.                                                                                                                                                                                                                                                                   |
 
-### <a name="functions-list-extension"></a>Funksjonslisteutvidelse
+### Funksjonslisteutvidelse
+<a id="functions-list-extension" class="xliff"></a>
 
 ER lar deg utvide listen over funksjoner som brukes i ER-uttrykk. Det er nødvendig med noe utvikling. Hvis du vil ha mer informasjon, kan du se [Utvide listen over elektroniske rapporteringsfunksjoner](general-electronic-reporting-formulas-list-extension.md).
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)

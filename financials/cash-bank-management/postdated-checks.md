@@ -1,16 +1,16 @@
 ---
 title: Etterdaterte sjekker
-description: "Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen."
+description: "Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21741
 ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 ms.search.region: Global
@@ -18,22 +18,23 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c3e59ae5126cd21e668459686133ba8bcf728df3
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="postdated-checks"></a>Etterdaterte sjekker
+# Etterdaterte sjekker
+<a id="postdated-checks" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
+Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
 
-Microsoft Dynamics 365 for Operations støtter hele forvaltningssyklusen for etterdaterte sjekker i både Kunder og Leverandører, som vist i følgende tabell.
+Microsoft Dynamics 365 for Finance and Operations støtter hele forvaltningssyklusen for etterdaterte sjekker i både Kunder og Leverandører, som vist i følgende tabell.
 <table>
 <colgroup>
 <col width="50%" />
@@ -74,8 +75,8 @@ Hvis den opprinnelige sjekken til en leverandør eller kunde blir mistet eller s
 <tr class="odd">
 <td>Avbryte en etterdatert sjekk for en leverandør</td>
 <td>Du kan avbryte en postert etterdatert sjekk i disse situasjonene: – Sjekken returneres av banken.
-– Sjekken brukes på feil faktura.
-– Det er gjort en kontantbetaling mot sjekken.
+- Sjekken brukes på feil faktura.
+- Det er gjort en kontantbetaling mot sjekken.
 </td>
 </tr>
 <tr class="even">

@@ -3,7 +3,7 @@ title: Oversikt over bankkontoutdrag og betalingsavstemming for EU
 description: "Dette emnet gir en oversikt over funksjonaliteten som du kan bruke til å avstemme betalingsinformasjon fra banker i formatene som brukes av europeiske land."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,45 +18,50 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c59bec4493612f7cd62ca3ed9583e400ccda32c6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5e4f3fdce97cf05a8f54873cd8d80364b1505bd3
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="bank-statement-and-payment-reconciliation-overview-for-the-eu"></a>Oversikt over bankkontoutdrag og betalingsavstemming for EU
+# Oversikt over bankkontoutdrag og betalingsavstemming for EU
+<a id="bank-statement-and-payment-reconciliation-overview-for-the-eu" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet gir en oversikt over funksjonaliteten som du kan bruke til å avstemme betalingsinformasjon fra banker i formatene som brukes av europeiske land.
 
-I Microsoft Dynamics 365 for Operations kan du importere transaksjoner fra banker og utligne disse transaksjonene mot eksisterende transaksjoner. I Europa kan du gjøre dette for følgende scenarier:
+I Microsoft Enterprise-utgaven av Dynamics 365 for Finance and Operations kan du importere transaksjoner fra banker og utligne disse transaksjonene mot eksisterende transaksjoner. I Europa kan du gjøre dette for følgende scenarier:
 
 -   Import av bankkontoutdrag
 -   Import av betalinger.
 -   Import av returfiler.
 
-## <a name="bank-statements"></a>Bankkontoutdrag
-A *bankkontoutdrag* eller *kontoutdrag* er et sammendrag av økonomiske transaksjoner som har forekommet i en gitt periode på en bankkonto som holdes av et firma med en finansinstitusjon. Du kan importere et bankkontoutdrag i Dynamics 365 for Operations. Det er viktig å utligne importerte transaksjoner med eksisterende transaksjoner, i tillegg til å kontrollere start- og sluttsaldoen for bankkontoene. Følgende liste inneholder de europeiske formatene som støttes.
+## Bankkontoutdrag
+<a id="bank-statements" class="xliff"></a>
+A *bankkontoutdrag* eller *kontoutdrag* er et sammendrag av økonomiske transaksjoner som har forekommet i en gitt periode på en bankkonto som holdes av et firma med en finansinstitusjon. Du kan importere et bankkontoutdrag i Finance and Operations. Det er viktig å utligne importerte transaksjoner med eksisterende transaksjoner, i tillegg til å kontrollere start- og sluttsaldoen for bankkontoene. Følgende liste inneholder de europeiske formatene som støttes.
 
 -   Europeiske filformater for avansert bankavstemming. Hvis du vil ha mer informasjon, se [Oversikt over avansert bankavstemming](../cash-bank-management/advanced-bank-reconciliation-overview.md).
 -   ISO 20022 camt.053 filformat for bankkontoutdrag
 -   Filformat for CODA-bankkontoutdrag. Hvis du vil ha mer informasjon, kan du se [CODA-bankkontoutdrag](emea-bel-coda-bank-statement-import.md).
 
-## <a name="customer-and-vendor-payments-import-and-return-messages"></a>Kunde- og leverandørbetalinger – import og returmeldinger
-I tillegg til et bankkontoutdrag kan banker gi bestemte meldinger som inneholder informasjon om kunde- og leverandørbetalinger, som kan importeres til Dynamics 365 for Operations og avstemmes med kunde- og leverandørtransaksjoner. Når et firma må motta informasjon om innkommende kundebetalingstransaksjoner fra banken, kan importformatene brukes. For firmaer som bruker direkte debet og kredittoverføring, kan returmeldinger mottas for å oppdatere status for betalinger som er eksportert tidligere. Forskjellen mellom importformater og returformater er at returer hovedsakelig brukes for å oppdatere allerede opprettede betalingsjournallinjer (de kan opprettes når direkte debet eller kreditoverføring ble startet) i stedet for å opprette nye linjer. Noen komplekse importformater kan også inkludere returscenarier. Eksemplet nedenfor viser hvordan denne inndelingen skal implementeres.
+## Kunde- og leverandørbetalinger – import og returmeldinger
+<a id="customer-and-vendor-payments-import-and-return-messages" class="xliff"></a>
+I tillegg til et bankkontoutdrag kan banker gi bestemte meldinger som inneholder informasjon om kunde- og leverandørbetalinger, som kan importeres til Finance and Operations og avstemmes med kunde- og leverandørtransaksjoner. Når et firma må motta informasjon om innkommende kundebetalingstransaksjoner fra banken, kan importformatene brukes. For firmaer som bruker direkte debet og kredittoverføring, kan returmeldinger mottas for å oppdatere status for betalinger som er eksportert tidligere. Forskjellen mellom importformater og returformater er at returer hovedsakelig brukes for å oppdatere allerede opprettede betalingsjournallinjer (de kan opprettes når direkte debet eller kreditoverføring ble startet) i stedet for å opprette nye linjer. Noen komplekse importformater kan også inkludere returscenarier. Eksemplet nedenfor viser hvordan denne inndelingen skal implementeres.
 
-##### <a name="import-formats"></a>Importformater
+##### Importformater
+<a id="import-formats" class="xliff"></a>
 
 -   ISO 20022 camt.054 bankvarslingsmelding
 -   [Nets-importformat](emea-nor-nets-import-format.md) - kompleks funksjon for norske betalingsformater
 -   Import av ESR-kundebetalinger
 -   Importere betalingsformatene for Sverige - BankGirot Max og BankGirot OCR-formater
 
-##### <a name="return-formats"></a>Returformater
+##### Returformater
+<a id="return-formats" class="xliff"></a>
 
 -   ISO 20022 pain.002 betalingsstatusrapport
 -   (DNK) BetalingsserviceBasis-returformat – Returformat for Betalingsservice-eksportformat for kunder

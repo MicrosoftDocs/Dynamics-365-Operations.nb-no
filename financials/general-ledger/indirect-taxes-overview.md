@@ -3,7 +3,7 @@ title: Oversikt over merverdiavgift
 description: Denne artikkelen inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,22 +19,26 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
+# Oversikt over merverdiavgift
+<a id="sales-tax-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Denne artikkelen inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 
-<a name="overview"></a>Oversikt
+Oversikt
+<a id="overview" class="xliff"></a>
 --------
 
 Merverdiavgiftsrammeverket støtter mange typer indirekte avgifter, blant annet skatter, merverdiavgift (mva), mva for varer og tjenester (GST), enhetsbaserte gebyrer og kildeskatt. Disse avgiftene beregnes og dokumenteres under transaksjoner for innkjøp og salg. De må regelmessig rapporteres og betales til skattemyndighetene. 
@@ -67,17 +71,20 @@ Tabellen nedenfor beskriver enhetene og rekkefølgen for mva-oppsettet.
 | Definere mva-grupper for vare.                                   | Obligatorisk. Mva-gruppen for vare inneholder en liste over salgskoder som gjelder for ressursen (produkt, tjeneste og så videre) for en transaksjon. For en gitt transaksjon fastsetter skjæringspunktet for mva-koder i mva-gruppen og mva-gruppen for vare mva-kodene som gjelder for transaksjonen. |
 | Definer mva-parametere på programparametersidene. | Obligatorisk. Ulike områder, for eksempel Økonomimodul, Kunde og Leverandør, må sette opp parametere for korrekt beregning av indirekte avgifter. Selv om de fleste av disse parameterne har standardverdier, må de endres for å tilpasses kravene i hvert enkelt firma.                                          |
 
-## <a name="sales-tax-on-transactions"></a>Merverdiavgift på transaksjoner
+## Merverdiavgift på transaksjoner
+<a id="sales-tax-on-transactions" class="xliff"></a>
 På hver transaksjon (salg/kjøp-dokumentlinjer, journaler og så videre), må du angi en mva-gruppe og en mva-gruppe for vare for å beregne merverdiavgift. Standardgrupper angis i hoveddata (for eksempel kunde, leverandør, vare og innkjøpskategori), men du kan endre gruppene i en transaksjon manuelt om nødvendig. Begge gruppene inneholder en liste over mva-koder, og skjæringspunktet mellom de to listene med mva-koder bestemmer listen over aktuelle mva-koder for transaksjonen. 
 
 For hver transaksjon kan du slå opp den beregnede merverdiavgiften ved å åpne **Mva-transaksjon**-siden. Du kan slå opp merverdiavgiften for en dokumentlinje eller for hele dokumentet. Du kan justere den beregnede merverdiavgiften for bestemte dokumenter (for eksempel leverandørfaktura og økonomijournaler) hvis det opprinnelige dokumentet viser beløp som er avvikende.
 
-## <a name="sales-tax-settlement-and-reporting"></a>Mva-utligning og -rapportering
-Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Microsoft Dynamics 365 for Operations inneholder funksjonalitet som lar deg utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
+## Mva-utligning og -rapportering
+<a id="sales-tax-settlement-and-reporting" class="xliff"></a>
+Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations inneholder funksjonalitet som lar deg utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
 
 Etter at merverdiavgiften er betalt skal saldoen på mva-oppgjørskontoen balanseres mot bankkontoen. Hvis skattemyndigheten som er angitt for utligningsperioden for merverdiavgift, er knyttet til en leverandørkonto, posteres mva-saldoen som en åpen leverandørfaktura og kan inkluderes i det vanlige betalingsforslaget.
 
-## <a name="conditional-sales-tax"></a>Betinget mva.
+## Betinget mva.
+<a id="conditional-sales-tax" class="xliff"></a>
 Betinget merverdiavgift er en merverdiavgift som betales proporsjonalt til det faktiske beløpet som betales på en faktura. Standard merverdiavgift beregnes derimot på faktureringstidspunktet. Betinget merverdiavgift må betales til skattemyndighetene ved betalingsposteringen, og ikke ved fakturapostering. Når fakturaen posteres, må transaksjonen rapporteres i sales tax book-rapporten. Transaksjonen må imidlertid utelates fra mva-betalingsrapporten. 
 
 Hvis du merker av for Betinget mva. i parameterskjemaet for økonomimodulen, kan ingen merverdiavgift trekkes fra før du har betalt fakturaen. Dette er et lovefestet krav i noen land/områder.
@@ -85,7 +92,8 @@ Hvis du merker av for Betinget mva. i parameterskjemaet for økonomimodulen, kan
 > [!NOTE]
 > Når du merker av for Betinget mva., må du definere mva-koder og mva-grupper og opprette finansposteringsgrupper for å støtte funksjonen. |
 
-###  <a name="example"></a>Eksempel
+###  Eksempel
+<a id="example" class="xliff"></a>
 
 Du utligner merverdiavgift hver måned. Den 15. juni oppretter du en kundefaktura på EUR 10 000 pluss mva.
 -   Mva er 25 prosent eller 2 500.

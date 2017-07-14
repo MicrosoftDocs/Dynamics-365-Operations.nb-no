@@ -1,59 +1,66 @@
 ---
 title: "Mobilt arbeidsområde for kostnadskontroll"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll, som er tilgjengelig for Microsoft Dynamics 365 for Operations-mobilappen. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst."
+description: "Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
-ms.author: yuyus
+ms.author: aevengir
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dbedf75a6f61a9e2bc644056f0dd1e7499cedc42
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
+# Mobilt arbeidsområde for kostnadskontroll
+<a id="cost-controlling-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Dette emnet gir informasjon om det mobile arbeidsområdet **Kostnadskontroll**. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 
-Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll, som er tilgjengelig for Microsoft Dynamics 365 for Operations-mobilappen. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst. 
+Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-<a name="overview-of-the-cost-controlling-mobile-workspace"></a>Oversikt over det mobile arbeidsområdet for kostnadskontroll
--------------------------------------------------
+## Oversikt
+<a id="overview" class="xliff"></a>
+Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusen for individuelle kostnadselementer.
 
-Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusene for individuelle kostnadselementer. 
+En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte ber lederen om tillatelse til å delta på konferansen. Lederen åpner det mobile arbeidsområdet for **kostnadskontroll** på mobilenheten for å se om han/hun har budsjettert for at den ansatte kan delta på konferansen.
 
-En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte ber om lederen om tillatelse til å delta på konferansen. Lederen åpner det mobile arbeidsområdet for **kostnadskontroll** på mobilenheten for å se om han/hun har budsjettert for at den ansatte kan delta på konferansen.
+### Datasikkerhet
+<a id="data-security" class="xliff"></a>
+Dataene i arbeidsområdet for **kostnadskontroll** er sikret gjennom brukerlegitimasjon. Kostsenterledere kan bare se data for sitt eget kostsenter. Tilgangsnivåsikkerhet behandles i modulen **Kostnadsregnskap**.
 
-### <a name="data-security"></a>Datasikkerhet
+Regnskapsførere definerer konfigurasjonen av det mobile arbeidsområdet for **kostnadskontroll** i modulen **Kostnadsregnskap**. Etter at arbeidsområdet er publisert på mobilappen, er det tilgjengelig i appen. Dette sikrer at alle kostsenterledere i organisasjonen ser dataene i det samme formatet.
 
-Dataene i arbeidsområdet for **kostnadskontroll** er sikret gjennom brukerlegitimasjon. Kostsenterledere kan bare se data for sitt eget kostsenter. Tilgangsnivåsikkerhet behandles i modulen **Kostnadsregnskap**. 
-
-Regnskapsførere definerer konfigurasjonen av det mobile arbeidsområdet for **kostnadskontroll** i modulen **Kostnadsregnskap**. Når arbeidsområdet er publisert til Microsoft Dynamics-365 for Operations-mobilappen, er det tilgjengelig i appen. Dette sikrer at alle kostsenterledere i organisasjonen ser dataene i det samme formatet.
-
-### <a name="actions-views-and-links"></a>Handlinger, visninger og koblinger
-
-Mobilt arbeidsområde for **kostnadskontroll** for Dynamics 365 for Operations-appen gir følgende handlinger, visninger og koblinger:
+### Handlinger, visninger og koblinger
+<a id="actions-views-and-links" class="xliff"></a>
+Det mobile arbeidsområdet **Kostnadskontroll** har følgende handlinger, visninger og koblinger:
 
 -   **Handlinger:**
+
     -   Bruk **Velg konfigurasjon** for å velge et oppsett.
-    -   Bruk **Velg kostnadsobjekt** for å velge kostsentrene til å filtrere dataene på. **Merk:** Kostsentrene som vises i listen, avhenger av tilgangen som gis i modulen **Kostnadsregnskap**.
--   **Visninger:** Basert på handlingene som er valgt, og konfigurasjonen i modulen **Kostnadsregnskap**, kan du vise følgende informasjon på kortene.
+    -   Bruk **Velg kostnadsobjekt** for å velge kostsentrene til å filtrere dataene på.
+    
+        > [!NOTE]
+        > Kostsentrene som vises i listen, avhenger av tilgangen som gis i modulen **Kostnadsregnskap**.
+
+-   **Visninger:** Basert på handlingene som er valgt, og konfigurasjonen i modulen **Kostnadsregnskap**, kan du vise følgende informasjon på kortene:
+
     -   Faktisk i forhold til budsjett (gjeldende periode)
     -   Faktisk i forhold til revidert budsjett (gjeldende periode)
     -   Faktisk i forhold til budsjett (forrige periode)
@@ -62,24 +69,30 @@ Mobilt arbeidsområde for **kostnadskontroll** for Dynamics 365 for Operations-a
     -   Faktisk i forhold til revidert budsjett (hittil i år)
 
     Disse beløpene vises på hvert kort: faktisk, budsjett, avvik og varians %.
+
 -   **Koblinger:**
+
     -   Detaljer for gjeldende periode
     -   Detaljer for forrige periode
     -   Detaljer for hittil i år
 
-    Når du velger en kobling, vises et kort for hvert kostnadselement. Følgende beløp vises på hvert kort: faktisk, budsjett, budsjettavvik, budsjettavviks-%, revidert budsjett, revidert budsjettavvik og revidert budsjettavviks-%. 
+    Når du velger en kobling, vises et kort for hvert kostnadselement. Følgende beløp vises på hvert kort: faktisk, budsjett, budsjettavvik, budsjettavviks-%, revidert budsjett, revidert budsjettavvik og revidert budsjettavviks-%.
     
-    [![Kort for et kostnadselement ](./media/cost-controlling.png)](./media/cost-controlling.png)
+    [![Kort for et kostnadselement ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
-## <a name="prerequisites"></a>Forutsetninger
-Før du kan bruke det mobile arbeidsområdet for **kostnadskontroll**, må du kontrollere at systemansvarlig har følgende forutsetninger på plass.
+## Forutsetninger
+<a id="prerequisites" class="xliff"></a>
+Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
+
+### Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+Hvis oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er distribuert i organisasjonen, må systemansvarlig publisere det mobile arbeidsområdet **Kostnadskontroll**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Forutsetning</th>
@@ -89,50 +102,47 @@ Før du kan bruke det mobile arbeidsområdet for **kostnadskontroll**, må du ko
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere må implementeres.</td>
+<td>Implementer KB 4013633.</td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Dynamics 365 for Operations distribuert i organisasjonen, bør systemansvarlig se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+
+<td>KB 4013633 er en X++-oppdatering eller hurtigreparasjon for metadata som inneholder det mobile arbeidsområdet <strong>Kostnadskontroll</strong>. Systemadministrator må følge trinnene nedenfor for å implementere KB 4013633.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Last ned hurtigreparasjonen for metadata fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a>.</li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4013633 må være implementert.</td>
+<td>Publiser det mobile arbeidsområdet <strong>Kostnadskontroll</strong>.</td>
 <td>Systemansvarlig</td>
-<td>KB 4013633 (en X++ oppdatering eller hurtigreparasjon for metadata) inneholder fire mobile arbeidsområder for forsyningskjedeadministrasjon. Systemadministrator må følge disse trinnene for å implementere KB 4013633:
-<ol>
-<li>Last ned KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a> på Dynamics 365 for Operations-systemet.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Det mobile arbeidsområdet for <strong>kostnadskontroll</strong> må publiseres til Dynamics-365 for Operations-mobilappen.</td>
-<td>Systemansvarlig</td>
-<td><ol>
-<li>Start Dynamics 365 for Operations i nettleseren.</li>
-<li>På siden <strong>Systemparametere</strong> velger du <strong>Behandle mobile arbeidsområder</strong>.</li>
-<li>Velg arbeidsområdet <strong>Oversikt over kostnadsobjekt</strong>.</li>
-<li>Klikk <strong>Publiser mobilt arbeidsområde</strong>.</li>
-</ol></td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Laste ned og installere Dynamics 365 for Operations-mobilappen
-Last ned og installer Microsoft Dynamics 365 for Operations-appen fra appbutikken for mobilenheten.
 
--   For Android: [Dynamics 365 for Operations på Google Play-butikken](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations på iTunes-appbutikken](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+## Laste ned og installere mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
+Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Logg på Dynamics 365 for Operations-mobilappen
+-   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logge på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+
 1.  Start appen på mobilenheten.
-2.  Angi URL-adressen for Dynamics 365 for Operations.
-3.  Angi firmaet for å logge på. Skriv for eksempel **USMF**.
-4.  Første gang du logger deg på, du blir bedt om brukernavn og passord for din Dynamics 365 for Operations-konto. Angi legitimasjon.
-5.  Når du har logget deg på, kan du se tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, kan du dra for å oppdatere listen over mobile arbeidsområder. 
+2.  Skriv inn URL-adressen for Dynamics 365.
+3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
+4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
-    [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Vise ytelsen til kostsenteret ved hjelp av det mobile arbeidsområdet for kostnadskontroll
+## Vise ytelsen til kostsenteret ved hjelp av det mobile arbeidsområdet for kostnadskontroll
+<a id="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace" class="xliff"></a>
+
 1.  Velg **Kostnadskontroll**-arbeidsområdet på mobilenheten.
 2.  Velg **Kostnadsobjektobjekt**.
 3.  Velg **Handlinger**.
@@ -145,8 +155,5 @@ Last ned og installer Microsoft Dynamics 365 for Operations-appen fra appbutikke
 10. Velg koblingen **Detaljer for gjeldende periode**.
 11. Vise ytelsen til individuelle kostnadselementer.
 12. Du kan også søke etter bestemte kostnadselementer.
-
-
-
 
 

@@ -1,9 +1,9 @@
 ---
 title: Koble til hjelpesystemet
-description: Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Operations, og gir en oversikt over hvordan du kobler dem og et sammendrag over hvordan du oppretter egendefinert hjelp.
+description: Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations, og gir en oversikt over hvordan du kobler dem og et sammendrag over hvordan du oppretter egendefinert hjelp.
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,28 +19,35 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86c7cb3961ba5170c32979e77aaa5f506ffac8a1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 425e87f8b667b53fcc950730dc4ece6330503d66
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="connect-the-help-system"></a>Koble til hjelpesystemet
+# Koble til hjelpesystemet
+<a id="connect-the-help-system" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Operations. Det gir en oversikt over hvordan du kobler disse komponentene og et sammendrag av hvordan du oppretter egendefinert hjelp. 
+Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det gir en oversikt over hvordan du kobler disse komponentene og et sammendrag av hvordan du oppretter egendefinert hjelp. 
 
-<a name="help-architecture"></a>Hjelpearkitektur
------------------
+## Hjelpearkitektur
+<a id="help-architecture" class="xliff"></a>
+Illustrasjonen nedenfor viser delene av Finance and Operations-hjelpesystemet. Det integrerte hjelpesystemet i produktet henter artikler fra Finance and Operations-nettstedet https://docs.microsoft.com i tillegg til oppgaveveiledninger som er lagret i Forretningsprosessmodellereren i Lifecycle Services (LCS). 
+> [!NOTE]
+> Funksjonene som nevnes i diagrammet med en stjerne (\*), er planlagte, men er ennå ikke tilgjengelige. [![Hjelpearkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-Illustrasjonen nedenfor viser delene av Dynamics 365 for Operations-hjelpesystemet. Det integrerte hjelpesystemet i produktet henter artikler fra Dynamics 365 for Operations-nettstedet https://docs.microsoft.com i tillegg til oppgaveveiledninger som er lagret i Forretningsprosessmodellereren i Lifecycle Services (LCS). 
-**Merk:** Funksjonene som nevnes i diagrammet med en stjerne (\*), er planlagte, men er ennå ikke tilgjengelige. [![Hjelpearkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Koble til hjelpesystemet
+## Koble til hjelpesystemet
+<a id="connecting-the-help-system" class="xliff"></a>
+> [!NOTE]
+> Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på webområdet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) for både Retail og Talent.
+ 
+
 Ved hjelp av siden **Systemparametere**, kobler systemadministratorer delene av hjelpesystemet for en implementering. [![Skjemaet Systemparametere med innstillinger for hjelp](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) På **Systemparametere**-siden følger du disse trinnene:
 
 > [!IMPORTANT]
@@ -48,23 +55,32 @@ Ved hjelp av siden **Systemparametere**, kobler systemadministratorer delene av 
 
 1.  Velg Lifecycle Services-prosjektet du vil koble til.
 2.  Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
+    - For Finance and Operations, for Microsoft-innhold, velger du QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations fra februar 2017. 
+    - For Retail vil vi utgi et bibliotek i juli. 
+    - Du trenger ikke velge et bibliotek for Talent – tilkoblingen til riktig biblioteket blir opprettet for deg. 
+
 3.  Angi visningsrekkefølge for BPM-bibliotekene. Dette bestemmer hvilken rekkefølge oppgaveregistreringer fra bibliotekene skal vises i, i **Hjelp**-ruten.
 
-Når du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og klikke **Oppgaveveiledninger**-kategorien. Nå vil du se oppgaveveiledningene som gjelder for siden du er på i Dynamics 365 for Operations. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
+Når du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og klikke **Oppgaveveiledninger**-kategorien. Nå vil du se oppgaveveiledningene som gjelder for siden du er på i Finance and Operations. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
 
-### <a name="showing-translated-task-guides"></a>Vise oversatte oppgaveveiledninger
+### Vise oversatte oppgaveveiledninger
+<a id="showing-translated-task-guides" class="xliff"></a>
 
-Oversatte oppgaveveiledninger ble først levert i APQC Unified Library fra mai 2016, og Komme i gang-biblioteket. Hvis du vil vise lokaliserte oppgaveveiledninger i Microsoft Dynamics 365 for Operations, kontroller at du er koblet til biblioteket fra mai. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
+Oversatte oppgaveveiledninger ble først levert i APQC Unified Library fra mai 2016, og Komme i gang-biblioteket. Hvis du vil vise lokaliserte oppgaveveiledninger i Finance and Operations, kontroller at du er koblet til biblioteket fra mai. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
 
 > [!NOTE]
-> Selv om mange oppgaveveiledninger er oversatt, viser ikke Dynamics 365 for Operations-klienten de oversatte navnene på oppgaveveiledningene. Bare oppgaveveiledninger som ble utgitt i februar 2016, er også tilgjengelige i oversettelse i mai-biblioteket. Vi vil publisere et oppdatert bibliotek med flere oversettelser.
+> Selv om mange oppgaveveiledninger er oversatt, viser ikke Finance and Operations-klienten de oversatte navnene på oppgaveveiledningene. Bare oppgaveveiledninger som ble utgitt i februar 2016, er også tilgjengelige i oversettelse i mai-biblioteket. Vi vil publisere et oppdatert bibliotek med flere oversettelser.
 > -   Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
 > -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
-## <a name="creating-custom-help"></a>Opprette egendefinert hjelp
-Du kan opprette egendefinert hjelp for Dynamics 365 for Operations-implementeringen din ved å opprette oppgaveregistreringer som gjenspeiler implementeringen, og lagre dem i et bibliotek for LCS-forretningsprosess. For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../user-interface/task-recorder.md).
+## Opprette egendefinert hjelp
+<a id="creating-custom-help" class="xliff"></a>
+Du kan opprette egendefinert hjelp for Finance and Operations og for Retail ved å opprette oppgaveregistreringer som gjenspeiler implementeringen, og lagre dem i et bibliotek for LCS-forretningsprosess. Du kan ikke opprette egendefinerte oppgaveveiledninger for Talent. 
 
-<a name="see-also"></a>Se også
+For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../user-interface/task-recorder.md).
+
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Hjelpeoversikt](help-overview.md)

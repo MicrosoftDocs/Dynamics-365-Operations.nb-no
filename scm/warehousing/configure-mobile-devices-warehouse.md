@@ -3,14 +3,14 @@ title: Konfigurere mobilenheter for lagerarbeid
 description: "Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSRFMenuItem
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6a7658c56e2d0712c6aa27a4bb8ffc02bbd01d6c
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: dfb738e41f4b3f7d475a551dca0aba7a071dd989
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
+# Konfigurere mobilenheter for lagerarbeid
+<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,7 +42,8 @@ Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere
 
 Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus**-feltet til **Indirekte**. En liste over **Aktivitetskode**-alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess**-alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**, og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. **Merk:** Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i denne artikkelen.
 
-## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menyelementer for aktiviteter og forespørsler
+## Konfigurere menyelementer for aktiviteter og forespørsler
+<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
 Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du opprette et menyelement for å utføre en generell aktivitet eller en spørring som ikke fører til arbeid. Disse omfatter for eksempel ny utskrift av nummerskiltetiketter og forespørsler om varene på en lokasjon. Følgende tabell viser alternativene som er tilgjengelige.
 
 | Alternativ                      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -64,7 +66,8 @@ Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du oppre
 | Endre partidisposisjon    | La en arbeider angi en partidisposisjonskode for en vare og et parti. Dette valget oppdaterer disposisjonskoden som er angitt for partiet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Vis liste over åpent arbeid      | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype**, inkluderer arbeidslisten en **Filtrer arbeid**-kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen. |
 
-## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurere menyelementer for å opprette arbeid for en annen arbeider eller prosess
+## Konfigurere menyelementer for å opprette arbeid for en annen arbeider eller prosess
+<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
 Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter at en innledende handling er utført på mobilenheten. Når én arbeider for eksempel bruker en mobilenhet til å motta en vare, opprettes det plasseringsarbeid for en annen arbeider. På siden **Menyelementer på mobilenheten** i **Modus**-feltet velger du **Arbeid** for å definere et menyelement som oppretter arbeid. I tabellen nedenfor er alternativene i feltet **Arbeidsopprettelsesprosess** ordnet etter arbeidsordretypen.
 
 <table>
@@ -165,7 +168,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </tr>
 <tr>
 <td>Flytting etter mal</td>
-<td>Flytt varer fra én lokasjon til en annen på en delvis automatisert måte. Arbeideren velger lokasjonen der du vil flytte varer fra, og Microsoft Dynamics 365 for Operations bruker lokasjonsdirektivet til å avgjøre hvor du vil flytte elementene til.</td>
+<td>Flytt varer fra én lokasjon til en annen på en delvis automatisert måte. Arbeideren velger lokasjonen som varer skal flyttes fra, og Finance and Operations bruker lokasjonsdirektivet til å avgjøre hvor varene skal flyttes.</td>
 </tr>
 <tr>
 <td>Lageroverføring</td>
@@ -193,7 +196,8 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </tbody>
 </table>
 
-## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurere menyelementer for å behandle eksisterende arbeid
+## Konfigurere menyelementer for å behandle eksisterende arbeid
+<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
 I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Noen tilleggsalternativer blir deretter tilgjengelige i **Generelt**-kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigfanen **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige.
 
 <table>
@@ -214,7 +218,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="even">
 <td>Systemstyrt</td>
-<td>Microsoft Dynamics 365 for Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider, og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
 </tr>
 <tr class="odd">
 <td>Brukerstyrt</td>
@@ -226,7 +230,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
-<td>Microsoft Dynamics 365 for Operations grupperer arbeid for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
+<td>Microsoft Dynamics 365 for Finance and Operations grupperer arbeid for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
 <ul>
 <li><strong>Systemgrupperingsfelt</strong> – Velg feltet som arbeideren skanner for å gruppere arbeidet.</li>
 <li><strong>Systemgrupperingsetikett</strong> – Skriv inn tekst for å informere arbeideren om hva som må skannes for å gruppere arbeidet.</li>
@@ -247,12 +251,13 @@ Dette alternativet er for eksempel nyttig når flere paller klargjøres for en l
 </tr>
 <tr class="even">
 <td>Gruppering av syklustelling</td>
-<td>Arbeideren velger en sone, arbeidspulje eller plassering, og Microsoft Dynamics 365 for Operations tilordner arbeid som er basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
+<td>Arbeideren velger en sone, arbeidspulje eller lokasjon, og Microsoft Dynamics 365 for Finance and Operations tilordner arbeid basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-menu-item-options"></a>Flere alternativer for menyelementer
+## Flere alternativer for menyelementer
+<a id="additional-menu-item-options" class="xliff"></a>
 Flere alternativer for menyelementer er tilgjengelige på siden **Menyelementer på mobilenheten**. Alternativene varierer avhengig av prosessen som du konfigurerer menyelementet for. 
 
 Tabellen nedenfor beskriver disse alternativene.
@@ -331,7 +336,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Gruppe plassert</td>
-<td>Velg dette alternativet for å gruppere plasseringsarbeidet. Dette alternativet er tilgjengelig når arbeidet ble gruppert av arbeideren eller av Microsoft Dynamics 365 for Operations. Når arbeideren er ferdig med alt plukkarbeidet i gruppen, opprettes plasseringsarbeid for den samme gruppen.</td>
+<td>Velg dette alternativet for å gruppere plasseringsarbeidet. Dette alternativet er tilgjengelig når arbeidet ble gruppert av arbeideren eller av Microsoft Dynamics 365 for Finance and Operations. Når arbeideren er ferdig med alt plukkarbeidet i gruppen, opprettes plasseringsarbeid for den samme gruppen.</td>
 </tr>
 <tr class="even">
 <td>Lagerjusteringstyper</td>
@@ -364,11 +369,11 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="even">
 <td>Systemgrupperingsfelt</td>
-<td>Velg feltet som bestemmer hvordan Microsoft Dynamics 365 for Operations grupperer plukkarbeid for arbeidere. Hvis du for eksempel felger <strong>ShipmentId</strong>-feltet vil arbeideren skanne forsendelses-IDen for å gruppere plukkarbeidet. Alt arbeid for forsendelsen tilordnes deretter til arbeideren. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også skrive inn tekst i feltet <strong>Systemgrupperingsetikett</strong> for å informere arbeideren om hva som må skannes.</td>
+<td>Velg feltet som bestemmer hvordan Microsoft Dynamics 365 for Finance and Operations grupperer plukkarbeid for arbeidere. Hvis du for eksempel felger <strong>ShipmentId</strong>-feltet vil arbeideren skanne forsendelses-IDen for å gruppere plukkarbeidet. Alt arbeid for forsendelsen tilordnes deretter til arbeideren. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også skrive inn tekst i feltet <strong>Systemgrupperingsetikett</strong> for å informere arbeideren om hva som må skannes.</td>
 </tr>
 <tr class="odd">
 <td>Systemgrupperingsetikett</td>
-<td>Angi teksten som vil informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Microsoft Dynamics 365 for Operations. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
+<td>Angi teksten som skal informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Microsoft Dynamics 365 for Finance and Operations. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
 </tr>
 <tr class="even">
 <td>Bruk standarddata</td>
@@ -384,13 +389,14 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Arbeidsmalkode</td>
-<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Microsoft Dynamics 365 for Operations en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
+<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Microsoft Dynamics 365 for Finance and Operations en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Krev at arbeidere bekrefter produktet, lokasjonen eller antallet ved plukking av varer
-Du kan definere arbeidsbekreftelser som krever at en arbeider bruker en mobilenhet til å registrere lokasjonen eller antallet når det utføres arbeid på lageret. Arbeidsbekreftelser bidrar til å sikre at arbeideren er på riktig sted, eller behandler det riktige antallet varer. Du kan også få Microsoft Dynamics 365 for Operations til å bekrefte arbeiderens registrering automatisk. Hvis du aktiverer automatisk bekreftelse, kan du ikke også kreve bekreftelser for lokasjon eller antall. Arbeidsbekreftelser inneholder også produkter og produktvarianter. I tillegg kan du registrere bekreftelser ved å skanne en strekkode. Hvis du vil bekrefte produkter og produktvarianter, må du angi en ID for produktet eller produktvarianten. Denne IDen kan være en produkt-ID, produktsøk-ID, ekstern ID, GTIN eller strekkode. Når du har angitt ID-en eller skannet strekkoden, vises dimensjonene for produktvarianten på mobilenheten. 
+## Krev at arbeidere bekrefter produktet, lokasjonen eller antallet ved plukking av varer
+<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+Du kan definere arbeidsbekreftelser som krever at en arbeider bruker en mobilenhet til å registrere lokasjonen eller antallet når det utføres arbeid på lageret. Arbeidsbekreftelser bidrar til å sikre at arbeideren er på riktig sted, eller behandler det riktige antallet varer. Du kan også få Microsoft Dynamics 365 for Finance and Operations til å bekrefte arbeiderens registrering automatisk. Hvis du aktiverer automatisk bekreftelse, kan du ikke også kreve bekreftelser for lokasjon eller antall. Arbeidsbekreftelser inneholder også produkter og produktvarianter. I tillegg kan du registrere bekreftelser ved å skanne en strekkode. Hvis du vil bekrefte produkter og produktvarianter, må du angi en ID for produktet eller produktvarianten. Denne IDen kan være en produkt-ID, produktsøk-ID, ekstern ID, GTIN eller strekkode. Når du har angitt ID-en eller skannet strekkoden, vises dimensjonene for produktvarianten på mobilenheten. 
 
 Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekreftelser med.
 
@@ -408,7 +414,8 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 
 **Obs!** Du kan kreve produktbekreftelse bare for arbeid av plukkings- og plasseringstyper.
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Visningsinnstillinger for lagermobilenheten](change-warehouse-mobile-device-displays.md)

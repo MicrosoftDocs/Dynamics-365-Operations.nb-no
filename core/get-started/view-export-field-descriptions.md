@@ -3,14 +3,14 @@ title: Vise og eksportere feltbeskrivelser
 description: "Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,36 +18,40 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
+# Vise og eksportere feltbeskrivelser
+<a id="view-and-export-field-descriptions" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 
-Microsoft Dynamics 365 for Operations har beskrivelsene for noen av de mer kompliserte feltene. Disse beskrivelsene vises når du holder pekeren over et felt. Du kan også vise og eksportere beskrivelser på siden **Feltbeskrivelser**. 
+Microsoft Dynamics 365 for Finance and Operations har beskrivelsene for noen av de mer kompliserte feltene. Disse beskrivelsene vises når du holder pekeren over et felt. Du kan også vise og eksportere beskrivelser på siden **Feltbeskrivelser**. 
 
 Ikke alle sider har feltbeskrivelser. Vi vil bare gi beskrivelser for de mer komplekse feltene, og ikke der bruken av feltet er åpenbart. Derfor ha noen sider ikke noen feltbeskrivelser, noen sider har noen få beskrivelser og noen av de mer komplekse sidene, for eksempel mange av parametersidene, har mange beskrivelser. 
 
-Hvis du har tilgang til utviklingsmiljøet i Dynamics 365 for Operations, kan du legge til nye feltbeskrivelser og tilpasse eksisterende beskrivelser. Du kan for eksempel legge til firmaspesifikk informasjon i en feltbeskrivelse. Hvis du vil ha mer informasjon, kan du se [hjelpen for å tilpasse felt](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+Hvis du har tilgang til utviklingsmiljøet i Finance and Operations, kan du legge til nye feltbeskrivelser og tilpasse eksisterende beskrivelser. Du kan for eksempel legge til firmaspesifikk informasjon i en feltbeskrivelse. Hvis du vil ha mer informasjon, kan du se [hjelpen for å tilpasse felt](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
 
-## <a name="see-field-descriptions-in-the-user-interface"></a>Se feltbeskrivelsene i brukergrensesnittet.
-Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskrivelse er tilgjengelig, kan du se navnet på feltet når du holder pekeren over feltet. (Obs!  I versjon 7.0.0 kan feltbeskrivelser bare vises på siden **Feltbeskrivelser**.) Illustrasjon nedenfor viser feltbeskrivelsen som vises når du holder pekeren over feltet **Lås varer under opptelling**. 
+## Se feltbeskrivelsene i brukergrensesnittet.
+<a id="see-field-descriptions-in-the-user-interface" class="xliff"></a>
+Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskrivelse er tilgjengelig, kan du se navnet på feltet når du holder pekeren over feltet. (Obs! I Dynamics AX 7.0 (februar 2016) kan feltbeskrivelser bare vises på siden **Feltbeskrivelser**.) Illustrasjon nedenfor viser feltbeskrivelsen som vises når du holder pekeren over feltet **Lås varer under opptelling**. 
 
 [![Eksempel på en feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
 
-## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruk siden Feltbeskrivelser til å vise og eksportere felthjelp
+## Bruk siden Feltbeskrivelser til å vise og eksportere felthjelp
+<a id="use-the-field-descriptions-page-to-view-and-export-field-help" class="xliff"></a>
 Siden **Feltbeskrivelser** lar deg vise og eksportere feltbeskrivelser. Du kan se feltbeskrivelsene som er tilgjengelige for én side om gangen.
 
-### <a name="view-the-descriptions-for-a-page"></a>Vise beskrivelsene for en side
+### Vise beskrivelsene for en side
+<a id="view-the-descriptions-for-a-page" class="xliff"></a>
 
 Følg fremgangsmåten nedenfor for å vise beskrivelsene for en side.
 
@@ -59,14 +63,16 @@ Hvis du vil ha informasjon om de forskjellige måtene å filtrere listen over si
 
 Hvis du setter alternativet **Inkluder felt uten beskrivelse** til **Ja**, vises alle feltene på siden selv om de ikke har en feltbeskrivelse.
 
-### <a name="export-the-descriptions-for-a-page"></a>Eksportere beskrivelsene for en side
+### Eksportere beskrivelsene for en side
+<a id="export-the-descriptions-for-a-page" class="xliff"></a>
 
 Følg fremgangsmåten nedenfor for å eksportere beskrivelsene for en side.
 
 1.  Velg en siden i feltet **Velg en side**.
 2.  Klikk **Åpne i Microsoft Office** i øvre høyre hjørne, og klikk deretter **FieldDescriptionTmp**.
 
-### <a name="searching-for-a-page"></a>Søke etter en side
+### Søke etter en side
+<a id="searching-for-a-page" class="xliff"></a>
 
 Det finnes flere måter å søke etter en side på i feltet **Velg en side**. I mange tilfeller må du klikke pilen i feltet **Velg en side** for å åpne rullegardinlisten og deretter velge fra en filtrert liste over sider.
 
@@ -79,29 +85,35 @@ Det finnes flere måter å søke etter en side på i feltet **Velg en side**. I 
 
 Ingen beskrivelser vises for eksempel når du skriver inn **Opptelling** i feltet ****Velg en side****. Du åpner rullegardinlisten og ser at det er to sider med navnet **Opptelling**, i tillegg til flere sider som inneholder ordet Opptelling i navnet. Hvis du velger siden som har **InventJournalCount** som navn på applikasjonsobjekttre, vises feltbeskrivelsene for denne siden. Hvis du imidlertid åpner rullegardinlisten på nytt, ser du at listen nå inneholder alle sider som har "InventJournalCount"» som en del av navnet på applikasjonsobjekttreet.
 
-## <a name="troubleshooting"></a>Feilsøking
+## Feilsøking
+<a id="troubleshooting" class="xliff"></a>
 Dette avsnittet inneholder informasjon om hvordan du feilsøker problemer som kan oppstå når du bruker feltbeskrivelser.
 
-### <a name="i-cant-find-a-field-description"></a>Det er en feltbeskrivelse jeg ikke finner
+### Det er en feltbeskrivelse jeg ikke finner
+<a id="i-cant-find-a-field-description" class="xliff"></a>
 
 Vi holder på med å legge til beskrivelser for de mer komplekse feltene. Hvis du trenger hjelp med et bestemt felt, må du gjerne gi oss tilbakemelding ved å legge til en kommentar for dette emnet.
 
-### <a name="the-field-description-isnt-helpful"></a>Feltbeskrivelsen er ikke nyttig
+### Feltbeskrivelsen er ikke nyttig
+<a id="the-field-description-isnt-helpful" class="xliff"></a>
 
 Gi oss tilbakemelding ved å legge til en kommentar for dette emnet. Hvis du kan, beskriver du den ekstra informasjonen du trenger.
 
-### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Jeg finner ikke et felt på siden Feltbeskrivelser
+### Jeg finner ikke et felt på siden Feltbeskrivelser
+<a id="i-cant-find-a-field-on-the-field-descriptions-page" class="xliff"></a>
 
 Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet **Inkluder felt uten beskrivelse**. Klikk feltet **Velg en side** for å kontrollere at du har valgt den riktige siden. Hvis navnet du skrev inn er en del av et annet feltnavn, har du kanskje valgt siden som har det lengste navnet.
 
-### <a name="i-cant-find-a-page-on-the-field-descriptions-page"></a>Jeg finner ikke en side på siden Feltbeskrivelser
+### Jeg finner ikke en side på siden Feltbeskrivelser
+<a id="i-cant-find-a-page-on-the-field-descriptions-page" class="xliff"></a>
 
 Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
-[Hjelp for å tilpasse felt](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Hjelp for å tilpasse felt](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

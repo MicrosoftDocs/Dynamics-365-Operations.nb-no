@@ -1,39 +1,41 @@
 ---
 title: "Betalingsmåter i et telefonsenter"
-description: "Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Detaljhandel og handel."
+description: "Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Betalingsmåter i et telefonsenter
+# Betalingsmåter i et telefonsenter
+<a id="payment-methods-in-a-call-center" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Detaljhandel og handel.
+Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Dynamics 365 for Retail.
 
-Betalingsmåtene som brukes i andre kanaler i Detaljhandel og handel i Microsoft Dynamics AX, for eksempel kontanter, sjekk, kredittkort og gavekort, kan også brukes i telefonsentre. Når du definerer en betalingsmåte for et telefonsenter, vises den som et av alternativene i **Betalinger**-delen på siden **Salgsordre** for telefonsenterbrukere. Du kan også definere kuponger for å gi kunder rabatter når de bestiller noe i organisasjonens telefonsenter. Kuponger kan være for en fastbeløpsrabatt eller for en prosent av en varepris eller ordretotalen. En beløpsbasert kupong kan for eksempel tilby kundene en rabatt på 75.00 når kunden bruker 750.00 eller mer. Du kan opprette ulike typer kuponger, definere overordnede/underordnede kuponger og kopiere eller annullere en kupong. Bruk alternativene i tabellen nedenfor for å opprette kuponger.
+Betalingsmåtene som brukes i andre kanaler, for eksempel kontanter, sjekk, kredittkort og gavekort, kan også brukes i telefonsentre. Når du definerer en betalingsmåte for et telefonsenter, vises den som et av alternativene i **Betalinger**-delen på siden **Salgsordre** for telefonsenterbrukere. Du kan også definere kuponger for å gi kunder rabatter når de bestiller noe i organisasjonens telefonsenter. Kuponger kan være for en fastbeløpsrabatt eller for en prosent av en varepris eller ordretotalen. En beløpsbasert kupong kan for eksempel tilby kundene en rabatt på 75.00 når kunden bruker 750.00 eller mer. Du kan opprette ulike typer kuponger, definere overordnede/underordnede kuponger og kopiere eller annullere en kupong. Bruk alternativene i tabellen nedenfor for å opprette kuponger.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -3,14 +3,14 @@ title: Aktivitetsbasert utsetting
 description: Dette emnet beskriver i detalj hvordan du bruker r aktiviteter i underleveranser i en produksjonsflyt for lean manufacturing.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
@@ -19,24 +19,26 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="activity-based-subcontracting"></a>Aktivitetsbasert utsetting
+# Aktivitetsbasert utsetting
+<a id="activity-based-subcontracting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver i detalj hvordan du bruker r aktiviteter i underleveranser i en produksjonsflyt for lean manufacturing.
 
-I Microsoft Dynamics 365 for Operations er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
+I Microsoft Dynamics 365 for Finance and Operations er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
 
-## <a name="production-flows-that-involve-subcontractors"></a>Produksjonsflyter som involverer underleverandører
+## Produksjonsflyter som involverer underleverandører
+<a id="production-flows-that-involve-subcontractors" class="xliff"></a>
 Det grunnleggende prinsippet til en produksjonsflyt endres ikke når aktiviteter er underleveranser. Materiale flyter fremdeles mellom lokasjoner, prosessaktiviteter konverterer materiale til produkter, og overføringsaktiviteter flytter materiale eller produkter fra én lokasjon til en annen. Du kan modellere lokasjoner og arbeidsceller som leverandøradministrert ved å tilordne leverandørkontoen til et lager eller en ressurs for en ressursgruppe.  
 
 Basert på disse funksjonene krever ikke lean manufacturing noen bestemte funksjoner for å støtte flyten av materialer og produkter. Alle mulige scenarier som involverer leverandører som leverandører av produksjons- eller transporttjenester, kan modelleres basert på arkitekturen i produksjonsflyt og aktiviteter.  
@@ -47,7 +49,8 @@ En underleverandør kan brukes til å belastningsfordele den overordnede kapasit
 
 På samme måte som med andre aktiviteter i en produksjonsflyt, kan aktiviteter i underleveranser forbruke og levere lagervarer, ikke-lagervarer (arbeid pågår \[VIA\]), og halvfabrikata og produkter. Prosessene for planlegging og utføring av aktiviteter i underleveranser er de samme i alle tilfeller. I tillegg behandler disse det samme som prosessene for internt arbeid.
 
-## <a name="purchase-process-for-subcontracted-activities-services"></a>Kjøpsprosess for aktiviteter i underleveranser (tjenester)
+## Kjøpsprosess for aktiviteter i underleveranser (tjenester)
+<a id="purchase-process-for-subcontracted-activities-services" class="xliff"></a>
 Kjøpsprosessen for aktiviteter i underleveranser er basert på den fysiske materialflyten som er registrert ved Kanban-jobbfremdriften, for eksempel start eller fullfør. Den økonomiske flyten, for eksempel kostnad for underleveransearbeid, er en sekundærflyt som følger den fysiske flyten. Samtidig er kjøpsprosessen en uavhengig prosess som muliggjør manuell justering av kjøpsdokumentene av innkjøpsdokumenter i hvert trinn. Her er kjøpsprosessen for aktiviteter i underleveranser:
 
 1.  Opprett en kjøpsavtale. Kjøpsavtalen er opprettet for tjenesten og er koblet til aktiviteten i produksjonsflyten.
@@ -59,10 +62,12 @@ Kjøpsprosessen for aktiviteter i underleveranser er basert på den fysiske mate
 
 Prosessen avsluttes når underleverandøren faktureres for en periode. Fakturakontrollen utføres mot mottaksveiledningene som opprettes. Fordi mottaksveiledningene representerer den nøyaktige fysiske tilgangen av materiale, er treveis samsvar forenklet.
 
-## <a name="configuring-activities-for-subcontracting"></a>Konfigurere aktiviteter for utsetting
+## Konfigurere aktiviteter for utsetting
+<a id="configuring-activities-for-subcontracting" class="xliff"></a>
 Følgende avsnitt beskriver hvordan du konfigurerer aktiviteter for utsetting.
 
-### <a name="subcontracted-services"></a>Underleveranser
+### Underleveranser
+<a id="subcontracted-services" class="xliff"></a>
 
 Betalingselementet som brukes i aktivitetsbasert utsetting, må være et produkt som har følgende egenskaper:
 
@@ -71,14 +76,16 @@ Betalingselementet som brukes i aktivitetsbasert utsetting, må være et produkt
 
 Dette kravet fremtvinger bruk av først-inn-først-ut-lagermodellen. **Merk:** Kostnadsberegning av produktene krever at det defineres standard kostpris for tjenesten. Det kreves en kjøpsavtale med leverandøren. Hvis ikke kan ikke tjenesten brukes for aktivitetsbasert utsetting.
 
-### <a name="subcontracted-process-activities"></a>Prosessaktiviteter i underleveranser
+### Prosessaktiviteter i underleveranser
+<a id="subcontracted-process-activities" class="xliff"></a>
 
 Hvis du vil konfigurere en prosessaktivitet som en aktivitet i underleveranser, følger du denne fremgangsmåten.
 
 1.  Konfigurer en arbeidscelle for underleveranse. Hvis du vil konfigurere en arbeidscelle som en underleveranse, må du opprette en ressurs av typen **Leverandør** og knytte den til arbeidscellen (ressursgruppen). En kostnadskategori for kjøretid av kostgruppetypen **Direkte utsetting** skal tilordnes til arbeidscellen. Kostnadskategoriene for oppsett og antall er ikke nødvendig.
 2.  Etter at en prosessaktivitet er opprettet og knyttet til en arbeidscelle for underleveranse, må du konfigurere en tjeneste for aktiviteten før produksjonsflytversjonen kan aktiveres. Du fullfører dette trinnet på siden **Aktivitets** **detaljer**. For aktiviteter som er knyttet til en arbeidscelle for underleveranse, vises hurtigfanen **Tjenestevilkår**. Legg til en standardtjeneste som er gyldig for alle varer for utdata, i denne hurtigfanen. Hvis bestemte utdatavarer krever ulike tjenester eller andre parametere for serviceberegning (for eksempel et annet tjenesteforhold), kan du legge til andre tjenester i aktiviteten.
 
-## <a name="subcontracted-transfer-activities"></a>Overføringsaktiviteter i underleveranser
+## Overføringsaktiviteter i underleveranser
+<a id="subcontracted-transfer-activities" class="xliff"></a>
 En overføringsaktivitet er konfigurert som en aktivitet i underleveranse, avhengig av innstillingen for **Fraktet av** for overføringsaktiviteten. Følgende alternativer er tilgjengelige:
 
 -   **Speditør** – Aktiviteten er en underleveranse hvis overføringen fra lageret administreres av en leverandør (som definert av en egenskap for lageret). Alle valgte innkjøpsavtaler for tjenester må ha samme leverandør-ID som lageret.
@@ -87,24 +94,27 @@ En overføringsaktivitet er konfigurert som en aktivitet i underleveranse, avhen
 
 Som for prosessaktiviteter må du konfigurere en standardtjeneste for overføringsaktiviteter i underleveranser på siden **Tjenestevilkår** hurtigfanen **Aktivitets****detaljer**.
 
-## <a name="service-quantity-calculation"></a>Beregning av tjenesteantall
+## Beregning av tjenesteantall
+<a id="service-quantity-calculation" class="xliff"></a>
 Hele kjøpsprosessen er basert på en varereferanse for en tjeneste. Denne varereferansen måles i en måleenhet for en tjeneste. Tjenester måles vanligvis i antall tjenester (enheter) eller i tid. Du kan bruke følgende metoder for å beregne serviceantallet, basert på den registrerte fullføringen av kanban-jobber:
 
 -   **Beregning som er basert på antall jobber** – Én kanban-jobb er lik *n* enheter av tjenesten, uavhengig av produktantallet som leveres. I lean manufacturing tilsvarer én jobb én behandlingsenhet. Denne beregningsmåten gjelder for alle tjenester som har en fast pris per behandlingsenhet. Denne metoden gjelder derfor vanligvis for overføringsaktiviteter. Den kan imidlertid også gjelde for behandlingsaktiviteter som behandler hele behandlingsenheter.
 -   **Beregning som er basert på produktantallet** – Tjenesten er relativ til produktantallet som planlegges/leveres. Når det leverte produktantallet beregnes, kan antall feil inkluderes eller utelukkes. Denne beregningsmåten brukes for alle saker der tjenesteprisen per enhet av behandlet produkt er avtalt.
 -   **Beregning som er basert på aktivitetstiden** – De teoretiske aktivitetstidene beregnes basert på behandlingstiden for aktiviteten, totalt behandlet antall og produksjonsforholdet for det behandlede produktet. Denne beregningsmåten gjelder for tjenester som er betalt per time og har et avvik i tid per behandlet produkt.
 
-## <a name="cost-accounting-of-subcontracted-services"></a>Kostnadsregnskap for underleveranser
+## Kostnadsregnskap for underleveranser
+<a id="cost-accounting-of-subcontracted-services" class="xliff"></a>
 Når mottaksveiledningen eller en leverandørfølgeseddel på en bestilling som ble opprettet for en produksjonsflyt (med andre ord en bestilling som ble generert basert på kanban-jobber for aktiviteter i underleveranser) er postert, beregnes verdien av mottaket i VIA-kontoene for produksjonsflyten. Avvikene for fakturaer blir også kostnadsberegnet til produksjonsflyten. En kostnadskategori for underleveransearbeid har blitt innført. Denne kostnadskategorien muliggjør gjennomsiktig sporing av verdien for underleveransearbeid som er tilordnet til VIA og konsumert per periode.  
 
 Backflush-etterkalkuleringen for lean manufacturing på slutten av en etterkalkuleringsperiode beregner de faktiske variansene av produktene som er produsert fra produksjonsflyten i etterkalkuleringsperioden.
 
-## <a name="modeling-transfers-as-subcontracted-activities"></a>Modelleringsoverføringer som aktiviteter i underleveranser
+## Modelleringsoverføringer som aktiviteter i underleveranser
+<a id="modeling-transfers-as-subcontracted-activities" class="xliff"></a>
 Folk vurderer ofte transport som ikke-produktiv og mener at den ikke tilfører noen verdi. Når kostnaden for underleveranser sammenlignes med de interne produksjonskostnadene, må det imidlertid tas hensyn til kostnaden for ekstra transportaktiviteter. En produksjonsflyt som strekker seg over flere steder og krever transporttjenester, bør modellere transportkostnaden som en del av kostnaden av å levere produktene til kunden. 
 
 Med aktivitetsbasert utsetting i lean manufacturing kan du integrere transportører og transportleverandører som flytter materialer og produkter mellom lokasjonene i en produksjonsflyt. Ved å modellere en overføringsaktivitet kan du tilordne en transportør eller leverandør. Overføringsaktivitetene-/jobben er basert på en tjeneste og kjøpsavtale, og du kan opprette bestillinger og mottaksveiledninger basert på de faktiske overføringsjobbene. Denne funksjonaliteten er den samme som funksjonaliteten for prosessaktiviteter i underleveranser.  
 
-Av den grunn støtter nå Dynamics 365 for Operations stykklisteberegning som inkluderer transporttjenester, oppretting av relaterte bestillinger, integrert mottaksregistrering og integrering av kostnader for transporttjeneste i etterkalkulering for produksjonsflyt.
+Av den grunn støtter nå Finance and Operations stykklisteberegning som inkluderer transporttjenester, oppretting av relaterte bestillinger, integrert mottaksregistrering og integrering av kostnader for transporttjeneste i etterkalkulering for produksjonsflyt.
 
 
 

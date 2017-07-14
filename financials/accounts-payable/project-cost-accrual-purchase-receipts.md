@@ -1,15 +1,15 @@
 ---
 title: "Påløpte prosjektkostnader på kjøpsmottak"
-description: "Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Operations."
+description: "Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,20 +17,21 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Påløpte prosjektkostnader på kjøpsmottak
+# Påløpte prosjektkostnader på kjøpsmottak
+<a id="project-cost-accrual-on-purchase-receipts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Operations. 
+Dette emnet beskriver hvordan påløpte prosjektkostnader fra kjøpsmottak kan spores i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Fakturaer for et prosjekt ankommer ofte etter at varene og tjenestene er levert, noe som kan ha betydelig innvirkning på prosjektets nøkkelytelsesindikatorer (KPI-er). Det er viktig å kunne spore disse transaksjonene i både økonomisk rapporter og prosjektrapporter.
 
@@ -38,7 +39,7 @@ Eksemplet nedenfor illustrerer dette.
 
 Contoso Consulting har startet et nytt skydistribusjonsprosjekt. Det opprettes en bestilling for å kjøpe en datamaskin for prosjektet. Datamaskinen vil koste USD 1 500, og installeringstjenester vil koste USD 150. Leverandøren har levert og installert datamaskinen, men fakturaen har ennå ikke ankommet Contoso Consulting. Prosjektlederen vil gjerne se de påløpte prosjektkostnadene på USD 1 650 før fakturaen leveres. Denne kostnaden skal også gjenspeiles i selskapets regnskapsoppgjør ved månedsslutt. 
 
-De påløpte kostnadene må være registrert på finansnivå og prosjektnivå for rapporteringsformål. Den økonomiske oppdatering av produktmottaket kan spores i Dynamics 365 for Operations for vare- og innkjøpskategoriene. 
+De påløpte kostnadene må være registrert på finansnivå og prosjektnivå for rapporteringsformål. Den økonomiske oppdatering av produktmottaket kan spores i Finance and Operations for vare- og innkjøpskategoriene. 
 
 For varer går du til siden **Leverandørparametere** og velger alternativet **Poster mottakssedler til finans**.
 [![Avsetninger1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +74,7 @@ Det er mulig å tilordne innkjøpskategorier til prosjektkategorier på siden **
 
 **Trinn 3:** Opprett et leverandørfakturautkast. 
 
-I Dynamics 365 for Operations vil ikke postering av en produktkvittering påvirke prosjektinformasjonen. For å omgå dette kan du generere et leverandørfakturautkast direkte etter postering av mottaksseddelen. Gå til siden **Bestilling** &gt; kategorien **Faktura** &gt; **Generer** &gt; **Faktura**. Dette oppretter et ventende fakturadokumentet som oppdaterer prosjektinformasjonen. 
+I Finance and Operations vil ikke postering av en produktkvittering påvirke prosjektinformasjonen. For å omgå dette kan du generere et leverandørfakturautkast direkte etter postering av mottaksseddelen. Gå til siden **Bestilling** &gt; kategorien **Faktura** &gt; **Generer** &gt; **Faktura**. Dette oppretter et ventende fakturadokumentet som oppdaterer prosjektinformasjonen. 
 
 Oppretting av et leverandørfakturautkast genererer ventende prosjekttransaksjoner. 
 [![Avsetninger8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

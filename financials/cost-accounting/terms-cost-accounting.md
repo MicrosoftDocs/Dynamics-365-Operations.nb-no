@@ -3,14 +3,14 @@ title: Terminologi for kostnadsregnskap
 description: Dette emnet beskriver de viktigste begrepene som brukes i Kostnadsregnskap.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,15 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
+# Terminologi for kostnadsregnskap
+<a id="cost-accounting-terminology" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,7 +37,7 @@ Dette emnet beskriver de viktigste begrepene som brukes i Kostnadsregnskap.
 
 **Kostnadsregnskap**
 
-Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre. Kildedataene som brukes til å foreta kostnadsanalyser, behandles uavhengig av hverandre i Kostnadsregnskap. Oppdateringer i Kostnadsregnskap påvirker derfor ikke kildedataene. Når du samler inn kostnadsdata fra forskjellige kilder, og særlig når du importerer hovedkontoene fra Microsoft Dynamics 365 for Operations som kostnadselementer, er det imidlertid overflødige data, fordi de samme dataene som finnes i både Finans og Kostnadsregnskap. Denne overflødigheten er nødvendig, fordi du kan bruke Økonomistyring for ekstern rapportering og Kostnadsregnskap for intern rapportering.
+Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre. Kildedataene som brukes til å foreta kostnadsanalyser, behandles uavhengig av hverandre i Kostnadsregnskap. Oppdateringer i Kostnadsregnskap påvirker derfor ikke kildedataene. Når du samler inn kostnadsdata fra forskjellige kilder, og særlig når du importerer hovedkontoene fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kostnadselementer, er det imidlertid overflødige data, fordi de samme dataene som finnes i både Finans og Kostnadsregnskap. Denne overflødigheten er nødvendig, fordi du kan bruke Økonomistyring for ekstern rapportering og Kostnadsregnskap for intern rapportering.
 
 **Kostnadsregnskapsfinans**
 

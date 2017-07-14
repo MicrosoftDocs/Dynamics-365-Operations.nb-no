@@ -1,16 +1,16 @@
 ---
-title: Stillingsprognoser
-description: 
+title: Stillingsprognose
+description: "Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,24 +18,25 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="position-forecasting"></a>Stillingsprognoser
+# Stillingsprognose
+<a id="position-forecasting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 
-
 Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter.
 
-## <a name="position-forecasting-in-budget-planning"></a>Stillingsprognoser i budsjettplanlegging
+## Stillingsprognoser i budsjettplanlegging
+<a id="position-forecasting-in-budget-planning" class="xliff"></a>
 
 [![Grafikk, topp](./media/graphic-top.png)](./media/graphic-top.png) 
 
@@ -47,7 +48,8 @@ Et **budsjettkostnadselement** er en installasjonskomponent som representerer en
 
 En **kompensasjonsgruppe** er en valgfri installasjonskomponent som brukes til å bruke et sett med budsjettkostnadselementer og lønnsberegninger med stillinger som har lignende egenskaper for lønn. En kompensasjon-gruppe kan inneholde et kompensasjonsrutenett for lønnssatser. Når gruppen er tilordnet til en prognosestilling, kan et nivå og trinn i rutenettet tilordne prognosestillingens inntekter. Settet med kostnadselementer legges til automatisk.
 
-### <a name="position-forecasting-processes"></a>Stillingsprognoseprosesser
+### Stillingsprognoseprosesser
+<a id="position-forecasting-processes" class="xliff"></a>
 
 [![Grafikk1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
@@ -55,10 +57,12 @@ I en vanlig prosess for stillingsprognose, oppretter du først installasjonskomp
 
 Du kan opprette flere prognosestillingsversjoner når budsjettplaner revideres. Disse nye versjonene danner grunnlag for endringene.
 
-## <a name="position-forecasting-setup"></a>Oppsett av stillingsprognoser
+## Oppsett av stillingsprognoser
+<a id="position-forecasting-setup" class="xliff"></a>
 [![Grafikk2](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
-### <a name="budget-cost-elements"></a>Budsjettkostnadselementer
+### Budsjettkostnadselementer
+<a id="budget-cost-elements" class="xliff"></a>
 
 Budsjettkostnadselementer brukes til å definere kostnadsdetaljer for en prognosestilling. Denne informasjonen inkluderer type kostnad, hvordan kostnad blir beregnet og om kostnadene skal fordeles på flere datoer når prognosestillingen er inkludert i en budsjettplan. 
 
@@ -78,7 +82,8 @@ Deretter legger Jodi til en kostnadsberegningslinje, angir datoene og en hovedko
 
 Til slutt legger Jodi til alle inntjeningskostnadselementer som brukes for grunnlønn som beregningsgrunnlag. Hennes budsjettkostnadselement er nå klart til å brukes.
 
-### <a name="compensation-groups"></a>Kompensasjonsgrupper
+### Kompensasjonsgrupper
+<a id="compensation-groups" class="xliff"></a>
 
 Kompensasjonsgrupper kan brukes til å gruppere prognosestillinger med liknende kompensasjonsattributter. De kan også brukes til å definere en prognosestillings inntekter og årlige økninger, og tilordne et sett med vanlige budsjettkostnadselementer. 
 
@@ -92,12 +97,14 @@ Feltene **Tidsplan for økning** og **Dato for økning** i kompensasjonsgruppen 
 
 Inntjeningskostnadselementet som er valgt for kompensasjonsgruppen, brukes når du oppretter inntekter for prognosestillingene i gruppen, inkludert grunnlønnen og eventuelle trinnøkninger. Feltet **Fast plan for kompensasjon** knytter kompensasjonsgruppen til en fast kompensasjonsplan i Personale. Denne koblingen kan tilordne en arbeiders informasjon om fast kompensasjon til en prognosestilling, og kan derfor gjøre budsjettplanlegging mer nøyaktig. Husk at strukturen for kompensasjonsrutenettet (nivåer og trinn) for kompensasjonsgruppen skal samsvare med strukturen i den faste kompensasjonsplanen. Ellers kan ikke systemet koble riktig kompensasjonsgruppe til den faste kompensasjonsplanen.
 
-## <a name="creating-forecast-positions"></a>Opprette prognosestillinger
+## Opprette prognosestillinger
+<a id="creating-forecast-positions" class="xliff"></a>
 [![Grafikk3](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
-### <a name="creating-forecast-positions-for-existing-positions"></a>Opprette prognosestillinger for eksisterende stillinger
+### Opprette prognosestillinger for eksisterende stillinger
+<a id="creating-forecast-positions-for-existing-positions" class="xliff"></a>
 
-For den mest nøyaktige budsjettplanleggingen kan du opprette prognosestillinger ved å bruke detaljer fra eksisterende stillinger i Microsoft Dynamics 365 for Operations, uavhengig av om stillingen er besatt eller ikke besatt. 
+For den mest nøyaktige budsjettplanleggingen kan du opprette prognosestillinger ved å bruke detaljer fra eksisterende stillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, uavhengig av om stillingen er besatt eller ikke besatt. 
 
 Funksjonen **Legg til eksisterende stillinger** viser alle stillingene for en organisasjon. Ved å angi **Per** dato kan du endre listen over stillinger slik at den inneholder stillingene som fantes på en dato i fortiden eller, mer vanlig, i fremtiden (for eksempel begynnelsen av neste budsjettsyklus). Velg en budsjettplanleggingsprosess og et budsjettplanscenario, velg stillinger i listen, og klikk deretter **OK** for å opprette prognosestillingene for de valgte stillingene. Vær oppmerksom på at du kan opprette bare én prognosestilling for hver eksisterende stilling i en budsjettplanleggingsprosess og et budsjettplanscenario. Du kan imidlertid opprette flere versjoner ved å tilordne forskjellige budsjettplanscenarioer. 
 
@@ -113,7 +120,8 @@ Innstillingen for alternativet **Tilordne en kompensasjonsgruppe** får priorite
 
 Et annet alternativ er å tilordne en jubileumsdato. Den valgte datoen (justert startdato, arbeiderstartdato, startdato for ansettelse eller ansiennitetsdato) fra den tilordnede arbeideren settes deretter som prognosestillingens jubileumsdato og brukes til informasjon og når lønnsøkninger genereres.
 
-### <a name="creating-new-forecast-positions"></a>Opprette nye prognosestillinger
+### Opprette nye prognosestillinger
+<a id="creating-new-forecast-positions" class="xliff"></a>
 
 Du kan opprette nye prognosestillinger på to måter: ved å kopiere en eksisterende prognosestilling og ved å opprette en helt ny prognosestilling. 
 
@@ -121,20 +129,24 @@ Når det velges en prognosestilling, velger du **Kopier den valgte prognosestill
 
 Du kan også opprette en helt ny prognosestilling. Velg en eksisterende jobb, og velg også budsjettplanleggingsprosessen og budsjettplanscenarioet. Du kan deretter legge til en hvilken som helst annen informasjon som du vil legge til. Igjen opprettes en ny stilling i Personale samtidig.
 
-## <a name="working-with-forecast-positions"></a>Arbeide med prognosestillinger
+## Arbeide med prognosestillinger
+<a id="working-with-forecast-positions" class="xliff"></a>
 [![Grafikk5](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
-### <a name="multiple-versions-of-a-forecast-position"></a>Flere versjoner av en prognosestilling
+### Flere versjoner av en prognosestilling
+<a id="multiple-versions-of-a-forecast-position" class="xliff"></a>
 
 Du kan endre prognosestillingene enten for å ta i bruk kjente endringer for budsjettsyklusen eller modellere foreslåtte endringer. En vanlig metode er å opprette et grunnleggende sett for prognosestillinger, opprette kopier av disse prognosestillingene, og deretter bruke kopiene for å modellere ulike endringer. Kopiene tilordnes til et annet budsjettplanscenario, men er, i hvert fall før det gjøres endringer, ellers identiske med prognosestillingene som de kopieres fra. Originalene og kopiene deler samme stilling i Personale. 
 
 Funksjonen **Kopier til scenario** gir denne funksjonaliteten. Legg merke til at hver stilling i Personale kan ha bare én prognosestilling i hvert budsjettplanscenario.
 
-### <a name="modifying-forecast-positions"></a>Endre prognosestillinger
+### Endre prognosestillinger
+<a id="modifying-forecast-positions" class="xliff"></a>
 
 Endringer som gjøres med prognosestillinger, er begrenset til disse prognosestillingene. Endringene påvirker ikke stillingspostene i Personale. De fleste endringene er også begrenset til prognosestillingen som blir redigert. Med andre ord er endringene spesifikke for budsjettplanleggingsprosessen og budsjettplanscenarioet som tilordnes. Unntaket er endringer av felt som deles for stillingen på tvers av prosesser og scenarier. Disse feltene inkluderer feltene i **Generelt** kategorien og **Finansdimensjoner** kategorien. Når disse feltene endres, vil de nye verdiene gjelde for stillingen i alle scenarier for budsjettplanlegging. Derfor lar disse feltene deg raskt oppdatere alle versjoner.
 
-#### <a name="budget-cost-elements"></a>Budsjettkostnadselementer
+#### Budsjettkostnadselementer
+<a id="budget-cost-elements" class="xliff"></a>
 
 Budsjettkostnadselementer gir den viktigste informasjonen for budsjettplaner: budsjettbeløpet og hovedkontoen. Budsjettbeløpet er beløpet som sendes til budsjettplanen når en prognosestilling er inkludert i en plan. Budsjettbeløpet beregnes og kan ikke endres direkte. Dette beløpet er det årlige beløpet eller en beregning av prosenten av det årlige beløpets grunnlagselementer (som definert i oppsettet av budsjettkostnadselementet). Beløpet beregnes deretter basert på antall dager i elementets datointervall (startdato til sluttdato) og etter verdien for **fulltidsekvivalens** (FTE) for prognosestillingen. 
 
@@ -146,13 +158,15 @@ Budsjettkostnadselementlinjene må omberegnes når FTE-verdien endres for progno
 
 Organisasjonen vurderer to alternativer for å redusere kostnadene for en regnskapsførerstilling. Ett alternativ er å avslutte stillingen delvis gjennom året. Det andre alternativet er å endre stillingen til halvtid for hele året. Brad har opprettet en prognosestilling for den eksisterende regnskapsførerstillingen i et grunnscenario. Han kopierer denne grunnleggende prognosestillingen til scenario A, angir avgangsdatoen til 31. mai og beregner på nytt. Brad overfører deretter den grunnleggende prognosestillingen til scenario B, endrer FTE-verdien til **0,50**, og beregner på nytt. Brad har nå tre versjoner, der hver har kostnadstotaler som er justert etter alternativene.
 
-#### <a name="assigning-a-compensation-group"></a>Tilordne en kompensasjonsgruppe
+#### Tilordne en kompensasjonsgruppe
+<a id="assigning-a-compensation-group" class="xliff"></a>
 
 Når du først tilordner en kompensasjonsgruppe til en prognosestilling, legges standard budsjettkostnadselementene kompensasjonsgruppen til. Hvis kostnadselementer allerede er tilordnet til prognosestillingen, beholdes disse kostnadselementene. Hvis en kompensasjonsgruppe allerede er tilordnet og endres, fjernes de eksisterende budsjettkostnadselementene og erstattes av settet fra kompensasjonsgruppen. 
 
 Når du velger et kompensasjonsnivå og -trinn, legges det til et kostnadselement for inntektsbudsjett (som definert i kompensasjonsgruppen). Det årlige beløpet beregnes ved å bruke satsen i det valgte nivået og trinnet, og de årlige timene i kompensasjonsgruppen (eller for en årlig basert lønn, hele beløpet i nivået og trinnet). Igjen beregnes dette beløpet etter kostnadselementlinjens datointervall og prognosestillingens FTE-verdi.
 
-#### <a name="generating-increases"></a>Generere økninger
+#### Generere økninger
+<a id="generating-increases" class="xliff"></a>
 
 Årlig økninger (én per kalenderår) kan opprettes automatisk for prognosestillinger som har en trinnbasert kompensasjonsgruppe tilordnet. Klikk **Generer økninger** for å legge til et kostnadselement for inntektsbudsjett på det nest høyeste trinnet. Startdatoen for det nye kostnadselementet for inntektsbudsjett er den planlagte økningsdatoen som vises på prognosestillingen. Denne datoen angis fra kompensasjonsgruppen på én av to måter. Hvis tidsplanen for kompensasjonsgruppens økning settes til **Fellesdato**, angis datoen for økning på kompensasjonsgruppen. Hvis tidsplanen for økning settes til **Jubileumsdato**, brukes jubileumsdatofeltet på prognosestillingen, og budsjettsyklusen forsyner året. Hvis det finnes flere kalenderår i en budsjettsyklus, legges det til flere økninger. 
 
@@ -160,7 +174,8 @@ Sluttdatoen for gjeldende kostnadselement for inntektsbudsjett oppdateres med da
 
 Hvis du klikker **Generer økninger** en gang til, kjøres prosessen på nytt, men den legger ikke til flere poster. Det opprettes bare én økning per kalenderår.
 
-#### <a name="changes-from-other-pages"></a>Endringer fra andre sider
+#### Endringer fra andre sider
+<a id="changes-from-other-pages" class="xliff"></a>
 
 Oppdateringer av prognosestillinger kan også komme fra andre områder, for eksempel konfigurasjonssidene for budsjettkostnadselementet og kompensasjonsgruppen. Du kan også endre prognosestillingene ved hjelp av masseoppdateringsprosessen. 
 
@@ -176,13 +191,15 @@ Ved å velge prognosestillingene og deretter klikke **Masseoppdatering** kan du 
 
 Omberegningsprosessen brukes automatisk på alle prognosestillinger som endres.
 
-## <a name="bringing-forecast-positions-into-budget-plans"></a>Overføre prognosestillinger til budsjettplaner
+## Overføre prognosestillinger til budsjettplaner
+<a id="bringing-forecast-positions-into-budget-plans" class="xliff"></a>
 
 [![Grafikk6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Formålet med å opprette og endre prognosestillingene er å legge dem til i budsjettplaner, slik at budsjettplanene omfatter de mest nøyaktige budsjettbeløpene. Det finnes to metoder for å legge til prognosestillingene i budsjettplaner. Du kan bruke enten en genereringsprosess eller en utvelgelsesprosess for budsjettplanen.
 
-### <a name="generating-a-budget-plan-from-forecast-positions"></a>Generere en budsjettplan fra prognosestillinger
+### Generere en budsjettplan fra prognosestillinger
+<a id="generating-a-budget-plan-from-forecast-positions" class="xliff"></a>
 
 Funksjonen **Generer budsjettplan fra prognosestillinger** oppretter eller oppdaterer budsjettplaner slik at de har budsjettbeløpene og FTE-antallene fra prognosestillinger. Budsjettbeløpene fra prognosestillingen blir budsjettplanlinjebeløp og samles etter finansdimensjonsverdier og gyldighetsdato. Genereringsprosessen tilordner kildeprognosestillingen til budsjettplanlinjen. Hvis du vil vise stillingen, kan du enten legge til prognosestillingen som en rad i budsjettplanoppsettet eller bruke forespørselen **Budsjettplanlinjer**. Hvis du vil hoppe over denne tilordningen, kan du angi alternativet **Inkluder stilling i budsjettplanlinje** som **Nei**. 
 
@@ -196,7 +213,8 @@ Som for andre prosesser for generering finnes det tre alternativer:
 -   **Erstatt eksisterende budsjettplanscenario** – Slett alle data i målbudsjettplanen i det valgte budsjettplanscenarioet og opprett nye linjer som inneholder dataene for den valgte prognosestillingen.
 -   **Oppdater eksisterende budsjettplanscenario, og tilføy nye data** – Oppdater eksisterende linjer i målplanen som samsvarer med kildelinjene, og legg også til nye linjer for nye data. Samsvar er basert på finanskontoen, dato, budsjettklasse og andre verdier, for eksempel prognosestillingen. Alle linjer som har et stillingsnummer som samsvarer med kildestillingsnummeret, erstattes med de nye linjene fra kilden.
 
-### <a name="selecting-forecast-positions"></a>Velge prognosestillinger
+### Velge prognosestillinger
+<a id="selecting-forecast-positions" class="xliff"></a>
 
 Du kan også legge budsjettbeløp for prognosestilling direkte i en budsjettplan. Bruk funksjonen **Legg til stillinger** over budsjettplanlinjene for å velge prognosestillingene som skal tas med. 
 
@@ -204,7 +222,8 @@ Budsjettplanscenarioene som du kan velge som kilde, er begrenset til scenariene 
 
 Denne utvelgelsesprosessen fungerer som alternativet **Oppdater eksisterende budsjettplanscenario, og tilføy nye data** for en prosess for generering. Alle eksisterende budsjettplanlinjer der prognosestillingen legges til, fjernes og erstattes med nye linjer som er basert på gjeldende status for prognosestillingen.
 
-#### <a name="date-options"></a>Datoalternativer
+#### Datoalternativer
+<a id="date-options" class="xliff"></a>
 
 For både genereringsprosessen og valgprosessen bestemmer startdatoen for budsjettkostnadselementlinjen den gyldige datoen for den tilsvarende budsjettplanlinjen. Feltet **Tildelingsmetode** på siden for konfigurasjon av budsjettkostnadselement angir tildelingsmetoden:
 
@@ -214,7 +233,8 @@ For både genereringsprosessen og valgprosessen bestemmer startdatoen for budsje
 -   **Ukentlig** – Logikken ligner på logikken i metodene **Månedlig** og **Kvartalsvis**. Budsjettbeløpet deles likt etter antall uker i datoområdet for å produsere et vanlig ukentlig beløp som tilordnes på den første dagen i hver uke. Hvis den første perioden er en delvis uke, beregnes beløpet for denne uken etter antall dager kostnaden er aktiv i denne uken, og resultatet tilordnes til startdatoen. Beløpet for den siste uken er forskjellen mellom det totale budsjettbeløpet og summen av alle andre uker. Derfor kan avrunding påvirke beløpet for den siste uken.
 -   **Annenhver uke** – Denne metoden er den samme som **Ukentlig**, men beregningene utføres for toukersperioder.
 
-#### <a name="changing-budget-plan-lines-that-have-forecast-positions"></a>Endre budsjettplanlinjer som har prognosestillinger
+#### Endre budsjettplanlinjer som har prognosestillinger
+<a id="changing-budget-plan-lines-that-have-forecast-positions" class="xliff"></a>
 
 Budsjettplanlinjer viser kilden til budsjettbeløpene (prognosestillingsnummeret), men er ikke koblet. Derfor vises ikke endringer i prognosestillingen på budsjettplanlinjen, og endringer i budsjettplanlinjen vises i prognosestillingen. Hvis du endrer en prognosestilling og vil at oppdateringene skal inkluderes i en budsjettplan, må du overføre prognosestillingen til planen på nytt. Husk imidlertid at denne prosessen fjerner alle linjer der denne prognosestillingen er tilordnet. Eventuelle endringer du har gjort i disse linjene fjernes derfor. 
 

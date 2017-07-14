@@ -1,16 +1,16 @@
 ---
-title: Administrere lagermedarbeidere
-description: "Denne artikkelen beskriver hvordan du kan bruke Microsoft Dynamics AX for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene."
+title: Administrere lagerarbeidere
+description: "Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,20 +18,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="manage-warehouse-workers"></a>Administrere lagermedarbeidere
+# Administrere lagerarbeidere
+<a id="manage-warehouse-workers" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan du kan bruke Microsoft Dynamics AX for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+Denne artikkelen beskriver hvordan du kan bruke Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 
 Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må han eller hun være knyttet til en arbeider i Personale. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
 
@@ -39,12 +40,14 @@ For å opprette en ny arbeidsbruker velger du siden **Arbeidere**, kategorien **
 
 Som en del av oppsettet for hver arbeidsbruker kan du også definere bestemte prosessarbeidsflyter. Du kan for eksempel bruke feltet **Er en syklustellingsansvarlig** for å angi om brukeren kan behandle justeringer av syklustellingsavvik under en tellingsoperasjon eller om disse justeringene først må vurderes av en annen person.
 
-## <a name="defining-labor-standards"></a>Definere arbeidsstandarder
+## Definere arbeidsstandarder
+<a id="defining-labor-standards" class="xliff"></a>
 Siden **Arbeidsstandarder** lar deg definere beregningsmetodene som systemet bruker til å beregne den estimerte tiden som en bestemt type arbeid skal kreve. Du kan angi denne definisjonen på et generelt nivå eller på et bestemt nivå. Du kan for eksempel definere tiden som er nødvendig for å behandle en salgsordreplukking per vekt for en bestemt enhetsdefinisjon når en bestemt plukkeprosess brukes. Samtidig kan du registrere tiden, basert på en annen beregningsmåte, for plasseringsoperasjonen for lagerbeholdningen som er plukket. 
 
 Hvis du vil aktivere arbeidsstandardene som du har definert, må du velge alternativet **Tillat arbeidsstandarder** for hvert lager der arbeidsstandarder vil bli brukt.
 
-## <a name="monitoring-and-controlling-warehouse-work"></a>Overvåke og kontrollere lagerarbeid
+## Overvåke og kontrollere lagerarbeid
+<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
 Siden **Alt arbeid** lar deg overvåke og vedlikeholde alt arbeid som er planlagt, pågår og fullført. Du kan oppdatere forskjellige prosesser, for eksempel tilordninger for lagerarbeidsbruker og arbeidsprioritet fra denne siden. Du kan også drille ned til detaljene som er knyttet til arbeidshodet og arbeidslinjene, for å få en forståelse av de forventede eller fullførte arbeidsprosessene. 
 
 Hvis du aktiverer alternativet **Arbeidsstandarder**, kan du se den beregnede estimerte tiden for jobben. Deretter, når arbeidet er behandlet, vises også faktisk tid for hver arbeidsoperasjon. På denne måten kan du sammenligne beregningene av anslått tid med faktisk tid. 

@@ -1,16 +1,16 @@
 ---
 title: Vise og utforme finansrapporter
-description: "Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 for Operations."
+description: "Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 for Finance and Operations."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,22 +18,24 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Vise og utforme finansrapporter
+# Vise og utforme finansrapporter
+<a id="view-and-design-financial-reports" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 for Operations. Finansrapportering består av en visningsopplevelse i Dynamics 365 Operations og en ettklikks rapportutforming som lar deg opprette og redigere økonomiske rapporter.  
+Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 for Finance and Operations. Finansrapportering består av en visningsopplevelse i Finance and Operations og en ettklikks rapportutforming som lar deg opprette og redigere økonomiske rapporter.  
 
-<a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Øvelse 1: Generere og utforske en standard finansrapport
+Øvelse 1: Generere og utforske en standard finansrapport
+<a id="exercise-1-generate-and-explore-a-default-financial-report" class="xliff"></a>
 -----------------------------------------------------------
 
 I denne øvelsen skal du generere og utforske en eksisterende standardrapport. Denne rapporten inneholder alle kontoene og også kontoegenskaper (attributter) for kontoene. Du skal drille ned i transaksjonsdetalj, bruke dimensjonsfiltre og endre valutaen i rapporten. Først skal vi oppdatere visningsrekkefølgen til dimensjoner for finansrapportering. Dermed kan du velge hvordan dimensjonene skal vises, og ikke bare når du utformer og viser finansrapporter.
@@ -59,18 +61,19 @@ I denne øvelsen skal du generere og utforske en eksisterende standardrapport. D
 13. Velg **Rapportalternativer**.
 14. Velg **Legg til et dimensjonsfilter**, og velg **Forretningsenhet**.
 15. Skriv inn 001 i feltet, og velg **OK**. Rapporten viser nå bare dataene for forretningsenhet 001. Dette er en tilpasset visning av rapporten, og visningen er ikke tilgjengelig for andre.
-16. Lukk den filtrerte rapporten. Finansrapporter kan vises i en hvilken som helst valuta som er lagt til i Dynamics 365 for Operations.
+16. Lukk den filtrerte rapporten. Finansrapporter kan vises i en hvilken som helst valuta som er lagt til i Finance and Operations.
 17. Velg **Valuta**, og velg deretter **EUR**. Rapporten vises nå i euro. Valutakoder eller valutasymboler som er inkludert i rapportutformingen, vises nå i valutaen som er brukt. Hvis ingen valutasymbol er definert for en valuta, vises ikke valutasymbolet.
 18. Lukk rapporten **FIN-detalj**.
 19. Lukk **Rapportutforming**.
 
-## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Øvelse 2: Legge til ytterligere kontoegenskaper i en rapportutforming
+## Øvelse 2: Legge til ytterligere kontoegenskaper i en rapportutforming
+<a id="exercise-2-add-additional-account-properties-to-a-report-design" class="xliff"></a>
 I denne øvelsen skal du endre en eksisterende standardrapport. Du skal oppdatere begge raddefinisjonene slik at de omfatter alle kontoene, og du skal oppdatere kolonnedefinisjonen slik at den inneholder kontoattributter. Når oppdateringene er fullført, skal du generere den nyopprettede rapporten og utforske den. Vi begynner i Finansrapporter-listen.
 
 1.  Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
 2.  Velg raden for rapporten kalt **Råbalansesammendrag – standard**.
 3.  Velg **Rediger**. **Råbalansesammendrag – standard** åpnes i Rapportutforming.
-4.  Velg **Fil**, **Lagre som**, og gi rapporten navnet Detaljert råbalanse med attributter. Obs!  Hver gang det opprettes en ny rapport i Rapportutforming, oppdateres Finansrapporter-listen Dynamics 365 for Operations.
+4.  Velg **Fil**, **Lagre som**, og gi rapporten navnet Detaljert råbalanse med attributter. Obs!  Hver gang det opprettes en ny rapport i Rapportutforming, oppdateres Finansrapporter-listen i Finance and Operations.
 5.  Fra rapportdefinisjonen velger du ikonet for raddefinisjon for å åpne **Råbalanse – standard raddefinisjon**.
 6.  Lagre raddefinisjonen som **Detaljert råbalanse med attributter**
 7.  Plasser markøren i rad 50, velg **Rediger** og deretter **Sett inn rader fra dimensjoner**. Du kan bruke Sett inn rader fra dimensjoner til å velge hvilke dimensjoner du vil ha i raddefinisjonen. I denne øvelsen skal vi bygge raddefinisjonen ved hjelp av Hovedkonto.
@@ -100,7 +103,8 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal oppdater
 25. Lukk rapporten **Detaljert råbalanse med attributter**.
 26. Lukk **Rapportutforming**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Øvelse 3: Opprette en flerdimensjonal rapport ved hjelp av et rapporteringstre
+## Øvelse 3: Opprette en flerdimensjonal rapport ved hjelp av et rapporteringstre
+<a id="exercise-3-create-a-multidimensional-report-using-a-reporting-tree" class="xliff"></a>
 I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette et rapporteringstre og legge til en rapportdefinisjon for å produsere et resultatregnskap for kostsenter/avdeling. Når oppdateringene er fullført, skal du generere resultatregnskapet for kostsenter/avdeling og utforske rapporten ved å bruke rapporteringstreet. Vi begynner i Finansrapporter-listen.
 
 1.  Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
@@ -136,7 +140,8 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette
 31. Lukk **Resultatregnskap – standard**.
 32. Lukk **Rapportutforming**.
 
-## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Øvelse 4: Opprette en konsolidert rapport ved hjelp av et organisasjonshierarki
+## Øvelse 4: Opprette en konsolidert rapport ved hjelp av et organisasjonshierarki
+<a id="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy" class="xliff"></a>
 I denne øvelsen skal du endre en eksisterende standardrapport. Du skal legge til et organisasjonshierarki i rapportdefinisjonen for å produsere et konsolidert resultatregnskap og balanse. Når oppdateringene er fullført, skal du generere den konsoliderte rapporten og utforske den ved å bruke rapporteringstreet. Vi begynner i Finansrapporter-listen.
 
 1.  Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
@@ -155,7 +160,8 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal legge ti
 14. Lukk **Konsolidert balanse og resultatregnskap side ved side**.
 15. Lukk **Rapportutforming**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Øvelse 5: Opprette en side-ved-side-rapport for avdeling
+## Øvelse 5: Opprette en side-ved-side-rapport for avdeling
+<a id="exercise-5-create-a-sidebyside-departmental-report" class="xliff"></a>
 I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-rapport med resultatregnskap for avdeling. Du skal bruke en eksisterende raddefinisjon, men opprette en ny rapportdefinisjon og en ny kolonnedefinisjon som bruker dimensjonsfiltre. Vi begynner i Finansrapporter-listen.
 
 1.  Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
@@ -182,9 +188,10 @@ I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-r
 17. Endre detaljnivået til **Økonomisk, Konto og Transaksjon**.
 18. **Lagre** endringene, og **generer**. Når rapporten er generert og åpnes, kan du utforske den.
 
-## <a name="additional-resources"></a>Tilleggsressurser
-[Finansrapportering](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Vise finansrapporter](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+## Tilleggsressurser
+<a id="additional-resources" class="xliff"></a>
+[Finansrapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Vise finansrapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

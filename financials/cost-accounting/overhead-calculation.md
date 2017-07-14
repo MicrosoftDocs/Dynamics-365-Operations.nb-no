@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="overhead-calculation"></a>Beregning av indirekte kostnader
+# Beregning av indirekte kostnader
+<a id="overhead-calculation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver de vanlige prosessene for beregning og tildeling av indirekte kostnader.
 
-<a name="term-definition"></a>Termdefinisjon
+Termdefinisjon
+<a id="term-definition" class="xliff"></a>
 ---------------
 
 Indirekte kostnader er kostnadene som påløper for å drive en virksomhet, men som ikke kan direkte tilskrives en bestemt forretningsaktivitet, et produkt eller en tjeneste. Indirekte kostnader gir viktig støtte for generering av fortjenesteskapende aktiviteter. Her er noen eksempler på indirekte kostnader:
@@ -44,7 +46,8 @@ Indirekte kostnader er kostnadene som påløper for å drive en virksomhet, men 
 -   Elektrisitet
 -   Administrative lønninger
 
-## <a name="overhead-calculation-overview"></a>Oversikt over indirekte kostnader
+## Oversikt over indirekte kostnader
+<a id="overhead-calculation-overview" class="xliff"></a>
 Beregning av indirekte kostnader kjører policyene for kostnadsregnskap i riktig rekkefølge. Du kan kjøre beregning av indirekte kostnader flere ganger for samme regnskapsperiode hvis policyer for kostnadsregnskap er endret eller bestemte feil er oppdaget. Hver kjøring av beregningen av indirekte kostnader lagres og mottar en unik versjons-ID som lar deg sammenligne beregningene i forskjellige versjoner. Kostnadsoppføringene som de indirekte kostnadene genererer mottar en regnskapsdato. Denne regnskapsdatoen samsvarer med sluttdatoen for regnskapsperioden som skal brukes i beregningen. Den unike versjons-ID-en består av følgende elementer:
 
 -   Versjonstype
@@ -56,7 +59,8 @@ Beregning av indirekte kostnader kjører policyene for kostnadsregnskap i riktig
 Beregning av indirekte kostnader kjøres uavhengig av versjonen. Derfor kan du beregne budsjettversjonen før den faktiske versjonen. Beregning av indirekte kostnader består av fire trinn, som vist i illustrasjonen nedenfor. I hvert trinn opprettes et journalhode med journaloppføringer. Dette journalhodet inneholder inndataene for hvert beregningstrinn. Policyer og regler som brukes på hver journallinje, og kostposter, genereres som utdata. Derfor må du alltid full sporbarhet. 
 [![Beregning av indirekte kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
-## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og tildele den indirekte kostnaden for strøm
+## Beregne og tildele den indirekte kostnaden for strøm
+<a id="calculate-and-allocate-the-electricity-overhead-cost" class="xliff"></a>
 I finansbokføring registreres noen kostnader, for eksempel strøm, som et engangsbeløp. Derfor finnes ikke detaljert lederinnsikt for kostnadsregnskap. For å gi riktig lederinnsikt på tvers av alle organisasjonsenheter og nivåer i kostnadsregnskap, må kostnader flyte gjennom organisasjonsenhetene. Denne flyten må være basert på en nøyaktig oversikt over forbruk eller en virkelig vurdering. I økonomimodulen kan en strømkostnad posteres som vist i tabellen nedenfor.
 
 <table>
@@ -80,11 +84,13 @@ I finansbokføring registreres noen kostnader, for eksempel strøm, som et engan
 </tbody>
 </table>
 
-### <a name="step-1-process-the-cost-behavior-calculation"></a>Trinn 1: Behandle beregning av kostnadsatferd
+### Trinn 1: Behandle beregning av kostnadsatferd
+<a id="step-1-process-the-cost-behavior-calculation" class="xliff"></a>
 
 Når kostnadsoppføringer importeres fra kildedataene, mottar de som standard klassifiseringen **Uklassifisert** for kostnadsatferd i kostnadsregnskap. Ved å bruke policyregler for kostnadsatferd, kan du klassifisere kostnadsoppføringer som **Faste kostnader** eller **Variable kostnader**.
 
-#### <a name="define-the-cost-behavior-rule"></a>Definere regelen for kostnadsatferd
+#### Definere regelen for kostnadsatferd
+<a id="define-the-cost-behavior-rule" class="xliff"></a>
 
 I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er basert på forbruk. Strømregninger samsvarer ofte med denne definisjonen. Når du betaler en bestemt fast gebyr, betaler du for forbruk per kilowattime (kWt). Hvis det faste gebyret for eksempel er 1 000,00, defineres regelen for kostnadsatferd slik:
 
@@ -92,7 +98,8 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
     -   0 &lt;= 1 000,00 = Fast
     -   1000,01 &lt; N = Variabel
 
-##### <a name="journal"></a>Journalen
+##### Journalen
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -115,7 +122,8 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+##### Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -140,7 +148,8 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kostnadsoppføringer
+##### Kostnadsoppføringer
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -194,11 +203,13 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
 
 Hvis du vil ha detaljert informasjon om kostnadsatferd, kan du se Policy for kostnadsatferd. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
 
-### <a name="step-2-process-the-cost-distribution-calculation"></a>Trinn 2: Behandle beregning av kostnadsdistribusjon
+### Trinn 2: Behandle beregning av kostnadsdistribusjon
+<a id="step-2-process-the-cost-distribution-calculation" class="xliff"></a>
 
 Kostnadsdistribusjon brukes til å omfordele kostnadene fra ett kostnadsobjekt til ett eller flere kostnadsobjekter ved å bruke et relevant tildelingsgrunnlag. Forskjellen mellom kostnadsdistribusjon og kostnadsfordeling er at kostnadsdistribusjon alltid skjer på nivået for primærkostnadselementet for den opprinnelige kostnaden.
 
-#### <a name="define-the-cost-distribution-rule"></a>Definere regelen for kostnadsdistribusjon
+#### Definere regelen for kostnadsdistribusjon
+<a id="define-the-cost-distribution-rule" class="xliff"></a>
 
 I finansbokføring registreres ofte strømkostnader som et engangsbeløp. I kostnadsregnskap er ikke denne tilnærmingen detaljert nok. Variable kostnader skal fordeles rettferdig til de individuelle kostnadsobjektene. Det mest logiske tildelingsgrunnlaget er strømforbruket (kWt). Det opprettes et statistisk dimensjonsmedlem med navnet Strøm, og strømforbruket registreres. Som standard blir alle statistiske dimensjonsmedlemmer tilgjengelige som tildelingsgrunnlag.
 
@@ -304,7 +315,8 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 </tbody>
 </table>
 
-##### <a name="journal"></a>Journalen
+##### Journalen
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -327,7 +339,8 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+##### Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -361,7 +374,8 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kostnadsoppføringer
+##### Kostnadsoppføringer
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -433,11 +447,13 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 
 Hvis du vil ha detaljert informasjon om kostnadsdistribusjon og tildelingsgrunnlag, kan du se Kostnadsdistribusjonspolicy og Tildelingsgrunnlag. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
 
-### <a name="step-3-process-the-overhead-rate-calculation"></a>Trinn 3: Behandle beregningen av indirekte kostnader
+### Trinn 3: Behandle beregningen av indirekte kostnader
+<a id="step-3-process-the-overhead-rate-calculation" class="xliff"></a>
 
 Satsen for indirekte kostnader brukes til å belaste ett eller flere spesifikke kostnadsobjekter. Tillegget er basert på en forhåndsdefinert kostnadssats og størrelsen fra det tilordnede tildelingsgrunnlaget. 
 
-#### <a name="define-the-overhead-rate"></a>Definer satsen for indirekte kostnader
+#### Definer satsen for indirekte kostnader
+<a id="define-the-overhead-rate" class="xliff"></a>
 
 Kostnadsobjekt CC001 Personale bidrar til et sett med interne prosjekter. Et statistisk dimensjonsmedlem med navnet Personaleprosjekter opprettes for å måle den brukte størrelsen.
 
@@ -518,7 +534,8 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="journal"></a>Journalen
+##### Journalen
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -541,7 +558,8 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a>Journaloppføringer (journaloppføringer for beregning av sats for indirekte kostnader)
+##### Journaloppføringer (journaloppføringer for beregning av sats for indirekte kostnader)
+<a id="journal-entries-journal-entries-for-overhead-rate-calculation" class="xliff"></a>
 
 <table>
 <thead>
@@ -567,7 +585,8 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kostnadsoppføringer
+##### Kostnadsoppføringer
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -621,11 +640,13 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 
 Hvis du vil ha mer informasjon om policyen for sats for indirekte kostnader, kan du se Policy for sats for indirekte kostnader og Tildelingsgrunnlag. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
 
-### <a name="step-4-process-the-cost-allocation-calculation"></a>Trinn 4: Behandle beregning av kostnadstildeling
+### Trinn 4: Behandle beregning av kostnadstildeling
+<a id="step-4-process-the-cost-allocation-calculation" class="xliff"></a>
 
-Tildelinger brukes til å tildele saldoen på et kostnadsobjekt til andre kostnadsobjekter ved å bruke et tildelingsgrunnlag. Microsoft Dynamics 365 for Operations støtter gjensidig tildelingsmetode. I den gjensidige tildelingsmetoden gjenkjennes fullstendig de gjensidige tjenestene som hjelpekostnadsobjekter utveksler. Systemet fastslår automatisk riktig rekkefølge for tildelingene. Saldoen på et kostnadsobjekt tildeles av ett enkelt tildelingsgrunnlag. Tildelinger på tvers av dimensjoner for kostnadsobjekter og deres respektive medlemmer, støttes. Tildelingsrekkefølgen styres av kostnadskontrollenheten. [![Gjensidige metode](./media/reciprocal-method.png)]
+Tildelinger brukes til å tildele saldoen på et kostnadsobjekt til andre kostnadsobjekter ved å bruke et tildelingsgrunnlag. Finance and Operations støtter gjensidig tildelingsmetode. I den gjensidige tildelingsmetoden gjenkjennes fullstendig de gjensidige tjenestene som hjelpekostnadsobjekter utveksler. Systemet fastslår automatisk riktig rekkefølge for tildelingene. Saldoen på et kostnadsobjekt tildeles av ett enkelt tildelingsgrunnlag. Tildelinger på tvers av dimensjoner for kostnadsobjekter og deres respektive medlemmer, støttes. Tildelingsrekkefølgen styres av kostnadskontrollenheten. [![Gjensidige metode](./media/reciprocal-method.png)]
 
-#### <a name="define-the-cost-allocation"></a>Definere kostnadstildelingen
+#### Definere kostnadstildelingen
+<a id="define-the-cost-allocation" class="xliff"></a>
 
 Her er et enkelt eksempel som forklarer hvordan du kan spore kostnadsflyten. Kostnadsobjekt CC001 Personale bidrar til flere kostnadsobjekter. Et statistisk dimensjonsmedlem med navnet Personaletjenester opprettes for å måle den brukte størrelsen.
 
@@ -712,7 +733,7 @@ Kostnadsobjekt CC004 Emballasje bidrar til flere kostnadsobjekter. Et statistisk
 </thead>
 <tbody>
 <tr>
-<td>Prod 1</td>
+<td>Produkt 1</td>
 <td>Produkt 1</td>
 <td>80</td>
 </tr>
@@ -724,7 +745,7 @@ Kostnadsobjekt CC004 Emballasje bidrar til flere kostnadsobjekter. Et statistisk
 </tbody>
 </table>
 
-**Obs!** I Dynamics 365 for Operations kan statistiske målinger, som produksjonstimer som produktet bruker, avledes fra kildedataene. Hvis du vil ha mer informasjon om statistiske målleverandører, kan du se Maler for leverandør av statistisk måling. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.) Tabellen nedenfor viser resultatet når personaletjenestene brukes som tildelingsgrunnlag for totale kostnader (faste kostnader og variable kostnader).
+**Obs!** I Finance and Operations kan statistiske målinger, som produksjonstimer som produktet bruker, avledes fra kildedataene. Hvis du vil ha mer informasjon om statistiske målleverandører, kan du se Maler for leverandør av statistisk måling. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.) Tabellen nedenfor viser resultatet når personaletjenestene brukes som tildelingsgrunnlag for totale kostnader (faste kostnader og variable kostnader).
 
 <table>
 <thead>
@@ -932,7 +953,8 @@ Tabellen nedenfor viser resultatet når emballasjetjenestene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+##### Journaloppføringer (journaloppføringer for saldo for kostnadsobjekt)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -955,7 +977,8 @@ Tabellen nedenfor viser resultatet når emballasjetjenestene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="journal-lines"></a>Journallinjer
+##### Journallinjer
+<a id="journal-lines" class="xliff"></a>
 
 <table>
 <thead>
@@ -1079,7 +1102,8 @@ Tabellen nedenfor viser resultatet når emballasjetjenestene brukes som tildelin
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kostnadsoppføringer
+##### Kostnadsoppføringer
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -1329,7 +1353,8 @@ Tabellen nedenfor viser resultatet når emballasjetjenestene brukes som tildelin
 </tbody>
 </table>
 
-## <a name="conclusion"></a>Konklusjon
+## Konklusjon
+<a id="conclusion" class="xliff"></a>
 I finansbokføring blir en kostnad på 10 000,00 for strøm postert til en midlertidig kostnadssenter-ID. Derfor vet regnskapsførere at denne kostnaden må tildeles. I kostnadsregnskap flyter kostnadene på tvers av organisasjonsenheter og -nivåer, basert på policyene og reglene som brukes. Hver kostnad er tilknyttet et tildelingsgrunnlag som gir best mulig vurdering for kostnadsfordelingen.
 
 <table>

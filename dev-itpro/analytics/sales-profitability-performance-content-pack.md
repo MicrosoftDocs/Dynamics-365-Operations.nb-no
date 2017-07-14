@@ -1,15 +1,15 @@
 ---
 title: Resultat av salg og fortjeneste for Power BI-innhold
-description: "Dette emnet beskriver hva som er inkludert i Dynamics 365 for Operations - Resultat av salg og fortjeneste-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken."
+description: "Dette emnet beskriver hva som er inkludert i Power BI-innholdet Resultat av salg og fortjeneste. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
@@ -17,45 +17,49 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 357f7071d801b13518c83170f8d0e7946dd9dede
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 16fef86e330a392ddd888fcb46060c3e1efa87c5
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Resultat av salg og fortjeneste for Power BI-innhold
+# Resultat av salg og fortjeneste for Power BI-innhold
+<a id="sales-and-profitability-performance-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Resultat av salg og fortjeneste**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-Dette emnet beskriver hva som er inkludert i Dynamics 365 for Operations - Resultat av salg og fortjeneste-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken.
+## Oversikt
+<a id="overview" class="xliff"></a>
 
-<a name="overview"></a>Oversikt
---------
+Power BI-innholdet **Resultat av salg og fortjeneste** ble opprettet slik at salgsledere kan overvåke salghovedmål for omsetning, bruttofortjeneste og bruttofortjeneste. Den bruker salgstransaksjonsdata, og gir både en aggregert visning av salgstall for hele selskapet og en analyse av salgsresultat for kunder og produkter.
 
-Denne innholdspakken ble laget for salgssjefer for å overvåke salghovedmål for omsetning, bruttofortjeneste og bruttofortjeneste. Den bruker salgstransaksjonsdata fra Dynamics 365 for Operations, og gir både en aggregert visning av salgstall for hele selskapet og en analyse av salgsresultat for kunder og produkter. Ved å utheve endringer i inntekts- og fortjenestevekst over tid, kan rapporter brukes til å varsle ledere om positive og negative trender for enkeltkunder og -produkter. For kategori- og distriktsledere kan det være nyttig å ha diagrammer som sammenligner inntekter og lønnsomhet for ulike produktkategorier og kundegrupper med hverandre for å sortere ut etternølere og ledere. En omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde. Resultat av salg og fortjeneste-innholdspakken lar salgssjefer analysere salgsresultat ved å:
+Rapporter uthever endringer i inntekts- og fortjenestevekst over tid. Derfor kan de brukes til å varsle ledere om positive og negative trender for individuelle kunder og produkter. I tillegg sammenligner diagrammer inntekter og lønnsomhet over ulike produktkategorier og kundegrupper med hverandre. Kategori- og distriktsledere kan derfor identifisere etternølere og ledere. Til slutt, en omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder. Dette gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde. 
+
+**Resultat av salg og fortjeneste**-innholdet lar salgssjefer analysere salgsresultat på følgende måter:
 
 -   Inntekt, hittil i år (etter kundegruppe og enkeltkunder, salgkategorier og enkeltprodukter og områder)
 -   Inntektsendring, årlig (etter kundeområder og salgskategorier)
 
-Lønnsomhet kan analyseres etter:
+Fortjenesten kan analyseres på følgende måter:
 
 -   Bruttofortjeneste og fortjenestemargin (etter kundegrupper og salgskategorier for produkt)
 -   Bruttofortjenesteendring, årlig
 -   Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
-## <a name="accessing-the-content-pack"></a>Tilgang til innholdspakken
-Resultat av salg og fortjeneste-innholdspakken for Power BI publiseres som et implementeringsaktiva i Lifecycle Services (LCS) og er tilgjengelig fra Dynamics 365 for Operations. Hvis du vil ha mer informasjon om hvordan du får tilgang til og åpner Power BI-rapporter, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md).
-**Obs!** KB 4011327 er en forutsetning for Power BI-innholdet. Når du logger deg på Lifecycle Services, kan du få tilgang til KB her: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
+## Tilgang til Power BI-innhold
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises **Resultat av salg og fortjeneste** for Power BI-innhold på siden **Resultat av salg og fortjeneste** (**Salg og markedsføring** > **Forespørsler og rapporter** > **Analyse av salgsytelse** > **Resultat av salg og fortjeneste**). 
 
-## <a name="metrics-included-in-the-content-pack"></a>Mål som er inkludert i innholdspakken
-Resultat av salg og fortjeneste-innholdspakken inneholder en rapport som består av et sett med mål som vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
+## Mål som er inkludert i Power BI-innholdet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+**Resultat av salg og fortjeneste** for Power BI-innhold omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
 
-|                        |                                            |                                                         |
+| Rapportside            | Diagrammer                                     | Fliser                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Rapportside**        | **Diagrammer**                                 | **Fliser**                                               |
 | Inntekt etter kunde    | De ti viktigste kundene etter inntekt                | Totalinntekt                                           |
 |                        | Total inntekt etter kundegruppe            | Årlig inntekstvekst                                      |
 |                        | Gjennomsnittlig kundeinntekt etter kundegruppe | Bruttofortjeneste                                            |
@@ -76,47 +80,48 @@ Resultat av salg og fortjeneste-innholdspakken inneholder en rapport som består
 
 \* Inntekt i år og forrige år. og vekst etter salgskategori.
 
-## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Dynamics 365 for Operations-data brukes til å fylle ut rapportsider i Resultat av salg og fortjeneste-innholdspakken. Dette representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL-database som er optimalisert for analyse. Les mer om dette i bloggen [Power BI-integrering med enhetsbutikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Dynamics AX 2012 og AX 2012 R3. For å plassere kubens aggregerte målinger i enhetsbutikken må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i bloggen [Power BI-integrering med enhetsbutikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Deaggregerte nøkkelmålingene for fakturalinjer, som du finner nedenfor, brukes som grunnlag for innholdspakken.
+## Utvide Power BI-innholdet
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
 
-|               |                                              |                                                 |                                              |                                          |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Enhet**    | **Aggregerte nøkkelmålinger**               | **Datakilde for Dynamics 365 for Operations** | **Felt**                                    | **Beskrivelse**                          |
-| Fakturalinjer | Omsetning                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløp i regnskapsvaluta            |
-|               | Solgte varers kost                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Kostnadsbeløp + justering                 |
-|               | Provisjonslinjebeløp – regnskapsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisjonsbeløp i regnskapsvaluta |
+Du kan finne **Resultat av salg og fortjeneste** for Power BI-innhold i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+
+Pass på at du laster ned **Resultat av salg og fortjeneste**-innholdet som gjelder for versjonen av Dynamics 365 du bruker.
+
+> [!NOTE]
+> Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
+## Forstå datamodellen og enheter
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 
+
+De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+
+De aggregerte nøkkelmålingene for fakturalinjer, som du finner nedenfor, brukes som grunnlag for innholdspakken.
+
+| Enhet        | Aggregerte nøkkelmålinger                   | Datakilde for Dynamics 365                    | Felt                                        | beskrivelse                                   |
+|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
+| Fakturalinjer | Omsetning                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløpet i regnskapsvaluta            |
+|               | Solgte varers kost                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Summen av kostbeløp og justering.    |
+|               | Provisjonslinjebeløp – regnskapsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisjonsbeløpet i regnskapsvalutaen. |
 
 Tabellen nedenfor viser aggregerte nøkkelmålinger for fakturalinjeenheten som brukes til å opprette flere beregnede målinger i datasettet for innholdspakken.
 
-|                   |                                                                                                  |
+| Mål           | Beregning                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Måling**       | **Beregnet som**                                                                                |
 | Bruttofortjeneste      | SUM(Inntekt – Vareforbruk – Provisjon – Merverdiavgift (inkludert i kundefakturalinjebeløp)          |
 | Bruttofortjeneste      | SUM(Bruttofortjeneste / (Inntekt - Merverdiavgift (inkludert i kundefakturalinjebeløp)))             |
 | Inntekt forrige år | Inntekt forrige år = CALCULATE(SUM('Fakturalinjer'\[Inntekt\]), SAMEPERIODLASTYEAR((Datoer\[Dato\]) |
 
-Nøkkeldimensjonene nedenfor i **salgskuben** brukes som filtre kan dele opp de aggregerte målingene for å gi flere detaljer og dypere analytisk innsikt.
+Nøkkeldimensjonene nedenfor i salgskuben brukes som filtre for å dele opp de aggregerte målingene, slik at du kan få flere detaljer og dypere analytisk innsikt.
 
-|                  |                                                      |
+| Enhet           | Eksempler på attributter                               |
 |------------------|------------------------------------------------------|
-| **Enhet**       | **Eksempler på attributter**                           |
 | Kunder        | Kundegrupper, kundeområder, adresse, bransje |
 | Produkter         | Produktnummer, produktnavn, navn på varegrupper       |
 | Salgskategorier | Navn på salgskategorier                                 |
 | Juridiske enheter   | Navn på juridiske enheter                                   |
 | Datoer            | Datoer                                                |
 
-Innholdspakken viser data for gjeldende kalenderår som standard, men du kan åpne delen med rapportfiltre og endre datofilteret. Du kan også endre firmafilteret.
-
-## <a name="additional-resources"></a>Tilleggsressurser
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
-
--   [Dataenheter](..\data-entities\data-entities.md)
--   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Legge til Power BI-fliser i arbeidsområder](configure-power-bi-integration.md)
-
-
-
-
+Som standard viser innholdspakkedataene for inneværende kalenderår. Du kan imidlertid endre datofilteret i delen for rapportfiltre. Du kan også endre firmafilteret.
 

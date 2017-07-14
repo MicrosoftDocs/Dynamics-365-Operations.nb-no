@@ -3,14 +3,14 @@ title: Importer valutakurser
 description: "Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig å konvertere den utenlandske valutaen til den lokale valutaen. Dette betyr at det kreves oppdaterte valutakurser for ulike valutaer. Dette emnet gir en oversikt over de nødvendige innstillingene og behandling for import av referansekurser for utenlandsk valuta publisert på Internett ved valutakursleverandører, for eksempel den europeiske sentralbanken og sentralbanken i Russland."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 69a622f54581504989504a06f90d443a98ad2f63
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-currency-exchange-rates"></a>Importer valutakurser
+# Importer valutakurser
+<a id="import-currency-exchange-rates" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +36,9 @@ Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig
 
 Delene nedenfor beskriver informasjonsflyten som brukes til å konfigurere og behandle importen av valutakurser.
 
-## <a name="configure-an-exchange-rate-provider"></a>Konfigurer en valutakursleverandør
-Før du kan importere valutakurser, må du definere informasjonen som kreves av leverandører som tilbyr valutakursene. Bruk siden **Konfigurer valutakursleverandører** til å velge valutakursleverandører. Noen valutakursleverandører er inkludert i demodataene i Microsoft Dynamics 365 for Operations. Følgende tabell inneholder beskrivelser av kontrollene på denne siden.
+## Konfigurer en valutakursleverandør
+<a id="configure-an-exchange-rate-provider" class="xliff"></a>
+Før du kan importere valutakurser, må du definere informasjonen som kreves av leverandører som tilbyr valutakursene. Bruk siden **Konfigurer valutakursleverandører** til å velge valutakursleverandører. Noen valutakursleverandører er inkludert i demodataene i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Følgende tabell inneholder beskrivelser av kontrollene på denne siden.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +47,8 @@ Før du kan importere valutakurser, må du definere informasjonen som kreves av 
 | **Nøkkel**   | Den unike identifikatoren for del av konfigurasjonsinformasjonen som kreves av leverandøren. Denne informasjonen legges til automatisk for hver valutakursleverandør du legger til når du klikker **Legg til**-knappen. |
 | **Verdi** | Informasjon for hver nøkkel. Denne informasjonen legges til for hver valutakursleverandør du legger til når du klikker **Legg til**-knappen.                                                                                         |
 
-## <a name="import-currency-exchange-rates"></a>Importer valutakurser
+## Importer valutakurser
+<a id="import-currency-exchange-rates" class="xliff"></a>
 Du kan importere valutakursene fra kilden for valutakursleverandører, og definere dem på **Valutakurser**-siden. Bruk siden **Importer valutakurser** til å importere valutakurser. Følgende tabell inneholder beskrivelser av feltene som er nødvendige for å utføre importen.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |

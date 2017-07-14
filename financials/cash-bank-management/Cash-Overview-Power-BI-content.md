@@ -1,0 +1,77 @@
+---
+title: "Power BI-innholdet Kontantstrømoversikt"
+description: "Dette emnet beskriver Power BI-innholdet Kontantstrømoversikt. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+author: saraschi2
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.region: Global
+ms.author: saraschi
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: e969c2033463d565ce782c7dc8cfc4b458349289
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/20/2017
+
+---
+
+# Power BI-innholdet Kontantstrømoversikt
+<a id="cash-overview-power-bi-content" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Dette emnet beskriver Microsoft Power BI-innholdet **Kontantstrømoversikt**. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+
+## Oversikt
+<a id="overview" class="xliff"></a>
+
+Power BI-innholdet **Kontantstrømoversikt** ble opprettet for personer som er ansvarlige for kontanter i organisasjonen. Power BI-innholdet **Kontantstrømoversikt** gir oversikt over kontantstrømmen. Det gir i tillegg prognoser som kan hjelpe deg å ta bedre beslutninger og derfor forbedre tilstanden til kontantstrømmen. Du kan analysere kontanter etter juridisk enhet, valuta og bankkonto for å få en bedre forståelse av overskudd og underskudd.
+
+## Tilgang til Power BI-innhold
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+
+Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises rapporter fra Power BI-innholdet **Kontantstrømoversikt** i arbeidsområdene **Kontantstrømoversikt** og **Bank**.
+
+## Rapporter som er inkludert i Power BI-innholdet
+<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i Power BI-innholdet **Kontantstrømoversikt**.
+
+| Rapporter                                | Innhold |
+|---------------------------------------|----------|
+| Kontantstrømoversikt – alle firmaer         | <ul><li>Innflyt og utflyt i systemvaluta</li><li>Anslåtte valutasaldoer</li><li>Total banksaldo i systemvaluta</li><li>Saldo etter juridisk enhet</li><li>Dagens faktiske saldo i forhold til anslått saldo i bankkontovaluta</li></ul> |
+| Kontantstrømoversikt – gjeldende firma       | <ul><li>Innflyt og utflyt i regnskapsvaluta</li><li>Anslåtte valutasaldoer</li><li>Total banksaldo i regnskapsvaluta</li><li>Dagens faktiske saldo i forhold til anslått saldo i bankkontovaluta</li></ul> |
+| Kontantstrømprognose – alle firmaer    | <ul><li>Innflyt og utflyt i systemvaluta</li><li>Sammendrag av daglig prognose</li><li>Prognosedetaljer</li></ul> |
+| Kontantstrømprognose – valutafirma | <ul><li>Innflyt og utflyt i regnskapsvaluta</li><li>Daglig sammendrag av prognose</li><li>Prognosedetaljer</li></ul> |
+| Valutaprognose                     | <ul><li>Anslåtte valutasaldoer</li><li>Daglig sammendrag av valuta</li><li>Prognosedetaljer</li></ul> |
+| Banksaldoer                         | <ul><li>Total banksaldo i systemvaluta</li><li>Saldo etter juridisk enhet</li><li>Dagens faktiske saldo i forhold til anslått saldo i bankkontovaluta</li><li>Saldo etter bankkonto</li><li>Saldo etter valuta</li></ul> |
+
+## Utvide Power BI-innholdet
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Du kan gi personer som ikke logger på Dynamics 365, gode analyser ved å bruke innholdspakkene som er tilgjengelige i Lifecycle Services (LCS). Disse innholdspakkene kan endres slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publiseres på Power BI.com-leieren for analyse. 
+
+Du kan finne Power BI-innholdet **Kontantstrømoversikt** i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+
+## Forstå datamodellen og enheter
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+
+Tabellen nedenfor viser enhetene som Power BI-innholdet **Kontantstrømoversikt** er basert på.
+
+| Enhet                                                                          | Innhold |
+|---------------------------------------------------------------------------------|----------|
+| LedgerCovLiquidityMeasurement\_Company                                          | Selskaper til å filtrere rapporter etter |
+| LedgerCovLiquidityMeasurement\_Date                                             | Datoer å filtrere rapporter etter |
+| LedgerCovLiquidityMeasurement\_LedgerCovForecastActual                          | Faktisk banksaldo i forhold til sist anslåtte banksaldo |
+| LedgerCovLiquidityMeasurement\_LedgerCovLiquidity                               | Detaljer om anslått transaksjon |
+| LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Summering av kontant innflyt, utflyt og saldo ved hjelp av regnskapsvalutaen for hvert firma |
+| LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summering av kontant innflyt, utflyt og saldo ved hjelp av systemvalutaen for alle firmaer |
+| LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summering av netto transaksjonsbeløp og saldo for valutaer ved hjelp av transaksjonsvalutaen |
+
+Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne diagrammene og rapportene som brukes i Power BI-innholdet **Kontantstrømoversikt**. Hvis du vil ha med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen Power BI-filen fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette innholdet. Når du har gjort endringene, kan du opprette innhold og instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
+
+

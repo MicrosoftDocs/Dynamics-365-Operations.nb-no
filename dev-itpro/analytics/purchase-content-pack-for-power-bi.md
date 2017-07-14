@@ -1,15 +1,15 @@
 ---
 title: "Kjøps- og forbruksanalyse-innhold for Power BI"
-description: "Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken."
-author: YuyuScheller
+description: "Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
@@ -17,35 +17,38 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ad0ee95113d05710cccc1a5e9d215b38244c2047
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Kjøps- og forbruksanalyse-innhold for Power BI
+# Kjøps- og forbruksanalyse-innhold for Power BI
+<a id="purchase-spend-analysis-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Dette emnet beskriver hva som er inkludert i **Kjøps- og forbruksanalyse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innholdspakken for Microsoft Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken.
+## Oversikt
+<a id="overview" class="xliff"></a>
 
-<a name="overview"></a>Oversikt
---------
-
-Kjøps- og forbruksanalyse-innholdspakken for Microsoft Power BI ble opprettet for innkjøpsledere og ledere som er ansvarlig for budsjetter. Den er utformet for å hjelpe dem med å holde øye med kjøpsutgifter. Den bruker kjøpstransaksjonsdata fra Microsoft Dynamics 365 for Operations, og gir både en aggregert visning av kjøpstall for hele selskapet og en analyse av kjøpsutgifter etter leverandør og vare. Rapportene uthever endringer i kjøpsutgifter over tid. Derfor kan de brukes til å varsle ledere om positive og negative utgiftstrender for individuelle leverandører og produkter. Diagrammer viser kjøpsutgifter for forskjellige innkjøpskategorier og leverandørgrupper. For kategori- og distriktsledere kan det være nyttig å bruke disse diagrammene til å identifisere endringer i forbruksatferd. Innholdspakken lag innkjøpssjefer og ledere som er ansvarlig for budsjetter, analysere kjøpsutgifter på følgende måter:
+**Kjøps- og forbruksanalyse**-innhold for Power BI ble utformet for å hjelpe innkjøpsledere og ledere som er ansvarlige for budsjetter, med å holde øye med kjøpsutgifter. Ledere kan analysere kjøpsutgifter på følgende måter:
 
 -   Kjøp hittil i år (etter leverandørgruppe og enkeltleverandører, innkjøpskategori og enkeltprodukter og leverandørplassering)
 -   Årlig kjøpsendring (etter leverandørgruppe og innkjøpkategori)
 
-## <a name="accessing-the-content-pack"></a>Tilgang til innholdspakken
-Kjøps- og forbruksanalyse-innholdspakken publiseres som et implementeringsaktiva i Microsoft Dynamics Lifecycle Services (LCS) og er tilgjengelig fra Microsoft Dynamics 365 for Operations. Hvis du vil ha mer informasjon om hvordan du får tilgang til og åpner Power BI-rapporter, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md).
-Obs!  KB 4011327 er en forutsetning for Power BI-innholdet. Når du logger deg på Lifecycle Services, kan du få tilgang til KB her: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+Innholdet bruker kjøpstransaksjonsdata, og gir både en aggregert visning av kjøpstall for hele selskapet og en analyse av kjøpsutgifter etter leverandør og vare. Rapportene uthever endringer i kjøpsutgifter over tid. Derfor kan de brukes til å varsle ledere om positive og negative utgiftstrender for individuelle leverandører og produkter. I tillegg viser diagrammer kjøpsutgifter for forskjellige innkjøpskategorier og leverandørgrupper. Kategori- og distriktsledere kan derfor bruke diagrammene til å identifisere endringer i forbruksatferd.
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Mål som er inkludert i innholdspakken
-Kjøps- og forbruksanalyse-innholdspakken inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
+## Tilgang til Power BI-innhold
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises **Kjøps- og forbruksanalyse**-innhold for Power BI på siden **Analyse av innkjøp og forbruk** (**Innkjøp og Leverandører** > **Forespørsler og rapporter** > **Analyse av innkjøpsytelse** > **Analyse av innkjøp og forbruk**). 
+
+## Mål som er inkludert i Power BI-innholdet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+**Kjøps- og forbruksanalyse**-innhold for Power BI inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene.
 
 <table>
 <colgroup>
@@ -133,14 +136,28 @@ Kjøps- og forbruksanalyse-innholdspakken inneholder en rapport som består av e
 
 \* Innkjøp i år og forrige år. og vekst etter innkjøpskategori
 
-## <a name="data-model-and-entities"></a>Datamodell og enheter
-Dynamics 365 for Operations-data brukes til rapporten i Kjøps- og forbruksanalyse-innholdspakken. Disse dataene representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL-database som er optimalisert for analyse. Hvis du vil ha mer informasjon om enhetsbutikken, kan du se blogginnlegget [Power BI-integrering med enhetsbutikken i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i innkjøpskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De aggregerte nøkkelmålingene er tilgjengelige direkte fra fakturalinjeenheten, og brukes som grunnlag for innholdspakken.
+## Utvide Power BI-innholdet
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse. 
 
-| Enhet        | Aggregerte nøkkelmålinger | Datakilde for Dynamics 365 for Operations | Felt              | beskrivelse                           |
-|---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
+Du kan finne **Kjøps- og forbruksanalyse**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+
+Pass på at du laster ned **Kjøps- og forbruksanalyse**-innholdet som gjelder for versjonen av Dynamics 365 du bruker.
+
+> [!NOTE]
+> Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
+## Datamodell og enheter
+<a id="data-model-and-entities" class="xliff"></a>
+Følgende data brukes til å fylle ut rapportsidene i **Kjøps- og forbruksanalyse**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+
+De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i innkjøpskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). De aggregerte nøkkelmålingene er tilgjengelige direkte fra fakturalinjeenheten, og brukes som grunnlag for innholdet.
+
+| Enhet        | Aggregerte nøkkelmålinger | Datakilde                                 | Felt              | beskrivelse                            |
+|---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
 | Fakturalinjer | Innkjøp                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Beløpet i regnskapsvaluta |
 
-Tabellen nedenfor viser viktige målinger som beregnes i innholdspakken fra fakturalinjeenheten.
+Tabellen nedenfor viser viktige målinger som beregnes i innholdet fra fakturalinjeenheten.
 
 | Mål               | Beregning                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
@@ -148,7 +165,7 @@ Tabellen nedenfor viser viktige målinger som beregnes i innholdspakken fra fakt
 | Kjøp forrige år    | Kjøp forrige år = CALCULATE(SUM('Fakturalinjer'\[Kjøp\]), SAMEPERIODLASTYEAR((Datoer\[Dato\])) |
 | Årlig innkjøpsvekst   | Årlig kjøpsvekst = \[Kjøp inneværende år\] – \[Kjøp forrige år\]                            |
 
-Nøkkeldimensjonene nedenfor i innholdspakken brukes som filtre for å dele opp de aggregerte målingene, slik at du kan få flere detaljer og dypere analytisk innsikt.
+Nøkkeldimensjonene nedenfor i innholdet brukes som filtre for å dele opp de aggregerte målingene, slik at du kan få flere detaljer og dypere analytisk innsikt.
 
 | Enhet                 | Eksempler på attributter                                |
 |------------------------|-------------------------------------------------------|
@@ -159,16 +176,4 @@ Nøkkeldimensjonene nedenfor i innholdspakken brukes som filtre for å dele opp 
 | Datoer                  | Datoer, årsforskyvning                                    |
 
 Som standard viser innholdspakkedataene for inneværende kalenderår. Du kan imidlertid endre datofilteret i delen for rapportfiltre. Du kan også endre firmafilteret.
-
-## <a name="additional-resources"></a>Tilleggsressurser
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
-
--   [Dataenheter](..\data-entities\data-entities.md)
--   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Legge til Power BI-fliser i arbeidsområder](configure-power-bi-integration.md)
-
-
-
-
 

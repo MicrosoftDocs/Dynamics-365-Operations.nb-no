@@ -3,7 +3,7 @@ title: Oversikt over avansert bankavstemming
 description: Denne artikkelen beskriver flyten for den avanserte bankavstemmingsprosessen. Funksjonen for den avanserte bankavstemmingen lar deg importere bankkontoutdrag som kan avstemmes automatisk fra banktransaksjoner.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: deba55d5e1e376f3f4063f372bfe853fcaf20498
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="advanced-bank-reconciliation-overview"></a>Oversikt over avansert bankavstemming
+# Oversikt over avansert bankavstemming
+<a id="advanced-bank-reconciliation-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,12 +43,12 @@ Funksjonen for avanserte bankavstemming lar deg importere bankkontoutdrag. Det i
     -   Funksjonen kan utvides til et hvilken som helst format.
 
 2.  Definer en nummerserie som skal brukes for avansert bankavstemming, og definer samsvarsregler for bankavstemmingen.
-    -   En samsvarsregel for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for Operations-banktransaksjonslinjer under avstemmingsprosessen. Avhengig av firmaets praksis, kan du definere én eller flere samsvarsregler for å automatisere og optimalisere avstemmingsprosessen.
+    -   En samsvarsregel for avstemming er et sett kriterier som brukes til å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-banktransaksjonslinjer under avstemmingsprosessen. Avhengig av firmaets praksis, kan du definere én eller flere samsvarsregler for å automatisere og optimalisere avstemmingsprosessen.
 
-3.  Avstem bankkontoutdrag med banktransaksjoner i Dynamics 365 for Operations.
+3.  Avstem bankkontoutdrag med banktransaksjoner i Finance and Operations.
     -   Utfør automatiske samsvaring og oppretting av avstemmingsjournaler.
-    -   Vis bankkontoutdrag og banktransaksjoner i Dynamics 365 for Operations ved siden av hverandre.
-    -   Bokfør banktransaksjoner i Dynamics 365 for Operations automatisk hvis de vises i et bankkontoutdrag, men ikke vises i Dynamics 365 for Operations.
+    -   Vis bankkontoutdrag og banktransaksjoner i Finance and Operations ved siden av hverandre.
+    -   Poster banktransaksjoner i Finance and Operations automatisk hvis de vises i et bankkontoutdrag, men ikke vises i Finance and Operations.
     -   Generer et avstemmingsutdrag.
 
 

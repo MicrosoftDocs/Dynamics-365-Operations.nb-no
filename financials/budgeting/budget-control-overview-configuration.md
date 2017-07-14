@@ -1,15 +1,15 @@
 ---
 title: Oversikt over budsjettkontroll
-description: "Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Operations, slik at du kan behandle økonomiske ressurser."
+description: "Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, slik at du kan behandle økonomiske ressurser."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
@@ -17,27 +17,29 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48649b891be72529e6045e48f9738fe68be6cffe
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
+# Oversikt over budsjettkontroll 
+<a id="budget-control-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Operations, slik at du kan behandle økonomiske ressurser.
+Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, slik at du kan behandle økonomiske ressurser.
 
-<a name="overview"></a>Oversikt
+Oversikt
+<a id="overview" class="xliff"></a>
 --------
 
-Budsjettkontroll i Microsoft Dynamics 365 for Operations støtter behandling av en organisasjons økonomiske ressurser ved hjelp av kontoplaner, arbeidsflyter, brukergrupper, kildedokumentene og journaler, konfigurerbar beregning av tilgjengelige midler, budsjettsykluser og terskelverdier. Når kontrollene er på plass, kan en organisasjon planlegge, måle, administrere og utarbeide prognoser for sine økonomiske ressursene i hele regnskapsåret. 
+Budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations støtter behandling av en organisasjons økonomiske ressurser ved hjelp av kontoplaner, arbeidsflyter, brukergrupper, kildedokumentene og journaler, konfigurerbar beregning av tilgjengelige midler, budsjettsykluser og terskelverdier. Når kontrollene er på plass, kan en organisasjon planlegge, måle, administrere og utarbeide prognoser for sine økonomiske ressursene i hele regnskapsåret. 
 
-Når budsjetter er godkjent i Dynamics 365 for Operations, kan du bruke budsjettplaner for å generere budsjettregisteroppføringer for å registrere utgiftsbudsjettet for en organisasjon. Du kan også opprette eller importere budsjettregisteroppføringer fra et tredjepartsprogram i stedet for å bruke funksjonaliteten for budsjettplanlegging. 
+Når budsjetter er godkjent i Dynamics 365 for Finance and Operations, kan du bruke budsjettplaner til å generere budsjettregisteroppføringer for å registrere utgiftsbudsjettet for en organisasjon. Du kan også opprette eller importere budsjettregisteroppføringer fra et tredjepartsprogram i stedet for å bruke funksjonaliteten for budsjettplanlegging. 
 
 Utgifter kan registreres ved hjelp av hovedkontoer og finansdimensjoner. Du kan konfigurere kontroll over de totale utgiftsene for å oppfylle organisasjonens retningslinjer og krav, ved å gruppere kombinasjoner av finansdimensjoner og hovedkontoer. 
 
@@ -53,16 +55,19 @@ Du kan du konfigurere budsjettkontroll basert på flere faktorer:
 -   **Beregningen av tilgjengelige budsjettmidler** – Skal dokumenter som innkjøpsrekvisisjoner (forhåndsdisposisjoner) og bestillinger (disposisjoner) tas med i beregningen av tilgjengelige budsjettmidler? Skal dokumenter som er i utkaststatus tas med i beregningen?
 -   **Tillatelse for overstyring** – Hvem har tilgang til å overskrider det tilgjengelige budsjettet?
 
-Budsjettkontroll er fullstendig integrert med Dynamics 365 for Operations. Derfor kan du vurdere det tilgjengelige budsjettet for både innkjøp planlagte og faktiske innkjøp. Budsjettforespørsler og rapporter er tilgjengelig. Derfor kan brukere evaluere budsjettet i hele budsjettsyklusen og kan foreta nødvendige justeringer etter behov, i form av budsjettendringer eller overføringer. Budsjettansvarlig kan også eksportere budsjettet og faktiske data til Microsoft Excel for å analysere og beregne etter behov.
+Budsjettkontroll er fullstendig integrert med Finance and Operations. Derfor kan du vurdere det tilgjengelige budsjettet for både innkjøp planlagte og faktiske innkjøp. Budsjettforespørsler og rapporter er tilgjengelig. Derfor kan brukere evaluere budsjettet i hele budsjettsyklusen og kan foreta nødvendige justeringer etter behov, i form av budsjettendringer eller overføringer. Budsjettansvarlig kan også eksportere budsjettet og faktiske data til Microsoft Excel for å analysere og beregne etter behov.
 
-## <a name="configuring-budget-control"></a>Konfigurere budsjettkontroll
-### <a name="budget-cycle-time-span"></a>Tidsrom for budsjettsyklus
+## Konfigurere budsjettkontroll
+<a id="configuring-budget-control" class="xliff"></a>
+### Tidsrom for budsjettsyklus
+<a id="budget-cycle-time-span" class="xliff"></a>
 
 Når grunnleggende budsjettering er konfigurert, kan du definere tidspunkt for start- og avslutningsperioder for budsjettering og budsjettkontroll på siden **Tidsrom for budsjettsyklus**. Budsjettsykluser tilsvarer ofte regnskapskalendere, men kan omfatte regnskapsår.
 
 Neste trinn i konfigurasjonen utføres i de ulike kategoriene på siden **Budsjettkontrollkonfigurasjon**.
 
-### <a name="define-parameters"></a>Definer parametere
+### Definer parametere
+<a id="define-parameters" class="xliff"></a>
 
 Basert på finansdimensjonene som er aktivert for budsjettet, kan du bruke alle eller deler av finansdimensjonene til budsjettkontroll. 
 
@@ -72,18 +77,21 @@ Hvordan budsjetter opprettes og registreres i budsjettregisteret bidrar til å f
 
 I tillegg spiller den en rolle i defineringen av konfigurasjonen hvordan organisasjonens kultur er knyttet til budsjettering og budsjettkontroll.
 
-### <a name="over-budget-permissions"></a>Tillatelser for budsjettoverskridelse
+### Tillatelser for budsjettoverskridelse
+<a id="over-budget-permissions" class="xliff"></a>
 
 I kategorien **Tillatelser for budsjettoverskridelse** kan du deretter angi brukergrupper. Du kan også angi om brukere som er medlemmer av en gruppe har tillatelse til å overskrider budsjettet. Du kan hindre brukere i å overskride budsjettet etter budsjetterskelen som ble angitt i den **Budsjettparametere** , eller du kan hindre dem i å overskride budsjettet etter en hvilken som helst beløp, uavhengig av terskelen. Disse tillatelsene bidra til å behandle de økonomiske ressursene avhengig av hvordan en organisasjon proaktivt styrer forbruket sitt. 
 
-### <a name="budget-funds-available"></a>Budsjettmidler tilgjengelig
+### Budsjettmidler tilgjengelig
+<a id="budget-funds-available" class="xliff"></a>
 
 I kategorien **Tilgjengelige budsjettmidler** kan du deretter angi formelen som brukes til å beregne tilgjengelige budsjettmidler. Avhengig av hvor konservativt en organisasjon styrer de økonomiske ressursene sine eller bestemmelser eller bransjekrav, kan beregningen omfatte utkast eller dokumenter som ikke er bokførte. 
 
 > [!NOTE] 
 > Hvis denne beregningen endres i løpet av en budsjettsyklus, vil ikke endringene ha innvirkning på dokumenter som allerede har bestått kontroller i budsjettkontrollen og er postert eller fullført.
 
-### <a name="documents-and-journals"></a>Dokumenter og journaler
+### Dokumenter og journaler
+<a id="documents-and-journals" class="xliff"></a>
 
 I kategorien **Dokumenter og kladder** kan du deretter velge hvilke kildedokumenter og kladder som skal underlegges kontroller i budsjettkontrollen og om kontrollene utføres på linjeoppføringene eller på hele dokumentet. 
 
@@ -91,30 +99,36 @@ Du bør samsvare de valgte kildedokumentene som er merket med avmerkingsboksene,
 
 Hvis **Budsjettreservasjoner for disposisjoner** og/eller **Budsjettreservasjoner for forhåndsdisposisjon** er inkludert i beregningen av tilgjengelige budsjettmidler og må gjenspeiles via posteringer i økonomimodulen, må du aktivere prognoseregnskap på siden **Økonomiparametere**.  
 
-### <a name="assign-budget-models"></a>Tilordne budsjettmodeller
+### Tilordne budsjettmodeller
+<a id="assign-budget-models" class="xliff"></a>
 
 I kategorien **Tilordne budsjettmodeller** tilordner du deretter budsjettmodeller til budsjettsyklustidsrom som skal tas med i budsjettkontrollen.
 
-### <a name="define-budget-control-rules"></a>Definer budsjettkontrollregler
+### Definer budsjettkontrollregler
+<a id="define-budget-control-rules" class="xliff"></a>
 
 I kategorien **Definer budsjettkontrollregler** må du deretter opprette spesifikke regler som er basert på finansdimensjoner som er aktivert for budsjettkontroll. Hvis det for eksempel er fokus basert på utgifter eller utvalg av utgifter for en avdeling, da kan du bruke innstillingene i denne kategorien til å definere og evaluere disse utgiftene. Du kan definere forskjellige terskler for hver budsjettkontrollregel. 
 
 > [!Important]
 > Budsjettkontroll aktiveres for alle hovedkontoer av typen **Resultat**, **Utgift**, **Inntekter, Balanse, Gjeld, Egenkapital** eller **Anleggsmiddel**. Hvis denne kategorien inneholder en regel som har tomme kriterier, aktiveres budsjettkontroll for **alle** kombinasjonene av finansdimensjoner som omfatter hovedkontoer for disse typene. Pass derfor på at du oppretter budsjettkontrollregler som bare definerer områdene for kombinasjoner av finansdimensjoner der det er viktig å aktivere budsjettkontroll.  
 
-### <a name="select-main-accounts"></a>Velg hovedkontoer
+### Velg hovedkontoer
+<a id="select-main-accounts" class="xliff"></a>
 
 Hvis **Hovedkonto** ikke er valgt som budsjettkontrolldimensjon på siden **Definer parametere**, men bestemt utgifter håndteres, kan du velge disse utgiftene i kategorien **Velg hovedkontoer**. Hvis **Hovedkonto** er valgt som budsjettkontrolldimensjon, kreves ingen oppføringer.  
 
-### <a name="define-budget-groups"></a>Definer budsjettgrupper
+### Definer budsjettgrupper
+<a id="define-budget-groups" class="xliff"></a>
 
 I kategorien **Definer budsjettgrupper** kan du deretter også definere unike kombinasjoner av finansdimensjoner der budsjettressurser er gruppert for sekundære budsjettkontroll. Du kan opprette én enkelt post som inneholder hele organisasjonen, eller du kan definere flere grupper for å representere individuelle avdelinger eller kostsentre.  
 
-### <a name="define-message-levels"></a>Definer meldingsnivåer
+### Definer meldingsnivåer
+<a id="define-message-levels" class="xliff"></a>
 
 Hvis budsjettkontrollvarsler skal undertrykkes for alle brukergrupper, kan du angi disse gruppene på siden **Definer meldingsnivåer**. Medlemmer av brukergrupper fortsetter å motta feilmeldinger når deoverskrider tilgjengelige budsjettmidler, basert på deres tillatelser for budsjettoverskridelse.
 
-### <a name="activate-budget-control"></a>Aktiver budsjettkontroll
+### Aktiver budsjettkontroll
+<a id="activate-budget-control" class="xliff"></a>
 
 Etter at budsjettkontroll er konfigurert, kan du aktivere dette alternativet og aktivere det i kategorien **Aktiver budsjettkontroll**. Kladdeversjonen trer deretter i kraft.
 > [!Important]
@@ -122,13 +136,10 @@ Etter at budsjettkontroll er konfigurert, kan du aktivere dette alternativet og 
 
 Vær i tillegg oppmerksom på at transaksjoner, inkludert budsjettregisteroppføringer, som er postert før budsjettkontroll er aktivert, utføres det ikke budsjettkontroll for. Det er derfor lurt å aktivere budsjettkontroll i begynnelsen av den nye budsjettsyklusen. Pass på at budsjettregisteroppføringer som inneholder startsaldoer for budsjett for budsjettkontroll får budsjettsaldoene oppdatert etter at budsjettkontroll er aktivert. Et åpent dokument (for eksempel en bestilling) vil bli kontrollert for tilgjengelige budsjettmidler og får en budsjettreservasjon for budsjettkontroll når brukeren manuelt utløser budsjettkontroll i dokumentet.
 
-## <a name="using-budget-control"></a>Bruke budsjettkontroll
+## Bruke budsjettkontroll
+<a id="using-budget-control" class="xliff"></a>
 Når budsjettkontroll er aktivert, får brukerne budsjettkontrolladvarsel og feilmeldinger i dokumenter og journaler som er konfigurert for budsjettkontroll. Husk at du kan konfigurere budsjettkontroll slik at brukere blir varslet hvis de overskrider budsjettmidlene, men du kan fortsette å bekrefte eller posterer transaksjonen. Brukere kan vise detaljene for mislykkede budsjettkontroller på siden **Budsjettetkontrollfeil og advarsler**.   
 
 Fra denne siden kan brukere drille ned i siden **Statistikk for budsjettkontroll etter periode** for å vise budsjettdetaljer for tilgjengelighet og reserveringer for en valgt kombinasjon av budsjettkontrolldimensjon. Brukere kan også gå til siden **Statistikk for budsjettkontroll** for å vise budsjetttilgjengeligheten for alle kombinasjonene av finansdimensjoner som brukes i budsjettkontroll. 
 
 Hvis budsjettkontroll er aktivert for bestillinger, kan budsjettansvarlig bruke arbeidsområdet **Finansbudsjetter og prognoser** for å gå gjennom køen av alle ubekreftede bestillinger som har advarsler og feil. Hvis det er konfigurert tillatelse for budsjettoverskridelse for budsjettansvarlig, kan vedkommende bekrefte bestillinger direkte i arbeidsområdet.    
-
-
-
-

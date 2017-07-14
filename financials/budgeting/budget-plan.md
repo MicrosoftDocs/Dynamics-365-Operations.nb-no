@@ -1,9 +1,9 @@
 ---
 title: Budsjettplanlegging
-description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
+description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,27 +18,30 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budget-planning"></a>Budsjettplanlegging
+# Budsjettplanlegging
+<a id="budget-planning" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
+Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
 
-<a name="prerequisites"></a>Forutsetninger 
+Forutsetninger
+<a id="prerequisites" class="xliff"></a> 
 ------------------
 
-I denne opplæringen må du ha tilgang til Dynamics 365 for Operations-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon for Dynamics 365 for Operations. Når du logger på Dynamics 365 for Operations, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på Dynamics 365 for Operations ved å bruke en annen nettleser enn Internet Explorer, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for Internet Explorer, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i Internet Explorer.
+I denne opplæringen må du ha tilgang til Finance and Operations-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon for Finance and Operations. Når du logger på Finance and Operations, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på Finance and Operations ved å bruke en annen nettleser enn Internet Explorer, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for Internet Explorer, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i Internet Explorer.
 
-## <a name="scenario-overview"></a>**Oversikt over scenariet**
+## **Oversikt over scenariet**
+<a id="scenario-overview" class="xliff"></a>
 Julie jobber som regnskapssjef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer seg, må hun arbeide med å sette opp firmaets budsjett for kommende år. Budsjettforberedelsen ser slik ut:
 
 1.  Julie bruker fjorårets faktiske data som utgangspunkt for å lage budsjettet.
@@ -53,10 +56,12 @@ Julie bruker følgende Excel-mal til å forberede budsjettet:
 
 [![Excel-mal](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Øvelse 1: konfigurasjon
+Øvelse 1: konfigurasjon
+<a id="exercise-1-configuration" class="xliff"></a>
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Oppgave 1: opprette et organisasjonshierarki**
+## **Oppgave 1: opprette et organisasjonshierarki**
+<a id="task-1-create-organizational-hierarchy" class="xliff"></a>
 Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprette et svært enkelt organisasjonshierarki som bare består av økonomiavdelingen. 1.1. Naviger til organisasjonshierarkier (Organisasjonsstyring &gt; Organisasjoner &gt; Organisasjonshierarkier), og klikk Ny-knappen
 
 ![Organisasjonshierarki](./media/screenshot3.png) 
@@ -85,7 +90,8 @@ Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprett
 
 [![Gjelder fra](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Oppgave 2: konfigurere brukersikkerhet
+## Oppgave 2: konfigurere brukersikkerhet
+<a id="task-2-configure-user-security" class="xliff"></a>
 Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilgang til data for budsjettplaner. Julie må gi seg selv tilgang til budsjettplaner. 
 
 2.1. Bytt til konteksten med den juridiske enheten: 
@@ -110,7 +116,8 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 [![Gi tilgang](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
+## Oppgave 3: opprette scenarier
+<a id="task-3-create-scenarios" class="xliff"></a>
 3.1. Gå til Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Legg merke til scenariene vi skal bruke videre i denne laben, på Scenarier-siden: Faktisk, forrige år og Budsjettert. 
 
 *Obs!  Hvis du vil, kan du opprette nye scenarier for denne øvelsen og bruke dem i stedet.* 
@@ -119,7 +126,8 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 *Obs! Siden Julie ikke bruker formell godkjenningsprosess i budsjettforberedelsen, hopper vi over oppsett av arbeidsflyter, stadier og oppsett av arbeidsflytstadier i denne laben og bruker eksisterende oppsett for automatisk godkjenning av arbeidsflyt. Se i tillegget hvis du vil ha informasjon om denne arbeidsflytkonfigurasjonen.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Oppgave 4: opprette budsjettplankolonner
+## Oppgave 4: opprette budsjettplankolonner
+<a id="task-4-create-budget-plan-columns" class="xliff"></a>
 Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan brukes i oppsett for budsjettplandokument. I vårt eksempel må vi opprette en kolonne for Faktisk, forrige år og 12 kolonner som skal representere hver måned i et budsjettert år. Kolonner kan opprettes ved ganske enkelt å klikke Legg til-knappen og fylle inn verdiene, eller ved hjelp av Dataenhet. Vi skal bruke Dataenhet til å fylle inn verdiene i denne laben. 
 
 4.1. Åpne Kolonner-siden i Budsjettering&gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte) 
@@ -148,11 +156,12 @@ Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan br
 
 [![Autofyll](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Gå tilbake til Dynamics 365 for Operations og oppdater siden. Publiserte verdier vises i Dynamics 365 for Operations. 
+4.7. Gå tilbake til Finance and Operations og oppdater siden. Publiserte verdier vises i Finance and Operations. 
 
-[![Forny](./media/screenshot23.png)](./media/screenshot23.png)
+[![Oppdater](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Oppgave 5: opprette oppsett og maler for budsjettplandokument
+## Oppgave 5: opprette oppsett og maler for budsjettplandokument
+<a id="task-5-create-budget-plan-document-layouts-and-templates" class="xliff"></a>
 Oppsettet definerer hvordan rutenettlinjer blir seende ut i budsjettplandokumentet når brukere åpner budsjettplandokumentet. Det er også mulig å bytte oppsettet for budsjettplandokument for å se de samme dataene fra ulike vinkler. Nå som hun har kolonner definert for bruk med budsjettplandokumentet vårt, må Julie opprette et oppsett for budsjettplandokument som ligner på Excel-tabellen hun bruker til å lage budsjettdata (se delen Oversikt over scenariet i denne laben) 
 
 5.1. Åpne Oppsett-siden i Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Opprett et nytt oppsett for oppføringen for månedsbudsjett:
@@ -172,7 +181,8 @@ Basert på oppsettdefinisjonen for budsjettplan kan vi opprette en Excel-mal som
 
 5.3. &lt; Valgfritt trinn&gt; Endre Excel-malen slik at den ser mer brukervennlig ut. Legg til totalformler, overskriftsfelt, formatering og så videre. Lagre endringene, og last opp filen til budsjettplanoppsettet ved å klikke Oppsett &gt; Last opp [![Last opp](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Oppgave 6: opprette en budsjettplanleggingsprosess
+## Oppgave 6: opprette en budsjettplanleggingsprosess
+<a id="task-6-create-a-budget-planning-process" class="xliff"></a>
 Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppsettet ovenfor kombineres, for å begynne å registrere budsjettplaner. Budsjettplanleggingsprosessen definerer hvilke budsjetteringsorganisasjoner, arbeidsflyter, oppsett og maler som skal brukes til å opprette budsjettplaner. 
 
 6.1. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingsprosess, og opprett en ny post.
@@ -193,10 +203,12 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 
 [![Aktiver](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Øvelse 2: prosessimulering
+Øvelse 2: prosessimulering
+<a id="exercise-2-process-simulation" class="xliff"></a>
 ==============================
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Oppgave 7: generere innledende data for budsjettplan fra Økonomimodul
+## Oppgave 7: generere innledende data for budsjettplan fra Økonomimodul
+<a id="task-7-generate-initial-data-for-budget-plan-from-general-ledger" class="xliff"></a>
 7.1. Gå til Budsjettering &gt; Periodisk &gt; Generer budsjettplan fra økonomimodul. Fyll ut parameterne for periodisk prosess, og klikk Generer. 
 
 [![Generer](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -209,7 +221,8 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 
 [![Visning av budsjettplan](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Oppgave 8: opprette budsjett for gjeldende år basert på fjorårets faktiske data
+## Oppgave 8: opprette budsjett for gjeldende år basert på fjorårets faktiske data
+<a id="task-8-create-current-year-budget-based-on-previous-year-actuals" class="xliff"></a>
 Tildelingsmetoder kan brukes i budsjettplaner til å kopiere informasjon for budsjettplaner fra ett scenario til et annet, spre dem på tvers av perioder, eller tildele dem til dimensjoner. Vi skal bruke tildelinger til å opprette budsjett for gjeldende år fra fjoråret faktiske data. 
 
 8.1. Velg alle linjene i rutenettet for budsjettplandokument, og klikk knappen for å tildele budsjett 
@@ -224,7 +237,8 @@ Systemet kopierer fjorårets faktiske beløp til budsjettet for gjeldende år, o
 
 [![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Oppgave 9: justere budsjettplandokument ved hjelp av Excel og gjøre ferdig dokumentet
+## Oppgave 9: justere budsjettplandokument ved hjelp av Excel og gjøre ferdig dokumentet
+<a id="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document" class="xliff"></a>
 9.1. Klikk knappen for regnearket for å åpne dokumentinnholdet i Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -233,16 +247,18 @@ Systemet kopierer fjorårets faktiske beløp til budsjettet for gjeldende år, o
 
 [![Publiser](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Gå tilbake til budsjettplandokumentet i Dynamics 365 for Operations. Klikk Arbeidsflyt &gt; Send inn for å godkjenne dokumentet automatisk
+9.3. Gå tilbake til budsjettplandokumentet i Finance and Operations. Klikk Arbeidsflyt &gt; Send inn for å godkjenne dokumentet automatisk
 
 [![Godkjenn automatisk](./media/screenshot37.png)](./media/screenshot37.png) 
 
 Når arbeidsflyten er fullført, endres stadiet for budsjettplandokument til godkjent. [![Godkjent](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Tillegg
+Tillegg
+<a id="appendix" class="xliff"></a>
 ========
 
-### <a name="auto-approve-workflow-configuration"></a>Konfigurasjon av automatisk godkjenning av arbeidsflyt
+### Konfigurasjon av automatisk godkjenning av arbeidsflyt
+<a id="auto-approve-workflow-configuration" class="xliff"></a>
 
 A. Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjetteringsarbeidsflyter Opprett en ny arbeidsflyt ved å bruke malen Arbeidsflyter for budsjettplanlegging:
 

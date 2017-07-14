@@ -3,47 +3,60 @@ title: Kostnadsregnskapsanalyse-innhold for Power BI
 description: "Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ce75a6145bde4a8c33ed785c7d2a60a52416676
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsregnskapsanalyse-innhold for Power BI
+# Kostnadsregnskapsanalyse-innhold for Power BI
+<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Kostnadsregnskapsanalyse**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+## Oversikt
+<a id="overview" class="xliff"></a>
 
-<a name="overview"></a>Oversikt
---------
+Power BI-innholdet **Kostnadsregnskapsanalyse** er ment for kostnadskontrollører eller andre som er ansvarlig for å utføre kostnadskontroll i en organisasjon. Det inkluderer hovedmål, for eksempel kostnader, størrelse og kostnadssats etter faktiske kostnader, budsjettkostnader og fleksible budsjettkostnader. Det bruker transaksjonsdata fra modulen **Kostnadsregnskap** og gir en aggregert visning av kostnadene for hele organisasjonen i en rapporteringsvaluta. Ledere kan filtrere dataene etter kostnadsobjekter for å utføre kostnadskontroll for sine organisasjonsenheter, selv om organisasjonen kan ha flere juridiske enheter. 
 
-**Kostregnskapsanalyse-innhold** for Microsoft Power BI er ment for kostnadskontrollører eller andre som er ansvarlig for å utføre kostnadskontroll i en organisasjon. Det inkluderer hovedmål, for eksempel kostnader, størrelse og kostnadssats etter faktiske kostnader, budsjettkostnader og fleksible budsjettkostnader. Det bruker transaksjonsdata fra kostnadsregnskap i Microsoft Dynamics 365 for Operations, og gir en samlet visning av kostnadene for hele organisasjonen i en rapporteringsvaluta. Ledere kan filtrere dataene etter kostnadsobjekter for å utføre kostnadskontroll for sine organisasjonsenheter, selv om organisasjonen kan ha flere juridiske enheter. Fordi **Kostregnskapsanalyse-innhold** for Power BI fremhever avvik mellom faktiske kostnader og budsjetterte kostnader, kan ledere bli varslet om positive og negative trender for sine driftsenheter. Ledere kan drille ned til kostnadselementhierarkier eller individuelle kostnadselementer for å få detaljert innsikt i hvordan kostnadsavvik har oppstått, og deretter utføre effektive tiltak. **Kostregnskapsanalyse-innhold** for Power BI lar regnskapsførere analysere hvordan kostnadsflyten går gjennom kostnadsobjektene for hele organisasjonen. Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i effektene blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
+Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kostnader og budsjetterte kostnader, kan ledere bli varslet om positive og negative trender for sine driftsenheter. Ledere kan drille ned til kostnadselementhierarkiene eller individuelle kostnadselementer. På denne måten kan ledere få detaljert innsikt i hvordan kostnadsavvik har oppstått, og deretter iverksette effektive tiltak. 
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og kobler det til Dynamics 365 for Operations-data, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md). 
+Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen. 
 
-> MERK - **KB 4011327** er en forutsetning for dette Power BI-innholdet. Når du logger deg på Lifecycle Services, kan du få tilgang til KB her: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
-Innholdet inneholder et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effekter i **Kostnadsregnskapsanalyse-innhold** for Power BI.
+Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
+
+## Tilgang til Power BI-innhold
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+
+Pass på at du laster ned innholdet **Kostnadsregnskapsanalyse** som gjelder for versjonen av Microsoft Dynamics 365 du bruker.
+
+> [!NOTE]
+> KB 4011327 er en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+
+## Mål som er inkludert i Power BI-innholdet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+Innholdet inneholder et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringene i Power BI-innholdet **Kostnadsregnskapsanalyse**.
 
 | Rapportside                      | Diagram                                                                                                                         | Flis                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
@@ -63,13 +76,16 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 | Kostnadsoppgave etter regnskapsperiode  | Faktiske kostnader etter hierarkinivå for kostnadselement og navn på medlem av dimensjon for kostnadsobjekt                                             |                                               |
 |                                  | Faktiske kostnader etter navn på medlem av dimensjon for kostnadsobjekt og navn på medlem av dimensjon for kostnadselement                                       |                                               |
 
-## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Dynamics 365 for Operations-data brukes til å fylle ut rapportsider i **Kostnadsregnskapsanalyse-innhold** for Power BI. Disse dataene representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.
+## Forstå datamodellen og enheter
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Følgende data brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsregnskapsanalyse**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 
 
-| Enhet                  | Aggregerte nøkkelmålinger | Datakilde for Dynamics 365 for Operations | Felt     | beskrivelse                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Kostnadsregnskapsoppføringer | SUM(beløp)               | CAMDATAAggregatedCostEntry                  | Beløp    | Beløp i valuta for kostnadsregnskapsfinans |
-| Statistiske oppføringer     | SUM(størrelse)            | CAMDATAAggregatedStatisctialEntry           | Størrelse |                                               |
+De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.
+
+| Enhet                  | Aggregerte nøkkelmålinger | Datakilde for Dynamics 365      | Felt     | beskrivelse                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| Kostnadsregnskapsoppføringer | SUM(beløp)               | CAMDATAAggregatedCostEntry        | Beløp    | Beløpet i valutaen for kostnadsregnskapsfinans. |
+| Statistiske oppføringer     | SUM(størrelse)            | CAMDATAAggregatedStatisctialEntry | Størrelse |                                                    |
 
 Tabellen nedenfor viser hvordan de aggregerte nøkkelmålingene brukes til å opprette flere beregnede målinger i datasettet for innholdet.
 
@@ -114,16 +130,4 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
 | Regnskapsår                       | Kalenderår                                                                                                        |
 | Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
-
-## <a name="additional-resources"></a>Tilleggsressurser
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
-
--   [Dataenheter](..\data-entities\data-entities.md)
--   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Legge til Power BI-fliser i arbeidsområder](configure-power-bi-integration.md)
--   [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md)
-
-
-
 

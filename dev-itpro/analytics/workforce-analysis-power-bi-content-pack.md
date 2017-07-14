@@ -1,15 +1,15 @@
 ---
 title: Workforce Metrics-innhold for Power BI
-description: "Dette emnet beskriver Dynamics 365 for Operations - Workforce Metrics-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken."
-author: twheeloc
+description: "Dette emnet beskriver Workforce Metrics-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
@@ -17,85 +17,86 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2a3f611d29e041a5f05e3f93fd2330f4218b9dd1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="workforce-metrics-power-bi-content"></a>Workforce Metrics-innhold for Power BI
+# Workforce Metrics-innhold for Power BI
+<a id="workforce-metrics-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Dette emnet beskriver **Workforce Metrics**-innholdet for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-Dette emnet beskriver Dynamics 365 for Operations - Workforce Metrics-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdspakken, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdspakken.
+## Tilgang til Power BI-innhold
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+**Workforce Metrics**-innholdet for Power BI vises i arbeidsområdet **Personaladministrasjon** hvis du bruker ett av disse produktene:
 
-<a name="accessing-the-content-pack"></a>Tilgang til innholdspakken
---------------------------
+- Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+- Microsoft Dynamics 365 for Talent
 
-Du kan finne Workforce Metrics-innholdspakken i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og kobler den til Microsoft Dynamics 365 for Operations-data, kan du se [Power BI-innhold i LCS fra Microsoft og partnere](power-bi-content-microsoft-partners.md).
+## Mål som er inkludert i Power BI-innholdet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+Tabellen nedenfor viser målene som vises for hver rapport.
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som er inkludert i innholdspakken
-Når du har knyttet innholdspakken til Dynamics 365 for Operations-dataene dine, viser rapportene organisasjonens data. Hvis du aldri har brukt Microsoft Power BI før, kan du finne ut mer på siden [Guided Learning for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som er inkludert i innholdspakken, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
-
-| Rapporter                                           | Innhold                                                                                                                                                                                                            |
+| Rapporter                                           | Mål                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mål for personer                                   | Sammendrag av andre rapporter                                                                                                                           |
 | Arbeidsstokken analyse firmanavn, avdeling, sted | Antall ansatte etter selskap, etter avdeling, etter sted og totalt antall ansatte                                                                                                                           |
 | Analysejobb for antall ansatte, trinn, leder            | Antall ansatte etter jobb, etter trinn, etter leder og totalt antall ansatte                                                                                                                                      |
 | Trendanalyse for antall ansatte                         | Antall ansatte inneværende år sammenlignet med fjoråret etter selskap og rullerende antall ansatte for de siste 12 månedene                                                                                                                        |
-| Demografi for arbeidsstyrken                           | Antall ansatte etter alder, kjønn, etnisitet, veteranstatus, ekteskapelig status, antall heltidsstudenter, gjennomsnittlig fartstid, gjennomsnittsalder og forholdet mellom kvinnelige og mannlige ansatte |
+| FTE-analyse                                     | Total heltidsekvivalent (FTE), total tilordnet FTE, FTE etter avdeling, FTE for de siste 12 månedene og FTE etter jobb |
+| Demografi for arbeidsstyrken                           | Antall ansatte etter alder, kjønn, etnisitet, veteranstatus, ekteskapelig status, antall heltidsstudenter, gjennomsnittlig fartstid, gjennomsnittsalder, forholdet mellom kvinnelige og mannlige ansatte og språk som ansatte snakker |
 | Stillingsanalyse                                | Åpne stillinger etter avdeling, ledig-til-besatt-stillinger, aktiv-til-inaktive-stillinger og stillinger etter avdeling                                                                                                   |
-| Avgangsanalyse                               | Avgang inneværende år sammenlignet med fjoråret, avgang, gjennomsnittlig fartstid for personer som slutter, gjennomsnittsalderen for å slutte og ansatte som slutter etter årsak                                                                   |
+| Avgangsanalyse                               | Avgang inneværende år sammenlignet med fjoråret, avgang, ansatte som slutter etter alder og kjønn, gjennomsnittlig fartstid for ansatte som slutter denne måneden og ansatte som slutter etter årsak                                                                   |
 | Personer etter avdeling                             | Ansatte med et personalnummer etter avdeling, stilling og start- og sluttdatoer for tildeling                                                                                                                       |
-| Ansiennitetsanalyse                               | Liste over gjennomsnittlig antall år med arbeidserfaring etter selskap og ansiennitet                                                                                                                                                              |
-| Jubileer og arbeidserfaring               | Ansatte etter arbeidserfaring og jubileer                                                                                                                                                                    |
+| Ansiennitetsanalyse                               | Liste over gjennomsnittlig fartstid, gjennomsnittlig antall år med arbeidserfaring etter selskap og ansiennitet                                                                                                                                                              |
+| Ansattes jubileer                           | Jubileer denne måneden, jubileer neste måned, ansatte etter arbeidserfaring og jubileer, arbeidserfaring etter avdeling                                                                                                                                                                    |
+| Ansattes fødselsdager                               | Fødselsdager denne måneden, fødselsdager neste måned, ansattes fødselsdager og fødselsdager etter måned og avdeling                                                                                                                                                                    |
+| Masseansettelsesprosjekter                               | Totalt antall masseansettelsesprosjekter, masseansettelsesprosjekter etter status, masseansettelsesprosjekter etter avdeling og eier, masseansettelsesprosjekter etter jobb og masseansettelsesprosjekter                                                                                                                                                                    |
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Dynamics 365 for Operations-data brukes til å fylle ut rapporter i Workforce Metrics-innholdspakken. Tabellen nedenfor viser enhetene som innholdspakken er basert på.
+## Utvide Power BI-innholdet
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Finance and Operations, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
 
-| Enhet                            | Innhold                                                                                                   | Relasjoner med andre enheter                                                                                                                                                                                                                                                                                                |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Workforce\_CalendarOffset         | Kalenderforskyvninger for å dele opp rapporter                                                                          | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workorce\_WorkerTrend Workforce\_TerminatedWorker                                                                                                                                                                                                                     |
-| Workforce\_Company                | Selskaper til å filtrere rapporter etter                                                                             | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_Compensation           | Lønnssats og frekvens over tid                                                                           | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_CurrentCompensation    | Lønnssats og frekvens per gjeldende dato                                                              | Workforce\_Company Workforce\_Compensation Workforce\_Demographics Workforce\_Job Workforce\_Position                                                                                                                                                                                                                            |
-| Workforce\_CurrentPosition        | Stillinger per gjeldende dato, tilsvarende fulltidsekvivalent (FTE), ledige stillinger og ledig-til-besatt-stillinger | Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                                                               |
-| Workforce\_CurrentWorker          | Arbeidere fra og med gjeldende dato, alder og antall ansatte                                                         | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Job Workforce\_Employment Workforce\_Position Workforce\_WorkerBenefit                                            |
-| Workforce\_Date                   | Dager, uker, måneder og år.                                                                             | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                     |
-| Workforce\_Demographics           | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Employment             | Startdato, sluttdato og overgangsdato                                                                  | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_GeographicLocation     | By, fylke, postnummer og delstat eller område                                                           | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Job                    | Funksjon, type og tittel                                                                                  | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_JobPerferredSkill      |                                                                                                            |                                                                                                                                                                                                                                                                                                                                  |
-| Workforce\_PastPositionAssignment | Tilordningsårsak, startdato, sluttdato og jobb                                                           | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_Performance            | Vurdering, beskrivelse og vurderingsmodell                                                                      | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_PersonSkill            | Nivå og ferdighet                                                                                            | Workforce\_Skill                                                                                                                                                                                                                                                                                                                 |
-| Workforce\_PersonSkillAnalysis    | Sertifisert, nivå og ferdighet                                                                                | Workforce\_Skill Workforce\_WorkerName                                                                                                                                                                                                                                                                                           |
-| Workforce\_Position               | Avdeling, FTE, plassering, stillingstype og tittel                                                        | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_PositionTrend          | Stillinger over tid, FTE og jobb                                                                          | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_ReportsToWorkerName    | Fornavn, etternavn og fullt navn                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Skill                  | Kompetanse, kompetansetype og vurdering                                                                              | Workforce\_PersonSkill Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                                                                            |
-| Workforce\_TerminatedWorker       | Fratrådte arbeidere, avslutningsdato, tittel, stilling og jobb                                             | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_Position Workforce\_WorkerBenefit |
-| Workforce\_WorkerBenefit          | Ikrafttredelsesdato, fordelsalternativ, fordelsplan og fordelstype                                             | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_WorkerName             | Fornavn, etternavn og fullt navn                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                        |
-| Workforce\_WorkerTitle            | Tittel og ansiennitetsdato                                                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workorce\_WorkerTrend             | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_WorkerBenefit                     |
+Du kan finne **Workforce Metrics**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdspakken. Hvis du vil ta med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen CompensationandBenefits.pbix fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette innholdspakken. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
+Pass på at du laster ned **Workforce Metrics**-innholdet for Power BI som gjelder for versjonen av Microsoft Dynamics 365 som du bruker.
 
-## <a name="additional-resources"></a>Tilleggsressurser
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
+>[!NOTE]
+>PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
 
--   [Dataenheter](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Legge til Power BI-fliser i arbeidsområder](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+## Forstå datamodellen og enheter
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Tabellen nedenfor viser enhetene som innholdet er basert på.
 
+| Enhet                   | Innhold                                                                            | Relasjoner med andre enheter |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------|
+| Kalenderforskyvning          | Kalenderforskyvninger for å dele opp rapporter                                                   | Tidligere stillingstilordning, stillingstrend, trend for ansatt, fratrådt ansatt |
+| Firma                  | Selskaper til å filtrere rapporter etter                                                      | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Gjeldende stilling         | Stillinger per gjeldende dato, FTE, ledige stillinger og ledig-til-besatt-stillinger | Jobb, stilling |
+| Gjeldende ansatt         | Arbeidere fra og med gjeldende dato, alder og antall ansatte                                  | Firma, geografisk plassering, ansattnavn, rapporterer til, ansattittel, demografi, jobb, ansettelse, stilling |
+| Dato                     | Dager, uker, måneder og år.                                                      | Tidligere stillingstilordning, stillingstrend, fratrådt ansatt, trend for ansatt |
+| Demografi             | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status                            | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Ansettelse               | Startdato, sluttdato og overgangsdato                                           | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Geografisk plassering      | By, fylke, postnummer og delstat eller område                                    | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Jobb                      | Funksjon, type og tittel                                                           | Gjeldende plassering, gjeldende ansatt |
+| Tidligere stillingstilordning | Tilordningsårsak, startdato, sluttdato og jobb                                    | Kalenderforskyvning, dato, jobb, stilling |
+| Posisjon                 | Avdeling, FTE, plassering, stillingstype og tittel                                 | Gjeldende plassering, gjeldende ansatt |
+| Stillingstrend           | Stillinger over tid, FTE og jobb                                                   | Kalenderforskyvning, dato, jobb, stilling |
+| Rapporter til               | Fornavn, etternavn og fullt navn                                                | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Tidligere ansatt      | Fratrådte arbeidere, avslutningsdato, tittel, stilling og jobb                      | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, stilling |
+| Navn på ansatt            | Fornavn, etternavn og fullt navn                                                | Gjeldende arbeider, fratrådt ansatt, trend for ansatt |
+| Ansattittel           | Tittel og ansiennitetsdato                                                            | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
+| Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                 | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb |
+| Masseansettelsesprosjekt        | Antall masseansettelsesprosjekter, prosjekteier og prosjektstatus                     | Firma, masseansettelseslinje |
+| Masseansettelseslinje           | Avdeling, ansettelsestype og stilling                                           | Dato, jobb, masseansettelsesprosjekt |
 
-
-
+Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i Power-BI-innholdet. Hvis du vil ta med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen PBIX-filen fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette Power-BI-innhold. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
 

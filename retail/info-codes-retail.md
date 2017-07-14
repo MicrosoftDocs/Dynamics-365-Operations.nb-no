@@ -3,31 +3,33 @@ title: Infokoder
 description: Denne artikkelen gir en oversikt om informasjonskoder, informasjonskodegrupper og hvordan de brukes.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="info-codes"></a>Infokoder
+# Infokoder
+<a id="info-codes" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
@@ -41,12 +43,14 @@ Informasjonskoder gjør det mulig å hente data på i en salgsstedskasse (POS). 
 -   Selg et produkt som en vanlig salg, rabattert salg eller gratisprodukt.
 -   Be kasserere om å angi en verdi eller velge fra en liste over delkoder når de åpner kasseskuffen uten å utføre en salgsoperasjon.
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>Informasjonskodegruppe i Detaljhandel og handel
-I Dynamics 365 for Operations - Retail kan du opprette grupper av infokoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
+## Informasjonskodegruppe
+<a id="info-codes-group" class="xliff"></a>
+I Dynamics 365 for Retail kan du opprette grupper av infokoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
 -   Definere færre infokoder, og enkelt bruke dem på nytt. Informasjonskoder som er inkludert i informasjonskodegrupper, har ingen forhåndsdefinerte avhengigheter om andre informasjonskoder. Du kan ta med den samme informasjonskoden i flere informasjonskodegrupper og deretter bruke prioritering til å vise de samme informasjonskodene i rekkefølgen som er mest aktuell i en gitt situasjon.
 -   Koble informasjonskoder til andre koder eller informasjonskodegrupper for å samle inn informasjon om et produkt eller en transaksjon, uten å definere en egen informasjonskode eller koblede informasjonskoden for hvert scenario.
 
-## <a name="info-code-examples"></a>Informasjonskodeeksempler
+## Informasjonskodeeksempler
+<a id="info-code-examples" class="xliff"></a>
 **Eksempel 1: Bruke infokoder på nytt** Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, utløses en annen informasjonskode like etter. Når du selger enkelte produkter, kan du eksempel be kassereren om å spørre kunden om de vil kjøpe batterier og en produktgaranti. Når det gjelder andre produkter, kan du be kassereren om å spørre kunden om de vil kjøpe batterier, og også be om postnummeret deres. Hvis du oppretter koblede informasjonskoder for disse scenariene, må du definere alle variantene av informasjonskoden, slik at kassereren blir bedt om å be om riktig informasjon. Hvis du bruker informasjonskodegrupper, kan du definere vanlige informasjonskoder, for eksempel forespørsel om batterier, én gang og deretter bruke dem på nytt i flere informasjonskodegrupper. Du kan også bruke prioritering i informasjonskodegruppene til å identifisere rekkefølgen spørsmålene vises i.
 
 

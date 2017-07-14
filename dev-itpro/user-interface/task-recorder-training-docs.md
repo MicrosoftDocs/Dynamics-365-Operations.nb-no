@@ -3,7 +3,7 @@ title: "Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak"
 description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,33 +19,39 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
-# <a name="create-documentation-or-training-using-task-recordings"></a>Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
+# Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
+<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
+Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger for produkter i enhetlig drift og inkluderer dem i hjelpen.
 
-<a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
+> [!IMPORTANT]
+> Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Dynamics 365 for Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. 
+
+Finn ut mer om oppgaveopptak
+<a id="learn-about-task-recorder" class="xliff"></a>
 -------------------------
 
-Oppgaveopptakeren er et verktøy i Microsoft Dynamics 365 for Operations du kan bruke til å ta opp det du gjør i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
+Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
--   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen i Dynamics 365 for Operations. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
--   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** -ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
--   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et Forretningsprosessmodelerer-bibliotek i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodeler-bibliotek, kan vises i Dynamics 365 for Operations som hjelp.
+-   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
+-   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
+-   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et Forretningsprosessmodelerer-bibliotek i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
-Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptaker, kan du se [Oppgaveopptaker i Dynamics 365 for Operations](task-recorder.md).
+Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
 
-## <a name="plan-your-task-recording"></a>Planlegge oppgaveopptaket
+## Planlegge oppgaveopptaket
+<a id="plan-your-task-recording" class="xliff"></a>
 Husk følgende informasjon uansett om du lager et nytt oppgaveopptak eller baserer opptaket på et oppgaveopptak fra Microsoft.
 
 -   Planlegg opptaket slik du hadde gjort med et videoopptak. Ta alle beslutninger på forhånd.
@@ -83,7 +89,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 [![Skjerm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjema &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn**. Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Dynamics 365 for Operations, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader.).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjema &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn**. Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations, Enterprise edition eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader.).
 
 **Avgjøre hvor langt opptaket skal være**
 
@@ -95,13 +101,15 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 **Avgjøre hvor du skal starte et opptak i brukergrensesnittet** Siden du er på når du begynner å ta opp en oppgave, påvirker hvilken side oppgaveveiledningen vises for. Hvis du for eksempel vil at oppgaveopptaket skal vises i Hjelp-ruten når brukeren klikker på Hjelp på siden Parametere for økonomimodul, må du starte opptaket på siden Parametere for økonomimodul. **Lagre opptak som AXTR-filer** Når du er ferdig med å lage eller redigere et oppgaveopptak, har du flere alternativer for hvordan du vil laste ned eller lagre opptaket. Du kan laste ned filen som en oppgaveopptakspakke (AXTR), laste den ned som en rå opptaksfil (XML), laste den ned som et Word-dokument, eller lagre filen i et LCS-bibliotek. Det er alltid lurt å lagre oppgaveopptaket som en oppgaveopptakspakkefil (AXTR). Dette gjør det enklere å vedlikeholde filen hvis fremgangsmåter eller merknader må endres senere. Hvis du vil laste ned filen som et Word-dokument, må du også lagre den som en oppgaveopptakspakkefil.
 
-## <a name="create-your-task-recording"></a>Lage oppgaveopptaket
+## Lage oppgaveopptaket
+<a id="create-your-task-recording" class="xliff"></a>
 Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Opprette et oppgaveopptak](task-recorder.md).
 
-## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse oppgaveopptak fra Microsoft
+## Kopiere og tilpasse oppgaveopptak fra Microsoft
+<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
 Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din egen hjelpedokumentasjon eller opplæringsmateriell. Følg disse trinnene for å laste ned et oppgaveopptak fra Microsoft:
 
-1.  Åpne oppgaveopptakeren i Dynamics 365 for Operations. Oppgaveopptakeren finner du på **Innstillinger**-menyen.
+1.  Åpne oppgaveopptak. Oppgaveopptakeren finner du på **Innstillinger**-menyen.
 2.  Klikk **Vedlikehold av opptak** i ruten for oppgaveopptakeren.
 3.  Under **Hvor er opptaket** klikker du **Det er i et LCS-bibliotek**.
 4.  Klikk **Velg LCS-biblioteket**.
@@ -113,24 +121,21 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Ta med oppgaveopptakene i Hjelp-ruten
+## Ta med oppgaveopptakene i Hjelp-ruten
+<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
 Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../get-started/help-connect.md).
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
-[Hjelp for Dynamics 365 for Operations](..\get-started\help-overview.md)
+[Oversikt over Hjelp](..\get-started\help-overview.md)
 
-[Koble til hjelp](..\get-started\help-connect.md)
+[Koble til Hjelp](..\get-started\help-connect.md)
 
-[Oppgaveopptakeren i Dynamics 365 for Operations](task-recorder.md)
+[Oppgaveregistrering](task-recorder.md)
 
 [Nylig tilføyde funksjoner i oppgaveopptakeren](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Opprette nye biblioteker for opplæring for Dynamics AX i Lifecycle Services ved hjelp av oppgaveopptakeren (ekstern kobling)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 
