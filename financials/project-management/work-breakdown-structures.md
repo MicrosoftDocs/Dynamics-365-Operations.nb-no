@@ -1,39 +1,37 @@
 ---
 title: Arbeidsnedbrytningsstruktur
-description: 
+description: "En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a700f61bcc6e6d9c699987999be25649862b0d8
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
+# Arbeidsnedbrytningsstruktur
+<a id="work-breakdown-structures" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
-Arbeidsnedbrytningsstrukturer – En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave. En arbeidsnedbrytningsstruktur har tre viktige formål:
+En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave. En arbeidsnedbrytningsstruktur har tre viktige formål:
 
 -   Beskrive oppdelingen eller sammensetningen av arbeid i oppgaver
 -   Planlegge prosjektarbeidet
@@ -43,12 +41,14 @@ Detaljnivået i en arbeidsnedbrytningsstruktur avhenger av nøyaktighetsnivået 
 
 Prosjekter i bransjer som media og reklame, programvare og IT-infrastruktur er derimot ofte unike, og produktiviteten står i forhold til erfaringen og kompetansen til personen som utfører oppgaven. Disse bransjene bruker derfor en arbeidsnedbrytningsstruktur til å få et anslag av størrelsen på prosjektet, ikke til å spore fremdriften til prosjektet i detalj. 
 
-Å utvikle en arbeidsnedbrytningsstruktur er en intensiv prosess som vanligvis gjøres over en lang periode og krever samarbeid og informasjon fra en rekke ulike personer. Dette emnet beskriver hvordan du kan bruke forbedringer av arbeidsnedbrytningsstruktur i Microsoft Dynamics 365 for Operations til å oppfylle behovene for estimater og sporing.
+Å utvikle en arbeidsnedbrytningsstruktur er en intensiv prosess som vanligvis gjøres over en lang periode og krever samarbeid og informasjon fra en rekke ulike personer. Dette emnet beskriver hvordan du kan bruke forbedringer av arbeidsnedbrytningsstruktur i Microsoft Dynamics 365 for Finance and Operations til å oppfylle behovene for estimater og sporing.
 
-## <a name="prerequisites-for-creating-a-wbs"></a>Forutsetninger for å opprette en arbeidsnedbrytningsstruktur
+## Forutsetninger for å opprette en arbeidsnedbrytningsstruktur
+<a id="prerequisites-for-creating-a-wbs" class="xliff"></a>
 For å kunne opprette en arbeidsnedbrytningsstruktur må du kunne lage en arbeidsplan og beregne arbeidskostnadene.
 
-### <a name="prerequisites-for-creating-a-work-schedule"></a>Forutsetninger for å lage en arbeidsplan
+### Forutsetninger for å lage en arbeidsplan
+<a id="prerequisites-for-creating-a-work-schedule" class="xliff"></a>
 
 Fullfør følgende konfigurasjon for å bruke alle planleggingsmulighetene i funksjonene for arbeidsnedbrytningsstruktur:
 
@@ -63,14 +63,16 @@ Fullfør følgende konfigurasjon for å bruke alle planleggingsmulighetene i fun
 
 Du definerer virkedagene og arbeidstimene for en kalender eller oppretter en ny kalender ved å klikke på **Organisasjonsstyring** &gt; **Felles** &gt; **Kalendere**.
 
-### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Forutsetninger for beregning av arbeidskostnadene
+### Forutsetninger for beregning av arbeidskostnadene
+<a id="prerequisites-for-estimating-the-cost-of-work" class="xliff"></a>
 
 Hvis du vil bruke hele funksjonaliteten for kostnadsberegning i arbeidsnedbrytningsstrukturen, må du definere kost- og salgsprisene for arbeidere, arbeidskategorier, utgifter og gebyrer samt varer.
 
 -   Du definerer kost- og salgsprisen for arbeid, utgiftene og gebyrkategorier ved å klikke på **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Priser**.
 -   Du definerer kost- og salgsprisen for varer ved å bruke **Forretningsavtaler**-siden for hver vare på listesiden **Frigitte produkter** i Behandling av produktinformasjon.
 
-## <a name="creating-a-wbs"></a>Opprette en arbeidsnedbrytningsstruktur
+## Opprette en arbeidsnedbrytningsstruktur
+<a id="creating-a-wbs" class="xliff"></a>
 Opprettelse av en arbeidsnedbrytningsstruktur omfatter tre aktiviteter:
 
 1.  **Arbeidsnedbryting** – Opprett en oppdeling av arbeid i håndterbare deler eller oppgaver.
@@ -79,7 +81,8 @@ Opprettelse av en arbeidsnedbrytningsstruktur omfatter tre aktiviteter:
 
 Delene nedenfor beskriver hvordan funksjonene for arbeidsnedbrytningsstruktur kan hjelpe deg med hver av disse aktivitetene.
 
-### <a name="work-decomposition"></a>Arbeidsnedbryting
+### Arbeidsnedbryting
+<a id="work-decomposition" class="xliff"></a>
 
 Å opprette en nedbryting eller oppdeling av arbeid er vanligvis det første trinnet i fremgangsmåten for å opprette en arbeidsnedbrytningsstruktur. Funksjonen for arbeidsnedbrytningsstruktur støtter følgende grunnleggende begreper for arbeidsnedbryting eller -oppdeling. 
 
@@ -104,12 +107,13 @@ Du kan foreløpig ikke tilpasse WBS-nummereringen.
 
 **Flytt opp og Flytt ned** Når du klikker **Flytt opp** og **Flytt ned**, endrer du posisjonen til en oppgave i hierarkiet til dens overordnede. Posisjonen til en oppgave påvirker ikke oppgavens innsats, kostnader, datoer eller varighet. WBS-nummeret for oppgaven beregnes imidlertid automatisk på nytt for å gjenspeile oppgavens nye posisjon.
 
-### <a name="schedule-estimation"></a>Tidsplanestimering
+### Tidsplanestimering
+<a id="schedule-estimation" class="xliff"></a>
 
-Tidsplanestimering er vanligvis det andre trinnet i opprettelsen av en arbeidsnedbrytningsstruktur. Den anbefalte fremgangsmåten er å fullføre tidsplanestimering etter at du opprettet oppgavene. Siden **Arbeidsnedbrytningsstruktur** i Microsoft Dynamics 365 for Operations har to deler. Den øvre ruten er ment for tidsplanestimering, og den nedre ruten inneholder fanen **Estimerte kostnader og omsetning** som du kan bruke til kostnadsestimering. 
+Tidsplanestimering er vanligvis det andre trinnet i opprettelsen av en arbeidsnedbrytningsstruktur. Den anbefalte fremgangsmåten er å fullføre tidsplanestimering etter at du opprettet oppgavene. Siden **Arbeidsnedbrytningsstruktur** i Finance and Operations har to deler. Den øvre ruten er ment for tidsplanestimering, og den nedre ruten inneholder fanen **Estimerte kostnader og omsetning** som du kan bruke til kostnadsestimering. 
 **Oppgaveavhengigheter** I en arbeidsnedbrytningsstruktur kan du opprette en forgjengerrelasjon mellom oppgaver. Når du tilordner forgjengeroppgaver til en oppgave, kan denne oppgaven bare starte etter at alle forgjengeroppgavene er fullført. Den planlagte startdatoen for oppgaven settes automatisk til den siste datoen for alle forgjengerne. 
 
-**Oppgaveplanlegging i Microsoft Dynamics 365 for Operations** Følgende faktorer fastsetter planleggingen av bladnodeoppgaver:
+**Oppgaveplanlegging i Microsoft Dynamics 365 for Finance and Operations** Følgende faktorer fastsetter planleggingen av bladnodeoppgaver:
 
 -   Forgjengere
 -   Innsats
@@ -126,7 +130,7 @@ Startdatoen for en bladnodeoppgave som ikke har forgjengere settes automatisk ti
 
 Antall personer × varighet x antall timer for en standard arbeidsdag i prosjektkalenderen. 
 
-I noen tilfeller kan det hende at du vil avvike fra disse reglene. Du kan deaktivere automatisk planlegging for å unngå at Microsoft Dynamics 365 for Operations automatisk angir eller retter egenskaper for bladnodeoppgaver. Når du registrerer informasjon for en oppgave som forårsaker et brudd på en hvilken som helst planleggingsregel, vises et ikon for planleggingsfeil for oppgaven. Hvis du ikke vil at planleggingsfeil vises, klikker du **Planleggingsfeil vises** for å deaktivere funksjonen. 
+I noen tilfeller kan det hende at du vil avvike fra disse reglene. Du kan deaktivere automatisk planlegging for å unngå at Finance and Operations automatisk angir eller retter egenskaper for bladnodeoppgaver. Når du registrerer informasjon for en oppgave som forårsaker et brudd på en hvilken som helst planleggingsregel, vises et ikon for planleggingsfeil for oppgaven. Hvis du ikke vil at planleggingsfeil vises, klikker du **Planleggingsfeil vises** for å deaktivere funksjonen. 
 
 > [!NOTE] 
 > Verdiene for en sammendrags- eller containeroppgave blir fortsatt beregnet som summen av verdiene til deloppgavene, uavhengig av om automatisk planlegging er aktivert eller deaktivert. 
@@ -135,7 +139,7 @@ I noen tilfeller kan det hende at du vil avvike fra disse reglene. Du kan deakti
 
 **Rette planleggingsfeil etter oppgave** Når du dobbeltklikker ikonet for planleggingsfeil for en bestemt oppgave, vises en dialogboks der alle planleggingsfeilene for denne oppgaven vises. Du kan bestemme hvilke planleggingsfeil du vil rette for oppgaven. 
 
-**Rette alle planleggingsfeil** Hvis du vil bruke Microsoft Dynamics 365 for Operations til å rette alle planleggingsfeil i arbeidsnedbrytningsstrukturen, klikker du **Reparer alle planleggingsavvik**. 
+**Rette alle planleggingsfeil** Hvis du vil bruke Finance and Operations til å rette alle planleggingsfeil i arbeidsnedbrytningsstrukturen, klikker du **Reparer alle planleggingsavvik**. 
 
 > [!NOTE] 
 > Denne funksjonen kan føre til betydelige endringer i arbeidsnedbrytningsstrukturen. Feil rettes opp i følgende rekkefølge:
@@ -144,7 +148,8 @@ I noen tilfeller kan det hende at du vil avvike fra disse reglene. Du kan deakti
 2.  Startdatoen for hver oppgave endres slik at oppgaven starter etter at alle forgjengeroppgavene er fullført.
 3.  Startdatoen for hver oppgave endres for å fjerne mellomrom i startdatoene for forgjengeroppgavene.
 
-### <a name="cost-estimation"></a>Kostnadsanslag
+### Kostnadsanslag
+<a id="cost-estimation" class="xliff"></a>
 
 Som nevnt tidligere i dette dokumentet kan du angi kostnadsestimeringen for hver bladnodeoppgave ved hjelp av den **Estimerte kostnader og omsetning** i den nedre ruten på siden **Arbeidsnedbrytningsstruktur**. 
 
@@ -167,16 +172,19 @@ Når du beregner kostnader for arbeid, materiale og utgifter for hver oppgave, m
 
 Kost- og salgsprisen for hvert arbeids- eller utgiftsestimat er basert på definisjonen som brukes for hver kategori i prissettingstabellene i **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Prissetting**. Når det gjelder varer, blir kost- og salgspris som standard lagt til fra vare- eller forretningsavtalene på listesiden **Frigitte produkter** i Behandling av produktinformasjon.
 
-## <a name="tracking-progress-on-the-wbs"></a>Spore fremdrift i arbeidsnedbrytningsstrukturen
+## Spore fremdrift i arbeidsnedbrytningsstrukturen
+<a id="tracking-progress-on-the-wbs" class="xliff"></a>
 Enkelte bransjer sporer fremdriften til et prosjekt mot en arbeidsnedbrytningsstruktur på et svært detaljert nivå, mens andre sporer fremdriften på et høyere nivå i arbeidsnedbrytningsstrukturen. Denne delen beskriver hvordan du kan bruke WBS-sporing for prosjektkravene. 
 
-Microsoft Dynamics 365 for Operations har tre visninger for arbeidsnedbrytningsstrukturen for et prosjekt: planleggingsvisning, visning av innsatssporing og visning av kostnadssporing.
+Finance and Operations har tre visninger for arbeidsnedbrytningsstrukturen for et prosjekt: planleggingsvisning, visning av innsatssporing og visning av kostnadssporing.
 
-### <a name="planning-view"></a>Planleggingsvisning
+### Planleggingsvisning
+<a id="planning-view" class="xliff"></a>
 
 Planleggingsvisningen viser det planlagte estimatet eller basisestimatet for tidsplanen og kostinformasjonen. Selv om det ikke finnes noen funksjoner for å spore versjonen og basisen for en arbeidsnedbrytningsstruktur for prosjekt, er verdiene i denne visningen ment å representere basisversjonen. Delene Tidsplanestimering og Kostnadsestimat i dette emnet beskriver denne visningen og hvordan den brukes til å opprette en arbeidsnedbrytningsstruktur.
 
-### <a name="effort-tracking-view"></a>Visning av innsatssporing
+### Visning av innsatssporing
+<a id="effort-tracking-view" class="xliff"></a>
 
 Visningen av innsatssporing viser sporing av fremdriften for oppgaver i arbeidsnedbrytningsstrukturen. Den sammenligner de akkumulerte faktiske innsatstimene for en oppgave med de planlagte innsatstimene. Følgende formler gir verdiene i visningen av innsatssporing:
 
@@ -209,7 +217,8 @@ Begge disse metodene fører til en omberegning av oppgavens ETC, EAC og fremdrif
 
 Klikk **Utvid til nivå** i visningen av innsatssporing for å angi hvilket nivå du vil spore og vedlikeholde arbeidsnedbrytningsstrukturen på. Arbeidsnedbrytningsstrukturen utvides automatisk til dette nivået i visningen av innsatssporing hver gang du åpner den.
 
-### <a name="cost-tracking-view"></a>Visning av kostnadssporing
+### Visning av kostnadssporing
+<a id="cost-tracking-view" class="xliff"></a>
 
 Visningen av kostnadssporing viser sporingen av kostnadsforbruk for en oppgave. I denne visningen blir de faktiske kostnadene som er brukt på en oppgave hittil, sammenlignet med de planlagte kostnadene for oppgaven. Følgende formler gir verdiene i visningen av kostnadssporing:
 
@@ -238,7 +247,8 @@ Visningen av kostnadssporing viser en prosjektering av kostnadsavvik for oppgave
 
 Klikk **Utvid til nivå** i visningen av kostnadssporing for å angi hvilket nivå du vil spore og vedlikeholde arbeidsnedbrytningsstrukturen på. Arbeidsnedbrytningsstrukturen utvides til dette nivået i visningen av kostnadssporing hver gang du åpner den.
 
-### <a name="earned-value-management"></a>Administrasjon av opptjent verdi
+### Administrasjon av opptjent verdi
+<a id="earned-value-management" class="xliff"></a>
 
 Du kan bruke metoden for opptjent verdi til å spore fremdriften til et prosjekt. Du kan vise mål for opptjent verdi i rollesenteret for prosjektlederen. Diagramkomponenten for opptjent verdi viser de tidsinndelte verdiene for planlagte verdi og faktiske kostnader. Opptjent verdi per gjeldende dato vises som et punkt. Tidsinndelte data for opptjent verdi er foreløpig ikke tilgjengelige. 
 
@@ -246,13 +256,13 @@ Tidsfasen i diagrammet for opptjent verdi vises etter uke eller måned. Denne de
 
 **Planlagt verdi** Teorien bak metoden for opptjent verdi angir at grafen for den planlagte verdien representerer hvor raskt prosjektets team planla å opptjene verdi i prosjektet. 
 
-Microsoft Dynamics 365 for Operations bruker opptjeningsregelen 0:100 når det tegner inn planlagt verdi. Under denne regelen posteres verdien for oppgaven i oppgaven per sluttdatoen. Ingen verdi posteres før oppgaven er 100 prosent fullført. 
+Finance and Operations bruker opptjeningsregelen 0:100 når det tegner inn planlagt verdi. Under denne regelen posteres verdien for oppgaven i oppgaven per sluttdatoen. Ingen verdi posteres før oppgaven er 100 prosent fullført. 
 
 I Prosjektstyring og regnskap angir du sluttdatoen for bladnoder og de planlagte kostnadene for den. Når grafen for planlagt verdi vises etter uke, summeres planlagt verdi etter uke for alle bladnodeoppgaver i løpet av prosjektet. 
 
 **Opptjent verdi** Teorien bak metoden for opptjent verdi angir at grafen for den opptjente verdien representerer hvor raskt prosjektets team faktisk opptjener verdi i prosjektet. 
 
-Microsoft Dynamics 365 for Operations bruker opptjeningsregelen 0:100 når det tegner inn opptjent verdi. Under denne regelen posteres verdien for oppgaven i oppgaven per sluttdatoen. Ingen verdi posteres før oppgaven er 100 prosent fullført. 
+Finance and Operations bruker opptjeningsregelen 0:100 når det tegner inn opptjent verdi. Under denne regelen posteres verdien for oppgaven i oppgaven per sluttdatoen. Ingen verdi posteres før oppgaven er 100 prosent fullført. 
 
 Når opptjent verdi beregnes, tas det hensyn til fremdriftsprosenten for hver oppgave. Under opptjeningsregelen 0:100 er det bare oppgaver som fullføres i en gitt periode, som vurderes for beregningen av opptjent verdi ved slutten av denne perioden. Opptjent verdi på prosjektet beregnes for alle oppgaver som er fullført når grafen lages. 
 
@@ -263,7 +273,8 @@ Når opptjent verdi beregnes, tas det hensyn til fremdriftsprosenten for hver op
 
 Transaksjoner som posteres til et prosjekt, brukes til å tegne linjen for faktiske kostnader. Kostnadene summeres etter dato. Disse dataene brukes deretter til å tegne de faktiske kostnadene etter uke eller måned i diagrammet for opptjent verdi.
 
-### <a name="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost"></a>Bruke begrepene om planlagt verdi, opptjent verdi og faktiske kostnader
+### Bruke begrepene om planlagt verdi, opptjent verdi og faktiske kostnader
+<a id="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost" class="xliff"></a>
 
 **Tidsplanavvik** Under planleggingen oppretter du en prognose for arbeid på en tidslinje. Planlagt verdi er derfor hvor raskt prosjektplanleggere trodde at arbeid kom til å bli fullført på prosjektet. Etter at et prosjekt har kommet i gang, fullføres arbeid, og prosjektet tjener verdi. Når du sammenligner planlagt verdi med opptjent verdi, kan du vise hvordan arbeidsfremdriften er på et prosjekt. Resultatet av denne sammenligningen kalles tidsplanavvik. 
 
@@ -277,22 +288,26 @@ Hvis den faktiske kostnaden som brukes for en periode, er større enn den opptje
 
 Hvis den faktiske kostnaden som brukes for en periode, er mindre enn den opptjente verdien, ble mer penger opptjent enn brukt. Derfor er prosjektet under budsjettet.
 
-## <a name="wbs-templates"></a>WBS-maler
+## WBS-maler
+<a id="wbs-templates" class="xliff"></a>
 Du kan bruke funksjonen for WBS-maler til å opprette standardmaler for prosjekter. Hvis prosjektene som firmaet ditt tilbyr, omfatter mye arbeid som kan gjentas, bør du vurdere å opprette en WBS-mal. 
 
 Du kan opprette en WBS-mal fra arbeidsnedbrytningsstrukturen i et eksisterende prosjekt, slik at kunnskapen og de anbefalte fremgangsmåtene du ervervet under planleggingen av dette prosjektet, kan brukes på nytt på lignende prosjekter i fremtiden. Enkelte ganger er det imidlertid kanskje ikke aktuelt å lagre hele arbeidsnedbrytningsstrukturen som en mal. Derfor kan du også opprette maler fra deler av arbeidsnedbrytningsstrukturen for et prosjekt.
 
-### <a name="saving-a-projects-wbs-as-a-template"></a>Lagre et prosjekts arbeidsnedbrytningsstruktur som en mal
+### Lagre et prosjekts arbeidsnedbrytningsstruktur som en mal
+<a id="saving-a-projects-wbs-as-a-template" class="xliff"></a>
 
 Når du oppretter en mal, kan du importere den til arbeidsnedbrytningsstrukturen for et nytt prosjekt under rotnoden eller under en hvilken som helst oppgave i arbeidsnedbrytningsstrukturen for prosjektet.
 
-### <a name="importing-a-wbs-template-into-a-projects-wbs"></a>Importere en WBS-mal til arbeidsnedbrytningsstrukturen for et prosjekt
+### Importere en WBS-mal til arbeidsnedbrytningsstrukturen for et prosjekt
+<a id="importing-a-wbs-template-into-a-projects-wbs" class="xliff"></a>
 
 Når du importerer oppgaver, er oppgavene i malen organisert basert på startdatoen for oppgaven de importeres under. Under importen brukes forgjengerrelasjoner i maloppgavene til å beregne startdatoene for de importerte oppgavene. Målprosjektets standard arbeidskalender brukes til å beregne sluttdatoene for de importerte oppgavene, slik at virkedager og standard arbeidstimer som er definert i det gjeldende prosjektets arbeidskalender, beholdes. 
 
 Kostnadsbeløp og salgspriser på estimatlinjene brukes for å garantere at priser som gjelder spesifikt for prosjektet eller prosjektkontrakten, har gyldige datoer.
 
-### <a name="differences-between-a-projects-wbs-and-a-wbs-template"></a>Forskjellen på arbeidsnedbrytningsstrukturen for et prosjekt og en WBS-mal
+### Forskjellen på arbeidsnedbrytningsstrukturen for et prosjekt og en WBS-mal
+<a id="differences-between-a-projects-wbs-and-a-wbs-template" class="xliff"></a>
 
 -   Oppgavene i WBS-maler har ikke startdatoer og sluttdatoer.
 

@@ -1,16 +1,16 @@
 ---
 title: Etterfylling
-description: Denne artikkelen beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring.
+description: Dette emnet beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
@@ -19,31 +19,31 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 83111c4d2b41f6e2fba41d550f153174d72d4710
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: c3bbf35b98416cbc3feca2b0d01015a79cdb2659
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 06/13/2017
 
 ---
 
-# <a name="replenishment"></a>Etterfylling
+# Etterfylling
+<a id="replenishment" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring.
-
-Denne artikkelen beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring. Informasjonen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Det finnes tre etterfyllingsstrategier:
+Dette emnet beskriver etterfyllingsstrategier som er tilgjengelige for lagre som bruker funksjoner som er tilgjengelige i Lagerstyring. Informasjonen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Følgende etterfyllingsstrategier er tilgjengelige:
 
 -   **Etterfylling basert på bølgebehov**– Denne strategien oppretter etterfyllingsarbeid for utgående ordrer eller laster, hvis beholdning ikke er tilgjengelig når bølgen oppretter arbeidet. Etterfyllingsarbeid kan for eksempel opprettes hvis antallet som kreves for en salgsordre ikke er tilgjengelig når en bølge behandles.
--   **Etterfylling basert på minimums- og maksimumsantall** – Denne strategien bruker minimums og maksimumsgrenser for lagring til å bestemme når lokasjoner skal etterfylles. Vare- og lokasjonskriteriene definere beholdningen som evalueres for etterfylling. Maler for etterfylling basert på minimums- og maksimumsantall er den primære mekanismen for å opprettholde optimal nivåer på plukklokasjoner. Du kan bruke behovsetterfylling for å garantere at nok pålydende plukking av lager er tilgjengelig for å dekke bølgeetterspørselen, som et supplement mellom sykluser for etterfylling basert på minimums- og maksimumsantall.
--   **Etterfylling basert på lastbehov** – Denne strategien summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Denne strategien bidrar til å garantere at lastene som opprettes, kan plukkes på lageret når de er frigitt.
+-   **Etterfylling basert på minimums- og maksimumsantall** – Denne strategien bruker minimums og maksimumsgrenser for lagring til å bestemme når lokasjoner skal etterfylles. Vare- og lokasjonskriteriene definere beholdningen som evalueres for etterfylling. Maler for etterfylling basert på minimums- og maksimumsantall er den primære mekanismen for å opprettholde optimal nivåer på plukklokasjoner. Du kan bruke behovsetterfylling for å sikre at nok pålydende plukking av lager er tilgjengelig for å dekke bølgeetterspørselen, som et supplement mellom sykluser for etterfylling basert på minimums- og maksimumsantall.
+-   **Etterfylling basert på lastbehov** – Denne strategien summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Denne strategien bidrar til å sikre at lastene som opprettes, kan plukkes på lageret når de er frigitt.
 
 Alle tre strategier opprette etterfyllingsarbeid basert på en etterfyllingsmal.
 
-## <a name="wave-demand-replenishment"></a>Etterfylling basert på bølgebehov
-Etterfylling basert på bølgebehov oppretter etterfyllingsarbeid basert på behov, hvis antallet som kreves for utgående ordrer eller laster ikke er tilgjengelig når en bølge oppretter arbeid. Etterfyllingsmalen inneholder informasjon om varekriteriene, måleenhet, behovsintervall og lokasjon. 
+## Etterfylling basert på bølgebehov
+<a id="wave-demand-replenishment" class="xliff"></a>
+
+Etterfylling basert på bølgebehov oppretter etterfyllingsarbeid basert på behov, hvis antallet som kreves for produksjonsordrer, karbaner, utgående ordrer eller laster ikke er tilgjengelig når en bølge oppretter arbeid. Etterfyllingsmalen inneholder informasjon om varekriteriene, måleenhet, behovsintervall og lokasjon. 
 
 Lokasjonsdirektiver brukes til å fastsette hvilken lokasjon som skal etterfylles. Du koble disse lokasjonsdirektivene til etterfyllingsmalen ved hjelp av feltet **Direktivkode**. Hvis feltet **Direktivkode** er ikke satt, brukes spørringer til å bestemme hvilket lokasjonsdirektiv som skal brukes. Vær oppmerksom på at hvis en direktivkode ikke er angitt i etterfyllingsmalen, og lokasjonsdirektivet har en direktivkode, ignoreres direktivlokasjonen selv om spørringen i lokasjonsdirektivet er riktig. Lokasjonsdirektiver for plukking brukes til å avgjøre hvor beholdning hentes fra for etterfyllingen. 
 
@@ -51,17 +51,23 @@ I tillegg til å opprette en mal, må du angi noen innstillinger for etterfyllin
 
 Siden **Etterfyllingsmal** inneholder alternativet **Tillat at bølgebehov kan bruke ureserverte antall**. Du må merke av for dette alternativet hvis du vil tillate at behovsetterfylling skal trekkes fra ikke-reservert antall fra arbeidet som er generert fra den valgte etterfyllingsmalen. Hvis du vil aktivere maler for behovsetterfylling til å bruke denne logikken, må du merke av for alternativet for alle eksisterende etterfyllingsmaler. Når etterfylling for behov utløses på lageret, vil dette trekke etterspørselen fra eksisterende etterfyllingsarbeid som har ikke-reservert antall, hvis jobben stammer fra etterfyllingsmaler der alternativet **La bølgebehov bruke ureserverte antall** er aktivert.
 
-## <a name="minmax-replenishment"></a>Etterfylling basert på minimums- og maksimumsantall
+
+Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonsordrer og Kanbaner. 
+
+## Etterfylling basert på minimums- og maksimumsantall
+<a id="minmax-replenishment" class="xliff"></a>
 I etterfylling basert på minimums- og maksimumsantall etterfylles lageret slik at det er mellom minimums- og maksimumsgrensene som er angitt. Denne prosessen oppstår vanligvis én gang hver dag for å garantere at alle plukklokasjoner er fylt til det maksimale nivået før plukkingen starter. 
 
-Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer Microsoft Dynamics 365 for Operations om etterfylling kreves i rekkefølgen linjene er organisert i. 
+Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer Finance and Operations om etterfylling kreves i rekkefølgen linjene er organisert i. 
 
-Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, kan ikke Dynamics 365 for Operations fastslå hvilken vare som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
+Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, er det ikke mulig å fastslå hvilken vare som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 
-## <a name="load-demand-replenishment"></a>Etterfylling av lastbehov
+## Etterfylling av lastbehov
+<a id="load-demand-replenishment" class="xliff"></a>
 Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Etterfylling basert på lastbehov ligner på mange måter på etterfylling basert på bølgebehov. Den største forskjellen er hvordan og når etterfylling basert på lastbehov og etterfylling basert på bølgebehov kjøres. Etterfylling basert på lastbehov kjøres ved hjelp av en satsvis jobb, på samme måte som etterfylling basert på minimums- og maksimumsantall. Hvis du vil definere den satsvise jobben, går du til siden **Etterfylling basert på lastbehov**, velger etterfyllingsmalen som skal brukes, og angir en filterspørring for å angi hvilke laster som skal brukes til å bestemme behovet. Lokasjonsspørringen definerer lokasjonene som tilgjengelige antall trekkes fra for å dekke det samlede behovet for lastene.
 
-## <a name="replenishment-prerequisites"></a>Forhåndskrav for etterfylling
+## Forhåndskrav for etterfylling
+<a id="replenishment-prerequisites" class="xliff"></a>
 | Forutsetning            | Beskrivelse                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Element                    | Varn må aktiveres for lagerstyringsprosesser.                                                                                                                                                                                       |
@@ -71,9 +77,4 @@ Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter
 | Lokasjonsprofiler       | Lokasjonsprofiler er nødvendig for å opprette lokasjoner.                                                                                                                                                                                       |
 | Lokasjonsdirektiver     | Lokasjonsdirektiver er nødvendig for å veilede arbeidet til lokasjoner der etterfylling er nødvendig, og til lokasjoner som beholdning hentes fra.                                                                                     |
 | Arbeidsmaler          | Arbeidsmaler av typen **Etterfylling** er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner.                                                                                           |
-
-
-
-
-
 

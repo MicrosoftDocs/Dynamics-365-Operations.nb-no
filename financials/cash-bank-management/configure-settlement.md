@@ -3,7 +3,7 @@ title: Konfigurere utligning
 description: "Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,22 +19,23 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-settlement"></a>Konfigurere utligning
+# Konfigurere utligning
+<a id="configure-settlement" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder. 
 
-Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Operations. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
+Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
 
 -   **Automatisk utligning** – Sett dette alternativet til **Ja** hvis en transaksjon skal utlignes automatisk mot andre åpne transaksjoner når den posteres. Hvis dette alternativet er satt til **Nei**, kan brukere utligne transaksjoner manuelt når de registrerer betalinger, eller senere, ved å bruke siden **Utlign transaksjoner**.
 -   **Håndtering av kontantrabatt** – Angi hvordan en [kontantrabatt håndteres når en faktura er overbetalt](cash-discount-handling-overpayments.md). Når det gjelder en overbetaling, kan kontantrabatten reduseres, behandles som en differanse eller forbli på kontoen for kunden eller leverandøren.

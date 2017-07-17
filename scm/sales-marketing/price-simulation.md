@@ -3,7 +3,7 @@ title: Prissimulering
 description: "Denne artikkelen inneholder informasjon om prissimulering for tilbud. Prissimulering hjelper deg med å vurdere effekten av fradrag på den fremtidige salgsprisen under tilbudsprosessen, før du fastsetter en bestemt pris."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="price-simulation"></a>Prissimulering
+# Prissimulering
+<a id="price-simulation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,26 +50,31 @@ Når du oppretter et tilbud, kan du definere et varsel. Her er noen av måtene v
 -   De kan holde deg informert om statusen for tilbud i organisasjonen.
 -   De kan utløse en gjennomgang av et bestemt tilbud eller informere deg når rabattgrenser overskrides.
 
-## <a name="price-simulation-and-discounts"></a>Prissimulering og rabatter
+## Prissimulering og rabatter
+<a id="price-simulation-and-discounts" class="xliff"></a>
 For å sikre at rabatter og priser beregnes på riktig måte, må du være forsiktig når du kjører prissimuleringer på tilbud med rabatter. Fordi alle prissimuleringer behandles som spesialrabatter på den aktive tilbudslinjen eller hele tilbudet, er det viktig å spore forskjellene i rabattene.
 
-### <a name="types-of-discounts-in-trade-agreements"></a>Rabattypene i forretningsavtaler
+### Rabattypene i forretningsavtaler
+<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
 
-Forretningsavtalene i Microsoft Dynamics 365 for Operations kan ha fire typer prisrabatter. Disse rabattene kan defineres for ulike varer, kunder eller prisgrupper, og kan begrenses etter dato. Hvis du vil unngå feilberegninger, må du vurdere forretningsavtaler når du kjører prissimuleringer. Her er fire rabattypene i forretningsavtaler:
+Forretningsavtalene i Microsoft Dynamics 365 for Finance and Operations kan ha fire typer prisrabatter. Disse rabattene kan defineres for ulike varer, kunder eller prisgrupper, og kan begrenses etter dato. Hvis du vil unngå feilberegninger, må du vurdere forretningsavtaler når du kjører prissimuleringer. Her er fire rabattypene i forretningsavtaler:
 
 -   **Salgspris** – Separate salgspriser kan angis for varer. Når det opprettes tilbudslinjer, søker programmet etter den riktige salgsprisen for en vare, og overfører den til tilbudslinjene. Derfor påvirkes ikke en forretningsavtale med denne typen rabatt, prissimuleringen. Salgsprisen som brukes i tilbudslinjen, reflekterer forretningsavtalen.
 -   **Linjerabatt** – Spesialrabatter angis for varer, avhengig av antallet som er bestilt. Linjebeløp reduseres typisk av linjerabatten før det kjøres en prissimulering. Derfor påvirkes en forretningsavtale med denne typen rabatt, prissimuleringen.
 -   **Samkjøpsrabatt** – Hvis de kombinerte antallene overskrider grensen du har definert, vil forhåndsdefinerte kombinasjoner av bestilte varer utløse en rabatt på hele ordren. Linjebeløp reduseres typisk av linjerabatten før det kjøres en prissimulering. Derfor påvirkes en forretningsavtale med denne typen rabatt, prissimuleringen.
 -   **Sluttrabatt** – Hvis de kombinerte beløpene overskrider grensen du har definert, vil forhåndsdefinerte bestilte varer utløse en rabatt på hele ordren. Totalrabatten genereres av tilbudslinjene. Fordi den samlede rabatten brukes i tilbudstotalen som en rabatt, kan det imidlertid reduserer det totale beløpet for tilbudet. Derfor påvirkes en forretningsavtale med denne typen rabatt, prissimuleringen.
 
-### <a name="quotation-lines-and-trade-agreements"></a>Tilbudslinjer og forretningsavtaler
+### Tilbudslinjer og forretningsavtaler
+<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
 
 Når du oppretter eller justerer en tilbudslinje, beregnes linjerabatter automatisk. Den relevante salgsprisen blir funnet for varen, basert på forretningsavtalen.
 
-## <a name="price-simulation-examples"></a>Eksempler på prissimulering
+## Eksempler på prissimulering
+<a id="price-simulation-examples" class="xliff"></a>
 Følgende eksempler bruker prissimulering for tilbudshoder og enkeltlinjevarer.
 
-### <a name="price-simulation-for-quotation-headers"></a>Prissimulering for tilbudshoder
+### Prissimulering for tilbudshoder
+<a id="price-simulation-for-quotation-headers" class="xliff"></a>
 
 Du oppretter et tilbud som har følgende linjer:
 
@@ -99,7 +105,8 @@ Du kjører en prissimulasjon og bruker 15 prosent sluttrabatt for hele tilbudet 
 | Nytt dekningsbidrag i USD                       | 270,47 – 184,96                           | 85,51    |
 | Nytt dekningsbidrag                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61 %   |
 
-### <a name="price-simulation-for-single-line-items"></a>Prissimulering for enkeltlinjevarer
+### Prissimulering for enkeltlinjevarer
+<a id="price-simulation-for-single-line-items" class="xliff"></a>
 
 Du oppretter et tilbud som har følgende linjer:
 

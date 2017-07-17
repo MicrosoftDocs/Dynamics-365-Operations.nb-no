@@ -3,7 +3,7 @@ title: Oversikt over produksjonsprosessen
 description: Denne artikkelen gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,15 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="production-process-overview"></a>Oversikt over produksjonsprosessen
+# Oversikt over produksjonsprosessen
+<a id="production-process-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -39,19 +40,21 @@ Produksjonen av produkter, en prosess som også er kjent som produksjonens livss
 
 **Produksjonskontroll**-modulen er koblet til andre moduler, for eksempel **Behandling av produktinformasjon**, **Lagerstyring**, **Økonomimodul**, **Lagerstyring**, **Prosjektregnskap** og **Organisasjonsstyring**. Denne integreringen støtter informasjonsflyten som er nødvendig for å fullføre produksjonen av en ferdig vare.  
 
-Produksjonsprosessen påvirkes vanligvis av kostnadsregnskaps- og beholdningsvurderingsmetodene som er valgt for en bestemt produksjonsprosess. Dynamics 365 for Operations støtter både faktiske kostnader (først inn, først ut \[FIFO\]; sist inn, først ut \[LIFO\]; glidende gjennomsnittet og periodisk avveid gjennomsnitt) og standardkostmetoder. Lean manufacturing implementeres basert på backflush-etterkalkuleringsprinsippet.  
+Produksjonsprosessen påvirkes vanligvis av kostnadsregnskaps- og beholdningsvurderingsmetodene som er valgt for en bestemt produksjonsprosess. Finance and Operations støtter både faktiske kostnader (først inn, først ut \[FIFO\]; sist inn, først ut \[LIFO\]; glidende gjennomsnittet og periodisk avveid gjennomsnitt) og standardkostmetoder. Lean manufacturing implementeres basert på backflush-etterkalkuleringsprinsippet.  
 
 Valget av kostnadsmålingsmetodene definerer også rapporteringskravene for material- og ressursforbruk i produksjonsprosessen. Faktiske kostnadsmetoder krever som regel nøyaktig rapportering på jobbnivå, mens periodiske kostnadsmetoder gir mindre detaljert rapportering av material- og ressursforbruk.
 
-## <a name="mixed-mode-manufacturing"></a>Blandet modus-produksjon
-Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper. Dynamics 365 for Operations kan bruke forskjellige ordretyper i blandet modus. Med andre ord kan alle ordretyper forekomme under hele prosessen med å produsere ett ferdig produkt.
+## Blandet modus-produksjon
+<a id="mixed-mode-manufacturing" class="xliff"></a>
+Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper. Finance and Operations kan bruke forskjellige ordretyper i blandet modus. Med andre ord kan alle ordretyper forekomme under hele prosessen med å produsere ett ferdig produkt.
 
 -   **Produksjonsordre** – Dette er den klassiske ordretypen for å produsere et bestemt produkt eller en produktvariant i et gitt antall på en bestemt dato. Produksjonsordrer er basert på stykklister og ruter.
 -   **Partiordre** – Denne ordretypen brukes for prosessindustri og atskilte prosesser der produksjonskonverteringen er basert på en formel, eller der koprodukter og biprodukter kan være sluttprodukter, i tillegg til eller i stedet for hovedproduktet. Partiordrer bruker stykklister og ruter av typen **formel**.
 -   **Kanban** – Kanbaner brukes til å signalisere gjentatte lean manufacturing-prosesser som er basert på produksjonsflyter, Kanban-regler og stykklister.
 -   **Prosjekt** – Et produksjonsprosjekt kombinerer produkter og tjenester med en gitt tidsplan og et gitt budsjett. Produksjonsdelen av et prosjekt kan leveres via en av de andre ordretypene.
 
-## <a name="manufacturing-principles"></a>Produksjonsprinsipper
+## Produksjonsprinsipper
+<a id="manufacturing-principles" class="xliff"></a>
 Hvis du vil velge produksjonsprinsippet som passer best til et bestemt produkt og tilknyttet markedet, må du vurdere kravene til produksjon og logistikk, og også kundenes forventninger om leveringstider.
 
 -   **Produser for lager** – Dette er det klassiske produksjonsprinsippet, der varer produseres for lager, basert på prognosen eller minimum lagerpåfyll (sistnevnte beregnes vanligvis basert på prognose eller historisk forbruk).
@@ -59,7 +62,8 @@ Hvis du vil velge produksjonsprinsippet som passer best til et bestemt produkt o
 -   **Konfigurer etter ordre** – Som ved prinsippet for produksjon etter ordre, utføres de endelige operasjonene i verdikjeden etter ordre. Den faktiske produktvarianten som produseres, er ikke forhåndsdefinert, men opprettes ved ordreregistreringen, basert på konfigurasjonsmodellen for salgsproduktet. Konfigurer etter ordre-prinsippet krever en del prosessamkjøring for en bestemt produktlinje.
 -   **Produser på bestilling** – Prosesser for produksjon etter bestilling er vanligvis igangsatt av et prosjekt, og starter vanligvis med utviklingsfasen. I utviklingsfasen utvikles og beskrives de faktiske produktene som er nødvendige for å oppfylle ordren. Produksjonsordrer, partiordrer eller Kanbaner kan så opprettes for å produsere produktene.
 
-## <a name="overview-of-the-production-life-cycle"></a>Oversikt over produksjonens livssyklus
+## Oversikt over produksjonens livssyklus
+<a id="overview-of-the-production-life-cycle" class="xliff"></a>
 Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i blandet modus-produksjon. Men ikke alle er representert med en eksplisitt ordrestatus.
 
 1.  **Opprettet** – Du kan opprette en produksjonsordre, partiordre eller Kanban manuelt, eller du kan konfigurere systemet for å generere dem basert på ulike behovssignaler. Hovedplanlegging oppretter produksjonsordrer, partiordrer eller Kanbaner ved autorisasjon av planlagte ordrer. Andre behovssignaler er salgsordrer eller tilknyttede forsyningssignaler fra andre produksjonsordrer eller Kanbaner. For Kanbaner med fast antall genereres behovssignaler når Kanbaner registreres som tomme.
@@ -80,7 +84,8 @@ Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i bl
 12. **Periodisk avslutning** – Noen regnskapsprinsipper, som periodisk gjennomsnitt, backflush-etterkalkulering, FIFO eller LIFO, krever periodiske aktiviteter for å lukke lageret eller regnskapsperioden. Vanligvis prøver systemet å rapportere alt material- og ressursforbruk samt korrigeringer av lager og svinn, før periodene lukkes. Denne rapporteringen gjøres vanligvis ved hjelp av lagerbevegelsesjournaler eller justeringsjournaler. Målet er å vurdere det økonomiske resultatet til driftsenheter per periode. I noen tilfeller når tidkrevende produksjonsordrer brukes, som strekker seg over de økonomiske rapporteringsperiodene, brukes produksjonsjournaler til å rapportere produksjonsfremdriften og ressursforbruket ved utløpet av perioden.
 
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Tilbakemeldinger på produksjon](production-feedback.md)

@@ -1,6 +1,6 @@
 ---
 title: Behandling av generell journal
-description: "Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
+description: "Denne artikkelen beskriver funksjoner i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 150ca540fca154947cca47e97e45ce865ab1f507
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="general-journal-processing"></a>Behandling av generell journal
+# Behandling av generell journal
+<a id="general-journal-processing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver funksjoner i Microsoft Dynamics 365 for Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
+Denne artikkelen beskriver funksjoner i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
 
 Journalnavn
 
@@ -59,10 +60,12 @@ På siden **Periodiske journaler** kan du definere at gjentakelsesjournaler skal
 
 Du kan bruke bilagsmaler til enhver tid. På siden **Økonomijournaler** finnes handlingene **Lagre** og **Velg bilagsmal** på **Journalbilag**-siden, under **Funksjoner** for bilagslinjene.
 
-## <a name="related-setup"></a>Relatert oppsett
+## Relatert oppsett
+<a id="related-setup" class="xliff"></a>
 Dette oppsettet er ikke spesifikk for økonomijournaler, men vil garantere at dataregistrering er riktig og enkel.
 
-### <a name="main-account"></a>Hovedkonto
+### Hovedkonto
+<a id="main-account" class="xliff"></a>
 
 Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 
@@ -78,7 +81,8 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
     -   **Brukervalidering** – Dette alternativet styrer hvilke brukere som har tillatelse til å postere til en hovedkonto.
     -   **Validering av posteringstype** – Dette alternativet styrer hvilke posteringstyper som er tillatt for en hovedkonto.
 
-### <a name="accounting-structures-and-advanced-rules-structures"></a>Regnskapsstrukturer og strukturer for avanserte regler
+### Regnskapsstrukturer og strukturer for avanserte regler
+<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
 
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å garantere at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatorisk og riktig data alltid registreres.
 

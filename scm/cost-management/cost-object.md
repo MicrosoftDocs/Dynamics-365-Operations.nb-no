@@ -3,7 +3,7 @@ title: Kostnadsobjekter
 description: "Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvordan kostnader og antall akkumuleres. Et kostnadsobjekt er en enhet som kostnader og antall akkumuleres for. En kostnadsobjektenhet kan være et produkt eller produktvarianter, for eksempel varianter for stil og farge."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c818bfac6645b71bcc8b2249534aa80907786651
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-objects"></a>Kostnadsobjekter
+# Kostnadsobjekter
+<a id="cost-objects" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvordan kostnader og antall akkumuleres. Et kostnadsobjekt er en enhet som kostnader og antall akkumuleres for. En kostnadsobjektenhet kan være et produkt eller produktvarianter, for eksempel varianter for stil og farge.  
 
-<a name="cost-objects"></a>Kostnadsobjekter
+Kostnadsobjekter
+<a id="cost-objects" class="xliff"></a>
 ------------
 
 **Kostnadsobjekter**-siden viser alle kostnadsobjekter som er registrert for et produkt. Kostnadsobjektene er definert av data fra følgende kilder:
@@ -58,7 +60,8 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 | Kostnadsobjekt      | x           | x    |           |           |
 | Beholdningsobjekt | x           | x    |  x        | x         |
 
-## <a name="accumulation-of-costs-and-quantities"></a>Akkumulering av kostnader og antall
+## Akkumulering av kostnader og antall
+<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
 -   Verdien i **Verdi**-feltet er en sum av følgende verdier:
     -   Fysisk kostbeløp
     -   Økonomisk kostbeløp
@@ -71,7 +74,8 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 
 **Obs!**  Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Produktdimensjonsgruppe](https://technet.microsoft.com/en-us/library/aa499382.aspx)
@@ -80,7 +84,7 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 
 [Sporingsdimensjonsgruppe](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Hva er nytt eller endret i Microsoft Dynamics AX?](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Hva er nytt eller endret?](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
 [Kostnadsoppføringer](cost-entries.md)
 

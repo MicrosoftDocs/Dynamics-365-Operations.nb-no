@@ -1,9 +1,9 @@
 ---
 title: "Konfigurere globale adressebøker"
-description: "Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet."
+description: "Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Finance and Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dabac8a899a07192d31f4a8f4f70b12ed5410093
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 93a9c35b82a8bacd0295416015e783cb6348f550
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-global-address-books"></a>Konfigurere globale adressebøker
+# Konfigurere globale adressebøker
+<a id="configure-global-address-books" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
+Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker i Microsoft Dynamics 365 for Finance and Operations. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
 
-<a name="global-address-book"></a>Global adressebok
+Global adressebok
+<a id="global-address-book" class="xliff"></a>
 -------------------
 
 Før du begynner å arbeide med den globale adresseboken, må du bestemme standardverdiene for den. Disse standardverdiene brukes deretter til flere adressebøker du oppretter. **Beslutninger:**
@@ -47,7 +49,8 @@ Før du begynner å arbeide med den globale adresseboken, må du bestemme standa
 -   Når det opprettes en partspost i den globale adresseboken, vil du ha en standard partstype, person eller organisasjon?
 -   Hvilke brukerroller skal ha tilgang til de private adressene og kontaktinformasjonen til partsposter?
 
-## <a name="additional-address-books"></a>Flere adressebøker
+## Flere adressebøker
+<a id="additional-address-books" class="xliff"></a>
 Når du oppretter den globale adresseboken, kan du opprette flere adressebøker i henhold til behovet ditt, for eksempel en egen adressebok for hvert firma i organisasjonen din eller for hver bransje. Fabrikam er for eksempel en internasjonal organisasjon som har flere firmaer og flere bransjer. Fabrikam planlegger å opprette en adressebok for hver bransje. For bransjer som forekommer mer enn ett sted, for eksempel bransjen for pneumatiske verktøy, planlegger Fabrikam å opprette en adressebok for hver lokasjon. Chris, som er IT-ansvarlig hos Fabrikam, har opprettet listen nedenfor over adressebøker som kreves. Denne listen beskriver også partipostene som hver adressebok må inneholde.
 
 -   **Kontrakter med offentlig sektor (PubSC)** – Partsposter for alle parter som er involvert i kontrakter med offentlig sektor som Fabrikam har inngått.
@@ -60,7 +63,8 @@ Når du oppretter den globale adresseboken, kan du opprette flere adressebøker 
 
 -   Hvor mange flere adressebøker vil du opprette?
 
-### <a name="address-book-security"></a>Adresseboksikkerhet
+### Adresseboksikkerhet
+<a id="address-book-security" class="xliff"></a>
 
 Du kan opprette adressebøker når som helst, og du kan også angi sikkerhetsparametere for adressebøkene når som helst. Du trenger ikke angi tilgangsrettigheter for en adressebok, men hvis du ikke gjør det, kan alle ansatte i organisasjonen se alle partsposter i denne adresseboken. Du kan definere tilgangsrettigheter til partsposter via adressebøker. Sikkerhetsrettigheter er basert på team. Denne tilnærmingen sikrer at bare arbeidere som er tilordnet et team som har tilgang til en adressebok, kan vise partipostene i denne adresseboken. Du må velge teamene som har tilgang til hver adressebok. For hver adressebok kan du angi tilgangsrettigheter som kan gi eller nekte tilgang for bestemte team. Hvis du gir et team rettigheter til en adressebok, kan alle medlemmer av teamet vise postene i adresseboken. Hvis du ikke gir et team tilgang til en adressebok, kan medlemmer av teamet ikke vise adresseboken eller innholdet. **Beslutning:**
 

@@ -3,13 +3,13 @@ title: Definere og generere positive betalingsfiler
 description: Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f82ed69aaaf4d3345ef4e74a338124465dcf2358
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fc4269fc8bf8319a2a2f4e3769f0ffb31d5ef79d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-and-generate-positive-pay-files"></a>Definere og generere positive betalingsfiler
+# Definere og generere positive betalingsfiler
+<a id="set-up-and-generate-positive-pay-files" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,8 +35,9 @@ Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer
 
 Definer positiv betaling for å generere en elektronisk liste over sjekker som leveres til banken. Når sjekken presenteres til banken, sammenligner banken deretter sjekken med listen over sjekker. Hvis sjekken samsvarer med en sjekk i listen, betales sjekken av banken. Hvis sjekken ikke samsvarer med en sjekk i listen, beholder banken sjekken til gjennomgang.
 
-## <a name="security-for-positive-pay-files"></a>Sikkerhetsnøkkel for positive lønnsfiler
-Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Siden positive lønnsfiler kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for Operations. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
+## Sikkerhetsnøkkel for positive lønnsfiler
+<a id="security-for-positive-pay-files" class="xliff"></a>
+Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Siden positive lønnsfiler kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
 
 <table>
 <colgroup>
@@ -78,10 +80,12 @@ Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere
 </tbody>
 </table>
 
-## <a name="set-up-a-positive-pay-format"></a>Definer et positivt betalingsformat
+## Definer et positivt betalingsformat
+<a id="set-up-a-positive-pay-format" class="xliff"></a>
 Positive betalingsfiler opprettes ved hjelp av dataenheter. Før du kan generere en positiv betalingsfil, må du definere et transformasjonsinndataformat som skal brukes til å oversette informasjonen i et format som kan kommunisere med banken. På siden **Positivt betalingsformat** kan du opprette en filformat-ID og en beskrivelse. Transformasjonsinndataformatet må være av XML-typen. Det bestemte formatet avhengiger av transformasjonsfilen du bruker. XSLT-eksempelfilen (Extensible Stylesheet Language Transformations) som er oppgitt, bruker formatet **XML-Element**. Bruk handlingen **Last opp fil som brukes for transformasjon** til å angi plasseringen til transformeringsfilen for formatet som banken krever.
 
-## <a name="example-xslt-file-for-positive-pay-file"></a>Eksempel: XSLT-fil for positiv betalingsfil
+## Eksempel: XSLT-fil for positiv betalingsfil
+<a id="example-xslt-file-for-positive-pay-file" class="xliff"></a>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
       <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
       <xsl:template match="/">
@@ -140,25 +144,32 @@ Positive betalingsfiler opprettes ved hjelp av dataenheter. Før du kan generere
       </xsl:template>
     </xsl:stylesheet>
 
-## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Tilordne det positive betalingsformatet til en bankkonto
+## Tilordne det positive betalingsformatet til en bankkonto
+<a id="assign-the-positive-pay-format-to-a-bank-account" class="xliff"></a>
 For hver bankkonto du vil generere informasjon om positiv betaling for, må du tilordne det positive betalingsformatet som ble angitt i forrige del. På **Bankkontoer**-siden velger du det positive lønnsformatet som samsvarer med bankkontoen. I feltet **Startdato for positiv betaling** angir du den første datoen for generering av positive betalingsfiler. Det er viktig at du angir en dato i dette feltet. Ellers vil den første positive betalingsfilen du genererer, inkludere alle kontrollene som noen gang har blitt opprettet for denne bankkontoen.
 
-## <a name="assign-a-number-sequence-for-positive-pay-files"></a>Tilordne en nummerserie for positive betalingsfiler.
-Hver positiv lønnsfil må ha et unikt nummer. Bruk kategorien **Nummerserier**på siden **Parametere for kontant- og bankbehandling** til å opprette en nummerserie for positive betalingsfiler.
+## Tilordne en nummerserie for positive betalingsfiler.
+<a id="assign-a-number-sequence-for-positive-pay-files" class="xliff"></a>
+Hver positiv lønnsfil må ha et unikt nummer. Bruk kategorien **Nummerserier** på siden **Parametere for kontant- og bankbehandling** til å opprette en nummerserie for positive betalingsfiler.
 
-## <a name="generate-a-positive-pay-file-for-a-single-bank-account"></a>Generere en positiv betalingsfil for én bankkonto
+## Generere en positiv betalingsfil for én bankkonto
+<a id="generate-a-positive-pay-file-for-a-single-bank-account" class="xliff"></a>
 Du kan generere en positiv betalingsfil for én juridisk enhet og én bankkonto. For informasjon om hvordan du genererer positive betalingsfiler for flere juridiske enheter og bankkontoer samtidig, kan du se neste del. Hvis du vil generere en positiv betalingsfilen for en juridisk enhet og én bankkonto, kan du åpne dialogboksen **Generer en positiv betalingsfil** fra **Bankkontoer**-siden. I **Frist**-feltet angir du den siste sjekkdatoen som skal tas med i den positive betalingsfilen. Alle sjekker som ikke har blitt tatt med i en positiv betalingsfil til og med denne sjekkdatoen, tas med i filen.
 
-## <a name="generate-a-positive-pay-file-for-multiple-bank-accounts"></a>Generere en positiv betalingsfil for flere bankkontoer
+## Generere en positiv betalingsfil for flere bankkontoer
+<a id="generate-a-positive-pay-file-for-multiple-bank-accounts" class="xliff"></a>
 Hvis du vil generere en positiv betalingsfiler for flere bankkontoer, bruker du den periodiske oppgaven **Generer en positiv betalingsfil**. Velg det positive betalingsformatet for filen, og angi om du vil generere filen for alle juridiske enheter eller for en valgt juridisk enhet. Du kan også generere den positive betalingsfilen for alle bankkontoer som bruker det angitte positive betalingsformatet eller for en valgt bankkonto. I **Frist**-feltet angir du den siste sjekkdatoen som skal tas med i den positive betalingsfilen. Alle sjekker som ikke har blitt tatt med i en positiv betalingsfil til og med denne sjekkdatoen, tas med i filen.
 
-## <a name="view-the-results-of-positive-pay-file-generation"></a>Vise resultatene av genereringen av den positive betalingsfilen
+## Vise resultatene av genereringen av den positive betalingsfilen
+<a id="view-the-results-of-positive-pay-file-generation" class="xliff"></a>
 Når den positive betalingsfilen er opprettet, kan du vise resultatene på siden **Sammendrag av positiv betalingsfil** side. Hvis du vil vise detaljer om de individuelle kontrollene, kan du bruke siden **Detaljer for positiv betalingsfil**.
 
-## <a name="confirm-a-positive-pay-file"></a>Bekreft en positiv betalingsfil
+## Bekreft en positiv betalingsfil
+<a id="confirm-a-positive-pay-file" class="xliff"></a>
 Når kontrollene som er oppført i en positiv lønnsfilen er betalt, får du et bekreftelsesnummer fra banken. Du kan deretter bekrefte den positive betalingsfilen. På siden **Sammendrag av positiv betalingsfil** velger du en positiv betalingsfil som har statusen **Opprettet**, og deretter velger du handlingen **Angi bekreftelse**. Når du bekrefter en positiv betalingsfil, registreres bekreftelsesnummeret du mottok fra banken.
 
-## <a name="recall-a-positive-pay-file"></a>Tilbakekalle en positiv betalingsfil
+## Tilbakekalle en positiv betalingsfil
+<a id="recall-a-positive-pay-file" class="xliff"></a>
 Hvis du må endre en positiv betalingsfil, kan du tilbakekalle den. På siden **Sammendrag av positiv betalingsfil** velger du en positiv betalingsfil som har statusen **Opprettet**, og deretter velger du handlingen **Tilbakekall**. For hver kontroll i den positive betalingsfilen tilbakestilles feltet som angir om kontrollen er inkludert i en positiv betalingsfil. Du kan deretter opprette en ny positiv betalingsfil med kontrollen som ble tilbakekalt.
 
 

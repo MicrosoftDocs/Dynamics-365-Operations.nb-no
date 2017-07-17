@@ -1,15 +1,15 @@
 ---
 title: Avstemme bankkontoutdrag med avansert bankavstemming
-description: Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Operations. Dette emnet beskriver avstemmingsprosessen.
+description: Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dette emnet beskriver avstemmingsprosessen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -17,22 +17,24 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81368294164ca4ca1915d73f8f5622e61f5d1fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag med avansert bankavstemming
+# Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
+<a id="reconcile-bank-statements-by-using-advanced-bank-reconciliation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Operations. Dette emnet beskriver avstemmingsprosessen.  
+Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dette emnet beskriver avstemmingsprosessen.  
 
-<a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
+Importere et elektronisk bankkontoutdrag
+<a id="import-an-electronic-bank-statement" class="xliff"></a>
 -----------------------------------
 
 Du importerer bankkontoutdraget ved hjelp av handlingen **Importer utdrag** på siden **Bankkontoutdrag**. På bankkontoutdraget identifiseres bankkontoen av en kombinasjon av verdier som er angitt for bankkontodetaljene. Disse verdiene inkluderer banknavn, bankkontonummer, rutenummer, SWIFT-kode (Society for Worldwide Interbank Financial Telecommunication) og IBAN (International Bank Account nummer). 
@@ -44,11 +46,12 @@ Du kan laste opp et bankkontoutdrag som inneholder informasjon for én enkelt ko
 
 Hvis alle setninger i den elektroniske filen ikke kan knyttes til en bankkonto ved hjelp av de identifiserende feltene, kan de ikke importeres. Andre setninger i filen kan imidlertid likevel importeres. Brukeren får deretter en melding om at import av bankkontoutdrag mislyktes for bestemte bankkontoer. Legg merke til at brukeren som importerer bankkontoutdragsfilen, må ha tilgang til en juridisk enhet for å importere utdrag for bankkontoer for den juridiske enheten. 
 
-Du kan bruke en ZIP-fil til å laste opp flere utdragsfiler til Microsoft Dynamics 365 for Operations i én enkelt prosess. Hvis du vil importere flere bankkontoutdragsfiler for flere kontoer, kan du kombinere alle bankkontoutdragsfilene i en ZIP-fil. I dialogboksen **Importer bankkontoutdrag** setter du alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge ZIP-filen som inneholder bankkontoutdragsfilene, og klikk deretter **Last opp**. Importprosessen gjenkjenner zip-filen og laster opp hver oppgave som er inkludert i den, uavhengig av den juridiske enheten for bankkontoen. 
+Du kan bruke en ZIP-fil til å laste opp flere utdragsfiler til Finance and Operations i én enkelt prosess. Hvis du vil importere flere bankkontoutdragsfiler for flere kontoer, kan du kombinere alle bankkontoutdragsfilene i en ZIP-fil. I dialogboksen **Importer bankkontoutdrag** setter du alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge ZIP-filen som inneholder bankkontoutdragsfilene, og klikk deretter **Last opp**. Importprosessen gjenkjenner zip-filen og laster opp hver oppgave som er inkludert i den, uavhengig av den juridiske enheten for bankkontoen. 
 
 Alternativet **Avstem etter import** er tilgjengelig. Når du setter dette alternativet til **Ja**, validerer systemet automatisk bankkontoutdraget, oppretter ny bankavstemming og nytt regneark og kjører standard samsvarsregelsett når bankkontoutdraget lastes opp. Denne funksjonen automatiserer prosessen frem til der transaksjoner må kontrolleres manuelt.
 
-## <a name="validate-the-bank-statement"></a>Validere bankkontoutdraget
+## Validere bankkontoutdraget
+<a id="validate-the-bank-statement" class="xliff"></a>
 Hvis du vil validere et utdrag, klikker du **Valider** på siden **Bankkontoutdrag**. Bankkontoutdrag må valideres før de kan avstemmes. Dette trinnet fullføres automatisk hvis du setter alternativet **Avstem etter import** til **Ja** på importtidspunktet. 
 
 Validering av bankkontoutdrag kontrollerer følgende detaljer:
@@ -63,7 +66,8 @@ Validering av bankkontoutdrag kontrollerer følgende detaljer:
 
 Når valideringen er fullført, oppdateres statusen for bankkontoutdraget til **Validert**. Et bankkontoutdrag må valideres før det kan avstemmes.
 
-## <a name="reconcile-the-bank-statement"></a>Avstemme bankkontoutdraget
+## Avstemme bankkontoutdraget
+<a id="reconcile-the-bank-statement" class="xliff"></a>
 Når du har importert et elektronisk bankkontoutdrag og validert utdraget på siden **Bankkontoutdrag**, kan du avstemme bankkontoutdraget ved hjelp av sidene **Bankavstemming** og **Bankavstemmingsregneark**. 
 
 På siden **Bankavstemming** klikker du **Ny** for å opprette en ny avstemming, og deretter velger du bankkontoen for utdraget som ble importert. En bankkonto kan ha bare én åpen bankavstemming. Fristdatoen bestemmer bankkontoutdragstransaksjoner og Operations-banktransaksjoner som er inkludert i avstemmingsregnearket. Som standard brukes gjeldende systemdato som fristdato, men du kan endre datoen for avstemmingen. Gjenstående hodeinformasjonen hentes automatisk fra utdraget. Dette trinnet fullføres automatisk hvis du setter alternativet **Avstem etter import** til **Ja** på importtidspunktet. 
@@ -76,7 +80,7 @@ Det finnes tre måter for å utligne eller avstemme bankkontoutdragstransaksjone
 
 -   Utligne transaksjoner med Operations-banktransaksjoner.
 -   Utligne transaksjoner med en tilbakeføring for bankkontoutdragstransaksjon.
--   Merke transaksjonene som **Ny**, slik at de kan posteres senere som en banktransaksjon i Dynamics 365 for Operations.
+-   Merke transaksjonene som **Ny**, slik at de kan posteres senere som en banktransaksjon i Finance and Operations.
 
 Hvis du vil utligne transaksjoner manuelt, velger du transaksjonene i rutenettet **Bankkontoutdragstransaksjoner**, velger tilsvarende transaksjoner i rutenettet **Operations-banktransaksjoner**, og klikker deretter **Samsvar**. De valgte transaksjonene flyttes fra øvre rutenett for ikke-utlignede transaksjoner til nedre rutenett for utlignede transaksjoner. I tillegg oppdateres utlignede og ikke-utlignede totalbeløp. Du kan ha transaksjonsutligninger av typen en-til-en, mange-til-en og mange-til-mange. Utligninger må følge reglene for tillatte datoforskjeller og tilordning av transaksjonstype. Disse reglene settes på siden **Parametere for kontant- og bankbehandling**.
 
@@ -86,13 +90,14 @@ Tilbakeføring for bankkontoutdragstransaksjon utlignes ved hjelp av avstemmings
 
 Tilbakeførte Operations-banktransaksjoner må avstemmes ved hjelp av siden **Operations-banktransaksjoner**. Du kan avstemme to Operations-banktransaksjoner sammen hvis dokumentene har samme bankkonto, dokumenttype og betalingsreferanse, og hvis de har motsatt beløp. Du kan også avstemme én enkelt annullert sjekk for å hindre at disse transaksjonene vises på avstemmingsregnearket. 
 
-Hvis det finnes nye transaksjoner som er initiert av banken, for eksempel rente, avgifter og gebyrer som ennå ikke er i Dynamics 365 for Operations, kan du legge dem til en journal som er knyttet til den valgte avstemmingen av bankkontoutdraget. Velg en bankkontoutdragstransaksjon i rutenettet **Bankkontoutdragstransaksjoner** for ikke-utlignede transaksjoner, og klikk deretter **Merk som ny**. Statusen for transaksjonene settes til **Ny**, og transaksjonen flyttes til rutenettet **Bankkontoutdragstransaksjoner** for utlignede transaksjoner. Du posterer transaksjoner som er merket som **Ny** senere, fra siden **Bankkontoutdrag**. 
+Hvis det finnes nye transaksjoner som er initiert av banken, for eksempel rente, avgifter og gebyrer som ennå ikke er i Finance and Operations , kan du legge dem til en journal som er knyttet til den valgte avstemmingen av bankkontoutdraget. Velg en bankkontoutdragstransaksjon i rutenettet **Bankkontoutdragstransaksjoner** for ikke-utlignede transaksjoner, og klikk deretter **Merk som ny**. Statusen for transaksjonene settes til **Ny**, og transaksjonen flyttes til rutenettet **Bankkontoutdragstransaksjoner** for utlignede transaksjoner. Du posterer transaksjoner som er merket som **Ny** senere, fra siden **Bankkontoutdrag**. 
 
 Du kan oppheve avstemmingen av transaksjoner som ble feilaktig avstemt. Velg den avstemte bankkontoutdragstransaksjonen, og klikk deretter **Opphev samsvar**. Alle tilknyttede transaksjoner flyttes tilbake til det øvre rutenett for ikke-avstemte transaksjoner, og utlignede og ikke-utlignede totalbeløp oppdateres. 
 
 Når alle utdragslinjer er behandlet, må du merke bankavstemmingsregneark som avstemt.
 
-## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Postere nye transaksjoner som er tilknyttet den valgte avstemmingen
+## Postere nye transaksjoner som er tilknyttet den valgte avstemmingen
+<a id="post-new-transactions-that-are-associated-with-the-reconciliation" class="xliff"></a>
 Bankkontoutdragstransaksjoner du merket som **Ny** på avstemmingsregnearket, posteres på siden **Bankkontoutdrag**. På siden **Bankkontoutdrag** velger du utdrags-ID for å vise utdragsdetaljene. På **Regnskap**-menyen kan du bruke alternativene **Vis distribusjoner** og **Vis regnskap** for å vise detaljene bak de nye transaksjonene og de tilhørende bankpostene. Velg alternativet **Poster** for å postere bankkontoutdragslinjer som er merket som **Ny** i økonomimodulen. Vær oppmerksom på at posteringer bare kan fullføres én gang per bankkontoutdrag.
 
 

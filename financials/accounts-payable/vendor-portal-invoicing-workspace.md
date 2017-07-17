@@ -3,13 +3,14 @@ title: "Arbeidsområde for leverandørsamarbeidsfakturering"
 description: "Dette emnet forklarer hvordan du kan vise leverandørfakturaer og sende fakturaer fra arbeidsområdet for leverandørsamarbeidsfakturering."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,35 +18,38 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Arbeidsområde for leverandørsamarbeidsfakturering
+# Arbeidsområde for leverandørsamarbeidsfakturering
+<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet forklarer hvordan du kan vise leverandørfakturaer og sende fakturaer fra arbeidsområdet for leverandørsamarbeidsfakturering.
 
-Arbeidsområdet **Fakturering av leverandørsamarbeid** kan brukes til å vise informasjon om leverandør og sende fakturaer til Microsoft Dynamics 365 for operasjoner som bruker funksjonene for arbeidsflyt.
+Arbeidsområdet **Fakturering av leverandørsamarbeid** kan brukes til å vise informasjon om leverandør og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som bruker funksjonene for arbeidsflyt.
 Arbeidsområde for leverandørsamarbeidsfakturering
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Sammendrag-fliser
+### Sammendrag-fliser
+<a id="summary-tiles" class="xliff"></a>
 
 Flisene **Sammendrag** gir en oversikt over fakturaer for den valgte leverandøren. Du kan vise fakturaer etter deres tilstand.
 -   Fakturautkast er ikke sendt til arbeidsflyten.
--   Sendte, ikke-godkjente fakturaer er de fakturaene som leverandøren har sendt, men de ikke er postert i Dynamics 365 for Operations.
--   Godkjente, ikke-betalte fakturaer er de fakturaene som er postert i Dynamics 365 for Operations, men som ikke er fullstendig betalte.
--   Betalte fakturaer er de som er fullstendig betalte i Dynamics 365 for Operations.
+-   Sendte, ikke-godkjente fakturaer er de fakturaene som leverandøren har sendt, men de ikke er postert i Finance and Operations.
+-   Godkjente, ikke-betalte fakturaer er de fakturaene som er postert i Finance and Operations, men som ikke er fullstendig betalte.
+-   Betalte fakturaer er de som er fullstendig betalte i Finance and Operations.
 
 Ved å klikke en flis, vises det en filtrert visning av siden **Fakturaliste**.
-### <a name="tabular-lists"></a>Tabellister
+### Tabellister
+<a id="tabular-lists" class="xliff"></a>
 
 I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister. Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes. Den siste tabellisten er et alternativ for å finne fakturaer. Du kan filtrere når du søker, slik at søk utføres raskere.
 Side med liste over alle leverandørfakturaer
@@ -59,7 +63,7 @@ Du kan opprette en ny leverandørfaktura ved å velge handlingen **Ny** i arbeid
 
 
 
-Hvis du vil ha mer informasjon, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Hvis du vil ha mer informasjon, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

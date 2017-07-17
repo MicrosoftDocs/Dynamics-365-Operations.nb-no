@@ -1,16 +1,16 @@
 ---
 title: "Konfigurere navn på appfelt i lagerapp"
-description: "Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Dynamics 365 for Operations."
+description: "Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
@@ -19,27 +19,29 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: edcbf8a0921e0eb08d0f970e681c9d098b354c0b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 49db5ad10914897b2157e123c5803ca51e4e66e7
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere navn på appfelt i lagerapp
+# Konfigurere navn på appfelt i lagerapp
+<a id="configure-app-field-names-in-warehousing-app" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Dynamics 365 for Operations. 
+Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Finance and Operations. 
 
-**Obs!** Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Dynamics 365 for Operations - Lager er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse navnene og prioriteringene for lagerappfelt, og hvordan de brukes i Dynamics 365 for Operations - Warehousing. For detaljert informasjon om hvordan du konfigurerer tilkoblingen til Dynamics 365 for Operations - Warehousing, kan du se opplæringen [Installere og konfigurere Microsoft Dynamics 365 for Operations - Warehousing](install-configure-warehousing-app.md).
+**Obs!** Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Finance and Operations – Lager er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse navnene og prioriteringene for lagerappfelt, og hvordan de brukes i Finance and Operations – Warehousing. Hvis du vil ha detaljert informasjon om hvordan du konfigurerer tilkoblingen til Finance and Operations – Warehousing, kan du se opplæringen [Installere og konfigurere Finance and Operations – Warehousing](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurere navn på lagerappfelt
+Konfigurere navn på lagerappfelt
+<a id="configure-warehouse-app-field-names" class="xliff"></a>
 ===================================
 
-Når du bruker Dynamics 365 for Operations - Warehousing på den mobile enheten, kan du konfigurere hvordan metadata skal vises på enheten på siden **Navn på lagerappfelt**. I et nytt selskap i Dynamics 365 for Operations velger du **Opprett standardoppsett** for å generere alle feltnavn som skal brukes i arbeidsflyter for mobilenheter i lageret, og deretter tilordner du en foretrukket inndatamodus og inndatatype til dem. Når du har generert alle feltnavn, kan du velge følgende alternativer for inndata.
+Når du bruker Finance and Operations – Warehousing på den mobile enheten, kan du konfigurere hvordan metadata skal vises på enheten på siden **Navn på lagerappfelt**. I et nytt firma i Finance and Operations velger du **Opprett standardoppsett** for å generere alle feltnavn som skal brukes i arbeidsflyter for mobilenheter i lageret, og deretter tilordner du en foretrukket inndatamodus og inndatatype til dem. Når du har generert alle feltnavn, kan du velge følgende alternativer for inndata.
 
 <table>
 <colgroup>
@@ -70,10 +72,11 @@ Når du bruker Dynamics 365 for Operations - Warehousing på den mobile enheten,
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurere prioritet for lagerappfelt
+Konfigurere prioritet for lagerappfelt
+<a id="configure-warehouse-app-field-priority" class="xliff"></a>
 ======================================
 
-På siden **Prioritet for lagerappfelt** kan du legge feltnavn i ulike prioritetsgrupper. Dette gjør det mulig å bestemme hvilken informasjon som skal vises på hovedoppgavesiden når lagermedarbeidere utfører oppgaver ved hjelp av appen. Hvis du klikker **Opprett standardoppsett**, genereres et standardsett med prioritetsgrupper. Det er mulig å opprette så mange prioritetsgrupper som nødvendig, men bare tre prioritetsgrupper vises på oppgavesiden. Når Dynamics 365 for Operations sender metadata til appen, tilordnes hvert felt en relativ prioritet avhengig av prioritetsgruppen, og appen viser de første tre prioritetsgruppene i metadataene på oppgavesiden. Resten av overflytmetadataene vises på en sekundær detaljside. Tabellen nedenfor viser et eksempel på fem prioritetsgrupper.
+På siden **Prioritet for lagerappfelt** kan du legge feltnavn i ulike prioritetsgrupper. Dette gjør det mulig å bestemme hvilken informasjon som skal vises på hovedoppgavesiden når lagermedarbeidere utfører oppgaver ved hjelp av appen. Hvis du klikker **Opprett standardoppsett**, genereres et standardsett med prioritetsgrupper. Det er mulig å opprette så mange prioritetsgrupper som nødvendig, men bare tre prioritetsgrupper vises på oppgavesiden. Når Finance and Operations sender metadata til appen, tilordnes hvert felt en relativ prioritet avhengig av prioritetsgruppen, og appen viser de første tre prioritetsgruppene i metadataene på oppgavesiden. Resten av overflytmetadataene vises på en sekundær detaljside. Tabellen nedenfor viser et eksempel på fem prioritetsgrupper.
 
 <table>
 <colgroup>
@@ -141,12 +144,13 @@ Basert på prioriteten for lagerappfelt som er definert i tabellen ovenfor, vise
 -   Rad 2: varebeskrivelse
 -   Rad 3: størrelse
 
-Gjenstående metadata, for eksempel lokasjon, vises ikke på oppgavesiden, men vises på detaljsiden. Hvis du vil vite mer og se eksempler på brukergrensesnittet, kan du se blogginnlegget [Kunngjøring av Dynamics 365 for Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Gjenstående metadata, for eksempel lokasjon, vises ikke på oppgavesiden, men vises på detaljsiden. Hvis du vil vite mer og se eksempler på brukergrensesnittet, kan du se blogginnlegget [Kunngjøring av Finance and Operations – Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for Operations – Warehousing](install-configure-warehousing-app.md)
+[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Warehousing](install-configure-warehousing-app.md)
 
 
 

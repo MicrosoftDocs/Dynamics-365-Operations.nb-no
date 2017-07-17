@@ -3,7 +3,7 @@ title: Elimineringsregler
 description: Dette emnet inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="elimination-rules"></a>Elimineringsregler
+# Elimineringsregler
+<a id="elimination-rules" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -122,7 +123,8 @@ Følgende tabell viser hvilke typer transaksjoner du kan være nødt til å elim
 </tbody>
 </table>
 
-## <a name="example"></a>Eksempel
+## Eksempel
+<a id="example" class="xliff"></a>
 Den juridiske enheten, juridisk enhet A, selge noe til en annen juridisk enhet i organisasjonen, juridisk enhet B. Følgende eksempel viser hvordan transaksjoner som forekommer mellom de to juridiske enhetene kan måtte elimineres:
 
 -   Juridisk enhet A selger en gjenstand som koster 10,00 til juridisk enhet B for 10,00.
@@ -132,8 +134,9 @@ Den juridiske enheten, juridisk enhet A, selge noe til en annen juridisk enhet i
 
 Alle disse transaksjonene genererer transaksjoner mellom firmaene som posteres til forfall-til- og forfall-fra-kontoer. I tillegg kan disse transaksjonene omfatte påslags- og avslagsbeløp når beløpet for konserninternt salg ikke er likt kostnadene for varene som ble solgt.
 
-## <a name="set-up-elimination-rules"></a>Definere elimineringsregler
-Når du definerer elimineringsregler i Dynamics 365 for Operations, anbefaler vi at du oppretter en finansdimensjon spesielt for elimineringsformål. De fleste kunder gir den navnet Handelspartner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du sørge for å ha hovedkontoer som er spesifikke for bare konserninterne transaksjoner. 
+## Definere elimineringsregler
+<a id="set-up-elimination-rules" class="xliff"></a>
+Når du definerer elimineringsregler i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations, anbefaler vi at du oppretter en finansdimensjon spesielt for elimineringsformål. De fleste kunder gir den navnet Handelspartner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du sørge for å ha hovedkontoer som er spesifikke for bare konserninterne transaksjoner. 
 
 Oppsettet for elimineringer finnes i Oppsett-området i modulen Konsolideringer. Når du har skrevet inn en beskrivelse av regelen, må du velge firmaet som elimineringsjournalen skal postere til. Dette bør være et firma som har valgt **Brukes til finanseliminering** under oppsettet av den juridiske enheten. 
 
@@ -149,7 +152,8 @@ Dimensjonsspesifikasjonen fungerer på samme måte. Hvis du velger **Kilde**, vi
 
 Velg kildedimensjoner og finansdimensjoner og verdiene som brukes som en kilde for eliminering.
 
-## <a name="process-elimination-transactions"></a>Behandle elimineringstransaksjoner
+## Behandle elimineringstransaksjoner
+<a id="process-elimination-transactions" class="xliff"></a>
 Det er to måter å behandle elimineringstransaksjoner på, under den elektroniske konsolideringsprosessen eller ved å opprette en elimineringsjournal og kjøre elimineringsforslagsprosessen. Denne delen fokuserer på å opprette journalen og kjøre elimineringsprosessen. 
 
 I et firma som er definert som et elimineringsfirma, velger du **Elimineringsjournal** i modulen Konsolideringer. Når du har valgt journalnavnet, klikker du **Linjer**. Du kan kjøre forslaget ved å velge **Forslag**-menyen og deretter velge **Elimineringsforslag**.

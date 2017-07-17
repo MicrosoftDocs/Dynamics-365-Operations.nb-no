@@ -1,0 +1,82 @@
+---
+title: "Arbeidsområde for anleggsmiddelbehandling"
+description: "Dette emnet gir informasjon om arbeidsområdet Anleggsmiddelbehandling. Arbeidsområdet viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Det omfatter visning av et sammendrag og en visning for analyse."
+author: saraschi
+manager: AnnBe
+ms.date: 06/06/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Operations, Core
+ms.assetid: 
+ms.search.region: Global
+ms.author: twheeloc
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e5d079ad711b45060eb4548efdedf2c0efb04d60
+ms.openlocfilehash: ddb36da6d86425d75c6fe30dd8b0902dd07bf240
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/14/2017
+
+
+---
+
+# Arbeidsområde for anleggsmiddelbehandling
+<a id="fixed-asset-management-workspace" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Arbeidsområdet **Anleggsmiddelbehandling** viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Arbeidsområdet inneholder en sammendrag-visning og en analysevisning. Kategorien **Mitt arbeid** viser sammendragsfliser, anleggsmiddeldetaljer og relatert informasjon om anleggsmidler i det gjeldende firmaet. Du kan også legge til analyse i analysedeen av Power BI, direkte i arbeidsområdet. Kategorien **Analytics – alle firmaer** bruker funksjoner i Microsoft Power BI for å vise bilder som er knyttet til anleggsmidler i alle firmaer.
+
+## Mitt arbeid
+<a id="my-work" class="xliff"></a>
+
+### Sammendrag
+<a id="summary" class="xliff"></a>
+
+FLisene i **sammendrag**-avsnittet gir en oversikt over anleggsmidlene. Informasjonen inkluderer metrikk om aktiva som ennå ikke er anskaffet, aktiva som er anskaffet i løpet av inneværende år og aktiva som er solgt i løpet av inneværende år. **Sammendrag**-delen har også rask navigering til listesiden **Anleggsmiddel**, satsvis avskrivningsforslag og anleggsmiddeljournalen.
+
+### Søk etter anleggsmidler
+<a id="find-fixed-assets" class="xliff"></a>
+
+Med **Søk etter anleggsmidler**-delen kan du raskt søke etter aktiva ved å angi anleggsmiddelnummer, gruppe, navn, plassering eller personen som er ansvarlig. Alle anleggsmidler som oppfyller søkekriteriene, vises i listen.
+
+Du kan vise disse sidene fra listen:
+
+ - **Detaljer**-siden for anleggsmidlet
+ - **Tablåer**-siden for alle tablåer som er tilknyttet anleggsmidlet
+ - Siden **Verdivurdering av anleggsmidler**
+
+### Vurderinger
+<a id="valuations" class="xliff"></a>
+
+På siden **Verdivurderinger av anleggsmidler** kan du se den viktigste informasjonen om et anleggsmiddel, på én side, og også detaljer for alle tablåer som er knyttet til anleggsmidlet. **Saldoer**-alternativet øverst til venstre på siden viser gjeldende verdivurdering for hvert tablå som er knyttet til anleggsmidlet. Du kan gå tilbake fra verdiene for å vise de detaljerte transaksjonene som utgjør sammendragsverdien. **Profil**-alternativet øverst til venstre på siden viser avskrivningsplan for hvert tablå som er knyttet til anleggsmidlet.
+
+Du får tilgang til **Verdivurdering av anleggsmidler**-siden fra arbeidsområdet **Anleggsmiddelbehandling** eller listesiden **Anleggsmiddel**.
+
+### Beslektet informasjon
+<a id="related-information" class="xliff"></a>
+
+Du kan navigere direkte til **Tablåoppsett**-siden, siden for **Forespørsel om anleggsmiddeltransaksjon**, og flere rapporter ved hjelp av koblingene i **relatert informasjon**-delen i arbeidsområdet.
+
+### Analyse – alle firmaer
+<a id="analytics--all-companies" class="xliff"></a>
+
+**Analyse**-siden inneholder viktig metrikk om anleggsmidler i alle juridiske enheter i systemet. Tilgang til denne kategorien styres av sikkerhetsrettigheten Vis analyse for anleggsmiddel for alle firmaer.
+
+Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside.
+
+| Rapportside            | Visualisering        |
+|------------------------|----------------------|
+| Verdivurdering av anleggsmidler | Total netto bokført verdi |
+| Verdivurdering av anleggsmidler | Netto bokført veri etter anleggsmiddelgruppe |
+| Verdivurdering av anleggsmidler | Anskaffelsesverdier |
+| Verdivurdering av anleggsmidler | Avhendingsverdier |
+| Verdivurdering av anleggsmidler | Anleggsmiddeldetaljer |
+| Vurderingskart        | Total netto bokført verdi |
+| Vurderingskart        | Anleggsmiddelplasseringer |
+| Vurderingskart        | Anleggsmiddeldetaljer |
+

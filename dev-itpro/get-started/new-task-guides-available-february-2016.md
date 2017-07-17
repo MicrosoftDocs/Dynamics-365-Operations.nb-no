@@ -3,13 +3,13 @@ title: Nye oppgaveveiledninger (februar 2016)
 description: Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,27 +17,30 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
+# Nye oppgaveveiledninger (februar 2016)
+<a id="new-task-guides-february-2016" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics 365 for Operations og (februar 2016) Komme i gang.
+Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics AX og (februar 2016) Komme i gang.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations
+Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics AX
+<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
 ---------------------------------------------------------------------------------
 
-(Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics 365 for Operations 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics AX 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics AX. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
-### <a name="accounts-payable"></a>Leverandører
+### Leverandører
+<a id="accounts-payable" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -52,7 +55,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="accounts-receivable"></a>Kundereskontro
+### Kundereskontro
+<a id="accounts-receivable" class="xliff"></a>
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -73,7 +77,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="cash-and-bank-management"></a>Kontant- og bankbehandling
+### Kontant- og bankbehandling
+<a id="cash-and-bank-management" class="xliff"></a>
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -101,7 +106,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="compliance"></a>Samsvar
+### Samsvar
+<a id="compliance" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -110,7 +116,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="cost-management"></a>Kostnadsstyring
+### Kostnadsstyring
+<a id="cost-management" class="xliff"></a>
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -123,7 +130,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
+### Funksjonalitet per land/område
+<a id="countryregion-functionality" class="xliff"></a>
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -265,7 +273,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="develop-vision-and-strategy"></a>Utvikle målsetting og strategi
+### Utvikle målsetting og strategi
+<a id="develop-vision-and-strategy" class="xliff"></a>
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -278,7 +287,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="electronic-reporting"></a>Elektronisk rapportering
+### Elektronisk rapportering
+<a id="electronic-reporting" class="xliff"></a>
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -291,7 +301,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="expense-management"></a>Reiseregning og utlegg
+### Reiseregning og utlegg
+<a id="expense-management" class="xliff"></a>
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -300,7 +311,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="fixed-assets"></a>Anleggsmidler
+### Anleggsmidler
+<a id="fixed-assets" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -323,7 +335,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="general-ledger"></a>Økonomimodul
+### Økonomimodul
+<a id="general-ledger" class="xliff"></a>
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -356,7 +369,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="human-capital-management"></a>Forvaltning av menneskelig kapital
+### Forvaltning av menneskelig kapital
+<a id="human-capital-management" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -400,7 +414,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="inventory-management"></a>Lagerstyring
+### Lagerstyring
+<a id="inventory-management" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -424,7 +439,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="manufacturing"></a>Produksjon
+### Produksjon
+<a id="manufacturing" class="xliff"></a>
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -476,7 +492,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="master-planning"></a>Hovedplanlegging
+### Hovedplanlegging
+<a id="master-planning" class="xliff"></a>
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -489,7 +506,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="organization-administration"></a>Organisasjonsstyring
+### Organisasjonsstyring
+<a id="organization-administration" class="xliff"></a>
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -503,7 +521,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="planning"></a>Planlegging
+### Planlegging
+<a id="planning" class="xliff"></a>
 
 |                        |                    |
 |------------------------|--------------------|
@@ -512,7 +531,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="procurement-and-sourcing"></a>Innkjøp og leverandører
+### Innkjøp og leverandører
+<a id="procurement-and-sourcing" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -527,7 +547,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="product-information-and-configuration"></a>Produktinformasjon og -konfigurasjon
+### Produktinformasjon og -konfigurasjon
+<a id="product-information-and-configuration" class="xliff"></a>
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -553,7 +574,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="public-sector"></a>Offentlig sektor
+### Offentlig sektor
+<a id="public-sector" class="xliff"></a>
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -579,7 +601,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="retail-and-commerce"></a>Detaljhandel og handel
+### Detaljhandel og handel
+<a id="retail-and-commerce" class="xliff"></a>
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -621,7 +644,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="sales"></a>Salg
+### Salg
+<a id="sales" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -644,7 +668,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="sales-tax"></a>Merverdiavgift
+### Merverdiavgift
+<a id="sales-tax" class="xliff"></a>
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -663,7 +688,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="security"></a>Sikkerhet
+### Sikkerhet
+<a id="security" class="xliff"></a>
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -674,7 +700,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-### <a name="warehouse-and-transportation"></a>Lager og transport
+### Lager og transport
+<a id="warehouse-and-transportation" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -699,7 +726,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Oppgaveveiledninger i (februar 2016) Komme i gang-bibliotek
+## Oppgaveveiledninger i (februar 2016) Komme i gang-bibliotek
+<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-linje**                                       | **Land/område** |
@@ -719,7 +747,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)

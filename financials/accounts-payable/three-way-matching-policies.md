@@ -3,15 +3,15 @@ title: Treveis kontrollpolicyer
 description: "Denne artikkelen inneholder eksempler på treveis samsvar."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
+# Treveis kontrollpolicyer
+<a id="three-way-matching-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen inneholder eksempler på treveis samsvar.
 
-<a name="example-three-way-matching-for-items"></a>Eksempel: Treveis kontrollpolicyer for varer
+Eksempel: Treveis kontrollpolicyer for varer
+<a id="example-three-way-matching-for-items" class="xliff"></a>
 -------------------------------------
 
 **Sammendrag:** Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle leverandørfakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). For innkjøp av varer som skal brukes som anleggsmidler, skal fakturaer sammenlignes med både bestillingslinjene og produktkvitteringslinjene (treveis kontroll).
@@ -47,7 +49,8 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 -   Phyllis og April er ledere i leverandøravdelingen for Fabrikam i USA. De kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at fakturaene er sammenlignet med bestillingen og mottaket av varer og tjenester, der det er aktuelt.
 -   Tony er produksjonssjefen for Fabrikam i USA Han og andre ansatte i produksjonen kan sørge for at varene mottas slik de ble bestilt fra leverandørene, og blir inkludert slik at ansatte har det de trenger for å utføre jobben sin.
 
-### <a name="prerequisites"></a>Forutsetninger
+### Forutsetninger
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken setter kontrollpolicyen for det juridiske enhetsnivået til treveis kontroll.
 -   Ken angir statusen for automatisk oppdatering av hodekontroll for den juridiske enheten til Ja.
@@ -61,12 +64,13 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 -   Magnus, en regnskapsmedarbeider hos Contoso, ser gjennom forsendelser for uken. Arnie velger forsendelsestransaksjoner for å fakturere Fabrikam for levering av CNC Milicron-maskinene. Magnus inkluderer et tillegg for forsendelse og håndtering. Fabrikam anser tillegget som en del av anleggsmiddelkostnaden.
 
-### <a name="scenario"></a>Scenario
+### Scenario
+<a id="scenario" class="xliff"></a>
 
 1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Han angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
-    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Operations. Dette inkluderer følgende typer prissamsvar:
+    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dette inkluderer følgende typer prissamsvar:
         -   Nettoenhetspriskontroll – Nettoenhetsprisen på fakturalinjen samsvarer med nettoenhetsprisen på bestillingslinjen, innenfor toleranseprosenten. I dette eksemplet er toleransen for nettoenhetsprisen +8 %.
         -   Pristotalkontroll – Nettobeløpet på fakturalinjen samsvarer med nettobeløpet på bestillingslinjen, innenfor toleranseprosenten, beløpet eller prosenten og beløpet. I dette eksemplet er toleransen for pristotalkontroll +15 %.
 
@@ -79,7 +83,7 @@ Papirfakturaen fra Contoso inneholder følgende informasjon.
 | Mva                         |          |            | 0,00       |
 | Sum                       |          |            | 44 500,00  |
 
-Fakturalinjen inneholder følgende informasjon i Microsoft Dynamics 365 for Operations.
+Fakturalinjen inneholder følgende informasjon i Finance and Operations.
 
 | Varenummer                 | Antall | Enhetspris | Nettobeløp for linje | Kontrollpolicy    | Samsvar i antall i produktkvittering | Prissamsvar | Pristotalsamsvar |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -87,7 +91,8 @@ Fakturalinjen inneholder følgende informasjon i Microsoft Dynamics 365 for Oper
 
 Fordi denne linjen består fakturakontrollprosessen, kan fakturaen posteres.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Eksempel: Treveis samsvar for vare- og leverandørkombinasjoner
+##  Eksempel: Treveis samsvar for vare- og leverandørkombinasjoner
+<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
 Sammendrag: Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle fakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). Cassie er regnskapsføreren i Malaysia-kontoret til Fabrikam. Hun angir at valgte varer som bestilles fra bestemte leverandører i Malaysia, bør kontrolleres mot både bestillingslinjer og produktkvitteringslinjene (treveis samsvar). Hun kan også overstyre kontrollpolicyen til et høyere kontrollnivå for bestemte bestillinger. 
 
 Volumet og beløpene er små, og det har vært problemer med leveringen fra noen leverandører i Malaysia. Derfor setter Cassie kontrollnivået for enkelte vare- og leverandørkombinasjoner som er kjøpt i Malaysia, til treveis kontroll. 
@@ -96,7 +101,8 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 -   Ken er kontrolleren til Fabrikam-organisasjonen. Han kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
 -   Cassie er regnskapsføreren for Malaysia-kontoret til Fabrikam. Hun kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at de er sammenlignet med bestillingslinjene og produktkvitteringene som representerer mottaket av varer og tjenester. Hun kan også øke kontrollnivået til treveis samsvar for bestemte varer for å kontrollere driftskostnader.
 
-### <a name="prerequisites"></a>Forutsetninger
+### Forutsetninger
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken setter kontrollpolicyen for det juridiske enhetsnivået til toveis kontroll.
 -   Ken setter feltet Tilpass samlet pris for den juridiske enheten til Prosent og setter inn 10 % som toleranseprosent.
@@ -110,12 +116,13 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
     | MM01 – trådløs mus | 2        | 40,00      | 80,00      | Toveis samsvar                | Treveis samsvar                           |
     | USB-enhet             | 200      | 10,00      | 2 000,00   | Toveis samsvar                | Toveis samsvar                             |
 
-### <a name="scenario"></a>Scenario
+### Scenario
+<a id="scenario" class="xliff"></a>
 
 1.  Varene ankommer. Sammy, en arbeider i mottaksavdelingen på Malaysia-kontoret til Fabrikam, blir avbrutt og bokfører ikke produktkvitteringen med en gang.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
-    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Operations. Dette inkluderer følgende typer prissamsvar:
+    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Finance and Operations. Dette inkluderer følgende typer prissamsvar:
         -   Nettoenhetspriskontroll – Nettoenhetsprisen på fakturalinjen samsvarer med nettoenhetsprisen på bestillingslinjen, innenfor toleranseprosenten. I dette eksemplet er toleransen for nettoenhetsprisen +2 %.
         -   Pristotalkontroll – Nettobeløpet på fakturalinjen samsvarer med nettobeløpet på bestillingslinjen, innenfor toleranseprosenten, beløpet eller prosenten og beløpet. I dette eksemplet er toleransen for pristotalkontroll +10 %.
 
@@ -128,7 +135,7 @@ Papirfakturaen fra Contoso inneholder følgende informasjon.
 | USB-enhet             | 200      | 10,05      | 2 010,00   |
 | Totalt faktura         |          |            | 7 092,00   |
 
-Fakturalinjen inneholder følgende informasjon i Microsoft Dynamics 365 for Operations.
+Fakturalinjen inneholder følgende informasjon i Finance and Operations.
 
 | Varenummer           | Antall | Enhetspris | Nettobeløp for linje | Kontrollpolicy    | Samsvar i antall i produktkvittering | Prissamsvar | Pristotalsamsvar |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

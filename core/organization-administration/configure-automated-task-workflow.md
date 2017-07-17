@@ -3,13 +3,13 @@ title: Konfigurere en automatisert oppgave i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert oppgave.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 358065dd127703191ba441d0603307a3b7e5df60
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurere en automatisert oppgave i en arbeidsflyt
+# Konfigurere en automatisert oppgave i en arbeidsflyt
+<a id="configure-an-automated-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert op
 
 Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den automatiserte oppgaven.
 
-## <a name="name-the-task"></a>Gi navn til oppgaven
+## Gi navn til oppgaven
+<a id="name-the-task" class="xliff"></a>
 Følg denne fremgangsmåten for å sette et navn på den automatiserte oppgaven.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på oppgaven.
 
-## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
+## Angi når varslinger skal sendes
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller avbrutt. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 
 1.  I den venstre ruten klikker du **Varslinger**.
@@ -96,10 +99,10 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>

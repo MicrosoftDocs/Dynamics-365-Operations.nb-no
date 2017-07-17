@@ -1,0 +1,51 @@
+---
+title: "Eksempel på leverandørsjekker ved elektronisk rapportering"
+description: Dette emnet gir generell informasjon om hvordan du bruker eksempelsjekkformatene i elektronisk rapportering.
+author: twheeloc
+manager: AnnBe
+ms.date: 06/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Operations, Core
+ms.assetid: 
+ms.search.region: Global
+ms.author: twheeloc
+ms.dyn365.intro: 2017-06-30
+ms.dyn365.version: Enterprise edition, July 2017 update
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
+ms.openlocfilehash: 8228690ee5ab7839ec19c307c23f9b6150006371
+ms.contentlocale: nb-no
+ms.lasthandoff: 06/14/2017
+
+
+---
+
+[!include[banner](../includes/banner.md)]
+
+# Eksempel på sjekkformater ved elektronisk rapportering
+<a id="electronic-reporting-sample-check-formats" class="xliff"></a>
+
+Du kan bruke elektronisk rapportering (ER) til å formatere leverandørsjekker. Mange bank-spesifikke og sjekkleverandør-spesifikke sjekkformater er tilgjengelig på markedet. Eksempler på sjekkformater er tatt med i sjekkbetalingsmodellen i repositoriet til ER-verktøyet. Disse eksempelsjekkene er kalt **Sjekk i midten (USA)** og **Sjekk øverst stub under (USA)**.
+
+## Hvilke sjekkformater støttes for tiden?
+<a id="what-check-formats-are-currently-supported" class="xliff"></a>
+
+Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og viser den gjeldende listen over tilgjengelige filer som har aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til et emne som forklarer hvordan du oppretter et LCS-repositorium, slik at du kan se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
+
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition inneholder et eksempelformat der sjekken er øverst, etterfulgt av to deler for remittering. Det inneholder også et eksempelformat hvor sjekken er i midten, mellom to remitteringsdeler. Disse eksempelformatene tilsvarer formatet for Deluxe-forretningssjekker.
+
+## Hva må jeg konfigurere?
+<a id="what-do-i-have-to-set-up" class="xliff"></a>
+
+- Før du kan skrive ut sjekker ved hjelp av ER må minst én aktiv sjekk-konfigurasjon importeres til dine ER-konfigurasjoner. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Når du konfigurerer kontant- og bankbehandlingssjekker for bankkontoen, merker du av for **Generisk elektronisk eksportformat**, og velger deretter riktig sjekkformat som en eksportformatkonfigurasjon.
+- Du må også angi hvor mange seddellinjer som skal skrives ut på remitteringen. Husk å inkludere radoverskrifter når du beregner dette antallet. For de to eksempelsjekkformatene er anbefalt antall følgeseddellinjer 17. Dette nummeret vil imidlertid variere, avhengig av sjekkpapiret og skriverdriverne.
+- Vi anbefaler at du skriver ut en testsjekk for å validere sjekkoppsettet. Hvis du vil skrive ut en testsjekk, velg  **Skriv ut test**-alternativet. Eksempelsjekkformatene fungerer best når **Marginer** er satt til **Ingen** i de avanserte skriveregenskapene for Microsoft Excel. Etter at testsjekken er generert, aktiverer du redigering av Excel-utdataene, og konfigurerer sideoppsettet slik at alle margene er satt til **0** (null). Sammenlign testeksemplaret av sjekkene med sjekkpapiret, og juster innstillingene til du er fornøyd med justeringen.
+- Når du genererer betalinger for den konfigurerte bankkontoen i betalingsjournalen, må sjekkene skrives ut ved hjelp av det angitte formatet.
+
+Hvis du vil ha mer informasjon, se [Endre et format for elektronisk rapportering](/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+

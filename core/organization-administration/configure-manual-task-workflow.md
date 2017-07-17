@@ -3,13 +3,13 @@ title: Konfigurere en manuell oppgave i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 242abaae1aa17578ba8eab4b2664794ff2c2caec
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurere en manuell oppgave i en arbeidsflyt
+# Konfigurere en manuell oppgave i en arbeidsflyt
+<a id="configure-a-manual-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave
 
 Når du skal konfigurere en manuell oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den manuelle oppgaven.
 
-## <a name="name-the-task"></a>Gi navn til oppgaven
+## Gi navn til oppgaven
+<a id="name-the-task" class="xliff"></a>
 Følg denne fremgangsmåten for å sette et navn på den manuelle oppgaven.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på oppgaven.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Legg inn en emnelinje og instruksjoner
+## Legg inn en emnelinje og instruksjoner
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til oppgaven. Hvis du for eksempel konfigurerer en oppgave for innkjøpsrekvisisjoner, ser brukeren som er tilordnet til oppgaven, emnelinjen og instruksjonene på **Innkjøpsrekvisisjoner**-siden. Emnelinjen vises i en meldingslinje øverst på siden. Brukeren kan deretter klikke ikonet i meldingslinjen for å vise instruksjonene. Følg trinnene nedenfor for å legge inn en emnelinje og instruksjoner.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -74,7 +77,8 @@ Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til 
     5.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 6.
     6.  Klikk **Lukk**.
 
-## <a name="assign-the-task"></a>Tildele oppgaven
+## Tildele oppgaven
+<a id="assign-the-task" class="xliff"></a>
 Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles.
 
 1.  I den venstre ruten klikker du **Tilordning**.
@@ -126,10 +130,10 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
     </tr>
     <tr class="even">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil tilordne oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil tilordne oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -160,7 +164,8 @@ Følg denne fremgangsmåten for å angi hvem den manuelle oppgaven skal tildeles
 
     Hvis brukeren ikke fullfører oppgaven innenfor den tillatte tiden, er oppgaven forfalt. En oppgave som er forfalt, kan videresendes, basert på alternativene du velger i **Eskalering**-området på siden.
 
-## <a name="specify-what-happens-when-the-task-is-overdue"></a>Angi hva som skal skje når en oppgave er forfalt
+## Angi hva som skal skje når en oppgave er forfalt
+<a id="specify-what-happens-when-the-task-is-overdue" class="xliff"></a>
 Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden, er oppgaven forfalt. En oppgave som er forfalt, kan videresendes eller tilordnes automatisk til en annen bruker. Følg denne fremgangsmåten for å videresende oppgaven hvis den er forfalt.
 
 1.  I den venstre ruten klikker du **Eskalering**.
@@ -212,10 +217,10 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil videresende oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil videresende oppgaven til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -231,7 +236,8 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
 5.  Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
 6.  Hvis brukerne i videresendingsbanen ikke fullfører oppgaven innen tidsfristen, vil systemet utføre en handling med oppgaven. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i kategorien **Avslutt handling**.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Angi når systemet skal utføre en handling med oppgaven automatisk
+## Angi når systemet skal utføre en handling med oppgaven automatisk
+<a id="specify-when-the-system-automatically-acts-on-the-task" class="xliff"></a>
 Du kan konfigurere systemet slik at det utfører en handling med den manuelle oppgaven når bestemte betingelser er oppfylt. En oppgave krever for eksempel at noen i reiseregningsavdelingen går gjennom kvitteringene som følger med reiseregningen. I henhold til firmapolicyen må denne oppgaven utføres hvis det totale beløpet for utgiftsrapporten er større enn USD 100. I dette scenariet kan du konfigurere systemet til automatisk å merke oppgaven som **Fullført** når samlet beløp er mindre enn 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling med den manuelle oppgaven.
 
 1.  I den venstre ruten klikker du **Automatiske handlinger**.
@@ -247,7 +253,8 @@ Du kan konfigurere systemet slik at det utfører en handling med den manuelle op
 
 7.  I listen **Autofullføringshandling** velger du den handlingen som systemet skal utføre med oppgaven.
 
-## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
+## Angi når varslinger skal sendes
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Du kan sende meldinger til personer når en manuell oppgave er delegert, videresendt, fullført eller avvist, eller når det er bedt om en endring. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 
 1.  I den venstre ruten klikker du **Varslinger**.
@@ -306,10 +313,10 @@ Du kan sende meldinger til personer når en manuell oppgave er delegert, videres
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -317,7 +324,8 @@ Du kan sende meldinger til personer når en manuell oppgave er delegert, videres
 
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
 
-## <a name="set-a-time-limit"></a>Angi en tidsfrist
+## Angi en tidsfrist
+<a id="set-a-time-limit" class="xliff"></a>
 Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
@@ -331,7 +339,8 @@ Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et b
 
 4.  Hvis tidsgrensen overskrides, vil systemet gjøre noe med oppgaven. I listen **Handling** velger du den handlingen som systemet skal utføre.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Angi hvilke handlinger som er tilgjengelige for brukeren
+## Angi hvilke handlinger som er tilgjengelige for brukeren
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 Når den manuelle oppgaven tilordnes en bruker, må brukeren utføre en handling med oppgaven. Følg denne fremgangsmåten for å angi hvilke handlinger brukeren kan utføre med oppgaven. **Obs!** Handlingene som er tilgjengelige, vil variere avhengig av utformingen av oppgaven.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.

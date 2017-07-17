@@ -1,36 +1,37 @@
 ---
 title: Konsernintern fakturering
-description: "Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Operations."
+description: "Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="intercompany-invoicing"></a>Konsernintern fakturering
+# Konsernintern fakturering
+<a id="intercompany-invoicing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Operations.
+Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations.
 
 Organisasjonen kan ha flere avdelinger, datterselskaper og andre juridiske enheter som overfører produkter og tjenester til hverandre for prosjekter. Den juridiske enheten som tilbyr tjenestene eller produktene, *den juridiske enheten som låner ut*, og den juridiske enheten som mottar tjenestene eller produktene, kalles *den juridiske enheten som låner*. 
 
@@ -52,8 +53,9 @@ Målet er å gjøre kostnadskontroll, inntektsføring, avgifter og overføringsp
     -   **Beløp under salgspris** – Beløpet som den juridiske enheten som låner holder tilbake fra salgsprisen før overføring til den juridiske enheten som låner ut.
     -   **Dekningsgrad** – Nummeret du skriver inn i feltet **Prissetting** er dekningsgraden som er uttrykt som en prosentandel av salgsprisen.
 
-## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Eksempel 1: Definere parametere for konserninterne fakturering
-I dette eksemplet er USSI en juridisk enhet for utlån, og ressursene rapporterer tid mot den juridiske enheten som låner, FRSI, som eier kontrakten med sluttkunden. Timer og utgifter som USSI-ansatte rapporterer, kan inkluderes i prosjektfakturaen som FRSI genererer. I tillegg er det en tredje kilde for transaksjoner som kan komme fra den juridiske enheten som låner ut (USSI i dette eksemplet), når den inneholder delte leverandørtjenester til datterselskaper (for eksempel FRSI) og deretter sender disse kostnadene til prosjekter i datterselskapene. Alle samsvarende fakturadokumenter og avgiftsberegninger utføres av Dynamics 365 for Operations. 
+## Eksempel 1: Definere parametere for konserninterne fakturering
+<a id="example-1-set-up-parameters-for-intercompany-invoicing" class="xliff"></a>
+I dette eksemplet er USSI en juridisk enhet for utlån, og ressursene rapporterer tid mot den juridiske enheten som låner, FRSI, som eier kontrakten med sluttkunden. Timer og utgifter som USSI-ansatte rapporterer, kan inkluderes i prosjektfakturaen som FRSI genererer. I tillegg er det en tredje kilde for transaksjoner som kan komme fra den juridiske enheten som låner ut (USSI i dette eksemplet), når den inneholder delte leverandørtjenester til datterselskaper (for eksempel FRSI) og deretter sender disse kostnadene til prosjekter i datterselskapene. Alle samsvarende fakturadokumenter og avgiftsberegninger utføres av Finance and Operations. 
 
 For dette eksemplet må FRSI være en kunde i den juridiske enheten for USSI, og USSI må være en leverandør i den juridiske enheten for FRSI. Du kan definere en konsernintern relasjon mellom de to juridiske enhetene. Fremgangsmåten nedenfor viser hvordan du definerer parameterne, slik at begge juridiske enheter kan delta i konsernintern fakturering.
 
@@ -72,7 +74,8 @@ For dette eksemplet må FRSI være en kunde i den juridiske enheten for USSI, og
 4.  Velg valuta, transaksjonstype og overføringsprismodell. Valutaen som brukes på fakturaen er valutaen som er konfigurert i kundeposten for den juridiske enheten som låner i den juridiske enheten som låner ut. Valutaen som brukes til å samsvare med postene i tabellen for overføringspris.
 5.  Klikk **Økonomimodul** &gt; **Posteringsoppsett** &gt; **Konserninternt regnskap**, og definere en relasjon for USSI og FRSI.
 
-## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Eksempel 2: Opprette og postere en konsernintern timeregistrering
+## Eksempel 2: Opprette og postere en konsernintern timeregistrering
+<a id="example-2-create-and-post-an-intercompany-timesheet" class="xliff"></a>
 USSI, den juridiske enheten som låner ut, må opprette og postere timeregistreringen for et prosjekt fra FRSI, den juridiske enheten som låner. Det finnes to inngangspunkter for trinnene som kreves for denne oppgaven.
 
 | Trinn | Inngangspunkt                                                                       | beskrivelse                                                                                                                                                                                       |
@@ -80,7 +83,8 @@ USSI, den juridiske enheten som låner ut, må opprette og postere timeregistrer
 | A    | **Prosjektstyring og regnskap** &gt; **Timeregistreringer** &gt; **Alle timeregistreringer** | Opprett en ny timeregistrering. På timeregistreringslinjen i feltet **Juridisk enhet**, velger du **FRSI**. I feltet **Prosjekt-ID** velger du prosjektet i FRSI. Angi timer for hver ukedag. |
 | B    | Siden **Timeregistrering**                                                                | Når arbeidsflyten kjøres, posterer du timeregistreringen og noterer bilagsnummeret.                                                                                                               |
 
-## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Eksempel 3: Opprette og postere en konsernintern leverandørfaktura
+## Eksempel 3: Opprette og postere en konsernintern leverandørfaktura
+<a id="example-3-create-and-post-an-intercompany-vendor-invoice" class="xliff"></a>
 USSI, den juridiske enheten som låner ut, må opprette den konserninterne leverandørfakturaen for et prosjekt fra FRSI, den juridiske enheten som låner. Denne leverandørfakturaen representerer utsatt arbeid og utgifter som ble utført av leverandører som betales av USSI. Det finnes to inngangspunkter for trinnene som kreves for denne oppgaven.
 
 | Trinn | Inngangspunkt                                                                                      | beskrivelse                                                                                                                                                                                                                                                                          |
@@ -88,7 +92,8 @@ USSI, den juridiske enheten som låner ut, må opprette den konserninterne lever
 | A    | **Leverandører** &gt; **Fakturaer** &gt; **Åpne leverandørfakturaer** &gt; **Ny leverandørfaktura**. | Opprette en ny leverandørfaktura, og angi tjenestene som ble innkjøpt på vegne av FRSIs prosjekt.                                                                                                                                                                                  |
 | B    | Siden **Leverandørfaktura**                                                                      | Angi linjer som representerer utsatte tjenester på vegne av FRSI. I hurtigfanen **Linjedetaljer** i kategorien **Prosjekt** for fakturalinjen, i feltet **Prosjektselskap**, angir du **FRSI**. Angi prosjekt og tilhørende informasjon. Poster deretter leverandørfakturaen. |
 
-## <a name="example-4-create-and-post-the-intercompany-invoice"></a>Eksempel 4: Opprette og postere den konsernintern fakturaen
+## Eksempel 4: Opprette og postere den konsernintern fakturaen
+<a id="example-4-create-and-post-the-intercompany-invoice" class="xliff"></a>
 USSI, den juridiske enheten som låner ut, må opprette og postere den konserninterne fakturaen. Det finnes to inngangspunkter for trinnene som kreves for denne oppgaven.
 
 | Trinn | Inngangspunkt                                                                                             | beskrivelse                                                                                                                                      |
@@ -99,7 +104,8 @@ USSI, den juridiske enheten som låner ut, må opprette og postere den konsernin
 | D    | Siden **Konsernintern faktura**                                                                       | Forslaget til konsernintern kundefaktura vises.                                                                                             |
 | E    | Siden **Konsernintern faktura**                                                                       | Klikk **Poster**.                                                                                                                                  |
 
-## <a name="example-5-post-the-vendor-invoice-and-invoice-the-customer"></a>Eksempel 5: Postere leverandørfakturaen og fakturere kunden
+## Eksempel 5: Postere leverandørfakturaen og fakturere kunden
+<a id="example-5-post-the-vendor-invoice-and-invoice-the-customer" class="xliff"></a>
 Når den juridiske enheten som låner ut, USSI, posterer den konsernintern kundefakturaen, opprettes en tilsvarende ventende leverandørfaktura opprettet i den juridiske enheten som låner, FRSI. Når denne leverandørfakturaen posteres, fakturerer FRSI også prosjektkunden for timene som USSI har angitt. Det finnes tre inngangspunkter for trinnene som kreves for denne oppgaven.
 
 | Trinn | Inngangspunkt                                                                                        | beskrivelse                                                                                                             |

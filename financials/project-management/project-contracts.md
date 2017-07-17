@@ -1,37 +1,38 @@
 ---
 title: Prosjektkontrakter
-description: "Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Operations."
+description: "Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f3bdbd147f3132d64e3b9ac2bdd37f7278ae18d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-contracts"></a>Prosjektkontrakter
+# Prosjektkontrakter
+<a id="project-contracts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Operations.
+Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Prosjekttypen du oppretter for en prosjektkontrakt, fastsetter metoden som brukes til å fakturere prosjektkunder. Du kan endre en prosjektkontrakt og det tilknyttede prosjektet, men du kan ikke endre prosjekttypen. 
 
@@ -41,7 +42,8 @@ Hvert prosjekt som faktureres, må være tilknyttet en prosjektkontrakt. Innstil
 
 En prosjektkontrakt kan angi en eller flere kilder for finansiering. Derfor kan du dele fakturering mellom flere kapitalinnskytere, definere finansieringsgrenser slik at finansieringskilder ikke faktureres mer enn et bestemt beløp, og konfigurere finansieringsregler for belastning av utgifter.
 
-## <a name="funding-for-project-contracts"></a>Finansiering for prosjektkontrakter
+## Finansiering for prosjektkontrakter
+<a id="funding-for-project-contracts" class="xliff"></a>
 Noen prosjektkontrakter angir at flere parter deler ansvaret for finansiering av prosjektkostnadene. Her er noen eksempler:
 
 -   En stor kunde som har flere avdelinger, ber om at finansiering for et prosjekt deles opp etter avdeling.
@@ -49,7 +51,7 @@ Noen prosjektkontrakter angir at flere parter deler ansvaret for finansiering av
 -   Et veiprosjekt er delfinansiert av to kommuner.
 -   Et broprosjekt finansieres av offentlige tilskudd og et privat selskap.
 
-I Microsoft Dynamics 365 for Operations kan du dele faktureringen for en enkelt transaksjon eller et helt prosjekt blant flere kunder, tilskudd eller organisasjoner. 
+I Finance and Operations kan du dele faktureringen for en enkelt transaksjon eller et helt prosjekt blant flere kunder, tilskudd eller organisasjoner. 
 
 I prosjekter som har flere kapitalinnskytere, kalles alle parter som bidrar til finansieringen av et avansert finansieringsprosjekt, finansieringskilder. Når en kunde, en organisasjon eller et tilskudd er definert som en finansieringskilde, kan den/det tilordnes til én eller flere finansieringsregler. Finansieringsregler inneholder kriteriene som bestemmer hvordan tillegg tilordnes de forskjellige finansieringskildene for et prosjekt. 
 
@@ -68,7 +70,8 @@ Her er noen fremgangsmåter du kan bruke for å gjøre det enklere å dele faktu
 
 For å fastsette hvilken avgiftsgruppe som skal knyttes til en transaksjon, søkes det etter en mva-gruppetilordning i prosjektet. Hvis ingen mva-gruppetilordning er gjort på prosjektnivå, søkes det i prosjektkontrakten.
 
-### <a name="example-multiple-funding-sources-simple"></a>Eksempel: Flere finansieringskilder (enkel)
+### Eksempel: Flere finansieringskilder (enkel)
+<a id="example-multiple-funding-sources-simple" class="xliff"></a>
 
 Tabellen nedenfor gir scenarier for behandling av finansieringskildetilordning mellom flere finansieringskilder. Disse scenariene er basert på følgende forutsetninger:
 
@@ -164,7 +167,8 @@ Tabellen nedenfor gir scenarier for behandling av finansieringskildetilordning m
 </tbody>
 </table>
 
-### <a name="example-multiple-funding-sources-complex"></a>Eksempel: Flere finansieringskilder (kompleks)
+### Eksempel: Flere finansieringskilder (kompleks)
+<a id="example-multiple-funding-sources-complex" class="xliff"></a>
 
 Du har tre finansieringskilder som du vil bruke i følgende rekkefølge:
 
@@ -249,7 +253,8 @@ Tabellen nedenfor illustrerer dette scenarioet mer detaljert.
 </tbody>
 </table>
 
-## <a name="billing-rules"></a>Faktureringsregler
+## Faktureringsregler
+<a id="billing-rules" class="xliff"></a>
 Når du forhandler med en kunde om en prosjektkontrakt, definerer du hvordan og når kan du fakturere kunden for arbeid på et prosjekt. Når du har definert prosjektkontrakten og prosjektet, kan du definere faktureringsregler for prosjektet. Faktureringsregler er basert på prosjektvilkårene som er angitt i prosjektkontrakten. Faktureringsreglene du kan opprette avhenger av betingelsene i prosjektkontrakten og av prosjekttypen, for eksempel Etter regning eller Fastpris som du knytter til faktureringsregelen. Du kan opprette mer enn n faktureringsregel for en prosjektkontrakt. Du kan også tilordne en faktureringsregel til flere prosjekter som er knyttet til samme prosjektkontrakt og har lignende faktureringsvilkår. 
 
 Du kan definere følgende typer faktureringsregler:
@@ -268,7 +273,8 @@ Når du er klar til å fakturere en kunden, beregnes beløpet som skal fakturere
 
 Delene nedenfor innholder eksempler som viser hvordan du definerer og administrerer en faktureringsregler for et prosjekt.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered"></a>Eksempel: Opprett en fakturaregel som er basert på antall leverte enheter
+### Eksempel: Opprett en fakturaregel som er basert på antall leverte enheter
+<a id="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered" class="xliff"></a>
 
 Organisasjonen din inngår en avtale om å levere totalt fem opplæringsøkter til en kundes ansatte til en kostnad på 10 000 per opplæringsøkt. Du fakturerer kunden etter hver opplæringsøkt. 
 
@@ -280,14 +286,16 @@ Når du definerer faktureringsregler for kontrakten, bruker du følgende verdier
 
 Når du har fullført én opplæringsøkt, kan du opprette en faktura på 10 000 for den første enheten som ble levert, og sende fakturaen til kunden.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation"></a>Eksempel: Opprett en fakturaregel som er basert på en angitt fullføringsprosent av prosjektet (beregnes manuelt)
+### Eksempel: Opprett en fakturaregel som er basert på en angitt fullføringsprosent av prosjektet (beregnes manuelt)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation" class="xliff"></a>
 
 Organisasjonen din er et programvarekonsulentfirma som inngår en avtale med en kunde om å utvikle en del av et produkt som kunden utvikler. Organisasjonen godtar å levere programvarekode over en periode på seks måneder. Kunden godtar å betale organisasjonen totalt 100 000 for arbeidet. Du oppretter en faktureringsregel for å fakturere kunden basert på prosenten av fullført arbeid på prosjektet, som angitt i kontrakten.
 
 -   På slutten av den første måneden møter du kunden for å finne ut hvor stor prosentandel av arbeidet er fullført. Når du og kunden går gjennom prosjektet, fastsetter dere at prosjektet er 15 prosent fullført.
 -   Du oppretter en faktura på 15 000 (15 prosent av 100 000) og sender den til kunden.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation"></a>Eksempel: Opprett en fakturaregel som er basert på en angitt fullføringsprosent av prosjektet (beregnes automatisk)
+### Eksempel: Opprett en fakturaregel som er basert på en angitt fullføringsprosent av prosjektet (beregnes automatisk)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation" class="xliff"></a>
 
 Organisasjonen din, et programvareutviklingsfirma, avtaler å utvikle en lønnsregnskapspakke for en kunde for 30 000. Kunden godtar å betale organisasjonen på grunnlag av prosenten av fullført arbeid. Du beregner prosjektkostnadene til 20 000. Prosjektkontrakten angir arbeidskategoriene du bruker i faktureringsprosessen. Du definerer faktureringsregler som automatisk beregner fakturabeløpene for arbeidsprosenten som er fullført for hver kategori. Du definerer et budsjett for hver kategori:
 
@@ -300,7 +308,8 @@ Når du oppretter en kundefaktura for første gang, beregnes fakturabeløpet aut
 -   Fakturabeløpet på 8 667 beregnes automatisk (33 prosent av 20 000 + 20 prosent av 10 000).
 -   Du oppretter en faktura på 8 667 og sender den til kunden.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones"></a>Eksempel: Opprett en fakturaregel som er basert på avtalte milepæler
+### Eksempel: Opprett en fakturaregel som er basert på avtalte milepæler
+<a id="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones" class="xliff"></a>
 
 Organisasjonen din er et rådgivningsfirma og avtaler å utføre markedsundersøkelser for et forbrukerprodukt som kunden planlegger å selge. Kunden godtar å bruke dine tjenester over en periode på tre måneder med start i mars, og godtar å betale organisasjonen 50 000. Prosjektet har tre milepæler:
 
@@ -317,7 +326,8 @@ Når du definerer prosjektkontrakten, godtar du å fakturere kunden basert på m
 
 Når den første milepælen fullføres 31. mars, merker du milepælen som fullført, og deretter oppretter du en faktura på 10 000 og sender den til kunden. Du kan ikke opprette en faktura for en milepæl før du har merket milepælen som fullført.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee"></a>Eksempel: Opprett en faktureringsregel som er basert på tjenester i tillegg til et gebyr for administrasjon
+### Eksempel: Opprett en faktureringsregel som er basert på tjenester i tillegg til et gebyr for administrasjon
+<a id="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee" class="xliff"></a>
 
 Organisasjonen din, som er et rådgivningsfirma, avtaler å utføre markedsundersøkelser for å evaluere gjennomføringen av et produkt som kunden, et detaljhandelsfirma, utvikler. Vilkårene i avtalen angir at tjenestene skal utføres av de tre beste konsulentene, som skal utføre undersøkelsen på grunnlag av tid og materialer. Kunden godtar å betale 100 per time pluss et administrasjonsgebyr på ti prosent for konsultasjonstimene som faktureres til prosjektet. 
 
@@ -331,7 +341,8 @@ Når du oppretter en faktura for kunden, faktureres kunden et administrasjonsgeb
 
 Hvis gebyrer er avgiftspliktige for en kunde og du velger en mva-gruppe i prosjektkontrakten, registreres mva-gruppen automatisk i en faktureringsregel for gebyrer.
 
-### <a name="example-create-a-billing-rule-for-the-value-of-time-and-materials"></a>Eksempel: Opprett en faktureringsregel for verdien av tid og materialer
+### Eksempel: Opprett en faktureringsregel for verdien av tid og materialer
+<a id="example-create-a-billing-rule-for-the-value-of-time-and-materials" class="xliff"></a>
 
 Organisasjonen din, som er et programvarekonsulentfirma, avtaler å stille med fem tekniske konsulenter som skal jobbe på et programvareutviklingsprosjekt for en kunde over de neste seks månedene. Kunden godtar å betale 150 for hver konsulenttime i tillegg til kostnaden for kontorutstyr. Organisasjonen din sender en faktura til kunden på slutten av hver måned. 
 

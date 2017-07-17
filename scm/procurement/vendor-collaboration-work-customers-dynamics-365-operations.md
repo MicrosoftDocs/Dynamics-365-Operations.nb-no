@@ -1,16 +1,16 @@
 ---
 title: "Leverandørsamarbeid med kunder"
-description: "Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid i Microsoft Dynamics 365 for Operations for å arbeide med bestillinger og overvåke forsendelseslager."
+description: "Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid i Finance and Operations for å arbeide med bestillinger og overvåke forsendelseslager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
@@ -18,24 +18,26 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1649014855d8d5e0f1225a661c9b6bae6490f597
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
+# Leverandørsamarbeid med kunder
+<a id="vendor-collaboration-with-customers" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid i Microsoft Dynamics 365 for Operations for å arbeide med bestillinger og overvåke forsendelseslager.
+Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid i Finance and Operations for å arbeide med bestillinger og overvåke forsendelseslager.
 
-Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 for Operations. Det inneholder informasjon om hvordan du overvåker og svare på bestillinger og hvordan du overvåker forsendelseslageret. Det er også mulig å bruke leverandørsamarbeid for å arbeide med fakturaer. Hvis du vil ha mer informasjon, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Finance and Operations. Det inneholder informasjon om hvordan du overvåker og svare på bestillinger og hvordan du overvåker forsendelseslageret. Det er også mulig å bruke leverandørsamarbeid for å arbeide med fakturaer. Hvis du vil ha mer informasjon, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
-## <a name="working-with-purchase-orders"></a>Arbeide med bestillinger
+## Arbeide med bestillinger
+<a id="working-with-purchase-orders" class="xliff"></a>
 Arbeidsområdet **Bestillingsbekreftelsen** lar deg svare på bestillingene som er sendt til deg for gjennomgang. Det lar deg også vise informasjon om bestillinger som venter på handling fra kunden og bestillinger som er bekreftet, men fremdeles er åpne. Det er tre lister i arbeidsområdet **Bestillingsbekreftelsen**:
 
 -   **Bestillinger for vurdering** – Denne listen viser bestillinger som er sendt til deg og venter på svar fra deg. Når du har svart, forsvinner bestillingen fra listen. Hvis kunden sender deg en ny versjon av bestillingen før du har svart på den forrige, vises bare den nyeste versjonen.
@@ -49,7 +51,8 @@ Listen nedenfor viser de fire sidene som du kan bruke til å arbeide med bestill
 -   **Åpne bekreftede bestillinger** (se ovenfor)
 -   **Alle bekreftede bestillinger** – Denne siden inneholder alle bestillinger som er bekreftet, inkludert de som inneholder produkter eller tjenester som er mottatt. Du kan bruke denne listen til å overvåke hvilke bestillinger du kan sende fakturaer for.
 
-### <a name="responding-to-purchase-orders"></a>Svare på bestillinger
+### Svare på bestillinger
+<a id="responding-to-purchase-orders" class="xliff"></a>
 
 Bestillingene som kunden har sendt til deg for gjennomgang, vises i arbeidsområdet **Bestillingsbekreftelse** og på siden **Bestillinger for vurdering**. Når du har åpnet en bestilling, kan du velge å godta den, avvise den eller godta den med endringer. Det kan være vedlegg i bestillingshodet eller på de enkelte linjene. Du kan også legge til informasjon i svaret på bestillingshodet eller enkeltlinjer. Du kan for eksempel foreslå en erstatningsvare for én av linjene. Du kan forhåndsvise og skrive ut bestillingen som en PDF-fil ved hjelp av alternativet **Forhåndsvis/Skriv ut**. Du kan skjule eller vise følgende dimensjonskolonner ved hjelp av handlingen **Visningsdimensjoner**: område, lager, farge, størrelse, stil, konfigurasjon. Hvis du bruker alternativet **Godta med endringer**, kan du godta eller avvise enkeltlinjer. Du kan også foreta følgende endringer i linjer:
 
@@ -59,7 +62,8 @@ Bestillingene som kunden har sendt til deg for gjennomgang, vises i arbeidsområ
 
 Du kan ikke endre prisinformasjon eller gebyrer, men du kan foreslå endringer i disse ved hjelp av merknader. Hvis kunden sender deg en ny versjon av en bestilling, vil denne ha et versjonssuffiks for å angi at det er en endret versjon av en bestilling som tidligere ble formidlet. Siden **Logg for leverandørbekreftelse for bestilling** lar deg spore historikken for hver ordre.
 
-## <a name="monitoring-consignment-inventory"></a>Overvåke forsendelseslager
+## Overvåke forsendelseslager
+<a id="monitoring-consignment-inventory" class="xliff"></a>
 Hvis du bruker forsendelseslager, kan du bruke grensesnittet for leverandørsamarbeid til å vise informasjon på følgende sider:
 
 -   **Bruk av forsendelseslager for bestillinger** – Bestillinger for forsendelseslager genereres når kunden blir eier av lageret. Disse forsendelsesbestillingene vises bare på siden **Bruk av forsendelseslager for bestillinger**. De er ikke inkludert på siden **Alle bekreftede bestillinger**.
@@ -67,7 +71,8 @@ Hvis du bruker forsendelseslager, kan du bruke grensesnittet for leverandørsama
 -   **Forsendelseslager for beholdning** – Denne siden viser forsendelseslageret for beholdning som eies av firmaet som er på lager på kundens lager.
 
 
-<a name="see-also"></a>Se også
+Se også
+<a id="see-also" class="xliff"></a>
 --------
 
 [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)

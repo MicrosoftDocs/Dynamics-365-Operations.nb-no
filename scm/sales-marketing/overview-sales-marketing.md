@@ -3,13 +3,13 @@ title: "Salg og markedsføring"
 description: "Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,46 +17,54 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-marketing"></a>Salg og markedsføring
+# Salg og markedsføring
+<a id="sales-and-marketing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg.
 
-<a name="marketing"></a>Markedsføring
+Markedsføring
+<a id="marketing" class="xliff"></a>
 ---------
 
 Du bruker markedsføringskampanjer og aktiviteter for å finne og bygge relasjoner med potensielle kunder, slik at de første samhandlingene kan utvikles til salgsrelasjoner. Denne arbeidsflyten viser forretningsprosessen for markedsføring. [![Forretningsprosess for markedsføring](./media/marketing01.jpg)](./media/marketing01.jpg)
 
-### <a name="relationships"></a>Relasjoner
+### Relasjoner
+<a id="relationships" class="xliff"></a>
 
 I salg og markedsføring kan de første samhandlingene du har med potensielle kunder, oppstå i ulike situasjoner. Du finner for eksempel en potensiell kunde mens du deltar på en varemesse, eller du kan ha et mulig kundeemne med en kunde etter at organisasjonen har kjørt en masseutsendelseskampanje. Det er svært viktig at du forstår flyten for enheten for en part før denne parten blir en kunde. Grafikken nedenfor viser flyten for enhetsrelasjoner når en potensiell kunde blir en faktisk kunde. [![Salg og markedsføring 01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
-### <a name="campaigns"></a>Kampanjer
+### Kampanjer
+<a id="campaigns" class="xliff"></a>
 
-En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I i Microsoft Dynamics 365 for Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
+En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I i Microsoft Dynamics 365 for Finance and Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
 
-## <a name="sales"></a>Salg
+## Salg
+<a id="sales" class="xliff"></a>
 Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg](./media/sales01.jpg)](./media/sales01.jpg)
 
-### <a name="sales-quotations"></a>Salgstilbud
+### Salgstilbud
+<a id="sales-quotations" class="xliff"></a>
 
 Du kan opprette salgstilbud for å presentere et tilbud av varer eller tjenester som du vil gi til kunder. En kunde kan be om et tilbud, eller du kan opprette et tilbud som svar på en forespørsel fra en potensiell eller eksisterende kunde. Når kunden godkjenner salgstilbudet, kan du konvertere det til en salgsordre.
 
-### <a name="up-sellcross-sell"></a>Mersalg/kryssalg
+### Mersalg/kryssalg
+<a id="up-sellcross-sell" class="xliff"></a>
 
 Mersalg og kryssalg er teknikker for å selge produkter når en ordre registreres for en kunde. Ved mersalg blir det foreslått et annet produkt i stedet gjeldende produkt. Ved kryssalg blir det foreslått et produkt i tillegg gjeldende produkt. Når du setter opp produktlister, kan du opprette spesifikke regler for å angi når et produkt skal foreslås som et kryssalgs- eller mersalgsprodukt.
 
-### <a name="sales-orders"></a>Salgsordrer
+### Salgsordrer
+<a id="sales-orders" class="xliff"></a>
 
 Når du oppretter en ny salgsordre, må du velge hvilken type salgsordre som skal opprettes. Du har fem alternativer. **Obs!** Når du har opprettet en salgsordre, kan en hvilken som helst ordretype, bortsett fra typen **Varekrav** hvis salgsordren har statusen **Levert**.
 
@@ -68,15 +76,18 @@ Når du oppretter en ny salgsordre, må du velge hvilken type salgsordre som ska
 | Returordre    | Bruk denne typen når en kunde returnerer en vare. Et returvarenummer (autorisasjonsreturnummer) tildeles automatisk.                                                                                                                                                                                            |
 | Varebehov | Denne typen opprettes automatisk når du foretar et varesalg gjennom et prosjekt.                                                                                                                                                                                                                       |
 
-### <a name="sales-agreements"></a>Salgsavtaler
+### Salgsavtaler
+<a id="sales-agreements" class="xliff"></a>
 
 En salgsavtale er en kontrakt som forplikter kunden for å kjøpe et produkt i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter. Prisene og rabattene i salgsavtalen overstyrer priser og rabatter som er angitt i en forretningsavtale. En salgsavtale er gyldig i en definert periode. Den ønskede forsendelsesdatoen som er angitt for et salg på siden **Salgsordre**, skal være innenfor den gyldige perioden. En salgsavtale er som standard på vent. Du kan bare bestille fra en salgsavtale når den er satt til **Gyldig**.
 
-### <a name="backorders"></a>Restordrer
+### Restordrer
+<a id="backorders" class="xliff"></a>
 
 Når du registrerer og validerer ordrer, kan det hende du må administrere restordrer og unntak før salget kan fullføres. Restordrer er enten bestillinger som ennå ikke er levert fra en leverandør eller salgsordrer som ennå ikke er levert til en kunde. Det er viktig at du følger opp restordrer. Hvis produkter for eksempel er forsinket fra en leverandør, må du kanskje endre datoen for levering til en kunde, og deretter informere kunden om forsinkelsen. Du kan vise restordrer etter vare, kunde eller leverandør.
 
-#### <a name="viewing-backorders-by-item"></a>Vise restordrer etter vare
+#### Vise restordrer etter vare
+<a id="viewing-backorders-by-item" class="xliff"></a>
 
 Når du viser restordrer etter vare, kan du følge opp den forventede fremtidige flyten av transaksjoner for en bestemt vare. Du kan for eksempel kontrollere følgende informasjon:
 
@@ -86,15 +97,18 @@ Når du viser restordrer etter vare, kan du følge opp den forventede fremtidige
 
 Ved å utføre denne kontrollen, kan du svare på forespørsler fra kunder om tidspunktet for levering av varen. Du kan også prioritere restordrer for salg, og eventuelt dele varene på lager mellom ordrene.
 
-#### <a name="viewing-backorders-by-customer"></a>Vise restordrer etter kunde
+#### Vise restordrer etter kunde
+<a id="viewing-backorders-by-customer" class="xliff"></a>
 
 Når du viser restordre etter kunde, kan du vise statusen til kundens gjenstående ordrer. Dette alternativet er nyttig når du må forholde seg til kunder som venter på varer som har blitt forsinket.
 
-#### <a name="viewing-backorders-by-vendor"></a>Vise restordrer etter leverandør
+#### Vise restordrer etter leverandør
+<a id="viewing-backorders-by-vendor" class="xliff"></a>
 
 Når du viser restordrer etter leverandør, kan du følge opp manglende leveringer og visning av forventede leveringsdatoer. Denne kontrollen lar deg prioritere restordrene når produkter ankommer fra leverandører og salgsordrene må plukkes for levering.
 
-### <a name="invoices"></a>Fakturaer
+### Fakturaer
+<a id="invoices" class="xliff"></a>
 
 Du kan opprette tre typer fakturaer under salgsprosessen:
 
@@ -102,7 +116,8 @@ Du kan opprette tre typer fakturaer under salgsprosessen:
 -   Fritekstfaktura
 -   Proformafaktura
 
-#### <a name="customer-invoice"></a>Kundefaktura
+#### Kundefaktura
+<a id="customer-invoice" class="xliff"></a>
 
 En kundefaktura er en regning som en organisasjon gir til en kunde i forbindelse med et salg. Du oppretter denne typen kundefaktura basert på en salgsordre som inkluderer et hode og én eller flere linjer for varer eller tjenester. Kundefakturaen fullfører syklusen med salgsordren, følgeseddelen og salgsfakturaen.  
 
@@ -114,11 +129,13 @@ Du kan opprette en kundefaktura som er basert på følgeseddellinjevarene som er
 
 Når du posterer fakturaen, oppdateres **Fakturarest**-antallet for hver vare med totalantallet som er levert for de valgte følgesedlene. Hvis **Fakturarest**-antallet og **Gjenstående levering**-antallet for alle varer på salgsorden er 0 (null), endres statusen for salgsorden til **Fakturert**. Hvis antallet ikke er null, endres ikke statusen for salgsordren, og du kan registrere flere fakturaer. Lagertransaksjoner oppdateres med fakturanummeret, og statusen på salgsordrelinjen endres til **Fakturert**.
 
-#### <a name="free-text-invoice"></a>Fritekstfaktura
+#### Fritekstfaktura
+<a id="free-text-invoice" class="xliff"></a>
 
 En fritekstfaktura er en faktura som ikke er knyttet til en salgsordre. Den inneholder ordrelinjer som omfatter finanskontoer, fritekstbeskrivelser og et salgsbeløp. Du kan ikke angi et varenummer i denne fakturatypen, og du må skrive inn riktige mva-opplysninger. En hovedkonto for salg er angitt på hver fakturalinje. Kundesaldoen posteres til samlekontoen fra posteringsprofilen som brukes for fritekstfakturaen.
 
-#### <a name="pro-forma-invoice"></a>Proformafaktura
+#### Proformafaktura
+<a id="pro-forma-invoice" class="xliff"></a>
 
 En proformafaktura er en faktura som er klargjort som et estimat av det faktiske fakturabeløpet før fakturaen posteres. Du kan skrive ut en proformafaktura for enten en kundefaktura eller en fritekstfaktura.
 

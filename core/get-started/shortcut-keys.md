@@ -1,15 +1,15 @@
 ---
 title: Hurtigtaster
-description: "Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations."
+description: "Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
@@ -17,24 +17,26 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Hurtigtaster
+# Hurtigtaster
+<a id="keyboard-shortcuts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations. 
+Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Finance and Operations. 
 
 **Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 
-## <a name="action-shortcuts"></a>Handlingssnarveier
+## Handlingssnarveier
+<a id="action-shortcuts" class="xliff"></a>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Hvis du vil gjøre dette**                                    | **Trykk**                        |
@@ -44,14 +46,15 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 | Flytt til neste/forrige alternativ på en meny            | Pil ned / Pil opp            |
 | Lukk en kategori i handlingsruten eller en meny          | ESC                              |
 | Simuler et høyreklikk                            | Skift+F10                        |
-| Åpne hurtigmenyen for Dynamics 365 for Operations | Ctrl+F10                         |
+| Åpne hurtigmenyen Finance and Operations | Ctrl+F10                         |
 | Bruk standardknappen i et skjema / en dialogboks       | Alt+Enter                        |
 | Klikk en knapp eller flis                            | Enter eller Mellomrom                   |
 | Vis oppdatert informasjon for en flis for antall         | Alt+Pil opp                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Snarveier for datovelger
+## Snarveier for datovelger
+<a id="date-picker-shortcuts" class="xliff"></a>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Hvis du vil gjøre dette**                        | **Trykk**                                 |
@@ -62,7 +65,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="factbox-shortcuts"></a>Faktabokssnarveier
+## Faktabokssnarveier
+<a id="factbox-shortcuts" class="xliff"></a>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen) | Ctrl+F2                                   |
@@ -74,7 +78,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="filtering-shortcuts"></a>Filtreringssnarveier
+## Filtreringssnarveier
+<a id="filtering-shortcuts" class="xliff"></a>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
 | **Hvis du vil gjøre dette**                                                                                                      | **Trykk**     |
@@ -86,7 +91,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="form-shortcuts"></a>Skjemasnarveier
+## Skjemasnarveier
+<a id="form-shortcuts" class="xliff"></a>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **Hvis du vil gjøre dette**                                                                                                                  | **Trykk**         |
@@ -108,7 +114,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="form-navigation-shortcuts"></a>Snarveier for skjemanavigasjon
+## Snarveier for skjemanavigasjon
+<a id="form-navigation-shortcuts" class="xliff"></a>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Hvis du vil gjøre dette**                                      | **Trykk**                                    |
@@ -129,7 +136,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="grid-shortcuts"></a>Rutenettsnarveier
+## Rutenettsnarveier
+<a id="grid-shortcuts" class="xliff"></a>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Hvis du vil gjøre dette**                                                                                                | **Trykk**                       |
@@ -147,7 +155,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
+## Snarveier for inndatakontroller
+<a id="input-control-shortcuts" class="xliff"></a>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
 | **Hvis du vil gjøre dette**                                             | **Trykk**                     |
@@ -162,7 +171,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="messaging-shortcuts"></a>Meldingssnarveier
+## Meldingssnarveier
+<a id="messaging-shortcuts" class="xliff"></a>
 |                          |               |
 |--------------------------|---------------|
 | **Hvis du vil gjøre dette**           | **Trykk**     |
@@ -171,7 +181,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="navigation-shortcuts"></a>Navigasjonssnarveier
+## Navigasjonssnarveier
+<a id="navigation-shortcuts" class="xliff"></a>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
 | **Hvis du vil gjøre dette**                                                            | **Trykk**       |
@@ -186,7 +197,8 @@ Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Operations.
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Snarveier for segmenterte oppføringer
+## Snarveier for segmenterte oppføringer
+<a id="segmented-entry-shortcuts" class="xliff"></a>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Slik gjør du det**                                                                                                          | **Trykk**                        |

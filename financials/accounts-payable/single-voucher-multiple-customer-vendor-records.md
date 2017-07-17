@@ -1,15 +1,15 @@
 ---
 title: "Enkelt bilag med flere poster for kunde eller leverandør"
-description: "Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling."
+description: "Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,20 +17,21 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere poster for kunde eller leverandør
+# Enkelt bilag med flere poster for kunde eller leverandør
+<a id="single-voucher-with-multiple-customer-or-vendor-records" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
+Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
 
 Noen eksempler der ett bilag brukes for flere kunder eller leverandører, inkluderer saldooverføringer mellom kunder, og motregningssaldoer mellom kunder og leverandører i den samme organisasjonen. 
 
@@ -45,10 +46,12 @@ Dette emnet forklarer hvordan utligningen skal behandles når ett bilag med fler
 -   Kontantrabattregnskap
 -   Revalueringsregnskap
 
-## <a name="how-does-settlement-impact-single-voucher-usage"></a>Hvordan påvirker utligning bruk av ett bilag
+## Hvordan påvirker utligning bruk av ett bilag
+<a id="how-does-settlement-impact-single-voucher-usage" class="xliff"></a>
 Ved postering av et bilag som inneholder flere poster for kunde eller leverandør, opprettes det ett regnskapsbilag som inneholder flere saldoer for kunde eller leverandør. Under utligningsprosessen brukes de opprinnelige regnskapsoppføringer til å opprette regnskapsoppføringer for kontantrabatt, urealisert fortjeneste og tap, realisert fortjeneste og tap og frigivelse av samlekontoen for det opprinnelige dokumentet. Hvis en kontantrabatt for eksempel blir utført når du utligner en leverandørbetaling mot en faktura, må kontantrabattregnskapet postere til leverandørfinanskontoen fra den opprinnelige fakturaen. Hvis den opprinnelige fakturaen ble bokført i et bilag som inneholder flere leverandørposter, summeres det opprinnelige regnskapet. Ettersom det er ikke mulig å få tilgang til den detaljerte regnskapsoppføringen for hver leverandørtransaksjon i det enkeltstående bilaget, er det i dette tilfellet umulig å finne ut hvordan brukeren hadde tenkt å beregne kontantrabatt.
 
-### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Ett bilag med flere leverandører og innvirkningen på kontantrabattregnskap
+### Ett bilag med flere leverandører og innvirkningen på kontantrabattregnskap
+<a id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" class="xliff"></a>
 
 I eksemplet nedenfor blir flere leverandørfakturaer registrert i Finans på ett bilag på siden **Økonomijournal**. Disse fakturaene distribueres på tvers av flere kontodimensjoner.
 
@@ -112,7 +115,8 @@ Når INV2 er betalt, blir følgende oppføring utført. Legg merke til at kontan
 | 14000056    | 520200-003-- | Leverandørkontantrabatt |           | 3,00       |
 | 14000056    | 200110-001-  | Leverandørsaldo       | 3,00      |            |
 
-### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Ett bilag med flere leverandører og innvirkningen på regnskap for realisert gevinst/tap
+### Ett bilag med flere leverandører og innvirkningen på regnskap for realisert gevinst/tap
+<a id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" class="xliff"></a>
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
@@ -161,8 +165,9 @@ Når INV2 er betalt, blir følgende oppføring utført. Legg merke til at finans
 | 14000056    | 801300-002- | Kurstap | 0,00                                     | 2.00                                    |
 | 14000056    | 200110-001- | Leverandørsaldo     |                                          | -2.00                                   |
 
-## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Ett bilag for saldooverføringer og motregningsscenarier
-To vanlige scenarier som bruker ett bilag som inneholder flere kunder eller leverandører, inkluderer saldooverføringer fra én kunde/leverandør til en annen kunde/leverandør, og motregning for en kunde og leverandør som er den samme organisasjonen. Eksemplene nedenfor illustrerer den foretrukne metoden for å angi disse scenariene i Dynamics 365 for Operations som et alternativ til å skrive dem inn i ett bilag. 
+## Ett bilag for saldooverføringer og motregningsscenarier
+<a id="one-voucher-for-balance-transfers-and-netting-scenarios" class="xliff"></a>
+To vanlige scenarier som bruker ett bilag som inneholder flere kunder eller leverandører, inkluderer saldooverføringer fra én kunde/leverandør til en annen kunde/leverandør, og motregning for en kunde og leverandør som er den samme organisasjonen. Eksemplene nedenfor illustrerer den foretrukne metoden for å angi disse scenariene i Finance and Operations som et alternativ til å skrive dem inn i ett bilag. 
 
 En *saldooverføring* er ett bilag med flere kunder angitt med det formålet å overføre saldoen fra én kunde til en annen kunde (samme for leverandører). Dette scenariet kan oppstå når ansvaret for å betale fakturaen skifter til en annen part, for eksempel et underordnet firma som forskyver ansvaret til et overordnet firma. 
 
@@ -176,7 +181,7 @@ For å illustrere dette kan du anta at følgende salg skjer til kunden ACME. Fø
 | 401100-002-023-    | Omsetning          |           | 100        |
 | 130100-002-        | Kundesaldo | 100       |            |
 
-Deretter overfører brukeren den forfalte saldoen fra ACME til forsikringsselskapet i ett bilag i betalingsjournalen for kunder. I Dynamics 365 for Operations defineres forsikringsselskapet som forsikringskunde.
+Deretter overfører brukeren den forfalte saldoen fra ACME til forsikringsselskapet i ett bilag i betalingsjournalen for kunder. I Finance and Operations defineres forsikringsselskapet som forsikringskunde.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
@@ -233,7 +238,8 @@ På det relaterte bilaget for kontantrabatt brukes finansdimensjonene fra den mo
 
 ### 
 
-## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>Ett bilag med en motregning for flere kunder og leverandører
+## Ett bilag med en motregning for flere kunder og leverandører
+<a id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" class="xliff"></a>
 Motregning kan være nyttig når en organisasjon kjøper og selger til det samme firmaet. I stedet for å betale leverandørfakturaene og vente på å motta betaling for kundefakturaer, motberegnes leverandør- og kundefakturaene. Motregningstransaksjonen utlignes mot de utestående saldoene. 
 
 For å illustrere dette kan du anta at leverandøren 1001 og kunden US-008 er samme enhet, slik at organisasjonen din ønsker å motregne saldoene for kunder og leverandører før betaling/mottak av den gjenstående saldoen. Anta at kundeposten skylder EUR 75,00 og leverandørposten skyldes EUR 100,00. Det betyr at du heller vil motregne saldoene og bare betale leverandøren EUR 25,00. Anta i tillegg at regnskapsvalutaen er USD. I dette tilfellet registreres en motregningstransaksjon på ett bilag i betalingsjournalen for kunder.

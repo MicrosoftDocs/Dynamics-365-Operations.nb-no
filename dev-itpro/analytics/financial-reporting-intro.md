@@ -1,40 +1,42 @@
 ---
-title: Finansrapportering for Dynamics 365 for Operations
-description: "Finansrapportering for Dynamics 365 for Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter."
+title: Finansrapportering for Finance og Operations
+description: "Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Finansrapportering for Dynamics 365 for Operations
+# Finansrapportering for Finance og Operations
+<a id="financial-reporting-for-finance-and-operations" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Finansrapportering for Dynamics 365 for Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.
+Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.
 
 Finansrapportering inkluderer støtte for dimensjon. Derfor er kontosegmenter eller dimensjoner tilgjengelig umiddelbart. Ingen ekstra verktøy eller konfigurasjonstrinn er nødvendig.
 
-## <a name="financial-reporting-components"></a>Komponenter for finansrapportering
+## Komponenter for finansrapportering
+<a id="financial-reporting-components" class="xliff"></a>
 Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og planlegge rapporter.
 
 | Komponent        | Funksjoner                                                                                                                                                                                                                                                                           | Tilleggsinformasjon                                                                          |
@@ -42,7 +44,8 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 | Rapportutforming  | Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport. Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen. Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov. |                                                                                                 |
 | Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.                                                                                                                                                                                          | [Generere en finansrapport](generate-financial-report.md) |
 
-## <a name="features"></a>Funksjoner
+## Funksjoner
+<a id="features" class="xliff"></a>
 <table>
 <thead>
 <tr class="header">
@@ -86,7 +89,8 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se også
+#Se også
+<a id="see-also" class="xliff"></a>
 [Generere en finansrapport](generate-financial-report.md)
 
 

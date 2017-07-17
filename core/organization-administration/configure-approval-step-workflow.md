@@ -3,13 +3,13 @@ title: Konfigurere et godkjenningstrinn i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 61b3107516c7af8d1c0f4c427bdffa9be0fbc18d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurere et godkjenningstrinn i en arbeidsflyt
+# Konfigurere et godkjenningstrinn i en arbeidsflyt
+<a id="configure-an-approval-step-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstri
 
 Når du skal konfigurere et godkjenningstrinn i redigeringsprogrammet for arbeidsflyt, høyreklikker du godkjenningstrinnet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningstrinnet.
 
-## <a name="name-the-step"></a>Gi navn til trinnet
+## Gi navn til trinnet
+<a id="name-the-step" class="xliff"></a>
 Følg denne fremgangsmåten for å sette et navn på godkjenningstrinnet.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på godkjenningstrinnet.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Legg inn en emnelinje og instruksjoner
+## Legg inn en emnelinje og instruksjoner
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til godkjenningstrinnet. Hvis du for eksempel konfigurerer et godkjenningstrinn for innkjøpsrekvisisjoner, ser brukeren som er tilordnet til trinnet, emnelinjen og instruksjonene på **Innkjøpsrekvisisjoner**-siden. Emnelinjen vises i en meldingslinje øverst på siden. Brukeren kan deretter klikke ikonet i meldingslinjen for å vise instruksjonene. Følg trinnene nedenfor for å legge inn en emnelinje og instruksjoner.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -74,7 +77,8 @@ Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til 
     5.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 6.
     6.  Klikk **Lukk**.
 
-## <a name="assign-the-approval-step"></a>Tildele godkjenningstrinnet
+## Tildele godkjenningstrinnet
+<a id="assign-the-approval-step" class="xliff"></a>
 Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
 
 1.  I den venstre ruten klikker du **Tilordning**.
@@ -126,10 +130,10 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     </tr>
     <tr class="even">
     <td>Bruker</td>
-    <td>Bestemte Microsoft Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil tilordne trinnet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil tilordne trinnet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -153,17 +157,20 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
         -   Hvis både Jorunn og Johanne godkjenner dokumentet, sendes det til Karen til godkjenning.
     -   **Alle godkjennere** – Alle godkjennerne må godkjenne dokumentet. Ellers kan ikke arbeidsflyten fortsette. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn og Johanne godkjenner dokumentet, men Bjørn avviser det, avvises dokumentet og det sendes tilbake til Erik. Hvis Jorunn, Johanne og Bjørn godkjenner dokumentet, sendes det til Karen til godkjenning.
 
-## <a name="specify-when-the-approval-step-is-required"></a>Angi når godkjenningstrinnet er nødvendig
+## Angi når godkjenningstrinnet er nødvendig
+<a id="specify-when-the-approval-step-is-required" class="xliff"></a>
 Du kan angi når godkjenningstrinnet er nødvendig. Godkjenningstrinnet kan alltid være nødvendig, eller det kan bare være nødvendig hvis bestemte betingelser er oppfylt.
 
-### <a name="the-approval-step-is-always-required"></a>Godkjenningstrinnet er alltid nødvendig
+### Godkjenningstrinnet er alltid nødvendig
+<a id="the-approval-step-is-always-required" class="xliff"></a>
 
 Følg disse trinnene hvis godkjenningstrinnet alltid er nødvendig.
 
 1.  I den venstre ruten klikker du **Betingelse**.
 2.  Velg alternativet **Kjør alltid dette trinnet**.
 
-### <a name="the-approval-step-is-required-in-specific-conditions"></a>Godkjenningstrinnet er nødvendig ved bestemte betingelser
+### Godkjenningstrinnet er nødvendig ved bestemte betingelser
+<a id="the-approval-step-is-required-in-specific-conditions" class="xliff"></a>
 
 Godkjenningstrinnet du konfigurerer, kan være nødvendig bare hvis bestemte betingelser er oppfylt. Hvis du for eksempel konfigurerer et godkjenningstrinn for en arbeidsflyt for innkjøpsrekvisisjon, vil du at godkjenningstrinnet bare skal forekomme hvis beløpet i innkjøpsrekvisisjonen er mer enn NOK 10 000. Følg disse trinnene for å angi når godkjenningstrinnet er nødvendig.
 
@@ -177,7 +184,8 @@ Godkjenningstrinnet du konfigurerer, kan være nødvendig bare hvis bestemte bet
     3.  Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
     4.  Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
 
-## <a name="specify-what-happens-when-the-document-is-overdue"></a>Angi hva som skjer når dokumentet er forfalt
+## Angi hva som skjer når dokumentet er forfalt
+<a id="specify-what-happens-when-the-document-is-overdue" class="xliff"></a>
 Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er dokumentet forfalt. Et dokument som er forfalt, kan videresendes eller tilordnes automatisk til en annen bruker for godkjenning. Følg denne fremgangsmåten for å videresende dokumentet hvis det er forfalt.
 
 1.  I den venstre ruten klikker du **Eskalering**.
@@ -229,10 +237,10 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     </tr>
     <tr class="odd">
     <td>Bruker</td>
-    <td>Bestemte Dynamics 365 for Operations-brukere</td>
+    <td>Bestemte Finance and Operations-brukere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Dynamics 365 for Operations-brukere. Velg brukerne du vil videresende dokumentet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil videresende dokumentet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol></td>
     </tr>
     </tbody>

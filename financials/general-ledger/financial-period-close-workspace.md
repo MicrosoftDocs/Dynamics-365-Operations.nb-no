@@ -3,7 +3,7 @@ title: "Arbeidsområde for regnskapsperiodeavslutning"
 description: "Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
+# Arbeidsområde for regnskapsperiodeavslutning
+<a id="financial-period-close-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,11 +41,13 @@ I arbeidsområdet **Regnskapsperiodeavslutning** kan du spore prosessene for reg
 
 Du må først velge en avslutningstidsplan øverst i arbeidsområdet. Alle data som vises i arbeidsområdet, blir deretter filtrert etter den valgte avslutningstidsplanen.
 
-### <a name="summary-tiles"></a>Sammendrag-fliser
+### Sammendrag-fliser
+<a id="summary-tiles" class="xliff"></a>
 
 Flisene **Sammendrag** gir en oversikt over prosessen, og indikatorer hjelper deg med å holde avslutningsprosessen i rute. Du kan vise oppgaver som er utløpt, gjenværende oppgaver for i dag, oppgaver som forfaller i dag, men som er blokkert på grunn av avhengigheter, og alle andre oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte avslutningstidsplanen.
 
-### <a name="tasks-and-status-section"></a>Delen Oppgaver og status
+### Delen Oppgaver og status
+<a id="tasks-and-status-section" class="xliff"></a>
 
 I inndelingen **Oppgaver og status** er statusen for den overordnede avslutningstidsplanen delt inn på forskjellige måter: status etter firma, status etter område og status etter person som er ansvarlig. Du kan vise statusen for alle oppgaver i avslutningstidsplanen, bare oppgaver som forfaller i dag eller oppgaver som er forfalt, ved å endre filteret øverst på kortlisten. Du kan også velge firmafilteret for å vise statusen for et bestemt firma. Hver statuskategori gir en detaljert oversikt over både prosenten som er fullført og hvor mange oppgaver som gjenstår. Klikk kortet eller handlingen **Vis detaljer om** for å filtrere den detaljerte oppgavelisten etter det valgte kortet. 
 
@@ -61,13 +64,16 @@ Du kan knytte filer, notater, bilder og nettadresser til en oppgave ved hjelp av
 
 Alternativet **Oppgave fullført** må velges manuelt etter at oppgaven er fullført. Når en oppgave er merket som fullført, oppdateres feltet **Fullføringsdato** automatisk til gjeldende dato og klokkeslett. Avhengighetsindikatorer oppdateres også etter behov.
 
-## <a name="all-financial-period-close-tasks-list-page"></a>Listeside for alle oppgaver ved regnskapsperiodeavslutning
+## Listeside for alle oppgaver ved regnskapsperiodeavslutning
+<a id="all-financial-period-close-tasks-list-page" class="xliff"></a>
 Du kan vise alle gjeldende og forrige periodes avslutningsoppgaver fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**. Denne listesiden bør brukes for historiske analyse av avslutningsprosessen, fordi den inneholder informasjon om den planlagte forfallsdato, den faktiske sluttdatoen og personen som fullførte oppgaven. Du kan enkelt eksportere informasjonen på denne listesiden til Microsoft Excel for rapportering og revisjon.
 
-## <a name="financial-period-close-configuration-page"></a>Side for konfigurasjon av regnskapsperiodeavslutning
-Før du kan bruke arbeidsområdet **Regnskapsperiodeavslutning**, må du konfigurere prosessen i Microsoft Dynamics 365 for Operations ved hjelp av siden **Konfigurasjon av regnskapsperiodeavslutning**. (Klikk **Økonomimodul** &gt; **Periodeavslutning** &gt; **Konfigurasjon av regnskapsperiodeavslutning**.)
+## Side for konfigurasjon av regnskapsperiodeavslutning
+<a id="financial-period-close-configuration-page" class="xliff"></a>
+Før du kan bruke arbeidsområdet **Regnskapsperiodeavslutning**, må du konfigurere prosessen i Microsoft Dynamics 365 for Finance and Operations ved hjelp av siden **Konfigurasjon av regnskapsperiodeavslutning**. (Klikk **Økonomimodul** &gt; **Periodeavslutning** &gt; **Konfigurasjon av regnskapsperiodeavslutning**.)
 
-### <a name="resources"></a>Ressurser
+### Ressurser
+<a id="resources" class="xliff"></a>
 
 I kategorien **Ressurser** definerer du personene som er involvert i avslutningsprosessene. Alle ansatte som skal være ansvarlige for en avslutningsoppgave, må først tilordnes her. Du må også angi den ansattes visning av arbeidsområdet. Følgende alternativer er tilgjengelige:
 
@@ -76,21 +82,24 @@ I kategorien **Ressurser** definerer du personene som er involvert i avslutnings
 
 Brukere som har tillatelse til å vise bare de tildelte oppgavene kan ikke legge til oppgaver i oppgavelisten, redigere oppgaver eller fjerne oppgaver fra oppgavelisten.
 
-### <a name="task-areas"></a>Oppgaveområder
+### Oppgaveområder
+<a id="task-areas" class="xliff"></a>
 
 Du kan bruke oppgaveområder til å gruppere avslutningsoppgaver i logiske eierskapsområder i organisasjonen. Leverandører, Kunder eller Økonomimodul kan for eksempel brukes som oppgaveområder.
 
-### <a name="calendars"></a>Kalendere
+### Kalendere
+<a id="calendars" class="xliff"></a>
 
 Opprett og rediger regnskapskalendere for avslutning ved hjelp av kategorien Kalendere.  Her definerer du virkedager for å avslutningsprosesser, og denne brukes til planlegging av avslutningsoppgaver.  Opprett en ny kalender, og angi virkedagene som skal brukes for oppgaveplanlegging.  Det er best å opprette en kalender for lengre tidsrom, for eksempel ett eller flere år, siden dette kan redigeres etter oppretting.  Når du har opprettet kalenderen, klikker du Rediger-knappen for å oppdatere kalenderen for bestemte dager, for eksempel ferier.  Avslutningsoppgaver planlegges på dager Kontrollverdi er satt til Åpen.  Hvis du avslutningsoppgaver ikke skal planlegges på en bestemt dag, må Kontrollverdi være satt Lukket.
 
-### <a name="templates"></a>Maler
+### Maler
+<a id="templates" class="xliff"></a>
 
 Du kan bruke en mal for regnskapsavslutning til å definere alle oppgaver som er en del av en avslutningsprosess. En avslutningsoppgave er en gjentakende arbeidsinnsats som er tilordnet til en person for fullføring som en del av hver avslutningsprosess. I malen må det være definert en relativ forfallsdato for hver avslutningsoppgave. Den relative forfallsdatoen er antall dager før eller etter den definerte periodesluttdatoen som oppgaven forfaller på for hver periode. Et forfallstidspunkt tilordnes også til hver oppgave. Forfallstidspunktet angis ved hjelp av konteksten til din tidssone, og konverteres til tidssonen for hver bruker. 
 
 Du kan tilordne en oppgave i malen til ett eller flere firmaer der denne oppgaven gjelder. Hvis en annen person er tilordnet for å fullføre arbeidsinnsatsen i hvert firma, kan det være nyttig å opprette flere oppgaver for den samme arbeidsinnsatsen. Opprett én oppgave for hvert firma. 
 
-Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Microsoft Dynamics 365 for Operations. Du kan også koble til en ekstern nettadresse. 
+Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan også koble til en ekstern nettadresse. 
 
 > Tips: Hvis du vil koble en spesifikk Management Reporter-rapport til en oppgave ved regnskapsperiodeavslutning, kan du bruke nettadressen for rapporten. Hvis du vil ha tilgang til nettadressen for rapporten, åpner du rapporten i rapportutformingen, og deretter klikker du **Fil** &gt; **Vis rapport** for å åpne rapporten i en nettleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 
 
@@ -98,7 +107,8 @@ Du kan definere oppgaveavhengigheter i malen. Hvis en oppgave er definert til å
 
 Du kan opprette flere maler for regnskapsavslutning. Du kan deretter bruke de forskjellige malene til å spore avslutningsprosessene for forskjellige periodetyper, for eksempel månedsavslutning eller årsavslutning, eller til å spore firmaer som bruker de forskjellige avslutningsprosesser. Når én mal er opprettet, kan du kopiere den til en ny mal og gjøre de nødvendige endringene. Bare én mal kan tilordnes hver avslutningstidsplan.
 
-### <a name="closing-schedules"></a>Lukkingstidsplaner
+### Lukkingstidsplaner
+<a id="closing-schedules" class="xliff"></a>
 
 Du kan bruke en avslutningstidsplan til å tilordne en mal for regnskapsavslutning til en bestemt regnskapsperiode som skal avsluttes. Oppgavene fra malen genereres deretter automatisk for den angitte perioden, og den nye avslutningstidsplanen blir lagt til arbeidsområdet. Når du oppretter en ny avslutningstidsplan, brukes feltet **Periodens sluttdato** til å fastsette de faktiske forfallsdatoene for avslutningsoppgavene, basert på den relative forfallsdatoen som er tilordnet i malen for regnskapsavslutning. 
 

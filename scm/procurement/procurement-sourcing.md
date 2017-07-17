@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3a95ce92fe40f7e1c52bba554b82bd73d627c6b4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
+# Startside for innkjøp og leverandører
+<a id="procurement-and-sourcing-home-page" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,20 +35,23 @@ Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgj
 
 Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for produkter og tjenester gjennom å fremskaffe produktet, mottak, faktura og behandling av betaling til leverandører. Du kan konfigurere innkjøpsprosesser mot bestemte forretningsbehov ved å definere innkjøpspolicyer og -arbeidsflyter. Hvis du vil ha generell informasjon, kan du se [Oversikt over innkjøp og leverandører](procurement-sourcing-overview.md). Flere ressurser vises nedenfor.
 
-## <a name="purchase-requisitions"></a>Innkjøpsrekvisisjoner
+## Innkjøpsrekvisisjoner
+<a id="purchase-requisitions" class="xliff"></a>
 -   [Oversikt over innkjøpsrekvisisjoner](purchase-requisitions-overview.md)
 -   [Opprette en rekvisisjon for forbruk](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 -   [Opprette en rekvisisjon som bruker en tilbudsforespørsel](http://ax.help.dynamics.com/en/wiki/create-a-requisition-that-uses-an-rfq/)
 -   [Konfigurere tillatelser for bestilling på vegne av andre](http://ax.help.dynamics.com/en/wiki/set-up-permissions-for-ordering-products-on-behalf-of-someone-else/)
 
-## <a name="requests-for-quotation"></a>Tilbudsforespørsler
+## Tilbudsforespørsler
+<a id="requests-for-quotation" class="xliff"></a>
 -   [Tilbudsforespørsler](request-quotations.md)
 -   [Opprette en tilbudsforespørsel](http://ax.help.dynamics.com/en/wiki/create-a-request-for-quotation/)
 -   [Angi og sammenligne tilbudsforespørsler og inngå kontrakter](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
 -   [Opprette en poengsummetode for tilbudsforespørsler](http://ax.help.dynamics.com/en/wiki/create-a-scoring-method-for-rfqs/)
 -   [Opprette forespørselstyper og poengkriterier for tilbudsforespørsler](http://ax.help.dynamics.com/en/wiki/create-solicitation-types-and-scoring-criteria-for-rfqs/)
 
-## <a name="vendor-management-and-collaboration"></a>Leverandørbehandling og samarbeid
+## Leverandørbehandling og samarbeid
+<a id="vendor-management-and-collaboration" class="xliff"></a>
 -   [Definere leverandørkontoer](set-up-vendor-accounts.md)
 -   [Opprette en leverandørkonto](http://ax.help.dynamics.com/en/wiki/create-a-vendor-account/)
 -   [Opprette en bankkonto for leverandør](http://ax.help.dynamics.com/en/wiki/create-a-vendor-bank-account/)
@@ -57,13 +61,14 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)
 -   [Konfigurere og vedlikehold leverandørsamarbeid](set-up-maintain-vendor-collaboration.md)
--   [Demonstrasjonsskript for forsendelseslager for beholdning for Microsoft Dynamics 365 for Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
+-   [Demonstrasjonsskript for forsendelseslager for beholdning for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
 -   [Overvåke forsendelseslager ved hjelp av leverandørsamarbeid](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [Samarbeide med leverandører ved å bruke leveandørportalen](collaborate-vendors-vendor-portal.md) (bare februar 2016- og mai 2016-versjonene av Dynamics 365 for Operations)
--   [Konfigurasjon av sikkerhet for leverandørportalbrukere](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Dynamics 365 for Operations)
--   [Mobil område for leverandørsamarbeid for Microsoft Dynamics 365 for Operations-appen](vendor-collaboration-mobile-workspace.md)
+-   [Samarbeide med leverandører ved å bruke leveandørportalen](collaborate-vendors-vendor-portal.md) (bare februar 2016- og mai 2016-versjonene av Dynamics AX)
+-   [Konfigurasjon av sikkerhet for leverandørportalbrukere](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Finance and Operations)
+-   [Mobil område for leverandørsamarbeid for Microsoft Dynamics 365 for Finance and Operations-appen](vendor-collaboration-mobile-workspace.md)
 
-## <a name="procurement-product-management"></a>Innkjøpsproduktstyring
+## Innkjøpsproduktstyring
+<a id="procurement-product-management" class="xliff"></a>
 -   [Innkjøpskataloger](procurement-catalogs.md)
 -   [Opprette en innkjøpskatalog](http://ax.help.dynamics.com/en/wiki/create-a-procurement-catalog/)
 -   [Importere leverandørkataloger](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogginnlegg)
@@ -71,7 +76,8 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Definere policyer for innkjøpskategorihierarkier](http://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
 -   [Godkjenne leverandører for spesifikke innkjøpskategorier](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/)
 
-## <a name="procurement"></a>Innkjøp
+## Innkjøp
+<a id="procurement" class="xliff"></a>
 -   [Oversikt over bestilling](purchase-order-overview.md)
 -   [Opprett bestilling](purchase-order-creation.md)
 -   [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
@@ -85,17 +91,20 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Opprette en frigivelsesordre for innkjøp ved oppretting av bestillingen](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-when-creating-the-purchase-order/)
 -   [Opprette en etterfyllingsordre for forsendelse](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)
 
-## <a name="prices-and-discounts"></a>Priser og rabatter
+## Priser og rabatter
+<a id="prices-and-discounts" class="xliff"></a>
 -   [Kjøpsavtaler](purchase-agreements.md)
 -   [Opprette en kjøpsavtale](http://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 -   [Leverandørrabatter](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (hvitebok)
 
-## <a name="product-receipt-and-invoicing"></a>Produktkvittering og fakturering
+## Produktkvittering og fakturering
+<a id="product-receipt-and-invoicing" class="xliff"></a>
 -   [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
--   [Oversikt over leverandørfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [Leverandørposteringsprofiler](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [Leverandørposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-## <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
+## Arbeidsflyter for innkjøp og leverandører
+<a id="procurement-and-sourcing-workflows" class="xliff"></a>
 -   [Oversikt over innkjøp og leverandører](procurement-sourcing-overview.md)
 -   [Arbeidsflyter for innkjøp og leverandører](procurement-sourcing-workflows.md)
 -   [Registrere mottaket av varene i bestillingen](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)

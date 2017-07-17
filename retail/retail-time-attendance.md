@@ -1,59 +1,68 @@
 ---
 title: Timeregistrering for detaljhandel
-description: "Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Operations - Retail."
+description: "Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 021f0ce8ee73ede482b2b74fce93f61a886288fc
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b458d1938f49a2f33f7dd3ce3062880f0d4d7bfc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Timeregistrering for detaljhandel
+# Timeregistrering for detaljhandel
+<a id="retail-time-and-attendance" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Operations - Retail. 
+Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail. 
 
-<a name="manage-worker-setup-and-scheduling"></a>Behandle konfigurasjon og planlegging for arbeider
+Behandle konfigurasjon og planlegging for arbeider
+<a id="manage-worker-setup-and-scheduling" class="xliff"></a>
 ----------------------------------
 
-### <a name="initial-configuration"></a> Opprinnelig konfigurasjon
+###  Opprinnelig konfigurasjon
+<a id="initial-configuration" class="xliff"></a>
 
 -   Kjør konfigurasjonsveiviseren.
 -   Registrer arbeidere som timeregistreringsarbeidere.
 
-### <a name="plan-worker-schedules"></a>Planlegge tidsplaner for arbeidere
+### Planlegge tidsplaner for arbeidere
+<a id="plan-worker-schedules" class="xliff"></a>
 
 -   Bruk profiler ved hjelp av jobbplanleggeren. Hvis du vil ha mer informasjon, se <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
 Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
-### <a name="retail-specific-configuration"></a>Detaljhandelsspesifikk konfigurasjon
+### Detaljhandelsspesifikk konfigurasjon
+<a id="retail-specific-configuration" class="xliff"></a>
 
 -   Aktiver en funksjonalitetsprofil for tidsklokke, for arbeidere som du vil aktivere tidsregistreringer for. Klikk på **Funksjonalitetsprofiler for salgssted** &gt; **Funksjoner** &gt; **Tidsregistreringer for salgssted** &gt; **Aktiver tidsregistreringer**.
 -   Konfigurer grupper for tillatelser for salgssted for å aktivere tillatelsen Vis tidsklokkeoppføringer. Med denne tillatelsen kan en bruker vise tidsklokkeregistreringene for andre arbeidere i butikken (og fra alle andre butikker som brukeren er tilknyttet, via adresseboken). Du vil kanskje aktivere denne tillatelsen for en lederrolle, men ikke en kassererrolle. Klikk på **Salgsstedstillatelsesgrupper** &gt; **Vis tidsklokkeoppføringer**.
 
-## <a name="register-time"></a>Kassetid
-### <a name="cashier-and-non-cashier-time-registrations"></a>Tidsregistreringer for kasserer og ikke-kasserer
+## Kassetid
+<a id="register-time" class="xliff"></a>
+### Tidsregistreringer for kasserer og ikke-kasserer
+<a id="cashier-and-non-cashier-time-registrations" class="xliff"></a>
 
 -   På salgssted:
     -   Stemple inn operasjoner:
@@ -112,8 +121,10 @@ Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se <https://technet
 -   Ulike tidssoner:
     -   Hvis du viser tiden fra en annen lokasjon (for kassererens loggbok eller ved hjelp av **Vis tidsklokkeoppføringer** for et lederscenario), og den er i en annen tidssone, blir tidspostene som du ser, konvertert til den lokale tidssonen. Du er for eksempel en leder for to butikker, én i Arizona og den andre i Nevada. En kasserer registrerer en innstempling klokken 9:00 i Arizona. På dette tidspunktet er klokken 8:00 i Nevada. Derfor, hvis du er i butikken i Nevada og ser på timeregistreringsposter, er timeregistreringen merket som 8:00.
 
-## <a name="view-worker-time-registrations"></a>Vise tidsregistrering for arbeidere
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype
+## Vise tidsregistrering for arbeidere
+<a id="view-worker-time-registrations" class="xliff"></a>
+### Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype
+<a id="view-worker-time-registrations-and-filter-by-store-or-activity-type" class="xliff"></a>
 
 På salgssted:
 
@@ -121,16 +132,19 @@ På salgssted:
 -   Du kan se aktiviteter for tidsklokkeregistrering fra alle arbeidere som er tilordnet til de samme butikkene som du er tilordnet til.
 -   Du kan bruke aktivitetstypen og butikkfiltre for å filtrere etter tidsregistreringer.
 
-## <a name="process-and-manage-time-registrations"></a>Behandle og administrere tidsregistreringer
-En Dynamics 365 for Operations - Retail bruker følger arbeidsflyten for å beregne, godkjenne og overføre tidsregistreringer til lønn.
+## Behandle og administrere tidsregistreringer
+<a id="process-and-manage-time-registrations" class="xliff"></a>
+En Dynamics 365 for Retail bruker følger arbeidsflyten for å beregne, godkjenne og overføre tidsregistreringer til lønn.
 
-### <a name="primary-operations"></a>Primære operasjoner
+### Primære operasjoner
+<a id="primary-operations" class="xliff"></a>
 
 -   Beregn
 -   Godkjenn
 -   Send til lønn
 
-### <a name="other-common-operations"></a>Andre vanlige operasjoner
+### Andre vanlige operasjoner
+<a id="other-common-operations" class="xliff"></a>
 
 -   Masseutstempling
 -   Registrer fravær

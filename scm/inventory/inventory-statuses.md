@@ -3,14 +3,14 @@ title: Beholdningsstatuser
 description: "Denne artikkelen beskriver hvordan du kan bruke lagerstatusene til å kategorisere og holde orden på lager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-statuses"></a>Beholdningsstatuser
+# Beholdningsstatuser
+<a id="inventory-statuses" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,7 +45,7 @@ Her er noen eksempler på hvordan du kan bruke lagerstatuser:
 
 En beholdningsstatus er én av dimensjonene i lagringsdimensjonsgruppen. Lagerstatuser kan kategoriseres som tilgjengelige eller utilgjengelige, og du kan bruke parameteren **Lagerblokkering** til å blokkere varer som har en tilgjengelig lagerstatus. Varer som har en blokkert status, regnes som aktuell beholdning og kan ikke brukes i produksjonsordrer, salgsordrer, overføringsordrer eller utgående transaksjoner. 
 
-Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar**, en utilgjengelig status kalt **Skadet**, og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Microsoft Dynamics 365 for Operations bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner**-siden. 
+Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar**, en utilgjengelig status kalt **Skadet**, og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Microsoft Dynamics 365 for Finance and Operations bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner**-siden. 
 
 Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus. Hvis du har varer med statusen **Brutt** og hovedplanlegging kjøres på disse varene, regnes de som manglende, og beholdningen etterfylles automatisk. 
 
