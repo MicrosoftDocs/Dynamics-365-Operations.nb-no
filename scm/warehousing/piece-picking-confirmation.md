@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,11 +22,9 @@ ms.openlocfilehash: c5340f4dacd743600ef955c8d5228d1e2d2d2fa9
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Stykkplukkingsbekreftelse
-<a id="piece-picking-confirmation" class="xliff"></a>
+# <a name="piece-picking-confirmation"></a>Stykkplukkingsbekreftelse
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,13 +34,11 @@ Når du aktiverer stykkplukking, velges produktbekreftelse automatisk. For arbei
 
 Du kan også bruke antall og måleenhet som er tilknyttet en skannet strekkode. Dette vil fungere for mottak på innkommende flyter inkludert mottak av kombinerte skiltnumre, bestillingsvare, overføringsordrevare og lastvare. Det fungerer også for stykkplukking der skanning av strekkoden vil legge til antallet i totalt antall bekreftede stykker som er konvertert mellom måleenheten på strekkoden og arbeidsenheten. Hvis det, ved telling av måleenheten på strekkoden, bekreftes at antallet er tillatt for opptelling på sekvensgruppen, legges antallet til totalantallet.
 
-## Der det er aktuelt
-<a id="where-it-applies" class="xliff"></a>
+## <a name="where-it-applies"></a>Der det er aktuelt
 
 Stykkplukking fungerer for alt opptellingsarbeid og for første plukking for alle typer arbeid. Stykkplukking gjelder ikke hvis varen styres av serienumre eller hvis det er en produksjons- eller kanbanplukking fra en nummerskiltlokasjon og varen er satt til oppsamling.
 
-## Definer stykkplukking
-<a id="set-up-piece-picking" class="xliff"></a>
+## <a name="set-up-piece-picking"></a>Definer stykkplukking
 
 1.  Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: Lagerstyring > **Lagerstyring** > **Oppsett** > **Mobilenhet** > **Menyelementer på mobilenheten**. 
 2. Åpne Arbeidsbekreftelsesoppsett fra menyelement for mobilenhet.

@@ -9,13 +9,14 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 56d3f0312e684ab076f9116ac6638bcd67b52e58
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Overvåke prognosenøyaktighet
-<a id="monitor-forecast-accuracy" class="xliff"></a>
+# <a name="monitor-forecast-accuracy"></a>Overvåke prognosenøyaktighet
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Finance and Operations beregner følgende typer prognosenøyaktighet:
 **Obs!** Hvis du bruker Finance and Operations behovsprognose og Microsoft Azure Machine Learning-tjenesten, er beregning av intern modellnøyaktighet basert på testdatasettet. Hvis du vil angi størrelsen på testdatasettet, kan du angi **TEST\_SET\_SIZE\_PERCENT**-parameteren på siden **Parametere for behovsprognose**. For eksempel hvis du setter verdien til **20**, vil de siste 20 prosentene av historiske data bli brukt til å beregne den interne modellnøyaktigheten.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Godkjenne den justerte prognosen](authorize-adjusted-forecast.md)

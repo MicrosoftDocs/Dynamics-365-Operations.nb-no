@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Bruke oppslag for å finne informasjon
-<a id="use-lookups-to-find-information" class="xliff"></a>
+# <a name="use-lookups-to-find-information"></a>Bruke oppslag for å finne informasjon
 
 [!include[banner](../includes/banner.md)]
 
 
 I Microsoft Dynamics 365 for Finance and Operations har mange felt oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.  
 
-Responsive oppslag
-<a id="responsive-lookups" class="xliff"></a>
+<a name="responsive-lookups"></a>Responsive oppslag
 ------------------
 
 Ved samhandling med en oppslagskontroll i tidligere versjoner av Finance and Operations, måtte brukere utføre en eksplisitt handling for å åpne rullegardinmenyen. Dette var for eksempel å skrive inn en stjerne (\*) i kontrollen for å filtrere oppslaget basert på gjeldende verdi i kontrollen, klikke på rullegardinlisten eller hurtigtasten bruke **Alt**+**pil ned**. Oppslagskontrollene er endret på følgende måter for å fungere bedre med gjeldende webfremgangsmåter:
@@ -59,8 +57,7 @@ Selv om fokus fremdeles er i oppslagskontrollen, kan du også bruke **pil opp** 
 
 ![Endre valg i oppslag](./media/changingselectionlookup.png)
 
-## Skrive inn mer enn ID-er
-<a id="typing-in-more-than-ids" class="xliff"></a>
+## <a name="typing-in-more-than-ids"></a>Skrive inn mer enn ID-er
 Ved angivelse av data, er det naturlig for brukere å prøve å identifisere en enhet, for eksempel en kunde eller leverandør, etter navnet i stedet for en identifikator som representerer enheten. I gjeldende versjon av Finance and Operations vil mange (men ikke alle) oppslag nå tillate kontekstavhengig angivelse av data. Denne kraftige funksjonen lar brukere skrive inn ID-en eller det tilsvarende navnet, i oppslagskontrollen. 
 
 La oss for eksempel se på **Kundekonto**-feltet ved oppretting av en salgsordre. Dette feltet viser **konto-ID** for kunden, men en bruker foretrekker vanligvis å angi et **kontonavn** i stedet for en **konto-ID** for dette feltet ved oppretting av en salgsordre, for eksempel "Forest Wholesales" i stedet for "US-003".
@@ -73,8 +70,7 @@ Brukeren kan imidlertid nå også angi begynnelsen på et **kontonavnet**. Hvis 
 
 [![Kontekstavhengig oppslag når det angis et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## Bruke kolonneoverskriftene i rutenett for mer avansert filtrering og sortering
-<a id="using-grid-column-headers-for-more-advanced-filtering-and-sorting" class="xliff"></a>
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Bruke kolonneoverskriftene i rutenett for mer avansert filtrering og sortering
 Oppslagsforbedringene som er beskrevet i de forrige to delene, forbedre betydelig brukeres mulighet til å navigere i oppslagsradene basert på et "begynner med"-søk for **ID**- eller **Navn**-feltet i oppslaget. Det finnes imidlertid situasjoner der mer avansert filtrering (eller sortering) er nødvendig for å finne den riktige raden. I slike tilfeller må brukeren bruke filtrerings- og sorteringsalternativene i kolonneoverskriftene i rutenettet i oppslaget. Anta for eksempel at en ansatt angir en salgsordrelinje som må riktig "kabel" som produkt. Det er ikke særlig nyttig å skrive inn "kabel" i **Varenummer**-kontrollen, fordi det ikke finnes produktnavn som begynner med "kabel". 
 
 ![Oppslag med tomt element](./media/emptyitemlookup.png) 

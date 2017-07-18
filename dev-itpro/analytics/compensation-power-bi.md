@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,19 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Power BI-innholdet Kompensasjon
-<a id="compensation-power-bi-content" class="xliff"></a>
+# <a name="compensation-power-bi-content"></a>Power BI-innholdet Kompensasjon
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver Microsoft Power BI-innholdet **Kompensasjon**. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Power BI-innholdet **Kompensasjon** vises i arbeidsområdet **Kompensasjonsstyring** hvis du bruker et av følgende produkter:
 
 - Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 - Microsoft Dynamics 365 for Talent
 
-## Rapporter som er inkludert i Power BI-innholdet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Rapporter som er inkludert i Power BI-innholdet **Kompensasjon**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
 
 | Rapporter                     | Innhold |
@@ -49,8 +47,7 @@ Rapporter som er inkludert i Power BI-innholdet **Kompensasjon**, har både diag
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Utvide Power BI-innholdet
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
 Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 eller oppdateringen for juli 2017 av Finance and Operations, Enterprise edition, kan du finne Power BI-innholdet **Kompensasjon** i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
 Pass på at du laster ned Power BI-innholdet **Kompensasjon** som gjelder for versjonen av Microsoft Dynamics 365 du bruker.
@@ -58,8 +55,7 @@ Pass på at du laster ned Power BI-innholdet **Kompensasjon** som gjelder for ve
 >[!NOTE]
 >PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Kompensasjon**. Denne tabellen viser enhetene som innholdet er basert på.
 
 | Enhet                   | Innhold                                                                                                   | Relasjoner med andre enheter |

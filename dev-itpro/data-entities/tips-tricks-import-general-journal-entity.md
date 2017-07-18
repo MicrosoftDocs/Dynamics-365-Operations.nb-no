@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: b9a5c03584635908067bb7b623deba76f4ba3e18
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Anbefalte fremgangsmåter for å importere bilag ved å bruke Økonomijournal-enheten
-<a id="best-practices-for-importing-vouchers-using-the-general-journal-entity" class="xliff"></a>
+# <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Anbefalte fremgangsmåter for å importere bilag ved å bruke Økonomijournal-enheten
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hj
 
 Du kan bruke Økonomijournal-enheten til å importere bilag som har konto- eller motkontotypen **Finans, Kunde, Leverandør eller Bank**. Bilaget kan angis som én linje, ved hjelp av både **Konto**- og **Motkonto**-feltet, eller som et flerlinjet bilag, der bare **Konto**-feltet brukes (og **Motkonto** er tomt på hver linje). Økonomijournal-enheten støtter ikke alle kontotyper. Andre enheter finnes i stedet for scenarier der det kreves ulike kombinasjoner av kontotyper. Hvis du for eksempel vil importere en prosjekttransaksjon, kan du bruke Prosjektutgiftsjournal-enheten. Hver enhet er utformet for å støtte bestemte scenarier, noe som betyr at flere felt kan være tilgjengelige i enheter for disse scenariene, men ikke i enheter for et annet scenario.
 
-## Konfigurer
-<a id="setup" class="xliff"></a>
+## <a name="setup"></a>Konfigurer
 Før du importerer ved hjelp av Økonomijournal-enheten, må du kontrollere følgende oppsett:
 
 -   **Oppsett av nummerserie for journalpartinummeret** – Når du importerer ved hjelp av Økonomijournal-enheten, bruker journalpartinummeret nummerserien som er definert i parametere for økonomimodul. Hvis du har satt nummerserien for journalpartinummeret til **Manuelt**, brukes ikke et standardnummer. Dette oppsettet støttes ikke.
 -   **Konfigurasjon av finansdimensjoner** – Alle organisasjoner må definere rekkefølgen til finansdimensjoner når enheter brukes til å importere transaksjoner. Ordren er definert for formatet **Integrering av finansdimensjoner** på **Økonomimodul** &gt; **Kontoplan** &gt; **Dimensjoner** &gt; **Konfigurasjon av finansdimensjoner for programintegrering** &gt; **Velg dataenheter**. Segmentene til finanskontoen som importeres, må ha samme rekkefølge. Hvis ikke, vil det oppstå en feil under import.
 
-## Oppsett av Økonomijournal-enhet
-<a id="general-journal-entity-setup" class="xliff"></a>
+## <a name="general-journal-entity-setup"></a>Oppsett av Økonomijournal-enhet
 To innstillinger i databehandling påvirker hvordan standard journalpartinummer eller bilagsnummer brukes:
 
 -   **Settbasert behandling** (på dataenhet)
@@ -51,8 +48,7 @@ To innstillinger i databehandling påvirker hvordan standard journalpartinummer 
 
 Avsnittene nedenfor beskriver virkningen av disse innstillingene, og beskriver også hvordan journalpartinumre og bilagsnumre genereres.
 
-### Journalpartinummer
-<a id="journal-batch-number" class="xliff"></a>
+### <a name="journal-batch-number"></a>Journalpartinummer
 
 -   Innstillingen **Settbasert behandling** på Økonomijournal-enheten påvirker ikke hvordan journalpartinumre genereres.
 -   Hvis feltet **Journalpartinummer** er satt til **Automatisk generert**, opprettes et nytt journalpartinummer for hver linje som importeres. Denne virkemåten anbefales. Innstillingen **Automatisk generert** finner du på importprosjektet under **Vis kart** i kategorien til **Tilordningsdetaljer**.
@@ -60,8 +56,7 @@ Avsnittene nedenfor beskriver virkningen av disse innstillingene, og beskriver o
     -   Hvis journalpartinummeret som er definert i den importerte filen, samsvarer med en eksisterende, upostert daglig journal i, importeres alle linjer som har et tilsvarende journalpartinummer til den eksisterende journalen. Linjene importeres aldri til partinummeret for en postert journal. I stedet opprettes det et nytt nummer.
     -   Hvis journalpartinummeret som er definert i den importerte filen, ikke samsvarer med en eksisterende, upostert daglig journal, grupperes alle linjer som har et samme journalpartinummer under en ny journal. Alle linjer som for eksempel har journalpartinummer 1, importeres til en ny journal, og alle linjer som har journalpartinummer 2, importeres til en annen ny journal. Partinummeret for journalen opprettes ved hjelp av nummerserien som er definert i Økonomiparametere.
 
-### Bilagsnummer
-<a id="voucher-number" class="xliff"></a>
+### <a name="voucher-number"></a>Bilagsnummer
 
 -   Når du bruker innstillingen **Settbasert behandling** for Økonomijournal-enheten, må bilagsnummeret angis i den importerte filen. Hver transaksjon i økonomijournalen tilordnes bilagsnummeret som er angitt i den importerte filen, selv om bilaget ikke er balansert. Hvis du vil bruke settbasert behandling, men du også vil bruke nummerserien som er definert for bilagsnumre, er en hurtigreparasjon tilgjengelig for versjonen fra februar 2016. Hurtigreparasjonsnummeret er 3170316 og er tilgjengelig for nedlasting fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned hurtigreparasjoner fra Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
     -   Hvis du vil aktivere denne funksjonaliteten for journalnavnet som brukes for importer, kan du sette **Nummertilordning ved postering** til **Ja**.

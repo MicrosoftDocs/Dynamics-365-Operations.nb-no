@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 180863b5c3b8fe7870ab58f3849e52583f5880c1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
-<a id="statistical-dimension-members-and-statistical-measure-provider-templates" class="xliff"></a>
+# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ En statistisk dimensjon og medlemmene av denne brukes til å registrere og kontr
 - Som tildelingsgrunnlag i policyer som kostnadsdistribusjon eller kostnadstildeling
 - For rapportering av ikke-monetært forbruk
 
-## Statistisk dimensjon
-<a id="statistical-dimension" class="xliff"></a>
+## <a name="statistical-dimension"></a>Statistisk dimensjon
 
 En statistisk dimensjon har et unikt navn og en rekke unike dimensjonsmedlemmer. Den statistisk dimensjonen som er tilordnet en finans-ID for kostnadsregnskap. Dette forholdet knytter alle tilsvarende statistiske dimensjonsmedlemmer til Finans for kostnadsregnskap. Derfor opprettes alle statistiske poster i sammenheng med Finans for kostnadsregnskap.
 
@@ -57,8 +55,7 @@ Her er et eksempel på en statistisk dimensjonen som er knyttet til en finanskon
 |-----------------------|---------------------|--------------------|-----------------|------------------------|-----------------------------|
 | Økonomistyring | USD                 | Konstant valuta  | Regnskapsperiode   | Delte kostnadselementer   | Delte statistiske elementer |
 
-## Statistiske medlemmer av dimensjon
-<a id="statistical-dimension-members" class="xliff"></a>
+## <a name="statistical-dimension-members"></a>Statistiske medlemmer av dimensjon
 
 Et statistisk dimensjonsmedlem representerer en enhet som du vil registrere ikke-monetære mål for. Disse målene kan enten brukes som enten tildelingsgrunnlag eller eller bare til å rapportere ikke-monetære verdier.
 
@@ -74,8 +71,7 @@ Her er noen eksempler på vanlige statistiske dimensjonsmedlemmer.
 | Delte statistiske elementer | Elektrisitet          | Strømforbruk | kWh  |
 | Delte statistiske elementer | Emb.-kostsenter              | Emballasjekostsenter   | Tmr |
 
-## Mal for leverandør av statistisk måling
-<a id="statistical-measure-provider-template" class="xliff"></a>
+## <a name="statistical-measure-provider-template"></a>Mal for leverandør av statistisk måling
 
 Statistiske målinger kan hentes fra mange typer datakilder. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er en god kilde til å hente statistiske målinger fra. Du kan bruke en mal for leverandør av statistiske mål for enkelt å konfigurere de statistiske målinger som du vil hente ut.
 
@@ -113,8 +109,7 @@ Når du oppretter en **Mal for leverandør av statistisk måling**-post, må du 
 - **Antall** – antall poster per kostobjekt overføres.
 - **Sum** – sum for poster per kostobjekt overføres. (**Sum**-feltet og **Dato**-feltet er obligatorisk.)
 
-## Bruke Antall-funksjonen
-<a id="using-the-count-function" class="xliff"></a>
+## <a name="using-the-count-function"></a>Bruke Antall-funksjonen
 
 En mal for leverandør av statistisk måling kan for eksempel defineres på følgende måte.
 
@@ -183,8 +178,7 @@ Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Heltids
 | CC002       | FI | 2.00      | (2/5) × beløp    |
 | CC003       | LO | 2.00      | (2/5) × beløp    |
 
-## Bruke summeringsfunksjonen
-<a id="using-the-sum-function" class="xliff"></a>
+## <a name="using-the-sum-function"></a>Bruke summeringsfunksjonen
 
 Et kostsenter for produksjon, CC010 (innpakning), er ansvarlig for å pakke produktene før de sendes til kunder. Den direkte arbeidskostnaden blir lagt til produktene via stykklisten (BOM) og ruten. Den indirekte kostnaden ved å drive kostsenteret må også tilordnes de produserte varene. Det beste statistiske målet for en slik tildeling er ofte antall registrerte produksjonstimer per produkt i en gitt periode.
 
@@ -271,8 +265,7 @@ Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Emb.-ko
 | Appelsinjus B2B      | 16,00     | (16 ÷ 24) × beløp |
 | Forbruker av appelsinjus | 8,00      | (8 ÷ 24) × beløp  |
 
-## Importerte statistiske målinger
-<a id="imported-statistical-measures" class="xliff"></a>
+## <a name="imported-statistical-measures"></a>Importerte statistiske målinger
 
 Du kan importere statistiske målinger til kostnadsregnskap ved hjelp av databehandlingsverktøyet for import/eksport.
 
@@ -351,8 +344,7 @@ Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Strøm,
 | CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × beløp  |
 | CC003       | LO | 15,000.00 | (15 000 ÷ 21 550) × beløp |
 
-## Se også
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se også
 
 [Tildelingsgrunnlag](allocation-bases.md)
 

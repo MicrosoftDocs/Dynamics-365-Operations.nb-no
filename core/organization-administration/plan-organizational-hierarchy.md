@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 26ca948e26708126686ca0d96ea21dc16b1c3799
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurere organisasjonshierarki
-<a id="configure-organizational-hierarchy" class="xliff"></a>
+# <a name="configure-organizational-hierarchy"></a>Konfigurere organisasjonshierarki
 
 [!include[banner](../includes/banner.md)]
 
@@ -58,8 +57,7 @@ Du må ha minst én juridisk enhet for å representere firmaet i Finance and Ope
 | Produkter                                 | Produktdefinisjoner deles, og de må frigis til individuelle juridiske enheter før de kan inkluderes i transaksjoner. Hver juridiske enhet har sitt eget sett med frigitte produkter som kan inkluderes i transaksjonsdokumenter. Hvis de interne organisasjonene må bruke ulike sett med produkter, må du modellere organisasjonene som juridiske enheter. **Obs!**  Selv om produktdefinisjoner deles, kan du, i hver juridiske enhet der et produkt er frigitt, angi ulike salgs-, innkjøps- og lagringsparametere for varen i hvert lagerområde.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Alle driftsenheter deler samme sett med produkter. Hvis de interne organisasjonene kan dele samme sett med produkter, kan du modellere organisasjonene som driftsenheter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Forespørsel og rapportering                    | Du må manuelt endre firmaer for å angi transaksjoner og utføre forespørsler i flere juridiske enheter. På grunn av datasikkerhetsgrenser kan konsolidert forespørsel og rapportering være ressursintensiv og tidkrevende.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Du trenger ikke å endre firmaer for å få tilgang til data fra flere driftsenheter. Konsolidert forespørsel og rapportering og individuell regional forespørsel er enklere og raskere.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-## Anbefalte fremgangsmåter for modellering av organisasjoner og hierarkier
-<a id="best-practices-for-modeling-organizations-and-hierarchies" class="xliff"></a>
+## <a name="best-practices-for-modeling-organizations-and-hierarchies"></a>Anbefalte fremgangsmåter for modellering av organisasjoner og hierarkier
 Vurder følgende anbefalte fremgangsmåter når du implementerer et organisasjonshierarki:
 -   Opprett en avdeling for å modellere skjæringspunktet mellom en juridisk enhet og en forretningsenhet. Du kan deretter rulle opp data fra en avdeling for en juridisk enhet for lovbestemt rapportering og fra en avdeling til en forretningsenhet for intern rapportering. Avdelinger kan fungere som fortjenestesentre. Hvis du bruker avdelinger, trenger du ikke å bruke juridiske enheter og forretningsenheter som dimensjoner i kontostrukturen. Du kan bruke bare avdelinger som en dimensjon. Du må imidlertid bruke både kostsentre og avdelinger som dimensjoner i kontostrukturen hvis kostsentre bare brukes som kostnadsakkumulatorer og avdelinger brukes til inntektsføring.
 -   Utforme flere hierarkier for driftsenheter hvis du har omfattende rapporteringskrav for resultater.

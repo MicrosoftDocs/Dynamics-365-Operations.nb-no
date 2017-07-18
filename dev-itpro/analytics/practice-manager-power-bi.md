@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.assetid: 
 ms.search.region: Global
 ms.author: knelson
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.version: Enterprise edition, July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 993e88703f19dbeec435d07a4599cbbfcda563bc
@@ -21,18 +22,15 @@ ms.openlocfilehash: b63e31f3e4993c1fda229a54b4e5ef2fed824355
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Praksisleder for Power BI-innhold
-<a id="practice-manager-power-bi-content" class="xliff"></a>
+# <a name="practice-manager-power-bi-content"></a>Praksisleder for Power BI-innhold
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Power BI-innhold. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 **Praksisleder** for Power BI-innhold ble opprettet for praksisledere og prosjektledere. Den gir hovedmål som er knyttet til prosjektene som organisasjonen arbeider på. Instrumentbordet gir en oversikt over prosjekter og relaterte kunder. Et filter på rapportnivå kan brukes til å rapportere for bestemte juridiske enheter. Dette Power BI-innholdet henter data fra aggregerte målinger av prosjektregnskapet.
 
@@ -40,12 +38,10 @@ Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Powe
 
 Alle beløp i innholdet vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises Power BI-innholdet **Praksisleder** i arbeidsområdet **Prosjektstyring**.
 
-## Rapporter som er inkludert i Power BI-innholdet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
 Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i **Praksisleder** for Power BI-innholdet.
 
@@ -59,23 +55,20 @@ Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i **Pra
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruke funksjonen for eksport av underliggende data til å eksportere de underliggende dataene som oppsummeres i en effekt.
 
-## Utvide Power BI-innholdet
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
 Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere dem på Power BI.com-leieren for analyse. 
 
 Du kan finne **Praksisleder**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
 Pass på at du laster ned **Praksisleder**-innholdet som gjelder for versjonen av Dynamics 365 du bruker.
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
 Følgende data brukes til å fylle ut rapportsidene i **Praksisleder**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 
-### Enhet: ProjectAccountingCube_ActualHourUtilization
-<a id="entity-projectaccountingcubeactualhourutilization" class="xliff"></a>
+### <a name="entity-projectaccountingcubeactualhourutilization"></a>Enhet: ProjectAccountingCube_ActualHourUtilization
 **Datakilde:** ProjEmplTrans
 
 | Aggregerte nøkkelmålinger      | Felt                              | beskrivelse | 
@@ -83,8 +76,7 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Faktiske fakturerbare brukte timer | Sum(ActualUtilizationBillableRate) | Summen av faktiske fakturerbare brukte timer |
 | Faktiske fakturerbare belastningstimer   | Sum(ActualBurdenBillableRate)      | Summen av faktisk belastning (rate) |
 
-### Enhet: ProjectAccountingCube_Actuals
-<a id="entity-projectaccountingcubeactuals" class="xliff"></a>
+### <a name="entity-projectaccountingcubeactuals"></a>Enhet: ProjectAccountingCube_Actuals
 **Datakilde:** ProjTransPosting
 
 | Aggregerte nøkkelmålinger | Felt              | beskrivelse | 
@@ -92,8 +84,7 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Faktisk omsetning            | Sum(ActualRevenue) | Summen av postert inntekt for alle transaksjoner |   
 | Faktisk kostnad               | Sum(ActualCost)    | Summen av bokførte kostnader for alle transaksjonstyper |
 
-### Enhet: ProjectAccountingCube_Customer
-<a id="entity-projectaccountingcubecustomer" class="xliff"></a>
+### <a name="entity-projectaccountingcubecustomer"></a>Enhet: ProjectAccountingCube_Customer
 **Datakilde:** CustTable
 
 | Aggregerte nøkkelmålinger | Felt                                            | beskrivelse | 
@@ -101,8 +92,7 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Antall prosjekter        | COUNTA(ProjectAccountingCube_Projects[PROJECTS]) | Antall tilgjengelige prosjekter |
 
 
-### Enhet: ProjectAccountingCube_Forecasts
-<a id="entity-projectaccountingcubeforecasts" class="xliff"></a>
+### <a name="entity-projectaccountingcubeforecasts"></a>Enhet: ProjectAccountingCube_Forecasts
 **Datakilde:** ProjTransBudget
 
 | Aggregerte nøkkelmålinger | Felt                  | beskrivelse | 
@@ -111,16 +101,14 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Budsjettert omsetning            | Sum(BudgetRevenue)     | Summen av antatt påløpt/fakturert omsetning  |
 | Budsjettert bruttofortjeneste       | Sum(BudgetGrossMargin) | Forskjellen mellom summen av total prognoseomsetning og summen av total prognosekostnad |
 
-### Enhet: ProjectAccountingCube_ProjectPlanCostsView
-<a id="entity-projectaccountingcubeprojectplancostsview" class="xliff"></a>
+### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Enhet: ProjectAccountingCube_ProjectPlanCostsView
 **Datakilde:** Prosjekt
 
 | Aggregerte nøkkelmålinger | Felt                    | beskrivelse | 
 |---------------------------|--------------------------|-------------|
 | Planlagt kostnad              | Sum(SumOfTotalCostPrice) | Total kostpris i estimater for alle prosjekttransaksjonstypene med planlagte oppgaver |
 
-### Enhet: ProjectAccountingCube_Projects
-<a id="entity-projectaccountingcubeprojects" class="xliff"></a>
+### <a name="entity-projectaccountingcubeprojects"></a>Enhet: ProjectAccountingCube_Projects
 **Datakilde:** Prosjekt
 
 | Aggregerte nøkkelmålinger    | Felt | beskrivelse | 
@@ -131,8 +119,7 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Forholdet mellom faktiske fakturerbare timer   | ProjectAccountingCube_Projects [totale faktiske fakturerbare brukte prosjekttimer] / (ProjectAccountingCube_Projects [totale faktiske fakturerbare brukte prosjekttimer] + ProjectAccountingCube_Projects [totale faktiske fakturerbare belastningstimer for prosjekt]) | Totalt antall faktiske fakturerbare timer basert på brukte timer og belastningstimer |
 | Opptjent verdi                 | ProjectAccountingCube_Projects[totale planlagte kostnader for prosjektet] * ProjectAccountingCube_Projects[Prosent av arbeid fullført ] | Totale planlagte kostnader multiplisert med prosent av arbeid fullført |
 
-### Enhet: ProjectAccountingCube_TotalEstimatedCosts
-<a id="entity-projectaccountingcubetotalestimatedcosts" class="xliff"></a> 
+### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube_TotalEstimatedCosts 
 **Datakilde:** ProjTable
 
 | Aggregerte nøkkelmålinger       | Felt               | beskrivelse | 

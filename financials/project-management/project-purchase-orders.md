@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 83972
 ms.assetid: 247e4d72-610b-4fa5-9873-601ed0f4b2d6
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 9715d33598c0749ff1ad2523f2fa8834987998ed
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Bestillinger for et prosjekt
-<a id="purchase-orders-for-a-project" class="xliff"></a>
+# <a name="purchase-orders-for-a-project"></a>Bestillinger for et prosjekt
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Denne artikkelen beskriver flere metoder du kan bruke til å opprette bestilling
 
 Du kan bruke flere metoder til å opprette bestillinger for et prosjekt i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Hvilken metode du bruker, er avhengig av formålet med bestillingen, når de innkjøpte varene forbrukes, og når de innkjøpte varene skal belastes et prosjekt.
 
-### Metoder for å opprette en bestilling
-<a id="methods-for-creating-a-purchase-order" class="xliff"></a>
+### <a name="methods-for-creating-a-purchase-order"></a>Metoder for å opprette en bestilling
 
 Du kan bruke én av følgende metoder til å opprette en bestilling i prosjektstyring og regnskap. Formålet med bestillingen fastsetter når bestillingen skal forbrukes, og derfor når varene skal belastes et prosjekt.
 

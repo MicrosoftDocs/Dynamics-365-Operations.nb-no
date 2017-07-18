@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurere en manuell beslutning i en arbeidsflyt
-<a id="configure-a-manual-decision-in-a-workflow" class="xliff"></a>
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuell beslutning i en arbeidsflyt
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ Dette emnet forklarer hvordan du konfigurerer egenskapene i en manuell beslutnin
 
 Når du skal konfigurere en manuell beslutning i redigeringsprogrammet for arbeidsflyt, høyreklikker du den manuelle beslutningen og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den manuelle beslutningen.
 
-## Navn på beslutningen
-<a id="name-the-decision" class="xliff"></a>
+## <a name="name-the-decision"></a>Navn på beslutningen
 Følg denne fremgangsmåten for å sette et navn på den manuelle beslutningen.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på den manuelle beslutningen.
 
-## Legg inn en emnelinje og instruksjoner
-<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
+## <a name="enter-a-subject-line-and-instructions"></a>Legg inn en emnelinje og instruksjoner
 Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til den manuelle beslutningen. Hvis du for eksempel konfigurerer en beslutning for innkjøpsrekvisisjoner, ser brukeren som er tilordnet til beslutningen, emnelinjen og instruksjonene på **Innkjøpsrekvisisjoner**-siden. Emnelinjen vises i en meldingslinje øverst på siden. Brukeren kan deretter klikke ikonet i meldingslinjen for å vise instruksjonene. Følg trinnene nedenfor for å legge inn en emnelinje og instruksjoner.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -77,8 +74,7 @@ Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til 
     5.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 6.
     6.  Klikk **Lukk**.
 
-## Angi de mulige resultatene av en beslutning
-<a id="specify-the-possible-outcomes-of-a-decision" class="xliff"></a>
+## <a name="specify-the-possible-outcomes-of-a-decision"></a>Angi de mulige resultatene av en beslutning
 Vanligvis når et dokument tilordnes til en beslutningstaker, får beslutningstakeren et spørsmål. Svaret på dette spørsmålet er vanligvis **Ja** eller **Nei** eller **Sann** eller **Usann**. Følg denne fremgangsmåten for å angi de mulige resultatene av den manuelle beslutningen.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -98,8 +94,7 @@ Vanligvis når et dokument tilordnes til en beslutningstaker, får beslutningsta
     4.  I **Oversatt tekst**-feltet legger du inn teksten.
     5.  Klikk **Lukk**.
 
-## Angi når varslinger skal sendes
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 Du kan sende varslinger til personer når en beslutning er tatt, delegert eller videresendt. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 
 1.  I den venstre ruten klikker du **Varslinger**.
@@ -168,8 +163,7 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
 
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
 
-## Tilordne en beslutning
-<a id="assign-a-decision" class="xliff"></a>
+## <a name="assign-a-decision"></a>Tilordne en beslutning
 Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordnes til.
 
 1.  I den venstre ruten klikker du **Tilordning**.
@@ -255,8 +249,7 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
 
     Hvis brukeren ikke tar beslutningen innen fristen, er beslutningen forfalt. Et beslutning som er forfalt, videresendes, basert på alternativene du velger i **Eskalering**-området på siden.
 
-## Angi hva som skal skje når en beslutning er forfalt
-<a id="specify-what-happens-when-a-decision-is-overdue" class="xliff"></a>
+## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Angi hva som skal skje når en beslutning er forfalt
 Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En beslutning som er forfalt, kan videresendes eller tilordnes automatisk til en annen bruker. Følg denne fremgangsmåten for å videresende beslutningen hvis den er forfalt.
 
 1.  I den venstre ruten klikker du **Eskalering**.
@@ -327,8 +320,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
 5.  Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
 6.  Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i kategorien **Avslutt handling**.
 
-## Angi en tidsfrist
-<a id="set-a-time-limit" class="xliff"></a>
+## <a name="set-a-time-limit"></a>Angi en tidsfrist
 Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.

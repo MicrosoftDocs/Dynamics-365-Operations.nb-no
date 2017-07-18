@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilt arbeidsområde for fakturagodkjenning
-<a id="invoice-approvals-mobile-workspace" class="xliff"></a>
+# <a name="invoice-approvals-mobile-workspace"></a>Mobilt arbeidsområde for fakturagodkjenning
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,13 +31,11 @@ Dette emnet gir informasjon om det mobile arbeidsområdet **Fakturagodkjenning**
 
 Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 Med det mobilie arbeidsområdet **Fakturagodkjenninger**  kan regnskapsassistenter og -sjefer vise fakturaene som er tilordnet til dem, som en del av arbeidsflytprosessen leverandørfakturahode. Du kan vise fakturainformasjon, og til og med linje- og distribusjonsdetaljer, som hjelper deg å ta informerte beslutninger om godkjenning. Fra arbeidsområdet kan du utføre handlinger for å flytte fakturaen gjennom arbeidsflytprosessen. 
 
-## Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Forutsetninger
 
 Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende forutsetninger.
 
@@ -64,16 +62,14 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 </tbody>
 </table>
 
-## Laste ned og installere mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
 Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logge på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 
 1.  Start appen på mobilenheten.
 2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
@@ -82,8 +78,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
     [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Godkjenne fakturaer ved hjelp av det mobile arbeidsrområdet Fakturagodkjenning
-<a id="approve-invoices-by-using-the-invoice-approvals-mobile-workspace" class="xliff"></a>
+## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Godkjenne fakturaer ved hjelp av det mobile arbeidsrområdet Fakturagodkjenning
 1.  Velg **Fakturagodkjenning**-arbeidsområdet på mobilenheten.
 2.  Velg fakturaen som er tilordnet til deg av arbeidsflytprosessen leverandørfakturahode.
 3.  På siden **Fakturaopplysninger** kan du se gjennom fakturahodeinformasjonen, for eksempel leverandør- og datoinformasjon.

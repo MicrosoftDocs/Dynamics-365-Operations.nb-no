@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurere egenskapene for en arbeidsflyt
-<a id="configure-the-properties-of-a-workflow" class="xliff"></a>
+# <a name="configure-the-properties-of-a-workflow"></a>Konfigurere egenskapene for en arbeidsflyt
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,29 +34,25 @@ Dette emnet forklarer hvordan du konfigurerer de ulike egenskapene i en arbeidsf
 
 Hvis du vil konfigurere egenskapene for en arbeidsflyt, kan du åpne arbeidsflyten i redigeringsprogrammet for arbeidsflyt. Klikk lerretet i redigeringsprogrammet for arbeidsflyt, og klikk deretter **Egenskaper** for å åpne **Egenskaper**-siden. Du kan deretter bruke fremgangsmåten nedenfor for å konfigurere de ulike egenskapene for arbeidsflyten.
 
-## Sette navn på arbeidsflyten
-<a id="name-the-workflow" class="xliff"></a>
+## <a name="name-the-workflow"></a>Sette navn på arbeidsflyten
 Følg denne fremgangsmåten for å sette et navn på arbeidsflyten.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I **Navn**-feltet angir du et unikt navn på arbeidsflyten. Hvis du for eksempel oppretter en arbeidsflyt for innkjøpsrekvisisjon for hvert land eller område du opererer i, kan du kalle arbeidsflyten **Innkjøpsrekvisisjoner Danmark** eller **Innkjøpsrekvisisjoner Spania**.
 
-## Angi arbeidsflyteieren
-<a id="specify-the-workflow-owner" class="xliff"></a>
+## <a name="specify-the-workflow-owner"></a>Angi arbeidsflyteieren
 Arbeidsflyteieren er personen som administrerer og vedlikeholder arbeidsflyten. Følg fremgangsmåten nedenfor for å angi arbeidsflyteieren.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I **Eier**-listen velger du navnet på personen som skal administrere arbeidsflyten.
 
-## Velg en e-postmal
-<a id="select-an-email-template" class="xliff"></a>
+## <a name="select-an-email-template"></a>Velg en e-postmal
 Følg denne fremgangsmåten for å velge e-postmalen som brukes til å generere meldinger om arbeidsflyten.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I listen **E-postmal for arbeidsflytvarsler** velger du malen.
 
-## Skrive inn instruksjoner til brukerne
-<a id="enter-instructions-for-users" class="xliff"></a>
+## <a name="enter-instructions-for-users"></a>Skrive inn instruksjoner til brukerne
 Du kan gi instruksjoner til brukere som sender dokumenter til behandling og godkjenning. Disse brukerne omtales også som *avsendere*. Du oppretter for eksempel en arbeidsflyt for innkjøpsrekvisisjon og du angir instruksjoner. Disse instruksjonene kan deretter vises av brukere som registrerer innkjøpsrekvisisjoner på **Innkjøpsrekvisisjoner**-siden. Klikk ikonet på meldingslinjen for arbeidsflyt for å vise instruksjoner. Følg fremgangsmåten nedenfor for å skrive inn instruksjoner for brukere.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
@@ -76,8 +71,7 @@ Du kan gi instruksjoner til brukere som sender dokumenter til behandling og godk
     5.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere. Hvis du vil ha instruksjoner om hvordan du skriver inn en plassholder, kan du se trinn 3.
     6.  Klikk **Lukk**.
 
-## Angi når denne arbeidsflyten skal brukes
-<a id="specify-when-this-workflow-is-used" class="xliff"></a>
+## <a name="specify-when-this-workflow-is-used"></a>Angi når denne arbeidsflyten skal brukes
 Du kan opprette flere arbeidsflyter som er basert på den samme typen. Du kan for eksempel opprette en arbeidsflyt for innkjøpsrekvisisjon for hvert land eller område du opererer i, for eksempel Innkjøpsrekvisisjoner Danmark og Innkjøpsrekvisisjoner Spania. Når du har flere arbeidsflyter som er basert på den samme typen, må du angi når hver arbeidsflyt skal brukes. For det forrige eksemplet kan du angi følgende betingelser:
 
 -   Innkjøpsrekvisisjoner Danmark brukes når land/område = DK
@@ -96,8 +90,7 @@ Følg fremgangsmåten nedenfor for å angi at arbeidsflyten du konfigurerer, ska
     3.  Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du angav. Hvis du for eksempel oppretter en arbeidsflyt for innkjøpsrekvisisjon for Spania, viser **Valider betingelse**-området en liste over innkjøpsrekvisisjoner. Når du klikker **Test**, evaluerer systemet den valgte innkjøpsrekvisisjonen for å finne ut om landet/området er ES.
     4.  Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
 
-## Angi når varslinger skal sendes
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 Når et dokument sendes til behandling, opprettes det en arbeidsflytforekomst. Du kan sende meldinger til brukere når arbeidsflytforekomster som er basert på arbeidsflyten, startes, fullføres, avbrytes eller stoppes på grunn av en feil. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes.
 
 1.  I den venstre ruten klikker du **Varslinger**.
@@ -169,8 +162,7 @@ Når et dokument sendes til behandling, opprettes det en arbeidsflytforekomst. D
 
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
 
-## Angi kommentarer om endringene du gjorde i arbeidsflyten.
-<a id="enter-comments-about-the-changes-that-you-made-to-the-workflow" class="xliff"></a>
+## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a>Angi kommentarer om endringene du gjorde i arbeidsflyten.
 Hvis du vil angi kommentarer om endringene du gjorde i arbeidsflyten, følger du fremgangsmåten nedenfor.
 
 1.  I den venstre ruten klikker du **Notater**.

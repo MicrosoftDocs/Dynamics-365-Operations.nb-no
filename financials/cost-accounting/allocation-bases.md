@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionMember
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Tildelingsgrunnlag
-<a id="allocation-bases" class="xliff"></a> 
+# <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Det er tre typer tildelingsgrunnlag i kostnadsregnskap:
 - Hierarkitildelingsgrunnlag
 - Formeltildelingsgrunnlag
 
-## Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem
-<a id="predefined-dimension-member-allocation-bases" class="xliff"></a>
+## <a name="predefined-dimension-member-allocation-bases"></a>Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem
 
 De forhåndsdefinerte tildelingsgrunnlagene for dimensjonsmedlem opprettes automatisk når et dimensjonsmedlem av en av følgende typer opprettes:
 
@@ -51,8 +49,7 @@ De forhåndsdefinerte tildelingsgrunnlagene for dimensjonsmedlem opprettes autom
 > [!NOTE]
 > De forhåndsdefinerte tildelingsgrunnlagene for dimensjonsmedlem som er basert på et dimensjonsmedlem for kostnadselement, vurderer bare verdiene fra datakildeleverandøren, for eksempel økonomimodulen eller budsjettet.
 
-### Eksempel 1: Bruke et dimensjonsmedlem for kostnadselement som tildelingsgrunnlag
-<a id="example-1-use-a-cost-element-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a>Eksempel 1: Bruke et dimensjonsmedlem for kostnadselement som tildelingsgrunnlag
 Dette eksemplet viser hvordan du oppretter en kostnadsfordelingsregel for å tildele kostnadselement 10002 (Personalforsikring) til saldoen som er registrert for kostnadselement 10001 (Lønn). Fordelingsregelen defineres basert på forholdet mellom lønn for hver avdeling og samlet lønn. (Må gjennomgås!)
 
 I økonomimodulen er kontoplanen definert som følger.
@@ -140,8 +137,7 @@ Etter at kostnadselement 10001 (Lønn) er brukt som tildelingsgrunnlaget, er res
 | CC002       | FI                  | 10002        | Personalforsikring | Uklassifisert  | 500,00    | 31.01.2017      |
 | CC099       | LO                  | 10002        | Personalforsikring | Uklassifisert  | 300,00    | 31.01.2017      |
 
-### Eksempel 2: Bruke et medlem av statistisk dimensjon som tildelingsgrunnlag
-<a id="example-2-use-a-statistical-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a>Eksempel 2: Bruke et medlem av statistisk dimensjon som tildelingsgrunnlag
 
 Medlemmer av statistisk dimensjon kan brukes som tildelingsgrunnlag for å definere policyer eller rapportere ikke-monetært forbruk etter kostnadsobjekter. Du kan opprette medlemmer av statistisk dimensjon manuelt eller importere dem fra en fil ved hjelp av databehandlingsverktøyet for import/eksport.
 
@@ -234,13 +230,11 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis det forhåndsdefinerte
 | CC002       | FI   | 4 100,00  | (4 100 ÷ 21 550) × beløp  |
 | CC003       | LO   | 15 000,00 | (15 000 ÷ 21 550) × beløp |
 
-## Hierarkitildelingsgrunnlag
-<a id="hierarchy-allocation-bases" class="xliff"></a>
+## <a name="hierarchy-allocation-bases"></a>Hierarkitildelingsgrunnlag
 
 Regnskapsførere kan opprette hierarkitildelingsgrunnlagene manuelt ved å bruke en dimensjonshierarkinode for kostnadsobjekt på et eksisterende tildelingsgrunnlag. På denne måten kan du begrense området til det opprinnelige forhåndsdefinerte tildelingsgrunnlaget for dimensjonsmedlem. Ett forhåndsdefinert tildelingsgrunnlag for dimensjonsmedlem kan brukes til å opprette flere hierarkitildelingsgrunnlag. Områder kan vedlikeholdes i dimensjonshierarkiet for kostnadsobjekt som er knyttet til hierarkitildelingsgrunnlagene.
 
-### Eksempel: Hierarkitildelingsgrunnlag som er basert på heltidsansatte i organisasjonen
-<a id="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization" class="xliff"></a>
+### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a>Eksempel: Hierarkitildelingsgrunnlag som er basert på heltidsansatte i organisasjonen
 Her er et eksempel på et dimensjonshierarki for kostnadsobjekt som kan opprettes for å beskrive en forenklet organisasjon.
 
 | Navn på hierarki | Nodenivå 0 | Nodenivå 1 | Nodenivå 2 | Dimensjonsmedlemmer |
@@ -283,8 +277,7 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis antall heltidsansatte 
 | CC001       | Personale   | 1,00      | (1/3) × beløp    |
 | CC002       | FI   | 2,00      | (2/3) × beløp    |
 
-## Formeltildelingsgrunnlag
-<a id="formula-allocation-bases" class="xliff"></a>
+## <a name="formula-allocation-bases"></a>Formeltildelingsgrunnlag
 
 Formeltildelingsgrunnlag lar deg definere avanserte formler for å oppnå det riktige tildelingsgrunnlaget. Du kan opprette formeltildelingsgrunnlag manuelt.
 
@@ -313,8 +306,7 @@ Tradisjonelle **IF**-setninger støttes ikke. Du kan imidlertid lage setninger o
 | a \> b    | Sann       | 1      |
 | a \> b    | Usann      | 0      |
 
-### Eksempel 1: En enkel formel
-<a id="example-1-a-simple-formula" class="xliff"></a>
+### <a name="example-1-a-simple-formula"></a>Eksempel 1: En enkel formel
 
 Strømregninger består ofte av to deler:
 
@@ -379,8 +371,7 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnl
 | CC002       | FI   | 1,00      | (1/3) × beløp     |
 | CC003       | LO   | 1,00      | (1/3) × beløp     |
 
-### Eksempel 2: En avansert formel
-<a id="example-2-an-advanced-formula" class="xliff"></a>
+### <a name="example-2-an-advanced-formula"></a>Eksempel 2: En avansert formel
 I dette eksemplet skal ikke strømkostnaden følge det faktiske strømforbruket i kWh. Ledelsen ønsker å innføre insentiv for å redusere strømforbruket. 
 
 | Regel              | Sats | 

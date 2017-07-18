@@ -10,13 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
@@ -24,32 +24,27 @@ ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Raddefinisjoner i Utforming av finansrapport
-<a id="row-definitions-in-financial-report-designer" class="xliff"></a>
+# <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
 
 [!include[banner](../includes/banner.md)]
 
 
 En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.
 
-Opprett en raddefinisjon
-<a id="create-a-row-definition" class="xliff"></a>
+<a name="create-a-row-definition"></a>Opprett en raddefinisjon
 -----------------------
 
 1.  I navigasjonsruten i Rapportutforming klikker du **Raddefinisjoner**.
 2.  Klikk **Ny** på **Fil**-menyen, og klikk deretter **Raddefinisjon**. Hvis du vil ha mer informasjon om innholdet i hver celle, kan du se [Endre celler for raddefinisjon](modify-row-definition-cells-financial-reporting.md).
 
-## Åpne en raddefinisjon
-<a id="open-a-row-definition" class="xliff"></a>
+## <a name="open-a-row-definition"></a>Åpne en raddefinisjon
 1.  I navigasjonsruten i Rapportutforming klikker du **Raddefinisjoner**.
 2.  Dobbeltklikk navnet på raddefinisjonen du vil åpne.
 3.  Hvis du vil vise alle byggeblokker som er knyttet til raddefinisjonen, høyreklikker du raddefinisjonen og velger deretter **Tilknytninger**.
 
-##  Innholdet i en raddefinisjon
-<a id="contents-of-a-row-definition" class="xliff"></a>
+## <a name="contents-of-a-row-definition"></a> Innholdet i en raddefinisjon
 En raddefinisjon kan inneholde opptil 20 000 finansdimensjonsrader og kan inneholder følgende informasjon:
 
 -   Beskrivende tekst som gir mening i rapporten ved å opprette inndelingsoverskrifter, linjer og mellomrom, for eksempel **Kontanter** eller **Totalomsetning**
@@ -67,8 +62,7 @@ Det finnes to metoder for å skrive inn informasjon i en raddefinisjon:
 -   Angi radinformasjon manuelt i en ny raddefinisjon. Hvis du vil ha mer informasjon, kan du se [Endre celler for raddefinisjon](modify-row-definition-cells-financial-reporting.md).
 -   Bruk rapportutforming til å hente radinformasjon direkte fra finansdimensjonene. Hvis du vil ha mer informasjon, kan du se delen Relaterte formler/rader/enheter i [Endre celler for raddefinisjon](modify-row-definition-cells-financial-reporting.md).
 
-##  Legge til dimensjoner i en raddefinisjon
-<a id="add-dimensions-in-a-row-definition" class="xliff"></a>
+## <a name="add-dimensions-in-a-row-definition"></a> Legge til dimensjoner i en raddefinisjon
 En dimensjon er en overlapping av data og verdier. Du kan gruppere data og verdier i rapportutforming. Du kan deretter klassifisere og analysere transaksjoner mer detaljert. Du kan bruke dialogboksen **Sett inn rader fra dimensjoner** for å legge til flere rader i en raddefinisjon samtidig. Dialogboksen viser én kolonne for hver dimensjon. Tabellen nedenfor beskriver informasjonen du kan angi i hver dimensjon.
 
 | Alternativ                | Beskrivelse                                                                                                                                                                                                                                                                      |
@@ -87,8 +81,7 @@ Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 6.  I feltet **Øk hver rad med** angir du avstanden mellom etterfølgende radkoder. Hvis den første radkoden for eksempel er 100 og økningsverdien er 30, har de første nye radene kodene 100, 130, 160, 190 og 220. Bruk en inkrementell verdi som gir nok plass til å sette inn nye format- og formelrader.
 7.  Klikk **OK**. Én linje for hver valgte dimensjonsverdi legges til raddefinisjonen.
 
-##  Justere avrunding i en raddefinisjon
-<a id="adjust-rounding-in-a-row-definition" class="xliff"></a>
+## <a name="adjust-rounding-in-a-row-definition"></a> Justere avrunding i en raddefinisjon
 Hvis du har en balanse der beløpene er avrundet, kan det hende totalene ikke er i balanse. Dette problemet kan oppstå hvis du for eksempel bruker alternativet for avrunding på en balanserapport og rapportdefinisjonen også angir avrunding. Du kan bruke alternativet **Avrundingsjustering** i raddefinisjonen for å balansere beløpene i balansen. Du kan deaktivere eller endre avrunding i kategorien **Innstillinger** i rapportdefinisjonen. Tabellen nedenfor viser hvordan beløp avrundes. I denne tabellen er totalene forskjellige for rad 100 og 200 når avrunding er aktivert.
 
 | Radkode | Beløp uten avrunding | Beløp med avrunde til hele tusener |
@@ -111,12 +104,10 @@ Følg fremgangsmåten nedenfor hvis du vil justere avrunding i en balanse.
 
 Beløpene i balansen vil nå være i balanse når avrunding er aktivert. **Obs!** Grensen for justering brukes basert på alternativet **Avrundingspresisjon**, som er angitt for rapportdefinisjonen. Hvis du for eksempel velger å runde av rapporten til tusener og angi **2** i feltet **Grense for justeringsbeløp**, vises en advarsel når verdien som identifiseres i feltet **Raden Avrundingsjustering**, økes eller reduseres med mer enn 2 000.
 
-## Formatere rad- og kolonnetekst
-<a id="format-row-and-column-text" class="xliff"></a>
+## <a name="format-row-and-column-text"></a>Formatere rad- og kolonnetekst
 Du kan tilpasse utseendet på rapportene ved å endre skrifter og formatere tekst. Avsnittene nedenfor beskriver hvordan du kan formatere utseendet på rader og kolonner i rapporter.
 
-### Behandle skriftstiler
-<a id="manage-font-styles" class="xliff"></a>
+### <a name="manage-font-styles"></a>Behandle skriftstiler
 
 Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse stilene i dokumentet, eller på en bestemt rad eller kolonne i en rapport.
 
@@ -152,8 +143,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 </tbody>
 </table>
 
-### Formatere radtekst
-<a id="format-row-text" class="xliff"></a>
+### <a name="format-row-text"></a>Formatere radtekst
 
 Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Du kan endre tekstformatet ved hjelp av kontrollene på formateringsverktøylinjen. Disse kontrollene er standardkontroller for Microsoft Windows.
 
@@ -161,34 +151,29 @@ Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er
 2.  Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
 3.  Klikk verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter på **Øk innrykk** ![Øk innrykk](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Øk innrykk") på verktøylinjen.
 
-### Justere kolonner mens du utformer rapporter
-<a id="adjust-columns-while-you-design-reports" class="xliff"></a>
+### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner mens du utformer rapporter
 
 Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefinisjonen, kan du justere bredden på en kolonne og skjul (minimere) eller vise kolonner i visningsruten. Endringene du gjør, påvirker bare utseendet til kolonnene på skjermen. De påvirker ikke kolonneformatering i rapporter.
 
-### Endre bredden på en kolonne i visningruten
-<a id="change-the-width-of-a-column-in-the-view-pane" class="xliff"></a>
+### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Endre bredden på en kolonne i visningruten
 
 1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
 2.  Velg **Kolonnebredde** på **Format**-menyen.
 3.  Angi en verdi, og klikk deretter **OK** i dialogboksen **Kolonnebredde**. Du kan også dra den høyre kanten av en kolonneoverskriftscelle for å endre bredden på kolonnen.
 
-### Skjule kolonner i visningsruten
-<a id="hide-columns-in-the-view-pane" class="xliff"></a>
+### <a name="hide-columns-in-the-view-pane"></a>Skjule kolonner i visningsruten
 
 1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
 2.  Velg kolonnen eller kolonnene du vil minimere.
 3.  Høyreklikk og klikk deretter **Skjul**.
 
-### Vise alle skjulte kolonner i visningsruten
-<a id="show-all-hidden-columns-in-the-view-pane" class="xliff"></a>
+### <a name="show-all-hidden-columns-in-the-view-pane"></a>Vise alle skjulte kolonner i visningsruten
 
 1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
 2.  Høyreklikk den minimerte kolonnen som skal vises, og klikk deretter **Vis**.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Finansrapportering](financial-reporting-intro.md)

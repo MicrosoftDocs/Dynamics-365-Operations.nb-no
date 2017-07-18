@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 0b3b56aa838888461a6d27c6612e405a3cf59414
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Foreta manuelle justeringer i basislinjeprognosen
-<a id="make-manual-adjustments-to-the-baseline-forecast" class="xliff"></a>
+# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,16 +36,14 @@ Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinje
 
 Før du gjør manuelle justeringer, er det viktig at du forstår noen nøkkelbegreper om forskjellige sider.
 
-## Rutenett på siden Justert behovsprognose
-<a id="grid-on-the-adjusted-demand-forecast-page" class="xliff"></a>
+## <a name="grid-on-the-adjusted-demand-forecast-page"></a>Rutenett på siden Justert behovsprognose
 Siden **Justert behovsprognose** inneholder et rutenett med følgende struktur:
 
 -   Den første kolonnen viser varene, varefordelingsnøkler, firmaer, og så videre som prognosen er generert for. Undertittelen på siden gir en beskrivelse av gjeldende prognosedimensjoner som vises i rutenettet. Hvis undertittelen på siden for eksempel er **firma / område / varefordelingsnøkkel**, og en av radoverskriftene i rutenettet er **USMF / 1 / D\_Alloc**, viser denne raden prognosen for firmaet USMF, område 1, og varefordelingsnøkkel **D\_Alloc**.
 -   Etterfølgende kolonner representerer prognoseperioder som prognosen er generert for. Hver kolonneoverskrift er den første datoen i prognoseperioden som kolonnen viser.
 -   Verdiene i cellene representerer prognosen for én vare, varefordelingsnøkkel og så videre, for den bestemte prognoseperioden.
 
-## Prognoseaggregering og -deaggregering
-<a id="forecast-aggregation-and-deaggregation" class="xliff"></a>
+## <a name="forecast-aggregation-and-deaggregation"></a>Prognoseaggregering og -deaggregering
 Undertittelen på siden viser nivået på prognoseaggregering. 
 
 Hvis undertittelen på siden for eksempel er **firma / område / tilordningsnøkkel / varenummer / farge / størrelse / konfigurasjon / stil**, er det ingen prognoseaggregering, og prognosen vises på nivået for varen og dens dimensjoner. For å endre aggregering bruk siden **Endre prognosedimensjoner** som du kan åpne fra programmenyen. 
@@ -61,8 +58,7 @@ Når justeringen av det prognoseberegnede antall er utført på et aggregert niv
 
 Du kan også gjøre manuelle justeringer på siden **Behovsprognoselinjer** ved å endre enten **Totalt antall**-verdien eller **Antall**-cellene i deaggregeringsrutenettet.
 
-## Vise detaljer for prognosen
-<a id="viewing-details-of-the-forecast" class="xliff"></a>
+## <a name="viewing-details-of-the-forecast"></a>Vise detaljer for prognosen
 Du kan åpne siden **Detaljer om behovsprognose** for å vise mer informasjon om prognosen. 
 
 Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk format og tabellformat:
@@ -81,8 +77,7 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)

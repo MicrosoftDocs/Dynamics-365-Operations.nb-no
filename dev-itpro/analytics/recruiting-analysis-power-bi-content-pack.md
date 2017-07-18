@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,18 @@ ms.openlocfilehash: 49cfd0f1ed645f1980b21b6d4f453cb7a8957a1a
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Recruiting-innhold for Power BI
-<a id="recruiting-power-bi-content" class="xliff"></a>
+# <a name="recruiting-power-bi-content"></a>Recruiting-innhold for Power BI
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver **Recruiting**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises **Recruiting**-innholdet for Power BI i arbeidsområdet **Rekrutteringsstyring**. 
 
-## Rapporter og visuelle effekter i arbeidsområdet Rekrutteringsstyring
-<a id="reports-and-visuals-in-the-recruitment-management-workspace" class="xliff"></a>
+## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter og visuelle effekter i arbeidsområdet Rekrutteringsstyring
 Arbeidsområdet **Rekrutteringsstyring** inneholder en **Analyse**-kategori. Denne kategorien inneholder det innebygde Power BI-innholdet for rekruttering. Innholdet består av en oversiktskategori og flere kategorier som inneholder detaljer. Tabellen nedenfor beskriver rapportene i hver kategori.
 
 | Rapporter               | Innhold |
@@ -47,8 +44,7 @@ Arbeidsområdet **Rekrutteringsstyring** inneholder en **Analyse**-kategori. Den
 | Søkerstatus     | Søkere etter type, status og søkerstatus |
 | Rekrutteringsanalyse  | Netto ansettelsesforhold, gjennomsnittlig antall dager for å ansette, prosent av dårlige ansettelser, rekrutteringskostnader, antall rekrutteringsprosjekter, ansettelse til brukt og søkere vs. ledige stillinger etter rekrutteringsprosjekt |
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Tabellen nedenfor viser enhetene som **Recruiting**-innholdet for Power BI er basert på.

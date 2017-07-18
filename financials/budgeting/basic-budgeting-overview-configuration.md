@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Oversikt over budsjettering 
-<a id="budgeting-overview" class="xliff"></a>
+# <a name="budgeting-overview"></a>Oversikt over budsjettering 
 
 [!include[banner](../includes/banner.md)]
 
 
 Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
 
-Oversikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Oversikt
 --------
 
 Det godkjente budsjettet for en juridisk enhet vedlikeholdes i et dokument som kalles en *budsjettregisteroppføring*. Linjene i et dokument for budsjettregisteroppføring er kjent som *budsjettkonto*-oppføringer, og inneholder informasjon om finansdimensjoner, datoer og beløpene for det godkjente budsjettet. Budsjettregisteroppføringsdokumentet er integrert med grunnleggende finansrapporter og forespørselssider der faktiske finansbeløp sammenlignes med budsjetterte beløp. 
@@ -48,8 +46,7 @@ Det finnes flere metoder for å opprette budsjettregisteroppføringer i Finance 
 
 Budsjettregisteroppføringen anses som fullført når budsjettsaldoene har blitt oppdatert. På siden **Budsjettregisteroppføringer** klikker du **Oppdater budsjettsaldoer** for den valgte budsjettregisteroppføringer eller flere oppføringer. Når du har oppdatert budsjettsaldoene, endres statusen for budsjettregisteroppføringen til **Fullført**. Fullført budsjettregisteroppføring kan ikke åpnes for redigering igjen. Hvis budsjettdataene må justeres, må du derfor opprette en ny budsjettregisteroppføring i stedet for å rette data i en fullført budsjettregisteroppføring.
 
-## Konfigurasjon
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Konfigurasjon
 Når du konfigurerer budsjettering, starter du på siden **Budsjetteringsparametere**. Du må definere budsjettjournalen, nummerserien for budsjettregisteroppføringer og standard virkemåte i arbeidsområdene på denne siden.
 
 Hvis det finnes policyer som styrer godkjenningen av budsjettregistreringsoppføringer, basert på budsjettype (for eksempel overføringer eller endringer), må du deretter opprette arbeidsflyter for budsjettregisteroppføringer på siden **Budsjetteringsarbeidsflyter**. Hvis det finnes situasjoner der overføringer kan være tillatt uten godkjenning av arbeidsflyt, kan du definere regler for budsjettoverføring for å støtte disse scenariene. 
@@ -74,8 +71,7 @@ Med budsjettkoder kan du ha et revisjonsspor for godkjente budsjettendringer gje
 
 Du kan også sette opp *regler for budsjettoverføring*. Hvis du vil bruke regler for budsjettoverføring, velger du **Bruk regler for budsjettoverføringer** på **Budsjettparametere**-siden. Når regler for budsjettoverføring brukes, hvis en bruker oppretter et dokument ved hjelp av en budsjettkode av typen **overføring**, vil ikke budsjettsaldoer bli oppdatert hvis reglene for budsjettoverføring er brutt. Du kan for eksempel tillate budsjettoverføringsdokumenter der utgiftsbudsjettet overføres mellom hovedkontoene for avdelingen for salg og markedsføring, men du kan hindre at budsjettet blir overført fra eller til denne avdelingen med mindre arbeidsflytgodkjenning er gitt for denne typen budsjettkontooppføring.
 
-## Bruke arbeidsområder og forespørselssider til å spore budsjett i forhold til faktisk
-<a id="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals" class="xliff"></a>
+## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruke arbeidsområder og forespørselssider til å spore budsjett i forhold til faktisk
 Budsjettlederen kan gå gjennom gjeldende tilstand for et budsjett i arbeidsområdet **Finansbudsjetter og prognoser**. Kategoriene for **utgifter over budsjett** og **omsetning under budsjett** gir en rask oversikt over kombinasjonene av finansdimensjoner der budsjettmål ikke oppfylles, eller er nærmer seg terskelen. Du kan tilpasse budsjetterskelprosenten og finansdimensjonssettene som brukes i disse kategoriene ved å klikke **Konfigurer mitt arbeidsområde**. Kan du klikke **Enhetsledere** for å se arbeidere som er ansvarlige for bestemte finansdimensjonskombinasjoner som er valgt i disse kategoriene. Hvis du for eksempel ser at Utgiftsbudsjett for driftsavdelingen overskrider budsjetterskelen, kan du enkelt finne og kontakte lederen for driftsavdelingen for å diskutere saken. 
 
 > [!NOTE] 

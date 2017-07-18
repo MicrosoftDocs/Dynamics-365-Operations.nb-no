@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurere en godkjenningsprosess i en arbeidsflyt
-<a id="configure-an-approval-process-in-a-workflow" class="xliff"></a>
+# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkjenningsprosess i en arbeidsflyt
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Bruk fremgangsmåten nedenfor for å sette et navn på godkjenningsprosessen.
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på godkjenningsprosessen.
 
-## Angi når systemet skal utføre en handling med dokumentet automatisk
-<a id="specify-when-the-system-automatically-acts-on-the-document" class="xliff"></a>
+## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Angi når systemet skal utføre en handling med dokumentet automatisk
 Du kan konfigurere systemet slik at det automatisk utfører en handling på dokumenter som oppfyller bestemte betingelser. Systemet kan for eksempel godkjenne reiseregninger med totalsummer som er mindre enn USD 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling på dokumentet.
 1.  I den venstre ruten klikker du **Automatiske handlinger**.
 2.  Merk av for **Aktiver automatiske handlinger**.
@@ -57,8 +55,7 @@ Du kan konfigurere systemet slik at det automatisk utfører en handling på doku
 
 7.  I listen **Autofullføringshandling** velger du handlingen som systemet skal utføre på dokumentet.
 
-## Angi når varslinger skal sendes
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 Du kan sende meldinger til personer når et dokument er godkjent, avvist, delegert eller videresendt, eller når det er bedt om en endring. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 1.  I den venstre ruten klikker du **Varslinger**.
 2.  Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:
@@ -131,15 +128,13 @@ Du kan sende meldinger til personer når et dokument er godkjent, avvist, delege
 
 10. Gjenta trinn 3 til 9 for hver hendelse du valgte i trinn 2.
 
-##  Angi en endelig godkjenner
-<a id="specify-a-final-approver" class="xliff"></a>
+## <a name="specify-a-final-approver"></a> Angi en endelig godkjenner
 Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er personen som sendte dokumentet til godkjenning. Hvis du vil angi en endelig godkjenner, følger du fremgangsmåten nedenfor.
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Bruk siste godkjenner**.
 3.  Velg den brukeren som skal være den endelig godkjenneren, fra listen.
 
-## Angi en tidsfrist
-<a id="set-a-time-limit" class="xliff"></a>
+## <a name="set-a-time-limit"></a>Angi en tidsfrist
 Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.
 | **Obs!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,8 +151,7 @@ Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et b
 
 4.  Hvis tidsgrensen overskrides, vil systemet gjøre noe med dokumentet. I listen **Handling** velger du den handlingen som systemet skal utføre.
 
-## Angi hvilke handlinger som er tilgjengelige for brukeren
-<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
+## <a name="specify-which-actions-are-available-to-the-user"></a>Angi hvilke handlinger som er tilgjengelige for brukeren
 Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en handling med dokument. Følg denne fremgangsmåten for å angi hvilke handlinger brukeren kan utføre med det sendte dokumentet.
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Godkjenn** hvis brukeren kan godkjenne dokumentet.
@@ -167,8 +161,7 @@ Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en ha
 
 **Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal** er utgått.
 
-##  Konfigurere godkjenningstrinnene
-<a id="configure-the-approval-steps" class="xliff"></a>
+## <a name="configure-the-approval-steps"></a> Konfigurere godkjenningstrinnene
 En godkjenningsprosess består av godkjenningstrinn. Fullfør fremgangsmåten nedenfor for å legge til trinn i godkjenningsprosessen og konfigurere trinnene.
 1.  Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt. Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.
 2.  Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.

@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -21,28 +22,23 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 06/14/2017
 
 ---
-# Arbeidsområde for bank
-<a id="bank-management-workspace" class="xliff"></a>
+# <a name="bank-management-workspace"></a>Arbeidsområde for bank
 
 Arbeidsområdet **Bank** viser informasjon som er knyttet til firmaets bankkontoer. Arbeidsområdet inneholder en **Sammendrag**-visning og en **Analyse**-side. **Sammendrag**-visningen viser sammendragsfliser, bankkontoinformasjon, et saldodiagram og relatert informasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til bankkontosaldoer.
 
-## Sammendrag-visningen
-<a id="summary-view" class="xliff"></a>
+## <a name="summary-view"></a>Sammendrag-visningen
 
-### Sammendrag
-<a id="summary" class="xliff"></a>
+### <a name="summary"></a>Sammendrag
 
 Flisene i **Sammendrag**-delen gir en oversikt over bankkontoene og rask tilgang til sidene du oftest må bruke. Informasjon om bankavstemming gjeler spesifikt for funksjonen Avansert bankavstemming. Informasjon tas bare med for de bankkontoene som har alternativet **Avansert bankavstemming** satt til **Ja** på **Bankkonto**-siden. Fra **Sammendrag**-delen kan du importere elektroniske bankfiler for bankkontoer på tvers av alle juridiske enheter.
 
-### Bankkontoer
-<a id="bank-accounts" class="xliff"></a>
+### <a name="bank-accounts"></a>Bankkontoer
 
 Hver bankkonto i den juridiske enheten representeres av et kort i **Bankkontoer**-delen. Gjeldende saldo vises, og du kan drille ned til transaksjonene som utgjør dette sammendragssaldobeløpet. **Mellomtransaksjoner**-beløpet gjør også at du kan drille ned til transaksjonene som utgjør dette sammendragsbeløpet. Mellomtransaksjoner er alle utestående transaksjoner som er postert ved hjelp av funksjonen for mellompostering, men som ikke er fjernet ennå. **Ventende saldo**-beløpet er gjeldende saldo minus de mellomposterte, eller ventende, transaksjonene.
 
 Kortet viser også da bankkontoen sist ble avstemt. Denne informasjonen vises bare hvis Avansert bankavstemming er aktivert for bankkontoen.
 
-### Beholdning
-<a id="balance" class="xliff"></a>
+### <a name="balance"></a>Beholdning
 
 Diagrammet **Saldo** viser historisk saldoinformasjon for bankkontoen som er valgt i **Bankkontoer**-delen eller et sammendrag av historisk saldoinformasjon for alle bankkontoer i den juridiske enheten. Denne informasjonen er tilgjengelig for ulike perioder: gjeldende uke, gjeldende måned, gjeldende år, de siste fem årene og alle perioder (hele loggen for bankkontoen). 
 
@@ -50,13 +46,11 @@ Hvis du viser diagrammet **Saldo** for én bankkonto, vises de historiske saldoe
 
 Informasjon om da dataene sist ble oppdatert, vises øverst i diagrammet. Du kan oppdatere dataene du trenger.
 
-### Beslektet informasjon
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Beslektet informasjon
 
 Fra delen **Beslektet informasjon** kan du åpne **Økonomijournal**-siden for å fullføre bankoverføringer. Du kan også raskt åpne sidene **Banktransaksjoner** og **Mellomtransaksjoner**.
 
-## Analyse-visningen
-<a id="analytics-view" class="xliff"></a>
+## <a name="analytics-view"></a>Analyse-visningen
 
 **Analyse**-siden inneholder viktige mål om bankkontoene i gjeldende firma. Følgende visualiseringer er tilgjengelige på siden:
 

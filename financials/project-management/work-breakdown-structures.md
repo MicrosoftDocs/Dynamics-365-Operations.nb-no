@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -23,11 +24,9 @@ ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Arbeidsnedbrytningsstruktur
-<a id="work-breakdown-structures" class="xliff"></a>
+# <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,12 +42,10 @@ Prosjekter i bransjer som media og reklame, programvare og IT-infrastruktur er d
 
 Å utvikle en arbeidsnedbrytningsstruktur er en intensiv prosess som vanligvis gjøres over en lang periode og krever samarbeid og informasjon fra en rekke ulike personer. Dette emnet beskriver hvordan du kan bruke forbedringer av arbeidsnedbrytningsstruktur i Microsoft Dynamics 365 for Finance and Operations til å oppfylle behovene for estimater og sporing.
 
-## Forutsetninger for å opprette en arbeidsnedbrytningsstruktur
-<a id="prerequisites-for-creating-a-wbs" class="xliff"></a>
+## <a name="prerequisites-for-creating-a-wbs"></a>Forutsetninger for å opprette en arbeidsnedbrytningsstruktur
 For å kunne opprette en arbeidsnedbrytningsstruktur må du kunne lage en arbeidsplan og beregne arbeidskostnadene.
 
-### Forutsetninger for å lage en arbeidsplan
-<a id="prerequisites-for-creating-a-work-schedule" class="xliff"></a>
+### <a name="prerequisites-for-creating-a-work-schedule"></a>Forutsetninger for å lage en arbeidsplan
 
 Fullfør følgende konfigurasjon for å bruke alle planleggingsmulighetene i funksjonene for arbeidsnedbrytningsstruktur:
 
@@ -63,16 +60,14 @@ Fullfør følgende konfigurasjon for å bruke alle planleggingsmulighetene i fun
 
 Du definerer virkedagene og arbeidstimene for en kalender eller oppretter en ny kalender ved å klikke på **Organisasjonsstyring** &gt; **Felles** &gt; **Kalendere**.
 
-### Forutsetninger for beregning av arbeidskostnadene
-<a id="prerequisites-for-estimating-the-cost-of-work" class="xliff"></a>
+### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Forutsetninger for beregning av arbeidskostnadene
 
 Hvis du vil bruke hele funksjonaliteten for kostnadsberegning i arbeidsnedbrytningsstrukturen, må du definere kost- og salgsprisene for arbeidere, arbeidskategorier, utgifter og gebyrer samt varer.
 
 -   Du definerer kost- og salgsprisen for arbeid, utgiftene og gebyrkategorier ved å klikke på **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Priser**.
 -   Du definerer kost- og salgsprisen for varer ved å bruke **Forretningsavtaler**-siden for hver vare på listesiden **Frigitte produkter** i Behandling av produktinformasjon.
 
-## Opprette en arbeidsnedbrytningsstruktur
-<a id="creating-a-wbs" class="xliff"></a>
+## <a name="creating-a-wbs"></a>Opprette en arbeidsnedbrytningsstruktur
 Opprettelse av en arbeidsnedbrytningsstruktur omfatter tre aktiviteter:
 
 1.  **Arbeidsnedbryting** – Opprett en oppdeling av arbeid i håndterbare deler eller oppgaver.
@@ -81,8 +76,7 @@ Opprettelse av en arbeidsnedbrytningsstruktur omfatter tre aktiviteter:
 
 Delene nedenfor beskriver hvordan funksjonene for arbeidsnedbrytningsstruktur kan hjelpe deg med hver av disse aktivitetene.
 
-### Arbeidsnedbryting
-<a id="work-decomposition" class="xliff"></a>
+### <a name="work-decomposition"></a>Arbeidsnedbryting
 
 Å opprette en nedbryting eller oppdeling av arbeid er vanligvis det første trinnet i fremgangsmåten for å opprette en arbeidsnedbrytningsstruktur. Funksjonen for arbeidsnedbrytningsstruktur støtter følgende grunnleggende begreper for arbeidsnedbryting eller -oppdeling. 
 
@@ -107,8 +101,7 @@ Du kan foreløpig ikke tilpasse WBS-nummereringen.
 
 **Flytt opp og Flytt ned** Når du klikker **Flytt opp** og **Flytt ned**, endrer du posisjonen til en oppgave i hierarkiet til dens overordnede. Posisjonen til en oppgave påvirker ikke oppgavens innsats, kostnader, datoer eller varighet. WBS-nummeret for oppgaven beregnes imidlertid automatisk på nytt for å gjenspeile oppgavens nye posisjon.
 
-### Tidsplanestimering
-<a id="schedule-estimation" class="xliff"></a>
+### <a name="schedule-estimation"></a>Tidsplanestimering
 
 Tidsplanestimering er vanligvis det andre trinnet i opprettelsen av en arbeidsnedbrytningsstruktur. Den anbefalte fremgangsmåten er å fullføre tidsplanestimering etter at du opprettet oppgavene. Siden **Arbeidsnedbrytningsstruktur** i Finance and Operations har to deler. Den øvre ruten er ment for tidsplanestimering, og den nedre ruten inneholder fanen **Estimerte kostnader og omsetning** som du kan bruke til kostnadsestimering. 
 **Oppgaveavhengigheter** I en arbeidsnedbrytningsstruktur kan du opprette en forgjengerrelasjon mellom oppgaver. Når du tilordner forgjengeroppgaver til en oppgave, kan denne oppgaven bare starte etter at alle forgjengeroppgavene er fullført. Den planlagte startdatoen for oppgaven settes automatisk til den siste datoen for alle forgjengerne. 
@@ -148,8 +141,7 @@ I noen tilfeller kan det hende at du vil avvike fra disse reglene. Du kan deakti
 2.  Startdatoen for hver oppgave endres slik at oppgaven starter etter at alle forgjengeroppgavene er fullført.
 3.  Startdatoen for hver oppgave endres for å fjerne mellomrom i startdatoene for forgjengeroppgavene.
 
-### Kostnadsanslag
-<a id="cost-estimation" class="xliff"></a>
+### <a name="cost-estimation"></a>Kostnadsanslag
 
 Som nevnt tidligere i dette dokumentet kan du angi kostnadsestimeringen for hver bladnodeoppgave ved hjelp av den **Estimerte kostnader og omsetning** i den nedre ruten på siden **Arbeidsnedbrytningsstruktur**. 
 
@@ -172,19 +164,16 @@ Når du beregner kostnader for arbeid, materiale og utgifter for hver oppgave, m
 
 Kost- og salgsprisen for hvert arbeids- eller utgiftsestimat er basert på definisjonen som brukes for hver kategori i prissettingstabellene i **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Prissetting**. Når det gjelder varer, blir kost- og salgspris som standard lagt til fra vare- eller forretningsavtalene på listesiden **Frigitte produkter** i Behandling av produktinformasjon.
 
-## Spore fremdrift i arbeidsnedbrytningsstrukturen
-<a id="tracking-progress-on-the-wbs" class="xliff"></a>
+## <a name="tracking-progress-on-the-wbs"></a>Spore fremdrift i arbeidsnedbrytningsstrukturen
 Enkelte bransjer sporer fremdriften til et prosjekt mot en arbeidsnedbrytningsstruktur på et svært detaljert nivå, mens andre sporer fremdriften på et høyere nivå i arbeidsnedbrytningsstrukturen. Denne delen beskriver hvordan du kan bruke WBS-sporing for prosjektkravene. 
 
 Finance and Operations har tre visninger for arbeidsnedbrytningsstrukturen for et prosjekt: planleggingsvisning, visning av innsatssporing og visning av kostnadssporing.
 
-### Planleggingsvisning
-<a id="planning-view" class="xliff"></a>
+### <a name="planning-view"></a>Planleggingsvisning
 
 Planleggingsvisningen viser det planlagte estimatet eller basisestimatet for tidsplanen og kostinformasjonen. Selv om det ikke finnes noen funksjoner for å spore versjonen og basisen for en arbeidsnedbrytningsstruktur for prosjekt, er verdiene i denne visningen ment å representere basisversjonen. Delene Tidsplanestimering og Kostnadsestimat i dette emnet beskriver denne visningen og hvordan den brukes til å opprette en arbeidsnedbrytningsstruktur.
 
-### Visning av innsatssporing
-<a id="effort-tracking-view" class="xliff"></a>
+### <a name="effort-tracking-view"></a>Visning av innsatssporing
 
 Visningen av innsatssporing viser sporing av fremdriften for oppgaver i arbeidsnedbrytningsstrukturen. Den sammenligner de akkumulerte faktiske innsatstimene for en oppgave med de planlagte innsatstimene. Følgende formler gir verdiene i visningen av innsatssporing:
 
@@ -217,8 +206,7 @@ Begge disse metodene fører til en omberegning av oppgavens ETC, EAC og fremdrif
 
 Klikk **Utvid til nivå** i visningen av innsatssporing for å angi hvilket nivå du vil spore og vedlikeholde arbeidsnedbrytningsstrukturen på. Arbeidsnedbrytningsstrukturen utvides automatisk til dette nivået i visningen av innsatssporing hver gang du åpner den.
 
-### Visning av kostnadssporing
-<a id="cost-tracking-view" class="xliff"></a>
+### <a name="cost-tracking-view"></a>Visning av kostnadssporing
 
 Visningen av kostnadssporing viser sporingen av kostnadsforbruk for en oppgave. I denne visningen blir de faktiske kostnadene som er brukt på en oppgave hittil, sammenlignet med de planlagte kostnadene for oppgaven. Følgende formler gir verdiene i visningen av kostnadssporing:
 
@@ -247,8 +235,7 @@ Visningen av kostnadssporing viser en prosjektering av kostnadsavvik for oppgave
 
 Klikk **Utvid til nivå** i visningen av kostnadssporing for å angi hvilket nivå du vil spore og vedlikeholde arbeidsnedbrytningsstrukturen på. Arbeidsnedbrytningsstrukturen utvides til dette nivået i visningen av kostnadssporing hver gang du åpner den.
 
-### Administrasjon av opptjent verdi
-<a id="earned-value-management" class="xliff"></a>
+### <a name="earned-value-management"></a>Administrasjon av opptjent verdi
 
 Du kan bruke metoden for opptjent verdi til å spore fremdriften til et prosjekt. Du kan vise mål for opptjent verdi i rollesenteret for prosjektlederen. Diagramkomponenten for opptjent verdi viser de tidsinndelte verdiene for planlagte verdi og faktiske kostnader. Opptjent verdi per gjeldende dato vises som et punkt. Tidsinndelte data for opptjent verdi er foreløpig ikke tilgjengelige. 
 
@@ -273,8 +260,7 @@ Når opptjent verdi beregnes, tas det hensyn til fremdriftsprosenten for hver op
 
 Transaksjoner som posteres til et prosjekt, brukes til å tegne linjen for faktiske kostnader. Kostnadene summeres etter dato. Disse dataene brukes deretter til å tegne de faktiske kostnadene etter uke eller måned i diagrammet for opptjent verdi.
 
-### Bruke begrepene om planlagt verdi, opptjent verdi og faktiske kostnader
-<a id="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost" class="xliff"></a>
+### <a name="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost"></a>Bruke begrepene om planlagt verdi, opptjent verdi og faktiske kostnader
 
 **Tidsplanavvik** Under planleggingen oppretter du en prognose for arbeid på en tidslinje. Planlagt verdi er derfor hvor raskt prosjektplanleggere trodde at arbeid kom til å bli fullført på prosjektet. Etter at et prosjekt har kommet i gang, fullføres arbeid, og prosjektet tjener verdi. Når du sammenligner planlagt verdi med opptjent verdi, kan du vise hvordan arbeidsfremdriften er på et prosjekt. Resultatet av denne sammenligningen kalles tidsplanavvik. 
 
@@ -288,26 +274,22 @@ Hvis den faktiske kostnaden som brukes for en periode, er større enn den opptje
 
 Hvis den faktiske kostnaden som brukes for en periode, er mindre enn den opptjente verdien, ble mer penger opptjent enn brukt. Derfor er prosjektet under budsjettet.
 
-## WBS-maler
-<a id="wbs-templates" class="xliff"></a>
+## <a name="wbs-templates"></a>WBS-maler
 Du kan bruke funksjonen for WBS-maler til å opprette standardmaler for prosjekter. Hvis prosjektene som firmaet ditt tilbyr, omfatter mye arbeid som kan gjentas, bør du vurdere å opprette en WBS-mal. 
 
 Du kan opprette en WBS-mal fra arbeidsnedbrytningsstrukturen i et eksisterende prosjekt, slik at kunnskapen og de anbefalte fremgangsmåtene du ervervet under planleggingen av dette prosjektet, kan brukes på nytt på lignende prosjekter i fremtiden. Enkelte ganger er det imidlertid kanskje ikke aktuelt å lagre hele arbeidsnedbrytningsstrukturen som en mal. Derfor kan du også opprette maler fra deler av arbeidsnedbrytningsstrukturen for et prosjekt.
 
-### Lagre et prosjekts arbeidsnedbrytningsstruktur som en mal
-<a id="saving-a-projects-wbs-as-a-template" class="xliff"></a>
+### <a name="saving-a-projects-wbs-as-a-template"></a>Lagre et prosjekts arbeidsnedbrytningsstruktur som en mal
 
 Når du oppretter en mal, kan du importere den til arbeidsnedbrytningsstrukturen for et nytt prosjekt under rotnoden eller under en hvilken som helst oppgave i arbeidsnedbrytningsstrukturen for prosjektet.
 
-### Importere en WBS-mal til arbeidsnedbrytningsstrukturen for et prosjekt
-<a id="importing-a-wbs-template-into-a-projects-wbs" class="xliff"></a>
+### <a name="importing-a-wbs-template-into-a-projects-wbs"></a>Importere en WBS-mal til arbeidsnedbrytningsstrukturen for et prosjekt
 
 Når du importerer oppgaver, er oppgavene i malen organisert basert på startdatoen for oppgaven de importeres under. Under importen brukes forgjengerrelasjoner i maloppgavene til å beregne startdatoene for de importerte oppgavene. Målprosjektets standard arbeidskalender brukes til å beregne sluttdatoene for de importerte oppgavene, slik at virkedager og standard arbeidstimer som er definert i det gjeldende prosjektets arbeidskalender, beholdes. 
 
 Kostnadsbeløp og salgspriser på estimatlinjene brukes for å garantere at priser som gjelder spesifikt for prosjektet eller prosjektkontrakten, har gyldige datoer.
 
-### Forskjellen på arbeidsnedbrytningsstrukturen for et prosjekt og en WBS-mal
-<a id="differences-between-a-projects-wbs-and-a-wbs-template" class="xliff"></a>
+### <a name="differences-between-a-projects-wbs-and-a-wbs-template"></a>Forskjellen på arbeidsnedbrytningsstrukturen for et prosjekt og en WBS-mal
 
 -   Oppgavene i WBS-maler har ikke startdatoer og sluttdatoer.
 

@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74d520199410711b80b750a12ee726633e09d01c
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Oppsett av behovsprognose
-<a id="demand-forecasting-setup" class="xliff"></a>
+# <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +36,21 @@ Dette emnet beskriver konfigurasjonsoppgavene du må utføre for å klargjøre b
 
 Oppsettoppgavene omfatter å konfigurere følgende data og parametere.
 
-## Varefordelingsnøkkel
-<a id="item-allocation-key" class="xliff"></a>
+## <a name="item-allocation-key"></a>Varefordelingsnøkkel
 En behovsprognose beregnes for en vare og dimensjonene bare hvis varen er en del av en varefordelingsnøkkel. Denne regelen brukes for å gruppere et stort antall varer, slik at behovsprognoser kan opprettes raskere. Varefordelingsnøkkelprosenten ignoreres når behovsprognoser genereres. Prognoser opprettes basert på bare historiske data. 
 
 En vare og dimensjonene må være en del av bare én varefordelingsnøkkel hvis varefordelingsnøkkelen brukes under oppretting av prognose. 
 
 Hvis du vil legge til en lagerenhet (SKU) i en varefordelingsnøkkel, gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Varefordelingsnøkler**. Bruk siden **Tilordne varer** for å tilordne et element til en fordelingsnøkkel.
 
-## Grupper for konsernintern planlegging
-<a id="intercompany-planning-groups" class="xliff"></a>
+## <a name="intercompany-planning-groups"></a>Grupper for konsernintern planlegging
 Behovsprognose genererer prognoser på tvers av firmaer. I Microsoft Dynamics 365 for Finance and Operations grupperes firmaer som er planlagt sammen, i én konsernintern planleggingsgruppe. Hvis du vil angi per firma hvilke varefordelingsnøkler som skal vurderes for behovsprognose, knytter du en varefordelingsnøkkel til det konserninterne planleggingsgruppemedlemmet ved å gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Konserninterne planleggingsgrupper**. 
 
 Hvis ingen varefordelingsnøkler er tilordnet til medlemmer av konsernintern planleggingsgruppe, beregnes en behovsprognose som standard for alle varer som er tilordnet til alle varefordelingsnøkler fra alle Finance and Operations-firmaer. Flere filtreringsalternativer for firmaer og varefordelingsnøkler er tilgjengelig på siden **Generer statistisk basislinjeprognose**. 
 
 Se gjennom antall varer som er prognostisert. Unødvendige varer kan føre til økte kostnader når du bruker Microsoft Azure Machine Learning.
 
-## Parametere for behovsprognose
-<a id="demand-forecasting-parameters" class="xliff"></a>
+## <a name="demand-forecasting-parameters"></a>Parametere for behovsprognose
 Hvis du vil definere parametere for behovsprognose, kan du gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Parametere for behovsprognose**. Fordi behovsprognose kjører mellom firmaer er oppsettet globalt. Oppsettes brukes med andre ord for alle selskaper. 
 
 Behovsprognose genererer prognosen i antall. Enheten som antallet som skal uttrykkes i, må derfor angis i feltet **Behovsprognoseenhet**. Måleenheten må være unik for å hjelpe å garantere at aggregering og prosentvis fordeling gir mening. Hvis du vil ha mer informasjon om aggregering og prosentvis fordeling, se [Gjøre manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md). For hver måleenhet som skal brukes for lagerføringsenheter som er inkludert i behovsprognose, kontrollerer du at det er en regel for konvertering for måleenheten og den generelle måleenheten for prognose. Når prognosegenerering kjøres, logges listen over varer som ikke har en konvertering av måleenhet, slik at du lett kan korrigere oppsettet. 
@@ -80,12 +76,10 @@ Hvis du vil generere prognosen, bruker Finance and Operations en Machine Learnin
 
 Hvis du vil opprette behovsprediksjoner, kan du distribuere din egen tjeneste ved å bruke Machine Learning Studio eller behovsprognoseeksperimenter for Finance and Operations. Instruksjoner for distribusjon av Finance and Operations behovsprognoseeksperimenter som en webtjeneste er tilgjengelige i Finance and Operations. På siden **Parametere for behovsprognose** klikker du **Azure Machine Learning** kategorien.
 
-## Innstillinger for behovsprognose for Finance and Operations Machine Learning-tjenesten
-<a id="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service" class="xliff"></a>
+## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Innstillinger for behovsprognose for Finance and Operations Machine Learning-tjenesten
 Hvis du vil vise parametere som kan konfigureres for behovsprognosetjenesten for Finance and Operations, kan du gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Prognosealgoritmeparametere**. Siden **Prognosealgoritmeparametere** viser standardverdiene for parameterne. Du kan overskrive disse parameterne på siden **Parametere for behovsprognose**. Bruk kategorien **Generelt** for å overskrive parameterne globalt, eller bruk kategorien **Varefordelingsnøkler** for å overskrive parameterne pr. varefordelingsnøkkel. Parametere som er overskrevet med en varefordelingsnøkkel påvirker bare prognosen for varer som er knyttet til denne varefordelingsnøkkelen.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Innføring i behovsprognoser](introduction-demand-forecasting.md)

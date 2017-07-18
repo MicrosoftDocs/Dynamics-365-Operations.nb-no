@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, UnifiedOperations
 ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Opprette en arbeidsflyt
-<a id="create-a-workflow" class="xliff"></a>
+# <a name="create-a-workflow"></a>Opprette en arbeidsflyt
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet forklarer hvordan du oppretter en arbeidsflyt.
 
-Åpne redigeringsprogrammet for arbeidsflyt
-<a id="open-the-workflow-editor" class="xliff"></a>
+<a name="open-the-workflow-editor"></a>Åpne redigeringsprogrammet for arbeidsflyt
 ------------------------
 
 Microsoft Dynamics 365 for Finance and Operations-modulen som du arbeider i, bestemmer hvilke typer arbeidsflyt som du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
@@ -44,24 +42,20 @@ Microsoft Dynamics 365 for Finance and Operations-modulen som du arbeider i, bes
 3.  På listesiden som vises klikker du **Ny** i handlingsruten.
 4.  På siden **Opprett arbeidsflyt** velger du typen arbeidsflyt å opprette, og deretter klikker du **Opprett arbeidsflyt**. Redigeringsprogrammet for arbeidsflyt åpnes. Du kan nå bruke fremgangsmåtene nedenfor for utforme arbeidsflyten.
 
-## Dra arbeidsflytelementer til lerretet
-<a id="drag-workflow-elements-onto-the-canvas" class="xliff"></a>
+## <a name="drag-workflow-elements-onto-the-canvas"></a>Dra arbeidsflytelementer til lerretet
 **Arbeidsflytelementer**-området i redigeringsprogrammet for arbeidsflyt inneholder elementer som du kan legge til i arbeidsflyten. Hvis du vil legge til elementer i arbeidsflyten, drar du dem til arbeidsområdet.
 
-## Koble elementene
-<a id="connect-the-elements" class="xliff"></a>
+## <a name="connect-the-elements"></a>Koble elementene
 Hvis du vil koble ett arbeidsflytelement til et annet, holder du markøren over et element til du ser koblingspunkt. Klikk et koblingspunkt, og dra det til et annet element. Pass på at du kobler alle elementene.
 
-## Konfigurere egenskapene for arbeidsflyten
-<a id="configure-the-properties-of-the-workflow" class="xliff"></a>
+## <a name="configure-the-properties-of-the-workflow"></a>Konfigurere egenskapene for arbeidsflyten
 Følg disse fremgangsmåtene for å konfigurere egenskapene for arbeidsflyten.
 
 1.  Klikk lerretet for å være sikker på at ingen arbeidsflytelementer er valgt.
 2.  Klikk **Egenskaper** for å åpne **Egenskaper**-siden for arbeidsflyten.
 3.  Følg fremgangsmåten i emnet [Konfigurere egenskapene for en arbeidsflyt](configure-workflow-properties.md).
 
-## Konfigurere elementene for arbeidsflyten
-<a id="configure-the-elements-of-the-workflow" class="xliff"></a>
+## <a name="configure-the-elements-of-the-workflow"></a>Konfigurere elementene for arbeidsflyten
 Konfigurer hvert element du dro til lerretet. Hvis du vil ha informasjon om hvordan du konfigurerer hvert arbeidsflytelement, kan du se emnet nedenfor .
 
 -   [Konfigurere en manuell oppgave](configure-manual-task-workflow.md)
@@ -74,12 +68,10 @@ Konfigurer hvert element du dro til lerretet. Hvis du vil ha informasjon om hvor
 -   [Konfigurere en parallell avdeling](configure-parallel-branch-workflow.md)
 -   [Konfigurere en arbeidsflyt for linjeelement](configure-line-item-workflow.md)
 
-## Løse eventuelle feil eller advarsler
-<a id="resolve-any-errors-or-warnings" class="xliff"></a>
+## <a name="resolve-any-errors-or-warnings"></a>Løse eventuelle feil eller advarsler
 **Feil og advarsler**-ruten, nederst i redigeringsprogrammet for arbeidsflyt, viser meldinger som er generert for arbeidsflyten. Hvis du vil finne elementet der en feil eller advarsel oppstod, dobbeltklikker du feilen eller advarselen. Du må løse alle feil og advarsler må løses før du kan aktivere arbeidsflyten.
 
-## Lagre og aktiver arbeidsflyten.
-<a id="save-and-activate-the-workflow" class="xliff"></a>
+## <a name="save-and-activate-the-workflow"></a>Lagre og aktiver arbeidsflyten.
 Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgangsmåten.
 
 1.  Klikk **Lagre og Lukk** for å lukke redigeringsprogrammet for arbeidsflyt og åpne siden **Lagre arbeidsflyt**.

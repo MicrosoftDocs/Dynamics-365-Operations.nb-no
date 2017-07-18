@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: f8bcdcf70089aaed06ba0f88cdbec8dfdf9121d1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
-<a id="control-warehouse-work-by-using-work-templates-and-location-directives" class="xliff"></a>
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Denne artikkelen beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver
 
 Instruksjonene som lagermedarbeidere mottar på en mobil enhet, bestemmes av arbeidsmalene som du definerer i Microsoft Dynamics 365 for Finance and Operations for å definere de ulike lagerprosesser og -oppgaver. Arbeidsmaler avgjør hvordan arbeidet skal utføres for hver lagerprosess. Ved å koble et lokasjonsdirektiv til arbeidsmaler kan du bidra til å garantere at arbeid skjer i bestemte fysiske områder på lagrene.
 
-## Arbeidsmaler
-<a id="work-templates" class="xliff"></a>
+## <a name="work-templates"></a>Arbeidsmaler
 Siden **Arbeidsmaler** lar deg definere arbeidsoperasjoner som må utføres på lageret. Vanligvis består lageroperasjoner av to handlinger: en lagerarbeider plukker opp beholdning på en lokasjon og plasserer den plukkede beholdningen på en annen lokasjon. 
 
 Arbeidsmaler består av et hode og tilhørende linjer. Hver arbeidsmal gjelder en bestemt *arbeidsordretype*. Mange arbeidsordretyper assosieres med kildedokumenter, for eksempel bestillinger eller salgsordrer. Imidlertid representerer andre arbeidsordretyper egne lagerprosesser, for eksempel syklustelling. *Arbeidspulje-ID* gir deg muligheten til å organisere arbeidet i grupper. 
@@ -50,8 +48,7 @@ Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal bruke
 
 Hvis du vil stoppe eller pause en arbeidsprosess, kan du bruke innstillingen **Stopp arbeid** for arbeidslinjen. I så fall vil arbeideren som utfører arbeidet, ikke bli bedt om å utføre neste arbeidslinjetrinn. For å flytte til neste trinn må denne arbeideren eller en annen arbeider velge arbeidet på nytt. Du kan også skille oppgavene i et stykke arbeid ved å bruke en annen *arbeidsklasse-ID *på arbeidsmallinjene.
 
-## Lokasjonsdirektiver
-<a id="location-directives" class="xliff"></a>
+## <a name="location-directives"></a>Lokasjonsdirektiver
 Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Lokasjonsdirektiver består av et hode og tilknyttede linjer, og du oppretter dem på siden **Lokasjonsdirektiver**. 
 
 I hodet må hvert lokasjonsdirektiv må være knyttet til en *arbeidsordretype *som angir typen lagertransaksjon som direktivet som skal brukes for, for eksempel salgsordrer, etterfylling eller råvareplukking. *Arbeidstypen *angir om lokasjonsdirektivet skal brukes for å plukke eller plassere arbeid eller en annen lagerprosess, for eksempel telle eller lagerstatusendringer. Du må også angi et *område *og et *lager*. En *direktivkode *som du angir i hodet, kan brukes til å koble lokasjonsdirektivet til én eller flere maler for arbeid. 
@@ -62,8 +59,7 @@ Lokasjonsdirektivlinjene setter tilleggsbegrensninger på bruken av reglene for 
 
 Lokasjonsdirektiver har et ekstra detaljnivå: *lokasjonsdirektivhandlinger*. Du kan definere flere lokasjonsdirektivhandlinger for hver linje. Et serienummer brukes igjen til å bestemme rekkefølgen som handlingene er vurdert i. På dette nivået kan du definere en spørring for å definere hvordan du finner den beste plasseringen i lageret. Du kan også bruke forhåndsdefinerte innstillinger for **Strategi** for å finne en optimal lokasjon.
 
-### Eksempel på bruk av lokasjonsdirektiver
-<a id="example-of-the-use-of-location-directives" class="xliff"></a>
+### <a name="example-of-the-use-of-location-directives"></a>Eksempel på bruk av lokasjonsdirektiver
 
 I dette eksemplet vil vi vurdere en bestillingsprosess der lokasjonsdirektivet må finne ledig kapasitet i et lager for lagervarer som nettopp er registrert i mottakssonen. Først må vil vi prøve å finne ledig kapasitet i lageret ved å konsolidere med eksisterende lagerbeholdning. Hvis konsolidering er ikke mulig, vil vi finne en ledig lokasjon. 
 

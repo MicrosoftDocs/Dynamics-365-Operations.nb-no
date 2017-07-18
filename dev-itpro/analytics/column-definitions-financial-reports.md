@@ -10,13 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
@@ -24,52 +24,44 @@ ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kolonnedefinisjoner i finansrapporter
-<a id="column-definitions-in-financial-reports" class="xliff"></a>
+# <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen gir informasjon om kolonnedefinisjoner. En kolonnedefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i kolonner i en rapport. Grunnleggende kolonnedefinisjoner kan i likhet med raddefinisjoner brukes på flere rapporter.
 
-Opprette og endre en kolonnedefinisjon
-<a id="create-and-modify-a-column-definition" class="xliff"></a>
+<a name="create-and-modify-a-column-definition"></a>Opprette og endre en kolonnedefinisjon
 -------------------------------------
 
 En kolonnedefinisjon kan inneholde to til 255 kolonner.
 
-### Opprette en kolonnedefinisjon
-<a id="create-a-column-definition" class="xliff"></a>
+### <a name="create-a-column-definition"></a>Opprette en kolonnedefinisjon
 
 1.  I navigasjonsruten i Rapportutforming klikker du **Kolonnedefinisjoner**.
 2.  Klikk **Ny** på **Fil**-menyen, og klikk deretter **Kolonnedefinisjon**.
 3.  Legg til innholdet i kolonnedefinisjonen.
 
-### Åpne en kolonnedefinisjon
-<a id="open-a-column-definition" class="xliff"></a>
+### <a name="open-a-column-definition"></a>Åpne en kolonnedefinisjon
 
 1.  I navigasjonsruten i Rapportutforming klikker du **Kolonnedefinisjoner**.
 2.  Dobbeltklikk en kolonnedefinisjon for å åpne den.
 
-### Legge til en kolonne i en kolonnedefinisjon
-<a id="add-a-column-to-a-column-definition" class="xliff"></a>
+### <a name="add-a-column-to-a-column-definition"></a>Legge til en kolonne i en kolonnedefinisjon
 
 1.  I Rapportutforming klikker du **Kolonnedefinisjoner**, og deretter åpner du kolonnedefinisjonen som skal endres.
 2.  Merk kolonnen der en ny kolonne skal settes inn.
 3.  På **Rediger**-menyen klikker du **Sett inn kolonne**. Den nye kolonnen vises til venstre for kolonnen som du valgte.
 
-### Slette en kolonne fra en kolonnedefinisjon
-<a id="delete-a-column-from-a-column-definition" class="xliff"></a>
+### <a name="delete-a-column-from-a-column-definition"></a>Slette en kolonne fra en kolonnedefinisjon
 
 1.  I Rapportutforming klikker du **Kolonnedefinisjoner**, og deretter åpner du kolonnedefinisjonen som skal endres.
 2.  Velg kolonnen du vil slette.
 3.  På **Rediger**-menyen klikker du **Slett kolonne**.
 
-## Innholdet i en kolonnedefinisjon
-<a id="contents-of-a-column-definition" class="xliff"></a>
+## <a name="contents-of-a-column-definition"></a>Innholdet i en kolonnedefinisjon
 En kolonnedefinisjon inneholder følgende informasjon:
 
 -   En kolonne med beskrivelsene for raddefinisjonen
@@ -97,24 +89,20 @@ Denne informasjonen vises i følgende områder i kolonnedefinisjonen:
     | Startdato sluttdato                                                   | Begrens de økonomiske dataene til bestemte datoer.                                                         |
     | Justering                                                         | Venstrejuster, midtstill eller høyrejustere den beskrivende teksten som er angitt i raddefinisjonen. |
 
-## Kolonnebegrensninger i en kolonnedefinisjon
-<a id="column-restrictions-in-a-column-definition" class="xliff"></a>
+## <a name="column-restrictions-in-a-column-definition"></a>Kolonnebegrensninger i en kolonnedefinisjon
 Du kan bruke kolonnebegrensninger for å angi hvordan en kolonnedefinisjon bruker data eller beregner informasjon. Du kan også begrense en rapportkolonne til en bestemt enhet eller for bestemte datoer. **Obs!**  En **Kolonnebegrensning**-kode overstyrer alle motstridende innstillinger som er tilordnet i raddefinisjonen.
 
-### Kolonnebegrensninger-celle
-<a id="column-restrictions-cell" class="xliff"></a>
+### <a name="column-restrictions-cell"></a>Kolonnebegrensninger-celle
 
 **Kolonnebegrensninger**-cellen kan inneholde koder som begrenser eller skjuler informasjon, for eksempel radformatering, detaljer og beløp for den aktuelle kolonnen.
 
-#### Legge til kolonnebegrensning i en kolonnedefinisjon
-<a id="add-a-column-restriction-in-a-column-definition" class="xliff"></a>
+#### <a name="add-a-column-restriction-in-a-column-definition"></a>Legge til kolonnebegrensning i en kolonnedefinisjon
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Kolonnebegrensninger**-cellen for kolonnen som skal begrenses.
 3.  I dialogboksen **Kolonnebegrensninger** velger du én eller flere koder i listen, og deretter klikker du **OK**.
 
-### Kolonnebegrensningskoder
-<a id="column-restriction-codes" class="xliff"></a>
+### <a name="column-restriction-codes"></a>Kolonnebegrensningskoder
 
 Tabellen nedenfor beskriver kodene for kolonnebegrensning.
 
@@ -130,20 +118,17 @@ Tabellen nedenfor beskriver kodene for kolonnebegrensning.
 | OF                      | Begrens beløpene i kolonnen, slik at bare posterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige.                                                                                                                                                                                                                 |
 | UPT                     | Begrens beløpene i kolonnen, slik at bare uposterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige. **Obs!**  Ikke alle leverandører støtter uposterte transaksjoner. Hvis du vil ha mer informasjon, kan du se [veiledningen for dataintegrering](http://go.microsoft.com/fwlink/?LinkID=162565) for Microsoft Dynamics ERP-systemet. |
 
-### Begrense en kolonne til en rapporteringsenhet
-<a id="restrict-a-column-to-a-reporting-unit" class="xliff"></a>
+### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrense en kolonne til en rapporteringsenhet
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Rapporteringsenhet**-cellen for kolonnen som skal begrenses.
 3.  I dialogboksen **Valg av rapporteringsenhet**, i **Rapporteringstre**-listen, velger du et tre.
 4.  Vis eller skjul listen over enheter, velg en rapporteringsenhet og klikk deretter **OK**.
 
-## Formatere kolonneoverskrifter
-<a id="format-column-headers" class="xliff"></a>
+## <a name="format-column-headers"></a>Formatere kolonneoverskrifter
 Du kan legge til, endre og slette overskriftene som vises øverst i kolonnene i en rapport. Du kan også konfigurere betingede kolonneoverskrifter som strekker seg over flere kolonner, basert på den **Periode**-feltet fra kolonnedefinisjoner og **Basisperiode**-feltet fra rapportdefinisjoner. Basisperiodefunksjonen bidrar til å spare tid når du oppretter akkumulerer prognoserapporter.
 
-### Opprette og behandle kolonneoverskrifter
-<a id="create-and-manage-column-headers" class="xliff"></a>
+### <a name="create-and-manage-column-headers"></a>Opprette og behandle kolonneoverskrifter
 
 Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slette overskriftene som vises øverst i kolonnene i en rapport. Tabellen nedenfor beskriver feltene i dialogboksen **Kolonneoverskrift**.
 
@@ -154,8 +139,7 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 | Spre fra Spre til | Definer kolonnen eller kolonnene som overskriften gjelder for.                                                                                                                                                                                                                                                            |
 | Justering         | Angi hvordan overskriften skal justeres for kolonnen eller kolonneserien som er angitt i feltene **Spre fra** og **Spre til**.                                                                                                                                                               |
 
-### Opprette en kolonneoverskrift
-<a id="create-a-column-header" class="xliff"></a>
+### <a name="create-a-column-header"></a>Opprette en kolonneoverskrift
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk en overskriftscelle.
@@ -165,22 +149,19 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 6.  Under **Justering** velger du om kolonneoverskriften skal være venstrejustert, midtstilt eller høyrejustert.
 7.  Klikk **OK**.
 
-### Legge til en rad for kolonneoverskrift
-<a id="add-a-column-header-row" class="xliff"></a>
+### <a name="add-a-column-header-row"></a>Legge til en rad for kolonneoverskrift
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Velg en celle i overskriftsraden.
 3.  På **Rediger**-menyen klikker du **Sett inn rad**. Den nye raden settes inn over raden du valgte i trinn 2. **Merk:** Hvis du har fire eller flere rader i rapporttopptekstene i en rapport, overlapper topptekstene når rapporten eksporteres til et Excel-regneark. Hvis du vil vise alle overskrifter i rapporten, kan du øke toppmargen i rapportdefinisjonen.
 
-### Slette en rad for kolonneoverskrift
-<a id="delete-a-column-header-row" class="xliff"></a>
+### <a name="delete-a-column-header-row"></a>Slette en rad for kolonneoverskrift
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I overskriften merker du cellen som skal slettes.
 3.  På **Rediger**-menyen klikker du **Slett rad**.
 
-### Opprette en automatisk generert overskrift
-<a id="create-an-automatically-generated-header" class="xliff"></a>
+### <a name="create-an-automatically-generated-header"></a>Opprette en automatisk generert overskrift
 
 Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotekstkoder. Autotekstkoder er variabler som oppdateres hver gang en rapport genereres. En kolonneoverskrift kan inneholde disse kodene for å angi rapportinformasjon som kan variere, for eksempel datoer eller periodenumre. Du kan derfor bruke én kolonnedefinisjon for flere rapportdefinisjoner, tidsperioder og rapporteringstrær. SIden autotekstkoder avhenger av kalenderinformasjonen fra detaljradene for kolonnedefinisjonen, støttes de bare for kolonnene **CALG**, **FD** og **WKS**. Hvordan en autotekstkode vises i kolonneoverskriften har innvirkning på hvordan denne informasjonen vises i rapporten. I dialogboksen **Kolonneoverskrift** vises autotekstkodene med store og små bokstaver. Derfor vises teksten i små og store bokstaver i rapporten. I et standard kalenderår løser for eksempel **@CalMonthLong** måned **7** til **juli**. Hvis navnet på måneden skal skrives med store bokstaver (for eksempel **JULI**), angir du autotekstkoden med store bokstaver i feltet **Tekst for kolonneoverskrift**. Skriv for eksempel **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel inn følgende overskrift: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Rapportoverskriften som genereres ligner på følgende tekst: **Periode 1-02 fra 01.01.02 til 01.31.02**. **Obs!** Formatet på noe av teksten, for eksempel den lange datoen, avhenger av de regionale innstillingene på Finance and-serveren. Hvis du vil endre disse innstillingene, klikker du **Start**, **Kontrollpanel** og deretter **Område og språk**. Tabellen nedenfor viser en liste over tilgjengelige alternativer for autotekst for kolonneoverskrifter.
 
@@ -199,8 +180,7 @@ Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotek
 | Registerkode (@BookCode)                   | Skriv ut registerkoden som er angitt i kolonnen.                                                                                                                                                                                                                                             |
 | Tom linje (@Blank)                     | Sette inn en tom linje i kolonneoverskriften.                                                                                                                                                                                                                                                       |
 
-### Opprette en betinget overskrift som strekker seg over flere kolonner
-<a id="create-a-conditional-spanning-header" class="xliff"></a>
+### <a name="create-a-conditional-spanning-header"></a>Opprette en betinget overskrift som strekker seg over flere kolonner
 
 En betinget overskrift som strekker seg over flere kolonner kan strekke seg over flere kolonner basert på bestemte periodedata. Hvis du for eksempel har en budsjettrapport for regnskapsåret og vil vise de faktiske budsjettene for de siste månedene sammen med de forventede budsjettene for kommende måneder, kan du for eksempel bruke et betinget overskrift som strekker seg over flere kolonner for automatisk å oppdatere overskriften i rapporten. Vær oppmerksom på følgende situasjoner når du oppretter en betinget overskrift som strekker seg over flere kolonner:
 
@@ -209,8 +189,7 @@ En betinget overskrift som strekker seg over flere kolonner kan strekke seg over
 -   Hvis du angir BASE i spredefinisjonen på en kolonne som ikke skal skrives ut (**NP**), blir den ignorert, uavhengig av hva som er definert i kolonnedefinisjonen. Dette scenariet er samme som ikke å opprette en definisjon for kolonneoverskrift.
 -   For betingede utskriftskolonner (**P&lt;B**, **P&gt;=B**), fungerer overskrifter som strekker seg over flere kolonner som en vanlig definisjon for kolonnetopptekst. Hvis betingelsen for eksempel er usann, vil alle etterfølgende kolonnetreff for spre-betingelsen starte utskriften av overskriften.
 
-#### Opprette en betinget overskrift som strekker seg over flere kolonner
-<a id="create-a-conditional-spanning-header" class="xliff"></a>
+#### <a name="create-a-conditional-spanning-header"></a>Opprette en betinget overskrift som strekker seg over flere kolonner
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk en overskriftscelle.
@@ -220,8 +199,7 @@ En betinget overskrift som strekker seg over flere kolonner kan strekke seg over
 6.  Under **Justering** velger du om kolonneoverskriften skal være venstrejustert, midtstilt eller høyrejustert.
 7.  Klikk **OK**.
 
-#### Eksempel på en betinget overskrift som strekker seg over flere kolonner
-<a id="example-of-a-conditional-spanning-header" class="xliff"></a>
+#### <a name="example-of-a-conditional-spanning-header"></a>Eksempel på en betinget overskrift som strekker seg over flere kolonner
 
 Jenny oppretter en rapport for en dynamisk seks måneders prognose. Hun vil at ordet "Faktisk" skal skrives ut over kolonnene som inneholder faktiske data, og at ordet "Budsjett" skal skrives ut over kolonnene som inneholder budsjettprognoser. Hver måned når rapporten kjøres, finnes det én faktiske kolonne til og én mindre budsjettkolonne. Selv om Jenny kan endre kolonnedefinisjonen manuelt hver gang rapporten blir generert, for å justere overskriftene, kan hun spare tid og arbeid ved å bestemmer seg for å opprette betingede overskrifter som strekker seg over flere kolonner som automatisk oppretter overskrifter over de aktuelle kolonnene hver gang rapporten kjøres. Jenny åpner Rapportutforming, klikker **Kolonnedefinisjon** i navigasjonsruten, og åpner kolonnedefinisjonen for rapporten. Hun angir følgende informasjon: Basisperioden i rapportdefinisjonen er 4.
 
@@ -263,8 +241,7 @@ Når hun er ferdig med å skrive inn informasjonen, klikker Jenny **OK**. Derett
 
 Hver gang rapporten genereres vil ordet "Faktisk" skrives ut over kolonnene som inneholder faktiske data, og ordet "Budsjett" skrives ut over kolonnene som inneholder budsjettet prognoser. I tillegg vil antall kolonner justeres for hver måned.
 
-## Bruke kolonnejustering
-<a id="apply-column-justification" class="xliff"></a>
+## <a name="apply-column-justification"></a>Bruke kolonnejustering
 **Justering**-cellen brukes til å angi justeringsformatering for en beskrivelseskolonne i en rapport. Dette alternativet har bare innvirkning på kolonnebeskrivelsene, ikke de faktiske verdiene.
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
@@ -275,8 +252,7 @@ Hver gang rapporten genereres vil ordet "Faktisk" skrives ut over kolonnene som 
     -   **Midtstill** – Midtstill kolonnebeskrivelsene.
     -   **Høyre** – høyrejuster kolonnebeskrivelsene.
 
-## Legge til alternativer for spesielle formatering
-<a id="add-special-formatting-options" class="xliff"></a>
+## <a name="add-special-formatting-options"></a>Legge til alternativer for spesielle formatering
 I kolonnedefinisjonen bruke detaljradene for formateringskolonnen spesiell formatering på merkede kolonner. Selv om noen av alternativene for **Utskriftskontroll** og **Kolonnebegrensninger** er spesifikke for **FD**-kolonner, gjelder de fleste alternativene for alle kolonnetyper. Formateringen som er angitt i kolonnedefinisjonen overstyrer imidlertid formateringen som er angitt i rapportdefinisjonen. Formateringen som er angitt i raddefinisjonen overstyrer imidlertid formateringen som er angitt i kolonnedefinisjonen. Følgende rader regnes som formateringsrader:
 
 -   Kolonnebredde
@@ -284,47 +260,39 @@ I kolonnedefinisjonen bruke detaljradene for formateringskolonnen spesiell forma
 -   Format/valutaoverstyring
 -   Utskriftskontroll
 
-### Endre kolonnebredden
-<a id="changing-the-column-width" class="xliff"></a>
+### <a name="changing-the-column-width"></a>Endre kolonnebredden
 
 **Kolonnebredde**-cellen angir antall tegn som skal brukes for bredden på kolonnen i den utskrevne rapporten. Kolonnebredde er viktig for kolonner som inneholder beløp (kolonner av typen **CALC**, **WKS** eller **FD**), beskrivelser (kolonner av typen **DESC**) eller fyll (kolonner av typen **FILL**). Alternativet for **beste tilpasning** er valgt som standard, slik at bredden på hver kolonne justeres automatisk for å få plass til innholdet.
 
-#### Angi bredden på en kolonne i en rapport
-<a id="specify-the-width-of-a-column-on-a-report" class="xliff"></a>
+#### <a name="specify-the-width-of-a-column-on-a-report"></a>Angi bredden på en kolonne i en rapport
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I **Kolonnebredde**-cellen skriver du inn antall mellomrom for bredden på kolonnen. Den maksimale bredden for en kolonne er 255 tegn (dette tallet omfatter kroner, komma og parenteser). Hvis du vil aktivere rapportutforming for å velge den riktige bredden for kolonnen basert på celleinnholdet, kan du eventuelt dobbeltklikke **Kolonnebredde**-cellen og deretter klikke **Beste tilpasning**.
 
-### Legge til mellomrom mellom kolonnene
-<a id="add-space-between-columns" class="xliff"></a>
+### <a name="add-space-between-columns"></a>Legge til mellomrom mellom kolonnene
 
 Cellen **Ekstra mellomrom før kolonne** angir bredden på skilletegnet mellom kolonner og tilstøtende kolonner i kolonnedefinisjonen. Innstillingen **Ekstra mellomrom før kolonne** påvirker alle detaljradene for kolonnen, men ikke radene for kolonneoverskriftene. Bruk dette alternativet for å skille kolonnegrupper eller legge til noen mellomrom før beskrivelsen, slik at beskrivelsekolonnen er innrykket fra de venstrejusterte titlene i rapporten. Standard antall mellomrom mellom kolonnene er to. Du kan endre denne innstillingen i kategorien **Innstillinger** i rapportdefinisjonen.
 
-#### Angi mellomrommet mellom kolonnene
-<a id="specify-the-space-between-columns" class="xliff"></a>
+#### <a name="specify-the-space-between-columns"></a>Angi mellomrommet mellom kolonnene
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I cellen **Ekstra mellomrom før kolonne** angir du hvor antall mellomrom som skal settes inn mellom kolonner.
 
-### Angi en valuta
-<a id="specify-a-currency" class="xliff"></a>
+### <a name="specify-a-currency"></a>Angi en valuta
 
 Cellen **Format/valutaoverstyring** angir formateringen til desimal-, valuta- og prosentbeløpene i kolonnen. Denne formateringen overstyrer all formatering som er angitt i rapportdefinisjonen eller systemstandardene.
 
-#### Tilordne en format/valutaoverstyring til en rapportkolonne
-<a id="assign-a-format-currency-override-to-a-report-column" class="xliff"></a>
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilordne en format/valutaoverstyring til en rapportkolonne
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk en **Format/valutaoverstyring**-celle i en beløpskolonne.
 3.  I dialogboksen **Overstyre format** velger du alternativer for formatering.
 
-### Legge til en kontrollkode for utskrift
-<a id="add-a-print-control-code" class="xliff"></a>
+### <a name="add-a-print-control-code"></a>Legge til en kontrollkode for utskrift
 
 Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller utskriftsegenskapene til en kolonne. Det finnes to typer kontrollkoder for utskrift: vanlige kontrollkoder for utskrift og kontrollkoder for betinget utskrift.
 
-#### Vanlige kontrollkoder for utskrift
-<a id="regular-print-control-codes" class="xliff"></a>
+#### <a name="regular-print-control-codes"></a>Vanlige kontrollkoder for utskrift
 
 | Kontrollkode for utskrift | Oversettelse                                     | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -336,8 +304,7 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 | RP                 | Gjenta kolonne på hver side                      | Gjenta en bestemt kolonne på hver side i en rapport. Du kan for eksempel bruke **RP**-utskriftskontrollen for å inkludere en kolonne av **ROW**-typen som trekker i radkoder på hver side.                                                                                                                                                                                                                                                                                                                                           |
 | WT                 |  Bryt tekst                                      |  Hvis teksten i en kolonne er for lang til at den passer i området, brytes teksten for å holde all teksten i kolonnen.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-#### Kontrollkoder for betinget utskrift
-<a id="conditional-print-control-codes" class="xliff"></a>
+#### <a name="conditional-print-control-codes"></a>Kontrollkoder for betinget utskrift
 
 | Kontrollkode for betinget utskrift | beskrivelse                                                                             |
 |--------------------------------|-----------------------------------------------------------------------------------------|
@@ -348,8 +315,7 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 | P&lt;=B                        | Viser en angitt kolonne bare hvis perioden er mindre enn eller lik basisperioden. |
 | P&gt;=B                        | Viser en angitt kolonne bare hvis perioden er mer enn eller lik basisperioden. |
 
-#### Legge til kontrollkoder for utskrift i en rapportkolonne
-<a id="add-print-control-codes-to-a-report-column" class="xliff"></a>
+#### <a name="add-print-control-codes-to-a-report-column"></a>Legge til kontrollkoder for utskrift i en rapportkolonne
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk cellen **Utskriftskontroll**.
@@ -361,12 +327,10 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 > Du kan også angi utskriftskodene direkte i cellen **Utskriftskontroll**. Atskill flere kontrollkoder for utskrift med et komma.
 
 
-## Kolonnetyper
-<a id="column-types" class="xliff"></a>
+## <a name="column-types"></a>Kolonnetyper
 Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med verdien i **Kolonnetype**-raden i kolonnedefinisjonen. Hver kolonnedefinisjon må inneholde minst én beskrivelseskolonne (**DESC**) og én beløpskolonne (**FD**, **WKS** eller **CALC**). **Obs!**  Kodene for kolonnetype gjelder ikke for alle regnskapssystemer. Hvis du velger en type som ikke er gyldig for ditt regnskapssystem, vil denne kolonnen være tom i rapporten.
 
-### Angi en kolonnetype
-<a id="specify-a-column-type" class="xliff"></a>
+### <a name="specify-a-column-type"></a>Angi en kolonnetype
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk en celle i **Kolonnetype**-raden i den aktuelle kolonnen.
@@ -434,18 +398,15 @@ Du kan endre disse standardinnstillingene.</td>
     </tbody>
     </table>
 
-### Kolonnen Finansdimensjoner
-<a id="financial-dimensions-column" class="xliff"></a>
+### <a name="financial-dimensions-column"></a>Kolonnen Finansdimensjoner
 
 Følgende **Kolonnedefinisjon**-raddefinisjoner gjelder for kolonner som har kolonnetype **FD** (beløp fra finansdimensjoner).
 
-#### Cellen Registerkode/attributtkategori
-<a id="book-codeattribute-category-cell" class="xliff"></a>
+#### <a name="book-codeattribute-category-cell"></a>Cellen Registerkode/attributtkategori
 
 Cellen **Registerkode/attributtkategori** angir registerkoden for dataene i **FD**-kolonnen. En kolonnedefinisjon kan inkludere flere kolonner for faktisk, budsjettert og statistikk. En kolonnedefinisjon kan også vise ulike perioder, for eksempel gjeldende eller hittil i år og forskjellige beløp. Liten over registerkoder gjenspeiler de faktiske, budsjetterte og statistisk (ikke-finansielle) alternativene som ble fastsatt i de økonomiske dataene.
 
-#### Cellen Regnskapsår
-<a id="fiscal-year-cell" class="xliff"></a>
+#### <a name="fiscal-year-cell"></a>Cellen Regnskapsår
 
 Cellen **Regnskapsår** identifiserer regnskapsåret som kolonnen skal inneholde. Året kan være i forhold til basisåret som angis når rapporten genereres. Følgende alternativer er tilgjengelige:
 
@@ -456,8 +417,7 @@ Cellen **Regnskapsår** identifiserer regnskapsåret som kolonnen skal inneholde
 | BASE-\# | Bruk året som er \# år før basisåret. Hvis du vil bruke forrige år, kan du for eksempel angi **BASE-1**.                 |
 | \#      | Angi det faktiske regnskapsåret.                                                                                                |
 
-#### Cellen Periode
-<a id="period-cell" class="xliff"></a>
+#### <a name="period-cell"></a>Cellen Periode
 
 Cellen **Periode** identifiserer regnskapsperiodene som kolonnen skal inneholde. Perioden kan være i forhold til basisperioden som angis når rapporten genereres. Følgende alternativer er tilgjengelige:
 
@@ -475,15 +435,13 @@ Cellen **Periode** identifiserer regnskapsperiodene som kolonnen skal inneholde.
 
 Du kan gå utover grensene for regnskapsåret i noen av spesifikasjonene for perioden, og du kan blande år i et område av perioder. Du kan for eksempel angi periodene som **BASE-5** (for å representere de siste seks periodene) og kjøre en rapport som har basisperiode 2. I dette tilfellet viser rapporten data for de to første periodene i det angitte regnskapsåret og de fire siste periodene i forrige regnskapsår.
 
-### Angi perioder for en FD-kolonne
-<a id="specify-the-periods-for-an-fd-column" class="xliff"></a>
+### <a name="specify-the-periods-for-an-fd-column"></a>Angi perioder for en FD-kolonne
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I en **FD**-kolonne dobbeltklikker du cellen i **Periode**-raden, og deretter velger du et alternativ i listen.
 3.  Fullfør formelen på formellinjen over navigasjonsruten eller i **Periode**-cellen. Erstatt alle nummertegn (\#) med den aktuelle verdien.
 
-#### Cellen Perioder som er dekket
-<a id="periods-covered-cell" class="xliff"></a>
+#### <a name="periods-covered-cell"></a>Cellen Perioder som er dekket
 
 Cellen **Perioder som er dekket** identifiserer beløpet som kolonnen skal vise. Dette beløpet er i forhold til verdien i cellene **Regnskapsår** og **Periode** for kolonnen. Følgende alternativer er tilgjengelige:
 
@@ -494,19 +452,16 @@ Cellen **Perioder som er dekket** identifiserer beløpet som kolonnen skal vise.
 | YTD         | Vis summen av aktivitet hittil i år.                               |
 | YTD/BB      | Vis startsaldoen for året.                                 |
 
-### Angi periodene som er dekket for en FD-kolonne
-<a id="specify-the-periods-that-are-covered-for-an-fd-column" class="xliff"></a>
+### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a>Angi periodene som er dekket for en FD-kolonne
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I en **FD**-kolonne dobbeltklikker du cellen i raden **Perioder som er dekket**, og deretter velger du et alternativ i listen.
 
-### Attributtfilter i en kolonnedefinisjon
-<a id="attribute-filter-in-a-column-definition" class="xliff"></a>
+### <a name="attribute-filter-in-a-column-definition"></a>Attributtfilter i en kolonnedefinisjon
 
 Attributter er økonomisk dataverdier som ytterligere definerer en konto eller transaksjon. Kontoattributtene omfatter **Aktiva**, **Gjeld**, **Omsetning** og **Utgift**. Transaksjonsattributtene omfatter **Transaksjonsbeskrivelse** og **Bruk transaksjonsdato**. Attributtstøtte kan variere mellom Microsoft Dynamics ERP-systemer. Cellen **Attributtfilter** begrenser dataene i **FD**-kolonner til bestemte verdier eller områder for attributtkategorier. Selv om denne funksjonen kan brukes sammen med en **ATTR**-kolonne, er ikke **ATTR**-kolonnen nødvendig. I en **FD**-kolonne er det en grense for kontoene eller transaksjonene som rapporten vil inkludere fra attributtfilteret. **Obs!**  Hvis du vil se hvilke attributter ERP-systemet støtter, kan du se integreringsveiledningen for systemet.
 
-#### Bruke et attributtfilter for en FD-kolonne i en rapport
-<a id="apply-an-attribute-filter-for-an-fd-column-on-a-report" class="xliff"></a>
+#### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Bruke et attributtfilter for en FD-kolonne i en rapport
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Attributtfilter**-cellen for en **FD**-kolonne.
@@ -514,8 +469,7 @@ Attributter er økonomisk dataverdier som ytterligere definerer en konto eller t
 4.  Hvis du vil begrense resultatene ytterligere, kan du angi et område i kolonnene **Fra** og **Til**. **Fra**-cellen må inneholde en positiv verdi.
 5.  Klikk **OK**.
 
-#### Eksempel på et attributtfilter
-<a id="example-of-an-attribute-filter" class="xliff"></a>
+#### <a name="example-of-an-attribute-filter"></a>Eksempel på et attributtfilter
 
 Følgende eksempel viser en del av en kolonnebeskrivelse som har et kontoattributt i raden **Registerkode/attributtkategori**. Attributtfilteret for denne kolonnen angir området med verdier som skal tas med i rapporten.
 
@@ -531,8 +485,7 @@ Følgende eksempel viser en del av en kolonnebeskrivelse som har et kontoattribu
 | ...                          |      |                      |
 | Attributtfilter             |      |  Referanse=\[01:10\] |
 
-### Dimensjonsfilteret i en kolonnedefinisjon
-<a id="dimension-filter-in-a-column-definition" class="xliff"></a>
+### <a name="dimension-filter-in-a-column-definition"></a>Dimensjonsfilteret i en kolonnedefinisjon
 
 Et dimensjonsfilter brukes til å begrense **FD**-kolonnen til bestemte dimensjonsverdier. Filteret kan inneholde én enkelt dimensjon, et område med dimensjoner eller en gruppe av dimensjoner. Filteret kan også inneholde dimensjonsverdisett. Siden dimensjonsverdier kan variere, trenger ikke et ..\financial-dimensions\dimension-based system samsvare med en nøyaktig lengde. Filteret brukes, uavhengig av om rapporten omfatter et rapporteringstre. Du kan bruke jokertegn (\* eller ?) i hvilken som helst posisjon. Når du angir flere kontoer, setter du inn et komma mellom kontoene, slik som i følgende eksempel: +Konto=\[1200\], +Konto=\[1100\], Avdeling=\[01?\] Hvis du vil motta alle avdelinger for en bestemt konto, kan du utelate avdelingsdimensjonen fra dimensjonsfilteret. Begge følgende dimensjonsfiltre behandles for eksempel på samme måte:
 
@@ -541,16 +494,14 @@ Et dimensjonsfilter brukes til å begrense **FD**-kolonnen til bestemte dimensjo
 
 Du kan også bruke hvilken som helst kombinasjon av alfanumeriske tegn for nøyaktig samsvar, og du kan angi deldimensjoner. **Lokasjon = \[10\*\]** inneholder for eksempel alle lokasjonsdimensjonsverdier som begynner med 10.
 
-#### Bruke et dimensjonsfilter for en kolonne i en rapport
-<a id="apply-a-dimension-filter-for-a-column-on-a-report" class="xliff"></a>
+#### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a>Bruke et dimensjonsfilter for en kolonne i en rapport
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Dimensjonsfilter**-cellen for en **FD**-kolonne.
 3.  I dialogboksen **Dimensjoner** angir du filtrene som skal brukes.
 4.  Klikk **OK**.
 
-### Formatere en rapport med flere valutaer i en kolonnedefinisjon
-<a id="format-a-multiple-currency-report-in-a-column-definition" class="xliff"></a>
+### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatere en rapport med flere valutaer i en kolonnedefinisjon
 
 En rapport med flere valutaer kan vise beløp i naturlig (lokal) valuta, funksjonell valuta (standard) eller rapporteringsvaluta. Virksomhetens funksjonell valuta er definert i Microsoft Dynamics ERP-systemet. Du må ikke forveksle denne ERP-innstillingen med operativsystemets regionale innstillinger, der du kan konfigurere standard valutasymboler som skal brukes i rapporter. Følgende valutarelaterte celler er tilgjengelige i kolonnedefinisjonen:
 
@@ -564,8 +515,7 @@ En rapport med flere valutaer kan vise beløp i naturlig (lokal) valuta, funksjo
 2.  Velg et firma og klikk deretter **OK** i dialogboksen **Firmaer**.
 3.  I dialogboksen **Vis firma**, under **Regionale innstillinger**, kan du vise valutaen som er definert for det valgte firmaet.
 
-#### Angi valutaen i en rapport med flere valutaer
-<a id="specify-the-currency-on-a-multiple-currency-report" class="xliff"></a>
+#### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angi valutaen i en rapport med flere valutaer
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Valutavisning**-cellen i den aktuelle **FD**-kolonnen, og velg deretter alternativet for å vise valutainformasjon: **Naturlig / opprinnelig valuta**, **Funksjonell valuta fra firmainformasjon** eller rapporteringsvalutaen.
@@ -574,8 +524,7 @@ En rapport med flere valutaer kan vise beløp i naturlig (lokal) valuta, funksjo
 > [!NOTE]
 > Alternativene som beskrives her kan variere, avhengig av ERP-systemet. Hvis du vil ha mer informasjon, kan du se i [dokumentasjonen for Microsoft ERP-systemet](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
-### Eksempel for cellene Valutavisning og Valutafilter
-<a id="example-for-currency-display-and-currency-filter-cells" class="xliff"></a>
+### <a name="example-for-currency-display-and-currency-filter-cells"></a>Eksempel for cellene Valutavisning og Valutafilter
 
 Jenny har gjort følgende valutavalg i kolonnedefinisjonen:
 
@@ -584,8 +533,7 @@ Jenny har gjort følgende valutavalg i kolonnedefinisjonen:
 
 På grunn av valutafilteret som Jenny valgte, inneholder rapporten bare transaksjoner som ble angitt i japanske yen (JPY). På grunn av valutavisningen som hun valgte, viser rapporten disse transaksjonene i den funksjonelle valutaen, amerikanske dollar (USD).
 
-#### Kombinasjoner for Valutafilter og Valutavisning
-<a id="currency-filter-and-currency-display-combinations" class="xliff"></a>
+#### <a name="currency-filter-and-currency-display-combinations"></a>Kombinasjoner for Valutafilter og Valutavisning
 
 Tabellen nedenfor viser rapportresultatene som kan oppstå for ulike kombinasjoner av alternativene i cellene **Valutavisning** og **Valutafilter** på grunn av valgene Jenny gjorde. Den funksjonelle valutaen er amerikanske dollar.
 
@@ -596,13 +544,11 @@ Tabellen nedenfor viser rapportresultatene som kan oppstå for ulike kombinasjon
 | Funksjonell valuta fra firmainformasjon | Tom                | **$2,310\*\*** – Resultatet viser alle dataene i den funksjonelle valutaen som er angitt i firmainformasjonen. **Obs!**  Dette beløpet er summen av alle transaksjoner i funksjonell valuta. |
 | Naturlig / opprinnelig valuta                 | Tom                | **$2,250** – Resultatet viser alle beløp i valutaen som transaksjonen ble utført i.                                                                                                 |
 
-### Beregningskolonne i en kolonnedefinisjon
-<a id="calculation-column-in-a-column-definition" class="xliff"></a>
+### <a name="calculation-column-in-a-column-definition"></a>Beregningskolonne i en kolonnedefinisjon
 
 Kolonnetypen **CALC** i en kolonnedefinisjon støtter kompliserte beregninger i **Formel**-cellen, og kan inneholde operatorene **+**, **-**, **\*** og **/**, samt **IF/THEN/ELSE**-setningene. En beregningskolonne kan også referere til andre kolonner, også etterfølgende kolonner. I tillegg kan en beregningskolonne også omfatte regnskapsåret og perioden som støtter overskrifter for kolonnen. Beregningsformelen kan inneholde opptil 1 024 tegn. Bruk overstyring av spesielt format for å uttrykke beregningsresultatet som en prosent. **Obs!**  Resultatet av beregningsformler omfatter ikke verdiene i områdene med kolonner som ikke skal skrives ut. **A:D** skriver ut **0** (null), mens **A+B+C** for verdier som ikke skal skrives ut, beregner verdien.
 
-#### Operatorer i beregningskolonner
-<a id="operators-in-calculation-columns" class="xliff"></a>
+#### <a name="operators-in-calculation-columns"></a>Operatorer i beregningskolonner
 
 Hvis du vil addere, subtrahere, multiplisere eller dividere kolonner, angir du kolonnebokstavene i beregningsrekkefølgen, og deretter bruker du den aktuelle operatoren til å skille hver kolonnebokstav. Tabellen nedenfor beskriver operatorene du kan bruke i en beregningskolonne.
 
@@ -614,34 +560,28 @@ Hvis du vil addere, subtrahere, multiplisere eller dividere kolonner, angir du k
 | \*       | A\*C                | Multipliserer beløpet i kolonne A med beløpet i kolonne C.                                                                                                                                                                                     |
 | /        | A/C                 | Dividerer beløpet i kolonne A med beløpet i kolonne C.                                                                                                                                                                                       |
 
-#### Bruke en beregningsformel i en kolonnedefinisjon
-<a id="use-a-calculation-formula-in-a-column-definition" class="xliff"></a>
+#### <a name="use-a-calculation-formula-in-a-column-definition"></a>Bruke en beregningsformel i en kolonnedefinisjon
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  I den aktuelle **CALC**-kolonnen skriver du inn en formel i **Formel**-cellen.
 
-#### Komplekse beregninger
-<a id="complex-calculations" class="xliff"></a>
+#### <a name="complex-calculations"></a>Komplekse beregninger
 
 En kompleks beregning kan inneholde en kombinasjon av cellereferanser, operatorer, verdier og nivåer av nestede parenteser. Hvis du for eksempel vil beregne gjennomsnittet av kolonne A og B, kan du bruke beregningsformelen **((A+B)/2)**.
 
-#### Angi rappportceller i en kolonneberegning
-<a id="specify-report-cells-in-a-column-calculation" class="xliff"></a>
+#### <a name="specify-report-cells-in-a-column-calculation"></a>Angi rappportceller i en kolonneberegning
 
 Du kan referere til en bestemt rapportcelle ved å skrive inn en kolonnebokstav og radkode. **B.100** refererer for eksempel til radkode 100 i kolonne B. Du kan dividere en hel kolonne med et bestemt rapportcellebeløp som er i samme kolonne. Beregningen **B/B.100** betyr for eksempel at beløpet i kolonne B skal divideres med verdien i radkode 100 i kolonne B. Hvis beregningen refererer til en kolonne som avhenger av en annen kolonne, løses denne avhengige kolonnen først. Hvis du refererer til en kolonne til en annen kolonne som refererer tilbake til den første kolonnen, vil du forårsake en sirkelreferansefeil. **Obs!**  Beregningen kan være feil hvis du endrer beregningsprioriteten for rapporten. Du kan angi beregningsprioriteten i kategorien **Innstillinger** i rapportdefinisjonen.
 
-#### Multiplisere eller dividere en kolonne med en basisrad
-<a id="multiply-or-divide-a-column-by-a-base-row" class="xliff"></a>
+#### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Multiplisere eller dividere en kolonne med en basisrad
 
 Du kan opprette en kolonne som viser alle verdiene i en angitt kolonne som en prosent av et grunntall. Derfor kan du vise relasjoner mellom rader, for eksempel en prosentdel av en salgsordrerad eller en prosentdel av en rad for totale utgifter. Hvis du vil multiplisere eller dividere hver rad i en bestemt kolonne med en basisrad, angir du kolonnen som skal brukes i beregningen, og deretter angir du **\*BASEROW** eller **/BASEROW**. Skriv for eksempel **C\*BASEROW** eller **C/BASEROW**. **Obs!**  Når du bruker en basisradberegning i en kolonnedefinisjon, må du passe på at alle raddefinisjoner som skal brukes med denne kolonnedefinisjon, inneholder minst én basisrad for beregninger.
 
-#### Dividere beløpet i en kolonne med antall perioder
-<a id="divide-the-amount-in-a-column-by-the-number-of-periods" class="xliff"></a>
+#### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Dividere beløpet i en kolonne med antall perioder
 
 Du kan dividere beløpet i en kolonne med et bestemt antall perioder. Formelen **B/Perioder** dividerer for eksempel verdien i kolonne B med antall perioder i kolonne B. Hvis beregningen strekker seg over flere kolonner, angir du antall perioder som skal brukes i beregningen. Formelen **(B+C)/Perioder** summerer for eksempel beløpene i kolonnene B og C, og dividerer deretter resultatet med periodeverdien.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Raddefinisjoner i finansrapportering](row-definitions-financial-reporting.md)

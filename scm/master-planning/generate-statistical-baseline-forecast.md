@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 93646e37ee511d433097bb284fccc73c230aee32
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Generer en statistisk basislinjeprognose
-<a id="generate-a-statistical-baseline-forecast" class="xliff"></a>
+# <a name="generate-a-statistical-baseline-forecast"></a>Generer en statistisk basislinjeprognose
 
 [!include[banner](../includes/banner.md)]
 
@@ -66,8 +65,7 @@ Konsernintern planleggingsgruppe, varefordelingsnøkler og andre filtre kan bruk
 
 Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for én vare eller en varefordelingsnøkkel om gangen, kan du deretter for å få bedre ytelse merke av for **Bruk modus for forespørselssvar** i kategorien **Hovedplanlegging - Oppsett - Behovsprognose** - **Parametere for behovsprognose - Azure Machine Learning**.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oppsett av behovsprognose](demand-forecasting-setup.md)

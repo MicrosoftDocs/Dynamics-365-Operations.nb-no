@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Produktmottak mot kjøpsordrer
-<a id="product-receipt-against-purchase-orders" class="xliff"></a>
+# <a name="product-receipt-against-purchase-orders"></a>Produktmottak mot kjøpsordrer
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,18 +37,15 @@ Denne artikkelen beskriver de ulike alternativene for å registrere produktene s
 
 Produktmottak er prosessen med å registrere at produkter som ble bestilt, er mottatt, slik at bestillingslinjer deretter kan behandles for fakturering. I noen tilfeller går produkter gjennom forhåndsregistreringen, der tilleggsinformasjon fra leverandøren registreres før varene mottas. Når produkter ankommer, merkes de først som **Registrert**. Produktene kan deretter gå gjennom flere prosesser, for eksempel kvalitetsstyring, før de til slutt merkes som **Mottatt**.
 
-## Forhåndsregistrering (Forhåndsvarsel for forsendelse)
-<a id="preregistration-asn" class="xliff"></a>
+## <a name="preregistration-asn"></a>Forhåndsregistrering (Forhåndsvarsel for forsendelse)
 Leverandører kan dele informasjon om produkter som skal leveres. I slike tilfeller kan du forhåndsregistrere produktene for å registrere informasjonen før varene mottas. Ved forhåndsregistrering av produkter, kan du redusere arbeidsmengden kreves under vareregistrering og -mottak. Leverandører kan gi produktinformasjon elektronisk via et forhåndsvarsel for forsendelse (ASN) som deretter registreres automatisk i systemet. Informasjonen i forhåndsvarselet for forsendelse inneholder produktantallet som leveres og datoen de leveres. Forhåndsvarselet for forsendelse kan også omfatte informasjon som parti- eller serienumre. Registrering av forhåndsvarsel for forsendelse utføres i modulen **Transportstyring**.
 
-## Registrering
-<a id="registration" class="xliff"></a>
+## <a name="registration"></a>Registrering
 Registrering av produktmottak skjer ofte i mottakssoner på et lager. Det utføres ved hjelp av en håndholdt enhet eller via ankomstjournaler. Du kan eventuelt manuelt registrere produktmottak ved hjelp av handlingen **Registrering** på siden **Bestilling**. I begge tilfeller merkes produkter som **Registrert**. Legg merke til at produktene ennå ikke er merket som **Mottatt**.  
 
 Produkter som er mottatt i lageret kan gå gjennom kvalitetsinspeksjon før de er plassert på lageret. Kvalitetsordrer eller karanteneordrer kan brukes til å utføre kvalitetskontroll. Hvis kvalitetsordrer brukes, kan du konfigurere prosessen for å blokkere produkter midlertidig via en reservasjon mens de kontrolleres. Hvis karanteneordrer brukes, flyttes produkter til et annet lager for inspeksjon. Dette lageret kalles karantenelageret. I begge kvalitetsinspeksjonsprosessene kan noen av varene kasseres fordi de ikke samsvarer med forventet kvalitet, eller fordi kvalitetsinspeksjonen omfatter destruktiv testing av et utvalg av produktet.
 
-## Produktkvittering
-<a id="product-receipt" class="xliff"></a>
+## <a name="product-receipt"></a>Produktkvittering
 Vanligvis brukes handlingen **Produktmottak** på siden **Bestillinger** til å merke produkter som **Mottatt** på bestillingen. Siden **Posterer produktkvittering** har flere forskjellige alternativer for antallet som er registrert som mottatt. Du kan for eksempel sette feltet **Antall** til **Bestilt antall** eller **Motta nå-antall**. Hvis en prosess for ankomst i lageret er brukt, du vil ofte sette dette feltet til **Registrert antall**. Du kan endre antallet for hver ordrelinje som vil bli merket som **Mottatt**, for å ta hensyn til eventuelle avvik, for eksempel underlevering og overlevering. Under produktmottak må du angi en identifikator for produktmottak, som vanligvis er en referanse til følgeseddelen fra leverandøren. Denne identifikatoren er nødvendig for regnskap, fordi den gjør det mulig å aktivere kontrollere eller revisjoner av leverandørfølgesedler mot det som er mottatt, og registrert lager eller utgifter.  
 
 Hvis en ansatt bestilte varer ved hjelp av en innkjøpsrekvisisjon, kan den ansatt bli bedt om å bekrefte mottak av produktet selv. Du kan konfigurere denne virkemåten ved hjelp av en arbeidsflyt. Du kan konfigurere arbeidsflytbetingelsene slik at de samsvarer med forretningsprosessen.  
@@ -66,8 +62,7 @@ Når produktmottak er behandlet på bestillingen, sette bestillingsstatusen til 
 
 Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Bestilling**. Informasjonen i journalene inneholder informasjon om antall, datoer og dimensjoner.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)

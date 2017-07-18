@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Prosjektstyring og regnskap
-<a id="project-management-and-accounting" class="xliff"></a>
+# <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,14 +34,12 @@ Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for �
 
 Et prosjekt er en gruppe aktiviteter som er utformet for å tilby en tjeneste, produsere et produkt eller oppnå et resultat. Prosjekter forbruker ressurser og genererer økonomiske resultater i form av inntekter eller aktiva.
 
-## Prosjekter på tvers av bransjer
-<a id="projects-across-industries" class="xliff"></a>
+## <a name="projects-across-industries"></a>Prosjekter på tvers av bransjer
 Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor. [![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 I et telefonsenter kan en henvendelse om kundestøtte brukes til å beskrive et sett med handlinger som kreves for å løse problemet til kunden. Konsulentfirmaer, for eksempel administrasjon eller teknisk rådgivning organisasjoner eller reklamebyråer, refererer til sine aktiviteter som prosjekter. I markedsføring representerer en kampanje et sett med arbeid som skal leveres. I prosjektbasert produksjon angir en produksjonsordre det ulike arbeidet som må gjøres for å produsere ferdige varer. Uansett hvilket navn du bruker for dem, omfatter disse prosjektene ressurser, tidsplaner og kostnader, og funksjonaliteten for prosjektstyring og regnskap i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations kan bidra i planleggingen, utførelsen og analysen av disse prosjektene.
 
-## Prosjektfaser
-<a id="project-phases" class="xliff"></a>
+## <a name="project-phases"></a>Prosjektfaser
 Selv om denne prosessflyten er rettet mot eksterne prosjekter eller prosjekter som fullføres for én eller flere kunder, gjelder også funksjonaliteten for interne prosjekter som bare består av kostnader. 
 
 ![Tre stadier i et prosjekt](./media/3-stages-of-a-project.png) 
@@ -53,12 +50,10 @@ Som vist i illustrasjonen ovenfor kan prosjektstyring og regnskap deles inn i tr
 2.  Utfør
 3.  Analyser
 
-## Starte prosjektet
-<a id="initiate-the-project" class="xliff"></a>
+## <a name="initiate-the-project"></a>Starte prosjektet
 Under prosjektstart oppstår flere viktige prosesser. Du kan bruke et prosjekttilbud til å kommunisere anslått arbeidskraft, utgifter og materialer til kunden. Du kan registrere faktureringvilkårene, grenser og avtaler i en prosjektkontrakt. Du kan bruke en prosjektstrukturplan (WBS) til å planlegge og beregne arbeidet. Du kan definere prognoser og budsjetter for å lede prosjektkjøringen. Illustrasjonen nedenfor viser strukturen til et prosjekt.[![prosjektstruktur](./media/project-structure1.jpg)](./media/project-structure1.jpg)  
 
-### Opprett prosjekttilbud
-<a id="create-project-quotations" class="xliff"></a>
+### <a name="create-project-quotations"></a>Opprett prosjekttilbud
 
 I den første salgsfasen av et prosjekt kan du bruke et prosjekttilbud til å gi kunden et ikke-bindende tilbud. Et tilbud kan inneholde elementer, som varene og tjenestene som tilbudet er gitt for, grunnleggende kontaktinformasjon, spesielle forretningsavtaler og rabatter, og mulige avgifter og tillegg.
 
@@ -66,27 +61,23 @@ Du kan også utstede et garantibrev for en prosjekttilbudstransaksjon mellom org
 
 Hvis du vil ha mer informasjon, kan du se [Prosjekttilbud](project-quotations.md).
 
-### Opprett prosjektkontrakter
-<a id="create-project-contracts" class="xliff"></a>
+### <a name="create-project-contracts"></a>Opprett prosjektkontrakter
 
 Når du inngår en avtale med en kunde eller en annen finansieringskilde for å fullføre et prosjekt, må du først opprette en prosjektkontrakt. Når du har opprettet prosjektet, må du deretter tilordne det til den tilsvarende kontrakten. Prosjekttypen du oppretter for en prosjektkontrakt, fastsetter metoden som brukes til å fakturere prosjektkundene. Du kan endre en prosjektkontrakt og det tilknyttede prosjektet, men du kan ikke endre prosjekttypen. Hvis du vil ha mer informasjon om prosjekttyper, kan du se delen «Opprette prosjekter».
 
 Hvis du vil ha mer informasjon om prosjektkontrakter, kan du se [Prosjektkontrakter](project-contracts.md).
 
-### Opprette arbeidsnedbrytningsstrukturer
-<a id="create-work-breakdown-structures" class="xliff"></a>
+### <a name="create-work-breakdown-structures"></a>Opprette arbeidsnedbrytningsstrukturer
 
 Detaljnivået i en arbeidsnedbrytningsstruktur avhenger av nøyaktighetsnivået som kreves i estimater, og sporingsnivået som er nødvendig mot disse estimatene. Prosjekter som har svært lite slingringsmonn i tidsplan eller kostnader, krever vanligvis en mer detaljert arbeidsnedbrytningsstruktur samt grundig sporing av arbeidsfremdriften og kostnadene mot arbeidsnedbrytningsstrukturen. 
 
 Hvis du vil ha mer informasjon, kan du se [Arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
 
-### Opprette prosjektprognoser og -budsjetter
-<a id="create-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="create-project-forecasts-and-budgets"></a>Opprette prosjektprognoser og -budsjetter
 
 Du kan bruke prognose hvis organisasjonen har et driftsperspektiv og fokuserer på inntekter og kostnader som er avledet fra bestemte transaksjoner. Hvis organisasjonen imidlertid fokuserer mer på økonomiske beløp, kan du bruke budsjettering. Hver metode har sine fordeler. Hvis du vil ha mer informasjon, kan du se [Prosjektprognoser og -budsjetter](project-forecasts-budgets.md).
 
-### Opprett prosjekter
-<a id="create-projects" class="xliff"></a>
+### <a name="create-projects"></a>Opprett prosjekter
 
 Du kan opprette seks typer prosjekter i Microsoft Finance and Operations. Hver prosjekttype er satt opp forskjellig for kostnader og inntektsføring. Prosjekttypen du velger er avhengig av formålet med prosjektet. Tabellen nedenfor beskriver den vanlige bruken av hver prosjekttype.
 
@@ -101,8 +92,7 @@ Du kan opprette seks typer prosjekter i Microsoft Finance and Operations. Hver p
 | Klokkeslett              | Tidsprosjekter brukes til å spore tid som er knyttet til ikke-belastbare og ikke-produktive aktiviteter, for eksempel et prosjekt for å spore sykefravær for arbeidere. Transaksjoner i tidsprosjekter posteres ikke i finans. I stedet tas de med i arbeider rapporter for utnyttelse av arbeider. Bare timetransaksjoner kan registreres i tidsprosjekter. Du bruker en timejournal eller timeregistrering til å registrere timene i prosjektet. Når timene registrert, vises de som prosjekttransaksjoner, men uten tilsvarende bilagstransaksjoner. **Obs!** Transaksjoner på tidsprosjekter gjenspeiles ikke på siden **Poster kostnader**, **Avsett inntekt** eller **Opprett fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
-### Tilordne arbeidere, kategorier og ressurser
-<a id="assign-workers-categories-and-resources" class="xliff"></a>
+### <a name="assign-workers-categories-and-resources"></a>Tilordne arbeidere, kategorier og ressurser
 
 Du kan planlegge arbeiderressurser basert på kravene og tidsplanen for et prosjekt eller på kompetansen og tilgjengeligheten til arbeidere. Når du bruker funksjonene for ressursplanlegging, kan du effektivt distribuere organisasjonens arbeidere. Du kan raskt finne de best kvalifiserte arbeiderne som har anledning til å arbeide på prosjektet. Du kan også enkelt se hvordan du kan bruke disse arbeiderne bedre i løpet av prosjektet. 
 
@@ -115,26 +105,22 @@ Her er noen av måtene du kan bruke funksjonaliteten for ressursplanlegging på:
 -   Se gjennom informasjon om bruk av arbeider i en sammendragsvisning (for eksempel etter avdeling eller etter arbeider) eller i en detaljert visning (for eksempel etter arbeidere i en avdeling eller etter ukentlige detaljer for hver arbeider).
 -   Endre ressurstildelinger for ulike tidsenheter, for eksempel dag, uke eller måned, for å optimalisere hvordan arbeiderne brukes.
 
-## Utføre prosjektet
-<a id="execute-the-project" class="xliff"></a>
+## <a name="execute-the-project"></a>Utføre prosjektet
 Under prosjektutførelse registrerer teammedlemmer eller ledere arbeid og utgifter som er påløpt, ved å bruke timeregistreringer, utgiftsrapporter og andre forretningsdokumenter. Prosjektledere har verktøy de kan bruke til å overvåke forbruk av budsjettbeløp for prosjektet. Prosjektledere kan også bestille, plukke eller levere materialer til prosjekter ved hjelp av bestillinger og andre forretningsdokumenter. Fakturaer klargjøres og godkjennes, slik at kunder kan faktureres for pågående arbeid. Til slutt gjenkjennes omsetning i denne prosessen som påvirkning i organisasjonens økonomi.
 
-### Styre arbeidsnedbrytningsstrukturer
-<a id="manage-work-breakdown-structures" class="xliff"></a>
+### <a name="manage-work-breakdown-structures"></a>Styre arbeidsnedbrytningsstrukturer
 
 En arbeidsnedbrytningsstruktur er en beskrivelse av arbeid som skal fullføres for et prosjekt. En arbeidsnedbrytningsstruktur er et hierarki av oppgaver. Den representerer ikke bare arbeidet for hver oppgave, men også størrelsen, kostnaden og varigheten til oppgaven. 
 
 Hvis du vil ha mer informasjon, kan du se [Arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
 
-### Behandle prosjektprognoser og -budsjetter
-<a id="manage-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="manage-project-forecasts-and-budgets"></a>Behandle prosjektprognoser og -budsjetter
 
 Du kan styre og kontrollere prosjekter på to måter: prosjektprognoser og prosjektbudsjetter. Du kan bruke prognose hvis organisasjonen har et driftsperspektiv og fokuserer på inntekter og kostnader som er avledet fra bestemte transaksjoner. Hvis organisasjonen imidlertid fokuserer mer på økonomiske beløp, kan du bruke budsjettering.
 
 Hvis du vil ha mer informasjon, kan du se [Prosjektprognoser og -budsjetter](project-forecasts-budgets.md).
 
-### Opprette produksjonsordrer
-<a id="create-production-orders" class="xliff"></a>
+### <a name="create-production-orders"></a>Opprette produksjonsordrer
 
 En prosjektrelatert produksjonsordre kan kobles til en salgsordre eller et varebehov ved hjelp av metoden for ferdig vare eller metoden for forbrukt vare. Hvis produksjonsordren ble opprettet manuelt, er det i tillegg ingen kobling mellom produksjonsordren og salgsordren eller et varebehovet (ingen kobling til ordre). Hvis produksjonsordren imidlertid ble opprettet automatisk for å oppfylle en salgsordre eller et varebehov, er det en kobling mellom produksjonsordren og salgsordren eller varebehovet (kobling til ordre). 
 
@@ -145,13 +131,11 @@ Bruk én av følgende metoder avhengig av kombinasjonene av disse faktorene:
 -   **Forbrukt vare/kobling til ordre** – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen **Startet** eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjon. Når følgeseddelen blir oppdatert etter varebehovet, blir det ikke postert noen kostnader. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
 -   ****Forbrukt vare/ingen kobling til ordre**** – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen **Startet** eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjonen. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
 
-### Anskaffe produkter og tjenester
-<a id="procure-products-and-services" class="xliff"></a>
+### <a name="procure-products-and-services"></a>Anskaffe produkter og tjenester
 
 Kjøp og salg av varer er utbredte aktiviteter i mange bedrifter med fokus på prosjekter.
 
-#### Bestillinger for prosjekter
-<a id="purchase-orders-for-projects" class="xliff"></a>
+#### <a name="purchase-orders-for-projects"></a>Bestillinger for prosjekter
 
 Formålet med bestillingen fastsetter når bestillingen skal forbrukes, og derfor når varene skal belastes på et prosjekt.
 
@@ -191,8 +175,7 @@ Formålet med bestillingen fastsetter når bestillingen skal forbrukes, og derfo
 </tbody>
 </table>
 
-#### Salgsordrer for prosjekter
-<a id="sales-orders-for-projects" class="xliff"></a>
+#### <a name="sales-orders-for-projects"></a>Salgsordrer for prosjekter
 
 I Prosjektstyring og regnskap kan du registrere vareforbruk på flere ulike måter. Du kan selge eller kjøpe varer fra et prosjekt, eller reservere varer for et prosjekt. 
 
@@ -215,8 +198,7 @@ Tabellen nedenfor viser bestillingsmetodene for varer og beskriver hvordan varen
 | Varebehov  | Angi varer som ikke skal brukes umiddelbart. Denne metoden gjør at du kan spore hvor mange varer som er brukt i én varebehovspost.    | Varetransaksjoner forbrukes når følgeseddelen oppdateres. Varebehovet blir med andre ord opprettet når følgeseddelen posteres. |
 | Bestillinger   | Legg inn transaksjoner på ett av tre steder, avhengig av kjøpsmetoden.                                                                              | Varetransaksjoner brukes når følgeseddelen oppdateres, eller når kunden eller leverandøren faktureres.                                      |
 
-### Behandle prosjektfakturaer
-<a id="process-project-invoices" class="xliff"></a>
+### <a name="process-project-invoices"></a>Behandle prosjektfakturaer
 
 Prosjekttypen avgjør hvilken faktureringsprosess som skal brukes. Det er bare de to eksterne prosjekttyper (Etter regning og Fastpris) som kan faktureres. Etter regning-prosjekter og fastprisprosjekter er alltid knyttet til prosjektkontrakt. 
 
@@ -226,8 +208,7 @@ Før du oppretter en kundefaktura for et prosjekt, kan du opprette en foreløpig
 Hvis du vil ha mer informasjon om hvordan du behandler prosjektfakturaer, kan du se [Prosjektfakturering](../accounts-payable/project-invoicing.md).
 
 
-### Beregne kostnaden for å fullføre et prosjekt
-<a id="calculate-the-cost-to-complete-a-project" class="xliff"></a>
+### <a name="calculate-the-cost-to-complete-a-project"></a>Beregne kostnaden for å fullføre et prosjekt
 
 Når du oppretter et estimat, kan du velge metoden som brukes til å beregne kostnaden for å fullføre prosjektet. Du velger en metode i feltet **Metode for kostnad som skal fylles ut** på siden **Opprett estimat**. Metoden du velger, brukes separat på hver kostnadslinje i kostnadsestimatet. Når en linje har statusen **Opprettet**, kan du endre metoden som brukes for den, på siden **Kostnadsestimat**-siden. 
 
@@ -279,21 +260,18 @@ Finance and Operations reduserer ikke prognoseberegnede estimater automatisk. De
 </tbody>
 </table>
 
-## Analysere prosjektet
-<a id="analyze-the-project" class="xliff"></a>
+## <a name="analyze-the-project"></a>Analysere prosjektet
 På det mest grunnleggende nivået brukes et prosjekt til å gruppere transaksjoner der kostnader registreres, og deretter til å postere disse kostnadene i økonomimodulen. 
 
 Disse transaksjonene er vanligvis et resultat av forretningsdokumenter, for eksempel timeregistreringer, utgiftsrapporter, leverandørfakturaer eller lagertransaksjoner. Livssyklusen til et prosjekt starter vanligvis med estimater, prognoser og budsjetter som bidrar til å planlegge og forutse arbeidsmengden i og den økonomiske innvirkningen på prosjektet. Når du analyserer et prosjekt, kan du evaluere ikke bare transaksjonene som ble utført i løpet av prosjektet, men også nøyaktigheten til beregningene og prognosene, utnyttelsesraten for prosjektgruppemedlemmene og hvor vellykket prosjektet var totalt sett.
 
-### Analysere kontantstrøm
-<a id="analyze-cash-flow" class="xliff"></a>
+### <a name="analyze-cash-flow"></a>Analysere kontantstrøm
 
 Bruk kontantstrømovervåking til å gå gjennom prognoseberegnede kontantstrømmer og faktiske kontantstrømmer for et prosjekt. Du kan gå gjennom kontantstrømmer mens et prosjekt pågår, eller du kan velge å vise kontantstrømmene for et fullført prosjekt. 
 
 Når du overvåker kontantstrømmer, kan du evaluere ett enkelt prosjekt, bruke rapportene til å vise flere prosjekter og overføre kontantstrømmer for prosjekt til kontantstrømprognosene i økonomimodulen.
 
-#### Prognoser for kontant innflyt
-<a id="cash-inflow-forecasting" class="xliff"></a>
+#### <a name="cash-inflow-forecasting"></a>Prognoser for kontant innflyt
 
 Du kan lage en prognose for kontant innflyt for et valgt prosjekt basert på oppsettet. Hvis prosjektdatoen for eksempel er 5. mars 2012 og du fakturerer 31. mars 2012, kan du lage en prognose for forfallsdatoen og den forventede salgsbetalingsdatoen slik:
 
@@ -309,8 +287,7 @@ De generelle bufferdagene kan enten erstatte de individuelle bufferdagene eller 
 
 Definer individuelle bufferdager i kontrakten for prosjektet. Dagene beregnes på grunnlag av både forfallsdatoen for salgsfaktura og organisasjonens erfaring med en kundes betalingsmønster.
 
-#### Faktisk kontant innflyt
-<a id="actual-cash-inflow" class="xliff"></a>
+#### <a name="actual-cash-inflow"></a>Faktisk kontant innflyt
 
 Faktisk kontant innflyt ligner på prognosen, men du kan begynne beregningene fra første fakturadato. Her er et eksempel:
 
@@ -318,8 +295,7 @@ Faktisk kontant innflyt ligner på prognosen, men du kan begynne beregningene fr
 -   **Forfallsdato:** 16. mars 2012. Betalingsbetingelsene er satt til 14 dager.
 -   **Forventet salgsbetalingsdato:** 29. mars 2012. Beregningen omfatter tre generelle bufferdager og 10 individuelle bufferdager.
 
-#### Kostnadsprognose
-<a id="cost-forecasting" class="xliff"></a>
+#### <a name="cost-forecasting"></a>Kostnadsprognose
 
 Basert på dagene som er definert, kan kostnadsbetalingsdatoen være forskjellig fra prosjektdatoen. I så fall beregnes kostnadsbetalingsdatoen ved å legge sammen antall dager fra prosjektdatoen med antall dager i betalingsbetingelsene. 
 
@@ -348,16 +324,14 @@ Når alle salgs- og leverandørfakturaer er fullført, kan du vise relasjonen me
 | Kontant utflyt  | Total kostnad              |
 | Netto kontantstrøm | Bruttofortjeneste            |
 
-### Gå gjennom kostnader
-<a id="review-costs" class="xliff"></a>
+### <a name="review-costs"></a>Gå gjennom kostnader
 
 Du kan overvåke de påløpte kostnadene for organisasjonen i løpet av et prosjekt på **Kostnadskontroll**-siden. Når du sammenligner de opprinnelige budsjetterte kostnadene for prosjektet med gjeldende faktiske kostnader og igangsatt kost, kan du finne ut om prosjektet er i rute eller over eller under budsjettet. 
 
 > [!NOTE] 
 > Når du bruker **Kostnadskontroll**-siden til å vise gjeldende status for prosjektkostnader, bruker du prognosemodellene som ble valgt for det opprinnelige og gjenstående budsjettet. Hvis du velger andre prognosemodeller når du beregner kostnader, blir ikke resultatene av beregningen nøyaktige.
 
-#### Vise gjenstående budsjettbeløp
-<a id="viewing-the-remaining-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-remaining-budgeted-amounts"></a>Vise gjenstående budsjettbeløp
 
 Hvis **Gjenstående budsjett** er valgt som metode for kostnadskontroll på siden **Parametere for prosjektstyring og regnskap**, beregner **Kostnadskontroll**-siden kostnader som ikke har blitt postert som faktiske kostnader eller merket som igangsatt. Beløpene i **Generelt**-fanen i den nedre ruten på **Kostnadskontroll**-siden beregnes slik:
 
@@ -374,8 +348,7 @@ Du kan vise en sammenligning av de totale forventede kostnadene og det opprinnel
 -   **Avvik basert på antallet** – Den totale differansen mellom den opprinnelige prognosen og samlet prognose. Denne forskjellen kan uttrykkes matematisk som (totalt prognoseantall) × (opprinnelig gjennomsnittpris – total gjennomsnittpris). Denne beregningen gjelder bare prosjekttimer.
 -   **Avvik basert på pris** – Den totale differansen mellom den opprinnelige prognosen og samlet prognose. Denne forskjellen kan uttrykkes matematisk som (opprinnelig prognosepris) × (opprinnelig prognoseantall – totalt prognoseantall). Denne beregningen gjelder bare prosjekttimer.
 
-#### Vise totale budsjettbeløp
-<a id="viewing-the-total-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-total-budgeted-amounts"></a>Vise totale budsjettbeløp
 
 Hvis **Totalt budsjett** er valgt som metode for kostnadskontroll på siden **Parametere for prosjektstyring og regnskap**, beregner **Kostnadskontroll**-siden de faktiske kostnadene og de totale kostnadene for prosjektet for å hjelpe deg å oppdage en eventuell differanse mellom dem. Beløpene i kolonnene i den nedre ruten i **Generelt**-fanen på **Kostnadskontroll**-siden beregnes slik:
 
@@ -392,8 +365,7 @@ Du kan vise differansen mellom det totale budsjettet og det opprinnelige budsjet
 -   **Avvik basert på antallet** – Den totale differansen mellom det opprinnelige budsjettet og det totale budsjettet. Dette beløpet beregnes ved å trekke det totale antallet timer i budsjettet fra antallet timer i det opprinnelige budsjettet, og deretter multiplisere differansen med kostprisen i det opprinnelige budsjettet. Denne differansen kan uttrykkes matematisk som (kostpris i opprinnelig budsjett) × (antall timer i opprinnelig budsjett – totalt antall timer i budsjett). Denne beregningen gjelder bare prosjekttimer.
 -   **Avvik basert på pris** – Dette beløpet beregnes ved å trekke det totale antallet timer i budsjettet fra antallet timer i det opprinnelige budsjettet, og deretter multiplisere differansen med det totale timeforbruket. Denne differansen kan uttrykkes matematisk som (antall timer brukt totalt) × (antall timer i opprinnelig budsjett – totalt antall timer i budsjett). Denne beregningen gjelder bare prosjekttimer.
 
-### Analysere utnyttelse
-<a id="analyze-utilization" class="xliff"></a>
+### <a name="analyze-utilization"></a>Analysere utnyttelse
 
 Utnyttelsesraten er prosentandelen av tid en arbeider bruker på fakturerbart eller produktivt arbeid i en bestemt arbeidsperiode. Fakturerbare timer er arbeiderens timer som en bestemt kunde kan belastes for. 
 
@@ -420,8 +392,7 @@ På **Timebruk**-siden kan du vise den samlede utnyttelsesraten i prosent for en
 
 Når du beregner utnyttelsesrate for en arbeider, kan du bruke normtimene eller inkluderte timer. Hvis du bruker inkluderte timer, må du kontrollere at arbeidere registrerer all arbeidstid for timeregistreringsperiodene, fordi beregningen uttrykkes som en prosent av timer som oppgis. Når du beregner timebruksraten for et prosjekt, en prosjektkontrakt, en kundepost eller en kategori, må du bruke inkluderte timer i beregningen.
 
-### Gå gjennom prosjektoppgaver
-<a id="review-project-statements" class="xliff"></a>
+### <a name="review-project-statements"></a>Gå gjennom prosjektoppgaver
 
 Du kan opprette en prosjektoppgave for å få en rask oversikt over fremdriften til et prosjekt. Når du kjører en prosjektoppgave, kan du angi kriteriene som brukes til å beregne oppgaven, ved å foreta valg i **Generelt**-fanen på **Prosjektoppgaver**-siden. Du kan velge om du vil inkludere eller ekskludere følgende informasjon:
 

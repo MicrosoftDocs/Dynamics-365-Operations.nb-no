@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
-<a id="mixed-mode-planning---combine-discrete-process-and-lean-sourcing" class="xliff"></a>
+# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Du kan for eksempel ha kanban-kontroll i monteringen, der materialer forsynes ti
 
 Detaljene for forsyningspolicyene som brukes i hovedplanlegging, avhenger av lagringsdimensjonene som er aktivert som dekningsdimensjoner. Hvis du vil aktivere hovedplanlegging for å kontrollere etterfylling og forsyning for ulike typer lokasjoner (for eksempel ved å skille produksjonen for forskjellige produksjonsenheter, eller ved å skille ulike typer lagre for materialer og ferdigvarer), anbefaler vi at du aktiverer Område og lager som dekningsdimensjoner. Du kan alternativt utelate lager som dekningsdimensjon. I så fall når du bruker avanserte lagerstyring, kontrolleres alle bevegelser på lageret av lagerarbeid, mens all flytting på tvers av lagre styres av uttak-Kanbaner.
 
-## Forsyningspolicyer
-<a id="supply-policies" class="xliff"></a>
+## <a name="supply-policies"></a>Forsyningspolicyer
 Finance and Operations blandet modus-planlegging styrer hvordan et produkt angis og, basert på forsyningen, hvordan avledede behov (forbruk av varer fra en stykkliste \[BOM\]) utstedes. Avhengig av bestillingstypen tilfører systemet automatisk materialer for å oppfylle kravene.  
 
 Forsyningspolicyer kan defineres på produktnivå eller på alle nivåer som støtter dine behov. Du definerer detaljene for forsyningspolicyer på siden **Standard ordreinnstillinger**.  
@@ -61,16 +59,14 @@ Vanligvis opprettes Kanbaner ikke for fremtidige datoer, fordi en kanban har en 
 
 Den samme logikken gjelder for alle andre typer forsyningspolicyer. Langsiktig materialplanlegging er derfor basert på den samme logikken som du forventer å kjøre med de faktiske ordrene etter produksjon og forsyning er godkjent.
 
-## Policy for materialtildeling mellom forsyning – ressursforbruk i stykklister
-<a id="materials-allocation-crosssupply-policy--resource-consumption-on-boms" class="xliff"></a>
+## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Policy for materialtildeling mellom forsyning – ressursforbruk i stykklister
 Ressursforbruk er en viktig funksjonalitet. Med ressursforbruk kan et lager for plukking av materialer velges dynamisk basert på forsyningspolicyen (ordretype), og vedlikehold av stamdata blir enklere.  
 
 Ressursforbruk krever at lageret som materialer plukkes fra, tilordnes basert på måten produktet forsynes på. Ved kjøretid finner med andre ord systemet ressursene som skal brukes for produksjon. Basert på disse ressursene, finner systemet deretter plukklageret.  
 
 For arbeid som er uavhengig av en policy for forsyning, trenger du ikke endre informasjon på Stykklisten Hvis forsyningen endres. For ad hoc-endringer sørger Finance and Operations for at materialer forsynes fra lageret som er riktig.
 
-## Prosessproduksjon – Produksjonstypen
-<a id="process-manufacturing--the-production-type" class="xliff"></a>
+## <a name="process-manufacturing--the-production-type"></a>Prosessproduksjon – Produksjonstypen
 Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel**, **koprodukt**, **biprodukt** eller **planleggingselement**. Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
 
 

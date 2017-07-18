@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,25 +25,21 @@ ms.openlocfilehash: 5c5f06d1a518963738e446b5032261059d98bf13
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Oversikt over kostnadskontroll
-<a id="cost-control-overview" class="xliff"></a> 
+# <a name="cost-control-overview"></a>Oversikt over kostnadskontroll 
 
 [!include[banner](../includes/banner.md)]
 
 Arbeidsområdet **Kostnadskontroll** er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter. Rapportene i arbeidsområdet blir administrert i sin helhet av regnskapsførere, slik at oppsettet og dataene som brukes til rapportering, blir konsekvent på tvers av hele organisasjonen.
 
-## Konfigurasjon av arbeidsområde for kostnadskontroll
-<a id="cost-control-workspace-configuration" class="xliff"></a>
+## <a name="cost-control-workspace-configuration"></a>Konfigurasjon av arbeidsområde for kostnadskontroll
 
 Regnskapsførere kan definere så mange rapportkonfigurasjoner de trenger for ønsket datasammensetning eller oppsett. En rapportkonfigurasjon består av seks deler, der hver del bidrar til valget av datasammensetningen eller oppsettet.
 
 Hvis du vil konfigurere et arbeidsområde for kostnadskontroll, klikker du på **Kostnadsregnskap** \> **Oppsett** \> **Konfigurasjon av arbeidsområde for kostnadskontroll**.
 
-### Generelt
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Generelt
 
 Du kan opprette et unikt rapportoppsett i hurtigfanen **Generelt**. Navnet på rapporten er en unik identifikator som brukere kan gjenkjenne i arbeidsområdet **Kostnadskontroll**. Du kan også angi om rapporten skal deles eller holdes intern for regnskapsførere.
 
@@ -52,8 +49,7 @@ Du kan opprette et unikt rapportoppsett i hurtigfanen **Generelt**. Navnet på r
 | beskrivelse | Angi en detaljert beskrivelse. |
 | Publisert   | Hvis du setter dette feltet til **Ja**, kan en bruker som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll**:<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li><li>Kontroller for kostnadsobjekt</li></ul>Hvis du setter dette feltet til **Nei**, kan bare brukere som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll**:<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li></ul> |
 
-### Datafiltrering
-<a id="data-filtering" class="xliff"></a>
+### <a name="data-filtering"></a>Datafiltrering
 
 Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. Brukere av denne rapporten kan se verdiene i den etter at kildedataene er behandlet.
 
@@ -66,8 +62,7 @@ Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. B
 | Opprinnelig budsjettversjon                                           | Velg budsjettversjons-ID-en som fungerer som det opprinnelige budsjettet i forbindelse med denne rapporten. |
 | Revidert budsjettversjon                                            | Velg budsjettversjons-ID-en som fungerer som det reviderte budsjettet i forbindelse med denne rapporten. |
 
-### Tilordne beregningsposter
-<a id="assign-calculation-records" class="xliff"></a>
+### <a name="assign-calculation-records"></a>Tilordne beregningsposter
 
 Beregningen av indirekte kostnader utfører beregning av kildedataene i flere trinn, for eksempel kostnadsdistribusjon, kostnadstildeling og klassifisering av kostnadsatferd. Du kan utføre flere beregninger av indirekte kostnader for samme regnskapsperiode, i tilfelle du oppdager manglende kildedata, eller hvis regler må oppdateres. Hver beregning av indirekte kostnader lagres med en unik ID. Regnskapsføreren kan velge en bestemt ID for beregning av indirekte kostnader. Brukere av rapporten, for eksempel ledere, kan se resultatet av beregningen av indirekte kostnader i arbeidsområdet **Kostnadskontroll**.
 
@@ -78,8 +73,7 @@ Beregningen av indirekte kostnader utfører beregning av kildedataene i flere tr
 | Budsjettversjon         | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
 | Revidert budsjettversjon | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
 
-### Regnskapsperioder per kolonne
-<a id="fiscal-periods-per-column" class="xliff"></a>
+### <a name="fiscal-periods-per-column"></a>Regnskapsperioder per kolonne
 
 I hurtigfanen **Regnskapsperioder per kolonne** bestemmer regnskapsføreren hvilken regnskapsperiode som skal vises i rapportoppsettet.
 
@@ -92,8 +86,7 @@ Verdiene i de merkede kolonnene multipliseres med de merkede verdiene i hurtigfa
 | Hittil i år         | Saldoen hittil i år vises. Følgende formel brukes:<br>YearToDate (gjeldende regnskapsperiode)<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdien for **Hittil i år** oppdateres i samsvar med dette.</blockquote> |
 | Gjennomsnitt hittil i år | Gjennomsnittet hittil i år vises. Følgende formel brukes:<br>(YearToDate [gjeldende regnskapsperiode]) ÷ (antall [gjeldende regnskapsperiode])<p><strong>Eksempel</strong></p><ul><li>**Medlem av statistisk dimensjon:** heltidsansatte</li><li>**Gjeldende dato:** 21.03.2017</li><li>**Periode:** regnskapsperiode 1, regnskapsperiode 2, regnskapsperiode 3</li><li>**Størrelse:** 10, 10, 12</li></ul>I dette tilfellet er **Gjennomsnitt hittil i år** = (10 + 10 + 12) ÷ 3 = 10,67<p>Verdien for **Gjennomsnitt hittil i år** kan beregnes for medlemmer av dimensjon for kostnadselement og medlemmer av statistisk dimensjon.</p><blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdiene for **Hittil i år** og **Gjennomsnitt hittil i år** oppdateres i samsvar med dette.</blockquote> |
 
-### Kolonner som skal vises for kostnader
-<a id="columns-to-display-for-costs" class="xliff"></a>
+### <a name="columns-to-display-for-costs"></a>Kolonner som skal vises for kostnader
 
 I hurtigfanen **Kolonner som skal vises for kostnader** bestemmer regnskapsføreren hvilke kolonner rapportoppsettet skal inneholde. Det finnes tre kategorier: Fast kostnad, Variabel kostnad og Uklassifisert kostnad.
 
@@ -105,8 +98,7 @@ I hurtigfanen **Kolonner som skal vises for kostnader** bestemmer regnskapsføre
 | Total kostnad            | Denne kolonnetypen viser den totale kostnaden (uklassifisert kostnad, fast kostnad og variabel kostnad).<blockquote>[!NOTE]<br>Kolonnetypen viser balansen til enhver tid.</blockquote> |
 | Uklassifisert kostnad     | Denne kolonnetypen viser den uklassifiserte kostnaden.<blockquote>[!NOTE]<br>Denne kolonnen kan brukes til å validere om alle kostnader er riktig klassifisert av beregningen av indirekte kostnader, eller om du må justere reglene for kostnadsatferd.</blockquote> |
 
-### Kolonner som skal vises for budsjetterte kostnader
-<a id="columns-to-display-for-budgeted-costs" class="xliff"></a>
+### <a name="columns-to-display-for-budgeted-costs"></a>Kolonner som skal vises for budsjetterte kostnader
 
 I hurtigfanen **Kolonner som skal vises for budsjetterte kostnader** bestemmer regnskapsføreren hvilke kolonner som skal vises for de valgte budsjettversjonene. Du kan gjøre enkeltvalg for det opprinnelige og reviderte budsjettet.
 
@@ -122,8 +114,7 @@ I hurtigfanen **Kolonner som skal vises for budsjetterte kostnader** bestemmer r
 | Terskel for avviksår   | Angi en terskel for avviket i pengebeløp for året. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**. |
 | Avviksterskel i %      | Angi en terskel for avviket i prosent. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>[!NOTE]<br>Den samme prosentterskelen gjelder for gjeldende periode og år.</blockquote> |
 
-## Arbeidsområde for kostnadskontroll
-<a id="cost-control-workspace" class="xliff"></a>
+## <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll
 
 Arbeidsområdet **Kostnadskontroll** er utformet som en webrapport. Derfor kan alle ledere som er ansvarlige for et kostnadsobjekt, få tilgang som beskrevet i [Definere tilgangsrettigheter til kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md).
 
@@ -137,13 +128,11 @@ Verdiene i regnskapskalenderperioden fastsettes av rapportnavnet og regnskapskal
 
 Brukere kan velge aggregeringsnivået som saldoer skal vises på, i dimensjonshierarkiet for kostnadsobjekt. Når du aktiverer tilgangsnivåsikkerhet, kontrollerer du tillatelsene slik at brukere bare kan velge hierarkinivåene de har fått tilgang til. Derfor kan de bare se de aggregerte saldoene de har fått tilgang til.
 
-### Legg til eller fjern kolonner
-<a id="add-or-remove-columns" class="xliff"></a>
+### <a name="add-or-remove-columns"></a>Legg til eller fjern kolonner
 
 Brukere kan tilpasse kolonnene i en rapport til behovene deres.
 
-### Vis detaljer
-<a id="view-details" class="xliff"></a>
+### <a name="view-details"></a>Vis detaljer
 
 Brukere kan drille ned i detaljene bak saldoene som vises i arbeidsområdet. Hvis brukere velger en dimensjonshierarkinode for kostnadselement og deretter klikker på **Vis detaljer**, viser dialogboksen **Kostnadselementdetaljer** detaljert informasjon for noden.
 

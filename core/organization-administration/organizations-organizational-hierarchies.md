@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,31 +23,26 @@ ms.openlocfilehash: 4a7e1253d83e9212d423868a1f841b6944b07ad7
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Organisasjoner og organisasjonshierarkier
-<a id="organizations-and-organizational-hierarchies" class="xliff"></a>
+# <a name="organizations-and-organizational-hierarchies"></a>Organisasjoner og organisasjonshierarkier
 
 [!include[banner](../includes/banner.md)]
 
 
 En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 
-Organisasjoner
-<a id="organizations" class="xliff"></a>
+<a name="organizations"></a>Organisasjoner
 -------------
 
 I Microsoft Dynamics 365 for Finance and Operations kan du definere følgende typer interne organisasjoner: juridiske enheter, driftsenheter og team.
 
 Alle interne organisasjoner er typer av **Part**-enheten. Disse organisasjonene bruker derfor adresseboken til å lagre adresse- og kontaktinformasjon. En part, som kan være enten en person eller organisasjon, kan tilhøre én eller flere adressebøker.
-### Juridiske enheter
-<a id="legal-entities" class="xliff"></a>
+### <a name="legal-entities"></a>Juridiske enheter
 
 En juridisk enhet er en organisasjon som har en registrert eller lovfestet juridisk struktur. Juridiske enheter kan inngå juridiske kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen. Et firma er en type juridisk enhet. I denne versjonen av Microsoft Dynamics 365 for Finance and Operations er firmaer det eneste typen juridisk enhet som du kan opprette, og hver juridisk enhet er tilknyttet en firma-ID. Denne tilknytningen finnes fordi noen funksjonsområder i programmet bruker en firma-ID eller dataområde-ID, i sine datamodeller. I disse funksjonsområdene brukes firmaer som en grense for datasikkerhet. Brukere har bare tilgang til data for firmaet de er logget på.
 
-### Driftsenheter
-<a id="operating-units" class="xliff"></a>
+### <a name="operating-units"></a>Driftsenheter
 
 En driftsenhet er en organisasjon som brukes til å fordele kontrollen over økonomiske ressurser og driftsprosesser i en virksomhet. Personer i en driftsenhet har plikt til å gjøre mest mulig ut av knappe ressurser, forbedre prosesser og gjøre rede for egen ytelse. I Microsoft Dynamics 365 for Finance and Operations omfatter driftsenhetstypene kostsentre, forretningsenheter, verdistrømmer, avdelinger og detaljhandelskanaler. Følgende tabell inneholder mer informasjon om hver type driftsenhet.
 | Driftsenhetstype | Beskrivelse                                                                                                                                    | Formål                                                                                                                                 |
@@ -57,8 +53,7 @@ En driftsenhet er en organisasjon som brukes til å fordele kontrollen over øko
 | Avdeling          | En driftsenhet som representerer en kategori eller en funksjonell del i en organisasjon som utfører en bestemt oppgave, for eksempel salg eller regnskap. | Brukes for å rapportere om funksjonsområder. En avdeling kan ha resultatansvar, og kan bestå av en gruppe kostsentre.   |
 | Detaljhandelkanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk eller markedsplass på Internett.                                          | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter.                                  |
 
-### Team
-<a id="teams" class="xliff"></a>
+### <a name="teams"></a>Team
 
 Et team er en organisasjon der medlemmene deler et felles ansvar, en felles interesse eller et felles mål. Team kan ikke brukes i organisasjonshierarkier.
 Organisasjonshierarkier

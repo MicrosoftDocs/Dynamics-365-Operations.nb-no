@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,23 +23,19 @@ ms.openlocfilehash: b20f526d20d357750777d0f9bda26e4d9d55b335
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Finansresultat-innhold for Power BI
-<a id="financial-performance-power-bi-content" class="xliff"></a>
+# <a name="financial-performance-power-bi-content"></a>Finansresultat-innhold for Power BI
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver Power BI-innholdet om **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 
 Du kan få tilgang til **Finansresultat** i Power BI fra Microsoft Dynamics Lifecycle Services (LCS) and from PowerBI.com.
 
-### Tilgjengelig fra LCS
-<a id="available-from-lcs" class="xliff"></a>
+### <a name="available-from-lcs"></a>Tilgjengelig fra LCS
 Power BI-innhold om **finansresultat** som er tilgjengelig fra LCS, støtter følgende versjoner:
 
 - Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
@@ -46,16 +43,13 @@ Power BI-innhold om **finansresultat** som er tilgjengelig fra LCS, støtter fø
 
 Du kan finne Power BI-innholdet i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og implementerer den i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
-### Tilgjengelig fra PowerBI.com
-<a id="available-from-powerbicom" class="xliff"></a>
+### <a name="available-from-powerbicom"></a>Tilgjengelig fra PowerBI.com
 Power BI-innhold om **finansresultat** som er tilgjengelig fra PowerBI.com, støtter Microsoft Dynamics AX versjon 7.0 og 7.0.1. Hvis du vil ha mer informasjon om hvordan du kobler til og laster inn Dynamics AX-data, se [Tilgang til Power BI-innhold fra PowerBI.com](power-bi-home-page.md).
 
-## Hovedkontooppsett
-<a id="main-account-setup" class="xliff"></a>
+## <a name="main-account-setup"></a>Hovedkontooppsett
 Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.
 
-## Instrumentbord og rapporter som er inkludert i Power BI-innholdet
-<a id="dashboard-and-reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Instrumentbord og rapporter som er inkludert i Power BI-innholdet
 Instrumentbordet inneholder fliser med oppsummerte data som er basert på underliggende rapporter. Hver flis viser sammendragsinformasjon for inneværende år for alle firmaer i en organisasjon. Her er noen av flisene:
 
 - Kontant
@@ -91,8 +85,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Følgende enheter ble brukt som grunnlag for Power BI-innholdet om : **finansresultat**:
 
 **Aggregerte dataenheter**

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services
-<a id="download-electronic-reporting-configurations-from-lifecycle-services" class="xliff"></a>
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,8 +59,7 @@ Denne opplæringen leder deg gjennom prosessen med å laste ned nyeste versjon a
 
 **Merk:** Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse disse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte artikler for dette emnet.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Administrere brukere av leverandørsamarbeid
-<a id="manage-vendor-collaboration-users" class="xliff"></a>
+# <a name="manage-vendor-collaboration-users"></a>Administrere brukere av leverandørsamarbeid
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Grensesnittet for leverandørsamarbeid i Microsoft Dynamics 365 for Finance and 
 
 Hvis du vil ha mer informasjon om hvordan du bruker samarbeid med leverandøren hvis du er en innkjøpsansvarlig, kan du se [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
-## Legge til nye kontakter for leverandørsamarbeid
-<a id="add-new-vendor-collaboration-contacts" class="xliff"></a>
+## <a name="add-new-vendor-collaboration-contacts"></a>Legge til nye kontakter for leverandørsamarbeid
 Hvis du vil at noen skal ha tilgang til leverandørsamarbeid, må de først legges til som en kontakt for leverandørsamarbeid. Du kan også legge til kontakter for ansatte i firmaet som ikke bruker leverandørsamarbeid. De kan for eksempel være kontakten for andre typer innkjøpsinformasjon. Nye kontakter legges til på siden **Alle kontakter**, som åpnes fra menyen **Leverandørsamarbeid** &gt; **Kontakter**. Slik legger du til en ny kontakt:
 
 1.  Klikk **Ny**.
@@ -49,8 +47,7 @@ Hvis du vil at noen skal ha tilgang til leverandørsamarbeid, må de først legg
 
 Hvis du vil slette en kontakt, er det bare mulig å slette de du har opprettet.
 
-## Brukerforespørsler for leverandørsamarbeid
-<a id="vendor-collaboration-user-requests" class="xliff"></a>
+## <a name="vendor-collaboration-user-requests"></a>Brukerforespørsler for leverandørsamarbeid
 Brukerforespørsler for leverandørsamarbeid opprettes av innkjøpsansvarlig eller en ekstern leverandøradministrator.
 
 -   Hvis du er en ekstern leverandør, kan du sende forespørsler fra siden **Alle kontakter** i modulen **Leverandørsamarbeid**.
@@ -60,8 +57,7 @@ Du kan opprette en forespørsel om å klargjøre en bruker, deaktivere en bruker
 
 Når en forespørsel sendes inn, legges den til i listen **Brukerforespørsler for leverandørsamarbeid** i modulen **Leverandørsamarbeid** og i listen **Brukerforespørsel for leverandørsamarbeid** i modulen **Innkjøp og leverandører** (modulen Innkjøp og leverandører er ikke er tilgjengelig for eksterne brukere).
 
-### Klargjøre en bruker
-<a id="provision-a-user" class="xliff"></a>
+### <a name="provision-a-user"></a>Klargjøre en bruker
 
 Før du kan be om at en ny bruker klargjøres, må vedkommende defineres som en kontakt for én eller flere leverandørkontoer. Slik oppretter du en forespørsel for en ny bruker for leverandørsamarbeid:
 
@@ -73,8 +69,7 @@ Før du kan be om at en ny bruker klargjøres, må vedkommende defineres som en 
 
 Når brukerforespørselen for leverandør sendes inn, settes feltet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for den valgte leverandørkontoen, og en arbeidsflyt for brukerforespørsel startes. Som en del av arbeidsflyten opprettes en ny bruker i Finance and Operations, og sikkerhetsroller tilordnes. I tillegg aktiveres en Azure B2B-tjeneste som starter samhandling med Azure-portalen og knytter en ny eller eksisterende AAD-konto til brukerkontoen for Finance and Operations.
 
-### Deaktivere en bruker
-<a id="inactivate-a-user" class="xliff"></a>
+### <a name="inactivate-a-user"></a>Deaktivere en bruker
 
 Det finnes to metoder for å fjerne tilgangen til leverandørsamarbeid for en bruker:
 
@@ -87,8 +82,7 @@ Slik ber du om at en bruker deaktiveres:
 2.  Skriv inn en kommentar i feltet **Bestillingsårsak**.
 3.  Klikk **Send**.
 
-### Endre sikkerhetsroller
-<a id="modify-security-roles" class="xliff"></a>
+### <a name="modify-security-roles"></a>Endre sikkerhetsroller
 
 Siden **Vedlikehold roller for leverandørbruker** er den samme som siden **Klargjør leverandørbruker** bortsett fra at du kan redigere listen over sikkerhetsroller.  
 

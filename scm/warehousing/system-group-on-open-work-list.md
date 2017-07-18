@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,19 +22,16 @@ ms.openlocfilehash: dbf0e49b1156c54cd37bbbe57ca564cdbc45fb2d
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Systemgruppering i en åpen arbeidsliste
-<a id="system-grouping-on-an-open-work-list" class="xliff"></a>
+# <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en åpen arbeidsliste
 
 [!include[banner](../includes/banner.md)]
 
 Ved hjelp av et felt for systemgruppering, kan du filtrere en åpen arbeidslisten uten å måtte redigere menyelementet på mobilenheten.
 Der det er aktuelt, fungerer systemgrupperinger for å filtrere en arbeidslisten i et enkelt arbeidshodefelt. Du kan ikke bruke systemgruppering til å filtrere på linjenivåfelter.
 
-## Definere systemgruppering i en åpen arbeidsliste
-<a id="set-up-system-grouping-on-an-open-work-list" class="xliff"></a>
+## <a name="set-up-system-grouping-on-an-open-work-list"></a>Definere systemgruppering i en åpen arbeidsliste
 Bruk disse trinnene til å definere systemgruppering i en åpen arbeidsliste.
 
 -   Velg **modus: indirekte** og **Aktivitetskode: Vis åpen arbeidsliste** fra et menyelement for mobilenhet. Følgende alternativer blir tilgjengelige: Disse alternativene er nødvendig for systemgruppring på en åpen arbeidsliste. 

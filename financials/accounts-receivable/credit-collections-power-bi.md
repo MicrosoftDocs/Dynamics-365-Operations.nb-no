@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations. Core
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,13 +23,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Power BI-innholdet Behandling av kreditt og innkrevinger
-<a id="credit-and-collections-management-power-bi-content" class="xliff"></a>
+# <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
 Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Behandling av kreditt og innkrevinger**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 Power BI-innholdet **Behandling av kreditt og innkrevinger** ble laget for ledere for kreditt og innkreving, samt innkrevingsassistenter. Det gir nøkkelmål for kredit og innkreving, for eksempel dager utestående salg, forfalt saldo, kreditteksponering og kunder som har overskredet kredittgrensen. Det bruker transaksjonsdata og gir aggregerte visninger av kredit og innkreving på tvers av alle firmaer. Det gir også en analyse per firma, kundegruppe og kunde.
 
@@ -41,12 +40,10 @@ Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Syst
 
 Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vil se dataene på tvers av alle firmaer, tilordner du plikten **CustCollectionsBICrossCompany** til rollen.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises Power BI-innholdet **Behandling av kreditt og innkrevinger** i arbeidsområdet **Kundekreditt og innkrevinger**.
 
-## Rapporter som er inkludert i Power BI-innholdet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
 Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **CustCollectionsBICrossCompany**.
 
@@ -65,16 +62,14 @@ Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som bes
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruke funksjonen for eksport av underliggende data til å eksportere underliggende data som oppsummeres i en visualisering.
 
-## Utvide Power BI-innholdet
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
 Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Finance and Operations, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
 
 Du kan finne Power BI-innholdet **Behandling av kreditt og innkrevinger** i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
 Pass på at du laster ned Power BI-innholdet **Behandling av kreditt og innkrevinger** som gjelder for versjonen av Finance and Operations du bruker.
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
 Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Behandling av kreditt og innkrevinger**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store).
 

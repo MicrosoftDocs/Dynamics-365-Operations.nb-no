@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sarasch
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -20,11 +21,9 @@ ms.openlocfilehash: a8ccd99431178c3cb4e73e7cd199de8e0845d716
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Kontantstrømprognose
-<a id="cash-flow-forecasting" class="xliff"></a>
+# <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Du kan bruke verktøy for kontantstrømprognose til å analysere kommende kontan
 
 Når du har fullført disse oppgavene, kan du beregne og analysere prognoser for kontantstrømmen og kommende valutabehov.
 
-## Integrasjon av kontantstrømprognose
-<a id="cash-flow-forecasting-integration" class="xliff"></a>
+## <a name="cash-flow-forecasting-integration"></a>Integrasjon av kontantstrømprognose
 
 Kontantstrømprognose kan integreres med økonomi, leverandører, kunder, budsjettering og lagerstyring. Prognoseprosessen bruker transaksjonsinformasjon som er registrert i systemet, og beregningsprosessen lager prognose for forventet kontantinnvirkning for hver transaksjon. Følgende transaksjonstyper vurderes når kontantstrømmen beregnes:
 
@@ -51,13 +49,11 @@ Kontantstrømprognose kan integreres med økonomi, leverandører, kunder, budsje
 
 Selv om det ikke er noen direkte integrasjon med Prosjektstyring og regnskap, kan du ta med prosjekttransaksjoner i kontantstrømprognosen på flere måter. Posterte prosjektfakturaer tas med i prognosen som en del av åpne kundetransaksjoner. Prosjektstartede salgsordrer og bestillinger tas med i prognosen som åpne ordrer etter at de er registrert i systemet. Du kan også overføre prosjektprognoser til en finansbudsjettmodell. Denne finansbudsjettmodellen tas deretter med i kontantstrømprognosen som en del av budsjettregisteroppføringene.
 
-## Konfigurasjon
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Konfigurasjon
 
 Hvis du vil konfigurere prosessen for kontantstrømprognose, bruker du siden **Oppsett for kontantstrømprognose**. På denne siden kan du angi likviditetskontoene som skal spores, og standard prognosevirkemåte for hvert område.
 
-### Økonomimodul
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Økonomimodul
 
 Du må først definere likviditetskontoene som skal spores gjennom kontantstrømprognose. Disse likviditetskontoene er vanligvis hovedkontoer som er knyttet til bankkontoene som skal motta og utbetale kontanter. Velg hovedkontoene som skal tas med for prognose, i **Økonomimodul**-fanen på siden **Oppsett for kontantstrømprognose**. Hvis en bankkonto er knyttet til hovedkontoen på **Bankkonto**-siden, vises den i **Bankkonto**-feltet.
 
@@ -65,8 +61,7 @@ Du kan definere en avhengig kontantstrømprognose for en hovedkonto som innehold
 
 Først setter du **Hovedkonto**-feltet til den primære hovedkontoen der transaksjoner forventes å finne sted først. Sett feltet **Avhengig hovedkonto** til kontoen som kommer til å bli påvirket av den første transaksjonen mot den primære hovedkontoen. Angi aktuelle verdier for de andre feltene på linjen. Du kan endre verdien i **Prosent**-feltet for å gjenspeile virkningen av den primære hovedkontoen på den avhengige hovedkontoen. Når det gjelder en salgs- eller innkjøpsprognose, velger du en **Betalingsbetingelser**-verdi som er vanlig for de fleste kunder eller leverandører. Sett **Posteringstype**-feltet til forventet posteringstype som er knyttet til kontantstrømprognosen.
 
-### Leverandører
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Leverandører
 
 Du kan beregne prognosen for innkjøp ved hjelp av oppsettalternativene i **Leverandører**-fanen på siden **Oppsett for kontantstrømprognose**. Før du kan konfigurere kontantstrømprognose for leverandører, må du konfigurere betalingsbetingelser, leverandørgrupper og leverandørposteringsprofiler.
 
@@ -78,8 +73,7 @@ Du kan overstyre standardinnstillingen for feltet **Tid mellom fakturaens forfal
 
 Du kan overstyre standardinnstillingen for **Likviditetskonto**-feltet for bestemte leverandørposteringsprofiler. Prognosen bruker standardverdien fra delen **Standardverdier for innkjøpsprognose** med mindre en annen likviditetskonto er angitt for posteringsprofilen som er knyttet til leverandøren i transaksjonen. Hvis du vil overstyre standardverdien, velger du en posteringsprofil og angir deretter likviditetskontoen som forventes å bli påvirket.
 
-### Kunder
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Kunder
 
 Du kan beregne prognosen for salg ved hjelp av oppsettalternativene i **Kunder**-fanen på siden **Oppsett for kontantstrømprognose**. Før du kan konfigurere kontantstrømprognose for kunder, må du konfigurere betalingsbetingelser, kundegrupper og kundeposteringsprofiler.
 
@@ -91,18 +85,15 @@ Du kan overstyre standardinnstillingen for feltet **Tid mellom fakturaens forfal
 
 Du kan overstyre standardinnstillingen for **Likviditetskonto**-feltet for bestemte kundeposteringsprofiler. Prognosen bruker standardverdien fra delen **Standardverdier for salgsprognose** med mindre en annen likviditetskonto er angitt for posteringsprofilen som er knyttet til kunden i transaksjonen. Hvis du vil overstyre standardverdien, velger du en posteringsprofil og angir deretter likviditetskontoen som forventes å bli påvirket.
 
-### Budsjettering
-<a id="budgeting" class="xliff"></a>
+### <a name="budgeting"></a>Budsjettering
 
 Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprognoser. Velg budsjettmodellene som skal tas med i prognosen, i **Budsjettering**-fanen på siden **Oppsett for kontantstrømprognose**. Nye budsjettregisteroppføringer tas som standard med i prognoser etter at budsjettmodellen er aktivert for kontantstrømprognose. Inkludering i kontantstrømprognoser kan overskrives i individuelle budsjettregisteroppføringer.
 
-### Lagerstyring
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Lagerstyring
 
 Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Velg prognosemodellen som skal tas med i kontantstrømprognosen, i **Lagerstyring**-fanen på siden **Oppsett for kontantstrømprognose**. Inkludering i kontantstrømprognoser kan overskrives på individuelle forsynings- og behovsprognoselinjer.
 
-### Beregning
-<a id="calculation" class="xliff"></a>
+### <a name="calculation"></a>Beregning
 
 Før du kan vise analyse for kontantstrømprognose, må du kjøre kontantstrømberegningen. Beregningsprosessen prosjekterer fremtidige kontantinnvirkninger for transaksjoner som er angitt.
 
@@ -113,8 +104,7 @@ Beregne kontantstrømprognosen ved hjelp av siden **Beregn kontantstrømprognose
 
 Du kan også bruke satsvis behandling for kontantstrømprognosen. For å bidra til å garantere at prognoseanalysen oppdateres jevnlig, konfigurerer du en gjentakende partiprosess for beregning av kontantstrømprognose.
 
-### Rapportering
-<a id="reporting" class="xliff"></a>
+### <a name="reporting"></a>Rapportering
 
 Etter at kontantstrømprognosen er beregnet, må du oppdatere den tilknyttede enhetsinformasjonen for analytisk rapportering. Velg målingen **LedgerCovLiquidityMeasurement-aggregat** på **Enhetslager**-siden, og klikk deretter på **Oppdater**.
 

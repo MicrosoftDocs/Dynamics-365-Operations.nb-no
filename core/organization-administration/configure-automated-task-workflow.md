@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurere en automatisert oppgave i en arbeidsflyt
-<a id="configure-an-automated-task-in-a-workflow" class="xliff"></a>
+# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurere en automatisert oppgave i en arbeidsflyt
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert op
 
 Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden. Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den automatiserte oppgaven.
 
-## Gi navn til oppgaven
-<a id="name-the-task" class="xliff"></a>
+## <a name="name-the-task"></a>Gi navn til oppgaven
 Følg denne fremgangsmåten for å sette et navn på den automatiserte oppgaven.
 
 1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
 2.  I feltet **Navn** angir du et unikt navn på oppgaven.
 
-## Angi når varslinger skal sendes
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller avbrutt. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
 
 1.  I den venstre ruten klikker du **Varslinger**.
