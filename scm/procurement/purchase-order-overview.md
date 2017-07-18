@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Oversikt over bestilling
-<a id="purchase-order-overview" class="xliff"></a>
+# <a name="purchase-order-overview"></a>Oversikt over bestilling
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilli
 -   [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
 -   [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## Bestillingstyper
-<a id="types-of-purchase-orders" class="xliff"></a>
+## <a name="types-of-purchase-orders"></a>Bestillingstyper
 Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi type. Du kan definere en standard ordretype for nye bestillinger på siden **Parametere for innkjøp og leverandører**.
 
 | Bestillingstype        | Beskrivelse                                                                                                                                                                                                                                                                           |
@@ -61,8 +59,7 @@ Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi ty
 | Bestilling | Bruk denne typen for å opprette bestillinger når ordrer er bekreftet med en leverandør, og når ordrene behandles gjennom tilgang og fakturering før betalingen sendes til leverandøren. Denne typen bestilling er den vanligste.                                                                          |
 | Returordre | Bruk denne typen når du returnerer varer til leverandøren. Denne bestillingstypen krever at du angir et autorisasjonsreturnummer (ARM) som leverandøren gir deg. Du angir ARM-nummeret i kategorien **Generelt** i bestillingen. Ordrelinjer må ha negative antall. |
 
-## Bestillingsstatuser
-<a id="purchase-order-statuses" class="xliff"></a>
+## <a name="purchase-order-statuses"></a>Bestillingsstatuser
 Bestillinger inneholder flere statusfelt som viser fremdriften for bestillingen. Disse feltene er synlige i visningen **Topptekst** for ordren, og noen få av dem vises også i rutenettoversikt for alle ordrer. Feltet **Status** viser statusen for et antall på bestillingen. Følgende verdier er tilgjengelige:
 
 -   **Åpen ordre** – Ordre er opprettet, og antall er bestilt.
@@ -86,8 +83,7 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 -   **Bekreftet** – Denne statusen blir tilordnet når bestillingen er bekreftet. Denne statusen er vanligvis den siste godkjenningsstatusen som tilordnes en ordre.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Opprett bestilling](purchase-order-creation.md)

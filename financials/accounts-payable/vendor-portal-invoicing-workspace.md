@@ -15,7 +15,7 @@ ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -23,11 +23,9 @@ ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Arbeidsområde for leverandørsamarbeidsfakturering
-<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-invoicing-workspace"></a>Arbeidsområde for leverandørsamarbeidsfakturering
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +36,7 @@ Arbeidsområdet **Fakturering av leverandørsamarbeid** kan brukes til å vise i
 Arbeidsområde for leverandørsamarbeidsfakturering
 ----------------------------------------
 
-### Sammendrag-fliser
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammendrag-fliser
 
 Flisene **Sammendrag** gir en oversikt over fakturaer for den valgte leverandøren. Du kan vise fakturaer etter deres tilstand.
 -   Fakturautkast er ikke sendt til arbeidsflyten.
@@ -48,8 +45,7 @@ Flisene **Sammendrag** gir en oversikt over fakturaer for den valgte leverandør
 -   Betalte fakturaer er de som er fullstendig betalte i Finance and Operations.
 
 Ved å klikke en flis, vises det en filtrert visning av siden **Fakturaliste**.
-### Tabellister
-<a id="tabular-lists" class="xliff"></a>
+### <a name="tabular-lists"></a>Tabellister
 
 I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister. Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes. Den siste tabellisten er et alternativ for å finne fakturaer. Du kan filtrere når du søker, slik at søk utføres raskere.
 Side med liste over alle leverandørfakturaer

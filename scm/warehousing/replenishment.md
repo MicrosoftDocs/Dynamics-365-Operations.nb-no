@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -26,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Etterfylling
-<a id="replenishment" class="xliff"></a>
+# <a name="replenishment"></a>Etterfylling
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +40,7 @@ Dette emnet beskriver etterfyllingsstrategier som er tilgjengelige for lagre som
 
 Alle tre strategier opprette etterfyllingsarbeid basert på en etterfyllingsmal.
 
-## Etterfylling basert på bølgebehov
-<a id="wave-demand-replenishment" class="xliff"></a>
+## <a name="wave-demand-replenishment"></a>Etterfylling basert på bølgebehov
 
 Etterfylling basert på bølgebehov oppretter etterfyllingsarbeid basert på behov, hvis antallet som kreves for produksjonsordrer, karbaner, utgående ordrer eller laster ikke er tilgjengelig når en bølge oppretter arbeid. Etterfyllingsmalen inneholder informasjon om varekriteriene, måleenhet, behovsintervall og lokasjon. 
 
@@ -54,20 +53,17 @@ Siden **Etterfyllingsmal** inneholder alternativet **Tillat at bølgebehov kan b
 
 Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonsordrer og Kanbaner. 
 
-## Etterfylling basert på minimums- og maksimumsantall
-<a id="minmax-replenishment" class="xliff"></a>
+## <a name="minmax-replenishment"></a>Etterfylling basert på minimums- og maksimumsantall
 I etterfylling basert på minimums- og maksimumsantall etterfylles lageret slik at det er mellom minimums- og maksimumsgrensene som er angitt. Denne prosessen oppstår vanligvis én gang hver dag for å garantere at alle plukklokasjoner er fylt til det maksimale nivået før plukkingen starter. 
 
 Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer Finance and Operations om etterfylling kreves i rekkefølgen linjene er organisert i. 
 
 Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, er det ikke mulig å fastslå hvilken vare som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 
-## Etterfylling av lastbehov
-<a id="load-demand-replenishment" class="xliff"></a>
+## <a name="load-demand-replenishment"></a>Etterfylling av lastbehov
 Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Etterfylling basert på lastbehov ligner på mange måter på etterfylling basert på bølgebehov. Den største forskjellen er hvordan og når etterfylling basert på lastbehov og etterfylling basert på bølgebehov kjøres. Etterfylling basert på lastbehov kjøres ved hjelp av en satsvis jobb, på samme måte som etterfylling basert på minimums- og maksimumsantall. Hvis du vil definere den satsvise jobben, går du til siden **Etterfylling basert på lastbehov**, velger etterfyllingsmalen som skal brukes, og angir en filterspørring for å angi hvilke laster som skal brukes til å bestemme behovet. Lokasjonsspørringen definerer lokasjonene som tilgjengelige antall trekkes fra for å dekke det samlede behovet for lastene.
 
-## Forhåndskrav for etterfylling
-<a id="replenishment-prerequisites" class="xliff"></a>
+## <a name="replenishment-prerequisites"></a>Forhåndskrav for etterfylling
 | Forutsetning            | Beskrivelse                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Element                    | Varn må aktiveres for lagerstyringsprosesser.                                                                                                                                                                                       |

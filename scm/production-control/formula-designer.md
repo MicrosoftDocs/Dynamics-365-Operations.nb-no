@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
 ms.author: cvocph
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 84322bb3f02d236843bebc24c4c5eccdd4d9f2bf
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Formeldesigner
-<a id="formula-designer" class="xliff"></a>
+# <a name="formula-designer"></a>Formeldesigner
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Klikk **Filter** for å endre det første utvalget i visningen. Hvis du setter v
 
 Avsnittene nedenfor beskriver hvilke funksjoner som er tilgjengelige i stykklisteutformingen.
 
-## Analysere en formelstruktur ved hjelp av formeldesigneren
-<a id="analyze-a-formula-structure-by-using-the-formula-designer" class="xliff"></a>
+## <a name="analyze-a-formula-structure-by-using-the-formula-designer"></a>Analysere en formelstruktur ved hjelp av formeldesigneren
 Formelutforming har to deler:
 
 -   Trevisningen av formelstrukturen.
@@ -57,8 +55,7 @@ Formelutforming har to deler:
     -   **Rute** – Viser overskriften for ruten som er knyttet til den valgte noden.
     -   **Ruteoperasjoner** – Viser en forhåndsvisning av operasjonene for ruten. Når det velges en stykklistelinje som er tilordnet en bestemt operasjon, merkes operasjonen som **Komponent kreves ved operasjoner**.
 
-## Velge en formel og rute
-<a id="select-a-formula-and-route" class="xliff"></a>
+## <a name="select-a-formula-and-route"></a>Velge en formel og rute
 Filteret som brukes for formelen og ruten, vises i overskriften til formeldesigneren. Du kan endre filteret ved hjelp av dialogboksen **Filter**. Tabellen nedenfor beskriver feltene i denne dialogboksen.
 
 <table>
@@ -102,8 +99,7 @@ Filteret som brukes for formelen og ruten, vises i overskriften til formeldesign
 
 Når du bruker formeldesigneren for å se gjennom eller redigere formler som består av én eller flere nivåer av fantomer, vil ruten som er knyttet til den øverste varen vanligvis strekke seg over hele formelhierarkiet. Hvis du vil forenkle oversikten, kan du låse ruten på øverste nivå i visningen ved å klikke **Vis** &gt; **Lås rute**. Hvis du vil låse opp ruten, klikker du **Vis** &gt; **Lås opp rute**.
 
-## Legge til og redigere formler og formellinjer
-<a id="add-and-edit-formulas-and-formula-lines" class="xliff"></a>
+## <a name="add-and-edit-formulas-and-formula-lines"></a>Legge til og redigere formler og formellinjer
 Bruk funksjonene **Stykklistelinjer** eller **Formel** til å endre fomrellinjene eller formelen. Når du velger en node i treet, bestemmer nodetypen funksjonene som er tilgjengelige.
 
 | Funksjon                            | beskrivelse                                                                                               | Nodetype og betingelser |
@@ -117,8 +113,7 @@ Bruk funksjonene **Stykklistelinjer** eller **Formel** til å endre fomrellinjen
 | Formel &gt; Beregning            | Åpne en dialogboks der du kan kjøre kost- eller salgsprisberegning for den valgte produktvarianten. | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en formelversjon. |
 | Formel &gt; Kontroller                  | Valider og kontroller den valgte formelen.                                                                  | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en formelversjon. |
 
-## Konfigurere trevisningen
-<a id="configuring-the-tree-view" class="xliff"></a>
+## <a name="configuring-the-tree-view"></a>Konfigurere trevisningen
 Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i formeldesigneren.
 
 | Feltgruppe | beskrivelse |

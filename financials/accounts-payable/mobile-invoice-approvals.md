@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: sunilg
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -22,19 +23,16 @@ ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Mobile fakturagodkjenninger
-<a id="mobile-invoice-approvals" class="xliff"></a>
+# <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
 [!include[banner](../includes/banner.md)]
 
 
 Mobile funksjoner i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations kan utforme mobile erfaringer forretningsvirksomhet. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
-Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+<a name="prerequisites"></a>Forutsetninger
 -------------
 
 | Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
@@ -46,8 +44,7 @@ Forutsetninger
 | Installer hurtigreparasjon KB 3208224.                                                                              | Programkode for godkjenning av leverandørfaktura på mobil : Dette er inkludert i Microsoft Dynamics AX 7.0.1 (mai 2016).                          |
 | En Android- eller iOS- eller Windows-enhet som har mobilappen installert for Dynamics 365 for Finance and Operations | Søk etter appen i riktig applager.                                                                                                                     |
 
-## Innledning
-<a id="introduction" class="xliff"></a>
+## <a name="introduction"></a>Innledning
 Mobile godkjenninger for leverandørfakturaer krever de tre hurtigreparasjonene som er nevnt i delen "Forutsetninger". Disse hurtigreparasjonene gir ikke et arbeidsområde for fakturagodkjenninger. Hvis du vil vite hva et arbeidsområde er i forbindelse med mobil, kan du lese håndboken for mobil som er nevnt i delen "Forutsetninger". Arbeidsområdet for fakturagodkjenninger må være utformet. 
 
 Alle organisasjoner lager og definerer sin forretningsprosess for leverandørfakturaer annerledes. Før du utformer en mobil opplevelse for godkjenning av leverandørfakturaer, bør du vurdere følgende aspekter av forretningsprosessen. Tanken er å bruke disse datapunkter som er så mye som mulig å optimalisere brukerens opplevelse på enheten.
@@ -68,8 +65,7 @@ Utformingen av mobil opplevelse for fakturagodkjenninger varierer avhengig av sv
 
 Som en generell veiledning, når du arbeider med mobile designer, må du "publisere" endringene for ikke å miste oppdateringer.
 
-## Utforme et scenario for godkjenning av enkel faktura for Contoso
-<a id="designing-a-simple-invoice-approval-scenario-for-contoso" class="xliff"></a>
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Utforme et scenario for godkjenning av enkel faktura for Contoso
 <table>
 <colgroup>
 <col width="50%" />
@@ -128,8 +124,7 @@ Som en generell veiledning, når du arbeider med mobile designer, må du "publis
 </tbody>
 </table>
 
-### Opprett arbeidsområdet
-<a id="create-the-workspace" class="xliff"></a>
+### <a name="create-the-workspace"></a>Opprett arbeidsområdet
 
 1.  Åpne Finance and Operations i en webleser, og logg på.
 2.  Etter at du har logget på, kan du legge til **& mode = mobile** i URL-adressen som vist i følgende eksempel, og oppdater siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
@@ -141,8 +136,7 @@ Som en generell veiledning, når du arbeider med mobile designer, må du "publis
 8.  Klikk **Ferdig**.
 9.  Klikk **Publiser arbeidsområde** for å lagre endringene
 
-### Leverandørfakturaer som er tilordnet til meg
-<a id="vendor-invoices-assigned-to-me" class="xliff"></a>
+### <a name="vendor-invoices-assigned-to-me"></a>Leverandørfakturaer som er tilordnet til meg
 
 Den første mobile siden som du bør utforme er listen over fakturaer som er tilordnet til brukeren for gjennomgang. Hvis du vil utforme Mobil-siden, kan du bruke **VendMobileInvoiceAssignedToMeListPage**-siden i Finance and Operations. Før du fullfører denne prosedyren, må du kontrollere at minst en leverandørfaktura er tilordnet til deg for gjennomgang, og at fakturalinjen har to distribusjoner. Dette oppsettet oppfyller kravene for dette scenariet.
 
@@ -175,8 +169,7 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 12. Klikk **Publiser arbeidsområde** for å lagre arbeidet.
 13. Aktiver **Vis fakturatotal på listen over leverandørfakturaer på vent** i skjemaet med leverandørparametere under **Faktura**. Vær oppmerksom på at bare ved å aktivere denne parameteren, fakturatotaler beregnes som skal vises på den ventende listesiden leverandørfakturaer. Dette er en ny funksjon som en del av den nødvendige hurtigreparasjonen 3208224.
 
-### Leverandørfakturadetaljer
-<a id="vendor-invoice-details" class="xliff"></a>
+### <a name="vendor-invoice-details"></a>Leverandørfakturadetaljer
 
 Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **VendMobileInvoiceHeaderDetails** i Finance and Operations. Legg merke til at, avhengig av antall fakturaer som du har på maskinen, denne siden viser den eldste fakturaen (faktura som var opprettet først). Du kan bruke filteret til venstre for å finne en spesifikk faktura. Men krever vi ikke en bestemt faktura for dette eksemplet. Vi krever bare noen fakturadata slik at vi kan utforme mobilsiden. [![Arbeidsflytside](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
@@ -211,13 +204,11 @@ Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **Ve
 13. Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
 14. Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
-### Arbeidsflythandlinger
-<a id="workflow-actions" class="xliff"></a>
+### <a name="workflow-actions"></a>Arbeidsflythandlinger
 
 Hvis du vil legge til handlinger i arbeidsflyten, kan du bruke siden **VendMobileInvoiceHeaderDetails** i Finance and Operations. Hvis du vil åpne denne siden, erstatter du navnet på menyelementet i URL-adressen, slik du gjorde tidligere. Åpne deretter utformingen for mobil fra **Innstillinger** (tannhjul)-knappen. Følg disse trinnene for å legge til handlinger i arbeidsflyten på detaljer-siden. Du må ha fakturaer tilordnet til deg som er i den tilstanden som gjør arbeidsflythandlingene du skal utforme for, tilgjengelige for deg.
 
-#### Registrere arbeidsflythandlinger
-<a id="record-workflow-actions" class="xliff"></a>
+#### <a name="record-workflow-actions"></a>Registrere arbeidsflythandlinger
 1.  Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
 2.  Velg siden **Mine leverandørfakturaer** som du opprettet tidligere, og klikk deretter **Rediger**.
 3.  På kategorien **Handlinger** klikker du **Legg til handling**.
@@ -231,8 +222,7 @@ Hvis du vil legge til handlinger i arbeidsflyten, kan du bruke siden **VendMobil
 11. Klikk **Publiser arbeidsområde** for å lagre arbeidet
 12. Gjenta de forrige trinnene for å registrere alle nødvendige arbeidsflythandlinger. 
 
-#### Opprette en .js-fil
-<a id="create-a-js-file" class="xliff"></a>
+#### <a name="create-a-js-file"></a>Opprette en .js-fil
 1. Åpne Notisblokk eller Microsoft Visual Studio, og lim inn følgende kode. Lagre filen som en .js-fil. Denne koden gjør følgende:
     - De ekstra arbeidsflytrelaterte kolonnene som vi tidligere lagt til på den mobile listesiden, skjules. Vi har lagt til disse kolonnene slik at appen får denne informasjonen i kontekst og kan utføre det neste trinnet.
     - Basert på arbeidsflyttrinnet som er aktivt, brukes logikk til å vise bare disse handlingene.
@@ -304,8 +294,7 @@ Hvis du vil legge til handlinger i arbeidsflyten, kan du bruke siden **VendMobil
 4.  Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
 5.  Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
-### Leverandørfakturavedlegg
-<a id="vendor-invoice-attachments" class="xliff"></a>
+### <a name="vendor-invoice-attachments"></a>Leverandørfakturavedlegg
 
 1.  Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**
 2.  Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
@@ -316,8 +305,7 @@ Hvis du vil legge til handlinger i arbeidsflyten, kan du bruke siden **VendMobil
 7.  Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
 8.  Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
-### Leverandørfakturalinjedistribusjoner
-<a id="vendor-invoice-line-distributions" class="xliff"></a>
+### <a name="vendor-invoice-line-distributions"></a>Leverandørfakturalinjedistribusjoner
 
 Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på linjenivå, og at en faktura har alltid bare én linje. Fordi dette scenariet er enkelt, må også brukeropplevelsen på den mobile enheten være enkel nok til at brukeren ikke trenger å bore ned flere nivåer for å vise distribusjonen. Leverandørfakturaer i Finance and Operations omfatter muligheten til å vise alle distribusjoner fra fakturahodet. Denne opplevelsen er det vi trenger for det mobile scenariet. Derfor vil vi bruke siden **VendMobileInvoiceAllDistributionTree** til å utforme denne delen av det mobile scenariet. 
 
@@ -420,8 +408,7 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 4.  Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
 5.  Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
-### Validering
-<a id="validation" class="xliff"></a>
+### <a name="validation"></a>Validering
 
 Åpne programmet fra mobilenheten, og koble til din Finance and Operations-forekomst. Kontroller at du logger deg på firmaet der leverandørfakturaer er tilordnet til deg for gjennomgang. Du skal kunne utføre følgende handlinger:
 
@@ -433,8 +420,7 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 -   På detaljer-siden ser du en kobling til siden **Vis regnskap**. Bruk denne koblingen til å navigere til distribusjonssiden og vise distribusjonene.
 -   På detaljer-siden, klikker du **Handlinger**-menyen nederst, og utfør handlinger i arbeidsflyten som gjelder for arbeidsflyttrinnet.
 
-## Utforme et scenario for godkjenning av komplisert faktura for Fabrikam
-<a id="designing-a-complex-invoice-approval-scenario-for-fabrikam" class="xliff"></a>
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Utforme et scenario for godkjenning av komplisert faktura for Fabrikam
 <table>
 <colgroup>
 <col width="50%" />
@@ -493,8 +479,7 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 </tbody>
 </table>
 
-### Neste trinn
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Neste trinn
 
 Følgende variasjoner kan gjøres for scenario 1, basert på kravene for scenario 2. Du kan bruke denne delen til å forbedre opplevelsen av mobilappen.
 

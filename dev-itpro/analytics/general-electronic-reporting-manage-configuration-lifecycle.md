@@ -10,12 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: b1f5da07ffff5e34d8c73012a1e3c85fe1546fda
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Administrere livssyklus til konfigurasjoner for elektronisk rapportering
-<a id="manage-the-electronic-reporting-configuration-lifecycle" class="xliff"></a>
+# <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Administrere livssyklus til konfigurasjoner for elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver hvordan du administrerer livssyklusen til ER-konfigurasjoner (elektronisk rapportering) for Microsoft Dynamics 365 for Finance and Operations-løsningen.
 
-Oversikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Oversikt
 --------
 
 Elektronisk rapportering (ER) er en motor som støtter lovbestemte obligatoriske og landsspesifikke elektroniske dokumenter i Microsoft Dynamics 365 for Finance and Operations. Vanligvis forutsetter ER en mulighet til å utføre følgende oppgaver for ett enkelt dokument elektronisk. Hvis du vil ha mer informasjon, se [Oversikt over elektronisk rapportering](general-electronic-reporting.md).
@@ -59,8 +57,7 @@ Elektronisk rapportering (ER) er en motor som støtter lovbestemte obligatoriske
 -   Bruk en mal i en bestemt forretningsprosess:
     -   Kjør en ER-konfigurasjon i en spesifikk forretningsprosess. For eksempel for å generere en melding om elektronisk betaling for behandling av fakturaer når en betaløingsmetode som refererer til ER-konfigurasjonen, er valgt.
 
-## Begreper
-<a id="concepts" class="xliff"></a>
+## <a name="concepts"></a>Begreper
 Følgende roller og dedikerte aktiviteter er knyttet til livssyklusen for ER-konfigurasjonen.
 
 | Rolle                                       | Aktiviteter                                                      | beskrivelse                                                                                                                                                                                                                  |
@@ -70,8 +67,7 @@ Følgende roller og dedikerte aktiviteter er knyttet til livssyklusen for ER-kon
 | Regnskapsansvarlig                      | Konfigurer prosessrelaterte innstillinger som refererer til ER-artefakter. | For eksempel en **Regnskapsansvarlig**-rolle som tillater at innstillingene for en ER-konfigurasjon kan brukes i en bestemt leverandørbetalingsmåte for å generere en melding om elektronisk betaling for behandling av fakturaer. |
 | Leverandørbetalingsassistent            | Bruk ER-artefakter i en bestemt forretningsprosess.                | For eksempel en **Leverandørbetalingsassistent**-rolle som tillater at meldinger om elektronisk betaling kan genereres for behandling av fakturaer, basert på ER-formatet som er konfigurert for en bestemt betalingsmåte.           |
 
-## Utviklinglivssyklus for ER-konfigurasjon
-<a id="er-configuration-development-lifecycle" class="xliff"></a>
+## <a name="er-configuration-development-lifecycle"></a>Utviklinglivssyklus for ER-konfigurasjon
 Av følgende ER-relaterte årsaker anbefaler vi at du utformer ER-konfigurasjoner i utviklingsmiljøet, som en separat forekomst av Finance and Operations:
 
 -   Brukere som har en av rollene **Utvikler av elektronisk rapportering** eller **Funksjonell konsulent for elektronisk rapportering**, kan redigere konfigurasjoner og kjøre dem for testformål. Dette scenariet kan føre til kall av metoder for klasser og tabeller som kan være farlige for forretningsdata og ytelse for Finance and Operations-forekomsten.
@@ -79,8 +75,7 @@ Av følgende ER-relaterte årsaker anbefaler vi at du utformer ER-konfigurasjone
 
 ER-konfigurasjoner som er utformet i utviklingsmiljøet, kan lastes opp til testmiljøet for konfigurasjonsevalueringen (riktig prosessintegrering, riktige resultater, ytelse) og kvalitetssikring (riktige tilgangsrettigheter drevet av rolle, arbeidsdeling osv.). Funksjoner som gjør at utveksling av ER-konfigurasjoner kan brukes til dette formålet. Til slutt kan kontrollerte ER-konfigurasjoner lastes opp til LCS, der de kan deles med abonnenter eller til produksjonsmiljøet for intern bruk, som vist i illustrasjonen nedenfor. ![Livssyklus for ER-konfigurasjon](./media/ger-configuration-lifecycle.png)
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Godkjenne og bekrefte bestillinger
-<a id="approve-and-confirm-purchase-orders" class="xliff"></a>
+# <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Denne artikkelen beskriver statusene som en bestilling går gjennom når den er 
 
 Når du har opprettet en bestilling, må den kanskje går gjennom en godkjenningsprosess. Når leverandøren har godtatt ordren, settes bestillingen til statusen **Bekreftet**.
 
-## Godkjenne bestillinger
-<a id="approval-of-purchase-orders" class="xliff"></a>
+## <a name="approval-of-purchase-orders"></a>Godkjenne bestillinger
 Bestillinger som ikke bruker endringsadministrasjon har statusen **Godkjent** så snart de er opprettet, mens bestillinger som bruker endringsadministrasjon har statusen **Utkast** når de opprettes. En bestilling som er opprettet ved å autorisere en planlagt bestilling fra hovedplanlegging, settes alltid til statusen **Godkjent**, uavhengig av innstillingene for endringsadministrasjon. En bestilling oppretter bare lagertransaksjoner når den får statusen **Godkjent**. Derfor vises ikke denne beholdningen som tilgjengelige for reservasjon eller merking før ordren er godtatt.  
 
 Du aktiverer endringsadministrasjon for bestillinger ved å angi alternativet **Aktiver endringsadministrasjon** på siden **Parametere for innkjøp og leverandører**. Når endringsadministrasjon er aktivert, må bestillinger gå gjennom en arbeidsflyt for godkjenning etter at de er fullført. Microsoft Dynamics 365 for Finance and Operations har et redigeringsprogram for arbeidsflytprosess der du kan definere en arbeidsflyt til å representere din godkjenningsprosess. Denne arbeidsflyten kan inneholde regler for automatisk godkjenning, regler som bestemmer hvem som skal tilordnes til godkjenning av bestemte bestillinger og regler for eskalering av en arbeidsflyt som har ventet godkjenning i lang tid. For alle aktivere prosessen for endringsadministrasjon for alle eller bestemte leverandører. Du kan også definere prosessen slik at den kan overstyres for individuelle bestillinger.  
@@ -54,8 +52,7 @@ Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenn
 | Bekreftet       | Bestillingen ble bekreftet. En bestilling kan ikke bekreftes før den er godkjent.        | Ja                       |
 | Sluttført       | Bestillingen ble gjort endelig. Den er nå økonomisk lukket og kan ikke lenger endres. | Antall                        |
 
-## Bekrefte bestillinger
-<a id="confirming-purchase-orders" class="xliff"></a>
+## <a name="confirming-purchase-orders"></a>Bekrefte bestillinger
 Bestillinger som har godkjenningsstatusen **Godkjent** kan gå gjennom flere trinn før de er bekreftet. Det kan hende du for eksempel må sende en forespørsel om innkjøp til leverandøren for å spørre om priser, rabatter og leveringsdatoer. I så fall kan du sette bestillingen til statusen **Til eksterne vurdering** ved hjelp av handlingen **Innkjøpsforespørsel**.  
 
 Leverandører som er konfigurert til å bruke leverandørportalen, kan se gjennom bestillinger på portalen og godkjenne eller avvise dem. Under denne vurderingsprosessen har bestillingen statusen **Til eksterne vurdering**. Leverandørportalen kan konfigureres slik at en bekreftelse fra leverandøren automatisk bekrefter ordren i Finance and Operations. Du kan også manuelt bekrefte en bestilling når du mottar bekreftelse fra leverandøren. Hvis en leverandør avviser en bestilling, mottas avvisningen sammen med årsaken til avvisningen og forslag til endringer. I slike tilfeller forblir statusen for bestillingen **Til eksterne vurdering**.  
@@ -69,8 +66,7 @@ Når leverandøren har godtatt ordren, er neste trinn å registrere bestillingen
 
 En leverandør kan be om en type forsikring om at betalingen vil utføres for et kjøp. Det finnes ulike metoder for å levere denne garanti innenfor leverandørprosessene. Handlingen **Forskuddsbetaling** reserverer for eksempel midler for bestillingen, og denne forskuddsbetalingen registreres på bestillingen.
 
-## Endre bestillinger
-<a id="changing-purchase-orders" class="xliff"></a>
+## <a name="changing-purchase-orders"></a>Endre bestillinger
 I noen tilfeller må du kanskje endre en bestilling når den har får godkjenningsstatusen **Godkjent** eller **Bekreftet**.  
 
 Hvis bestillingen ble opprettet ved hjelp av en prosess for endringsadministrasjon, kan du gjøre endringer ved å tilbakekalle ordren, eller hvis ordren allerede er godkjent, ved hjelp av handlingen **Be om endring**. I så fall endres godkjenningsstatusen tilbake til **Utkast**, og deretter kan du endre ordren. Når du er ferdig med å gjøre endringer, må du kanskje sende bestillingen til ny godkjenning. Du kan konfigurere hvilke typer endringer som krever ny godkjenning ved hjelp en policyregel for **Regel for ny godkjenning for bestillinger** på siden **innkjøpspolicyer**.  
@@ -79,8 +75,7 @@ Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du i
 
 Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avbryte det totale antallet eller eventuelle restantallet i en ordre, forutsatt at antallet ikke er mottatt eller fakturert.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)

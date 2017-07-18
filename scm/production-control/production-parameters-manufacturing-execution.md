@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: JmgProdParameters
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Produksjonsparametere i Produksjonsutførelse
-<a id="production-parameters-in-manufacturing-execution" class="xliff"></a>
+# <a name="production-parameters-in-manufacturing-execution"></a>Produksjonsparametere i Produksjonsutførelse
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Du bør nøye vurdere alle innstillingene på siden **Produksjonsparametere** f�
 - **Ferdigmeld** – Parametere som brukes når varer rapporteres som ferdigmeldt i den siste operasjonen til en produksjonsordre.
 - **Antallsvalidering** – Parametere som brukes for validering av start- og tilbakemeldingsantall på produksjonsordrer.
 
-## Typer produksjonsjobber
-<a id="types-of-production-jobs" class="xliff"></a>
+## <a name="types-of-production-jobs"></a>Typer produksjonsjobber
 På **Operasjoner**-kategorien velger du typene produksjonsjobber som krever registrering på siden **Jobbregistrering**.
 
 Vanligvis foretar arbeidere registreringer i oppsettjobber og prosessjobber. Hvis finplanlegging blir brukt, kan du imidlertid velge andre jobbtyper som ansatte må gjøre registreringer på når produksjonsordrer blir behandlet. Du kan for eksempel kreve registreringer for transportjobber.
@@ -58,8 +56,7 @@ Hvis **Jobbstyring** velges i rutegruppen, rapporteres jobbtypen som ferdigmeldt
 > [!NOTE]
 > Noen jobbtyper kan rapporteres manuelt gjennom produksjonsjournaler. I dette tilfellet velger du **Jobbstyring** for jobben, men ikke velg jobbtypen for registrering i **Operasjoner**-kategorien på siden **Produksjonsparametere** i produksjonsutførelse.
 
-## Stykklisteforbruk og plukklistejournaler
-<a id="bom-consumption-and-picking-list-journals" class="xliff"></a>
+## <a name="bom-consumption-and-picking-list-journals"></a>Stykklisteforbruk og plukklistejournaler
 Et konsekvent oppsett for stykklisteforbruk er viktig for å garantere at lagerstyring er effektivt. Hvis for eksempel parametere for stykklisteforbruk ikke er satt opp riktig i produksjonsutførselse, kan materialer trekkes fra lager to ganger eller ikke i det hele tatt.
 
 På **Produksjonsparametere**-siden er automatisk stykklisteforbruk definert i tre trinn:
@@ -91,8 +88,7 @@ For hvert trinn i feltet **Automatisk stykklisteforbruk** kan du velge én av tr
 
 Eksemplene nedenfor viser parameterinnstillinger som støtter ulike prinsipper for stykklisteforbruk. Parameterne er definert på **Produksjonsparametere**-siden i produksjonsutførelse.
 
-### Eksempel 1: Backflushing for operasjoner
-<a id="example-1-backflushing-on-operations" class="xliff"></a>
+### <a name="example-1-backflushing-on-operations"></a>Eksempel 1: Backflushing for operasjoner
 
 Bruk innstillingene nedenfor hvis plukklistejournaler og vareforbruket for stykklisten må genereres når varer rapporteres som ferdigmeldt for en operasjon.
 
@@ -104,8 +100,7 @@ Bruk innstillingene nedenfor hvis plukklistejournaler og vareforbruket for stykk
 | Ferdigmeld | Automatisk stykklisteforbruk      | **Aldri**                           |
 | Ferdigmeld | Oppdater ferdig rapport online | **Status + antall**               |
 
-### Eksempel 2: Backflushing på produksjon
-<a id="example-2-backflushing-on-production" class="xliff"></a>
+### <a name="example-2-backflushing-on-production"></a>Eksempel 2: Backflushing på produksjon
 
 Bruk innstillingene nedenfor hvis plukklistejournaler med vareforbruket for stykklisten må genereres når varer rapporteres som ferdigmeldt på produksjonsordren.
 
@@ -117,8 +112,7 @@ Bruk innstillingene nedenfor hvis plukklistejournaler med vareforbruket for styk
 | Ferdigmeld | Automatisk stykklisteforbruk      | **Alltid**                          |
 | Ferdigmeld | Oppdater ferdig rapport online | **Status + antall**               |
 
-### Eksempel 3: Trekkprinsipp
-<a id="example-3-flushing-principle" class="xliff"></a>
+### <a name="example-3-flushing-principle"></a>Eksempel 3: Trekkprinsipp
 
 Bruk innstillingene nedenfor hvis plukklistejournaler med vareforbruket for stykklisten må genereres i henhold til trekkprinsippinnstillingen for stykklistevarene.
 
@@ -130,8 +124,7 @@ Bruk innstillingene nedenfor hvis plukklistejournaler med vareforbruket for styk
 | Ferdigmeld | Automatisk stykklisteforbruk      | **Aldri**              |
 | Ferdigmeld | Oppdater ferdig rapport online | **Status + antall**  |
 
-### Eksempel 4: Fradrag av materialer under oppstart av en produksjonsordre
-<a id="example-4-deduction-of-materials-during-startup-of-a-production-order" class="xliff"></a>
+### <a name="example-4-deduction-of-materials-during-startup-of-a-production-order"></a>Eksempel 4: Fradrag av materialer under oppstart av en produksjonsordre
 
 Bruk innstillingene nedenfor hvis plukklistejournaler og vareforbruket for stykklisten må genereres når varer rapporteres når en produksjon startes.
 
@@ -149,8 +142,7 @@ Basert på valgene som er beskrevet tidligere i denne delen, posteres plukkliste
 - Når antallstilbakemelding rapporteres for en operasjon
 - Når varer rapporteres som ferdigmeldt på produksjonsordren
 
-### Eksempel 5: Manuell stykklisteforbruk
-<a id="example-5-manual-bom-consumption" class="xliff"></a>
+### <a name="example-5-manual-bom-consumption"></a>Eksempel 5: Manuell stykklisteforbruk
 
 Du kan bruke følgende innstillinger hvis materialene alltid skal trekkes fra beholdningen manuelt. I så fall posteres ikke plukklistejournaler.
 

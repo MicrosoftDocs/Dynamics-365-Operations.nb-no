@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -21,11 +22,9 @@ ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Importere historiske data for behovsprognoser
-<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
+# <a name="import-historical-data-for-demand-forecasts"></a>Importere historiske data for behovsprognoser
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ I arbeidsområdet **Databehandling** kan du se en oversikt over alle feltene i e
 
 Hvis du vil bruke dataenheten, må du ha en Microsoft Excel-fil eller CSV-fil (kommadelte verdier) som inneholder de historiske behovsdataene. Følgende eksempel viser hvordan du importerer data fra en CSV-fil.
 
-## Eksempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Eksempel
 
 Du kan bruke følgende fil som et eksempel. Last ned [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denne filen inneholder historiske behovsdata for vare D0001. Den inneholder bare følgende obligatoriske felter: område, antall og behovsdatoen.
 
@@ -57,8 +55,7 @@ Du kan bruke følgende fil som et eksempel. Last ned [HistoricalDemandData](http
 
 Når du har importert de historiske behovsdataene, kan du generere en behovsprognose.
 
-## Se også
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se også
 
 [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
 

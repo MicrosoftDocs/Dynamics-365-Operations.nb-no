@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Importer valutakurser
-<a id="import-currency-exchange-rates" class="xliff"></a>
+# <a name="import-currency-exchange-rates"></a>Importer valutakurser
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig
 
 Delene nedenfor beskriver informasjonsflyten som brukes til å konfigurere og behandle importen av valutakurser.
 
-## Konfigurer en valutakursleverandør
-<a id="configure-an-exchange-rate-provider" class="xliff"></a>
+## <a name="configure-an-exchange-rate-provider"></a>Konfigurer en valutakursleverandør
 Før du kan importere valutakurser, må du definere informasjonen som kreves av leverandører som tilbyr valutakursene. Bruk siden **Konfigurer valutakursleverandører** til å velge valutakursleverandører. Noen valutakursleverandører er inkludert i demodataene i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Følgende tabell inneholder beskrivelser av kontrollene på denne siden.
 
 |           |                                                                                                                                                                                                                             |
@@ -47,8 +45,7 @@ Før du kan importere valutakurser, må du definere informasjonen som kreves av 
 | **Nøkkel**   | Den unike identifikatoren for del av konfigurasjonsinformasjonen som kreves av leverandøren. Denne informasjonen legges til automatisk for hver valutakursleverandør du legger til når du klikker **Legg til**-knappen. |
 | **Verdi** | Informasjon for hver nøkkel. Denne informasjonen legges til for hver valutakursleverandør du legger til når du klikker **Legg til**-knappen.                                                                                         |
 
-## Importer valutakurser
-<a id="import-currency-exchange-rates" class="xliff"></a>
+## <a name="import-currency-exchange-rates"></a>Importer valutakurser
 Du kan importere valutakursene fra kilden for valutakursleverandører, og definere dem på **Valutakurser**-siden. Bruk siden **Importer valutakurser** til å importere valutakurser. Følgende tabell inneholder beskrivelser av feltene som er nødvendige for å utføre importen.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |

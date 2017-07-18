@@ -9,13 +9,14 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,24 +24,20 @@ ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kostnadsbehandling-innhold for Power BI
-<a id="cost-management-power-bi-content" class="xliff"></a>
+# <a name="cost-management-power-bi-content"></a>Kostnadsbehandling-innhold for Power BI
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-# Oversikt
-<a id="overview" class="xliff"></a>
+# <a name="overview"></a>Oversikt
 
 **Kostnadsbehandling-innhold** for Microsoft Power BI er ment for lager regnskapsførere, revisorer eller personer i organisasjonen som er ansvarlig for lageret. **Kostnadsbehandling-innhold** for Power BI gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
-## Nøkkelmål
-<a id="key-measures" class="xliff"></a>
+## <a name="key-measures"></a>Nøkkelmål
 
 + Startsaldo
 + Sluttsaldo
@@ -48,19 +45,16 @@ Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Powe
 + Nettoendring i %
 + Aldersfordeling
 
-## Nøkkelytelsesindikatorer
-<a id="key-performance-indicators" class="xliff"></a>
+## <a name="key-performance-indicators"></a>Nøkkelytelsesindikatorer
 + Beholdningsomsetning
 + Lagerpresisjon
 
 Den primære datakilden for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabellen håndteres av rammeverket for hurtigbuffer for datasett. Tabellen oppdateres hvert døgn som standard, men du kan aktivere manuelle oppdateringer i databufferkonfigurasjonen. Deretter kan du gjøre en manuell oppdatering i arbeidsområdet **Kostnadsstyring** eller **Kostnadsanalyse**. Når oppdateringen av CostStatementCache er kjørt, må du oppdatere OData-koblingen på Power BI.com for å se de oppdaterte dataene på området. Avviksmålene (innkjøp, produksjon) målene i dette Power BI-innholdet gjelder bare for varer som evalueres av lagermodellen med standard kostpris. Produksjonsavvik beregnes som differansen mellom aktive kostnader og faktiske kostnader. Produksjonsavvik beregnes når produksjonsordren har statusen **Avsluttet**. Hvis du vil ha mer informasjon om produksjonsavvikstyper og hvordan hver type beregnes, se [Om å analysere avvik for en fullført produksjonsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 **Kostnadsbehandling-innhold** for Power BI er tilgjengelig fra PowerBI.com. Hvis du vil ha mer informasjon om hvordan du kobler til og laster inn Microsoft Dynamics 365 for Finance and Operations-data, kan du se [Tilgang til Power BI-innhold fra PowerBI.com](power-bi-home-page.md).
 
-## Mål som er inkludert i Power BI-innholdet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 Innholdet inneholder et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **Kostnadsbehandling**.
 
 | Rapportside | Diagrammer | Titler |
@@ -89,8 +83,7 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 | |VIA-nettoendring etter områdenavn og kategorinavn nivå 2 | |
 | |Produksjonsavvik etter områdenavn og kategorinavn på nivå 3 | |
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Finance and Operations-data brukes til å fylle ut rapportsider i Power BI-innholdet **Kostnadsstyring**. Disse dataene representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.
 
 | Enhet            | Aggregerte nøkkelmålinger | Datakilde for Finance and Operations | Felt             | beskrivelse                       |
@@ -143,8 +136,7 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Finanskontoer          | Valuta, navn, beskrivelse                  |
 | Siter            | ID, navn, land, poststed                      |
 
-## Tilleggsressurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Tilleggsressurser
 Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
 
 -   [Dataenheter](..\data-entities\data-entities.md)

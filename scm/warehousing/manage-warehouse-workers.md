@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -23,11 +24,9 @@ ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Administrere lagerarbeidere
-<a id="manage-warehouse-workers" class="xliff"></a>
+# <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,14 +39,12 @@ For å opprette en ny arbeidsbruker velger du siden **Arbeidere**, kategorien **
 
 Som en del av oppsettet for hver arbeidsbruker kan du også definere bestemte prosessarbeidsflyter. Du kan for eksempel bruke feltet **Er en syklustellingsansvarlig** for å angi om brukeren kan behandle justeringer av syklustellingsavvik under en tellingsoperasjon eller om disse justeringene først må vurderes av en annen person.
 
-## Definere arbeidsstandarder
-<a id="defining-labor-standards" class="xliff"></a>
+## <a name="defining-labor-standards"></a>Definere arbeidsstandarder
 Siden **Arbeidsstandarder** lar deg definere beregningsmetodene som systemet bruker til å beregne den estimerte tiden som en bestemt type arbeid skal kreve. Du kan angi denne definisjonen på et generelt nivå eller på et bestemt nivå. Du kan for eksempel definere tiden som er nødvendig for å behandle en salgsordreplukking per vekt for en bestemt enhetsdefinisjon når en bestemt plukkeprosess brukes. Samtidig kan du registrere tiden, basert på en annen beregningsmåte, for plasseringsoperasjonen for lagerbeholdningen som er plukket. 
 
 Hvis du vil aktivere arbeidsstandardene som du har definert, må du velge alternativet **Tillat arbeidsstandarder** for hvert lager der arbeidsstandarder vil bli brukt.
 
-## Overvåke og kontrollere lagerarbeid
-<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
+## <a name="monitoring-and-controlling-warehouse-work"></a>Overvåke og kontrollere lagerarbeid
 Siden **Alt arbeid** lar deg overvåke og vedlikeholde alt arbeid som er planlagt, pågår og fullført. Du kan oppdatere forskjellige prosesser, for eksempel tilordninger for lagerarbeidsbruker og arbeidsprioritet fra denne siden. Du kan også drille ned til detaljene som er knyttet til arbeidshodet og arbeidslinjene, for å få en forståelse av de forventede eller fullførte arbeidsprosessene. 
 
 Hvis du aktiverer alternativet **Arbeidsstandarder**, kan du se den beregnede estimerte tiden for jobben. Deretter, når arbeidet er behandlet, vises også faktisk tid for hver arbeidsoperasjon. På denne måten kan du sammenligne beregningene av anslått tid med faktisk tid. 

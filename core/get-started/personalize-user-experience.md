@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Tilpasse brukeropplevelsen
-<a id="personalize-the-user-experience" class="xliff"></a>
+# <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Det finnes mange typer tilpasninger i Microsoft Dynamics 365 for Finance and Ope
 
 Alle personlige innstillinger, av en hvilken som helst type, som en bruker gjør i Finance and Operations, er bare for denne brukeren, uavhengig av firmaet som brukeren samhandler med. Endringer som en bruker gjør på en side, påvirker ikke andre brukere i systemet.
 
-## Systemomfattende alternativer for gjeldende bruker
-<a id="systemwide-options-for-the-current-user" class="xliff"></a>
+## <a name="systemwide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
 I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-menyknappen. Når du åpner **Innstillinger** menyen, vises en rekke valg. Hvis du velger **Alternativer**, åpnes brukerens **Alternativer** side. Der finner du fire alternativkategorier: **Visuelt**, **Innstillinger**, **Konto** og **Arbeidsflyt**.
 
 -   **Visuelt:** bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
@@ -47,8 +45,7 @@ I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-
 -   **Konto:** Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
 -   **Arbeidsflyt:** dette er der du kan velge arbeidsflytrelaterte alternativer.
 
-## Implisitte tilpasninger
-<a id="implicit-personalizations" class="xliff"></a>
+## <a name="implicit-personalizations"></a>Implisitte tilpasninger
 Implisitte tilpasninger er de personlige tilpasningene som utføres ved å samarbeide med visse Kontroller som husker gjeldende synlig status. 
 
 **Rutenettkolonner:** Du kan justere bredden på en kolonne i en liste ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og dra den til venstre eller høyre til ønsket bredde. Finance and Operations lagrer bredden som du ønsker og viser denne kolonnen med denne bredden hver gang du åpner siden med denne listen. 
@@ -57,8 +54,7 @@ Implisitte tilpasninger er de personlige tilpasningene som utføres ved å samar
 
 **Faktabokser:** noen sider har en del kalt en faktaboksrute. Denne ruten inneholder skrivebeskyttet informasjon knyttet til gjeldende emne på siden. Hver del i faktaboksruten, kalles en faktaboks. Du kan vise eller skjule en faktaboks og Finance and Operations vil lagre dine preferanser. I noen tilfeller kan kan skjule en faktaboks forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne faktaboksen før faktaboksen utvides.
 
-## Eksplisitte tilpasninger ved hjelp av verktøylinjen for tilpasning
-<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisitte tilpasninger ved hjelp av verktøylinjen for tilpasning
 Hver person og hvert firma har ulike perspektiver om hvilke data som er viktigst for dem, eller som ikke er nødvendig for hvordan de driver virksomheten. Muligheten til å tilpasse hvordan informasjonen er ordnet, samhandlet med eller skjult er viktig for å gjøre Finance and Operations til en personlig og produktiv erfaring. 
 
 Eksplisitt tilpasninger er de tilpasningene som du utfører eksplisitt med formålet å endre utseendet eller virkemåten for et element eller en side, ved å velge en meny for personlig tilpasning. Den vanligste typen eksplisitt personalisering er der du høyreklikker et element og velger **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden ikke kan tilpasses.) Når du velger denne metoden for tilpasning, vises vinduet for elementets egenskaper. 
@@ -93,8 +89,7 @@ Velg knappen **Lukk** for å lukke verktøylinjen og returnere siden til den tid
 
 Lagring er implisitt med tilpassingsverktøylinjen. Dine personlige innstillinger trer i kraft umiddelbart når du gjør dem og det er ikke nødvendig å klikke en **Lagre**-knapp. I noen tilfeller vil du se en hengelås-ikonet ved siden av et element når du velger et verktøy. Dette betyr at i rekkefølge for at siden skal fungere som de skal, kan du ikke endre egenskapene knyttet til det valgte verktøyet. Når tilpasningsverktøylinjen åpnes, blir siden ikke-interaktiv. Du kan ikke legge inn data eller vise eller skjule inndelinger.
 
-## Eksplisitt tilpassing: legge til flis eller liste i et arbeidsområde
-<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisitt tilpassing: legge til flis eller liste i et arbeidsområde
 Noen sider med lister har en ekstra personlig tilpasning-funksjon tilgjengelig i sin handlingsrute i Tilpass-gruppen i kategorien Alternativer. Velg **Legg til arbeidsområde** for å åpne rullegardinlisten som gir deg muligheten til å vise informasjonen i gjeldende liste (filtrert og sortert eller standard) på et arbeidsområde som en liste eller en sammendragsflis (som kan brukes til å vise antall elementer i listen). 
 
 [![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
@@ -105,16 +100,13 @@ Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen
 
 Når listen eller flisen blir lagt til i et arbeidsområde, kan du deretter åpne dette arbeidsområdet og endre rekkefølgen for listen eller flisen i gruppen der den er plassert.
 
-## Eksplisitt tilpassing: legge til et sammendrag fra et arbeidsområde på et instrumentbord
-<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Eksplisitt tilpassing: legge til et sammendrag fra et arbeidsområde på et instrumentbord
 Noen arbeidsområder inneholder antall paneler (side ved side med tall på dem) som du vil også se på dashbordet. Høyreklikk et antall ark i et arbeidsområde, og velg **Tilpass**. Velg **Fest til instrumentbord**. Neste gang du går til (og oppdaterer) det valgte instrumentbordet, ser du det nummeret under dette arbeidsområdets navigasjonsflis på instrumentbordet.
 
-## Eksplisitt tilpassing: tilpasse instrumentbordet
-<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-personalizing-your-dashboard"></a>Eksplisitt tilpassing: tilpasse instrumentbordet
 Instrumentbordet er ofte den første siden som vises når du åpner Finance and Operations. Du kan tilpasse instrumentbordet for å endre navn på arbeidsområdets navigasjonsfliser, for å vise bare flisene som du ønsker å vise, endre navn på flisene, eller til å ordne flisene i rekkefølgen du vil se dem i. For å tilpasse instrumentbordet velger du en hvilken som helst flis og høyreklikker for å åpne en hurtigmeny. På hurtigmenyen velger du **Tilpass**. Hvis den valgte flisen er én som du ønsker å skjule eller gi nytt navn eller hoppe over, kan du gjøre denne endringen direkte i egenskapsvinduet som vises. Hvis du vil ordne fliser, velger du **Tilpass dette skjemaet** i vinduet Egenskap for å åpne verktøylinjen for personlig tilpasning. Du kan deretter bruke verktøyet Flytt for å ordne flisene.
 
-## Administrasjon av tilpasning
-<a id="administration-of-personalization" class="xliff"></a>
+## <a name="administration-of-personalization"></a>Administrasjon av tilpasning
 Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere. Bare eksporter den tilpassede siden. Deretter kan du be andre brukere navigere til den tilpassede siden og importere den tilpassede filen du opprettet.
 
 Brukere som har administratorrettigheter, kan også administrere tilpasninger for andre brukere på siden for **tilpassing**. Denne siden har fire kategorier: **System**, **Brukere**, **Importer**, og **Fjern**.

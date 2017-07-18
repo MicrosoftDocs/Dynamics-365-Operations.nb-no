@@ -10,11 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 30211
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,11 +23,9 @@ ms.openlocfilehash: a2ab719b971c325be184d1d950f6c03815e4cea2
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Kjøpsordregodkjenning mobilt arbeidsområde
-<a id="purchase-order-approval-mobile-workspace" class="xliff"></a>
+# <a name="purchase-order-approval-mobile-workspace"></a>Kjøpsordregodkjenning mobilt arbeidsområde
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,22 +33,18 @@ ms.lasthandoff: 06/20/2017
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Godkjenning av bestilling**. I dette arbeidsområdet kan du vise bestillinger og svare på dem gjennom handlinger. Du kan for eksempel godkjenne eller avvise en bestilling.
  
-## Oversikt
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Oversikt 
 Bestillinger som krever godkjenning, går gjennom en godkjenningsarbeidsflyt. Arbeidsflyten kan inkludere ulike trinn som krever at en eller flere personer utfører en handling. For eksempel kan en person måtte fullføre en oppgave eller godkjenne bestillingen. 
 
 På det mobile arbeidsområdet **Godkjenning av bestilling** kan du lett vise og svare på bestillinger fra en mobil enhet. På dette arbeidsområdet kan du også utføre de samme handlingene i arbeidsflyten som du kan utføre fra Microsoft Dynamics 365 Finance and Operations, Enterprise edition, webklient.
 
-## Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Finance and Operations som er distribuert i organisasjonen.
 
-### Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
 Hvis oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er distribuert i organisasjonen, må systemansvarlig publisere det mobile arbeidsområdet **Godkjenning av bestilling**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
 
 <table>
@@ -80,16 +75,14 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </tbody>
 </table>
 
-## Laste ned og installere mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 Last ned og installer mobilappen Microsoft Dynamics 365 for Unified Operations:
 
 - [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
 
-## Logge på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 
 1. Start appen på mobilenheten.
 2. Skriv inn URL-adressen til Microsoft Dynamics 365.
@@ -98,16 +91,14 @@ Last ned og installer mobilappen Microsoft Dynamics 365 for Unified Operations:
 
 ![Arbeidsområdet Godkjenning av bestilling i listen over tilgjengelige arbeidsområder](./media/po-workspaces.png)
 
-## Vis bestillinger som er tilordnet til deg
-<a id="view-orders-that-are-assigned-to-you" class="xliff"></a>
+## <a name="view-orders-that-are-assigned-to-you"></a>Vis bestillinger som er tilordnet til deg
 1. Velg arbeidsområdet **Godkjenning av bestilling** på mobilenheten.
 2. Velg **Ordrer tilordnet til meg** for å vise alle bestillingene som du har blitt bedt om å utføre handlinger for i arbeidsflyten for godkjenning av bestilling.
 3. Velg en ordre. På **Ordredetaljer**-siden vises ordrehodeinformasjon og -linjer. Du kan også finne retningslinjer fra arbeidsflytoppgaven.
 4. Velg **Regnskapsdistribusjoner** for å åpne siden **Hoderegnskapsdistribusjoner**.
 5. Gå tilbake til **Ordredetaljer**-siden, og velg en linje. Du kan også utforske de linjespesifikke regnskapsdistribusjonene fra ordrelinjedetaljene.
 
-## Fullfør en handling på bestillingen
-<a id="complete-an-action-on-the-purchase-order" class="xliff"></a>
+## <a name="complete-an-action-on-the-purchase-order"></a>Fullfør en handling på bestillingen
 Når du har vist bestillingen som er tilordnet til deg og lest instruksjonene for arbeidsflyten, bør du være klar til å utføre handlinger.
 
 1. Velg arbeidsområdet **Godkjenning av bestilling** på mobilenheten.

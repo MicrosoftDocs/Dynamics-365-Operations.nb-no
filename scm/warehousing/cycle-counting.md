@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
 ms.author: mafoge
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: ebc7789d7b0be5db4a0faf4309bc3640f51956c6
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Syklustelling
-<a id="cycle-counting" class="xliff"></a>
+# <a name="cycle-counting"></a>Syklustelling
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 
 Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
 
-## Forhåndskrav for syklustelling
-<a id="cycle-counting-prerequisites" class="xliff"></a>
+## <a name="cycle-counting-prerequisites"></a>Forhåndskrav for syklustelling
 Tabellen nedenfor viser forutsetninger som må være på plass før du kan bruke syklustelling.
 <table>
 <colgroup>
@@ -99,29 +97,24 @@ Tabellen nedenfor viser forutsetninger som må være på plass før du kan bruke
 </tbody>
 </table>
 
-## Opprett syklustellingsarbeid automatisk
-<a id="automatically-create-cycle-counting-work" class="xliff"></a>
+## <a name="automatically-create-cycle-counting-work"></a>Opprett syklustellingsarbeid automatisk
 Det finnes to metoder for å planlegge regelmessig oppretting av syklustellingsarbeid: definere grenseverdier for syklustelling, eller definere planer for syklustelling.
 
 -   En syklustellingsterskel angir antall- eller prosentgrensen for lagervarer. Syklustellingsarbeid opprettes automatisk når terskelgrensen er nådd.
 -   En syklustellingsplan oppretter syklustellingsarbeid umiddelbart eller med jevne mellomrom gjennom en satsvis jobb. Når syklustellingsarbeid opprettes, inneholder tellingsarbeidslinjen informasjon om lokasjonen som skal telles. Lagerbeholdningen som er knyttet til denne lokasjonen, er ikke blokkert, og er derfor tilgjengelig for reservering og utgående behandling, selv om det finnes åpent tellingsarbeid.
 
-### Opprette syklustellingsarbeid basert på terskelparameterne for varer
-<a id="create-cycle-counting-work-based-on-threshold-parameters-for-items" class="xliff"></a>
+### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Opprette syklustellingsarbeid basert på terskelparameterne for varer
 
 Syklustellingsarbeid kan opprettes når antallet varer synker under en bestemt terskelverdi på en lokasjon. Det finnes for eksempel 60 elementer på en lokasjon der terskelverdien for syklustelling er 40. Under en salgsordretransaksjon plukkes 25 varer fra lokasjonen og plasseres i en oppsamlingslokasjon. Siden det nye vareantallet på 35 er mindre enn terskelantallet, opprettes syklustellingsarbeid automatisk for lokasjonen.
 
-### Planlegge syklustellingsarbeid
-<a id="schedule-cycle-counting-work" class="xliff"></a>
+### <a name="schedule-cycle-counting-work"></a>Planlegge syklustellingsarbeid
 
 Du kan planlegge at syklustellingsplaner skal opprette syklustellingsarbeid umiddelbart eller med jevne mellomrom. Ved å definere planer for syklustelling kan du styre arbeidsutvalget som syklustellingsarbeidet er opprettet for, det maksimale antallet syklusentellinger som opprettes for varer på forskjellige lokasjoner, og antallet dager før en lagerlokasjon telles på nytt. Eksempel: En vare er tilgjengelig på tre lokasjoner i lageret, og det maksimale antallet syklustellinger er satt til **2**. Når du kjører syklustellingsplanen i dette tilfellet, opprettes to syklustellinger for de to lokasjonene der varen finnes. Et annet eksempel: Du angir antall dager mellom syklustellingene til **5**. I så fall opprettes syklustellingsarbeid hver femte dag. Hvis syklustellingsarbeid imidlertid behandles på dag tre, opprettes neste syklustellingsarbeid fem dager etter den siste syklustellingen ble behandlet, på dag åtte.
 
-## Opprette syklustellingsarbeid manuelt
-<a id="create-cycle-counting-work-manually" class="xliff"></a>
+## <a name="create-cycle-counting-work-manually"></a>Opprette syklustellingsarbeid manuelt
 Hvis du vil opprette syklustellingsarbeid manuelt, kan du bruke siden **Syklustellingsarbeid etter vare** eller **Syklustellingsarbeid etter lokasjon**. Du kan angi det maksimale antallet syklustellinger som kan opprettes om gangen. Hvis lagersjefen for eksempel angir en verdi på fem, opprettes syklustellingsarbeid for **fem** lokasjoner selv om varen finnes på ti lokasjoner. Du kan også velge en arbeisdpulje-ID som syklustellingsarbeids-ID-ene som er opprettet, skal tilordnes til. Når en arbeidspulje-ID behandles for syklustelling, vil arbeids-ID-en for syklustellingen som er tilordnet denne arbeidspuljen bli behandlet som en gruppe.
 
-## Utføre en syklustelling ved hjelp av en mobilenhet
-<a id="perform-a-cycle-count-by-using-a-mobile-device" class="xliff"></a>
+## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Utføre en syklustelling ved hjelp av en mobilenhet
 Det finnes flere metoder for å behandle syklustellingsarbeid ved hjelp av Finance and Operations på en mobilenhet:
 
 -   **Brukerstyrt** – Arbeideren kan angi en arbeids-ID for syklustelling som har statusen **Åpen**.
@@ -136,8 +129,7 @@ Følgende eksempel viser hvordan du kan utføre spotsyklustelling ved hjelp av e
 3.  Registrer og bekreft varenummeret og vareantallet som er telt opp. **Obs!** Statusen for syklustellingsarbeidet oppdateres til **Venter på gjennomgang** eller **Lukket** på **Alt arbeid**-siden, avnehgig av parameterne som er angitt på **Arbeider**-siden.
 4.  Valgfritt: Gjenta trinn 3 for de gjenværende varene på lokasjonen, og bekreft at det ikke finnes flere varer som er tilgjengelig for opptelling.
 
-## Løse syklustellingsdifferanser
-<a id="resolve-cycle-counting-differences" class="xliff"></a>
+## <a name="resolve-cycle-counting-differences"></a>Løse syklustellingsdifferanser
 Det oppstår en syklustellingsdifferanse i følgende scenarier: hvis **Er en syklustellingsansvarlig** er angitt til **Nei** for en arbeidsbruker-ID:
 
 -   Verdien for syklustellingen ikke er innenfor avviksgrensene som er angitt i feltene **Grense for største prosent** eller **Grense for største antall** på siden **Arbeidsbrukere**. Lagerbeholdningsantallet på en lokasjon er for eksempel 50, og avviksgrensen for arbeidsbrukeren er 10. Hvis arbeidsbrukeren angir en verdi som ikke er mellom 40 og 60, oppstår det en forskjell.
@@ -145,8 +137,7 @@ Det oppstår en syklustellingsdifferanse i følgende scenarier: hvis **Er en syk
 
 Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte verdien på siden **Syklustelling venter på gjennomgang**. Du kan kontrollere den endrede tellingen av vareantallet på siden **Beholdning etter lokasjon**. Tellingsverdien avvises hvis forskjellen ikke kan godkjennes.
 
-# Se også
-<a id="see-also" class="xliff"></a>
+# <a name="see-also"></a>Se også
 [Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
 
 

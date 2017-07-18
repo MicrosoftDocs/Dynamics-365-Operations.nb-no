@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: c236c72c2f29578f5ce8f2e536bd708a6ef358a6
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-## Policy for opprullet kost og beregning av administrasjonskostnader
-<a id="cost-rollup-policy-and-overhead-calculation" class="xliff"></a> 
+## <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Kostnadsregnskap lar deg konfigurere kostnadsfordeling slik at den passer med ra
 > [!NOTE]
 > Du kan endre konfigurasjoner hvis rapporteringskravene endres.
 
-## Eksempel på oppsett av policy for opprullet kost
-<a id="example-of-cost-rollup-policy-setup" class="xliff"></a>
+## <a name="example-of-cost-rollup-policy-setup"></a>Eksempel på oppsett av policy for opprullet kost
 
 La oss si at en organisasjon har følgende struktur med fire kostsentre.
 
@@ -155,8 +153,7 @@ Regler for kostnadsfordeling kan defineres som følger.
 | CC001                                | Sum         | **Personaletjenester**        |
 | CC002                                | Sum         | **Finanstjenester** |
 
-<br>Hvordan kostnad flyter mellom kostsentre
-<a id="brhow-cost-flows-between-cost-centers" class="xliff"></a> 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan kostnad flyter mellom kostsentre 
 ---------------------------------------------------
 
 Hvis du vil vite hvordan kostnad flyter mellom kostsentrene i organisasjonen, kan du opprette kostnadselementer av typen **Sekundær** for hvert kostsenter. Disse kostnadselementene brukes deretter til å overføre saldoer mellom kostsentrene under beregningen av indirekte kostnader.
@@ -207,8 +204,7 @@ Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til e
 | CC003                                | Resultatregnskap               | **SC-CC003**           |
 | CC004                                | Resultatregnskap               | **SC-CC004**           |
 
-## Beregn indirekte kostnader
-<a id="perform-overhead-calculation" class="xliff"></a>
+## <a name="perform-overhead-calculation"></a>Beregn indirekte kostnader
 
 **Journalen**
 
@@ -257,8 +253,7 @@ Siden **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt** som
 
 Etter at **Beregning av indirekte kostnader** er fullført, kan du rapportere resultatene ved hjelp av verktøy som Microsoft SharePoint Workspace, Excel eller Power BI.
 
-## Vise rapportering i Excel
-<a id="view-reporting-in-excel" class="xliff"></a> 
+## <a name="view-reporting-in-excel"></a>Vise rapportering i Excel 
 
 Dimensjonshierarkiene gjør at du kan vise dataene på ulike aggregeringsnivåer.
 
@@ -302,8 +297,7 @@ Det klare skillet mellom **Kostnadsfordelinger** og **Policyer for opprullet kos
 
 
 
-## Se også
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se også
 -  [Kostnadsobjektdimensjoner](cost-objects.md)
 -  [Kostnadselementdimensjoner](cost-elements.md)
 -  [Dimensjonshierarkier](dimension-hierarchy.md)

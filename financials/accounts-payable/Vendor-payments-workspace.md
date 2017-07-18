@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -21,28 +22,23 @@ ms.openlocfilehash: 4011a2383fe4556b730fa0b6353ba0b9773a4eec
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Arbeidsområde for leverandørbetalinger
-<a id="vendor-payments-workspace" class="xliff"></a>
+# <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
 [!include[banner](../includes/banner.md)]
 
 Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
 
-## Mitt arbeid-visning
-<a id="my-work-view" class="xliff"></a>
+## <a name="my-work-view"></a>Mitt arbeid-visning
 
-### Sammendrag-fliser
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammendrag-fliser
 
 Rutene i delen **Sammendrag** gir en oversikt over tilstanden for betalingsinformasjonen. Du kan se betalingsjournaler som ennå ikke er postert, fakturaer som er forfalt, alle leverandører og leverandører som er satt på vent. Fra **Sammendrag**-delen kan du opprette en ny betalingskjøring.
 
 Informasjonen i **Sammendrag**-delen er for firmaet som du er logget på.
 
-### Rutenett for leverandørtransaksjoner
-<a id="vendor-transactions-grids" class="xliff"></a>
+### <a name="vendor-transactions-grids"></a>Rutenett for leverandørtransaksjoner
 
 Delen **Leverandørtransaksjoner** inneholder rutenett som viser fakturaene som har forfalt og betalinger som ikke er utlignet. Fra **Forfalte fakturaer**-rutenettet kan du vise utligningshistorikken for en valgt faktura. Fra **Forfalte fakturaer**-rutenettet kan du vise utligningshistorikken for en valgt faktura og utligne en faktura.
 
@@ -50,13 +46,11 @@ Medarbeidere for sentralisert betaling kan bruke et filter som vises øverst i h
 
 Kategorien **Søk etter transaksjoner** i **Leverandørtransaksjoner**-delen lar deg søke etter en leverandørtransaksjon.
 
-### Beslektet informasjon
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Beslektet informasjon
 
 Du kan vise rapporten **Aldersfordeling for leverandør** og rapporten **Utbetalingsoppsummering etter dato** ved hjelp av koblingene i **Relatert informasjon**-delen i arbeidsområdet.
 
-## Analyse-side
-<a id="analytics-page" class="xliff"></a>
+## <a name="analytics-page"></a>Analyse-side
 
 **Analyse**-siden inneholder viktige mål, for eksempel leverandørfakturaer som har forfalt, og leverandørfakturaer som forfaller i fremtiden. Denne siden inneholder ni rapportsider. Én side gir en oversikt, og de andre åtte sidene inneholder opplysninger om leverandørbetalingsmål.
 

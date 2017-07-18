@@ -9,6 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
@@ -19,31 +20,26 @@ ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Arbeidsområde for datavalidering
-<a id="data-validation-workspace" class="xliff"></a>
+# <a name="data-validation-workspace"></a>Arbeidsområde for datavalidering
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet gir en oversikt over **arbeidsområdet for sjekkliste for datavalidering** og den tilknyttede konfigurasjonen.
 
-## Arbeidsområde for sjekkliste for datavalidering
-<a id="data-validation-checklist-workspace" class="xliff"></a>
+## <a name="data-validation-checklist-workspace"></a>Arbeidsområde for sjekkliste for datavalidering
 
 Med arbeidsområdet **Sjekkliste for datavalidering** kan du spore prosesser for validering av data på tvers av firmaer, områder og personer. Sjekklisten kan brukes i løpet av en ny implementering, etter en oppgradering eller etter en overføring. Avhengig av visningen av arbeidsområdet **Sjekkliste for datavalidering** vil du se alle oppgaver og statuser for et datavalideringsprosjekt eller bare oppgavene som er tilordnet til deg.
 
 Du må først velge et datavalideringsprosjekt øverst i arbeidsområdet. Alle data som vises i arbeidsområdet, blir deretter filtrert etter det valgte datavalideringsprosjektet.
 
-### Sammendrag-fliser
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammendrag-fliser
 
 Flisene **Sammendrag** gir en oversikt over prosessen og indikatorer hjelper deg med å holde datavalideringsprosessen i rute. Du kan se alle prosessens gjenværende oppgaver, fullførte oppgaver, oppgaver som pågår, og oppgaver som ikke har startet. Denne informasjonen er for alle firmaer som er inkludert i den valgte datavalideringsprosjektet.
 
-### Delen Oppgaver og status
-<a id="tasks-and-status-section" class="xliff"></a>
+### <a name="tasks-and-status-section"></a>Delen Oppgaver og status
 
 I delen **Oppgaver og status** vises status for det generelle datavalideringsprosjektet på forskjellige måter: status etter juridisk enhet, etter område og etter oppgaveliste. Du kan velge filteret for å vise statusen for et bestemt firma. Hver statuskategori gir en detaljert oversikt over både prosenten som er fullført og hvor mange oppgaver som gjenstår.
 
@@ -56,13 +52,11 @@ Du kan knytte filer, notater, bilder og nettadresser til en oppgave ved hjelp av
 
 Alternativet **Fullført av** fylles automatisk ut når aktiviteten er fullført, med navnet på arbeideren som fullført oppgaven. Når en oppgave er merket som fullført, oppdateres feltet **Fullføringsdato** automatisk til gjeldende dato og klokkeslett.
 
-### Konfigurere datavalideringsprosjektsiden
-<a id="configure-data-validation-project-page" class="xliff"></a>
+### <a name="configure-data-validation-project-page"></a>Konfigurere datavalideringsprosjektsiden
 
 Før du kan bruke arbeidsområdet **Sjekkliste for datavalidering**, må du konfigurere prosessen ved hjelp av siden **Konfigurer datavalideringsprosjekt**. (Klikk **Arbeidsområder** \> **Sjekkliste for datavalidering** \> **Konfigurer datavalideringsprosjekt**.)
 
-### Oppgaveområder
-<a id="task-areas" class="xliff"></a>
+### <a name="task-areas"></a>Oppgaveområder
 
 Du kan bruke oppgaveområder til å gruppere datavalideringsoppgaver i logiske eierskapsområder i organisasjonen. Leverandører, Kunder eller Økonomimodul kan for eksempel brukes som oppgaveområder.
 

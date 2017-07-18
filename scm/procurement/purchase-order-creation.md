@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -23,11 +24,9 @@ ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Opprette bestillinger
-<a id="create-purchase-orders" class="xliff"></a>
+# <a name="create-purchase-orders"></a>Opprette bestillinger
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Du kan også opprette bestillinger ved å kopiere linjer fra et annet bestilling
 
 Selv om du kan opprette bestillinger manuelt, genereres de vanligvis fra andre prosesser. Ordre kan opprettes automatisk basert på andre dokumenter, for eksempel rekvisisjoner. De kan også opprettes som en del av hovedplanleggingsprosessen gjennom planlagte bestillinger. Hvis du bruker kjøpsavtaler, kan bestillinger opprettes av **Frigivelsesordre**-handlingen. Det er også mer avanserte metoder for å automatisk opprette en bestilling. Bestillinger kan for eksempel opprettes når du bruker direktelevering eller konserninterne bestillingskjeder.
 
-## Opprette et bestillingshode
-<a id="creating-a-purchase-order-header" class="xliff"></a>
+## <a name="creating-a-purchase-order-header"></a>Opprette et bestillingshode
 Når du oppretter en ny bestilling, vises en dialogboks der du kan angi den vanligste informasjonen for bestillingshodet. Når du klikker **OK** for å lukke dialogboksen, opprettes bestillingen, og du kan deretter angi tilleggsinformasjon i hodet.  
 
 Den første informasjonen du må tenke på når du oppretter en bestilling, er bestillingstypen. Typen **Bestilling** brukes oftest. Hvis en kreditnota er nødvendig, kan du imidlertid bruke typen **Returordre**.  
@@ -56,8 +54,7 @@ Hvis en kjøpsavtale er tilknyttet ordren, må du angi denne informasjonen i fel
 
 Bestillingshodet inneholder også informasjon om gebyrer som gjelder hele ordren i stedet for enkeltlinjer. Tillegg kan legges automatisk til ordren hvis automatiske tillegg er definert for leverandøren eller leverandørens kostnadsgruppe. Du kan også legge til tillegg manuelt i ordrehodet ved å klikke **Vedlikehold tillegg** i handlingsruten.
 
-## Legge til bestillingslinjer
-<a id="adding-purchase-order-lines" class="xliff"></a>
+## <a name="adding-purchase-order-lines"></a>Legge til bestillingslinjer
 Bestillinger kan være for fysiske produkter eller tjenester. En innstilling på lagermodellgruppen avgjør om et bestemt varenummer gjelder for et produkt eller en tjeneste. Varen som kjøpes angis vanligvis av et varenummer. Hvis ordren er for produktene eller tjenestene som forbrukes direkte, kan du imidlertid også angi varen ved hjelp av en innkjøpskategori.  
 
 Bestillingslinjene inneholder mange felt, men mange av disse feltene har en standardverdi eller en verdi som er arvet fra ordrehodet. Flere felt angis når du velger et produkt eller tjeneste. Feltene som oftest angis manuelt inkluderer feltene for varenummer, antall og ønsket leveringsdato. Informasjon om enhetspris og rabatter er også svært viktig, men verdiene i disse feltene bestemmes ofte av forretningsavtaler eller kjøpsavtaler.  
@@ -74,8 +71,7 @@ Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av 
 
 Tillegg kan legges automatisk til bestillingslinjer hvis automatiske tillegg er definert for leverandøren eller leverandørtilleggsgruppen, og for varen eller varens kostnadsgruppe. Imidlertid legges vanligvis tillegg til manuelt på ordrelinjenivå. Hvis du vil legge til et tillegg, åpner du siden **Vedlikehold tillegg** ved hjelp av handlingen **Vedlikehold tillegg** på siden **Finans** -menyen i visningen **Linjer**. Fordelen med å legge til tillegg direkte på ordrelinjenivå er at tillegget kan tildeles som en lagerkost. Hvis du vil definere tilleggskoder for kontoproduktkostnader, bruker du debetalternativet **Vare**. Disse tilleggstypene må tildeles fra bestillingshodet til linjene før ordren kan bekreftes. Du kan for eksempel tilordne tillegg basert på antallet på hver linje. Kategorien for tillegg påvirker også hvordan tillegg etterberegnes. Faste tillegg angir for eksempel et fast beløp, og prosenttillegg beregnes som en prosent av nettobeløpet for ordrelinjen. Bestillinger kan tilordnes til en last, og lasten kan inneholde et estimat over den forventede kostnaden for transportkostnadene. Du kan tildele denne utgiften fra lasten tilbake til bestillingslinjene.
 
-## Bestillingshandlinger
-<a id="purchase-order-actions" class="xliff"></a>
+## <a name="purchase-order-actions"></a>Bestillingshandlinger
 Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) for å finne det relevante menyelementet.  
 
 Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer**, som du kan åpne i handlingsruten.  
@@ -91,8 +87,7 @@ Bestillinger kan konfigureres til å kreve at budsjettmidler fordeles til ordren
 
 Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempel ha mer informasjon om produkter eller tjenester, eller det kan hende du må få godkjenning av forbruket. Det er flere måter å holde tilbake en ordre. Du kan for eksempel vente med å bekrefte ordren. Hvis en arbeidsflyt for endringsadministrasjon brukes, sender du ikke ordren til godkjenning. Hvis du må blokkere alle ordrer for en bestemt leverandør, kan du også merke leverandør som **På vent** for behandling på leverandørstandarden. Det finnes også situasjoner som kan hindre at ordren blir behandlet. Behandling kan for eksempel hindres hvis kredittgrenser er overskredet, eller hvis nødvendige budsjettmidler er ikke tilgjengelige.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)

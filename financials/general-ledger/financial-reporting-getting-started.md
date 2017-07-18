@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Finansrapportering
-<a id="financial-reporting" class="xliff"></a>
+# <a name="financial-reporting"></a>Finansrapportering
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.
 
-Tilgang til finansrapportering
-<a id="accessing-financial-reporting" class="xliff"></a>
+<a name="accessing-financial-reporting"></a>Tilgang til finansrapportering
 -----------------------------
 
 Du finner **Finansrapportering**-menyen på følgende steder i Dynamics 365 for Finance and Operations:
@@ -55,8 +53,7 @@ Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du a
 
 Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine. De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.
 
-### Plikter
-<a id="duties" class="xliff"></a>
+### <a name="duties"></a>Plikter
 
 | Etikett for plikt                            | Beskrivelse                                                             | Navn på applikasjonsobjekttre                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -65,8 +62,7 @@ Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilo
 | Generer finansrapporter            | Generer og oppdater finansrapporter.                                 | FinansrapporterGenerer         |
 | Gå gjennom finansresultat          | Gå gjennom og analyser finansresultat.                               | FinansrapporterUtførGjennomgang       |
 
-### Rettigheter
-<a id="privileges" class="xliff"></a>
+### <a name="privileges"></a>Rettigheter
 
 | Etikett for rettighet                       | Beskrivelse                                                             | Navn på applikasjonsobjekttre                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -75,8 +71,7 @@ Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilo
 | Generer finansrapporter            | Generer og oppdater finansrapporter.                                 | FinansrapporterGenererRapporter  |
 | Vis finansrapporter                | Vis finansrapporter.                                                 | FinansrapporterVis             |
 
-### Roller
-<a id="roles" class="xliff"></a>
+### <a name="roles"></a>Roller
 
 | Etikett for rettighet                       | Avgift                                  | Roller                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
@@ -87,8 +82,7 @@ Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilo
 
 Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter. **Merk:** Sysadmin-rollen er lagt til alle roller i finansrapportering.
 
-## Standardrapporter
-<a id="default-reports" class="xliff"></a>
+## <a name="default-reports"></a>Standardrapporter
 Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker standard hovedkontokategorier i Dynamics 365 for Finance and Operations. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. Hver rapport i den følgende tabellen kobler til en Office Mix-presentasjon om rapporten.
 
 | Standardrapport                                                                                         | beskrivelse                                                                                                                                                                                                                                                                                                          |
@@ -116,16 +110,13 @@ Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker stand
 | [Ukentlig Salg og rabatter – Standard](https://mix.office.com/watch/112ng0hy5de0j)                     | Få innsikt i salg og rabatter for hver uke i en måned. Denne rapporten inneholder totalt fire uker.                                                                                                                                                                                                              |
 | [Budsjettmidler tilgjengelig - standard](https://mix.office.com/watch/15hcpezcbx7tv)                         | Vis en detaljert sammenligning av revidert budsjett, faktiske utgifter, budsjettreservasjoner og budsjettmidler tilgjengelig for alle kontoer                                                                                                                                                                                  |
 
-## Åpne finansrapporter
-<a id="opening-financial-reports" class="xliff"></a>
+## <a name="opening-financial-reports"></a>Åpne finansrapporter
 Når du klikker **Finansrapportering**-menyen, vises listen over standard finansrapporter for firmaet. Deretter kan du åpne eller endre en rapport. Velg rapportnavnet for å åpne en av standardrapportene. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2016, genereres rapporten for 31. juli 2016. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
 
-## Opprette og endre finansrapporter
-<a id="creating-and-modifying-financial-reports" class="xliff"></a>
+## <a name="creating-and-modifying-financial-reports"></a>Opprette og endre finansrapporter
 Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport. Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å klikke **Ny** i handlingsruten. Et rapportutforming-program lastes ned til enheten. Du kan deretter opprette den nye rapporten etter at rapportutformingen starter. Når du har lagret den nye rapporten, vises den i finansrapportlisten. Listen viser bare rapporter som er opprettet for firmaet som du bruker i Finance and Operations. Hvis du vil ha mer informasjon om prosessen med å opprette og endre finansrapporter i Finance and Operations, se disse [blogginnleggene](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) fra bloggen for Dynamics-finansrapportering. **Merk:** Datamaskinen som du laster ned klienten for rapportutforming på, må ha versjon 4.6.2 av Microsoft .NET Framework installert. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [her](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Du kan også endre en rapport som vises i finansrapportlisten. Når området rundt rapportnavnet er merket, klikker du **Rediger** i handlingsruten. Rapportutformingsprogrammet starter.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Vis finansrapporter](view-financial-reports.md)

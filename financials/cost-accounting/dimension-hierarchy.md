@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,18 +25,15 @@ ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Dimensjonshierarki
-<a id="dimension-hierarchy" class="xliff"></a>
+# <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om dimensjonshierarkier. Du bruker et dimensjonshierarki for å definere rapporteringsstruktur, kostnadspolicyer og sikkerhetsoppsett i Kostnadsregnskap.  
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 Dimensjonshierarkier brukes på forskjellige steder i Kostnadregnskap. Et dimensjonshierarki lar deg definere følgende informasjon:
 
@@ -59,26 +57,22 @@ Du kan opprette et dimensjonshierarki for følgende typer dimensjoner:
 > - Et dimensjonshierarki kan ha ubegrenset antall nivåer i strukturen. Alle nivåene blir tilgjengelig i arbeidsområdet **Kostnadskontroll**. Når du bruker Microsoft Excel eller Microsoft Power BI for rapporteringsformål, eksporteres bare de 15 første nivåene i dimensjonshierarkiet. Denne begrensningen finnes fordi både Excel og Power BI krever et fast skjema.
 > - Et dimensjonshierarki ikke datoeffektivt. Derfor lagres endringer i et dimensjonshierarki umiddelbart i posten, og du kan ikke sammenligne før- og etter-datoen.
 
-## Dimensjonshierarkistruktur
-<a id="dimension-hierarchy-type" class="xliff"></a>
+## <a name="dimension-hierarchy-type"></a>Dimensjonshierarkistruktur
 
 Når du oppretter et nytt dimensjonshierarki, må du velge en hierarkitype. Gå til **kostnadsregnskap** > **dimensjoner** > **dimensjonshierarkier**. Klikk **Ny**, og velg en dimensjonshierakitype. Du kan velge enten **Hierarki for dimensjonskategorisering** eller **Hierarki for dimensjonsklassifisering**.
 
-### Hierarki for dimensjonskategorisering
-<a id="dimension-categorization-hierarchy" class="xliff"></a>
+### <a name="dimension-categorization-hierarchy"></a>Hierarki for dimensjonskategorisering
 
 **Hierarki for dimensjonskategorisering** brukes til rapporteringsformål. Det støtter bare kostnadselementdimensjonene. Når du velger denne typen, gjelder følgende regler:
 
 -  Et dimensjonsmedlem kan tilknyttes mer enn én gang i hierarkistrukturen.
 -  Du kan plassere et dimensjonsmedlem for kostnadselement i forskjellige noder ved å tilordne et kostnadselement til bladnoden.
 
-### Hierarki for dimensjonsklassifisering
-<a id="dimension-classification-hierarchy" class="xliff"></a>
+### <a name="dimension-classification-hierarchy"></a>Hierarki for dimensjonsklassifisering
 
 **Hierarki for dimensjonklassifisering** brukes til å definere regler og til rapporteringsformål. Det støtter alle dimensjoner, for eksempel kostnadsobjekter, kostnadselementer og statistiske dimensjoner. Når du velger denne typen, kan et dimensjonsmedlem bare tilknyttes én gang i hierarkistrukturen.
 
-## Opprette og vedlikeholde et dimensjonshierarki
-<a id="create-and-maintain-a-dimension-hierarchy" class="xliff"></a>
+## <a name="create-and-maintain-a-dimension-hierarchy"></a>Opprette og vedlikeholde et dimensjonshierarki
 
 Et dimensjonshierarki opprettes som en trestruktur med node- og bladnoderelasjoner.
 
@@ -86,8 +80,7 @@ Et dimensjonshierarki opprettes som en trestruktur med node- og bladnoderelasjon
 -  En node kan ikke ha både undernoder og bladnoder tilordnet.
 -  Du kan bare tilordne en bladnode på det laveste nivået i hierarkiet.
 
-### Eksempel
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Eksempel
 
 Et lite firma har følgende organisasjonsstruktur, der finans og personale er avdelinger under administrasjon, mens montering og pakking er avdelinger under produksjon.
 
@@ -165,13 +158,11 @@ Dimensjonshierarkiet for policyen kan defineres som vist her.
 > [!NOTE]
 > Under **Dimensjonsmedlemsområder** kan en node inneholde 1:_n_ dimensionsmedlemsområder. Du kan sette inn dimensjonsmedlems-ID-er som ennå ikke finnes som dimensjonsmedlemmer. Denne fremgangsmåten gjør hierarkiet fleksibelt for fremtiden.  
 
-### Kopiere et hierarki
-<a id="copy-a-hierarchy" class="xliff"></a>
+### <a name="copy-a-hierarchy"></a>Kopiere et hierarki
 
 Du kan kopiere et gjeldende dimensjonshierarki som utgangspunkt for et nytt dimensjonshierarki. Denne fremgangsmåten kan være nyttig hvis du vil sammenligne de tidligere dimensjonshierarkiene med det nye dimensjonshierarkiet.
 
-### Endre rekkefølgen på nodene i et hierarki
-<a id="rearrange-nodes-in-a-hierarchy" class="xliff"></a>
+### <a name="rearrange-nodes-in-a-hierarchy"></a>Endre rekkefølgen på nodene i et hierarki
 
 Du kan flytte en node opp og ned i det gjeldende nivået i strukturen. På denne måten kan du endre rekkefølgen på nodene for rapportering i **kostnadskontroll**-arbeidsområdet.
 
@@ -183,8 +174,7 @@ Du kan flytte en node til en ny plassering i hierarkiet ved å velge målnoden. 
 > [!NOTE] 
 > Rekkefølgen på nodene beholdes ikke når du eksporterer data til Excel eller Power BI, fordi disse verktøyene bruker alfanumerisk sorteringsrekkefølge som standard. Du må manuelt endre rekkefølgen.
 
-## Definere dimensjonshierarkier for rapportering
-<a id="define-dimension-hierarchies-for-reporting" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-reporting"></a>Definere dimensjonshierarkier for rapportering
 
 Dimensjonshierarkier er viktig for rapportering. De lar deg definere den bestemte strukturen som passer inn i den enkelte organisasjonen. Med aggregeringene som gjøres på nodenivå i dimensjonshierarkiet, kan interessenter på alle nivåer i organisasjonen se data på et hvilket som helst nivå.
 
@@ -223,8 +213,7 @@ Følgende eksempel viser hvordan et dimensjonshierarki kan se ut i rapporterings
 | Organisasjon                              | Produksjon                                | Innpakning                                 | CC005                                     |                                            |
 | Organisasjon                              | Produksjon                                | Samling                                  | CC006                                     |                                            |
 
-### Oppdatere dimensjonshierarkiene som brukes for rapportering
-<a id="update-the-dimension-hierarchies-that-are-used-for-reporting" class="xliff"></a> 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Oppdatere dimensjonshierarkiene som brukes for rapportering 
 
 Over tid må dimensjonshierarkiene som brukes i de nevnte rapporteringsverktøyene, oppdateres. Du kan oppdatere dimensjonshierarkier ved å oppdatere klienten.
 
@@ -239,8 +228,7 @@ Oppdateringer til dimensjonshierarkier blir plukket opp hver 24. time av en hurt
 > [!NOTE] 
 > Hvis du vil utløse en oppdatering av hurtigbufferen for dimensjonshierarkiet manuelt, kan du opprette en ny eksport til Excel for dimensjonshierarkiet eller -hierarkiene som må oppdateres.
 
-## Definere dimensjonshierarkier for kostnadspolicyer
-<a id="define-dimension-hierarchies-for-cost-policies" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-cost-policies"></a>Definere dimensjonshierarkier for kostnadspolicyer
 
 Kostnadsregnskap består av flere policyer der detaljerte regler er definert. Du må definere ett eller flere dimensjonshierarkier for følgende policyer:
 
@@ -251,8 +239,7 @@ Kostnadsregnskap består av flere policyer der detaljerte regler er definert. Du
 
 Dimensjonshierarkier gjør det enkelt å opprette regler. For å unngå å opprette regler for hvert dimensjonsmedlem, kan du dra nytte av aggregeringene av dimensjonsmedlemmer som leveres av dimensjonshierarkinivåer. Hvis du har overlappende regler, må du definere bestemte regler som systemet skal ta i betraktning når det beregner administrasjonskostnader.
 
-### Eksempel: Definere en policy for kostnadsatferd
-<a id="example-define-a-cost-behavior-policy" class="xliff"></a>
+### <a name="example-define-a-cost-behavior-policy"></a>Eksempel: Definere en policy for kostnadsatferd
 
 En ny policy for kostnadsatferd opprettes, og egnede dimensjonshierarkier tilordnes policyen, som vist her.
 
@@ -295,8 +282,7 @@ En beregning av administrasjonskostnader som kjøres etter 20. januar 2017, vurd
 > [!NOTE] 
 > Feltene **Gyldig fra** og **Gyldig til** er datoeffektive og tidseffektive. Du kan la regelen utløpe og kjøre en ny beregning av administrasjonskostnader på samme dag.
 
-## Definere dimensjonshierarkier for sikkerhetsoppsett
-<a id="define-dimension-hierarchies-for-security-setup" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-security-setup"></a>Definere dimensjonshierarkier for sikkerhetsoppsett
 
 Kostnadsregnskapsdata skal gjøres tilgjengelig for alle ledere som har ansvar for en rapporteringsenhet. I kostnadsregnskapsterminologien er en rapporteringsenhet representert som et kostnadsobjekt eller et sett med kostnadsobjekter.
 

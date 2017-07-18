@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 6b4498ae05b9495918c0a079cc88903820192a59
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Oversikt over behovsprognose
-<a id="demand-forecasting-overview" class="xliff"></a>
+# <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Behovsprognose brukes til å forutse uavhengig behov fra salgsordrer og avhengig
 
 For å generere basislinjeprognosen sendes et sammendrag av historiske transaksjoner til en Microsoft Azure Machine Learning-tjeneste med Azure som vert. Fordi denne tjenesten ikke er delt mellom brukere kan den lett tilpasses for å dekke bransjespesifikke behov. Du kan bruke Finance and Operations for å visualisere prognosen, justere prognosen og vise nøkkelytelsesindikatorer (KPI-er) om prognosenøyaktighet.
 
-## Nøkkelfunksjoner for behovsprognose
-<a id="key-features-of-demand-forecasting" class="xliff"></a>
+## <a name="key-features-of-demand-forecasting"></a>Nøkkelfunksjoner for behovsprognose
 Her er noen av de viktigste funksjonene i behovsprognose:
 
 -   Generere en statistisk basislinjeprognose som er basert på historiske data.
@@ -48,8 +46,7 @@ Her er noen av de viktigste funksjonene i behovsprognose:
 -   Fjerne utestående.
 -   Opprette målinger av prognosenøyaktighet.
 
-## Viktige temaer i behovsprognose
-<a id="major-themes-in-demand-forecasting" class="xliff"></a>
+## <a name="major-themes-in-demand-forecasting"></a>Viktige temaer i behovsprognose
 Tre viktige temaer er implementert i behovsprognose:
 
 -   **Modularitet** – behovsprognose er modulær og enkel å konfigurere. Du kan aktivere eller deaktivere funksjonen ved å endre konfigurasjonsnøkkelen på **Handel** &gt; **Lagerprognose** &gt; **Behovsprognose**.
@@ -60,8 +57,7 @@ Tre viktige temaer er implementert i behovsprognose:
     -   Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. Hvis du vil ha detaljer om priser for Machine Learning, se <http://aka.ms/machine-learning-price-info>.
 -   **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose i Finance and Operations bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
 
-## Grunnleggende flyt i behovsprognose
-<a id="basic-flow-in-demand-forecasting" class="xliff"></a>
+## <a name="basic-flow-in-demand-forecasting"></a>Grunnleggende flyt i behovsprognose
 Diagrammet nedenfor viser grunnleggende flyt i behovsprognose. 
 
 [![diagram for innføring i behovsprognose](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
@@ -74,12 +70,10 @@ Prognosene, historiske data og eventuelle endringer som ble gjort i behovsprogno
 
 Du kan bruke Finance and Operations til å visualisere og endre basislinjeprognosene. Manuelle justeringer må være autorisert før prognosene kan brukes til planlegging.
 
-## Begrensninger
-<a id="limitations" class="xliff"></a>
+## <a name="limitations"></a>Begrensninger
 Behovsprognose i Finance and Operations er et verktøy som hjelper kunder i fabrikasjonsbransjen med å opprette prognoseprosesser. Det tilbyr kjernefunksjonaliteten for en behovsprognoseløsning og er utformet slik at det kan enkelt utvides. Behovsprognose egner seg kanskje ikke best for kunder i bransjer som detaljhandel, engros, lager, transport eller andre profesjonelle tjenester.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oppsett av behovsprognose](demand-forecasting-setup.md)

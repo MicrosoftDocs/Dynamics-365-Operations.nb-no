@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,25 +23,21 @@ ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Nye oppgaveveiledninger (februar 2016)
-<a id="new-task-guides-february-2016" class="xliff"></a>
+# <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics AX og (februar 2016) Komme i gang.
 
-Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics AX
-<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics AX
 ---------------------------------------------------------------------------------
 
 (Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics AX 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics AX. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
-### Leverandører
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Leverandører
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -55,8 +52,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Kundereskontro
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Kundereskontro
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -77,8 +73,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Kontant- og bankbehandling
-<a id="cash-and-bank-management" class="xliff"></a>
+### <a name="cash-and-bank-management"></a>Kontant- og bankbehandling
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -106,8 +101,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Samsvar
-<a id="compliance" class="xliff"></a>
+### <a name="compliance"></a>Samsvar
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -116,8 +110,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Kostnadsstyring
-<a id="cost-management" class="xliff"></a>
+### <a name="cost-management"></a>Kostnadsstyring
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -130,8 +123,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Funksjonalitet per land/område
-<a id="countryregion-functionality" class="xliff"></a>
+### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -273,8 +265,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Utvikle målsetting og strategi
-<a id="develop-vision-and-strategy" class="xliff"></a>
+### <a name="develop-vision-and-strategy"></a>Utvikle målsetting og strategi
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -287,8 +278,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Elektronisk rapportering
-<a id="electronic-reporting" class="xliff"></a>
+### <a name="electronic-reporting"></a>Elektronisk rapportering
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -301,8 +291,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Reiseregning og utlegg
-<a id="expense-management" class="xliff"></a>
+### <a name="expense-management"></a>Reiseregning og utlegg
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -311,8 +300,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Anleggsmidler
-<a id="fixed-assets" class="xliff"></a>
+### <a name="fixed-assets"></a>Anleggsmidler
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -335,8 +323,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Økonomimodul
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Økonomimodul
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -369,8 +356,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Forvaltning av menneskelig kapital
-<a id="human-capital-management" class="xliff"></a>
+### <a name="human-capital-management"></a>Forvaltning av menneskelig kapital
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -414,8 +400,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Lagerstyring
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Lagerstyring
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -439,8 +424,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Produksjon
-<a id="manufacturing" class="xliff"></a>
+### <a name="manufacturing"></a>Produksjon
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -492,8 +476,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Hovedplanlegging
-<a id="master-planning" class="xliff"></a>
+### <a name="master-planning"></a>Hovedplanlegging
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -506,8 +489,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Organisasjonsstyring
-<a id="organization-administration" class="xliff"></a>
+### <a name="organization-administration"></a>Organisasjonsstyring
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -521,8 +503,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Planlegging
-<a id="planning" class="xliff"></a>
+### <a name="planning"></a>Planlegging
 
 |                        |                    |
 |------------------------|--------------------|
@@ -531,8 +512,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Innkjøp og leverandører
-<a id="procurement-and-sourcing" class="xliff"></a>
+### <a name="procurement-and-sourcing"></a>Innkjøp og leverandører
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -547,8 +527,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Produktinformasjon og -konfigurasjon
-<a id="product-information-and-configuration" class="xliff"></a>
+### <a name="product-information-and-configuration"></a>Produktinformasjon og -konfigurasjon
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -574,8 +553,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Offentlig sektor
-<a id="public-sector" class="xliff"></a>
+### <a name="public-sector"></a>Offentlig sektor
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -601,8 +579,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Detaljhandel og handel
-<a id="retail-and-commerce" class="xliff"></a>
+### <a name="retail-and-commerce"></a>Detaljhandel og handel
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -644,8 +621,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Salg
-<a id="sales" class="xliff"></a>
+### <a name="sales"></a>Salg
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -668,8 +644,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Merverdiavgift
-<a id="sales-tax" class="xliff"></a>
+### <a name="sales-tax"></a>Merverdiavgift
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -688,8 +663,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Sikkerhet
-<a id="security" class="xliff"></a>
+### <a name="security"></a>Sikkerhet
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -700,8 +674,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-### Lager og transport
-<a id="warehouse-and-transportation" class="xliff"></a>
+### <a name="warehouse-and-transportation"></a>Lager og transport
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -726,8 +699,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-## Oppgaveveiledninger i (februar 2016) Komme i gang-bibliotek
-<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
+## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Oppgaveveiledninger i (februar 2016) Komme i gang-bibliotek
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-linje**                                       | **Land/område** |
@@ -747,8 +719,7 @@ Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics
 
  
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)

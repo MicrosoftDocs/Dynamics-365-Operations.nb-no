@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -24,11 +25,9 @@ ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Arbeidspolicyer for lager
-<a id="warehouse-work-policies" class="xliff"></a>
+# <a name="warehouse-work-policies"></a>Arbeidspolicyer for lager
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Denne arbeidspolicyen kontrollerer om lagerarbeid opprettes for lagerprosesser i
 -   **Lagerlokasjoner**
 -   **Produkter**
 
-## Arbeidsordretyper
-<a id="work-order-types" class="xliff"></a>
+## <a name="work-order-types"></a>Arbeidsordretyper
 Du kan velge blant følgende arbeidsordretyper:
 
 -   Plasser ferdigvarer
@@ -52,16 +50,13 @@ Du kan velge blant følgende arbeidsordretyper:
 
 **Arbeidsopprettelsesmetode**-feltet har verdien **Aldri**. Denne verdien angir at arbeidspolicyen hindrer at lagerarbeid opprettes for den valgte arbeidsordretypen.
 
-## Lagerlokasjoner
-<a id="inventory-locations" class="xliff"></a>
+## <a name="inventory-locations"></a>Lagerlokasjoner
 Du kan velge en lokasjon som arbeidspolicyen gjelder for. Hvis ingen lokasjon er knyttet til en arbeidspolicy, gjelder ikke arbeidspolicyen for noen prosesser. På **Lokasjoner**-siden du kan også merke eller fjerne merkingen av arbeidspolicyen for en bestemt lokasjon.
 
-## Produkter
-<a id="products" class="xliff"></a>
+## <a name="products"></a>Produkter
 Du kan velge et produkt som arbeidspolicyen gjelder for. Du kan bruke arbeidspolicyen på alle produkter eller valgte produkter.
 
-## Eksempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Eksempel
 I eksemplet nedenfor er det to produksjonsordrer, PRD-001 og PRD 00*2*. Produksjonsordren PRD-001 har en operasjon kalt **Montering**, der produktet SC1 rapporteres som ferdig til lokasjonen O1. Produksjonsordren PRD-002 er en operasjon kalt **Maling**, og den bruker SC1-produktet fra lokasjonen O1. Produksjonsordren PRD-002 bruker også råvaren RM1 fra lokasjonen O1. RM1 er lagret i lagerlokasjonen BULK-001 og blir plukket til lokasjon O1 av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen PRD-002 frigis. 
 
 [![Arbeidspolicyer for lager](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -84,8 +79,7 @@ Her er et eksempel på arbeidspolicyen som du kan sette opp, basert på disse he
 
 Fremgangsmåtene nedenfor inneholder trinnvise instruksjoner om hvordan du definerer lagerarbeidspolicyen i dette scenariet. Et eksempeloppsett som viser hvordan du rapporterer en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert beskrives også.
 
-## Definere en lagerarbeidspolicy
-<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
+## <a name="set-up-a-warehouse-work-policy"></a>Definere en lagerarbeidspolicy
 Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspolicy, kan du hindre oppretting av arbeid for råvareplukking og plassering av ferdige varer for et sett med produkter på bestemte lokasjoner. Demonstrasjonsdatafirmaet USMF ble brukt til å opprette denne fremgangsmåten. 
 
 TRINN (21)
@@ -114,8 +108,7 @@ TRINN (21)
 | 20. | Angi eller velg L0101 i Varenummer-feltet.                         |
 | 21. | Klikk Lagre.                                                                |
 
-## Rapportere en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert
-<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
+## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Rapportere en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert
 Denne fremgangsmåten viser et eksempel på rapportering som ferdig til en lokasjon som ikke er nummerskiltkontrollert. En gjeldende arbeidspolicy er en forutsetning for denne oppgaven. Den tidligere fremgangsmåten viste oppsettet av arbeidspolicyen. 
 
 TRINN (25)
