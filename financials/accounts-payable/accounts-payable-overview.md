@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurere Leverandører
-<a id="configure-accounts-payable" class="xliff"></a>
+# <a name="configure-accounts-payable"></a>Konfigurere Leverandører
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen beskriver sidene du bruker til å definere grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører.
 
-Forutsetninger for oppsett av Leverandører
-<a id="prerequisites-for-accounts-payable-setup" class="xliff"></a>
+<a name="prerequisites-for-accounts-payable-setup"></a>Forutsetninger for oppsett av Leverandører
 ----------------------------------------
 
 Før du kan konfigurere Leverandører må du fullføre følgende konfigurasjon:
@@ -46,8 +44,7 @@ Før du kan konfigurere Leverandører må du fullføre følgende konfigurasjon:
     -   Hvis du planlegger å kjøre kursjusteringer, må du konfigurere valutakoder på siden Valutaer, konfigurere valutakurstyper på siden Valutakurstyper og konfigurere valutakurser på siden Valutakurser.
 -   I Kontant- og bankbetaling definerer du bankkontoer som skal brukes med betalingsmåter.
 
-## Konfigurasjonssider for Leverandører
-<a id="setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="setup-pages-for-accounts-payable"></a>Konfigurasjonssider for Leverandører
 
 Bruk de følgende sidene til å sette opp den grunnleggende funksjonaliteten i Leverandører for hver juridiske enhet. Sidene vises i rekkefølgen som anbefales for oppsett. Du kan gjøre oppsettet enklere ved å opprette maler fra de første postene som opprettes. I en mal angis verdiene vanligvis i mange felt for å reflektere funksjonene som organisasjonen ønsker å implementere for en bestemt type leverandør.
 1.  På siden Betalingsbetingelser definerer du betalingsbetingelsene du tilordner til salgsordrer, bestillinger, kunder og leverandører, og som bestemmer forfallsdatoer for fakturaers.
@@ -58,8 +55,7 @@ Bruk de følgende sidene til å sette opp den grunnleggende funksjonaliteten i L
 6.  På siden Skjemaoppsett definerer du formatet for forskjellige dokumenter som er knyttet til leverandører, og som firmaet bruker til å holde oversikt over mottak fra leverandører og til å registrere årsaker til betalingsflyten til leverandører.
 7.  På siden leverandører oppretter og vedlikeholder du leverandørkontoer, og skattemyndighetene som organisasjonen din rapporterer merverdiavgift til.
 
-## Valgfrie sider for leverandøroppsett
-<a id="optional-setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="optional-setup-pages-for-accounts-payable"></a>Valgfrie sider for leverandøroppsett
 I tillegg til den grunnleggende funksjonaliteten har Leverandører andre funksjoner som du kan definere.
 
 De ekstra oppsettssidene organiseres etter funksjonalitet.
@@ -125,8 +121,7 @@ De ekstra oppsettssidene organiseres etter funksjonalitet.
 
 -   På **1099-felt**-siden kontrollerer og oppdaterer du minimumsbeløpene som må rapporteres til det amerikanske skattevesenet, Internal Revenue Service (IRS), basert på de nyeste IRS-kravene.
 
-## **Valgfritt oppsett for andre moduler**
-<a id="optional-setup-for-other-modules" class="xliff"></a>
+## <a name="optional-setup-for-other-modules"></a>**Valgfritt oppsett for andre moduler**
 **Organisasjonsstyring**
 
 -   På Nummerserier-siden definerer du nummerseriegrupper for fakturanumre.

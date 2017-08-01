@@ -24,13 +24,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Direkteoverføring fra produksjonsordrer til utleveringsporter
-<a id="cross-docking-from-production-orders-to-outbound-docks" class="xliff"></a>
+# <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
 Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport.
 
-Introduksjon
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduksjon
 ------------
 
 Direkteoverføring fra produksjon til en utgående lokasjon er relevant for produsenter som produserer stort volum, og ideelt sett vil sende de ferdige produktene så snart de er rapportert som ferdige fra produksjonslinjene. Hensikten er å levere produkter til distribusjonssentre som er fysisk plassert nær kundeetterspørselen, i stedet for å bygge opp lager på området for produksjon.
@@ -47,25 +45,21 @@ Et produkt som er rapportert som fullført til produksjonsutleveringsstedet (3),
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## Konfigurere direkteoverføring
-<a id="configure-cross-docking" class="xliff"></a>
+## <a name="configure-cross-docking"></a>Konfigurere direkteoverføring
 Du konfigurerer prosessen direkteoverføring i **arbeidspolicyer**. En arbeidspolicy inneholder en arbeidsordretype, sted og produkt. I eksemplet nedenfor er direkteoverføring konfigurert for produkt X og lokasjon Y.
 
-#### Arbeidsordretyper
-<a id="work-order-types" class="xliff"></a>
+#### <a name="work-order-types"></a>Arbeidsordretyper
 
 -   Arbeidsordretype: Plasser ferdigvarer
 -   Arbeidsopprettelsesmetode: direkteoverføring
 -   Navn på direkteoverføringspolicy: Overføringsordrer
 
-#### Lagerlokasjoner
-<a id="inventory-locations" class="xliff"></a>
+#### <a name="inventory-locations"></a>Lagerlokasjoner
 
 -   Lager: 51
 -   Sted: Y
 
-#### Produkter
-<a id="products" class="xliff"></a>
+#### <a name="products"></a>Produkter
 
 -   Varenummer: X
 
@@ -76,31 +70,26 @@ For øyeblikket kan direkteoverføring bare konfigureres for to arbeidsordretype
 
 I **direkteoverføringspolicyen** angir du hvilke dokumenttyper som skal brukes for direkteoverføring. For tiden er **Overføringsordrer** den eneste dokumenttypen som støttes. Følgende eksempel viser konfigurasjonen av en policy for direkteoverføring.
 
-### Navn på direkteoverføringspolicy: Overføringsordre
-<a id="cross-docking-policy-name-transfer-order" class="xliff"></a>
+### <a name="cross-docking-policy-name-transfer-order"></a>Navn på direkteoverføringspolicy: Overføringsordre
 
 -   Sekvensnummer: 10
 -   Arveidsordretype: Utstedelse for overføring
 -   Direkteoverføringsbehov krever en lokasjon: Usann
 -   Strategi for direkteoverførind: dato og klokkeslett
 
-### Serienummer
-<a id="sequence-number" class="xliff"></a>
+### <a name="sequence-number"></a>Serienummer
 
 **Serienummer** angir prioriteten til dokumenttypen. Fortiden er **Utstedelse for overføring** den eneste typen som støttes. Serienummeret vil derfor først bli relevant når flere ordretyper støttes.
 
-### Direkteoverføringspolicy
-<a id="cross-docking-policy" class="xliff"></a>
+### <a name="cross-docking-policy"></a>Direkteoverføringspolicy
 
 Direkteoverføringspolicyen angir også policyen for prioriteringen av etterspørselen etter overføringsordrer. Hvis det for eksempel finnes flere overføringsordrer for samme produkt, angis planlagt dato og klokkeslett på lasten, og sammen med overføringsordren argjør dette prioriteringen mellom ordrene. Planlagt dato og klokkeslett kan angis direkte på lasten, eller de kan angis i en **avtalesplan** som er tilknyttet lasten. Prioriteringen bestemmes av direkteoverføringsstrategien. Det er for øyeblikket bare én strategi: **dato og klokkeslett**.
 
-### Direkteoverføringsbehov krever en lokasjon
-<a id="cross-docking-demand-requires-location" class="xliff"></a>
+### <a name="cross-docking-demand-requires-location"></a>Direkteoverføringsbehov krever en lokasjon
 
 I direkteoverføringspolicyen, kan du angi kriterier som krever at overføringsordrer har en tilordnet lokasjon for å kvalifisere til direkteoverføring. Dette kriteriet er satt opp i feltet **Direkteoverføringsbehov krever en lokasjon**. Lokasjonen på avtaleplanen som er tilknyttet lasten, blir brukt som den endelige plasseringen for varene som blir direkteoverført. Den endelige plasseringen for varene som blir direkteoverført bestemmes av lokasjonsdirektivet for **Utstedelse for overføring** for arbeidsordretypen **Plasser**. De kan være nyttig å aktivere feltet **Direkteoverføringsbehov krever en lokasjon** i et scenario der de ferdige varene skal direkteoverføres bare hvis en lastebil er tilordnet til en rampedør. I så fall flyttes varene til lastebilen direkte fra produksjonslinjen. Når en lastebil er tilordnet rampedøren, vil en bruker tilordne plasseringen til avtaleplanen og vil derfor gjøre lokasjonen gyldig for direkteoverføring. Delene nedenfor forklarer to eksempler.
 
-#### Scenario 1 – Direkteoverføring fra produksjon til overføringsordrer
-<a id="scenario-1--cross-docking-from-production-to-transfer-orders" class="xliff"></a>
+#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Scenario 1 – Direkteoverføring fra produksjon til overføringsordrer
 
 Når et produkt rapportert som fullført på produksjonslinjen, overføres det til en rampedørlokasjon der det lastes inn i en lastebil og overføres til et distribusjonssenter. Bruk selskapet USMF.
 
@@ -117,8 +106,7 @@ Når et produkt rapportert som fullført på produksjonslinjen, overføres det t
 
 Arbeid av typen **Plasser ferdigvarer** ble opprettet og behandlet.
 
-#### Scenario 2 - Direkteoverføring fra produksjon til overføringsordrer med en avtaleplan
-<a id="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule" class="xliff"></a>
+#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenario 2 - Direkteoverføring fra produksjon til overføringsordrer med en avtaleplan
 
 Når et produkt som er rapportert som fullført på produksjonslinjen overføres en rampedørlokasjon som er identifisert av en avtaleplan for rampedørlokasjonene. Bruk selskapet USMF.
 
@@ -132,8 +120,7 @@ Når et produkt som er rapportert som fullført på produksjonslinjen overføres
 8.  Gå til mobilenhetsportalen, og velg menyelementet **Ferdigmeld og plasser**.
 9.  Ferdigmeld varenummer **L0101** fra den fra den håndholdte enheten. Legg merke til at plasseringslokasjonen nå er **BAYDOOR 2**. Denne lokasjonen blir funnet fra avtaleplanen i stedet for lokasjonsdirektivet **overføringsmottak**.
 
-### Tilleggsinformasjon
-<a id="additional-information" class="xliff"></a>
+### <a name="additional-information"></a>Tilleggsinformasjon
 
 -   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet.
 -   Antallet som blir rapportert som fullført, kan ikke deles til overføringsordre med laver etterspørsel. Hvis det for eksempel ferdigmeldes 20 stykker, og det finnes en overføringsordre for 5 stykker, blir overføringsordren ikke funnet gyldig for direkteoverføring.

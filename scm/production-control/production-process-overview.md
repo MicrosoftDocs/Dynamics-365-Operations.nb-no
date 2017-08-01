@@ -28,8 +28,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oversikt over produksjonsprosessen
-<a id="production-process-overview" class="xliff"></a>
+# <a name="production-process-overview"></a>Oversikt over produksjonsprosessen
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Produksjonsprosessen påvirkes vanligvis av kostnadsregnskaps- og beholdningsvur
 
 Valget av kostnadsmålingsmetodene definerer også rapporteringskravene for material- og ressursforbruk i produksjonsprosessen. Faktiske kostnadsmetoder krever som regel nøyaktig rapportering på jobbnivå, mens periodiske kostnadsmetoder gir mindre detaljert rapportering av material- og ressursforbruk.
 
-## Blandet modus-produksjon
-<a id="mixed-mode-manufacturing" class="xliff"></a>
+## <a name="mixed-mode-manufacturing"></a>Blandet modus-produksjon
 Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper. Finance and Operations kan bruke forskjellige ordretyper i blandet modus. Med andre ord kan alle ordretyper forekomme under hele prosessen med å produsere ett ferdig produkt.
 
 -   **Produksjonsordre** – Dette er den klassiske ordretypen for å produsere et bestemt produkt eller en produktvariant i et gitt antall på en bestemt dato. Produksjonsordrer er basert på stykklister og ruter.
@@ -53,8 +51,7 @@ Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper.
 -   **Kanban** – Kanbaner brukes til å signalisere gjentatte lean manufacturing-prosesser som er basert på produksjonsflyter, Kanban-regler og stykklister.
 -   **Prosjekt** – Et produksjonsprosjekt kombinerer produkter og tjenester med en gitt tidsplan og et gitt budsjett. Produksjonsdelen av et prosjekt kan leveres via en av de andre ordretypene.
 
-## Produksjonsprinsipper
-<a id="manufacturing-principles" class="xliff"></a>
+## <a name="manufacturing-principles"></a>Produksjonsprinsipper
 Hvis du vil velge produksjonsprinsippet som passer best til et bestemt produkt og tilknyttet markedet, må du vurdere kravene til produksjon og logistikk, og også kundenes forventninger om leveringstider.
 
 -   **Produser for lager** – Dette er det klassiske produksjonsprinsippet, der varer produseres for lager, basert på prognosen eller minimum lagerpåfyll (sistnevnte beregnes vanligvis basert på prognose eller historisk forbruk).
@@ -62,8 +59,7 @@ Hvis du vil velge produksjonsprinsippet som passer best til et bestemt produkt o
 -   **Konfigurer etter ordre** – Som ved prinsippet for produksjon etter ordre, utføres de endelige operasjonene i verdikjeden etter ordre. Den faktiske produktvarianten som produseres, er ikke forhåndsdefinert, men opprettes ved ordreregistreringen, basert på konfigurasjonsmodellen for salgsproduktet. Konfigurer etter ordre-prinsippet krever en del prosessamkjøring for en bestemt produktlinje.
 -   **Produser på bestilling** – Prosesser for produksjon etter bestilling er vanligvis igangsatt av et prosjekt, og starter vanligvis med utviklingsfasen. I utviklingsfasen utvikles og beskrives de faktiske produktene som er nødvendige for å oppfylle ordren. Produksjonsordrer, partiordrer eller Kanbaner kan så opprettes for å produsere produktene.
 
-## Oversikt over produksjonens livssyklus
-<a id="overview-of-the-production-life-cycle" class="xliff"></a>
+## <a name="overview-of-the-production-life-cycle"></a>Oversikt over produksjonens livssyklus
 Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i blandet modus-produksjon. Men ikke alle er representert med en eksplisitt ordrestatus.
 
 1.  **Opprettet** – Du kan opprette en produksjonsordre, partiordre eller Kanban manuelt, eller du kan konfigurere systemet for å generere dem basert på ulike behovssignaler. Hovedplanlegging oppretter produksjonsordrer, partiordrer eller Kanbaner ved autorisasjon av planlagte ordrer. Andre behovssignaler er salgsordrer eller tilknyttede forsyningssignaler fra andre produksjonsordrer eller Kanbaner. For Kanbaner med fast antall genereres behovssignaler når Kanbaner registreres som tomme.
@@ -84,8 +80,7 @@ Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i bl
 12. **Periodisk avslutning** – Noen regnskapsprinsipper, som periodisk gjennomsnitt, backflush-etterkalkulering, FIFO eller LIFO, krever periodiske aktiviteter for å lukke lageret eller regnskapsperioden. Vanligvis prøver systemet å rapportere alt material- og ressursforbruk samt korrigeringer av lager og svinn, før periodene lukkes. Denne rapporteringen gjøres vanligvis ved hjelp av lagerbevegelsesjournaler eller justeringsjournaler. Målet er å vurdere det økonomiske resultatet til driftsenheter per periode. I noen tilfeller når tidkrevende produksjonsordrer brukes, som strekker seg over de økonomiske rapporteringsperiodene, brukes produksjonsjournaler til å rapportere produksjonsfremdriften og ressursforbruket ved utløpet av perioden.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Tilbakemeldinger på produksjon](production-feedback.md)

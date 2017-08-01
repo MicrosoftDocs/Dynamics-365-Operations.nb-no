@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oversikt over produktkonfigurasjonsmodeller
-<a id="product-configuration-models-overview" class="xliff"></a>
+# <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
 
 [!include[banner](../includes/banner.md)]
 

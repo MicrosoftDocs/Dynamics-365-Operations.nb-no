@@ -26,37 +26,32 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Finansrapport for resultatregnskap
-<a id="income-statement-financial-report" class="xliff"></a>
+# <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
 
-Standardrapport for resultatregnskap
-<a id="default-income-statement-report" class="xliff"></a>
+<a name="default-income-statement-report"></a>Standardrapport for resultatregnskap
 -------------------------------
 
 | Standardrapport             | Resultat                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
 | Resultatregnskap – Standard | Gir en oversikt over organisasjonens lønnsomhet for inneværende periode, og også for hittil i år. |
 
-## Byggeblokker
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Byggeblokker
 Finansrapporten for resultatregnskapet bruker byggeblokkene nedenfor.
 
 | Standardrapport             | Raddefinisjon                     | Kolonnedefinisjon          |
 |----------------------------|------------------------------------|----------------------------|
 | Resultatregnskap – Standard | Sammendrag for resultatregnskap – Standard | Periodisk og hittil i år – Standard |
 
-### Raddefinisjon
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Raddefinisjon
 
 Raddefinisjon, Sammendrag for resultatregnskap – Standard, inneholder en inndeling for hver del av et tradisjonelt resultatregnskap. Dimensjonen for hovedkontokategorien brukes til å opprette denne raddefinisjonen. Derfor kan alle generere rapporten uten å gjøre endringer.
 
-### Kolonnedefinisjon
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Kolonnedefinisjon
 
 Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer av detaljer og økonomiske data.
 
@@ -67,8 +62,7 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
  
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Finansrapportering](financial-reporting-getting-started.md)

@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Prosjektressurser
-<a id="project-resourcing" class="xliff"></a>
+# <a name="project-resourcing"></a>Prosjektressurser
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,14 +46,12 @@ En utfordring for prosjektledere og ressursansvarlige i løpet av planleggingsfa
 
 Etter hvert som prosjektplanleggingen pågår, kan planlagte ressurser erstattes med bemannede ressurser. Prosjektlederen kan også gå tilbake og oppdatere ressursreservasjoner under ett av prosjektstadiene.
 
-## Definere prosjektressurser
-<a id="set-up-project-resources" class="xliff"></a>
+## <a name="set-up-project-resources"></a>Definere prosjektressurser
 Du må opprette en kalender og knytte den til en ansatt eller en arbeider. Kalenderen brukes til å planlegge prosjektet og arbeidstiden for ressursene som er reservert for prosjektet. Prosjektledere kan utføre ressursutjevning som en del av optimalisering av ressursen, under installasjonen av kalenderen. Basert på tidspunktet i kalenderen, kan begrensninger plasseres på ressurser. Du kan opprette en kalender på siden **Kalendere**. 
 
 Når du definerer en arbeider som en prosjektressurs, kan du velge blant arbeidere som arbeider i firmaet du vil konfigurere ressurser for, eller du kan velge arbeidere fra andre firmaer i organisasjonen. Dette er konserninterne ressurser. Fremgangsmåtene nedenfor beskriver hvordan du definerer en arbeider som en ressurs i firmaet og hvordan du definerer en konsernintern prosjektressurs.
 
-### Definere en arbeider som en prosjektressurs
-<a id="set-up-a-worker-as-a-project-resource" class="xliff"></a>
+### <a name="set-up-a-worker-as-a-project-resource"></a>Definere en arbeider som en prosjektressurs
 
 1.  I **Arbeidere**-listen på siden **Arbeidere**, velger du arbeideren som du legger til som en prosjektressurs, og åpner arbeiderposten.
 2.  I handlingsruten klikker du på **Prosjekt** &gt; **Oppsett** &gt; **Prosjektoppsett**.
@@ -62,8 +59,7 @@ Når du definerer en arbeider som en prosjektressurs, kan du velge blant arbeide
 
 Du kan også angi standardprosjekter for en ressurs som en type førtilordning. Førtildelinger kan brukes når ressursansvarlig eller prosjektleder vet hvilke prosjekter som ressursen vil arbeide med på forhånd. Førtildelinger kan også være basert på forespørsel fra en prosjektsponsor eller kunde. Hvis du vil førtilordne et prosjekt, på siden **Tilordne prosjekter** i kategorien **Prosjekter** i lsietn **Gjenværende prosjekter**, velger du det aktuelle prosjektet.
 
-### Definere en konsernintern ressurs
-<a id="set-up-an-intercompany-resource" class="xliff"></a>
+### <a name="set-up-an-intercompany-resource"></a>Definere en konsernintern ressurs
 
 Når du definerer en arbeider som en konsernintern ressurs, må du fullføre oppsettet i utlånsfirmaet og lånefirmaet. 
 
@@ -82,16 +78,14 @@ Når du definerer en arbeider som en konsernintern ressurs, må du fullføre opp
 1.  Gå til **Prosjektstyring og regnskap** &gt; **Prosjektressurser** &gt; **Ressursliste**.
 2.  I søkefilteret angir du navnet på ressursen som du opprettet i forrige fremgangsmåte for utlånsfirmaet, for å kontrollere at navnet er inkludert i ressurslisten for lånefirmaet.
 
-## Administrere ressurskompetanser
-<a id="manage-resource-competencies" class="xliff"></a>
+## <a name="manage-resource-competencies"></a>Administrere ressurskompetanser
 Ressurskompetanser er en viktig del av ressursbehandling. Kompetanser kan brukes som et utgangspunkt til å fastsette ressurser som har den riktige balansen mellom ferdigheter, utdanning, sertifisering og prosjekterfaring. Du bør definere denne informasjonen for hver ressurs og oppdatere den med jevne mellomrom. På denne måten kan du maksimere muligheter når bestemte ressurskompetanser sammenlignes under ressurstildeling i prosjektet. [![Eksempler på ferdigheter, sertifiseringer, utdanning og prosjekterfaring](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
 
 Fremgangsmåtene nedenfor forklarer hvordan du setter opp noen av kompetansetypene for en ressurs. 
 
 Hvis du vil definere kompetanse for en arbeider, kan du bruke **Arbeidere**-listesiden i Personale eller **Ressurser**-listesiden i Prosjektstyring og regnskap. For følgende fremgangsmåter brukes **Arbeidere**-listesiden i Personale.
 
-### Angi kompetanser: Sertifikater
-<a id="set-up-competencies-certificates" class="xliff"></a>
+### <a name="set-up-competencies-certificates"></a>Angi kompetanser: Sertifikater
 
 1.  På **Arbeidere**-listesiden velger du linjen for arbeideren som du legger til sertifikatinformasjon for.
 2.  I handlingsruten i kategorien **Arbeider** i **Kompetanser**-gruppen klikker du **Sertifikater**.
@@ -100,8 +94,7 @@ Hvis du vil definere kompetanse for en arbeider, kan du bruke **Arbeidere**-list
 5.  I **Startdato**-feltet velger du **10/1/2015**.
 6.  Klikk **Lagre**, og lukk deretter siden.
 
-### Definer kompetanser: Ferdigheter
-<a id="set-up-competencies-skills" class="xliff"></a>
+### <a name="set-up-competencies-skills"></a>Definer kompetanser: Ferdigheter
 
 1.  På **Arbeidere**-listesiden må du kontrollere at det fortsatt er merket av for arbeideren som du brukte i forrige fremgangsmåte. I handlingsruten i kategorien **Arbeider** i **Kompetanser**-gruppen klikker du deretter **Ferdigheter**.
 2.  Klikk **Ny**.
@@ -111,8 +104,7 @@ Hvis du vil definere kompetanse for en arbeider, kan du bruke **Arbeidere**-list
 6.  I feltet **År med erfaring** angir du **10**.
 7.  Klikk **Lagre**, og lukk deretter siden.
 
-## Opprett nytt prosjekt
-<a id="create-a-new-project" class="xliff"></a>
+## <a name="create-a-new-project"></a>Opprett nytt prosjekt
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Arbeidsområder** &gt; **Prosjektstyring**.
 2.  Klikk **Nytt prosjekt**, og angi deretter følgende verdier:
     -   **Prosjekttype:** – Tid og materialer
@@ -121,8 +113,7 @@ Hvis du vil definere kompetanse for en arbeider, kan du bruke **Arbeidere**-list
     -   **Prosjektkontrakt-ID:** – 00000002
 3.  Klikk **Opprett prosjekt**.
 
-### Tilordne en ressurs til et prosjekt
-<a id="assign-a-resource-to-a-project" class="xliff"></a>
+### <a name="assign-a-resource-to-a-project"></a>Tilordne en ressurs til et prosjekt
 
 1.  Klikk på **Personale** &gt; **Arbeidere** &gt; **Arbeidere**.
 2.  I **Arbeidere**-listen velger du posten for arbeideren som du allerede har installert kompetanser for, og åpne arbeiderposten.
@@ -134,8 +125,7 @@ Hvis du vil definere kompetanse for en arbeider, kan du bruke **Arbeidere**-list
 
 Hvis du trenger det, kan du også tilordne kategorier for en ressurs. Kategoritypen er enten kostnad eller inntekt. Dette bestemmes av organisasjonen. Hvis det finnes ingen tilordnede kategorier for ressursen, slår Finance and Operations opp standardkategorien på timeprisene for kostnader og inntekter.
 
-### Definere egenskaper for prosjektressurs og rolle
-<a id="set-up-project-resource-and-role-characteristics" class="xliff"></a>
+### <a name="set-up-project-resource-and-role-characteristics"></a>Definere egenskaper for prosjektressurs og rolle
 
 En prosjektleder kan bruke prosjektetressursfunksjonaliteten til å opprette roller som kreves for prosjektet. Roller kan brukes når bekreftede ressurser fremdeles er ukjent under reservering av ressurser. Roller kan reserveres midlertidig som planlagte ressurser, slik at du kan fortsette prosjektetplanleggingsfasene. 
 
@@ -157,8 +147,7 @@ Følgende fremgangsmåte viser hvordan ressursbehandleren kan definere rollen so
 8.  I feltet **Tilgjengelige egenskaper** angir du sertifikattypen du skal søke etter.
 9.  Klikk **OK**, og lukk siden.
 
-### Tilordne en prosjektressurs til et prosjekt
-<a id="assign-a-project-resource-to-a-project" class="xliff"></a>
+### <a name="assign-a-project-resource-to-a-project"></a>Tilordne en prosjektressurs til et prosjekt
 
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Felles** &gt; **Prosjekter** &gt; **Alle prosjekter**, og åpne prosjektet **XYZ-oppgraderingsfase 2**.
 2.  I kategorien **Prosjektteam og planlegging** klikker du **Legg til**.
@@ -173,8 +162,7 @@ Følgende fremgangsmåte viser hvordan ressursbehandleren kan definere rollen so
 8.  Klikk på **Forpliktende bestilling** &gt; **Full kapasitet**.
 9.  Lukk siden.
 
-### Tilordne en ressurs til en standardrolle
-<a id="assign-a-resource-to-a-default-role" class="xliff"></a>
+### <a name="assign-a-resource-to-a-default-role"></a>Tilordne en ressurs til en standardrolle
 
 For å hjelpe prosjekt- eller ressursledere kan du drille ytterligere ned på ressursene som kan reserveres for et prosjekt. Du kan knytte en standardrolle til en eksisterende ressurs eller en nylig anskaffet ressurs. Eksempel: Da Daniel ble ansatt, hadde han erfaring og ferdigheter til å fylle rollen som forretningsanalytiker. Ressursbehandleren tilordnet denne rollen som Daniels standardrolle. Derfor la ressursbehandleren Daniel til i et utvalg av forretningsanalytikere som er tilgjengelige for å arbeide med prosjekter. 
 
@@ -192,8 +180,7 @@ Under ressursreservering kan prosjektledere filtrere rolleressursene som er tilg
 5.  Klikk **Lagre**, og lukk deretter siden.
 6.  I kategorien **Kompetanser** legger du til ferdigheten **ProjectMgmt** og **PMP**-sertifikatet.
 
-## Definere rollebasert prising
-<a id="set-up-role-based-pricing" class="xliff"></a>
+## <a name="set-up-role-based-pricing"></a>Definere rollebasert prising
 Alle kostnader, salg, og overføringspriser kan defineres for roller.
 
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Priser** &gt; **Salgspris (time)**.
@@ -202,8 +189,7 @@ Alle kostnader, salg, og overføringspriser kan defineres for roller.
 4.  Velg en rolle i **Rolle**-kolonnen.
 5.  I **Prising**-kolonnen, angi en pris for den valgte ressursrollen.
 
-## Danne et prosjektteam
-<a id="form-a-project-team" class="xliff"></a>
+## <a name="form-a-project-team"></a>Danne et prosjektteam
 Hvis du vil bruke rollene som tidligere ble angitt i et prosjekt, må en prosjektleder knytte rollene til prosjektet. Du kan tilordne flere roller for et prosjekt, og Finance and Operations merker automatisk disse rollene under reservering for å unngå forvirring. Hvis for eksempel prosjektlederen krever tre programmerere, vil tre programmererroller som har programmerer 1, programmerer 2 og programmerer 3 som etiketter, bli generert automatisk. Hvis rolleegenskaper er angitt tidligere for rollen, brukes de som et filter ved søking etter en ressurs. Du kan legge flere egenskaper etter behov for å spesifisere søket ytterligere. 
 
 Visningsinnstillinger kan også tilpasses for å få en bedre oversikt over tilgjengelige ressurser. Det finnes alternativer for å vise tilgjengelighet for hver time, dag, uke, måned, kvartal og år. Det finnes også et alternativ for å vise tilgjengelig og gjenværende kapasitet i ressurser. Dette alternativet er nyttig for tidsadministrasjon når du gjør beregninger tilgjengelig tid for aktiviteter eller tilgjengelige ressurser. 
@@ -219,8 +205,7 @@ Prosjektlederen har forskjellige alternativer for å bestille en ressurs for et 
 
 Fremgangsmåten nedenfor forklarer hvordan du oppretter et prosjektteam.
 
-### Opprette et prosjektteam
-<a id="create-a-project-team" class="xliff"></a>
+### <a name="create-a-project-team"></a>Opprette et prosjektteam
 
 1.  På listesiden **Alle prosjekter** velger du et prosjekt og klikker deretter **Rediger**.
 2.  I kategorien **Prosjektteam og planlegging** i feltet **Planlegg sluttdato** angir du startdato for tidsplanen pluss én måned. Hvis for eksempel startdatoen for tidsplanen er 24. juni 2017 (24/06/2017), angir du **24/07/2017**.
@@ -235,12 +220,10 @@ Fremgangsmåten nedenfor forklarer hvordan du oppretter et prosjektteam.
 11. Klikk **Opprett**.
 12. På **Prosjekter**-siden klikker du **Fyll opp ressurs**.
 
-## Synkronisering av ressurskapasitet
-<a id="resource-capacity-synchronization" class="xliff"></a>
+## <a name="resource-capacity-synchronization"></a>Synkronisering av ressurskapasitet
 Prosessene for synkronisering av ressurser kan garantere at kalenderen og basisinformasjonen fordeles til prosjektetets ressursplanlegging. Hvis kalenderen er endret, vil prosessene foreta de nødvendige oppdateringene i planleggingen av prosjektressurser. Prosessene forbedrer også ytelsen, fordi ressursinformasjon for kalenderen synkroniseres på forhånd, slik at oppdateringer til ressursens planleggingsinformasjon utføres raskere. Vi anbefaler at du planlegger prosessene som en satsvis jobb i stedet for én om gangen. Ellers er det fare for at noen glemmer datoene da informasjonen ble sist synkronisert. Hvis inklusive datoer ikke brukes, kan det oppstå mellomrom under synkronisering av dato.
 
-### ![Kalendersynkronisering](./media/projectresourcing04-1024x471.jpg)
-<a id="calendar-synchronizationmediaprojectresourcing04-1024x471jpg" class="xliff"></a>
+### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Kalendersynkronisering](./media/projectresourcing04-1024x471.jpg)
 
 **Synkroniser opprullinger av ressurskapasitet**
 
@@ -257,16 +240,14 @@ Vi anbefaler at du bruker et parti. Alternativene er tilgjengelige i reservasjon
 
 [![Synkroniseringsprosess](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
-## Definere roller i WBS-maler
-<a id="set-up-roles-on-wbs-templates" class="xliff"></a>
+## <a name="set-up-roles-on-wbs-templates"></a>Definere roller i WBS-maler
 Prosjektledere kan definere WBS-maler som kan gjelde når de oppretter en WBS for nye prosjekter. Prosjektledere kan legge til roller ved oppretting av en mal. Bruk følgende fremgangsmåte for å tilordne en rolle til en WBS-mal.** ** 
 
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Prosjekter** &gt; **Maler for arbeidsnedbrytningsstruktur**.
 2.  Klikk **Detaljer** for en valgt WBS-mal.
 3.  Velg en oppgave i listen, og deretter i **Rolle**-feltet velger du en rolle for å tildele til aktiviteten.
 
-### Arbeide med en WBS
-<a id="work-with-a-wbs" class="xliff"></a>
+### <a name="work-with-a-wbs"></a>Arbeide med en WBS
 
 Du kan opprette en ny WBS, eller du kan kopiere en WBS fra en eksisterende WBS-mal. En prosjektleder kan enkelt håndtere ressursene ved å tilordne roller til nye aktiviteter på WBS-en. Roller kan erstattes etter at en ressurs er anskaffet, eller når en bekreftet ressurs for arbeid på aktiviteten er angitt. Denne fleksibiliteten gjør det mulig for prosjektledere å utføre følgende oppgaver:
 
@@ -338,8 +319,7 @@ Flere alternativer er lagt i WBS for bedre ressursberegning.
 > Du mottar ikke en advarsel om at den angitte ressursen nå er 2, på grunn av antallet ressurser som gjenstår på 1.
 18. På siden **Arbeidsnedbrytningsstruktur** validerer du ressurstildelingen på WBS-en og klikker deretter **Lagre**.
 
-## Oppfyllelse av planlagte ressurser
-<a id="resource-fulfillment-for-planned-resources" class="xliff"></a>
+## <a name="resource-fulfillment-for-planned-resources"></a>Oppfyllelse av planlagte ressurser
 En prosjektleder kan planlegge nødvendige ressursroller for et prosjekt. Ressursbehandleren vil se disse planlagte ressursene som forespørsler på siden **Ressursoppfyllelse** og kan tildele faktiske ressurser.
 
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Prosjekter** &gt; **Alle prosjekter**.
@@ -356,8 +336,7 @@ En prosjektleder kan planlegge nødvendige ressursroller for et prosjekt. Ressur
 12. Kontroller at linjen for **Programvareutvikler 1** er fjernet for prosjektet **XYZ-oppgraderingsfase 2**.
 13. I kategorien **Prosjektteam og planlegging** for prosjektet **XYZ-oppgraderingsfase 2** må du kontrollere at arbeideren du valgte i trinn 11, er lagt til som **Programvareutvikler**.
 
-## Forespørsler om prosjektressurser
-<a id="requests-for-project-resources" class="xliff"></a>
+## <a name="requests-for-project-resources"></a>Forespørsler om prosjektressurser
 Planleggingsfunksjonen for prosjektressurs støtter bare at ressursansvarlige distribuerer bemannede ressurser på engasjementer eller prosjekter. Hvis du vil aktivere denne funksjonaliteten, fullfører du oppgavene nedenfor eller kontrollerer at de er fullført.
 
 -   Definer nummerserier.
@@ -372,8 +351,7 @@ Når du har bekreftet eller fullførte oppgavene ovenfor, kan du fullføre oppga
 -   Be om en bemannet ressurs fra WBS.
 -   Bestill ressurser til et prosjekt uten en forespørsel om en bemannet ressurs.
 
-## Overvåke prosjektteam
-<a id="monitor-project-teams" class="xliff"></a>
+## <a name="monitor-project-teams"></a>Overvåke prosjektteam
 1.  Klikk på **Prosjektstyring og regnskap** &gt; **Prosjekter** &gt; **Alle prosjekter**.
 2.  I listen over prosjekter klikker du koblingen **Prosjekt-ID** for prosjektet **XYZ-oppgraderingsfase 2**.
 3.  I hurtigkategorien **Prosjektteam og planlegging** kontrollerer du at prosjektressursene som er oppført, er riktige.

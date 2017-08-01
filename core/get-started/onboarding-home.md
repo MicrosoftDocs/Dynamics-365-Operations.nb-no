@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Startside for introduksjon
-<a id="onboarding-home-page" class="xliff"></a>
+# <a name="onboarding-home-page"></a>Startside for introduksjon
 
 [!include[banner](../includes/banner.md)]
 

@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Opprette en telefonsenterkatalog
-<a id="create-a-call-center-catalog" class="xliff"></a>
+# <a name="create-a-call-center-catalog"></a>Opprette en telefonsenterkatalog
 
 [!include[banner](includes/banner.md)]
 
@@ -43,8 +42,7 @@ I et telefonsenter kan du bruke produktkataloger til å identifisere produktene 
 
 Disse alternativene må defineres før katalogen godkjennes og publiseres.
 
-## Nødvendig programvare
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Nødvendig programvare
 Følgende oppgaver må være fullført før du starter:
 
 -   Definer produkter og produktsortimenter.
@@ -55,28 +53,23 @@ Følgende oppgaver må være fullført før du starter:
 -   Legg til telefonsenteret i et organisasjonshierarki.
 -   Opprett eller endre et organisasjonshierarki.
 
-## Opprette en katalog
-<a id="create-a-catalog" class="xliff"></a>
+## <a name="create-a-catalog"></a>Opprette en katalog
 Du må først opprette en katalog, legge til produkter i katalogen, og deretter se gjennom og oppdatere attributtene for produktene.
 
-## Valider katalogen
-<a id="validate-the-catalog" class="xliff"></a>
+## <a name="validate-the-catalog"></a>Valider katalogen
 Når du er ferdig med å opprette katalogen, må du validere den. Valideringsprosessen kontrollerer at dataene som kreves for kanalattributter og produktattributter, er fullstendige og gyldige, og at katalogen kan publiseres.
 
-## Send katalogen til gjennomgang og godkjenning
-<a id="submit-the-catalog-for-review-and-approval" class="xliff"></a>
+## <a name="submit-the-catalog-for-review-and-approval"></a>Send katalogen til gjennomgang og godkjenning
 Når en katalog er validert, kan du sende den til vurdering og godkjenning. En katalog må være godkjent før den kan publiseres. Du kan konfigurere en arbeidsflyt slik at kataloger enten godkjennes automatisk eller må godkjennes manuelt.
 
-## Valgfritt: Legg til kildekoder, gratis produkter og skript
-<a id="optional-add-source-codes-free-products-and-scripts" class="xliff"></a>
+## <a name="optional-add-source-codes-free-products-and-scripts"></a>Valgfritt: Legg til kildekoder, gratis produkter og skript
 Du kan også legge til følgende varer i en telefonsenterkatalog. Disse varene er valgfrie.
 
 -   **Kildekoder** kan brukes av firmaer som leverer trykte kataloger, for å spore kundenes tilbakemelding på bestemte kataloger. Kildekoder trykkes ofte på baksiden av en katalog, og er angitt i salgsordren når en kunde kjøper noe. Hvis du vil legge til en kildekode i katalogen, må du først opprette et målmarked. Målmarkedet er vanligvis tilordnet en utsendelsesliste som eies eller leies ut.
 -   **Gratisprodukter** er kampanjevarer som er inkludert gratis med kundens ordre når det refereres til katalogen.
 -   **Skript** kan brukes til å lede arbeiderens samhandling med kunder i konteksten for en katalog eller et produkt i en katalog.
 
-## Publiser katalogen
-<a id="publish-the-catalog" class="xliff"></a>
+## <a name="publish-the-catalog"></a>Publiser katalogen
 Når du publiserer en katalog for et telefonsenter, fullfører du produktinformasjonen i katalogen. Publisering angir også at katalogen er klar til flere handlinger du vil utføre. Du kan for eksempel opprette en trykt katalog. Du kan publisere katalogene manuelt, eller du kan bruke en partiprosess til å publisere i henhold til en tidsplan. Før du kan publisere en katalog, må katalogen valideres og godkjennes. Hvis du vil endre katalogen etter at den er publisert, kan du tilbakekalle katalogen og deretter publisere den på nytt.
 
 

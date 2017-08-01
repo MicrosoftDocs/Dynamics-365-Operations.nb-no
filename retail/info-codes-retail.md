@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Infokoder
-<a id="info-codes" class="xliff"></a>
+# <a name="info-codes"></a>Infokoder
 
 [!include[banner](includes/banner.md)]
 
@@ -43,14 +42,12 @@ Informasjonskoder gjør det mulig å hente data på i en salgsstedskasse (POS). 
 -   Selg et produkt som en vanlig salg, rabattert salg eller gratisprodukt.
 -   Be kasserere om å angi en verdi eller velge fra en liste over delkoder når de åpner kasseskuffen uten å utføre en salgsoperasjon.
 
-## Informasjonskodegruppe
-<a id="info-codes-group" class="xliff"></a>
+## <a name="info-codes-group"></a>Informasjonskodegruppe
 I Dynamics 365 for Retail kan du opprette grupper av infokoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
 -   Definere færre infokoder, og enkelt bruke dem på nytt. Informasjonskoder som er inkludert i informasjonskodegrupper, har ingen forhåndsdefinerte avhengigheter om andre informasjonskoder. Du kan ta med den samme informasjonskoden i flere informasjonskodegrupper og deretter bruke prioritering til å vise de samme informasjonskodene i rekkefølgen som er mest aktuell i en gitt situasjon.
 -   Koble informasjonskoder til andre koder eller informasjonskodegrupper for å samle inn informasjon om et produkt eller en transaksjon, uten å definere en egen informasjonskode eller koblede informasjonskoden for hvert scenario.
 
-## Informasjonskodeeksempler
-<a id="info-code-examples" class="xliff"></a>
+## <a name="info-code-examples"></a>Informasjonskodeeksempler
 **Eksempel 1: Bruke infokoder på nytt** Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, utløses en annen informasjonskode like etter. Når du selger enkelte produkter, kan du eksempel be kassereren om å spørre kunden om de vil kjøpe batterier og en produktgaranti. Når det gjelder andre produkter, kan du be kassereren om å spørre kunden om de vil kjøpe batterier, og også be om postnummeret deres. Hvis du oppretter koblede informasjonskoder for disse scenariene, må du definere alle variantene av informasjonskoden, slik at kassereren blir bedt om å be om riktig informasjon. Hvis du bruker informasjonskodegrupper, kan du definere vanlige informasjonskoder, for eksempel forespørsel om batterier, én gang og deretter bruke dem på nytt i flere informasjonskodegrupper. Du kan også bruke prioritering i informasjonskodegruppene til å identifisere rekkefølgen spørsmålene vises i.
 
 

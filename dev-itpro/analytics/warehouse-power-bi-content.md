@@ -26,15 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Lagerytelse-innhold for Power BI
-<a id="warehouse-performance-power-bi-content" class="xliff"></a>
+# <a name="warehouse-performance-power-bi-content"></a>Lagerytelse-innhold for Power BI
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i **Lagerytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 **Lagerytelse**-innholdet i Power BI ble opprettet slik at lager- og driftsledere kan overvåke viktige mål for inngående, utgående og beholdning. Det bruker data for lagerstyring, produkt og andre transaksjonsdata fra systemet, og inneholder både en aggregert visning av lagerytelse og en analyse for leverandører, produktgrupper og varer, og område og lagre. 
 
@@ -44,12 +42,10 @@ Lagerledere kan bruke **Lagerytelse**-innholdet for Power BI til å måle følge
 -   **Leveringsytelse** – Måler om lageret leverer i sin helhet og innenfor tidsfristen til kunder (altså måler utgående forsendelses- og leveringsytelse), slik at du kan identifisere problemer som omfatter produkter, områder, lagre eller dedikerte kunder. Hvis du finner ut at du har forsinkede forsendelser til bestemte områder og byer, må du kanskje være mer oppmerksom på transport- eller kontostyring.
 -   **Lagerpresisjon for lokasjon** – Lagerpresisjon er viktig, intern lagerforretningsanalyse (BI). Det er svært viktig at du fastslår hvor nøyaktig du teller generelt. Det er imidlertid også viktig at du fastslår hvor nøyaktig du med hensyn til lagring av varer på riktig sted, og at du merker avviksdata, slik at du kan finne bedre posisjoner for varer eller starte totalantall på bestemte varer. (For øyeblikket leveres den nye varebaserte tellefunksjonaliteten som en hurtigreparasjon.) Hvis du bruker dette Power BI-innholdet til å fastslå korrektheten til lagerbeholdningsdata per lokasjon, kan du også identifisere tyveri i butikkene dine. Du kan også fastslå om lokasjoner har lagerbeholdningsantall som avviker fra ERP-data. Disse lokasjonene kan være for store, eller de kan være umulig å telle. Noen av de fysiske plasseringene kan også være dårlige, slik at det er vanskelig å synkronisere én enkelt type vare med beholdningsdata.
 
-## Tilgang til Power BI-innholdspakke
-<a id="accessing-the-power-bi-content-pack" class="xliff"></a>
+## <a name="accessing-the-power-bi-content-pack"></a>Tilgang til Power BI-innholdspakke
 Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises **Lagerytelse**-innhold for Power BI på **Lagerytelse**-siden (**Lagerstyring** > **Forespørsler og rapporter** > **Analyse av lagerytelse** > **Lagerytelse**). 
 
-## Mål som er inkludert i Power BI-innholdet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Lagerytelse**-innholdet for Power BI omfatter en rapport. Denne rapporten består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effekter i **Lagerytelse**-innhold for Power BI.
 
 | Rapportside                 | Diagrammer                                   | beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -81,8 +77,7 @@ Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance
 | Leveringsytelse        | Sendt etter produkt                       | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent, etter vare eller varegruppe.                                                                                                                                                                                                                                                                                                                                   |
 | Leveringsytelse        | Levering etter kunder                      | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent etter kunde eller kundegruppe.                                                                                                                                                                                                                                                                                                                           |
 | Leveringsytelse        | Levert etter område/lager              | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent, etter område eller lager.                                                                                                                                                                                                                                                                                                                                    |
-## Utvide Power BI-innholdet
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
 Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse. 
 
 Du kan finne **Lagerytelse**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
@@ -92,8 +87,7 @@ Pass på at du laster ned **Lagerytelse**-innholdet som gjelder for versjonen av
 > [!NOTE]
 > Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Forstå datamodellen og beregningene
-<a id="understanding-the-data-model-and-calculations" class="xliff"></a>
+## <a name="understanding-the-data-model-and-calculations"></a>Forstå datamodellen og beregningene
 Følgende data brukes til å fylle ut rapportsidene i **Lagerytelse**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 
 
 De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.

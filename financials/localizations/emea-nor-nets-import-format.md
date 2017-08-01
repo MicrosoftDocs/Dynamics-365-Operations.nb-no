@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Nets-importformat
-<a id="nets-import-format" class="xliff"></a>
+# <a name="nets-import-format"></a>Nets-importformat
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
 
 I Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations kan du importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.
 
-## Importer en Nets-bankfil
-<a id="import-a-nets-bank-file" class="xliff"></a>
+## <a name="import-a-nets-bank-file"></a>Importer en Nets-bankfil
 Hvis du vil importere en fil fra Nets-banken, kan du fullføre trinnene nedenfor.
 
 1.  Gå til siden **Betalingsjournal**.
@@ -49,12 +47,10 @@ Hvis du vil importere en fil fra Nets-banken, kan du fullføre trinnene nedenfor
 
 Prosessen er den samme for import av registreringsmeldinger fra siden **eFaktura-innmelding og svar**. Uavhengig av om filen bare har betalingstransaksjoner, bare registreringsmeldinger eller begge deler, vil alt bli importert i én handling.
 
-## Import av OCR-, AvtaleGiro- og eFaktura-transaksjoner
-<a id="ocr-avtalegiro-and-einvoice-transactions-import" class="xliff"></a>
+## <a name="ocr-avtalegiro-and-einvoice-transactions-import"></a>Import av OCR-, AvtaleGiro- og eFaktura-transaksjoner
 OCR-, Avtalegiro- og eFaktura-transaksjoner må importeres og utlignes basert på betalings-IDen og genereres når fakturaene posteres. Derfor bør betalingsjournallinjene opprettes og merket for utligning med tilhørende fakturaer. **Merk**: Transaksjoner som tilsvarer fritekstmeldingskodene, utlignes ikke etter import. Du må definere en 16-sifret betalings-ID på **Betalings-ID**-siden, og deretter velge den i **Kundeparametere**. En betalings-ID er en unik identifikator for kundebetalinger som utlignes elektronisk. Den kan deles inn i ulike deler, for eksempel kundekontonummer, fakturanummer, prefiks, suffiks og ekstern referanse. Når du mottar en betaling fra en kunde, identifiserer betalings-IDen betalingstransaksjonen for en salgsfaktura som er mottatt fra en bank.
 
-## Import av eFaktura- og AvtaleGiro-innmelding
-<a id="einvoice-and-avtalegiro-enrollment-import" class="xliff"></a>
+## <a name="einvoice-and-avtalegiro-enrollment-import"></a>Import av eFaktura- og AvtaleGiro-innmelding
 Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende kundekontoen, angitt i feltene **Betalingsmåte** og **Betalingsspesifikasjon**. Dette definerer egenskapene for eksportmeldinger som genereres for denne kundekontoen i fremtiden. Et sett med regler som skal utføres under import av filen, skal angitt på siden **Importer fil** og kan defineres på siden **Integreringstyper for eFaktura**. I forskjellige tilfeller kan du bruke forskjellige integreringstyper. Spesifikke regler skal angis på siden **Endring i betalingsmåte for eFaktura**. Reglene kan angis basert på meldingen **Status**, for eksempel Aktiv for abonnementsmeldinger, Slettet for abonnementskanselleringer og Advarsel hvis betaleren krever skriftlige varslingsattributter. Dette krever at betalingsspesifikasjoner defineres for den valgte betalingsmetoden. På siden **eFaktura-innmelding og svar** kan du vise importerte eFaktura-meldinger. Du kan generere svarmeldinger for å bekrefte at registreringsmeldinger et mottatt, når registreringer er klare til postering. Poster registreringene for at oppdateringene av kundekonto skal tre i kraft. For AvtaleGiro-meldinger brukes endringer av betalingsmåte under filimporten.
 
 

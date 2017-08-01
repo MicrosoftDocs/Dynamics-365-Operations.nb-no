@@ -26,14 +26,12 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Opprette kuponger for detaljhandelssalg
-<a id="create-coupons-for-retail-sales" class="xliff"></a>
+# <a name="create-coupons-for-retail-sales"></a>Opprette kuponger for detaljhandelssalg
 
 [!include[banner](includes/banner.md)]
 
 
-## Oversikt over kuponger
-<a id="overview-of-coupons" class="xliff"></a>
+## <a name="overview-of-coupons"></a>Oversikt over kuponger
 
 Kuponger er koder og strekkoder som brukes til å legge til detaljhandelrabatter i transaksjoner. Hver kupong kan ha flere koder, og hver kode kan ha egne gyldighetsdatoer. 
 
@@ -46,22 +44,19 @@ Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deret
 > [!NOTE]
 > Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Microsoft Dynamics 365 for Retail skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
 
-### Kuponger med begrenset bruk
-<a id="limited-use-coupons" class="xliff"></a>
+### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 
 Du kan konfigurere kuponger som kuponger med begrenset bruk. Bruksgrensen kan defineres per kunde eller kanal, eller som en global begrensning. Denne begrensningen fremtvinges når koden eller strekkoden angis eller skannes i POS eller ved registrering av salgsordre. En kupong registreres som brukt når en ordre er fullført med kupongen som er knyttet til den.
 
 Grensen brukes per kode på en kupong. En engangskupong som har to kupongkoder, kan for eksempel brukes to ganger: én gang for hver kupongkode. Hver kode i en kupong kan uavhengig settes til aktiv.
 
-## Behandle kuponger
-<a id="managing-coupons" class="xliff"></a>
+## <a name="managing-coupons"></a>Behandle kuponger
 
 Du må opprette rabatten og kupongen separat. Deretter kobler du dem ved å velge rabatten på kupongsiden. Når en kupong er koblet til en rabatt, blir flere felt for rabatten skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.  
 
 Kuponger er nå en tilleggsvalidering av detaljhandelrabatter. Kupongen inneholder kupongkoder og strekkoder, sammen med datoområder, bruksgrenser og egenskapen som kreves for kunden. Rabatten gir settet med produkter som kupongen er gyldig for. Prisgruppene for rabatten inneholder settet med kunder, kanaler eller kataloger som kupongen er gyldig for.
 
-## Systemkonfigurasjon for kuponger
-<a id="system-setup-for-coupons" class="xliff"></a> 
+## <a name="system-setup-for-coupons"></a>Systemkonfigurasjon for kuponger 
 
 Før du kan definere en kupong, må du definere kupongens strekkode og to nummerserier for kupongen. 
 
@@ -77,8 +72,7 @@ Før du kan definere en kupong, må du definere kupongens strekkode og to nummer
 6.  På siden **Detaljhandelsparametere**, i kategorien **Nummerserier**, velger du nummerseriene du opprettet for kupongnummeret og kupongkode-IDen.
 7.  Du kan åpne **Kuponger**-siden og opprette nye kuponger.
 
-## Virkningen av delvis oppdateringer på kuponger
-<a id="the-effect-of-partial-updates-on-coupons" class="xliff"></a>
+## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen av delvis oppdateringer på kuponger
 
 Kupongfunksjonen består av flere forskjellige funksjoner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Detaljhandel Hovedkontor og kanalen kan delvis oppdateres på tvers av komponenter. Det er derfor viktig at du forstår hvordan delvise oppdateringer påvirker kupongfunksjonaliteten i sin helhet.
 

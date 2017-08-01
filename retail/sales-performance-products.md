@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Vurdere salgsytelse etter produkt
-<a id="assess-sales-performance-by-product" class="xliff"></a>
+# <a name="assess-sales-performance-by-product"></a>Vurdere salgsytelse etter produkt
 
 [!include[banner](includes/banner.md)]
 

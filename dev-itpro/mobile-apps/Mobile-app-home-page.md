@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Startside for mobilapp
-<a id="mobile-app-home-page" class="xliff"></a>
+# <a name="mobile-app-home-page"></a>Startside for mobilapp
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og in
 > [!NOTE]
 > Mobilappen var tidligere kalt *Microsoft Dynamics 365 for Finance and operations*.
 
-Oversikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Oversikt
 --------
 
 Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på mobilenheter. Når IT-administrator har aktivert mobile arbeidsområder for organisasjonen, kan brukere logger på appen og umiddelbart begynne å kjøre forretningsprosesser fra mobilenhetene. Mobilappen inneholder følgende funksjoner som kan hjelpe med å øke produktiviteten:
@@ -47,8 +45,7 @@ Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på
 - IT-administratorer eller utviklere kan lett utforme mobile arbeidsområder ved hjelp av pek og klikk-arbeidsområdeutformingen som er inkludert i webklienten.
 - IT-administratorer eller utviklere kan også optimalisere frakoblet-funksjonene for arbeidsområder ved hjelp av utvidelsesrammeverket for forretningslogikk. Fordi dataene fremdeles behandles når en enhet er frakoblet, forblir mobile scenarioer rike og jevne, selv om enheter ikke har konstant nettverkstilkobling.
 
-## Elementer i mobilappen
-<a id="elements-of-the-mobile-app" class="xliff"></a>
+## <a name="elements-of-the-mobile-app"></a>Elementer i mobilappen
 Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, arbeidsområder, sider og handlinger. 
 
 [![Navigasjonsbegreper i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
@@ -62,8 +59,7 @@ Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, 
     - Naviger til andre sider for relaterte data, for eksempel enhetsdetaljer eller linjer.
     - Se en liste over **handlinger** som er tilgjengelige for denne siden. Handlinger lar deg opprette eller redigere eksisterende data.
 
-## Implementeringsprosess
-<a id="implementation-process" class="xliff"></a>
+## <a name="implementation-process"></a>Implementeringsprosess
 Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. 
 
 ![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)

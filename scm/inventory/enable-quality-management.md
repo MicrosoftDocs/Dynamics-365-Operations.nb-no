@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Oversikt over kvalitetsstyring
-<a id="quality-management-overview" class="xliff"></a>
+# <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ I tillegg til funksjonalitet for håndtering av avvik inneholder kvalitetsstyrin
 
 Når du definerer en kvalitetstilknytning, kan Finance and Operations generere kvalitetsordrer for diverse forretningsprosesser, hendelser og betingelser. Kvalitetstilknytningen kan dekke en bestemt vare, en bestemt varegruppe eller alle varer.
 
-## Eksempler på bruk av kvalitetsstyring
-<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
+## <a name="examples-of-the-use-of-quality-management"></a>Eksempler på bruk av kvalitetsstyring
 Kvalitetsstyring er fleksibelt og kan implementeres på forskjellige måter for å oppfylle kravene til bestemte typer forsyningskjedeoperasjoner. Følgende eksempel viser mulig bruk av disse funksjonene.
 
 -   Start en prosess for kvalitetskontroll automatisk basert på forhåndsdefinerte kriterier (ved lagerregistrering av en bestilling fra en bestemt leverandør).
@@ -52,8 +50,7 @@ Kvalitetsstyring er fleksibelt og kan implementeres på forskjellige måter for 
 -   Angi et akseptabelt kvalitetsnivå for å kontrollere kvalitetsmåltoleranser.
 -   Angi ressursene som en inspeksjonsoperasjon krever, for eksempel et testområde og testinstrumenter.
 
-## Arbeide med kvalitetstilknytninger
-<a id="working-with-quality-associations" class="xliff"></a>
+## <a name="working-with-quality-associations"></a>Arbeide med kvalitetstilknytninger
 Forretningsprosessen som bruker en kvalitetstilknytning, kan knyttes til ulike kildedokumenter, for eksempel bestillinger, salgsordrer eller produksjonsordrer. 
 
 Hver kvalitetstilknytningspost definerer settet med tester, det akseptable kvalitetsnivået og samplingplanen som gjelder for kvalitetsordrene som genereres. Du må definere en kvalitetstilknytningspost for hver variasjon i en forretningsprosess. Du kan for eksempel definere en kvalitetstilknytning som genererer en kvalitetsordre når et produkt for bestillingsmottak oppdateres. Avhengig av oppsettet for utførelsesplanen kan selve utløsingsprosessen blokkeres når det finnes en åpen kvalitetsordre, eller de neste prosessene, for eksempel bestillingsfakturering, kan blokkeres. 
@@ -298,8 +295,7 @@ Tabellen nedenfor inneholder mer informasjon om hvordan kvalitetsordrer kan gene
 </tbody>
 </table>
 
-## Kvalitetsstyringssider
-<a id="quality-management-pages" class="xliff"></a>
+## <a name="quality-management-pages"></a>Kvalitetsstyringssider
 <table>
 <colgroup>
 <col width="33%" />
@@ -360,8 +356,7 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Kvalitetsstyringsprosesser](quality-management-processes.md)

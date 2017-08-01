@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Avskrivningsmetoder og -konvensjoner
-<a id="depreciation-methods-and-conventions" class="xliff"></a>
+# <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder og -konvensjoner
 
 [!include[banner](../includes/banner.md)]
 
@@ -68,8 +67,7 @@ Du kan velge mellom følgende avskrivningsmetoder:
 
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Avskrivning av anleggsmidler](fixed-asset-depreciation.md)

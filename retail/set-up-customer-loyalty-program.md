@@ -28,16 +28,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurere et fordelsprogram for kunde
-<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
+# <a name="set-up-a-customer-loyalty-program"></a>Konfigurere et fordelsprogram for kunde
 
 [!include[banner](includes/banner.md)]
 
 
 Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal.
 
-Fordelsfunksjoner
-<a id="loyalty-features" class="xliff"></a>
+<a name="loyalty-features"></a>Fordelsfunksjoner
 ----------------
 
 Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
@@ -48,12 +46,10 @@ Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
 -   Utsted fordelskort fra en hvilken som helst kanal for detaljhandel som deltar i fordelsprogrammet, og koble fordelskort til ett eller flere fordelsprogrammer som kunden kan delta i. Du kan også koble en kundepost til et fordelskort for å la kunden samle fordelspoeng fra flere kort og løse dem inn.
 -   Juster fordelskort manuelt, eller overføre fordelssaldoen fra ett kort til et annet for å ta hensyn til eller belønner en kunde.
 
-## Konfigurering av fordelsprogrammer
-<a id="setting-up-loyalty-programs" class="xliff"></a>
+## <a name="setting-up-loyalty-programs"></a>Konfigurering av fordelsprogrammer
 Du må definere flere komponenter for å aktivere fordelsfunksjonen i Dynamics 365 for Retail. Diagrammet nedenfor illustrerer fordelskomponentene og hvordan de er relatert til hverandre. ![Prosessflyt for fordelsoppsett](./media/loyaltyprocess.gif)
 
-## Fordelskomponenter
-<a id="loyalty-components" class="xliff"></a>
+## <a name="loyalty-components"></a>Fordelskomponenter
 Tabellen nedenfor beskriver hver komponent og hvor den brukes i fordelsoppsettet.
 
 | Komponent                                        | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Hvor den brukes                                                                                                                                                                                                                                                                                                                                                                 |
@@ -69,8 +65,7 @@ Tabellen nedenfor beskriver hver komponent og hvor den brukes i fordelsoppsettet
 | Konfigurere fordelsplaner                           | Fordelsplaner angir opptjenings- og innløsingsreglene som gjelder for et bestemt fordelsprogram. Du tilordner detaljhandelskanaler til en fordelsplan for å identifisere hvilke fordelsprogrammer, opptjeningsregler og innløsingsregler som gjelder for en detaljhandelbutikk.                                                                                                                                                                                                                                                                                                                                  | En fordelsplan tilordnes et fordelsprogram og kanaler for detaljhandel. Du kan tilordne mange fordelsplaner til samme fordelsprogram, og du kan tilordne mange fordelsplaner til mange detaljhandelskanaler.                                                                                                                                                                        |
 | Konfigurere fordelskort                             | Et fordelskort gir kortolderen mulighet til å delta i fordelsprogrammer som er tilordnet til kortet. Fordelskort kan utstedes anonymt, eller de kan tilordnes til en bestemt kunde. Du kan vise fordelstransaksjoner for et bestemt kort, og du kan vise et sammendrag av fordelspoeng som har blitt samlet på kortet. Du kan utstede fordelskort fra en hvilken som helst detaljhandelskanal. Du kan også manuelt justere et fordelskort for å oppgradere kunden til et annet lag, legge til fordelspoeng eller overføre fordelspoengsaldoen fra ett kort til et annet. | Du tilordner fordelsprogrammer til et fordelskort.                                                                                                                                                                                                                                                                                                                                  |
 
-## Lojalitetsprosesser
-<a id="loyalty-processes" class="xliff"></a>
+## <a name="loyalty-processes"></a>Lojalitetsprosesser
 Tabellen nedenfor beskriver prosessene som må kjøres for å sende fordelskonfigurasjoner og data til butikkene, og hente fordelstransaksjoner fra butikkene.
 
 | Prosessnavn                         | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                    | Sidenavn                            |

@@ -26,16 +26,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Formeldesigner i elektronisk rapportering
-<a id="formula-designer-in-electronic-reporting" class="xliff"></a>
+# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke Microsoft Excel-lignende formler for datatransformasjon for å oppfylle kravene for fullføringen og formatering for dette dokumentet. Ulike typer funksjoner som støttes: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner).
 
-Oversikt over formeldesigner
-<a id="formula-designer-overview" class="xliff"></a>
+<a name="formula-designer-overview"></a>Oversikt over formeldesigner
 -------------------------
 
 Elektronisk rapportering (ER) støtter formeldesigneren. Under utformingen kan du derfor konfigurere uttrykk som kan brukes til følgende oppgaver ved kjøretid:
@@ -56,10 +54,8 @@ Formeldesignersiden kan åpnes når du gjør noe av følgende:
 -   Definerer betingelsene for prosesskontrollvalideringer.
 -   Definerer meldingsteksten for prosesskontrollvalideringer.
 
-## Utforme ER-formler
-<a id="designing-er-formulas" class="xliff"></a>
-### Databinding
-<a id="data-binding" class="xliff"></a>
+## <a name="designing-er-formulas"></a>Utforme ER-formler
+### <a name="data-binding"></a>Databinding
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som transformerer data som mottas fra datakilder, slik at dataene kan fylles ut i dataforbruker ved kjøretid:
 
@@ -69,13 +65,11 @@ ER-formeldesigneren kan brukes til å definere et uttrykk som transformerer data
 
 Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette eksemplet returnerer uttrykket verdien for **Intrastat.AmountMST**-feltet for **Intrastat**-tabellen i Finance and Operations, når denne verdien er avrundet til to desimalplasser. [![bilde-uttrykk-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I dette eksemplet er resultatet av det utformede uttrykket utfylt i **Transaction.InvoicedAmount**-komponenten for datamodellen **Avgiftsrapporteringsmodell**. [![bilde-uttrykk-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Ved kjøretid vil den utformede formelen, **ROUND (Intrastat.AmountMST, 2)**, avrunde verdien i **AmountMST**-feltet for hver post i **Intrastat**-tabellen til to desimalplasser, og fylle ut den avrundede verdien i **Transaction.InvoicedAmount**-komponenten for **Avgiftsrapportering**-datamodellen.
 
-### Dataformatering
-<a id="data-formatting" class="xliff"></a>
+### <a name="data-formatting"></a>Dataformatering
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Når formatkomponenter refererer til **TrimmedString **-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-### Prosessflytkontroll
-<a id="process-flow-control" class="xliff"></a>
+### <a name="process-flow-control"></a>Prosessflytkontroll
 
 ER-formeldesigneren kan brukes til å definere uttrykk som styrer prosessflyten for generering av dokumenter. Du kan:
 
@@ -98,8 +92,7 @@ Hver regel av prosessflytkontrollen er utviklet som en enkelt validering. Illust
 
 [![bilde-fil-kontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-### Grunnleggende syntaks
-<a id="basic-syntax" class="xliff"></a>
+### <a name="basic-syntax"></a>Grunnleggende syntaks
 
 ER-uttrykk kan inneholde én eller flere av følgende elementer:
 
@@ -109,13 +102,11 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 -   Baner
 -   Funksjoner
 
-#### Konstanter
-<a id="constants" class="xliff"></a>
+#### <a name="constants"></a>Konstanter
 
 Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20 **bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""Krig og fred"" Del 1"** tekststrengen **Leo Tolstoy "Krig og fred" Del 1**.
 
-#### Operatører
-<a id="operators" class="xliff"></a>
+#### <a name="operators"></a>Operatører
 
 Tabellen nedenfor viser de aritmetiske operatorene som du kan bruke til å utføre grunnleggende matematiske operasjoner, for eksempel addisjon, subtraksjon, multiplikasjon og divisjon.
 
@@ -143,8 +134,7 @@ Du kan også bruke et &-tegn (&) som en tekstsammenkoblingsoperator for å koble
 |----------|-------------|------------------------------------------------|
 | &        | Sammenslåing | "Ingenting å skrive ut" & ": " & "Finner ingen poster" |
 
-#### Operatorprioritet
-<a id="operator-precedence" class="xliff"></a>
+#### <a name="operator-precedence"></a>Operatorprioritet
 
 Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultatet av uttrykket** 1 + 4 / 2** varierer for eksempel, avhengig av om addisjonen eller divisjonen utføres først. Du kan bruke parenteser til å definere hvordan uttrykk evalueres. Hvis du for eksempel vil angi at addisjonen skal utføres først, kan du endre det forrige uttrykket til **(1 + 4) / 2**. Hvis operasjonsrekkefølgen som skal utføres i et uttrykk ikke er uttrykkelig definert, er rekkefølgen basert på standardrekkefølgen som er tilordnet til operatorene støttes. Tabellen nedenfor viser operatorene og prioriteten som er tilordnet hver av dem. Operatorer som har høyere prioritet (for eksempel 7) evalueres før operatorer som har lavere prioritet (for eksempel 1).
 
@@ -160,8 +150,7 @@ Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultat
 
 Operatorer på samme linje har samme prioritet. Hvis et uttrykk inneholder mer enn én av disse operatorene, evalueres uttrykket fra venstre mot høyre. Uttrykket **1 + 6 / 2 \* 3 &gt; 5** returnerer for eksempel **sann**. Vi anbefaler at du bruker parenteser for å eksplisitt angi ønsket evalueringsrekkefølgen for uttrykk, for å gjøre det enklere å lese og vedlikeholde uttrykkene.
 
-#### Referanser
-<a id="references" class="xliff"></a>
+#### <a name="references"></a>Referanser
 
 Alle datakilder for gjeldende ER-komponent (en modell eller et format) som er tilgjengelige under utformingen av et uttrykk, kan brukes som navngitte referanser. Gjeldende ER-datamodell inneholder for eksempel datakilden **ReportingDate** som returnerer en verdi for **DATETIME**-datatypen. Hvis du vil ha verdien riktig formatert i det genererende dokumentet, kan du referere til datakilden i uttrykket slik **DATETIMEFORMAT (ReportingDate, "dd-MM-åååå")** Alle tegn i navnet til en referansedatakilde som ikke representerer en bokstav i alfabetet, må stå etter et enkelt anførselstegn ('). Hvis navnet på en referansedatakilde inneholder minst ett symbol som ikke representerer en bokstav i alfabetet (for eksempel skilletegn eller andre skriftlige symboler), må navnet være omsluttet av enkle anførselstegn. Her er noen eksempler:
 
@@ -180,22 +169,18 @@ Vær oppmerksom på at overgangen til slike metodeparameterne kan defineres med 
 - Bare konstanter kan sendes til slike metoder, da verdien deres defineres under utformingen.
 - Bere primitive (grunnleggende) datatyper støttes for slike parametere (heltall, reelle, boolske, strenger, osv.).
 
-#### Bane
-<a id="path" class="xliff"></a>
+#### <a name="path"></a>Bane
 
 Når et uttrykk refererer til en strukturert datakilde, kan du bruke banedefinisjonen for å velge et bestemt primitivt element i denne datakilden. Tegnet punktum (.) brukes til å skille enkeltelementene i en strukturert datakilde. Gjeldende ER-datamodell inneholder for eksempel datakilden **InvoiceTransactions** som returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit** som returnerer numeriske verdier. Du kan derfor utforme følgende uttrykk for å beregne det fakturerte beløpet: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
 
-#### Funksjoner
-<a id="functions" class="xliff"></a>
+#### <a name="functions"></a>Funksjoner
 
 Den neste delen beskrives funksjonene som kan brukes i ER-uttrykk. Alle datakilder i uttrykkskonteksten (gjeldende ER-datamodell eller ER-format), i tillegg til konstanter, kan brukes som parametere for funksjonsanrop i henhold til listen over argumenter for anropsfunksjoner. Gjeldende ER-datamodell inneholder for eksempel datakilden **InvoiceTransactions** som returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit** som returnerer numeriske verdier. For å beregne det fakturerte beløpet kan du derfor utforme følgende uttrykk som bruker den innebygde ER-avrundingsfunksjonen: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
 
-## Funksjoner som støttes
-<a id="supported-functions" class="xliff"></a>
+## <a name="supported-functions"></a>Funksjoner som støttes
 Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å utforme ER-datamodeller og ER-rapporter. Denne listen over funksjoner ikke er fast, og kan utvides av utviklere. Hvis du vil se en oversikt over funksjonene som du kan bruke, kan du gå til funksjonsruten i ER-formeldesigner.
 
-### Dato- og klokkeslettfunksjoner
-<a id="date-and-time-functions" class="xliff"></a>
+### <a name="date-and-time-functions"></a>Dato- og klokkeslettfunksjoner
 
 | Funksjon                                   | Beskrivelse                                                                                                                                                                                                                                                                                                                                                      | Eksempel                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,8 +208,7 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 | DATEVALUE (streng, format, kultur)              | Returnerer datorepresentasjon av en streng ved hjelp av angitt format og kultur       | **DATEVALUE ("21-Gen-2016", "dd-MMM-åååå", "IT")** returnerer datoen 01/21/2016 i henhold til angitt egendefinert format og kultur. Det vil oppstå et unntak for dette funksjonskallet, **DATEVALUE ("21-Gen-2016", "dd-MMM-åååå", "EN-US")** som informerer om ag en angitt streng ikke gjenkjennes som en gyldig dato.                                                                                                                       |
 | DATETIMEVALUE (streng, format)              | Returnerer dato-/klokkeslettrepresentasjon av en streng ved hjelp av et angitt format.       | **DATETIMEVALUE ("21-DES-2016 02:55:00", "dd-MMM-åååå: hh:mm:ss")** returnerer 2:55:00: AM den 21 DES 2016 i henhold til angitt egendefinert format og standardprogrammets **EN-US**-kultur.                                                                                                                       |
 | DATETIMEVALUE (streng, format, kultur)              | Returnerer dato-/klokkeslettrepresentasjon av en streng ved hjelp av angitt format og kultur.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-åååå: hh:mm:ss", "IT")** returnerer 2:55:00: AM den 21 DES 2016 i henhold til angitt et egendefinert format og kultur. Det vil oppstå et unntak for dette funksjonskallet, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-åååå hh:mm:ss", "EN-US")** som informerer om at en angitt streng ikke gjenkjennes som et gyldig klokkeslett.                                                                                                                       |
-### Listefunksjoner
-<a id="list-functions" class="xliff"></a>
+### <a name="list-functions"></a>Listefunksjoner
 
 <table>
 <colgroup>
@@ -364,8 +348,7 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 </tbody>
 </table>
 
-### Logiske funksjoner
-<a id="logical-functions" class="xliff"></a>
+### <a name="logical-functions"></a>Logiske funksjoner
 
 | Funksjon                                                                                | beskrivelse                                                                                                                                                                                                                                                                     | Eksempel                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -375,8 +358,7 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 | AND (betingelse 1\[, betingelse 2, ...\])                                                 | Returnerer **SANN** hvis *alle* angitte betingelser er oppfylt. Hvis ikke, returnes **USANN**.                                                                                                                                                                                            | **AND (1=1, "a"="a")** returnerer **SANN**. **AND (1=2, "a"="a")** returnerer **USANN**.                                                                                                                                                                           |
 | OR (betingelse 1\[, betingelse 2, ...\])                                                  | Returnerer **USANN** hvis *alle* angitte betingelser ikke er oppfylt. Returnerer **SANN** hvis *en* angitt betingelse er oppfylt.                                                                                                                                                                 | **OR (1=2, "a"="a")** returnerer **SANN**.                                                                                                                                                                                                                      |
 
-### Matematiske funksjoner
-<a id="mathematical-functions" class="xliff"></a>
+### <a name="mathematical-functions"></a>Matematiske funksjoner
 
 <table>
 <colgroup>
@@ -448,16 +430,14 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 
 
 
-### Registreringsfunksjoner
-<a id="record-functions" class="xliff"></a>
+### <a name="record-functions"></a>Registreringsfunksjoner
 
 | Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NULLCONTAINER (liste) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten. **Obs!**  Denne funksjonen er foreldet. Bruk **EMPTYRECORD** i stedet.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
 | EMPTYRECORD (post) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten. **Obs!**  En **null** post er en post der alle felt har en tom verdi (**0** \[null\] for tall, en tom streng for strenger og så videre). | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen.   |
 
-### Tekstfunksjoner
-<a id="text-functions" class="xliff"></a>
+### <a name="text-functions"></a>Tekstfunksjoner
 
 <table>
 <colgroup>
@@ -589,8 +569,7 @@ For verdier for real-typen begrenses strengkonverteringen til to desimalplasser.
 **TEXT (1/3) returnerer "0,33"**. |
 | QRCODE (streng) | Returnerer QR-kodebilde i base64-binærformat for en gitt streng. | **QRCODE ("eksempeltekst")** returnerer **U2FtcGxlIHRleHQ =**.   |
 
-### Datainnsamlingsfunksjoner
-<a id="data-collection-functions" class="xliff"></a>
+### <a name="data-collection-functions"></a>Datainnsamlingsfunksjoner
 
 | Funksjon             | beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -604,8 +583,7 @@ For verdier for real-typen begrenses strengkonverteringen til to desimalplasser.
 
 
 
-### Andre funksjoner (spesifikke for forretningsområder)
-<a id="other-business-domainspecific-functions" class="xliff"></a>
+### <a name="other-business-domainspecific-functions"></a>Andre funksjoner (spesifikke for forretningsområder)
 
 | Funksjon                                                                         | beskrivelse                                                                                                                                                                                                                                                        | Eksempel                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -622,13 +600,11 @@ For verdier for real-typen begrenses strengkonverteringen til to desimalplasser.
 | TABLENAME2ID (streng)                                                       | Returnerer heltallsrepresentasjon for en tabell-ID for et angitt tabellnavn.                                                                                                                                                                      | **TABLENAME2ID ("Intrastat")** returnerer **1510**.                                                                                                                                                                                                                                                                   |
 | ISVALIDCHARACTERISO7064 (streng)                                                       | Returnerer den boolske verdien **SANN** når en angitt streng representerer et gyldig internasjonalt bankkontonummer (IBAN). Returnerer ellersk en boolsk **USANN**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerer **SANN**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerer **USANN**.                                                                                                                                                                                                                                                                   |
 
-### Funksjonslisteutvidelse
-<a id="functions-list-extension" class="xliff"></a>
+### <a name="functions-list-extension"></a>Funksjonslisteutvidelse
 
 ER lar deg utvide listen over funksjoner som brukes i ER-uttrykk. Det er nødvendig med noe utvikling. Hvis du vil ha mer informasjon, kan du se [Utvide listen over elektroniske rapporteringsfunksjoner](general-electronic-reporting-formulas-list-extension.md).
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)

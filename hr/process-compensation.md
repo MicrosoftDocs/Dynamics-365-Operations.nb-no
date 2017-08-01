@@ -27,16 +27,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Behandle kompensasjon
-<a id="process-compensation" class="xliff"></a>
+# <a name="process-compensation"></a>Behandle kompensasjon
 Med kompensasjonsbehandling kan du beregne nye kompensasjonsbeløp for de ansatte basert på justeringer av egenkapitalen, mål for personlig tilleggsøkning og ytelse. Dette blogginnlegget inneholder informasjon om den grunnleggende flyten i faste kompensasjonsplaner uten faktorisere av ytelse.
 
-## Planlegg nye kompensasjonsbeløp og budsjetter
-<a id="plan-the-new-compensation-amounts-and-budgets" class="xliff"></a>
+## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planlegg nye kompensasjonsbeløp og budsjetter
 Hvis du vil gi ansatte en personlig tilleggsøkning, må du definere et budsjett med fast økning for hver av avdelingene: Kompensasjonsstyring > Koblinger > Mål for personlig tilleggsøkning. (Du kan også åpne dette skjemaet gjennom avdelingen: Organisasjon > Avdelinger.) Her kan du ytterligere angi om ansatte i en bestemt fagforening eller plassering trenger en annen økningsprosent. Feltene **Budsjett** og **Valuta** inneholder informasjon og kan brukes til å registrere et valutabeløp for budsjettet.
 
-## Definer kompensasjonsprosessen
-<a id="set-up-the-compensation-process" class="xliff"></a>
+## <a name="set-up-the-compensation-process"></a>Definer kompensasjonsprosessen
 Med en prosesshendelse kan du angi parametere for kompensasjonsbehandlingen. Dette inkluderer datoperioden som skal evalueres for å fastslå kompensasjonsbeløpene.  og datoen da de nye kompensasjonsbeløpene skal tre i kraft.
 
 Du kan også inkludere en fast lønn for klassifisert ansettelsesdato hvis noen av de faste kompensasjonsplanene bruker en ansettelsesregel med prosent. For disse planene får alle som ble ansatt etter startdato for syklusen og før fast lønn for klassifisert ansettelsesdato, 100 % av beregnet personlig tillegg eller generelt tillegg. Alle som ble ansatt etter fast lønn for klassifisert ansettelsesdato og før syklusens sluttdato, mottar en del av den beregnede økningen basert på hvor mange dager blant totale syklusdager de var ansatt. Hvis for eksempel syklusen går fra 1. til 31. desember, og 1. april er dato for proporsjonalt fordelt fast lønn etter ansettelsesdato, får en ansatt som er ansatt i mars, hele den beregnede økningen, mens en arbeider som er ansatt den 1. juli, mottar omtrent halvparten av den beregnede økningen.
@@ -66,12 +63,10 @@ Du kan bare legge til handlinger for fast kompensasjon av typen trinnvis plan.
 |                                | **1 trinn** - Systemet kontrollerer om den ansatte allerede er på siste referansepunkt for nivået.                                                                                             |
 |                                | **2 trinn** - Systemet flytter den ansatte fremover to trinn på det gjeldende nivået. Systemet kan bare flytte den ansatte ett eller ingen trinn når de har nådd det siste referansepunktet for nivået. |
 
-## Kjøre kompensasjonsprosessen
-<a id="run-the-compensation-process" class="xliff"></a>
+## <a name="run-the-compensation-process"></a>Kjøre kompensasjonsprosessen
 Når prosesshendelsen er definert med nødvendige datofelt, planer og handlinger, kan du klikke **Kjør prosess** på siden for prosesshendelse. Dette åpner dialogboksen Kjør prosesshendelser for kompensasjon. I denne dialogboksen kan du klikke alternativet **Vis resultater for hendelsesbehandling** for å se hvordan kompensasjonsbeløp ble beregnet for hver ansatt. Hvis du velger **OK**, kjøres kompensasjonsprosessen for alle ansatte i de valgte kompensasjonsplanene per syklusens sluttdato.
 
-## Vis prosessresultater
-<a id="view-the-process-results" class="xliff"></a>
+## <a name="view-the-process-results"></a>Vis prosessresultater
 Hvis du vil vise prosessresultatene, kan du åpne **Prosessresultater**-siden. En ny kompensasjonshendelse opprettes hver gang prosesshendelsen kjøres. På denne måten kan du gjøre prøvekjøringer, gjøre justeringer og kjøre kompensasjonshendelsen flere ganger for å se hvordan ulike endringer påvirker ansattkompensasjon.
 
 Prosessresultatsiden inneholder informasjon om prosesskjøringen, inkludert når utførelsen fant sted, brukeren som kjørte prosessen, og om det oppstod noen feil da prosessen ble kjørt. Du kan også merke av for **Låst** for å deaktivere knappen **Last inn kompensasjon** og hindre at noen laster inn kompensasjonshendelser til ansattpostene. Hvis du velger knappen **Resultatene for ansatte**, vises listen over ansatte som er inkludert i utførelsen.
@@ -80,8 +75,7 @@ Resultatene for ansatte viser informasjon om selve prosessen i tillegg til kompe
 
 Når du har kontrollert kompensasjonsbeløpene for en ansatt og gjort eventuelle justeringer i de anbefalte verdiene, kan du endre **Status** på **Ansatthendelse**-linjen for å angi om hendelsen er godkjent eller skal ignoreres. Hvis du vil, kan du slette eventuelle endringer i den ansattes anbefaling ved å klikke **Omberegn** knappen. Dette merker den eksisterende ansatthendelsen med statusen Ignorer og oppretter en ny ansatthendelse med omberegnede verdier.
 
-## Laste inn godkjente kompensasjonsendringer
-<a id="loading-approved-compensation-changes" class="xliff"></a>
+## <a name="loading-approved-compensation-changes"></a>Laste inn godkjente kompensasjonsendringer
 Når en eller flere ansatthendelser får statusen oppdatert til Godkjent, kan de lastes til de ansattes faste kompensasjonsposter. Dette kan gjøres ved å velge hver ansatthendelse én om gangen og klikke Last inn ansattkompensasjon på resultatsiden for den ansatte, eller ved å klikke **Last inn kompensasjon** på siden for prosessresultater for å laste inn alle godkjente ansatthendelser samtidig.
 
 Hvis du velger **OK** i dialogboksen **Last inn kompensasjon**, legges kompensasjonshandlingslinjer som ikke er null, til på siden **Fast kompensasjon for ansatt**.

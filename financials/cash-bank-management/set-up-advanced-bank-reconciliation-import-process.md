@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definere importprosess for avansert bankavstemming
-<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Definere importprosess for avansert bankavstemming
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdr
 
 Oppsettet for import av bankkontoutdrag varierer, avhengig av formatet på der elektroniske bankkontoutdraget. Finance and Operations støtter tre formater for bankkontoutdrag som standard: ISO20022, MT940 og BAI2.
 
-## Eksempelfiler
-<a id="sample-files" class="xliff"></a>
+## <a name="sample-files"></a>Eksempelfiler
 For alle tre formater må du ha filene som oversetter det elektroniske bankkontoutdraget fra det opprinnelige formatet til et format som Finance and Operations kan bruke. Du kan finne de nødvendige ressursfilene under **Ressurser**-noden i Programutforsker i Microsoft Visual Studio. Når du finner filene, kopierer du dem til én enkelt kjent plassering, slik at du kan lettere kan laste dem opp i løpet av installasjonsprosessen.
 
 | Ressursnavn                                           | Filnavn                            |
@@ -50,8 +48,7 @@ For alle tre formater må du ha filene som oversetter det elektroniske bankkonto
 | BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## Eksempler på bankkontoutdragsformater og tekniske oppsett
-<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Eksempler på bankkontoutdragsformater og tekniske oppsett
 Nedenfor følger eksempler på definisjonene av tekniske oppsett for avansert bankavstemmingsimportfil og tre tilknyttede filer med eksempler på bankkontoutdrag: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Definisjon av teknisk oppsett                             | Fil med bankkontoutdragseksempler          |
@@ -62,8 +59,7 @@ Nedenfor følger eksempler på definisjonene av tekniske oppsett for avansert ba
 
  
 
-## Definere import av ISO20022-bankkontoutdrag
-<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Definere import av ISO20022-bankkontoutdrag
 Først må du definere behandlingsgruppen for bankkontoutdrag for ISO20022-bankkontoutdrag ved hjelp av rammeverket for dataenhet.
 
 1.  Gå til **Arbeidsområder** &gt; **Databehandling**.
@@ -96,8 +92,7 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 3.  I kategorien **Avstemming** setter du alternativet **Avanserte bankavstemmingen** til **Ja**.
 4.  Sett feltet **Utdragsformat** til formatet som du opprettet tidligere, for eksempel **ISO20022**.
 
-## Definere import av MT940-bankkontoutdrag
-<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-mt940-bank-statements"></a>Definere import av MT940-bankkontoutdrag
 Først må du definere behandlingsgruppen for bankkontoutdrag for MT940-bankkontoutdrag ved hjelp av rammeverket for dataenhet.
 
 1.  Gå til **Arbeidsområder** &gt; **Databehandling**.
@@ -133,8 +128,7 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 4.  Når du blir bedt om å bekrefte valget og aktivere avanserte bankavstemming, klikker du **OK**.
 5.  Sett feltet **Utdragsformat** til formatet som du opprettet tidligere, for eksempel **MT940**.
 
-## Definere import av BAI2-bankkontoutdrag
-<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-bai2-bank-statements"></a>Definere import av BAI2-bankkontoutdrag
 Først må du definere behandlingsgruppen for bankkontoutdrag for BAI2-bankkontoutdrag ved hjelp av rammeverket for dataenhet.
 
 1.  Gå til **Arbeidsområder** &gt; **Databehandling**.
@@ -170,8 +164,7 @@ Det siste trinnet er å aktivere avanserte bankavstemming og angi formatet for b
 4.  Når du blir bedt om å bekrefte valget og aktivere avanserte bankavstemming, klikker du **OK**.
 5.  Sett feltet **Utdragsformat** til formatet som du opprettet tidligere, for eksempel **BAI2**.
 
-## Teste import av bankkontoutdrag
-<a id="test-the-bank-statement-import" class="xliff"></a>
+## <a name="test-the-bank-statement-import"></a>Teste import av bankkontoutdrag
 Det siste trinnet er å teste at du kan importere bankkontoutdraget.
 
 1.  Gå til **Kontant- og bankbehandling** &gt; **Bankkontoer**.

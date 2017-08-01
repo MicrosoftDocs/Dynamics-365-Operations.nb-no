@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kredit og innkreving i Kunder
-<a id="credit-and-collections-in-accounts-receivable" class="xliff"></a>
+# <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,8 +46,7 @@ Før du begynner å sette opp eller arbeide med samlinger, bør du forstår diss
 
 Delene nedenfor beskriver hvert begrep.
 
-## Øyeblikksbilder av aldersfordeling for kunde 
-<a id="customer-aging-snapshots" class="xliff"></a>
+## <a name="customer-aging-snapshots"></a>Øyeblikksbilder av aldersfordeling for kunde 
 Et øyeblikksbilde av aldersfordeling inneholder de beregnede aldersfordelte saldoene for en kunde på ett tidspunkt. Denne informasjonen vises på listesiden Aldersfordelte saldoer og på siden Innkrevinger. Et øyeblikksbilde av aldersfordeling må opprettes før du kan vise informasjon på listesidene for innkreving. 
 
 For hver kunde inneholder et øyeblikksbilde av aldersfordeling et hode for øyeblikksbilde av aldersfordeling og detaljposter som samsvarer med hver aldersfordelingsperiode i definisjonen av aldersfordelingsperioden. 
@@ -57,18 +55,15 @@ Hodet for øyeblikksbilde av aldersfordeling inneholder totalbeløp å betale, k
 
 For hver aldersfordelingsperiode i definisjonen av aldersfordelingsperiode opprettes en detaljpost for øyeblikksbildet av aldersfordeling. Hver detaljpost for øyeblikksbilde av aldersfordeling inneholder ID-en for aldersfordelingsperioden og totalbeløpet for transaksjoner med datoer i aldersfordelingsperioden. Transaksjoner tilordnes til en aldersfordelingsperiode, for eksempel 30 dager over fristen. Datoen er i forhold til Aldersfordeling per-datoen som angis når du oppretter et øyeblikksbilde av aldersfordeling. Denne informasjonen vises på listesiden Aldersfordelte saldoer og i faktaboksen Aldersfordelte saldoer på siden Innkrevinger.
 
-##  Innkrevingskundepuljer 
-<a id="collections-customer-pools" class="xliff"></a>
+## <a name="collections-customer-pools"></a> Innkrevingskundepuljer 
 Kundepuljer er spørringer som definerer en gruppe kundeposter som kan vises og administreres for innkrevinger eller aldersfordelingsprosesser. Bruk kundepuljer for å filtrere informasjon på listesiden Aldersfordelte saldoer, Innkrevingsaktiviteter og Innkrevingssaker. Du bruker også kundepuljer til å filtrere kundekontoene som inkluderes når øyeblikksbilder av aldersfordeling opprettes.
 
-## Innkrevingsagenter
-<a id="collections-agents" class="xliff"></a>
+## <a name="collections-agents"></a>Innkrevingsagenter
 Microsoft Dynamics 365 for Finance and Operations-brukere kan vise all kundeinformasjon på innkrevingslistesidene. Du kan bruke poster for innkrevingsagenter til å bestemme hvilke kundepuljer som er tilgjengelige for å filtrere informasjon på innkrevingslistesidene og på Innkrevinger-siden. 
 
 En innkrevingsagent er en person som arbeider med kunder for å sørge for at betalinger kreves inn i tide. I Finance and Operations er innkrevingsagenter arbeidere som er tilordnet til brukere på Brukeroppsett-siden.
 
-##  Listesider for innkrevinger 
-<a id="collections-list-pages" class="xliff"></a>
+## <a name="collections-list-pages"></a> Listesider for innkrevinger 
 Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 -   Aldersfordelte saldoer – Kolonnene på listesiden viser kundesaldoer og aldersfordelte beløp etter aldersfordelingsperiode. Denne informasjonen er lagret i et øyeblikksbilde av aldersfordeling. Aldersfordelingsperiodene bestemmes av den definisjonen av aldersfordelingsperiode som er i bruk. Definisjonen av aldersfordelingsperiode hentes fra kundepuljen, hvis det er angitt en slik for puljespørringen. Hvis puljen ikke har en definisjon for aldersfordelingsperiode, brukes standarddefinisjonen for aldersfordelingsperiode som er angitt på Kundeparametere-siden. Hvis det ikke er angitt en definisjon av standard aldersfordelingsperiode, brukes den første definisjonen av aldersfordelingsperiode som er angitt på siden Definisjoner av aldersfordelingsperiode.
 -   Innkrevingsaktiviteter – Kolonnene på listesiden viser aktiviteter som er identifisert som innkrevingsaktiviteter. Disse aktivitetene opprettes ved å bruke Innkrevinger-siden. Bruk aktiviteter til å spore arbeidet du gjør knyttet til innkreving.
@@ -81,8 +76,7 @@ Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 <li>Hvis en bruker er konfigurert som innkrevingsagent, er det bare puljene som er valgt for denne innkrevingsagenten, som er tilgjengelige på listesiden. Hvis Tillat agent å vise alle kundepuljer er valgt på siden Innkrevingsagent for innkrevingsagenten, er alle puljer tilgjengelige for denne agenten.</li>
 
 
-##  Innkrevingssiden
-<a id="collections-page" class="xliff"></a>
+## <a name="collections-page"></a> Innkrevingssiden
 Bruk siden Innkrevinger til å vise, administrere og utføre handlinger på innkrevingsinformasjon, aktiviteter og saker for en kunde. 
 
 Den øvre ruten viser saker for den valgte kunden. Den midtre ruten viser transaksjonene for kunden. Den nedre ruten viser aktiviteter for kunden. Du kan opprette innkrevingssaker for å spore innkrevingsinformasjon for én eller flere transaksjoner og aktiviteter. Informasjonen i de øvre og nedre ruten kan filtreres etter sak. 
@@ -91,14 +85,12 @@ Faktabokser viser informasjon om aldersfordelte saldoer og kredittgrense for den
 
 Handlingsruten inneholder knapper som viser tilknyttet informasjon for den valgte kunden, saken, transaksjonen eller aktiviteten. Du kan også utføre vanlige handlinger, for eksempel endre purrestatusen for en transaksjon, sende e-postkorrespondanse gjennom integrasjon med e-postleverandøren, refundere kunder, behandle betalinger uten dekning og avskrive saldoer som ikke kan inndrives.
 
-##  Frafalle, gjenoppta eller reversere renter og gebyrer 
-<a id="waive-reinstate-or-reverse-interest-and-fees" class="xliff"></a>
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Frafalle, gjenoppta eller reversere renter og gebyrer 
 Du kan frafalle, gjenoppta eller reversere hele rentenotaer eller gebyrer og transaksjonsrente som er en del av rentenotaer. Du kan gjøre dette fra kategorien Innkreving i handlingsruten på listesiden Alle kunder ved å klikke Rentenota, Transaksjonsrente eller Gebyr. 
 
 Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer. Bruk fremgangsmåten i delen Opprette avskrivningstransaksjoner i ett trinn for å skrive av alle tilleggene som en kunde skylder.
 
-## Opprette avskrivningstransaksjoner
-<a id="create-writeoff-transactions" class="xliff"></a>
+## <a name="create-writeoff-transactions"></a>Opprette avskrivningstransaksjoner
 Du kan skrive av misligholdt gjeld ved å klikke Avskriv i innkrevingsskjemaet og på listesiden Aldersfordelte saldoer, Kunder og Åpne kundefakturaer. 
 
 Når du avskriver transaksjoner for en kunde, merkes alle transaksjoner for kunden automatisk for utligning. Beløpet som avskrives, avhenger av nettobeløpet for de merkede transaksjonene. Avskrivningstransaksjonen opprettes i en økonomijournal og kan inneholde opptil tre typer journallinjer.

@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Startside for kostnadsregnskap
-<a id="cost-accounting-home-page" class="xliff"></a>
+# <a name="cost-accounting-home-page"></a>Startside for kostnadsregnskap
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,8 +47,7 @@ Med kostnadsregnskapsmodulen kan du gjøre følgende:
 -   Lag setninger som kan vises i arbeidsområdet.
 -   Opprett rapporter ved hjelp av Excel.
 
-## Kom i gang
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Kom i gang
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -66,14 +64,12 @@ Hvis du vil forstå hvordan du kan bruke kostnadsregnskap i det daglige arbeidet
 -   [Kostnadsobjektdimensjoner](cost-objects.md)
 -   [Opprette kostnadsobjekter](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (oppgaveveiledning)
 
-## Mobilt arbeidsområde for kostnadskontroll
-<a id="cost-control-mobile-workspace" class="xliff"></a>
+## <a name="cost-control-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 Med mobilt arbeidsområde for kostnadskontroll kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 
 -   [Mobilt arbeidsområde for kostnadskontroll](cost-controlling-mobile-workspace.md)
 
-## Kostnadsregnskapsanalyse-innhold for Power BI
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsregnskapsanalyse-innhold for Power BI
 Kostregnskapsanalyse-innhold for Microsoft Power BI er ment for kostnadskontrollører eller andre som er ansvarlig for å utføre kostnadskontroll i en organisasjon. Det inkluderer hovedmål, for eksempel kostnader, størrelse og kostnadssats etter faktiske kostnader, budsjettkostnader og fleksible budsjettkostnader. Det bruker transaksjonsdata fra Kostnadsregnskap i Finance and Operations og gir en aggregert visning av kostnadene for hele organisasjonen i en rapporteringsvaluta. Ledere kan filtrere dataene etter kostnadsobjekter for å utføre kostnadskontroll for sine organisasjonsenheter, selv om organisasjonen kan ha flere juridiske enheter.
 
 -   [Kostnadsregnskapsanalyse-innhold for Power BI](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Bestemme den optimale kombinasjonen av overlappende rabatter
-<a id="determine-the-optimal-combination-of-overlapping-discounts" class="xliff"></a>
+# <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Bestemme den optimale kombinasjonen av overlappende rabatter
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Når rabatter overlapper hverandre, må du bestemme kombinasjonen av overlappend
 
 Denne artikkelen gjelder for Microsoft Dynamics AX 2012 R3 med KB 3105973 (utgitt 2. november 2015) eller nyere, og for Microsoft Dynamics 365 for Retail. For å finne hvilken kombinasjonen av overlappende rabatter som skal brukes, i tide, har vi innført en metode for å bruk av overlappende rabatter. Vi kaller denne nye metoden **rangering av marginalverdi**. Rangering av marginalverdi brukes når tiden som er nødvendig for å evaluere de mulige kombinasjonene av overlappende rabatter, overskrider en terskel som kan konfigureres på siden **Detaljhandelsparametere**. Under rangering av marginalverdi beregnes en verdi for hver overlappende rabatt ved hjelp av rabattverdien for delte produkter. Overlappende rabatter brukes deretter fra den høyeste verdien i forhold til laveste relative verdi. Opplysninger om den nye metoden, kan du se delen "Marginalverdi" senere i denne artikkelen. Marginalverdien rangeringen er ikke brukt når rabattbeløp for et produkt ikke er berørt av et annet produkt i transaksjonen. Denne metoden brukes for eksempel ikke til to enkle rabatter, eller en enkel rabatt og et enkelt produkt kvantumsrabatt.
 
-## Rabatteksempler
-<a id="discount-examples" class="xliff"></a>
+## <a name="discount-examples"></a>Rabatteksempler
 Du kan opprette et ubegrenset antall detaljhandelsrabatter på et felles sett med produkter i Dynamics AX. Men fordi det er ingen grense, ytelsesproblemer kan oppstå når du prøver å beregne rabatter som skal brukes på de ulike produktene. Følgende eksempler illustrerer problemet mer detaljert. I eksempel 1 starter vi med to produkter og to overlappende rabatter. Deretter, i eksempel 2, viser vi hvordan problemet utvikler seg som flere produkter blir lagt til.
 
-### Eksempel 1: To produkter og to rabatter
-<a id="example-1-two-products-and-two-discounts" class="xliff"></a>
+### <a name="example-1-two-products-and-two-discounts"></a>Eksempel 1: To produkter og to rabatter
 
 I dette eksemplet er to produkter nødvendig for å kvalifisere for hver rabatt og rabattene kan ikke kombineres. Rabatter i dette eksemplet er **Beste pris**-rabatter. Begge produkter som er kvalifisert for begge rabatter. Her er de to rabattene.
 ![Overlappende rabattkombi 01](./media/overlapping-discount-combo-01.jpg)
@@ -51,8 +48,7 @@ For to produkter avhenger den beste av disse to rabattene av prisene på de to p
 
 **Merk:** Når prisen på produkt 1 er identisk med to tredjedeler av prisen på produktet 2, er de to rabattene like. I dette eksemplet varierer effektive rabattprosenten for rabatt 1 fra noen få prosent (når prisene på de to produktene er langt fra hverandre) til maksimalt 25 prosent (når de to produktene har samme pris). Effektiv rabattprosent for rabatt 2 er fast. Den er alltid 20 prosent. Fordi den effektive rabattprosenten for rabatt 1 har et område som kan være mer enn eller mindre enn rabatt 2, avhenger av beste rabatt av prisene på de to produktene som må være rabattert. I dette eksemplet er beregningen fullført raskt, fordi bare to rabatter trer i kraft på bare to produkter. Det er bare to mulige kombinasjoner: en bruk av rabatt 1 eller en bruk av rabatt 2. Det finnes ingen unntak å beregne. Verdien av hver rabatt beregnes ved å bruke begge produktene, og den beste rabatten brukes.
 
-### Eksempel 2: Fire produkter og to rabatter
-<a id="example-2-four-products-and-two-discounts" class="xliff"></a>
+### <a name="example-2-four-products-and-two-discounts"></a>Eksempel 2: Fire produkter og to rabatter
 
 Deretter bruker vi fire produkter og de samme to rabattene. Alle fire produkter som er kvalifisert for begge rabatter. Det er tolv mulige kombinasjoner. I siste to rabattene gjelder transaksjonen i en av tre kombinasjoner: to ganger bruk av rabatt 1, to ganger bruk av rabatt 2 eller én gangs bruk av rabatt 1 og én gangs bruk av rabatt 2. For å illustrere de mulige kombinasjonene, skal vi se på to forskjellige sett med fire produktene som har ulike priser:
 
@@ -68,16 +64,14 @@ Først finner vi den største rabatten som er tilgjengelig fra hvilke som helst 
 
 **Merk:** Når prisene varierer, og to eller flere rabatter konkurrerer, er den eneste måten å garantere de beste kombinasjonene av rabatter å evaluere begge rabatter og sammenligne dem.
 
-## Totalt antall mulige kombinasjoner
-<a id="total-possible-combinations" class="xliff"></a>
+## <a name="total-possible-combinations"></a>Totalt antall mulige kombinasjoner
 Denne delen fortsetter eksemplet fra den forrige delen. Vi vil legge til flere produkter og en annen rabatt, og se hvor mange kombinasjoner som må beregnes og sammenlignes. Tabellen nedenfor viser hvor mange mulige kombinasjoner av rabatter etter hvert som produktantallet øker. Den tabell viser hva som skjer både når det er to overlappende rabatter, som i forrige eksempel, og tre overlappende rabatter. Antall mulige kombinasjoner av rabatter som må evalueres, overskrider snart det som til og med en rask datamaskin kan beregne og sammenligne raskt nok til å være akseptabel for handelstransaksjoner.
 
 ![Overlappende rabattkombi 05](./media/overlapping-discount-combo-05.jpg)
 
 Når enda større antall eller flere overlappende rabatter trer i kraft, blir totalt antall mulige kombinasjoner av rabatter raskt flere millioner, og tiden som er nødvendig for å vurdere og velge den beste mulige kombinasjonen, blir raskt merkbar. Noen optimaliseringer har blitt gjort i detaljprismotoren for å redusere det totale antallet kombinasjoner som må evalueres. Fordi antallet overlappende rabatter og antallene i en transaksjon ikke er begrenset, må imidlertid alltid et stort antall kombinasjoner evalueres når det er snakk om overlappende rabatter. Det er dette problemet som rangeringsmetoden med marginalverdi løser.
 
-## Marginalverdimetode
-<a id="marginal-value-method" class="xliff"></a>
+## <a name="marginal-value-method"></a>Marginalverdimetode
 For å løse problemet med et eksponentielt økende antall kombinasjoner som må evalueres, finnes det en optimalisering som beregner verdien per delte produkt for hver rabatt i settet med produkter som to eller flere rabatter kan brukes på. Vi henviser til denne verdien som **marginalverdien** for rabatten for de delte produktene. Marginalverdien er gjennomsnitt økning per produkt av det totale rabattbeløpet når de delte produktene er inkludert i hver rabatt. Marginalverdien beregnes ved å ta det totale rabattbeløpet (DTotal), trekke fra rabattbeløpet uten delte produkter (DMinus\\ delt), og dele denne differansen med antall delte produkter (ProductsShared). 
 ![Overlappende rabattkombi 06](./media/overlapping-discount-combo-06.jpg)
 

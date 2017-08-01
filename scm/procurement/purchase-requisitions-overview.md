@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oversikt over innkjøpsrekvisisjoner
-<a id="purchase-requisition-overview" class="xliff"></a>
+# <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,28 +37,24 @@ Avhengig av oppsettet for organisasjonen kan du opprette innkjøpsrekvisisjoner 
 
 Når en innkjøpsrekvisisjon er godkjent, kan den brukes til å generere en bestilling. Bestillinger er de eksterne dokumentene som innkjøpsavdelingen sender til leverandører.
 
-## Opprette innkjøpsrekvisisjoner
-<a id="creating-purchase-requisitions" class="xliff"></a>
+## <a name="creating-purchase-requisitions"></a>Opprette innkjøpsrekvisisjoner
 Du kan opprette en innkjøpsrekvisisjon på siden **Mine innkjøpsrekvisisjoner** og velge varene og tjenestene du trenger. Du kan velge varer fra en innkjøpskatalog som organisasjonen har opprettet, eller du kan be om varer som ikke finnes i katalogen, ved å velge en innkjøpskategori og angi produktdetaljene.  
 
 Før en innkjøpsrekvisisjon kan sendes til gjennomgang, må arbeidsflyter konfigureres i Microsoft Dynamics 365 for Finance and Operations. Du bruker en arbeidsflyt til å flytte en innkjøpsrekvisisjon gjennom vurderingsprosessen, fra den innledende statusen **Utkast** til den endelige statusen **Godkjent**.
 
-### Innkjøpsrekvisisjonsstatuser
-<a id="purchase-requisition-statuses" class="xliff"></a>
+### <a name="purchase-requisition-statuses"></a>Innkjøpsrekvisisjonsstatuser
 
 Når du oppretter en innkjøpsrekvisisjon, blir en status tilordnet. En status tilordnes også til hver linje du legger til i en innkjøpsrekvisisjon. Når du har sendt en innkjøpsrekvisisjon til en arbeidsflyt for gjennomgang, oppdateres statusen for innkjøpsrekvisisjonen og statusen for hver linje når linjene går gjennom arbeidsflytprosessen.  
 
 Du kan konfigurere arbeidsflytprosessen for innkjøpsrekvisisjon for å sende en innkjøpsrekvisisjon gjennom vurderingsprosessen som ett dokument. Alternativt kan linjene i en innkjøpsrekvisisjon sendes enkeltvis til de aktuelle kontrollørene. Hvis innkjøpsrekvisisjonslinjene gjennomgås hver for seg, kan statusen for hver innkjøpsrekvisisjonslinje oppdateres når linjen går gjennom kontrollprosessen. Når alle linjer har fullført kontrollprosessen og ingen vurderingstrinn gjenstår for innkjøpsrekvisisjonen, oppdateres statusen for hele innkjøpsrekvisisjonen.
 
-### Arbeidsflyt for innkjøpsrekvisisjon
-<a id="purchase-requisition-workflow" class="xliff"></a>
+### <a name="purchase-requisition-workflow"></a>Arbeidsflyt for innkjøpsrekvisisjon
 
 Diagrammet nedenfor viser statusene som er tilordnet til en innkjøpsrekvisisjon og en innkjøpsrekvisisjonslinje når de flyttes i arbeidsflytprosessen.  
 
 [![Statuser for innkjøpsrekvisisjonshode og -linjer](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
-### Relasjoner mellom status for innkjøpsrekvisisjonshode og linjer
-<a id="purchase-requisition-header-and-line-status-relationships" class="xliff"></a>
+### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relasjoner mellom status for innkjøpsrekvisisjonshode og linjer
 
 Den overordnede statusen for en innkjøpsrekvisisjon bestemmes av statusen for innkjøpsrekvisisjonslinjene. Derfor må må vurderingsprosessen fullføres for alle innkjøpsrekvisisjonslinjene før vurderingsprosessen for innkjøpsrekvisisjonen i sin helhet kan fullføres. Tabellen nedenfor beskriver statusene som tilordnes til et innkjøpsrekvisisjonshode og innkjøpsrekvisisjonslinjer når innkjøpsrekvisisjonen flyttes i arbeidsflytprosessen.
 
@@ -138,23 +133,19 @@ Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kon
 </tbody>
 </table>
 
-## Fordele kostnader på flere finansielle kontoer
-<a id="distributing-costs-to-multiple-financial-accounts" class="xliff"></a>
+## <a name="distributing-costs-to-multiple-financial-accounts"></a>Fordele kostnader på flere finansielle kontoer
 Du kan distribuere kostnadene for et produkt som er inkludert i en innkjøpsrekvisisjon, til flere finanskontoer. Hvis organisasjonen bruker dimensjoner, for eksempel kostsentre og avdelinger, kan du distribuere kostnaden for et produkt til dimensjoner for finansielle kontoer.
 
-## Rekvisisjonsformål
-<a id="requisition-purposes" class="xliff"></a>
+## <a name="requisition-purposes"></a>Rekvisisjonsformål
 Rekvisisjonsformål gjør prosessen med å oppfylle rekvisisjonsbehov mer fleksibel. Når du oppretter en rekvisisjon, kan du tilordne ett av to formål til den: forbruk eller etterfylling. Avhengig av rekvisisjonsformålet og oppsettet av organisasjonen, kan rekvisisjonsbehovet oppfylles av en bestilling, overføringsordre, produksjonsordre eller kanban.  
 
 I innkjøpspolicyene kan du kontrollere rekvisisjonsformålene som er tilgjengelige når en rekvisisjon opprettes for organisasjonen.
 
-### Rekvisisjoner med forbruk som formål
-<a id="requisitions-that-have-a-purpose-of-consumption" class="xliff"></a>
+### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisisjoner med forbruk som formål
 
 En rekvisisjon som har forbruk som formål, representerer et behov for varer eller tjenester som skal brukes internt av organisasjonen. Behovet som opprettes av denne typen rekvisisjon, oppfylles alltid av en bestilling. Hvis Microsoft Dynamics 365 for Finance and Operations er konfigurert slik at bestillinger genereres automatisk, opprettes bestillinger etter at innkjøpsrekvisisjonen er godkjent.
 
-### Rekvisisjoner med etterfylling som formål
-<a id="requisitions-that-have-a-purpose-of-replenishment" class="xliff"></a>
+### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisisjoner med etterfylling som formål
 
 En rekvisisjon som har etterfylling som formål, representerer behov for å etterfylle beholdningen. Du oppretter for eksempel en rekvisisjon for å etterfylle varer for å selge dem på en bestemt detaljhandelslokasjon på et bestemt tidspunkt. Behovet som opprettes av denne typen rekvisisjon, kan oppfylles av en bestilling, overføringsordre, produksjonsordre eller Kanban.  
 
@@ -162,16 +153,14 @@ Når rekvisisjonsformålet er etterfylling, uttrykkes behovet som et antall i st
 
 Hvis du vil bruke innkjøpsrekvisisjoner som har etterfylling som formål, må du konfigurere hovedplanlegging slik at rekvisisjonsbehov inkluderes. Oppfyllingsmetoden for behovet som opprettes av denne typen rekvisisjon, bestemmes deretter automatisk basert på forsyningspolicyene som er definert for varene i organisasjonen og planlagt ved hjelp av hovedplanlegging.
 
-## Innkjøpsrekvisisjoner og forespørsler om tilbud
-<a id="purchase-requisitions-and-requests-for-quotation" class="xliff"></a>
+## <a name="purchase-requisitions-and-requests-for-quotation"></a>Innkjøpsrekvisisjoner og forespørsler om tilbud
 I noen tilfeller må du starte en prosess for tilbudsforespørsel for å identifisere leverandøren og prisen for produkter som er forespurt i en innkjøpsrekvisisjon. En tilbudsforespørsel kan bli generert når innkjøpsrekvisisjonen er til vurdering. Når du godkjenner et bud, overføres informasjon om leverandør, pris og så videre, til rekvisisjonen.  
 
 Du kan sette en innkjøpsrekvisisjon på vent ved å merke av for **På vent** på siden **Detaljer om innkjøpsrekvisisjon**. Behandling av innkjøpsrekvisisjonen kan fortsette bare etter at du fjerner sperren ved å fjerne merket.  
 
 **Obs!** I eProcurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
 
-## Behovskonsolidering
-<a id="demand-consolidation" class="xliff"></a>
+## <a name="demand-consolidation"></a>Behovskonsolidering
 Hvis du konsoliderer innkjøpsrekvisisjonslinjer fra flere innkjøpsrekvisisjoner, kan du forbedre forhandlingsposisjonen overfor leverandører for å oppnå bedre priser, lavere kostnader ved forsendelse og behandling og lavere administrasjonskostnader.  
 
 Innkjøpsrekvisisjonslinjer er bare kvalifisert for behovskonsolidering hvis de følgende setninger er sanne:
@@ -189,8 +178,7 @@ Når du har lagt til rekvisisjonslinjene i en konsolideringsmulighet og foretatt
 
 Hvis du vil opprette en bestilling for innkjøpsrekvisisjonslinjer som ikke er kvalifisert for behovskonsolidering, eller som ikke er valgt for en konsolideringsmulighet, må du behandle linjene manuelt.
 
-### Konsolidere innkjøpsrekvisisjonslinjer
-<a id="consolidating-purchase-requisition-lines" class="xliff"></a>
+### <a name="consolidating-purchase-requisition-lines"></a>Konsolidere innkjøpsrekvisisjonslinjer
 
 Prosessen for behovskonsolidering starter når en innkjøpsrekvisisjon er godkjent i en arbeidsflyt, og, hvis budsjettkontroll er er konfigurert for organisasjonen, når budsjettreservasjonene og forhåndsdisposisjoner er registrert. Diagrammet nedenfor viser prosessflyten for behovskonsolidering.  
 
@@ -205,8 +193,7 @@ Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgend
 5.  Opprette bestillinger for konsoliderte innkjøpsrekvisisjonslinjer eller for innkjøpsrekvisisjonslinjer i en konsolideringsmulighet.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Opprette en rekvisisjon for forbruk (oppgaveveiledning)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)

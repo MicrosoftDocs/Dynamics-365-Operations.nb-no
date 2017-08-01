@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Detaljhandelhierarkier
-<a id="retail-hierarchies" class="xliff"></a>
+# <a name="retail-hierarchies"></a>Detaljhandelhierarkier
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Denne artikkelen beskriver detaljhandelshierarkier i Microsoft Dynamics 365 for 
 
 Du kan opprette et handelskategorihierarki for å organisere produktene du selger gjennom kanalene dine for detaljhandel. Du kan bruke detaljhandelshierarkier til å kategorisere eller gruppere produkter. Du kan deretter bruke disse produktene til å opprette produktsortimenter og fordelsprogrammer for kunden. Du kan også tilordne produktattributter og egenskaper, tilordne en prissettingsstruktur, ta med produktene i produktkampanjer og bruke produktene for rapportering. Du kan opprette ett handelskategorihierarki som representerer alle produkter og kategorier i organisasjonen og deretter bruke dette kategorihierarkiet til flere formål. Du kan alternativt opprette flere handelskategorihierarkier til spesielle formål, for eksempel produktkampanjer. Når du oppretter et detaljprodukthierarki, må du tilordne en kategorihierarkitype for å identifisere formålet med kategorihierarkiet. Det er for eksempel bare produkthierarkier som er tilordnet typen **Navigasjonshierarki for detaljhandel**, som refereres når du blar gjennom produkter etter kategori elektronisk eller på et salgssted.
 
-## Handelshierarkityper
-<a id="retail-hierarchy-types" class="xliff"></a>
+## <a name="retail-hierarchy-types"></a>Handelshierarkityper
 Tabellen nedenfor viser de tilgjengelige typene detaljhandelskategorihierarkier og det generelle formålet med hver type.
 
 | Kategorihierarkitype       | Formål                                                                                                                                                                                                                                                                                                            |

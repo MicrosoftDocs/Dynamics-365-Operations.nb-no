@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurere skjermoppsett for salgssted
-<a id="configure-screen-layouts-for-pos" class="xliff"></a>
+# <a name="configure-screen-layouts-for-pos"></a>Konfigurere skjermoppsett for salgssted
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Dette emnet inneholder informasjon om skjermoppsett for Microsoft Dynamics 365 f
 
 Brukergrensesnittet for Microsoft Dynamics 365 for Retail POS kan konfigureres ved hjelp av en kombinasjon av visuelle profiler og skjermoppsett, tilordnet til butikker, kasser og/eller brukere.
 
-## Visuell profil
-<a id="visual-profile" class="xliff"></a>
+## <a name="visual-profile"></a>Visuell profil
 Visuelle profiler tilordnes til kasser og brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere. Alle brukere som logger på kassen vil ha samme tema, farger og bilder. 
 
 **Profilnummer** – Profilnummeret er den unike ID-en for den visuelle profilen. 
@@ -55,8 +53,7 @@ Visuelle profiler tilordnes til kasser og brukes til å angi de visuelle element
 
 **Programbakgrunn** – Salgsstedet kan også bruke et bilde som bakgrunn i programmet i stedet for heldekkende temafarge. I likhet med påloggingsbakgrunner, anbefales det å holde filstørrelsen så liten som mulig.
 
-## Skjermoppsett
-<a id="screen-layouts" class="xliff"></a>
+## <a name="screen-layouts"></a>Skjermoppsett
 Oppsett for skjermkonfigurasjonen bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i velkomstskjermen og transaksjonsskjermbildet for salgsstedet. 
 
 **Velkomstskjerm** – Velkomstskjermbildet er siden som brukerne ser når de logger på salgsstedet for første gang. Velkomstskjermbildet kan bestå av et varemerke og knappegrupper som gir tilgang til salgsstedsoperasjoner. Operasjoner som ikke er spesifikke for den gjeldende transaksjonen er vanligvis plassert her. 
@@ -65,13 +62,11 @@ Oppsett for skjermkonfigurasjonen bestemmer handlinger, innhold og plassering av
 
 **Standard startskjermbilde** – Noen forhandlere foretrekker at kassereren navigere direkte til transaksjonsskjermbildet etter pålogging. Innstillingen for standard startskjermbilde lar brukerne angi dette for alle skjermoppsett.
 
-### Tildeling
-<a id="assignment" class="xliff"></a>
+### <a name="assignment"></a>Tildeling
 
 Skjermoppsett kan tilordnes på butikk-, kasse- eller brukernivå. Brukertildelingen overstyrer kasse- og butikktildelingen, og kassetildelingen overstyrer butikktildelingen. I et enkelt scenario der alle brukere bruker det samme oppsettet uavhengig av kasse eller rolle, kan skjermoppsett bare angis for butikken. I tilfeller der bestemte kasser eller brukere krever spesialisert oppsett, kan de tilordnes etter behov.
 
-### Oppsettstørrelser
-<a id="layout-sizes" class="xliff"></a>
+### <a name="layout-sizes"></a>Oppsettstørrelser
 
 Denne funksjonen gjelder bare for Dynamics 365 for Retail versjon 1611. Fordi skjermoppsett i mange tilfeller kan brukes på tvers av flere skjermstørrelser og -oppløsninger, kan brukere konfigurere sine oppsett og innholdet for hver av dem. Salgsstedsprogrammet vil automatisk velge den nærmeste oppsettstørrelsen for enheten ved oppstart. Et skjermoppsett kan også inneholde konfigurasjoner for både fullstendig og kompakt enheter. Denne konfigurasjonen gjør det mulig å tilordne en bruker til ett enkelt skjermoppsettet som fungerer på tvers av ulike størrelser og formfaktorer i butikken. 
 
@@ -79,8 +74,7 @@ Denne funksjonen gjelder bare for Dynamics 365 for Retail versjon 1611. Fordi sk
 
 **Moderne POS - Kompakt** – Kompakt oppsett brukes vanligvis helst for telefoner eller små nettbrett. Utformingsmulighetene er begrenset for kompakte enheter. Brukere kan konfigurere kolonner og felt for rutene for kvittering og totaler.
 
-### Utforming av skjermoppsett
-<a id="screen-layout-designer" class="xliff"></a>
+### <a name="screen-layout-designer"></a>Utforming av skjermoppsett
 
 Hver oppsettstørrelse i et skjermoppsettet må konfigureres ved hjelp av utforming av skjermoppsett. Utformingen lar brukere angi og konfigurere av brukergrensesnittelementene i transaksjonskjermbildet. Utforming av skjermoppsett bruker ClickOnce til å laste ned, installere og starte den nyeste versjonen av appen hver gang brukeren åpner den. Husk å sjekke nettleserkravene for å bruke ClickOnce – noen lesere, for eksempel Chrome, krever servertillegg. 
 
@@ -98,8 +92,7 @@ Hver oppsettstørrelse i et skjermoppsettet må konfigureres ved hjelp av utform
 
 **Anbefalte produkter** – Hvis konfigurert for miljøet, vil kontrollen for anbefalte produkter viser produktforslag basert på maskinlæring. Kontrollen for anbefalte produkter er bare tilgjengelig for fullstendige oppsett i Dynamics 365 for Retail versjon 1611. **Egendefinert kontroll** – Den egendefinerte kontrollen fungerer som en plassholder i skjermoppsettet, slik at brukere kan reservere plass for egendefinert innhold. Den egendefinerte kontrollen er bare tilgjengelig for fullstendige oppsett.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Installere utforming av oppsett for Retail POS](install-pos-layout-designer.md)

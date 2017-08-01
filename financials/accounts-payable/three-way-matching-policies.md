@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Treveis kontrollpolicyer
-<a id="three-way-matching-policies" class="xliff"></a>
+# <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen inneholder eksempler på treveis samsvar.
 
-Eksempel: Treveis kontrollpolicyer for varer
-<a id="example-three-way-matching-for-items" class="xliff"></a>
+<a name="example-three-way-matching-for-items"></a>Eksempel: Treveis kontrollpolicyer for varer
 -------------------------------------
 
 **Sammendrag:** Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle leverandørfakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). For innkjøp av varer som skal brukes som anleggsmidler, skal fakturaer sammenlignes med både bestillingslinjene og produktkvitteringslinjene (treveis kontroll).
@@ -49,8 +47,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 -   Phyllis og April er ledere i leverandøravdelingen for Fabrikam i USA. De kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at fakturaene er sammenlignet med bestillingen og mottaket av varer og tjenester, der det er aktuelt.
 -   Tony er produksjonssjefen for Fabrikam i USA Han og andre ansatte i produksjonen kan sørge for at varene mottas slik de ble bestilt fra leverandørene, og blir inkludert slik at ansatte har det de trenger for å utføre jobben sin.
 
-### Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Forutsetninger
 
 -   Ken setter kontrollpolicyen for det juridiske enhetsnivået til treveis kontroll.
 -   Ken angir statusen for automatisk oppdatering av hodekontroll for den juridiske enheten til Ja.
@@ -64,8 +61,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 -   Magnus, en regnskapsmedarbeider hos Contoso, ser gjennom forsendelser for uken. Arnie velger forsendelsestransaksjoner for å fakturere Fabrikam for levering av CNC Milicron-maskinene. Magnus inkluderer et tillegg for forsendelse og håndtering. Fabrikam anser tillegget som en del av anleggsmiddelkostnaden.
 
-### Scenario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenario
 
 1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Han angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
@@ -91,8 +87,7 @@ Fakturalinjen inneholder følgende informasjon i Finance and Operations.
 
 Fordi denne linjen består fakturakontrollprosessen, kan fakturaen posteres.
 
-##  Eksempel: Treveis samsvar for vare- og leverandørkombinasjoner
-<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Eksempel: Treveis samsvar for vare- og leverandørkombinasjoner
 Sammendrag: Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle fakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). Cassie er regnskapsføreren i Malaysia-kontoret til Fabrikam. Hun angir at valgte varer som bestilles fra bestemte leverandører i Malaysia, bør kontrolleres mot både bestillingslinjer og produktkvitteringslinjene (treveis samsvar). Hun kan også overstyre kontrollpolicyen til et høyere kontrollnivå for bestemte bestillinger. 
 
 Volumet og beløpene er små, og det har vært problemer med leveringen fra noen leverandører i Malaysia. Derfor setter Cassie kontrollnivået for enkelte vare- og leverandørkombinasjoner som er kjøpt i Malaysia, til treveis kontroll. 
@@ -101,8 +96,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 -   Ken er kontrolleren til Fabrikam-organisasjonen. Han kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
 -   Cassie er regnskapsføreren for Malaysia-kontoret til Fabrikam. Hun kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at de er sammenlignet med bestillingslinjene og produktkvitteringene som representerer mottaket av varer og tjenester. Hun kan også øke kontrollnivået til treveis samsvar for bestemte varer for å kontrollere driftskostnader.
 
-### Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Forutsetninger
 
 -   Ken setter kontrollpolicyen for det juridiske enhetsnivået til toveis kontroll.
 -   Ken setter feltet Tilpass samlet pris for den juridiske enheten til Prosent og setter inn 10 % som toleranseprosent.
@@ -116,8 +110,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
     | MM01 – trådløs mus | 2        | 40,00      | 80,00      | Toveis samsvar                | Treveis samsvar                           |
     | USB-enhet             | 200      | 10,00      | 2 000,00   | Toveis samsvar                | Toveis samsvar                             |
 
-### Scenario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenario
 
 1.  Varene ankommer. Sammy, en arbeider i mottaksavdelingen på Malaysia-kontoret til Fabrikam, blir avbrutt og bokfører ikke produktkvitteringen med en gang.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:

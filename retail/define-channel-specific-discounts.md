@@ -29,24 +29,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definer kanalspesifikke rabatter
-<a id="define-channel-specific-discounts" class="xliff"></a>
+# <a name="define-channel-specific-discounts"></a>Definer kanalspesifikke rabatter
 
 [!include[banner](includes/banner.md)]
 
 
 Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskriver begrepene du trenger å kjenne til for å opprette en rabatt for en bestemt kanal. 
 
-Kanalspesifikke rabatter
-<a id="channel-specific-discounts" class="xliff"></a>
+<a name="channel-specific-discounts"></a>Kanalspesifikke rabatter
 --------------------------
 
 Forhandlere tilbyr ofte ulike rabatter i forskjellige kanaler. Det kan gjøres for å målrette lokale markedsforhold eller for å forholde seg til konkurrerende forhandlere.
 
 Microsoft Dynamics 365 for Retail bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper kan tilordnes til én eller flere av følgende enheter: kanaler, kataloger, tilknytninger og fordelsprogrammer. Denne artikkelen inneholder informasjon om kanaler, men de samme konseptene gjelder for katalograbatter, tilknytningsrabatter og lojalitetsrabatter.
 
-## Prisgrupper
-<a id="price-groups" class="xliff"></a>
+## <a name="price-groups"></a>Prisgrupper
 
 [![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -57,8 +54,7 @@ Diagrammet over illustrerer relasjonen mellom enheter som kan være på en trans
 -   **Prisgrupper for fordelsprogram**– Denne siden viser en liste over fordelsprogrammer og rabatter som er koblet sammen for hver prisgruppe.
 -   **Prisgrupper for tilknytninger**– Denne siden viser en liste over tilknytninger og rabatter som er koblet sammen for hver prisgruppe.
 
-## Eksempel på kanalrabattoppsett
-<a id="example-channel-discount-set-up" class="xliff"></a>
+## <a name="example-channel-discount-set-up"></a>Eksempel på kanalrabattoppsett
 Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 
 1.  Du har for eksempel en kanal som kalles **Houston**, og du skal opprette en ny rabatt kalt **Tilbake til skolen**.
@@ -69,8 +65,7 @@ Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 
  
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)

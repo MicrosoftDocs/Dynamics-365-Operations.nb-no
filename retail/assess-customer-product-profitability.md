@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Vurdere kunde- og produktlønnsomhet
-<a id="assess-customer-and-product-profitability" class="xliff"></a>
+# <a name="assess-customer-and-product-profitability"></a>Vurdere kunde- og produktlønnsomhet
 
 [!include[banner](includes/banner.md)]
 

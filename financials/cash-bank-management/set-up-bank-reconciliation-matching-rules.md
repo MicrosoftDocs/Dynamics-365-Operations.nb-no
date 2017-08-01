@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definere samsvarsregler for bankavstemming
-<a id="set-up-bank-reconciliation-matching-rules" class="xliff"></a>
+# <a name="set-up-bank-reconciliation-matching-rules"></a>Definere samsvarsregler for bankavstemming
 
 [!include[banner](../includes/banner.md)]
 

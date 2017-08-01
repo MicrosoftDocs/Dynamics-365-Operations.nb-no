@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Oversikt over kundeordrer
-<a id="customer-orders-overview" class="xliff"></a>
+# <a name="customer-orders-overview"></a>Oversikt over kundeordrer
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Omnikanal for detaljhandel gir mulighet for kundeordrer og spesialordrer, eller 
 
 Forhandlere kan også bruke kundeordrer for å minimere tapt salg som ellers kan forårsakes av lagernedetid, fordi varene kan leveres eller hentes på et annet tidspunkt eller sted.
 
-## Definer kundeordrer
-<a id="set-up-customer-orders" class="xliff"></a>
+## <a name="set-up-customer-orders"></a>Definer kundeordrer
 Her er noen av parameterne som kan angis på siden **Parametere for detaljhandel** for å definere hvordan kundeordrer er oppfylt:
 
 -   **Standard innbetalingsprosent** – Angi beløpet som kunden må betale som et innskudd før en ordre kan bekreftes. Standard innbetalingsbeløp beregnes som en prosentdel av ordreverdien. Avhengig av rettigheter kan en butikkmedarbeider kanskje overstyre beløpet ved hjelp av **Overstyring av innbetaling**.
@@ -57,10 +55,8 @@ Her er noen av parameterne som kan angis på siden **Parametere for detaljhandel
     -   Gebyrer brukes på nivået til salgsordrehodet, og når et antall av en produktserie returneres, kan ikke maksimal refundering av forsendelseskostnader som er tillatt for produktene og antallet, bestemmes på en måte som passer for alle detaljkunder.
     -   Forsendelseskostnader påløpes for hver forekomst av levering. Hvis en kunde returnerer varer flere ganger, og forhandlerens policy angir at forhandleren skal betale returgebyrene, blir returgebyrene større enn de faktiske forsendelseskostnadene.
 
-## Transaksjonsflyt for kundeordrer
-<a id="transaction-flow-for-customer-orders" class="xliff"></a>
-### Opprett en kundeordre i moderne salgssted for detaljhandel
-<a id="create-a-customer-order-in-retail-modern-pos" class="xliff"></a>
+## <a name="transaction-flow-for-customer-orders"></a>Transaksjonsflyt for kundeordrer
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Opprett en kundeordre i moderne salgssted for detaljhandel
 
 1.  Legg til en kunde i transaksjonen.
 2.  Legg til produkter i handlevognen.
@@ -69,46 +65,39 @@ Her er noen av parameterne som kan angis på siden **Parametere for detaljhandel
 5.  Klikk **Valgt for plukking** eller **Plukk alle** for å velge produkter som plukkes fra det gjeldende lageret eller et annet lager på en bestemt dato.
 6.  Samle innbetalingsbeløpet, hvis det kreves et depositum.
 
-### Rediger en eksisterende kundeordre
-<a id="edit-an-existing-customer-order" class="xliff"></a>
+### <a name="edit-an-existing-customer-order"></a>Rediger en eksisterende kundeordre
 
 1.  Klikk **Finn en ordre** på startsiden.
 2.  Finn og velg ordren for å redigere. Klikk **Rediger** nederst på siden.
 
-### Hent en ordre
-<a id="pick-up-an-order" class="xliff"></a>
+### <a name="pick-up-an-order"></a>Hent en ordre
 
 1.  Klikk **Finn en ordre** på startsiden.
 2.  Velg ordren som skal hentes. Klikk **Plukk og pakking** nederst på siden.
 3.  Klikk **Plukk**.
 
-### Annullere en ordre
-<a id="cancel-an-order" class="xliff"></a>
+### <a name="cancel-an-order"></a>Annullere en ordre
 
 1.  Klikk **Finn en ordre** på startsiden.
 2.  Velg ordren som skal annulleres. Klikk **Avbryt** nederst på siden.
 
-#### Opprette en returordre
-<a id="create-a-return-order" class="xliff"></a>
+#### <a name="create-a-return-order"></a>Opprette en returordre
 
 1.  Klikk **Finn en ordre** på startsiden.
 2.  Velg ordren som skal returneres, velg fakturaen for ordren, og velg produktlinjen for varen som skal returneres.
 3.  Klikk **Returordre** nederst på siden.
 
-## Asynkron transaksjonsflyt for kundeordrer
-<a id="asynchronous-transaction-flow-for-customer-orders" class="xliff"></a>
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkron transaksjonsflyt for kundeordrer
 Kundeordrer kan opprettes fra salgssted-klienten i synkron eller asynkron modus.
 
-### La kundeordrer opprettes i asynkron modus
-<a id="enable-customer-orders-to-be-created-in-asynchronous-mode" class="xliff"></a>
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>La kundeordrer opprettes i asynkron modus
 
 1.  Klikk **Retail** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofil** &gt; **Funksjonalitetsprofiler**.
 2.  På **Generelt**-hurtigfanen angir du **Opprett kundeordre i asynkron modus** til **Ja**.
 
 Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om RTS er tilgjengelig. Hvis du setter dette alternativet til **Nei**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, hentes og settes de inn i Retail ved hentejobber (P-jobber). De tilsvarende salgsordrene opprettes i Retail når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Hybridkundeordrer](hybrid-customer-orders.md)

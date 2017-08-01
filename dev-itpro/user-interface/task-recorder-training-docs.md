@@ -27,8 +27,7 @@ ms.lasthandoff: 06/17/2017
 
 ---
 
-# Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
-<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
+# <a name="create-documentation-or-training-using-task-recordings"></a>Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 > [!IMPORTANT]
 > Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Dynamics 365 for Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. 
 
-Finn ut mer om oppgaveopptak
-<a id="learn-about-task-recorder" class="xliff"></a>
+<a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
 -------------------------
 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
@@ -50,8 +48,7 @@ Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfø
 
 Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
 
-## Planlegge oppgaveopptaket
-<a id="plan-your-task-recording" class="xliff"></a>
+## <a name="plan-your-task-recording"></a>Planlegge oppgaveopptaket
 Husk følgende informasjon uansett om du lager et nytt oppgaveopptak eller baserer opptaket på et oppgaveopptak fra Microsoft.
 
 -   Planlegg opptaket slik du hadde gjort med et videoopptak. Ta alle beslutninger på forhånd.
@@ -101,12 +98,10 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 **Avgjøre hvor du skal starte et opptak i brukergrensesnittet** Siden du er på når du begynner å ta opp en oppgave, påvirker hvilken side oppgaveveiledningen vises for. Hvis du for eksempel vil at oppgaveopptaket skal vises i Hjelp-ruten når brukeren klikker på Hjelp på siden Parametere for økonomimodul, må du starte opptaket på siden Parametere for økonomimodul. **Lagre opptak som AXTR-filer** Når du er ferdig med å lage eller redigere et oppgaveopptak, har du flere alternativer for hvordan du vil laste ned eller lagre opptaket. Du kan laste ned filen som en oppgaveopptakspakke (AXTR), laste den ned som en rå opptaksfil (XML), laste den ned som et Word-dokument, eller lagre filen i et LCS-bibliotek. Det er alltid lurt å lagre oppgaveopptaket som en oppgaveopptakspakkefil (AXTR). Dette gjør det enklere å vedlikeholde filen hvis fremgangsmåter eller merknader må endres senere. Hvis du vil laste ned filen som et Word-dokument, må du også lagre den som en oppgaveopptakspakkefil.
 
-## Lage oppgaveopptaket
-<a id="create-your-task-recording" class="xliff"></a>
+## <a name="create-your-task-recording"></a>Lage oppgaveopptaket
 Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Opprette et oppgaveopptak](task-recorder.md).
 
-## Kopiere og tilpasse oppgaveopptak fra Microsoft
-<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
+## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse oppgaveopptak fra Microsoft
 Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din egen hjelpedokumentasjon eller opplæringsmateriell. Følg disse trinnene for å laste ned et oppgaveopptak fra Microsoft:
 
 1.  Åpne oppgaveopptak. Oppgaveopptakeren finner du på **Innstillinger**-menyen.
@@ -121,12 +116,10 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
 
-## Ta med oppgaveopptakene i Hjelp-ruten
-<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Ta med oppgaveopptakene i Hjelp-ruten
 Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../get-started/help-connect.md).
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over Hjelp](..\get-started\help-overview.md)

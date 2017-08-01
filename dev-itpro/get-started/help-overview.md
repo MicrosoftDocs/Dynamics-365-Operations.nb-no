@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hjelpeoversikt
-<a id="help-overview" class="xliff"></a>
+# <a name="help-overview"></a>Hjelpeoversikt
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,8 +56,7 @@ Dette emnet beskriver hjelpesystemet og forklarer hvordan du kan opprette egende
 > [!IMPORTANT]
 > Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på webområdet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) for både Retail og Talent.
 
-## Hjelp på docs.microsoft.com
-<a id="help-on-docsmicrosoftcom" class="xliff"></a>
+## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
 
 docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) er den viktigste kilden til produktdokumentasjonen for Finance and Operations. Området tilbyr følgende funksjoner:
 
@@ -67,8 +65,7 @@ docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynami
 -   **Tilgang til ulike typer innhold** – Området lar deg raskt få tilgang ulike typer innhold om Finance and Operations, for eksempel Microsoft Office Mix-presentasjoner, oppgaveveiledninger, videoer og emner.
 -   **Innhold som støtter forretningsprosesser** – Området inneholder forretningsprosessfokusert innhold som drar nytte av Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
-### Søk på docs.microsoft.com
-<a id="searching-on-docsmicrosoftcom" class="xliff"></a>
+### <a name="searching-on-docsmicrosoftcom"></a>Søk på docs.microsoft.com
 Vi får mange spørsmål om hvordan du søker etter innholdet vårt. Hvis du starter fra en side om Finance and Operations på området vårt, begrenser vi søket slik at det bare gjelder for Finance and Operations-innhold. Du kan fjerne omfanget ved å klikke X ved siden av Operations i søkeboksen. 
 
 ![Søk i ordrer](./media/search-scope.png)
@@ -78,12 +75,10 @@ Du kan også finne innholdet med en hvilken som helst søkemotor. For å få bes
 
 ![Resultater av områdesøk](./media/site-search-results.png)
 
-### docs.microsoft.com-innholdsfortegnelsen for enhetlig drift
-<a id="the-docsmicrosoftcom-table-of-contents-for-unified-operations" class="xliff"></a>
+### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innholdsfortegnelsen for enhetlig drift
 Alle produkter deler en enkelt innholdsfortegnelse på webområdet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen til å finne emner du leter etter.
 
-### Hvordan kan jeg bidra?
-<a id="how-can-i-contribute" class="xliff"></a> 
+### <a name="how-can-i-contribute"></a>Hvordan kan jeg bidra? 
 
 Legg igjen en kommentar! 
 
@@ -105,8 +100,7 @@ Til høyre angir du en e-postadresse og et nytt passord for å opprette en ny ko
 ![Påloggingsalternativer](./media/signin-options.png)
 
 
-## Oppgaveveiledninger
-<a id="task-guides" class="xliff"></a>
+## <a name="task-guides"></a>Oppgaveveiledninger
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra Hjelp-ruten. Når du først klikker en oppgaveveiledning, vil Hjelp-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er nå tilgjengelige. 
 
 Vi leverer ulike sett med oppgaveveiledninger for hvert enhetlig drift-produkt. Delen Tilgang til oppgaveveiledninger fra Hjelp-ruten beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
@@ -119,8 +113,7 @@ Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start opp
 > [!IMPORTANT] 
 > Dataene som du angir når du spiller av en oppgaveveiledning, er ekte. Hvis du er i et produksjonsmiljø, legges dataene inn i firmaet som du bruker for øyeblikket.
 
-### Alt begynner med Oppgaveregistrering
-<a id="it-all-begins-with-task-recorder" class="xliff"></a>
+### <a name="it-all-begins-with-task-recorder"></a>Alt begynner med Oppgaveregistrering
 
 Oppgaveveiledninger opprettes ved hjelp av Oppgaveregistrering. Når du bruker Oppgaveregistrering, registreres alle handlingene du utfører i grensesnittet i Finance and Operations (for eksempel velge menyer, endre innstillinger og skrive inn data). Samlet kalles trinnene som du registrerer en oppgaveregistrering. Som forklart i den forrige delen kan oppgaveregistreringer vises i Hjelp-ruten og spilles av som oppgaveveiledninger. Det finnes imidlertid andre måter som du kan bruke oppgaveregistreringer på:
 
@@ -129,27 +122,23 @@ Oppgaveveiledninger opprettes ved hjelp av Oppgaveregistrering. Når du bruker O
 
 Hvis du vil ha mer informasjon om Oppgaveopptaker, kan du se [Oppgaveopptaker i Finance and Operations](../user-interface/task-recorder.md).
 
-### Opprette egendefinerte oppgaveregistreringer
-<a id="creating-customized-task-recordings" class="xliff"></a>
+### <a name="creating-customized-task-recordings"></a>Opprette egendefinerte oppgaveregistreringer
 
 Du kan opprette dine egne oppgaveregistreringer, eller du kan laste ned og tilpasse oppgaveregistering som Microsoft tilbyr. Du kan derfor opprette tilpasset Hjelp for organisasjonen som viser din spesifikke Finance and Operations-implementering. For å vise en oppgaveregistrering i Finance and Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek i LCS. Hvis du er partner og du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Hvis du vil se fullstendige instruksjoner, kan du se [Bruke oppgaveregistreringer til å opprette dokumentasjon og opplæring](../user-interface/task-recorder.md).
 
-## Hjelp i produktet
-<a id="in-product-help" class="xliff"></a>
+## <a name="in-product-help"></a>Hjelp i produktet
 Hvis du vil ha tilgang til hjelpeinnhold i Finance and Operations, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl + Skift +?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger. 
 
 ![Hjelp-rute](./media/help-pane-wiki-1024x684.png)
 
-### Tilgang til helpeemner fra Hjelp-ruten
-<a id="accessing-help-topics-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
 Fra Hjelp-ruten har du tilgang til artikler som gjelder for Finance and Operations-klienten. Når du først åpner Hjelp-ruten og klikker kategorien **Wiki**, ser du artikler som gjelder for siden du er på i Finance and Operations. Hvis det ikke finnes noen artikler, kan du angi nøkkelord for å presisere søket. Når du klikker en artikkel i Hjelp-ruten, åpnes en ny kategori i leseren og viser artikkelen. 
 
 > [!IMPORTANT]
 > Denne delen gjelder ikke for Dynamics 365 for Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Talent. 
 
-### Tilgang til oppgaveveiledninger fra Hjelp-ruten
-<a id="accessing-task-guides-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-task-guides-from-the-help-pane"></a>Tilgang til oppgaveveiledninger fra Hjelp-ruten
 
 Før du kan få tilgang til oppgaveveiledninger fra **Hjelp**-ruten må en systemadministrator gå til Systemparametere-siden i Finance and Operations og konfigurere noen innstillinger. 
 
@@ -175,15 +164,13 @@ Når systemansvarlig har fullført disse trinnene, kan du åpne Hjelp-ruten og k
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops-1024x742.png)
 
-### Hvor er oversatt oppgaveveiledningene?
-<a id="where-are-the-translated-task-guides" class="xliff"></a>
+### <a name="where-are-the-translated-task-guides"></a>Hvor er oversatt oppgaveveiledningene?
 
 Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittelen. Hvis du vil vise lokaliserte oppgaveveiledninger i Finance and Operations, kontroller at du er koblet til et egnet biblioteket. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
 -   Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
 -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
-## Tilleggsressurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Tilleggsressurser
 Tabellen nedenfor viser webområder som tilbyr innhold om enhetlig drift Våre innholdswebområder er organiserte for å støtte livssyklusen til kunden. Hver fase støttes av et annet sett med områder. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 
 | Område                                                                     | beskrivelse                                                                                                                                                                                                                                |
@@ -199,8 +186,7 @@ Tabellen nedenfor viser webområder som tilbyr innhold om enhetlig drift Våre i
 
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 [Finance and Operations-hjelpesystem (nedlastbart faktaark)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 

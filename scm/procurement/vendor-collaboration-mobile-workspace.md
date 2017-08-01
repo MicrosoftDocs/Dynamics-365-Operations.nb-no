@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilt arbeidsområde for leverandørsamarbeid
-<a id="vendor-collaboration-mobile-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamar
 
 Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Oversikt
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Oversikt 
 Det mobile arbeidsområdet for **leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise og svare på bestillinger i webklienten for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 >[!NOTE]
@@ -60,16 +58,13 @@ Det mobile arbeidsområdet for **leverandørsamarbeid** gjør det mulig for en l
 -   Vise informasjon om kontaktperson som er registrert for leverandørkontoen. (Denne oppgaven krever en ekstra sikkerhetsrolle.)
 -   Vise informasjon om en brukerforespørsel som er sendt av leverandøren, og følge statusen for forespørselen. (Denne oppgaven krever en ekstra sikkerhetsrolle.)
 
-## Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
-### Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
 Hvis oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er distribuert i organisasjonen, må systemansvarlig publisere det mobile arbeidsområdet for **leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
 
 <table>
@@ -117,16 +112,14 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </tbody>
 </table>
 
-## Laste ned og installere mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
 Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logge på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 1.  Start appen på mobilenheten.
 2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
 4.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
@@ -134,32 +127,27 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
     [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Bruk det mobile arbeidsområdet for leverandørsamarbeid
-<a id="use-the-vendor-collaboration-mobile-workspace" class="xliff"></a>
+## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Bruk det mobile arbeidsområdet for leverandørsamarbeid
 Når du velger arbeidsområdet for **leverandørsamarbeid**, vises følgende alternativer.
 
 ![Mobilt arbeidsområde for leverandørsamarbeid](./media/vendor-collaboration-mobile-app.png)
 
 Arbeidsområdet for **leverandørsamarbeid** inneholder følgende sider.
 
-### Kontakter
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Kontakter
 På **Kontakter**-siden kan du se alle kontaktene som er definert for leverandørkontoen. Det viser kontaktpersonens navn, primære e-postadresse og brukeralias, hvis kontakten har et alias. Denne siden viser også om kontaktpersonens brukerkonto er aktiv. Når du velger en kontakt, kan du se kontaktdetaljer, for eksempel de juridiske enhetene som personen er kontaktperson for. Du kan også se kontaktopplysninger, for eksempel telefonnummer eller en alternativ e-postadresse.
 
-### Brukerforespørsler
-<a id="user-requests" class="xliff"></a>
+### <a name="user-requests"></a>Brukerforespørsler
 Siden **Brukerforespørsler** lar deg se alle brukerforespørslene som du har sendt inn via webgrensesnittet for leverandørsamarbeid. Du kan også følge statusen for disse forespørslene. Når du velger en brukerforespørsel, kan du se hva som ble forespurt, legge til eller deaktivere en bruker, endre sikkerhet og se hvilke sikkerhetsroller som ble forespurt for brukeren.
 
-### Bestillinger som er klare for vurdering
-<a id="purchase-orders-ready-for-review" class="xliff"></a>
+### <a name="purchase-orders-ready-for-review"></a>Bestillinger som er klare for vurdering
 Siden **Bestillinger klare for vurdering** lar deg se alle bestillingene som ble sendt av kunden, men som du ikke ennå har besvart. Du kan vise valgt informasjon om bestillingen, for eksempel hvilke produkter som er forespurt og når disse produktene skal leveres. Prisinformasjon er også tilgjengelig avhengig av konfigurasjonen for leverandøren.
 
 Du kan også se om bestillingen har notater eller vedlegg. For å åpne notater og vedlegg må du imidlertid bruke webgrensesnittet for leverandørsamarbeid i webklienten. Velg **Bestillingslinje** for å se alle linjene sammen med detaljene. For hver linje viser en indikator om det finnes merknader eller vedlegg, eller om leveringsadressen er forskjellig fra leveringsadressen som vises i hodet.
 
 Hvis du vil svare på bestillingen, må du bruke webgrensesnittet for leverandørsamarbeid i webklienten.
 
-### Venter på kundehandling
-<a id="awaiting-customer-action" class="xliff"></a>
+### <a name="awaiting-customer-action"></a>Venter på kundehandling
 Siden **Venter på kundehandling** lar deg finne bestillinger som du eller en annen person i firmaet som har tilgang til leverandørsamarbeid, har svart på. Bestillingene vises i denne listen bare hvis kunden skal utføre én av følgende handlinger på bestillingen:
 
 -   Hvis bestillingen ble avvist, må kunden enten oppdatere eller avbryte den opprinnelige ordren og deretter sende den på nytt. Når bestillingen er sendt på nytt, vises den ikke lenger på siden **Venter på kundehandling**.
@@ -182,7 +170,6 @@ Legg merke til at **Levering**-feltet settes til enten **Ja** eller **Nei** for 
 
 Alle endringer som er gjort i bestillingslinjesvaret, vises. Imidlertid blir ikke opplastede notater og vedlegg vist. For å åpne notater og vedlegg må du bruke webgrensesnittet for leverandørsamarbeid i webklienten.
 
-### Åpne bekreftede ordrer
-<a id="open-confirmed-orders" class="xliff"></a>
+### <a name="open-confirmed-orders"></a>Åpne bekreftede ordrer
 Når bestillingen er bekreftet av kunden (noe som betyr at status for bestillingen er endret til **Bekreftet**-status), vises den i den åpne bekreftede bestillingen. Den forblir i listen til den er registrert som mottatt av kunden.
 

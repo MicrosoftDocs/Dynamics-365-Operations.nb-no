@@ -27,26 +27,22 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Vanlige spørsmål om personalhandlinger
-<a id="personnel-actions-faq" class="xliff"></a>
+# <a name="personnel-actions-faq"></a>Vanlige spørsmål om personalhandlinger
 Dette emnet inneholder svar på spørsmål du kan ha hvis organisasjonen bruker personalhandlinger. Personalhandlinger er flere trinn du må fullføre når du utfører bestemte personalrelaterte oppgaver. Eksempler på oppgaver som kan kreve personalhandlinger, er når du oppretter nye stillinger, endrer verdier for eksisterende stillinger, ansette nye arbeidere, overføre arbeidere, endre arbeiderkompensasjon, endre stillingstilordninger eller avslutte arbeidere.
 
 **Merk:** Personalhandlinger er bare tilgjengelige hvis konfigurasjonsnøkkelen Personalhandlinger er valgt. 
 
-## Hvordan vet jeg om organisasjonen krever personalhandlinger?
-<a id="how-can-i-tell-if-my-organization-requires-personnel-actions" class="xliff"></a>
+## <a name="how-can-i-tell-if-my-organization-requires-personnel-actions"></a>Hvordan vet jeg om organisasjonen krever personalhandlinger?
 Personalhandlinger er nødvendige for organisasjonen hvis du blir bedt om å velge en personalhandling når du oppretter nye stillinger, endrer eksisterende stillinger, ansetter nye arbeidere, overførr arbeidere, endrer arbeideres kompensasjon, endrer stillingstilordninger, sier opp arbeidere eller angir permisjon for arbeidere. 
 
-## Hva er forskjellen mellom en stillingshandling og arbeiderhandlingen?
-<a id="what-is-the-difference-between-a-position-action-and-a-worker-action" class="xliff"></a>
+## <a name="what-is-the-difference-between-a-position-action-and-a-worker-action"></a>Hva er forskjellen mellom en stillingshandling og arbeiderhandlingen?
 Det er to typer personalhandlinger:
 
 - Stillingshandling – En stillingshandling utføres på eksisterende stillinger eller nye stillinger. En stillingshandling kan for eksempel være nødvendig hvis du endrer en verdi i en eksisterende stilling, eller hvis du oppretter en ny sesongstilling. Hvis du vil ha mer informasjon om hvordan du bruker stillingshandlinger, se Hovedoppgaver: eksisterende arbeiderstillinger eller Hovedoppgaver: nye Arbeiderstillinger.
 
 - Arbeiderhandling – En arbeiderhandling er utført på eksisterende ansatte eller nye ansatte. En arbeiderhandling kan for eksempel være nødvendig når en ny ansatt ansettes eller en eksisterende ansatt forfremmes. Hvis du vil ha mer informasjon om hvordan du bruker arbeiderhandlinger, kan du se Tilordne personalhandlinger til arbeidere.
 
-## Hva betyr statusene til personalhandlingene?
-<a id="what-do-the-statuses-of-the-personnel-actions-mean" class="xliff"></a>
+## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Hva betyr statusene til personalhandlingene?
 Personalhandlinger kan ha følgende status:
 
 - **Utkast** – Hvis arbeidsflyt brukes, vil handlingen ikke sendt. Hvis arbeidsflyt ikke brukes, er ikke handlingen fullført.
@@ -57,16 +53,13 @@ Personalhandlinger kan ha følgende status:
 - **Fullført**– Stillingen ble opprettet eller endret uten feil, eller den ansatt ble ansatt, overført eller avsluttet uten feil, eller har fått endret kompensasjon. Feil – Det oppstod et annet problem enn at informasjonen var utdatert. Åpne Meldingslogg for personalhandlinger for å finne årsaken til feilen.
 - **Avslått** – Handlingsforespørselen ble avvist av godkjenneren.
 
-## Kan jeg slette en personalhandling?
-<a id="can-i-delete-a-personnel-action" class="xliff"></a>
+## <a name="can-i-delete-a-personnel-action"></a>Kan jeg slette en personalhandling?
 Ja, du kan slette personalhandlinger som har statusen **Utkast**, **Feil**, **Mislykket** eller **Avbrutt**.
 
-## Hva er den raskeste metoden for å kontrollere statusen for en forespørsel om personalhandling?
-<a id="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request" class="xliff"></a>
+## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Hva er den raskeste metoden for å kontrollere statusen for en forespørsel om personalhandling?
 Åpne en av listesidene for personalehandling, og velg en personalehandling.
 
-## Hva gjør jeg hvis en forespørsel for personalhandling mislykkes?
-<a id="what-should-i-do-if-a-personnel-action-request-fails" class="xliff"></a>
+## <a name="what-should-i-do-if-a-personnel-action-request-fails"></a>Hva gjør jeg hvis en forespørsel for personalhandling mislykkes?
 Hvis en forespørsel om personalhandling mislykkes, følger du denne fremgangsmåten for å rette feilen og sende forespørselen på nytt:
 
 > 1. Klikk **Feiltekst**-knappen i **handlingsruten** for å vise meldingsteksten som beskriver problemet.
@@ -75,12 +68,10 @@ Hvis en forespørsel om personalhandling mislykkes, følger du denne fremgangsm�
 
 > 3. Rett opp feilen, og klikk deretter **Fullført** eller **Send inn**.
 
-## Hva skjer med en personalhandling som bruker arbeidsflyt når den endelige godkjenningen er fullført?
-<a id="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed" class="xliff"></a>
+## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Hva skjer med en personalhandling som bruker arbeidsflyt når den endelige godkjenningen er fullført?
 Hvis det ikke finnes feil, blir personalhandlingen skrivebeskyttet. (Du kan vise loggen i på listesiden **Alle arbeiderhandlinger**, men du kan ikke endre personalhandlingen.) Når statusen til en personalhandling er **fullført**, er stillingen eller arbeiderposten allerede oppdatert. Hvis du vil vise endringene som ble utført, åpner du listesiden **Stillinger** eller **Arbeidere**.
 
-## Hvorfor får jeg følgende feil når jeg angir en annen verdi enn null i Lønnssats-feltet? «Verdien er utenfor gyldig område – den må være mellom 0,00 og 0,00»
-<a id="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000" class="xliff"></a>
+## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Hvorfor får jeg følgende feil når jeg angir en annen verdi enn null i Lønnssats-feltet? «Verdien er utenfor gyldig område – den må være mellom 0,00 og 0,00»
 Du får denne meldingen fordi Nivå-feltet i Jobb-skjemaet er tomt for jobben som er tilknyttet den valgte stillingen.
 
 Hvis du vil løse dette problemet, gjør du følgende:
@@ -94,8 +85,7 @@ Hvis du vil løse dette problemet, gjør du følgende:
 > 7. Lukk stillingssiden.
 > 8. Gå tilbake til kategorien Kompensasjon på arbeidersiden, og velg Fast kompensasjon.  Velg Nny og angi den ansattes stilling i stillingsfeltet.  Angir en verdi i Plan-feltet, og angi deretter den ansattes kompensasjon i feltet Lønnssats.
 
-## Hvorfor kan jeg ikke endre gyldig dato i hodet i Arbeiderhandling-skjemaet?
-<a id="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form" class="xliff"></a>
+## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Hvorfor kan jeg ikke endre gyldig dato i hodet i Arbeiderhandling-skjemaet?
 Du kan ikke endre gyldighetsdatoen fordi feltet fylles ut med den mest logiske datoen for handlingstypen.
 
 For eksempel

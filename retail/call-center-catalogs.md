@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Telefonsenterkataloger
-<a id="call-center-catalogs" class="xliff"></a>
+# <a name="call-center-catalogs"></a>Telefonsenterkataloger
 
 [!include[banner](includes/banner.md)]
 

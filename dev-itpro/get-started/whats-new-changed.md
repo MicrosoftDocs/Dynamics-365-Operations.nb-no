@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hva er nytt eller endret?
-<a id="whats-new-or-changed" class="xliff"></a>
+# <a name="whats-new-or-changed"></a>Hva er nytt eller endret?
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de s
 
 Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, kan du se [Prosessen for å oppgradere til den nyeste versjonen](../migration-upgrade/upgrade-latest-update.md).
 
-## Programversjoner
-<a id="application-releases" class="xliff"></a>
+## <a name="application-releases"></a>Programversjoner
 
 Hvis du vil ha mer informasjon om mobile arbeidsområder og Power BI-innhold som er utgitt nylig, kan du se [Mobile arbeidsområder som nylig er lansert for Dynamics 365 for Finance and Operations-mobilappen](../mobile-apps/mobile-workspaces-released.md) og [Power BI-innhold nylig lansert for Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
 
@@ -89,8 +87,7 @@ Hvis du vil ha mer informasjon om mobile arbeidsområder og Power BI-innhold som
 </tbody>
 </table>
 
-## Plattformutgaver
-<a id="platform-releases" class="xliff"></a>
+## <a name="platform-releases"></a>Plattformutgaver
 
 <table>
 <colgroup>

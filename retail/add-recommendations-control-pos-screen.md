@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet
-<a id="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device" class="xliff"></a>
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på tra
 
 Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 for Retail. *Anbefalinger* er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett.
 
-## Åpne utforming av oppsett
-<a id="open-layout-designer" class="xliff"></a>
+## <a name="open-layout-designer"></a>Åpne utforming av oppsett
 1.  Gå til **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.
 2.  Bruk hurtigfilteret til å finne skjermen du vil legge til kontrollen på. Filtrer for eksempel i feltet **Skjermoppsett-ID** ved å bruke verdien "F2CP16:9M".
 3.  Finn og velg ønsket post i listen. Velg for eksempel "Navn: F2CP16:9M Skjermoppsett-ID: F2CP16:9M".
@@ -53,8 +51,7 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 -   Anbefalinger er alltid synlige.
 -   Kategorien **Anbefalinger** vises i rutenettet på høyre side av skjermen.
 
-#### Slik gjør du anbefalinger alltid synlige:
-<a id="to-make-recommendations-always-visible" class="xliff"></a>
+#### <a name="to-make-recommendations-always-visible"></a>Slik gjør du anbefalinger alltid synlige:
 
 1.  Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  På menyen til venstre drar og slipper du kontrollen for anbefalinger til mellom detaljområdet for transaksjonslinjer og knappegruppen nederst i midten på transaksjonsskjermen. Endre størrelse på kontrollen slik at den passer i dette området.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
@@ -63,8 +60,7 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 5.  Velg **1090, Kasser** i listen.
 6.  Klikk **Kjør nå**.
 
-#### Slik legger du til kategorien Anbefalinger i knappegruppen på høyre side av skjermen
-<a id="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen" class="xliff"></a>
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Slik legger du til kategorien Anbefalinger i knappegruppen på høyre side av skjermen
 
 1.  Høyreklikk i det tomme området under den siste kategorien i knappegruppen plassert på høyre side av siden.
 2.  Klikk **Tilpass**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
@@ -80,8 +76,7 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 12. Klikk **Kjør nå**.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Oversikt over personlige produktanbefalinger](personalized-product-recommendations.md)

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Initialisere utgangsverdidata i et nytt miljø for detaljhandel
-<a id="initialize-seed-data-in-a-new-retail-environment" class="xliff"></a>
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Initialisere utgangsverdidata i et nytt miljø for detaljhandel
 
 [!include[banner](includes/banner.md)]
 

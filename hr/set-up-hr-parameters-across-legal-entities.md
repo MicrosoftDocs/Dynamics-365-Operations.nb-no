@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Definere parametere for Personale på tvers av juridiske enheter
-<a id="set-up-hr-parameters-across-legal-entities" class="xliff"></a>
+# <a name="set-up-hr-parameters-across-legal-entities"></a>Definere parametere for Personale på tvers av juridiske enheter
 
 [!include[banner](includes/banner.md)]
 
@@ -39,12 +38,10 @@ Noen typer poster, for eksempel stillingsposter, deles på tvers av firmaer. Du 
 
 På siden **Delte parametere for personaladministrasjon** grupperes parameterne i områder, basert på deres funksjonalitet. 
 
-### Tidligere utgitt funksjonalitet
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Tidligere utgitt funksjonalitet
 I kategorien **Identifikasjon** må du velge identifikasjonstypene som representerer identifikasjonsnumrene som er oppført på siden. Du må definere identifikasjonstyper før du kan angi identifikasjonsopplysninger for arbeidere. Informasjonen om personnummer, nasjonale ID-nummer, fremmed ID-nummer og personlig ID-kode vedlikeholdes på siden **Identifikasjonstype**. Hvis du vil definere en ny ID-type eller gå gjennom listen over eksisterende typer, klikker du **Personaladministrasjon** &gt; **Koblinger** &gt; **Oppsett** &gt; **Identifikasjonstyper**. Du kan angi en enkelt kode og beskrivelse. 
 
-### Hvis du bruker Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Hvis du bruker Dynamics 365 for Talent
 I kategorien **Identifikasjon** må du velge identifikasjonstypene som representerer identifikasjonsnumrene som er oppført på siden. Du må definere identifikasjonstyper før du kan angi identifikasjonsopplysninger for arbeidere. Informasjonen om personnummer, nasjonale ID-nummer, fremmed ID-nummer og personlig ID-kode vedlikeholdes på siden **Identifikasjonstype**. Hvis du vil definere en ny ID-type eller gå gjennom listen over eksisterende typer, klikker du **Personale** &gt; **Oppsett** &gt; **Identifikasjonstyper**. Du kan angi en enkelt kode og beskrivelse. 
 
 I kategorien **Nummerserier** kan du velge nummerseriene som brukes for følgende poster: personalnummer, stilling, brukerforespørsels-ID, I-9-dokument, søker, diskusjon, fordel-ID og personalhandling (hvis denne posttypen er aktivert). Hvis du vil vedlikeholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier**. Hvis du vil finne denne siden, kan du bruke søkefunksjonen for sider. 
@@ -55,8 +52,7 @@ I kategorien **Stillinger** angi om nye stillinger er tilgjengelige for tilordni
 -   **Aldri** – Du kan ikke tilordne arbeidere til nye stillinger når stillinger opprettes. Hvis du velger dette alternativet, må du åpne siden **Stilling** for hver nye stilling etter hvert som de blir tilgjengelig, og deretter angi datoen for **Tilgjengelig for tilordning** i kategorien **Generelt** for å aktivere arbeidertilordning.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Definere firmaspesifikke parametere for Personale](set-up-company-specific-hr-parameters.md)

@@ -25,15 +25,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tilgjengelig Power BI-innhold
-<a id="power-bi-content-available" class="xliff"></a>
+# <a name="power-bi-content-available"></a>Tilgjengelig Power BI-innhold
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet viser Microsoft Power BI-innholdet som er tilgjengelig, og henviser til ressurser der du kan lære mer om det.
 
-## Oppdateringen for juli 2017 av Power BI-innhold for Dynamics 365 for Finance and Operations, Enterprise edition
-<a id="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Oppdateringen for juli 2017 av Power BI-innhold for Dynamics 365 for Finance and Operations, Enterprise edition
 Hvis du bruker oppdateringen for juli 2017 for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er følgende Power BI-innhold tilgjengelig:
 
 - [Power BI-innholdet Fordeler](benefits-power-bi.md)
@@ -55,19 +53,15 @@ Hvis du bruker oppdateringen for juli 2017 for Microsoft Dynamics 365 for Financ
 - [Lagerytelse-innhold for Power BI](warehouse-power-bi-content.md)
 - [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)  
 
-### Tilgang til innholdet
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Tilgang til innholdet
 
-#### Innebygd innhold
-<a id="embedded-content" class="xliff"></a>
+#### <a name="embedded-content"></a>Innebygd innhold
 Med unntak av innholdet som er merket med en stjerne (\*), er alt innhold i listen ovenfor innebygd i programmet. Hvis du vil vite mer om hvor du kan vise Power BI-innholdet, klikker du koblingene.
 
-#### Filer fra Lifecycle Services
-<a id="files-available-in-lifecycle-services" class="xliff"></a>
+#### <a name="files-available-in-lifecycle-services"></a>Filer fra Lifecycle Services
 Dette Power BI-innholdet er tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og kobler det til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
-## Power BI-innhold for Dynamics 365 for Operations versjon 1611
-<a id="power-bi-content-for-dynamics-365-for-operations-version-1611" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Power BI-innhold for Dynamics 365 for Operations versjon 1611
 Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er følgende Power BI-innhold tilgjengelig:
 
 - [Kompensasjon og fordeler-innhold for Power BI](compensation-and-benefits-analysis-power-bi-content-pack.md)   
@@ -84,20 +78,17 @@ Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1
 - [Lagerytelse-innhold for Power BI](warehouse-power-bi-content.md)
 - [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)  
 
-### Tilgang til innholdet
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Tilgang til innholdet
 Dette Power BI-innholdet er tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og kobler det til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
-## Power BI-innhold for Microsoft Dynamics AX
-<a id="power-bi-content-for-microsoft-dynamics-ax" class="xliff"></a>
+## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-innhold for Microsoft Dynamics AX
 Hvis du bruker oppdateringen for Microsoft Dynamics AX 7.0 eller Microsoft Dynamics AX 7.0.1, er følgende Power BI-innhold tilgjengelig:
 
 - [Kostnadsbehandling-innhold for Power BI](cost-management-content-pack.md)    
 - [Finansresultat-innhold for Power BI](financial-performance-power-bi-content-pack.md)
 - [Resultat for detaljhandelskanal for Power BI-innhold](retail-channel-performance-dashboard-power-bi-data.md) 
 
-### Tilgang til innholdet
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Tilgang til innholdet
 Dette Power BI-innholdet er tilgjengelig fra PowerBI.com.
 
 1. Logg på [PowerBI.com](https://www.powerbi.com/).
