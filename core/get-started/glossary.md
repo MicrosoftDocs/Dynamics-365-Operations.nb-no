@@ -1,37 +1,35 @@
 ---
-title: Ordliste for Dynamics 365 for Operations
-description: Ordlisten for Microsoft Dynamics 365 for Operations definerer viktige termer og begreper i Dynamics 365 for Operations-produktet.
+title: Finance and Operations-ordliste
+description: Denne ordlisten definerer viktige termer og begreper i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Ordliste for Dynamics 365 for Operations
+# <a name="finance-and-operations-glossary"></a>Finance and Operations-ordliste
 
 [!include[banner](../includes/banner.md)]
 
-
-Ordlisten for Microsoft Dynamics 365 for Operations definerer viktige termer og begreper i Dynamics 365 for Operations-produktet. 
+Denne ordlisten definerer viktige termer og begreper i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Et system for elektronisk pengeoverføring tilgjengelig i USA som muliggjør ove
 
 Målt antall som går inn i eller ut fra en aktivitet.
 
-###### <a name="address-verification-service"></a>**adresseverifiseringstjeneste**
+###### <a name="address-verification"></a>**adressebekreftelse**
 
 Tjenesten som tilbys av en kredittkortbehandler som validerer at faktureringsadressen fra en kortinnehaver stemmer overens med informasjonen til den utstedende banken.
-
-###### <a name="adjusted-unit-price"></a>**justert enhetspris**
-
-Den beregnede enhetsprisen basert på den attributtbaserte prissettingen og den faktiske styrken mottatt.
-
-###### <a name="advanced-pricing"></a>**avansert prissetting**
-
-Logikken som brukes til å beregne kjøpsprisen for en styrkevare.
 
 ###### <a name="aging"></a>**aldersfordeling**
 
@@ -101,14 +91,13 @@ Tidsperioden der du vil oppnå optimal kvalitet eller egenskap for et produkt.
 
 Et kildedokument som dokumenterer en ubetinget forespørsel til en tredjepart om å betale en andrepart på forespørsel.
 
-###### <a name="bill-of-materials"></a>**stykkliste**
-
-En liste over produkter og antallet av disse som trengs for å produsere ett produkt.
-
 ###### <a name="blocking"></a>**blokkering**
 
 Handlingen med å sette et dokument eller et produkt på vent.
 
+###### <a name="bom-bill-of-materials"></a>**Stykklister**
+
+En liste over produkter og antallet av disse som trengs for å produsere ett produkt.
 ###### <a name="budget-control"></a>**budsjettkontroll**
 
 En fremgangsmåte for å autorisere utgifter først når budsjettmidler kan reserveres for å oppfylle fremtidige betalingsforpliktelser.
@@ -175,14 +164,6 @@ En liste over hovedkontoer.
 
 En regnskapskategori som brukes til å summere de økonomiske konsekvensene av å produsere produkter og ha beholdning.
 
-###### <a name="commodity-pricing"></a>**artikkelprising**
-
-En prisstrategi for oppdatering av prisen på salgsvarer produsert fra artikler som er utsatt for hyppige prisendringer.
-
-###### <a name="consolidated-order"></a>**konsolidert ordre**
-
-Et kildedokument som dokumenterer mer enn én referansebestilling.
-
 ###### <a name="contractor"></a>**oppdragstaker**
 
 Rolle som brukes av en person som deltar i en oppdragstaker–arbeidsgiver-relasjon med en juridisk enhet.
@@ -194,10 +175,6 @@ En vare som produseres sammen med en annen vare.
 ###### <a name="cost-center"></a>**kostsenter**
 
 En driftsenhet der lederne er ansvarlige for budsjetterte og faktiske utgifter.
-
-###### <a name="cost-of-goods-sold"></a>**solgte varers kost**
-
-En regnskapskategori som brukes til å summere de økonomiske konsekvensene av å produsere produkter og ha beholdning.
 
 ###### <a name="cost-variance"></a>**kostnadsavvik**
 
@@ -223,7 +200,7 @@ Tiden det tar å fullføre en aktivitet.
 
 ###### <a name="dashboard"></a>**instrumentbord**
 
-Den vanlige startsiden i Dynamics 365 for Operations. På instrumentbordet ser brukerne en del for hvert arbeidsområde som de har tilgang til. Hver del viser flisene fra sammendragsdelene i det relaterte arbeidsområdet. Instrumentbordet består av et navn og inndelinger med fliser.
+Den vanlige startsiden i Finance and Operations. På instrumentbordet ser brukerne en del for hvert arbeidsområde som de har tilgang til. Hver del viser flisene fra sammendragsdelene i det relaterte arbeidsområdet. Instrumentbordet består av et navn og inndelinger med fliser.
 
 ###### <a name="data-entity"></a>**dataenhet**
 
@@ -260,10 +237,6 @@ En konfigurasjonsteknologi som brukes til å opprette produktvarianter ved å ve
 ###### <a name="distinct-product"></a>**spesifikt produkt**
 
 Et entydig identifiserbart produkt.
-
-###### <a name="document-blocking"></a>**dokumentblokkering**
-
-En metode for å sette en operasjonsprosess på vent mens bestilte varer er i en kvalitetssikringsprosess.
 
 ###### <a name="document-management-system"></a>**dokumentstyringssystem**
 
@@ -316,10 +289,6 @@ En valuta som har en fast valutakurs i forhold til en annen valuta.
 ###### <a name="fixed-quantity-kanban"></a>**Kanban med fast antall**
 
 En type Kanban som brukes når antall Kanbaner som er tilordnet til en Kanban-regel er konstant.
-
-###### <a name="flexible-authentication"></a>**fleksibel godkjenning**
-
-En godkjenningsprosess der brukere i ulike identitetsbehandlingssystemer kan godkjennes.
 
 ###### <a name="formula"></a>**formel**
 
@@ -379,10 +348,6 @@ Prosess eller overføringsaktivitet i en produksjonsflyt som utløses av en Kanb
 
 Uttaket av produktkomponenter fra lageret for å fullføre Kanban-produksjonsjobbene.
 
-###### <a name="kanban-product-quantity"></a>**Kanban-produktantall**
-
-Antall varebehov som ligger på en Kanban som er basert på en Kanban-regel.
-
 ###### <a name="kanban-rule"></a>**Kanban-regel**
 
 En regel i et system for lean manufacturing som realiserer policyer for materialplanlegging og etterfylling ved å kontrollere hvordan prosess- og overføringsaktiviteter koordineres i produksjonsflyter.
@@ -410,10 +375,6 @@ En alfanumerisk nøkkel som gir en part rett til å bruke programvare eller prog
 En parts evne til å bruke omsetningsaktiva til å utligne kortsiktig gjeld.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**indirekte kostnader i produksjonen basert på materiale**
-
-Indirekte kostnader i produksjonen uttrykkes som beregningsformler for indirekte kostnad for en tilleggsprosent. En kostgruppe som er tilordnet til materialkomponenter fungerer som grunnlag for en beregningsformel. Beregningsformler kan defineres for individuelle produkter eller varegrupper som tilordnes til produkter, for å gi mer fleksibilitet ved beregning av administrasjonskostnader i produksjonen som er basert på materiale.
 
 ###### <a name="master-scheduling"></a>**hovedplanlegging**
 
@@ -459,10 +420,6 @@ En pakke er en kompilerbar og distribuerbar enhet for én eller flere modeller.
 
 ###### <a name="party"></a>**part**
 
-En enhet som påtar seg en juridisk bindende rolle når den tar del i avtalefestede relasjoner.
-
-###### <a name="party"></a>**part**
-
 En person eller organisasjon som deltar i økonomiske aktiviteter.
 
 ###### <a name="pegging"></a>**utligning**
@@ -472,10 +429,6 @@ Prosessen med å spore antallet av en ønsket vare til kilden.
 ###### <a name="pegging-event"></a>**utligningshendelse**
 
 En ressursflythendelse som signaliserer behov for et produkt.
-
-###### <a name="phantom-item"></a>**fantomvare**
-
-En vare som er produsert, men ikke lagerført.
 
 ###### <a name="planned-intercompany-demand"></a>**planlagt konsernintern etterspørsel**
 
@@ -489,17 +442,9 @@ Registrere pengeverdien av en økonomisk hendelse i en bestemt konto eller å op
 
 Personen som oppretter et kildedokument for å starte en forespørsel om økonomiske ressurser.
 
-###### <a name="privilege"></a>**rettighet**
-
-Én eller flere tillatelser en bruker må ha for å utføre en oppgave.
-
 ###### <a name="procurement-catalog"></a>**innkjøpskatalog**
 
 En liste over produkttilbud som er gruppert etter innkjøpskategori. Innkjøpskatalogen brukes til å forespørre produkter til intern bruk av en organisasjon.
-
-###### <a name="product-component"></a>**produktkomponent**
-
-En del av et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimensjon**
 
@@ -507,7 +452,7 @@ Størrelse-, farge- eller konfigurasjonsproduktattributtene som brukes for dimen
 
 ###### <a name="product-family"></a>**produktfamilie**
 
-En unik gruppering av varer, tjenester eller rettigheter som deltar i samme produksjons- eller leveringsaktiviteter, eller som tilbys til de samme markedssegmentene. I Dynamics 365 for Operations er gruppering representert ved hjelp av en prognosetildelingsnøkkel.
+En unik gruppering av varer, tjenester eller rettigheter som deltar i samme produksjons- eller leveringsaktiviteter, eller som tilbys til de samme markedssegmentene. I Finance and Operations er gruppering representert ved hjelp av en prognosetildelingsnøkkel.
 
 ###### <a name="product-master"></a>**produktstandard**
 
@@ -581,11 +526,7 @@ En metode som brukes til å øke eller redusere prognosebehov i hovedplanlegging
 
 Et register som brukes til å registrere driftskonsekvensene og de juridiske og økonomiske konsekvensene av ressursflythendelser i et regnskapssystem.
 
-###### <a name="regulated-product"></a>**regulert produkt**
-
-Produkt som er reguleres av en myndighet som krever samsvar og rapportering om overholdelse og revisjon.
-
-###### <a name="rfq-request-for-quotation"></a>**tilbudsforespørsel**
+###### <a name="rfq-request-for-quotation"></a>**Tilbudsforespørsel**
 
 Et kildedokumentet som dokumenterer en invitasjon til å by på forsyning av et produktantall til en bestemt pris og innen en angitt dato.
 
@@ -593,9 +534,6 @@ Et kildedokumentet som dokumenterer en invitasjon til å by på forsyning av et 
 
 Personen som ber om de økonomiske ressursene.
 
-###### <a name="restricted-product"></a>**begrenset produkt**
-
-Produkt med distribusjon som er begrenset eller regulert av en offentlig myndighet.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Produktmengden som er dokumentert på en kildedokumentlinje som oppretter et utl
 
 Et estimat av fremtidig behov som opprettes ved å bruke en prognosealgoritme på historiske transaksjonsdata.
 
-###### <a name="supermarket"></a>**supermarked**
-
-En just-in-time-lagerlokasjon som har begrenset kapasitet, og brukes til å samle materiale nær et forbrukspunkt.
-
-###### <a name="system-defined-financial-dimension-type"></a>**systemdefinert finansdimensjonstype**
-
-En finansdimensjon som er tilordnet til en tabell eller visning i databasen som representerer en enhetstype, og som har verdier i domenet til ett attributt av den enhetstypen.
 
 ### <a name="t"></a>**T**
 
@@ -667,11 +598,11 @@ En kontrollert, veiledet opplevelse gjennom trinnene i et oppgaveopptak. En oppg
 
 ###### <a name="task-recorder"></a>**Oppgaveopptaker**
 
-Et verktøy som er forhåndsinstallert i Dynamics 365 for Operations. Under opptaket registreres alle hendelser som angis av brukeren i Dynamics 365 for Operations-brukergrensesnittet som blir utført mot serveren, inkludert verdier som blir lagt til, innstillinger som endres, data som fjernes og så videre.
+Et verktøy som er forhåndsinstallert i Finance and Operations. Under opptaket registreres alle hendelser som angis av brukeren i brukergrensesnittet i Finance and Operations som blir utført mot serveren, inkludert verdier som blir lagt til, innstillinger som endres, data som fjernes og så videre.
 
 ###### <a name="task-recording"></a>**Oppgaveopptak**
 
-En fil som inneholder handlinger og merknader som registreres når Oppgaveopptak kjøres i Microsoft Dynamics 365 for Operations.
+En fil som inneholder handlinger og merknader som registreres når Oppgaveopptak kjøres i Finance and Operations.
 
 ###### <a name="three-way-matching-policy"></a>**treveis kontrollpolicy**
 
@@ -684,12 +615,6 @@ Antallet til én eller flere varer som blir overført, eller som kan overføres.
 ###### <a name="two-way-matching-policy"></a>**toveis kontrollpolicy**
 
 En kontrollpolicy som krever at én eller flere leverandørfakturapriser samsvarer med én eller flere bestillingspriser.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**brukerdefinert finansdimensjonstype**
-
-En finansdimensjon som er tilordnet en brukerdefinert liste over verdier.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ En person som antar rollen som en ansatt eller en oppdragstaker og som betales m
 ###### <a name="workspace"></a>**arbeidsområde**
 
 En side som gir en oversikt over én av aktivitetene som brukeren utfører. Siden bruker fliser, lister og diagrammer til å vise ventende arbeid og tilknyttede data fra flere kilder, og siden viser ofte brukte oppgaver relatert til disse dataene. Fliser som vises i Sammendrag-delen i arbeidsområdet, vises også i den relaterte delen i instrumentbordet.
-
-
-
 
