@@ -26,8 +26,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Angi startsaldoer for lønn
-<a id="enter-payroll-beginning-balances" class="xliff"></a>
+# <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
 [!include[banner](../../includes/banner.md)]]
 
@@ -52,12 +51,10 @@ Følgende eksempel viser hvordan du kan angi startsaldoer for ansattes lønn, in
 > [!NOTE] 
 > Hvis du vil reprodusere de samme trinnene nedenfor, kan du bruke demodataene. Demodataene kan lastes ned i PartnerSource
 
-### A. Slik konfigurerer du inntektskoder som skal brukes på startsaldoer for lønn
-<a id="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances" class="xliff"></a>
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Slik konfigurerer du inntektskoder som skal brukes på startsaldoer for lønn
 Når du angir startssaldoer for lønn, må du kontrollere at inntektskodene som du vil bruke, er konfigurert med alternativet "Tillat redigering av inntektsoppgavesatser". Dermed kan du taste beløpet fra det gamle systemet manuelt. 
 
-### B. Opprette inntektsoppgaver for en ansatt med en startsaldo
-<a id="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance" class="xliff"></a>
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Opprette inntektsoppgaver for en ansatt med en startsaldo
 Dette trinnet oppretter manuelt en inntektsoppgave for hver arbeider for den siste lønnsperioden av det gamle systemet, noe som oppretter inntektsoppgavelinjene i det nye lønnssystemet. Angi én linje per inntektskode og år-til-dato-beløp og timer. Eksempeltrinnene er som følger:
 
 1. Åpne **Alle inntektsoppgaver**-siden og klikk **Ny**.  
@@ -121,12 +118,10 @@ Linje 3: kategorien **Linje i inntektsoppgave**
 
 Klikk **OK** og lukk **Infolog**.
 
-#### Hvorfor må avmerkingsboksen Deaktiver regnskap være aktivert ved generering av lønnsoppgaver?
-<a id="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements" class="xliff"></a>
+#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Hvorfor må avmerkingsboksen Deaktiver regnskap være aktivert ved generering av lønnsoppgaver?
 Dette gjør at alle linjene i lønnsoppgaven ikke blir distribuert og postert til økonomimodulen. Du vil ikke postere denne åpningssaldoens lønnsoppgave ettersom verdiene allerede er i økonomimodulen fra det gamle systemet. Denne lastingen av saldo brukes bare til rapportering og begrensning.
 
-### C. Opprette lønnsoppgaver for ansatte
-<a id="c-create-pay-statements-for-employees" class="xliff"></a>
+### <a name="c-create-pay-statements-for-employees"></a>C. Opprette lønnsoppgaver for ansatte
 Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at lønnsoppgavene gjenspeile lønnsdataene riktig. Du må også oppdatere informasjon om fordeler og avgifter manuelt for å samsvare med verdiene i det forrige lønningssystemet. Når du har bekreftet at beløpene fra forrige lønningssystem svarer til beløpene på de gjeldende lønnsoppgavene, må du fullføre lønnsoppgavene.
 
 1. Åpne siden **Alle lønnsoppgaver**.
@@ -180,8 +175,7 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
 
 Den samme prosessen kan utføres kvartalsvis om nødvendig for alle tidligere kvartaler i hvert år. Dette er bare nødvendig hvis kunden skal vise dataene kvartalsvis uten å gå tilbake til det gamle systemet.
 
-## Hvis du gjør en feil når du angir startsaldoer for en ansatt
-<a id="if-you-make-a-mistake-entering-beginning-balances-for-an-employee" class="xliff"></a>
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Hvis du gjør en feil når du angir startsaldoer for en ansatt
 Det er mulig å tilbakeføre, og skrive inn transaksjoner på nytt. Hvis du vil tilbakeføre transaksjonen, trenger du bare å fullføre følgende trinn på siden **Alle lønnsoppgaver**.
 
 1. Klikk **Tilbakefør**.

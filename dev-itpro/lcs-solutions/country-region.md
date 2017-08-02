@@ -14,14 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
+ms.translationtype: HT
+ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
+ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ Microsoft Dynamics 365 for Finance and Operations inkluderer funksjonalitet for 
 Dette emnet inneholder lister over ressurser som kan hjelpe deg å finne ut mer om lands-/områdespesifikk funksjonalitet. 
 
 ## <a name="developing-localized-solutions"></a>Utvikle lokaliserte løsninger
-Følgende ressurser gir veiledning og informasjon som kan hjelpe utviklere og uavhengige programvareleverandører som oppretter lands-/områdespesifikke tilpassinger, eller som har opprettet en løsning for et land som Microsoft ikke støtter.
+Følgende ressurser gir veiledning og informasjon som kan hjelpe utviklere og uavhengige programvareleverandører som oppretter lands-/områdespesifikke tilpassinger, eller som oppretter en løsning for et land som Microsoft ikke støtter.
 -   [Atskilte lokaliseringsmodeller](separate-localization-models.md)
 -   [Bruke lands-/områdekontekst](apply-country-context.md)
 -   [Forskriftsmessige sertifiseringer](regulatory-certifications.md)

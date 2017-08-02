@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kvitteringsmaler og utskrift
-<a id="receipt-templates-and-printing" class="xliff"></a>
+# <a name="receipt-templates-and-printing"></a>Kvitteringsmaler og utskrift
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
 
 **Viktig!** Du må konfigurere skjemaoppsett og kvitteringsprofiler for å skrive ut kvitteringer og andre dokumenter fra moderne salgssted for detaljhandel og skysalgssted. Du kan inkludere flere skjemaoppsett i en kvitteringsprofil. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
 
-## Konfigurere en kvitteringsprofil
-<a id="set-up-a-receipt-format" class="xliff"></a>
+## <a name="set-up-a-receipt-format"></a>Konfigurere en kvitteringsprofil
 1.  Klikk på **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
 2.  På siden **Kvitteringsformat** klikker du **Ny** for å opprette et nytt skjemaoppsett, eller velger et eksisterende skjemaoppsett.
 3.  I **Kvitteringsformat**-feltet skriver du inn en ID for skjemaoppsettet, og deretter velger du kvitteringstypen som oppsettet brukes for. Du kan også skrive inn en beskrivelse og et kort navn for kvitteringen i **Tittel**-feltet.
@@ -49,8 +47,7 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
     -   **Spør bruker** – Brukeren blir spurt om å skrive ut kvitteringen.
     -   **Etter behov** – Dette alternativet brukes bare for gavekvitteringer. Når dette alternativet er valgt, kan brukeren skrive ut en gavekvittering fra siden **Endre**, hvis en gavekvittering er nødvendig.
 
-## Utforme et kvitteringsformat
-<a id="design-a-receipt-format" class="xliff"></a>
+## <a name="design-a-receipt-format"></a>Utforme et kvitteringsformat
 Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokumentet. Siden **Utforming av kvitteringsformat** består av tre deler: **hode**, **linjer** og **bunntekst**. Noen typer skjemaoppsett bruker elementer fra alle tre delene, mens andre typer bruker elementer fra bare én eller to deler. Hvis du vil vise elementene som er tilgjengelige for hver del, klikker du den aktuelle knappen i navigasjonsruten til venstre på siden.
 
 1.  Klikk på **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
@@ -70,8 +67,7 @@ Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokum
     -   **Skriftstørrelse** – Sett skriftstørrelsen til **Vanlig** eller **Stor**. Store bokstaver er to ganger høyere enn vanlige bokstaver. Bruk av store bokstaver kan derfor føre til overlappende tekst i kvitteringen.
     -   **Slett** – Klikk denne knappen for å fjerne den valgte delen fra skjemaoppsettet.
 
-## Tilordne kvitteringsprofiler
-<a id="assign-receipt-profiles" class="xliff"></a>
+## <a name="assign-receipt-profiles"></a>Tilordne kvitteringsprofiler
 Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 1.  Åpne maskinvareprofilen ved å klikke på **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofil**.

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oppsett av kredittkort, autorisasjon og registrering
-<a id="credit-card-setup-authorization-and-capture" class="xliff"></a>
+# <a name="credit-card-setup-authorization-and-capture"></a>Oppsett av kredittkort, autorisasjon og registrering
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ ms.lasthandoff: 06/13/2017
 
 Denne artikkelen gir en oversikt over kredittkortautorisering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den inneholder informasjon om å sette opp en betalingstjeneste, legge til et kredittkort til en salgsordre og annullere en autorisering.
 
-Konfigurere kredittkortbetalingstjenesten
-<a id="setting-up-the-credit-card-payment-service" class="xliff"></a>
+<a name="setting-up-the-credit-card-payment-service"></a>Konfigurere kredittkortbetalingstjenesten
 ------------------------------------------
 
 Hvis du vil bruke kredittkort, må du definere og aktivere en betalingstjeneste på siden Betalingstjenester. En betalingstjeneste fungerer som et bindeledd mellom den juridiske enheten og banken som behandler kundens kredittkortbelastninger. Du må kontakte en kredittkortleverandør som er oppført i feltet Betalingskobling og sette opp en konto hos denne leverandøren. Deretter må du definere de andre alternativene på siden Betalingstjenester, definere kredittkorttyper for American Express, Discover, MasterCard og Discover på siden Kredittkorttyper, og aktivere leverandøren som standardleverandøren. Du må også følge disse trinnene for å fullføre oppsettet:
@@ -46,8 +44,7 @@ Hvis du vil bruke kredittkort, må du definere og aktivere en betalingstjeneste 
 -   På siden Betalingsbetingelser defineres betalingsbetingelsene for kredittkort. Velg Kredittkort i Betalingstype-feltet.
 -   Angi kredittkortinformasjonen for kunder på siden Kundekredittkort.
 
-## Legge til et nytt kredittkort
-<a id="adding-a-new-credit-card" class="xliff"></a>
+## <a name="adding-a-new-credit-card"></a>Legge til et nytt kredittkort
 Du kan opprette nye kredittkortoppføringer på Kunder-siden ved hjelp av Kunde, Oppsett, Kredittkort. Du kan også opprette kredittkortposter når du registrerer salgsordrer på siden Salgsordre ved hjelp av Behandle, Kunde, Kredittkort, Registrer.
 Legge til et kredittkort i en salgsordre
 -------------------------------------
@@ -58,13 +55,11 @@ Autorisere et kredittkort
 
 Når et kredittkort autoriseres, verifiseres kredittkortnummeret og kredittkortinnehaverens navn, og tilgjengelig kredittkortsaldo kontrolleres. Du kan også autorisere verdien for kortbekreftelse og kortinnehaverens adresse. Deretter trekkes fakturabeløpet fra kundens tilgjengelige kredittkortsaldo. Betalingstjenesten sender informasjon som angir om kredittkortet er godkjent eller ikke. Når salgsordren faktureres, belastes kredittkortet med fakturabeløpet.
 
-### Verdi for kortbekreftelse
-<a id="card-verification-value" class="xliff"></a>
+### <a name="card-verification-value"></a>Verdi for kortbekreftelse
 
 Du kan kreve verdi for kortbekreftelse, som noen ganger kalles kortets sikkerhetskode. Dette er en firesifret verdi for American Express. Discover, MasterCard og Visa har en tresifret verdi.
 
-### Adressebekreftelse
-<a id="address-verification" class="xliff"></a>
+### <a name="address-verification"></a>Adressebekreftelse
 
 Informasjon om adressebekreftelse sendes alltid til betalingsleverandøren. Du kan bestemme hvor mye informasjon som er nødvendig for at en transaksjon skal godtas. Husk å ta kontakt med leverandøren din for å finne ut om de godtar denne informasjonen. Her er alternativene for adressebekreftelse:
 -   **Alltid godta transaksjon** – godta transaksjonen uavhengig av resultatet av adressebekreftelse.
@@ -72,19 +67,16 @@ Informasjon om adressebekreftelse sendes alltid til betalingsleverandøren. Du k
 -   **Faktureringsadresse** – sammenlign kortinnehaverens navn og faktureringsadresse fra transaksjonen med kredittkortfirmaets informasjon.
 -   **Postnummer for fakturering** – sammenlign kortholderen navn, faktureringsadresse og postnummer fra transaksjonen med kredittkortfirmaets informasjon.
 
-## Datastøtte
-<a id="data-support" class="xliff"></a>
+## <a name="data-support"></a>Datastøtte
 For hver kredittkorttype som støttes, kan du angi nivået for datastøtte. Nivået kontrollerer hvor mye informasjon om en transaksjon som overføres til betalingstjenesten. Husk å ta kontakt med leverandøren din for å finne ut om de kan gi denne informasjonen. Her er alternativene for nivå for datastøtte:
 -   **Nivå 1** – overfør transaksjonsdatoen, transaksjonsbeløpet og beskrivelsen.
 -   **Nivå 2** – overfør all informasjon på nivå 1, pluss leverings-og forhandleradresser og avgiftsinformasjon.
 -   **Nivå 3** – overfør all nivå 2-informasjon, pluss ordrelinjeinformasjon.
 
-## Delbetalinger
-<a id="partial-payments" class="xliff"></a>
+## <a name="partial-payments"></a>Delbetalinger
 Hvis du sender en del av en ordre, registreres beløpet for den delvise ordren, og autorisasjonen, som var for beløpet for hele ordren, lukkes. En ny godkjenning sendes deretter for det gjenstående beløpet for ordren som ikke er levert.
 
-## Annullere en autorisasjon 
-<a id="voiding-an-authorization" class="xliff"></a>
+## <a name="voiding-an-authorization"></a>Annullere en autorisasjon 
 Hvis du vil annullere en kredittkortautorisasjon, kan du endre betalingsmåten til en annen metode som ikke har en type kredittkort
 
 

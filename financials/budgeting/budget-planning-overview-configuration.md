@@ -26,24 +26,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Oversikt over budsjettplanlegging
-<a id="budget-planning-overview" class="xliff"></a>
+# <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen introduserer budsjettplanlegging og inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 
-Oversikt over budsjettplanlegging
-<a id="overview-of-budget-planning" class="xliff"></a>
+<a name="overview-of-budget-planning"></a>Oversikt over budsjettplanlegging
 ---------------------------
 
 Du utfører budsjettplanlegging når du klargjør budsjettene som en organisasjon skal implementere. En organisasjon kan konfigurere budsjettplanlegging, og deretter konfigurere budsjettplanleggingsprosesser for å oppfylle sine policyer, prosedyrer og krav til klargjøring av budsjett. 
 
 Når du forstår konseptene og terminologien som brukes i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er det enklere for deg å implementere budsjettplanlegging i organisasjonen.
 
-### Viktige termer
-<a id="key-terms" class="xliff"></a>
+### <a name="key-terms"></a>Viktige termer
 
 -   **Budsjettplanleggingsprosesser** –Budsjettplanleggingsprosesser fastsetter hvordan budsjettplaner kan oppdateres, rutes, vurderes og godkjennes i budsjetteringsorganisasjonshierarkiet. En budsjettplanleggingsprosess er koblet til en budsjettsyklus og en organisasjon via en juridisk enhet.
 -   **Budsjettplaner** – Budsjettplaner inneholder budsjettdataene for en budsjettsyklus. Du kan ha flere budsjettplaner som brukes til ulike formål. Budsjettplaner kan for eksempel brukes til å opprette budsjettbeløp for ulike organisasjonsenheter eller de kan bidra til å utføre sammenligninger og ta veloverveide beslutninger.
@@ -53,8 +50,7 @@ Når du forstår konseptene og terminologien som brukes i Microsoft Dynamics 365
 
 [![Budsjettplanleggingsterminologi](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
-### Vanlige oppgaver
-<a id="common-tasks" class="xliff"></a>
+### <a name="common-tasks"></a>Vanlige oppgaver
 
 Du kan bruke budsjettplanlegging til å utføre følgende oppgaver:
 
@@ -65,12 +61,10 @@ Du kan bruke budsjettplanlegging til å utføre følgende oppgaver:
 
 Budsjettplanlegging er integrert med andre Microsoft Dynamics 365 for Finance and Operations-moduler. Du kan derfor hente inn informasjon fra tidligere budsjetter, faktiske utgifter, anleggsmidler og personaladministrasjon. Siden budsjettplanlegging også er integrert med Microsoft Excel og Microsoft Word, kan du bruke disse programmene til å arbeide med budsjettplanleggingsdata. En budsjettansvarlig kan for eksempel eksportere en avdelings budsjettforespørsel fra et budsjettplanscenario til et Excel-regneark. Dataene kan analyseres, oppdateres og legges i diagram i regnearket, og publiseres deretter tilbake til budsjettplanlinjene.
 
-## Konfigurere budsjettplanlegging
-<a id="configuring-budget-planning" class="xliff"></a>
+## <a name="configuring-budget-planning"></a>Konfigurere budsjettplanlegging
 Siden **Budsjettplanleggingskonfigurasjon** inneholder de fleste innstillingene som kreves for å konfigurere budsjettplanlegging. Avsnittene nedenfor beskriver noen viktige faktorer du bør vurdere når du konfigurerer budsjettplanlegging. Når du har fullført konfigurasjonen, kan du konfigurere budsjettplanleggingsprosesser.
 
-### Opprette et budsjettplanleggingsskjema
-<a id="create-a-budget-planning-schema" class="xliff"></a>
+### <a name="create-a-budget-planning-schema"></a>Opprette et budsjettplanleggingsskjema
 
 Et valgfritt men anbefalt første trinn, er å opprette et skjema som viser organisasjonens fremgangsmåte for å formulere et budsjett. Du kan bruke en valgfri metode for å opprette dette skjemaet. Illustrasjonen nedenfor viser et generelt eksempel, der separate arbeidsflyter for budsjettplanlegging er opprettet for forskjellige nivåer i organisasjonen. Stadier defineres innenfor hver arbeidsflyt, og bestemte scenarier tilordnes hvert stadium for å inneholde budsjettdataene. Oppgaver utføres for å flytte dataene fra ett stadium til det neste. Beløp kan for eksempel tildeles eller samles til ulike kontoer, godkjenninger eller andre gjennomganger. I dette eksemplet angir kursiv et scenario som ikke kan redigeres i løpet av stadiet, eller data som er historisk eller har blitt godkjent på et tidligere stadium og derfor ikke bør endres. 
 
@@ -80,20 +74,17 @@ I eksemplet nedenfor beregner firmaets hovedkontor beløpene for opprinnelig bud
 
 [![Eksempel på budsjettplanleggingsskjema](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
-###  Organisasjonshierarki for budsjettplanlegging
-<a id="organization-hierarchy-for-budget-planning" class="xliff"></a>
+###  <a name="organization-hierarchy-for-budget-planning"></a>Organisasjonshierarki for budsjettplanlegging
 
 På siden **Organisasjonshierarki** kan du angi et organisasjonshierarki som en budsjettplanleggingshierarki for hver budsjettplanleggingsprosess. Budsjettplanleggingshierarkiet trenger ikke samsvarer med standard organisasjonshierarki som brukes til andre formål. Siden dette hierarkiet brukes til å samle og distribuere data, vil du kanskje det har en annen struktur. I eksempelskjemaet er salgsavdelingen under et hovedkontornivå som inkluderer budsjettet- og økonomiavdeling. Denne strukturen avviker sannsynlig fra strukturen som brukes til å administrere driften for salgsavdelingene. Bare ett organisasjonshierarki kan tilordnes hver budsjettplanleggingsprosess. 
 
 Hvis du vil ha mer informasjon, kan du se [Organisasjoner og organisasjonshierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
-### Brukersikkerhet
-<a id="user-security" class="xliff"></a>
+### <a name="user-security"></a>Brukersikkerhet
 
 Budsjettplanlegging kan følge én av to sikkerhetsmodeller for å definere brukertillatelser. Hvis du vil angi sikkerhetsmodellen, kan du angi en budsjettplanleggingsparameter på siden **Budsjettplanleggingskonfigurasjon**.
 
-### Arbeidsflytstadier for budsjettplanlegging
-<a id="budget-planning-workflows-stages" class="xliff"></a>
+### <a name="budget-planning-workflows-stages"></a>Arbeidsflytstadier for budsjettplanlegging
 
 Arbeidsflyter for budsjettplanlegging brukes sammen med budsjetteringsarbeidsflyter for å administrere opprettingen og utviklingen av budsjettplaner.
 
@@ -111,8 +102,7 @@ Arbeidsflyten inneholder elementer for tilordning til salgsavdelinger og samling
 
 Du tilordner arbeidsflyten for budsjettering til hver arbeidsflyt for budsjettplanlegging i inndelingen **Arbeidsflytstadier** på siden **Budsjettplanleggingskonfigurasjon**.
 
-### Parametere, scenarier og stadier
-<a id="parameters-scenarios-and-stages" class="xliff"></a>
+### <a name="parameters-scenarios-and-stages"></a>Parametere, scenarier og stadier
 
 De innledende innstillingene på siden **Budsjettplanleggingskonfigurasjon** lar deg opprette noen byggeblokker for senere konfigurasjonstrinn:
 
@@ -120,8 +110,7 @@ De innledende innstillingene på siden **Budsjettplanleggingskonfigurasjon** lar
 -   **Scenarier** – Scenarier omfatter datakategoriene du vil bruke for budsjettplanene. Du kan definere budsjettplanscenarioer for å støtte monetære og andre måleenhetsklasser, for eksempel antall. I en budsjettplan, representerer scenarier én versjon av dataene for budsjettplanlegging. Eksempler på pengemessige budsjettplanscenarioer omfatter salg i foregående år og signerte kontrakter. Eksempler på scenarier som bruker antall, omfatter antall salgssamtaler og telling av fulltidsekvivalent (FTE).
 -   **Stadier** – Stadier definer trinnene som en budsjettplan følger, fra start til endelig godkjenning. Eksempler på budsjettplanleggingsstadier omfatter opprulling for hovedkontor, gjennomgang av økonomisjef og endelig godkjenning.
 
-### Fordelingsplaner
-<a id="allocation-schedules" class="xliff"></a>
+### <a name="allocation-schedules"></a>Fordelingsplaner
 
 I budsjettplanlegging kan du tilordne beløpene eller antallene i budsjettplanlinjer fra én scenario et annet scenario, eller til samme scenario. Du kan for eksempel tildele til samme scenario hvis du vil bruke endringene for finansdimensjonene eller datoene for beløpene i dette scenariet. En tildeling gjøres i en budsjettplan eller fra én budsjettplan til en annen. 
 
@@ -134,8 +123,7 @@ Tildelingsplaner tildeler budsjettplanlinjer automatisk under arbeidsflytbehandl
 -   **Bruk finansfordelingsregler** – Budsjettplanlinjene distribueres fra kildebudsjettplanscenariet i til målbudsjettplanscenariet basert på den valgte finansfordelingsregelen.
 -   **Kopier fra budsjettplan** – Du kan velge en annen budsjettplan som skal brukes som kilde for tildelingen.
 
-### Stadiefordelinger
-<a id="stage-allocations" class="xliff"></a>
+### <a name="stage-allocations"></a>Stadiefordelinger
 
 Stadiefordelinger brukes til å tildele budsjettplanlinjer automatisk under arbeidsflytbehandling. Når stadiefordelinger brukes, kan budsjettplanlinjer i målscenariet opprettes og endres uten tilsyn av budsjettplanklargjøreren eller kontrolløren.
 
@@ -149,13 +137,11 @@ I eksempelskjemaet utføres i tillegg en aggregering fra budsjettplaner og scena
 
 [![Samling](./media/aggregation-109x300.png)](./media/aggregation.png)
 
-### Prioriteter
-<a id="priorities" class="xliff"></a>
+### <a name="priorities"></a>Prioriteter
 
 Du kan eventuelt bruke budsjettplanprioritetene til å definere kategorier og målsettinger for budsjettplanene som er konfigurert. Du kan også bruke prioriteter til å organisere, klassifisere og evaluere flere budsjettplaner. Du kan for eksempel opprette en budsjettplanleggingsprioritet for helse og sikkerhet, og deretter evaluere budsjettplaner som er tilordnet den prioriteringen. Du kan også tilordne et nummer for å rangere budsjettplaner på tvers av alle budsjettplaner.
 
-### Kolonner og oppsett
-<a id="columns-and-layouts" class="xliff"></a>
+### <a name="columns-and-layouts"></a>Kolonner og oppsett
 
 Budsjettall vises på en budsjettplan i rader og kolonner. Du må først definere kolonnene, og deretter kan du opprette et oppsett for å definere presentasjonen av kolonnene. 
 
@@ -171,8 +157,7 @@ For eksempelskjemaet kan det hende du vil opprette kolonner for PY-salgs-, kontr
 
 Du kan også angi om hvert oppsettelement (kolonne) kan redigeres, og om de er tilgjengelige i alle regnearkmaler som opprettes for dette oppsettet. I oppsettet som brukes for estimatstadiet i eksempelskjemaet, kan prognosekolonnene redigeres, mens kolonnene for PY-salg og kontrakter.
 
-### Maler
-<a id="templates" class="xliff"></a>
+### <a name="templates"></a>Maler
 
 I **Oppsett**-delen av siden **Budsjettplanleggingskonfigurasjon** kan du også generere, vise eller laste opp Excel-maler. Disse malene er arbeidsbøkene som er knyttet til hver budsjettplanen for å gi tilgang til flere funksjoner for analyse, diagrammer og dataregistrering. 
 
@@ -181,13 +166,11 @@ Du kan generere, vise eller laste opp en mal for hvert oppsett. Når det generer
 > [!NOTE] 
 > Malen må lagres til en plassering som brukeren har tilgang til, slik at den kan lastes opp i oppsettet når redigering er fullført. Da brukes malen med budsjettplaner som bruker oppsettet.
 
-### Beskrivelser
-<a id="descriptions" class="xliff"></a>
+### <a name="descriptions"></a>Beskrivelser
 
 Beskrivelsene som du kan tilordne i delen **Oppsett**, brukes til å vise navnet på en finansdimensjon som er inkludert i et oppsett. En organisasjon vil for eksempel kanskje vise hovedkontonavnet ved siden av hovedkontonummeret i en budsjettplan, men vil kanskje utelate navnene på andre finansdimensjoner for å unngå en uoversiktlig visning.
 
-## Definere budsjettplanleggingsprosesser
-<a id="setting-up-budget-planning-processes" class="xliff"></a>
+## <a name="setting-up-budget-planning-processes"></a>Definere budsjettplanleggingsprosesser
 
 Når du er ferdig med å konfigurere budsjettplanlegging, kan du definere budsjettplanleggingsprosesser på siden **Budsjettplanleggingsprosess**. Budsjettplanleggingsprosesser er sett med regler som fastsetter hvordan budsjettplaner kan oppdateres, rutes, vurderes og godkjennes i budsjetteringsorganisasjonshierarkiet. 
 

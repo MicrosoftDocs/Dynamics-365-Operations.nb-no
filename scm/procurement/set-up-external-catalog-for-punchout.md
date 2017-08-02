@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definere en ekstern katalog for PunchOut eProcurement
-<a id="set-up-an-external-catalog-for-punchout-eprocurement" class="xliff"></a>
+# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
 
 Ved hjelp av den eksterne katalogen, kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Dynamics 365 for Finance and Operations, Enterprise edition juli 2017, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
 
@@ -35,13 +34,11 @@ Når den eksterne katalogen er definert og en ansatt forbereder en rekvisisjon, 
 
 Hvis du vil opprette kommunikasjonen, må leverandøren gi deg informasjon til bruk i konfigurasjonen avl den eksterne katalogen, for eksempel identitet, domenet til kjøperens firma, for eksempel "DUNS" og "DUNS-nummer" legitimasjon og URL-adressen leverandørens katalog ligger på.
 
-## Definere en ekstern katalog
-<a id="setting-up-an-external-catalog" class="xliff"></a>
+## <a name="setting-up-an-external-catalog"></a>Definere en ekstern katalog
 
 Den eksterne katalogen skal kunne omdirigere en ansatt som legger inn en innkjøpsrekvisisjon, til et eksternt område for å velge produkter. Produktene som de ansatte velger fra den eksterne katalogen, returneres til Dynamics 365 for Finance and Operations med oppdatert prisinformasjon, og herfra kan de legges til i innkjøpsrekvisisjonen. Hensikten er ikke å la ansatte å bestille på det eksterne området. Når du setter opp den eksterne katalogen, må du å være sikker på at formålet med området den eksterne katalogen har tilgang til, er å innhente tilbudsinformasjon og ikke å foreta en ekte bestilling.
 
-### Fullfør følgende oppgaver hvis du vil definere en ekstern levernadørkatalog:
-<a id="to-set-up-an-external-vendor-catalog-complete-the-following-tasks" class="xliff"></a>
+### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Fullfør følgende oppgaver hvis du vil definere en ekstern levernadørkatalog:
 
 1. Definer et innkjøpskategorihierarki. Hvis du vil ha mer informasjo, kan du se [Definere policyer for innkjøpskategori](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
 2. Registrer leverandøren i Finance and Operations. Før du kan definerer konfigurarsjoner for tilgang til en ekstern leverandørs katalog, må du definere leverandøren og leverandørkontakten i Microsoft Dynamics 365. Den eksterne katalogens leverandør må også legges til den valgte innkjøpskatagorien. Hvis du vil ha mer informasjon om hvordan du registrerer leverandører i Microsoft Dynamics 365, kan du se [Administrere brukere av leverandørsamarbeid](/procurement/manage-vendor-collaboration-users.md). Hvis du vil ha informasjon om hvordan du tilordner leverandører til en innkjøpskategori, se [Godkjenne leverandører for spesifikke innkjøpskategorier](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
@@ -51,8 +48,7 @@ Den eksterne katalogen skal kunne omdirigere en ansatt som legger inn en innkjø
 6. Aktivere den eksterne katalogen ved hjelp av **Aktiver katalog**-knappen på **eksterne kataloger**-siden. Den eksterne katalogen må aktiveres før ansatte kan bruke den. Du kan deaktivere den eksterne katalogen når som helst.
 
 
-## (4) Konfigurere den eksterne leverandørkatalogen
-<a id="4-configure-the-external-vendor-catalog" class="xliff"></a>
+## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurere den eksterne leverandørkatalogen
 
 Denne delen gir mer informasjon om oppgave 4 i forrige del.
 
@@ -68,8 +64,7 @@ Innkjøpspolicyer brukes til å tillate eller begrense tilgangen til kategorier 
 
 Du kan når som helst du laste den systemgenererte meldingsmalen på nytt ved å klikke **Gjenopprett meldingsformatet**. Legg merke til at hvis du gjenoppretter meldingsformatet, erstattes den gjeldende meldingen med det automatisk genererte meldingsformatet, som har tomme koder.
 
-### cXML-oppsettmelding
-<a id="cxml-setup-message" class="xliff"></a>
+### <a name="cxml-setup-message"></a>cXML-oppsettmelding
 Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 
 | Felt | beskrivelse | 
@@ -84,15 +79,13 @@ Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 |< Request deploymentMode=”” >|Test- eller produksjonsdistribusjonen.|
 |< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL-adressen til sluttpunktet for leverandørens eksterne katalog.|
 
-### Eksterne elementer
-<a id="extrinsic-elements" class="xliff"></a>
+### <a name="extrinsic-elements"></a>Eksterne elementer
 
 Et eksternt element er tilleggsinformasjon, for eksempel et brukernavn som er basert på en bruker som stempler ut. Det eksterne elementet angis når punchout forekommer, og det kan sendes i oppsettforespørselsmeldingen.
 Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **meldingsformat**-delen av **ekstern katalog**-siden. Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
 Hvis du vil ha mer informasjon om cXML-protokollen, se: http://cxml.org/
 
-## Tilbakemelding
-<a id="post-back-message" class="xliff"></a>
+## <a name="post-back-message"></a>Tilbakemelding
 Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker ut fra det eksterne området og går tilbake til Finance and Operations. Tilbakemeldinger kan ikke konfigureres. Meldingene er basert på definisjonen i cXML-protokollen. Her er informasjonen som kan være en del av tilbakemeldingen som mottas på en rekvisisjonslinje:
 
 | Melding som mottas fra leverandøren | Kopiert til en rekvisisjonslinje i Finance and Operations|
@@ -107,8 +100,7 @@ Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker
 |< ItemDetail >< Classification >< /Classification >|Inkludert i varebeskrivelsen|
 |< ItemDetail >< Classification domain=”” >|Inkludert i varebeskrivelsen|
 
-## Slette en ekstern katalog
-<a id="delete-an-external-catalog" class="xliff"></a>
+## <a name="delete-an-external-catalog"></a>Slette en ekstern katalog
 Slett en ekstern katalog med slettehandlingen på siden.
 
 Hvis et produkt fra den eksterne leverandørkatalogen er forespurt, kan den eksterne leverandørkatalogen ikke slettes. I stedet settes den eksterne leverandørkatalogens status til inaktiv. Hvis du vil fjerne tilgang til den eksterne leverandørens katalogområde, men ikke slettee det, kan du endre den eksterne katalogstatusen til inaktiv.

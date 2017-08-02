@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Opprett og administrer attributter
-<a id="create-and-manage-attributes" class="xliff"></a>
+# <a name="create-and-manage-attributes"></a>Opprett og administrer attributter
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Denne artikkelen beskriver attributter i Microsoft Dynamics 365 for Retail. Attr
 
 Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt. Du kan for eksempel angir produktets minnestørrelse og harddiskkapasitet og angi om produktet er Energy star-kompatibel. Attributter kan knyttes til forskjellige detaljhandelsenheter, for eksempel produktkategorier og kanaler for detaljhandel, og du kan angi standardverdier for dem.. Produkter arver sine attributter og standardverdier for disse attributtene når de er knyttet til produktkategorier eller kanaler for detaljhandel. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for kanal for detaljhandel, eller i en detaljhandelskatalog.
 
-#### Eksempler
-<a id="examples" class="xliff"></a>
+#### <a name="examples"></a>Eksempler
 
 | Kategori   | Attributt                | Tillatte verdier          | Standardverdi |
 |------------|--------------------------|-----------------------------|---------------|
@@ -59,8 +57,7 @@ Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefine
 | Projektor | Antall projiseringsrør    | 1–5                         | 3             |
 
 
-## Attributtype
-<a id="attribute-type" class="xliff"></a>
+## <a name="attribute-type"></a>Attributtype
   [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
 Attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for Retail følgende attributtyper:
@@ -73,39 +70,31 @@ Attributter er basert på attributtyper. Attributtyper identifiserer datatypen s
 -   **Boolsk** – Denne attributtypen støtter binære verdier (**sann**/**usann**).
 -   **Referanse**
 
-## Attributt
-<a id="attribute" class="xliff"></a>
+## <a name="attribute"></a>Attributt
   [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) I tillegg til navn, egendefinert navn, beskrivelse og hjelpetekst, kan én eller flere av følgende typer informasjon registreres for et attributt:
 
 -   Standardverdi
 -   Attributtmetadata, for eksempel metadata som indikerer om attributtet kan søkes i, finjusteres eller sorteres
 
-## Attributtgruppe
-<a id="attribute-group" class="xliff"></a>
+## <a name="attribute-group"></a>Attributtgruppe
   [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Når attributter er definerte, kan de grupperes i attributtgrupper. Attributtgrupper gir grupperinger av individuelle attributter, og kan tilordnes til detaljhandelskategorier eller kanaler for detaljhandel.
 
-## Tilordne attributtgrupper til detaljhandelskategorier
-<a id="assigning-attribute-groups-to-retail-categories" class="xliff"></a>
+## <a name="assigning-attribute-groups-to-retail-categories"></a>Tilordne attributtgrupper til detaljhandelskategorier
   [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) Én eller flere attributtgrupper kan knyttes til kategorinoder i kategorihierarkiet for detaljhandelsprodukt. Når varer er kategorisert, arver de attributtene som er inkludert i attributtgruppene.
 
-## Tilordne attributtgrupper til detaljhandelsbutikker
-<a id="assigning-attribute-groups-to-retail-stores" class="xliff"></a>
+## <a name="assigning-attribute-groups-to-retail-stores"></a>Tilordne attributtgrupper til detaljhandelsbutikker
   [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) Én eller flere attributtgrupper kan knyttes til én eller flere detaljhandelsbutikker i hierarkiet for detaljhandelsbutikker. Når varer er supplert for spesifikke detaljhandelsbutikker, arver de attributtene som er inkludert i attributtgruppene.
 
-## Overstyre attributtverdier
-<a id="overriding-attribute-values" class="xliff"></a>
-### På produktnivå
-<a id="at-the-product-level" class="xliff"></a>
+## <a name="overriding-attribute-values"></a>Overstyre attributtverdier
+### <a name="at-the-product-level"></a>På produktnivå
 
   [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Standardverdiene for attributter kan overstyres på produktnivå (det vil si for enkeltprodukter).
 
-### I detaljhandelskatalog
-<a id="in-a-retail-catalog" class="xliff"></a>
+### <a name="in-a-retail-catalog"></a>I detaljhandelskatalog
 
   [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Standardverdiene for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte kanaler for detaljhandel.
 
-### På nivå for kanal for detaljhandel
-<a id="at-the-retail-channel-level" class="xliff"></a>
+### <a name="at-the-retail-channel-level"></a>På nivå for kanal for detaljhandel
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardverdiene for attributter kan overstyres for individuelle produkter i bestemte kataloger som er rettet mot bestemte kanaler for detaljhandel.
 

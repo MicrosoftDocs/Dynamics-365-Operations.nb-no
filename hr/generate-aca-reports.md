@@ -26,16 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 
 ---
-# Cenerer rapporter om Affordable Care Act
-<a id="generate-affordable-care-act-reports" class="xliff"></a>
+# <a name="generate-affordable-care-act-reports"></a>Cenerer rapporter om Affordable Care Act
 Funksjonen er tilgjengelig for å hjelpe arbeidsgivere som må spore informasjonen som er rapportert på skjemaene 1095-B og 1095-C som en del av **arbeidsgivermandat**-delen i Affordable Care Act. Legg merke til at denne funksjonen bare er aktivert for juridiske enheter i USA.
 
-## Komme i gang
-<a id="getting-started" class="xliff"></a>
+## <a name="getting-started"></a>Komme i gang
 Når du begynner å spore informasjon som skal rapporteres på 1095-B-og 1095-C, må du først opprette én eller flere rimelig dekningsgrupper for Affordable Care. Disse Affordable Care-dekningsgruppene brukes til å angi tilbudet om dekning som ble gitt til en ansatt, den ansattes andel av det rimeligste månedlige premien (hvis kostnaden er høyere enn den føderale fattigrensen) i tillegg Safe Harbor som brukes av arbeidsgiveren, dersom det er aktuelt. Ved å bruke Affordable Care Act-grupper kan du behandle informasjonen for disse feltene uten å måtte røre hver ansattpost der betingelsene er de samme. I tillegg kan Affordable Care-dekningsgrupper lett tilordnes til én eller flere ansatte ved hjelp av massetilordningsfunksjonen på siden.
 
-## Vedlikeholde flere versjoner av en dekningsgruppe
-<a id="maintaining-multiple-versions-of-a-coverage-group" class="xliff"></a>
+## <a name="maintaining-multiple-versions-of-a-coverage-group"></a>Vedlikeholde flere versjoner av en dekningsgruppe
 Du kan vedlikeholde flere versjoner av en dekningsgruppe, noe som gjør det mulig å gjøre endringer som holder gruppens informasjonen oppdatert, uten å måtte opprette en ny gruppe og tilordne ansatte til denne når noe endres i organisasjonen eller i fordelene som tilbys. 
 
 Når du har opprettet Affordable Care-dekningsgruppene du trenger, kan du velge å massetilordne gruppene til ansatte ved hjelp av funksjonen **Massetilordning** på siden, eller du kan gå til hver ansatt og angi om ACA-informasjon må spores og rapporteres for den ansatte samt tilordne den ansatte til en Affordable Care-dekningsgruppe.
@@ -44,8 +41,7 @@ Hvis Affordable Care-dekningsinformasjonen ikke må spores eller rapporteres for
 
 Hvis du vil angi unntak for noen av Affordable Care-dekningsgruppenes verdier, klikker du på koblingen Affordable Care-dekning på informasjonssiden for arbeidere, som er under delen mer informasjon i kategorien ansettelse.
 
-## Rapportere helsedekning
-<a id="reporting-health-care-coverage" class="xliff"></a>
+## <a name="reporting-health-care-coverage"></a>Rapportere helsedekning
 I tillegg til å spore hva skjer hvis en hvilken som helst helseforsikringsdekning ble tilbudt en heltidsansatt, hvis arbeidsgiveren arbeidsgiversponset selvforsikret helsedekning som den ansatte dekkes under (uavhengig av om de jobber fulltid eller deltid), må tilleggsinformasjon rapporteres på 1095-C. Hver ansatt (inkludert avhengige) som er dekket av arbeidsgiver-sponsede fordelsplaner, må tas med i rapporten for månedene de var dekket. 
 
 Du kan angi om hver fordelsplan må rapporteres eller ikke, ved å merke av for **ACA-rapporterbar**.
@@ -54,14 +50,12 @@ Dessuten, hvis ansatte har valgt å dekke noen av sine avhengige under en fordel
 
 På siden **Behandling for dekningsdato for avhengig** kan du angi datoene da den avhengige ble dekket av fordelen. Når det angis datoer på denne siden, merkes det automatisk av for **Dekket** på **Vedlikehold fordeler**-siden.
 
-## Generere skjemaene 1095B og 1095C
-<a id="generate-1095b-and-1095c-forms" class="xliff"></a>
+## <a name="generate-1095b-and-1095c-forms"></a>Generere skjemaene 1095B og 1095C
 Du kan også generere 109-B- og 1095-C-skjemaer fra produktet, og levere dem til alle ansatte. Elektronisk generering av 1095-C og tilhørende 1094-C-overføringsfiler som kan brukes til å sende til Skattemyndighetene, kan også genereres fra systemet.  
 
 Når du genererer 1095-C-skjemaet, angir i kalenderen eller skatteåret samt om du vil skrive ut skjemaet med to sider eller skjemaer med tre sider. Skjemaet med tre sider er bare nødvendig hvis arbeidsgiveren ga selvforsikret dekning og en ansatt har mer en seks dekkede avhengig, inkludert seg selv. Når skjemaet med to sider genereres, finner systemet automatisk ut om en ansatt har mer enn 6 avhengige dekket, og vil ikke ta med den ansatte når skjemaet genereres. Når skjemaet med tre sider genereres, vil systemet dessuten bare ta med bare de ansatte som har mer enn seks avhengige dekket.
 
-## Vise informasjon
-<a id="viewing-information" class="xliff"></a>
+## <a name="viewing-information"></a>Vise informasjon
 Du kan bruke siden **Affordable Care-dekning for arbeidere** hvis du vil se hvilke ansatte som er tilordnet til hver dekningsgruppe, hvilke ansatte som ikke trenger å være med i en rapport, og hvilke ansatte som ikke er tilordnet.
 
 Hvis noen av standardverdiene fra Affordable Care-dekningsgruppen har blitt overstyrt, vises en stjerne ved siden av verdien som ble endret. Hvis verdiene for alle tolv månedene er de samme, og ikke har blitt overstyrt, skrives verdien ut i **Alle 12 måneder**-kolonnen.

@@ -24,23 +24,19 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Arbeidsområde for anleggsmiddelbehandling
-<a id="fixed-asset-management-workspace" class="xliff"></a>
+# <a name="fixed-asset-management-workspace"></a>Arbeidsområde for anleggsmiddelbehandling
 
 [!include[banner](../includes/banner.md)]
 
 Arbeidsområdet **Anleggsmiddelbehandling** viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Arbeidsområdet inneholder en sammendrag-visning og en analysevisning. Kategorien **Mitt arbeid** viser sammendragsfliser, anleggsmiddeldetaljer og relatert informasjon om anleggsmidler i det gjeldende firmaet. Du kan også legge til analyse i analysedeen av Power BI, direkte i arbeidsområdet. Kategorien **Analytics – alle firmaer** bruker funksjoner i Microsoft Power BI for å vise bilder som er knyttet til anleggsmidler i alle firmaer.
 
-## Mitt arbeid
-<a id="my-work" class="xliff"></a>
+## <a name="my-work"></a>Mitt arbeid
 
-### Sammendrag
-<a id="summary" class="xliff"></a>
+### <a name="summary"></a>Sammendrag
 
 FLisene i **sammendrag**-avsnittet gir en oversikt over anleggsmidlene. Informasjonen inkluderer metrikk om aktiva som ennå ikke er anskaffet, aktiva som er anskaffet i løpet av inneværende år og aktiva som er solgt i løpet av inneværende år. **Sammendrag**-delen har også rask navigering til listesiden **Anleggsmiddel**, satsvis avskrivningsforslag og anleggsmiddeljournalen.
 
-### Søk etter anleggsmidler
-<a id="find-fixed-assets" class="xliff"></a>
+### <a name="find-fixed-assets"></a>Søk etter anleggsmidler
 
 Med **Søk etter anleggsmidler**-delen kan du raskt søke etter aktiva ved å angi anleggsmiddelnummer, gruppe, navn, plassering eller personen som er ansvarlig. Alle anleggsmidler som oppfyller søkekriteriene, vises i listen.
 
@@ -50,20 +46,17 @@ Du kan vise disse sidene fra listen:
  - **Tablåer**-siden for alle tablåer som er tilknyttet anleggsmidlet
  - Siden **Verdivurdering av anleggsmidler**
 
-### Vurderinger
-<a id="valuations" class="xliff"></a>
+### <a name="valuations"></a>Vurderinger
 
 På siden **Verdivurderinger av anleggsmidler** kan du se den viktigste informasjonen om et anleggsmiddel, på én side, og også detaljer for alle tablåer som er knyttet til anleggsmidlet. **Saldoer**-alternativet øverst til venstre på siden viser gjeldende verdivurdering for hvert tablå som er knyttet til anleggsmidlet. Du kan gå tilbake fra verdiene for å vise de detaljerte transaksjonene som utgjør sammendragsverdien. **Profil**-alternativet øverst til venstre på siden viser avskrivningsplan for hvert tablå som er knyttet til anleggsmidlet.
 
 Du får tilgang til **Verdivurdering av anleggsmidler**-siden fra arbeidsområdet **Anleggsmiddelbehandling** eller listesiden **Anleggsmiddel**.
 
-### Beslektet informasjon
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Beslektet informasjon
 
 Du kan navigere direkte til **Tablåoppsett**-siden, siden for **Forespørsel om anleggsmiddeltransaksjon**, og flere rapporter ved hjelp av koblingene i **relatert informasjon**-delen i arbeidsområdet.
 
-### Analyse – alle firmaer
-<a id="analytics--all-companies" class="xliff"></a>
+### <a name="analytics--all-companies"></a>Analyse – alle firmaer
 
 **Analyse**-siden inneholder viktig metrikk om anleggsmidler i alle juridiske enheter i systemet. Tilgang til denne kategorien styres av sikkerhetsrettigheten Vis analyse for anleggsmiddel for alle firmaer.
 

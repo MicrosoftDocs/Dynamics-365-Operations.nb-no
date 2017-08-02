@@ -25,18 +25,15 @@ ms.lasthandoff: 06/16/2017
 
 ---
 
-# Utgåtte funksjoner
-<a id="deprecated-features" class="xliff"></a>
+# <a name="deprecated-features"></a>Utgåtte funksjoner
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 
-## Funksjoner som er foreldet i oppdateringen for juli 2017 av Dynamics 365 for Finance and Operations, Enterprise edition
-<a id="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funksjoner som er foreldet i oppdateringen for juli 2017 av Dynamics 365 for Finance and Operations, Enterprise edition
 
-### Portal for lagermobilenheter
-<a id="warehouse-mobile-devices-portal" class="xliff"></a>
+### <a name="warehouse-mobile-devices-portal"></a>Portal for lagermobilenheter
 
 Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon. Denne komponenten støttes ikke lenger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Et innebygd program som gir en bedre brukeropplevelse, erstatter funksjonaliteten til WMDP. 
 
@@ -46,8 +43,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 | **Erstattet med en annen funksjon?** | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, se [Installere og konfigurere Microsoft Dynamics 365 for Finange and Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Berørte moduler**             | Lagerstyring, transportstyring |
 
-### Avansert bankavstemming, samsvarsregel for manuelt samsvar
-<a id="advanced-bank-reconciliation-matching-rule-for-manual-matching" class="xliff"></a>
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Avansert bankavstemming, samsvarsregel for manuelt samsvar
 
 En samsvarsregele ble brukt til å velge og merke et bankdokument når dokumenter ble avstemt manuelt i avstemmingsregnearket.
 
@@ -57,8 +53,7 @@ En samsvarsregele ble brukt til å velge og merke et bankdokument når dokumente
 | **Erstattet med en annen funksjon?** | Nr. Kolonnefiltrering skal brukes til å finne dokumenter for avstemming. |
 | **Berørte moduler**             | Kontant- og bankbehandling                                                               |
 
-### Windows 8 nettbrettapp
-<a id="windows-8-tablet-app" class="xliff"></a>
+### <a name="windows-8-tablet-app"></a>Windows 8 nettbrettapp
 
 Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godkjenning.
 
@@ -69,12 +64,10 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 | **Berørte moduler**             | Reiseregning og utlegg                                                                       |
 
 
-Funksjoner som er avskrevet i Dynamics 365 for Operations 1611 i plattformoppdatering 3
-<a id="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3" class="xliff"></a>
+<a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funksjoner som er avskrevet i Dynamics 365 for Operations 1611 i plattformoppdatering 3
 ---------------------------------------------------------------------------------------------
 
-### AEB-betalingsformatene for Spania
-<a id="aeb-payment-formats-for-spain" class="xliff"></a>
+### <a name="aeb-payment-formats-for-spain"></a>AEB-betalingsformatene for Spania
 
 Betalingsformatene Consejo Superior Bancario brukes til å sende remitteringsfiler til banken for kunde- og leverandørbetalinger. Innholdet i disse formatene bestemmes av Asociación Española de Banca. Den dekker Cuaderno 19, 32, 58, 34.
 
@@ -84,8 +77,7 @@ Betalingsformatene Consejo Superior Bancario brukes til å sende remitteringsfil
 | Erstattet med en annen funksjon? | Ja, ISO20022-kredittoverføring og avtalegirobetalingsformater for Spania |
 | Berørte moduler             | Leverandør, kunde                                    |
 
-### Bankbetalingsoverføringer for Litauen
-<a id="bank-payments-transfer-for-lithuania" class="xliff"></a>
+### <a name="bank-payments-transfer-for-lithuania"></a>Bankbetalingsoverføringer for Litauen
 
 Bankbetalingsoverføringer genereres og skrives ut ved hjelp av eksportformatet for betalingsoverføring (LT) for Litauen. Det litauiske markedet begynte å bruke LITAS, det samordnede elektroniske banksystemet i 2005.
 
@@ -95,8 +87,7 @@ Bankbetalingsoverføringer genereres og skrives ut ved hjelp av eksportformatet 
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Litauen |
 | Berørte moduler             | Leverandører                                           |
 
-### BBS Direkte Remittering betalingsformatene for Norge
-<a id="bbs-direkte-remittering-payment-formats-for-norway" class="xliff"></a>
+### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a>BBS Direkte Remittering betalingsformatene for Norge
 
 BBS Direkte Remittering betalingsformatene omfatter eksport av purring på kundebetaling (avtalegiro) og import av returmelding.
 
@@ -106,8 +97,7 @@ BBS Direkte Remittering betalingsformatene omfatter eksport av purring på kunde
 | Erstattet med en annen funksjon? | Format for AvtaleGiro-kundebetaling for Norge kan brukes til å generere meldinger for AvtaleGiro. Importer av returmelding vil bli implementert i fremtidige versjoner. |
 | Berørte moduler             | Leverandør, kunde                                                                                                                          |
 
-### Verktøy for kontoplan for Spania
-<a id="chart-of-accounts-tool-for-spain" class="xliff"></a>
+### <a name="chart-of-accounts-tool-for-spain"></a>Verktøy for kontoplan for Spania
 
 Dette verktøyet brukes når en kontoplan i Spania krever store endringer. Brukere kan importere en ny kontoplan i Microsoft Excel- eller tekstformat, og kan også importere regnskapsoppgjør.
 
@@ -117,8 +107,7 @@ Dette verktøyet brukes når en kontoplan i Spania krever store endringer. Bruke
 | Erstattet med en annen funksjon? | Ingen             |
 | Berørte moduler             | Økonomimodul |
 
-### Dom80-betalingsformat for Belgia
-<a id="dom80-payment-format-for-belgium" class="xliff"></a>
+### <a name="dom80-payment-format-for-belgium"></a>Dom80-betalingsformat for Belgia
 
 Eldre Belgisk betalingsformat for purring (avtalegiro).
 
@@ -128,8 +117,7 @@ Eldre Belgisk betalingsformat for purring (avtalegiro).
 | Erstattet med en annen funksjon? | Ja, ISO 20022 Avtalegiroformat for Belgia |
 | Berørte moduler             | Kundereskontro                                    |
 
-### DTA/EZAG-betalingsformatene for Sveits
-<a id="dtaezag-payment-formats-for-switzerland" class="xliff"></a>
+### <a name="dtaezag-payment-formats-for-switzerland"></a>DTA/EZAG-betalingsformatene for Sveits
 
 DTA/EZAG-formatene er integrert i ESR-systemet fordi de kan inneholde referansenummeret. Referansenummeret er ikke obligatorisk, og derfor kan disse formatene brukes til å behandle alle leverandørbetalinger. Disse formatene brukes av firmaer som har en bankkonto på et annet sted enn "Postfinance".
 
@@ -139,8 +127,7 @@ DTA/EZAG-formatene er integrert i ESR-systemet fordi de kan inneholde referansen
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Sveits |
 | Berørte moduler             | Leverandører                                             |
 
-### EDIFACT-DIRDEB-betalingsformat for Østerrike
-<a id="edifact-dirdeb-payment-format-for-austria" class="xliff"></a>
+### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT-DIRDEB-betalingsformat for Østerrike
 
 EDIFACT-DIRDEB-betalingsformat for purring (avtalegiro).
 
@@ -150,8 +137,7 @@ EDIFACT-DIRDEB-betalingsformat for purring (avtalegiro).
 | Erstattet med en annen funksjon? | Ja, ISO 20022 Avtalegiroformat for Østerrike |
 | Berørte moduler             | Kundereskontro                                    |
 
-### EDIVAT for Belgia
-<a id="edivat-for-belgium" class="xliff"></a>
+### <a name="edivat-for-belgium"></a>EDIVAT for Belgia
 
 EDIVAT er en foreldet belgisk standard for elektronisk deklarering via sikker e-post. Microsoft Dynamics AX 2012 beholder den skrivebeskyttede løsningen for å få tilgang til den historiske dataene.
 
@@ -161,8 +147,7 @@ EDIVAT er en foreldet belgisk standard for elektronisk deklarering via sikker e-
 | Erstattet med en annen funksjon? | Ingen                                   |
 | Berørte moduler             | Økonomimodul                       |
 
-### eGiro EDIFACT CREMUL-betalingsimportformatet for Norge
-<a id="egiro-edifact-cremul-payment-import-format-for-norway" class="xliff"></a>
+### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL-betalingsimportformatet for Norge
 
 eGiro er basert på den internasjonale UN EDIFACT CREMUL-standarden (Multiple Credit Advice Message) som brukes ved automatisk postering av kundebetalinger. eGiro er implementert som et formater for import av kundebetaling i Microsoft Dynamics AX.
 
@@ -172,8 +157,7 @@ eGiro er basert på den internasjonale UN EDIFACT CREMUL-standarden (Multiple Cr
 | Erstattet med en annen funksjon? | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
 | Berørte moduler             | Kundereskontro                                                                       |
 
-### Eksternt lager for Polen
-<a id="external-inventory-for-poland" class="xliff"></a>
+### <a name="external-inventory-for-poland"></a>Eksternt lager for Polen
 
 Bevis for varer som er hentet fra en salgsleverandør uten innkjøp. Varer som håndteres i eksternt lager, som ikke påvirker standardlager og kan selges og deretter kjøpes automatisk. Denne prosessen oppretter reelle lagerbevegelser.
 
@@ -183,8 +167,7 @@ Bevis for varer som er hentet fra en salgsleverandør uten innkjøp. Varer som h
 | Erstattet med en annen funksjon? | Ja, kjernefunksjonaliteten Inngående forsendelse |
 | Berørte moduler             | Leverandører, lagerstyring          |
 
-### Generator for finansrapporter for Øst-Europa
-<a id="financial-reports-generator-for-eastern-europe" class="xliff"></a>
+### <a name="financial-reports-generator-for-eastern-europe"></a>Generator for finansrapporter for Øst-Europa
 
 Et verktøy brukes for å konfigurere datainnsamling for regnskaps- og avgiftsrapporter og eksportere data til XLS- og DOC-rapportmaler.
 
@@ -194,8 +177,7 @@ Et verktøy brukes for å konfigurere datainnsamling for regnskaps- og avgiftsra
 | Erstattet med en annen funksjon? | Nr. Verktøyet vil bli erstattet av elektroniske rapporteringskonfigurasjoner i fremtidige versjoner. |
 | Berørte moduler             | Økonomi                                                                           |
 
-### Import av kundebetalingstransaksjoner for Finland
-<a id="import-of-customer-payment-transactions-for-finland" class="xliff"></a>
+### <a name="import-of-customer-payment-transactions-for-finland"></a>Import av kundebetalingstransaksjoner for Finland
 
 Du kan velge et importformat for finske betalinger for å importere kundebetalingstransaksjoner fra en ekstern fil som banken leverer.
 
@@ -205,8 +187,7 @@ Du kan velge et importformat for finske betalinger for å importere kundebetalin
 | Erstattet med en annen funksjon? | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
 | Berørte moduler             | Kundereskontro                                                                       |
 
-### Import av betalingstransaksjoner i en finansjournal for Finland
-<a id="import-of-payment-transactions-into-a-general-ledger-journal-for-finland" class="xliff"></a>
+### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import av betalingstransaksjoner i en finansjournal for Finland
 
 Et format som er spesifikk for Finland, som brukes for å importere regnskapstransaksjoner til økonomimodulen.
 
@@ -216,8 +197,7 @@ Et format som er spesifikk for Finland, som brukes for å importere regnskapstra
 | Erstattet med en annen funksjon? | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
 | Berørte moduler             | Kundereskontro                                                                       |
 
-### Integrasjon med Isabel-synkronisert (CIS) for Belgia
-<a id="integration-with-isabel-synchronized-cis-for-belgium" class="xliff"></a>
+### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integrasjon med Isabel-synkronisert (CIS) for Belgia
 
 Isabel er rammeverket for elektroniske banktjenester i Europa og de facto standard i Belgia.
 
@@ -227,8 +207,7 @@ Isabel er rammeverket for elektroniske banktjenester i Europa og de facto standa
 | Erstattet med en annen funksjon? | Nr. Betalingsformatene som brukes ikke lenger brukes erstattes av ISO20022 Betalingsformat for kredittoverføring for Belgia. |
 | Berørte moduler             | Leverandører                                                                                                     |
 
-### Endringer i kontoplanen og regnskapsreglene for Spania
-<a id="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain" class="xliff"></a>
+### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Endringer i kontoplanen og regnskapsreglene for Spania
 
 Denne funksjonen brukes til endringer i kontoplanen og regnskapsreglene i Spania. Den tilordner kontoer for å gjøre bidra til overføring av den gamle kontoplanen til den nye kontoplanen, og sammenligner det forrige regnskapsåret med det nye regnskapsåret, selv om de ble postert til ulike kontonumre.
 
@@ -238,8 +217,7 @@ Denne funksjonen brukes til endringer i kontoplanen og regnskapsreglene i Spania
 | Erstattet med en annen funksjon? | Ingen             |
 | Berørte moduler             | Økonomimodul |
 
-### Pagamento Fornittori-betalingsformatet for leverandør
-<a id="pagamento-fornittori-vendor-payment-format" class="xliff"></a>
+### <a name="pagamento-fornittori-vendor-payment-format"></a>Pagamento Fornittori-betalingsformatet for leverandør
 
 Eldre italiensk betalingsformat for kredittoverføringer.
 
@@ -249,8 +227,7 @@ Eldre italiensk betalingsformat for kredittoverføringer.
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Italia |
 | Berørte moduler             | Leverandører                                       |
 
-### Eksportformater for betaling for Estland.
-<a id="payment-export-formats-for-estonia" class="xliff"></a>
+### <a name="payment-export-formats-for-estonia"></a>Eksportformater for betaling for Estland.
 
 Formatene Telehansa og Teleservice brukes for eksport for bankbetaling.
 
@@ -260,8 +237,7 @@ Formatene Telehansa og Teleservice brukes for eksport for bankbetaling.
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Estland |
 | Berørte moduler             | Leverandører                                         |
 
-### Betalingsfilarkiv for Norge
-<a id="payment-file-archive-for-norway" class="xliff"></a>
+### <a name="payment-file-archive-for-norway"></a>Betalingsfilarkiv for Norge
 
 Når betalingsfiler genereres, arkiverer filarkivet automatisk alle filene som opprettes, også filer som tidligere ble skrevet eller lest.
 
@@ -271,8 +247,7 @@ Når betalingsfiler genereres, arkiverer filarkivet automatisk alle filene som o
 | Erstattet med en annen funksjon? | Ja, arkiverte jobber for elektronisk rapportering                            |
 | Berørte moduler             | Leverandører, kunder, organisasjonsstyring |
 
-### Importformater for betaling for Estland
-<a id="payment-import-formats-for-estonia" class="xliff"></a>
+### <a name="payment-import-formats-for-estonia"></a>Importformater for betaling for Estland
 
 Formatene Telehansa og TeleTeenus brukes for import for bankbetaling.
 
@@ -282,8 +257,7 @@ Formatene Telehansa og TeleTeenus brukes for import for bankbetaling.
 | Erstattet med en annen funksjon? | Nr. Formatene vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
 | Berørte moduler             | Kundereskontro                                                                        |
 
-### Arbeidsflyt for mål for ytelsesstyring
-<a id="performance-management-goal-workflow" class="xliff"></a>
+### <a name="performance-management-goal-workflow"></a>Arbeidsflyt for mål for ytelsesstyring
 
 Ytelsesstyring omfatter målstyring og integrasjon med ytelsesvurderinger.
 
@@ -293,8 +267,7 @@ Ytelsesstyring omfatter målstyring og integrasjon med ytelsesvurderinger.
 | Erstattet med en annen funksjon? | Nr. Mål er synlige for lederselvbetjeningsportalen, og endres og vises av lederen. |
 | Berørte moduler             | Forvaltning av menneskelig kapital                                                                                                 |
 
-### Postgirot og Postgirot Utland-betalingsformatene for Sverige
-<a id="postgirot-and-postgirot-utland-payment-formats-for-sweden" class="xliff"></a>
+### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Postgirot og Postgirot Utland-betalingsformatene for Sverige
 
 Postgirot og Postgirot Utland-betalingsformatene for Sverige.
 
@@ -304,8 +277,7 @@ Postgirot og Postgirot Utland-betalingsformatene for Sverige.
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Sverige |
 | Berørte moduler             | Leverandører                                        |
 
-### Radiofrekvensidentifisering
-<a id="radio-frequency-identifier" class="xliff"></a>
+### <a name="radio-frequency-identifier"></a>Radiofrekvensidentifisering
 
 Radiofrekvensidentifisering (RFID) er en datainnsamlingsteknikk som bruker elektroniske brikker til å lagre identifiseringsdata. Innhenting av data krever ikke at leseren må være der brikkene er.
 
@@ -315,8 +287,7 @@ Radiofrekvensidentifisering (RFID) er en datainnsamlingsteknikk som bruker elekt
 | Erstattet med en annen funksjon? | Ingen                                            |
 | Berørte moduler             | Lagerstyring                          |
 
-### Rapport om fakturanummerering for delstat for Latvia
-<a id="report-about-state-invoices-numbering-for-latvia" class="xliff"></a>
+### <a name="report-about-state-invoices-numbering-for-latvia"></a>Rapport om fakturanummerering for delstat for Latvia
 
 Latvisk lovgivning angir bestemte regler for nummerering av salgsfakturaer. Funksjonen lar deg tilordne bestemte numre til salgsfakturaer, basert på brukeren eller brukergruppen. Deretter kan du generere en rapport eller en XML-fil. Du kan også skrive ut en rapport om fakturanumre som er brukt.
 
@@ -326,8 +297,7 @@ Latvisk lovgivning angir bestemte regler for nummerering av salgsfakturaer. Funk
 | Erstattet med en annen funksjon? | Ingen                                                                                                                       |
 | Berørte moduler             | Kundereskontro                                                                                                      |
 
-### Definer navnene på lederen og en generelle regnskapsføreren for et firma for Litauen
-<a id="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania" class="xliff"></a>
+### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a>Definer navnene på lederen og en generelle regnskapsføreren for et firma for Litauen
 
 Navnet på lederen og den generell regnskapsføreren for et firma kan angis i firmainformasjonen og brukes i forskjellige utskrifter av lokale rapporter.
 
@@ -337,8 +307,7 @@ Navnet på lederen og den generell regnskapsføreren for et firma kan angis i fi
 | Erstattet med en annen funksjon? | Ja, oppsettet av kontrollører kan brukes til det samme formålet.   |
 | Berørte moduler             | Leverandører, Kundereskontro, Kontant- og bankbehandling |
 
-### TelePay-betalingsformatene for Norge
-<a id="telepay-payment-formats-for-norway" class="xliff"></a>
+### <a name="telepay-payment-formats-for-norway"></a>TelePay-betalingsformatene for Norge
 
 TelePay-betalingsformatene omfatter eksportformater for leverandør (kredittoverføring) og purring på kundebetaling (avtalegiro).
 
@@ -348,8 +317,7 @@ TelePay-betalingsformatene omfatter eksportformater for leverandør (kredittover
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring og Format for AvtaleGiro-kundebetaling for Norge |
 | Berørte moduler             | Leverandør, kunde                                                          |
 
-### Eksportformater for leverandørbetaling for Finland
-<a id="vendor-payment-export-formats-for-finland" class="xliff"></a>
+### <a name="vendor-payment-export-formats-for-finland"></a>Eksportformater for leverandørbetaling for Finland
 
 Det finnes to formater for eksport av betalinger for Finland. LM02 (FI) brukes for innenlandsbetalinger, og LUM2 (FI) brukes for utenlandsbetalinger.
 
@@ -359,8 +327,7 @@ Det finnes to formater for eksport av betalinger for Finland. LM02 (FI) brukes f
 | Erstattet med en annen funksjon? | Ja, ISO20022 Betalingsformat for kredittoverføring for Finland |
 | Berørte moduler             | Leverandører                                         |
 
-### Arbeidsflyt for å opprette mål
-<a id="workflow-for-creating-goals" class="xliff"></a>
+### <a name="workflow-for-creating-goals"></a>Arbeidsflyt for å opprette mål
 
 En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere arbeidsflyter som var tilgjengelige for å koordinere ytelsesstyringsprosessen.
 
@@ -370,10 +337,8 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 | Erstattet med en annen funksjon? | Den nyutformede funksjonen for ytelsesstyring gir større kontroll over innholdet i målene, målene som brukes til å spore fremdrift og vedlegg av støttedokumentasjon. Mål kan lagres som maler og deretter brukes på nytt. Denne funksjonen kan hjelpe deg med å konfigurere flere mål for ansatte raskere. |
 | Berørte moduler             | Forvaltning av menneskelig kapital                                                                                                                                                                                                                                                                                                               |
 
-## Funksjoner som er avskrevet i Dynamics AX 7.0-versjoner
-<a id="features-deprecated-in-dynamics-ax-70-releases" class="xliff"></a>
-### Muligheten til å avbryte endringer i en leverandørfaktura
-<a id="ability-to-cancel-changes-to-a-vendor-invoice" class="xliff"></a>
+## <a name="features-deprecated-in-dynamics-ax-70-releases"></a>Funksjoner som er avskrevet i Dynamics AX 7.0-versjoner
+### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Muligheten til å avbryte endringer i en leverandørfaktura
 
 |                              |                         |
 |------------------------------|-------------------------|
@@ -381,8 +346,7 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 | Erstattet med en annen funksjon? | Antall                      |
 | Berørte moduler             | Leverandører        |
 
-### AIF-, AxD- og AxBC-integreringer
-<a id="aif-axd-and-axbc-integrations" class="xliff"></a>
+### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- og AxBC-integreringer
 
 I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *meldingen* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd &lt;*Dokument*&gt;**-klasser.
 
@@ -392,8 +356,7 @@ I Application Integration Framework (AIF) kan data utveksles med eksterne system
 | Erstattet med en annen funksjon? | I den gjeldende versjonen av Dynamics AX erstattes denne funksjonen av rammeverk for dataimport-/eksport, som støtter regelmessig bulkimport/-eksport. For AxBC anbefaler vi at du bruker de faktiske tabellene. |
 | Berørte moduler             | AxD-er, AxBC-er og AIF                                                                                                                                                                                     |
 
-### Stykklister uten stykklisteversjoner
-<a id="boms-without-bom-versions" class="xliff"></a>
+### <a name="boms-without-bom-versions"></a>Stykklister uten stykklisteversjoner
 
 Når konfigurasjonsnøkkelen **Stykklisteversjoner** ble deaktivert, ble stykklisteversjonene skjult i alle skjemaer, og systemet fremtvang en 1:1-relasjon mellom frigitte produkter og stykklister. I gjeldende versjon av Dynamics AX kan ikke **Stykklisteversjoner**-konfigurasjonsnøkkelen deaktiveres.
 
@@ -403,8 +366,7 @@ Når konfigurasjonsnøkkelen **Stykklisteversjoner** ble deaktivert, ble stykkli
 | Erstattet med en annen funksjon? | Antall                                                                                      |
 | Berørte moduler             | Behandling av produktinformasjon, Lagerstyring                                    |
 
-### Brasiliansk Bordero
-<a id="brazilian-bordero" class="xliff"></a>
+### <a name="brazilian-bordero"></a>Brasiliansk Bordero
 
 Spesifikk betalingsmåte for brasilianske firmaer
 
@@ -414,8 +376,7 @@ Spesifikk betalingsmåte for brasilianske firmaer
 | Erstattet med en annen funksjon? | Ingen                                                                                                    |
 | Berørte moduler             | Leverandører                                                                                      |
 
-### Brasiliansk Sintegra-utdrag
-<a id="brazilian-sintegra-statement" class="xliff"></a>
+### <a name="brazilian-sintegra-statement"></a>Brasiliansk Sintegra-utdrag
 
 Utdrag for føderal skatt for ICMS-avgift
 
@@ -425,8 +386,7 @@ Utdrag for føderal skatt for ICMS-avgift
 | Erstattet med en annen funksjon? | Nr. Brukere kan bruke det generelle elektroniske rapporteringsverktøyet for å konfigurere utdraget hvis det er nødvendig i bestemte situasjoner. |
 | Berørte moduler             | Regnskapsbøker                                                                                                          |
 
-### Brasiliansk SCAN-eventualitetsmodus for NF-e
-<a id="brazilian-scan-contingency-mode-for-nf-e" class="xliff"></a>
+### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasiliansk SCAN-eventualitetsmodus for NF-e
 
 (SCAN)-eventualitetsmiljø brukes til å generere, eksportere og importere statusen for en Nota Fiscal eletrônica (NF-e) når miljøet for Secretaria da Fazenda (SEFAZ) ikke er tilgjengelig.
 
@@ -436,8 +396,7 @@ Utdrag for føderal skatt for ICMS-avgift
 | Erstattet med en annen funksjon? | Ingen                                                                          |
 | Berørte moduler             | Kundereskontro                                                         |
 
-### Business Analyzer
-<a id="business-analyzer" class="xliff"></a>
+### <a name="business-analyzer"></a>Business Analyzer
 
 Denne mobilapplikasjonen lar brukere se gjennom viktige forretningsdata.
 
@@ -447,8 +406,7 @@ Denne mobilapplikasjonen lar brukere se gjennom viktige forretningsdata.
 | Erstattet med en annen funksjon? | Innholdspakken Overvåk økonomiske resultater for Microsoft Power BI inneholder nøkkelmetrikk for økonomi som tidligere var tilgjengelig i verktøyet Business Analyzer. |
 | Berørte moduler             | Økonomimodul                                                                                                                                                |
 
-### Forretningsstatistikk
-<a id="business-statistics" class="xliff"></a>
+### <a name="business-statistics"></a>Forretningsstatistikk
 
 Oppsett av forretningsstatistikkforespørsler som kan hjelpe deg med å analysere ytelsen til organisasjonen
 
@@ -458,8 +416,7 @@ Oppsett av forretningsstatistikkforespørsler som kan hjelpe deg med å analyser
 | Erstattet med en annen funksjon? | Nye BI-løsninger for den gjeldende versjonen av Dynamics AX                                      |
 | Berørte moduler             | Innkjøp og leverandører, Leverandører, Salg og markedsføring, Kunder         |
 
-### Endre datofunksjonen for dokumentet i fakturagodkjenningsjournalen
-<a id="change-document-date-function-in-invoice-approval-journal" class="xliff"></a>
+### <a name="change-document-date-function-in-invoice-approval-journal"></a>Endre datofunksjonen for dokumentet i fakturagodkjenningsjournalen
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
@@ -467,8 +424,7 @@ Oppsett av forretningsstatistikkforespørsler som kan hjelpe deg med å analyser
 | Erstattet med en annen funksjon? | Ja. Du kan endre dokumentdatoen på den posterte leverandørtransaksjonen. |
 | Berørte moduler             | Leverandører                                                        |
 
-### ClieOp03-betalingsformat for Nederland
-<a id="clieop03-payment-format-for-the-netherlands" class="xliff"></a>
+### <a name="clieop03-payment-format-for-the-netherlands"></a>ClieOp03-betalingsformat for Nederland
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -476,8 +432,7 @@ Oppsett av forretningsstatistikkforespørsler som kan hjelpe deg med å analyser
 | Erstattet med en annen funksjon? | SEPA-betalingseksport                                                                                       |
 | Berørte moduler             | Alle                                                                                                        |
 
-### Overholdelsessenter
-<a id="compliance-center" class="xliff"></a>
+### <a name="compliance-center"></a>Overholdelsessenter
 
 Overholdelsessenteret var et Enterprise Portal-område for administrasjon av kravene til dokumentasjon til samsvar som er knyttet til Sarbanes-Oxley-loven.
 
@@ -487,8 +442,7 @@ Overholdelsessenteret var et Enterprise Portal-område for administrasjon av kra
 | Erstattet med en annen funksjon? | Antall                                                                                                                     |
 | Berørte moduler             | Samsvar og interne kontroller                                                                                       |
 
-### Connector for Microsoft Dynamics
-<a id="connector-for-microsoft-dynamics" class="xliff"></a>
+### <a name="connector-for-microsoft-dynamics"></a>Connector for Microsoft Dynamics
 
 Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics CRM til Microsoft Dynamics ERP-programmer.
 
@@ -498,8 +452,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | Erstattet med en annen funksjon? | Dynamics-integrator                                      |
 | Berørte moduler             | Connector for Microsoft Dynamics                         |
 
-### Containerenhet og fysisk beholdning av flere dimensjoner
-<a id="container-unit-and-multi-dimension-on-hand" class="xliff"></a>
+### <a name="container-unit-and-multi-dimension-on-hand"></a>Containerenhet og fysisk beholdning av flere dimensjoner
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -507,8 +460,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | Erstattet med en annen funksjon? | Ja. Denne funksjonaliteten er erstattet med funksjonssettet for konsolidert partiordre etter AX 2012. Dette funksjonssettet inneholder den konsoliderte beholdningen. |
 | Berørte moduler             | Behandling av produktinformasjon, Produksjonskontroll, Lagerstyring, Salg og markedsføring                                                                   |
 
-### Bunkegruppemetadata
-<a id="cue-group-metadata" class="xliff"></a>
+### <a name="cue-group-metadata"></a>Bunkegruppemetadata
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -516,8 +468,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | Erstattet med en annen funksjon? | Antall                                                                                                                                                                                                                            |
 | Berørte moduler             | Alle                                                                                                                                                                                                                           |
 
-### Bunkemetadata
-<a id="cue-metadata" class="xliff"></a>
+### <a name="cue-metadata"></a>Bunkemetadata
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -525,8 +476,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | Erstattet med en annen funksjon? | Side-ved-side-metadataene ble innført for å gi mer fleksibilitet for modellering. Du kan for eksempel opprette gjeldende antall, navigasjon og nøkkelytelsesindikatorer (KPI-er). Side-ved-side-metadata er direkte erstatning av bunkemetadata. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                     |
 
-### Dansk sjekkformat
-<a id="danish-check-format" class="xliff"></a>
+### <a name="danish-check-format"></a>Dansk sjekkformat
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -534,8 +484,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | Erstattet med en annen funksjon? | Antall                                                                                                                      |
 | Berørte moduler             | Alle                                                                                                                     |
 
-### Datapartisjoner
-<a id="data-partitions" class="xliff"></a>
+### <a name="data-partitions"></a>Datapartisjoner
 
 Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databasen.
 
@@ -545,8 +494,7 @@ Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databas
 | Erstattet med en annen funksjon? | Datapartisjoner erstattes gjennom støtte for flere databaser eller Dynamics AX-forekomster i en fremtidig versjon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-### Avgrensing
-<a id="delimitation" class="xliff"></a>
+### <a name="delimitation"></a>Avgrensing
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
@@ -554,8 +502,7 @@ Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databas
 | Erstattet med en annen funksjon? | Antall                                     |
 | Berørte moduler             | Timeregistrering                    |
 
-### Skrivebordsklient
-<a id="desktop-client" class="xliff"></a>
+### <a name="desktop-client"></a>Skrivebordsklient
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -563,8 +510,7 @@ Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databas
 | Erstattet med en annen funksjon? | Den nye webklienten er basert på skrivebordskjemametadataene og programmeringsmodellen som har blitt endret for å gi en rik webplattform. |
 | Berørte moduler             | Alle                                                                                                                                    |
 
-### Direkte databasetilkobling
-<a id="direct-database-connection" class="xliff"></a>
+### <a name="direct-database-connection"></a>Direkte databasetilkobling
 
 I Dynamics AX 2012 R3 kan Retail Modern POS kobles direkte til kanaldatabasen på samme måte som Enterprise POS. Dette var i tillegg til standard kommunikasjonsmetode for Retail Modern POS-kommunikasjon via detaljhandelsserver.  
 
@@ -574,8 +520,7 @@ I Dynamics AX 2012 R3 kan Retail Modern POS kobles direkte til kanaldatabasen p�
 | Erstattet med en annen funksjon? | Nr. Nå støttes bare standard kommunikasjon for detaljhandelsserver.    |
 | Berørte moduler             | Kanaldatabase/Retail Modern POS                                    |
 
-### Nederlandsk SWIFT MT940
-<a id="dutch-swift-mt940" class="xliff"></a>
+### <a name="dutch-swift-mt940"></a>Nederlandsk SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -583,8 +528,7 @@ I Dynamics AX 2012 R3 kan Retail Modern POS kobles direkte til kanaldatabasen p�
 | Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                   |
 
-### eBilanz (XBRL for Tyskland)
-<a id="ebilanz-xbrl-for-germany" class="xliff"></a>
+### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL for Tyskland)
 
 Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Language) som er beregnet spesifikt for den tyske eBilanz-taksonomien.
 
@@ -594,8 +538,7 @@ Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Langua
 | Erstattet med en annen funksjon? | Denne funksjonen er ikke erstattet av en annen funksjon, men flere spesialiserte XBRL-pakker som gir rik XBRL-funksjonalitet, er tilgjengelige for det tyske markedet. |
 | Berørte moduler             | Management Reporter                                                                                                                                                    |
 
-### Enterprise Portal-klient
-<a id="enterprise-portal-client" class="xliff"></a>
+### <a name="enterprise-portal-client"></a>Enterprise Portal-klient
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -603,8 +546,7 @@ Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Langua
 | Erstattet med en annen funksjon? | Den nye webklienten er basert på skrivebordskjemametadataene og programmeringsmodellen som har blitt endret for å gi en rik webplattform. |
 | Berørte moduler             | Alle                                                                                                                                    |
 
-### Miljømessig bærekraft
-<a id="environmental-sustainability" class="xliff"></a>
+### <a name="environmental-sustainability"></a>Miljømessig bærekraft
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
@@ -612,8 +554,7 @@ Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Langua
 | Erstattet med en annen funksjon? | Antall                                                 |
 | Berørte moduler             | Samsvar og interne kontroller, leverandører |
 
-### Lage ActiveX- og administrerte vertskontroller
-<a id="form-activex-and-managed-host-controls" class="xliff"></a>
+### <a name="form-activex-and-managed-host-controls"></a>Lage ActiveX- og administrerte vertskontroller
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -621,8 +562,7 @@ Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Langua
 | Erstattet med en annen funksjon? | Det utvidbare kontrollrammeverket støtter bygging av nye kontroller som er basert på HTML, CSS og JavaScript, og er en førsteklasses kontroll i Microsoft Visual Studio-verktøymiljøet. |
 | Berørte moduler             | Alle                                                                                                                                                                                           |
 
-### Generer forhåndsmerknader ved hjelp av et parti
-<a id="generate-prenotes-by-using-a-batch" class="xliff"></a>
+### <a name="generate-prenotes-by-using-a-batch"></a>Generer forhåndsmerknader ved hjelp av et parti
 
 Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men kan fremdeles utføres av en bruker.
 
@@ -632,8 +572,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | Erstattet med en annen funksjon? | Forhåndsmerknader kan fremdeles genereres, og brukeren har kontroll over plasseringen der filen skal lagres.   |
 | Berørte moduler             | Leverandører, Kundereskontro, Kontant- og bankbehandling                                        |
 
-### Tysk DTAUS-betalingseksport og kontoutdragsimport (totaler og transaksjoner)
-<a id="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions" class="xliff"></a>
+### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Tysk DTAUS-betalingseksport og kontoutdragsimport (totaler og transaksjoner)
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -641,8 +580,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av SEPA-betalingseksport og avanserte funksjoner for bankavstemming for import av kontoutdrag. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                                                                            |
 
-### Tysk DTAZV-betalingsformat
-<a id="german-dtazv-payment-format" class="xliff"></a>
+### <a name="german-dtazv-payment-format"></a>Tysk DTAZV-betalingsformat
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
@@ -650,8 +588,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | Erstattet med en annen funksjon? | SEPA-betalingseksport                                                                               |
 | Berørte moduler             | Alle                                                                                                |
 
-### Tysk MT940-import
-<a id="german-mt940-import" class="xliff"></a>
+### <a name="german-mt940-import"></a>Tysk MT940-import
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -659,8 +596,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                   |
 
-### Tysk EU-salgsliste i XML
-<a id="german-xml-eu-sales-list" class="xliff"></a>
+### <a name="german-xml-eu-sales-list"></a>Tysk EU-salgsliste i XML
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -668,8 +604,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | Erstattet med en annen funksjon? | Antall                                                                                                                                                                                 |
 | Berørte moduler             | Avgift                                                                                                                                                                                |
 
-### GL SSRS-rapporter
-<a id="gl-ssrs-reports" class="xliff"></a>
+### <a name="gl-ssrs-reports"></a>GL SSRS-rapporter
 
 Rapporter som inkluderer følgende menyelementer, er fjernet: **Råbalansesammendrag**, **Detaljert råbalanse**, **Kontoplan**, **Revisjonsspor**, **Saldoer** og **Saldoliste**.
 
@@ -679,8 +614,7 @@ Rapporter som inkluderer følgende menyelementer, er fjernet: **Råbalansesammen
 | Erstattet med en annen funksjon? | Management Reporter (kalt **Finansrapportering** i den gjeldende versjonen av Dynamics AX)                                                  |
 | Berørte moduler             | Økonomimodul                                                                                                                               |
 
-### InfoPart- og FormPart-metadata
-<a id="infopart-and-formpart-metadata" class="xliff"></a>
+### <a name="infopart-and-formpart-metadata"></a>InfoPart- og FormPart-metadata
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -688,8 +622,7 @@ Rapporter som inkluderer følgende menyelementer, er fjernet: **Råbalansesammen
 | Erstattet med en annen funksjon? | InfoPart-metadata, som var en forenklet skjemadefinisjon, konverteres til et skjema ved hjelp av oppgraderingsverktøy. Metadata for FormPart, som refererer til et skjema, erstattes av en mer direkte referanse som opprettes av oppgraderingsverktøy. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                            |
 
-### Listeside for hovedkonto
-<a id="main-account-list-page" class="xliff"></a>
+### <a name="main-account-list-page"></a>Listeside for hovedkonto
 
 En liste over kontoer for den juridiske enheten og tilknyttet saldoinformasjon
 
@@ -699,8 +632,7 @@ En liste over kontoer for den juridiske enheten og tilknyttet saldoinformasjon
 | Erstattet med en annen funksjon? | **Hovedkontoer** inneholder den samme listen over kontoer som listesiden **Hovedkonto** inneholdt. Rutenettvisningen i **Hovedkontoer** viser også en enda mindre rutenettlignende visning. |
 | Berørte moduler             | Økonomimodul                                                                                                                                                                     |
 
-### Malaysia og Singapore bankkontantstrømrapport
-<a id="malaysia-and-singapore-bank-cash-flow-report" class="xliff"></a>
+### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Malaysia og Singapore bankkontantstrømrapport
 
 Denne funksjonen gjør det mulig for brukeren å skrive ut en kontantstrømrapport som viser transaksjoner og detaljer om inn- og utkontantstrømmene for et valgt datoområde for valgte bankkontoer.
 
@@ -710,8 +642,7 @@ Denne funksjonen gjør det mulig for brukeren å skrive ut en kontantstrømrappo
 | Erstattet med en annen funksjon? | Forespørselbanktransaksjonen                                            |
 | Berørte moduler             | Kontant- og bankbehandling                                                |
 
-### Meksikansk CFD elektronisk faktura
-<a id="mexican-cfd-electronic-invoice" class="xliff"></a>
+### <a name="mexican-cfd-electronic-invoice"></a>Meksikansk CFD elektronisk faktura
 
 Denne funksjonen aktiverte genereringen av meksikanske elektroniske fakturaer ved hjelp av CFD-metoden (Comprobante Fiscal Digital), der firmaet signerer fakturaen ved å be om relaterte godkjenning fra myndighetene. Denne funksjonen gir også en månedlig rapport som inneholder alle elektroniske fakturaer som ble utstedt i perioden.
 
@@ -721,8 +652,7 @@ Denne funksjonen aktiverte genereringen av meksikanske elektroniske fakturaer ve
 | Erstattet med en annen funksjon? | Antall                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Berørte moduler             | Kunder, Prosjekt                                                                                                                                                                                                                                                                                                                                                                              |
 
-### Mexico realisert og urealisert mva
-<a id="mexico-realized-and-unrealized-vat" class="xliff"></a>
+### <a name="mexico-realized-and-unrealized-vat"></a>Mexico realisert og urealisert mva
 
 Microsoft Dynamics AX 2012 administrerte urealisert merverdiavgift (mva) ved å bruke Mexico-spesifikk funksjonalitet for "urealisert mva".
 
@@ -732,8 +662,7 @@ Microsoft Dynamics AX 2012 administrerte urealisert merverdiavgift (mva) ved å 
 | Erstattet med en annen funksjon? | Ja, denne funksjonen er erstattet med standard betinget mva-funksjonaliteten som tilbys av Core. |
 | Berørte moduler             | Avgift                                                                                                                 |
 
-### Microsoft Outlook-integrering
-<a id="microsoft-outlook-integration" class="xliff"></a>
+### <a name="microsoft-outlook-integration"></a>Microsoft Outlook-integrering
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
@@ -741,8 +670,7 @@ Microsoft Dynamics AX 2012 administrerte urealisert merverdiavgift (mva) ved å 
 | Erstattet med en annen funksjon? | Ja                                                                            |
 | Berørte moduler             | Salg og markedsføring                                                            |
 
-### Lønnsinformasjon i Personale
-<a id="payroll-information-in-human-resources" class="xliff"></a>
+### <a name="payroll-information-in-human-resources"></a>Lønnsinformasjon i Personale
 
 Lønnsinformasjon i Personale
 
@@ -752,8 +680,7 @@ Lønnsinformasjon i Personale
 | Erstattet med en annen funksjon? | **Fordeler**, **Inntekter** og andre tilknyttede sider som tidligere var i US Payroll, er konfigurert på nytt og er nå en del av kjerneinstallasjonen av Personale for å støtte ekstern lønnsbehandling. Denne funksjonaliteten er tilgjengelig ved å bruke **Personale 1** &gt; **Lønn**-konfigurasjonsnøkkelen. |
 | Berørte moduler             | Personale, Lønn                                                                                                                                                                                                                                                                                                     |
 
-### Privat blokkering av lager- og lagerstyringsjournaler
-<a id="private-blocking-of-inventory-and-warehouse-management-journals" class="xliff"></a>
+### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Privat blokkering av lager- og lagerstyringsjournaler
 
 Lager- og lagerstyringsjournaler støtter ikke lenger muligheten til å merke en journal som privat for en valgt bruker. Bare prosessen med å blokkere journaler som privat for brukergrupper og blokkering under redigering støttes.
 
@@ -763,8 +690,7 @@ Lager- og lagerstyringsjournaler støtter ikke lenger muligheten til å merke en
 | Erstattet med en annen funksjon? | Antall                                     |
 | Berørte moduler             | Lagerstyring                   |
 
-### Produktkonfigurator
-<a id="product-builder" class="xliff"></a>
+### <a name="product-builder"></a>Produktkonfigurator
 
 Produktkonfigurator ble brukt til å konfigurere varer dynamisk fra en salgsordre, en bestilling, en produksjonsordre, et salgstilbud, et prosjekttilbud eller et varebehov. Basert på en produktmodell som hadde modelleringsvariabler, kan brukeren velge verdier for å imøtekomme kundekravene og få en unik produktvariant som hadde en stykkliste og rute.
 
@@ -774,8 +700,7 @@ Produktkonfigurator ble brukt til å konfigurere varer dynamisk fra en salgsordr
 | Erstattet med en annen funksjon? | Produktkonfigurasjon                                                                                                                                                                                   |
 | Berørte moduler             | Behandling av produktinformasjon, salg og markedsføring                                                                                                                                                     |
 
-### Gi nytt navn til produktdimensjon
-<a id="rename-product-dimension" class="xliff"></a>
+### <a name="rename-product-dimension"></a>Gi nytt navn til produktdimensjon
 
 Med denne funksjonen kan du endre navnet på en av de tre standard produktdimensjonene (størrelse, farge eller stil) til et navn som passer bedre til dine forretningsbehov. Navneendring inkluderte alle etikettene der produktdimensjonsnavnet ble brukt.
 
@@ -785,8 +710,7 @@ Med denne funksjonen kan du endre navnet på en av de tre standard produktdimens
 | Erstattet med en annen funksjon? | Ingen                                                                            |
 | Berørte moduler             | Behandling av produktinformasjon                                                |
 
-### Tilkobling til detaljhandelsserver med HTTP
-<a id="retail-server-connectivity-using-http" class="xliff"></a>
+### <a name="retail-server-connectivity-using-http"></a>Tilkobling til detaljhandelsserver med HTTP
 
 I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kommunikasjon (ikke sikret). Dette var i tillegg til standardkommunikasjonen med HTTPS.
 
@@ -796,8 +720,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | Erstattet med en annen funksjon? | Nr. Nå støttes bare standard HTTPS-kommunikasjon.                                                                           |
 | Berørte moduler             | Detaljhandelsserver                                                |
 
-### Rollesentersider
-<a id="role-center-pages" class="xliff"></a>
+### <a name="role-center-pages"></a>Rollesentersider
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -805,8 +728,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | Erstattet med en annen funksjon? | Det nye arbeidsområdeskjemamønsteret gir brukerne en prosessentrert design som gir enkel tilgang til ofte brukte oppgaver i denne prosessen.                       |
 | Berørte moduler             | Alle                                                                                                                                                                      |
 
-### Mva-jurisdiksjoner
-<a id="sales-tax-jurisdictions" class="xliff"></a>
+### <a name="sales-tax-jurisdictions"></a>Mva-jurisdiksjoner
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
@@ -814,8 +736,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | Erstattet med en annen funksjon? | Antall                                           |
 | Berørte moduler             | Amerikansk merverdiavgift                                 |
 
-### Transportørgrensesnitt
-<a id="shipping-carrier-interface" class="xliff"></a>
+### <a name="shipping-carrier-interface"></a>Transportørgrensesnitt
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -823,8 +744,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | Erstattet med en annen funksjon? | Ja, denne funksjonen er delvis erstattet med Transportstyring, men er ennå ikke erstattet med grunnleggende Lagerstyring (WMS I). |
 | Berørte moduler             | Salg og markedsføring, Lagerstyring                                                                                                       |
 
-### Sites Services
-<a id="sites-services" class="xliff"></a>
+### <a name="sites-services"></a>Sites Services
 
 Sites Services lar deg bygge webområder som utvider forretningsprosesser til Internett uten IT-støtte.
 
@@ -834,8 +754,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 | Erstattet med en annen funksjon? | Antall                                                                                                                                       |
 | Berørte moduler             | Personalerekruttering, saksbehandling, forespørsel om tilbud, leverandørregistrering                                                                  |
 
-### SSAS, strategi for behovsprognose
-<a id="ssas-demand-forecasting-strategy" class="xliff"></a>
+### <a name="ssas-demand-forecasting-strategy"></a>SSAS, strategi for behovsprognose
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
@@ -843,8 +762,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 | Erstattet med en annen funksjon? | Azure Machine Learning, strategi for behovsprognose                           |
 | Berørte moduler             | Planlegging                                                                     |
 
-### Reiserekvisisjoner
-<a id="travel-requisitions" class="xliff"></a>
+### <a name="travel-requisitions"></a>Reiserekvisisjoner
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
@@ -852,8 +770,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 | Erstattet med en annen funksjon? | Antall                                                              |
 | Berørte moduler             | Reiseregning og utlegg                                              |
 
-### Leverandørfakturapulje uten posteringsdetaljer
-<a id="vendor-invoice-pool-excluding-posting-details" class="xliff"></a>
+### <a name="vendor-invoice-pool-excluding-posting-details"></a>Leverandørfakturapulje uten posteringsdetaljer
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -861,8 +778,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 | Erstattet med en annen funksjon? | Arbeidsflytfunksjoner til fakturajournalen.                                                           |
 | Berørte moduler             | Leverandører                                                                                        |
 
-### Virtuelle firmakontoer
-<a id="virtual-company-accounts" class="xliff"></a>
+### <a name="virtual-company-accounts"></a>Virtuelle firmakontoer
 
 Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
 
@@ -891,8 +807,7 @@ Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firma
 </tbody>
 </table>
 
-### Lagerstyring II
-<a id="warehouse-management-ii" class="xliff"></a>
+### <a name="warehouse-management-ii"></a>Lagerstyring II
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -900,8 +815,7 @@ Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firma
 | Erstattet med en annen funksjon? | **Lagerstyring**-modulen som ble lansert i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter Lagerstyring II-funksjonene. Den nye modulen har mer avanserte funksjoner og mer fleksible lagerstyringsprosesser enn i Lagerstyring II. |
 | Berørte moduler             | Lagerstyring, salg og markedsføring, innkjøp og leverandører                                                                                                                                                                                                                                         |
 
-### Arbeiderpåminnelser i Personale
-<a id="worker-reminders-in-human-resources" class="xliff"></a>
+### <a name="worker-reminders-in-human-resources"></a>Arbeiderpåminnelser i Personale
 
 Lønnsinformasjon i Personale
 
@@ -911,8 +825,7 @@ Lønnsinformasjon i Personale
 | Erstattet med en annen funksjon? | Antall              |
 | Berørte moduler             | Personale |
 
-### Jobbplanlegger
-<a id="workplanner" class="xliff"></a>
+### <a name="workplanner"></a>Jobbplanlegger
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -920,8 +833,7 @@ Lønnsinformasjon i Personale
 | Erstattet med en annen funksjon? | Nei, men **Profilrelasjon**-siden som åpnes fra **Profilgrupper**-siden, støtter samme forretningsscenario som den avskrevne **Jobbplanlegger**-siden. |
 | Berørte moduler             | Timeregistrering                                                                                                                                                  |
 
-### X++-regnskapsoppgjør
-<a id="x-financial-statements" class="xliff"></a>
+### <a name="x-financial-statements"></a>X++-regnskapsoppgjør
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|

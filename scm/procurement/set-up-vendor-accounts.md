@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definere leverandørkontoer
-<a id="set-up-vendor-accounts" class="xliff"></a>
+# <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,20 +48,16 @@ Hvis du vil gjøre det raskere å opprette leverandørkontoer, kan du opprette m
 
 Du kan også opprette en brukermal til eget bruk. Du kan ikke slette en leverandør som er knyttet til andre oppføringer, for eksempel kontakter eller produkter.
 
-## Leverandørens kontonumre.
-<a id="vendor-account-numbers" class="xliff"></a>
+## <a name="vendor-account-numbers"></a>Leverandørens kontonumre.
 Kontonummeret er en unik identifikator for en leverandør. Du kan definere kontonumre slik at de genereres automatisk når du oppretter en leverandør. Du kan også konfigurere nummerserien slik at kontonumre angis manuelt. Du kan for eksempel bruke leverandørens telefonnummer som identifikator.
 
-## Leverandørorganisasjoner og individuelle leverandører
-<a id="vendor-organizations-and-individual-vendors" class="xliff"></a>
+## <a name="vendor-organizations-and-individual-vendors"></a>Leverandørorganisasjoner og individuelle leverandører
 Når du oppretter en ny leverandørkonto, må du velge om leverandøren er en organisasjon eller en person. Valget påvirker informasjonen som du må fylle ut for leverandøren. For en person inneholder denne informasjonen fornavn, etternavn og tittel. For en organisasjon inkluderer denne informasjonen organisasjonsnummer og antall ansatte.
 
-## Adresser
-<a id="addresses" class="xliff"></a>
+## <a name="addresses"></a>Adresser
 Du kan definere flere adresser som brukes til forskjellige formål, for hver leverandør. Du kan for eksempel opprette en adresse som har **faktura** som formål. Eller hvis du vil betale leverandøren med sjekk, kan du definere en adresse som har **Remitter til** som formål. Hvis du må angi en adresse som skal brukes ved pengeoverføringer til utenlandske banker, blir formålet **SWIFT**.
 
-## Leverandørkontakter
-<a id="vendor-contacts" class="xliff"></a>
+## <a name="vendor-contacts"></a>Leverandørkontakter
 Du kan lagre kontakter for en leverandør. Disse kontaktene kan brukes på dokumenter som bestillinger eller tilbudsforespørsler.  
 
 Hvis du vil legge til kontakter for en leverandør, går du til **Alle leverandører**-siden i kategorien **Leverandør** i **Oppsett**-gruppen, og klikker på **Kontakter** &gt; **Legg til kontakter**.  
@@ -75,8 +70,7 @@ Du kan ikke slette en kontaktpersonpost hvis det refereres til kontakten i et do
 
 Du kan legge til leverandørkontakter i dine personlige kontakter i Microsoft Office 365. Du må imidlertid først definere synkronisering mellom Finance and Operations og Office 365 både i Microsoft Exchange Server-synkroniseringen og installasjonsveiviseren for Microsoft Outlook.
 
-## Leverandører i ulike juridiske enheter
-<a id="vendors-in-different-legal-entities" class="xliff"></a>
+## <a name="vendors-in-different-legal-entities"></a>Leverandører i ulike juridiske enheter
 Hvis en leverandør er registrert for bare én juridisk enhet i organisasjonen og andre juridiske enheter må registrere samme leverandør, kan du bruke siden **Legg til leverandør i en annen juridisk enhet** for å konfigurere leverandøren til å gjøre forretninger med en annen juridisk enhet. Du må velge en leverandørgruppe, valuta, og ventestatus for leverandøren i den valgte juridiske enheten.  
 
 Hvis flere juridiske enheter innenfor organisasjonen gjør forretninger med den samme leverandøren, og hver juridiske enhet har en egen leverandørkonto for den leverandøren, kan du slå sammen part-ID-ene for leverandørkontoene. På denne måten kan informasjon som adresse og antall ansatte deles, slik at du bare må oppdatere dette på ett sted.  
@@ -86,12 +80,10 @@ Hvis du vil flette part-ID-er, kan du følge disse trinnene.
 1.  På siden **Global adressebok** velger du postene i adresseboken som representerer leverandøren i hver juridiske enhet som skal tas med i tilordningen.
 2.  Klikk **Flett poster** i handlingsruten.
 
-## Avtaler
-<a id="agreements" class="xliff"></a>
+## <a name="agreements"></a>Avtaler
 Når du setter opp en leverandørkonto, kan det også være at du vil registrere avtalene du har med leverandøren. Du kan definere avtalene for pris og rabatt ved hjelp av handlingene på leverandørposten. Du kan også definere en kjøpsavtale på **Kjøpsavtaler**-siden.
 
-## Plassere en leverandør på vent
-<a id="putting-a-vendor-on-hold" class="xliff"></a>
+## <a name="putting-a-vendor-on-hold"></a>Plassere en leverandør på vent
 Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgende alternativer er tilgjengelige:
 
 -   **Ingen** – Ingen sperrer på leverandøren.
@@ -103,16 +95,13 @@ Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgen
 
 Når du setter en leverandør på vent, kan du også angi en årsak og en dato for når statusen på vent avsluttes. Hvis du ikke angir en sluttdato, varer leverandørens på vent-status i det uendelige.
 
-## Leverandørfakturakonto
-<a id="vendor-invoice-account" class="xliff"></a>
+## <a name="vendor-invoice-account"></a>Leverandørfakturakonto
 Hvis mer enn én leverandør har samme fakturaadresse, eller hvis en leverandør faktureres gjennom en tredjepart, kan du angi en fakturakonto i leverandørposten. Fakturakontoen er den kontoen som fakturabeløpet blir kreditert når du oppretter en leverandørfaktura fra en bestilling. Hvis du ikke angir noen fakturakonto i leverandørposten, blir leverandørkontoen brukt som fakturakonto.
 
-## Leverandørbankkontoer
-<a id="vendor-bank-accounts" class="xliff"></a>
+## <a name="vendor-bank-accounts"></a>Leverandørbankkontoer
 Hvis du må betale til en leverandørbankkonto, kan du angi informasjon om leverandørens bank og bankkontoer på **Leverandørbankkontoer**-siden. Du kan også angi validerings- og betalingsinformasjon for bankkontoen. Du kan for eksempel legge til forhåndsmerknader i leverandørbankkontoer. Disse forhåndsmerknadene kan brukes til å bekrefte nøyaktigheten til kontodata, for eksempel registreringsnumre og kontonumre. Du må angi en standardkonto for betalinger til leverandøren. Når du foretar en betaling, kan du imidlertid endre denne kontoen til en av leverandørens andre kontoer.
 
-## Finanskontoer
-<a id="ledger-accounts" class="xliff"></a>
+## <a name="ledger-accounts"></a>Finanskontoer
 Du kan angi standardkontoene som vises automatisk i leverandørfakturajournaler for den angitte leverandøren. Denne funksjonaliteten kan være nyttig hvis du vanligvis betaler for samme type ting eller tjenester fra de samme leverandørene over tid. Når du angir en standardkonto, kan du raskt og effektivt angi journaloppføringer i fakturajournalen. Standardkontoene du angir, brukes ikke for bestillinger eller for leverandørfakturaer som angis på **Leverandørfaktura**-siden.  
 
 Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura**-kategorien i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Behandling av skift og kassaskuff
-<a id="shift-and-cash-drawer-management" class="xliff"></a>
+# <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
 [!include[banner](includes/banner.md)]
 
@@ -38,12 +37,10 @@ Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for 
 
 Det finnes to skifttyper for salgssted for detaljhandel: frittstående og delt. Frittstående skift kan bare brukes av én arbeider om gangen. Delte Skift kan brukes av flere brukere på flere steder. Derfor utgjør de effektivt ett enkelt skift for flere arbeidere i en butikk.
 
-## Frittstående skift
-<a id="standalone-shifts" class="xliff"></a>
+## <a name="standalone-shifts"></a>Frittstående skift
 Frittstående skift brukes i tradisjonelle situasjoner med fast salgssted der kontanter avstemmes uavhengig for hver kasse på salgsstedet. I dagligvareforretninger er det for eksempel vanligvis flere faste kasser på salgsstedet, og en kasserer er tilordnet til hver kasse. I slike tilfeller bruker hver kasse sannsynligvis et frittstående skift, og kassereren er ansvarlig for kassen eller fysisk kontanter i denne kassen. Et frittstående skift omfatter all aktivitet på denne kassen i løpet av kassererens arbeidsskift. Aktiviteter kan omfatte åpningsbeløpet i kassen, fjerning og tillegg av kontanter ved bruk, som deponeringer til bank og flytoppføring, og kasseoppgjøret på slutten av skiftet.
 
-### Definere et frittstående skift
-<a id="set-up-a-stand-alone-shift" class="xliff"></a>
+### <a name="set-up-a-stand-alone-shift"></a>Definere et frittstående skift
 
 Et frittstående skift angis på kasseskuffnivå. Denne fremgangsmåten beskriver hvordan du definerer et frittstående skift i en kasse på utsalgstedet.
 
@@ -58,8 +55,7 @@ Et frittstående skift angis på kasseskuffnivå. Denne fremgangsmåten beskrive
 9.  Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
 10. Velg distribusjonsplanen **1090**, og klikk deretter **Kjør nå** for å synkronisere endringer på salgsstedet.
 
-### Bruke et frittstående skift
-<a id="use-a-stand-alone-shift" class="xliff"></a>
+### <a name="use-a-stand-alone-shift"></a>Bruke et frittstående skift
 
 1.  Logg på salgsstedet.
 2.  Hvis ingen skift er åpent, velger du **Åpne et nytt skift**.
@@ -71,12 +67,10 @@ Et frittstående skift angis på kasseskuffnivå. Denne fremgangsmåten beskrive
 
 **Obs!** Andre operasjoner er tilgjengelige under skiftet, avhengig av forretningsprosessene som er på plass. OPerasjonene **Deponer til safe**, **Deponer til bank** og **Fjerning av betalingsmidler** kan brukes for å fjerne penger fra kassen i løpet av dagen eller før skiftet lukkes. Hvis det er lite penger igjen i en kasse, kan operasjonen **Flytoppføring** brukes for å legge til kontanter i kassen.
 
-## Delte skift
-<a id="shared-shifts" class="xliff"></a>
+## <a name="shared-shifts"></a>Delte skift
 Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller et sett med kassaskuffer hele arbeidsdagen. Vanligvis brukes et delt skift i mobile salgsstedsmiljøer. I et mobilt miljø er ikke hver kassereren tildelt og ansvarlig for én enkelt kassaskuff. I stedet må alle kasserere kunne utføre et salg og legge til kontanter i kassaskuffen som er nærmest dem. I dette scenariet er pengeskuffene som deles mellom kasserere inkludert i et delt skift. Alle kassaskuffer i et delt skift er inkludert i det samme skiftet for aktiviteter som er knyttet til behandling av kontanter for skiftet. Derfor skal startbeløpet for skiftet inkludere summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. På samme måte skal kassaoppgjøret være summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. **Obs!** Bare ett delt skift kan være åpent om gangen i hver butikk. Delte skift og frittstående skift kan brukes i den samme butikken.
 
-### Definere et delte skift
-<a id="set-up-a-shared-shift" class="xliff"></a>
+### <a name="set-up-a-shared-shift"></a>Definere et delte skift
 
 1.  Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**.
 2.  Velg maskinvareprofilen som skal brukes for det delte skiftet.
@@ -89,8 +83,7 @@ Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller e
 9.  Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
 10. Velg distribusjonsplanen **1090**, og klikk deretter **Kjør nå** for å synkronisere endringer på salgsstedet.
 
-### Bruke et delte skift
-<a id="use-a-shared-shift" class="xliff"></a>
+### <a name="use-a-shared-shift"></a>Bruke et delte skift
 
 1.  Logg på salgsstedet.
 2.  Hvis salgsstedet ennå ikke er koblet til en maskinvarestasjon, velger du **Ikke-skuff-operasjon**, og velg deretter operasjonen **Velg maskinvarestasjon** for å aktivere en maskinvarestasjon for det delte skiftet. Dette trinnet er nødvendig bare første gang en kasse legges til i et miljø med delte skift.

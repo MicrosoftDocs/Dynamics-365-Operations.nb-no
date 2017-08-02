@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Finansdimensjoner
-<a id="financial-dimensions" class="xliff"></a>
+# <a name="financial-dimensions"></a>Finansdimensjoner
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Her er noen av begrensningene:
 - Du kan bare bruke mva-funksjonaliteten med juridiske enheter, ikke med finansdimensjoner.
 - Noen av rapportene inneholder ikke finansdimensjoner. Derfor kan det hende du må endre rapportene for å rapportere etter finansdimensjon.
 
-## Egendefinerte dimensjoner
-<a id="custom-dimensions" class="xliff"></a>
+## <a name="custom-dimensions"></a>Egendefinerte dimensjoner
 
 For å opprette en brukerdefinert finansdimensjon velger du **Egendefinerte dimensjoner** i feltet **&lt;Bruk verdier fra&gt;**. Du kan også angi en kontomaske for å begrense mengden og typen informasjon som du kan angi for dimensjonsverdier. Du kan angi tegn som forblir de samme for hver dimensjonsverdi, for eksempel bokstaver eller en bindestrek (-). Du kan også angi nummertegn (\#) og og-tegn (&) om plassholdere for bokstaver og tall som vil endres hver gang en dimensjonsverdi opprettes. Bruk et nummertegn (\#) som plassholder for et tall og et og-tegn (&) som plassholder for en bokstav. Feltet for formatmasken er bare tilgjengelig når du velger **&lt;Egendefinert dimensjon&gt;** i feltet **Bruk verdier fra**.
 
@@ -60,28 +58,23 @@ For å opprette en brukerdefinert finansdimensjon velger du **Egendefinerte dime
 
 Hvis du vil begrense dimensjonsverdien til bokstavene «CC» og tre tall, kan du angi **CC-\#\#\#** som formatmaske.
 
-## Enhetsstøttede dimensjoner
-<a id="entity-backed-dimensions" class="xliff"></a>
+## <a name="entity-backed-dimensions"></a>Enhetsstøttede dimensjoner
 
 Hvis du vil opprette en enhetsstøttet finansdimensjon, velger du en systemdefinert enhet som basis for finansdimensjonen, i feltet **Bruk verdier fra**. Finansdimensjonsverdier opprettes deretter fra den enheten. Hvis du for eksempel vil opprette dimensjonsverdier for prosjekter, velger du **Prosjekter**. En dimensjonsverdi opprettes deretter for hvert prosjektnavn. Siden **Finansdimensjonsverdier** viser verdiene for enheten. Hvis disse verdiene er firmaspesifikke, viser siden også firmaet.
 
-## Aktivering av dimensjoner
-<a id="activating-dimensions" class="xliff"></a>
+## <a name="activating-dimensions"></a>Aktivering av dimensjoner
 
 Når du aktiverer en finansdimensjon, oppdateres tabellen slik at den inkluderer navnet på finansdimensjonen. Slettede dimensjoner fjernes. Du kan angi dimensjonsverdier før du aktiverer en finansdimensjon. En finansdimensjon ikke imidlertid ikke brukes hvor som helst før den er aktivert. Du kan for eksempel ikke legge til en finansdimensjon i en kontostruktur før finansdimensjonen er aktivert. Når du klikker **Aktiver**, oppdateres alle dimensjoner, og viser statusendringer. 
 
-## Oversettelser
-<a id="translations" class="xliff"></a>
+## <a name="translations"></a>Oversettelser
 
 På siden  **Tekstoversettelse** kan du skrive inn tekst for den valgte finansdimensjonen i forskjellige språk. På siden  **Tekstoversettelse** kan du skrive inn tekst for hovedkontoen i forskjellige språk. 
 
-## Overstyringer for juridisk enhet
-<a id="legal-entity-overrides" class="xliff"></a>
+## <a name="legal-entity-overrides"></a>Overstyringer for juridisk enhet
 
 Alle dimensjonene er ikke gyldig for alle juridiske enheter. Dessuten kan noen dimensjoner bare være relevante i en bestemt periode. I disse tilfellene kan du bruke delen **Overstyringer for juridisk enhet** til å angi firmaene dimensjonen skal suspenderes for, eieren, og tidsperioden dimensjonen er aktiv.
 
-## Slette finansdimensjoner
-<a id="deleting-financial-dimensions" class="xliff"></a>
+## <a name="deleting-financial-dimensions"></a>Slette finansdimensjoner
 
 For å opprettholde referanseintegriteten for dataene, kan finansdimensjoner sjelden slettes. Hvis du prøver å slette en finansdimensjon, evalueres følgende kriterier:
 

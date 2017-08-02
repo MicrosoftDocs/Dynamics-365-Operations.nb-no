@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Definere firmaspesifikke parametere for Personale
-<a id="set-up-company-specific-hr-parameters" class="xliff"></a>
+# <a name="set-up-company-specific-hr-parameters"></a>Definere firmaspesifikke parametere for Personale
 
 [!include[banner](includes/banner.md)]
 
@@ -50,20 +49,17 @@ Innstillingene i kategorien **Rekruttering** definerer dokumenttypene som skal b
 
 Innstillingene i kategorien **Kompensasjon** definerer om brukere må bekrefte at de vil lagre informasjon for en fast eller variabel kompensasjonsplan. Hvis du merker av for **Aktiver lagring av validering**, mottar brukere en melding som spør om de vil lagre posten hver gang de lukker en kompensasjonsrelatert side. Noen av sidene i kompensasjonsstyring lar ikke brukere slette informasjon. Derfor ved å be brukerne bekrefte at de vil lagre informasjon, kan du kunne begrense mengden av informasjon som lagres, men som ikke kan slettes senere. Hvis det ikke er merket av for **Aktiver lagring av validering**, lagres alltid poster umiddelbart, muligens før brukeren er klar. Hvis du bruker ytelsesstyring, lar kategorien **Kompensasjon** deg også velge en vurderingsmodell å bruke i stedet for modellen som er tilordnet til kompensasjonsplaner når ytelse rangeres. 
 
-### Tidligere utgitt funksjonalitet
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Tidligere utgitt funksjonalitet
 Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier** (klikk på **Organisasjonsstyring** &gt; **Nummerserier** &gt; **Nummerserier**).
 
-### Hvis du bruker Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Hvis du bruker Dynamics 365 for Talent
 Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier** (klikk på **Systemadministrasjon** &gt; **Koblinger-kategorien** &gt; **Nummerserier** &gt; **Nummerserier**). 
 
 Innstillingene i kategorien **FMLA** definerer hvor mange timer en ansatt må arbeide for å være kvalifisert for FMLA-fordeler, lengden på ansettelse som er nødvendig for berettigelse, og ansettelsesforholdets startdato som brukes til å fastslå lengden på ansettelse. Innstillingene definerer også antallet FMLA-timer som ansatte er berettiget til og FMLA-kalenderen som brukes til å beregne hvor mange FMLA-timer ansatte har brukt. Kategorien **FMLA** er bare tilgjengelig for firmaer i USA. 
 
 **Obs!** Antall timer arbeidet kan ikke overskride 1 250, og lengden på ansettelse kan ikke overskride 12 måneder. Disse maksimumsverdier er i overensstemmelse med gjeldende lovgivning i USA. Til slutt bestemmer innstillingene i kategorien **Ansattselvbetjening** opplysningene som en leder kan angi på vegne av hans eller hennes ansatte.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md)

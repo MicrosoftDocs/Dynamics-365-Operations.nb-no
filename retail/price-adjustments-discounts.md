@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Prisjusteringer og rabatter
-<a id="price-adjustments-and-discounts" class="xliff"></a>
+# <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Denne artikkelen inneholder informasjon om prisjusteringer og rabatter i detaljh
 
 I Dynamics 365 for Retail kan du justere prisen på produkter og du kan også definere rabatter som gjelder for en linjevare eller en transaksjon ved salgsstedet, i en salgsordre for telefonsenter eller en elektronisk ordre. Både prisjusteringer og rabatter kan knyttes til prisgrupper. Du kan angi én enkelt startdato og sluttdato eller en regelmessig periode, en rabattkode og noen ytterligere attributter for både prisjusteringer og rabatter. Prisjusteringer og rabatter kan brukes på produkter, varianter eller hierarkier. Hvis mer enn én rabatt gjelder for et produkt, kan en kunde få enten en av rabattene eller en kombinert rabatt, avhengig av konfigurasjonen av rabatten. Dynamics 365 for Retail bruker automatisk rabatten eller kombinasjon av rabatter som gir den beste prisen til kunden. Når du definerer en prisjustering eller rabatt, må du bekrefte at prisgrupper tilordnes til riktige kanaler, kataloger, tilknytninger eller fordelsprogrammer som du vil at rabatten skal gjelde for. Hvis du i tillegg vil generere rabatt-ID-en automatisk, kan du definere nummerserier på **Detaljhandelsparametere**-siden før du definerer en ny rabatt eller prisjustering. **Obs!** Du kan slette en prisjustering eller rabatt. Statistisk informasjon går imidlertid tapt.
 
-### Rabattyper
-<a id="types-of-discounts" class="xliff"></a>
+### <a name="types-of-discounts"></a>Rabattyper
 
 Det finnes fire typer detaljhandelsrabatter:
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Automatisk utligning og prioritering
-<a id="automatic-settlement-and-prioritization" class="xliff"></a>
+# <a name="automatic-settlement-and-prioritization"></a>Automatisk utligning og prioritering
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Du har to alternativer når du utligner betalinger med fakturaer og andre transa
 
 Delene nedenfor beskriver hvordan transaksjonene utlignes for hver metode.
 
-## Eksempeltransaksjoner
-<a id="example-transactions" class="xliff"></a>
+## <a name="example-transactions"></a>Eksempeltransaksjoner
 Eksemplene på utligninger senere i denne artikkelen, er basert på følgende transaksjoner. Alle transaksjonene er for kunde 2050.
 
 | Transaksjon   | Dato        | Beløp | Betingelser for kontantrabatt | Kontantrabattdato | Kommentarer                                                                                                                                                                                      |
@@ -53,8 +51,7 @@ Eksemplene på utligninger senere i denne artikkelen, er basert på følgende tr
 | Faktura 3     | 15. oktober  | 500,00 | 2 % 14/netto 30        | 29. oktober         |                                                                                                                                                                                               |
 | Rentenota | 15. oktober  | 7,00   |                     |                    | Denne rentenotaen er for faktura 1 og faktura 2. Beløpet beregnes som 2 prosent rente på beløp som er 30 eller flere dager over fristen. Eksempel: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## Brukerdefinert utligningsprioritet
-<a id="userdefined-settlement-priority" class="xliff"></a>
+## <a name="userdefined-settlement-priority"></a>Brukerdefinert utligningsprioritet
 Hvis du setter **Bruk prioritet for automatiske utligninger** til **Ja** på **Kundeparametere**-siden, brukes utligningsprioriteten som du definerer på **Utligningsprioritet**-siden når transaksjoner er valgt for automatisk utligning. Følgende utligningsprioritet er definert i dette eksemplet:
 
 1.  transaksjonstype
@@ -75,8 +72,7 @@ Hvis du posterer en betaling på 700,00 25. oktober, utlignes betalingen til tra
 | Faktura 2     | 1/9/2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 15/10/2015 |         | 500,00                         | 343.00           | 157.00  | USD      |
 
-## Standard automatisk utligning
-<a id="default-automatic-settlement" class="xliff"></a>
+## <a name="default-automatic-settlement"></a>Standard automatisk utligning
 Hvis det ikke finnes noen brukerdefinert utligningsprioritet, velges transaksjoner for utligning automatisk basert på forfallsdatoen. Transaksjoner som er utlignet, må ha samme valuta som transaksjonen som de er utlignet mot. Hvis du posterer en betaling på 700,00 25. oktober, blir følgende transaksjoner valgt for utligning.
 
 | Bilag       | Dato       | Faktura | Beløp i transaksjonsvaluta | Beløp som skal utlignes | Saldo | Valuta |

@@ -25,41 +25,34 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Overfør fra AX 2012 til Finance and Operations
-<a id="migrate-from-ax-2012-to-finance-and-operations" class="xliff"></a>
+# <a name="migrate-from-ax-2012-to-finance-and-operations"></a>Overfør fra AX 2012 til Finance and Operations
 
 Dette emnet gir en oversikt over alternativene for migrasjon av produkt- og lagerstyring i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Introduksjon
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduksjon
 ------------
 
 Under en oppgradering til Finance and Operations blokkeres produkter hvis de er knyttet til en lagringsdimensjonsgruppe som har innstillinger som ikke samsvarer med kravene til innstillingene for lagringsdimensjonsgrupper i Finance and Operations. Etter oppgraderingen, kan du imidlertid bruke et sett med alternativer for overføring i  **Endre lagringsdimensjonsgruppen for varer**-prosessen for å fjerne blokkeringen av produkter som er blokkert under oppgraderingen. Deretter kan du behandle transaksjoner for disse produktene. Noen av elementene kan allerede være knyttet til lagringsdimensjonsgrupper der lagerdimensjonene område, lager og lokasjon er aktiv og fysisk sporet. I så fall kan du bruke **Endre lagringsdimensjonsgruppen for varer**-prosessen for å aktivere elementene som skal brukes i lagerstyringsprosesser. Denne funksjonen er nyttig hvis du vil bruke i lagerstyringsfunksjonen for eksisterende varer.
 
-## Oppgradering til Finance and Operations når AX 2012 R3 WMSII brukes
-<a id="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used" class="xliff"></a>
+## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Oppgradering til Finance and Operations når AX 2012 R3 WMSII brukes
 Finance and Operations støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke den nye **Lagerstyring**-modulen. Hvis du vil ha mer informasjon, se [lagerstyring-hjemmesiden](https://ax.help.dynamics.com/en/wiki/warehouse-management/). I tidligere versjoner kunne du velge lagerdimensjonene lokasjon og pall-ID for økonomisk lager. Som en del av oppgraderingsprosessen, kan imidlertid lagerdimensjonen pall-ID ikke lenger aktiveres for økonomisk lager. Alle produkter som er tilknyttet en lagringsdimensjonsgruppe som bruker pall-ID-lagerdimensjonen, blokkeres, og vil ikke bli behandlet.
 
-### Aktivere varer i Finance og Operations
-<a id="enabling-items-in-finance-and-operations" class="xliff"></a>
+### <a name="enabling-items-in-finance-and-operations"></a>Aktivere varer i Finance og Operations
 
 I Finance and Operations må varer som skal brukes som en del av lagerstyringsprosesser, være tilknyttet en lagringsdimensjonsgruppe hvor parameteren **Bruk lagerstyringsprosesser** er valgt. Når denne innstillingen er valgt, blir lagerdimensjonene område, lager, lagerstatus, lokasjon og nummerskilt aktive. Du kan bare endre til denne typen lagringsdimensjonsgruppe for varer som allerede er tilknyttet lagringsdimensjonsgrupper der lagerdimensjonen lokasjon er aktiv.
 
-### Varer som er sperret for beholdningsoppdateringer
-<a id="items-that-are-blocked-for-inventory-updates" class="xliff"></a>
+### <a name="items-that-are-blocked-for-inventory-updates"></a>Varer som er sperret for beholdningsoppdateringer
 
 For å vise listen over frigitte produkter som er blokkert under oppgraderingen og ikke kan behandles, klikker du **Lagerstyring** &gt; **Oppsett** &gt; **Beholdning** &gt; **Varer som er sperret for beholdningsoppdateringer**.
 
-### Bruke sperrede produkter på nytt
-<a id="reapplying-blocked-products" class="xliff"></a>
+### <a name="reapplying-blocked-products"></a>Bruke sperrede produkter på nytt
 
 Hvis du vil oppheve blokkeringen av produkter som er blokkert under oppgraderingen, må du velge en ny lagringsdimensjonsgruppe for produktene. Vær oppmerksom på at du kan endre lagringsdimensjonsgruppen selv om det finnes åpne lagertransaksjoner. Hvis du vil bruke varer som ble blokkert under oppgradering, har du to alternativer:
 
 -   Endre lagringsdimensjonsgruppen for varen til en lagringsdimensjonsgruppe som bare bruker lagerdimensjonene området lager og lokasjon. Som følge av denne endringen brukes ikke lagerdimensjonen pall-ID lenger.
 -   Endre lagringsdimensjonsgruppen for varen til en lagringsdimensjonsgruppe som bare bruker lagerstyringsprosessene. Som følge av denne endringen brukes nå lagerdimensjonen nummerskilt.
 
-### Migreringsprosesser
-<a id="migration-processes" class="xliff"></a>
+### <a name="migration-processes"></a>Migreringsprosesser
 
 I Finance and Operations er varesporing en del av lagerstyringsprosessene. For disse prosessene må alle lagre og deres lokasjoner være tilknyttet en lokasjonsprofil. Begrepsmessig, hvis du vil bruke lager lagerstyringsprosesser, må to prosesser behandles:
 
@@ -68,13 +61,11 @@ I Finance and Operations er varesporing en del av lagerstyringsprosessene. For d
 
 Hvis kilde-lagringsdimensjonsgruppene bruker lagerdimensjonen pall-ID, må lokasjonene til eksisterende lagerbeholdning som brukte lagerdimensjonen pall-ID, tilknyttes en lokasjonsprofil der **Bruk sporing av nummerskilt**-parameteren er valgt. Hvis de eksisterende lagrene ikke skal aktiveres for bruk av lagerstyringsprosesser, kan du endre den eksisterende lagerbeholdningens lagringsdimensjonsgrupper til grupper som bare håndterer lagerdimensjonene område, lager og lokasjon.
 
-### Bruke lagerstyringsprosessene
-<a id="using-the-warehouse-management-processes" class="xliff"></a>
+### <a name="using-the-warehouse-management-processes"></a>Bruke lagerstyringsprosessene
 
 Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene bruke en lagringsdimensjonsgruppe hvor **Bruk lagerstyringsprosesser**-parameteren er valgt.
 
-#### Aktivere lagre for bruke av lagerstyringsprosesser
-<a id="enable-warehouses-to-use-warehouse-management-processes" class="xliff"></a>
+#### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Aktivere lagre for bruke av lagerstyringsprosesser
 
 1.  Opprett minst én ny lokasjonsprofil.
 2.  Klikk **Lagerstyring** &gt; **Oppsett** &gt; **Aktiver lagerstyringsprosesser** &gt; **Aktiver lageroppsettet**.
@@ -83,8 +74,7 @@ Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene 
 5.  Valider endringene. Som en del av valideringsprosessen forekommer ulike valideringer for dataintegritet. Som en del av en større oppgraderingsprosess må problemer som oppstår, kanskje justeres på kildeimplementeringen. I så fall kreves en ytterligere oppgradering av data.
 6.  Behandle endringene.
 
-#### Endre lagringsdimensjonsgruppen for varer, slik at den bruker lagerstyringsprosesser
-<a id="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes" class="xliff"></a>
+#### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Endre lagringsdimensjonsgruppen for varer, slik at den bruker lagerstyringsprosesser
 
 1.  Opprett en ny **lagerstatuse**-verdi, og tilordne den som **standard lagerstatus-ID**-verdi i innstillinger for **lagerstyringsparametere**.
 2.  Opprett en ny lagringsdimensjonsgruppe der parameteren **Bruk lagerstyringsprosesser** er valgt.

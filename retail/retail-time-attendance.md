@@ -28,41 +28,34 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Timeregistrering for detaljhandel
-<a id="retail-time-and-attendance" class="xliff"></a>
+# <a name="retail-time-and-attendance"></a>Timeregistrering for detaljhandel
 
 [!include[banner](includes/banner.md)]
 
 
 Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail. 
 
-Behandle konfigurasjon og planlegging for arbeider
-<a id="manage-worker-setup-and-scheduling" class="xliff"></a>
+<a name="manage-worker-setup-and-scheduling"></a>Behandle konfigurasjon og planlegging for arbeider
 ----------------------------------
 
-###  Opprinnelig konfigurasjon
-<a id="initial-configuration" class="xliff"></a>
+### <a name="initial-configuration"></a> Opprinnelig konfigurasjon
 
 -   Kjør konfigurasjonsveiviseren.
 -   Registrer arbeidere som timeregistreringsarbeidere.
 
-### Planlegge tidsplaner for arbeidere
-<a id="plan-worker-schedules" class="xliff"></a>
+### <a name="plan-worker-schedules"></a>Planlegge tidsplaner for arbeidere
 
 -   Bruk profiler ved hjelp av jobbplanleggeren. Hvis du vil ha mer informasjon, se <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
 Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
-### Detaljhandelsspesifikk konfigurasjon
-<a id="retail-specific-configuration" class="xliff"></a>
+### <a name="retail-specific-configuration"></a>Detaljhandelsspesifikk konfigurasjon
 
 -   Aktiver en funksjonalitetsprofil for tidsklokke, for arbeidere som du vil aktivere tidsregistreringer for. Klikk på **Funksjonalitetsprofiler for salgssted** &gt; **Funksjoner** &gt; **Tidsregistreringer for salgssted** &gt; **Aktiver tidsregistreringer**.
 -   Konfigurer grupper for tillatelser for salgssted for å aktivere tillatelsen Vis tidsklokkeoppføringer. Med denne tillatelsen kan en bruker vise tidsklokkeregistreringene for andre arbeidere i butikken (og fra alle andre butikker som brukeren er tilknyttet, via adresseboken). Du vil kanskje aktivere denne tillatelsen for en lederrolle, men ikke en kassererrolle. Klikk på **Salgsstedstillatelsesgrupper** &gt; **Vis tidsklokkeoppføringer**.
 
-## Kassetid
-<a id="register-time" class="xliff"></a>
-### Tidsregistreringer for kasserer og ikke-kasserer
-<a id="cashier-and-non-cashier-time-registrations" class="xliff"></a>
+## <a name="register-time"></a>Kassetid
+### <a name="cashier-and-non-cashier-time-registrations"></a>Tidsregistreringer for kasserer og ikke-kasserer
 
 -   På salgssted:
     -   Stemple inn operasjoner:
@@ -121,10 +114,8 @@ Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se <https://technet
 -   Ulike tidssoner:
     -   Hvis du viser tiden fra en annen lokasjon (for kassererens loggbok eller ved hjelp av **Vis tidsklokkeoppføringer** for et lederscenario), og den er i en annen tidssone, blir tidspostene som du ser, konvertert til den lokale tidssonen. Du er for eksempel en leder for to butikker, én i Arizona og den andre i Nevada. En kasserer registrerer en innstempling klokken 9:00 i Arizona. På dette tidspunktet er klokken 8:00 i Nevada. Derfor, hvis du er i butikken i Nevada og ser på timeregistreringsposter, er timeregistreringen merket som 8:00.
 
-## Vise tidsregistrering for arbeidere
-<a id="view-worker-time-registrations" class="xliff"></a>
-### Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype
-<a id="view-worker-time-registrations-and-filter-by-store-or-activity-type" class="xliff"></a>
+## <a name="view-worker-time-registrations"></a>Vise tidsregistrering for arbeidere
+### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype
 
 På salgssted:
 
@@ -132,19 +123,16 @@ På salgssted:
 -   Du kan se aktiviteter for tidsklokkeregistrering fra alle arbeidere som er tilordnet til de samme butikkene som du er tilordnet til.
 -   Du kan bruke aktivitetstypen og butikkfiltre for å filtrere etter tidsregistreringer.
 
-## Behandle og administrere tidsregistreringer
-<a id="process-and-manage-time-registrations" class="xliff"></a>
+## <a name="process-and-manage-time-registrations"></a>Behandle og administrere tidsregistreringer
 En Dynamics 365 for Retail bruker følger arbeidsflyten for å beregne, godkjenne og overføre tidsregistreringer til lønn.
 
-### Primære operasjoner
-<a id="primary-operations" class="xliff"></a>
+### <a name="primary-operations"></a>Primære operasjoner
 
 -   Beregn
 -   Godkjenn
 -   Send til lønn
 
-### Andre vanlige operasjoner
-<a id="other-common-operations" class="xliff"></a>
+### <a name="other-common-operations"></a>Andre vanlige operasjoner
 
 -   Masseutstempling
 -   Registrer fravær

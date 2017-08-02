@@ -22,15 +22,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Produksjonsytelse for Power BI-innhold
-<a id="production-performance-power-bi-content" class="xliff"></a>
+# <a name="production-performance-power-bi-content"></a>Produksjonsytelse for Power BI-innhold
 
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i **Produksjonsytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 
 **Produksjonsytelse**-innholdet for Power BI er ment for produksjonsledere eller personer i organisasjonen som er ansvarlig for produksjonskontroll.
 
@@ -42,12 +40,10 @@ Dette Power BI-innholdet lar deg også analysere produksjonsavvik. Produksjonsav
 
 **Produksjonsytelse** for Power BI-innhold inneholder data som kommer fra produksjonsordrer og partiordrer. Rapportene inneholder ikke data som er knyttet til kanban-produksjoner.
 
-## Tilgang til Power BI-innhold
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vises **Produksjonsytelse**-innhold for Power BI på **Produksjonsytelse**-siden (**Produksjonskontroll** > **Forespørsler og rapporter** > **Analyse av produksjonsytelse** > **Produksjonsytelse**). 
 
-## Mål som er inkludert i Power BI-innholdet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 
 **Produksjonsytelse** for Power BI-innhold omfatter et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller.
 
@@ -62,8 +58,7 @@ Tabellen nedenfor gir en oversikt over effektene som er inkludert.
 | Manglertrend etter ressurs                  | Antall defekte (spm) etter antall behandlet | |
 | Produksjonsprisavvik for etterkalkulering av jobbordre | <ul><li>Produksjonsavvik etter dato og kostgruppetype</li><li>Produksjonsavvik etter sted og kostgruppetype</li><li>Topp 10 produkter med ugunstige produksjonsavvik</li><li>Topp 10 ugunstige produksjonsavvik etter ressurs</li></ul> | <ul><li>Realisert kostnad</li><li>Produksjonsavvik</li><li>Produksjonsavvik %</li></ul> |
 
-## Utvide Power BI-innholdet
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
 Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
 
 Du kan finne **Produksjonsytelse**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
@@ -73,8 +68,7 @@ Pass på at du laster ned **Produksjonsytelse**-innholdet som gjelder for versjo
 > [!NOTE]
 > Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Forstå datamodellen og enheter
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
 Følgende data brukes for rapportsidene i **Produksjonsytelse**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil vite mer om enhetslageret, kan du se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
@@ -144,8 +138,7 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
 
-## Tilleggsressurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Tilleggsressurser
 
 Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
 

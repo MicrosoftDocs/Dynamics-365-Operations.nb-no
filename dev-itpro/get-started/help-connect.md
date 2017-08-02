@@ -27,23 +27,20 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Koble til hjelpesystemet
-<a id="connect-the-help-system" class="xliff"></a>
+# <a name="connect-the-help-system"></a>Koble til hjelpesystemet
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det gir en oversikt over hvordan du kobler disse komponentene og et sammendrag av hvordan du oppretter egendefinert hjelp. 
 
-## Hjelpearkitektur
-<a id="help-architecture" class="xliff"></a>
+## <a name="help-architecture"></a>Hjelpearkitektur
 Illustrasjonen nedenfor viser delene av Finance and Operations-hjelpesystemet. Det integrerte hjelpesystemet i produktet henter artikler fra Finance and Operations-nettstedet https://docs.microsoft.com i tillegg til oppgaveveiledninger som er lagret i Forretningsprosessmodellereren i Lifecycle Services (LCS). 
 > [!NOTE]
 > Funksjonene som nevnes i diagrammet med en stjerne (\*), er planlagte, men er ennå ikke tilgjengelige. [![Hjelpearkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
 
-## Koble til hjelpesystemet
-<a id="connecting-the-help-system" class="xliff"></a>
+## <a name="connecting-the-help-system"></a>Koble til hjelpesystemet
 > [!NOTE]
 > Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på webområdet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) for både Retail og Talent.
  
@@ -63,8 +60,7 @@ Ved hjelp av siden **Systemparametere**, kobler systemadministratorer delene av 
 
 Når du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og klikke **Oppgaveveiledninger**-kategorien. Nå vil du se oppgaveveiledningene som gjelder for siden du er på i Finance and Operations. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
 
-### Vise oversatte oppgaveveiledninger
-<a id="showing-translated-task-guides" class="xliff"></a>
+### <a name="showing-translated-task-guides"></a>Vise oversatte oppgaveveiledninger
 
 Oversatte oppgaveveiledninger ble først levert i APQC Unified Library fra mai 2016, og Komme i gang-biblioteket. Hvis du vil vise lokaliserte oppgaveveiledninger i Finance and Operations, kontroller at du er koblet til biblioteket fra mai. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
 
@@ -73,14 +69,12 @@ Oversatte oppgaveveiledninger ble først levert i APQC Unified Library fra mai 2
 > -   Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
 > -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
-## Opprette egendefinert hjelp
-<a id="creating-custom-help" class="xliff"></a>
+## <a name="creating-custom-help"></a>Opprette egendefinert hjelp
 Du kan opprette egendefinert hjelp for Finance and Operations og for Retail ved å opprette oppgaveregistreringer som gjenspeiler implementeringen, og lagre dem i et bibliotek for LCS-forretningsprosess. Du kan ikke opprette egendefinerte oppgaveveiledninger for Talent. 
 
 For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../user-interface/task-recorder.md).
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Hjelpeoversikt](help-overview.md)

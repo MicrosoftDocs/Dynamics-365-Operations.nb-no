@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Telefonsenterfunksjonalitet
-<a id="call-center-functionality" class="xliff"></a>
+# <a name="call-center-functionality"></a>Telefonsenterfunksjonalitet
 
 [!include[banner](includes/banner.md)]
 

@@ -58,7 +58,7 @@ Definer en *budsjettmodell *som samsvarer med alle eller noen av budsjettene. Du
 > [!NOTE] 
 > Hvis budsjettkontroll brukes, kan du knytte bare én budsjettmodell til et bestemt tidsrom for budsjettsyklus. 
 
-Opprett *budsjettkoder *som identifiserer typen budsjettransaksjoner som skal registreres og eventuell tilknyttet arbeidsflyt. Budsjettkoder kan støtte følgende budsjettyper:
+Opprett *budsjettkoder* som identifiserer typen budsjettransaksjoner som skal registreres og eventuell tilknyttet arbeidsflyt. Budsjettkoder kan støtte følgende budsjettyper:
 
 -   Opprinnelig budsjett
 -   Overføring

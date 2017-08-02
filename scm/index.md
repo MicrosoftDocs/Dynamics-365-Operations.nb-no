@@ -1,28 +1,28 @@
 ---
 title: Startside for forsyningskjedeadministrasjon
 description: "Denne siden peker til ressurser som gjør det enklere å bruke administrasjonen av Microsoft Dynamics 365 for Finance and Operations – Supply Chain mer effektivt."
-author: yuyus
+author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 4044c66833e914b1f0f2d552d827013bd48dc2db
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,22 +36,49 @@ Denne siden peker til ressurser som gjør det enklere å bruke administrasjonen 
 Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for å se hvilke nye funksjoner er utgitt og hvilke nye funksjoner som er under utvikling. 
 
 ## <a name="core-concepts-and-tasks"></a>Kjernekonsepter og -oppgaver
-*  I ruten til venstre velger du et funksjonsområde du vil finne ut mer om. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle innkommende forhåndsvarsler for forsendelse i lagerstyring</a> (video) 
 
+Velg et funksjonsområde du vil finne ut mer om.
+
+- [Kostnadsregnskap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+- [Kostnadsstyring](cost-management\costing-sheets.md)  
+- [Lagerstyring](inventory\consignment.md)
+- [Hovedplanlegging](master-planning\introduction-demand-forecasting.md)
+- [Innkjøp og leverandører](procurement\procurement-sourcing-overview.md)
+- [Behandling av produktinformasjon](pim\product-information.md)
+- [Produksjonskontroll](production-control\production-process-overview.md)
+- [Salg og markedsføring](sales-marketing\overview-sales-marketing.md)
+- [Transportstyring](transportation\transportation-management-overview.md)
+- [Lagerstyring](warehousing\warehouse-configuration.md)
+
+## <a name="videos"></a>Videoer
+
+### <a name="get-started"></a>Komme i gang  
+
+Disse korte videoene hjelper med å komme i gang med de nye funksjonene i oppdateringen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017.
+
+-  [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
+-  [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
+-  [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
+
+### <a name="tech-talk"></a>Teknisk tale 
+-  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
+-  <a href="https://youtu.be/7v8BPmEs9Dg">Hovedplanlegging – tips og triks for feilsøkingsytelse</a>
+-  <a href="https://youtu.be/RLXybx20B5o">Hjelp! MRP er treg!</a>
+-  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle innkommende forhåndsvarsler for forsendelse i lagerstyring</a> 
+-  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få det beste ut av ditt lagerstyringssystem</a>
+-  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling</a>
+-  <a href="https://youtu.be/Og0gLlVp7jA">Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov</a>
+-  <a href="https://youtu.be/5w1MngVchBA">Etiketter i den nye R3-lagerstyringen for Microsoft Dynamics AX 2012</a>
+-  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avansert lagerstyring - en dag i løpet av prosessproduksjonen</a>
+-  <a href="https://youtu.be/y1jrd3A_k70">Operasjoner og aktiviteter for underleverandører i produksjonen</a>
 
 ## <a name="blogs"></a>Blogger
 Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teambloggen</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i Dynamics AX R & D-teambloggen </a>. De fleste av disse ble skrevet for tidligere versjoner av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
 
-Du kan for eksempel lese nylige innlegg om: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Kunngjøre Finance and Operations – Warehousing</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Forbedret pakkefunksjonalitet (Dynamics 365 for Operations 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Direkteoverføring fra produksjonsordrer til overføringsordrer</a>
-
 ## <a name="white-papers"></a>Hvitbøker
-* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Finance and Operations – Komme i gang med kostnadsregnskap</a> inneholder de grunnleggende trinnene for å konfigurere Microsoft Dynamics 365 for Finance and Operations – Kostnadsregnskap for å utføre den faktiske kostnadsanalysen. Den inneholder også en rekke prosedyrer som du kan fullføre i samme rekkefølge som de vises.
-* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Finance and Operations - Lean Manufacturing: Leveringskapasitet (CTP) og Planlegging av Kanban-jobber</a> beskriver detaljene for planlegging av Kanban-jobber, og introduserer i tillegg konseptet med å ta imot salgsordrer som bruker CTP-metoden (Capable To Promise) for leveringsdatokontroll. Den forklarer også hvordan CTP kan kombineres med hendelses-Kanbaner til å modellere monter-til-ordre- eller bygg-til-ordre-scenarier.
-* Hvitboken <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Finance and Operations - stykklisteberegning ved hjelp av et kostnadsskjema</a> beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. Du kan gjennomføre øvelsene i opplæringstillegget, og du kan bruke kunnskapen du har fått ved å lese dette dokumentet, til å analysere stykklisteberegning.
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser for kostnadsregnskap</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Stykklisteberegning ved hjelp av et kostnadsskjema</a>
 
 ## <a name="elearning-courses"></a>e-læringskurs
 Hvis du vil ha informasjon om opplæring i Microsoft Dynamics 365 for Finance and Operations, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-læringsportalen</a>. (krever en CustomerSource-konto) 

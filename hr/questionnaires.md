@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Spørreskjemaer
-<a id="questionnaires" class="xliff"></a>
+# <a name="questionnaires"></a>Spørreskjemaer
 
 Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
 
@@ -50,8 +49,7 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Utforme spørreskjemaer](design-questionnaires.md)

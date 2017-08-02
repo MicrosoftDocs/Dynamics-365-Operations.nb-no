@@ -25,23 +25,19 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Registrere materialforbruk med en mobil enhet
-<a id="register-material-consumption-using-a-mobile-device" class="xliff"></a>
+# <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
 Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.
 
-Introduksjon
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduksjon
 ------------
 
 Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer. For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller. Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted. Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet. La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet. [![](./media/scenario3.png)](./media/scenario3.png)
 
-### Scenariodetaljer
-<a id="scenario-details" class="xliff"></a>
+### <a name="scenario-details"></a>Scenariodetaljer
 
 En fortløpende produksjonsprosess (5) bruker partikontrollert råmateriale RM-100. Materialet er på lager på lokasjonen Bulk-001 (1) på nummerskilt PL-1 med to partier, B1 og B2, begge med et antall på 100 kilo. Lagerarbeid (2) er frigitt og behandlet for RM-100, og materialet er plukket fra Bulk-001 til produksjonsinnleveringssted PIL-01 (3), som er definert som ikke-nummerskiltkontrollert. Maskinoperatøren veier ut materialer fra produksjonsinnleveringsstedet (3) og registrerer vekten og partinummeret som er brukt (4). Fra produksjonsinnleveringsstedet legges en del av materialet manuelt til produksjonsprosessen i definerte tidsintervaller. Når maskinoperatøren legger til materiale, veies det på en vekt og partinummeret registreres.
 
-## Definer arbeidsflyten til å registrere forbruk ved hjelp av en håndholdt enhet
-<a id="set-up-the-workflow-to-register-consumption-using-a-handheld-device" class="xliff"></a>
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Definer arbeidsflyten til å registrere forbruk ved hjelp av en håndholdt enhet
 Opprett et ferdigvareprodukt, FG-100, med en stykkliste som har det partikontrollerte råmaterialet RM-100. Legg til to partier, B1 og B2, av RM-100 i et antall på 100 til lokasjon: Bulk-001 på nummerskilt: PL-1. Trekkprinsippet på stykklistelinjen for RM-100 er satt til **manuell**. Angi produksjonsinnleveringsstedet til PIL-01. Du kan gjøre dette ved å velge denne lokasjonen som standard produksjonsinnleveringssted på lager 51.
 
 1.  Opprett et nytt menyelement for mobilenhet: 
@@ -85,8 +81,7 @@ Du kan nå velge å fortsette registreringen, for eksempel på partinummeret B2,
 
 Når du er ferdig med registreringen, velger du **Ferdig** for å postere journalen og avslutte arbeidsflyten.
 
-### Ekstra kommentarer
-<a id="additional-comments" class="xliff"></a> 
+### <a name="additional-comments"></a>Ekstra kommentarer 
 
 -   Hvis en bruker avbryter arbeidsflyten når en journallinje er opprettet, er journalen i en ikke-postert tilstand, men hvis brukeren senere bruker arbeidsflyten for samme produksjonsordre, blir linjene lagt til i den åpne journalen i stedet for en ny journal.
 -   Den nye arbeidsflyten støtter også for registrering av serienumre.

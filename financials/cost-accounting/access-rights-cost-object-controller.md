@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-## Tilgangsrettigheter til en kontroller for kostnadsobjekt
-<a id="access-rights-of-a-cost-object-controller" class="xliff"></a>
+## <a name="access-rights-of-a-cost-object-controller"></a>Tilgangsrettigheter til en kontroller for kostnadsobjekt
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,8 +55,7 @@ Når rollen **Kontroller for kostnadsobjekt** er tilordnet en leder, kan lederen
 > [!NOTE]
 > Rollen **Kontroller for kostnadsobjekt** styrer ikke hvilke objekter brukeren kan få tilgang til og vise data for. Radnivåsikkerhet oppnås via dimensjonshierarkier og hierarkiet for tilgangsliste.
 
-## Gi tilgangsrettigheter
-<a id="grant-access-rights" class="xliff"></a>
+## <a name="grant-access-rights"></a>Gi tilgangsrettigheter
 Følgende eksempel viser hvordan et dimensjonshierarki kan se ut.
 
 **Detaljer for dimensjonshierarki**

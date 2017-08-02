@@ -26,16 +26,14 @@ ms.lasthandoff: 06/05/2017
 
 ---
 
-# Integrering av budsjettplanlegging med andre moduler
-<a id="budget-planning-integration-with-other-modules" class="xliff"></a>
+# <a name="budget-planning-integration-with-other-modules"></a>Integrering av budsjettplanlegging med andre moduler
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-Periodiske prosesser for å generere budsjettplaner
-<a id="periodic-processes-for-generating-budget-plans" class="xliff"></a>
+<a name="periodic-processes-for-generating-budget-plans"></a>Periodiske prosesser for å generere budsjettplaner
 ----------------------------------------------
 
 Budsjettplaner kan genereres fra følgende ressurser:
@@ -51,8 +49,7 @@ Budsjettplaner kan genereres fra følgende ressurser:
 
 De grunnleggende elementene i den periodiske prosessen er den samme for alle prosesser. Kategorier lar deg definere kilden til dataene, målattributter (budsjettplanen) og alternativer for å kjøre prosessen i bakgrunnen som en partiprosess. Senere deler i denne artikkelen beskriver varer som kanskje ikke er synlige i hver prosess.
 
-### Handlinger
-<a id="actions" class="xliff"></a>
+### <a name="actions"></a>Handlinger
 
 Det finnes tre handlinger for hver generasjonsprosess:
 
@@ -60,13 +57,11 @@ Det finnes tre handlinger for hver generasjonsprosess:
 -   **Erstatt eksisterende budsjettplanscenario** sletter alle data i målbudsjettplanen i det valgte budsjettplanscenarioet og oppretter nye linjer som bruker de valgte kildedataene.
 -   **Oppdater eksisterende budsjettplanscenario, og tilføy nye data** oppdaterer eksisterende linjer i målplanen som samsvarer med kildelinjene, og legger til nye linjer for nye data. Samsvaret er basert på finanskontoen, dato, budsjettklasse og diverse andre felt. Når du for eksempel genererer budsjettplaner fra prognosestillinger, er stillingsnummeret et viktig felt. Alle linjer som har et stillingsnummer som samsvarer med kildestillingsnummeret, erstattes med de nye linjene fra kilden.
 
-### Kilde
-<a id="source" class="xliff"></a>
+### <a name="source"></a>Kilde
 
 For alle prosesser kan du bruke **Kilde**-kategorien til å filtrere data ved hjelp av **Filter**-knappen. Som standard legges bestemte felt til i filteret for hver prosess. For prosessen **Generer budsjettplan fra økonomimodul** er for eksempel kategoriene **Finanskonto** og **Hovedkonto** tilgjengelige, og de vises på siden for generering. Alle felt som du legger til i filteret, legges også til på siden, sammen med eventuelle kriterier du legger til.
 
-### Mål
-<a id="target" class="xliff"></a>
+### <a name="target"></a>Mål
 
 Alternativet **Historisk** i kategorien **Mål** lar deg bruke datoene fra kildedataene som den gyldige datoen i budsjettplanen. Vanligvis må den gyldige datoen må være innenfor planens budsjettsyklus. Når du angir alternativet **Historisk** som **Ja**, brukes datoen for kilden (også året), slik at du kan bruke tidligere data som basis for sammenligning. Du kan ikke endre historiske data i budsjettplanen, og planen settes til en godkjent arbeidsflytstatus. Du kan imidlertid tilbakestille statusen hvis andre scenarier i planen krever endringer.
 
@@ -76,8 +71,7 @@ Mange av feltene i kategorien **Mål** blir redigerbare eller skrivebeskyttet, a
 
 Feltet **Budsjettklasse** lar deg angi budsjettplanlinjene som utgiftstransaksjoner eller inntektstransaksjoner. Vanligvis er inntektstransaksjoner krediteringer til en finanskonto og lagres derfor som negative beløp. Vanligvis vises disse transaksjonene også som negative beløp i budsjettplanen. Ved å sette inn budsjettklassen som et felt i planoppsettet, kan du imidlertid aktivere at inntekter skal vises som positive beløp.
 
-### Regler for generering
-<a id="generation-rules" class="xliff"></a>
+### <a name="generation-rules"></a>Regler for generering
 
 Tre felt tilbyr ekstra funksjonalitet: **Faktor**, **Minimum** og **Avrundings****regel**. 
 
@@ -87,22 +81,18 @@ Verdien i feltet **Faktor** multipliseres med kildebeløpet for å angi beløpet
 
 Feltet **Avrundingsregel** lar deg angi presisjonen for budsjettplanlinjene som er opprettet. Du kan runde av beløp til den nærmeste 1,00 10,00, 100,00 og så videre, i valuta.
 
-## Merknader for bestemte prosesser
-<a id="notes-for-specific-processes" class="xliff"></a>
-### Generer budsjettplan fra økonomimodul
-<a id="generate-budget-plan-from-general-ledger" class="xliff"></a>
+## <a name="notes-for-specific-processes"></a>Merknader for bestemte prosesser
+### <a name="generate-budget-plan-from-general-ledger"></a>Generer budsjettplan fra økonomimodul
 
 Når du oppretter en budsjettplan fra økonomimoduldata, må du angi feltet **Aggreger total etter** som **Regnskapsår** hvis alternativet **Historisk** er satt til **Nei**. Periodene og datoene i kilden samsvarer kanskje ikke med periodene i datoer i målet. Fordi prosessen ikke har noen pålitelig måte å tilordne disse verdiene på må du begrense prosessen til først i året. 
 
 I målet settes feltet **Budsjettklasse** til enten **Utgift** eller **Omsetning**. Denne innstillingen brukes til å velge **Budsjettype** attributtet for linjer som opprettes, når hovedkontoen på en linje som ikke er av typen **Omsetning** eller **Utgift**.
 
-### Generer budsjettplan fra anleggsmidler
-<a id="generate-budget-plan-from-fixed-assets" class="xliff"></a>
+### <a name="generate-budget-plan-from-fixed-assets"></a>Generer budsjettplan fra anleggsmidler
 
 Prosessen **Generer budsjettplan fra anleggsmidler** har ikke noe alternativ for å aggregere etter periode eller dag. Det finnes heller ingen alternativer for å angi planen som historisk. Du kan bruke denne periodiske prosessen til å ta med forventede transaksjoner for anleggsmidler i budsjettplanleggingen.
 
-### Generer budsjettplanlinjer fra prognosestillinger
-<a id="generate-budget-plan-from-forecast-positions" class="xliff"></a>
+### <a name="generate-budget-plan-from-forecast-positions"></a>Generer budsjettplanlinjer fra prognosestillinger
 
 Prosessen **Generer budsjettplan fra prognosestillinger** tilordner kildeprognosestillingen til budsjettplanlinjen. Du kan vise stillingen ved å legge til prognosestillingen som en rad i budsjettplanoppsettet eller bruke forespørselen **Budsjettplanlinjer**. Hvis du ikke vil at prognosestillingen skal tilordnes til budsjettplanlinjer, setter du alternativet **Inkluder stilling i budsjettplanlinje** til **Nei**.
 
@@ -112,8 +102,7 @@ I feltet **FTE-scenario for budsjettplan** kan du velge et scenario for å inklu
 
 Budsjettplanleggingsprosessen og budsjettplanscenarioet som er valgt i kilden, angir budsjettplanleggingsprosessen og budsjettplanscenarioet for målscenarioet. Fordi disse attributtene er tilordnet til prognosestillinger må de være samsvar med budsjettplanen. Disse attributtene kan derfor ikke endres på målet.
 
-### Generer budsjettplan fra prosjektprognoser
-<a id="generate-budget-plan-from-project-forecasts" class="xliff"></a>
+### <a name="generate-budget-plan-from-project-forecasts"></a>Generer budsjettplan fra prosjektprognoser
 
 Prosessen **Generer budsjettplan fra prosjektprognoser** har som prosessen **Generer budsjettplan fra prognosestillinger** et alternativ for å inkludere prosjektantall (timer, utgifter og varer) i et scenario for antall. De to prosessene har også lignende filtre for kolonnene i budsjettplanoppsettet. 
 
@@ -129,30 +118,24 @@ Bare én prognosemodell kan brukes til å generere et budsjettplanscenario. Hvis
 
 Prosessen **Generer budsjettplan fra prosjektprognoser** tilordner også kildeprosjektet til budsjettplanlinjen.
 
-### Generer budsjettplan fra forsyningsprognose
-<a id="generate-budget-plan-from-supply-forecast" class="xliff"></a>
+### <a name="generate-budget-plan-from-supply-forecast"></a>Generer budsjettplan fra forsyningsprognose
 
 Kildefilteralternativene i prosessen **Generer budsjettplan fra forsyningsprognose** er modellert etter alternativer i funksjonen **Overfør innkjøpsbudsjett til finans** på grunn av likheter mellom prosessen og funksjonen.
 
-### Generer budsjettplan fra behovsprognose
-<a id="generate-budget-plan-from-demand-forecast" class="xliff"></a>
+### <a name="generate-budget-plan-from-demand-forecast"></a>Generer budsjettplan fra behovsprognose
 
 For prosessen **Generer budsjettplan fra behovsprognose** kan du angi alternativet **Salgsordre** som **Ja** for å generere inntektslinjer i budsjettplanen, angi **Forbruk** som **Ja** for å opprette utgiftslinjer, eller sette begge alternativene til **Ja**.
 
-### Generer budsjettplan fra budsjettregisteroppføringer
-<a id="generate-budget-plan-from-budget-register-entries" class="xliff"></a>
+### <a name="generate-budget-plan-from-budget-register-entries"></a>Generer budsjettplan fra budsjettregisteroppføringer
 
 For prosessen **Generer budsjettplan fra budsjettregisteroppføringer** må kilden angi en undermodell, én budsjettkode og ett oppføringsnummer. Du kan altså opprette budsjettplanlinjer for bare én budsjettregisteroppføring om gangen. Du kan bruke flere oppføringer i samme budsjettplanen ved å kjøre prosessen én gang for hver kildeoppføring.
 
-### Generer budsjettplan fra budsjettplan
-<a id="generate-budget-plan-from-budget-plan" class="xliff"></a>
+### <a name="generate-budget-plan-from-budget-plan"></a>Generer budsjettplan fra budsjettplan
 
 For prosessen **Generer budsjettplan fra budsjettplan** lar et ekstra sett med alternativer i kategorien **Mål** deg tilordne nye finansdimensjoner. Hvis en finansdimensjon er valgt, vil denne verdien brukes for alle budsjettplanlinjene. Derfor kan du bruke én budsjettplan som grunnlag for andre budsjettplaner, men kan også tilordne, for eksempel en annen avdeling eller et annet kostsenter til de nye budsjettplanene.
 
-## Se tilbake fra budsjettplanen
-<a id="looking-back-from-the-budget-plan" class="xliff"></a>
-### Forespørsel om budsjettplaner etter dimensjonssett
-<a id="budget-plans-by-dimension-set-inquiry" class="xliff"></a>
+## <a name="looking-back-from-the-budget-plan"></a>Se tilbake fra budsjettplanen
+### <a name="budget-plans-by-dimension-set-inquiry"></a>Forespørsel om budsjettplaner etter dimensjonssett
 
 Forespørselen **Budsjettplaner etter dimensjonssett** inneholder flere alternativer som lar deg kjøre en spørring for å identifisere kilden til budsjettplandataene. 
 

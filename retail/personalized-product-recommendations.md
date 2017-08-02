@@ -27,16 +27,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Oversikt over personlige produktanbefalinger
-<a id="personalized-product-recommendations-overview" class="xliff"></a>
+# <a name="personalized-product-recommendations-overview"></a>Oversikt over personlige produktanbefalinger
 
 [!include[banner](includes/banner.md)]
 
 
 Produktanbefalingene kan vises i Dynamics 365 for Retail på salgsstedsenheten. Anbefalingene er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. For forhandlere med store kataloger bidrar anbefalinger kunden med å oppdage produkter. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg og kryssalg for forhandlere og forbedring av kundebevaring. I Dynamics 365 for Retail er produktanbefalingene drevet av kognitive tjenester og Microsoft Azure Machine Learning.
 
-Scenarier
-<a id="scenarios" class="xliff"></a>
+<a name="scenarios"></a>Scenarier
 ---------
 
 Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelige i Cloud POS eller Modern POS (MPOS).
@@ -60,8 +58,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## Konfigurere Dynamics 365 for Retail for å aktivere POS-anbefalinger
-<a id="configure-dynamics-365-for-retail-to-enable-pos-recommendations" class="xliff"></a>
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurere Dynamics 365 for Retail for å aktivere POS-anbefalinger
 Hvis du vil sette opp produktanbefalinger, må du gjøre følgende.
 
 1.  Kontroller at du har valgt riktig **Juridisk enhet**.
@@ -70,8 +67,7 @@ Hvis du vil sette opp produktanbefalinger, må du gjøre følgende.
 4.  Gå til **Detaljhandelsparametere**, velg **Machine Learning**, velg **Ja** under **Aktiver POS-anbefalinger**.
 5.  Hvis du vil se anbefalinger på POS, kjør global konfigurasjonsjobb **1110**. For å gjenspeile endringer i utforming av POS-skjermoppsettet, kan du kjøre kanalkonfigurasjonsjobb **1070**.
 
-## []()Hvordan fungerer det?
-<a id="how-does-it-work" class="xliff"></a>
+## <a name="how-does-it-work"></a>[]()Hvordan fungerer det?
 Når du oppdaterer den **Enhetslager**, følgende handlinger finner sted.
 
 -   Data i formatet som kreves av de kognitive tjenestene er trukket ut fra Dynamics 365 for Retail operativ database og sendes til enhetslageret.
@@ -84,8 +80,7 @@ Når du slår på **Aktiver anbefalinger** og kjører konfigurasjonjobbene, føl
 -   Modellens legitimasjon og ID gjøres tilgjengelig for CRT slik at kall til produktanbefalinger fra Cloud POS og MPOS i tilkoblet modus kan opprettholdes.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet](add-recommendations-control-pos-screen.md)

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Overvåke salgs- og marginytelse
-<a id="monitor-sales-and-margin-performance" class="xliff"></a>
+# <a name="monitor-sales-and-margin-performance"></a>Overvåke salgs- og marginytelse
 
 [!include[banner](includes/banner.md)]
 

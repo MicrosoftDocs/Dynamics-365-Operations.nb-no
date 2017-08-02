@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Masseansettelsesprosjekter
-<a id="mass-hire-projects" class="xliff"></a>
+# <a name="mass-hire-projects"></a>Masseansettelsesprosjekter
 
 [!include[banner](../includes/banner.md)]
 
 
 Med masseansettelsesprosjekter kan personalespesialister å opprette flere stillinger og effektivt ansette arbeidere i disse stillingene.
 
-Oversikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Oversikt
 --------
 
 Bruk masseansettelsesprosjekter når du leier inn flere arbeidere samtidig, for eksempel når du leier for å møte sesongbaserte behov. Opprette et masseansettelsesprosjekt er nyttig fordi du kan opprette stillingsposter, arbeiderposter og arbeidertilordninger for stillinger samtidig. Når du oppretter stillinger for et masseansettelsesprosjekt, kan du angi følgende informasjon:
@@ -45,16 +43,14 @@ Bruk masseansettelsesprosjekter når du leier inn flere arbeidere samtidig, for 
 -   Avdelingen og jobben som er knyttet til stillingene
 -   Verdien for fulltidsansatt for stillingen
 
-## Eksempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Eksempel
 Om sommeren bruker du vanligvis 15 – 20 deltid studenter til å fylle tilgjengelige praktikantstillinger i firmaet. I år vil du leie inn fem regnskapsførere, fem ordrebehandlere og fem kasserere. Du oppretter et masseansettelsesprosjekt kalt "Sommerjobber" i stedet for å opprette hver stillingspost og arbeiderpost separat. Prosjektets start- og sluttdatoer samsvarer med start- og sluttdatoene for stillingsvarighetene for stillingene du oppretter for masseansettelsesprosjektet. 
 
 På siden **Masseansettelsesprosjekter** velger du "Sommerjobber"-prosjektet og klikker deretter **Åpne prosjekt**. I det åpne masseansettelsesprosjektet klikker du **Opprett stillinger** og angir informasjon om regnskapsfører stillingen. Du kan angi at fem regnskapsførerstillinger skal opprettes ved hjelp av den samme informasjonen for hver enkelt, og klikk deretter OK. Gjenta denne prosessen for ordrebehandler- og kassererstillingene. 
 
 Når du har valgt studenter som du vil ansette i praktikantstillingene, angir du hver students informasjon i **Stillingsdetaljer** for stillingen som du ansetter dem i. Når du har angitt alle detaljene, velger du stillingen på Masseansettelsesprosjekter-siden, og klikk deretter **Ansett**. En stillingspost opprettes for hver stilling, og en arbeiderpost opprettes og tilordnes til riktig stilling for hver person du ansetter.
 
-## Statuser for masseansettelsesprosjekt
-<a id="mass-hire-project-statuses" class="xliff"></a>
+## <a name="mass-hire-project-statuses"></a>Statuser for masseansettelsesprosjekt
 Et masseansettelsesprosjekt kan ha følgende statuser.
 -   Opprettet
 -   Åpen

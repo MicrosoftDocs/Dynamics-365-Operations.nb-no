@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Behandle tildelinger
-<a id="process-allocations" class="xliff"></a>
+# <a name="process-allocations"></a>Behandle tildelinger
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations har følgende funksjonalitet f
 -   Fordel transaksjonsbeløp automatisk basert på fordelingsbetingelser som er definert på den individuelle hovedkontoen. Tildelingskontooppføringer genereres for hver journal basert på prosentandelen og finanskontoen når en regnskapsoppføring oppfyller vilkårene som er definert som kildefinanskontoen.
 -   Fordel finanssaldoer eller faste beløp automatisk basert på finansfordelingsregler. Finansfordelingsreglene behandles på periodisk basis ved hjelp av fordelingsjournaler. 
 
-###  Fordelinger i budsjettplanlegging
-<a id="allocations-in-budget-planning" class="xliff"></a>
+###  <a name="allocations-in-budget-planning"></a>Fordelinger i budsjettplanlegging
 
 Finansfordelingsregler kan brukes for budsjettplaner. Når du bruker finansfordelingsregler i budsjettplanlegging, fungerer fordelingsreglene på samme måte som de hadde gjort i Finans, men kildedataene og måldataene kommer fra budsjettplanen. Du kan manuelt velge finansfordelingsregler som skal brukes for budsjettplaner. Alternativt kan du bruke en fordelingsplan som kjører som en del av en arbeidsflytprosess.
 

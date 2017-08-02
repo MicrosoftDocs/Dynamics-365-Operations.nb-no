@@ -25,8 +25,7 @@ ms.lasthandoff: 06/15/2017
 
 ---
 
-# Leverandørsamarbeid med eksterne leverandører
-<a id="vendor-collaboration-with-external-vendors" class="xliff"></a>
+# <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsam
 
 Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
-## Angi informasjonen som vises til leverandører når de svarer på bestillinger
-<a id="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos" class="xliff"></a>
+## <a name="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Angi informasjonen som vises til leverandører når de svarer på bestillinger
 Når leverandører svarer på en bestilling du sender dem, ser de en meldingsboks der de må bekrefte at de vil godta, avvise, eller godta bestillingen med endringene. Ettersom informasjonen som skal vises på til leverandøren på dette tidspunktet, kan være spesifikk for din virksomhet, kan du angi teksten som vises i hver av de tre bekreftelsesmeldingene. Teksten kan for eksempel informere leverandøren om de neste trinnene i prosessen eller om vilkår og betingelser.  
 
 Slik definerer du teksten som vises i bestillingssvaret:
@@ -54,34 +52,28 @@ Slik definerer du teksten som vises i bestillingssvaret:
 
 Hvis du må legge til meldinger på flere språk, kan du opprette egne meldinger og angi de aktuelle språkkodene for hver av dem. Meldingen som vises til leverandøren, vil være på språket som leverandøren bruker.
 
-## Angi alternativer for leverandørsamarbeid for en bestemt leverandør
-<a id="set-the-vendor-collaboration-options-for-a-specific-vendor" class="xliff"></a>
+## <a name="set-the-vendor-collaboration-options-for-a-specific-vendor"></a>Angi alternativer for leverandørsamarbeid for en bestemt leverandør
 De generelle innstillingene for leverandørsamarbeid i Finance and Operations konfigureres av administrator. Administrator vil for eksempel bestemme hvilke sikkerhetsroller som er tilgjengelige for alle leverandørene som du samarbeider med. Det finnes også innstillinger som kan være forskjellige for hver leverandørkonto, og du bør angi disse:
 -   Aktiver leverandørsamarbeid.
 -   Bestem om du vil at leverandører skal se prisinformasjon.
 
-### Aktivere leverandørsamarbeid
-<a id="enable-vendor-collaboration" class="xliff"></a>
+### <a name="enable-vendor-collaboration"></a>Aktivere leverandørsamarbeid
 
 Før du kan opprette brukerkontoer for en ekstern leverandør, må du konfigurere leverandørkontoen som lar dem å bruke leverandørsamarbeid. Hvis du vil gjøre dette, setter du feltet **Samarbeidsaktivering** til aktiv i kategorien **Generelt** på **Leverandører**-siden. Det er to alternativer du kan velge:
 
 -   **Aktive (bestilling bekreftes automatisk)** – Bestillinger bekreftes automatisk når leverandøren godtar dem uten endringer.
 -   **Aktive (bestilling bekreftes ikke automatisk)** – Bestillinger må bekreftes manuelt av organisasjonen etter at leverandøren har godtatt dem.
 
-### Bestemme om du vil at leverandører skal se prisinformasjon
-<a id="decide-whether-you-want-the-vendor-to-see-price-information" class="xliff"></a>
+### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Bestemme om du vil at leverandører skal se prisinformasjon
 
 Hvis du vil dele prisinformasjon, for eksempel enhetspris, rabatter og tillegg via grensesnittet for samarbeid, må du sette alternativet **Priser/beløp for bestilling** til **Ja** i leverandørkontoen. Dette alternativet er tilgjengelig i kategorien **Bestillingsstandarder**.
 
-## Arbeide med bestillinger med leverandørsamarbeid
-<a id="work-with-pos-when-using-vendor-collaboration" class="xliff"></a>
-### Sende en bestilling til leverandøren
-<a id="sending-a-po-to-the-vendor" class="xliff"></a>
+## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeide med bestillinger med leverandørsamarbeid
+### <a name="sending-a-po-to-the-vendor"></a>Sende en bestilling til leverandøren
 
 Bestillinger klargjøres i Finance and Operations. Når bestillingen har statusen **Godkjent**, sender du den til leverandøren ved hjelp av handlingen **Send for bekreftelse** på **Bestilling**-siden. Statusen for bestillingen endres til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid. Leverandøren kan deretter godta ordren, avvise den eller foreslå endringer. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
 
-### Bekreftelse og godkjenning av bestillingen av leverandøren
-<a id="confirmation-and-acceptance-of-the-po-by-the-vendor" class="xliff"></a>
+### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekreftelse og godkjenning av bestillingen av leverandøren
 
 Når en leverandør har godtatt en bestilling, kan bestillingen bekreftes automatisk, eller det kan hende den må bekreftes manuelt. Dette er avhengig av om feltet **Leverandøraktivering** er satt til **Aktiv (bestilling bekreftes automatisk)** eller til **Aktiv (bestilling bekreftes ikke automatisk)** for leverandøren.  
 
@@ -133,23 +125,19 @@ Du kan bruke arbeidsområdet **Bestillings****klargjøring** til å overvåke hv
 -   Til ekstern vurdering krever handling.
 -   Til ekstern vurdering, venter på svar fra leverandør.
 
-### Endre en bestilling
-<a id="changing-a-po" class="xliff"></a>
+### <a name="changing-a-po"></a>Endre en bestilling
 
 Når du skal endre en bestilling som allerede er besvart, må du sende en ny versjon av bestillingen til leverandøren. Den nye bestillingen har et versjonssuffiks til å angi at det er en endret versjon av en bestilling som tidligere ble formidlet. Siden **Logg for leverandørbekreftelse for bestilling** lar deg og leverandørene spore historikken for hver ordre. Den tidligere bekreftede versjonen av en bestilling forblir i listen over bekreftede bestillinger til den nye bestillingen er bekreftet.
 
-### Annullere en bestilling
-<a id="cancelling-a-po" class="xliff"></a>
+### <a name="cancelling-a-po"></a>Annullere en bestilling
 
 Når du avbryter en bestilling, endres statusen til **Godkjent**. Du må sende bestillingen tilbake til leverandøren via leverandørportalen, slik at leverandøren kan bekrefte eller avvise annulleringen. Når annulleringen er bekreftet, vises bestillingen i leverandørens liste over bekreftede bestillinger som **Annullert**.
 
-### Legge til vedlegg i en bestilling
-<a id="adding-attachments-to-a-po" class="xliff"></a>
+### <a name="adding-attachments-to-a-po"></a>Legge til vedlegg i en bestilling
 
 Du kan legge til vedlegg, for eksempel filer, bilder og merknader, i bestillingen ved hjelp av dokumentbehandlingssystemet. Vedlegg av **ekstern** type vil være synlige for leverandøren når du sender bestillingen.
 
-## Oppdatere bestillingen når en leverandør foreslår endringer
-<a id="update-the-po-when-a-vendor-suggests-changes" class="xliff"></a>
+## <a name="update-the-po-when-a-vendor-suggests-changes"></a>Oppdatere bestillingen når en leverandør foreslår endringer
 Når en leverandør har svart på Bestillingen og foreslått endringer, er neste trinn å behandle svaret.
 I listen Til ekstern vurdering krever handling i **arbeidsområdet for bestillingsklargjøring** kan du identifisere en bestilling som en leverandør har besvart som godkjent med endringer. I listen Til ekstern vurdering krever handling kan du også navigere til leverandørens svar. En leverandør kan endre følgende informasjon i hodet på et svar.
  
@@ -178,12 +166,10 @@ Ikke alle foreslåtte endringer kan oppdateres på en bestilling. Bare oppdateri
 En linje med statusen **Godkjent** vil ha en bekreftet leveringsdato som vil bli oppdatert på Bestillingen når du utfører **Behandle bestillingsoppdatering**. Notater og vedlegg overføres ikke automatisk til den gjeldende Bestillingen. Legg merke til at når du oppdaterer den gjeldende Bestillingen via handlingen **Behandle bestillingsoppdatering**, vil ikke forretningsavtaler bli vurdert på nytt på bestillingslinjene.
 
 
-## Statuser og versjoner for bestillinger
-<a id="po-statuses-and-versions" class="xliff"></a>
+## <a name="po-statuses-and-versions"></a>Statuser og versjoner for bestillinger
 Denne delen beskriver de forskjellige statusene som en bestilling kan ha opp til tidspunktet når den er bekreftet. Den beskriver også på hvilket punkt nyere versjoner av Bestillingen gjøres tilgjengelig for leverandøren. Virkemåten varierer, avhengig av om du bruker endringsadministrasjon for bestillinger. 
 
-### Versjoner og status hvis du ikke bruker endringsadministrasjon
-<a id="versions-and-statuses-if-you-dont-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versjoner og status hvis du ikke bruker endringsadministrasjon
 
 Tabellen nedenfor viser et eksempel på endringene i status og versjon som en bestilling kan gå gjennom.
 
@@ -204,8 +190,7 @@ Leverandører trenger ikke bekrefte bestillingen ved hjelp av grensesnittet for 
 >[!NOTE]
 >Versjonen av bestillingen som er tilgjengelig for andre prosesser i Dynamics 365 for Finance and Operations, er alltid den nyeste versjonen, selv om denne versjonen ennå ikke er registrert i grensesnittet for leverandørsamarbeid.
 
-### Versjoner og status hvis du bruker endringsadministrasjon
-<a id="versions-and-statuses-if-you-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-use-change-management"></a>Versjoner og status hvis du bruker endringsadministrasjon
 
 Hvis endringsadministrasjon er aktivert for bestillinger, går bestillingen gjennom en godkjenningsarbeidsflyt når den får statusen **Godkjent**. Denne prosessen er ikke synlig for leverandøren.  
 
@@ -218,8 +203,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 
 | Bestillingen sendes til godkjenningsprosessen. (Godkjenningsprosessen er en intern prosess som leverandøren ikke er involvert i.) | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis Bestillingen ikke avvises under godkjenningsprosessen. Den godkjente bestillingen registreres som en versjon.                                                                                                                                                                                                                     | | Bestillingen sendes til leverandøren                                                                                  | Versjonen registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.                                                                                                                                                                                                                                                                       | | Du kan gjøre noen endringer som kreves av leverandøren, enten manuelt eller ved hjelp av handlingen på svaret for å oppdatere Bestillingen.                                                       | Statusen endres tilbake til **Utkast**.                                                                                                                                                                                                                                                                                                                                                    | | Bestillingen sendes til godkjenningsprosessen på nytt.                                                            | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Systemet kan også konfigureres slik at spesifikke endringer i felter ikke krever ny godkjenning. I dette tilfellet endres statusen først til **Utkast** og oppdateres deretter automatisk til **Godkjent**. Den godkjente bestillingen registreres som en ny versjon. | | Du sender den nye versjonen av bestillingen til leverandøren.                                                             | Den nye versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.                                                                                                                                                                                                                                                                   | | Leverandøren godkjenner den nye versjonen av bestillingen.                                                                | Statusen endres til **Bekreftet**, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen.                                                                                                                                                                                                                                                     |
 
-## Dele informasjon om forsendelseslager
-<a id="share-information-about-consignment-inventory" class="xliff"></a>
+## <a name="share-information-about-consignment-inventory"></a>Dele informasjon om forsendelseslager
 Hvis du bruker forsendelseslager, kan leverandører bruke grensesnittet for leverandørsamarbeid til å vise informasjon på følgende sider:
 
 -   **Bruk av forsendelseslager for bestillinger** – Bestillinger for forsendelseslager blir generert når eierskap av lageret endres fra leverandøren til firmaet. En produktkvittering posteres samtidig. Disse forsendelsesbestillingene vises bare på siden **Bruk av forsendelseslager for bestillinger**. De er ikke inkludert på siden **Alle bekreftede bestillinger** i modulen **Leverandørsamarbeid**.

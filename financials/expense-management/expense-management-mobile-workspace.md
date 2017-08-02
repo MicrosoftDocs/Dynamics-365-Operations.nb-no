@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Det mobile arbeidsområdet Reiseregning og utlegg
-<a id="expense-management-mobile-workspace" class="xliff"></a>
+# <a name="expense-management-mobile-workspace"></a>Det mobile arbeidsområdet Reiseregning og utlegg
 
 [!include[banner](../includes/banner.md)]
 
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for reiseregning og utlegg, som er tilgjengelig for Microsoft Dynamics 365 for Finance and Operations-mobilappen. Dette arbeidsområdet lar brukere registrere og laste opp en kvittering, slik at de kan knytte det til en reiseregningsrapport senere. Det mobile arbeidsområdet la også brukere raskt opprette en utgiftslinje ved hjelp av en tilknyttet kvittering.
 
-Oversikt over mobilt arbeidsområde for reiseregning og utlegg
-<a id="overview-of-the-expense-management-mobile-workspace" class="xliff"></a>
+<a name="overview-of-the-expense-management-mobile-workspace"></a>Oversikt over mobilt arbeidsområde for reiseregning og utlegg
 ---------------------------------------------------
 
 Mange organisasjoner krever at en kopi av en kvittering knyttes til en reiserelaterte eller forretningsrelatert reiseregningsrapport som en ansatt sender inn for refusjon. Dette mobile arbeidsområdet for **reiseregning og utlegg** lar brukere raskt opprette nye utgiftslinjer på mobilenheten etter eget valg, ved hjelp av et tilknyttet bilde av en kvittering. Brukere kan også ta et bilde av en kvittering, og deretter knytte den til en reiseregningsrapport senere. Det mobile arbeidsområdet for **reiseregning og utlegg** lar brukeren:
@@ -46,8 +44,7 @@ Mange organisasjoner krever at en kopi av en kvittering knyttes til en reiserela
 
 Resten av avsnittene i dette emnet forklarer hvordan du implementerer og bruke den det mobile arbeidsområdet for **reiseregning og utlegg**.
 
-## Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Forutsetninger
 Før du kan implementere det mobile arbeidsområdet for **reiseregning og utlegg**, må du kontrollere at systemansvarlig har fullført forutsetningene nedenfor.
 
 <table>
@@ -93,15 +90,13 @@ Før du kan implementere det mobile arbeidsområdet for **reiseregning og utlegg
 </tbody>
 </table>
 
-## Laste ned og installere Finance and Operations-mobilappen
-<a id="download-and-install-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Laste ned og installere Finance and Operations-mobilappen
 Last ned og installer Finance and Operations-appen fra appbutikken for mobilenheten.
 
 -   For Android: [Finance and Operations på Google Play-butikken](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   For iPhone: [Finance and Operations på iTunes-appbutikken](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Logge på Finance og Operations-mobilappen
-<a id="sign-in-to-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Logge på Finance og Operations-mobilappen
 1.  Start appen på mobilenheten.
 2.  Skriv inn URL-adressen til Finance and Operations.
 3.  Angi firmaet for å logge på. Skriv for eksempel **USMF**.
@@ -110,8 +105,7 @@ Last ned og installer Finance and Operations-appen fra appbutikken for mobilenhe
 
 [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Registrere en kvittering ved å bruke det mobile arbeidsområdet reiseregning og utlegg
-<a id="capture-a-receipt-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Registrere en kvittering ved å bruke det mobile arbeidsområdet reiseregning og utlegg
 1.  Velg arbeidsområdet **Reiseregning og utlegg** på mobilenheten.
 2.  Velg **Registrer kvittering**.
 3.  Velg **Ta bilde** eller **Velg bilde**.
@@ -125,8 +119,7 @@ Last ned og installer Finance and Operations-appen fra appbutikken for mobilenhe
 
 5.  Velg **Ferdig**.
 
-## Hurtig utgiftsregistrering ved å bruke det mobile arbeidsområdet reiseregning og utlegg
-<a id="quick-expense-entry-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Hurtig utgiftsregistrering ved å bruke det mobile arbeidsområdet reiseregning og utlegg
 1.  Velg arbeidsområdet **Reiseregning og utlegg** på mobilenheten.
 2.  Velg **Hurtig utgiftsregistrering**.
 3.  Velg kategorien for utgiften. Du ser en liste over utgifter som er lastet inn i appen for frakoblet bruk. Opptil 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Finance and Operations-mobilplattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis kategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk i Finance and Operations. Søk etter utgiftskategori, eller bytt til å søke etter utgiftstype.

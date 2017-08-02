@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilt arbeidsområde for registrering av prosjekttid
-<a id="project-time-entry-mobile-workspace" class="xliff"></a>
+# <a name="project-time-entry-mobile-workspace"></a>Mobilt arbeidsområde for registrering av prosjekttid
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for **registrering av 
 
 Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations. 
 
-## Oversikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Oversikt
 Prosjektressurser er ofte på stedet eller reiser som en del av det daglige arbeidet. Det mobile arbeidsområdet **Registrering av prosjekttid** lar brukere angi fakturerbar eller ikke-fakturerbar tid mot et prosjekt på mobilenheten etter eget valg. Derfor kan prosjektressurser registrere oppføringer når som helst og hvor som helst. De kan også vise oppføringer som allerede er registrert. 
 
 I det mobile arbeidsområdet **Tidsoppføring for prosjekt** kan brukere utføre disse oppgavene:
@@ -48,16 +46,13 @@ I det mobile arbeidsområdet **Tidsoppføring for prosjekt** kan brukere utføre
 -   Registrere tiden som fakturerbar eller ikke-fakturerbar for prosjektet.
 -   Du kan også angi eventuelle eksterne eller interne kommentarer.
 
-## Forutsetninger
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
-### Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Forutsetninger hvis du bruker oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
 Hvis oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er distribuert i organisasjonen, må systemansvarlig publisere det mobile arbeidsområdet **Tidsoppføring for prosjekt**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
 
 <table>
@@ -90,16 +85,14 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </tbody>
 </table>
 
-## Laste ned og installere mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
 Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logge på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 1.  Start appen på mobilenheten.
 2.  Skriv inn URL-adressen for Dynamics 365.
 3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
@@ -107,8 +100,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Angi tid ved hjelp av det mobile arbeidsområdet Registrering av prosjekttid
-<a id="enter-time-by-using-the-project-time-entry-mobile-workspace" class="xliff"></a>
+## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Angi tid ved hjelp av det mobile arbeidsområdet Registrering av prosjekttid
 1.  Velg arbeidsområdet **Registrering av prosjekttid** på mobilenheten.
 2.  Velg **Tidsoppføring**. Du kan se kalenderdatoene for gjeldende uke.
 3.  Velg **Handlinger** &gt; **Ny oppføring** for en valgt dato.

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurere reiseregning
-<a id="configure-expense-management" class="xliff"></a>
+# <a name="configure-expense-management"></a>Konfigurere reiseregning
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,16 +36,13 @@ Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleg
 
 Fordi mange av valgene du gjør når du planlegger konfigurasjonen for Reiseregning og utlegg, er basert på organisasjonens hierarki og økonomiske struktur, må du referere til planleggingsdokumentene for disse områdene.
 
-## Konserninterne utgifter
-<a id="intercompany-expenses" class="xliff"></a>
+## <a name="intercompany-expenses"></a>Konserninterne utgifter
 Når du aktiverer konserninterne utgifter, gir du juridiske enheter og ansatte tillatelse til å pådra seg utgifter på vegne av, og samle inn betaling fra, en annen juridisk enhet i organisasjonen. En ansatt i juridisk enhet A fullfører eksempelvis et prosjekt for juridisk enhet B. Hvis konserninterne utgifter er aktivert, kan den ansatte deretter arkivere en timeregistrering til, og betales av, juridisk enhet B. Hvis organisasjonen ikke har flere juridiske enheter, trenger du ikke å aktivere konserninterne utgifter. **Beslutning:** Vil du aktivere konserninterne utgifter?
 
-## Økonomistyring
-<a id="financial-management" class="xliff"></a>
+## <a name="financial-management"></a>Økonomistyring
 Reiseregning og utlegg er tett integrert med økonomistyring av organisasjonen. Store deler av konfigurasjonen for Reiseregning og utlegg vil være basert på valgene du har gjort for organisasjonens økonomi. Delene nedenfor beskriver ulike områder som krever planlegging og avgjørelser basert på organisasjonens økonomiske beslutninger og veiledning fra ledelsesteamet ditt.
 
-### Kostgodtgjørelse
-<a id="per-diems" class="xliff"></a>
+### <a name="per-diems"></a>Kostgodtgjørelse
 
 Du må definere kostgodtgjørelse for ansatte som organisasjonen gir. Fordi kostgodtgjørelse vanligvis brukes til å dekke utgifter som måltider, overnatting og andre tilfeldige utgifter, kan du opprette regler for kostgodtgjørelse som organisasjonen skal tilby. Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler. Når du definerer en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester. Du kan også definere kostgodtgjørelsessatser for å angi minimum og maksimum antall timer som kostgodtgjørelsessatsen kan brukes på en arbeiders reise. **Beslutninger:**
 
@@ -67,8 +63,7 @@ Du må definere kostgodtgjørelse for ansatte som organisasjonen gir. Fordi kost
         -   hotell
         -   andre utgifter
 
-### Journaler og kontoer for reiseregninger og utlegg
-<a id="expense-management-journals-and-accounts" class="xliff"></a>
+### <a name="expense-management-journals-and-accounts"></a>Journaler og kontoer for reiseregninger og utlegg
 
 Administrasjon av reiseregninger og utlegg krever at du bruker flere journaler og kontoer. Du må angi for eksempel om den samme kontoen brukes for forskudd og kredittkorttvister. **Beslutninger:**
 
@@ -76,8 +71,7 @@ Administrasjon av reiseregninger og utlegg krever at du bruker flere journaler o
 -   Hvilken konto brukes til forskudd?
 -   Bør forskudd posteres umiddelbart?
 
-### Betalingsmåter
-<a id="payment-methods" class="xliff"></a>
+### <a name="payment-methods"></a>Betalingsmåter
 
 Når du lar ansatte pådra seg utgifter på vegne av firmaet, må du definere betalingsmåtene som ansatte kan bruke. Du kan for eksempel tillate at ansatte kan bruke kontanter eller et firmakredittkort. Du kan også tillate at ansatte skal bruke personlige kredittkort, og deretter tilbakebetale de ansatte. Du må ta følgende avgjørelser for hver enkelt betalingsmåte du godkjenner. **Beslutninger:**
 
@@ -87,8 +81,7 @@ Når du lar ansatte pådra seg utgifter på vegne av firmaet, må du definere be
 -   Hvis det finnes en motkonto, hva er kontoen?
 -   Hvis betalingsmåten er et kredittkort, bør betalingsmåten bare brukes med importerte transaksjoner?
 
-### Utgiftskategorier og delte kategorier
-<a id="expense-categories-and-shared-categories" class="xliff"></a>
+### <a name="expense-categories-and-shared-categories"></a>Utgiftskategorier og delte kategorier
 
 Når ansatte oppretter en reiseregning, må hver utgift de registrerer, være tilknyttet en utgiftskategori. Utgiftskategorier er avledet fra Delte kategorier som kan deles på tvers av de juridiske enhetene i organisasjonen. Disse kategoriene kan også deles i Prosjektstyring og regnskap, avhengig av hvordan organisasjonen er definert. Basert på definisjonen av din organisasjon og veiledning fra implementeringsteamet må du avgjøre om kategoriene som brukes i reiseregninger og utlegg, bare skal brukes i utgifter, eller om de skal deles mellom prosjekt og utgifter. Legg merke til at disse kategoriene kan deles mellom prosjekt og utgifter eller prosjekt og produksjon, men ikke mellom utgifter og produksjon. Du må ta følgende avgjørelser for hver utgiftskategori. **Beslutninger:**
 
@@ -126,8 +119,7 @@ Når ansatte oppretter en reiseregning, må hver utgift de registrerer, være ti
 
  
 
-### Avgifter
-<a id="taxes" class="xliff"></a>
+### <a name="taxes"></a>Avgifter
 
 For utgiftsrelaterte avgifter må du bestemme hva som inkluderes eller aktivert for reiseregninger. **Beslutninger:**
 
@@ -136,8 +128,7 @@ For utgiftsrelaterte avgifter må du bestemme hva som inkluderes eller aktivert 
 
 Legg merke til at hvis du, under planlegging av økonomimodulen, har besluttet å bruke amerikanske regler for merverdiavgift og use tax, som gjøres ved å velge Ja i feltet **Bruk avgiftsregler for merverdiavgift**, kan du ikke aktivere skatterefusjon på utgifter.
 
-## Policyer
-<a id="policies" class="xliff"></a>
+## <a name="policies"></a>Policyer
 Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og penger når ansatte pådrar seg utgifter på organisasjonens vegne. Policyer sikre at ansatte holder seg innenfor budsjettet, inneholder all nødvendig informasjon, og at penger bare brukes etter behov. Du må ta følgende avgjørelser for hver utgiftsrapportpolicy og hver utgiftsrapportgodkjenning du oppretter. **Beslutninger:**
 
 -   Hva er navnet på policyen?

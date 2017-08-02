@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definere alternativer for ordrebehandling
-<a id="set-up-order-processing-options" class="xliff"></a>
+# <a name="set-up-order-processing-options"></a>Definere alternativer for ordrebehandling
 
 [!include[banner](includes/banner.md)]
 

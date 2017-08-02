@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Datafordeling for budsjettplanlegging
-<a id="budget-planning-data-allocation" class="xliff"></a>
+# <a name="budget-planning-data-allocation"></a>Datafordeling for budsjettplanlegging
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Denne artikkelen beskriver de ulike tildelingsmetoder som er tilgjengelige i Mic
 
 Du kan distribuere dataene i en budsjettplan på flere måter for å vise nøyaktig de forventede beløpene.
 
-## Tildelingsmetoder
-<a id="allocation-methods" class="xliff"></a>
+## <a name="allocation-methods"></a>Tildelingsmetoder
 Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og bruke finansfordelingsregler) kan opprette budsjettplanlinjer som er basert på linjene i den samme budsjettplanen. Tre andre metoder (aggregere, distribuere og kopiere fra budsjettplanen) kan opprette budsjettplanlinjer i andre budsjettplaner. Du kan angi målscenariet for alle seks tildelingsmetoder. Målscenariet kan være det samme som kildescenariet eller forskjellig fra kildescenariet. Du kan også angi om nye linjer legges til budsjettplanen eller erstatter gjeldende linjer i budsjettplanen.
 
 [![Tildele på tvers av perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
@@ -59,16 +57,14 @@ Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og
 [![Kopier fra budsjettplan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopier fra budsjettplan** – Som i fordelingstildelingsmetoden, opprettes budsjettplanlinjer i målet, basert på linjene i en tilknyttet budsjettplan. For demme metoden trenger imidlertid ikke kildebudsjettplanen å være overordnet, men kan være på et høyere nivåer i budsjettplanhierarkiet. Denne tildelingsmetoden er nyttig hvis konsoliderte beløp opprinnelig budsjetteres på et mye høyere nivå og må overføres til et lavere nivå i organisasjonen for detaljert gjennomgang og justering, før vedkommende kan motta godkjenning på øverste nivå.          
 
-## Bruke tildelingsmetoder i en budsjettplan
-<a id="using-allocation-methods-in-a-budget-plan" class="xliff"></a>
+## <a name="using-allocation-methods-in-a-budget-plan"></a>Bruke tildelingsmetoder i en budsjettplan
 Hvis du vil utføre tildelinger på pudsjettplansiden, velger du linjene som skal tildele og klikker deretter **Tildel budsjett**.
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Velg en tildelingsmetode. Deretter angis de gjenværende feltene i samsvar med metoden du har valgt. Disse feltene inneholder kilden og målet for budsjettplandataene og et alternativ som lar deg multiplisere kilden med en bestemt faktor når målbeløpene opprettes, for å forenkle samlet justering. Du kan også angi alternativet **Legg til i plan**. Velg **Nei** for å erstatte de eksisterende budsjettplanlinjene, eller velg **Ja** for å beholde de eksisterende budsjettplanlinjene og legge til nye linjer for de tilordnede beløpene.
 
-## Automatisere tildelinger under en arbeidsflyt
-<a id="automating-allocations-during-a-workflow" class="xliff"></a>
+## <a name="automating-allocations-during-a-workflow"></a>Automatisere tildelinger under en arbeidsflyt
 En kraftig funksjon gjør det mulig å utføre tildelinger automatisk som en del av en arbeidsflyt for budsjettplanlegging. Når en budsjettplan flyttes gjennom arbeidsflyten, kan automatiserte oppgaver starte en tildeling på et bestemt budsjettplanleggingsstadium. 
 
 Hvis du vil angi automatisk tildeling, må du først opprette en tildelingsplan på siden **Budsjettplanleggingskonfigurasjon**. Tildelingsplanen definerer tildelingsmetoden som skal brukes når den automatisk tildelingen kjøres, og verdiene for de ulike alternativene for tildeling (se avsnittet for beskrivelser). 

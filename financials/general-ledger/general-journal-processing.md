@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Behandling av generell journal
-<a id="general-journal-processing" class="xliff"></a>
+# <a name="general-journal-processing"></a>Behandling av generell journal
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,12 +59,10 @@ På siden **Periodiske journaler** kan du definere at gjentakelsesjournaler skal
 
 Du kan bruke bilagsmaler til enhver tid. På siden **Økonomijournaler** finnes handlingene **Lagre** og **Velg bilagsmal** på **Journalbilag**-siden, under **Funksjoner** for bilagslinjene.
 
-## Relatert oppsett
-<a id="related-setup" class="xliff"></a>
+## <a name="related-setup"></a>Relatert oppsett
 Dette oppsettet er ikke spesifikk for økonomijournaler, men vil garantere at dataregistrering er riktig og enkel.
 
-### Hovedkonto
-<a id="main-account" class="xliff"></a>
+### <a name="main-account"></a>Hovedkonto
 
 Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 
@@ -81,8 +78,7 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
     -   **Brukervalidering** – Dette alternativet styrer hvilke brukere som har tillatelse til å postere til en hovedkonto.
     -   **Validering av posteringstype** – Dette alternativet styrer hvilke posteringstyper som er tillatt for en hovedkonto.
 
-### Regnskapsstrukturer og strukturer for avanserte regler
-<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
+### <a name="accounting-structures-and-advanced-rules-structures"></a>Regnskapsstrukturer og strukturer for avanserte regler
 
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å garantere at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatorisk og riktig data alltid registreres.
 

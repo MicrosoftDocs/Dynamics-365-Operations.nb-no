@@ -26,24 +26,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Handlingssøk
-<a id="action-search" class="xliff"></a>
+# <a name="action-search"></a>Handlingssøk
 
 [!include[banner](../includes/banner.md)]
 
 
 Denne artikkelen beskriver handlingssøkefunksjonen i Microsoft Dynamics 365 for Finance and Operations. Handlingssøk hjelper deg med å finne og kjøre handlinger på en side.
 
-Introduksjon
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduksjon
 ------------
 
 Sider i Microsoft Dynamics 365 for Finance and Operations viser hovedsakelig kommandoer i handlingsruter, både standard handlingsruten som vises øverst på en side, og verktøylinjene som vises i ulike deler av siden. I tidligere versjoner gir en funksjon for nøkkeltips deg rask tilgang til alle knapper i en handlingsrute ved å trykke Alt-tasten og deretter en serie med bokstaver. 
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den gjeldende versjonen av Finance and Operations er imidlertid ikke nøkkeltips lenger tilgjengelige, men er erstattet med handlingssøkefunksjonen. Denne nye funksjonen lar deg raskt søke etter og kjøre en knapp fra en hvilken som helst synlig handlingsrute.
 
-## Bruke handlingssøk
-<a id="using-action-search" class="xliff"></a>
+## <a name="using-action-search"></a>Bruke handlingssøk
 Når du skal bruke handlingssøkfunksjonen, følger du disse trinnene.
 
 1.  I handlingsruten klikker du i feltet for **handlingssøk**. (Feltet for **handlingssøk** inneholder et forstørrelsesglassikon.)
@@ -56,8 +53,7 @@ Når knappen er kjørt, returnerer fokuset til den siste posisjonen på siden, s
 
 Du kan også starte handlingssøket ved å trykke Ctrl +/ eller Alt + Q. Trykk hurtigtasten på nytt for å returnere fokuset til den siste posisjonen på siden.
 
-## Forstå resultatlisten
-<a id="understanding-the-results-list" class="xliff"></a>
+## <a name="understanding-the-results-list"></a>Forstå resultatlisten
 I Finance and Operations må du ofte vite både plasseringen og konteksten til en knapp for å fullt ut forstå formålet med denne knappen. Derfor vises tilleggsinformasjon for hvert element i listen over resultater, som forklarer nøyaktig hvilke knapper som vises i listen. Spesielt vises "banen" for knappen. Denne banen kan inkludere etikettene for følgende grensesnittelementer, etter behov:
 
 -   Handlingsrutekategori
@@ -74,8 +70,7 @@ I det forrige eksemplet viste handlingssøk resultatene fra standardhandlingsrut
 
 [![lager-beholdning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## Handlingssøk kontra navigasjonssøk
-<a id="action-search-vs-navigation-search" class="xliff"></a>
+## <a name="action-search-vs-navigation-search"></a>Handlingssøk kontra navigasjonssøk
 Mens handlingssøk skal søke etter og kjøre handlinger på en side, er det en egen søkemekanisme for å finne og navigere til sider i Finance and Operations. Hvis du vil ha mer informasjon om denne funksjonen, kan du se artikkelen [Navigasjonssøk](navigation-search.md).
 
 

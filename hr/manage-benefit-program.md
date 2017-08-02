@@ -27,24 +27,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definere og administrere et fordelsprogram
-<a id="define-and-manage-a-benefits-program" class="xliff"></a>
+# <a name="define-and-manage-a-benefits-program"></a>Definere og administrere et fordelsprogram
 
 [!include[banner](includes/banner.md)]
 
 
 Personale inneholder et sett med verktøy som kan brukes til å definere og vedlikeholde fordeler, fradrag og arbeideres kompensasjonsplaner som en organisasjon tilbyr eller behandler for sine arbeidere. Dette emnert inneholder informasjon om hvordan du definerer og behandler fordeler.
 
-Fordelsoppsett
-<a id="benefit-setup" class="xliff"></a>
+<a name="benefit-setup"></a>Fordelsoppsett
 -------------
 
 Før arbeidere kan registreres i fordeler, må du opprette elementene i hver enkelt fordel. Disse elementene kombinerer lignende fordelsplaner og definer standardinnstillinger, for eksempel fradragssatser og regnskapsdetaljer. Mange av disse innstillingene kan justeres når arbeidere senere registreres i fordelsprogrammet. En organisasjon kan tilby flere registreringsalternativer for hver fordelsplanen, eller en arbeider kan avstå fra registrering i planen. 
 
 [![Prosessflyt for fordel](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
-## Fordelselementer
-<a id="benefit-elements" class="xliff"></a>
+## <a name="benefit-elements"></a>Fordelselementer
 Før du begynner å opprette fordeler og registrer arbeidere i dem, må du definere elementene som utgjør en fordel: type, plan og alternativer.
 
 -   **Type** – En samling av planer for en bestemt fordel, for eksempel en medisinsk fordel eller en parkeringsfordel.
@@ -55,8 +52,7 @@ For hver type fordeler, for eksempel syn eller tannlege, kan en organisasjon til
 
 [![bilde av fordel](./media/benefit-pic.png)](./media/benefit-pic.png)
 
-## Rettighet
-<a id="eligibility" class="xliff"></a>
+## <a name="eligibility"></a>Rettighet
 Mange faktorer avgjør arbeideres kvalifikasjon for ulike typer fordeler som en arbeidsgiver tilbyr. Når du oppretter en fordel i Microsoft Talent, kan du angi type rettighet som gjelder for denne fordelen. 
 
 Du kan gjøre en fordel tilgjengelig for alle arbeidere. Enkelte selskaper tilbyr for eksempel parkeringskort til alle ansatte som en fordelsskatt. Når du oppretter denne fordelen, setter du kvalifikasjonen til **Alle arbeidere er kvalifiserte**. 
@@ -65,16 +61,14 @@ For andre fordeler, for eksempel utlegg og avgiftslettelser, gjelder ikke berett
 
 Fordelsrettigheter kan til slutt være regelbasert. Et selskap kan for eksempel tilby to typer livsforsikringsfordel til ansatte. Ansatte i ledelsen er kvalifisert for én livsforsikringsplan, mens alle andre heltidsansatte er kvalifisert for den andre livsforsikringsplanen. I Talent kan du opprette en fordelsrettighetsregel for å søke etter alle ansatte i ledelsen, og en annen regel til å finne alle andre heltidsansatte og deretter bruke disse reglene til den aktuelle fordelen.
 
-## Registrering
-<a id="enrollment" class="xliff"></a>
+## <a name="enrollment"></a>Registrering
 Når du har opprettet fordelene som organisasjonen tilbyr, og fastslått rettigheten, kan du registrere arbeiderne i fordeler. Du kan registrere én enkelt arbeider i fordeler eller du kan registrere mange arbeidere i én eller flere fordeler i én enkelt prosess. 
 
 Noen ganger stopper en organisasjon å tilby bestemte fordeler. I dette tilfellet må du oppdatere fordelen og arbeidere som er registrert. Utløpsdato for massefordeler lar deg samtidig endre utløpsdatoen både for en fordel og registreringene av arbeidere for denne fordelen. Du kan også velge flere arbeidere som er registrert i en fordel, og endre sluttdatoen for dekningen deres. 
 
 På samme måte kan du med masseutvidelse av fordel utvide utløpsdatoen for både en fordel og arbeiderregistreringene for denne fordelen hvis du vil tilby en fordel lenger enn opprinnelig planlagt.
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Policyer for fordelsrettigheter](benefit-eligibility-policies.md)

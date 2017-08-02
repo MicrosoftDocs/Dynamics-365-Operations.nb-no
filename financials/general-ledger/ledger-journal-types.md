@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Finansjournaltyper
-<a id="ledger-journal-types" class="xliff"></a>
+# <a name="ledger-journal-types"></a>Finansjournaltyper
 
 [!include[banner](../includes/banner.md)]
 

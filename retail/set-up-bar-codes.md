@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definere strekkoder
-<a id="set-up-bar-codes" class="xliff"></a>
+# <a name="set-up-bar-codes"></a>Definere strekkoder
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Du kan bruke strekkoder til å kjøpe og selge produkter, spore produktvarianter
 4.  Opprette strekkoder for produkter.
 
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se også
 --------
 
 [Definere strekkodemasker](set-up-bar-code-masks.md)
