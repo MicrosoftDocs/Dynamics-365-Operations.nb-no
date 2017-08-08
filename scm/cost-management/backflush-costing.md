@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Dette emnet introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing. 
 
-Med etterkalkulering for Lean manufacturing kan produksjonsflyten bruke kostnadskalkylemetoden kjent som backflush-etterkalkulering. I metoden backflush-etterkalkulering akkumuleres direkte materialer som er brukt i produksjonsflytens VIA-kostnadskonto. Lagermodellgruppen for standard kostpris brukes. Produktene som er mottatt fra produksjonsflyten, trekkes fra VIA ved standardkostnad. Den viktigste forskjellen mellom backflush-etterkalkuleringen og standardkostnad er at for backflush-etterkalkulering beregnes ikke avvik per kanban eller ferdig produkt. I stedet beregnes avvik per produksjonsflyt over en periode. Denne metoden introduserer et virkelig lean-begrep for rapportering av materialforbruk. Dedikert plukket antall av materialet rapporteres ikke til en kanban eller produksjonsordre. I stedet klargjøres hele antallet for partier eller håndteringsenheter til produksjonsflyten. Når partiene eller håndteringsenhetene er registrert som tomme, deklareres de brukt. Avansert forbruk kan brukes, avhengig av [konfigurasjonen av produksjonsflyten](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Før avansert forbruk kan brukes, må organisasjoner tillate seg selv å slette material i VIA for produksjonsflyten. Den periodiske backflush-etterkalkuleringen bestemmer effektive den verdien av VIA til slutten av perioden. Denne fastsettelsen er basert på kanban-håndteringsenhetene og kanban-jobbstatusen. Avvik mellom de gjeldende verdiene og de faktiske VIA-verdiene per kostgruppe og vare beregnes og vises som avvik.
+Med etterkalkulering for Lean manufacturing kan produksjonsflyten bruke kostnadskalkylemetoden kjent som backflush-etterkalkulering. I metoden backflush-etterkalkulering akkumuleres direkte materialer som er brukt i produksjonsflytens VIA-kostnadskonto. Lagermodellgruppen for standard kostpris brukes. Produktene som er mottatt fra produksjonsflyten, trekkes fra VIA ved standardkostnad. Den viktigste forskjellen mellom backflush-etterkalkuleringen og standardkostnad er at for backflush-etterkalkulering beregnes ikke avvik per kanban eller ferdig produkt. I stedet beregnes avvik per produksjonsflyt over en periode. Denne metoden introduserer et virkelig lean-begrep for rapportering av materialforbruk. Dedikert plukket antall av materialet rapporteres ikke til en kanban eller produksjonsordre. I stedet klargjøres hele antallet for partier eller håndteringsenheter til produksjonsflyten. Når partiene eller håndteringsenhetene er registrert som tomme, deklareres de brukt. Avansert forbruk kan brukes, avhengig av [konfigurasjonen av produksjonsflyten](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Før avansert forbruk kan brukes, må organisasjoner tillate seg selv å slette material i VIA for produksjonsflyten. Den periodiske backflush-etterkalkuleringen bestemmer effektive den verdien av VIA til slutten av perioden. Denne fastsettelsen er basert på kanban-håndteringsenhetene og kanban-jobbstatusen. Avvik mellom de gjeldende verdiene og de faktiske VIA-verdiene per kostgruppe og vare beregnes og vises som avvik.
 
 ## <a name="configuring-backflush-costing"></a>Konfigurere backflush-etterkalkulering
 For å aktivere etterkalkulering må du fullføre følgende oppsett:

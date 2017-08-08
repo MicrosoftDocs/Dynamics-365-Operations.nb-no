@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har inte
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
-Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
@@ -196,12 +196,16 @@ Hvis endringsadministrasjon er aktivert for bestillinger, går bestillingen gjen
 
 Tabellen nedenfor viser et eksempel på endringene i status og versjon som en bestilling kan gå gjennom når endringsadministrasjon er aktivert: Versjonen registreres når bestillingen er godkjent, ikke når bestillingen sendes til leverandøren eller bekreftes.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Handling**                                                                                                    | **Status og versjon**                                                                                                                                                                                                                                                                                                                                                                      |
-| Den første versjonen av Bestillingen opprettes i Finance and Operations.                                      | Statusen er **Utkast**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Bestillingen sendes til godkjenningsprosessen. (Godkjenningsprosessen er en intern prosess som leverandøren ikke er involvert i.) | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis Bestillingen ikke avvises under godkjenningsprosessen. Den godkjente bestillingen registreres som en versjon.                                                                                                                                                                                                                     | | Bestillingen sendes til leverandøren                                                                                  | Versjonen registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.                                                                                                                                                                                                                                                                       | | Du kan gjøre noen endringer som kreves av leverandøren, enten manuelt eller ved hjelp av handlingen på svaret for å oppdatere Bestillingen.                                                       | Statusen endres tilbake til **Utkast**.                                                                                                                                                                                                                                                                                                                                                    | | Bestillingen sendes til godkjenningsprosessen på nytt.                                                            | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Systemet kan også konfigureres slik at spesifikke endringer i felter ikke krever ny godkjenning. I dette tilfellet endres statusen først til **Utkast** og oppdateres deretter automatisk til **Godkjent**. Den godkjente bestillingen registreres som en ny versjon. | | Du sender den nye versjonen av bestillingen til leverandøren.                                                             | Den nye versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.                                                                                                                                                                                                                                                                   | | Leverandøren godkjenner den nye versjonen av bestillingen.                                                                | Statusen endres til **Bekreftet**, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Handling**                                                               | **Status og versjon**                                                                                                                                       |
+| Den første versjonen av Bestillingen opprettes i Finance and Operations.      | Statusen er **Utkast**.  |
+| Bestillingen sendes til godkjenningsprosessen. (Godkjenningsprosessen er en intern prosess som leverandøren ikke er involvert i.)                                                           | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Den godkjente bestillingen registreres som en versjon.           | 
+| Bestillingen er sendt til leverandøren                                                            | Versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.      |
+| Du kan gjøre noen endringer som kreves av leverandøren, enten manuelt eller ved hjelp av handlingen på svaret for å oppdatere Bestillingen.                                                            | Statusen endres tilbake til **Utkast**.     |
+|Bestillingen sendes til godkjenningsprosessen på nytt.                                                |  Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Systemet kan også konfigureres slik at spesifikke endringer i felter ikke krever ny godkjenning. I dette tilfellet endres statusen først til **Utkast** og oppdateres deretter automatisk til **Godkjent**. Den godkjente bestillingen registreres som en ny versjon.                                         |
+|Du sender den nye versjonen av bestillingen til leverandøren.                                                |  Den nye versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**.                                         |
+|Leverandøren godkjenner den nye versjonen av bestillingen.                                                |  Statusen endres til **Bekreftet**, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Dele informasjon om forsendelseslager
 Hvis du bruker forsendelseslager, kan leverandører bruke grensesnittet for leverandørsamarbeid til å vise informasjon på følgende sider:

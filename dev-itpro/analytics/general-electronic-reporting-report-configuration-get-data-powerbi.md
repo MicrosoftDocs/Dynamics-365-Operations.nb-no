@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -103,7 +103,7 @@ Klikk **innstillinger** for den nye målposten. Følg deretter fremgangsmåten n
 I trekonfigurasjonene på **Konfigurasjoner**-siden (**Organisasjonsstyring** &gt; **Elektronisk rapportering** &gt; **Konfigurasjoner**) velger du konfigurasjonen **Importer/eksporter aktiviteter** som du opprettet tidligere. Endre statusen til versjon 1.1 fra **Utkast** til **Fullført** for å gjøre dette formatet tilgjengelig for bruk. [![Siden Konfigurasjoner](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Velg den fullførte versjonen av konfigurasjonen **Importer/eksporter aktiviteter**, og klikk deretter **Kjør**. Legg merke til at det konfigurerte målet blir brukt til utdataresultatet som genereres i Excel-format. Sett alternativet **Satsvis behandling** til **Ja** for å kjøre denne rapporten i uovervåket modus. Klikk **Regelmessighet** for å planlegge nødvendige gjentakelse for den satsvise kjøringen. Gjentakelsen definerer hvor ofte de oppdaterte dataene overføres fra Finance and Operations til Power BI. [![Dialogboksen Parametere for elektronisk rapport](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Når den er konfigurert, finner du ER-rapportkjøringsjobben på siden **Satsvise jobber** (**Systemadministrasjon &gt; Forespørsler &gt; Satsvise jobber**). [![Siden Satsvise jobber](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Når denne jobben kjøres for første gang, opprettes en ny Excel-fil med det konfigurerte navnet i den valgte SharePoint-mappen i målet. Hver gang jobben kjøres, opprettes en ny versjon av denne Excel-filen i målet. [![Ny versjon av Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Opprette et Power BI-datasett ved hjelp av utdataresultatet av ER-formatet
-Logge på Power BI, og åpne en eksisterende Power BI-gruppen (arbeidsområde) eller opprett en ny gruppe. Klikk **Legg til** under **Filer** under **Importer eller koble til data**, eller klikk plusstegnet (**+**) ved siden av **Datasett** i ruten til venstre. [![Opprette et datasett](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Velg alternativet **SharePoint – gruppeområder**, og skriv inn banen til SharePoint-serveren du bruker (**https://ax7partner.spoppe.com** i vårt eksempel). Gå deretter til mappen **/Shared Documents/GER data/PowerBI**, og velg Excel-filen du opprettet som datakilde for det nye Power BI-datasettet. [![Velge Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klikk **Koble til**, og klikk deretter **Importer**. Det opprettes et nytt datasett som er basert på den valgte Excel-filen. Datasettet kan også legges til automatisk i det nyopprettede instrumentbordet. [![Datasett på instrumentbordet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurer oppdateringsplanen for datasettet for å fremtvinge en regelmessig oppdatering. Periodiske oppdateringer aktiverer bruk av nye forretningsdata som kommer fra Finance and Operations via regelmessig kjøring av ER-rapporten gjennom nye versjoner av Excel-filen som opprettes på SharePoint-serveren.
+Logge på Power BI, og åpne en eksisterende Power BI-gruppen (arbeidsområde) eller opprett en ny gruppe. Klikk **Legg til** under **Filer** under **Importer eller koble til data**, eller klikk plusstegnet (**+**) ved siden av **Datasett** i ruten til venstre. [![Opprette et datasett](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Velg alternativet **SharePoint – gruppeområder**, og skriv inn banen til SharePoint-serveren du bruker (**https://ax7partner.litware.com** i vårt eksempel). Gå deretter til mappen **/Shared Documents/GER data/PowerBI**, og velg Excel-filen du opprettet som datakilde for det nye Power BI-datasettet. [![Velge Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klikk **Koble til**, og klikk deretter **Importer**. Det opprettes et nytt datasett som er basert på den valgte Excel-filen. Datasettet kan også legges til automatisk i det nyopprettede instrumentbordet. [![Datasett på instrumentbordet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurer oppdateringsplanen for datasettet for å fremtvinge en regelmessig oppdatering. Periodiske oppdateringer aktiverer bruk av nye forretningsdata som kommer fra Finance and Operations via regelmessig kjøring av ER-rapporten gjennom nye versjoner av Excel-filen som opprettes på SharePoint-serveren.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Opprette en Power BI-rapport ved hjelp av det nye datasettet
 Hvis du vil opprette en ny Power BI-rapport, klikker du Power BI-datasettet **Import- og eksportdetaljer** som du opprettet. Konfigurer deretter visningen. Velg for eksempel visningen **Fylt kart**, og konfigurere den på følgende måte:

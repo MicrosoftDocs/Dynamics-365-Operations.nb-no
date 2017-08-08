@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -78,7 +78,7 @@ Produksjonsinnleveringsjournalene fungerer som vareankomstjournalene, men brukes
 
 ### <a name="counting"></a>Opptelling
 
-Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer opptellingsgrupper, se [Definere prosesser for lageropptelling (oppgaveveiledning)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer opptellingsgrupper, se [Definere prosesser for lageropptelling (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### <a name="tag-counting"></a>Brikkeopptelling
 

@@ -1,5 +1,5 @@
 ---
-title: "Direkteoverføring fra produksjonsordrer til utleveringsporter | Microsoft Docs"
+title: "Direkteoverføring fra produksjonsordrer til utleveringsporter"
 description: "Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport."
 author: johanhoffmann
 manager: AnnBe
@@ -8,19 +8,20 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+audience: Application User
 ms.reviewer: bis
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 0b5541b6752da0c73e4309951ecabc0793f24289
+ms.translationtype: HT
+ms.sourcegitcommit: b424be5396df9434cd799ca7e7e9342a7c476e29
+ms.openlocfilehash: 231808260eeab73120bab43558ab5745f9fdbe46
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -123,7 +124,6 @@ Når et produkt som er rapportert som fullført på produksjonslinjen overføres
 ### <a name="additional-information"></a>Tilleggsinformasjon
 
 -   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet.
--   Antallet som blir rapportert som fullført, kan ikke deles til overføringsordre med laver etterspørsel. Hvis det for eksempel ferdigmeldes 20 stykker, og det finnes en overføringsordre for 5 stykker, blir overføringsordren ikke funnet gyldig for direkteoverføring.
 
 
 

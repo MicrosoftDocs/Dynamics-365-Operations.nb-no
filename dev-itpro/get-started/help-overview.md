@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
 
-> [!IMPORTANT] 
-> Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt
+> [!NOTE] 
+> Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+
+Hjelpesystemet er felles for alle produkter i enhetlig drift:
+- Dynamics 365 for Finance and Operations, Enterprise-utgaven
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
 Finance and Operations inkluderer et hjelpesystem som er basert på to hovedkomponenter:
 
 -   Et dokumentasjonsområde
 -   Oppgaveveiledninger
 
-Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt. 
-
-Hjelpesystemet er felles for alle produkter i enhetlig drift:
-- Dynamics 365 for Finance and Operations, Enterprise edition
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
-
 Du får tilgang til både hjelpeemner og oppgaveveiledninger fra Hjelp-ruten, uanset hvilket produkt du bruker. Følgende skjermbilde viser Dynamics 365 for Finance and Operations
 
-![Hjelp-rute](./media/help-pane-ops-task-guides-1024x741.png)
+![Hjelp-rute](./media/help-pane-ops-task-guides.png)
 
 Dette emnet beskriver hjelpesystemet og forklarer hvordan du kan opprette egendefinerte dokumentasjons- og opplæringsressurser for organisasjonen.
 
 > [!IMPORTANT]
-> Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på webområdet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) for både Retail og Talent.
+> Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på webområdet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index) for både Retail og Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
 
-docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) er den viktigste kilden til produktdokumentasjonen for Finance and Operations. Området tilbyr følgende funksjoner:
+docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) er den viktigste kilden til produktdokumentasjonen for Finance and Operations. Området tilbyr følgende funksjoner:
 
 -   **Tilgang til det mest oppdaterte innholdet** – Området gir oss en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor bidrar det til å sørge for at du har tilgang til den nyeste tekniske informasjonen.
 -   **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
@@ -68,12 +65,13 @@ docs.microsoft.com-området ([docs.microsoft.com/dynamics365/operations](/dynami
 ### <a name="searching-on-docsmicrosoftcom"></a>Søk på docs.microsoft.com
 Vi får mange spørsmål om hvordan du søker etter innholdet vårt. Hvis du starter fra en side om Finance and Operations på området vårt, begrenser vi søket slik at det bare gjelder for Finance and Operations-innhold. Du kan fjerne omfanget ved å klikke X ved siden av Operations i søkeboksen. 
 
-![Søk i ordrer](./media/search-scope.png)
+![Søk i ordrer](./media/search-scope-2.png)
 
 Du kan også finne innholdet med en hvilken som helst søkemotor. For å få best resultater anbefaler vi at du bruker et områdesøk, for eksempel området: docs.microsoft.com dynamics 365 "søkeord"  
-![Områdesøk](./media/site-search.png)
 
-![Resultater av områdesøk](./media/site-search-results.png)
+![Områdesøk](./media/site-search-1.png)
+
+![Resultater av områdesøk](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innholdsfortegnelsen for enhetlig drift
 Alle produkter deler en enkelt innholdsfortegnelse på webområdet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen til å finne emner du leter etter.
@@ -105,7 +103,7 @@ En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som lede
 
 Vi leverer ulike sett med oppgaveveiledninger for hvert enhetlig drift-produkt. Delen Tilgang til oppgaveveiledninger fra Hjelp-ruten beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
 
-![Oppgaveveiledning – lesevisning](./media/task-guide-ops-1024x742.png)
+![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
 Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start oppgaveveiledning** nederst i Hjelp-ruten. En svart peker åpnes og angir handlingen som du må utføre. Følg instruksjonene som vises i brukergrensesnittet, og legg inn data i henhold til instruksjonene. 
 ![Oppgaveveiledning – trinnvis instruksjon](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Du kan opprette dine egne oppgaveregistreringer, eller du kan laste ned og tilpa
 ## <a name="in-product-help"></a>Hjelp i produktet
 Hvis du vil ha tilgang til hjelpeinnhold i Finance and Operations, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl + Skift +?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger. 
 
-![Hjelp-rute](./media/help-pane-wiki-1024x684.png)
+![Hjelp-rute](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
@@ -162,7 +160,7 @@ Følge denne fremgangsmåten på siden **Systemparametere**:
 
 Når systemansvarlig har fullført disse trinnene, kan du åpne Hjelp-ruten og klikke kategorien **Oppgaveveiledninger**. Nå vil du se oppgaveveiledningene som gjelder for siden du er på i Finance and Operations. Hvis det ikke finnes noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket. Når du klikker en oppgaveveiledning i Hjelp-ruten, viser Hjelp-ruten de trinnvise instruksjonene, og du kan spille av oppgaveveiledningen. 
 
-![Oppgaveveiledning – lesevisning](./media/task-guide-ops-1024x742.png)
+![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Hvor er oversatt oppgaveveiledningene?
 

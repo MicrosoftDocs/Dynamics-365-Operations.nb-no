@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 017985645e0f77e7f269fce2932c0ec0f6eaaa1c
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et p
 -   **Ruteversjon** – En ruteversjon definerer ruten som brukes til å produsere et produkt eller en produktvariant. Ruteversjoner aktivere ruter som skal brukes på nytt på tvers av produkter eller endres over tid. De kan også aktivere forskjellige ruter som skal brukes til å produsere det samme produktet. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som lokasjon eller antallet som skal produseres.
 
 ## <a name="routes"></a>Ruter
-En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et produkt eller en produktvariant. Hver operasjon er tilordnet et operasjonsnummer og en etterfølgende operasjon. Rekkefølgen på operasjonene danner et rutenettverk som representeres av et styrt diagram som har ett eller flere startpunkter og ett enkelt sluttpunkt. I Dynamics 365 for Finance and Operations skilles det mellom ruter basert på strukturtypen. De to rutetypene er enkle ruter og rutenettverk. I Parametere for produksjonskontroll kan du angi om bare enkle ruter kan brukes eller om de mer kompliserte rutenettverkene kan brukes.
+En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et produkt eller en produktvariant. Hver operasjon er tilordnet et operasjonsnummer og en etterfølgende operasjon. Rekkefølgen på operasjonene danner et rutenettverk som representeres av et styrt diagram som har ett eller flere startpunkter og ett enkelt sluttpunkt. I Finance and Operations skilles det mellom ruter basert på strukturtypen. De to rutetypene er enkle ruter og rutenettverk. I Parametere for produksjonskontroll kan du angi om bare enkle ruter kan brukes eller om de mer kompliserte rutenettverkene kan brukes.
 
 ### <a name="simple-routes"></a>Enkle ruter
 
@@ -87,8 +87,8 @@ Hver rute kan godkjennes eller ikke godkjennes separat. Legg imidlertid merke ti
 
 Hvis du må ha en logg som registrerer hvem som godkjenner hver rute, kan du kreve elektroniske signaturer for rutegodkjenning. Brukerne må bekrefte sin identitet ved hjelp av en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-## <a name="operations"></a>Operasjoner
-En operasjon er et trinn i produksjonsprosessen. I Dynamics 365 for Finance and Operations har hver operasjon en ID og en enkel beskrivelse. Tabellene nedenfor viser vanlige eksempler på operasjoner fra en maskinproduksjon.
+## <a name="operations"></a>Operations
+En operasjon er et trinn i produksjonsprosessen. I Finance and Operations har hver operasjon en ID og en enkel beskrivelse. Tabellene nedenfor viser vanlige eksempler på operasjoner fra en maskinproduksjon.
 
 | Operasjon  | beskrivelse        |
 |------------|--------------------|
@@ -128,7 +128,7 @@ Operasjonsrelasjoner gir deg stor fleksibilitet når du definerer rutene. Muligh
 
 ### <a name="modifying-product-specific-routes"></a>Endre produktspesifikke ruter
 
-Når du åpner **Rute**-siden fra siden **Detaljer om frigitt produkt**, vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Dynamics 365 for Finance and Operations operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
+Når du åpner **Rute**-siden fra siden **Detaljer om frigitt produkt**, vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Finance and Operations operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
 
 På **Rute**-siden kan du endre operasjonsegenskapene for operasjonen, for eksempel operasjonstiden eller kostnadskategoriene. Endringene lagres på operasjonsrelasjonen som er spesifikk for ruten og frigitt produkt som er referert til i gjeldende ruteversjon. Hvis operasjonsrelasjonen som vises ikke er spesifikk for ruten og det frigitte produktet, oppretter systemet en kopi av operasjonsrelasjonen før endringene lagres. Denne kopien *er* spesifikk for ruten og det frigitte produktet. Endringen påvirker derfor ikke andre ruter eller frigitte produkter. Hvis du vil kontrollere hvilken operasjonsrelasjon som endres på **Rute**-siden, kan du se på feltene **Varekode** og **Rutekode**.  
 
@@ -150,9 +150,9 @@ Hvis virksomheten din bruker standardoperasjoner og operasjonsparameterne er de 
 
 ### <a name="applying-operation-relations"></a>Bruke operasjonsrelasjoner
 
-I noen tilfeller må Dynamics 365 for Finance and Operations først finner operasjonsegenskapene for en operasjon. Når for eksempel en bestilling opprettes, må operasjonsegenskapene for hver operasjon kopieres fra operasjonsrelasjonene til produksjonsruten. I slike tilfeller søker Finance and Operations etter relevante operasjonsrelasjoner fra den mest spesifikke kombinasjonen til den minst spesifikke kombinasjonen.  
+I noen tilfeller må Finance and Operations først finner operasjonsegenskapene for en operasjon. Når for eksempel en bestilling opprettes, må operasjonsegenskapene for hver operasjon kopieres fra operasjonsrelasjonene til produksjonsruten. I slike tilfeller søker Finance and Operations etter relevante operasjonsrelasjoner fra den mest spesifikke kombinasjonen til den minst spesifikke kombinasjonen.  
 
-Når Dynamics 365 for Finance and Operations søker etter den mest relevante operasjonsrelasjonen for et frigitt produkt, vil en aktivitetsplan som samsvarer med vare-ID-en til det frigitte produktet, foretrekkes fremfor en operasjonsrelasjon som samsvarer med varegruppe-ID-en. En operasjonsrelasjon som samsvarer med varegruppe-ID-en foretrekkes fremfor standard operasjonsrelasjon. Søket utføres i følgende rekkefølge:
+Når Finance and Operations søker etter den mest relevante operasjonsrelasjonen for et frigitt produkt, vil en aktivitetsplan som samsvarer med vare-ID-en til det frigitte produktet, foretrekkes fremfor en operasjonsrelasjon som samsvarer med varegruppe-ID-en. En operasjonsrelasjon som samsvarer med varegruppe-ID-en foretrekkes fremfor standard operasjonsrelasjon. Søket utføres i følgende rekkefølge:
 
 1.  **Varekode**=**Tabell** og **Varerelasjon**=&lt;vare-ID&gt;
 2.  **Varekode**=**Gruppe** og **Varerelasjon**=&lt;varegruppe-ID&gt;
@@ -199,7 +199,7 @@ Avhengig av dine forretningsbehov kan du kanskje redusere arbeidet som kreves fo
 
 ### <a name="making-routes-independent-of-resources"></a>Gjøre ruter uavhengige av ressurser
 
-I mange systemer må operasjonsressursene eller ressursgruppen som utfører en operasjon angis i ruten. I Dynamics 365 for Finance and Operations kan du imidlertid definere et sett med krav som en operasjonsressurs må oppfylle for å kunne brukes for operasjonen. Den spesifikke operasjonsressursen eller ressursgruppen som skal brukes, trenger derfor ikke å bestemmes før operasjonen faktisk er planlagt. Denne funksjonen er spesielt nyttig når du har mange arbeidere eller maskiner som kan utføre den samme operasjonen.  
+I mange systemer må operasjonsressursene eller ressursgruppen som utfører en operasjon angis i ruten. I Finance and Operations kan du imidlertid definere et sett med krav som en operasjonsressurs må oppfylle for å kunne brukes for operasjonen. Den spesifikke operasjonsressursen eller ressursgruppen som skal brukes, trenger derfor ikke å bestemmes før operasjonen faktisk er planlagt. Denne funksjonen er spesielt nyttig når du har mange arbeidere eller maskiner som kan utføre den samme operasjonen.  
 
 Du angir for eksempel at en operasjon krever en operasjonsressurs av typen **Maskin** som tillater **Stempling** opptil 20 tonn. Planleggingsmotoren vil deretter løse disse kravene til en bestemte operasjonsressurs eller ressursgruppe når operasjonen planlegges. Du har mye større fleksibilitet siden du kan angi disse kravene i stedet for å binde operasjonen til en bestemt maskin. I tillegg er vedlikehold enklere når ressurser flyttes eller nye ressurser legges til.  
 
