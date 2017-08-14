@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Dette emnet gir en oversikt over verktøyet for elektronisk rapportering (ER). Den inneholder informasjon om viktige konsepter, hvilke scenarioer ER støtter, samt en liste over formater som er utviklet og lansert som en del av ER-løsningen.
 
-Elektronisk rapportering (ER) er et verktøy du kan bruke til å konfigurere formater for både innkommende og utgående elektroniske dokumenter i overensstemmelse med de juridiske kravene i ulike land/områder. ER lar deg administrere disse formatene i deres livssyklus. Du kan for eksempel innføre nye lovbestemte krav, og generere forretningsdokumenter i det riktige formatet for elektronisk utveksling av informasjon med statlige instanser, banker og andre parter.
+ER er et verktøy du kan bruke til å konfigurere formater for både innkommende og utgående elektroniske dokumenter i overensstemmelse med de juridiske kravene i ulike land/områder. ER lar deg administrere disse formatene i deres livssyklus. Du kan for eksempel innføre nye lovbestemte krav, og generere forretningsdokumenter i det riktige formatet for elektronisk utveksling av informasjon med statlige instanser, banker og andre parter.
 
 ER-motoren er rettet mot bedriftsbrukere i stedet for utviklere. Siden du konfigurere formater, i stedet for kode, er prosessene for å opprette og justere formater for elektroniske dokumenter raskere og enklere.
 
@@ -43,8 +42,8 @@ ER støtter TEKST, XML, Microsoft Word-dokument og OPENXML regneark. Et filtypeg
 ## <a name="capabilities"></a>Muligheter
 ER-motoren har følgende funksjoner:
 
-- Den representerer ett delt verktøy for elektronisk rapportering i forskjellige områder, og erstatter mer enn 20 forskjellige motorer som utfører en slags elektronisk rapportering i Microsoft Dynamics 365 for Operations.
-- Den isolerer rapportformatet fra gjeldende Dynamics 365 for Operations-implementering. Med andre ord kan formatet brukes for ulike versjoner av Microsoft Dynamics 365 for Operations.
+- Den representerer ett delt verktøy for elektronisk rapportering i forskjellige områder, og erstatter mer enn 20 forskjellige motorer som utfører en slags elektronisk rapportering i Microsoft Dynamics 365 for Finance and Operations.
+- Den isolerer rapportformatet fra gjeldende Finance and Operations-implementering. Med andre ord kan formatet brukes for ulike versjoner av Finance and Operations.
 - Den støtter oppretting av et tilpasset format som er basert på et opprinnelig format. Den inkluderer også funksjoner for å automatisk oppgradere det egendefinerte formatet når det opprinnelige formatet endres på grunn av krav til lokalisering/tilpassing.
 - Den blir det primære standardverktøyet for å støtte for lokaliseringskrav i elektronisk rapportering, både for Microsoft og Microsoft-partnere.
 - Den støtter muligheten til å distribuerte formater til partnere og kunder via Microsoft Dynamics Lifecycle Services (LCS).
@@ -59,7 +58,8 @@ ER støtter de to komponenttypene **Datamodell** og **Format**.
 En datamodellkomponent er en abstrakt representasjon av en datastruktur. Den brukes til å beskrive et bestemt bedriftsdomeneområde med nok detaljer for å oppfylle kravene til rapportering for dette domenet. En datamodellkomponent består av følgende deler:
 
 - En datamodell som et sett med områdespesifikke forretningsenheter, og hierarkisk strukturert definisjon av relasjoner mellom disse enhetene.
-- En modelltilordning som kobler valgte Microsoft Dynamics 365 for Operations-datakilder til enkeltelementer i en datamodell, som under kjøring angir dataflyten og reglene for utfylling av forretningsdata for en datamodellkomponent.
+- En modelltilordning som kobler valgte Finance and Operations-datakilder til enkeltelementer i en datamodell, som under kjøring angir dataflyten og reglene for utfylling av forretningsdata for en datamodellkomponent.
+
 En forretningsenhet for en datamodell representeres som en beholder (post). Egenskaper for forretningsenhet representeres som dataelementer (felt). Hvert dataelement har unik(t) navn, etikett, beskrivelse og verdi. Verdien for hvert dataelement kan være utformet slik at det blir gjenkjent som streng, heltall, desimaltall, dato, opplisting, boolsk og så videre. I tillegg kan det være en annen post eller postliste.
 
 En enkelt datamodellkomponent kan inneholde flere hierarkier for domenespesifikke forretningsenheter. Det kan også inneholde modelltilordninger som støtter en rapportspesifikk dataflyt ved kjøring. Hierarkiene skilles med én enkelt post som er valgt som roten for modelltilordning. Datamodellen for betalingsområdet kan for eksempel støtte følgende tilordninger:
@@ -71,17 +71,18 @@ Vær oppmerksom på at forretningsenheter, for eksempel firma og betalingstransa
 
 En modelltilordning som støtter utgående elektroniske dokumenter har følgende funksjoner:
 
-- Den kan bruke forskjellige datatyper for Dynamics 365 for Operations som datakilder for en datamodell. Den kan for eksempel bruke tabeller, dataenheter, metoder eller opplistinger.
+- Den kan bruke forskjellige datatyper for Finance and Operations som datakilder for en datamodell. Den kan for eksempel bruke tabeller, dataenheter, metoder eller opplistinger.
 - Den støtter parametere for inndata som kan defineres som datakilder for en datamodell når noen data må angis under kjøring.
-- Det støtter transformasjon av Dynamics 365 for Operasjons-data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
+- Det støtter transformasjon av Finance and Operasjons-data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
 
 [![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 En modelltilordning som støtter innkommende elektroniske dokumenter har følgende funksjoner:
 
-- Det kan bruke ulike oppdaterbare Dynamics 365 for Operations-dataelementer som mål. Disse dataelementene inkluderer tabeller, visninger og data-enheter. Dataene kan oppdateres ved hjelp av data fra innkommende elektroniske dokumenter. Flere mål kan brukes i en enkelt modell-tilordning.
+- Den kan bruke forskjellige oppdaterbare dataelementer som mål. Disse dataelementene inkluderer tabeller, visninger og data-enheter. Dataene kan oppdateres ved hjelp av data fra innkommende elektroniske dokumenter. Flere mål kan brukes i en enkelt modell-tilordning.
 - Den støtter parametere for inndata som kan defineres som datakilder for en datamodell når noen data må angis under kjøring.
-En komponent for datamodellen er utformet for hvert firmadomene som skal brukes som en felles datakilde for rapportering som isolerer rapportene fra fysisk implementering av Dynamics 365 for Operations-datakilder. Den representerer domenespesifikke forretningsbegreper og funksjoner i et skjema som gjør et rapporteringsformats opprinnelige utforming og ytterligere vedlikehold mer effektivt.
+
+En komponent for datamodellen er utformet for hvert firmadomene som skal brukes som en felles datakilde for rapportering som isolerer rapportene fra fysisk implementering av datakilder. Den representerer domenespesifikke forretningsbegreper og funksjoner i et skjema som gjør et rapporteringsformats opprinnelige utforming og ytterligere vedlikehold mer effektivt.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Formatkomponenter for utgående elektroniske dokumenter
 
@@ -133,32 +134,32 @@ Versjonskontroll støttes for ER-komponenter. Følgende arbeidsflyt leveres for 
 
 Versjoner som har statusen **Fullført** eller **Delt**, er tilgjengelig for annen datautveksling. Følgende handlinger kan utføres på en komponent som har disse statusene:
 
-- Komponenten kan serialiseres i XML-format og eksporteres fra Dynamics 365 for Operations som en fil i XML-format.
-- Komponenten kan serialiseres på nytt fra en XML-fil og importeres til Dynamics 365 for Operations som en ny versjon av en ER-komponent.
+- Komponenten kan serialiseres i XML-format og eksporteres som en fil i XML-format.
+- Komponenten kan serialiseres på nytt fra en XML-fil og importeres til Finance and Operations som en ny versjon av en ER-komponent.
 
 #### <a name="component-date-effectivity"></a>Datogyldighet for komponent
 
-ER-komponentversjoner har datogyldighet. Du kan angi **Gyldig fra**-datoen for en ER-komponent for å angi startdatoen som komponenten er gyldig fra for rapporteringsprosesser. Dynamics 365 for Operations-øktdatoen brukes for å definere om en komponent er gyldig for kjøring. Hvis flere enn én versjon er gyldig for en bestemt dato, brukes den nyeste versjonen for rapporteringsprosessen.
+ER-komponentversjoner har datogyldighet. Du kan angi **Gyldig fra**-datoen for en ER-komponent for å angi startdatoen som komponenten er gyldig fra for rapporteringsprosesser. Finance and Operations-øktdatoen brukes for å definere om en komponent er gyldig for kjøring. Hvis flere enn én versjon er gyldig for en bestemt dato, brukes den nyeste versjonen for rapporteringsprosessen.
 
 #### <a name="component-access"></a>Komponenttilgang
 
-Tilgang til ER-formatkomponenter avhenger av innstillingen for ISO-kode for land/område. Når denne innstillingen er tom for en valgt versjon av en formatkonfigurasjon, er en formatkomponent tilgjengelig fra et Dynamics 365 for Operations-firma ved kjøretid. Når denne innstillingen inneholder ISO-koder for land/område, er en formatkomponent bare tilgjengelig fra Dynamics 365 for Operations-firmaene som har en primæradresse som er definert for én av ISO-kodene for land/område for formatkomponenten.
+Tilgang til ER-formatkomponenter avhenger av innstillingen for ISO-kode for land/område. Når denne innstillingen er tom for en valgt versjon av en formatkonfigurasjon, er en formatkomponent tilgjengelig fra et firma ved kjøretid. Når denne innstillingen inneholder ISO-koder for land/område, er en formatkomponent bare tilgjengelig fra firmaene som har en primæradresse som er definert for én av ISO-kodene for land/område for formatkomponenten.
 
 Forskjellige versjoner av en dataformatkomponent kan ha ulike innstillinger for ISO-koder for land/område.
 
 #### <a name="configuration"></a>Konfigurasjon
 
-En ER-konfigurasjon ER er hylsteret til for en bestemt ER-komponent. Den komponenten kan være enten en datamodellkomponent eller en formatkomponent. En konfigurasjon kan inneholde forskjellige versjoner av en ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **Utkast**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i Dynamics 365 for Operations.
+En ER-konfigurasjon ER er hylsteret til for en bestemt ER-komponent. Den komponenten kan være enten en datamodellkomponent eller en formatkomponent. En konfigurasjon kan inneholde forskjellige versjoner av en ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **Utkast**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i Finance and Operations.
 
 Hver modellkonfigurasjon inneholder en datamodellkomponent. En ny formatkonfigurasjon kan utledes fra en bestemt datamodellkonfigurasjon. I konfigurasjonstreet vises formatkonfigurasjonen som opprettes, som et underordnet element av den opprinnelige datamodellkonfigurasjonen.
 
 Formatkonfigurasjonen som opprettes, inneholder en formatkomponent. Datamodellkomponenten for den opprinnelige modellkonfigurasjonen settes automatisk inn i formatkomponenten for den underordnede formatkonfigurasjonen som standard datakilde.
 
-En ER-konfigurasjon er delt for Dynamics 365 for Operations-firmaer.
+En ER-konfigurasjon er delt for Finance and Operations-firmaer.
 
 #### <a name="provider"></a>Leverandør
 
-ER-leverandør er parts-ID-en som brukes til å angi forfatteren (eier) av hver ER-konfigurasjon. ER lar deg administrere listen over konfigurasjonsleverandører. Formatkonfigurasjoner som leveres for elektroniske dokumenter som en del av Dynamics 365 for Operations-løsningen, er merket som eid av konfigurasjonsleverandøren **Microsoft**.
+ER-leverandør er parts-ID-en som brukes til å angi forfatteren (eier) av hver ER-konfigurasjon. ER lar deg administrere listen over konfigurasjonsleverandører. Formatkonfigurasjoner som leveres for elektroniske dokumenter som en del av Finance and Operations-løsningen, er merket som eid av konfigurasjonsleverandøren **Microsoft**.
 
 Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille inn oppgaveveiledningen **ER Opprette en konfigurasjonsleverandør og merke den som aktiv** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
 
@@ -166,11 +167,11 @@ Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille 
 
 Et ER-repositorium lagrer ER-konfigurasjoner. To typer ER-repositorier støtte, **Operasjonsressurser** og **LCS-prosjekt**.
 
-Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, gir ut som en del av Dynamics 365 for Operations-løsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomst av Dynamics 365 for Operations og brukes til elektronisk rapportering. De kan også brukes til tilleggslokaliseringer og tilpassinger.
+Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, gir ut som en del av Finance and Operations-løsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomst av Finance and Operations og brukes til elektronisk rapportering. De kan også brukes til tilleggslokaliseringer og tilpassinger.
 
-**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende Dynamics 365 for Operations-forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Dynamics 365 for Operations-forekomst.
+**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende Finance and Operations-forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Finance and Operations-forekomst.
 
-Nødvendige **LCS-prosjekt**-repositorier kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Dynamics 365 for Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
+Nødvendige **LCS-prosjekt**-repositorier kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Finance and Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
 
 ## <a name="supported-scenarios"></a>Scenarier som støttes
 ### <a name="building-a-data-model"></a>Bygge en datamodell
@@ -204,7 +205,7 @@ ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodelle
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Definere modelltilordning og velge datakilder** og **ER Tilordningen datamodell til valgte datakilder** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurere datatilordninger modell for innkommende dokumenter
-ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodeller som de har utformet, til bestemte mål. Datamodeller kan for eksempel tilordnes til oppdaterbare datakomponenter (tabeller, data-enheter og visninger) i Dynamics-365 for Operations. Basert på tilordningen, oppdateres Dynamics-365 for Operations-data under kjøring ved hjelp av dataene fra datamodellen. Som abstrakt lagring av ER-formatet, er datamodellen fylt med data som er importert fra et innkommende elektronisk dokument. Illustrasjonen nedenfor viser et eksempel på denne typen datamodelltilordning. I dette eksemplet brukes **Importtilordning for NETS**-modelltilordningen til datamodellen for betalingsområde for å støtte import av bankkontoutdrag i NETS-bankformatet for Norge.
+ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodeller som de har utformet, til bestemte mål. Datamodeller kan for eksempel tilordnes til oppdaterbare datakomponenter (tabeller, data-enheter og visninger) i Finance and Operations. Basert på tilordningen, oppdateres Finance and Operations-data under kjøring ved hjelp av dataene fra datamodellen. Som abstrakt lagring av ER-formatet, er datamodellen fylt med data som er importert fra et innkommende elektronisk dokument. Illustrasjonen nedenfor viser et eksempel på denne typen datamodelltilordning. I dette eksemplet brukes **Importtilordning for NETS**-modelltilordningen til datamodellen for betalingsområde for å støtte import av bankkontoutdrag i NETS-bankformatet for Norge.
 
 [![Importtilordning for NETS-datamodelleksempel](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ ER lar deg opprette (avlede) en ny komponent fra gjeldende versjon av en kompone
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Oppgradere et format ved å velge en ny versjon av basisformat (rebasere)
 
-ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskomponenten i gjeldende utkastversjon av den avledede komponenten. Denne prosessen kalles *rebasering*. En ny forskriftsmessig endringer som ble introdusert i den nyeste versjonen av formatet som ble importert fra LCS), kan for eksempel slå sammen automatisk i den tilpassede versjon av dette formatet av det elektroniske dokumentet. Endringer som ikke kan slås sammen automatisk anses som konflikter. Disse konfliktene presenteres for manuell løsing i utformingsverktøyet for den aktuelle komponenten. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Oppgrader format ved innføring av ny basisversjon av det** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
+ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskomponenten i gjeldende utkastversjon av den avledede komponenten. Denne prosessen kalles *rebasering*. En ny forskriftsmessig endringer som ble introdusert i den nyeste versjonen av formatet som ble importert fra LCS), kan for eksempel slå sammen automatisk i den tilpassede versjon av dette formatet av det elektroniske dokumentet. Endringer som ikke kan slås sammen automatisk anses som konflikter. Disse konfliktene presenteres for manuell løsing i utformingsverktøyet for den aktuelle komponenten. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Oppgrader format ved innføring av ny basisversjon av det formatet** (en del av forretningsprosessen **7.5.5.3 Anskaffe/utvikle endrede komponenter for IT-tjeneste/-løsning (10683)**).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Oversikt over ER-konfigurasjoner leveres i Finance and Operations-løsningen
 | Områdespesifikke datamodellkonfigurasjoner: tittel | Domene                | Datamodellavhengige formatkonfigurasjoner: tittel | Beskrivelse                                                        |

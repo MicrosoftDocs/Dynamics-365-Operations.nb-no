@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes 
 Dette emnet viser hvordan du oppretter Excel-maler som skal brukes med budsjettplaner ved hjelp av standard demodatasettet og Admin-brukerpålogging. Hvis du vil ha mer informasjon om budsjettplanlegging, kan du se [Oversikt over budsjettplanlegging.](budget-planning-overview-configuration.md) Du kan også følge opplæringen [Budsjettplanlegging 101](budget-plan.md) for å lære grunnleggende modulkonfigurasjon og -bruksprinsipper.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generer et regneark ved hjelp av oppsett for budsjettplandokument
-Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppsett. Hvert oppsett kan ha en tilknyttet dokumentmal for budsjettplan for å vise og redigere budsjettplandataene i et Excel-regneark. I dette emnet genereres en dokumentmal for budsjettplan ved hjelp av en eksisterende oppsettkonfigurasjon. Åpne **listen over budsjettplaner** (**Budsjettering**&gt; **Budsjettplaner**). Klikk **Ny** for å opprette et nytt budsjettplandokument. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppsett. Hvert oppsett kan ha en tilknyttet dokumentmal for budsjettplan for å vise og redigere budsjettplandataene i et Excel-regneark. I dette emnet genereres en dokumentmal for budsjettplan ved hjelp av en eksisterende oppsettkonfigurasjon. 
+
+Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). Klikk **Ny** for å opprette et nytt budsjettplandokument. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Bruk alternativet **Legg til linje** for å legge til linjer. Klikk **Oppsett** for å vise oppsettkonfigurasjonen for budsjettplandokument. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. Etter at malen er generert, går du til **Mal** &gt; **Vis** for å åpne og se gjennom dokumentmalen for budsjettplan. Du kan lagre Excel-filen på den lokale stasjonen. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. Etter at malen er generert, går du til **Mal** &gt; **Vis** for å åpne og se gjennom dokumentmalen for budsjettplan. Du kan lagre Excel-filen på den lokale stasjonen. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Oppsettet av budsjettplandokumentet kan ikke redigeres etter at det er knyttet til en Excel-mal. Hvis du vil endre oppsettet, sletter du den tilknyttede Excel-malfilen og genererer den på nytt. Dette er nødvendig for å holde feltene i oppsettet og regnearket synkronisert. 

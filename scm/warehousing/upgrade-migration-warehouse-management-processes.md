@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ Dette emnet gir en oversikt over alternativene for migrasjon av produkt- og lage
 Under en oppgradering til Finance and Operations blokkeres produkter hvis de er knyttet til en lagringsdimensjonsgruppe som har innstillinger som ikke samsvarer med kravene til innstillingene for lagringsdimensjonsgrupper i Finance and Operations. Etter oppgraderingen, kan du imidlertid bruke et sett med alternativer for overføring i  **Endre lagringsdimensjonsgruppen for varer**-prosessen for å fjerne blokkeringen av produkter som er blokkert under oppgraderingen. Deretter kan du behandle transaksjoner for disse produktene. Noen av elementene kan allerede være knyttet til lagringsdimensjonsgrupper der lagerdimensjonene område, lager og lokasjon er aktiv og fysisk sporet. I så fall kan du bruke **Endre lagringsdimensjonsgruppen for varer**-prosessen for å aktivere elementene som skal brukes i lagerstyringsprosesser. Denne funksjonen er nyttig hvis du vil bruke i lagerstyringsfunksjonen for eksisterende varer.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Oppgradering til Finance and Operations når AX 2012 R3 WMSII brukes
-Finance and Operations støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke den nye **Lagerstyring**-modulen. Hvis du vil ha mer informasjon, se [lagerstyring-hjemmesiden](https://ax.help.dynamics.com/en/wiki/warehouse-management/). I tidligere versjoner kunne du velge lagerdimensjonene lokasjon og pall-ID for økonomisk lager. Som en del av oppgraderingsprosessen, kan imidlertid lagerdimensjonen pall-ID ikke lenger aktiveres for økonomisk lager. Alle produkter som er tilknyttet en lagringsdimensjonsgruppe som bruker pall-ID-lagerdimensjonen, blokkeres, og vil ikke bli behandlet.
+Finance and Operations støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke den nye **Lagerstyring**-modulen. I tidligere versjoner kunne du velge lagerdimensjonene lokasjon og pall-ID for økonomisk lager. Som en del av oppgraderingsprosessen, kan imidlertid lagerdimensjonen pall-ID ikke lenger aktiveres for økonomisk lager. Alle produkter som er tilknyttet en lagringsdimensjonsgruppe som bruker pall-ID-lagerdimensjonen, blokkeres, og vil ikke bli behandlet.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Aktivere varer i Finance og Operations
 
@@ -70,7 +70,7 @@ Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene 
 1.  Opprett minst én ny lokasjonsprofil.
 2.  Klikk **Lagerstyring** &gt; **Oppsett** &gt; **Aktiver lagerstyringsprosesser** &gt; **Aktiver lageroppsettet**.
 3.  På **Aktiver lageroppsettet**-siden, legger du til lagrene som du vil aktivere. Du kan fullføre dette trinnet, enten direkte på siden, eller ved hjelp av Microsoft Office-integrering.
-4.  Tilordne en lokasjonsprofil til alle lokasjonene. Du kan enkelt fullføre dette trinnet, ved hjelp av Microsoft Office-integrering, direkte på siden. Du kan eksportere og importere dataene, eller bruke dataenhetsbehandlingen i [Databehandling](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Tilordne en lokasjonsprofil til alle lokasjonene. Du kan enkelt fullføre dette trinnet, ved hjelp av Microsoft Office-integrering, direkte på siden. Du kan eksportere og importere dataene, eller bruke dataenhetsbehandlingen i [Databehandling](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Valider endringene. Som en del av valideringsprosessen forekommer ulike valideringer for dataintegritet. Som en del av en større oppgraderingsprosess må problemer som oppstår, kanskje justeres på kildeimplementeringen. I så fall kreves en ytterligere oppgradering av data.
 6.  Behandle endringene.
 
@@ -81,7 +81,7 @@ Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene 
 3.  På  **Reservasjonshierarki**-siden kan du definere et nytt reservasjonshierarki i henhold til varens lagrings- og sporingsdimensjonsgrupper.
 4.  Opprett én eller flere sekvensgrupper for enhet, som inneholder minst de samme enhetene som brukes for varens lagerenheter.
 5.  Klikk **Lagerstyring** &gt; **Oppsett** &gt; **Aktivere lagerstyringsprosesser** &gt; **Endre lagringsdimensjonsgruppen for varer**.
-6.  På **Endre lagringsdimensjonsgruppen for varer**-siden, legger du til varenumre, lagringsdimensjonsgrupper og sekvensgrupper for enhet. Du kan fullføre dette trinnet direkte på siden, ved hjelp av Microsoft Office-integrering, eller ved å bruke dataenhetsprosessen i [Databehandling](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  På **Endre lagringsdimensjonsgruppen for varer**-siden, legger du til varenumre, lagringsdimensjonsgrupper og sekvensgrupper for enhet. Du kan fullføre dette trinnet direkte på siden, ved hjelp av Microsoft Office-integrering, eller ved å bruke dataenhetsprosessen i [Databehandling](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Valider endringene. Som en del av valideringsprosessen forekommer ulike valideringer for dataintegritet. Som en del av en større oppgraderingsprosess må problemer som oppstår, kanskje justeres på kildeimplementeringen. I så fall kreves en ytterligere oppgradering av data.
 8.  Behandle endringene. En oppdatering av alle lagerdimensjonene kan ta litt tid. Du kan overvåke fremdriften ved hjelp av satsvise jobboppgaver.
 

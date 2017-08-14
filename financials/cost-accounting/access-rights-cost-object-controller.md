@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 4d26d690e63898bfb463177da6654f1175ff35af
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: c520e14233fb03646aa4a273362e596bd1990a8c
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -71,9 +71,9 @@ Du kan bruke hurtigfanen **Brukere** i hierarkidesigner til å sette inn én ell
 | **Noder**                         | **Bruker-ID**      | **Fra dimensjonsmedlem** | **Til dimensjonsmedlem** |
 | Organisasjon                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administrator                 | April            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Charlotte           | CC002                     | CC003                   |
 |                                   |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Arnie            | CC001                     | CC001                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Magnus            | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produksjon            | David            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Innpakning | Ellen            | CC005                     | CC005                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Samling  | Chris            | CC006                     | CC006                   |
@@ -99,12 +99,12 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
     - Power BI-datavisualiseringer som er innebygd i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klienten
 
 > [!IMPORTANT]
-> - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet pares i Power BI. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet pares i Power BI. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 > - Dette emnet viser forutsetningene som må være på plass før du kan bruke arbeidsområdet **Kostnadskontroll**.
 
 Se også
 
 - [Arbeidsområde for kostnadskontroll](cost-control-workspace.md)
 - [Dimensjonshierarki](dimension-hierarchy.md)
-- [Definere sikkerhet for innholdspakken Kostnadsregnskap](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+- [Definere sikkerhet for innholdspakken Kostnadsregnskap](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 

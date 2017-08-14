@@ -3,25 +3,25 @@ title: "Utgåtte funksjoner"
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
+Dette emnet beskriver funksjonene som er fjernet, eller som er planlagt fjernet i fremtidige oppdateringer fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funksjoner som er foreldet i oppdateringen for juli 2017 av Dynamics 365 for Finance and Operations, Enterprise edition
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funksjoner som har blitt avviklet for alle distribusjonstypene av oppdateringen juli 2017 med plattformoppdatering 8
+Denne listen inneholder funksjoner som har blitt avviklet for både sky og lokale distribusjoner.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal for lagermobilenheter
 
@@ -40,7 +41,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Årsak til avskrivning**       | Duplikat funksjonalitet.                        |
-| **Erstattet med en annen funksjon?** | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, se [Installere og konfigurere Microsoft Dynamics 365 for Finange and Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Erstattet med en annen funksjon?** | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, se [Installere og konfigurere Microsoft Dynamics 365 for Finange and Operations – Warehousing](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Berørte moduler**             | Lagerstyring, transportstyring |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Avansert bankavstemming, samsvarsregel for manuelt samsvar
@@ -62,6 +63,28 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 | **Årsak til avskrivning**       | Finance and Operations er kompatibel med nettbrett. Nettbrettappen er ikke lenger nødvendig. |
 | **Erstattet med en annen funksjon?** | Nr.                                                                                      |
 | **Berørte moduler**             | Reiseregning og utlegg                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funksjoner som har blitt avviklet for lokale distribusjoner av oppdateringen for juli 2017 med plattformoppdatering 8
+
+### <a name="ssrs-report-viewer-control"></a>SSRS Report Viewer-kontrollen
+
+Denne funksjonen ble brukt til å arbeide med HTML-formaterte rapporter i webklienten Finance and Operations.
+
+|                                  |  |
+|----------------------------------|--|
+| **Årsak til avskrivning**       | SQL Reporting Services (SSRS) støtter ikke en kontroll for rapportvisning som er kompatibel med den lokale webklienten.      |
+| **Erstattet med en annen funksjon?** | Rapporter vises som PDF-dokumenter av den lokale tjenesten. Bruk filtyper for å aktivere innebygde gå gjennom koblingene i programrapporter. |
+| **Berørte moduler**             | Alle    |
+
+### <a name="document-routing-agent"></a>Dokumentrutingsagent
+
+Klienten Dokumentrutingsagent brukes som en tjenestegateway til å koble fra skyen til domenegodkjente nettverksskrivere.
+
+|                                  |  |
+|----------------------------------|--|
+| **Årsak til avskrivning**       | Lokale distribusjoner lagres på domenegodkjente servere. Dette gir sikker, direkte tilgang til nettverksskriverenheter. |
+| **Erstattet med en annen funksjon?** | Denne komponenten er ikke nødvendig for lokale installasjoner.|
+| **Berørte moduler**             | Ingen               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funksjoner som er avskrevet i Dynamics 365 for Operations 1611 i plattformoppdatering 3
@@ -488,11 +511,20 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 
 Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databasen.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Årsak til avskrivning       | Datapartisjoner ble introdusert i Microsoft Dynamics AX 2012 R2 for å gjøre det mulig å isolere data. I et vanlig scenario har et firmaet datterselskaper, og data fra ett av datterselskapene skal ikke være synlig for et annet datterselskap, selv om begge datterselskaper håndteres av samme IT-avdelingen. Ekstra skript og administrasjon i hele programmet var imidlertid nødvendig for å opprette nye partisjoner og fylle dem med data, og for å sikkerhetskopiere partisjonsdata. I skyen, der vi har tilgang til databasetjenester for plattform som en tjeneste (PaaS) (Microsoft Azure SQL-Database), er det mye mer effektivt å bruke en database som isolasjonsbeholder enn å utføre isolasjon i programmet. Uavhengig av om partisjonering av data er nødvendig for datterselskaper, for flere leiere, eller bare for skala, mener vi at situasjonene kan håndteres bedre gjennom flere databaser eller flere Dynamics AX-forekomster. |
-| Erstattet med en annen funksjon? | Datapartisjoner erstattes gjennom støtte for flere databaser eller Dynamics AX-forekomster i en fremtidig versjon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Berørte moduler             | Alle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Erstattet med en annen funksjon? | Datapartisjoner erstattes gjennom støtte for flere databaser eller Dynamics AX-forekomster i en fremtidig versjon.    |
+| Berørte moduler             | Alle  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Database og fildelingslagring for vedlegg
+Microsoft Dynamics AX 2012 tillot lagring av vedlegg i databasen og delte filer. Ingen av disse alternativene støttes lenger.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Årsak til avskrivning       | Lagring av delte filer støttes ikke lenger fordi skyvertmiljøer ikke kan kommunisere med lokale delte filer. Databaselagring er avviklet til fordel for Azure Blob-lagring. Azure Blob-lagring tilsvarer lagring i databasen, siden dokumenter kan bare åpnes med Dynamics 365 for Finance and Operations-klientskjemaer. Dette gir fordelen med å gi lagring som ikke har en negativ innvirkning på ytelsen til databasen. Blob-lagring er standard lagringsmekanisme for dokumentbehandling og fungerer umiddelbart. |
+| Erstattet med en annen funksjon? | Databaselagring er avviklet til fordel for Azure Blob-lagring.       |
+| Berørte moduler             | Alle                   |
 
 ### <a name="delimitation"></a>Avgrensing
 
@@ -525,7 +557,7 @@ I Dynamics AX 2012 R3 kan Retail Modern POS kobles direkte til kanaldatabasen p�
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Årsak til avskrivning       | Generisk funksjonalitet brukes nå i stedet for lokalisert funksjonalitet.                                                                                                                                                                 |
-| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
+| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL for Tyskland)
@@ -577,7 +609,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Årsak til avskrivning       | Formatet er ikke lenger i bruk i Tyskland fordi det er erstattet av SEPA-funksjonaliteten (felles eurobetalingsområde).                                                                                                                                                                 |
-| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av SEPA-betalingseksport og avanserte funksjoner for bankavstemming for import av kontoutdrag. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
+| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av SEPA-betalingseksport og avanserte funksjoner for bankavstemming for import av kontoutdrag. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Tysk DTAZV-betalingsformat
@@ -593,7 +625,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Årsak til avskrivning       | Generisk funksjonalitet brukes nå i stedet for lokalisert funksjonalitet.                                                                                                                                                                 |
-| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. I tillegg planlegges implementering av camt.053 ISO20022-kontoutdragimport for økonomijournalen i den neste oppdateringen av Dynamics AX. |
+| Erstattet med en annen funksjon? | Ja, denne funksjonaliteten er erstattet av funksjonalitet for avanserte bankavstemming. |
 | Berørte moduler             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Tysk EU-salgsliste i XML

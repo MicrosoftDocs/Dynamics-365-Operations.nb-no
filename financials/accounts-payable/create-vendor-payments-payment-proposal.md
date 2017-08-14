@@ -3,26 +3,26 @@ title: "Opprette leverandørbetalinger ved hjelp av et betalingsforslag"
 description: "Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer. Betalingsforslag brukes ofte til å opprette leverandørbetalinger fordi spørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på kriterier som forfallsdato og kontantrabatt."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,8 +39,8 @@ Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alt
 
 ## <a name="parameters"></a>Parametere
 -   **Velg fakturaer etter** – Fakturaer innenfor datointervallet som er angitt av feltene **Fra dato** og **Til dato**, kan velges etter forfallsdato, kontantrabattdato eller begge deler. Hvis du bruker kontantrabattdatoen, søker systemet etter fakturaer som har en kontantrabattdato mellom Fra dato og Til dato. Systemet bestemmer deretter om fakturaen er kvalifisert for kontantrabatt ved hjelp av øktdatoen, for å være sikker på at kontantrabattdatoen ikke allerede er passert.
--   **Fra dato** og**Til dato** – Fakturaer som har en forfallsdato eller kontantrabattdato innenfor dette datointervallet, velges for betaling.
--   **Betalingsdato** – Hvis en dato er definert, opprettes alle fakturaer på denne datoen. Feltet **Minste betalingsdato** ignoreres.
+-   **Fra dato** og **Til dato** – Fakturaer som har en forfallsdato eller kontantrabattdato innenfor dette datointervallet, velges for betaling.
+-   **Betalingsdato** – Dette brukes bare når feltet **Periode** i valgt betalingsmåten er satt til **Total**. Hvis en dato er definert, opprettes alle fakturaer på denne datoen. Feltet **Minste betalingsdato** ignoreres.
 -   **Minste betalingsdato** – Angi minste betalingsdato. Feltene **Fra dato** og **Til dato** angir for eksempel et område fra 1. september til 10. september, og den minste betalingsdatoen er 5. september. I dette tilfellet har alle fakturaer med forfallsdato fra 1. september til 5. september, betalingsdatoen for 5. september. Alle fakturaer med forfallsdato fra 5. september til 10. september har imidlertid en betalingsdato som er lik forfallsdatoen for hver faktura.
 -   **Beløpsgrense** – Angi maksimalt totalbeløp for alle betalinger.
 -   **Opprett betalinger uten forhåndsvisning av faktura** – Hvis du setter alternativet til **Ja**, opprettes betalinger umiddelbart på **Leverandørbetalinger**-siden. **Betalingsforslag**-siden utelates. Derfor opprettes betalinger raskere. Betalinger kan fremdeles endres på **Leverandørbetalinger**-siden. Du kan også gå tilbake til **Betalingsforslag**-siden ved hjelp av knappen **Rediger fakturaer for valgt betaling**.

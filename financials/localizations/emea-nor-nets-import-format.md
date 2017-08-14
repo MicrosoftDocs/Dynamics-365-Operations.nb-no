@@ -1,5 +1,5 @@
 ---
-title: Format for nettoimport | Microsoft-dokumentasjon
+title: Nets-importformat
 description: "Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format."
 author: ShylaThompson
 manager: AnnBe
@@ -15,14 +15,13 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262704
 ms.search.region: Norway
 ms.author: v-lenest
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a0c431ce0dc93c39c27de4e668c2fdb3ef31458c
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 14696a29b3d1ce456dc6a513c605eb1c245103c2
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Tilbudsforespørsler"
-description: "Denne artikkelen gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen."
+title: "Tilbudsforespørsler (RFQer)"
+description: "Dette emnet gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Tilbudsforespørsler
+# <a name="request-for-quotations-rfqs"></a>Tilbudsforespørsler (RFQer)
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.
+Dette emnet gir en oversikt over tilbudsforespørsler, som organisasjoner utsteder når de må kjøpe varer eller tjenester, og ønsker å motta konkurrerende tilbud fra flere leverandører. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir. Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.
 
 Prosessen for tilbudsforespørsel omfatter følgende oppgaver:
 
--   Opprette og sende en tilbudsforespørsel til én eller flere leverandører
--   Motta og registrere svar på tilbudsforespørsler (bud)
--   Overføre godtatte bud på en bestilling, kjøpsavtale eller innkjøpsrekvisisjon
+-   Opprette og sende en tilbudsforespørsel til én eller flere leverandører.
+-   Motta og registrer svar på tilbudsforespørsler (bud).
+-   Overføre godtatte bud på en bestilling, kjøpsavtale eller innkjøpsrekvisisjon.
 
 Illustrasjonen nedenfor gir en oversikt over forespørselsprosessen.  
 
@@ -49,7 +49,7 @@ Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende
 
 Når du mottar bud, må du angi dem på siden **Svar på tilbudsforespørsel**. Hvis du velger alternativet **Kopier data til svar**, kopieres data som antall og datoer fra tilbudsforespørselssaken til svaret. Du kan endre disse dataene slik at de gjenspeiler leverandørens bud.  
 
-Hvis en ny gjentakelse av et svar er nødvendig for en bestemt leverandør, klikker du **Retur**på siden**Svar på tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til innstillingene for utskriftsbehandling.  
+Hvis en ny gjentakelse av et svar er nødvendig for en bestemt leverandør, klikker du **Retur** på siden **Svar på tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til innstillingene for utskriftsbehandling.  
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil forespørselssvaret ha et poengpanel der du kan gi poeng. Den totale poengsummen vil vises når du sammenligner svarene på **Sammenlign svar**-siden, der du også kan sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.  
 
@@ -66,17 +66,17 @@ Her er rekkefølgen til statusene for behandling av en tilbudsforespørsel:
 3.  **Mottatt**
 4.  **Godkjent**/**Annullert**/**Avvist**
 
-Statusene beskrives nærmere i senere i denne artikkelen.
+Statusene beskrives nærmere i senere i dette emnet.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurere funksjonalitet for tilbudsforespørsel
 Før du kan opprette en tilbudsforespørselssak, må du angi informasjon om tilbudsforespørsler på siden **Parametere for innkjøp og leverandører**. Når du oppretter en tilbudsforespørselssak, kan du angi standardverdier som kopieres til forespørselen. Du kan angi følgende standardverdier:
 
--   Innkjøpstypen for nye forespørsler: **bestilling** eller **kjøpsavtale**
--   Innstillinger for utløpsdato og -klokkeslett
+-   Innkjøpstypen for nye forespørsler: **bestilling** eller **kjøpsavtale**.
+-   Innstillinger for utløpsdato og -klokkeslett.
 -   Leveringsinformasjon og betalingsbetingelser.
--   Felt som skal inkluderes i svar på tilbudsforespørsel
+-   Felt som skal inkluderes i svar på tilbudsforespørsel.
 
-Du kan overstyre disse verdiene for en bestemt tilbudsforespørselssak. Du må også konfigurere endringsprosessen. Som en del av denne konfigurasjonen kan du aktivere feltlås. Når feltlåsing er aktivert, må en innkjøpsansvarlig som ønsker å endre en tilbudsforespørsel først klikke **Opprett** i delen **Endring** i kategorien **Tilbud**. Når tilbudsforespørselen er oppdatert med endringen, må innkjøpsansvarlig fullføre prosessen ved å klikke på **Fullfør**. Dette genererer en e-postmelding som varsler leverandørene om den endrede forespørselen. Du velger malen for e-postvarsling som sendes til leverandører på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes, kan den inneholde følgende tokener:
+Du kan overstyre disse verdiene for en bestemt tilbudsforespørselssak. Du må også konfigurere endringsprosessen. Som en del av denne konfigurasjonen kan du aktivere feltlås. Når feltlåsing er aktivert, må en innkjøpsansvarlig som ønsker å endre en tilbudsforespørsel først klikke **Opprett** i delen **Endring** i kategorien **Tilbud**. Etter at forespørselen er oppdatert med endringen, Innkjøpsansvarlig må fullføre prosessen ved å klikke **Fullfør**. Den **Fullfør** handlingen genererer en e-postmelding som varsler om endrede Forespørselen leverandørene. Du velger malen for e-postvarsling som sendes til leverandører på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes, kan den inneholde følgende tokener:
 
 -   %Årsak til retur av bud%
 -   %Årsak til endring%
@@ -87,7 +87,10 @@ Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst so
 
 Hvis du vil bruke årsakskoder på et svar på tilbudsforespørsel for å angi hvorfor et bud ble avvist eller godtatt, må du definere årsakskoder på **Leverandørårsaker**-siden.  
 
-Du kan konfigurere hvordan utskrevne eller lagrede tilbudsforespørseldokumenter skal se ut, på **Skjemaoppsett**-siden i innkjøp og leverandører.  
+Du kan konfigurere hvordan utskrevne eller lagrede tilbudsforespørseldokumenter skal se ut, på **Skjemaoppsett**-siden i innkjøp og leverandører. 
+
+**Merk:** For en konfigurasjon for offentlig sektor, endringer i en forespørsel som allerede er sendt vil krever bruk av tillegget. Når forespørselen er sendt, feltene er låst, så å klikke **Opprett** for å bruke endringsprosessen som er beskrevet ovenfor, er et obligatorisk trinn for å gjøre endringer i forespørselen.
+Dette styres av feltetlåseparameteren **Lås tilbudsforespørsler når de er sendt** i **Parametere for innkjøp og leverandører**. Denne parameteren er satt til **Ja**, og for en konfigurasjon av offentlig sektor er dette en standard som ikke kan endres. Dette betyr at mens endringsprosessen kan behandles manuelt i en konfigurasjon for ikke-offentlig sektor, prosessen med å håndtere endringer ved å låse feltene når forespørselen er sendt er obligatorisk for offentlig sektor.
 
 Når du oppretter en tilbudsforespørsel for en bestilling og legger til en lagervare i tilbudsforespørselen, opprettes det en lagertransaksjon med tilgangsstatusen **Tilbud tilgang**. Bare tilbudsforespørselslinjer som har denne statusen, tas hensyn til når du bruker en hovedplan for å beregne forsyninger. Hvis du vil at hovedplanen skal ha med tilbudsforespørselslinjene som forventet mottak, må du konfigurere dette i oppsettet av hovedplanlegging.  
 
@@ -108,7 +111,7 @@ Hvis tilbudsforespørselen er av typen **Kjøpsavtale**:
 -   Tilbudsforespørselen brukes for en avtale om å kjøpe et spesifikt antall eller en verdi av et produkt over tid. Du må velge datointervallet som gjelder for kjøpsavtalen, og navnet på personen som administrerer kjøpsavtalen.
 -   Når du godkjenner et bud, genereres en kjøpsavtale.
 
-Du kan opprette en tilbudsforespørsel fra en innkjøpsrekvisisjon bare hvis statusen for innkjøpsrekvisisjonen er **Til vurdering**og du er tildelt den neste arbeidsflytoppgaven. Linjene i innkjøpsrekvisisjonen oppdateres automatisk når du godtar linjer fra forespørselsvar (bud) som du mottok fra leverandører. Du kan ikke fullføre, avvise, godkjenne eller utføre noen andre handlinger for innkjøpsrekvisisjonen, mens tilbudsforespørselen behandles.  
+Du kan opprette en tilbudsforespørsel fra en innkjøpsrekvisisjon bare hvis statusen for innkjøpsrekvisisjonen er **Til vurdering** og du er tildelt den neste arbeidsflytoppgaven. Linjene i innkjøpsrekvisisjonen oppdateres automatisk når du godtar linjer fra forespørselsvar (bud) som du mottok fra leverandører. Du kan ikke fullføre, avvise, godkjenne eller utføre noen andre handlinger for innkjøpsrekvisisjonen, mens tilbudsforespørselen behandles.  
 
 Når du oppretter en tilbudsforespørsel, kan du velge en bestemt forespørselstype. Forespørselstypen bestemmer settet med poengkriterier som brukes til å gi poeng på svar på forespørselen.  
 
@@ -137,7 +140,7 @@ Tabellen nedenfor viser hvordan forespørselsstatusen endres når du oppretter e
 **Obs!** Du kan legge til flere leverandører i en tilbudsforespørsel når som helst, og de laveste og høyeste statusene endres for å gjenspeile de nye leverandørene. Hvis du for eksempel har mottatt bud fra alle leverandørene og godtatt minst én linje i et bud, er den laveste statusen i tilbudsforespørselshodet **Avvist**, og den høyeste statusen er **Godtatt**. Hvis du legger til en ny leverandør, er **Opprettet** nå den laveste statusen for en linje. Den laveste statusen i tilbudsforespørselshodet endres derfor til **Opprettet**, og den høyeste statusen forblir **Godtatt**.
 
 ## <a name="amending-an-rfq"></a>Endre en tilbudsforespørsel
-Noen ganger må du endre en tilbudsforespørsel etter at du har sendt den. Dette kan skje fordi, for eksempel leveringsdatoene er endret, eller du vil ha flere produkter eller ulikt antall produkter. Du kan konfigurere endringsprosessen slik at den er mer restriktiv eller mindre restriktiv.  
+Noen ganger må du endre en tilbudsforespørsel etter at du har sendt den. Dette kan for eksempel skje omleveringsdatoene er endret, eller du vil ha flere produkter eller ulikt antall produkter. Du kan konfigurere endringsprosessen slik at den er mer restriktiv eller mindre restriktiv.  
 
 Hvis du bruker den mer restriktive endringsprosessen, må du klikke **Opprett** i tilbudsforespørselssaken for å starte en endring før du kan endre feltene i tilbudsforespørselssaken. Når du har gjort endringene, klikker du **Fullfør**. Du blir deretter veiledet gjennom prosessen med å legge til informasjon i e-postmeldingen som sendes for å varsle leverandører om endringen. Den oppdaterte tilbudsforespørselsrapporten som inneholder en merknad om endringen, legges automatisk til meldingen.  
 
@@ -181,7 +184,7 @@ Når du godkjenner et tilbudsforespørselssvar av typen **Innkjøpsrekvisisjon**
 
 I svaret kan du legge til en årsakskode for å forklare hvorfor du godkjente eller avviste et bud.  
 
-Du kan godta flere linjer i et bud og avvise andre. Du kan også godta linjer fra forskjellige leverandører. Bare vær oppmerksom på at hvis du godtar noen linjer, blir du bedt å avvise alle de andre linjene. Hvis du ønsker å godta andre linjer, må du derfor klikke **Avbryt** når du mottar meldingen.  
+Du kan godta flere linjer i et bud og avvise andre. Du kan også godta linjer fra forskjellige leverandører. Vær oppmerksom på at hvis du godtar noen linjer, blir du bedt å avvise alle de andre linjene. Hvis du ønsker å godta andre linjer, må du derfor klikke **Avbryt** når du mottar meldingen.  
 
 Tabellen nedenfor viser hvordan forespørselsstatusen endres etter som du godtar eller avviser bud fra leverandørene.
 

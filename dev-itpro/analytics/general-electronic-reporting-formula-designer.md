@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -67,7 +67,7 @@ Illustrasjonen nedenfor viser utformingen av et uttrykk av denne typen. I dette 
 
 ### <a name="data-formatting"></a>Dataformatering
 
-ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Når formatkomponenter refererer til **TrimmedString **-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Hvis du har formatering som må brukes som en vanlig regel som skal brukes for et format, kan du introdusere formateringen én gang i en formatkonfigurasjonen som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter som utdata må formateres etter, i henhold til opprettede uttrykket som ble opprettet. Illustrasjonen nedenfor viser utformingen av en transformasjon av denne typen. I dette eksemplet tar **TrimmedString**-transformasjonen innkommende data for **String**-datatypen, og avrunder innledende og etterfølgende mellomrom når den returnerer strengverdien. [![bilde-transformasjon-utforming](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Illustrasjonen nedenfor viser hvordan en transformasjon av denne typen kan brukes.. I dette eksemplet refererer flere formatkomponenter som sender tekst som utdata til det genererende elektroniske dokumentet ved kjøretid, til **TrimmedString**-transformasjonen med navn. [![bilde-transformasjon-bruk](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Når formatkomponenter refererer til **TrimmedString**-transformasjonen (for eksempel **partyName**-komponenten i den forrige illustrasjonen), sendes teksten som utdata til det genererende dokumentet. Teksten inneholder ikke mellomrom. Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne formateringen som et individuelt uttrykk for binding av en bestemt formatkomponent. Illustrasjonen nedenfor viser et uttrykk av denne typen. I dette eksemplet er **partyType**-formatkomponenten bundet til datakilden via et uttrykk som konverterer innkommende data fra **Model.Company.RegistrationType**-feltet i datakilden til store bokstaver i tekst, og sender teksten som utdata til det elektroniske dokumentet. [![bilde-binding-med-formel](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ### <a name="process-flow-control"></a>Prosessflytkontroll
 
@@ -104,7 +104,7 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 
 #### <a name="constants"></a>Konstanter
 
-Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20 **bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""Krig og fred"" Del 1"** tekststrengen **Leo Tolstoy "Krig og fred" Del 1**.
+Du kan bruke tekst og numeriske konstanter (verdier som ikke er beregnet) når du utformer uttrykk. Uttrykket **VALUE ("100") + 20**bruker for eksempel den numeriske konstanten 20 og strengkonstanten “100”, og returnerer den numeriske verdien **120**. ER-formeldesigneren støtter avbruddssekvenser, slik at du kan angi uttrykksstrengen som skal håndteres på en annen måte. For eksempel returnerer uttrykket **"Leo Tolstoy ""Krig og fred"" Del 1"** tekststrengen **Leo Tolstoy "Krig og fred" Del 1**.
 
 #### <a name="operators"></a>Operatører
 
@@ -136,7 +136,7 @@ Du kan også bruke et &-tegn (&) som en tekstsammenkoblingsoperator for å koble
 
 #### <a name="operator-precedence"></a>Operatorprioritet
 
-Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultatet av uttrykket** 1 + 4 / 2** varierer for eksempel, avhengig av om addisjonen eller divisjonen utføres først. Du kan bruke parenteser til å definere hvordan uttrykk evalueres. Hvis du for eksempel vil angi at addisjonen skal utføres først, kan du endre det forrige uttrykket til **(1 + 4) / 2**. Hvis operasjonsrekkefølgen som skal utføres i et uttrykk ikke er uttrykkelig definert, er rekkefølgen basert på standardrekkefølgen som er tilordnet til operatorene støttes. Tabellen nedenfor viser operatorene og prioriteten som er tilordnet hver av dem. Operatorer som har høyere prioritet (for eksempel 7) evalueres før operatorer som har lavere prioritet (for eksempel 1).
+Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultatet av uttrykket**1 + 4 / 2** varierer for eksempel, avhengig av om addisjonen eller divisjonen utføres først. Du kan bruke parenteser til å definere hvordan uttrykk evalueres. Hvis du for eksempel vil angi at addisjonen skal utføres først, kan du endre det forrige uttrykket til **(1 + 4) / 2**. Hvis operasjonsrekkefølgen som skal utføres i et uttrykk ikke er uttrykkelig definert, er rekkefølgen basert på standardrekkefølgen som er tilordnet til operatorene støttes. Tabellen nedenfor viser operatorene og prioriteten som er tilordnet hver av dem. Operatorer som har høyere prioritet (for eksempel 7) evalueres før operatorer som har lavere prioritet (for eksempel 1).
 
 | Prioritet | Operatører      | Syntaks                                                   |
 |------------|----------------|----------------------------------------------------------|
@@ -196,8 +196,8 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 | SESSIONNOW ()                              | Returnerer gjeldende dato og klokkeslett for Dynamics 365 for Finance and Operations-økten som en verdi for dato og klokkeslett.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (dato, format)                  | Returnerer strengrepresentasjon av dato ved hjelp av angitt format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-åååå")** returnerer gjeldende dato for Dynamics 365 for Finance and Operations-økten 12/24/2015 som “**24-12-2015**” i henhold til det angitte egendefinerte formatet.                                                                                                                      |
 | DATEFORMAT (dato, format, kultur)         | Konverter den angitte datoverdien til en streng i angitt format og [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard og ](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) [egendefinert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** returnerer gjeldende dato for Finance and Operations-økten, 12/24/2015, som **"24.12.2015"**, i henhold til den valgte tyske kulturen.                                                                                                                       |
-| DAYOFYEAR (dato)              | Returnerer heltallsrepresentasjon av antall dager mellom 1. januar og den angitte datoen.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-ÅÅÅÅ"))** returnerer **61**.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-ÅÅÅÅ"))** returnerer **1**.                                                                                                                       |
+| DAYOFYEAR (dato)              | Returnerer heltallsrepresentasjon av antall dager mellom 1. januar og den angitte datoen.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-ÅÅÅÅ"))** returnerer **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-ÅÅÅÅ"))** returnerer **1**. 
+                                                                                                                      |
 
 **Datakonversjonsfunksjoner**
 
@@ -236,7 +236,14 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 <li>Grupper som vanlige lister (<strong>Value</strong>-komponent)</li>
 <li>Gjeldende gruppenummer (<strong>Gruppenummer</strong>-komponent)</li>
 </ul></td>
-<td>I eksemplet nedenfor opprettes <strong>Linjer</strong>-datakilden som en postliste med tre poster, som er delt inn i grupper, som hver inneholder opptil to poster. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>Her vises ønsket formatoppsett, der bindinger til <strong>Linjer</strong>-datakilden opprettes for å generere utdata i XML-format, som viser enkeltnoder for hver gruppe og postene i den. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Følgende er resultatet av å kjøre det utformede formatet. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>I eksemplet nedenfor opprettes <strong>Linjer</strong>-datakilden som en postliste med tre poster, som er delt inn i grupper, som hver inneholder opptil to poster. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Her vises ønsket formatoppsett, der bindinger til <strong>Linjer</strong>-datakilden opprettes for å generere utdata i XML-format, som viser enkeltnoder for hver gruppe og postene i den. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Følgende er resultatet av å kjøre det utformede formatet. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (post 1 [, post 2, ...])</td>
@@ -300,7 +307,14 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 <li>Angitte listeposter som vanlige lister (<strong>Value</strong>-komponent)</li>
 <li>Gjeldende postindeks (<strong>Number</strong>-komponent)</li>
 </ul></td>
-<td>I eksemplet nedenfor opprettes <strong>Enumerated</strong>-datakilden som en nummerert liste over leverandørposter fra <strong>Vendors</strong>-datakilden som refererer til <strong>VendTable</strong>-tabellen. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>Her er formatet der databindinger opprettes for å generere utdata i XML-formatet som presenterer enkeltleverandører som opplistede noder. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Dette er resultatet av å kjøre det utformede formatet. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>I eksemplet nedenfor opprettes <strong>Enumerated</strong>-datakilden som en nummerert liste over leverandørposter fra <strong>Vendors</strong>-datakilden som refererer til <strong>VendTable</strong>-tabellen. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Her er formatet der databindinger opprettes for å generere utdata i XML-formatet som presenterer enkeltleverandører som opplistede noder. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Dette er resultatet av å kjøre det utformede formatet. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (liste)</td>
@@ -322,13 +336,24 @@ Listen som opprettes, vil bestå av poster med følgende felt:
 <li>beskrivelse</li>
 </ul>
 Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet språkinnstillinger.</td>
-<td>Følgende eksempel viser opplistingen i en datamodell. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Følgende eksempel viser:
+<td>Følgende eksempel viser opplistingen i en datamodell. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Følgende eksempel viser:
 <ul>
 <li>Modellopplisting satt inn i en rapport som en datakilde.</li>
 <li>ER-uttrykk utformet for å bruke modellopplisting som parameter for denne funksjonen.</li>
 <li>Datakilde av postlistetypen settes inn i en rapport ved hjelp av det opprettede ER-uttrykket.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> Eksemplet nedenfor viser ER-formatelementene som er bundet til datakilden av postlistetypen som ble opprettet ved hjelp av funksjonen LISTOFFIELDS.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Dette er et resultat av kjøringen av det utformede formatet.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Obs!</strong> Oversatt tekst for etiketter og beskrivelser er fylt ut med ER-formatutdata i samsvar med språkinnstillingene som er konfigurert for overordnede FIL- og MAPPE-formatelementer.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Eksemplet nedenfor viser elementene i ER-formatet som er bundet til datakilden for postlistetypen som ble opprettet ved hjelp av funksjonen LISTOFFIELDS.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Dette er resultatet av å kjøre det utformede formatet.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Merk:</strong> Oversatt tekst for etiketter og beskrivelser er fylt med utdata i ER-formatet i samsvar med språkinnstillingene konfigurert for de overordnede FILE- og FOLDER-formatelementene.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (liste, feltnavn, skilletegn)</td>
@@ -338,7 +363,18 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 <tr class="even">
 <td>SPLITLISTBYLIMIT (liste, grenseverdi, grensekilde)</td>
 <td>Deler den angitte listen inn en ny liste over underordnede lister og returnerer resultatet i oppføringslisteinnhold. Grenseverdiparameteren angir verdien av grensen for deling av opprinnelseslisten. Grensekildeparameteren angir trinnet som totalsummen økes på. Grensen brukes ikke på en enkelt vare i en gitt liste når kildegrensen overskrider den definerte grensen.</td>
-<td>Følgende eksempel viser eksempelformatet med bruk av datakilder. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>Dette er resultatet av formatkjøringen som viser den flate listen over artikkelvarer.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>Følgende eksempel viser det samme formatet som ble justert for å vise listen over artikkelvarer i partier, når ett parti må inkludere varer med totalvekten som ikke skal overskride grensen på 9.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>This is the result of the adjusted format execution. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Obs!</strong> Grensen gjelder ikke for det siste elementet i den opprinnelige listen siden verdien (11) av grensens kilde (vekt) overskrider den definerte grensen (9). Bruk enten funksjonen <strong>WHERE</strong> eller <strong>Aktivert</strong>-uttrykket for det tilsvarende elementet i formatet for å ignorere (hoppe over) underordnede lister ved rapportgenerering (om nødvendig).</td>
+<td>Følgende eksempel viser eksempelformatet med bruk av datakilder. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+Dette er den resulterende formatkjøringen som viser en liste artikkelvarer.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+Eksemplet nedenfor viser det samme formatet som ble justert for å vise listen over artikkelvarer i grupper når et enkelt parti må inneholde artikler med total vekt som ikke må overskride grensen på 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Dette er resultatet av å kjøre det justerte formatet. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Obs!</strong> Grensen gjelder ikke for det siste elementet i den opprinnelige listen siden verdien (11) av grensens kilde (vekt) overskrider den definerte grensen (9). Bruk enten funksjonen <strong>WHERE</strong> eller <strong>Aktivert</strong>-uttrykket for det tilsvarende elementet i formatet for å ignorere (hoppe over) underordnede lister ved rapportgenerering (om nødvendig).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (liste, betingelse)</td>
@@ -511,7 +547,10 @@ Etikett og Beskrivelse-feltene returnerer kjøretidsverdier basert på formatet 
 <tr class="even">
 <td>FORMAT (streng 1, streng 2 [, streng, 3, ...])</td>
 <td>Returner den angitte strengen, som formateres ved hjelp av forekomster av <strong>%N</strong> med det <em>n</em>-te argumentet. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
-<td>I dette eksemplet returnerer <strong>PaymentModel</strong>-datakilden listen over kundeposter via <strong>Kunder</strong>-komponenten og behandlingsdatodatoverdien via <strong>ProcessingDate</strong>-feltet. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> I ER-formatet som er utformet for å generere en elektronisk fil for utvalgte kunder, velges <strong>PaymentModel</strong> som en datakilde og styrer prosessflyten. Et unntak for sluttbrukere iverksettes når en valgt kunde stoppes for datoen da rapporten behandles. Formelen som er utviklet for denne typen behandlingskontroll kan bruke følgende ressurser:
+<td>I dette eksemplet returnerer <strong>PaymentModel</strong>-datakilden listen over kundeposter via <strong>Kunder</strong>-komponenten og behandlingsdatodatoverdien via <strong>ProcessingDate</strong>-feltet. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+I ER-formatet som er utformet for å generere en elektronisk fil for utvalgte kunder, velges <strong>PaymentModel</strong> som en datakilde og styrer prosessflyten. Et unntak for sluttbrukere iverksettes når en valgt kunde stoppes for datoen da rapporten behandles. Formelen som er utviklet for denne typen behandlingskontroll kan bruke følgende ressurser:
 <ul>
 <li>Finance and Operations-etiketten SYS70894, som har følgende tekst:
 <ul>
@@ -549,7 +588,8 @@ Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &q
 <td>TRIM (streng)</td>
 <td>Returnerer angitt tekst etter avkorting av innledende og etterfølgende mellomrom og fjerner flere mellomrom mellom ord. </td>
 <td><strong>TRIM ("     Eksempeltekst")</strong> returnerer <strong>"Eksempeltekst".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (bane til kilde for opplistingsdata, tekst i etikett for opplistingsverdi)</td>
 <td>Returnerer en verdi for en bestemt kilde for opplistingsdata med angitt tekst for denne etiketten for opplisting.</td>
 <td>Følgende eksempel viser opplistingen ReportDirection i en datamodell. Legg merke til at etiketter er definert for opplistingsverdier.

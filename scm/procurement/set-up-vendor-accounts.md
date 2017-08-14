@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgen
 -   **Aldri** – Leverandøren settes aldri på vent for inaktivitet.
 
 Når du setter en leverandør på vent, kan du også angi en årsak og en dato for når statusen på vent avsluttes. Hvis du ikke angir en sluttdato, varer leverandørens på vent-status i det uendelige.
+
+Du kan masseoppdatere på vent-statusen til **Alle** for leverandører som er basert på de valgte kriteriene på siden **Deaktivering av leverandør**, og tilordne en årsak til hvorfor leverandøren er på vent.
+
+Følgende kriterier brukes til å ta med leverandører som har vært inaktive i en periode, inkludere eller ekskludere leverandører som er ansatte, og utelate leverandører som har en henstandstid før neste sperring.
+
+- Basert på hvor mange dager du angir i feltet **Inaktivitetsperiode** på siden **Deaktivering av leverandør**, beregner programmet den seneste datoen der leverandøren kan ha en aktivitet som kan regnes som inaktiv. Det vil si at dagens dato minus antall dager du angir. Hvis det finnes én eller flere fakturaer for leverandøren der datoen er senere enn den beregnede siste datoen, vil leverandøren bli utelatt fra deaktivering. Dette blir også validert hvis leverandøren har betalinger etter denne datoen, åpne innkjøpsrekvisisjoner, åpne bestillinger, forespørsler om tilbud eller svar.
+- Antall dager i feltet **Henstandstid før neste sperre** brukes til å beregne den siste datoen i henstandstiden. Det vil si at dagens dato minus antall dager du angir. Dette gjelder bare leverandører som tidligere har blitt deaktivert. Når det gjelder en tidligere deaktivering, kontrollerer programmet historikken for andre forekomster av deaktivering for leverandøren og kontrollerer hvis den siste deaktiveringen ble utført før den siste datoen i henstandstiden. Hvis dette er tilfellet, inkluderes leverandøren i deaktiveringsprosessen.
+- Parameteren **Inkluder ansatte** refererer til leverandører som er koblet til en ansatt. Du kan angi om du vil ta med disse ansatte.
+
+Denne prosessen vil alltid utelat leverandører der verdien i feltet **Leverandørsperre** er **Aldri**.
+
+Leverandører som består valideringen, blir satt på vent, som angir verdien i feltet **Leverandørsperre** til **Alle** og **Årsak** til det som er valgt. Det opprettes en post i sperreloggen for leverandøren.
 
 ## <a name="vendor-invoice-account"></a>Leverandørfakturakonto
 Hvis mer enn én leverandør har samme fakturaadresse, eller hvis en leverandør faktureres gjennom en tredjepart, kan du angi en fakturakonto i leverandørposten. Fakturakontoen er den kontoen som fakturabeløpet blir kreditert når du oppretter en leverandørfaktura fra en bestilling. Hvis du ikke angir noen fakturakonto i leverandørposten, blir leverandørkontoen brukt som fakturakonto.

@@ -1,28 +1,28 @@
 ---
 title: "Avansert synstaks for filtrering og spørringer"
-description: "Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren &quot;treff&quot; i dialogboksen Avansert filter/sortering."
+description: "Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren \"treff\" i dialogboksen Avansert filter/sortering."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysQueryForm
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48b2049c3f5025d7e8d3fc7e944aa9360786d18a
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 616366009ce7bf7135704e980becc331617cf5af
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -122,7 +122,7 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <td><em>verdi</em>,<em>verdi</em> (komma)</td>
 <td>Samsvarer med verdiene som er atskilt med komma</td>
 <td>Skriv inn alle kriteriene atskilt med komma.</td>
-<td><strong>A, D, F, G</strong> finner nøyaktig &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finner nøyaktig &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> finnner &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finner &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-setning</span>) (SQL-setning i parenteser)</td>
