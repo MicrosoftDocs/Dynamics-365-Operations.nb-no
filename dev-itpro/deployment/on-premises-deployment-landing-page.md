@@ -15,13 +15,13 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: e090d4af91ec979aeccdd954e4fdab99f026e150
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: 4399dc7374ae11f2eca3add37b60c50574dfad9d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Lokal distribusjon startside
@@ -32,7 +32,7 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise
 
 ## <a name="get-started"></a>Kom i gang
 - [Oversikt over Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](on-premises-overview.md)
-- [Systemkrav](../get-started/system-requirements.md)
+- [Systemkrav for lokale installasjoner](../get-started/system-requirements-on-prem.md)
 - [Størrelsesangivelse for maskinvare for lokale miljøer](../get-started/hardware-sizing-on-premises-environments.md)
 - [Elektronisk tjeneste og lokal policy for programvarelivssyklus](../migration-upgrade/versions-update-policy.md)
 - [Kjøpe Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](../get-started/purchase-on-premises.md)

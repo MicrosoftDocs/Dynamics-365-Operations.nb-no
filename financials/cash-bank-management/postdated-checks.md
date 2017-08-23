@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations støtter hele forvaltningssykl
 </tr>
 <tr class="even">
 <td>Registrere og postere en etterdatert sjekk for en leverandør</td>
-<td>Registrere detaljer om en etterdaterte sjekk du utsteder til en leverandør. Når betalingen er postert, er leverandøren gjenkjent, men bankkontoen ennå ikke kredit. I stedet brukes en avregningskonto for dette formålet.</td>
+<td>Registrere detaljer om en etterdaterte sjekk du utsteder til en leverandør. Når betalingen er postert, er leverandøren gjenkjent, men bankkontoen ennå ikke kredit. I stedet brukes en avregningskonto for dette formålet. </td>
 </tr>
 <tr class="odd">
 <td>Registrere og postere en etterdatert sjekk for en kunde</td>
@@ -87,6 +86,17 @@ Hvis den opprinnelige sjekken til en leverandør eller kunde blir mistet eller s
 
 
 
+Hvis du vil ha mer informasjon, se følgende emner:
+
+[Definere etterdaterte sjekker](tasks/set-up-postdated-checks.md)
+
+[Registrere og postere en etterdatert sjekk for en kunde](tasks/register-post-postdated-check-customer.md)
+
+[Utligne en etterdatert sjekk fra en kunde](tasks/settle-postdated-check-customer.md)
+
+[Registrere og postere en etterdatert sjekk for en leverandør](tasks/register-post-postdated-check-vendor.md) 
+
+[Utligne en etterdatert sjekk for en leverandør](tasks/settle-postdated-check-vendor.md)
 
 
 

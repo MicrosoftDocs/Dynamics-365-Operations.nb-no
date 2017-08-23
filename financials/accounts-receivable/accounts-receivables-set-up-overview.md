@@ -1,9 +1,9 @@
 ---
 title: Konfigurere Kunder og Kreditt og innkreving
 description: "Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende betalinger fra kunder."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kund
 |                                                      | Valutaer                           | Opprett og vis valutaene organisasjonen bruker.                                                                                                                                                                                                                       |
 |                                                      | Valutakurser              | Opprett og vedlikehold riktige valutakurser mellom regnskapsvalutaen og andre valutaer.                                                                                                                                                                              |
 |                                                      | Konserninternt regnskap              | Opprett en liste over kontoer som den juridiske enheten kan postere til. Du må ha angitt debet- og kreditkontoer, og må også ha angitt journalen som mottar transaksjonene i den andre juridiske enheten.                                                                             |
-|                                                      | Betalingsmåter - kunde        | Opprett og vedlikehold informasjon om betalingsmåte for kunder.                                                                                                                                                                                                           |
+|                                                      | Betalingsmåter - kunde        | Opprett og vedlikehold informasjon om betalingsmåte for kunder. Hvis du vil ha mer informasjon, se [Opprette kundebetalingsmåte](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organisasjonshierarkier             | Definer et organisasjonshierarki for sentralisert betaling.                                                                                                                                                                                                                        |
 |                                                      | Formål for organisasjonshierarki      | Angi et formål for sentraliserte betalinger.                                                                                                                                                                                                                                       |
 |                                                      | Betalingsdager                         | Definer betalingsdagene som brukes til å beregne forfallsdatoer for betalinger du vil motta fra kunder eller du vil gjøre til leverandører.                                                                                                                                                |
-|                                                      | Betalingsgebyr                          | Opprett og vedlikehold betalingsgebyr som er knyttet til kunder, for eksempel vekselgebyrer.                                                                                                                                                                               |
-|                                                      | Oppsett av betalingsgebyr                    | Definer betalingsgebyrer for ulike kombinasjoner av banker, betalingsmåter, remissetyper, betalingsspesifikasjoner, valutaer og datointervaller.                                                                                                                              |
+|                                                      | Betalingsgebyr                          | Opprett og vedlikehold betalingsgebyr som er knyttet til kunder, for eksempel vekselgebyrer.                                                                                                                                                                         |
+|                                                      | Oppsett av betalingsgebyr                    | Definer betalingsgebyrer for ulike kombinasjoner av banker, betalingsmåter, remissetyper, betalingsspesifikasjoner, valutaer og datointervaller.  Hvis du vil ha mer informasjon, se [Opprette kundebetalingsgebyrer](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Betalingsplaner                    | Opprett betalingsplaner, som du kan bruke til å planlegge avdragsbetalinger fra kunder og til leverandører.                                                                                                                                                                       |
 |                                                      | Betalingsspesifikasjon                | Opprett og vis betalingsspesifikasjonskoder for betalingsmåten du valgte i Betalingsmåter-siden. Du definerer betalingsspesifikasjonskoder i henhold til avtalen med banken som er angitt for valgte betalingsmetode.                    |
 |                                                      | Transaksjonstekst                     | Opprett transaksjonstekster for automatiske posteringer til økonomimodulen. Du kan sette opp transaksjonstekster i forskjellige språk.                                                                                                                                                           |
@@ -83,7 +82,7 @@ Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kund
 |                                                      | Betalingsmåter - kunde        | Opprett og vedlikehold informasjon om betalingsmåte for kunder.                                                                                                                                                                                                           |
 |                                                      | Signatur                            | Legg til, endre eller fjern bildefiler for signatur, for eksempel filer i BMP-, JPG- eller GIF-format. Bildefiler for signatur skrives ut på sjekker som offisielle signaturer for juridisk enhet.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurere kundestatistikk           | Definisjoner av aldersfordelingsperiode             | Definer og administrer brukerdefinerte definisjoner av aldersfordelingsperioder, som brukes til å analysere modenheten til kundekontoer og leverandørkontoer, basert på en dato du angir.                                                                                                         |
+| Konfigurere kundestatistikk           | Definisjoner av aldersfordelingsperiode             | Definer og administrer brukerdefinerte definisjoner av aldersfordelingsperioder, som brukes til å analysere modenheten til kundekontoer og leverandørkontoer, basert på en dato du angir. Hvis du vil ha mer informasjon, se [Definere og generere informasjon om aldersfordeling for kunde](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Forretningsstatistikk                  | Definer forespørsler om forretningsstatistikk som kan hjelpe deg med å analysere ytelsen til organisasjonen.                                                                                                                                                                              |
 |                                                      | Forretningsstatistikkdata             | Vis data i et rutenettformat for en valgt forretningsstatistikk.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |

@@ -3,7 +3,7 @@ title: Behandling av generell journal
 description: "Denne artikkelen beskriver funksjoner i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -40,7 +39,7 @@ Ett av de viktigste områdene å konfigurere er journalnavn. Det er lurt å defi
 
 På siden **Journalnavn** kan du definere følgende elementer:
 
--   **Arbeidsflytgodkjenning** – Hvis du vil øke den interne kontrollen, definerer du journalarbeidsflyter som etablerer materialgrenser for gjennomgangs- og godkjenningstrinnene, basert på kriterier som total debetbeløp. Du konfigurerer arbeidsflyter for økonomijournaler på siden** Arbeidsflyter for økonomimodul**.
+-   **Arbeidsflytgodkjenning** – Hvis du vil øke den interne kontrollen, definerer du journalarbeidsflyter som etablerer materialgrenser for gjennomgangs- og godkjenningstrinnene, basert på kriterier som total debetbeløp. Du konfigurerer arbeidsflyter for økonomijournaler på siden **Arbeidsflyter for økonomimodul**.
 -   **Standardverdier** – Velg standardverdier for motkontoer, valuta og finansdimensjoner.
 -   **Journalkontroll** – Du kan definere begrensninger for firma, kontotype og segmentverdier. 
 
@@ -82,8 +81,13 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å garantere at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatorisk og riktig data alltid registreres.
 
-Hvis du vil ha mer informasjon, se [Planlegging: kontoplan](plan-chart-of-accounts.md). 
-
+Hvis du vil ha mer informasjon, se følgende emner:
+- [Planlegging: kontoplan](plan-chart-of-accounts.md). 
+- [Opprette avanserte regler for journaler](tasks/create-advanced-rules-journals.md)
+- [Opprette en journaloppføring ved hjelp av en mal](tasks/create-journal-entry-template.md)
+- [Opprette og validere journaler](tasks/create-validate-journals.md)
+- [Postere periodiske journaler](tasks/post-periodic-journals.md)
+- [Behandle finansfordelingsjournal](tasks/process-ledger-allocation-journal.md)
 
 
 

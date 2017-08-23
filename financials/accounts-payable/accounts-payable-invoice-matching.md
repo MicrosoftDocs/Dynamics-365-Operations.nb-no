@@ -3,7 +3,7 @@ title: "Fakturasamsvar for leverandører"
 description: "Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ Leverandørfakturaer er ofte basert på produktkvitteringer som representerer fa
 -   Legge inn fakturabeløp som ikke ble tatt med i den opprinnelige bestillingen, slik at fakturainformasjonen samsvarer med fakturaen du har mottatt fra leverandøren. Du kan sammenligne tilleggene for bestillingene med tilleggene for fakturaene. Om nødvendig kan du legge til tillegg på fakturaer og tilordne dem til fakturalinjer.
 -   Vise og godkjenne avvik i prissamsvar mellom netto enhetspris i fakturaen og netto enhetspris i bestillingen. Du kan definere pristoleranseprosenter for juridiske enheter, leverandører og varer. Hvis prisen i leverandørfakturalinjen ikke er innenfor den tillatte pristoleransen, kan du lagre fakturaen til den blir godkjent for postering, eller til du mottar en rettelse fra leverandøren.
 
-Hvis du vil ha mer informasjon, se [Treveis kontrollpolicyer](three-way-matching-policies.md).
+Hvis du vil ha mer informasjon, se [Treveis kontrollpolicyer](three-way-matching-policies.md) og [Definere leverandørfakturakontroll for leverandører](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 
