@@ -1,9 +1,9 @@
 ---
 title: Kredit og innkreving i Kunder
 description: "Informasjon om kundesamlinger behandles i én sentral visning ved hjelp av siden for innkreving i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Du kan frafalle, gjenoppta eller reversere hele rentenotaer eller gebyrer og tra
 
 Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer. Bruk fremgangsmåten i delen Opprette avskrivningstransaksjoner i ett trinn for å skrive av alle tilleggene som en kunde skylder.
 
+For mer informasjon, se [Opprette en rentekode med et område](tasks/create-interest-code-range.md) og [Behandle rente](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Opprette avskrivningstransaksjoner
 Du kan skrive av misligholdt gjeld ved å klikke Avskriv i innkrevingsskjemaet og på listesiden Aldersfordelte saldoer, Kunder og Åpne kundefakturaer. 
 
@@ -100,7 +101,10 @@ Når du avskriver transaksjoner for en kunde, merkes alle transaksjoner for kund
 -   Den tredje typen journallinje inneholder informasjon om økonomimodulens avskrivning for merverdiavgift. Denne journallinjen opprettes bare hvis Separat merverdiavgift er valgt på siden Kundeparametere. Hvis de merkede transaksjonene inneholder flere kombinasjoner av betalingskonto for merverdiavgift, dimensjon og mva-kode, opprettes en egen journallinje for hver kombinasjon.
 
 Avskrivningstransaksjonen opprettes i transaksjonsvalutaen.
-Behandle betalinger uten dekning  
+
+For mer informasjon, se [Opprette en avskrivningsjournal for en kunde](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Behandle betalinger uten dekning  
 --------------------------------------------
 
 Du kan behandle betalinger uten dekning ved å klikke Betaling uten dekning på Innkrevinger-siden. Når du klikker denne knappen, blir betalingen avbrutt. Hvis det forekommer et gebyr for betalingen uten dekning for kunden, blir det opprettet en tilleggstransaksjon i en betalingsjournal. Gebyrbeløpet er basert på innstillingene for de automatiske tilleggene. De automatiske tilleggene som gjelder for betalinger uten dekning, angis av gebyrgruppen som er valgt på Bankkontoer-siden for den aktuelle bankkontoen.

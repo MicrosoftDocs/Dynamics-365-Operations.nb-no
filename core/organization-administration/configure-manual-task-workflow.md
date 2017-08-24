@@ -3,7 +3,7 @@ title: Konfigurere en manuell oppgave i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Hvis en bruker ikke fullfører den manuelle oppgaven innenfor den tillatte tiden
 
 1.  I den venstre ruten klikker du **Eskalering**.
 2.  Merk av for **Bruk videresendingsbane** hvis du vil opprette en videresendingsbane. Systemet tilordner automatisk oppgaven til brukerne som er oppført i videresendingsbanen. Tabellen nedenfor er et eksempel på en videresendingsbane.
+
     | Sekvens | Videresendingsbane      |
     |----------|----------------------|
     | 1        | Tilordne til: Doris     |
@@ -318,7 +319,9 @@ Du kan sende meldinger til personer når en manuell oppgave er delegert, videres
 8.  Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
-Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
+Følg denne fremgangsmåten hvis den manuelle oppgaven må fullføres innen et bestemt tidspunkt. 
+
+**Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
 1.  Klikk **Avanserte innstillinger** i ruten til venstre.
 2.  Merk av for **Angi en tidsgrense for arbeidsflytelementet**.

@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -34,8 +34,8 @@ Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Micros
 > [!NOTE] 
 > Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
-Hjelpesystemet er felles for alle produkter i enhetlig drift:
-- Dynamics 365 for Finance and Operations, Enterprise-utgaven
+Hjelpesystemet er felles for følgende produkter:
+- Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -73,7 +73,7 @@ Du kan også finne innholdet med en hvilken som helst søkemotor. For å få bes
 
 ![Resultater av områdesøk](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innholdsfortegnelsen for enhetlig drift
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innholdsfortegnelsen
 Alle produkter deler en enkelt innholdsfortegnelse på webområdet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen til å finne emner du leter etter.
 
 ### <a name="how-can-i-contribute"></a>Hvordan kan jeg bidra? 
@@ -101,7 +101,7 @@ Til høyre angir du en e-postadresse og et nytt passord for å opprette en ny ko
 ## <a name="task-guides"></a>Oppgaveveiledninger
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra Hjelp-ruten. Når du først klikker en oppgaveveiledning, vil Hjelp-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er nå tilgjengelige. 
 
-Vi leverer ulike sett med oppgaveveiledninger for hvert enhetlig drift-produkt. Delen Tilgang til oppgaveveiledninger fra Hjelp-ruten beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
+Vi vil gi ulike sett med oppgaveveiledninger for hvert produkt, for eksempel 365 Dynamics for Retail, Dynamics 365 for Finance and Operations, eller Dynamics 365 for Talent. Delen Tilgang til oppgaveveiledninger fra Hjelp-ruten beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittel
 -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-Tabellen nedenfor viser webområder som tilbyr innhold om enhetlig drift Våre innholdswebområder er organiserte for å støtte livssyklusen til kunden. Hver fase støttes av et annet sett med områder. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
+Følgende tabell viser nettstedene våre. Våre innholdswebområder er organiserte for å støtte livssyklusen til kunden. Hver fase støttes av et annet sett med områder. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 
 | Område                                                                     | beskrivelse                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

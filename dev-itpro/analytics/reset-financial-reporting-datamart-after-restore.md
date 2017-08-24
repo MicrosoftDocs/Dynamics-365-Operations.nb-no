@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du tilbakestiller data for finansrapportering etter gjenoppretting av en Microsoft Dynamics 365 for Finance and Operations-database. 
+Dette emnet beskriver hvordan du tilbakestiller data for finansrapportering etter gjenoppretting av en Microsoft Dynamics 365 for Finance and Operations-database.
 
-Det finnes flere scenarier der du kanskje må gjenopprette din Finance and Operations-database fra en sikkerhetskopi eller kopierer databasen fra et annet miljø. Når dette skjer, må du også følge riktig fremgangsmåte for å sikre at dataene for finansrapportering bruker den gjenopprettede Finance and Operations-databasen på riktig måte. Hvis du har spørsmål om hvordan du tilbakestiller data for finansrapportering av en annen grunn enn gjenoppretting av en Finance and Operations-database, kan du se [Tilbakestille data for Management Reporter](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for mer informasjon. Legg merke til at fremgangsmåten i denne prosessen støttes for Dynamics 365 for Operations-versjonen fra mai 2016 (appbuild 7.0.1265.23014 og finansrapporteringsbuild 7.0.10000.4) og nyere versjoner. Hvis du har en tidligere versjon av Finance and Operations, kan du kontakte vårt kundestøtteteam for å få hjelp.
+Hvis du gjenoppretter Finance and Operations-databasen fra en sikkerhetskopi eller kopierer databasen fra et annet miljø, må du følge trinnene i dette emnet for å sikre at data for finansrapportering bruker den gjenopprettede Finance and Operations-databasen på riktig måte. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Fremgangsmåten i denne prosessen støttes for Dynamics 365 for Operations-versjonen fra mai 2016 (appbuild 7.0.1265.23014 og finansrapporteringsbuild 7.0.10000.4) og nyere versjoner. Hvis du har en tidligere versjon av Finance and Operations, kan du kontakte vårt kundestøtteteam for å få hjelp.
 
 ## <a name="export-report-definitions"></a>Eksportere rapportdefinisjoner
 Eksporter først rapportutformingene i Rapportutforming ved å gjøre følgende:
 
 1.  Gå til **Firma** &gt; **Byggeblokkgrupper** i Rapportutforming.
-2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. **Obs!** For Finance and Operations støttes bare én byggeblokkgruppe, **Standard**.
+2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. 
+    > [!Note] 
+    > For Finance and Operations støttes bare én byggeblokkgruppe, **Standard**.
 3.  Velg rapportdefinisjonene som skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
     -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten. Når du velger rapporter å eksportere, velges tilhørende rader, kolonner, trær og dimensjonssett.
@@ -63,9 +68,9 @@ Bruk Eksternt skrivebord til å koble til alle datamaskinene i miljøet, og stop
 Disse tjenestene vil ha åpne tilkoblinger til Dynamics 365 for Finance and Operations-databasen.
 
 ## <a name="reset"></a>Tilbakestill
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Finn den nyeste DataUpgrade.zip-pakken
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Finn og last ned den siste MinorVersionDataUpgrade.zip-pakken
 
-Finn den nyeste DataUpgrade.zip-pakken ved hjelp av instruksjonene i [Laste ned DataUpgrade.zip-skriptet](..\migration-upgrade\upgrade-data-to-latest-update.md). Retningslinjene forklarer hvordan du finner riktig versjon av dataoppgraderingspakken for ditt miljø.
+Finn den nyeste MinorVersionDataUpgrade.zip-pakken ved hjelp av instruksjonene i [Last ned den nyeste distribuerbare dataoppgraderingspakken](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). Retningslinjene forklarer hvordan du finner og laster ned riktig versjon av dataoppgraderingspakken. En oppgradering er ikke nødvendig for å laste ned MinorVersionDataUpgrade.zip-pakken. Du må bare fullføre trinnene i delen "Last ned den nyeste distribuerbare dataoppgraderingspakken" uten å utføre noen av de andre trinnene i artikkelen for å hente en kopi av MinorVersionDataUpgrade.zip-pakken.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Kjøre skript på Finance and Operations-databasen
 
@@ -105,8 +110,10 @@ Importer rapportutformingene fra Rapportutforming ved hjelp av filen som opprett
 
 1.  Gå til **Firma** &gt; **Byggeblokkgrupper** i Rapportutforming.
 2.  Velg byggeblokkgruppen du vil eksportere, og klikk på **Eksporter**. 
+
     > [!NOTE]
     > For Finance and Operations støttes bare én byggeblokkgruppe, **Standard**.
+    
 3.  Velg **Standard**-byggeblokken, og klikk på **Importer**.
 4.  Velg filen som inneholder de eksporterte rapportdefinisjonene, og klikk på **Åpne**.
 5.  I dialogboksen Importer velger rapportdefinisjonene som skal importers:

@@ -3,7 +3,7 @@ title: Oversikt over merverdiavgift
 description: Denne artikkelen inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ Diagrammet nedenfor viser enhetene for mva-oppsett og hvordan de er relatert.
 
 For hver type merverdiavgift som et firma må ta hensyn til, må en mva-kode defineres. En mva-kode inneholder mva-satser og beregningsreglene for merverdiavgiften. 
 
-Hver mva-kode må være koblet til en mva-utligningsperiode. Mva-utligningsperioder definerer intervallene for rapportering og betaling av merverdiavgifter til skattemyndighetene. Hver mva-utligningsperiode må tilordnes en skattemyndighet. En skattemyndighet representerer enheten som merverdiavgift rapporteres og betales til. Den definerer også oppsettet for mva-rapporten. Skattemyndighetene kan være relatert til leverandørkontoer. 
+Hver mva-kode må være koblet til en mva-utligningsperiode. Mva-utligningsperioder definerer intervallene for rapportering og betaling av merverdiavgifter til skattemyndighetene. Hver mva-utligningsperiode må tilordnes en skattemyndighet. En skattemyndighet representerer enheten som merverdiavgift rapporteres og betales til. Den definerer også oppsettet for mva-rapporten. Skattemyndighetene kan være relatert til leverandørkontoer. Hvis du vil ha mer informasjon, kan du se [Definere mva-utligningsperioder](tasks/set-up-sales-tax-settlement-periods.md).
 
 Hver mva-kode må også være koblet til en finansposteringsgruppe. En finansposteringsgruppe angir hovedkontoene som beløpene for mva-kodene skal posteres til. 
 
@@ -60,13 +59,13 @@ Tabellen nedenfor beskriver enhetene og rekkefølgen for mva-oppsettet.
 | Oppsettaktivitet                                                  | Nødvendig/valgfritt og beskrivelse                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opprett hovedkontoer.                                           | Obligatorisk. Du må opprette hovedkontoene firmaet bruker til å betale og registrere avgifter, før du kan sette opp mva-funksjonaliteten.                                                                                                                                                                             |
-| Konfigurer finansposteringsgrupper for merverdiavgift.                     | Obligatorisk. Finansposteringsgrupper definererer hovedkontoene for registrering og betaling av merverdiavgift.                                                                                                                                                                                                                            |
-| Konfigurer skattemyndigheter.                                   | Obligatorisk. Skattemyndighetene er enhetene som mva må rapporteres og betales til.                                                                                                                                                                                                                                   |
+| Konfigurer finansposteringsgrupper for merverdiavgift.                     | Obligatorisk. Finansposteringsgrupper definererer hovedkontoene for registrering og betaling av merverdiavgift.   Hvis du vil ha mer informasjon, kan du se [Definere finansposteringsgrupper for merverdiavgift](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Konfigurer skattemyndigheter.                                   | Obligatorisk. Skattemyndighetene er enhetene som mva må rapporteres og betales til.    Hvis du vil ha mer informasjon, kan du se [Definere skattemyndigheter](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Definer mva-utligningsperioder.                            | Obligatorisk. Mva-utligningsperiodene inneholder informasjon om når og hvor ofte merverdiavgift må rapporteres og betales. De er relatert til skattemyndighetene.                                                                                                                                                       |
-| Definer koder for mva-rapportering.                               | Valgfritt. Mva-rapporteringskoder kan tilordnes mva-koder for å rapportere beløp for flere mva-koder i én mva-rapporteringskode.                                                                                                                                                                 |
-| Definer mva-koder.                                         | Obligatorisk. Mva-koder inneholder mva-satsene og beregningsreglene for hver merverdiavgift. Mva-koder er relatert til en utligningsperiode for merverdiavgift og en finansposteringsgruppe.                                                                                                                                        |
+| Definer koder for mva-rapportering.                               | Valgfritt. Mva-rapporteringskoder kan tilordnes mva-koder for å rapportere beløp for flere mva-koder i én mva-rapporteringskode. Hvis du vil ha mer informasjon, kan du se [Definere mva-rapporteringskoder](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Definer mva-koder.                                         | Obligatorisk. Mva-koder inneholder mva-satsene og beregningsreglene for hver merverdiavgift. Mva-koder er relatert til en utligningsperiode for merverdiavgift og en finansposteringsgruppe. Hvis du vil ha mer informasjon, kan du se [Definere mva-koder](tasks/set-up-sales-tax-codes.md).                                |
 | Definer mva-grupper.                                        | Obligatorisk. Mva-grupper inneholder en liste over salgskoder som gjelder for parten (kunden eller leverandøren) i en transaksjon. For en gitt transaksjon fastsetter skjæringspunktet for mva-koder i mva-gruppen og mva-gruppen for vare mva-kodene som gjelder for transaksjonen.                  |
-| Definere mva-grupper for vare.                                   | Obligatorisk. Mva-gruppen for vare inneholder en liste over salgskoder som gjelder for ressursen (produkt, tjeneste og så videre) for en transaksjon. For en gitt transaksjon fastsetter skjæringspunktet for mva-koder i mva-gruppen og mva-gruppen for vare mva-kodene som gjelder for transaksjonen. |
+| Definere mva-grupper for vare.                                   | Obligatorisk. Mva-gruppen for vare inneholder en liste over salgskoder som gjelder for ressursen (produkt, tjeneste og så videre) for en transaksjon. For en gitt transaksjon fastsetter skjæringspunktet for mva-koder i mva-gruppen og mva-gruppen for vare mva-kodene som gjelder for transaksjonen. Hvis du vil ha mer informasjon, se [Definere mva-grupper og mva-grupper for vare](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Definer mva-parametere på programparametersidene. | Obligatorisk. Ulike områder, for eksempel Økonomimodul, Kunde og Leverandør, må sette opp parametere for korrekt beregning av indirekte avgifter. Selv om de fleste av disse parameterne har standardverdier, må de endres for å tilpasses kravene i hvert enkelt firma.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Merverdiavgift på transaksjoner
@@ -98,5 +97,5 @@ Vanligvis ville du måtte utligne og betale 2 500 til skattemyndighetene når fa
 Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene når du mottar betaling fra kunden den 30. juli.
 
 
-
+Hvis du vil ha mer informasjon, kan du se [Definere kildeskattgrupper](tasks/set-up-withholding-tax.md).
 

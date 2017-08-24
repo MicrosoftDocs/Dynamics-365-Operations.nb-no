@@ -1,9 +1,9 @@
 ---
 title: Tilpasse brukeropplevelsen
-description: Denne artikkelen forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 
 Det finnes mange typer tilpasninger i Microsoft Dynamics 365 for Finance and Operations. Noen tilpasninger er valgene du gjør i en liste over alternativer på en konfigurasjonsside. Noen personlige tilpasninger er implisitte, for eksempel holder Finance and Operations oversikt over bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist/skjult for hurtigfanene. Andre tilpasninger er eksplisitt. For eksplisitte tilpasninger, angir du en interaktiv tilpassingsmodus og endrer utseendet på en side ved å direkte styre hvordan elementer vises eller fungerer på siden. 
 
 Alle personlige innstillinger, av en hvilken som helst type, som en bruker gjør i Finance and Operations, er bare for denne brukeren, uavhengig av firmaet som brukeren samhandler med. Endringer som en bruker gjør på en side, påvirker ikke andre brukere i systemet.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
-I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-menyknappen. Når du åpner **Innstillinger** menyen, vises en rekke valg. Hvis du velger **Alternativer**, åpnes brukerens **Alternativer** side. Der finner du fire alternativkategorier: **Visuelt**, **Innstillinger**, **Konto** og **Arbeidsflyt**.
+I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-menyknappen. Når du åpner **Innstillinger** menyen, vises en rekke valg. Hvis du velger **Alternativer**, åpnes brukerens **Alternativer** side. Der finner du fire alternativkategorier: 
 
--   **Visuelt:** bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
--   **Innstillinger:** Her kan du velge standarder for hver gang du åpner Finance and Operations, inkludert firma, startside og standardmodus for Vis/Rediger (som bestemmer om en side er låst for visning eller åpnet for redigering av hver gang du åpner den). Du finner også alternativer for språk, tidssone og dato, klokkeslett og nummerformat. Til slutt inneholder denne siden en rekke diverse innstillinger som vil være forskjellig fra versjon til versjon.
--   **Konto:** Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
--   **Arbeidsflyt:** dette er der du kan velge arbeidsflytrelaterte alternativer.
+-   **Visuelt** - bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
+-   **Innstillinger:** - Her kan du velge standarder for hver gang du åpner Finance and Operations, inkludert firma, startside og standardmodus for Vis/Rediger (som bestemmer om en side er låst for visning eller åpnet for redigering av hver gang du åpner den). Du finner også alternativer for språk, tidssone og dato, klokkeslett og nummerformat. Til slutt inneholder denne siden en rekke diverse innstillinger som vil være forskjellig fra versjon til versjon.
+-   **Konto:** - Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
+-   **Arbeidsflyt**  - dette er der du kan velge arbeidsflytrelaterte alternativer.
 
 ## <a name="implicit-personalizations"></a>Implisitte tilpasninger
 Implisitte tilpasninger er de personlige tilpasningene som utføres ved å samarbeide med visse Kontroller som husker gjeldende synlig status. 
 
-**Rutenettkolonner:** Du kan justere bredden på en kolonne i en liste ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og dra den til venstre eller høyre til ønsket bredde. Finance and Operations lagrer bredden som du ønsker og viser denne kolonnen med denne bredden hver gang du åpner siden med denne listen. 
+**Rutenettkolonner:** - Du kan justere bredden på en kolonne i en liste ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og dra den til venstre eller høyre til ønsket bredde. Finance and Operations lagrer bredden som du ønsker og viser denne kolonnen med denne bredden hver gang du åpner siden med denne listen. 
 
-**Hurtigfaner:** noen sider har utvidbare deler kalt hurtigfaner. Finance and Operations lagrer hvilke hurtigfaner har du utvidet, og hvilke hurtigfaner du har skjult. Hver gang du går tilbake til siden, blir de samme hurtigfanene vist eller skjult basert på siste gang de er brukt. Vi skal forklare hvordan du endrer rekkefølgen på hurtigfane inndelingene dine i denne artikkelen. I noen tilfeller kan kan skjule en hurtigfane forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne hurtigfanen før hurtigfanen utvides. 
+**Hurtigfaner** - Noen sider har utvidbare deler kalt hurtigfaner. Finance and Operations lagrer hvilke hurtigfaner har du utvidet, og hvilke hurtigfaner du har skjult. Hver gang du går tilbake til siden, blir de samme hurtigfanene vist eller skjult basert på siste gang de er brukt. Vi skal forklare hvordan du endrer rekkefølgen på hurtigfane inndelingene dine i denne artikkelen. I noen tilfeller kan kan skjule en hurtigfane forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne hurtigfanen før hurtigfanen utvides. 
 
-**Faktabokser:** noen sider har en del kalt en faktaboksrute. Denne ruten inneholder skrivebeskyttet informasjon knyttet til gjeldende emne på siden. Hver del i faktaboksruten, kalles en faktaboks. Du kan vise eller skjule en faktaboks og Finance and Operations vil lagre dine preferanser. I noen tilfeller kan kan skjule en faktaboks forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne faktaboksen før faktaboksen utvides.
+**Faktabokser:** - Noen sider har en del kalt en faktaboksrute. Denne ruten inneholder skrivebeskyttet informasjon knyttet til gjeldende emne på siden. Hver del i faktaboksruten, kalles en faktaboks. Du kan vise eller skjule en faktaboks og Finance and Operations vil lagre dine preferanser. I noen tilfeller kan kan skjule en faktaboks forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne faktaboksen før faktaboksen utvides.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisitte tilpasninger ved hjelp av verktøylinjen for tilpasning
 Hver person og hvert firma har ulike perspektiver om hvilke data som er viktigst for dem, eller som ikke er nødvendig for hvordan de driver virksomheten. Muligheten til å tilpasse hvordan informasjonen er ordnet, samhandlet med eller skjult er viktig for å gjøre Finance and Operations til en personlig og produktiv erfaring. 
@@ -107,15 +107,20 @@ Noen arbeidsområder inneholder antall paneler (side ved side med tall på dem) 
 Instrumentbordet er ofte den første siden som vises når du åpner Finance and Operations. Du kan tilpasse instrumentbordet for å endre navn på arbeidsområdets navigasjonsfliser, for å vise bare flisene som du ønsker å vise, endre navn på flisene, eller til å ordne flisene i rekkefølgen du vil se dem i. For å tilpasse instrumentbordet velger du en hvilken som helst flis og høyreklikker for å åpne en hurtigmeny. På hurtigmenyen velger du **Tilpass**. Hvis den valgte flisen er én som du ønsker å skjule eller gi nytt navn eller hoppe over, kan du gjøre denne endringen direkte i egenskapsvinduet som vises. Hvis du vil ordne fliser, velger du **Tilpass dette skjemaet** i vinduet Egenskap for å åpne verktøylinjen for personlig tilpasning. Du kan deretter bruke verktøyet Flytt for å ordne flisene.
 
 ## <a name="administration-of-personalization"></a>Administrasjon av tilpasning
-Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere. Bare eksporter den tilpassede siden. Deretter kan du be andre brukere navigere til den tilpassede siden og importere den tilpassede filen du opprettet.
+Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be andre brukere navigere til den tilpassede siden og importere den tilpassede filen du opprettet.
 
-Brukere som har administratorrettigheter, kan også administrere tilpasninger for andre brukere på siden for **tilpassing**. Denne siden har fire kategorier: **System**, **Brukere**, **Importer**, og **Fjern**.
+Brukere som har administratorrettigheter, kan også administrere tilpasninger for andre brukere på siden for **tilpassing**. Denne siden har fire kategorier: 
 
 - **System:** – Dan midlertidig deaktivere eller slå av alle tilpasninger i systemet. I så fall kan du ikke slette personlige tilpasninger. I stedet tilbakestiller du bare alle sider til standardtilstanden. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt for alle sider for brukere. Du kan også slette alle tilpasninger for alle brukere. Legg merke til at når du sletter tilpasninger, er det ikke mulig å automatisk aktivere tilpasninger på nytt fra systemet. Før du utfører dette trinnet, bør du derfor kontrollere at du har eksportert alle tilpasninger du kanskje vil importere senere.
 - **Brukere** – Du kan angi om hver bruker kan gjøre enten implisitt tilpasning eller eksplisitt tilpassing. Du kan også angi om hver bruker kan utføre implisitt eller eksplisitt tilpasning på en bestemt side. Til slutt kan du importere, eksportere eller slette en tilpasning for hver bruker.
 - **Importere** – Du kan importere en tilpasning for én eller flere brukere. Du kan bruke denne kategorien når du har opprettet en tilpasning på en side eller et arbeidsområde, og deretter eksportert den tilpasningen som en tilpasningsfil. For å importere tilpasningsfilen og bruke den på én eller flere brukere, velg enkeltbrukere i listen over alle brukere, eller filtrer etter en bestemt rolle, og deretter velger du brukere i den rollen. Når du har valgt brukerne som skal bruke tilpasningen, klikker du **Importer**, og velger tilpasningsfilen. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
 - **Fjern** – Du kan fjerne side- eller arbeidsområde-tilpasninger for én eller flere brukere. Først velger du siden eller arbeidsområdet du vil fjerne tilpasninger for. Deretter velger du enkeltbrukere i listen over alle brukere, eller filtrer etter en bestemt rolle og deretter velger du brukere i den rollen. Når du har valgt både en side eller et arbeidsområde og brukere, klikker du **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, fjernes. Du kan ikke angre denne handlingen. Hvis siden eller arbeidsområdet har en lagret tilpasning, kan imidlertid denne tilpasningen importeres på nytt.
 
+## <a name="personalization-of-inventory-dimensions"></a>Tilpassing av lagerdimensjoner
 
+Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Hvis du for eksempel bruker tilpassing for å skjule en kolonne for lagerdimensjonen for partinummer, og kolonnen vises neste gang siden åpnes, kan det skyldes at innstillingene for dimensjonsvisning styrer hvilke lagerdimensjonskolonner som vises. 
 
+Innstillingene for dimensjonsvisning gjelder på tvers av alle sider, og disse innstillingene overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider. 
+
+I eksemplet med lagerdimensjonen for partinummer må denne dimensjonen må fjernes som en del av alternativet **Visningsdimensjoner** for tabellen for ikke å vise denne kolonnen. Til slutt vil denne endringen gjelde ikke bare på en bestemt side, men på alle sider.
 

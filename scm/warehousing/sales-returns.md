@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Kunder kan returnere varer av ulike årsaker. En vare kan for eksempel være ød
 ## <a name="return-order-process"></a>Ordrereturprosessen
 Illustrasjonen nedenfor gir en oversikt over returordreprosessen.  
 
-[![Salgsreturer01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Ordrereturprosessen](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Det finnes to typer ordrereturprosesser: fysisk retur og bare kreditering.
 
@@ -213,7 +213,7 @@ Det finnes to metoder for håndtering av produkterstatning:
 
 Ved forskuddserstatning kan erstatningsvaren leveres til kunden før varen er returnert. Denne metoden er nyttig hvis for eksempel varen er en maskindel som ikke kan fjernes med mindre en reservedel kan brukes i stedet, eller hvis du bare vil at kunden skal ha erstatningsproduktet så snart som mulig. Forskuddserstatningsordren er en uavhengig salgsordre. Informasjonen i hodet er initialisert fra kunden, og linjeinformasjonen er initialisert fra returordren. Du kan redigere, behandle og slette erstatningsordren uavhengig av returordren. Når du sletter en erstatningsordre, får du en melding om at ordren ble opprettet som en erstatningsordre. Illustrasjonen nedenfor viser prosessen for forskuddserstatning.  
 
-[![Forskuddserstatningsprosess](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Forskuddserstatningsprosess](./media/SalesReturn04.png)
 
 Returorden inneholder en referanse til erstatningsordren. Hvis en forskuddserstatning opprettes for en returordre før den defekt vare returneres, kan du ikke velge disposisjonskoder for erstatning etter at den defekte vare er returnert.
 
@@ -221,7 +221,7 @@ Returorden inneholder en referanse til erstatningsordren. Hvis en forskuddsersta
 
 Hvis du leverer en erstatningsvare til kunden og du bruker disposisjonshandlingen **Erstatt og kasser** eller **Erstatt og krediter** i returordren, bruker du prosessen som vises i illustrasjonen nedenfor.  
 
-[![Erstatningsprosess når en disposisjonskode brukes](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Erstatningsprosess når en disposisjonskode brukes](./media/SalesReturn05.png)
 
 Erstatningsvaren sendes ved hjelp av en uavhengig salgsordre, erstatningsordren. Denne salgsordren blir opprettet når følgeseddelen for returordren genereres. Ordrehodet bruker informasjon fra kunden som det refereres til i returordrehodet. Linjeinformasjonen som samles inn fra informasjonen som er angitt på siden **Erstatningsvare**. Siden **Erstatningsvare** må fylles ut for linjer som har disposisjonhandlinger som begynner med ordet "erstatt". Verken antallet eller identiteten til erstatningsvaren er imidlertid validert eller begrenset. Denne virkemåten tillater tilfeller der kunden ønsker den samme varen, men i en annen konfigurasjon eller størrelse, og også tilfeller der kundene vil ha et helt annen vare. Som standard angis en identisk vare på siden **Erstatningsvare**. Du kan imidlertid velge en annen vare, forutsatt at funksjonen er definert. **Obs!** Du kan redigere og slette erstatningssalgsordren etter at den er opprettet.
 
@@ -254,7 +254,7 @@ Returordrer kan fullføres mellom to selskaper i organisasjonen. Følgende scena
 
 Illustrasjonen nedenfor er minimumsoppsettet som kreves for to selskaper for å delta i en konserninterne forhold og dra nytte av konsernintern handel.  
 
-[![Minimumsoppsett](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Minimumsoppsett](./media/SalesReturn06.png)
 
 I scenariet nedenfor er CompBuy det kjøpende selskapet, og CompSell er det selgende selskapet. Vanligvis leverer det selgende selskapet varer til det kjøpende selskapet, eller i scenarier med direktelevering, direkte til sluttkunden. I CompBuy er leverandøren IC\_CompSell definert som et konserninternt sluttpunkt som er knyttet til selskapet CompSell. I CompSell er kunden IC\_CompBuy samtidig definert som et konserninternt sluttpunkt som er knyttet til selskapet CompBuy. Riktige detaljer for handlingpolicy og verditilordninger må defineres i begge selskapene. I scenarier med direktelevering blir en konsernintern returordre, som også er en konsernintern salgsordre, opprettet i det selgende selskapet. Autorisasjonsreturnummeret for den konserninterne returordren kan hentes fra ARM-nummersekvensen i CompSell, eller det kan kopieres fra ARM-nummeret som er tilordnet til den opprinnelige returordren i CompBuy. ARM-nummerinnstillingene i handlingspolicyen **PurchaseRequisition** i CompBuy bestemmer disse handlingene. Hvis autorisasjonsreturnummeret synkroniseres, bør du planlegge å redusere risikoen for antall konflikter hvis de to selskapene bruker den samme nummerserien.
 
@@ -262,7 +262,7 @@ I scenariet nedenfor er CompBuy det kjøpende selskapet, og CompSell er det selg
 
 Dette scenariet omfatter to selskaper i samme organisasjon, som vist i illustrasjonen nedenfor.  
 
-[![Enkel konsernintern retur](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Enkel konsernintern retur](./media/SalesReturn07.png)
 
 Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandøren i det kjøpende selskapet eller en ordreretur fra kunden som er opprettet i det selgende selskapet. Finance and Operations oppretter den tilsvarende ordren i det andre selskapet, og sørger for at hode- og linjeinformasjon på leverandørreturordren gjenspeiler innstillingene på kundereturordren. Returordren som er opprettet, kan inkludere eller utelukke referansen (**Søk etter salgsordre**) til en eksisterende kundefaktura. Følgesedler og fakturaer for de to bestillingene kan behandles enkeltvis. Du behøver for eksempel ikke generere en følgeseddel for leverandørreturordren før du genererer følgeseddelen for kundereturordren.
 
@@ -270,7 +270,7 @@ Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandør
 
 Dette scenariet kan opprettes hvis et tidligere salg av typen **Direktelevering** er fullført, og hvis en faktura mot kunden finnes i selskapet som samhandler med kunden. I illustrasjonen nedenfor har selskapet CompBuy tidligere solgt og fakturert produkter til kunden Extern. Produktene er levert direkte fra selskapet CompSell til kunden via en konsernintern ordrekjede.  
 
-[![Leveringsreturer for direkte levering mellom tre parter](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Leveringsreturer for direkte levering mellom tre parter](./media/SalesReturn08.png)
 
 Hvis kunden Ekstern vil returnere produktene, opprettes en returordre (RMA02) for kunden i selskapet CompBuy. Hvis du vil opprette den konserninterne kjeden, må returordren merkes for direktelevering. Når du bruker funksjonen **Søk etter salgsordre** til å velge kundefakturaen skal returneres, opprettes en konsernintern ordrekjede som består av følgende dokumenter:
 
@@ -292,7 +292,7 @@ I eksemplene nedenfor representeres returkostprisen som **Lagerkostpris**.
 
 Returordren refererer ikke til en kundefaktura. Den returnerte varen krediteres. Parameteren **Kreditrettelse** velges ikke når returordre, faktura eller kreditnota genereres.  
 
-[![Returordre refererer ikke til en kundefaktura](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Returordre refererer ikke til en kundefaktura](./media/SalesReturn09.png)  
 
 **Obs!** Hovedprisen for varen brukes som standardverdi for **Returkostpris**-parameteren. Standardprisen er forskjellig fra kostprisen ved lageravgang. Derfor er implikasjonen at et tap på 3 er påløpt. I tillegg inneholder ikke returordren rabatten som ble gitt til kunden i salgsordren. Derfor oppstår det en overskytende kreditering.
 
@@ -300,7 +300,7 @@ Returordren refererer ikke til en kundefaktura. Den returnerte varen krediteres.
 
 Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse**-parameteren velges når returordrefakturaen genereres.  
 
-[![Returordre der krediteringskorrigering er valg ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Returordre der krediteringskorrigering er valg  ](./media/SalesReturn10.png)  
 
 **Obs!** Finansposteringer angis som negative korrigeringer.
 
@@ -308,7 +308,7 @@ Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse**-parameteren velge
 
 I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk etter salgsordre**. **Kreditrettelse**-parameteren velges ikke når fakturaen opprettes.  
 
-[![Returordrelinje som opprettes ved hjelp av funksjonen Søk etter salgsordre ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Returordrelinje som opprettes ved hjelp av funksjonen Søk etter salgsordre  ](./media/SalesReturn11.png)  
 
 **Obs!** **Rabatt** og **Returkostpris** er riktig angitt. Derfor oppstår derfor en nøyaktig tilbakeføring av kundefakturaen.
 

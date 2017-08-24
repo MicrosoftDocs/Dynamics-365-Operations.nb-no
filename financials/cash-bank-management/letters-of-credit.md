@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bd61cd2a5fa7705f3f9152323281e6f4ca520dc1
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 64446efd518390ee2a7204e2c977fa4174581808
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -46,6 +45,13 @@ Rembursen inneholder en beskrivelse av varene, eventuelle påkrevde dokumenter, 
 
 En remburs kan enten være gjenkallelig eller ugjenkallelig. En remburs kan være overførbar, ikke overførbar eller rullerende. En remburs er vanligvis en ugjenkallelig og bekreftet avtale om at betaling blir foretatt til en bestemt mottaker når komplett og nøyaktig forsendelsesdokumentasjon er sendt.
 
+Hvis du vil ha mer informasjon, se følgende emner:
+
+[Importere en remburs](tasks/import-letter-credit.md)
+
+[Eksportere en remburs](tasks/export-letter-credit.md)
+
+[Opprette en bankfasilitet for en remburs](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

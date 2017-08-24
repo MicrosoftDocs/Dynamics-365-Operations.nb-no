@@ -3,7 +3,7 @@ title: Mva-betalinger og avrundingsregler
 description: "Denne artikkelen forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ Tabellen nedenfor viser hvordan et beløp på 98 765,43 avrundes ved hjelp av hv
 > [!NOTE]                                                                                  
 > Hvis du velger Egen fordel, skjer avrundingen alltid til fordel for den juridiske enheten. 
 
-Hvis du vil ha mer informasjon, kan du se [Oversikt over merverdiavgift](indirect-taxes-overview.md). 
-
+Hvis du vil ha mer informasjon, se følgende emner:
+- [Oversikt over merverdiavgift](indirect-taxes-overview.md)
+- [Opprette en mva-betaling](tasks/create-sales-tax-payment.md)
+- [Opprette salgstransaksjoner på dokumenter](tasks/create-sales-tax-transactions-documents.md)
+- [Vise posterte mva-transaksjoner](tasks/view-posted-sales-tax-transactions.md)
 
 
 

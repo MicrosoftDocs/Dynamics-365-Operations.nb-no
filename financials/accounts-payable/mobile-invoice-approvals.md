@@ -1,9 +1,9 @@
 ---
 title: Mobile fakturagodkjenninger
 description: "Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier i Dynamics 365 for Finance and Operations, ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
-ms.author: sunilg
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -37,7 +37,7 @@ Mobile funksjoner i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and
 
 | Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Før du leser håndboken for mobil                                                                                |[Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Før du leser håndboken for mobil                                                                                |[Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Et miljø som har Microsoft Dynamics 365 for Operations versjon 1611 og for Microsoft Dynamics for Operations plattformoppdatering 3 (november 2016)                   |
 | Installer hurtigreparasjon KB 3204341.                                                                              | Oppgaveregistrering kan feilaktig registrere to Lukk-kommandoer for rullegardindialoger. Dette er inkludert i Dynamics 365 for Operations plattformoppdatering 3 (November 2016 oppdatering) |
 | Installer hurtigreparasjon KB 3207800.                                                                              | Denne hurtigreparasjonen gjør at vedlegg skal vises på den mobile klienten. Dette er inkludert i Dynamics 365 for Operations plattformoppdatering 3 (November 2016 oppdatering).           |

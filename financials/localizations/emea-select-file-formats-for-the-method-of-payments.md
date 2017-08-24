@@ -15,13 +15,13 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
-ms.openlocfilehash: cbe4b57d0ad9119b0e5f6c9725a85c3afe8388ab
+ms.translationtype: HT
+ms.sourcegitcommit: 3e0122d6e61efa012722c707ac4ca74c619e5a20
+ms.openlocfilehash: 2981fae40e43dec96b4e5b6c812e96ee3e959a9d
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/09/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -41,7 +41,7 @@ Det finnes to metoder du kan bruke til å få filformater for bruk med betalings
 
 ### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: formater for elektronisk rapportering
 
-For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**. Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan. <!---For more details, see [Enable the JBA payment file format](/dynamics365/unified-operations/financials/localizations/tasks/jba-payment-file-format).-->
+For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**. Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan. Hvis du vil ha mer informasjon, se [Aktivere JBA-betalingsfilformatet](/dynamics365/unified-operations/financials/localizations/tasks/jba-payment-file-format)
 
 ### <a name="method-2-x-file-formats"></a>Metode 2: X++-filformater
 

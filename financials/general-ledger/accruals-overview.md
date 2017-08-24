@@ -3,7 +3,7 @@ title: Oversikt over avsetninger
 description: Denne artikkelen beskriver avsetninger og gir informasjon om hvordan du konfigurerer dem og opprette transaksjoner.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ad5030da963ca961d49e645b1d9ad19453376b8
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 87d9f7fbdbc06a3399a6ec5c2492de0f053b1513
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,5 +47,5 @@ Når du avgjør hvilke kontoer som skal brukes, kan du angi hvordan bilagsnummer
 Når du registrerer en journal, kan du klikke **Finansavsetninger** på **Funksjoner**-menyen. Når du deretter velger avsetningsplanen, vises grunnlagsbeløpet fra journalen som fordeles over perioden i henhold til avsetningsplanen. Hvis du for eksempel betaler en ansatts forsikring for hele året i januar, og beløpet er 120 000, må du gjenkjenne denne utgiften hver måned. Du kan velge startdatoen. Du kan også angi om det påløpte beløpet er basert på kontoen eller motkontoen. Når du har foretatt valgene, klikker du **Transaksjoner** for å vise alle transaksjonene som er opprettet basert på avsetningsplanen. Hvis du for eksempel fordeler 120 000 i forsikringsutgifter på hele året, ser du 10 000 for hver måned. Når du har postert journalen, kan du vise transaksjonene ved hjelp av forespørselssiden **Bilagstransaksjoner**. Hvis en avsetningsplan ikke kan brukes (for eksempel når en salgsordrefaktura eller bestillingsfaktura er involvert), kan du kreditere det forskuddsbetalte beløpet og debitere utgiftsbeløpet. Deretter kan du velge **Motregn** når du bruker avsetningsplanen.
 
 
-
+Hvis du vil ha mer informasjon, se [Opprette avsetningsplaner](tasks/create-accrual-schemes.md) og [Opprette finansavsetningstransaksjoner](tasks/create-ledger-accrual-transactions.md).
 

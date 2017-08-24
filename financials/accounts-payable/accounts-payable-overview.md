@@ -1,9 +1,9 @@
 ---
 title: "Konfigurere Leverandører"
 description: "Denne artikkelen beskriver sidene du bruker til å definere grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Før du kan konfigurere Leverandører må du fullføre følgende konfigurasjon:
 ## <a name="setup-pages-for-accounts-payable"></a>Konfigurasjonssider for Leverandører
 
 Bruk de følgende sidene til å sette opp den grunnleggende funksjonaliteten i Leverandører for hver juridiske enhet. Sidene vises i rekkefølgen som anbefales for oppsett. Du kan gjøre oppsettet enklere ved å opprette maler fra de første postene som opprettes. I en mal angis verdiene vanligvis i mange felt for å reflektere funksjonene som organisasjonen ønsker å implementere for en bestemt type leverandør.
-1.  På siden Betalingsbetingelser definerer du betalingsbetingelsene du tilordner til salgsordrer, bestillinger, kunder og leverandører, og som bestemmer forfallsdatoer for fakturaers.
+1.  På siden Betalingsbetingelser definerer du betalingsbetingelsene du tilordner til salgsordrer, bestillinger, kunder og leverandører, og som bestemmer forfallsdatoer for fakturaers. Hvis du vil ha mer informasjon, kan du se [Definere leverandørbetalingsgebyrer](tasks/define-vendor-payment-fees.md).
 2.  På siden Betalingsmåter - leverandører oppretter og vedlikeholder du informasjon om hvordan organisasjonen betaler sine leverandører.
 3.  På siden Leverandørgrupper oppretter og vedlikeholder du grupper av leverandører som deler viktige parametere for postering, utligning og betaling, rapportering og prognoser.
 4.  På siden Leverandørposteringsprofiler angir du hvordan leverandørtransaksjoner posteres til økonomimodulen.

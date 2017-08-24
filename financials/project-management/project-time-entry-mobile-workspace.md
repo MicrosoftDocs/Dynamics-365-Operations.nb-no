@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 2.  Velg **Tidsoppføring**. Du kan se kalenderdatoene for gjeldende uke.
 3.  Velg **Handlinger** &gt; **Ny oppføring** for en valgt dato.
 4.  Angi antallet timer som skal registreres.
-5.  Velg prosjektet for timeregistreringen. Du kan se en liste over prosjekter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Velg prosjektet for timeregistreringen. Du kan se en liste over prosjekter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Hvis prosjektet ikke finnes i listen, velger du **Søk etter**. Søk etter navn, eller bytt til å søke etter prosjektnavn eller kunde.
-7.  Velg en kategori. Du kan se en liste over kategorier som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Velg en kategori. Du kan se en liste over kategorier som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Hvis kategorien ikke finnes i listen, velger du **Søk etter**. Søk etter kategori, eller bytt til å søke etter kategorinavn.
-9.  Velg en aktivitet. Du kan se en liste over aktiviteter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Velg en aktivitet. Du kan se en liste over aktiviteter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Hvis du vil ha mer informasjon, kan du se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Hvis aktiviteten ikke finnes i listen, velger du **Søk etter**. Søke etter aktivitetsnummeret, eller bytt til å søke etter formål.
 
 11. Velg linjeegenskapen.

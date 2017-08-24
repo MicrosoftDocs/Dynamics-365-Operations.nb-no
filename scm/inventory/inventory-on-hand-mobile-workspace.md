@@ -18,12 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
-ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 6e062ffa459b7d008fc5d24f27538f8df04d7e82
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -116,7 +115,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 1.  Velg **Lagerbeholdning**-arbeidsområdet på mobilenheten.
 
-2.  Velg **Kontroller lagerbeholdning for en vare**. Du kan se en liste over produkter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon.
+2.  Velg **Kontroller lagerbeholdning for en vare**. Du kan se en liste over produkter som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon.
 3.  Hvis elementet ikke finnes i listen, velger du **Søk etter flere**. Søk etter produktnummer, eller bytte til et søk etter produktnavn.
 
 4.  Velg et produkt. Hvis varen har et bilde, vises bildet.

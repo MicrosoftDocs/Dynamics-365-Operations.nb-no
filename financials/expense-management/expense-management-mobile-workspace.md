@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Angi utgifter raskt ved å bruke det mobile arbeidsområdet reiseregning og utlegg
 1. Åpne arbeidsområdet **Reiseregning og utlegg** på mobilenheten.
 2. Velg **Hurtig utgiftsregistrering**.
-3. Velg kategorien for utgiften. Du ser en liste over utgifter som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis kategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter utgiftskategori, eller bytt til å søke etter utgiftstype.
+3. Velg kategorien for utgiften. Du ser en liste over utgifter som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis kategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter utgiftskategori, eller bytt til å søke etter utgiftstype.
 4. Angi transaksjonsdatoen for utgiften.
 5. Valgfritt: Angi forhandleren for utgiften.
 6. Angi utgiftsbeløpet.
-7. Angi valutaen for utgiften. Du ser en liste over valutakoder som er lastet inn i appen for frakoblet bruk. 400 valutaer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis valutaen ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter valuta, eller bytt til å søke etter navn.
+7. Angi valutaen for utgiften. Du ser en liste over valutakoder som er lastet inn i appen for frakoblet bruk. 400 valutaer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis valutaen ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter valuta, eller bytt til å søke etter navn.
 8. Velg **Ta bilde** eller **Velg bilde**.
 9. Følg ett av disse trinnene:
 
@@ -166,11 +166,11 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 7. Velg én eller flere utgifter i listen.
 8. Velg **Ferdig**.
 9. Hvis du vil legge til en ny utgift i reiseregningen, velger du **Ny utgift**.
-10. Velg kategorien for utgiften. Du ser en liste over utgifter som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis kategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter utgiftskategori, eller bytt til å søke etter utgiftstype.
+10. Velg kategorien for utgiften. Du ser en liste over utgifter som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis kategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter utgiftskategori, eller bytt til å søke etter utgiftstype.
 11. Valgfritt: Angi forhandleren for utgiften.
 12. Angi transaksjonsdatoen for utgiften.
 13. Angi utgiftsbeløpet.
-14. Angi valutaen for utgiften. Du ser en liste over valutakoder som er lastet inn i appen for frakoblet bruk. 400 valutaer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis valutaen ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter valuta, eller bytt til å søke etter navn.
+14. Angi valutaen for utgiften. Du ser en liste over valutakoder som er lastet inn i appen for frakoblet bruk. 400 valutaer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis valutaen ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter valuta, eller bytt til å søke etter navn.
 15. Velg **Ferdig**.
 16. Hvis du vil legge til flere detaljer i utgiften, velger du **Legg til flere detaljer**. Feltene som er tilgjengelige, avhenger av konfigurasjonen av reiseregning for firmaet.
 17. Hvis firmapolicy krever en kvittering for utgiften, velger du **Kvitteringer**, og gjør deretter følgende:
@@ -216,12 +216,12 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
         - Hvis du har valgt **Tidligere gjester**, følger du denne fremgangsmåten:
 
-            1. Velg én eller flere tidligere gjester i listen. Du ser en liste over tidligere gjester du har lagt til i tidligere reiseregninger, som lastes inn i programmet ditt for bruk i frakoblet modus. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis den tidligere gjesten ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn, eller bytt til å søke etter organisasjon, land eller tittel.
+            1. Velg én eller flere tidligere gjester i listen. Du ser en liste over tidligere gjester du har lagt til i tidligere reiseregninger, som lastes inn i programmet ditt for bruk i frakoblet modus. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis den tidligere gjesten ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn, eller bytt til å søke etter organisasjon, land eller tittel.
             2. Velg **Ferdig**.
 
         - Hvis du har valgt **Medarbeidere**, følger du denne fremgangsmåten:
 
-            1. Velg én eller flere medarbeidere i listen. Du kan se en liste over medarbeidere som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis medarbeideren ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn, eller bytt til å søke etter bedrift eller tittel.
+            1. Velg én eller flere medarbeidere i listen. Du kan se en liste over medarbeidere som er lastet inn i ditt program for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis medarbeideren ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn, eller bytt til å søke etter bedrift eller tittel.
             2. Velg **Ferdig**.
 
     3. Velg **Tilbake**-knappen for å gå tilbake til reiseregningsdetaljene.
@@ -230,7 +230,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
     1. Velg den første datoen som skal spesifiseres.
     2. Velg **Legg til spesifisering**.
-    3. Velg underkategorien for utgiftsspesifiseringen. Du ser en liste over utgiftsunderkategorier som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) for mer informasjon. Hvis underkategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn på underkategori for utgift.
+    3. Velg underkategorien for utgiftsspesifiseringen. Du ser en liste over utgiftsunderkategorier som er lastet inn i appen for frakoblet bruk. 50 varer blir lastet inn som standard, men en utvikler kan endre dette antallet. Utviklere kan se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) for mer informasjon. Hvis underkategorien ikke finnes i listen, velger du **Søk** for å utføre en online-søk. Søk etter navn på underkategori for utgift.
     4. Angi transaksjonensbeløpet for spesifiseringen.
     5. Rediger transaksjonsdatoen hvis det er nødvendig.
     6. Velg **Ferdig**.

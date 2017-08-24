@@ -1,9 +1,9 @@
 ---
 title: Maler for budsjettplanlegging for Excel
 description: Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: nb-no
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Dette emnet viser hvordan du oppretter Excel-maler som skal brukes med budsjettp
 
 Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppsett. Hvert oppsett kan ha en tilknyttet dokumentmal for budsjettplan for å vise og redigere budsjettplandataene i et Excel-regneark. I dette emnet genereres en dokumentmal for budsjettplan ved hjelp av en eksisterende oppsettkonfigurasjon. 
 
-Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). Klikk **Ny** for å opprette et nytt budsjettplandokument. 
+1. Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). 
+2. Klikk **Ny** for å opprette et nytt budsjettplandokument. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Liste over budsjettplaner](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Bruk alternativet **Legg til linje** for å legge til linjer. Klikk **Oppsett** for å vise oppsettkonfigurasjonen for budsjettplandokument. 
+3. Bruk alternativet **Legg til linje** for å legge til linjer. Klikk **Oppsett** for å vise oppsettkonfigurasjonen for budsjettplandokument. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Legg til budsjettplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. Etter at malen er generert, går du til **Mal** &gt; **Vis** for å åpne og se gjennom dokumentmalen for budsjettplan. Du kan lagre Excel-filen på den lokale stasjonen. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. 
+1. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. 
+2. Etter at malen er generert, går du til **Mal** &gt; **Vis** for å åpne og se gjennom dokumentmalen for budsjettplan. Du kan lagre Excel-filen på den lokale stasjonen. 
+
+[![Lagre som](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Oppsettet av budsjettplandokumentet kan ikke redigeres etter at det er knyttet til en Excel-mal. Hvis du vil endre oppsettet, sletter du den tilknyttede Excel-malfilen og genererer den på nytt. Dette er nødvendig for å holde feltene i oppsettet og regnearket synkronisert. 
 
 Excel-malen inneholder alle elementene fra oppsettet for budsjettplandokument, der kolonnen **Tilgjengelig i regneark** er satt til sann. Overlappende elementer er ikke tillatt i Excel-malen. Hvis oppsettet for eksempel inneholder kolonnene Forespørsel Q1, Forespørsel Q2, Forespørsel Q3 og Forespørsel Q4, og en total forespørsel-kolonne som representerer en sum av alle 4 kvartalsvise kolonnene, er bare de kvartalsvise kolonnene eller totalkolonnen tilgjengelig for bruk i Excel-malen. Excel-filen kan ikke oppdatere overlappende kolonner under oppdateringen, fordi dataene i tabellen kan bli foreldet og unøyaktige.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Eksempel](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > For å unngå potensielle problemer med å vise og redigere budsjettplandata ved hjelp av Excel, bør den samme brukeren være pålogget både Microsoft Dynamics 365 for Finance and Operations, Enterprise edition og Microsoft Dynamics Office-tillegget Datakobling.
@@ -63,7 +68,7 @@ Hvis du vil legge til topptekstinformasjon, velger du den øverste raden i Excel
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-I kategorien **Utforming** ** ** klikker du **Legg til felt** og velger **BudgetPlanHeader** som enhetsdatakilde.
+I kategorien **Utforming** klikker du **Legg til felt** og velger **BudgetPlanHeader** som enhetsdatakilde.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 
