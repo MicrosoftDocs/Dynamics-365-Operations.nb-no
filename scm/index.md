@@ -16,13 +16,13 @@ ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
+ms.sourcegitcommit: 9e0d4e510542ffdeb01c8c9daffab40f5ba4b654
+ms.openlocfilehash: 3875aab63d2046bf6f0ebeb04622babb6f3f104d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -59,8 +59,11 @@ Disse korte videoene hjelper med å komme i gang med de nye funksjonene i oppdat
 -  [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
 -  [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
+-  [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
 
-### <a name="tech-talk"></a>Teknisk tale 
+### <a name="tech-talks"></a>Tekniske samtaler
+De fleste av disse omhandler produktfunksjonalitet i den forrige versjonen av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+
 -  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Hovedplanlegging – tips og triks for feilsøkingsytelse</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Hjelp! MRP er treg!</a>
@@ -71,6 +74,7 @@ Disse korte videoene hjelper med å komme i gang med de nye funksjonene i oppdat
 -  <a href="https://youtu.be/5w1MngVchBA">Etiketter i den nye R3-lagerstyringen for Microsoft Dynamics AX 2012</a>
 -  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avansert lagerstyring - en dag i løpet av prosessproduksjonen</a>
 -  <a href="https://youtu.be/y1jrd3A_k70">Operasjoner og aktiviteter for underleverandører i produksjonen</a>
+-  <a href="https://youtu.be/jgmTgJIgEFQ">Transportstyring (TMS) i den nye forekomsten av Microsoft Dynamics AX</a>
 
 ## <a name="blogs"></a>Blogger
 Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teambloggen</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i Dynamics AX R & D-teambloggen </a>. De fleste av disse ble skrevet for tidligere versjoner av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
