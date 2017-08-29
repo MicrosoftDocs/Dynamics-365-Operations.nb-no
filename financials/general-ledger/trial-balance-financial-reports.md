@@ -1,7 +1,7 @@
 ---
 title: "Finansrapporter for råbalanse"
 description: "Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav."
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

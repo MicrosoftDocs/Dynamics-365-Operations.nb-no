@@ -1,7 +1,7 @@
 ---
 title: Oversikt over utligning
 description: "Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: ab12ef4127daf57fb0816ae1585876b50d1e81ed
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
-
 
 ---
 

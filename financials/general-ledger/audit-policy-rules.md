@@ -1,7 +1,7 @@
 ---
 title: "Overvåkingspolicyregler"
 description: "Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter. Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.  Hver policyregel er en forekomst av en policyregeltype. For hver policyregeltype kan bare én policyregel være aktiv om gangen."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

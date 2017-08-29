@@ -1,7 +1,7 @@
 ---
 title: "Revaluering av utenlandsk valuta for leverandører og kunder"
 description: "Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: nb-no
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

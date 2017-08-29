@@ -1,7 +1,7 @@
 ---
 title: "Arbeidsområde for bank"
 description: "Dette emnet gir informasjon om arbeidsområdet for bank. Dette arbeidsområdet viser informasjon som er knyttet til firmaets bankkontoer, og inneholder en sammendragsvisning og en Analyse-side. Sammendragsvisningen viser sammendragsfliser, bankkontoinformasjon, et saldodiagram og relatert informasjon. Analyse-siden bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til bankkontosaldoer."
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 05/25/2017
 ms.topic: article
@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e

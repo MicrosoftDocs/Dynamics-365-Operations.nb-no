@@ -1,7 +1,7 @@
 ---
 title: "Vise journaloppføringer og transaksjoner"
 description: "Denne artikkelen beskriver de forskjellige måtene du kan vise loggoppføringer og transaksjoner."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

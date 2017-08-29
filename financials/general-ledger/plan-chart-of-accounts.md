@@ -1,7 +1,7 @@
 ---
 title: Planlegge kontoplanen
 description: "Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

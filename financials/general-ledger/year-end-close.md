@@ -1,7 +1,7 @@
 ---
 title: "Årsavslutning"
 description: "Dette emnet beskriver den nødvendige konfigurasjonen og fremgangsmåten for å kjøre årsavslutningsprosessen i økonomimodulen."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
