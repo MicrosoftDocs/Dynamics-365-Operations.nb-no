@@ -1,7 +1,7 @@
 ---
 title: Finansdimensjoner
 description: Dette emnet beskriver de ulike typene finansdimensjoner og hvordan de er definert.
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: Konfigurere og behandle bilder for moderne salgssted for detaljhandel
 description: Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
-author: MargoC
+author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 3985d731709eff4085927b277996528e4e448ba9
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

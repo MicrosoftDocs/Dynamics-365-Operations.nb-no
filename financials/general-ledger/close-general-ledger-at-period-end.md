@@ -1,7 +1,7 @@
 ---
 title: "Lukke økonomimodulen ved periodeslutt"
 description: "Dette emnet beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

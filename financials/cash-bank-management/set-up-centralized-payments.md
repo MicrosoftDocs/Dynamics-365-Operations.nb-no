@@ -1,7 +1,7 @@
 ---
 title: Definere sentraliserte betalinger
 description: "Bruk denne fremgangsmåten til å klargjøre for behandling av betalinger i én juridisk enhet på vegne av andre juridiske enheter i organisasjonen."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

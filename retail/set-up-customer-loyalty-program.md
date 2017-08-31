@@ -1,7 +1,7 @@
 ---
 title: Konfigurere et fordelsprogram for kunde
 description: "Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

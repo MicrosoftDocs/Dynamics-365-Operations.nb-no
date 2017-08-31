@@ -1,7 +1,7 @@
 ---
 title: Konsolideringskontogrupper og flere konsolideringskontoer
 description: Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

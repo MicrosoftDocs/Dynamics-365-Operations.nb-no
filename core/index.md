@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations er Microsofts forretningsprogram for bedrifter. Brukere kan bruke programmet til raskt å ta smartere avgjørelser ved hjelp av et intelligent brukergrensesnitt som gir tilgang til sanntidsinnsikter og -data. Det gir virksomheter muligheten til å transformere og innovere ved å formidle dokumentert forretningslogikk som kan brukes til å utforme forretningsprosessene på nytt raskere. Det gir virksomheter fleksibiliteten til vekst i sitt eget tempo, og muligheten til å gjøre forretninger i praksis hvor som helst og når som helst. På denne måten kan de skalere sin drift globalt for å dekke forretningsbehov. 
 
-Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 for Finance and Operations til å fungere for virksomheten. Den er koblet til dokumentasjonen for de relaterte produktene i den enhetlige driften, Dynamics 365 for Retail og Dynamics 365 for Talent. 
+Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 for Finance and Operations til å fungere for virksomheten. Den er koblet til dokumentasjonen for de relaterte produktene: Dynamics 365 for Retail og Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Ved hjelp av denne dokumentasjonen kan du finne ut hvordan du får Dynamics 365 
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Finansrapportering</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Forskriftsmessig rapportering</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobil plattform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobil plattform</a></h3>
 
 <h3>Utviklerfunksjonalitet</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Startside for utvikler</a></p>

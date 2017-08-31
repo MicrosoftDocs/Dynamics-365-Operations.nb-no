@@ -1,7 +1,7 @@
 ---
 title: "Vurdere kunde- og produktlønnsomhet"
 description: "Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over kunde- og produktlønnsomhet fra data i Microsoft Dynamics 365 for Retail."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: ea35bdd54c476fc5a3d329f7ca0dcf014c417e7a
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

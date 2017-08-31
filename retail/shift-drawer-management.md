@@ -1,7 +1,7 @@
 ---
 title: Behandling av skift og kassaskuff
 description: "Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for salgssted – delt og frittstående. Delte skift kan brukes av flere brukere på flere steder, mens frittstående skift bare kan brukes av én arbeider om gangen."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: nb-no
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 
