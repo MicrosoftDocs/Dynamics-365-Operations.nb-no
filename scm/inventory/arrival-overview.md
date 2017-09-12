@@ -1,7 +1,7 @@
 ---
 title: Ankomstoversikt
 description: "Dette emnet gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Dette emnet gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden
 **Ankomstoversikt**-siden gir en oversikt over alle forventede innkommende varer. Den viser også ankomster som kan initialiseres basert på oversikten. Dette emnet beskriver mottaksprosessen.
 
 ## <a name="business-scenario"></a>Foretningsscenario
-Tenk deg følgende scenario i de innkommende prosessene. 
+Tenk deg følgende scenario i de innkommende prosessene.
 
-[![Foretningsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Foretningsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sammy, en mottaksassistent, ønsker å vite hva som skal mottas på den gjeldende dagen. På **Ankomstoversikt**-siden kan Sammy få en oversikt over gjeldende oppgaver, og et grovt estimat av antall, volum, vekt, forskjellige ordretyper og så videre. Senere kommer en levering til ett av innleveringsportene, og Sammy mottar en liste over leveringen. På siden **Ankomstoversikt** kan Sammy utføre følgende oppgaver:
 
@@ -69,7 +69,7 @@ For dette eksemplet er feltet **Profilnavn for ankomstoversikt** i hurtigkategor
 
 For automatisk å opprette ankomstjournaler fra **Ankomstoversikt**-siden må du definere riktig informasjon i **Journal**-feltgruppen i hurtigkategorien **Ankomstalternativer**.
 
--   Du må angi et journalnavn når du oppretter en journal. 
+-   Du må angi et journalnavn når du oppretter en journal.
 
 [![Angi et journalnavn](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Når alle varene er registrert, kan lagersjefen eller innkjøpssjefen oppdatere 
 
 ## <a name="summary"></a>Sammendrag
 **Ankomstoversikt**-siden kan hjelpe lagersjefen og lagermedarbeidere med å få en oversikt over forventet arbeid som må utføres som en del av en innkommende prosess. Siden kan også brukes til å starte vareankomstprosessen, for å garantere at varer spores på den første posten på lageret.
-
-
-
 

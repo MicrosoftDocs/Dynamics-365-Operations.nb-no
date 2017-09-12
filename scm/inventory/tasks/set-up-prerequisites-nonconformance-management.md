@@ -1,4 +1,4 @@
---- 
+---
 title: Definere forutsetninger for behandling
 description: "Bruk denne fremgangsmåten for å aktivere prosjektstyringsprosesser for avvik."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Bruk denne fremgangsmåten for å aktivere prosjektstyringsprosesser for avvik. 
 3. Skriv inn en verdi i feltet Karantenesone.
 4. Skriv inn en verdi i feltet Beskrivelse.
 5. Lukk siden.
-
 

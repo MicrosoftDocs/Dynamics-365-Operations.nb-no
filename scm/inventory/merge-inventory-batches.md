@@ -1,7 +1,7 @@
 ---
 title: "Slå sammen lagerpartier"
 description: "Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti. 
+Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti.
 
 Når du slår sammen partier, kan beregninger være med på å optimalisere egenskapene og partiattributtene i det sammenslåtte partiet. Etter at du har kildepartiene, kan du se gjennom og endre det sammenslåtte partiet før du posterer det. Du kan også overføre partisammenslåingen til en lagerjournal for godkjenning. Lageret kan deretter reserveres eller posteres direkte fra denne lagerjournalen. Når du posterer et sammenslått parti, justeres beholdningen for kildepartiene og det sammenslåtte partiet.
 
@@ -142,7 +142,4 @@ Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle p
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se informasjon om faktisk vekt i lagerjournalen når jeg har flettet en faktisk vekt-vare?
 Du kan slå sammen partier med faktisk vekt-varer på samme måte som alle andre varer. Informasjon om faktisk vekt vises imidlertid ikke i lagerjournalen. Vi anbefaler at du kontrollerer informasjonen for faktisk vekt før du overfører pafrtisammenslåingen til lagerjournalen.
-
-
-
 

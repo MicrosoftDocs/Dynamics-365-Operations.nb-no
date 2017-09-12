@@ -1,4 +1,4 @@
---- 
+---
 title: Opprette et nytt lageroppsett
 description: "Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i lageret."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i la
 7. Aktiver/deaktiver utvidelsen av delen Lokasjonsnavn.
     * Alternativene i denne delen definerer standardformatet for lokasjonsnavn. I vårt eksempel skal vi ta med gangnummer, reolnummer og hyllenummer.  
 8. Sett alternativet Inkluder gang til Ja.
-9. Sett alternativet Ta med reol til Ja. 
+9. Sett alternativet Ta med reol til Ja.
 10. I Format-feltet velger du en verdi for reolen.
     * For eksempel: -##  
 11. Sett alternativet Ta med hylle til Ja.
@@ -74,5 +74,4 @@ Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i la
 14. Klikk Finish.
 15. Lukk siden.
 16. Oppdater siden.
-
 

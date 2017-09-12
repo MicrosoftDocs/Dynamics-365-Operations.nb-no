@@ -1,4 +1,4 @@
---- 
+---
 title: "Justere lagernivåer i lageret (grunnleggende lageraktiviteter)"
 description: "Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en beholdningsjusteringsjournal for å justere lagernivåer for produkter i lageret."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en beh
 4. Klikk OK.
 5. Lukk skjemaet.
 6. Lukk siden.
-
 

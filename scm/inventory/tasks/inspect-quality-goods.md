@@ -1,4 +1,4 @@
---- 
+---
 title: Kontrollere varekvaliteten
 description: Denne prosedyren viser hvordan du behandler en kvalitetsordre.
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Denne prosedyren viser hvordan du behandler en kvalitetsordre. Du kan bruke denn
 4. Klikk Velg.
 5. Klikk OK.
 6. Lukk siden.
-
 

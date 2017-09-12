@@ -1,4 +1,4 @@
---- 
+---
 title: Opprette en ny etterfyllingsordre for forsendelse
 description: "Denne fremgangsmåten viser hvordan du oppretter en etterfyllingsordre for forsendelse der du kan spore forventet levering fra en leverandør til forsendelseslageret."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Denne fremgangsmåten viser hvordan du oppretter en etterfyllingsordre for forse
 ## <a name="receive-items"></a>Motta varer
 1. Klikk Produktkvittering.
 2. Skriv inn en verdi i feltet Ekstern mottaksseddel.
-3. I Antall-feltet skriver du inn et tall som er lavere enn antallet som vises. 
+3. I Antall-feltet skriver du inn et tall som er lavere enn antallet som vises.
 4. Klikk OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontrollere lagerbeholdningen
@@ -70,5 +70,4 @@ Denne fremgangsmåten viser hvordan du oppretter en etterfyllingsordre for forse
     * Varene som er mottatt som forsendelseslager og som eies av leverandøren, er tilgjengelig lagerbeholdning. Restantall på etterfyllingsordren for forsendelsen vises i Bestilt i alt-feltet.  
 4. Lukk siden.
 5. Klikk Lukk.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Opprette og behandle et avvik
 description: "Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre. Du kan kjøre denne registreringen i USMF demofirmaet, og du kan bruke de foreslåtte verdiene. Denne prosedyren utføres vanligvis av en kvalitetsassistent.  Kjør oppgaveregistreringen "Kontrollere varekvaliteten" er en forutsetning. Hvis du vil behandle godkjenningen av et avvik, må brukeren som kjører oppgaveregistreringen ha en "Navn"-verdi som er tilordnet på siden Brukere. Hvis du vil bruke merknader i dokumentet, må brukeren også ha Dokumenthåndtering aktivert i brukeralternativene. 
+Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre. Du kan kjøre denne registreringen i USMF demofirmaet, og du kan bruke de foreslåtte verdiene. Denne prosedyren utføres vanligvis av en kvalitetsassistent.  Kjør oppgaveregistreringen "Kontrollere varekvaliteten" er en forutsetning. Hvis du vil behandle godkjenningen av et avvik, må brukeren som kjører oppgaveregistreringen ha en "Navn"-verdi som er tilordnet på siden Brukere. Hvis du vil bruke merknader i dokumentet, må brukeren også ha Dokumenthåndtering aktivert i brukeralternativene.
 
 
 ## <a name="select-a-quality-order"></a>Velge en kvalitetsordre
@@ -78,5 +78,4 @@ Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eks
 3. Klikk Ja.
 4. Lukk siden.
 5. Lukk siden.
-
 

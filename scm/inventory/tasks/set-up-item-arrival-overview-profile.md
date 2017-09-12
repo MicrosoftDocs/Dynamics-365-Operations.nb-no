@@ -1,7 +1,7 @@
---- 
+---
 title: Definere en profil for vareankomstoversikt
 description: "Denne oppgaven fokuserer på oppsettet for en profil for ankomstoversikt."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Denne oppgaven fokuserer på oppsettet for en profil for ankomstoversikt. Profil
     * Velg mottakslinjer fra overføringsordrer.  
 17. Klikk Lagre.
 18. Lukk siden.
-
 

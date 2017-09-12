@@ -1,4 +1,4 @@
---- 
+---
 title: "Overføre aktuell beholdning på lageret"
 description: "Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lageroverføringsjournal for registrere flytting av en vare fra en lokasjon i et lager til en annen."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lag
 1. Klikk Lager.
 2. Klikk Transaksjoner.
     * Her kan du se transaksjonene som ble opprettet da du posterte journalen.  
-
 

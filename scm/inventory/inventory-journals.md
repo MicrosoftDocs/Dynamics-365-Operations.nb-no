@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Denne artikkelen beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning. 
+Denne artikkelen beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning.
 
 Lagerjournaler i Microsoft Dynamics 365 for Finance and Operations brukes til å postere fysiske lagertransaksjoner av forskjellige typer, for eksempel postering av avganger og mottak, lagerbevegelser, oppretting av stykklister og avstemmingen av fysisk lager. Alle disse lagerjournalene brukes på lignende måte, men de er delt inn i forskjellige typer.
 
@@ -95,7 +95,4 @@ En journallinje er bare tilgjengelig for én bruker av gangen. Hvis flere bruker
 
 ## <a name="posting-journal-lines"></a>Posteringsjournallinjer
 Du kan postere journallinjene du oppretter, når som helst før du låser en vare fra flere transaksjoner. Dataene du angir i en journal, forblir i journalen, selv om du lukker journalen uten å postere linjene.
-
-
-
 

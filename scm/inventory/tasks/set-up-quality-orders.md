@@ -1,4 +1,4 @@
---- 
+---
 title: Definere kvalitetsordrer
 description: "Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der innkommende lager må kontrolleres umiddelbart etter ankomstregistrering."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 15. Finn og velg ønsket post i listen.
 16. Klikk Lagre.
 17. Lukk siden.
-
 

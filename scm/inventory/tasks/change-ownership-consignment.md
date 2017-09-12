@@ -1,4 +1,4 @@
---- 
+---
 title: "Endre eierskap for forsendelseslager basert på produksjonsbehov"
 description: "Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra leverandøren til den juridiske enheten når det er behov for beholdningen i produksjonen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra 
     * Når journalen posteres, frigis det leverandøreide lageret ved hjelp referansen Endring av eierskap. Lageret blir deretter mottatt som på lager ved hjelp av en lagertransaksjon som oppdateres med en bestillingsmottaksseddel. Vær oppmerksom på at bare transaksjoner som er knyttet til den posterte journalen, opprettes. Ingen forventede lagertransaksjoner opprettes.  
 2. Klikk OK.
 3. Lukk siden.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Overvåke forsendelseslager ved hjelp av leverandørsamarbeid"
 description: "Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se informasjon om lagernivået for produktet som du har plassert i forsendelse hos en kunde."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -41,5 +41,4 @@ Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se inf
 ## <a name="view-on-hand-inventory"></a>Vise lagerbeholdning
 1. Gå til Leverandørsamarbeid > Forsendelseslager > Forsendelseslager for beholdning.
     * Siden Forsendelseslager for beholdning viser lageret du eier på kundens lager. Du kan vise flere dimensjoner, for eksempel område og lager, ved å klikke kategorien Visningsdimensjoner.   
-
 

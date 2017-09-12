@@ -1,4 +1,4 @@
---- 
+---
 title: Opprette og vedlikeholde lagerblokkering
 description: "Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir reservert av andre utgående kildedokumenter ved å bruke lagerblokkeringen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir
 1. Gå til Lagerstyring > Periodiske oppgaver > Lagerblokkering.
 2. Klikk Ny.
 3. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-4. Velg varen du vil bruke, i listen. 
+4. Velg varen du vil bruke, i listen.
     * Velg et varenummer med fysisk lagerbeholdning som du vil blokkere. Hvis du bruker USMF, kan du velge vare M9201.  
 5. Angi et tall i feltet Antall.
     * Hvis du bruker varen M9201, må du velge mindre enn 200.  
@@ -55,5 +55,4 @@ Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir
 1. Klikk Slett.
 2. Klikk Ja.
 3. Lukk siden.
-
 

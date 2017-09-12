@@ -1,4 +1,4 @@
---- 
+---
 title: Definere prosesser for lageropptelling
 description: "Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprose
 7. Velg en opptellingsgruppe i listen.
     * Her kan du velge en bestemt opptellingsgruppe som skal gjelde for varen i det bestemte lageret som du har valgt. Når tellingen blir utført i dette lageret, overstyrer denne opptellingspolicyen den generelle opptellingspolicyen for varen.  
 8. Klikk Lagre.
-
 

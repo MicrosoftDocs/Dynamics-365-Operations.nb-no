@@ -1,7 +1,7 @@
 ---
 title: "Sporing av varer og råmaterialer i beholdning, produksjon og salg"
 description: "Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser. 
+Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser.
 
 Sporingsfunksjonalitet for varer finnes på **Varesporing**-siden. Delene nedenfor beskriver hvordan du kan bruke varesporing og hva alternativene og begrensninger er.
 
@@ -142,7 +142,4 @@ Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore koprodukter og biprodukter?
 Du kan spore koprodukter, men du kan ikke spore et biprodukt fordi sporingsdimensjoner vanligvis ikke er tilordnet til biprodukter. Når du sporer en vare, inkluderes eventuelle relaterte koprodukter i sporingsdetaljene. En node som inneholder et koprodukt inneholder ordet "koprodukt" i detaljene. Du kan også vise detaljer om et koprodukt ved å velge noden i sporingsdetaljene og deretter klikke hurtigfanen **Produksjon**.
-
-
-
 
