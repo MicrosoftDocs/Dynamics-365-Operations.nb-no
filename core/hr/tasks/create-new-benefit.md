@@ -16,42 +16,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcba94f5f17ffbe5bb02244cb27c03bf99db69c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bef33595a09ea54ba246a04b5a838013c6d65271
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-new-benefit"></a>Opprett en ny fordel
+# <a name="create-a-new-benefit"></a><span data-ttu-id="fcad6-103">Opprett en ny fordel</span><span class="sxs-lookup"><span data-stu-id="fcad6-103">Create a new benefit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.
+<span data-ttu-id="fcad6-104">Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.</span><span class="sxs-lookup"><span data-stu-id="fcad6-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="fcad6-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="fcad6-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="fcad6-106">Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="fcad6-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a>Opprette fordelselementer
-1. Gå til Personale > Fordeler > Oppsett > Fordelselementer.
-2. Klikk Ny.
-3. Skriv inn navnet på typen fordel du oppretter, i Type-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Velg et alternativ i feltet Samtidig registrering.
-    * Hvis du vil begrense ansatte mulighet til å registrere seg i flere medisinske planer, velger du én registrering per type.  
-6. Velg et alternativ i Lønnskategori-feltet.
-7. Klikk kategorien Planer.
-8. Klikk Ny.
-9. Skriv inn en verdi i Plan-feltet.
-10. Skriv inn en verdi i feltet Beskrivelse.
-11. Angi eller velg en verdi i Type-feltet.
-12. Velg et alternativ i Lønnsinnvirkning-feltet.
-13. Klikk Lagre.
+## <a name="create-benefit-elements"></a><span data-ttu-id="fcad6-107">Opprette fordelselementer</span><span class="sxs-lookup"><span data-stu-id="fcad6-107">Create benefit elements</span></span>
+1. <span data-ttu-id="fcad6-108">Gå til Personale > Fordeler > Oppsett > Fordelselementer.</span><span class="sxs-lookup"><span data-stu-id="fcad6-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
+2. <span data-ttu-id="fcad6-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="fcad6-109">Click New.</span></span>
+3. <span data-ttu-id="fcad6-110">Skriv inn navnet på typen fordel du oppretter, i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="fcad6-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="fcad6-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="fcad6-112">Velg et alternativ i feltet Samtidig registrering.</span><span class="sxs-lookup"><span data-stu-id="fcad6-112">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="fcad6-113">Hvis du vil begrense ansatte mulighet til å registrere seg i flere medisinske planer, velger du én registrering per type.</span><span class="sxs-lookup"><span data-stu-id="fcad6-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="fcad6-114">Velg et alternativ i Lønnskategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-114">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="fcad6-115">Klikk kategorien Planer.</span><span class="sxs-lookup"><span data-stu-id="fcad6-115">Click the Plans tab.</span></span>
+8. <span data-ttu-id="fcad6-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="fcad6-116">Click New.</span></span>
+9. <span data-ttu-id="fcad6-117">Skriv inn en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-117">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="fcad6-118">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="fcad6-118">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="fcad6-119">Angi eller velg en verdi i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-119">In the Type field, enter or select a value.</span></span>
+12. <span data-ttu-id="fcad6-120">Velg et alternativ i Lønnsinnvirkning-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-120">In the Payroll impact field, select an option.</span></span>
+13. <span data-ttu-id="fcad6-121">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="fcad6-121">Click Save.</span></span>
 
-## <a name="create-a-benefit"></a>Opprett en fordel
-1. Lukk siden.
-2. Gå til Personale > Fordeler > Fordeler.
-3. Klikk Ny for å åpne nedtrekksdialogen.
-4. Angi eller velg en verdi i Plan-feltet.
-5. Angi eller velg en verdi i feltet Alternativ.
-6. Angi dato og klokkeslett i Gyldig-feltet.
-7. Klikk Opprett fordel.
+## <a name="create-a-benefit"></a><span data-ttu-id="fcad6-122">Opprett en fordel</span><span class="sxs-lookup"><span data-stu-id="fcad6-122">Create a benefit</span></span>
+1. <span data-ttu-id="fcad6-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="fcad6-123">Close the page.</span></span>
+2. <span data-ttu-id="fcad6-124">Gå til Personale > Fordeler > Fordeler.</span><span class="sxs-lookup"><span data-stu-id="fcad6-124">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="fcad6-125">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="fcad6-125">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="fcad6-126">Angi eller velg en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-126">In the Plan field, enter or select a value.</span></span>
+5. <span data-ttu-id="fcad6-127">Angi eller velg en verdi i feltet Alternativ.</span><span class="sxs-lookup"><span data-stu-id="fcad6-127">In the Option field, enter or select a value.</span></span>
+6. <span data-ttu-id="fcad6-128">Angi dato og klokkeslett i Gyldig-feltet.</span><span class="sxs-lookup"><span data-stu-id="fcad6-128">In the Effective field, enter a date and time.</span></span>
+7. <span data-ttu-id="fcad6-129">Klikk Opprett fordel.</span><span class="sxs-lookup"><span data-stu-id="fcad6-129">Click Create benefit.</span></span>
 
 

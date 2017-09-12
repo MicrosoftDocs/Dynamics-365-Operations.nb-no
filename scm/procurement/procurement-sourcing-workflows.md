@@ -19,61 +19,61 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 67bdb8436ff379b0e55cfe1660597e8f93235eeb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 80853a06e599786e2dcaf049ac733c47dfe4d9a5
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
+# <a name="procurement-and-sourcing-workflows"></a><span data-ttu-id="80149-104">Arbeidsflyter for innkjøp og leverandører</span><span class="sxs-lookup"><span data-stu-id="80149-104">Procurement and sourcing workflows</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen. Hvis du vil konfigurere en godkjenningsprosess, kan du opprette en arbeidsflyt.
+<span data-ttu-id="80149-105">Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen.</span><span class="sxs-lookup"><span data-stu-id="80149-105">Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction.</span></span> <span data-ttu-id="80149-106">Hvis du vil konfigurere en godkjenningsprosess, kan du opprette en arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="80149-106">To set up an approval process, you can create a workflow.</span></span>
 
-En arbeidsflyt representerer en forretningsprosess. Den definerer hvordan et dokument går gjennom systemet, og angir hvem som må utføre en oppgave eller godkjenne et dokument. Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
--   **Konsekvente prosesser** – Du kan definere godkjenningsprosessen for bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter. Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.
--   **Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for en bestemt arbeidsflytforekomst. Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.
--   **Sentralisert arbeidsliste**– Brukere kan vise en sentralisert arbeidsliste for å vise arbeidsflytoppgavene og -godkjenningene som er tilordnet på tvers av alle arbeidsflyter de deltar i. Dette er tilgjengelig på siden Arbeidselementer.
+<span data-ttu-id="80149-107">En arbeidsflyt representerer en forretningsprosess.</span><span class="sxs-lookup"><span data-stu-id="80149-107">A workflow represents a business process.</span></span> <span data-ttu-id="80149-108">Den definerer hvordan et dokument går gjennom systemet, og angir hvem som må utføre en oppgave eller godkjenne et dokument.</span><span class="sxs-lookup"><span data-stu-id="80149-108">It defines how a document flows through the system and indicates who must complete a task or approve a document.</span></span> <span data-ttu-id="80149-109">Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:</span><span class="sxs-lookup"><span data-stu-id="80149-109">There are several benefits of using the workflow system in your organization:</span></span>
+-   <span data-ttu-id="80149-110">**Konsekvente prosesser** – Du kan definere godkjenningsprosessen for bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter.</span><span class="sxs-lookup"><span data-stu-id="80149-110">**Consistent processes**— You can define the approval process for specific documents, such as purchase requisitions and expense reports.</span></span> <span data-ttu-id="80149-111">Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.</span><span class="sxs-lookup"><span data-stu-id="80149-111">Using the workflow system helps to ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+-   <span data-ttu-id="80149-112">**Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for en bestemt arbeidsflytforekomst.</span><span class="sxs-lookup"><span data-stu-id="80149-112">**Process visibility**— You can track the status, history, and performance metrics of a specific workflow instance.</span></span> <span data-ttu-id="80149-113">Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.</span><span class="sxs-lookup"><span data-stu-id="80149-113">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+-   <span data-ttu-id="80149-114">**Sentralisert arbeidsliste**– Brukere kan vise en sentralisert arbeidsliste for å vise arbeidsflytoppgavene og -godkjenningene som er tilordnet på tvers av alle arbeidsflyter de deltar i.</span><span class="sxs-lookup"><span data-stu-id="80149-114">**Centralized work list**— Users can view a centralized work list to view the workflow tasks and approvals assigned to them across all workflows they participate in.</span></span> <span data-ttu-id="80149-115">Dette er tilgjengelig på siden Arbeidselementer.</span><span class="sxs-lookup"><span data-stu-id="80149-115">This is available in the Work items page.</span></span>
 
-## <a name="the-types-of-workflows-that-you-can-create"></a> Arbeidsflyttypene som du kan opprette
-Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
+## <a name="the-types-of-workflows-that-you-can-create"></a><span data-ttu-id="80149-116"> Arbeidsflyttypene som du kan opprette</span><span class="sxs-lookup"><span data-stu-id="80149-116">The types of workflows that you can create</span></span>
+<span data-ttu-id="80149-117">Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.</span><span class="sxs-lookup"><span data-stu-id="80149-117">The following workflow types are available for Procurement and sourcing.</span></span>
 
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
-| **Type**                         | **Bruk denne typen til å gjøre følgende:**                                          |
-| Gjennomgang av innkjøpsrekvisisjon      | Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjoner.            |
-| Gjennomgang av innkjøpsrekvisisjonslinje | Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjonslinjer.       |
-| Bestillingsarbeidsflyt          | Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillinger.     |
-| Bestillingslinjearbeidsflyt     | Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillingslinjer. |
+| <span data-ttu-id="80149-118">**Type**</span><span class="sxs-lookup"><span data-stu-id="80149-118">**Type**</span></span>                         | <span data-ttu-id="80149-119">**Bruk denne typen til å gjøre følgende:**</span><span class="sxs-lookup"><span data-stu-id="80149-119">**Use this type to**</span></span>                                          |
+| <span data-ttu-id="80149-120">Gjennomgang av innkjøpsrekvisisjon</span><span class="sxs-lookup"><span data-stu-id="80149-120">Purchase requisition review</span></span>      | <span data-ttu-id="80149-121">Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjoner.</span><span class="sxs-lookup"><span data-stu-id="80149-121">Create review workflows for purchase requisitions.</span></span>            |
+| <span data-ttu-id="80149-122">Gjennomgang av innkjøpsrekvisisjonslinje</span><span class="sxs-lookup"><span data-stu-id="80149-122">Purchase requisition line review</span></span> | <span data-ttu-id="80149-123">Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjonslinjer.</span><span class="sxs-lookup"><span data-stu-id="80149-123">Create review workflows for purchase requisition lines.</span></span>       |
+| <span data-ttu-id="80149-124">Bestillingsarbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="80149-124">Purchase order workflow</span></span>          | <span data-ttu-id="80149-125">Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillinger.</span><span class="sxs-lookup"><span data-stu-id="80149-125">Create review and approval workflows for purchase orders.</span></span>     |
+| <span data-ttu-id="80149-126">Bestillingslinjearbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="80149-126">Purchase order line workflow</span></span>     | <span data-ttu-id="80149-127">Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillingslinjer.</span><span class="sxs-lookup"><span data-stu-id="80149-127">Create review and approve workflows for purchase order lines.</span></span> |
 
-## <a name="creating-a-workflow"></a>Opprette en arbeidsflyt
-Hvis du vil opprette en arbeidsflyt, kan du gå til Innkjøp og leverandører &gt; Oppsett &gt; Arbeidsflyter for innkjøp og leverandører, og opprette en ny arbeidsflyt ved å velge typen arbeidsflyt som du vil opprette.  
+## <a name="creating-a-workflow"></a><span data-ttu-id="80149-128">Opprette en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="80149-128">Creating a workflow</span></span>
+<span data-ttu-id="80149-129">Hvis du vil opprette en arbeidsflyt, kan du gå til Innkjøp og leverandører &gt; Oppsett &gt; Arbeidsflyter for innkjøp og leverandører, og opprette en ny arbeidsflyt ved å velge typen arbeidsflyt som du vil opprette.</span><span class="sxs-lookup"><span data-stu-id="80149-129">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
-Du kan dra arbeidsflytelementer til utformingen og koble elementene til en flyt på arbeidsflytlerretet. Arbeidsflytelementene må konfigureres. For arbeidsflytelementer for godkjenning og oppgave kan du konfigurere hvilken deltaker som skal utføre handlingen.
-Deltakertyper
+<span data-ttu-id="80149-130">Du kan dra arbeidsflytelementer til utformingen og koble elementene til en flyt på arbeidsflytlerretet.</span><span class="sxs-lookup"><span data-stu-id="80149-130">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="80149-131">Arbeidsflytelementene må konfigureres.</span><span class="sxs-lookup"><span data-stu-id="80149-131">The workflow elements should be configured.</span></span> <span data-ttu-id="80149-132">For arbeidsflytelementer for godkjenning og oppgave kan du konfigurere hvilken deltaker som skal utføre handlingen.</span><span class="sxs-lookup"><span data-stu-id="80149-132">For approval and task workflow elements you can configure which participant should take action.</span></span>
+<span data-ttu-id="80149-133">Deltakertyper</span><span class="sxs-lookup"><span data-stu-id="80149-133">Types of participants</span></span>
 ----------------------
 
-Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
+<span data-ttu-id="80149-134">Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="80149-134">You can assign an approval step to the following groups of participants.</span></span>
 
-| Brukergruppe    | Beskrivelse                                                               |
+| <span data-ttu-id="80149-135">Brukergruppe</span><span class="sxs-lookup"><span data-stu-id="80149-135">User group</span></span>    | <span data-ttu-id="80149-136">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="80149-136">Description</span></span>                                                               |
 |---------------|---------------------------------------------------------------------------|
-| Deltaker   | Tilordne godkjenningstrinnet til medlemmer av en gruppe eller rolle.                   |
-| Hierarki     | Tilordne godkjenningstrinnet til brukere i et bestemt organisasjonshierarki. |
-| Arbeidsflytbruker | Tilordne godkjenningstrinnet til brukere av denne arbeidsflyten.                       |
-| Kø         | Tilordne godkjenningstrinnet til en arbeidselementkø.                            |
-| Bruker          | Tilordne godkjenningstrinnet til bestemte brukere.                               |
+| <span data-ttu-id="80149-137">Deltaker</span><span class="sxs-lookup"><span data-stu-id="80149-137">Participant</span></span>   | <span data-ttu-id="80149-138">Tilordne godkjenningstrinnet til medlemmer av en gruppe eller rolle.</span><span class="sxs-lookup"><span data-stu-id="80149-138">Assign the approval step to members of a group or role.</span></span>                   |
+| <span data-ttu-id="80149-139">Hierarki</span><span class="sxs-lookup"><span data-stu-id="80149-139">Hierarchy</span></span>     | <span data-ttu-id="80149-140">Tilordne godkjenningstrinnet til brukere i et bestemt organisasjonshierarki.</span><span class="sxs-lookup"><span data-stu-id="80149-140">Assign the approval step to users in a specific organizational hierarchy.</span></span> |
+| <span data-ttu-id="80149-141">Arbeidsflytbruker</span><span class="sxs-lookup"><span data-stu-id="80149-141">Workflow user</span></span> | <span data-ttu-id="80149-142">Tilordne godkjenningstrinnet til brukere av denne arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="80149-142">Assign the approval step to users of this workflow.</span></span>                       |
+| <span data-ttu-id="80149-143">Kø</span><span class="sxs-lookup"><span data-stu-id="80149-143">Queue</span></span>         | <span data-ttu-id="80149-144">Tilordne godkjenningstrinnet til en arbeidselementkø.</span><span class="sxs-lookup"><span data-stu-id="80149-144">Assign the approval step to a work item queue.</span></span>                            |
+| <span data-ttu-id="80149-145">Bruker</span><span class="sxs-lookup"><span data-stu-id="80149-145">User</span></span>          | <span data-ttu-id="80149-146">Tilordne godkjenningstrinnet til bestemte brukere.</span><span class="sxs-lookup"><span data-stu-id="80149-146">Assign the approval step to specific users.</span></span>                               |
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="80149-147">Se også</span><span class="sxs-lookup"><span data-stu-id="80149-147">See also</span></span>
 --------
 
-[Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+[<span data-ttu-id="80149-148">Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner</span><span class="sxs-lookup"><span data-stu-id="80149-148">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
+[<span data-ttu-id="80149-149">Arbeidsflyt for innkjøpsrekvisisjon</span><span class="sxs-lookup"><span data-stu-id="80149-149">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
 
 

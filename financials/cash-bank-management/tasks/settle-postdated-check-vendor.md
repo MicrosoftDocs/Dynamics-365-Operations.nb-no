@@ -16,39 +16,39 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 76c948ba99f9b4fa9200c2541c221c4ca86414e4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ac3fcad40e2d71dbde5fab8d1aa77cbfa879cdb1
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="settle-a-postdated-check-for-a-vendor"></a>Utligne en etterdatert sjekk for en leverandør
+# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="30c7d-103">Utligne en etterdatert sjekk for en leverandør</span><span class="sxs-lookup"><span data-stu-id="30c7d-103">Settle a postdated check for a vendor</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Utlign en etterdatert sjekk som er utstedt til en leverandør, når banken har avregnet sjekktransaksjonen etter at sjekken er forfalt og avregnet av banken. 
+<span data-ttu-id="30c7d-104">Utlign en etterdatert sjekk som er utstedt til en leverandør, når banken har avregnet sjekktransaksjonen etter at sjekken er forfalt og avregnet av banken.</span><span class="sxs-lookup"><span data-stu-id="30c7d-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
 
-Fullfør den følgende prosedyren før du starter en ny.
+<span data-ttu-id="30c7d-105">Fullfør den følgende prosedyren før du starter en ny.</span><span class="sxs-lookup"><span data-stu-id="30c7d-105">Complete the following procedures before you start this one.</span></span>
 
-1) Definere etterdaterte sjekker
+1) <span data-ttu-id="30c7d-106">Definere etterdaterte sjekker</span><span class="sxs-lookup"><span data-stu-id="30c7d-106">Set up postdated checks</span></span>
 
-2) Registrere og postere en etterdatert sjekk for en leverandør
+2) <span data-ttu-id="30c7d-107">Registrere og postere en etterdatert sjekk for en leverandør</span><span class="sxs-lookup"><span data-stu-id="30c7d-107">Register and post a postdated check for a vendor</span></span>
 
 
 
-Rollen til denne prosedyren er kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+<span data-ttu-id="30c7d-108">Rollen til denne prosedyren er kasserer.</span><span class="sxs-lookup"><span data-stu-id="30c7d-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="30c7d-109">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="30c7d-109">This procedure uses the USMF demo company.</span></span>
 
-1. Gå til Leverandører > Betalinger > Etterdaterte sjekker for leverandør.
-2. Klikk Utlign.
-3. Klikk Utligne avregningsoppføringer.
-    * Utlign leverandørkontoen for sjekktransaksjonen.  
-4. Lukk siden.
-5. Gå til Økonomimodul > Journaloppføringer > Økonomijournaler.
-6. Velg Alle i Vis-feltet.
-7. Merk eller fjern merket for Bare vis brukeropprettet.
-8. Merk den valgte raden i listen.
-9. Klikk Linjer.
-10. Klikk Bilag.
-11. Lukk siden.
+1. <span data-ttu-id="30c7d-110">Gå til Leverandører > Betalinger > Etterdaterte sjekker for leverandør.</span><span class="sxs-lookup"><span data-stu-id="30c7d-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
+2. <span data-ttu-id="30c7d-111">Klikk Utlign.</span><span class="sxs-lookup"><span data-stu-id="30c7d-111">Click Settle.</span></span>
+3. <span data-ttu-id="30c7d-112">Klikk Utligne avregningsoppføringer.</span><span class="sxs-lookup"><span data-stu-id="30c7d-112">Click Settle clearing entries.</span></span>
+    * <span data-ttu-id="30c7d-113">Utlign leverandørkontoen for sjekktransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="30c7d-113">Settle the vendor account for the check transaction.</span></span>  
+4. <span data-ttu-id="30c7d-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="30c7d-114">Close the page.</span></span>
+5. <span data-ttu-id="30c7d-115">Gå til Økonomimodul > Journaloppføringer > Økonomijournaler.</span><span class="sxs-lookup"><span data-stu-id="30c7d-115">Go to General ledger > Journal entries > General journals.</span></span>
+6. <span data-ttu-id="30c7d-116">Velg Alle i Vis-feltet.</span><span class="sxs-lookup"><span data-stu-id="30c7d-116">In the Show field, select 'All'.</span></span>
+7. <span data-ttu-id="30c7d-117">Merk eller fjern merket for Bare vis brukeropprettet.</span><span class="sxs-lookup"><span data-stu-id="30c7d-117">Select or clear the Show user-created only check box.</span></span>
+8. <span data-ttu-id="30c7d-118">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="30c7d-118">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="30c7d-119">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="30c7d-119">Click Lines.</span></span>
+10. <span data-ttu-id="30c7d-120">Klikk Bilag.</span><span class="sxs-lookup"><span data-stu-id="30c7d-120">Click Voucher.</span></span>
+11. <span data-ttu-id="30c7d-121">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="30c7d-121">Close the page.</span></span>
 
 

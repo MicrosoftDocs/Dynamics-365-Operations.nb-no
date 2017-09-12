@@ -16,36 +16,36 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ac162fe6bc5354e688b63f726acb4b7c802857b2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0f711d2e18a13ab972e548d3304652dee3f2e406
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Endre avskrivningskonvensjoner for flere anleggsmidler
+# <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a><span data-ttu-id="6e308-103">Endre avskrivningskonvensjoner for flere anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="6e308-103">Change depreciation conventions for multiple fixed assets</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dette skjemaet oppdaterer avskrivningskonvensjonen for en angitt gruppe anleggsmidler. Denne oppgaveveiledningen bruker USMF demo firmaet.
+<span data-ttu-id="6e308-104">Dette skjemaet oppdaterer avskrivningskonvensjonen for en angitt gruppe anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="6e308-104">This task updates the depreciation convention for a specified fixed asset group.</span></span> <span data-ttu-id="6e308-105">Denne oppgaveveiledningen bruker USMF demo firmaet.</span><span class="sxs-lookup"><span data-stu-id="6e308-105">This task guide uses the USMF demo company.</span></span>
 
-1. Gå til Anleggsmidler > Periodiske oppgaver > Masseoppdatering
-2. Klikk rullegardinknappen i feltet Avskrivningstablå for å åpne oppslaget.
-3. Klikk koblingen i den valgte raden i listen.
-4. Angi en dato i feltet Plassert nær tjenestens start.
-5. Angi en dato i feltet Plassert nær tjenestens slutt.
-    * Bare anleggsmidler som hører inn under avskrivningstablået du valgte, og som er tatt i bruk, vil bli oppdatert.  
-6. Velg et alternativ i feltet Gjeldende avskrivningskonvensjon.
-    * Bare anleggsmidler som har den gjeldende avskrivningskonvensjonen, oppdateres.  
-7. Velg et alternativ i feltet Ny avskrivningskonvensjon.
-    * Bekreft at rapporten skrives ut på det valgte målet.  
-8. Utvid delen Poster som skal inkluderes.
-9. Klikk Filter.
-10. Velg anleggsmiddelgruppen fra listen.
-11. Klikk rullegardinknappen i Kriterier-feltet for å åpne oppslaget.
-12. Velg ønsket anleggsmiddelgruppe.
-13. Klikk koblingen i den valgte raden i listen.
-14. Klikk OK.
-15. Klikk OK.
-    *  Resultatene av prosessen vises i masseoppdateringsrapporten.     
+1. <span data-ttu-id="6e308-106">Gå til Anleggsmidler > Periodiske oppgaver > Masseoppdatering</span><span class="sxs-lookup"><span data-stu-id="6e308-106">Go to Fixed assets > Periodic tasks > Mass update</span></span>
+2. <span data-ttu-id="6e308-107">Klikk rullegardinknappen i feltet Avskrivningstablå for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="6e308-107">In the Depreciation book field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="6e308-108">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="6e308-108">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="6e308-109">Angi en dato i feltet Plassert nær tjenestens start.</span><span class="sxs-lookup"><span data-stu-id="6e308-109">In the Placed in service start field, enter a date.</span></span>
+5. <span data-ttu-id="6e308-110">Angi en dato i feltet Plassert nær tjenestens slutt.</span><span class="sxs-lookup"><span data-stu-id="6e308-110">In the Placed in service end field, enter a date.</span></span>
+    * <span data-ttu-id="6e308-111">Bare anleggsmidler som hører inn under avskrivningstablået du valgte, og som er tatt i bruk, vil bli oppdatert.</span><span class="sxs-lookup"><span data-stu-id="6e308-111">Only assets that are a part of the select depreciation book and that have been placed in service between these dates will be updated.</span></span>  
+6. <span data-ttu-id="6e308-112">Velg et alternativ i feltet Gjeldende avskrivningskonvensjon.</span><span class="sxs-lookup"><span data-stu-id="6e308-112">In the Current depreciation convention field, select an option.</span></span>
+    * <span data-ttu-id="6e308-113">Bare anleggsmidler som har den gjeldende avskrivningskonvensjonen, oppdateres.</span><span class="sxs-lookup"><span data-stu-id="6e308-113">Only assets that have the current depreciation convention will be updated.</span></span>  
+7. <span data-ttu-id="6e308-114">Velg et alternativ i feltet Ny avskrivningskonvensjon.</span><span class="sxs-lookup"><span data-stu-id="6e308-114">In the New depreciation convention field, select an option.</span></span>
+    * <span data-ttu-id="6e308-115">Bekreft at rapporten skrives ut på det valgte målet.</span><span class="sxs-lookup"><span data-stu-id="6e308-115">Verify the report will print to the desired destination.</span></span>  
+8. <span data-ttu-id="6e308-116">Utvid delen Poster som skal inkluderes.</span><span class="sxs-lookup"><span data-stu-id="6e308-116">Expand the Records to include section.</span></span>
+9. <span data-ttu-id="6e308-117">Klikk Filter.</span><span class="sxs-lookup"><span data-stu-id="6e308-117">Click Filter.</span></span>
+10. <span data-ttu-id="6e308-118">Velg anleggsmiddelgruppen fra listen.</span><span class="sxs-lookup"><span data-stu-id="6e308-118">In the list, select the Fixed asset group.</span></span>
+11. <span data-ttu-id="6e308-119">Klikk rullegardinknappen i Kriterier-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="6e308-119">In the Criteria field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="6e308-120">Velg ønsket anleggsmiddelgruppe.</span><span class="sxs-lookup"><span data-stu-id="6e308-120">Select the desired Fixed asset group.</span></span>
+13. <span data-ttu-id="6e308-121">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="6e308-121">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="6e308-122">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6e308-122">Click OK.</span></span>
+15. <span data-ttu-id="6e308-123">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6e308-123">Click OK.</span></span>
+    *  <span data-ttu-id="6e308-124">Resultatene av prosessen vises i masseoppdateringsrapporten.</span><span class="sxs-lookup"><span data-stu-id="6e308-124">Results of the process are shown on the Mass update report.</span></span>     
 
 

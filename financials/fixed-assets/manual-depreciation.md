@@ -16,65 +16,65 @@ ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 75d176623b4fdf2198440becd0345628f873f6da
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: e43b9397dd4e362eff9d78f302732e6bcc53d1db
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="manual-depreciation"></a>Manuell avskrivning
+# <a name="manual-depreciation"></a><span data-ttu-id="d5e1c-103">Manuell avskrivning</span><span class="sxs-lookup"><span data-stu-id="d5e1c-103">Manual depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.
+<span data-ttu-id="d5e1c-104">Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-104">This article gives an overview of the manual depreciation method.</span></span>
 
-Når du definerer en avskrivningsprofil for anleggsmiddel og velger **Manuelt** i feltet **Metode** på siden **Avskrivningsprofiler**, bestemmes avskrivningen for anleggsmidler som er tilordnet avskrivningsprofilen, av prosenten du angir for hvert intervall i kalenderåret. Intervallene du angir prosenter for, posteres i henhold til verdien du velger i **Periodefrekvens** i **Generelt**-hurtigkategorien av på siden **Avskrivningsprofiler**. Her er verdiene du kan velge:
+<span data-ttu-id="d5e1c-105">Når du definerer en avskrivningsprofil for anleggsmiddel og velger **Manuelt** i feltet **Metode** på siden **Avskrivningsprofiler**, bestemmes avskrivningen for anleggsmidler som er tilordnet avskrivningsprofilen, av prosenten du angir for hvert intervall i kalenderåret.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-105">When you set up a fixed asset depreciation profile and select **Manual** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is determined by the percentage that you enter for each interval in the calendar year.</span></span> <span data-ttu-id="d5e1c-106">Intervallene du angir prosenter for, posteres i henhold til verdien du velger i **Periodefrekvens** i **Generelt**-hurtigkategorien av på siden **Avskrivningsprofiler**.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-106">The intervals that you set up percentages for are posted according to the value that you select in the **Period frequency** field on the **General** FastTab of the **Depreciation profiles** page.</span></span> <span data-ttu-id="d5e1c-107">Her er verdiene du kan velge:</span><span class="sxs-lookup"><span data-stu-id="d5e1c-107">Here are the values that you can select:</span></span>
 
--   Årlig
--   Månedlig
--   Kvartalsvis
--   Halvårlig
--   Daglig
+-   <span data-ttu-id="d5e1c-108">Årlig</span><span class="sxs-lookup"><span data-stu-id="d5e1c-108">Yearly</span></span>
+-   <span data-ttu-id="d5e1c-109">Månedlig</span><span class="sxs-lookup"><span data-stu-id="d5e1c-109">Monthly</span></span>
+-   <span data-ttu-id="d5e1c-110">Kvartalsvis</span><span class="sxs-lookup"><span data-stu-id="d5e1c-110">Quarterly</span></span>
+-   <span data-ttu-id="d5e1c-111">Halvårlig</span><span class="sxs-lookup"><span data-stu-id="d5e1c-111">Half-Yearly</span></span>
+-   <span data-ttu-id="d5e1c-112">Daglig</span><span class="sxs-lookup"><span data-stu-id="d5e1c-112">Daily</span></span>
 
-Når du velger posteringsfrekvens, klikker du **Manuelle planer** og angir prosenter for hvert posteringsintervall. De manuelle planene og posteringsintervallene definerer sammen avskrivningsbeløpet, som vist i eksemplene senere i denne artikkelen. Manuell avskrivning beregnes alltid som en prosent av anskaffelsesprisen. For manuell avskrivning inneholder ikke prosentene du angir i intervallene, totalt 100 prosent. Manuell avskrivning er en fleksibel avskrivningsmetode som ofte brukes til å definere en ekstraordinær avskrivningsprofil på siden **Tablåer**, for eksempel en avskrivning som ikke er periodisk, for bestemte formål (for eksempel avgift).
+<span data-ttu-id="d5e1c-113">Når du velger posteringsfrekvens, klikker du **Manuelle planer** og angir prosenter for hvert posteringsintervall.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-113">After you select the period frequency, click **Manual schedules**, and set up percentages for each posting interval.</span></span> <span data-ttu-id="d5e1c-114">De manuelle planene og posteringsintervallene definerer sammen avskrivningsbeløpet, som vist i eksemplene senere i denne artikkelen.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-114">Together, the manual schedules and the posting intervals define the depreciation amount, as shown in the examples later in this article.</span></span> <span data-ttu-id="d5e1c-115">Manuell avskrivning beregnes alltid som en prosent av anskaffelsesprisen.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-115">Manual depreciation is always calculated as a percentage of the acquisition price.</span></span> <span data-ttu-id="d5e1c-116">For manuell avskrivning inneholder ikke prosentene du angir i intervallene, totalt 100 prosent.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-116">For manual depreciation, the percentages that you enter in the intervals of the depreciation don't have to add up to 100 percent.</span></span> <span data-ttu-id="d5e1c-117">Manuell avskrivning er en fleksibel avskrivningsmetode som ofte brukes til å definere en ekstraordinær avskrivningsprofil på siden **Tablåer**, for eksempel en avskrivning som ikke er periodisk, for bestemte formål (for eksempel avgift).</span><span class="sxs-lookup"><span data-stu-id="d5e1c-117">Manual depreciation is a flexible depreciation method that is often used to define an extraordinary depreciation profile on the **Books** page, such as a non-periodic depreciation for special purposes (for example, tax).</span></span>
 
-## <a name="examples"></a>Eksempler
-Anskaffelsespris: 11 000,00 Forventet skrapverdi: 1000,00 Følgende tabell viser intervallene og prosentene du definerer på siden **Planer for anleggsmidlets avskrivningsprofil**.
+## <a name="examples"></a><span data-ttu-id="d5e1c-118">Eksempler</span><span class="sxs-lookup"><span data-stu-id="d5e1c-118">Examples</span></span>
+<span data-ttu-id="d5e1c-119">Anskaffelsespris: 11 000,00 Forventet skrapverdi: 1000,00 Følgende tabell viser intervallene og prosentene du definerer på siden **Planer for anleggsmidlets avskrivningsprofil**.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-119">Acquisition price: 11,000.00 Expected scrap value: 1,000.00 The following table shows the intervals and percentages that you set up on the **Fixed asset depreciation profile schedules** page.</span></span>
 
-| Intervallnummer | Prosent |
+| <span data-ttu-id="d5e1c-120">Intervallnummer</span><span class="sxs-lookup"><span data-stu-id="d5e1c-120">Interval number</span></span> | <span data-ttu-id="d5e1c-121">Prosent</span><span class="sxs-lookup"><span data-stu-id="d5e1c-121">Percentage</span></span> |
 |-----------------|------------|
-| 1               | 10,00      |
-| 2               | 50,00      |
-| 3               | 8,00       |
+| <span data-ttu-id="d5e1c-122">1</span><span class="sxs-lookup"><span data-stu-id="d5e1c-122">1</span></span>               | <span data-ttu-id="d5e1c-123">10,00</span><span class="sxs-lookup"><span data-stu-id="d5e1c-123">10.00</span></span>      |
+| <span data-ttu-id="d5e1c-124">2</span><span class="sxs-lookup"><span data-stu-id="d5e1c-124">2</span></span>               | <span data-ttu-id="d5e1c-125">50,00</span><span class="sxs-lookup"><span data-stu-id="d5e1c-125">50.00</span></span>      |
+| <span data-ttu-id="d5e1c-126">3</span><span class="sxs-lookup"><span data-stu-id="d5e1c-126">3</span></span>               | <span data-ttu-id="d5e1c-127">8,00</span><span class="sxs-lookup"><span data-stu-id="d5e1c-127">8.00</span></span>       |
 
-Følgende tabell viser hvordan avskrivning for hvert intervall beregnes.
+<span data-ttu-id="d5e1c-128">Følgende tabell viser hvordan avskrivning for hvert intervall beregnes.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-128">The following table shows how the depreciation for each interval is calculated.</span></span>
 
-|  Intervallnummer | Beregning av årlig avskrivningsbeløp | Netto bokført verdi på slutten av intervallet |
+|  <span data-ttu-id="d5e1c-129">Intervallnummer</span><span class="sxs-lookup"><span data-stu-id="d5e1c-129">Interval number</span></span> | <span data-ttu-id="d5e1c-130">Beregning av årlig avskrivningsbeløp</span><span class="sxs-lookup"><span data-stu-id="d5e1c-130">Calculation of the yearly depreciation amount</span></span> | <span data-ttu-id="d5e1c-131">Netto bokført verdi på slutten av intervallet</span><span class="sxs-lookup"><span data-stu-id="d5e1c-131">Net book value at the end of the interval</span></span> |
 |------------------|-----------------------------------------------|-------------------------------------------|
-| 1                | (11 000 – 1 000) × 10 % = 1 000                | 10 000 (11 000 – 1 000)                   |
-| 2                | (11 000 – 1 000) × 50 % = 5 000                | 5 000 (10 000 – 5 000)                    |
-| 3                | (11 000 – 1 000) × 8 % = 800                   | 4 200 (5 000 – 800)                       |
+| <span data-ttu-id="d5e1c-132">1</span><span class="sxs-lookup"><span data-stu-id="d5e1c-132">1</span></span>                | <span data-ttu-id="d5e1c-133">(11 000 – 1 000) × 10 % = 1 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-133">(11,000 – 1,000) × 10% = 1,000</span></span>                | <span data-ttu-id="d5e1c-134">10 000 (11 000 – 1 000)</span><span class="sxs-lookup"><span data-stu-id="d5e1c-134">10,000 (11,000 – 1,000)</span></span>                   |
+| <span data-ttu-id="d5e1c-135">2</span><span class="sxs-lookup"><span data-stu-id="d5e1c-135">2</span></span>                | <span data-ttu-id="d5e1c-136">(11 000 – 1 000) × 50 % = 5 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-136">(11,000 – 1,000) × 50% = 5,000</span></span>                | <span data-ttu-id="d5e1c-137">5 000 (10 000 – 5 000)</span><span class="sxs-lookup"><span data-stu-id="d5e1c-137">5,000 (10,000 – 5,000)</span></span>                    |
+| <span data-ttu-id="d5e1c-138">3</span><span class="sxs-lookup"><span data-stu-id="d5e1c-138">3</span></span>                | <span data-ttu-id="d5e1c-139">(11 000 – 1 000) × 8 % = 800</span><span class="sxs-lookup"><span data-stu-id="d5e1c-139">(11,000 – 1,000) × 8% = 800</span></span>                   | <span data-ttu-id="d5e1c-140">4 200 (5 000 – 800)</span><span class="sxs-lookup"><span data-stu-id="d5e1c-140">4,200 (5,000 – 800)</span></span>                       |
 
-Hvis du velger **Månedlig** i feltet**Periodefrekvens**, må du definere 12 manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for de to første intervallene.
+<span data-ttu-id="d5e1c-141">Hvis du velger **Månedlig** i feltet**Periodefrekvens**, må du definere 12 manuelle planleggingsintervaller.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-141">If you select **Monthly** in the **Period frequency** field, you set up 12 manual schedule intervals.</span></span> <span data-ttu-id="d5e1c-142">Følgende tabell viser avskrivningsbeløpene for de to første intervallene.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-142">The following table shows the depreciation amounts for the first two intervals.</span></span>
 
-| Intervall | Avskrivningsbeløp            |
+| <span data-ttu-id="d5e1c-143">Intervall</span><span class="sxs-lookup"><span data-stu-id="d5e1c-143">Interval</span></span> | <span data-ttu-id="d5e1c-144">Avskrivningsbeløp</span><span class="sxs-lookup"><span data-stu-id="d5e1c-144">Depreciation amount</span></span>            |
 |----------|--------------------------------|
-| Januar  | (11 000 – 1 000) × 10 % = 1 000 |
-| Februar | (11 000 – 1 000) × 50 % = 5 000 |
+| <span data-ttu-id="d5e1c-145">Januar</span><span class="sxs-lookup"><span data-stu-id="d5e1c-145">January</span></span>  | <span data-ttu-id="d5e1c-146">(11 000 – 1 000) × 10 % = 1 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-146">(11,000 – 1,000) × 10% = 1,000</span></span> |
+| <span data-ttu-id="d5e1c-147">Februar</span><span class="sxs-lookup"><span data-stu-id="d5e1c-147">February</span></span> | <span data-ttu-id="d5e1c-148">(11 000 – 1 000) × 50 % = 5 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-148">(11,000 – 1,000) × 50% = 5,000</span></span> |
 
-Hvis du velger **Halvårlig** i ****Periodefrekvens**-feltet**, må du definere to manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for disse intervallene.
+<span data-ttu-id="d5e1c-149">Hvis du velger **Halvårlig** i ****Periodefrekvens**-feltet**, må du definere to manuelle planleggingsintervaller.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-149">If you select **Half-Yearly** in the ****Period frequency** field**, you set up two manual schedule intervals.</span></span> <span data-ttu-id="d5e1c-150">Følgende tabell viser avskrivningsbeløpene for disse intervallene.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-150">The following table shows the depreciation amounts for those two intervals.</span></span>
 
-| Intervall    | Avskrivningsbeløp            |
+| <span data-ttu-id="d5e1c-151">Intervall</span><span class="sxs-lookup"><span data-stu-id="d5e1c-151">Interval</span></span>    | <span data-ttu-id="d5e1c-152">Avskrivningsbeløp</span><span class="sxs-lookup"><span data-stu-id="d5e1c-152">Depreciation amount</span></span>            |
 |-------------|--------------------------------|
-| 30. juni     | (11 000 – 1 000) × 10 % = 1 000 |
-| 31. desember | (11 000 – 1 000) × 50 % = 5 000 |
+| <span data-ttu-id="d5e1c-153">30. juni</span><span class="sxs-lookup"><span data-stu-id="d5e1c-153">June 30</span></span>     | <span data-ttu-id="d5e1c-154">(11 000 – 1 000) × 10 % = 1 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-154">(11,000 – 1,000) × 10% = 1,000</span></span> |
+| <span data-ttu-id="d5e1c-155">31. desember</span><span class="sxs-lookup"><span data-stu-id="d5e1c-155">December 31</span></span> | <span data-ttu-id="d5e1c-156">(11 000 – 1 000) × 50 % = 5 000</span><span class="sxs-lookup"><span data-stu-id="d5e1c-156">(11,000 – 1,000) × 50% = 5,000</span></span> |
 
-Den totale prosenten for alle intervallene behøver ikke å være 100. Imidlertid du mottar en melding hvis verdien i feltet **Kumulert prosent** på siden **Planer for anleggsmidlets avskrivningsprofil** ikke er **100**.
+<span data-ttu-id="d5e1c-157">Den totale prosenten for alle intervallene behøver ikke å være 100.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-157">The total of percentages for all intervals doesn't have to be 100.</span></span> <span data-ttu-id="d5e1c-158">Imidlertid du mottar en melding hvis verdien i feltet **Kumulert prosent** på siden **Planer for anleggsmidlets avskrivningsprofil** ikke er **100**.</span><span class="sxs-lookup"><span data-stu-id="d5e1c-158">However, you receive a message if the value in the **Cumulative percentage** field on the **Fixed asset depreciation profile schedules** page isn't **100**.</span></span>
 
 
 

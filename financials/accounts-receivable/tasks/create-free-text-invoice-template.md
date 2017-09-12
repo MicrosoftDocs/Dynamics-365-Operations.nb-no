@@ -16,52 +16,52 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7382c5ddc5d0972c8756b64ca7cc4e62073c367e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e9c9811b348d81cd735c5b75ca48e0a56a8d52be
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-free-text-invoice-template"></a>Opprette en mal for fritekstfaktura
+# <a name="create-a-free-text-invoice-template"></a><span data-ttu-id="c8a6f-103">Opprette en mal for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="c8a6f-103">Create a free text invoice template</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne registreringen bruker demonstrasjonsfirmaet USMF. Registreringen er ment for brukeren som er ansvarlig for administrasjon og behandling av fakturaer for kunder.
+<span data-ttu-id="c8a6f-104">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="c8a6f-105">Registreringen er ment for brukeren som er ansvarlig for administrasjon og behandling av fakturaer for kunder.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-105">The recording is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 
-1. Gå til Kunder > Fakturaer > Gjentakende fakturaer > Mallinjer for fritekstfaktura.
-    * Bruk dette skjemaet til å opprette maler for fritekstfaktura som kan inneholde fakturalinjer, tillegg, en regnskapsdistribusjonsmal og finanskontoinformasjon.  
-2. Klikk Ny for å opprette en ny fritekstfakturamal.
-3. Angi en verdi i Malnavn-feltet.
-    * "Malnavn" identifiserer unikt en mal for fritekstfaktura. To maler kan ikke ha samme malnavn.  
-4. Angi en beskrivelse av malen i Beskrivelse-feltet.
-5. Utvid kategorien Fakturalinjer.
-6. I Beskrivelse-feltet angir du en beskrivelse av fakturalinjen.
-7. I Hovedkonto-feltet velger du en inntektskonto.
-    * Du kan velge motposteringskontoen for en kundekreditt for det totale fakturabeløpet på Kundeposteringsprofiler-siden.  
-8. Klikk rullegardinknappen i feltet Mva-gruppe for å åpne oppslaget.
-    * Mva-gruppen for gjeldende fakturalinje er standard mva-gruppen for kundekontoen.  
-9. Klikk koblingen i den valgte raden i listen.
-10. I feltet Vareavgiftsgruppe velger du mva-gruppen for vare for den gjeldende fakturalinjen.
-11. Klikk koblingen i den valgte raden i listen.
-12. I Enhetspris-feltet angir eller viser du prisen per enhet for fakturalinjen.
-    * Dette beløpet multipliseres med Antall-feltet for å bestemme fakturalinjebeløpet.  
-13. Legg til en ny linje i malen for fritekstfaktura.
-14. I Beskrivelse-feltet angir du en beskrivelse av fakturalinjen.
-15. I Hovedkonto-feltet velger du en inntektskonto.
-    * Du kan velge motposteringskontoen for en kundekreditt for det totale fakturabeløpet på Kundeposteringsprofiler-siden.  
-16. Klikk rullegardinknappen i feltet Mva-gruppe for å åpne oppslaget.
-    * Mva-gruppen for gjeldende fakturalinje er standard mva-gruppen for kundekontoen.  
-17. Klikk koblingen i den valgte raden i listen.
-18. Klikk rullegardinknappen i feltet Merverdiavgiftsgruppe for vare: for å åpne oppslaget.
-    * Mva-gruppen for varesalg for den gjeldende fakturalinjen.  
-19. Klikk koblingen i den valgte raden i listen.
-20. Angi eller vis antall enheter for fakturalinjen.
-    * Dette nummeret multipliseres med verdien i Enhetspris-feltet for å bestemme fakturalinjebeløpet.  
-21. Angi eller vis prisen per enhet for fakturalinjen. 
-    * Dette beløpet multipliseres med verdien i Antall-feltet for å bestemme fakturalinjebeløpet.  
-22. Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer.
-    * Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan omsetning, avgiften eller gebyrene skal gjøres rede for på en fritekstfaktura.  
-23. Oppdater regnskapsdistribusjonene for den valgte fakturalinjen.
-24. Klikk Lukk.
+1. <span data-ttu-id="c8a6f-106">Gå til Kunder > Fakturaer > Gjentakende fakturaer > Mallinjer for fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-106">Go to Accounts receivable > Invoices > Recurring invoices > Free text invoice templates.</span></span>
+    * <span data-ttu-id="c8a6f-107">Bruk dette skjemaet til å opprette maler for fritekstfaktura som kan inneholde fakturalinjer, tillegg, en regnskapsdistribusjonsmal og finanskontoinformasjon.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-107">Use this form to create free text invoice templates that can include invoice lines, charges, an accounting distribution template, and ledger account information.</span></span>  
+2. <span data-ttu-id="c8a6f-108">Klikk Ny for å opprette en ny fritekstfakturamal.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-108">Click 'New' to create a new free text invoice template.</span></span>
+3. <span data-ttu-id="c8a6f-109">Angi en verdi i Malnavn-feltet.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-109">In the Template name field, type a value.</span></span>
+    * <span data-ttu-id="c8a6f-110">"Malnavn" identifiserer unikt en mal for fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-110">‘Template name’ uniquely identifies a free text invoice template.</span></span> <span data-ttu-id="c8a6f-111">To maler kan ikke ha samme malnavn.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-111">No two templates can have the same ‘Template name’.</span></span>  
+4. <span data-ttu-id="c8a6f-112">Angi en beskrivelse av malen i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-112">In the Description field, enter a description of the template.</span></span>
+5. <span data-ttu-id="c8a6f-113">Utvid kategorien Fakturalinjer.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-113">Expand the Invoice lines tab.</span></span>
+6. <span data-ttu-id="c8a6f-114">I Beskrivelse-feltet angir du en beskrivelse av fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-114">In the Description field, enter a description of the invoice line.</span></span>
+7. <span data-ttu-id="c8a6f-115">I Hovedkonto-feltet velger du en inntektskonto.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-115">In the Main account field, select a revenue account.</span></span>
+    * <span data-ttu-id="c8a6f-116">Du kan velge motposteringskontoen for en kundekreditt for det totale fakturabeløpet på Kundeposteringsprofiler-siden.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-116">You can select the offset transaction account of a customer credit for the total invoice amount in the Customer posting profiles page.</span></span>  
+8. <span data-ttu-id="c8a6f-117">Klikk rullegardinknappen i feltet Mva-gruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-117">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c8a6f-118">Mva-gruppen for gjeldende fakturalinje er standard mva-gruppen for kundekontoen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-118">The sales tax group for the current invoice line is the default sales tax group for the customer account.</span></span>  
+9. <span data-ttu-id="c8a6f-119">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-119">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="c8a6f-120">I feltet Vareavgiftsgruppe velger du mva-gruppen for vare for den gjeldende fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-120">In the Item tax group field, select the item sales tax group for the current invoice line.</span></span>
+11. <span data-ttu-id="c8a6f-121">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-121">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="c8a6f-122">I Enhetspris-feltet angir eller viser du prisen per enhet for fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-122">In the Unit price field, enter or view the price per unit for the invoice line</span></span>
+    * <span data-ttu-id="c8a6f-123">Dette beløpet multipliseres med Antall-feltet for å bestemme fakturalinjebeløpet.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-123">This amount is multiplied by the Quantity field to determine the invoice line amount.</span></span>  
+13. <span data-ttu-id="c8a6f-124">Legg til en ny linje i malen for fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-124">Add a new line to free text invoice template.</span></span>
+14. <span data-ttu-id="c8a6f-125">I Beskrivelse-feltet angir du en beskrivelse av fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-125">In the Description field, enter a description of the invoice line.</span></span>
+15. <span data-ttu-id="c8a6f-126">I Hovedkonto-feltet velger du en inntektskonto.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-126">In the Main account field, select a revenue account.</span></span>
+    * <span data-ttu-id="c8a6f-127">Du kan velge motposteringskontoen for en kundekreditt for det totale fakturabeløpet på Kundeposteringsprofiler-siden.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-127">You can select the offset transaction account of a customer credit for the total invoice amount in the Customer posting profiles page.</span></span>  
+16. <span data-ttu-id="c8a6f-128">Klikk rullegardinknappen i feltet Mva-gruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-128">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c8a6f-129">Mva-gruppen for gjeldende fakturalinje er standard mva-gruppen for kundekontoen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-129">The sales tax group for the current invoice line is the default sales tax group for the customer account.</span></span>  
+17. <span data-ttu-id="c8a6f-130">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-130">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="c8a6f-131">Klikk rullegardinknappen i feltet Merverdiavgiftsgruppe for vare: for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-131">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c8a6f-132">Mva-gruppen for varesalg for den gjeldende fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-132">The item sales tax group for the current invoice line.</span></span>  
+19. <span data-ttu-id="c8a6f-133">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-133">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="c8a6f-134">Angi eller vis antall enheter for fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-134">Enter or view the number of units for the invoice line</span></span>
+    * <span data-ttu-id="c8a6f-135">Dette nummeret multipliseres med verdien i Enhetspris-feltet for å bestemme fakturalinjebeløpet.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-135">This number is multiplied by the value in the Unit price field to determine the invoice line amount.</span></span>  
+21. <span data-ttu-id="c8a6f-136">Angi eller vis prisen per enhet for fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-136">Enter or view the price per unit for the invoice line.</span></span> 
+    * <span data-ttu-id="c8a6f-137">Dette beløpet multipliseres med verdien i Antall-feltet for å bestemme fakturalinjebeløpet.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-137">This amount is multiplied by the value in the Quantity field to determine the invoice line amount.</span></span>  
+22. <span data-ttu-id="c8a6f-138">Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-138">View and modify the accounting distributions for an individual line and any child lines.</span></span>
+    * <span data-ttu-id="c8a6f-139">Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan omsetning, avgiften eller gebyrene skal gjøres rede for på en fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-139">Accounting distributions define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span>  
+23. <span data-ttu-id="c8a6f-140">Oppdater regnskapsdistribusjonene for den valgte fakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-140">Update the accounting distributions for the selected invoice line.</span></span>
+24. <span data-ttu-id="c8a6f-141">Klikk Lukk.</span><span class="sxs-lookup"><span data-stu-id="c8a6f-141">Click Close.</span></span>
 
 

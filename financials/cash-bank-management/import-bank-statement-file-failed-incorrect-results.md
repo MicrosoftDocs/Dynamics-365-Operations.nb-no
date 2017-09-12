@@ -15,90 +15,90 @@ ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 51cd32217b2f753f606e3060b4872a8274f16549
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Feilsøking for import av bankkontoutdragsfil
+# <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="f2bb8-107">Feilsøking for import av bankkontoutdragsfil</span><span class="sxs-lookup"><span data-stu-id="f2bb8-107">Bank statement file import troubleshooting</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det er viktig at bankkontoutdragsfilen fra banken stemmer overens med oppsettet som Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations støtter. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses.
+<span data-ttu-id="f2bb8-108">Det er viktig at bankkontoutdragsfilen fra banken stemmer overens med oppsettet som Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations støtter.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports.</span></span> <span data-ttu-id="f2bb8-109">På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="f2bb8-110">Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="f2bb8-111">Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="f2bb8-112">Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-112">This article explains how to fix these differences and resolve the issues.</span></span>
 
-<a name="what-is-the-error"></a>Hva er feilen?
+<a name="what-is-the-error"></a><span data-ttu-id="f2bb8-113">Hva er feilen?</span><span class="sxs-lookup"><span data-stu-id="f2bb8-113">What is the error?</span></span>
 ------------------
 
-Når du har forsøkt å importere en bankkontoutdragsfil, går du til jobbloggen for databehandling og kjøringsdetaljene for å finne feilen. Feilen kan være til hjelp ved at du peker på utdraget, saldoen eller utdragslinjen. Det er imidlertid ikke sannsynligvis at dette gir nok informasjon til at du finner feltet eller elementet som forårsaker problemet.
+<span data-ttu-id="f2bb8-114">Når du har forsøkt å importere en bankkontoutdragsfil, går du til jobbloggen for databehandling og kjøringsdetaljene for å finne feilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-114">After you try to import a bank statement file, go to the Data management job history and its execution details to find the error.</span></span> <span data-ttu-id="f2bb8-115">Feilen kan være til hjelp ved at du peker på utdraget, saldoen eller utdragslinjen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-115">The error can help by pointing to the statement, balance, or statement line.</span></span> <span data-ttu-id="f2bb8-116">Det er imidlertid ikke sannsynligvis at dette gir nok informasjon til at du finner feltet eller elementet som forårsaker problemet.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-116">However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.</span></span>
 
-## <a name="what-are-the-differences"></a>Hva er forskjellene?
-Sammenlign bankfiloppsettsdefinisjonen med Finance and Operations-importdefinisjonen, og merk deg forskjellene i feltene og elementene. Sammenlign bankkontoutdragsfilen med den tilknyttede Finance and Operations-eksempelfilen. Eventuelle forskjeller bør være lett å se i ISO20022-filene.
+## <a name="what-are-the-differences"></a><span data-ttu-id="f2bb8-117">Hva er forskjellene?</span><span class="sxs-lookup"><span data-stu-id="f2bb8-117">What are the differences?</span></span>
+<span data-ttu-id="f2bb8-118">Sammenlign bankfiloppsettsdefinisjonen med Finance and Operations-importdefinisjonen, og merk deg forskjellene i feltene og elementene.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-118">Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements.</span></span> <span data-ttu-id="f2bb8-119">Sammenlign bankkontoutdragsfilen med den tilknyttede Finance and Operations-eksempelfilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-119">Compare the bank statement file to the related sample Finance and Operations file.</span></span> <span data-ttu-id="f2bb8-120">Eventuelle forskjeller bør være lett å se i ISO20022-filene.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-120">In the ISO20022 files, any differences should be easy to see.</span></span>
 
-## <a name="transformations"></a>Transformasjoner
-Endringen må vanligvis foretas i én av tre transformasjoner. Hver enkelt transformasjon er skrevet for en bestemt standard.
+## <a name="transformations"></a><span data-ttu-id="f2bb8-121">Transformasjoner</span><span class="sxs-lookup"><span data-stu-id="f2bb8-121">Transformations</span></span>
+<span data-ttu-id="f2bb8-122">Endringen må vanligvis foretas i én av tre transformasjoner.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-122">Typically, the change must be made in one of three transformations.</span></span> <span data-ttu-id="f2bb8-123">Hver enkelt transformasjon er skrevet for en bestemt standard.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-123">Each transformation is written for a specific standard.</span></span>
 
-| Ressursnavn                                         | Filnavn                          |
+| <span data-ttu-id="f2bb8-124">Ressursnavn</span><span class="sxs-lookup"><span data-stu-id="f2bb8-124">Resource name</span></span>                                         | <span data-ttu-id="f2bb8-125">Filnavn</span><span class="sxs-lookup"><span data-stu-id="f2bb8-125">File name</span></span>                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| <span data-ttu-id="f2bb8-126">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-126">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>            | <span data-ttu-id="f2bb8-127">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-127">BAI2CSV-to-BAI2XML.xslt</span></span>            |
+| <span data-ttu-id="f2bb8-128">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-128">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span> | <span data-ttu-id="f2bb8-129">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-129">ISO20022XML-to-Reconciliation.xslt</span></span> |
+| <span data-ttu-id="f2bb8-130">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-130">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>          | <span data-ttu-id="f2bb8-131">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="f2bb8-131">MT940TXT-to-MT940XML.xslt</span></span>          |
 
-## <a name="debugging-transformations"></a>Feilsøking av transformasjoner
-### <a name="adjust-the-bai2-and-mt940-files"></a>Juster BAI2- og MT940-filene
+## <a name="debugging-transformations"></a><span data-ttu-id="f2bb8-132">Feilsøking av transformasjoner</span><span class="sxs-lookup"><span data-stu-id="f2bb8-132">Debugging transformations</span></span>
+### <a name="adjust-the-bai2-and-mt940-files"></a><span data-ttu-id="f2bb8-133">Juster BAI2- og MT940-filene</span><span class="sxs-lookup"><span data-stu-id="f2bb8-133">Adjust the BAI2 and MT940 files</span></span>
 
-BAI2- og MT940-filene er tekstbaserte filer, og krever en justering for å gjøre det mulig med feilsøking av Extensible Stylesheet Language Transformations (XSLT). Programmet gjør denne justeringen når en fil importeres.
+<span data-ttu-id="f2bb8-134">BAI2- og MT940-filene er tekstbaserte filer, og krever en justering for å gjøre det mulig med feilsøking av Extensible Stylesheet Language Transformations (XSLT).</span><span class="sxs-lookup"><span data-stu-id="f2bb8-134">The BAI2 and MT940 files are text-based files and require an adjustment to enable Extensible Stylesheet Language Transformations (XSLT) debugging.</span></span> <span data-ttu-id="f2bb8-135">Programmet gjør denne justeringen når en fil importeres.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-135">The program makes this adjustment when a file is imported.</span></span>
 
-1.  Opprett en XML-fil, og kopier følgende tekst til den.
+1.  <span data-ttu-id="f2bb8-136">Opprett en XML-fil, og kopier følgende tekst til den.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-136">Create an XML file, and copy the following text into it.</span></span>
 
         <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
 
-2.  Kopier innholdet i bankkontoutdragsfilen og lim det inn i XML-filen slik at det erstatter **PASTESTATEMENTFILEHERE**.
+2.  <span data-ttu-id="f2bb8-137">Kopier innholdet i bankkontoutdragsfilen og lim det inn i XML-filen slik at det erstatter **PASTESTATEMENTFILEHERE**.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-137">Copy the contents of the bank statement file, and paste them into the XML file so that they replace **PASTESTATEMENTFILEHERE**.</span></span>
 
-### <a name="debug-the-xslt"></a>Feilsøking av XSLT
+### <a name="debug-the-xslt"></a><span data-ttu-id="f2bb8-138">Feilsøking av XSLT</span><span class="sxs-lookup"><span data-stu-id="f2bb8-138">Debug the XSLT</span></span>
 
-Hvis du vil ha mer informasjon, se <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
+<span data-ttu-id="f2bb8-139">Hvis du vil ha mer informasjon, se <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-139">For more information, see <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.</span></span>
 
-1.  Start Microsoft Visual Studio.
-2.  Opprett et konsollprogram.
-3.  Åpne aktuell XSLT.
-4.  Klikk XLST-en og den tilhørende egenskapssiden.
-5.  Angi inndataene til plasseringen av bankkontoutdragsfilen.
-6.  Definer en plassering og et filnavn for utdataene.
-7.  Angi de nødvendige bruddpunktene.
-8.  Klikk **XML** på menyen &gt; **Start XSLT Debugging**.
+1.  <span data-ttu-id="f2bb8-140">Start Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-140">Start Microsoft Visual Studio.</span></span>
+2.  <span data-ttu-id="f2bb8-141">Opprett et konsollprogram.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-141">Create a console application.</span></span>
+3.  <span data-ttu-id="f2bb8-142">Åpne aktuell XSLT.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-142">Open the appropriate XSLT.</span></span>
+4.  <span data-ttu-id="f2bb8-143">Klikk XLST-en og den tilhørende egenskapssiden.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-143">Click the XLST and its properties page.</span></span>
+5.  <span data-ttu-id="f2bb8-144">Angi inndataene til plasseringen av bankkontoutdragsfilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-144">Set the input to the location of the bank statement file.</span></span>
+6.  <span data-ttu-id="f2bb8-145">Definer en plassering og et filnavn for utdataene.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-145">Define a location and file name for the output.</span></span>
+7.  <span data-ttu-id="f2bb8-146">Angi de nødvendige bruddpunktene.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-146">Set the required break points.</span></span>
+8.  <span data-ttu-id="f2bb8-147">Klikk **XML** på menyen &gt; **Start XSLT Debugging**.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-147">On the menu, click **XML** &gt; **Start XSLT Debugging**.</span></span>
 
-### <a name="format-the-xslt-output"></a>Formater XSLT-utdataene
+### <a name="format-the-xslt-output"></a><span data-ttu-id="f2bb8-148">Formater XSLT-utdataene</span><span class="sxs-lookup"><span data-stu-id="f2bb8-148">Format the XSLT output</span></span>
 
-Når transformeringen kjøres, opprettes det en utdatafil som du kan vise i Visual Studio. Bruk Ctrl + A, Ctrl + K og Ctrl + D til raskt å formatere utdatafilen.
+<span data-ttu-id="f2bb8-149">Når transformeringen kjøres, opprettes det en utdatafil som du kan vise i Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-149">When the transformation runs, it creates an output file that you can view in Visual Studio.</span></span> <span data-ttu-id="f2bb8-150">Bruk Ctrl + A, Ctrl + K og Ctrl + D til raskt å formatere utdatafilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-150">Use Ctrl+A, Ctrl+K, and Ctrl+D to quickly format the output file.</span></span>
 
-### <a name="adjust-the-transformation"></a>Juster transformasjonen
+### <a name="adjust-the-transformation"></a><span data-ttu-id="f2bb8-151">Juster transformasjonen</span><span class="sxs-lookup"><span data-stu-id="f2bb8-151">Adjust the transformation</span></span>
 
-Juster transformasjonen for å hente det riktige feltet eller elementet i bankkontoutdragsfilen. Tilordne deretter feltet eller elementet til det aktuelle elementet i Finance and Operations.
+<span data-ttu-id="f2bb8-152">Juster transformasjonen for å hente det riktige feltet eller elementet i bankkontoutdragsfilen.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-152">Adjust the transformation to get the appropriate field or element in the bank statement file.</span></span> <span data-ttu-id="f2bb8-153">Tilordne deretter feltet eller elementet til det aktuelle elementet i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-153">Then map that field or element to the appropriate Finance and Operations element.</span></span>
 
-### <a name="debitcredit-indicator"></a>Indikator for debet/kredit
+### <a name="debitcredit-indicator"></a><span data-ttu-id="f2bb8-154">Indikator for debet/kredit</span><span class="sxs-lookup"><span data-stu-id="f2bb8-154">Debit/credit indicator</span></span>
 
-Noen ganger importeres debetbeløp som kreditbeløp og kreditbeløp som debetbeløp. Du kan løse dette problemet ved å endre riktig XSLT-fil. Hvis bankkontoutdrag kommer fra flere banker, må du kontrollere at alle bruker samme fremgangsmåte for debet/kredit, eller opprette egne transformasjoner.
+<span data-ttu-id="f2bb8-155">Noen ganger importeres debetbeløp som kreditbeløp og kreditbeløp som debetbeløp.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-155">Sometimes, debits might be imported as credits, and credits might be imported as debits.</span></span> <span data-ttu-id="f2bb8-156">Du kan løse dette problemet ved å endre riktig XSLT-fil.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-156">To resolve this issue, you must change the appropriate XSLT.</span></span> <span data-ttu-id="f2bb8-157">Hvis bankkontoutdrag kommer fra flere banker, må du kontrollere at alle bruker samme fremgangsmåte for debet/kredit, eller opprette egne transformasjoner.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-157">If bank statements come from multiple banks, make sure that they all use the same debit/credit approach, or create separate transformations.</span></span>
 
--   BAI2XML-to-Reconciliation.xlst GetAmountCreditDebitIndicator-malen
--   ISO20022XML-to-Reconcilation.xslt GetCreditDebit-malen
--   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator-malen
+-   <span data-ttu-id="f2bb8-158">BAI2XML-to-Reconciliation.xlst GetAmountCreditDebitIndicator-malen</span><span class="sxs-lookup"><span data-stu-id="f2bb8-158">BAI2XML-to-Reconciliation.xlst GetAmountCreditDebitIndicator template</span></span>
+-   <span data-ttu-id="f2bb8-159">ISO20022XML-to-Reconcilation.xslt GetCreditDebit-malen</span><span class="sxs-lookup"><span data-stu-id="f2bb8-159">ISO20022XML-to-Reconcilation.xslt GetCreditDebit template</span></span>
+-   <span data-ttu-id="f2bb8-160">MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator-malen</span><span class="sxs-lookup"><span data-stu-id="f2bb8-160">MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator template</span></span>
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Eksempler på bankkontoutdragsformater og tekniske oppsett
-Tabellen nedenfor inneholder eksempler på definisjonene av tekniske oppsett for avanserte bankavstemmingsimportfiler og tre tilknyttede filer med eksempler på bankkontoutdrag. Du kan laste ned eksempelfilene og teknisk oppsett her: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="f2bb8-161">Eksempler på bankkontoutdragsformater og tekniske oppsett</span><span class="sxs-lookup"><span data-stu-id="f2bb8-161">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="f2bb8-162">Tabellen nedenfor inneholder eksempler på definisjonene av tekniske oppsett for avanserte bankavstemmingsimportfiler og tre tilknyttede filer med eksempler på bankkontoutdrag.</span><span class="sxs-lookup"><span data-stu-id="f2bb8-162">The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files.</span></span> <span data-ttu-id="f2bb8-163">Du kan laste ned eksempelfilene og teknisk oppsett her: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="f2bb8-163">You can download the example files and technical layouts here: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
 
-| Definisjon av teknisk oppsett                             | Fil med bankkontoutdragseksempler          |
+| <span data-ttu-id="f2bb8-164">Definisjon av teknisk oppsett</span><span class="sxs-lookup"><span data-stu-id="f2bb8-164">Technical layout definition</span></span>                             | <span data-ttu-id="f2bb8-165">Fil med bankkontoutdragseksempler</span><span class="sxs-lookup"><span data-stu-id="f2bb8-165">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="f2bb8-166">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="f2bb8-166">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="f2bb8-167">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="f2bb8-167">MT940StatementExample</span></span>                |
+| <span data-ttu-id="f2bb8-168">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="f2bb8-168">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="f2bb8-169">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="f2bb8-169">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="f2bb8-170">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="f2bb8-170">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="f2bb8-171">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="f2bb8-171">BAI2StatementExample</span></span>                 |
 
 
 

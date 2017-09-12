@@ -17,38 +17,38 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1b95b797d5e2b9dbf6e325e71705727b87c5e10e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9824971eb2a970f6136df9cc2c5feffc038b8f09
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-project-resource-information"></a>Definere informasjon om prosjektressurs
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="e2e58-103">Definere informasjon om prosjektressurs</span><span class="sxs-lookup"><span data-stu-id="e2e58-103">Set up project resource information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren viser hvordan du setter opp en prosjektressurs. Denne oppgaven bruker USMF-datasettet.
+<span data-ttu-id="e2e58-104">Denne prosedyren viser hvordan du setter opp en prosjektressurs.</span><span class="sxs-lookup"><span data-stu-id="e2e58-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="e2e58-105">Denne oppgaven bruker USMF-datasettet.</span><span class="sxs-lookup"><span data-stu-id="e2e58-105">This task uses the USMF data set.</span></span>
 
-1. Gå til Prosjektstyring og regnskap > Prosjektressurser > Ressursliste.
-2. Klikk Ny ressurs.
-3. Angi eller velg en verdi i Arbeider-feltet.
-4. Angi eller velg en verdi i Kalender-feltet.
-5. Angi eller velg en verdi i feltet Periodekode.
-6. Klikk Opprett.
-7. Klikk Kostpriser.
-8. Klikk Kostpris - time.
-9. Klikk Ny.
-10. Angi en dato i feltet Gyldighetsdato.
-11. Angi et tall i Kostpris-feltet.
-12. Klikk Lagre.
-13. Lukk siden.
-14. Klikk Salgspriser.
-15. Klikk Salgspris - time.
-16. Klikk Ny.
-17. Angi en dato i feltet Gyldighetsdato.
-18. Angi et tall i Prissetting-feltet.
-19. Velg et alternativ i feltet Gjelder for.
-20. Klikk Lagre.
-21. Lukk siden.
+1. <span data-ttu-id="e2e58-106">Gå til Prosjektstyring og regnskap > Prosjektressurser > Ressursliste.</span><span class="sxs-lookup"><span data-stu-id="e2e58-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="e2e58-107">Klikk Ny ressurs.</span><span class="sxs-lookup"><span data-stu-id="e2e58-107">Click New resource.</span></span>
+3. <span data-ttu-id="e2e58-108">Angi eller velg en verdi i Arbeider-feltet.</span><span class="sxs-lookup"><span data-stu-id="e2e58-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="e2e58-109">Angi eller velg en verdi i Kalender-feltet.</span><span class="sxs-lookup"><span data-stu-id="e2e58-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="e2e58-110">Angi eller velg en verdi i feltet Periodekode.</span><span class="sxs-lookup"><span data-stu-id="e2e58-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="e2e58-111">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="e2e58-111">Click Create.</span></span>
+7. <span data-ttu-id="e2e58-112">Klikk Kostpriser.</span><span class="sxs-lookup"><span data-stu-id="e2e58-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="e2e58-113">Klikk Kostpris - time.</span><span class="sxs-lookup"><span data-stu-id="e2e58-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="e2e58-114">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e2e58-114">Click New.</span></span>
+10. <span data-ttu-id="e2e58-115">Angi en dato i feltet Gyldighetsdato.</span><span class="sxs-lookup"><span data-stu-id="e2e58-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="e2e58-116">Angi et tall i Kostpris-feltet.</span><span class="sxs-lookup"><span data-stu-id="e2e58-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="e2e58-117">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="e2e58-117">Click Save.</span></span>
+13. <span data-ttu-id="e2e58-118">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e2e58-118">Close the page.</span></span>
+14. <span data-ttu-id="e2e58-119">Klikk Salgspriser.</span><span class="sxs-lookup"><span data-stu-id="e2e58-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="e2e58-120">Klikk Salgspris - time.</span><span class="sxs-lookup"><span data-stu-id="e2e58-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="e2e58-121">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e2e58-121">Click New.</span></span>
+17. <span data-ttu-id="e2e58-122">Angi en dato i feltet Gyldighetsdato.</span><span class="sxs-lookup"><span data-stu-id="e2e58-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="e2e58-123">Angi et tall i Prissetting-feltet.</span><span class="sxs-lookup"><span data-stu-id="e2e58-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="e2e58-124">Velg et alternativ i feltet Gjelder for.</span><span class="sxs-lookup"><span data-stu-id="e2e58-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="e2e58-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="e2e58-125">Click Save.</span></span>
+21. <span data-ttu-id="e2e58-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e2e58-126">Close the page.</span></span>
 
 

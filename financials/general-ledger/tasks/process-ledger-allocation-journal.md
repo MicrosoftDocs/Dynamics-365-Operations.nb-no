@@ -16,31 +16,31 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1189ffeae052c72542b3b403a6b7a6e415b005c4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7d299657758b1e1322aef07bfe8c71f7bf00b0ca
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="process-ledger-allocation-journal"></a>Behandle finansfordelingsjournal
+# <a name="process-ledger-allocation-journal"></a><span data-ttu-id="83845-103">Behandle finansfordelingsjournal</span><span class="sxs-lookup"><span data-stu-id="83845-103">Process ledger allocation journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk siden Behandle tildelingsforespørsel for å opprette en tildelingsjournal som kan du kan vurdere og godkjenne før du posterer den til økonomimodul, eller posterer direkte til økonomimodul. Før du kan opprette en tildelingsjournal, må det være minst én aktiv tildelingsregel for finans. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
+<span data-ttu-id="83845-104">Bruk siden Behandle tildelingsforespørsel for å opprette en tildelingsjournal som kan du kan vurdere og godkjenne før du posterer den til økonomimodul, eller posterer direkte til økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="83845-104">Use the Process allocation request page to create an allocation journal that can be reviewed and approved before posting to General ledger, or posted directly to General ledger.</span></span> <span data-ttu-id="83845-105">Før du kan opprette en tildelingsjournal, må det være minst én aktiv tildelingsregel for finans.</span><span class="sxs-lookup"><span data-stu-id="83845-105">Before you can create an allocations journal, there must be least one active Ledger allocation rule.</span></span> <span data-ttu-id="83845-106">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="83845-106">This task uses the USMF demo company.</span></span>
 
-1. Gå til Økonomimodul > Tildelinger > Behandle tildelingsforespørsel.
-2. Klikk rullegardinknappen i feltet Regel for å åpne oppslaget.
-3. Finn og velg ønsket post i listen.
-4. Klikk koblingen i den valgte raden i listen.
-5. Angi en dato i Per dato-feltet.
-    * Per dato er svært viktig når finans er datakilden for regelen. Denne datoen kontrollerer hvilke finanssaldoer som skal inkluderes i tildelingen.     Velg Stopp i Nullkilde-feltet. Dette vil stanse tildelingsprosessen og vise en melding som indikerer at et nullbeløp er valgt.  
-6. I feltet Forslagsalternativer velger du "Bare forslag".
-    * Velg Bare forslag for å se gjennom og eventuelt godkjenne resultatet i tildelingsjournaler før postering av tildelingen til økonomimodulen.  
-7. Angi en dato i feltet FIN-posteringsdato.
-8. Klikk OK.
-9. Gå til Økonomimodul > Tildelinger > Tildelingsjournaler.
-10. Klikk Linjer.
-11. Klikk Poster.
-12. Klikk Poster.
+1. <span data-ttu-id="83845-107">Gå til Økonomimodul > Tildelinger > Behandle tildelingsforespørsel.</span><span class="sxs-lookup"><span data-stu-id="83845-107">Go to General ledger > Allocations > Process allocation request.</span></span>
+2. <span data-ttu-id="83845-108">Klikk rullegardinknappen i feltet Regel for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="83845-108">In the Rule field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="83845-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="83845-109">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="83845-110">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="83845-110">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="83845-111">Angi en dato i Per dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="83845-111">In the As of date field, enter a date.</span></span>
+    * <span data-ttu-id="83845-112">Per dato er svært viktig når finans er datakilden for regelen.</span><span class="sxs-lookup"><span data-stu-id="83845-112">The As of Date is very important when the Ledger is the Data source for the rule.</span></span> <span data-ttu-id="83845-113">Denne datoen kontrollerer hvilke finanssaldoer som skal inkluderes i tildelingen.</span><span class="sxs-lookup"><span data-stu-id="83845-113">This date controls which ledger balances to include for allocation.</span></span>     <span data-ttu-id="83845-114">Velg Stopp i Nullkilde-feltet.</span><span class="sxs-lookup"><span data-stu-id="83845-114">In the Zero source field select Stop.</span></span> <span data-ttu-id="83845-115">Dette vil stanse tildelingsprosessen og vise en melding som indikerer at et nullbeløp er valgt.</span><span class="sxs-lookup"><span data-stu-id="83845-115">This will  Stop the allocation process and display a message that states that a zero source amount is selected.</span></span>  
+6. <span data-ttu-id="83845-116">I feltet Forslagsalternativer velger du "Bare forslag".</span><span class="sxs-lookup"><span data-stu-id="83845-116">In the Proposal options field, select 'Proposal only'.</span></span>
+    * <span data-ttu-id="83845-117">Velg Bare forslag for å se gjennom og eventuelt godkjenne resultatet i tildelingsjournaler før postering av tildelingen til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="83845-117">Select Proposal only to review and optionally approve the result in Allocation journals prior to posting the allocation to General ledger.</span></span>  
+7. <span data-ttu-id="83845-118">Angi en dato i feltet FIN-posteringsdato.</span><span class="sxs-lookup"><span data-stu-id="83845-118">In the GL posting date field, enter a date.</span></span>
+8. <span data-ttu-id="83845-119">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="83845-119">Click OK.</span></span>
+9. <span data-ttu-id="83845-120">Gå til Økonomimodul > Tildelinger > Tildelingsjournaler.</span><span class="sxs-lookup"><span data-stu-id="83845-120">Go to General ledger > Allocations > Allocation journals.</span></span>
+10. <span data-ttu-id="83845-121">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="83845-121">Click Lines.</span></span>
+11. <span data-ttu-id="83845-122">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="83845-122">Click Post.</span></span>
+12. <span data-ttu-id="83845-123">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="83845-123">Click Post.</span></span>
 
 

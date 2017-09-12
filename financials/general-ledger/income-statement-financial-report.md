@@ -18,57 +18,57 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: f07aea0b87bc3e09982f9ba248d3c28540fd2dc5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0017d13b7f7594462dfff4ef896f4139607d4bc5
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
+# <a name="income-statement-financial-report"></a><span data-ttu-id="35a61-104">Finansrapport for resultatregnskap</span><span class="sxs-lookup"><span data-stu-id="35a61-104">Income statement financial report</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
+<span data-ttu-id="35a61-105">Denne artikkelen beskriver standardrapporten for inntektsregnskap.</span><span class="sxs-lookup"><span data-stu-id="35a61-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="35a61-106">Den beskriver også byggeblokker som er knyttet til denne rapporten.</span><span class="sxs-lookup"><span data-stu-id="35a61-106">It also describes the building blocks that are associated with this report.</span></span> 
 
-<a name="default-income-statement-report"></a>Standardrapport for resultatregnskap
+<a name="default-income-statement-report"></a><span data-ttu-id="35a61-107">Standardrapport for resultatregnskap</span><span class="sxs-lookup"><span data-stu-id="35a61-107">Default income statement report</span></span>
 -------------------------------
 
-| Standardrapport             | Resultat                                                                                              |
+| <span data-ttu-id="35a61-108">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="35a61-108">Default report</span></span>             | <span data-ttu-id="35a61-109">Resultat</span><span class="sxs-lookup"><span data-stu-id="35a61-109">What it does</span></span>                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
-| Resultatregnskap – Standard | Gir en oversikt over organisasjonens lønnsomhet for inneværende periode, og også for hittil i år. |
+| <span data-ttu-id="35a61-110">Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="35a61-110">Income Statement – Default</span></span> | <span data-ttu-id="35a61-111">Gir en oversikt over organisasjonens lønnsomhet for inneværende periode, og også for hittil i år.</span><span class="sxs-lookup"><span data-stu-id="35a61-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
 
-## <a name="building-blocks"></a>Byggeblokker
-Finansrapporten for resultatregnskapet bruker byggeblokkene nedenfor.
+## <a name="building-blocks"></a><span data-ttu-id="35a61-112">Byggeblokker</span><span class="sxs-lookup"><span data-stu-id="35a61-112">Building blocks</span></span>
+<span data-ttu-id="35a61-113">Finansrapporten for resultatregnskapet bruker byggeblokkene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="35a61-113">The income statement financial report uses the following building blocks.</span></span>
 
-| Standardrapport             | Raddefinisjon                     | Kolonnedefinisjon          |
+| <span data-ttu-id="35a61-114">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="35a61-114">Default report</span></span>             | <span data-ttu-id="35a61-115">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="35a61-115">Row definition</span></span>                     | <span data-ttu-id="35a61-116">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="35a61-116">Column definition</span></span>          |
 |----------------------------|------------------------------------|----------------------------|
-| Resultatregnskap – Standard | Sammendrag for resultatregnskap – Standard | Periodisk og hittil i år – Standard |
+| <span data-ttu-id="35a61-117">Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="35a61-117">Income Statement - Default</span></span> | <span data-ttu-id="35a61-118">Sammendrag for resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="35a61-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="35a61-119">Periodisk og hittil i år – Standard</span><span class="sxs-lookup"><span data-stu-id="35a61-119">Periodic and YTD - Default</span></span> |
 
-### <a name="row-definition"></a>Raddefinisjon
+### <a name="row-definition"></a><span data-ttu-id="35a61-120">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="35a61-120">Row definition</span></span>
 
-Raddefinisjon, Sammendrag for resultatregnskap – Standard, inneholder en inndeling for hver del av et tradisjonelt resultatregnskap. Dimensjonen for hovedkontokategorien brukes til å opprette denne raddefinisjonen. Derfor kan alle generere rapporten uten å gjøre endringer.
+<span data-ttu-id="35a61-121">Raddefinisjon, Sammendrag for resultatregnskap – Standard, inneholder en inndeling for hver del av et tradisjonelt resultatregnskap.</span><span class="sxs-lookup"><span data-stu-id="35a61-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="35a61-122">Dimensjonen for hovedkontokategorien brukes til å opprette denne raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="35a61-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="35a61-123">Derfor kan alle generere rapporten uten å gjøre endringer.</span><span class="sxs-lookup"><span data-stu-id="35a61-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a>Kolonnedefinisjon
+### <a name="column-definition"></a><span data-ttu-id="35a61-124">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="35a61-124">Column Definition</span></span>
 
-Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer av detaljer og økonomiske data.
+<span data-ttu-id="35a61-125">Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer av detaljer og økonomiske data.</span><span class="sxs-lookup"><span data-stu-id="35a61-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   **Periodisk og hittil i år – Standard kolonnetyper:**
-    -   **DESC** – Beskrivelsen fra raddefinisjonen.
-    -   **FD** – Økonomiske data for inneværende periode
-    -   **FD** – Økonomiske data hittil i år
+-   <span data-ttu-id="35a61-126">**Periodisk og hittil i år – Standard kolonnetyper:**</span><span class="sxs-lookup"><span data-stu-id="35a61-126">**Periodic and YTD – Default column types:**</span></span>
+    -   <span data-ttu-id="35a61-127">**DESC** – Beskrivelsen fra raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="35a61-127">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="35a61-128">**FD** – Økonomiske data for inneværende periode</span><span class="sxs-lookup"><span data-stu-id="35a61-128">**FD** – Financial data for the current period</span></span>
+    -   <span data-ttu-id="35a61-129">**FD** – Økonomiske data hittil i år</span><span class="sxs-lookup"><span data-stu-id="35a61-129">**FD** – Financial data for the year to date</span></span>
 
  
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="35a61-130">Se også</span><span class="sxs-lookup"><span data-stu-id="35a61-130">See also</span></span>
 --------
 
-[Finansrapportering](financial-reporting-getting-started.md)
+[<span data-ttu-id="35a61-131">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="35a61-131">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[Vise finansrapporter](view-financial-reports.md)
+[<span data-ttu-id="35a61-132">Vise finansrapporter</span><span class="sxs-lookup"><span data-stu-id="35a61-132">View financial reports</span></span>](view-financial-reports.md)
 
-[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[<span data-ttu-id="35a61-133">Blogg for Dynamics-finansrapportering</span><span class="sxs-lookup"><span data-stu-id="35a61-133">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

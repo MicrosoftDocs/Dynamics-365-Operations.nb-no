@@ -17,53 +17,53 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e948525d4c7873fdc5101136ee37cd117268f4dd
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9ba616550120e273429e348ea9cddf7c9e8baee4
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-and-run-out-of-box-reports"></a> Generere og kjøre medfølgende rapporter
+# <a name="generate-and-run-out-of-box-reports"></a><span data-ttu-id="6c12d-103"> Generere og kjøre medfølgende rapporter</span><span class="sxs-lookup"><span data-stu-id="6c12d-103">Generate and run out-of-box reports</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Bruk denne oppgaveveiledningen til å kjøre medfølgende rapporter i hovedkontorer fra forskjellige arbeidsområder og forespørsels- og salgsrapporter under Detaljhandel og handel.
+<span data-ttu-id="6c12d-104">Bruk denne oppgaveveiledningen til å kjøre medfølgende rapporter i hovedkontorer fra forskjellige arbeidsområder og forespørsels- og salgsrapporter under Detaljhandel og handel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-104">Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.</span></span>
 
 
 
-Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne registreringen er ment for systemansvarligrollen.
+<span data-ttu-id="6c12d-105">Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket.</span><span class="sxs-lookup"><span data-stu-id="6c12d-105">The demo data company used to create this recording is USRT.</span></span> <span data-ttu-id="6c12d-106">Denne registreringen er ment for systemansvarligrollen.</span><span class="sxs-lookup"><span data-stu-id="6c12d-106">This recording is intended for the System administrator role.</span></span>
 
 
-## <a name="launch-reports-from-workspaces"></a>Starte rapporter fra arbeidsområder
-1. Gå til Detaljhandel og handel > Produkter og kategorier > Kategori- og produktstyring.
-2. Klikk pilen for å vise eller skjule delen Rapporter.
-3. Klikk Rapport om topprodukter.
-4. Angi en dato i Fra dato-feltet.
-5. Angi en dato i Til dato-feltet.
-6. Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.
-7. Velg Contoso Retail\Contoso Retail USA\Central\Houston i treet.
-    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.      Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
-8. Klikk OK.
-9. Velg et alternativ i Vis-feltet.
-10. Velg et alternativ i Etter-feltet.
-11. Klikk OK.
+## <a name="launch-reports-from-workspaces"></a><span data-ttu-id="6c12d-107">Starte rapporter fra arbeidsområder</span><span class="sxs-lookup"><span data-stu-id="6c12d-107">Launch reports from workspaces</span></span>
+1. <span data-ttu-id="6c12d-108">Gå til Detaljhandel og handel > Produkter og kategorier > Kategori- og produktstyring.</span><span class="sxs-lookup"><span data-stu-id="6c12d-108">Go to Retail and commerce > Products and categories > Category and product management.</span></span>
+2. <span data-ttu-id="6c12d-109">Klikk pilen for å vise eller skjule delen Rapporter.</span><span class="sxs-lookup"><span data-stu-id="6c12d-109">Click the arrow to expand or collapse the Reports section.</span></span>
+3. <span data-ttu-id="6c12d-110">Klikk Rapport om topprodukter.</span><span class="sxs-lookup"><span data-stu-id="6c12d-110">Click Top products report.</span></span>
+4. <span data-ttu-id="6c12d-111">Angi en dato i Fra dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-111">In the From date field, enter a date.</span></span>
+5. <span data-ttu-id="6c12d-112">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-112">In the To date field, enter a date.</span></span>
+6. <span data-ttu-id="6c12d-113">Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="6c12d-113">In the Channel field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="6c12d-114">Velg Contoso Retail\Contoso Retail USA\Central\Houston i treet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-114">In the tree, select 'Contoso Retail\Contoso Retail USA\Central\Houston'.</span></span>
+    * <span data-ttu-id="6c12d-115">Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-115">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="6c12d-116">Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.</span><span class="sxs-lookup"><span data-stu-id="6c12d-116">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="6c12d-117">Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-117">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+8. <span data-ttu-id="6c12d-118">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6c12d-118">Click OK.</span></span>
+9. <span data-ttu-id="6c12d-119">Velg et alternativ i Vis-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-119">In the View field, select an option.</span></span>
+10. <span data-ttu-id="6c12d-120">Velg et alternativ i Etter-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-120">In the By field, select an option.</span></span>
+11. <span data-ttu-id="6c12d-121">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6c12d-121">Click OK.</span></span>
 
-## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Start rapporter fra forespørsels- og salgsrapportene under appkoblingen Detaljhandel og handel.
-1. Gå til Detaljhandel og handel > Forespørsler og rapporter > Salgsrapporter > Rapport for kategorisalg.
-2. Angi en dato i Fra dato-feltet.
-3. Angi en dato i Til dato-feltet.
-4. Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.
-5. Velg Contoso Retail\Contoso Retail USA\West\Seattle i treet.
-    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.      Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
-6. Klikk OK.
-7. Klikk OK.
+## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a><span data-ttu-id="6c12d-122">Start rapporter fra forespørsels- og salgsrapportene under appkoblingen Detaljhandel og handel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-122">Launch reports from the inquiries and sales reports located under Retail & Commerce app link.</span></span>
+1. <span data-ttu-id="6c12d-123">Gå til Detaljhandel og handel > Forespørsler og rapporter > Salgsrapporter > Rapport for kategorisalg.</span><span class="sxs-lookup"><span data-stu-id="6c12d-123">Go to Retail and commerce > Inquiries and reports > Sales reports > Category sales report.</span></span>
+2. <span data-ttu-id="6c12d-124">Angi en dato i Fra dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-124">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="6c12d-125">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-125">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="6c12d-126">Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="6c12d-126">In the Channel field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="6c12d-127">Velg Contoso Retail\Contoso Retail USA\West\Seattle i treet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-127">In the tree, select 'Contoso Retail\Contoso Retail USA\West\Seattle'.</span></span>
+    * <span data-ttu-id="6c12d-128">Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-128">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="6c12d-129">Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.</span><span class="sxs-lookup"><span data-stu-id="6c12d-129">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="6c12d-130">Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="6c12d-130">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+6. <span data-ttu-id="6c12d-131">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6c12d-131">Click OK.</span></span>
+7. <span data-ttu-id="6c12d-132">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6c12d-132">Click OK.</span></span>
 
-## <a name="export-an-hq-reports"></a>Eksportere en Hovedkontor-rapport
-1. Gå til Detaljhandel og handel > Forespørsler og rapporter > Salgsrapporter > Rapport for organisasjonssalg.
-2. Angi en dato i Fra dato-feltet.
-3. Angi en dato i Til dato-feltet.
-4. Klikk OK.
-5. Klikk Eksporter.
-6. Klikk PDF.
+## <a name="export-an-hq-reports"></a><span data-ttu-id="6c12d-133">Eksportere en Hovedkontor-rapport</span><span class="sxs-lookup"><span data-stu-id="6c12d-133">Export an HQ reports</span></span>
+1. <span data-ttu-id="6c12d-134">Gå til Detaljhandel og handel > Forespørsler og rapporter > Salgsrapporter > Rapport for organisasjonssalg.</span><span class="sxs-lookup"><span data-stu-id="6c12d-134">Go to Retail and commerce > Inquiries and reports > Sales reports > Organization sales report.</span></span>
+2. <span data-ttu-id="6c12d-135">Angi en dato i Fra dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-135">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="6c12d-136">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6c12d-136">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="6c12d-137">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6c12d-137">Click OK.</span></span>
+5. <span data-ttu-id="6c12d-138">Klikk Eksporter.</span><span class="sxs-lookup"><span data-stu-id="6c12d-138">Click Export.</span></span>
+6. <span data-ttu-id="6c12d-139">Klikk PDF.</span><span class="sxs-lookup"><span data-stu-id="6c12d-139">Click PDF.</span></span>
 
 

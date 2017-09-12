@@ -16,136 +16,136 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 94898674f02de72111e131f563b33926dda8ac8e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fdba6a68cd98b0ccbc4072f5c1124088ed9d814b
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Utforme et format for å bruke områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk for elektronisk rapportering (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a><span data-ttu-id="bb33c-103">Utforme et format for å bruke områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="bb33c-103">Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering, kan konfigurere et elektronisk rapportering (ER)-format for å generere rapporter som OPENXML-regnearkfiler (Excel) der de påkrevde kolonnene kan opprettes dynamisk som vannrett utvidbare områder. Denne fremgangsmåten kan utføres i alle firmaer.
+<span data-ttu-id="bb33c-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering, kan konfigurere et elektronisk rapportering (ER)-format for å generere rapporter som OPENXML-regnearkfiler (Excel) der de påkrevde kolonnene kan opprettes dynamisk som vannrett utvidbare områder.</span><span class="sxs-lookup"><span data-stu-id="bb33c-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="bb33c-105">Denne fremgangsmåten kan utføres i alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="bb33c-105">These steps can be performed in any company.</span></span>
 
-For å fullføre disse trinnene, må du først fullføre disse tre oppgaveveiledningene: 
+<span data-ttu-id="bb33c-106">For å fullføre disse trinnene, må du først fullføre disse tre oppgaveveiledningene:</span><span class="sxs-lookup"><span data-stu-id="bb33c-106">To complete these steps, you must first complete these three task guides:</span></span> 
 
-"ER Opprette en konfigurasjonsleverandør og merke den som aktiv"
+<span data-ttu-id="bb33c-107">"ER Opprette en konfigurasjonsleverandør og merke den som aktiv"</span><span class="sxs-lookup"><span data-stu-id="bb33c-107">“ER Create a configuration provider and mark it as active”</span></span>
 
-"ER Bruke finansdimensjoner som en datakilde (del 1: Utforme datamodell)"
+<span data-ttu-id="bb33c-108">"ER Bruke finansdimensjoner som en datakilde (del 1: Utforme datamodell)"</span><span class="sxs-lookup"><span data-stu-id="bb33c-108">“ER Use financial dimensions as a data source (Part 1: Design data model)”</span></span>
 
-"ER Bruke finansdimensjoner som en datakilde (del 2: Modelltilordning)"
+<span data-ttu-id="bb33c-109">"ER Bruke finansdimensjoner som en datakilde (del 2: Modelltilordning)"</span><span class="sxs-lookup"><span data-stu-id="bb33c-109">“ER Use financial dimensions as a data source (Part 2: Model mapping)”</span></span>
 
-Du må også laste ned og lagre en lokal kopi av malen med en eksempelrapport finner du her: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+<span data-ttu-id="bb33c-110">Du må også laste ned og lagre en lokal kopi av malen med en eksempelrapport finner du her: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span><span class="sxs-lookup"><span data-stu-id="bb33c-110">You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span></span>
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="bb33c-111">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="bb33c-111">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-report-configuration"></a>Opprette en ny rapportkonfigurasjon
-1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-2. Velg Eksempelmodell for finansdimensjoner i treet.
-3. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
-4. I feltet Ny angir du Format basert på datamodellen Eksempelmodell for finansdimensjoner.
-    * Bruk modellen som ble opprettet på forhånd som datakilde for den nye rapporten.  
-5. Skriv inn Eksempelrapport med vannrett utvidbare områder i Navn-feltet.
-    * Eksempelrapport med vannrett utvidbare områder  
-6. I Beskrivelse-feltet skriver du inn Lage Excel-utdata ved å legge til kolonner dynamisk.
-    * Lage Excel-utdata ved å legge til kolonner dynamisk  
-7. Velg Oppføring i Definisjon av datamodell-feltet.
-8. Klikk Opprett konfigurasjon.
+## <a name="create-a-new-report-configuration"></a><span data-ttu-id="bb33c-112">Opprette en ny rapportkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="bb33c-112">Create a new report configuration</span></span>
+1. <span data-ttu-id="bb33c-113">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="bb33c-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="bb33c-114">Velg Eksempelmodell for finansdimensjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-114">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="bb33c-115">Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="bb33c-115">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="bb33c-116">I feltet Ny angir du Format basert på datamodellen Eksempelmodell for finansdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="bb33c-116">In the New field, enter 'Format based on data model Financial dimensions sample model'.</span></span>
+    * <span data-ttu-id="bb33c-117">Bruk modellen som ble opprettet på forhånd som datakilde for den nye rapporten.</span><span class="sxs-lookup"><span data-stu-id="bb33c-117">Use the model created in advance as the data source for your new report.</span></span>  
+5. <span data-ttu-id="bb33c-118">Skriv inn Eksempelrapport med vannrett utvidbare områder i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-118">In the Name field, type 'Sample report with horizontally expandable ranges'.</span></span>
+    * <span data-ttu-id="bb33c-119">Eksempelrapport med vannrett utvidbare områder</span><span class="sxs-lookup"><span data-stu-id="bb33c-119">Sample report with horizontally expandable ranges</span></span>  
+6. <span data-ttu-id="bb33c-120">I Beskrivelse-feltet skriver du inn Lage Excel-utdata ved å legge til kolonner dynamisk.</span><span class="sxs-lookup"><span data-stu-id="bb33c-120">In the Description field, type 'To make Excel output with dynamically adding columns'.</span></span>
+    * <span data-ttu-id="bb33c-121">Lage Excel-utdata ved å legge til kolonner dynamisk</span><span class="sxs-lookup"><span data-stu-id="bb33c-121">To make Excel output with dynamically adding columns</span></span>  
+7. <span data-ttu-id="bb33c-122">Velg Oppføring i Definisjon av datamodell-feltet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-122">In the Data model definition field, select Entry.</span></span>
+8. <span data-ttu-id="bb33c-123">Klikk Opprett konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="bb33c-123">Click Create configuration.</span></span>
 
-## <a name="design-the-report-format"></a>Utforme rapportformatet
-1. Klikk Utforming.
-2. Slå på veksleknappen Vis detaljer.
-3. Klikk Import i handlingsruten.
-4. Klikk Importer fra Microsoft Excel.
-5. Klikk Vedlegg.
-    * Importer malen for rapporten. Bruk Excel-filen som du lastet ned for dette.  
-6. Klikk Ny.
-7. Klikk Fil.
-8. Lukk siden.
-9. Angi eller velg en verdi i feltet Mal.
-    * Velg malen du lastet ned.  
-10. Klikk OK.
-    * Legg til et nytt område for å opprette Excel-utdata dynamisk med like mange kolonner som du valgte (i brukerdialogskjemaet) for finansdimensjoner. Hver celle for hver enkelt kolonne vil representere navnet på én finansdimensjon.  
-11. Klikk Legg til for å åpne nedtrekksdialogen.
-12. Velg Excel\Område i treet.
-13. Skriv inn DimNames i feltet Excel-område.
-    * DimNames  
-14. Velg Vannrett i feltet Replikeringsretning.
-15. Klikk OK.
-16. Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.
-17. Klikk Flytt opp.
-18. Velg 'Excel = "SampleFinDimWsReport"\Celle<DimNames>' i treet.
-19. Klikk Klipp ut.
-20. Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.
-21. Klikk Lim inn.
-22. Utvid 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.
-23. Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett' i treet.
-24. Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.
-25. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.
-    * Legg til et nytt område for å opprette Excel-utdata dynamisk med like mange kolonner som du valgte (i brukerdialogskjemaet) for finansdimensjoner. Hver celle for hver enkelt kolonne vil representere verdien for én finansdimensjon for hver rapporteringstransaksjon.  
-26. Klikk Legg til område.
-27. Skriv inn DimValues i feltet Excel-område.
-    * DimValues  
-28. Velg Vannrett i feltet Replikeringsretning.
-29. Klikk OK.
-30. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<DimValues>' i treet.
-31. Klikk Klipp ut.
-32. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.
-33. Klikk Lim inn.
-34. Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.
+## <a name="design-the-report-format"></a><span data-ttu-id="bb33c-124">Utforme rapportformatet</span><span class="sxs-lookup"><span data-stu-id="bb33c-124">Design the report format</span></span>
+1. <span data-ttu-id="bb33c-125">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="bb33c-125">Click Designer.</span></span>
+2. <span data-ttu-id="bb33c-126">Slå på veksleknappen Vis detaljer.</span><span class="sxs-lookup"><span data-stu-id="bb33c-126">Turn on the ‘Show details’ toggle button.</span></span>
+3. <span data-ttu-id="bb33c-127">Klikk Import i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="bb33c-127">On the Action Pane, click Import.</span></span>
+4. <span data-ttu-id="bb33c-128">Klikk Importer fra Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="bb33c-128">Click Import from Excel.</span></span>
+5. <span data-ttu-id="bb33c-129">Klikk Vedlegg.</span><span class="sxs-lookup"><span data-stu-id="bb33c-129">Click Attachments.</span></span>
+    * <span data-ttu-id="bb33c-130">Importer malen for rapporten.</span><span class="sxs-lookup"><span data-stu-id="bb33c-130">Import the report’s template.</span></span> <span data-ttu-id="bb33c-131">Bruk Excel-filen som du lastet ned for dette.</span><span class="sxs-lookup"><span data-stu-id="bb33c-131">Use Excel file that you downloaded for that.</span></span>  
+6. <span data-ttu-id="bb33c-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="bb33c-132">Click New.</span></span>
+7. <span data-ttu-id="bb33c-133">Klikk Fil.</span><span class="sxs-lookup"><span data-stu-id="bb33c-133">Click File.</span></span>
+8. <span data-ttu-id="bb33c-134">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="bb33c-134">Close the page.</span></span>
+9. <span data-ttu-id="bb33c-135">Angi eller velg en verdi i feltet Mal.</span><span class="sxs-lookup"><span data-stu-id="bb33c-135">In the Template field, enter or select a value.</span></span>
+    * <span data-ttu-id="bb33c-136">Velg malen du lastet ned.</span><span class="sxs-lookup"><span data-stu-id="bb33c-136">Select the downloaded template.</span></span>  
+10. <span data-ttu-id="bb33c-137">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="bb33c-137">Click OK.</span></span>
+    * <span data-ttu-id="bb33c-138">Legg til et nytt område for å opprette Excel-utdata dynamisk med like mange kolonner som du valgte (i brukerdialogskjemaet) for finansdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="bb33c-138">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="bb33c-139">Hver celle for hver enkelt kolonne vil representere navnet på én finansdimensjon.</span><span class="sxs-lookup"><span data-stu-id="bb33c-139">Each cell for every column will represent a single financial dimension’s name.</span></span>  
+11. <span data-ttu-id="bb33c-140">Klikk Legg til for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="bb33c-140">Click Add to open the drop dialog.</span></span>
+12. <span data-ttu-id="bb33c-141">Velg Excel\Område i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-141">In the tree, select 'Excel\Range'.</span></span>
+13. <span data-ttu-id="bb33c-142">Skriv inn DimNames i feltet Excel-område.</span><span class="sxs-lookup"><span data-stu-id="bb33c-142">In the Excel range field, type 'DimNames'.</span></span>
+    * <span data-ttu-id="bb33c-143">DimNames</span><span class="sxs-lookup"><span data-stu-id="bb33c-143">DimNames</span></span>  
+14. <span data-ttu-id="bb33c-144">Velg Vannrett i feltet Replikeringsretning.</span><span class="sxs-lookup"><span data-stu-id="bb33c-144">In the Replication direction field, select 'Horizontal'.</span></span>
+15. <span data-ttu-id="bb33c-145">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="bb33c-145">Click OK.</span></span>
+16. <span data-ttu-id="bb33c-146">Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-146">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+17. <span data-ttu-id="bb33c-147">Klikk Flytt opp.</span><span class="sxs-lookup"><span data-stu-id="bb33c-147">Click Move up.</span></span>
+18. <span data-ttu-id="bb33c-148">Velg 'Excel = "SampleFinDimWsReport"\Celle<DimNames>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-148">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<DimNames>'.</span></span>
+19. <span data-ttu-id="bb33c-149">Klikk Klipp ut.</span><span class="sxs-lookup"><span data-stu-id="bb33c-149">Click Cut.</span></span>
+20. <span data-ttu-id="bb33c-150">Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-150">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+21. <span data-ttu-id="bb33c-151">Klikk Lim inn.</span><span class="sxs-lookup"><span data-stu-id="bb33c-151">Click Paste.</span></span>
+22. <span data-ttu-id="bb33c-152">Utvid 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-152">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+23. <span data-ttu-id="bb33c-153">Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-153">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+24. <span data-ttu-id="bb33c-154">Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-154">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+25. <span data-ttu-id="bb33c-155">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-155">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+    * <span data-ttu-id="bb33c-156">Legg til et nytt område for å opprette Excel-utdata dynamisk med like mange kolonner som du valgte (i brukerdialogskjemaet) for finansdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="bb33c-156">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="bb33c-157">Hver celle for hver enkelt kolonne vil representere verdien for én finansdimensjon for hver rapporteringstransaksjon.</span><span class="sxs-lookup"><span data-stu-id="bb33c-157">Each cell for every column will represent a single financial dimension’s value for each reporting transaction.</span></span>  
+26. <span data-ttu-id="bb33c-158">Klikk Legg til område.</span><span class="sxs-lookup"><span data-stu-id="bb33c-158">Click Add Range.</span></span>
+27. <span data-ttu-id="bb33c-159">Skriv inn DimValues i feltet Excel-område.</span><span class="sxs-lookup"><span data-stu-id="bb33c-159">In the Excel range field, type 'DimValues'.</span></span>
+    * <span data-ttu-id="bb33c-160">DimValues</span><span class="sxs-lookup"><span data-stu-id="bb33c-160">DimValues</span></span>  
+28. <span data-ttu-id="bb33c-161">Velg Vannrett i feltet Replikeringsretning.</span><span class="sxs-lookup"><span data-stu-id="bb33c-161">In the Replication direction field, select 'Horizontal'.</span></span>
+29. <span data-ttu-id="bb33c-162">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="bb33c-162">Click OK.</span></span>
+30. <span data-ttu-id="bb33c-163">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<DimValues>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-163">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>'.</span></span>
+31. <span data-ttu-id="bb33c-164">Klikk Klipp ut.</span><span class="sxs-lookup"><span data-stu-id="bb33c-164">Click Cut.</span></span>
+32. <span data-ttu-id="bb33c-165">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-165">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+33. <span data-ttu-id="bb33c-166">Klikk Lim inn.</span><span class="sxs-lookup"><span data-stu-id="bb33c-166">Click Paste.</span></span>
+34. <span data-ttu-id="bb33c-167">Utvid 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-167">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
 
-## <a name="map-format-elements-to-data-sources"></a>Tilordne formatelementer til datakilder
-1. Klikk kategorien Tilordning.
-2. Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner i treet.
-3. Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste i treet.
-4. Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste i treet.
-5. Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste i treet.
-6. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett\celle<DimValues>' i treet.
-7. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste\Kode: Streng i treet.
-8. Klikk Bind.
-9. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.
-10. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste i treet.
-11. Klikk Bind.
-12. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Credit>' i treet.
-13. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Kredit: Reell i treet.
-14. Klikk Bind.
-15. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Debit>' i treet.
-16. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Debet: Reell i treet.
-17. Klikk Bind.
-18. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Currency>' i treet.
-19. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Valuta: Streng i treet.
-20. Klikk Bind.
-21. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransDate>' i treet.
-22. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dato: Dato i treet.
-23. Klikk Bind.
-24. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransVoucher>' i treet.
-25. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Bilag: Streng i treet.
-26. Klikk Bind.
-27. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransBatch>' i treet.
-28. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Parti: Streng i treet.
-29. Klikk Bind.
-30. Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.
-31. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste i treet.
-32. Klikk Bind.
-33. Velg Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett/celle<Batch> i treet.
-34. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Parti: Streng i treet.
-35. Klikk Bind.
-36. Velg Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett i treet.
-37. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste i treet.
-38. Klikk Bind.
-39. Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste i treet.
-40. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste\Kode: Streng i treet.
-41. Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett\celle<DimNames>' i treet.
-42. Klikk Bind.
-43. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste i treet.
-44. Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.
-45. Klikk Bind.
-46. Velg 'Excel = "SampleFinDimWsReport"\Celle<CompanyName>' i treet.
-47. Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Firma: Streng i treet.
-48. Klikk Bind.
-49. Klikk Lagre.
-50. Lukk siden.
+## <a name="map-format-elements-to-data-sources"></a><span data-ttu-id="bb33c-168">Tilordne formatelementer til datakilder</span><span class="sxs-lookup"><span data-stu-id="bb33c-168">Map format elements to data sources</span></span>
+1. <span data-ttu-id="bb33c-169">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="bb33c-169">Click the Mapping tab.</span></span>
+2. <span data-ttu-id="bb33c-170">Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-170">In the tree, expand 'model: Data model Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="bb33c-171">Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-171">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+4. <span data-ttu-id="bb33c-172">Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-172">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+5. <span data-ttu-id="bb33c-173">Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-173">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+6. <span data-ttu-id="bb33c-174">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett\celle<DimValues>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-174">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span></span>
+7. <span data-ttu-id="bb33c-175">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste\Kode: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-175">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String'.</span></span>
+8. <span data-ttu-id="bb33c-176">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-176">Click Bind.</span></span>
+9. <span data-ttu-id="bb33c-177">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/område<DimValues>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-177">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+10. <span data-ttu-id="bb33c-178">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dimensjonsdata: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-178">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+11. <span data-ttu-id="bb33c-179">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-179">Click Bind.</span></span>
+12. <span data-ttu-id="bb33c-180">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Credit>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-180">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>'.</span></span>
+13. <span data-ttu-id="bb33c-181">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Kredit: Reell i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-181">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real'.</span></span>
+14. <span data-ttu-id="bb33c-182">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-182">Click Bind.</span></span>
+15. <span data-ttu-id="bb33c-183">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Debit>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-183">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>'.</span></span>
+16. <span data-ttu-id="bb33c-184">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Debet: Reell i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-184">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real'.</span></span>
+17. <span data-ttu-id="bb33c-185">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-185">Click Bind.</span></span>
+18. <span data-ttu-id="bb33c-186">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<Currency>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-186">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>'.</span></span>
+19. <span data-ttu-id="bb33c-187">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Valuta: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-187">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String'.</span></span>
+20. <span data-ttu-id="bb33c-188">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-188">Click Bind.</span></span>
+21. <span data-ttu-id="bb33c-189">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransDate>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-189">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>'.</span></span>
+22. <span data-ttu-id="bb33c-190">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Dato: Dato i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-190">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date'.</span></span>
+23. <span data-ttu-id="bb33c-191">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-191">Click Bind.</span></span>
+24. <span data-ttu-id="bb33c-192">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransVoucher>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-192">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>'.</span></span>
+25. <span data-ttu-id="bb33c-193">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste\Bilag: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-193">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String'.</span></span>
+26. <span data-ttu-id="bb33c-194">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-194">Click Bind.</span></span>
+27. <span data-ttu-id="bb33c-195">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett/celle<TransBatch>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-195">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>'.</span></span>
+28. <span data-ttu-id="bb33c-196">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Parti: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-196">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+29. <span data-ttu-id="bb33c-197">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-197">Click Bind.</span></span>
+30. <span data-ttu-id="bb33c-198">Velg 'Excel = "SampleFinDimWsReport"\Område<JournalLine>Loddrett/område<TransactionLine>: Loddrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-198">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+31. <span data-ttu-id="bb33c-199">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Transaksjon: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-199">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+32. <span data-ttu-id="bb33c-200">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-200">Click Bind.</span></span>
+33. <span data-ttu-id="bb33c-201">Velg Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett/celle<Batch> i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-201">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>'.</span></span>
+34. <span data-ttu-id="bb33c-202">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste\Parti: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-202">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+35. <span data-ttu-id="bb33c-203">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-203">Click Bind.</span></span>
+36. <span data-ttu-id="bb33c-204">Velg Excel = "SampleFinDimWsReport"\Område<JournalLine>:Loddrett i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-204">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+37. <span data-ttu-id="bb33c-205">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Journal: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-205">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+38. <span data-ttu-id="bb33c-206">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-206">Click Bind.</span></span>
+39. <span data-ttu-id="bb33c-207">Utvid modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-207">In the tree, expand 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+40. <span data-ttu-id="bb33c-208">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste\Kode: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-208">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String'.</span></span>
+41. <span data-ttu-id="bb33c-209">Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett\celle<DimNames>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-209">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.</span></span>
+42. <span data-ttu-id="bb33c-210">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-210">Click Bind.</span></span>
+43. <span data-ttu-id="bb33c-211">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Dimensjonsinnstilling: Postliste i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-211">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+44. <span data-ttu-id="bb33c-212">Velg 'Excel = "SampleFinDimWsReport"\Område<DimNames>:Vannrett' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-212">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+45. <span data-ttu-id="bb33c-213">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-213">Click Bind.</span></span>
+46. <span data-ttu-id="bb33c-214">Velg 'Excel = "SampleFinDimWsReport"\Celle<CompanyName>' i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-214">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<CompanyName>'.</span></span>
+47. <span data-ttu-id="bb33c-215">Velg modell: Datamodellen Eksempelmodell for finansdimensjoner\Firma: Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="bb33c-215">In the tree, select 'model: Data model Financial dimensions sample model\Company: String'.</span></span>
+48. <span data-ttu-id="bb33c-216">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="bb33c-216">Click Bind.</span></span>
+49. <span data-ttu-id="bb33c-217">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="bb33c-217">Click Save.</span></span>
+50. <span data-ttu-id="bb33c-218">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="bb33c-218">Close the page.</span></span>
 
 

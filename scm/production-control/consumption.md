@@ -20,68 +20,68 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1bd3168e80719c86e9a0541200fdb1608410c8f5
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 88fb31fc425c9fbd2ef96e4497f120da4440af04
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="calculate-material-consumption"></a>Beregne materialforbruk
+# <a name="calculate-material-consumption"></a><span data-ttu-id="77d39-103">Beregne materialforbruk</span><span class="sxs-lookup"><span data-stu-id="77d39-103">Calculate material consumption</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder informasjon om ulike alternativer som er knyttet til beregning av materialforbruk. 
+<span data-ttu-id="77d39-104">Denne artikkelen inneholder informasjon om ulike alternativer som er knyttet til beregning av materialforbruk.</span><span class="sxs-lookup"><span data-stu-id="77d39-104">This article provides information about various options that are related to the calculation of material consumption.</span></span> 
 
-Følgende alternativer som er knyttet til beregningen av materialforbruk, er tilgjengelige i fanen **Oppsett** og **Trinnforbruk** i hurtigfanen **Linjedetaljer** på **Stykkliste**-siden.
+<span data-ttu-id="77d39-105">Følgende alternativer som er knyttet til beregningen av materialforbruk, er tilgjengelige i fanen **Oppsett** og **Trinnforbruk** i hurtigfanen **Linjedetaljer** på **Stykkliste**-siden.</span><span class="sxs-lookup"><span data-stu-id="77d39-105">The following options that are related to the calculation of material consumption are available on the **Setup** and **Step consumption** tabs on the **Line details** FastTab of the **Bill of materials** page.</span></span>
 
-## <a name="variable-and-constant-consumption"></a>Variabelt og konstant forbruk
-I feltet **Forbruk er** kan du velge om forbruk skal beregnes som et konstant antall eller et variabelt antall. Velg **Konstant** hvis et fast antall eller volum eller kreves for produksjonen, uansett antallet som produseres. Velg **Variabel**, som er standardinnstillingen, hvis den nødvendige mengden materiale i ferdigvarene er proporsjonal med antall ferdigvarer som produseres.
+## <a name="variable-and-constant-consumption"></a><span data-ttu-id="77d39-106">Variabelt og konstant forbruk</span><span class="sxs-lookup"><span data-stu-id="77d39-106">Variable and constant consumption</span></span>
+<span data-ttu-id="77d39-107">I feltet **Forbruk er** kan du velge om forbruk skal beregnes som et konstant antall eller et variabelt antall.</span><span class="sxs-lookup"><span data-stu-id="77d39-107">In the **Consumption is** field, you can select whether consumption should be calculated as a constant quantity or a variable quantity.</span></span> <span data-ttu-id="77d39-108">Velg **Konstant** hvis et fast antall eller volum eller kreves for produksjonen, uansett antallet som produseres.</span><span class="sxs-lookup"><span data-stu-id="77d39-108">Select **Constant** if a fixed quantity or volume is required for the production, regardless of the quantity that is produced.</span></span> <span data-ttu-id="77d39-109">Velg **Variabel**, som er standardinnstillingen, hvis den nødvendige mengden materiale i ferdigvarene er proporsjonal med antall ferdigvarer som produseres.</span><span class="sxs-lookup"><span data-stu-id="77d39-109">Select **Variable**, which is the default setting, if the required amount of material in the finished goods is proportional to the number of finished goods that are produced.</span></span>
 
-## <a name="calculating-consumption-from-a-formula"></a>Beregne forbruk med en formel
-I **Formel**-feltet kan du definere forskjellige formler for beregning av materialforbruk. Hvis du bruker standardverdien **Standard**, beregnes ikke forbruket av en formel. Følgende formler fungerer sammen med feltet **Høyde**, **Bredde**, **Dybde**, **Tetthet** og **Konstant**:
+## <a name="calculating-consumption-from-a-formula"></a><span data-ttu-id="77d39-110">Beregne forbruk med en formel</span><span class="sxs-lookup"><span data-stu-id="77d39-110">Calculating consumption from a formula</span></span>
+<span data-ttu-id="77d39-111">I **Formel**-feltet kan du definere forskjellige formler for beregning av materialforbruk.</span><span class="sxs-lookup"><span data-stu-id="77d39-111">In the **Formula** field, you can set up various formulas for calculating material consumption.</span></span> <span data-ttu-id="77d39-112">Hvis du bruker standardverdien **Standard**, beregnes ikke forbruket av en formel.</span><span class="sxs-lookup"><span data-stu-id="77d39-112">If you use the default value, **Standard**, the consumption isn't calculated from a formula.</span></span> <span data-ttu-id="77d39-113">Følgende formler fungerer sammen med feltet **Høyde**, **Bredde**, **Dybde**, **Tetthet** og **Konstant**:</span><span class="sxs-lookup"><span data-stu-id="77d39-113">The following formulas work together with the **Height**, **Width**, **Depth**, **Density**, and **Constant** fields:</span></span>
 
--   Høyde \* Konstant
--   Høyde \* Bredde \* Konstant
--   Høyde \* Bredde \* Dybde \* Konstant
--   (Høyde \* Bredde \* Dybde/Tetthet) \* Konstant
+-   <span data-ttu-id="77d39-114">Høyde \* Konstant</span><span class="sxs-lookup"><span data-stu-id="77d39-114">Height \* Constant</span></span>
+-   <span data-ttu-id="77d39-115">Høyde \* Bredde \* Konstant</span><span class="sxs-lookup"><span data-stu-id="77d39-115">Height \* Width \* Constant</span></span>
+-   <span data-ttu-id="77d39-116">Høyde \* Bredde \* Dybde \* Konstant</span><span class="sxs-lookup"><span data-stu-id="77d39-116">Height \* Width \* Depth \* Constant</span></span>
+-   <span data-ttu-id="77d39-117">(Høyde \* Bredde \* Dybde/Tetthet) \* Konstant</span><span class="sxs-lookup"><span data-stu-id="77d39-117">(Height \* Width \* Depth / Density) \* Constant</span></span>
 
-## <a name="rounding-up-and-multiples"></a>Avrunding opp og faktorer
-Sammen gjør feltet **Avrundes opp** og **Faktorer** det mulig å runde opp materialforbruksverdien. Du kan for eksempel runde opp verdien i henhold til håndteringsenheten der råvarene plukkes for produksjon. Følgende alternativer er tilgjengelige i **Avrundes opp**-feltet: **Antall**, **Mål** og **Forbruk**.
+## <a name="rounding-up-and-multiples"></a><span data-ttu-id="77d39-118">Avrunding opp og faktorer</span><span class="sxs-lookup"><span data-stu-id="77d39-118">Rounding up and multiples</span></span>
+<span data-ttu-id="77d39-119">Sammen gjør feltet **Avrundes opp** og **Faktorer** det mulig å runde opp materialforbruksverdien.</span><span class="sxs-lookup"><span data-stu-id="77d39-119">Together, the **Rounding up** and **Multiples** fields let you round up the material consumption value.</span></span> <span data-ttu-id="77d39-120">Du kan for eksempel runde opp verdien i henhold til håndteringsenheten der råvarene plukkes for produksjon.</span><span class="sxs-lookup"><span data-stu-id="77d39-120">For example, you can round up the value according to the handling unit in which the raw material is picked for production.</span></span> <span data-ttu-id="77d39-121">Følgende alternativer er tilgjengelige i **Avrundes opp**-feltet: **Antall**, **Mål** og **Forbruk**.</span><span class="sxs-lookup"><span data-stu-id="77d39-121">The following options are available in the **Rounding up** field: **Quantity**, **Measurement**, and **Consumption**.</span></span>
 
-### <a name="quantity"></a>Antall
+### <a name="quantity"></a><span data-ttu-id="77d39-122">Antall</span><span class="sxs-lookup"><span data-stu-id="77d39-122">Quantity</span></span>
 
-Hvis du velger **Antall** som avrundingsmåte, må antallet være et multiplumstall av det angitte antallet. For eksempel hvis du må bruke hele tall, angir du **1** i **Faktorer**-feltet. Tall rundes deretter opp til et antall som kan deles med 1.
+<span data-ttu-id="77d39-123">Hvis du velger **Antall** som avrundingsmåte, må antallet være et multiplumstall av det angitte antallet.</span><span class="sxs-lookup"><span data-stu-id="77d39-123">If you select **Quantity** as the rounding-up mechanism, the quantity must be a multiple of the specified quantity.</span></span> <span data-ttu-id="77d39-124">For eksempel hvis du må bruke hele tall, angir du **1** i **Faktorer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="77d39-124">For example, if whole numbers are required, select **1** in the **Multiples** field.</span></span> <span data-ttu-id="77d39-125">Tall rundes deretter opp til et antall som kan deles med 1.</span><span class="sxs-lookup"><span data-stu-id="77d39-125">Numbers are then rounded up to a quantity that is divisible by 1.</span></span>
 
-### <a name="measurement"></a>Mål
+### <a name="measurement"></a><span data-ttu-id="77d39-126">Mål</span><span class="sxs-lookup"><span data-stu-id="77d39-126">Measurement</span></span>
 
-Vanligvis merker du av for **Mål** som avrundingsmåte når råvarene har bestemte dimensjoner. Et metallrør på 2 meter kreves for eksempel for en ferdigvare, og metallrørene kommer i 4,5 meters lengder. I dette tilfellet kan avrundingsmåten **Mål** brukes til å beregne hvor mange metallrør som kreves for å produsere et gitt antall enheter av ferdigvaren. I dette eksemplet er **Formel**-feltet satt til **Høyde \* Konstant**. **Høyde**-feltet er satt til **2** for å angi lengden på røret som kreves for den ferdige varen. **Flere**-feltet settes til **4,5** for å angi at røret plukkes i lengder på 4,5 meter. Her er beregningen:
+<span data-ttu-id="77d39-127">Vanligvis merker du av for **Mål** som avrundingsmåte når råvarene har bestemte dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="77d39-127">Typically, you select **Measurement** as the rounding-up mechanism when the raw material comes in specific dimensions.</span></span> <span data-ttu-id="77d39-128">Et metallrør på 2 meter kreves for eksempel for en ferdigvare, og metallrørene kommer i 4,5 meters lengder.</span><span class="sxs-lookup"><span data-stu-id="77d39-128">For example, a piece of 2-meter metal tube is required for a finished good, and the metal tube is stored in 4.5-meter lengths.</span></span> <span data-ttu-id="77d39-129">I dette tilfellet kan avrundingsmåten **Mål** brukes til å beregne hvor mange metallrør som kreves for å produsere et gitt antall enheter av ferdigvaren.</span><span class="sxs-lookup"><span data-stu-id="77d39-129">In this case, the **Measurement** rounding-up mechanism can be used to calculate how many metal tubes are required to produce a specific number of pieces of the finished good.</span></span> <span data-ttu-id="77d39-130">I dette eksemplet er **Formel**-feltet satt til **Høyde \* Konstant**.</span><span class="sxs-lookup"><span data-stu-id="77d39-130">For this example, the **Formula** field is set to **Height \* Constant**.</span></span> <span data-ttu-id="77d39-131">**Høyde**-feltet er satt til **2** for å angi lengden på røret som kreves for den ferdige varen.</span><span class="sxs-lookup"><span data-stu-id="77d39-131">The **Height** field is set to **2** to indicate the length of the tube that is required for the finished good.</span></span> <span data-ttu-id="77d39-132">**Flere**-feltet settes til **4,5** for å angi at røret plukkes i lengder på 4,5 meter.</span><span class="sxs-lookup"><span data-stu-id="77d39-132">The **Multiple** field is set to **4.5** to indicate that the tube is picked in lengths of 4.5 meters.</span></span> <span data-ttu-id="77d39-133">Her er beregningen:</span><span class="sxs-lookup"><span data-stu-id="77d39-133">Here is the calculation:</span></span>
 
-1.  Antallet som kreves for 10 stykker av ferdigvaren: 10 ÷ 2 = 5 stykker
-2.  Totalt forbruk: 4,5 x 5 = 22,5 meter med metallrør
+1.  <span data-ttu-id="77d39-134">Antallet som kreves for 10 stykker av ferdigvaren: 10 ÷ 2 = 5 stykker</span><span class="sxs-lookup"><span data-stu-id="77d39-134">Number of multiples that are required for 10 pieces of the finished good: 10 ÷ 2 = 5 pieces</span></span>
+2.  <span data-ttu-id="77d39-135">Totalt forbruk: 4,5 x 5 = 22,5 meter med metallrør</span><span class="sxs-lookup"><span data-stu-id="77d39-135">Total consumption:  4.5 × 5 = 22.5 meters of metal tube</span></span>
 
-Det forutsettes av 0,5 meter rør kasseres for hvert rør som forbrukes.
+<span data-ttu-id="77d39-136">Det forutsettes av 0,5 meter rør kasseres for hvert rør som forbrukes.</span><span class="sxs-lookup"><span data-stu-id="77d39-136">It's assumed that 0.5 meter of tube is scrapped for every five pieces of tube that are consumed.</span></span>
 
-### <a name="consumption"></a>Forbruk
+### <a name="consumption"></a><span data-ttu-id="77d39-137">Forbruk</span><span class="sxs-lookup"><span data-stu-id="77d39-137">Consumption</span></span>
 
-Vanligvis merker du av for **Forbruk** som avrundingsmåte når råvarer må plukkes i hele antall av en bestemt håndteringsenhet av produktet. 2 liter maling brukes for eksempel til å produsere en stykk ferdigvare, og malingen plukkes i 25 liters spann. I dette tilfellet kan avrundingsmåten **Forbruk** brukes til å avrunde forbruk til hele tall for 25 liters spann. Her er beregningen av hvor mye maling som kreves hvis det skal produseres 180 stykker av ferdigvaren:
+<span data-ttu-id="77d39-138">Vanligvis merker du av for **Forbruk** som avrundingsmåte når råvarer må plukkes i hele antall av en bestemt håndteringsenhet av produktet.</span><span class="sxs-lookup"><span data-stu-id="77d39-138">Typically, you select **Consumption** as the rounding-up mechanism when raw material must be picked in whole quantities of a specific handling unit of the product.</span></span> <span data-ttu-id="77d39-139">2 liter maling brukes for eksempel til å produsere en stykk ferdigvare, og malingen plukkes i 25 liters spann.</span><span class="sxs-lookup"><span data-stu-id="77d39-139">For example, 2 quarts of paint are used to produce one piece of a finished good, and the paint is picked in 25-quart cans.</span></span> <span data-ttu-id="77d39-140">I dette tilfellet kan avrundingsmåten **Forbruk** brukes til å avrunde forbruk til hele tall for 25 liters spann.</span><span class="sxs-lookup"><span data-stu-id="77d39-140">In this case, the **Consumption** rounding-up mechanism can be used to round up consumption to whole numbers of 25-quart cans.</span></span> <span data-ttu-id="77d39-141">Her er beregningen av hvor mye maling som kreves hvis det skal produseres 180 stykker av ferdigvaren:</span><span class="sxs-lookup"><span data-stu-id="77d39-141">Here is the calculation for the amount of paint that is required if 180 pieces of the finished good must be produced:</span></span>
 
-1.  Maling som kreves, unntatt svinn: 180 x 2 = 360 liter
-2.  Antall spann: 360 ÷ 25 = 14,4, som rundes opp til 15
-3.  Maling som kreves, inkludert svinn: 15 x 25 = 375 liter
+1.  <span data-ttu-id="77d39-142">Maling som kreves, unntatt svinn: 180 x 2 = 360 liter</span><span class="sxs-lookup"><span data-stu-id="77d39-142">Paint that is required, excluding scrap: 180 × 2 = 360 quarts</span></span>
+2.  <span data-ttu-id="77d39-143">Antall spann: 360 ÷ 25 = 14,4, som rundes opp til 15</span><span class="sxs-lookup"><span data-stu-id="77d39-143">Number of cans: 360 ÷ 25 = 14.4, which is rounded up to 15</span></span>
+3.  <span data-ttu-id="77d39-144">Maling som kreves, inkludert svinn: 15 x 25 = 375 liter</span><span class="sxs-lookup"><span data-stu-id="77d39-144">Paint that is required, including scrap: 15 × 25 = 375 quarts</span></span>
 
-## <a name="step-consumption"></a>Trinnforbruk
-Trinnforbruk brukes til å beregne konstant forbruk i antallsintervaller. Hvis du velger **Trinnforbruk** i **Formel**-feltet i **Oppsett**-kategorien, kan du legge til informasjon om trinnene i kategorien **Trinnforbruk**. Det faste forbruksantallet kan defineres i intervaller av det produserte antallet. For eksempel er trinnforbruk definert som i følgende tabell.
+## <a name="step-consumption"></a><span data-ttu-id="77d39-145">Trinnforbruk</span><span class="sxs-lookup"><span data-stu-id="77d39-145">Step consumption</span></span>
+<span data-ttu-id="77d39-146">Trinnforbruk brukes til å beregne konstant forbruk i antallsintervaller.</span><span class="sxs-lookup"><span data-stu-id="77d39-146">Step consumption is used to calculate constant consumption in quantity intervals.</span></span> <span data-ttu-id="77d39-147">Hvis du velger **Trinnforbruk** i **Formel**-feltet i **Oppsett**-kategorien, kan du legge til informasjon om trinnene i kategorien **Trinnforbruk**.</span><span class="sxs-lookup"><span data-stu-id="77d39-147">If you select **Step consumption** in the **Formula** field on the **Setup** tab, you can add information about the steps on the **Step consumption** tab.</span></span> <span data-ttu-id="77d39-148">Det faste forbruksantallet kan defineres i intervaller av det produserte antallet.</span><span class="sxs-lookup"><span data-stu-id="77d39-148">The fixed consumed quantity can be set up in intervals of the produced quantity.</span></span> <span data-ttu-id="77d39-149">For eksempel er trinnforbruk definert som i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="77d39-149">For example, step consumption is set up as shown in the following table.</span></span>
 
-| Fra serie | Antall |
+| <span data-ttu-id="77d39-150">Fra serie</span><span class="sxs-lookup"><span data-stu-id="77d39-150">From series</span></span> | <span data-ttu-id="77d39-151">Antall</span><span class="sxs-lookup"><span data-stu-id="77d39-151">Quantity</span></span> |
 |-------------|----------|
-| 0,00        | 10,0000  |
-| 100,00      | 20,0000  |
-| 200,00      | 40,0000  |
+| <span data-ttu-id="77d39-152">0,00</span><span class="sxs-lookup"><span data-stu-id="77d39-152">0.00</span></span>        | <span data-ttu-id="77d39-153">10,0000</span><span class="sxs-lookup"><span data-stu-id="77d39-153">10.0000</span></span>  |
+| <span data-ttu-id="77d39-154">100,00</span><span class="sxs-lookup"><span data-stu-id="77d39-154">100.00</span></span>      | <span data-ttu-id="77d39-155">20,0000</span><span class="sxs-lookup"><span data-stu-id="77d39-155">20.0000</span></span>  |
+| <span data-ttu-id="77d39-156">200,00</span><span class="sxs-lookup"><span data-stu-id="77d39-156">200.00</span></span>      | <span data-ttu-id="77d39-157">40,0000</span><span class="sxs-lookup"><span data-stu-id="77d39-157">40.0000</span></span>  |
 
-Stykklisteantallet er 1, og produksjonsantallet er 110. Formelen for forbruket er av Fra serie (Antall) = Forbruk. Ettersom produksjonsantallet er 110, kommer det inn under "Fra 100-serien." Derfor er antallet 20.
+<span data-ttu-id="77d39-158">Stykklisteantallet er 1, og produksjonsantallet er 110.</span><span class="sxs-lookup"><span data-stu-id="77d39-158">The bill of materials (BOM) quantity is 1, and the production quantity is 110.</span></span> <span data-ttu-id="77d39-159">Formelen for forbruket er av Fra serie (Antall) = Forbruk.</span><span class="sxs-lookup"><span data-stu-id="77d39-159">The formula for the consumption is From series (Quantity) = Consumption.</span></span> <span data-ttu-id="77d39-160">Ettersom produksjonsantallet er 110, kommer det inn under "Fra 100-serien."</span><span class="sxs-lookup"><span data-stu-id="77d39-160">Because the production quantity is 110, it falls into the "From 100 series."</span></span> <span data-ttu-id="77d39-161">Derfor er antallet 20.</span><span class="sxs-lookup"><span data-stu-id="77d39-161">Therefore, the quantity is 20.</span></span>
 
 
 

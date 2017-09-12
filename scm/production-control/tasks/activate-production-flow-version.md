@@ -17,27 +17,27 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 814aec9ba27f690143fd9463e2d95bdca0670418
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7f081d9d591c71cbe02e25bbdb50aa999b558ffa
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="activate-a-production-flow-version"></a>Aktivere en produksjonsflytversjon
+# <a name="activate-a-production-flow-version"></a><span data-ttu-id="67351-103">Aktivere en produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="67351-103">Activate a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Før du kan opprette Kanban-jobber og aktiviteter kan behandles for en produksjonsflytversjon, må du aktivere versjonen. Det er anbefalt fremgangsmåte å aktiver versjonen før utløp av gjeldende dato og klokkeslett. hvis du vil fullføre denne oppgaven, må du ha en produksjonsflytversjon med statusen Utkast for å aktivere versjonen. 
+<span data-ttu-id="67351-104">Før du kan opprette Kanban-jobber og aktiviteter kan behandles for en produksjonsflytversjon, må du aktivere versjonen.</span><span class="sxs-lookup"><span data-stu-id="67351-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="67351-105">Det er anbefalt fremgangsmåte å aktiver versjonen før utløp av gjeldende dato og klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="67351-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="67351-106">hvis du vil fullføre denne oppgaven, må du ha en produksjonsflytversjon med statusen Utkast for å aktivere versjonen.</span><span class="sxs-lookup"><span data-stu-id="67351-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
 
 
-## <a name="find-and-activate-a-production-flow-version"></a>Finne og aktivere en produksjonsflytversjon
-1. Gå til Produksjonsflyter.
-2. Finn og velg ønsket post i listen.
-    * Velg en produksjonsflytversjon med Utkast i Planstatus-feltet.  
-3. Klikk koblingen i den valgte raden i listen.
-4. Finn og velg ønsket post i listen.
-    * Velg en produksjonsflytversjon med Utkast i Planstatus-feltet.  
-5. Klikk Aktiver.
-6. Klikk OK.
+## <a name="find-and-activate-a-production-flow-version"></a><span data-ttu-id="67351-107">Finne og aktivere en produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="67351-107">Find and activate a production flow version</span></span>
+1. <span data-ttu-id="67351-108">Gå til Produksjonsflyter.</span><span class="sxs-lookup"><span data-stu-id="67351-108">Go to Production flows.</span></span>
+2. <span data-ttu-id="67351-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="67351-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="67351-110">Velg en produksjonsflytversjon med Utkast i Planstatus-feltet.</span><span class="sxs-lookup"><span data-stu-id="67351-110">Select a production flow version that has Draft in the Plan status field.</span></span>  
+3. <span data-ttu-id="67351-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="67351-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="67351-112">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="67351-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="67351-113">Velg en produksjonsflytversjon med Utkast i Planstatus-feltet.</span><span class="sxs-lookup"><span data-stu-id="67351-113">Select a production flow version that has Draft in the Plan status field.</span></span>  
+5. <span data-ttu-id="67351-114">Klikk Aktiver.</span><span class="sxs-lookup"><span data-stu-id="67351-114">Click Activate.</span></span>
+6. <span data-ttu-id="67351-115">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="67351-115">Click OK.</span></span>
 
 

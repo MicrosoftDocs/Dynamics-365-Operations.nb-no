@@ -15,24 +15,24 @@ ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: ccd167b2c90b2602a79dcb1cc8577020a60327b8
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="transportation-management-overview"></a>Oversikt over transportstyring
+# <a name="transportation-management-overview"></a><span data-ttu-id="021f5-103">Oversikt over transportstyring</span><span class="sxs-lookup"><span data-stu-id="021f5-103">Transportation management overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet gir en oversikt over transportstyringsfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations
+<span data-ttu-id="021f5-104">Dette emnet gir en oversikt over transportstyringsfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="021f5-104">This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-Med Transportstyring kan du administrere firmaets transport og identifisere leverandør- og rutingløsninger for innkommende og utgående ordrer. Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse. I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring i Microsoft Dynamics 365 for Finance and Operations.
+<span data-ttu-id="021f5-105">Med Transportstyring kan du administrere firmaets transport og identifisere leverandør- og rutingløsninger for innkommende og utgående ordrer.</span><span class="sxs-lookup"><span data-stu-id="021f5-105">Transportation management lets you use manage your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders.</span></span> <span data-ttu-id="021f5-106">Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse.</span><span class="sxs-lookup"><span data-stu-id="021f5-106">For example, you can identify the fastest route or the least expensive rate for a shipment.</span></span> <span data-ttu-id="021f5-107">I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="021f5-107">The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
 <table>
 <colgroup>
@@ -41,50 +41,50 @@ Med Transportstyring kan du administrere firmaets transport og identifisere leve
 </colgroup>
 <thead>
 <tr class="header">
-<th>Scenario</th>
-<th>Hvordan Transportstyring kan hjelpe</th>
+<th><span data-ttu-id="021f5-108">Scenario</span><span class="sxs-lookup"><span data-stu-id="021f5-108">Scenario</span></span></th>
+<th><span data-ttu-id="021f5-109">Hvordan Transportstyring kan hjelpe</span><span class="sxs-lookup"><span data-stu-id="021f5-109">How Transportation management can help</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Bruk eksterne logistikkleverandører for transportaktiviteter.</td>
-<td>Bruk Transportstuyring til innkommende og utgående transport.</td>
+<td><span data-ttu-id="021f5-110">Bruk eksterne logistikkleverandører for transportaktiviteter.</span><span class="sxs-lookup"><span data-stu-id="021f5-110">Use external logistics providers for transportation activities.</span></span></td>
+<td><span data-ttu-id="021f5-111">Bruk Transportstuyring til innkommende og utgående transport.</span><span class="sxs-lookup"><span data-stu-id="021f5-111">Use Transportation management for inbound and/or outbound transportation.</span></span></td>
 </tr>
 <tr class="even">
-<td>Firmaets egen flåte er tilgjengelige for levering/henting, og leveringsavgifter sendes videre til kunder.</td>
-<td>For utgående prosesser kan du bruke Transportstyring til å finne transporttilleggene og sende dem videre til kundene. Det er imidlertid ikke nødvendig å avstemme transportørfakturaen.</td>
+<td><span data-ttu-id="021f5-112">Firmaets egen flåte er tilgjengelige for levering/henting, og leveringsavgifter sendes videre til kunder.</span><span class="sxs-lookup"><span data-stu-id="021f5-112">The company's own fleet is available for delivery/pickup, and delivery charges are passed on to customers.</span></span></td>
+<td><span data-ttu-id="021f5-113">For utgående prosesser kan du bruke Transportstyring til å finne transporttilleggene og sende dem videre til kundene.</span><span class="sxs-lookup"><span data-stu-id="021f5-113">For the outbound processes, you can use Transportation management to determine the transportation charges and pass them on to customers.</span></span> <span data-ttu-id="021f5-114">Det er imidlertid ikke nødvendig å avstemme transportørfakturaen.</span><span class="sxs-lookup"><span data-stu-id="021f5-114">However, the carrier invoice reconciliation process isn't required.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Firmaets egen flåte er tilgjengelige for levering/henting, men leveringstillegg sendes ikke videre til kunder, fordi produktprisene inkluderer transport.</td>
-<td>Mye av funksjonaliteten i Transportstyring er ikke nødvendig å bruke. Du kan imidlertid bruke Transportstyring for å finne satsene for transport og justere salgsprisen tilsvarende.</td>
+<td><span data-ttu-id="021f5-115">Firmaets egen flåte er tilgjengelige for levering/henting, men leveringstillegg sendes ikke videre til kunder, fordi produktprisene inkluderer transport.</span><span class="sxs-lookup"><span data-stu-id="021f5-115">The company's own fleet is available for delivery/pickup, but delivery charges aren't passed on to customers, because product prices include transportation.</span></span></td>
+<td><span data-ttu-id="021f5-116">Mye av funksjonaliteten i Transportstyring er ikke nødvendig å bruke.</span><span class="sxs-lookup"><span data-stu-id="021f5-116">A lot of the Transportation management functionality isn't required.</span></span> <span data-ttu-id="021f5-117">Du kan imidlertid bruke Transportstyring for å finne satsene for transport og justere salgsprisen tilsvarende.</span><span class="sxs-lookup"><span data-stu-id="021f5-117">However, you can use Transportation management to determine the transportation rates and adjust the sales price accordingly.</span></span></td>
 </tr>
 <tr class="even">
-<td>Logistikktjenesten tilbys av en annen juridisk enhet i det samme firmaet.</td>
+<td><span data-ttu-id="021f5-118">Logistikktjenesten tilbys av en annen juridisk enhet i det samme firmaet.</span><span class="sxs-lookup"><span data-stu-id="021f5-118">Logistics service is provided by another legal entity in the same company.</span></span></td>
 <td><ul>
-<li>Du kan bruke Transportstyring ved å behandle den andre juridiske enheten som enhver annen andre transportør. Du kan ikke automatisere de økonomiske transaksjonene mellom juridiske enheter. Derfor må du behandle disse transaksjonene manuelt (for eksempel ved å opprette en bestilling).</li>
-<li>I den juridiske enheten som sørger for logistikktjenestene, kan Transportstyrng brukes til å bestemme transportsatser.</li>
+<li><span data-ttu-id="021f5-119">Du kan bruke Transportstyring ved å behandle den andre juridiske enheten som enhver annen andre transportør.</span><span class="sxs-lookup"><span data-stu-id="021f5-119">You can use Transportation management by treating the other legal entity like any other shipping carrier.</span></span> <span data-ttu-id="021f5-120">Du kan ikke automatisere de økonomiske transaksjonene mellom juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="021f5-120">You can't automate the economic transactions between legal entities.</span></span> <span data-ttu-id="021f5-121">Derfor må du behandle disse transaksjonene manuelt (for eksempel ved å opprette en bestilling).</span><span class="sxs-lookup"><span data-stu-id="021f5-121">Therefore, you must handle these transactions manually (for example, by creating a purchase order).</span></span></li>
+<li><span data-ttu-id="021f5-122">I den juridiske enheten som sørger for logistikktjenestene, kan Transportstyrng brukes til å bestemme transportsatser.</span><span class="sxs-lookup"><span data-stu-id="021f5-122">In the legal entity that provides the logistics services, Transportation management can be used to determine transportation rates.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Planlegge transport i Finance og Operations
-I Transportstyring kan transportplanlegging baseres på ordrer eller på forsendelsene som opprettes basert på disse ordrene. Forsendelsene finnes alltid på et bestemt tidspunkt, men de kreves ikke for planlegging av transport. Overføringsordrer inngår i det utgående scenariet og kan planlegges sammen med salgsordrer. 
+## <a name="planning-transportation-in-finance-and-operations"></a><span data-ttu-id="021f5-123">Planlegge transport i Finance og Operations</span><span class="sxs-lookup"><span data-stu-id="021f5-123">Planning transportation in Finance and Operations</span></span>
+<span data-ttu-id="021f5-124">I Transportstyring kan transportplanlegging baseres på ordrer eller på forsendelsene som opprettes basert på disse ordrene.</span><span class="sxs-lookup"><span data-stu-id="021f5-124">In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders.</span></span> <span data-ttu-id="021f5-125">Forsendelsene finnes alltid på et bestemt tidspunkt, men de kreves ikke for planlegging av transport.</span><span class="sxs-lookup"><span data-stu-id="021f5-125">The shipments always exist at some point in time but aren't required for transportation planning.</span></span> <span data-ttu-id="021f5-126">Overføringsordrer inngår i det utgående scenariet og kan planlegges sammen med salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="021f5-126">Transfer orders are part of the outbound scenario and can be planned together with sales orders.</span></span> 
 
 ![Laste inn tegning](./media/Load-drawing1-1024x477.jpg)
 
-## <a name="inbound-transportation"></a>Innkommende transport
-Når du bestiller varer fra en leverandør og varene må leveres til lageret, kan det være aktuelt å ordne med transporten av varene selv. Du kan bruke Dynamics 365 for Operations til å planlegge transport og mottak av en innkommende last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last. 
+## <a name="inbound-transportation"></a><span data-ttu-id="021f5-128">Innkommende transport</span><span class="sxs-lookup"><span data-stu-id="021f5-128">Inbound transportation</span></span>
+<span data-ttu-id="021f5-129">Når du bestiller varer fra en leverandør og varene må leveres til lageret, kan det være aktuelt å ordne med transporten av varene selv.</span><span class="sxs-lookup"><span data-stu-id="021f5-129">When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself.</span></span> <span data-ttu-id="021f5-130">Du kan bruke Dynamics 365 for Operations til å planlegge transport og mottak av en innkommende last.</span><span class="sxs-lookup"><span data-stu-id="021f5-130">You can use Finance and Operations to plan the transportation and receipt of the inbound load.</span></span> <span data-ttu-id="021f5-131">Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last.</span><span class="sxs-lookup"><span data-stu-id="021f5-131">The following illustration shows the business process flow for planning transportation for an inbound load.</span></span> 
 
 ![Forretningsprosessflyt for transport av innkommende last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## <a name="outbound-transportation"></a>Utgående transport
-Du kan planlegge og behandle en utgående last for å sende bestemte varer fra lageret for et firma til en kunde. Du kan bruke Dynamics 365 for Operations til å planlegge transport forsendelse av en utgående last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging og behandling av utgående laster for forsendelse. 
+## <a name="outbound-transportation"></a><span data-ttu-id="021f5-133">Utgående transport</span><span class="sxs-lookup"><span data-stu-id="021f5-133">Outbound transportation</span></span>
+<span data-ttu-id="021f5-134">Du kan planlegge og behandle en utgående last for å sende bestemte varer fra lageret for et firma til en kunde.</span><span class="sxs-lookup"><span data-stu-id="021f5-134">You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer.</span></span> <span data-ttu-id="021f5-135">Du kan bruke Dynamics 365 for Operations til å planlegge transport forsendelse av en utgående last.</span><span class="sxs-lookup"><span data-stu-id="021f5-135">You can use Finance and Operations to plan the transportation and shipping of an outbound load.</span></span> <span data-ttu-id="021f5-136">Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging og behandling av utgående laster for forsendelse.</span><span class="sxs-lookup"><span data-stu-id="021f5-136">The following illustration shows the business process flow for planning and processing outbound loads for shipping.</span></span> 
 
 ![Planlegge og behandle utgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
-## <a name="load-building"></a>Lastplanlegging
-Finance and Operations inneholder strategi for bygging av laster som heter Volumbasert lastplanleggingsstrategi. Med denne strategien kan du bruke de maksimale verdiene som er angitt for høyde og vekt i lastmalen, eller du kan overstyre innstillingene ved å angi nye verdier. Hvis du vil bruke denne strategien, velger du den i feltet **Strategi for lastplanlegging** i hurtigfanen **Oppsett** på siden **Arbeidsområde for lastplanlegging**. I tillegg kan du legge til dine egne strategier for lastplanlegging ved å opprette en ny klasse i applikasjonsobjekttreet (AOT).
+## <a name="load-building"></a><span data-ttu-id="021f5-138">Lastplanlegging</span><span class="sxs-lookup"><span data-stu-id="021f5-138">Load building</span></span>
+<span data-ttu-id="021f5-139">Finance and Operations inneholder strategi for bygging av laster som heter Volumbasert lastplanleggingsstrategi.</span><span class="sxs-lookup"><span data-stu-id="021f5-139">Finance and Operations provides a load building strategy that is named the Volume-based load building strategy.</span></span> <span data-ttu-id="021f5-140">Med denne strategien kan du bruke de maksimale verdiene som er angitt for høyde og vekt i lastmalen, eller du kan overstyre innstillingene ved å angi nye verdier.</span><span class="sxs-lookup"><span data-stu-id="021f5-140">This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values.</span></span> <span data-ttu-id="021f5-141">Hvis du vil bruke denne strategien, velger du den i feltet **Strategi for lastplanlegging** i hurtigfanen **Oppsett** på siden **Arbeidsområde for lastplanlegging**.</span><span class="sxs-lookup"><span data-stu-id="021f5-141">To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page.</span></span> <span data-ttu-id="021f5-142">I tillegg kan du legge til dine egne strategier for lastplanlegging ved å opprette en ny klasse i applikasjonsobjekttreet (AOT).</span><span class="sxs-lookup"><span data-stu-id="021f5-142">In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).</span></span>
 
 
 

@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Håndtere kontantrabatter for overbetalinger
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="a2c13-103">Håndtere kontantrabatter for overbetalinger</span><span class="sxs-lookup"><span data-stu-id="a2c13-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler. 
+<span data-ttu-id="a2c13-104">Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler.</span><span class="sxs-lookup"><span data-stu-id="a2c13-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-En faktura regnes som overbetalt når betalingsbeløpet er større enn fakturabeløpet minus kontantrabatten. Når du skal angi hvordan et kontantrabattavvik som du kan få, håndteres når en faktura er overbetalt, bruker du feltene **Håndtering av kontantrabatt** og **Maksimal over- eller underbetaling** på siden **Kundeparametere**. I eksemplet nedenfor har kunden overbetalt fakturaen med 0,50.
+<span data-ttu-id="a2c13-105">En faktura regnes som overbetalt når betalingsbeløpet er større enn fakturabeløpet minus kontantrabatten.</span><span class="sxs-lookup"><span data-stu-id="a2c13-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="a2c13-106">Når du skal angi hvordan et kontantrabattavvik som du kan få, håndteres når en faktura er overbetalt, bruker du feltene **Håndtering av kontantrabatt** og **Maksimal over- eller underbetaling** på siden **Kundeparametere**.</span><span class="sxs-lookup"><span data-stu-id="a2c13-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="a2c13-107">I eksemplet nedenfor har kunden overbetalt fakturaen med 0,50.</span><span class="sxs-lookup"><span data-stu-id="a2c13-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Fakturatotal | Kontantrabatt tilgjengelig | Beløpet som skal betales, som inkluderer kontantrabatten | Beløpet kunden faktisk betaler |
+| <span data-ttu-id="a2c13-108">Fakturatotal</span><span class="sxs-lookup"><span data-stu-id="a2c13-108">Invoice total</span></span> | <span data-ttu-id="a2c13-109">Kontantrabatt tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="a2c13-109">Cash discount available</span></span> | <span data-ttu-id="a2c13-110">Beløpet som skal betales, som inkluderer kontantrabatten</span><span class="sxs-lookup"><span data-stu-id="a2c13-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="a2c13-111">Beløpet kunden faktisk betaler</span><span class="sxs-lookup"><span data-stu-id="a2c13-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00        | 10,50                   | 94,50                                               | 95,00                             |
+| <span data-ttu-id="a2c13-112">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-112">105.00</span></span>        | <span data-ttu-id="a2c13-113">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-113">10.50</span></span>                   | <span data-ttu-id="a2c13-114">94,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-114">94.50</span></span>                                               | <span data-ttu-id="a2c13-115">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Håndtering av kontantrabatt = Presis
-Når **Spesifikk** er valgt i feltet **Håndtering av kontantrabatt** på siden **Kontoer for automatiske transaksjoner**, blir hele kontantrabatten tatt. Overbetalingsbeløpet blir enten postert til en finanskonto for en kontantrabattdifferanse, eller blir igjen som en saldo på kundekontoen. Virkemåten avhenger av om hvor overbetalingsbeløpet er mellom 0,00 og beløpet som er angitt i feltet **Maksimal over- eller underbetaling**, eller om hvor overbetalingsbeløpet er større enn beløpet for **Maksimal over- eller underbetaling**.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="a2c13-116">Håndtering av kontantrabatt = Presis</span><span class="sxs-lookup"><span data-stu-id="a2c13-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="a2c13-117">Når **Spesifikk** er valgt i feltet **Håndtering av kontantrabatt** på siden **Kontoer for automatiske transaksjoner**, blir hele kontantrabatten tatt.</span><span class="sxs-lookup"><span data-stu-id="a2c13-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="a2c13-118">Overbetalingsbeløpet blir enten postert til en finanskonto for en kontantrabattdifferanse, eller blir igjen som en saldo på kundekontoen.</span><span class="sxs-lookup"><span data-stu-id="a2c13-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="a2c13-119">Virkemåten avhenger av om hvor overbetalingsbeløpet er mellom 0,00 og beløpet som er angitt i feltet **Maksimal over- eller underbetaling**, eller om hvor overbetalingsbeløpet er større enn beløpet for **Maksimal over- eller underbetaling**.</span><span class="sxs-lookup"><span data-stu-id="a2c13-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>Scenario 1
+### <a name="scenario-1"></a><span data-ttu-id="a2c13-120">Scenario 1</span><span class="sxs-lookup"><span data-stu-id="a2c13-120">Scenario 1</span></span>
 
-I dette scenarioet er overbetalingsbeløpet mellom 0,00 og maksimal over- eller underbetaling. En faktura for 105,00 registreres, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.
+<span data-ttu-id="a2c13-121">I dette scenarioet er overbetalingsbeløpet mellom 0,00 og maksimal over- eller underbetaling.</span><span class="sxs-lookup"><span data-stu-id="a2c13-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="a2c13-122">En faktura for 105,00 registreres, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.</span><span class="sxs-lookup"><span data-stu-id="a2c13-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Fakturatotal | Kontantrabatt tilgjengelig | Beløpet som skal betales, som inkluderer kontantrabatten |
+| <span data-ttu-id="a2c13-123">Fakturatotal</span><span class="sxs-lookup"><span data-stu-id="a2c13-123">Invoice total</span></span> | <span data-ttu-id="a2c13-124">Kontantrabatt tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="a2c13-124">Cash discount available</span></span> | <span data-ttu-id="a2c13-125">Beløpet som skal betales, som inkluderer kontantrabatten</span><span class="sxs-lookup"><span data-stu-id="a2c13-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="a2c13-126">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-126">105.00</span></span>        | <span data-ttu-id="a2c13-127">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-127">10.50</span></span>                   | <span data-ttu-id="a2c13-128">94,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-128">94.50</span></span>                                               |
 
-Kunden sender en betaling for 95,00 innenfor kontantrabattperioden. Betalingen utlignes mot fakturaen for 105,00. Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.
+<span data-ttu-id="a2c13-129">Kunden sender en betaling for 95,00 innenfor kontantrabattperioden.</span><span class="sxs-lookup"><span data-stu-id="a2c13-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="a2c13-130">Betalingen utlignes mot fakturaen for 105,00.</span><span class="sxs-lookup"><span data-stu-id="a2c13-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="a2c13-131">Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.</span><span class="sxs-lookup"><span data-stu-id="a2c13-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaksjon   | Beløp | Saldo |
+| <span data-ttu-id="a2c13-132">Transaksjon</span><span class="sxs-lookup"><span data-stu-id="a2c13-132">Transaction</span></span>   | <span data-ttu-id="a2c13-133">Beløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-133">Amount</span></span> | <span data-ttu-id="a2c13-134">Saldo</span><span class="sxs-lookup"><span data-stu-id="a2c13-134">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 | 0,00    |
-| Betaling       | -95,00 | 0,00    |
-| Kontantrabatt | -10,50 | 0,00    |
+| <span data-ttu-id="a2c13-135">Faktura</span><span class="sxs-lookup"><span data-stu-id="a2c13-135">Invoice</span></span>       | <span data-ttu-id="a2c13-136">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-136">105.00</span></span> | <span data-ttu-id="a2c13-137">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-137">0.00</span></span>    |
+| <span data-ttu-id="a2c13-138">Betaling</span><span class="sxs-lookup"><span data-stu-id="a2c13-138">Payment</span></span>       | <span data-ttu-id="a2c13-139">-95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-139">-95.00</span></span> | <span data-ttu-id="a2c13-140">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-140">0.00</span></span>    |
+| <span data-ttu-id="a2c13-141">Kontantrabatt</span><span class="sxs-lookup"><span data-stu-id="a2c13-141">Cash discount</span></span> | <span data-ttu-id="a2c13-142">-10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-142">-10.50</span></span> | <span data-ttu-id="a2c13-143">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-143">0.00</span></span>    |
 
-Følgende regnskapsoppføringer genereres for betalingen og utligningen. **Betaling**
+<span data-ttu-id="a2c13-144">Følgende regnskapsoppføringer genereres for betalingen og utligningen.</span><span class="sxs-lookup"><span data-stu-id="a2c13-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="a2c13-145">**Betaling**</span><span class="sxs-lookup"><span data-stu-id="a2c13-145">**Payment**</span></span>
 
-| Konto             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-146">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-146">Account</span></span>             | <span data-ttu-id="a2c13-147">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-147">Debit amount</span></span> | <span data-ttu-id="a2c13-148">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kontant                | 95,00        |               |
-| Kundereskontro |              | 95,00         |
+| <span data-ttu-id="a2c13-149">Kontant</span><span class="sxs-lookup"><span data-stu-id="a2c13-149">Cash</span></span>                | <span data-ttu-id="a2c13-150">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-150">95.00</span></span>        |               |
+| <span data-ttu-id="a2c13-151">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-151">Accounts receivable</span></span> |              | <span data-ttu-id="a2c13-152">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-152">95.00</span></span>         |
 
-**Utligning**
+<span data-ttu-id="a2c13-153">**Utligning**</span><span class="sxs-lookup"><span data-stu-id="a2c13-153">**Settlement**</span></span>
 
-| Konto                                                                                                          | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-154">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-154">Account</span></span>                                                                                                          | <span data-ttu-id="a2c13-155">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-155">Debit amount</span></span> | <span data-ttu-id="a2c13-156">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**)                 | 10,50        |               |
-| Kundereskontro                                                                                              |              | 10,50         |
-| Kundekontantrabatt (feltet **Kundekontantrabatt** på siden **Konto for automatiske transaksjoner**) |              | 0.50          |
-| Kundereskontro                                                                                              | 0.50         |               |
+| <span data-ttu-id="a2c13-157">Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**)</span><span class="sxs-lookup"><span data-stu-id="a2c13-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="a2c13-158">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-158">10.50</span></span>        |               |
+| <span data-ttu-id="a2c13-159">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="a2c13-160">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-160">10.50</span></span>         |
+| <span data-ttu-id="a2c13-161">Kundekontantrabatt (feltet **Kundekontantrabatt** på siden **Konto for automatiske transaksjoner**)</span><span class="sxs-lookup"><span data-stu-id="a2c13-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="a2c13-162">0.50</span><span class="sxs-lookup"><span data-stu-id="a2c13-162">0.50</span></span>          |
+| <span data-ttu-id="a2c13-163">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="a2c13-164">0.50</span><span class="sxs-lookup"><span data-stu-id="a2c13-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>Scenario 2
+### <a name="scenario-2"></a><span data-ttu-id="a2c13-165">Scenario 2</span><span class="sxs-lookup"><span data-stu-id="a2c13-165">Scenario 2</span></span>
 
-I dette scenarioet overskrider overbetalingsbeløpet det maksimale over- eller underbetalingsbeløpet. En faktura for 105,00 registreres, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.
+<span data-ttu-id="a2c13-166">I dette scenarioet overskrider overbetalingsbeløpet det maksimale over- eller underbetalingsbeløpet.</span><span class="sxs-lookup"><span data-stu-id="a2c13-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="a2c13-167">En faktura for 105,00 registreres, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.</span><span class="sxs-lookup"><span data-stu-id="a2c13-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Fakturatotal | Kontantrabatt tilgjengelig | Beløpet som skal betales, som inkluderer kontantrabatten |
+| <span data-ttu-id="a2c13-168">Fakturatotal</span><span class="sxs-lookup"><span data-stu-id="a2c13-168">Invoice total</span></span> | <span data-ttu-id="a2c13-169">Kontantrabatt tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="a2c13-169">Cash discount available</span></span> | <span data-ttu-id="a2c13-170">Beløpet som skal betales, som inkluderer kontantrabatten</span><span class="sxs-lookup"><span data-stu-id="a2c13-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="a2c13-171">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-171">105.00</span></span>        | <span data-ttu-id="a2c13-172">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-172">10.50</span></span>                   | <span data-ttu-id="a2c13-173">94,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-173">94.50</span></span>                                               |
 
-Kunden sender en betaling for 95,00 innenfor kontantrabattperioden. Betalingen utlignes mot fakturaen for 105,00. Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.
+<span data-ttu-id="a2c13-174">Kunden sender en betaling for 95,00 innenfor kontantrabattperioden.</span><span class="sxs-lookup"><span data-stu-id="a2c13-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="a2c13-175">Betalingen utlignes mot fakturaen for 105,00.</span><span class="sxs-lookup"><span data-stu-id="a2c13-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="a2c13-176">Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.</span><span class="sxs-lookup"><span data-stu-id="a2c13-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaksjon   | Beløp | Saldo |
+| <span data-ttu-id="a2c13-177">Transaksjon</span><span class="sxs-lookup"><span data-stu-id="a2c13-177">Transaction</span></span>   | <span data-ttu-id="a2c13-178">Beløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-178">Amount</span></span> | <span data-ttu-id="a2c13-179">Saldo</span><span class="sxs-lookup"><span data-stu-id="a2c13-179">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 | 0,00    |
-| Betaling       | -95,00 | -0,50   |
-| Kontantrabatt | -10,50 | 0,00    |
+| <span data-ttu-id="a2c13-180">Faktura</span><span class="sxs-lookup"><span data-stu-id="a2c13-180">Invoice</span></span>       | <span data-ttu-id="a2c13-181">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-181">105.00</span></span> | <span data-ttu-id="a2c13-182">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-182">0.00</span></span>    |
+| <span data-ttu-id="a2c13-183">Betaling</span><span class="sxs-lookup"><span data-stu-id="a2c13-183">Payment</span></span>       | <span data-ttu-id="a2c13-184">-95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-184">-95.00</span></span> | <span data-ttu-id="a2c13-185">-0,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-185">-0.50</span></span>   |
+| <span data-ttu-id="a2c13-186">Kontantrabatt</span><span class="sxs-lookup"><span data-stu-id="a2c13-186">Cash discount</span></span> | <span data-ttu-id="a2c13-187">-10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-187">-10.50</span></span> | <span data-ttu-id="a2c13-188">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-188">0.00</span></span>    |
 
-Overbetalingsbeløpet på 0,50 blir igjen som en åpen saldo på betalingen, og kan utlignes mot en annen faktura. Følgende regnskapsoppføringer genereres for betalingen og utligningen. **Betaling**
+<span data-ttu-id="a2c13-189">Overbetalingsbeløpet på 0,50 blir igjen som en åpen saldo på betalingen, og kan utlignes mot en annen faktura.</span><span class="sxs-lookup"><span data-stu-id="a2c13-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="a2c13-190">Følgende regnskapsoppføringer genereres for betalingen og utligningen.</span><span class="sxs-lookup"><span data-stu-id="a2c13-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="a2c13-191">**Betaling**</span><span class="sxs-lookup"><span data-stu-id="a2c13-191">**Payment**</span></span>
 
-| Konto             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-192">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-192">Account</span></span>             | <span data-ttu-id="a2c13-193">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-193">Debit amount</span></span> | <span data-ttu-id="a2c13-194">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kontant                | 95,00        |               |
-| Kundereskontro |              | 95,00         |
+| <span data-ttu-id="a2c13-195">Kontant</span><span class="sxs-lookup"><span data-stu-id="a2c13-195">Cash</span></span>                | <span data-ttu-id="a2c13-196">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-196">95.00</span></span>        |               |
+| <span data-ttu-id="a2c13-197">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-197">Accounts receivable</span></span> |              | <span data-ttu-id="a2c13-198">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-198">95.00</span></span>         |
 
-**Utligning**
+<span data-ttu-id="a2c13-199">**Utligning**</span><span class="sxs-lookup"><span data-stu-id="a2c13-199">**Settlement**</span></span>
 
-| Konto                                                                                          | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-200">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-200">Account</span></span>                                                                                          | <span data-ttu-id="a2c13-201">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-201">Debit amount</span></span> | <span data-ttu-id="a2c13-202">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**) | 10,50        |               |
-| Kundereskontro                                                                              |              | 10,50         |
+| <span data-ttu-id="a2c13-203">Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**)</span><span class="sxs-lookup"><span data-stu-id="a2c13-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="a2c13-204">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-204">10.50</span></span>        |               |
+| <span data-ttu-id="a2c13-205">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="a2c13-206">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Håndtering av kontantrabatt = Løs
-Når **Løs** er valgt i feltet **Håndtering av kontantrabatt** på siden **Kontoer for automatiske transaksjoner**, reduseres kontantrabattbeløpet med overbetalingsbeløpet. Dette gjelder alltid, uansett om overbetalingsbeløpet er over eller under beløpet som er angitt i feltet **Maksimal over- eller underbetaling**.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="a2c13-207">Håndtering av kontantrabatt = Løs</span><span class="sxs-lookup"><span data-stu-id="a2c13-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="a2c13-208">Når **Løs** er valgt i feltet **Håndtering av kontantrabatt** på siden **Kontoer for automatiske transaksjoner**, reduseres kontantrabattbeløpet med overbetalingsbeløpet.</span><span class="sxs-lookup"><span data-stu-id="a2c13-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="a2c13-209">Dette gjelder alltid, uansett om overbetalingsbeløpet er over eller under beløpet som er angitt i feltet **Maksimal over- eller underbetaling**.</span><span class="sxs-lookup"><span data-stu-id="a2c13-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>Scenario 3
+### <a name="scenario-3"></a><span data-ttu-id="a2c13-210">Scenario 3</span><span class="sxs-lookup"><span data-stu-id="a2c13-210">Scenario 3</span></span>
 
-I dette scenarioet registreres en faktura for 105,00, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.
+<span data-ttu-id="a2c13-211">I dette scenarioet registreres en faktura for 105,00, og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager.</span><span class="sxs-lookup"><span data-stu-id="a2c13-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Fakturatotal | Kontantrabatt tilgjengelig | Beløpet som skal betales, som inkluderer kontantrabatten |
+| <span data-ttu-id="a2c13-212">Fakturatotal</span><span class="sxs-lookup"><span data-stu-id="a2c13-212">Invoice total</span></span> | <span data-ttu-id="a2c13-213">Kontantrabatt tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="a2c13-213">Cash discount available</span></span> | <span data-ttu-id="a2c13-214">Beløpet som skal betales, som inkluderer kontantrabatten</span><span class="sxs-lookup"><span data-stu-id="a2c13-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="a2c13-215">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-215">105.00</span></span>        | <span data-ttu-id="a2c13-216">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-216">10.50</span></span>                   | <span data-ttu-id="a2c13-217">94,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-217">94.50</span></span>                                               |
 
-Kunden sender en betaling for 95,00 innenfor kontantrabattdatoen. Betalingen utlignes mot fakturaen for 105,00. Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.
+<span data-ttu-id="a2c13-218">Kunden sender en betaling for 95,00 innenfor kontantrabattdatoen.</span><span class="sxs-lookup"><span data-stu-id="a2c13-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="a2c13-219">Betalingen utlignes mot fakturaen for 105,00.</span><span class="sxs-lookup"><span data-stu-id="a2c13-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="a2c13-220">Når fakturaen og betalingen utlignes, opprettes følgende transaksjoner for kunden i kundereskontro.</span><span class="sxs-lookup"><span data-stu-id="a2c13-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaksjon   | Beløp | Saldo |
+| <span data-ttu-id="a2c13-221">Transaksjon</span><span class="sxs-lookup"><span data-stu-id="a2c13-221">Transaction</span></span>   | <span data-ttu-id="a2c13-222">Beløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-222">Amount</span></span> | <span data-ttu-id="a2c13-223">Saldo</span><span class="sxs-lookup"><span data-stu-id="a2c13-223">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 | 0,00    |
-| Betaling       | -95,00 | -0,00   |
-| Kontantrabatt | -10,00 | 0,00    |
+| <span data-ttu-id="a2c13-224">Faktura</span><span class="sxs-lookup"><span data-stu-id="a2c13-224">Invoice</span></span>       | <span data-ttu-id="a2c13-225">105,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-225">105.00</span></span> | <span data-ttu-id="a2c13-226">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-226">0.00</span></span>    |
+| <span data-ttu-id="a2c13-227">Betaling</span><span class="sxs-lookup"><span data-stu-id="a2c13-227">Payment</span></span>       | <span data-ttu-id="a2c13-228">-95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-228">-95.00</span></span> | <span data-ttu-id="a2c13-229">-0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-229">-0.00</span></span>   |
+| <span data-ttu-id="a2c13-230">Kontantrabatt</span><span class="sxs-lookup"><span data-stu-id="a2c13-230">Cash discount</span></span> | <span data-ttu-id="a2c13-231">-10,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-231">-10.00</span></span> | <span data-ttu-id="a2c13-232">0,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-232">0.00</span></span>    |
 
-Kontantrabattbeløpet reduseres fra 10,50 til 10,00. Betalingen og fakturaen betraktes som utlignet. **Betaling**
+<span data-ttu-id="a2c13-233">Kontantrabattbeløpet reduseres fra 10,50 til 10,00.</span><span class="sxs-lookup"><span data-stu-id="a2c13-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="a2c13-234">Betalingen og fakturaen betraktes som utlignet.</span><span class="sxs-lookup"><span data-stu-id="a2c13-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="a2c13-235">**Betaling**</span><span class="sxs-lookup"><span data-stu-id="a2c13-235">**Payment**</span></span>
 
-| Konto             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-236">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-236">Account</span></span>             | <span data-ttu-id="a2c13-237">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-237">Debit amount</span></span> | <span data-ttu-id="a2c13-238">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kontant                | 95,00        |               |
-| Kundereskontro |              | 95,00         |
+| <span data-ttu-id="a2c13-239">Kontant</span><span class="sxs-lookup"><span data-stu-id="a2c13-239">Cash</span></span>                | <span data-ttu-id="a2c13-240">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-240">95.00</span></span>        |               |
+| <span data-ttu-id="a2c13-241">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-241">Accounts receivable</span></span> |              | <span data-ttu-id="a2c13-242">95,00</span><span class="sxs-lookup"><span data-stu-id="a2c13-242">95.00</span></span>         |
 
-**Utligning**
+<span data-ttu-id="a2c13-243">**Utligning**</span><span class="sxs-lookup"><span data-stu-id="a2c13-243">**Settlement**</span></span>
 
-| Konto                                                                                          | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="a2c13-244">Konto</span><span class="sxs-lookup"><span data-stu-id="a2c13-244">Account</span></span>                                                                                          | <span data-ttu-id="a2c13-245">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-245">Debit amount</span></span> | <span data-ttu-id="a2c13-246">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="a2c13-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**) | 10,50        |               |
-| Kundereskontro                                                                              |              | 10,50         |
+| <span data-ttu-id="a2c13-247">Kontantrabatt (feltet **Hovedkonto for kunderabatter** på siden **Kontantrabatt**)</span><span class="sxs-lookup"><span data-stu-id="a2c13-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="a2c13-248">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-248">10.50</span></span>        |               |
+| <span data-ttu-id="a2c13-249">Kundereskontro</span><span class="sxs-lookup"><span data-stu-id="a2c13-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="a2c13-250">10,50</span><span class="sxs-lookup"><span data-stu-id="a2c13-250">10.50</span></span>         |
 
 
 

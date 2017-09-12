@@ -20,48 +20,48 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c04fee4b08e95e9a642375c661c06a4351e22b7e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 79582e92daeaf0afb032448d36be12edd0926089
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hovedplanlegging for områdedekning, lager ikke obligatorisk
+# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a><span data-ttu-id="54adf-103">Hovedplanlegging for områdedekning, lager ikke obligatorisk</span><span class="sxs-lookup"><span data-stu-id="54adf-103">Master planning for site coverage, warehouse not mandatory</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan en vare som har et områdedimensjonssett for dekning planlegges.
+<span data-ttu-id="54adf-104">Dette emnet beskriver hvordan en vare som har et områdedimensjonssett for dekning planlegges.</span><span class="sxs-lookup"><span data-stu-id="54adf-104">This topic describes how an item that has the site dimension set for coverage is planned.</span></span>
 
-Dette hovedplanleggingsscenariet omfatter følgende betingelser:
+<span data-ttu-id="54adf-105">Dette hovedplanleggingsscenariet omfatter følgende betingelser:</span><span class="sxs-lookup"><span data-stu-id="54adf-105">This master planning scenario involves the following conditions:</span></span>
 
--   Områdedimensjonen er satt til obligatorisk, og må angis på behovstransaksjonen.
--   Lagerdimensjonen er ikke satt til obligatorisk. Lageret kan være kjent, men det brukes ikke i hovedplanleggingsberegningen.
--   Sitedimensjonen er angitt for dekningsplanlegging.
--   Lagerdimensjonen er ikke angitt for dekningsplanlegging. Derfor samles tilbud og etterspørsel etter område, og kanskje også andre dekningsplanlagte dimensjoner.
+-   <span data-ttu-id="54adf-106">Områdedimensjonen er satt til obligatorisk, og må angis på behovstransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="54adf-106">The site dimension is set to mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="54adf-107">Lagerdimensjonen er ikke satt til obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="54adf-107">The warehouse dimension is not set to mandatory.</span></span> <span data-ttu-id="54adf-108">Lageret kan være kjent, men det brukes ikke i hovedplanleggingsberegningen.</span><span class="sxs-lookup"><span data-stu-id="54adf-108">The warehouse may be known, but it is not used in the master planning calculation.</span></span>
+-   <span data-ttu-id="54adf-109">Sitedimensjonen er angitt for dekningsplanlegging.</span><span class="sxs-lookup"><span data-stu-id="54adf-109">The site dimension is set for coverage planning.</span></span>
+-   <span data-ttu-id="54adf-110">Lagerdimensjonen er ikke angitt for dekningsplanlegging.</span><span class="sxs-lookup"><span data-stu-id="54adf-110">The warehouse dimension is not set for coverage planning.</span></span> <span data-ttu-id="54adf-111">Derfor samles tilbud og etterspørsel etter område, og kanskje også andre dekningsplanlagte dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="54adf-111">Therefore, supply and demand are aggregated by site and, perhaps, other coverage-planned dimensions also.</span></span>
 
-Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det refereres til i grafikken, og plasseringene, er følgende:
--   Varedekning er definert for varen. Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Varedekning**.
--   Påfyllingsrelasjoner er definert for lageret. Klikk **Lagerstyring &gt; Oppsett &gt; Lageroppdeling &gt; Lagre**. På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.
--   Standard ordretype er satt til Produksjon, Bestilling eller Kanban. Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Standard ordreinnstillinger**. I **Standard ordreinnstillinger**-skjemaet kan du se feltet **Standard ordretype**.
+<span data-ttu-id="54adf-112">Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår.</span><span class="sxs-lookup"><span data-stu-id="54adf-112">The following graphic illustrates how master planning proceeds.</span></span> <span data-ttu-id="54adf-113">Parameterne det refereres til i grafikken, og plasseringene, er følgende:</span><span class="sxs-lookup"><span data-stu-id="54adf-113">The parameters that are referred to in the graphic, and their locations, are as follows:</span></span>
+-   <span data-ttu-id="54adf-114">Varedekning er definert for varen.</span><span class="sxs-lookup"><span data-stu-id="54adf-114">Item coverage is defined for the item.</span></span> <span data-ttu-id="54adf-115">Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**.</span><span class="sxs-lookup"><span data-stu-id="54adf-115">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="54adf-116">Velg varen, og klikk deretter **Plan &gt; Varedekning**.</span><span class="sxs-lookup"><span data-stu-id="54adf-116">Select the item, and then click **Plan &gt; Item coverage**.</span></span>
+-   <span data-ttu-id="54adf-117">Påfyllingsrelasjoner er definert for lageret.</span><span class="sxs-lookup"><span data-stu-id="54adf-117">Refill relations are defined for the warehouse.</span></span> <span data-ttu-id="54adf-118">Klikk **Lagerstyring &gt; Oppsett &gt; Lageroppdeling &gt; Lagre**.</span><span class="sxs-lookup"><span data-stu-id="54adf-118">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="54adf-119">På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.</span><span class="sxs-lookup"><span data-stu-id="54adf-119">On the **Master planning** tab, see the **Main warehouse** field group.</span></span>
+-   <span data-ttu-id="54adf-120">Standard ordretype er satt til Produksjon, Bestilling eller Kanban.</span><span class="sxs-lookup"><span data-stu-id="54adf-120">The default order type is set to Production, Purchase order or Kanban.</span></span> <span data-ttu-id="54adf-121">Klikk **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**.</span><span class="sxs-lookup"><span data-stu-id="54adf-121">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="54adf-122">Velg varen, og klikk deretter **Plan &gt; Standard ordreinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="54adf-122">Select the item, and then click **Plan &gt; Default order settings**.</span></span> <span data-ttu-id="54adf-123">I **Standard ordreinnstillinger**-skjemaet kan du se feltet **Standard ordretype**.</span><span class="sxs-lookup"><span data-stu-id="54adf-123">In the **Default order settings** form, see the **Default order type** field.</span></span>
 
 ![Behov for sitedekning, lager ikke obligatorisk    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="54adf-125">Se også</span><span class="sxs-lookup"><span data-stu-id="54adf-125">See also</span></span>
 --------
 
-[Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
+[<span data-ttu-id="54adf-126">Hovedplanlegging og multisite-funksjonalitet</span><span class="sxs-lookup"><span data-stu-id="54adf-126">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
-[Hovedplanlegging – område- og lagerdekning, lager obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="54adf-127">Hovedplanlegging – område- og lagerdekning, lager obligatorisk</span><span class="sxs-lookup"><span data-stu-id="54adf-127">Master planning - site coverage, warehouse mandatory</span></span>](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Hovedplanlegging – område- og lagerdekning, lager ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[<span data-ttu-id="54adf-128">Hovedplanlegging – område- og lagerdekning, lager ikke obligatorisk</span><span class="sxs-lookup"><span data-stu-id="54adf-128">Master planning - site and warehouse coverage, warehouse not mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Hovedplanlegging – område- og lagerdekning, lager obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="54adf-129">Hovedplanlegging – område- og lagerdekning, lager obligatorisk</span><span class="sxs-lookup"><span data-stu-id="54adf-129">Master planning - site and warehouse coverage, warehouse mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Hovedplanlegging – hvordan stykklisteversjon fastsettes](master-plan-bom-version-determined.md)
+[<span data-ttu-id="54adf-130">Hovedplanlegging – hvordan stykklisteversjon fastsettes</span><span class="sxs-lookup"><span data-stu-id="54adf-130">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
 
 

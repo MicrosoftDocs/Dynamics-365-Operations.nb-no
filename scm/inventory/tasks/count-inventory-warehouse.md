@@ -1,4 +1,4 @@
---- 
+---
 title: "Lageropptelling på et lager"
 description: "Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lageropptellingsjournal for å telle en bestemt vare på en lokasjon i lageret."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,56 +17,55 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 1d2ecf1cd80e05b59f206fb5f684d6a86fa5733e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: fa72cb0d651f5e60797fa41f6e2b2cf1891730b5
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="count-inventory-in-a-warehouse"></a>Lageropptelling på et lager
+# <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="47b08-103">Lageropptelling på et lager</span><span class="sxs-lookup"><span data-stu-id="47b08-103">Count inventory in a warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lageropptellingsjournal for å telle en bestemt vare på en lokasjon i lageret. Fremgangsmåten gjelder for "grunnleggende lageraktiviteter"-funksjoner, tilgjengelige i lagerstyringsmodulen, ikke for lagerstyringsfunksjonaliteten som er tilgjengelig i lagerstyringsmodulen. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Hvis du bruker dine egne data, må du kontrollere at du har produkter og lokasjoner definert, og at du har opprettet et beholdningsjournalnavn for opptellingsjournaler. Beholdningsopptelling utføres vanligvis av en lageransatt.
+<span data-ttu-id="47b08-104">Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lageropptellingsjournal for å telle en bestemt vare på en lokasjon i lageret.</span><span class="sxs-lookup"><span data-stu-id="47b08-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="47b08-105">Fremgangsmåten gjelder for "grunnleggende lageraktiviteter"-funksjoner, tilgjengelige i lagerstyringsmodulen, ikke for lagerstyringsfunksjonaliteten som er tilgjengelig i lagerstyringsmodulen.</span><span class="sxs-lookup"><span data-stu-id="47b08-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="47b08-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="47b08-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="47b08-107">Hvis du bruker dine egne data, må du kontrollere at du har produkter og lokasjoner definert, og at du har opprettet et beholdningsjournalnavn for opptellingsjournaler.</span><span class="sxs-lookup"><span data-stu-id="47b08-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="47b08-108">Beholdningsopptelling utføres vanligvis av en lageransatt.</span><span class="sxs-lookup"><span data-stu-id="47b08-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-counting-journal"></a>Opprette en lageropptellingsjournal
-1. Gå til Lagerstyring > Loggoppføringer > Vareopptelling > Opptelling.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
-4. Klikk journalnavnet for beholdningsopptelling som du vil bruke, i listen
-    * Noen andre felt fylles ut basert på oppsettet av standardnavn for lageropptellingsjournal som du velger.  
-5. Klikk rullegardinknappen i feltet Arbeider for å åpne oppslaget.
-6. Velg arbeideren du vil bruke, i listen.
-7. Klikk Velg.
-8. Klikk OK.
+## <a name="create-an-inventory-counting-journal"></a><span data-ttu-id="47b08-109">Opprette en lageropptellingsjournal</span><span class="sxs-lookup"><span data-stu-id="47b08-109">Create an inventory counting journal</span></span>
+1. <span data-ttu-id="47b08-110">Gå til Lagerstyring > Loggoppføringer > Vareopptelling > Opptelling.</span><span class="sxs-lookup"><span data-stu-id="47b08-110">Go to Inventory management > Journal entries > Item counting > Counting.</span></span>
+2. <span data-ttu-id="47b08-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="47b08-111">Click New.</span></span>
+3. <span data-ttu-id="47b08-112">Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-112">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="47b08-113">Klikk journalnavnet for beholdningsopptelling som du vil bruke, i listen</span><span class="sxs-lookup"><span data-stu-id="47b08-113">In the list, click on the inventory counting journal name you want to use</span></span>
+    * <span data-ttu-id="47b08-114">Noen andre felt fylles ut basert på oppsettet av standardnavn for lageropptellingsjournal som du velger.</span><span class="sxs-lookup"><span data-stu-id="47b08-114">Some other fields will be populated based on the setup of the inventory counting journal name that you select.</span></span>  
+5. <span data-ttu-id="47b08-115">Klikk rullegardinknappen i feltet Arbeider for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-115">In the Worker field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="47b08-116">Velg arbeideren du vil bruke, i listen.</span><span class="sxs-lookup"><span data-stu-id="47b08-116">In the list, select the worker you want to use.</span></span>
+7. <span data-ttu-id="47b08-117">Klikk Velg.</span><span class="sxs-lookup"><span data-stu-id="47b08-117">Click Select.</span></span>
+8. <span data-ttu-id="47b08-118">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="47b08-118">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a>Opprette journallinjer
-1. Klikk Ny.
-2. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-3. Finn og velg ønsket post i listen.
-    * Hvis du bruker demonstrasjonsdataselskapet USMF, velger du "A0001".  
-4. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-5. Finn og velg ønsket post i listen.
-    * Hvis du bruker demonstrasjonsdataselskapet USMF, velger du område 2.  
-6. Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.
-7. Finn og velg ønsket post i listen.
-    * Hvis du bruker demonstrasjonsdataselskapet USMF, velger du lager 24.  
-8. Klikk rullegardinknappen i Lokasjon-feltet for å åpne oppslaget.
-9. Finn og velg ønsket post i listen.
-    * Hvis du bruker demonstrasjonsdataselskapet USMF, velger du lokasjon BULK-001.  
-10. Angi et tall i feltet Opptelt.
-    * Hvis du angir et opptelt nummer som er forskjellig fra nummeret som vises i feltet Beholdning, oppdateres feltet Antall for å vise avviket.  
-11. Klikk Lagre.
+## <a name="create-journal-lines"></a><span data-ttu-id="47b08-119">Opprette journallinjer</span><span class="sxs-lookup"><span data-stu-id="47b08-119">Create journal lines</span></span>
+1. <span data-ttu-id="47b08-120">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="47b08-120">Click New.</span></span>
+2. <span data-ttu-id="47b08-121">Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-121">In the Item number field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="47b08-122">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="47b08-122">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="47b08-123">Hvis du bruker demonstrasjonsdataselskapet USMF, velger du "A0001".</span><span class="sxs-lookup"><span data-stu-id="47b08-123">If you are using demo data company USMF, select 'A0001'.</span></span>  
+4. <span data-ttu-id="47b08-124">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-124">In the Site field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="47b08-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="47b08-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="47b08-126">Hvis du bruker demonstrasjonsdataselskapet USMF, velger du område 2.</span><span class="sxs-lookup"><span data-stu-id="47b08-126">If you are using demo data company USMF, select site '2'.</span></span>  
+6. <span data-ttu-id="47b08-127">Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-127">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="47b08-128">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="47b08-128">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="47b08-129">Hvis du bruker demonstrasjonsdataselskapet USMF, velger du lager 24.</span><span class="sxs-lookup"><span data-stu-id="47b08-129">If you are using demo data company USMF, select warehouse '24'.</span></span>  
+8. <span data-ttu-id="47b08-130">Klikk rullegardinknappen i Lokasjon-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="47b08-130">In the Location field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="47b08-131">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="47b08-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="47b08-132">Hvis du bruker demonstrasjonsdataselskapet USMF, velger du lokasjon BULK-001.</span><span class="sxs-lookup"><span data-stu-id="47b08-132">If you are using demo data company USMF, select location 'BULK-001'</span></span>  
+10. <span data-ttu-id="47b08-133">Angi et tall i feltet Opptelt.</span><span class="sxs-lookup"><span data-stu-id="47b08-133">In the Counted field, enter a number.</span></span>
+    * <span data-ttu-id="47b08-134">Hvis du angir et opptelt nummer som er forskjellig fra nummeret som vises i feltet Beholdning, oppdateres feltet Antall for å vise avviket.</span><span class="sxs-lookup"><span data-stu-id="47b08-134">If you enter a counted number that’s different to the number shown in the On-hand field, the Quantity field is updated to show the discrepancy.</span></span>  
+11. <span data-ttu-id="47b08-135">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="47b08-135">Click Save.</span></span>
 
-## <a name="post-the-inventory-counting-journal"></a>Postere lageropptellingsjournalen
-1. Klikk Poster.
-    * Når du posterer en lageropptellingsjournal, og hvis det opptelte beløpet er forskjellig fra beløpet som rapporteres i feltet Beholdning, blir det postert et lagermottak eller en lageravgang, lagernivå og lagerverdi endres og finanstransaksjoner blir generert.  
-2. Klikk OK.
+## <a name="post-the-inventory-counting-journal"></a><span data-ttu-id="47b08-136">Postere lageropptellingsjournalen</span><span class="sxs-lookup"><span data-stu-id="47b08-136">Post the inventory counting journal</span></span>
+1. <span data-ttu-id="47b08-137">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="47b08-137">Click Post.</span></span>
+    * <span data-ttu-id="47b08-138">Når du posterer en lageropptellingsjournal, og hvis det opptelte beløpet er forskjellig fra beløpet som rapporteres i feltet Beholdning, blir det postert et lagermottak eller en lageravgang, lagernivå og lagerverdi endres og finanstransaksjoner blir generert.</span><span class="sxs-lookup"><span data-stu-id="47b08-138">When you post an inventory counting journal, if the counted amount differs from amount that’s reported in the On-hand field an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.</span></span>  
+2. <span data-ttu-id="47b08-139">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="47b08-139">Click OK.</span></span>
 
-## <a name="view-inventory-transactions"></a>Vis lagertransaksjoner
-1. Klikk Lager.
-2. Klikk Transaksjoner.
-    * Her kan du se relaterte transaksjoner som opprettes når du posterer lageropptellingsjournalen.   
-
+## <a name="view-inventory-transactions"></a><span data-ttu-id="47b08-140">Vis lagertransaksjoner</span><span class="sxs-lookup"><span data-stu-id="47b08-140">View inventory transactions</span></span>
+1. <span data-ttu-id="47b08-141">Klikk Lager.</span><span class="sxs-lookup"><span data-stu-id="47b08-141">Click Inventory.</span></span>
+2. <span data-ttu-id="47b08-142">Klikk Transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="47b08-142">Click Transactions.</span></span>
+    * <span data-ttu-id="47b08-143">Her kan du se relaterte transaksjoner som opprettes når du posterer lageropptellingsjournalen.</span><span class="sxs-lookup"><span data-stu-id="47b08-143">Here you can see any related transactions that will be created when you post your inventory counting journal.</span></span>   
 

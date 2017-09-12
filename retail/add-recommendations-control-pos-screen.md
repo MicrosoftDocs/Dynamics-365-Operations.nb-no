@@ -19,67 +19,67 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 1cb80decf8ef0f182feec5d4cbe76b37b106dcd2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 7f8522110c0d7d5277b0b3f3c7b21d8605d43f2c
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a><span data-ttu-id="60ba5-103">Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet</span><span class="sxs-lookup"><span data-stu-id="60ba5-103">Add a recommendations control to the transaction page on a POS device</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail.
+<span data-ttu-id="60ba5-104">Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="60ba5-104">This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.</span></span>
 
-Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 for Retail. *Anbefalinger* er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett.
+<span data-ttu-id="60ba5-105">Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="60ba5-105">You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="60ba5-106">*Anbefalinger* er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker.</span><span class="sxs-lookup"><span data-stu-id="60ba5-106">*Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores.</span></span> <span data-ttu-id="60ba5-107">Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett.</span><span class="sxs-lookup"><span data-stu-id="60ba5-107">To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.</span></span>
 
-## <a name="open-layout-designer"></a>Åpne utforming av oppsett
-1.  Gå til **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.
-2.  Bruk hurtigfilteret til å finne skjermen du vil legge til kontrollen på. Filtrer for eksempel i feltet **Skjermoppsett-ID** ved å bruke verdien "F2CP16:9M".
-3.  Finn og velg ønsket post i listen. Velg for eksempel "Navn: F2CP16:9M Skjermoppsett-ID: F2CP16:9M".
-4.  Klikk **Utforming av oppsett**.
-5.  Følg instruksjonene for å starte utforming av oppsett. Når du blir spurt etter legitimasjon, angir du den samme legitimasjonen som var i bruk da utforming av oppsett ble startet fra siden **Skjermoppsett**.
-6.  Når du logger deg på, vises det en side som ligner den nedenfor. Oppsettet vil være forskjellige avhengig av tilpasninger som er gjort for din butikk.
+## <a name="open-layout-designer"></a><span data-ttu-id="60ba5-108">Åpne utforming av oppsett</span><span class="sxs-lookup"><span data-stu-id="60ba5-108">Open Layout designer</span></span>
+1.  <span data-ttu-id="60ba5-109">Gå til **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-109">Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.</span></span>
+2.  <span data-ttu-id="60ba5-110">Bruk hurtigfilteret til å finne skjermen du vil legge til kontrollen på.</span><span class="sxs-lookup"><span data-stu-id="60ba5-110">Use the Quick Filter to find the screen that you want to add the control to.</span></span> <span data-ttu-id="60ba5-111">Filtrer for eksempel i feltet **Skjermoppsett-ID** ved å bruke verdien "F2CP16:9M".</span><span class="sxs-lookup"><span data-stu-id="60ba5-111">For example, filter on the **Screen layout ID** field using a value of ‘F2CP16:9M’.</span></span>
+3.  <span data-ttu-id="60ba5-112">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-112">In the list, find and select the desired record.</span></span> <span data-ttu-id="60ba5-113">Velg for eksempel "Navn: F2CP16:9M Skjermoppsett-ID: F2CP16:9M".</span><span class="sxs-lookup"><span data-stu-id="60ba5-113">For example, select ‘Name: F2CP16:9M Screen Layout ID: F2CP16:9M’.</span></span>
+4.  <span data-ttu-id="60ba5-114">Klikk **Utforming av oppsett**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-114">Click **Layout designer**.</span></span>
+5.  <span data-ttu-id="60ba5-115">Følg instruksjonene for å starte utforming av oppsett.</span><span class="sxs-lookup"><span data-stu-id="60ba5-115">Follow the prompts to launch the layout designer.</span></span> <span data-ttu-id="60ba5-116">Når du blir spurt etter legitimasjon, angir du den samme legitimasjonen som var i bruk da utforming av oppsett ble startet fra siden **Skjermoppsett**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-116">When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.</span></span>
+6.  <span data-ttu-id="60ba5-117">Når du logger deg på, vises det en side som ligner den nedenfor.</span><span class="sxs-lookup"><span data-stu-id="60ba5-117">When you log in, a page similar to the one below appears.</span></span> <span data-ttu-id="60ba5-118">Oppsettet vil være forskjellige avhengig av tilpasninger som er gjort for din butikk.</span><span class="sxs-lookup"><span data-stu-id="60ba5-118">The layout will be different depending on the customizations that were made for your store.</span></span>
 
-[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Velg et visningsalternativ
+<span data-ttu-id="60ba5-119">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Velg et visningsalternativ</span><span class="sxs-lookup"><span data-stu-id="60ba5-119">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Choose a display option</span></span>
 -----------------------
 
-Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som passer best for din butikk, og følg resten av instruksjonene for å konfigurere kontrollen. De to alternativene er:
--   Anbefalinger er alltid synlige.
--   Kategorien **Anbefalinger** vises i rutenettet på høyre side av skjermen.
+<span data-ttu-id="60ba5-120">Det finnes to tilgjengelige konfigurasjonsalternativer.</span><span class="sxs-lookup"><span data-stu-id="60ba5-120">There are two configurations options available.</span></span> <span data-ttu-id="60ba5-121">Velg alternativet som passer best for din butikk, og følg resten av instruksjonene for å konfigurere kontrollen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-121">Choose the option that works best for your store, and follow the remaining instructions to finish setting up the control.</span></span> <span data-ttu-id="60ba5-122">De to alternativene er:</span><span class="sxs-lookup"><span data-stu-id="60ba5-122">The two options are:</span></span>
+-   <span data-ttu-id="60ba5-123">Anbefalinger er alltid synlige.</span><span class="sxs-lookup"><span data-stu-id="60ba5-123">Recommendations are always visible.</span></span>
+-   <span data-ttu-id="60ba5-124">Kategorien **Anbefalinger** vises i rutenettet på høyre side av skjermen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-124">A **Recommendations** tab appears in the grid on the right side of the screen.</span></span>
 
-#### <a name="to-make-recommendations-always-visible"></a>Slik gjør du anbefalinger alltid synlige:
+#### <a name="to-make-recommendations-always-visible"></a><span data-ttu-id="60ba5-125">Slik gjør du anbefalinger alltid synlige:</span><span class="sxs-lookup"><span data-stu-id="60ba5-125">To make recommendations always visible</span></span>
 
-1.  Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  På menyen til venstre drar og slipper du kontrollen for anbefalinger til mellom detaljområdet for transaksjonslinjer og knappegruppen nederst i midten på transaksjonsskjermen. Endre størrelse på kontrollen slik at den passer i dette området.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Klikk **X** for å lagre og avslutte utforming av oppsett.
-4.  I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.
-5.  Velg **1090, Kasser** i listen.
-6.  Klikk **Kjør nå**.
+1.  <span data-ttu-id="60ba5-126">Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span><span class="sxs-lookup"><span data-stu-id="60ba5-126">Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span></span>
+2.  <span data-ttu-id="60ba5-127">På menyen til venstre drar og slipper du kontrollen for anbefalinger til mellom detaljområdet for transaksjonslinjer og knappegruppen nederst i midten på transaksjonsskjermen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-127">From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen.</span></span> <span data-ttu-id="60ba5-128">Endre størrelse på kontrollen slik at den passer i dette området.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span><span class="sxs-lookup"><span data-stu-id="60ba5-128">Resize the control so it fits in that space.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span></span>
+3.  <span data-ttu-id="60ba5-129">Klikk **X** for å lagre og avslutte utforming av oppsett.</span><span class="sxs-lookup"><span data-stu-id="60ba5-129">Click the **X** to save and exit Layout designer.</span></span>
+4.  <span data-ttu-id="60ba5-130">I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-130">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+5.  <span data-ttu-id="60ba5-131">Velg **1090, Kasser** i listen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-131">In the list, select **1090 Registers**.</span></span>
+6.  <span data-ttu-id="60ba5-132">Klikk **Kjør nå**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-132">Click **Run now**.</span></span>
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Slik legger du til kategorien Anbefalinger i knappegruppen på høyre side av skjermen
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a><span data-ttu-id="60ba5-133">Slik legger du til kategorien Anbefalinger i knappegruppen på høyre side av skjermen</span><span class="sxs-lookup"><span data-stu-id="60ba5-133">To add a Recommendations tab to the button grid on the right side of the screen</span></span>
 
-1.  Høyreklikk i det tomme området under den siste kategorien i knappegruppen plassert på høyre side av siden.
-2.  Klikk **Tilpass**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Klikk **Ny kategori**.
-4.  Finn den nye kategorien som du nettopp la til. Du må kanskje rulle nedover.
-5.  I rullegardinlisten **Innhold** velger du **Anbefalte produkter**. [![pic-6](./media/pic-6.png)](./media/pic-6.png)
-6.  I **Etikett**-feltet skriver du inn et navn på anbefalingskategorien. Skriv for eksempel "Anbefalte produkter".
-7.  I **Bilde**-feltet velger du bildet som skal vises i kategorien.
-8.  Klikk **OK**. Den nye kategorien vises i knappegruppen.
-9.  Klikk **X** for å lagre og avslutte utforming av oppsett.
-10. I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.
-11. Velg **1090, Kasser** i listen.
-12. Klikk **Kjør nå**.
+1.  <span data-ttu-id="60ba5-134">Høyreklikk i det tomme området under den siste kategorien i knappegruppen plassert på høyre side av siden.</span><span class="sxs-lookup"><span data-stu-id="60ba5-134">Right-click in the empty space below the last tab on the button grid located on the right side of the page.</span></span>
+2.  <span data-ttu-id="60ba5-135">Klikk **Tilpass**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span><span class="sxs-lookup"><span data-stu-id="60ba5-135">Click **Customize**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span></span>
+3.  <span data-ttu-id="60ba5-136">Klikk **Ny kategori**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-136">Click **New tab**.</span></span>
+4.  <span data-ttu-id="60ba5-137">Finn den nye kategorien som du nettopp la til.</span><span class="sxs-lookup"><span data-stu-id="60ba5-137">Find the new tab that you just added.</span></span> <span data-ttu-id="60ba5-138">Du må kanskje rulle nedover.</span><span class="sxs-lookup"><span data-stu-id="60ba5-138">You may need to scroll down.</span></span>
+5.  <span data-ttu-id="60ba5-139">I rullegardinlisten **Innhold** velger du **Anbefalte produkter**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-139">In the **Contents** drop-down, select **Recommended products**.</span></span> <span data-ttu-id="60ba5-140">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span><span class="sxs-lookup"><span data-stu-id="60ba5-140">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span></span>
+6.  <span data-ttu-id="60ba5-141">I **Etikett**-feltet skriver du inn et navn på anbefalingskategorien.</span><span class="sxs-lookup"><span data-stu-id="60ba5-141">In the **Label** field, type a name for the recommendations tab.</span></span> <span data-ttu-id="60ba5-142">Skriv for eksempel "Anbefalte produkter".</span><span class="sxs-lookup"><span data-stu-id="60ba5-142">For example, type ‘Recommended products’.</span></span>
+7.  <span data-ttu-id="60ba5-143">I **Bilde**-feltet velger du bildet som skal vises i kategorien.</span><span class="sxs-lookup"><span data-stu-id="60ba5-143">In the **Image** field, select the image to appear on the tab.</span></span>
+8.  <span data-ttu-id="60ba5-144">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-144">Click **OK**.</span></span> <span data-ttu-id="60ba5-145">Den nye kategorien vises i knappegruppen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-145">The new tab appears in the button grid.</span></span>
+9.  <span data-ttu-id="60ba5-146">Klikk **X** for å lagre og avslutte utforming av oppsett.</span><span class="sxs-lookup"><span data-stu-id="60ba5-146">Click the **X** to save and exit Layout designer.</span></span>
+10. <span data-ttu-id="60ba5-147">I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-147">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+11. <span data-ttu-id="60ba5-148">Velg **1090, Kasser** i listen.</span><span class="sxs-lookup"><span data-stu-id="60ba5-148">In the list, select **1090 Registers**.</span></span>
+12. <span data-ttu-id="60ba5-149">Klikk **Kjør nå**.</span><span class="sxs-lookup"><span data-stu-id="60ba5-149">Click **Run now**.</span></span>
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="60ba5-150">Se også</span><span class="sxs-lookup"><span data-stu-id="60ba5-150">See also</span></span>
 --------
 
-[Oversikt over personlige produktanbefalinger](personalized-product-recommendations.md)
+[<span data-ttu-id="60ba5-151">Oversikt over personlige produktanbefalinger</span><span class="sxs-lookup"><span data-stu-id="60ba5-151">Personalized product recommendations overview</span></span>](personalized-product-recommendations.md)
 
 
 

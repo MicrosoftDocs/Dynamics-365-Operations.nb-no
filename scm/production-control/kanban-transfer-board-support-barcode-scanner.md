@@ -20,47 +20,47 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 013731d25463cf943c9b8cb888a06b3c987406cc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1dc40de2b77be5c5c2399fd55c3c3bd15a9f24ec
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a><span data-ttu-id="81c3f-103">Støtte for Kanban-overføringskort for strekkodelesere</span><span class="sxs-lookup"><span data-stu-id="81c3f-103">Kanban transfer board support for barcode scanners</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
+<span data-ttu-id="81c3f-104">Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="81c3f-104">The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.</span></span>
 
-<a name="registration-modes"></a>Registreringsmoduser
+<a name="registration-modes"></a><span data-ttu-id="81c3f-105">Registreringsmoduser</span><span class="sxs-lookup"><span data-stu-id="81c3f-105">Registration modes</span></span>
 ------------------
 
-I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.
-| Angi registreringsmodus | Beskrivelse                                                                                     |
+<span data-ttu-id="81c3f-106">I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.</span><span class="sxs-lookup"><span data-stu-id="81c3f-106">On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.</span></span>
+| <span data-ttu-id="81c3f-107">Angi registreringsmodus</span><span class="sxs-lookup"><span data-stu-id="81c3f-107">Set registration mode</span></span> | <span data-ttu-id="81c3f-108">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="81c3f-108">Description</span></span>                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
-| Starte                 | Registrerer en Kanban-overføringsjobb som pågående.                                                 |
-| Fullført              | Registrerer en Kanban-overføringsjobb som fullført.                                                   |
-| Tom                 | Registrerer materialhåndteringsenheten som et Kanban-kort refererer til, som tomt.              |
-| Velg                | Registrerer et Kanban-kortnummer og velger den refererte jobben automatisk i Kanban-listen. |
+| <span data-ttu-id="81c3f-109">Starte</span><span class="sxs-lookup"><span data-stu-id="81c3f-109">Start</span></span>                 | <span data-ttu-id="81c3f-110">Registrerer en Kanban-overføringsjobb som pågående.</span><span class="sxs-lookup"><span data-stu-id="81c3f-110">Registers a Kanban transfer job as in progress.</span></span>                                                 |
+| <span data-ttu-id="81c3f-111">Fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-111">Complete</span></span>              | <span data-ttu-id="81c3f-112">Registrerer en Kanban-overføringsjobb som fullført.</span><span class="sxs-lookup"><span data-stu-id="81c3f-112">Registers a Kanban transfer job as completed.</span></span>                                                   |
+| <span data-ttu-id="81c3f-113">Tom</span><span class="sxs-lookup"><span data-stu-id="81c3f-113">Empty</span></span>                 | <span data-ttu-id="81c3f-114">Registrerer materialhåndteringsenheten som et Kanban-kort refererer til, som tomt.</span><span class="sxs-lookup"><span data-stu-id="81c3f-114">Registers the material handling unit that is referenced by a Kanban card as empty.</span></span>              |
+| <span data-ttu-id="81c3f-115">Velg</span><span class="sxs-lookup"><span data-stu-id="81c3f-115">Select</span></span>                | <span data-ttu-id="81c3f-116">Registrerer et Kanban-kortnummer og velger den refererte jobben automatisk i Kanban-listen.</span><span class="sxs-lookup"><span data-stu-id="81c3f-116">Registers a Kanban card number and automatically selects the referenced job in the Kanban list.</span></span> |
 
  
-<a name="registration-mode-select"></a>Registreringsmodusen Velg
+<a name="registration-mode-select"></a><span data-ttu-id="81c3f-117">Registreringsmodusen Velg</span><span class="sxs-lookup"><span data-stu-id="81c3f-117">Registration mode Select</span></span>
 ------------------------
 
-Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
+<span data-ttu-id="81c3f-118">Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet.</span><span class="sxs-lookup"><span data-stu-id="81c3f-118">When you use a bar code reader to select a job, the display mode of the kanban board changes.</span></span> <span data-ttu-id="81c3f-119">I denne modusen gjelder følgende betingelser:</span><span class="sxs-lookup"><span data-stu-id="81c3f-119">In this mode, the following conditions apply:</span></span>
 
--   Bare den skannede Kanban-jobben vises.
--   Detaljene om den valgte jobben vises i hurtigkategorien **Detaljer**.
--   **Meldinger**-hurtigkategorien viser meldinger bare for den valgte jobben.
--   Du kan endre statusen på jobben ved hjelp av funksjonene som er tilgjengelige i handlingsruten. Kanban-overføringskortet fortsetter å vise bare én jobb i denne perioden.
--   Du kan oppdatere informasjonen i listen over jobber manuelt ved å klikke **Oppdater** (SKIFT+F5) i handlingsruten. Når du oppdaterer informasjonen, vises alle resultatene for jobbfilteret på nytt.
+-   <span data-ttu-id="81c3f-120">Bare den skannede Kanban-jobben vises.</span><span class="sxs-lookup"><span data-stu-id="81c3f-120">Only the scanned kanban job is displayed.</span></span>
+-   <span data-ttu-id="81c3f-121">Detaljene om den valgte jobben vises i hurtigkategorien **Detaljer**.</span><span class="sxs-lookup"><span data-stu-id="81c3f-121">The details of the selected job are displayed in the **Details** FastTab.</span></span>
+-   <span data-ttu-id="81c3f-122">**Meldinger**-hurtigkategorien viser meldinger bare for den valgte jobben.</span><span class="sxs-lookup"><span data-stu-id="81c3f-122">The **Messages** FastTab displays messages only for the selected job.</span></span>
+-   <span data-ttu-id="81c3f-123">Du kan endre statusen på jobben ved hjelp av funksjonene som er tilgjengelige i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="81c3f-123">You can change the status of the job by using the functions that are available on the Action Pane.</span></span> <span data-ttu-id="81c3f-124">Kanban-overføringskortet fortsetter å vise bare én jobb i denne perioden.</span><span class="sxs-lookup"><span data-stu-id="81c3f-124">The Kanban transfer board continues to display only a single job during this time.</span></span>
+-   <span data-ttu-id="81c3f-125">Du kan oppdatere informasjonen i listen over jobber manuelt ved å klikke **Oppdater** (SKIFT+F5) i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="81c3f-125">You can update the information in the list of jobs manually by clicking **Refresh** (Shift+F5) on the Action Pane.</span></span> <span data-ttu-id="81c3f-126">Når du oppdaterer informasjonen, vises alle resultatene for jobbfilteret på nytt.</span><span class="sxs-lookup"><span data-stu-id="81c3f-126">After you refresh the information, the full results for the job filter are displayed again.</span></span>
 
-## <a name="job-status-and-possible-actions"></a>Jobbstatus og mulige handlinger
-Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-Kanbaner, bestemmer om du kan behandle jobben ytterligere. Tabellen nedenfor viser informasjon om disse statusene og oppgavene:
--   Statusene som er tilgjengelige for jobber eller for håndteringsenhetene som jobbene refererer til.
--   Hver oppgave du kan utføre for jobben.
+## <a name="job-status-and-possible-actions"></a><span data-ttu-id="81c3f-127">Jobbstatus og mulige handlinger</span><span class="sxs-lookup"><span data-stu-id="81c3f-127">Job status and possible actions</span></span>
+<span data-ttu-id="81c3f-128">Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-Kanbaner, bestemmer om du kan behandle jobben ytterligere.</span><span class="sxs-lookup"><span data-stu-id="81c3f-128">The status of the selected job and the status of any pegged jobs for event kanbans, determine whether you can process the job further.</span></span> <span data-ttu-id="81c3f-129">Tabellen nedenfor viser informasjon om disse statusene og oppgavene:</span><span class="sxs-lookup"><span data-stu-id="81c3f-129">The following table displays information about these statuses and tasks:</span></span>
+-   <span data-ttu-id="81c3f-130">Statusene som er tilgjengelige for jobber eller for håndteringsenhetene som jobbene refererer til.</span><span class="sxs-lookup"><span data-stu-id="81c3f-130">The statuses that are available for jobs, or for the handling units that are referenced by the jobs.</span></span>
+-   <span data-ttu-id="81c3f-131">Hver oppgave du kan utføre for jobben.</span><span class="sxs-lookup"><span data-stu-id="81c3f-131">Each task that you can perform for the job.</span></span>
 
 <table>
 <colgroup>
@@ -75,116 +75,116 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 </colgroup>
 <thead>
 <tr class="header">
-<th>Jobbtype</th>
-<th>Jobbstatusen eller statusen for håndteringsenheten</th>
-<th>Oppdater plukkliste</th>
-<th>Starte</th>
-<th>Oppdater registrering</th>
-<th>Fullført</th>
-<th>Tom</th>
-<th>Opprett hendelses-Kanbaner</th>
+<th><span data-ttu-id="81c3f-132">Jobbtype</span><span class="sxs-lookup"><span data-stu-id="81c3f-132">Job type</span></span></th>
+<th><span data-ttu-id="81c3f-133">Jobbstatusen eller statusen for håndteringsenheten</span><span class="sxs-lookup"><span data-stu-id="81c3f-133">Job status or handling unit status</span></span></th>
+<th><span data-ttu-id="81c3f-134">Oppdater plukkliste</span><span class="sxs-lookup"><span data-stu-id="81c3f-134">Update picking list</span></span></th>
+<th><span data-ttu-id="81c3f-135">Starte</span><span class="sxs-lookup"><span data-stu-id="81c3f-135">Start</span></span></th>
+<th><span data-ttu-id="81c3f-136">Oppdater registrering</span><span class="sxs-lookup"><span data-stu-id="81c3f-136">Update registration</span></span></th>
+<th><span data-ttu-id="81c3f-137">Fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-137">Complete</span></span></th>
+<th><span data-ttu-id="81c3f-138">Tom</span><span class="sxs-lookup"><span data-stu-id="81c3f-138">Empty</span></span></th>
+<th><span data-ttu-id="81c3f-139">Opprett hendelses-Kanbaner</span><span class="sxs-lookup"><span data-stu-id="81c3f-139">Create event kanbans</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Overføring</td>
+<td><span data-ttu-id="81c3f-140">Overføring</span><span class="sxs-lookup"><span data-stu-id="81c3f-140">Transfer</span></span></td>
 <td><ul>
-<li>Ikke planlagt</li>
-<li>Ingen tilknyttede jobber, eller tilknyttede jobber er fullført</li>
+<li><span data-ttu-id="81c3f-141">Ikke planlagt</span><span class="sxs-lookup"><span data-stu-id="81c3f-141">Not planned</span></span></li>
+<li><span data-ttu-id="81c3f-142">Ingen tilknyttede jobber, eller tilknyttede jobber er fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-142">No pegged jobs, or pegged jobs are Completed</span></span></li>
 </ul></td>
-<td>Ja</td>
-<td>Ja</td>
-<td>Ja</td>
-<td>Ja</td>
-<td>Antall</td>
-<td>Ja</td>
+<td><span data-ttu-id="81c3f-143">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-143">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-144">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-144">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-145">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-145">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-146">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-146">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-147">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-147">No</span></span></td>
+<td><span data-ttu-id="81c3f-148">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-148">Yes</span></span></td>
 </tr>
 <tr class="even">
-<td>Overføring</td>
+<td><span data-ttu-id="81c3f-149">Overføring</span><span class="sxs-lookup"><span data-stu-id="81c3f-149">Transfer</span></span></td>
 <td><ul>
-<li>Ikke planlagt</li>
-<li>Den tilknyttede jobben er ikke fullført</li>
+<li><span data-ttu-id="81c3f-150">Ikke planlagt</span><span class="sxs-lookup"><span data-stu-id="81c3f-150">Not planned</span></span></li>
+<li><span data-ttu-id="81c3f-151">Den tilknyttede jobben er ikke fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-151">The pegged job is not Completed</span></span></li>
 </ul></td>
-<td>Ja</td>
-<td>Antall</td>
-<td>Ja</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-152">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-152">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-153">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-153">No</span></span></td>
+<td><span data-ttu-id="81c3f-154">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-154">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-155">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-155">No</span></span></td>
+<td><span data-ttu-id="81c3f-156">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-156">No</span></span></td>
+<td><span data-ttu-id="81c3f-157">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-157">No</span></span></td>
 </tr>
 <tr class="odd">
-<td>Overføring</td>
-<td>Pågår</td>
-<td>Ja</td>
-<td>Antall</td>
-<td>Ja</td>
-<td>Ja</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-158">Overføring</span><span class="sxs-lookup"><span data-stu-id="81c3f-158">Transfer</span></span></td>
+<td><span data-ttu-id="81c3f-159">Pågår</span><span class="sxs-lookup"><span data-stu-id="81c3f-159">In progress</span></span></td>
+<td><span data-ttu-id="81c3f-160">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-160">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-161">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-161">No</span></span></td>
+<td><span data-ttu-id="81c3f-162">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-162">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-163">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-163">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-164">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-164">No</span></span></td>
+<td><span data-ttu-id="81c3f-165">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-165">No</span></span></td>
 </tr>
 <tr class="even">
-<td>Overføring</td>
-<td>Fullført</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Ja</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-166">Overføring</span><span class="sxs-lookup"><span data-stu-id="81c3f-166">Transfer</span></span></td>
+<td><span data-ttu-id="81c3f-167">Fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-167">Completed</span></span></td>
+<td><span data-ttu-id="81c3f-168">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-168">No</span></span></td>
+<td><span data-ttu-id="81c3f-169">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-169">No</span></span></td>
+<td><span data-ttu-id="81c3f-170">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-170">No</span></span></td>
+<td><span data-ttu-id="81c3f-171">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-171">No</span></span></td>
+<td><span data-ttu-id="81c3f-172">Ja</span><span class="sxs-lookup"><span data-stu-id="81c3f-172">Yes</span></span></td>
+<td><span data-ttu-id="81c3f-173">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-173">No</span></span></td>
 </tr>
 <tr class="odd">
-<td>Overføring eller behandling</td>
-<td>Tom</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-174">Overføring eller behandling</span><span class="sxs-lookup"><span data-stu-id="81c3f-174">Transfer or process</span></span></td>
+<td><span data-ttu-id="81c3f-175">Tom</span><span class="sxs-lookup"><span data-stu-id="81c3f-175">Empty</span></span></td>
+<td><span data-ttu-id="81c3f-176">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-176">No</span></span></td>
+<td><span data-ttu-id="81c3f-177">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-177">No</span></span></td>
+<td><span data-ttu-id="81c3f-178">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-178">No</span></span></td>
+<td><span data-ttu-id="81c3f-179">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-179">No</span></span></td>
+<td><span data-ttu-id="81c3f-180">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-180">No</span></span></td>
+<td><span data-ttu-id="81c3f-181">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-181">No</span></span></td>
 </tr>
 <tr class="even">
-<td>Overføring eller behandling</td>
-<td>Finner ikke et Kanban-kort</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-182">Overføring eller behandling</span><span class="sxs-lookup"><span data-stu-id="81c3f-182">Transfer or process</span></span></td>
+<td><span data-ttu-id="81c3f-183">Finner ikke et Kanban-kort</span><span class="sxs-lookup"><span data-stu-id="81c3f-183">A kanban card is not found</span></span></td>
+<td><span data-ttu-id="81c3f-184">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-184">No</span></span></td>
+<td><span data-ttu-id="81c3f-185">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-185">No</span></span></td>
+<td><span data-ttu-id="81c3f-186">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-186">No</span></span></td>
+<td><span data-ttu-id="81c3f-187">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-187">No</span></span></td>
+<td><span data-ttu-id="81c3f-188">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-188">No</span></span></td>
+<td><span data-ttu-id="81c3f-189">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-189">No</span></span></td>
 </tr>
 <tr class="odd">
-<td>Overføring eller behandling</td>
-<td>Det er funnet et Kanban-kort, men det er ikke tilordnet til en Kanban</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-190">Overføring eller behandling</span><span class="sxs-lookup"><span data-stu-id="81c3f-190">Transfer or process</span></span></td>
+<td><span data-ttu-id="81c3f-191">Det er funnet et Kanban-kort, men det er ikke tilordnet til en Kanban</span><span class="sxs-lookup"><span data-stu-id="81c3f-191">A kanban card is found, but it is not assigned to a kanban</span></span></td>
+<td><span data-ttu-id="81c3f-192">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-192">No</span></span></td>
+<td><span data-ttu-id="81c3f-193">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-193">No</span></span></td>
+<td><span data-ttu-id="81c3f-194">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-194">No</span></span></td>
+<td><span data-ttu-id="81c3f-195">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-195">No</span></span></td>
+<td><span data-ttu-id="81c3f-196">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-196">No</span></span></td>
+<td><span data-ttu-id="81c3f-197">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-197">No</span></span></td>
 </tr>
 <tr class="even">
-<td>Behandle</td>
+<td><span data-ttu-id="81c3f-198">Behandle</span><span class="sxs-lookup"><span data-stu-id="81c3f-198">Process</span></span></td>
 <td><ul>
-<li>Ikke planlagt</li>
-<li>Klargjort</li>
-<li>Pågår</li>
+<li><span data-ttu-id="81c3f-199">Ikke planlagt</span><span class="sxs-lookup"><span data-stu-id="81c3f-199">Not planned</span></span></li>
+<li><span data-ttu-id="81c3f-200">Klargjort</span><span class="sxs-lookup"><span data-stu-id="81c3f-200">Prepared</span></span></li>
+<li><span data-ttu-id="81c3f-201">Pågår</span><span class="sxs-lookup"><span data-stu-id="81c3f-201">In progress</span></span></li>
 </ul></td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-202">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-202">No</span></span></td>
+<td><span data-ttu-id="81c3f-203">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-203">No</span></span></td>
+<td><span data-ttu-id="81c3f-204">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-204">No</span></span></td>
+<td><span data-ttu-id="81c3f-205">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-205">No</span></span></td>
+<td><span data-ttu-id="81c3f-206">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-206">No</span></span></td>
+<td><span data-ttu-id="81c3f-207">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-207">No</span></span></td>
 </tr>
 <tr class="odd">
-<td>Behandle</td>
-<td>Fullført</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td><span data-ttu-id="81c3f-208">Behandle</span><span class="sxs-lookup"><span data-stu-id="81c3f-208">Process</span></span></td>
+<td><span data-ttu-id="81c3f-209">Fullført</span><span class="sxs-lookup"><span data-stu-id="81c3f-209">Completed</span></span></td>
+<td><span data-ttu-id="81c3f-210">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-210">No</span></span></td>
+<td><span data-ttu-id="81c3f-211">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-211">No</span></span></td>
+<td><span data-ttu-id="81c3f-212">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-212">No</span></span></td>
+<td><span data-ttu-id="81c3f-213">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-213">No</span></span></td>
+<td><span data-ttu-id="81c3f-214">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-214">No</span></span></td>
+<td><span data-ttu-id="81c3f-215">Antall</span><span class="sxs-lookup"><span data-stu-id="81c3f-215">No</span></span></td>
 </tr>
 </tbody>
 </table>

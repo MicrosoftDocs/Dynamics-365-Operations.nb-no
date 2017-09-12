@@ -17,30 +17,30 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 36096c9a0c8dde1028728ec257dfa63e7fb669af
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0e6829238b244cc01b070fde6acdf37bdaeb9670
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016-only"></a>Beregne en stykkliste ved hjelp av en struktur med ett nivå (bare februar 2016)
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016-only"></a><span data-ttu-id="6b26c-103">Beregne en stykkliste ved hjelp av en struktur med ett nivå (bare februar 2016)</span><span class="sxs-lookup"><span data-stu-id="6b26c-103">Calculate a BOM by using a single level structure (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du beregner kostnaden av ferdige produkter ved hjelp av nedbryting på ett enkelt nivå som er basert på kostarket. Dette er den sjette oppgaven i serien stykklisteberegning. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.
+<span data-ttu-id="6b26c-104">Denne fremgangsmåten viser hvordan du beregner kostnaden av ferdige produkter ved hjelp av nedbryting på ett enkelt nivå som er basert på kostarket.</span><span class="sxs-lookup"><span data-stu-id="6b26c-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="6b26c-105">Dette er den sjette oppgaven i serien stykklisteberegning.</span><span class="sxs-lookup"><span data-stu-id="6b26c-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="6b26c-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="6b26c-106">The demo data company used to create this task is USMF.</span></span>
 
-1. Gå til Frigitte produkter.
-2. Finn og velg ønsket post i listen.
-    * Velg produkt BOM_1.  
-3. Klikk Styr kostnader i handlingsruten.
-4. Klikk Varepris.
-5. Klikk Beregn varekostnad.
-    * Du må kanskje klikke ellipsen (...) for å se dette alternativet i den øverste menyen.  
-6. Klikk rullegardinknappen i feltet Etterkalkuleringsversjon for å åpne oppslaget.
-    * Velg 10 for denne demonstrasjonen. Dette er den samme etterkalkuleringsversjonen som brukes til å legge til kostprisen til komponentene.  
-7. Klikk OK.
-8. Klikk Vis beregningsdetaljer.
-    * Du må kanskje klikke ellipsen (...) for å se dette alternativet i den øverste menyen.    Her er sammensetningen av kostnaden: • 10 er avledet fra ITEM_A, 10 fra ITEM_B, 10 fra BOM_2. I dette tilfellet finnes det ingen detaljer for BOM_2 fordi det ble angitt som en standard kostnad på 10, men ikke utført gjennom beregning.  •  7 er avledet fra oppstillingstiden, som er en konstant kostnad, og ytterligere 7 er avledet fra kjøretidsoperasjonen (prosess).  •  Det finnes også andre beløp som samsvarer med indirekte kostnader.  
+1. <span data-ttu-id="6b26c-107">Gå til Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="6b26c-107">Go to Released products.</span></span>
+2. <span data-ttu-id="6b26c-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="6b26c-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6b26c-109">Velg produkt BOM_1.</span><span class="sxs-lookup"><span data-stu-id="6b26c-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="6b26c-110">Klikk Styr kostnader i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="6b26c-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="6b26c-111">Klikk Varepris.</span><span class="sxs-lookup"><span data-stu-id="6b26c-111">Click Item price.</span></span>
+5. <span data-ttu-id="6b26c-112">Klikk Beregn varekostnad.</span><span class="sxs-lookup"><span data-stu-id="6b26c-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="6b26c-113">Du må kanskje klikke ellipsen (...) for å se dette alternativet i den øverste menyen.</span><span class="sxs-lookup"><span data-stu-id="6b26c-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="6b26c-114">Klikk rullegardinknappen i feltet Etterkalkuleringsversjon for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="6b26c-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="6b26c-115">Velg 10 for denne demonstrasjonen.</span><span class="sxs-lookup"><span data-stu-id="6b26c-115">For this demo, select 10.</span></span> <span data-ttu-id="6b26c-116">Dette er den samme etterkalkuleringsversjonen som brukes til å legge til kostprisen til komponentene.</span><span class="sxs-lookup"><span data-stu-id="6b26c-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="6b26c-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6b26c-117">Click OK.</span></span>
+8. <span data-ttu-id="6b26c-118">Klikk Vis beregningsdetaljer.</span><span class="sxs-lookup"><span data-stu-id="6b26c-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="6b26c-119">Du må kanskje klikke ellipsen (...) for å se dette alternativet i den øverste menyen.</span><span class="sxs-lookup"><span data-stu-id="6b26c-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="6b26c-120">Her er sammensetningen av kostnaden: • 10 er avledet fra ITEM_A, 10 fra ITEM_B, 10 fra BOM_2.</span><span class="sxs-lookup"><span data-stu-id="6b26c-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="6b26c-121">I dette tilfellet finnes det ingen detaljer for BOM_2 fordi det ble angitt som en standard kostnad på 10, men ikke utført gjennom beregning.</span><span class="sxs-lookup"><span data-stu-id="6b26c-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="6b26c-122">•  7 er avledet fra oppstillingstiden, som er en konstant kostnad, og ytterligere 7 er avledet fra kjøretidsoperasjonen (prosess).</span><span class="sxs-lookup"><span data-stu-id="6b26c-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="6b26c-123">•  Det finnes også andre beløp som samsvarer med indirekte kostnader.</span><span class="sxs-lookup"><span data-stu-id="6b26c-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
 9. @SysTaskRecorder:_RequestClose
 
 

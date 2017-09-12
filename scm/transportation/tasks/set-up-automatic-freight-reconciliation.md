@@ -17,58 +17,58 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 61b795d52d4d2586db7f42a976790ee8608e179b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-automatic-freight-reconciliation"></a>Definere automatisk fraktavstemming
+# <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="55540-103">Definere automatisk fraktavstemming</span><span class="sxs-lookup"><span data-stu-id="55540-103">Set up automatic freight reconciliation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavstemming. Dette gjøres vanligvis av en lagersjef. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.
+<span data-ttu-id="55540-104">Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavstemming.</span><span class="sxs-lookup"><span data-stu-id="55540-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="55540-105">Dette gjøres vanligvis av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="55540-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="55540-106">Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="55540-106">You can use this procedure in demo data company USMF.</span></span>
 
 
-## <a name="set-up-the-freight-bill-type"></a>Definere fraktbrevtypen
-1. Gå til Transportstyring > Oppsett > Fraktavstemming > Fraktbrevtype.
-    * Fraktbrevtypen definerer hvordan fraktbrev og transportørfakturaer skal sammenlignes.  
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Fraktbrevtype.
-4. I Motormontering-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
-    * Dette er standard kodebibliotek for samsvarsmotoren for transportstyring.  
-5. I Motorklasse-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.dll.
-    * Dette er standard klasse for samsvarsmotoren for transportstyring.  
-6. Klikk Ny.
-7. I Beskrivelse-feltet velger du verdien som skal samsvare på fraktbrevet og transportørfakturaen.  
-8. I feltet Samsvar nødvendig velger du Ja.
-    * Hvis du setter dette feltet til Ja, betyr det at verdien som er valgt i Beskrivelse-feltet, må samsvare med både fraktbrevet og transportørfakturaen. Hvis du setter det til Nei, kan feltet være tomt på én av disse.  
-9. Klikk Lagre.
+## <a name="set-up-the-freight-bill-type"></a><span data-ttu-id="55540-107">Definere fraktbrevtypen</span><span class="sxs-lookup"><span data-stu-id="55540-107">Set up the freight bill type</span></span>
+1. <span data-ttu-id="55540-108">Gå til Transportstyring > Oppsett > Fraktavstemming > Fraktbrevtype.</span><span class="sxs-lookup"><span data-stu-id="55540-108">Go to Transportation management > Setup > Freight reconciliation > Freight bill type.</span></span>
+    * <span data-ttu-id="55540-109">Fraktbrevtypen definerer hvordan fraktbrev og transportørfakturaer skal sammenlignes.</span><span class="sxs-lookup"><span data-stu-id="55540-109">The freight bill type defines how freight bills and carrier invoices  should be matched.</span></span>  
+2. <span data-ttu-id="55540-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55540-110">Click New.</span></span>
+3. <span data-ttu-id="55540-111">Skriv inn en verdi i feltet Fraktbrevtype.</span><span class="sxs-lookup"><span data-stu-id="55540-111">In the Freight bill type field, type a value.</span></span>
+4. <span data-ttu-id="55540-112">I Motormontering-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.</span><span class="sxs-lookup"><span data-stu-id="55540-112">In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.</span></span>
+    * <span data-ttu-id="55540-113">Dette er standard kodebibliotek for samsvarsmotoren for transportstyring.</span><span class="sxs-lookup"><span data-stu-id="55540-113">This is the standard Transportation management matching engine code library.</span></span>  
+5. <span data-ttu-id="55540-114">I Motorklasse-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.dll.</span><span class="sxs-lookup"><span data-stu-id="55540-114">In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.dll'.</span></span>
+    * <span data-ttu-id="55540-115">Dette er standard klasse for samsvarsmotoren for transportstyring.</span><span class="sxs-lookup"><span data-stu-id="55540-115">This is the standard Transportation management matching engine class.</span></span>  
+6. <span data-ttu-id="55540-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55540-116">Click New.</span></span>
+7. <span data-ttu-id="55540-117">I Beskrivelse-feltet velger du verdien som skal samsvare på fraktbrevet og transportørfakturaen.</span><span class="sxs-lookup"><span data-stu-id="55540-117">In the Description field, choose the value that should match on the freight bill and the carrier invoice.</span></span>  
+8. <span data-ttu-id="55540-118">I feltet Samsvar nødvendig velger du Ja.</span><span class="sxs-lookup"><span data-stu-id="55540-118">In the Match required field, select 'Yes'.</span></span>
+    * <span data-ttu-id="55540-119">Hvis du setter dette feltet til Ja, betyr det at verdien som er valgt i Beskrivelse-feltet, må samsvare med både fraktbrevet og transportørfakturaen.</span><span class="sxs-lookup"><span data-stu-id="55540-119">If you set this field to Yes this means that the value selected in the Description field needs to match on both the freight bill and the carrier invoice.</span></span> <span data-ttu-id="55540-120">Hvis du setter det til Nei, kan feltet være tomt på én av disse.</span><span class="sxs-lookup"><span data-stu-id="55540-120">If you set it to No, the field can be blank on one of these.</span></span>  
+9. <span data-ttu-id="55540-121">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55540-121">Click Save.</span></span>
 
-## <a name="set-up-the-freight-bill-type-assignment"></a>Definere tilordningen av fraktbrevtype
-1. Lukk siden.
-2. Gå til Transportstyring > Oppsett > Fraktavstemming > Tilordninger av fraktbrevtype.
-    * Fraktbrevtypetilordningen brukes til å angi hvilken fraktbrevtype som skal brukes for en bestemt transportør.   
-3. Klikk Ny.
-4. Angi eller velg en verdi i feltet Modus.
-5. Angi eller velg en verdi i feltet Transportør.
-6. I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.
-7. Lukk siden.
+## <a name="set-up-the-freight-bill-type-assignment"></a><span data-ttu-id="55540-122">Definere tilordningen av fraktbrevtype</span><span class="sxs-lookup"><span data-stu-id="55540-122">Set up the freight bill type assignment</span></span>
+1. <span data-ttu-id="55540-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="55540-123">Close the page.</span></span>
+2. <span data-ttu-id="55540-124">Gå til Transportstyring > Oppsett > Fraktavstemming > Tilordninger av fraktbrevtype.</span><span class="sxs-lookup"><span data-stu-id="55540-124">Go to Transportation management > Setup > Freight reconciliation > Freight bill type assignments.</span></span>
+    * <span data-ttu-id="55540-125">Fraktbrevtypetilordningen brukes til å angi hvilken fraktbrevtype som skal brukes for en bestemt transportør.</span><span class="sxs-lookup"><span data-stu-id="55540-125">The freight bill type assignment is used to specify which freight bill type is used for a particular carrier.</span></span>   
+3. <span data-ttu-id="55540-126">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55540-126">Click New.</span></span>
+4. <span data-ttu-id="55540-127">Angi eller velg en verdi i feltet Modus.</span><span class="sxs-lookup"><span data-stu-id="55540-127">In the Mode field, enter or select a value.</span></span>
+5. <span data-ttu-id="55540-128">Angi eller velg en verdi i feltet Transportør.</span><span class="sxs-lookup"><span data-stu-id="55540-128">In the Shipping carrier field, enter or select a value.</span></span>
+6. <span data-ttu-id="55540-129">I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="55540-129">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+7. <span data-ttu-id="55540-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="55540-130">Close the page.</span></span>
 
-## <a name="set-up-the-audit-master"></a>Konfigurere revisjonsstandarden
-1. Gå til Transportstyring > Oppsett > Fraktavstemming > Revisjonsstandard.
-    * Revisjonsstandarden definerer toleransegrensene for automatisk fraktavstemming. Den angir hvor stor forskjell det kan være mellom pengebeløpet på fraktbrevet og transportørfakturaen og likevel tillate avstemming. Den definerer også hvordan avvik skal håndteres.  
-2. Klikk Ny.
-3. Angi en verdi i feltet Revisjonsstandard-ID.
-4. Velg samme transportør som du gjorde tidligere, i feltet Transportør.
-5. I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.
-6. Utvid delen Toleranse.
-7. Angi et tall i feltet Minste toleransenivå.
-8. Angi et tall i feltet Største toleransenivå.
-9. Utvid delen Resultat.
-10. Angi eller velg en verdi i feltet Årsakskode for overbetaling.
-    * Hvis pengebeløpene er forskjellige på fraktbrevet og transportørfakturaen, angir årsakskodene for over- og underbetaling kontoene som forskjellen skal registreres på, så lenge differansen er innenfor toleransenivåene.  
-11. Angi eller velg en verdi i feltet Årsakskode for underbetaling.
-12. Lukk siden.
+## <a name="set-up-the-audit-master"></a><span data-ttu-id="55540-131">Konfigurere revisjonsstandarden</span><span class="sxs-lookup"><span data-stu-id="55540-131">Set up the audit master</span></span>
+1. <span data-ttu-id="55540-132">Gå til Transportstyring > Oppsett > Fraktavstemming > Revisjonsstandard.</span><span class="sxs-lookup"><span data-stu-id="55540-132">Go to Transportation management > Setup > Freight reconciliation > Audit master.</span></span>
+    * <span data-ttu-id="55540-133">Revisjonsstandarden definerer toleransegrensene for automatisk fraktavstemming.</span><span class="sxs-lookup"><span data-stu-id="55540-133">The audit master defines the tolerance limits for automatic freight reconciliation.</span></span> <span data-ttu-id="55540-134">Den angir hvor stor forskjell det kan være mellom pengebeløpet på fraktbrevet og transportørfakturaen og likevel tillate avstemming.</span><span class="sxs-lookup"><span data-stu-id="55540-134">It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur.</span></span> <span data-ttu-id="55540-135">Den definerer også hvordan avvik skal håndteres.</span><span class="sxs-lookup"><span data-stu-id="55540-135">It also defines how to handle discrepancies.</span></span>  
+2. <span data-ttu-id="55540-136">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55540-136">Click New.</span></span>
+3. <span data-ttu-id="55540-137">Angi en verdi i feltet Revisjonsstandard-ID.</span><span class="sxs-lookup"><span data-stu-id="55540-137">In the Audit master ID field, type a value.</span></span>
+4. <span data-ttu-id="55540-138">Velg samme transportør som du gjorde tidligere, i feltet Transportør.</span><span class="sxs-lookup"><span data-stu-id="55540-138">In the Shipping carrier  field, select the same shipping carrier as you did earlier.</span></span>
+5. <span data-ttu-id="55540-139">I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="55540-139">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+6. <span data-ttu-id="55540-140">Utvid delen Toleranse.</span><span class="sxs-lookup"><span data-stu-id="55540-140">Expand the Tolerance section.</span></span>
+7. <span data-ttu-id="55540-141">Angi et tall i feltet Minste toleransenivå.</span><span class="sxs-lookup"><span data-stu-id="55540-141">In the Minimum tolerance level field, enter a number.</span></span>
+8. <span data-ttu-id="55540-142">Angi et tall i feltet Største toleransenivå.</span><span class="sxs-lookup"><span data-stu-id="55540-142">In the Maximum tolerance level field, enter a number.</span></span>
+9. <span data-ttu-id="55540-143">Utvid delen Resultat.</span><span class="sxs-lookup"><span data-stu-id="55540-143">Expand the Result section.</span></span>
+10. <span data-ttu-id="55540-144">Angi eller velg en verdi i feltet Årsakskode for overbetaling.</span><span class="sxs-lookup"><span data-stu-id="55540-144">In the Overpayment reason code field, enter or select a value.</span></span>
+    * <span data-ttu-id="55540-145">Hvis pengebeløpene er forskjellige på fraktbrevet og transportørfakturaen, angir årsakskodene for over- og underbetaling kontoene som forskjellen skal registreres på, så lenge differansen er innenfor toleransenivåene.</span><span class="sxs-lookup"><span data-stu-id="55540-145">If the monetary amounts differ on the freight bill and the carrier invoice, the overpayment and underpayment reason codes specify the accounts that the difference should be registered on, as long as the difference is within the tolerance levels.</span></span>  
+11. <span data-ttu-id="55540-146">Angi eller velg en verdi i feltet Årsakskode for underbetaling.</span><span class="sxs-lookup"><span data-stu-id="55540-146">In the Underpayment reason code field, enter or select a value.</span></span>
+12. <span data-ttu-id="55540-147">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="55540-147">Close the page.</span></span>
 
 

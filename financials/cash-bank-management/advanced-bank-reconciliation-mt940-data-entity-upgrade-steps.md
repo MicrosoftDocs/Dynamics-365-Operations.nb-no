@@ -15,53 +15,53 @@ ms.custom: 221594
 ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 672697254c1bf06e193a51c5c7c83c467a220ce8
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 0fb86cd4264d5420c479e14f7eed41e480c88b63
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avansert bankavstemming MT940-import – oppgradering for sammensatt dataenhet
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a><span data-ttu-id="60f9f-103">Avansert bankavstemming MT940-import – oppgradering for sammensatt dataenhet</span><span class="sxs-lookup"><span data-stu-id="60f9f-103">Advanced bank reconciliation MT940 Import – Composite data entity upgrade</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Et serienummer må legges til importenheten for bankkontoutdraget for å støtte MT940-formatet. 
+<span data-ttu-id="60f9f-104">Et serienummer må legges til importenheten for bankkontoutdraget for å støtte MT940-formatet.</span><span class="sxs-lookup"><span data-stu-id="60f9f-104">A sequence number needs to be added to the bank statement import entity to support the MT940 format.</span></span> 
 
-Bruk fremgangsmåten nedenfor for å legge til importenheten for bankkontoutdrag for å støtte MT940-formatet.
+<span data-ttu-id="60f9f-105">Bruk fremgangsmåten nedenfor for å legge til importenheten for bankkontoutdrag for å støtte MT940-formatet.</span><span class="sxs-lookup"><span data-stu-id="60f9f-105">Use the following steps to add the bank statement import entity to support the MT940 format.</span></span>
 
-1.  Kompiler og synkroniser følgende:
-    -   Sammensatt Entity\\BankStatementImportEntity
-    -   Entity\\BankStatementBalanceEntity
-    -   Entity\\BankStatementDocumentEntity
-    -   Entity\\BankStatementEntity
-    -   Entity\\BankStatementLineEntity
-    -   Tabeller\\BankStatementStaging
+1.  <span data-ttu-id="60f9f-106">Kompiler og synkroniser følgende:</span><span class="sxs-lookup"><span data-stu-id="60f9f-106">Compile and synchronize the following:</span></span>
+    -   <span data-ttu-id="60f9f-107">Sammensatt Entity\\BankStatementImportEntity</span><span class="sxs-lookup"><span data-stu-id="60f9f-107">Composite Entity\\BankStatementImportEntity</span></span>
+    -   <span data-ttu-id="60f9f-108">Entity\\BankStatementBalanceEntity</span><span class="sxs-lookup"><span data-stu-id="60f9f-108">Entity\\BankStatementBalanceEntity</span></span>
+    -   <span data-ttu-id="60f9f-109">Entity\\BankStatementDocumentEntity</span><span class="sxs-lookup"><span data-stu-id="60f9f-109">Entity\\BankStatementDocumentEntity</span></span>
+    -   <span data-ttu-id="60f9f-110">Entity\\BankStatementEntity</span><span class="sxs-lookup"><span data-stu-id="60f9f-110">Entity\\BankStatementEntity</span></span>
+    -   <span data-ttu-id="60f9f-111">Entity\\BankStatementLineEntity</span><span class="sxs-lookup"><span data-stu-id="60f9f-111">Entity\\BankStatementLineEntity</span></span>
+    -   <span data-ttu-id="60f9f-112">Tabeller\\BankStatementStaging</span><span class="sxs-lookup"><span data-stu-id="60f9f-112">Tables\\BankStatementStaging</span></span>
 
-2.  Databehandling\\dataprosjekter.
-    1.  Laste inn MT940-importprosjekter
-        1.  Endre XSLT.
-            -   Klikk **Vis tilordning**.
-            -   Klikk **Vis tilordning** på dokumentet for bankkontoutdrag.
-            -   Klikk **Transformasjoner**
-            -   Slett filen BankReconiliation-to-Composite.xslt.
-            -   Legg til den nye versjonen av BankReconiliation-to-Composite.xslt.
+2.  <span data-ttu-id="60f9f-113">Databehandling\\dataprosjekter.</span><span class="sxs-lookup"><span data-stu-id="60f9f-113">Data management\\data projects.</span></span>
+    1.  <span data-ttu-id="60f9f-114">Laste inn MT940-importprosjekter</span><span class="sxs-lookup"><span data-stu-id="60f9f-114">Load MT940 import project(s)</span></span>
+        1.  <span data-ttu-id="60f9f-115">Endre XSLT.</span><span class="sxs-lookup"><span data-stu-id="60f9f-115">Change XSLT.</span></span>
+            -   <span data-ttu-id="60f9f-116">Klikk **Vis tilordning**.</span><span class="sxs-lookup"><span data-stu-id="60f9f-116">Click **View map**.</span></span>
+            -   <span data-ttu-id="60f9f-117">Klikk **Vis tilordning** på dokumentet for bankkontoutdrag.</span><span class="sxs-lookup"><span data-stu-id="60f9f-117">Click **View map** on the bank statement document.</span></span>
+            -   <span data-ttu-id="60f9f-118">Klikk **Transformasjoner**</span><span class="sxs-lookup"><span data-stu-id="60f9f-118">Click **Transformations**</span></span>
+            -   <span data-ttu-id="60f9f-119">Slett filen BankReconiliation-to-Composite.xslt.</span><span class="sxs-lookup"><span data-stu-id="60f9f-119">Delete the BankReconiliation-to-Composite.xslt file.</span></span>
+            -   <span data-ttu-id="60f9f-120">Legg til den nye versjonen av BankReconiliation-to-Composite.xslt.</span><span class="sxs-lookup"><span data-stu-id="60f9f-120">Add the new version of BankReconiliation-to-Composite.xsl.</span></span>
 
-        2.  Vise **Serienummer** på **Kildedata**-oppsettet.
-            1.  Kildedataformat = XML-element.
-            2.  Enhetsnavn = Bankkontoutdrag.
-            3.  Last opp datafil = ny versjon SampleBankCompositeEntity.xml.
-            4.  Klikk **Ja** for å overskrive den eksisterende filen.
-            5.  Klikk **Ja** for å generere en ny tilordning.
-            6.  Kontroller at S**equenceNumber** er tilordnet.
-                -   Klikk **Vis tilordning** på utdragsenheten.
-                -   Kontroller at **SequenceNumber** er tilordnet fra Kilde til Oppsamling.
+        2.  <span data-ttu-id="60f9f-121">Vise **Serienummer** på **Kildedata**-oppsettet.</span><span class="sxs-lookup"><span data-stu-id="60f9f-121">Expose the **Sequence Number** on **Source Data** layout.</span></span>
+            1.  <span data-ttu-id="60f9f-122">Kildedataformat = XML-element.</span><span class="sxs-lookup"><span data-stu-id="60f9f-122">Source data format = XML-Element.</span></span>
+            2.  <span data-ttu-id="60f9f-123">Enhetsnavn = Bankkontoutdrag.</span><span class="sxs-lookup"><span data-stu-id="60f9f-123">Entity name = Bank statements.</span></span>
+            3.  <span data-ttu-id="60f9f-124">Last opp datafil = ny versjon SampleBankCompositeEntity.xml.</span><span class="sxs-lookup"><span data-stu-id="60f9f-124">Upload data file = new version SampleBankCompositeEntity.xml.</span></span>
+            4.  <span data-ttu-id="60f9f-125">Klikk **Ja** for å overskrive den eksisterende filen.</span><span class="sxs-lookup"><span data-stu-id="60f9f-125">Click **Yes** to overwrite the existing file.</span></span>
+            5.  <span data-ttu-id="60f9f-126">Klikk **Ja** for å generere en ny tilordning.</span><span class="sxs-lookup"><span data-stu-id="60f9f-126">Click **Yes** to generate a new mapping.</span></span>
+            6.  <span data-ttu-id="60f9f-127">Kontroller at S**equenceNumber** er tilordnet.</span><span class="sxs-lookup"><span data-stu-id="60f9f-127">Verify that S**equenceNumber** is mapped.</span></span>
+                -   <span data-ttu-id="60f9f-128">Klikk **Vis tilordning** på utdragsenheten.</span><span class="sxs-lookup"><span data-stu-id="60f9f-128">Click **View Map** on the statement entity.</span></span>
+                -   <span data-ttu-id="60f9f-129">Kontroller at **SequenceNumber** er tilordnet fra Kilde til Oppsamling.</span><span class="sxs-lookup"><span data-stu-id="60f9f-129">Verify that **SequenceNumber** is mapped from Source to Staging.</span></span>
 
-3.  Importer det nye utdraget.
+3.  <span data-ttu-id="60f9f-130">Importer det nye utdraget.</span><span class="sxs-lookup"><span data-stu-id="60f9f-130">Import the new statement.</span></span>
 
 
 

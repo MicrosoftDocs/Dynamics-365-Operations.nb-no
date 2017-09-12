@@ -16,39 +16,39 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cbac3b27c25377abff341c4bf259e553c14a4ae8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a00ca73b1bc301960132a86846749d12c39ed3f7
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-vendor-payment-terms"></a>Definere leverandørbetalingsbetingelser
+# <a name="define-vendor-payment-terms"></a><span data-ttu-id="53090-103">Definere leverandørbetalingsbetingelser</span><span class="sxs-lookup"><span data-stu-id="53090-103">Define vendor payment terms</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Konfigurer betalingsbetingelser for leverandørfakturaer. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
+<span data-ttu-id="53090-104">Konfigurer betalingsbetingelser for leverandørfakturaer.</span><span class="sxs-lookup"><span data-stu-id="53090-104">Set up payment terms for vendor invoices.</span></span> <span data-ttu-id="53090-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="53090-105">This task uses the USMF demo company.</span></span>
 
-1. Gå til Leverandører > Betalingsoppsett > Betalingsbetingelser.
-2. Klikk Ny.
-    * Siden Betalingsbetingelser brukes til å definere hvordan forfallsdatoen beregnes. Den brukes ikke til å definere hvordan kontantrabatten skal beregnes.  
-3. Skriv inn en verdi i Betalingsbetingelser-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Angi et tall i Dager-feltet.
-    * Tallet som er angitt her, brukes til å legge til forfallsdatoen, eller til slutten av perioden angitt i betalingsmåten. Hvis du for eksempel velger Netto, legges tallet til forfallsdatoen. Hvis du velger Inneværende måned, legges nummeret til den siste dagen i gjeldende måned for å beregne forfallsdatoen.  
-6. Klikk Lagre.
-7. Lukk siden.
-8. Gå til Leverandører > Betalingsoppsett > Kontantrabatt.
-9. Klikk Ny.
-10. Angi en ID i Kontantrabatt-feltet.
-11. Skriv inn en verdi i feltet Beskrivelse.
-12. Hvis leverandøren tilbyr en trinnvis rabatt, velger du neste kontantrabatt etter at den gjeldende er utløpt.
-13. Lukk siden.
-14. Angi et tall i Dager-feltet.
-    * Antallet som er angitt i Dager-feltet, brukes til å beregne kontantrabattdatoen, avhengig av hvilket alternativ som er valgt i feltet Netto/løpende. Hvis Netto er valgt, legges antallet til fakturadatoen for å bestemme kontantrabattdatoen. Hvis Gjeldende måned valgt, legges antallet til på slutten av gjeldende måned for å bestemme kontantrabattdatoen.  
-15. Angi prosenten av kontantrabatten i Rabatt-feltet. 
-16. Angi hovedkontoen som kontantrabatten skal posteres til for kundefakturaer.
-17. Angi hovedkontoen som kontantrabatten skal posteres til for leverandørfakturaer.
-    * Hvis "Motkontoer for rabatt" er satt til Bruk hovedkonto for leverandørrabatt, brukes hovedkontoen.  Hvis alternativet er satt til Kontoer på fakturalinjene, posteres kontantrabatten til anleggsmiddel/utgiftshovedkontoene på fakturalinjene.  
-18. Klikk Lagre.
+1. <span data-ttu-id="53090-106">Gå til Leverandører > Betalingsoppsett > Betalingsbetingelser.</span><span class="sxs-lookup"><span data-stu-id="53090-106">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
+2. <span data-ttu-id="53090-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="53090-107">Click New.</span></span>
+    * <span data-ttu-id="53090-108">Siden Betalingsbetingelser brukes til å definere hvordan forfallsdatoen beregnes.</span><span class="sxs-lookup"><span data-stu-id="53090-108">The Terms of payment page is used to define how the due date will be calculated.</span></span> <span data-ttu-id="53090-109">Den brukes ikke til å definere hvordan kontantrabatten skal beregnes.</span><span class="sxs-lookup"><span data-stu-id="53090-109">It is not used to define how the cash discount date will be calculated.</span></span>  
+3. <span data-ttu-id="53090-110">Skriv inn en verdi i Betalingsbetingelser-feltet.</span><span class="sxs-lookup"><span data-stu-id="53090-110">In the Terms of payment field, type a value.</span></span>
+4. <span data-ttu-id="53090-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="53090-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="53090-112">Angi et tall i Dager-feltet.</span><span class="sxs-lookup"><span data-stu-id="53090-112">In the Days field, enter a number.</span></span>
+    * <span data-ttu-id="53090-113">Tallet som er angitt her, brukes til å legge til forfallsdatoen, eller til slutten av perioden angitt i betalingsmåten.</span><span class="sxs-lookup"><span data-stu-id="53090-113">The number entered here will be used to add to the due date, or to the end of the period identified in the Payment method.</span></span> <span data-ttu-id="53090-114">Hvis du for eksempel velger Netto, legges tallet til forfallsdatoen.</span><span class="sxs-lookup"><span data-stu-id="53090-114">For example, if you select Net, the number will be added to the due date.</span></span> <span data-ttu-id="53090-115">Hvis du velger Inneværende måned, legges nummeret til den siste dagen i gjeldende måned for å beregne forfallsdatoen.</span><span class="sxs-lookup"><span data-stu-id="53090-115">If you select Current month, it will add the number to the last day of the current month to calculate the due date.</span></span>  
+6. <span data-ttu-id="53090-116">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="53090-116">Click Save.</span></span>
+7. <span data-ttu-id="53090-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="53090-117">Close the page.</span></span>
+8. <span data-ttu-id="53090-118">Gå til Leverandører > Betalingsoppsett > Kontantrabatt.</span><span class="sxs-lookup"><span data-stu-id="53090-118">Go to Accounts payable > Payment setup > Cash discounts.</span></span>
+9. <span data-ttu-id="53090-119">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="53090-119">Click New.</span></span>
+10. <span data-ttu-id="53090-120">Angi en ID i Kontantrabatt-feltet.</span><span class="sxs-lookup"><span data-stu-id="53090-120">In the Cash discount field, enter an ID.</span></span>
+11. <span data-ttu-id="53090-121">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="53090-121">In the Description field, type a value.</span></span>
+12. <span data-ttu-id="53090-122">Hvis leverandøren tilbyr en trinnvis rabatt, velger du neste kontantrabatt etter at den gjeldende er utløpt.</span><span class="sxs-lookup"><span data-stu-id="53090-122">If the vendor offers a tiered discount, select the next cash discount after the current one is expired.</span></span>
+13. <span data-ttu-id="53090-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="53090-123">Close the page.</span></span>
+14. <span data-ttu-id="53090-124">Angi et tall i Dager-feltet.</span><span class="sxs-lookup"><span data-stu-id="53090-124">In the Days field, enter a number.</span></span>
+    * <span data-ttu-id="53090-125">Antallet som er angitt i Dager-feltet, brukes til å beregne kontantrabattdatoen, avhengig av hvilket alternativ som er valgt i feltet Netto/løpende.</span><span class="sxs-lookup"><span data-stu-id="53090-125">The quantity entered in the Days field will be used to calculate the Cash discount date, based on what option was selected in the Net/Current field.</span></span> <span data-ttu-id="53090-126">Hvis Netto er valgt, legges antallet til fakturadatoen for å bestemme kontantrabattdatoen.</span><span class="sxs-lookup"><span data-stu-id="53090-126">If Net was selected, the quantity will be added to the invoice date to determine the cash discount date.</span></span> <span data-ttu-id="53090-127">Hvis Gjeldende måned valgt, legges antallet til på slutten av gjeldende måned for å bestemme kontantrabattdatoen.</span><span class="sxs-lookup"><span data-stu-id="53090-127">If Current month was selected, the quantity will be added to the end of the currency month to determine the cash discount date.</span></span>  
+15. <span data-ttu-id="53090-128">Angi prosenten av kontantrabatten i Rabatt-feltet.</span><span class="sxs-lookup"><span data-stu-id="53090-128">Enter the percentage of the cash discount in the Discount field.</span></span> 
+16. <span data-ttu-id="53090-129">Angi hovedkontoen som kontantrabatten skal posteres til for kundefakturaer.</span><span class="sxs-lookup"><span data-stu-id="53090-129">Enter the main account to which the cash discount will be posted for customer invoices.</span></span>
+17. <span data-ttu-id="53090-130">Angi hovedkontoen som kontantrabatten skal posteres til for leverandørfakturaer.</span><span class="sxs-lookup"><span data-stu-id="53090-130">Enter the main account to which the cash discount will be posted for vendor invoices.</span></span>
+    * <span data-ttu-id="53090-131">Hvis "Motkontoer for rabatt" er satt til Bruk hovedkonto for leverandørrabatt, brukes hovedkontoen.</span><span class="sxs-lookup"><span data-stu-id="53090-131">If 'Discount offset accounts' is set to Use main account for vendor discount, then the Main account will be used.</span></span>  <span data-ttu-id="53090-132">Hvis alternativet er satt til Kontoer på fakturalinjene, posteres kontantrabatten til anleggsmiddel/utgiftshovedkontoene på fakturalinjene.</span><span class="sxs-lookup"><span data-stu-id="53090-132">If the option is set to Accounts on the invoice lines, the cash discount will be posted to the asset/expense accounts on the invoice's lines.</span></span>  
+18. <span data-ttu-id="53090-133">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="53090-133">Click Save.</span></span>
 
 

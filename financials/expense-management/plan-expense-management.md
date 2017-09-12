@@ -19,125 +19,125 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 83cfd2ef15ae3a02eba21bb31f3311e8f5e15b90
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="configure-expense-management"></a>Konfigurere reiseregning
+# <a name="configure-expense-management"></a><span data-ttu-id="e4cac-104">Konfigurere reiseregning</span><span class="sxs-lookup"><span data-stu-id="e4cac-104">Configure expense management</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du konfigurerer Reiseregning og utlegg i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. I området Reiseregning og utlegg kan du blant annet lagre informasjon om betalingsmåter, reiserekvisisjoner, reiseregninger og retningslinjer. 
+<span data-ttu-id="e4cac-105">Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du konfigurerer Reiseregning og utlegg i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="e4cac-105">This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="e4cac-106">I området Reiseregning og utlegg kan du blant annet lagre informasjon om betalingsmåter, reiserekvisisjoner, reiseregninger og retningslinjer.</span><span class="sxs-lookup"><span data-stu-id="e4cac-106">In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things.</span></span> 
 
-Fordi mange av valgene du gjør når du planlegger konfigurasjonen for Reiseregning og utlegg, er basert på organisasjonens hierarki og økonomiske struktur, må du referere til planleggingsdokumentene for disse områdene.
+<span data-ttu-id="e4cac-107">Fordi mange av valgene du gjør når du planlegger konfigurasjonen for Reiseregning og utlegg, er basert på organisasjonens hierarki og økonomiske struktur, må du referere til planleggingsdokumentene for disse områdene.</span><span class="sxs-lookup"><span data-stu-id="e4cac-107">Because many of the decisions that you make when you plan your configuration for Expense management are based on your organization’s hierarchy and financial structure, you must refer to the planning documents for those areas.</span></span>
 
-## <a name="intercompany-expenses"></a>Konserninterne utgifter
-Når du aktiverer konserninterne utgifter, gir du juridiske enheter og ansatte tillatelse til å pådra seg utgifter på vegne av, og samle inn betaling fra, en annen juridisk enhet i organisasjonen. En ansatt i juridisk enhet A fullfører eksempelvis et prosjekt for juridisk enhet B. Hvis konserninterne utgifter er aktivert, kan den ansatte deretter arkivere en timeregistrering til, og betales av, juridisk enhet B. Hvis organisasjonen ikke har flere juridiske enheter, trenger du ikke å aktivere konserninterne utgifter. **Beslutning:** Vil du aktivere konserninterne utgifter?
+## <a name="intercompany-expenses"></a><span data-ttu-id="e4cac-108">Konserninterne utgifter</span><span class="sxs-lookup"><span data-stu-id="e4cac-108">Intercompany expenses</span></span>
+<span data-ttu-id="e4cac-109">Når du aktiverer konserninterne utgifter, gir du juridiske enheter og ansatte tillatelse til å pådra seg utgifter på vegne av, og samle inn betaling fra, en annen juridisk enhet i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="e4cac-109">When you enable intercompany expenses, you allow legal entities and employees to incur expenses on behalf of, and collect payment from, another legal entity within your organization.</span></span> <span data-ttu-id="e4cac-110">En ansatt i juridisk enhet A fullfører eksempelvis et prosjekt for juridisk enhet B. Hvis konserninterne utgifter er aktivert, kan den ansatte deretter arkivere en timeregistrering til, og betales av, juridisk enhet B. Hvis organisasjonen ikke har flere juridiske enheter, trenger du ikke å aktivere konserninterne utgifter.</span><span class="sxs-lookup"><span data-stu-id="e4cac-110">For example, an employee in legal entity A completes a project for legal entity B. If intercompany expenses are enabled, the employee can then file a timesheet to, and be paid by, legal entity B. If your organization doesn’t have multiple legal entities, you won’t need to enable intercompany expenses.</span></span> <span data-ttu-id="e4cac-111">**Beslutning:** Vil du aktivere konserninterne utgifter?</span><span class="sxs-lookup"><span data-stu-id="e4cac-111">**Decision:** Do you want to enable intercompany expenses?</span></span>
 
-## <a name="financial-management"></a>Økonomistyring
-Reiseregning og utlegg er tett integrert med økonomistyring av organisasjonen. Store deler av konfigurasjonen for Reiseregning og utlegg vil være basert på valgene du har gjort for organisasjonens økonomi. Delene nedenfor beskriver ulike områder som krever planlegging og avgjørelser basert på organisasjonens økonomiske beslutninger og veiledning fra ledelsesteamet ditt.
+## <a name="financial-management"></a><span data-ttu-id="e4cac-112">Økonomistyring</span><span class="sxs-lookup"><span data-stu-id="e4cac-112">Financial management</span></span>
+<span data-ttu-id="e4cac-113">Reiseregning og utlegg er tett integrert med økonomistyring av organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="e4cac-113">Expense management is tightly integrated with the financial management of your organization.</span></span> <span data-ttu-id="e4cac-114">Store deler av konfigurasjonen for Reiseregning og utlegg vil være basert på valgene du har gjort for organisasjonens økonomi.</span><span class="sxs-lookup"><span data-stu-id="e4cac-114">A lot of your configuration for Expense management will be based on the decisions that you’ve made about your organization’s finances.</span></span> <span data-ttu-id="e4cac-115">Delene nedenfor beskriver ulike områder som krever planlegging og avgjørelser basert på organisasjonens økonomiske beslutninger og veiledning fra ledelsesteamet ditt.</span><span class="sxs-lookup"><span data-stu-id="e4cac-115">The following sections describe the different areas that require planning and decisions based on your organization’s financial decisions and guidance from your leadership team.</span></span>
 
-### <a name="per-diems"></a>Kostgodtgjørelse
+### <a name="per-diems"></a><span data-ttu-id="e4cac-116">Kostgodtgjørelse</span><span class="sxs-lookup"><span data-stu-id="e4cac-116">Per diems</span></span>
 
-Du må definere kostgodtgjørelse for ansatte som organisasjonen gir. Fordi kostgodtgjørelse vanligvis brukes til å dekke utgifter som måltider, overnatting og andre tilfeldige utgifter, kan du opprette regler for kostgodtgjørelse som organisasjonen skal tilby. Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler. Når du definerer en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester. Du kan også definere kostgodtgjørelsessatser for å angi minimum og maksimum antall timer som kostgodtgjørelsessatsen kan brukes på en arbeiders reise. **Beslutninger:**
+<span data-ttu-id="e4cac-117">Du må definere kostgodtgjørelse for ansatte som organisasjonen gir.</span><span class="sxs-lookup"><span data-stu-id="e4cac-117">You must define the employee per diems that your organization provides.</span></span> <span data-ttu-id="e4cac-118">Fordi kostgodtgjørelse vanligvis brukes til å dekke utgifter som måltider, overnatting og andre tilfeldige utgifter, kan du opprette regler for kostgodtgjørelse som organisasjonen skal tilby.</span><span class="sxs-lookup"><span data-stu-id="e4cac-118">Because per diems are typically used to cover expenses such as meals, lodging, and other incidental expenses, you can create rules for the per diem allowances that your organization offers.</span></span> <span data-ttu-id="e4cac-119">Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler.</span><span class="sxs-lookup"><span data-stu-id="e4cac-119">Per diem rates can be based on the time of year, the travel location, or both.</span></span> <span data-ttu-id="e4cac-120">Når du definerer en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester.</span><span class="sxs-lookup"><span data-stu-id="e4cac-120">When you define a per diem rule, you can specify that a percentage of the per diem rate will be withheld if a worker receives complimentary meals or services.</span></span> <span data-ttu-id="e4cac-121">Du kan også definere kostgodtgjørelsessatser for å angi minimum og maksimum antall timer som kostgodtgjørelsessatsen kan brukes på en arbeiders reise.</span><span class="sxs-lookup"><span data-stu-id="e4cac-121">You can also define per diem rate tiers to set the minimum and maximum number of hours that the per diem rate can be applied to a worker’s travel.</span></span> <span data-ttu-id="e4cac-122">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-122">**Decisions:**</span></span>
 
--   Standard kostgodtgjørelsesregler for de første og siste dagene:
-    -   Hva er minste antall timer en ansatt kan kreve for en dag og fremdeles motta kostgodtgjørelse?
-    -   Er det en reduksjon i beløpet som tilbys for måltider for første og siste dag? Hva er prosentandelen av reduksjonen i så fall?
-    -   Er det en reduksjon i beløpet som tilbys for et hotell for første og siste dag? Hva er prosentandelen av reduksjonen i så fall?
-    -   Er det en reduksjon i beløpet som tilbys for andre utgifter som inntreffer første og siste dag? Hva er prosentandelen av reduksjonen i så fall?
--   Standard kostgodtgjørelseregler:
-    -   Finnes det en prosentvis reduksjon i kostgodtgjørelsen for hvert måltid hvis måltidet eksempelvis er gratis? Hva er reduksjonsprosenten for hvert måltid?
-    -   Beregnes måltidsreduksjonen per dag, per tur eller etter antall måltider per dag?
-    -   Skal kostgodtgjørelsesbeløpene avrundes vanlig eller oppover?
-    -   Beregnes kostgodtgjørelse basert på en periode på 24 timer eller en kalenderdag?
--   Kostgodtgjørelsesregler basert på lokasjon:
-    -   Kostgodtgjørelsessatser varierer i henhold til plassering og hvilke lokasjoner som er inkludert?
-    -   Hvis kostgodtgjørelsessatsen varierer i henhold til plassering, for hver lokasjon, hvilken prosentandel gis for:
-        -   måltider
-        -   hotell
-        -   andre utgifter
+-   <span data-ttu-id="e4cac-123">Standard kostgodtgjørelsesregler for de første og siste dagene:</span><span class="sxs-lookup"><span data-stu-id="e4cac-123">Default per diem rules for the first and last days:</span></span>
+    -   <span data-ttu-id="e4cac-124">Hva er minste antall timer en ansatt kan kreve for en dag og fremdeles motta kostgodtgjørelse?</span><span class="sxs-lookup"><span data-stu-id="e4cac-124">What is the minimum number of hours that an employee can claim for a day and still receive a per diem?</span></span>
+    -   <span data-ttu-id="e4cac-125">Er det en reduksjon i beløpet som tilbys for måltider for første og siste dag?</span><span class="sxs-lookup"><span data-stu-id="e4cac-125">Is there a reduction in the amount that is offered for meals for the first and last day?</span></span> <span data-ttu-id="e4cac-126">Hva er prosentandelen av reduksjonen i så fall?</span><span class="sxs-lookup"><span data-stu-id="e4cac-126">If so, what is the percentage of the reduction?</span></span>
+    -   <span data-ttu-id="e4cac-127">Er det en reduksjon i beløpet som tilbys for et hotell for første og siste dag?</span><span class="sxs-lookup"><span data-stu-id="e4cac-127">Is there a reduction in the amount that is offered for a hotel for the first and last day?</span></span> <span data-ttu-id="e4cac-128">Hva er prosentandelen av reduksjonen i så fall?</span><span class="sxs-lookup"><span data-stu-id="e4cac-128">If so, what is the percentage of the reduction?</span></span>
+    -   <span data-ttu-id="e4cac-129">Er det en reduksjon i beløpet som tilbys for andre utgifter som inntreffer første og siste dag?</span><span class="sxs-lookup"><span data-stu-id="e4cac-129">Is there a reduction in the amount that is offered for other expenses incurred on the first and last day?</span></span> <span data-ttu-id="e4cac-130">Hva er prosentandelen av reduksjonen i så fall?</span><span class="sxs-lookup"><span data-stu-id="e4cac-130">If so, what is the percentage of the reduction?</span></span>
+-   <span data-ttu-id="e4cac-131">Standard kostgodtgjørelseregler:</span><span class="sxs-lookup"><span data-stu-id="e4cac-131">Default per diem rules:</span></span>
+    -   <span data-ttu-id="e4cac-132">Finnes det en prosentvis reduksjon i kostgodtgjørelsen for hvert måltid hvis måltidet eksempelvis er gratis?</span><span class="sxs-lookup"><span data-stu-id="e4cac-132">Is there a percentage reduction in the per diem allowance for each meal if, for example, the meal is complimentary?</span></span> <span data-ttu-id="e4cac-133">Hva er reduksjonsprosenten for hvert måltid?</span><span class="sxs-lookup"><span data-stu-id="e4cac-133">If so, what is the reduction percentage for each meal?</span></span>
+    -   <span data-ttu-id="e4cac-134">Beregnes måltidsreduksjonen per dag, per tur eller etter antall måltider per dag?</span><span class="sxs-lookup"><span data-stu-id="e4cac-134">Is the meal reduction calculated per day, per trip, or by the number of meals per day?</span></span>
+    -   <span data-ttu-id="e4cac-135">Skal kostgodtgjørelsesbeløpene avrundes vanlig eller oppover?</span><span class="sxs-lookup"><span data-stu-id="e4cac-135">Should per diem amounts be rounded normally or rounded up?</span></span>
+    -   <span data-ttu-id="e4cac-136">Beregnes kostgodtgjørelse basert på en periode på 24 timer eller en kalenderdag?</span><span class="sxs-lookup"><span data-stu-id="e4cac-136">Are per diems calculated on a 24-hour period or on a calendar day?</span></span>
+-   <span data-ttu-id="e4cac-137">Kostgodtgjørelsesregler basert på lokasjon:</span><span class="sxs-lookup"><span data-stu-id="e4cac-137">Per diem rules based on location:</span></span>
+    -   <span data-ttu-id="e4cac-138">Kostgodtgjørelsessatser varierer i henhold til plassering og hvilke lokasjoner som er inkludert?</span><span class="sxs-lookup"><span data-stu-id="e4cac-138">Do per diem rates vary based on location and what locations are included?</span></span>
+    -   <span data-ttu-id="e4cac-139">Hvis kostgodtgjørelsessatsen varierer i henhold til plassering, for hver lokasjon, hvilken prosentandel gis for:</span><span class="sxs-lookup"><span data-stu-id="e4cac-139">If per diem rate do vary based on location, for each location, what percentage amount is provided for:</span></span>
+        -   <span data-ttu-id="e4cac-140">måltider</span><span class="sxs-lookup"><span data-stu-id="e4cac-140">meals</span></span>
+        -   <span data-ttu-id="e4cac-141">hotell</span><span class="sxs-lookup"><span data-stu-id="e4cac-141">hotel</span></span>
+        -   <span data-ttu-id="e4cac-142">andre utgifter</span><span class="sxs-lookup"><span data-stu-id="e4cac-142">other expenses</span></span>
 
-### <a name="expense-management-journals-and-accounts"></a>Journaler og kontoer for reiseregninger og utlegg
+### <a name="expense-management-journals-and-accounts"></a><span data-ttu-id="e4cac-143">Journaler og kontoer for reiseregninger og utlegg</span><span class="sxs-lookup"><span data-stu-id="e4cac-143">Expense management journals and accounts</span></span>
 
-Administrasjon av reiseregninger og utlegg krever at du bruker flere journaler og kontoer. Du må angi for eksempel om den samme kontoen brukes for forskudd og kredittkorttvister. **Beslutninger:**
+<span data-ttu-id="e4cac-144">Administrasjon av reiseregninger og utlegg krever at du bruker flere journaler og kontoer.</span><span class="sxs-lookup"><span data-stu-id="e4cac-144">Expense management requires that you use multiple journals and accounts.</span></span> <span data-ttu-id="e4cac-145">Du må angi for eksempel om den samme kontoen brukes for forskudd og kredittkorttvister.</span><span class="sxs-lookup"><span data-stu-id="e4cac-145">You must decide, for example, whether the same account is used for cash advances and credit card disputes.</span></span> <span data-ttu-id="e4cac-146">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-146">**Decisions:**</span></span>
 
--   Hvilken finansjournal posteres godkjente reiseregninger til?
--   Hvilken konto brukes til forskudd?
--   Bør forskudd posteres umiddelbart?
+-   <span data-ttu-id="e4cac-147">Hvilken finansjournal posteres godkjente reiseregninger til?</span><span class="sxs-lookup"><span data-stu-id="e4cac-147">Which ledger journal are approved expense reports posted to?</span></span>
+-   <span data-ttu-id="e4cac-148">Hvilken konto brukes til forskudd?</span><span class="sxs-lookup"><span data-stu-id="e4cac-148">Which account is used for cash advances?</span></span>
+-   <span data-ttu-id="e4cac-149">Bør forskudd posteres umiddelbart?</span><span class="sxs-lookup"><span data-stu-id="e4cac-149">Should cash advances be posted immediately?</span></span>
 
-### <a name="payment-methods"></a>Betalingsmåter
+### <a name="payment-methods"></a><span data-ttu-id="e4cac-150">Betalingsmåter</span><span class="sxs-lookup"><span data-stu-id="e4cac-150">Payment methods</span></span>
 
-Når du lar ansatte pådra seg utgifter på vegne av firmaet, må du definere betalingsmåtene som ansatte kan bruke. Du kan for eksempel tillate at ansatte kan bruke kontanter eller et firmakredittkort. Du kan også tillate at ansatte skal bruke personlige kredittkort, og deretter tilbakebetale de ansatte. Du må ta følgende avgjørelser for hver enkelt betalingsmåte du godkjenner. **Beslutninger:**
+<span data-ttu-id="e4cac-151">Når du lar ansatte pådra seg utgifter på vegne av firmaet, må du definere betalingsmåtene som ansatte kan bruke.</span><span class="sxs-lookup"><span data-stu-id="e4cac-151">When you allow employees to incur expenses on behalf of your business, you must define the payment methods that employees are allowed to use.</span></span> <span data-ttu-id="e4cac-152">Du kan for eksempel tillate at ansatte kan bruke kontanter eller et firmakredittkort.</span><span class="sxs-lookup"><span data-stu-id="e4cac-152">For example, you might allow employees to use cash or a corporate credit card.</span></span> <span data-ttu-id="e4cac-153">Du kan også tillate at ansatte skal bruke personlige kredittkort, og deretter tilbakebetale de ansatte.</span><span class="sxs-lookup"><span data-stu-id="e4cac-153">You might also allow employees to use personal credit cards, and then reimburse the employees.</span></span> <span data-ttu-id="e4cac-154">Du må ta følgende avgjørelser for hver enkelt betalingsmåte du godkjenner.</span><span class="sxs-lookup"><span data-stu-id="e4cac-154">You must make the following decisions for each payment method that you allow.</span></span> <span data-ttu-id="e4cac-155">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-155">**Decisions:**</span></span>
 
--   Hvilke betalingsmåter er tillatt?
--   Hvem eier betalingsmåteutgiftene?
--   Finnes det en motkontotype? I så fall hvilken?
--   Hvis det finnes en motkonto, hva er kontoen?
--   Hvis betalingsmåten er et kredittkort, bør betalingsmåten bare brukes med importerte transaksjoner?
+-   <span data-ttu-id="e4cac-156">Hvilke betalingsmåter er tillatt?</span><span class="sxs-lookup"><span data-stu-id="e4cac-156">What payment methods are allowed?</span></span>
+-   <span data-ttu-id="e4cac-157">Hvem eier betalingsmåteutgiftene?</span><span class="sxs-lookup"><span data-stu-id="e4cac-157">Who owns the payment method expenses?</span></span>
+-   <span data-ttu-id="e4cac-158">Finnes det en motkontotype?</span><span class="sxs-lookup"><span data-stu-id="e4cac-158">Is there an offset account type?</span></span> <span data-ttu-id="e4cac-159">I så fall hvilken?</span><span class="sxs-lookup"><span data-stu-id="e4cac-159">If so, what is it?</span></span>
+-   <span data-ttu-id="e4cac-160">Hvis det finnes en motkonto, hva er kontoen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-160">If there is an offset account, what is the account?</span></span>
+-   <span data-ttu-id="e4cac-161">Hvis betalingsmåten er et kredittkort, bør betalingsmåten bare brukes med importerte transaksjoner?</span><span class="sxs-lookup"><span data-stu-id="e4cac-161">If the payment method is a credit card, should the payment method be used only with imported transactions?</span></span>
 
-### <a name="expense-categories-and-shared-categories"></a>Utgiftskategorier og delte kategorier
+### <a name="expense-categories-and-shared-categories"></a><span data-ttu-id="e4cac-162">Utgiftskategorier og delte kategorier</span><span class="sxs-lookup"><span data-stu-id="e4cac-162">Expense categories and shared categories</span></span>
 
-Når ansatte oppretter en reiseregning, må hver utgift de registrerer, være tilknyttet en utgiftskategori. Utgiftskategorier er avledet fra Delte kategorier som kan deles på tvers av de juridiske enhetene i organisasjonen. Disse kategoriene kan også deles i Prosjektstyring og regnskap, avhengig av hvordan organisasjonen er definert. Basert på definisjonen av din organisasjon og veiledning fra implementeringsteamet må du avgjøre om kategoriene som brukes i reiseregninger og utlegg, bare skal brukes i utgifter, eller om de skal deles mellom prosjekt og utgifter. Legg merke til at disse kategoriene kan deles mellom prosjekt og utgifter eller prosjekt og produksjon, men ikke mellom utgifter og produksjon. Du må ta følgende avgjørelser for hver utgiftskategori. **Beslutninger:**
+<span data-ttu-id="e4cac-163">Når ansatte oppretter en reiseregning, må hver utgift de registrerer, være tilknyttet en utgiftskategori.</span><span class="sxs-lookup"><span data-stu-id="e4cac-163">When employees create an expense report, each expense that they record must be associated with an expense category.</span></span> <span data-ttu-id="e4cac-164">Utgiftskategorier er avledet fra Delte kategorier som kan deles på tvers av de juridiske enhetene i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="e4cac-164">Expense categories are derived from Shared categories that can be shared across the legal entities within your organization.</span></span> <span data-ttu-id="e4cac-165">Disse kategoriene kan også deles i Prosjektstyring og regnskap, avhengig av hvordan organisasjonen er definert.</span><span class="sxs-lookup"><span data-stu-id="e4cac-165">These categories can also be shared in Project management and accounting, depending on how your organization is defined.</span></span> <span data-ttu-id="e4cac-166">Basert på definisjonen av din organisasjon og veiledning fra implementeringsteamet må du avgjøre om kategoriene som brukes i reiseregninger og utlegg, bare skal brukes i utgifter, eller om de skal deles mellom prosjekt og utgifter.</span><span class="sxs-lookup"><span data-stu-id="e4cac-166">Based on the definition of your organization and guidance from the implementation team, determine whether the categories used in expense management are to be used in only expense or if they should be shared between Project and Expense.</span></span> <span data-ttu-id="e4cac-167">Legg merke til at disse kategoriene kan deles mellom prosjekt og utgifter eller prosjekt og produksjon, men ikke mellom utgifter og produksjon.</span><span class="sxs-lookup"><span data-stu-id="e4cac-167">Note that these categories can be shared between Project and Expense or Project and Production, but not between Expense and Production.</span></span> <span data-ttu-id="e4cac-168">Du må ta følgende avgjørelser for hver utgiftskategori.</span><span class="sxs-lookup"><span data-stu-id="e4cac-168">You must make the following decisions for each expense category.</span></span> <span data-ttu-id="e4cac-169">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-169">**Decisions:**</span></span>
 
--   Hva er utgiftskategorien? For eksempel flybilletter, hotell eller kjørelengde.
--   Kan denne utgiftskategorien også brukes i Prosjektstyring og regnskap?
--   Hva er utgiftstypen?
--   Hva er standard betalingsmåte for utgiftskategorien?
--   Må utgifter i denne kategorien spesifiseres?
--   Hva er hovedstandardkontoen for utgiftskategorien?
--   Hva er standard mva-gruppe for vare for utgiftskategorien?
--   Er flere betalingsmåter tillatt for utgiftskategorien? I så fall hvilke?
--   Finnes det underkategorier i denne utgiftskategorien? Hvis dette er tilfelle:
-    -   Er noen av underkategoriene utelatt fra skatterefusjon?
-    -   Hva er mva-gruppe for vare for underkategoriene?
+-   <span data-ttu-id="e4cac-170">Hva er utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-170">What is the expense category?</span></span> <span data-ttu-id="e4cac-171">For eksempel flybilletter, hotell eller kjørelengde.</span><span class="sxs-lookup"><span data-stu-id="e4cac-171">For example, flights, hotel, or mileage.</span></span>
+-   <span data-ttu-id="e4cac-172">Kan denne utgiftskategorien også brukes i Prosjektstyring og regnskap?</span><span class="sxs-lookup"><span data-stu-id="e4cac-172">Can this expense category also be used in Project management and accounting?</span></span>
+-   <span data-ttu-id="e4cac-173">Hva er utgiftstypen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-173">What is the expense type?</span></span>
+-   <span data-ttu-id="e4cac-174">Hva er standard betalingsmåte for utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-174">What is the default payment method for the expense category?</span></span>
+-   <span data-ttu-id="e4cac-175">Må utgifter i denne kategorien spesifiseres?</span><span class="sxs-lookup"><span data-stu-id="e4cac-175">Are expenses in this category required to be itemized?</span></span>
+-   <span data-ttu-id="e4cac-176">Hva er hovedstandardkontoen for utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-176">What is the main default account for the expense category?</span></span>
+-   <span data-ttu-id="e4cac-177">Hva er standard mva-gruppe for vare for utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-177">What is the default item sales tax group for the expense category?</span></span>
+-   <span data-ttu-id="e4cac-178">Er flere betalingsmåter tillatt for utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-178">Are additional payment methods allowed for the expense category?</span></span> <span data-ttu-id="e4cac-179">I så fall hvilke?</span><span class="sxs-lookup"><span data-stu-id="e4cac-179">If so, what are they?</span></span>
+-   <span data-ttu-id="e4cac-180">Finnes det underkategorier i denne utgiftskategorien?</span><span class="sxs-lookup"><span data-stu-id="e4cac-180">Are there subcategories within this expense category?</span></span> <span data-ttu-id="e4cac-181">Hvis dette er tilfelle:</span><span class="sxs-lookup"><span data-stu-id="e4cac-181">If so:</span></span>
+    -   <span data-ttu-id="e4cac-182">Er noen av underkategoriene utelatt fra skatterefusjon?</span><span class="sxs-lookup"><span data-stu-id="e4cac-182">Are any of the subcategories excluded from tax recovery?</span></span>
+    -   <span data-ttu-id="e4cac-183">Hva er mva-gruppe for vare for underkategoriene?</span><span class="sxs-lookup"><span data-stu-id="e4cac-183">What is the item sales tax group of the subcategories?</span></span>
 
-    Hvis denne utgiftskategorien også brukes i Prosjektstyring og regnskap, svarer du på de gjenværende spørsmålene. Hvis ikke, er du ferdig med denne delen.
--   Hvilke kostnadskontoer brukes til følgende?
-    -   Kostnad
-    -   Lønnsfordeling
-    -   RIA - Kostverdi
-    -   Kostnad - vare
-    -   RIA - kostverdi - vare
-    -   Påløpt tap
-    -   RIA - påløpt tap
--   Hvilke inntektskontoer brukes til følgende?
-    -   Fakturert omsetning
-    -   Påløpte inntekter - salgsverdi
-    -   RIA - Salgsverdi
-    -   Påløpte inntekter - produksjon
-    -   RIA - Produksjon
-    -   Påløpte inntekter - fortjeneste
-    -   RIA - Fortjeneste
-    -   Påløpte inntekter - abonnement
-    -   RIA - abonnement
+    <span data-ttu-id="e4cac-184">Hvis denne utgiftskategorien også brukes i Prosjektstyring og regnskap, svarer du på de gjenværende spørsmålene.</span><span class="sxs-lookup"><span data-stu-id="e4cac-184">If this expense category is also used in Project management and accounting, answer the remaining questions.</span></span> <span data-ttu-id="e4cac-185">Hvis ikke, er du ferdig med denne delen.</span><span class="sxs-lookup"><span data-stu-id="e4cac-185">Otherwise, you are finished with this section.</span></span>
+-   <span data-ttu-id="e4cac-186">Hvilke kostnadskontoer brukes til følgende?</span><span class="sxs-lookup"><span data-stu-id="e4cac-186">Which cost accounts will be used for the following?</span></span>
+    -   <span data-ttu-id="e4cac-187">Kostnad</span><span class="sxs-lookup"><span data-stu-id="e4cac-187">Cost</span></span>
+    -   <span data-ttu-id="e4cac-188">Lønnsfordeling</span><span class="sxs-lookup"><span data-stu-id="e4cac-188">Payroll allocation</span></span>
+    -   <span data-ttu-id="e4cac-189">RIA - Kostverdi</span><span class="sxs-lookup"><span data-stu-id="e4cac-189">WIP-cost value</span></span>
+    -   <span data-ttu-id="e4cac-190">Kostnad - vare</span><span class="sxs-lookup"><span data-stu-id="e4cac-190">Cost-item</span></span>
+    -   <span data-ttu-id="e4cac-191">RIA - kostverdi - vare</span><span class="sxs-lookup"><span data-stu-id="e4cac-191">WIP-cost value-item</span></span>
+    -   <span data-ttu-id="e4cac-192">Påløpt tap</span><span class="sxs-lookup"><span data-stu-id="e4cac-192">Accrued loss</span></span>
+    -   <span data-ttu-id="e4cac-193">RIA - påløpt tap</span><span class="sxs-lookup"><span data-stu-id="e4cac-193">WIP-accrued loss</span></span>
+-   <span data-ttu-id="e4cac-194">Hvilke inntektskontoer brukes til følgende?</span><span class="sxs-lookup"><span data-stu-id="e4cac-194">Which revenue accounts will be used for the following?</span></span>
+    -   <span data-ttu-id="e4cac-195">Fakturert omsetning</span><span class="sxs-lookup"><span data-stu-id="e4cac-195">Invoiced revenue</span></span>
+    -   <span data-ttu-id="e4cac-196">Påløpte inntekter - salgsverdi</span><span class="sxs-lookup"><span data-stu-id="e4cac-196">Accrued revenue-sales value</span></span>
+    -   <span data-ttu-id="e4cac-197">RIA - Salgsverdi</span><span class="sxs-lookup"><span data-stu-id="e4cac-197">WIP-sales value</span></span>
+    -   <span data-ttu-id="e4cac-198">Påløpte inntekter - produksjon</span><span class="sxs-lookup"><span data-stu-id="e4cac-198">Accrued revenue-production</span></span>
+    -   <span data-ttu-id="e4cac-199">RIA - Produksjon</span><span class="sxs-lookup"><span data-stu-id="e4cac-199">WIP-production</span></span>
+    -   <span data-ttu-id="e4cac-200">Påløpte inntekter - fortjeneste</span><span class="sxs-lookup"><span data-stu-id="e4cac-200">Accrued revenue-profit</span></span>
+    -   <span data-ttu-id="e4cac-201">RIA - Fortjeneste</span><span class="sxs-lookup"><span data-stu-id="e4cac-201">WIP-profit</span></span>
+    -   <span data-ttu-id="e4cac-202">Påløpte inntekter - abonnement</span><span class="sxs-lookup"><span data-stu-id="e4cac-202">Accrued revenue-subscription</span></span>
+    -   <span data-ttu-id="e4cac-203">RIA - abonnement</span><span class="sxs-lookup"><span data-stu-id="e4cac-203">WIP-subscription</span></span>
 
  
 
-### <a name="taxes"></a>Avgifter
+### <a name="taxes"></a><span data-ttu-id="e4cac-204">Avgifter</span><span class="sxs-lookup"><span data-stu-id="e4cac-204">Taxes</span></span>
 
-For utgiftsrelaterte avgifter må du bestemme hva som inkluderes eller aktivert for reiseregninger. **Beslutninger:**
+<span data-ttu-id="e4cac-205">For utgiftsrelaterte avgifter må du bestemme hva som inkluderes eller aktivert for reiseregninger.</span><span class="sxs-lookup"><span data-stu-id="e4cac-205">For expense-related taxes, you must determine what is included or enabled on expense reports.</span></span> <span data-ttu-id="e4cac-206">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-206">**Decisions:**</span></span>
 
--   Er mva inkludert i utgiftsbeløp?
--   Skal skatterefusjon aktiveres for utgifter?
+-   <span data-ttu-id="e4cac-207">Er mva inkludert i utgiftsbeløp?</span><span class="sxs-lookup"><span data-stu-id="e4cac-207">Is sales tax included in the expense amounts?</span></span>
+-   <span data-ttu-id="e4cac-208">Skal skatterefusjon aktiveres for utgifter?</span><span class="sxs-lookup"><span data-stu-id="e4cac-208">Should tax recovery be enabled on expenses?</span></span>
 
-Legg merke til at hvis du, under planlegging av økonomimodulen, har besluttet å bruke amerikanske regler for merverdiavgift og use tax, som gjøres ved å velge Ja i feltet **Bruk avgiftsregler for merverdiavgift**, kan du ikke aktivere skatterefusjon på utgifter.
+<span data-ttu-id="e4cac-209">Legg merke til at hvis du, under planlegging av økonomimodulen, har besluttet å bruke amerikanske regler for merverdiavgift og use tax, som gjøres ved å velge Ja i feltet **Bruk avgiftsregler for merverdiavgift**, kan du ikke aktivere skatterefusjon på utgifter.</span><span class="sxs-lookup"><span data-stu-id="e4cac-209">Note that if, during your planning of the general ledger, you have decided to apply U.S. sales tax and use tax rules, which is done by toggling the **Apply sales tax taxations rules** field to Yes, you can’t enable tax recovery on expenses.</span></span>
 
-## <a name="policies"></a>Policyer
-Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og penger når ansatte pådrar seg utgifter på organisasjonens vegne. Policyer sikre at ansatte holder seg innenfor budsjettet, inneholder all nødvendig informasjon, og at penger bare brukes etter behov. Du må ta følgende avgjørelser for hver utgiftsrapportpolicy og hver utgiftsrapportgodkjenning du oppretter. **Beslutninger:**
+## <a name="policies"></a><span data-ttu-id="e4cac-210">Policyer</span><span class="sxs-lookup"><span data-stu-id="e4cac-210">Policies</span></span>
+<span data-ttu-id="e4cac-211">Du kan opprette utgiftsrapportpolicyer slik at organisasjonen kan spare tid og penger når ansatte pådrar seg utgifter på organisasjonens vegne.</span><span class="sxs-lookup"><span data-stu-id="e4cac-211">You can create expense report policies so that your organization can save time and money when employees incur expenses on its behalf.</span></span> <span data-ttu-id="e4cac-212">Policyer sikre at ansatte holder seg innenfor budsjettet, inneholder all nødvendig informasjon, og at penger bare brukes etter behov.</span><span class="sxs-lookup"><span data-stu-id="e4cac-212">Policies ensure that employees stay within budget, provide all required information, and spend money only as necessary.</span></span> <span data-ttu-id="e4cac-213">Du må ta følgende avgjørelser for hver utgiftsrapportpolicy og hver utgiftsrapportgodkjenning du oppretter.</span><span class="sxs-lookup"><span data-stu-id="e4cac-213">You must make the following decisions for each expense report policy and each expense report approval policy that you create.</span></span> <span data-ttu-id="e4cac-214">**Beslutninger:**</span><span class="sxs-lookup"><span data-stu-id="e4cac-214">**Decisions:**</span></span>
 
--   Hva er navnet på policyen?
--   Hva er utgiftspolicyen for?
--   Hvis du tidligere har bestemt deg for å aktivere konserninterne utgifter, hvilke firmaer i organisasjonen skal denne policyen gjelde for?
--   Når trer policyen i kraft?
--   Når utløper policyen?
--   Hva er policyregelen?
--   Hva er resultatet av policyregelen?
+-   <span data-ttu-id="e4cac-215">Hva er navnet på policyen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-215">What is the name of the policy?</span></span>
+-   <span data-ttu-id="e4cac-216">Hva er utgiftspolicyen for?</span><span class="sxs-lookup"><span data-stu-id="e4cac-216">What is the expense policy for?</span></span>
+-   <span data-ttu-id="e4cac-217">Hvis du tidligere har bestemt deg for å aktivere konserninterne utgifter, hvilke firmaer i organisasjonen skal denne policyen gjelde for?</span><span class="sxs-lookup"><span data-stu-id="e4cac-217">If you previously decided to enable intercompany expenses, to which companies in your organization will this policy apply?</span></span>
+-   <span data-ttu-id="e4cac-218">Når trer policyen i kraft?</span><span class="sxs-lookup"><span data-stu-id="e4cac-218">When does the policy become effective?</span></span>
+-   <span data-ttu-id="e4cac-219">Når utløper policyen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-219">When does the policy expire?</span></span>
+-   <span data-ttu-id="e4cac-220">Hva er policyregelen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-220">What is the policy rule?</span></span>
+-   <span data-ttu-id="e4cac-221">Hva er resultatet av policyregelen?</span><span class="sxs-lookup"><span data-stu-id="e4cac-221">What is the outcome of the policy rule?</span></span>
 
 
 

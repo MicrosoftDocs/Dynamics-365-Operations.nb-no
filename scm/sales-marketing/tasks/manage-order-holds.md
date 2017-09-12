@@ -16,62 +16,62 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6a9487567620b7b7d6d15015f7f0b7675e227c8a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e9a520b2af7cdfef325f1fa96504f2a20078ed80
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-order-holds"></a>Behandle ordresperrer
+# <a name="manage-order-holds"></a><span data-ttu-id="d0cba-103">Behandle ordresperrer</span><span class="sxs-lookup"><span data-stu-id="d0cba-103">Manage order holds</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten forklarer hvordan du plasserer salgsordrer for kunden på vent, hvordan du arbeider med ordresperreutsjekkinger og fjerner ordresperrer. En ordre kan settes på vent av en rekke ulike årsaker. Du kan for eksempel sperre en ordre til kundens adresse eller betalingsmetode kan bekreftes, eller til en leder kan gå gjennom kundens kredittgrense. Mens ordren er på vent, kan den ikke behandles av lageret for forsendelse. 
+<span data-ttu-id="d0cba-104">Denne fremgangsmåten forklarer hvordan du plasserer salgsordrer for kunden på vent, hvordan du arbeider med ordresperreutsjekkinger og fjerner ordresperrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-104">This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds.</span></span> <span data-ttu-id="d0cba-105">En ordre kan settes på vent av en rekke ulike årsaker.</span><span class="sxs-lookup"><span data-stu-id="d0cba-105">An order might be placed on hold for a variety of reasons.</span></span> <span data-ttu-id="d0cba-106">Du kan for eksempel sperre en ordre til kundens adresse eller betalingsmetode kan bekreftes, eller til en leder kan gå gjennom kundens kredittgrense.</span><span class="sxs-lookup"><span data-stu-id="d0cba-106">For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer’s credit limit.</span></span> <span data-ttu-id="d0cba-107">Mens ordren er på vent, kan den ikke behandles av lageret for forsendelse.</span><span class="sxs-lookup"><span data-stu-id="d0cba-107">While the order on hold, it cannot be processed by the warehouse for shipping.</span></span> 
 
-Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
+<span data-ttu-id="d0cba-108">Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="d0cba-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="set-up-order-holds"></a>Definer ordresperrer
-1. Gå til Salg og markedsføring > Oppsett > Salgsordrer > Ordresperrekoder.
-2. Klikk Ny.
-3. Skriv inn en verdi i Sperrekode-feltet.
-    * Skriv for eksempel Ring tilbake.  
-4. Skriv inn en verdi i feltet Beskrivelse.
-    * For eksempel Ordre sperret i påvente av at kunden ringer tilbake.  
-    * Eventuelt kan du merke av for Fjernede reservasjoner for å fjerne fysiske reservasjoner fra ordren når denne sperrekoden legges til.  
-5. Klikk Lagre.
+## <a name="set-up-order-holds"></a><span data-ttu-id="d0cba-109">Definer ordresperrer</span><span class="sxs-lookup"><span data-stu-id="d0cba-109">Set up order holds</span></span>
+1. <span data-ttu-id="d0cba-110">Gå til Salg og markedsføring > Oppsett > Salgsordrer > Ordresperrekoder.</span><span class="sxs-lookup"><span data-stu-id="d0cba-110">Go to Sales and marketing > Setup > Sales orders > Order hold codes.</span></span>
+2. <span data-ttu-id="d0cba-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d0cba-111">Click New.</span></span>
+3. <span data-ttu-id="d0cba-112">Skriv inn en verdi i Sperrekode-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-112">In the Hold code field, type a value.</span></span>
+    * <span data-ttu-id="d0cba-113">Skriv for eksempel Ring tilbake.</span><span class="sxs-lookup"><span data-stu-id="d0cba-113">For example, type Call back.</span></span>  
+4. <span data-ttu-id="d0cba-114">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d0cba-114">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="d0cba-115">For eksempel Ordre sperret i påvente av at kunden ringer tilbake.</span><span class="sxs-lookup"><span data-stu-id="d0cba-115">For example, Order held waiting for customer callback.</span></span>  
+    * <span data-ttu-id="d0cba-116">Eventuelt kan du merke av for Fjernede reservasjoner for å fjerne fysiske reservasjoner fra ordren når denne sperrekoden legges til.</span><span class="sxs-lookup"><span data-stu-id="d0cba-116">Optionally, select the Remove reservations check box to remove any physical reservations from the order when this hold code is added.</span></span>  
+5. <span data-ttu-id="d0cba-117">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d0cba-117">Click Save.</span></span>
 
-## <a name="place-order-on-hold"></a>Sett ordre på vent
-1. Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.
-2. Klikk Ny.
-3. Angi eller velg en verdi i Kundekonto-feltet.
-4. Klikk OK.
-5. Angi eller velg en verdi i Varenummer-feltet.
-6. Angi et tall i feltet Antall.
-7. Klikk Salgsordre i handlingsruten.
-8. Klikk Ordresperrer.
-9. Klikk Ny.
-10. Velg koden du har opprettet i den forrige underoppgaven, i Sperrekode-feltet.
-11. Klikk Lagre.
-12. Lukk siden.
-13. Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.
-14. Merk den valgte raden i listen.
-    * Ordrer som er på vent, har feltene "Ikke behandle" og "Vent" merket av.    
-15. Klikk Plukk og pakk i handlingsruten.
+## <a name="place-order-on-hold"></a><span data-ttu-id="d0cba-118">Sett ordre på vent</span><span class="sxs-lookup"><span data-stu-id="d0cba-118">Place order on hold</span></span>
+1. <span data-ttu-id="d0cba-119">Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-119">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="d0cba-120">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d0cba-120">Click New.</span></span>
+3. <span data-ttu-id="d0cba-121">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-121">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="d0cba-122">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d0cba-122">Click OK.</span></span>
+5. <span data-ttu-id="d0cba-123">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-123">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="d0cba-124">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="d0cba-124">In the Quantity field, enter a number.</span></span>
+7. <span data-ttu-id="d0cba-125">Klikk Salgsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d0cba-125">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="d0cba-126">Klikk Ordresperrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-126">Click Order holds.</span></span>
+9. <span data-ttu-id="d0cba-127">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d0cba-127">Click New.</span></span>
+10. <span data-ttu-id="d0cba-128">Velg koden du har opprettet i den forrige underoppgaven, i Sperrekode-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-128">In the Hold code field, select the code you have created in the previous subtask.</span></span>
+11. <span data-ttu-id="d0cba-129">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d0cba-129">Click Save.</span></span>
+12. <span data-ttu-id="d0cba-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d0cba-130">Close the page.</span></span>
+13. <span data-ttu-id="d0cba-131">Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-131">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+14. <span data-ttu-id="d0cba-132">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d0cba-132">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="d0cba-133">Ordrer som er på vent, har feltene "Ikke behandle" og "Vent" merket av.</span><span class="sxs-lookup"><span data-stu-id="d0cba-133">Orders that are currently on hold have the "Do not process" and "Hold" fields marked.</span></span>    
+15. <span data-ttu-id="d0cba-134">Klikk Plukk og pakk i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d0cba-134">On the Action Pane, click Pick and pack.</span></span>
 
-## <a name="manage-order-holds"></a>Behandle ordresperrer
-1. Gå til Salg og markedsføring > Salgsordrer > Åpne ordrer > Ordresperrer.
-    * Siden Ordresperrer fungerer som et arbeidsområde der du kan få en oversikt over alle gjeldende og behandlede sperrer, og behandle dem og tilknyttede salgsordrer.      
-2. Merk den valgte raden i listen.
-3. Klikk Sperre - utsjekking i handlingsruten.
-4. Klikk Sjekk ut.
-5. Fjern merket for den valgte raden i listen.
-    * Feltet Sjekk ut til viser nå bruker-IDen din.   
-6. Klikk Fjern utsjekking.
-7. Klikk Fjern sperre i handlingsruten.
-    * Når du er klar til å fjerne sperren og la ordren gå videre til neste trinn i fullføringen, må du fjerne sperren. Hvis ordren ikke krever noen endringer, kan du kjøre Fjern sperrer-handlingen. Du kan imidlertid bruke Fjern og endre-handlingen hvis ordren må oppdateres når du fjerner en sperre.      
-    * Fjern og send-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
-8. Klikk Fjern sperrer.
-    * Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
+## <a name="manage-order-holds"></a><span data-ttu-id="d0cba-135">Behandle ordresperrer</span><span class="sxs-lookup"><span data-stu-id="d0cba-135">Manage order holds</span></span>
+1. <span data-ttu-id="d0cba-136">Gå til Salg og markedsføring > Salgsordrer > Åpne ordrer > Ordresperrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-136">Go to Sales and marketing > Sales orders > Open orders > Order holds.</span></span>
+    * <span data-ttu-id="d0cba-137">Siden Ordresperrer fungerer som et arbeidsområde der du kan få en oversikt over alle gjeldende og behandlede sperrer, og behandle dem og tilknyttede salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-137">Order holds page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.</span></span>      
+2. <span data-ttu-id="d0cba-138">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d0cba-138">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="d0cba-139">Klikk Sperre - utsjekking i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d0cba-139">On the Action Pane, click Hold checkout.</span></span>
+4. <span data-ttu-id="d0cba-140">Klikk Sjekk ut.</span><span class="sxs-lookup"><span data-stu-id="d0cba-140">Click Check out.</span></span>
+5. <span data-ttu-id="d0cba-141">Fjern merket for den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d0cba-141">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="d0cba-142">Feltet Sjekk ut til viser nå bruker-IDen din.</span><span class="sxs-lookup"><span data-stu-id="d0cba-142">The Checkout out to field now shows your user ID.</span></span>   
+6. <span data-ttu-id="d0cba-143">Klikk Fjern utsjekking.</span><span class="sxs-lookup"><span data-stu-id="d0cba-143">Click Clear checkout.</span></span>
+7. <span data-ttu-id="d0cba-144">Klikk Fjern sperre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d0cba-144">On the Action Pane, click Clear hold.</span></span>
+    * <span data-ttu-id="d0cba-145">Når du er klar til å fjerne sperren og la ordren gå videre til neste trinn i fullføringen, må du fjerne sperren.</span><span class="sxs-lookup"><span data-stu-id="d0cba-145">When you are ready to remove the hold and allow the order to proceed to the next fulfilment step, you must clear the hold.</span></span> <span data-ttu-id="d0cba-146">Hvis ordren ikke krever noen endringer, kan du kjøre Fjern sperrer-handlingen.</span><span class="sxs-lookup"><span data-stu-id="d0cba-146">If the order requires no changes, you can run the Clear holds action.</span></span> <span data-ttu-id="d0cba-147">Du kan imidlertid bruke Fjern og endre-handlingen hvis ordren må oppdateres når du fjerner en sperre.</span><span class="sxs-lookup"><span data-stu-id="d0cba-147">However, you can use the Clear and modify action if, when clearing a hold, the order has to be updated.</span></span>      
+    * <span data-ttu-id="d0cba-148">Fjern og send-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-148">The Clear and submit action is only applicable when you use Call center functionality.</span></span>  
+8. <span data-ttu-id="d0cba-149">Klikk Fjern sperrer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-149">Click Clear holds.</span></span>
+    * <span data-ttu-id="d0cba-150">Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer.</span><span class="sxs-lookup"><span data-stu-id="d0cba-150">The hold has now been cleared from the order and removed from the list of Active holds.</span></span> <span data-ttu-id="d0cba-151">Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0cba-151">To see all the holds or their subset according to a specific status, change the value in the Show field.</span></span>     
 
 

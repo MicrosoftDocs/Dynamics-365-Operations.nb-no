@@ -16,35 +16,35 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 127875443da1d43783440083b11afd423f2a12fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 42f93e6d8fcf62babc3e3244bc1fe76d1efd9d13
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Registrere en leverandørfaktura i fakturajournalen
+# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a><span data-ttu-id="62037-103">Registrere en leverandørfaktura i fakturajournalen</span><span class="sxs-lookup"><span data-stu-id="62037-103">Record a vendor invoice in the invoice journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer som ikke er knyttet til bestillinger. Eksempler på denne typen faktura er utgifter for forsyninger eller tjenester.  Denne registreringen bruker demonstrasjonsfirmaet USMF.
+<span data-ttu-id="62037-104">Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer som ikke er knyttet til bestillinger.</span><span class="sxs-lookup"><span data-stu-id="62037-104">This task guide will show how to record vendor invoices that are not associated with purchase orders.</span></span> <span data-ttu-id="62037-105">Eksempler på denne typen faktura er utgifter for forsyninger eller tjenester.</span><span class="sxs-lookup"><span data-stu-id="62037-105">Examples of this type of invoice include expenses for supplies or services.</span></span>  <span data-ttu-id="62037-106">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="62037-106">This recording uses the USMF demo company.</span></span>
 
-1. Gå til Leverandører > Arbeidsområder > Leverandørfakturaregistrering.
-2. Klikk Ny fakturajournal.
-3. Klikk Ny.
-4. I Navn-feltet angir du journalnavnet eller klikker rullegardinknappen for å åpne oppslaget.
-5. Skriv inn en verdi i feltet Beskrivelse.
-6. Klikk Linjer.
-    * Angi posteringsdatoen som oppdaterer Økonomimodul, i Dato-feltet.  
-7. Angi leverandørkontoen i Konto-feltet.
-8. I Faktura-feltet angir du fakturanummeret.
-9. Skriv inn en verdi i Beskrivelse-feltet.
-10. Angi et tall i Kredit-feltet.
-11. I Motkonto-feltet angir du kontonummeret eller klikker rullegardinknappen for å åpne oppslaget.
-    * Mva-gruppen hentes fra leverandørkontoen.  
-    * Mva-gruppen for vare hentes fra hovedkontoen angitt i Motkonto-feltet.  
-    * Forfallsdatoen beregnes basert på betalingsbetingelsene.  
-    * Kontantrabatten hentes fra leverandørkontoen.  
-12. Klikk Poster.
-13. Lukk siden.
+1. <span data-ttu-id="62037-107">Gå til Leverandører > Arbeidsområder > Leverandørfakturaregistrering.</span><span class="sxs-lookup"><span data-stu-id="62037-107">Go to Accounts payable > Workspaces > Vendor invoice entry.</span></span>
+2. <span data-ttu-id="62037-108">Klikk Ny fakturajournal.</span><span class="sxs-lookup"><span data-stu-id="62037-108">Click New invoice journal.</span></span>
+3. <span data-ttu-id="62037-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="62037-109">Click New.</span></span>
+4. <span data-ttu-id="62037-110">I Navn-feltet angir du journalnavnet eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="62037-110">In the Name field, enter the journal name or click the drop down button to open the lookup.</span></span>
+5. <span data-ttu-id="62037-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="62037-111">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="62037-112">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="62037-112">Click Lines.</span></span>
+    * <span data-ttu-id="62037-113">Angi posteringsdatoen som oppdaterer Økonomimodul, i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="62037-113">In the Date field, enter the posting date that will update General Ledger.</span></span>  
+7. <span data-ttu-id="62037-114">Angi leverandørkontoen i Konto-feltet.</span><span class="sxs-lookup"><span data-stu-id="62037-114">In the Account field, specify the Vendor account.</span></span>
+8. <span data-ttu-id="62037-115">I Faktura-feltet angir du fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="62037-115">In the Invoice field, enter the invoice number.</span></span>
+9. <span data-ttu-id="62037-116">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="62037-116">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="62037-117">Angi et tall i Kredit-feltet.</span><span class="sxs-lookup"><span data-stu-id="62037-117">In the Credit field, enter a number.</span></span>
+11. <span data-ttu-id="62037-118">I Motkonto-feltet angir du kontonummeret eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="62037-118">In the Offset account field, enter the account number or click the drop down button to open the lookup</span></span>
+    * <span data-ttu-id="62037-119">Mva-gruppen hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="62037-119">The Sales tax group will default from the vendor account.</span></span>  
+    * <span data-ttu-id="62037-120">Mva-gruppen for vare hentes fra hovedkontoen angitt i Motkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="62037-120">The Item sales tax group will default from the main account specified in the Offset account field.</span></span>  
+    * <span data-ttu-id="62037-121">Forfallsdatoen beregnes basert på betalingsbetingelsene.</span><span class="sxs-lookup"><span data-stu-id="62037-121">The Due date will be calculated based on the Terms of payment.</span></span>  
+    * <span data-ttu-id="62037-122">Kontantrabatten hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="62037-122">The Cash discount will default from the Vendor account.</span></span>  
+12. <span data-ttu-id="62037-123">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="62037-123">Click Post.</span></span>
+13. <span data-ttu-id="62037-124">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="62037-124">Close the page.</span></span>
 
 

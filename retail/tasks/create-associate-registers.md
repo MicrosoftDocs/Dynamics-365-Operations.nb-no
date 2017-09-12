@@ -17,30 +17,30 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c49b42ae4ef7505c48fc50cdf7c7e9800c248ec6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6a95019e50bcc060165dab3e6aa2b3ca8a897bf3
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-registers"></a> Opprette og tilknytte kasser
+# <a name="create-and-associate-registers"></a><span data-ttu-id="30864-103"> Opprette og tilknytte kasser</span><span class="sxs-lookup"><span data-stu-id="30864-103">Create and associate registers</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten beskriver hvordan du oppretter en kasse for et salgssted (POS). Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
+<span data-ttu-id="30864-104">Denne fremgangsmåten beskriver hvordan du oppretter en kasse for et salgssted (POS).</span><span class="sxs-lookup"><span data-stu-id="30864-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="30864-105">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="30864-105">This procedure uses the demo data company USRT.</span></span>
 
-1. Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Kasser.
-2. Klikk Ny.
-3. I Kassenummer-feltet skriver du inn en ID for den nye kassen.
-    * Kasse-ID-en inneholder vanligvis koder som bidrar til å tilordne kassen til butikken den tilhører, og plasseringen i butikken.  
-4. I Navn-feltet skriver du inn et beskrivende navn på kassen.
-5. Angi eller velg en verdi i Butikknummer-feltet.
-6. Angi eller velg en verdi i Maskinvareprofil-feltet.
-    * Maskinvareprofiler brukes til å angi eksterne detaljhandelsenheter som skal kobles til kassen, for eksempel kassaskuffen og kvitteringsskriveren.  
-7. Angi eller velg en verdi i Visuell profil-feltet.
-    * Visuelle profiler brukes til å angi bildene som brukes på bakgrunnen og påloggingssiden for salgsstedet, samt oppsett for salgsstedet.  
-8. Skriv inn en verdi i feltet EFT-registreringsnummer for POS.
-    * EFT-registreringsnummeret for POS brukes til å informere betalingprosessoren om hvilken betalingsterminal som sender forespørsler om godkjenning. Denne verdien kalles ofte Terminal-ID eller TID. TID finnes vanligvis på et klistremerke på betalingsenheten.  
-9. Klikk Lagre.
+1. <span data-ttu-id="30864-106">Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Kasser.</span><span class="sxs-lookup"><span data-stu-id="30864-106">Go to Retail and commerce > Channel setup > POS setup > Registers.</span></span>
+2. <span data-ttu-id="30864-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="30864-107">Click New.</span></span>
+3. <span data-ttu-id="30864-108">I Kassenummer-feltet skriver du inn en ID for den nye kassen.</span><span class="sxs-lookup"><span data-stu-id="30864-108">In the Register number field, type an ID for the new register.</span></span>
+    * <span data-ttu-id="30864-109">Kasse-ID-en inneholder vanligvis koder som bidrar til å tilordne kassen til butikken den tilhører, og plasseringen i butikken.</span><span class="sxs-lookup"><span data-stu-id="30864-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
+4. <span data-ttu-id="30864-110">I Navn-feltet skriver du inn et beskrivende navn på kassen.</span><span class="sxs-lookup"><span data-stu-id="30864-110">In the Name field, type a descriptive name for the register..</span></span>
+5. <span data-ttu-id="30864-111">Angi eller velg en verdi i Butikknummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="30864-111">In the Store number field, enter or select a value.</span></span>
+6. <span data-ttu-id="30864-112">Angi eller velg en verdi i Maskinvareprofil-feltet.</span><span class="sxs-lookup"><span data-stu-id="30864-112">In the Hardware profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="30864-113">Maskinvareprofiler brukes til å angi eksterne detaljhandelsenheter som skal kobles til kassen, for eksempel kassaskuffen og kvitteringsskriveren.</span><span class="sxs-lookup"><span data-stu-id="30864-113">Hardware profiles are used to specify the retail peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
+7. <span data-ttu-id="30864-114">Angi eller velg en verdi i Visuell profil-feltet.</span><span class="sxs-lookup"><span data-stu-id="30864-114">In the Visual profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="30864-115">Visuelle profiler brukes til å angi bildene som brukes på bakgrunnen og påloggingssiden for salgsstedet, samt oppsett for salgsstedet.</span><span class="sxs-lookup"><span data-stu-id="30864-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
+8. <span data-ttu-id="30864-116">Skriv inn en verdi i feltet EFT-registreringsnummer for POS.</span><span class="sxs-lookup"><span data-stu-id="30864-116">In the EFT POS register number field, type a value.</span></span>
+    * <span data-ttu-id="30864-117">EFT-registreringsnummeret for POS brukes til å informere betalingprosessoren om hvilken betalingsterminal som sender forespørsler om godkjenning.</span><span class="sxs-lookup"><span data-stu-id="30864-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="30864-118">Denne verdien kalles ofte Terminal-ID eller TID.</span><span class="sxs-lookup"><span data-stu-id="30864-118">This value is often called the "Terminal ID" or “TID”.</span></span> <span data-ttu-id="30864-119">TID finnes vanligvis på et klistremerke på betalingsenheten.</span><span class="sxs-lookup"><span data-stu-id="30864-119">The TID can generally be found on a sticker on the payment device.</span></span>  
+9. <span data-ttu-id="30864-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="30864-120">Click Save.</span></span>
 
 

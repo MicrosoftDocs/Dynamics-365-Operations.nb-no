@@ -1,7 +1,7 @@
 ---
 title: Lagerblokkering
 description: "Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: eed2f3e203808f378ce954b6cc308859fea89e60
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-blocking"></a>Lagerblokkering
+# <a name="inventory-blocking"></a><span data-ttu-id="07351-104">Lagerblokkering</span><span class="sxs-lookup"><span data-stu-id="07351-104">Inventory blocking</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
+<span data-ttu-id="07351-105">Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="07351-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="07351-106">Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.</span><span class="sxs-lookup"><span data-stu-id="07351-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 
-Du kan blokkere lagervarer på følgende måter:
--   Manuelt
--   Ved å opprette en kvalitetsordre
--   Ved å bruke en prosess som genererer en kvalitetsordre
--   Ved å bruke blokkering av beholdningsstatus
+<span data-ttu-id="07351-107">Du kan blokkere lagervarer på følgende måter:</span><span class="sxs-lookup"><span data-stu-id="07351-107">You can block inventory items in the following ways:</span></span>
+-   <span data-ttu-id="07351-108">Manuelt</span><span class="sxs-lookup"><span data-stu-id="07351-108">Manually</span></span>
+-   <span data-ttu-id="07351-109">Ved å opprette en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="07351-109">By creating a quality order</span></span>
+-   <span data-ttu-id="07351-110">Ved å bruke en prosess som genererer en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="07351-110">By using a process that generates a quality order</span></span>
+-   <span data-ttu-id="07351-111">Ved å bruke blokkering av beholdningsstatus</span><span class="sxs-lookup"><span data-stu-id="07351-111">By using inventory status blocking</span></span>
 
-## <a name="blocking-items-manually"></a>Blokkere varer manuelt
-Du kan blokkere et antall av en vare ved å opprette en transaksjon på **Lagerblokkering**-siden. Bare varer som er tilgjengelige i lagerbeholdningen kan blokkeres manuelt. Når det gjelder manuelt blokkerte antall, må du bestemme om planleggingsaktiviteter skal inkludere forventede mottak som et forventet antall på lager. Forventede mottak er blokkerte varer som du forventer skal være tilgjengelige som lagerbeholdning etter inspeksjon er foretatt. Du kan vedlikeholde den forventede datoen. Som standard er alternativet **Forventede mottak** valgt for varer som er blokkert via en kvalitetsordre. Du kan oppheve en manuell blokkering av et antall ved å slette transaksjonen på **Lagerblokkering**-siden.
+## <a name="blocking-items-manually"></a><span data-ttu-id="07351-112">Blokkere varer manuelt</span><span class="sxs-lookup"><span data-stu-id="07351-112">Blocking items manually</span></span>
+<span data-ttu-id="07351-113">Du kan blokkere et antall av en vare ved å opprette en transaksjon på **Lagerblokkering**-siden.</span><span class="sxs-lookup"><span data-stu-id="07351-113">You can block a quantity of an item by creating a transaction on the **Inventory blocking** page.</span></span> <span data-ttu-id="07351-114">Bare varer som er tilgjengelige i lagerbeholdningen kan blokkeres manuelt.</span><span class="sxs-lookup"><span data-stu-id="07351-114">Only items that are available as on-hand inventory can be blocked manually.</span></span> <span data-ttu-id="07351-115">Når det gjelder manuelt blokkerte antall, må du bestemme om planleggingsaktiviteter skal inkludere forventede mottak som et forventet antall på lager.</span><span class="sxs-lookup"><span data-stu-id="07351-115">For manually blocked quantities, you must decide whether planning activities include expected receipts as an expected on-hand quantity.</span></span> <span data-ttu-id="07351-116">Forventede mottak er blokkerte varer som du forventer skal være tilgjengelige som lagerbeholdning etter inspeksjon er foretatt.</span><span class="sxs-lookup"><span data-stu-id="07351-116">Expected receipts are blocked items that you expect to be available as on-hand inventory after inspection is completed.</span></span> <span data-ttu-id="07351-117">Du kan vedlikeholde den forventede datoen.</span><span class="sxs-lookup"><span data-stu-id="07351-117">You can maintain the expected date.</span></span> <span data-ttu-id="07351-118">Som standard er alternativet **Forventede mottak** valgt for varer som er blokkert via en kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="07351-118">By default, the **Expected receipts** option is selected for items that are blocked through a quality order.</span></span> <span data-ttu-id="07351-119">Du kan oppheve en manuell blokkering av et antall ved å slette transaksjonen på **Lagerblokkering**-siden.</span><span class="sxs-lookup"><span data-stu-id="07351-119">You can cancel a manual block on a quantity by deleting the transaction on the **Inventory blocking** page.</span></span>
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Blokkere varer ved å opprette en kvalitetsordre
-Du kan angi varer som må kontrolleres, ved å opprette en kvalitetsordre på **Kvalitetsordrer**-siden. Når du oppretter en kvalitetsordre, blokkeres antallet som du angir for en vare. Prøveplanen som er knyttet til en kvalitetsordre, styrer bare antallet varer som må kontrolleres, ikke antallet som er blokkert. Antallet som er angitt på kvalitetsordren, er antallet som er blokkert, uavhengig av hvilket antall som skal sendes til inspeksjon i henhold til prøveplanen.
+## <a name="blocking-items-by-creating-a-quality-order"></a><span data-ttu-id="07351-120">Blokkere varer ved å opprette en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="07351-120">Blocking items by creating a quality order</span></span>
+<span data-ttu-id="07351-121">Du kan angi varer som må kontrolleres, ved å opprette en kvalitetsordre på **Kvalitetsordrer**-siden.</span><span class="sxs-lookup"><span data-stu-id="07351-121">You can specify items that must be inspected by creating a quality order on the **Quality orders** page.</span></span> <span data-ttu-id="07351-122">Når du oppretter en kvalitetsordre, blokkeres antallet som du angir for en vare.</span><span class="sxs-lookup"><span data-stu-id="07351-122">When you create a quality order, the quantity that you specify for an item is blocked.</span></span> <span data-ttu-id="07351-123">Prøveplanen som er knyttet til en kvalitetsordre, styrer bare antallet varer som må kontrolleres, ikke antallet som er blokkert.</span><span class="sxs-lookup"><span data-stu-id="07351-123">The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked.</span></span> <span data-ttu-id="07351-124">Antallet som er angitt på kvalitetsordren, er antallet som er blokkert, uavhengig av hvilket antall som skal sendes til inspeksjon i henhold til prøveplanen.</span><span class="sxs-lookup"><span data-stu-id="07351-124">The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.</span></span>
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokkere varer ved hjelp av en prosess som genererer en kvalitetsordre
-Hvis en kvalitetsprosess angir at en vare skal kontrolleres, blokkeres et antall av varen automatisk. Så når en kvalitetsordre genereres automatisk, kontrollerer vareprøveplanen som er knyttet til kvalitetsordren, både hvor mange varer som er sperret og hvor mange varer som skal kontrolleres. Hvis det er merket av for **Full blokkering** på **Vareprøve**-siden, blokkeres for eksempel hele antallet på en bestillingslinje under inspeksjon, uavhengig av vareprøveantallet.
-### <a name="example"></a>Eksempel
+## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a><span data-ttu-id="07351-125">Blokkere varer ved hjelp av en prosess som genererer en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="07351-125">Blocking items by using a process that generates a quality order</span></span>
+<span data-ttu-id="07351-126">Hvis en kvalitetsprosess angir at en vare skal kontrolleres, blokkeres et antall av varen automatisk.</span><span class="sxs-lookup"><span data-stu-id="07351-126">If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically.</span></span> <span data-ttu-id="07351-127">Så når en kvalitetsordre genereres automatisk, kontrollerer vareprøveplanen som er knyttet til kvalitetsordren, både hvor mange varer som er sperret og hvor mange varer som skal kontrolleres.</span><span class="sxs-lookup"><span data-stu-id="07351-127">Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected.</span></span> <span data-ttu-id="07351-128">Hvis det er merket av for **Full blokkering** på **Vareprøve**-siden, blokkeres for eksempel hele antallet på en bestillingslinje under inspeksjon, uavhengig av vareprøveantallet.</span><span class="sxs-lookup"><span data-stu-id="07351-128">If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.</span></span>
+### <a name="example"></a><span data-ttu-id="07351-129">Eksempel</span><span class="sxs-lookup"><span data-stu-id="07351-129">Example</span></span>
 
-I eksemplet nedenfor genereres en kvalitetsordre når en følgeseddel for bestilling blir postert. På **Kvalitetstilknytninger**-siden angav du at postering av en bestillingsfølgeseddel er prosessen som aktiverer en kvalitetsordre.
+<span data-ttu-id="07351-130">I eksemplet nedenfor genereres en kvalitetsordre når en følgeseddel for bestilling blir postert.</span><span class="sxs-lookup"><span data-stu-id="07351-130">In the following example, a quality order is generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="07351-131">På **Kvalitetstilknytninger**-siden angav du at postering av en bestillingsfølgeseddel er prosessen som aktiverer en kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="07351-131">On the **Quality associations** page, you specified that posting of a purchase order packing slip is the process that activates a quality order.</span></span>
 
-|Konfigurasjon                                                                     |Brukerhandling                 |Resultat             |
+|<span data-ttu-id="07351-132">Konfigurasjon</span><span class="sxs-lookup"><span data-stu-id="07351-132">Setup</span></span>                                                                     |<span data-ttu-id="07351-133">Brukerhandling</span><span class="sxs-lookup"><span data-stu-id="07351-133">User action</span></span>                 |<span data-ttu-id="07351-134">Resultat</span><span class="sxs-lookup"><span data-stu-id="07351-134">Result</span></span>             |
 |--------------------------------------------------------------------------|----------------------------|-------------------|
-| En kvalitetstilknytning angir at det må genereres en kvalitetsordre når en bestillingsfølgeseddel posteres. Vareprøveoppsettet for kvalitetsordren angir at 10 % av antallet på bestillingslinjen må kontrolleres. Og ettersom det er merket av for **Full blokkering** i vareprøveoppsettet, må hele antallet for bestillingslinjen blokkeres under inspeksjon, uavhengig av antallet som sendes til inspeksjon. | Følgeseddelen posteres. | En kvalitetsordre genereres. Ti prosent av bestillingsantallet for varen sendes til inspeksjon. Hele antallet på bestillingslinjen er blokkert. |
+| <span data-ttu-id="07351-135">En kvalitetstilknytning angir at det må genereres en kvalitetsordre når en bestillingsfølgeseddel posteres.</span><span class="sxs-lookup"><span data-stu-id="07351-135">A quality association specifies that a quality order must be generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="07351-136">Vareprøveoppsettet for kvalitetsordren angir at 10 % av antallet på bestillingslinjen må kontrolleres.</span><span class="sxs-lookup"><span data-stu-id="07351-136">The item sampling setup of the quality order specifies that 10 percent of the quantity on the purchase order line must be inspected.</span></span> <span data-ttu-id="07351-137">Og ettersom det er merket av for **Full blokkering** i vareprøveoppsettet, må hele antallet for bestillingslinjen blokkeres under inspeksjon, uavhengig av antallet som sendes til inspeksjon.</span><span class="sxs-lookup"><span data-stu-id="07351-137">Furthermore, because the **Full blocking** option selected in the item sampling setup, the full quantity of the purchase order line must be blocked during inspection, regardless of the quantity that is sent for inspection.</span></span> | <span data-ttu-id="07351-138">Følgeseddelen posteres.</span><span class="sxs-lookup"><span data-stu-id="07351-138">The packing slip is posted.</span></span> | <span data-ttu-id="07351-139">En kvalitetsordre genereres.</span><span class="sxs-lookup"><span data-stu-id="07351-139">A quality order is generated.</span></span> <span data-ttu-id="07351-140">Ti prosent av bestillingsantallet for varen sendes til inspeksjon.</span><span class="sxs-lookup"><span data-stu-id="07351-140">Ten percent of the purchase order quantity for the item is sent to inspection.</span></span> <span data-ttu-id="07351-141">Hele antallet på bestillingslinjen er blokkert.</span><span class="sxs-lookup"><span data-stu-id="07351-141">The full quantity of the purchase order line is blocked.</span></span> |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>Blokkere varer ved å bruke blokkering av beholdningsstatus
-Du kan angi hvilke beholdningsstatuser som er blokkeringsstatuser ved hjelp av parameteren **Lagerblokkering** på **Beholdningsstatuser**-siden.  Du kan ikke bruke lagerstatuser som blokkeringsstatuser for produksjonsordrer, salgsordrer, overføringsordrer, utgående transaksjoner og prosjektintegrering. Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus. Hvis varer har statusen **Brutt** og hovedplanlegging kjøres på disse varene, blir varene ansett som manglende, og beholdningen etterfylles automatisk.
+## <a name="blocking-items-by-using-inventory-status-blocking"></a><span data-ttu-id="07351-142">Blokkere varer ved å bruke blokkering av beholdningsstatus</span><span class="sxs-lookup"><span data-stu-id="07351-142">Blocking items by using inventory status blocking</span></span>
+<span data-ttu-id="07351-143">Du kan angi hvilke beholdningsstatuser som er blokkeringsstatuser ved hjelp av parameteren **Lagerblokkering** på **Beholdningsstatuser**-siden.</span><span class="sxs-lookup"><span data-stu-id="07351-143">You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** parameter on the **Inventory statuses** page.</span></span> <span data-ttu-id="07351-144"> Du kan ikke bruke lagerstatuser som blokkeringsstatuser for produksjonsordrer, salgsordrer, overføringsordrer, utgående transaksjoner og prosjektintegrering.</span><span class="sxs-lookup"><span data-stu-id="07351-144">You can't use inventory statuses as blocking statuses for production orders, sales orders, transfer orders, outbound transactions, or project integrations.</span></span> <span data-ttu-id="07351-145">Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus.</span><span class="sxs-lookup"><span data-stu-id="07351-145">For outbound work, use items that have an available inventory status.</span></span> <span data-ttu-id="07351-146">Hvis varer har statusen **Brutt** og hovedplanlegging kjøres på disse varene, blir varene ansett som manglende, og beholdningen etterfylles automatisk.</span><span class="sxs-lookup"><span data-stu-id="07351-146">If items have a status of **Broken**, and master planning is run on those items, the items are considered missing, and inventory is automatically replenished.</span></span>
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="07351-147">Se også</span><span class="sxs-lookup"><span data-stu-id="07351-147">See also</span></span>
 --------
 
-[Opprette og vedlikeholde en lagerblokkering (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[<span data-ttu-id="07351-148">Opprette og vedlikeholde en lagerblokkering (oppgaveveiledning)</span><span class="sxs-lookup"><span data-stu-id="07351-148">Create and maintain an inventory blocking (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
-[Kvalitetsstyringsprosesser](quality-management-processes.md)
+[<span data-ttu-id="07351-149">Kvalitetsstyringsprosesser</span><span class="sxs-lookup"><span data-stu-id="07351-149">Quality management processes</span></span>](quality-management-processes.md)
 
-[Kontrollere varekvaliteten (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
+[<span data-ttu-id="07351-150">Kontrollere varekvaliteten (oppgaveveiledning)</span><span class="sxs-lookup"><span data-stu-id="07351-150">Inspect the quality of goods (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 

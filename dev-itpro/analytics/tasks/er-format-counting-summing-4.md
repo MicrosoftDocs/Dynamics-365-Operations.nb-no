@@ -16,91 +16,91 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 90a0dc0fc32a448d859fbb0933ea6f12ea16668f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 60a34e35a376635669b764457617cb997822bdcd
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing-for-electronic-reporting-er"></a>Kjøre formatet for å utføre telling og summering for elektronisk rapportering (ER)
+# <a name="run-the-format-to-do-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="ce944-103">Kjøre formatet for å utføre telling og summering for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="ce944-103">Run the format to do counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata. Denne fremgangsmåten kan utføres i firmaet DEMF.
+<span data-ttu-id="ce944-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata.</span><span class="sxs-lookup"><span data-stu-id="ce944-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="ce944-105">Denne fremgangsmåten kan utføres i firmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="ce944-105">These steps can be performed in the DEMF company.</span></span>
 
-For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Konfigurere format for å utføre telling og summering (del 3: Bruke beregninger for å lage utdata)".
+<span data-ttu-id="ce944-106">For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Konfigurere format for å utføre telling og summering (del 3: Bruke beregninger for å lage utdata)".</span><span class="sxs-lookup"><span data-stu-id="ce944-106">To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 3: Use computations to make the output)” procedure.</span></span>
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="ce944-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="ce944-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a>Teste denne konfigurasjonen for generering av Intrastat-rapporter
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Klikk Rapporteringskonfigurasjoner.
-3. Utvid Intrastat-modell i treet.
-4. Utvid Intrastat-modell\Intrastat (DE) i treet.
-5. Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.
-6. Klikk Konfigurasjoner i handlingsruten.
-7. Klikk Brukerparametere.
-8. Velg Ja i feltet Kjøringsinnstillinger.
-9. Klikk OK.
-10. Klikk Rediger.
-11. Velg Ja i feltet Kjøringsutkast.
-12. Klikk Lagre.
-13. Gå til Avgift > Oppsett > Utenrikshandel > Utenrikshandelsparametere.
-14. Utvid delen Elektronisk rapportering.
-15. Velg konfigurasjonen Intrastat (DE) med telling og summering.
-16. Velg konfigurasjonen Intrastat (DE) med telling og summering.
-17. Klikk Lagre.
-18. Lukk siden.
-19. Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.
-20. Klikk Utlevering.
-21. Klikk Rapport.
-    * Kjør prosessen for generering av Intrastat-rapport.  
-22. Angi datoen som 2000-01-01 i feltet Fra dato.
-    * Definer start- og sluttdatoer for rapporteringsperioden som inkluderer eksisterende på skjematransaksjonene.  
-23. Angi datoen som 2022-12-31 i feltet Til dato.
-    * Definer start- og sluttdatoer for rapporteringsperioden som inkluderer eksisterende på skjematransaksjonene.  
-24. Velg Ankomster i feltet Retning.
-25. Velg Ja i feltet Generer fil.
-26. Klikk OK.
-    * Se gjennom de opprettede utdataene med summeringslinjene på slutten.  
-27. Klikk Ny.
-28. Merk den valgte raden i listen.
-29. Velg Fordelinger i feltet Retning.
-30. Angi eller velg en verdi i Varenummer-feltet.
-31. Angi eller velg en verdi i feltet Artikkel.
-32. Sett vekt til 10.
-33. Sett fakturabeløp til 10 000.
-34. Sett statistisk beløp til 10 000.
-35. Klikk Utlevering.
-36. Klikk Rapport.
-37. Velg Fordelinger i feltet Retning.
-38. Klikk OK.
-    * Se gjennom de opprettede utdataene med summeringslinjene på slutten. Vær oppmerksom på at det har blitt endret sammenlignet med første kjøring.  
+## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a><span data-ttu-id="ce944-108">Teste denne konfigurasjonen for generering av Intrastat-rapporter</span><span class="sxs-lookup"><span data-stu-id="ce944-108">Test this configuration for generation of the Intrastat reports</span></span>
+1. <span data-ttu-id="ce944-109">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="ce944-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="ce944-110">Klikk Rapporteringskonfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="ce944-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="ce944-111">Utvid Intrastat-modell i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-111">In the tree, expand 'Intrastat model'.</span></span>
+4. <span data-ttu-id="ce944-112">Utvid Intrastat-modell\Intrastat (DE) i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-112">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+5. <span data-ttu-id="ce944-113">Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-113">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+6. <span data-ttu-id="ce944-114">Klikk Konfigurasjoner i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="ce944-114">On the Action Pane, click Configurations.</span></span>
+7. <span data-ttu-id="ce944-115">Klikk Brukerparametere.</span><span class="sxs-lookup"><span data-stu-id="ce944-115">Click User parameters.</span></span>
+8. <span data-ttu-id="ce944-116">Velg Ja i feltet Kjøringsinnstillinger.</span><span class="sxs-lookup"><span data-stu-id="ce944-116">Select Yes in the Run settings field.</span></span>
+9. <span data-ttu-id="ce944-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ce944-117">Click OK.</span></span>
+10. <span data-ttu-id="ce944-118">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="ce944-118">Click Edit.</span></span>
+11. <span data-ttu-id="ce944-119">Velg Ja i feltet Kjøringsutkast.</span><span class="sxs-lookup"><span data-stu-id="ce944-119">Select Yes in the Run Draft field.</span></span>
+12. <span data-ttu-id="ce944-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ce944-120">Click Save.</span></span>
+13. <span data-ttu-id="ce944-121">Gå til Avgift > Oppsett > Utenrikshandel > Utenrikshandelsparametere.</span><span class="sxs-lookup"><span data-stu-id="ce944-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+14. <span data-ttu-id="ce944-122">Utvid delen Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="ce944-122">Expand the Electronic reporting section.</span></span>
+15. <span data-ttu-id="ce944-123">Velg konfigurasjonen Intrastat (DE) med telling og summering.</span><span class="sxs-lookup"><span data-stu-id="ce944-123">Select the “Intrastat (DE) with counting & summing” configuration.</span></span>
+16. <span data-ttu-id="ce944-124">Velg konfigurasjonen Intrastat (DE) med telling og summering.</span><span class="sxs-lookup"><span data-stu-id="ce944-124">Select the “Intrastat (DE) with counting & summing” configuration.</span></span>
+17. <span data-ttu-id="ce944-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ce944-125">Click Save.</span></span>
+18. <span data-ttu-id="ce944-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="ce944-126">Close the page.</span></span>
+19. <span data-ttu-id="ce944-127">Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="ce944-127">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+20. <span data-ttu-id="ce944-128">Klikk Utlevering.</span><span class="sxs-lookup"><span data-stu-id="ce944-128">Click Output.</span></span>
+21. <span data-ttu-id="ce944-129">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="ce944-129">Click Report.</span></span>
+    * <span data-ttu-id="ce944-130">Kjør prosessen for generering av Intrastat-rapport.</span><span class="sxs-lookup"><span data-stu-id="ce944-130">Run the Intrastat report generation process.</span></span>  
+22. <span data-ttu-id="ce944-131">Angi datoen som 2000-01-01 i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="ce944-131">In the From date field, set the date to '2000-01-01'.</span></span>
+    * <span data-ttu-id="ce944-132">Definer start- og sluttdatoer for rapporteringsperioden som inkluderer eksisterende på skjematransaksjonene.</span><span class="sxs-lookup"><span data-stu-id="ce944-132">Define start and end dates for the reporting period that include the existing on the form transactions.</span></span>  
+23. <span data-ttu-id="ce944-133">Angi datoen som 2022-12-31 i feltet Til dato.</span><span class="sxs-lookup"><span data-stu-id="ce944-133">In the To date field, set the date to '2022-12-31'.</span></span>
+    * <span data-ttu-id="ce944-134">Definer start- og sluttdatoer for rapporteringsperioden som inkluderer eksisterende på skjematransaksjonene.</span><span class="sxs-lookup"><span data-stu-id="ce944-134">Define start and end dates for the reporting period that include the existing on the form transactions.</span></span>  
+24. <span data-ttu-id="ce944-135">Velg Ankomster i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="ce944-135">In the Direction field, select 'Arrivals'.</span></span>
+25. <span data-ttu-id="ce944-136">Velg Ja i feltet Generer fil.</span><span class="sxs-lookup"><span data-stu-id="ce944-136">Select Yes in the Generate file field.</span></span>
+26. <span data-ttu-id="ce944-137">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ce944-137">Click OK.</span></span>
+    * <span data-ttu-id="ce944-138">Se gjennom de opprettede utdataene med summeringslinjene på slutten.</span><span class="sxs-lookup"><span data-stu-id="ce944-138">Review the created output with the summary lines in the end.</span></span>  
+27. <span data-ttu-id="ce944-139">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ce944-139">Click New.</span></span>
+28. <span data-ttu-id="ce944-140">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ce944-140">In the list, mark the selected row.</span></span>
+29. <span data-ttu-id="ce944-141">Velg Fordelinger i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="ce944-141">In the Direction field, select 'Dispatches'.</span></span>
+30. <span data-ttu-id="ce944-142">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="ce944-142">In the Item number field, enter or select a value.</span></span>
+31. <span data-ttu-id="ce944-143">Angi eller velg en verdi i feltet Artikkel.</span><span class="sxs-lookup"><span data-stu-id="ce944-143">In the Commodity field, enter or select a value.</span></span>
+32. <span data-ttu-id="ce944-144">Sett vekt til 10.</span><span class="sxs-lookup"><span data-stu-id="ce944-144">Set Weight to '10'.</span></span>
+33. <span data-ttu-id="ce944-145">Sett fakturabeløp til 10 000.</span><span class="sxs-lookup"><span data-stu-id="ce944-145">Set Invoice amount to '10000'.</span></span>
+34. <span data-ttu-id="ce944-146">Sett statistisk beløp til 10 000.</span><span class="sxs-lookup"><span data-stu-id="ce944-146">Set Statistical amount to '10000'.</span></span>
+35. <span data-ttu-id="ce944-147">Klikk Utlevering.</span><span class="sxs-lookup"><span data-stu-id="ce944-147">Click Output.</span></span>
+36. <span data-ttu-id="ce944-148">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="ce944-148">Click Report.</span></span>
+37. <span data-ttu-id="ce944-149">Velg Fordelinger i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="ce944-149">In the Direction field, select 'Dispatches'.</span></span>
+38. <span data-ttu-id="ce944-150">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ce944-150">Click OK.</span></span>
+    * <span data-ttu-id="ce944-151">Se gjennom de opprettede utdataene med summeringslinjene på slutten.</span><span class="sxs-lookup"><span data-stu-id="ce944-151">Review the created output with the summary lines in the end.</span></span> <span data-ttu-id="ce944-152">Vær oppmerksom på at det har blitt endret sammenlignet med første kjøring.</span><span class="sxs-lookup"><span data-stu-id="ce944-152">Note that it has been changed in comparison to the first run.</span></span>  
 
-## <a name="run-this-configuration-in-debug-mode-to-review-the-collected-counting--summing-data"></a>Kjøre denne konfigurasjonen i feilsøkingsmodus for å gå gjennom innsamlede tellings- og summeringsdata
-1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-2. Utvid Intrastat-modell i treet.
-3. Utvid Intrastat-modell\Intrastat (DE) i treet.
-4. Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.
-5. Klikk Konfigurasjoner i handlingsruten.
-6. Klikk Brukerparametere.
-7. Velg Ja i feltet Kjør i feilsøkingsmodus.
-8. Klikk OK.
-9. Lukk siden.
-10. Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.
-11. Klikk Utlevering.
-12. Klikk Rapport.
-13. Klikk OK.
-14. Lukk siden.
-15. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-16. Utvid Intrastat-modell i treet.
-17. Utvid Intrastat-modell\Intrastat (DE) i treet.
-18. Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.
-19. Klikk Feilsøkingslogger.
-    * Vær oppmerksom på at det er opprettet en feilsøkingsloggpost for kjøringen av den valgte konfigurasjonen.  
-20. Klikk Vedlegg.
-21. Klikk Åpne.
-    * Se gjennom den opprettede XML-filen som inneholder tellings- og summeringsdetaljer som ble samlet inn under kjøringen av den valgte konfigurasjonen.  
+## <a name="run-this-configuration-in-debug-mode-to-review-the-collected-counting--summing-data"></a><span data-ttu-id="ce944-153">Kjøre denne konfigurasjonen i feilsøkingsmodus for å gå gjennom innsamlede tellings- og summeringsdata</span><span class="sxs-lookup"><span data-stu-id="ce944-153">Run this configuration in debug mode to review the collected counting & summing data</span></span>
+1. <span data-ttu-id="ce944-154">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="ce944-154">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="ce944-155">Utvid Intrastat-modell i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-155">In the tree, expand 'Intrastat model'.</span></span>
+3. <span data-ttu-id="ce944-156">Utvid Intrastat-modell\Intrastat (DE) i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-156">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+4. <span data-ttu-id="ce944-157">Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-157">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+5. <span data-ttu-id="ce944-158">Klikk Konfigurasjoner i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="ce944-158">On the Action Pane, click Configurations.</span></span>
+6. <span data-ttu-id="ce944-159">Klikk Brukerparametere.</span><span class="sxs-lookup"><span data-stu-id="ce944-159">Click User parameters.</span></span>
+7. <span data-ttu-id="ce944-160">Velg Ja i feltet Kjør i feilsøkingsmodus.</span><span class="sxs-lookup"><span data-stu-id="ce944-160">Select Yes in the Run in debug mode field.</span></span>
+8. <span data-ttu-id="ce944-161">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ce944-161">Click OK.</span></span>
+9. <span data-ttu-id="ce944-162">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="ce944-162">Close the page.</span></span>
+10. <span data-ttu-id="ce944-163">Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="ce944-163">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+11. <span data-ttu-id="ce944-164">Klikk Utlevering.</span><span class="sxs-lookup"><span data-stu-id="ce944-164">Click Output.</span></span>
+12. <span data-ttu-id="ce944-165">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="ce944-165">Click Report.</span></span>
+13. <span data-ttu-id="ce944-166">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ce944-166">Click OK.</span></span>
+14. <span data-ttu-id="ce944-167">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="ce944-167">Close the page.</span></span>
+15. <span data-ttu-id="ce944-168">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="ce944-168">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+16. <span data-ttu-id="ce944-169">Utvid Intrastat-modell i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-169">In the tree, expand 'Intrastat model'.</span></span>
+17. <span data-ttu-id="ce944-170">Utvid Intrastat-modell\Intrastat (DE) i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-170">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+18. <span data-ttu-id="ce944-171">Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.</span><span class="sxs-lookup"><span data-stu-id="ce944-171">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+19. <span data-ttu-id="ce944-172">Klikk Feilsøkingslogger.</span><span class="sxs-lookup"><span data-stu-id="ce944-172">Click Debug logs.</span></span>
+    * <span data-ttu-id="ce944-173">Vær oppmerksom på at det er opprettet en feilsøkingsloggpost for kjøringen av den valgte konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="ce944-173">Note that a debug log record has been created for the execution process of the selected configuration.</span></span>  
+20. <span data-ttu-id="ce944-174">Klikk Vedlegg.</span><span class="sxs-lookup"><span data-stu-id="ce944-174">Click Attach.</span></span>
+21. <span data-ttu-id="ce944-175">Klikk Åpne.</span><span class="sxs-lookup"><span data-stu-id="ce944-175">Click Open.</span></span>
+    * <span data-ttu-id="ce944-176">Se gjennom den opprettede XML-filen som inneholder tellings- og summeringsdetaljer som ble samlet inn under kjøringen av den valgte konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="ce944-176">Review the created XML file that contains counting and summing details that were collected during the execution of the selected configuration.</span></span>  
 
 

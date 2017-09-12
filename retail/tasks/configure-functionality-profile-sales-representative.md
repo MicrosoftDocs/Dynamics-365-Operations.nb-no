@@ -17,23 +17,23 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 3312ad115d7c4429b5a1a45c8117247a9fa97954
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d545090daea6f5d4ec2e045da07f7dc1f756f560
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Konfigurere funksjonalitetsprofilen for en selger
+# <a name="configure-the-functionality-profile-for-a-sales-representative"></a><span data-ttu-id="f38a1-103"> Konfigurere funksjonalitetsprofilen for en selger</span><span class="sxs-lookup"><span data-stu-id="f38a1-103">Configure the functionality profile for a sales representative</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprofilinnstillinger som gjelder for selgere. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
+<span data-ttu-id="f38a1-104">Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprofilinnstillinger som gjelder for selgere.</span><span class="sxs-lookup"><span data-stu-id="f38a1-104">This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.</span></span> <span data-ttu-id="f38a1-105">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="f38a1-105">This procedures uses the USRT demo data company.</span></span>
 
-1. Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Funksjonalitetsprofiler.
-2. Klikk Rediger.
-3. Utvid Funksjoner-delen.
-    * Du kan bruke funksjonsprofilinnstillingene til å konfigurere salgssted til å automatisk legge til kassereren standard salgsgruppe, til å be om salgsgrupper, og til å kreve salgsgrupper.  
-4. Velg et alternativ i feltet Be om selger.
-5. I feltet Krev selger velger du Ja.
+1. <span data-ttu-id="f38a1-106">Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Funksjonalitetsprofiler.</span><span class="sxs-lookup"><span data-stu-id="f38a1-106">Go to Retail and commerce > Channel setup > POS setup > POS profiles > Functionality profiles.</span></span>
+2. <span data-ttu-id="f38a1-107">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="f38a1-107">Click Edit.</span></span>
+3. <span data-ttu-id="f38a1-108">Utvid Funksjoner-delen.</span><span class="sxs-lookup"><span data-stu-id="f38a1-108">Expand the Functions section.</span></span>
+    * <span data-ttu-id="f38a1-109">Du kan bruke funksjonsprofilinnstillingene til å konfigurere salgssted til å automatisk legge til kassereren standard salgsgruppe, til å be om salgsgrupper, og til å kreve salgsgrupper.</span><span class="sxs-lookup"><span data-stu-id="f38a1-109">You can use the functionality profile settings to configure POS to automatically add the cashier's default sales group, to prompt for sales groups, and to require sales groups.</span></span>  
+4. <span data-ttu-id="f38a1-110">Velg et alternativ i feltet Be om selger.</span><span class="sxs-lookup"><span data-stu-id="f38a1-110">In the Prompt for sales representative field, select an option.</span></span>
+5. <span data-ttu-id="f38a1-111">I feltet Krev selger velger du Ja.</span><span class="sxs-lookup"><span data-stu-id="f38a1-111">Select Yes in the Require sales representative field.</span></span>
 
 

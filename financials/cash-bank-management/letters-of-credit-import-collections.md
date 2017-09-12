@@ -19,41 +19,41 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5b27e8731dde9a834ee0ff5aa7a289bd2ecfeef1
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 4332c7bb0344bd0caabd5d1a26fb8e4bb4fc862d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="letters-of-credit-and-import-collections"></a>Purringer og importinkassoer
+# <a name="letters-of-credit-and-import-collections"></a><span data-ttu-id="a9249-104">Purringer og importinkassoer</span><span class="sxs-lookup"><span data-stu-id="a9249-104">Letters of credit and import collections</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.
+<span data-ttu-id="a9249-105">Denne artikkelen inneholder generell informasjon om purringer og importsamlinger.</span><span class="sxs-lookup"><span data-stu-id="a9249-105">This article provides general information about letters of credit and import collections.</span></span> <span data-ttu-id="a9249-106">Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.</span><span class="sxs-lookup"><span data-stu-id="a9249-106">Both types of bank document are often used for the purchase and sale of goods across international borders.</span></span>
 
-<a name="letters-of-credit"></a>Purringer
+<a name="letters-of-credit"></a><span data-ttu-id="a9249-107">Purringer</span><span class="sxs-lookup"><span data-stu-id="a9249-107">Letters of credit</span></span>
 -----------------
 
-Remburser brukes i internasjonale transaksjoner og bidrar til å garantere at betalinger blir foretatt. En remburs er en avtale som utstedes av en bank, der banken godtar å garantere betaling på vegne av en kjøper, så lenge vilkårene i avtalen mellom kjøper og selger er oppfylt. En remburs også omtales som en vareremburs eller bankremburs.
+<span data-ttu-id="a9249-108">Remburser brukes i internasjonale transaksjoner og bidrar til å garantere at betalinger blir foretatt.</span><span class="sxs-lookup"><span data-stu-id="a9249-108">Letters of credit are used for international transactions and help guarantee that payments will be made.</span></span> <span data-ttu-id="a9249-109">En remburs er en avtale som utstedes av en bank, der banken godtar å garantere betaling på vegne av en kjøper, så lenge vilkårene i avtalen mellom kjøper og selger er oppfylt.</span><span class="sxs-lookup"><span data-stu-id="a9249-109">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to guarantee payment on behalf of a buyer, provided that the terms of the agreement between the buyer and seller are met.</span></span> <span data-ttu-id="a9249-110">En remburs også omtales som en vareremburs eller bankremburs.</span><span class="sxs-lookup"><span data-stu-id="a9249-110">A letter of credit is also referred to as a documentary credit (DC).</span></span>
 
-Når det gjelder en importremburs, er den juridiske enheten kjøperen eller søkeren for rembursen. Når det gjelder en eksportremburs, er den juridiske enheten selgeren eller mottakeren av rembursen. Følgende parter er involvert i en remburs:
+<span data-ttu-id="a9249-111">Når det gjelder en importremburs, er den juridiske enheten kjøperen eller søkeren for rembursen.</span><span class="sxs-lookup"><span data-stu-id="a9249-111">For an import letter of credit, the legal entity is the buyer or the applicant for the letter of credit.</span></span> <span data-ttu-id="a9249-112">Når det gjelder en eksportremburs, er den juridiske enheten selgeren eller mottakeren av rembursen.</span><span class="sxs-lookup"><span data-stu-id="a9249-112">For an export letter of credit, the legal entity is the seller or the beneficiary of the letter of credit.</span></span> <span data-ttu-id="a9249-113">Følgende parter er involvert i en remburs:</span><span class="sxs-lookup"><span data-stu-id="a9249-113">The following parties are involved in a letter of credit:</span></span>
 
--   Søkeren (kjøperen) som har til hensikt å betale for varene
--   Mottakeren (selgeren) som skal motta betalingen
--   Den utstedende banken som utsteder rembursen
--   Advisbanken som utfører transaksjonen på vegne av søkeren
+-   <span data-ttu-id="a9249-114">Søkeren (kjøperen) som har til hensikt å betale for varene</span><span class="sxs-lookup"><span data-stu-id="a9249-114">The applicant (buyer) who intends to pay for the goods</span></span>
+-   <span data-ttu-id="a9249-115">Mottakeren (selgeren) som skal motta betalingen</span><span class="sxs-lookup"><span data-stu-id="a9249-115">The beneficiary (seller) who will receive the payment</span></span>
+-   <span data-ttu-id="a9249-116">Den utstedende banken som utsteder rembursen</span><span class="sxs-lookup"><span data-stu-id="a9249-116">The issuing bank that issues the letter of credit</span></span>
+-   <span data-ttu-id="a9249-117">Advisbanken som utfører transaksjonen på vegne av søkeren</span><span class="sxs-lookup"><span data-stu-id="a9249-117">The advising bank that carries out the transaction on behalf of the applicant</span></span>
 
-Rembursen inneholder en beskrivelse av varene, eventuelle påkrevde dokumenter, forsendelsesdatoen og utløpsdatoen som betaling ikke foretas etter. Den utstedende banken får en margin for rembursen. 
+<span data-ttu-id="a9249-118">Rembursen inneholder en beskrivelse av varene, eventuelle påkrevde dokumenter, forsendelsesdatoen og utløpsdatoen som betaling ikke foretas etter.</span><span class="sxs-lookup"><span data-stu-id="a9249-118">The letter of credit includes a description of the goods, any required documents, the date of shipment, and the expiration date after which payment won't be made.</span></span> <span data-ttu-id="a9249-119">Den utstedende banken får en margin for rembursen.</span><span class="sxs-lookup"><span data-stu-id="a9249-119">The issuing bank collects a margin for the letter of credit.</span></span> 
 
-En remburs kan enten være **gjenkallelig** eller **ugjenkallelig**. En remburs kan være **overførbar**, **ikke overførbar** eller **rullerende**. En remburs er vanligvis en ugjenkallelig og bekreftet avtale om at betaling blir foretatt til en bestemt mottaker når komplett og nøyaktig forsendelsesdokumentasjon er sendt.
+<span data-ttu-id="a9249-120">En remburs kan enten være **gjenkallelig** eller **ugjenkallelig**.</span><span class="sxs-lookup"><span data-stu-id="a9249-120">A letter of credit can be **revocable** or **irrevocable**.</span></span> <span data-ttu-id="a9249-121">En remburs kan være **overførbar**, **ikke overførbar** eller **rullerende**.</span><span class="sxs-lookup"><span data-stu-id="a9249-121">The nature of a letter of credit can be **transferable**, **non-transferable**, or **revolving**.</span></span> <span data-ttu-id="a9249-122">En remburs er vanligvis en ugjenkallelig og bekreftet avtale om at betaling blir foretatt til en bestemt mottaker når komplett og nøyaktig forsendelsesdokumentasjon er sendt.</span><span class="sxs-lookup"><span data-stu-id="a9249-122">Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.</span></span>
 
-## <a name="import-collections"></a>Importinkassoer
-En importinkasso er en avtale mellom banken og eksportøren (selgeren) der banken avtaler å levere forsendelsesdokumentasjonen til den internasjonale importøren (kjøperen). Banken forventes å levere forsendelsesdokumentasjonen ved mottak av kontant betaling for de sendte varene, eller ved mottak av en signert anvisning mot betalingen. 
+## <a name="import-collections"></a><span data-ttu-id="a9249-123">Importinkassoer</span><span class="sxs-lookup"><span data-stu-id="a9249-123">Import collections</span></span>
+<span data-ttu-id="a9249-124">En importinkasso er en avtale mellom banken og eksportøren (selgeren) der banken avtaler å levere forsendelsesdokumentasjonen til den internasjonale importøren (kjøperen).</span><span class="sxs-lookup"><span data-stu-id="a9249-124">An import collection is an agreement between the bank and the exporter (seller), in which the bank agrees to deliver the shipping documentation to the international importer (buyer).</span></span> <span data-ttu-id="a9249-125">Banken forventes å levere forsendelsesdokumentasjonen ved mottak av kontant betaling for de sendte varene, eller ved mottak av en signert anvisning mot betalingen.</span><span class="sxs-lookup"><span data-stu-id="a9249-125">The bank is expected to deliver the shipping documentation upon receipt of payment for the shipped goods in cash, or upon receipt of a signed draft toward the payment.</span></span> 
 
-En importinkasso er med på å garantere at selgeren betales når kjøperen henter forsendelsesdokumentene for å motta de importerte varene.
+<span data-ttu-id="a9249-126">En importinkasso er med på å garantere at selgeren betales når kjøperen henter forsendelsesdokumentene for å motta de importerte varene.</span><span class="sxs-lookup"><span data-stu-id="a9249-126">An import collection helps guarantee that the seller is paid when the buyer collects the shipping documents to take delivery of the imported goods.</span></span>
 
 
 

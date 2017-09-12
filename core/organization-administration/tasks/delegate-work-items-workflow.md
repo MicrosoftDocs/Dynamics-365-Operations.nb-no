@@ -16,36 +16,36 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 30415b28166d5551f43da04a28b0a5194323f2ab
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6483307ff89ce79a3ef16bb763e3124ac537a5d8
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="delegate-work-items-in-a-workflow"></a>Delegere arbeidselementer i en arbeidsflyt
+# <a name="delegate-work-items-in-a-workflow"></a><span data-ttu-id="0844f-103">Delegere arbeidselementer i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="0844f-103">Delegate work items in a workflow</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Hvis du planlegger å være borte fra kontoret eller av andre grunner ikke er tilgjengelig til å behandle arbeidselementer, kan du delegere eller tilordne arbeidselementer til andre brukere. Dette hjelper deg med å konfigurere systemet slik at det automatisk delegerer arbeidsenhetene dine til en annen bruker.
+<span data-ttu-id="0844f-104">Hvis du planlegger å være borte fra kontoret eller av andre grunner ikke er tilgjengelig til å behandle arbeidselementer, kan du delegere eller tilordne arbeidselementer til andre brukere.</span><span class="sxs-lookup"><span data-stu-id="0844f-104">If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users.</span></span> <span data-ttu-id="0844f-105">Dette hjelper deg med å konfigurere systemet slik at det automatisk delegerer arbeidsenhetene dine til en annen bruker.</span><span class="sxs-lookup"><span data-stu-id="0844f-105">This procedure helps you configure the system to automatically delegate your work items to another user.</span></span>
 
 
 
-Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="0844f-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="0844f-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-automatic-delegation"></a>Definere automatisk delegering
-1. Gå til Felles > Oppsett > Brukeralternativer.
-2. Klikk Arbeidsflyt-kategorien.
-    * Kontroller at delen Delegering er utvidet.    Hvis du vil konfigurere systemet slik at det automatisk delegerer arbeidselementene dine til andre brukere, må du opprette delegeringsregler, som angir når bestemte typer arbeidselementer delegeres. Hvis du vil opprette en delegeringsregel, gjør du følgende:  
-3. Klikk Legg til.
-4. Velg et alternativ i Omfang-feltet.
-    * Alle – deleger alle arbeidsenheter som er tilordnet til deg.    Modul – deleger bare arbeidselementene som er knyttet til en bestemt type arbeidsflyt. Hvis du velger dette alternativet, må du velge typen arbeidsflyt i Navn-feltet.    Arbeidsflyt – deleger bare arbeidselementene som er knyttet til en bestemt arbeidsflyt. Hvis du velger dette alternativet, må du velge arbeidsflyten i Navn-feltet.  
-5. Velg brukeren som arbeidselementene skal delegeres til, i Deleger-feltet.
-    * Bruk feltene Startdato/-klokkeslett og Sluttdato/-klokkeslett til å angi når du vil at arbeidselementer skal delegeres automatisk.  
-6. Angi dato og klokkeslett i feltet Startdato/-klokkeslett.
-7. Angi dato og klokkeslett i feltet Sluttdato/-klokkeslett.
-8. Merk av for Aktivert for å aktivere denne delegeringsregelen.
-    * Hvis du valgte Modul som omfanget, må du velge modulen i Navn-feltet.    Hvis du valgte Arbeidsflyt som omfanget, må du velge den bestemte arbeidsflyten som skal delegeres, i Navn-feltet.  
-9. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet Kommentar.
+## <a name="set-up-automatic-delegation"></a><span data-ttu-id="0844f-107">Definere automatisk delegering</span><span class="sxs-lookup"><span data-stu-id="0844f-107">Set up automatic delegation</span></span>
+1. <span data-ttu-id="0844f-108">Gå til Felles > Oppsett > Brukeralternativer.</span><span class="sxs-lookup"><span data-stu-id="0844f-108">Go to Common > Setup > User options.</span></span>
+2. <span data-ttu-id="0844f-109">Klikk Arbeidsflyt-kategorien.</span><span class="sxs-lookup"><span data-stu-id="0844f-109">Click the Workflow tab.</span></span>
+    * <span data-ttu-id="0844f-110">Kontroller at delen Delegering er utvidet.</span><span class="sxs-lookup"><span data-stu-id="0844f-110">Make sure the Delegation section is expanded.</span></span>    <span data-ttu-id="0844f-111">Hvis du vil konfigurere systemet slik at det automatisk delegerer arbeidselementene dine til andre brukere, må du opprette delegeringsregler, som angir når bestemte typer arbeidselementer delegeres.</span><span class="sxs-lookup"><span data-stu-id="0844f-111">To configure the system to automatically delegate your work items to other users, you must create delegation rules, which specify when certain types of work items are delegated.</span></span> <span data-ttu-id="0844f-112">Hvis du vil opprette en delegeringsregel, gjør du følgende:</span><span class="sxs-lookup"><span data-stu-id="0844f-112">Follow these steps to create a delegation rule.</span></span>  
+3. <span data-ttu-id="0844f-113">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="0844f-113">Click Add.</span></span>
+4. <span data-ttu-id="0844f-114">Velg et alternativ i Omfang-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-114">In the Scope field, select an option.</span></span>
+    * <span data-ttu-id="0844f-115">Alle – deleger alle arbeidsenheter som er tilordnet til deg.</span><span class="sxs-lookup"><span data-stu-id="0844f-115">All – Delegate all work items that are assigned to you.</span></span>    <span data-ttu-id="0844f-116">Modul – deleger bare arbeidselementene som er knyttet til en bestemt type arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="0844f-116">Module – Delegate only the work items that are related to a specific type of workflow.</span></span> <span data-ttu-id="0844f-117">Hvis du velger dette alternativet, må du velge typen arbeidsflyt i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-117">If you select this option, you must select the type of workflow in the Name field.</span></span>    <span data-ttu-id="0844f-118">Arbeidsflyt – deleger bare arbeidselementene som er knyttet til en bestemt arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="0844f-118">Workflow – Delegate only the work items that are related to a specific workflow.</span></span> <span data-ttu-id="0844f-119">Hvis du velger dette alternativet, må du velge arbeidsflyten i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-119">If you select this option, you must select the workflow in the Name field.</span></span>  
+5. <span data-ttu-id="0844f-120">Velg brukeren som arbeidselementene skal delegeres til, i Deleger-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-120">In the Delegate field, select the user to delegate the work items to.</span></span>
+    * <span data-ttu-id="0844f-121">Bruk feltene Startdato/-klokkeslett og Sluttdato/-klokkeslett til å angi når du vil at arbeidselementer skal delegeres automatisk.</span><span class="sxs-lookup"><span data-stu-id="0844f-121">Use the Start date/time and End date/time fields to specify when you want the work items to be automatically delegated.</span></span>  
+6. <span data-ttu-id="0844f-122">Angi dato og klokkeslett i feltet Startdato/-klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="0844f-122">In the Start date/time field, enter a date and time.</span></span>
+7. <span data-ttu-id="0844f-123">Angi dato og klokkeslett i feltet Sluttdato/-klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="0844f-123">In the End date/time field, enter a date and time.</span></span>
+8. <span data-ttu-id="0844f-124">Merk av for Aktivert for å aktivere denne delegeringsregelen.</span><span class="sxs-lookup"><span data-stu-id="0844f-124">Select the Enabled check box to activate the delegation rule.</span></span>
+    * <span data-ttu-id="0844f-125">Hvis du valgte Modul som omfanget, må du velge modulen i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-125">If you selected Module as the Scope, then you must select the module in the Name field.</span></span>    <span data-ttu-id="0844f-126">Hvis du valgte Arbeidsflyt som omfanget, må du velge den bestemte arbeidsflyten som skal delegeres, i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0844f-126">If you selected Workflow as the Scope, then you must select the specific workflow to delegate in the Name field.</span></span>  
+9. <span data-ttu-id="0844f-127">Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet Kommentar.</span><span class="sxs-lookup"><span data-stu-id="0844f-127">In the Comment field, enter a comment that explains why you are delegating the work items.</span></span>
 
 

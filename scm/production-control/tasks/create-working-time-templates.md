@@ -17,65 +17,65 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: ff1978f127a014e75619a4bbbb9b6ff3a3ad7c7a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2df37747601618fc3d45734152a05aedd39500a6
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-working-time-templates"></a>Opprette driftstidsmaler
+# <a name="create-working-time-templates"></a><span data-ttu-id="a65b4-103">Opprette driftstidsmaler</span><span class="sxs-lookup"><span data-stu-id="a65b4-103">Create working time templates</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Driftstidsmaler definerer arbeidstimene gjennom en uke og brukes til å generere arbeidstider for en tidsperiode. Denne fremgangsmåten viser hvordan du definerer en driftstidsmal ved hjelp av egenskaper for planlegging av driftstider for kategorisering av arbeidstidsintervallene. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
+<span data-ttu-id="a65b4-104">Driftstidsmaler definerer arbeidstimene gjennom en uke og brukes til å generere arbeidstider for en tidsperiode.</span><span class="sxs-lookup"><span data-stu-id="a65b4-104">Working time templates define the working hours throughout a week and are used to generate working times for a period of time.</span></span> <span data-ttu-id="a65b4-105">Denne fremgangsmåten viser hvordan du definerer en driftstidsmal ved hjelp av egenskaper for planlegging av driftstider for kategorisering av arbeidstidsintervallene.</span><span class="sxs-lookup"><span data-stu-id="a65b4-105">This procedure shows you how to define a working time template using working time scheduling properties for categorizing working time intervals.</span></span> <span data-ttu-id="a65b4-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="a65b4-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. Gå til Alle arbeidsområder > Administrasjon av livssyklus for ressurs.
-2. Klikk Driftstidsmaler.
+1. <span data-ttu-id="a65b4-107">Gå til Alle arbeidsområder > Administrasjon av livssyklus for ressurs.</span><span class="sxs-lookup"><span data-stu-id="a65b4-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="a65b4-108">Klikk Driftstidsmaler.</span><span class="sxs-lookup"><span data-stu-id="a65b4-108">Click Working time templates.</span></span>
 
-## <a name="create-working-time-template"></a>Opprette driftstidsmal
-1. Klikk Ny.
-2. Skriv inn en verdi i feltet Driftstidsmal.
-3. Skriv inn en verdi i Navn-feltet.
-4. Utvid delen Mandag.
-5. Klikk Legg til.
-6. Angi et klokkeslett i feltet Fra.
-    * Angi tidspunktet når arbeidet begynner om morgenen.  
-7. Angi et klokkeslett i feltet Til.
-    * Angi tidspunktet når arbeidere tar lunsjpause.  
-8. Klikk Legg til.
-9. Angi et klokkeslett i feltet Fra.
-    * Angi tidspunktet når arbeidet fortsetter etter lunsj.  
-10. Angi et klokkeslett i feltet Til.
-    * Angi slutten på arbeidsdagen.  
+## <a name="create-working-time-template"></a><span data-ttu-id="a65b4-109">Opprette driftstidsmal</span><span class="sxs-lookup"><span data-stu-id="a65b4-109">Create working time template</span></span>
+1. <span data-ttu-id="a65b4-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="a65b4-110">Click New.</span></span>
+2. <span data-ttu-id="a65b4-111">Skriv inn en verdi i feltet Driftstidsmal.</span><span class="sxs-lookup"><span data-stu-id="a65b4-111">In the Working time template field, type a value.</span></span>
+3. <span data-ttu-id="a65b4-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="a65b4-112">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="a65b4-113">Utvid delen Mandag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-113">Expand the Monday section.</span></span>
+5. <span data-ttu-id="a65b4-114">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="a65b4-114">Click Add.</span></span>
+6. <span data-ttu-id="a65b4-115">Angi et klokkeslett i feltet Fra.</span><span class="sxs-lookup"><span data-stu-id="a65b4-115">In the From field, enter a time.</span></span>
+    * <span data-ttu-id="a65b4-116">Angi tidspunktet når arbeidet begynner om morgenen.</span><span class="sxs-lookup"><span data-stu-id="a65b4-116">Specify the time when work begins in the morning.</span></span>  
+7. <span data-ttu-id="a65b4-117">Angi et klokkeslett i feltet Til.</span><span class="sxs-lookup"><span data-stu-id="a65b4-117">In the To field, enter a time.</span></span>
+    * <span data-ttu-id="a65b4-118">Angi tidspunktet når arbeidere tar lunsjpause.</span><span class="sxs-lookup"><span data-stu-id="a65b4-118">Specify the time when workers break for lunch.</span></span>  
+8. <span data-ttu-id="a65b4-119">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="a65b4-119">Click Add.</span></span>
+9. <span data-ttu-id="a65b4-120">Angi et klokkeslett i feltet Fra.</span><span class="sxs-lookup"><span data-stu-id="a65b4-120">In the From field, enter a time.</span></span>
+    * <span data-ttu-id="a65b4-121">Angi tidspunktet når arbeidet fortsetter etter lunsj.</span><span class="sxs-lookup"><span data-stu-id="a65b4-121">Specify the time when work resumes after lunch.</span></span>  
+10. <span data-ttu-id="a65b4-122">Angi et klokkeslett i feltet Til.</span><span class="sxs-lookup"><span data-stu-id="a65b4-122">In the To field, enter a time.</span></span>
+    * <span data-ttu-id="a65b4-123">Angi slutten på arbeidsdagen.</span><span class="sxs-lookup"><span data-stu-id="a65b4-123">Specify the end of the work day.</span></span>  
 
-## <a name="replicate-working-times-to-all-week-days"></a>Replikere arbeidstider til alle ukedager
-1. Klikk Kopier dag.
-    * Kopier arbeidstidsdefinisjonene fra mandag til tirsdag.  
-2. Klikk OK.
-3. Klikk Kopier dag.
-    * Kopier arbeidstidsdefinisjonene fra mandag til onsdag.  
-4. Velg et alternativ i feltet Til ukedag.
-5. Klikk OK.
-6. Klikk Kopier dag.
-    * Kopier arbeidstidsdefinisjonene fra mandag til torsdag.  
-7. Velg et alternativ i feltet Til ukedag.
-8. Klikk OK.
-9. Klikk Kopier dag.
-    * Kopier arbeidstidsdefinisjonene fra mandag til fredag.  
-10. Velg et alternativ i feltet Til ukedag.
-11. Klikk OK.
+## <a name="replicate-working-times-to-all-week-days"></a><span data-ttu-id="a65b4-124">Replikere arbeidstider til alle ukedager</span><span class="sxs-lookup"><span data-stu-id="a65b4-124">Replicate working times to all week days</span></span>
+1. <span data-ttu-id="a65b4-125">Klikk Kopier dag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-125">Click Copy day.</span></span>
+    * <span data-ttu-id="a65b4-126">Kopier arbeidstidsdefinisjonene fra mandag til tirsdag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-126">Copy the working times definitions from Monday to Tuesday.</span></span>  
+2. <span data-ttu-id="a65b4-127">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="a65b4-127">Click OK.</span></span>
+3. <span data-ttu-id="a65b4-128">Klikk Kopier dag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-128">Click Copy day.</span></span>
+    * <span data-ttu-id="a65b4-129">Kopier arbeidstidsdefinisjonene fra mandag til onsdag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-129">Copy the working times definitions from Monday to Wednesday.</span></span>  
+4. <span data-ttu-id="a65b4-130">Velg et alternativ i feltet Til ukedag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-130">In the To weekday field, select an option.</span></span>
+5. <span data-ttu-id="a65b4-131">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="a65b4-131">Click OK.</span></span>
+6. <span data-ttu-id="a65b4-132">Klikk Kopier dag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-132">Click Copy day.</span></span>
+    * <span data-ttu-id="a65b4-133">Kopier arbeidstidsdefinisjonene fra mandag til torsdag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-133">Copy the working times definitions from Monday to Thursday.</span></span>  
+7. <span data-ttu-id="a65b4-134">Velg et alternativ i feltet Til ukedag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-134">In the To weekday field, select an option.</span></span>
+8. <span data-ttu-id="a65b4-135">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="a65b4-135">Click OK.</span></span>
+9. <span data-ttu-id="a65b4-136">Klikk Kopier dag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-136">Click Copy day.</span></span>
+    * <span data-ttu-id="a65b4-137">Kopier arbeidstidsdefinisjonene fra mandag til fredag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-137">Copy the working times definitions from Monday to Friday.</span></span>  
+10. <span data-ttu-id="a65b4-138">Velg et alternativ i feltet Til ukedag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-138">In the To weekday field, select an option.</span></span>
+11. <span data-ttu-id="a65b4-139">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="a65b4-139">Click OK.</span></span>
 
-## <a name="define-time-slots-for-special-operations"></a>Definere tidsrom for spesielle operasjoner
-1. Utvid delen Fredag.
-2. Finn og velg ønsket post i listen.
-3. Angi eller velg en verdi i feltet Egenskap.
-4. Finn og velg ønsket post i listen.
-5. Angi eller velg en verdi i feltet Egenskap.
+## <a name="define-time-slots-for-special-operations"></a><span data-ttu-id="a65b4-140">Definere tidsrom for spesielle operasjoner</span><span class="sxs-lookup"><span data-stu-id="a65b4-140">Define time slots for special operations</span></span>
+1. <span data-ttu-id="a65b4-141">Utvid delen Fredag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-141">Expand the Friday section.</span></span>
+2. <span data-ttu-id="a65b4-142">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="a65b4-142">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="a65b4-143">Angi eller velg en verdi i feltet Egenskap.</span><span class="sxs-lookup"><span data-stu-id="a65b4-143">In the Property field, enter or select a value.</span></span>
+4. <span data-ttu-id="a65b4-144">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="a65b4-144">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="a65b4-145">Angi eller velg en verdi i feltet Egenskap.</span><span class="sxs-lookup"><span data-stu-id="a65b4-145">In the Property field, enter or select a value.</span></span>
 
-## <a name="mark-weekend-days-as-closed-for-pickup"></a>Merke helgedager som lukket for plukking
-1. Utvid delen Lørdag.
-2. Velg Ja i feltet Lukket for plukk.
-3. Utvid delen Søndag.
-4. Velg Ja i feltet Lukket for plukk.
+## <a name="mark-weekend-days-as-closed-for-pickup"></a><span data-ttu-id="a65b4-146">Merke helgedager som lukket for plukking</span><span class="sxs-lookup"><span data-stu-id="a65b4-146">Mark weekend days as closed for pickup</span></span>
+1. <span data-ttu-id="a65b4-147">Utvid delen Lørdag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-147">Expand the Saturday section.</span></span>
+2. <span data-ttu-id="a65b4-148">Velg Ja i feltet Lukket for plukk.</span><span class="sxs-lookup"><span data-stu-id="a65b4-148">Select Yes in the Closed for pickup field.</span></span>
+3. <span data-ttu-id="a65b4-149">Utvid delen Søndag.</span><span class="sxs-lookup"><span data-stu-id="a65b4-149">Expand the Sunday section.</span></span>
+4. <span data-ttu-id="a65b4-150">Velg Ja i feltet Lukket for plukk.</span><span class="sxs-lookup"><span data-stu-id="a65b4-150">Select Yes in the Closed for pickup field.</span></span>
 
 

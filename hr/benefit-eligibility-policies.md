@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8c158ac5badd22054db86d269b58d223274176d2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d0f599964833162dd4bf4b490019cbed692428eb
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="benefit-eligibility-policies"></a>Policyer for fordelsrettigheter
+# <a name="benefit-eligibility-policies"></a><span data-ttu-id="2e136-103">Policyer for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="2e136-103">Benefit eligibility policies</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emnet inneholder informasjon om policyer for fordelsrettigheter, som hjelper deg med å definere hvem som er kvalifisert for spesifikke fordeler
+<span data-ttu-id="2e136-104">Dette emnet inneholder informasjon om policyer for fordelsrettigheter, som hjelper deg med å definere hvem som er kvalifisert for spesifikke fordeler</span><span class="sxs-lookup"><span data-stu-id="2e136-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 
-Når du oppretter fordeler, kan du bestemme hvilke fordeler som skal være tilgjengelige for ansatte. Tabellen nedenfor viser eksempler på fordeler du kan gjøre tilgjengelige for bestemte ansatte.
+<span data-ttu-id="2e136-105">Når du oppretter fordeler, kan du bestemme hvilke fordeler som skal være tilgjengelige for ansatte.</span><span class="sxs-lookup"><span data-stu-id="2e136-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="2e136-106">Tabellen nedenfor viser eksempler på fordeler du kan gjøre tilgjengelige for bestemte ansatte.</span><span class="sxs-lookup"><span data-stu-id="2e136-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
 
-| Fordel          | Hvem fordelen er tilgjengelig for |
+| <span data-ttu-id="2e136-107">Fordel</span><span class="sxs-lookup"><span data-stu-id="2e136-107">Benefit</span></span>          | <span data-ttu-id="2e136-108">Hvem fordelen er tilgjengelig for</span><span class="sxs-lookup"><span data-stu-id="2e136-108">Who the benefit is available to</span></span> |
 |------------------|---------------------------------|
-| Helseforsikring | Alle ansatte                   |
-| Mobiltelefon     | Salgsstab, ledere         |
-| Parkeringsoblater   | Ledere                      |
+| <span data-ttu-id="2e136-109">Helseforsikring</span><span class="sxs-lookup"><span data-stu-id="2e136-109">Health insurance</span></span> | <span data-ttu-id="2e136-110">Alle ansatte</span><span class="sxs-lookup"><span data-stu-id="2e136-110">All employees</span></span>                   |
+| <span data-ttu-id="2e136-111">Mobiltelefon</span><span class="sxs-lookup"><span data-stu-id="2e136-111">Mobile phone</span></span>     | <span data-ttu-id="2e136-112">Salgsstab, ledere</span><span class="sxs-lookup"><span data-stu-id="2e136-112">Sales staff, executives</span></span>         |
+| <span data-ttu-id="2e136-113">Parkeringsoblater</span><span class="sxs-lookup"><span data-stu-id="2e136-113">Parking passes</span></span>   | <span data-ttu-id="2e136-114">Ledere</span><span class="sxs-lookup"><span data-stu-id="2e136-114">Executives</span></span>                      |
 
-Følgende komponenter brukes til å opprette rettighetspolicyer:
+<span data-ttu-id="2e136-115">Følgende komponenter brukes til å opprette rettighetspolicyer:</span><span class="sxs-lookup"><span data-stu-id="2e136-115">The following components in are used to create eligibility policies:</span></span>
 
--   Policyregeltyper
--   Policyer for fordelsrettigheter
+-   <span data-ttu-id="2e136-116">Policyregeltyper</span><span class="sxs-lookup"><span data-stu-id="2e136-116">Policy rule types</span></span>
+-   <span data-ttu-id="2e136-117">Policyer for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="2e136-117">Benefit eligibility policies</span></span>
 
-Policyregeltyper definerer spørringsparameterne som brukes når du utvikler bestemte policyregler. Når du oppretter policyregeltyper, kan du opprette policyer for fordelsrettigheter. Policyene lar deg opprette en samling regler som gjelder for én eller flere juridiske enheter. I hver policy kan du vise en hvilken som helst av policyregeltypene for fordelsrettigheter du opprettet tidligere. 
+<span data-ttu-id="2e136-118">Policyregeltyper definerer spørringsparameterne som brukes når du utvikler bestemte policyregler.</span><span class="sxs-lookup"><span data-stu-id="2e136-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="2e136-119">Når du oppretter policyregeltyper, kan du opprette policyer for fordelsrettigheter.</span><span class="sxs-lookup"><span data-stu-id="2e136-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="2e136-120">Policyene lar deg opprette en samling regler som gjelder for én eller flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="2e136-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="2e136-121">I hver policy kan du vise en hvilken som helst av policyregeltypene for fordelsrettigheter du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="2e136-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
 
-Du kan definere omfanget av regelen i policyen. Hvis du for eksempel oppretter en policyregeltype for fordelsrettigheter kalt **Ledelse**, kan du angi hva regelen er i denne policyen. Regelen kan for eksempel være at alle stillingsnavn som inneholder ordet «leder» eller «sjef» skal være med i regelen. Når du har definert parameterne for regelen eller reglene som er inkludert i policyen, kan du tilordne en bestemt regel til fordelen.
+<span data-ttu-id="2e136-122">Du kan definere omfanget av regelen i policyen.</span><span class="sxs-lookup"><span data-stu-id="2e136-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="2e136-123">Hvis du for eksempel oppretter en policyregeltype for fordelsrettigheter kalt **Ledelse**, kan du angi hva regelen er i denne policyen.</span><span class="sxs-lookup"><span data-stu-id="2e136-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="2e136-124">Regelen kan for eksempel være at alle stillingsnavn som inneholder ordet «leder» eller «sjef» skal være med i regelen.</span><span class="sxs-lookup"><span data-stu-id="2e136-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="2e136-125">Når du har definert parameterne for regelen eller reglene som er inkludert i policyen, kan du tilordne en bestemt regel til fordelen.</span><span class="sxs-lookup"><span data-stu-id="2e136-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="2e136-126">Se også</span><span class="sxs-lookup"><span data-stu-id="2e136-126">See also</span></span>
 --------
 
-[Definere og administrere et fordelsprogram](manage-benefit-program.md)
+[<span data-ttu-id="2e136-127">Definere og administrere et fordelsprogram</span><span class="sxs-lookup"><span data-stu-id="2e136-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
 
 
 

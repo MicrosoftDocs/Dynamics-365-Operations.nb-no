@@ -16,28 +16,28 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 126447cad226c843afa2cf9bc609a316cab7b8cb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 306e9ebca811c576b06de3aef697ed64cbe85180
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-linked-products"></a>Konfigurere koblede produkter
+# <a name="configure-linked-products"></a><span data-ttu-id="4dc83-103">Konfigurere koblede produkter</span><span class="sxs-lookup"><span data-stu-id="4dc83-103">Configure linked products</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper med å konfigurere koblede produkter. Denne prosedyren bruker demonstrasjonsdataene for USRT og tar utgangspunkt i at begge produktene allerede er opprettet og frigitt.
+<span data-ttu-id="4dc83-104">Denne prosedyren hjelper med å konfigurere koblede produkter.</span><span class="sxs-lookup"><span data-stu-id="4dc83-104">This procedure walks through configuring linked products.</span></span> <span data-ttu-id="4dc83-105">Denne prosedyren bruker demonstrasjonsdataene for USRT og tar utgangspunkt i at begge produktene allerede er opprettet og frigitt.</span><span class="sxs-lookup"><span data-stu-id="4dc83-105">This procedure uses the USRT demo data, and assumes both products have already been created and released.</span></span>
 
-1. Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.
-2. Finn og velg ønsket post i listen.
-3. Klikk Detaljhandel i handlingsruten.
-4. Klikk Koblede produkter.
-5. Klikk Rediger.
-6. Klikk rullegardinknappen i feltet Koblet produktnummer for å åpne oppslaget.
-7. Klikk koblingen i den valgte raden i listen.
-8. Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.
-9. Klikk koblingen i den valgte raden i listen.
-10. Angi et tall i feltet Antall.
-11. Klikk Lagre.
+1. <span data-ttu-id="4dc83-106">Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="4dc83-106">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="4dc83-107">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4dc83-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="4dc83-108">Klikk Detaljhandel i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="4dc83-108">On the Action Pane, click Retail.</span></span>
+4. <span data-ttu-id="4dc83-109">Klikk Koblede produkter.</span><span class="sxs-lookup"><span data-stu-id="4dc83-109">Click Linked products.</span></span>
+5. <span data-ttu-id="4dc83-110">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="4dc83-110">Click Edit.</span></span>
+6. <span data-ttu-id="4dc83-111">Klikk rullegardinknappen i feltet Koblet produktnummer for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4dc83-111">In the Linked product number field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="4dc83-112">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4dc83-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="4dc83-113">Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4dc83-113">In the Unit field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="4dc83-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4dc83-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="4dc83-115">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="4dc83-115">In the Quantity field, enter a number.</span></span>
+11. <span data-ttu-id="4dc83-116">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4dc83-116">Click Save.</span></span>
 
 

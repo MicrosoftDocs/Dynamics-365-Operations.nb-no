@@ -16,51 +16,51 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e84432faf32e519059a21d2b56e320a46599c1e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: adb759c59d7275e7323dbb760de56acdef2e3cff
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-vendor-bank-account"></a>Opprette en leverandørbankkonto
+# <a name="create-a-vendor-bank-account"></a><span data-ttu-id="795c4-103">Opprette en leverandørbankkonto</span><span class="sxs-lookup"><span data-stu-id="795c4-103">Create a vendor bank account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.
+<span data-ttu-id="795c4-104">Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør.</span><span class="sxs-lookup"><span data-stu-id="795c4-104">This procedure shows you how to create a bank account for a vendor.</span></span> <span data-ttu-id="795c4-105">Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="795c4-105">You can use this procedure in demo data company USMF.</span></span>
 
-1. Gå til Innkjøp og leverandører > Leverandører > Alle leverandører.
-2. Velg leverandøren du vil opprette en bankkonto for, og klikk deretter koblingen på leverandørens konto-ID.
-3. Klikk Leverandør i handlingsruten.
-4. Klikk Bankkontoer.
-5. Klikk Ny.
-6. Skriv inn en verdi i Bankkonto-feltet.
-    * Denne ID-en brukes for å identifisere bankkontoen på leverandørposten.  
-7. Skriv inn en verdi i Navn-feltet.
-8. Angi eller velg en verdi i Bankgrupper-feltet.
-9. Velg et alternativ i feltet Registreringsnummertype.
-    * Dette er registreringsnummertypen som brukes for internasjonale betalinger.  
-10. Skriv inn en verdi i feltet Bankkontonummer.
-11. Skriv inn en verdi i SWIFT-kode-feltet.
-12. Skriv inn en verdi i IBAN-feltet.
-    * IBAN-nummeret må være i riktig format. Du kan for eksempel bruke DE89370400440532013000.  
-    * Statusen for bankkontoen er Aktiv hvis aktiveringsdatoen er nådd og utløpsdatoen ikke er overskredet. Den er også aktivt hvis både aktiveringsdato og utløpsdato er tomme. Hvis datoene i både Aktiveringsdato- og Utløpsdato-feltene i er fremtiden, er ikke elektroniske betalinger tilgjengelige. Andre betalingstyper er tilgjengelige, og bankkontoen er aktiv.  
-13. Utvid Oppsett-delen.
-14. Skriv inn en verdi i Tekstkode-feltet.
-    * Dette feltet angir en kode som vises på bankkontoutdraget til mottakeren.  
-15. Skriv inn en verdi i Melding til bank-feltet.
-16. Skriv inn en verdi i Kursreferanse-feltet.
-    * Dette er referansenummeret for en eventuell fremtids- eller avtalekurs.  
-17. Angi eller velg en verdi i feltet Valuta.
-    * Når forhåndsmerknader utstedes, vil denne delen gir en oversikt over statusen (venter eller godkjent).  
-18. Vis delen Adresse.
-19. Vis Forhåndsmerknader-delen.
-20. Vis delen Kontaktinformasjon.
-21. Skriv inn en verdi i feltet Telefon.
-22. Lukk siden.
-23. Klikk Rediger.
-24. Vid delen Betaling.
-25. Velg kontoen du nettopp har opprettet i Bankkonto-feltet.
-26. Klikk Lagre.
-    * Adressen kan arves fra bankgruppen, hvis det er angitt, eller du kan legge den til her.  
+1. <span data-ttu-id="795c4-106">Gå til Innkjøp og leverandører > Leverandører > Alle leverandører.</span><span class="sxs-lookup"><span data-stu-id="795c4-106">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="795c4-107">Velg leverandøren du vil opprette en bankkonto for, og klikk deretter koblingen på leverandørens konto-ID.</span><span class="sxs-lookup"><span data-stu-id="795c4-107">Select the vendor that you want to create a bank account for, and then click the link on the Vendor account ID.</span></span>
+3. <span data-ttu-id="795c4-108">Klikk Leverandør i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="795c4-108">On the Action Pane, click Vendor.</span></span>
+4. <span data-ttu-id="795c4-109">Klikk Bankkontoer.</span><span class="sxs-lookup"><span data-stu-id="795c4-109">Click Bank accounts.</span></span>
+5. <span data-ttu-id="795c4-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="795c4-110">Click New.</span></span>
+6. <span data-ttu-id="795c4-111">Skriv inn en verdi i Bankkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-111">In the Bank account field, type a value.</span></span>
+    * <span data-ttu-id="795c4-112">Denne ID-en brukes for å identifisere bankkontoen på leverandørposten.</span><span class="sxs-lookup"><span data-stu-id="795c4-112">This ID will be used to identify the bank account on the vendor record.</span></span>  
+7. <span data-ttu-id="795c4-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="795c4-114">Angi eller velg en verdi i Bankgrupper-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-114">In the Bank groups field, enter or select a value.</span></span>
+9. <span data-ttu-id="795c4-115">Velg et alternativ i feltet Registreringsnummertype.</span><span class="sxs-lookup"><span data-stu-id="795c4-115">In the Routing number type field, select an option.</span></span>
+    * <span data-ttu-id="795c4-116">Dette er registreringsnummertypen som brukes for internasjonale betalinger.</span><span class="sxs-lookup"><span data-stu-id="795c4-116">This is the type of routing number that’s used for international payments.</span></span>  
+10. <span data-ttu-id="795c4-117">Skriv inn en verdi i feltet Bankkontonummer.</span><span class="sxs-lookup"><span data-stu-id="795c4-117">In the Bank account number field, type a value.</span></span>
+11. <span data-ttu-id="795c4-118">Skriv inn en verdi i SWIFT-kode-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-118">In the SWIFT code field, type a value.</span></span>
+12. <span data-ttu-id="795c4-119">Skriv inn en verdi i IBAN-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-119">In the IBAN field, type a value.</span></span>
+    * <span data-ttu-id="795c4-120">IBAN-nummeret må være i riktig format.</span><span class="sxs-lookup"><span data-stu-id="795c4-120">The IBAN number must be in the correct format.</span></span> <span data-ttu-id="795c4-121">Du kan for eksempel bruke DE89370400440532013000.</span><span class="sxs-lookup"><span data-stu-id="795c4-121">For example, you could use DE89370400440532013000.</span></span>  
+    * <span data-ttu-id="795c4-122">Statusen for bankkontoen er Aktiv hvis aktiveringsdatoen er nådd og utløpsdatoen ikke er overskredet.</span><span class="sxs-lookup"><span data-stu-id="795c4-122">The status of the bank account is Active if the Active date has been reached, and the Expiration date has not been exceeded.</span></span> <span data-ttu-id="795c4-123">Den er også aktivt hvis både aktiveringsdato og utløpsdato er tomme.</span><span class="sxs-lookup"><span data-stu-id="795c4-123">It’s also active if both the Active date and Expiration date fields are blank.</span></span> <span data-ttu-id="795c4-124">Hvis datoene i både Aktiveringsdato- og Utløpsdato-feltene i er fremtiden, er ikke elektroniske betalinger tilgjengelige.</span><span class="sxs-lookup"><span data-stu-id="795c4-124">If the dates in both the Active date and Expiration date fields are in the future electronic payments are not available.</span></span> <span data-ttu-id="795c4-125">Andre betalingstyper er tilgjengelige, og bankkontoen er aktiv.</span><span class="sxs-lookup"><span data-stu-id="795c4-125">Other payment types are available and the bank account is active.</span></span>  
+13. <span data-ttu-id="795c4-126">Utvid Oppsett-delen.</span><span class="sxs-lookup"><span data-stu-id="795c4-126">Expand the Setup section.</span></span>
+14. <span data-ttu-id="795c4-127">Skriv inn en verdi i Tekstkode-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-127">In the Text code field, type a value.</span></span>
+    * <span data-ttu-id="795c4-128">Dette feltet angir en kode som vises på bankkontoutdraget til mottakeren.</span><span class="sxs-lookup"><span data-stu-id="795c4-128">This field specifies a code that will appear on the bank statement of the recipient.</span></span>  
+15. <span data-ttu-id="795c4-129">Skriv inn en verdi i Melding til bank-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-129">In the Message to bank field, type a value.</span></span>
+16. <span data-ttu-id="795c4-130">Skriv inn en verdi i Kursreferanse-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-130">In the Exchange reference field, type a value.</span></span>
+    * <span data-ttu-id="795c4-131">Dette er referansenummeret for en eventuell fremtids- eller avtalekurs.</span><span class="sxs-lookup"><span data-stu-id="795c4-131">This is the reference number for any forward-term or fixed-term rate of exchange.</span></span>  
+17. <span data-ttu-id="795c4-132">Angi eller velg en verdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="795c4-132">In the Currency field, enter or select a value.</span></span>
+    * <span data-ttu-id="795c4-133">Når forhåndsmerknader utstedes, vil denne delen gir en oversikt over statusen (venter eller godkjent).</span><span class="sxs-lookup"><span data-stu-id="795c4-133">When prenotes are issued, this section provides an overview of their status (pending or approved).</span></span>  
+18. <span data-ttu-id="795c4-134">Vis delen Adresse.</span><span class="sxs-lookup"><span data-stu-id="795c4-134">Expand the Address section.</span></span>
+19. <span data-ttu-id="795c4-135">Vis Forhåndsmerknader-delen.</span><span class="sxs-lookup"><span data-stu-id="795c4-135">Expand the Prenotes section.</span></span>
+20. <span data-ttu-id="795c4-136">Vis delen Kontaktinformasjon.</span><span class="sxs-lookup"><span data-stu-id="795c4-136">Expand the Contact information section.</span></span>
+21. <span data-ttu-id="795c4-137">Skriv inn en verdi i feltet Telefon.</span><span class="sxs-lookup"><span data-stu-id="795c4-137">In the Telephone field, type a value.</span></span>
+22. <span data-ttu-id="795c4-138">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="795c4-138">Close the page.</span></span>
+23. <span data-ttu-id="795c4-139">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="795c4-139">Click Edit.</span></span>
+24. <span data-ttu-id="795c4-140">Vid delen Betaling.</span><span class="sxs-lookup"><span data-stu-id="795c4-140">Expand the Payment section.</span></span>
+25. <span data-ttu-id="795c4-141">Velg kontoen du nettopp har opprettet i Bankkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="795c4-141">In the Bank  account field, select the account that you’ve just created.</span></span>
+26. <span data-ttu-id="795c4-142">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="795c4-142">Click Save.</span></span>
+    * <span data-ttu-id="795c4-143">Adressen kan arves fra bankgruppen, hvis det er angitt, eller du kan legge den til her.</span><span class="sxs-lookup"><span data-stu-id="795c4-143">The address may be inherited from the bank group, if one is specified, or you can add it here.</span></span>  
 
 

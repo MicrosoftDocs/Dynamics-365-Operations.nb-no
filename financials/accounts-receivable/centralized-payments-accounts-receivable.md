@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a09eedd1dd12b7f5343953b16f9f0b210213d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6327d9cab1651d22cd411f718f6e3a2f8733e13e
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-receivable"></a>Sentraliserte betalinger for kunder
+# <a name="centralized-payments-for-accounts-receivable"></a><span data-ttu-id="04130-105">Sentraliserte betalinger for kunder</span><span class="sxs-lookup"><span data-stu-id="04130-105">Centralized payments for Accounts receivable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
+<span data-ttu-id="04130-106">Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger.</span><span class="sxs-lookup"><span data-stu-id="04130-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="04130-107">Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="04130-107">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="04130-108">Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.</span><span class="sxs-lookup"><span data-stu-id="04130-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter. I tillegg sparer organisasjonen tid, fordi prosessene for betalingsforslag, utligninger og redigering av åpne og lukkede transaksjoner for sentraliserte betalinger er strømlinjeformet. 
+<span data-ttu-id="04130-109">Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger.</span><span class="sxs-lookup"><span data-stu-id="04130-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="04130-110">Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="04130-110">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="04130-111">I tillegg sparer organisasjonen tid, fordi prosessene for betalingsforslag, utligninger og redigering av åpne og lukkede transaksjoner for sentraliserte betalinger er strømlinjeformet.</span><span class="sxs-lookup"><span data-stu-id="04130-111">Additionally, the organization saves time, because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.</span></span> 
 
-Det finnes mange juridiske enheter for operasjoner i en sentralisert betalingsorganisasjon, og hver juridiske enhet administrerer sin egen kundefakturainformasjon. Betalinger for alle de operative juridiske enhetene mottas av en juridisk enhet, som kalles den juridiske enheten for betalingen. Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene. Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene, og hvordan kontantrabattransaksjoner i forbindelse med sentraliserte betalinger skal håndteres. 
+<span data-ttu-id="04130-112">Det finnes mange juridiske enheter for operasjoner i en sentralisert betalingsorganisasjon, og hver juridiske enhet administrerer sin egen kundefakturainformasjon.</span><span class="sxs-lookup"><span data-stu-id="04130-112">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices receivable information.</span></span> <span data-ttu-id="04130-113">Betalinger for alle de operative juridiske enhetene mottas av en juridisk enhet, som kalles den juridiske enheten for betalingen.</span><span class="sxs-lookup"><span data-stu-id="04130-113">Payments for all the operating legal entities are received by a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="04130-114">Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene.</span><span class="sxs-lookup"><span data-stu-id="04130-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="04130-115">Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene, og hvordan kontantrabattransaksjoner i forbindelse med sentraliserte betalinger skal håndteres.</span><span class="sxs-lookup"><span data-stu-id="04130-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a centralized payment are handled.</span></span> 
 
-I eksemplene nedenfor ser du hvordan postering håndteres i ulike scenarier. Følgende konfigurasjon antas for alle disse eksemplene:
+<span data-ttu-id="04130-116">I eksemplene nedenfor ser du hvordan postering håndteres i ulike scenarier.</span><span class="sxs-lookup"><span data-stu-id="04130-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="04130-117">Følgende konfigurasjon antas for alle disse eksemplene:</span><span class="sxs-lookup"><span data-stu-id="04130-117">The following configuration is assumed for all these examples:</span></span>
 
--   De juridiske enhetene er Fabrikam, Fabrikam Øst og Fabrikam Vest. Kundebetalinger registreres i Fabrikam.
--   Feltet **Poster kontantrabatt** på siden **Konserninternt regnskap** er satt til **Juridisk enhet for faktura**.
--   Feltet **Poster valutakursgevinst eller -tap** på siden **Konserninternt regnskap** er satt til **Juridisk enhet for betaling**.
--   Leverandøren Gastronor Delikatesser defineres som en kunde i hver juridiske enhet. Kundene fra de forskjellige juridiske enhetene er identifisert som samme kunde, fordi de har den samme globale adressebok-ID.
+-   <span data-ttu-id="04130-118">De juridiske enhetene er Fabrikam, Fabrikam Øst og Fabrikam Vest.</span><span class="sxs-lookup"><span data-stu-id="04130-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="04130-119">Kundebetalinger registreres i Fabrikam.</span><span class="sxs-lookup"><span data-stu-id="04130-119">Customer payments are entered into Fabrikam.</span></span>
+-   <span data-ttu-id="04130-120">Feltet **Poster kontantrabatt** på siden **Konserninternt regnskap** er satt til **Juridisk enhet for faktura**.</span><span class="sxs-lookup"><span data-stu-id="04130-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="04130-121">Feltet **Poster valutakursgevinst eller -tap** på siden **Konserninternt regnskap** er satt til **Juridisk enhet for betaling**.</span><span class="sxs-lookup"><span data-stu-id="04130-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="04130-122">Leverandøren Gastronor Delikatesser defineres som en kunde i hver juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="04130-122">Customer Northwind Traders is set up as a customer in each legal entity.</span></span> <span data-ttu-id="04130-123">Kundene fra de forskjellige juridiske enhetene er identifisert som samme kunde, fordi de har den samme globale adressebok-ID.</span><span class="sxs-lookup"><span data-stu-id="04130-123">The customers from the various legal entities are identified as the same customer because they share the same global address book ID.</span></span>
 
-| Adressebok-ID | Kundekonto | Navn              | Juridisk enhet  |
+| <span data-ttu-id="04130-124">Adressebok-ID</span><span class="sxs-lookup"><span data-stu-id="04130-124">Address book ID</span></span> | <span data-ttu-id="04130-125">Kundekonto</span><span class="sxs-lookup"><span data-stu-id="04130-125">Customer account</span></span> | <span data-ttu-id="04130-126">Navn</span><span class="sxs-lookup"><span data-stu-id="04130-126">Name</span></span>              | <span data-ttu-id="04130-127">Juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="04130-127">Legal entity</span></span>  |
 |-----------------|------------------|-------------------|---------------|
-| 4050            | 4000             | Gastronor Delikatesser | Fabrikam      |
-| 4050            | 4000             | Gastronor Delikatesser | Fabrikam Øst |
-| 4050            | 10000            | Gastronor Delikatesser | Fabrikam vest |
+| <span data-ttu-id="04130-128">4050</span><span class="sxs-lookup"><span data-stu-id="04130-128">4050</span></span>            | <span data-ttu-id="04130-129">4000</span><span class="sxs-lookup"><span data-stu-id="04130-129">4000</span></span>             | <span data-ttu-id="04130-130">Gastronor Delikatesser</span><span class="sxs-lookup"><span data-stu-id="04130-130">Northwind Traders</span></span> | <span data-ttu-id="04130-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="04130-131">Fabrikam</span></span>      |
+| <span data-ttu-id="04130-132">4050</span><span class="sxs-lookup"><span data-stu-id="04130-132">4050</span></span>            | <span data-ttu-id="04130-133">4000</span><span class="sxs-lookup"><span data-stu-id="04130-133">4000</span></span>             | <span data-ttu-id="04130-134">Gastronor Delikatesser</span><span class="sxs-lookup"><span data-stu-id="04130-134">Northwind Traders</span></span> | <span data-ttu-id="04130-135">Fabrikam Øst</span><span class="sxs-lookup"><span data-stu-id="04130-135">Fabrikam East</span></span> |
+| <span data-ttu-id="04130-136">4050</span><span class="sxs-lookup"><span data-stu-id="04130-136">4050</span></span>            | <span data-ttu-id="04130-137">10000</span><span class="sxs-lookup"><span data-stu-id="04130-137">10000</span></span>            | <span data-ttu-id="04130-138">Gastronor Delikatesser</span><span class="sxs-lookup"><span data-stu-id="04130-138">Northwind Traders</span></span> | <span data-ttu-id="04130-139">Fabrikam vest</span><span class="sxs-lookup"><span data-stu-id="04130-139">Fabrikam West</span></span> |
 
-## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a>Eksempel 1: Kundebetaling av faktura fra en annen juridisk enhet
-Fabrikam mottar en betaling på 600,00 til Fabrikams kundekonto 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for kundekonto 4000 hos Fabrikam Øst.
+## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="04130-140">Eksempel 1: Kundebetaling av faktura fra en annen juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="04130-140">Example 1: Customer payment of invoice from another legal entity</span></span>
+<span data-ttu-id="04130-141">Fabrikam mottar en betaling på 600,00 til Fabrikams kundekonto 4000, Gastronor Delikatesser.</span><span class="sxs-lookup"><span data-stu-id="04130-141">Fabrikam receives a payment of 600.00 for Fabrikam customer account 4000, Northwind Traders.</span></span> <span data-ttu-id="04130-142">Betalingen utlignes med en åpen faktura for kundekonto 4000 hos Fabrikam Øst.</span><span class="sxs-lookup"><span data-stu-id="04130-142">The payment is settled with an open invoice for customer account 4000 in Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a>Fakturaen posteres i Fabrikam Øst for kunde 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="04130-143">Fakturaen posteres i Fabrikam Øst for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-143">Invoice is posted in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-144">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-144">Account</span></span>                             | <span data-ttu-id="04130-145">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-145">Debit amount</span></span> | <span data-ttu-id="04130-146">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-146">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Øst) | 600,00       |               |
-| Salg (Fabrikam Øst)               |              | 600,00        |
+| <span data-ttu-id="04130-147">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-147">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-148">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-148">600.00</span></span>       |               |
+| <span data-ttu-id="04130-149">Salg (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-149">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="04130-150">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-150">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Betalingen mottas og posteres i Fabrikam for kunde 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="04130-151">Betalingen mottas og posteres i Fabrikam for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-151">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-152">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-152">Account</span></span>                        | <span data-ttu-id="04130-153">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-153">Debit amount</span></span> | <span data-ttu-id="04130-154">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-154">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Kontant (Fabrikam)                | 600,00       |               |
-| Kunder (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="04130-155">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-155">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-156">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-156">600.00</span></span>       |               |
+| <span data-ttu-id="04130-157">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-157">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="04130-158">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-158">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="04130-159">Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen</span><span class="sxs-lookup"><span data-stu-id="04130-159">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-160">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-160">**Fabrikam posting**</span></span>
 
-| Konto                         | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-161">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-161">Account</span></span>                         | <span data-ttu-id="04130-162">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-162">Debit amount</span></span> | <span data-ttu-id="04130-163">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-163">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Kunder (Fabrikam)  | 600,00       |               |
-| Skal betales til Fabrikam Øst (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="04130-164">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-164">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="04130-165">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-165">600.00</span></span>       |               |
+| <span data-ttu-id="04130-166">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-166">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="04130-167">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-167">600.00</span></span>        |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-168">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-168">**Fabrikam East posting**</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-169">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-169">Account</span></span>                             | <span data-ttu-id="04130-170">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-170">Debit amount</span></span> | <span data-ttu-id="04130-171">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-171">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Skal betales fra Fabrikam (Fabrikam Øst)   | 600,00       |               |
-| Kunder (Fabrikam Øst) |              | 600,00        |
+| <span data-ttu-id="04130-172">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-172">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="04130-173">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-173">600.00</span></span>       |               |
+| <span data-ttu-id="04130-174">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-174">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-175">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-175">600.00</span></span>        |
 
-## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Eksempel 2: Kundebetaling av faktura fra en annen juridisk enhet med kontantrabatt
-Fabrikam mottar en betaling på 580,00 til Fabrikams kundekonto 4000, Gastronor Delikatesser. Fabrikam Øst har en åpen faktura for kunde 4000. Fakturaen har en mulighet for en kontantrabatt på 20,00. Betalingen utlignes med de åpne Fabrikam Øst-fakturaene. Kontantrabatten posteres til den juridiske enheten for fakturaen, Fabrikam Øst.
+## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="04130-176">Eksempel 2: Kundebetaling av faktura fra en annen juridisk enhet med kontantrabatt</span><span class="sxs-lookup"><span data-stu-id="04130-176">Example 2: Customer payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="04130-177">Fabrikam mottar en betaling på 580,00 til Fabrikams kundekonto 4000, Gastronor Delikatesser.</span><span class="sxs-lookup"><span data-stu-id="04130-177">Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="04130-178">Fabrikam Øst har en åpen faktura for kunde 4000.</span><span class="sxs-lookup"><span data-stu-id="04130-178">Fabrikam East has an open invoice for customer 4000.</span></span> <span data-ttu-id="04130-179">Fakturaen har en mulighet for en kontantrabatt på 20,00.</span><span class="sxs-lookup"><span data-stu-id="04130-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="04130-180">Betalingen utlignes med de åpne Fabrikam Øst-fakturaene.</span><span class="sxs-lookup"><span data-stu-id="04130-180">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="04130-181">Kontantrabatten posteres til den juridiske enheten for fakturaen, Fabrikam Øst.</span><span class="sxs-lookup"><span data-stu-id="04130-181">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Fakturaen posteres i Fabrikam Øst for Fabrikam Øst-kunde 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="04130-182">Fakturaen posteres i Fabrikam Øst for Fabrikam Øst-kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-182">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-183">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-183">Account</span></span>                             | <span data-ttu-id="04130-184">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-184">Debit amount</span></span> | <span data-ttu-id="04130-185">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-185">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Øst) | 600,00       |               |
-| Salg (Fabrikam Øst)               |              | 600,00        |
+| <span data-ttu-id="04130-186">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-186">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-187">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-187">600.00</span></span>       |               |
+| <span data-ttu-id="04130-188">Salg (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-188">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="04130-189">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-189">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Betalingen mottas og posteres i Fabrikam for Fabrikam-kunde 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="04130-190">Betalingen mottas og posteres i Fabrikam for Fabrikam-kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-190">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-191">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-191">Account</span></span>                        | <span data-ttu-id="04130-192">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-192">Debit amount</span></span> | <span data-ttu-id="04130-193">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-193">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Kontant (Fabrikam)                | 600,00       |               |
-| Kunder (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="04130-194">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-194">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-195">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-195">600.00</span></span>       |               |
+| <span data-ttu-id="04130-196">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-196">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="04130-197">600,00</span><span class="sxs-lookup"><span data-stu-id="04130-197">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="04130-198">Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen</span><span class="sxs-lookup"><span data-stu-id="04130-198">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-199">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-199">**Fabrikam posting**</span></span>
 
-| Konto                         | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-200">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-200">Account</span></span>                         | <span data-ttu-id="04130-201">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-201">Debit amount</span></span> | <span data-ttu-id="04130-202">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-202">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Kunder (Fabrikam)  | 580,00       |               |
-| Skal betales til Fabrikam Øst (Fabrikam) |              | 580,00        |
+| <span data-ttu-id="04130-203">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-203">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="04130-204">580,00</span><span class="sxs-lookup"><span data-stu-id="04130-204">580.00</span></span>       |               |
+| <span data-ttu-id="04130-205">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-205">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="04130-206">580,00</span><span class="sxs-lookup"><span data-stu-id="04130-206">580.00</span></span>        |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-207">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-207">**Fabrikam East posting**</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-208">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-208">Account</span></span>                             | <span data-ttu-id="04130-209">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-209">Debit amount</span></span> | <span data-ttu-id="04130-210">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-210">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Skal betales fra Fabrikam (Fabrikam Øst)   | 580,00       |               |
-| Kunder (Fabrikam Øst) |              | 580,00        |
-| Kontantrabatt (Fabrikam Øst)       | 20,00        |               |
-| Kunder (Fabrikam Øst) |              | 20,00         |
+| <span data-ttu-id="04130-211">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-211">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="04130-212">580,00</span><span class="sxs-lookup"><span data-stu-id="04130-212">580.00</span></span>       |               |
+| <span data-ttu-id="04130-213">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-213">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-214">580,00</span><span class="sxs-lookup"><span data-stu-id="04130-214">580.00</span></span>        |
+| <span data-ttu-id="04130-215">Kontantrabatt (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-215">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="04130-216">20,00</span><span class="sxs-lookup"><span data-stu-id="04130-216">20.00</span></span>        |               |
+| <span data-ttu-id="04130-217">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-217">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-218">20,00</span><span class="sxs-lookup"><span data-stu-id="04130-218">20.00</span></span>         |
 
-## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a>Eksempel 3: Kundebetaling av faktura fra en annen juridisk enhet med realisert kursgevinst
-Fabrikam mottar en betaling på 600,00 euro (EUR) for Fabrikams kundekonto 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for kunde 4000 hos Fabrikam Øst. En kursgevinsttransaksjon genereres under utligningsprosessen.
+## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a><span data-ttu-id="04130-219">Eksempel 3: Kundebetaling av faktura fra en annen juridisk enhet med realisert kursgevinst</span><span class="sxs-lookup"><span data-stu-id="04130-219">Example 3: Customer payment of invoice from another legal entity with realized exchange rate gain</span></span>
+<span data-ttu-id="04130-220">Fabrikam mottar en betaling på 600,00 euro (EUR) for Fabrikams kundekonto 4000, Gastronor Delikatesser.</span><span class="sxs-lookup"><span data-stu-id="04130-220">Fabrikam receives a payment of 600.00 euros (EUR) for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="04130-221">Betalingen utlignes med en åpen faktura for kunde 4000 hos Fabrikam Øst.</span><span class="sxs-lookup"><span data-stu-id="04130-221">The payment is settled with an open invoice for customer 4000 in Fabrikam East.</span></span> <span data-ttu-id="04130-222">En kursgevinsttransaksjon genereres under utligningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="04130-222">A currency exchange gain transaction is generated during the settlement process.</span></span>
 
--   Vekslingskursen mellom EUR og USD på fakturadatoen: 1,2062
--   Vekslingskursen mellom EUR og USD på betalingsdatoen: 1,2277
+-   <span data-ttu-id="04130-223">Vekslingskursen mellom EUR og USD på fakturadatoen: 1,2062</span><span class="sxs-lookup"><span data-stu-id="04130-223">Exchange rate for EUR to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="04130-224">Vekslingskursen mellom EUR og USD på betalingsdatoen: 1,2277</span><span class="sxs-lookup"><span data-stu-id="04130-224">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Fakturaen posteres i Fabrikam Øst for Fabrikam Øst-kunde 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="04130-225">Fakturaen posteres i Fabrikam Øst for Fabrikam Øst-kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-225">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-226">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-226">Account</span></span>                             | <span data-ttu-id="04130-227">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-227">Debit amount</span></span>            | <span data-ttu-id="04130-228">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-228">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Kunder (Fabrikam Øst) | EUR 600,00 / USD 723,72 |                         |
-| Salg (Fabrikam Øst)               |                         | EUR 600,00 / USD 723,72 |
+| <span data-ttu-id="04130-229">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-229">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-230">EUR 600,00 / USD 723,72</span><span class="sxs-lookup"><span data-stu-id="04130-230">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="04130-231">Salg (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-231">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="04130-232">EUR 600,00 / USD 723,72</span><span class="sxs-lookup"><span data-stu-id="04130-232">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Betalingen mottas og posteres i Fabrikam for Fabrikam-kunde 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="04130-233">Betalingen mottas og posteres i Fabrikam for Fabrikam-kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-233">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-234">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-234">Account</span></span>                        | <span data-ttu-id="04130-235">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-235">Debit amount</span></span>            | <span data-ttu-id="04130-236">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-236">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Kontant (Fabrikam)                | EUR 600,00 / USD 736,62 |                         |
-| Kunder (Fabrikam) |                         | EUR 600,00 / USD 736,62 |
+| <span data-ttu-id="04130-237">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-237">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-238">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-238">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="04130-239">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-239">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="04130-240">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-240">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="04130-241">Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen</span><span class="sxs-lookup"><span data-stu-id="04130-241">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-242">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-242">**Fabrikam posting**</span></span>
 
-| Konto                         | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-243">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-243">Account</span></span>                         | <span data-ttu-id="04130-244">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-244">Debit amount</span></span>            | <span data-ttu-id="04130-245">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-245">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Kunder (Fabrikam)  | EUR 600,00 / USD 736,62 |                         |
-| Skal betales til Fabrikam Øst (Fabrikam) |                         | EUR 600,00 / USD 736,62 |
-| Skal betales til Fabrikam Øst (Fabrikam) | EUR 0,00 / USD 12,90    |                         |
-| Realisert gevinst (Fabrikam)        |                         | EUR 0,00 / USD 12,90    |
+| <span data-ttu-id="04130-246">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-246">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="04130-247">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-247">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="04130-248">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-248">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="04130-249">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-249">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="04130-250">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-250">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="04130-251">EUR 0,00 / USD 12,90</span><span class="sxs-lookup"><span data-stu-id="04130-251">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="04130-252">Realisert gevinst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-252">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="04130-253">EUR 0,00 / USD 12,90</span><span class="sxs-lookup"><span data-stu-id="04130-253">0.00 EUR / 12.90 USD</span></span>    |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-254">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-254">**Fabrikam East posting**</span></span>
 
-| Konto                             | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-255">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-255">Account</span></span>                             | <span data-ttu-id="04130-256">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-256">Debit amount</span></span>            | <span data-ttu-id="04130-257">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-257">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Skal betales fra Fabrikam (Fabrikam Øst)   | EUR 600,00 / USD 736,62 |                         |
-| Kunder (Fabrikam Øst) |                         | EUR 600,00 / USD 736,62 |
-| Kunder (Fabrikam Øst) | EUR 0,00 / USD 12,90    |                         |
-| Skal betales fra Fabrikam (Fabrikam Øst)   |                         | EUR 0,00 / USD 12,90    |
+| <span data-ttu-id="04130-258">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-258">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="04130-259">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-259">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="04130-260">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-260">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="04130-261">EUR 600,00 / USD 736,62</span><span class="sxs-lookup"><span data-stu-id="04130-261">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="04130-262">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-262">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-263">EUR 0,00 / USD 12,90</span><span class="sxs-lookup"><span data-stu-id="04130-263">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="04130-264">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-264">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="04130-265">EUR 0,00 / USD 12,90</span><span class="sxs-lookup"><span data-stu-id="04130-265">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a>Eksempel 4: Kundebetaling av faktura fra en annen juridisk enhet med kontantrabatt og realisert kursgevinst
-Fabrikam Øst posterer en betaling fra Fabrikam-kunde 4000, Gastronor Delikatesser, for en åpen faktura i Fabrikam Øst. Fakturaen har en kontantrabatt tilgjengelig, og det genereres en mva-transaksjon. Betalingen utlignes med den åpne Fabrikam Øst-fakturaen. En kursgevinsttransaksjon genereres under utligningsprosessen. Kontantrabatten posteres til den juridiske enheten for faktura (Fabrikam Øst), og kursgevinsten posteres til den juridiske enheten for betaling (Fabrikam).
+## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a><span data-ttu-id="04130-266">Eksempel 4: Kundebetaling av faktura fra en annen juridisk enhet med kontantrabatt og realisert kursgevinst</span><span class="sxs-lookup"><span data-stu-id="04130-266">Example 4: Customer payment of invoice from another legal entity with cash discount and realized exchange rate gain</span></span>
+<span data-ttu-id="04130-267">Fabrikam Øst posterer en betaling fra Fabrikam-kunde 4000, Gastronor Delikatesser, for en åpen faktura i Fabrikam Øst.</span><span class="sxs-lookup"><span data-stu-id="04130-267">Fabrikam posts a payment for Fabrikam customer 4000, Northwind Traders, for an open invoice in Fabrikam East.</span></span> <span data-ttu-id="04130-268">Fakturaen har en kontantrabatt tilgjengelig, og det genereres en mva-transaksjon.</span><span class="sxs-lookup"><span data-stu-id="04130-268">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="04130-269">Betalingen utlignes med den åpne Fabrikam Øst-fakturaen.</span><span class="sxs-lookup"><span data-stu-id="04130-269">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="04130-270">En kursgevinsttransaksjon genereres under utligningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="04130-270">A currency exchange gain transaction is generated during the settlement process.</span></span> <span data-ttu-id="04130-271">Kontantrabatten posteres til den juridiske enheten for faktura (Fabrikam Øst), og kursgevinsten posteres til den juridiske enheten for betaling (Fabrikam).</span><span class="sxs-lookup"><span data-stu-id="04130-271">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange gain is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Vekslingskursen mellom EUR og USD på fakturadatoen: 1,2062
--   Vekslingskursen mellom EUR og USD på betalingsdatoen: 1,2277
+-   <span data-ttu-id="04130-272">Vekslingskursen mellom EUR og USD på fakturadatoen: 1,2062</span><span class="sxs-lookup"><span data-stu-id="04130-272">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="04130-273">Vekslingskursen mellom EUR og USD på betalingsdatoen: 1,2277</span><span class="sxs-lookup"><span data-stu-id="04130-273">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a>En fritekstfaktura posteres og en avgiftstransaksjon genereres i Fabrikam Øst for kunde 4000
+### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="04130-274">En fritekstfaktura posteres og en avgiftstransaksjon genereres i Fabrikam Øst for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-274">Free text invoice is posted and a tax transaction is generated in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-275">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-275">Account</span></span>                             | <span data-ttu-id="04130-276">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-276">Debit amount</span></span>            | <span data-ttu-id="04130-277">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-277">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Kunder (Fabrikam Øst) | EUR 638,22 / USD 769,82 |                         |
-| Salg (Fabrikam Øst)               |                         | EUR 600,00 / USD 723,72 |
-| Merverdiavgift (Fabrikam Øst)           |                         | EUR 38,22 / USD 46,10   |
+| <span data-ttu-id="04130-278">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-278">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-279">EUR 638,22 / USD 769,82</span><span class="sxs-lookup"><span data-stu-id="04130-279">638.22 EUR / 769.82 USD</span></span> |                         |
+| <span data-ttu-id="04130-280">Salg (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-280">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="04130-281">EUR 600,00 / USD 723,72</span><span class="sxs-lookup"><span data-stu-id="04130-281">600.00 EUR / 723.72 USD</span></span> |
+| <span data-ttu-id="04130-282">Merverdiavgift (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-282">Sales tax (Fabrikam East)</span></span>           |                         | <span data-ttu-id="04130-283">EUR 38,22 / USD 46,10</span><span class="sxs-lookup"><span data-stu-id="04130-283">38.22 EUR / 46.10 USD</span></span>   |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Betalingen mottas og posteres i Fabrikam for kunde 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="04130-284">Betalingen mottas og posteres i Fabrikam for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-284">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-285">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-285">Account</span></span>                        | <span data-ttu-id="04130-286">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-286">Debit amount</span></span>            | <span data-ttu-id="04130-287">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-287">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Kontant (Fabrikam)                | EUR 626,22 / USD 768,81 |                         |
-| Kunder (Fabrikam) |                         | EUR 626,22 / USD 768,81 |
+| <span data-ttu-id="04130-288">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-288">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-289">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-289">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="04130-290">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-290">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="04130-291">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-291">626.22 EUR / 768.81 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="04130-292">Fabrikam-betalingen utlignes med Fabrikam Øst-fakturaen</span><span class="sxs-lookup"><span data-stu-id="04130-292">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-293">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-293">**Fabrikam posting**</span></span>
 
-| Konto                         | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-294">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-294">Account</span></span>                         | <span data-ttu-id="04130-295">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-295">Debit amount</span></span>            | <span data-ttu-id="04130-296">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-296">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Kunder (Fabrikam)  | EUR 626,22 / USD 768,81 |                         |
-| Skal betales til Fabrikam Øst (Fabrikam) |                         | EUR 626,22 / USD 768,81 |
-| Skal betales til Fabrikam Øst (Fabrikam) | EUR 0,00 / USD 13,46    |                         |
-| Realisert gevinst (Fabrikam)        |                         | EUR 0,00 / USD 13,46    |
+| <span data-ttu-id="04130-297">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-297">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="04130-298">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-298">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="04130-299">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-299">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="04130-300">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-300">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="04130-301">Skal betales til Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-301">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="04130-302">EUR 0,00 / USD 13,46</span><span class="sxs-lookup"><span data-stu-id="04130-302">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="04130-303">Realisert gevinst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-303">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="04130-304">EUR 0,00 / USD 13,46</span><span class="sxs-lookup"><span data-stu-id="04130-304">0.00 EUR / 13.46 USD</span></span>    |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-305">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-305">**Fabrikam East posting**</span></span>
 
-| Konto                             | Debetbeløp            | Kreditbeløp           |
+| <span data-ttu-id="04130-306">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-306">Account</span></span>                             | <span data-ttu-id="04130-307">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-307">Debit amount</span></span>            | <span data-ttu-id="04130-308">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-308">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Skal betales fra Fabrikam (Fabrikam Øst)   | EUR 626,22 / USD 768,81 |                         |
-| Kunder (Fabrikam Øst) |                         | EUR 626,22 / USD 768,81 |
-| Kunder (Fabrikam Øst)  | EUR 0,00 / USD 13,46    |                         |
-| Skal betales fra Fabrikam (Fabrikam Øst)   |                         | EUR 0,00 / USD 13,46    |
-| Kontantrabatt (Fabrikam Øst)       | EUR 12,00 / USD 14,47   |                         |
-| Kunder (Fabrikam Øst) |                         | EUR 12,00 / USD 14,47   |
+| <span data-ttu-id="04130-309">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-309">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="04130-310">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-310">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="04130-311">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-311">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="04130-312">EUR 626,22 / USD 768,81</span><span class="sxs-lookup"><span data-stu-id="04130-312">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="04130-313">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-313">Accounts receivable (Fabrikam East</span></span>  | <span data-ttu-id="04130-314">EUR 0,00 / USD 13,46</span><span class="sxs-lookup"><span data-stu-id="04130-314">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="04130-315">Skal betales fra Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-315">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="04130-316">EUR 0,00 / USD 13,46</span><span class="sxs-lookup"><span data-stu-id="04130-316">0.00 EUR / 13.46 USD</span></span>    |
+| <span data-ttu-id="04130-317">Kontantrabatt (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-317">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="04130-318">EUR 12,00 / USD 14,47</span><span class="sxs-lookup"><span data-stu-id="04130-318">12.00 EUR / 14.47 USD</span></span>   |                         |
+| <span data-ttu-id="04130-319">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-319">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="04130-320">EUR 12,00 / USD 14,47</span><span class="sxs-lookup"><span data-stu-id="04130-320">12.00 EUR / 14.47 USD</span></span>   |
 
-## <a name="example-5-customer-credit-note-with-primary-payment"></a>Eksempel 5: Kundekreditnota med hovedbetaling
-Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen velges som hovedbetaling på siden **Utlign transaksjoner**.
+## <a name="example-5-customer-credit-note-with-primary-payment"></a><span data-ttu-id="04130-321">Eksempel 5: Kundekreditnota med hovedbetaling</span><span class="sxs-lookup"><span data-stu-id="04130-321">Example 5: Customer credit note with primary payment</span></span>
+<span data-ttu-id="04130-322">Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser.</span><span class="sxs-lookup"><span data-stu-id="04130-322">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="04130-323">Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000.</span><span class="sxs-lookup"><span data-stu-id="04130-323">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="04130-324">Betalingen velges som hovedbetaling på siden **Utlign transaksjoner**.</span><span class="sxs-lookup"><span data-stu-id="04130-324">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Fakturaen posteres til Fabrikam Vest for kunde 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="04130-325">Fakturaen posteres til Fabrikam Vest for kunde 10000</span><span class="sxs-lookup"><span data-stu-id="04130-325">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-326">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-326">Account</span></span>                             | <span data-ttu-id="04130-327">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-327">Debit amount</span></span> | <span data-ttu-id="04130-328">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-328">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Vest) | 100,00       |               |
-| Salg (Fabrikam Vest)               |              | 100,00        |
+| <span data-ttu-id="04130-329">Kunder (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-329">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="04130-330">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-330">100.00</span></span>       |               |
+| <span data-ttu-id="04130-331">Salg (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-331">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="04130-332">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-332">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Kreditnotaen posteres til Fabrikam Øst for kunde 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="04130-333">Kreditnotaen posteres til Fabrikam Øst for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-333">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-334">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-334">Account</span></span>                             | <span data-ttu-id="04130-335">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-335">Debit amount</span></span> | <span data-ttu-id="04130-336">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-336">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Salgsretur (Fabrikam Øst)       | 25,00        |               |
-| Kunder (Fabrikam Øst) |              | 25,00         |
+| <span data-ttu-id="04130-337">Salgsretur (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-337">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="04130-338">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-338">25.00</span></span>        |               |
+| <span data-ttu-id="04130-339">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-339">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-340">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-340">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Betalingen posteres til Fabrikam for kunde 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="04130-341">Betalingen posteres til Fabrikam for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-341">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-342">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-342">Account</span></span>                        | <span data-ttu-id="04130-343">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-343">Debit amount</span></span> | <span data-ttu-id="04130-344">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-344">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Kontant (Fabrikam)                | 75,00        |               |
-| Kunder (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="04130-345">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-345">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-346">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-346">75.00</span></span>        |               |
+| <span data-ttu-id="04130-347">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-347">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="04130-348">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-348">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="04130-349">Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen</span><span class="sxs-lookup"><span data-stu-id="04130-349">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-350">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-350">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-351">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-351">Account</span></span>                           | <span data-ttu-id="04130-352">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-352">Debit amount</span></span> | <span data-ttu-id="04130-353">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-353">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Skal betales fra Fabrikam Øst (Fabrikam) | 25,00        |               |
-| Kunder (Fabrikam)    |              | 25,00         |
-| Kunder (Fabrikam)    | 100,00       |               |
-| Skal betales til Fabrikam Vest (Fabrikam)   |              | 100,00        |
+| <span data-ttu-id="04130-354">Skal betales fra Fabrikam Øst (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-354">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="04130-355">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-355">25.00</span></span>        |               |
+| <span data-ttu-id="04130-356">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-356">Accounts receivable (Fabrikam)</span></span>    |              | <span data-ttu-id="04130-357">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-357">25.00</span></span>         |
+| <span data-ttu-id="04130-358">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-358">Accounts receivable (Fabrikam)</span></span>    | <span data-ttu-id="04130-359">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-359">100.00</span></span>       |               |
+| <span data-ttu-id="04130-360">Skal betales til Fabrikam Vest (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-360">Due to Fabrikam West (Fabrikam)</span></span>   |              | <span data-ttu-id="04130-361">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-361">100.00</span></span>        |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-362">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-362">**Fabrikam East posting**</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-363">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-363">Account</span></span>                             | <span data-ttu-id="04130-364">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-364">Debit amount</span></span> | <span data-ttu-id="04130-365">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-365">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Øst) | 25,00        |               |
-| Skal betales til Fabrikam (Fabrikam Øst)     |              | 25,00         |
+| <span data-ttu-id="04130-366">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-366">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="04130-367">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-367">25.00</span></span>        |               |
+| <span data-ttu-id="04130-368">Skal betales til Fabrikam (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-368">Due to Fabrikam (Fabrikam East)</span></span>     |              | <span data-ttu-id="04130-369">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-369">25.00</span></span>         |
 
-**Fabrikam Vest-postering**
+<span data-ttu-id="04130-370">**Fabrikam Vest-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-370">**Fabrikam West posting**</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-371">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-371">Account</span></span>                             | <span data-ttu-id="04130-372">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-372">Debit amount</span></span> | <span data-ttu-id="04130-373">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-373">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Skal betales fra Fabrikam (Fabrikam Vest)   | 100,00       |               |
-| Kunder (Fabrikam Vest) |              | 100,00        |
+| <span data-ttu-id="04130-374">Skal betales fra Fabrikam (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-374">Due from Fabrikam (Fabrikam West)</span></span>   | <span data-ttu-id="04130-375">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-375">100.00</span></span>       |               |
+| <span data-ttu-id="04130-376">Kunder (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-376">Accounts receivable (Fabrikam West)</span></span> |              | <span data-ttu-id="04130-377">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-377">100.00</span></span>        |
 
-## <a name="example-6-customer-credit-note-without-primary-payment"></a>Eksempel 6: Kundekreditnota uten hovedbetaling
-Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000. Betalingen velges ikke som hovedbetaling på siden **Utlign transaksjoner**.
+## <a name="example-6-customer-credit-note-without-primary-payment"></a><span data-ttu-id="04130-378">Eksempel 6: Kundekreditnota uten hovedbetaling</span><span class="sxs-lookup"><span data-stu-id="04130-378">Example 6: Customer credit note without primary payment</span></span>
+<span data-ttu-id="04130-379">Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser.</span><span class="sxs-lookup"><span data-stu-id="04130-379">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="04130-380">Betalingen utlignes med en åpen faktura for Fabrikam Vest-kunde 10000 og en åpen kreditnota for Fabrikam Øst-kunde 4000.</span><span class="sxs-lookup"><span data-stu-id="04130-380">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="04130-381">Betalingen velges ikke som hovedbetaling på siden **Utlign transaksjoner**.</span><span class="sxs-lookup"><span data-stu-id="04130-381">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Fakturaen posteres til Fabrikam Vest for kunde 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="04130-382">Fakturaen posteres til Fabrikam Vest for kunde 10000</span><span class="sxs-lookup"><span data-stu-id="04130-382">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-383">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-383">Account</span></span>                             | <span data-ttu-id="04130-384">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-384">Debit amount</span></span> | <span data-ttu-id="04130-385">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-385">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Vest) | 100,00       |               |
-| Salg (Fabrikam Vest)               |              | 100,00        |
+| <span data-ttu-id="04130-386">Kunder (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-386">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="04130-387">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-387">100.00</span></span>       |               |
+| <span data-ttu-id="04130-388">Salg (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-388">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="04130-389">100,00</span><span class="sxs-lookup"><span data-stu-id="04130-389">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Kreditnotaen posteres til Fabrikam Øst for kunde 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="04130-390">Kreditnotaen posteres til Fabrikam Øst for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-390">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-391">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-391">Account</span></span>                             | <span data-ttu-id="04130-392">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-392">Debit amount</span></span> | <span data-ttu-id="04130-393">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-393">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Salgsretur (Fabrikam Øst)       | 25,00        |               |
-| Kunder (Fabrikam Øst) |              | 25,00         |
+| <span data-ttu-id="04130-394">Salgsretur (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-394">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="04130-395">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-395">25.00</span></span>        |               |
+| <span data-ttu-id="04130-396">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-396">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-397">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-397">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Betalingen posteres til Fabrikam for kunde 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="04130-398">Betalingen posteres til Fabrikam for kunde 4000</span><span class="sxs-lookup"><span data-stu-id="04130-398">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-399">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-399">Account</span></span>                        | <span data-ttu-id="04130-400">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-400">Debit amount</span></span> | <span data-ttu-id="04130-401">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-401">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Kontant (Fabrikam)                | 75,00        |               |
-| Kunder (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="04130-402">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-402">Cash (Fabrikam)</span></span>                | <span data-ttu-id="04130-403">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-403">75.00</span></span>        |               |
+| <span data-ttu-id="04130-404">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-404">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="04130-405">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-405">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="04130-406">Fabrikam-betalingen utlignes med Fabrikam Vest-fakturaen og Fabrikam Øst-kreditnotaen</span><span class="sxs-lookup"><span data-stu-id="04130-406">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Fabrikam-postering**
+<span data-ttu-id="04130-407">**Fabrikam-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-407">**Fabrikam posting**</span></span>
 
-| Konto                         | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-408">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-408">Account</span></span>                         | <span data-ttu-id="04130-409">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-409">Debit amount</span></span> | <span data-ttu-id="04130-410">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-410">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Kunder (Fabrikam)  | 75,00        |               |
-| Skal betales til Fabrikam Vest (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="04130-411">Kunder (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-411">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="04130-412">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-412">75.00</span></span>        |               |
+| <span data-ttu-id="04130-413">Skal betales til Fabrikam Vest (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="04130-413">Due to Fabrikam West (Fabrikam)</span></span> |              | <span data-ttu-id="04130-414">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-414">75.00</span></span>         |
 
-**Fabrikam Øst-postering**
+<span data-ttu-id="04130-415">**Fabrikam Øst-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-415">**Fabrikam East posting**</span></span>
 
-| Konto                              | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-416">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-416">Account</span></span>                              | <span data-ttu-id="04130-417">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-417">Debit amount</span></span> | <span data-ttu-id="04130-418">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-418">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Øst)  | 25,00        |               |
-| Skal betales til Fabrikam Vest (Fabrikam Øst) |              | 25,00         |
+| <span data-ttu-id="04130-419">Kunder (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-419">Accounts receivable (Fabrikam East)</span></span>  | <span data-ttu-id="04130-420">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-420">25.00</span></span>        |               |
+| <span data-ttu-id="04130-421">Skal betales til Fabrikam Vest (Fabrikam Øst)</span><span class="sxs-lookup"><span data-stu-id="04130-421">Due to Fabrikam West (Fabrikam East)</span></span> |              | <span data-ttu-id="04130-422">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-422">25.00</span></span>         |
 
-**Fabrikam Vest-postering**
+<span data-ttu-id="04130-423">**Fabrikam Vest-postering**</span><span class="sxs-lookup"><span data-stu-id="04130-423">**Fabrikam West posting**</span></span>
 
-| Konto                                | Debetbeløp | Kreditbeløp |
+| <span data-ttu-id="04130-424">Konto</span><span class="sxs-lookup"><span data-stu-id="04130-424">Account</span></span>                                | <span data-ttu-id="04130-425">Debetbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-425">Debit amount</span></span> | <span data-ttu-id="04130-426">Kreditbeløp</span><span class="sxs-lookup"><span data-stu-id="04130-426">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Skal betales fra Fabrikam (Fabrikam Vest)      | 75,00        |               |
-| Kunder (Fabrikam Vest)    |              | 75,00         |
-| Skal betales fra Fabrikam Øst (Fabrikam Vest) | 25,00        |               |
-| Kunder (Fabrikam Vest)    |              | 25,00         |
+| <span data-ttu-id="04130-427">Skal betales fra Fabrikam (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-427">Due from Fabrikam (Fabrikam West)</span></span>      | <span data-ttu-id="04130-428">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-428">75.00</span></span>        |               |
+| <span data-ttu-id="04130-429">Kunder (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-429">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="04130-430">75,00</span><span class="sxs-lookup"><span data-stu-id="04130-430">75.00</span></span>         |
+| <span data-ttu-id="04130-431">Skal betales fra Fabrikam Øst (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-431">Due from Fabrikam East (Fabrikam West)</span></span> | <span data-ttu-id="04130-432">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-432">25.00</span></span>        |               |
+| <span data-ttu-id="04130-433">Kunder (Fabrikam Vest)</span><span class="sxs-lookup"><span data-stu-id="04130-433">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="04130-434">25,00</span><span class="sxs-lookup"><span data-stu-id="04130-434">25.00</span></span>         |
 
 
 

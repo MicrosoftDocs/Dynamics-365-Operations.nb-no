@@ -24,34 +24,34 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 08/04/2017
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>Lokal distribusjon startside
+# <a name="on-premises-deployment-landing-page"></a><span data-ttu-id="62abf-103">Lokal distribusjon startside</span><span class="sxs-lookup"><span data-stu-id="62abf-103">On-premises deployment landing page</span></span>
 
-Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lokalt). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
+<span data-ttu-id="62abf-104">Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lokalt).</span><span class="sxs-lookup"><span data-stu-id="62abf-104">You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).</span></span> <span data-ttu-id="62abf-105">Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon.</span><span class="sxs-lookup"><span data-stu-id="62abf-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="62abf-106">Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.</span><span class="sxs-lookup"><span data-stu-id="62abf-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 
-**Merk:** Dynamics 365 for Operations (lokalt) får nytt navn. Du vil se Dynamics 365 for Operations (lokalt) henvist til i hele kommunikasjonen og lisensieringsveiledningene. Produktnavnet som vises ved distribusjon av produktet, er Dynamics 365 for Finance and Operations, Enterprise edition. Begge disse navnene refererer til samme produkt.
+<span data-ttu-id="62abf-107">**Merk:** Dynamics 365 for Operations (lokalt) får nytt navn.</span><span class="sxs-lookup"><span data-stu-id="62abf-107">**Note:** Dynamics 365 for Operations (on-premises) is currently being renamed.</span></span> <span data-ttu-id="62abf-108">Du vil se Dynamics 365 for Operations (lokalt) henvist til i hele kommunikasjonen og lisensieringsveiledningene.</span><span class="sxs-lookup"><span data-stu-id="62abf-108">You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides.</span></span> <span data-ttu-id="62abf-109">Produktnavnet som vises ved distribusjon av produktet, er Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="62abf-109">The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="62abf-110">Begge disse navnene refererer til samme produkt.</span><span class="sxs-lookup"><span data-stu-id="62abf-110">Both of these names refer to the same product.</span></span>
 
-## <a name="get-started"></a>Kom i gang
-- [Oversikt over Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](on-premises-overview.md)
-- [Systemkrav for lokale installasjoner](../get-started/system-requirements-on-prem.md)
-- [Størrelsesangivelse for maskinvare for lokale miljøer](../get-started/hardware-sizing-on-premises-environments.md)
-- [Elektronisk tjeneste og lokal policy for programvarelivssyklus](../migration-upgrade/versions-update-policy.md)
-- [Kjøpe Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](../get-started/purchase-on-premises.md)
+## <a name="get-started"></a><span data-ttu-id="62abf-111">Kom i gang</span><span class="sxs-lookup"><span data-stu-id="62abf-111">Get started</span></span>
+- [<span data-ttu-id="62abf-112">Oversikt over Dynamics 365 for Finance and Operations, Enterprise edition (lokal)</span><span class="sxs-lookup"><span data-stu-id="62abf-112">Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview</span></span>](on-premises-overview.md)
+- [<span data-ttu-id="62abf-113">Systemkrav for lokale installasjoner</span><span class="sxs-lookup"><span data-stu-id="62abf-113">System requirements for on-premises deployments</span></span>](../get-started/system-requirements-on-prem.md)
+- [<span data-ttu-id="62abf-114">Størrelsesangivelse for maskinvare for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="62abf-114">Hardware sizing for on-premises environments</span></span>](../get-started/hardware-sizing-on-premises-environments.md)
+- [<span data-ttu-id="62abf-115">Elektronisk tjeneste og lokal policy for programvarelivssyklus</span><span class="sxs-lookup"><span data-stu-id="62abf-115">Online service and on-premises software lifecycle policy</span></span>](../migration-upgrade/versions-update-policy.md)
+- [<span data-ttu-id="62abf-116">Kjøpe Dynamics 365 for Finance and Operations, Enterprise edition (lokal)</span><span class="sxs-lookup"><span data-stu-id="62abf-116">Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)</span></span>](../get-started/purchase-on-premises.md)
 
-## <a name="onboard"></a>Onboard
-- [Opprette et lokalt prosjekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Konfigurere og distribuere i lokale miljøer](setup-deploy-on-premises-environments.md)
-- [Konfigurere sikkerhet for SQL Server Reporting Services for en lokal distribusjon](../analytics/configure-ssrs-on-premises.md)
-- [Utvikle og distribuere tilpassede modeller til lokale miljøer](develop-deploy-custom-models-on-premises.md)
+## <a name="onboard"></a><span data-ttu-id="62abf-117">Onboard</span><span class="sxs-lookup"><span data-stu-id="62abf-117">Onboard</span></span>
+- [<span data-ttu-id="62abf-118">Opprette et lokalt prosjekt i Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="62abf-118">Create an on-premises project in Lifecycle Services</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [<span data-ttu-id="62abf-119">Konfigurere og distribuere i lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="62abf-119">Set up and deploy on-premises environments</span></span>](setup-deploy-on-premises-environments.md)
+- [<span data-ttu-id="62abf-120">Konfigurere sikkerhet for SQL Server Reporting Services for en lokal distribusjon</span><span class="sxs-lookup"><span data-stu-id="62abf-120">Configure SQL Server Reporting Services for an on-premises deployment</span></span>](../analytics/configure-ssrs-on-premises.md)
+- [<span data-ttu-id="62abf-121">Utvikle og distribuere tilpassede modeller til lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="62abf-121">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
 
-## <a name="work-in-your-on-premises-deployment"></a>Arbeide i den lokale distribusjonen
-- [Konfigurere dokumentstyring](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
-- [Importere konfigurasjoner for elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
-- [Dokumentgenererings-, publiserings- og utskriftsegenskaper i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
-- [Definere teknisk støtte](../lifecycle-services/support-experience.md)
-- [Feilsøking av klientens Internett-tilkobling](../user-interface/client-disconnected.md)
+## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="62abf-122">Arbeide i den lokale distribusjonen</span><span class="sxs-lookup"><span data-stu-id="62abf-122">Work in your on-premises deployment</span></span>
+- [<span data-ttu-id="62abf-123">Konfigurere dokumentstyring</span><span class="sxs-lookup"><span data-stu-id="62abf-123">Configure document management</span></span>](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [<span data-ttu-id="62abf-124">Importere konfigurasjoner for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="62abf-124">Import Electronic reporting configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
+- [<span data-ttu-id="62abf-125">Dokumentgenererings-, publiserings- og utskriftsegenskaper i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="62abf-125">Document generation, publishing, and printing capabilities in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
+- [<span data-ttu-id="62abf-126">Definere teknisk støtte</span><span class="sxs-lookup"><span data-stu-id="62abf-126">Set up technical support</span></span>](../lifecycle-services/support-experience.md)
+- [<span data-ttu-id="62abf-127">Feilsøking av klientens Internett-tilkobling</span><span class="sxs-lookup"><span data-stu-id="62abf-127">Client Internet connection troubleshooting</span></span>](../user-interface/client-disconnected.md)
 
-## <a name="other-resources"></a>Andre ressurser
-- [Funksjoner som ikke er implementert i lokale distribusjoner](../get-started/features-not-implemented-on-prem.md)
-- [Utgåtte funksjoner](../migration-upgrade/deprecated-features.md)
+## <a name="other-resources"></a><span data-ttu-id="62abf-128">Andre ressurser</span><span class="sxs-lookup"><span data-stu-id="62abf-128">Other resources</span></span>
+- [<span data-ttu-id="62abf-129">Funksjoner som ikke er implementert i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="62abf-129">Features not implemented in on-premises deployments</span></span>](../get-started/features-not-implemented-on-prem.md)
+- [<span data-ttu-id="62abf-130">Utgåtte funksjoner</span><span class="sxs-lookup"><span data-stu-id="62abf-130">Deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
  
 

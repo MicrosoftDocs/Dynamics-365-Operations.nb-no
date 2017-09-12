@@ -17,46 +17,46 @@ ms.assetid: 68cc00f4-0f7a-4a7d-be90-8f2e0d0563d3
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f5ca047835fcbb2567f0b97347b356e1b594980
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: a88ec380810a9a2d7048d5a8773ebb5960e4cf86
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="tracking-running-average-cost-per-inventory-dimension"></a>Spore glidende gjennomsnitt av kostpris per lagerdimensjon
+# <a name="tracking-running-average-cost-per-inventory-dimension"></a><span data-ttu-id="ee879-104">Spore glidende gjennomsnitt av kostpris per lagerdimensjon</span><span class="sxs-lookup"><span data-stu-id="ee879-104">Tracking running average cost per inventory dimension</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 [!include[retail name](../includes/retail-name.md)]
 
 
-En lagerdimensjonsgruppe er knyttet til hver lagervare. Det glidende gjennomsnittet av kostprisen for en vare beregnes derfor på grunnlag av et utvalg av lagerdimensjoner som spores økonomisk.
+<span data-ttu-id="ee879-105">En lagerdimensjonsgruppe er knyttet til hver lagervare.</span><span class="sxs-lookup"><span data-stu-id="ee879-105">An inventory dimension group is attached to every inventory item.</span></span> <span data-ttu-id="ee879-106">Det glidende gjennomsnittet av kostprisen for en vare beregnes derfor på grunnlag av et utvalg av lagerdimensjoner som spores økonomisk.</span><span class="sxs-lookup"><span data-stu-id="ee879-106">Therefore, the running average cost price of an item is calculated based on the selected inventory dimensions that are being tracked financially.</span></span>
 
-Det finnes tre typer lagerdimensjoner: produkt, lagring og sporing. Produktdimensjonene inkluderer konfigurasjon, størrelse og farge. Produktdimensjoner spores alltid økonomisk. Lagrings- og sporingsdimensjoner omfatter område, lager, sted, lagerstatus, nummerskilt, partinummer og serienummer. Du kan bestemme hvilke lagrings- og sporingsdimensjoner som spores økonomisk. 
+<span data-ttu-id="ee879-107">Det finnes tre typer lagerdimensjoner: produkt, lagring og sporing.</span><span class="sxs-lookup"><span data-stu-id="ee879-107">There are three types of inventory dimensions: product, storage, and tracking.</span></span> <span data-ttu-id="ee879-108">Produktdimensjonene inkluderer konfigurasjon, størrelse og farge.</span><span class="sxs-lookup"><span data-stu-id="ee879-108">Product dimensions include configuration, size, and color.</span></span> <span data-ttu-id="ee879-109">Produktdimensjoner spores alltid økonomisk.</span><span class="sxs-lookup"><span data-stu-id="ee879-109">Product dimensions are always tracked financially.</span></span> <span data-ttu-id="ee879-110">Lagrings- og sporingsdimensjoner omfatter område, lager, sted, lagerstatus, nummerskilt, partinummer og serienummer.</span><span class="sxs-lookup"><span data-stu-id="ee879-110">Storage and tracking dimensions include site, warehouse, location, inventory status, license plate, batch number, and serial number.</span></span> <span data-ttu-id="ee879-111">Du kan bestemme hvilke lagrings- og sporingsdimensjoner som spores økonomisk.</span><span class="sxs-lookup"><span data-stu-id="ee879-111">You can decide which storage and tracking dimensions are tracked financially.</span></span> 
 
-**Eksempel 1** 
+<span data-ttu-id="ee879-112">**Eksempel 1**</span><span class="sxs-lookup"><span data-stu-id="ee879-112">**Example 1**</span></span> 
 
-Hvis lagerdimensjonsgruppen som er knyttet til varen, spores økonomisk etter lager, vil det glidende gjennomsnittet av kostprisen beregnes for hvert lager. Følgende bestillinger er fakturert:
+<span data-ttu-id="ee879-113">Hvis lagerdimensjonsgruppen som er knyttet til varen, spores økonomisk etter lager, vil det glidende gjennomsnittet av kostprisen beregnes for hvert lager.</span><span class="sxs-lookup"><span data-stu-id="ee879-113">If the storage dimension group that is attached to the item is financially tracked by warehouse, the running average cost price is calculated per warehouse.</span></span> <span data-ttu-id="ee879-114">Følgende bestillinger er fakturert:</span><span class="sxs-lookup"><span data-stu-id="ee879-114">The following purchase orders have been invoiced:</span></span>
 
--   En bestilling av et antall på 2 til en kostpris på USD 10,00 er fakturert for lageret HL.
--   En bestilling av et antall på 3 til en kostpris på USD 12,00 er fakturert for lageret HL.
--   En bestilling av et antall på 5 til en kostpris på USD 15,00 er fakturert for lageret ML.
+-   <span data-ttu-id="ee879-115">En bestilling av et antall på 2 til en kostpris på USD 10,00 er fakturert for lageret HL.</span><span class="sxs-lookup"><span data-stu-id="ee879-115">A purchase order for a quantity of 2 at a cost price of USD 10.00 has been invoiced for warehouse GW.</span></span>
+-   <span data-ttu-id="ee879-116">En bestilling av et antall på 3 til en kostpris på USD 12,00 er fakturert for lageret HL.</span><span class="sxs-lookup"><span data-stu-id="ee879-116">A purchase order for a quantity of 3 at a cost price of USD 12.00 has been invoiced for warehouse GW.</span></span>
+-   <span data-ttu-id="ee879-117">En bestilling av et antall på 5 til en kostpris på USD 15,00 er fakturert for lageret ML.</span><span class="sxs-lookup"><span data-stu-id="ee879-117">A purchase order for a quantity of 5 at a cost price of USD 15.00 has been invoiced for warehouse MW.</span></span>
 
-Løpende gjennomsnittlig kostpris for lageret HL er USD 11,20, og den løpende gjennomsnittlige kostprisen for lageret ML er USD 15,00. En salgsordrefaktura posteres for lageret HL. Verdien av lageret og kostnader for solgte varer (før lagerlukking kjøres og uten merking) er USD 11,20. En ny salgsordrefaktura posteres for lageret HL. Verdien av lageret og kostnader for solgte varer (før lagerlukking kjøres og uten merking) er USD 15,00. 
+<span data-ttu-id="ee879-118">Løpende gjennomsnittlig kostpris for lageret HL er USD 11,20, og den løpende gjennomsnittlige kostprisen for lageret ML er USD 15,00.</span><span class="sxs-lookup"><span data-stu-id="ee879-118">The running average cost price for warehouse GW is USD 11.20, and the running average cost price for warehouse MW is USD 15.00.</span></span> <span data-ttu-id="ee879-119">En salgsordrefaktura posteres for lageret HL.</span><span class="sxs-lookup"><span data-stu-id="ee879-119">A sales order invoice is posted for warehouse GW.</span></span> <span data-ttu-id="ee879-120">Verdien av lageret og kostnader for solgte varer (før lagerlukking kjøres og uten merking) er USD 11,20.</span><span class="sxs-lookup"><span data-stu-id="ee879-120">The value of the inventory and the cost of goods sold (before inventory close is run and without marking) is USD 11.20.</span></span> <span data-ttu-id="ee879-121">En ny salgsordrefaktura posteres for lageret HL.</span><span class="sxs-lookup"><span data-stu-id="ee879-121">Another sales order is posted for warehouse MW.</span></span> <span data-ttu-id="ee879-122">Verdien av lageret og kostnader for solgte varer (før lagerlukking kjøres og uten merking) er USD 15,00.</span><span class="sxs-lookup"><span data-stu-id="ee879-122">The value of the inventory and the cost of goods sold (before inventory close is run and without marking) is USD 15.00.</span></span> 
 
-**Eksempel 2** Hvis lagringsdimensjonsgruppen som er knyttet til varen, spores økonomisk etter lager og sporingsdimensjonsgruppen spores økonomisk etter partinummer, blir det glidende gjennomsnittet av kostprisen beregnet for hvert parti. 
+<span data-ttu-id="ee879-123">**Eksempel 2** Hvis lagringsdimensjonsgruppen som er knyttet til varen, spores økonomisk etter lager og sporingsdimensjonsgruppen spores økonomisk etter partinummer, blir det glidende gjennomsnittet av kostprisen beregnet for hvert parti.</span><span class="sxs-lookup"><span data-stu-id="ee879-123">**Example 2** If the storage dimension group that is attached to the item is financially tracked by warehouse, and the tracking dimension group is financially tracked by batch number, the running average cost price is calculated for each batch.</span></span> 
 
-**Obs!** Vi anbefaler at du alltid viser kostprisen for alle økonomiske dimensjoner som spores. Følgende bestillinger er fakturert:
+<span data-ttu-id="ee879-124">**Obs!** Vi anbefaler at du alltid viser kostprisen for alle økonomiske dimensjoner som spores.</span><span class="sxs-lookup"><span data-stu-id="ee879-124">**Note:** We recommend that you always view the cost price for all financial dimensions that are being tracked.</span></span> <span data-ttu-id="ee879-125">Følgende bestillinger er fakturert:</span><span class="sxs-lookup"><span data-stu-id="ee879-125">The following purchase orders have been invoiced:</span></span>
 
--   En bestilling av et antall på 2 til en kostpris på USD 10,00 er fakturert for lageret HL og partiet AAA.
--   En bestilling av et antall på 3 til en kostpris på USD 12,00 er fakturert for lageret HL og partiet AAA.
--   En bestilling av et antall på 2 til en kostpris på USD 15,00 er fakturert for lageret HL og partiet BBB.
+-   <span data-ttu-id="ee879-126">En bestilling av et antall på 2 til en kostpris på USD 10,00 er fakturert for lageret HL og partiet AAA.</span><span class="sxs-lookup"><span data-stu-id="ee879-126">A purchase order for a quantity of 2 at a cost price of USD 10.00 has been invoiced for warehouse GW and batch AAA.</span></span>
+-   <span data-ttu-id="ee879-127">En bestilling av et antall på 3 til en kostpris på USD 12,00 er fakturert for lageret HL og partiet AAA.</span><span class="sxs-lookup"><span data-stu-id="ee879-127">A purchase order for a quantity of 3 at a cost price of USD 12.00 has been invoiced for warehouse GW and batch AAA.</span></span>
+-   <span data-ttu-id="ee879-128">En bestilling av et antall på 2 til en kostpris på USD 15,00 er fakturert for lageret HL og partiet BBB.</span><span class="sxs-lookup"><span data-stu-id="ee879-128">A purchase order for a quantity of 2 at a cost price of USD 15.00 has been invoiced for warehouse GW and batch BBB.</span></span>
 
-Løpende gjennomsnittlig kostpris for lageret HL og parti AAA er USD 11,20, og den løpende gjennomsnittlige kostprisen for lageret ML og parti BBB er USD 15,00.
+<span data-ttu-id="ee879-129">Løpende gjennomsnittlig kostpris for lageret HL og parti AAA er USD 11,20, og den løpende gjennomsnittlige kostprisen for lageret ML og parti BBB er USD 15,00.</span><span class="sxs-lookup"><span data-stu-id="ee879-129">The running average cost price for warehouse GW and batch AAA is USD 11.20, and the running average cost price for warehouse GW and batch BBB is USD 15.00.</span></span>
 
 
 

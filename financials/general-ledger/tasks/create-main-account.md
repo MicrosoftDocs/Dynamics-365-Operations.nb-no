@@ -16,41 +16,41 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ef4d5deb6ea812023112251f00fcdd25229e02e7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-main-account"></a>Opprette en hovedkonto
+# <a name="create-a-main-account"></a><span data-ttu-id="8fc85-103">Opprette en hovedkonto</span><span class="sxs-lookup"><span data-stu-id="8fc85-103">Create a main account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksisterende kontoplan. Denne registreringen bruker demonstrasjonsfirmaet USMF.  
+<span data-ttu-id="8fc85-104">Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksisterende kontoplan.</span><span class="sxs-lookup"><span data-stu-id="8fc85-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="8fc85-105">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="8fc85-105">This recording uses the USMF demo company.</span></span>  
 
-1. Gå til Økonomimodul > Kontoplan > Kontoer > Hovedkontoer.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Hovedkonto.
-4. Skriv inn en verdi i Navn-feltet.
-5. Velg typen som best representerer kontosaldoen og lokasjonen i regnskapsoppgjør, i feltet Hovedkontotype.
-6. Velg kontokategorien som hovedkontoen tilhører, i listen.
-    * Kontokategorien brukes for standard finansrapporter og Power BI-instrumentbordinnhold.  
-7. Klikk koblingen i den valgte raden i listen.
-    * Endre standard debet eller kredit saldoen.  
-8. Velg en verdi fra listen over valutaer i Standardvaluta-feltet.
-9. Finn og velg ønsket post i listen.
-10. Klikk koblingen i den valgte raden i listen.
-11. Aktiver/deaktiver utvidelsen av delen Overstyringer for juridisk enhet.
-12. Klikk Legg til for å velge en juridisk enhet.
-13. Velg juridisk enhet i listen.
-14. Klikk Legg til.
-15. Merk den valgte raden i listen.
-16. Merk av eller fjern merket i boksen Avbrutt.
-17. Vis hurtigkategorien Finansrapportering.
-18. Klikk rullegardinknappen i feltet Valutakurstype for å åpne oppslaget.
-19. Velg valutakurstypen for kontoen i listen.
-20. Klikk koblingen i den valgte raden i listen.
-21. Velg metoden for å beregne valutakurser for kontoen i Type valutaveksling-feltet.
-22. Lukk siden.
+1. <span data-ttu-id="8fc85-106">Gå til Økonomimodul > Kontoplan > Kontoer > Hovedkontoer.</span><span class="sxs-lookup"><span data-stu-id="8fc85-106">Go to General ledger > Chart of accounts > Accounts > Main accounts.</span></span>
+2. <span data-ttu-id="8fc85-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="8fc85-107">Click New.</span></span>
+3. <span data-ttu-id="8fc85-108">Skriv inn en verdi i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="8fc85-108">In the Main account field, type a value.</span></span>
+4. <span data-ttu-id="8fc85-109">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8fc85-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="8fc85-110">Velg typen som best representerer kontosaldoen og lokasjonen i regnskapsoppgjør, i feltet Hovedkontotype.</span><span class="sxs-lookup"><span data-stu-id="8fc85-110">In the Main account type field, select the type that best represents the accounts balance and location on financial statements.</span></span>
+6. <span data-ttu-id="8fc85-111">Velg kontokategorien som hovedkontoen tilhører, i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-111">In the list, select the account category the main account belongs to.</span></span>
+    * <span data-ttu-id="8fc85-112">Kontokategorien brukes for standard finansrapporter og Power BI-instrumentbordinnhold.</span><span class="sxs-lookup"><span data-stu-id="8fc85-112">Account category is used for default financial reports and Power BI dashboard content.</span></span>  
+7. <span data-ttu-id="8fc85-113">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-113">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="8fc85-114">Endre standard debet eller kredit saldoen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-114">Change the default debit or credit balance.</span></span>  
+8. <span data-ttu-id="8fc85-115">Velg en verdi fra listen over valutaer i Standardvaluta-feltet.</span><span class="sxs-lookup"><span data-stu-id="8fc85-115">In the Default currency field, select a value from the list of currencies.</span></span>
+9. <span data-ttu-id="8fc85-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="8fc85-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="8fc85-118">Aktiver/deaktiver utvidelsen av delen Overstyringer for juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="8fc85-118">Toggle the expansion of the Legal entity overrides section.</span></span>
+12. <span data-ttu-id="8fc85-119">Klikk Legg til for å velge en juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="8fc85-119">Click Add to select a legal entity.</span></span>
+13. <span data-ttu-id="8fc85-120">Velg juridisk enhet i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-120">In the list, select the Legal entity.</span></span>
+14. <span data-ttu-id="8fc85-121">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="8fc85-121">Click Add.</span></span>
+15. <span data-ttu-id="8fc85-122">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="8fc85-123">Merk av eller fjern merket i boksen Avbrutt.</span><span class="sxs-lookup"><span data-stu-id="8fc85-123">Check or uncheck the Suspended checkbox.</span></span>
+17. <span data-ttu-id="8fc85-124">Vis hurtigkategorien Finansrapportering.</span><span class="sxs-lookup"><span data-stu-id="8fc85-124">Expand the Financial reporting fast tab.</span></span>
+18. <span data-ttu-id="8fc85-125">Klikk rullegardinknappen i feltet Valutakurstype for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="8fc85-125">In the Exchange rate type field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="8fc85-126">Velg valutakurstypen for kontoen i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-126">In the list, select the Exchange rate type for the account.</span></span>
+20. <span data-ttu-id="8fc85-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8fc85-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="8fc85-128">Velg metoden for å beregne valutakurser for kontoen i Type valutaveksling-feltet.</span><span class="sxs-lookup"><span data-stu-id="8fc85-128">In the Currency translation type field, select the method for calculating exchange rates for the account.</span></span>
+22. <span data-ttu-id="8fc85-129">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8fc85-129">Close the page.</span></span>
 
 

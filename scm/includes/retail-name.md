@@ -1,2 +1,2 @@
 > [!NOTE]
-> Dette emnet gjelder både Dynamics 365 for Finance and Operations, Enterprise edition og Dynamics 365 for Retail. 
+> <span data-ttu-id="d90c1-101">Dette emnet gjelder både Dynamics 365 for Finance and Operations, Enterprise edition og Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="d90c1-101">This topic applies to both Dynamics 365 for Finance and Operations, Enterprise edition and to Dynamics 365 for Retail.</span></span> 

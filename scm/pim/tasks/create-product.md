@@ -16,26 +16,26 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e05895160b7695eea7c26b76dd1953b80ba063e9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d3d5324a6a70539a2b2ba5bb208a546934a7782f
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-product"></a>Opprette et produkt
+# <a name="create-a-product"></a><span data-ttu-id="f8488-103">Opprette et produkt</span><span class="sxs-lookup"><span data-stu-id="f8488-103">Create a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt. Demonstrasjonsdataselskapet USRT er brukt til å opprette denne oppgaven, og oppgaven er ment for varehandelsledere og produktdesignere.
+<span data-ttu-id="f8488-104">Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt.</span><span class="sxs-lookup"><span data-stu-id="f8488-104">This procedure walks through creating a new product in the retail product hierarchy.</span></span> <span data-ttu-id="f8488-105">Demonstrasjonsdataselskapet USRT er brukt til å opprette denne oppgaven, og oppgaven er ment for varehandelsledere og produktdesignere.</span><span class="sxs-lookup"><span data-stu-id="f8488-105">The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.</span></span>
 
-1. Gå til Detaljhandel og handel > .. > Produkter etter kategori.
-2. Klikk Ny.
-3. I Produktnavn-feltet skriver du inn et navn på det nye produktet.
-4. Klikk rullegardinknappen i feltet Detaljhandelskategori for å åpne oppslaget.
-5. Utvid ALL (ALL)\Fashion (Fashion) i treet.
-6. Velg ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories) i treet.
-7. Klikk OK.
-8. Skriv inn en verdi i feltet Produktnummer.
-9. Klikk OK.
+1. <span data-ttu-id="f8488-106">Gå til Detaljhandel og handel > ..</span><span class="sxs-lookup"><span data-stu-id="f8488-106">Go to Retail and commerce > ..</span></span> <span data-ttu-id="f8488-107">> Produkter etter kategori.</span><span class="sxs-lookup"><span data-stu-id="f8488-107">> Products by category.</span></span>
+2. <span data-ttu-id="f8488-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="f8488-108">Click New.</span></span>
+3. <span data-ttu-id="f8488-109">I Produktnavn-feltet skriver du inn et navn på det nye produktet.</span><span class="sxs-lookup"><span data-stu-id="f8488-109">In the Product name field, type a name for your product..</span></span>
+4. <span data-ttu-id="f8488-110">Klikk rullegardinknappen i feltet Detaljhandelskategori for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="f8488-110">In the Retail category field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="f8488-111">Utvid ALL (ALL)\Fashion (Fashion) i treet.</span><span class="sxs-lookup"><span data-stu-id="f8488-111">In the tree, expand 'ALL (ALL)\Fashion (Fashion)'.</span></span>
+6. <span data-ttu-id="f8488-112">Velg ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories) i treet.</span><span class="sxs-lookup"><span data-stu-id="f8488-112">In the tree, select 'ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories)'.</span></span>
+7. <span data-ttu-id="f8488-113">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="f8488-113">Click OK.</span></span>
+8. <span data-ttu-id="f8488-114">Skriv inn en verdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="f8488-114">In the Product number field, type a value.</span></span>
+9. <span data-ttu-id="f8488-115">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="f8488-115">Click OK.</span></span>
 
 

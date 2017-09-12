@@ -22,84 +22,84 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
+# <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="e1309-103">Sende ordrer som direkte leveringer</span><span class="sxs-lookup"><span data-stu-id="e1309-103">Ship orders as direct deliveries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter en direktelevering for en salgsordre. Du bruker direktelevering når du vil levere varer til kunden direkte fra leverandøren, i stedet for å levere dem først til ditt eget lager. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. For å fullføre den andre underordnede oppgaven "Opprette direkte leveringer fra arbeidsbenken" kontroller at varen du velger i salgsordren, har en standard leverandør angitt på hurtigfanen Kjøp i produktstandarden Frigitt.
+<span data-ttu-id="e1309-104">Denne fremgangsmåten viser hvordan du oppretter en direktelevering for en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="e1309-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="e1309-105">Du bruker direktelevering når du vil levere varer til kunden direkte fra leverandøren, i stedet for å levere dem først til ditt eget lager.</span><span class="sxs-lookup"><span data-stu-id="e1309-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="e1309-106">Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="e1309-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="e1309-107">For å fullføre den andre underordnede oppgaven "Opprette direkte leveringer fra arbeidsbenken" kontroller at varen du velger i salgsordren, har en standard leverandør angitt på hurtigfanen Kjøp i produktstandarden Frigitt.</span><span class="sxs-lookup"><span data-stu-id="e1309-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 
 
-## <a name="set-an-individual-order-for-direct-delivery"></a>Angi en enkelt ordre for direkte levering
-1. Gå til Alle salgsordrer.
-2. Klikk Ny.
-3. Angi eller velg en verdi i Kundekonto-feltet.
-    * Hvis du bruker USMF, kan du velge kontoen US-001.  
-4. Klikk OK.
-5. Angi eller velg en verdi i Varenummer-feltet.
-    * Hvis du bruker USMF, kan du velge vare 'T0020'.  
-6. Klikk Lagre.
-7. Klikk Salgsordre i handlingsruten.
-8. Velg Direktelevering.
-    * Opprett levering-siden viser alle de åpne salgsordrelinjene som kopiert fra salgsordren. Du kan se gjennom ordredetaljene, og om nødvendig kan du endre detaljer som for eksempel innkjøpsantall og prisvilkår før du oppretter den direkte leveringen.  
-9. Velg Ja i feltet Inkluder alt.
-    * Hvis du vil generere en direkte levering for bare et delsett av salgsordrelinjene, velger du disse individuelt.  
-    * Leverandørkonto-feltet kan eller kan ikke allerede være utfylt med et leverandørnummer. Hvis standardleverandøren er definert for produktet (på den tilknyttede varedekningen), vil denne leverandøren kopieres til linjen. Hvis ikke, må du angi en leverandør manuelt. I dette eksemplet velger vi en ny leverandør i neste trinn, selv om en allerede fylt ut.   
-10. Angi eller velg en verdi i Leverandørkonto-feltet.
-    * Hvis du bruker USMF, kan du velge kontoen 1001.  
-11. Klikk OK.
-    * Meldingen forteller deg at bestillingen er nå blitt opprettet.   
-12. Vis seksjonen Linjedetaljer.
-13. Velg kategorien Levering.
-    * Feltet Direktelevering er nå satt til Ja.  
-    * Status for direkte levering viser bestillingen som er opprettet.   
-14. Klikk Generelt i handlingsruten.
-15. Velg Relaterte ordrer.
-16. Klikk for å følge koblingen i feltet Bestilling.
-17. Vis seksjonen Linjedetaljer.
-18. Klikk kategorien Adresse.
-    * Legg merke til at leveringsadressen for denne bestillingslinjen er kundens leveringsadresse og ikke firmaets adresse.  
-    * Hvis du endrer leveringsadressen på bestillingslinjen eller den opprinnelige salgsordrelinjen, oppdateres adressen på den tilsvarende ordrelinjen automatisk.  
-19. Velg kategorien Levering.
-    * Som salgsordrelinjen settes også den tilknyttede bestillingslinjetypen til Direktelevering.  
-    * Leveringsdato og bekreftet leveringsdato for bestillingslinjen er satt til henholdsvis ønsket leveringsdato og bekreftet leveringsdato for den opprinnelige salgsordrelinjen.   
-    * Hvis du oppdaterer noen av disse datoene på bestillingslinjen eller salgslinjen, oppdateres datoene i den tilhørende ordren automatisk.     
-    * Bestillingen som er angitt for å levere varene direkte til kunden, er koblet til den opprinnelige salgsordren ved hjelp av en spesiell tilknytning. Denne tilknytningen bruker regelen om at følgeseddeloppdateringen av salgsordren ikke kan utføres fra selve ordren og må utføres ved hjelp av bestillingen. Kundefakturering må imidlertid utføres fra salgsordren.  
-20. Klikk Kjøp i handlingsruten.
-21. Klikk Bekreftelse.
-22. Klikk OK.
-23. Klikk Motta i handlingsruten.
-24. Klikk Produktkvittering.
-25. Skriv inn en verdi i feltet Produktkvittering.
-26. Klikk OK.
-27. Klikk Generelt i handlingsruten.
-28. Velg Relaterte ordrer.
-29. Merk den valgte raden i listen.
-    * Når bestillingen er oppdatert som mottatt, eller med andre ord, når leverandøren har sendt varene til kundens adresse, oppdateres statusen for den opprinnelige salgsordren automatisk til Levert.  
-    * Salgsordren kan nå faktureres.    
-30. Klikk OK.
-31. Lukk siden.
-32. Klikk OK.
+## <a name="set-an-individual-order-for-direct-delivery"></a><span data-ttu-id="e1309-108">Angi en enkelt ordre for direkte levering</span><span class="sxs-lookup"><span data-stu-id="e1309-108">Set an individual order for direct delivery</span></span>
+1. <span data-ttu-id="e1309-109">Gå til Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="e1309-109">Go to All sales orders.</span></span>
+2. <span data-ttu-id="e1309-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e1309-110">Click New.</span></span>
+3. <span data-ttu-id="e1309-111">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="e1309-111">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="e1309-112">Hvis du bruker USMF, kan du velge kontoen US-001.</span><span class="sxs-lookup"><span data-stu-id="e1309-112">If you’re using USMF, you can select account US-001.</span></span>  
+4. <span data-ttu-id="e1309-113">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-113">Click OK.</span></span>
+5. <span data-ttu-id="e1309-114">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="e1309-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="e1309-115">Hvis du bruker USMF, kan du velge vare 'T0020'.</span><span class="sxs-lookup"><span data-stu-id="e1309-115">If you’re using USMF, you can select item T0020.</span></span>  
+6. <span data-ttu-id="e1309-116">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="e1309-116">Click Save.</span></span>
+7. <span data-ttu-id="e1309-117">Klikk Salgsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="e1309-117">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="e1309-118">Velg Direktelevering.</span><span class="sxs-lookup"><span data-stu-id="e1309-118">Click Direct delivery.</span></span>
+    * <span data-ttu-id="e1309-119">Opprett levering-siden viser alle de åpne salgsordrelinjene som kopiert fra salgsordren.</span><span class="sxs-lookup"><span data-stu-id="e1309-119">The Create delivery page lists all the open sales order lines as copied from the sales order.</span></span> <span data-ttu-id="e1309-120">Du kan se gjennom ordredetaljene, og om nødvendig kan du endre detaljer som for eksempel innkjøpsantall og prisvilkår før du oppretter den direkte leveringen.</span><span class="sxs-lookup"><span data-stu-id="e1309-120">You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.</span></span>  
+9. <span data-ttu-id="e1309-121">Velg Ja i feltet Inkluder alt.</span><span class="sxs-lookup"><span data-stu-id="e1309-121">Select Yes in the Include all field.</span></span>
+    * <span data-ttu-id="e1309-122">Hvis du vil generere en direkte levering for bare et delsett av salgsordrelinjene, velger du disse individuelt.</span><span class="sxs-lookup"><span data-stu-id="e1309-122">If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.</span></span>  
+    * <span data-ttu-id="e1309-123">Leverandørkonto-feltet kan eller kan ikke allerede være utfylt med et leverandørnummer.</span><span class="sxs-lookup"><span data-stu-id="e1309-123">The Vendor account field may or may not already be populated with a vendor number.</span></span> <span data-ttu-id="e1309-124">Hvis standardleverandøren er definert for produktet (på den tilknyttede varedekningen), vil denne leverandøren kopieres til linjen.</span><span class="sxs-lookup"><span data-stu-id="e1309-124">If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line.</span></span> <span data-ttu-id="e1309-125">Hvis ikke, må du angi en leverandør manuelt.</span><span class="sxs-lookup"><span data-stu-id="e1309-125">Otherwise, you must enter a vendor manually.</span></span> <span data-ttu-id="e1309-126">I dette eksemplet velger vi en ny leverandør i neste trinn, selv om en allerede fylt ut.</span><span class="sxs-lookup"><span data-stu-id="e1309-126">In this example, we’ll select a new vendor in the next step, even if one is already populated.</span></span>   
+10. <span data-ttu-id="e1309-127">Angi eller velg en verdi i Leverandørkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="e1309-127">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="e1309-128">Hvis du bruker USMF, kan du velge kontoen 1001.</span><span class="sxs-lookup"><span data-stu-id="e1309-128">If you’re using USMF, you can select account 1001.</span></span>  
+11. <span data-ttu-id="e1309-129">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-129">Click OK.</span></span>
+    * <span data-ttu-id="e1309-130">Meldingen forteller deg at bestillingen er nå blitt opprettet.</span><span class="sxs-lookup"><span data-stu-id="e1309-130">The message informs you that the purchase order has now been created.</span></span>   
+12. <span data-ttu-id="e1309-131">Vis seksjonen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="e1309-131">Expand the Line details section.</span></span>
+13. <span data-ttu-id="e1309-132">Velg kategorien Levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-132">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="e1309-133">Feltet Direktelevering er nå satt til Ja.</span><span class="sxs-lookup"><span data-stu-id="e1309-133">The Direct delivery field is now set to Yes.</span></span>  
+    * <span data-ttu-id="e1309-134">Status for direkte levering viser bestillingen som er opprettet.</span><span class="sxs-lookup"><span data-stu-id="e1309-134">The Direct delivery status shows the Purchase order created.</span></span>   
+14. <span data-ttu-id="e1309-135">Klikk Generelt i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="e1309-135">On the Action Pane, click General.</span></span>
+15. <span data-ttu-id="e1309-136">Velg Relaterte ordrer.</span><span class="sxs-lookup"><span data-stu-id="e1309-136">Click Related orders.</span></span>
+16. <span data-ttu-id="e1309-137">Klikk for å følge koblingen i feltet Bestilling.</span><span class="sxs-lookup"><span data-stu-id="e1309-137">Click to follow the link in the Purchase order field.</span></span>
+17. <span data-ttu-id="e1309-138">Vis seksjonen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="e1309-138">Expand the Line details section.</span></span>
+18. <span data-ttu-id="e1309-139">Klikk kategorien Adresse.</span><span class="sxs-lookup"><span data-stu-id="e1309-139">Click the Address tab.</span></span>
+    * <span data-ttu-id="e1309-140">Legg merke til at leveringsadressen for denne bestillingslinjen er kundens leveringsadresse og ikke firmaets adresse.</span><span class="sxs-lookup"><span data-stu-id="e1309-140">Note that the delivery address for this purchase order line is the customer's delivery address and not your company's address.</span></span>  
+    * <span data-ttu-id="e1309-141">Hvis du endrer leveringsadressen på bestillingslinjen eller den opprinnelige salgsordrelinjen, oppdateres adressen på den tilsvarende ordrelinjen automatisk.</span><span class="sxs-lookup"><span data-stu-id="e1309-141">If you change the delivery address on either the purchase order line or the originating sales order line, the address on the corresponding order line will be automatically updated.</span></span>  
+19. <span data-ttu-id="e1309-142">Velg kategorien Levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-142">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="e1309-143">Som salgsordrelinjen settes også den tilknyttede bestillingslinjetypen til Direktelevering.</span><span class="sxs-lookup"><span data-stu-id="e1309-143">Like the sales order line, the associated purchase order line type is also set to Direct delivery.</span></span>  
+    * <span data-ttu-id="e1309-144">Leveringsdato og bekreftet leveringsdato for bestillingslinjen er satt til henholdsvis ønsket leveringsdato og bekreftet leveringsdato for den opprinnelige salgsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="e1309-144">The purchase order line's Delivery  date and the Confirmed delivery date are set to the Requested receipt date and Confirmed receipt date of the originating sales order line respectively.</span></span>   
+    * <span data-ttu-id="e1309-145">Hvis du oppdaterer noen av disse datoene på bestillingslinjen eller salgslinjen, oppdateres datoene i den tilhørende ordren automatisk.</span><span class="sxs-lookup"><span data-stu-id="e1309-145">If you update any of these dates on either the purchase line or the sales line, the dates on the corresponding order will be automatically updated.</span></span>     
+    * <span data-ttu-id="e1309-146">Bestillingen som er angitt for å levere varene direkte til kunden, er koblet til den opprinnelige salgsordren ved hjelp av en spesiell tilknytning.</span><span class="sxs-lookup"><span data-stu-id="e1309-146">The purchase order that is set to deliver goods directly the customer is linked to the originating sales order by means of a special association.</span></span> <span data-ttu-id="e1309-147">Denne tilknytningen bruker regelen om at følgeseddeloppdateringen av salgsordren ikke kan utføres fra selve ordren og må utføres ved hjelp av bestillingen.</span><span class="sxs-lookup"><span data-stu-id="e1309-147">This association imposes the rule that the packing slip update of the sales order can't be done from the sales order itself and must be done by using the purchase order.</span></span> <span data-ttu-id="e1309-148">Kundefakturering må imidlertid utføres fra salgsordren.</span><span class="sxs-lookup"><span data-stu-id="e1309-148">However, customer invoicing must be carried out from the sales order.</span></span>  
+20. <span data-ttu-id="e1309-149">Klikk Kjøp i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="e1309-149">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="e1309-150">Klikk Bekreftelse.</span><span class="sxs-lookup"><span data-stu-id="e1309-150">Click Confirmation.</span></span>
+22. <span data-ttu-id="e1309-151">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-151">Click OK.</span></span>
+23. <span data-ttu-id="e1309-152">Klikk Motta i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="e1309-152">On the Action Pane, click Receive.</span></span>
+24. <span data-ttu-id="e1309-153">Klikk Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="e1309-153">Click Product receipt.</span></span>
+25. <span data-ttu-id="e1309-154">Skriv inn en verdi i feltet Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="e1309-154">In the Product receipt field, type a value.</span></span>
+26. <span data-ttu-id="e1309-155">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-155">Click OK.</span></span>
+27. <span data-ttu-id="e1309-156">Klikk Generelt i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="e1309-156">On the Action Pane, click General.</span></span>
+28. <span data-ttu-id="e1309-157">Velg Relaterte ordrer.</span><span class="sxs-lookup"><span data-stu-id="e1309-157">Click Related orders.</span></span>
+29. <span data-ttu-id="e1309-158">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e1309-158">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e1309-159">Når bestillingen er oppdatert som mottatt, eller med andre ord, når leverandøren har sendt varene til kundens adresse, oppdateres statusen for den opprinnelige salgsordren automatisk til Levert.</span><span class="sxs-lookup"><span data-stu-id="e1309-159">After the purchase order has been updated as received, or in other words, after the vendor has shipped the goods to your customer's address, the status of the originating sales order is automatically updated to Delivered.</span></span>  
+    * <span data-ttu-id="e1309-160">Salgsordren kan nå faktureres.</span><span class="sxs-lookup"><span data-stu-id="e1309-160">The sales order can now be invoiced.</span></span>    
+30. <span data-ttu-id="e1309-161">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-161">Click OK.</span></span>
+31. <span data-ttu-id="e1309-162">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-162">Close the page.</span></span>
+32. <span data-ttu-id="e1309-163">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-163">Click OK.</span></span>
 
-## <a name="create-direct-deliveries-from-the-workbench"></a>Opprette direkte leveringer fra arbeidsbenk
-1. Lukk siden.
-2. Lukk siden.
-3. Gå til Alle salgsordrer.
-4. Klikk Ny.
-5. Angi eller velg en verdi i Kundekonto-feltet.
-6. Klikk OK.
-7. Angi eller velg en verdi i Varenummer-feltet.
-8. Vis seksjonen Linjedetaljer.
-9. Velg kategorien Levering.
-    * I stedet for å opprette en direkte levering som en del av salgsordrebehandlingen som i forrige prosedyre, kan du velge å overføre denne oppgaven til en innkjøpsansvarlig. Hvis du vil ta med salgsordrelinjen i håndteringsprosessen for direkte levering, må du merke linjen for direkte levering.  
-10. Velg Ja i feltet Direktelevering.
-    *   Hvis varen er allerede definert for direkte levering som standard, vil feltet automatisk bli satt til Ja i ordrelinjeregistreringen. Du kan definere et element for direkte levering i standarden for det frigitte endelige produktet ved å angi alternativet Direktelevering til Ja og velge et standardlager for direkte levering.  
-    * Fordi bestillingen ennå ikke er opprettet, settes statusen for direkte levering til Skal leveres direkte.   
-11. Lukk siden.
-12. Lukk siden.
-13. Gå til Direktelevering.
-    * Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene. I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i kategoriene Bekreftelse og Levering.   
-14. Klikk Opprett direkte levering.
-15. Klikk kategorien Bekreftelse.
-    * Når du har opprettet en ordre for direkte levering, flyttes den automatisk til kategorien Bekreftelse. Du kan velge å bekrefte ordren direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til kategorien Levering, som kan du registrere mottaket fra.  
+## <a name="create-direct-deliveries-from-the-workbench"></a><span data-ttu-id="e1309-164">Opprette direkte leveringer fra arbeidsbenk</span><span class="sxs-lookup"><span data-stu-id="e1309-164">Create direct deliveries from the workbench</span></span>
+1. <span data-ttu-id="e1309-165">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-165">Close the page.</span></span>
+2. <span data-ttu-id="e1309-166">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-166">Close the page.</span></span>
+3. <span data-ttu-id="e1309-167">Gå til Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="e1309-167">Go to All sales orders.</span></span>
+4. <span data-ttu-id="e1309-168">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e1309-168">Click New.</span></span>
+5. <span data-ttu-id="e1309-169">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="e1309-169">In the Customer account field, enter or select a value.</span></span>
+6. <span data-ttu-id="e1309-170">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e1309-170">Click OK.</span></span>
+7. <span data-ttu-id="e1309-171">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="e1309-171">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="e1309-172">Vis seksjonen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="e1309-172">Expand the Line details section.</span></span>
+9. <span data-ttu-id="e1309-173">Velg kategorien Levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-173">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="e1309-174">I stedet for å opprette en direkte levering som en del av salgsordrebehandlingen som i forrige prosedyre, kan du velge å overføre denne oppgaven til en innkjøpsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="e1309-174">Instead of creating a direct delivery as part of the sales order processing as in the previous procedure, you can choose to hand over this task to a purchasing professional.</span></span> <span data-ttu-id="e1309-175">Hvis du vil ta med salgsordrelinjen i håndteringsprosessen for direkte levering, må du merke linjen for direkte levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-175">To include the sales order line in the direct delivery handling process, you must mark the line for direct delivery.</span></span>  
+10. <span data-ttu-id="e1309-176">Velg Ja i feltet Direktelevering.</span><span class="sxs-lookup"><span data-stu-id="e1309-176">Select Yes in the Direct delivery field.</span></span>
+    *   <span data-ttu-id="e1309-177">Hvis varen er allerede definert for direkte levering som standard, vil feltet automatisk bli satt til Ja i ordrelinjeregistreringen.</span><span class="sxs-lookup"><span data-stu-id="e1309-177">If the item has already been set up for direct delivery by default, the field will automatically be set to Yes at the order line entry.</span></span> <span data-ttu-id="e1309-178">Du kan definere et element for direkte levering i standarden for det frigitte endelige produktet ved å angi alternativet Direktelevering til Ja og velge et standardlager for direkte levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-178">You can set up an item for direct delivery on the Released product's master by setting the Direct delivery option to Yes and selecting a default Direct delivery warehouse.</span></span>  
+    * <span data-ttu-id="e1309-179">Fordi bestillingen ennå ikke er opprettet, settes statusen for direkte levering til Skal leveres direkte.</span><span class="sxs-lookup"><span data-stu-id="e1309-179">Because the purchase order has not yet been created, the Direct delivery status is set to To be direct delivered.</span></span>   
+11. <span data-ttu-id="e1309-180">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-180">Close the page.</span></span>
+12. <span data-ttu-id="e1309-181">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-181">Close the page.</span></span>
+13. <span data-ttu-id="e1309-182">Gå til Direktelevering.</span><span class="sxs-lookup"><span data-stu-id="e1309-182">Go to Direct delivery.</span></span>
+    * <span data-ttu-id="e1309-183">Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene.</span><span class="sxs-lookup"><span data-stu-id="e1309-183">The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders.</span></span> <span data-ttu-id="e1309-184">I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i kategoriene Bekreftelse og Levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-184">In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.</span></span>   
+14. <span data-ttu-id="e1309-185">Klikk Opprett direkte levering.</span><span class="sxs-lookup"><span data-stu-id="e1309-185">Click Create direct delivery.</span></span>
+15. <span data-ttu-id="e1309-186">Klikk kategorien Bekreftelse.</span><span class="sxs-lookup"><span data-stu-id="e1309-186">Click the Confirmation tab.</span></span>
+    * <span data-ttu-id="e1309-187">Når du har opprettet en ordre for direkte levering, flyttes den automatisk til kategorien Bekreftelse.</span><span class="sxs-lookup"><span data-stu-id="e1309-187">After you have created a direct delivery order, it automatically moved to the Confirmation tab.</span></span> <span data-ttu-id="e1309-188">Du kan velge å bekrefte ordren direkte fra denne siden.</span><span class="sxs-lookup"><span data-stu-id="e1309-188">You can choose to confirm the order directly from this page.</span></span> <span data-ttu-id="e1309-189">Når bestillingen er bekreftet, flyttes den automatisk til kategorien Levering, som kan du registrere mottaket fra.</span><span class="sxs-lookup"><span data-stu-id="e1309-189">When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.</span></span>  
 
 

@@ -19,113 +19,113 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fb4a7c21ecc46d83f35b12ac5552dcecbeb8bf0f
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 004f3f24ec410d9f0e7d1e7264ec2730b9467410
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="posting-definition-examples"></a>Eksempler på posteringsdefinisjoner
+# <a name="posting-definition-examples"></a><span data-ttu-id="4dc55-103">Eksempler på posteringsdefinisjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-103">Posting definition examples</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.
+<span data-ttu-id="4dc55-104">Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.</span><span class="sxs-lookup"><span data-stu-id="4dc55-104">This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.</span></span>
 
-Før du leser dette emnet, bør du være kjent med posteringsdefinisjoner og posteringsdefinisjoner for transaksjon. Hvis du vil ha informasjon, se [Posteringsdefinisjoner](posting-definitions.md). Eksemplene nedenfor kan settes opp på siden **Posteringsdefinisjoner**. Hvert eksempel inneholder disse delene:
+<span data-ttu-id="4dc55-105">Før du leser dette emnet, bør du være kjent med posteringsdefinisjoner og posteringsdefinisjoner for transaksjon.</span><span class="sxs-lookup"><span data-stu-id="4dc55-105">Before you read this topic, you should be familiar with posting definitions and transaction posting definitions.</span></span> <span data-ttu-id="4dc55-106">Hvis du vil ha informasjon, se [Posteringsdefinisjoner](posting-definitions.md).</span><span class="sxs-lookup"><span data-stu-id="4dc55-106">For information, see [Posting definitions](posting-definitions.md).</span></span> <span data-ttu-id="4dc55-107">Eksemplene nedenfor kan settes opp på siden **Posteringsdefinisjoner**.</span><span class="sxs-lookup"><span data-stu-id="4dc55-107">The following examples can be set up on the **Posting definitions** page.</span></span> <span data-ttu-id="4dc55-108">Hvert eksempel inneholder disse delene:</span><span class="sxs-lookup"><span data-stu-id="4dc55-108">Each example contains these sections:</span></span>
 
--   Posteringsdefinisjon – samsvarskriterier
--   Posteringsdefinisjon – genererte oppføringer
--   Transaksjoner med kontoer, dimensjonsverdiene og beløp
--   Finansoppføringer som er generert fra posteringsdefinisjonen
+-   <span data-ttu-id="4dc55-109">Posteringsdefinisjon – samsvarskriterier</span><span class="sxs-lookup"><span data-stu-id="4dc55-109">Posting definition – Match criteria</span></span>
+-   <span data-ttu-id="4dc55-110">Posteringsdefinisjon – genererte oppføringer</span><span class="sxs-lookup"><span data-stu-id="4dc55-110">Posting definition – Generated entries</span></span>
+-   <span data-ttu-id="4dc55-111">Transaksjoner med kontoer, dimensjonsverdiene og beløp</span><span class="sxs-lookup"><span data-stu-id="4dc55-111">Transactions with the accounts, dimension values, and amounts</span></span>
+-   <span data-ttu-id="4dc55-112">Finansoppføringer som er generert fra posteringsdefinisjonen</span><span class="sxs-lookup"><span data-stu-id="4dc55-112">Ledger entries generated from the posting definition</span></span>
 
-Når et samsvar oppstår mellom kontoer og dimensjonsverdier i **Samsvarskriterier**-ruten for posteringsdefinisjonen og kontoene og dimensjonsverdiene for transaksjonen, genereres finansoppføringer basert på **Genererte oppføringer**-ruten for posteringsdefinisjonen. 
+<span data-ttu-id="4dc55-113">Når et samsvar oppstår mellom kontoer og dimensjonsverdier i **Samsvarskriterier**-ruten for posteringsdefinisjonen og kontoene og dimensjonsverdiene for transaksjonen, genereres finansoppføringer basert på **Genererte oppføringer**-ruten for posteringsdefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-113">When a match occurs between the accounts and dimension values in the **Match criteria** pane for the posting definition and the accounts and dimension values on the transaction, ledger entries are generated based on the **Generated entries** pane for the posting definition.</span></span> 
 > [!NOTE]
-> Bruk siden **Definisjoner for transaksjonspostering** for å knytte en posteringsdefinisjon til en bestemt transaksjonstype. Når du har knyttet en posteringsdefinisjon til en transaksjonstype og valgt**Bruk posteringsdefinisjoner** på siden **Parametere for økonomimodul**, må alle transaksjoner med den valgte transaksjonstypen bruke posteringsdefinisjoner.
+> <span data-ttu-id="4dc55-114">Bruk siden **Definisjoner for transaksjonspostering** for å knytte en posteringsdefinisjon til en bestemt transaksjonstype.</span><span class="sxs-lookup"><span data-stu-id="4dc55-114">To associate a posting definition with a specific transaction type, use the **Transaction posting definitions** page.</span></span> <span data-ttu-id="4dc55-115">Når du har knyttet en posteringsdefinisjon til en transaksjonstype og valgt**Bruk posteringsdefinisjoner** på siden **Parametere for økonomimodul**, må alle transaksjoner med den valgte transaksjonstypen bruke posteringsdefinisjoner.</span><span class="sxs-lookup"><span data-stu-id="4dc55-115">After you associate a posting definition with a transaction type and select **Use posting definitions** on the **General ledger parameters** page, all transactions of the selected transaction type must use posting definitions.</span></span>
 
-## <a name="example-purchase-order-encumbrances"></a>Eksempel: bestillingsdisposisjoner
-Når du aktiverer disposisjonsbehandling ved å velge **Aktiver disposisjonsprosess** på **Økonomiparametere**, må posteringsdefinisjoner brukes til å registrere disposisjoner i økonomimodulen for alle kontoer som skal reserveres. I de fleste tilfeller reserveres alle utgiftskontoer i balansen. 
+## <a name="example-purchase-order-encumbrances"></a><span data-ttu-id="4dc55-116">Eksempel: bestillingsdisposisjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-116">Example: Purchase order encumbrances</span></span>
+<span data-ttu-id="4dc55-117">Når du aktiverer disposisjonsbehandling ved å velge **Aktiver disposisjonsprosess** på **Økonomiparametere**, må posteringsdefinisjoner brukes til å registrere disposisjoner i økonomimodulen for alle kontoer som skal reserveres.</span><span class="sxs-lookup"><span data-stu-id="4dc55-117">When you enable encumbrance processing by selecting **Enable encumbrance process** on the **General ledger parameters** page, posting definitions must be used to record encumbrances to the general ledger for any accounts that should be reserved.</span></span> <span data-ttu-id="4dc55-118">I de fleste tilfeller reserveres alle utgiftskontoer i balansen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-118">In most cases, all expense accounts are reserved on the balance sheet.</span></span> 
 
-Posteringsdefinisjoner for disposisjoner defineres for **Innkjøp**-modulen på **Posteringsdefinisjoner**-siden. Deretter, i **Innkjøp**-området på siden **Definisjoner for transaksjonspostering**, kan du velge **Bestilling**-transaksjonstypen for å knytte posteringsdefinisjonen til bestillinger. 
+<span data-ttu-id="4dc55-119">Posteringsdefinisjoner for disposisjoner defineres for **Innkjøp**-modulen på **Posteringsdefinisjoner**-siden.</span><span class="sxs-lookup"><span data-stu-id="4dc55-119">Posting definitions for encumbrances are set up for the **Purchasing** module on the **Posting definitions** page.</span></span> <span data-ttu-id="4dc55-120">Deretter, i **Innkjøp**-området på siden **Definisjoner for transaksjonspostering**, kan du velge **Bestilling**-transaksjonstypen for å knytte posteringsdefinisjonen til bestillinger.</span><span class="sxs-lookup"><span data-stu-id="4dc55-120">Then, in the **Purchasing** area of the **Transaction posting definitions** page, you can select the **Purchase order** transaction type to associate the posting definition with purchase orders.</span></span> 
 
-Alle bilagstransaksjoner for bestillingsdisposisjoner må være i balanse (det vil si debet må være lik kredit) i hver unike dimensjon på et bilag.
+<span data-ttu-id="4dc55-121">Alle bilagstransaksjoner for bestillingsdisposisjoner må være i balanse (det vil si debet må være lik kredit) i hver unike dimensjon på et bilag.</span><span class="sxs-lookup"><span data-stu-id="4dc55-121">All voucher transactions for purchase order encumbrances must balance (that is, debits must equal credits) in each unique dimension on a voucher.</span></span>
 
-### <a name="posting-definition--match-criteria"></a>Posteringsdefinisjon – samsvarskriterier
+### <a name="posting-definition--match-criteria"></a><span data-ttu-id="4dc55-122">Posteringsdefinisjon – samsvarskriterier</span><span class="sxs-lookup"><span data-stu-id="4dc55-122">Posting definition – Match criteria</span></span>
 
-| Kontostruktur       | Kontonummer for samsvar | Prioritet |
+| <span data-ttu-id="4dc55-123">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-123">Account structure</span></span>       | <span data-ttu-id="4dc55-124">Kontonummer for samsvar</span><span class="sxs-lookup"><span data-stu-id="4dc55-124">Match account number</span></span> | <span data-ttu-id="4dc55-125">Prioritet</span><span class="sxs-lookup"><span data-stu-id="4dc55-125">Priority</span></span> |
 |-------------------------|----------------------|----------|
-| Kontostruktur – resultat | \*                   | 1        |
+| <span data-ttu-id="4dc55-126">Kontostruktur – resultat</span><span class="sxs-lookup"><span data-stu-id="4dc55-126">Account Structure - P&L</span></span> | \*                   | <span data-ttu-id="4dc55-127">1</span><span class="sxs-lookup"><span data-stu-id="4dc55-127">1</span></span>        |
 
-* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+<span data-ttu-id="4dc55-128">* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-128">*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.</span></span>
 
-### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
+### <a name="posting-definition--generated-entries"></a><span data-ttu-id="4dc55-129">Posteringsdefinisjon – genererte oppføringer</span><span class="sxs-lookup"><span data-stu-id="4dc55-129">Posting definition – Generated entries</span></span>
 
-| Kontostruktur | Generert kontonummer                    | Generert debet/kreditt |
+| <span data-ttu-id="4dc55-130">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-130">Account structure</span></span> | <span data-ttu-id="4dc55-131">Generert kontonummer</span><span class="sxs-lookup"><span data-stu-id="4dc55-131">Generated account number</span></span>                    | <span data-ttu-id="4dc55-132">Generert debet/kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-132">Generated debit/credit</span></span> |
 |-------------------|---------------------------------------------|------------------------|
-| Saldo           | 300143 - - (disposisjonskonto)             | Lik                   |
-| Saldo           | 300144 -- (Reserver for disposisjonskonto) | Balanse              |
+| <span data-ttu-id="4dc55-133">Saldo</span><span class="sxs-lookup"><span data-stu-id="4dc55-133">Balance</span></span>           | <span data-ttu-id="4dc55-134">300143 - - (disposisjonskonto)</span><span class="sxs-lookup"><span data-stu-id="4dc55-134">300143 - -(Encumbrance account)</span></span>             | <span data-ttu-id="4dc55-135">Lik</span><span class="sxs-lookup"><span data-stu-id="4dc55-135">Same</span></span>                   |
+| <span data-ttu-id="4dc55-136">Saldo</span><span class="sxs-lookup"><span data-stu-id="4dc55-136">Balance</span></span>           | <span data-ttu-id="4dc55-137">300144 -- (Reserver for disposisjonskonto)</span><span class="sxs-lookup"><span data-stu-id="4dc55-137">300144 - -(Reserve for encumbrance account)</span></span> | <span data-ttu-id="4dc55-138">Balanse</span><span class="sxs-lookup"><span data-stu-id="4dc55-138">Balancing</span></span>              |
 
-### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a>Transaksjoner med kontoer, dimensjonsverdiene og beløp
+### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a><span data-ttu-id="4dc55-139">Transaksjoner med kontoer, dimensjonsverdiene og beløp</span><span class="sxs-lookup"><span data-stu-id="4dc55-139">Transactions with the accounts, dimension values, and amounts</span></span>
 
-Kontoene og dimensjonsverdiene kommer fra regnskapsdistribusjonene du angir for en bestillingslinje, eller fra kontoer og dimensjoner som genereres automatisk basert på standardinnstillingene for leverandører, varer, kategorier og maler for dimensjonen.
+<span data-ttu-id="4dc55-140">Kontoene og dimensjonsverdiene kommer fra regnskapsdistribusjonene du angir for en bestillingslinje, eller fra kontoer og dimensjoner som genereres automatisk basert på standardinnstillingene for leverandører, varer, kategorier og maler for dimensjonen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-140">The accounts and dimension values come either from the accounting distributions that you enter for a purchase order line, or from the accounts and dimensions that are automatically generated based on the default settings for vendors, items, categories, and dimension templates.</span></span>
 
-| Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
+| <span data-ttu-id="4dc55-141">Konto + dimensjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-141">Account + dimensions</span></span>           | <span data-ttu-id="4dc55-142">Debet</span><span class="sxs-lookup"><span data-stu-id="4dc55-142">Debit</span></span>  | <span data-ttu-id="4dc55-143">Kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-143">Credit</span></span> | <span data-ttu-id="4dc55-144">Kommentar</span><span class="sxs-lookup"><span data-stu-id="4dc55-144">Comment</span></span> |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
+| <span data-ttu-id="4dc55-145">606400-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-145">606400-OU\_1-OU\_3566-Training</span></span> | <span data-ttu-id="4dc55-146">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-146">250.00</span></span> |        |         |
 
-### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansoppføringer som er generert fra posteringsdefinisjonen
+### <a name="ledger-entries-generated-from-the-posting-definition"></a><span data-ttu-id="4dc55-147">Finansoppføringer som er generert fra posteringsdefinisjonen</span><span class="sxs-lookup"><span data-stu-id="4dc55-147">Ledger entries generated from the posting definition</span></span>
 
-Genererte finansoppføringer opprettes for å registrere disposisjonene.
+<span data-ttu-id="4dc55-148">Genererte finansoppføringer opprettes for å registrere disposisjonene.</span><span class="sxs-lookup"><span data-stu-id="4dc55-148">Generated ledger entries are created to record the encumbrances.</span></span>
 
-| Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
+| <span data-ttu-id="4dc55-149">Konto + dimensjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-149">Account + dimensions</span></span>           | <span data-ttu-id="4dc55-150">Debet</span><span class="sxs-lookup"><span data-stu-id="4dc55-150">Debit</span></span>  | <span data-ttu-id="4dc55-151">Kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-151">Credit</span></span> | <span data-ttu-id="4dc55-152">Kommentar</span><span class="sxs-lookup"><span data-stu-id="4dc55-152">Comment</span></span> |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
-| 300144-OU\_1-OU\_3566-opplæring |        | 250,00 |         |
+| <span data-ttu-id="4dc55-153">300143-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-153">300143-OU\_1-OU\_3566-Training</span></span> | <span data-ttu-id="4dc55-154">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-154">250.00</span></span> |        |         |
+| <span data-ttu-id="4dc55-155">300144-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-155">300144-OU\_1-OU\_3566-Training</span></span> |        | <span data-ttu-id="4dc55-156">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-156">250.00</span></span> |         |
 
-I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Når 606500-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor genererte oppføringer for kontoene som er definert i **Genererte oppføringer**-ruten for posteringsdefinisjonen.
+<span data-ttu-id="4dc55-157">I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon.</span><span class="sxs-lookup"><span data-stu-id="4dc55-157">In this example, any account that is part of Account Structure - P&L matches the posting definition criteria.</span></span> <span data-ttu-id="4dc55-158">Når 606500-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor genererte oppføringer for kontoene som er definert i **Genererte oppføringer**-ruten for posteringsdefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-158">Therefore, when 606500-OU\_1-OU\_3566-Training is evaluated, generated entries are created for the accounts that are defined in the **Generated entries** pane for the posting definition.</span></span>
 
-## <a name="example-budget-appropriations"></a>Eksempel: budsjettbevilgninger
-Når du aktiverer budsjettbevilgning ved å velge **Aktiver budsjettbevilgning** på **Økonomiparametere**-siden, må posteringsdefinisjoner brukes til å registrere budsjettregisteroppføringer i økonomimodulen. Når en budsjettkontrollkonfigurasjon er aktivert og er slått på, kan posteringsdefinisjoner og posteringsdefinisjoner for transaksjon brukes til å støtte registreringen av oppføringer for avsetninger, endringer, overføringer, prosjekter, anleggsmidler og forsynings- og behovsprognoser til økonomimodulen. 
+## <a name="example-budget-appropriations"></a><span data-ttu-id="4dc55-159">Eksempel: budsjettbevilgninger</span><span class="sxs-lookup"><span data-stu-id="4dc55-159">Example: Budget appropriations</span></span>
+<span data-ttu-id="4dc55-160">Når du aktiverer budsjettbevilgning ved å velge **Aktiver budsjettbevilgning** på **Økonomiparametere**-siden, må posteringsdefinisjoner brukes til å registrere budsjettregisteroppføringer i økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-160">When you enable budget appropriation by selecting **Enable budget appropriation** on the **General ledger parameters** page, posting definitions must be used to record budget register entries to the general ledger.</span></span> <span data-ttu-id="4dc55-161">Når en budsjettkontrollkonfigurasjon er aktivert og er slått på, kan posteringsdefinisjoner og posteringsdefinisjoner for transaksjon brukes til å støtte registreringen av oppføringer for avsetninger, endringer, overføringer, prosjekter, anleggsmidler og forsynings- og behovsprognoser til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-161">When a budget control configuration is active and is turned on, posting definitions and transaction posting definitions can be used to support the recording of entries for appropriations, revisions, transfers, projects, fixed assets, and supply and demand forecasts to the general ledger.</span></span> 
 
-Hvis du vil definere en posteringsdefinisjon for budsjettregistreroppføringer som har budsjettypen **Opprinnelig budsjett** og som har avsetninger aktivert, velger du **Budsjett**-modulen på **Posteringsdefinisjoner**-siden. Deretter, i **Budsjett**-området på siden **Definisjoner for transaksjonspostering**, kan du kan bruke budsjettkoder for å knytte posteringsdefinisjonen til budsjettregisteroppføringer med budsjettypen **Opprinnelig budsjett**. 
+<span data-ttu-id="4dc55-162">Hvis du vil definere en posteringsdefinisjon for budsjettregistreroppføringer som har budsjettypen **Opprinnelig budsjett** og som har avsetninger aktivert, velger du **Budsjett**-modulen på **Posteringsdefinisjoner**-siden.</span><span class="sxs-lookup"><span data-stu-id="4dc55-162">To set up a posting definition for budget register entries that has a budget type of **Original budget**, and that has appropriations enabled, select the **Budget** module on the **Posting definitions** page.</span></span> <span data-ttu-id="4dc55-163">Deretter, i **Budsjett**-området på siden **Definisjoner for transaksjonspostering**, kan du kan bruke budsjettkoder for å knytte posteringsdefinisjonen til budsjettregisteroppføringer med budsjettypen **Opprinnelig budsjett**.</span><span class="sxs-lookup"><span data-stu-id="4dc55-163">Then, in the **Budget** area of the **Transaction posting definitions** page, you can use budget codes to associate the posting definition with budget register entries that have a budget type of **Original budget**.</span></span> 
 
-Når budsjettbevilgninger og posteringsdefinisjoner er aktivert, registreres budsjettregisteroppføringene for budsjettkontroll, og i økonomimodulen.
+<span data-ttu-id="4dc55-164">Når budsjettbevilgninger og posteringsdefinisjoner er aktivert, registreres budsjettregisteroppføringene for budsjettkontroll, og i økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-164">When budget appropriations and posting definitions are enabled, the budget register entries are recorded for budget control and in the general ledger.</span></span>
 
-### <a name="posting-definition--match-criteria"></a>Posteringsdefinisjon – samsvarskriterier
+### <a name="posting-definition--match-criteria"></a><span data-ttu-id="4dc55-165">Posteringsdefinisjon – samsvarskriterier</span><span class="sxs-lookup"><span data-stu-id="4dc55-165">Posting definition – Match criteria</span></span>
 
-| Kontostruktur       | Kontonummer for samsvar | Prioritet |
+| <span data-ttu-id="4dc55-166">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-166">Account structure</span></span>       | <span data-ttu-id="4dc55-167">Kontonummer for samsvar</span><span class="sxs-lookup"><span data-stu-id="4dc55-167">Match account number</span></span> | <span data-ttu-id="4dc55-168">Prioritet</span><span class="sxs-lookup"><span data-stu-id="4dc55-168">Priority</span></span> |
 |-------------------------|----------------------|----------|
-| Kontostruktur – resultat | \*                   | 1        |
+| <span data-ttu-id="4dc55-169">Kontostruktur – resultat</span><span class="sxs-lookup"><span data-stu-id="4dc55-169">Account Structure - P&L</span></span> | \*                   | <span data-ttu-id="4dc55-170">1</span><span class="sxs-lookup"><span data-stu-id="4dc55-170">1</span></span>        |
 
-* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+<span data-ttu-id="4dc55-171">* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.</span><span class="sxs-lookup"><span data-stu-id="4dc55-171">*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.</span></span>
 
-### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
+### <a name="posting-definition--generated-entries"></a><span data-ttu-id="4dc55-172">Posteringsdefinisjon – genererte oppføringer</span><span class="sxs-lookup"><span data-stu-id="4dc55-172">Posting definition – Generated entries</span></span>
 
-| Kontostruktur | Generert kontonummer              | Generert debet/kreditt |
+| <span data-ttu-id="4dc55-173">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-173">Account structure</span></span> | <span data-ttu-id="4dc55-174">Generert kontonummer</span><span class="sxs-lookup"><span data-stu-id="4dc55-174">Generated account number</span></span>              | <span data-ttu-id="4dc55-175">Generert debet/kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-175">Generated debit/credit</span></span> |
 |-------------------|---------------------------------------|------------------------|
-| Kontostruktur | 300145 - - (konto for estimert omsetning) | Lik                   |
-| Kontostruktur | 300146 -- (bevilgningskonto)     | Balanse              |
+| <span data-ttu-id="4dc55-176">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-176">Account structure</span></span> | <span data-ttu-id="4dc55-177">300145 - - (konto for estimert omsetning)</span><span class="sxs-lookup"><span data-stu-id="4dc55-177">300145 - -(Estimated revenue account)</span></span> | <span data-ttu-id="4dc55-178">Lik</span><span class="sxs-lookup"><span data-stu-id="4dc55-178">Same</span></span>                   |
+| <span data-ttu-id="4dc55-179">Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="4dc55-179">Account structure</span></span> | <span data-ttu-id="4dc55-180">300146 -- (bevilgningskonto)</span><span class="sxs-lookup"><span data-stu-id="4dc55-180">300146 - -(Appropriation account)</span></span>     | <span data-ttu-id="4dc55-181">Balanse</span><span class="sxs-lookup"><span data-stu-id="4dc55-181">Balancing</span></span>              |
 
-### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a>Transaksjoner med kontoer, dimensjonsverdiene og beløp
+### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a><span data-ttu-id="4dc55-182">Transaksjoner med kontoer, dimensjonsverdiene og beløp</span><span class="sxs-lookup"><span data-stu-id="4dc55-182">Transactions with the accounts, dimension values, and amounts</span></span>
 
-Du angir kontoene, dimensjonsverdiene og beløpene for budsjettkontooppføringen på siden **Budsjettregisteroppføring**.
+<span data-ttu-id="4dc55-183">Du angir kontoene, dimensjonsverdiene og beløpene for budsjettkontooppføringen på siden **Budsjettregisteroppføring**.</span><span class="sxs-lookup"><span data-stu-id="4dc55-183">You enter the accounts, dimension values, and amounts for the budget account entry on the **Budget register entry** page.</span></span>
 
-| Konto + dimensjoner           | Debet | Kreditt | Kommentar |
+| <span data-ttu-id="4dc55-184">Konto + dimensjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-184">Account + dimensions</span></span>           | <span data-ttu-id="4dc55-185">Debet</span><span class="sxs-lookup"><span data-stu-id="4dc55-185">Debit</span></span> | <span data-ttu-id="4dc55-186">Kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-186">Credit</span></span> | <span data-ttu-id="4dc55-187">Kommentar</span><span class="sxs-lookup"><span data-stu-id="4dc55-187">Comment</span></span> |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1-OU\_3566-opplæring |       | 250,00 |         |
+| <span data-ttu-id="4dc55-188">606400-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-188">606400-OU\_1-OU\_3566-Training</span></span> |       | <span data-ttu-id="4dc55-189">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-189">250.00</span></span> |         |
 
-### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansoppføringer som er generert fra posteringsdefinisjonen
+### <a name="ledger-entries-generated-from-the-posting-definition"></a><span data-ttu-id="4dc55-190">Finansoppføringer som er generert fra posteringsdefinisjonen</span><span class="sxs-lookup"><span data-stu-id="4dc55-190">Ledger entries generated from the posting definition</span></span>
 
-Genererte finansposter opprettes for å registrere det opprinnelige budsjettet i hver dimensjon.
+<span data-ttu-id="4dc55-191">Genererte finansposter opprettes for å registrere det opprinnelige budsjettet i hver dimensjon.</span><span class="sxs-lookup"><span data-stu-id="4dc55-191">Generated ledger entries are created to record the original budget in each dimension.</span></span>
 
-| Konto + dimensjoner           | Debet  | Kreditt | Kommentar |
+| <span data-ttu-id="4dc55-192">Konto + dimensjoner</span><span class="sxs-lookup"><span data-stu-id="4dc55-192">Account + dimensions</span></span>           | <span data-ttu-id="4dc55-193">Debet</span><span class="sxs-lookup"><span data-stu-id="4dc55-193">Debit</span></span>  | <span data-ttu-id="4dc55-194">Kreditt</span><span class="sxs-lookup"><span data-stu-id="4dc55-194">Credit</span></span> | <span data-ttu-id="4dc55-195">Kommentar</span><span class="sxs-lookup"><span data-stu-id="4dc55-195">Comment</span></span> |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1-OU\_3566-opplæring |        | 250,00 |         |
-| 300146-OU\_1-OU\_3566-opplæring | 250,00 |        |         |
+| <span data-ttu-id="4dc55-196">300145-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-196">300145-OU\_1-OU\_3566-Training</span></span> |        | <span data-ttu-id="4dc55-197">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-197">250.00</span></span> |         |
+| <span data-ttu-id="4dc55-198">300146-OU\_1-OU\_3566-opplæring</span><span class="sxs-lookup"><span data-stu-id="4dc55-198">300146-OU\_1-OU\_3566-Training</span></span> | <span data-ttu-id="4dc55-199">250,00</span><span class="sxs-lookup"><span data-stu-id="4dc55-199">250.00</span></span> |        |         |
 
-I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon. Når 606400-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor de genererte finanspostene.
+<span data-ttu-id="4dc55-200">I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resultat, kriteriene for posteringsdefinisjon.</span><span class="sxs-lookup"><span data-stu-id="4dc55-200">In this example, any account that is part of Account Structure - P&L matches the posting definition criteria.</span></span> <span data-ttu-id="4dc55-201">Når 606400-OU\_1-OU\_3566-opplæring blir evaluert, opprettes derfor de genererte finanspostene.</span><span class="sxs-lookup"><span data-stu-id="4dc55-201">Therefore, when 606400-OU\_1-OU\_3566-Training is evaluated, the generated ledger entries are created.</span></span>
 
 
 

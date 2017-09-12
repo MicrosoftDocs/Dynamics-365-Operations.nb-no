@@ -15,31 +15,31 @@ ms.custom:
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
-ms.openlocfilehash: ab6d22cf2c1610843de42d1e62cd93b17d74d8b8
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7fa5b240bc9c9f96ae5483be316eff62df915570
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="sell-and-return-products-outside-of-an-assortment"></a>Selge og returnere produkter utenfor et sortiment
-Et vanlig scenario for alle forhandlere er å selge produkter til kundene eller godta returer fra kunder, selv om de ikke fører de bestemte produktene i butikken (dvs. produktene er ikke assorterte til butikken).
-Her er noen vanlige scenarier:
+# <a name="sell-and-return-products-outside-of-an-assortment"></a><span data-ttu-id="d5329-103">Selge og returnere produkter utenfor et sortiment</span><span class="sxs-lookup"><span data-stu-id="d5329-103">Sell and return products outside of an assortment</span></span>
+<span data-ttu-id="d5329-104">Et vanlig scenario for alle forhandlere er å selge produkter til kundene eller godta returer fra kunder, selv om de ikke fører de bestemte produktene i butikken (dvs. produktene er ikke assorterte til butikken).</span><span class="sxs-lookup"><span data-stu-id="d5329-104">A common scenario for any retailer is to sell products to their customers or accept returns from their customers even if they don’t carry the specific products in their store (in other words, the products are not assorted to the store).</span></span>
+<span data-ttu-id="d5329-105">Her er noen vanlige scenarier:</span><span class="sxs-lookup"><span data-stu-id="d5329-105">Here are some typical scenarios:</span></span>
 
-+ En forhandler fører ikke alle produktene i en bestemt butikk. De gjenstående produktene er satt på lageret. Den butikkansatte kan hjelpe kunden med å søke etter varer i lageret, legge dem til i handlekurven og fullføre utsjekkingen ved å velge en leveringsmetode, for eksempel levering til en adresse fra lageret, eller la kunden plukke opp produktet fra det gjeldende lageret, eller fra et annet lager.
-+ En forhandler fører ikke bestemte produkter i butikken eller har dem ikke på lager i butikken kunden besøkte, men produktene er tilgjengelige i andre butikker. Butikkmedarbeideren kan hjelpe kunden med å søke etter produktene i den andre butikken, legge dem til i handlekurven og fullføre utsjekkingen ved å velge en leveringsmetode.
-+ En forhandler har mange butikker i og rundt et bestemt poststed, og vil ikke tvinge kundene til å returnere varer til den samme butikken som de ble kjøpt i. Kunder kan i stedet returnere varer til alle butikker.
++ <span data-ttu-id="d5329-106">En forhandler fører ikke alle produktene i en bestemt butikk.</span><span class="sxs-lookup"><span data-stu-id="d5329-106">A retailer doesn’t carry all its products in a specific store.</span></span> <span data-ttu-id="d5329-107">De gjenstående produktene er satt på lageret.</span><span class="sxs-lookup"><span data-stu-id="d5329-107">The remaining products are stored in the warehouse.</span></span> <span data-ttu-id="d5329-108">Den butikkansatte kan hjelpe kunden med å søke etter varer i lageret, legge dem til i handlekurven og fullføre utsjekkingen ved å velge en leveringsmetode, for eksempel levering til en adresse fra lageret, eller la kunden plukke opp produktet fra det gjeldende lageret, eller fra et annet lager.</span><span class="sxs-lookup"><span data-stu-id="d5329-108">The store associate can assist the customer by searching or browsing for the products in the warehouse, add them to the cart, and complete the checkout by selecting a delivery method, such as shipping to an address from the warehouse or letting the customer pick up the product from the current store or from another store.</span></span>
++ <span data-ttu-id="d5329-109">En forhandler fører ikke bestemte produkter i butikken eller har dem ikke på lager i butikken kunden besøkte, men produktene er tilgjengelige i andre butikker.</span><span class="sxs-lookup"><span data-stu-id="d5329-109">A retailer doesn’t carry specific products in the store or doesn’t have them in stock at the store the customer visited, but the products are available in other stores.</span></span> <span data-ttu-id="d5329-110">Butikkmedarbeideren kan hjelpe kunden med å søke etter produktene i den andre butikken, legge dem til i handlekurven og fullføre utsjekkingen ved å velge en leveringsmetode.</span><span class="sxs-lookup"><span data-stu-id="d5329-110">The store associate can assist the customer by searching or browsing the products in the other store, add them to the cart, and complete the checkout by selecting a delivery method.</span></span>
++ <span data-ttu-id="d5329-111">En forhandler har mange butikker i og rundt et bestemt poststed, og vil ikke tvinge kundene til å returnere varer til den samme butikken som de ble kjøpt i.</span><span class="sxs-lookup"><span data-stu-id="d5329-111">A retailer has many stores in and around a specific city or zip code and doesn’t want to force the customers to return products to the same store they were purchased in.</span></span> <span data-ttu-id="d5329-112">Kunder kan i stedet returnere varer til alle butikker.</span><span class="sxs-lookup"><span data-stu-id="d5329-112">Instead, customers can return products to any store.</span></span>
 
 
-Vanlige scenarier er tilgjengelige for forhandlere ved hjelp av 365 Dynamics for Retail. Med Retail kan du:
-+ Søke etter eller bla gjennom produkter i andre butikker.
-+ Søke etter eller bla gjennom alle frigitte produkter.
-+ Opprette hentesalgstransaksjoner eller kundeordrer.
-+ Velge leveringsalternativer for kundeordrer.
-+ Plukke produkter i den gjeldende butikken eller annen butikk.
-+ Annullere en ordre i den gjeldende butikken eller annen butikk.
-+ Returnere en ordre med eller uten mottaket i den gjeldende butikken eller annen butikk.
+<span data-ttu-id="d5329-113">Vanlige scenarier er tilgjengelige for forhandlere ved hjelp av 365 Dynamics for Retail.</span><span class="sxs-lookup"><span data-stu-id="d5329-113">Those common scenarios are available for retailers using Dynamics 365 for Retail.</span></span> <span data-ttu-id="d5329-114">Med Retail kan du:</span><span class="sxs-lookup"><span data-stu-id="d5329-114">With Retail, you can:</span></span>
++ <span data-ttu-id="d5329-115">Søke etter eller bla gjennom produkter i andre butikker.</span><span class="sxs-lookup"><span data-stu-id="d5329-115">Search or browse products at other stores.</span></span>
++ <span data-ttu-id="d5329-116">Søke etter eller bla gjennom alle frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="d5329-116">Search or browse all released products.</span></span>
++ <span data-ttu-id="d5329-117">Opprette hentesalgstransaksjoner eller kundeordrer.</span><span class="sxs-lookup"><span data-stu-id="d5329-117">Create cash-and-carry transactions or customer orders.</span></span>
++ <span data-ttu-id="d5329-118">Velge leveringsalternativer for kundeordrer.</span><span class="sxs-lookup"><span data-stu-id="d5329-118">Select delivery options for customer orders.</span></span>
++ <span data-ttu-id="d5329-119">Plukke produkter i den gjeldende butikken eller annen butikk.</span><span class="sxs-lookup"><span data-stu-id="d5329-119">Pick up products at the current store or another store.</span></span>
++ <span data-ttu-id="d5329-120">Annullere en ordre i den gjeldende butikken eller annen butikk.</span><span class="sxs-lookup"><span data-stu-id="d5329-120">Cancel an order at the current store or another store.</span></span>
++ <span data-ttu-id="d5329-121">Returnere en ordre med eller uten mottaket i den gjeldende butikken eller annen butikk.</span><span class="sxs-lookup"><span data-stu-id="d5329-121">Return an order with or without the receipt at the current store or another store.</span></span>
 

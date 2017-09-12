@@ -17,42 +17,42 @@ ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d45e7a56851f3f4ac7a7d2d8c4ca9f23b6535fc
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: fa59031ed2144c2e92399933cd5dd40bfca0f2ae
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="include-physical-value"></a>Ta med fysisk verdi
+# <a name="include-physical-value"></a><span data-ttu-id="a1e67-103">Ta med fysisk verdi</span><span class="sxs-lookup"><span data-stu-id="a1e67-103">Include physical value</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigkategorien Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
+<span data-ttu-id="a1e67-104">Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigkategorien Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.</span><span class="sxs-lookup"><span data-stu-id="a1e67-104">You use the Include physical value check box on the Inventory model FastTab of the Item model groups page to specify whether physically updated transactions are considered when the running average cost price is calculated for an item.</span></span>
 
-Avmerkingsboksen **Ta med fysisk verdi** har følgende verdier.
+<span data-ttu-id="a1e67-105">Avmerkingsboksen **Ta med fysisk verdi** har følgende verdier.</span><span class="sxs-lookup"><span data-stu-id="a1e67-105">The **Include physical value** check box has the following values.</span></span>
 
-| Verdi    | Resultat                                                                                                                          |
+| <span data-ttu-id="a1e67-106">Verdi</span><span class="sxs-lookup"><span data-stu-id="a1e67-106">Value</span></span>    | <span data-ttu-id="a1e67-107">Resultat</span><span class="sxs-lookup"><span data-stu-id="a1e67-107">Result</span></span>                                                                                                                          |
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
-| Valgt | Både fysisk oppdaterte transaksjoner og økonomisk oppdaterte transaksjoner brukes til å beregne løpende gjennomsnittlig kostpris. |
-| Avstem  | Bare økonomisk oppdaterte transaksjoner brukes til å beregne løpende gjennomsnittlig kostpris.                                     |
+| <span data-ttu-id="a1e67-108">Valgt</span><span class="sxs-lookup"><span data-stu-id="a1e67-108">Selected</span></span> | <span data-ttu-id="a1e67-109">Både fysisk oppdaterte transaksjoner og økonomisk oppdaterte transaksjoner brukes til å beregne løpende gjennomsnittlig kostpris.</span><span class="sxs-lookup"><span data-stu-id="a1e67-109">Both physically updated transactions and financially updated transactions are used to calculate the running average cost price.</span></span> |
+| <span data-ttu-id="a1e67-110">Avstem</span><span class="sxs-lookup"><span data-stu-id="a1e67-110">Cleared</span></span>  | <span data-ttu-id="a1e67-111">Bare økonomisk oppdaterte transaksjoner brukes til å beregne løpende gjennomsnittlig kostpris.</span><span class="sxs-lookup"><span data-stu-id="a1e67-111">Only financially updated transactions are used to calculate the running average cost price.</span></span>                                     |
 
-Avmerkingsboksen har litt forskjellige effekter, avhengig av hvilken lagermodell du bruker.
+<span data-ttu-id="a1e67-112">Avmerkingsboksen har litt forskjellige effekter, avhengig av hvilken lagermodell du bruker.</span><span class="sxs-lookup"><span data-stu-id="a1e67-112">The check box has slightly different effects, depending on the inventory model that you use.</span></span>
 
--   Hvis du merrker av for **Ta med fysisk verdi** når du bruker lagermodellen FIFO (først inn, først ut), LIFO (sist inn, først ut) eller LIFO-dato, vil en lagerlukking også medføre justeringer i fysisk oppdaterte transaksjoner.
--   Hvis du ikke merker merket av for **Ta med fysisk verdi** når du bruker disse lagermodellene, vil lagerlukking med bare utligne transaksjoner som er økonomisk oppdatert.
--   Når du bruker lagermodellene med avveid gjennomsnitt eller avveid gjennomsnittsdato, vil lagerlukking bare utligne økonomisk oppdaterte transaksjoner, uansett om du merker av for **Ta med fysisk verdi** eller ikke.
+-   <span data-ttu-id="a1e67-113">Hvis du merrker av for **Ta med fysisk verdi** når du bruker lagermodellen FIFO (først inn, først ut), LIFO (sist inn, først ut) eller LIFO-dato, vil en lagerlukking også medføre justeringer i fysisk oppdaterte transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="a1e67-113">If you select the **Include physical value** check box when you use the FIFO (First in, first out), LIFO (Last in, first out), or LIFO date inventory model, inventory close also makes adjustments to physically updated transactions.</span></span>
+-   <span data-ttu-id="a1e67-114">Hvis du ikke merker merket av for **Ta med fysisk verdi** når du bruker disse lagermodellene, vil lagerlukking med bare utligne transaksjoner som er økonomisk oppdatert.</span><span class="sxs-lookup"><span data-stu-id="a1e67-114">If you don't select the **Include physical value** check box when you use these inventory models, inventory close makes settlements only to financially updated transactions.</span></span>
+-   <span data-ttu-id="a1e67-115">Når du bruker lagermodellene med avveid gjennomsnitt eller avveid gjennomsnittsdato, vil lagerlukking bare utligne økonomisk oppdaterte transaksjoner, uansett om du merker av for **Ta med fysisk verdi** eller ikke.</span><span class="sxs-lookup"><span data-stu-id="a1e67-115">When you use the weighted average or weighted average date inventory model, inventory close settles only financially updated transactions, regardless of whether you select the **Include physical value** check box.</span></span>
 
-**Eksempel 1** Du har merket av for **Ta med fysisk verdi** og mottar følgende bestillinger:
+<span data-ttu-id="a1e67-116">**Eksempel 1** Du har merket av for **Ta med fysisk verdi** og mottar følgende bestillinger:</span><span class="sxs-lookup"><span data-stu-id="a1e67-116">**Example 1** You've selected the **Include physical value** check box and receive the following purchase orders:</span></span>
 
--   En bestilling av et antall på 2 og en kostpris på USD 10,00 har en oppdatert følgeseddel.
--   En bestilling av et antall på 3 og en kostpris på USD 12,00 har en oppdatert faktura.
+-   <span data-ttu-id="a1e67-117">En bestilling av et antall på 2 og en kostpris på USD 10,00 har en oppdatert følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="a1e67-117">A purchase order for a quantity of 2 and a cost price of USD 10.00 that has been packing slip–updated</span></span>
+-   <span data-ttu-id="a1e67-118">En bestilling av et antall på 3 og en kostpris på USD 12,00 har en oppdatert faktura.</span><span class="sxs-lookup"><span data-stu-id="a1e67-118">A purchase order for a quantity of 3 and a cost price of USD 12.00 that has been invoice-updated</span></span>
 
-I dette tilfellet, vil løpende gjennomsnittlig kostpris være USD 11,20, fordi både fysisk og økonomisk oppdaterte transaksjoner brukes til å beregne kostprisen. **Eksempel 2** Du har ikke merket av for **Ta med fysisk verdi**, og kostprisen i vareoppsettet er USD 10,00. Du mottar en bestilling av et antall på 20 og en kostpris på USD 12,00 med en oppdatert følgeseddel. Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpende gjennomsnittlig kostpris ikke omfatter fysisk posterte transaksjoner. **Merk:** For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.
+<span data-ttu-id="a1e67-119">I dette tilfellet, vil løpende gjennomsnittlig kostpris være USD 11,20, fordi både fysisk og økonomisk oppdaterte transaksjoner brukes til å beregne kostprisen.</span><span class="sxs-lookup"><span data-stu-id="a1e67-119">In this case, the running average cost price will be USD 11.20, because both physically updated transactions and financially updated transactions are used to calculate the cost price.</span></span> <span data-ttu-id="a1e67-120">**Eksempel 2** Du har ikke merket av for **Ta med fysisk verdi**, og kostprisen i vareoppsettet er USD 10,00.</span><span class="sxs-lookup"><span data-stu-id="a1e67-120">**Example 2** You haven't selected the **Include physical value** check box, and the cost price on the item setup is USD 10.00.</span></span> <span data-ttu-id="a1e67-121">Du mottar en bestilling av et antall på 20 og en kostpris på USD 12,00 med en oppdatert følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="a1e67-121">You receive a purchase order for a quantity of 20 and a cost price of USD 12.00 that has been packing slip–updated.</span></span> <span data-ttu-id="a1e67-122">Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpende gjennomsnittlig kostpris ikke omfatter fysisk posterte transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="a1e67-122">When a sales order is posted, the posted cost amount is USD 10.00, because the running average cost price won't include physically posted transactions.</span></span> <span data-ttu-id="a1e67-123">**Merk:** For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.</span><span class="sxs-lookup"><span data-stu-id="a1e67-123">**Note:** For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.</span></span>
 
 
 

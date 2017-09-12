@@ -16,49 +16,49 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e55a1325814d9671030b36742f29056cd3117b31
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-applicant-and-application-data-manually"></a>Angi søker- og søknadsdata manuelt
+# <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="0fbc7-103">Angi søker- og søknadsdata manuelt</span><span class="sxs-lookup"><span data-stu-id="0fbc7-103">Enter applicant and application data manually</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og søknader manuelt.   Du kan angi og vedlikeholde personlige opplysninger, intervjudatoer og -klokkeslett, referanser, kompetanser og overnattingsforespørsler for søkere. Du kan også oppdatere status for søkerens søknader om ansettelse og opprette brev eller e-postmeldinger for å kommunisere med søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken.       Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="0fbc7-104">Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og søknader manuelt.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="0fbc7-105">Du kan angi og vedlikeholde personlige opplysninger, intervjudatoer og -klokkeslett, referanser, kompetanser og overnattingsforespørsler for søkere.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="0fbc7-106">Du kan også oppdatere status for søkerens søknader om ansettelse og opprette brev eller e-postmeldinger for å kommunisere med søkere.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="0fbc7-107">Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="0fbc7-108">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-new-applicant-record"></a>Opprette en ny søkerpost
-1. Gå til Personale > Rekruttering > Søkere > Søkere.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Fornavn.
-4. Skriv inn en verdi i feltet Etternavn.
-    * Hvis den er tilgjengelig, kan du angi ytterligere informasjon om søker. Informasjonen kan for eksempel inkludere søkerens høyeste utdanning, nåværende stilling eller forrige arbeidsgiver.  
-5. Aktiver/deaktiver utvidelsen av delen Kontaktinformasjon.
-6. Klikk Legg til.
-7. I Beskrivelse-feltet skriver du inn E-postkommunikasjon.
-8. Velg et alternativ i Type-feltet.
-9. Angi en verdi i feltet Kontaktnummer/-adresse.
-    * Denne e-postadressen brukes til å generere e-postkommunikasjon med søkeren.  
-10. Klikk Legg til.
-11. Skriv inn en verdi i feltet Beskrivelse.
-12. Angi en verdi i feltet Kontaktnummer/-adresse.
-    * Personlige opplysninger om søker.  
-    * Du kan angi personlig tilleggsinformasjon for søkeren, om nødvendig. Dette kan for eksempel inkludere fødselsdato, etnisk opprinnelse, kjønn eller sivilstand.  
-13. Klikk Kompetanser i handlingsruten.
-    * Du kan angi søkerens kompetanseprofil, inkludert ferdigheter, yrkeserfaring, utdannelse, tester eller sertifikater.  
-    * Denne informasjonen kan brukes til å tilordne søkerens ferdigheter til kompetansen som er knyttet til prosjekter som er definert i firmaets data.   
+## <a name="create-a-new-applicant-record"></a><span data-ttu-id="0fbc7-109">Opprette en ny søkerpost</span><span class="sxs-lookup"><span data-stu-id="0fbc7-109">Create a new applicant record</span></span>
+1. <span data-ttu-id="0fbc7-110">Gå til Personale > Rekruttering > Søkere > Søkere.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-110">Go to Human resources > Recruitment > Applicants > Applicants.</span></span>
+2. <span data-ttu-id="0fbc7-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-111">Click New.</span></span>
+3. <span data-ttu-id="0fbc7-112">Skriv inn en verdi i feltet Fornavn.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-112">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="0fbc7-113">Skriv inn en verdi i feltet Etternavn.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-113">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="0fbc7-114">Hvis den er tilgjengelig, kan du angi ytterligere informasjon om søker.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-114">You can enter additional applicant information if it's available.</span></span> <span data-ttu-id="0fbc7-115">Informasjonen kan for eksempel inkludere søkerens høyeste utdanning, nåværende stilling eller forrige arbeidsgiver.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-115">For example, information can include the applicant's highest degree, current job title, or previous employer.</span></span>  
+5. <span data-ttu-id="0fbc7-116">Aktiver/deaktiver utvidelsen av delen Kontaktinformasjon.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-116">Toggle the expansion of the Contact information section.</span></span>
+6. <span data-ttu-id="0fbc7-117">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-117">Click Add.</span></span>
+7. <span data-ttu-id="0fbc7-118">I Beskrivelse-feltet skriver du inn E-postkommunikasjon.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-118">In the Description field, type 'Communications email'.</span></span>
+8. <span data-ttu-id="0fbc7-119">Velg et alternativ i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-119">In the Type field, select an option.</span></span>
+9. <span data-ttu-id="0fbc7-120">Angi en verdi i feltet Kontaktnummer/-adresse.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-120">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="0fbc7-121">Denne e-postadressen brukes til å generere e-postkommunikasjon med søkeren.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-121">This email address will be used to generate email communication with the applicant.</span></span>  
+10. <span data-ttu-id="0fbc7-122">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-122">Click Add.</span></span>
+11. <span data-ttu-id="0fbc7-123">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-123">In the Description field, type a value.</span></span>
+12. <span data-ttu-id="0fbc7-124">Angi en verdi i feltet Kontaktnummer/-adresse.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-124">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="0fbc7-125">Personlige opplysninger om søker.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-125">Applicant personal information.</span></span>  
+    * <span data-ttu-id="0fbc7-126">Du kan angi personlig tilleggsinformasjon for søkeren, om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-126">You can enter additional personal information for the applicant, if needed.</span></span> <span data-ttu-id="0fbc7-127">Dette kan for eksempel inkludere fødselsdato, etnisk opprinnelse, kjønn eller sivilstand.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-127">For example, this can include birth date, ethnic origin, gender, or marital status.</span></span>  
+13. <span data-ttu-id="0fbc7-128">Klikk Kompetanser i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-128">On the Action Pane, click Competencies.</span></span>
+    * <span data-ttu-id="0fbc7-129">Du kan angi søkerens kompetanseprofil, inkludert ferdigheter, yrkeserfaring, utdannelse, tester eller sertifikater.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-129">You can enter the applicant's competency profile, including their skills, professional experiences, education, tests, or certificates.</span></span>  
+    * <span data-ttu-id="0fbc7-130">Denne informasjonen kan brukes til å tilordne søkerens ferdigheter til kompetansen som er knyttet til prosjekter som er definert i firmaets data.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-130">This information can be used to map the applicant's skills to the skills associated with the jobs defined in your company's data.</span></span>   
 
-## <a name="create-an-application-for-the-applicant"></a>Opprette en søknad for søkeren
-1. Klikk Søknader.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i feltet Rekrutteringsprosjekt for å åpne oppslaget.
-    * Ved å velge et rekrutteringsprosjekt knyttes søkeren til en bestemt ledig stilling som er inkludert i dette rekrutteringsprosjektet.  
-4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
-    * Jobb og avdeling er basert på det valgte rekrutteringsprosjektet som standard.  
-6. Klikk Lagre.
-    * Etter at søknaden er lagret, kan du legge ved dokumenter til den, inkludert søkerens erfaring, priser og følgebrev.  
+## <a name="create-an-application-for-the-applicant"></a><span data-ttu-id="0fbc7-131">Opprette en søknad for søkeren</span><span class="sxs-lookup"><span data-stu-id="0fbc7-131">Create an application for the applicant</span></span>
+1. <span data-ttu-id="0fbc7-132">Klikk Søknader.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-132">Click Applications.</span></span>
+2. <span data-ttu-id="0fbc7-133">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-133">Click New.</span></span>
+3. <span data-ttu-id="0fbc7-134">Klikk rullegardinknappen i feltet Rekrutteringsprosjekt for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-134">In the Recruitment project field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="0fbc7-135">Ved å velge et rekrutteringsprosjekt knyttes søkeren til en bestemt ledig stilling som er inkludert i dette rekrutteringsprosjektet.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-135">By selecting a recruitment project, the applicant will be associated with a specific opening included in that recruitment project.</span></span>  
+4. <span data-ttu-id="0fbc7-136">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-136">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="0fbc7-137">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-137">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="0fbc7-138">Jobb og avdeling er basert på det valgte rekrutteringsprosjektet som standard.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-138">By default, the job and department are based on the selected recruitment project.</span></span>  
+6. <span data-ttu-id="0fbc7-139">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-139">Click Save.</span></span>
+    * <span data-ttu-id="0fbc7-140">Etter at søknaden er lagret, kan du legge ved dokumenter til den, inkludert søkerens erfaring, priser og følgebrev.</span><span class="sxs-lookup"><span data-stu-id="0fbc7-140">After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.</span></span>  
 
 

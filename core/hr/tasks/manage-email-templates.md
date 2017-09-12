@@ -16,38 +16,38 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 3cb22f122955e9c1856ede46ad483aeb5f382975
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-email-templates"></a>Behandle e-postmaler
+# <a name="manage-email-templates"></a><span data-ttu-id="21b31-103">Behandle e-postmaler</span><span class="sxs-lookup"><span data-stu-id="21b31-103">Manage email templates</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan overføre informasjon fra databasen for organisasjonens til bokmerker i et nytt dokument og bruke det i maler som hjelper deg å kommunisere effektivt med søkere og kandidater. For å gjøre dette, oppretter du en mal som inneholder standardtekst og bokmerker der systemdataene skal settes inn. Du kan for eksempel sette inn adresse- og kontaktinformasjon for en søker i et Microsoft Word-dokument som du kan bruke ved kommunikasjon med denne søkeren. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="21b31-104">Du kan overføre informasjon fra databasen for organisasjonens til bokmerker i et nytt dokument og bruke det i maler som hjelper deg å kommunisere effektivt med søkere og kandidater.</span><span class="sxs-lookup"><span data-stu-id="21b31-104">You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates.</span></span> <span data-ttu-id="21b31-105">For å gjøre dette, oppretter du en mal som inneholder standardtekst og bokmerker der systemdataene skal settes inn.</span><span class="sxs-lookup"><span data-stu-id="21b31-105">To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted.</span></span> <span data-ttu-id="21b31-106">Du kan for eksempel sette inn adresse- og kontaktinformasjon for en søker i et Microsoft Word-dokument som du kan bruke ved kommunikasjon med denne søkeren.</span><span class="sxs-lookup"><span data-stu-id="21b31-106">For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant.</span></span> <span data-ttu-id="21b31-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="21b31-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>Velg hvilke bokmerker som skal brukes i dine e-postmaler
-1. Gå til Søknadsbokmerker.
-2. Finn og velg ønsket korrespondansehandling i listen.
-3. Klikk Rediger.
-4. Finn og velg ønsket post i listen.
-    * Velg feltene du vil kunne bruke i en e-postmal for den valgte korrespondansehandlingen, og flytt dem til Bokmerke-feltene.  
-5. Lukk siden.
+## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a><span data-ttu-id="21b31-108">Velg hvilke bokmerker som skal brukes i dine e-postmaler</span><span class="sxs-lookup"><span data-stu-id="21b31-108">Select which bookmarks to use in your email templates</span></span>
+1. <span data-ttu-id="21b31-109">Gå til Søknadsbokmerker.</span><span class="sxs-lookup"><span data-stu-id="21b31-109">Go to Application bookmarks.</span></span>
+2. <span data-ttu-id="21b31-110">Finn og velg ønsket korrespondansehandling i listen.</span><span class="sxs-lookup"><span data-stu-id="21b31-110">In the list, find and select the desired correspondence action.</span></span>
+3. <span data-ttu-id="21b31-111">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="21b31-111">Click Edit.</span></span>
+4. <span data-ttu-id="21b31-112">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="21b31-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="21b31-113">Velg feltene du vil kunne bruke i en e-postmal for den valgte korrespondansehandlingen, og flytt dem til Bokmerke-feltene.</span><span class="sxs-lookup"><span data-stu-id="21b31-113">Select the fields you would like to be able to use in an email template for the selected Correspondence action and move them to the Bookmark fields.</span></span>  
+5. <span data-ttu-id="21b31-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="21b31-114">Close the page.</span></span>
 
-## <a name="create-an-email-template"></a>Opprette en e-postmal
-1. Gå til Personale > Rekruttering > Kommunikasjon > E-postmaler for søknader.
-2. Klikk Ny.
-3. Velg Intervju i feltet Korrespondansehandling.
-    * Velg korrespondansehandlingen som inneholder bokmerkene du bruker for denne typen e-postkommunikasjon.  
-4. Angi en verdi i E-postmal-feltet.
-5. Skriv inn en verdi i Emne-feltet.
-6. Skriv inn en verdi i Tekst-feltet.
-7. Finn og velg ønsket bokmerkefelt i listen.
-8. Fortsett å skrive inn din e-postmelding, og sett inn bokmerkfeltene der du trenger dem.
-    * Fortsett å skrive inn din e-postmelding, og sett inn bokmerkfeltene der det er ønskelig.  
-9. Klikk Lagre.
+## <a name="create-an-email-template"></a><span data-ttu-id="21b31-115">Opprette en e-postmal</span><span class="sxs-lookup"><span data-stu-id="21b31-115">Create an email template</span></span>
+1. <span data-ttu-id="21b31-116">Gå til Personale > Rekruttering > Kommunikasjon > E-postmaler for søknader.</span><span class="sxs-lookup"><span data-stu-id="21b31-116">Go to Human resources > Recruitment > Communication > Application e-mail templates.</span></span>
+2. <span data-ttu-id="21b31-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="21b31-117">Click New.</span></span>
+3. <span data-ttu-id="21b31-118">Velg Intervju i feltet Korrespondansehandling.</span><span class="sxs-lookup"><span data-stu-id="21b31-118">In the Correspondence action field, select 'Interview'.</span></span>
+    * <span data-ttu-id="21b31-119">Velg korrespondansehandlingen som inneholder bokmerkene du bruker for denne typen e-postkommunikasjon.</span><span class="sxs-lookup"><span data-stu-id="21b31-119">Select the correspondence action that contains the bookmarks to use for this type of email communication.</span></span>  
+4. <span data-ttu-id="21b31-120">Angi en verdi i E-postmal-feltet.</span><span class="sxs-lookup"><span data-stu-id="21b31-120">In the E-mail template field, type a value.</span></span>
+5. <span data-ttu-id="21b31-121">Skriv inn en verdi i Emne-feltet.</span><span class="sxs-lookup"><span data-stu-id="21b31-121">In the Subject field, type a value.</span></span>
+6. <span data-ttu-id="21b31-122">Skriv inn en verdi i Tekst-feltet.</span><span class="sxs-lookup"><span data-stu-id="21b31-122">In the Text field, type a value.</span></span>
+7. <span data-ttu-id="21b31-123">Finn og velg ønsket bokmerkefelt i listen.</span><span class="sxs-lookup"><span data-stu-id="21b31-123">In the list, find and select the desired bookmark field.</span></span>
+8. <span data-ttu-id="21b31-124">Fortsett å skrive inn din e-postmelding, og sett inn bokmerkfeltene der du trenger dem.</span><span class="sxs-lookup"><span data-stu-id="21b31-124">Continue typing your email message, inserting the bookmark fields where you need them.</span></span>
+    * <span data-ttu-id="21b31-125">Fortsett å skrive inn din e-postmelding, og sett inn bokmerkfeltene der det er ønskelig.</span><span class="sxs-lookup"><span data-stu-id="21b31-125">Continue typing your email message inserting the bookmark fields where desired.</span></span>  
+9. <span data-ttu-id="21b31-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="21b31-126">Click Save.</span></span>
 
 

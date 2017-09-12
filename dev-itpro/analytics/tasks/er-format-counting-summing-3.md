@@ -16,120 +16,120 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d6f9fc973ae9b36f6d78228d2e8ed4a2684c4875
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 121f00efea6aee8d9df45d67f8f252bbf6b97176
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="use-computations-to-make-the-output-for-counting-and-summing-for-electronic-reporting-er"></a>Bruke beregninger til å lage utdata for telling og summering for elektronisk rapportering (ER)
+# <a name="use-computations-to-make-the-output-for-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="8899f-103">Bruke beregninger til å lage utdata for telling og summering for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="8899f-103">Use computations to make the output for counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata. Denne fremgangsmåten kan utføres i alle firmaer.
+<span data-ttu-id="8899f-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata.</span><span class="sxs-lookup"><span data-stu-id="8899f-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="8899f-105">Denne fremgangsmåten kan utføres i alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="8899f-105">These steps can be performed in any company.</span></span>
 
-For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Konfigurere format for å utføre telling og summering (del 2: Konfigurere beregninger)".
+<span data-ttu-id="8899f-106">For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Konfigurere format for å utføre telling og summering (del 2: Konfigurere beregninger)".</span><span class="sxs-lookup"><span data-stu-id="8899f-106">To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 2: Configure computations)” procedure.</span></span>
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="8899f-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="8899f-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="configure-this-report-to-use-counting-and-summing-info"></a>Konfigurere denne rapporten for å bruke tellings- og summeringsinformasjon
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Klikk Rapporteringskonfigurasjoner.
-3. Utvid Intrastat-modell i treet.
-4. Utvid Intrastat-modell\Intrastat (DE) i treet.
-5. Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.
-6. Klikk Utforming.
-7. Klikk kategorien Tilordning.
-8. Klikk Legg til rot for å åpne nedtrekksdialogen.
-    * Legg til en ny datakilde for å hente listen over lagrede blokker.  
-9. Velg Funksjoner\Beregnet felt i treet.
-10. Skriv inn $BlocksList i Navn-feltet.
-    * $BlocksList  
-11. Klikk Rediger formel.
-12. I treet velger du Datainnsamlingsfunksjoner\COLLECTEDLIST.
-13. Klikk Legg til funksjon.
-14. Klikk Legg til datakilde.
-15. Skriv inn "COLLECTEDLIST('$BlockName', " i Formel-feltet.
-    * COLLECTEDLIST('$BlockName',  
-16. Skriv inn COLLECTEDLIST('$BlockName', "*") i Formel-feltet.
-    * COLLECTEDLIST('$BlockName', "*")  
-17. Klikk Lagre.
-    * Mønsteret "*" betyr at alle blokker vil bli inkludert i listen for denne posten.  
-18. Lukk siden.
-19. Klikk OK.
-20. Klikk Formater-kategorien.
-21. Velg Intrastat\Data i treet.
-22. Klikk Legg til for å åpne nedtrekksdialogen.
-23. Velg Tekst\Sekvens i treet.
-24. Skriv inn Totalsummer etter blokker i Navn-feltet.
-    * Totalsummer etter blokker  
-25. Velg Ny linje - Windows (CR LF) i Spesialtegn-feltet.
-26. Klikk OK.
-27. Velg Intrastat\Data\Totalsummer etter blokker i treet.
-28. Klikk Legg til for å åpne nedtrekksdialogen.
-29. Velg Tekst\Streng i treet.
-30. I Navn-feltet skriver du inn Blokkode.
-    * Blokkode  
-31. Klikk OK.
-32. Klikk Legg til streng.
-33. Skriv inn Linjetelling i Navn-feltet.
-    * Linjetelling  
-34. Klikk OK.
-35. Klikk Legg til streng.
-36. I Navn-feltet skriver du inn Totalbeløp.
-    * Totalbeløp  
-37. Klikk OK.
-38. Klikk kategorien Tilordning.
-39. Velg $BlocksList i treet.
-40. Klikk Bind.
-    * Opprett en summeringslinje for hver lagret blokk.  
-41. Klikk Formater-kategorien.
-42. Velg Intrastat\Data\Totalsummer etter blokker\Blokkode i treet.
-43. Klikk kategorien Tilordning.
-44. Klikk Rediger formel.
-45. Skriv inn '"Block id: " & ' i Formel-feltet.
-    * "Block id: " &  
-46. Utvid $BlocksList i treet.
-47. Velg $BlocksList\Verdi i treet.
-48. Klikk Legg til datakilde.
-49. Klikk Lagre.
-50. Lukk siden.
-51. Klikk Formater-kategorien.
-52. Velg Intrastat\Data\Totalsummer etter blokker\Linjetelling i treet.
-53. Klikk kategorien Tilordning.
-54. Klikk Rediger formel.
-    * Opprett utdata for antallet linjer for hver blokk som er presentert i denne rapporten.  
-55. Skriv inn '"Antall linjer i denne blokken: " & ' i Formel-feltet.
-    * "Antall linjer i denne blokken: " &  
-56. Skriv inn '"Antall linjer i denne blokken: " & TEXT('. i Formel-feltet.
-    * "Antall linjer i denne blokken: " & TEXT(   
-57. I treet velger du Datainnsamlingsfunksjoner\COUNTIFS.
-58. Klikk Legg til funksjon.
-59. Klikk Legg til datakilde.
-60. Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName',' i Formel-feltet.
-    * "Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName',  
-61. Utvid $BlocksList i treet.
-62. Velg $BlocksList\Verdi i treet.
-63. Klikk Legg til datakilde.
-64. Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, ' i Formel-feltet.
-    * "Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,  
-65. Velg $RecName i treet.
-66. Klikk Legg til datakilde.
-67. Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.
-    * "Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))  
-68. Klikk Lagre.
-69. Lukk siden.
-70. Klikk Formater-kategorien.
-71. Velg Intrastat\Data\Totalsummer etter blokker\Totalbeløp i treet.
-72. Klikk kategorien Tilordning.
-73. Klikk Rediger formel.
-    * Opprett utdata som skal være summen av det fakturerte beløpet for hver blokk presentert i denne rapporten.  
-74. Skriv inn '"Sum av fakturert beløp: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))' i Formel-feltet.
-    * "Sum av fakturert beløp: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))  
-75. Klikk Lagre.
-76. Lukk siden.
-77. Klikk Lagre.
-78. Lukk siden.
+## <a name="configure-this-report-to-use-counting-and-summing-info"></a><span data-ttu-id="8899f-108">Konfigurere denne rapporten for å bruke tellings- og summeringsinformasjon</span><span class="sxs-lookup"><span data-stu-id="8899f-108">Configure this report to use counting and summing info</span></span>
+1. <span data-ttu-id="8899f-109">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="8899f-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="8899f-110">Klikk Rapporteringskonfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="8899f-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="8899f-111">Utvid Intrastat-modell i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-111">In the tree, expand 'Intrastat model'.</span></span>
+4. <span data-ttu-id="8899f-112">Utvid Intrastat-modell\Intrastat (DE) i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-112">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+5. <span data-ttu-id="8899f-113">Velg Intrastat-modell\Intrastat (DE)\Intrastat (DE) med telling og summering i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-113">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+6. <span data-ttu-id="8899f-114">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="8899f-114">Click Designer.</span></span>
+7. <span data-ttu-id="8899f-115">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="8899f-115">Click the Mapping tab.</span></span>
+8. <span data-ttu-id="8899f-116">Klikk Legg til rot for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="8899f-116">Click Add root to open the drop dialog.</span></span>
+    * <span data-ttu-id="8899f-117">Legg til en ny datakilde for å hente listen over lagrede blokker.</span><span class="sxs-lookup"><span data-stu-id="8899f-117">Add a new data source to get the list of memorized blocks.</span></span>  
+9. <span data-ttu-id="8899f-118">Velg Funksjoner\Beregnet felt i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-118">In the tree, select 'Functions\Calculated field'.</span></span>
+10. <span data-ttu-id="8899f-119">Skriv inn $BlocksList i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-119">In the Name field, type '$BlocksList'.</span></span>
+    * <span data-ttu-id="8899f-120">$BlocksList</span><span class="sxs-lookup"><span data-stu-id="8899f-120">$BlocksList</span></span>  
+11. <span data-ttu-id="8899f-121">Klikk Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="8899f-121">Click Edit formula.</span></span>
+12. <span data-ttu-id="8899f-122">I treet velger du Datainnsamlingsfunksjoner\COLLECTEDLIST.</span><span class="sxs-lookup"><span data-stu-id="8899f-122">In the tree, select 'Data collection functions\COLLECTEDLIST'.</span></span>
+13. <span data-ttu-id="8899f-123">Klikk Legg til funksjon.</span><span class="sxs-lookup"><span data-stu-id="8899f-123">Click Add function.</span></span>
+14. <span data-ttu-id="8899f-124">Klikk Legg til datakilde.</span><span class="sxs-lookup"><span data-stu-id="8899f-124">Click Add data source.</span></span>
+15. <span data-ttu-id="8899f-125">Skriv inn "COLLECTEDLIST('$BlockName', " i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-125">In the Formula field, enter 'COLLECTEDLIST('$BlockName', '.</span></span>
+    * <span data-ttu-id="8899f-126">COLLECTEDLIST('$BlockName',</span><span class="sxs-lookup"><span data-stu-id="8899f-126">COLLECTEDLIST('$BlockName',</span></span>  
+16. <span data-ttu-id="8899f-127">Skriv inn COLLECTEDLIST('$BlockName', "*") i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-127">In the Formula field, enter 'COLLECTEDLIST('$BlockName', "*")'.</span></span>
+    * <span data-ttu-id="8899f-128">COLLECTEDLIST('$BlockName', "*")</span><span class="sxs-lookup"><span data-stu-id="8899f-128">COLLECTEDLIST('$BlockName', "*")</span></span>  
+17. <span data-ttu-id="8899f-129">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="8899f-129">Click Save.</span></span>
+    * <span data-ttu-id="8899f-130">Mønsteret "*" betyr at alle blokker vil bli inkludert i listen for denne posten.</span><span class="sxs-lookup"><span data-stu-id="8899f-130">The pattern “*” means that all blocks will be included to the list for this record.</span></span>  
+18. <span data-ttu-id="8899f-131">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8899f-131">Close the page.</span></span>
+19. <span data-ttu-id="8899f-132">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8899f-132">Click OK.</span></span>
+20. <span data-ttu-id="8899f-133">Klikk Formater-kategorien.</span><span class="sxs-lookup"><span data-stu-id="8899f-133">Click the Format tab.</span></span>
+21. <span data-ttu-id="8899f-134">Velg Intrastat\Data i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-134">In the tree, select 'Intrastat\Data'.</span></span>
+22. <span data-ttu-id="8899f-135">Klikk Legg til for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="8899f-135">Click Add to open the drop dialog.</span></span>
+23. <span data-ttu-id="8899f-136">Velg Tekst\Sekvens i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-136">In the tree, select 'Text\Sequence'.</span></span>
+24. <span data-ttu-id="8899f-137">Skriv inn Totalsummer etter blokker i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-137">In the Name field, type 'Totals by blocks'.</span></span>
+    * <span data-ttu-id="8899f-138">Totalsummer etter blokker</span><span class="sxs-lookup"><span data-stu-id="8899f-138">Totals by blocks</span></span>  
+25. <span data-ttu-id="8899f-139">Velg Ny linje - Windows (CR LF) i Spesialtegn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-139">In the Special characters field, select 'New line - Windows (CR LF)'.</span></span>
+26. <span data-ttu-id="8899f-140">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8899f-140">Click OK.</span></span>
+27. <span data-ttu-id="8899f-141">Velg Intrastat\Data\Totalsummer etter blokker i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-141">In the tree, select 'Intrastat\Data\Totals by blocks'.</span></span>
+28. <span data-ttu-id="8899f-142">Klikk Legg til for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="8899f-142">Click Add to open the drop dialog.</span></span>
+29. <span data-ttu-id="8899f-143">Velg Tekst\Streng i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-143">In the tree, select 'Text\String'.</span></span>
+30. <span data-ttu-id="8899f-144">I Navn-feltet skriver du inn Blokkode.</span><span class="sxs-lookup"><span data-stu-id="8899f-144">In the Name field, type 'Block code'.</span></span>
+    * <span data-ttu-id="8899f-145">Blokkode</span><span class="sxs-lookup"><span data-stu-id="8899f-145">Block code</span></span>  
+31. <span data-ttu-id="8899f-146">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8899f-146">Click OK.</span></span>
+32. <span data-ttu-id="8899f-147">Klikk Legg til streng.</span><span class="sxs-lookup"><span data-stu-id="8899f-147">Click Add String.</span></span>
+33. <span data-ttu-id="8899f-148">Skriv inn Linjetelling i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-148">In the Name field, type 'Lines counting'.</span></span>
+    * <span data-ttu-id="8899f-149">Linjetelling</span><span class="sxs-lookup"><span data-stu-id="8899f-149">Lines counting</span></span>  
+34. <span data-ttu-id="8899f-150">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8899f-150">Click OK.</span></span>
+35. <span data-ttu-id="8899f-151">Klikk Legg til streng.</span><span class="sxs-lookup"><span data-stu-id="8899f-151">Click Add String.</span></span>
+36. <span data-ttu-id="8899f-152">I Navn-feltet skriver du inn Totalbeløp.</span><span class="sxs-lookup"><span data-stu-id="8899f-152">In the Name field, type 'Total amount'.</span></span>
+    * <span data-ttu-id="8899f-153">Totalbeløp</span><span class="sxs-lookup"><span data-stu-id="8899f-153">Total amount</span></span>  
+37. <span data-ttu-id="8899f-154">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8899f-154">Click OK.</span></span>
+38. <span data-ttu-id="8899f-155">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="8899f-155">Click the Mapping tab.</span></span>
+39. <span data-ttu-id="8899f-156">Velg $BlocksList i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-156">In the tree, select '$BlocksList'.</span></span>
+40. <span data-ttu-id="8899f-157">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="8899f-157">Click Bind.</span></span>
+    * <span data-ttu-id="8899f-158">Opprett en summeringslinje for hver lagret blokk.</span><span class="sxs-lookup"><span data-stu-id="8899f-158">Create a summary line for each memorized block.</span></span>  
+41. <span data-ttu-id="8899f-159">Klikk Formater-kategorien.</span><span class="sxs-lookup"><span data-stu-id="8899f-159">Click the Format tab.</span></span>
+42. <span data-ttu-id="8899f-160">Velg Intrastat\Data\Totalsummer etter blokker\Blokkode i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-160">In the tree, select 'Intrastat\Data\Totals by blocks\Block code'.</span></span>
+43. <span data-ttu-id="8899f-161">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="8899f-161">Click the Mapping tab.</span></span>
+44. <span data-ttu-id="8899f-162">Klikk Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="8899f-162">Click Edit formula.</span></span>
+45. <span data-ttu-id="8899f-163">Skriv inn '"Block id: " & ' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-163">In the Formula field, enter '"Block id: " & '.</span></span>
+    * <span data-ttu-id="8899f-164">"Block id: " &</span><span class="sxs-lookup"><span data-stu-id="8899f-164">"Block id: " &</span></span>  
+46. <span data-ttu-id="8899f-165">Utvid $BlocksList i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-165">In the tree, expand '$BlocksList'.</span></span>
+47. <span data-ttu-id="8899f-166">Velg $BlocksList\Verdi i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-166">In the tree, select '$BlocksList\Value'.</span></span>
+48. <span data-ttu-id="8899f-167">Klikk Legg til datakilde.</span><span class="sxs-lookup"><span data-stu-id="8899f-167">Click Add data source.</span></span>
+49. <span data-ttu-id="8899f-168">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="8899f-168">Click Save.</span></span>
+50. <span data-ttu-id="8899f-169">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8899f-169">Close the page.</span></span>
+51. <span data-ttu-id="8899f-170">Klikk Formater-kategorien.</span><span class="sxs-lookup"><span data-stu-id="8899f-170">Click the Format tab.</span></span>
+52. <span data-ttu-id="8899f-171">Velg Intrastat\Data\Totalsummer etter blokker\Linjetelling i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-171">In the tree, select 'Intrastat\Data\Totals by blocks\Lines counting'.</span></span>
+53. <span data-ttu-id="8899f-172">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="8899f-172">Click the Mapping tab.</span></span>
+54. <span data-ttu-id="8899f-173">Klikk Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="8899f-173">Click Edit formula.</span></span>
+    * <span data-ttu-id="8899f-174">Opprett utdata for antallet linjer for hver blokk som er presentert i denne rapporten.</span><span class="sxs-lookup"><span data-stu-id="8899f-174">Create output for the number of lines for each block presented in this report.</span></span>  
+55. <span data-ttu-id="8899f-175">Skriv inn '"Antall linjer i denne blokken: " & ' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-175">In the Formula field, enter '"Number of lines in this block: " & '.</span></span>
+    * <span data-ttu-id="8899f-176">"Antall linjer i denne blokken: " &</span><span class="sxs-lookup"><span data-stu-id="8899f-176">"Number of lines in this block: " &</span></span>  
+56. <span data-ttu-id="8899f-177">Skriv inn '"Antall linjer i denne blokken: " & TEXT('. i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-177">In the Formula field, enter '"Number of lines in this block: " & TEXT('.</span></span>
+    * <span data-ttu-id="8899f-178">"Antall linjer i denne blokken: " & TEXT( </span><span class="sxs-lookup"><span data-stu-id="8899f-178">"Number of lines in this block: " & TEXT(</span></span>  
+57. <span data-ttu-id="8899f-179">I treet velger du Datainnsamlingsfunksjoner\COUNTIFS.</span><span class="sxs-lookup"><span data-stu-id="8899f-179">In the tree, select 'Data collection functions\COUNTIFS'.</span></span>
+58. <span data-ttu-id="8899f-180">Klikk Legg til funksjon.</span><span class="sxs-lookup"><span data-stu-id="8899f-180">Click Add function.</span></span>
+59. <span data-ttu-id="8899f-181">Klikk Legg til datakilde.</span><span class="sxs-lookup"><span data-stu-id="8899f-181">Click Add data source.</span></span>
+60. <span data-ttu-id="8899f-182">Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName',' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-182">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '.</span></span>
+    * <span data-ttu-id="8899f-183">"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName',</span><span class="sxs-lookup"><span data-stu-id="8899f-183">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName',</span></span>  
+61. <span data-ttu-id="8899f-184">Utvid $BlocksList i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-184">In the tree, expand '$BlocksList'.</span></span>
+62. <span data-ttu-id="8899f-185">Velg $BlocksList\Verdi i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-185">In the tree, select '$BlocksList\Value'.</span></span>
+63. <span data-ttu-id="8899f-186">Klikk Legg til datakilde.</span><span class="sxs-lookup"><span data-stu-id="8899f-186">Click Add data source.</span></span>
+64. <span data-ttu-id="8899f-187">Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, ' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-187">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '.</span></span>
+    * <span data-ttu-id="8899f-188">"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,</span><span class="sxs-lookup"><span data-stu-id="8899f-188">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,</span></span>  
+65. <span data-ttu-id="8899f-189">Velg $RecName i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-189">In the tree, select '$RecName'.</span></span>
+66. <span data-ttu-id="8899f-190">Klikk Legg til datakilde.</span><span class="sxs-lookup"><span data-stu-id="8899f-190">Click Add data source.</span></span>
+67. <span data-ttu-id="8899f-191">Skriv inn '"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span><span class="sxs-lookup"><span data-stu-id="8899f-191">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span></span>
+    * <span data-ttu-id="8899f-192">"Antall linjer i denne blokken: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span><span class="sxs-lookup"><span data-stu-id="8899f-192">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span></span>  
+68. <span data-ttu-id="8899f-193">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="8899f-193">Click Save.</span></span>
+69. <span data-ttu-id="8899f-194">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8899f-194">Close the page.</span></span>
+70. <span data-ttu-id="8899f-195">Klikk Formater-kategorien.</span><span class="sxs-lookup"><span data-stu-id="8899f-195">Click the Format tab.</span></span>
+71. <span data-ttu-id="8899f-196">Velg Intrastat\Data\Totalsummer etter blokker\Totalbeløp i treet.</span><span class="sxs-lookup"><span data-stu-id="8899f-196">In the tree, select 'Intrastat\Data\Totals by blocks\Total amount'.</span></span>
+72. <span data-ttu-id="8899f-197">Klikk kategorien Tilordning.</span><span class="sxs-lookup"><span data-stu-id="8899f-197">Click the Mapping tab.</span></span>
+73. <span data-ttu-id="8899f-198">Klikk Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="8899f-198">Click Edit formula.</span></span>
+    * <span data-ttu-id="8899f-199">Opprett utdata som skal være summen av det fakturerte beløpet for hver blokk presentert i denne rapporten.</span><span class="sxs-lookup"><span data-stu-id="8899f-199">Create output that will be the total of the invoiced amount for each block presented in this report.</span></span>  
+74. <span data-ttu-id="8899f-200">Skriv inn '"Sum av fakturert beløp: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="8899f-200">In the Formula field, enter '"Sum of invoiced amount: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span></span>
+    * <span data-ttu-id="8899f-201">"Sum av fakturert beløp: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span><span class="sxs-lookup"><span data-stu-id="8899f-201">"Sum of invoiced amount: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span></span>  
+75. <span data-ttu-id="8899f-202">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="8899f-202">Click Save.</span></span>
+76. <span data-ttu-id="8899f-203">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8899f-203">Close the page.</span></span>
+77. <span data-ttu-id="8899f-204">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="8899f-204">Click Save.</span></span>
+78. <span data-ttu-id="8899f-205">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8899f-205">Close the page.</span></span>
 
 

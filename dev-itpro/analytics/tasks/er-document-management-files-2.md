@@ -16,79 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 92177f4653325f6a43c704097d8d5d54d0e15ba9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1a5325dc3a97b9e205b41fe8dae18f43e430daeb
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Utvide datamodell for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)
+# <a name="extend-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="b29a9-103">Utvide datamodell for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="b29a9-103">Extend data model to use Document Management files in format outputs for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata. Denne fremgangsmåten kan utføres i alle firmaer.
+<span data-ttu-id="b29a9-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata.</span><span class="sxs-lookup"><span data-stu-id="b29a9-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="b29a9-105">Denne fremgangsmåten kan utføres i alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="b29a9-105">These steps can be performed in any company.</span></span>
 
-For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER Bruke dokumentbehandlingsfiler i formatutdata (del 1: Klargjøre datamodell).
+<span data-ttu-id="b29a9-106">For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER Bruke dokumentbehandlingsfiler i formatutdata (del 1: Klargjøre datamodell).</span><span class="sxs-lookup"><span data-stu-id="b29a9-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.</span></span>
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="b29a9-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="b29a9-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a>Utvide datamodellen for å presentere dokumentbehandlingsfilene i modellen
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Klikk Rapporteringskonfigurasjoner.
-3. Utvid Kundefakturamodell i treet.
-4. Velg Kundefakturamodell\Kundefakturamodell (egendefinert) i treet.
-5. Klikk Utforming.
-6. Velg Kundefakturamodell(InvoiceCustomer) i treet.
-    * Vi vil utvide denne datamodellen for å vise alle filer som er knyttet til en salgsordre som er relatert til en faktura for elektronisk behandling.  
-7. Klikk Ny for å åpne nedtrekksdialogen.
-8. Skriv inn Fakturavedlegg i Navn-feltet.
-    * Fakturavedlegg  
-9. Velg Postliste i Varetype-feltet.
-10. Klikk Legg til.
-11. Klikk Ny for å åpne nedtrekksdialogen.
-12. Skriv inn Filinnhold i Navn-feltet.
-    * Filinnhold  
-13. Velg Container i Varetype-feltet.
-14. Klikk Legg til.
-15. Klikk Ny for å åpne nedtrekksdialogen.
-16. Skriv inn Filnavn i Navn-feltet.
-    * Filnavn  
-17. Velg Streng i Varetype-feltet.
-18. Klikk Legg til.
+## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a><span data-ttu-id="b29a9-108">Utvide datamodellen for å presentere dokumentbehandlingsfilene i modellen</span><span class="sxs-lookup"><span data-stu-id="b29a9-108">Extend data model to present the Document Management files in it</span></span>
+1. <span data-ttu-id="b29a9-109">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="b29a9-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="b29a9-110">Klikk Rapporteringskonfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="b29a9-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="b29a9-111">Utvid Kundefakturamodell i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="b29a9-112">Velg Kundefakturamodell\Kundefakturamodell (egendefinert) i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+5. <span data-ttu-id="b29a9-113">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="b29a9-113">Click Designer.</span></span>
+6. <span data-ttu-id="b29a9-114">Velg Kundefakturamodell(InvoiceCustomer) i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-114">In the tree, select 'Customer invoice(InvoiceCustomer)'.</span></span>
+    * <span data-ttu-id="b29a9-115">Vi vil utvide denne datamodellen for å vise alle filer som er knyttet til en salgsordre som er relatert til en faktura for elektronisk behandling.</span><span class="sxs-lookup"><span data-stu-id="b29a9-115">We will extend this data model to expose in it any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+7. <span data-ttu-id="b29a9-116">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="b29a9-116">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="b29a9-117">Skriv inn Fakturavedlegg i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-117">In the Name field, type 'Invoice attachments'.</span></span>
+    * <span data-ttu-id="b29a9-118">Fakturavedlegg</span><span class="sxs-lookup"><span data-stu-id="b29a9-118">Invoice attachments</span></span>  
+9. <span data-ttu-id="b29a9-119">Velg Postliste i Varetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-119">In the Item type field, select 'Record list'.</span></span>
+10. <span data-ttu-id="b29a9-120">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b29a9-120">Click Add.</span></span>
+11. <span data-ttu-id="b29a9-121">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="b29a9-121">Click New to open the drop dialog.</span></span>
+12. <span data-ttu-id="b29a9-122">Skriv inn Filinnhold i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-122">In the Name field, type 'File content'.</span></span>
+    * <span data-ttu-id="b29a9-123">Filinnhold</span><span class="sxs-lookup"><span data-stu-id="b29a9-123">File content</span></span>  
+13. <span data-ttu-id="b29a9-124">Velg Container i Varetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-124">In the Item type field, select 'Container'.</span></span>
+14. <span data-ttu-id="b29a9-125">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b29a9-125">Click Add.</span></span>
+15. <span data-ttu-id="b29a9-126">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="b29a9-126">Click New to open the drop dialog.</span></span>
+16. <span data-ttu-id="b29a9-127">Skriv inn Filnavn i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-127">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="b29a9-128">Filnavn</span><span class="sxs-lookup"><span data-stu-id="b29a9-128">File name</span></span>  
+17. <span data-ttu-id="b29a9-129">Velg Streng i Varetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-129">In the Item type field, select 'String'.</span></span>
+18. <span data-ttu-id="b29a9-130">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b29a9-130">Click Add.</span></span>
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Tilordne nye datamodellelementer til Dynamics 365 for Finance and Operations, Enterprise edition-datakilder
-1. Klikk Tilordne modell til datakilde.
-2. Bruk hurtigfilteret til å filtrere på Definisjon-feltet med en verdi lik InvoiceCustomer.
-    * InvoiceCustomer  
-    * Vi vil tilordne nye modellelementer til aktuelle datakilder.  
-3. Klikk Utforming.
-4. Velg Fakturavedlegg i treet.
-5. Utvid Fakturavedlegg i treet.
-6. Velg Fakturavedlegg\Filnavn i treet.
-7. Klikk Rediger.
-8. Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'' i Formel-feltet.
-    * CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'  
-9. Klikk Lagre.
-10. Lukk siden.
-11. I treet velger du Fakturavedlegg\Filinnhold.
-12. Klikk Rediger.
-13. Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'' i Formel-feltet.
-    * CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'  
-14. Klikk Lagre.
-15. Lukk siden.
-16. Velg Fakturavedlegg i treet.
-17. Klikk Rediger.
-18. Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'' i Formel-feltet.
-    * CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'  
-19. Klikk Lagre.
-20. Lukk siden.
-21. Klikk Lagre.
-22. Lukk siden.
-23. Lukk siden.
-24. Lukk siden.
-25. Klikk Endre status.
-26. Klikk Fullført.
-27. Klikk OK.
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a><span data-ttu-id="b29a9-131">Tilordne nye datamodellelementer til Dynamics 365 for Finance and Operations, Enterprise edition-datakilder</span><span class="sxs-lookup"><span data-stu-id="b29a9-131">Map new data model elements to Dynamics 365 for Finance and Operations, Enterprise edition data sources</span></span>
+1. <span data-ttu-id="b29a9-132">Klikk Tilordne modell til datakilde.</span><span class="sxs-lookup"><span data-stu-id="b29a9-132">Click Map model to datasource.</span></span>
+2. <span data-ttu-id="b29a9-133">Bruk hurtigfilteret til å filtrere på Definisjon-feltet med en verdi lik InvoiceCustomer.</span><span class="sxs-lookup"><span data-stu-id="b29a9-133">Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.</span></span>
+    * <span data-ttu-id="b29a9-134">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="b29a9-134">InvoiceCustomer</span></span>  
+    * <span data-ttu-id="b29a9-135">Vi vil tilordne nye modellelementer til aktuelle datakilder.</span><span class="sxs-lookup"><span data-stu-id="b29a9-135">We will map new model elements to appropriate data sources.</span></span>  
+3. <span data-ttu-id="b29a9-136">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="b29a9-136">Click Designer.</span></span>
+4. <span data-ttu-id="b29a9-137">Velg Fakturavedlegg i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-137">In the tree, select 'Invoice attachments'.</span></span>
+5. <span data-ttu-id="b29a9-138">Utvid Fakturavedlegg i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-138">In the tree, expand 'Invoice attachments'.</span></span>
+6. <span data-ttu-id="b29a9-139">Velg Fakturavedlegg\Filnavn i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-139">In the tree, select 'Invoice attachments\File name'.</span></span>
+7. <span data-ttu-id="b29a9-140">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="b29a9-140">Click Edit.</span></span>
+8. <span data-ttu-id="b29a9-141">Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-141">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()''.</span></span>
+    * <span data-ttu-id="b29a9-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span><span class="sxs-lookup"><span data-stu-id="b29a9-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span></span>  
+9. <span data-ttu-id="b29a9-143">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b29a9-143">Click Save.</span></span>
+10. <span data-ttu-id="b29a9-144">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-144">Close the page.</span></span>
+11. <span data-ttu-id="b29a9-145">I treet velger du Fakturavedlegg\Filinnhold.</span><span class="sxs-lookup"><span data-stu-id="b29a9-145">In the tree, select 'Invoice attachments\File content'.</span></span>
+12. <span data-ttu-id="b29a9-146">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="b29a9-146">Click Edit.</span></span>
+13. <span data-ttu-id="b29a9-147">Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-147">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()''.</span></span>
+    * <span data-ttu-id="b29a9-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span><span class="sxs-lookup"><span data-stu-id="b29a9-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span></span>  
+14. <span data-ttu-id="b29a9-149">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b29a9-149">Click Save.</span></span>
+15. <span data-ttu-id="b29a9-150">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-150">Close the page.</span></span>
+16. <span data-ttu-id="b29a9-151">Velg Fakturavedlegg i treet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-151">In the tree, select 'Invoice attachments'.</span></span>
+17. <span data-ttu-id="b29a9-152">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="b29a9-152">Click Edit.</span></span>
+18. <span data-ttu-id="b29a9-153">Skriv inn 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'' i Formel-feltet.</span><span class="sxs-lookup"><span data-stu-id="b29a9-153">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents''.</span></span>
+    * <span data-ttu-id="b29a9-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span><span class="sxs-lookup"><span data-stu-id="b29a9-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span></span>  
+19. <span data-ttu-id="b29a9-155">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b29a9-155">Click Save.</span></span>
+20. <span data-ttu-id="b29a9-156">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-156">Close the page.</span></span>
+21. <span data-ttu-id="b29a9-157">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b29a9-157">Click Save.</span></span>
+22. <span data-ttu-id="b29a9-158">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-158">Close the page.</span></span>
+23. <span data-ttu-id="b29a9-159">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-159">Close the page.</span></span>
+24. <span data-ttu-id="b29a9-160">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b29a9-160">Close the page.</span></span>
+25. <span data-ttu-id="b29a9-161">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="b29a9-161">Click Change status.</span></span>
+26. <span data-ttu-id="b29a9-162">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="b29a9-162">Click Complete.</span></span>
+27. <span data-ttu-id="b29a9-163">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="b29a9-163">Click OK.</span></span>
 
 

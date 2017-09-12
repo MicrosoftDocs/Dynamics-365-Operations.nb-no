@@ -23,24 +23,24 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-transportation-constraints-for-an-item"></a>Definere transportbegrensninger for en vare
+# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="cadb5-103">Definere transportbegrensninger for en vare</span><span class="sxs-lookup"><span data-stu-id="cadb5-103">Set up transportation constraints for an item</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valgt vare transporteres gjennom en valgt hub. Denne oppgaven utføres vanligvis av en transportkoordinator. Du kan bruke denne fremgangsmåten i USMF-demodatafirmaet eller ved hjelp av dine egne data.
+<span data-ttu-id="cadb5-104">Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valgt vare transporteres gjennom en valgt hub.</span><span class="sxs-lookup"><span data-stu-id="cadb5-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="cadb5-105">Denne oppgaven utføres vanligvis av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="cadb5-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="cadb5-106">Du kan bruke denne fremgangsmåten i USMF-demodatafirmaet eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="cadb5-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
 
 
-## <a name="create-an-item-constaint"></a>Opprette en varebegrensning
-1. Gå til Begrensninger.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Varebegrensning.
-4. Skriv inn en verdi i Navn-feltet.
-5. Angi eller velg en verdi i Område-feltet.
-6. Angi eller velg en verdi i feltet Lager.
-7. Angi eller velg en verdi i Varenummer-feltet.
-8. Angi eller velg en verdi i feltet Hub.
-9. Velg et alternativ i feltet Begrensningshandling.
-10. Klikk Lagre.
-11. Lukk siden.
+## <a name="create-an-item-constaint"></a><span data-ttu-id="cadb5-107">Opprette en varebegrensning</span><span class="sxs-lookup"><span data-stu-id="cadb5-107">Create an item constaint</span></span>
+1. <span data-ttu-id="cadb5-108">Gå til Begrensninger.</span><span class="sxs-lookup"><span data-stu-id="cadb5-108">Go to Constraints.</span></span>
+2. <span data-ttu-id="cadb5-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="cadb5-109">Click New.</span></span>
+3. <span data-ttu-id="cadb5-110">Skriv inn en verdi i feltet Varebegrensning.</span><span class="sxs-lookup"><span data-stu-id="cadb5-110">In the Item constraint field, type a value.</span></span>
+4. <span data-ttu-id="cadb5-111">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="cadb5-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="cadb5-112">Angi eller velg en verdi i Område-feltet.</span><span class="sxs-lookup"><span data-stu-id="cadb5-112">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="cadb5-113">Angi eller velg en verdi i feltet Lager.</span><span class="sxs-lookup"><span data-stu-id="cadb5-113">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="cadb5-114">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="cadb5-114">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="cadb5-115">Angi eller velg en verdi i feltet Hub.</span><span class="sxs-lookup"><span data-stu-id="cadb5-115">In the Hub field, enter or select a value.</span></span>
+9. <span data-ttu-id="cadb5-116">Velg et alternativ i feltet Begrensningshandling.</span><span class="sxs-lookup"><span data-stu-id="cadb5-116">In the Constraint action field, select an option.</span></span>
+10. <span data-ttu-id="cadb5-117">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="cadb5-117">Click Save.</span></span>
+11. <span data-ttu-id="cadb5-118">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="cadb5-118">Close the page.</span></span>
 
 

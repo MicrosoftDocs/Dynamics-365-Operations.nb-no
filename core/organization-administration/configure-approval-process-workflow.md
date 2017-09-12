@@ -15,74 +15,74 @@ ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: eedadfcbfac9d792a5ab80c1dcd8f3abfaddca08
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkjenningsprosess i en arbeidsflyt
+# <a name="configure-an-approval-process-in-a-workflow"></a><span data-ttu-id="570fa-103">Konfigurere en godkjenningsprosess i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="570fa-103">Configure an approval process in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
+<span data-ttu-id="570fa-104">Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="570fa-104">Use the following procedure to configure the properties of the approval process.</span></span>
 
-Når du skal konfigurere en godkjenningsprosess i redigeringsprogrammet for arbeidsflyt, høyreklikker du godkjenningstrinnet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.
-Gi navn til godkjenningsprosessen
+<span data-ttu-id="570fa-105">Når du skal konfigurere en godkjenningsprosess i redigeringsprogrammet for arbeidsflyt, høyreklikker du godkjenningstrinnet og klikker deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="570fa-105">To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="570fa-106">Gi navn til godkjenningsprosessen</span><span class="sxs-lookup"><span data-stu-id="570fa-106">Name the approval process</span></span>
 -------------------------
 
-Bruk fremgangsmåten nedenfor for å sette et navn på godkjenningsprosessen.
-1.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
-2.  I feltet **Navn** angir du et unikt navn på godkjenningsprosessen.
+<span data-ttu-id="570fa-107">Bruk fremgangsmåten nedenfor for å sette et navn på godkjenningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="570fa-107">Follow these steps to enter a name for the approval process.</span></span>
+1.  <span data-ttu-id="570fa-108">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="570fa-108">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="570fa-109">I feltet **Navn** angir du et unikt navn på godkjenningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="570fa-109">In the **Name** field, enter a unique name for the approval process.</span></span>
 
-## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Angi når systemet skal utføre en handling med dokumentet automatisk
-Du kan konfigurere systemet slik at det automatisk utfører en handling på dokumenter som oppfyller bestemte betingelser. Systemet kan for eksempel godkjenne reiseregninger med totalsummer som er mindre enn USD 100. Følg denne fremgangsmåten for å angi når systemet utfører en handling på dokumentet.
-1.  I den venstre ruten klikker du **Automatiske handlinger**.
-2.  Merk av for **Aktiver automatiske handlinger**.
-3.  Klikk **Legg til betingelse**.
-4.  Angi en betingelse.
-5.  Angi flere betingelser om nødvendig.
-6.  Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:
-    1.  Klikk **Test** for å åpne skjemaet **Test arbeidsflytbetingelse**.
-    2.  Velg en post i **Valider betingelse**-området i skjemaet.
-    3.  Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
-    4.  Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.
+## <a name="specify-when-the-system-automatically-acts-on-the-document"></a><span data-ttu-id="570fa-110">Angi når systemet skal utføre en handling med dokumentet automatisk</span><span class="sxs-lookup"><span data-stu-id="570fa-110">Specify when the system automatically acts on the document</span></span>
+<span data-ttu-id="570fa-111">Du kan konfigurere systemet slik at det automatisk utfører en handling på dokumenter som oppfyller bestemte betingelser.</span><span class="sxs-lookup"><span data-stu-id="570fa-111">You can configure the system to automatically act on the document if specific conditions are met.</span></span> <span data-ttu-id="570fa-112">Systemet kan for eksempel godkjenne reiseregninger med totalsummer som er mindre enn USD 100.</span><span class="sxs-lookup"><span data-stu-id="570fa-112">For example, the system can approve expense reports that have total amounts that are less than USD 100.</span></span> <span data-ttu-id="570fa-113">Følg denne fremgangsmåten for å angi når systemet utfører en handling på dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-113">Follow these steps to specify when the system acts on the document.</span></span>
+1.  <span data-ttu-id="570fa-114">I den venstre ruten klikker du **Automatiske handlinger**.</span><span class="sxs-lookup"><span data-stu-id="570fa-114">In the left pane, click **Automatic actions**.</span></span>
+2.  <span data-ttu-id="570fa-115">Merk av for **Aktiver automatiske handlinger**.</span><span class="sxs-lookup"><span data-stu-id="570fa-115">Select the **Enable automatic actions** check box.</span></span>
+3.  <span data-ttu-id="570fa-116">Klikk **Legg til betingelse**.</span><span class="sxs-lookup"><span data-stu-id="570fa-116">Click **Add condition**.</span></span>
+4.  <span data-ttu-id="570fa-117">Angi en betingelse.</span><span class="sxs-lookup"><span data-stu-id="570fa-117">Enter a condition.</span></span>
+5.  <span data-ttu-id="570fa-118">Angi flere betingelser om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="570fa-118">Enter additional conditions, if necessary.</span></span>
+6.  <span data-ttu-id="570fa-119">Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:</span><span class="sxs-lookup"><span data-stu-id="570fa-119">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+    1.  <span data-ttu-id="570fa-120">Klikk **Test** for å åpne skjemaet **Test arbeidsflytbetingelse**.</span><span class="sxs-lookup"><span data-stu-id="570fa-120">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2.  <span data-ttu-id="570fa-121">Velg en post i **Valider betingelse**-området i skjemaet.</span><span class="sxs-lookup"><span data-stu-id="570fa-121">Select a record in the **Validate condition** area of the form.</span></span>
+    3.  <span data-ttu-id="570fa-122">Klikk **Test**.</span><span class="sxs-lookup"><span data-stu-id="570fa-122">Click **Test**.</span></span> <span data-ttu-id="570fa-123">Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.</span><span class="sxs-lookup"><span data-stu-id="570fa-123">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4.  <span data-ttu-id="570fa-124">Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="570fa-124">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
 
-7.  I listen **Autofullføringshandling** velger du handlingen som systemet skal utføre på dokumentet.
+7.  <span data-ttu-id="570fa-125">I listen **Autofullføringshandling** velger du handlingen som systemet skal utføre på dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-125">In the **Auto complete action** list, select the action that the system should take on the document.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
-Du kan sende meldinger til personer når et dokument er godkjent, avvist, delegert eller videresendt, eller når det er bedt om en endring. Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.
-1.  I den venstre ruten klikker du **Varslinger**.
-2.  Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:
-    -   **Representant** – Når et dokument er tilordnet til en annen bruker for godkjenning.
-    -   **Videresend** – Når den tilordnede brukeren ikke har gjort noe på et dokument i tildelt tidsrom.
-    -   **Godkjenn** – Når et dokument er godkjent.
-    -   **Avvis** – Når et dokument er avvist.
-    -   **Be om endring** – Når den tilordnede brukeren har bedt om en endring i et dokument som ble sendt.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="570fa-126">Angi når varslinger skal sendes</span><span class="sxs-lookup"><span data-stu-id="570fa-126">Specify when notifications are sent</span></span>
+<span data-ttu-id="570fa-127">Du kan sende meldinger til personer når et dokument er godkjent, avvist, delegert eller videresendt, eller når det er bedt om en endring.</span><span class="sxs-lookup"><span data-stu-id="570fa-127">You can send notifications to people when a document has been approved, rejected, delegated, or escalated, or when a change has been requested.</span></span> <span data-ttu-id="570fa-128">Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="570fa-128">Follow these steps to specify when notifications are sent, and who the notifications are sent to.</span></span>
+1.  <span data-ttu-id="570fa-129">I den venstre ruten klikker du **Varslinger**.</span><span class="sxs-lookup"><span data-stu-id="570fa-129">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="570fa-130">Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:</span><span class="sxs-lookup"><span data-stu-id="570fa-130">Select the check box next to the events to send notifications for:</span></span>
+    -   <span data-ttu-id="570fa-131">**Representant** – Når et dokument er tilordnet til en annen bruker for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="570fa-131">**Delegate** – When a document has been assigned to another user for approval.</span></span>
+    -   <span data-ttu-id="570fa-132">**Videresend** – Når den tilordnede brukeren ikke har gjort noe på et dokument i tildelt tidsrom.</span><span class="sxs-lookup"><span data-stu-id="570fa-132">**Escalate** – When the assigned user has not acted on a document in the allotted time.</span></span>
+    -   <span data-ttu-id="570fa-133">**Godkjenn** – Når et dokument er godkjent.</span><span class="sxs-lookup"><span data-stu-id="570fa-133">**Approve** – When a document has been approved.</span></span>
+    -   <span data-ttu-id="570fa-134">**Avvis** – Når et dokument er avvist.</span><span class="sxs-lookup"><span data-stu-id="570fa-134">**Reject** – When a document has been rejected.</span></span>
+    -   <span data-ttu-id="570fa-135">**Be om endring** – Når den tilordnede brukeren har bedt om en endring i et dokument som ble sendt.</span><span class="sxs-lookup"><span data-stu-id="570fa-135">**Request change** – When the assigned user has requested a change to a document that was submitted.</span></span>
 
-3.  Velg raden for en hendelse du valgte i trinn 2.
-4.  Klikk kategorien **Varslingstekst**.
-5.  I tekstboksen angir du teksten for varslingen.
-6.  Du kan tilpasse teksten ved å sette inn plassholdere som vil bli erstattet med de aktuelle dataene når de vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
-    1.  Klikk i tekstboksen der plassholderen skal vises.
-    2.  Klikk **Sett inn plassholder**.
-    3.  I listen som vises, velger du plassholderen du vil sette inn.
-    4.  Klikk **Sett inn**.
+3.  <span data-ttu-id="570fa-136">Velg raden for en hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="570fa-136">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="570fa-137">Klikk kategorien **Varslingstekst**.</span><span class="sxs-lookup"><span data-stu-id="570fa-137">Click the **Notification text** tab.</span></span>
+5.  <span data-ttu-id="570fa-138">I tekstboksen angir du teksten for varslingen.</span><span class="sxs-lookup"><span data-stu-id="570fa-138">In the text box, enter the text for the notification.</span></span>
+6.  <span data-ttu-id="570fa-139">Du kan tilpasse teksten ved å sette inn plassholdere som vil bli erstattet med de aktuelle dataene når de vises til brukerne.</span><span class="sxs-lookup"><span data-stu-id="570fa-139">To personalize the text, you can insert placeholders, which are replaced with the appropriate data when they are displayed to users.</span></span> <span data-ttu-id="570fa-140">Følg denne fremgangsmåten for å sette inn en plassholder:</span><span class="sxs-lookup"><span data-stu-id="570fa-140">To insert a placeholder, follow these steps:</span></span>
+    1.  <span data-ttu-id="570fa-141">Klikk i tekstboksen der plassholderen skal vises.</span><span class="sxs-lookup"><span data-stu-id="570fa-141">Click in the text box at the location where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="570fa-142">Klikk **Sett inn plassholder**.</span><span class="sxs-lookup"><span data-stu-id="570fa-142">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="570fa-143">I listen som vises, velger du plassholderen du vil sette inn.</span><span class="sxs-lookup"><span data-stu-id="570fa-143">In the list that is displayed, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="570fa-144">Klikk **Sett inn**.</span><span class="sxs-lookup"><span data-stu-id="570fa-144">Click **Insert**.</span></span>
 
-7.  Hvis du vil legge til oversettelser av varslingen, klikker du **Oversettelser**. I skjemaet som vises, gjør du følgende:
-    1.  Klikk **Legg til**.
-    2.  I listen som vises, velger du språket teksten skal angis på.
-    3.  I tekstboksen **Oversatt tekst** legger du inn teksten.
-    4.  Hvis du vil tilpasse teksten, kan du sette inn plassholdere.
-    5.  Klikk **Lukk**.
+7.  <span data-ttu-id="570fa-145">Hvis du vil legge til oversettelser av varslingen, klikker du **Oversettelser**.</span><span class="sxs-lookup"><span data-stu-id="570fa-145">To add translations of the notification, click **Translations**.</span></span> <span data-ttu-id="570fa-146">I skjemaet som vises, gjør du følgende:</span><span class="sxs-lookup"><span data-stu-id="570fa-146">In the form that is displayed, follow these steps:</span></span>
+    1.  <span data-ttu-id="570fa-147">Klikk **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="570fa-147">Click **Add**.</span></span>
+    2.  <span data-ttu-id="570fa-148">I listen som vises, velger du språket teksten skal angis på.</span><span class="sxs-lookup"><span data-stu-id="570fa-148">In the list that is displayed, select the language in which you will enter the text.</span></span>
+    3.  <span data-ttu-id="570fa-149">I tekstboksen **Oversatt tekst** legger du inn teksten.</span><span class="sxs-lookup"><span data-stu-id="570fa-149">In the **Translated text** text box, enter the text.</span></span>
+    4.  <span data-ttu-id="570fa-150">Hvis du vil tilpasse teksten, kan du sette inn plassholdere.</span><span class="sxs-lookup"><span data-stu-id="570fa-150">To personalize the text, insert placeholders.</span></span>
+    5.  <span data-ttu-id="570fa-151">Klikk **Lukk**.</span><span class="sxs-lookup"><span data-stu-id="570fa-151">Click **Close**.</span></span>
 
-8.  Klikk kategorien **Mottaker**.
-9.  Angi hvem varslingene skal sendes til. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for alternativet før du går til trinn 10.
+8.  <span data-ttu-id="570fa-152">Klikk kategorien **Mottaker**.</span><span class="sxs-lookup"><span data-stu-id="570fa-152">Click the **Recipient** tab.</span></span>
+9.  <span data-ttu-id="570fa-153">Angi hvem varslingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="570fa-153">Specify who the notifications are sent to.</span></span> <span data-ttu-id="570fa-154">Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for alternativet før du går til trinn 10.</span><span class="sxs-lookup"><span data-stu-id="570fa-154">Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.</span></span>
 
     <table>
     <colgroup>
@@ -92,80 +92,80 @@ Du kan sende meldinger til personer når et dokument er godkjent, avvist, delege
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Alternativ</th>
-    <th>Varslingsmottakere</th>
-    <th>Tilleggstrinn</th>
+    <th><span data-ttu-id="570fa-155">Alternativ</span><span class="sxs-lookup"><span data-stu-id="570fa-155">Option</span></span></th>
+    <th><span data-ttu-id="570fa-156">Varslingsmottakere</span><span class="sxs-lookup"><span data-stu-id="570fa-156">Notification recipients</span></span></th>
+    <th><span data-ttu-id="570fa-157">Tilleggstrinn</span><span class="sxs-lookup"><span data-stu-id="570fa-157">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><strong>Deltaker</strong></td>
-    <td>Brukere som er tilordnet til en bestemt gruppe eller rolle</td>
+    <td><span data-ttu-id="570fa-158"><strong>Deltaker</strong></span><span class="sxs-lookup"><span data-stu-id="570fa-158"><strong>Participant</strong></span></span></td>
+    <td><span data-ttu-id="570fa-159">Brukere som er tilordnet til en bestemt gruppe eller rolle</span><span class="sxs-lookup"><span data-stu-id="570fa-159">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Når du har valgt <strong>Deltaker</strong>, klikker du <strong>Rollebasert</strong>-kategorien.</li>
-    <li>I <strong>Type deltaker</strong>-listen velger du typen gruppe eller rolle som varslingene skal sendes til.</li>
-    <li>I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som varslingene skal sendes til.</li>
+    <li><span data-ttu-id="570fa-160">Når du har valgt <strong>Deltaker</strong>, klikker du <strong>Rollebasert</strong>-kategorien.</span><span class="sxs-lookup"><span data-stu-id="570fa-160">After you select <strong>Participant</strong>, click the <strong>Role based</strong> tab.</span></span></li>
+    <li><span data-ttu-id="570fa-161">I <strong>Type deltaker</strong>-listen velger du typen gruppe eller rolle som varslingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="570fa-161">In the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="570fa-162">I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som varslingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="570fa-162">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td><strong>Arbeidsflytbruker</strong></td>
-    <td>Brukere som deltar i den gjeldende arbeidsflyten</td>
+    <td><span data-ttu-id="570fa-163"><strong>Arbeidsflytbruker</strong></span><span class="sxs-lookup"><span data-stu-id="570fa-163"><strong>Workflow user</strong></span></span></td>
+    <td><span data-ttu-id="570fa-164">Brukere som deltar i den gjeldende arbeidsflyten</span><span class="sxs-lookup"><span data-stu-id="570fa-164">Users who participate in the current workflow</span></span></td>
     <td><ol>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>, klikker du <strong>Arbeidsflytbruker</strong>-kategorien.</li>
-    <li>I <strong>Arbeidsflytbruker</strong>-listen velger du en bruker som deltar i arbeidsflyten.</li>
+    <li><span data-ttu-id="570fa-165">Når du har valgt <strong>Arbeidsflytbruker</strong>, klikker du <strong>Arbeidsflytbruker</strong>-kategorien.</span><span class="sxs-lookup"><span data-stu-id="570fa-165">After you select <strong>Workflow user</strong>, click the <strong>Workflow user</strong> tab.</span></span></li>
+    <li><span data-ttu-id="570fa-166">I <strong>Arbeidsflytbruker</strong>-listen velger du en bruker som deltar i arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="570fa-166">In the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>Bruker</strong></td>
-    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</td>
+    <td><span data-ttu-id="570fa-167"><strong>Bruker</strong></span><span class="sxs-lookup"><span data-stu-id="570fa-167"><strong>User</strong></span></span></td>
+    <td><span data-ttu-id="570fa-168">Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</span><span class="sxs-lookup"><span data-stu-id="570fa-168">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Microsoft Dynamics 365 for Finance and Operations-brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+    <li><span data-ttu-id="570fa-169">Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</span><span class="sxs-lookup"><span data-stu-id="570fa-169">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="570fa-170"><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Microsoft Dynamics 365 for Finance and Operations-brukere.</span><span class="sxs-lookup"><span data-stu-id="570fa-170">The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users.</span></span> <span data-ttu-id="570fa-171">Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</span><span class="sxs-lookup"><span data-stu-id="570fa-171">Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-10. Gjenta trinn 3 til 9 for hver hendelse du valgte i trinn 2.
+10. <span data-ttu-id="570fa-172">Gjenta trinn 3 til 9 for hver hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="570fa-172">Repeat steps 3 through 9 for each event that you selected in step 2.</span></span>
 
-## <a name="specify-a-final-approver"></a> Angi en endelig godkjenner
-Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er personen som sendte dokumentet til godkjenning. Hvis du vil angi en endelig godkjenner, følger du fremgangsmåten nedenfor.
-1.  Klikk **Avanserte innstillinger** i ruten til venstre.
-2.  Merk av for **Bruk siste godkjenner**.
-3.  Velg den brukeren som skal være den endelig godkjenneren, fra listen.
+## <a name="specify-a-final-approver"></a><span data-ttu-id="570fa-173"> Angi en endelig godkjenner</span><span class="sxs-lookup"><span data-stu-id="570fa-173">Specify a final approver</span></span>
+<span data-ttu-id="570fa-174">Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er personen som sendte dokumentet til godkjenning.</span><span class="sxs-lookup"><span data-stu-id="570fa-174">You may want to designate a final approver for scenarios where the approver is the person who submitted the document for approval.</span></span> <span data-ttu-id="570fa-175">Hvis du vil angi en endelig godkjenner, følger du fremgangsmåten nedenfor.</span><span class="sxs-lookup"><span data-stu-id="570fa-175">Follow these steps to specify a final approver.</span></span>
+1.  <span data-ttu-id="570fa-176">Klikk **Avanserte innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="570fa-176">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="570fa-177">Merk av for **Bruk siste godkjenner**.</span><span class="sxs-lookup"><span data-stu-id="570fa-177">Select the **Use final approver** check box.</span></span>
+3.  <span data-ttu-id="570fa-178">Velg den brukeren som skal være den endelig godkjenneren, fra listen.</span><span class="sxs-lookup"><span data-stu-id="570fa-178">In the list, select the user to be the final approver.</span></span>
 
-## <a name="set-a-time-limit"></a>Angi en tidsfrist
-Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.
-| **Obs!**                                                                                                                                                |
+## <a name="set-a-time-limit"></a><span data-ttu-id="570fa-179">Angi en tidsfrist</span><span class="sxs-lookup"><span data-stu-id="570fa-179">Set a time limit</span></span>
+<span data-ttu-id="570fa-180">Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="570fa-180">Follow these steps if the approval process must be completed in a specific time.</span></span>
+| <span data-ttu-id="570fa-181">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="570fa-181">**Note**</span></span>                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Alternativene du velger her, overstyrer alternativene du valgte i områdene **Tildeling** og **Eskalering** i hvert godkjenningstrinn. |
+| <span data-ttu-id="570fa-182">Alternativene du velger her, overstyrer alternativene du valgte i områdene **Tildeling** og **Eskalering** i hvert godkjenningstrinn.</span><span class="sxs-lookup"><span data-stu-id="570fa-182">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span> |
 
-1.  Klikk **Avanserte innstillinger** i ruten til venstre.
-2.  Merk av for **Angi en tidsgrense for arbeidsflyt** **-element**.
-3.  I **Varighet**-feltet angir du når godkjenningsprosessen må være fullført. Velg ett av følgende alternativer:
-    -   **Timer** – Angi antall timer godkjenningsprosessen må være fullført innen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
-    -   **Dager** – Angi antall dager godkjenningsprosessen må være fullført innen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
-    -   **Uker** – Angi antall uker godkjenningsprosessen må være fullført innen.
-    -   **Måneder** – Velg dagen og uken godkjenningsprosessen må være fullført innen. Det kan for eksempel hende du vil at godkjenningsprosessen skal være fullført fredag i den tredje uken i måneden.
-    -   **År** – Velg dagen, uken og måneden godkjenningsprosessen må være fullført innen. Det kan for eksempel hende du vil at godkjenningsprosessen skal være fullført fredag i den tredje uken i desember.
+1.  <span data-ttu-id="570fa-183">Klikk **Avanserte innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="570fa-183">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="570fa-184">Merk av for **Angi en tidsgrense for arbeidsflyt** **-element**.</span><span class="sxs-lookup"><span data-stu-id="570fa-184">Select the **Set a time limit for the workflow** **element** check box.</span></span>
+3.  <span data-ttu-id="570fa-185">I **Varighet**-feltet angir du når godkjenningsprosessen må være fullført.</span><span class="sxs-lookup"><span data-stu-id="570fa-185">In the **Duration** field, specify when the approval process must be completed.</span></span> <span data-ttu-id="570fa-186">Velg ett av følgende alternativer:</span><span class="sxs-lookup"><span data-stu-id="570fa-186">Select one of the following options:</span></span>
+    -   <span data-ttu-id="570fa-187">**Timer** – Angi antall timer godkjenningsprosessen må være fullført innen.</span><span class="sxs-lookup"><span data-stu-id="570fa-187">**Hours** – Enter the number of hours in which the approval process must be completed.</span></span> <span data-ttu-id="570fa-188">Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.</span><span class="sxs-lookup"><span data-stu-id="570fa-188">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="570fa-189">**Dager** – Angi antall dager godkjenningsprosessen må være fullført innen.</span><span class="sxs-lookup"><span data-stu-id="570fa-189">**Days** – Enter the number of days in which the approval process must be completed.</span></span> <span data-ttu-id="570fa-190">Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.</span><span class="sxs-lookup"><span data-stu-id="570fa-190">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="570fa-191">**Uker** – Angi antall uker godkjenningsprosessen må være fullført innen.</span><span class="sxs-lookup"><span data-stu-id="570fa-191">**Weeks** – Enter the number of weeks in which the approval process must be completed.</span></span>
+    -   <span data-ttu-id="570fa-192">**Måneder** – Velg dagen og uken godkjenningsprosessen må være fullført innen.</span><span class="sxs-lookup"><span data-stu-id="570fa-192">**Months** – Select the day and week by which the approval process must be completed.</span></span> <span data-ttu-id="570fa-193">Det kan for eksempel hende du vil at godkjenningsprosessen skal være fullført fredag i den tredje uken i måneden.</span><span class="sxs-lookup"><span data-stu-id="570fa-193">For example, you may want the approval process to be completed by Friday of the third week of the month.</span></span>
+    -   <span data-ttu-id="570fa-194">**År** – Velg dagen, uken og måneden godkjenningsprosessen må være fullført innen.</span><span class="sxs-lookup"><span data-stu-id="570fa-194">**Years** – Select the day, week, and month by which the approval process must be completed.</span></span> <span data-ttu-id="570fa-195">Det kan for eksempel hende du vil at godkjenningsprosessen skal være fullført fredag i den tredje uken i desember.</span><span class="sxs-lookup"><span data-stu-id="570fa-195">For example, you may want the approval process to be completed by Friday of the third week of December.</span></span>
 
-4.  Hvis tidsgrensen overskrides, vil systemet gjøre noe med dokumentet. I listen **Handling** velger du den handlingen som systemet skal utføre.
+4.  <span data-ttu-id="570fa-196">Hvis tidsgrensen overskrides, vil systemet gjøre noe med dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-196">If the time limit is exceeded, the system acts on the document.</span></span> <span data-ttu-id="570fa-197">I listen **Handling** velger du den handlingen som systemet skal utføre.</span><span class="sxs-lookup"><span data-stu-id="570fa-197">In the **Action** list, select the action that the system should take.</span></span>
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Angi hvilke handlinger som er tilgjengelige for brukeren
-Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en handling med dokument. Følg denne fremgangsmåten for å angi hvilke handlinger brukeren kan utføre med det sendte dokumentet.
-1.  Klikk **Avanserte innstillinger** i ruten til venstre.
-2.  Merk av for **Godkjenn** hvis brukeren kan godkjenne dokumentet.
-3.  Merk av for **Avvis** hvis brukeren kan avvise dokumentet.
-4.  Merk av for **Be om endring** hvis du brukeren kan be om endringer av dokumentet.
-5.  Merk av for **Representant** hvis brukeren kan tilordne dokumentet til en annen bruker for godkjenning.
+## <a name="specify-which-actions-are-available-to-the-user"></a><span data-ttu-id="570fa-198">Angi hvilke handlinger som er tilgjengelige for brukeren</span><span class="sxs-lookup"><span data-stu-id="570fa-198">Specify which actions are available to the user</span></span>
+<span data-ttu-id="570fa-199">Når et dokument tilordnes en bruker for godkjenning, må brukeren utføre en handling med dokument.</span><span class="sxs-lookup"><span data-stu-id="570fa-199">When a document is assigned to a user for approval, the user must act on the document.</span></span> <span data-ttu-id="570fa-200">Følg denne fremgangsmåten for å angi hvilke handlinger brukeren kan utføre med det sendte dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-200">Follows these steps to specify which actions the user can take on the document that was submitted.</span></span>
+1.  <span data-ttu-id="570fa-201">Klikk **Avanserte innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="570fa-201">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="570fa-202">Merk av for **Godkjenn** hvis brukeren kan godkjenne dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-202">Select the **Approve** check box if the user can approve the document.</span></span>
+3.  <span data-ttu-id="570fa-203">Merk av for **Avvis** hvis brukeren kan avvise dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-203">Select the **Reject** check box the user can reject the document.</span></span>
+4.  <span data-ttu-id="570fa-204">Merk av for **Be om endring** hvis du brukeren kan be om endringer av dokumentet.</span><span class="sxs-lookup"><span data-stu-id="570fa-204">Select the **Request change** check box the user can request changes to the document.</span></span>
+5.  <span data-ttu-id="570fa-205">Merk av for **Representant** hvis brukeren kan tilordne dokumentet til en annen bruker for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="570fa-205">Select the **Delegate** check box if the user can assign the document to another user for approval.</span></span>
 
-**Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal** er utgått.
+<span data-ttu-id="570fa-206">**Merk**: Avmerkingsboksen **Aktiver handlinger fra arbeidslisten i Enterprise Portal** er utgått.</span><span class="sxs-lookup"><span data-stu-id="570fa-206">**Note**: The **Enable actions from the work list in Enterprise Portal** check box has been deprecated.</span></span>
 
-## <a name="configure-the-approval-steps"></a> Konfigurere godkjenningstrinnene
-En godkjenningsprosess består av godkjenningstrinn. Fullfør fremgangsmåten nedenfor for å legge til trinn i godkjenningsprosessen og konfigurere trinnene.
-1.  Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt. Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.
-2.  Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.
-3.  Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere et godkjenningstrinn](configure-approval-step-workflow.md).
+## <a name="configure-the-approval-steps"></a><span data-ttu-id="570fa-207"> Konfigurere godkjenningstrinnene</span><span class="sxs-lookup"><span data-stu-id="570fa-207">Configure the approval steps</span></span>
+<span data-ttu-id="570fa-208">En godkjenningsprosess består av godkjenningstrinn.</span><span class="sxs-lookup"><span data-stu-id="570fa-208">An approval process consists of approval steps.</span></span> <span data-ttu-id="570fa-209">Fullfør fremgangsmåten nedenfor for å legge til trinn i godkjenningsprosessen og konfigurere trinnene.</span><span class="sxs-lookup"><span data-stu-id="570fa-209">Complete the following procedure to add steps the approval process and configure the steps.</span></span>
+1.  <span data-ttu-id="570fa-210">Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="570fa-210">In the workflow editor, double-click the approval process.</span></span> <span data-ttu-id="570fa-211">Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="570fa-211">The workflow editor displays the steps of the approval process.</span></span>
+2.  <span data-ttu-id="570fa-212">Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.</span><span class="sxs-lookup"><span data-stu-id="570fa-212">To add an approval step, drag the step from the **Workflow elements** area to the canvas.</span></span>
+3.  <span data-ttu-id="570fa-213">Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere et godkjenningstrinn](configure-approval-step-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="570fa-213">To configure an approval step, see [Configure an approval step](configure-approval-step-workflow.md).</span></span>
 
 
 

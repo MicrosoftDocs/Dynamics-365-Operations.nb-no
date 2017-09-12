@@ -16,57 +16,57 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6e1d7a54055829a1e9215a44f8eba346291f6717
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 09eaf28b0f4ed93d602f84688369614c17502d95
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)
+# <a name="run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="90b3f-103">Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="90b3f-103">Run format to use Document Management files in format outputs for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata. Denne fremgangsmåten kan utføres i firmaet DEMF.
+<span data-ttu-id="90b3f-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata.</span><span class="sxs-lookup"><span data-stu-id="90b3f-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="90b3f-105">Denne fremgangsmåten kan utføres i firmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="90b3f-105">These steps can be performed in the DEMF company.</span></span>
 
-For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Bruke dokumentbehandlingsfiler i formatutdata (del 3: Opprette format).
+<span data-ttu-id="90b3f-106">For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Bruke dokumentbehandlingsfiler i formatutdata (del 3: Opprette format).</span><span class="sxs-lookup"><span data-stu-id="90b3f-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 3: Create format)” procedure.</span></span>
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="90b3f-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="90b3f-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a>Legge til nødvendige vedlegg for salgsordre for én enkelt faktura
-1. Gå til Kunder > Fakturaer > Åpne kundefakturaer.
-2. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Faktura-feltet med verdien CIV-000148.
-    * CIV-000148  
-3. Klikk for å følge koblingen for den valgte fakturaen.
-    * CIV-000148  
-4. Klikk for å følge koblingen i feltet Salgsordre.
-    * 000148  
-5. Velg alternativet Hode i feltet Linjer eller hode.
-    * Velg toppteksten for å angi at dette vil være målet for å legge til vedlegg.  
-6. Klikk Vedlegg.
-    * Legg til noen filer som vedlegg for denne salgsordren. Bruk filene med dokumenttyper som støttes av dokumentbehandling (med filtypen DOCX, DPF, XML, JPG osv.). Bla gjennom og velg filer som skal legges ved og ytterligere behandles med den tilknyttede fakturaen i den elektroniske ER-meldingen.  
-7. Klikk Ny.
-8. Klikk Fil.
-9. Klikk Ny.
-10. Klikk Fil.
-11. Lukk siden.
-12. Lukk siden.
-13. Lukk siden.
-14. Lukk siden.
+## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a><span data-ttu-id="90b3f-108">Legge til nødvendige vedlegg for salgsordre for én enkelt faktura</span><span class="sxs-lookup"><span data-stu-id="90b3f-108">Add necessary attachments for sales order of a single invoice</span></span>
+1. <span data-ttu-id="90b3f-109">Gå til Kunder > Fakturaer > Åpne kundefakturaer.</span><span class="sxs-lookup"><span data-stu-id="90b3f-109">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="90b3f-110">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="90b3f-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="90b3f-111">Du kan for eksempel filtrere på Faktura-feltet med verdien CIV-000148.</span><span class="sxs-lookup"><span data-stu-id="90b3f-111">For example, filter on the Invoice field with a value of 'CIV-000148'.</span></span>
+    * <span data-ttu-id="90b3f-112">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="90b3f-112">CIV-000148</span></span>  
+3. <span data-ttu-id="90b3f-113">Klikk for å følge koblingen for den valgte fakturaen.</span><span class="sxs-lookup"><span data-stu-id="90b3f-113">Click to follow the selected invoice’s link.</span></span>
+    * <span data-ttu-id="90b3f-114">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="90b3f-114">CIV-000148</span></span>  
+4. <span data-ttu-id="90b3f-115">Klikk for å følge koblingen i feltet Salgsordre.</span><span class="sxs-lookup"><span data-stu-id="90b3f-115">Click to follow the link in the Sales order field.</span></span>
+    * <span data-ttu-id="90b3f-116">000148</span><span class="sxs-lookup"><span data-stu-id="90b3f-116">000148</span></span>  
+5. <span data-ttu-id="90b3f-117">Velg alternativet Hode i feltet Linjer eller hode.</span><span class="sxs-lookup"><span data-stu-id="90b3f-117">In the Lines or header field, select the option of Header.</span></span>
+    * <span data-ttu-id="90b3f-118">Velg toppteksten for å angi at dette vil være målet for å legge til vedlegg.</span><span class="sxs-lookup"><span data-stu-id="90b3f-118">Select Header to indicate that this will be the target for adding attachments.</span></span>  
+6. <span data-ttu-id="90b3f-119">Klikk Vedlegg.</span><span class="sxs-lookup"><span data-stu-id="90b3f-119">Click Attach.</span></span>
+    * <span data-ttu-id="90b3f-120">Legg til noen filer som vedlegg for denne salgsordren.</span><span class="sxs-lookup"><span data-stu-id="90b3f-120">Add a few files as attachments for this sales order.</span></span> <span data-ttu-id="90b3f-121">Bruk filene med dokumenttyper som støttes av dokumentbehandling (med filtypen DOCX, DPF, XML, JPG osv.).</span><span class="sxs-lookup"><span data-stu-id="90b3f-121">Use the files of the document types that are supported by the Document Management (with file extensions DOCX, DPF, XML, JPG, etc.).</span></span> <span data-ttu-id="90b3f-122">Bla gjennom og velg filer som skal legges ved og ytterligere behandles med den tilknyttede fakturaen i den elektroniske ER-meldingen.</span><span class="sxs-lookup"><span data-stu-id="90b3f-122">Browse and select files to be attached and further processed with the related invoice in the ER electronic message.</span></span>  
+7. <span data-ttu-id="90b3f-123">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="90b3f-123">Click New.</span></span>
+8. <span data-ttu-id="90b3f-124">Klikk Fil.</span><span class="sxs-lookup"><span data-stu-id="90b3f-124">Click File.</span></span>
+9. <span data-ttu-id="90b3f-125">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="90b3f-125">Click New.</span></span>
+10. <span data-ttu-id="90b3f-126">Klikk Fil.</span><span class="sxs-lookup"><span data-stu-id="90b3f-126">Click File.</span></span>
+11. <span data-ttu-id="90b3f-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90b3f-127">Close the page.</span></span>
+12. <span data-ttu-id="90b3f-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90b3f-128">Close the page.</span></span>
+13. <span data-ttu-id="90b3f-129">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90b3f-129">Close the page.</span></span>
+14. <span data-ttu-id="90b3f-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90b3f-130">Close the page.</span></span>
 
-## <a name="run-the-designed-report-for-the-selected-invoice"></a>Kjøre den utformede rapporten for den valgte fakturaen
-1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-2. Utvid Kundefakturamodell i treet.
-3. Utvid Kundefakturamodell\Kundefakturamodell (egendefinert) i treet.
-4. Velg Kundefakturamodell\Kundefakturamodell (egendefinert)\Eksempelmelding for elektronisk faktura i treet.
-5. Klikk Kjør.
-6. Utvid delen Poster som skal inkluderes ().
-7. Klikk Filter.
-8. Merk raden for feltet Kundefakturajournal og Salgsordre.
-9. Skriv inn 000148 i Kriterier-feltet.
-    * I kriteriefeltet Salgsordre skriver du inn ordrenummeret 000148.  
-10. Klikk OK.
-11. Klikk OK.
-    * Se gjennom de genererte utdataene. Legg merke til at for hvert vedlegg er det opprettet en enkelt XML-node. Innholdet i vedlegget blir fylt ut i XML-utdataene i MIME (base64)-tekstformat.  
+## <a name="run-the-designed-report-for-the-selected-invoice"></a><span data-ttu-id="90b3f-131">Kjøre den utformede rapporten for den valgte fakturaen</span><span class="sxs-lookup"><span data-stu-id="90b3f-131">Run the designed report for the selected invoice</span></span>
+1. <span data-ttu-id="90b3f-132">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="90b3f-132">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="90b3f-133">Utvid Kundefakturamodell i treet.</span><span class="sxs-lookup"><span data-stu-id="90b3f-133">In the tree, expand 'Customer invoice model'.</span></span>
+3. <span data-ttu-id="90b3f-134">Utvid Kundefakturamodell\Kundefakturamodell (egendefinert) i treet.</span><span class="sxs-lookup"><span data-stu-id="90b3f-134">In the tree, expand 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="90b3f-135">Velg Kundefakturamodell\Kundefakturamodell (egendefinert)\Eksempelmelding for elektronisk faktura i treet.</span><span class="sxs-lookup"><span data-stu-id="90b3f-135">In the tree, select 'Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message'.</span></span>
+5. <span data-ttu-id="90b3f-136">Klikk Kjør.</span><span class="sxs-lookup"><span data-stu-id="90b3f-136">Click Run.</span></span>
+6. <span data-ttu-id="90b3f-137">Utvid delen Poster som skal inkluderes ().</span><span class="sxs-lookup"><span data-stu-id="90b3f-137">Expand the Records to include () section.</span></span>
+7. <span data-ttu-id="90b3f-138">Klikk Filter.</span><span class="sxs-lookup"><span data-stu-id="90b3f-138">Click Filter.</span></span>
+8. <span data-ttu-id="90b3f-139">Merk raden for feltet Kundefakturajournal og Salgsordre.</span><span class="sxs-lookup"><span data-stu-id="90b3f-139">Select the row of the Customer invoice journal and the Sales order field.</span></span>
+9. <span data-ttu-id="90b3f-140">Skriv inn 000148 i Kriterier-feltet.</span><span class="sxs-lookup"><span data-stu-id="90b3f-140">In the Criteria field, type '000148'.</span></span>
+    * <span data-ttu-id="90b3f-141">I kriteriefeltet Salgsordre skriver du inn ordrenummeret 000148.</span><span class="sxs-lookup"><span data-stu-id="90b3f-141">In the criteria “Sales order” field, type the order number 000148.</span></span>  
+10. <span data-ttu-id="90b3f-142">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="90b3f-142">Click OK.</span></span>
+11. <span data-ttu-id="90b3f-143">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="90b3f-143">Click OK.</span></span>
+    * <span data-ttu-id="90b3f-144">Se gjennom de genererte utdataene.</span><span class="sxs-lookup"><span data-stu-id="90b3f-144">Review the generated output.</span></span> <span data-ttu-id="90b3f-145">Legg merke til at for hvert vedlegg er det opprettet en enkelt XML-node.</span><span class="sxs-lookup"><span data-stu-id="90b3f-145">Note that for each attachment a single XML node has been created.</span></span> <span data-ttu-id="90b3f-146">Innholdet i vedlegget blir fylt ut i XML-utdataene i MIME (base64)-tekstformat.</span><span class="sxs-lookup"><span data-stu-id="90b3f-146">The attachment’s content is populated to the XML output in MIME (base64) text format.</span></span>  
 
 

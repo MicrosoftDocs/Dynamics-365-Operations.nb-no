@@ -16,35 +16,35 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3003a0dfa30c981eacfd5a643a1c5e902c2ba45d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Administrere en datakilde for kostnadsregnskapsfinansen
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="631d2-103">Administrere en datakilde for kostnadsregnskapsfinansen</span><span class="sxs-lookup"><span data-stu-id="631d2-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans. Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter". Denne registreringen bruker USP2-demodatafirmaet.
+<span data-ttu-id="631d2-104">Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="631d2-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="631d2-105">Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter".</span><span class="sxs-lookup"><span data-stu-id="631d2-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="631d2-106">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="631d2-106">This recording uses the USP2 demo data company.</span></span>
 
-1. Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.
-2. Finn og velg ønsket post i listen.
-3. Klikk Faktiske versjoner.
-4. Klikk Administrer i handlingsruten.
-5. Klikk Økonomimodul.
-6. Klikk Ny.
-7. Skriv inn en verdi i Navn-feltet.
-8. Angi eller velg en verdi i feltet Dataleverandør.
-    * Velg For Dynamics 365 for Finance and Operations - finansoppføringer for dette eksemplet.  
-9. Angi eller velg en verdi i feltet Kostnadselementdimensjon.
-    * Velg Kostnadselementer for dette eksemplet.  
-10. Klikk Lagre.
-11. Klikk Konfigurer dataleverandør.
-12. Angi eller velg en verdi i feltet Juridisk enhet.
-    * Velg USP2 for dette eksemplet.  
-13. Klikk Ny.
-14. Velg Gjeldende i feltet Posteringslag.
-15. Klikk OK.
+1. <span data-ttu-id="631d2-107">Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="631d2-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="631d2-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="631d2-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="631d2-109">Klikk Faktiske versjoner.</span><span class="sxs-lookup"><span data-stu-id="631d2-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="631d2-110">Klikk Administrer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="631d2-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="631d2-111">Klikk Økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="631d2-111">Click General ledger.</span></span>
+6. <span data-ttu-id="631d2-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="631d2-112">Click New.</span></span>
+7. <span data-ttu-id="631d2-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="631d2-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="631d2-114">Angi eller velg en verdi i feltet Dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="631d2-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="631d2-115">Velg For Dynamics 365 for Finance and Operations - finansoppføringer for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="631d2-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="631d2-116">Angi eller velg en verdi i feltet Kostnadselementdimensjon.</span><span class="sxs-lookup"><span data-stu-id="631d2-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="631d2-117">Velg Kostnadselementer for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="631d2-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="631d2-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="631d2-118">Click Save.</span></span>
+11. <span data-ttu-id="631d2-119">Klikk Konfigurer dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="631d2-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="631d2-120">Angi eller velg en verdi i feltet Juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="631d2-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="631d2-121">Velg USP2 for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="631d2-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="631d2-122">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="631d2-122">Click New.</span></span>
+14. <span data-ttu-id="631d2-123">Velg Gjeldende i feltet Posteringslag.</span><span class="sxs-lookup"><span data-stu-id="631d2-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="631d2-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="631d2-124">Click OK.</span></span>
 
 

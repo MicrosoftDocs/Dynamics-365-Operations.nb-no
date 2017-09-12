@@ -16,79 +16,79 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: afda8eb49fd8baa74abdac89fdf265631fda595b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 60b75399d3a69fbd32783f4c033f0086bba3e504
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
+# <a name="company-directory-mobile-workspace"></a><span data-ttu-id="ee3ab-103">Mobilt arbeidsområde for firmakatalog</span><span class="sxs-lookup"><span data-stu-id="ee3ab-103">Company directory mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om det mobile arbeidsområdet **Firmakatalog**. Dette arbeidsområdet lar brukere vise og kontakte andre ansatte i organisasjonen.
+<span data-ttu-id="ee3ab-104">Dette emnet gir informasjon om det mobile arbeidsområdet **Firmakatalog**.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-104">This topic provides information about the **Company directory** mobile workspace.</span></span> <span data-ttu-id="ee3ab-105">Dette arbeidsområdet lar brukere vise og kontakte andre ansatte i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-105">This workspace lets users view and contact other employees in their organization.</span></span>
 
-Dette mobile arbeidsområdet kan brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+<span data-ttu-id="ee3ab-106">Dette mobile arbeidsområdet kan brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-106">This mobile workspace can be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a>Oversikt
-Det mobile arbeidsområdet **Firmakatalog** lar brukere utføre disse oppgavene:
+## <a name="overview"></a><span data-ttu-id="ee3ab-107">Oversikt</span><span class="sxs-lookup"><span data-stu-id="ee3ab-107">Overview</span></span>
+<span data-ttu-id="ee3ab-108">Det mobile arbeidsområdet **Firmakatalog** lar brukere utføre disse oppgavene:</span><span class="sxs-lookup"><span data-stu-id="ee3ab-108">The **Company directory** mobile workspace lets users perform these tasks:</span></span>
 
-- Vis en liste over ansatte i organisasjonen.
-- Søk etter ansatte i organisasjonen.
-- Vis kontaktinformasjon for ansatte.
-- Kontakt ansatte fra profilinformasjonen.
+- <span data-ttu-id="ee3ab-109">Vis en liste over ansatte i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-109">View a list of employees in the organization.</span></span>
+- <span data-ttu-id="ee3ab-110">Søk etter ansatte i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-110">Search for employees in the organization.</span></span>
+- <span data-ttu-id="ee3ab-111">Vis kontaktinformasjon for ansatte.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-111">View contact information for employees.</span></span>
+- <span data-ttu-id="ee3ab-112">Kontakt ansatte fra profilinformasjonen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-112">Contact employees from the profile information.</span></span>
 
-## <a name="prerequisites"></a>Forutsetninger
-Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende forutsetninger.
+## <a name="prerequisites"></a><span data-ttu-id="ee3ab-113">Forutsetninger</span><span class="sxs-lookup"><span data-stu-id="ee3ab-113">Prerequisites</span></span>
+<span data-ttu-id="ee3ab-114">Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende forutsetninger.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-114">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Forutsetning</th>
-<th>Rolle</th>
-<th>beskrivelse</th>
+<th><span data-ttu-id="ee3ab-115">Forutsetning</span><span class="sxs-lookup"><span data-stu-id="ee3ab-115">Prerequisite</span></span></th>
+<th><span data-ttu-id="ee3ab-116">Rolle</span><span class="sxs-lookup"><span data-stu-id="ee3ab-116">Role</span></span></th>
+<th><span data-ttu-id="ee3ab-117">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="ee3ab-117">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Et av følgende produkter må distribueres i organisasjonen:
-<ul><li>Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<td><span data-ttu-id="ee3ab-118">Et av følgende produkter må distribueres i organisasjonen:</span><span class="sxs-lookup"><span data-stu-id="ee3ab-118">One of the following products must be deployed in your organization:</span></span>
+<ul><li><span data-ttu-id="ee3ab-119">Oppdateringen for juli 2017 av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</span><span class="sxs-lookup"><span data-stu-id="ee3ab-119">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span></li>
+<li><span data-ttu-id="ee3ab-120">Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="ee3ab-120">Microsoft Dynamics 365 for Talent</span></span></li>
 </ul>
 </td>
-<td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Finance and Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Talent distribuert i organisasjonen, kan en systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/en-us/dynamics365/talent">nettsiden for Talent</a>.
+<td><span data-ttu-id="ee3ab-121">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="ee3ab-121">System administrator</span></span></td>
+<td><span data-ttu-id="ee3ab-122">Hvis du ikke allerede har Finance and Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-122">If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span> <span data-ttu-id="ee3ab-123">Hvis du ikke allerede har Talent distribuert i organisasjonen, kan en systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/en-us/dynamics365/talent">nettsiden for Talent</a>.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-123">If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.</span></span>
 </td>
 </tr>
 <tr class="even">
-<td>Det mobile arbeidsområdet <strong>Firmakatalog</strong> må publiseres.</td>
-<td>Systemansvarlig</td>
-<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
+<td><span data-ttu-id="ee3ab-124">Det mobile arbeidsområdet <strong>Firmakatalog</strong> må publiseres.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-124">The <strong>Company directory</strong> mobile workspace must be published.</span></span></td>
+<td><span data-ttu-id="ee3ab-125">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="ee3ab-125">System administrator</span></span></td>
+<td><span data-ttu-id="ee3ab-126">Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-126">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
-Last ned og installer mobilappen Dynamics 365 for Unified Operations:
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="ee3ab-127">Laste ned og installere mobilappen</span><span class="sxs-lookup"><span data-stu-id="ee3ab-127">Download and install the mobile app</span></span>
+<span data-ttu-id="ee3ab-128">Last ned og installer mobilappen Dynamics 365 for Unified Operations:</span><span class="sxs-lookup"><span data-stu-id="ee3ab-128">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="ee3ab-129">For Android-telefoner</span><span class="sxs-lookup"><span data-stu-id="ee3ab-129">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="ee3ab-130">For iPhone</span><span class="sxs-lookup"><span data-stu-id="ee3ab-130">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
-1.  Start appen på mobilenheten.
-2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
-3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
-4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="ee3ab-131">Logge på mobilappen</span><span class="sxs-lookup"><span data-stu-id="ee3ab-131">Sign in to the mobile app</span></span>
+1.  <span data-ttu-id="ee3ab-132">Start appen på mobilenheten.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-132">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="ee3ab-133">Skriv inn URL-adressen til Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-133">Enter your Microsoft Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="ee3ab-134">Første gang du logger deg på, blir du bedt om brukernavn og passord.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-134">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="ee3ab-135">Angi legitimasjon.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-135">Enter your credentials.</span></span>
+4.  <span data-ttu-id="ee3ab-136">Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-136">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="ee3ab-137">Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-137">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="ee3ab-138">[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="ee3ab-138">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Vise firmakatalogen ved hjelp av det mobile arbeidsområdet
-1.  Velg arbeidsområdet **Firmakatalog** i mobilappen. Det vises en liste over ansatte.
-3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="ee3ab-139">Vise firmakatalogen ved hjelp av det mobile arbeidsområdet</span><span class="sxs-lookup"><span data-stu-id="ee3ab-139">View the company directory by using the mobile workspace</span></span>
+1.  <span data-ttu-id="ee3ab-140">Velg arbeidsområdet **Firmakatalog** i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-140">In the mobile app, select the **Company directory** workspace.</span></span> <span data-ttu-id="ee3ab-141">Det vises en liste over ansatte.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-141">A list of employees is shown.</span></span>
+3.  <span data-ttu-id="ee3ab-142">Velg en ansatt.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-142">Select an employee.</span></span> <span data-ttu-id="ee3ab-143">Siden **Ansattprofil** vises.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-143">The **Employee profile** page appears.</span></span> <span data-ttu-id="ee3ab-144">Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-144">The information on this page includes the employee's first name, last name, title, and department.</span></span>
 
-## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a>Søke etter firmakatalogen ved hjelp av det mobile arbeidsområdet
-1.  Velg arbeidsområdet **Firmakatalog** i mobilappen.
-2.  I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.
-3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="ee3ab-145">Søke etter firmakatalogen ved hjelp av det mobile arbeidsområdet</span><span class="sxs-lookup"><span data-stu-id="ee3ab-145">Search the company directory by using the mobile workspace</span></span>
+1.  <span data-ttu-id="ee3ab-146">Velg arbeidsområdet **Firmakatalog** i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-146">In the mobile app, select the **Company directory** workspace.</span></span>
+2.  <span data-ttu-id="ee3ab-147">I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-147">In the **Search** field, enter an employee's first name, last name, title, or department to start the search.</span></span>
+3.  <span data-ttu-id="ee3ab-148">Velg en ansatt.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-148">Select an employee.</span></span> <span data-ttu-id="ee3ab-149">Siden **Ansattprofil** vises.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-149">The **Employee profile** page appears.</span></span> <span data-ttu-id="ee3ab-150">Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.</span><span class="sxs-lookup"><span data-stu-id="ee3ab-150">The information on this page includes the employee's first name, last name, title, and department.</span></span>
 

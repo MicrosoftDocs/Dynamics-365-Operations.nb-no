@@ -18,59 +18,59 @@ ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 806860e5df9252c074e04e9e1670f4215fd94ca2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 2dc4671e0b68dffe30fe73d8c95113481673a27a
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="use-workflows-to-manage-employee-information"></a>Bruke arbeidsflyter til å administrere informasjon om ansatte
+# <a name="use-workflows-to-manage-employee-information"></a><span data-ttu-id="8b1c3-104">Bruke arbeidsflyter til å administrere informasjon om ansatte</span><span class="sxs-lookup"><span data-stu-id="8b1c3-104">Use workflows to manage employee information</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emnet forklarer hvordan du kan bruke arbeidsflytfunksjonen for personal til å administrere informasjon om ansatte. Du kan for eksempel knytte en arbeidsflyt til en stilling, og konfigurere en godkjenningsarbeidsflyt som startes når ansatte endrer sin post.
+<span data-ttu-id="8b1c3-105">Dette emnet forklarer hvordan du kan bruke arbeidsflytfunksjonen for personal til å administrere informasjon om ansatte.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-105">This topic explains how you can use the workflow capability for Human resources to manage employee information.</span></span> <span data-ttu-id="8b1c3-106">Du kan for eksempel knytte en arbeidsflyt til en stilling, og konfigurere en godkjenningsarbeidsflyt som startes når ansatte endrer sin post.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-106">For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.</span></span>
 
-Arbeidsflytfunksjonen for personale inneholder flere arbeidsflyter for administrasjon av personalaktiviteter. I tillegg finnes mange tilgjengelige alternativer, slik at du kan endre bestemte arbeidsflyter og knytte dem til et rapporteringshierarki. Arbeidsflyter er tilgjengelige for å bidra til å administrere endringer i standard informasjonstyper om ansatte. Du kan knytte en arbeidsflyt til en stilling. Hvis ansatte endrer sine ansattpost, startes en arbeidsflyt som krever godkjenning før den nye informasjonen lagres. Arbeidsflyter er forhåndsdefinerte for følgende typer informasjon for å bidra til effektivt å administrere endringer og holde de ansattes data nøyaktige:
+<span data-ttu-id="8b1c3-107">Arbeidsflytfunksjonen for personale inneholder flere arbeidsflyter for administrasjon av personalaktiviteter.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-107">The workflow capability for Human resources provides numerous workflows for managing human resources activities.</span></span> <span data-ttu-id="8b1c3-108">I tillegg finnes mange tilgjengelige alternativer, slik at du kan endre bestemte arbeidsflyter og knytte dem til et rapporteringshierarki.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-108">Additionally, numerous options are available so that you can modify specific workflows and associate them with a reporting hierarchy.</span></span> <span data-ttu-id="8b1c3-109">Arbeidsflyter er tilgjengelige for å bidra til å administrere endringer i standard informasjonstyper om ansatte.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-109">Workflows are available to help manage changes to several standard types of employee information.</span></span> <span data-ttu-id="8b1c3-110">Du kan knytte en arbeidsflyt til en stilling.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-110">You can associate a workflow with a position.</span></span> <span data-ttu-id="8b1c3-111">Hvis ansatte endrer sine ansattpost, startes en arbeidsflyt som krever godkjenning før den nye informasjonen lagres.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-111">Then, if employees change their employee record, a workflow is started that requires approval before the new information is saved.</span></span> <span data-ttu-id="8b1c3-112">Arbeidsflyter er forhåndsdefinerte for følgende typer informasjon for å bidra til effektivt å administrere endringer og holde de ansattes data nøyaktige:</span><span class="sxs-lookup"><span data-stu-id="8b1c3-112">Workflows are predefined for the following types of information to help you efficiently manage changes and keep your employees’ data accurate:</span></span>
 
--   Identifikasjonsnumre
--   Kurs
--   Utdanning
--   Bilde
--   Utlånte varer
--   Yrkeserfaring
--   Prosjekterfaring
--   Kompetanse
--   Tillitsverv
--   Personalhandlinger
--   Kursregistrering
+-   <span data-ttu-id="8b1c3-113">Identifikasjonsnumre</span><span class="sxs-lookup"><span data-stu-id="8b1c3-113">Identification numbers</span></span>
+-   <span data-ttu-id="8b1c3-114">Kurs</span><span class="sxs-lookup"><span data-stu-id="8b1c3-114">Courses</span></span>
+-   <span data-ttu-id="8b1c3-115">Utdanning</span><span class="sxs-lookup"><span data-stu-id="8b1c3-115">Education</span></span>
+-   <span data-ttu-id="8b1c3-116">Bilde</span><span class="sxs-lookup"><span data-stu-id="8b1c3-116">Image</span></span>
+-   <span data-ttu-id="8b1c3-117">Utlånte varer</span><span class="sxs-lookup"><span data-stu-id="8b1c3-117">Loaned items</span></span>
+-   <span data-ttu-id="8b1c3-118">Yrkeserfaring</span><span class="sxs-lookup"><span data-stu-id="8b1c3-118">Professional experience</span></span>
+-   <span data-ttu-id="8b1c3-119">Prosjekterfaring</span><span class="sxs-lookup"><span data-stu-id="8b1c3-119">Project experience</span></span>
+-   <span data-ttu-id="8b1c3-120">Kompetanse</span><span class="sxs-lookup"><span data-stu-id="8b1c3-120">Skills</span></span>
+-   <span data-ttu-id="8b1c3-121">Tillitsverv</span><span class="sxs-lookup"><span data-stu-id="8b1c3-121">Positions of trust</span></span>
+-   <span data-ttu-id="8b1c3-122">Personalhandlinger</span><span class="sxs-lookup"><span data-stu-id="8b1c3-122">Human resources actions</span></span>
+-   <span data-ttu-id="8b1c3-123">Kursregistrering</span><span class="sxs-lookup"><span data-stu-id="8b1c3-123">Course registration</span></span>
 
-Når ansatte ansettes, overføres eller slutter, kan arbeidsflyten inneholde en gjennomgangsprosess. På denne måten kan et dokument revideres eller vilkårene i en handling kan defineres som en del av arbeidsflyten. Når gjennomgangsprosessen er fullført, fullføres dokumentet eller handlingen, og arbeidsflyten går til et trinn for endelig godkjenning.
+<span data-ttu-id="8b1c3-124">Når ansatte ansettes, overføres eller slutter, kan arbeidsflyten inneholde en gjennomgangsprosess.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-124">When employees are hired, transferred, or terminated, the workflow can include a review process.</span></span> <span data-ttu-id="8b1c3-125">På denne måten kan et dokument revideres eller vilkårene i en handling kan defineres som en del av arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-125">In this way, a document can be revised or the terms of an action can be defined as part of the workflow.</span></span> <span data-ttu-id="8b1c3-126">Når gjennomgangsprosessen er fullført, fullføres dokumentet eller handlingen, og arbeidsflyten går til et trinn for endelig godkjenning.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-126">When the review process is completed, the document or action is completed, and the workflow moves to a final approval step.</span></span>
 
-## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Knytte en arbeidsflyt til et stillingshierarki
-Du kan knytte en arbeidsflyt til hvilket som helst hierarki som du konfigurerer. Hvis en stilling for eksempel er tilknyttet et matriserapporteringshierarki, kan du konfigurere en arbeidsflyt som ruter utgifter for et bestemt prosjekt til prosjektleder i stedet for lederen for ansatt som er knyttet til denne stillingen. Hvis du vil opprette en ny arbeidsflyt eller endre en eksisterende arbeidsflyt, går du til siden **Personalarbeidsflyter** og klikker på **Ny**. Velg en arbeidsflyt i listen for å starte arbeidsflytutformingen. Du kan bruke utformingen til å opprette en ny arbeidsflyt eller endre trinnene i en eksisterende arbeidsflyt. Når du endrer en eksisterende arbeidsflyt, lagres endringene som en ny versjon. Derfor kan du alltid gå tilbake til en tidligere versjon hvis du må.
+## <a name="associate-a-workflow-with-a-position-hierarchy"></a><span data-ttu-id="8b1c3-127">Knytte en arbeidsflyt til et stillingshierarki</span><span class="sxs-lookup"><span data-stu-id="8b1c3-127">Associate a workflow with a position hierarchy</span></span>
+<span data-ttu-id="8b1c3-128">Du kan knytte en arbeidsflyt til hvilket som helst hierarki som du konfigurerer.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-128">You can associate a workflow with any hierarchy that you configure.</span></span> <span data-ttu-id="8b1c3-129">Hvis en stilling for eksempel er tilknyttet et matriserapporteringshierarki, kan du konfigurere en arbeidsflyt som ruter utgifter for et bestemt prosjekt til prosjektleder i stedet for lederen for ansatt som er knyttet til denne stillingen.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-129">For example, if a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee who is associated with that position.</span></span> <span data-ttu-id="8b1c3-130">Hvis du vil opprette en ny arbeidsflyt eller endre en eksisterende arbeidsflyt, går du til siden **Personalarbeidsflyter** og klikker på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-130">To create a new workflow or modify an existing workflow, on the **Human resources workflow** page, click **New**.</span></span> <span data-ttu-id="8b1c3-131">Velg en arbeidsflyt i listen for å starte arbeidsflytutformingen.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-131">Select a workflow in the list to start the Workflow designer.</span></span> <span data-ttu-id="8b1c3-132">Du kan bruke utformingen til å opprette en ny arbeidsflyt eller endre trinnene i en eksisterende arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-132">You can use the designer to create a new workflow or change the steps in an existing workflow.</span></span> <span data-ttu-id="8b1c3-133">Når du endrer en eksisterende arbeidsflyt, lagres endringene som en ny versjon.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-133">When you change an existing workflow, your changes are saved as a new version.</span></span> <span data-ttu-id="8b1c3-134">Derfor kan du alltid gå tilbake til en tidligere versjon hvis du må.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-134">Therefore, you can always go back to a previous version if you have to.</span></span>
 
-## <a name="configure-a-human-resources-workflow"></a>Konfigurere en personalarbeidsflyt
-Følg fremgangsmåten nedenfor hvis du vil konfigurere en grunnleggende arbeidsflyt som startes når ansatte be om endringer av sin personlige ID.
+## <a name="configure-a-human-resources-workflow"></a><span data-ttu-id="8b1c3-135">Konfigurere en personalarbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="8b1c3-135">Configure a Human resources workflow</span></span>
+<span data-ttu-id="8b1c3-136">Følg fremgangsmåten nedenfor hvis du vil konfigurere en grunnleggende arbeidsflyt som startes når ansatte be om endringer av sin personlige ID.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-136">To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps.</span></span>
 
-1.  På siden **Personalarbeidsflyter** klikker du på **Ny**.
-2.  I listen over tilgjengelige arbeidsflyter velger du **Identifikasjonsnumre**.
-3.  Klikk på **Kjør** for å starte arbeidsflytutformingen, og angi deretter brukernavn og passord når du blir bedt om det.
-4.  Dra elementet **Godkjenn identifikasjonsnummer** fra listen over arbeidsflytelementer til utformingslerretet.
-5.  Koble godkjenningselement til **Start** og **Fullfør**.
-6.  Dobbeltklikk på **Godkjenn element**, og deretter høyreklikker du på og velger **Egenskaper**.
-7.  Følg denne fremgangsmåten for å legge til instruksjoner for arbeidselement:
-    1.  Velg **Tilordning**, og velg deretter **Hierarki** under tilordningstypen.
-    2.  Under **Hierarki**-delen velger du **Konfigurerbart hierarki**.
-    3.  Legge til et stoppvilkår, og lukke siden.
+1.  <span data-ttu-id="8b1c3-137">På siden **Personalarbeidsflyter** klikker du på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-137">On the **Human resources workflows** page, click **New**.</span></span>
+2.  <span data-ttu-id="8b1c3-138">I listen over tilgjengelige arbeidsflyter velger du **Identifikasjonsnumre**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-138">In the list of available workflows, select **Identification numbers**.</span></span>
+3.  <span data-ttu-id="8b1c3-139">Klikk på **Kjør** for å starte arbeidsflytutformingen, og angi deretter brukernavn og passord når du blir bedt om det.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-139">Click **Run** to start the Workflow designer, and then enter your user name and password when you're prompted.</span></span>
+4.  <span data-ttu-id="8b1c3-140">Dra elementet **Godkjenn identifikasjonsnummer** fra listen over arbeidsflytelementer til utformingslerretet.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-140">Drag the **Approve identification number** element from the list of workflow elements to the designer canvas.</span></span>
+5.  <span data-ttu-id="8b1c3-141">Koble godkjenningselement til **Start** og **Fullfør**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-141">Connect the approval element to **Start** and **Finish**.</span></span>
+6.  <span data-ttu-id="8b1c3-142">Dobbeltklikk på **Godkjenn element**, og deretter høyreklikker du på og velger **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-142">Double-click **Approve element**, and then right-click, and select **Properties**.</span></span>
+7.  <span data-ttu-id="8b1c3-143">Følg denne fremgangsmåten for å legge til instruksjoner for arbeidselement:</span><span class="sxs-lookup"><span data-stu-id="8b1c3-143">Follow these steps to add work item instructions:</span></span>
+    1.  <span data-ttu-id="8b1c3-144">Velg **Tilordning**, og velg deretter **Hierarki** under tilordningstypen.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-144">Select **Assignment**, and then select **Hierarchy** under the assignment type.</span></span>
+    2.  <span data-ttu-id="8b1c3-145">Under **Hierarki**-delen velger du **Konfigurerbart hierarki**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-145">Under the **Hierarchy** selection, select **Configurable hierarchy**.</span></span>
+    3.  <span data-ttu-id="8b1c3-146">Legge til et stoppvilkår, og lukke siden.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-146">Add a stop condition, and close the page.</span></span>
 
-8.  Fyll ut eventuelle instruksjoner (ingen ekstra advarsler skal finnes).
-9.  Klikk **Lagre og lukk**. Aktivere den nye arbeidsflyten når dialogboksen åpnes, og velger **Gjør aktiv**.
-10. Gå til **Personale** &gt; **Stillinger** &gt; **Stillingshierarkityper**.
-11. Velg **Matrise**.
-12. Legg til arbeidsflyten **Arbeideridentifikasjonsnummer** i listen.
+8.  <span data-ttu-id="8b1c3-147">Fyll ut eventuelle instruksjoner (ingen ekstra advarsler skal finnes).</span><span class="sxs-lookup"><span data-stu-id="8b1c3-147">Complete any additional instructions (no additional warnings should exist).</span></span>
+9.  <span data-ttu-id="8b1c3-148">Klikk **Lagre og lukk**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-148">Click **Save and close**.</span></span> <span data-ttu-id="8b1c3-149">Aktivere den nye arbeidsflyten når dialogboksen åpnes, og velger **Gjør aktiv**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-149">Activate the new workflow when the dialog box opens, and select **Make active**.</span></span>
+10. <span data-ttu-id="8b1c3-150">Gå til **Personale** &gt; **Stillinger** &gt; **Stillingshierarkityper**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-150">Go to **Human Resources** &gt; **Positions** &gt; **Position hierarchy types**.</span></span>
+11. <span data-ttu-id="8b1c3-151">Velg **Matrise**.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-151">Select **Matrix**.</span></span>
+12. <span data-ttu-id="8b1c3-152">Legg til arbeidsflyten **Arbeideridentifikasjonsnummer** i listen.</span><span class="sxs-lookup"><span data-stu-id="8b1c3-152">Add the **Worker identification number** workflow to the list.</span></span>
 
 
 

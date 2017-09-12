@@ -16,127 +16,127 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 55f62b501b545db54d717d8c66d09ec831cb286f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 07fef304361fa0008f57425ff27596e4e382072a
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="export-a-letter-of-credit"></a>Eksportere en remburs
+# <a name="export-a-letter-of-credit"></a><span data-ttu-id="5915e-103">Eksportere en remburs</span><span class="sxs-lookup"><span data-stu-id="5915e-103">Export a letter of credit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper deg med å eksportere en remburs.
+<span data-ttu-id="5915e-104">Denne prosedyren hjelper deg med å eksportere en remburs.</span><span class="sxs-lookup"><span data-stu-id="5915e-104">This procedure walks through the process of the Export letter of credit.</span></span>
 
-En remburs er en avtale som utstedes av en bank, der banken godtar å sikre betaling på vegne av kjøperen hvis vilkårene i avtalen mellom kjøper og selger er oppfylt.
-
-
-
-Kjør prosedyren Definere Bankfasilitetene og posteringsprofilene og Opprette en fasilitetsavtale for remburs før denne prosedyren. Demonstrasjonsfirmaet USMF må velges for at denne prosedyren skal kunne kjøres.
+<span data-ttu-id="5915e-105">En remburs er en avtale som utstedes av en bank, der banken godtar å sikre betaling på vegne av kjøperen hvis vilkårene i avtalen mellom kjøper og selger er oppfylt.</span><span class="sxs-lookup"><span data-stu-id="5915e-105">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</span></span>
 
 
 
+<span data-ttu-id="5915e-106">Kjør prosedyren Definere Bankfasilitetene og posteringsprofilene og Opprette en fasilitetsavtale for remburs før denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="5915e-106">Run the 'Set up bank facilities and posting profiles' procedure and the 'Letter of Credit_Create a bank facility agreement' procedure prior to this procedure.</span></span> <span data-ttu-id="5915e-107">Demonstrasjonsfirmaet USMF må velges for at denne prosedyren skal kunne kjøres.</span><span class="sxs-lookup"><span data-stu-id="5915e-107">The USMF demo company must be selected in order to run this procedure successfully.</span></span>
 
-## <a name="create-sales-order-for-export-letter-of-credit"></a>Opprette salgsordre for remburseksport
-1. Gå til Kunder > Ordrer > Alle salgsordrer.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Kundekonto-feltet for å åpne oppslaget.
-4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
-6. Vis eller skjul delen Generelt.
-7. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-    * Velg stedet der varen som skal utstedes, er på lager.  
-8. Klikk koblingen i den valgte raden i listen.
-9. Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.
-    * Velg lageret der varen som skal utstedes, befinner seg.  
-10. Klikk koblingen i den valgte raden i listen.
-    * Obs!  Feltet Bankdokumenttype må velges med verdien Remburs.  
-11. Velg Remburs i feltet Bankdokumenttype.
-12. Vis eller skjul Levering-delen.
-    * Velg Leveringsdatokontroll = Ingen.  
-13. Angi en dato i feltet Ønsket leveringsdato.
-14. Klikk OK.
-15. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-    * Velg varen som skal utstedes/selges.  
-16. Finn og velg ønsket post i listen.
-17. Klikk koblingen i den valgte raden i listen.
-18. Angi et tall i Enhetspris-feltet.
-19. Vis eller skjul Linjedetaljer-delen.
-20. Velg kategorien Levering.
-21. Angi en dato i feltet Ønsket forsendelsesdato.
-22. Angi en dato i Bekreftet forsendelsesdato-feltet.
-23. Klikk Administrer i handlingsruten.
-24. Klikk Remburs.
-25. Angi en verdi i feltet Bankdokumentnummer.
-26. Angi dato og klokkeslett i feltet Utløpsdato.
-27. Vis eller skjul Bankdetaljer-delen.
-28. Klikk rullegardinknappen i Rembursbank-feltet for å åpne oppslaget.
-29. Klikk koblingen i den valgte raden i listen.
-30. Klikk rullegardinknappen i Advisbank-feltet for å åpne oppslaget.
-31. Finn og velg ønsket post i listen.
-32. Klikk koblingen i den valgte raden i listen.
-33. Klikk Hent salgsordreforsendelser.
-34. Klikk Utsted bankdokument.
-35. Lukk siden.
 
-## <a name="post-packing-slip"></a>Postere følgeseddel
-1. Klikk Plukk og pakk i handlingsruten.
-2. Klikk Poster følgeseddel.
-3. Vis eller skjul delen Parametere.
-4. Velg Alle i Antall-feltet.
-5. Vis eller skjul Oppsett-delen.
-6. Angi en dato i Følgeseddeldato-feltet.
-7. Velg forsendelsesnummeret.
-8. Klikk koblingen i den valgte raden i listen.
-9. Klikk OK.
-10. Klikk OK.
 
-## <a name="post-sales-invoice"></a>Postere salgsfaktura
-1. Klikk Faktura i handlingsruten.
-2. Klikk Faktura.
-3. Vis eller skjul Oversikt-delen.
-4. Velg forsendelsesnummeret.
-5. Klikk koblingen i den valgte raden i listen.
-6. Vis eller skjul Oppsett-delen.
-7. Angi en dato i feltet Fakturadato.
-8. Klikk OK.
-9. Klikk OK.
 
-## <a name="shipment-document-submitted-status"></a>Status for sendt forsendelsesdokument
-1. Klikk Administrer i handlingsruten.
-2. Klikk Remburs.
-3. Vis eller skjul Linjer-delen.
-    * Obs!  Feltet Dokumentet er sendt må settes til Ja.  
+## <a name="create-sales-order-for-export-letter-of-credit"></a><span data-ttu-id="5915e-108">Opprette salgsordre for remburseksport</span><span class="sxs-lookup"><span data-stu-id="5915e-108">Create Sales Order for Export letter of credit</span></span>
+1. <span data-ttu-id="5915e-109">Gå til Kunder > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="5915e-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="5915e-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="5915e-110">Click New.</span></span>
+3. <span data-ttu-id="5915e-111">Klikk rullegardinknappen i Kundekonto-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="5915e-112">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-112">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="5915e-113">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="5915e-114">Vis eller skjul delen Generelt.</span><span class="sxs-lookup"><span data-stu-id="5915e-114">Expand or collapse the General section.</span></span>
+7. <span data-ttu-id="5915e-115">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-115">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="5915e-116">Velg stedet der varen som skal utstedes, er på lager.</span><span class="sxs-lookup"><span data-stu-id="5915e-116">Select the Site where the item to be issued is stocked.</span></span>  
+8. <span data-ttu-id="5915e-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="5915e-118">Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-118">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="5915e-119">Velg lageret der varen som skal utstedes, befinner seg.</span><span class="sxs-lookup"><span data-stu-id="5915e-119">Select the Warehouse where item to be issued is stocked.</span></span>  
+10. <span data-ttu-id="5915e-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5915e-121">Obs!  Feltet Bankdokumenttype må velges med verdien Remburs.</span><span class="sxs-lookup"><span data-stu-id="5915e-121">Note: The Bank document type field should be selected with the value 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="5915e-122">Velg Remburs i feltet Bankdokumenttype.</span><span class="sxs-lookup"><span data-stu-id="5915e-122">In the Bank document type field, select 'Letter of credit'.</span></span>
+12. <span data-ttu-id="5915e-123">Vis eller skjul Levering-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-123">Expand or collapse the Delivery section.</span></span>
+    * <span data-ttu-id="5915e-124">Velg Leveringsdatokontroll = Ingen.</span><span class="sxs-lookup"><span data-stu-id="5915e-124">Select Delivery date control = None.</span></span>  
+13. <span data-ttu-id="5915e-125">Angi en dato i feltet Ønsket leveringsdato.</span><span class="sxs-lookup"><span data-stu-id="5915e-125">In the Requested receipt date field, enter a date.</span></span>
+14. <span data-ttu-id="5915e-126">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-126">Click OK.</span></span>
+15. <span data-ttu-id="5915e-127">Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-127">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="5915e-128">Velg varen som skal utstedes/selges.</span><span class="sxs-lookup"><span data-stu-id="5915e-128">Select the required item to be Issued/Sold.</span></span>  
+16. <span data-ttu-id="5915e-129">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-129">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="5915e-130">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-130">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="5915e-131">Angi et tall i Enhetspris-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-131">In the Unit price field, enter a number.</span></span>
+19. <span data-ttu-id="5915e-132">Vis eller skjul Linjedetaljer-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-132">Expand or collapse the Line details section.</span></span>
+20. <span data-ttu-id="5915e-133">Velg kategorien Levering.</span><span class="sxs-lookup"><span data-stu-id="5915e-133">Click the Delivery tab.</span></span>
+21. <span data-ttu-id="5915e-134">Angi en dato i feltet Ønsket forsendelsesdato.</span><span class="sxs-lookup"><span data-stu-id="5915e-134">In the Requested ship date field, enter a date.</span></span>
+22. <span data-ttu-id="5915e-135">Angi en dato i Bekreftet forsendelsesdato-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-135">In the Confirmed ship date field, enter a date.</span></span>
+23. <span data-ttu-id="5915e-136">Klikk Administrer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5915e-136">On the Action Pane, click Manage.</span></span>
+24. <span data-ttu-id="5915e-137">Klikk Remburs.</span><span class="sxs-lookup"><span data-stu-id="5915e-137">Click Letter of credit.</span></span>
+25. <span data-ttu-id="5915e-138">Angi en verdi i feltet Bankdokumentnummer.</span><span class="sxs-lookup"><span data-stu-id="5915e-138">In the Bank document number field, type a value.</span></span>
+26. <span data-ttu-id="5915e-139">Angi dato og klokkeslett i feltet Utløpsdato.</span><span class="sxs-lookup"><span data-stu-id="5915e-139">In the Expiration date field, enter a date and time.</span></span>
+27. <span data-ttu-id="5915e-140">Vis eller skjul Bankdetaljer-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-140">Expand or collapse the Bank details section.</span></span>
+28. <span data-ttu-id="5915e-141">Klikk rullegardinknappen i Rembursbank-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-141">In the Issuing bank field, click the drop-down button to open the lookup.</span></span>
+29. <span data-ttu-id="5915e-142">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-142">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="5915e-143">Klikk rullegardinknappen i Advisbank-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-143">In the Advising bank field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="5915e-144">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-144">In the list, find and select the desired record.</span></span>
+32. <span data-ttu-id="5915e-145">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-145">In the list, click the link in the selected row.</span></span>
+33. <span data-ttu-id="5915e-146">Klikk Hent salgsordreforsendelser.</span><span class="sxs-lookup"><span data-stu-id="5915e-146">Click Fetch sales order shipments.</span></span>
+34. <span data-ttu-id="5915e-147">Klikk Utsted bankdokument.</span><span class="sxs-lookup"><span data-stu-id="5915e-147">Click Issue bank document.</span></span>
+35. <span data-ttu-id="5915e-148">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="5915e-148">Close the page.</span></span>
 
-## <a name="verify-export-letter-of-credit"></a>Kontrollere remburseksport
-1. Gå til Kontant- og bankbehandling > Purringer > Eksporter remburs og importinkasso.
-2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
-    * Kontroller at Eksporter remburs har forsendelsesstatusen Fakturert.  
+## <a name="post-packing-slip"></a><span data-ttu-id="5915e-149">Postere følgeseddel</span><span class="sxs-lookup"><span data-stu-id="5915e-149">Post Packing slip</span></span>
+1. <span data-ttu-id="5915e-150">Klikk Plukk og pakk i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5915e-150">On the Action Pane, click Pick and pack.</span></span>
+2. <span data-ttu-id="5915e-151">Klikk Poster følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="5915e-151">Click Post packing slip.</span></span>
+3. <span data-ttu-id="5915e-152">Vis eller skjul delen Parametere.</span><span class="sxs-lookup"><span data-stu-id="5915e-152">Expand or collapse the Parameters section.</span></span>
+4. <span data-ttu-id="5915e-153">Velg Alle i Antall-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-153">In the Quantity field, select 'All'.</span></span>
+5. <span data-ttu-id="5915e-154">Vis eller skjul Oppsett-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-154">Expand or collapse the Setup section.</span></span>
+6. <span data-ttu-id="5915e-155">Angi en dato i Følgeseddeldato-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-155">In the Packing slip date field, enter a date.</span></span>
+7. <span data-ttu-id="5915e-156">Velg forsendelsesnummeret.</span><span class="sxs-lookup"><span data-stu-id="5915e-156">Select the Shipment number.</span></span>
+8. <span data-ttu-id="5915e-157">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-157">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="5915e-158">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-158">Click OK.</span></span>
+10. <span data-ttu-id="5915e-159">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-159">Click OK.</span></span>
 
-## <a name="customer-payment"></a>Kundebetaling
-1. Gå til Kunder > Betalinger > Betalingsjournal.
-2. Klikk Ny.
-3. Merk den valgte raden i listen.
-4. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
-5. Klikk koblingen i den valgte raden i listen.
-6. Klikk Linjer.
-7. Angi en dato i Dato-feltet.
-8. Angi de ønskede verdiene i Konto-feltet.
-9. Klikk Utligning.
-10. Merk av i boksen i hodet i Totaler.
-    * Obs!  Sett Vis felt til Remburs.  
-11. Finn og velg ønsket post i listen.
-12. Merk av eller fjern merket i avmerkingsboksen Merk.
-13. Klikk OK.
-14. Klikk kategorien Betaling.
-    * Kontrollere detaljene om bankdokumentnummer og forsendelsesnummer  
-15. Klikk Poster.
+## <a name="post-sales-invoice"></a><span data-ttu-id="5915e-160">Postere salgsfaktura</span><span class="sxs-lookup"><span data-stu-id="5915e-160">Post sales invoice</span></span>
+1. <span data-ttu-id="5915e-161">Klikk Faktura i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5915e-161">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="5915e-162">Klikk Faktura.</span><span class="sxs-lookup"><span data-stu-id="5915e-162">Click Invoice.</span></span>
+3. <span data-ttu-id="5915e-163">Vis eller skjul Oversikt-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-163">Expand or collapse the Overview section.</span></span>
+4. <span data-ttu-id="5915e-164">Velg forsendelsesnummeret.</span><span class="sxs-lookup"><span data-stu-id="5915e-164">Select the Shipment number.</span></span>
+5. <span data-ttu-id="5915e-165">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-165">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="5915e-166">Vis eller skjul Oppsett-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-166">Expand or collapse the Setup section.</span></span>
+7. <span data-ttu-id="5915e-167">Angi en dato i feltet Fakturadato.</span><span class="sxs-lookup"><span data-stu-id="5915e-167">In the Invoice date field, enter a date.</span></span>
+8. <span data-ttu-id="5915e-168">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-168">Click OK.</span></span>
+9. <span data-ttu-id="5915e-169">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-169">Click OK.</span></span>
 
-## <a name="verify-export-letter-of-credit-after-payment"></a>Kontrollere remburseksport etter betaling
-1. Gå til Kontant- og bankbehandling > Purringer > Eksporter remburs og importinkasso.
-2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
-    * Kontroller at forsendelsesstatus = betaling mottatt og saldobeløp = 0,00.  
+## <a name="shipment-document-submitted-status"></a><span data-ttu-id="5915e-170">Status for sendt forsendelsesdokument</span><span class="sxs-lookup"><span data-stu-id="5915e-170">Shipment document submitted status</span></span>
+1. <span data-ttu-id="5915e-171">Klikk Administrer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5915e-171">On the Action Pane, click Manage.</span></span>
+2. <span data-ttu-id="5915e-172">Klikk Remburs.</span><span class="sxs-lookup"><span data-stu-id="5915e-172">Click Letter of credit.</span></span>
+3. <span data-ttu-id="5915e-173">Vis eller skjul Linjer-delen.</span><span class="sxs-lookup"><span data-stu-id="5915e-173">Expand or collapse the Lines section.</span></span>
+    * <span data-ttu-id="5915e-174">Obs!  Feltet Dokumentet er sendt må settes til Ja.</span><span class="sxs-lookup"><span data-stu-id="5915e-174">Note: The 'Document submitted' field should be set to 'Yes'.</span></span>  
+
+## <a name="verify-export-letter-of-credit"></a><span data-ttu-id="5915e-175">Kontrollere remburseksport</span><span class="sxs-lookup"><span data-stu-id="5915e-175">Verify Export letter of credit</span></span>
+1. <span data-ttu-id="5915e-176">Gå til Kontant- og bankbehandling > Purringer > Eksporter remburs og importinkasso.</span><span class="sxs-lookup"><span data-stu-id="5915e-176">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="5915e-177">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-177">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="5915e-178">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-178">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5915e-179">Kontroller at Eksporter remburs har forsendelsesstatusen Fakturert.</span><span class="sxs-lookup"><span data-stu-id="5915e-179">Verify that the Export letter of credit has a Shipment status of 'Invoiced'.</span></span>  
+
+## <a name="customer-payment"></a><span data-ttu-id="5915e-180">Kundebetaling</span><span class="sxs-lookup"><span data-stu-id="5915e-180">Customer payment</span></span>
+1. <span data-ttu-id="5915e-181">Gå til Kunder > Betalinger > Betalingsjournal.</span><span class="sxs-lookup"><span data-stu-id="5915e-181">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="5915e-182">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="5915e-182">Click New.</span></span>
+3. <span data-ttu-id="5915e-183">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-183">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="5915e-184">Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5915e-184">In the Name field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="5915e-185">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-185">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="5915e-186">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="5915e-186">Click Lines.</span></span>
+7. <span data-ttu-id="5915e-187">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-187">In the Date field, enter a date.</span></span>
+8. <span data-ttu-id="5915e-188">Angi de ønskede verdiene i Konto-feltet.</span><span class="sxs-lookup"><span data-stu-id="5915e-188">In the Account field, specify the desired values.</span></span>
+9. <span data-ttu-id="5915e-189">Klikk Utligning.</span><span class="sxs-lookup"><span data-stu-id="5915e-189">Click Settlement.</span></span>
+10. <span data-ttu-id="5915e-190">Merk av i boksen i hodet i Totaler.</span><span class="sxs-lookup"><span data-stu-id="5915e-190">Select the check box on the header of Totals.</span></span>
+    * <span data-ttu-id="5915e-191">Obs!  Sett Vis felt til Remburs.</span><span class="sxs-lookup"><span data-stu-id="5915e-191">Note: Set the Show field to 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="5915e-192">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-192">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="5915e-193">Merk av eller fjern merket i avmerkingsboksen Merk.</span><span class="sxs-lookup"><span data-stu-id="5915e-193">Select or clear the Mark check box.</span></span>
+13. <span data-ttu-id="5915e-194">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5915e-194">Click OK.</span></span>
+14. <span data-ttu-id="5915e-195">Klikk kategorien Betaling.</span><span class="sxs-lookup"><span data-stu-id="5915e-195">Click the Payment tab.</span></span>
+    * <span data-ttu-id="5915e-196">Kontrollere detaljene om bankdokumentnummer og forsendelsesnummer</span><span class="sxs-lookup"><span data-stu-id="5915e-196">Verify Bank document number and Shipment number details</span></span>  
+15. <span data-ttu-id="5915e-197">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="5915e-197">Click Post.</span></span>
+
+## <a name="verify-export-letter-of-credit-after-payment"></a><span data-ttu-id="5915e-198">Kontrollere remburseksport etter betaling</span><span class="sxs-lookup"><span data-stu-id="5915e-198">Verify Export letter of credit after payment</span></span>
+1. <span data-ttu-id="5915e-199">Gå til Kontant- og bankbehandling > Purringer > Eksporter remburs og importinkasso.</span><span class="sxs-lookup"><span data-stu-id="5915e-199">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="5915e-200">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-200">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="5915e-201">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5915e-201">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5915e-202">Kontroller at forsendelsesstatus = betaling mottatt og saldobeløp = 0,00.</span><span class="sxs-lookup"><span data-stu-id="5915e-202">Verify Shipment status = Payment received and balance amount = 0.00.</span></span>  
 
 

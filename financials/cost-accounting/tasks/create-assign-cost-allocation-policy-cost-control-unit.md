@@ -16,54 +16,54 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 82319d8d9c7b567f98dfd0e591cb99079fb577b7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 491d8292b7c951be930d2858362c8107caaa76ff
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet
+# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="ee0a2-103">Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet</span><span class="sxs-lookup"><span data-stu-id="ee0a2-103">Create and assign a cost allocation policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk denne fremgangsmåten til å opprette og tilordne en policy for tildeling av kostnader og de tilsvarende til en enhet for kontroll av kostnaden. Denne registreringen bruker USP2-demodatafirmaet.
+<span data-ttu-id="ee0a2-104">Bruk denne fremgangsmåten til å opprette og tilordne en policy for tildeling av kostnader og de tilsvarende til en enhet for kontroll av kostnaden.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-104">Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit.</span></span> <span data-ttu-id="ee0a2-105">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="create-a-policy"></a>Opprette en policy
-1. Gå til Kostnadsregnskap > Policyer > Kostnadsfordelingspolicyer.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Policynavn.
-4. Angi eller velg en verdi i feltet Dimensjonshierarki for kostnadsobjekt.
-    * Velg Organisasjon.  
-5. Angi eller velg en verdi i feltet Statistisk dimensjon.
-6. Klikk Lagre.
+## <a name="create-a-policy"></a><span data-ttu-id="ee0a2-106">Opprette en policy</span><span class="sxs-lookup"><span data-stu-id="ee0a2-106">Create a policy</span></span>
+1. <span data-ttu-id="ee0a2-107">Gå til Kostnadsregnskap > Policyer > Kostnadsfordelingspolicyer.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-107">Go to Cost accounting > Policies > Cost allocation policies.</span></span>
+2. <span data-ttu-id="ee0a2-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-108">Click New.</span></span>
+3. <span data-ttu-id="ee0a2-109">Skriv inn en verdi i feltet Policynavn.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-109">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="ee0a2-110">Angi eller velg en verdi i feltet Dimensjonshierarki for kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-110">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="ee0a2-111">Velg Organisasjon.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-111">Select Organization.</span></span>  
+5. <span data-ttu-id="ee0a2-112">Angi eller velg en verdi i feltet Statistisk dimensjon.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-112">In the Statistical dimension field, enter or select a value.</span></span>
+6. <span data-ttu-id="ee0a2-113">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-113">Click Save.</span></span>
 
-## <a name="create-allocation-rules"></a>Opprette fordelingsregler
-1. Klikk Ny.
-2. Merk den valgte raden i listen.
-3. Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.
-4. Velg "Total" i feltet Kostnadsatferd.
-5. Angi eller velg en verdi i feltet Tildelingsgrunnlag.
-6. Klikk Ny.
-7. Merk den valgte raden i listen.
-8. Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.
-9. Velg "Total" i feltet Kostnadsatferd.
-10. Angi eller velg en verdi i feltet Tildelingsgrunnlag.
-11. Klikk Ny.
-12. Merk den valgte raden i listen.
-13. Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.
-14. Velg "Total" i feltet Kostnadsatferd.
-15. Angi eller velg en verdi i feltet Tildelingsgrunnlag.
-    * Fortsett til du har opprettet alle reglene.  
-16. Klikk Lagre.
+## <a name="create-allocation-rules"></a><span data-ttu-id="ee0a2-114">Opprette fordelingsregler</span><span class="sxs-lookup"><span data-stu-id="ee0a2-114">Create allocation rules</span></span>
+1. <span data-ttu-id="ee0a2-115">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-115">Click New.</span></span>
+2. <span data-ttu-id="ee0a2-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-116">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="ee0a2-117">Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-117">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+4. <span data-ttu-id="ee0a2-118">Velg "Total" i feltet Kostnadsatferd.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-118">In the Cost behavior field, select 'Total'.</span></span>
+5. <span data-ttu-id="ee0a2-119">Angi eller velg en verdi i feltet Tildelingsgrunnlag.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-119">In the Allocation base field, enter or select a value.</span></span>
+6. <span data-ttu-id="ee0a2-120">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-120">Click New.</span></span>
+7. <span data-ttu-id="ee0a2-121">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-121">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="ee0a2-122">Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-122">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+9. <span data-ttu-id="ee0a2-123">Velg "Total" i feltet Kostnadsatferd.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-123">In the Cost behavior field, select 'Total'.</span></span>
+10. <span data-ttu-id="ee0a2-124">Angi eller velg en verdi i feltet Tildelingsgrunnlag.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-124">In the Allocation base field, enter or select a value.</span></span>
+11. <span data-ttu-id="ee0a2-125">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-125">Click New.</span></span>
+12. <span data-ttu-id="ee0a2-126">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-126">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="ee0a2-127">Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-127">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+14. <span data-ttu-id="ee0a2-128">Velg "Total" i feltet Kostnadsatferd.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-128">In the Cost behavior field, select 'Total'.</span></span>
+15. <span data-ttu-id="ee0a2-129">Angi eller velg en verdi i feltet Tildelingsgrunnlag.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-129">In the Allocation base field, enter or select a value.</span></span>
+    * <span data-ttu-id="ee0a2-130">Fortsett til du har opprettet alle reglene.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-130">Continue until you've created all the rules.</span></span>  
+16. <span data-ttu-id="ee0a2-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-131">Click Save.</span></span>
 
-## <a name="assign-the-policy-to-a-cost-control-unit"></a>Tilordne policyen til en kostnadskontrollenhet
-1. Klikk Policytilordninger for kostnadskontrollenhet.
-2. Klikk Ny.
-3. Merk den valgte raden i listen.
-4. Angi en dato i feltet Gyldig fra regnskapsdato.
-    * Reglene er datoeffektive. En bruker eller systemet kan utløpe reglene hvis det opprettes en nyere versjon.  
-5. Angi eller velg en verdi i feltet Kostnadskontrollenhet
-6. Klikk Lagre.
+## <a name="assign-the-policy-to-a-cost-control-unit"></a><span data-ttu-id="ee0a2-132">Tilordne policyen til en kostnadskontrollenhet</span><span class="sxs-lookup"><span data-stu-id="ee0a2-132">Assign the policy to a cost control unit</span></span>
+1. <span data-ttu-id="ee0a2-133">Klikk Policytilordninger for kostnadskontrollenhet.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-133">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="ee0a2-134">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-134">Click New.</span></span>
+3. <span data-ttu-id="ee0a2-135">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-135">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="ee0a2-136">Angi en dato i feltet Gyldig fra regnskapsdato.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-136">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="ee0a2-137">Reglene er datoeffektive.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-137">The rules are date-effective.</span></span> <span data-ttu-id="ee0a2-138">En bruker eller systemet kan utløpe reglene hvis det opprettes en nyere versjon.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-138">A user or the system can expire the rules if a newer version is created.</span></span>  
+5. <span data-ttu-id="ee0a2-139">Angi eller velg en verdi i feltet Kostnadskontrollenhet</span><span class="sxs-lookup"><span data-stu-id="ee0a2-139">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="ee0a2-140">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ee0a2-140">Click Save.</span></span>
 
 

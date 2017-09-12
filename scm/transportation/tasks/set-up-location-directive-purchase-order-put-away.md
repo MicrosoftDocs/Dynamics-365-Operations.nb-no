@@ -17,81 +17,81 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c2456fffd9a010728154749b35c58db13f142bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Definere et lokasjonsdirektiv for bestillings
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="6120b-103">Definere et lokasjonsdirektiv for bestillings</span><span class="sxs-lookup"><span data-stu-id="6120b-103">Set up a location directive for purchase order put-away</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du setter opp et enkelt lokasjonsdirektiv. Eksemplet som vises, oppretter et lokasjonsdirektiv som skal brukes til å avgjøre hvor du vil plassere varer som er mottatt for en bestilling. Du kan spille av denne oppgaveveiledningen med dataene som er nevnt, ved hjelp av demonstrasjonsdataselskapet USMF. Forutsetninger: Du må opprette en disposisjonskode. I denne fremgangsmåten bruker vi en disposisjonskode kalt Endre navn. Hvis du oppretter et lokasjonsdirektiv i dine egne data, må du ha definert avansert lagerstyring for lager og varer.  Denne fremgangsmåten er ment for lagersjef.
+<span data-ttu-id="6120b-104">Denne fremgangsmåten viser hvordan du setter opp et enkelt lokasjonsdirektiv.</span><span class="sxs-lookup"><span data-stu-id="6120b-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="6120b-105">Eksemplet som vises, oppretter et lokasjonsdirektiv som skal brukes til å avgjøre hvor du vil plassere varer som er mottatt for en bestilling.</span><span class="sxs-lookup"><span data-stu-id="6120b-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="6120b-106">Du kan spille av denne oppgaveveiledningen med dataene som er nevnt, ved hjelp av demonstrasjonsdataselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="6120b-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="6120b-107">Forutsetninger: Du må opprette en disposisjonskode.</span><span class="sxs-lookup"><span data-stu-id="6120b-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="6120b-108">I denne fremgangsmåten bruker vi en disposisjonskode kalt Endre navn.</span><span class="sxs-lookup"><span data-stu-id="6120b-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="6120b-109">Hvis du oppretter et lokasjonsdirektiv i dine egne data, må du ha definert avansert lagerstyring for lager og varer.</span><span class="sxs-lookup"><span data-stu-id="6120b-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="6120b-110">Denne fremgangsmåten er ment for lagersjef.</span><span class="sxs-lookup"><span data-stu-id="6120b-110">This procedure is intended for the warehouse manager.</span></span>
 
-1. Gå til Lagerstyring > Oppsett > Lokasjonsdirektiver.
-2. Velg Bestillinger i feltet Arbeidsordretype.
+1. <span data-ttu-id="6120b-111">Gå til Lagerstyring > Oppsett > Lokasjonsdirektiver.</span><span class="sxs-lookup"><span data-stu-id="6120b-111">Go to Warehouse management > Setup > Location directives.</span></span>
+2. <span data-ttu-id="6120b-112">Velg Bestillinger i feltet Arbeidsordretype.</span><span class="sxs-lookup"><span data-stu-id="6120b-112">In the Work order type field, select 'Purchase orders'.</span></span>
 
-## <a name="create-a-location-directive-header"></a>Opprette et lokasjonsdirektivhode
-1. Klikk Ny.
-2. Angi et nummer i Sekvensnummer-feltet.
-    * Dette er rekkefølgen for behandling av lokasjonsdirektivet for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
-3. Skriv inn en verdi i Navn-feltet.
-    * Dette er den unike identifikatoren for dette direktivet.  
-4. Velg Plasser i Arbeidstype-feltet.
-    * Velg hvilken type arbeid som skal utføres. Plasser er den eneste støttede verdien for direktivet med arbeidsordretypen Bestilling.  
-5. Skriv inn en verdi i Område-feltet.
-6. Skriv inn en verdi i Lager-feltet.
-    * La direktivkoden stå tom.  Direktivkodene brukes til å koble en arbeidsordrelinje av typen Plasser til et bestemt direktiv. For bestillinger løses lokasjonen for den siste arbeidsordrelinje av typen Plasser før arbeidsmalen bestemmes. Det er derfor ikke mulig å koble til den siste linjen i en arbeidsmal på et bestemt direktiv.   
-7. Skriv inn en verdi i Disposisjonskode-feltet.
-    * Disposisjonskoden begrenser bruken av lokasjonsdirektivet slik at lokasjonsdirektivet brukes bare hvis lagermedarbeideren angir denne bestemte verdien under registrering av varen med en mobil enhet.  
-8. Klikk Lagre.
+## <a name="create-a-location-directive-header"></a><span data-ttu-id="6120b-113">Opprette et lokasjonsdirektivhode</span><span class="sxs-lookup"><span data-stu-id="6120b-113">Create a location directive header</span></span>
+1. <span data-ttu-id="6120b-114">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="6120b-114">Click New.</span></span>
+2. <span data-ttu-id="6120b-115">Angi et nummer i Sekvensnummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-115">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="6120b-116">Dette er rekkefølgen for behandling av lokasjonsdirektivet for den valgte arbeidstypen.</span><span class="sxs-lookup"><span data-stu-id="6120b-116">This is the sequence in which the location directive is processed for the selected work type.</span></span> <span data-ttu-id="6120b-117">Du kan også om nødvendig endre rekkefølgen.</span><span class="sxs-lookup"><span data-stu-id="6120b-117">You can also modify the sequence, if needed.</span></span>  
+3. <span data-ttu-id="6120b-118">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="6120b-119">Dette er den unike identifikatoren for dette direktivet.</span><span class="sxs-lookup"><span data-stu-id="6120b-119">This is the unique identifier for this directive.</span></span>  
+4. <span data-ttu-id="6120b-120">Velg Plasser i Arbeidstype-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-120">In the Work type field, select 'Put'.</span></span>
+    * <span data-ttu-id="6120b-121">Velg hvilken type arbeid som skal utføres.</span><span class="sxs-lookup"><span data-stu-id="6120b-121">Select the type of work to be performed.</span></span> <span data-ttu-id="6120b-122">Plasser er den eneste støttede verdien for direktivet med arbeidsordretypen Bestilling.</span><span class="sxs-lookup"><span data-stu-id="6120b-122">For directive with work order type Purchase order, Put is the only supported value.</span></span>  
+5. <span data-ttu-id="6120b-123">Skriv inn en verdi i Område-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-123">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="6120b-124">Skriv inn en verdi i Lager-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="6120b-125">La direktivkoden stå tom.</span><span class="sxs-lookup"><span data-stu-id="6120b-125">Leave the Directive code blank.</span></span>  <span data-ttu-id="6120b-126">Direktivkodene brukes til å koble en arbeidsordrelinje av typen Plasser til et bestemt direktiv.</span><span class="sxs-lookup"><span data-stu-id="6120b-126">Directive codes are used to link a work order line of type Put to a specific directive.</span></span> <span data-ttu-id="6120b-127">For bestillinger løses lokasjonen for den siste arbeidsordrelinje av typen Plasser før arbeidsmalen bestemmes.</span><span class="sxs-lookup"><span data-stu-id="6120b-127">For purchase orders, the location of the last work order line of type Put is resolved before the work template is determined.</span></span> <span data-ttu-id="6120b-128">Det er derfor ikke mulig å koble til den siste linjen i en arbeidsmal på et bestemt direktiv.</span><span class="sxs-lookup"><span data-stu-id="6120b-128">Therefore it is not possible to connect the last line of a work template to a specific directive.</span></span>   
+7. <span data-ttu-id="6120b-129">Skriv inn en verdi i Disposisjonskode-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-129">In the Disposition code field, type a value.</span></span>
+    * <span data-ttu-id="6120b-130">Disposisjonskoden begrenser bruken av lokasjonsdirektivet slik at lokasjonsdirektivet brukes bare hvis lagermedarbeideren angir denne bestemte verdien under registrering av varen med en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-130">The Disposition code limits the use of the location directive, so the location directive is only used if the warehouse worker enters this specific value during registration of the item using a mobile device.</span></span>  
+8. <span data-ttu-id="6120b-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="6120b-131">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive"></a>Redigere spørringen for direktivet
-1. Klikk Rediger spørring.
-    * Bruk av dette direktivet er allerede begrenset for bruk for varer som er registrert i lageret som du har angitt, og med disposisjonskoden som du har angitt. Du kan legge til andre begrensninger ved hjelp av spørringen.  
-2. Klikk OK.
+## <a name="edit-the-query-for-directive"></a><span data-ttu-id="6120b-132">Redigere spørringen for direktivet</span><span class="sxs-lookup"><span data-stu-id="6120b-132">Edit the query for directive</span></span>
+1. <span data-ttu-id="6120b-133">Klikk Rediger spørring.</span><span class="sxs-lookup"><span data-stu-id="6120b-133">Click Edit query.</span></span>
+    * <span data-ttu-id="6120b-134">Bruk av dette direktivet er allerede begrenset for bruk for varer som er registrert i lageret som du har angitt, og med disposisjonskoden som du har angitt.</span><span class="sxs-lookup"><span data-stu-id="6120b-134">The use of this directive is already limited to be used for items registered in the warehouse that you specified, and with the disposition code that you specified.</span></span> <span data-ttu-id="6120b-135">Du kan legge til andre begrensninger ved hjelp av spørringen.</span><span class="sxs-lookup"><span data-stu-id="6120b-135">You can add other constraints using the query.</span></span>  
+2. <span data-ttu-id="6120b-136">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6120b-136">Click OK.</span></span>
 
-## <a name="add-directive-lines"></a>Legge til direktivlinjer
-1. Klikk Ny.
-    * Dette er rekkefølgen for behandling av lokasjonsdirektivlinjene for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
-2. Angi et tall i feltet Fra-antall.
-    * Dette er det laveste antallet som denne direktivlinjen er gyldig for.  
-3. Angi et tall i feltet Til-antall.
-4. Skriv inn en verdi i feltet Enhet.
-    * Enheten fra-antallet og til-antallet uttrykkes i. Hvis du lar dette feltet stå tomt, brukes lagerenheten fra varen.  
-5. Velg et alternativ i feltet Plasser antall.
-    * Ingen, eller Nummerskiltantall: antallet som er registrert på hvert nummerskilt. Antall delt opp i enheter: hele antallet som er registrert. Restantall: Antallet som ikke ennå er registrert fra bestillingslinjen. Forventet antall: Det totale antallet som er angitt på bestillingslinjen.  
-6. Merk av eller fjern merket i boksen Begrens etter enhet.
-    * Hvis du velger dette alternativet, og angir enheten på siden av Begrens etter enhet, kan bare varer med denne enheten plasseres på lokasjonen. Hvis måleenheten for eksempel er paller, så kan bare varer på paller plasseres på den angitte lokasjonen.  
-7. Merk av eller fjern merket i boksen Tillat deling.
-    * Dette gjør at direktivet kan dele antallet mellom flere lokasjoner.  
-8. Klikk Lagre.
+## <a name="add-directive-lines"></a><span data-ttu-id="6120b-137">Legge til direktivlinjer</span><span class="sxs-lookup"><span data-stu-id="6120b-137">Add directive lines</span></span>
+1. <span data-ttu-id="6120b-138">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="6120b-138">Click New.</span></span>
+    * <span data-ttu-id="6120b-139">Dette er rekkefølgen for behandling av lokasjonsdirektivlinjene for den valgte arbeidstypen.</span><span class="sxs-lookup"><span data-stu-id="6120b-139">This is the sequence in which the location directive lines are processed for the selected work type.</span></span> <span data-ttu-id="6120b-140">Du kan også om nødvendig endre rekkefølgen.</span><span class="sxs-lookup"><span data-stu-id="6120b-140">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="6120b-141">Angi et tall i feltet Fra-antall.</span><span class="sxs-lookup"><span data-stu-id="6120b-141">In the From quantity field, enter a number.</span></span>
+    * <span data-ttu-id="6120b-142">Dette er det laveste antallet som denne direktivlinjen er gyldig for.</span><span class="sxs-lookup"><span data-stu-id="6120b-142">This is the lowest quantity that this directive line is valid for.</span></span>  
+3. <span data-ttu-id="6120b-143">Angi et tall i feltet Til-antall.</span><span class="sxs-lookup"><span data-stu-id="6120b-143">In the To quantity field, enter a number.</span></span>
+4. <span data-ttu-id="6120b-144">Skriv inn en verdi i feltet Enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-144">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="6120b-145">Enheten fra-antallet og til-antallet uttrykkes i.</span><span class="sxs-lookup"><span data-stu-id="6120b-145">The unit the From quantity and To quantity is expressed in.</span></span> <span data-ttu-id="6120b-146">Hvis du lar dette feltet stå tomt, brukes lagerenheten fra varen.</span><span class="sxs-lookup"><span data-stu-id="6120b-146">If you leave this field blank the inventory unit from the item is used.</span></span>  
+5. <span data-ttu-id="6120b-147">Velg et alternativ i feltet Plasser antall.</span><span class="sxs-lookup"><span data-stu-id="6120b-147">In the Locate quantity field, select an option.</span></span>
+    * <span data-ttu-id="6120b-148">Ingen, eller Nummerskiltantall: antallet som er registrert på hvert nummerskilt.</span><span class="sxs-lookup"><span data-stu-id="6120b-148">None, or licence plate quantity: The quantity registered on each licence plate.</span></span> <span data-ttu-id="6120b-149">Antall delt opp i enheter: hele antallet som er registrert.</span><span class="sxs-lookup"><span data-stu-id="6120b-149">Unitized quantity: The entire quantity that’s been registered.</span></span> <span data-ttu-id="6120b-150">Restantall: Antallet som ikke ennå er registrert fra bestillingslinjen.</span><span class="sxs-lookup"><span data-stu-id="6120b-150">Remaining quantity: The quantity that is yet to be registered from the purchase order line.</span></span> <span data-ttu-id="6120b-151">Forventet antall: Det totale antallet som er angitt på bestillingslinjen.</span><span class="sxs-lookup"><span data-stu-id="6120b-151">Expected quantity: The total quantity that is specified on the purchase order line.</span></span>  
+6. <span data-ttu-id="6120b-152">Merk av eller fjern merket i boksen Begrens etter enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-152">Check or uncheck the Restrict by unit checkbox.</span></span>
+    * <span data-ttu-id="6120b-153">Hvis du velger dette alternativet, og angir enheten på siden av Begrens etter enhet, kan bare varer med denne enheten plasseres på lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="6120b-153">If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location.</span></span> <span data-ttu-id="6120b-154">Hvis måleenheten for eksempel er paller, så kan bare varer på paller plasseres på den angitte lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="6120b-154">For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.</span></span>  
+7. <span data-ttu-id="6120b-155">Merk av eller fjern merket i boksen Tillat deling.</span><span class="sxs-lookup"><span data-stu-id="6120b-155">Check or uncheck the Allow split checkbox.</span></span>
+    * <span data-ttu-id="6120b-156">Dette gjør at direktivet kan dele antallet mellom flere lokasjoner.</span><span class="sxs-lookup"><span data-stu-id="6120b-156">This allows the directive to split the quantity across multiple locations.</span></span>  
+8. <span data-ttu-id="6120b-157">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="6120b-157">Click Save.</span></span>
 
-## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Begrense direktivlinjen til en bestemt enhet
-1. Klikk Begrens etter enhet.
-    * Denne knappen er bare tilgjengelig når du trykker Lagre etter at du har merket av for Begrens etter enhet.  
-2. Skriv inn en verdi i feltet Enhet.
-3. Lukk siden.
+## <a name="restrict-the-directive-line-to-a-specific-unit"></a><span data-ttu-id="6120b-158">Begrense direktivlinjen til en bestemt enhet</span><span class="sxs-lookup"><span data-stu-id="6120b-158">Restrict the directive line to a specific unit</span></span>
+1. <span data-ttu-id="6120b-159">Klikk Begrens etter enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-159">Click Restrict by unit.</span></span>
+    * <span data-ttu-id="6120b-160">Denne knappen er bare tilgjengelig når du trykker Lagre etter at du har merket av for Begrens etter enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-160">This button is only available when you press Save after you have selected the Restrict by unit check box.</span></span>  
+2. <span data-ttu-id="6120b-161">Skriv inn en verdi i feltet Enhet.</span><span class="sxs-lookup"><span data-stu-id="6120b-161">In the Unit field, type a value.</span></span>
+3. <span data-ttu-id="6120b-162">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="6120b-162">Close the page.</span></span>
 
-## <a name="add-a-location-directive-action-line"></a>Legge til en handlingslinje for lokasjonsdirektiv
-1. Klikk Ny.
-    * Dette er rekkefølgen for behandling av lokasjonsdirektivhandlingslinjene for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
-2. Skriv inn en verdi i Navn-feltet.
-    * Dette er den unike identifikatoren for denne direktivhandlingen.  
-3. Velg et alternativ i feltet Bruk av fast lokasjon.
-    * Faste og ikke-faste lokasjoner: Alle ikke-faste lokasjoner er gyldige i tillegg til produktets egne faste lokasjon innenfor området som er angitt i spørringen.  Bare faste lokasjoner for produktet: Faste lokasjoner for produktet er gyldige, og alle produktvarianter deler det samme settet med fast lokasjoner. Bare faste lokasjoner for produktvarianten: Bare faste lokasjoner som er angitt for hver produktvariant er gyldige.  
-4. Velg et alternativ i feltet Strategi.
-    * Arbeidsordrer av typen Bestilling støtter følgende strategier: Ingen: varen plasseres i den første lokasjonen som blir funnet. Konsolider: Varen plasseres i en lokasjon der lignende varer finnes allerede. Tom lokasjon uten innkommende arbeid: varen plasseres i den første tomme lokasjonen som blir funnet. En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid.  
-5. Klikk Lagre.
+## <a name="add-a-location-directive-action-line"></a><span data-ttu-id="6120b-163">Legge til en handlingslinje for lokasjonsdirektiv</span><span class="sxs-lookup"><span data-stu-id="6120b-163">Add a location directive action line</span></span>
+1. <span data-ttu-id="6120b-164">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="6120b-164">Click New.</span></span>
+    * <span data-ttu-id="6120b-165">Dette er rekkefølgen for behandling av lokasjonsdirektivhandlingslinjene for den valgte arbeidstypen.</span><span class="sxs-lookup"><span data-stu-id="6120b-165">This is the sequence in which the location directive action lines are processed for the selected work type.</span></span> <span data-ttu-id="6120b-166">Du kan også om nødvendig endre rekkefølgen.</span><span class="sxs-lookup"><span data-stu-id="6120b-166">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="6120b-167">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-167">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="6120b-168">Dette er den unike identifikatoren for denne direktivhandlingen.</span><span class="sxs-lookup"><span data-stu-id="6120b-168">This is the unique identifier for this directive action.</span></span>  
+3. <span data-ttu-id="6120b-169">Velg et alternativ i feltet Bruk av fast lokasjon.</span><span class="sxs-lookup"><span data-stu-id="6120b-169">In the Fixed location usage field, select an option.</span></span>
+    * <span data-ttu-id="6120b-170">Faste og ikke-faste lokasjoner: Alle ikke-faste lokasjoner er gyldige i tillegg til produktets egne faste lokasjon innenfor området som er angitt i spørringen.</span><span class="sxs-lookup"><span data-stu-id="6120b-170">Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.</span></span>  <span data-ttu-id="6120b-171">Bare faste lokasjoner for produktet: Faste lokasjoner for produktet er gyldige, og alle produktvarianter deler det samme settet med fast lokasjoner.</span><span class="sxs-lookup"><span data-stu-id="6120b-171">Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.</span></span> <span data-ttu-id="6120b-172">Bare faste lokasjoner for produktvarianten: Bare faste lokasjoner som er angitt for hver produktvariant er gyldige.</span><span class="sxs-lookup"><span data-stu-id="6120b-172">Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.</span></span>  
+4. <span data-ttu-id="6120b-173">Velg et alternativ i feltet Strategi.</span><span class="sxs-lookup"><span data-stu-id="6120b-173">In the Strategy field, select an option.</span></span>
+    * <span data-ttu-id="6120b-174">Arbeidsordrer av typen Bestilling støtter følgende strategier: Ingen: varen plasseres i den første lokasjonen som blir funnet.</span><span class="sxs-lookup"><span data-stu-id="6120b-174">Work orders of type Purchase order support the following strategies: None: the item is placed at the first location that’s found.</span></span> <span data-ttu-id="6120b-175">Konsolider: Varen plasseres i en lokasjon der lignende varer finnes allerede.</span><span class="sxs-lookup"><span data-stu-id="6120b-175">Consolidate: The item is placed in a location where similar items are already available.</span></span> <span data-ttu-id="6120b-176">Tom lokasjon uten innkommende arbeid: varen plasseres i den første tomme lokasjonen som blir funnet.</span><span class="sxs-lookup"><span data-stu-id="6120b-176">Empty location with no incoming work: the item is placed in the first empty location that’s found.</span></span> <span data-ttu-id="6120b-177">En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid.</span><span class="sxs-lookup"><span data-stu-id="6120b-177">A location is considered to be empty if it has no physical inventory and no expected incoming work.</span></span>  
+5. <span data-ttu-id="6120b-178">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="6120b-178">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive-action-line"></a>Redigere spørringen for direktivhandlingslinje
-1. Klikk Rediger spørring.
-2. Klikk Legg til.
-3. Skriv inn lokasjonsprofil-ID i feltet Felt.
-    * I dette eksemplet skal vi begrense mulige lokasjoner ved hjelp av en lokasjonsprofil-ID.  
-4. Skriv inn en verdi i Kriterier-feltet.
-5. Klikk OK.
-    * Du kan fortsette å legge til direktivlinjer og direktivhandlinger før du dekket alle mulige scenarier i lageret.  
+## <a name="edit-the-query-for-directive-action-line"></a><span data-ttu-id="6120b-179">Redigere spørringen for direktivhandlingslinje</span><span class="sxs-lookup"><span data-stu-id="6120b-179">Edit the query for directive action line</span></span>
+1. <span data-ttu-id="6120b-180">Klikk Rediger spørring.</span><span class="sxs-lookup"><span data-stu-id="6120b-180">Click Edit query.</span></span>
+2. <span data-ttu-id="6120b-181">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="6120b-181">Click Add.</span></span>
+3. <span data-ttu-id="6120b-182">Skriv inn lokasjonsprofil-ID i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="6120b-182">In the Field field, type 'location profile ID'.</span></span>
+    * <span data-ttu-id="6120b-183">I dette eksemplet skal vi begrense mulige lokasjoner ved hjelp av en lokasjonsprofil-ID.</span><span class="sxs-lookup"><span data-stu-id="6120b-183">In this example, we’ll restrict the possible locations using a location profile ID.</span></span>  
+4. <span data-ttu-id="6120b-184">Skriv inn en verdi i Kriterier-feltet.</span><span class="sxs-lookup"><span data-stu-id="6120b-184">In the Criteria field, type a value.</span></span>
+5. <span data-ttu-id="6120b-185">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6120b-185">Click OK.</span></span>
+    * <span data-ttu-id="6120b-186">Du kan fortsette å legge til direktivlinjer og direktivhandlinger før du dekket alle mulige scenarier i lageret.</span><span class="sxs-lookup"><span data-stu-id="6120b-186">You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.</span></span>  
 
 

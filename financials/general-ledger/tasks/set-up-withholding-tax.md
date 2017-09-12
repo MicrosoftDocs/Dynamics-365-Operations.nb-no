@@ -16,38 +16,38 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: fa540720cdf1689393093e52ee37fdd74ff6c8e1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dc4c0745235052cb4145bc7083fef1a88c8bb5c9
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-withholding-tax"></a>Definere kildeskatt
+# <a name="set-up-withholding-tax"></a><span data-ttu-id="70d62-103">Definere kildeskatt</span><span class="sxs-lookup"><span data-stu-id="70d62-103">Set up withholding tax</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Withholding tax er en leverandørskatt som ikke fører til merverditransaksjoner. Withholding tax som beregnes for leverandørbetaling, er gjeld. Derfor kan man bare bruke balansekontoer eller gjeldskontoer til å postere withholding tax. Denne oppgaveveiledningen beskriver hvordan du definerer kildeskatt.
+<span data-ttu-id="70d62-104">Withholding tax er en leverandørskatt som ikke fører til merverditransaksjoner.</span><span class="sxs-lookup"><span data-stu-id="70d62-104">Withholding tax is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="70d62-105">Withholding tax som beregnes for leverandørbetaling, er gjeld.</span><span class="sxs-lookup"><span data-stu-id="70d62-105">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="70d62-106">Derfor kan man bare bruke balansekontoer eller gjeldskontoer til å postere withholding tax.</span><span class="sxs-lookup"><span data-stu-id="70d62-106">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="70d62-107">Denne oppgaveveiledningen beskriver hvordan du definerer kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="70d62-107">This task guide demonstrates how to set up withholding tax.</span></span>
 
-1. Gå til Avgift > Indirekte avgifter > Kildeskatt > Kildeskattkoder.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Kildeskattkode.
-4. Angi navnet på kildeskattkoden i feltet Navn på kildeskatt.
-5. Velg hovedkontoen for postering av kildeskattgjelden i Hovedkonto-feltet.
-6. Klikk Lagre.
-7. Velg Verdier.
-8. Merk den valgte raden i listen.
-9. Angi en prosent som brukes til beregning av kildeskatten, i Verdi-feltet.
-10. Klikk Lagre.
-11. Lukk siden.
-12. Klikk Lagre.
-13. Lukk siden.
-14. Gå til Avgift > Indirekte avgifter > Kildeskatt > Kildeskattgrupper.
-15. Klikk Ny.
-16. Angi identifikatoren til kildeskattgruppen i feltet Kildeskattgruppe.
-17. I Beskrivelse-feltet skriver du inn navnet på kildeskattgruppen.
-18. Merk den valgte raden i listen.
-19. Velg kildeskattkoden i Kildeskattkode-feltet.
-20. Klikk koblingen i den valgte raden i listen.
-21. Klikk Lagre.
+1. <span data-ttu-id="70d62-108">Gå til Avgift > Indirekte avgifter > Kildeskatt > Kildeskattkoder.</span><span class="sxs-lookup"><span data-stu-id="70d62-108">Go to Tax > Indirect taxes > Withholding tax > Withholding tax codes.</span></span>
+2. <span data-ttu-id="70d62-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="70d62-109">Click New.</span></span>
+3. <span data-ttu-id="70d62-110">Skriv inn en verdi i feltet Kildeskattkode.</span><span class="sxs-lookup"><span data-stu-id="70d62-110">In the Withholding tax code field, type a value.</span></span>
+4. <span data-ttu-id="70d62-111">Angi navnet på kildeskattkoden i feltet Navn på kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="70d62-111">In the Withholding tax name field, enter the name of the withholding tax code.</span></span>
+5. <span data-ttu-id="70d62-112">Velg hovedkontoen for postering av kildeskattgjelden i Hovedkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="70d62-112">In the Main account field, select the main account for posting the withholding tax liability.</span></span>
+6. <span data-ttu-id="70d62-113">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="70d62-113">Click Save.</span></span>
+7. <span data-ttu-id="70d62-114">Velg Verdier.</span><span class="sxs-lookup"><span data-stu-id="70d62-114">Click Values.</span></span>
+8. <span data-ttu-id="70d62-115">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="70d62-115">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="70d62-116">Angi en prosent som brukes til beregning av kildeskatten, i Verdi-feltet.</span><span class="sxs-lookup"><span data-stu-id="70d62-116">In the Value field, enter a percentage used for the calculation of the withholding tax.</span></span>
+10. <span data-ttu-id="70d62-117">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="70d62-117">Click Save.</span></span>
+11. <span data-ttu-id="70d62-118">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="70d62-118">Close the page.</span></span>
+12. <span data-ttu-id="70d62-119">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="70d62-119">Click Save.</span></span>
+13. <span data-ttu-id="70d62-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="70d62-120">Close the page.</span></span>
+14. <span data-ttu-id="70d62-121">Gå til Avgift > Indirekte avgifter > Kildeskatt > Kildeskattgrupper.</span><span class="sxs-lookup"><span data-stu-id="70d62-121">Go to Tax > Indirect taxes > Withholding tax > Withholding tax groups.</span></span>
+15. <span data-ttu-id="70d62-122">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="70d62-122">Click New.</span></span>
+16. <span data-ttu-id="70d62-123">Angi identifikatoren til kildeskattgruppen i feltet Kildeskattgruppe.</span><span class="sxs-lookup"><span data-stu-id="70d62-123">In the Withholding tax group field, enter the identifier of the withholding tax group.</span></span>
+17. <span data-ttu-id="70d62-124">I Beskrivelse-feltet skriver du inn navnet på kildeskattgruppen.</span><span class="sxs-lookup"><span data-stu-id="70d62-124">In the Description field, enter the name of the withholding tax group.</span></span>
+18. <span data-ttu-id="70d62-125">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="70d62-125">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="70d62-126">Velg kildeskattkoden i Kildeskattkode-feltet.</span><span class="sxs-lookup"><span data-stu-id="70d62-126">In the Withholding tax code field, select the withholding tax code.</span></span>
+20. <span data-ttu-id="70d62-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="70d62-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="70d62-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="70d62-128">Click Save.</span></span>
 
 

@@ -16,59 +16,59 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: de5baa1e5c30ee998d113f7366c445a65723dfdc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6bb7a5133e9412f4ed6fb74f0d3ee595c07a0c4b
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-unit-of-measure"></a>Administrere måleenhet
+# <a name="manage-unit-of-measure"></a><span data-ttu-id="3e323-103">Administrere måleenhet</span><span class="sxs-lookup"><span data-stu-id="3e323-103">Manage unit of measure</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten beskriver hvordan du definerer en målenhet, angir oversettelser for enheten og beskrivelsen og definerer omregningsreglene for relaterte enheter. Du kan gå gjennom denne fremgangsmåten ved hjelp av demonstrasjonsdata eller ved hjelp av dine egne data.
+<span data-ttu-id="3e323-104">Denne fremgangsmåten beskriver hvordan du definerer en målenhet, angir oversettelser for enheten og beskrivelsen og definerer omregningsreglene for relaterte enheter.</span><span class="sxs-lookup"><span data-stu-id="3e323-104">This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units.</span></span> <span data-ttu-id="3e323-105">Du kan gå gjennom denne fremgangsmåten ved hjelp av demonstrasjonsdata eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="3e323-105">You can walk through this procedure using demo data, or using your own data.</span></span>
 
-1. Gå til Vedlikehold av frigitt produkt.
-2. Velg enheter.
+1. <span data-ttu-id="3e323-106">Gå til Vedlikehold av frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="3e323-106">Go to Released product maintenance.</span></span>
+2. <span data-ttu-id="3e323-107">Velg enheter.</span><span class="sxs-lookup"><span data-stu-id="3e323-107">Click Units.</span></span>
 
-## <a name="create-a-unit-of-measure"></a>Opprett en måleenhet
-1. Klikk Ny.
-2. Skriv inn en verdi i feltet Enhet.
-    * Angi ID eller symbol som skal brukes ved referanse til måleenheten.  
-3. Skriv inn en verdi i feltet Beskrivelse.
-    * Angi et beskrivende navn for måleenheten på systemspråket.  
-4. Velg et alternativ i feltet Enhetsklasse.
-    * Enhetsklassen definerer hvilken logisk gruppering, for eksempel område, masse eller antall, måleenheten er en del av.  
-5. Angi et tall i feltet Desimalpresisjon.
-    * Angi antallet desimaler som den konverterte måleenheten må avrundes til når en beregning er fullført for måleenheten.  
-6. Klikk Lagre.
+## <a name="create-a-unit-of-measure"></a><span data-ttu-id="3e323-108">Opprett en måleenhet</span><span class="sxs-lookup"><span data-stu-id="3e323-108">Create a unit of measure</span></span>
+1. <span data-ttu-id="3e323-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3e323-109">Click New.</span></span>
+2. <span data-ttu-id="3e323-110">Skriv inn en verdi i feltet Enhet.</span><span class="sxs-lookup"><span data-stu-id="3e323-110">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="3e323-111">Angi ID eller symbol som skal brukes ved referanse til måleenheten.</span><span class="sxs-lookup"><span data-stu-id="3e323-111">Enter the ID or symbol to use when referring to the unit of measure.</span></span>  
+3. <span data-ttu-id="3e323-112">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="3e323-112">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="3e323-113">Angi et beskrivende navn for måleenheten på systemspråket.</span><span class="sxs-lookup"><span data-stu-id="3e323-113">Enter a descriptive name for the unit of measure in the system language.</span></span>  
+4. <span data-ttu-id="3e323-114">Velg et alternativ i feltet Enhetsklasse.</span><span class="sxs-lookup"><span data-stu-id="3e323-114">In the Unit class field, select an option.</span></span>
+    * <span data-ttu-id="3e323-115">Enhetsklassen definerer hvilken logisk gruppering, for eksempel område, masse eller antall, måleenheten er en del av.</span><span class="sxs-lookup"><span data-stu-id="3e323-115">The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.</span></span>  
+5. <span data-ttu-id="3e323-116">Angi et tall i feltet Desimalpresisjon.</span><span class="sxs-lookup"><span data-stu-id="3e323-116">In the Decimal precision field, enter a number.</span></span>
+    * <span data-ttu-id="3e323-117">Angi antallet desimaler som den konverterte måleenheten må avrundes til når en beregning er fullført for måleenheten.</span><span class="sxs-lookup"><span data-stu-id="3e323-117">Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.</span></span>  
+6. <span data-ttu-id="3e323-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3e323-118">Click Save.</span></span>
 
-## <a name="define-unit-translations"></a>Definer enhetsoversettelser
-1. Klikk Enhetstekster.
-2. Klikk Ny.
-    * Bruk enhetsteksten til å opprette en oversettelse av ID-en eller et symbol som representerer måleenheten for bruk på eksterne dokumenter på kunde- eller leverandørspesifikke språk.  
-3. Angi eller velg en verdi i feltet Språk.
-4. Skriv inn en verdi i Tekst-feltet.
-5. Klikk Lagre.
-6. Lukk siden.
-7. Klikk Oversatte enhetsbeskrivelser.
-8. Klikk Ny.
-    * Definer språkspesifikke beskrivelser for måleenheten.  
-9. Angi eller velg en verdi i feltet Språk.
-10. Skriv inn en verdi i feltet Beskrivelse.
-11. Klikk Lagre.
-12. Lukk siden.
+## <a name="define-unit-translations"></a><span data-ttu-id="3e323-119">Definer enhetsoversettelser</span><span class="sxs-lookup"><span data-stu-id="3e323-119">Define unit translations</span></span>
+1. <span data-ttu-id="3e323-120">Klikk Enhetstekster.</span><span class="sxs-lookup"><span data-stu-id="3e323-120">Click Unit texts.</span></span>
+2. <span data-ttu-id="3e323-121">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3e323-121">Click New.</span></span>
+    * <span data-ttu-id="3e323-122">Bruk enhetsteksten til å opprette en oversettelse av ID-en eller et symbol som representerer måleenheten for bruk på eksterne dokumenter på kunde- eller leverandørspesifikke språk.</span><span class="sxs-lookup"><span data-stu-id="3e323-122">Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.</span></span>  
+3. <span data-ttu-id="3e323-123">Angi eller velg en verdi i feltet Språk.</span><span class="sxs-lookup"><span data-stu-id="3e323-123">In the Language field, enter or select a value.</span></span>
+4. <span data-ttu-id="3e323-124">Skriv inn en verdi i Tekst-feltet.</span><span class="sxs-lookup"><span data-stu-id="3e323-124">In the Text field, type a value.</span></span>
+5. <span data-ttu-id="3e323-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3e323-125">Click Save.</span></span>
+6. <span data-ttu-id="3e323-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3e323-126">Close the page.</span></span>
+7. <span data-ttu-id="3e323-127">Klikk Oversatte enhetsbeskrivelser.</span><span class="sxs-lookup"><span data-stu-id="3e323-127">Click Translated unit descriptions.</span></span>
+8. <span data-ttu-id="3e323-128">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3e323-128">Click New.</span></span>
+    * <span data-ttu-id="3e323-129">Definer språkspesifikke beskrivelser for måleenheten.</span><span class="sxs-lookup"><span data-stu-id="3e323-129">Define language-specific descriptions for the unit of measure.</span></span>  
+9. <span data-ttu-id="3e323-130">Angi eller velg en verdi i feltet Språk.</span><span class="sxs-lookup"><span data-stu-id="3e323-130">In the Language field, enter or select a value.</span></span>
+10. <span data-ttu-id="3e323-131">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="3e323-131">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="3e323-132">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3e323-132">Click Save.</span></span>
+12. <span data-ttu-id="3e323-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3e323-133">Close the page.</span></span>
 
-## <a name="define-unit-conversion-rules"></a>Definer enhetsomregningsregler
-1. Klikk Enhetsomregninger.
-    * Definere regler for å konvertere måleenheten til og fra andre enheter i den valgte enhetsklassen.  
-2. Klikk Ny for å åpne nedtrekksdialogen.
-3. Angi et tall i feltet Faktor.
-    * Omregningsfaktor mellom fra-enheten og til-enheten. Omregningsfaktoren fra centimeter til meter er for eksempel 100, fordi det er 100 centimeter i én meter.  
-4. Angi eller velg en verdi i feltet Til enhet.
-5. Velg et alternativ i feltet Avrunding.
-    * Definer hvordan den omregnede verdien skal avrundes.  
-6. Klikk OK.
-7. Lukk siden.
+## <a name="define-unit-conversion-rules"></a><span data-ttu-id="3e323-134">Definer enhetsomregningsregler</span><span class="sxs-lookup"><span data-stu-id="3e323-134">Define unit conversion rules</span></span>
+1. <span data-ttu-id="3e323-135">Klikk Enhetsomregninger.</span><span class="sxs-lookup"><span data-stu-id="3e323-135">Click Unit conversions.</span></span>
+    * <span data-ttu-id="3e323-136">Definere regler for å konvertere måleenheten til og fra andre enheter i den valgte enhetsklassen.</span><span class="sxs-lookup"><span data-stu-id="3e323-136">Define rules for converting the unit of measure to and from other units of measure in the selected unit class.</span></span>  
+2. <span data-ttu-id="3e323-137">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="3e323-137">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="3e323-138">Angi et tall i feltet Faktor.</span><span class="sxs-lookup"><span data-stu-id="3e323-138">In the Factor field, enter a number.</span></span>
+    * <span data-ttu-id="3e323-139">Omregningsfaktor mellom fra-enheten og til-enheten.</span><span class="sxs-lookup"><span data-stu-id="3e323-139">Conversion factor between the From unit and the To unit.</span></span> <span data-ttu-id="3e323-140">Omregningsfaktoren fra centimeter til meter er for eksempel 100, fordi det er 100 centimeter i én meter.</span><span class="sxs-lookup"><span data-stu-id="3e323-140">For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.</span></span>  
+4. <span data-ttu-id="3e323-141">Angi eller velg en verdi i feltet Til enhet.</span><span class="sxs-lookup"><span data-stu-id="3e323-141">In the To unit field, enter or select a value.</span></span>
+5. <span data-ttu-id="3e323-142">Velg et alternativ i feltet Avrunding.</span><span class="sxs-lookup"><span data-stu-id="3e323-142">In the Rounding field, select an option.</span></span>
+    * <span data-ttu-id="3e323-143">Definer hvordan den omregnede verdien skal avrundes.</span><span class="sxs-lookup"><span data-stu-id="3e323-143">Define how the converted value should be rounded.</span></span>  
+6. <span data-ttu-id="3e323-144">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3e323-144">Click OK.</span></span>
+7. <span data-ttu-id="3e323-145">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3e323-145">Close the page.</span></span>
 
 

@@ -17,27 +17,27 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: b968502de357779b7d26a5780f3febc3076dd9ad
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6fabeb31720a60bf97d08dabf8ed87ac6af7cbf7
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-an-expiry-date-for-a-production-flow-version"></a>Angi en utløpsdato for en produksjonsflytversjon
+# <a name="define-an-expiry-date-for-a-production-flow-version"></a><span data-ttu-id="8bd2e-103">Angi en utløpsdato for en produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="8bd2e-103">Define an expiry date for a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en gitt dato, eller planlegge erstatning av en aktiv versjon med en ny versjon, må du angi en utløpsdato for versjonen. Det er ikke nødvendig å deaktivere versjonen.
+<span data-ttu-id="8bd2e-104">For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en gitt dato, eller planlegge erstatning av en aktiv versjon med en ny versjon, må du angi en utløpsdato for versjonen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-104">To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version.</span></span> <span data-ttu-id="8bd2e-105">Det er ikke nødvendig å deaktivere versjonen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-105">It is not necessary to deactivate the version.</span></span>
 
 
-## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a>Angi en utløpsdato for å avslutte en produksjonsflytversjon
-1. Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.
-2. Finn og velg ønsket post i listen.
-    * Velg en produksjonsflyt som har en versjon som allerede er definert.  
-3. Klikk koblingen i den valgte raden i listen.
-4. Klikk Rediger.
-5. Merk den valgte raden i listen.
-6. Angi dato og klokkeslett i feltet Utløpsdato.
-    * For utløpsdatoen, vil ikke en ny versjon starte eller bli aktivert. Det vil heller ikke lenger være mulig å opprette eller starte jobber for denne produksjonsflyten. Du kan fortsatt fullføre startede jobber etter utløpsdatoen.  
+## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a><span data-ttu-id="8bd2e-106">Angi en utløpsdato for å avslutte en produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="8bd2e-106">Set an expiration date to end a production flow version</span></span>
+1. <span data-ttu-id="8bd2e-107">Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-107">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="8bd2e-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8bd2e-109">Velg en produksjonsflyt som har en versjon som allerede er definert.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-109">Select any production flow that has a version that is already defined.</span></span>  
+3. <span data-ttu-id="8bd2e-110">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="8bd2e-111">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-111">Click Edit.</span></span>
+5. <span data-ttu-id="8bd2e-112">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-112">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="8bd2e-113">Angi dato og klokkeslett i feltet Utløpsdato.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-113">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="8bd2e-114">For utløpsdatoen, vil ikke en ny versjon starte eller bli aktivert.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-114">For the expiration date, a new version will not start or become activated.</span></span> <span data-ttu-id="8bd2e-115">Det vil heller ikke lenger være mulig å opprette eller starte jobber for denne produksjonsflyten.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-115">It will also no longer be possible to create or start jobs for this production flow.</span></span> <span data-ttu-id="8bd2e-116">Du kan fortsatt fullføre startede jobber etter utløpsdatoen.</span><span class="sxs-lookup"><span data-stu-id="8bd2e-116">You can still complete started jobs after the expiration date.</span></span>  
 
 

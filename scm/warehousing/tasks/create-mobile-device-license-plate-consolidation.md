@@ -17,23 +17,23 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 1b399a4fdb38958dac886cf69909418b5df246b7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7b8d20561ff092bd64c17c5d9335e9f54a1d191b
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering
+# <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a><span data-ttu-id="50dc8-103">Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering</span><span class="sxs-lookup"><span data-stu-id="50dc8-103">Create a mobile device menu item for license plate consolidation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter et menyelement for mobilenhet for nummerskiltkonsolideringsarbeid. Dette gjør at lagermedarbeidere kan konsolidere varer på ett skilt med varer på et annet skilt på samme lokasjon. De kan for eksempel bruke dette hvis etterfølgende trinn er de samme på begge arbeidsordrene, slik at arbeidet bare må utføres én gang for de sammenslåtte varene. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Denne oppgaven vil vanligvis utføres av en lagersjef. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="50dc8-104">Denne fremgangsmåten viser hvordan du oppretter et menyelement for mobilenhet for nummerskiltkonsolideringsarbeid.</span><span class="sxs-lookup"><span data-stu-id="50dc8-104">This procedure shows you how to create a mobile device menu item for license plate consolidation work.</span></span> <span data-ttu-id="50dc8-105">Dette gjør at lagermedarbeidere kan konsolidere varer på ett skilt med varer på et annet skilt på samme lokasjon.</span><span class="sxs-lookup"><span data-stu-id="50dc8-105">This enables warehouse workers to consolidate items on one license plate with items on another license place within the same location.</span></span> <span data-ttu-id="50dc8-106">De kan for eksempel bruke dette hvis etterfølgende trinn er de samme på begge arbeidsordrene, slik at arbeidet bare må utføres én gang for de sammenslåtte varene.</span><span class="sxs-lookup"><span data-stu-id="50dc8-106">For example, they might use this if subsequent staging steps were the same on both work orders, so that the work only needs to be performed once for the merged items.</span></span> <span data-ttu-id="50dc8-107">Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="50dc8-107">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="50dc8-108">Denne oppgaven vil vanligvis utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="50dc8-108">The task would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="50dc8-109">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="50dc8-109">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
-1. Gå til Lagerstyring > Oppsett > Mobilenhet > Menyelementer på mobilenheten.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Menyelementnavn.
-4. Skriv inn en verdi i Tittel-feltet.
-5. Velg Indirekte i feltet Modus.
-6. Velg Konsolider skiltnummer i Aktivitetskode-feltet.
+1. <span data-ttu-id="50dc8-110">Gå til Lagerstyring > Oppsett > Mobilenhet > Menyelementer på mobilenheten.</span><span class="sxs-lookup"><span data-stu-id="50dc8-110">Go to Warehouse management > Setup > Mobile device > Mobile device menu items.</span></span>
+2. <span data-ttu-id="50dc8-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="50dc8-111">Click New.</span></span>
+3. <span data-ttu-id="50dc8-112">Skriv inn en verdi i feltet Menyelementnavn.</span><span class="sxs-lookup"><span data-stu-id="50dc8-112">In the Menu item name field, type a value.</span></span>
+4. <span data-ttu-id="50dc8-113">Skriv inn en verdi i Tittel-feltet.</span><span class="sxs-lookup"><span data-stu-id="50dc8-113">In the Title field, type a value.</span></span>
+5. <span data-ttu-id="50dc8-114">Velg Indirekte i feltet Modus.</span><span class="sxs-lookup"><span data-stu-id="50dc8-114">In the Mode field, select 'Indirect'.</span></span>
+6. <span data-ttu-id="50dc8-115">Velg Konsolider skiltnummer i Aktivitetskode-feltet.</span><span class="sxs-lookup"><span data-stu-id="50dc8-115">In the Activity code field, select 'Consolidate license plates'.</span></span>
 
 

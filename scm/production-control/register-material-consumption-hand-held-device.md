@@ -18,75 +18,75 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: b4c0d14340e96b2e7916ea73e25e62ae5c33ce49
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: 83703d962d6099ba8ac107548a569c8d1f34882f
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
-Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.
+# <a name="register-material-consumption-using-a-mobile-device"></a><span data-ttu-id="b42c3-103">Registrere materialforbruk med en mobil enhet</span><span class="sxs-lookup"><span data-stu-id="b42c3-103">Register material consumption using a mobile device</span></span>
+<span data-ttu-id="b42c3-104">Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.</span><span class="sxs-lookup"><span data-stu-id="b42c3-104">This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.</span></span>
 
-<a name="introduction"></a>Introduksjon
+<a name="introduction"></a><span data-ttu-id="b42c3-105">Introduksjon</span><span class="sxs-lookup"><span data-stu-id="b42c3-105">Introduction</span></span>
 ------------
 
-Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer. For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller. Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted. Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet. La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet. [![](./media/scenario3.png)](./media/scenario3.png)
+<span data-ttu-id="b42c3-106">Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer.</span><span class="sxs-lookup"><span data-stu-id="b42c3-106">This workflow is relevant if there is a strict requirement for material traceability.</span></span> <span data-ttu-id="b42c3-107">For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller.</span><span class="sxs-lookup"><span data-stu-id="b42c3-107">In those cases, to maintain traceability of the materials, the exact time and quantity must be reported for the consumption.</span></span> <span data-ttu-id="b42c3-108">Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted.</span><span class="sxs-lookup"><span data-stu-id="b42c3-108">This process can be seen as opposed to pre- or back-flushing operations, where there is an offset between the time of registration and the time when the actual consumption takes place.</span></span> <span data-ttu-id="b42c3-109">Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet.</span><span class="sxs-lookup"><span data-stu-id="b42c3-109">This explains why a strategy of automatic consumption cannot be used for some materials with traceability requirements.</span></span> <span data-ttu-id="b42c3-110">La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.</span><span class="sxs-lookup"><span data-stu-id="b42c3-110">Let’s look at a simple scenario that explains how to set up a workflow to enable registration of raw material consumption in production by using a handheld device.</span></span> [![](./media/scenario3.png)](./media/scenario3.png)
 
-### <a name="scenario-details"></a>Scenariodetaljer
+### <a name="scenario-details"></a><span data-ttu-id="b42c3-111">Scenariodetaljer</span><span class="sxs-lookup"><span data-stu-id="b42c3-111">Scenario details</span></span>
 
-En fortløpende produksjonsprosess (5) bruker partikontrollert råmateriale RM-100. Materialet er på lager på lokasjonen Bulk-001 (1) på nummerskilt PL-1 med to partier, B1 og B2, begge med et antall på 100 kilo. Lagerarbeid (2) er frigitt og behandlet for RM-100, og materialet er plukket fra Bulk-001 til produksjonsinnleveringssted PIL-01 (3), som er definert som ikke-nummerskiltkontrollert. Maskinoperatøren veier ut materialer fra produksjonsinnleveringsstedet (3) og registrerer vekten og partinummeret som er brukt (4). Fra produksjonsinnleveringsstedet legges en del av materialet manuelt til produksjonsprosessen i definerte tidsintervaller. Når maskinoperatøren legger til materiale, veies det på en vekt og partinummeret registreres.
+<span data-ttu-id="b42c3-112">En fortløpende produksjonsprosess (5) bruker partikontrollert råmateriale RM-100.</span><span class="sxs-lookup"><span data-stu-id="b42c3-112">A continuous production process (5) consumes the batch-controlled raw material RM-100.</span></span> <span data-ttu-id="b42c3-113">Materialet er på lager på lokasjonen Bulk-001 (1) på nummerskilt PL-1 med to partier, B1 og B2, begge med et antall på 100 kilo.</span><span class="sxs-lookup"><span data-stu-id="b42c3-113">The material is on-hand on location Bulk-001 (1) on license plate PL-1 with two batches, B1 and B2, both with a quantity of 100 lbs.</span></span> <span data-ttu-id="b42c3-114">Lagerarbeid (2) er frigitt og behandlet for RM-100, og materialet er plukket fra Bulk-001 til produksjonsinnleveringssted PIL-01 (3), som er definert som ikke-nummerskiltkontrollert.</span><span class="sxs-lookup"><span data-stu-id="b42c3-114">Warehouse work (2) is released and processed for RM-100, and the material is picked from Bulk-001 to the production input location PIL-01 (3), which is defined as non-license plate controlled.</span></span> <span data-ttu-id="b42c3-115">Maskinoperatøren veier ut materialer fra produksjonsinnleveringsstedet (3) og registrerer vekten og partinummeret som er brukt (4).</span><span class="sxs-lookup"><span data-stu-id="b42c3-115">The machine operator weighs out material from the production input location (3) and registers the weight and batch number as consumed (4).</span></span> <span data-ttu-id="b42c3-116">Fra produksjonsinnleveringsstedet legges en del av materialet manuelt til produksjonsprosessen i definerte tidsintervaller.</span><span class="sxs-lookup"><span data-stu-id="b42c3-116">From the production input location, a portion of the material is manually added to the production process in defined time intervals.</span></span> <span data-ttu-id="b42c3-117">Når maskinoperatøren legger til materiale, veies det på en vekt og partinummeret registreres.</span><span class="sxs-lookup"><span data-stu-id="b42c3-117">When the machine operator adds material, it is weighed on a scale and the batch number is registered.</span></span>
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Definer arbeidsflyten til å registrere forbruk ved hjelp av en håndholdt enhet
-Opprett et ferdigvareprodukt, FG-100, med en stykkliste som har det partikontrollerte råmaterialet RM-100. Legg til to partier, B1 og B2, av RM-100 i et antall på 100 til lokasjon: Bulk-001 på nummerskilt: PL-1. Trekkprinsippet på stykklistelinjen for RM-100 er satt til **manuell**. Angi produksjonsinnleveringsstedet til PIL-01. Du kan gjøre dette ved å velge denne lokasjonen som standard produksjonsinnleveringssted på lager 51.
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a><span data-ttu-id="b42c3-118">Definer arbeidsflyten til å registrere forbruk ved hjelp av en håndholdt enhet</span><span class="sxs-lookup"><span data-stu-id="b42c3-118">Set up the workflow to register consumption using a handheld device</span></span>
+<span data-ttu-id="b42c3-119">Opprett et ferdigvareprodukt, FG-100, med en stykkliste som har det partikontrollerte råmaterialet RM-100.</span><span class="sxs-lookup"><span data-stu-id="b42c3-119">Create a finished-good product, FG-100, with a bill of material that has the batch-controlled raw material RM-100.</span></span> <span data-ttu-id="b42c3-120">Legg til to partier, B1 og B2, av RM-100 i et antall på 100 til lokasjon: Bulk-001 på nummerskilt: PL-1.</span><span class="sxs-lookup"><span data-stu-id="b42c3-120">Add two batches, B1 and B2, of RM-100 in a quantity of 100 to location: Bulk-001 on license plate: PL-1.</span></span> <span data-ttu-id="b42c3-121">Trekkprinsippet på stykklistelinjen for RM-100 er satt til **manuell**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-121">The flushing principle on the bill of material line for RM-100 is set to **Manual**.</span></span> <span data-ttu-id="b42c3-122">Angi produksjonsinnleveringsstedet til PIL-01.</span><span class="sxs-lookup"><span data-stu-id="b42c3-122">Set  the production input location to PIL-01.</span></span> <span data-ttu-id="b42c3-123">Du kan gjøre dette ved å velge denne lokasjonen som standard produksjonsinnleveringssted på lager 51.</span><span class="sxs-lookup"><span data-stu-id="b42c3-123">You can do that by selecting this location as the default production input location on warehouse 51.</span></span>
 
-1.  Opprett et nytt menyelement for mobilenhet: 
+1.  <span data-ttu-id="b42c3-124">Opprett et nytt menyelement for mobilenhet:</span><span class="sxs-lookup"><span data-stu-id="b42c3-124">Create a new mobile device menu item:</span></span> 
 
--    **Menyelementnavn** - Register materialforbruk. 
--    **Tittel** - Registrer materialforbruk. 
--    **Modus** - Indirekte. 
--    **Aktivitetskode** - Registrer materialforbruk.
+-    <span data-ttu-id="b42c3-125">**Menyelementnavn** - Register materialforbruk.</span><span class="sxs-lookup"><span data-stu-id="b42c3-125">**Menu item name** - Register material consumption.</span></span> 
+-    <span data-ttu-id="b42c3-126">**Tittel** - Registrer materialforbruk.</span><span class="sxs-lookup"><span data-stu-id="b42c3-126">**Title** - Register material consumption.</span></span> 
+-    <span data-ttu-id="b42c3-127">**Modus** - Indirekte.</span><span class="sxs-lookup"><span data-stu-id="b42c3-127">**Mode** - Indirect.</span></span> 
+-    <span data-ttu-id="b42c3-128">**Aktivitetskode** - Registrer materialforbruk.</span><span class="sxs-lookup"><span data-stu-id="b42c3-128">**Activity code** - Register material consumption.</span></span>
 
-2.  Legg til menyelementet på **Produksjonsmobil**-enhetsmenyen.
-3.  Opprett en produksjonsordre for det ferdige produktet: 
+2.  <span data-ttu-id="b42c3-129">Legg til menyelementet på **Produksjonsmobil**-enhetsmenyen.</span><span class="sxs-lookup"><span data-stu-id="b42c3-129">Add the menu item to the **Production Mobile** device menu.</span></span>
+3.  <span data-ttu-id="b42c3-130">Opprett en produksjonsordre for det ferdige produktet:</span><span class="sxs-lookup"><span data-stu-id="b42c3-130">Create a production order for the finished product:</span></span> 
 
--    **Varenummer** - FG-100 
--    **Område** - 5 
--    **Lager** - 51 
--    **Antall** - 150
+-    <span data-ttu-id="b42c3-131">**Varenummer** - FG-100</span><span class="sxs-lookup"><span data-stu-id="b42c3-131">**Item number** - FG-100</span></span> 
+-    <span data-ttu-id="b42c3-132">**Område** - 5</span><span class="sxs-lookup"><span data-stu-id="b42c3-132">**Site** - 5</span></span> 
+-    <span data-ttu-id="b42c3-133">**Lager** - 51</span><span class="sxs-lookup"><span data-stu-id="b42c3-133">**Warehouse** - 51</span></span> 
+-    <span data-ttu-id="b42c3-134">**Antall** - 150</span><span class="sxs-lookup"><span data-stu-id="b42c3-134">**Quantity** - 150</span></span>
 
-Produksjonsordren blir **estimert** og **frigitt** og lagerarbeid opprettes.
+<span data-ttu-id="b42c3-135">Produksjonsordren blir **estimert** og **frigitt** og lagerarbeid opprettes.</span><span class="sxs-lookup"><span data-stu-id="b42c3-135">The production order is **Estimated** and **Released** and warehouse work is created.</span></span>
 
-4.  Fullfør arbeidet ved hjelp av arbeidsflyten for råvareplukking for den håndholdte enheten.
+4.  <span data-ttu-id="b42c3-136">Fullfør arbeidet ved hjelp av arbeidsflyten for råvareplukking for den håndholdte enheten.</span><span class="sxs-lookup"><span data-stu-id="b42c3-136">Complete the work using the workflow for raw material picking for the handheld device.</span></span>
 
-Dette tar materialet fra bulklokasjonen til produksjonsinnleveringsstedet PIL-01. Når arbeidet er fullført, har materialet statusen **Plukket på produksjonsinnleveringsstedet**. Statusen etter at arbeidet er behandlet, kan være enten **plukket** eller **fysisk reservert**. Dette er konfigurert med parameteren **Avgangsstatus etter plassering i lager-skjema**.
+<span data-ttu-id="b42c3-137">Dette tar materialet fra bulklokasjonen til produksjonsinnleveringsstedet PIL-01.</span><span class="sxs-lookup"><span data-stu-id="b42c3-137">This will bring the material from the bulk location to the production input location PIL-01.</span></span> <span data-ttu-id="b42c3-138">Når arbeidet er fullført, har materialet statusen **Plukket på produksjonsinnleveringsstedet**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-138">After the work is completed, the material has the status **Picked on the production input location**.</span></span> <span data-ttu-id="b42c3-139">Statusen etter at arbeidet er behandlet, kan være enten **plukket** eller **fysisk reservert**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-139">The status after work has been processed can be either **Picked** or **Reserved physical**.</span></span> <span data-ttu-id="b42c3-140">Dette er konfigurert med parameteren **Avgangsstatus etter plassering i lager-skjema**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-140">This is configured with the parameter **Issue status after put on the warehouse form**.</span></span>
 
-5.  Start produksjonsordren fra klienten eller den håndholdte enheten ved hjelp av menyelementet **Produksjonsstart**.
+5.  <span data-ttu-id="b42c3-141">Start produksjonsordren fra klienten eller den håndholdte enheten ved hjelp av menyelementet **Produksjonsstart**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-141">Start the production order either from the client or from the handheld device by using the **Production start** menu item.</span></span>
 
-Etter at produksjonsordren er startet, kan du registrere materialforbruk i arbeidsflyten for den håndholdte enheten. La oss begynne med å registrere forbruk på 25 kilo av parti B1.
+<span data-ttu-id="b42c3-142">Etter at produksjonsordren er startet, kan du registrere materialforbruk i arbeidsflyten for den håndholdte enheten.</span><span class="sxs-lookup"><span data-stu-id="b42c3-142">After the production order has been started, you can register material consumption with the workflow for the handheld device.</span></span> <span data-ttu-id="b42c3-143">La oss begynne med å registrere forbruk på 25 kilo av parti B1.</span><span class="sxs-lookup"><span data-stu-id="b42c3-143">Let's start by registering consumption of 25 lbs of batch B1.</span></span>
 
-6.  Velg menyelementet **Registrer material****forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
+6.  <span data-ttu-id="b42c3-144">Velg menyelementet **Registrer material****forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer:</span><span class="sxs-lookup"><span data-stu-id="b42c3-144">Select the **Register material** **consumption** menu item in the menu for the hand held device, enter the following details:</span></span> 
 
--    Produksjonsordrenummeret. 
--    Lokasjonen der materialet skal forbrukes, i dette tilfellet PIL-01. 
--    Varenummer RM-100. 
--    Partinummer B1. 
--    Et antall på 25.
+-    <span data-ttu-id="b42c3-145">Produksjonsordrenummeret.</span><span class="sxs-lookup"><span data-stu-id="b42c3-145">The production order number.</span></span> 
+-    <span data-ttu-id="b42c3-146">Lokasjonen der materialet skal forbrukes, i dette tilfellet PIL-01.</span><span class="sxs-lookup"><span data-stu-id="b42c3-146">The location on which the material is going to be consumed, in this case PIL-01.</span></span> 
+-    <span data-ttu-id="b42c3-147">Varenummer RM-100.</span><span class="sxs-lookup"><span data-stu-id="b42c3-147">Item number RM-100.</span></span> 
+-    <span data-ttu-id="b42c3-148">Partinummer B1.</span><span class="sxs-lookup"><span data-stu-id="b42c3-148">Batch number B1.</span></span> 
+-    <span data-ttu-id="b42c3-149">Et antall på 25.</span><span class="sxs-lookup"><span data-stu-id="b42c3-149">A quantity of 25.</span></span>
 
-7.  Velg **OK**.
+7.  <span data-ttu-id="b42c3-150">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="b42c3-150">Select **OK**.</span></span>
 
-Legg merke til at meldingen "Journallinje er opprettet" vises på skjermen. På produksjonsordren finnes det en åpen journal av typen **Produksjonsplukkliste** for varenummer RM-100 og partinummer B1. 
+<span data-ttu-id="b42c3-151">Legg merke til at meldingen "Journallinje er opprettet" vises på skjermen.</span><span class="sxs-lookup"><span data-stu-id="b42c3-151">Note that the message "Journal line is created" appears on the display.</span></span> <span data-ttu-id="b42c3-152">På produksjonsordren finnes det en åpen journal av typen **Produksjonsplukkliste** for varenummer RM-100 og partinummer B1.</span><span class="sxs-lookup"><span data-stu-id="b42c3-152">On the production order there is an open journal of the type **Production picking list** for item number RM-100 and batch number B1.</span></span> 
 
-Du kan nå velge å fortsette registreringen, for eksempel på partinummeret B2, og hver gang du velger **OK,** legges en ny journallinje til i den åpne journalen. 
+<span data-ttu-id="b42c3-153">Du kan nå velge å fortsette registreringen, for eksempel på partinummeret B2, og hver gang du velger **OK,** legges en ny journallinje til i den åpne journalen.</span><span class="sxs-lookup"><span data-stu-id="b42c3-153">You can now choose to continue your registration, for example on batch number B2, and each time you select **OK,** a new journal line is added to the open journal.</span></span> 
 
-Når du er ferdig med registreringen, velger du **Ferdig** for å postere journalen og avslutte arbeidsflyten.
+<span data-ttu-id="b42c3-154">Når du er ferdig med registreringen, velger du **Ferdig** for å postere journalen og avslutte arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="b42c3-154">After you have finished your registration, select **Done** to post the journal and end the workflow.</span></span>
 
-### <a name="additional-comments"></a>Ekstra kommentarer 
+### <a name="additional-comments"></a><span data-ttu-id="b42c3-155">Ekstra kommentarer</span><span class="sxs-lookup"><span data-stu-id="b42c3-155">Additional comments</span></span> 
 
--   Hvis en bruker avbryter arbeidsflyten når en journallinje er opprettet, er journalen i en ikke-postert tilstand, men hvis brukeren senere bruker arbeidsflyten for samme produksjonsordre, blir linjene lagt til i den åpne journalen i stedet for en ny journal.
--   Den nye arbeidsflyten støtter også for registrering av serienumre.
--   Det er bare mulig å registrere et varenummer som er definert i stykklisten eller formelen for den valgte produksjonsordren eller partiordren.
--   Materiale kan overforbrukes. Hvis for eksempel materialet er beregnet til bruk med et antall på 100 kilo, kan det bli overforbrukt med et antall på for eksempel 105 kilo.
+-   <span data-ttu-id="b42c3-156">Hvis en bruker avbryter arbeidsflyten når en journallinje er opprettet, er journalen i en ikke-postert tilstand, men hvis brukeren senere bruker arbeidsflyten for samme produksjonsordre, blir linjene lagt til i den åpne journalen i stedet for en ny journal.</span><span class="sxs-lookup"><span data-stu-id="b42c3-156">If a user cancels the workflow after a journal line is created, the journal is in an unposted state but if the user at a later point uses the workflow for the same production order, then the lines will be added to the open journal rather than to a new journal.</span></span>
+-   <span data-ttu-id="b42c3-157">Den nye arbeidsflyten støtter også for registrering av serienumre.</span><span class="sxs-lookup"><span data-stu-id="b42c3-157">The new workflow also supports the registration of serial numbers.</span></span>
+-   <span data-ttu-id="b42c3-158">Det er bare mulig å registrere et varenummer som er definert i stykklisten eller formelen for den valgte produksjonsordren eller partiordren.</span><span class="sxs-lookup"><span data-stu-id="b42c3-158">It is only possible to register an item number that is defined in the bill of material or in the formula for the selected production order or batch order.</span></span>
+-   <span data-ttu-id="b42c3-159">Materiale kan overforbrukes.</span><span class="sxs-lookup"><span data-stu-id="b42c3-159">Material can be overconsumed.</span></span> <span data-ttu-id="b42c3-160">Hvis for eksempel materialet er beregnet til bruk med et antall på 100 kilo, kan det bli overforbrukt med et antall på for eksempel 105 kilo.</span><span class="sxs-lookup"><span data-stu-id="b42c3-160">For example, if the material is estimated to be consumed with the quantity of 100 lbs, then it can be overconsumed with a quantity of, for example, 105 lbs.</span></span>
 
 
 

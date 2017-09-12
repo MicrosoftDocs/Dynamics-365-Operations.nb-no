@@ -19,32 +19,32 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: d6c04b8a6a4208e187786be158ceb3c84e1bb408
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 679bafc81e7c3bd328dd3be3d8cabe7969077f93
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="assess-sales-performance-by-product"></a>Vurdere salgsytelse etter produkt
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="aaae0-103">Vurdere salgsytelse etter produkt</span><span class="sxs-lookup"><span data-stu-id="aaae0-103">Assess sales performance by product</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Du kan se nærmere på fortjenesten for topp 10 produktene ved hjelp av Microsoft Dynamics 365 for Retail. 
+<span data-ttu-id="aaae0-104">Du kan se nærmere på fortjenesten for topp 10 produktene ved hjelp av Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="aaae0-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 
-Som en del av Dynamics 365 for Retail, kan brukere også lese om lønnsomhet til de viktigste produktene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
+<span data-ttu-id="aaae0-105">Som en del av Dynamics 365 for Retail, kan brukere også lese om lønnsomhet til de viktigste produktene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:</span><span class="sxs-lookup"><span data-stu-id="aaae0-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   Salgsbeløp
--   Antall
--   Bruttofortjenestemargin
--   Marginprosent
+-   <span data-ttu-id="aaae0-106">Salgsbeløp</span><span class="sxs-lookup"><span data-stu-id="aaae0-106">Sales amount</span></span>
+-   <span data-ttu-id="aaae0-107">Antall</span><span class="sxs-lookup"><span data-stu-id="aaae0-107">Quantity</span></span>
+-   <span data-ttu-id="aaae0-108">Bruttofortjenestemargin</span><span class="sxs-lookup"><span data-stu-id="aaae0-108">Gross profit margin</span></span>
+-   <span data-ttu-id="aaae0-109">Marginprosent</span><span class="sxs-lookup"><span data-stu-id="aaae0-109">Margin percentage</span></span>
 
-For denne vurderingen kan du bruke den medfølgende rapporten **Topprodukter**, som du kan åpne fra følgende plasseringer:
+<span data-ttu-id="aaae0-110">For denne vurderingen kan du bruke den medfølgende rapporten **Topprodukter**, som du kan åpne fra følgende plasseringer:</span><span class="sxs-lookup"><span data-stu-id="aaae0-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**
--   Arbeidsområdet **Kategori- og produktstyring** &gt; **Detaljhandel** &gt; **kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**
--   Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport om topprodukter**
+-   <span data-ttu-id="aaae0-111">Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**</span><span class="sxs-lookup"><span data-stu-id="aaae0-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="aaae0-112">Arbeidsområdet **Kategori- og produktstyring** &gt; **Detaljhandel** &gt; **kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport om topprodukter**</span><span class="sxs-lookup"><span data-stu-id="aaae0-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="aaae0-113">Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport om topprodukter**</span><span class="sxs-lookup"><span data-stu-id="aaae0-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 
 
 

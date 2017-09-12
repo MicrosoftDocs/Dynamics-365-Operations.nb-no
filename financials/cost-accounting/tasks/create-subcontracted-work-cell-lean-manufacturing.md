@@ -16,59 +16,59 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 41cf47bb0578d9c854bd0dfc078b5b6fb559abca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Opprette en arbeidscelle for underleveranse for lean manufacturing
+# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a><span data-ttu-id="698d4-103">Opprette en arbeidscelle for underleveranse for lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="698d4-103">Create a subcontracted work cell for lean manufacturing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For å modellere underleveransearbeidet for lean manufacturing må du opprette en arbeidscelle som er knyttet til leverandøren som har arbeidet. En arbeidscelle for underleveranse er knyttet til leverandøren via tilknytningen for en ressurs av typen leverandør. Hvis du spiller dette opptaket i USMF-demofirmaet, kan du velge leverandørkonto ID 1002 og område 1.
+<span data-ttu-id="698d4-104">For å modellere underleveransearbeidet for lean manufacturing må du opprette en arbeidscelle som er knyttet til leverandøren som har arbeidet.</span><span class="sxs-lookup"><span data-stu-id="698d4-104">To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work.</span></span> <span data-ttu-id="698d4-105">En arbeidscelle for underleveranse er knyttet til leverandøren via tilknytningen for en ressurs av typen leverandør.</span><span class="sxs-lookup"><span data-stu-id="698d4-105">A subcontracted work cell is linked to the vendor through the association of a resource of the Vendor type.</span></span> <span data-ttu-id="698d4-106">Hvis du spiller dette opptaket i USMF-demofirmaet, kan du velge leverandørkonto ID 1002 og område 1.</span><span class="sxs-lookup"><span data-stu-id="698d4-106">If you play this recording in the USMF demo company, you can select vendor account ID 1002 and site 1.</span></span>
 
 
-## <a name="create-a-vendor-resource"></a>Opprette en leverandørressurs
-1. Gå til Ressurser.
-2. Klikk Ny.
-3. Skriv inn en verdi i Ressurs-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Velg 'Leverandør' i Type-feltet.
-6. Klikk rullegardinknappen i feltet Leverandør for å åpne oppslaget.
+## <a name="create-a-vendor-resource"></a><span data-ttu-id="698d4-107">Opprette en leverandørressurs</span><span class="sxs-lookup"><span data-stu-id="698d4-107">Create a vendor resource</span></span>
+1. <span data-ttu-id="698d4-108">Gå til Ressurser.</span><span class="sxs-lookup"><span data-stu-id="698d4-108">Go to Resources.</span></span>
+2. <span data-ttu-id="698d4-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="698d4-109">Click New.</span></span>
+3. <span data-ttu-id="698d4-110">Skriv inn en verdi i Ressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="698d4-110">In the Resource field, type a value.</span></span>
+4. <span data-ttu-id="698d4-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="698d4-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="698d4-112">Velg 'Leverandør' i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="698d4-112">In the Type field, select 'Vendor'.</span></span>
+6. <span data-ttu-id="698d4-113">Klikk rullegardinknappen i feltet Leverandør for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-113">In the Vendor field, click the drop-down button to open the lookup.</span></span>
 
-## <a name="create-the-resource-group"></a>Opprette ressursgruppen
-1. Gå til Ressursgrupper.
-2. Klikk Ny.
-3. Skriv inn en verdi i Ressursgruppe-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-    * Velg området som arbeidscellen skal tilordnes til. I teorien kan et område representere ett enkelt område som styres av en leverandør. Imidlertid tildeles i de fleste tilfeller underleveranseressurser bare til området som bestiller arbeidet fra underleverandøren. Legg merke til at inngående og utgående lagre fra arbeidsceller til underleverandører må være i samme område.  
-6. Skriv inn en verdi i Område-feltet.
+## <a name="create-the-resource-group"></a><span data-ttu-id="698d4-114">Opprette ressursgruppen</span><span class="sxs-lookup"><span data-stu-id="698d4-114">Create the resource group</span></span>
+1. <span data-ttu-id="698d4-115">Gå til Ressursgrupper.</span><span class="sxs-lookup"><span data-stu-id="698d4-115">Go to Resource groups.</span></span>
+2. <span data-ttu-id="698d4-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="698d4-116">Click New.</span></span>
+3. <span data-ttu-id="698d4-117">Skriv inn en verdi i Ressursgruppe-feltet.</span><span class="sxs-lookup"><span data-stu-id="698d4-117">In the Resource group field, type a value.</span></span>
+4. <span data-ttu-id="698d4-118">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="698d4-118">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="698d4-119">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-119">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="698d4-120">Velg området som arbeidscellen skal tilordnes til.</span><span class="sxs-lookup"><span data-stu-id="698d4-120">Select the site that the work cell should be allocated to.</span></span> <span data-ttu-id="698d4-121">I teorien kan et område representere ett enkelt område som styres av en leverandør.</span><span class="sxs-lookup"><span data-stu-id="698d4-121">In theory, a site can represent a single site that is operated by a vendor.</span></span> <span data-ttu-id="698d4-122">Imidlertid tildeles i de fleste tilfeller underleveranseressurser bare til området som bestiller arbeidet fra underleverandøren.</span><span class="sxs-lookup"><span data-stu-id="698d4-122">However, in most cases, subcontracted resources are just allocated to the site that orders the subcontracted work.</span></span> <span data-ttu-id="698d4-123">Legg merke til at inngående og utgående lagre fra arbeidsceller til underleverandører må være i samme område.</span><span class="sxs-lookup"><span data-stu-id="698d4-123">Note that the input and output warehouses of subcontracted work cells must be on the same site.</span></span>  
+6. <span data-ttu-id="698d4-124">Skriv inn en verdi i Område-feltet.</span><span class="sxs-lookup"><span data-stu-id="698d4-124">In the Site field, type a value.</span></span>
 7. @SysTaskRecorder:_RequestClose
-8. Merk av eller fjern merket i avmerkingsboksen Arbeidscelle.
-9. Klikk rullegardinknappen i feltet Innleveringslager for å åpne oppslaget.
-    * Velg lageret og lokasjonen som brukes til å klargjøre materialet for den leverandøradministrerte arbeidscellen. Lager og lokasjon er utformet ved hjelp av et eget lager per leverandør og ett sted per arbeidscellen i mange tilfeller.  
-10. Klikk rullegardinknappen i feltet Innleveringssted for å åpne oppslaget.
-11. Klikk rullegardinknappen i feltet Utleveringslager for å åpne oppslaget.
-    * Definer lager og lokasjonen der materialet posteres ved postering av aktiviteter i underleveranser for arbeidscellen. Lager og lokasjon kan være på leverandørområdet for hvis leverandøren rapporterer kanban-jobbene. Lager og lokasjon kan også være mottar plasseringen som er knyttet til det neste trinnet i produksjonsflyten.  
-12. Klikk rullegardinknappen i feltet Utleveringssted for å åpne oppslaget.
-13. Vis eller skjul delen Kalendere.
-14. Klikk Legg til.
-15. Klikk rullegardinknappen i Kalender-feltet for å åpne oppslaget.
-    * Tilknytt arbeidstidskalenderen for arbeidscellen til ressursgruppen. For kritiske ressurser anbefaler vi at du definerer bestemte kalendere som representerer nøyaktig arbeidstidene og tilknyttede kapasitet på webområdet arbeid cellen eller leverandør.  
-16. Vis eller skjul delen Ressurser.
-17. Klikk Legg til.
-    * En ressursgruppe for underleveranse må ha en tilknyttet ressurs av typen Leverandør, som kobler ressursgruppen til kundens leverandørkonto.  
-18. Klikk rullegardinknappen i feltet Ressurser for å åpne oppslaget.
-    * Velg eller angi leverandørressursen som du opprettet i den forrige delaktiviteten.  
-19. Vis eller skjul delen Arbeidscellekapasitet.
-20. Klikk Legg til.
-    * En arbeidscelle må ha en definert kapasitet. I dette eksemplet oppretter vi en gjennomstrømningskapasitet på 100 enheter per standard arbeidsdag.  
-21. Klikk rullegardinknappen i feltet Produksjonsflytmodell for å åpne oppslaget.
-22. Velg et alternativ i Kapasitetsperiode-feltet.
-23. Angi et nummer i feltet Gjennomsnittlig gjennomstrømningsantall.
-24. Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.
-25. ResolveChanges enheten.
+8. <span data-ttu-id="698d4-125">Merk av eller fjern merket i avmerkingsboksen Arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="698d4-125">Select or clear the Work cell check box.</span></span>
+9. <span data-ttu-id="698d4-126">Klikk rullegardinknappen i feltet Innleveringslager for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-126">In the Input warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="698d4-127">Velg lageret og lokasjonen som brukes til å klargjøre materialet for den leverandøradministrerte arbeidscellen.</span><span class="sxs-lookup"><span data-stu-id="698d4-127">Select the warehouse and location that are used to stage the material for the vendor-managed work cell.</span></span> <span data-ttu-id="698d4-128">Lager og lokasjon er utformet ved hjelp av et eget lager per leverandør og ett sted per arbeidscellen i mange tilfeller.</span><span class="sxs-lookup"><span data-stu-id="698d4-128">In many cases, the warehouse and location are modeled by using a separate warehouse per vendor and one location per work cell.</span></span>  
+10. <span data-ttu-id="698d4-129">Klikk rullegardinknappen i feltet Innleveringssted for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-129">In the Input location field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="698d4-130">Klikk rullegardinknappen i feltet Utleveringslager for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-130">In the Output warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="698d4-131">Definer lager og lokasjonen der materialet posteres ved postering av aktiviteter i underleveranser for arbeidscellen.</span><span class="sxs-lookup"><span data-stu-id="698d4-131">Define the warehouse and location where the material is posted when the subcontracted activities of the work cell are posted.</span></span> <span data-ttu-id="698d4-132">Lager og lokasjon kan være på leverandørområdet for hvis leverandøren rapporterer kanban-jobbene.</span><span class="sxs-lookup"><span data-stu-id="698d4-132">The warehouse and location can be at the vendor site if the vendor reports the kanban jobs.</span></span> <span data-ttu-id="698d4-133">Lager og lokasjon kan også være mottar plasseringen som er knyttet til det neste trinnet i produksjonsflyten.</span><span class="sxs-lookup"><span data-stu-id="698d4-133">Alternatively, the warehouse and location can be the receiving location that is associated with the next step of the production flow.</span></span>  
+12. <span data-ttu-id="698d4-134">Klikk rullegardinknappen i feltet Utleveringssted for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-134">In the Output location field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="698d4-135">Vis eller skjul delen Kalendere.</span><span class="sxs-lookup"><span data-stu-id="698d4-135">Expand or collapse the Calendars section.</span></span>
+14. <span data-ttu-id="698d4-136">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="698d4-136">Click Add.</span></span>
+15. <span data-ttu-id="698d4-137">Klikk rullegardinknappen i Kalender-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-137">In the Calendar field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="698d4-138">Tilknytt arbeidstidskalenderen for arbeidscellen til ressursgruppen.</span><span class="sxs-lookup"><span data-stu-id="698d4-138">Associate the working time calendar of the work cell with the resource group.</span></span> <span data-ttu-id="698d4-139">For kritiske ressurser anbefaler vi at du definerer bestemte kalendere som representerer nøyaktig arbeidstidene og tilknyttede kapasitet på webområdet arbeid cellen eller leverandør.</span><span class="sxs-lookup"><span data-stu-id="698d4-139">For critical resources, we recommend that you define specific calendars that represent the exact working times and related capacities of the work cell or vendor site.</span></span>  
+16. <span data-ttu-id="698d4-140">Vis eller skjul delen Ressurser.</span><span class="sxs-lookup"><span data-stu-id="698d4-140">Expand or collapse the Resources section.</span></span>
+17. <span data-ttu-id="698d4-141">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="698d4-141">Click Add.</span></span>
+    * <span data-ttu-id="698d4-142">En ressursgruppe for underleveranse må ha en tilknyttet ressurs av typen Leverandør, som kobler ressursgruppen til kundens leverandørkonto.</span><span class="sxs-lookup"><span data-stu-id="698d4-142">A subcontracted resource group must have an associated resource of the Vendor type that links the resource group to the vendor account.</span></span>  
+18. <span data-ttu-id="698d4-143">Klikk rullegardinknappen i feltet Ressurser for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-143">In the Resource field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="698d4-144">Velg eller angi leverandørressursen som du opprettet i den forrige delaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="698d4-144">Select or enter the vendor resource that you created in the previous sub-task.</span></span>  
+19. <span data-ttu-id="698d4-145">Vis eller skjul delen Arbeidscellekapasitet.</span><span class="sxs-lookup"><span data-stu-id="698d4-145">Expand or collapse the Work cell capacity section.</span></span>
+20. <span data-ttu-id="698d4-146">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="698d4-146">Click Add.</span></span>
+    * <span data-ttu-id="698d4-147">En arbeidscelle må ha en definert kapasitet.</span><span class="sxs-lookup"><span data-stu-id="698d4-147">A work cell must have a defined capacity.</span></span> <span data-ttu-id="698d4-148">I dette eksemplet oppretter vi en gjennomstrømningskapasitet på 100 enheter per standard arbeidsdag.</span><span class="sxs-lookup"><span data-stu-id="698d4-148">In this example, we create a throughput capacity of 100 pieces per standard workday.</span></span>  
+21. <span data-ttu-id="698d4-149">Klikk rullegardinknappen i feltet Produksjonsflytmodell for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-149">In the Production flow model field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="698d4-150">Velg et alternativ i Kapasitetsperiode-feltet.</span><span class="sxs-lookup"><span data-stu-id="698d4-150">In the Capacity period field, select an option.</span></span>
+23. <span data-ttu-id="698d4-151">Angi et nummer i feltet Gjennomsnittlig gjennomstrømningsantall.</span><span class="sxs-lookup"><span data-stu-id="698d4-151">In the Average throughput quantity field, enter a number.</span></span>
+24. <span data-ttu-id="698d4-152">Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="698d4-152">In the Unit field, click the drop-down button to open the lookup.</span></span>
+25. <span data-ttu-id="698d4-153">ResolveChanges enheten.</span><span class="sxs-lookup"><span data-stu-id="698d4-153">ResolveChanges the Unit.</span></span>
 
 

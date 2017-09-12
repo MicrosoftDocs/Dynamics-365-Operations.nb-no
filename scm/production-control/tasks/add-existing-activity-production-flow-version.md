@@ -17,42 +17,42 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2708ae5d7e2601fa8d86367470e196d4b2503c01
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 262fa70f0fa3c294059b3379c179be62100ea5a8
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-an-existing-activity-to-a-production-flow-version"></a>Legge til en eksisterende aktivitet i en produksjonsflytversjon
+# <a name="add-an-existing-activity-to-a-production-flow-version"></a><span data-ttu-id="ed35c-103">Legge til en eksisterende aktivitet i en produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="ed35c-103">Add an existing activity to a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Når du oppretter nye versjoner av produksjonsflyter, kan du velge å legge til aktiviteter som er opprettet for eldre versjoner, til den nye versjonen. Denne fremgangsmåten viser hvordan en ny versjon opprettes for en eksisterende produksjonsflyt, uten å kopiere aktivitetene. I det neste trinnet legges en eksisterende aktivitet til den nye versjonen. 
+<span data-ttu-id="ed35c-104">Når du oppretter nye versjoner av produksjonsflyter, kan du velge å legge til aktiviteter som er opprettet for eldre versjoner, til den nye versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-104">When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version.</span></span> <span data-ttu-id="ed35c-105">Denne fremgangsmåten viser hvordan en ny versjon opprettes for en eksisterende produksjonsflyt, uten å kopiere aktivitetene.</span><span class="sxs-lookup"><span data-stu-id="ed35c-105">This procedure shows how a new version is created for an existing production flow, without copying the activities.</span></span> <span data-ttu-id="ed35c-106">I det neste trinnet legges en eksisterende aktivitet til den nye versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-106">In the next step, an existing activity is added to the new version.</span></span> 
 
-Denne oppgaven krever produksjonsflyt med versjon og aktiviteter som allerede er opprettet.
+<span data-ttu-id="ed35c-107">Denne oppgaven krever produksjonsflyt med versjon og aktiviteter som allerede er opprettet.</span><span class="sxs-lookup"><span data-stu-id="ed35c-107">This task requires production flow with version and activities already created.</span></span>
 
 
-## <a name="create-a-new-production-flow-version"></a>Opprett en ny produksjonsflytversjon
-1. Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.
-2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
-4. Klikk Rediger.
-5. Merk den valgte raden i listen.
-6. Angi dato og klokkeslett i feltet Utløpsdato.
-    * Vær oppmerksom på at før du oppretter en ny produksjonsflytversjon, må du sjekke utløpsdatoen og -klokkeslettet for den aktive versjonen. Den nye versjonen opprettes med en gyldig startdato som knyttes til utløpsdatoen for den valgte versjonen.  
-7. Klikk Legg til.
-8. Velg Nei i Kopier fra versjon-feltet.
-    * Velg Nei hvis du vil starte med en tom versjon hvis de fleste av aktivitetene i den kopierte versjonen vil bli erstattet av nye aktiviteter. Legg til de uendrede aktivitetene i Legg til eksisterende-funksjonen i aktivitetsskjemaet manuelt.  
-9. Velg Nei i feltet Dupliser Kanban-regler.
-    * Når aktivitetene ikke kopieres til den nye versjonen, er det ikke mulig å kopiere Kanban-reglene på tidspunktet for opprettelsen av den nye versjonen.   I stedet bruker du funksjonen Opprett ny Kanban senere i Kanban-regel-skjemaet for å erstatte Kanban-regler for den gamle produksjonsflytversjonen med Kanban-regler som bruker aktivitetene i den nye versjonen.  
-10. Klikk OK.
-11. Finn og velg ønsket post i listen.
+## <a name="create-a-new-production-flow-version"></a><span data-ttu-id="ed35c-108">Opprett en ny produksjonsflytversjon</span><span class="sxs-lookup"><span data-stu-id="ed35c-108">Create a new production flow version</span></span>
+1. <span data-ttu-id="ed35c-109">Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.</span><span class="sxs-lookup"><span data-stu-id="ed35c-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="ed35c-110">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ed35c-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="ed35c-112">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="ed35c-112">Click Edit.</span></span>
+5. <span data-ttu-id="ed35c-113">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-113">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="ed35c-114">Angi dato og klokkeslett i feltet Utløpsdato.</span><span class="sxs-lookup"><span data-stu-id="ed35c-114">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="ed35c-115">Vær oppmerksom på at før du oppretter en ny produksjonsflytversjon, må du sjekke utløpsdatoen og -klokkeslettet for den aktive versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-115">Note that before you create a new production flow version, make sure to check the expiration date and time of the active version.</span></span> <span data-ttu-id="ed35c-116">Den nye versjonen opprettes med en gyldig startdato som knyttes til utløpsdatoen for den valgte versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-116">The new version will be created with an effective start date, which connects to the expiry date of the selected version.</span></span>  
+7. <span data-ttu-id="ed35c-117">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="ed35c-117">Click Add.</span></span>
+8. <span data-ttu-id="ed35c-118">Velg Nei i Kopier fra versjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="ed35c-118">Select No in the Copy from version field.</span></span>
+    * <span data-ttu-id="ed35c-119">Velg Nei hvis du vil starte med en tom versjon hvis de fleste av aktivitetene i den kopierte versjonen vil bli erstattet av nye aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="ed35c-119">Select No to start with an empty version if most of the activities of the copied version will be replaced by new activities.</span></span> <span data-ttu-id="ed35c-120">Legg til de uendrede aktivitetene i Legg til eksisterende-funksjonen i aktivitetsskjemaet manuelt.</span><span class="sxs-lookup"><span data-stu-id="ed35c-120">Add the unchanged activities to the Add existing function in the activity form manually.</span></span>  
+9. <span data-ttu-id="ed35c-121">Velg Nei i feltet Dupliser Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="ed35c-121">Select No in the Duplicate kanban rules field.</span></span>
+    * <span data-ttu-id="ed35c-122">Når aktivitetene ikke kopieres til den nye versjonen, er det ikke mulig å kopiere Kanban-reglene på tidspunktet for opprettelsen av den nye versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-122">When the activities are not copied to the new version, it is not possible to copy the kanban rules at the time of creation of the new version.</span></span>   <span data-ttu-id="ed35c-123">I stedet bruker du funksjonen Opprett ny Kanban senere i Kanban-regel-skjemaet for å erstatte Kanban-regler for den gamle produksjonsflytversjonen med Kanban-regler som bruker aktivitetene i den nye versjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-123">Instead you will use the create replacement kanban function later in the kanban rule form, to replace kanban rules of the old production flow version with kanban rules using the activities of the new version.</span></span>  
+10. <span data-ttu-id="ed35c-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ed35c-124">Click OK.</span></span>
+11. <span data-ttu-id="ed35c-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-125">In the list, find and select the desired record.</span></span>
 
-## <a name="add-an-existing-activity"></a>Legge til en eksisterende aktivitet
-1. Klikk Aktiviteter.
-2. Klikk Legg til eksisterende for å åpne nedtrekksdialogen.
-    * Finn og velg en eksisterende aktivitet som skal legges til den nye produksjonsflytversjonen.  Vær oppmerksom på at listen viser alle aktiviteter som er opprettet for denne produksjonsflyten for alle tidligere versjoner av flyten.  
-3. Angi eller velg en verdi i feltet Aktivitet.
-4. Klikk OK.
+## <a name="add-an-existing-activity"></a><span data-ttu-id="ed35c-126">Legge til en eksisterende aktivitet</span><span class="sxs-lookup"><span data-stu-id="ed35c-126">Add an existing activity</span></span>
+1. <span data-ttu-id="ed35c-127">Klikk Aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="ed35c-127">Click Activities.</span></span>
+2. <span data-ttu-id="ed35c-128">Klikk Legg til eksisterende for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-128">Click Add existing to open the drop dialog.</span></span>
+    * <span data-ttu-id="ed35c-129">Finn og velg en eksisterende aktivitet som skal legges til den nye produksjonsflytversjonen.</span><span class="sxs-lookup"><span data-stu-id="ed35c-129">Find and select an existing activity to be added to the new production flow version.</span></span>  <span data-ttu-id="ed35c-130">Vær oppmerksom på at listen viser alle aktiviteter som er opprettet for denne produksjonsflyten for alle tidligere versjoner av flyten.</span><span class="sxs-lookup"><span data-stu-id="ed35c-130">Note that the list shows all activities that have been created for this production flow for all previous versions of the flow.</span></span>  
+3. <span data-ttu-id="ed35c-131">Angi eller velg en verdi i feltet Aktivitet.</span><span class="sxs-lookup"><span data-stu-id="ed35c-131">In the Activity field, enter or select a value.</span></span>
+4. <span data-ttu-id="ed35c-132">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ed35c-132">Click OK.</span></span>
 
 

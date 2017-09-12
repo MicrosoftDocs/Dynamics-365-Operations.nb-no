@@ -16,61 +16,61 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f1e22f15e98b563f7d2aae812aee3df1d454524c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f195f9e466eab3cf87afea2b5d430d0ea25c5a83
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-sales-commissions"></a>Registrere salgsprovisjoner
+# <a name="register-sales-commissions"></a><span data-ttu-id="c6578-103">Registrere salgsprovisjoner</span><span class="sxs-lookup"><span data-stu-id="c6578-103">Register sales commissions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser deg hvordan provisjoner beregnes og registreres. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Før du starter denne veiledningen kjører du veiledningen kalt Definer regler for salgsprovisjon for å være sikker på at du har alt nødvendig provisjonsberegningsoppsett.
+<span data-ttu-id="c6578-104">Denne fremgangsmåten viser deg hvordan provisjoner beregnes og registreres.</span><span class="sxs-lookup"><span data-stu-id="c6578-104">This procedure shows you how sales commissions are calculated and registered.</span></span> <span data-ttu-id="c6578-105">Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="c6578-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="c6578-106">Før du starter denne veiledningen kjører du veiledningen kalt Definer regler for salgsprovisjon for å være sikker på at du har alt nødvendig provisjonsberegningsoppsett.</span><span class="sxs-lookup"><span data-stu-id="c6578-106">Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.</span></span>
 
-Noter kunde- og varenumrene du har valgt for provisjonsprosessen, og bruk dem når du blir spurt til å opprette en salgsordre i denne veiledningen.
+<span data-ttu-id="c6578-107">Noter kunde- og varenumrene du har valgt for provisjonsprosessen, og bruk dem når du blir spurt til å opprette en salgsordre i denne veiledningen.</span><span class="sxs-lookup"><span data-stu-id="c6578-107">Take note of the customer and item numbers that you have chosen for the commission process and use them when asked to create a sales order in this guide.</span></span>
 
 
-## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a>Fakturere en salgsordre som kvalifiserer til en selger for en provisjon
-1. Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Kundekonto-feltet for å åpne oppslaget.
-4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
-6. Klikk OK.
-7. Klikk Alternativer i handlingsruten.
-8. Klikk Bytt visning.
-9. Klikk Hodevisning.
-10. Utvid Oppsett-delen.
-    * Verdien i feltet Salgsgruppe representerer en gruppe med én eller flere selgere tilknyttet. Medlemmene av gruppen er de som skal motta provisjoner når ordren faktureres, i henhold til forhåndsdefinerte satser og distribusjon.   Verdien kopieres fra kundekortet, men du kan endre den hvis du ønsker.  Salgsgruppen kopieres også til salgsordrelinjen. Du kan endre den slik at den kan være forskjellig fra den i hodet og/eller mellom linjer.  
-    * Verdien i feltet Provisjonsgruppe representerer en gruppe som du har opprettet for én eller flere kunder med det formål å spore provisjoner.   Verdien kopieres fra kundekortet, men du kan endre den hvis du ønsker.   
-11. Klikk Alternativer i handlingsruten.
-12. Klikk Bytt visning.
-13. Klikk Linjevisning.
-14. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-15. Velg varen du har definert for provisjon, i listen. 
-16. Angi et tall i feltet Antall.
-    * Noter linjens nettobeløp. Det representerer salgsinntekter, som i dette eksemplet er grunnlaget for provisjonsberegningen.  
-17. Klikk Lagre.
-18. Klikk Faktura i handlingsruten.
-19. Klikk Faktura.
-20. Utvid seksjonen Parametere.
-21. Velg Alle i feltet Antall.
-22. Velg Ja i feltet Postering.
-23. Klikk OK.
-24. Klikk OK.
-    * Det kan ta litt tid å postere transaksjonen. Tillat behandlingen å fullføre, og ikke lukk siden.  
+## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a><span data-ttu-id="c6578-108">Fakturere en salgsordre som kvalifiserer til en selger for en provisjon</span><span class="sxs-lookup"><span data-stu-id="c6578-108">Invoice a sales order that qualifies a salesperson for a commission</span></span>
+1. <span data-ttu-id="c6578-109">Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="c6578-109">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="c6578-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="c6578-110">Click New.</span></span>
+3. <span data-ttu-id="c6578-111">Klikk rullegardinknappen i Kundekonto-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="c6578-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="c6578-112">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="c6578-112">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="c6578-113">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c6578-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="c6578-114">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c6578-114">Click OK.</span></span>
+7. <span data-ttu-id="c6578-115">Klikk Alternativer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c6578-115">On the Action Pane, click Options.</span></span>
+8. <span data-ttu-id="c6578-116">Klikk Bytt visning.</span><span class="sxs-lookup"><span data-stu-id="c6578-116">Click Change view.</span></span>
+9. <span data-ttu-id="c6578-117">Klikk Hodevisning.</span><span class="sxs-lookup"><span data-stu-id="c6578-117">Click Header view.</span></span>
+10. <span data-ttu-id="c6578-118">Utvid Oppsett-delen.</span><span class="sxs-lookup"><span data-stu-id="c6578-118">Expand the Setup section.</span></span>
+    * <span data-ttu-id="c6578-119">Verdien i feltet Salgsgruppe representerer en gruppe med én eller flere selgere tilknyttet.</span><span class="sxs-lookup"><span data-stu-id="c6578-119">The value in the Sales group field represents a group with one or more sales representatives assigned to it.</span></span> <span data-ttu-id="c6578-120">Medlemmene av gruppen er de som skal motta provisjoner når ordren faktureres, i henhold til forhåndsdefinerte satser og distribusjon.</span><span class="sxs-lookup"><span data-stu-id="c6578-120">The people in the group are the ones who will receive commissions when the order is invoiced, as per predefined rates and distribution.</span></span>   <span data-ttu-id="c6578-121">Verdien kopieres fra kundekortet, men du kan endre den hvis du ønsker.</span><span class="sxs-lookup"><span data-stu-id="c6578-121">The value is copied from the Customer card, but you can change it if you wish.</span></span>  <span data-ttu-id="c6578-122">Salgsgruppen kopieres også til salgsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="c6578-122">The Sales group is also copied to the sales order line.</span></span> <span data-ttu-id="c6578-123">Du kan endre den slik at den kan være forskjellig fra den i hodet og/eller mellom linjer.</span><span class="sxs-lookup"><span data-stu-id="c6578-123">You can change it so that it can differ from the one in the header and/or between lines.</span></span>  
+    * <span data-ttu-id="c6578-124">Verdien i feltet Provisjonsgruppe representerer en gruppe som du har opprettet for én eller flere kunder med det formål å spore provisjoner.</span><span class="sxs-lookup"><span data-stu-id="c6578-124">The value in the Commission group field represents a group that you have created for one or more customers with the purpose of tracking commissions.</span></span>   <span data-ttu-id="c6578-125">Verdien kopieres fra kundekortet, men du kan endre den hvis du ønsker.</span><span class="sxs-lookup"><span data-stu-id="c6578-125">The value is copied from the Customer card, but you can change it if you wish.</span></span>   
+11. <span data-ttu-id="c6578-126">Klikk Alternativer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c6578-126">On the Action Pane, click Options.</span></span>
+12. <span data-ttu-id="c6578-127">Klikk Bytt visning.</span><span class="sxs-lookup"><span data-stu-id="c6578-127">Click Change view.</span></span>
+13. <span data-ttu-id="c6578-128">Klikk Linjevisning.</span><span class="sxs-lookup"><span data-stu-id="c6578-128">Click Line view.</span></span>
+14. <span data-ttu-id="c6578-129">Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="c6578-129">In the Item number field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="c6578-130">Velg varen du har definert for provisjon, i listen.</span><span class="sxs-lookup"><span data-stu-id="c6578-130">In the list, select the item you have set up for commissions.</span></span> 
+16. <span data-ttu-id="c6578-131">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="c6578-131">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="c6578-132">Noter linjens nettobeløp.</span><span class="sxs-lookup"><span data-stu-id="c6578-132">Take note of the line's Net amount.</span></span> <span data-ttu-id="c6578-133">Det representerer salgsinntekter, som i dette eksemplet er grunnlaget for provisjonsberegningen.</span><span class="sxs-lookup"><span data-stu-id="c6578-133">It represents the sales revenue, which in this example is the basis for commission calculation.</span></span>  
+17. <span data-ttu-id="c6578-134">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="c6578-134">Click Save.</span></span>
+18. <span data-ttu-id="c6578-135">Klikk Faktura i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c6578-135">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="c6578-136">Klikk Faktura.</span><span class="sxs-lookup"><span data-stu-id="c6578-136">Click Invoice.</span></span>
+20. <span data-ttu-id="c6578-137">Utvid seksjonen Parametere.</span><span class="sxs-lookup"><span data-stu-id="c6578-137">Expand the Parameters section.</span></span>
+21. <span data-ttu-id="c6578-138">Velg Alle i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="c6578-138">In the Quantity field, select 'All'.</span></span>
+22. <span data-ttu-id="c6578-139">Velg Ja i feltet Postering.</span><span class="sxs-lookup"><span data-stu-id="c6578-139">Select Yes in the Posting field.</span></span>
+23. <span data-ttu-id="c6578-140">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c6578-140">Click OK.</span></span>
+24. <span data-ttu-id="c6578-141">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c6578-141">Click OK.</span></span>
+    * <span data-ttu-id="c6578-142">Det kan ta litt tid å postere transaksjonen.</span><span class="sxs-lookup"><span data-stu-id="c6578-142">It may take a minute or so to post the transaction.</span></span> <span data-ttu-id="c6578-143">Tillat behandlingen å fullføre, og ikke lukk siden.</span><span class="sxs-lookup"><span data-stu-id="c6578-143">Allow the processing to complete and don’t close the page.</span></span>  
 
-## <a name="review-the-registered-sales-commissions"></a>Gå gjennom de registrerte salgsprovisjonene
-1. Klikk Faktura i handlingsruten.
-2. Klikk Faktura.
-3. Klikk Faktura i handlingsruten.
-4. Klikk Provisjonstransaksjoner.
-    * Kategorien Oversikt viser linjer som viser provisjonsbeløpene som skal betales til selgere som er knyttet til den fakturerte salgsordren. La oss gå gjennom detaljene.     
-    * Hvis du brukte veiledningen Definer regler for salgsprovisjon til å definere provisjonssalgsgruppen, finnes det to selgere som skal motta en salgsprovisjon, og provisjonen deles likt mellom dem.  
-    * I dette eksemplet beregnes det totale provisjonsbeløpet som en prosent av salgsomsetning (nettobeløpet på ordrelinjen).   
-5. Lukk siden.
-6. Klikk Bilag.
-    * Du kan vise bilagstransaksjonene for provisjonsbeløpene som er postert til de forhåndsdefinerte provisjonsutgifts- og provisjonsbetalingskontoene.  
+## <a name="review-the-registered-sales-commissions"></a><span data-ttu-id="c6578-144">Gå gjennom de registrerte salgsprovisjonene</span><span class="sxs-lookup"><span data-stu-id="c6578-144">Review the registered sales commissions</span></span>
+1. <span data-ttu-id="c6578-145">Klikk Faktura i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c6578-145">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="c6578-146">Klikk Faktura.</span><span class="sxs-lookup"><span data-stu-id="c6578-146">Click Invoice.</span></span>
+3. <span data-ttu-id="c6578-147">Klikk Faktura i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c6578-147">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="c6578-148">Klikk Provisjonstransaksjoner.</span><span class="sxs-lookup"><span data-stu-id="c6578-148">Click Commission transactions.</span></span>
+    * <span data-ttu-id="c6578-149">Kategorien Oversikt viser linjer som viser provisjonsbeløpene som skal betales til selgere som er knyttet til den fakturerte salgsordren.</span><span class="sxs-lookup"><span data-stu-id="c6578-149">The Overview tab displays lines representing the commission amounts payable to sales representatives who are associated with the invoiced sales order.</span></span> <span data-ttu-id="c6578-150">La oss gå gjennom detaljene.</span><span class="sxs-lookup"><span data-stu-id="c6578-150">Let's review the details.</span></span>     
+    * <span data-ttu-id="c6578-151">Hvis du brukte veiledningen Definer regler for salgsprovisjon til å definere provisjonssalgsgruppen, finnes det to selgere som skal motta en salgsprovisjon, og provisjonen deles likt mellom dem.</span><span class="sxs-lookup"><span data-stu-id="c6578-151">If you used the "Set up sales commission rules" guide to set up the Commission sales group, there are two sales people to receive a sales commissions, and the commission is split equally between them.</span></span>  
+    * <span data-ttu-id="c6578-152">I dette eksemplet beregnes det totale provisjonsbeløpet som en prosent av salgsomsetning (nettobeløpet på ordrelinjen).</span><span class="sxs-lookup"><span data-stu-id="c6578-152">In this example, the total amount of the commission is calculated as a percentage of the sales revenue (the net amount of order line).</span></span>   
+5. <span data-ttu-id="c6578-153">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="c6578-153">Close the page.</span></span>
+6. <span data-ttu-id="c6578-154">Klikk Bilag.</span><span class="sxs-lookup"><span data-stu-id="c6578-154">Click Voucher.</span></span>
+    * <span data-ttu-id="c6578-155">Du kan vise bilagstransaksjonene for provisjonsbeløpene som er postert til de forhåndsdefinerte provisjonsutgifts- og provisjonsbetalingskontoene.</span><span class="sxs-lookup"><span data-stu-id="c6578-155">You can review the voucher transactions for the commission amounts that have been posted to the predefined commission expense and commission payable accounts.</span></span>  
 
 

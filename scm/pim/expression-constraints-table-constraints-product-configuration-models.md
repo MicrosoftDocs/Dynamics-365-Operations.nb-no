@@ -17,7 +17,7 @@ ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -27,72 +27,72 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
+# <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a><span data-ttu-id="697b0-105">Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller</span><span class="sxs-lookup"><span data-stu-id="697b0-105">Expression constraints and table constraints in product configuration models</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger. Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. 
+<span data-ttu-id="697b0-106">Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger.</span><span class="sxs-lookup"><span data-stu-id="697b0-106">This topic describes the use of expression constraints and table constraints.</span></span> <span data-ttu-id="697b0-107">Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="697b0-107">Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order.</span></span> <span data-ttu-id="697b0-108">Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene.</span><span class="sxs-lookup"><span data-stu-id="697b0-108">You can use expression constraints or table constraints, depending on how you prefer to build the constraints.</span></span> 
 
-Begrensninger brukes til å kontrollere attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene.
+<span data-ttu-id="697b0-109">Begrensninger brukes til å kontrollere attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="697b0-109">Constraints are used to control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order.</span></span> <span data-ttu-id="697b0-110">Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene.</span><span class="sxs-lookup"><span data-stu-id="697b0-110">You can use expression constraints or table constraints, depending on how you prefer to build the constraints.</span></span>
 
-## <a name="what-are-expression-constraints"></a>Hva er uttrykksbegrensninger?
-Uttrykksbegrensninger kjennetegnes ved et uttrykk som bruker aritmetiske og boolske operatorer og funksjoner. En uttrykksrestriksjon skrives for en bestemt komponent i en produktkonfigurasjonsmodell. Det kan ikke brukes på nytt eller deles med en annen komponent. Uttrykksbegrensningene for en komponent kan imidlertid referere til attributter for delkomponenter for komponenten.
+## <a name="what-are-expression-constraints"></a><span data-ttu-id="697b0-111">Hva er uttrykksbegrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-111">What are expression constraints?</span></span>
+<span data-ttu-id="697b0-112">Uttrykksbegrensninger kjennetegnes ved et uttrykk som bruker aritmetiske og boolske operatorer og funksjoner.</span><span class="sxs-lookup"><span data-stu-id="697b0-112">Expression constraints are characterized by an expression that uses arithmetic and Boolean operators and functions.</span></span> <span data-ttu-id="697b0-113">En uttrykksrestriksjon skrives for en bestemt komponent i en produktkonfigurasjonsmodell.</span><span class="sxs-lookup"><span data-stu-id="697b0-113">An expression constraint is written for a specific component in a product configuration model.</span></span> <span data-ttu-id="697b0-114">Det kan ikke brukes på nytt eller deles med en annen komponent.</span><span class="sxs-lookup"><span data-stu-id="697b0-114">It can't be reused by or shared with another component.</span></span> <span data-ttu-id="697b0-115">Uttrykksbegrensningene for en komponent kan imidlertid referere til attributter for delkomponenter for komponenten.</span><span class="sxs-lookup"><span data-stu-id="697b0-115">However, the expression constraints for a component can reference attributes of the component's subcomponents.</span></span>
 
-## <a name="what-are-table-constraints"></a>Hva er tabellbegrensninger?
-Tabellbegrensninger viser kombinasjonene av verdier som er tillatt for attributter når du konfigurerer et produkt. Definisjoner av tabellbegrensninger kan brukes generelt. Når du oppretter en tabellbegrensning for en komponent i en produktkonfigurasjonsmodell, velger du en tabellbegrensningsdefinisjon. Hvis du vil opprette kombinasjonene som er tillatt, legger du til attributter for bestemte typer i komponentene. Hver attributt har en bestemt verdi.
+## <a name="what-are-table-constraints"></a><span data-ttu-id="697b0-116">Hva er tabellbegrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-116">What are table constraints?</span></span>
+<span data-ttu-id="697b0-117">Tabellbegrensninger viser kombinasjonene av verdier som er tillatt for attributter når du konfigurerer et produkt.</span><span class="sxs-lookup"><span data-stu-id="697b0-117">Table constraints list the combinations of values that are allowed for attributes when you configure a product.</span></span> <span data-ttu-id="697b0-118">Definisjoner av tabellbegrensninger kan brukes generelt.</span><span class="sxs-lookup"><span data-stu-id="697b0-118">Table constraint definitions can be used generically.</span></span> <span data-ttu-id="697b0-119">Når du oppretter en tabellbegrensning for en komponent i en produktkonfigurasjonsmodell, velger du en tabellbegrensningsdefinisjon.</span><span class="sxs-lookup"><span data-stu-id="697b0-119">When you create a table constraint for a component in a product configuration model, you select a table constraint definition.</span></span> <span data-ttu-id="697b0-120">Hvis du vil opprette kombinasjonene som er tillatt, legger du til attributter for bestemte typer i komponentene.</span><span class="sxs-lookup"><span data-stu-id="697b0-120">To create the combinations that are allowed, you add attributes of specific types to the components.</span></span> <span data-ttu-id="697b0-121">Hver attributt har en bestemt verdi.</span><span class="sxs-lookup"><span data-stu-id="697b0-121">Each attribute type has a specific value.</span></span>
 
-### <a name="example-of-a-table-constraint"></a>Eksempel på tabellbegrensning
+### <a name="example-of-a-table-constraint"></a><span data-ttu-id="697b0-122">Eksempel på tabellbegrensning</span><span class="sxs-lookup"><span data-stu-id="697b0-122">Example of a table constraint</span></span>
 
-Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper** og **Frontgrill**.
+<span data-ttu-id="697b0-123">Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter.</span><span class="sxs-lookup"><span data-stu-id="697b0-123">This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts.</span></span> <span data-ttu-id="697b0-124">Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="697b0-124">The first table shows the cabinet finishes and fronts that are generally available for configuration.</span></span> <span data-ttu-id="697b0-125">Verdiene er definert for attribyttypene **Kabinettyper** og **Frontgrill**.</span><span class="sxs-lookup"><span data-stu-id="697b0-125">The values are defined for the **Cabinet finish** and **Front grill** attribute types.</span></span>
 
-| Attributtype | Verdier                      |
+| <span data-ttu-id="697b0-126">Attributtype</span><span class="sxs-lookup"><span data-stu-id="697b0-126">Attribute type</span></span> | <span data-ttu-id="697b0-127">Verdier</span><span class="sxs-lookup"><span data-stu-id="697b0-127">Values</span></span>                      |
 |----------------|-----------------------------|
-| Kabinettyper | Svart, eik, Rosewood, hvit |
-| Frontgrill    | Svart, metall, hvit         |
+| <span data-ttu-id="697b0-128">Kabinettyper</span><span class="sxs-lookup"><span data-stu-id="697b0-128">Cabinet finish</span></span> | <span data-ttu-id="697b0-129">Svart, eik, Rosewood, hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-129">Black, Oak, Rosewood, White</span></span> |
+| <span data-ttu-id="697b0-130">Frontgrill</span><span class="sxs-lookup"><span data-stu-id="697b0-130">Front grill</span></span>    | <span data-ttu-id="697b0-131">Svart, metall, hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-131">Black, Metal, White</span></span>         |
 
-Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen **Farge og finish**. Ved å bruke denne tabellbegrensningen, kan du konfigurere en høyttaler som har eik-finish og en svart grill, en Rosewood-finish og en hvit grill og så videre.
+<span data-ttu-id="697b0-132">Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen **Farge og finish**.</span><span class="sxs-lookup"><span data-stu-id="697b0-132">The next table shows the combinations that are defined by the **Color and finish** table constraint.</span></span> <span data-ttu-id="697b0-133">Ved å bruke denne tabellbegrensningen, kan du konfigurere en høyttaler som har eik-finish og en svart grill, en Rosewood-finish og en hvit grill og så videre.</span><span class="sxs-lookup"><span data-stu-id="697b0-133">By using this table constraint, you can configure a speaker that has an oak finish and a black grill, a Rosewood finish and a white grill, and so on.</span></span>
 
-| Ferdig         | Grill                       |
+| <span data-ttu-id="697b0-134">Ferdig</span><span class="sxs-lookup"><span data-stu-id="697b0-134">Finish</span></span>         | <span data-ttu-id="697b0-135">Grill</span><span class="sxs-lookup"><span data-stu-id="697b0-135">Grill</span></span>                       |
 |----------------|-----------------------------|
-| Eik            | Svart                       |
-| Rosewood       | Hvit                       |
-| Hvit          | Svart                       |
-| Hvit          | Hvit                       |
-| Svart          | Svart                       |
-| Svart          | Metall                       | 
+| <span data-ttu-id="697b0-136">Eik</span><span class="sxs-lookup"><span data-stu-id="697b0-136">Oak</span></span>            | <span data-ttu-id="697b0-137">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-137">Black</span></span>                       |
+| <span data-ttu-id="697b0-138">Rosewood</span><span class="sxs-lookup"><span data-stu-id="697b0-138">Rosewood</span></span>       | <span data-ttu-id="697b0-139">Hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-139">White</span></span>                       |
+| <span data-ttu-id="697b0-140">Hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-140">White</span></span>          | <span data-ttu-id="697b0-141">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-141">Black</span></span>                       |
+| <span data-ttu-id="697b0-142">Hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-142">White</span></span>          | <span data-ttu-id="697b0-143">Hvit</span><span class="sxs-lookup"><span data-stu-id="697b0-143">White</span></span>                       |
+| <span data-ttu-id="697b0-144">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-144">Black</span></span>          | <span data-ttu-id="697b0-145">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-145">Black</span></span>                       |
+| <span data-ttu-id="697b0-146">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-146">Black</span></span>          | <span data-ttu-id="697b0-147">Metall</span><span class="sxs-lookup"><span data-stu-id="697b0-147">Metal</span></span>                       | 
 
-Du kan opprette systemdefinerte og brukerdefinerte tabellbegrensninger. Hvis du vil ha mer informasjon, se [Sy
-stemdefinerte og brukerdefinerte tabellbegrensninger](system-defined-user-defined-table-constraints.md).
+<span data-ttu-id="697b0-148">Du kan opprette systemdefinerte og brukerdefinerte tabellbegrensninger.</span><span class="sxs-lookup"><span data-stu-id="697b0-148">You can create system-defined and user-defined table constraints.</span></span> <span data-ttu-id="697b0-149">Hvis du vil ha mer informasjon, se [Sy
+stemdefinerte og brukerdefinerte tabellbegrensninger](system-defined-user-defined-table-constraints.md).</span><span class="sxs-lookup"><span data-stu-id="697b0-149">For more information, see [System-defined and user-defined table constraints](system-defined-user-defined-table-constraints.md).</span></span>
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvilken syntaks skal brukes for å skrive begrensninger?
-Du må bruke OML-syntaks (Optimization Modeling Language) når skriver begrensningene. Systemet bruker Microsoft Solver Foundation-begrensningsløseren til å løse begrensningene.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a><span data-ttu-id="697b0-150">Hvilken syntaks skal brukes for å skrive begrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-150">What syntax should be used to write constraints?</span></span>
+<span data-ttu-id="697b0-151">Du må bruke OML-syntaks (Optimization Modeling Language) når skriver begrensningene.</span><span class="sxs-lookup"><span data-stu-id="697b0-151">You must use Optimization Modeling Language (OML) syntax when you write constraints.</span></span> <span data-ttu-id="697b0-152">Systemet bruker Microsoft Solver Foundation-begrensningsløseren til å løse begrensningene.</span><span class="sxs-lookup"><span data-stu-id="697b0-152">The system uses Microsoft Solver Foundation constraint solver to solve the constraints.</span></span>
 
-## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Bør jeg bruke tabellbegrensninger eller uttrykksbegrensninger?
-Du kan enten bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. Du bygger opp en tabellbegrensning som en matrise, mens en uttrykksrestriksjon er et enkeltuttrykk. Når du konfigurerer et produkt, spiller det ingen rolle hvilken type betingelse som brukes. Følgende eksempel viser forskjellen mellom de to metodene.  
+## <a name="should-i-use-table-constraints-or-expression-constraints"></a><span data-ttu-id="697b0-153">Bør jeg bruke tabellbegrensninger eller uttrykksbegrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-153">Should I use table constraints or expression constraints?</span></span>
+<span data-ttu-id="697b0-154">Du kan enten bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene.</span><span class="sxs-lookup"><span data-stu-id="697b0-154">You can use either expression constraints or table constraints, depending on how you prefer to build the constraints.</span></span> <span data-ttu-id="697b0-155">Du bygger opp en tabellbegrensning som en matrise, mens en uttrykksrestriksjon er et enkeltuttrykk.</span><span class="sxs-lookup"><span data-stu-id="697b0-155">You build a table constraint as a matrix, whereas an expression constraint is an individual statement.</span></span> <span data-ttu-id="697b0-156">Når du konfigurerer et produkt, spiller det ingen rolle hvilken type betingelse som brukes.</span><span class="sxs-lookup"><span data-stu-id="697b0-156">When you configure a product, it doesn't matter what kind of constraint is used.</span></span> <span data-ttu-id="697b0-157">Følgende eksempel viser forskjellen mellom de to metodene.</span><span class="sxs-lookup"><span data-stu-id="697b0-157">The following example shows how the two methods differ.</span></span>  
 
-Når du konfigurerer et produkt ved hjelp av følgende begrensningsoppsett, er disse kombinasjonene tillatt:
+<span data-ttu-id="697b0-158">Når du konfigurerer et produkt ved hjelp av følgende begrensningsoppsett, er disse kombinasjonene tillatt:</span><span class="sxs-lookup"><span data-stu-id="697b0-158">When you configure a product by using the following constraint setups, these combinations are allowed:</span></span>
 
--   Et produkt i fargen svart og størrelse 30 eller 50
--   Et produkt i fargen rødt og størrelse 20
+-   <span data-ttu-id="697b0-159">Et produkt i fargen svart og størrelse 30 eller 50</span><span class="sxs-lookup"><span data-stu-id="697b0-159">A product in the color Black, and in size 30 or 50</span></span>
+-   <span data-ttu-id="697b0-160">Et produkt i fargen rødt og størrelse 20</span><span class="sxs-lookup"><span data-stu-id="697b0-160">A product in the color Red and in size 20</span></span>
 
-### <a name="table-constraint-setup"></a>Tabellbegrensningsoppsett
+### <a name="table-constraint-setup"></a><span data-ttu-id="697b0-161">Tabellbegrensningsoppsett</span><span class="sxs-lookup"><span data-stu-id="697b0-161">Table constraint setup</span></span>
 
-| Farge | Størrelse |
+| <span data-ttu-id="697b0-162">Farge</span><span class="sxs-lookup"><span data-stu-id="697b0-162">Color</span></span> | <span data-ttu-id="697b0-163">Størrelse</span><span class="sxs-lookup"><span data-stu-id="697b0-163">Size</span></span> |
 |-------|------|
-| Svart | 30   |
-| Svart | 50   |
-| Rød   | 20   |
+| <span data-ttu-id="697b0-164">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-164">Black</span></span> | <span data-ttu-id="697b0-165">30</span><span class="sxs-lookup"><span data-stu-id="697b0-165">30</span></span>   |
+| <span data-ttu-id="697b0-166">Svart</span><span class="sxs-lookup"><span data-stu-id="697b0-166">Black</span></span> | <span data-ttu-id="697b0-167">50</span><span class="sxs-lookup"><span data-stu-id="697b0-167">50</span></span>   |
+| <span data-ttu-id="697b0-168">Rød</span><span class="sxs-lookup"><span data-stu-id="697b0-168">Red</span></span>   | <span data-ttu-id="697b0-169">20</span><span class="sxs-lookup"><span data-stu-id="697b0-169">20</span></span>   |
 
-### <a name="expression-constraint-setup"></a>Uttrykksrestriksjonsoppsett
+### <a name="expression-constraint-setup"></a><span data-ttu-id="697b0-170">Uttrykksrestriksjonsoppsett</span><span class="sxs-lookup"><span data-stu-id="697b0-170">Expression constraint setup</span></span>
 
-(Farge == "Svart" & (størrelse == "30" | størrelse == "50")) | (farge == "Rød" & størrelse = "20")
+<span data-ttu-id="697b0-171">(Farge == "Svart" & (størrelse == "30" | størrelse == "50")) | (farge == "Rød" & størrelse = "20")</span><span class="sxs-lookup"><span data-stu-id="697b0-171">(Color == "Black" & (size == "30" | size == "50")) | (color == "Red" & size = "20")</span></span>
 
-## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Bør jeg bruke operatorer eller infiksnotasjoner når jeg skriver uttrykksbegrensninger?
-Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon. For operatorene **Min**, **Maks** og **Abs** kan du ikke bruke en infix-notasjon. Disse operatorene er inkludert som standard i de fleste programmeringsspråk.
+## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a><span data-ttu-id="697b0-172">Bør jeg bruke operatorer eller infiksnotasjoner når jeg skriver uttrykksbegrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-172">Should I use operators or infix notation when I write expression constraints?</span></span>
+<span data-ttu-id="697b0-173">Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon.</span><span class="sxs-lookup"><span data-stu-id="697b0-173">You can write an expression constraint by using either the available prefix operators or infix notation.</span></span> <span data-ttu-id="697b0-174">For operatorene **Min**, **Maks** og **Abs** kan du ikke bruke en infix-notasjon.</span><span class="sxs-lookup"><span data-stu-id="697b0-174">For the **Min**, **Max**, and **Abs** operators, you can't use infix notation.</span></span> <span data-ttu-id="697b0-175">Disse operatorene er inkludert som standard i de fleste programmeringsspråk.</span><span class="sxs-lookup"><span data-stu-id="697b0-175">These operators are included as standard operators in most programming languages.</span></span>
 
-## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Hvilke operatorer og infiksnotasjoner kan jeg bruke når jeg skriver uttrykksbegrensninger?
-Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når du skriver en uttrykksrestriksjon for en komponent i en produktkonfigurasjonsmodell. I eksemplene i den første tabellen kan du se hvordan du skriver inn et uttrykk med infiksnotasjon eller operatorer.
+## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a><span data-ttu-id="697b0-176">Hvilke operatorer og infiksnotasjoner kan jeg bruke når jeg skriver uttrykksbegrensninger?</span><span class="sxs-lookup"><span data-stu-id="697b0-176">What operators and infix notation can I use when I write expression constraints?</span></span>
+<span data-ttu-id="697b0-177">Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når du skriver en uttrykksrestriksjon for en komponent i en produktkonfigurasjonsmodell.</span><span class="sxs-lookup"><span data-stu-id="697b0-177">The following tables list the operators and infix notation that you can use when you write an expression constraint for a component in a product configuration model.</span></span> <span data-ttu-id="697b0-178">I eksemplene i den første tabellen kan du se hvordan du skriver inn et uttrykk med infiksnotasjon eller operatorer.</span><span class="sxs-lookup"><span data-stu-id="697b0-178">The examples in the first table show how to write an expression by using either infix notation or operators.</span></span>
 
 <table>
 <colgroup>
@@ -103,156 +103,156 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 </colgroup>
 <thead>
 <tr class="header">
-<th>Operatør</th>
-<th>Beskrivelse</th>
-<th>Syntaks</th>
-<th>Eksempler</th>
+<th><span data-ttu-id="697b0-179">Operatør</span><span class="sxs-lookup"><span data-stu-id="697b0-179">Operator</span></span></th>
+<th><span data-ttu-id="697b0-180">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="697b0-180">Description</span></span></th>
+<th><span data-ttu-id="697b0-181">Syntaks</span><span class="sxs-lookup"><span data-stu-id="697b0-181">Syntax</span></span></th>
+<th><span data-ttu-id="697b0-182">Eksempler</span><span class="sxs-lookup"><span data-stu-id="697b0-182">Examples</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Implies</td>
-<td>Dette er tilfelle hvis den første betingelsen er Usann, den andre betingelsen er Sann, eller begge deler.</td>
-<td>Implies[a, b], infix: a -: b</td>
+<td><span data-ttu-id="697b0-183">Implies</span><span class="sxs-lookup"><span data-stu-id="697b0-183">Implies</span></span></td>
+<td><span data-ttu-id="697b0-184">Dette er tilfelle hvis den første betingelsen er Usann, den andre betingelsen er Sann, eller begge deler.</span><span class="sxs-lookup"><span data-stu-id="697b0-184">This is true if the first condition is false, the second condition is true, or both.</span></span></td>
+<td><span data-ttu-id="697b0-185">Implies[a, b], infix: a -: b</span><span class="sxs-lookup"><span data-stu-id="697b0-185">Implies[a, b], infix: a -: b</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
-<li><strong>Infiksnotasjon:</strong> x != 0 -: y &gt;= 0</li>
+<li><span data-ttu-id="697b0-186"><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</span><span class="sxs-lookup"><span data-stu-id="697b0-186"><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</span></span></li>
+<li><span data-ttu-id="697b0-187"><strong>Infiksnotasjon:</strong> x != 0 -: y &gt;= 0</span><span class="sxs-lookup"><span data-stu-id="697b0-187"><strong>Infix notation:</strong> x != 0 -: y &gt;= 0</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Og</td>
-<td>Dette gjelder bare hvis alle betingelsene er oppfylt. Hvis antallet betingelser er 0 (null), gir den <strong>True</strong>.</td>
-<td>And[argumenter], infix: a &amp; b &amp; ... &amp; z</td>
+<td><span data-ttu-id="697b0-188">Og</span><span class="sxs-lookup"><span data-stu-id="697b0-188">And</span></span></td>
+<td><span data-ttu-id="697b0-189">Dette gjelder bare hvis alle betingelsene er oppfylt.</span><span class="sxs-lookup"><span data-stu-id="697b0-189">This is true only if all conditions are true.</span></span> <span data-ttu-id="697b0-190">Hvis antallet betingelser er 0 (null), gir den <strong>True</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-190">If the number of conditions is 0 (zero), it produces <strong>True</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-191">And[argumenter], infix: a &amp; b &amp; ... &amp; z</span><span class="sxs-lookup"><span data-stu-id="697b0-191">And[args], infix: a &amp; b &amp; ... &amp; z</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
-<li><strong>Infiksnotasjon:</strong> x == 2 &amp; y &lt;= 2</li>
+<li><span data-ttu-id="697b0-192"><strong>Operator:</strong> And[x == 2, y &lt;= 2]</span><span class="sxs-lookup"><span data-stu-id="697b0-192"><strong>Operator:</strong> And[x == 2, y &lt;= 2]</span></span></li>
+<li><span data-ttu-id="697b0-193"><strong>Infiksnotasjon:</strong> x == 2 &amp; y &lt;= 2</span><span class="sxs-lookup"><span data-stu-id="697b0-193"><strong>Infix notation:</strong> x == 2 &amp; y &lt;= 2</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Eller</td>
-<td>Dette er tilfelle hvis en betingelse er Sann. Hvis antallet betingelser er 0 (null), gir den <strong>False</strong>.</td>
-<td>Or[argumenter], infix: a | b | ... | z</td>
+<td><span data-ttu-id="697b0-194">Eller</span><span class="sxs-lookup"><span data-stu-id="697b0-194">Or</span></span></td>
+<td><span data-ttu-id="697b0-195">Dette er tilfelle hvis en betingelse er Sann.</span><span class="sxs-lookup"><span data-stu-id="697b0-195">This is true if any condition is true.</span></span> <span data-ttu-id="697b0-196">Hvis antallet betingelser er 0 (null), gir den <strong>False</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-196">If the number of conditions is 0 (zero), it produces <strong>False</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-197">Or[argumenter], infix: a | b | ... | z</span><span class="sxs-lookup"><span data-stu-id="697b0-197">Or[args], infix: a | b | ... | z</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
-<li><strong>Infiksnotasjon:</strong> x == 2 | y &lt;= 2</li>
+<li><span data-ttu-id="697b0-198"><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</span><span class="sxs-lookup"><span data-stu-id="697b0-198"><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</span></span></li>
+<li><span data-ttu-id="697b0-199"><strong>Infiksnotasjon:</strong> x == 2 | y &lt;= 2</span><span class="sxs-lookup"><span data-stu-id="697b0-199"><strong>Infix notation:</strong> x == 2 | y &lt;= 2</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Pluss</td>
-<td>Det summerer betingelsene. Hvis antallet betingelser er 0 (null), gir den <strong>0</strong>.</td>
-<td>Plus[argumenter], infix: a + b + ... + z</td>
+<td><span data-ttu-id="697b0-200">Pluss</span><span class="sxs-lookup"><span data-stu-id="697b0-200">Plus</span></span></td>
+<td><span data-ttu-id="697b0-201">Det summerer betingelsene.</span><span class="sxs-lookup"><span data-stu-id="697b0-201">This sums its conditions.</span></span> <span data-ttu-id="697b0-202">Hvis antallet betingelser er 0 (null), gir den <strong>0</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-202">If the number of conditions is 0 (zero), it produces <strong>0</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-203">Plus[argumenter], infix: a + b + ... + z</span><span class="sxs-lookup"><span data-stu-id="697b0-203">Plus[args], infix: a + b + ... + z</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Plus[x, y, 2] == z</li>
-<li><strong>Infiksnotasjon:</strong> x + y + 2 == z</li>
+<li><span data-ttu-id="697b0-204"><strong>Operator:</strong> Plus[x, y, 2] == z</span><span class="sxs-lookup"><span data-stu-id="697b0-204"><strong>Operator:</strong> Plus[x, y, 2] == z</span></span></li>
+<li><span data-ttu-id="697b0-205"><strong>Infiksnotasjon:</strong> x + y + 2 == z</span><span class="sxs-lookup"><span data-stu-id="697b0-205"><strong>Infix notation:</strong> x + y + 2 == z</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Minus</td>
-<td>Dette opphever argumentet. Dette må ha nøyaktig én betingelse.</td>
-<td>Minus[uttrykk], infiks: -uttrykk</td>
+<td><span data-ttu-id="697b0-206">Minus</span><span class="sxs-lookup"><span data-stu-id="697b0-206">Minus</span></span></td>
+<td><span data-ttu-id="697b0-207">Dette opphever argumentet.</span><span class="sxs-lookup"><span data-stu-id="697b0-207">This negates its argument.</span></span> <span data-ttu-id="697b0-208">Dette må ha nøyaktig én betingelse.</span><span class="sxs-lookup"><span data-stu-id="697b0-208">It must have exactly one condition.</span></span></td>
+<td><span data-ttu-id="697b0-209">Minus[uttrykk], infiks: -uttrykk</span><span class="sxs-lookup"><span data-stu-id="697b0-209">Minus[expr], infix: -expr</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Minus[x] == y</li>
-<li><strong>Infiksnotasjon:</strong> -x == y</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Abs</td>
-<td>Dette krever absoluttverdien til betingelsen. Dette må ha nøyaktig én betingelse.</td>
-<td>Abs[expr]</td>
-<td><strong>Operator:</strong> Abs[x]</td>
-</tr>
-<tr class="odd">
-<td>Klokkeslett</td>
-<td>Dette tar produktet for betingelsene. Hvis antallet betingelser er 0 (null), gir den <strong>1</strong>.</td>
-<td>Times[argumenter], infix: a * b * ... * z</td>
-<td><ul>
-<li><strong>Operator:</strong> Times[x, y, 2] == z</li>
-<li><strong>Infiksnotasjon:</strong> x * y * 2 == z</li>
+<li><span data-ttu-id="697b0-210"><strong>Operator:</strong> Minus[x] == y</span><span class="sxs-lookup"><span data-stu-id="697b0-210"><strong>Operator:</strong> Minus[x] == y</span></span></li>
+<li><span data-ttu-id="697b0-211"><strong>Infiksnotasjon:</strong> -x == y</span><span class="sxs-lookup"><span data-stu-id="697b0-211"><strong>Infix notation:</strong> -x == y</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Styrke</td>
-<td>Dette krever en eksponentiell verdi. Dette gjelder eksponentiering fra høyre mot venstre. Det vil si den er høyre-assosiativ, og derfor tilsvarer <strong>Kraft[a, b, c]</strong> <strong>Kraft[a, Kraft[b, c]]</strong>. <strong>Styrke</strong> kan bare brukes med en positiv konstant som eksponent.</td>
-<td>Styrke[argumenter], infix: a ^ b ^ ... ^ z</td>
+<td><span data-ttu-id="697b0-212">Abs</span><span class="sxs-lookup"><span data-stu-id="697b0-212">Abs</span></span></td>
+<td><span data-ttu-id="697b0-213">Dette krever absoluttverdien til betingelsen.</span><span class="sxs-lookup"><span data-stu-id="697b0-213">This takes the absolute value of its condition.</span></span> <span data-ttu-id="697b0-214">Dette må ha nøyaktig én betingelse.</span><span class="sxs-lookup"><span data-stu-id="697b0-214">It must have exactly one condition.</span></span></td>
+<td><span data-ttu-id="697b0-215">Abs[expr]</span><span class="sxs-lookup"><span data-stu-id="697b0-215">Abs[expr]</span></span></td>
+<td><span data-ttu-id="697b0-216"><strong>Operator:</strong> Abs[x]</span><span class="sxs-lookup"><span data-stu-id="697b0-216"><strong>Operator:</strong> Abs[x]</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="697b0-217">Klokkeslett</span><span class="sxs-lookup"><span data-stu-id="697b0-217">Times</span></span></td>
+<td><span data-ttu-id="697b0-218">Dette tar produktet for betingelsene.</span><span class="sxs-lookup"><span data-stu-id="697b0-218">This takes the product of its conditions.</span></span> <span data-ttu-id="697b0-219">Hvis antallet betingelser er 0 (null), gir den <strong>1</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-219">If the number of conditions is 0 (zero), it produces <strong>1</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-220">Times[argumenter], infix: a * b * ... * z</span><span class="sxs-lookup"><span data-stu-id="697b0-220">Times[args], infix: a * b * ... * z</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Power[x, 2] == y</li>
-<li><strong>Infiksnotasjon:</strong> x ^ 2 == y</li>
+<li><span data-ttu-id="697b0-221"><strong>Operator:</strong> Times[x, y, 2] == z</span><span class="sxs-lookup"><span data-stu-id="697b0-221"><strong>Operator:</strong> Times[x, y, 2] == z</span></span></li>
+<li><span data-ttu-id="697b0-222"><strong>Infiksnotasjon:</strong> x * y * 2 == z</span><span class="sxs-lookup"><span data-stu-id="697b0-222"><strong>Infix notation:</strong> x * y * 2 == z</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="697b0-223">Styrke</span><span class="sxs-lookup"><span data-stu-id="697b0-223">Power</span></span></td>
+<td><span data-ttu-id="697b0-224">Dette krever en eksponentiell verdi.</span><span class="sxs-lookup"><span data-stu-id="697b0-224">This takes an exponential.</span></span> <span data-ttu-id="697b0-225">Dette gjelder eksponentiering fra høyre mot venstre.</span><span class="sxs-lookup"><span data-stu-id="697b0-225">It applies exponentiation from right to left.</span></span> <span data-ttu-id="697b0-226">Det vil si den er høyre-assosiativ, og derfor tilsvarer <strong>Kraft[a, b, c]</strong> <strong>Kraft[a, Kraft[b, c]]</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-226">(In other words, it's right-associative.) Therefore, <strong>Power[a, b, c]</strong> is equivalent to <strong>Power[a, Power[b, c]]</strong>.</span></span> <span data-ttu-id="697b0-227"><strong>Styrke</strong> kan bare brukes med en positiv konstant som eksponent.</span><span class="sxs-lookup"><span data-stu-id="697b0-227"><strong>Power</strong> can be used only if the exponent is a positive constant.</span></span></td>
+<td><span data-ttu-id="697b0-228">Styrke[argumenter], infix: a ^ b ^ ... ^ z</span><span class="sxs-lookup"><span data-stu-id="697b0-228">Power[args], infix: a ^ b ^ ... ^ z</span></span></td>
+<td><ul>
+<li><span data-ttu-id="697b0-229"><strong>Operator:</strong> Power[x, 2] == y</span><span class="sxs-lookup"><span data-stu-id="697b0-229"><strong>Operator:</strong> Power[x, 2] == y</span></span></li>
+<li><span data-ttu-id="697b0-230"><strong>Infiksnotasjon:</strong> x ^ 2 == y</span><span class="sxs-lookup"><span data-stu-id="697b0-230"><strong>Infix notation:</strong> x ^ 2 == y</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Maks.</td>
-<td>Dette gir den største betingelsen. Hvis antallet betingelser er 0 (null), gir den <strong>Infinity</strong>.</td>
-<td>Max[argumenter]</td>
-<td><strong>Operator:</strong> Max[x, y, 2] == z</td>
+<td><span data-ttu-id="697b0-231">Maks.</span><span class="sxs-lookup"><span data-stu-id="697b0-231">Max</span></span></td>
+<td><span data-ttu-id="697b0-232">Dette gir den største betingelsen.</span><span class="sxs-lookup"><span data-stu-id="697b0-232">This produces the largest condition.</span></span> <span data-ttu-id="697b0-233">Hvis antallet betingelser er 0 (null), gir den <strong>Infinity</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-233">If the number of conditions is 0 (zero), it produces <strong>Infinity</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-234">Max[argumenter]</span><span class="sxs-lookup"><span data-stu-id="697b0-234">Max[args]</span></span></td>
+<td><span data-ttu-id="697b0-235"><strong>Operator:</strong> Max[x, y, 2] == z</span><span class="sxs-lookup"><span data-stu-id="697b0-235"><strong>Operator:</strong> Max[x, y, 2] == z</span></span></td>
 </tr>
 <tr class="even">
-<td>Min.</td>
-<td>Dette gir den minste betingelsen. Hvis antallet betingelser er 0 (null), gir den <strong>Infinity</strong>.</td>
-<td>Min[argumenter]</td>
-<td><strong>Operator:</strong> Min[x, y, 2] == z</td>
+<td><span data-ttu-id="697b0-236">Min.</span><span class="sxs-lookup"><span data-stu-id="697b0-236">Min</span></span></td>
+<td><span data-ttu-id="697b0-237">Dette gir den minste betingelsen.</span><span class="sxs-lookup"><span data-stu-id="697b0-237">This produces the smallest condition.</span></span> <span data-ttu-id="697b0-238">Hvis antallet betingelser er 0 (null), gir den <strong>Infinity</strong>.</span><span class="sxs-lookup"><span data-stu-id="697b0-238">If the number of conditions is 0 (zero), it produces <strong>Infinity</strong>.</span></span></td>
+<td><span data-ttu-id="697b0-239">Min[argumenter]</span><span class="sxs-lookup"><span data-stu-id="697b0-239">Min[args]</span></span></td>
+<td><span data-ttu-id="697b0-240"><strong>Operator:</strong> Min[x, y, 2] == z</span><span class="sxs-lookup"><span data-stu-id="697b0-240"><strong>Operator:</strong> Min[x, y, 2] == z</span></span></td>
 </tr>
 <tr class="odd">
-<td>Ikke</td>
-<td>Dette gir det logisk motsatte av betingelsen. Dette må ha nøyaktig én betingelse.</td>
-<td>Not[uttrykk], infiks: !uttrykk</td>
+<td><span data-ttu-id="697b0-241">Ikke</span><span class="sxs-lookup"><span data-stu-id="697b0-241">Not</span></span></td>
+<td><span data-ttu-id="697b0-242">Dette gir det logisk motsatte av betingelsen.</span><span class="sxs-lookup"><span data-stu-id="697b0-242">This produces the logical inverse of its condition.</span></span> <span data-ttu-id="697b0-243">Dette må ha nøyaktig én betingelse.</span><span class="sxs-lookup"><span data-stu-id="697b0-243">It must have exactly one condition.</span></span></td>
+<td><span data-ttu-id="697b0-244">Not[uttrykk], infiks: !uttrykk</span><span class="sxs-lookup"><span data-stu-id="697b0-244">Not[expr], infix: !expr</span></span></td>
 <td><ul>
-<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
-<li><strong>Infiksnotasjon:</strong> !x!(y == 3)</li>
+<li><span data-ttu-id="697b0-245"><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</span><span class="sxs-lookup"><span data-stu-id="697b0-245"><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</span></span></li>
+<li><span data-ttu-id="697b0-246"><strong>Infiksnotasjon:</strong> !x!(y == 3)</span><span class="sxs-lookup"><span data-stu-id="697b0-246"><strong>Infix notation:</strong> !x!(y == 3)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
+<span data-ttu-id="697b0-247">Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.</span><span class="sxs-lookup"><span data-stu-id="697b0-247">The examples in the next table show how to write infix notation.</span></span>
 
-| Infiksnotasjon    | beskrivelse                                                                                   |
+| <span data-ttu-id="697b0-248">Infiksnotasjon</span><span class="sxs-lookup"><span data-stu-id="697b0-248">Infix notation</span></span>    | <span data-ttu-id="697b0-249">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="697b0-249">Description</span></span>                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Tillegg                                                                                      |
-| x \* y \* z       | Multiplikasjon                                                                                |
-| x - y             | Binær subtraksjon oversettes på samme måte som binær addisjon med en negert andreverdi. |
-| x ^ y ^ z         | Eksponentiering med høyre-assosiativitet                                                   |
-| !x                | Boolsk ikke                                                                                   |
-| x -: y            | Boolsk implikasjon                                                                           |
-| x | y | z         | Boolsk eller                                                                                    |
-| x & y & z         | Boolsk og                                                                                   |
-| x == y == z       | Likhet                                                                                      |
-| x != y != z       | Spesifikk                                                                                      |
-| x &lt; y &lt; z   | Mindre enn                                                                                     |
-| x &gt; y &gt; z   | Større enn                                                                                  |
-| x &lt;= y &lt;= z | Mindre eller lik                                                                         |
-| x &gt;= y &gt;= z | Større enn eller lik                                                                      |
-| (x)               | Parenteser overstyrer standardprioritet.                                                      |
+| <span data-ttu-id="697b0-250">x + y + z</span><span class="sxs-lookup"><span data-stu-id="697b0-250">x + y + z</span></span>         | <span data-ttu-id="697b0-251">Tillegg</span><span class="sxs-lookup"><span data-stu-id="697b0-251">Addition</span></span>                                                                                      |
+| <span data-ttu-id="697b0-252">x \* y \* z</span><span class="sxs-lookup"><span data-stu-id="697b0-252">x \* y \* z</span></span>       | <span data-ttu-id="697b0-253">Multiplikasjon</span><span class="sxs-lookup"><span data-stu-id="697b0-253">Multiplication</span></span>                                                                                |
+| <span data-ttu-id="697b0-254">x - y</span><span class="sxs-lookup"><span data-stu-id="697b0-254">x - y</span></span>             | <span data-ttu-id="697b0-255">Binær subtraksjon oversettes på samme måte som binær addisjon med en negert andreverdi.</span><span class="sxs-lookup"><span data-stu-id="697b0-255">Binary subtraction is translated the same as binary addition where there is a negated second.</span></span> |
+| <span data-ttu-id="697b0-256">x ^ y ^ z</span><span class="sxs-lookup"><span data-stu-id="697b0-256">x ^ y ^ z</span></span>         | <span data-ttu-id="697b0-257">Eksponentiering med høyre-assosiativitet</span><span class="sxs-lookup"><span data-stu-id="697b0-257">Exponentiation that has right associativity</span></span>                                                   |
+| <span data-ttu-id="697b0-258">!x</span><span class="sxs-lookup"><span data-stu-id="697b0-258">!x</span></span>                | <span data-ttu-id="697b0-259">Boolsk ikke</span><span class="sxs-lookup"><span data-stu-id="697b0-259">Boolean not</span></span>                                                                                   |
+| <span data-ttu-id="697b0-260">x -: y</span><span class="sxs-lookup"><span data-stu-id="697b0-260">x -: y</span></span>            | <span data-ttu-id="697b0-261">Boolsk implikasjon</span><span class="sxs-lookup"><span data-stu-id="697b0-261">Boolean implication</span></span>                                                                           |
+| <span data-ttu-id="697b0-262">x</span><span class="sxs-lookup"><span data-stu-id="697b0-262">x</span></span> | <span data-ttu-id="697b0-263">y</span><span class="sxs-lookup"><span data-stu-id="697b0-263">y</span></span> | <span data-ttu-id="697b0-264">z</span><span class="sxs-lookup"><span data-stu-id="697b0-264">z</span></span>         | <span data-ttu-id="697b0-265">Boolsk eller</span><span class="sxs-lookup"><span data-stu-id="697b0-265">Boolean or</span></span>                                                                                    |
+| <span data-ttu-id="697b0-266">x & y & z</span><span class="sxs-lookup"><span data-stu-id="697b0-266">x & y & z</span></span>         | <span data-ttu-id="697b0-267">Boolsk og</span><span class="sxs-lookup"><span data-stu-id="697b0-267">Boolean and</span></span>                                                                                   |
+| <span data-ttu-id="697b0-268">x == y == z</span><span class="sxs-lookup"><span data-stu-id="697b0-268">x == y == z</span></span>       | <span data-ttu-id="697b0-269">Likhet</span><span class="sxs-lookup"><span data-stu-id="697b0-269">Equality</span></span>                                                                                      |
+| <span data-ttu-id="697b0-270">x != y != z</span><span class="sxs-lookup"><span data-stu-id="697b0-270">x != y != z</span></span>       | <span data-ttu-id="697b0-271">Spesifikk</span><span class="sxs-lookup"><span data-stu-id="697b0-271">Distinct</span></span>                                                                                      |
+| <span data-ttu-id="697b0-272">x &lt; y &lt; z</span><span class="sxs-lookup"><span data-stu-id="697b0-272">x &lt; y &lt; z</span></span>   | <span data-ttu-id="697b0-273">Mindre enn</span><span class="sxs-lookup"><span data-stu-id="697b0-273">Less than</span></span>                                                                                     |
+| <span data-ttu-id="697b0-274">x &gt; y &gt; z</span><span class="sxs-lookup"><span data-stu-id="697b0-274">x &gt; y &gt; z</span></span>   | <span data-ttu-id="697b0-275">Større enn</span><span class="sxs-lookup"><span data-stu-id="697b0-275">Greater than</span></span>                                                                                  |
+| <span data-ttu-id="697b0-276">x &lt;= y &lt;= z</span><span class="sxs-lookup"><span data-stu-id="697b0-276">x &lt;= y &lt;= z</span></span> | <span data-ttu-id="697b0-277">Mindre eller lik</span><span class="sxs-lookup"><span data-stu-id="697b0-277">Less than or equal to</span></span>                                                                         |
+| <span data-ttu-id="697b0-278">x &gt;= y &gt;= z</span><span class="sxs-lookup"><span data-stu-id="697b0-278">x &gt;= y &gt;= z</span></span> | <span data-ttu-id="697b0-279">Større enn eller lik</span><span class="sxs-lookup"><span data-stu-id="697b0-279">Greater than or equal to</span></span>                                                                      |
+| <span data-ttu-id="697b0-280">(x)</span><span class="sxs-lookup"><span data-stu-id="697b0-280">(x)</span></span>               | <span data-ttu-id="697b0-281">Parenteser overstyrer standardprioritet.</span><span class="sxs-lookup"><span data-stu-id="697b0-281">Parentheses override default precedence.</span></span>                                                      |
 
-## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres ikke uttrykksbegrensningene mine riktig?
-Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en liste over reserverte nøkkelord som du ikke kan bruke:
+## <a name="why-arent-my-expression-constraints-validated-correctly"></a><span data-ttu-id="697b0-282">Hvorfor valideres ikke uttrykksbegrensningene mine riktig?</span><span class="sxs-lookup"><span data-stu-id="697b0-282">Why aren't my expression constraints validated correctly?</span></span>
+<span data-ttu-id="697b0-283">Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell.</span><span class="sxs-lookup"><span data-stu-id="697b0-283">You can't use reserved keywords as solver names for attributes, components, or subcomponents in a product configuration model.</span></span> <span data-ttu-id="697b0-284">Her er en liste over reserverte nøkkelord som du ikke kan bruke:</span><span class="sxs-lookup"><span data-stu-id="697b0-284">Here is a list of the reserved keywords that you can't use:</span></span>
 
--   Tak
--   Element
--   Lik
--   Gulv
--   Hvis
--   Mindre
--   Større
--   Implies
--   Logg
--   Maks.
--   Min.
--   Minus
--   Pluss
--   Styrke
--   Tider
--   Spor
--   Modell
--   Beslutningsprofil
--   Mål
+-   <span data-ttu-id="697b0-285">Tak</span><span class="sxs-lookup"><span data-stu-id="697b0-285">Ceiling</span></span>
+-   <span data-ttu-id="697b0-286">Element</span><span class="sxs-lookup"><span data-stu-id="697b0-286">Element</span></span>
+-   <span data-ttu-id="697b0-287">Lik</span><span class="sxs-lookup"><span data-stu-id="697b0-287">Equal</span></span>
+-   <span data-ttu-id="697b0-288">Gulv</span><span class="sxs-lookup"><span data-stu-id="697b0-288">Floor</span></span>
+-   <span data-ttu-id="697b0-289">Hvis</span><span class="sxs-lookup"><span data-stu-id="697b0-289">If</span></span>
+-   <span data-ttu-id="697b0-290">Mindre</span><span class="sxs-lookup"><span data-stu-id="697b0-290">Less</span></span>
+-   <span data-ttu-id="697b0-291">Større</span><span class="sxs-lookup"><span data-stu-id="697b0-291">Greater</span></span>
+-   <span data-ttu-id="697b0-292">Implies</span><span class="sxs-lookup"><span data-stu-id="697b0-292">Implies</span></span>
+-   <span data-ttu-id="697b0-293">Logg</span><span class="sxs-lookup"><span data-stu-id="697b0-293">Log</span></span>
+-   <span data-ttu-id="697b0-294">Maks.</span><span class="sxs-lookup"><span data-stu-id="697b0-294">Max</span></span>
+-   <span data-ttu-id="697b0-295">Min.</span><span class="sxs-lookup"><span data-stu-id="697b0-295">Min</span></span>
+-   <span data-ttu-id="697b0-296">Minus</span><span class="sxs-lookup"><span data-stu-id="697b0-296">Minus</span></span>
+-   <span data-ttu-id="697b0-297">Pluss</span><span class="sxs-lookup"><span data-stu-id="697b0-297">Plus</span></span>
+-   <span data-ttu-id="697b0-298">Styrke</span><span class="sxs-lookup"><span data-stu-id="697b0-298">Power</span></span>
+-   <span data-ttu-id="697b0-299">Tider</span><span class="sxs-lookup"><span data-stu-id="697b0-299">Times</span></span>
+-   <span data-ttu-id="697b0-300">Spor</span><span class="sxs-lookup"><span data-stu-id="697b0-300">Slot</span></span>
+-   <span data-ttu-id="697b0-301">Modell</span><span class="sxs-lookup"><span data-stu-id="697b0-301">Model</span></span>
+-   <span data-ttu-id="697b0-302">Beslutningsprofil</span><span class="sxs-lookup"><span data-stu-id="697b0-302">Decision</span></span>
+-   <span data-ttu-id="697b0-303">Mål</span><span class="sxs-lookup"><span data-stu-id="697b0-303">Goal</span></span>
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="697b0-304">Se også</span><span class="sxs-lookup"><span data-stu-id="697b0-304">See also</span></span>
 --------
 
-[Opprett et betingelssuttrykk (oppgaveveiledning)(/dynamics365/unified-operations/supply-chain/pim/tasks/add-expression-constraint-product-configuration-model)
+<span data-ttu-id="697b0-305">[Opprett et betingelssuttrykk (oppgaveveiledning)(/dynamics365/unified-operations/supply-chain/pim/tasks/add-expression-constraint-product-configuration-model)</span><span class="sxs-lookup"><span data-stu-id="697b0-305">[Create an expression constraint (Task guide)(/dynamics365/unified-operations/supply-chain/pim/tasks/add-expression-constraint-product-configuration-model)</span></span>
 
-[Legge til beregning for produktkonfigurasjonsmodell (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-calculation-product-configuration-model)
+[<span data-ttu-id="697b0-306">Legge til beregning for produktkonfigurasjonsmodell (oppgaveveiledning)</span><span class="sxs-lookup"><span data-stu-id="697b0-306">Add a calculation to a product configuration model (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/pim/tasks/add-calculation-product-configuration-model)
 
 
 

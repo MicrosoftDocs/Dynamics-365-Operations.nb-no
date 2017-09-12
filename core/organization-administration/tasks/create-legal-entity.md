@@ -16,45 +16,45 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e07adb5f77681c7901662ae94b6d916008ac3c6d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-legal-entity"></a>Opprette en ny juridisk enhet
+# <a name="create-a-legal-entity"></a><span data-ttu-id="c61fc-103">Opprette en ny juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="c61fc-103">Create a legal entity</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-En juridisk enhet er en organisasjon som identifiseres via registrering hos en juridisk myndighet. Juridiske enheter kan inngå kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen. Fremgangsmåten nedenfor forklarer hvordan du oppretter en juridisk enhet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="c61fc-104">En juridisk enhet er en organisasjon som identifiseres via registrering hos en juridisk myndighet.</span><span class="sxs-lookup"><span data-stu-id="c61fc-104">A legal entity is an organization that is identified through registration with a legal authority.</span></span> <span data-ttu-id="c61fc-105">Juridiske enheter kan inngå kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen.</span><span class="sxs-lookup"><span data-stu-id="c61fc-105">Legal entities can enter into contracts and are required to prepare statements that report on their performance.</span></span> <span data-ttu-id="c61fc-106">Fremgangsmåten nedenfor forklarer hvordan du oppretter en juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="c61fc-106">The following procedure explains how to create a legal entity.</span></span> <span data-ttu-id="c61fc-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå til Organisasjonsstyring > Organisasjoner > Juridiske enheter.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Skriv inn en verdi i feltet Firma.
-5. Angi eller velg en verdi i Land/område-feltet.
-6. Klikk OK.
-    * I delen Generelt angir du følgende generelle informasjon om den juridiske enheten: Angi et søkenavn, hvis det kreves et søkenavn. Et søkenavn er et alternativt navn som kan brukes til å søke etter den juridiske enheten. Velg om den juridiske enheten brukes som et konsoliderte firma. Velg om den juridiske enheten brukes som et elimineringsfirma.  
-7. Utvid seksjonen Adresser.
-    * I Adresser-delen angir du adresseinformasjon, for eksempel gatenavn og -nummer, postnummer og poststed.  
-8. Vis delen Kontaktinformasjon.
-    * I delen Kontaktinformasjon angir du informasjon om kommunikasjonsmetoder, for eksempel e-postadresse, URL-adresser og telefonnumre.  
-9. Vis delen Lovbestemt rapportering.
-    * I delen Lovbestemt rapportering skriver du inn registreringsnumrene som brukes ved lovbestemt rapportering.  
-10. Utvid delen Registreringsnumre.
-    * I delen Registreringsnumre angir du eventuell informasjon som kreves av den juridiske enheten.  
-11. Utvid delen Bankkontoinformasjon.
-    * I delen Bankkontoinformasjon angir du bankkontoer og registreringsnumre for den juridiske enheten.  
-12. Vis delen Utenrikshandel og logistikk.
-    * I delen Utenrikshandel og logistikk angir du forsendelsesinformasjon for den juridiske enheten.  
-13. Vis delen Nummerserier.
-    * I delen Nummerserier kan du vise nummerseriene som er tilknyttet den juridiske enheten.  
-14. Utvid Bilder-delen.
-    * I delen bilder viser eller endrer du logoen og/eller instrumentbordbildet som er knyttet til den juridiske enheten.  
-15. Utvid delen Avgiftsregistrering.
-    * I delen Avgiftsregistrering skriver du inn registreringsnumrene som brukes til å rapportere til skattemyndighetene.  
-16. Vis delen 1099-avgift.
-    * I delen 1099-avgift skriver du inn 1099-informasjon for den juridiske enheten.  
-17. Klikk Lagre.
+1. <span data-ttu-id="c61fc-108">Gå til Organisasjonsstyring > Organisasjoner > Juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="c61fc-108">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="c61fc-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="c61fc-109">Click New.</span></span>
+3. <span data-ttu-id="c61fc-110">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="c61fc-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="c61fc-111">Skriv inn en verdi i feltet Firma.</span><span class="sxs-lookup"><span data-stu-id="c61fc-111">In the Company field, type a value.</span></span>
+5. <span data-ttu-id="c61fc-112">Angi eller velg en verdi i Land/område-feltet.</span><span class="sxs-lookup"><span data-stu-id="c61fc-112">In the Country/region field, enter or select a value.</span></span>
+6. <span data-ttu-id="c61fc-113">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c61fc-113">Click OK.</span></span>
+    * <span data-ttu-id="c61fc-114">I delen Generelt angir du følgende generelle informasjon om den juridiske enheten: Angi et søkenavn, hvis det kreves et søkenavn.</span><span class="sxs-lookup"><span data-stu-id="c61fc-114">In the General section, provide the following general information about the legal entity: Enter a search name, if a search name is required.</span></span> <span data-ttu-id="c61fc-115">Et søkenavn er et alternativt navn som kan brukes til å søke etter den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-115">A search name is an alternate name that can be used to search for this legal entity.</span></span> <span data-ttu-id="c61fc-116">Velg om den juridiske enheten brukes som et konsoliderte firma.</span><span class="sxs-lookup"><span data-stu-id="c61fc-116">Select whether this legal entity is being used as a consolidation company.</span></span> <span data-ttu-id="c61fc-117">Velg om den juridiske enheten brukes som et elimineringsfirma.</span><span class="sxs-lookup"><span data-stu-id="c61fc-117">Select whether this legal entity is being used as an elimination company.</span></span>  
+7. <span data-ttu-id="c61fc-118">Utvid seksjonen Adresser.</span><span class="sxs-lookup"><span data-stu-id="c61fc-118">Expand the Addresses section.</span></span>
+    * <span data-ttu-id="c61fc-119">I Adresser-delen angir du adresseinformasjon, for eksempel gatenavn og -nummer, postnummer og poststed.</span><span class="sxs-lookup"><span data-stu-id="c61fc-119">In the Addresses section, enter address information, such as the street name and number, postal code, and city.</span></span>  
+8. <span data-ttu-id="c61fc-120">Vis delen Kontaktinformasjon.</span><span class="sxs-lookup"><span data-stu-id="c61fc-120">Expand the Contact information section.</span></span>
+    * <span data-ttu-id="c61fc-121">I delen Kontaktinformasjon angir du informasjon om kommunikasjonsmetoder, for eksempel e-postadresse, URL-adresser og telefonnumre.</span><span class="sxs-lookup"><span data-stu-id="c61fc-121">In the Contact information section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span>  
+9. <span data-ttu-id="c61fc-122">Vis delen Lovbestemt rapportering.</span><span class="sxs-lookup"><span data-stu-id="c61fc-122">Expand the Statutory reporting section.</span></span>
+    * <span data-ttu-id="c61fc-123">I delen Lovbestemt rapportering skriver du inn registreringsnumrene som brukes ved lovbestemt rapportering.</span><span class="sxs-lookup"><span data-stu-id="c61fc-123">In the Statutory reporting section, enter the registration numbers that are used for statutory reporting.</span></span>  
+10. <span data-ttu-id="c61fc-124">Utvid delen Registreringsnumre.</span><span class="sxs-lookup"><span data-stu-id="c61fc-124">Expand the Registration numbers section.</span></span>
+    * <span data-ttu-id="c61fc-125">I delen Registreringsnumre angir du eventuell informasjon som kreves av den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-125">In the Registration numbers section, enter any information required by the legal entity.</span></span>  
+11. <span data-ttu-id="c61fc-126">Utvid delen Bankkontoinformasjon.</span><span class="sxs-lookup"><span data-stu-id="c61fc-126">Expand the Bank account information section.</span></span>
+    * <span data-ttu-id="c61fc-127">I delen Bankkontoinformasjon angir du bankkontoer og registreringsnumre for den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-127">In the Bank account information section, enter bank accounts and routing numbers for the legal entity.</span></span>  
+12. <span data-ttu-id="c61fc-128">Vis delen Utenrikshandel og logistikk.</span><span class="sxs-lookup"><span data-stu-id="c61fc-128">Expand the Foreign trade and logistics section.</span></span>
+    * <span data-ttu-id="c61fc-129">I delen Utenrikshandel og logistikk angir du forsendelsesinformasjon for den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-129">In the Foreign trade and logistics section, enter shipping information for the legal entity.</span></span>  
+13. <span data-ttu-id="c61fc-130">Vis delen Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="c61fc-130">Expand the Number sequences section.</span></span>
+    * <span data-ttu-id="c61fc-131">I delen Nummerserier kan du vise nummerseriene som er tilknyttet den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-131">In the Number sequences section, you can view the number sequences that are associated with the legal entity.</span></span>  
+14. <span data-ttu-id="c61fc-132">Utvid Bilder-delen.</span><span class="sxs-lookup"><span data-stu-id="c61fc-132">Expand the Images section.</span></span>
+    * <span data-ttu-id="c61fc-133">I delen bilder viser eller endrer du logoen og/eller instrumentbordbildet som er knyttet til den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-133">In the Images section, view or change the logo and/or dashboard image that are associated with the legal entity.</span></span>  
+15. <span data-ttu-id="c61fc-134">Utvid delen Avgiftsregistrering.</span><span class="sxs-lookup"><span data-stu-id="c61fc-134">Expand the Tax registration section.</span></span>
+    * <span data-ttu-id="c61fc-135">I delen Avgiftsregistrering skriver du inn registreringsnumrene som brukes til å rapportere til skattemyndighetene.</span><span class="sxs-lookup"><span data-stu-id="c61fc-135">In the Tax registration section, enter the registration numbers that are used to report to tax authorities.</span></span>  
+16. <span data-ttu-id="c61fc-136">Vis delen 1099-avgift.</span><span class="sxs-lookup"><span data-stu-id="c61fc-136">Expand the Tax 1099 section.</span></span>
+    * <span data-ttu-id="c61fc-137">I delen 1099-avgift skriver du inn 1099-informasjon for den juridiske enheten.</span><span class="sxs-lookup"><span data-stu-id="c61fc-137">In the Tax 1099 section, enter 1099 information for the legal entity.</span></span>  
+17. <span data-ttu-id="c61fc-138">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="c61fc-138">Click Save.</span></span>
 
 

@@ -15,192 +15,192 @@ ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 45582c5378fb2b3d6c9e26632accf37197a671bb
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Hurtigtaster
+# <a name="keyboard-shortcuts"></a><span data-ttu-id="9f7c9-103">Hurtigtaster</span><span class="sxs-lookup"><span data-stu-id="9f7c9-103">Keyboard shortcuts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Finance and Operations. 
+<span data-ttu-id="9f7c9-104">Følgende hurtigtaster gjelder i hele Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="9f7c9-104">The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-**Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
+<span data-ttu-id="9f7c9-105">**Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett.</span><span class="sxs-lookup"><span data-stu-id="9f7c9-105">**Note:** The keyboard shortcuts described here refer to the United States keyboard layout.</span></span> <span data-ttu-id="9f7c9-106">Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.</span><span class="sxs-lookup"><span data-stu-id="9f7c9-106">Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.</span></span>
 
-## <a name="action-shortcuts"></a>Handlingssnarveier
+## <a name="action-shortcuts"></a><span data-ttu-id="9f7c9-107">Handlingssnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-107">Action shortcuts</span></span>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Hvis du vil gjøre dette**                                    | **Trykk**                        |
-| Åpent handlingssøk                                | Ctrl+’ eller Alt+Q                  |
-| Gå til standard handlingsruten                  | Ctrl+F6                          |
-| Åpne en kategori i handlingsruten eller en meny           | Enter eller Mellomrom eller Alt+Pil ned |
-| Flytt til neste/forrige alternativ på en meny            | Pil ned / Pil opp            |
-| Lukk en kategori i handlingsruten eller en meny          | ESC                              |
-| Simuler et høyreklikk                            | Skift+F10                        |
-| Åpne hurtigmenyen Finance and Operations | Ctrl+F10                         |
-| Bruk standardknappen i et skjema / en dialogboks       | Alt+Enter                        |
-| Klikk en knapp eller flis                            | Enter eller Mellomrom                   |
-| Vis oppdatert informasjon for en flis for antall         | Alt+Pil opp                     |
+| <span data-ttu-id="9f7c9-108">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-108">**To do this**</span></span>                                    | <span data-ttu-id="9f7c9-109">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-109">**Press**</span></span>                        |
+| <span data-ttu-id="9f7c9-110">Åpent handlingssøk</span><span class="sxs-lookup"><span data-stu-id="9f7c9-110">Open action search</span></span>                                | <span data-ttu-id="9f7c9-111">Ctrl+’ eller Alt+Q</span><span class="sxs-lookup"><span data-stu-id="9f7c9-111">Ctrl+’ or Alt+Q</span></span>                  |
+| <span data-ttu-id="9f7c9-112">Gå til standard handlingsruten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-112">Move to the standard action pane</span></span>                  | <span data-ttu-id="9f7c9-113">Ctrl+F6</span><span class="sxs-lookup"><span data-stu-id="9f7c9-113">Ctrl+F6</span></span>                          |
+| <span data-ttu-id="9f7c9-114">Åpne en kategori i handlingsruten eller en meny</span><span class="sxs-lookup"><span data-stu-id="9f7c9-114">Open a tab in the action pane or a menu</span></span>           | <span data-ttu-id="9f7c9-115">Enter eller Mellomrom eller Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-115">Enter or Space or Alt+Down Arrow</span></span> |
+| <span data-ttu-id="9f7c9-116">Flytt til neste/forrige alternativ på en meny</span><span class="sxs-lookup"><span data-stu-id="9f7c9-116">Move to next/previous option in a menu</span></span>            | <span data-ttu-id="9f7c9-117">Pil ned / Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-117">Down Arrow / Up Arrow</span></span>            |
+| <span data-ttu-id="9f7c9-118">Lukk en kategori i handlingsruten eller en meny</span><span class="sxs-lookup"><span data-stu-id="9f7c9-118">Close a tab in the action pane or a menu</span></span>          | <span data-ttu-id="9f7c9-119">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-119">Esc</span></span>                              |
+| <span data-ttu-id="9f7c9-120">Simuler et høyreklikk</span><span class="sxs-lookup"><span data-stu-id="9f7c9-120">Simulate a right-click</span></span>                            | <span data-ttu-id="9f7c9-121">Skift+F10</span><span class="sxs-lookup"><span data-stu-id="9f7c9-121">Shift+F10</span></span>                        |
+| <span data-ttu-id="9f7c9-122">Åpne hurtigmenyen Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="9f7c9-122">Open the Finance and Operations context menu</span></span> | <span data-ttu-id="9f7c9-123">Ctrl+F10</span><span class="sxs-lookup"><span data-stu-id="9f7c9-123">Ctrl+F10</span></span>                         |
+| <span data-ttu-id="9f7c9-124">Bruk standardknappen i et skjema / en dialogboks</span><span class="sxs-lookup"><span data-stu-id="9f7c9-124">Execute the default button on a form/dialog</span></span>       | <span data-ttu-id="9f7c9-125">Alt+Enter</span><span class="sxs-lookup"><span data-stu-id="9f7c9-125">Alt+Enter</span></span>                        |
+| <span data-ttu-id="9f7c9-126">Klikk en knapp eller flis</span><span class="sxs-lookup"><span data-stu-id="9f7c9-126">Click a button or tile</span></span>                            | <span data-ttu-id="9f7c9-127">Enter eller Mellomrom</span><span class="sxs-lookup"><span data-stu-id="9f7c9-127">Enter or Space</span></span>                   |
+| <span data-ttu-id="9f7c9-128">Vis oppdatert informasjon for en flis for antall</span><span class="sxs-lookup"><span data-stu-id="9f7c9-128">View refresh information for a count tile</span></span>         | <span data-ttu-id="9f7c9-129">Alt+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-129">Alt+Up Arrow</span></span>                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Snarveier for datovelger
+## <a name="date-picker-shortcuts"></a><span data-ttu-id="9f7c9-130">Snarveier for datovelger</span><span class="sxs-lookup"><span data-stu-id="9f7c9-130">Date picker shortcuts</span></span>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
-| **Hvis du vil gjøre dette**                        | **Trykk**                                 |
-| Åpne datovelger                  | Alt+Pil ned                            |
-| Flytt mellom datoer i datovelgeren | Ctrl+Piler                               |
-| Gå til neste/forrige måned       | PgDn / PgUp                       |
-| Gå til neste/forrige år        | Ctrl+Skift+PgDn / Ctrl+Skift+PgUp |
+| <span data-ttu-id="9f7c9-131">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-131">**To do this**</span></span>                        | <span data-ttu-id="9f7c9-132">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-132">**Press**</span></span>                                 |
+| <span data-ttu-id="9f7c9-133">Åpne datovelger</span><span class="sxs-lookup"><span data-stu-id="9f7c9-133">Open the date picker</span></span>                  | <span data-ttu-id="9f7c9-134">Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-134">Alt+Down Arrow</span></span>                            |
+| <span data-ttu-id="9f7c9-135">Flytt mellom datoer i datovelgeren</span><span class="sxs-lookup"><span data-stu-id="9f7c9-135">Move between dates in the date picker</span></span> | <span data-ttu-id="9f7c9-136">Ctrl+Piler</span><span class="sxs-lookup"><span data-stu-id="9f7c9-136">Ctrl+Arrows</span></span>                               |
+| <span data-ttu-id="9f7c9-137">Gå til neste/forrige måned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-137">Move to the next/previous month</span></span>       | <span data-ttu-id="9f7c9-138">PgDn / PgUp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-138">Page Down / Page Up</span></span>                       |
+| <span data-ttu-id="9f7c9-139">Gå til neste/forrige år</span><span class="sxs-lookup"><span data-stu-id="9f7c9-139">Move to the next/previous year</span></span>        | <span data-ttu-id="9f7c9-140">Ctrl+Skift+PgDn / Ctrl+Skift+PgUp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-140">Ctrl+Shift+Page Down / Ctrl+Shift+Page Up</span></span> |
 
  
 
-## <a name="factbox-shortcuts"></a>Faktabokssnarveier
+## <a name="factbox-shortcuts"></a><span data-ttu-id="9f7c9-141">Faktabokssnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-141">FactBox shortcuts</span></span>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen) | Ctrl+F2                                   |
-| Lukk faktaboksruten (med fokus i faktaboksruten)                         | ESC                                       |
-| Flytt til neste/forrige faktaboks (med fokus i faktaboksruten)              | Alt+Skift+Pil ned / Alt+Skift+Pil opp |
-| Flytt til &lt;n&gt;. faktaboks (med fokus i faktaboksruten)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
-| Utvid en faktaboks (med fokus på faktabokshodet)                             | Mellomrom eller Enter                            |
-| Skjul gjeldende faktaboks                                                    | Alt+0                                     |
+| <span data-ttu-id="9f7c9-142">Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-142">Open the FactBox pane (or move focus to the FactBox pane if it is already open)</span></span> | <span data-ttu-id="9f7c9-143">Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="9f7c9-143">Ctrl+F2</span></span>                                   |
+| <span data-ttu-id="9f7c9-144">Lukk faktaboksruten (med fokus i faktaboksruten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-144">Close the FactBox pane (with focus in the FactBox pane)</span></span>                         | <span data-ttu-id="9f7c9-145">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-145">Esc</span></span>                                       |
+| <span data-ttu-id="9f7c9-146">Flytt til neste/forrige faktaboks (med fokus i faktaboksruten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-146">Move to the next/previous FactBox (with focus in the FactBox pane)</span></span>              | <span data-ttu-id="9f7c9-147">Alt+Skift+Pil ned / Alt+Skift+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-147">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span> |
+| <span data-ttu-id="9f7c9-148">Flytt til &lt;n&gt;. faktaboks (med fokus i faktaboksruten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-148">Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)</span></span>                | <span data-ttu-id="9f7c9-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>           |
+| <span data-ttu-id="9f7c9-150">Utvid en faktaboks (med fokus på faktabokshodet)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-150">Expand a FactBox (with focus on the FactBox header)</span></span>                             | <span data-ttu-id="9f7c9-151">Mellomrom eller Enter</span><span class="sxs-lookup"><span data-stu-id="9f7c9-151">Space or Enter</span></span>                            |
+| <span data-ttu-id="9f7c9-152">Skjul gjeldende faktaboks</span><span class="sxs-lookup"><span data-stu-id="9f7c9-152">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="9f7c9-153">Alt+0</span><span class="sxs-lookup"><span data-stu-id="9f7c9-153">Alt+0</span></span>                                     |
 
  
 
-## <a name="filtering-shortcuts"></a>Filtreringssnarveier
+## <a name="filtering-shortcuts"></a><span data-ttu-id="9f7c9-154">Filtreringssnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-154">Filtering shortcuts</span></span>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
-| **Hvis du vil gjøre dette**                                                                                                      | **Trykk**     |
-| Åpne rutenettfiltrering for gjeldende kolonne                                                                          | Ctrl+G        |
-| Lukk rutenettfiltrering for gjeldende kolonne                                                                         | ESC           |
-| Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedskjemaet hvis filtreringsruten allerede er åpen) | Ctrl+F3       |
-| Lukk filtreringsruten (med fokus i filtreringsruten)                                                               | ESC           |
-| Åpne avansert filtrering/sortering                                                                                        | Ctrl+Skift+F3 |
+| <span data-ttu-id="9f7c9-155">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-155">**To do this**</span></span>                                                                                                      | <span data-ttu-id="9f7c9-156">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-156">**Press**</span></span>     |
+| <span data-ttu-id="9f7c9-157">Åpne rutenettfiltrering for gjeldende kolonne</span><span class="sxs-lookup"><span data-stu-id="9f7c9-157">Open grid filtering for the current column</span></span>                                                                          | <span data-ttu-id="9f7c9-158">Ctrl+G</span><span class="sxs-lookup"><span data-stu-id="9f7c9-158">Ctrl+G</span></span>        |
+| <span data-ttu-id="9f7c9-159">Lukk rutenettfiltrering for gjeldende kolonne</span><span class="sxs-lookup"><span data-stu-id="9f7c9-159">Close grid filtering for the current column</span></span>                                                                         | <span data-ttu-id="9f7c9-160">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-160">Esc</span></span>           |
+| <span data-ttu-id="9f7c9-161">Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedskjemaet hvis filtreringsruten allerede er åpen)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-161">Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open)</span></span> | <span data-ttu-id="9f7c9-162">Ctrl+F3</span><span class="sxs-lookup"><span data-stu-id="9f7c9-162">Ctrl+F3</span></span>       |
+| <span data-ttu-id="9f7c9-163">Lukk filtreringsruten (med fokus i filtreringsruten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-163">Close the Filter pane (with focus in the Filter pane)</span></span>                                                               | <span data-ttu-id="9f7c9-164">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-164">Esc</span></span>           |
+| <span data-ttu-id="9f7c9-165">Åpne avansert filtrering/sortering</span><span class="sxs-lookup"><span data-stu-id="9f7c9-165">Open advanced filtering/sort</span></span>                                                                                        | <span data-ttu-id="9f7c9-166">Ctrl+Skift+F3</span><span class="sxs-lookup"><span data-stu-id="9f7c9-166">Ctrl+Shift+F3</span></span> |
 
  
 
-## <a name="form-shortcuts"></a>Skjemasnarveier
+## <a name="form-shortcuts"></a><span data-ttu-id="9f7c9-167">Skjemasnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-167">Form shortcuts</span></span>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **Hvis du vil gjøre dette**                                                                                                                  | **Trykk**         |
-| Opprett en ny post                                                                                                             | Alt+N             |
-| Slette en post                                                                                                                 | Alt+Del eller Alt+F9 |
-| Lagre post                                                                                                                     | Alt+S eller Ctrl+S   |
-| Tilbakestill (gjenopprett)                                                                                                                | Ctrl+Skift+F5     |
-| Dataoppdatering                                                                                                                    | Skift+F5          |
-| Gå til det første synlige feltet på skjemaet                                                                                     | Alt+Skift+F       |
-| Aktiver/deaktiver redigeringsmodus                                                                                                                | F2                |
-| Legge ved et dokument                                                                                                               | Ctrl+Skift+A      |
-| Eksporter til Excel                                                                                                                 | Ctrl+Skift+E      |
-| Gå til forrige post (utenfor et rutenett)                                                                                    | Ctrl+Pil opp     |
-| Gå til neste post (utenfor et rutenett)                                                                                        | Ctrl+Pil ned   |
-| Gå til første post (utenfor et rutenett)                                                                                       | Ctrl+Home         |
-| Gå til siste post (utenfor et rutenett)                                                                                        | Ctrl+End          |
-| Åpne navigasjonslisten i Detaljer-skjemaer (eller skift fokus mellom navigasjonslisten og hovedskjemaet hvis det allerede er åpent) | Ctrl+F8           |
-| Lukk navigasjonslisten i Detaljer-skjemaet (med fokus i navigasjonslisten)                                                   | ESC               |
+| <span data-ttu-id="9f7c9-168">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-168">**To do this**</span></span>                                                                                                                  | <span data-ttu-id="9f7c9-169">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-169">**Press**</span></span>         |
+| <span data-ttu-id="9f7c9-170">Opprett en ny post</span><span class="sxs-lookup"><span data-stu-id="9f7c9-170">Create a new record</span></span>                                                                                                             | <span data-ttu-id="9f7c9-171">Alt+N</span><span class="sxs-lookup"><span data-stu-id="9f7c9-171">Alt+N</span></span>             |
+| <span data-ttu-id="9f7c9-172">Slette en post</span><span class="sxs-lookup"><span data-stu-id="9f7c9-172">Delete a record</span></span>                                                                                                                 | <span data-ttu-id="9f7c9-173">Alt+Del eller Alt+F9</span><span class="sxs-lookup"><span data-stu-id="9f7c9-173">Alt+Del or Alt+F9</span></span> |
+| <span data-ttu-id="9f7c9-174">Lagre post</span><span class="sxs-lookup"><span data-stu-id="9f7c9-174">Save record</span></span>                                                                                                                     | <span data-ttu-id="9f7c9-175">Alt+S eller Ctrl+S</span><span class="sxs-lookup"><span data-stu-id="9f7c9-175">Alt+S or Ctrl+S</span></span>   |
+| <span data-ttu-id="9f7c9-176">Tilbakestill (gjenopprett)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-176">Revert (restore)</span></span>                                                                                                                | <span data-ttu-id="9f7c9-177">Ctrl+Skift+F5</span><span class="sxs-lookup"><span data-stu-id="9f7c9-177">Ctrl+Shift+F5</span></span>     |
+| <span data-ttu-id="9f7c9-178">Dataoppdatering</span><span class="sxs-lookup"><span data-stu-id="9f7c9-178">Data refresh</span></span>                                                                                                                    | <span data-ttu-id="9f7c9-179">Skift+F5</span><span class="sxs-lookup"><span data-stu-id="9f7c9-179">Shift+F5</span></span>          |
+| <span data-ttu-id="9f7c9-180">Gå til det første synlige feltet på skjemaet</span><span class="sxs-lookup"><span data-stu-id="9f7c9-180">Move to the visible first field on the form</span></span>                                                                                     | <span data-ttu-id="9f7c9-181">Alt+Skift+F</span><span class="sxs-lookup"><span data-stu-id="9f7c9-181">Alt+Shift+F</span></span>       |
+| <span data-ttu-id="9f7c9-182">Aktiver/deaktiver redigeringsmodus</span><span class="sxs-lookup"><span data-stu-id="9f7c9-182">Toggle edit mode</span></span>                                                                                                                | <span data-ttu-id="9f7c9-183">F2</span><span class="sxs-lookup"><span data-stu-id="9f7c9-183">F2</span></span>                |
+| <span data-ttu-id="9f7c9-184">Legge ved et dokument</span><span class="sxs-lookup"><span data-stu-id="9f7c9-184">Attach a document</span></span>                                                                                                               | <span data-ttu-id="9f7c9-185">Ctrl+Skift+A</span><span class="sxs-lookup"><span data-stu-id="9f7c9-185">Ctrl+Shift+A</span></span>      |
+| <span data-ttu-id="9f7c9-186">Eksporter til Excel</span><span class="sxs-lookup"><span data-stu-id="9f7c9-186">Export to Excel</span></span>                                                                                                                 | <span data-ttu-id="9f7c9-187">Ctrl+Skift+E</span><span class="sxs-lookup"><span data-stu-id="9f7c9-187">Ctrl+Shift+E</span></span>      |
+| <span data-ttu-id="9f7c9-188">Gå til forrige post (utenfor et rutenett)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-188">Move to the previous record (outside a grid)</span></span>                                                                                    | <span data-ttu-id="9f7c9-189">Ctrl+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-189">Ctrl+Up Arrow</span></span>     |
+| <span data-ttu-id="9f7c9-190">Gå til neste post (utenfor et rutenett)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-190">Move to the next record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="9f7c9-191">Ctrl+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-191">Ctrl+Down Arrow</span></span>   |
+| <span data-ttu-id="9f7c9-192">Gå til første post (utenfor et rutenett)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-192">Move to the first record (outside a grid)</span></span>                                                                                       | <span data-ttu-id="9f7c9-193">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="9f7c9-193">Ctrl+Home</span></span>         |
+| <span data-ttu-id="9f7c9-194">Gå til siste post (utenfor et rutenett)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-194">Move to the last record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="9f7c9-195">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="9f7c9-195">Ctrl+End</span></span>          |
+| <span data-ttu-id="9f7c9-196">Åpne navigasjonslisten i Detaljer-skjemaer (eller skift fokus mellom navigasjonslisten og hovedskjemaet hvis det allerede er åpent)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-196">Open the navigation list on Details forms (or switch focus between the navigation list and the main form if it is already open)</span></span> | <span data-ttu-id="9f7c9-197">Ctrl+F8</span><span class="sxs-lookup"><span data-stu-id="9f7c9-197">Ctrl+F8</span></span>           |
+| <span data-ttu-id="9f7c9-198">Lukk navigasjonslisten i Detaljer-skjemaet (med fokus i navigasjonslisten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-198">Close the navigation list on Details form (with focus in the navigation list)</span></span>                                                   | <span data-ttu-id="9f7c9-199">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-199">Esc</span></span>               |
 
  
 
-## <a name="form-navigation-shortcuts"></a>Snarveier for skjemanavigasjon
+## <a name="form-navigation-shortcuts"></a><span data-ttu-id="9f7c9-200">Snarveier for skjemanavigasjon</span><span class="sxs-lookup"><span data-stu-id="9f7c9-200">Form navigation shortcuts</span></span>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
-| **Hvis du vil gjøre dette**                                      | **Trykk**                                    |
-| Gå til neste/forrige felt                     | Tab / Skift+Tab                              |
-| Gå til neste/forrige kategori                       | Alt+Skift+Høyrepil / Alt+Skift+Venstrepil |
-| Gå til neste/forrige hurtigkategori                   | Alt+Skift+Pil ned / Alt+Skift+Pil opp    |
-| Gå til &lt;n&gt;. hurtigkategori                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Gå til &lt;n&gt;. kategori                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
-| Utvid en hurtigkategori (med fokus på hurtigkategorihodet) | Mellomrom eller Enter                               |
-| Skjul gjeldende hurtigkategori                        | Alt+0                                        |
-| Bytt til rutenettvisning                                 | Ctrl+Skift+G                                 |
-| Bytt til detaljvisning                              | Ctrl+Skift+D                                 |
-| Bytt til hodevisning                               | Ctrl+Skift+H                                 |
-| Bytt til linjevisning                                | Ctrl+Skift+L                                 |
-| Lukk skjemaet (klikk Tilbake)                         | ESC                                          |
-| Lukk skjemaet med eksplisitt lagring                   | Skift+Esc                                    |
-| Lukk skjemaet og forkast eventuelle ulagrede endringer       | Alt+Skift+Q                                  |
+| <span data-ttu-id="9f7c9-201">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-201">**To do this**</span></span>                                      | <span data-ttu-id="9f7c9-202">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-202">**Press**</span></span>                                    |
+| <span data-ttu-id="9f7c9-203">Gå til neste/forrige felt</span><span class="sxs-lookup"><span data-stu-id="9f7c9-203">Move to the next/previous field</span></span>                     | <span data-ttu-id="9f7c9-204">Tab / Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-204">Tab / Shift+Tab</span></span>                              |
+| <span data-ttu-id="9f7c9-205">Gå til neste/forrige kategori</span><span class="sxs-lookup"><span data-stu-id="9f7c9-205">Move to the next/previous tab</span></span>                       | <span data-ttu-id="9f7c9-206">Alt+Skift+Høyrepil / Alt+Skift+Venstrepil</span><span class="sxs-lookup"><span data-stu-id="9f7c9-206">Alt+Shift+Right Arrow / Alt+Shift+Left Arrow</span></span> |
+| <span data-ttu-id="9f7c9-207">Gå til neste/forrige hurtigkategori</span><span class="sxs-lookup"><span data-stu-id="9f7c9-207">Move to the next/previous FastTab</span></span>                   | <span data-ttu-id="9f7c9-208">Alt+Skift+Pil ned / Alt+Skift+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-208">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span>    |
+| <span data-ttu-id="9f7c9-209">Gå til &lt;n&gt;. hurtigkategori</span><span class="sxs-lookup"><span data-stu-id="9f7c9-209">Move to the &lt;n&gt;th FastTab</span></span>                     | <span data-ttu-id="9f7c9-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>              |
+| <span data-ttu-id="9f7c9-211">Gå til &lt;n&gt;. kategori</span><span class="sxs-lookup"><span data-stu-id="9f7c9-211">Move to the &lt;n&gt;th tab</span></span>                         | <span data-ttu-id="9f7c9-212">Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>        |
+| <span data-ttu-id="9f7c9-213">Utvid en hurtigkategori (med fokus på hurtigkategorihodet)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-213">Expand a FastTab (with focus on the FastTab header)</span></span> | <span data-ttu-id="9f7c9-214">Mellomrom eller Enter</span><span class="sxs-lookup"><span data-stu-id="9f7c9-214">Space or Enter</span></span>                               |
+| <span data-ttu-id="9f7c9-215">Skjul gjeldende hurtigkategori</span><span class="sxs-lookup"><span data-stu-id="9f7c9-215">Collapse the current FastTab</span></span>                        | <span data-ttu-id="9f7c9-216">Alt+0</span><span class="sxs-lookup"><span data-stu-id="9f7c9-216">Alt+0</span></span>                                        |
+| <span data-ttu-id="9f7c9-217">Bytt til rutenettvisning</span><span class="sxs-lookup"><span data-stu-id="9f7c9-217">Switch to grid view</span></span>                                 | <span data-ttu-id="9f7c9-218">Ctrl+Skift+G</span><span class="sxs-lookup"><span data-stu-id="9f7c9-218">Ctrl+Shift+G</span></span>                                 |
+| <span data-ttu-id="9f7c9-219">Bytt til detaljvisning</span><span class="sxs-lookup"><span data-stu-id="9f7c9-219">Switch to details view</span></span>                              | <span data-ttu-id="9f7c9-220">Ctrl+Skift+D</span><span class="sxs-lookup"><span data-stu-id="9f7c9-220">Ctrl+Shift+D</span></span>                                 |
+| <span data-ttu-id="9f7c9-221">Bytt til hodevisning</span><span class="sxs-lookup"><span data-stu-id="9f7c9-221">Switch to header view</span></span>                               | <span data-ttu-id="9f7c9-222">Ctrl+Skift+H</span><span class="sxs-lookup"><span data-stu-id="9f7c9-222">Ctrl+Shift+H</span></span>                                 |
+| <span data-ttu-id="9f7c9-223">Bytt til linjevisning</span><span class="sxs-lookup"><span data-stu-id="9f7c9-223">Switch to lines view</span></span>                                | <span data-ttu-id="9f7c9-224">Ctrl+Skift+L</span><span class="sxs-lookup"><span data-stu-id="9f7c9-224">Ctrl+Shift+L</span></span>                                 |
+| <span data-ttu-id="9f7c9-225">Lukk skjemaet (klikk Tilbake)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-225">Close the form (click Back)</span></span>                         | <span data-ttu-id="9f7c9-226">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-226">Esc</span></span>                                          |
+| <span data-ttu-id="9f7c9-227">Lukk skjemaet med eksplisitt lagring</span><span class="sxs-lookup"><span data-stu-id="9f7c9-227">Close the form with explicit save</span></span>                   | <span data-ttu-id="9f7c9-228">Skift+Esc</span><span class="sxs-lookup"><span data-stu-id="9f7c9-228">Shift+Esc</span></span>                                    |
+| <span data-ttu-id="9f7c9-229">Lukk skjemaet og forkast eventuelle ulagrede endringer</span><span class="sxs-lookup"><span data-stu-id="9f7c9-229">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="9f7c9-230">Alt+Skift+Q</span><span class="sxs-lookup"><span data-stu-id="9f7c9-230">Alt+Shift+Q</span></span>                                  |
 
  
 
-## <a name="grid-shortcuts"></a>Rutenettsnarveier
+## <a name="grid-shortcuts"></a><span data-ttu-id="9f7c9-231">Rutenettsnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-231">Grid shortcuts</span></span>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Hvis du vil gjøre dette**                                                                                                | **Trykk**                       |
-| Gå til neste/forrige kolonne                                                                              | Tab / Skift+Tab                 |
-| Gå til neste/forrige rad                                                                                 | Pil ned / Pil opp           |
-| Gå til neste/forrige rad uten å velge (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.) | Ctrl+Pil opp / Ctrl+Pil ned |
-| Merk / fjern avmerking for gjeldende rad (Obs!   Denne snarveien gjelder bare ved flervalgsscenarier.)                    | Ctrl+mellomrom / Ctrl+klikk         |
-| Legg til neste/forrige rad i det valgte settet (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.)   | Skift+mellomrom                     |
-| Legg til en rekke rader i det valgte settet (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.)         | Skift+klikk                     |
-| Gå til neste/forrige side med data                                                                          | PgUp / PgDn             |
-| Opprett en ny rad nederst i rutenettet                                                                    | Pil ned (fra den siste raden)  |
-| Merk av eller fjern avmerking for alle rader                                                                                      | Ctrl+Skift+M                    |
-| Gå til den første posten                                                                                      | Ctrl+Home                       |
-| Gå til den siste posten                                                                                       | Ctrl+End                        |
+| <span data-ttu-id="9f7c9-232">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-232">**To do this**</span></span>                                                                                                | <span data-ttu-id="9f7c9-233">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-233">**Press**</span></span>                       |
+| <span data-ttu-id="9f7c9-234">Gå til neste/forrige kolonne</span><span class="sxs-lookup"><span data-stu-id="9f7c9-234">Move to the next/previous column</span></span>                                                                              | <span data-ttu-id="9f7c9-235">Tab / Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-235">Tab / Shift+Tab</span></span>                 |
+| <span data-ttu-id="9f7c9-236">Gå til neste/forrige rad</span><span class="sxs-lookup"><span data-stu-id="9f7c9-236">Move to the next/previous row</span></span>                                                                                 | <span data-ttu-id="9f7c9-237">Pil ned / Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-237">Down Arrow / Up Arrow</span></span>           |
+| <span data-ttu-id="9f7c9-238">Gå til neste/forrige rad uten å velge (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-238">Move to the next/previous row without selecting (Note: This shortcut applies to multi-select scenarios only.)</span></span> | <span data-ttu-id="9f7c9-239">Ctrl+Pil opp / Ctrl+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-239">Ctrl+Up Arrow / Ctrl+Down Arrow</span></span> |
+| <span data-ttu-id="9f7c9-240">Merk / fjern avmerking for gjeldende rad (Obs!   Denne snarveien gjelder bare ved flervalgsscenarier.)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-240">Select/clear the current row (Note: This shortcut applies to multi-select scenarios only.)</span></span>                    | <span data-ttu-id="9f7c9-241">Ctrl+mellomrom / Ctrl+klikk</span><span class="sxs-lookup"><span data-stu-id="9f7c9-241">Ctrl+Space / Ctrl+Click</span></span>         |
+| <span data-ttu-id="9f7c9-242">Legg til neste/forrige rad i det valgte settet (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-242">Add the next/previous row to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>   | <span data-ttu-id="9f7c9-243">Skift+mellomrom</span><span class="sxs-lookup"><span data-stu-id="9f7c9-243">Shift+Space</span></span>                     |
+| <span data-ttu-id="9f7c9-244">Legg til en rekke rader i det valgte settet (Obs!  Denne snarveien gjelder bare ved flervalgsscenarier.)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-244">Add a range of rows to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>         | <span data-ttu-id="9f7c9-245">Skift+klikk</span><span class="sxs-lookup"><span data-stu-id="9f7c9-245">Shift+Click</span></span>                     |
+| <span data-ttu-id="9f7c9-246">Gå til neste/forrige side med data</span><span class="sxs-lookup"><span data-stu-id="9f7c9-246">Go to the next/previous page of data</span></span>                                                                          | <span data-ttu-id="9f7c9-247">PgUp / PgDn</span><span class="sxs-lookup"><span data-stu-id="9f7c9-247">Page Up / Page Down</span></span>             |
+| <span data-ttu-id="9f7c9-248">Opprett en ny rad nederst i rutenettet</span><span class="sxs-lookup"><span data-stu-id="9f7c9-248">Create a new row at the bottom of the grid</span></span>                                                                    | <span data-ttu-id="9f7c9-249">Pil ned (fra den siste raden)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-249">Down Arrow (from the last row)</span></span>  |
+| <span data-ttu-id="9f7c9-250">Merk av eller fjern avmerking for alle rader</span><span class="sxs-lookup"><span data-stu-id="9f7c9-250">Select or clear all rows</span></span>                                                                                      | <span data-ttu-id="9f7c9-251">Ctrl+Skift+M</span><span class="sxs-lookup"><span data-stu-id="9f7c9-251">Ctrl+Shift+M</span></span>                    |
+| <span data-ttu-id="9f7c9-252">Gå til den første posten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-252">Move to the first record</span></span>                                                                                      | <span data-ttu-id="9f7c9-253">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="9f7c9-253">Ctrl+Home</span></span>                       |
+| <span data-ttu-id="9f7c9-254">Gå til den siste posten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-254">Move to the last record</span></span>                                                                                       | <span data-ttu-id="9f7c9-255">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="9f7c9-255">Ctrl+End</span></span>                        |
 
  
 
-## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
+## <a name="input-control-shortcuts"></a><span data-ttu-id="9f7c9-256">Snarveier for inndatakontroller</span><span class="sxs-lookup"><span data-stu-id="9f7c9-256">Input control shortcuts</span></span>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
-| **Hvis du vil gjøre dette**                                             | **Trykk**                     |
-| Angi øktdatoen i et datofelt                     | D+Tab                         |
-| Angi gjeldende dato i et datofelt                     | T+Tab                         |
-| Åpne oppslag, kombinasjonsboks, datovelger, nedtrekksdialog           | Alt+Pil ned                |
-| Lukk oppslag, kombinasjonsboks, datovelger, nedtrekksdialog          | ESC                           |
-| Flytt fokus til et oppslag (når oppslaget allerede er åpent) | Alt+Pil ned                |
-| Åpne kontrollens forbedrede forhåndsvisning                        | Alt+Pil opp                  |
-| Merk tekst i gjeldende felt                           | Ctrl+A                        |
-| Gå til / forlat tekstområdet i en HTML-redigeringskontroll        | Alt+Pil ned / Alt+Pil opp |
+| <span data-ttu-id="9f7c9-257">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-257">**To do this**</span></span>                                             | <span data-ttu-id="9f7c9-258">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-258">**Press**</span></span>                     |
+| <span data-ttu-id="9f7c9-259">Angi øktdatoen i et datofelt</span><span class="sxs-lookup"><span data-stu-id="9f7c9-259">Enter the session date in a date field</span></span>                     | <span data-ttu-id="9f7c9-260">D+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-260">D+Tab</span></span>                         |
+| <span data-ttu-id="9f7c9-261">Angi gjeldende dato i et datofelt</span><span class="sxs-lookup"><span data-stu-id="9f7c9-261">Enter the current date in a date field</span></span>                     | <span data-ttu-id="9f7c9-262">T+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-262">T+Tab</span></span>                         |
+| <span data-ttu-id="9f7c9-263">Åpne oppslag, kombinasjonsboks, datovelger, nedtrekksdialog</span><span class="sxs-lookup"><span data-stu-id="9f7c9-263">Open lookup, combo box, date picker, drop dialog</span></span>           | <span data-ttu-id="9f7c9-264">Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-264">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="9f7c9-265">Lukk oppslag, kombinasjonsboks, datovelger, nedtrekksdialog</span><span class="sxs-lookup"><span data-stu-id="9f7c9-265">Close lookup, combo box, date picker, drop dialog</span></span>          | <span data-ttu-id="9f7c9-266">ESC</span><span class="sxs-lookup"><span data-stu-id="9f7c9-266">Esc</span></span>                           |
+| <span data-ttu-id="9f7c9-267">Flytt fokus til et oppslag (når oppslaget allerede er åpent)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-267">Move focus into a lookup (when the lookup is already open)</span></span> | <span data-ttu-id="9f7c9-268">Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-268">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="9f7c9-269">Åpne kontrollens forbedrede forhåndsvisning</span><span class="sxs-lookup"><span data-stu-id="9f7c9-269">Open the control's enhanced preview</span></span>                        | <span data-ttu-id="9f7c9-270">Alt+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-270">Alt+Up Arrow</span></span>                  |
+| <span data-ttu-id="9f7c9-271">Merk tekst i gjeldende felt</span><span class="sxs-lookup"><span data-stu-id="9f7c9-271">Select text in the current field</span></span>                           | <span data-ttu-id="9f7c9-272">Ctrl+A</span><span class="sxs-lookup"><span data-stu-id="9f7c9-272">Ctrl+A</span></span>                        |
+| <span data-ttu-id="9f7c9-273">Gå til / forlat tekstområdet i en HTML-redigeringskontroll</span><span class="sxs-lookup"><span data-stu-id="9f7c9-273">Enter/leave the text area in an HTML editor control</span></span>        | <span data-ttu-id="9f7c9-274">Alt+Pil ned / Alt+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-274">Alt+Down Arrow / Alt+Up Arrow</span></span> |
 
  
 
-## <a name="messaging-shortcuts"></a>Meldingssnarveier
+## <a name="messaging-shortcuts"></a><span data-ttu-id="9f7c9-275">Meldingssnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-275">Messaging shortcuts</span></span>
 |                          |               |
 |--------------------------|---------------|
-| **Hvis du vil gjøre dette**           | **Trykk**     |
-| Gå til meldingssentret | Ctrl+Skift+F7 |
-| Gå til meldingslinjen    | Ctrl+F7       |
+| <span data-ttu-id="9f7c9-276">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-276">**To do this**</span></span>           | <span data-ttu-id="9f7c9-277">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-277">**Press**</span></span>     |
+| <span data-ttu-id="9f7c9-278">Gå til meldingssentret</span><span class="sxs-lookup"><span data-stu-id="9f7c9-278">Go to the Message Center</span></span> | <span data-ttu-id="9f7c9-279">Ctrl+Skift+F7</span><span class="sxs-lookup"><span data-stu-id="9f7c9-279">Ctrl+Shift+F7</span></span> |
+| <span data-ttu-id="9f7c9-280">Gå til meldingslinjen</span><span class="sxs-lookup"><span data-stu-id="9f7c9-280">Go to the Message Bar</span></span>    | <span data-ttu-id="9f7c9-281">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="9f7c9-281">Ctrl+F7</span></span>       |
 
  
 
-## <a name="navigation-shortcuts"></a>Navigasjonssnarveier
+## <a name="navigation-shortcuts"></a><span data-ttu-id="9f7c9-282">Navigasjonssnarveier</span><span class="sxs-lookup"><span data-stu-id="9f7c9-282">Navigation shortcuts</span></span>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
-| **Hvis du vil gjøre dette**                                                            | **Trykk**       |
-| Gå til skrivebordet                                                       | Alt+Skift+Home  |
-| Gå til navigasjonsfeltet                                                  | Alt+Skift+F1    |
-| Gå til navigasjonsruten                                                 | Alt+F1          |
-| Angi/fjerne et skjema som favoritt (med fokus på et skjema i navigasjonsruten) | Skift+F         |
-| Gå til firmavelgeren                                                  | Ctrl+Skift+O    |
-| Gå til navigasjonssøk                                                   | Ctrl+/ eller Alt+G |
-| Åpne hjelperuten                                                        | Ctrl+?          |
-| Åpne Trace Parser                                                     | Alt+Skift+T     |
+| <span data-ttu-id="9f7c9-283">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-283">**To do this**</span></span>                                                            | <span data-ttu-id="9f7c9-284">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-284">**Press**</span></span>       |
+| <span data-ttu-id="9f7c9-285">Gå til skrivebordet</span><span class="sxs-lookup"><span data-stu-id="9f7c9-285">Go to the dashboard</span></span>                                                       | <span data-ttu-id="9f7c9-286">Alt+Skift+Home</span><span class="sxs-lookup"><span data-stu-id="9f7c9-286">Alt+Shift+Home</span></span>  |
+| <span data-ttu-id="9f7c9-287">Gå til navigasjonsfeltet</span><span class="sxs-lookup"><span data-stu-id="9f7c9-287">Go to the navigation bar</span></span>                                                  | <span data-ttu-id="9f7c9-288">Alt+Skift+F1</span><span class="sxs-lookup"><span data-stu-id="9f7c9-288">Alt+Shift+F1</span></span>    |
+| <span data-ttu-id="9f7c9-289">Gå til navigasjonsruten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-289">Go to the navigation pane</span></span>                                                 | <span data-ttu-id="9f7c9-290">Alt+F1</span><span class="sxs-lookup"><span data-stu-id="9f7c9-290">Alt+F1</span></span>          |
+| <span data-ttu-id="9f7c9-291">Angi/fjerne et skjema som favoritt (med fokus på et skjema i navigasjonsruten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-291">Favorite/un-favorite a form (with focus on a form in the navigation pane)</span></span> | <span data-ttu-id="9f7c9-292">Skift+F</span><span class="sxs-lookup"><span data-stu-id="9f7c9-292">Shift+F</span></span>         |
+| <span data-ttu-id="9f7c9-293">Gå til firmavelgeren</span><span class="sxs-lookup"><span data-stu-id="9f7c9-293">Go to the company picker</span></span>                                                  | <span data-ttu-id="9f7c9-294">Ctrl+Skift+O</span><span class="sxs-lookup"><span data-stu-id="9f7c9-294">Ctrl+Shift+O</span></span>    |
+| <span data-ttu-id="9f7c9-295">Gå til navigasjonssøk</span><span class="sxs-lookup"><span data-stu-id="9f7c9-295">Go to navigation search</span></span>                                                   | <span data-ttu-id="9f7c9-296">Ctrl+/ eller Alt+G</span><span class="sxs-lookup"><span data-stu-id="9f7c9-296">Ctrl+/ or Alt+G</span></span> |
+| <span data-ttu-id="9f7c9-297">Åpne hjelperuten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-297">Open the help pane</span></span>                                                        | <span data-ttu-id="9f7c9-298">Ctrl+?</span><span class="sxs-lookup"><span data-stu-id="9f7c9-298">Ctrl+?</span></span>          |
+| <span data-ttu-id="9f7c9-299">Åpne Trace Parser</span><span class="sxs-lookup"><span data-stu-id="9f7c9-299">Open the trace parser</span></span>                                                     | <span data-ttu-id="9f7c9-300">Alt+Skift+T</span><span class="sxs-lookup"><span data-stu-id="9f7c9-300">Alt+Shift+T</span></span>     |
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Snarveier for segmenterte oppføringer
+## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="9f7c9-301">Snarveier for segmenterte oppføringer</span><span class="sxs-lookup"><span data-stu-id="9f7c9-301">Segmented entry shortcuts</span></span>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Slik gjør du det**                                                                                                          | **Trykk**                        |
-| Åpne rullegardinlisten (når rullegardinlisten er lukket)                                                             | Alt+Pil ned                   |
-| Flytt fokus til inndatafeltet for det gjeldende segmentet i rullegardinlisten (når rullegardinlisten allerede er åpen) | Alt+Pil ned                   |
-| Lukk rullegardinlisten                                                                                                | Alt+Pil opp                     |
-| Lukk/åpne høyre del av rullegardinlisten                                                                      | Alt+Venstrepil / Alt+Høyrepil |
-| Veksle mellom Vis gyldig- og Vis alle-modusen                                                                        | Alt+W                            |
-| Velg verdien fra rullegardinlisten og gå til neste segment                                                       | Angi                            |
-| Gå til neste/forrige kontroll på siden (når fokus er på inndatakontroll)                                          | Tab / Skift+Tab                  |
-| Gå til neste/forrige inndatafelt på undermenyen (når fokus er i rullegardinlisten)                               | Tab / Skift+Tab                  |
-| Gå opp/ned en rad i oppslaget                                                                                        | Pil opp / Pil ned            |
-| Gå opp/ned en side i oppslaget                                                                                       | PgUp / PgDn              |
-| Gå til toppen/bunnen av oppslaget                                                                                    | Home / End                       |
+| <span data-ttu-id="9f7c9-302">**Slik gjør du det**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-302">**To do this**</span></span>                                                                                                          | <span data-ttu-id="9f7c9-303">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="9f7c9-303">**Press**</span></span>                        |
+| <span data-ttu-id="9f7c9-304">Åpne rullegardinlisten (når rullegardinlisten er lukket)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-304">Open the drop-down list (when the drop-down list is closed)</span></span>                                                             | <span data-ttu-id="9f7c9-305">Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-305">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="9f7c9-306">Flytt fokus til inndatafeltet for det gjeldende segmentet i rullegardinlisten (når rullegardinlisten allerede er åpen)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-306">Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open)</span></span> | <span data-ttu-id="9f7c9-307">Alt+Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-307">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="9f7c9-308">Lukk rullegardinlisten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-308">Close the drop-down list</span></span>                                                                                                | <span data-ttu-id="9f7c9-309">Alt+Pil opp</span><span class="sxs-lookup"><span data-stu-id="9f7c9-309">Alt+Up Arrow</span></span>                     |
+| <span data-ttu-id="9f7c9-310">Lukk/åpne høyre del av rullegardinlisten</span><span class="sxs-lookup"><span data-stu-id="9f7c9-310">Close/open the right portion of the drop-down list</span></span>                                                                      | <span data-ttu-id="9f7c9-311">Alt+Venstrepil / Alt+Høyrepil</span><span class="sxs-lookup"><span data-stu-id="9f7c9-311">Alt+Left Arrow / Alt+Right Arrow</span></span> |
+| <span data-ttu-id="9f7c9-312">Veksle mellom Vis gyldig- og Vis alle-modusen</span><span class="sxs-lookup"><span data-stu-id="9f7c9-312">Toggle between “Show valid” and “Show all” modes</span></span>                                                                        | <span data-ttu-id="9f7c9-313">Alt+W</span><span class="sxs-lookup"><span data-stu-id="9f7c9-313">Alt+W</span></span>                            |
+| <span data-ttu-id="9f7c9-314">Velg verdien fra rullegardinlisten og gå til neste segment</span><span class="sxs-lookup"><span data-stu-id="9f7c9-314">Select the value from drop-down list and move to the next segment</span></span>                                                       | <span data-ttu-id="9f7c9-315">Angi</span><span class="sxs-lookup"><span data-stu-id="9f7c9-315">Enter</span></span>                            |
+| <span data-ttu-id="9f7c9-316">Gå til neste/forrige kontroll på siden (når fokus er på inndatakontroll)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-316">Move to the next/previous control on the page (when focus is in input control)</span></span>                                          | <span data-ttu-id="9f7c9-317">Tab / Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-317">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="9f7c9-318">Gå til neste/forrige inndatafelt på undermenyen (når fokus er i rullegardinlisten)</span><span class="sxs-lookup"><span data-stu-id="9f7c9-318">Move to the next/previous input field in the flyout (when focus is in the drop-down list)</span></span>                               | <span data-ttu-id="9f7c9-319">Tab / Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="9f7c9-319">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="9f7c9-320">Gå opp/ned en rad i oppslaget</span><span class="sxs-lookup"><span data-stu-id="9f7c9-320">Move up/down a row in the lookup</span></span>                                                                                        | <span data-ttu-id="9f7c9-321">Pil opp / Pil ned</span><span class="sxs-lookup"><span data-stu-id="9f7c9-321">Up Arrow / Down Arrow</span></span>            |
+| <span data-ttu-id="9f7c9-322">Gå opp/ned en side i oppslaget</span><span class="sxs-lookup"><span data-stu-id="9f7c9-322">Move up/down a page in the lookup</span></span>                                                                                       | <span data-ttu-id="9f7c9-323">PgUp / PgDn</span><span class="sxs-lookup"><span data-stu-id="9f7c9-323">Page Up / Page Down</span></span>              |
+| <span data-ttu-id="9f7c9-324">Gå til toppen/bunnen av oppslaget</span><span class="sxs-lookup"><span data-stu-id="9f7c9-324">Move to the top/bottom of the lookup</span></span>                                                                                    | <span data-ttu-id="9f7c9-325">Home / End</span><span class="sxs-lookup"><span data-stu-id="9f7c9-325">Home / End</span></span>                       |
 
  
 

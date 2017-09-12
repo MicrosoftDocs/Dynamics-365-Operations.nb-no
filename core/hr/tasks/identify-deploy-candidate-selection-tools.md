@@ -16,45 +16,45 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: b8cd90385a6dda6ab1e9086c040783b99b9623f4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="identify-and-deploy-candidate-selection-tools"></a>Identifisere og distribuere verktøy for kandidatvalg
+# <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="3b0ed-103">Identifisere og distribuere verktøy for kandidatvalg</span><span class="sxs-lookup"><span data-stu-id="3b0ed-103">Identify and deploy candidate selection tools</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter.  Kandidater med ferdighetene du trenger, kan imidlertid allerede være ansatt i organisasjonen. Du kan søke etter en bestemt kvalifikasjon blant eksisterende ansatte eller nye søkere. Dette gjør at en rekrutterer raskt kan samle og sile søkere som har søkt en ledig stillig nå eller tidligere, eller finne potensielle kandidater fra det eksisterende utvalget av ansatte. Bruk denne oppgaveregistreringen for å lære hvordan funksjonen for kompetansesøk kan hjelpe deg med å finne riktig person for en ledig stilling. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="3b0ed-104">Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="3b0ed-105">Kandidater med ferdighetene du trenger, kan imidlertid allerede være ansatt i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="3b0ed-106">Du kan søke etter en bestemt kvalifikasjon blant eksisterende ansatte eller nye søkere.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="3b0ed-107">Dette gjør at en rekrutterer raskt kan samle og sile søkere som har søkt en ledig stillig nå eller tidligere, eller finne potensielle kandidater fra det eksisterende utvalget av ansatte.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="3b0ed-108">Bruk denne oppgaveregistreringen for å lære hvordan funksjonen for kompetansesøk kan hjelpe deg med å finne riktig person for en ledig stilling.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="3b0ed-109">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-109">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå til Personale > Kompetanser > Kompetanseanalyse > Profiler for kompetansesøk.
-2. Klikk Ny.
-3. I feltet Kompetansesøk kan du angi et navn for kompetansesøket.  Eksempel: Regnskapsfører.
-4. I Beskrivelse-feltet angir du en beskrivelse av kompetansesøket.
-5. Angi en dato i Dato-feltet.
-6. Klikk Hent profil.
-    * Bruk Hent profil for å trekke ut sertifikat-, kompetanse- og utdanningsdata fra en valgt person, jobb eller kurs som grunnlag for søket.   Du kan deretter legge til eller fjerne kriterier, angi om kriteriene er valgfrie og rangere viktigheten av kriteriene.  
-7. Klikk Jobb.
-8. Angi eller velg en verdi i Jobb-feltet.
-9. Klikk OK.
-10. Vis hurtigkategorien for område, og legg til eventuell tilleggsinformasjon, for eksempel avdeling.
-11. Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene.
-12. Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen.
-13. Vis hurtigkategorien Utdanning for å vise eller redigere utdanningskriteriene.
-14. Klikk Utfør.
-15. Klikk OK.
-16. Klikk Resultat.
-17. Klikk Resultat.
-18. Klikk Fortsett.
-19. Klikk Sertifikater.
-    * Du kan drille ned til hver person som er oppført, og se detaljer angående utdannelse, ferdigheter, yrkeserfaring osv.  
-20. Lukk siden.
-21. Lukk siden.
-22. Velg resultatet på nytt.
-23. Klikk Rapport.
-    * Rapporten viser de beste forslagene øverst i rapporten.  Du kan se at det vises et gapelement.  Dette er forskjellen mellom nivået som er oppført i kompetansesøket, og kompetansenivået som er tilordnet til personen.  
-24. Lukk siden.
-25. Klikk Lagre.
+1. <span data-ttu-id="3b0ed-110">Gå til Personale > Kompetanser > Kompetanseanalyse > Profiler for kompetansesøk.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-110">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="3b0ed-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-111">Click New.</span></span>
+3. <span data-ttu-id="3b0ed-112">I feltet Kompetansesøk kan du angi et navn for kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-112">In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="3b0ed-113">Eksempel: Regnskapsfører.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-113">Example: Accountant.</span></span>
+4. <span data-ttu-id="3b0ed-114">I Beskrivelse-feltet angir du en beskrivelse av kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-114">In the Description field, enter a description of the skill mapping..</span></span>
+5. <span data-ttu-id="3b0ed-115">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-115">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="3b0ed-116">Klikk Hent profil.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-116">Click Retrieve profile.</span></span>
+    * <span data-ttu-id="3b0ed-117">Bruk Hent profil for å trekke ut sertifikat-, kompetanse- og utdanningsdata fra en valgt person, jobb eller kurs som grunnlag for søket.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-117">Use Retrieve profile to pull in the Certificate, Skill, and Education data from a selected Person, Job or Course as the basis for your search.</span></span>   <span data-ttu-id="3b0ed-118">Du kan deretter legge til eller fjerne kriterier, angi om kriteriene er valgfrie og rangere viktigheten av kriteriene.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-118">You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.</span></span>  
+7. <span data-ttu-id="3b0ed-119">Klikk Jobb.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-119">Click Job.</span></span>
+8. <span data-ttu-id="3b0ed-120">Angi eller velg en verdi i Jobb-feltet.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-120">In the Job field, enter or select a value.</span></span>
+9. <span data-ttu-id="3b0ed-121">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-121">Click OK.</span></span>
+10. <span data-ttu-id="3b0ed-122">Vis hurtigkategorien for område, og legg til eventuell tilleggsinformasjon, for eksempel avdeling.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-122">Expand the range fast tab, and add any additional information, such as department.</span></span>
+11. <span data-ttu-id="3b0ed-123">Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-123">Expand the certificates fast tab to view or edit the certificates.</span></span>
+12. <span data-ttu-id="3b0ed-124">Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-124">Expand the Skills fast tab to view or edit the skills.</span></span>
+13. <span data-ttu-id="3b0ed-125">Vis hurtigkategorien Utdanning for å vise eller redigere utdanningskriteriene.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-125">Expand the Education fast tab to view or edit the education criteria.</span></span>
+14. <span data-ttu-id="3b0ed-126">Klikk Utfør.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-126">Click Execute.</span></span>
+15. <span data-ttu-id="3b0ed-127">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-127">Click OK.</span></span>
+16. <span data-ttu-id="3b0ed-128">Klikk Resultat.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-128">Click Result.</span></span>
+17. <span data-ttu-id="3b0ed-129">Klikk Resultat.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-129">Click Result.</span></span>
+18. <span data-ttu-id="3b0ed-130">Klikk Fortsett.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-130">Click Resume.</span></span>
+19. <span data-ttu-id="3b0ed-131">Klikk Sertifikater.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-131">Click Certificates.</span></span>
+    * <span data-ttu-id="3b0ed-132">Du kan drille ned til hver person som er oppført, og se detaljer angående utdannelse, ferdigheter, yrkeserfaring osv.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-132">You can drill further into each person listed and see details regarding their education, skills, professional experience etc.</span></span>  
+20. <span data-ttu-id="3b0ed-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-133">Close the page.</span></span>
+21. <span data-ttu-id="3b0ed-134">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-134">Close the page.</span></span>
+22. <span data-ttu-id="3b0ed-135">Velg resultatet på nytt.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-135">Select result again.</span></span>
+23. <span data-ttu-id="3b0ed-136">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-136">Click Report.</span></span>
+    * <span data-ttu-id="3b0ed-137">Rapporten viser de beste forslagene øverst i rapporten.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-137">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="3b0ed-138">Du kan se at det vises et gapelement.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-138">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="3b0ed-139">Dette er forskjellen mellom nivået som er oppført i kompetansesøket, og kompetansenivået som er tilordnet til personen.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-139">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
+24. <span data-ttu-id="3b0ed-140">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-140">Close the page.</span></span>
+25. <span data-ttu-id="3b0ed-141">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3b0ed-141">Click Save.</span></span>
 
 

@@ -27,98 +27,98 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="synchronize-products-from-finance-and-operations-to-products-in-sales"></a>Synkronisere produkter fra Finance and Operations til produkter i Sales
+# <a name="synchronize-products-from-finance-and-operations-to-products-in-sales"></a><span data-ttu-id="2f01d-103">Synkronisere produkter fra Finance and Operations til produkter i Sales</span><span class="sxs-lookup"><span data-stu-id="2f01d-103">Synchronize products from Finance and Operations to products in Sales</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> Før du kan bruke kundeemnet til kontanter løsning, ha kjennskap til [Dynamics 365 dataintegrering](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration). 
+> <span data-ttu-id="2f01d-104">Før du kan bruke kundeemnet til kontanter løsning, ha kjennskap til [Dynamics 365 dataintegrering](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).</span><span class="sxs-lookup"><span data-stu-id="2f01d-104">Before you can use the Prospect to cash solution, be familiar with [Dynamics 365 Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).</span></span> 
 
-Dette emnet beskriver malene og underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition til Microsoft Dynamics 365 for Sales.
+<span data-ttu-id="2f01d-105">Dette emnet beskriver malene og underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition til Microsoft Dynamics 365 for Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-105">This topic discusses the templates and underlying tasks that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales.</span></span>
 
-## <a name="template-and-task"></a>Mal og oppgave
+## <a name="template-and-task"></a><span data-ttu-id="2f01d-106">Mal og oppgave</span><span class="sxs-lookup"><span data-stu-id="2f01d-106">Template and task</span></span>
 
-Følgende maler og underliggende oppgaver brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) til Microsoft Dynamics 365 for Sales (Sales).
+<span data-ttu-id="2f01d-107">Følgende maler og underliggende oppgaver brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) til Microsoft Dynamics 365 for Sales (Sales).</span><span class="sxs-lookup"><span data-stu-id="2f01d-107">The following templates and underlying tasks are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to Microsoft Dynamics 365 for Sales (Sales).</span></span>
 
--   Navnet på malen: Produkter (Finance and Operations til Sales)
+-   <span data-ttu-id="2f01d-108">Navnet på malen: Produkter (Finance and Operations til Sales)</span><span class="sxs-lookup"><span data-stu-id="2f01d-108">Name of template: Products (Fin and Ops to Sales)</span></span>
 
--   Navnet på oppgaven i prosjektet: Produkter
+-   <span data-ttu-id="2f01d-109">Navnet på oppgaven i prosjektet: Produkter</span><span class="sxs-lookup"><span data-stu-id="2f01d-109">Name of task in project: Products</span></span>
 
-Synkronisere oppgaver som kreves synkronisering av produkt: Ingen
+<span data-ttu-id="2f01d-110">Synkronisere oppgaver som kreves synkronisering av produkt: Ingen</span><span class="sxs-lookup"><span data-stu-id="2f01d-110">Sync tasks required prior to Product sync: None</span></span>
 
-## <a name="entity-set"></a>Enhetssett
+## <a name="entity-set"></a><span data-ttu-id="2f01d-111">Enhetssett</span><span class="sxs-lookup"><span data-stu-id="2f01d-111">Entity set</span></span>
 
-| **Finance and Operations** | **CDS** | **Salg**  |
+| <span data-ttu-id="2f01d-112">**Finance and Operations**</span><span class="sxs-lookup"><span data-stu-id="2f01d-112">**Finance and Operations**</span></span> | <span data-ttu-id="2f01d-113">**CDS**</span><span class="sxs-lookup"><span data-stu-id="2f01d-113">**CDS**</span></span> | <span data-ttu-id="2f01d-114">**Salg**</span><span class="sxs-lookup"><span data-stu-id="2f01d-114">**Sales**</span></span>  |
 |----------------------------|---------|------------|
-| Salgbare frigitte produkter | Produkt | Produkter   |
+| <span data-ttu-id="2f01d-115">Salgbare frigitte produkter</span><span class="sxs-lookup"><span data-stu-id="2f01d-115">Sellable released products</span></span> | <span data-ttu-id="2f01d-116">Produkt</span><span class="sxs-lookup"><span data-stu-id="2f01d-116">Product</span></span> | <span data-ttu-id="2f01d-117">Produkter</span><span class="sxs-lookup"><span data-stu-id="2f01d-117">Products</span></span>   |
 
-## <a name="entity-flow"></a>Enhetsflyt
+## <a name="entity-flow"></a><span data-ttu-id="2f01d-118">Enhetsflyt</span><span class="sxs-lookup"><span data-stu-id="2f01d-118">Entity flow</span></span>
 
-Produkter administreres i Finance and Operations og synkroniseres med Sales. Dataenheten **Salgbare frigitte produkter** i Finance and Operations eksporterer bare produkter som er salgbare, som betyr at produktene har informasjonen som kreves for å brukes på en salgsordre. De samme reglene gjelder når et produkt er bekreftet med **Valider**-funksjonen på siden **Frigitt produkt**.
+<span data-ttu-id="2f01d-119">Produkter administreres i Finance and Operations og synkroniseres med Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-119">Products are managed in Finance and Operations and synchronized to Sales.</span></span> <span data-ttu-id="2f01d-120">Dataenheten **Salgbare frigitte produkter** i Finance and Operations eksporterer bare produkter som er salgbare, som betyr at produktene har informasjonen som kreves for å brukes på en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="2f01d-120">The data entity **Sellable released products** in Finance and Operations only exports products that are sellable, which means that products have the information required to be used on a sales order.</span></span> <span data-ttu-id="2f01d-121">De samme reglene gjelder når et produkt er bekreftet med **Valider**-funksjonen på siden **Frigitt produkt**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-121">The same rules apply when a product is validated with the **Validate** function on the **Released product** page.</span></span>
 
-**Produktnummer** brukes som nøkkel, noe som betyr at produktvarianter synkroniseres til CDS og Sales med individuelle **produkt-ID-er** per **produktvariant**.
+<span data-ttu-id="2f01d-122">**Produktnummer** brukes som nøkkel, noe som betyr at produktvarianter synkroniseres til CDS og Sales med individuelle **produkt-ID-er** per **produktvariant**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-122">The **Product number** is used as key, meaning that product variants are synchronized to CDS and Sales with individual **Product IDs** per **Product variant**.</span></span>
 
-## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemnet til kontanter løsning for Sales
+## <a name="prospect-to-cash-solution-for-sales"></a><span data-ttu-id="2f01d-123">Kundeemnet til kontanter løsning for Sales</span><span class="sxs-lookup"><span data-stu-id="2f01d-123">Prospect to cash solution for Sales</span></span>
 
-I Sales legges det til et nytt felt på produktene **Vedlikeholdes eksternt** for å angi at et bestemt produkt vedlikeholdes eksternt. Verdien er satt til **Ja** som standard under import til Sales.
+<span data-ttu-id="2f01d-124">I Sales legges det til et nytt felt på produktene **Vedlikeholdes eksternt** for å angi at et bestemt produkt vedlikeholdes eksternt.</span><span class="sxs-lookup"><span data-stu-id="2f01d-124">In Sales, a new field on the products **Is Externally Maintained** is added to indicate that a given product is maintained externally.</span></span> <span data-ttu-id="2f01d-125">Verdien er satt til **Ja** som standard under import til Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-125">The value is set to **Yes** by default during import to Sales.</span></span>
 
--   **Vedlikeholdes eksternt = Ja**: Product stammer fra Finance and Operations og kan ikke redigeres i Sales.
+-   <span data-ttu-id="2f01d-126">**Vedlikeholdes eksternt = Ja**: Product stammer fra Finance and Operations og kan ikke redigeres i Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-126">**Is Externally Maintained = Yes**: Product originates from Finance and Operations and will not be editable in Sales.</span></span>
 
--   **Vedlikeholdes eksternt = Nei**: Produktet angis direkte i Sales.
+-   <span data-ttu-id="2f01d-127">**Vedlikeholdes eksternt = Nei**: Produktet angis direkte i Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-127">**Is Externally Maintained = No**: Product is entered directly in Sales.</span></span>
 
--   **Vedlikeholdes eksternt = tom**: Produktet finnes i Sales før aktivering av kundeemnet til kontantløsning.
+-   <span data-ttu-id="2f01d-128">**Vedlikeholdes eksternt = tom**: Produktet finnes i Sales før aktivering av kundeemnet til kontantløsning.</span><span class="sxs-lookup"><span data-stu-id="2f01d-128">**Is Externally Maintained = Blank**: Product exists in Sales prior to enabling the Prospect to cash solution.</span></span>
 
-Informasjonen i **Vedlikeholdes eksternt** brukes til å sikre at bare **tilbud** og **ordrer** med **eksternt vedlikeholdte produkter** synkroniseres til Finance and Operations.
+<span data-ttu-id="2f01d-129">Informasjonen i **Vedlikeholdes eksternt** brukes til å sikre at bare **tilbud** og **ordrer** med **eksternt vedlikeholdte produkter** synkroniseres til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="2f01d-129">The **Is Externally Maintained** information is used to ensure that only **Quotes** and **Sales orders** with **Externally maintained products** will sync to Finance and Operations.</span></span>
 
-**Eksternt vedlikeholdte produkter** legges automatisk til den første gyldige **prislisten** med samme valuta. Legg merke til at listen er sortert alfabetisk etter **navn**. Produktets salgspris fra Finance and Operations brukes som prisen på **prislisten**. Dette betyr at det må være en **prisliste** i Sales for hver **produktsalgsvaluta** i Finance and Operations. Valuta på frigitte salgbare produkter er satt til regnskapsvalutaen i den juridiske enheten som produktet er eksportert fra.
+<span data-ttu-id="2f01d-130">**Eksternt vedlikeholdte produkter** legges automatisk til den første gyldige **prislisten** med samme valuta.</span><span class="sxs-lookup"><span data-stu-id="2f01d-130">**Externally maintained products** are automatically added to the first valid **Price list** with the same currency.</span></span> <span data-ttu-id="2f01d-131">Legg merke til at listen er sortert alfabetisk etter **navn**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-131">Note that the list is organized alphabetically by **Name**.</span></span> <span data-ttu-id="2f01d-132">Produktets salgspris fra Finance and Operations brukes som prisen på **prislisten**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-132">The product sales price from Finance and Operations is used as price on the **Price list**.</span></span> <span data-ttu-id="2f01d-133">Dette betyr at det må være en **prisliste** i Sales for hver **produktsalgsvaluta** i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="2f01d-133">This means that it is required to have a **Price list** in Sales for each **Product sales currency** in Finance and Operations.</span></span> <span data-ttu-id="2f01d-134">Valuta på frigitte salgbare produkter er satt til regnskapsvalutaen i den juridiske enheten som produktet er eksportert fra.</span><span class="sxs-lookup"><span data-stu-id="2f01d-134">Currency on the released sellable products is set to the accounting currency in the legal entity, from which the product is exported.</span></span>
 
 > [!NOTE]
-> Produktsynkronisering kan ikke fullføres uten en **prisliste** med tilhørende valuta.
+> <span data-ttu-id="2f01d-135">Produktsynkronisering kan ikke fullføres uten en **prisliste** med tilhørende valuta.</span><span class="sxs-lookup"><span data-stu-id="2f01d-135">Product sync will not succeed without a **Price list** with the matching currency.</span></span>
 
-## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
+## <a name="preconditions-and-mapping-setup"></a><span data-ttu-id="2f01d-136">Forutsetninger og tilordningsdefinisjon</span><span class="sxs-lookup"><span data-stu-id="2f01d-136">Preconditions and mapping setup</span></span>
 
--   Før du kjører den første synkroniseringen, må du fylle ut den **spesifikke produkttabellen** for eksisterende produkter i Finance and Operations. Eksisterende produkter vil ikke bli synkronisert før denne jobben er fullført.
+-   <span data-ttu-id="2f01d-137">Før du kjører den første synkroniseringen, må du fylle ut den **spesifikke produkttabellen** for eksisterende produkter i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="2f01d-137">Before you run the very first sync, you must populate the **Distinct product table** for existing products in Finance and Operations.</span></span> <span data-ttu-id="2f01d-138">Eksisterende produkter vil ikke bli synkronisert før denne jobben er fullført.</span><span class="sxs-lookup"><span data-stu-id="2f01d-138">Existing products will not be synchronized until this job is completed.</span></span>
 
-    -   I Finance and Operations kan du bruke Søk til å søke etter **Fyll ut tabell for spesifikt produkt**.
+    -   <span data-ttu-id="2f01d-139">I Finance and Operations kan du bruke Søk til å søke etter **Fyll ut tabell for spesifikt produkt**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-139">In Finance and Operations, use Search to search for **Populate distinct product table**.</span></span>
 
-    -   Klikk **Fyll ut tabell for spesifikt produkt** for å kjøre jobben. Denne jobben må bare kjøres én gang.
+    -   <span data-ttu-id="2f01d-140">Klikk **Fyll ut tabell for spesifikt produkt** for å kjøre jobben.</span><span class="sxs-lookup"><span data-stu-id="2f01d-140">Click the **Populate distinct product table** to run the job.</span></span> <span data-ttu-id="2f01d-141">Denne jobben må bare kjøres én gang.</span><span class="sxs-lookup"><span data-stu-id="2f01d-141">This job only needs to be run once.</span></span>
 
--   Pass på at den obligatoriske **ValueMap** for salg av **målenheten** i Finance and Operations finnes i **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.
+-   <span data-ttu-id="2f01d-142">Pass på at den obligatoriske **ValueMap** for salg av **målenheten** i Finance and Operations finnes i **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-142">Ensure that the needed **ValueMap** for selling **Unit of measure** (UOM) in Finance and Operations exists in the **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.</span></span>
 
--   Pass på at **støttede desimaler** for måleenheten oppfyller dine krav i **CDS -\> Destination**. Hvis du må ha forskjellige verdier per enhet, kan dette gjøres med **ValueMap** fra enheten, for eksempel [Each : 0] & [Pound : 2].
+-   <span data-ttu-id="2f01d-143">Pass på at **støttede desimaler** for måleenheten oppfyller dine krav i **CDS -\> Destination**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-143">Ensure that **Decimals supported** for UOM match your requirements in **CDS -\> Destination**.</span></span> <span data-ttu-id="2f01d-144">Hvis du må ha forskjellige verdier per enhet, kan dette gjøres med **ValueMap** fra enheten, for eksempel [Each : 0] & [Pound : 2].</span><span class="sxs-lookup"><span data-stu-id="2f01d-144">If you require different values per UOM, this can be done with **ValueMap** from Unit, for example, [Each : 0] & [Pound : 2].</span></span>
 
-    -   Malverdien er 0 som standard.
+    -   <span data-ttu-id="2f01d-145">Malverdien er 0 som standard.</span><span class="sxs-lookup"><span data-stu-id="2f01d-145">Template value is defaulted to 0.</span></span>
 
--   Oppdater **ID-en for CDS-organisasjonen Organization_OrganizationId** i **Source -\> CDS**.
+-   <span data-ttu-id="2f01d-146">Oppdater **ID-en for CDS-organisasjonen Organization_OrganizationId** i **Source -\> CDS**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-146">Update the **CDS Organization ID Organization_OrganizationId** in **Source -\> CDS**.</span></span>
 
-    -   Malverdien er ORG001 som standard.
+    -   <span data-ttu-id="2f01d-147">Malverdien er ORG001 som standard.</span><span class="sxs-lookup"><span data-stu-id="2f01d-147">Template value is defaulted to ORG001.</span></span>
 
--   Oppdater **ValueMap** for **enhetsgruppen** (**defaultuomscheduleid.name**) i **CDS -\> Destination** til å samsvare med **enhetsgruppene** i Sales.
+-   <span data-ttu-id="2f01d-148">Oppdater **ValueMap** for **enhetsgruppen** (**defaultuomscheduleid.name**) i **CDS -\> Destination** til å samsvare med **enhetsgruppene** i Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-148">Update **ValueMap** for **Unit group** (**defaultuomscheduleid.name**) in **CDS -\> Destination** to match the **Unit groups** in Sales.</span></span>
 
-    -   Malverdien er **Standardenhet** som standard.
+    -   <span data-ttu-id="2f01d-149">Malverdien er **Standardenhet** som standard.</span><span class="sxs-lookup"><span data-stu-id="2f01d-149">Template value is defaulted to **Default unit**.</span></span>
 
--   Kontroller at alle målenheter for produktsalg fra Finance and Operations finnes i Sales, med verdien **CDS-plukklister**.
+-   <span data-ttu-id="2f01d-150">Kontroller at alle målenheter for produktsalg fra Finance and Operations finnes i Sales, med verdien **CDS-plukklister**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-150">Ensure that all products selling UOMs from Finance and Operations exist in Sales with the **CDS picklists** value.</span></span>
 
--   Kontroller at **Prislister** finnes i Sales for hver produktsalgsvaluta i Finance and Operations.
+-   <span data-ttu-id="2f01d-151">Kontroller at **Prislister** finnes i Sales for hver produktsalgsvaluta i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="2f01d-151">Ensure that **Price lists** exist in Sales for each product sales currency in Finance and Operations.</span></span>
 
--   Produkter kan opprettes i Sales med statusen **Utkast** eller **Aktive**. Dette styres i **Systeminnstillinger** under **Salg** i Sales.
+-   <span data-ttu-id="2f01d-152">Produkter kan opprettes i Sales med statusen **Utkast** eller **Aktive**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-152">Products can be created in Sales with status **Draft** or **Active**.</span></span> <span data-ttu-id="2f01d-153">Dette styres i **Systeminnstillinger** under **Salg** i Sales.</span><span class="sxs-lookup"><span data-stu-id="2f01d-153">This is controlled in **System settings** under **Sales** in Sales.</span></span>
 
-    -   Produkter som er opprettet med utkaststatus, må aktiveres før de kan legges til i et **tilbud** eller en **salgsordre**.
+    -   <span data-ttu-id="2f01d-154">Produkter som er opprettet med utkaststatus, må aktiveres før de kan legges til i et **tilbud** eller en **salgsordre**.</span><span class="sxs-lookup"><span data-stu-id="2f01d-154">Products created with draft status need to be activated before they can be added to **Quote** or **Sales order**.</span></span>
 
-## <a name="template-mapping-in-data-integrator"></a>Tilordninge mal i dataintegrator
+## <a name="template-mapping-in-data-integrator"></a><span data-ttu-id="2f01d-155">Tilordninge mal i dataintegrator</span><span class="sxs-lookup"><span data-stu-id="2f01d-155">Template mapping in data integrator</span></span>
 
-Følgende illustrasjoner viser et eksempel på en tilordning av malen i dataintegratoren.
+<span data-ttu-id="2f01d-156">Følgende illustrasjoner viser et eksempel på en tilordning av malen i dataintegratoren.</span><span class="sxs-lookup"><span data-stu-id="2f01d-156">The following illustrations show an example of a template mapping in data integrator.</span></span>
 
 ![tilordne mal i dataintegrator](./media/products-template-mapping-data-integrator-1.png)
 
 ![tilordne mal for produkter i dataintegrator](./media/products-template-mapping-data-integrator-2.png)
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-topics"></a><span data-ttu-id="2f01d-159">Relaterte emner</span><span class="sxs-lookup"><span data-stu-id="2f01d-159">Related topics</span></span>
 
-[Synkronisere kontoer fra Sales til kunder i Finance and Operations](accounts-template-mapping.md)
+[<span data-ttu-id="2f01d-160">Synkronisere kontoer fra Sales til kunder i Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2f01d-160">Synchronize accounts from Sales to customers in Finance and Operations</span></span>](accounts-template-mapping.md)
 
-[Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations](contacts-template-mapping.md)
+[<span data-ttu-id="2f01d-161">Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2f01d-161">Synchronize contacts from Sales to contacts or customers in Finance and Operations</span></span>](contacts-template-mapping.md)
 
-[Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations](sales-quotation-template-mapping.md)
+[<span data-ttu-id="2f01d-162">Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2f01d-162">Synchronize sales quotation headers and lines from Sales to Finance and Operations</span></span>](sales-quotation-template-mapping.md)
 
 

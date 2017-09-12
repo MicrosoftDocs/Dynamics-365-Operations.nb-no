@@ -16,33 +16,33 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 17d0653890236ba5517b854088c04ea7db2593d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bdb3a3857a7293828a7766b6988c123a43e0673c
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a>Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering (ER)
+# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a><span data-ttu-id="b52ad-103">Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="b52ad-103">Create a configuration providand mark it as active for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan opprette en konfigurasjonsleverandør for elektronisk rapportering (ER). Hver ER-konfigurasjon refererer til leverandøren som forfatteren av konfigurasjonen. I dette eksemplet skal du opprette en konfigurasjonsleverandør for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjonsleverandører deles mellom alle firmaer.
+<span data-ttu-id="b52ad-104">De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan opprette en konfigurasjonsleverandør for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="b52ad-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER).</span></span> <span data-ttu-id="b52ad-105">Hver ER-konfigurasjon refererer til leverandøren som forfatteren av konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="b52ad-105">Each ER configuration will refer to the provider as the author of the configuration.</span></span> <span data-ttu-id="b52ad-106">I dette eksemplet skal du opprette en konfigurasjonsleverandør for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjonsleverandører deles mellom alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="b52ad-106">In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.</span></span>
 
 
-## <a name="create-a-provider"></a>Opprette en leverandør
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Klikk Konfigurasjonsleverandører.
-3. Klikk Ny.
-    * En leverandørpost har et unikt navn og URL-adresse. Se gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (http://www.litware.com) finnes allerede.  
-4. Skriv inn Litware, Inc. i Navn-feltet.
-    * Litware, Inc  
-5. Skriv inn "http://www.litware.com" i feltet Internett-adresse.
-    * http://www.litware.com  
-6. Klikk Lagre.
-7. Lukk siden.
+## <a name="create-a-provider"></a><span data-ttu-id="b52ad-107">Opprette en leverandør</span><span class="sxs-lookup"><span data-stu-id="b52ad-107">Create a provider</span></span>
+1. <span data-ttu-id="b52ad-108">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="b52ad-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="b52ad-109">Klikk Konfigurasjonsleverandører.</span><span class="sxs-lookup"><span data-stu-id="b52ad-109">Click Configuration providers.</span></span>
+3. <span data-ttu-id="b52ad-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b52ad-110">Click New.</span></span>
+    * <span data-ttu-id="b52ad-111">En leverandørpost har et unikt navn og URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="b52ad-111">A provider record has a unique name and URL.</span></span> <span data-ttu-id="b52ad-112">Se gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (http://www.litware.com) finnes allerede.</span><span class="sxs-lookup"><span data-stu-id="b52ad-112">Review the content of this page and skip this procedure if a record for Litware, Inc. (http://www.litware.com) already exists.</span></span>  
+4. <span data-ttu-id="b52ad-113">Skriv inn Litware, Inc. i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="b52ad-113">In the Name field, type 'Litware, Inc.'.</span></span>
+    * <span data-ttu-id="b52ad-114">Litware, Inc</span><span class="sxs-lookup"><span data-stu-id="b52ad-114">Litware, Inc.</span></span>  
+5. <span data-ttu-id="b52ad-115">Skriv inn "http://www.litware.com" i feltet Internett-adresse.</span><span class="sxs-lookup"><span data-stu-id="b52ad-115">In the Internet address field, type 'http://www.litware.com'.</span></span>
+    * <span data-ttu-id="b52ad-116">http://www.litware.com</span><span class="sxs-lookup"><span data-stu-id="b52ad-116">http://www.litware.com</span></span>  
+6. <span data-ttu-id="b52ad-117">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b52ad-117">Click Save.</span></span>
+7. <span data-ttu-id="b52ad-118">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b52ad-118">Close the page.</span></span>
 
-## <a name="select-as-an-active-provider"></a>Velg som en aktiv leverandør
-1. Velg levandøren Litware, Inc. provider.
-2. Klikk Angi som aktiv
+## <a name="select-as-an-active-provider"></a><span data-ttu-id="b52ad-119">Velg som en aktiv leverandør</span><span class="sxs-lookup"><span data-stu-id="b52ad-119">Select as an active provider</span></span>
+1. <span data-ttu-id="b52ad-120">Velg levandøren Litware, Inc. provider.</span><span class="sxs-lookup"><span data-stu-id="b52ad-120">Select the Litware, Inc. provider.</span></span>
+2. <span data-ttu-id="b52ad-121">Klikk Angi som aktiv</span><span class="sxs-lookup"><span data-stu-id="b52ad-121">Click Set active.</span></span>
 
 

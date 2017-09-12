@@ -16,46 +16,46 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5f101a097643fa027a667b9d6577fbe5d24ecd27
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2a12a6859a3a436706822873bc6fdd781e0ef032
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="move-scheduled-kanban-jobs"></a>Flytte planlagte Kanban-jobber
+# <a name="move-scheduled-kanban-jobs"></a><span data-ttu-id="8c628-103">Flytte planlagte Kanban-jobber</span><span class="sxs-lookup"><span data-stu-id="8c628-103">Move scheduled kanban jobs</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en annen periode. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne prosedyren er ment for arbeidsledere eller produksjonsplanleggere som arbeider med Kanbaner.
+<span data-ttu-id="8c628-104">Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en annen periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-104">This procedure focuses on moving planned process kanban jobs to a different period.</span></span> <span data-ttu-id="8c628-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="8c628-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8c628-106">Denne prosedyren er ment for arbeidsledere eller produksjonsplanleggere som arbeider med Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="8c628-106">This procedure is intended for the shop floor supervisor or production planner working with kanbans.</span></span>
 
 
-## <a name="select-scheduled-kanban-jobs"></a>Velge planlagte Kanban-jobber
-1. Gå til Produksjonsstyring > Kanban > Tidsplanlegging av kanban-jobb.
-2. !MtCMR!Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget. áçêìõý!
-3. Merk den valgte raden i listen.
-    * Velg arbeidscellen 1250.  
-4. Klikk Velg.
-5. Velg "Planlagt" i feltet Vis jobbstatus.
-    * Dette filtrerer jobblisten for å vise bare de planlagte kanban-jobbene.  
+## <a name="select-scheduled-kanban-jobs"></a><span data-ttu-id="8c628-107">Velge planlagte Kanban-jobber</span><span class="sxs-lookup"><span data-stu-id="8c628-107">Select scheduled kanban jobs</span></span>
+1. <span data-ttu-id="8c628-108">Gå til Produksjonsstyring > Kanban > Tidsplanlegging av kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="8c628-108">Gå til Produktionsstyring > Kanban > Tidsplanlægning af kanban-job.</span></span>
+2. <span data-ttu-id="8c628-109">!MtCMR!Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="8c628-109">!MtCMR!In the Work cell field, click the drop-down button to open the lookup.</span></span> <span data-ttu-id="8c628-110">áçêìõý!</span><span class="sxs-lookup"><span data-stu-id="8c628-110">áçêìõý !</span></span>
+3. <span data-ttu-id="8c628-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-111">Markér den valgte række på listen.</span></span>
+    * <span data-ttu-id="8c628-112">Velg arbeidscellen 1250.</span><span class="sxs-lookup"><span data-stu-id="8c628-112">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="8c628-113">Klikk Velg.</span><span class="sxs-lookup"><span data-stu-id="8c628-113">Klik på Select.</span></span>
+5. <span data-ttu-id="8c628-114">Velg "Planlagt" i feltet Vis jobbstatus.</span><span class="sxs-lookup"><span data-stu-id="8c628-114">Vælg 'Planlagt' i feltet Display job status.</span></span>
+    * <span data-ttu-id="8c628-115">Dette filtrerer jobblisten for å vise bare de planlagte kanban-jobbene.</span><span class="sxs-lookup"><span data-stu-id="8c628-115">This filters the job list to display only the scheduled kanban jobs.</span></span>  
 
-## <a name="move-kanban-jobs-to-a-different-period"></a>Flytte Kanban-jobber til en annen periode
-1. Finn og velg den ønskede posten i listen.
-    * Velg en jobb som har jobbstatusen planlagt, for eksempel en jobb som er planlagt den 20. desember 2012, i feltet Planlagt periode. Flytt deretter jobben til forrige periode.  
-2. Klikk Forrige periode.
-3. Klikk Slutt.
-    * Dette flytter jobben til slutten av jobblisten som den siste jobben i forrige periode.  
-4. Finn og velg den ønskede posten i listen.
-    * Velg en jobb som har jobbstatusen planlagt, for eksempel en jobb som er planlagt den 18. desember 2012, i feltet Planlagt periode. Flytt deretter jobben til neste periode.  
-5. Klikk Neste periode.
-6. Klikk Start.
-    * Dette flytter jobben til starten av jobblisten som den første jobben i forrige periode.  
+## <a name="move-kanban-jobs-to-a-different-period"></a><span data-ttu-id="8c628-116">Flytte Kanban-jobber til en annen periode</span><span class="sxs-lookup"><span data-stu-id="8c628-116">Move kanban jobs to a different period</span></span>
+1. <span data-ttu-id="8c628-117">Finn og velg den ønskede posten i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-117">Find og vælg den ønskede post på listen.</span></span>
+    * <span data-ttu-id="8c628-118">Velg en jobb som har jobbstatusen planlagt, for eksempel en jobb som er planlagt den 20. desember 2012, i feltet Planlagt periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-118">Select a job that has the Planned job status, for example, a job scheduled on December 20, 2012  in the Planned period field.</span></span> <span data-ttu-id="8c628-119">Flytt deretter jobben til forrige periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-119">Then move the job to the previous period.</span></span>  
+2. <span data-ttu-id="8c628-120">Klikk Forrige periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-120">Klik på Previous period.</span></span>
+3. <span data-ttu-id="8c628-121">Klikk Slutt.</span><span class="sxs-lookup"><span data-stu-id="8c628-121">Klik på End.</span></span>
+    * <span data-ttu-id="8c628-122">Dette flytter jobben til slutten av jobblisten som den siste jobben i forrige periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-122">This will move the job to the end of the job list as the last job in the previous period.</span></span>  
+4. <span data-ttu-id="8c628-123">Finn og velg den ønskede posten i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-123">Find og vælg den ønskede post på listen.</span></span>
+    * <span data-ttu-id="8c628-124">Velg en jobb som har jobbstatusen planlagt, for eksempel en jobb som er planlagt den 18. desember 2012, i feltet Planlagt periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-124">Select a job that has the Planned job status, for example, a job scheduled on December 18, 2012 in the Planned period field.</span></span> <span data-ttu-id="8c628-125">Flytt deretter jobben til neste periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-125">Then move the job to the next period.</span></span>  
+5. <span data-ttu-id="8c628-126">Klikk Neste periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-126">Klik på Next period.</span></span>
+6. <span data-ttu-id="8c628-127">Klikk Start.</span><span class="sxs-lookup"><span data-stu-id="8c628-127">Klik på Start.</span></span>
+    * <span data-ttu-id="8c628-128">Dette flytter jobben til starten av jobblisten som den første jobben i forrige periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-128">This will move the job to the start of the job list as the first job in the previous period.</span></span>  
 
-## <a name="task-move-a-job-within-a-period"></a>Oppgave: Flytte en jobb i en periode
-1. Finn og velg den ønskede posten i listen.
-    * Velg en jobb som har jobbstatusen planlagt, for eksempel den andre jobben som er planlagt den 19. desember 2012, i feltet Planlagt periode. Flytt deretter jobben innenfor planlagt periode.  
-2. Klikk Fremover.
-    * Legg merke til at jobben er flyttet én linje ned i listen.  
-3. Klikk Bakover.
-    * Legg merke til at jobben er flyttet én linje opp i listen.  
+## <a name="task-move-a-job-within-a-period"></a><span data-ttu-id="8c628-129">Oppgave: Flytte en jobb i en periode</span><span class="sxs-lookup"><span data-stu-id="8c628-129">Task: Move a job within a period</span></span>
+1. <span data-ttu-id="8c628-130">Finn og velg den ønskede posten i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-130">Find og vælg den ønskede post på listen.</span></span>
+    * <span data-ttu-id="8c628-131">Velg en jobb som har jobbstatusen planlagt, for eksempel den andre jobben som er planlagt den 19. desember 2012, i feltet Planlagt periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-131">Select a job that has the Planned job status, for example, the second job scheduled on December 19, 2012 in the Planned period field.</span></span> <span data-ttu-id="8c628-132">Flytt deretter jobben innenfor planlagt periode.</span><span class="sxs-lookup"><span data-stu-id="8c628-132">Then move the job within the planned period.</span></span>  
+2. <span data-ttu-id="8c628-133">Klikk Fremover.</span><span class="sxs-lookup"><span data-stu-id="8c628-133">Klik på Forward.</span></span>
+    * <span data-ttu-id="8c628-134">Legg merke til at jobben er flyttet én linje ned i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-134">Notice that the job is moved one line down on the list.</span></span>  
+3. <span data-ttu-id="8c628-135">Klikk Bakover.</span><span class="sxs-lookup"><span data-stu-id="8c628-135">Klik på Backward.</span></span>
+    * <span data-ttu-id="8c628-136">Legg merke til at jobben er flyttet én linje opp i listen.</span><span class="sxs-lookup"><span data-stu-id="8c628-136">Notice that the job is moved one line up on the list.</span></span>  
 
 

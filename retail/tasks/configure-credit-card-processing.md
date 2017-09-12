@@ -17,49 +17,49 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 10fc776641d0c7bc2576be13a4116281ac3a3768
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8e7bfbf6b51aca9cf8a7f800ac7db22c0330d00
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-credit-card-processing"></a> Konfigurere kredittkortbehandling
+# <a name="configure-credit-card-processing"></a><span data-ttu-id="d2da4-103"> Konfigurere kredittkortbehandling</span><span class="sxs-lookup"><span data-stu-id="d2da4-103">Configure credit card processing</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper med å vise listen over betalingsleverandører og hvordan du konfigurerer en betalingskonto for kunder. Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene og er ment for administratorer og IT-eksperter.
+<span data-ttu-id="d2da4-104">Denne prosedyren hjelper med å vise listen over betalingsleverandører og hvordan du konfigurerer en betalingskonto for kunder.</span><span class="sxs-lookup"><span data-stu-id="d2da4-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="d2da4-105">Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene og er ment for administratorer og IT-eksperter.</span><span class="sxs-lookup"><span data-stu-id="d2da4-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
 
 
-## <a name="view-a-list-of-payment-providers"></a>Vise en liste med betalingsleverandører
-1. Gå til Kunder > Betalingsoppsett > Betalingstjenester.
-2. Klikk Vis tilgjengelige leverandører.
+## <a name="view-a-list-of-payment-providers"></a><span data-ttu-id="d2da4-106">Vise en liste med betalingsleverandører</span><span class="sxs-lookup"><span data-stu-id="d2da4-106">View a list of payment providers</span></span>
+1. <span data-ttu-id="d2da4-107">Gå til Kunder > Betalingsoppsett > Betalingstjenester.</span><span class="sxs-lookup"><span data-stu-id="d2da4-107">Go to Accounts receivable > Payments setup > Payment services.</span></span>
+2. <span data-ttu-id="d2da4-108">Klikk Vis tilgjengelige leverandører.</span><span class="sxs-lookup"><span data-stu-id="d2da4-108">Click View available providers.</span></span>
 
-## <a name="configure-payment-account"></a>Konfigurere betalingskonto
-1. Klikk Ny.
-2. Skriv inn en verdi i Betalingstjeneste-feltet.
-3. Velg et alternativ i feltet Betalingskobling.
-4. Aktiver/deaktiver utvidelsen av delen Betalingstjenestekonto.
-5. I Miljø-feltet skriver du inn PROD.
-6. Klikk Kredittkorttyper.
-7. Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.
-8. Klikk koblingen i den valgte raden i listen.
-9. Klikk Legg til.
-10. Skriv inn en verdi i Valuta-feltet.
-11. Finn og velg ønsket post i listen.
-12. Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.
-13. Klikk koblingen i den valgte raden i listen.
-14. Klikk Legg til.
-15. Skriv inn en verdi i Valuta-feltet.
-16. Finn og velg ønsket post i listen.
-    * Du kan gjenta denne fremgangsmåten for så mange korttyper du ønsker.  
-17. Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.
-18. Klikk koblingen i den valgte raden i listen.
-19. Klikk Legg til.
-20. Skriv inn en verdi i Valuta-feltet.
-21. Klikk Lagre.
-22. Lukk siden.
-23. Klikk Valider.
-24. Klikk Standardbehandler for nye kredittkort.
-25. Klikk Lagre.
+## <a name="configure-payment-account"></a><span data-ttu-id="d2da4-109">Konfigurere betalingskonto</span><span class="sxs-lookup"><span data-stu-id="d2da4-109">Configure payment account</span></span>
+1. <span data-ttu-id="d2da4-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d2da4-110">Click New.</span></span>
+2. <span data-ttu-id="d2da4-111">Skriv inn en verdi i Betalingstjeneste-feltet.</span><span class="sxs-lookup"><span data-stu-id="d2da4-111">In the Payment service field, type a value.</span></span>
+3. <span data-ttu-id="d2da4-112">Velg et alternativ i feltet Betalingskobling.</span><span class="sxs-lookup"><span data-stu-id="d2da4-112">In the Payment connector field, select an option.</span></span>
+4. <span data-ttu-id="d2da4-113">Aktiver/deaktiver utvidelsen av delen Betalingstjenestekonto.</span><span class="sxs-lookup"><span data-stu-id="d2da4-113">Toggle the expansion of the Payment service account section.</span></span>
+5. <span data-ttu-id="d2da4-114">I Miljø-feltet skriver du inn PROD.</span><span class="sxs-lookup"><span data-stu-id="d2da4-114">In the Environment: field, type 'PROD'.</span></span>
+6. <span data-ttu-id="d2da4-115">Klikk Kredittkorttyper.</span><span class="sxs-lookup"><span data-stu-id="d2da4-115">Click Credit card types.</span></span>
+7. <span data-ttu-id="d2da4-116">Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="d2da4-116">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="d2da4-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d2da4-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="d2da4-118">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="d2da4-118">Click Add.</span></span>
+10. <span data-ttu-id="d2da4-119">Skriv inn en verdi i Valuta-feltet.</span><span class="sxs-lookup"><span data-stu-id="d2da4-119">In the Currency field, type a value.</span></span>
+11. <span data-ttu-id="d2da4-120">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="d2da4-120">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="d2da4-121">Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="d2da4-121">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="d2da4-122">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d2da4-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="d2da4-123">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="d2da4-123">Click Add.</span></span>
+15. <span data-ttu-id="d2da4-124">Skriv inn en verdi i Valuta-feltet.</span><span class="sxs-lookup"><span data-stu-id="d2da4-124">In the Currency field, type a value.</span></span>
+16. <span data-ttu-id="d2da4-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="d2da4-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="d2da4-126">Du kan gjenta denne fremgangsmåten for så mange korttyper du ønsker.</span><span class="sxs-lookup"><span data-stu-id="d2da4-126">You can repeat these steps for as many card types as you need.</span></span>  
+17. <span data-ttu-id="d2da4-127">Klikk rullegardinknappen i feltet Betalingsjournal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="d2da4-127">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="d2da4-128">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d2da4-128">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="d2da4-129">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="d2da4-129">Click Add.</span></span>
+20. <span data-ttu-id="d2da4-130">Skriv inn en verdi i Valuta-feltet.</span><span class="sxs-lookup"><span data-stu-id="d2da4-130">In the Currency field, type a value.</span></span>
+21. <span data-ttu-id="d2da4-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d2da4-131">Click Save.</span></span>
+22. <span data-ttu-id="d2da4-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d2da4-132">Close the page.</span></span>
+23. <span data-ttu-id="d2da4-133">Klikk Valider.</span><span class="sxs-lookup"><span data-stu-id="d2da4-133">Click Validate.</span></span>
+24. <span data-ttu-id="d2da4-134">Klikk Standardbehandler for nye kredittkort.</span><span class="sxs-lookup"><span data-stu-id="d2da4-134">Click the Default processor for new credit cards checkbox.</span></span>
+25. <span data-ttu-id="d2da4-135">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d2da4-135">Click Save.</span></span>
 
 

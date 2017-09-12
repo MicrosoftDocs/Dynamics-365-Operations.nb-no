@@ -1,7 +1,7 @@
 ---
 title: Lagerlokasjoner
 description: "Lagerlokasjoner brukes med grunnleggende lageraktiviteter (WMS I) til å angi hvor varene er lagret, og der varer hentes fra i et WMS I-lager."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,62 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 95d93c9d471cc86877f35340693c171958db71df
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 22f4d0c93b0fccdb5439998a68add7b7e0e7750b
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-locations"></a>Lagerlokasjoner
+# <a name="inventory-locations"></a><span data-ttu-id="d381a-103">Lagerlokasjoner</span><span class="sxs-lookup"><span data-stu-id="d381a-103">Inventory locations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Lagerlokasjoner brukes med grunnleggende lageraktiviteter (WMS I) til å angi hvor varene er lagret, og der varer hentes fra i et WMS I-lager.
+<span data-ttu-id="d381a-104">Lagerlokasjoner brukes med grunnleggende lageraktiviteter (WMS I) til å angi hvor varene er lagret, og der varer hentes fra i et WMS I-lager.</span><span class="sxs-lookup"><span data-stu-id="d381a-104">Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.</span></span>
 
-Dette emnet gjelder funksjoner i beholdningstyringsmodulen. Det gjelder ikke for funksjoner i lagerstyringsmodulen.
+<span data-ttu-id="d381a-105">Dette emnet gjelder funksjoner i beholdningstyringsmodulen.</span><span class="sxs-lookup"><span data-stu-id="d381a-105">This topic applies to features in the Inventory management module.</span></span> <span data-ttu-id="d381a-106">Det gjelder ikke for funksjoner i lagerstyringsmodulen.</span><span class="sxs-lookup"><span data-stu-id="d381a-106">It does not apply to features in the Warehouse management module.</span></span>
 
-Termen lokasjon brukes om et sted der varer lagres og hentes fra.
+<span data-ttu-id="d381a-107">Termen lokasjon brukes om et sted der varer lagres og hentes fra.</span><span class="sxs-lookup"><span data-stu-id="d381a-107">The term location refers to the place that items are stored and drawn from.</span></span>
 
-For hver lokasjon kan stedet der varen legges inn, også angis. De er som standard like. Varer legges vanligvis inn og hentes fra den samme siden av en lokasjon, men ikke alltid. Varer som for eksempel er lagret på lagringsreoler legges inn fra én gang, og hentes fra en annen. De viktigste inndataene angis ved et lokasjonsnavn som vanligvis bestemmes av lokasjonens koordinater: lager, gang, reol, hylle og boks.. Dette navnet eller denne IDen kan angis manuelt, eller genereres fra lokasjonskoordinatene, for eksempel 01-02-03-4 for gang 1, reol 2, hylle 3, posisjon 4 på Lagerlokasjoner-siden.
-Lokasjonsegenskaper
--------------------
+<span data-ttu-id="d381a-108">For hver lokasjon kan stedet der varen legges inn, også angis.</span><span class="sxs-lookup"><span data-stu-id="d381a-108">For each location, the place where the item is inserted can also be specified.</span></span> <span data-ttu-id="d381a-109">De er som standard like.</span><span class="sxs-lookup"><span data-stu-id="d381a-109">By default, they are the same.</span></span> <span data-ttu-id="d381a-110">Varer legges vanligvis inn og hentes fra den samme siden av en lokasjon, men ikke alltid.</span><span class="sxs-lookup"><span data-stu-id="d381a-110">Items are usually inserted and drawn from the same side of a location, but not always.</span></span> <span data-ttu-id="d381a-111">Varer som for eksempel er lagret på lagringsreoler legges inn fra én gang, og hentes fra en annen.</span><span class="sxs-lookup"><span data-stu-id="d381a-111">For example, items that are stored in live storage racks are inserted from one aisle and drawn from another.</span></span> <span data-ttu-id="d381a-112">De viktigste inndataene angis ved et lokasjonsnavn som vanligvis bestemmes av lokasjonens koordinater: lager, gang, reol, hylle og boks..</span><span class="sxs-lookup"><span data-stu-id="d381a-112">The main input is given by a location name, which is usually determined by its coordinates: warehouse, aisle, rack, shelf, and bin.</span></span> <span data-ttu-id="d381a-113">Dette navnet eller denne IDen kan angis manuelt, eller genereres fra lokasjonskoordinatene, for eksempel 01-02-03-4 for gang 1, reol 2, hylle 3, posisjon 4 på Lagerlokasjoner-siden.</span><span class="sxs-lookup"><span data-stu-id="d381a-113">This name or ID can be entered manually or generated from the location coordinates—for example, 01-02-03-4 for aisle 1, rack 2, shelf 3, bin 4 in the Inventory locations page.</span></span>
+<span data-ttu-id="d381a-114">Lokasjonsegenskaper</span><span class="sxs-lookup"><span data-stu-id="d381a-114">Location properties</span></span>
 
-En lokasjon har følgende kjennetegn:
--   Størrelse (høyde, bredde, dybde og dermed volum)
--   Lager, gang, reol, hylle og boksposisjon
--   Lokasjonstype (bulklokasjon, plukklokasjon, mottakssone, utleveringsport, produksjonsinnleveringssted, inspeksjonslokasjon eller kanban-supermarked)
+<span data-ttu-id="d381a-115">En lokasjon har følgende kjennetegn:</span><span class="sxs-lookup"><span data-stu-id="d381a-115">A location has the following characteristics:</span></span>
+-   <span data-ttu-id="d381a-116">Størrelse (høyde, bredde, dybde og dermed volum)</span><span class="sxs-lookup"><span data-stu-id="d381a-116">Size (height, width, depth, and thereby volume)</span></span>
+-   <span data-ttu-id="d381a-117">Lager, gang, reol, hylle og boksposisjon</span><span class="sxs-lookup"><span data-stu-id="d381a-117">Warehouse, aisle, rack, shelf, and bin position</span></span>
+-   <span data-ttu-id="d381a-118">Lokasjonstype (bulklokasjon, plukklokasjon, mottakssone, utleveringsport, produksjonsinnleveringssted, inspeksjonslokasjon eller kanban-supermarked)</span><span class="sxs-lookup"><span data-stu-id="d381a-118">Location type (bulk location, picking location, inbound dock, outbound dock, production input location, inspection location, or kanban supermarket)</span></span>
 
-Du kan bruke kontrolltekst i online-systemer til å kontrollere at operatøren har valgt riktig lokasjon for en bestemt vare. Denne kontrollteksten kan opprettes manuelt eller det brukes som standardtekst.
+<span data-ttu-id="d381a-119">Du kan bruke kontrolltekst i online-systemer til å kontrollere at operatøren har valgt riktig lokasjon for en bestemt vare.</span><span class="sxs-lookup"><span data-stu-id="d381a-119">Check text can be used in online systems to verify that the operator has selected the correct location for a specific item.</span></span> <span data-ttu-id="d381a-120">Denne kontrollteksten kan opprettes manuelt eller det brukes som standardtekst.</span><span class="sxs-lookup"><span data-stu-id="d381a-120">This check text can be created manually or by default.</span></span>
 
-## <a name="sort-codes"></a>Sorteringskoder
-Bruk sorteringskoder for å optimalisere håndteringen av plukklinjer, som beskriver informasjonen som kreves for plukking av varer fra lager, inkludert plukkordren. Sorteringskoder kan angis etter gangen og andre koordinater, eller tilordnes manuelt for lokasjonen.
+## <a name="sort-codes"></a><span data-ttu-id="d381a-121">Sorteringskoder</span><span class="sxs-lookup"><span data-stu-id="d381a-121">Sort codes</span></span>
+<span data-ttu-id="d381a-122">Bruk sorteringskoder for å optimalisere håndteringen av plukklinjer, som beskriver informasjonen som kreves for plukking av varer fra lager, inkludert plukkordren.</span><span class="sxs-lookup"><span data-stu-id="d381a-122">Use sort codes to optimize the handling of picking lines, which describe the information that is required for picking items from inventory, including the picking order.</span></span> <span data-ttu-id="d381a-123">Sorteringskoder kan angis etter gangen og andre koordinater, eller tilordnes manuelt for lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="d381a-123">Sort codes can be specified by the aisle and other coordinates, or assigned manually for the location.</span></span>
 
-## <a name="blocked-locations"></a>Blokkerte lokasjoner
-Noen ganger vil du kanskje angi at en lokasjon er blokkert for en tidsperiode, for eksempel ved reparasjon. Andre ganger vil du kanskje angi at du vil blokkere bare innleveringen eller utleveringen.
-Trestruktur
---------------
+## <a name="blocked-locations"></a><span data-ttu-id="d381a-124">Blokkerte lokasjoner</span><span class="sxs-lookup"><span data-stu-id="d381a-124">Blocked locations</span></span>
+<span data-ttu-id="d381a-125">Noen ganger vil du kanskje angi at en lokasjon er blokkert for en tidsperiode, for eksempel ved reparasjon.</span><span class="sxs-lookup"><span data-stu-id="d381a-125">Occasionally, you might want to indicate that a location is blocked for a period of time, for example, to allow for repairs.</span></span> <span data-ttu-id="d381a-126">Andre ganger vil du kanskje angi at du vil blokkere bare innleveringen eller utleveringen.</span><span class="sxs-lookup"><span data-stu-id="d381a-126">At other times, you may want to indicate blocking of only the input or only output.</span></span>
 
-På Lagerlokasjoner-siden kan du vise lageroppsettet i en trestruktur basert på koordinatene for lagerlokasjoner, i et definert visningsformat.
-Vedlikeholde lagerlokasjoner via lagerskjemaet
----------------------------------------------------
+## <a name="tree-structure"></a><span data-ttu-id="d381a-127">Trestruktur</span><span class="sxs-lookup"><span data-stu-id="d381a-127">Tree structure</span></span>
 
-Det er mulig å kopiere lokasjoner fra ett lager til et annet og opprette lokasjoner via en veiviser. Før du kjører veiviseren, må du kontrollere at du har definert navnene på standardlokasjon på Lager-siden.
+<span data-ttu-id="d381a-128">På Lagerlokasjoner-siden kan du vise lageroppsettet i en trestruktur basert på koordinatene for lagerlokasjoner, i et definert visningsformat.</span><span class="sxs-lookup"><span data-stu-id="d381a-128">In the Inventory locations page, you can view the warehouse layout in a tree structure based on the coordinates of inventory locations, in a defined display format.</span></span>
 
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a><span data-ttu-id="d381a-129">Vedlikeholde lagerlokasjoner via lagerskjemaet</span><span class="sxs-lookup"><span data-stu-id="d381a-129">Maintain inventory locations via the warehouse form</span></span>
+
+<span data-ttu-id="d381a-130">Det er mulig å kopiere lokasjoner fra ett lager til et annet og opprette lokasjoner via en veiviser.</span><span class="sxs-lookup"><span data-stu-id="d381a-130">It is possible to copy locations from one warehouse to another and to create locations via a wizard.</span></span> <span data-ttu-id="d381a-131">Før du kjører veiviseren, må du kontrollere at du har definert navnene på standardlokasjon på Lager-siden.</span><span class="sxs-lookup"><span data-stu-id="d381a-131">Before you run the wizard you should make sure that you have defined the default location names on the Warehouse page.</span></span>
 
 
-<a name="see-also"></a>Se også
+
+<a name="see-also"></a><span data-ttu-id="d381a-132">Se også</span><span class="sxs-lookup"><span data-stu-id="d381a-132">See also</span></span>
 --------
 
-[Opprette et nytt oppsett for lager (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
+[<span data-ttu-id="d381a-133">Opprette et nytt oppsett for lager (oppgaveveiledning)</span><span class="sxs-lookup"><span data-stu-id="d381a-133">Create a new warehouse layout (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
 

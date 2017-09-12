@@ -1,4 +1,4 @@
---- 
+---
 title: "Overvåke forsendelseslager ved hjelp av leverandørsamarbeid"
 description: "Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se informasjon om lagernivået for produktet som du har plassert i forsendelse hos en kunde."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,29 +17,28 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: ad4868991226aef21a0410860e3f98d11901ffbb
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 567be29bd9989b3471b22d5a970ed0e51e4549ec
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>Overvåke forsendelseslager ved hjelp av leverandørsamarbeid
+# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="d0fed-103">Overvåke forsendelseslager ved hjelp av leverandørsamarbeid</span><span class="sxs-lookup"><span data-stu-id="d0fed-103">Monitor consignment inventory using vendor collaboration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se informasjon om lagernivået for produktet som du har plassert i forsendelse hos en kunde. Du kan også overvåke forbruket av lageret når kunden blir eier av lageret. Du kan bruke prosedyren i USMF-demodatafirmaet. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+<span data-ttu-id="d0fed-104">Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se informasjon om lagernivået for produktet som du har plassert i forsendelse hos en kunde.</span><span class="sxs-lookup"><span data-stu-id="d0fed-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="d0fed-105">Du kan også overvåke forbruket av lageret når kunden blir eier av lageret.</span><span class="sxs-lookup"><span data-stu-id="d0fed-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="d0fed-106">Du kan bruke prosedyren i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="d0fed-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="d0fed-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="d0fed-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="view-consumed-inventory"></a>Vise brukt beholdning
-1. Gå til Leverandørsamarbeid > Forsendelseslager > Produkter mottatt fra forsendelseslager.
-    * Listen viser mottaksseddellinjene som ble generert da eierskap av forsendelseslageret ble endret fra leverandøren til kunden. Du må kanskje gå til høyre for å se antall og annen informasjon. Du kan bruke informasjonen i denne listen til å generere fakturaer for kunden. Du kan også eksportere dataene til Microsoft Excel.   
-2. Klikk Vis bestilling.
-3. Vis seksjonen Linjedetaljer.
-    * Linjen er merket som Forsendelse, og topptekstdelen viser at bestillingen har statusen Mottatt.  
-4. Lukk siden.
+## <a name="view-consumed-inventory"></a><span data-ttu-id="d0fed-108">Vise brukt beholdning</span><span class="sxs-lookup"><span data-stu-id="d0fed-108">View consumed inventory</span></span>
+1. <span data-ttu-id="d0fed-109">Gå til Leverandørsamarbeid > Forsendelseslager > Produkter mottatt fra forsendelseslager.</span><span class="sxs-lookup"><span data-stu-id="d0fed-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
+    * <span data-ttu-id="d0fed-110">Listen viser mottaksseddellinjene som ble generert da eierskap av forsendelseslageret ble endret fra leverandøren til kunden.</span><span class="sxs-lookup"><span data-stu-id="d0fed-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="d0fed-111">Du må kanskje gå til høyre for å se antall og annen informasjon.</span><span class="sxs-lookup"><span data-stu-id="d0fed-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="d0fed-112">Du kan bruke informasjonen i denne listen til å generere fakturaer for kunden.</span><span class="sxs-lookup"><span data-stu-id="d0fed-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="d0fed-113">Du kan også eksportere dataene til Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d0fed-113">You can also export the data to Microsoft Excel.</span></span>   
+2. <span data-ttu-id="d0fed-114">Klikk Vis bestilling.</span><span class="sxs-lookup"><span data-stu-id="d0fed-114">Click View purchase order.</span></span>
+3. <span data-ttu-id="d0fed-115">Vis seksjonen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="d0fed-115">Expand the Line details section.</span></span>
+    * <span data-ttu-id="d0fed-116">Linjen er merket som Forsendelse, og topptekstdelen viser at bestillingen har statusen Mottatt.</span><span class="sxs-lookup"><span data-stu-id="d0fed-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
+4. <span data-ttu-id="d0fed-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d0fed-117">Close the page.</span></span>
 
-## <a name="view-on-hand-inventory"></a>Vise lagerbeholdning
-1. Gå til Leverandørsamarbeid > Forsendelseslager > Forsendelseslager for beholdning.
-    * Siden Forsendelseslager for beholdning viser lageret du eier på kundens lager. Du kan vise flere dimensjoner, for eksempel område og lager, ved å klikke kategorien Visningsdimensjoner.   
-
+## <a name="view-on-hand-inventory"></a><span data-ttu-id="d0fed-118">Vise lagerbeholdning</span><span class="sxs-lookup"><span data-stu-id="d0fed-118">View on-hand inventory</span></span>
+1. <span data-ttu-id="d0fed-119">Gå til Leverandørsamarbeid > Forsendelseslager > Forsendelseslager for beholdning.</span><span class="sxs-lookup"><span data-stu-id="d0fed-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
+    * <span data-ttu-id="d0fed-120">Siden Forsendelseslager for beholdning viser lageret du eier på kundens lager.</span><span class="sxs-lookup"><span data-stu-id="d0fed-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="d0fed-121">Du kan vise flere dimensjoner, for eksempel område og lager, ved å klikke kategorien Visningsdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="d0fed-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
 

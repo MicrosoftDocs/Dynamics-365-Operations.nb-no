@@ -16,41 +16,41 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0bb995a95529be4d69fd9e82a2bb1fe473feb7f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 85b6d502f8dea32602d2fd5edc223a9660b863ad
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Vise et relatert konserninternt bilag fra en journal
+# <a name="view-a-related-intercompany-voucher-from-a-journal"></a><span data-ttu-id="2e540-103">Vise et relatert konserninternt bilag fra en journal</span><span class="sxs-lookup"><span data-stu-id="2e540-103">View a related intercompany voucher from a journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved postering av en konsernintern transaksjon fra økonomijournalen.
+<span data-ttu-id="2e540-104">Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved postering av en konsernintern transaksjon fra økonomijournalen.</span><span class="sxs-lookup"><span data-stu-id="2e540-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a>Postere en konsernintern journal
-1. Gå til Økonomijournaler.
-2. Klikk Ny.
-3. Merk den valgte raden i listen.
-4. Skriv inn eller velg navnet på den konserninterne journalen i Navn-feltet.
-5. Klikk Linjer.
-6. Merk den valgte raden i listen.
-7. Angi de ønskede verdiene i Konto-feltet.
-8. Angi eller velg en verdi i Beskrivelse-feltet.
-9. Skriv inn en verdi i feltet Beskrivelse.
-10. Lukk siden.
-11. Angi et tall i Debet-feltet.
-12. Skriv inn eller velg motregningsfirmaet i Motregningsfirma-feltet.
-13. Angi eller velg en verdi i Motregningsfirma-feltet.
-14. Lukk siden.
-15. Angi ønskede verdier i Motkonto-feltet.
-16. Klikk Poster.
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="2e540-105">Postere en konsernintern journal</span><span class="sxs-lookup"><span data-stu-id="2e540-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="2e540-106">Gå til Økonomijournaler.</span><span class="sxs-lookup"><span data-stu-id="2e540-106">Go to General journals.</span></span>
+2. <span data-ttu-id="2e540-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="2e540-107">Click New.</span></span>
+3. <span data-ttu-id="2e540-108">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2e540-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="2e540-109">Skriv inn eller velg navnet på den konserninterne journalen i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="2e540-110">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="2e540-110">Click Lines.</span></span>
+6. <span data-ttu-id="2e540-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2e540-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="2e540-112">Angi de ønskede verdiene i Konto-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="2e540-113">Angi eller velg en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="2e540-114">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="2e540-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="2e540-115">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="2e540-115">Close the page.</span></span>
+11. <span data-ttu-id="2e540-116">Angi et tall i Debet-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="2e540-117">Skriv inn eller velg motregningsfirmaet i Motregningsfirma-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="2e540-118">Angi eller velg en verdi i Motregningsfirma-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="2e540-119">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="2e540-119">Close the page.</span></span>
+15. <span data-ttu-id="2e540-120">Angi ønskede verdier i Motkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e540-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="2e540-121">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="2e540-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a>Vise relaterte konserninterne bilag
-1. Klikk Bilag.
-2. Klikk Beslektede bilag.
-3. Merk den valgte raden i listen.
-4. Klikk Bilag.
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="2e540-122">Vise relaterte konserninterne bilag</span><span class="sxs-lookup"><span data-stu-id="2e540-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="2e540-123">Klikk Bilag.</span><span class="sxs-lookup"><span data-stu-id="2e540-123">Click Voucher.</span></span>
+2. <span data-ttu-id="2e540-124">Klikk Beslektede bilag.</span><span class="sxs-lookup"><span data-stu-id="2e540-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="2e540-125">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2e540-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="2e540-126">Klikk Bilag.</span><span class="sxs-lookup"><span data-stu-id="2e540-126">Click Voucher.</span></span>
 
 

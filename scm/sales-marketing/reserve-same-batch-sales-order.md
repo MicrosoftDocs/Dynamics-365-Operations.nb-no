@@ -17,34 +17,34 @@ ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a24e5c2972ae1581de43ebcb448ed34bafdc0ad5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8e0f8f85609e7c3095f13738d43cdf5734018eaa
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservere samme parti for en salgsordre
+# <a name="reserve-the-same-batch-for-a-sales-order"></a><span data-ttu-id="3079d-103">Reservere samme parti for en salgsordre</span><span class="sxs-lookup"><span data-stu-id="3079d-103">Reserve the same batch for a sales order</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan du konfigurerer et produkt til å godta reservasjon for lager mot en enkelt satsvis jobb for lager.
+<span data-ttu-id="3079d-104">Denne artikkelen beskriver hvordan du konfigurerer et produkt til å godta reservasjon for lager mot en enkelt satsvis jobb for lager.</span><span class="sxs-lookup"><span data-stu-id="3079d-104">This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.</span></span>
 
-Samme partireservasjon gjør at du kan reservere beholdning for en salgsordrelinje mot ett lagerparti. En kunde som bestiller tapet, kan for eksempel be om at hele ordren fylles fra samme parti for å unngå manglende overensstemmelse mellom rullene. Hvis du vil definere et produkt slik at det bruker samme partireservasjon, må følgende innstillinger være aktive i varemodellgruppen, sporingsdimensjonsgruppen, og lagringsdimensjonsgruppen du tilordner til produktet:
+<span data-ttu-id="3079d-105">Samme partireservasjon gjør at du kan reservere beholdning for en salgsordrelinje mot ett lagerparti.</span><span class="sxs-lookup"><span data-stu-id="3079d-105">Same batch reservation lets you reserve inventory for a sales order line against a single batch of inventory.</span></span> <span data-ttu-id="3079d-106">En kunde som bestiller tapet, kan for eksempel be om at hele ordren fylles fra samme parti for å unngå manglende overensstemmelse mellom rullene.</span><span class="sxs-lookup"><span data-stu-id="3079d-106">For example, a customer who orders wallpaper can request that the whole order be filled from the same batch or lot, to avoid inconsistencies among the rolls.</span></span> <span data-ttu-id="3079d-107">Hvis du vil definere et produkt slik at det bruker samme partireservasjon, må følgende innstillinger være aktive i varemodellgruppen, sporingsdimensjonsgruppen, og lagringsdimensjonsgruppen du tilordner til produktet:</span><span class="sxs-lookup"><span data-stu-id="3079d-107">To set up a product to use same batch reservation, the following settings must be active in the item model group, tracking dimension group, and storage dimension group that you assign to the product:</span></span>
 
--   **Varemodellgrupper** – Varemodellgruppen må ha feltene **Samme partivalg** og **Konsolider krav** valgt i feltgruppen **Reservering** for beholdningspolicyer.
--   **Sporingsdimensjonsgrupper** – Sporingsdimensjonsgruppen må ha feltet **Dekningsplanlegg etter dimensjon** valgt for partinummeret.
--   **Lagringsdimensjonsgrupper** – Lagringsdimensjonsgruppen må ha feltet **Dekningsplanlegg etter dimensjon** valgt for **Område** og **Lager**.
+-   <span data-ttu-id="3079d-108">**Varemodellgrupper** – Varemodellgruppen må ha feltene **Samme partivalg** og **Konsolider krav** valgt i feltgruppen **Reservering** for beholdningspolicyer.</span><span class="sxs-lookup"><span data-stu-id="3079d-108">**Item model groups** – The item model group must have the **Same batch selection** and **Consolidate requirement** fields selected in the **Reservation** field group for inventory policies.</span></span>
+-   <span data-ttu-id="3079d-109">**Sporingsdimensjonsgrupper** – Sporingsdimensjonsgruppen må ha feltet **Dekningsplanlegg etter dimensjon** valgt for partinummeret.</span><span class="sxs-lookup"><span data-stu-id="3079d-109">**Tracking dimensions groups** – The tracking dimension group must have the **Coverage plan by dimension** field selected for the batch number.</span></span>
+-   <span data-ttu-id="3079d-110">**Lagringsdimensjonsgrupper** – Lagringsdimensjonsgruppen må ha feltet **Dekningsplanlegg etter dimensjon** valgt for **Område** og **Lager**.</span><span class="sxs-lookup"><span data-stu-id="3079d-110">**Storage dimensions groups** – The storage dimension group must have the **Coverage plan by dimension** field selected for **Site** and **Warehouse**.</span></span>
 
-Når du reserverer beholdning for et produkt på en salgsordrelinje som er definert for samme partivalg, prøver Microsoft Dynamics 365 for Finance and Operations å reservere det bestilte antallet fra ett lagerparti. Det tas også hensyn til eventuelle bestemte partiattributtbehov. Hvis antallet ikke kan fylles fra ett parti, vise siden **Samme partireservasjonskonflikt**. Denne siden beskriver problemene samt det du kan gjøre for å fortsette med reserveringen. Følgende forhold kan forhindre at partiet blir reservert:
+<span data-ttu-id="3079d-111">Når du reserverer beholdning for et produkt på en salgsordrelinje som er definert for samme partivalg, prøver Microsoft Dynamics 365 for Finance and Operations å reservere det bestilte antallet fra ett lagerparti.</span><span class="sxs-lookup"><span data-stu-id="3079d-111">When you reserve inventory for a product on a sales order line that is set up for same batch selection, Microsoft Dynamics 365 for Finance and Operations tries to reserve the ordered quantity from a single inventory batch.</span></span> <span data-ttu-id="3079d-112">Det tas også hensyn til eventuelle bestemte partiattributtbehov.</span><span class="sxs-lookup"><span data-stu-id="3079d-112">Any specific batch attribute requirements are also considered.</span></span> <span data-ttu-id="3079d-113">Hvis antallet ikke kan fylles fra ett parti, vise siden **Samme partireservasjonskonflikt**.</span><span class="sxs-lookup"><span data-stu-id="3079d-113">If the quantity can't be filled from a single batch, the **Same batch reservation conflict** page appears.</span></span> <span data-ttu-id="3079d-114">Denne siden beskriver problemene samt det du kan gjøre for å fortsette med reserveringen.</span><span class="sxs-lookup"><span data-stu-id="3079d-114">This page describes the issues and also the actions that you can take to continue with the reservation.</span></span> <span data-ttu-id="3079d-115">Følgende forhold kan forhindre at partiet blir reservert:</span><span class="sxs-lookup"><span data-stu-id="3079d-115">The following conditions might prevent the batch from being reserved:</span></span>
 
--   Partidisposisjonskoden har **Blokker reservering** for salg flagget som **Blokkert**.
--   Partiet er utløpt, basert på utløpsdatoen og eventuelle gjeldende salgbare dager for kunde. Varen kan fortsett vurderes for reservasjon hvis varemodellgruppen for varen er FEFO-datokontrollert, og hvis best-før-datoen er valgt som plukkekriteriet.
--   Partiet har ikke nok holdbarhetsdager igjen, basert på utløpsdatoen og best-før-datoen, i tillegg til eventuelle salgbare dager for kunde.
+-   <span data-ttu-id="3079d-116">Partidisposisjonskoden har **Blokker reservering** for salg flagget som **Blokkert**.</span><span class="sxs-lookup"><span data-stu-id="3079d-116">The batch disposition code has **Block reservation** for sales flagged as **Blocked**.</span></span>
+-   <span data-ttu-id="3079d-117">Partiet er utløpt, basert på utløpsdatoen og eventuelle gjeldende salgbare dager for kunde.</span><span class="sxs-lookup"><span data-stu-id="3079d-117">The batch has expired, based on the expiration date and any applicable customer sellable days.</span></span> <span data-ttu-id="3079d-118">Varen kan fortsett vurderes for reservasjon hvis varemodellgruppen for varen er FEFO-datokontrollert, og hvis best-før-datoen er valgt som plukkekriteriet.</span><span class="sxs-lookup"><span data-stu-id="3079d-118">The item can still be considered for reservation if the item model group for the item is First Expiry First Out (FEFO) date–controlled, and if the best-before date is selected as the pick criterion.</span></span>
+-   <span data-ttu-id="3079d-119">Partiet har ikke nok holdbarhetsdager igjen, basert på utløpsdatoen og best-før-datoen, i tillegg til eventuelle salgbare dager for kunde.</span><span class="sxs-lookup"><span data-stu-id="3079d-119">The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.</span></span>
 
 
 

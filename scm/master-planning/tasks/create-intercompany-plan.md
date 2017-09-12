@@ -16,48 +16,48 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7c7f466add55fb9a24c3fb8f1f92df712a8622e3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: da186f7ad74bb607fd6e7220d77c2f414789f29c
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-intercompany-plan"></a>Opprette en konsernintern plan
+# <a name="create-an-intercompany-plan"></a><span data-ttu-id="3bc88-103">Opprette en konsernintern plan</span><span class="sxs-lookup"><span data-stu-id="3bc88-103">Create an intercompany plan</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter en konsernintern plan. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+<span data-ttu-id="3bc88-104">Denne fremgangsmåten viser hvordan du oppretter en konsernintern plan.</span><span class="sxs-lookup"><span data-stu-id="3bc88-104">This procedure shows how to create an intercompany plan.</span></span> <span data-ttu-id="3bc88-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="3bc88-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-an-intercompany-planning-group"></a>Konfigurere en konsernintern planleggingsgruppe 
-1. Gå til konserninterne planleggingsgrupper.
-    * Hovedplanlegging > Oppsett > Konserninterne planleggingsgrupper  
-2. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Navn-feltet med verdien 10.
-3. Merk den valgte raden i listen.
-4. Klikk Slett.
-    * Dette trinnet er nødvendig for å forkorte kjøringen av den konserninterne planleggingen.   Konsernintern planlegging kjører hovedplanlegging i alle selskaper i en planleggingsgruppe, fra den laveste planleggingssekvensen.  
-5. Klikk Ja.
-6. Lukk siden.
+## <a name="set-up-an-intercompany-planning-group"></a><span data-ttu-id="3bc88-106">Konfigurere en konsernintern planleggingsgruppe</span><span class="sxs-lookup"><span data-stu-id="3bc88-106">Set up an intercompany planning group</span></span> 
+1. <span data-ttu-id="3bc88-107">Gå til konserninterne planleggingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="3bc88-107">Go to Intercompany planning groups.</span></span>
+    * <span data-ttu-id="3bc88-108">Hovedplanlegging > Oppsett > Konserninterne planleggingsgrupper</span><span class="sxs-lookup"><span data-stu-id="3bc88-108">Master planning > Setup > Intercompany planning groups</span></span>  
+2. <span data-ttu-id="3bc88-109">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="3bc88-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="3bc88-110">Du kan for eksempel filtrere på Navn-feltet med verdien 10.</span><span class="sxs-lookup"><span data-stu-id="3bc88-110">For example, filter on the Name field with a value of '10'.</span></span>
+3. <span data-ttu-id="3bc88-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3bc88-111">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="3bc88-112">Klikk Slett.</span><span class="sxs-lookup"><span data-stu-id="3bc88-112">Click Delete.</span></span>
+    * <span data-ttu-id="3bc88-113">Dette trinnet er nødvendig for å forkorte kjøringen av den konserninterne planleggingen.</span><span class="sxs-lookup"><span data-stu-id="3bc88-113">This step is necessary in order to shorten the intercompany planning run.</span></span>   <span data-ttu-id="3bc88-114">Konsernintern planlegging kjører hovedplanlegging i alle selskaper i en planleggingsgruppe, fra den laveste planleggingssekvensen.</span><span class="sxs-lookup"><span data-stu-id="3bc88-114">Intercompany planning will run master planning in all the companies in a planning group, starting from the lowest scheduling sequence.</span></span>  
+5. <span data-ttu-id="3bc88-115">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="3bc88-115">Click Yes.</span></span>
+6. <span data-ttu-id="3bc88-116">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3bc88-116">Close the page.</span></span>
 
-## <a name="create-an-intercompany-plan"></a>Opprette en konsernintern plan
-1. Klikk Konsernintern hovedplanlegging.
-    * Dette er i Hovedplanlegging-arbeidsområdet.  
-2. Klikk rullegardinknappen i feltet Konsernintern planleggingsgruppe for å åpne oppslaget.
-3. Klikk koblingen i den valgte raden i listen.
-    * Velg konsernintern planleggingsgruppe 10.  
-4. Angi 2 i feltet Antall konserninterne planleggingsgjentakelser.
-    * Konsernintern planleggingsgruppe 10 har to medlemmer. For å overføre forsinkelsene fra kildefirmaet (USMF) til kunden (DEMF), må du kjøre konsernintern i begge firmaene to ganger. Den første gjentakelsen vil overføre behovet og identifisere forsinkelsene i kildeselskapet (USMF). Den andre gjentakelsen vil overføre forsinkelsene fra USMF til DEMF.  
-5. Velg et alternativ i feltet Første gjentakelse.
-6. Velg Ny generering i feltet Første gjentakelse.
-7. Velg Ny generering i feltet Etterfølgende gjentakelser.
-8. Angi et tall i feltet Antall tråder.
-    * Dette representerer antall parallelle tråder som brukes til planlegging.  
-9. Klikk OK.
+## <a name="create-an-intercompany-plan"></a><span data-ttu-id="3bc88-117">Opprette en konsernintern plan</span><span class="sxs-lookup"><span data-stu-id="3bc88-117">Create an intercompany plan</span></span>
+1. <span data-ttu-id="3bc88-118">Klikk Konsernintern hovedplanlegging.</span><span class="sxs-lookup"><span data-stu-id="3bc88-118">Click Intercompany master planning.</span></span>
+    * <span data-ttu-id="3bc88-119">Dette er i Hovedplanlegging-arbeidsområdet.</span><span class="sxs-lookup"><span data-stu-id="3bc88-119">This is on the Master planning workspace.</span></span>  
+2. <span data-ttu-id="3bc88-120">Klikk rullegardinknappen i feltet Konsernintern planleggingsgruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="3bc88-120">In the Intercompany planning group field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="3bc88-121">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3bc88-121">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="3bc88-122">Velg konsernintern planleggingsgruppe 10.</span><span class="sxs-lookup"><span data-stu-id="3bc88-122">Select intercompany planning group 10.</span></span>  
+4. <span data-ttu-id="3bc88-123">Angi 2 i feltet Antall konserninterne planleggingsgjentakelser.</span><span class="sxs-lookup"><span data-stu-id="3bc88-123">In the Number of intercompany planning iterations field, enter '2'.</span></span>
+    * <span data-ttu-id="3bc88-124">Konsernintern planleggingsgruppe 10 har to medlemmer.</span><span class="sxs-lookup"><span data-stu-id="3bc88-124">Intercompany planning group 10 has two members.</span></span> <span data-ttu-id="3bc88-125">For å overføre forsinkelsene fra kildefirmaet (USMF) til kunden (DEMF), må du kjøre konsernintern i begge firmaene to ganger.</span><span class="sxs-lookup"><span data-stu-id="3bc88-125">In order to propagate the delays from the source company (USMF) to the customer company (DEMF), you will need to run intercompany in both companies two times.</span></span> <span data-ttu-id="3bc88-126">Den første gjentakelsen vil overføre behovet og identifisere forsinkelsene i kildeselskapet (USMF).</span><span class="sxs-lookup"><span data-stu-id="3bc88-126">The first iteration will propagate the demand and identify the delays in the source company (USMF).</span></span> <span data-ttu-id="3bc88-127">Den andre gjentakelsen vil overføre forsinkelsene fra USMF til DEMF.</span><span class="sxs-lookup"><span data-stu-id="3bc88-127">The second iteration will propagate the delays from USMF to DEMF.</span></span>  
+5. <span data-ttu-id="3bc88-128">Velg et alternativ i feltet Første gjentakelse.</span><span class="sxs-lookup"><span data-stu-id="3bc88-128">In the First iteration field, select an option.</span></span>
+6. <span data-ttu-id="3bc88-129">Velg Ny generering i feltet Første gjentakelse.</span><span class="sxs-lookup"><span data-stu-id="3bc88-129">In the First iteration field, select 'Regeneration'.</span></span>
+7. <span data-ttu-id="3bc88-130">Velg Ny generering i feltet Etterfølgende gjentakelser.</span><span class="sxs-lookup"><span data-stu-id="3bc88-130">In the Subsequent iterations field, select 'Regeneration'.</span></span>
+8. <span data-ttu-id="3bc88-131">Angi et tall i feltet Antall tråder.</span><span class="sxs-lookup"><span data-stu-id="3bc88-131">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="3bc88-132">Dette representerer antall parallelle tråder som brukes til planlegging.</span><span class="sxs-lookup"><span data-stu-id="3bc88-132">This represents the number of parallel threads used for planning.</span></span>  
+9. <span data-ttu-id="3bc88-133">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3bc88-133">Click OK.</span></span>
 
-## <a name="view-the-result-of-the-plan"></a>Vise resultatet av planen
-1. Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.
-2. Klikk koblingen i den valgte raden i listen.
-    * Klikk koblingen for StaticPlan. Du må være i selskapet USMF.  
-3. Klikk Planlagte bestillinger.
+## <a name="view-the-result-of-the-plan"></a><span data-ttu-id="3bc88-134">Vise resultatet av planen</span><span class="sxs-lookup"><span data-stu-id="3bc88-134">View the result of the plan</span></span>
+1. <span data-ttu-id="3bc88-135">Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="3bc88-135">In the Plan field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="3bc88-136">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3bc88-136">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="3bc88-137">Klikk koblingen for StaticPlan.</span><span class="sxs-lookup"><span data-stu-id="3bc88-137">Click the link for StaticPlan.</span></span> <span data-ttu-id="3bc88-138">Du må være i selskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="3bc88-138">You need to be in company USMF.</span></span>  
+3. <span data-ttu-id="3bc88-139">Klikk Planlagte bestillinger.</span><span class="sxs-lookup"><span data-stu-id="3bc88-139">Click Planned orders.</span></span>
 
 

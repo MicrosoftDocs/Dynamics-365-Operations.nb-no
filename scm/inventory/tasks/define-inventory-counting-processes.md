@@ -1,4 +1,4 @@
---- 
+---
 title: Definere prosesser for lageropptelling
 description: "Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,72 +17,71 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 62c60faafd9ad96ce636a08102bc8652f9fff870
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="define-inventory-counting-processes"></a>Definere prosesser for lageropptelling
+# <a name="define-inventory-counting-processes"></a><span data-ttu-id="0e333-103">Definere prosesser for lageropptelling</span><span class="sxs-lookup"><span data-stu-id="0e333-103">Define inventory counting processes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal. Den viser også hvordan du aktiverer opptellingspolicyer på et lager- og varenivå. Disse oppgavene vil vanligvis utføres av en lagersjef. Det er nødvendig med noen eksisterende frigitte produkter og lagre. Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF med alle lagerførte varer.
+<span data-ttu-id="0e333-104">Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal.</span><span class="sxs-lookup"><span data-stu-id="0e333-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="0e333-105">Den viser også hvordan du aktiverer opptellingspolicyer på et lager- og varenivå.</span><span class="sxs-lookup"><span data-stu-id="0e333-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="0e333-106">Disse oppgavene vil vanligvis utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="0e333-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="0e333-107">Det er nødvendig med noen eksisterende frigitte produkter og lagre.</span><span class="sxs-lookup"><span data-stu-id="0e333-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="0e333-108">Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF med alle lagerførte varer.</span><span class="sxs-lookup"><span data-stu-id="0e333-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 
 
-## <a name="create-a-counting-group"></a>Opprette en opptellingsgruppe
-1. Gå til Lagerstyring > Oppsett > Beholdning > Opptellingsgrupper.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Opptellingsgruppe.
-4. Skriv inn en verdi i Navn-feltet.
-5. Velg et alternativ i Opptellingskode-feltet.
-    * Manuelt – Tar med linjer hver gang du kjører jobben. Du kan med andre ord bestemme telleintervallet for tellegruppen.  Periode - Tar med linjer for perioden i opptellingsjournalen når periodeintervallet er utløpt.   Null på lager - Hvis lagerbeholdningen når null (0), genereres linjer i opptellingsjournalen når jobben kjøres. Hvis lagerbeholdningen når 0 etter en opptelling, genereres linjer neste gang du starter opptellingen.   Minimum – Setter inn linjer i opptellingsjournalen hvis lagerbeholdningen er lik eller mindre enn angitt minimum.  
-    * Valgfritt: Hvis du har angitt Periode i opptellingskodefeltet, må du skrive inn intervallet for perioden i dette Opptellingsperiode-feltet. Enheten for intervaller er dager.  
-    * Når du kjører jobben for oppretting av nye linjer i opptellingsjournalen, opprettes nye linjer på intervallet spesifisert i dette feltet, uavhengig av hvor ofte du kjører den samme jobben. Hvis opptellingsperiode for eksempel er satt til 7, og journallinjene sist ble generert for en telling den 1. januar, hvis en annen jobb startes den 5. januar, hvis det ikke har gått sju dager, genereres ingen linjer i journalen for periodeintervallet. Hvis du starter jobben på nytt 8. januar, genereres linjer for perioden i opptellingsjournalen siden det har gått 7 dager.  
-6. Klikk Lagre.
+## <a name="create-a-counting-group"></a><span data-ttu-id="0e333-109">Opprette en opptellingsgruppe</span><span class="sxs-lookup"><span data-stu-id="0e333-109">Create a counting group</span></span>
+1. <span data-ttu-id="0e333-110">Gå til Lagerstyring > Oppsett > Beholdning > Opptellingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="0e333-110">Go to Inventory management > Setup > Inventory > Counting groups.</span></span>
+2. <span data-ttu-id="0e333-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0e333-111">Click New.</span></span>
+3. <span data-ttu-id="0e333-112">Skriv inn en verdi i feltet Opptellingsgruppe.</span><span class="sxs-lookup"><span data-stu-id="0e333-112">In the Counting group field, type a value.</span></span>
+4. <span data-ttu-id="0e333-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="0e333-114">Velg et alternativ i Opptellingskode-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-114">In the Counting code field, select an option.</span></span>
+    * <span data-ttu-id="0e333-115">Manuelt – Tar med linjer hver gang du kjører jobben.</span><span class="sxs-lookup"><span data-stu-id="0e333-115">Manual – Includes lines every time you run the job.</span></span> <span data-ttu-id="0e333-116">Du kan med andre ord bestemme telleintervallet for tellegruppen.</span><span class="sxs-lookup"><span data-stu-id="0e333-116">In other words, you decide the counting interval for the counting group.</span></span>  <span data-ttu-id="0e333-117">Periode - Tar med linjer for perioden i opptellingsjournalen når periodeintervallet er utløpt.</span><span class="sxs-lookup"><span data-stu-id="0e333-117">Period – Includes lines for the period in the counting journal when the period interval has expired.</span></span>   <span data-ttu-id="0e333-118">Null på lager - Hvis lagerbeholdningen når null (0), genereres linjer i opptellingsjournalen når jobben kjøres.</span><span class="sxs-lookup"><span data-stu-id="0e333-118">Zero in stock – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run.</span></span> <span data-ttu-id="0e333-119">Hvis lagerbeholdningen når 0 etter en opptelling, genereres linjer neste gang du starter opptellingen.</span><span class="sxs-lookup"><span data-stu-id="0e333-119">If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.</span></span>   <span data-ttu-id="0e333-120">Minimum – Setter inn linjer i opptellingsjournalen hvis lagerbeholdningen er lik eller mindre enn angitt minimum.</span><span class="sxs-lookup"><span data-stu-id="0e333-120">Minimum – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.</span></span>  
+    * <span data-ttu-id="0e333-121">Valgfritt: Hvis du har angitt Periode i opptellingskodefeltet, må du skrive inn intervallet for perioden i dette Opptellingsperiode-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-121">Optional: If you have specified Period in the Counting code field, you must type the interval for the period in the Counting period field.</span></span> <span data-ttu-id="0e333-122">Enheten for intervaller er dager.</span><span class="sxs-lookup"><span data-stu-id="0e333-122">The unit for intervals is days.</span></span>  
+    * <span data-ttu-id="0e333-123">Når du kjører jobben for oppretting av nye linjer i opptellingsjournalen, opprettes nye linjer på intervallet spesifisert i dette feltet, uavhengig av hvor ofte du kjører den samme jobben.</span><span class="sxs-lookup"><span data-stu-id="0e333-123">When you run the job for creating new lines in the counting journal, new lines are created at the interval specified in this field, regardless of how often you run the same job.</span></span> <span data-ttu-id="0e333-124">Hvis opptellingsperiode for eksempel er satt til 7, og journallinjene sist ble generert for en telling den 1. januar, hvis en annen jobb startes den 5. januar, hvis det ikke har gått sju dager, genereres ingen linjer i journalen for periodeintervallet.</span><span class="sxs-lookup"><span data-stu-id="0e333-124">For example, if Counting period is set to 7, and journal lines were last generated for a count on January 1, if another job is started on January 5, seven days have not passed and so no lines are generated in the journal for that period interval.</span></span> <span data-ttu-id="0e333-125">Hvis du starter jobben på nytt 8. januar, genereres linjer for perioden i opptellingsjournalen siden det har gått 7 dager.</span><span class="sxs-lookup"><span data-stu-id="0e333-125">If you start the job again on January 8, lines are generated for the period in the counting journal, because 7 days have passed.</span></span>  
+6. <span data-ttu-id="0e333-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0e333-126">Click Save.</span></span>
 
-## <a name="create-a-counting-journal-name"></a>Opprette et navn på opptellingsjournal
-1. Gå til Lagerstyring > Oppsett > Journalnavn > Beholdning.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Velg Opptelling en Journaltype-feltet.
-    * Valgfritt: Du kan velge en annen bilagsserie-ID hvis du vil ha en bestemt nummerserie for bilaget IDene som genereres når du oppretter opptellingsjournaler. Bilagsserier opprettes på Nummerserier-siden.  
-6. Velg et alternativ i Detaljnivå-feltet.
-    * Dette er detaljnivået som brukes når journalen posteres.  
-    * Valgfritt: Du kan endre verdien i Reservering-feltet. Dette er metoden som brukes til å reservere varer under opptelling.   
-    * Manuelt – Varene reserveres manuelt i Reservering-skjemaet.   Automatisk – Ordreantallet er reservert fra varens tilgjengelige lagerbeholdning.   Nedbryting – reservasjonen er en del av hovedplanleggingen for transaksjonen.  
-7. Klikk Lagre.
+## <a name="create-a-counting-journal-name"></a><span data-ttu-id="0e333-127">Opprette et navn på opptellingsjournal</span><span class="sxs-lookup"><span data-stu-id="0e333-127">Create a counting journal name</span></span>
+1. <span data-ttu-id="0e333-128">Gå til Lagerstyring > Oppsett > Journalnavn > Beholdning.</span><span class="sxs-lookup"><span data-stu-id="0e333-128">Go to Inventory management > Setup > Journal names > Inventory.</span></span>
+2. <span data-ttu-id="0e333-129">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0e333-129">Click New.</span></span>
+3. <span data-ttu-id="0e333-130">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-130">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="0e333-131">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="0e333-131">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="0e333-132">Velg Opptelling en Journaltype-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-132">In the Journal type field, select 'Counting'.</span></span>
+    * <span data-ttu-id="0e333-133">Valgfritt: Du kan velge en annen bilagsserie-ID hvis du vil ha en bestemt nummerserie for bilaget IDene som genereres når du oppretter opptellingsjournaler.</span><span class="sxs-lookup"><span data-stu-id="0e333-133">Optional: you can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals.</span></span> <span data-ttu-id="0e333-134">Bilagsserier opprettes på Nummerserier-siden.</span><span class="sxs-lookup"><span data-stu-id="0e333-134">Voucher series are created in the Number sequences page.</span></span>  
+6. <span data-ttu-id="0e333-135">Velg et alternativ i Detaljnivå-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-135">In the Detail level field, select an option.</span></span>
+    * <span data-ttu-id="0e333-136">Dette er detaljnivået som brukes når journalen posteres.</span><span class="sxs-lookup"><span data-stu-id="0e333-136">This is the level of detail that is applied when the journal is posted.</span></span>  
+    * <span data-ttu-id="0e333-137">Valgfritt: Du kan endre verdien i Reservering-feltet.</span><span class="sxs-lookup"><span data-stu-id="0e333-137">Optional: you can change the value in the Reservation field.</span></span> <span data-ttu-id="0e333-138">Dette er metoden som brukes til å reservere varer under opptelling.</span><span class="sxs-lookup"><span data-stu-id="0e333-138">This is the method used to reserve items during counting.</span></span>   
+    * <span data-ttu-id="0e333-139">Manuelt – Varene reserveres manuelt i Reservering-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="0e333-139">Manual – The items are reserved manually in the Reservation form.</span></span>   <span data-ttu-id="0e333-140">Automatisk – Ordreantallet er reservert fra varens tilgjengelige lagerbeholdning.</span><span class="sxs-lookup"><span data-stu-id="0e333-140">Automatic – The order quantity is reserved from the available, on-hand inventory for the item.</span></span>   <span data-ttu-id="0e333-141">Nedbryting – reservasjonen er en del av hovedplanleggingen for transaksjonen.</span><span class="sxs-lookup"><span data-stu-id="0e333-141">Explosion – The reservation is part of the master planning of the transaction.</span></span>  
+7. <span data-ttu-id="0e333-142">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0e333-142">Click Save.</span></span>
 
-## <a name="set-standard-counting-journal-name"></a>Angi standard navn på opptellingsjournal
-1. Gå til Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring.
-2. Klikk kategorien Journaler.
-3. Klikk rullegardinknappen i Opptelling-feltet for å åpne oppslaget.
-4. Velg journaltypen du opprettet tidligere.
-    * Denne journalen blir deretter standard journalnavn for lagerjournaler av typen Opptelling.  
-5. Klikk kategorien Generelt.
-    * Valgfritt: Velg dette alternativet hvis du vil låse en vare under opptellingsprosessen for å forhindre oppdateringer for følgesedler, plukklister eller plukklisteregistreringer.  
+## <a name="set-standard-counting-journal-name"></a><span data-ttu-id="0e333-143">Angi standard navn på opptellingsjournal</span><span class="sxs-lookup"><span data-stu-id="0e333-143">Set standard counting journal name</span></span>
+1. <span data-ttu-id="0e333-144">Gå til Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="0e333-144">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="0e333-145">Klikk kategorien Journaler.</span><span class="sxs-lookup"><span data-stu-id="0e333-145">Click the Journals tab.</span></span>
+3. <span data-ttu-id="0e333-146">Klikk rullegardinknappen i Opptelling-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0e333-146">In the Counting field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="0e333-147">Velg journaltypen du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="0e333-147">Select the journal you previously created.</span></span>
+    * <span data-ttu-id="0e333-148">Denne journalen blir deretter standard journalnavn for lagerjournaler av typen Opptelling.</span><span class="sxs-lookup"><span data-stu-id="0e333-148">This journal will then be the default journal name for inventory journals of the Counting type.</span></span>  
+5. <span data-ttu-id="0e333-149">Klikk kategorien Generelt.</span><span class="sxs-lookup"><span data-stu-id="0e333-149">Click the General tab.</span></span>
+    * <span data-ttu-id="0e333-150">Valgfritt: Velg dette alternativet hvis du vil låse en vare under opptellingsprosessen for å forhindre oppdateringer for følgesedler, plukklister eller plukklisteregistreringer.</span><span class="sxs-lookup"><span data-stu-id="0e333-150">Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.</span></span>  
 
-## <a name="set-the-counting-policy-for-an-item"></a>Angi opptellingspolicyen for en vare
-1. Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.
-2. I listen klikker du koblingen for varenummeret på produktet som du vil angi opptellingspolicyer for.
-    * Vær oppmerksom på at du må velge en vare som spores i beholdning. Et produkt som ikke er lagerført, kan ikke telles. Hvis du bruker demonstrasjonsdataselskapet USMF, kan du velge vare A0001.  
-3. Klikk Rediger.
-4. Aktiver/deaktiver utvidelsen av delen Administrer lager.
-5. Klikk rullegardinknappen i Opptellingsgruppe-feltet for å åpne oppslaget.
-6. I listen klikker du på opptellingsgruppen du opprettet tidligere.
-    * Dette produktet vil nå bli inkludert når journallinjer for lageropptelling opprettes ved hjelp av denne opptellingsgruppen.  
-7. Klikk Lagre.
+## <a name="set-the-counting-policy-for-an-item"></a><span data-ttu-id="0e333-151">Angi opptellingspolicyen for en vare</span><span class="sxs-lookup"><span data-stu-id="0e333-151">Set the counting policy for an item</span></span>
+1. <span data-ttu-id="0e333-152">Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="0e333-152">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="0e333-153">I listen klikker du koblingen for varenummeret på produktet som du vil angi opptellingspolicyer for.</span><span class="sxs-lookup"><span data-stu-id="0e333-153">In the list, click on the link for the Item number of the product that you want to set counting policies on.</span></span>
+    * <span data-ttu-id="0e333-154">Vær oppmerksom på at du må velge en vare som spores i beholdning.</span><span class="sxs-lookup"><span data-stu-id="0e333-154">Note that you need to select an item that is inventory tracked.</span></span> <span data-ttu-id="0e333-155">Et produkt som ikke er lagerført, kan ikke telles.</span><span class="sxs-lookup"><span data-stu-id="0e333-155">A non-stocked product can't be counted.</span></span> <span data-ttu-id="0e333-156">Hvis du bruker demonstrasjonsdataselskapet USMF, kan du velge vare A0001.</span><span class="sxs-lookup"><span data-stu-id="0e333-156">If you are using USMF demo data you can select item A0001.</span></span>  
+3. <span data-ttu-id="0e333-157">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="0e333-157">Click Edit.</span></span>
+4. <span data-ttu-id="0e333-158">Aktiver/deaktiver utvidelsen av delen Administrer lager.</span><span class="sxs-lookup"><span data-stu-id="0e333-158">Toggle the expansion of the Manage inventory section.</span></span>
+5. <span data-ttu-id="0e333-159">Klikk rullegardinknappen i Opptellingsgruppe-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0e333-159">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="0e333-160">I listen klikker du på opptellingsgruppen du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="0e333-160">In the list, click on the counting group you previously created.</span></span>
+    * <span data-ttu-id="0e333-161">Dette produktet vil nå bli inkludert når journallinjer for lageropptelling opprettes ved hjelp av denne opptellingsgruppen.</span><span class="sxs-lookup"><span data-stu-id="0e333-161">This product will now be included when inventory counting journal lines are created using this counting group.</span></span>  
+7. <span data-ttu-id="0e333-162">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0e333-162">Click Save.</span></span>
 
-## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a>Angi opptellingspolicyen for en vare i et bestemt lager
-1. Klikk Administrer lager i handlingsruten.
-2. Klikk Lagervarer.
-3. Klikk Ny.
-4. Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.
-5. I listen velger du lageret du vil definere bestemte opptellingspolicyer for.
-6. Klikk rullegardinknappen i Opptellingsgruppe-feltet for å åpne oppslaget.
-7. Velg en opptellingsgruppe i listen.
-    * Her kan du velge en bestemt opptellingsgruppe som skal gjelde for varen i det bestemte lageret som du har valgt. Når tellingen blir utført i dette lageret, overstyrer denne opptellingspolicyen den generelle opptellingspolicyen for varen.  
-8. Klikk Lagre.
-
+## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a><span data-ttu-id="0e333-163">Angi opptellingspolicyen for en vare i et bestemt lager</span><span class="sxs-lookup"><span data-stu-id="0e333-163">Set the counting policy for an item in a specific warehouse</span></span>
+1. <span data-ttu-id="0e333-164">Klikk Administrer lager i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="0e333-164">On the Action Pane, click Manage inventory.</span></span>
+2. <span data-ttu-id="0e333-165">Klikk Lagervarer.</span><span class="sxs-lookup"><span data-stu-id="0e333-165">Click Warehouse items.</span></span>
+3. <span data-ttu-id="0e333-166">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0e333-166">Click New.</span></span>
+4. <span data-ttu-id="0e333-167">Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0e333-167">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="0e333-168">I listen velger du lageret du vil definere bestemte opptellingspolicyer for.</span><span class="sxs-lookup"><span data-stu-id="0e333-168">In the list, select the warehouse you want set up specific counting policies for.</span></span>
+6. <span data-ttu-id="0e333-169">Klikk rullegardinknappen i Opptellingsgruppe-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0e333-169">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="0e333-170">Velg en opptellingsgruppe i listen.</span><span class="sxs-lookup"><span data-stu-id="0e333-170">In the list, select a counting group</span></span>
+    * <span data-ttu-id="0e333-171">Her kan du velge en bestemt opptellingsgruppe som skal gjelde for varen i det bestemte lageret som du har valgt.</span><span class="sxs-lookup"><span data-stu-id="0e333-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="0e333-172">Når tellingen blir utført i dette lageret, overstyrer denne opptellingspolicyen den generelle opptellingspolicyen for varen.</span><span class="sxs-lookup"><span data-stu-id="0e333-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
+8. <span data-ttu-id="0e333-173">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0e333-173">Click Save.</span></span>
 
