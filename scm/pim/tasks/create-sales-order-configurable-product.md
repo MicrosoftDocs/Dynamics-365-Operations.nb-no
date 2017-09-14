@@ -1,7 +1,7 @@
 --- 
 title: Opprette en salgsordre for et konfigurerbart produkt
 description: "Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på en salgsordre."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 10/12/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis

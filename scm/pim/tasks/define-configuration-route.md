@@ -1,7 +1,7 @@
 --- 
 title: Definere konfigurasjonsruter
 description: "Denne prosedyren fokuserer på å definere en konfigurasjonsrute som bestemmer rekkefølgen som konfigurasjonsgrupper vises i."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
