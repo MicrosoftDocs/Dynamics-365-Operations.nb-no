@@ -1,7 +1,7 @@
 ---
 title: "Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling"
 description: "Dette emnet gir informasjon om statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling. Statistiske dimensjonsmedlemmere kan brukes som tildelingsgrunnlag i policyer som kostnadsdistribusjon og kostnadstildeling. De kan også brukes til å rapportere ikke-monetært kostnadsforbruk."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
