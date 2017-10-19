@@ -1,5 +1,8 @@
 # [Velkommen til Dynamics 365 for Retail](index.md)
 
+# Komme i gang
+## [Hva er nytt eller endret?](get-started/whats-new.md)
+
 # Betalinger
 ## [Betalingsmåter](payment-methods.md)
 ## [Kredittkortoppsett, autorisasjon og registrering](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -174,8 +177,9 @@
 #### [Administrere kontoer for detaljhandel og enheter fra hovedkvarter](set-up-activation-accounts-validate-devices-hq.md)
 #### [Aktivering av enhet for Retail POS](dev-itpro/retail-device-activation.md)
 #### [Sikkert skybasert Retail POS](dev-itpro/secure-retail-cloud-pos.md)
-### [Konfigurasjon og installasjon av maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md)
-### [Hendelser for detaljhandelskomponenter for diagnose og feilsøking](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
+### [Konfigurasjon og installasjon av maskinvarestasjon for Retail](retail-hardware-station-configuration-installation.md)
+### [Massedistribusjon av selvbetjeningskomponenter for Retail](dev-itpro/retail-mass-deployment.md)
+### [Hendelser for Retail-komponenter for diagnose og feilsøking](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Bruke en distribuerbar pakke](../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ## Oppgradering og N-1-støtte
