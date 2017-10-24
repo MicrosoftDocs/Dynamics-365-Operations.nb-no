@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefin
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Angi en radkode i en raddefinisjon
 
-I raddefinisjoner identifiserer tall eller etiketter **Radkode**-cellen hver linje i raddefinisjonen. Du kan angi radkoden for å referere til dataene i beregninger og totaler.
+I raddefinisjoner identifiserer tall eller etiketter **Radkode**-cellen hver linje i raddefinisjonen. Du kan angi radkoden for å referere til data i beregninger og totaler.
 
 ### <a name="row-code-requirements"></a>Krav til radkode
 
@@ -68,7 +68,7 @@ Eksemplene nedenfor er gyldige rad oder:
 ## <a name="add-a-description"></a>Legge til en beskrivelse
 Beskrivelsescellen inneholder beskrivelsen av de økonomiske dataen i raden i rapporten, for eksempel "Inntekt" eller "Nettoinntekt". Teksten i **Beskrivelse**-cellen vises i rapporten nøyaktig slik du skriver den inn i raddefinisjonen. 
 > [!NOTE]
-> Bredden til beskrivelseskolonnen i rapporten angis i kolonnedefinisjonen. Hvis teksten i **Beskrivelse**-kolonnen i raddefinisjonen er lang, kontrollerer du bredden på **DESC**-kolonnen. Når du bruker dialogboksen **Sett inn rader fra**, er verdiene i **Beskrivelse**-kolonnen segmentverdiene eller dimensjonsverdiene fra de økonomiske dataene. Du kan sette inn rader for å legge til beskrivende tekst, for eksempel en overskrift eller total for en inndeling, og for å legge til formatering, for eksempel en linje før en totalrad. Hvis rapporten inneholder et rapporteringstre, kan du inkludere mer tekst som er definert for rapporteringsenhetene i rapporteringstreet. Du kan også begrense tilleggsteksten til en bestemt rapporteringsenhet.
+> Bredden til beskrivelseskolonnen i rapporten angis i kolonnedefinisjonen. Hvis teksten i **Beskrivelse**-kolonnen i raddefinisjonen er lang, kontrollerer du bredden på **DESC**-kolonnen. Når du bruker dialogboksen **Sett inn rader fra**, er verdiene i **Beskrivelse**-kolonnen segmentverdiene eller dimensjonsverdiene fra de økonomiske dataene. Du kan sette inn rader for å legge til beskrivelsestekst, for eksempel en avsnittsoverskrift eller en avsnittssum, og for å legge til formatering, for eksempel en linje før en radsum. Hvis rapporten inneholder et rapporteringstre, kan du inkludere mer tekst som er definert for rapporteringsenhetene i rapporteringstreet. Du kan også begrense tilleggsteksten til en bestemt rapporteringsenhet.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Legge til beskrivelsen for en linje i en rapport
 
@@ -112,12 +112,12 @@ Beskrivelsescellen inneholder beskrivelsen av de økonomiske dataen i raden i ra
     | ---                           | Enkel understreking                   | Setter en enkel strek under alle kolonnene i rapporten.                                                                                                                                                     |
     | ===                           | Dobbel understreking                   | Setter en dobbel strek under alle kolonnene i rapporten.                                                                                                                                                     |
     | LINE1                         | Tynn linje                          | Tegner en enkel tynn linje på tvers av siden.                                                                                                                                                                      |
-    | LINE2                         | Tykk linje                         | Tegner en enkel tykk linje på tvers av siden.                                                                                                                                                                     |
-    | LINE3                         | Prikket linje                        | Tegner en enkel prikket linje på tvers av siden.                                                                                                                                                                    |
+    | LINJE2                         | Tykk linje                         | Tegner en enkelt tykk linje over siden.                                                                                                                                                                     |
+    | LINJE3                         | Prikket linje                        | Tegner en enkel prikket linje på tvers av siden.                                                                                                                                                                    |
     | LINE4                         | Tykk linje og tynn linje           | Tegner en dobbel tynn linje på tvers av siden. Den øverste linjen er tykk, og den nederste er tynn.                                                                                                                       |
     | LINE5                         | Tynn linje og tykk linje           | Tegner en dobbel tynn linje på tvers av siden. Den øverste linjen er tynn, og den nederste er tykk.                                                                                                                       |
     | BXB BXC                       | Innrammet rad                          | Tegner en ramme rundt rapportradene som begynner med **BXB**-raden og slutter med **BXC**-raden.                                                                                                               |
-    | REM                           | Kommentar                             | Identifiserer en rad som en kommentarrad og som ikke skal skrives ut på rapporten. En kommentarrad kan for eksempel forklare formateringsteknikkene.                                                            |
+    | KOM                           | Kommentar                             | Identifiserer en rad som er en kommentarrad, og som ikke skal skrives ut på rapporten. En kommentarrad kan for eksempel forklare formateringsteknikkene du bruker.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Sorter                               | Sorterer utgifter eller inntekter, sorterer en faktisk rapport eller avviksrapport for budsjett etter største avviket eller sorterer radbeskrivelsene alfabetisk.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Angi relaterte formler/rader/enheter
@@ -133,7 +133,7 @@ Cellen **Relaterte formler/rader/enheter** har mange funksjoner. Avhengig av hvi
 
 Bruk en radtotalformel for å legge til eller trekke fra beløp i andre rader. En formel for å opprette en radtotal kan inneholde operatorene + og - for å kombinere enkeltradkoder og områder. Områder er angitt med et kolon (:). Formelen kan inneholde opptil 1 024 tegn. Her er et eksempel på en standard totalformelen: 400+420+430+450+460GJELD+EGENKAPITAL520:546520:546-GJELD
 
-### <a name="components-of-a-row-total-formula"></a>Komponentene i en radtotalformel
+### <a name="components-of-a-row-total-formula"></a>Komponenter i en radsumformel
 
 Når du oppretter en radtotalformel, må du bruke radkoder til å angi hvilke rader som leges til eller trekkes fra i gjeldende raddefinisjonen, og du må bruke operatorer for å angi hvordan rader kombineres. Totalrader og beløpsrader kan brukes i en hvilken som helst kombinasjon. **Obs!**  Alle totalrader som er i et område blir utelatt. Hvis du vil beregne en totalsum, kan du angi radområde. Hvis den første raden i et område er en totalrad, vil denne raden inkluderes i den nye totalen. Tabellen nedenfor beskriver hvordan operatorer brukes i radtotalformler.
 
@@ -143,9 +143,9 @@ Når du oppretter en radtotalformel, må du bruke radkoder til å angi hvilke ra
 | :        | 100:330         | Legger sammen totalene for alle rader mellom rad 100 og rad 330.    |
 | -        | 100-330         | Trekker beløpet i rad 100 fra beløpet i rad 330. |
 
-### <a name="create-a-row-total"></a>Opprette en radtotal
+### <a name="create-a-row-total"></a>Opprette en radsum
 
-1.  I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1.  Klikk **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
 2.  Dobbeltklikk **Formatkode**-cellen i raddefinisjonen, og velg **TOT**.
 3.  I cellen **Relaterte formler/rader/enheter** skriver du inn totalformelen.
 
@@ -177,7 +177,7 @@ I tilhørende rapportering tilordner du én eller flere basisrader i raddefinisj
 -   **CBR**-rader skrives ikke ut på den fullførte rapporten.
 -   **CBR**-formatkoden og den tilknyttede radkoden plasseres over raden eller inndelingen som viser tilknyttede beregninger.
 
-I en kolonnedefinisjon indikerer **CALC**-kolonnetypen en kolonne som angir en formel i **Formel**-raden. Denne formelen brukes på dataene for denne kolonnen i rapporten, og bruker nøkkelordet Baserow for å basere beregninger på **CBR**-formatkodene i raden. I raddefinisjon definerer **CBR**-formatkode basisraden for kolonnene som beregner en prosentdel av eller multiplum av basisraden for hver rad i rapporten. Du kan ha flere **CBR**-formatkoder i et radformat, for eksempel én for nettosalg, én for bruttosalg og én for totale utgifter. Vanligvis brukes **CBR**-formatkoden til å opprette en prosent for kontoer som sammenlignes med en totallinjen. En basisrad brukes for alle beregninger til en annen basisrad er definert. Du må definere en **CBR**-formatkode for start og en **CBR**-formatkode for slutt. Hvis du for eksempel vil finne utgifter som en prosentandel av nettosalg, kan du dividere verdien i hver utgiftsrad med verdien i nettosalgraden. I dette tilfellet er nettosalgsraden basisraden. Du kan definere en kolonnedefinisjon som rapporterer gjeldende resultat og resultat hittil i år, sammen med en basisprosent for hvert resultat, som vist i eksemplet nedenfor. Start med et detaljert resultatregnskap.
+I en kolonnedefinisjon indikerer kolonnetypen **BRGN** en kolonne som angir en formel i **Formel**-raden. Denne formelen brukes på dataene for denne kolonnen i rapporten, og bruker nøkkelordet Baserow for å basere beregninger på **CBR**-formatkodene i raden. I raddefinisjon definerer **CBR**-formatkode basisraden for kolonnene som beregner en prosentdel av eller multiplum av basisraden for hver rad i rapporten. Du kan ha flere **CBR**-formatkoder i et radformat, for eksempel én for nettosalg, én for bruttosalg og én for totale utgifter. Vanligvis brukes **CBR**-formatkoden til å opprette en prosent for kontoer som sammenlignes med en totallinjen. En basisrad brukes for alle beregninger til en annen basisrad er definert. Du må definere en **CBR**-formatkode for start og en **CBR**-formatkode for slutt. Hvis du for eksempel vil finne utgifter som en prosentandel av nettosalg, kan du dividere verdien i hver utgiftsrad med verdien i nettosalgraden. I dette tilfellet er nettosalgsraden basisraden. Du kan definere en kolonnedefinisjon som rapporterer gjeldende resultat og resultat hittil i år, sammen med en basisprosent for hvert resultat, som vist i eksemplet nedenfor. Start med et detaljert resultatregnskap.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Velge basisraden i en raddefinisjon for en kolonneberegning
 
@@ -217,21 +217,21 @@ Sorteringskoder sorterer kontoer eller verdier, sorterer en faktisk rapport elle
 
 I eksemplet nedenfor, vil verdiene i kolonne D for rapporten sorteres i stigende rekkefølge for radene 160 gjennom 490. I tillegg vil de absolutte verdiene i kolonne G for rapporten sorteres i synkende rekkefølge for radene 610 til 940.
 
-| Radkode | Beskrivelse                                         | Formatkode | Relaterte formler/rader/enheter | Normal saldo | Kolonnebegrensning | Kobling til finansdimensjoner |
+| Radkode | Beskrivelse                                         | Formatkode | Relaterte formler/rader/enheter | Vanlig saldo | Kolonnebegrensning | Kobling til finansdimensjoner |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Sortert etter månedlige avvik i stigende rekkefølge       | DES         |                             |                |                    |                              |
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Salg                                               |             |                             | K              |                    | 4100                         |
+| 160      | Salg                                               |             |                             | C              |                    | 4100                         |
 | 190      | Salgsreturer                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Renteinntekter                                     |             |                             | K              |                    | 7000                         |
+| 490      | Renteinntekter                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Sortert etter absolutt avvik hittil i år i synkende rekkefølge | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Salg                                               |             |                             | K              |                    | 4100                         |
+| 610      | Salg                                               |             |                             | C              |                    | 4100                         |
 | 640      | Salgsreturer                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Renteinntekter                                     |             |                             | K              |                    | 7000                         |
+| 940      | Renteinntekter                                     |             |                             | C              |                    | 7000                         |
 
 Her er et eksempel på rapporten som genereres.
 
@@ -272,7 +272,7 @@ Lønn|97 624|65 573|(32 051)|653 884|441 664|(212 220)| |Salgsrabatter|36 383|24
 
 Valutaformatering gjelder for et regnskapsbeløp, og den inneholder valutasymbolet. Følgende alternativer er tilgjengelige:
 
--   **Valutasymbol** – valutasymbolet for rapporten. Denne verdien overstyrer innstillingen **Regionale innstillinger** for firmainformasjonen.
+-   **Valutasymbol** – Valutasymbolet for rapporten. Denne verdien overstyrer innstillingen **Regionale innstillinger** for firmainformasjonen.
 -   **Negative tall** – Negative tall kan ha et minustegn (-), de kan vises i parentes eller de kan ha en trekant (∆).
 -   **Desimaler** – Antall sifre som skal vises etter desimaltegnet.
 -   **Tekst for nullverdioverstyring** – Teksten som skal inkluderes i rapporten når beløpet er 0 (null). Denne teksten vises som den siste linjen i **Eksempel**-området. 
@@ -303,7 +303,7 @@ Prosentformatering inkluderer prosenttegnet (%). Følgende alternativer er tilgj
 
 Bruk kategorien for egendefinert formatering for å opprette en egendefinert formatoverstyring. Følgende alternativer er tilgjengelige:
 
--   **Type** – Det egendefinerte formatet.
+-   **Type** – Det tilpassede formatet.
 -   **Tekst for nullverdioverstyring** – Teksten som skal inkluderes i rapporten når beløpet er 0 (null). Denne teksten vises som den siste linjen i **Eksempel**-området. 
     > [!NOTE]
     >  Hvis utskrift er skjult for nullverdier eller ingen periodeaktivitet, skjules denne teksten.
@@ -365,7 +365,7 @@ Du kan begrense en rad til en eksisterende registerkode. Kolonnedefinisjonen må
 > [!NOTE]
 > Registerkodebegrensningen for en rad overstyrer registerkodebegrensningene i kolonnedefinisjon for denne raden.
 
-### <a name="account-and-transaction-attributes"></a>Konto-og transaksjonsattributter
+### <a name="account-and-transaction-attributes"></a>Konto- og transaksjonsattributter
 
 Noen regnskapssystemer støtter kontoattributter og transaksjonsattributter i de økonomiske dataen. Disse attributtene fungerer som virtuelle kontosegmenter, og kan inneholde tilleggsinformasjon om konto eller transaksjon. Denne tilleggsinformasjonen kan være konto-ID-er, parti-ID-er, postnumre eller andre attributter. Hvis regnskapssystemet støtter attributter, kan du bruke kontoattributter eller transaksjonsattributter som radmodifikatorer i raddefinisjonen. Hvis du vil ha informasjon om hvordan du overstyrer radinformasjon, kan du se avsnittet "Overstyre en kolonnedefinisjon" tidligere i denne artikkelen.
 
@@ -378,14 +378,14 @@ Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske
 |----------------------------------|----------------------------------------------------|
 | Finansdimensjoner             | Kobling til finansdimensjoner                       |
 | Eksternt regneark               | Kobling til regneark                                  |
-| Finansdimensjoner + regneark | Koble finansdimensjoner + regneark           |
+| Finansdimensjoner + regneark | Kobling til finansdimensjoner + regneark           |
 | Management Reporter-rapport       | Management Reporter-rapport                         |
 
-### <a name="specify-a-dimension-or-range"></a>Angi dimensjon eller område
+### <a name="specify-a-dimension-or-range"></a>Angi en dimensjon eller et område
 
-1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
+1.  Åpne raddefinisjonen som skal endres, i Rapportutforming.
 2.  Dobbeltklikk en celle i kolonnen **Kobling til finansdimensjoner**.
-3.  I dialogboksen **Dimensjoner** dobbeltklikker du en celle under dimensjonsnavnet.
+3.  Dobbeltklikk en celle under dimensjonsnavnet i dialogboksen **Dimensjoner**.
 4.  I dialogboksen for dimensjonen velger du **Enkeltvis eller område**.
 5.  I **Fra**-feltet angir du startdimensjonen eller klikker ![Bla gjennom](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bla gjennom") for å søke etter tilgjengelige dimensjoner. Hvis du vil angi et intervall av dimensjoner, kan du angi sluttdimensjonen i **Til**-feltet.
 6.  Klikk **OK** for å lukke dialogboksen for dimensjonen. Dialogboksen **Dimensjoner** viser oppdatert dimensjon eller område.
@@ -464,7 +464,7 @@ Tabellen nedenfor beskriver feltene i dialogboksen **Dimensjoner**.
 | Totalkontoer   | I **Navn**-feltet angir eller blar du gjennom etter en dimensjon for totalkontoer. **Formel**-feltet fylles ut med formelen i cellen **Kobling til finansdimensjoner** for denne totalkontoen i rapportdefinisjonen.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Legge til dimensjonsverdisett i en raddefinisjon
-Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjonsverdisettet kan inneholde verdier i bare én enkelt dimensjon, men du kan bruke et dimensjonsverdisett i flere raddefinisjoner, kolonnedefinisjoner, rapporteringstredefinisjoner og rapportdefinisjoner. Du kan også kombinere dimensjonsverdisett i en rapportdefinisjon. Når en endring i de økonomiske dataen krever at du endrer dimensjonsverdisettet, kan du oppdatere definisjonen for dimensjonsverdisettet, og denne oppdateringen gjelder for alle områder som bruker dimensjonsverdisettet. Hvis du for eksempel ofte viser et område med verdier som skal kobles til de økonomiske dataene, for eksempel verdiene fra 5 100 til 5 600, kan du tilordne dette området til et kontosett med navnet Salg. Når du har opprettet et sett med dimensjonsverdier, kan du velge dette settet som den økonomiske datakoblingen. Som et annet eksempel, hvis verdiområdet 5100 til 5600 er tilordnet salg, og 4175 er tilordnet rabatter, kan du angi totalt salg ved å trekke fra rabatter på salg. Denne operasjonen er angitt som **(5100:5600)-4175**.
+Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjonsverdisettet kan inneholde verdier i bare én enkelt dimensjon, men du kan bruke et dimensjonsverdisett i flere raddefinisjoner, kolonnedefinisjoner, rapporteringstredefinisjoner og rapportdefinisjoner. Du kan også kombinere dimensjonsverdisett i en rapportdefinisjon. Når en endring i de økonomiske dataen krever at du endrer dimensjonsverdisettet, kan du oppdatere definisjonen for dimensjonsverdisettet, og denne oppdateringen gjelder for alle områder som bruker dimensjonsverdisettet. Hvis du for eksempel ofte viser et område med verdier som skal kobles til de økonomiske dataene, for eksempel verdiene fra 5 100 til 5 600, kan du tilordne dette området til et kontosett med navnet Salg. Når du har opprettet et sett med dimensjonsverdier, kan du velge dette settet som koblingen til finansdataene. Et annet eksempel: Hvis du har verdiområdet 5100 til 5600 tilordnet til Salg og 4175 tilordnet til Rabatter, kan du finne det totale salget ved å trekke Rabatter fra Salg. Denne operasjonen er angitt som **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Opprette er sett med dimensjonsverdier
 
@@ -476,11 +476,11 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 6.  I dialogboksen **Konto** velger du kontonavnet i listen, eller søker etter posten i **Søk**-feltet. Klikk deretter **OK**.
 7.  Gjenta trinn 5 til 6 i **Til**-kolonnen for å utforme en formel for denne operatoren.
 8.  Når formelen er fullført, klikker du **OK**.
-9.  I dialogboksen **Behandle dimensjonssett** klikker du **Lukk**.
+9.  Klikk **Lukk** i dialogboksen **Behandle dimensjonssett**.
 
-### <a name="update-a-set-of-dimension-values"></a>Oppdatere er sett med dimensjonsverdier
+### <a name="update-a-set-of-dimension-values"></a>Oppdatere et sett med dimensjonsverdier
 
-1.  Åpne rad-, kolonne eller tredefinisjonen som skal endres i Rapportutforming.
+1.  Åpne rad-, kolonne- eller tredefinisjonen som skal endres, i Rapportutforming.
 2.  Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3.  Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
 4.  Velg dimensjonsverdisettet i listen som skal oppdateres, og klikk deretter **Endre**.
@@ -500,7 +500,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 
 ### <a name="delete-a-dimension-set"></a>Slette et dimensjonssett
 
-1.  Åpne rad-, kolonne eller tredefinisjonen som skal endres i Rapportutforming.
+1.  Åpne rad-, kolonne- eller tredefinisjonen som skal endres, i Rapportutforming.
 2.  Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3.  Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
 4.  Velg settet som skal slettes, og klikk deretter **Slett**. Klikk **Ja** for å slette dimensjonsverdisettet permanent.

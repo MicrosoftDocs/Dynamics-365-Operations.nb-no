@@ -16,13 +16,13 @@ ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -57,11 +57,11 @@ En kolonnedefinisjon kan inneholde to til 255 kolonner.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Slette en kolonne fra en kolonnedefinisjon
 
-1.  I Rapportutforming klikker du **Kolonnedefinisjoner**, og deretter åpner du kolonnedefinisjonen som skal endres.
+1.  Klikk **Kolonnedefinisjoner** i Rapportutforming, og åpne deretter kolonnedefinisjonen som skal endres.
 2.  Velg kolonnen du vil slette.
-3.  På **Rediger**-menyen klikker du **Slett kolonne**.
+3.  Klikk **Slett kolonne** på **Rediger**-menyen.
 
-## <a name="contents-of-a-column-definition"></a>Innholdet i en kolonnedefinisjon
+## <a name="contents-of-a-column-definition"></a>Innhold i en kolonnedefinisjon
 En kolonnedefinisjon inneholder følgende informasjon:
 
 -   En kolonne med beskrivelsene for raddefinisjonen
@@ -71,7 +71,7 @@ En kolonnedefinisjon inneholder følgende informasjon:
 
 Denne informasjonen vises i følgende områder i kolonnedefinisjonen:
 
--   Overskriftsområdet i kolonnedefinisjonen inneholder overskriftsteksten og formatering som vises i rapporten. En overskrift kan gjelde for én enkelt kolonne med data, kan strekke seg over flere kolonner eller kan gjelde betinget for kolonner. Kolonnedefinisjonen kan inneholde så mange rader for kolonneoverskrifter som du trenger. **OBS!**  Kolonneoverskrifter gjelder for hver kolonne av data i rapporten. Topptekster i rapporter gjelder for hele rapporten. Du definerer topptekster i rapporter i kategorien **Topptekst og bunntekst** i rapportdefinisjonen.
+-   Overskriftsområdet i kolonnedefinisjonen inneholder overskriftsteksten og formatering som vises i rapporten. Et hode kan gjelde for én datakolonne, kan strekke seg over flere kolonner eller kan gjelde for kolonner på en betinget basis. Kolonnedefinisjonen kan inneholde så mange kolonnehoderader som du trenger. **OBS!**  Kolonneoverskrifter gjelder for hver kolonne av data i rapporten. Topptekster i rapporter gjelder for hele rapporten. Du definerer topptekster i rapporter i kategorien **Topptekst og bunntekst** i rapportdefinisjonen.
 -   Detaljradene for kolonnen er radene under radoverskriftene i kolonnedefinisjonen. Detaljradene for kolonnen definerer informasjonen som er inkludert i rapporten. Tabellen nedenfor viser og beskriver detaljradene for kolonnen.
 
     | Navn på detaljrad for kolonne                                                | Beskrivelse                                                                                            |
@@ -142,7 +142,7 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 ### <a name="create-a-column-header"></a>Opprette en kolonneoverskrift
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
-2.  Dobbeltklikk en overskriftscelle.
+2.  Dobbeltklikk en hodecelle.
 3.  I dialogboksen **Kolonneoverskrift** skriver du inn overskriften. Du kan også klikke **Sett inn autotekst** og velg et alternativ.
 4.  I feltet **Formateringsalternativer** velger du et format for overskriften.
 5.  I feltet **Spre fra** skriver du inn bokstaven på kolonnen som overskriften skal starte over. I feltet **Spre til** skriver du inn bokstaven på kolonnen som overskriften skal slutte over.
@@ -182,7 +182,7 @@ Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotek
 
 ### <a name="create-a-conditional-spanning-header"></a>Opprette en betinget overskrift som strekker seg over flere kolonner
 
-En betinget overskrift som strekker seg over flere kolonner kan strekke seg over flere kolonner basert på bestemte periodedata. Hvis du for eksempel har en budsjettrapport for regnskapsåret og vil vise de faktiske budsjettene for de siste månedene sammen med de forventede budsjettene for kommende måneder, kan du for eksempel bruke et betinget overskrift som strekker seg over flere kolonner for automatisk å oppdatere overskriften i rapporten. Vær oppmerksom på følgende situasjoner når du oppretter en betinget overskrift som strekker seg over flere kolonner:
+En betinget overskrift som strekker seg over flere kolonner kan strekke seg over flere kolonner basert på bestemte periodedata. Hvis du for eksempel har en budsjettrapport for regnskapsåret og vil vise de faktiske budsjettene for de siste månedene sammen med de forventede budsjettene for kommende måneder, kan du for eksempel bruke et betinget overskrift som strekker seg over flere kolonner for automatisk å oppdatere overskriften i rapporten. Vær oppmerksom på følgende situasjoner når du oppretter et betinget spredningshode:
 
 -   Stoppbetingelser (**Spre til**-feltet) som samsvares før en startbetingelse (**Spre fra**-feltet), ignoreres. Hvis for eksempel kolonne B har spre-betingelsen definert som BASE+1 til BASE, er BASE i kolonne C og BASE+1 er i kolonne D. I dette tilfellet ignoreres stoppbetingelsen i kolonne C, og utskriften av overskriften starter i kolonne D.
 -   Hvis du angir kolonneoverskrifter som overlapper hverandre, kan de overlappe når de skrives ut på rapporten. Rapporten genereres, men følgende advarsel vises i feltet **Status for rapportkø**: "Kolonneoverskrifter bruker av basisoverlapping med andre kolonneoverskriftene og kan føre til overlappende tekst." Overskriftsdefinisjonen for kolonne B er for eksempel B til BASE+1, og overskriftsdefinisjonen for kolonne D er BASE+1 til F. I dette tilfellet skrives overskriften ut oppå hverandre og kan ikke leses. Når BASE brukes i definisjon for **Spre fra / Spre til**, må du passe på å vise rapporten som genereres, for å se om overskriftene overlapper hverandre.
@@ -192,7 +192,7 @@ En betinget overskrift som strekker seg over flere kolonner kan strekke seg over
 #### <a name="create-a-conditional-spanning-header"></a>Opprette en betinget overskrift som strekker seg over flere kolonner
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
-2.  Dobbeltklikk en overskriftscelle.
+2.  Dobbeltklikk en hodecelle.
 3.  I dialogboksen **Kolonneoverskrift** skriver du inn overskriften. Du kan også klikke **Sett inn autotekst** og velg et alternativ.
 4.   I feltet **Formateringsalternativer** velger du en formateringsstil for overskriften.
 5.  Angi en periode i forhold til basisperioden som angis når rapporten genereres. I feltene **Spre fra** og **Spre til** angir du én av følgende verdier: **BASE**, **BASE-X** eller **BASE+X**, der X er antall perioder fra basisperioden. Hvis du for eksempel angir **BASE** i **Spre fra**-feltet, starter den betingede kolonneoverskriften som strekker seg over flere kolonner, i kolonneoverskriften der rapportdefinisjonen **Basisperiode**-verdi er lik kolonnedefinisjonens **BASE**-verdi. Den avslutter i kolonnen som er angitt i **Spre til**-feltet. Hvis spredningen er BASE til M og rapportdefinisjonens **Basisperiode**-verdi er **4**, starter derfor overskriften i kolonnen er perioden er satt til **4** og slutter ved kolonne M. Overskrifter starter og stopper bare på utskriftskolonner.
@@ -209,10 +209,10 @@ Jenny oppretter en rapport for en dynamisk seks måneders prognose. Hun vil at o
 | Overskrift 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Overskrift 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Kolonnetype         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Registerkode/attributtkategori |      | FAKTISK        | BUDSJETT2012    | FAKTISK        | BUDSJETT2012    | FAKTISK        | BUDSJETT2012    | FAKTISK        | BUDSJETT2012    | FAKTISK        | BUDSJETT2012    | FAKTISK        | BUDSJETT2012    |
+| Registerkode/attributtkategori |      | FAKTISK        | BUDSJETT 2012    | FAKTISK        | BUDSJETT 2012    | FAKTISK        | BUDSJETT 2012    | FAKTISK        | BUDSJETT 2012    | FAKTISK        | BUDSJETT 2012    | FAKTISK        | BUDSJETT 2012    |
 | Regnskapsår         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Periode              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
-| Perioder som er dekket     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
+| Perioder som dekkes     |      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      | Tidsbestemt      |
 | Kolonnebredde        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Utskriftskontroll       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
@@ -236,7 +236,7 @@ Når hun er ferdig med å skrive inn informasjonen, klikker Jenny **OK**. Derett
 | Sett inn autotekst    | Ingen valg er gjort. |
 | Formateringsalternativer     | Boks                   |
 | Justering      | Ingen valg er gjort. |
-| Spre fra        | K                     |
+| Spre fra        | C                     |
 | Spre til          | BASE+2                |
 
 Hver gang rapporten genereres vil ordet "Faktisk" skrives ut over kolonnene som inneholder faktiske data, og ordet "Budsjett" skrives ut over kolonnene som inneholder budsjettet prognoser. I tillegg vil antall kolonner justeres for hver måned.
@@ -282,10 +282,10 @@ Cellen **Ekstra mellomrom før kolonne** angir bredden på skilletegnet mellom k
 
 Cellen **Format/valutaoverstyring** angir formateringen til desimal-, valuta- og prosentbeløpene i kolonnen. Denne formateringen overstyrer all formatering som er angitt i rapportdefinisjonen eller systemstandardene.
 
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilordne en format/valutaoverstyring til en rapportkolonne
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilordne en overstyring av formatvaluta til en rapportkolonne
 
-1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
-2.  Dobbeltklikk en **Format/valutaoverstyring**-celle i en beløpskolonne.
+1.  Åpne kolonnedefinisjonen som skal endres, i Rapportutforming.
+2.  Dobbeltklikk en celle for **Format-/valutaoverstyring** i en beløpskolonne.
 3.  I dialogboksen **Overstyre format** velger du alternativer for formatering.
 
 ### <a name="add-a-print-control-code"></a>Legge til en kontrollkode for utskrift
@@ -317,10 +317,10 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Legge til kontrollkoder for utskrift i en rapportkolonne
 
-1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
-2.  Dobbeltklikk cellen **Utskriftskontroll**.
+1.  Åpne kolonnedefinisjonen som skal endres, i Rapportutforming.
+2.  Dobbeltklikk **Utskriftskontroll**-cellen.
 3.  I dialogboksen **Utskriftkontroll** velger du en kode i listen **Velg alternativer for utskriftskontroll**. Hvis du vil velge mer enn én kode, holder du nede CTRL-tasten mens du merker kodene.
-4.  Velg et alternativ i feltet **Alternativer for betinget utskrift**. **(Ingen)** er valgt som standard. Du kan bare velge én kode om gangen for betinget utskrift.
+4.  Velg et alternativ i feltet **Alternativer for betinget utskrift**. Som standard er **(ingen)** valgt. Du kan bare velge én kode om gangen for betinget utskrift.
 5.  Klikk **OK**.
 
 > [!TIP]
@@ -349,12 +349,12 @@ Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Viser økonomiske data eller data fra et Excel-regneark når du bruker kolonnen <strong>Kobling til finansdimensjoner</strong> eller <strong>Kobling til regneark</strong> i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for de etterfølgende radene: <ul>
-    <li><strong>Registerkode/attributtkategori</strong> ACTUAL</li>
-    <li><strong>Registerkode/attributtkategori</strong> ACTUAL</li>
+    <td>Vis finansdata eller data fra et Excel-regneark når du bruker kolonnen <strong>Kobling til finansdimensjoner</strong> eller <strong>Kobling til regneark</strong> i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for følgende rader: <ul>
+    <li><strong>Posteringskode/attributtkategori:</strong> FAKTISK</li>
+    <li><strong>Posteringskode/attributtkategori:</strong> FAKTISK</li>
     <li><strong>Regnskapsår:</strong> BASE</li>
     <li><strong>Periode:</strong> BASE</li>
-    <li><strong>Tidsrom som er dekket:</strong> PERIODIC</li>
+    <li><strong>Perioder som dekkes:</strong> Tidsbestemt</li>
     <li><strong>Kolonnebredde:</strong> 14</li>
     </ul>
 Du kan endre disse standardinnstillingene.</td>
@@ -373,7 +373,7 @@ Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr class="odd">
     <td>ACCT (kontokoder)</td>
-    <td>Viser segmentverdiene eller dimensjonsverdiene for de økonomiske dataene som gjelder for hver rad. Fullstendige rapporter for konto- og transaksjonsdetaljer skrives den fullstendig kvalifiserte kontoen ut (for eksempel <strong>110140-070-0101</strong>). Hvis det er angitt områder i kolonnen <strong>Kobling til finansdimensjoner</strong> i en tilknyttet raddefinisjon, omsluttes området av hakeparenteser og behandles som én enkelt verdi (for eksempel <strong>[110140:110700]-070-[0101:0200]</strong>). For økonomiske rapporter og rapporter på høyt nivå som er en kombinasjon av flere kontoer, blir koblingen for økonomiske data fra raddefinisjonen skrevet ut (for eksempel <strong>1100:1200</strong>).</td>
+    <td>Viser segmentverdiene eller dimensjonsverdiene for de økonomiske dataene som gjelder for hver rad. For detaljrapporter for kontoer og transaksjoner, skrives den fullt kvalifiserte kontoen ut (for eksempel <strong>110140-070-0101</strong>). Hvis områder har blitt angitt i kolonnen <strong>Kobling til finansdimensjoner</strong> i en tilknyttet raddefinisjon, omsluttes området med klammeparenteser og behandles som om det var én verdi (for eksempel <strong>[110140:110700]-070-[0101:0200]</strong>). For finansrapporter og rapporter på et høyt nivå som er en kombinasjon av flere kontoer, skrives finansdatakoblingen fra raddefinisjonen ut (for eksempel <strong>1100:1200</strong>).</td>
     </tr>
     <tr class="even">
     <td>FILL</td>
@@ -381,19 +381,19 @@ Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr class="odd">
     <td>PAGE</td>
-    <td>Setter inn et loddrett sideskift i rapporten. Kolonnene som er til høyre for <strong>PAGE</strong>-kolonnen vises på en annen side.</td>
+    <td>Setter inn et loddrett sideskift i rapporten. Kolonnene som vises til høyre for kolonnen <strong>SIDE</strong>, vises på en annen side.</td>
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Viser data som er trukket ut fra et Excel-regneark. Når du velger kolonnetypen <strong>WKS</strong>, angis standardinnstillingene automatisk for de etterfølgende radene: <ul>
-    <li><strong>Regnskapsår:</strong> PERIODIC</li>
+    <td>Viser data som er trukket ut fra et Excel-regneark. Når du velger kolonnetypen <strong>WKS</strong>, angis standardinnstillingene automatisk for følgende rader: <ul>
+    <li><strong>Regnskapsår:</strong> tidsbestemt</li>
     <li><strong>Periode:</strong> BASE</li>
     </ul>
 Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>Hvis regnskapssystemet støtter attributter, vises et konto- eller transaksjonsattributt i kolonnen. Et attributt, som må gjelde for hele kontoen, trekker ut den underliggende konto- eller transaksjonsinformasjonen fra de økonomiske dataen. Attributter på kontonivå viser data fra kontoen, og attributter på transaksjonsnivå viser data som oppstod da transaksjonen ble postert. Hvis du velger <strong>ATTR</strong> som kolonnetype, kan du angi attributtkategorien i detaljraden <strong>Registerkode/attributtkategori</strong> i kolonnedefinisjonen.</td>
+    <td>Hvis regnskapssystemet støtter attributter, vises et konto- eller transaksjonsattributt i kolonnen. Et attributt, som må gjelde for hele kontoen, trekker ut den underliggende konto- eller transaksjonsinformasjonen fra de økonomiske dataen. Attributter på kontonivå viser data fra kontoen, og attributter på transaksjonsnivå viser data som oppstod på det tidspunktet da transaksjonen ble postert. Hvis du velger <strong>ATTR</strong> som kolonnetype, angir du en attributtkategori i detaljraden <strong>Posteringskode/attributtkategori</strong> for kolonnedefinisjonen.</td>
     </tr>
     </tbody>
     </table>
@@ -435,9 +435,9 @@ Cellen **Periode** identifiserer regnskapsperiodene som kolonnen skal inneholde.
 
 Du kan gå utover grensene for regnskapsåret i noen av spesifikasjonene for perioden, og du kan blande år i et område av perioder. Du kan for eksempel angi periodene som **BASE-5** (for å representere de siste seks periodene) og kjøre en rapport som har basisperiode 2. I dette tilfellet viser rapporten data for de to første periodene i det angitte regnskapsåret og de fire siste periodene i forrige regnskapsår.
 
-### <a name="specify-the-periods-for-an-fd-column"></a>Angi perioder for en FD-kolonne
+### <a name="specify-the-periods-for-an-fd-column"></a>Angi periodene for en FD-kolonne
 
-1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
+1.  Åpne kolonnedefinisjonen som skal endres, i Rapportutforming.
 2.  I en **FD**-kolonne dobbeltklikker du cellen i **Periode**-raden, og deretter velger du et alternativ i listen.
 3.  Fullfør formelen på formellinjen over navigasjonsruten eller i **Periode**-cellen. Erstatt alle nummertegn (\#) med den aktuelle verdien.
 
@@ -465,7 +465,7 @@ Attributter er økonomisk dataverdier som ytterligere definerer en konto eller t
 
 1.  Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2.  Dobbeltklikk **Attributtfilter**-cellen for en **FD**-kolonne.
-3.  I dialogboksen **Attributtfilter** dobbeltklikker en celle i **Attributt**-kolonnen, og deretter velger du filtertypen.
+3.  Dobbeltklikk en celle i **Attributt**-kolonnen i dialogboksen **Attributtfilter**, og velg deretter filtertypen.
 4.  Hvis du vil begrense resultatene ytterligere, kan du angi et område i kolonnene **Fra** og **Til**. **Fra**-cellen må inneholde en positiv verdi.
 5.  Klikk **OK**.
 
@@ -475,11 +475,11 @@ Følgende eksempel viser en del av en kolonnebeskrivelse som har et kontoattribu
 
 |                              | A    | B                    |
 |------------------------------|------|----------------------|
-| Kolonnetype                  | DESC | FD                   |
-| Registerkode/attributtkategori |      | FAKTISK               |
+| Kolonnetype                  | BSKR | FD                   |
+| Posteringskode/attributtkategori |      | FAKTISK               |
 | Regnskapsår                  |      | BASE                 |
 | Periode                       |      | 1:BASE               |
-| Perioder som er dekket              |      | PERIODIC             |
+| Perioder som dekkes              |      | PERIODIC             |
 | ...                          |      |                      |
 | Kolonnebredde                 | 30   |                      |
 | ...                          |      |                      |
@@ -487,7 +487,7 @@ Følgende eksempel viser en del av en kolonnebeskrivelse som har et kontoattribu
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensjonsfilteret i en kolonnedefinisjon
 
-Et dimensjonsfilter brukes til å begrense **FD**-kolonnen til bestemte dimensjonsverdier. Filteret kan inneholde én enkelt dimensjon, et område med dimensjoner eller en gruppe av dimensjoner. Filteret kan også inneholde dimensjonsverdisett. Siden dimensjonsverdier kan variere, trenger ikke et ..\financial-dimensions\dimension-based system samsvare med en nøyaktig lengde. Filteret brukes, uavhengig av om rapporten omfatter et rapporteringstre. Du kan bruke jokertegn (\* eller ?) i hvilken som helst posisjon. Når du angir flere kontoer, setter du inn et komma mellom kontoene, slik som i følgende eksempel: +Konto=\[1200\], +Konto=\[1100\], Avdeling=\[01?\] Hvis du vil motta alle avdelinger for en bestemt konto, kan du utelate avdelingsdimensjonen fra dimensjonsfilteret. Begge følgende dimensjonsfiltre behandles for eksempel på samme måte:
+Et dimensjonsfilter brukes til å begrense **FD**-kolonnen til bestemte dimensjonsverdier. Filteret kan inkludere én dimensjon, et dimensjonsintervall eller en gruppe med dimensjoner. Filteret kan også inneholde dimensjonsverdisett. Siden dimensjonsverdier kan variere, trenger ikke et ..\financial-dimensions\dimension-based system samsvare med en nøyaktig lengde. Filteret brukes, uavhengig av om rapporten omfatter et rapporteringstre. Du kan bruke jokertegn (\* eller ?) i hvilken som helst posisjon. Når du angir flere kontoer, setter du inn et komma mellom kontoene, slik som i følgende eksempel: +Konto=\[1200\], +Konto=\[1100\], Avdeling=\[01?\] Hvis du vil motta alle avdelinger for en bestemt konto, kan du utelate avdelingsdimensjonen fra dimensjonsfilteret. Begge følgende dimensjonsfiltre behandles for eksempel på samme måte:
 
 -   +Konto=\[1100\],Avdeling
 -   +Konto=\[1100\]

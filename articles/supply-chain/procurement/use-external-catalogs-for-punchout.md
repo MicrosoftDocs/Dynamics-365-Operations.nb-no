@@ -16,13 +16,13 @@ ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 01955aefb27bd18809b35fd025c9dd1b8eb70520
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 035c5d15e5508c78dd66a349defd534bfecc96bb
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Avhengig av tillatelsene dine, kan du endre bestiller, juridisk enhet for innkj�
 Hvis du vil ha mer informasjon om policyer, kan du se [Innkjøpspolicyer](../procurement/purchase-policies.md).
 
 - For å finne eksterne kataloger for bestemte innkjøpskategorier skriver du inn tekst i katalogsøkefeltet.
-- Hvis du vil legge til produkter fra ekstern katalog for en leverandør på leverandørens webområde, klikker du den eksterne katalogen. Deretter legger du til produkter i handlekurven og sjekker ut. Handlekurvlinjene overføres til Microsoft Dynamics 365.
+- Hvis du vil legge til produkter fra ekstern katalog for en leverandør på leverandørens webområde, klikker du den eksterne katalogen. Legg deretter til produkter i handlekurven, og sjekk ut. Handlekurvene overføres til Microsoft Dynamics 365.
 
 Hvis det finnes flere alternativer for innkjøpskategoriene, velger du den riktige innkjøpskategorien før du legger til linjene i rekvisisjonen.
 Når linjer er lagt til en rekvisisjon, kan du legge til flere linjer uten å bruke eksterne kataloger. Du kan også fortsette å bruke eksterne kataloger til å legge til linjer.

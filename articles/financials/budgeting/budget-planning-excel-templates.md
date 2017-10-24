@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -133,7 +133,7 @@ Klikk pilen for en åpne en tilleggsmeny. Velg **Lås**.
 
 Ja, de fleste standard Excel-funksjonene virker i budsjettplanmaler. Vi anbefaler å bruke fargekoding slik at brukere kan skille mellom skrivebeskyttede og redigerbare kolonner. Betinget formatering kan brukes til å fremheve problematiske områder i budsjettet. Kolonnesummer kan enkelt presenteres ved hjelp av standard Excel-formler over tabellen.
 
-Du kan også opprette og bruke pivottabeller og diagrammer for flere grupperinger og visualiseringer av budsjettdata. I **Data**-kategorien i **Tilkoblinger**-gruppen klikker du **Oppdater alle**, og klikker deretter **Tilkoblingsegenskaper**. Klikk kategorien **Bruk**. Under **Oppdater** merker du av for **Oppdater data når filen åpnes**. 
+Du kan også opprette og bruke pivottabeller og diagrammer for flere grupperinger og visualiseringer av budsjettdata. I **Data**-kategorien i **Tilkoblinger**-gruppen klikker du **Oppdater alle**, og klikker deretter **Tilkoblingsegenskaper**. Klikk kategorien **Bruk**. Under **Oppdater** velger du avmerkningsboksen **Oppdater data når filen åpnes**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 

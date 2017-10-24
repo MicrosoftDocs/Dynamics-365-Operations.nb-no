@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -79,7 +79,7 @@ Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjone
 
 Når du har oppretter en blokkgruppe, må du tilordne den til minst ett firma. Du kan deretter opprette rapport-, rad-, kolonne- og rapporteringstredefinisjoner og lagre dem i byggeblokkgruppen. Du må lukke alle byggeblokker før du starter fremgangsmåten nedenfor.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Firmaer**.
-2.  I dialogboksen **Firmaer** velger du firmaet som det skal tilordnes en byggeblokkgruppe til.
+2.  Velg firmaet du vil tilordne en byggeblokkgruppe for, i dialogboksen **Firmaer**.
 3.  Klikk **Endre**.
 4.  I dialogboksen **Endre firma**, i feltet **Byggeblokkgruppe**, velger du byggeblokkgruppen å tilordne til firmaet, eller klikker **Ny** for å opprette en ny byggeblokkgruppe.
 5.  Klikk **OK** for å tilordne byggeblokkgruppen.
@@ -96,7 +96,7 @@ Når en byggeblokkgruppen er opprettet og brukes, kan du vise alle byggeblokker 
 ### <a name="save-a-building-block-group-under-a-new-name"></a>Lagre en byggeblokkgruppe med et nytt navn
 
 Du kan lagre en eksisterende byggeblokkgruppe med et nytt navn. Du kan deretter endre den nye byggeblokkgruppen uten å endre den opprinnelige byggeblokkgruppen.
-1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
+1.  Klikk **Byggeblokkgrupper** på **Firma**-menyen i Rapportutforming.
 2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som skal lagres med et nytt navn.
 3.  Klikk **Lagre som**.
 4.  Angi et nytt navn og en beskrivelse for byggeblokkgruppen.
@@ -106,10 +106,10 @@ Du kan lagre en eksisterende byggeblokkgruppe med et nytt navn. Du kan deretter 
 
 Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom byggeblokkgrupper eller Dynamics 365 for Finance and Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
-2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som skal eksporteres, og deretter klikker du **Eksporter**.
+2.  Velg byggeblokkgruppen som skal eksporteres, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Eksporter**.
 3.  I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
-    -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten. **Obs!** Når du velger rapporter å eksportere, velges tilhørende rader, kolonner, trær og dimensjonssett.
+    -   Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Trykk og hold inne Ctrl-tasten for å velge flere varer i en kategori. **Merk** Når du velger rapporter som skal eksporteres, velges de tilhørende radene, kolonnene, trærne og dimensjonssettene.
 
 4.  Når du er ferdig med å velge elementene som skal eksporteres, velger **Eksporter**.
 5.  I dialogboksen **Lagre som** velger du plasseringen byggeblokkgruppen skal eksporteres til.
@@ -120,8 +120,8 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 
 Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe, eller du kan opprette en ny byggeblokkgruppe for dataene. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonssettene.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
-2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som en byggeblokkgruppe skal importeres til, og deretter klikker du **Importer**.
-3.  I dialogboksen **Åpne** velger du byggeblokkgruppe som skal importeres, og deretter klikker du **Åpne**.
+2.  Velg byggeblokken som en byggeblokkgruppe skal importeres til, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Importer**.
+3.  Velg byggeblokkgruppen som skal importeres, i dialogboksen **Åpne**, og klikk deretter **Åpne**.
 4.  I dialogboksen **Importer** velger rapportdefinisjonene som skal importers:
     -   Hvis du vil importere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
     -   Hvis du vil importere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, velger du rapporter, rader, kolonner, trær eller dimensjonssett som skal importeres.
@@ -130,9 +130,9 @@ Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe, eller
 
 ### <a name="undo-a-checkout-of-a-building-block"></a> Angre en utsjekking av en byggeblokk
 
-Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til byggeblokken. Noen ganger glemmer brukere å lukke en byggeblokk eller å avslutte systemet uten å lukke byggeblokken. Derfor forblir byggeblokken utsjekket, og ingen andre brukere kan åpne den. I slike tilfeller kan en administrator for finansrapportering bruke dialogboksen **Utsjekkede elementer** for å sjekke inn byggeblokker som brukere latt være utsjekket. **Obs!** Du må ha administratorrolle for å sjekke inn byggeblokker ved hjelp av dialogboksen **Utsjekkede elementer**.
+Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til byggeblokken. Noen ganger glemmer brukere å lukke en byggeblokk eller å avslutte systemet uten å lukke byggeblokken. Derfor forblir byggeblokken utsjekket, og ingen andre brukere kan åpne den. I slike situasjoner kan en finansiell rapporteringsadministrator bruke dialogboksen **Utsjekkede varer** for å sjekke inn byggeklosser som brukere har sjekket ut. **Merk:** Du må ha administratorrolle for å sjekke inn byggeklosser ved å bruke dialogboksen **Utsjekkede varer**.
 1.  På **Verktøy**-menyen i Rapportutforming klikker du **Utsjekkede elementer**.
-2.  I dialogboksen **Utsjekkede elementer** velger du **Vis elementer fra alle brukere**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut og hvilke brukere som har sjekket dem ut.
+2.  Velg **Vis elementer fra alle brukere** i dialogboksen **Utsjekkede elementer**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut, og brukerne som har sjekket dem ut.
 3.  Velg en byggeblokk, og klikk deretter **Angre utsjekking**.
 4.  Klikk **Ja** for å sjekke inn byggeblokken.
 

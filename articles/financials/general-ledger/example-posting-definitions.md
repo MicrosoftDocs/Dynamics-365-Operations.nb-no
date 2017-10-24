@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fb4a7c21ecc46d83f35b12ac5552dcecbeb8bf0f
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 004f3f24ec410d9f0e7d1e7264ec2730b9467410
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -58,7 +57,7 @@ Alle bilagstransaksjoner for bestillingsdisposisjoner må være i balanse (det v
 |-------------------------|----------------------|----------|
 | Kontostruktur – resultat | \*                   | 1        |
 
-* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+*En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
 
 ### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
 
@@ -99,7 +98,7 @@ Når budsjettbevilgninger og posteringsdefinisjoner er aktivert, registreres bud
 |-------------------------|----------------------|----------|
 | Kontostruktur – resultat | \*                   | 1        |
 
-* En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+*En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
 
 ### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
 

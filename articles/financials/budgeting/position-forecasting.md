@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c0ae4ed27578301573bead17ff2175bb9042036
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -131,7 +130,7 @@ Funksjonen **Kopier til scenario** gir denne funksjonaliteten. Legg merke til at
 
 ### <a name="modifying-forecast-positions"></a>Endre prognosestillinger
 
-Endringer som gjøres med prognosestillinger, er begrenset til disse prognosestillingene. Endringene påvirker ikke stillingspostene i Personale. De fleste endringene er også begrenset til prognosestillingen som blir redigert. Med andre ord er endringene spesifikke for budsjettplanleggingsprosessen og budsjettplanscenarioet som tilordnes. Unntaket er endringer av felt som deles for stillingen på tvers av prosesser og scenarier. Disse feltene inkluderer feltene i **Generelt** kategorien og **Finansdimensjoner** kategorien. Når disse feltene endres, vil de nye verdiene gjelde for stillingen i alle scenarier for budsjettplanlegging. Derfor lar disse feltene deg raskt oppdatere alle versjoner.
+Endringer som gjøres med prognosestillinger, er begrenset til disse prognosestillingene. Endringene påvirker ikke stillingspostene i Personale. De fleste endringene er også begrenset til prognosestillingen som blir redigert. Med andre ord er endringene spesifikke for budsjettplanleggingsprosessen og budsjettplanscenarioet som tilordnes. Unntaket er endringer av felt som deles for stillingen på tvers av prosesser og scenarier. Disse feltene inkluderer feltene i kategorien **Generelt** og **Finansielle dimensjoner**-kategorien. Når disse feltene endres vil den nye verdien gjelde for posisjonene i alle budsjettplaneringsscenarier. Derfor lar disse feltene deg raskt oppdatere alle versjoner.
 
 #### <a name="budget-cost-elements"></a>Budsjettkostnadselementer
 

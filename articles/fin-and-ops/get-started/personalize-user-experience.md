@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Eksplisitt tilpasninger er de tilpasningene som du utfører eksplisitt med form�
 
 Du vil tilpasse et element på siden på denne måten hvis du bare vil endre etiketten for elementet, skjule elementet slik at det ikke vises på siden (dette endrer ikke data, det ganske enkelt viser ikke informasjonen), inkludere informasjonen i delen for hurtigfanesammendrag (hvis elementet er i hurtigfanen), hoppe over feltet når du bruker tabulatortasten, eller gjøre det slik at dataene ikke kan endres ved å merke den som "Ikke rediger." 
 
-Når du vil flytte eller skjule elementer eller foreta flere endringer, kan du bruke verktøylinjen for tilpassing, tilgjengelig fra vinduet for elementegenskaper, ved å velge **Tilpass dette skjemaet**. Verktøylinjen for tilpassing finnes også på skjemaets handlingsrute under Tilpass-gruppen i kategorien **Alternativer**. Velg **Tilpass dette skjemaet** og du vil se verktøylinjen for tilpassing. 
+Når du vil flytte eller skjule elementer eller foreta flere endringer, kan du bruke verktøylinjen for tilpassing, tilgjengelig fra vinduet for elementegenskaper, ved å velge **Tilpass dette skjemaet**. Verktøylinje for tilpasning er også tilgjengelig på skjemaets Handlingspanel, under Tilpasningsgruppen i kategorien **Alternativer**. Velg **Tilpass dette skjemaet** og du får opp verktøylinjen for tilpasning. 
 
 [![Verktøylinje for tilpassing](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Velg knappen **Lukk** for å lukke verktøylinjen og returnere siden til den tid
 Lagring er implisitt med tilpassingsverktøylinjen. Dine personlige innstillinger trer i kraft umiddelbart når du gjør dem og det er ikke nødvendig å klikke en **Lagre**-knapp. I noen tilfeller vil du se en hengelås-ikonet ved siden av et element når du velger et verktøy. Dette betyr at i rekkefølge for at siden skal fungere som de skal, kan du ikke endre egenskapene knyttet til det valgte verktøyet. Når tilpasningsverktøylinjen åpnes, blir siden ikke-interaktiv. Du kan ikke legge inn data eller vise eller skjule inndelinger.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisitt tilpassing: legge til flis eller liste i et arbeidsområde
-Noen sider med lister har en ekstra personlig tilpasning-funksjon tilgjengelig i sin handlingsrute i Tilpass-gruppen i kategorien Alternativer. Velg **Legg til arbeidsområde** for å åpne rullegardinlisten som gir deg muligheten til å vise informasjonen i gjeldende liste (filtrert og sortert eller standard) på et arbeidsområde som en liste eller en sammendragsflis (som kan brukes til å vise antall elementer i listen). 
+Enkelte sider med lister vil ha en ekstra tilpassingsfunksjon tilgjengelig i Handlingspanelet under Tilpasningsgruppen i kategorien Alternativer. Velg **Legg til arbeidsområde** for å åpne rullegardinlisten, som gir deg muligheten til å vise informasjonen i den nåværende listen (filtrert og sortert eller standard) på et arbeidsområde som en liste eller en oppsummeringsflis (som kan brukes til å vise antall elementer i listen). 
 
 [![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 
