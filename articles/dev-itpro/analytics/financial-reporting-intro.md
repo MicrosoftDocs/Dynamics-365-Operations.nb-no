@@ -17,77 +17,77 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: de8167eeea1f4a4db764a7f6398533ec3b9f4306
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="financial-reporting-for-finance-and-operations"></a><span data-ttu-id="040f1-104">Finansrapportering for Finance og Operations</span><span class="sxs-lookup"><span data-stu-id="040f1-104">Financial reporting for Finance and Operations</span></span>
+# <a name="financial-reporting-for-finance-and-operations"></a><span data-ttu-id="d13a6-104">Finansrapportering for Finance og Operations</span><span class="sxs-lookup"><span data-stu-id="d13a6-104">Financial reporting for Finance and Operations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="040f1-105">Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør.</span><span class="sxs-lookup"><span data-stu-id="040f1-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="040f1-106">Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.</span><span class="sxs-lookup"><span data-stu-id="040f1-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
+<span data-ttu-id="d13a6-105">Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør.</span><span class="sxs-lookup"><span data-stu-id="d13a6-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="d13a6-106">Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.</span><span class="sxs-lookup"><span data-stu-id="d13a6-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
 
-<span data-ttu-id="040f1-107">Finansrapportering inkluderer støtte for dimensjon.</span><span class="sxs-lookup"><span data-stu-id="040f1-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="040f1-108">Derfor er kontosegmenter eller dimensjoner tilgjengelig umiddelbart.</span><span class="sxs-lookup"><span data-stu-id="040f1-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="040f1-109">Ingen ekstra verktøy eller konfigurasjonstrinn er nødvendig.</span><span class="sxs-lookup"><span data-stu-id="040f1-109">No additional tools or configuration steps are required.</span></span>
+<span data-ttu-id="d13a6-107">Finansrapportering inkluderer støtte for dimensjon.</span><span class="sxs-lookup"><span data-stu-id="d13a6-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="d13a6-108">Derfor er kontosegmenter eller dimensjoner tilgjengelig umiddelbart.</span><span class="sxs-lookup"><span data-stu-id="d13a6-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="d13a6-109">Ingen ekstra verktøy eller konfigurasjonstrinn er nødvendig.</span><span class="sxs-lookup"><span data-stu-id="d13a6-109">No additional tools or configuration steps are required.</span></span>
 
-## <a name="financial-reporting-components"></a><span data-ttu-id="040f1-110">Komponenter for finansrapportering</span><span class="sxs-lookup"><span data-stu-id="040f1-110">Financial reporting components</span></span>
-<span data-ttu-id="040f1-111">Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og planlegge rapporter.</span><span class="sxs-lookup"><span data-stu-id="040f1-111">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
+## <a name="financial-reporting-components"></a><span data-ttu-id="d13a6-110">Komponenter for finansrapportering</span><span class="sxs-lookup"><span data-stu-id="d13a6-110">Financial reporting components</span></span>
+<span data-ttu-id="d13a6-111">Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og planlegge rapporter.</span><span class="sxs-lookup"><span data-stu-id="d13a6-111">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
 
-| <span data-ttu-id="040f1-112">Komponent</span><span class="sxs-lookup"><span data-stu-id="040f1-112">Component</span></span>        | <span data-ttu-id="040f1-113">Funksjoner</span><span class="sxs-lookup"><span data-stu-id="040f1-113">Functions</span></span>                                                                                                                                                                                                                                                                           | <span data-ttu-id="040f1-114">Tilleggsinformasjon</span><span class="sxs-lookup"><span data-stu-id="040f1-114">Additional information</span></span>                                                                          |
+| <span data-ttu-id="d13a6-112">Komponent</span><span class="sxs-lookup"><span data-stu-id="d13a6-112">Component</span></span>        | <span data-ttu-id="d13a6-113">Funksjoner</span><span class="sxs-lookup"><span data-stu-id="d13a6-113">Functions</span></span>                                                                                                                                                                                                                                                                           | <span data-ttu-id="d13a6-114">Tilleggsinformasjon</span><span class="sxs-lookup"><span data-stu-id="d13a6-114">Additional information</span></span>                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="040f1-115">Rapportutforming</span><span class="sxs-lookup"><span data-stu-id="040f1-115">Report Designer</span></span>  | <span data-ttu-id="040f1-116">Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport.</span><span class="sxs-lookup"><span data-stu-id="040f1-116">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="040f1-117">Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen.</span><span class="sxs-lookup"><span data-stu-id="040f1-117">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="040f1-118">Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov.</span><span class="sxs-lookup"><span data-stu-id="040f1-118">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> |                                                                                                 |
-| <span data-ttu-id="040f1-119">Rapporttidsplaner</span><span class="sxs-lookup"><span data-stu-id="040f1-119">Report schedules</span></span> | <span data-ttu-id="040f1-120">Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.</span><span class="sxs-lookup"><span data-stu-id="040f1-120">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span>                                                                                                                                                                                          | [<span data-ttu-id="040f1-121">Generere en finansrapport</span><span class="sxs-lookup"><span data-stu-id="040f1-121">Generate a financial report</span></span>](generate-financial-report.md) |
+| <span data-ttu-id="d13a6-115">Rapportutforming</span><span class="sxs-lookup"><span data-stu-id="d13a6-115">Report Designer</span></span>  | <span data-ttu-id="d13a6-116">Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport.</span><span class="sxs-lookup"><span data-stu-id="d13a6-116">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="d13a6-117">Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen.</span><span class="sxs-lookup"><span data-stu-id="d13a6-117">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="d13a6-118">Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov.</span><span class="sxs-lookup"><span data-stu-id="d13a6-118">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> |                                                                                                 |
+| <span data-ttu-id="d13a6-119">Rapporttidsplaner</span><span class="sxs-lookup"><span data-stu-id="d13a6-119">Report schedules</span></span> | <span data-ttu-id="d13a6-120">Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.</span><span class="sxs-lookup"><span data-stu-id="d13a6-120">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span>                                                                                                                                                                                          | [<span data-ttu-id="d13a6-121">Generere en finansrapport</span><span class="sxs-lookup"><span data-stu-id="d13a6-121">Generate a financial report</span></span>](generate-financial-report.md) |
 
-## <a name="features"></a><span data-ttu-id="040f1-122">Funksjoner</span><span class="sxs-lookup"><span data-stu-id="040f1-122">Features</span></span>
+## <a name="features"></a><span data-ttu-id="d13a6-122">Funksjoner</span><span class="sxs-lookup"><span data-stu-id="d13a6-122">Features</span></span>
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="040f1-123">Funksjon</span><span class="sxs-lookup"><span data-stu-id="040f1-123">Feature</span></span></th>
-<th><span data-ttu-id="040f1-124">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="040f1-124">Description</span></span></th>
+<th><span data-ttu-id="d13a6-123">Funksjon</span><span class="sxs-lookup"><span data-stu-id="d13a6-123">Feature</span></span></th>
+<th><span data-ttu-id="d13a6-124">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="d13a6-124">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="040f1-125">Fleksibel rapportutforming</span><span class="sxs-lookup"><span data-stu-id="040f1-125">Report design flexibility</span></span></td>
-<td><span data-ttu-id="040f1-126">Rapportutforming inneholder følgende rapporteringsalternativer når du utformer en rapport:</span><span class="sxs-lookup"><span data-stu-id="040f1-126">Report Designer provides the following reporting options when you design a report:</span></span>
+<td><span data-ttu-id="d13a6-125">Fleksibel rapportutforming</span><span class="sxs-lookup"><span data-stu-id="d13a6-125">Report design flexibility</span></span></td>
+<td><span data-ttu-id="d13a6-126">Rapportutforming inneholder følgende rapporteringsalternativer når du utformer en rapport:</span><span class="sxs-lookup"><span data-stu-id="d13a6-126">Report Designer provides the following reporting options when you design a report:</span></span>
 <ul>
-<li><span data-ttu-id="040f1-127">Lagre dimensjonskombinasjoner og gjenbruke dimensjoner for flere rapporter.</span><span class="sxs-lookup"><span data-stu-id="040f1-127">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
-<li><span data-ttu-id="040f1-128">Styre hvordan dimensjonsbeskrivelser er formatert og vises.</span><span class="sxs-lookup"><span data-stu-id="040f1-128">Control how dimension descriptions are formatted and displayed.</span></span></li>
-<li><span data-ttu-id="040f1-129">Identifiser kontoer eller dimensjoner som er utelatt fra rapportbyggeblokker.</span><span class="sxs-lookup"><span data-stu-id="040f1-129">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
-<li><span data-ttu-id="040f1-130">Formatere overskrifter rullende prognoser.</span><span class="sxs-lookup"><span data-stu-id="040f1-130">Format headers for rolling forecasts.</span></span></li>
+<li><span data-ttu-id="d13a6-127">Lagre dimensjonskombinasjoner og gjenbruke dimensjoner for flere rapporter.</span><span class="sxs-lookup"><span data-stu-id="d13a6-127">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
+<li><span data-ttu-id="d13a6-128">Styre hvordan dimensjonsbeskrivelser er formatert og vises.</span><span class="sxs-lookup"><span data-stu-id="d13a6-128">Control how dimension descriptions are formatted and displayed.</span></span></li>
+<li><span data-ttu-id="d13a6-129">Identifiser kontoer eller dimensjoner som er utelatt fra rapportbyggeblokker.</span><span class="sxs-lookup"><span data-stu-id="d13a6-129">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
+<li><span data-ttu-id="d13a6-130">Formatere overskrifter rullende prognoser.</span><span class="sxs-lookup"><span data-stu-id="d13a6-130">Format headers for rolling forecasts.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="040f1-131">Finansrapportsamarbeid</span><span class="sxs-lookup"><span data-stu-id="040f1-131">Financial report collaboration</span></span></td>
-<td><span data-ttu-id="040f1-132">Følgende funksjoner lar deg administrere generering og distribusjon av rapporter:</span><span class="sxs-lookup"><span data-stu-id="040f1-132">The following features help you manage the generation and distribution of reports:</span></span>
+<td><span data-ttu-id="d13a6-131">Finansrapportsamarbeid</span><span class="sxs-lookup"><span data-stu-id="d13a6-131">Financial report collaboration</span></span></td>
+<td><span data-ttu-id="d13a6-132">Følgende funksjoner lar deg administrere generering og distribusjon av rapporter:</span><span class="sxs-lookup"><span data-stu-id="d13a6-132">The following features help you manage the generation and distribution of reports:</span></span>
 <ul>
-<li><span data-ttu-id="040f1-133">Planlegge rapporter slik at de automatisk å genereres daglig, ukentlig, månedlig eller årlig.</span><span class="sxs-lookup"><span data-stu-id="040f1-133">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
-<li><span data-ttu-id="040f1-134">Eksportere til det skrivebeskyttede XPS-formatet, som gir bedre dokumentsikkerhet ved hjelp av digitale signaturer.</span><span class="sxs-lookup"><span data-stu-id="040f1-134">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
-<li><span data-ttu-id="040f1-135">Eksportere til et Microsoft Excel-regneark.</span><span class="sxs-lookup"><span data-stu-id="040f1-135">Export to a Microsoft Excel worksheet.</span></span></li>
-<li><span data-ttu-id="040f1-136">Hvis du vil dele rapporter, kan du opprette e-postmeldinger som inneholder koblinger til rapportene.</span><span class="sxs-lookup"><span data-stu-id="040f1-136">To share reports, you can create email messages that contain links to the reports.</span></span></li>
+<li><span data-ttu-id="d13a6-133">Planlegge rapporter slik at de automatisk å genereres daglig, ukentlig, månedlig eller årlig.</span><span class="sxs-lookup"><span data-stu-id="d13a6-133">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
+<li><span data-ttu-id="d13a6-134">Eksportere til det skrivebeskyttede XPS-formatet, som gir bedre dokumentsikkerhet ved hjelp av digitale signaturer.</span><span class="sxs-lookup"><span data-stu-id="d13a6-134">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
+<li><span data-ttu-id="d13a6-135">Eksportere til et Microsoft Excel-regneark.</span><span class="sxs-lookup"><span data-stu-id="d13a6-135">Export to a Microsoft Excel worksheet.</span></span></li>
+<li><span data-ttu-id="d13a6-136">Hvis du vil dele rapporter, kan du opprette e-postmeldinger som inneholder koblinger til rapportene.</span><span class="sxs-lookup"><span data-stu-id="d13a6-136">To share reports, you can create email messages that contain links to the reports.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="040f1-137">Vise interaktiv rapport</span><span class="sxs-lookup"><span data-stu-id="040f1-137">Interactive report viewing</span></span></td>
-<td><span data-ttu-id="040f1-138">Interaktive funksjoner lar deg utføre følgende oppgaver:</span><span class="sxs-lookup"><span data-stu-id="040f1-138">Interactive features let you perform the following tasks:</span></span>
+<td><span data-ttu-id="d13a6-137">Vise interaktiv rapport</span><span class="sxs-lookup"><span data-stu-id="d13a6-137">Interactive report viewing</span></span></td>
+<td><span data-ttu-id="d13a6-138">Interaktive funksjoner lar deg utføre følgende oppgaver:</span><span class="sxs-lookup"><span data-stu-id="d13a6-138">Interactive features let you perform the following tasks:</span></span>
 <ul>
-<li><span data-ttu-id="040f1-139">Endre rapportdatoen for rapporten som du viser.</span><span class="sxs-lookup"><span data-stu-id="040f1-139">Change the report date for the report that you're viewing.</span></span></li>
-<li><span data-ttu-id="040f1-140">Endre valutaen for rapporten som du viser.</span><span class="sxs-lookup"><span data-stu-id="040f1-140">Change the currency of the report that you're viewing.</span></span></li>
-<li><span data-ttu-id="040f1-141">Vis rapporten i et sammendrag eller en detaljert visning.</span><span class="sxs-lookup"><span data-stu-id="040f1-141">View the report in either a summary view or a detailed view.</span></span></li>
-<li><span data-ttu-id="040f1-142">Legg til dimensjonsfiltre for å begrense rapportinnholdet til en bestemt dimensjon eller en kombinasjon av dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="040f1-142">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
-<li><span data-ttu-id="040f1-143">Legg til attributtfiltre for å begrense rapportinnholdet til et bestemt attributt en kombinasjon av attributter.</span><span class="sxs-lookup"><span data-stu-id="040f1-143">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
+<li><span data-ttu-id="d13a6-139">Endre rapportdatoen for rapporten som du viser.</span><span class="sxs-lookup"><span data-stu-id="d13a6-139">Change the report date for the report that you're viewing.</span></span></li>
+<li><span data-ttu-id="d13a6-140">Endre valutaen for rapporten som du viser.</span><span class="sxs-lookup"><span data-stu-id="d13a6-140">Change the currency of the report that you're viewing.</span></span></li>
+<li><span data-ttu-id="d13a6-141">Vis rapporten i et sammendrag eller en detaljert visning.</span><span class="sxs-lookup"><span data-stu-id="d13a6-141">View the report in either a summary view or a detailed view.</span></span></li>
+<li><span data-ttu-id="d13a6-142">Legg til dimensjonsfiltre for å begrense rapportinnholdet til en bestemt dimensjon eller en kombinasjon av dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="d13a6-142">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
+<li><span data-ttu-id="d13a6-143">Legg til attributtfiltre for å begrense rapportinnholdet til et bestemt attributt en kombinasjon av attributter.</span><span class="sxs-lookup"><span data-stu-id="d13a6-143">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-#<a name="see-also"></a><span data-ttu-id="040f1-144">Se også</span><span class="sxs-lookup"><span data-stu-id="040f1-144">See also</span></span>
-[<span data-ttu-id="040f1-145">Generere en finansrapport</span><span class="sxs-lookup"><span data-stu-id="040f1-145">Generate a financial report</span></span>](generate-financial-report.md)
+#<a name="see-also"></a><span data-ttu-id="d13a6-144">Se også</span><span class="sxs-lookup"><span data-stu-id="d13a6-144">See also</span></span>
+[<span data-ttu-id="d13a6-145">Generere en finansrapport</span><span class="sxs-lookup"><span data-stu-id="d13a6-145">Generate a financial report</span></span>](generate-financial-report.md)
 
 
 

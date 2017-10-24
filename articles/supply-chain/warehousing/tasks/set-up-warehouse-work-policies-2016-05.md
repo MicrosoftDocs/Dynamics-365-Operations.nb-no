@@ -17,38 +17,38 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: b7d579ca7e2b9ca8cbead74b2c2ababfd142f171
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="set-up-warehouse-work-policies"></a><span data-ttu-id="94a30-103">Definere arbeidspolicyer for lager </span><span class="sxs-lookup"><span data-stu-id="94a30-103">Set up warehouse work policies</span></span> 
+# <a name="set-up-warehouse-work-policies"></a><span data-ttu-id="474a6-103">Definere arbeidspolicyer for lager </span><span class="sxs-lookup"><span data-stu-id="474a6-103">Set up warehouse work policies</span></span> 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="94a30-104">Lagerprosesser inkluderer ikke alltid lagerarbeid.</span><span class="sxs-lookup"><span data-stu-id="94a30-104">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="94a30-105">Ved å definere en arbeidspolicy, kan du hindre oppretting av arbeid for råvareplukking og plassering av ferdige varer for et sett med produkter på bestemte lokasjoner.</span><span class="sxs-lookup"><span data-stu-id="94a30-105">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="94a30-106">USMF-demodatafirmaet ble brukt til å opprette denne registreringen.</span><span class="sxs-lookup"><span data-stu-id="94a30-106">The USMF demo data company was used to create this recording.</span></span> <span data-ttu-id="94a30-107">Denne oppgaveveiledningen krever Dynamics AX 7.0.1 eller senere.</span><span class="sxs-lookup"><span data-stu-id="94a30-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
+<span data-ttu-id="474a6-104">Lagerprosesser inkluderer ikke alltid lagerarbeid.</span><span class="sxs-lookup"><span data-stu-id="474a6-104">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="474a6-105">Ved å definere en arbeidspolicy, kan du hindre oppretting av arbeid for råvareplukking og plassering av ferdige varer for et sett med produkter på bestemte lokasjoner.</span><span class="sxs-lookup"><span data-stu-id="474a6-105">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="474a6-106">USMF-demodatafirmaet ble brukt til å opprette denne registreringen.</span><span class="sxs-lookup"><span data-stu-id="474a6-106">The USMF demo data company was used to create this recording.</span></span> <span data-ttu-id="474a6-107">Denne oppgaveveiledningen krever Dynamics AX 7.0.1 eller senere.</span><span class="sxs-lookup"><span data-stu-id="474a6-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
 
-1. <span data-ttu-id="94a30-108">Gå til Lagerstyring > Oppsett > Arbeid > Arbeidspolicyer.</span><span class="sxs-lookup"><span data-stu-id="94a30-108">Go to Warehouse management > Setup > Work > Work policies.</span></span>
-2. <span data-ttu-id="94a30-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="94a30-109">Click New.</span></span>
-3. <span data-ttu-id="94a30-110">Skriv inn 'Ingen ferdigvarearbeid' i navnefeltet for arbeidspolicyen.</span><span class="sxs-lookup"><span data-stu-id="94a30-110">In the Work policy name field, type 'No put-away work'.</span></span>
-4. <span data-ttu-id="94a30-111">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="94a30-111">Click Save.</span></span>
-5. <span data-ttu-id="94a30-112">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="94a30-112">Click Add.</span></span>
-6. <span data-ttu-id="94a30-113">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="94a30-113">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="94a30-114">Velg Plasser ferdigvarer i feltet for Arbeidsordretype.</span><span class="sxs-lookup"><span data-stu-id="94a30-114">In the Work order type field, select 'Finished goods put away'.</span></span>
-8. <span data-ttu-id="94a30-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="94a30-115">Click Add.</span></span>
-9. <span data-ttu-id="94a30-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="94a30-116">In the list, mark the selected row.</span></span>
-10. <span data-ttu-id="94a30-117">Velg Plasser koprodukt og biprodukt i feltet Arbeidsordretype.</span><span class="sxs-lookup"><span data-stu-id="94a30-117">In the Work order type field, select 'Co-product and by-product put away'.</span></span>
-11. <span data-ttu-id="94a30-118">Vis delen Lagerlokasjoner.</span><span class="sxs-lookup"><span data-stu-id="94a30-118">Expand the Inventory locations section.</span></span>
-12. <span data-ttu-id="94a30-119">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="94a30-119">Click Add.</span></span>
-13. <span data-ttu-id="94a30-120">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="94a30-120">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="94a30-121">Angi 51 i Lager-listen.</span><span class="sxs-lookup"><span data-stu-id="94a30-121">In the Warehouse list, enter '51'.</span></span>
-15. <span data-ttu-id="94a30-122">Velg 001 i feltet Lokasjon.</span><span class="sxs-lookup"><span data-stu-id="94a30-122">In the Location field, enter or select '001'.</span></span>
-16. <span data-ttu-id="94a30-123">Utvid seksjonen Produkter.</span><span class="sxs-lookup"><span data-stu-id="94a30-123">Expand the Products section.</span></span>
-17. <span data-ttu-id="94a30-124">Velg Valgt i feltet Produktvalg.</span><span class="sxs-lookup"><span data-stu-id="94a30-124">In the Product selection field, select 'Selected'.</span></span>
-18. <span data-ttu-id="94a30-125">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="94a30-125">Click Add.</span></span>
-19. <span data-ttu-id="94a30-126">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="94a30-126">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="94a30-127">Angi eller velg L0101 i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="94a30-127">In the Item number field, enter or select 'L0101'.</span></span>
-21. <span data-ttu-id="94a30-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="94a30-128">Click Save.</span></span>
+1. <span data-ttu-id="474a6-108">Gå til Lagerstyring > Oppsett > Arbeid > Arbeidspolicyer.</span><span class="sxs-lookup"><span data-stu-id="474a6-108">Go to Warehouse management > Setup > Work > Work policies.</span></span>
+2. <span data-ttu-id="474a6-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="474a6-109">Click New.</span></span>
+3. <span data-ttu-id="474a6-110">Skriv inn 'Ingen ferdigvarearbeid' i navnefeltet for arbeidspolicyen.</span><span class="sxs-lookup"><span data-stu-id="474a6-110">In the Work policy name field, type 'No put-away work'.</span></span>
+4. <span data-ttu-id="474a6-111">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="474a6-111">Click Save.</span></span>
+5. <span data-ttu-id="474a6-112">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="474a6-112">Click Add.</span></span>
+6. <span data-ttu-id="474a6-113">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="474a6-113">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="474a6-114">Velg Plasser ferdigvarer i feltet for Arbeidsordretype.</span><span class="sxs-lookup"><span data-stu-id="474a6-114">In the Work order type field, select 'Finished goods put away'.</span></span>
+8. <span data-ttu-id="474a6-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="474a6-115">Click Add.</span></span>
+9. <span data-ttu-id="474a6-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="474a6-116">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="474a6-117">Velg Plasser koprodukt og biprodukt i feltet Arbeidsordretype.</span><span class="sxs-lookup"><span data-stu-id="474a6-117">In the Work order type field, select 'Co-product and by-product put away'.</span></span>
+11. <span data-ttu-id="474a6-118">Vis delen Lagerlokasjoner.</span><span class="sxs-lookup"><span data-stu-id="474a6-118">Expand the Inventory locations section.</span></span>
+12. <span data-ttu-id="474a6-119">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="474a6-119">Click Add.</span></span>
+13. <span data-ttu-id="474a6-120">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="474a6-120">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="474a6-121">Angi 51 i Lager-listen.</span><span class="sxs-lookup"><span data-stu-id="474a6-121">In the Warehouse list, enter '51'.</span></span>
+15. <span data-ttu-id="474a6-122">Velg 001 i feltet Lokasjon.</span><span class="sxs-lookup"><span data-stu-id="474a6-122">In the Location field, enter or select '001'.</span></span>
+16. <span data-ttu-id="474a6-123">Utvid seksjonen Produkter.</span><span class="sxs-lookup"><span data-stu-id="474a6-123">Expand the Products section.</span></span>
+17. <span data-ttu-id="474a6-124">Velg Valgt i feltet Produktvalg.</span><span class="sxs-lookup"><span data-stu-id="474a6-124">In the Product selection field, select 'Selected'.</span></span>
+18. <span data-ttu-id="474a6-125">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="474a6-125">Click Add.</span></span>
+19. <span data-ttu-id="474a6-126">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="474a6-126">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="474a6-127">Angi eller velg L0101 i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="474a6-127">In the Item number field, enter or select 'L0101'.</span></span>
+21. <span data-ttu-id="474a6-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="474a6-128">Click Save.</span></span>
 
 
