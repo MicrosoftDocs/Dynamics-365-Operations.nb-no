@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen.
 
-Finansrapporter støtter fleksibel rapportering, slik at du enkelt kan gjøre endringer når forretningsstrukturen endres. Rapporter bygges opp av ulike komponenter eller byggeblokker. Én av disse byggeblokkene er en rapporteringstredefinisjon. En rapporteringstredefinisjon bidrar til å definere strukturen og hierarkiet i organisasjonen. Den er en hierarkisk struktur på tvers av dimensjoner som basert på dimensjonsrelasjonene i de økonomiske dataen. Den inneholder informasjon på rapporteringsenhetsnivå og et sammendragsnivå for alle enheter i treet. Rapporteringstredefinisjonene kan kombineres med kolonnedefinisjoner og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer. En rapporteringsenhet brukes for hver boks i et organisasjonskart. En rapporteringsenhet kan være én enkelt avdeling fra de økonomiske dataene, eller det kan være en overordnet sammendragsenhet som kombinerer informasjon fra andre rapporteringsenheter. For en rapportdefinisjon som inkluderer et rapporteringstre genereres en rapport for hver rapporteringsenhet og for sammendragsnivået. Alle disse rapportene bruke rad- og kolonnedefinisjoner som er angitt i rapportdefinisjonen, med mindre rapportdefinisjonen angir at rapporteringstreet fra raddefinisjonen skal brukes. Rad- og kolonnedefinisjoner er viktige komponenter i utformingen og funksjonaliteten til økonomiske rapporter. Rapporteringtrær øke funksjonaliteten til komponenter og støtter fleksibel rapportering etter hvert som forretningsstrukturen endres. Finansrapporter som ikke er basert på et rapporteringstre bruker bare noen av funksjonene i finansrapportering. Du kan bruke flere rapporteringstredefinisjoner sammen med samme rad og kolonnedefinisjoner til å vise organisasjonens data på forskjellige måter.
+Finansrapporter støtter fleksibel rapportering, slik at du enkelt kan gjøre endringer når forretningsstrukturen endres. Rapporter bygges opp av ulike komponenter eller byggeblokker. Én av disse byggeblokkene er en rapporteringstredefinisjon. En rapporteringstredefinisjon bidrar til å definere strukturen og hierarkiet i organisasjonen. Den er en hierarkisk struktur på tvers av dimensjoner som basert på dimensjonsrelasjonene i de økonomiske dataen. Den inneholder informasjon på rapporteringsenhetsnivå og et sammendragsnivå for alle enheter i treet. Rapporteringstredefinisjonene kan kombineres med kolonnedefinisjoner og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer. En rapporteringsenhet brukes for hver boks i et organisasjonskart. En rapporteringsenhet kan være en enkeltstående avdeling fra finansdataene, eller en summeringsenhet på et høyere nivå, som kombinerer informasjon fra andre rapporteringsenheter. For en rapportdefinisjon som inkluderer et rapporteringstre genereres en rapport for hver rapporteringsenhet og for sammendragsnivået. Alle disse rapportene bruke rad- og kolonnedefinisjoner som er angitt i rapportdefinisjonen, med mindre rapportdefinisjonen angir at rapporteringstreet fra raddefinisjonen skal brukes. Rad- og kolonnedefinisjoner er viktige komponenter i utformingen og funksjonaliteten til økonomiske rapporter. Rapporteringtrær øke funksjonaliteten til komponenter og støtter fleksibel rapportering etter hvert som forretningsstrukturen endres. Finansrapporter som ikke er basert på et rapporteringstre bruker bare noen av funksjonene i finansrapportering. Du kan bruke flere rapporteringstredefinisjoner sammen med samme rad og kolonnedefinisjoner til å vise organisasjonens data på forskjellige måter.
 
 ## <a name="reporting-tree-best-practices"></a>Anbefalte fremgangsmåter for rapporteringstre
 Før du oppretter et rapporteringstre bør du vurdere følgende anbefalte fremgangsmåter:
 
 -   Fastslå først hvilke rapporteringsdimensjoner den juridiske enheten eller firmaet trenger.
--   Vurdere hvordan du har definert strukturen, og tegn deretter et organisasjonskart for firmaet ditt. Organisasjonskartet vil hjelpe deg med å visualisere hvordan du skal gruppere rapporteringsenhetene i ett eller flere rapporteringstrær.
+-   Vurdere hvordan du har definert strukturen, og tegn deretter et organisasjonskart for firmaet ditt. Organisasjonsdiagrammet er til hjelp når du skal se for deg hvordan du grupperer rapporteringsenhetene i ett eller flere rapporteringstrær.
 -   Start med det lavest tilgjengelige detaljnivået, for eksempel avdelinger og prosjekter som er definert i de økonomiske dataen. Legg til bokser etter behov på detaljnivået, for å vise overordnede avdelinger eller områder. Hver boks representerer en potensiell rapporteringsenhet i et rapporteringstreet som du oppretter.
 -   Du må også vurdere den beste metoden for å bygge trær. Du kan bruke en automatisert byggeprosessen for å generere et rapporteringstre, eller du kan opprette et rapporteringstre manuelt. Det er viktig at du forstår begge metodene før du utformer trærne.
 -   Du kan bruke rapporteringsenhetene som er definert i systemet for økonomiske data, for å legge til rapportenheter i rapporteringstredefinisjonen.
@@ -52,12 +52,12 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 
 | Rapporteringstrekolonne | beskrivelse|
 |---|---|
-| Firma               | Firmanavnet for rapporteringsenheten. **@ANY**-verdien, som vanligvis bare tilordnes til sammendragsnivået, gjør det mulig å bruke rapporteringstreet for alle firmaer. Alle underordnede grener har et tilordnet firma.|
+| Firma               | Firmanavnet for rapporteringsenheten. **@ANY**-verdien, som vanligvis bare tilordnes til sammendragsnivået, gjør det mulig å bruke rapporteringstreet for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma.|
 | Enhetsnavn             | Koden som identifiserer rapporteringsenheten i det grafiske rapporteringstreet. Pass på å opprette et unik fargekodingssystem som er konsekvent, og som skal være enkelt for brukerne å forstå. |
 | Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i kategorien **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen.|
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert.|
-| Raddefinisjoner       | Navnet på raddefinisjonen for rapporteringsenheten. Den samme raddefinisjonen brukes for hver enhet i rapporteringstreet. Når du genererer en rapport, brukes denne raddefinisjonen for hver rapportering enhet. Raddefinisjonen kan inneholde flere koblinger med finansdimensjoner. Hvis en raddefinisjon, er angitt i rapporteringstreet, merker du av for **Bruk raddefinisjon for rapporteringstre** i kategorien **Rapport** i rapportdefinisjonen.|
-| Radkobling              | Radkoblingen som skal brukes for rapporteringsenheten. Radkoblinger er definert for raddefinisjonen for å identifisere finansdimensjonene som skal kobles til.|
+| Raddefinisjoner       | Navnet på raddefinisjonen for rapporteringsenheten. Den samme raddefinisjonen brukes for hver enhet i rapporteringstreet. Når du genererer en rapport, brukes denne raddefinisjonen for hver rapporteringsenhet. Raddefinisjonen kan inneholde flere koblinger til finansdimensjoner. Hvis en raddefinisjon er angitt i rapporteringstreet, merker du av for **Bruk raddefinisjon fra rapporteringstre** i kategorien **Rapport** i rapportdefinisjonen.|
+| Radkobling              | Radkoblingen som skal brukes for rapporteringsenheten. Radkoblinger defineres for raddefinisjonen for å identifisere finansdimensjonene det skal kobles til.|
 | Ekstern kobling         | Radkoblingen som skal brukes for denne rapporteringsenheten. Radkoblinger er definert for raddefinisjonen for å identifisere rapporten som skal kobles til.|
 | Ekstern fil         | Filbanen til regnearket for finansrapportering som det skal hentes data fra.|
 | Sidealternativer          | Denne kolonnen angir om detaljene for rapporteringsenhet undertrykkes når rapporten vises eller skrives ut.|
@@ -138,8 +138,8 @@ En oppføring for tilleggstekst er en statisk tekststreng med opptil 255 tegn, s
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Fjerne tilleggstekst fra en rapporteringsenhet
 
-1.  Åpne rapporteringstreet som skal endres i Rapportutforming.
-2.  Dobbeltklikk **Tilleggstekst**-cellen for raden for rapporteringsenheten.
+1.  Åpne rapporteringstredefinisjonen som skal endres, i Rapportutforming.
+2.  Dobbeltklikk **Tilleggstekst**-cellen for raden til rapporteringsenheten.
 3.  I dialogboksen **Tilleggstekst** velger du oppføringen som skal fjernes, og deretter klikker du **Fjern**. Du kan også høyreklikke oppføringen og deretter velge **Klipp ut**.
 4.  Klikk **OK**.
 
@@ -148,7 +148,7 @@ En oppføring for tilleggstekst er en statisk tekststreng med opptil 255 tegn, s
 Du kan hindre at bestemte brukere eller grupper får tilgang til en rapporteringsenhet. Du kan også definere begrensninger, slik at de gjelder for underordnede rapporteringsenheter for rapporteringsenheten.
 
 1.  Åpne rapporteringstreet som skal endres i Rapportutforming.
-2.  Dobbeltklikk **Enhetssikkerhet**-cellen for raden for rapporteringsenheten som tilgang skal begrenses for.
+2.  Dobbeltklikk **Enhetssikkerhet**-cellen for raden i rapporteringsenheten det skal begrenses tilgang til.
 3.  I dialogboksen **Enhetssikkerhet** klikker du **Brukere og grupper**.
 4.  Velg brukerne eller gruppene som skal ha tilgang til rapporteringsenheten, og klikk deretter **OK**.
 5.  Hvis du vil begrense tilgang til underordnede rapportenheter, merker du av for **Legg til sikkerhet for underordnede rapporteringsenheter**.

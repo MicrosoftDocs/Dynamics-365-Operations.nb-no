@@ -15,13 +15,13 @@ ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d8565ec692036d7a9411cb8663d7293d3ab91a44
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -104,7 +104,7 @@ I kategorien **Definer budsjettkontrollregler** må du deretter opprette spesifi
 
 ### <a name="select-main-accounts"></a>Velg hovedkontoer
 
-Hvis **Hovedkonto** ikke er valgt som budsjettkontrolldimensjon på siden **Definer parametere**, men bestemt utgifter håndteres, kan du velge disse utgiftene i kategorien **Velg hovedkontoer**. Hvis **Hovedkonto** er valgt som budsjettkontrolldimensjon, kreves ingen oppføringer.  
+Hvis **Hovedkonto** ikke er valgt som en budsjettkontrolldimensjon på siden **Definer parametere** , men spesifikke utgifter administreres, kan du velge disse utgiftene på kategorien **Velg hovedkontoer**. Hvis **Hovedkonto** er valgt som en budsjettkontrolldimensjon, er det ikke nødvendig med noen oppføringer.  
 
 ### <a name="define-budget-groups"></a>Definer budsjettgrupper
 
@@ -116,7 +116,7 @@ Hvis budsjettkontrollvarsler skal undertrykkes for alle brukergrupper, kan du an
 
 ### <a name="activate-budget-control"></a>Aktiver budsjettkontroll
 
-Etter at budsjettkontroll er konfigurert, kan du aktivere dette alternativet og aktivere det i kategorien **Aktiver budsjettkontroll**. Kladdeversjonen trer deretter i kraft.
+Etter at budsjettkontrollen er konfigurert, kan du slå den på og aktivere den i kategorien **Aktiver budsjettkontroll**. Utkastversjonen vil da bli effektiv.
 > [!Important]
 > Når budsjettkontrollen er aktivert og aktiv og etter at transaksjonene er postert, må den ikke deaktiveres midt i året. Aktiviteter registreres ikke for budsjettkontrollformål når budsjettkontroll er deaktivert, og budsjettkontroller blir ikke lenger utført. Dokumenter som allerede er bokført gjenspeiler derfor kanskje ikke riktig frigivende beløp eller saldoer i forespørsler og rapporter som er knyttet til budsjettkontroll. Disse omfatter statistikk for budsjettkontroll for en hvilken som helst nedstrømsflyt eller justering av dokumenter og journaler. 
 

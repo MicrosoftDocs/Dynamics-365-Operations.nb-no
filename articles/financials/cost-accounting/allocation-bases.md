@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 111ebf578e455408c5b6168e5a7af705f3624d78
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -218,8 +218,8 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 | Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |    beskrivelse          | Størrelse |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | Personale | 31.01.2017      | Strøm                  | Strømforbruk | 2 450,00  |
-| CC002       | FI | 31.01.2017      | Strøm                  | Strømforbruk | 4 100,00  |
+| CC001       | Personale | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00  |
+| CC002       | FI | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00  |
 | CC003       | LO | 31.01.2017      | Strøm                  | Strømforbruk | 15 000,00 |
 
 Her er et eksempel på en kostnadsdistribusjonsregel hvis det forhåndsdefinerte tildelingsgrunnlaget for dimensjonsmedlem for Strøm er tilordnet som tildelingsgrunnlaget i den.
@@ -227,7 +227,7 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis det forhåndsdefinerte
 | Kostnadsobjekt | beskrivelse  | Størrelse | Tildelingsfaktor          |
 |-------------|------|-----------|----------------------------|
 | CC001       | Personale   | 2 450,00  | (2 450 ÷ 21 550) × beløp  |
-| CC002       | FI   | 4 100,00  | (4 100 ÷ 21 550) × beløp  |
+| CC002       | FI   | 4,100.00  | (4 100 ÷ 21 550) × beløp  |
 | CC003       | LO   | 15 000,00 | (15 000 ÷ 21 550) × beløp |
 
 ## <a name="hierarchy-allocation-bases"></a>Hierarkitildelingsgrunnlag
@@ -319,8 +319,8 @@ Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem for Strøm er allered
 
 | Kostnadsobjekt | Navn | Regnskapsdato | Statistisk medlem av dimensjon | beskrivelse             | Størrelse |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | Personale   | 31.01.2017      | Strøm                  | Strømforbruk | 2 450,00  |
-| CC002       | FI   | 31.01.2017      | Strøm                  | Strømforbruk | 4 100,00  |
+| CC001       | Personale   | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00  |
+| CC002       | FI   | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00  |
 | CC003       | LO   | 31.01.2017      | Strøm                  | Strømforbruk | 15 000,00 |
 
 Hvis det faste gebyret nå må fordeles likt på kostnadsobjekter som bruker strøm, har du to alternativer for kostnadsfordeling:

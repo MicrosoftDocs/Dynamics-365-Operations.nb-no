@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Du må først velge en avslutningstidsplan øverst i arbeidsområdet. Alle data 
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 
-Flisene **Sammendrag** gir en oversikt over prosessen, og indikatorer hjelper deg med å holde avslutningsprosessen i rute. Du kan vise oppgaver som er utløpt, gjenværende oppgaver for i dag, oppgaver som forfaller i dag, men som er blokkert på grunn av avhengigheter, og alle andre oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte avslutningstidsplanen.
+**Sammendrag**-flisene gir en oversikt over prosessen, og indikatorer hjelper deg med å holde oversikt over sluttprosessen. Du kan se oppgaver som er forfalt, gjenværende oppgaver for i dag, oppgaver som forfaller i dag, men er blokkert på grunn av avhengigheter og alle gjenværende oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte avslutningstidsplanen.
 
 ### <a name="tasks-and-status-section"></a>Delen Oppgaver og status
 
@@ -82,7 +81,7 @@ Du kan bruke oppgaveområder til å gruppere avslutningsoppgaver i logiske eiers
 
 ### <a name="calendars"></a>Kalendere
 
-Opprett og rediger regnskapskalendere for avslutning ved hjelp av kategorien Kalendere.  Her definerer du virkedager for å avslutningsprosesser, og denne brukes til planlegging av avslutningsoppgaver.  Opprett en ny kalender, og angi virkedagene som skal brukes for oppgaveplanlegging.  Det er best å opprette en kalender for lengre tidsrom, for eksempel ett eller flere år, siden dette kan redigeres etter oppretting.  Når du har opprettet kalenderen, klikker du Rediger-knappen for å oppdatere kalenderen for bestemte dager, for eksempel ferier.  Avslutningsoppgaver planlegges på dager Kontrollverdi er satt til Åpen.  Hvis du avslutningsoppgaver ikke skal planlegges på en bestemt dag, må Kontrollverdi være satt Lukket.
+Opprett og rediger finansielle avslutningstidsplaner ved hjelp av kategorien Kalendere. Her definerer du arbeidsdager for avsluttende prosesser, og den vil brukes til å planlegge avslutningsoppgaver.  Opprett en ny kalender, og angi virkedagene som skal brukes for oppgaveplanlegging.  Det er best å opprette en kalender for lengre tidsrom, for eksempel ett eller flere år, siden dette kan redigeres etter oppretting.  Når du har opprettet kalenderen, klikker du Rediger-knappen for å oppdatere kalenderen for bestemte dager, for eksempel ferier.  Avslutningsoppgaver planlegges på dager Kontrollverdi er satt til Åpen.  Hvis du avslutningsoppgaver ikke skal planlegges på en bestemt dag, må Kontrollverdi være satt Lukket.
 
 ### <a name="templates"></a>Maler
 

@@ -14,11 +14,11 @@ ms.search.scope:
 ms.assetid: 
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 447fd87cb2f71147d7a9f6476f4ed9e12d75640a
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Du må først velge et datavalideringsprosjekt øverst i arbeidsområdet. Alle d
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 
-Flisene **Sammendrag** gir en oversikt over prosessen og indikatorer hjelper deg med å holde datavalideringsprosessen i rute. Du kan se alle prosessens gjenværende oppgaver, fullførte oppgaver, oppgaver som pågår, og oppgaver som ikke har startet. Denne informasjonen er for alle firmaer som er inkludert i den valgte datavalideringsprosjektet.
+**Sammendrag**-flisene gir en oversikt over prosessen, og indikatorer hjelper deg med å holde datavalideringsprosessen på sporet. Du kan se alle gjenværende oppgaver, gjennomførte oppgaver, pågående oppgaver og ikke påbegynte oppgaver for prosessen. Denne informasjonen er for alle firmaer som er inkludert i den valgte datavalideringsprosjektet.
 
 ### <a name="tasks-and-status-section"></a>Delen Oppgaver og status
 

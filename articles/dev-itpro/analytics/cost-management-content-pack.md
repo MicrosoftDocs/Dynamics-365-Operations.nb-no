@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Powe
 Den primære datakilden for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabellen håndteres av rammeverket for hurtigbuffer for datasett. Tabellen oppdateres hvert døgn som standard, men du kan aktivere manuelle oppdateringer i databufferkonfigurasjonen. Deretter kan du gjøre en manuell oppdatering i arbeidsområdet **Kostnadsstyring** eller **Kostnadsanalyse**. Når oppdateringen av CostStatementCache er kjørt, må du oppdatere OData-koblingen på Power BI.com for å se de oppdaterte dataene på området. Avviksmålene (innkjøp, produksjon) målene i dette Power BI-innholdet gjelder bare for varer som evalueres av lagermodellen med standard kostpris. Produksjonsavvik beregnes som differansen mellom aktive kostnader og faktiske kostnader. Produksjonsavvik beregnes når produksjonsordren har statusen **Avsluttet**. Hvis du vil ha mer informasjon om produksjonsavvikstyper og hvordan hver type beregnes, se [Om å analysere avvik for en fullført produksjonsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-**Kostnadsbehandling-innhold** for Power BI er tilgjengelig fra PowerBI.com. Hvis du vil ha mer informasjon om hvordan du kobler til og laster inn Microsoft Dynamics 365 for Finance and Operations-data, kan du se [Tilgang til Power BI-innhold fra PowerBI.com](power-bi-home-page.md).
+**Kostnadsbehandling** Power BI-innholdet er tilgjengelig fra PowerBI.com. For mer informasjon om hvordan koble til og laste dine Microsoft Dynamics 365 for Finance and Operations-data, se [Tilgang til Power BI-innhold fra powerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 Innholdet inneholder et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **Kostnadsbehandling**.

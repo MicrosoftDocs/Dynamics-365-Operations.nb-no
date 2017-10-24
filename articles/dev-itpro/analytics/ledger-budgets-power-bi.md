@@ -1,0 +1,67 @@
+---
+title: Faktisk vs. budsjett Power BI-innhold
+description: "Dette emnet beskriver Faktisk vs. budsjett-innholdet for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+author: ryansandness
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application user, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.region: Global
+ms.author: ryansand
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afa8e07505283531c97663f35b208d82d69d2b42
+ms.contentlocale: nb-no
+ms.lasthandoff: 09/29/2017
+
+---
+
+# <a name="actual-vs-budget-power-bi-content"></a>Faktisk vs. budsjett Power BI-innhold
+
+[!include[banner](../includes/banner.md)]
+
+
+Dette emnet beskriver **Faktisk vs. budsjett**-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet. 
+
+# <a name="overview"></a>Oversikt
+
+Den **Faktisk vs. budsjett** Power BI-innholdet ble opprettet for personer som har ansvar for overvåking av faktiske resultater mot budsjetterte resultater i organisasjonen. **Faktisk vs. budsjett** Power BI-innhold gir oversikt over avvik i budsjettet. Du kan analysere budsjettet for gjeldende år etter kontokategori, budsjettkode, hovedkontoe, beskrivelser av hovedkontoe eller regnskapsperiode for å få en bedre forståelse av eventuelle avvik. 
+
+# <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil rapporter fra **Faktisk vs. budsjett** Power Bi-innholdet vises i arbeidsområdene **Hovedbok for budsjett og prognoser** og **Finanssjef**.
+
+# <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
+Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i **Faktisk vs. budsjett** Power BI-innholdet.
+
+| Rapporter                      | Mål |
+|-----------------------------|---------|
+| Utgifter – faktiske i forhold til budsjett | <ul><li>Totale utgifter i inneværende år</li><li>Budsjetterte totale utgifter i inneværende år</li></ul> |
+| Inntekt – faktisk i forhold til budsjett  | <ul><li>Totalomsetning i inneværende år</li><li>Budsjettert totalomsetning i inneværende år</li><ul> |
+| Utgift                     | <ul><li>Totale utgifter i inneværende år</li><li>Mål for utgifter basert på budsjett </li><ul> |
+| Omsetning                     | <ul><li>Totalomsetning i inneværende år</li><li>Mål for inntekter basert på budsjett </li><ul> |
+| Nettoinntekt                  | <ul><li>Nettoinntekt i inneværende år</li><li>Mål for nettoinntekt basert på budsjett </li><ul> |
+
+## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
+Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse. 
+
+Du kan finne **Faktisk vs. budsjett**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+
+# <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
+
+| Enhet                    | Innhold |
+|---------------------------|----------|
+| Aktiviteter i øknomimodulen | Transaksjonsbeløp for økonomimodulen |
+| Budsjettaktiviteter         | Transaksjonsbeløp for budsjettregisteret |
+| Hovedkontoer             | Hovedkontoer rapporter kan filtreres etter |
+| Regnskapskalendere          | Regnskapskalendere rapporter kan filtreres etter |
+| Finanskontoer                   | Finanskontoer som kan brukes til å filtrere rapporten til den gjeldende finanskontoen |
+| Budsjettkoder              | Budsjettkoder rapporter kan filtreres etter |
+| Juridiske enheter            | Juridiske enheter som kan brukes til å filtrere rapporten til den gjeldende juridiske enheten |
+

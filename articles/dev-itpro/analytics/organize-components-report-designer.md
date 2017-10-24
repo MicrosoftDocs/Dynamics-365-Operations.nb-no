@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -53,7 +53,7 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 
 1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2.  På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på verktøylinjen.
-3.  Klikk kategorien **Rapportgruppe**. Hvis du vil overstyre informasjonen i de individuelle rapportdefinisjonene for generering av denne rapporten, merker du av for **Overstyre firma, detaljer og innstillinger fra individuelle rapportdefinisjoner**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
+3.  Klikk kategorien **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
 4.  Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
 5.  I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
 6.  Klikk **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
@@ -106,7 +106,7 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 <td>Detaljnivå</td>
 <td>Angi detaljnivået som rapportene inneholder.
 <ul>
-<li><strong>Økonomisk</strong> – En overordnet sammendragsrapport. Du kan ikke drille ned til kontoer og dimensjoner, bortsett fra kontoene og dimensjonene som lagt til gjennom et rapporteringstre.</li>
+<li><strong>Økonomi</strong>– En sammendragsrapport på høyt nivå. Du kan ikke drille ned til kontoer og dimensjoner, bortsett fra kontoene og dimensjonene som lagt til gjennom et rapporteringstre.</li>
 <li><strong>Økonomisk og Konto</strong> − En rapport som inneholder et overordnet sammendrag og kontodetaljer.</li>
 <li><strong>Økonomisk, Konto og Transaksjon</strong> − En rapport som inneholder et overordnet sammendrag og transaksjonsdetaljer.</li>
 </ul></td>
@@ -115,14 +115,14 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 <td>Provisorisk</td>
 <td>Angi aktivitetstypene som rapportene inneholder.
 <ul>
-<li><strong>Bare postert aktivitet</strong>− Inneholder bare transaksjonene og saldoene som er postert i de økonomiske dataene.</li>
-<li><strong>Postert og upostert aktivitet</strong>− Inneholder alle transaksjonene og saldoene som er angitt og postert i de økonomiske dataene.</li>
-<li><strong>Bare upostert aktivitet</strong>− Inneholder bare transaksjonene som er angitt, men ikke postert ennå, i de økonomiske dataene.</li>
+<li><strong>Bare postert aktivitet</strong>− Inkluderer bare transaksjonene og saldoene som er postert i finansdataene.</li>
+<li><strong>Postert og upostert aktivitet</strong>− Inkluderer alle transaksjonene og saldoene som er registrert og postert i finansdataene.</li>
+<li><strong>Bare upostert aktivitet</strong>− Inkluderer bare transaksjonene som er registrert, men som ennå ikke er postert i finansdataene.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Ta med alle rapporteringsvalutaer</td>
-<td>Alle tilleggsrapporteringsvalutaer som er konfigurert i Microsoft Dynamics ERP-systemet, vises her. Merk av for dette alternativet for å generere tilleggsrapporter i valutaene som er angitt. Hvis du vil vise disse rapportene i webvisningsprogrammet, klikker du <strong>Valuta</strong> og velger en valuta.</td>
+<td>Alle tilleggsrapporteringsvalutaer som er konfigurert i Microsoft Dynamics ERP-systemet, vises her. Merk av for dette alternativet for å generere tilleggsrapporter i valutaene som er angitt. For å vise rapportene i nettvisningsprogrammet ved å klikke <strong>Valuta</strong>-knappen og velge en valuta.</td>
 </tr>
 <tr class="even">
 <td>Datoinformasjon ikke lagret med rapportdefinisjon</td>
@@ -144,7 +144,7 @@ Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</t
 <td>Rapporter i gruppen</td>
 <td>Legg til, fjerne og endre rapportrekkefølgen i rapportgruppen.
 <ul>
-<li>Dobbeltklikk rapportgruppen for å åpne den, og klikk deretter <strong>Legg til</strong> for å legge til rapportdefinisjoner rapportgruppen. Velg rapportene som skal inkluderes i rapportgruppen, og klikk deretter <strong>OK</strong>.</li>
+<li>Hvis du vil legge til rapportdefinisjoner i rapportgruppen, dobbeltklikker du rapportgruppen for å åpne den og klikker deretter <strong>Legg til</strong>. Velg rapportene som skal inkluderes i rapportgruppen, og klikk deretter <strong>OK</strong>.</li>
 <li>Hvis du vil fjerne en rapport fra rapportgruppen, velger du den og klikker deretter <strong>Fjern</strong>.</li>
 <li>Hvis du vil endre rekkefølgen som rapportene genereres i, velger du en rapport i listen og klikker deretter <strong>Flytt opp</strong> eller <strong>Flytt ned</strong>.</li>
 </ul></td>

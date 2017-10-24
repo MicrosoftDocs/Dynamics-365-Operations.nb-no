@@ -1,7 +1,7 @@
 ---
 title: Beregningsgrupper for stykkliste
 description: "Denne artikkelen inneholder informasjon om beregningsgrupper for stykklister og hvordan du definerer dem. Hvis du vil kjøre en stykklisteberegning, må du definere beregningsgrupper og tilordne dem til individuelle elementer, eller angi en standard beregningsgruppe. Beregningsinnstillingene fra beregningsgruppen brukes deretter som standardverdier på siden Stykklisteberegning på tidspunktet for stykklisteberegning."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Alternativet **Stopp nedbryting** brukes til å angi når en produsert vare skal
 
 ### <a name="warnings"></a>Advarsler
 
-I hurtigfanen **Advarsler** kan du velge alternativer for alle advarsler som brukere skal motta når de utfører stykklisteberegninger. Hvis du velger for eksempel merker av for **Ingen stykkliste**, mottar brukeren en advarsel hvis det ikke finnes noen aktiv stykklisteversjon for én av komponentene eller den overordnede varen som stykklisteberegningen kjøres for. Hvis du merker av for **Ingen rute**, mottar brukeren en advarsel hvis det ikke blir funnet en aktiv ruteversjon. Hvis du vil bruke ressurser på rutene og operasjonene, kan du angi at systemet skal kontrollere om disse ressursene finnes. Deretter, hvis en ressurs ikke finnes på hver linje i den aktive ruten, mottar brukeren en advarsel. Du kan også verifisere og kontrollere forbruk. Forbruket er antallet i en bestemt rute. Vanligvis representerer dette tiden som kreves for å utføre en bestemt operasjon i produksjonsprosessen. Du kan kontrollere om en vare ikke har kostpris. Hvis det ikke er noen aktive kostpris for en vare, blir ingen kost lagt til i stykklisteberegningen. Du kan også kontrollere og bekrefte alderen til kostprisen. Angi for eksempel **60** for å angi at enhetskostprisen må evalueres på nytt etter 60 dager. Hvis denne grensen nås, genererer systemet en advarsel. En kostpris ble for eksempel angitt for en vare i januar i år. Hvis det er nå august, som er mer enn 60 dager etter at kostprisen ble angitt, mottar brukeren en advarsel når stykklisteberegningen kjøres. Du kan angi i prosent i feltet **Minste dekningsgrad**. Denne verdien angir punktet da minste dekningsgrad ikke oppfylles. Hvis dekningsgraden for en bestemt komponent ikke oppfylles, mottar brukeren en advarsel. Dette feltet bidrar derfor til å garantere at du ikke undervurderer kostnadene og ekstra indirekte kostnader som kan være nødvendige for varene.
-Standard oppsett i Parametere for beholdnings- og lagerstyring
---------------------------------------------------------------
+I hurtigfanen **Advarsler** kan du velge alternativer for alle advarsler som brukere skal motta når de utfører stykklisteberegninger. 
 
-Siden det kreves beregningsgrupper for å kjøre beregninger, må du definere en standard beregningsgruppe i Parametere for beholdnings- og lagerstyring. Dette oppsettet lar firmaer ha en standard kostgruppe og fortjenesteinnstilling for alle varer. Deretter, hvis en bestemt vare har spesielle beregningskrav, kan brukeren tilordne en annen beregningsgruppe til varen. Vanligvis kan du definere beregningsgrupper på komponentvarene for stykklisten i stedet for stykklistevarer. Når advarsler vises, brukes imidlertid beregningsgrupper. En beregningsgruppe som er tilordnet til varer, overstyrer standardverdien som er definert i parametere for lagerstyring. Du kan definere standardparameteren ved å gå til **Kostnadsstyring** &gt; **Oppsett for regnskapspolicyer for beholdning** &gt; **Parametere** &gt; **Lagerregnskap** &gt; **Beregningsgruppe**. Ved å definere en standard konfigurasjonsgruppe, kan du også konfigurere advarselsbetingelsene som vises for brukere under stykklisteberegningen hvis de valgte komponentene kan føre til beregningsfeil.
-Vise advarsler på siden Fullført
-------------------------------------------
+Hvis du velger for eksempel merker av for **Ingen stykkliste**, mottar brukeren en advarsel hvis det ikke finnes noen aktiv stykklisteversjon for én av komponentene eller den overordnede varen som stykklisteberegningen kjøres for. Hvis du merker av for **Ingen rute**, mottar brukeren en advarsel hvis det ikke blir funnet en aktiv ruteversjon. Hvis du vil bruke ressurser på rutene og operasjonene, kan du angi at systemet skal kontrollere om disse ressursene finnes. Deretter, hvis en ressurs ikke finnes på hver linje i den aktive ruten, mottar brukeren en advarsel. 
+
+Du kan også verifisere og kontrollere forbruk. Forbruket er antallet i en bestemt rute. Vanligvis representerer dette tiden som kreves for å utføre en bestemt operasjon i produksjonsprosessen. Du kan kontrollere om en vare ikke har kostpris. Hvis det ikke er noen aktive kostpris for en vare, blir ingen kost lagt til i stykklisteberegningen. 
+
+Du kan også kontrollere og bekrefte alderen til kostprisen. Angi for eksempel **60** for å angi at enhetskostprisen må evalueres på nytt etter 60 dager. Hvis denne grensen nås, genererer systemet en advarsel. En kostpris ble for eksempel angitt for en vare i januar i år. Hvis det er nå august, som er mer enn 60 dager etter at kostprisen ble angitt, mottar brukeren en advarsel når stykklisteberegningen kjøres. Du kan angi i prosent i feltet **Minste dekningsgrad**. Denne verdien angir punktet da minste dekningsgrad ikke oppfylles. Hvis dekningsgraden for en bestemt komponent ikke oppfylles, mottar brukeren en advarsel. Dette feltet bidrar derfor til å garantere at du ikke undervurderer kostnadene og ekstra indirekte kostnader som kan være nødvendige for varene.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Standard oppsett i Parametere for beholdnings- og lagerstyring
+
+Siden det kreves beregningsgrupper for å kjøre beregninger, må du definere en standard beregningsgruppe i Parametere for beholdnings- og lagerstyring. Dette oppsettet lar firmaer ha en standard kostgruppe og fortjenesteinnstilling for alle varer. Deretter, hvis en bestemt vare har spesielle beregningskrav, kan brukeren tilordne en annen beregningsgruppe til varen. Vanligvis kan du definere beregningsgrupper på komponentvarene for stykklisten i stedet for stykklistevarer. Når advarsler vises, brukes imidlertid beregningsgrupper. En beregningsgruppe som er tilordnet til varer, overstyrer standardverdien som er definert i parametere for lagerstyring. 
+
+Du kan definere standardparameteren ved å gå til **Kostnadsstyring** &gt; **Oppsett for regnskapspolicyer for beholdning** &gt; **Parametere** &gt; **Lagerregnskap** &gt; **Beregningsgruppe**. Ved å definere en standard konfigurasjonsgruppe, kan du også konfigurere advarselsbetingelsene som vises for brukere under stykklisteberegningen hvis de valgte komponentene kan føre til beregningsfeil.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Vise advarsler på siden Fullført
 
 En stykklisteberegning genererer advarsler. Du kan vise advarslene om en valgt vare. Opprett for eksempel en ny salgsordre for vare D0001 i Salg og markedsføring. Deretter går du til salgsordrelinjen på **Oppdater linje**-menyen, og klikker **Beregn basert på stykkliste/formel** for å vise beregningsdetaljene og advarslene. Du kan også vise resultatene for stykklisteberegning på siden **Fullført**. For advarselsmeldinger gjelder bare to av advarselsbetingelsene for produserte varer, mens fire advarselsbetingelser gjelder alle varer:
 -   Identifiser når en produsert var ikke har noen aktiv stykkliste.

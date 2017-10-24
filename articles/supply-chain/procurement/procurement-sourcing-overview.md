@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3669de6314e65c78ce5d401dae2e7481ec38b68
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 03af609a9d21fc11247f247aad1ca26e3719755e
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,18 +35,18 @@ Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i m
 Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for produkter og tjenester gjennom å fremskaffe produktet, mottak, fakturering og behandling av betaling til leverandører. Du kan konfigurere innkjøpsprosesser mot bestemte forretningsbehov ved å definere innkjøpspolicyer og -arbeidsflyter.
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifisere et behov for produkter og tjenester
-Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for eksempel når en ansatt trenger et produkt. *Produktkataloger *kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.  
+Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for eksempel når en ansatt trenger et produkt. *Produktkataloger* kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.  
 
-*Forbruksbeløp *kan brukes til å begrense rekvisisjonsforbruk, og *innkjøpsarbeidsflyten *legger til alternativet om å kreve godkjenning før bestilling kan skje. Det er også mulig å angi budsjettmiddeltildelinger, om nødvendig.  
+*Forbruksbeløp* kan brukes til å begrense rekvisisjonsforbruk, og *innkjøpsarbeidsflyten* legger til alternativet om å kreve godkjenning før bestilling kan skje. Det er også mulig å angi budsjettmiddeltildelinger, om nødvendig.  
   
-Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel *som sendes til flere potensielle leverandører. Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer. Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.  
+Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel* som sendes til flere potensielle leverandører. Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer. Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.  
 
-Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel *til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
+Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel* til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
 
-*Leverandørkataloger *kan brukes til å samle inn informasjon om produktsortimentet som leverandører kan levere. Leverandører kan publisere sine egne kataloger slik at det blir enklere å oppdatere katalogen. Det er mulig å knytte en *liste over godkjente leverandører* til et produkt, og dette kan være til hjelp for leverandørvalg når nye bestillinger åpnes, og forhindre bruken av utilsiktede leverandører.
+*Leverandørkataloger* kan brukes til å samle inn informasjon om produktsortimentet som leverandører kan levere. Leverandører kan publisere sine egne kataloger slik at det blir enklere å oppdatere katalogen. Det er mulig å knytte en *liste over godkjente leverandører* til et produkt, og dette kan være til hjelp for leverandørvalg når nye bestillinger åpnes, og forhindre bruken av utilsiktede leverandører.
 
 ## <a name="procurement"></a>Innkjøp
-*Bestillinger *kan opprettes på flere forskjellige måter, blant annet:
+*Bestillinger* kan opprettes på flere forskjellige måter, blant annet:
 
 -   Som et resultat av hovedplanlegging, som har identifisert et behov som krever som et kjøp. Denne prosessen genererer planlagte bestillinger, og når de frigis, genereres det bestillinger.
 -   Ved hjelp av behandling av innkjøpsrekvisisjoner som fører til innkjøp.
@@ -61,7 +61,7 @@ Når du oppretter en bestilling, er mange av feltene forhåndsutfylt med verdier
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
-Priser og rabatter omfatter informasjon om priser, rabatter og rabattbetingelsene som de tilbyr. Priser og rabatter kan representeres som *forretnings**avtaler*. Forretningsavtaler representerer leverandørens prislister med priser eller rabatter, og har et bestemt sett med datoer som avtalen gjelder for. Priser og rabatter kan forhandles og vises gjennom *kjøpsavtaler *med betingelser som forpliktelser om å kjøpe bestemte volumer eller pengebeløp som en forutsetning for de forhandlede betingelsene. *Rabattavtaler *kan opprettes med leverandører der innkjøp av bestemte produkter eller en gruppe produkter kan utløse en rabatt fra leverandøren avhengig av innkjøpsbeløpet eller volum.
+Priser og rabatter omfatter informasjon om priser, rabatter og rabattbetingelsene som de tilbyr. Priser og rabatter kan representeres som *forretnings**avtaler*. Forretningsavtaler representerer leverandørens prislister med priser eller rabatter, og har et bestemt sett med datoer som avtalen gjelder for. Priser og rabatter kan forhandles og vises gjennom *kjøpsavtaler* med betingelser som forpliktelser om å kjøpe bestemte volumer eller pengebeløp som en forutsetning for de forhandlede betingelsene. *Rabattavtaler* kan opprettes med leverandører der innkjøp av bestemte produkter eller en gruppe produkter kan utløse en rabatt fra leverandøren avhengig av innkjøpsbeløpet eller volum.
 
 ### <a name="delivery-options"></a>Alternativer for levering
 
@@ -76,17 +76,17 @@ Produkter kan defineres for å inkludere *tilleggsvarer*. På denne måten fores
 Tillegg kan tilordnes til bestillingen. Dette kan skje automatisk gjennom oppsett av automatiske tillegg eller ved å legge til tilleggene manuelt. Tillegg kan tilordnes til ordren på overskriftsnivå, eller på ordrelinjenivå. Regnskap for tillegg kan defineres på forskjellige måter. Du kan for eksempel definere et tillegg som skal regnes som en produktkostnad. Hvis du gjør dette, må tilleggene tilordnes på ordrelinjenivå før ordren kan bekreftes. Det finnes et alternativ som kan hjelpe deg med å fordele tillegg fra ordrehodet til linjene.
 
 ## <a name="product-receipt-and-invoicing"></a>Produktkvittering og fakturering
-Bestillinger som inneholder fysiske produkter, krever vanligvis at *ankomstregistreringen* skal skje i et lager, og deretter registreres en *produktkvittering *for ordren. Bestillinger med produkter som oppfyller rekvisisjoner, kan konfigureres slik at den ansatte som har bedt om produktene, må også må angi en *bekreftelse av mottak*.  
+Bestillinger som inneholder fysiske produkter, krever vanligvis at *ankomstregistreringen* skal skje i et lager, og deretter registreres en *produktkvittering* for ordren. Bestillinger med produkter som oppfyller rekvisisjoner, kan konfigureres slik at den ansatte som har bedt om produktene, må også må angi en *bekreftelse av mottak*.  
 
-Enkelte bestillinger kan være produkter som er tjenester eller andre ikke-fysiske produkter der mottak i et lager ikke er nødvendig. Du kan opprette produkter som tjenester, eller *innkjøpskategorier *kan brukes direkte på bestillingen for slike ordrer. Med disse ordrene utelates noen ganger regnskap for produktkvittering, og ordren faktureres direkte, eller alternativt utføres produktkvitteringsregistrering på bestillingen uten noen tidligere ankomstregistrering.  
+Enkelte bestillinger kan være produkter som er tjenester eller andre ikke-fysiske produkter der mottak i et lager ikke er nødvendig. Du kan opprette produkter som tjenester, eller *innkjøpskategorier* kan brukes direkte på bestillingen for slike ordrer. Med disse ordrene utelates noen ganger regnskap for produktkvittering, og ordren faktureres direkte, eller alternativt utføres produktkvitteringsregistrering på bestillingen uten noen tidligere ankomstregistrering.  
 
 Mottak av produkter kan resultere i automatisk forbruk for et bestemt formål. Dette inkluderer implisert forbruk med direktelevering, forbruk mot et prosjekt, eller regnskapsføring av produktet som et anleggsmiddel.  
 
-Når* leverandørfakturaer* mottas fra leverandøren, kan de først bli registrert i *ankomstregistrering *uavhengig av bestillingen, og deretter senere bli godkjent som en post mot bestillingen. Registrering av leverandørfaktura med bestillingen inkluderer samsvar for produktkvitteringen mot fakturaen.  
+Når *leverandørfakturaer* mottas fra leverandøren, kan de først bli registrert i *ankomstregistrering* uavhengig av bestillingen, og deretter senere bli godkjent som en post mot bestillingen. Registrering av leverandørfaktura med bestillingen inkluderer samsvar for produktkvitteringen mot fakturaen.  
 
 *Regnskapsdistribusjoner* kan angis i bestillingen for å beskrive hvordan regnskap skal skje i Finans, og kan også definere hvordan budsjettmiddeltildelinger hentes når dette er inkludert i konfigurasjonen.  
 
-Fakturerte bestillinger registrerer gjelden i leverandørkontoen i leverandører, der *l*e*verandørbetalingen *kan behandles fra.
+Fakturerte bestillinger registrerer gjelden i leverandørkontoen i leverandører, der *l*e*verandørbetalingen* kan behandles fra.
 
 ## <a name="vendor-performance"></a>Leverandørytelse
 Ytelse og gjennomgang av innkjøp støttes via *innkjøps- og leverandørrapporter,* som inkluderer forbruksanalyse og analyse av leverandørytelse.

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9b9bb0acc6f0dc1722c916f133eed766ffdd4cc8
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,7 +61,7 @@ I Finance and Operations må du ofte vite både plasseringen og konteksten til e
 -   Menyskillelinje (hvis knappen er i en navngitt gruppe i en menyknapp)
 -   Gruppen eller kategorien på siden (for eksempel navnet på en hurtigfane)
 
-Du tastet for eksempel **tot** i feltet for **handlingssøk**, og undersøker nå resultatlisten. Den første oppføringen, for en knapp som heter **Totaler**, er uthevet. En knapp i banen til **Salgsordre** &gt; **Vis** vises også. Delen **Salgsordre** for banen samsvarer med kategorien **Salgsordre** i handlingsruten, og delen **Vis** samsvarer med gruppen **Vis** i denne kategorien. På samme måte vil banen til knappen **Sluttrabatt** (**Selg** &gt; **Beregn**) fortelle deg at denne knappen er plassert i **Beregn**-gruppen i **Selg**-kategorien i handlingsruten. Derfor kan denne informasjonen hjelpe deg med å forstå nøyaktig hvilken knapp som vil utløses av handlingssøk (hvis du velger denne knappen i resultatlisten). 
+Du tastet for eksempel **tot** i feltet for **handlingssøk**, og undersøker nå resultatlisten. Den første oppføringen, for en knapp som heter **Totaler**, er uthevet. En knapp i banen til **Salgsordre** &gt; **Vis** vises også. **Salgsordre**-delen av banen korresponderer til **Salgsordre**-kategorien på handlingspanelet, og **Vis**-delen av banen korresponderer til **Vis**-gruppen for denne kategorien. Tilsvarende vil banen for **Total rabatt**-knappen (**Selg** &gt; **Beregne**) informere deg at denne knappen er lokalisert i **Kalkuler**-gruppen i kategorien **Selg** i handlingspanelet. Derfor kan denne informasjonen hjelpe deg med å forstå nøyaktig hvilken knapp som vil utløses av handlingssøk (hvis du velger denne knappen i resultatlisten). 
 
 [![handling-søk-felt-med-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 

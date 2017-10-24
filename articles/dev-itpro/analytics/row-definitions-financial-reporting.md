@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.
 
-<a name="create-a-row-definition"></a>Opprett en raddefinisjon
+<a name="create-a-row-definition"></a>Opprette en raddefinisjon
 -----------------------
 
 1.  I navigasjonsruten i Rapportutforming klikker du **Raddefinisjoner**.
@@ -68,8 +68,8 @@ En dimensjon er en overlapping av data og verdier. Du kan gruppere data og verdi
 | Alternativ                | Beskrivelse                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimensjon             | Mønsteret som identifiserer dimensjonen som skal legges til raddefinisjonen. Dette mønsteret inneholder ett &-tegn eller nummertegn (\#) for hver posisjon i dimensjonene. Bruk vanligvis bare &-tegn for hovedkontodimensjonen og bare nummertegn (#) for andre dimensjoner. |
-| Start på dimensjonsområde | Den første verdien for denne dimensjonen som skal legges til raddefinisjonen.                                                                                                                                                                                                                 |
-| Slutt på dimensjonsområde   | Den siste verdien for denne dimensjonen som skal legges til raddefinisjonen.                                                                                                                                                                                                                  |
+| Dimensjonsområdestart | Den første verdien for denne dimensjonen som skal legges til i raddefinisjonen.                                                                                                                                                                                                                 |
+| Dimensjonsområdeslutt   | Den siste verdien for denne dimensjonen som skal legges til raddefinisjonen.                                                                                                                                                                                                                  |
 
 Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 
@@ -93,7 +93,7 @@ Hvis du har en balanse der beløpene er avrundet, kan det hende totalene ikke er
 Følg fremgangsmåten nedenfor hvis du vil justere avrunding i en balanse.
 
 1.  I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
-2.  På **Rediger**-menyen klikker du **Avrundingsjustering**.
+2.  Klikk **Avrundingsjustering** på **Rediger**-menyen.
 3.  Skriv inn følgende verdier i dialogboksen **Avrundingsjusteringer**:
     -   **Raden Avrundingsjustering** – Radkoden for raden som skal justeres for å balansere balansen.
     -   **Raden Sum aktiva** – Radkoden for raden i balansen som inneholder de samlede aktivaene.
@@ -122,22 +122,22 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <td><ol>
 <li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
 <li>Klikk <strong>Ny</strong> i dialogboksen <strong>Stiler og formatering</strong>, og skriv deretter inn et unikt navn for den nye stilen.</li>
-<li>Velg skriftene du vil bruke, og klikk deretter <strong>OK</strong>.</li>
+<li>Velg skrifter, og klikk deretter <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Endre en skriftstil</td>
 <td><ol>
 <li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
-<li>Velg en stil å endre i dialogboksen <strong>Stiler og formatering</strong>, og klikk deretter <strong>Endre</strong>.</li>
-<li>Velg skriftene du vil bruke, og klikk deretter <strong>OK</strong>.</li>
+<li>Velg en stil du vil endre i dialogboksen <strong>Stiler og formatering</strong>, og klikk deretter <strong>Endre</strong>.</li>
+<li>Velg skrifter, og klikk deretter <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Bruke en skriftstil</td>
 <td><ol>
 <li>I en definisjon eller kolonnedefinisjon, eller i topptekst og bunntekst, velger du én eller flere celler i Rapportutforming.</li>
-<li>Velg en skriftstil i <strong>Stil</strong>-listen.</li>
+<li>Velg en skriftstil i <strong>Stil</strong>-listen på verktøylinjen.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 ### <a name="hide-columns-in-the-view-pane"></a>Skjule kolonner i visningsruten
 
 1.  Åpne raddefinisjonen som skal endres i Rapportutforming.
-2.  Velg kolonnen eller kolonnene du vil minimere.
+2.  Merk kolonnen eller kolonnene som skal minimeres.
 3.  Høyreklikk og klikk deretter **Skjul**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Vise alle skjulte kolonner i visningsruten
