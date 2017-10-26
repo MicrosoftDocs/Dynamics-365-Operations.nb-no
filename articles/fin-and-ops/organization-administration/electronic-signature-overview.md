@@ -19,10 +19,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 069af29012f75aa1a15ba9df86fe1fc9e04eaf41
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ Elektroniske signaturer er et krav til samsvar med lovgivning for flere regulert
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniske signaturer i Dynamics 365 for Finance and Operations
 I Dynamics 365 for Finance and Operations kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt. 
 
-Elektroniske signaturer har innebygd funksjonalitet for digital signatur. Alle brukere som signerer dokumenter, må ha et gyldig kryptografisk sertifikat. Når et dokument signeres, valideres den private nøkkelen som er tilordnet dette sertifikatet. Finance and Operations registrerer informasjon om elektronisk signatur i en logg for å angi et revisjonsspor. Hvis du vil definere elektroniske signaturer, kan du se [Opprette elektroniske signaturer (oppgaveveiledning)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
+Elektroniske signaturer har innebygd funksjonalitet for digital signatur. Alle brukere som signerer dokumenter, må ha et gyldig kryptografisk sertifikat. Når et dokument signeres, valideres den private nøkkelen som er tilordnet dette sertifikatet. Finance and Operations registrerer informasjon om elektronisk signatur i en logg for å angi et revisjonsspor. Hvis du vil definere elektroniske signaturer, kan du se [Opprette elektroniske signaturer (oppgaveveiledning)](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Brukere som trenger tilgang til elektroniske signaturer
 Tre typer brukere krever vanligvis sikkerhetstilgang til elektroniske signaturer: administratorer for elektroniske signaturer, signatarer og revisorer for elektroniske signaturer.

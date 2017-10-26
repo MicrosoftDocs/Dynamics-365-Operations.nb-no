@@ -13,14 +13,14 @@ ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations
 ms.search.region: Global
 ms.author: tjvass
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: e819aafbdf55fbc2a6dc996d275244de1e11d89b
+ms.sourcegitcommit: fc8102d945faf9ad533f57ec1a45b0e0dc344963
+ms.openlocfilehash: d36abbf7c08c56d84ed83dbec1bfa33f30b47ef5
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,10 +47,10 @@ Enten du utvider et eksisterende arbeidsområde for programmet eller introdusere
 4. Valgfritt: Legg til filtyper hvis du vil tilpasse visningen.
 
 > [!NOTE]
-> Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Denne siden er en god kilde for innsikt som kan hjelpe deg med å opprette overbevisende analytiske rapporteringsløsninger.
+> Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Denne siden er en god kilde for innsikt som kan hjelpe deg med å opprette overbevisende analytiske rapporteringsløsninger.
 
 # <a name="add-a-pbix-file-as-a-resource"></a>Legge til en .pbix-fil som en ressurs
-Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil bygge inn i arbeidsområdet. Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
+Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil bygge inn i arbeidsområdet. Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et Visual Studio-prosjekt.
 

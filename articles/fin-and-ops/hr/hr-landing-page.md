@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ Med Personale kan du fullføre disse oppgavene:
 
 Når du arbeider med Personale, må du bestemme hvordan du vil strukturere organisasjonen ved hjelp av elementer, for eksempel avdelinger, jobber og stillinger. Disse er blant de grunnleggende elementene du må konfigurere i Personale. Enkeltansatte tilordnes til stillinger som er knyttet til jobber.
 
--   [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [Definere firmaspesifikke parametere for Personale](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [Definere parametere for Personale på tvers av juridiske enheter](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](../../talent/departments-jobs-positions.md)
+-   [Definere firmaspesifikke parametere for Personale](../../talent/set-up-company-specific-hr-parameters.md)
+-   [Definere parametere for Personale på tvers av juridiske enheter](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekruttere, ansette og motivere ansatte
 
 Rekrutteringsprosjekter behandler innholdet som brukes i annonser for ledige stillinger, og kan hjelpe deg med å administrere søknader for ledige stillinger. Du kan bruke dem til å spore svar på jobbposteringer for et bestemt rekrutteringsprosjekt eller bestemte søkere, og oppdatere statusen for ledige stillinger. Du kan også ansette enkeltsøkere eller administrere masseansettelsesprosjekter, som forenkler ansettelse av flere arbeidere, for eksempel for å oppfylle sesongbaserte behov.
 
--   [Administrere en rekrutteringsprosess](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [Masseansettelsesprosjekter](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [Administrere en rekrutteringsprosess](manage-recruiting-process.md)
+-   [Masseansettelsesprosjekter](mass-hire-projects.md) 
 
 Når du har ansatt en stab, kan du definere planer for å behandle kompensasjon effektivt og rettferdig, samt administrere elementer, for eksempel datamaskiner eller telefoner, som organisasjonen låner ut til sine ansatte. Du kan opprette faste og variable kompensasjonsplaner, i tillegg til å definere reglene som gjelder kompensasjonsplanen for å oppfylle kriteriene for denne planen.
 
--   [Kompensasjonsplaner](/dynamics365/unified-operations/talent/compensation-plans)
--   [Opprette planer for fast kompensasjon](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [Opprette variable kompensasjonsplaner](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [Kompensasjonsplaner](../../talent/compensation-plans.md)
+-   [Opprette planer for fast kompensasjon](../../talent/create-fixed-compensation-plans.md)
+-   [Opprette variable kompensasjonsplaner](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Utvikle og lære opp ansatte
 
 For å hjelpe de ansatte til å nå sine karrieremål samtidig som de oppfyller kritiske forretningsbehov, kan du definere mål, opprette medarbeiderevalueringer og spore tilbakemeldinger for å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner. Du kan også definere instruktører, kurstyper, kurs, kursbeskrivelser, agendaer, sporinger og økter før du tilordner en instruktør til et kurs eller registrerer noen for et kurs. Instruktører må allerede finnes som arbeidere, søkere eller kontakter.
 
--   [Ytelsesstyring](/dynamics365/unified-operations/talent/performance-management-overview)
--   [Justere ferdigheter og forretningsbehov for arbeidsstyrke](/dynamics365/unified-operations/talent/skills)
--   [Administrere opplæring via kurs](/dynamics365/unified-operations/talent/courses)
+-   [Ytelsesstyring](../../talent/performance-management-overview.md)
+-   [Justere ferdigheter og forretningsbehov for arbeidsstyrke](../../talent/skills.md)
+-   [Administrere opplæring via kurs](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Opprette og vedlikeholde fordeler
 
 I tillegg til å kompensere dine ansatte med lønn og bonuser, kan du utvikle fordelsprogrammer som sykeforsikring og pensjonsplaner. Du kan også administrere fordeler, for eksempel låneprogrammer, der firmaet låner ut elementer, for eksempel datamaskiner eller telefoner, til sine ansatte.
 
--   [Administrere et fordelsprogram](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [Policyer for fordelsrettigheter](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [Administrere varer som er lånt ut til arbeidere](/dynamics365/unified-operations/talent/loan-items)
+-   [Administrere et fordelsprogram](../../talent/manage-benefit-program.md)
+-   [Policyer for fordelsrettigheter](../../talent/benefit-eligibility-policies.md)
+-   [Administrere varer som er lånt ut til arbeidere](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Opprettholde sikkerhet på arbeidsplassen og overholdelse
 
@@ -92,10 +92,10 @@ Microsoft Dynamics AX kan hjelpe deg med å vedlikeholde et sikkert arbeidsmilj�
 
 Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som brukes til forskjellige formål. Spørreskjema-funksjonen lar deg utforme og lage spørreskjemaer. Når et spørreskjema er klart, distribuerer du det til mange eller til et bestemt sett av respondentene, for utfylling. Når respondentene har avgitt svarene, kan du gå gjennom og analysere resultatene.
 
--   [Spørreskjemaer](/dynamics365/unified-operations/talent/questionnaires)
--   [Utforme et spørreskjema](/dynamics365/unified-operations/talent/design-questionnaires)
--   [Distribuere og fylle ut et spørreskjema](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [Vise og evaluere resultatene i et spørreskjema](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [Spørreskjemaer](../../talent/questionnaires.md)
+-   [Utforme et spørreskjema](../../talent/design-questionnaires.md)
+-   [Distribuere og fylle ut et spørreskjema](../../talent/distribute-questionnaires.md)
+-   [Vise og evaluere resultatene i et spørreskjema](../../talent/evaluate-questionnaire-results.md)
 
 
 

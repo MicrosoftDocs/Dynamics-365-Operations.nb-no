@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: f596f84463f46fc37b14b77bd335b9ed8a62eea9
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -39,7 +39,7 @@ Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kos
 
 Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen. 
 
-Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../financials/cost-accounting/cost-accounting-home-page.md). 
 
 Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
 

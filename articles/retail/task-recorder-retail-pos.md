@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
+ms.translationtype: HT
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: 9a1e3f08eeda93adeac4509edad244754770db65
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -126,7 +126,7 @@ Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveve
 Teksten du skriver inn i **Merknader**-feltet, vises *under* trinnteksten i oppgaveveiledningen. Hvis brukeren skal lese merknadsteksten, må han/hun utvide trinnteksten i popup-vinduet. Denne plasseringen er egnet for valgfritt lesemateriale eller annen informasjon som kan være nyttig for brukeren, men som brukeren ikke trenger for å fullføre handlingen.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjelp i moderne salgssted for detaljhandel og skysalgssted
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i moderne salgssted for detaljhandel og skysalgssted, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Hjelp for moderne salgssted for detaljhandel og skysalgssted søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Microsoft Dynamics 365 for Retail, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen. 
+Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i moderne salgssted for detaljhandel og skysalgssted, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-and-ops/get-started/help-connect.md). Hjelp for moderne salgssted for detaljhandel og skysalgssted søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Microsoft Dynamics 365 for Retail, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen. 
 
 [![Hjelp-knappen](./media/help.jpg)](./media/help.jpg) 
 

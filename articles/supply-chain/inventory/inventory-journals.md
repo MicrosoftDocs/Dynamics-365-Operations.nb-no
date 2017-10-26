@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6dfb82acb5dafd365d878949b35d4fe6ff58793d
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +78,7 @@ Produksjonsinnleveringsjournalene fungerer som vareankomstjournalene, men brukes
 
 ### <a name="counting"></a>Opptelling
 
-Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer opptellingsgrupper, se [Definere prosesser for lageropptelling (oppgaveveiledning)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
+Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er registrert for varer eller varegrupper, og posterer deretter den faktiske fysiske opptellingen slik at du kan foreta justeringene som kreves for å avstemme forskjeller. Du kan knytte opptellingspolicyer med opptellingsgrupper for å gruppere varer med ulike egenskaper, slik at disse elementene kan inkluderes i en opptellingsjournal. Du kan for eksempel angi opptellingsgrupper for å telle varer som har en bestemt frekvens, eller telle varer når beholdningen faller til et bestemt nivå. Hvis du vil ha informasjon om hvordan du definerer opptellingsgrupper, se [Definere prosesser for lageropptelling (oppgaveveiledning)](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Brikkeopptelling
 

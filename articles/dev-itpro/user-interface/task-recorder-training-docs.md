@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 11. Velg hvordan du vil lagre oppgaveopptaket.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Ta med oppgaveopptakene i Hjelp-ruten
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../get-started/help-connect.md).
+Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../../fin-and-ops/get-started/help-connect.md).
 
 <a name="see-also"></a>Se også
 --------
 
-[Oversikt over Hjelp](..\get-started\help-overview.md)
+[Oversikt over Hjelp](../../fin-and-ops/get-started/help-overview.md)
 
-[Koble til Hjelp](..\get-started\help-connect.md)
+[Koble til Hjelp](../../fin-and-ops/get-started/help-connect.md)
 
 [Oppgaveregistrering](task-recorder.md)
 

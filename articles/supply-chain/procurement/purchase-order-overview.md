@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
-ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c36795a071cc72721558bfa8984ecf1f47501c91
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilli
 -   [Opprett bestilling](purchase-order-creation.md)
 -   [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
 -   [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
--   [Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Bestillingstyper
 Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi type. Du kan definere en standard ordretype for nye bestillinger på siden **Parametere for innkjøp og leverandører**.
@@ -92,7 +92,7 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 
 [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
 
-[Oversikt over leverandørfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+[Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 
