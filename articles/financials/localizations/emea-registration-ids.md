@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -61,7 +60,7 @@ Registreringskategori er registrerings-ID for land/region som er godkjent for br
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angi registrerings-IDene for poster i globale adressebøker
 
-Den globale adresseboken i Microsoft Finance and Operations inneholder konsolidert adresseinformasjon for kunder, leverandører, kontakter, forretningsforbindelser og juridiske enheter. For mer informasjon, se [Oversikt over global adressebok](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Partspostene som er lagret i den globale adresseboken, kan inneholde én eller flere adresseposter. Adressene brukes til forskjellige formål, for eksempel fakturering eller levering. Du kan definere registrerings-IDer for adresseinformasjon for kunder, leverandører, ansatte og juridiske enheter. Finn partsposten (juridisk enhet, leverandør, kunde, arbeider) du vil angi register-IDen for, og klikk deretter **Registrerings-IDer** i skjemaer som er knyttet til part, juridisk enhet, leverandør, kunde, arbeider for å åpne siden **Administrer adresser**. I kategorien **Avgiftsregistrering** klikker du **Legg til** og skriver inn følgende informasjon om registrering-IDen.
+Den globale adresseboken i Microsoft Finance and Operations inneholder konsolidert adresseinformasjon for kunder, leverandører, kontakter, forretningsforbindelser og juridiske enheter. For mer informasjon, se [Oversikt over global adressebok](../../fin-and-ops/organization-administration/overview-global-address-book.md). Partspostene som er lagret i den globale adresseboken, kan inneholde én eller flere adresseposter. Adressene brukes til forskjellige formål, for eksempel fakturering eller levering. Du kan definere registrerings-IDer for adresseinformasjon for kunder, leverandører, ansatte og juridiske enheter. Finn partsposten (juridisk enhet, leverandør, kunde, arbeider) du vil angi register-IDen for, og klikk deretter **Registrerings-IDer** i skjemaer som er knyttet til part, juridisk enhet, leverandør, kunde, arbeider for å åpne siden **Administrer adresser**. I kategorien **Avgiftsregistrering** klikker du **Legg til** og skriver inn følgende informasjon om registrering-IDen.
 
 
 |Felt                |beskrivelse                                                |

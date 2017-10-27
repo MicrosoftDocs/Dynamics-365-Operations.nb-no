@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: nb-no
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ Når denne konfigurasjonen brukes, opprettes en bestilling for relaterte tjenest
 En produksjonsordre kan ha mange operasjoner, og hver operasjon kan tildeles til en annen leverandør. Derfor kan en produksjonsordre for ende-til-ende utløse flere bestillinger.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Utsetting av produksjonsflytaktiviteter
-I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (emne i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
+I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](tasks/create-production-flow-version.md) (emne i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
 
 Siden kanban-regler kan være svært dynamiske, kan du utforme forskjellige varianter av forsyning for samme produkt på en produksjonsflyt. Når du bruker lean utsetting, er materialflyten og finansflyten strengt atskilt. All materialflyt representeres av kanban-aktiviteter. Bestillinger for tjenesteprodukter og mottaksposteringer av disse tjenestene kan automatiseres, basert på statusen for kanban-jobber i produksjonsflyten. Kanban-jobber kan startes og fullføres selv før bestillingen er opprettet. Utsettingsdokumenter (bestilling og mottak av tjenesten) kan aggregeres etter periode og tjeneste. Antall kjøpsdokumenter og linjer kan derfor holdes lavt, selv i svært gjentatte operasjoner der leverandører gir underleveranser i en enkelt brikke flyt.
 

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ I denne øvelsen skal du generere og utforske en eksisterende standardrapport. D
 4.  Gå til **Finansrapporter** under **Forespørsler og rapporter** i økonomimodulen.
 5.  Velg raden for rapporten kalt **FIN-detalj – standard**.
 6.  Velg **Rediger**. Obs!  Du blir bedt om å laste ned ettklikks rapportutforming og om å logge på. Bruk legitimasjonen til å logge på.
-7.  Endre basisåret til 2012, og velg **Generer**. Når det genereres en rapport fra rapportutforming, åpnes den i en ny fane i nettleseren. Du kan enten utforske rapporten i den nye nettleserfanen eller gå til den opprinnelige nettleserfanen og åpne rapporten derfra ved å velge den fra **Finansrapporter**-listen.
+7.  Endre basisåret til 2012, og velg **Generer**. Når en rapport genereres fra rapportdesigneren, åpnes den i en ny nettleserfane. Du kan enten utforske rapporten i den nye nettleserfanen, eller gå til den opprinnelige nettleserfanen din og åpne rapporten derfra ved å velge den fra listen over **Finansrapporter**.
 8.  I den åpnede rapporten velger du ett av beløpene for å drille ned i kontodetaljen for rapporten.
 9.  Når du er i kontodetalj, velger du en konto med data og **driller ned til transaksjonsnivå i rapporten**. På transaksjonsnivået i rapporten kan du se egenskapene (attributtene) som er inkludert i rapportutformingen. Avhengig av transaksjonen og kontoen kan noen eller alle attributtene vises.
 10. Lukk transaksjonsnivået i rapporten.
@@ -183,8 +182,8 @@ I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-r
 18. **Lagre** endringene, og **generer**. Når rapporten er generert og åpnes, kan du utforske den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-[Finansrapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Vise finansrapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Finansrapportering](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Vise finansrapporter](../../financials/general-ledger/view-financial-reports.md) 
 [Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

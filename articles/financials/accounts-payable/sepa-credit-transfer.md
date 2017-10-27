@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføring
 
 ## <a name="what-is-a-credit-transfer-message"></a>Hva er en kredittoverføringsmelding?
 Kredittoverføringsmeldingen er en forespørsel som initialiseringsparten (firmaet) sender for å flytte midler fra sin egen konto til en kreditor. Det er mange land-/områdespesifikke og bankspesifikke implementeringer av kredittoverføringsmeldinger. Noen av dem brukes innenfor ett land, og andre blir standarder. En godt etablert verdensomspennende standard er ISO 20022 og dens initieringsmeldinger, for eksempel kredittoverføring. Illustrasjonen nedenfor viser relasjoner og dekning for valgte kredittoverføringsmeldinger. 
-![Kredittoverføring](./media/credit-transfer.jpg) Kredittoverføringsmeldinger\[/bildetekst\] 
+![Kredittoverføring](./media/credit-transfer.jpg) Kredittoverføringsmeldinger 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Hva er ISO 20022- og SEPA-betalinger?
 Felles eurobetalingsområde (SEPA) er satt opp av EU-kommisjonen og angir at alle elektroniske betalinger betraktes som innenlandsbetalinger, uavhengig av landet/regionen der personen, virksomheten eller organisasjonen, og banken befinner seg. Det er ingen forskjell mellom nasjonale betalinger og betalinger over grenser. SEPA omfatter de 28 EU-medlemslandene pluss Island, Liechtenstein, Norge, Sveits, Monaco og San Marino. SEPA bidrar til å danne ett marked for betalingstransaksjoner i EØS. I siste instans forventes det at SEPA til slutt reduserer antall betalingsformater som banker, bedrifter og enkeltpersoner må arbeide med. EU-kommisjonen fastsatte det juridiske grunnlaget for SEPA-betalinger via PSD-direktivet (Payment Services Directive). EPC (European Payments Council) støtter SEPA gjennom følgende aktiviteter:
@@ -59,7 +59,7 @@ Betalingsformatet for kredittoverføringer for EU-land implementeres ved hjelp a
 Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og viser den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til emnet som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hva må jeg konfigurere?
--   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Når du konfigurerer betalingsmåter for leverandør, merker du av for **Generell elektronisk rapportering** og velger riktig kredittoverføringsformat (for eksempel **ISO 20022-kredittoverføring (AT)**) som eksportformatkonfigurasjon.
 -   Du må også angi juridisk enhet og bankkontoinformasjon i Finance and Operations.
 -   Bankkontonumre, IBAN-er og noen ganger SWIFT-koder (BIC-er) eller andre ID-er som er nødvendige for å opprette gyldige kredittoverføringsbetalinger. Derfor må du definere dem for leverandørens bankkonto og bankkontoen for organisasjonen som ber om overføringen.
