@@ -1,7 +1,7 @@
 ---
 title: "Konfigurere elektronisk rapportering for å hente data til Power BI"
 description: "Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst av Finance and Operations til Power BI-tjenester. Dette emnet bruker for eksempel Intrastat-transaksjoner som forretningsdata som må overføres. Kartvisningen for Power BI bruker disse Intrastat-transaksjonsdataene til å presentere en visning for analyse av firmaets aktiviteter for import og eksport i Power BI-rapporten."
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
