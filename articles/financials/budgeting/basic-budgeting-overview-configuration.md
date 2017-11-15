@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: b79206291264ddc053e401996398f6a4449ad52e
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -41,7 +41,7 @@ Det finnes flere metoder for å opprette budsjettregisteroppføringer i Finance 
 
 -   Manuelt registrere dokumentinformasjon på siden **Budsjettregisteroppføringer**.
 -   Bruke Microsoft Excel-malen som du kan åpne ved å klikke **Åpne i Excel**-knappen på siden **Budsjettregisteroppføringer**.
--   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere **parameteren **Settbasert** **behandling når du må importere mange budsjettkontooppføringer i systemet.
+-   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere **parameteren** **Settbasert** behandling når du må importere mange budsjettkontooppføringer i systemet.
 -   Hvis firmaet bruker funksjonaliteten for planlegging av budsjett til å klargjøre budsjettdata, kan du bruke den periodiske prosessen **Generer budsjettregisteroppføring**.
 
 Budsjettregisteroppføringen anses som fullført når budsjettsaldoene har blitt oppdatert. På siden **Budsjettregisteroppføringer** klikker du **Oppdater budsjettsaldoer** for den valgte budsjettregisteroppføringer eller flere oppføringer. Når du har oppdatert budsjettsaldoene, endres statusen for budsjettregisteroppføringen til **Fullført**. Fullført budsjettregisteroppføring kan ikke åpnes for redigering igjen. Hvis budsjettdataene må justeres, må du derfor opprette en ny budsjettregisteroppføring i stedet for å rette data i en fullført budsjettregisteroppføring.
@@ -53,7 +53,7 @@ Hvis det finnes policyer som styrer godkjenningen av budsjettregistreringsoppfø
 
 På siden **Budsjetteringsdimensjoner** må du velge finansdimensjonene som er brukt for budsjettering, basert på dimensjonene som brukes i kontoplanen. Du kan velge alle finansdimensjoner eller et delsett av dem for budsjettering.
 
-Definer en *budsjettmodell *som samsvarer med alle eller noen av budsjettene. Du kan bruke en enkelt budsjettmodell for alle budsjettregisteroppføringer. Du kan også opprette egne modeller som er basert på budsjettypen, den geografiske plasseringen eller en annen måte som et budsjett kan klassifiseres på. 
+Definer en *budsjettmodell* som samsvarer med alle eller noen av budsjettene. Du kan bruke en enkelt budsjettmodell for alle budsjettregisteroppføringer. Du kan også opprette egne modeller som er basert på budsjettypen, den geografiske plasseringen eller en annen måte som et budsjett kan klassifiseres på. 
 
 > [!NOTE] 
 > Hvis budsjettkontroll brukes, kan du knytte bare én budsjettmodell til et bestemt tidsrom for budsjettsyklus. 

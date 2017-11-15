@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -59,7 +58,7 @@ Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler
 | Leverandør: bankremisse            | Opprett en remitteringsfil for egenveksel som kan sendes til organisasjonens bank.                                                                                                                                                                                                                                                                      | Remitteringsjournal                                             |
 | Leverandørbetaling               | Opprette transaksjoner for leverandørbetaling.                                                                                                                                                                                                                                                                                                                    | Betalingsjournal                                                |
 | Leverandørtrekking egenveksel       | Trekke leverandøregenveksler som betalingsmåte. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Opprett og poster trekkjournal automatisk ved postering av fakturaer** på siden **Betalingsmåter – leverandører**.                                                                                                                                          | Journal for egenvekseltrekking                                   |
-| Leverandørfakturapulje ekskl. postere | Opprett leverandørfakturatransaksjoner som ennå ikke er postert til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Leverandørfakturapulje uten posteringsdetaljer                  |
+| Pulje for leverandørfakturaer ekskl. postering | Opprett leverandørfakturatransaksjoner som ennå ikke er postert til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Leverandørfakturapulje uten posteringsdetaljer                  |
 | Leverandørfakturapulje               | Opprett transaksjoner for leverandørfakturapulje.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Registrering av leverandørfaktura          | Poster leverandørfakturaer som er i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Leverandørtilbaketrekking egenveksel     | Trekk tilbake en egenveksel som tidligere er innfridd av organisasjonens bank.                                                                                                                                                                                                                                                                      | Journal for egenvekseltilbaketrekking                                 |
