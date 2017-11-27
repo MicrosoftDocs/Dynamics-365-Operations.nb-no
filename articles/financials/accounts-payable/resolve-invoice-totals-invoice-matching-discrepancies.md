@@ -1,16 +1,16 @@
 ---
 title: "Løse avvik under kontroll for fakturatotaler"
-description: 
+description: "Du kan bruke kontroll av fakturatotaler som hjelp for å garantere at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 63413
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
@@ -18,33 +18,31 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3f7e1261838866688c97529b0edfa1354034247b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 18250a735d0421daa90b923504aeb94b5003a6a7
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="resolve-discrepancies-during-invoice-totals-matching"></a><span data-ttu-id="e09b4-102">Løse avvik under kontroll for fakturatotaler</span><span class="sxs-lookup"><span data-stu-id="e09b4-102">Resolve discrepancies during invoice totals matching</span></span>
+# <a name="resolve-discrepancies-during-invoice-totals-matching"></a><span data-ttu-id="4d268-103">Løse avvik under kontroll for fakturatotaler</span><span class="sxs-lookup"><span data-stu-id="4d268-103">Resolve discrepancies during invoice totals matching</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
+<span data-ttu-id="4d268-104">Én type fakturakontrollvalidering er kontroll av fakturatotaler.</span><span class="sxs-lookup"><span data-stu-id="4d268-104">One type of invoice matching validation is invoice totals matching.</span></span> <span data-ttu-id="4d268-105">For å angi at systemet skal utføre kontroll av fakturatotaler går du til siden **Leverandørparametere**, kategorien **Fakturavalidering** og setter alternativet **Samsvar fakturatotaler** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="4d268-105">To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**.</span></span> 
 
+<span data-ttu-id="4d268-106">Du kan bruke kontroll av fakturatotaler som hjelp for å garantere at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik.</span><span class="sxs-lookup"><span data-stu-id="4d268-106">You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.</span></span> <span data-ttu-id="4d268-107">Seks totaler sammenlignes på siden **Samsvarende detaljer for fakturatotaler**.</span><span class="sxs-lookup"><span data-stu-id="4d268-107">Six totals are compared on the **Invoice totals matching details** page.</span></span> <span data-ttu-id="4d268-108">Hvis noen av totalene avviker fra den forventede tilsvarende bestillingstotalen, flagges et samsvarsavvik.</span><span class="sxs-lookup"><span data-stu-id="4d268-108">If any one of the totals deviates from the expected corresponding purchase order total, a matching discrepancy is flagged.</span></span> 
 
-<span data-ttu-id="e09b4-103">Én type fakturakontrollvalidering er kontroll av fakturatotaler.</span><span class="sxs-lookup"><span data-stu-id="e09b4-103">One type of invoice matching validation is invoice totals matching.</span></span> <span data-ttu-id="e09b4-104">For å angi at systemet skal utføre kontroll av fakturatotaler går du til siden **Leverandørparametere**, kategorien **Fakturavalidering** og setter alternativet **Samsvar fakturatotaler** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="e09b4-104">To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**.</span></span> 
+<span data-ttu-id="4d268-109">For å se gjennom fakturaen med totalsamsvarsavvik går du til arbeidsområdet **Leverandørfakturaregistrering** og klikker flisen **Ventende fakturaer**.</span><span class="sxs-lookup"><span data-stu-id="4d268-109">To review the invoice that has the totals matching discrepancies, in the **Vendor invoice entry** workspace, click the **Pending invoices** tile.</span></span> <span data-ttu-id="4d268-110">Gå deretter til handlingsruten, velg kategorien **Gjennomgang**, og klikk **Samsvarende detaljer**.</span><span class="sxs-lookup"><span data-stu-id="4d268-110">Then, on the Action Pane, on the **Review** tab, click **Matching details**.</span></span> <span data-ttu-id="4d268-111">Hvis samsvarsavvik er oppdaget, vises advarselsikoner ved siden av fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="4d268-111">If matching discrepancies have been detected, warning icons appear next to the invoice amount.</span></span> <span data-ttu-id="4d268-112">Du kan vise mer detaljert informasjon om totalene ved å vise samsvarende detaljer for fakturatotaler.</span><span class="sxs-lookup"><span data-stu-id="4d268-112">You can view more detail about the totals by viewing the invoice totals matching details.</span></span> 
 
-<span data-ttu-id="e09b4-105">Du kan bruke kontroll av fakturatotaler som hjelp for å garantere at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik.</span><span class="sxs-lookup"><span data-stu-id="e09b4-105">You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.</span></span> <span data-ttu-id="e09b4-106">Seks totaler sammenlignes på siden **Samsvarende detaljer for fakturatotaler**.</span><span class="sxs-lookup"><span data-stu-id="e09b4-106">Six totals are compared on the **Invoice totals matching details** page.</span></span> <span data-ttu-id="e09b4-107">Hvis noen av totalene avviker fra den forventede tilsvarende bestillingstotalen, flagges et samsvarsavvik.</span><span class="sxs-lookup"><span data-stu-id="e09b4-107">If any one of the totals deviates from the expected corresponding purchase order total, a matching discrepancy is flagged.</span></span> 
+<span data-ttu-id="4d268-113">Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren hvis mener at informasjon i fakturaen er feil.</span><span class="sxs-lookup"><span data-stu-id="4d268-113">After you identify a discrepancy, you might have to contact the vendor if you think that the information on the invoice is incorrect.</span></span> <span data-ttu-id="4d268-114">Avhengig av den resulterende avtalen med leverandøren kan du deretter gjøre ett av følgende:</span><span class="sxs-lookup"><span data-stu-id="4d268-114">Depending on the resulting agreement with the vendor, you can then take one of these actions:</span></span>
 
-<span data-ttu-id="e09b4-108">For å se gjennom fakturaen med totalsamsvarsavvik går du til arbeidsområdet **Leverandørfakturaregistrering** og klikker flisen **Ventende fakturaer**.</span><span class="sxs-lookup"><span data-stu-id="e09b4-108">To review the invoice that has the totals matching discrepancies, in the **Vendor invoice entry** workspace, click the **Pending invoices** tile.</span></span> <span data-ttu-id="e09b4-109">Gå deretter til handlingsruten, velg kategorien **Gjennomgang**, og klikk **Samsvarende detaljer**.</span><span class="sxs-lookup"><span data-stu-id="e09b4-109">Then, on the Action Pane, on the **Review** tab, click **Matching details**.</span></span> <span data-ttu-id="e09b4-110">Hvis samsvarsavvik er oppdaget, vises advarselsikoner ved siden av fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="e09b4-110">If matching discrepancies have been detected, warning icons appear next to the invoice amount.</span></span> <span data-ttu-id="e09b4-111">Du kan vise mer detaljert informasjon om totalene ved å vise samsvarende detaljer for fakturatotaler.</span><span class="sxs-lookup"><span data-stu-id="e09b4-111">You can view more detail about the totals by viewing the invoice totals matching details.</span></span> 
+-   <span data-ttu-id="4d268-115">Godta prisavviket og postere fakturaen som har samsvarende avvik.</span><span class="sxs-lookup"><span data-stu-id="4d268-115">Accept the price difference, and post the invoice that has matching discrepancies.</span></span> <span data-ttu-id="4d268-116">Systemet kan være konfigurert til å kreve godkjenning før det kan postere hvis det finnes samsvarende avvik.</span><span class="sxs-lookup"><span data-stu-id="4d268-116">Your system might be set up to require approval before it can post if there are matching discrepancies.</span></span> <span data-ttu-id="4d268-117">I så fall må du godkjenne det samsvarende avviket og du kan eventuelt skrive inn en merknad om godkjenning.</span><span class="sxs-lookup"><span data-stu-id="4d268-117">In this case, you must approve the matching discrepancy and can optionally enter an approval comment.</span></span> <span data-ttu-id="4d268-118">Du kan deretter velge å postere fakturaen.</span><span class="sxs-lookup"><span data-stu-id="4d268-118">You can then select to post the invoice.</span></span>
+-   <span data-ttu-id="4d268-119">Korriger fakturabeløpet til det forventede beløpet og poster fakturaen.</span><span class="sxs-lookup"><span data-stu-id="4d268-119">Revise the invoice amount to the expected amount, and post the invoice.</span></span>
+-   <span data-ttu-id="4d268-120">Be om at leverandøren krediterer hele beløpet og gir deg en ny, korrigert faktura.</span><span class="sxs-lookup"><span data-stu-id="4d268-120">Request a full credit and a new, corrected invoice from the vendor.</span></span>
 
-<span data-ttu-id="e09b4-112">Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren hvis mener at informasjon i fakturaen er feil.</span><span class="sxs-lookup"><span data-stu-id="e09b4-112">After you identify a discrepancy, you might have to contact the vendor if you think that the information on the invoice is incorrect.</span></span> <span data-ttu-id="e09b4-113">Avhengig av den resulterende avtalen med leverandøren kan du deretter gjøre ett av følgende:</span><span class="sxs-lookup"><span data-stu-id="e09b4-113">Depending on the resulting agreement with the vendor, you can then take one of these actions:</span></span>
-
--   <span data-ttu-id="e09b4-114">Godta prisavviket og postere fakturaen som har samsvarende avvik.</span><span class="sxs-lookup"><span data-stu-id="e09b4-114">Accept the price difference, and post the invoice that has matching discrepancies.</span></span> <span data-ttu-id="e09b4-115">Systemet kan være konfigurert til å kreve godkjenning før det kan postere hvis det finnes samsvarende avvik.</span><span class="sxs-lookup"><span data-stu-id="e09b4-115">Your system might be set up to require approval before it can post if there are matching discrepancies.</span></span> <span data-ttu-id="e09b4-116">I så fall må du godkjenne det samsvarende avviket og du kan eventuelt skrive inn en merknad om godkjenning.</span><span class="sxs-lookup"><span data-stu-id="e09b4-116">In this case, you must approve the matching discrepancy and can optionally enter an approval comment.</span></span> <span data-ttu-id="e09b4-117">Du kan deretter velge å postere fakturaen.</span><span class="sxs-lookup"><span data-stu-id="e09b4-117">You can then select to post the invoice.</span></span>
--   <span data-ttu-id="e09b4-118">Korriger fakturabeløpet til det forventede beløpet og poster fakturaen.</span><span class="sxs-lookup"><span data-stu-id="e09b4-118">Revise the invoice amount to the expected amount, and post the invoice.</span></span>
--   <span data-ttu-id="e09b4-119">Be om at leverandøren krediterer hele beløpet og gir deg en ny, korrigert faktura.</span><span class="sxs-lookup"><span data-stu-id="e09b4-119">Request a full credit and a new, corrected invoice from the vendor.</span></span>
-
-<span data-ttu-id="e09b4-120">Hvis du vil ha mer informasjon, se [Undersøke eller løse unntak](tasks/research-resolve-exceptions.md).</span><span class="sxs-lookup"><span data-stu-id="e09b4-120">For more information, see [Research or resolve exceptions](tasks/research-resolve-exceptions.md).</span></span>
+<span data-ttu-id="4d268-121">Hvis du vil ha mer informasjon, se [Undersøke eller løse unntak](tasks/research-resolve-exceptions.md).</span><span class="sxs-lookup"><span data-stu-id="4d268-121">For more information, see [Research or resolve exceptions](tasks/research-resolve-exceptions.md).</span></span>
 
 
 

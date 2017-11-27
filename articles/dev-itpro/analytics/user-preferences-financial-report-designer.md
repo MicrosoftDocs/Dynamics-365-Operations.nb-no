@@ -26,59 +26,59 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="78678-104">Brukerinnstillinger i Utforming av finansrapport</span><span class="sxs-lookup"><span data-stu-id="78678-104">User preferences in financial report designer</span></span>
+# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="916fc-104">Brukerinnstillinger i Utforming av finansrapport</span><span class="sxs-lookup"><span data-stu-id="916fc-104">User preferences in financial report designer</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="78678-105">Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen.</span><span class="sxs-lookup"><span data-stu-id="78678-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="78678-106">Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises.</span><span class="sxs-lookup"><span data-stu-id="78678-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span> 
+<span data-ttu-id="916fc-105">Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen.</span><span class="sxs-lookup"><span data-stu-id="916fc-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="916fc-106">Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises.</span><span class="sxs-lookup"><span data-stu-id="916fc-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span> 
 
-<a name="set-user-preferences"></a><span data-ttu-id="78678-107">Angi brukerinnstilling</span><span class="sxs-lookup"><span data-stu-id="78678-107">Set user preferences</span></span>
+<a name="set-user-preferences"></a><span data-ttu-id="916fc-107">Angi brukerinnstilling</span><span class="sxs-lookup"><span data-stu-id="916fc-107">Set user preferences</span></span>
 --------------------
 
-1.  <span data-ttu-id="78678-108">På **Verktøy**-menyen i Rapportutforming klikker du **Alternativer**.</span><span class="sxs-lookup"><span data-stu-id="78678-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
-2.  <span data-ttu-id="78678-109">Velg innstillinger i dialogboksen **Alternativer**.</span><span class="sxs-lookup"><span data-stu-id="78678-109">In the **Options** dialog box, select your preferences.</span></span>
-3.  <span data-ttu-id="78678-110">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="78678-110">Click **OK**.</span></span>
+1.  <span data-ttu-id="916fc-108">På **Verktøy**-menyen i Rapportutforming klikker du **Alternativer**.</span><span class="sxs-lookup"><span data-stu-id="916fc-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
+2.  <span data-ttu-id="916fc-109">Velg innstillinger i dialogboksen **Alternativer**.</span><span class="sxs-lookup"><span data-stu-id="916fc-109">In the **Options** dialog box, select your preferences.</span></span>
+3.  <span data-ttu-id="916fc-110">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="916fc-110">Click **OK**.</span></span>
 
-## <a name="options-dialog-box-options"></a><span data-ttu-id="78678-111">Alternativene i dialogboksen Alternativer</span><span class="sxs-lookup"><span data-stu-id="78678-111">Options dialog box options</span></span>
+## <a name="options-dialog-box-options"></a><span data-ttu-id="916fc-111">Alternativene i dialogboksen Alternativer</span><span class="sxs-lookup"><span data-stu-id="916fc-111">Options dialog box options</span></span>
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="78678-112">Brukeralternativ</span><span class="sxs-lookup"><span data-stu-id="78678-112">User option</span></span></th>
-<th><span data-ttu-id="78678-113">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="78678-113">Description</span></span></th>
+<th><span data-ttu-id="916fc-112">Brukeralternativ</span><span class="sxs-lookup"><span data-stu-id="916fc-112">User option</span></span></th>
+<th><span data-ttu-id="916fc-113">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="916fc-113">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="78678-114">Ved oppstart</span><span class="sxs-lookup"><span data-stu-id="78678-114">At startup</span></span></td>
-<td><span data-ttu-id="78678-115">Velg hva du ser når Rapportutforming starter.</span><span class="sxs-lookup"><span data-stu-id="78678-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="78678-116">Velg ett av følgende alternativer:</span><span class="sxs-lookup"><span data-stu-id="78678-116">Select one of the following options:</span></span>
+<td><span data-ttu-id="916fc-114">Ved oppstart</span><span class="sxs-lookup"><span data-stu-id="916fc-114">At startup</span></span></td>
+<td><span data-ttu-id="916fc-115">Velg hva du ser når Rapportutforming starter.</span><span class="sxs-lookup"><span data-stu-id="916fc-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="916fc-116">Velg ett av følgende alternativer:</span><span class="sxs-lookup"><span data-stu-id="916fc-116">Select one of the following options:</span></span>
 <ul>
-<li><span data-ttu-id="78678-117"><strong>Last inn sist innlastet rapport</strong> – Åpne rapporten som du viste sist.</span><span class="sxs-lookup"><span data-stu-id="78678-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
-<li><span data-ttu-id="78678-118"><strong>Vis det åpne vinduet</strong> – Åpne det <strong>åpne</strong> vinduet.</span><span class="sxs-lookup"><span data-stu-id="78678-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="78678-119">Det <strong>åpne</strong> vinduet inneholder et søkevindu som du kan bruke til å finne byggeblokker raskt.</span><span class="sxs-lookup"><span data-stu-id="78678-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
-<li><span data-ttu-id="78678-120"><strong>Vis tomt miljø</strong> – Åpne et tomt utformingsvindu.</span><span class="sxs-lookup"><span data-stu-id="78678-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
+<li><span data-ttu-id="916fc-117"><strong>Last inn sist innlastet rapport</strong> – Åpne rapporten som du viste sist.</span><span class="sxs-lookup"><span data-stu-id="916fc-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
+<li><span data-ttu-id="916fc-118"><strong>Vis det åpne vinduet</strong> – Åpne det <strong>åpne</strong> vinduet.</span><span class="sxs-lookup"><span data-stu-id="916fc-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="916fc-119">Det <strong>åpne</strong> vinduet inneholder et søkevindu som du kan bruke til å finne byggeblokker raskt.</span><span class="sxs-lookup"><span data-stu-id="916fc-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
+<li><span data-ttu-id="916fc-120"><strong>Vis tomt miljø</strong> – Åpne et tomt utformingsvindu.</span><span class="sxs-lookup"><span data-stu-id="916fc-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="78678-121">Vis bekreftelse før avslutning av Rapportutforming</span><span class="sxs-lookup"><span data-stu-id="78678-121">Display confirmation before exiting Report Designer</span></span></td>
-<td><span data-ttu-id="78678-122">Velg om du vil motta en advarsel når du avslutter programmet.</span><span class="sxs-lookup"><span data-stu-id="78678-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="78678-123">Denne meldingen bidrar til å garantere at du ikke avslutter programmet ved en feiltakelse.</span><span class="sxs-lookup"><span data-stu-id="78678-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
+<td><span data-ttu-id="916fc-121">Vis bekreftelse før avslutning av Rapportutforming</span><span class="sxs-lookup"><span data-stu-id="916fc-121">Display confirmation before exiting Report Designer</span></span></td>
+<td><span data-ttu-id="916fc-122">Velg om du vil motta en advarsel når du avslutter programmet.</span><span class="sxs-lookup"><span data-stu-id="916fc-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="916fc-123">Denne meldingen bidrar til å garantere at du ikke avslutter programmet ved en feiltakelse.</span><span class="sxs-lookup"><span data-stu-id="916fc-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="78678-124">Bruk automatisk celleunderstreking i kolonneoverskrifter</span><span class="sxs-lookup"><span data-stu-id="78678-124">Automatically apply cell underline in column headers</span></span></td>
-<td><span data-ttu-id="78678-125">Velg om du vil sette inn en understreking i cellen i en ny kolonneoverskrift.</span><span class="sxs-lookup"><span data-stu-id="78678-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
+<td><span data-ttu-id="916fc-124">Bruk automatisk celleunderstreking i kolonneoverskrifter</span><span class="sxs-lookup"><span data-stu-id="916fc-124">Automatically apply cell underline in column headers</span></span></td>
+<td><span data-ttu-id="916fc-125">Velg om du vil sette inn en understreking i cellen i en ny kolonneoverskrift.</span><span class="sxs-lookup"><span data-stu-id="916fc-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="78678-126">Filplassering for Management Reporter</span><span class="sxs-lookup"><span data-stu-id="78678-126">Management Reporter files location</span></span></td>
-<td><span data-ttu-id="78678-127">Angi standardplasseringen for filer.</span><span class="sxs-lookup"><span data-stu-id="78678-127">Specify the default location for files.</span></span> <span data-ttu-id="78678-128">Programmet bruker standardplasseringen når du eksporterer byggeblokkgrupper.</span><span class="sxs-lookup"><span data-stu-id="78678-128">The application uses the default location when you export building block groups.</span></span></td>
+<td><span data-ttu-id="916fc-126">Filplassering for Management Reporter</span><span class="sxs-lookup"><span data-stu-id="916fc-126">Management Reporter files location</span></span></td>
+<td><span data-ttu-id="916fc-127">Angi standardplasseringen for filer.</span><span class="sxs-lookup"><span data-stu-id="916fc-127">Specify the default location for files.</span></span> <span data-ttu-id="916fc-128">Programmet bruker standardplasseringen når du eksporterer byggeblokkgrupper.</span><span class="sxs-lookup"><span data-stu-id="916fc-128">The application uses the default location when you export building block groups.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a><span data-ttu-id="78678-129">Se også</span><span class="sxs-lookup"><span data-stu-id="78678-129">See also</span></span>
+<a name="see-also"></a><span data-ttu-id="916fc-129">Se også</span><span class="sxs-lookup"><span data-stu-id="916fc-129">See also</span></span>
 --------
 
-[<span data-ttu-id="78678-130">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="78678-130">Financial reporting</span></span>](financial-reporting-intro.md)
+[<span data-ttu-id="916fc-130">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="916fc-130">Financial reporting</span></span>](financial-reporting-intro.md)
 
 
 

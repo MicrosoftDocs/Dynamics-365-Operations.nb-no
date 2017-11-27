@@ -3,7 +3,7 @@ title: "Utvikle en rekkefølgeplan"
 description: "Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,47 +16,47 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b1caaf5f52282a8daae62602dcc5ef86b901e338
+ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
+ms.openlocfilehash: 2ca5f541abe4f85187aaefdbb03ca84e4f314b3c
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
-# <a name="develop-a-succession-plan"></a><span data-ttu-id="74bbe-103">Utvikle en rekkefølgeplan</span><span class="sxs-lookup"><span data-stu-id="74bbe-103">Develop a succession plan</span></span>
+# <a name="develop-a-succession-plan"></a><span data-ttu-id="52b51-103">Utvikle en rekkefølgeplan</span><span class="sxs-lookup"><span data-stu-id="52b51-103">Develop a succession plan</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="74bbe-104">Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person.</span><span class="sxs-lookup"><span data-stu-id="74bbe-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="74bbe-105">Med kompetansesøk kan du analysere eksisterende ansatte og søkere for å se om de samsvarer med kompetansesettet til en verdsatt medarbeider.</span><span class="sxs-lookup"><span data-stu-id="74bbe-105">Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="74bbe-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="74bbe-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="52b51-104">Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person.</span><span class="sxs-lookup"><span data-stu-id="52b51-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="52b51-105">Med kompetansesøk kan du analysere eksisterende ansatte og søkere for å se om de samsvarer med kompetansesettet til en verdsatt medarbeider.</span><span class="sxs-lookup"><span data-stu-id="52b51-105">Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="52b51-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="52b51-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="74bbe-107">Gå til Personale > Kompetanser > Kompetanseanalyse > Profiler for kompetansesøk.</span><span class="sxs-lookup"><span data-stu-id="74bbe-107">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
-2. <span data-ttu-id="74bbe-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="74bbe-108">Click New.</span></span>
-3. <span data-ttu-id="74bbe-109">I feltet Kompetansesøk kan du angi et navn for kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="74bbe-109">In the Skill mapping field, In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="74bbe-110">Eksempel: ansatt.</span><span class="sxs-lookup"><span data-stu-id="74bbe-110">Example: Employee.</span></span>
-4. <span data-ttu-id="74bbe-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="74bbe-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="74bbe-112">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="74bbe-112">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="74bbe-113">Klikk Hent profil.</span><span class="sxs-lookup"><span data-stu-id="74bbe-113">Click Retrieve profile.</span></span>
-7. <span data-ttu-id="74bbe-114">Klikk Person.</span><span class="sxs-lookup"><span data-stu-id="74bbe-114">Click Person.</span></span>
-8. <span data-ttu-id="74bbe-115">Skriv inn et navn i Person-feltet, eller velg rullegardinlisten.</span><span class="sxs-lookup"><span data-stu-id="74bbe-115">In the Person field, type in a name, or select the drop down.</span></span>  <span data-ttu-id="74bbe-116">Eksempel: Cassie Hicks.</span><span class="sxs-lookup"><span data-stu-id="74bbe-116">Example: Cassie Hicks.</span></span>
-9. <span data-ttu-id="74bbe-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="74bbe-117">Click OK.</span></span>
-10. <span data-ttu-id="74bbe-118">Utvid hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="74bbe-118">Exapnd the certificates fast tab to view or edit the certificates included in the skill mapping.</span></span>
-11. <span data-ttu-id="74bbe-119">Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen som skal inkluderes.</span><span class="sxs-lookup"><span data-stu-id="74bbe-119">Expand the Skills fast tab to view or edit the skills to be included.</span></span>
-12. <span data-ttu-id="74bbe-120">Merk den første raden i listen.</span><span class="sxs-lookup"><span data-stu-id="74bbe-120">In the list, mark the first row.</span></span>  <span data-ttu-id="74bbe-121">Eksempel: Regnskapsfører</span><span class="sxs-lookup"><span data-stu-id="74bbe-121">Example:  Accounting</span></span>
-13. <span data-ttu-id="74bbe-122">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="74bbe-122">Click the Optional checkbox.</span></span>
-14. <span data-ttu-id="74bbe-123">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="74bbe-123">In the Importance field, select an option.</span></span>
-    * <span data-ttu-id="74bbe-124">Når du merker en kompetanse som valgfritt, må du velge kompetansens betydning.</span><span class="sxs-lookup"><span data-stu-id="74bbe-124">When you mark a skill as optional, you are required to select the importance level of the skill.</span></span>  
-15. <span data-ttu-id="74bbe-125">Velg rad 2 i listen.</span><span class="sxs-lookup"><span data-stu-id="74bbe-125">In the list, select row 2.</span></span>
-16. <span data-ttu-id="74bbe-126">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="74bbe-126">Click the Optional checkbox.</span></span>
-17. <span data-ttu-id="74bbe-127">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="74bbe-127">In the Importance field, select an option.</span></span>
-18. <span data-ttu-id="74bbe-128">Velg rad 3 i listen.</span><span class="sxs-lookup"><span data-stu-id="74bbe-128">In the list, select row 3.</span></span>
-19. <span data-ttu-id="74bbe-129">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="74bbe-129">Click the Optional checkbox.</span></span>
-20. <span data-ttu-id="74bbe-130">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="74bbe-130">In the Importance field, select an option.</span></span>
-21. <span data-ttu-id="74bbe-131">Velg rad 4 i listen.</span><span class="sxs-lookup"><span data-stu-id="74bbe-131">In the list, select row 4.</span></span>
-22. <span data-ttu-id="74bbe-132">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="74bbe-132">Click the Optional checkbox.</span></span>
-23. <span data-ttu-id="74bbe-133">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="74bbe-133">In the Importance field, select an option.</span></span>
-24. <span data-ttu-id="74bbe-134">Vis hurtigkategorien Utdanning for å vise eller redigere utdanningskompetansene som skal tas med i kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="74bbe-134">Expand the Education fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
-25. <span data-ttu-id="74bbe-135">Klikk Utfør.</span><span class="sxs-lookup"><span data-stu-id="74bbe-135">Click Execute.</span></span>
-26. <span data-ttu-id="74bbe-136">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="74bbe-136">Click OK.</span></span>
-27. <span data-ttu-id="74bbe-137">Klikk Resultat.</span><span class="sxs-lookup"><span data-stu-id="74bbe-137">Click Result.</span></span>
-28. <span data-ttu-id="74bbe-138">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="74bbe-138">Click Report.</span></span>
-    * <span data-ttu-id="74bbe-139">Rapporten viser de beste forslagene øverst i rapporten.</span><span class="sxs-lookup"><span data-stu-id="74bbe-139">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="74bbe-140">Du kan se at det vises et gapelement.</span><span class="sxs-lookup"><span data-stu-id="74bbe-140">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="74bbe-141">Dette er forskjellen mellom nivået som er oppført i kompetansesøket, og kompetansenivået som er tilordnet til personen.</span><span class="sxs-lookup"><span data-stu-id="74bbe-141">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
+1. <span data-ttu-id="52b51-107">Gå til Personale > Kompetanser > Kompetanseanalyse > Profiler for kompetansesøk.</span><span class="sxs-lookup"><span data-stu-id="52b51-107">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="52b51-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="52b51-108">Click New.</span></span>
+3. <span data-ttu-id="52b51-109">I feltet Kompetansesøk kan du angi et navn for kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="52b51-109">In the Skill mapping field, In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="52b51-110">Eksempel: ansatt.</span><span class="sxs-lookup"><span data-stu-id="52b51-110">Example: Employee.</span></span>
+4. <span data-ttu-id="52b51-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="52b51-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="52b51-112">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="52b51-112">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="52b51-113">Klikk Hent profil.</span><span class="sxs-lookup"><span data-stu-id="52b51-113">Click Retrieve profile.</span></span>
+7. <span data-ttu-id="52b51-114">Klikk Person.</span><span class="sxs-lookup"><span data-stu-id="52b51-114">Click Person.</span></span>
+8. <span data-ttu-id="52b51-115">Skriv inn et navn i Person-feltet, eller velg rullegardinlisten.</span><span class="sxs-lookup"><span data-stu-id="52b51-115">In the Person field, type in a name, or select the drop down.</span></span>  <span data-ttu-id="52b51-116">Eksempel: Cassie Hicks.</span><span class="sxs-lookup"><span data-stu-id="52b51-116">Example: Cassie Hicks.</span></span>
+9. <span data-ttu-id="52b51-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="52b51-117">Click OK.</span></span>
+10. <span data-ttu-id="52b51-118">Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="52b51-118">Expand the certificates fast tab to view or edit the certificates included in the skill mapping.</span></span>
+11. <span data-ttu-id="52b51-119">Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen som skal inkluderes.</span><span class="sxs-lookup"><span data-stu-id="52b51-119">Expand the Skills fast tab to view or edit the skills to be included.</span></span>
+12. <span data-ttu-id="52b51-120">Merk den første raden i listen.</span><span class="sxs-lookup"><span data-stu-id="52b51-120">In the list, mark the first row.</span></span>  <span data-ttu-id="52b51-121">Eksempel: Regnskapsfører</span><span class="sxs-lookup"><span data-stu-id="52b51-121">Example:  Accounting</span></span>
+13. <span data-ttu-id="52b51-122">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="52b51-122">Click the Optional checkbox.</span></span>
+14. <span data-ttu-id="52b51-123">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="52b51-123">In the Importance field, select an option.</span></span>
+    * <span data-ttu-id="52b51-124">Når du merker en kompetanse som valgfritt, må du velge kompetansens betydning.</span><span class="sxs-lookup"><span data-stu-id="52b51-124">When you mark a skill as optional, you are required to select the importance level of the skill.</span></span>  
+15. <span data-ttu-id="52b51-125">Velg rad 2 i listen.</span><span class="sxs-lookup"><span data-stu-id="52b51-125">In the list, select row 2.</span></span>
+16. <span data-ttu-id="52b51-126">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="52b51-126">Click the Optional checkbox.</span></span>
+17. <span data-ttu-id="52b51-127">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="52b51-127">In the Importance field, select an option.</span></span>
+18. <span data-ttu-id="52b51-128">Velg rad 3 i listen.</span><span class="sxs-lookup"><span data-stu-id="52b51-128">In the list, select row 3.</span></span>
+19. <span data-ttu-id="52b51-129">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="52b51-129">Click the Optional checkbox.</span></span>
+20. <span data-ttu-id="52b51-130">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="52b51-130">In the Importance field, select an option.</span></span>
+21. <span data-ttu-id="52b51-131">Velg rad 4 i listen.</span><span class="sxs-lookup"><span data-stu-id="52b51-131">In the list, select row 4.</span></span>
+22. <span data-ttu-id="52b51-132">Klikk i avmerkingsboksen Valgfritt.</span><span class="sxs-lookup"><span data-stu-id="52b51-132">Click the Optional checkbox.</span></span>
+23. <span data-ttu-id="52b51-133">Velg et alternativ i Betydning-feltet.</span><span class="sxs-lookup"><span data-stu-id="52b51-133">In the Importance field, select an option.</span></span>
+24. <span data-ttu-id="52b51-134">Vis hurtigkategorien Utdanning for å vise eller redigere utdanningskompetansene som skal tas med i kompetansesøket.</span><span class="sxs-lookup"><span data-stu-id="52b51-134">Expand the Education fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
+25. <span data-ttu-id="52b51-135">Klikk Utfør.</span><span class="sxs-lookup"><span data-stu-id="52b51-135">Click Execute.</span></span>
+26. <span data-ttu-id="52b51-136">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="52b51-136">Click OK.</span></span>
+27. <span data-ttu-id="52b51-137">Klikk Resultat.</span><span class="sxs-lookup"><span data-stu-id="52b51-137">Click Result.</span></span>
+28. <span data-ttu-id="52b51-138">Klikk Rapport.</span><span class="sxs-lookup"><span data-stu-id="52b51-138">Click Report.</span></span>
+    * <span data-ttu-id="52b51-139">Rapporten viser de beste forslagene øverst i rapporten.</span><span class="sxs-lookup"><span data-stu-id="52b51-139">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="52b51-140">Du kan se at det vises et gapelement.</span><span class="sxs-lookup"><span data-stu-id="52b51-140">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="52b51-141">Dette er forskjellen mellom nivået som er oppført i kompetansesøket, og kompetansenivået som er tilordnet til personen.</span><span class="sxs-lookup"><span data-stu-id="52b51-141">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
 
 

@@ -1,16 +1,16 @@
 ---
 title: "Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler"
-description: 
+description: "Dette emnet hjelper deg med å bestemme hvor du vil tilordne standardkontoer for fakturajournaler."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.region: global
@@ -18,26 +18,26 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c2b62eafc71b5d1ad4eaaf252efd1dcbb97b86f3
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bf7af869e44a60d07d66e83bfb55bd0cc7edfb91
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a><span data-ttu-id="b0e30-102">Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler</span><span class="sxs-lookup"><span data-stu-id="b0e30-102">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>
+# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a><span data-ttu-id="1d610-103">Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler</span><span class="sxs-lookup"><span data-stu-id="1d610-103">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-<span data-ttu-id="b0e30-103">Standard motkontoer brukes på følgende sider for leverandørfakturajournaler:</span><span class="sxs-lookup"><span data-stu-id="b0e30-103">Default offset accounts are used on the following vendor invoice journal pages:</span></span>
+<span data-ttu-id="1d610-104">Standard motkontoer brukes på følgende sider for leverandørfakturajournaler:</span><span class="sxs-lookup"><span data-stu-id="1d610-104">Default offset accounts are used on the following vendor invoice journal pages:</span></span>
 
--   <span data-ttu-id="b0e30-104">Fakturajournal</span><span class="sxs-lookup"><span data-stu-id="b0e30-104">Invoice journal</span></span>
--   <span data-ttu-id="b0e30-105">Fakturagodkjenningsjournal</span><span class="sxs-lookup"><span data-stu-id="b0e30-105">Invoice approval journal</span></span>
+-   <span data-ttu-id="1d610-105">Fakturajournal</span><span class="sxs-lookup"><span data-stu-id="1d610-105">Invoice journal</span></span>
+-   <span data-ttu-id="1d610-106">Fakturagodkjenningsjournal</span><span class="sxs-lookup"><span data-stu-id="1d610-106">Invoice approval journal</span></span>
 
-<span data-ttu-id="b0e30-106">Bruk tabellen nedenfor for å bestemme hvor du vil tilordne standardkontoer for fakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="b0e30-106">Use the following table to help decide where you should assign default accounts for invoice journals.</span></span>
+<span data-ttu-id="1d610-107">Bruk tabellen nedenfor for å bestemme hvor du vil tilordne standardkontoer for fakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="1d610-107">Use the following table to help decide where you should assign default accounts for invoice journals.</span></span>
 
 <table>
 <colgroup>
@@ -48,51 +48,51 @@ ms.lasthandoff: 09/29/2017
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="b0e30-107">Definer standardkontoer her</span><span class="sxs-lookup"><span data-stu-id="b0e30-107">Set up default accounts here</span></span></th>
-<th><span data-ttu-id="b0e30-108">Der standardkontoer er angitt</span><span class="sxs-lookup"><span data-stu-id="b0e30-108">Where default accounts are provided</span></span></th>
-<th><span data-ttu-id="b0e30-109">Hvordan dette alternativet påvirker behandling</span><span class="sxs-lookup"><span data-stu-id="b0e30-109">How this option affects processing</span></span></th>
-<th><span data-ttu-id="b0e30-110">Når du bør bruke dette alternativet</span><span class="sxs-lookup"><span data-stu-id="b0e30-110">When you should use this option</span></span></th>
+<th><span data-ttu-id="1d610-108">Definer standardkontoer her</span><span class="sxs-lookup"><span data-stu-id="1d610-108">Set up default accounts here</span></span></th>
+<th><span data-ttu-id="1d610-109">Der standardkontoer er angitt</span><span class="sxs-lookup"><span data-stu-id="1d610-109">Where default accounts are provided</span></span></th>
+<th><span data-ttu-id="1d610-110">Hvordan dette alternativet påvirker behandling</span><span class="sxs-lookup"><span data-stu-id="1d610-110">How this option affects processing</span></span></th>
+<th><span data-ttu-id="1d610-111">Når du bør bruke dette alternativet</span><span class="sxs-lookup"><span data-stu-id="1d610-111">When you should use this option</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="b0e30-111"><strong>Leverandørgruppe</strong> – Definer standard motkontoer for leverandørgrupper på siden <strong>Standard kontooppsett</strong> som du kan åpne fra <strong>Leverandørgrupper</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="b0e30-111"><strong>Vendor group</strong> – Set up default offset accounts for vendor groups on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendor groups</strong> page.</span></span></td>
+<td><span data-ttu-id="1d610-112"><strong>Leverandørgruppe</strong> – Definer standard motkontoer for leverandørgrupper på siden <strong>Standard kontooppsett</strong> som du kan åpne fra <strong>Leverandørgrupper</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="1d610-112"><strong>Vendor group</strong> – Set up default offset accounts for vendor groups on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendor groups</strong> page.</span></span></td>
 <td><ul>
-<li><span data-ttu-id="b0e30-112">Leverandørnummer</span><span class="sxs-lookup"><span data-stu-id="b0e30-112">Vendor account</span></span></li>
-<li><span data-ttu-id="b0e30-113">Journaloppføringer for leverandørkontoer i leverandørgruppen, hvis standardkontoer ikke er angitt for leverandørkontoer</span><span class="sxs-lookup"><span data-stu-id="b0e30-113">Journal entries for vendor accounts in the vendor group, if default accounts aren’t specified for vendor accounts</span></span></li>
+<li><span data-ttu-id="1d610-113">Leverandørnummer</span><span class="sxs-lookup"><span data-stu-id="1d610-113">Vendor account</span></span></li>
+<li><span data-ttu-id="1d610-114">Journaloppføringer for leverandørkontoer i leverandørgruppen, hvis standardkontoer ikke er angitt for leverandørkontoer</span><span class="sxs-lookup"><span data-stu-id="1d610-114">Journal entries for vendor accounts in the vendor group, if default accounts aren’t specified for vendor accounts</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b0e30-114">Standard motkontoer for leverandørgrupper vises som standard motkontoer for leverandører på siden <strong>Standard kontooppsett</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-114">The default offset accounts for vendor groups are shown as default offset accounts for vendors on the <strong>Default account setup</strong> page.</span></span> <span data-ttu-id="b0e30-115">Du kan åpne denne siden fra <strong>Alle leverandører</strong>-listesiden.</span><span class="sxs-lookup"><span data-stu-id="b0e30-115">You can open this page from the <strong>All vendors</strong> list page.</span></span></td>
-<td><span data-ttu-id="b0e30-116">Bruk dette alternativet hvis du vanligvis betaler for samme type ting fra de samme leverandørgruppene over tid.</span><span class="sxs-lookup"><span data-stu-id="b0e30-116">Use this option if you typically pay for the same types of things from the same vendor groups over time.</span></span></td>
+<td><span data-ttu-id="1d610-115">Standard motkontoer for leverandørgrupper vises som standard motkontoer for leverandører på siden <strong>Standard kontooppsett</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-115">The default offset accounts for vendor groups are shown as default offset accounts for vendors on the <strong>Default account setup</strong> page.</span></span> <span data-ttu-id="1d610-116">Du kan åpne denne siden fra <strong>Alle leverandører</strong>-listesiden.</span><span class="sxs-lookup"><span data-stu-id="1d610-116">You can open this page from the <strong>All vendors</strong> list page.</span></span></td>
+<td><span data-ttu-id="1d610-117">Bruk dette alternativet hvis du vanligvis betaler for samme type ting fra de samme leverandørgruppene over tid.</span><span class="sxs-lookup"><span data-stu-id="1d610-117">Use this option if you typically pay for the same types of things from the same vendor groups over time.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="b0e30-117"><strong>Leverandørkonto</strong> – Definer standardkontoer for leverandørkontoer på siden <strong>Standard kontooppsett</strong> som du kan åpne fra <strong>Leverandører</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="b0e30-117"><strong>Vendor account</strong> – Set up default accounts for vendor accounts on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendors</strong> page.</span></span></td>
-<td><span data-ttu-id="b0e30-118">Journaloppføringer for leverandørkontoen</span><span class="sxs-lookup"><span data-stu-id="b0e30-118">Journal entries for the vendor account</span></span></td>
-<td><span data-ttu-id="b0e30-119">Standardmotkontoene for leverandørkontoer vises som standardmotkontoer for journaloppføringer for leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="b0e30-119">The default offset accounts for vendor accounts are shown as default offset accounts for journal entries for the vendor account.</span></span></td>
-<td><span data-ttu-id="b0e30-120">Bruk dette alternativet hvis du vanligvis betaler for samme type ting fra de samme leverandørene over tid.</span><span class="sxs-lookup"><span data-stu-id="b0e30-120">Use this option if you typically pay for the same types of things from the same vendors over time.</span></span></td>
+<td><span data-ttu-id="1d610-118"><strong>Leverandørkonto</strong> – Definer standardkontoer for leverandørkontoer på siden <strong>Standard kontooppsett</strong> som du kan åpne fra <strong>Leverandører</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="1d610-118"><strong>Vendor account</strong> – Set up default accounts for vendor accounts on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendors</strong> page.</span></span></td>
+<td><span data-ttu-id="1d610-119">Journaloppføringer for leverandørkontoen</span><span class="sxs-lookup"><span data-stu-id="1d610-119">Journal entries for the vendor account</span></span></td>
+<td><span data-ttu-id="1d610-120">Standardmotkontoene for leverandørkontoer vises som standardmotkontoer for journaloppføringer for leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="1d610-120">The default offset accounts for vendor accounts are shown as default offset accounts for journal entries for the vendor account.</span></span></td>
+<td><span data-ttu-id="1d610-121">Bruk dette alternativet hvis du vanligvis betaler for samme type ting fra de samme leverandørene over tid.</span><span class="sxs-lookup"><span data-stu-id="1d610-121">Use this option if you typically pay for the same types of things from the same vendors over time.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="b0e30-121"><strong>Journalnavn</strong> – Definer standard motkontoer for journaler på <strong>Journalnavn</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="b0e30-121"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="b0e30-122">Velg alternativet <strong>Fast motkonto</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-122">Select the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="b0e30-123">Legg merke til at du ikke kan angi standard motkontoer for journalnavn hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-123">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
+<td><span data-ttu-id="1d610-122"><strong>Journalnavn</strong> – Definer standard motkontoer for journaler på <strong>Journalnavn</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="1d610-122"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="1d610-123">Velg alternativet <strong>Fast motkonto</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-123">Select the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="1d610-124">Legg merke til at du ikke kan angi standard motkontoer for journalnavn hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-124">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li><span data-ttu-id="b0e30-124">Journalhode som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="b0e30-124">Journal header that uses the journal name</span></span></li>
-<li><span data-ttu-id="b0e30-125">Journaloppføringer i journaler som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="b0e30-125">Journal entries in journals that use the journal name</span></span></li>
+<li><span data-ttu-id="1d610-125">Journalhode som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="1d610-125">Journal header that uses the journal name</span></span></li>
+<li><span data-ttu-id="1d610-126">Journaloppføringer i journaler som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="1d610-126">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b0e30-126">Hvis det er merket av for <strong>Fast motkonto</strong> på siden <strong>Journalnavn</strong>, overstyrer motkontoen for journalnavnet standard motkonto for leverandøren eller leverandørgruppen.</span><span class="sxs-lookup"><span data-stu-id="b0e30-126">If the <strong>Fixed offset account</strong> option on the <strong>Journal names</strong> page is selected, the offset account for the journal name overrides the default offset account for the vendor or vendor group.</span></span></td>
-<td><span data-ttu-id="b0e30-127">Bruk dette alternativet for å definere journaler for bestemte kostnader og utgifter som belastes bestemte kontoer, uavhengig av hvilken leverandør eller leverandørgruppe leverandøren er del av.</span><span class="sxs-lookup"><span data-stu-id="b0e30-127">Use this option to set up journals for specific costs and expenses that are charged to specific accounts, regardless of the vendor or the vendor group that the vendor belongs to.</span></span></td>
+<td><span data-ttu-id="1d610-127">Hvis det er merket av for <strong>Fast motkonto</strong> på siden <strong>Journalnavn</strong>, overstyrer motkontoen for journalnavnet standard motkonto for leverandøren eller leverandørgruppen.</span><span class="sxs-lookup"><span data-stu-id="1d610-127">If the <strong>Fixed offset account</strong> option on the <strong>Journal names</strong> page is selected, the offset account for the journal name overrides the default offset account for the vendor or vendor group.</span></span></td>
+<td><span data-ttu-id="1d610-128">Bruk dette alternativet for å definere journaler for bestemte kostnader og utgifter som belastes bestemte kontoer, uavhengig av hvilken leverandør eller leverandørgruppe leverandøren er del av.</span><span class="sxs-lookup"><span data-stu-id="1d610-128">Use this option to set up journals for specific costs and expenses that are charged to specific accounts, regardless of the vendor or the vendor group that the vendor belongs to.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="b0e30-128"><strong>Journalnavn</strong> – Definer standard motkontoer for journaler på <strong>Journalnavn</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="b0e30-128"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="b0e30-129">Fjern avmerkingen for <strong>Fast motkonto</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-129">Clear the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="b0e30-130">Legg merke til at du ikke kan angi standard motkontoer for journalnavn hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-130">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
+<td><span data-ttu-id="1d610-129"><strong>Journalnavn</strong> – Definer standard motkontoer for journaler på <strong>Journalnavn</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="1d610-129"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="1d610-130">Fjern avmerkingen for <strong>Fast motkonto</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-130">Clear the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="1d610-131">Legg merke til at du ikke kan angi standard motkontoer for journalnavn hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-131">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li><span data-ttu-id="b0e30-131">Journalhode</span><span class="sxs-lookup"><span data-stu-id="b0e30-131">Journal header</span></span></li>
-<li><span data-ttu-id="b0e30-132">Journaloppføringer i journaler som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="b0e30-132">Journal entries in journals that use the journal name</span></span></li>
+<li><span data-ttu-id="1d610-132">Journalhode</span><span class="sxs-lookup"><span data-stu-id="1d610-132">Journal header</span></span></li>
+<li><span data-ttu-id="1d610-133">Journaloppføringer i journaler som bruker journalnavnet</span><span class="sxs-lookup"><span data-stu-id="1d610-133">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b0e30-133">Disse standardoppføringene brukes på journalhodesider, og motkontoen på journalhodesiden brukes som en standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="b0e30-133">These default entries are used on journal header pages, and the offset account on the journal header page is used as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="b0e30-134">Standardkontoer fra <strong>Journalnavn</strong>-siden brukes bare hvis det ikke er konfigurert standardkontoer for leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="b0e30-134">Default accounts from the <strong>Journal names </strong>page are used only if default accounts aren’t set up for the vendor account.</span></span></td>
-<td><span data-ttu-id="b0e30-135">Bruk dette alternativet for å definere standardkontoer som skal brukes når det ikke er tilordnet en standard motkonto for leverandøren.</span><span class="sxs-lookup"><span data-stu-id="b0e30-135">Use this option to set up default accounts that are used when a default vendor offset account isn't assigned.</span></span></td>
+<td><span data-ttu-id="1d610-134">Disse standardoppføringene brukes på journalhodesider, og motkontoen på journalhodesiden brukes som en standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="1d610-134">These default entries are used on journal header pages, and the offset account on the journal header page is used as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="1d610-135">Standardkontoer fra <strong>Journalnavn</strong>-siden brukes bare hvis det ikke er konfigurert standardkontoer for leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="1d610-135">Default accounts from the <strong>Journal names </strong>page are used only if default accounts aren’t set up for the vendor account.</span></span></td>
+<td><span data-ttu-id="1d610-136">Bruk dette alternativet for å definere standardkontoer som skal brukes når det ikke er tilordnet en standard motkonto for leverandøren.</span><span class="sxs-lookup"><span data-stu-id="1d610-136">Use this option to set up default accounts that are used when a default vendor offset account isn't assigned.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="b0e30-136"><strong>Journalhode</strong> – Definer en standard motkonto for en journal som en standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="b0e30-136"><strong>Journal header</strong> – Set up a default offset account for a journal as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="b0e30-137">Legg merke til at du ikke kan angi standard motkontoer på journalhodet hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="b0e30-137">Note that you can't specify default offset accounts on the journal header if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
-<td><span data-ttu-id="b0e30-138">Journaloppføringer i journalen</span><span class="sxs-lookup"><span data-stu-id="b0e30-138">Journal entries in the journal</span></span></td>
-<td><span data-ttu-id="b0e30-139">Standardmotkontoen for en journal brukes som standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="b0e30-139">The default offset account for a journal is used as the default entry on the journal voucher pages.</span></span></td>
-<td><span data-ttu-id="b0e30-140">Bruk dette alternativet for å få raskere dataregistrering hvis de fleste poster i en journal har samme motkontoen.</span><span class="sxs-lookup"><span data-stu-id="b0e30-140">Use this option to help speed up data entry if most entries in a journal have the same offset account.</span></span></td>
+<td><span data-ttu-id="1d610-137"><strong>Journalhode</strong> – Definer en standard motkonto for en journal som en standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="1d610-137"><strong>Journal header</strong> – Set up a default offset account for a journal as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="1d610-138">Legg merke til at du ikke kan angi standard motkontoer på journalhodet hvis journaltypen for journalnavnene er <strong>Ankomstregistrering</strong> eller <strong>Godkjenning</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d610-138">Note that you can't specify default offset accounts on the journal header if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
+<td><span data-ttu-id="1d610-139">Journaloppføringer i journalen</span><span class="sxs-lookup"><span data-stu-id="1d610-139">Journal entries in the journal</span></span></td>
+<td><span data-ttu-id="1d610-140">Standardmotkontoen for en journal brukes som standardoppføring på journalbilagssidene.</span><span class="sxs-lookup"><span data-stu-id="1d610-140">The default offset account for a journal is used as the default entry on the journal voucher pages.</span></span></td>
+<td><span data-ttu-id="1d610-141">Bruk dette alternativet for å få raskere dataregistrering hvis de fleste poster i en journal har samme motkontoen.</span><span class="sxs-lookup"><span data-stu-id="1d610-141">Use this option to help speed up data entry if most entries in a journal have the same offset account.</span></span></td>
 </tr>
 </tbody>
 </table>
