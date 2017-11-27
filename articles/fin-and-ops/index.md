@@ -3,7 +3,7 @@ title: Dokumentasjon for Microsoft Dynamics 365 for Finance and Operations, Ente
 description: Dokumentasjon for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/13/2017
 
 ---
 
@@ -67,7 +67,7 @@ Mye av innholdet gjelder også for de tilknyttede produktene Microsoft Dynamics 
 
 <h3><a href="../supply-chain/index.md">Forsyningskjedeadministrasjon</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Kostnadsstyring</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Lagerstyring</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Hovedplanlegging</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Innkjøp og leverandører</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Behandling av produktinformasjon</a></p>
@@ -88,7 +88,10 @@ Mye av innholdet gjelder også for de tilknyttede produktene Microsoft Dynamics 
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Utvikling</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Utvidelsesmuligheter</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Databehandling og integrering</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Dataintegrering</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Databehandling</a></p>
+
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integrering</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Kontinuerlig levering</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobil plattform</a></p>
@@ -97,8 +100,8 @@ Mye av innholdet gjelder også for de tilknyttede produktene Microsoft Dynamics 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administrasjon</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Distribusjon</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Oppgradering</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Service</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Databehandling</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Service</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Databehandlingsrammeverk</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organisasjonsstyring</a></p>
 </td>

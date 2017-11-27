@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 54aaaca4d7ed1a4b2e7a485dd72fb457e607b49b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 9ae601d6369dfc341d9eeced8043650c28052b48
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -42,7 +42,7 @@ Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og dere
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling. 
+Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling. 
 
 #### <a name="blogs"></a>Blogger
 
