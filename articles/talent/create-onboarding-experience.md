@@ -3,7 +3,7 @@ title: Lag en engasjerende introduksjon ved oppstart
 description: "En vellykket introduksjon hjelper nyansatte å føle en tilhørighet til organisasjonen."
 author: tbisaacs
 manager: 
-ms.date: 05/04/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Talent
@@ -14,10 +14,10 @@ ms.search.region: Global
 ms.author: tbisaacs
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0baea020763465fcfd1b3718ff2e60de6b335143
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: c62ad20a1e3aa3bae71b07b6f5aecb5908a90a65
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -67,7 +67,7 @@ Relasjon er nøkkelen til å raskt få nyansatte opp på nivå. Og enda viktiger
 
 ## <a name="provide-training"></a>Tilby opplæring
 
-Gi din nyansatte selvtilliten og verktøyene de trenger for å lykkes. Dette starter med å klart definere ansvar og sette dine forventninger til hvordan de skal oppnås. Deretter å skape en opplæringsplan som fokuserer på den kompetansen de behøver for å nå forventningene dine. Ikke fokuser kun på samsvarsopplæring.
+Gi din nyansatte selvtilliten og verktøyene de trenger for å lykkes. Dette starter med å klart definere ansvar og sette dine forventninger til hvordan de oppnås. Deretter å skape en opplæringsplan som fokuserer på den kompetansen de behøver for å nå forventningene dine. Ikke fokuser kun på samsvarsopplæring.
 
 ## <a name="set-clear-milestones"></a>Sett klare milepæler
 

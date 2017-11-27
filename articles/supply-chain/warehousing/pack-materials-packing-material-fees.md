@@ -3,7 +3,7 @@ title: Emballasjematerialer og gebyrer
 description: "Emballasjematerialegebyrer betales til et resirkuleringsfirma med bestemte intervaller. Et beløp betales per vektenhet for hvert materiale som en emballasjeenhet består av. Emballasjematerialegebyrer beregnes og rapporteres, men ingen finanstransaksjoner posteres fordi gebyrene ikke regnes som avgifter som må betales til en myndighet."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Når du oppretter en salgsordrelinje, kontrollerer systemet om emballasjeenheter
 ## <a name="packing-units-on-purchase-order-lines"></a>Emballasjeenheter på bestillingslinjer
 Emballasjematerialetransaksjoner for en bestillingslinje opprettes ikke av systemet. Du kan opprette transaksjoner for fakturerte bestillingslinjer manuelt på siden **Emballasjematerialetransaksjoner**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Angi kundens lisensnumre for emballasjegebyr
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Angi kundens lisensnumre for emballasjegebyr
 Hvis kundene betaler emballasjegebyrene, angir du kundenes lisensnumre for emballasjegebyr på siden **Kunder**. Når et lisensnummer er tilordnet en kunde, beregnes emballasjegebyrene automatisk når salgsordrene faktureres. Etter fakturering fjernes merket for **Beregn gebyr** på siden **Emballasjematerialetransaksjoner** fordi du ikke trenger å beregne og skrive ut rapporten. Du kan skrive ut emballasjevekten og informere kundene om at de må betale gebyrene. 
 
 Hvis firmaet betaler emballasjegebyrene, angir du ikke kundens lisensnumre. Etter fakturering merker du av for **Beregn gebyr** på siden **Emballasjematerialetransaksjoner**. Dette viser at gebyrene beregnes når en rapport opprettes. Du kan skrive ut vekten på fakturaen og angi at firmaet betaler gebyrene.

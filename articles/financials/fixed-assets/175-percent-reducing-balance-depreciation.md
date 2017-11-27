@@ -1,9 +1,9 @@
 ---
-title: 175 prosent saldoavskrivning
-description: Denne artikkelen gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
+title: 175 % redusert saldoavskrivning
+description: Dette emnet gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 318e111f784157666c2853bcd6d5b3af2c9ffdc5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="175-percent-reducing-balance-depreciation"></a>175 prosent saldoavskrivning
+# <a name="175-percent-reducing-balance-depreciation"></a>175 % redusert saldoavskrivning
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
+Dette emnet gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **175 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. 
 
@@ -58,7 +58,7 @@ Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgj
 
 ### <a name="fiscal"></a>Skattemessig
 
-Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder.](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
 For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen den 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
 

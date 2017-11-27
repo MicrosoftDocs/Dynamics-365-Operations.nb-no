@@ -1,9 +1,9 @@
 ---
 title: Oversikt over personlige produktanbefalinger
-description: "Produktanbefalingene kan vises i Dynamics 365 for Retail på salgsstedsenheten. Anbefalingene er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. For forhandlere med store kataloger bidrar anbefalinger kunden med å oppdage produkter. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg og kryssalg for forhandlere og forbedring av kundebevaring. I Dynamics 365 for Retail er produktanbefalingene drevet av kognitive tjenester og Microsoft Azure Machine Learning."
+description: Dette emnet inneholder informasjon om Dynamics 365 for Retail-produktanbefalingene som kan vises salgsstedsenheten.
 author: ashishmsft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d727718442f94a2a78a3864741e93439d7c36473
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 942d6225a46b108ea39d3b8e4376b644c128ae6d
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -66,8 +66,9 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
 Hvis du vil sette opp produktanbefalinger, må du gjøre følgende.
 
 1.  Kontroller at du har valgt riktig **Juridisk enhet**.
-2.  Naviger til **Enhetslager**, velg **Forhandlersalg**, og klikk deretter **Oppdater**. Dette vil bruke demodata (eller dine data) fra din operative database og flytte den til Enhetslageret.
+2.  Gå til **Enhetslager**, velger **Detaljhandelsalg**, og klikk deretter på **Oppdater**. Dette bruker demonstrasjonsdataene (eller dataene) fra den operative databasen og flytter dem til enhetsbutikken.
 3.  Valgfritt: Hvis du vil vise anbefalinger på transaksjonsskjermbildet, går du til **Skjermvisning**, velg din skjermvisning, start **Skjermvisningdesigner**, og slipp **anbefalinger**-kontrollen der det er nødvendig.
+
 4.  Gå til **Forhandlerparametere**, velg **Maskinlæring**, velg **Ja** under **Aktiver POS-anbefalinger**.
 5.  Hvis du vil se anbefalinger på POS, kjør global konfigurasjonsjobb **1110**. For å gjenspeile endringer i utforming av POS-skjermoppsettet, kan du kjøre kanalkonfigurasjonsjobb **1070**.
 

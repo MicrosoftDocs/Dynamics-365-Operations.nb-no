@@ -3,7 +3,7 @@ title: "Sporing av varer og råmaterialer i beholdning, produksjon og salg"
 description: "Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser."
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 08492c709c1b6cd2af0188ee48fb15ca0d4bd81e
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 2dd3709ae55e32ec2e5258ced2764c4eb218a4c4
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -138,7 +138,7 @@ Du kan eksportere informasjonen fra sammendragssidene til Microsoft Excel. Åpne
 Sporingsdetaljene inkluderer informasjon om kvalitetsordrer og avvik som gjelder varen eller råvarer. Du kan vise et sammendrag av kvalitetsordrer og avvik ved å klikke **Kvalitetsordrer** eller **Avvik** i handlingsruten. **Obs!** Destruktive kvalitetsordrer kan forekomme flere ganger i sporingsdetaljene. Når en destruktiv kvalitetsordre opprettes for et dokument, for eksempel en bestilling, vises den for hver transaksjon for dokumentet.
 
 ## <a name="are-there-any-reporting-capabilities-that-are-related-to-item-tracing"></a>Finnes det rapporteringsfunksjoner som er relatert til varesporing?
-Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av varen eller råvaren som er sendt, og hvilke kunder den er sendt til. For en en spørring som er knyttet til samsvar, kan du generere rapporten for alle kunder. For en spørring som er knyttet til kundeservice, kan du generere rapporten for en valgt kunde. Hvis produktet var råvare som ble brukt i produksjonen av en ferdigvare, blir ferdigvaren også tatt med. **Obs!** Hvis du bruker funksjonene for sletting eller arkivering av salgsordrer, inneholder rapportresultatene også salgsordrer som er slettet eller arkivert.
+Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av varen eller råvaren som er sendt, og hvilke kunder den er sendt til. For en spørring som er knyttet til samsvar, kan du generere rapporten for alle kunder. For en spørring som er knyttet til kundeservice, kan du generere rapporten for en valgt kunde. Hvis produktet var råvare som ble brukt i produksjonen av en ferdigvare, blir ferdigvaren også tatt med. **Obs!** Hvis du bruker funksjonene for sletting eller arkivering av salgsordrer, inneholder rapportresultatene også salgsordrer som er slettet eller arkivert.
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore koprodukter og biprodukter?
 Du kan spore koprodukter, men du kan ikke spore et biprodukt fordi sporingsdimensjoner vanligvis ikke er tilordnet til biprodukter. Når du sporer en vare, inkluderes eventuelle relaterte koprodukter i sporingsdetaljene. En node som inneholder et koprodukt inneholder ordet "koprodukt" i detaljene. Du kan også vise detaljer om et koprodukt ved å velge noden i sporingsdetaljene og deretter klikke hurtigfanen **Produksjon**.

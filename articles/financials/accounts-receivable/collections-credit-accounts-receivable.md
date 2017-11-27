@@ -3,7 +3,7 @@ title: Kredit og innkreving i Kunder
 description: "Informasjon om kundesamlinger behandles i én sentral visning ved hjelp av siden for innkreving i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62f659d6e4529adce10e6eb2699dfc84a7329143
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 -   Innkrevingssaker – Kolonnene på listesiden viser informasjon for saker som har en sakskategori av typen Innkrevinger.
 
 > [!NOTE]
-> Et øyeblikksbilde av aldersfordeling må opprettes før du kan vise informasjon på disse listesidene. Informasjon vises bare for kunder som det er opprettet et øyeblikksbilde av aldersfordeling for. Postene som vises på listesiden, kan også filtreres, på følgende måte:
+> Et øyeblikksbilde av aldersfordeling må opprettes før du kan vise informasjon på disse listesidene. Informasjonen vises bare for kunder det er blitt opprettet et øyeblikksbilde av aldersfordeling for. Postene som vises på listesiden kan også filtreres på følgende måte:
 <li>Som standard har en Finance and Operations-bruker tilgang til alle kunder som har et øyeblikksbilde av aldersfordeling.</li>
 <li>Hvis det finnes kundepuljer, må en bruker defineres som en innkrevingsagent for å bruke puljer til å filtrere informasjon på innkrevingslistesidene. Informasjon er begrenset til kundene som er med i den valgte kundepuljen.</li>
 <li>Hvis en bruker er konfigurert som innkrevingsagent, er det bare puljene som er valgt for denne innkrevingsagenten, som er tilgjengelige på listesiden. Hvis Tillat agent å vise alle kundepuljer er valgt på siden Innkrevingsagent for innkrevingsagenten, er alle puljer tilgjengelige for denne agenten.</li>

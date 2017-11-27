@@ -1,9 +1,9 @@
 ---
 title: "Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller"
-description: Denne artikkelen beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
+description: Dette emnet beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
+Dette emnet beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 
 Beregninger kan brukes for aritmetiske eller logiske operasjoner. De supplerer uttrykksbegrensninger i produktkonfigurasjonsmodeller. Du kan definere beregninger på **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** siden, og deretter lage uttrykk for beregningene i redigeringsprogrammet for uttrykk. Hvis du vil ha mer informasjon, se Opprett beregninger.
 
@@ -75,7 +75,7 @@ Beregninger skjer når alle inndataattributter har fått en verdi.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kan jeg skrive over verdien som er beregnet for målattributtet?
 Du kan overskrive verdien som beregnes for målattributtet, med mindre målattributtet er angitt som skjult eller skrivebeskyttet.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hvordan oppretter jeg et målattributt som skjult eller skrivebeskyttet?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hvordan oppretter jeg et målattributt som skjult eller skrivebeskyttet?
 Hvis du vil angi et attributt som skjulte eller skrivebeskyttet, gjør du følgende.
 
 1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.

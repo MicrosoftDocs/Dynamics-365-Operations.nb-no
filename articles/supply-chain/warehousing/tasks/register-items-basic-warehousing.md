@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 184f38347e2525f3efef9b0d55003a94a75380d4
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: c7148bd807ef29b0dd89204a0fbe9b8480095aba
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for en grunnleggende lageraktivitet ved hjelp av en journal for vareankomst
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du registrerer varer ved hjelp av vareankoms
 1. Gå til Lagerstyring > Loggoppføringer > Vareankomst > Vareankomst.
 2. Klikk Ny.
 3. Skriv inn en verdi i Navn-feltet.
-    * Hvis du bruker USMF, kan du velge WHS. Hvis du bruker andre data, må journalen med det valgte navnet ha følgende egenskaper: Kontroller plukklokasjon plukklokasjon må settes til Nei og Karantenestyring må settes til Nei.  
+    * Hvis du bruker USMF, kan du velge WHS. Hvis du bruker andre data, må journalen med det valgte navnet ha følgende egenskaper: Kontroller plukklokasjon må settes til Nei og Karantenestyring må settes til Nei.  
 4. Skriv inn en verdi i Følgeseddel-feltet.
     * Dette er følgeseddel-IDen fra følgeseddelen som er utstedt av leverandøren. Legg til et unikt nummer.  
 5. Velg bestillingen i Nummer-feltet i Nummer-feltet.

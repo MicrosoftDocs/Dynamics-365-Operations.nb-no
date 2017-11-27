@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og admi
 
 [![Valg for å avslutte utgående lagerordre](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Noen ganger kan enkelte elementer i lager ikke plukkes som en del av plukklisteprosessen. For eksempel kan denne situasjonen oppstå hvis en lagerarbeider reduserer mengdene på plukklinjer og behandler plukklisten. Hvis valget **Avslutt utgående lagerordre** er satt til **Ja**, vil gjenværende uplukkede antall rapporteres tilbake til ordrenivå. Hvis dette alternativet er satt til **Nei**, vil gjenværende uplukkede antall beholdes som en åpen utgående ordremengde. I dette tilfellet forblir mengdene frigitt til lageret og må legges til en ny plukkliste som en del av funksjonaliteten **Åpne utgangsordrer**.
+Hvis lagerarbeideren reduserer antallet på plukklisten, fjernes de tilsvarende lagerantallene fra forsendelsen. Når plukklisten oppdateres på et tidspunkt, blir de gjenstående antallene rapportert tilbake til ordren hvis alternativet **Avslutt utleveringslagerordre** er satt til **Ja**. Hvis alternativet **Avslutt utleveringslagerordre** er satt til **Nei**, beholdes de gjenstående antallene som en åpen utgående ordremengde og må legges til en ny plukkliste som en del av funksjonen **Åpne utleveringsordrer**. 
 
 [![Åpne utgangsordrerkommandoen i Funksjonsmenyen](./media/open-output-order.png)](./media/open-output-order.png)
 

@@ -3,7 +3,7 @@ title: "Utvikle en rekkefølgeplan"
 description: "Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b1caaf5f52282a8daae62602dcc5ef86b901e338
+ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
+ms.openlocfilehash: 2ca5f541abe4f85187aaefdbb03ca84e4f314b3c
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
 # <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
@@ -37,7 +37,7 @@ Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du
 7. Klikk Person.
 8. Skriv inn et navn i Person-feltet, eller velg rullegardinlisten.  Eksempel: Cassie Hicks.
 9. Klikk OK.
-10. Utvid hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
+10. Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
 11. Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen som skal inkluderes.
 12. Merk den første raden i listen.  Eksempel: Regnskapsfører
 13. Klikk i avmerkingsboksen Valgfritt.

@@ -1,16 +1,16 @@
 ---
-title: Hjelpeoversikt
-description: "Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen."
+title: Oversikt over Hjelp
+description: "Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Hjelpeoversikt
+# <a name="help-system-overview"></a>Oversikt over hjelpesystem
 
 [!include[banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
+Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
 
 > [!NOTE] 
 > Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
@@ -69,16 +69,17 @@ Vi får mange spørsmål om hvordan du søker etter innholdet vårt. Hvis du sta
 
 Du kan også finne innholdet med en hvilken som helst søkemotor. For å få best resultater anbefaler vi at du bruker et områdesøk, for eksempel området: docs.microsoft.com dynamics 365 "søkeord"  
 
-![Områdesøk](./media/site-search-1.png)
-
-![Resultater av områdesøk](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innholdsfortegnelsen
-Alle produkter deler en enkelt innholdsfortegnelse på webområdet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen til å finne emner du leter etter.
+Finance and Operations, Retail og Talent deler en enkelt innholdsfortegnelse på nettstedet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen over innholdsfortegnelsen til å finne emner du leter etter.
 
-### <a name="how-can-i-contribute"></a>Hvordan kan jeg bidra? 
+### <a name="follow-a-topic"></a>Følge et emne
+Hvis du vil følge et emne, klikker du på +Følg-knappen under kommentarboksen. Du må logge på å følge emnet. Se [Legg igjen en kommentar](#leave-us-a-comment) for mer informasjon.  
 
-Legg igjen en kommentar! 
+### <a name="give-feedback"></a>Gi tilbakemelding 
+Vi setter stor pris på tilbakemelding fra kunder. Du kan kommentere eller foreslå endringer i innholdet via GitHub.
+
+##### <a name="leave-us-a-comment"></a>Legge igjen en kommentar 
+Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en kommentar nederst på siden.  
 
 1 Klikk **Kommentarer** for å vise kommentarene nederst på siden.
 
@@ -96,6 +97,19 @@ Eller
 Til høyre angir du en e-postadresse og et nytt passord for å opprette en ny konto for området. 
 
 ![Påloggingsalternativer](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en endring eller bidra med innhold via GitHub
+Hvis du vil foreslå en endring, må du har en GitHub-konto og signerer en lisensavtale for bidragsyter.  Når du sender en pull-forespørsel, vil vi gå gjennom de foreslåtte endringene. Hvis det er nødvendig, vil vi diskutere dem internt og deretter kontakte deg.  
+
+Du kommer i gang ved å klikke på **Rediger**-knappen (blyant) på et emne, eller gå til vårt repositorium på https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Hvis du vil ha mer informasjon, kan du se håndboken for våre bidragsytere: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Vi godtar for øyeblikket bare bidrag til våre engelske repositorier.  
+> Vi godtar ikke problemer rapportert via GitHub. Pass på å bruke en pull-forespørsel for forslag til innhold. Tilbakemelding om produkt og funksjon håndteres best via Ideas-portalen for Dynamics 365: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Oppgaveveiledninger
@@ -196,9 +210,4 @@ Følgende tabell viser nettstedene våre. Våre innholdswebområder er organiser
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: "Definere et innkjøpskategorihierarki"
 description: "Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategorihierarki og hvordan du konfigurerer en innkjøpskategori som skal brukes i en innkjøpsprosess."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Definere et innkjøpskategorihierarki
@@ -30,7 +30,7 @@ Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategori
 
 
 ## <a name="add-a-new-procurement-category"></a>Legge til en ny innkjøpskategori
-1. Gå til Innkjøp og leverandører >  > Innkjøpskategorier.
+1. Gå til Innkjøp og leverandører > Innkjøpskategorier.
 2. Klikk Rediger kategorihierarki.
     * Gjeldende innkjøpskategorihierarki vises til venstre på siden. Du er i ferd med å endre hierarkiet.  
 3. Klikk Ny kategorinode.
@@ -42,7 +42,7 @@ Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategori
 7. Klikk Lagre.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Legge til produkter i den nye innkjøpskategorien
-1. Gå til Innkjøp og leverandører >  > Innkjøpskategorier.
+1. Gå til Innkjøp og leverandører > Innkjøpskategorier.
     * Merk noden du nettopp la til. Hvis du kjører denne prosedyren som en oppgaveveiledning, må du kanskje låse opp i oppgaveveiledningen for å velge noden.  
 2. Aktiver/deaktiver utvidelsen av delen Produkter.
 3. Klikk Legg til for å knytte produkter til innkjøpskategorien.

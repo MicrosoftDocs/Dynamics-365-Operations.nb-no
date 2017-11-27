@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 09/29/2017
 
 Dette emnet inneholder generell informasjon generering av finansrapporter. 
 
-Hvis du vil generere en rapport, åpner du rapportdefinisjonen og klikker deretter Generer på verktøylinjen. Vinduet Status for rapportkø åpnes og angir plasseringen av rapporten i køen. Den genererte rapporten åpnes i webvisningsprogrammet som standard.
-| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**        |
-|------------------------------------------------------------------------------------------------|
-| Du kan generere rapporter bare for mapper og plasseringer du har tilgang til. |
+Hvis du vil generere en rapport, åpner du rapportdefinisjonen og klikker deretter Generer på verktøylinjen. Vinduet Status for rapportkø åpnes og angir plasseringen av rapporten i køen. Den genererte rapporten åpnes som standard i nettvisningsprogrammet.
+
+> [!NOTE]
+> Du kan generere rapporter bare for mapper og plasseringer du har tilgang til.
 
 Tabellen nedenfor forklarer hvilke alternativer som er tilgjengelige for generering av rapporter.
 
@@ -50,10 +50,11 @@ Når du genererer en rapport, brukes alternativene du har angitt i kategorien Ra
 ## <a name="schedule-report-generation"></a> Planlegge rapportgenerering
 Mange firmaer har et kjernesett med rapporter som kjøres med planlagte intervaller i henhold til forretningsprosessene. Du kan planlegge at en rapport skal genereres regelmessig, for eksempel daglig, ukentlig, månedlig eller årlig. Dette kan være én rapport eller en gruppe med rapporter som inkluderer flere firmaer. Du må angi legitimasjonen for hvert av firmaene som er angitt, for eksempel firmaene i en definisjon av rapporteringstre. Hvis legitimasjonen ikke er gyldig, viser rapporten bare informasjonen som du har tilgang til, for eksempel firmaet du er logget på. Utdatainformasjon leses først fra rapportgruppen og deretter fra de enkelte rapportene.
 
-Når rapporttidsplaner opprettes og lagres, vises de i navigasjonsruten under Rapporttidsplaner. Du kan opprette mapper for å ordne rapportene. Hvis én enkelt rapport i en plan ikke kjøres, fortsetter alle andre rapporter å kjøre.
-| ![Viktig](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Viktig")**Viktig**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hvis du vil opprette, endre og slette rapporttidsplaner, må du ha rolle som utformer eller administrator. Når en rapport kjøres, brukes legitimasjonen til brukeren som opprettet tidsplanen til å generere rapporten. |
+Når rapporttidsplaner opprettes og lagres, vises de i navigasjonsruten under Rapporttidsplaner. Du kan opprette mapper for å ordne rapportene. Hvis én rapport i en plan ikke kjører, fortsetter alle andre rapporter å kjøre.
+
+> [!IMPORTANT]
+> Hvis du vil opprette, redigere og slette rapportplaner, må du ha en rolle som utformer eller administrator. Når en rapport kjøres, brukes legitimasjonen til brukeren som opprettet tidsplanen til å generere rapporten.
+
 
 ### <a name="create-a-report-schedule"></a>Opprette en rapporttidsplan
 
@@ -99,15 +100,16 @@ Klikk Tillatelser i dialogboksen Rapportplanlegging, og angi deretter riktige le
 ## <a name="missing-account-analysis-feature"></a>Funksjonen Analyse av manglende konto
 Du kan søke etter finansielle kontoer og dimensjoner som mangler på tvers av alle raddefinisjoner, rapporteringstredefinisjoner og rapportdefinisjoner i en byggeblokkgruppe. Dette er nyttig når du oppretter eller oppdaterer flere kontoen eller byggeblokker i løpet av en kort tidsperiode, og du vil kontrollere at all ny informasjon inkluderes i rapportene.
 
-Manglende kontoer finnes ved å bruke de laveste og høyeste verdiene fra raddefinisjonen eller rapporteringtredefinisjonen, og viser deretter en liste over kontoer som ikke er i raddefinisjonen eller rapporteringstredefinisjonen, men som er i de økonomiske dataen. Hvis en manglende konto er større eller mindre enn verdiene i raddefinisjon, inkluderes ikke denne kontoen i listen over manglende kontoer.
-| ![Tips](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tips")**Tips**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Denne prosessen skal kjøres for valideringsformål før du genererer månedlige rapporter og når du oppretter nye byggeblokker. |
+Manglende kontoer finnes ved å bruke de laveste og høyeste verdiene fra raddefinisjonen eller rapporteringtredefinisjonen, og viser deretter en liste over kontoer som ikke er i raddefinisjonen eller rapporteringstredefinisjonen, men som er i de økonomiske dataen. Hvis en manglende konto er større eller mindre enn verdiene i raddefinisjonen, inkluderes ikke den kontoen i listen over manglende kontoer.
+
+> [!TIP]
+> Ved validering må denne prosessen kjøres før du genererer månedlige rapporter, og når du oppretter nye byggeblokker.
 
 Rapporter som har områder med verdier har mindre sannsynlig for å mangle kontoer. Hvis det er mulig, bruker du områder i byggeblokken for å ta med nye kontoer når de opprettes. Hvis en rapportdefinisjon er satt til @ANY firma, kan du logge på et bestemt firma og kjøre en analyse for manglende konto for firmaet.
-| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hvis et nytt firma er lagt til, må du legge til det nye firmaet i rapporteringstrærne i eksisterende rapporter, hvis ikke inkluderes ikke firmaet i analysen for manglende kontoer. |
+
+> [!NOTE]
+> Hvis et nytt firma er lagt til, må du legge til det nye firmaet i rapporteringstrærne i eksisterende rapporter, hvis ikke inkluderes ikke firmaet i analysen for manglende kontoer.
+
 
 ### <a name="run-missing-account-analysis"></a>Kjøre analyse for manglende konto
 
@@ -117,11 +119,11 @@ Rapporter som har områder med verdier har mindre sannsynlig for å mangle konto
 4.  Velg et alternativ for å sortere resultatene, i Grupper etter-feltet. Du kan sortere resultater i henhold til byggeblokkene som påvirkes, eller du kan sortere resultater etter dimensjons- og verdisett.
 5.  Se gjennom resultatene som vises. Når du velger et element i den øverste ruten, viser den nederste ruten tilleggsinformasjon om unntaket. Dette inkluderer relaterte dimensjoner, verdier og rapporter.
 6.  Hvis du vil åpne det påvirkede elementet, klikker du det tilknyttede ikonet som vises i listeruten, eller høyreklikker elementet og velger Åpne. Hvis du vil velge flere elementer, holder du nede CTRL-tasten mens du merker elementene i den nedre ruten.
-7.  Hvis det returneres verdier, byggeblokker eller rapporter som ikke skal inkluderes i analysen, høyreklikker du elementet og velger Utelat, eller merker av for Utelat ved siden av elementet for å fjerne det fra listen. Utelatte elementer inkluderes ikke når listen oppdateres. Hvis du vil velge flere elementer, holder du nede CTRL-tasten mens du merker elementene i den nedre ruten. Hvis du vil vise alle elementer, inkludert resultater som du tidligere har valgt for å utelate fra analysen, merker du av for Vis utelatte byggeblokker og verdier og klikker deretter Oppdater.
-8.  Klikk Oppdater for å oppdatere unntakene du har behandlet. Klikk Ja for å utføre en fullstendig oppdatering av resultatene, eller klikk Nei for å utføre en delvis oppdatering av angitte elementer.
-    | ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Skjemaet oppdateres automatisk når det åpnes, med mindre det har vært åpnet de siste 15 minuttene. |
+7.  Hvis det returneres verdier, byggeblokker eller rapporter som ikke skal inkluderes i analysen, høyreklikker du elementet og velger Utelat, eller merker av for Utelat ved siden av elementet for å fjerne det fra listen. Utelatte elementer inkluderes ikke når listen oppdateres. Hvis du vil velge flere elementer, holder du nede Ctrl-tasten mens du velger elementene i den nederste ruten. Hvis du vil vise alle elementer, inkludert resultater som du tidligere valgte å utelate fra analysen, merker du av for Vis ekskluderte byggeblokker og verdier, og deretter klikker du Oppdater.
+8.  Klikk Oppdater for å oppdatere unntakene du har behandlet. Klikk Ja for å utføre en fullstendig oppdatering av alle resultatene, eller klikk Nei for å utføre en delvis oppdatering av behandlede elementer.
+
+    > [!NOTE]
+    > Skjemaet oppdateres automatisk når det åpnes, hvis ikke det har blitt åpnet de siste 15 minuttene.
 
 9.  Når problemene er løst, klikker du OK for å lukke dialogboksen.
 

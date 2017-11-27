@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c222f0d17be6eea0f776f5460c793b82d8b3e0ab
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 6b896c28f475a8f827a1db1b6dd684b6ec64e872
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -138,7 +138,7 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 </tr>
 <tr class="odd">
 <td>Brukerkrav</td>
-<td>Brukerkrav representerer en abstraksjon mellom brukerkrav og spesifikke komponenter og attributter. Du kan ikke tilordne brukerkrav til en vare. En kunde er for eksempel på jakt et etter hjemmekinosystem. Selgeren kan spørre om størrelsen på rommet det kunden skal montere systemet, for å finne avgjøre hvor mange watt som kreves. I dette eksemplet kan romstørrelsen være et brukerkrav som hjelper deg å fastslå riktig attributtverdi for en bestemt komponent. Du kan skjule brukerkrav slik at de ikke vises for brukeren i løpet av en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet brukerkravet, skjules også. Du kan skrive en betingelse for å styre om et brukerkrav kan skjules. Du må skrive betingelsen ved hjelp av OML-modellsyntaks (Optimization Modeling Language).</td>
+<td>Brukerkrav representerer en abstraksjon mellom brukerkrav og spesifikke komponenter og attributter. Du kan ikke tilordne brukerkrav til en vare. En kunde er for eksempel på jakt et etter hjemmekinosystem. Selgeren kan spørre om størrelsen på rommet det kunden skal montere systemet, for å finne avgjøre hvor mange watt som kreves. I dette eksemplet kan romstørrelsen være et brukerkrav som bidrar til å finne riktig attributtverdi for en spesifikk komponent. Du kan skjule brukerkrav, slik at de ikke vises for brukeren under en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet brukerkravet, skjules også. Du kan skrive en betingelse for å styre om et brukerkrav kan skjules. Du må skrive betingelsen ved hjelp av OML-modellsyntaks (Optimization Modeling Language).</td>
 </tr>
 <tr class="even">
 <td>Stykklistelinjer</td>

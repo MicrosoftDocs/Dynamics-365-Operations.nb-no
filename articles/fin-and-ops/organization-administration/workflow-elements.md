@@ -1,27 +1,27 @@
 ---
 title: Arbeidsflytelementer
-description: "Denne artikkelen beskriver de ulike elementene som utgjør en arbeidsflyt."
+description: "Dette emnet beskriver de ulike elementene som utgjør en arbeidsflyt."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver de ulike elementene som utgjør en arbeidsflyt.
+Dette emnet beskriver de ulike elementene som utgjør en arbeidsflyt.
 
 En arbeidsflyt består av elementer. Delene nedenfor beskriver hver elementtype.
 
@@ -59,7 +59,7 @@ En *godkjenningsprosess* er en prosess som består av separate trinn. I hvert go
 -   Be om en endring i dokumentet
 -   Tilordne dokumentet til en annen bruker for godkjenning
 
-## <a name="lineitem-workflow-elements"></a>Elementer for arbeidsflyt for linjeelementer
+## <a name="line-item-workflow-elements"></a>Elementer for arbeidsflyt for linjeelementer
 Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som *dokumentarbeidsflyten*.) Du kan legge til et *arbeidsflyt for linjeelementer*-elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen.
 
 ![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ I dette scenariet vil du kanskje opprette følgende arbeidsflyter for linjeeleme
 -   **Arbeidsflyt for linjeelement 2** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 2222.
 -   **Arbeidsflyt for linjeelement 3** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 3333.
 
-## <a name="flowcontrol-elements"></a>Flytkontrollelementer
+## <a name="flow-control-elements"></a>Flytkontrollelementer
 Følgende elementer lar deg utforme arbeidsflyter som har alternative grener eller grener som kjøres samtidig.
 
 ### <a name="manual-decision"></a>Manuell beslutning

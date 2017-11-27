@@ -3,14 +3,14 @@ title: "Leverandørsamarbeid med eksterne leverandører"
 description: "Dette emnet forklarer hvordan innkjøpsagenter samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
-ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: abff906bcdf31c91ce696afbcd651a1d7a87ea8a
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,6 +33,8 @@ ms.lasthandoff: 10/05/2017
 Dette emnet forklarer hvordan innkjøpsagenter samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager.
 
 Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations. Det lar leverandører arbeide med bestillings-, faktura- og forsendelseslagerinformasjon. Dette emnet beskriver hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger og forsendelseslager. Det beskriver også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling. Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+Informasjonen i dette emnet om leverandørsamarbeid gjelder bare for gjeldende versjonen av Dynamics 365 for Finance and Operations. Samarbeide med leverandører ved å bruke leveandørportalen i februar 2016- og mai 2016-versjonene av Microsoft Dynamics AX. Hvis du vil ha mer informasjon om leverandørportalmodulen, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 

@@ -1,9 +1,9 @@
 ---
 title: Dato avveid gjennomsnitt
-description: 
+description: "Dato avveid gjennomsnitt er en lagermodell basert på avveid gjennomsnitt-prinsippet, hvor frigivelser fra lageret verdsettes til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+Dato for avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt. I avveid gjennomsnitt-prinsippet verdsettes frigivelser fra lageret til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden. 
 
-Dato for avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt. I avveid gjennomsnitt-prinsippet verdsettes frigivelser fra lageret til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden. Når du kjører en lageravslutning ved hjelp av dato for avveid gjennomsnitt, utlignes alle daglige mottak mot en virtuell avgang. Denne virtuelle avgangen inneholder totalt mottatt antall og verdi for den aktuelle dagen. Den virtuelle frigivelsen har et tilsvarende virtuelt mottak, som frigivelsene utlignes mot. Derfor får alle avgangene samme gjennomsnittskostnad. Du kan se på denne virtuelle avgangen som en virtuell overføring, som kalles *overføring av avveid gjennomsnitt fra lagerlukking*. 
+Når du kjører en lageravslutning ved hjelp av dato for avveid gjennomsnitt, utlignes alle daglige mottak mot en virtuell avgang. Denne virtuelle avgangen inneholder totalt mottatt antall og verdi for den aktuelle dagen. Den virtuelle frigivelsen har et tilsvarende virtuelt mottak, som frigivelsene utlignes mot. Derfor får alle avgangene samme gjennomsnittskostnad. Du kan se på denne virtuelle avgangen som en virtuell overføring, som kalles *overføring av avveid gjennomsnitt fra lagerlukking*. 
 
 Hvis det bare har skjedd ett mottak på eller før datoen, trenger du ikke verdsette gjennomsnittsverdien. Fordi alle avganger utlignes fra dette mottaket, vil ikke den virtuelle overføringen bli opprettet. På samme måte, hvis det bare skjer frigivelser på den aktuelle datoen, vil det ikke finnes noen mottak å verdsette en gjennomsnittsverdi fra, og den virtuelle overføringen vil ikke bli opprettet. Når du bruker dato for avveid gjennomsnitt, kan du merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. I dette tilfellet bruker du ikke dato for avveid gjennomsnitt-regelen. Månedlig lagerlukking anbefales når du bruker dato avveid gjennomsnitt-lagermodellen. 
 

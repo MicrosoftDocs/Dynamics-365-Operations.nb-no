@@ -3,7 +3,7 @@ title: Prosjektstyring og regnskap
 description: "Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for å tilby en tjeneste, produsere et produkt eller oppnå et resultat."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 

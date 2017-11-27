@@ -3,7 +3,7 @@ title: Fakturakontroll og konserninterne bestillinger
 description: "Den juridiske enheten for innkjøp som er involvert i en konsernintern handelstransaksjon kan være konfigurert til å bruke leverandørfakturasamsvar. I så fall må posteringskravene for både konsernintern handel og leverandørfakturasamsvar være oppfylt før konserninterne leverandørfakturaer kan posteres."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Nettobeløpene for konsernintern leverandørfaktura og konsernintern kundefaktur
 2.  Registrerer at varene er mottatt, i Fabrikam Salg, og poster en følgeseddel. Status for ICSO888 endres til Levert. Status for ICPO222 endres til Mottatt.
 3.  Utfør en fakturaoppdatering for ICSO888 i Fabrikam Salg. Enhetsprisen er 0,45, og 100 varer oppdateres.
 4.  Opprett en faktura for ICPO222 i Fabrikam Innkjøp. Du endrer nettoprisen fra 45,00 til 54,00 ved et uhell. Et ikon vises for å angi at prisen overskrider den tillatte pristoleransen på 2 prosent.
-5.  På Fakturakontroll-detaljsiden velger du alternativet for å godkjenne postering med samsvarende avvik. På siden Leverandørfaktura klikk OK. Hvis leverandørfakturaen ikke var en konsernintern leverandørfaktura, er postering fullført. Fordi du arbeider med en konsernintern leverandørfaktura, er imidlertid postering mislykket. For konsernintern handel må fakturatotaler i den konserninterne salgsordren være lik fakturatotaler i den tilsvarende konserninterne bestillingen. Du må korrigere nettoprisen på fakturaen ved å endre nettoprisen tilbake til standardbeløpet 45,00 for å løse dette problemet.
+5.  På Fakturakontroll-detaljsiden velger du alternativet for å godkjenne postering med samsvarende avvik. Klikk på OK på Levarandørfaktura-siden. Hvis leverandørfakturaen ikke var en konsernintern leverandørfaktura, er postering fullført. Fordi du arbeider med en konsernintern leverandørfaktura, er imidlertid postering mislykket. For konsernintern handel må fakturatotaler i den konserninterne salgsordren være lik fakturatotaler i den tilsvarende konserninterne bestillingen. Du må korrigere nettoprisen på fakturaen ved å endre nettoprisen tilbake til standardbeløpet 45,00 for å løse dette problemet.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Eksempel: Antallssamsvar med konsernintern handel
 Antallene på den konserninterne bestillingen og den konserninterne salgsordren må være like. Dette kravet overstyrer alle fakturakontrollgodkjenninger som gjelder. I dette eksemplet brukes følgende tillegg til oppsettet for konsernintern handel:

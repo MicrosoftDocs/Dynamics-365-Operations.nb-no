@@ -3,7 +3,7 @@ title: Delvis lokasjonssyklustelling
 description: "Syklustellingsplaner styrer de faktiske telleoperasjonene. Du kan be om at bare bestemte produkter og produktvarianter telles, i stedet for all lagerbeholdning på et sted."
 author: perlynne
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 626b2f9f35b94124168adb7bb09c75a086d38a97
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0e0f9d81f4d5943a89d8ac87776e05acb32cb8d9
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -54,7 +54,7 @@ I dette eksemplet må bare varenummeret A0001 telles i lager 61.
 
 1.  Det opprettes en ny mal for syklustelling. Alternativet **arbeidslinjeskift** brukes til å gruppere opptellingsarbeidslinjer etter varenummer. Derfor får arbeidet som er opprettet for syklustelling, linjer per varenummer. Du kan også gruppere linjene etter produktvariantnummer.
 2.  Det opprettes en ny plan for syklustelling som refererer til den nylig opprettede arbeidsmalen. Syklustellingsplanen inkluderer alle lokasjoner på lager 61 (spørringen **Veg lokasjoner**) som rommer beholdningen for varenummer A0001. Valg av bestemte produkter er definert i delen **Produktvalg for syklustellingsplan**.
-3.  Du kan velge produkter for syklustellingsplaner ved å sette feltet **Tomme lokasjoner** til **Utelat tomme**. Når syklustellingsplanen behandles, opprettes en delvis syklustellingl for varenummer A0001. Den faktiske telleprosessen kan utføres ved hjelp av et menyelement for mobilenhet for veiledet syklustelling.
+3.  Du kan velge produkter for planer for syklustelling ved å sette feltet **Tomme lokasjoner** til **Ekskluder tomme**. Når planen for syklustellingen behandles, opprettes det delvis syklustellingsarbeid for varenummer A0001. Den faktiske telleprosessen kan utføres ved hjelp av et menyelement for mobilenhet for veiledet syklustelling.
 
 
 

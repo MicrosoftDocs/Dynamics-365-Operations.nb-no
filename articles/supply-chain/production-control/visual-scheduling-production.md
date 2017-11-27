@@ -3,7 +3,7 @@ title: Gantt-diagram til finplanlegging
 description: "Produksjonsplanleggere kan kontrollere og optimalisere produksjonsplaner ved å bruke Gantt-diagrammer."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Et Gantt-diagram er en visuell fremstilling av planlagte aktiviteter innenfor et
 -   Jobber fra planlagte produksjonsordrer.
 -   Finplanlagte prosjektaktiviteter av typen Timeprognoser.
 
-Gantt-diagrammet kan åpnes på to ulike måter, **Ordrevisning** og **Ressursvisning**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)I **Ordrevisning** grupperes aktiviteter under produksjonsordrer. Dette kan for eksempel være nyttig hvis du vil holde oversikt over alle jobbene som er knyttet til de samme bestillingene. I **Ressursvisning** grupperes alle jobber under enkeltressurser. Denne visningen kan være nyttig når du optimaliserer planen på et ressursnivå, for eksempel en maskin eller en gruppe maskiner. Gantt-diagrammene som er vist i illustrasjonene nedenfor, viser **Ordrevisning** og **Ressursvisning** med disse viktige elementer:
+Gantt-diagrammet kan åpnes i to forskjellige visninger, **Ordrevisning** og **Ressursvisning**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). I **Vis** grupperes aktiviteter under produksjonsordrer. Dette kan for eksempel være nyttig hvis du vil holde oversikt over alle jobbene som er knyttet til de samme bestillingene. I **Ressursvisning** grupperes alle jobber under enkeltressurser. Denne visningen kan være nyttig når du optimaliserer planen på et ressursnivå, for eksempel en maskin eller en gruppe maskiner. Gantt-diagrammene som er vist i illustrasjonene nedenfor, viser **Ordrevisning** og **Ressursvisning** med disse viktige elementer:
 
 1.  Aktivitet i Gantt-diagram
 2.  Materialmangel ikonet
@@ -156,5 +156,7 @@ Gantt-diagrammet kan åpnes fra følgende sider.
 | **Produksjonsordrer som skal frigis** (åpnes fra **Produksjonsstyring**-arbeidsområdet) | Siden Produksjonsordrer som skal frigis åpnes fra **Produksjonsstyring**-arbeidsområdet. Denne siden viser planlagte produksjons- og partiordrer som venter på frigivelse. Du kan åpne Gantt-diagrammet for valgte produksjonsordrer på denne siden.                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>Se også  
 [Visuell planlegging med Gantt-diagram for produksjon og batchordrer (video)](https://youtu.be/BtbuShkGj4I)
+
+[Visuell planlegging for produksjon (demonstrasjonsskript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 

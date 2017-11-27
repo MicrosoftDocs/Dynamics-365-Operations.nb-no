@@ -3,14 +3,14 @@ title: Definere anleggsmidler
 description: Dette emnet gir en oversikt over oppsett av anleggsmiddelmodulen.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d16c9ca5740c27528d74800957f9b47984c135cd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7a578c5198feb8481a77180e3ed95077296f4638
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,12 +56,12 @@ Hvis du vil ha mer informasjon, kan du se [Konfigurere tablåer](tasks/set-up-va
 ## <a name="fixed-asset-posting-profiles"></a>Posteringsprofiler for anleggsmidler
 Når du har definert tablåer, kan du opprette posteringsprofilen. Posteringsprofilen må defineres av tablået, men den kan også defineres på et mer detaljert nivå. Du kan for eksempel definere posteringsprofilen for kombinasjonen av et tablå og en anleggsmiddelgruppe, eller til og med for et enkelt anleggsmiddeltablå. Som standard brukes finanskontoene som er definert, for transaksjoner for anleggsmidler.
 
-Du må definere finanskontoene som skal brukes ved avhending, både avhendingssalg eller avhendingssvinn. Tidligere posterte anleggsmiddeltransaksjonene tilbakeføres ut av de opprinnelige kontoene ved avhending, og nettobeløpet flyttes til riktig konto for fortjeneste og tap for avhending av anleggsmidler. For å garantere at transaksjoner tilbakeføres på riktig måte, må du definere kontoer for hver transaksjonstype som du bruker i firmaet. Hovedkontoen skal være den opprinnelige hovedkontoen du angir i posteringsprofilen for transaksjonstypen, og motkontoen skal være avhendingskontoen for fortjeneste og tap. Unntaket er netto bokført verdi. I så fall skal både hovedkontoen og motkontoen settes til avhendingskontoen for fortjeneste og tap. Hvis du vil ha mer informasjon, se [Definere posteringsprofiler for anleggsmidler](tasks/set-up-fixed-asset-posting-profiles.md)
+Du må definere finanskontoene som skal brukes ved avhending, både avhendingssalg eller avhendingssvinn. Tidligere posterte anleggsmiddeltransaksjonene tilbakeføres ut av de opprinnelige kontoene ved avhending, og nettobeløpet flyttes til riktig konto for fortjeneste og tap for avhending av anleggsmidler. For å garantere at transaksjoner tilbakeføres på riktig måte, må du definere kontoer for hver transaksjonstype som du bruker i firmaet. Hovedkontoen skal være den opprinnelige hovedkontoen du angir i posteringsprofilen for transaksjonstypen, og motkontoen skal være avhendingskontoen for fortjeneste og tap. Unntaket er netto bokført verdi. I så fall skal både hovedkontoen og motkontoen settes til avhendingskontoen for fortjeneste og tap. Hvis du vil ha mer informasjon, kan du se [Definere posteringsprofiler for anleggsmidler](tasks/set-up-fixed-asset-posting-profiles.md)
 
 ## <a name="fixed-asset-groups"></a>Anleggsmiddelgrupper
 Anleggsmiddelgruppe er det eneste obligatorisk feltet når du oppretter et anleggsmiddel. Verdien i dette feltet angir standardverdien for flere informasjonsfelt for anleggsmidlet. Tablåer settes opp slik at et standardtablå er tilordnet til hvert anleggsmiddel i en gruppe. Du kan deretter angi attributter for tablåer som er spesifikke for en gruppe anleggsmidler, for eksempel Levetid og Avskrivningskonvensjon.
 
-Du kan også definere særskilte avskrivningsfradrag eller bonusavskrivning for en bestemt kombinasjon av en anleggsmiddelgruppe og et tablå. Du må tilordne en prioritet til det særskilte avskrivningsfradraget for å angi rekkefølgen som fradrag beregnes i når flere fradrag er tilordnet til et tablå. Hvis du vil ha mer informasjon, se [Definere anleggsmiddelgrupper](tasks/set-up-fixed-asset-groups.md)
+Du kan også definere særskilte avskrivningsfradrag eller bonusavskrivning for en bestemt kombinasjon av en anleggsmiddelgruppe og et tablå. Du må tilordne en prioritet til det særskilte avskrivningsfradraget for å angi rekkefølgen som fradrag beregnes i når flere fradrag er tilordnet til et tablå. Hvis du vil ha mer informasjon, kan du se [Definere anleggsmiddelgrupper](tasks/set-up-fixed-asset-groups.md)
 
 ## <a name="fixed-asset-parameters"></a>Parametere for anleggsmidler
 Det siste trinnet er å oppdatere parameterne for anleggsmidler.
@@ -76,6 +76,6 @@ Du kan konfigurere årsakskoder til å være nødvendige for endringer av et anl
 
 Til slutt definerer du nummerserier for anleggsmidler i kategorien Nummerserier. Anleggsmiddelnummerserien kan overstyres av gruppenummersekvensen for anleggsmiddelet hvis det er angitt.
 
-Hvis du vil ha mer informasjon, se [Opprette anleggsmidler](tasks/create-fixed-asset.md).
+Hvis du vil ha mer informasjon, kan du se [Opprette et anleggsmiddel](tasks/create-fixed-asset.md).
 
 

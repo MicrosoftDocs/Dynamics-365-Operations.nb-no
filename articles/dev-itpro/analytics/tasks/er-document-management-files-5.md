@@ -3,7 +3,7 @@ title: "Endre og kjøre format for å bruke dokumentbehandlingsfiler i formatutd
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/31/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 76915a7294e078d76ed3ca9c41755e12b0791f3c
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: e145c4c7a1f3fd88481ad32d0af05511437e21dc
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Endre og kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)

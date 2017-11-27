@@ -1,9 +1,8 @@
 ---
 title: Oversikt over detaljhandelsenheter
-description: "Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter. Det beskriver ulike måter enheter kan kobles til salgsstedet og komponentene som er ansvarlig for å administrere tilkoblingen til salgsstedet."
-author: rubencdelgado
+description: Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter.
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +17,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Oversikt over detaljhandelsenheter
+# <a name="retail-peripherals-overview"></a>Oversikt over eksterne enheter for detaljhandel
 
 [!include[banner](includes/banner.md)]
 
@@ -575,7 +574,7 @@ I henhold til gjeldende sikkerhetsstandarder skal følgende innstillinger brukes
 ## <a name="peripheral-simulator"></a>Ekstern simulator
 Hvis du vil ha mer informasjon, kan du se [Simulator for eksterne detaljhandelsenheter](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Microsoft-testede eksterne enheter
+## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testede eksterne enheter
 ### <a name="ipc-built-in-hardware-station"></a>IPC-maskinvarestasjon (innebygd)
 
 De eksterne enhetene nedenfor ble testet ved hjelp av IPC-maskinvarestasjonen som er bygget inn i Modern POS for Windows.

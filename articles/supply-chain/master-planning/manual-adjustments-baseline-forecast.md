@@ -1,9 +1,9 @@
 ---
 title: Foreta manuelle justeringer i basislinjeprognosen
-description: "Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen."
+description: "Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 218374cdb6b5588648422d97c04fb60f26e47ac7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
+Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
 
 Før du gjør manuelle justeringer, er det viktig at du forstår noen nøkkelbegreper om forskjellige sider.
 
@@ -43,7 +43,7 @@ Siden **Justert behovsprognose** inneholder et rutenett med følgende struktur:
 -   Etterfølgende kolonner representerer prognoseperioder som prognosen er generert for. Hver kolonneoverskrift er den første datoen i prognoseperioden som kolonnen viser.
 -   Verdiene i cellene representerer prognosen for én vare, varefordelingsnøkkel og så videre, for den bestemte prognoseperioden.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Prognoseaggregering og -deaggregering
+## <a name="forecast-aggregation-and-de-aggregation"></a>Prognoseaggregering og -deaggregering
 Undertittelen på siden viser nivået på prognoseaggregering. 
 
 Hvis undertittelen på siden for eksempel er **firma / område / tilordningsnøkkel / varenummer / farge / størrelse / konfigurasjon / stil**, er det ingen prognoseaggregering, og prognosen vises på nivået for varen og dens dimensjoner. For å endre aggregering bruk siden **Endre prognosedimensjoner** som du kan åpne fra programmenyen. 

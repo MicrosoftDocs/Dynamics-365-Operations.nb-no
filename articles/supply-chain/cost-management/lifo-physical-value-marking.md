@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 86bafb9346b7335bf0a5d6c156eee6d53f1998a9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -55,7 +55,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   4a. Fysisk lagermottak av et antall på 1 til kost USD 30,00 per stykk.
 -   4b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   5a. Fysisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
--   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
+-   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med LIFO-metoden blir den sist økonomisk oppdaterte avgangen utlignet mot den sist økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD 10,00.
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
