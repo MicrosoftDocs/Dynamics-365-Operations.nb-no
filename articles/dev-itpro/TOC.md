@@ -54,57 +54,54 @@
 #### [Attributtklasser for X++](dev-ref/xpp-attribute-classes.md)
 #### [Sammenligning mellom X++ og C\#](dev-ref/xpp-cs-comparison.md)
 #### [Syntaks for X++](dev-ref/xpp-syntax.md)
-## Compile-time-funksjoner
+## [API, klasse og tabellreferanse](dev-ref/api-reference.md)
 ### [Compile-time-funksjoner for X++](dev-ref/xpp-compile-time-functions.md)
-## Run-time-funksjoner
-### [Run-time-funksjoner for X++](dev-ref/xpp-business-run-time-functions.md)
-### [Run-time-funksjoner for X++-beholder](dev-ref/xpp-container-run-time-functions.md)
-### [Run-time-funksjoner for X++-konvertering](dev-ref/xpp-conversion-run-time-functions.md)
-### [Run-time-funksjoner for X++-dato](dev-ref/xpp-date-run-time-functions.md)
-### [Run-time-funksjoner for X++-matematikk](dev-ref/xpp-math-run-time-functions.md)
-### [Run-time-funksjoner for X++-gjenspeiling](dev-ref/xpp-reflection-run-time-functions.md)
 ### [Run-time-funksjoner for X++](dev-ref/xpp-run-time-functions.md)
-### [Run-time-funksjoner for X++-økt](dev-ref/xpp-session-run-time-functions.md)
-### [Run-time-funksjoner for X++-streng](dev-ref/xpp-string-run-time-functions.md)
-## Systemtabeller
+#### [Run-time-funksjoner for X++](dev-ref/xpp-business-run-time-functions.md)
+#### [Run-time-funksjoner for X++-beholder](dev-ref/xpp-container-run-time-functions.md)
+#### [Run-time-funksjoner for X++-konvertering](dev-ref/xpp-conversion-run-time-functions.md)
+#### [Run-time-funksjoner for X++-dato](dev-ref/xpp-date-run-time-functions.md)
+#### [Run-time-funksjoner for X++-matematikk](dev-ref/xpp-math-run-time-functions.md)
+#### [Run-time-funksjoner for X++-gjenspeiling](dev-ref/xpp-reflection-run-time-functions.md)
+#### [Run-time-funksjoner for X++-økt](dev-ref/xpp-session-run-time-functions.md)
+#### [Run-time-funksjoner for X++-streng](dev-ref/xpp-string-run-time-functions.md)
 ### [Systemtabeller](dev-ref/system-tables.md)
-## Systemklasser
-### [API, klasse og tabellreferanse](dev-ref/api-reference.md)
-### [A-klasser](dev-ref/a-classes.md)
-### [B-klasser](dev-ref/b-classes.md)
-### [C-klasser](dev-ref/c-classes.md)
-### [D-klasser](dev-ref/d-classes.md)
-### [E-klasser](dev-ref/e-classes.md)
-### [F-klasser: FieldBinding til FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F-klasser: FormBuildButtonControl til FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F-klasser: FormBuildFilterPaneControl til FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F-klasser: FormBuildReferenceControl til FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F-klasser: FormChangeTracker til FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F-klasser: FormDataObject til FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F-klasser: FormFastTabSummarySeparator til FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F-klasser: FormGroupControl til FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F-klasser: FormListBoxControl til FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F-klasser: FormObject til FormRealControl](dev-ref/formobject-classes.md)
-### [F-klasser: FormReferenceControl til FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F-klasser: FormTabControl til FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [G-klasser](dev-ref/g-classes.md)
-### [H-klasser](dev-ref/h-classes.md)
-### [I-klasser](dev-ref/i-classes.md)
-### [J-klasser](dev-ref/j-classes.md)
-### [K-klasser](dev-ref/k-classes.md)
-### [L-klasser](dev-ref/l-classes.md)
-### [M-klasser](dev-ref/m-classes.md)
-### [N-klasser](dev-ref/n-classes.md)
-### [O-klasser](dev-ref/o-classes.md)
-### [P-klasser](dev-ref/p-classes.md)
-### [Q-klasser](dev-ref/q-classes.md)
-### [R-klasser](dev-ref/r-classes.md)
-### [S-klasser](dev-ref/s-classes.md)
-### [T-klasser](dev-ref/t-classes.md)
-### [U-klasser](dev-ref/u-classes.md)
-### [V-klasser](dev-ref/v-classes.md)
-### [W-klasser](dev-ref/w-classes.md)
-### [X-klasser](dev-ref/x-classes.md)
+### Systemklasser
+#### [A-klasser](dev-ref/a-classes.md)
+#### [B-klasser](dev-ref/b-classes.md)
+#### [C-klasser](dev-ref/c-classes.md)
+#### [D-klasser](dev-ref/d-classes.md)
+#### [E-klasser](dev-ref/e-classes.md)
+#### [F-klasser: FieldBinding til FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F-klasser: FormBuildButtonControl til FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F-klasser: FormBuildFilterPaneControl til FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F-klasser: FormBuildReferenceControl til FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F-klasser: FormChangeTracker til FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F-klasser: FormDataObject til FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F-klasser: FormFastTabSummarySeparator til FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F-klasser: FormGroupControl til FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F-klasser: FormListBoxControl til FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F-klasser: FormObject til FormRealControl](dev-ref/formobject-classes.md)
+#### [F-klasser: FormReferenceControl til FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F-klasser: FormTabControl til FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [G-klasser](dev-ref/g-classes.md)
+#### [H-klasser](dev-ref/h-classes.md)
+#### [I-klasser](dev-ref/i-classes.md)
+#### [J-klasser](dev-ref/j-classes.md)
+#### [K-klasser](dev-ref/k-classes.md)
+#### [L-klasser](dev-ref/l-classes.md)
+#### [M-klasser](dev-ref/m-classes.md)
+#### [N-klasser](dev-ref/n-classes.md)
+#### [O-klasser](dev-ref/o-classes.md)
+#### [P-klasser](dev-ref/p-classes.md)
+#### [Q-klasser](dev-ref/q-classes.md)
+#### [R-klasser](dev-ref/r-classes.md)
+#### [S-klasser](dev-ref/s-classes.md)
+#### [T-klasser](dev-ref/t-classes.md)
+#### [U-klasser](dev-ref/u-classes.md)
+#### [V-klasser](dev-ref/v-classes.md)
+#### [W-klasser](dev-ref/w-classes.md)
+#### [X-klasser](dev-ref/x-classes.md)
 
 ## [Startside med utvidelsesmuligheter](extensibility/extensibility-home-page.md)
 ### Innføring og Komme i gang
@@ -140,13 +137,10 @@
 #### [Endre en etikett](extensibility/change-label.md)
 #### [Utvide omfanget for nummerserie](extensibility/extend-number-sequence-scope.md)
 
-## [Startside for kontinuerlig levering](dev-tools/continuous-delivery-home-page.md)
-### [Vanlige spørsmål om utvikling og kontinuerlig levering](dev-tools/continuous-delivery-faq.md)
-### [Utelukke testpakker fra byggeutdataene](dev-tools/exclude-test-packages.md)
-### [Administrere tredjepartsmodeller og kjøretidspakker ved bruk av kildekontroll](dev-tools/manage-runtime-packages.md)
-### [Versjonsmodeller i det automatiske bygget](dev-tools/version-models-build.md)
 
-## Startside for ytelse
+
+
+## Ytelse
 ### [Spore ved hjelp av Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK og flerbrukertesting med Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnostisere problemer og analysere ytelsesproblemer ved hjelp av Trace parser](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [Testing og valideringer](perf-test/testing-validation.md)
 ### [Teste prosjekter i Visual Studio](perf-test/testing-support.md)
 ### [Distribusjon med kontinuerlig bygge- og testeautomatisering](perf-test/continuous-build-test-automation.md)
-## Datoer
-### [Datoeffektivitet](dev-tools/date-effectivity.md)
-## Lisensiering
-### [ISV-lisensiering](dev-tools/isv-licensing.md)
+## [Datoeffektivitet](dev-tools/date-effectivity.md)
+## [ISV-lisensiering](dev-tools/isv-licensing.md)
 
 # [Utvikling av brukergrensesnitt](user-interface/user-interface-development-home-page.md)
 ## Opplæringer
@@ -197,7 +189,7 @@
 ## Meldinger
 ### [Glidebryter og meldingsboks](user-interface/slider-messagebox.md)
 ### [API for meldingssenter, meldingsfelt og meldingsdetaljer](user-interface/messaging-api-center-bar-details.md)
-### [FAQ for meldingssenter, meldingsfelt og meldingsdetaljer](user-interface/messaging-user.md)
+### [Vanlige spørsmål om meldingssenter, meldingsfelt og meldingsdetaljer](user-interface/messaging-user.md)
 ## Retningslinjer for primært skjemamønster
 ### [Velge et skjemamønster](user-interface/select-form-pattern.md)
 ### [Skjemastiler og -mønstre](user-interface/form-styles-patterns.md)
@@ -359,6 +351,104 @@
 #### [ValueDesign-type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata-type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# Dataintegrering
+## [Integreringsmønstre](data-entities/integration-overview.md)
+
+## API-er for dataintegrering
+### [API for databehandlingspakke](data-entities/data-management-api.md)
+### [Tjenesteendepunkter](data-entities/services-home-page.md)
+#### [Feilsøking av tjenestegodkjenning](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Egendefinerte tjenester](data-entities/custom-services.md)
+### [Gjentakende integreringer](data-entities/recurring-integrations.md)
+
+## Utvikling for integrering
+### [Dataintegrering ved hjelp av dataenheter](data-entities/data-management-integration-data-entity.md)
+#### [Utvikle en enhet for dataoverføring](data-entities/develop-entity-for-data-migration.md)
+#### [Utvikle sammensatte dataenheter](data-entities/develop-composite-data-entities.md)
+#### [Konfigurere økonomisk datadeling mellom firmaer](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Opprette en postmal for å forenkle dataregistrering](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Bruke en postmal til å opprette en ny post](data-entities/tasks/use-record-template-new-record.md)
+
+### [Dataintegrering ved hjelp av Common Data Service](data-entities/data-integration-cds.md) 
+#### [Konfigurere et prospekt til kontanter-scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Synkronisere produkter fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Synkronisere kontoer fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Synkronisere salgsordrehoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Synkronisere salgsfakturahoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synkronisere produkter direkte fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synkronisere salgsordrehoder og -linjer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Bruke eksterne webtjenester](data-entities/consume-external-web-service.md)
+
+
+# [Databehandling](data-entities/data-entities-data-packages.md)
+
+## [Dataenheter](data-entities/data-entities.md)
+
+### [Prosjekter for konfigurasjonsdata](data-entities/configuration-data-projects.md)
+### [Konfigurasjonsdatapakker](data-entities/configuration-data-packages.md)
+### [Kopier konfigurasjonsdata mellom firmaer](data-entities/copy-configuration.md)
+### [Konfigurasjonsdatamaler](data-entities/configuration-data-templates.md)
+### [Spore endringer i en enhet](data-entities/entity-change-track.md)
+
+## Standard dataenheter
+### [Rapport for dataenheter](data-entities/data-entities-report.md)
+### [Dataenheter: Leverandører og avgifter](data-entities/data-entities-accounts-payable-taxes.md)
+### [Dataenheter: Kunder](data-entities/data-entities-accounts-receivable.md)
+### [Dataenheter: Bank](data-entities/data-entities-bank.md)
+### [Dataenheter: Startsaldoer](data-entities/data-entities-beginning-balances.md)
+### [Dataenheter: Budsjettplanlegging](data-entities/data-entities-budget-plan.md)
+### [Dataenheter: Budsjettering](data-entities/data-entities-budgeting.md)
+### [Dataenheter: Etterkalkulering](data-entities/data-entities-costing.md)
+### [Dataenheter: Reiseregning og utlegg](data-entities/data-entities-expense-management.md)
+### [Dataenheter: Anleggsmidler](data-entities/data-entities-fixed-assets.md)
+### [Dataenheter: Økonomimodul](data-entities/data-entities-general-ledger.md)
+### [Dataenheter: Global adressebok](data-entities/data-entities-global-address-book.md)
+### [Dataenheter: Personale](data-entities/data-entities-human-resources.md)
+### [Dataenheter: Lagerstyring](data-entities/data-entities-inventory-management.md)
+### [Dataenheter: Hovedplanlegging](data-entities/data-entities-master-plan.md)
+### [Dataenheter: Innkjøp og leverandører](data-entities/data-entities-procurement-sourcing.md)
+### [Dataenheter: Behandling av produktinformasjon](data-entities/data-entities-product-information-management.md)
+### [Dataenheter: Produksjonskontroll](data-entities/data-entities-production-control.md)
+### [Dataenheter: Prosjektregnskap](data-entities/data-entities-project-accounting.md)
+### [Dataenheter: Offentlig sektor](data-entities/data-entities-public-sector.md)
+### [Dataenheter: Retail](data-entities/data-entities-retail.md)
+### [Dataenheter: Utførelse av salg og markedsføring](data-entities/data-entities-sales-marketing.md)
+### [Dataenheter: Førsalg for salg og markedsføring](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Dataenheter: Systemadministrasjon](data-entities/data-entities-system-administration.md)
+### [Dataenheter: Arbeidsflyt](data-entities/data-entities-workflow.md)
+
+## [Dataimport- og -eksportjobber](data-entities/data-import-export-job.md)
+
+### [Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Utvikling for dataenheter
+### [Opprette nye dataenheter](data-entities/build-consuming-data-entities.md)
+### [Dataenhetsegenskaper](data-entities/behavioral-properties-data-entities.md)
+### [Opprette beregningskolonner og virtuelle felt](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Virkemåte mellom firmaer](data-entities/cross-company-behavior.md)
+### [Behandle lands-/områdekoder](data-entities/countryregion-codes-configuration-keys.md)
+### [Arvemønstre](data-entities/support-super-type-sub-type.md)
+### [Regler for dataenhetsveiviser](data-entities/data-entity-wizard-rules.md)
+### [Metadataegenskaper](data-entities/behavioral-properties-data-entities.md)
+### [Valideringer, standarder og utilordnede felt](data-entities/validations-defaults-unmapped-fields.md)
+### [Sikkerhet og dataenheter](data-entities/security-data-entities.md)
+
+## [Vise din egen database](analytics/export-entities-to-your-own-database.md)
+
+# [Startside for kontinuerlig levering](dev-tools/continuous-delivery-home-page.md)
+## [Vanlige spørsmål om utvikling og kontinuerlig levering](dev-tools/continuous-delivery-faq.md)
+## [Utelukke testpakker fra byggeutdataene](dev-tools/exclude-test-packages.md)
+## [Administrere tredjepartsmodeller og kjøretidspakker ved bruk av kildekontroll](dev-tools/manage-runtime-packages.md)
+## [Versjonsmodeller i det automatiske bygget](dev-tools/version-models-build.md)
+
+
 # Utgaveløsninger ved hjelp av Lifecycle Services
 ## [Utvikle og frigi](lcs-solutions/lcs-solutions-app-source.md)
 ## [Oppstille og publisere](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [Atskilte lokaliseringsmodeller](lcs-solutions/separate-localization-models.md)
 ### [Sende et forskriftsmessig varsel](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Finansutvikling
+# [Finansutvikling](financial/financial-dev-home-page.md)
 ## [Dimensjoner](financial/dimensions.md)
 ## [Legge til dimensjoner i en Excel-mal](financial/dimensions-overview.md)
 ## [Støtte for dialogboks for dimensjonsangivelseskontroll](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [Opprette et lokalt prosjekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurere og distribuere i lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 ### [Utvikle og distribuere tilpassede modeller til lokale miljøer](deployment/develop-deploy-custom-models-on-premises.md)
+### [Bruke oppdateringer i en lokal distribusjon](deployment/apply-updates-on-premises.md)
 
 ## Distribuere tilpasset kode
 ### [Opprette en distribuerbar pakke](deployment/create-apply-deployable-package.md)
@@ -445,7 +534,7 @@
 #### [Overføre en oppgradert salgskube til enhetslageret](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Oppgradere budsjettplanlegging](migration-upgrade/upgrade-budget-planning.md)
 
-## Overføring og oppgradering av kode
+## [Overføring og oppgradering av kode](migration-upgrade/code-migration-home-page.md)
 ### [Gjøre klar til å overføre kode](migration-upgrade/prepare-migration.md)
 ### [Konfigurere tilordning for Visual Studio Team Services under kodeoverføring](migration-upgrade/configure-vso-solution.md)
 ### [Dele opp modeller](dev-tools/model-split.md)
@@ -476,6 +565,7 @@
 ## [Rapport for lisenskoder og konfigurasjonsnøkler](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadeling mellom firmaer](sysadmin/cross-company-data-sharing.md)
 ## [Vedlikeholdsmodus](sysadmin/maintenance-mode.md)
+## [Forhåndskonfigurerte systemkontoer](sysadmin/pre-configured-system-accounts.md)
 ## [Rollebasert sikkerhet](sysadmin/role-based-security.md)
 ### [Sikkerhetsarkitektur](sysadmin/security-architecture.md)
 ### [Sikkerhetsrapporter](sysadmin/security-reports.md)
@@ -496,10 +586,11 @@
 ### [Nyheter](lifecycle-services/whats-new-lcs.md)
 ### [Kjente problemer](lifecycle-services/known-issues.md)
 ## [Brukerveiledning for Dynamics Lifecycle Services](lifecycle-services/lcs-user-guide.md)
+## [Abonnementsberegner](lifecycle-services/subscription-estimator.md)
 ## [Konfigurere sikkerhet](lifecycle-services/configure-lcs-security.md)
 ## [Problemsøk](lifecycle-services/issue-search-lcs.md)
 ## [Konfigurasjonsbehandling](lifecycle-services/configuration-manager-lcs.md)
-### [Konfigurere Konfigurasjonsbehandling ](lifecycle-services/set-up-configuration-manager-lcs.md)
+### [Konfigurere Konfigurasjonsbehandling](lifecycle-services/set-up-configuration-manager-lcs.md)
 ## [Konfigurere tjenesten for kodeoppgradering](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Opprette en metodologi ](lifecycle-services/create-methodology.md)
 ## [Forretningsprosessmodellerer](lifecycle-services/bpm-overview.md)
@@ -511,6 +602,7 @@
 ## [Flytdiagrammer for forretningsprosessmodellerer](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Laste opp tilpassede forretningsprosesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Overvåkning og diagnose ](lifecycle-services/monitoring-diagnostics.md)
+## [Spore brukerpålogginger](lifecycle-services/user-logins.md)
 ## [Aktivabibliotek](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – Oversikt over oversettelsestjeneste](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 – Brukerveiledning for oversettelsestjeneste](lifecycle-services/use-translation-service.md)
@@ -594,6 +686,7 @@
 ## [Kopiere en database fra SQL Server til et produksjonsmiljø i Azure SQL Database](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Gjenopprette en database i et ikke-produksjonsmiljø](database/request-point-in-time-restore.md)
 ## [Eksportere en kopi av en database til gjenoppretting senere](database/copy-operations-database.md)
+## [Be om oppdatering av sandkassedatabase](database/database-refresh.md)
 
 # Støtte
 ## [Få støtte for Dynamics 365 for Finance and Operations, Enterprise edition og Lifecycle Services](lifecycle-services/lcs-support.md)

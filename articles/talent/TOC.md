@@ -1,10 +1,9 @@
 # [Velkommen til Dynamics 365 for Talent](index.md)
 
-# Komme i gang
+# [Komme i gang](talent-get-started.md)
 ## [Systemkrav og oppdateringspolicy](talent-versions-update-policy.md)
 
-# Utvikle en personalstrategi
-## [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](departments-jobs-positions.md)
+# [Utvikle en personalstrategi](departments-jobs-positions.md)
 ## [Definere jobbkomponenter](create-job.md)
 ## [Opprette en avdeling og knytte den til avdelingshierarkiet](create-department-add-department-hierarchy.md)
 ## [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [Justere ferdigheter med forretningsbehov for arbeidsstyrke](skills.md)
 ## [Definere opplæringskurs](courses.md)
 
-# Opprette og vedlikeholde fordeler
-## [Administrere et fordelsprogram](manage-benefit-program.md)
-## [Policyer for fordelsrettigheter](benefit-eligibility-policies.md)
+# [Opprette og vedlikeholde fordeler](manage-benefit-program.md)
+# [Policyer for fordelsrettigheter](benefit-eligibility-policies.md)
 ## [Administrere varer som er lånt ut til arbeidere](loan-items.md)
 
-# Samle inn informasjon ved hjelp av spørreskjemaer
-## [Spørreskjemaer](questionnaires.md)
+# [Samle inn informasjon ved hjelp av spørreskjemaer](questionnaires.md)
 ## [Utforme et spørreskjema](design-questionnaires.md)
 ## [Distribuere og fylle ut et spørreskjema](distribute-questionnaires.md)
 ## [Evaluere resultatene i et spørreskjema](evaluate-questionnaire-results.md)
