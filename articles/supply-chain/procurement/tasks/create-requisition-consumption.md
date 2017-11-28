@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Opprette en rekvisisjon for forbruk
@@ -51,7 +51,7 @@ Denne prosedyren hjelper deg gjennom prosessen for å opprette en rekvisisjon. D
     * Bestilleren er arbeideren som har bedt om rekvisisjonen.   
     * Som standard er personen som klargjør rekvisisjonen, arbeideren som har bedt om den. Du må få tillatelse til å klargjøre en rekvisisjonslinje på vegne av en annen arbeider. Hvis du har slike tillatelser, vises de andre arbeiderne i dette oppslaget.  
 3. Skriv inn en verdi i Varenummer-feltet.
-    * Varene som er tilgjengelige for deg å velge, begrenses av kategoritilgangspolicyen og innkjøpskatalogen for den juridiske enheten for innkjøp.    
+    * Varene som er tilgjengelige for deg å velge, begrenses av kategoritilgangspolicyen og innkjøpskatalogen for den juridiske enheten for innkjøp.   
 4. Angi et tall i feltet Antall.
 
 ## <a name="add-more-products-to-the-requisition"></a>Legge til flere produkter i rekvisisjonen

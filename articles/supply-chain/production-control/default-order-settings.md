@@ -3,7 +3,7 @@ title: Standard ordreinnstillinger for dimensjoner og produktvarianter
 description: "Standard ordreinnstillinger definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9954d3daeacd55ce951b5d0e9c4fe1b96feb96c2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 5e67be5687388d399e2f702d8070cd960cbe7939
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Standard ordreinnstillinger i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen. Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer. Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon.
+Standard ordreinnstillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen. Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer. Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon.
 
 Du kan definere standard ordreinnstillinger på siden **Standard ordreinnstillinger**. For å åpne denne siden, gå til **Produktinformasjonsstyring** &gt; **Produkter** &gt; **Utgitte produkter** &gt; **Velg et utgitt produkt** &gt; på **Plan** eller **Administrer lager** handlingsruten &gt;**Ordreinnstillinger** &gt; **Standard ordreinnstillinger**.
 

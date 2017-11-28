@@ -3,7 +3,7 @@ title: Administrer utsetting arbeid i produksjon
 description: "Dette emnet forklarer hvordan underleveranseoperasjoner skal behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 
 Dette emnet forklarer hvordan underleveranseoperasjoner skal behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 
-I [produksjonsprosesser](production-process-overview.md), arbeidet kan gjøres av ressurser som eies eller administreres av leverandører. Leverandør ressurser brukes vanligvis til nivå periodiske overflødige behovet som bruke enn de som den disponible kapasiteten i et firma eier ressurser. Leverandøren vil kanskje også kunne tilby spesifikke [ressursfunksjoner](resource-capabilities.md)eller ressurser til en lavere pris.  
+I [produksjonsprosesser](production-process-overview.md), arbeidet kan gjøres av ressurser som eies eller administreres av leverandører. Leverandør ressurser brukes vanligvis til nivå periodiske overflødige behovet som bruke enn de som den disponible kapasiteten i et firma eier ressurser. Leverandøren vil kanskje også kunne tilby spesifikke [ressursfunksjoner](resource-capabilities.md) eller ressurser til en lavere pris.  
 
 Avhengig av leverandør-ressurser som brukes i produksjonsprosessen, en [rute](routes-operations.md) har ofte flere logistikkrav, fordi materialet og halvferdige varer må først transporteres til leverandørens webområde. Resultatet av operasjonen underleveranse må deretter transporteres til lokasjonen som er tildelt til neste operasjon eller et lager for ferdige varer.  
 

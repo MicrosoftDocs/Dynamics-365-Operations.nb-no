@@ -1,17 +1,17 @@
 ---
 title: Komponenter for finansrapport
 description: "Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper. 
+Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Denne artikkelen forklarer hvordan du ordner og låse byggesteiner. 
 
-Utformingsfilosofien bak Utforming av finansrapport er å dele informasjonen inn i de minste komponenten eller byggeblokkene, og deretter blande og samsvare komponentene som kreves. Derfor er rapportformateringen atskilt fra dine økonomiske data, og du kan endre utformingen av en rapport uten å endre de økonomiske dataene i Microsoft Dynamics ERP-systemet. Ved å bruke denne fremgangsmåten for byggeblokken, kan du kombinere tekst, beløp og beregninger for å lage rapportene du trenger. Denne fleksibiliteten fremmer kreativiteten ved å gjøre det enkelt for deg å vise operasjoner på forskjellige måter. De individuelle byggeblokkene i en rapportdefinisjon ligner på et tredimensjonalt regneark, men de har flere muligheter. En rapportdefinisjon angir raddefinisjon, kolonnedefinisjon og valgfri rapporteringstredefinisjon som skal brukes for rapporten. Den inneholder også informasjon om hvor den genererte rapporten skal lagres og hvordan den skal formateres. For bedre gjenbruk og deling kan du opprette en byggeblokkgruppe, som er en samling av eksisterende rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner, rapporteringstredefinisjoner og dimensjonssett, som er knyttet til et firma.
+Utformingsfilosofien bak Utforming av finansrapport er å dele informasjonen inn i de minste komponenten eller byggeblokkene, og deretter blande og samsvare komponentene som kreves. Derfor er rapportformateringen atskilt fra dine økonomiske data, og du kan endre utformingen av en rapport uten å endre de økonomiske dataene i Microsoft Dynamics ERP-systemet. Ved å bruke denne fremgangsmåten for byggeblokken, kan du kombinere tekst, beløp og beregninger for å lage rapportene du trenger. Denne fleksibiliteten fremmer kreativiteten ved å gjøre det enkelt for deg å vise operasjoner på forskjellige måter. De individuelle byggeblokkene i en rapportdefinisjon ligner på et tredimensjonalt regneark, men de har flere muligheter. En rapportdefinisjon angir raddefinisjon, kolonnedefinisjon og valgfri rapporteringstredefinisjon som skal brukes for rapporten. Den inneholder også informasjon om hvor den genererte rapporten skal lagres og hvordan den skal formateres. 
 
-## <a name="building-blocks-of-a-report"></a> Byggeblokker i en rapport
-| Byggeblokk            | Beskrivelse                                                                                                                                                                                                                                                                              | For mer informasjon                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Byggeblokker i en rapport
+| Byggeblokk            | beskrivelse                     | For mer informasjon                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Raddefinisjon            | En raddefinisjon definerer de beskrivende linjene (for eksempel lønn eller salg) i en rapport. Den viser i tillegg segmentverdiene eller dimensjonene som inneholder verdiene for hver linjevare, og inneholder radformatering og beregninger.                                                    | [Raddefinisjoner](row-definitions-financial-reporting.md)                       |
 | Kolonnedefinisjon         | En kolonnedefinisjon definerer perioden som skal brukes når data trekkes ut fra finansdimensjonene. Den inneholder også kolonneformatering og beregninger.                                                                                                                                 | [Kolonnedefinisjoner](column-definitions-financial-reports.md)         |
 | Rapporteringstredefinisjon | En rapporteringtredefinisjon ligner på et organisasjonskart. Den inneholder individuelle rapportenheter som representerer hver boks i diagrammet. Enhetene kan være individuelle avdelinger fra de økonomiske dataene eller overordnet enheter som summerer data fra andre rapporteringsenheter. | [Rapporteringstredefinisjoner](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Hvis du vil åpne en låst byggeblokk, åpner du byggeblokken og klikker derette
 
 ## <a name="building-block-groups"></a>Byggeblokkgrupper
 
-Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjoner og rapportdefinisjoner som du oppretter for en rapport. Byggeblokk grupper er samlinger av definisjoner og dimensjonssett som er knyttet til et firma. Byggeblokkgrupper kan være firmaspesifikke eller flere firmaer kan dele samme sett med byggeblokker. Hvis noen av firmaene har ulike kontoplaner, kan du bruke forskjellig byggeblokkgruppe for hvert firma. Du kan også gi navn til alle dine individuelle byggeblokker for å gjenspeile hvilket firma de er kompatible med.
-### <a name="create-a-building-block-group"></a>Opprette en byggeblokkgruppe
+Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjoner og rapportdefinisjoner som du oppretter for en rapport. Byggeblokkgrupper er samlinger av definisjonene og dimensjonssettene 
 
-1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
-2.  Klikk **Ny** i dialogboksen **Byggeblokkgrupper**.
-3.  Angi et unikt navn og en beskrivelse for byggeblokkgruppen. Hvert felt kan inneholde maksimalt 256 tegn. (Dette tallet inkluderer mellomrom.)
-4.  Klikk **OK** for å opprette den nye byggeblokkgruppen.
 
-### <a name="assign-a-building-block-group"></a>Tilordne en byggeblokkgruppe
+### <a name="view-a-building-block-group"></a>Vise en byggeblokkgruppe
 
-Når du har oppretter en blokkgruppe, må du tilordne den til minst ett firma. Du kan deretter opprette rapport-, rad-, kolonne- og rapporteringstredefinisjoner og lagre dem i byggeblokkgruppen. Du må lukke alle byggeblokker før du starter fremgangsmåten nedenfor.
-1.  På **Firma**-menyen i Rapportutforming klikker du **Firmaer**.
-2.  Velg firmaet du vil tilordne en byggeblokkgruppe for, i dialogboksen **Firmaer**.
-3.  Klikk **Endre**.
-4.  I dialogboksen **Endre firma**, i feltet **Byggeblokkgruppe**, velger du byggeblokkgruppen å tilordne til firmaet, eller klikker **Ny** for å opprette en ny byggeblokkgruppe.
-5.  Klikk **OK** for å tilordne byggeblokkgruppen.
-6.  Klikk **Lukk** for å lukke dialogboksen **Firmaer**. Byggeblokkgruppen du valgte, er nå tilordnet til firmaet. Nå vil alle nyopprettede raddefinisjoner, kolonnedefinisjoner og så videre, være en del av byggeblokkgruppen som er tilordnet dette firmaet. Du kan også importere en TDBX-fil eller rapport fra et annet system.
-
-### <a name="view-a-building-block-group"></a> Vise en byggeblokkgruppe
-
-Når en byggeblokkgruppen er opprettet og brukes, kan du vise alle byggeblokker som er tilordnet til den. Du kan også eksportere eller importere en byggeblokkgruppe og utføre tilleggsvedlikehold på byggeblokkgrupper.
-1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
+Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan også eksportere eller importere en byggeblokkgruppe.
+1.  Klikk **Byggeblokkgrupper** på **Firma**-menyen i Rapportutforming.
 2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokken som skal vises.
 3.  Klikk **Vis** for å åpne dialogboksen **Vis byggeblokkgruppe**, der du kan vise innholdet i byggeblokkgruppen.
-4.  Klikk **Lukk** for å lukke dialogboksen.
+4.  Klikk **Lukk** for å lukke dialogboksene.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Lagre en byggeblokkgruppe med et nytt navn
+### <a name="export-a-building-block-group"></a>Eksportere en byggeblokkgruppe
 
-Du kan lagre en eksisterende byggeblokkgruppe med et nytt navn. Du kan deretter endre den nye byggeblokkgruppen uten å endre den opprinnelige byggeblokkgruppen.
-1.  Klikk **Byggeblokkgrupper** på **Firma**-menyen i Rapportutforming.
-2.  I dialogboksen **Byggeblokkgrupper** velger du byggeblokkgruppe som skal lagres med et nytt navn.
-3.  Klikk **Lagre som**.
-4.  Angi et nytt navn og en beskrivelse for byggeblokkgruppen.
-5.  Klikk **OK**. Den nye byggeblokkgruppen vises i dialogboksen **Byggeblokkgrupper**.
-
-### <a name="export-a-building-block-group"></a> Eksportere en byggeblokkgruppe
-
-Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom byggeblokkgrupper eller Dynamics 365 for Finance and Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
+Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom Finance and Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
 2.  Velg byggeblokkgruppen som skal eksporteres, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Eksporter**.
 3.  I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
@@ -118,7 +94,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 
 ### <a name="import-a-building-block-group"></a> Importere en byggeblokkgruppe
 
-Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe, eller du kan opprette en ny byggeblokkgruppe for dataene. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonssettene.
+Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonssettene.
 1.  På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
 2.  Velg byggeblokken som en byggeblokkgruppe skal importeres til, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Importer**.
 3.  Velg byggeblokkgruppen som skal importeres, i dialogboksen **Åpne**, og klikk deretter **Åpne**.

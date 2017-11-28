@@ -3,7 +3,7 @@ title: Mva-rapport for Norge
 description: "Dette emnet forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge."
 author: epodkolz
 ms.author: epodkolz
-ms.date: 06/16/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: d82c9970605659e8873e728dc9919f23052f1788
+ms.sourcegitcommit: 1dda58b0f04df76b465b796cf2f125607444890a
+ms.openlocfilehash: f7357133cbd565bbbad1c8fbed40b75db589fac5
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
@@ -51,6 +51,8 @@ For brukere i juridiske enheter i Norge, kan den følgende mva-rapporteringskode
 | 72             | Innenlands omsetning med omvendt avgiftsplikt, beregnet avgift | **Use tax** |
 | 81             | Utførsel av varer og tjenester fritatt for merverdiavgift, basis               | **Avgiftsfritt salg** |
 | 91             | Innførsel av varer, og beregnet avgift, 25 %, basis                                    | **Avgiftspliktig import** |
+| 92             | Innførsel av varer, og beregnet avgift, 25 %, beregnet avgift                                | **Use tax**         |
+| 93             | Motregning for 92                                                                  | **Motregning av use tax**         |
 | 101            | Innførsel av varer, og beregnet avgift, 15 %, basis                                    | **Avgiftspliktig import** |
 | 102            | Innførsel av varer, og beregnet avgift, 15 %, beregnet avgift                                | **Use tax** |
 | 103            | Motregning for 102                                                                 | **Motregning av use tax** |

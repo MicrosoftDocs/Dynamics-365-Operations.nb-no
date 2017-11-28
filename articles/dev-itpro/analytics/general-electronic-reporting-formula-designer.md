@@ -1,7 +1,7 @@
 ---
 title: Formeldesigner i elektronisk rapportering
-description: "Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke Microsoft Excel-lignende formler for datatransformasjon for å oppfylle kravene for fullføringen og formatering for dette dokumentet. Ulike typer funksjoner som støttes: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner)."
-author: kfend
+description: Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER).
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 37c860599ad555846d11711e9f3cfb29c599131e
-ms.openlocfilehash: 7704b0545f4264be1f844ed6ad9e4b44df0c4ef8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -593,11 +593,12 @@ Her er formelen som kan utformes: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &q
 <td>GETENUMVALUEBYNAME (bane til kilde for opplistingsdata, tekst i etikett for opplistingsverdi)</td>
 <td>Returnerer en verdi for en bestemt kilde for opplistingsdata med angitt tekst for denne etiketten for opplisting.</td>
 <td>Følgende eksempel viser opplistingen ReportDirection i en datamodell. Legg merke til at etiketter er definert for opplistingsverdier.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Følgende eksempler viser:
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+<p>Følgende eksempler viser:</p>
 <ul><li>Modellopplisting <strong>ReportDirection</strong> satt inn i en rapport som en datakilde <strong>$Direction</strong></li>
 <li>ER-uttrykk <strong>$IsArrivals</strong> utformet for å bruke modellopplisting som parameter for denne funksjonen. Verdien av uttrykket er <strong>SANN</strong>.
-
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></li></ul></td>
+</li></ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>

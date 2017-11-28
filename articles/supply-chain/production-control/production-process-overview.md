@@ -1,9 +1,9 @@
 ---
-title: Oversikt over produksjonsprosessen
-description: Denne artikkelen gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
+title: Oversikt over produksjonsprosess
+description: Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="production-process-overview"></a>Oversikt over produksjonsprosessen
+# <a name="production-process-overview"></a>Oversikt over produksjonsprosess
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden. 
+Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden. 
 
 Produksjonen av produkter, en prosess som også er kjent som produksjonens livssyklus, følger bestemte fremgangsmåter som er nødvendige for å fullføre produksjonen av en vare. Livssyklusen begynner med opprettelsen av produksjonsordren, partiordren eller Kanban. Den avsluttes med en ferdig, produsert vare som er klar for kunden eller en annen fase i produksjonen. Hvert trinn i livssyklusen krever ulike typer informasjon for å fullføre prosessen. Når hvert trinn fullføres, vil produksjonsordren, partiordren eller Kanban vise en endring i produksjonsstatusen. Ulike typer produkter krever forskjellige produksjonsprosesser.  
 

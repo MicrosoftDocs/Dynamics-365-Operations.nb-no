@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,9 +36,8 @@ Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende be
 Du kan definere kundegrupper, kunder, posteringsprofiler, ulike betalingsalternativer, rentenotaer, purringer, provisjoner, parametere som angår kunder, tillegg, leveringer og mål, veksler og andre typer informasjon om kunder og kreditt og innkreving.
 Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kunder og Kreditt og innkreving. Tabelloppføringene er organisert etter oppgave og deretter alfabetisk etter sidenavn.
 
-| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**          |
-|--------------------------------------------------------------------------------------------------|
-| For enkelte av sidene i tabellen må du oppgi informasjon eller parameterinnstillinger for at du skal kunne navigere til dem. |
+> [!NOTE]
+> Du kan ikke navigere til enkelte sider i følgende tabell med mindre data eller parameteren er lagt inn i andre sider.
 
 | Oppgave                                                 | Sidenavn                            | Bruk                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

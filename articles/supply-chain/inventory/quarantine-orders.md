@@ -1,9 +1,9 @@
 ---
 title: Karanteneordrer
-description: "Denne artikkelen beskriver hvordan karanteneordrer brukes til å blokkere beholdning."
+description: "Dette emnet beskriver hvordan karanteneordrer brukes til å blokkere beholdning."
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 17dde4a4e3380beb98eeb71c719fb898b40a94f7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 515f14e72137f7299093cc6e75cb8e6eec2893fb
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,11 +31,11 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan karanteneordrer brukes til å blokkere beholdning.
+Dette emnet beskriver hvordan karanteneordrer brukes til å blokkere beholdning.
 
 Karanteneordrer kan brukes til å blokkere lager. Du kan for eksempel sette varer i karantene av kvalitetskontrollgrunner. Beholdning som har blitt satt i karantene overføres til et karantenelager. **Obs!** Hvis du bruker avanserte lagerstyringsprosesser (i Lagerstyring), brukes behandling av karanteneordrer bare for retur av salgsordrer.
 
-## <a name="quarantine-onhand-inventory-items"></a>Sette lagerbeholdningsvarer i karantene
+## <a name="quarantine-on-hand-inventory-items"></a>Sette lagerbeholdningsvarer i karantene
 Når du setter varer i karantene, kan du opprette karanteneordrene manuelt eller konfigurere systemet til å opprette karanteneordrene automatisk under innkommende behandling. Du kan opprette karanteneordrer automatisk ved å velge **Karantenestyring** i kategorien **Beholdningspolicyer** på siden **Varemodellgrupper**. Du må også angi et standard karantenelager i feltet **Karantenelager** for de mottakende lagrene. Når den fysiske lagerbeholdningen er registrert i en bestilling eller produksjonsordre, flyttes varer i karantene automatisk til et karantenelager i Microsoft Dynamics 365 for Finance and Operations. Denne bevegelsen oppstår fordi statusen for karanteneordren er endret til **Startet**. Når du opprette karanteneordrer manuelt, trenger ikke den gjeldende varen være definert for karantenestyring i den tilknyttede varemodellgruppen. For denne prosessen må du angi lagerbeholdningen som skal være satt i karantene, og karantenelageret som skal brukes. Du kan bruke karanteneordrestatusene til å planlegge prosessen.
 
 ## <a name="quarantine-order-statuses"></a>Statuser for karanteneordrer

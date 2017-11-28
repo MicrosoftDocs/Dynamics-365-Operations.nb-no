@@ -1,9 +1,9 @@
 ---
 title: Direkte utligning med fysisk verdi og merking
-description: 
+description: "Avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt, der avganger fra lageret beregnes ut fra gjennomsnittsverdien for varene som mottas i lageret under lagerets periodeavslutning, pluss all lagerbeholdning fra den forrige perioden."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c9db625e5af77b8f5d1569e35ce2d4c20e5be646
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
-
+Avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt, der avganger fra lageret beregnes ut fra gjennomsnittsverdien for varene som mottas i lageret under lagerets periodeavslutning, pluss all lagerbeholdning fra den forrige perioden.
 
 Når du kjører en lageravslutning, utlignes alle kvitteringene mot en virtuell avgang, som holder totalt mottatt antall og verdi. Denne virtuelle avgangen har et korresponderende virtuelt mottak fra der avgangene utlignes. På denne måten får alle avgangene samme gjennomsnittskostnad. Virtuell avgangen og mottak kan vises som en virtuell overføring, kalt lageravslutningsoverføring med avveid gjennomsnitt.
 

@@ -1,7 +1,7 @@
 ---
 title: BOM-beregninger
 description: Beregningene av kostnadsakkumulering og salgspris kalles stykklisteberegninger (BOM), og du innleder dem fra Beregninger-siden. Dette emnet gir informasjon om BOM-beregninger.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ Når du bruker en påslagstilnærming som tar høyde for fastsatt/beregnet fortj
 -   **Stykklisteberegning for en vare og angitt kostnadsversjon** − Stykklisteberegningen genererer en ventende salgsprispost i kostnadsversjonen. Denne salgsprisposten angir startpunktet for visning av beregningsdetaljene (for eksempel på siden **Beregn varekostnad**). Salgsprisposten fungerer først og fremst som referanseinformasjon, og den brukes ikke som grunnlag for en salgspris på salgsordrer.
 -   **Ordrespesifikk stykklisteberegning** − Det brukes en variasjon av **Stykklisteberegning**-siden når det gjelder varelinjer for salgsordrer, salgstilbud eller serviceordrer. En ordrespesifikk stykklisteberegning genererer ikke en kostnadspost innen en kostnadsversjon. I stedet genererer den en beregningspost som vises på siden **Resultater for stykklisteberegning**. Denne beregningsposten angir startpunktet for visning av beregningsdetaljene (for eksempel på siden **Beregn varekostnad**). Informasjon om en valgt beregningspost kan overføres til den opprinnelige linjevaren. Den beregnede salgsprisen kan for eksempel overføres til en salgsordrelinjevare.
 
-## <a name="orderspecific-bom-calculations"></a>Ordrespesifikke stykklisteberegninger
+## <a name="order-specific-bom-calculations"></a>Ordrespesifikke stykklisteberegninger
 En ordrespesifikk stykklisteberegning er en variant av en stykklisteberegning for en produsert vare. Den ordrespesifikke stykklisteberegningen utføres i sammenheng med en salgsordre, et salgstilbud eller en serviceordrelinjevare. En ordrespesifikk stykklisteberegning genererer en beregningspost som vises på siden **Resultater for stykklisteberegning**. Beregningsposten inneholder en beregnet vekt, en beregnet kostnad som bygger på aktive kostnadsposter, og en beregnet salgspris. Beregningsposten som hver ordrespesifikke stykklisteberegning for en vare genererer på siden **Resultater for stykklisteberegning**, identifiseres entydig av et beregningsnummer. Resultatene fra en beregningspost kan eventuelt overføres til det opprinnelige linjeelementet. Det er to forskjeller på en ordrespesifikk stykklisteberegning og en stykklisteberegning for en produsert vare:
 
 -   En ordrespesifikk stykklisteberegning genererer ikke en post for varekost innenfor en etterkalkuleringsversjon. Dette betyr at policyene for stykklisteberegning ikke gjelder når en post for varekost opprettes eller når en kostnadspost overskrives.

@@ -1,9 +1,9 @@
 --- 
 title: "Beregne avskrivning av anleggsmidler på tvers av juridiske enheter"
-description: "Bruk denne fremgangsmåten for å endre anleggsmiddelgruppen som et anleggsmiddel er tilordnet til."
+description: "Denne prosedyren viser deg hvordan du definerer og kjører avskrivningsprosessen for flere juridiske enheter."
 author: saraschi2
 manager: AnnBe
-ms.date: 10/11/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,27 +16,40 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 91f3f4a625d5d4b47bbe9d4e2d0ca0ed8da9dcd6
+ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
+ms.openlocfilehash: 4c45da124136b7fecb916d2ff9098c8ffeff6cb1
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>Beregne avskrivning av anleggsmidler på tvers av juridiske enheter
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk denne fremgangsmåten for å endre anleggsmiddelgruppen som et anleggsmiddel er tilordnet til. Anleggsmidler må tilordnes den riktige anleggsmiddelgruppen. Anleggsmiddelgruppen brukes når du oppretter forespørsler og rapporter, definerer nye anleggsmidler, og integrerer finans og posterer anleggsmiddeltransaksjoner til riktige finanskontoer.
+Avskrivning av anleggsmidler kan kjøres på tvers av juridiske enheter i ett enkelt trinn. Denne prosedyren viser deg hvordan du definerer og kjører prosessen for flere juridiske enheter. Den bruker regnskapsførerrollen.  
 
 Denne registreringen bruker demonstrasjonsfirmaet USMF.
 
-1. Gå til Anleggsmidler > Anleggsmidler > Anleggsmidler.
-2. Velg anleggsmiddelet som anleggsmiddelgruppen skal endres for.
-3. Klikk Endre anleggsmiddelgruppe.
-4. Angi eller velg en verdi i Ny gruppe-feltet.
-5. Sett alternativet Nytt anleggsmiddelnummer til Ja for å tilordne et anleggsmiddelnummer til det valgte anleggsmidlet.
-    * Feltet Anleggsmiddelnummer blir tilgjengelig når alternativet for Nytt anleggsmiddelnummer er satt til Ja.   Hvis automatisk nummerering er definert for anleggsmidler, viser dette feltet det neste tilgjengelige anleggsmiddelnummeret. Du kan endre nummeret.   Hvis manuell nummerering er definert for anleggsmidler, er dette feltet tomt og du må angi det nye anleggsmiddelnummeret.  
-6. Klikk OK.
-7. Klikk Ja.
 
+Underoppgave trinn (16): Definer journaler for avskrivningskjøring på tvers av firmaet. 
+
+1. Du må først definere journalene som skal brukes i avskrivningskjøring på tvers av firmaet for hver juridiske enhet. Gå til Anleggsmidler > Oppsett > Parametere for anleggsmidler. 
+2. Vis delen Forslag til anleggsmidler. 
+3. Opprette en post med journalnavnet som skal brukes for hvert posteringslag i den juridiske enheten. Hvis tablåer ikke posterer til finans, skal Ingen postering-laget velges med tilhørende journal. Klikk Legg til. 
+4. Angi eller velg en verdi i Posteringslag-feltet. 
+5. Angi eller velg en verdi i feltet Journalnavn. 
+6. Gjenta journaloppsettet på siden Parametere for anleggsmidler i hver juridiske enhet. 
+
+Underoppgave: Beregne avskrivining.
+
+1. Bruk siden Opprett avskrivningsforslag til å starte avskrivning på tvers av juridiske enheter. Gå til Anleggsmidler > Journaloppføringer > Opprett avskrivningsforslag. 
+2. Angi eller velg en verdi i Posteringslag-feltet. 
+3. Journalnavnet brukes som standard fra Parametere for anleggsmidler. Det kan endres her for gjeldende juridiske enhet. 
+4. Angi en dato i Til dato-feltet. 
+5. Velg de juridiske enhetene som skal inkluderes i avskrivningskjøringen. Bare juridiske enheter med journaler som er definert for Forslag til anleggsmidler på siden Parametere for anleggsmidler vises i listen. 
+6. Når aktivert, vil alternativet Poster journaler automatisk postere avskrivningsjournalene når de opprettes. Når det ikke er merket, vil journalene bli opprettet, men ikke postert, slik at du kan se gjennom detaljene før postering. Velg Ja i feltet Poster journaler. 
+7. Filtreringsfeltene inkluderer alle anleggsmidler, grupper og tablåer for de juridiske enhetene som er valgt for denne avskrivningskjøringen. 
+8. Alternativet Satsvis behandling er aktivert som standard. Når dette alternativet er aktivert, vil oppretting og postering av avskrivningsjournalen kjøres i bakgrunnen. 
+9. Klikk Opprett journal. 
+10. Du må vise avskrivningsjournalene som er opprettet i de respektive juridiske enhetene. Gå til Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal.
 

@@ -1,9 +1,9 @@
 ---
 title: "Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører"
-description: "Denne artikkelen inneholder informasjon om blandet modus-planlegging. I blandet modus-planlegging kan du utforme forsyningskjeden etter materialflyten. Microsoft Dynamics 365 for Finance and Operations sørger for at materialflyten følger modellene dine, uavhengig av forsyningspolicyen som er valgt (kanbaner, produksjonsordrer, bestillinger, partiordrer eller overføringsordrer)."
+description: Dette emnet inneholder informasjon om blandet modus-planlegging.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder informasjon om blandet modus-planlegging. I blandet modus-planlegging kan du utforme forsyningskjeden etter materialflyten. Microsoft Dynamics 365 for Finance and Operations sørger for at materialflyten følger modellene dine, uavhengig av forsyningspolicyen som er valgt (kanbaner, produksjonsordrer, bestillinger, partiordrer eller overføringsordrer). 
+Dette emnet inneholder informasjon om blandet modus-planlegging. I blandet modus-planlegging kan du utforme forsyningskjeden etter materialflyten. Microsoft Dynamics 365 for Finance and Operations sørger for at materialflyten følger modellene dine, uavhengig av forsyningspolicyen som er valgt (kanbaner, produksjonsordrer, bestillinger, partiordrer eller overføringsordrer). 
 
 Du kan velge den overordnede strategien for å forsyne et produkt, uavhengig av produktstrukturen.  
 
@@ -59,7 +59,7 @@ Vanligvis opprettes Kanbaner ikke for fremtidige datoer, fordi en kanban har en 
 
 Den samme logikken gjelder for alle andre typer forsyningspolicyer. Langsiktig materialplanlegging er derfor basert på den samme logikken som du forventer å kjøre med de faktiske ordrene etter produksjon og forsyning er godkjent.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Policy for materialtildeling mellom forsyning – ressursforbruk i stykklister
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>Policy for materialtildeling mellom forsyning – ressursforbruk i stykklister
 Ressursforbruk er en viktig funksjonalitet. Med ressursforbruk kan et lager for plukking av materialer velges dynamisk basert på forsyningspolicyen (ordretype), og vedlikehold av stamdata blir enklere.  
 
 Ressursforbruk krever at lageret som materialer plukkes fra, tilordnes basert på måten produktet forsynes på. Ved kjøretid finner med andre ord systemet ressursene som skal brukes for produksjon. Basert på disse ressursene, finner systemet deretter plukklageret.  

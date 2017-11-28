@@ -1,9 +1,9 @@
 ---
 title: Automatisk utligning og prioritering
-description: "Denne artikkelen beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet."
+description: "Dette emnet beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
+Dette emnet beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
 
 Du har to alternativer når du utligner betalinger med fakturaer og andre transaksjoner. Du kan manuelt velge hvilke transaksjoner som skal utlignes, eller Microsoft Dynamics 365 for Finance and Operations kan velge transaksjonene automatisk ved hjelp av funksjonen for automatisk utligning. Du kan også tilpasse hvordan automatiske utligninger behandles ved hjelp av alternativet **Prioriter utligning**. Alle disse alternativene er en del av parameterne for utligning som er definert på **Kundeparametere**-siden. Måten transaksjoner utlignes på automatisk, kan variere, avhengig av hvilken metode du bruker for automatisk utligning. De følgende metodene er tilgjengelige:
 
@@ -50,7 +50,7 @@ Eksemplene på utligninger senere i denne artikkelen, er basert på følgende tr
 | Faktura 3     | 15. oktober  | 500,00 | 2 % 14/netto 30        | 29. oktober         |                                                                                                                                                                                               |
 | Rentenota | 15. oktober  | 7,00   |                     |                    | Denne rentenotaen er for faktura 1 og faktura 2. Beløpet beregnes som 2 prosent rente på beløp som er 30 eller flere dager over fristen. Eksempel: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Brukerdefinert utligningsprioritet
+## <a name="user-defined-settlement-priority"></a>Brukerdefinert utligningsprioritet
 Hvis du setter **Bruk prioritet for automatiske utligninger** til **Ja** på **Kundeparametere**-siden, brukes utligningsprioriteten som du definerer på **Utligningsprioritet**-siden når transaksjoner er valgt for automatisk utligning. Følgende utligningsprioritet er definert i dette eksemplet:
 
 1.  transaksjonstype

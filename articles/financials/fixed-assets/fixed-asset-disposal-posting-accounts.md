@@ -1,6 +1,6 @@
 ---
-title: Posteringskontoer for avhending av anleggsmidler
-description: "Denne artikkelen forklarer hvordan du setter opp bokføringskontoer i økonomimodulen for avhending av anleggsmidler."
+title: Posteringskontoer for avhending av anleggsmiddel
+description: "Dette emnet forklarer hvordan du setter opp bokføringskontoer i økonomimodulen for avhending av anleggsmidler."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3461
 ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0129eae177d44100b09c2b7bce553dd5bde5ce0c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bfed7657649f938c3d436468891d40d4194b555d
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="fixed-asset-disposal-posting-accounts"></a>Posteringskontoer for avhending av anleggsmidler
+# <a name="fixed-asset-disposal-posting-accounts"></a>Posteringskontoer for avhending av anleggsmiddel
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen forklarer hvordan du setter opp bokføringskontoer i økonomimodulen for avhending av anleggsmidler.
+Dette emnet forklarer hvordan du setter opp bokføringskontoer i økonomimodulen for avhending av anleggsmidler.
 
 På siden Posteringsprofiler for anleggsmidler i hurtigkategorien Finanskontoer velger du Avhendingssalg og salg og Avhending svinn for å konfigurere postering til finansmodulen.
 

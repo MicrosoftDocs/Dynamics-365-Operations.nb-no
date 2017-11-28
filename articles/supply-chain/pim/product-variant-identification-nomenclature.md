@@ -1,9 +1,9 @@
 ---
 title: Terminologi for produktvariantnumre og navn
-description: "Dette emnet beskriver hvordan du kan definere en produktnummerterminologi for å erstatte det faste formatet [Produktstandardnummer - Konfigurasjon - Størrelse - Farge - Stil]. Den nye terminologien har et bestemt format som inkluderer produktstandardnummer, aktive produktdimensjoner og skilletegn for tekst du velger. Du kan også opprette en terminologi for produktnavn. Du kan også bygge en terminologi for å identifisere konfigurasjonene som er opprettet av den restriksjonsbaserte produktkonfiguratoren. Disse terminologiene kan inneholde attributtene du velger."
+description: "Dette emnet beskriver hvordan du kan definere en produktnummerterminologi for å erstatte det faste formatet [Produktstandardnummer - Konfigurasjon - Størrelse - Farge - Stil]."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ En T-skjorte (TS1234) er produsert i tre størrelser (S, M, L), fire farger (rø
 
 I dette tilfellet er produktvariantnummeret for en rød, liten polo-T-skjorte: TS1234-Rød-Small-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Terminologi for restriksjonsbaserte konfigurasjoner
+## <a name="nomenclature-of-constraint-based-configurations"></a>Terminologi for restriksjonsbaserte konfigurasjoner
 For restriksjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi**:
 
 -   Nummerserieverdi
@@ -92,7 +92,7 @@ Du kan opprette en konfigurasjonsterminologi med følgende segmenter:
 
 I dette tilfellet blir konfigurasjons-ID-en for tremateriale som har en lengde på 78, WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Terminologi for dimensjonsbasert konfigurasjoner
+## <a name="nomenclature-of-dimension-based-configurations"></a>Terminologi for dimensjonsbasert konfigurasjoner
 For dimensjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi**:
 
 -   Nummerserieverdi

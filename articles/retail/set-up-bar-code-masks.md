@@ -19,10 +19,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 671155cbf76c1570374a1602cd6590117cffa28e
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e61524feab1b06f4a863a140b883bf8fe49af1e2
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -78,7 +78,7 @@ Eksempel: Hvis du vil opprette en strekkodemaske med maske-ID Produkt, gjør du 
 Strekkodemasker må tilordnes til strekkoder før de kan brukes. Vi fortsetter med det forrige eksemplet, og gjør følgende for å tilordne strekkodemasken til en strekkode:
 
 1.  Gå til **Organisasjonsstyring** &gt; **Oppsett** &gt; **Strekkoder**. Klikk på **Ny** for å opprette en ny strekkode.
-2.  Angi verdier i feltet **Strekkodeoppsett****** og **Oppsett**.
+2.  Angi verdier i feltet **Strekkodeoppsett** og **Oppsett**.
 3.  I **Generelt**-delen i feltet **Strekkodetype** velger du Code 39. I **Maske-****ID**-feltet velger du Produkt-masken du opprettet tidligere.
 4.  Under **Størrelse** skriver du inn 12.
 5.  Klikk **Lagre**.

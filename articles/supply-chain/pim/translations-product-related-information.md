@@ -3,7 +3,7 @@ title: "Vanlige spørsmål for produktrelaterte oversettelser"
 description: Dette emnet beskriver hvordan du administrerer oversettelser for produkter, produktdimensjonsverdier og produktattributter.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ Du kan oversette den produktrelaterte informasjonen til et annet språk som er t
 ## <a name="where-can-i-view-the-translated-information"></a>Hvor kan jeg vise den oversatte informasjonen?
 Du kan vise oversettelser av produktrelatert informasjon i et eksternt kildedokument, for eksempel en faktura, som bruker et språk der oversettelsene som er tilgjengelige.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hvordan oppretter jeg oversettelser for produktrelatert informasjon?
+## <a name="how-do-i-create-translations-for-product-related-information"></a>Hvordan oppretter jeg oversettelser for produktrelatert informasjon?
 Hvis du vil opprette transaksjoner for et produkt, gjør du følgende:
 1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
 2.  Velg et produkt, og i handlingsruten i **Språk**-gruppen klikker du på **Oversettelser**.
@@ -117,14 +117,14 @@ En dimensjonsverdi som er tilknyttet et produkt gjennom en dimensjonsvariantgrup
 Hvis du vil opprette en dimensjonsverdigruppe, gjør du følgende:
 1.  Klikk på **Behandling av produktinformasjon** &gt; **Oppsett** &gt; **Variantgrupper**.
 2.  Velg **Størrelse** **grupper**, **Fargegrupper** eller **Stilgrupper**.
-3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelsesgruppe******, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
-4.  På siden **Størrelsegruppelinjer******, **Fargegruppelinjer********** eller **Stilgruppelinjer** klikker du på **Ny**, og deretter oppretter du størrelsene, fargene og stilene for gruppene.
+3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelsesgruppe**, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
+4.  På siden **Størrelsegruppelinjer**, **Fargegruppelinjer** eller **Stilgruppelinjer** klikker du på **Ny**, og deretter oppretter du størrelsene, fargene og stilene for gruppene.
 
 Hvis du vil administrere oversettelser for verdier i en dimensjonsverdigruppe, gjør du følgende:
 1.  Følg den forrige fremgangsmåten for å opprette en dimensjonsverdigruppe for åpne siden **Størrelsesgruppelinjer**, **Fargegruppelinjer** eller **Stilgruppelinjer**.
 2.  Klikk **Tekstoversettelse**. På siden **Tekstoversettelse**, i gruppen **Oversatt tekst**, skriver du inn oversettelsene i feltene **Navn** og **Beskrivelse**.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Når kan oversettelser av produktrelatert informasjon håndteres?
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>Når kan oversettelser av produktrelatert informasjon håndteres?
 Oversettelser av produktrelatert informasjon kan håndteres når som helst. Når oversettelser oppdateres for en dimensjonsverdi som er knyttet til et produkt, oppdateres produktinformasjonen, uavhengig av om produktet har transaksjoner.
 
 

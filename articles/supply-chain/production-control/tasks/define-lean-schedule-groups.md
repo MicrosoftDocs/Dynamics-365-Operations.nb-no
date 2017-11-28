@@ -3,7 +3,7 @@ title: Definere lean-planleggingsgrupper
 description: "Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen."
 author: cvocph
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a5bc20c0a9e2396365caebeb3751d2090e4575a4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3e07fa270b47be3527c572dc53ca30a7bcde5ba6
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="define-lean-schedule-groups"></a>Definere lean-planleggingsgrupper
@@ -50,7 +50,7 @@ Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-
 
 ## <a name="associate-item-allocation-key"></a>Tilknytte varefordelingsnøkkel
 1. Tilknytte en varefordelingsnøkkel
-    * Legg til en tilknytning i en varetildelingsnøkkel ved hjelp av varerelasjonstypen Gruppe.   Legg merke til at for denne prosessen må du ha en en varefordelingsnøkkel for prognose definert i dataene.  
+    * Legg til en tilknytning i en varetildelingsnøkkel ved hjelp av varerelasjonstypen Gruppe.   Legg merke til at for denne prosessen må du ha en varefordelingsnøkkel for prognose definert i dataene.  
 2. Velg Gruppe i feltet Type varerelasjon
 3. Klikk rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.
 4. Klikk koblingen i den valgte raden i listen.

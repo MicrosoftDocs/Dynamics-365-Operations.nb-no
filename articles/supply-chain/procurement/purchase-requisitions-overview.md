@@ -1,9 +1,9 @@
 ---
 title: "Oversikt over innkjøpsrekvisisjoner"
-description: "Denne artikkelen beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha."
+description: "Dette emnet beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha.
+Dette emnet beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha.
 
 Avhengig av oppsettet for organisasjonen kan du opprette innkjøpsrekvisisjoner for produkter som organisasjonen din bruker. En innkjøpsrekvisisjon er et internt dokument som gir innkjøpsavdelingen autorisasjon til å kjøpe inn varer eller tjenester.  
 
@@ -70,7 +70,7 @@ Den overordnede statusen for en innkjøpsrekvisisjon bestemmes av statusen for i
 <tr class="odd">
 <td>Utkast</td>
 <td>Utkast</td>
-<td>Innkjøpsrekvisisjonen og innkjøpsrekvisisjonslinjen er opprettet, men de er ikke sendt til gjennomgang. Innkjøpsrekvisisjoner og innkjøpsrekvisisjonslinjer som har statusen <strong>Utkast</strong> kan endres. En innkjøpsrekvisisjon eller innkjøpsrekvisisjonslinje har også statusen <strong>Utkast</strong> hvis den har blitt tilbakekalt, men ikke er sendt på nytt til gjennomgang. <strong>Obs!</strong> Du kan sende eller tilbakekalle en innkjøpsrekvisisjon på dokumentnivå. Du kan imidlertid ikke sende eller tilbakekalle en enkelt innkjøpsrekvisisjonslinje.</td>
+<td>Innkjøpsrekvisisjonen og innkjøpsrekvisisjonslinjen er opprettet, men de er ikke sendt til gjennomgang. Innkjøpsrekvisisjonener og alle innkjøpsrekvisisjonslinjer som har statusen <strong>Utkast</strong> kan endres. En innkjøpsrekvisisjon eller innkjøpsrekvisisjonslinjen har også statusen <strong>Utkast</strong> hvis den har blitt tilbakekalt, men ikke sendt på nytt til gjennomgang. <strong>Obs! </strong> Du kan sende eller hente frem en innkjøpsrekvisisjon på dokumentnivå. Du kan imidlertid ikke sende eller tilbakekalle en enkelt innkjøpsrekvisisjonslinje.</td>
 </tr>
 <tr class="even">
 <td>Til vurdering</td>

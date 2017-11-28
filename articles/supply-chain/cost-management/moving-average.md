@@ -1,9 +1,9 @@
 ---
 title: Glidende gjennomsnitt
-description: 
+description: "Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres. 
+
+Når du bruker glidende gjennomsnittet, støttes ikke lagerutligninger og lagermerking. Lagerlukking påvirker ikke produkter som har et glidende gjennomsnitt som lagermodellgruppen, og genererer ikke utligninger mellom transaksjonene.
 
 Følgende er forutsetninger når du bruker glidende gjennomsnittskostnad som etterkalkuleringsmetode.
+
 1.  På siden **Varemodellgrupper** kan du definere en varemodellgruppe som har glidende gjennomsnitt valgt i feltet **Lagermodell**. **Obs!** Som standard når det er merket av for glidende gjennomsnitt, velges også feltet **Poster aktuell beholdning** og **Poster økonomisk lager**. 
 
 2.  På siden **Postering**, tildel kontoene til **Prisdifferanse for glidende gjennomsnitt** og kontoene **Revaluering av kostnad for glidende gjennomsnitt** i kategorien **Lager**. Du bruker kontoen **Prisdifferanse for glidende gjennomsnitt** når kostnad må føres forholdsmessig. Dette skjer på grunn av en forskjell i kostnad mellom et kjøpsmottak og innkjøpsfakturaen og på grunn av en forskjell mellom det opprinnelige lagerantallet og den gjeldende beholdningsantallet. Bruk kontoen **Revaluering av kostnad for glidende gjennomsnitt** når du vil justere den glidende gjennomsnittskostnaden for et produkt til en ny enhetspris.
