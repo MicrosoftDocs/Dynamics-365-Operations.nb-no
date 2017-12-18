@@ -10,6 +10,7 @@
 ##### [Systemkrav for skydistribusjoner](get-started/system-requirements.md)
 ##### [Lokal distribusjon](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [Systemkrav for lokale distribusjoner](get-started/system-requirements-on-prem.md)
+##### [Lager for lokale distribusjoner](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Kjøpe Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,6 +21,7 @@
 #### [AX 2012-funksjoner som ble utsatt](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funksjoner som ikke er implementert i lokale distribusjoner](get-started/features-not-implemented-on-prem.md)
 #### [Livssykluspolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Platform update 12 (november 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (august 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition (juli 2017)](get-started/whats-new-application-July-2017-update.md)
@@ -42,6 +44,7 @@
 ##### [Oppgaveveiledninger, februar 2016](get-started/new-task-guides-available-february-2016.md)
 
 ### Utforske brukergrensesnittet
+#### [Tilgjengelighetsfunksjoner](get-started/accessibility-features.md)
 #### [Vanlige spørsmål om klientbrukergrensesnittet](get-started/client-faq.md)
 #### [Handlingssøk](get-started/action-search.md)
 #### [Avansert syntaks for filtrering og spørring](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Angi en brukers foretrukkede tidssone](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Forstå Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Få hjelp og støtte
+### Lese og kjøre dokumentasjonen
 #### [Oversikt over Hjelp](get-started/help-overview.md)
 #### [Koble til Hjelp](get-started/help-connect.md)
 #### [Vise og eksportere feltbeskrivelser](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Dataintegrering ved hjelp av Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Konfigurere et prospekt til kontanter-scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synkronisere produkter fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synkronisere kontoer fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synkronisere salgsordrehoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synkronisere salgsfakturahoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synkronisere produkter direkte fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synkronisere salgsordrehoder og -linjer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Beholde kontoer i Sales og synkronisere dem direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Beholde produkter i Finance and Operations og synkronisere dem til direkte til Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Beholde kontakter i Sales og synkronisere dem direkte til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synkronisere salgstilbud direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synkronisere salgsordrer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synkronisere salgsordrer direkte mellom Sales og Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synkronisere salgsfaktura direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Beholde kontoer i Sales og synkronisere dem til Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Beholde kontakter i Sales og synkronisere dem til Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Beholde produkter i Finance and Operations og synkronisere dem til Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Opprette salgstilbud i Sales og synkronisere dem til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Opprette salgsordrer i Finance and Operations og synkronisere dem til Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Opprette salgsfakturaer i Finance and Operations og synkronisere dem til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Bruke eksterne webtjenester](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Svartelisterapport](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Kompetansedato](../financials/localizations/emea-ita-competence-date.md)
 ##### [Avskrivning av anleggsmidler](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Bekreftelse på følgeseddeldato på fakturaer](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Dele opp betaling for fakturaer som er utstedt til offentlig administrasjon](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1347,7 +1355,29 @@
 ### [Spore glidende gjennomsnitt av kostpris per lagerdimensjon](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Hovedplanlegging
+## [Hovedplanlegging](../supply-chain/master-planning/master-planning-home-page.md)
+### [Hovedplan](../supply-chain/master-planning/master-plans.md)
+#### [Dekningsinnstillinger](../supply-chain/master-planning/coverage-settings.md)
+#### [Definere dekningsregler for varer (oppgaveveiledning)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Generere en begrenset plan (oppgaveveiledning)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Opprette en materialplan for koprodukter (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Vedlikeholde planlagte ordrer](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Håndtere forsinkelser](../supply-chain/master-planning/delays.md)
+#### [Spore en nedbryting](../supply-chain/master-planning/trace-explosion.md)
+#### [Handlingsmeldinger](../supply-chain/master-planning/action-messages.md)
+#### [Overvåke en kjøring av hovedplanlegging (oppgaveveiledning)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Opprette en tidsplan for et område (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Opprette en plan for et område (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Hovedplaner og multisite-funksjonalitet](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Planlegge for områdedekning, obligatorisk lager](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Planlegge for områdedekning, ikke obligatorisk lager](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Planlegge for område- og lagerdekning, obligatorisk lager](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Planlegge for område- og lagerdekning, ikke obligatorisk lager](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Fastslå stykklisteversjonen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Nedbryting av en stykklisteversjon](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Opprette en konsernintern plan (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Vise utgående planlagt konsernintern etterspørsel (oppgaveveiledning)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Samarbeide med kunder for intern forsyningskjede (oppgaveveiledning)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Behovsprognose](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Definere en behovsprognose](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Importere historiske data for behovsprognoser](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Reduksjonsnøkler](../supply-chain/master-planning/reduction-keys.md)
 #### [Opprette en basislinjeprognose (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Endre en behovsprognose manuelt (oppgaveveiledning)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Hovedplan](../supply-chain/master-planning/master-plans.md)
-#### [Dekningsinnstillinger](../supply-chain/master-planning/coverage-settings.md)
-#### [Vedlikeholde planlagte ordrer](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Forsinkelser](../supply-chain/master-planning/delays.md)
-#### [Handlingsmeldinger](../supply-chain/master-planning/action-messages.md)
-#### [Spore en nedbryting](../supply-chain/master-planning/trace-explosion.md)
-#### [Hovedplaner og multisite-funksjonalitet](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Planlegge for områdedekning, obligatorisk lager](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Planlegge for områdedekning, ikke obligatorisk lager](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Planlegge for område- og lagerdekning, obligatorisk lager](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Planlegge for område- og lagerdekning, ikke obligatorisk lager](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Fastslå stykklisteversjonen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Nedbryting av en stykklisteversjon](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Overvåke en kjøring av hovedplanlegging (oppgaveveiledning)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Definere dekningsregler for varer (oppgaveveiledning)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Opprette en plan for et område (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Opprette en tidsplan for et område (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Generere en begrenset plan (oppgaveveiledning)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Opprette en konsernintern plan (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Opprette en materialplan for koprodukter (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Vise utgående planlagt konsernintern etterspørsel (oppgaveveiledning)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Samarbeide med kunder for intern forsyningskjede (oppgaveveiledning)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobilapp](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [Definere en arbeidsmal for bestillinger](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Utvikling og administrasjon](../dev-itpro/toc.md)
+# [Utvikling og administrasjon for Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
