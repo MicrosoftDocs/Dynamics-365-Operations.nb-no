@@ -3,7 +3,7 @@ title: "Kjøps- og forbruksanalyse-innhold for Power BI"
 description: "Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Dette emnet beskriver hva som er inkludert i **Kjøps- og forbruksanalyse**-innh
 Innholdet bruker kjøpstransaksjonsdata, og gir både en aggregert visning av kjøpstall for hele selskapet og en analyse av kjøpsutgifter etter leverandør og vare. Rapportene uthever endringer i kjøpsutgifter over tid. Derfor kan de brukes til å varsle ledere om positive og negative utgiftstrender for individuelle leverandører og produkter. I tillegg viser diagrammer kjøpsutgifter for forskjellige innkjøpskategorier og leverandørgrupper. Kategori- og distriktsledere kan derfor bruke diagrammene til å identifisere endringer i forbruksatferd.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil **Kjøps- og forbruksanalyse** for Power BI-innholdet vises på siden **Kjøps- og forbruksanalyse** (**Innkjøp og sourcing** > **Forespørsler og rapporter** > **Prestasjonsanalyse for kjøp** > **Kjøps- og forbruksanalyse**). 
+Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av innkjøp og forbruk**-siden (**Innkjøp og leverandører** > **Forespørsler og rapporter** > **Analyse av innkjøpsytelse** > **Analyse av innkjøp og forbruk**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Kjøps- og forbruksanalyse**-innhold for Power BI inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene.

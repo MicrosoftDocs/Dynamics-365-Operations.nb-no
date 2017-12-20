@@ -3,7 +3,7 @@ title: Bruke Excel-tillegget
 description: "Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics Office-tillegget for Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
-ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
+ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
+ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -104,17 +104,6 @@ Du kan bruke utformingen til å justere kolonnene som automatisk legges til i re
 
 4. Hvis du vil bruke endringene for datakilden, velger du **Oppdater**. Velg deretter **Fullfør** for å avslutte utformingen.
 5. Hvis du har lagt til et felt (kolonne), velger du **Oppdater** for å trekke inn et oppdatert sett med data.
-
-## <a name="copy-environment-data"></a>Kopier miljødata
-Dataene som leses inn i arbeidsboken fra ett miljø kan kopieres til et annet miljø. Du kan imidlertid ikke bare endre nettadressen for tilkobling, fordi datahurtigbufferen i arbeidsboken vil fortsette å behandle dataene som eksisterende data. I stedet må du bruke funksjonen Kopier miljødata for å publisere dataene til et nytt miljø som nye data.
-
-1. Velg **Alternativer**-knappen (tannhjulsymbolet), og velg deretter **Kopier miljødata** i hurtigfanen **Datakobling**.
-2. Angi nettadressen for serveren for det nye miljøet.
-3. Velg **OK**, og velg deretter **Ja** for å bekrefte handlingen. Excel-tillegget starter på nytt og kobler til det nye miljøet. Eksisterende data i arbeidsboken behandles som nye data.
-
-    Når Excel-tillegget startes på nytt, vises en meldingsboks med informasjon om at arbeidsboken er i miljøkopieringsmodus.
-
-4. Hvis du vil kopiere dataene til det nye miljøet som nye data, velger du **Publiser**. Hvis du vil avbryte kopieringen av miljøet og se gjennom de eksisterende dataene i det nye miljøet, velger du **Oppdater**.
 
 ## <a name="troubleshooting"></a>Feilsøking
 Det finnes enkelte problemer som kan løses ved hjelp av noen enkle trinn.

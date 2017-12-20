@@ -3,7 +3,7 @@ title: Power BI-innhold om ansattutvikling
 description: "Dette emnet beskriver Power BI-innholdet om ansattutvikling. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6a1125d56239f4370d6219a93988d50d402045e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,7 +31,7 @@ Dette emnet beskriver Power BI-innholdet om **ansattutvikling**. Det forklarer h
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil du finne innholdspakken **Ansattutvikling** i Fellesskapsbiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og kobler den til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md).
+Du kan finne innholdspakken **Ansattutvikling** i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og kobler den til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Rapporter som er inkludert i Power BI-innholdet **Ansattutvikling**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.

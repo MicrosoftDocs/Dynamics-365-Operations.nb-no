@@ -3,7 +3,7 @@ title: Praksisleder for Power BI-innhold
 description: "Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Powe
 Alle beløp i innholdet vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil **Praksisleder** for Power BI-innholdet vises i **Prosjektledelsens** arbeidsområde.
+Power BI-innholdet **Praksisleder** vises i **Prosjektstyring**-arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 

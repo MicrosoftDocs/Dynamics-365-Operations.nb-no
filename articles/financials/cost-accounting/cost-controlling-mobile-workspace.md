@@ -3,7 +3,7 @@ title: "Mobilt arbeidsområde for kostnadskontroll"
 description: "Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aevengir
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53fea21edabf33271038f4d332893e9009d3fc8a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 5b57bf268ac9e91c98a0b8709061e695ebf482c6
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -78,8 +78,8 @@ Det mobile arbeidsområdet **Kostnadskontroll** har følgende handlinger, visnin
 ## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Kostnadskontroll**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
+Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Kostnadskontroll**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger.

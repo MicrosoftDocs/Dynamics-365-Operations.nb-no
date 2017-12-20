@@ -3,7 +3,7 @@ title: Resultat av salg og fortjeneste for Power BI-innhold
 description: "Dette emnet beskriver hva som er inkludert i Power BI-innholdet Resultat av salg og fortjeneste. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Fortjenesten kan analyseres på følgende måter:
 -   Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) vil **Resultat av salg og fortjeneste** Power Bi-innholdet vises på siden **Resultat av salg og fortjenesteytelse** (**Salg og markedsføring** > **Forespørsler og rapporter** > **Analyse av salgsytelse** > **Resultat av salg og fortjeneste**). 
+Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste**-siden (**Salg og markedsføring** > **Forespørsler og rapporter** > **Analyse av salgsytelse** > **Resultat av salg og fortjeneste**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Resultat av salg og fortjeneste** for Power BI-innhold omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.

@@ -1,6 +1,6 @@
 ---
 title: Synkronisere salgsordrer direkte mellom Sales og Finance and Operations
-description: "Emnet beskriver malene og underliggende oppgavene som brukes til å kjøre toveissynkronisering av salgsordrehoder og -linjer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Emnet beskriver malene og underliggende oppgavene som brukes til å kjøre toveissynkronisering av salgsordrehoder og -linjer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
 Hvis du vil ha tilgang til de tilgjengelige malene, kan du åpne [administrasjonssenteret for PowerApps](https://preview.admin.powerapps.com/dataintegration). Velg **Prosjekter**, og velg deretter **Nytt prosjekt** til øverst til høyre for å velge offentlig maler.
 
-Følgende maler og underliggende oppgavene brukes til å kjøre toveissynkronisering av salgsordrehoder og -linjer direkte mellom Sales og Finance and Operations:
+Følgende maler og underliggende oppgavene brukes til å kjøre synkronisering av salgsordrer direkte mellom Sales og Finance and Operations:
 
 - **Navnet på malen i Dataintegrering**: 
 

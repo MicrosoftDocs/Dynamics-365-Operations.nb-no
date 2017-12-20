@@ -3,7 +3,7 @@ title: Power BI-innholdet CFO-oversikt
 description: Dette emnet beskriver Microsoft Power BI-innholdet CFO-oversikt.
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Dette emnet beskriver Microsoft Power BI-innholdet **CFO-oversikt**.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil rapporter fra **CFO-oversikt** Power Bi-innholdet vises i arbeidsområdet **CFO-oversikt**.
+Rapporter fra Power BI-innholdet **CFO-oversikt** vises i **CFO-oversikt**-arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Power BI-innholdet **CFO-oversikt** er en kombinasjon av rapporter fra annet Power BI-innhold, sammen med enkelte faktiske og budsjetterte saldoer fra økonomimodulen. Dette Power BI-innholdet gir derfor økonomidirektøren (CFO) en oversikt over organisasjonen.

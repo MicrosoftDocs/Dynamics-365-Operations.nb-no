@@ -1,16 +1,16 @@
 ---
 title: Generer en finansrapport
 description: Dette emnet inneholder generell informasjon generering av finansrapporter.
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,15 +40,31 @@ Hvis du vil generere en rapport, åpner du rapportdefinisjonen og klikker derett
 
 Tabellen nedenfor forklarer hvilke alternativer som er tilgjengelige for generering av rapporter.
 
-| Alternativ                                                                                | For mer informasjon |
-|---------------------------------------------------------------------------------------|----------------------|
-| Konfigurere en tidsplan for å generere en rapport eller en gruppe rapporter automatisk              |                      |
-| Se etter manglende kontoer eller dataene i en rapport, og validere nøyaktigheten til en rapport |                      |
+| Alternativ                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Konfigurere en tidsplan for å generere en rapport eller en gruppe rapporter automatisk              |   
+| Se etter manglende kontoer eller dataene i en rapport, og validere nøyaktigheten til en rapport |   
 
 Når du genererer en rapport, brukes alternativene du har angitt i kategorien Rapportdefinisjon. Kategorien Utdata og distribusjon lar deg angi en plassering for rapportbibliotek, noe som gjør det enkelt å dele rapporten.
 
-## <a name="schedule-report-generation"></a> Planlegge rapportgenerering
-Mange firmaer har et kjernesett med rapporter som kjøres med planlagte intervaller i henhold til forretningsprosessene. Du kan planlegge at en rapport skal genereres regelmessig, for eksempel daglig, ukentlig, månedlig eller årlig. Dette kan være én rapport eller en gruppe med rapporter som inkluderer flere firmaer. Du må angi legitimasjonen for hvert av firmaene som er angitt, for eksempel firmaene i en definisjon av rapporteringstre. Hvis legitimasjonen ikke er gyldig, viser rapporten bare informasjonen som du har tilgang til, for eksempel firmaet du er logget på. Utdatainformasjon leses først fra rapportgruppen og deretter fra de enkelte rapportene.
+## <a name="generate-a-financial-report"></a>Generer en finansrapport
+
+Hvis du vil generere en finansrapport med Microsoft Dynamics 365 for Finance and Operations, kan du gå til **Økonomimodul** > **Forespørsler og rapporter** > **Finansrapporter**. 
+ - Velg en rapport som skal genereres, og klikk på **Generer**. 
+ - Fyll ut **Rapportdato**-feltet og klikk på **OK**.
+ 
+ Etter at rapporten er generert, vil rapporten være tilgjengelig for visning i **Rapporter**-delen.
+ Du kan velge å **vise** eller **slette** rapporten.
+ 
+ 
+Hvis du vil generere en rapport med **Rapportutforming**, åpner du rapportdefinisjonen og klikker deretter på Generer-knappen på verktøylinjen. Vinduet Status for rapportkø åpnes og angir plasseringen av rapporten i køen. Den genererte rapporten åpnes som standard i nettvisningsprogrammet.
+
+> [!NOTE]
+> Du kan generere rapporter bare for mapper og plasseringer du har tilgang til.
+
+
+## <a name="schedule-report-generation"></a>Planlegge rapportgenerering
+Mange firmaer har et kjernesett med rapporter som kjører i planlagte intervaller for å justeres mot forretningsprosessene. Du kan planlegge at en rapport skal genereres regelmessig, for eksempel daglig, ukentlig, månedlig eller årlig. Dette kan være én rapport eller en gruppe med rapporter som inkluderer flere firmaer. Du må angi legitimasjonen for hvert av firmaene som er angitt, for eksempel firmaene i en definisjon av rapporteringstre. Hvis legitimasjonen ikke er gyldig, viser rapporten bare informasjonen som du har tilgang til, for eksempel firmaet du er logget på. Utdatainformasjon leses først fra rapportgruppen og deretter fra de enkelte rapportene.
 
 Når rapporttidsplaner opprettes og lagres, vises de i navigasjonsruten under Rapporttidsplaner. Du kan opprette mapper for å ordne rapportene. Hvis én rapport i en plan ikke kjører, fortsetter alle andre rapporter å kjøre.
 

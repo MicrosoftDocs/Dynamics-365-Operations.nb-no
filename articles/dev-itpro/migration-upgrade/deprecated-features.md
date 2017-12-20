@@ -3,7 +3,7 @@ title: "Utgåtte funksjoner"
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,8 +490,8 @@ Datapartisjoner gir en logisk separasjon av data i Microsoft Dynamics AX-databas
 
 |   |   |
 |---|---|
-| **Årsak til avskrivning**       | Datapartisjoner ble introdusert i Microsoft Dynamics AX 2012 R2 for å gjøre det mulig å isolere data. I et vanlig scenario har et firmaet datterselskaper, og data fra ett av datterselskapene skal ikke være synlig for et annet datterselskap, selv om begge datterselskaper håndteres av samme IT-avdelingen. Ekstra skript og administrasjon i hele programmet var imidlertid nødvendig for å opprette nye partisjoner og fylle dem med data, og for å sikkerhetskopiere partisjonsdata. I skyen, der vi har tilgang til databasetjenester for plattform som en tjeneste (PaaS) (Microsoft Azure SQL-Database), er det mye mer effektivt å bruke en database som isolasjonsbeholder enn å utføre isolasjon i programmet. Uavhengig av om partisjonering av data er nødvendig for datterselskaper, for flere leiere, eller bare for skala, mener vi at situasjonene kan håndteres bedre gjennom flere databaser eller flere Dynamics AX-forekomster. |
-| **Erstattet med en annen funksjon?** | Datapartisjoner erstattes gjennom støtte for flere databaser eller Dynamics AX-forekomster i en fremtidig versjon.    |
+| **Årsak til avskrivning**       | Datapartisjoner ble introdusert i Microsoft Dynamics AX 2012 R2 for å gjøre det mulig å isolere data. I et vanlig scenario har et firmaet datterselskaper, og data fra ett av datterselskapene skal ikke være synlig for et annet datterselskap, selv om begge datterselskaper håndteres av samme IT-avdelingen. Ekstra skript og administrasjon i hele programmet var imidlertid nødvendig for å opprette nye partisjoner og fylle dem med data, og for å sikkerhetskopiere partisjonsdata. I skyen, der vi har tilgang til databasetjenester for plattform som en tjeneste (PaaS) (Microsoft Azure SQL-Database), er det mye mer effektivt å bruke en database som isolasjonsbeholder enn å utføre isolasjon i programmet. Uavhengig av om partisjonering av data er nødvendig for datterselskaper, for flere leiere, eller bare for skala, mener vi at situasjonene kan håndteres bedre gjennom flere Finance and Operations-forekomster. |
+| **Erstattet med en annen funksjon?** | Kunder som bruker datapartisjoner, må bruke flere forekomster av Finance and Operations hvis databasenivåskillet er viktig.    |
 | **Berørte moduler**             | Alle  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Database og fildelingslagring for vedlegg

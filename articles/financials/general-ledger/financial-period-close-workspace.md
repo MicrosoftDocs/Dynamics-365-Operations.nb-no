@@ -3,7 +3,7 @@ title: "Arbeidsområde for regnskapsperiodeavslutning"
 description: "Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ Du kan tilordne en oppgave i malen til ett eller flere firmaer der denne oppgave
 
 Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan også koble til en ekstern nettadresse. 
 
-> Tips: Hvis du vil koble en spesifikk Management Reporter-rapport til en oppgave ved regnskapsperiodeavslutning, kan du bruke nettadressen for rapporten. Hvis du vil ha tilgang til nettadressen for rapporten, åpner du rapporten i rapportutformingen, og deretter klikker du **Fil** &gt; **Vis rapport** for å åpne rapporten i en nettleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 
+> [!TIP]
+> Hvis du vil koble en spesifikk Management Reporter-rapport til en oppgave ved regnskapsperiodeavslutning, kan du bruke nettadressen for rapporten. Hvis du vil ha tilgang til nettadressen for rapporten, åpner du rapporten i rapportutformingen, og deretter klikker du **Fil** &gt; **Vis rapport** for å åpne rapporten i en nettleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 
 
 Du kan definere oppgaveavhengigheter i malen. Hvis en oppgave er definert til å være avhengig av én eller flere oppgaver, kan den ikke merkes som fullført før alle avhengigheter er fullført. 
 
