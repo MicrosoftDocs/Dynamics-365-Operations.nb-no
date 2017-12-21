@@ -3,7 +3,7 @@ title: Sammenligning av skyfunksjon og lokal funksjon
 description: "Emnet viser hvilke funksjoner som støttes i skyen og lokalt."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 | | Integrasjon med PowerBI.com| Ja | Antall |
 | | Analytiske arbeidsområder | Ja | Antall |
 | | Intelligent forretningsprosess: Anbefalinger| Ja | Antall |
+| | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- og Excel PowerQuery-verktøy | Ja | Antall |
+| | SQL Server Reporting Services (SSRS) støtter skalering ut  | Ja | Antall |
+| | Telemetri overføres til skyen | Ja | Antall |
 | Lagerstyring| | Ja | Ja |
 | Livssyklustjenester| | Ja | Ja |
 | | Konfigurerbare forretningsprosesser | Ja | Antall |
@@ -86,7 +89,7 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 | Transportstyring| | Ja | Ja |
 | Leverandørsamarbeid| | Ja | Ja|
 | Lagerstyring| | Ja | Ja |
-| | Lagerapp for mobil| Ja | Antall |
+| | Lagerapp for mobil| Ja | Ja |
 | | Lagring for Power BI-rapporter| Ja | Antall |
 | Webklient | | Ja | Ja |
 | | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket| Ja | Antall |
@@ -103,6 +106,7 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 | Plattformkompatibilitet  || Ja | Ja |
 | Service | | Ja | Ja |
 | | Betjeningsmiljøer | Ja | Antall |
+| Trace Parser og PerfTimer | | Ja | Antall |
 | Oppgrader | | Ja | Ja |
 | | Oppgrader | Ja | Antall |
 | | Oppgradering og støtte for tidligere versjoner | Ja | Antall |
@@ -121,6 +125,8 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 |---|---|---|---|
 | Alle Talent-områder | Alle Talent-funksjoner | Ja | Antall |
 
+## <a name="see-also"></a>Se også
 
+- [Funksjoner som ikke er implementert i lokale distribusjoner](features-not-implemented-on-prem.md)
 
 

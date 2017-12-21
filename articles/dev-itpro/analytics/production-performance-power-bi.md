@@ -3,7 +3,7 @@ title: Produksjonsytelse for Power BI-innhold
 description: "Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Dette Power BI-innholdet lar deg også analysere produksjonsavvik. Produksjonsav
 **Produksjonsytelse** for Power BI-innhold inneholder data som kommer fra produksjonsordrer og partiordrer. Rapportene inneholder ikke data som er knyttet til kanban-produksjoner.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil **Produksjonsytelse** for Power BI-innholdet vises på siden **Produksjonsytelse** (**Produksjonskontroll** > **Forespørsler og rapporter** > **Analyse av produksjonsytelse** > **Produksjonsytelse**). 
+Power BI-innholdet **Produksjonsytelse** vises på **Produksjonsytelse**-siden (**Produksjonskontroll** > **Forespørsler og rapporter** > **Analyse av produksjonsytelse** > **Produksjonsytelse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 

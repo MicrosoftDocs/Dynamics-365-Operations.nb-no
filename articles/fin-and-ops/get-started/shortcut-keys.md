@@ -3,7 +3,7 @@ title: Hurtigtaster
 description: "Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 **Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
+
+## <a name="finding-a-shorcut"></a>Finne en hurtigtast
+Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden. 
+
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
 |                                                   |                                  |
@@ -48,13 +52,14 @@ Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Ente
 | Kjør standardknappen på en skjema-/dialogboks   | Alt+Enter                        |
 | Klikk en knapp eller flis                            | Enter eller Mellomrom                   |
 | Vis oppdatert informasjon for en flis for antall         | Alt+Pil opp                     |
+| Vise tilgjengelige snarveier                | Alt+Skift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Snarveier for datovelger
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Hvis du vil gjøre dette**                        | **Trykk**                                 |
 | Åpne datovelger                  | Alt+Pil ned                            |
-| Flytt mellom datoer i datovelgeren | Ctrl+piltaster                               |
+| Flytt mellom datoer i datovelgeren | Ctrl+piltaster                           |
 | Gå til neste/forrige måned       | Side ned / Side opp                       |
 | Gå til neste/forrige år        | Ctrl+Skift+Side ned / Ctrl+Skift+Side opp |
 | Flytt til i dag                         | CTRL+HOME                                 |
@@ -65,6 +70,7 @@ Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Ente
 ## <a name="factbox-shortcuts"></a>Faktabokssnarveier
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Hvis du vil gjøre dette**                                                                  | **Trykk**                                 |
 | Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen) | Alt+M,B eller Ctrl+F2                        |
 | Lukk faktaboksruten (med fokus i faktaboksruten)                         | ESC                                       |
 | Flytt til neste/forrige faktaboks (med fokus i faktaboksruten)              | Alt+Skift+Pil ned / Alt+Skift+Pil opp |

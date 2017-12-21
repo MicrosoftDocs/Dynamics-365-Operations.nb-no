@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ I **direkteoverføringspolicyen** angir du hvilke dokumenttyper som skal brukes 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Navn på direkteoverføringspolicy: Overføringsordre
 
 -   Sekvensnummer: 10
--   Arveidsordretype: Utstedelse for overføring
+ -   Arveidsordretype: Utstedelse for overføring
 -   Direkteoverføringsbehov krever en lokasjon: Usann
 -   Strategi for direkteoverførind: dato og klokkeslett
 
@@ -102,10 +102,9 @@ Når et produkt rapportert som fullført på produksjonslinjen, overføres det t
 6.  Opprett en overføringsordre. Opprett overføringsordren for varenummer L0101. Antall = 20.
 7.  Frigi overføringsordren fra arbeidsområdet for lastplanlegging. I **Send**-kategorien velger du menyelementet Arbeidsområde for lastplanlegging, og i **Frigi**-menyen på lastlinjen, velger du **Frigi til lager**. Det finnes nå en åpen bølgelinje av typen **Utstedelse for overføring** for overføringsordren.
 8.  Opprett en produksjonsordre. Gå til **produksjonsordre**-listesiden, og opprett en produksjonsordre for produkt L0101. Antall = 20. Estimer og start produksjonsordren. Legg merke til at feltet **Poster plukkliste nå** er satt til **Nei**.
-9.  Ferdigmeld fra den mobile enheten. Gå til mobilenhetsportalen, og velg menyelementet **Ferdigmeld og plasser**. Ferdigmeld L0101 fra den fra den håndholdte enheten. Legg merke til at plasseringslokasjonen er **RAMPEDØR**. Denne lokasjonen finner du fra lokasjonsdirektivet  **Utstedelse for overføring** for arbeidsordretypen **Plasser**. Legg også merke til at arbeid av typen **Utstedelse for overføring** er opprettet og fullført. Gå til overføringsordrens arbeidsdetaljer for å kontrollere arbeidet.
-10. Nå kan du prøve å starte 20 stykker mer på produksjonsordren, og deretter prøve å ferdigmelde 20 stk. ved hjelp av den håndholdte enheten. Denne ganf forselås lokasjonen **LP-001** som plasseringslokasjon. Denne lokasjonen finner du fra lokasjonsdirektivet for **Plasser ferdigvarer**. Dette lokasjonsdirektivet brukes fordi det ikke finnes noen mulighet for direkteoverføring. Overføringsordren for LP-001 ble fullstendig oppfylt av den første aktiviteten for direkteoverføring.
-
-Arbeid av typen **Plasser ferdigvarer** ble opprettet og behandlet.
+9.  Ferdigmeld fra den mobile enheten. Gå til mobilenhetsportalen, og velg menyelementet **Ferdigmeld og plasser**. Ferdigmeld L0101 fra den fra den håndholdte enheten. Antall = 10. Legg merke til at plasseringslokasjonen er **RAMPEDØR**. Denne lokasjonen finner du fra lokasjonsdirektivet  **Utstedelse for overføring** for arbeidsordretypen **Plasser**. Legg også merke til at arbeid av typen **Utstedelse for overføring** er opprettet og fullført. Gå til overføringsordrens arbeidsdetaljer for å kontrollere arbeidet.
+10. Nå kan du rapportere ytterligere 10 stykker fra den mobile enheten. Legg merke til at plasseringslokasjonen igjen er **RAMPEDØR**. Legg også merke til at nytt arbeid av typen **Utstedelse for overføring** er opprettet for 10 deler.
+11. Nå kan du prøve å starte 20 stykker mer på produksjonsordren, og deretter prøve å ferdigmelde 20 stk. ved hjelp av den håndholdte enheten. Denne ganf forselås lokasjonen **LP-001** som plasseringslokasjon. Denne lokasjonen finner du fra lokasjonsdirektivet for **Plasser ferdigvarer**. Dette lokasjonsdirektivet brukes fordi det ikke finnes noen mulighet for direkteoverføring. Overføringsordren for LP-001 ble fullstendig oppfylt av de to aktivitetene for direkteoverføring i trinn 9 og 10. Legg merke til at arbeid av typen **Plasser ferdigvarer** ble opprettet og behandlet.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenario 2 - Direkteoverføring fra produksjon til overføringsordrer med en avtaleplan
 
@@ -123,7 +122,7 @@ Når et produkt som er rapportert som fullført på produksjonslinjen overføres
 
 ### <a name="additional-information"></a>Tilleggsinformasjon
 
--   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet.
+-   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet. 
 
 
 

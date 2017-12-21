@@ -3,7 +3,7 @@ title: Lagerytelse-innhold for Power BI
 description: "Dette emnet beskriver hva som er inkludert i Lagerytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Lagerledere kan bruke **Lagerytelse**-innholdet for Power BI til å måle følge
 -   **Lagerpresisjon for lokasjon** – Lagerpresisjon er viktig, intern lagerforretningsanalyse (BI). Det er svært viktig at du fastslår hvor nøyaktig du teller generelt. Det er imidlertid også viktig at du fastslår hvor nøyaktig du med hensyn til lagring av varer på riktig sted, og at du merker avviksdata, slik at du kan finne bedre posisjoner for varer eller starte totalantall på bestemte varer. (For øyeblikket leveres den nye varebaserte tellefunksjonaliteten som en hurtigreparasjon.) Hvis du bruker dette Power BI-innholdet til å fastslå korrektheten til lagerbeholdningsdata per lokasjon, kan du også identifisere tyveri i butikkene dine. Du kan også fastslå om lokasjoner har lagerbeholdningsantall som avviker fra ERP-data. Disse lokasjonene kan være for store, eller de kan være umulig å telle. Noen av de fysiske plasseringene kan også være dårlige, slik at det er vanskelig å synkronisere én enkelt type vare med beholdningsdata.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Tilgang til Power BI-innholdspakke
-Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vil **Lagerytelse** for Power BI-innholdet vises på siden **Lagerytelse** (**Lagerstyring** > **Forespørsler og rapporter** > **Analyse av lagerytelse** > **Lagerytelse**). 
+Power BI-innholdet **Lagerytelse** vises på **Lagerytelse**-siden (**Lagerstyring** > **Forespørsler og rapporter** > **Analyse av lagerytelse** > **Lagerytelse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Lagerytelse**-innholdet for Power BI omfatter en rapport. Denne rapporten består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effekter i **Lagerytelse**-innhold for Power BI.

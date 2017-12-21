@@ -3,7 +3,7 @@ title: Finansresultat-innhold for Power BI
 description: "Dette emnet beskriver Power BI-innholdet om finansresultat. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Du kan få tilgang til **Finansresultat** i Power BI fra Microsoft Dynamics Life
 ### <a name="available-from-lcs"></a>Tilgjengelig fra LCS
 Power BI-innhold om **finansresultat** som er tilgjengelig fra LCS, støtter følgende versjoner:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-versjoner
 - Microsoft Dynamics 365 for Operations versjon 1611 
 
 Du kan finne Power BI-innholdet i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og implementerer den i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).

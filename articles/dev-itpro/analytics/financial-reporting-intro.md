@@ -1,15 +1,15 @@
 ---
 title: Finansrapportering for Finance og Operations
 description: "Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.
 
 Finansrapportering inkluderer støtte for dimensjon. Derfor er kontosegmenter eller dimensjoner tilgjengelig umiddelbart. Ingen ekstra verktøy eller konfigurasjonstrinn er nødvendig.
+
+## <a name="financial-reporting-setup"></a>Oppsett for finansrapportering
+**Oppsett for finansrapportering**-siden inneholder en liste over alle finansdimensjonene i systemet. **Finans** > **Finansoppsett** > **Oppsett for finansrapportering**. 
+
+**Oppsett for finansrapportering**-siden har to deler som fastsetter dataene du rapporterer i Finansrapportering:
+
+• **Kategorien Dimensjon** - Siden forskjellige firmaer bruker ulike dimensjoner og kontostrukturer, er det ikke mulig å bestemme rekkefølgen som brukere vil vise alle finansdimensjoner i rapporter. På denne siden kan du angi rekkefølgen du vil finansdimensjonene skal vises når du bygger og viser en rapport i Finansrapportering.
+
+• **Kategorien Attributter** er der du kan velge om du vil ha muligheten til å bruke **Leverandører** og **Kunder** som attributter for filtrering og rapportutforming. Rapportering av leverandør og kunde vil bare være nyttig hvis du ikke angir flere leverandører eller kunder i ett bilag ved postering av transaksjoner. Hvis du velger leverandør og/eller kunde, legges det til ekstra tid i integreringen.
+
+
 
 ## <a name="financial-reporting-components"></a>Komponenter for finansrapportering
 Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og planlegge rapporter.
