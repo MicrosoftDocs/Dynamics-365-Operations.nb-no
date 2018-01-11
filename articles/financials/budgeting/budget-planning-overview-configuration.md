@@ -3,7 +3,7 @@ title: Oversikt over budsjettplanlegging
 description: Denne artikkelen introduserer budsjettplanlegging og inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
