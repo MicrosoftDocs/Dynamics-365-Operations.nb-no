@@ -3,7 +3,7 @@ title: "Standard motkontoer for leverandørfakturajournaler og fakturagodkjennin
 description: "Dette emnet hjelper deg med å bestemme hvor du vil tilordne standardkontoer for fakturajournaler."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
