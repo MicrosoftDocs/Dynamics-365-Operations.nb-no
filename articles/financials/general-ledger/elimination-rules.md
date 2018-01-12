@@ -3,14 +3,14 @@ title: Elimineringsregler
 description: Dette emnet inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerEliminationRule
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
+ms.openlocfilehash: 2a0897bd80a508474be384e8086ca47dd9de7efb
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="3618c-182">Når du har definert det grunnleggende, kan du definere de faktiske behandlingsreglene ved å klikke **Linjer**.</span><span class="sxs-lookup"><span data-stu-id="3618c-182">After you have defined the basics, you can define the actual processing rules by clicking **Lines**.</span></span> <span data-ttu-id="3618c-183">Det finnes to alternativer for elimineringer: eliminere netto endringsbeløp eller definere et fast beløp.</span><span class="sxs-lookup"><span data-stu-id="3618c-183">There are two options for eliminations, eliminating the net change amount or defining a fixed amount.</span></span> 
 
-<span data-ttu-id="3618c-184">Velg kildekontoen.</span><span class="sxs-lookup"><span data-stu-id="3618c-184">Select your source account.</span></span> <span data-ttu-id="3618c-185">Du kan bruke stjerne (\*) som et jokertegn.</span><span class="sxs-lookup"><span data-stu-id="3618c-185">You can use an asterisk (\*) as a wild card.</span></span> <span data-ttu-id="3618c-186">1\* velger for eksempel alle kontoer som starter med 1, som en kilde for datatildelingen.</span><span class="sxs-lookup"><span data-stu-id="3618c-186">For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
+<span data-ttu-id="3618c-184">Velg kildekontoen.</span><span class="sxs-lookup"><span data-stu-id="3618c-184">Select your source account.</span></span> <span data-ttu-id="3618c-185">Du kan bruke stjerne (\\*) som et jokertegn.</span><span class="sxs-lookup"><span data-stu-id="3618c-185">You can use an asterisk (\\*) as a wild card.</span></span> <span data-ttu-id="3618c-186">1\\* velger for eksempel alle kontoer som starter med 1, som en kilde for datatildelingen.</span><span class="sxs-lookup"><span data-stu-id="3618c-186">For example, 1\\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
 
 <span data-ttu-id="3618c-187">Når du har valgt kildekontoene, bestemmer **kontospesifikasjonen** kontoen fra målfirmaet som brukes.</span><span class="sxs-lookup"><span data-stu-id="3618c-187">After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used.</span></span> <span data-ttu-id="3618c-188">Velg **Kilde** hvis du vil bruke den samme hovedkontoen som er definert i **Kilde**-kontoen.</span><span class="sxs-lookup"><span data-stu-id="3618c-188">Select **Source** if you want to use the same main account defined in the **Source** account.</span></span> <span data-ttu-id="3618c-189">Hvis du velger **Brukerdefinert**, må du angi en målkonto.</span><span class="sxs-lookup"><span data-stu-id="3618c-189">If you select **User defined**, then you must specify a destination account.</span></span> 
 
