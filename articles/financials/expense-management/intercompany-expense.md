@@ -3,7 +3,7 @@ title: Konserninterne utgifter
 description: "En arbeidstaker som er ansatt av en juridisk enhet i en organisasjon kan utføre arbeid for en annen juridisk enhet i samme organisasjon. I denne situasjonen kan du bruke den konserninterne kostnadsfunksjonen til å tildele arbeidstakers utgifter til den juridiske enheten som arbeidet ble utført for."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

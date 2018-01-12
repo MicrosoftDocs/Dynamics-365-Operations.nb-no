@@ -3,7 +3,7 @@ title: Dokumenter for budsjettplanleggingsjusteringer
 description: "Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett for å forklare hvorfor et bestemt budsjett er nødvendig."
 author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
