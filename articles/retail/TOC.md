@@ -44,6 +44,7 @@
 ## [Timeregistrering for Retail](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) og Cloud POS
+## [Velge mellom Modern POS og Cloud POS](MPOS-or-CPOS.md)
 ## [POS-operasjoner](POS-operations.md)
 ## [Skjermoppsett for demonstrasjonsdata i MPOS/CPOS](demo-data.md)
 ## Eksterne enheter for maskinvare
@@ -76,6 +77,11 @@
 ### [Definere kvitteringsmaler](receipt-templates-printing.md) 
 ### [Sende e-postkvitteringer fra MPOS](email-receipts.md)
 ## [Oppgaveopptaker og hjelp for POS](task-recorder-retail-pos.md)
+
+# Ordreoppfyllelse
+## [Oversikt over oppfyllelse av butikkordre](Order-fulfillment-overview.md)
+## [Definere oppfyllelse i butikken](Order-fulfillment-POS-setup.md)
+## [Aktivere varslinger på utsalgsstedet](Notifications-POS.md)
 
 # Overvåkning og analyse
 ## [Overvåke salgs- og marginytelse](monitor-sales-margin-performance.md)
@@ -258,8 +264,10 @@
 ### [Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS](dev-itpro/pos-custom-transaction.md)
 ### [Legge til egendefinerte kolonner i et rutenett for POS-transaksjon](dev-itpro/pos-custom-transaction-column.md)
 ### [Ringe en POS API eller operasjon fra en POS-filtype](dev-itpro/pos-api-extension.md)
-### [Utvide eksisterende POS-visninger for å legge til egendefinerte kolonner og applinjeknapper](dev-itpro/pos-view-extension.md)
 ### [Utløsere og utskrift for Retail Modern POS](dev-itpro/pos-trigger-printing.md)
+### [Legge til en egendefinert kontroll i en designerbasert visning som ikke er skjermbasert for Retail Modern POS](dev-itpro/pos-control-non-screen.md)
+### [Generere Retail-proxy for POS og e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurasjonstrinn for Retail-utviklere som jobber med skydriftede utviklingsbokser](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime
 ### [Fordelsutvidelse](dev-itpro/retail-sdk/loyalty-extension-sample.md)
