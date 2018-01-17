@@ -3,7 +3,7 @@ title: Power BI-innhold
 description: "Dette emnet viser BI-innholdet som er tilgjengelig, og henviser til ressurser der du kan lære mer om det."
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -39,10 +39,10 @@ Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [Power BI-innholdet Kontantstrømoversikt](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
 - [Power BI-innholdet CFO-oversikt](CFO-power-bi.md)
 - [Kompensasjon-innhold for Power BI](compensation-power-bi.md)
-- [Power BI-innhold for analyse av kostnadsregnskap*](cost-accounting-analysis-content-pack.md) 
+- [Power BI-innhold for analyse av kostnadsregnskap](cost-accounting-analysis-content-pack.md) 
 - [Power BI-innholdet Behandling av kreditt og innkrevinger](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-innhold om ansattutvikling](employee-development-PBI.md) 
-- [Finansresultat for Power BI-innhold*](financial-performance-power-bi-content-pack.md)
+- [Finansresultat-innhold for Power BI](financial-performance-power-bi-content-pack.md)
 - [Anleggsmiddelbehandling-innhold for Power BI](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Opplæringsinnhold for Power BI](learning-power-bi.md)
 - [Praksisleder for Power BI-innhold](practice-manager-power-bi.md)
@@ -53,16 +53,6 @@ Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [Leverandørbetalinger-innhold Power BI](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Lagerytelse-innhold for Power BI](warehouse-power-bi-content.md)
 - [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)  
-
-### <a name="accessing-the-content"></a>Tilgang til innholdet
-
-#### <a name="embedded-content"></a>Innebygd innhold
-Med unntak av innholdet som er merket med en stjerne (\*), er alt innhold i listen ovenfor innebygd i programmet. Hvis du vil vite mer om hvor du kan vise Power BI-innholdet, klikker du koblingene ovenfor.
-
-Hvis du vil vise data i Power BI-rapportene, må du oppdatere enhetslageret. For mer informasjon, se *Oppdatere enhetslageret* under [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
-
-#### <a name="files-available-in-lifecycle-services"></a>Filer fra Lifecycle Services
-Dette Power BI-innholdet er tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og kobler det til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
 ## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Power BI-innhold for Dynamics 365 for Operations versjon 1611
 Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er følgende Power BI-innhold tilgjengelig:
@@ -81,9 +71,6 @@ Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1
 - [Lagerytelse-innhold for Power BI](warehouse-power-bi-content.md)
 - [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)  
 
-### <a name="accessing-the-content"></a>Tilgang til innholdet
-Dette Power BI-innholdet er tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og kobler det til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-innhold for Microsoft Dynamics AX
 Hvis du bruker oppdateringen for Microsoft Dynamics AX 7.0 eller Microsoft Dynamics AX 7.0.1, er følgende Power BI-innhold tilgjengelig:
 
@@ -91,15 +78,5 @@ Hvis du bruker oppdateringen for Microsoft Dynamics AX 7.0 eller Microsoft Dynam
 - [Finansresultat-innhold for Power BI](financial-performance-power-bi-content-pack.md)
 - [Resultat for detaljhandelskanal for Power BI-innhold](retail-channel-performance-dashboard-power-bi-data.md) 
 
-### <a name="accessing-the-content"></a>Tilgang til innholdet
-Dette Power BI-innholdet er tilgjengelig fra PowerBI.com.
 
-1. Logg på [PowerBI.com](https://www.powerbi.com/).
-2. Klikk på **Hent data**.
-3. I **Tjenester** boksen klikker du på **Hent**.
-4. Velg innholdspakken du vil ha, og klikk deretter på **Hent**.
-5. Skriv inn URL-adressen til Dynamics AX-miljøet. URL-en må være i formatet **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klikk **Neste**.
-6. Velg **oAuth2** som godkjenningsmetode, og klikk deretter på **Logg på**.
-7. Når du blir bedt om det, skriver du inn en Microsoft Office 365-konto som har tilgang til Microsoft Dynamics AX-miljøet.
-8. Når du har logget på, starter importprosessen automatisk. Når importen er fullført, vises rapportene som er inkludert i innholdspakken, i navigasjonsruten. Velg en rapport for å vise de importerte dataene.
 

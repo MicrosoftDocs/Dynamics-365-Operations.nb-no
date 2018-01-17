@@ -3,7 +3,7 @@ title: Power BI-innholdet Kompensasjon
 description: "Dette emnet beskriver Power BI-innholdet Kompensasjon. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 7143a2750d284080609c884ce15bc2b2e8943394
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 01841a2da44bfeebc8f8656229c406bd350cb6e5
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -47,13 +47,6 @@ Rapporter som er inkludert i Power BI-innholdet **Kompensasjon**, har både diag
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
-Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 eller Finance and Operations, Enterprise Edition (juli 2017), kan du finne **Kompensasjon** Power BI-innholdet i Fellesskapsbiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
-Pass på at du laster ned Power BI-innholdet **Kompensasjon** som gjelder for versjonen av Microsoft Dynamics 365 du bruker.
-
->[!NOTE]
->PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Kompensasjon**. Denne tabellen viser enhetene som innholdet er basert på.
@@ -81,5 +74,5 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Kompensa
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Hvis du vil ta med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen PBIX-filen fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette innholdet. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
+
 

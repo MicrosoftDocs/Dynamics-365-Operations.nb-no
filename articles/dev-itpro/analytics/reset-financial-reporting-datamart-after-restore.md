@@ -3,7 +3,7 @@ title: Tilbakestille data mart for finansrapportering
 description: Dette emnet beskriver hvordan du tilbakestiller data mart for finansrapportering.
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Dette emnet forklarer hvordan du tilbakestiller data mart for finansrapportering
 - Microsoft Dynamics 365 for Finance and Operations Financial reporting versjon 7.0.10000.4 og nyere
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lokal)
 
-Hvis du vil ha Finance and Operations Financial reporting versjon 7.2.6.0, kan du laste ned KB 4052514 fra <https://support.microsoft.com/en-us/help/4052514>.
+Hvis du vil ha Finance and Operations Financial reporting versjon 7.2.6.0, kan du laste ned KB 4052514 fra <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Tilbakestille data mart for finansrapportering for Finance and Operations Financial reporting versjon 7.2.6.0 og nyere
 
@@ -55,7 +55,7 @@ Data mart-tilbakestillingen bør bare utføres når det foregår lite behandling
 
 Hvis du vil tilbakestille data mart, går du til rapportutforming og velger **Tilbakestill data mart** på **Verktøy**-menyen. Dialogboksen som vises, har to deler: **Statistikk** og **Tilbakestill**.
 
-[![Dialogboksen Tilbakestill data mart](./media/Statistics.png)](./media/Statistics.png)
+[![Dialogboksen Tilbakestill data mart](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integreringsforsøk
 
@@ -83,8 +83,10 @@ Hvis du finner ut at det kreves en tilbakestilling av data mart, merker du av fo
 - **Gjenopprett database** – Finance and Operations-databasen ble gjenopprettet, men databasen for data-mart for finansrapportering ble ikke gjenopprettet.
 - **Andre** – Du tilbakestiller data mart av en annen grunn. Hvis du er redd for at det er et problem, kan du kontakte kundestøtte for å identifisere det.
 
+[![Tilbakestill datatorg](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Kontroller at alle eksisterende oppgaver har fullført integreringen før du fullfører trinnene. Du kan vise statusen for integreringen ved å velge **Verktøy** &gt; **Integreringsstatus**.
+> Kontroller at alle tilbakestillingsoppgaver for datatorg har fullført en innledende belastning før du begynner en tilbakestilling. Du kan kontrollere dette ved å se etter en verdi i kolonnen Klokkeslett for forrige kjøring ved å velge **Verktøy** &gt; **Integreringsstatus**.
 
 #### <a name="clear-users-and-companies"></a>Fjern brukere og firmaer
 
@@ -94,7 +96,10 @@ Når du er klar til å starte tilbakestillingen, velger du **OK**. Du blir bedt 
 
 Hvis du vil vise statusen for integreringen, velger du **Verktøy** &gt; **Integreringsstatus** for å se sist gang integreringen ble kjørt og statusen.
 
-[![Vise statusen for integreringen](./media/Integration.png)](./media/Integration.png)
+[![Vise statusen for integreringen](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Tilbakestillingen er fullført når alle tilordninger viser statusen RanToCompletion og vinduet Integreringsstatus viser "Integrering er fullført" i hjørnet nederst til venstre.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Tilbakestille data mart for finansrapportering for Finance and Operations Financial reporting versjon 7.0.10000.4 og nyere
 
@@ -142,7 +147,9 @@ Følgende Microsoft Windows-tjenester vil ha åpne tilkoblinger til Finance and 
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Last ned den siste MinorVersionDataUpgrade.zip-pakken
 
-Last ned den siste MinorVersionDataUpgrade.zip-pakken. For instruksjoner om hvordan du finner og laster ned riktig versjon av dataoppgraderingspakken, kan du se [Last ned den nyeste distribuerbare dataoppgraderingspakken](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). En oppgradering er ikke nødvendig for å laste ned MinorVersionDataUpgrade.zip-pakken. Du må derfor bare følge trinnene i delen "Last ned den nyeste distribuerbare dataoppgraderingspakken" i dette emnet. Du kan hoppe over alle de andre trinnene i emnet.
+Last ned den siste MinorVersionDataUpgrade.zip-pakken. For instruksjoner om hvordan du finner og laster ned riktig versjon av dataoppgraderingspakken, kan du se [Last ned den nyeste distribuerbare dataoppgraderingspakken](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+En oppgradering er ikke nødvendig for å laste ned MinorVersionDataUpgrade.zip-pakken. Du må derfor bare følge trinnene i delen "Last ned den nyeste distribuerbare dataoppgraderingspakken" i dette emnet. Du kan hoppe over alle de andre trinnene i emnet.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Kjøre skript på Finance and Operations-databasen
 

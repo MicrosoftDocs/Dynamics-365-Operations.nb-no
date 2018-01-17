@@ -3,7 +3,7 @@ title: Lokal distribusjon
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
-ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
+ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
+ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 12/20/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Lokal distribusjon startside
@@ -32,7 +32,8 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise
 
 ## <a name="get-started"></a>Komme i gang
 - [Oversikt over Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](on-premises-overview.md)
-- [Systemkrav for lokale installasjoner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Planlegge lokal distribusjon](plan-onprem-deployment.md)
+- [Systemkrav for lokale distribusjoner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Størrelsesangivelse for maskinvare for lokale miljøer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Elektronisk tjeneste og lokal policy for programvarelivssyklus](../migration-upgrade/versions-update-policy.md)
 - [Kjøpe Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
@@ -41,6 +42,7 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise
 ## <a name="onboard"></a>Onboard
 - [Opprette et lokalt prosjekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Konfigurere og distribuere i lokale miljøer](setup-deploy-on-premises-environments.md)
+- [Installere nettverksskriver i lokale miljøer](../analytics/install-network-printer-onprem.md)
 - [Konfigurere sikkerhet for SQL Server Reporting Services for en lokal distribusjon](../analytics/configure-ssrs-on-premises.md)
 - [Utvikle og distribuere tilpassede modeller til lokale miljøer](develop-deploy-custom-models-on-premises.md)
 
@@ -51,9 +53,10 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Definere teknisk støtte](../lifecycle-services/support-experience.md)
 - [Feilsøking av klientens Internett-tilkobling](../user-interface/client-disconnected.md)
 - [Bruke oppdateringer i en lokal distribusjon](apply-updates-on-premises.md)
-- [Distribuere lokal distribusjon på nytt](redeploy-on-prem.md)
+- [Distribuere e lokale distribusjon på nytt](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Andre ressurser
+- [Feilsøke Dynamics 365 for Finance and Operations, Enterprise edition lokalt](troubleshoot-on-prem.md)
 - [Funksjoner som ikke er implementert i lokale distribusjoner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Utgåtte funksjoner](../migration-upgrade/deprecated-features.md)
 - [Policy for programvarelivssyklus og liste over versjoner](../migration-upgrade/versions-update-policy.md)

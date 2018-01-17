@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9eb962e903ac9ee359134cae35ebd399e23cc4e1
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 83c2ce79f5bef058f55af0ecf498b207efc0507a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -41,4 +41,5 @@ Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres s
     
 - **Serienummer er ikke påkrevd for å plassere kundeordrer** – Kundeordrer kan plasseres i en butikk og oppfylles fra en annen butikk. En kasserer som plasserer en kundeordre trenger ikke å oppgi serienummeret. Serienummeret vil gis under henting eller i hente-trinnet. Imidlertid må det oppgis et serienummer for alle linjeposter hvor leveringstypen er valgt som **Gjennomført**. Hvis ikke kan ikke transaksjonen fullføres.    
 - **Serialiserte produkter samles ikke på transaksjonsskjermbildet**. – Innstillingen for **Aggregate produkter** i feltgruppen **Terminal** på siden **Funksjonalitetsprofil** lar deg aggregere de samme ikke-serielle produktene på transaksjonsskjermen. Når de samme produktene er aggregert, er de lettere å se i transaksjonsnettverket. Men fordi serienumrene generelt er unike, og salgsmedarbeidere ikke trenger å skrive inn serienumre til kassa, gjelder ikke innstillingen for **Aggregerte produkter** ved serialiserte produkter. Derfor blir ikke serielle produkter samlet på transaksjonsskjermbildet hvis innstillingen for **Aggreger produkter** er valgt.
+- **Muligheten til å søke i journaler etter serienummer** – Det er nå også mulig å søke etter serienummer i journalene. Hvis du vil gjøre dette, åpner du operasjonen "Journaler" og trykker på knappen "Avansert søk" i feltet i appen. Ved hjelp av knappen "Legg til filter" kan et filter brukes for å søke etter serienumrene også.
 

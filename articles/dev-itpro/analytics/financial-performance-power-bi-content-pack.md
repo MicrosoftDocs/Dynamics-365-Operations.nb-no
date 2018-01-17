@@ -1,9 +1,9 @@
 ---
 title: Finansresultat-innhold for Power BI
-description: "Dette emnet beskriver Power BI-innholdet om finansresultat. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver Power BI-innholdet om finansresultat.
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver Power BI-innholdet om **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
-
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-
-Du kan få tilgang til **Finansresultat** i Power BI fra Microsoft Dynamics Lifecycle Services (LCS) and from PowerBI.com.
-
-### <a name="available-from-lcs"></a>Tilgjengelig fra LCS
-Power BI-innhold om **finansresultat** som er tilgjengelig fra LCS, støtter følgende versjoner:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-versjoner
-- Microsoft Dynamics 365 for Operations versjon 1611 
-
-Du kan finne Power BI-innholdet i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og implementerer den i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
-### <a name="available-from-powerbicom"></a>Tilgjengelig fra PowerBI.com
-Power BI-innhold om **finansresultat** som er tilgjengelig fra PowerBI.com, støtter Microsoft Dynamics AX versjon 7.0 og 7.0.1. Hvis du vil ha mer informasjon om hvordan du kobler til og laster inn Dynamics AX-data, se [Tilgang til Power BI-innhold fra PowerBI.com](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Hovedkontooppsett
 Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.
@@ -101,5 +86,5 @@ Følgende enheter ble brukt som grunnlag for Power BI-innholdet om : **finansres
 - Finanskontoer
 - ChartofAccounts
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
+Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet. 
 

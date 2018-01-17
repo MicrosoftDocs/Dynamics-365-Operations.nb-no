@@ -3,7 +3,7 @@ title: Produksjonsytelse for Power BI-innhold
 description: "Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Tabellen nedenfor gir en oversikt over effektene som er inkludert.
 | Manglertrend etter ressurs                  | Antall defekte (spm) etter antall behandlet | |
 | Produksjonsprisavvik for etterkalkulering av jobbordre | <ul><li>Produksjonsavvik etter dato og kostgruppetype</li><li>Produksjonsavvik etter sted og kostgruppetype</li><li>Topp 10 produkter med ugunstige produksjonsavvik</li><li>Topp 10 ugunstige produksjonsavvik etter ressurs</li></ul> | <ul><li>Realisert kostnad</li><li>Produksjonsavvik</li><li>Produksjonsavvik %</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
-Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
-
-Du kan finne **Produksjonsytelse**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
-Pass på at du laster ned **Produksjonsytelse**-innholdet som gjelder for versjonen av Dynamics 365 du bruker.
-
-> [!NOTE]
-> Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
@@ -139,12 +130,5 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
 
-## <a name="additional-resources"></a>Tilleggsressurser
 
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
-
-- [Dataenheter](../data-entities/data-entities.md)
-- [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Legge til Power BI-fliser i arbeidsområder](configure-power-bi-integration.md)
 

@@ -3,7 +3,7 @@ title: Hurtigtaster
 description: "Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Ente
 
 **Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 
-## <a name="finding-a-shorcut"></a>Finne en hurtigtast
+## <a name="finding-a-shortcut"></a>Finne en hurtigtast
 Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden. 
 
 
@@ -143,6 +143,9 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
 | Utfør standardhandling i et rutenett<br><br>**Merk:** Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.                 | Enter                           |
+| Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
+| Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
+| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 |                                                                              |                               |

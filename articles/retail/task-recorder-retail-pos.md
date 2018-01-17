@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +98,10 @@ For å gjenoppta opptaksøkten når du har stanset midlertid, klikker du **Forts
 
 ### <a name="capture-screenshots"></a>Ta skjermbilder
 
-Oppgaveopptaker kan ta skjermbilder av brukergrensesnittet for Moderne salgssted for detaljhandel mens du tar opp en forretningsprosess. Oppgaveopptak bruker skjermbildene hvis du laster ned opptaket som et Word-dokument. Hvis du vil aktivere opptaksfunksjonen for skjermbilde, kan du angi **Ta skjermbilder** til **Ja**. 
+Oppgaveopptaker kan ta skjermbilder av brukergrensesnittet for Moderne salgssted for detaljhandel mens du tar opp en forretningsprosess. Hvis du vil aktivere opptaksfunksjonen for skjermbilde, kan du angi **Ta skjermbilder** til **Ja** og deretter kjøre opptaket. Når opptaket er fullført, klikker du på **Stopp** og laster ned Word-dokumentet. Dokumentet inneholder trinnene med relevante skjermbilder.
 
 #### <a name="note"></a>Merk
-> Funksjonen for å ta skjermbilder støttes ikke i skysalgssted.
+> Funksjonen for å ta skjermbilder støttes ikke i Moderne salgssted.
 
 ### <a name="start-task-and-end-task"></a>Start oppgave og avslutt oppgave
 
