@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 521 | Poengsaldo for fordelskort | Vis saldoen for poeng for det angitte fordelskortet. | Ja | Ja | Antall | Antall | Antall |
 | 914 | Minimer salgsstedvinduet | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 1000 | Åpne skuff | Utfører en "ikke salg"-operasjon og åpner den valgte kassaskuffen. | Ja | Ja | Ja | Ja | Antall |
+| 928 | Ordreoppfyllelse | Denne operasjonen lar brukere plukke, pakke, sende eller tilbakekalle ordrer for butikken som er plukket. | Ja | Ja | Ja | Antall | Antall |
 | 129 | Overstyr linjeproduktavgift | Overstyr avgiften på det valgte linjeelementet, og bruk en annen angitt avgift. | Ja | Ja | Antall | Ja | Antall |
 | 130 | Overstyr linjeproduktavgift fra liste | Overstyr avgiften på det valgte linjeelementet, og bruk avgiften som brukeren velger fra en liste. | Ja | Ja | Antall | Ja | Antall |
 | 127 | Overstyr transaksjonsavgift | Overstyr avgiften på transaksjonen, og bruk en annen angitt avgift. | Ja | Ja | Antall | Ja | Antall |

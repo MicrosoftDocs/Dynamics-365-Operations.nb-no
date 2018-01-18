@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Type**                         | **Bruk denne typen til å gjøre følgende:**                                          |
-| Gjennomgang av innkjøpsrekvisisjon      | Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjoner.            |
-| Gjennomgang av innkjøpsrekvisisjonslinje | Opprett gjennomgangsarbeidsflyter for innkjøpsrekvisisjonslinjer.       |
+| Gjennomgang av innkjøpsrekvisisjon      | Opprett arbeidsflyter for gjennomgang og godkjenning av innkjøpsrekvisisjoner.            |
+| Gjennomgang av innkjøpsrekvisisjonslinje | Opprett arbeidsflyter for gjennomgang og godkjenning av innkjøpsrekvisisjonslinjer.       |
 | Bestillingsarbeidsflyt          | Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillinger.     |
 | Bestillingslinjearbeidsflyt     | Opprett gjennomgangs- og godkjenningsarbeidsflyter for bestillingslinjer. |
+| Arbeidsflyt for søknad om tillegging av leverandører  | Opprett arbeidsflyter for gjennomgang og godkjenning for å legge til nye leverandører via leverandørforespørsler. |
 
 ## <a name="creating-a-workflow"></a>Opprette en arbeidsflyt
 Hvis du vil opprette en arbeidsflyt, kan du gå til Innkjøp og leverandører &gt; Oppsett &gt; Arbeidsflyter for innkjøp og leverandører, og opprette en ny arbeidsflyt ved å velge typen arbeidsflyt som du vil opprette.  
@@ -75,6 +76,6 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 
 [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 
-
+[Jobbintroduksjon for leverandører](vendor-onboarding.md)
 
 

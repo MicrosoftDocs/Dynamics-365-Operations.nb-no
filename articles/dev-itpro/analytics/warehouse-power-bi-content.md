@@ -3,11 +3,12 @@ title: Lagerytelse-innhold for Power BI
 description: "Dette emnet beskriver hva som er inkludert i Lagerytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,13 +16,13 @@ ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
 ms.author: mirzaab
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +77,6 @@ Power BI-innholdet **Lagerytelse** vises på **Lagerytelse**-siden (**Lagerstyri
 | Leveringsytelse        | Sendt etter produkt                       | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent, etter vare eller varegruppe.                                                                                                                                                                                                                                                                                                                                   |
 | Leveringsytelse        | Levering etter kunder                      | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent etter kunde eller kundegruppe.                                                                                                                                                                                                                                                                                                                           |
 | Leveringsytelse        | Levert etter område/lager              | Prosentandelen som er sendt ut tidlig, til planlagt tid eller for sent, etter område eller lager.                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
-Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Microsoft Dynamics 365, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse. 
-
-Du kan finne **Lagerytelse**-innholdet for Power BI i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
-Pass på at du laster ned **Lagerytelse**-innholdet som gjelder for versjonen av Dynamics 365 du bruker.
-
-> [!NOTE]
-> Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1611, er KB 4011327 en forutsetning for dette Power BI-innholdet. Når du logger deg på LCS, har du tilgang til KB-artikkelen på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Forstå datamodellen og beregningene
 Følgende data brukes til å fylle ut rapportsidene i **Lagerytelse**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 

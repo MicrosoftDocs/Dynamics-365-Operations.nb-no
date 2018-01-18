@@ -1,13 +1,14 @@
 ---
 title: Revaluering av valuta i et konsolideringsfirma
 description: "Dette emnet beskriver hvordan å revaluere valuta i et konsolideringsselskap."
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerExchAdjHist
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

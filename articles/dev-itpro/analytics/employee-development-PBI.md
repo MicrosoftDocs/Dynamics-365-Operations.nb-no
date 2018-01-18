@@ -1,9 +1,9 @@
 ---
 title: Power BI-innhold om ansattutvikling
-description: "Dette emnet beskriver Power BI-innholdet om ansattutvikling. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver Power BI-innholdet om ansattutvikling.
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver Power BI-innholdet om **ansattutvikling**. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
-
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-
-Du kan finne innholdspakken **Ansattutvikling** i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdspakken og kobler den til dataene dine, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md).
+Dette emnet beskriver Power BI-innholdet om **ansattutvikling**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Rapporter som er inkludert i Power BI-innholdet **Ansattutvikling**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
@@ -74,5 +70,4 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 | Ytelse              | Vurdering, beskrivelse og vurderingsmodell                                                                      | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
 |  Kompetanse                   | Kompetanse, kompetansetype og vurdering                                                                              | Kompetanseanalyse – ansatt, Jobb – foretrukket kompetanse |                                                                                                                        
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. Disse beregnede målene brukes deretter til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i Power-BI-innholdet. Hvis du vil ta med flere beregninger i rapportene og instrumentbordet, kan du laste ned og endre filen PBIX-filen fra LCS. Denne filen er standarddatamodellen som ble brukt til å opprette Power-BI-innhold. Når du har gjort endringene, kan du opprette en innholdspakke og et instrumentbord for organisasjonen som inneholder informasjonen du har lagt til.
 

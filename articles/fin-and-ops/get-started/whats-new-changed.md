@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
-ms.openlocfilehash: 7c99869b70d8b564da859ce2b19ccfff927141b2
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: f3f6690d661ca30b5f3a9dacc75f7b8c6ec36e24
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,8 +34,6 @@ Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de s
 
 Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, kan du se [Prosessen for å oppgradere til den nyeste versjonen](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
-> [!NOTE]
-> Dynamics 365 for Operations (lokalt) får nytt navn. Du vil se Dynamics 365 for Operations (lokalt) henvist til i hele kommunikasjonen og lisensieringsveiledningene. Produktnavnet som vises ved distribusjon av produktet, er Dynamics 365 for Finance and Operations, Enterprise edition. Begge disse navnene refererer til samme produkt.
 
 ## <a name="application-releases"></a>Programversjoner
 
@@ -49,7 +47,7 @@ Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, k
 </colgroup>
 <thead>
 <tr class="header">
-<th>Frigivelse</th>
+<th>Utgivelse</th>
 <th>Versjon</th>
 <th>Build-nummer</th>
 <th>Tilgjengelighet</th>
@@ -60,6 +58,13 @@ Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, k
 <tr class="even">
 
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>7.3</td>
+<td>7.3.11971.56116</td>
+<td>2017. desember</td>
+<td><a href="whats-new-application-7.3-update.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition 7.3</a></td>
+</tr></tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Juli 2017</td>

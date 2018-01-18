@@ -2,6 +2,7 @@
 # [Systemkrav for skydistribusjoner](../fin-and-ops/get-started/system-requirements.md)
 # [Systemkrav for lokale distribusjoner](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Demonstrasjonsdata](../fin-and-ops/get-started/demo-data.md)
+## [Generere demonstrasjonsdata med pakker](data-entities/generate-demo-data-packages.md)
 
 
 # [Utvikle og tilpasse ved hjelp av Visual Studio](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Egendefinerte tjenester](data-entities/custom-services.md)
 ### [Gjentakende integreringer](data-entities/recurring-integrations.md)
+### [Bruke en tredjepartstjeneste til å teste verktøy med tjenester](data-entities/third-party-service-test.md)
 
 ## Utvikling for integrering
 ### [Dataintegrering ved hjelp av dataenheter](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Konfigurasjonsdatapakker](data-entities/configuration-data-packages.md)
 ### [Kopier konfigurasjonsdata mellom firmaer](data-entities/copy-configuration.md)
 ### [Konfigurasjonsdatamaler](data-entities/configuration-data-templates.md)
+### [Datamaler med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore endringer i en enhet](data-entities/entity-change-track.md)
 
 ## Standard dataenheter
@@ -501,12 +504,15 @@
 
 ## [Lokal distribusjon](deployment/on-premises-deployment-landing-page.md)
 ### [Lokal oversikt](deployment/on-premises-overview.md)
+### [Planlegge for lokal distribusjon](deployment/plan-onprem-deployment.md)
 ### [Maskinvarestørrelse](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Opprette et lokalt prosjekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurere og distribuere i lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 ### [Utvikle og distribuere tilpassede modeller til lokale miljøer](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Bruke oppdateringer i en lokal distribusjon](deployment/apply-updates-on-premises.md)
 ### [Distribuere e lokale distribusjon på nytt](deployment/redeploy-on-prem.md)
+### [Oppdatere den lokale agenten](lifecycle-services/update-local-agent.md)
+### [Konfigurere miljøet på nytt](lifecycle-services/reconfigure-environment.md)
 ### [Feilsøke Dynamics 365 for Finance and Operations, Enterprise edition lokalt](deployment/troubleshoot-on-prem.md)
 
 ## Distribuere tilpasset kode

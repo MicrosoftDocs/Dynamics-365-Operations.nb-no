@@ -3,11 +3,12 @@ title: "Arbeidsområde for anleggsmiddelbehandling"
 description: "Dette emnet gir informasjon om arbeidsområdet Anleggsmiddelbehandling. Arbeidsområdet viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Det omfatter visning av et sammendrag og en visning for analyse."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

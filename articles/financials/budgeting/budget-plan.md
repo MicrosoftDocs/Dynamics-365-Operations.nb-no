@@ -3,11 +3,12 @@ title: Budsjettplanlegging
 description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

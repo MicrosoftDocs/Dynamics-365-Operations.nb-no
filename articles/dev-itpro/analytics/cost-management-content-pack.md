@@ -1,9 +1,9 @@
 ---
 title: Kostnadsbehandling-innhold for Power BI
-description: "Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI. 
 
 # <a name="overview"></a>Oversikt
 
@@ -51,8 +51,6 @@ Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Powe
 
 Den primære datakilden for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabellen håndteres av rammeverket for hurtigbuffer for datasett. Tabellen oppdateres hvert døgn som standard, men du kan aktivere manuelle oppdateringer i databufferkonfigurasjonen. Deretter kan du gjøre en manuell oppdatering i arbeidsområdet **Kostnadsstyring** eller **Kostnadsanalyse**. Når oppdateringen av CostStatementCache er kjørt, må du oppdatere OData-koblingen på Power BI.com for å se de oppdaterte dataene på området. Avviksmålene (innkjøp, produksjon) målene i dette Power BI-innholdet gjelder bare for varer som evalueres av lagermodellen med standard kostpris. Produksjonsavvik beregnes som differansen mellom aktive kostnader og faktiske kostnader. Produksjonsavvik beregnes når produksjonsordren har statusen **Avsluttet**. Hvis du vil ha mer informasjon om produksjonsavvikstyper og hvordan hver type beregnes, se [Om å analysere avvik for en fullført produksjonsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-**Kostnadsbehandling** Power BI-innholdet er tilgjengelig fra PowerBI.com. For mer informasjon om hvordan koble til og laste dine Microsoft Dynamics 365 for Finance and Operations-data, se [Tilgang til Power BI-innhold fra powerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 Innholdet inneholder et sett med rapportsider. Hver side består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **Kostnadsbehandling**.
@@ -136,13 +134,6 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Finanskontoer          | Valuta, navn, beskrivelse                  |
 | Siter            | ID, navn, land, poststed                      |
 
-## <a name="additional-resources"></a>Tilleggsressurser
-Her er noen nyttige koblinger som er knyttet til enheter og oppretting av Power BI-innhold:
-
--   [Dataenheter](..\data-entities\data-entities.md)
--   [Opprette innholdspakker for organisasjonen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering med Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Legge til Power BI-fliser i arbeidsområder](configure-power-bi-integration.md)
 
 
 

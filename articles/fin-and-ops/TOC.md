@@ -17,11 +17,12 @@
 ##### [Buy Finance and Operations (lokalt)](get-started/purchase-on-premises.md)
 
 ### [Hva er nytt eller endret?](get-started/whats-new-changed.md)
-#### [Utgåtte funksjoner](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [Funksjoner som er fjernet eller avskrevet](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [AX 2012-funksjoner som ble utsatt](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funksjoner som ikke er implementert i lokale distribusjoner](get-started/features-not-implemented-on-prem.md)
-#### [Livssykluspolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Platform update 12 (november 2017)](get-started/whats-new-platform-update-12.md)
+#### [Versjoner og livssykluspolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Platform oppdatering 12 (november 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (august 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition (juli 2017)](get-started/whats-new-application-July-2017-update.md)
@@ -141,7 +142,7 @@
 #### [API for databehandlingspakke](../dev-itpro/data-entities/data-management-api.md)
 #### [Tjenesteendepunkter](../dev-itpro/data-entities/services-home-page.md)
 ##### [Feilsøking av tjenestegodkjenning](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Egendefinerte tjenester](../dev-itpro/data-entities/custom-services.md)
 #### [Gjentakende integreringer](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [Dataenheter](../dev-itpro/data-entities/data-entities.md)
 
 #### [Prosjekter for konfigurasjonsdata](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Konfigurasjonsdatapakker](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Kopier konfigurasjonsdata mellom firmaer](../dev-itpro/data-entities/copy-configuration.md)
+##### [Konfigurasjon av datapakker (bare versjon fra juli 2017)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurasjonsdatamaler](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Spore endringer i en enhet](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Standard dataenheter
@@ -646,6 +648,11 @@
 ##### [Definere negativ debet og kredit ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [Logg for brukeroperasjon etter kinesiske arbeidsregler](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [Vanlige spørsmål om mva-kundefakturaer](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### India
+##### [Oversikt over avgiftsmotor](../financials/general-ledger/tax-engine.md)
+##### [Integrering av avgiftsmotor](../financials/general-ledger/tax-engine-integration.md)
+##### [Utvidelse av avgiftsmotoren](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japan
 ##### [Anskaffe et anleggsmiddel og gjøre krav om offentlig tilskudd](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1214,7 +1221,8 @@
 #### [Metrikk for arbeidsstyrke](../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md)
 
 ### Rapportere og skrive ut og dokumenter
-#### [Oversikt over dokumentrapporteringstjenester](../dev-itpro/analytics/document-reporting-services.md)
+#### [Oversikt over Document Reporting Services](../dev-itpro/analytics/document-reporting-services.md)
+#### [Installere nettverksskriverenheter i lokale miljøer](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Konfigurere SSRS for en lokal distribusjon](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Utskrift](../dev-itpro/analytics/print-documents.md)
 ##### [Installere dokumentrutingsagenten slik at nettverksskriverenheter kan brukes](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,30 +1293,28 @@
 ##### [Velge definisjon av datamodell under oppretting av format for elektronisk rapportering](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet for elektronisk rapportering](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [API-endringer for elektronisk rapporteringsrammeverk for programoppdatering 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analyseverktøy og visualiseringer
+### Innebygde analytisk løsninger
+#### [Innebygd Power BI i arbeidsområder](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded-integrering](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Tilpasningsalternativer med PowerBI.com
+#### [Power BI-integrering](../dev-itpro/analytics/power-bi-integration.md)
+#### [Feste Power BI-rapporterer til arbeidsområder](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Verktøy for å opprette og utvide løsninger
 #### [Analyse, aggregerte målinger og KPI-modellering](../dev-itpro/analytics/analytics.md)
+#### [Forfatte analyserapporter ved hjelp av Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Modellere og aggregere data](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Legge til finansdimensjoner i aggregerte målinger](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Legge til kontekstbasert BI i skjemaer](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Aggregere målingsrapport](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Aggregere dataenhetsrapport](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [KPI-rapport (Key Performance Indicator) (KPI.md)](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI-integrering](../dev-itpro/analytics/power-bi-integration.md)
-#### [Få tilgang til Power BI-innhold](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Opprette en Power BI-rapport og instrumentbord](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Opprette en Power BI-rapport ved hjelp av data for Finance and Operations](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Konfigurere Power BI-integrering for arbeidsområder](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded-integrering](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Innebygd Power BI i arbeidsområder](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Legge til analyse i arbeidsområder ved å bruke Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Sikre analytiske arbeidsområder og rapporter ved å bruke Power BI Embedded](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Legge til Power BI i arbeidsområder](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Feste Power BI-rapporterer til arbeidsområder](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Verktøy for administrasjon av storbruker
 #### [Power BI-integrering med enhetslager](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Konfigurere Power BI-integrering for arbeidsområder](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Vise din egen database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Forfatte analyserapporter ved hjelp av Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Publisere analyseprogrammer i Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Lagerstyring](../supply-chain/inventory/inventory-home-page.md)
@@ -1362,6 +1368,7 @@
 #### [Generere en begrenset plan (oppgaveveiledning)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Opprette en materialplan for koprodukter (oppgaveveiledning)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Vedlikeholde planlagte ordrer](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Håndtere sikkerhetslager](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Håndtere forsinkelser](../supply-chain/master-planning/delays.md)
 #### [Spore en nedbryting](../supply-chain/master-planning/trace-explosion.md)
 #### [Handlingsmeldinger](../supply-chain/master-planning/action-messages.md)
@@ -1438,6 +1445,8 @@
 #### [Definere og vedlikeholde leverandørsamarbeid](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Administrere brukere av leverandørsamarbeid](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Definere leverandørkontoer](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Leverandørforespørselskonfigurasjoner](../supply-chain/procurement/vendor-request-configurations.md)
+#### [Jobbintroduksjon for leverandør](../supply-chain/procurement/vendor-onboarding.md)
 #### [Leverandørsamarbeid med eksterne leverandører](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Leverandørsamarbeid med kunder](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Definere en ekstern katalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### Operere produksjonsjobber
 ##### [Opprette produksjonsordrer](../supply-chain/production-control/create-production-orders.md)
 ##### [Frigi produksjonsordrer](../supply-chain/production-control/release-production-orders.md)
-##### [Reversere produksjonsordrestatusen](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Innsikt i materialunntak](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Frigi stykkliste og formellinjer til lageret](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Reversere produksjonsordrestatusen](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Registrere materialforbruk med en mobilenhet](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Kontrollere råvareforbruk ved å bruke trekkprinsipper](../supply-chain/production-control/flushing-principles.md) 
 ##### [Direkteoverføring fra produksjonsordrer til utleveringsporter](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [Registrering for produksjonsutførelse](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Tilbakemeldinger på produksjon](../supply-chain/production-control/production-feedback.md)
 ##### [Timeregistrering](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Fraværsregistrering i Timeregistrering](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Fraværsregistrering i Timeregistrering](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Behandle finans i produksjon
 ##### [Tildele tid til jobber i en jobbunt](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Beregne materialforbruk](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [Opprette en produktstandard (oppgaveveiledning)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Opprette forhåndsdefinerte produktvarianter (oppgaveveiledning)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Opprette et frigitt produkt for ett firma (oppgaveveiledning)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Livssyklustilstand for produkt](../supply-chain/pim/product-lifecycle.md)
 #### [Opprette en strekkode for et produkt (oppgaveveiledning)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Angi GTIN-koden for et produkt (oppgaveveiledning)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Opprette bunkeattributter for et produkt (oppgaveveiledning)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [Definere transportbegrensninger for en vare](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Lagerstyring](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Lagerkonfigurasjon](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Lagerkonfigurasjon](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Definere et lager ved hjelp av en lagerkonfigurasjonsmal](../supply-chain/inventory/warehouse-template.md)
 #### [Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Måleenhet og lagringspolicyer](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Power BI-innhold for lager](../dev-itpro/analytics/warehouse-power-bi-content.md)

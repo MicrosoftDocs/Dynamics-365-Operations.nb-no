@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 
 > [!IMPORTANT]
-> Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Dynamics 365 for Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. 
+> Du kan registrere dine egne oppgaveveiledninger for Dynamics 365 for Talent, men du kan ikke lagre dem i et BPM-bibliotek (forretningsprosessmodellerer) eller åpne dem fra Hjelp-ruten nå. Du kan lagre dem lokalt eller på en nettverksplassering og deretter åpne og spille dem av ved hjelp av Oppgaveopptaker. 
 
 <a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
 -------------------------
@@ -42,7 +42,7 @@ Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfø
 
 -   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
 -   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
--   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et Forretningsprosessmodelerer-bibliotek i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
+-   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et BPM-bibliotek (forretningsprosessmodellerer) i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
 Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).

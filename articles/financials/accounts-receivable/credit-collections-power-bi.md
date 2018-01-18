@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations. Core
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 536ebae3ec44954aba314a966c9b0d2dabef45d1
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 694a8bfd4601b48a80872662fa7a16bf15d6e65c
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -61,13 +62,6 @@ Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som bes
 | Purringer         | <ul><li>Purrekodebeløp</li><li>Detaljer om purrekodebeløp</li><li>Purrebeløp per firma</li><li>Purrebeløp per kundegruppe</li><li>Purrebeløp etter område</li></ul> |
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruke funksjonen for eksport av underliggende data til å eksportere underliggende data som oppsummeres i en visualisering.
-
-## <a name="extending-the-power-bi-content"></a>Utvide Power BI-innholdet
-Hvis du bruker innholdspakkene som er tilgjengelige i Microsoft Dynamics Lifecycle Services (LCS), kan du gi personer som ikke logger på Finance and Operations, gode analyser. Du kan endre disse innholdspakkene slik at de inneholder andre rapporter eller visuelle hjelpemidler, og deretter publisere innholdspakkene på Power BI.com-leieren for analyse.
-
-Du kan finne Power BI-innholdet **Behandling av kreditt og innkrevinger** i det delte aktivabiblioteket i LCS. Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](../../dev-itpro/analytics/power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
-
-Pass på at du laster ned Power BI-innholdet **Behandling av kreditt og innkrevinger** som gjelder for versjonen av Finance and Operations du bruker.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 

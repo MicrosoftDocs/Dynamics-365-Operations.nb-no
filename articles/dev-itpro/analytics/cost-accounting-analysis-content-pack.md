@@ -3,7 +3,7 @@ title: Kostnadsregnskapsanalyse-innhold for Power BI
 description: "Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4d2966954ccb9df03227edab1fe7c471ddd20f32
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2d0fb4de84838f1778625d977bdd2ceeaac61f8c
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -44,7 +44,7 @@ Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsre
 Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](power-bi-content-microsoft-partners.md). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
+Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). Hvis du vil se en demo som viser hvordan du implementerer Power BI-innholdet, kan du se [Power BI-innhold fra Microsoft og partnerne i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) (Office Mix).
 
 Pass på at du laster ned innholdet **Kostnadsregnskapsanalyse** som gjelder for versjonen av Microsoft Dynamics 365 du bruker.
 

@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 09/29/2017
 
 ---
-# Kontrollere lagertilgjengeligheten
+# <a name="check-the-availability-of-stock"></a>Kontrollere lagertilgjengeligheten
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbeholdning for et bestemt varenummer. Den viser også hvordan du henter forsyningsinformasjon som er knyttet til en vare. Fysisk lagerbeholdning er lagerbeholdningen som er tilgjengelig – det vil si den er kjøpt, mottatt og registrert. Lagerbeholdningen inkluderer den tilgjengelige lagerbeholdningen, men også lageret som er bestilt og forventet, men ennå ikke er mottatt eller registrert. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Hvis du bruker USMF, kan du bruke eksempelverdiene som vises. Disse oppgavene vil vanligvis utføres av en lagermedarbeider.
 
 
-## Kontrollere lagerbeholdning for en vare
+## <a name="check-on-hand-inventory-for-an-item"></a>Kontrollere lagerbeholdning for en vare
 1. Gå til Lagerstyring > Forespørsler og rapporter > Lagerbeholdning.
 2. Velg varenummerraden.
     * Hvis du vil spørre om lagerbeholdning etter varenummer, merker du raden der tabellen er satt til Lagerbeholdning og Felt er satt til Varenummer.  
@@ -49,7 +49,7 @@ Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbe
 11. Lukk siden.
 12. Lukk siden.
 
-## Kontrollere fysisk lagerbeholdning
+## <a name="check-physical-on-hand-inventory"></a>Kontrollere fysisk lagerbeholdning
 1. Gå til Lagerstyring > Forespørsler og rapporter > Fysisk lagerbeholdning.
 2. Skriv inn en verdi i Varenummer-feltet.
     * Du kan bruke feltene Område og Lager til å filtrere listen over elementer.  
@@ -59,7 +59,7 @@ Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbe
 5. Klikk OK.
 6. Lukk siden.
 
-## Kontrollere lagerbeholdning etter lokasjon
+## <a name="check-on-hand-inventory-by-location"></a>Kontrollere lagerbeholdning etter lokasjon
 1. Gå til Lagerstyring > Forespørsler og rapporter > Beholdning etter lokasjon.
 2. Skriv inn en verdi i Lager-feltet.
     * Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du bruke "51".  

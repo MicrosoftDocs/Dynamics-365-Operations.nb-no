@@ -1,7 +1,7 @@
 ---
 title: Prissimulering
 description: "Denne artikkelen inneholder informasjon om prissimulering for tilbud. Prissimulering hjelper deg med å vurdere effekten av fradrag på den fremtidige salgsprisen under tilbudsprosessen, før du fastsetter en bestemt pris."
-author: YuyuScheller
+author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
