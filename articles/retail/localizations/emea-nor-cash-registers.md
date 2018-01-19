@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6ba17bd2f6b6373bc61a160a32fcb907cdd31a5
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 87f33931700140a1fbd1360410a66286dd594ead
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 # <a name="cash-registers-for-norway"></a><span data-ttu-id="c1f22-104">Kassaapparater for Norge</span><span class="sxs-lookup"><span data-stu-id="c1f22-104">Cash registers for Norway</span></span>

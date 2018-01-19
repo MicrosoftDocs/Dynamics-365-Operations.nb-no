@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d55e9a520b1f895d130f24834626429e19b4b939
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ee931a46524a8f0f79f53b8371765118caf5f1f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -255,10 +255,10 @@ ms.lasthandoff: 01/17/2018
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | <span data-ttu-id="905b2-340">Fast kostnad</span><span class="sxs-lookup"><span data-stu-id="905b2-340">Fixed cost</span></span>                            | <span data-ttu-id="905b2-341">Organisasjon</span><span class="sxs-lookup"><span data-stu-id="905b2-341">Organization</span></span>                         | <span data-ttu-id="905b2-342">100,00</span><span class="sxs-lookup"><span data-stu-id="905b2-342">100.00</span></span>           | <span data-ttu-id="905b2-343">0,00</span><span class="sxs-lookup"><span data-stu-id="905b2-343">0.00</span></span>         | <span data-ttu-id="905b2-344">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="905b2-344">1/1/2017</span></span>   | <span data-ttu-id="905b2-345">Aldri</span><span class="sxs-lookup"><span data-stu-id="905b2-345">Never</span></span>    |
 | <span data-ttu-id="905b2-346">10001</span><span class="sxs-lookup"><span data-stu-id="905b2-346">10001</span></span>                                 | <span data-ttu-id="905b2-347">Organisasjon</span><span class="sxs-lookup"><span data-stu-id="905b2-347">Organization</span></span>                         | <span data-ttu-id="905b2-348">0,00</span><span class="sxs-lookup"><span data-stu-id="905b2-348">0.00</span></span>             | <span data-ttu-id="905b2-349">150.00</span><span class="sxs-lookup"><span data-stu-id="905b2-349">150.00</span></span>       | <span data-ttu-id="905b2-350">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="905b2-350">1/1/2017</span></span>   | <span data-ttu-id="905b2-351">Aldri</span><span class="sxs-lookup"><span data-stu-id="905b2-351">Never</span></span>    |
-| <span data-ttu-id="905b2-352">10001 (\\*)</span><span class="sxs-lookup"><span data-stu-id="905b2-352">10001 (\\*)</span></span>                             | <span data-ttu-id="905b2-353">Finans</span><span class="sxs-lookup"><span data-stu-id="905b2-353">Finance</span></span>                              |                  | <span data-ttu-id="905b2-354">50,00</span><span class="sxs-lookup"><span data-stu-id="905b2-354">50.00</span></span>        | <span data-ttu-id="905b2-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="905b2-355">1/1/2017</span></span>   | <span data-ttu-id="905b2-356">Aldri</span><span class="sxs-lookup"><span data-stu-id="905b2-356">Never</span></span>    |
+| <span data-ttu-id="905b2-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="905b2-352">10001 (\*)</span></span>                             | <span data-ttu-id="905b2-353">Finans</span><span class="sxs-lookup"><span data-stu-id="905b2-353">Finance</span></span>                              |                  | <span data-ttu-id="905b2-354">50,00</span><span class="sxs-lookup"><span data-stu-id="905b2-354">50.00</span></span>        | <span data-ttu-id="905b2-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="905b2-355">1/1/2017</span></span>   | <span data-ttu-id="905b2-356">Aldri</span><span class="sxs-lookup"><span data-stu-id="905b2-356">Never</span></span>    |
 | <span data-ttu-id="905b2-357">Kostnadsatferd eller variabel kostnad (\*\*)</span><span class="sxs-lookup"><span data-stu-id="905b2-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="905b2-358">Organisasjon</span><span class="sxs-lookup"><span data-stu-id="905b2-358">Organization</span></span>                         | <span data-ttu-id="905b2-359">0,00</span><span class="sxs-lookup"><span data-stu-id="905b2-359">0.00</span></span>             | <span data-ttu-id="905b2-360">0,00</span><span class="sxs-lookup"><span data-stu-id="905b2-360">0.00</span></span>         | <span data-ttu-id="905b2-361">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="905b2-361">1/1/2017</span></span>   | <span data-ttu-id="905b2-362">Aldri</span><span class="sxs-lookup"><span data-stu-id="905b2-362">Never</span></span>    |
 
-<span data-ttu-id="905b2-363">\\* Noden for variable kostnader er ikke nødvendig.</span><span class="sxs-lookup"><span data-stu-id="905b2-363">\\* The variable cost node isn't required.</span></span> <span data-ttu-id="905b2-364">Hvis en kostnad ikke er klassifisert som en fast kostnad, må den være en variabel kostnad.</span><span class="sxs-lookup"><span data-stu-id="905b2-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
+<span data-ttu-id="905b2-363">\* Noden for variable kostnader er ikke nødvendig.</span><span class="sxs-lookup"><span data-stu-id="905b2-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="905b2-364">Hvis en kostnad ikke er klassifisert som en fast kostnad, må den være en variabel kostnad.</span><span class="sxs-lookup"><span data-stu-id="905b2-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
 <span data-ttu-id="905b2-365">\*\* En detaljert regel blir opprettet for kombinasjonen av kostnadselementmedlem 10001 og alle kostnadobjektmedlemmer som er samlet under hierarkinivået Finans (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="905b2-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
