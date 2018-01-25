@@ -53,10 +53,9 @@ Julie bruker følgende Excel-mal til å forberede budsjettet:
 
 [![Excel-mal](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Øvelse 1: konfigurasjon
-=========================
+## <a name="exercise-1-configuration"></a>Øvelse 1: konfigurasjon
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Oppgave 1: opprette et organisasjonshierarki**
+### <a name="task-1-create-organizational-hierarchy"></a>**Oppgave 1: opprette et organisasjonshierarki**
 Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprette et svært enkelt organisasjonshierarki som bare består av økonomiavdelingen. 1.1. Naviger til organisasjonshierarkier (Organisasjonsstyring &gt; Organisasjoner &gt; Organisasjonshierarkier), og klikk Ny-knappen
 
 ![Organisasjonshierarki](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprett
 
 [![Gjelder fra](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Oppgave 2: konfigurere brukersikkerhet
+### <a name="task-2-configure-user-security"></a>Oppgave 2: konfigurere brukersikkerhet
 Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilgang til data for budsjettplaner. Julie må gi seg selv tilgang til budsjettplaner. 
 
 2.1. Bytt til konteksten med den juridiske enheten. 
@@ -109,7 +108,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 [![Gi tilgang](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
+### <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
 3.1. Gå til Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Legg merke til scenariene vi skal bruke videre i denne laben, på Scenarier-siden: Faktisk, forrige år og Budsjettert. 
 
 *Obs!  Hvis du vil, kan du opprette nye scenarier for denne øvelsen og bruke dem i stedet.* 
@@ -118,7 +117,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 *Obs! Siden Julie ikke bruker formell godkjenningsprosess i budsjettforberedelsen, hopper vi over oppsett av arbeidsflyter, stadier og oppsett av arbeidsflytstadier i denne laben og bruker eksisterende oppsett for automatisk godkjenning av arbeidsflyt. Se i tillegget hvis du vil ha informasjon om denne arbeidsflytkonfigurasjonen.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Oppgave 4: opprette budsjettplankolonner
+### <a name="task-4-create-budget-plan-columns"></a>Oppgave 4: opprette budsjettplankolonner
 Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan brukes i oppsett for budsjettplandokument. I vårt eksempel må vi opprette en kolonne for Faktisk, forrige år og 12 kolonner som skal representere hver måned i et budsjettert år. Kolonner kan opprettes ved ganske enkelt å klikke Legg til-knappen og fylle inn verdiene, eller ved hjelp av Dataenhet. Vi skal bruke Dataenhet til å fylle inn verdiene i denne laben. 
 
 4.1. Åpne Kolonner-siden i Budsjettering&gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte) 
@@ -151,7 +150,7 @@ Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan br
 
 [![Oppdater](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Oppgave 5: opprette oppsett og maler for budsjettplandokument
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Oppgave 5: opprette oppsett og maler for budsjettplandokument
 Oppsettet definerer hvordan rutenettlinjer blir seende ut i budsjettplandokumentet når brukere åpner budsjettplandokumentet. Det er også mulig å bytte oppsettet for budsjettplandokument for å se de samme dataene fra ulike vinkler. Nå som hun har kolonner definert for bruk med budsjettplandokumentet vårt, må Julie opprette et oppsett for budsjettplandokument som ligner på Excel-tabellen hun bruker til å lage budsjettdata (se delen Oversikt over scenariet i denne laben) 
 
 5.1. Åpne Oppsett-siden i Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Opprett et nytt oppsett for oppføringen for månedsbudsjett:
@@ -171,7 +170,7 @@ Basert på oppsettdefinisjonen for budsjettplan kan vi opprette en Excel-mal som
 
 5.3. &lt; Valgfritt trinn&gt; Endre Excel-malen slik at den ser mer brukervennlig ut. Legg til totalformler, overskriftsfelt, formatering og så videre. Lagre endringene, og last opp filen til budsjettplanoppsettet ved å klikke Oppsett &gt; Last opp [![Last opp](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Oppgave 6: opprette en budsjettplanleggingsprosess
+### <a name="task-6-create-a-budget-planning-process"></a>Oppgave 6: opprette en budsjettplanleggingsprosess
 Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppsettet ovenfor kombineres, for å begynne å registrere budsjettplaner. Budsjettplanleggingsprosessen definerer hvilke budsjetteringsorganisasjoner, arbeidsflyter, oppsett og maler som skal brukes til å opprette budsjettplaner. 
 
 6.1. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingsprosess, og opprett en ny post.
@@ -192,10 +191,9 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 
 [![Aktiver](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Øvelse 2: prosessimulering
-==============================
+## <a name="exercise-2-process-simulation"></a>Øvelse 2: prosessimulering
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Oppgave 7: generere innledende data for budsjettplan fra Økonomimodul
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Oppgave 7: generere innledende data for budsjettplan fra Økonomimodul
 7.1. Gå til Budsjettering &gt; Periodisk &gt; Generer budsjettplan fra økonomimodul. Fyll ut parameterne for periodisk prosess, og klikk Generer. 
 
 [![Generer](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 
 [![Visning av budsjettplan](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Oppgave 8: opprette budsjett for gjeldende år basert på fjorårets faktiske data
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Oppgave 8: opprette budsjett for gjeldende år basert på fjorårets faktiske data
 Tildelingsmetoder kan brukes i budsjettplaner til å kopiere informasjon for budsjettplaner fra ett scenario til et annet, spre dem på tvers av perioder, eller tildele dem til dimensjoner. Vi skal bruke tildelinger til å opprette budsjett for gjeldende år fra fjoråret faktiske data. 
 
 8.1. Velg alle linjene i rutenettet for budsjettplandokument, og klikk knappen for å tildele budsjett 
@@ -223,7 +221,7 @@ Systemet kopierer fjorårets faktiske beløp til budsjettet for gjeldende år, o
 
 [![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Oppgave 9: justere budsjettplandokument ved hjelp av Excel og gjøre ferdig dokumentet
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Oppgave 9: justere budsjettplandokument ved hjelp av Excel og gjøre ferdig dokumentet
 9.1. Klikk knappen for regnearket for å åpne dokumentinnholdet i Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ Systemet kopierer fjorårets faktiske beløp til budsjettet for gjeldende år, o
 
 Når arbeidsflyten er fullført, endres stadiet for budsjettplandokument til godkjent. [![Godkjent](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Tillegg
-========
+## <a name="appendix"></a>Tillegg
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfigurasjon av automatisk godkjenning av arbeidsflyt
 

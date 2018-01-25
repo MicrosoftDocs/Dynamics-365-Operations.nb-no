@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 Dette emnet beskriver **Faktisk vs. budsjett**-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet. 
 
-# <a name="overview"></a>Oversikt
+## <a name="overview"></a>Oversikt
 
 Den **Faktisk vs. budsjett** Power BI-innholdet ble opprettet for personer som har ansvar for overvåking av faktiske resultater mot budsjetterte resultater i organisasjonen. **Faktisk vs. budsjett** Power BI-innhold gir oversikt over avvik i budsjettet. Du kan analysere budsjettet for gjeldende år etter kontokategori, budsjettkode, hovedkontoe, beskrivelser av hovedkontoe eller regnskapsperiode for å få en bedre forståelse av eventuelle avvik. 
 
-# <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 Rapporter fra Power BI-innholdet **Faktisk i forhold til budsjett** vises i **Finansbudsjetter og prognoser**- og **CFO**-arbeidsområder.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i **Faktisk vs. budsjett** Power BI-innholdet.
 
 | Rapporter                      | Mål |
@@ -50,7 +50,7 @@ Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i **Fak
 | Nettoinntekt                  | <ul><li>Nettoinntekt i inneværende år</li><li>Mål for nettoinntekt basert på budsjett </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
+## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
 | Enhet                    | Innhold |
 |---------------------------|----------|

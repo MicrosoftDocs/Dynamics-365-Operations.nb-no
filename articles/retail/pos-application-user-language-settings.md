@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Dette emnet beskriver hvordan du endrer språkinnstillinger i moderne salgssted for detaljhandel (MPOS) og skysalgssted.
 
-<a name="overview"></a>Oversikt
-========
-
+## <a name="overview"></a>Oversikt
 Modern POS (MPOS) og Cloud POS for detaljhandelen støtter miljøer der innstillinger for språk og oversettelser kan variere mellom lageret og brukerinnstillinger. Butikken kan for eksempel være plassert i et område der engelsk er mest vanlig for kundene, men noen arbeidere foretrekker å bruke programmet med franske oversettelser.
 
 ## <a name="data-language"></a>Språk for data

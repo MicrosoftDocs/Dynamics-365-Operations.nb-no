@@ -112,7 +112,7 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 3.  Velg en byggeblokk, og klikk deretter **Angre utsjekking**.
 4.  Klikk **Ja** for å sjekke inn byggeblokken.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 
 [Finansrapportering](financial-reporting-intro.md)
 

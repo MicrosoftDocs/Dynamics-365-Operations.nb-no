@@ -43,7 +43,7 @@ Du kan fordele, eller distribuere, pengebeløp til én eller flere kontoer eller
 
 [![Forretningsprosess](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Merverdiavgift
+## <a name="sales-tax"></a>Merverdiavgift
 Hvert firma samler og betaler avgifter til forskjellige skattemyndigheter. Reglene og satsene varierer etter land/område, delstat, region og by.
 Reglene må i tillegg oppdateres med jevne mellomrom når skattemyndighetene endrer kravene. Mva-koder inneholder grunnleggende informasjon om hvordan du samler og betaler avgifter til myndighetene. Når du definerer mva-koder, kan du definere beløpene eller prosentandelene som må samles inn. Du definerer også de ulike metodene som brukes til å bruke disse beløpene eller prosentandelene på transaksjonsbeløpene. Emnene i denne delen gir informasjon om hvordan du definerer mva-koder for metodene og satsene som kreves av skattemyndighetene.
 
@@ -52,13 +52,13 @@ Reglene må i tillegg oppdateres med jevne mellomrom når skattemyndighetene end
  - [Mva-betalinger og avrundingsregler](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Tilleggsressurser
+## <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
 Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling. 
 
-#### <a name="blogs"></a>Blogger
+### <a name="blogs"></a>Blogger
 
 Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +66,10 @@ Det er mange innlegg om General Ledger på [Microsoft Dynamics AX-teamets produk
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
-#### <a name="task-guides"></a>Oppgaveveiledninger
+### <a name="task-guides"></a>Oppgaveveiledninger
 Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
 
-#### <a name="videos"></a>Videoer
+### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

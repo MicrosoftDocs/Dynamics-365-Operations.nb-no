@@ -98,7 +98,7 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 [Generere en finansrapport](generate-financial-report.md)
 
 
