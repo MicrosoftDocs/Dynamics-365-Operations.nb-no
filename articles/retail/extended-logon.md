@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 7547ff6dcea546100a11f20e8e8f7f7fcab82cee
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: d369b760047a18c82dd89f3452d94b9c62ba8841
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -34,8 +34,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="84842-104">Dette emnet dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="84842-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
 
-<a name="setting-up-extended-logon"></a><span data-ttu-id="84842-105">Definere utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-105">Setting up extended logon</span></span>
-=========================
+## <a name="setting-up-extended-logon"></a><span data-ttu-id="84842-105">Definere utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-105">Setting up extended logon</span></span>
 
 <span data-ttu-id="84842-106">Du kan finne oppsettet for strekkodemasker på **Retail** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Funksjonalitetsprofiler**.</span><span class="sxs-lookup"><span data-stu-id="84842-106">You can find the setup for bar code masks at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="84842-107">Hurtigkategorien **Funksjoner** inneholder følgende alternativer som er knyttet til utvidet pålogging.</span><span class="sxs-lookup"><span data-stu-id="84842-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
 
@@ -55,23 +54,19 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="84842-116">Når alternativet **Stabspålogging med kort krever passord** er aktivert, velger stabspålogging med kort bare arbeideren som er tilordnet til den utvidede påloggingen som vises.</span><span class="sxs-lookup"><span data-stu-id="84842-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="84842-117">Arbeidere må fremdeles angi passord når dette alternativet er aktivert.</span><span class="sxs-lookup"><span data-stu-id="84842-117">Workers must still enter their password when this option is enabled.</span></span>
 
-<a name="assigning-an-extended-logon"></a><span data-ttu-id="84842-118">Tilordne en utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-118">Assigning an extended logon</span></span>
-===========================
+## <a name="assigning-an-extended-logon"></a><span data-ttu-id="84842-118">Tilordne en utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-118">Assigning an extended logon</span></span>
 
 <span data-ttu-id="84842-119">Som standard kan bare ledere tilordne utvidet pålogging til arbeidere.</span><span class="sxs-lookup"><span data-stu-id="84842-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="84842-120">Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS.</span><span class="sxs-lookup"><span data-stu-id="84842-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="84842-121">Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet.</span><span class="sxs-lookup"><span data-stu-id="84842-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="84842-122">Velg arbeideren, og klikk deretter **Tilordne**.</span><span class="sxs-lookup"><span data-stu-id="84842-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="84842-123">Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side.</span><span class="sxs-lookup"><span data-stu-id="84842-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="84842-124">Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="84842-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="84842-125">Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.</span><span class="sxs-lookup"><span data-stu-id="84842-125">Click **OK** to save the extended logon for that worker.</span></span>
 
-<a name="deleting-an-extended-logon"></a><span data-ttu-id="84842-126">Slette en utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-126">Deleting an extended logon</span></span>
-==========================
+## <a name="deleting-an-extended-logon"></a><span data-ttu-id="84842-126">Slette en utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-126">Deleting an extended logon</span></span>
 
 <span data-ttu-id="84842-127">Du kan slette den utvidede påloggingen som er tilordnet til en arbeider, ved å søke etter arbeideren ved hjelp av **Utvidet pålogging** operasjonen.</span><span class="sxs-lookup"><span data-stu-id="84842-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="84842-128">Velg arbeideren, og klikk deretter **Ikke tilordnet**.</span><span class="sxs-lookup"><span data-stu-id="84842-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="84842-129">All utvidet påloggingslegitimasjon som er knyttet til denne arbeider fjernes.</span><span class="sxs-lookup"><span data-stu-id="84842-129">All extended logon credentials that are associated with that worker are removed.</span></span>
 
-<a name="extending-extended-logon"></a><span data-ttu-id="84842-130">Utvide utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-130">Extending extended logon</span></span>
-========================
+## <a name="extending-extended-logon"></a><span data-ttu-id="84842-130">Utvide utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-130">Extending extended logon</span></span>
 
 <span data-ttu-id="84842-131">Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere.</span><span class="sxs-lookup"><span data-stu-id="84842-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="84842-132">Hvis du vil ha mer informasjon, kan du se i dokumentasjonen for utvidelsesmuligheter for salgssted.</span><span class="sxs-lookup"><span data-stu-id="84842-132">For more information, see the POS extensibility documentation.</span></span>
 
-<a name="using-extended-logon"></a><span data-ttu-id="84842-133">Bruke utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-133">Using extended logon</span></span>
-====================
+## <a name="using-extended-logon"></a><span data-ttu-id="84842-133">Bruke utvidet pålogging</span><span class="sxs-lookup"><span data-stu-id="84842-133">Using extended logon</span></span>
 
 <span data-ttu-id="84842-134">Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne hans eller hennes kort mens Salgsstedets påloggingsside vises.</span><span class="sxs-lookup"><span data-stu-id="84842-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="84842-135">Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.</span><span class="sxs-lookup"><span data-stu-id="84842-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
 
