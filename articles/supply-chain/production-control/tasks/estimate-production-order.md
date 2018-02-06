@@ -1,4 +1,4 @@
---- 
+---
 title: Estimere en produksjonsordre
 description: "Du kan kjøre denne prosedyren ved hjelp av demonstrasjonsdataselskapet USMF eller ved hjelp av ditt eget datasett."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Du kan kjøre denne prosedyren ved hjelp av demonstrasjonsdataselskapet USMF ell
 1. Klikk Styr kostnader i handlingsruten.
 2. Klikk Vis beregningsdetaljer.
     * Denne siden viser kostnadsoppdelingen. Du kan for eksempel vise samlet kostpris per enhet for det ferdige produktet i den første raden. De etterfølgende radene inneholder kostnader i henhold til stykkliste, produksjonsruten, og indirekte kostnader.  
-
 

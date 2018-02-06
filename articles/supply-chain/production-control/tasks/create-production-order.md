@@ -1,4 +1,4 @@
---- 
+---
 title: Opprette en produksjonsordre
 description: "Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre. Demonstras
     * Endring av behandlingstiden påvirker det estimerte ruteforbruket og kostnadene for produksjonsordren.  
 6. Klikk Lagre.
 7. Lukk siden.
-
 

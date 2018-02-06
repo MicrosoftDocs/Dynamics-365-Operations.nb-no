@@ -1,4 +1,4 @@
---- 
+---
 title: Rapportere en produksjonsordre som avsluttet
 description: "Denne fremgangsmåten viser hvordan du rapporterer en produksjonsordre som ferdig."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Denne fremgangsmåten viser hvordan du rapporterer en produksjonsordre som ferdi
 3. Merk den valgte raden i listen.
 4. Klikk koblingen i den valgte raden i listen.
     * Ferdigmeldingsjournalen er postert. Hvis du vil foreta justeringer i journalen, kan du manuelt opprette en ny journal der du kan gjøre endringer.  
-
 

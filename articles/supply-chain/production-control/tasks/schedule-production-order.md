@@ -1,4 +1,4 @@
---- 
+---
 title: Planlegge en produksjonsordre
 description: Denne prosedyren viser hvordan du planlegger en produksjonsordre.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Denne prosedyren viser hvordan du planlegger en produksjonsordre. Demonstrasjons
     * Kapasitetsbelastning-siden viser kapasiteten som er reservert gjennom finplanlegging, totalt antall timer som er reservert for ressursen nå, og gjenværende antall timer som er tilgjengelig for finplanlegging av ressursen.  
 6. Lukk siden.
 7. Lukk siden.
-
 

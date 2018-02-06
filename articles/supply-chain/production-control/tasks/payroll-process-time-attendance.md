@@ -1,4 +1,4 @@
---- 
+---
 title: "Aktivere lønnsprosessen for timeregistrering"
 description: "Denne fremgangsmåten viser hvordan du aktiverer lønnsprosessen for timeregistrering."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Denne fremgangsmåten viser hvordan du aktiverer lønnsprosessen for timeregistr
 6. Utvid delen Tidsregistrering.
 7. Klikk Rediger.
 8. Angi eller velg en verdi i Lønnsavtale-feltet.
-
 

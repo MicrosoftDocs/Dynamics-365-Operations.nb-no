@@ -1,4 +1,4 @@
---- 
+---
 title: Frigi en produksjonsordre
 description: "Denne fremgangsmåten viser hvordan du frigir en produksjonsordre."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Denne fremgangsmåten viser hvordan du frigir en produksjonsordre. Demonstrasjon
 5. Klikk i boksen Skriv ut rutekort.
 6. Klikk OK.
 7. Lukk siden.
-
 

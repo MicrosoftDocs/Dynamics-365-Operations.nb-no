@@ -1,4 +1,4 @@
---- 
+---
 title: "Klargjøre en Kanban-prosessjobb når materialer er tilgjengelige for arbeidscellen"
 description: "Denne oppgaven fokuserer på å klargjøre en kanban-prosessjobb når alle materialer er tilgjengelige for arbeidscellen."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Denne oppgaven fokuserer på å klargjøre en kanban-prosessjobb når alle mater
     * Hvis flere jobber er valgt, vises summen av alle varer som behøves for de valgte jobbene, i plukklisten.  
 6. Klikk Klargjør.
     * Klargjøringsprosessen er nå fullført. Den valgte avmerkingsboksen for alle rader i plukklisten angir at forsyningsstatusen er plukket.  
-
 
