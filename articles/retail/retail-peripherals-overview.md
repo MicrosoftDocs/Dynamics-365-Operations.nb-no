@@ -1,6 +1,7 @@
 ---
 title: Oversikt over detaljhandelsenheter
 description: Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter.
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "Slå sammen lagerpartier"
 description: "Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti."
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

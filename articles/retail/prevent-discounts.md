@@ -1,7 +1,7 @@
 ---
 title: Hindre rabatter for detaljhandelsprodukter
 description: "Det finnes ulike årsaker til hvorfor forhandlere vil forhindre at noen produkter rabatteres, fra en kampanje eller ved salget på salgsstedet."
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
