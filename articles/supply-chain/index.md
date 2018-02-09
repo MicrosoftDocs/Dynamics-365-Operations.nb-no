@@ -3,7 +3,7 @@ title: Startside for forsyningskjedeadministrasjon
 description: Dette emnet inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,9 +52,12 @@ Velg et funksjonsområde du vil finne ut mer om.
 
 ## <a name="videos"></a>Videoer
 
-### <a name="get-started"></a>Komme i gang  
+Disse korte videoene hjelper deg med å finne ut mer om de nye funksjonene i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
-Disse korte videoene hjelper med å komme i gang med de nye funksjonene i oppdateringen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
+-  [Prosepkt til kontanter-integrering](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Disse korte videoene hjelper deg med å finne ut mer om de nye funksjonene i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
 -  [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
@@ -62,8 +65,7 @@ Disse korte videoene hjelper med å komme i gang med de nye funksjonene i oppdat
 -  [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuell planlegging med Gantt-diagram for produksjons- og partiordrer](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Registreringer for teknisk konferanse
-De fleste av disse registreringene omhandler produktfunksjonalitet i den forrige versjonen av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+Disse registreringene for tekniske konferanser omhandler produktfunksjonalitet i den forrige versjonen av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Hovedplanlegging – tips og triks for feilsøkingsytelse</a>
