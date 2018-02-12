@@ -137,7 +137,7 @@ Det oppstår en syklustellingsdifferanse i følgende scenarier: hvis **Er en syk
 
 Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte verdien på siden **Syklustelling venter på gjennomgang**. Du kan kontrollere den endrede tellingen av vareantallet på siden **Beholdning etter lokasjon**. Tellingsverdien avvises hvis forskjellen ikke kan godkjennes.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 [Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
 
 

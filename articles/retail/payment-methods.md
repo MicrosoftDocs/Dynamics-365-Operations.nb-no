@@ -1,7 +1,7 @@
 ---
 title: "Betalingsmåter"
 description: "Hver betalingstype en forhandler godtar, må konfigureres når systemet defineres. Denne artikkelen beskriver betalingstypene som du kan sette opp og beskriver fremgangsmåten for hvordan du definerer dem."
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

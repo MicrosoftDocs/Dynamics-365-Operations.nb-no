@@ -1,4 +1,4 @@
---- 
+---
 title: Avslutte en produksjonsordre
 description: "Denne fremgangsmåten viser hvordan du avslutter en produksjonsordre."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Denne fremgangsmåten viser hvordan du avslutter en produksjonsordre. Demonstras
 1. Klikk Styr kostnader i handlingsruten.
 2. Klikk Vis kostnadssammenligning.
     * Når du har avsluttet produksjonsordren, kan du sammenligne den estimerte kostprisen mot den realiserte kostprisen for å få en oversikt over produksjonsavvikene.  
-
 

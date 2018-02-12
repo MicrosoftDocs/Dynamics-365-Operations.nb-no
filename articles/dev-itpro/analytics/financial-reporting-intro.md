@@ -8,9 +8,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
@@ -97,7 +98,7 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 [Generere en finansrapport](generate-financial-report.md)
 
 

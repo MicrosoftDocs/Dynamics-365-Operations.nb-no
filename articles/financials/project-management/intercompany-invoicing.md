@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ For dette eksemplet må FRSI være en kunde i den juridiske enheten for USSI, og
 
 1.  Definer FRSI som en kunde i den juridiske enheten for USSI, og definer USSI som en leverandør i den juridiske enheten for FRSI. Det finnes tre inngangspunkter for trinnene som kreves for denne oppgaven.
     | Trinn | Inngangspunkt                                                                       | beskrivelse   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | Gå til USSI, og klikk **Kunder** &gt; **Kunder** &gt; **Alle kunder**. | Opprett en ny kundepost for FRSI, og velg kundegruppen.                                                                                                                                                                                                                           |
-    | B    | Gå til FRSI, og klikk **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører**.        | Opprett en ny leverandørpost for USSI, og velg leverandørgruppe.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | Gå til USSI, og klikk **Kunder** &gt; **Kunder** &gt; **Alle kunder**. | Opprett en ny kundepost for FRSI, og velg kundegruppen.                                                                                  |
+    | B    | Gå til FRSI, og klikk **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører**.        | Opprett en ny leverandørpost for USSI, og velg leverandørgruppe.                                                                                    |
     | K    | I FRSI åpner du leverandørposten som du nettopp opprettet.                            | I handlingsruten i kategorien **Generelt** i **Oppsett**-gruppen, klikker du **Konsernintern**. På siden **Konserninterne** i kategorien **Handelsforbindelse**, setter du glidebryteren **Aktiv** til **Ja**. I feltet **Kundefirma** velger du kundeposten som du opprettet i trinn A. |
 
 2.  Klikk **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Kontoparametere for prosjektstyring**, og klikk deretter kategorien **Konsernintern**. Måten du oppretter parametrene avhenger av om du er den lånende juridiske enheten eller den som låner ut den juridiske enheten.

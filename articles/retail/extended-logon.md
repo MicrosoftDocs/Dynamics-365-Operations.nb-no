@@ -34,8 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Dette emnet dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.
 
-<a name="setting-up-extended-logon"></a>Definere utvidet pålogging
-=========================
+## <a name="setting-up-extended-logon"></a>Definere utvidet pålogging
 
 Du kan finne oppsettet for strekkodemasker på **Retail** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Funksjonalitetsprofiler**. Hurtigkategorien **Funksjoner** inneholder følgende alternativer som er knyttet til utvidet pålogging.
 
@@ -55,23 +54,19 @@ Når alternativet **Kortpålogging for stab** er aktivert, kan arbeidere som har
 
 Når alternativet **Stabspålogging med kort krever passord** er aktivert, velger stabspålogging med kort bare arbeideren som er tilordnet til den utvidede påloggingen som vises. Arbeidere må fremdeles angi passord når dette alternativet er aktivert.
 
-<a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
-===========================
+## <a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
 
 Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
 
-<a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
-==========================
+## <a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
 
 Du kan slette den utvidede påloggingen som er tilordnet til en arbeider, ved å søke etter arbeideren ved hjelp av **Utvidet pålogging** operasjonen. Velg arbeideren, og klikk deretter **Ikke tilordnet**. All utvidet påloggingslegitimasjon som er knyttet til denne arbeider fjernes.
 
-<a name="extending-extended-logon"></a>Utvide utvidet pålogging
-========================
+## <a name="extending-extended-logon"></a>Utvide utvidet pålogging
 
 Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere. Hvis du vil ha mer informasjon, kan du se i dokumentasjonen for utvidelsesmuligheter for salgssted.
 
-<a name="using-extended-logon"></a>Bruke utvidet pålogging
-====================
+## <a name="using-extended-logon"></a>Bruke utvidet pålogging
 
 Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne hans eller hennes kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
 

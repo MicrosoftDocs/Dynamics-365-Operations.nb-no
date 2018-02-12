@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Denne funksjonen er en del av en bestemt versjon, og den er bare tilgjengelig for brukere som har valgt CAAP-programmet (fordelsprogrammet for kontinuerlig automatisk oppdatering). Denne funksjonen vil inkluderes i en annen kommende versjon som blir generelt tilgjengelig. Hvis du vil ha mer informasjon om standard og målrettede versjoner, kan du se [Standard og målrettet plattformversjon](../get-started/public-preview-releases.md).

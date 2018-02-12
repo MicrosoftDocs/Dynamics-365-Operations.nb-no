@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Angi en radkode i en raddefinisjon
+## <a name="specify-a-row-code-in-a-row-definition"></a>Angi en radkode i en raddefinisjon
 
 I raddefinisjoner identifiserer tall eller etiketter **Radkode**-cellen hver linje i raddefinisjonen. Du kan angi radkoden for å referere til data i beregninger og totaler.
 
@@ -506,8 +506,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 4.  Velg settet som skal slettes, og klikk deretter **Slett**. Klikk **Ja** for å slette dimensjonsverdisettet permanent.
 
 
-<a name="see-also"></a>Se også
---------
+## <a name="see-also"></a>Se også
 
 [Finansrapportering](financial-reporting-intro.md)
 

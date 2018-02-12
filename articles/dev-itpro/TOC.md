@@ -114,6 +114,7 @@
 #### [Tilpassing: overlag og utvidelser](extensibility/customization-overlayering-extensions.md)
 ### Hva er nytt
 #### [Endringer i utvidelsesmuligheter (juli 2017)](extensibility/changes-july-2017.md)
+#### [Endringer i utvidelsesmuligheter i Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Grunnleggende
 #### [Påtrengende tilpassinger](extensibility/intrusive-customizations.md)
 #### [Klasseutvidelser](extensibility/class-extensions.md)
@@ -138,6 +139,11 @@
 #### [Endre egenskaper for skjemakontroll](extensibility/modify-control-properties.md)
 #### [Endre en etikett](extensibility/change-label.md)
 #### [Utvide omfanget for nummerserie](extensibility/extend-number-sequence-scope.md)
+#### [Legge til en ny lagerdimensjon](extensibility/inventory-dimensions.md)
+#### [Endringer i pris og rabattutvidelse](extensibility/pricing-app73.md)
+#### [Utvidelse av tabellutforming](extensibility/map-extensions.md)
+#### [Utvidede tabelltilordninger brukt som grensesnitt](extensibility/maps-as-interfaces.md)
+#### [Utvidede tabelltilordninger brukt for versjonskontroll](extensibility/maps-with-versioning.md)
 
 
 
@@ -523,16 +529,16 @@
 
 # [Oppgradering og overføring](migration-upgrade/upgrade-home-page.md)
 ## [Oppgradere fra AX 2012 til Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analysere – Bruke verktøyet for oppgraderingsanalyse til å planlegge oppgradering](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analysere – Bruke kodeoppgraderingstjenesten til å anslå hva som må gjøres for å oppgradere kode](migration-upgrade/analyze-code-upgrade.md)
-### [Analysere – Distribuere et sandkassemiljø](migration-upgrade/analysis-sandbox.md)
-### [Oppgradere – Dataoppgradering i et utviklingsmiljø](migration-upgrade/data-upgrade-2012.md)
-### [Oppgradere – Dataoppgraderingsoppgaver for AX 2012](migration-upgrade/prepare-data-upgrade.md)
-### [Oppgradere – Dataoppgradering i et sandkassemiljø](migration-upgrade/upgrade-data-sandbox.md)
-### [Validere – Testing av overgang](migration-upgrade/upgrade-cutover-testing.md)
-### [Validere – Oppgaver å utføre etter oppgradering](migration-upgrade/app-validation-process.md)
-### [Validere – Funksjonstesting](migration-upgrade/upgrade-functional-validation.md)
-### [Validere – Gjøre klar til aktivering](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012-oppgradering – Bruke verktøyet for oppgraderingsanalyse til å planlegge](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012-oppgradering – Bruke kodeoppgraderingstjenesten til å anslå hva som må gjøres](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012-oppgradering – Distribuere et sandkassemiljø](migration-upgrade/analysis-sandbox.md)
+### [AX 2012-oppgradering – Dataoppgradering i et utviklingsmiljø](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012-oppgradering – Dataoppgraderingsoppgaver for AX 2012](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012-oppgradering – Dataoppgradering i et sandkassemiljø](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012-oppgradering – Testing av overgang](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012-oppgradering – Oppgaver som skal fullføres etter oppgradering](migration-upgrade/app-validation-process.md)
+### [AX 2012-oppgradering – Funksjonstest](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012-oppgradering – Klargjøre for å aktivere](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Endringer som påvirker oppgradering fra AX 2012
@@ -590,6 +596,8 @@
 ## [Satsvis behandling](sysadmin/batch-processing-overview.md)
 ### [Oversikt over satsvis server](sysadmin/batch-server-overview.md)
 ### [Opprette en satsvis jobb](sysadmin/tasks/create-batch-job.md)
+
+## [Opprette regler for optimaliseringsrådgiver](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Oversikt over Lifecycle Services](lifecycle-services/lcs.md)

@@ -1,4 +1,4 @@
---- 
+---
 title: Starte en produksjonsordre
 description: "Denne fremgangsmåten viser hvordan du starter en produksjonsordre i shop floor."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Denne fremgangsmåten viser hvordan du starter en produksjonsordre i shop floor.
 7. Klikk Poster.
 8. Klikk OK.
     * Tiden som brukes på de enkelte operasjonene er registrert i rutekortjournalen. Antall korrekte og feil kan også rapporteres.  
-
 

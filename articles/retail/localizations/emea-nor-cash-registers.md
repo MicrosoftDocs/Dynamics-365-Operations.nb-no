@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: epopov

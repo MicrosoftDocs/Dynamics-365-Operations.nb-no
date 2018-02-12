@@ -36,8 +36,7 @@ Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt
 
 **Obs!** Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Finance and Operations – Lager er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse navnene og prioriteringene for lagerappfelt, og hvordan de brukes i Finance and Operations – Warehousing. Hvis du vil ha detaljert informasjon om hvordan du konfigurerer tilkoblingen til Finance and Operations – Warehousing, kan du se opplæringen [Installere og konfigurere Finance and Operations – Warehousing](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurere navn på lagerappfelt
-===================================
+## <a name="configure-warehouse-app-field-names"></a>Konfigurere navn på lagerappfelt
 
 Når du bruker Finance and Operations – Warehousing på den mobile enheten, kan du konfigurere hvordan metadata skal vises på enheten på siden **Navn på lagerappfelt**. I et nytt firma i Finance and Operations velger du **Opprett standardoppsett** for å generere alle feltnavn som skal brukes i arbeidsflyter for mobilenheter i lageret, og deretter tilordner du en foretrukket inndatamodus og inndatatype til dem. Når du har generert alle feltnavn, kan du velge følgende alternativer for inndata.
 
@@ -70,8 +69,7 @@ Når du bruker Finance and Operations – Warehousing på den mobile enheten, ka
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurere prioritet for lagerappfelt
-======================================
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurere prioritet for lagerappfelt
 
 På siden **Prioritet for lagerappfelt** kan du legge feltnavn i ulike prioritetsgrupper. Dette gjør det mulig å bestemme hvilken informasjon som skal vises på hovedoppgavesiden når lagermedarbeidere utfører oppgaver ved hjelp av appen. Hvis du klikker **Opprett standardoppsett**, genereres et standardsett med prioritetsgrupper. Det er mulig å opprette så mange prioritetsgrupper som nødvendig, men bare tre prioritetsgrupper vises på oppgavesiden. Når Finance and Operations sender metadata til appen, tilordnes hvert felt en relativ prioritet avhengig av prioritetsgruppen, og appen viser de første tre prioritetsgruppene i metadataene på oppgavesiden. Resten av overflytmetadataene vises på en sekundær detaljside. Tabellen nedenfor viser et eksempel på fem prioritetsgrupper.
 
