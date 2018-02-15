@@ -1,9 +1,9 @@
 --- 
-title: Opprette rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering (ER) (del 1)
-description: "De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere av elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder."
+title: "Utforme konfigurasjoner for å generere rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering (ER) (del 1)"
+description: "Fremgangsmåten i dette emnet viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner som genererer elektroniske dokumenter i Microsoft Office-formater (Excel og Word) som inneholder innebygde bilder."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Opprette rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering (ER) (del 1) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Utforme konfigurasjoner for å generere rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering (ER) (del 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere av elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder.
+For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv". Denne fremgangsmåten forklarer hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å generere et Microsoft Excel- eller Microsoft Word-dokument som inneholder innebygde bilder. I denne prosedyren skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet, Litware, Inc. Disse trinnene kan fullføres ved å bruke USMF-datasettet. Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig eller elektronisk rapportering utvikler. Før du begynner må du laste ned og lagre filene oppført i hjelpeemnet [Bygge inn bilder og figurer i forretningsdokumenter som blir generert ved hjelp av verktøyet for elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filene er: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png og Cheque template Word.docx.
 
-I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmaet "Litware, Inc".  For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER lage rapporter i MS Office-formater med innebygde bilder (del 2: se gjennom konfigurasjoner)". Denne fremgangsmåten kan utføres i USMF-firmaet.
+## <a name="verify-prerequisites"></a>Kontrollere forhåndskrav  
+ 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.  
+ 2. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".   
+ 3. Klikk Rapporteringskonfigurasjoner.  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Legg til en ny ER-konfigurasjon  
+ 1. I stedet for å opprette en ny modell kan du laste ER-modellkonfigurasjonsfilen (modell for cheques.xml) som du lagret tidligere. Denne filen inneholder eksempeldatamodellen for betalingssjekker og tilordningen av datamodellen til datakomponentene i Dynamics 365 for Operations-programmet.   
+ 2. Klikk Veksle på hurtigfanen Versjoner.   
+ 3. Klikk Last fra XML-fil.  
+ 4. Klikk Bla gjennom, og velg deretter Modell for cheques.xml.   
+ 5. Klikk OK.  
+ 6. Den lastede modellen brukes som en datakilde med informasjon for å generere dokumenter som inneholder bilder i Excel og Word.  
 
+## <a name="add-a-new-er-format-configuration"></a>Legg til en ny ER-formatkonfigurasjon  
+ 1. I stedet for å opprette et nytt format kan du laste ER-formatkonfigurasjonsfilen (Cheques printing format.xml) som du lagret tidligere. Denne filen inneholder eksempelutformingen på formatet for å skrive ut sjekker ved hjelp av det forhåndstrykte skjemaet og tilordningen av dette formatet til "Modell for sjekker"-datamodellen.   
+ 2. Klikk Veksle.  
+ 3. Klikk Last fra XML-fil.  
+ 4. Klikk Bla gjennom og velg Cheques printing format.xml-filen.   
+ 5. Klikk OK.  
+ 6. Utvid Modell for sjekker i treet.  
+ 7. Velg 'Modell for sjekker\Utskriftsformat for sjekker' i treet.  
+ 8. Det lastede formatet brukes for å generere dokumenter som inneholder bilder i Excel og Word.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Kjøre format med tilordning av opprinnelig modell
-1. Gå til Kontant- og bankbehandling > Bankkontoer > Bankkontoer.
-2. Bruk hurtigfilteret til å filtrere på Bankkonto-feltet med en verdi lik USMF OPER.
-3. Klikk Oppsett i handlingsruten.
-4. Klikk Kontroller.
-5. Klikk Skriv ut test.
-    * Kjør formatet for testformål.  
-6. Velg Ja i feltet Sjekkformat som kan forhandles.
-7. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at firmalogoen skal vises i rapporten, i tillegg til autoriserte personens signatur. Signaturbilde av hentes fra feltet av typen "Beholder" for Sjekk oppsett posten som er tilknyttet den valgte bankkontoen.  
-8. Utvid Kopier-seksjonen.
-9. Klikk Rediger.
-10. Angi "Skriv ut vannmerke som Annuller" i feltet Vannmerker.
-    * Endre innstillingen vannmerker oppsett til å vise vannmerketeksten i dokumentgenerering i et Excel-figur-element.  
-11. Klikk Skriv ut test.
-12. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at vannmerket vises i rapporten er opprettet i henhold til alternativet merket område.  
-13. Lukk siden.
-14. Klikk Administrer betalinger i handlingsruten.
-15. Klikk Kontroller.
-16. Klikk Vis filtre.
-17. Bruk følgende filtre: Angi en filterverdi på "381","385","389" i feltet "Sjekknummer" ved hjelp av filteroperatoren "er en av".
-18. Merk alle rader i listen.
-19. Klikk Skriv ut kopi av sjekk.
-    * Kjør formatet for å skrive ut de valgte sjekkene.  
-    * Se gjennom de opprettede utdataene. Legg merke til at de valgte sjekkene er skrevet ut på nytt. Firmalogoen og etiketter skrives ikke etter at de vises i fortrykte skjemaet.  
+## <a name="configure-er-user-parameters"></a>Konfigurere ER-brukerparametere  
+ 1. Klikk Konfigurasjoner i handlingsruten.  
+ 2. Klikk Brukerparametere.  
+ 3. Velg Ja i feltet Kjøringsinnstillinger.  
+  Aktiver flagget Kjøringsutkast for å starte utkastversjonen av det valgte formatet i stedet for den fullførte.  
+ 4. Klikk OK.  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Endre tilordningen av den importerte datamodellen
-1. Lukk siden.
-2. Lukk siden.
-3. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-4. Velg Modell for sjekker i treet.
-5. Klikk Utforming.
-6. Klikk Tilordne modell til datakilde.
-7. Klikk Utforming.
-    * Vi vil endre bindingen av-datamodellen signatur vare for å få signaturen bildet fra filen som er knyttet til posten sjekk oppsett som er tilknyttet den valgte bankkontoen.  
-8. Deaktiver Vis detaljer.
-9. Utvid "oppsett" i treet.
-10. Utvid "oppsett\signatur" i treet.
-11. I treet velger du 'oppsett\signature\bilde = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.
-12. Vis 'chequesaccount' i treet.
-13. Utvid 'chequesaccount\<Relations' i treet.
-14. Utvid 'chequesaccount\<RelationsBankChequeLayout' i treet.
-15. Utvid 'chequesaccount\<RelationsBankChequeLayout\<Relations' i treet.
-16. Utvid 'chequesaccount\<RelationsBankChequeLayout\<Relations\<Documents' i treet.
-17. Velg 'chequesaccount\<RelationsBankChequeLayout\<Relations\<DocumentsgetFileContentAsContainer()' i treet.
-18. Klikk Bind.
-19. Klikk Lagre.
-20. Lukk siden.
-21. Lukk siden.
-22. Lukk siden.
-23. Lukk siden.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Kjøre format ved hjelp av justert modelltilordning
-1. Gå til Kontant- og bankbehandling > Bankkontoer > Bankkontoer.
-2. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Bankkonto-feltet med verdien 'USMF OPER'.
-3. Klikk Oppsett i handlingsruten.
-4. Klikk Kontroller.
-5. Klikk Skriv ut test.
-6. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at bildet fra dokumentbehandling vedlegget vises som signaturen for en autorisert person.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Bruk Microsoft Word-dokument som en mal i det importerte formatet
-1. Lukk siden.
-2. Lukk siden.
-3. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
-4. Utvid Modell for sjekker i treet.
-5. Velg 'Modell for sjekker\Utskriftsformat for sjekker' i treet.
-6. Klikk Utforming.
-7. Klikk Vedlegg.
-8. Klikk Slett.
-9. Klikk Ja.
-10. Klikk Ny.
-11. Klikk Fil.
-    * Klikk Bla gjennom og velg den nedlastede på forhånd "sjekk Word.docx-malfil.  
-12. Lukk siden.
-13. Angi eller velg en verdi i feltet Mal.
-14. Klikk Lagre.
-15. Lukk siden.
-16. Klikk Rediger.
-17. Velg Ja i feltet Kjøringsutkast.
-18. Lukk siden.
-19. Gå til Kontant- og bankbehandling > Bankkontoer > Bankkontoer.
-20. Bruk hurtigfilteret til å filtrere på Bankkonto-feltet med en verdi lik USMF OPER.
-21. Klikk Kontroller.
-22. Klikk Skriv ut test.
-23. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at utdataene er generert som et Microsoft Word-dokument med innebygde bilder presenterer firmalogoen, signaturen til en autorisert person og den merkede teksten til vannmerket.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Konfigurere Parametere for kontant- og bankbehandling  
+ 1. Gå til Kontant- og bankbehandling > Bankkontoer > Bankkontoer.  
+ 2. Bruk hurtigfilteret til å filtrere på Bankkonto-feltet med en verdi lik USMF OPER.  
+ 3. Klikk Oppsett i handlingsruten.  
+ 4. Klikk Kontroller.  
+ 5. Utvid Oppsett-delen.  
+ 6. Klikk Rediger.  
+ 7. Velg Ja i Firmalogo-feltet.  
+ 8. Klikk på Firmalogo.  
+ 9. Klikk Endre.  
+ 10. Klikk Bla gjennom og velg filen du lastet ned tidligere, Company logo.png.   
+ 11. Klikk Lagre.  
+ 12. Lukk siden.  
+ 13. Utvid seksjonen Signatur.  
+ 14. Velg Ja i feltet Skriv ut første signatur.  
+ 15. Klikk Endre.  
+ 16. Klikk Bla gjennom og velg filen du lastet ned tidligere, Signature image.png.   
+ 17. Utvid Kopier-seksjonen.  
+ 18. Velg et alternativ i feltet Vannmerke.  
+ 19. Velg Ja i feltet Generelt elektronisk eksportformat.  
+ 20. Velg Cheques printing form-konfigurasjonen.  
+ 21. Nå brukes det valgte ER-formatet for utskrift av sjekker.  
+ 22. Klikk Vedlegg.  
+ 23. Klikk Ny.  
+ 24. Klikk Fil.  
+ 25. Klikk Bla gjennom og velg filen du lastet ned tidligere, Signature image 2.png.   
+ 26. Lukk siden.  
+ 27. Lukk siden.  
+ 28. Lukk siden.  
+ 29. Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.  
+ 30. Velg Ja i feltet Tillat oppretting av forhåndsmerknader for inaktive bankkontoer.  
+ 31. Klikk Lagre.  
+ 32. Lukk siden.  
 

@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
 
 Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
@@ -43,32 +46,29 @@ Appen er tilgjengelig på Android- og Windows-operativsystemer. For å bruke den
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (alle versjoner)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations versjon 1611 <br>- eller - <br>Microsoft Dynamics AX versjon 7.0/7.0.1 og Microsoft Dynamics AX-plattformoppdatering med 2 hurtigreparasjonen KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, versjon 1611 <br>- eller - <br>Microsoft Dynamics AX versjon 7.0/7.0.1 og Microsoft Dynamics AX-plattformoppdatering med 2 hurtigreparasjonen KB 3210014 |
 
 ## <a name="get-the-app"></a>Få appen
--   Windows (UWP): [Finance and Operations - Warehousing i Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations - Lager i Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations - Warehousing på Google Play-butikken](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations - Warehousing på Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Opprette et webtjenesteprogram i Active Directory
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Opprette et webtjenesteprogram i Azure Active Directory
 For at appen skal kunne kommunisere med en bestemt Finance and Operations-server, må du registrere et webtjenesteprogram i en Azure Active Directory for Finance and Operations-leietaker. Av sikkerhetsgrunner anbefaler vi at du oppretter et webtjenesteprogram for hver enhet du bruker. Hvis du vil opprette et webtjenesteprogram i Azure Active Directory (Azure AD), kan du gjøre følgende:
 
-1.  I en nettleser går du til <https://manage.windowsazure.com>.
+1.  I en nettleser går du til <https://portal.azure.com>.
 2.  Skriv inn navnet og passordet for brukeren som har tilgang til Azure-abonnementet.
-3.  I den venstre navigasjonsruten i Azure-portalen klikker du **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-eksempel](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  Velg Active Directory-forekomsten som brukes av Finance and Operations, i rutenettet.
-5.  Klikk **Programmer** på den øverste verktøylinjen. [![wh-02-active-directory-programmer](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  Klikk **Legg til** i den nedre ruten. Veiviseren **Legge til program** startes.
-7.  Skriv inn et navn for programmet, og velg **Webapplikasjon og/eller web-API**. [![wh-03-active-directory-legg til-program](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Angi URL-adressen for pålogging, som er webappens URL-adresse. Denne URL-adressen er den samme som URL-adressen for distribusjon, men oauth er lagt til i slutten. Angi App-ID/-URI, denne verdien er obligatorisk, men er ikke nødvendig for godkjenning. Kontroller at denne App-ID/-URI-en er en uekte URI som https://contosooperations/wmapp, siden bruk av distribusjonens URL-adresse kan forårsake problemer med pålogging i andre AAD-programmer som Excel-tillegg. [![WH-04-AD-legg-til-egenskaper3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Gå til **Konfigurer**-fanen. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Rull nedover til du ser delen **Tillatelser til andre programmer**. Klikk **Legg til program**. [![wh-06-ad-app-legg til-tillatelser](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Velg **Microsoft Dynamics ERP** i listen. Klikk knappen **Fullfør sjekk** i høyre hjørne på siden. [![wh-07-ad-velg-tillatelser](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. I listen **Representanttillatelser** merker du av i alle avmerkingsboksene. Klikk **Lagre**. [![wh-08-ad-representant-tillatelser](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Noter deg følgende informasjon:
-    -   **Klient-ID** - Når du ruller opp siden, vil du se at **Klient-ID** vises.
-    -   **Nøkkel** - I **Nøkler**-delen oppretter du en nøkkel ved å velge varighet og kopiere nøkkelen. Denne nøkkelen vil senere bli referert til som **klienthemmeligheten**.
+3.  I den venstre navigasjonsruten i Azure-portalen klikker du **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-eksempel](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Kontroller at Active Directory-forekomsten er den som brukes av Finance and Operations.
+5.  I listen klikker du **Appregistreringer**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  I den øverste ruten klikker du **Ny programregistrering**. Veiviseren **Legge til program** startes.
+7.  Skriv inn et navn for programmet, og velg **Webapplikasjon/web-API**. Angi URL-adressen for pålogging, som er webappens URL-adresse. Denne URL-adressen er den samme som URL-adressen for distribusjon, men oauth er lagt til i slutten. Klikk **Opprett**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Velg den nye appen i listen. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Husk **Program-ID**-en, du trenger den senere. **Program-ID**-en blir senere referert til som **klient-ID**.
+10. Klikk på **Nøkler** i **innstillingsruten**. Opprett en nøkkel ved å angi en beskrivelse og en varighet i **Passord**-delen. 
+11. Klikk **Lagre** og kopier nøkkelen. Denne nøkkelen vil senere bli referert til som **klienthemmeligheten**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Opprette og konfigurere en brukerkonto i Finance and Operations
 Hvis du vil aktivere Finance and Operations til å bruke Azure AD-programmet, må du fullføre følgende konfigurasjonstrinn:
@@ -90,8 +90,8 @@ Du må konfigurere appen på enheten til å koble til Finance and Operations-ser
 1.  I appen går du til **Tilkoblingsinnstillinger**.
 2.  Slett feltet **Demonstrasjonsmodus**. <br>[![wh-11-app-tilkobling-innstillinger-demo-modus](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Angi følgende informasjon: 
-    + **Klient-ID for Azure Active Directory** - Klient-ID hentes i trinn 13 i "Opprette et webtjenesteprogram i Active Directory". 
-    + **Klienthemmelighet for Azure Active Directory** - Klienthemmeligheten hentes i trinn 13 i "Opprette et webtjenesteprogram i Active Directory". 
+    + **Klient-ID for Azure Active Directory** - Klient-ID hentes i trinn 9 i "Opprette et webtjenesteprogram i Active Directory". 
+    + **Klienthemmelighet for Azure Active Directory** - Klienthemmeligheten hentes i trinn 11 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Azure Active Directory-ressurs** - Azure AD Directory-ressursen viser rot-URL-adressen for Finance and Operations. **Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
     + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: https://login.windows.net/din-AD-leietaker-ID. Eksempel: https://login.windows.net/contosooperations.onmicrosoft.com.
     <br>**Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
@@ -102,15 +102,11 @@ Du må konfigurere appen på enheten til å koble til Finance and Operations-ser
 Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Finance and Operations for enheten. Trinnene nedenfor beskriver den anbefalte prosessen for å fjerne tilgang.
 
 1.  I Finance and Operations går du til **Systemadministrasjon** &gt; **Oppsett** &gt; **Azure Active Directory-programmer**.
-2.  Slett linjen som svarer til enheten du vil fjerne tilgang til. Noter **klient-IDen** som brukes for den fjernede enheten.
-3.  Logg på den klassiske portalen for Azure på <https://manage.windowsazure.com>.
-4.  Klikk på **Active Directory**-ikonet på den venstre menyen, og klikk deretter ønsket mappe.
-5.  I den øverste menyen klikker du **Programmer**, og deretter klikker du programmet du vil konfigurere. **Introduksjonssiden** vises med enkel pålogging og annen konfigurasjonsinformasjon.
-6.  Klikk kategorien **Konfigurer**, rull ned, og forsikre deg om at **klient-ID** for programmet er den samme som i trinn 2 i denne delen.
-7.  Klikk **Slett**-knappen på kommandolinjen.
+2.  Slett linjen som svarer til enheten du vil fjerne tilgang til. Husk **klient-ID**-en som ble brukt for den fjernede enheten. Du trenger den senere.
+3.  Logg på Azure-portalen på <https://portal.azure.com>.
+4.  Klikk **Active Directory**-ikonet på venstre meny, og kontroller at du er i riktig mappe.
+5.  I listen klikker du **Appregistreringer**, og deretter klikker du programmet du vil konfigurere. **Innstillinger**-siden vises med konfigurasjonsinformasjon.
+6.  Pass på at **klient-ID**-en for programmet er den samme som i trinn 2 i denne delen.
+7.  Klikk **Slett**-knappen i den øverste ruten.
 8.  Klikk **Ja** i bekreftelsesmeldingen.
-
-
-
-
 

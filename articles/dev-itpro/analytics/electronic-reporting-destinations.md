@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Når du har opprettet en referanse, kan du opprette et mål for hver mappe eller
 
 [![Opprette et filmål](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Obs!** Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
+> ![Obs!] Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
 
 [![Dialogboksen Innstillinger for mål](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -71,7 +71,7 @@ Når du klikker **Rediger** for **Til** eller **Kopi**-feltet, vises dialogbokse
 
 #### <a name="print-management"></a>Utskriftsbehandling
 
-Hvis du velger typen **E-post for utskriftsbehandling**, kan du angi faste e-postadresser i **Til**-feltet. Hvis du vil bruke e-postadresser som ikke er faste, må du velge kildetypen e-post for et filmål. Følgende verdier støttes: **kunde**, **leverandør**, **kundeemne**, **kontakt**, **konkurrent**, **arbeider**, **søker**, **potensiell leverandør** og **sperret leverandør**. Når du har valgt en e-postkildetype, bruker du knappen ved siden av feltet **Kildekonto for e-post** til å åpne skjemaet **Formeldesigner **. Du kan bruke dette skjemaet til å knytte en formel som representerer den valgte partskontoen til e-postmålet.
+Hvis du velger typen **E-post for utskriftsbehandling**, kan du angi faste e-postadresser i **Til**-feltet. Hvis du vil bruke e-postadresser som ikke er faste, må du velge kildetypen e-post for et filmål. Følgende verdier støttes: **kunde**, **leverandør**, **kundeemne**, **kontakt**, **konkurrent**, **arbeider**, **søker**, **potensiell leverandør** og **sperret leverandør**. Når du har valgt en e-postkildetype, bruker du knappen ved siden av feltet **Kildekonto for e-post** til å åpne skjemaet **Formeldesigner**. Du kan bruke dette skjemaet til å knytte en formel som representerer den valgte partskontoen til e-postmålet.
 
 [![Konfigurere e-posttypen for utskriftsbehandling](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -131,7 +131,7 @@ To typer rettigheter og plikter brukes for ER-mål. Én type styrer muligheten t
 | PaymAccountsPayablePaymentsClerk    | Leverandørbetalingsassistent            | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 | PaymAccountsReceivablePaymentsClerk | Kundebetalingsassistent         | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 
-**Obs!** To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
+> ![Obs!] To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jeg har importert elektroniske konfigurasjoner, og jeg kan se dem på siden Elektroniske rapporteringskonfigurasjoner. Hvorfor jeg kan ikke se dem på siden Mål for elektronisk rapportering?
@@ -154,7 +154,7 @@ Formelen er spesifikk for ER-konfigurasjonen. Hvis du for eksempel bruker konfig
 
 Forutsetningen er at formatet må være tilgjengelig i ER-konfigurasjoner. Hvis du har formatet, åpner du siden **Mål for elektronisk rapportering**, og oppretter en ny referanse til denne konfigurasjonen. Deretter må du ha fire filmål, ett for hver utdatakomponent. Opprette første filmålet, gi det et navn, for eksempel **Mappe**, og velg et filnavn som representerer en mappe i konfigurasjonen. Klikk deretter **Innstillinger**, og kontroller at alle mål er deaktivert. Mappen opprettes ikke for dette filmålet. Som standard, på grunn av hierarkiske avhengigheter mellom filer og overordnede mapper, vil filer fungere på samme måte. Med andre ord, de blir ikke sendt noe sted. Hvis du vil overstyre denne standard virkemåten, må du opprette tre filmål til, ett for hver fil. Du må aktivere målet som filen skal sendes til i målinnstillingene for hver av dem.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 

@@ -3,7 +3,7 @@ title: Kostnadsbehandling-innhold for Power BI
 description: Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
+ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
+ms.openlocfilehash: 1f552e1ee0286326e3a2a8bb6a7bfb84df53b45d
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 12/19/2017
 
 [!include[banner](../includes/banner.md)]
 
+> [Merknad] Denne innholdspakken er avskrevet slik det står i [Power BI-innholdspakker som er publisert på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+
 
 Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI. 
-
-# <a name="overview"></a>Oversikt
 
 **Kostnadsbehandling-innhold** for Microsoft Power BI er ment for lager regnskapsførere, revisorer eller personer i organisasjonen som er ansvarlig for lageret. **Kostnadsbehandling-innhold** for Power BI gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 

@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,9 +52,9 @@ En konfigurasjonsinnstilling er tilgjengelig for å finne ut om en ordrelinje m�
 
 Som standard er ordrelinjer som er tilordnet til en butikk, merket som **Godkjent**. Dette betyr at det blir antatt at de oppfylles fra den tilordnede butikken og vil ikke være underlagt ytterligere tilordning. I noen tilfeller ønsker forhandlerne å godta ordrer manuelt før de kan oppfylles. Hvis for eksempel en butikk har få ansatte og ikke kan oppfylle ordrer, godtar butikksjefen bare så mange ordrer for behandling som de mener kan behandles på en bestemt dag. Før en ordre er godkjent, kan den tilordnes på nytt av back office til en annen butikk. Slik gir også ordregodkjenning en måte å angi at en ordre er bekreftet av en butikk og skal oppfylles. 
 
-Ordrelinjer for henting i butikk er alltid merket som **Ventende** og er ikke underlagt godkjenning.
+Ordrelinjer for henting i butikk er merket som **Ventende** og er ikke underlagt godkjenning.
 
-Hvis du vil slå på manuell godkjenning eller ordrelinjer, går du til **Detaljhandel** > **Kanaler** > **Detaljhandelbutikker** > **Alle detaljhandelbutikker**. Velg butikken, og klikk i butikk-ID-en for å vise detaljer for butikken. Klikk **Rediger**. På **Generelt**-hurtigkategorien finner du **Ordreoppfyllelse**-underoverskriften og endrer **Godta manuelt** fra **Nei** til **Ja**. 
+Hvis du vil slå på manuell godkjenning for ordrelinjer, går du til **Detaljhandel** > **Kanaler** > **Detaljhandelbutikker** > **Alle detaljhandelbutikker**. Velg butikken, og klikk i butikk-ID-en for å vise detaljer for butikken. Klikk **Rediger**. På **Generelt**-hurtigkategorien finner du **Ordreoppfyllelse**-underoverskriften og endrer **Godta manuelt** fra **Nei** til **Ja**. 
 
 ### <a name="enable-reject-order-line-capability"></a>Aktivere funksjonen for ordrelinjeavvisning
 
@@ -114,7 +117,7 @@ Som standard vil ordrer ha statusen **Godkjent**. Ordrestatusen kan vises som en
 
 **Pakke** - Pakkealternativet støtter to handlinger: **Skriv ut følgeseddel** skriver ut en følgeseddel for de valgte linjene, og **Merk som pakket** vil merke linjene som pakket og merke linjene som levert i back office. Bare ordrelinjer som tilhører den samme ordren og har samme leveringsmåte kan pakkes samtidig. Følgeseddelformater styres som en del av kvitteringsformater. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Send** - Forsendelseshandlingen markerer valgte linjer som **Levert** i back office. Når en linje er fullstendig levert, vises den ikke lenger i butikkoppfyllelsesvisningen.
+**Send** - Forsendelseshandlingen markerer valgte linjer som **Levert** i back office. Når en linje er fullstendig levert, vises den ikke lenger i ordreoppfyllelsesvisningen.
 
 **Plukk** – Plukkhandlingen legger til linjene i transaksjonsvisningen for plukking. Hvis det finnes andre linjer i ordren som for øyeblikket ikke blir plukket, legges de til i transaksjonsvisningen med antall null. Når en linje er fullstendig plukket, vises den ikke lenger i ordreoppfyllelsesvisningen. 
 

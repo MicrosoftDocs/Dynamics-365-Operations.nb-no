@@ -3,11 +3,12 @@ title: Integrering av budsjettplanlegging med andre moduler
 description: Budsjettplaner kan genereres fra flere ulike ressurser. De grunnleggende elementene i den periodiske prosessen er den samme for alle ressurser.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -51,7 +52,7 @@ De grunnleggende elementene i den periodiske prosessen er den samme for alle pro
 
 Det finnes tre handlinger for hver generasjonsprosess:
 
--   **Opprett en ny budsjettplan** oppretter en ny plan som har attributtene som er valgt i **Mål **-delen. Disse attributtene trenger ikke å være unike. To planer kan derfor ha samme navn og andre verdier.
+-   **Opprett en ny budsjettplan** oppretter en ny plan som har attributtene som er valgt i **Mål**-delen. Disse attributtene trenger ikke å være unike. To planer kan derfor ha samme navn og andre verdier.
 -   **Erstatt eksisterende budsjettplanscenario** sletter alle data i målbudsjettplanen i det valgte budsjettplanscenarioet og oppretter nye linjer som bruker de valgte kildedataene.
 -   **Oppdater eksisterende budsjettplanscenario, og tilføy nye data** oppdaterer eksisterende linjer i målplanen som samsvarer med kildelinjene, og legger til nye linjer for nye data. Samsvaret er basert på finanskontoen, dato, budsjettklasse og diverse andre felt. Når du for eksempel genererer budsjettplaner fra prognosestillinger, er stillingsnummeret et viktig felt. Alle linjer som har et stillingsnummer som samsvarer med kildestillingsnummeret, erstattes med de nye linjene fra kilden.
 
@@ -71,7 +72,7 @@ Feltet **Budsjettklasse** lar deg angi budsjettplanlinjene som utgiftstransaksjo
 
 ### <a name="generation-rules"></a>Regler for generering
 
-Tre felt tilbyr ekstra funksjonalitet: **Faktor**, **Minimum** og **Avrundings****regel**. 
+Tre felt tilbyr ekstra funksjonalitet: **Faktor**, **Minimum** og **Avrundings** **regel**. 
 
 Verdien i feltet **Faktor** multipliseres med kildebeløpet for å angi beløpet i budsjettplanen. Du kan deretter gjøre justeringer når du oppretter budsjettplanlinjer. Du kan for eksempel angi **1,03** for en 3-prosents økning. Faktoren må være et positivt tall. 
 
