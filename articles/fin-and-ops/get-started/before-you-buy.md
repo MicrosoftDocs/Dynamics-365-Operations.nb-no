@@ -1,7 +1,7 @@
 ---
 title: "Før du kjøper"
 description: "Trinnvis veiledning som skal brukes når du vurderer å kjøpe Dynamics 365 for Finance and Operations, Enterprise edition."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Du kan prøve Dynamics 365 for Finance and Operations i 30 dager via en enkelt e
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trinn to: Velge et alternativ for distribusjon
 Du kan nå distribuere Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i skyen eller lokalt. Skydistribusjon tilbyr en ERP-tjeneste som er fullt administrert av Microsoft, mens lokale installasjoner distribueres i kundens datasenter.
-For mer informasjon, se: [Distribusjonsalternativer](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
+- Forskriftsmessige behov og samsvarsbehov som ikke er tilgjengelige i [skysertifiseringene](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Frakoblet forretningsprosess med uregelmessig Internett-tilkobling som kreves for å få tilgang til Microsoft Dynamics Lifecycle Services (LCS) for å administrere programlivssyklusen
+- [Funksjoner som ikke er implementert i lokale distribusjoner nå](features-not-implemented-on-prem.md)
+- [Minimumskrav til infrastruktur](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Lokale distribusjoner av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition støttes ikke på noen offentlig skyinfrastruktur, inkludert Azure. 
+
+For mer informasjon, se [Distribusjonsalternativer](../../dev-itpro/deployment/choose-deployment-type.md).
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Trinn tre: Kjøpe og administrere et abonnement
 Hvis du vil utforske alternativer for abonnement, kan du gå til [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing)-prisingsiden. Denne siden inneholder flere ulike planer organisasjonens behov.

@@ -3,14 +3,14 @@ title: Planlegge kontoplanen
 description: "Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ Her er noen av faktorene du må vurdere når du planlegger strukturen til kontop
 -   Rapporteringskravene til den juridiske enheten
 -   Graden av detaljer som kreves, både for den eksterne organisasjonen og organisasjonen din
 
-Definer kontoplanen på **Kontoplan**-siden. Hovedkontoer kan opprettes fra **Kontoplan**-siden eller **Hovedkontoer**-siden. Hovedkontoene kan ikke bruke spesialtegn som brukes som skilletegn for kontoplan. Hvis du har et spesialtegn som er det samme som skilletegnet for kontoplan, kan dette føre til ustabilitet, eller det kan bli nødvendig å alltid bruke oppslag eller undermenyen når du angir kombinasjoner av konto og dimensjon. Hvis du vil ha mer informasjon, kan du se [Opprette en hovedkonto](tasks/create-account-structures.md).
+Definer kontoplanen på **Kontoplan**-siden. Hovedkontoer kan opprettes fra **Kontoplan**-siden eller **Hovedkontoer**-siden. Hovedkontoene kan ikke bruke spesialtegn som brukes som skilletegn for kontoplan. Hvis du har et spesialtegn som er det samme som skilletegnet for kontoplan, kan dette føre til ustabilitet, eller det kan bli nødvendig å alltid bruke oppslag eller undermenyen når du angir kombinasjoner av konto og dimensjon. Hvis du vil ha mer informasjon, kan du se [Opprette en hovedkonto](tasks/create-main-account.md).
 
 
 Det er lurt å koble hovedkontoene til hovedkontokategorier, slik at du kan dra nytte av standard økonomiske rapporter uten å måtte gjøre endringer. Derfor går det raskere og enklere å utforme og vedlikeholde rapporter. 
 
-Bruk siden **Konfigurer kontostrukturer** til å opprette kontostrukturer. Kontostrukturer brukes til å definere gyldige kombinasjoner. Kombinasjonene, sammen med hovedkontoer, utgjør en kontoplan.  Hvis du vil ha mer informasjon, kan du se [Opprette kontostrukturer](tasks/create-main-account.md).
+Bruk siden **Konfigurer kontostrukturer** til å opprette kontostrukturer. Kontostrukturer brukes til å definere gyldige kombinasjoner. Kombinasjonene, sammen med hovedkontoer, utgjør en kontoplan.  Hvis du vil ha mer informasjon, kan du se [Opprette kontostrukturer](tasks/create-account-structures.md).
 
 **Overstyringer for juridisk enhet** 
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
-ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -74,6 +75,11 @@ Finance and Operations, Retail og Talent deler en enkelt innholdsfortegnelse på
 
 ### <a name="follow-a-topic"></a>Følge et emne
 Hvis du vil følge et emne, klikker du på +Følg-knappen under kommentarboksen. Du må logge på å følge emnet. Se [Legg igjen en kommentar](#leave-us-a-comment) for mer informasjon.  
+
+### <a name="use-an-rss-feed"></a>Bruke et RSS-feed
+Hvis du vil abonnere på et RSS-feed for alle oppdateringer i enhetlig drift-innholdet, kan du bruke følgende kobling fra en leser som støtter RSS-feeder, for eksempel Internet Explorer eller en RSS-feedbehandler: 
+
+[RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Gi tilbakemelding 
 Vi setter stor pris på tilbakemelding fra kunder. Du kan kommentere eller foreslå endringer i innholdet via GitHub.

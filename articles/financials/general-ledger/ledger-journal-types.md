@@ -1,6 +1,6 @@
 ---
 title: Finansjournaltyper
-description: "Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journalnavn-siden til å definere journaler som du kan bruke i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations."
+description: "Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk Journalnavn-siden til å definere journaler som du kan bruke i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations.
+Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-| Journaltype                      | Formål                                                                                                                                                                                                                                                                                                                                                     | Angi transaksjoner på denne siden                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Tilordning                        | Opprett fordelingstransaksjoner i en fordelingsjournal. Før du kan opprette en fordelingjournal, må du opprette en fordelingsregel på siden **Fordelingsregel finans**.                                                                                                                                                                           | Behandle tildelingsforespørsel                                     |
-| Godkjenning                          | Poster leverandørfakturaer som er godkjent, til de riktige finanskontoene.                                                                                                                                                                                                                                                                            | Fakturagodkjenningsjournal                                       |
-| Annullering av banksjekk               | Tilbakefør en postert sjekk. Hvis du vil bruke denne journaltypen, merker du av for alternativet **Bruk vurderingsprosess for betalingsannulleringer** på siden **Parametere for kontant- og bankbehandling**.                                                                                                                                                                                       | Sjekkannulleringer, Betalingsannullering                              |
-| Annullering av bankbetalingsbilag    | Annuller et betalingsbilag. Hvis du vil bruke denne journaltypen, merker du av for alternativet **Bruk vurderingsprosess for betalingsannulleringer av betalingsbilag** på siden **Parametere for kontant- og bankbehandling**.                                                                                                                                                                       | Annullering av betalingsbilag                             |
+| Journaltype                      | Formål                       | Angi transaksjoner på denne siden                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Tilordning                        | Opprett fordelingstransaksjoner i en fordelingsjournal. Før du kan opprette en fordelingjournal, må du opprette en fordelingsregel på siden **Fordelingsregel finans**.      | Behandle tildelingsforespørsel             |
+| Godkjenning                          | Poster leverandørfakturaer som er godkjent, til de riktige finanskontoene.  | Fakturagodkjenningsjournal                                       |
+| Annullering av banksjekk               | Tilbakefør en postert sjekk. Hvis du vil bruke denne journaltypen, merker du av for alternativet **Bruk vurderingsprosess for betalingsannulleringer** på siden **Parametere for kontant- og bankbehandling**.   | Sjekkannulleringer, Betalingsannullering                   |
+| Annullering av bankbetalingsbilag    | Annuller et betalingsbilag. Hvis du vil bruke denne journaltypen, merker du av for alternativet **Bruk vurderingsprosess for betalingsannulleringer av betalingsbilag** på siden **Parametere for kontant- og bankbehandling**.   | Annullering av betalingsbilag            |
 | Budsjett                            | Behandle budsjettbevilgninger. Hvis du vil bruke denne journaltypen, merker du av for alternativet **Aktiver budsjettbevilgning** på siden **Parametere for økonomimodul**. Budsjettjournaloppføringene inneholder informasjonen som er basert på finanskontoer som er definert på siden **Posteringsdefinisjoner**.                                                        |                                                                |
-| Kundeaksept veksel  | Opprette kundegodkjenningstransaksjoner for veksler.                                                                                                                                                                                                                                                                                              | Journal for vekseltrekking, Journal for ny vekseltilbaketrekking |
-| Kunde: bankremisse          | Opprett en veksel som kan sendes til organisasjonens bank. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Automatisk utligning** på siden **Kontoer** **Kundeparametere**.                                                                                                                                             | Remittering                                                     |
-| Kunde: trekk veksel    | Oprette transaksjoner for kunde: trekk veksel. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Opprett og poster trekkjournal automatisk ved postering av fakturaer** på siden **Betalingsmåter – kunder**.                                                                                                                                         | Journal for vekseltrekking                                  |
-| Kundebetaling                  | Opprett kundebetalingstransaksjoner.                                                                                                                                                                                                                                                                                                                       | Betalingsjournal                                                |
-| Kundeprotest veksel | Opprett transaksjoner for kundeprotest veksel.                                                                                                                                                                                                                                                                                                      | Journal for vekselprotest                               |
-| Kundens tilbaketrekking av veksel  | Oprette transaksjoner for kunde: trekk tilbake veksel.                                                                                                                                                                                                                                                                                                       | Journal for ny vekseltilbaketrekking                                |
-| Kunde: avregn veksel  | Opprett transaksjoner for kunde: avregn veksel.                                                                                                                                                                                                                                                                                                       | Vekselavregningsjournal                                |
-| Daglig                             | Opprett daglige transaksjoner i en økonomijournal.                                                                                                                                                                                                                                                                                                             | Økonomijournal                                                |
+| Kundeaksept veksel  | Opprette kundegodkjenningstransaksjoner for veksler.             | Journal for vekseltrekking, Journal for ny vekseltilbaketrekking |
+| Kunde: bankremisse          | Opprett en veksel som kan sendes til organisasjonens bank. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Automatisk utligning** på siden **Kontoer** **Kundeparametere**.            | Remittering                                                     |
+| Kunde: trekk veksel    | Oprette transaksjoner for kunde: trekk veksel. Hvis du vil bruke denne journaltypen, fjerner du merket for alternativet **Opprett og poster trekkjournal automatisk ved postering av fakturaer** på siden **Betalingsmåter – kunder**.   | Journal for vekseltrekking                                  |
+| Kundebetaling                  | Opprett kundebetalingstransaksjoner.                             | Betalingsjournal             |
+| Kundeprotest veksel | Opprett transaksjoner for kundeprotest veksel.                    | Journal for vekselprotest                               |
+| Kundens tilbaketrekking av veksel  | Oprette transaksjoner for kunde: trekk tilbake veksel.                     | Journal for ny vekseltilbaketrekking                                |
+| Kunde: avregn veksel  | Opprett transaksjoner for kunde: avregn veksel.                       | Vekselavregningsjournal                                |
+| Daglig                             | Opprett daglige transaksjoner i en økonomijournal.                          | Økonomijournal                                                |
 | Eliminering                       | Opprett elimineringstransaksjoner i en elimineringsjournal. Hvis du vil bruke denne journaltypen, merker du av for alternativene **Brukes til finanseliminering** og **Bruk for finanskonsolideringsprosess** på siden **Juridiske enheter**. Før du kan bruke denne journaltypen, må du opprette en finanselimineringsregel på siden **Elimineringsregel, finans**. | Eliminering                                                    |
 | Anleggsmiddelbudsjett                | Opprett budsjettregisterposter for anleggsmidler.                                                                                                                                                                                                                                                                                                                 | Anleggsmiddelbudsjett                                             |
 | Ankomstregistrering                  | Registrer grunnleggende informasjon om leverandørfakturaer.                                                                                                                                                                                                                                                                                                           | Ankomstregistrering                                               |
