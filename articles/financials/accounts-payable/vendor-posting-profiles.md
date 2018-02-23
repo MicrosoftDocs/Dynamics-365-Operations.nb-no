@@ -54,10 +54,6 @@ Angi finanskontoene som brukes ved posteringen av transaksjoner som bruker den v
 Hvis du vil ha samme posteringsprofil for alle leverandørtransaksjoner, definerer du bare én posteringsprofil med Alle i Kontokode-feltet. Angi følgende verdier for å definere posteringsprofilen:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Felt</th>
