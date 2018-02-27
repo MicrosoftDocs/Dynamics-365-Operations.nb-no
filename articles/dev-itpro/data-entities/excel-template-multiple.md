@@ -27,6 +27,8 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Excel-maler med flere regneark
 
+[!include[banner](../includes/banner.md)]
+
 Databehandling i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition støtter Microsoft Excel-baserte maler for dataenheter. Disse malene kan inneholde ett eller flere regneark. Maler med flere regneark brukes ofte når det passer å behandle data i en enkelt fil og importere den til flere dataenheter. Et eksempel er områder og lagre.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Laste opp en fil én gang og tilordne den til alle enheter

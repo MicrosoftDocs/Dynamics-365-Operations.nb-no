@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Endre et format for elektronisk rapportering ved å bruke en Microsoft Excel-mal på nytt
+
+[!include[banner](../includes/banner.md)]
+
 Verktøyet for elektronisk rapportering (ER) brukes til å generere forretningsdokumenter i et elektronisk format. For å generere et forretningsdokument må du opprette et ER-format og deretter bruke ER-utforming til å definere oppsettet for forretningsdokumentet og angi hvilke data som skal inkluderes i det. Du kan deretter kjøre ER-formatet for å generere forretningsdokumentet.
 
 ER-verktøyet kan brukes til å generere forretningsdokumenter som Microsoft Excel-filer. Du kan bruke et Excel-dokument som en mal for disse dokumentene. Hvis du vil definere oppsettet for dokumentet i ER-utformingen, kan du importere innholdet i Excel-dokumentet du vil bruke som mal i det definerte ER-formatet. Hvis du vil ha mer informasjon og prøve dette scenariet, spiller du av oppgaveveiledningen **ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format** (en del av forretningsprosessen 7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)) .
