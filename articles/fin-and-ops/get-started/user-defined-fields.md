@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 5c66f893b0dc26b01e7c4eb024ef543f915bfe9f
-ms.openlocfilehash: e272b846fba16445d3a48f9e6c33805d7b4f4d38
+ms.sourcegitcommit: ad59346f88b7a5984e16418e2aade7ccaedf180b
+ms.openlocfilehash: 142c66c189d6401cfb3db128e45fea6c071e99bf
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/19/2018
 10.   <span data-ttu-id="6b70c-136">Klikk **Sett inn** for å sette inn de merkede feltene i det valgte området i skjemaet.</span><span class="sxs-lookup"><span data-stu-id="6b70c-136">Click **Insert** to insert the marked fields into the selected region of the form.</span></span> 
 11.   <span data-ttu-id="6b70c-137">**Valgfritt:** Aktiver **Flytt**-modus fra tilpassingsverktøylinjen for å flytte de nye feltene til ønsket plassering i det valgte området.</span><span class="sxs-lookup"><span data-stu-id="6b70c-137">**Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region.</span></span> <span data-ttu-id="6b70c-138">Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du bruker de ulike tilpassingsfunksjonene for å optimalisere et skjema for din personlige bruk.</span><span class="sxs-lookup"><span data-stu-id="6b70c-138">See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.</span></span>  
 
-### <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="6b70c-139">Dele egendefinerte felt med andre brukere</span><span class="sxs-lookup"><span data-stu-id="6b70c-139">Sharing custom fields with other users</span></span>
+## <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="6b70c-139">Dele egendefinerte felt med andre brukere</span><span class="sxs-lookup"><span data-stu-id="6b70c-139">Sharing custom fields with other users</span></span>
 <span data-ttu-id="6b70c-140">Når du har opprettet et egendefinert felt og vist det i et skjema, kan det hende at du vil gi denne oppdaterte sidevisningen som inneholder det nye feltet, til andre brukere i systemet.</span><span class="sxs-lookup"><span data-stu-id="6b70c-140">After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system.</span></span> <span data-ttu-id="6b70c-141">Dette kan gjøres på to forskjellige måter ved hjelp av tilpassingsfunksjonene i produktet:</span><span class="sxs-lookup"><span data-stu-id="6b70c-141">This can be accomplished in two different ways using the personalization capabilities of the product:</span></span>
 
 -   <span data-ttu-id="6b70c-142">Den anbefalte måten er via systemadministratoren, som kan overføre en tilpassing til alle brukere eller en undergruppe av brukere.</span><span class="sxs-lookup"><span data-stu-id="6b70c-142">The recommended route is through the system administrator, who can push a personalization to all users or a subset of users.</span></span> <span data-ttu-id="6b70c-143">Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon.</span><span class="sxs-lookup"><span data-stu-id="6b70c-143">See [Personalize the user experience](personalize-user-experience.md) for more details.</span></span> 
