@@ -62,7 +62,7 @@ Trinnene nedenfor beskriver prosessen for å opprette et egendefinert felt og pl
 10.   Klikk **Sett inn** for å sette inn de merkede feltene i det valgte området i skjemaet. 
 11.   **Valgfritt:** Aktiver **Flytt**-modus fra tilpassingsverktøylinjen for å flytte de nye feltene til ønsket plassering i det valgte området. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du bruker de ulike tilpassingsfunksjonene for å optimalisere et skjema for din personlige bruk.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Dele egendefinerte felt med andre brukere
+## <a name="sharing-custom-fields-with-other-users"></a>Dele egendefinerte felt med andre brukere
 Når du har opprettet et egendefinert felt og vist det i et skjema, kan det hende at du vil gi denne oppdaterte sidevisningen som inneholder det nye feltet, til andre brukere i systemet. Dette kan gjøres på to forskjellige måter ved hjelp av tilpassingsfunksjonene i produktet:
 
 -   Den anbefalte måten er via systemadministratoren, som kan overføre en tilpassing til alle brukere eller en undergruppe av brukere. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon. 
