@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Sammenligning av skyfunksjon og lokal funksjon
 
+[!include[banner](../includes/banner.md)]
+
 Dette emnet viser om hver funksjon er tilgjengelig i disse produktene:
 
 + Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (i skyen)

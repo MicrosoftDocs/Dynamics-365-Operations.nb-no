@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX avsluttes
 
+[!include[banner](../includes/banner.md)]
+
 Vi har avsluttet WebSearchAX-siden. Vi anbefaler at du bruker områdesøk fra favorittsøkemotoren for å erstatte den.  For eksempel: 
 
 site:technet.microsoft.com dynamics ax 2012 "søkeord"
