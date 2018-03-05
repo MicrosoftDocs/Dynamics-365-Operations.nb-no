@@ -17,13 +17,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 421dc85a3f8ccd490993412c12f8766f46d3242a
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: 3c38807e9ed3b2ced37ada35b72e388c125bd654
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/05/2018
 
 ---
 # <a name="bank-management-workspace"></a><span data-ttu-id="780b7-106">Arbeidsområde for bank</span><span class="sxs-lookup"><span data-stu-id="780b7-106">Bank management workspace</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="780b7-107">Arbeidsområdet **Bank** viser informasjon som er knyttet til firmaets bankkontoer.</span><span class="sxs-lookup"><span data-stu-id="780b7-107">The **Bank management** workspace shows information that is related to company bank accounts.</span></span> <span data-ttu-id="780b7-108">Arbeidsområdet inneholder en **Sammendrag**-visning og en **Analyse**-side.</span><span class="sxs-lookup"><span data-stu-id="780b7-108">This workspace includes a **Summary** view and an **Analytics** page.</span></span> <span data-ttu-id="780b7-109">**Sammendrag**-visningen viser sammendragsfliser, bankkontoinformasjon, et saldodiagram og relatert informasjon.</span><span class="sxs-lookup"><span data-stu-id="780b7-109">The **Summary** view shows summary tiles, bank account information, a balance chart, and related information.</span></span> <span data-ttu-id="780b7-110">**Analyse**-siden bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til bankkontosaldoer.</span><span class="sxs-lookup"><span data-stu-id="780b7-110">The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.</span></span>
 
