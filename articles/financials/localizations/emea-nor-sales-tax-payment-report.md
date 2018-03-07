@@ -16,14 +16,17 @@ ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 1dda58b0f04df76b465b796cf2f125607444890a
-ms.openlocfilehash: f7357133cbd565bbbad1c8fbed40b75db589fac5
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 8a6a739751d5cf2ed8828779537cb72069075752
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="vat-statement-for-norway"></a><span data-ttu-id="af3c2-103">MVA-oppgave for Norge</span><span class="sxs-lookup"><span data-stu-id="af3c2-103">VAT statement for Norway</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="af3c2-104">Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge.</span><span class="sxs-lookup"><span data-stu-id="af3c2-104">This topic includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway.</span></span> <span data-ttu-id="af3c2-105">Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering](emea-vat-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="af3c2-105">For more information about general VAT reporting, see [VAT reporting](emea-vat-reporting.md).</span></span>
 
 ## <a name="set-up-sales-tax-authorities"></a><span data-ttu-id="af3c2-106">Definere skattemyndigheter</span><span class="sxs-lookup"><span data-stu-id="af3c2-106">Set up sales tax authorities</span></span>
