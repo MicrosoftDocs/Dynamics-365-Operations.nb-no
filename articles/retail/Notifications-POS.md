@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Vise varslinger på salgsstedet
 
+[!include[banner](includes/banner.md)]
+
 I dagens moderne detaljhandelsmiljø har butikkansatte forskjellige oppgaver, for eksempel hjelpe kunder, slå inn transaksjoner, utføre lagertelling og motta ordrer i butikken. Salgsstedsklienten (POS) gjør det mulig for ansatte å utføre disse oppgavene og mye mer, alt i ett enkelt program. Med forskjellige oppgaver som skal utføres i løpet av dagen, kan ansatte trenge å bli varslet når noe krever deres oppmerksomhet. Varslingsrammeverket i POS løser dette problemet ved at forhandlerne kan konfigurere rollebaserte meldinger. Disse meldingene kan bare konfigureres for POS-operasjoner med Dynamics 365 for Retail med programoppdatering 5.
 
 Systemet gir nå muligheten til å vise varslinger for ordreoppfyllelsesoperasjonen, men rammeverket er utformet slik at det kan utvides. Utviklere vil dermed i fremtiden kunne skrive en varslingsbehandler for enhver operasjon og vise meldingene i POS.  

@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Oppgaveopptaker og hjelp for salgssted
 
+[!include[banner](includes/banner.md)]
+
 Dette emnet beskriver hvordan du bruker oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted.
 
 <a name="overview"></a>Oversikt

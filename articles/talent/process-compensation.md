@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="process-compensation"></a>Behandle kompensasjon
+
+[!include[banner](includes/banner.md)]
+
 Med kompensasjonsbehandling kan du beregne nye kompensasjonsbeløp for de ansatte basert på justeringer av egenkapitalen, mål for personlig tilleggsøkning og ytelse. Dette emnet dekker den grunnleggende flyten i faste kompensasjonsplaner uten faktorisering av ytelsen til en ansatt.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planlegg nye kompensasjonsbeløp og budsjetter

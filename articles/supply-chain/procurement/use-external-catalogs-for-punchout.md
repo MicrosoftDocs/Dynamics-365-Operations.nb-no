@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Bruke eksterne kataloger for PunchOut eProcurement
+
+[!include[banner](../includes/banner.md)]
+
 Når du bruker eksterne kataloger for PunchOut eProcurement, trenger du ikke å vedlikeholde informasjon om leverandørens produkter i dine egne hoveddata. I stedet er handlekurven på webområdet til en leverandør konvertert til rekvisisjonslinjer som har den riktige produktinformasjonen. 
 
 Du bør ikke vedlikeholde beskrivelser og priser for leverandørenes produkter i dine egne hoveddata for produktet. Bruk i stedet eksterne kataloger for PunchOut eProcurement. Deretter, når ansatte oppretter rekvisisjoner, de kan stemple ut til en leverandørs eksterne katalogområde (de forlater med andre ord systemet ditt og går til leverandørens område). Produktene som legges til i handlekurven på leverandørens webområde, kan deretter konverteres til rekvisisjonslinjer. Derfor får du den riktige produktinformasjonen: produkt-ID, navn, pris og så videre.

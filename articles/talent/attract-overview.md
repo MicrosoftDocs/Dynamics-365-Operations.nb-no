@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="attract-overview"></a>Oversikt over Attract
+
+[!include[banner](includes/banner.md)]
+
 Attract gir muligheter til å håndtere prosessen med å ansette nye talenter. Kandidater kan legges til ledige jobber og avansere fra trinn til trinn, inntil et tilbud gis eller søknaden avlås. I hvert trinn går kandidatene gjennom aktiviteter som utvelgelsessamtaler, vurderinger eller planlegging av intervjuer. Etter at de søker får kandidatene en e-postinvitasjon for å logge inn i Attract. Her kan de følge statusen sin for jobben, deres søknad, og besvare oppgaver som tildeles dem.
 
 Attract har følgende funksjoner.

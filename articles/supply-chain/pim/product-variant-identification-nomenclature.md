@@ -29,6 +29,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi for produktvariantnumre og navn
 
+[!include[banner](../includes/banner.md)]
+
 Dette emnet beskriver hvordan du kan definere en produktnummerterminologi for å erstatte det faste formatet [Produktstandardnummer - Konfigurasjon - Størrelse - Farge - Stil]. Den nye terminologien har et bestemt format som inkluderer produktstandardnummer, aktive produktdimensjoner og skilletegn for tekst du velger. Du kan også opprette en terminologi for produktnavn. Du kan også bygge en terminologi for å identifisere konfigurasjonene som er opprettet av den restriksjonsbaserte produktkonfiguratoren. Disse terminologiene kan inneholde attributtene du velger.
 
 Med de nye terminologiene for produktvariantnumre og navn på produktvariant kan du ta med segmenter i identifikatorene for produktvarianter. Disse segmentene kan inkludere produktstandardnummer og navn, produktdimensjon-IDer og navn, nummerserier, tekstkonstanter og attributter. Med denne funksjonen kan du raskt finne en bestemt produktvariant når du oppretter en salgsordre eller bestilling. Du oppretter terminologier for både produktvariantnumre og produktvariantnavn fra siden **Produktterminologi**. Du åpner denne siden ved å klikke **Behandling av produktinformasjon** &gt; **Oppsett**.

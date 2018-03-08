@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
+[!include[banner](../includes/banner.md)]
+
 I **Produksjonsstyring**-arbeidsområdet gir tre fliser deg bedre oversikt over unntak for råvarer for produksjonsordrer og partiordrer:
 
 - Ikke-frigitte materiallinjer som krever oppmerksomhet

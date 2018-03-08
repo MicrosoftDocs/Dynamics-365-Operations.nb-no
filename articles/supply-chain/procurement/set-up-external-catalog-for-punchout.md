@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
 
+[!include[banner](../includes/banner.md)]
+
 Ved hjelp av den eksterne katalogen, kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Dynamics 365 for Finance and Operations, Enterprise edition juli 2017, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
 
 Når den eksterne katalogen er definert og en ansatt forbereder en rekvisisjon, vil det være et alternativ som omdirigerer til et eksternt område, den eksterne katalogen, og returnere handlekurven som ble opprettet på det eksterne området. Denne kommunikasjonen er basert på cXML-protokollen og den må være definert mellom systemene for i kjøper- og selgerorganisasjonen.
