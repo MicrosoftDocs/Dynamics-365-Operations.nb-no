@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Vise og evaluere resultatene i et spørreskjema
 
+[!include[banner](includes/banner.md)]
+
 Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
 Etter at respondentene har fylt ut et spørreskjema, kan du vise og evaluere spørreskjemaresultatene på følgende måter:

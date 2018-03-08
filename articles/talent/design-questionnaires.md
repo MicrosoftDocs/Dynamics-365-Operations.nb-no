@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="design-a-questionnaire"></a>Utforme et spørreskjema
 
+[!include[banner](includes/banner.md)]
+
 Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
 Et nøye utformet spørreskjema kan være med på å øke kvaliteten på dataene du samler inn. Gjennom nøye utforming kan du bedre velge de riktige alternativene til rett tid for et spørreskjema. Følgende punkt kan gjøre det enklere å planlegge et effektivt spørreskjema:

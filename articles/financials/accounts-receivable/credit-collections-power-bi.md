@@ -26,6 +26,8 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
+[!include[banner](../includes/banner.md)]
+
 Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Behandling av kreditt og innkrevinger**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt

@@ -24,6 +24,9 @@ ms.lasthandoff: 11/10/2017
 ---
 
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
+
+[!include[banner](../includes/banner.md)]
+
 Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge. Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering](emea-vat-reporting.md).
 
 ## <a name="set-up-sales-tax-authorities"></a>Definere skattemyndigheter

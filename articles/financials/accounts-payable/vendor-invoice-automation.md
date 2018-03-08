@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering av leverandørfaktura
 
+[!include[banner](../includes/banner.md)]
+
 Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
 
 Organisasjoner som ønsker å strømlinjeforme leverandørprosessene for (AP), identifiserer ofte fakturabehandling som ett av de øverste prosessområdene som bør være mer effektivt. I mange tilfeller setter disse organisasjonene behandling av papirfakturaer ut til en tredjepartsleverandør av tjenester for optisk tegngjenkjenning (OCR). Deretter mottar de maskinlesbare fakturametadata sammen med et skannet bilde av hver faktura. For å få hjelp med automatisering bygges deretter en løsning for den siste delen for å aktivere forbruk av disse artefakterene i faktureringssystemet. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition tilbyr nå denne automatiseringen for den siste delen rett fra esken, gjennom en løsning for automatisering av fakturaer.

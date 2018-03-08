@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Størrelsesangivelse for maskinvare for lokale miljøer
+
+[!include[banner](../includes/banner.md)]
+
 Før du begynner maskinvaren og infrastruktur endrer størrelsen på arbeid for et lokale miljø, gjøre deg kjent med den [systemkrav](system-requirements.md) og [instruksjoner for installasjon og distribusjon](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) for å få en grundig forståelse av den underliggende infrastrukturen. 
 
   **Obs!** Se nøye på anbefalte fremgangsmåter for systemoppsett for optimal ytelse. 

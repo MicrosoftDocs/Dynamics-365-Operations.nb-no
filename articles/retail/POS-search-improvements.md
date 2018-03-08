@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Oversikt over produkt- og kundesøk i Point of Sale
 
+[!include[banner](includes/banner.md)]
+
 Modern Point of Sale (MPOS) og Cloud Point of Sale (CPOS) gir søkefunksjonalitet som er enkel å bruke, og som gjør at ansatte raskt kan søke etter produkter og kunder. Søkefeltet er alltid til stede på toppen av MPOS og CPOS, slik at ansatte raskt kan finne produkter og kunder.
 
 Ansatte kan søke etter produkter i utvalgene og katalogene som er knyttet til gjeldende butikk, og i utvalgene og katalogene som er knyttet til enhver annen butikk i selskapet. Derfor kan kasserere selge og returnere produkter utenfor butikkens sortiment. På samme måte kan ansatte søke etter kunder som er knyttet til nåværende butikk eller annen butikk i selskapet. I tillegg kan ansatte søke etter kunder som er tilknyttet et annet selskap i morselskapet.

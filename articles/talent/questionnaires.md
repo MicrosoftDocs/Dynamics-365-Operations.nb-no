@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Spørreskjemaer
 
+[!include[banner](includes/banner.md)]
+
 Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
 
 Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike funksjoner som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Her er noen eksempler på hvordan spørreskjemaer kan brukes:

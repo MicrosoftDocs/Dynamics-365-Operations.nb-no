@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Parametere for reiseregning og utlegg
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Parametrene kontrollerer den generelle virkemåten i reiseregninger og utlegg.

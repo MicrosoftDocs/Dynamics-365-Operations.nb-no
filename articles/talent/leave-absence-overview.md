@@ -27,6 +27,8 @@ ms.lasthandoff: 01/31/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Oversikt over permisjons- og fraværsstyring
 
+[!include[banner](includes/banner.md)]
+
 Modulen **Permisjons- og fraværsstyring** tilbyr et fleksibelt rammeverk for å definere fraværsstyringsprosessen. Permisjons- og fraværsplaner kan opprettes for å fastslå hvordan ansatte setter av eller får tildelt fridager. Når de er registrert i en plan, kan ansatte sende fritidsforespørsler til ledere for godkjenning. Permisjonssporing tillater at både ledere på øverste nivå og personalledere kan se hvem som bruker fridager, og hvor lang tid de har igjen av fritiden.  
 
 Permisjons- og fraværsstyring inneholder følgende funksjoner: 

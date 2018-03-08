@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede vedlikehold av standard kostpris for produserte varer
 
+[!include[banner](../includes/banner.md)]
+
 Dette emnet beskriver fremgangsmåten for å forberede vedlikehold av kostnader for produserte varer. Fremgangsmåten for produserte varierer litt fra trinnene for innkjøpte varer.
 
 Reglene som tilordnes produserte varer kan påvirke kostnadsberegningene for de overordnede produserte varene. Når du skal forberede vedlikehold av kostpris for produserte varer, gjør du følgende.
