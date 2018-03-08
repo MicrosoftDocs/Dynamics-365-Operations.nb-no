@@ -19,13 +19,15 @@ ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: dcaf0e58afe01a530ef567bfdb3b8e2506da9742
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: e59ccde58adb7fae2504d37f8a0bc76110a3348b
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="leave-and-absence-management-overview"></a><span data-ttu-id="99cb2-103">Oversikt over permisjons- og fraværsstyring</span><span class="sxs-lookup"><span data-stu-id="99cb2-103">Leave and absence management overview</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="99cb2-104">Modulen **Permisjons- og fraværsstyring** tilbyr et fleksibelt rammeverk for å definere fraværsstyringsprosessen.</span><span class="sxs-lookup"><span data-stu-id="99cb2-104">The **Leave and absence management** module offers a flexible framework for defining the absence management process.</span></span> <span data-ttu-id="99cb2-105">Permisjons- og fraværsplaner kan opprettes for å fastslå hvordan ansatte setter av eller får tildelt fridager.</span><span class="sxs-lookup"><span data-stu-id="99cb2-105">Leave and absence plans can be created to determine how employees accrue or are granted time off.</span></span> <span data-ttu-id="99cb2-106">Når de er registrert i en plan, kan ansatte sende fritidsforespørsler til ledere for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="99cb2-106">After employees are enrolled in a plan, they can submit time-off requests for approval by managers.</span></span> <span data-ttu-id="99cb2-107">Permisjonssporing tillater at både ledere på øverste nivå og personalledere kan se hvem som bruker fridager, og hvor lang tid de har igjen av fritiden.</span><span class="sxs-lookup"><span data-stu-id="99cb2-107">Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.</span></span>  
 

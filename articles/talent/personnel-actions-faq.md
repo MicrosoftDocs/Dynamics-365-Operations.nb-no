@@ -18,14 +18,17 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: e3f0f79df73cce4a54c7e6abbc38381c708af690
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="a1933-104">Vanlige spørsmål om personalhandlinger</span><span class="sxs-lookup"><span data-stu-id="a1933-104">Personnel actions [FAQ]</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="a1933-105">Dette emnet inneholder svar på spørsmål du kan ha hvis organisasjonen bruker personalhandlinger.</span><span class="sxs-lookup"><span data-stu-id="a1933-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="a1933-106">Personalhandlinger er flere trinn du må fullføre når du utfører bestemte personalrelaterte oppgaver.</span><span class="sxs-lookup"><span data-stu-id="a1933-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="a1933-107">Eksempler på oppgaver som kan kreve personalhandlinger, er når du oppretter nye stillinger, endrer verdier for eksisterende stillinger, ansette nye arbeidere, overføre arbeidere, endre arbeiderkompensasjon, endre stillingstilordninger eller avslutte arbeidere.</span><span class="sxs-lookup"><span data-stu-id="a1933-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
 <span data-ttu-id="a1933-108">**Merk:** Personalhandlinger er kun tilgjengelig hvis feltene **Aktiver ansatthandlinger** og **Aktiver stillingshandlinger** er satt til **Ja** i kategorien **Personalhandlinger** på siden **Delte parametere for menneskelige ressurser**.</span><span class="sxs-lookup"><span data-stu-id="a1933-108">**Note:** Personnel actions are available only if the **Enable worker actions** and **Enable position actions** fields have been set to **Yes**, in the **Personnel actions** tab on the **Human resources shared parameters** page.</span></span> 

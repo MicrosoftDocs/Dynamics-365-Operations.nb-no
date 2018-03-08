@@ -18,14 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: d4af3436c609ad7612e72a1dcace2e3c0ffd078a
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="display-notifications-in-point-of-sale"></a><span data-ttu-id="e1e65-103">Vise varslinger på salgsstedet</span><span class="sxs-lookup"><span data-stu-id="e1e65-103">Display notifications in Point of Sale</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="e1e65-104">I dagens moderne detaljhandelsmiljø har butikkansatte forskjellige oppgaver, for eksempel hjelpe kunder, slå inn transaksjoner, utføre lagertelling og motta ordrer i butikken.</span><span class="sxs-lookup"><span data-stu-id="e1e65-104">In today's modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, performing stock counts, and receiving orders in store.</span></span> <span data-ttu-id="e1e65-105">Salgsstedsklienten (POS) gjør det mulig for ansatte å utføre disse oppgavene og mye mer, alt i ett enkelt program.</span><span class="sxs-lookup"><span data-stu-id="e1e65-105">The Point of Sale (POS) client empowers the associates to do these tasks and much more, all in a single application.</span></span> <span data-ttu-id="e1e65-106">Med forskjellige oppgaver som skal utføres i løpet av dagen, kan ansatte trenge å bli varslet når noe krever deres oppmerksomhet.</span><span class="sxs-lookup"><span data-stu-id="e1e65-106">With various tasks to be performed during a day, associates may need to be notified when something requires their attention.</span></span> <span data-ttu-id="e1e65-107">Varslingsrammeverket i POS løser dette problemet ved at forhandlerne kan konfigurere rollebaserte meldinger.</span><span class="sxs-lookup"><span data-stu-id="e1e65-107">The notification framework in the POS solves this problem by allowing the retailers to configure role-based notifications.</span></span> <span data-ttu-id="e1e65-108">Disse meldingene kan bare konfigureres for POS-operasjoner med Dynamics 365 for Retail med programoppdatering 5.</span><span class="sxs-lookup"><span data-stu-id="e1e65-108">With Dynamics 365 for Retail with Application update 5, these notifications can be only configured for POS operations.</span></span>
 

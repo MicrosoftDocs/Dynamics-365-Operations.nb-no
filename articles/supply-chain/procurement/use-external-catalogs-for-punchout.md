@@ -19,14 +19,17 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: f755c1e46d5111282bfffdf751fe98beaa081a51
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 76d0c911bdddbc5a34644dc96ec13dd8fd53a338
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a><span data-ttu-id="dc545-103">Bruke eksterne kataloger for PunchOut eProcurement</span><span class="sxs-lookup"><span data-stu-id="dc545-103">Use external catalogs for PunchOut eProcurement</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="dc545-104">Når du bruker eksterne kataloger for PunchOut eProcurement, trenger du ikke å vedlikeholde informasjon om leverandørens produkter i dine egne hoveddata.</span><span class="sxs-lookup"><span data-stu-id="dc545-104">By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data.</span></span> <span data-ttu-id="dc545-105">I stedet er handlekurven på webområdet til en leverandør konvertert til rekvisisjonslinjer som har den riktige produktinformasjonen.</span><span class="sxs-lookup"><span data-stu-id="dc545-105">Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information.</span></span> 
 
 <span data-ttu-id="dc545-106">Du bør ikke vedlikeholde beskrivelser og priser for leverandørenes produkter i dine egne hoveddata for produktet.</span><span class="sxs-lookup"><span data-stu-id="dc545-106">You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data.</span></span> <span data-ttu-id="dc545-107">Bruk i stedet eksterne kataloger for PunchOut eProcurement.</span><span class="sxs-lookup"><span data-stu-id="dc545-107">Instead, use external catalogs for PunchOut e-procurement.</span></span> <span data-ttu-id="dc545-108">Deretter, når ansatte oppretter rekvisisjoner, de kan stemple ut til en leverandørs eksterne katalogområde (de forlater med andre ord systemet ditt og går til leverandørens område).</span><span class="sxs-lookup"><span data-stu-id="dc545-108">Then, when employees create requisitions, they can “punch out” to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site).</span></span> <span data-ttu-id="dc545-109">Produktene som legges til i handlekurven på leverandørens webområde, kan deretter konverteres til rekvisisjonslinjer.</span><span class="sxs-lookup"><span data-stu-id="dc545-109">The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines.</span></span> <span data-ttu-id="dc545-110">Derfor får du den riktige produktinformasjonen: produkt-ID, navn, pris og så videre.</span><span class="sxs-lookup"><span data-stu-id="dc545-110">Therefore, you get the correct product information: product ID, name, price, and so on.</span></span>
