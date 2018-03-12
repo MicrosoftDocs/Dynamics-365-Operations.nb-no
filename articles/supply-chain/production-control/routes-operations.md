@@ -1,7 +1,7 @@
 ---
 title: Ruter og operasjoner
 description: Dette emnet gir informasjon om ruter og operasjoner.
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

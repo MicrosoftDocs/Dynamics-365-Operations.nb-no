@@ -1,9 +1,9 @@
 ---
 title: Startside for forsyningskjedeadministrasjon
-description: Dette emnet inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: Denne siden inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for
 Velg et funksjonsområde du vil finne ut mer om.
 
 - [Kostnadsregnskap](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Kostnadsstyring](cost-management/costing-sheets.md)  
+- [Kostnadsstyring](cost-management/cost-management-home-page.md)  
 - [Lagerstyring](inventory/inventory-home-page.md)
 - [Hovedplanlegging](master-planning/master-planning-home-page.md)
 - [Innkjøp og leverandører](procurement/procurement-sourcing-overview.md)
@@ -54,8 +54,9 @@ Velg et funksjonsområde du vil finne ut mer om.
 
 Disse korte videoene hjelper deg med å finne ut mer om de nye funksjonene i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
--  [Prosepkt til kontanter-integrering](https://youtu.be/AVV9x5x-XCg) 
+-  [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Disse korte videoene hjelper deg med å finne ut mer om de nye funksjonene i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
@@ -67,17 +68,36 @@ Disse korte videoene hjelper deg med å finne ut mer om de nye funksjonene i Mi
 
 Disse registreringene for tekniske konferanser omhandler produktfunksjonalitet i den forrige versjonen av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Hovedplanlegging – tips og triks for feilsøkingsytelse</a>
--  <a href="https://youtu.be/RLXybx20B5o">Hjelp! MRP er treg!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle innkommende forhåndsvarsler for forsendelse i lagerstyring</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få det beste ut av ditt lagerstyringssystem</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov</a>
--  <a href="https://youtu.be/5w1MngVchBA">Etiketter i den nye R3-lagerstyringen for Microsoft Dynamics AX 2012</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avansert lagerstyring - en dag i løpet av prosessproduksjonen</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Operasjoner og aktiviteter for underleverandører i produksjonen</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Transportstyring (TMS) i den nye forekomsten av Microsoft Dynamics AX</a>
+**Kostnadsstyring**
+
+-  [Oversikt over behandling av kostnader](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Hovedplanlegging**
+
+-  [Utvid funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
+-  [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
+
+**Behandling av produktinformasjon**
+
+-  [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Lagerstyring** 
+
+-  [Behandle innkommende forhåndsvarsler for forsendelse i lagerstyring](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Få det beste ut av ditt lagerstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov](https://youtu.be/Og0gLlVp7jA)
+-  [Etiketter i den nye R3-lagerstyringen for Microsoft Dynamics AX 2012](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Avansert lagerstyring - en dag i løpet av prosessproduksjonen](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Produksjonskontroll**
+
+-  [Operasjoner og aktiviteter for underleverandører i produksjonen](https://youtu.be/y1jrd3A_k70)
+
+**Transportstyring**
+
+-  [Transportstyring (TMS) i den nye forekomsten av Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogger
 Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teambloggen</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i Dynamics AX R & D-teambloggen </a>. De fleste av disse ble skrevet for tidligere versjoner av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
