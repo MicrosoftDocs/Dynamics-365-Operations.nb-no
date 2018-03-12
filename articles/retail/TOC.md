@@ -183,6 +183,7 @@
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiseringsarkitektur for nettbutikk for Retail](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Resultat for Retail-kanal for Power BI-innhold](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [PA-DSS-sertifisering (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
 
 ## Distribusjon og hurtigreparasjoner
 ### [Oversikt over skalaenhet for Retail](dev-itpro/retail-store-system-begin.md)
