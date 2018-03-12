@@ -9,7 +9,7 @@
 ## [Programstakk og serverarkitektur](dev-tools/application-stack-server-architecture.md)
 ## [Få en evalueringskopi](dev-tools/get-evaluation-copy.md)
 ## [Registrere deg for et abonnement](dev-tools/sign-up-preview-subscription.md)
-## [Access-forekomster](dev-tools/access-instances.md)
+## [Distribuere og få tilgang til et utviklingsmiljø](dev-tools/access-instances.md)
 ## [Systemkrav for utvikling](dev-tools/development-system-requirements.md)
 ## Eksempel på flåtestyringsprogram
 ### [Eksempel på flåtestyringsprogram](dev-tools/fleet-management-sample.md)
@@ -360,7 +360,7 @@
 #### [ValueMetadata-type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Dataintegrering
-## [Integreringsmønstre](data-entities/integration-overview.md)
+## [Velg en strategi for dataintegrering (import og eksport)](data-entities/integration-overview.md)
 
 ## API-er for dataintegrering
 ### [API for databehandlingspakke](data-entities/data-management-api.md)
@@ -381,12 +381,12 @@
 
 ### [Dataintegrering ved hjelp av Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurere et prospekt til kontanter-scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synkronisere produkter fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Synkronisere kontoer fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Synkronisere salgsordrehoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Synkronisere salgsfakturahoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synkronisere produkter fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synkronisere kontoer fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synkronisere kontakter fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synkronisere salgstilbudshoder og -linjer fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synkronisere salgsordrehoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synkronisere salgsfakturahoder og -linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synkronisere produkter direkte fra Finance and Operations til produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Vise din egen database](analytics/export-entities-to-your-own-database.md)
 
+## [Ressurser for å svare på en forespørsel om data for EUs personvernforordning (GDPR)](gdpr/gdpr-home-page.md)
+
 # [Startside for kontinuerlig levering](dev-tools/continuous-delivery-home-page.md)
 ## [Vanlige spørsmål om utvikling og kontinuerlig levering](dev-tools/continuous-delivery-faq.md)
 ## [Utelukke testpakker fra byggeutdataene](dev-tools/exclude-test-packages.md)
@@ -515,8 +517,9 @@
 ### [Opprette et lokalt prosjekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurere og distribuere i lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 ### [Utvikle og distribuere tilpassede modeller til lokale miljøer](deployment/develop-deploy-custom-models-on-premises.md)
+### [Konfigurere omvendt proxy for et lokalt miljø](deployment/onprem-reverseproxy.md)
 ### [Bruke oppdateringer i en lokal distribusjon](deployment/apply-updates-on-premises.md)
-### [Distribuere e lokale distribusjon på nytt](deployment/redeploy-on-prem.md)
+### [Distribuere en lokal distribusjon på nytt](deployment/redeploy-on-prem.md)
 ### [Oppdatere den lokale agenten](lifecycle-services/update-local-agent.md)
 ### [Konfigurere miljøet på nytt](lifecycle-services/reconfigure-environment.md)
 ### [Feilsøke Dynamics 365 for Finance and Operations, Enterprise edition lokalt](deployment/troubleshoot-on-prem.md)
@@ -527,7 +530,7 @@
 ### [Installere en distribuerbar pakke](deployment/install-deployable-package.md)
 ### [Feilsøke problemer med pakkeprogram](deployment/deployable-package-troubleshooting.md)
 
-# [Oppgradering og overføring](migration-upgrade/upgrade-home-page.md)
+# [Oppgraderinger, oppdateringer og hurtigreparasjoner](migration-upgrade/upgrade-home-page.md)
 ## [Oppgradere fra AX 2012 til Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012-oppgradering – Bruke verktøyet for oppgraderingsanalyse til å planlegge](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012-oppgradering – Bruke kodeoppgraderingstjenesten til å anslå hva som må gjøres](migration-upgrade/analyze-code-upgrade.md)
@@ -555,8 +558,7 @@
 ### [Dele opp modeller](dev-tools/model-split.md)
 ### [Bruke representanter til å løse avhengigheter mellom modeller](migration-upgrade/delegates-migration.md)
 
-
-## Oppgradere til en nylig oppdatering
+## Oppgradere til en nylig oppdatering (sky)
 ### [Prosess for å oppgradere til den nyeste versjonen](migration-upgrade/upgrade-latest-update.md)
 ### [Livssykluspolicy](migration-upgrade/versions-update-policy.md)
 ### [Ta i bruk den siste plattformoppdateringen i miljøet](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Oppgradere et sandkassemiljø](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Oppgradere data i utviklings- eller demonstrasjonsmiljøer](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Oppdatere utviklingsverktøy](dev-tools/update-development-tools.md)
-### [Bruke oppdateringer i en lokal distribusjon](deployment/apply-updates-on-premises.md)
-### [Distribuere e lokale distribusjon på nytt](deployment/redeploy-on-prem.md)
 
-## Hurtigreparasjoner og betjening
+## Oppgradere til en nylig oppdatering (lokal)
+### [Bruke oppdateringer i en lokal distribusjon](deployment/apply-updates-on-premises.md)
+### [Distribuere en lokal distribusjon på nytt](deployment/redeploy-on-prem.md)
+
+## Hurtigreparasjoner
 ### [Laste ned hurtigreparasjoner fra Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+### [Ta i bruk oppdateringer i et skymiljø](deployment/apply-deployable-package-system.md)
 ### [Installere en hurtigreparasjonen for metadata](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Oppdatere Rapporteringstjenester i et miljø med én boks](migration-upgrade/patch-reporting-service-environment.md)
+### [Oppdatere utviklingsverktøy for Visual Studio](dev-tools/update-development-tools.md)
 
 ## Avskrivninger
 ### [Avskrevede API-er](migration-upgrade/deprecated-apis.md)
