@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ Du kan laste ned en zip-fil for datapakken. Denne filen inneholder alle dataene 
 5. Velg **Import**. I **Utvidet**-visningen kan du bruke **Filter**-alternativet for raskt å få oversikt over problemer som kan oppstå under importen.
 
 **Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
+
+Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen.
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>Relaterte emne
 

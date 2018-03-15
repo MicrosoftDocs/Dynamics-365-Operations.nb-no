@@ -18,14 +18,19 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
-ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
+ms.sourcegitcommit: 8b59ea6a2ac8c1c4e5df6e251fa3390639ff3f30
+ms.openlocfilehash: e6266ef5890b5caaf33db76eeccfc8a7a6888a11
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/02/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Klargjøre Microsoft Dynamics 365 for Talent
-Dette emnet leder deg gjennom prosessen med å klargjøre et nytt miljø for Microsoft Dynamics 365 for Talent. Dette emnet antar at du har kjøpt Talent gjennom en Cloud Solution Provider (CSP)- or enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Talent-serviceplanen, og du kan ikke fullføre trinnene i dette emnet, kan du kontakte kundestøtte.
+
+[!include[banner](includes/banner.md)]
+
+[!include[banner](includes/banner.md)]
+
+Dette emnet leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 for Talent. Dette emnet antar at du har kjøpt Talent gjennom en Cloud Solution Provider (CSP)- or enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Talent-serviceplanen, og du kan ikke fullføre trinnene i dette emnet, kan du kontakte kundestøtte.
 
 Det første som må gjøres, er at den globale administratoren må logge på [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) og opprette et nytt Talent-prosjekt. Med mindre et lisensieringsproblem hindrer deg i å klargjøre Talent, kreves det ikke hjelp fra kundestøtte eller Dynamics Service Engineering (DSE)-representanter.
 
@@ -52,45 +57,51 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
 3. Velg **Legg til**, og velg deretter miljøet som Talent skal klargjøres for.
 4. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
 
-    Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen oppdateres til **Distribuert**. Denne prosessen tar vanligvis bare noen få minutter. Hvis du klargjøringen mislykkes, må du kontakte kundestøtte.
+    Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen oppdateres til **Distribuert**. Denne prosessen tar vanligvis bare noen få minutter. Hvis klargjøringsprosessen mislykkes, må du kontakte kundestøtte.
 
 6. Velg **Logg på Talent** for å bruke det nye miljøet ditt.
 
 > [!NOTE]
 > Hvis du ennå ikke har godkjent for de endelige kravene, kan du distribuere en testforekomst av Talent i prosjektet. Du kan deretter bruke denne forekomsten til å teste løsningen til du godkjenner. Hvis du bruker det nye miljøet for testing, må du gjenta denne fremgangsmåten for å opprette et produksjonsmiljø.
 
-## <a name="create-a-new-powerapps-environment-if-required"></a>Opprette et ny PowerApps-miljø (hvis nødvendig)
+> [!NOTE]
+> Talentmiljøer som klargjøres gjennom LCS, inneholder ikke demodata som er konfigurert for personaloppgaver, eller som er spesifikke for Talent. Hvis du trenger et miljø som inneholder demodata, anbefaler vi at du registrerer deg for et gratis 60-dagers [Talent-prøvemiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for kjerne-HR. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
-Tanken bak Talents integrasjon med PowerApps-miljøer er å muliggjøre dataintegrasjon og tilleggflyter ved hjelp av PowerApps-verktøy på toppen av Talent-data. Dermed er det viktig å forstå formålet med PowerApps-miljøer når du velger miljøet som skal brukes for Talent. For mer informasjon om PowerApps-miljøer, blant annet miljøomfang, miljøtilgang og opprettelse og valg av miljø, kan du se [Kunngjøre PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  Ettersom hver leier er klargjort automatisk i et standard PowerApps-miljø, er det kanskje ikke det beste miljøet som kan brukes for Talent-distribusjonen. Dataintegrering og testing av strategier bør vurderes i dette trinnet, så vi anbefaler at du vurderer forskjellige konsekvenser av distribusjonen fordi det ikke er enkelt å endre den senere.
+## <a name="create-a-new-powerapps-environment-if-required"></a>Opprette et ny PowerApps-miljø (hvis nødvendig)
+Integreringen mellom Talent- og PowerApps-miljøer gjør at du kan integrere og utvide bruken av Talent-data ved hjelp av PowerApps-verktøy. En forståelse av formålet med PowerApps-miljøer hjelper deg med å lage programmer som oppfyller behovene du har for å utvide Talent. For informasjon om PowerApps-miljøer, blant annet miljøomfang, miljøtilgang og opprettelse og valg av miljø, kan du se [Kunngjøre PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). Ettersom hver leier får klargjort automatisk et standard PowerApps-miljø, er det kanskje ikke det beste miljøet som kan brukes for Talent-distribusjonen. Dataintegrering og testing av strategier bør vurderes i dette trinnet, så vi anbefaler at du vurderer konsekvensene som kan påvirke virkningen på distribusjonen fordi noen beslutningen ikke er enkle å endre senere. 
+
+Selv om hver leier er klargjort automatisk i et standard PowerApps-miljø, er kanskje ikke dette miljøet det beste for Talent-distribusjonen. Dataintegrering og testestrategier må vurderes i dette trinnet. Vi anbefaler derfor at du vurderer forskjellige konsekvenser for distribusjonen, fordi det ikke er enkelt å endre PowerApps-miljøet senere.
 
 1. Velg **Administrer miljøer** i LCS. Du tas til [PowerApps-administrasjonssenteret](https://preview.admin.powerapps.com/environments), der du kan vise eksisterende miljøer og opprette nye miljøer.
-2. Velg (**+**) **Nytt miljø**-knappen.
+2. Velg **Nytt miljø**.
 3. Angi et unikt navn for miljøet, og velg plasseringen du vil distribuere til.
 
     > [!NOTE]
     > Talent er ikke tilgjengelig i alle områder. Derfor må du kontrollere tilgjengelighet før du velger plassering for ditt miljø.
 
 4. Når du blir spurt om du vil opprette en database, velger du **Opprett database** for å opprette Common Data Service (CDS)-databasen som må være vert for en del av Talent-dataene dine. Når du oppretter en database, kan du også integrere PowerApps-programmer med Talent.
-5. Du blir spurt om tilgangsnivået du vil bruke for databasen. Vi anbefaler at du velger **Begrens tilgang** fordi dette alternativet hindrer at Talent-brukere får direkte tilgang til sensitive data ved hjelp av et PowerApps-program.
-6. CDS-databasen som opprettes, inneholder demonstrasjonsdata. Disse demodataene er nyttige fordi du kan bruke demodatafirmaet for testing, eller til å opprette oppgaveopptak eller oppgaveveiledninger. Demodataene legger imidlertid til inaktive ansatte og fiktive adresser blant annen informasjon i produksjonsmiljøet. Hvis du vil fjerne demodataene, kan du bruke følgende fremgangsmåte når du er ferdig med å opprette CDS-databasen:
+5. Du blir spurt om tilgangsnivået som skal brukes for databasen. Vi anbefaler at du velger **Begrens tilgang** fordi dette alternativet hindrer at Talent-brukere får direkte tilgang til sensitive data ved hjelp av et PowerApps-program.
+6. CDS-databasen som opprettes, inneholder demodata som legger til inaktive ansatte og fiktive adresser blant annen informasjon i produksjonsmiljøet. Hvis du vil fjerne demodataene, kan du bruke følgende fremgangsmåte når du er ferdig med å opprette CDS-databasen:
 
     > [!IMPORTANT]
-    > Hvis du tidligere opprettet en CDS-database og angav noen av firmaets produksjonsdata i den, må du være oppmerksom på at disse trinnene fjerner **alle** dataene i den valgte databasen, til og med firmaets produksjonsdata.
+    > Hvis du tidligere opprettet en CDS-database og angav noen av firmaets produksjonsdata i den, vil disse trinnene fjerne **alle** dataene i den valgte databasen, til og med firmaets produksjonsdata.
 
-    1. Logg på [PowerApps](https://preview.web.powerapps.com/home), og velg miljøet som du opprettet i trinn 2, fra rullegardinlisten til høyre på siden.
-    2. Utvid **Common Data Service** i den venstre navigasjonsruten, og velg **Enheter**.
-    3. På høyre side av siden velger du ellipsen (**...**), og velger deretter **Fjern alle data**.
-    4. Velg **Slett data** for å bekrefte at du vil fjerne dataene. Denne handlingen fjerner alle demodataene som er inkludert i CDS-en som standard. Den fjerner også alle andre data som er angitt i den valgte databasen.
-    
+    1. Logge på [PowerApps](https://preview.web.powerapps.com/home)
+    2. Velg miljøet som du opprettet i trinn 2, i rullegardinlisten øverst til høyre.
+    3. Utvid **Common Data Service** i navigasjonsruten til venstre, og velg deretter **Enheter**.
+    4. På høyre side av siden velger du ellipsen (**...**), og velger deretter **Fjern alle data**.
+    5. Velg **Slett data** for å bekrefte at du vil fjerne dataene. Denne handlingen fjerner alle demodataene som er inkludert i CDS-en som standard. Den fjerner også alle andre data som er angitt i den valgte databasen.
+
 Nå kan du bruke det nye miljøet ditt.
 
-## <a name="granting-access-to-the-environment"></a>Gi tilgang til utviklingsmiljøet
-Den globale administratoren som opprettet miljøet, har tilgang som standard, men ytterligere brukere må gis tilgang eksplisitt. Dette kan gjøres ved [å legge til brukere](../dev-itpro/sysadmin/tasks/create-new-users.md) og [tilordne dem de aktuelle rollene](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i kjerne-HR-miljøet. I tillegg er det også nødvendig å legge til disse brukerne i PowerApps-miljøet, slik at de får tilgang til Attract and Onboard-programmene.  Blogginnlegget [Introdusere PowerApps-administrasjonssenteret](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) kan hjelpe deg med å utføre disse trinnene, som er beskrevet her:
+## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
+Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du [legge til brukere](../dev-itpro/sysadmin/tasks/create-new-users.md) og [tilordne de riktige rollene til dem](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i kjerne-HR-miljøet. Du må også legge til disse brukerne i PowerApps-miljøet, slik at de får tilgang til Attract and Onboard-programmene. Fremgangsmåten er beskrevet her. Hvis du trenger hjelp til å fullføre trinnene, kan du se blogginnlegget [Introdusere PowerApps-administrasjonssenteret](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) .
 
-> 1.    Den globale administratoren som distribuerte Talent-miljøet, må navigere til [PowerApps-administrasjonssenteret](https://preview.admin.powerapps.com/environments).   
-> 2.    Velg de aktuelle miljøene.
-> 3.    Legg til nødvendige brukerne til rollen "Miljøskaper" under kategorien Sikkerhet.
+Denne prosedyren fullføres av den globale administratoren som distribuerte Talent-miljøet.
 
-Merk at dette siste trinnet for å legge til brukere i PowerApps-miljøet er midlertidig. Vi vil til slutt legge til funksjonalitet for å aktivere dette automatisk når brukeren legges til i kjerne-HR.
+1. Åpne [PowerApps-administrasjonssenteret](https://preview.admin.powerapps.com/environments).
+2. Merk av for de aktuelle miljøene.
+3. Legg til nødvendige brukere til rollen **Miljøskaper** under kategorien **Sikkerhet**.
 
+Merk at dette siste trinnet der du manuelt legger til brukere i PowerApps-miljøet, er midlertidig. Til slutt vil det bli fullført automatisk når brukere legges til i kjerne-HR.
 

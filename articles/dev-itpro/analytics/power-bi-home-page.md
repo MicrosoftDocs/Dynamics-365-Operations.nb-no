@@ -3,7 +3,7 @@ title: Power BI-innhold
 description: "Dette emnet viser BI-innholdet som er tilgjengelig, og henviser til ressurser der du kan lære mer om det."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [Power BI-innhold for analyse av kostnadsregnskap](cost-accounting-analysis-content-pack.md) 
 - [Power BI-innholdet Behandling av kreditt og innkrevinger](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-innhold om ansattutvikling](employee-development-PBI.md) 
+- [Power BI-innhold om økonomisk innsikt](financial-insights.md)
 - [Finansresultat-innhold for Power BI](financial-performance-power-bi-content-pack.md)
 - [Anleggsmiddelbehandling-innhold for Power BI](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Opplæringsinnhold for Power BI](learning-power-bi.md)
@@ -73,6 +74,9 @@ Hvis du bruker oppdateringen for Microsoft Dynamics 365 for Operations versjon 1
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-innhold for Microsoft Dynamics AX
 Hvis du bruker oppdateringen for Microsoft Dynamics AX 7.0 eller Microsoft Dynamics AX 7.0.1, er følgende Power BI-innhold tilgjengelig:
+
+> [!Note]
+> Disse innholdspakkene er avskrevet slik det står i [Power BI-innholdspakker som er publisert på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Kostnadsbehandling-innhold for Power BI](cost-management-content-pack.md)    
 - [Finansresultat-innhold for Power BI](financial-performance-power-bi-content-pack.md)

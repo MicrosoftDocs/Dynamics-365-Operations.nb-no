@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Butikkordreoppfyllelse
+
+[!include[banner](includes/banner.md)]
 
 Mange forhandlere vil optimalisere ordreoppfyllelsen ved å la butikker oppfylle ordrer. Ordreoppfyllelse på butikknivå kan bidra til å forenkle scenarier med for store lagre for en bestemt butikk, eller det kan være nødvendig med hensyn til logistikk i tilfeller der en butikk har ekstra kapasitet eller befinner seg nærmere avstand for levering til kunden. For å løse dette behovet, er en enhetlig ordreoppfyllelsesoperasjon tilgjengelig på salgsstedet.
 
@@ -56,7 +58,7 @@ Linjene kan velges ved hjelp av **Velg**-funksjonen i handlingsruten. Når **Vel
 
 ## <a name="line-details"></a>Linjedetaljer
 
-Linjedetaljer kan vises ved hjelp av undermenyen for linjedetaljer. Når denne menyen brukes, finnes det to kategorier som viser tilleggsinformasjon for den valgte linjen. Den første kategorien, **Linjedetaljer**, viser detaljer om selve linjen, for eksempel det bestilte antallet og restantallet. Du finner flere detaljer, inkludert antall plukket, pakket og fakturert i tillegg til leveringsmåte og leveringsadresse. **Ordredetaljer**-kategorien gir ordrehodeinformasjon, inkludert kunde, kunde-ID, ordrenummer, ordretotal og saldo.
+Linjedetaljer kan vises ved hjelp av undermenyen for linjedetaljer. Når denne menyen brukes, finnes det tre kategorier som viser tilleggsinformasjon for den valgte linjen. Den første kategorien, **Linjedetaljer**, viser detaljer om selve linjen, for eksempel det bestilte antallet og restantallet. Du finner flere detaljer, inkludert antall plukket, pakket og fakturert i tillegg til leveringsmåte og leveringsadresse. **Ordredetaljer**-kategorien gir ordrehodeinformasjon, inkludert kunde, kunde-ID, ordrenummer, ordretotal og saldo. **Lager**-kategorien viser informasjon for den valgte linjen i henhold til tilgjengelig fysisk lager, reservert lager og bestilt lager.
 
 Hvis flere linjer er valgt, angir bare ordrelinjeundermenyen at flere linjer er valgt. Hvis du vil vise detaljer for én enkelt linje, fjerner du linjene til en linje gjenstår. 
 

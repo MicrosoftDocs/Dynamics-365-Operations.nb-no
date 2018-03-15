@@ -3,7 +3,7 @@ title: "Økonomisk innsikt"
 description: "Økonomisk innsikt bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ For øyeblikket kan ikke dataene i innebygde Power BI-rapporter være begrenset 
 | Vis økonomisk innsikt på tvers av firma   | •   I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, er ikke denne plikten tilordnet en rolle. • I neste versjon vil denne plikten tilordnes til Økonomidirektør-rollen. | •    Denne plikten gir tilgang til menyelementet for arbeidsområdet CFO-oversikt. •    Som standard brukes det aktive selskapet som et filter. Du kan imidlertid legge til alle juridiske enheter, uansett om brukeren har tilgang til andre juridiske enheter.             |
 
 
-## <a name="how-financial-statements-work"></a>Slik fungerer regnskapsoppgjør
-Selv om **Økonomisk innsikt** ikke inneholder regnskapsoppgjør, er det ikke en erstatning for Finansrapportering i Finance and Operations. Standard regnskapsoppgjør i **Økonomisk innsikt** er begrenset i omfang og omfatter ikke alle typer regnskapsoppgjør. Finansrapportering er fremdeles primærverktøyet som brukes til å utforme, opprette og generere lovbestemte regnskapsoppgjør.
+## <a name="financial-reporting-vs-finanical-insights"></a>Finansrapportering kontra økonomisk innsikt
+Selv om **Økonomisk innsikt** inneholder regnskapsoppgjør, er det ikke en erstatning for Finansrapportering i Finance and Operations. Standard regnskapsoppgjør i **Økonomisk innsikt** er begrenset i omfang og omfatter ikke alle typer regnskapsoppgjør. Finansrapportering er fremdeles primærverktøyet som brukes til å utforme, opprette og generere lovbestemte regnskapsoppgjør.
 
-I tillegg til de visuelle effektene fra det opprinnelige **CFO-oversikt**-arbeidsområdet, finnes det nå nye KPI-er, diagrammer og regnskapsoppgjør. Følgende regnskapsoppgjør er tilgjengelige:
+Sammenligningsdiagrammet nedenfor vil hjelpe deg med å skille mellom de to alternativene:
+
+|                                         | **Finansrapportering**                            | **Økonomisk innsikt**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Rediger standardrapporter**                | Ja                                                | Nei                                 | | **Opprett nye rapporter**                  | Ja                                                | Nei                                 | | **Skriv ut rapporter**                       | Ja                                                | Nei                                 | | **Eksporter til Excel**                     | Ja          | Begrenset Eksporterer rådata til Excel, ikke en formatert rapport       | | **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                               | Nei                                 | | **Rapporter om underfinansdata**       | Ja Begrenset til bare leverandør, kunde    | Ja Leverandør, kunde, leverandør-/kundegrupper, leverandør-/kundeadresser osv.  | | **Rapporteringsvaluta**      | Ja Regnskapsvaluta og omveksle til rapporteringsvaluta       | Nei Bare regnskapsvaluta      | | **Sikkerhet**                | Ja Samsvarer med Finance and Operations- og rapporteringstresikkerhet | Begrenset Vis rapporter for alle firmaer (uansett Finance and Operations-sikkerhet) eller bare aktivt firma | | **Støtt ulike kontoplaner og regnskapsår** | Ja                   | Nei                   | | **Rapporter om eksterne data**                              | Nei                   | Nei                                   | | **Støtt konsolideringer**                               | Ja                          | Begrenset Kan rapportere om flere firmaer, men bare bruke regnskapsvaluta                                     |
+
+
+I tillegg til brukergrensesnittet i det opprinnelige **CFO-oversikt**-arbeidsområdet, finnes det nå nye KPI-er, diagrammer og regnskapsoppgjør. Følgende regnskapsoppgjør er tilgjengelige:
 
 •   Råbalanse
 
@@ -117,7 +122,7 @@ I tillegg til de visuelle effektene fra det opprinnelige **CFO-oversikt**-arbeid
 
 •   Resultatregnskap med avvik
 
-•   12 måneder trend resultatregnskap
+•   12-måneders trend resultatregnskap
 
 •   Utgifter treårs trend
 

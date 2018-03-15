@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering (ER)
@@ -33,11 +33,10 @@ De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen sy
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 2. Klikk Konfigurasjonsleverandører.
 3. Klikk Ny.
-    * En leverandørpost har et unikt navn og URL-adresse. Se gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (http://www.litware.com) finnes allerede.  
+    * En leverandørpost har et unikt navn og URL-adresse. Gå gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (`http://www.litware.com`) allerede finnes.  
 4. Skriv inn Litware, Inc. i Navn-feltet.
     * Litware, Inc  
-5. Skriv inn "http://www.litware.com" i feltet Internett-adresse.
-    * http://www.litware.com  
+5. Skriv inn `http://www.litware.com` i feltet Internett-adresse.
 6. Klikk Lagre.
 7. Lukk siden.
 

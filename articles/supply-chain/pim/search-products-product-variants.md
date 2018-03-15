@@ -1,6 +1,6 @@
 ---
-title: "Søke etter produkter og produktvarianter under ordreregistrering"
-description: "Bruk feltet <strong>Varenummer</strong> til å søke etter produkter og produktvarianter når du oppretter en salgsordrelinje eller en bestillingslinje manuelt.  Dermed kan du raskt finne produktvarianter når du bare har konfigurasjonsstrengen eller én av produktdimensjonene tilgjengelige."
+title: "Søk etter produkter og produktvarianter under ordreregistrering"
+description: "Bruk feltet <strong>Varenummer </strong> til å søke etter produkter og produktvarianter når du oppretter en salgsordrelinje eller en bestillingslinje manuelt.  Dermed kan du raskt finne produktvarianter når du bare har konfigurasjonsstrengen eller én av produktdimensjonene tilgjengelige."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a834cb513d95c0244a29e1f9ec196020698c5983
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 

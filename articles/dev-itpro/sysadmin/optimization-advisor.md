@@ -3,7 +3,7 @@ title: "Opprette regler for optimaliseringsrådgiver"
 description: "Dette emnet beskriver hvordan du legger til nye regler i optimaliseringsrådgiver."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -170,6 +170,9 @@ Avhengig av detaljene i regelen kan det være mulig å ta en automatisk handling
 
 **securityMenuItem** returnerer navnet på et handlingsmenyelement slik at regelen er bare synlig for brukere som har tilgang til handlingsmenyelementet. Sikkerhet kan kreve at spesifikke regler og muligheter bare er tilgjengelige for autoriserte brukere. I eksemplet er det bare brukere med tilgang til **PurchRFQCaseTitleAction** som kan vise salgsmuligheten. Legg merke til at dette handlingsmenyelementet ble opprettet for dette eksemplet, og ble lagt til som et inngangspunkt for **PurchRFQCaseTableMaintain**-sikkerhetsrettigheten. 
 
+> [!NOTE]
+> Menyelementet må være et handlingsmenyelement for at sikkerhet skal fungere riktig. Andre menyelementtyper, for eksempel **Vis menyelementer**, fungerer ikke riktig.
+
 ```
 public MenuName securityMenuItem() 
 { 
@@ -192,6 +195,65 @@ class ScanNewRulesJob
 ```
 
 Regelen vil vises i **Valideringsregel for diagnostikk**-skjemaet, som er tilgjengelig fra **Systemadministrasjon** > **Periodiske oppgaver** > **Vedlikehold valideringsregel for diagnostikk**. Hvis du vil at det skal evalueres, går du til **Systemadministrasjon** > **Periodiske oppgaver** > **Planlegg valideringsregel for diagnostikk** og velg frekvens for regelen, for eksempel **Daglig**. Klikk **OK**. Gå til **Systemadministrasjon** > **Optimaliseringsrådgiver** for å vise den nye salgsmuligheten. 
+
+Eksemplet nedenfor er en kodesnutt med skjelettet til en regel, inkludert alle nødvendige metoder og attributter. Det hjelper deg med å komme i gang med å skrive nye regler. Etikettene og handlingsmenyelementer som brukes i eksemplet, brukes bare til demonstrasjonsformål.
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
 
 Hvis du vil ha mer informasjon, se den korte YouTube-videoen:
 

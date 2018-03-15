@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ Bruk følgende kriterier for å velge og oppdatere de frigitte produktene og pro
 
 ## <a name="related-topics"></a>Relaterte emner
 
--  Opprette en ny livssyklustilstand for produkt
--  Opprette en standard ny livssyklustilstand for produkt
--  Tilordne en produktlivssyklustilstand til en frigitt produktstandard
--  Tilordne en produktlivssyklustilstand til et frigitt produkt
--  inne utdaterte produktvarianter og tilordne en produktlivssyklustilstand
--  Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging
+-  [Opprette en ny livssyklustilstand for produkt (oppgaveveiledning)](tasks/new-product-lifecycle-state.md)
+-  [Opprette en standard livssyklustilstand for produkt (oppgaveveiledning)](tasks/default-product-lifecycle-state.md)
+-  [Tilordne en produktlivssyklustilstand til en frigitt produktstandard (oppgaveveiledning)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tilordne en produktlivssyklustilstand til et frigitt produkt (oppgaveveiledning)](tasks/product-lifecycle-state-released-product.md)
+-  [Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand (oppgaveveiledning)](tasks/obsolete-product-variants.md)
+-  [Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging (oppgaveveiledning)](tasks/exclude-products-master-planning.md)
 

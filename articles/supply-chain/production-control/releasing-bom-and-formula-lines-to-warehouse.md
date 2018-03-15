@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
+
+[!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver prosessen for frigivelse av råvarer for stykklistelinjer og formellinjer til lageret. Når du frigir en stykkliste- eller formellinje til lageret, kontrollerer systemet først om materialet allerede er tilgjengelig for produksjonsinnleveringsstedet i produksjonslokalet der materialene brukes i produksjonsprosessen.
 
@@ -40,6 +42,9 @@ Metoden som brukes for å frigi stykkliste- og formellinjer styres av **Frigivel
 
 - **Frigi stykkliste- og formellinjer som en del av produksjons- eller partordrefrigivelse** – I denne metoden frigis stykkliste- og formellinjer for en produksjons- eller partiordre som en del av prosessen med å frigi ordren. Vanligvis under frigivelsen av en produksjons- eller partiordre, frigis produksjonsjobber frigis til produksjonsarbeiderne og produksjonspapirer skrives ut. Under denne prosessen endres også ordrens status til **Frigitt**.
 - **Frigi stykkliste- og formellinjer via en partijobb eller som en manuell samhandling** – I denne metoden kan stykkliste- og formellinjer bare frigis gjennom **Automatisk frigivelse av stykklister og formellinjer**-partijobben eller som en manuell samhandling. Hvis du vil frigi manuelt stykkliste- og formellinjer, velger du **Frigi til lager** på produksjonsordrelistesiden eller produksjonsordredetaljsiden i handlingsruten.
+
+For en rask demonstrasjon av hvordan du frigir stykkliste- og formellinjer til produksjon ved hjelp av en satsvis jobb, kan du se denne korte YouTube-videoen:
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigi stykkliste- og formellinjer ved hjelp av en partijobb
 
@@ -79,6 +84,9 @@ Hvis du vil kontrollere operasjonene som materialet skal frigis til, bruker du *
 Illustrasjonen nedenfor viser en produksjonsordre som har to operasjoner, 10 og 20. I dette eksemplet, hvis du begrenser frigivelsen til operasjon 10, frigis bare materiale M9203.
 
 ![Eksempel på frigivelse av materiale per operasjonsnummer](media/two-operations.PNG)
+
+For en rask demonstrasjon av hvordan du frigir materiale i forhold til mengde ferdigvarer, kan du se denne korte YouTube-videoen:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigi materiale i forhold til mengde ferdigvarer
 
