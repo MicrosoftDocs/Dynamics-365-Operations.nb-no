@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
@@ -44,7 +46,7 @@ Appen er tilgjengelig på Android- og Windows-operativsystemer. For å bruke den
 
 | Plattform                    | Versjon                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (alle versjoner)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, versjon 1611 <br>- eller - <br>Microsoft Dynamics AX versjon 7.0/7.0.1 og Microsoft Dynamics AX-plattformoppdatering med 2 hurtigreparasjonen KB 3210014 |
 
@@ -58,7 +60,7 @@ Appen er tilgjengelig på Android- og Windows-operativsystemer. For å bruke den
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Opprette et webtjenesteprogram i Azure Active Directory
 For at appen skal kunne kommunisere med en bestemt Finance and Operations-server, må du registrere et webtjenesteprogram i en Azure Active Directory for Finance and Operations-leietaker. Av sikkerhetsgrunner anbefaler vi at du oppretter et webtjenesteprogram for hver enhet du bruker. Hvis du vil opprette et webtjenesteprogram i Azure Active Directory (Azure AD), kan du gjøre følgende:
 
-1.  I en nettleser går du til <https://portal.azure.com>.
+1.  I en webleser kan du gå til <https://portal.azure.com>.
 2.  Skriv inn navnet og passordet for brukeren som har tilgang til Azure-abonnementet.
 3.  I den venstre navigasjonsruten i Azure-portalen klikker du **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-eksempel](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Kontroller at Active Directory-forekomsten er den som brukes av Finance and Operations.
@@ -93,7 +95,7 @@ Du må konfigurere appen på enheten til å koble til Finance and Operations-ser
     + **Klient-ID for Azure Active Directory** - Klient-ID hentes i trinn 9 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Klienthemmelighet for Azure Active Directory** - Klienthemmeligheten hentes i trinn 11 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Azure Active Directory-ressurs** - Azure AD Directory-ressursen viser rot-URL-adressen for Finance and Operations. **Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
-    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: https://login.windows.net/din-AD-leietaker-ID. Eksempel: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: `https://login.windows.net/your-AD-tenant-ID`. For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
     + **Firma** - Angi den juridiske enheten i Finance and Operations du vil koble programmet til. <br>[![wh-12-app-tilkobling-innstillinger](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Velg **Tilbake**-knappen øverst til venstre i programmet. Programmet vil nå koble til Finance and Operations-serveren, og påloggingsskjermbildet for lagermedarbeideren vises. <br>[![wh-13-pålogging-skjerm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)

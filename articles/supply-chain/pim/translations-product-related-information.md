@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -117,8 +117,8 @@ En dimensjonsverdi som er tilknyttet et produkt gjennom en dimensjonsvariantgrup
 Hvis du vil opprette en dimensjonsverdigruppe, gjør du følgende:
 1.  Klikk på **Behandling av produktinformasjon** &gt; **Oppsett** &gt; **Variantgrupper**.
 2.  Velg **Størrelse** **grupper**, **Fargegrupper** eller **Stilgrupper**.
-3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelsesgruppe**, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
-4.  På siden **Størrelsegruppelinjer**, **Fargegruppelinjer** eller **Stilgruppelinjer** klikker du på **Ny**, og deretter oppretter du størrelsene, fargene og stilene for gruppene.
+3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelses** **gruppe**, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
+4.  På siden **Størrelse** **gruppe** linjer, **Farge** **gruppe** **linjer** eller **Stilgruppelinjer** klikker du på **Ny**, og deretter oppretter du størrelsene, fargene og stilene for gruppene.
 
 Hvis du vil administrere oversettelser for verdier i en dimensjonsverdigruppe, gjør du følgende:
 1.  Følg den forrige fremgangsmåten for å opprette en dimensjonsverdigruppe for åpne siden **Størrelsesgruppelinjer**, **Fargegruppelinjer** eller **Stilgruppelinjer**.

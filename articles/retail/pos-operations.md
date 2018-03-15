@@ -1,5 +1,5 @@
 ---
-title: POS-operasjoner
+title: POS-operasjoner, tilkoblet og frakoblet
 description: Dette emnet inneholder informasjon om POS-operasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,17 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
-ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
+ms.sourcegitcommit: edfed83d4703c081d857faad0771dc1010be41b4
+ms.openlocfilehash: edd6dd23066eca782b8fd510dabab612241e480a
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
-# <a name="pos-operations"></a>POS-operasjoner
+# <a name="pos-operations-online-and-offline"></a>POS-operasjoner, tilkoblet og frakoblet
+
+[!include[banner](includes/banner.md)]
+
 De fleste handlinger som brukere utfører på salgsstedet (POS) anses som operasjoner. Operasjoner konfigureres og behandles i back office for Microsoft Dynamics 365 for Retail. Mange operasjoner kan legges til for knapper i POS-knappegruppen. Brukere kan deretter velge knappene for å aktivere operasjonene og utføre arbeidet. Andre operasjoner er en del av det primære POS-programmet, og startes fra knappene på skjermen eller som en del av andre arbeidsflyter eller prosesser.
 
 Tabellen nedenfor inneholder informasjon om operasjonene som er tilgjengelige i Retail Modern POS og Cloud POS for Dynamics 365 for Retail. Tabellen angir også hvor i programmet operasjonene kan startes, og om de er tilgjengelige når POS er i frakoblet modus.

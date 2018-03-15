@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7bcc8464d34c35423e86c963c6b493fc09db4472
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: fc0e71e2ffc2adbaed598f788141b651fbcc616a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -48,7 +48,7 @@ Du finner den nyeste versjonen av hver nettleser ved å gå til programvareprodu
 > * Redigeringsprogrammet for arbeidsflyt startes som et ClickOnce-program. Bare Microsoft Edge og Internet Explorer (på en støttet versjon av Microsoft Windows) støtter ClickOnce-programmer. ClickOnce-redigeringsprogrammet for arbeidsflyt krever en 64-biters kompatibelt operativsystem.
 > * Hvis du vil forhåndsvise PDF-filer, anbefaler vi at du bruker moderne nettlesere som Microsoft Edge (siste offentlig tilgjengelige versjon) på Windows 10 eller Google Chrome (siste offentlig tilgjengelige versjon) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-nettbrett.
 Nettverkskrav
-> * Dynamics 365 for Talent er utformet for nettverk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en nettleserklient til Microsoft Azure-datasenteret som er vert for Dynamics 365 for Talent. Vi anbefaler at du tester nettverksventetid på [www.azurespeed.com] (http://www.azurespeed.com "Test av ventetid for Azure").
+> * Dynamics 365 for Talent er utformet for nettverk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en nettleserklient til Microsoft Azure-datasenteret som er vert for Dynamics 365 for Talent. Vi anbefaler at du tester nettverksventetiden på [www.azurespeed.com] (http://www.azurespeed.com "Test av ventetid for Azure").
 > * Båndbreddekrav for Dynamics 365 for Talent er avhengig av scenariet. De vanligste scenarier krever en båndbredde på mer enn 50 kilobyte per sekund (kbps).
 
 > [!WARNING]
@@ -56,7 +56,7 @@ Nettverkskrav
 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-programmer som støttes
 
-*   Hvis du vil kjøre Microsoft Word- eller Microsoft Excel-tilleggene, må du ha Microsoft Office 2016 for Windows eller Mac installert. For mer informasjon om versjonskrav, se [Feilsøking for integrering av Office] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Feilsøking av Office-integrering").
+*   Hvis du vil kjøre Microsoft Word- eller Microsoft Excel-tilleggene, må du ha Microsoft Office 2016 for Windows eller Mac installert. Hvis du vil ha mer informasjon om versjonskrav, kan du se [Feilsøke Office-integrering] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Feilsøke Office-integrering").
 *   Hvis du vil vise dokumenter som er generert av funksjonen Eksporter til Excel eller Eksporter til Word, må ha Microsoft Office 2007 eller nyere installert.
 
 ## <a name="update-policy"></a>Oppdateringspolicy
