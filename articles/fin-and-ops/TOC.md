@@ -21,6 +21,7 @@
 #### [AX 2012-funksjoner som ble utsatt](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funksjoner som ikke er implementert i lokale distribusjoner](get-started/features-not-implemented-on-prem.md)
 #### [Versjoner og livssykluspolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Lokale distribusjoner (mars 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Platform update 13 (January 2018)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
@@ -134,7 +135,7 @@
 ### [Power Bi-innholdspakke for kostnadsstyring](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Dataintegrering
-### [Integreringsmønstre](../dev-itpro/data-entities/integration-overview.md)
+### [Velge en strategi for dataintegrering (import og eksport)](../dev-itpro/data-entities/integration-overview.md)
 
 ### API-er for dataintegrering
 #### [API for databehandlingspakke](../dev-itpro/data-entities/data-management-api.md)
@@ -157,10 +158,9 @@
 ###### [Beholde kontoer i Sales og synkronisere dem direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ###### [Beholde produkter i Finance and Operations og synkronisere dem til direkte til Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ###### [Beholde kontakter i Sales og synkronisere dem direkte til kontakter eller kunder i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synkronisere salgstilbud direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [Synkronisere salgsordrer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synkronisere salgsordrer direkte mellom Sales og Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Synkronisere salgsfaktura direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Beholde salgstilbud i Sales og synkronisere dem direkte til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Beholde salgsordrer i Finance and Operations og synkronisere dem direkte til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Beholde salgsfakturaer i Finance and Operations og synkronisere dem direkte til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [Bruke eksterne webtjenester](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -473,7 +473,13 @@
 #### [Distribusjoner i en reiseregning](../financials/expense-management/expense-report-distributions.md)
 #### [Konserninterne utgifter](../financials/expense-management/intercompany-expense.md)
 #### [Utgiftspolicyer](../financials/expense-management/travel-expense-policies.md)
-
+#### [Vise en reiseregning](../financials/expense-management/view-expense-report.md)
+#### [Redigere en reiseregning](../financials/expense-management/post-expense.md)
+#### [Reiseregninger og flere godkjennere](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [Mva-fradrag i Reiseregning](../financials/expense-management/VAT-expense-report.md)
+#### [Kostgodtgjørelsesregler](../financials/expense-management/per-diem.md)
+#### [Reiserekvisisjoner](../financials/expense-management/travel-req.md)
+#### [Personlige utgifter i en reiseregningsrapport](../financials/expense-management/personal-expenses.md)
 
 ### [Budsjettering](../financials/budgeting/budgeting-overview.md)
 #### [Oversikt over budsjettplanlegging ](../financials/budgeting/budget-planning-overview-configuration.md)
@@ -631,6 +637,8 @@
 ##### [Integrering av avgiftsmotor](../financials/general-ledger/tax-engine-integration.md)
 ##### [Vanlige spørsmål om mva-terskler](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Utvidelse av avgiftsmotoren](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [GST-integrering for kassaapparater](../retail/localizations/apac-ind-cash-registers.md)
+##### [Retningslinjer for distribusjon for kassaapparater](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### Japan
 ##### [Anskaffe et anleggsmiddel og gjøre krav om offentlig tilskudd](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -910,7 +918,10 @@
 ##### [Betalingsformater for kunde og leverandør](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [Kundebetaling basert på betalings-ID](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Format for nettoimport](../financials/localizations/emea-nor-nets-import-format.md)
-##### [Mva-oppgave](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [Mva-oppgave](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [Kassaapparater](../retail/localizations/emea-nor-cash-registers.md)
+##### [Retningslinjer for distribusjon for kassaapparater](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### Polen
 ##### [Beregne linjerabatter fra enhetsprisen](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [Rettelsesmerknader](../financials/localizations/emea-pol-correction-notes.md)
@@ -937,6 +948,7 @@
 ##### [Spesielle oppføringer og åpningsark](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sverige
 ##### [Importere betalingsformater](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [Kassaapparater](../retail/localizations/emea-swe-cash-registers.md)
 #### Sveits
 ##### [Importere kundebetalinger i ESR](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### Storbritannia
@@ -1644,6 +1656,7 @@
 ##### [Operasjonsressurser](../supply-chain/production-control/operations-resources.md)
 ##### [Ressursfunksjoner](../supply-chain/production-control/resource-capabilities.md)
 ##### [Partiattributter](../supply-chain/production-control/batch-attributes.md)
+##### [Partibalansering](../supply-chain/production-control/batch-balancing.md)
 ##### [Kopiere en formel (oppgaveveiledninger)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [Opprette en formel ved å kopiere fra en eksisterende formel (oppgaveveiledning)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Kopiere koprodukter fra en eksisterende formelversjon (oppgaveveiledning)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
@@ -1808,6 +1821,7 @@
 #### [Måleenhet og lagringspolicyer](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Power BI-innhold for lager](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [Systemgruppering i en åpen arbeidsliste](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Støtte for mobil strekkode](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [Arbeidspolicyer for lager](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Flytting av beholdning med tilknyttet arbeid i Lagerstyring](../supply-chain/warehousing/move-inventory-associated-work.md)
@@ -1816,8 +1830,9 @@
 #### [Parti- og nummerskiltbekreftelse](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mottak av kombinerte nummerskilt](../supply-chain/warehousing/mixed-license-plate-receiving.md)
-#### [Konfigurer Vis eldre partier i lageret på en mobilenhet](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
+#### [Konfigurere Vis eldre partier i lageret på en mobilenhet](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Plukke eldste parti på en mobilenhet](../supply-chain/warehousing/pick-oldest-batch.md)
+#### [Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Stykkplukkingsbekreftelse](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [Produktbekreftelse for gruppeplukking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [Satsvis frigivelse av delvis reserverte overføringsordrer](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
