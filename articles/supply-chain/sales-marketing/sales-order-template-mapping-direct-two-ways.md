@@ -3,7 +3,7 @@ title: Synkronisere salgsordrer direkte mellom Sales og Finance and Operations
 description: "Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
+ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
+ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -132,6 +132,7 @@ Før du synkroniserer salgsordrer, er det viktig å oppdatere innstillingene ned
 
     Gå til **Innstillinger** &gt; **Sikkerhet** &gt; **Team**, velg relevant team. velg **Administrer roller** og velg en rolle med ønskede tillatelser, for eksempel **Systemadministrator**.
 
+- For å sørge for korrekt beregning av rabatter i Sales og Finance and Operations, må **Rabattkalkuleringsmetode** være satt til **Linjeelement**.
 - Gå til **Innstillinger** &gt; **Administrasjon** &gt; **Systeminnstillinger** &gt; **Salg**, og sørger for å bruke følgende innstillinger:
 
     - Alternativet **Bruk systemets priskalkuleringssystem** er satt til **Ja**.

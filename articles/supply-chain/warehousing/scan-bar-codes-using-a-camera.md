@@ -18,14 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ffbd853c15e479fc4350a19121f2aebcedda9854
-ms.openlocfilehash: 31b9d421f3fd5378f26faeee3a83b66861ef5008
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing
+
+[!include[banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med et kamera på en mobil enhet. 
 
@@ -47,8 +49,8 @@ Kamerasiden startes på hver side der inndatafeltet har den foretrukne inndatamo
 - Klikk kameraet på oppgave- og detaljsiden for å gå tilbake til kamerasiden. 
 
 | Oppgave- og detaljsiden | Kamerasiden | 
-| --------------------- | -------------------- |
-| ![camera-scanning-example-task-detail-page](media/camera-scanning-example-task-detail-page.png)          | ![camera-scanning-example-camera-page](media/camera-scanning-example-camera-page.png)          |
+| :---------------------: | :--------------------: |
+| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
 
 På kamerasiden, når du klikker Kamera-knappen, vises den nedtonet ved forsøk på å identifisere en strekkode. Hvis en strekkode ikke identifiseres innen 5 sekunder, deaktiveres prosessen og Kamera-knappen blir tilgjengelig igjen. Du kan deretter prøve å skanne en strekkode på nytt.
 

@@ -250,7 +250,7 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 <a name="see-also"></a>Se også
 --------
 
-[Opprett en uttrykksbegrensning (Oppgaveguide)](oppgaver/add-expression-constraint-product-configuration-model.md)
+[Opprett en uttrykksbegrensning (Oppgaveguide)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Legge til beregning i en produktkonfigurasjonsmodell (oppgaveveiledning)](tasks/add-calculation-product-configuration-model.md)
 

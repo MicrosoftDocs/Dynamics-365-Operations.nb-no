@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ Når en forespørsel sendes inn, legges den til i listen **Brukerforespørsler f
 Før du kan be om at en ny bruker klargjøres, må vedkommende defineres som en kontakt for én eller flere leverandørkontoer. Slik oppretter du en forespørsel for en ny bruker for leverandørsamarbeid:
 
 1.  På siden **Alle kontakter** klikker du **Klargjør leverandørbruker**.
-2.  Angi en e-postadresse for brukeren. Denne adressen brukes av brukeren for å logge på Finance and Operations. Hvis e-postadressen tilhører et domene som er registrert som en leier i Microsoft Azure, må e-postadressen være en eksisterende Azure Active Directory-konto (ADD) for at klargjøringsprosessen skal fullføres. Hvis e-postadressen ikke tilhører et domene som er registrert i Microsoft Azure, opprettes en ADD-konto som en del av klargjøringsprosessen, og den nye brukeren mottar en e-postinvitasjon. E-postadresser for forbrukere med domener som @hotmail.com, @gmail.com eller @comcast.net, kan ikke brukes for å registrere en Finance and Operations-bruker.
+2.  Angi en e-postadresse for brukeren. Denne adressen brukes av brukeren for å logge på Finance and Operations. Hvis e-postadressen tilhører et domene som er registrert som en leier i Microsoft Azure, må e-postadressen være en eksisterende Azure Active Directory-konto (AAD) for at klargjøringsprosessen skal fullføres. Hvis e-postadressen ikke tilhører et domene som er registrert i Microsoft Azure, opprettes en ADD-konto som en del av klargjøringsprosessen, og den nye brukeren mottar en e-postinvitasjon. E-postadresser for forbrukere med domener som @hotmail.com, @gmail.com eller @comcast.net, kan ikke brukes for å registrere en Finance and Operations-bruker.
 3.  Sett alternativet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for alle de juridiske enhetene som brukeren må ha tilgang til.
 4.  I delen **Tilordne brukerroller** merker du av for **Tilordne** for sikkerhetsrollene som den nye brukeren skal ha.
 5.  Klikk **Send**.
 
-Når brukerforespørselen for leverandør sendes inn, settes feltet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for den valgte leverandørkontoen, og en arbeidsflyt for brukerforespørsel startes. Som en del av arbeidsflyten opprettes en ny bruker i Finance and Operations, og sikkerhetsroller tilordnes. I tillegg aktiveres en Azure B2B-tjeneste som starter samhandling med Azure-portalen og knytter en ny eller eksisterende AAD-konto til brukerkontoen for Finance and Operations.
+Når brukerforespørselen for leverandør sendes inn, settes feltet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for den valgte leverandørkontoen, og en arbeidsflyt for brukerforespørsel startes. Som en del av arbeidsflyten opprettes en ny bruker i Finance and Operations, og sikkerhetsroller tilordnes. I tillegg aktiveres en Azure B2B-tjeneste som starter samhandling med Azure-portalen og knytter en ny eller eksisterende AAD-konto til brukerkontoen for Finance and Operations. Hvis du vil ha mer informasjon, se [Hva er Azure AD B2B samarbeid?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Deaktivere en bruker
 

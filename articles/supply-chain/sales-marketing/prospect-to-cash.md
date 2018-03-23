@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ I den gjeldende versjonen inneholder Kundeemne til kontanter-løsningen følgend
 - [Beholde kontoer i Sales og synkroniser dem direkte fra Sales til Finance and Operations](accounts-template-mapping-direct.md)
 - [Beholde produkter i Finance and Operations og synkronisere dem til direkte til Sales](products-template-mapping-direct.md)
 - [Beholde kontakter i Sales og synkronisere dem direkte til kontakter eller kunder i Finance and Operations](contacts-template-mapping-direct.md)
-- [Synkronisere salgstilbud direkte fra Sales til Finance and Operations (mal venter på frigivelse)](sales-quotation-template-mapping-sales-fin.md)
-- [Synkronisere salgsordrer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct.md)
-- [Synkronisere salgsordrer direkte mellom Sales og Finance and Operations (mal venter på frigivelse)](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisere salgstilbud direkte fra Sales til Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisere salgsordrer direkte mellom Sales og Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisere salgsfaktura direkte fra Finance and Operations til Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
@@ -85,7 +84,7 @@ Kundeemne til kontanter-integrasjon støttes i følgende versjoner:
 
 For å bruke Kundeemne til kontanter-løsningen må du installere følgende komponenter:
 
-- Dynamics 365 for Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) nett eller en senere versjon.
 - Kundeemne til kontanter-løsningen for Dynamics 365 for Sales, versjon 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installere Kundeemne til kontanter-løsningen for Sales
