@@ -3,43 +3,50 @@ title: Definer utgiftspolicyer
 description: "Du kan definere utgiftspolicyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: saraschi2
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: SysPolicyListPage
+ms.search.form: SysPolicyListPage, TrvPolicyRule
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b0f9a5ca275944aeb27798a2f3377356319589c7
+ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
+ms.openlocfilehash: b52fe81015a324bde07f387b42b834b79dc7c2da
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="expense-policies"></a><span data-ttu-id="4e4a0-103">Utgiftspolicyer</span><span class="sxs-lookup"><span data-stu-id="4e4a0-103">Expense policies</span></span>
+# <a name="expense-policies"></a><span data-ttu-id="451ee-103">Utgiftspolicyer</span><span class="sxs-lookup"><span data-stu-id="451ee-103">Expense policies</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="4e4a0-104">Du kan definere policyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span> <span data-ttu-id="4e4a0-105">Ved å bruke policyer for reiseregning kan du administrere utgiftene dine på en effektiv måte.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-105">Implementing expense policies can help you manage expenses effectively.</span></span> 
+<span data-ttu-id="451ee-104">Du kan definere policyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger.</span><span class="sxs-lookup"><span data-stu-id="451ee-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span>         
+<span data-ttu-id="451ee-105">Ved å bruke policyer for reiseregning kan du administrere utgiftene dine på en effektiv måte.</span><span class="sxs-lookup"><span data-stu-id="451ee-105">Implementing expense policies can help you manage expenses effectively.</span></span>         
 
-<span data-ttu-id="4e4a0-106">For eksempel kan du sette opp en policy for hotellutgifter i New York City, som angir at det per natt ikke kan overstige USD 250.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span> <span data-ttu-id="4e4a0-107">Hvis en arbeidstaker sender inn en utgiftsrapport for en reiseregning hvor romprisen er større enn dette beløpet, vil systemet varsle arbeidstakeren om at policybeløpet for denne utgiften er overskredet.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="4e4a0-108">Du kan konfigurere meldingen arbeidstakeren mottar når du definerer denne policyen.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-108">You can configure the message that the worker will receive when you define the policy.</span></span> 
+<span data-ttu-id="451ee-106">For eksempel kan du sette opp en policy for hotellutgifter i New York City, som angir at det per natt ikke kan overstige USD 250.</span><span class="sxs-lookup"><span data-stu-id="451ee-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span>       
+<span data-ttu-id="451ee-107">Hvis en ansatt sender en reiseregning eller en reiserekvisisjon der romprisen per dag er høyere enn dette beløpet, vasler systemet</span><span class="sxs-lookup"><span data-stu-id="451ee-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</span></span>        
+<span data-ttu-id="451ee-108">den ansatte om at policybeløpet for utgifter er overskredet.</span><span class="sxs-lookup"><span data-stu-id="451ee-108">worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="451ee-109">Du kan konfigurere meldingen som den ansatte får når du</span><span class="sxs-lookup"><span data-stu-id="451ee-109">You can configure the message that the worker will receive when you</span></span>        
+<span data-ttu-id="451ee-110">definer policyreglene.</span><span class="sxs-lookup"><span data-stu-id="451ee-110">define the policy.</span></span>      
+        
+<span data-ttu-id="451ee-111">Du kan definere tre typer policyer.</span><span class="sxs-lookup"><span data-stu-id="451ee-111">You can define three types of policies:</span></span>         
+        
+- <span data-ttu-id="451ee-112">Advarsel – Tillater arbeidstakeren å sende inn en utgiftsrapport eller reiseregning, men kostnaden vil markeres for godkjennere</span><span class="sxs-lookup"><span data-stu-id="451ee-112">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>        
+<span data-ttu-id="451ee-113">for senere rapportering.</span><span class="sxs-lookup"><span data-stu-id="451ee-113">for later reporting.</span></span>        
 
-<span data-ttu-id="4e4a0-109">Du kan definere tre typer policyer.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-109">You can define three types of policies:</span></span> 
-
- - <span data-ttu-id="4e4a0-110">Advarsel – Tillater arbeidstakeren å sende inn en utgiftsrapport eller reiseregning, men kostnaden vil markeres for godkjennere</span><span class="sxs-lookup"><span data-stu-id="4e4a0-110">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>  
- <span data-ttu-id="4e4a0-111">for senere rapportering.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-111">for later reporting.</span></span> 
- - <span data-ttu-id="4e4a0-112">Feil – Krever at arbeidstakeren reviderer utgiftene for samsvar med policyen før innsending av utgiftsrapporten elle reiseregningen.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-112">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span> 
- - <span data-ttu-id="4e4a0-113">Begrunnelse – Krever at arbeidstakeren eller en leder skal legge inn en begrunnelse for å overskride beløpet før innsending av utgiftsrapport eller reiseregning.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-113">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span> 
-
-<span data-ttu-id="4e4a0-114">Du kan også sette opp en datoperioden for når utgiftpolicyen er effektiv.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-114">You can also set up a date range for which expense policies are in effect.</span></span> <span data-ttu-id="4e4a0-115">For eksempel kan flyprisene for flyvninger mellom Danmark og New York City være dyre under høysesonger.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-115">For example, airline fares for flights between Denmark and New York City can be expensive during the peak holiday travel season.</span></span> <span data-ttu-id="4e4a0-116">Du kan definere en utgiftsregel for flyvninger som begrenser kostanden for flyvninger til New York City til en grense på DKK 5000, og du kan spesifisere at denne regelen skal gjelde mellom 15. mars og 15. september.</span><span class="sxs-lookup"><span data-stu-id="4e4a0-116">You can define a flight expense rule that restricts the cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and September 15.</span></span> 
+- <span data-ttu-id="451ee-114">Feil – Krever at arbeidstakeren reviderer utgiftene for samsvar med policyen før innsending av utgiftsrapporten elle reiseregningen.</span><span class="sxs-lookup"><span data-stu-id="451ee-114">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span>       
+ 
+ - <span data-ttu-id="451ee-115">Begrunnelse – Krever at arbeidstakeren eller en leder skal legge inn en begrunnelse for å overskride beløpet før innsending av utgiftsrapport eller reiseregning.</span><span class="sxs-lookup"><span data-stu-id="451ee-115">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span>        
+ 
+ <span data-ttu-id="451ee-116">Du kan også sette opp en datoperioden for når utgiftpolicyen er effektiv.</span><span class="sxs-lookup"><span data-stu-id="451ee-116">You can also set up a date range for which expense policies are in effect.</span></span> <span data-ttu-id="451ee-117">For eksempel, flybilletter for fly mellom Danmark</span><span class="sxs-lookup"><span data-stu-id="451ee-117">For example, airline fares for flights between Denmark</span></span>      
+ <span data-ttu-id="451ee-118">og New York City kan være kostbare i høysesongen.</span><span class="sxs-lookup"><span data-stu-id="451ee-118">and New York City can be expensive during the peak holiday travel season.</span></span> <span data-ttu-id="451ee-119">Du kan definere en utgiftsregel for flyvninger som begrenses av</span><span class="sxs-lookup"><span data-stu-id="451ee-119">You can define a flight expense rule that restricts the</span></span>      
+ <span data-ttu-id="451ee-120">en grense for kostnaden på flybilletter til New York City på DKK 5000, og du kan spesifisere at regelen er gyldig mellom 15. mars og</span><span class="sxs-lookup"><span data-stu-id="451ee-120">cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and</span></span>      
+ <span data-ttu-id="451ee-121">15. september.</span><span class="sxs-lookup"><span data-stu-id="451ee-121">September 15.</span></span>
 
