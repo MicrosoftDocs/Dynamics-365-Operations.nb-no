@@ -3,7 +3,7 @@ title: Hva er nytt eller endret?
 description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonen av Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de s
 
 Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, kan du se [Prosessen for å oppgradere til den nyeste versjonen](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
+
+[!include[release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Programversjoner
 

@@ -19,10 +19,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 525b5a21047f0f39b9cd15448c4096d17c0e2dbd
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -69,7 +69,7 @@ Dette tar materialet fra bulklokasjonen til produksjonsinnleveringsstedet PIL-01
 
 Etter at produksjonsordren er startet, kan du registrere materialforbruk i arbeidsflyten for den håndholdte enheten. La oss begynne med å registrere forbruk på 25 kilo av parti B1.
 
-6.  Velg menyelementet **Registrer material****forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
+6.  Velg menyelementet **Registrer material** **forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
 
 -    Produksjonsordrenummeret. 
 -    Lokasjonen der materialet skal forbrukes, i dette tilfellet PIL-01. 

@@ -16,10 +16,10 @@ ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 1dda58b0f04df76b465b796cf2f125607444890a
-ms.openlocfilehash: f7357133cbd565bbbad1c8fbed40b75db589fac5
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 8a6a739751d5cf2ed8828779537cb72069075752
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 

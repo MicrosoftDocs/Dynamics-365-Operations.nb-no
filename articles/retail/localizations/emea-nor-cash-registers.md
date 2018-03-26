@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6ba17bd2f6b6373bc61a160a32fcb907cdd31a5
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 21dbcc6a816ffd5fa0b79908e25105e7cf25d6ca
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="cash-registers-for-norway"></a>Kassaapparater for Norge

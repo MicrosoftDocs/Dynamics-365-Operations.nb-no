@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: ce91f675082a34bd5a1e88be7a7af6884dc47add
+ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
+ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/07/2018
 
 
 > [!NOTE]
-> Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner. Hvis du vil ha mer informasjon, kan du se [Fjernede eller avskrevne funksjoner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 
+> Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner. Hvis du vil ha mer informasjon, kan du se [Fjernede eller avskrevne funksjoner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Gå til bunnen av siden hvis du har problemer med produktanbefalinger for ditt miljøallerede som allerede er aktivert. 
 
 Produktanbefalingene kan vises i Dynamics 365 for Retail på salgsstedsenheten. Anbefalingene er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. For forhandlere med store kataloger bidrar anbefalinger kunden med å oppdage produkter. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg og kryssalg for forhandlere og forbedring av kundebevaring. I Dynamics 365 for Retail er produktanbefalingene drevet av kognitive tjenester og Microsoft Azure Machine Learning.
 
@@ -84,6 +84,12 @@ Når du slår på **Aktiver anbefalinger** og kjører konfigurasjonjobbene, føl
 
 -   Modellens legitimasjon og ID hentes fra API-en og lagres i Dynamics 365 for Retail operativ database, i filen web.config for AOS og også i detaljhandelsserveren.
 -   Modellens legitimasjon og ID gjøres tilgjengelig for CRT slik at kall til produktanbefalinger fra Cloud POS og MPOS i tilkoblet modus kan opprettholdes.
+
+> ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Feilsøke problemer der du allerede har aktivert produktanbefalingene 
+>- Gå til **detaljhandelsparametere** > **maskinopplæring** > **deaktiver produktanbefalingene** og kjør **Global konfigurasjon for jobben [1110]**. Hvis du ikke finner kategorien **maskinopplæring**, kan du kontakte kundestøtte for Dynamics. 
+
+>- Hvis du har lagt **kontroll for anbefalinger** til din transaksjonsskjerm ved hjelp av **utforming av skjermoppsett**, må fjerne den også. 
+
 
 
 <a name="see-also"></a>Se også
