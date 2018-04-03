@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 Microsoft Dynamics 365 for Retail er en ende-til-ende-detaljhandelsløsning som leverer enhetlig handel på tvers av alle kanaler. Den omfatter salg, mobilitet, intelligens og produktivitet for å hjelpe forhandlere og arbeidere med å oppnå mer ved å bruke den mobile skyen. Retail formidler omfattende støtte for bruk av en rekke forretningsprosesser, for eksempel funksjoner for varehandels-, lager- og kanaladministrasjon. Løsningen formidler også dyptgående kundeopplevelser på tvers av alle berøringspunkter.
 
 > [!NOTE] 
-> Dynamics 365 for Retail er nært knyttet til Dynamics 365 for Finance and Operations, Enterprise edition, og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. I emner som først og fremst gjelder Retail, fører dette til at produktnavnet blir Microsoft Dynamics 365 for Retail. I emner som først og fremst er knyttet til kjerneproduktet (Finance and Operations), blir produktnavnet Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I emner som først og fremst er knyttet til personale, blir produktnavnet Dynamics 365 for Talent. 
+> Dynamics 365 for Retail er nært knyttet til Dynamics 365 for Finance and Operations og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. I emner som først og fremst gjelder Retail, fører dette til at produktnavnet blir Microsoft Dynamics 365 for Retail. I emner som først og fremst er knyttet til kjerneproduktet (Finance and Operations), blir produktnavnet Microsoft Dynamics 365 for Finance and Operations. I emner som først og fremst er knyttet til personale, blir produktnavnet Dynamics 365 for Talent. 
 
 I ruten til venstre velger du et funksjonsområde du vil finne ut mer om.
 
