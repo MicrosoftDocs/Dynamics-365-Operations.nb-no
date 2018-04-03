@@ -3,8 +3,8 @@
 # Komme i gang
 ## [Hva er nytt eller endret?](get-started/whats-new.md)
 ## [Før du kjøper Dynamics 365 for Retail](get-started/before-you-buy.md)
-## [Registrere deg for et forhåndsvisningsabonnement](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Distribuere et demomiljø](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Registrere deg for et forhåndsvisningsabonnement](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Distribuere et demomiljø](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Distribusjonsalternativer](dev-itpro/choose-deployment.md)
 
 
@@ -46,8 +46,9 @@
 
 # Modern Point of Sale (MPOS) og Cloud POS
 ## [Velge mellom Modern POS og Cloud POS](MPOS-or-CPOS.md)
-## [POS-operasjoner](POS-operations.md)
+## [POS-operasjoner, tilkoblede og frakoblede](pos-operations.md)
 ## [Skjermoppsett for demonstrasjonsdata i MPOS/CPOS](demo-data.md)
+## [Oversikt over produkt- og kundesøk i Point of Sale](POS-search-improvements.md)
 ## Eksterne enheter for maskinvare
 ### [Oversikt over eksterne enheter for Retail](retail-peripherals-overview.md)
 ### [Microsoft-testede maskinvareenheter for POS](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +61,7 @@
 ### [POS-program og språkinnstillinger for bruker](pos-application-user-language-settings.md)
 ### [Definere bilder for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Oversikt over informasjonskoder](info-codes-retail.md) 
+## [POS-forbedringer for serialiserte produkter](serialized-inventory.md)
 ## Produktanbefalinger
 ### [Oversikt over personlige produktanbefalinger](personalized-product-recommendations.md)
 ### [Legge til en kontroll for anbefalinger i en POS-enhet](add-recommendations-control-pos-screen.md)
@@ -97,14 +99,16 @@
 ## [Prisjusteringer og rabatter](price-adjustments-discounts.md)
 ## [Fastslå den optimale kombinasjonen av overlappende rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definere kanalspesifikke rabatter](define-channel-specific-discounts.md)
-## [Opprette kuponger for Retail-salg](retail-coupons.md)
+## [Hindre rabatter for detaljhandelsprodukter](prevent-discounts.md)
+## [Opprette kuponger for detaljhandelssalg](retail-coupons.md)
 
 # Produkter og varehandel
 ## [Oversikt over produktinformasjon](../supply-chain/pim/product-information.md)
 ## [Handel-hierarkier](retail-hierarchies.md)
 ## [Oversikt over attributter og attributtgrupper](attribute-attributegroups-lifecycle.md)
 ## [Opprette og administrere attributter](create-manage-attributes.md)
-## [Definere Retail-produkter](set-up-retail-products.md)
+## [Definere detaljhandelsprodukter](set-up-retail-products.md)
+## [Forbedret produkt- og kategoristyring](category-management-product-creation.md)
 ## [Produktdimensjoner](../supply-chain/pim/product-dimensions.md)
 ## [Definere strekkoder](set-up-bar-codes.md)
 ## [Definere strekkodemasker](set-up-bar-code-masks.md)
@@ -128,7 +132,7 @@
 ## [Direkte utligning med fysisk verdi og merking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
 ## [Karanteneordrer](../supply-chain/inventory/quarantine-orders.md)
 ## [Løpende gjennomsnittlig kostpris](../supply-chain/cost-management/running-average-cost-price.md)
-## [Spore glidende gjennomsnitt av kostpris per lagerdimensjon](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
+## [Spore glidende gjennomsnitt av kostnad per lagerdimensjon](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 # Personale
 ## [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](../talent/departments-jobs-positions.md)
@@ -190,13 +194,14 @@
 # [Utvikling og administrasjon for Retail](dev-itpro/dev-retail-home-page.md)
 
 ## Arkitektur
-### [Komponenter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition – Retail](retail-components.md)
+### [Komponenter i Microsoft Dynamics 365 for Finance and Operations – Retail](retail-components.md)
 ### [Arkitektur for Retail-server](dev-itpro/retail-server-architecture.md)
 ### [Kommunikasjon på Retail-kanal](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiseringsarkitektur for nettbutikk for Retail](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Resultat for Retail-kanal for Power BI-innhold](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Resultat for Retail-kanal for Power BI-innhold](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [PA-DSS-sertifisering (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
+### [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](retail-onprem.md)
 
 ## Distribusjon og hurtigreparasjoner
 ### [Oversikt over skalaenhet for Retail](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Konfigurasjon og installasjon av maskinvarestasjon for Retail](retail-hardware-station-configuration-installation.md)
 ### [Massedistribusjon av selvbetjeningskomponenter for Retail](dev-itpro/retail-mass-deployment.md)
 ### [Hendelser for Retail-komponenter for diagnose og feilsøking](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Bruke en distribuerbar pakke](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Bruke en distribuerbar pakke](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Oppgradering og N-1-støtte
 ### [Oversikt over oppgradering og N-1-støtte](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Implementeringsveiledning for enhetsbehandling](implementation-considerations-devices.md)
 
 ## Miljøkonfigurasjon
-### [Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Administrere Bing-kart](dev-itpro/manage-bing-maps.md)
 
 ## Utvidelsesmuligheter for salgssted
