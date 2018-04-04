@@ -1,6 +1,6 @@
 ---
 title: Startside for forsyningskjedeadministrasjon
-description: Denne siden inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: Denne siden inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 02/15/2018
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 [!include[banner](includes/banner.md)]
 
-Dette emnet inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+Dette emnet inneholder en liste over hjelpeemner og andre ressurser for funksjoner for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations. 
 
 ## <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for å se hvilke nye funksjoner er utgitt og hvilke nye funksjoner som er under utvikling. 
@@ -106,7 +106,7 @@ Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href=
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser for kostnadsregnskap</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Stykklisteberegning ved hjelp av et kostnadsskjema</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lageret lagt til rette av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lageret lagt til rette av Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>e-læringskurs
 Hvis du vil ha informasjon om opplæring i Microsoft Dynamics 365 for Finance and Operations, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-læringsportalen</a>. (krever en CustomerSource-konto) 

@@ -3,6 +3,8 @@
 # [Komme i gang](talent-get-started.md)
 ## [Systemkrav og oppdateringspolicy](talent-versions-update-policy.md)
 ## [Klargjøre Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Fjerne et Talent-miljø](remove-test-environment.md)
+## [Klargjøre modulære apper for Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Utvide funksjonaliteten for Talent](extend-talent-functionality.md)
 
 # [Utvikle en personalstrategi](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Evaluere resultatene i et spørreskjema](evaluate-questionnaire-results.md)
 
 # Sikkerhet og overholdelse på arbeidsplassen (USA)
-## [Bekreftelse for I-9-ansettelse](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Overholde ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [Bekreftelse for I-9-ansettelse](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Overholde ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
