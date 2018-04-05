@@ -1,6 +1,6 @@
 ---
 title: Importere data fra Excel-dataenhetsmaler med flere regneark
-description: Dette emnet beskriver hvordan du importerer data ved hjelp av Excel-dataenhetsmaler for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: Dette emnet beskriver hvordan du importerer data ved hjelp av Excel-dataenhetsmaler for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Databehandling i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition støtter Microsoft Excel-baserte maler for dataenheter. Disse malene kan inneholde ett eller flere regneark. Maler med flere regneark brukes ofte når det passer å behandle data i en enkelt fil og importere den til flere dataenheter. Et eksempel er områder og lagre.
+Databehandling i Microsoft Dynamics 365 for Finance and Operations støtter Microsoft Excel-baserte maler for dataenheter. Disse malene kan inneholde ett eller flere regneark. Maler med flere regneark brukes ofte når det passer å behandle data i en enkelt fil og importere den til flere dataenheter. Et eksempel er områder og lagre.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Laste opp en fil én gang og tilordne den til alle enheter
 La oss et eksempel der det er én Excel-fil med regneark som heter **Områder** og **Lagre**. For å definere dataimportprosjektet ville du lagt til den første dataenheten, **Områder**, og deretter lastet opp filen. Du vil kunne velge **Områder** som regnearket som skal brukes for denne enheten.

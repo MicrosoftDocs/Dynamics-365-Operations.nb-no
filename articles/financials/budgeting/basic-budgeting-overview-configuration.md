@@ -1,6 +1,6 @@
 ---
 title: Oversikt over budsjettering
-description: "Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations, Enterprise edition eller laste dem ned fra et tredjepartsprogram."
+description: "Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8e8b3a7e801e98929c4ba1b9fefe341abd91dbd4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
+Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
 
 <a name="overview"></a>Oversikt
 --------

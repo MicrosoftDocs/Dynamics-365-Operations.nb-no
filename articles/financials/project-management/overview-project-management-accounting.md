@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Et prosjekt er en gruppe aktiviteter som er utformet for å tilby en tjeneste, p
 ## <a name="projects-across-industries"></a>Prosjekter på tvers av bransjer
 Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor. [![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-I et telefonsenter kan en henvendelse om kundestøtte brukes til å beskrive et sett med handlinger som kreves for å løse problemet til kunden. Konsulentfirmaer, for eksempel administrasjon eller teknisk rådgivning organisasjoner eller reklamebyråer, refererer til sine aktiviteter som prosjekter. I markedsføring representerer en kampanje et sett med arbeid som skal leveres. I prosjektbasert produksjon angir en produksjonsordre det ulike arbeidet som må gjøres for å produsere ferdige varer. Uansett hvilket navn du bruker for dem, omfatter disse prosjektene ressurser, tidsplaner og kostnader, og funksjonaliteten for prosjektstyring og regnskap i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations kan bidra i planleggingen, utførelsen og analysen av disse prosjektene.
+I et telefonsenter kan en henvendelse om kundestøtte brukes til å beskrive et sett med handlinger som kreves for å løse problemet til kunden. Konsulentfirmaer, for eksempel administrasjon eller teknisk rådgivning organisasjoner eller reklamebyråer, refererer til sine aktiviteter som prosjekter. I markedsføring representerer en kampanje et sett med arbeid som skal leveres. I prosjektbasert produksjon angir en produksjonsordre det ulike arbeidet som må gjøres for å produsere ferdige varer. Uansett hvilket navn du bruker for dem, omfatter disse prosjektene ressurser, tidsplaner og kostnader, og funksjonaliteten for prosjektstyring og regnskap i Microsoft Dynamics 365 for Finance and Operations kan bidra i planleggingen, utførelsen og analysen av disse prosjektene.
 
 ## <a name="project-phases"></a>Prosjektfaser
 Selv om denne prosessflyten er rettet mot eksterne prosjekter eller prosjekter som fullføres for én eller flere kunder, gjelder også funksjonaliteten for interne prosjekter som bare består av kostnader. 

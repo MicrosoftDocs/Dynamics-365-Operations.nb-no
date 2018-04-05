@@ -1,6 +1,6 @@
 ---
 title: Hurtigtaster
-description: "Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Følgende hurtigtaster gjelder for Dynamics 365 for Finance and Operations, Enterprise Edition. 
+Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations. 
 
 **Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 

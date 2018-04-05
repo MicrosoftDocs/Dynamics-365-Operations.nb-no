@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer
 Definer positiv betaling for å generere en elektronisk liste over sjekker som leveres til banken. Når sjekken presenteres til banken, sammenligner banken deretter sjekken med listen over sjekker. Hvis sjekken samsvarer med en sjekk i listen, betales sjekken av banken. Hvis sjekken ikke samsvarer med en sjekk i listen, beholder banken sjekken til gjennomgang.
 
 ## <a name="security-for-positive-pay-files"></a>Sikkerhetsnøkkel for positive lønnsfiler
-Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Siden positive lønnsfiler kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
+Positive betalingsfiler kan inneholde sensitiv informasjon om betalingsmottakere og sjekkbeløp. Derfor må du sørge for at du bruker riktige sikkerhetstiltak fra tidspunktet som filene er generert, til de er mottatt av banken. Positive lønnsfiler blir lastet ned til plasseringen som er angitt i webleseren. Siden positive lønnsfiler kan inneholde sensitiv informasjon, er det viktig at bare autoriserte brukere har tilgang til å generere og vise denne informasjonen i Microsoft Dynamics 365 for Finance and Operations. Bruk tabellen nedenfor til å hjelpe deg med å bestemme rettighetene som kreves.
 
 <table>
 <colgroup>

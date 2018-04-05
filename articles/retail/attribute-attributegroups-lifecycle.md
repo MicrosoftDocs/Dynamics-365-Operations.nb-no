@@ -19,10 +19,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6fde46c35d5efbb72ad97628d7d5a3f9eeba7c8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](includes/banner.md)]
 
-*Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan attributter knyttes til forskjellige detaljhandelenheter, for eksempel produktkategorier og detaljhandelskanaler, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
+*Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter knyttes til forskjellige detaljhandelenheter, for eksempel produktkategorier og detaljhandelskanaler, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
  
 Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 

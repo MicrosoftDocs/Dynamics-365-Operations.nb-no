@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ En budsjettplanmal opprettes av budsjettansvarlig i Microsoft Word og tilordnes 
 
 1.  Klikk **Utforming** i Microsoft Dynamics Office-tillegget etter at du har logget på.
 2.  For hodeinformasjon bruker du **Legg til felt**-knappen.
-3.  Velg datakilden for enhet for BudgetPlanJustification, og klikk **Neste**. **Merk:** Denne enheten er nødvendig for alle justeringsdokumenter. Andre enheter kan brukes, men opplastingen tilbake til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mislykkes hvis denne enheten ikke er inkludert.
+3.  Velg datakilden for enhet for BudgetPlanJustification, og klikk **Neste**. **Merk:** Denne enheten er nødvendig for alle justeringsdokumenter. Andre enheter kan brukes, men opplastingen tilbake til Microsoft Dynamics 365 for Finance and Operations mislykkes hvis denne enheten ikke er inkludert.
 4.  Legg til etikettene og verdiene for BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter og DocumentNumber i Word-dokumentet. **Merk:** Du kan bruke egendefinerte etiketter i stedet for standardetikettene, hvis nødvendig.
 5.  Klikk **Utført** for å fullføre topptekstdelen.
 6.  For linjenivådetaljer for budsjettplanbeløp klikker du **Legg til tabell**.

@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -85,7 +85,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 [![Skjerm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjema &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn**. **Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations, Enterprise edition eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjema &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn**. **Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
 
 **Avgjøre hvor langt opptaket skal være**
 

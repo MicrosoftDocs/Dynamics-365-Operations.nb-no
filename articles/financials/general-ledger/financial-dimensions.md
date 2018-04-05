@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ Bruk **Finansdimensjoner**-siden til å opprette finansdimensjoner som du kan br
 
 Når du har opprettet finansdimensjonene, bruker du **Finansdimensjonsverdier**-siden til å tilordne flere egenskaper til hver finansdimensjon. 
 
-Du kan bruke finansdimensjoner til å representere juridiske enheter. Du trenger ikke å opprette de juridiske enhetene i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Finansdimensjoner er imidlertid ikke utviklet for å håndtere drifts- eller forretningbehovene til juridiske enheter. Funksjonen internenhetsregnskap i Finance and Operations er utviklet for bare å håndtere regnskapsoppføringene som opprettes av hver transaksjon. 
+Du kan bruke finansdimensjoner til å representere juridiske enheter. Du trenger ikke å opprette de juridiske enhetene i Microsoft Dynamics 365 for Finance and Operations. Finansdimensjoner er imidlertid ikke utviklet for å håndtere drifts- eller forretningbehovene til juridiske enheter. Funksjonen internenhetsregnskap i Finance and Operations er utviklet for bare å håndtere regnskapsoppføringene som opprettes av hver transaksjon. 
 
 Før du setter opp finansdimensjoner som juridiske enheter, vurderer du forretningsprosessene i følgende områder for å se hvorvidt dette oppsettet fungerer for din organisasjon:
 

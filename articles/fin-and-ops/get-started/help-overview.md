@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
 
 > [!NOTE] 
-> Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+> Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
 Hjelpesystemet er felles for følgende produkter:
-- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,9 +108,9 @@ Til høyre angir du en e-postadresse og et nytt passord for å opprette en ny ko
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en endring eller bidra med innhold via GitHub
 Hvis du vil foreslå en endring, må du har en GitHub-konto og signerer en lisensavtale for bidragsyter.  Når du sender en pull-forespørsel, vil vi gå gjennom de foreslåtte endringene. Hvis det er nødvendig, vil vi diskutere dem internt og deretter kontakte deg.  
 
-Du kommer i gang ved å klikke på **Rediger**-knappen (blyant) på et emne, eller gå til vårt repositorium på https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+Begynn med å klikke **Rediger**-knappen (blyant) for et emne, eller gå til vårt repositorium på https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
 
-Hvis du vil ha mer informasjon, kan du se håndboken for våre bidragsytere: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+Hvis du vil ha mer informasjon, kan du se håndboken for vår bidragsyter: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
 
 
 > [!NOTE]

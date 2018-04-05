@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -132,7 +132,7 @@ Den juridiske enheten, juridisk enhet A, selge noe til en annen juridisk enhet i
 Alle disse transaksjonene genererer transaksjoner mellom firmaene som posteres til forfall-til- og forfall-fra-kontoer. I tillegg kan disse transaksjonene omfatte påslags- og avslagsbeløp når beløpet for konserninternt salg ikke er likt kostnadene for varene som ble solgt.
 
 ## <a name="set-up-elimination-rules"></a>Definere elimineringsregler
-Når du definerer elimineringsregler i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations, anbefaler vi at du oppretter en finansdimensjon spesielt for elimineringsformål. De fleste kunder gir den navnet Handelspartner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du sørge for å ha hovedkontoer som er spesifikke for bare konserninterne transaksjoner. 
+Når du definerer elimineringsregler i Microsoft Dynamics 365 for Finance and Operations, anbefaler vi at du oppretter en finansdimensjon spesielt for elimineringsformål. De fleste kunder gir den navnet Handelspartner eller noe lignende. Hvis du bestemmer deg for ikke å bruke en finansdimensjon, må du sørge for å ha hovedkontoer som er spesifikke for bare konserninterne transaksjoner. 
 
 Oppsettet for elimineringer finnes i Oppsett-området i modulen Konsolideringer. Når du har skrevet inn en beskrivelse av regelen, må du velge firmaet som elimineringsjournalen skal postere til. Dette bør være et firma som har valgt **Brukes til finanseliminering** under oppsettet av den juridiske enheten. 
 

@@ -1,6 +1,6 @@
 ---
 title: Startside for organisasjonsstyring
-description: "Dette emnet peker på ressurser som hjelper deg med å bruke Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i organisasjonen din."
+description: "Dette emnet siden peker til ressurser som gjør det enklere å bruke Microsoft Dynamics 365 for Finance and Operations i organisasjonen din."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emnet peker på innhold som vil hjelpe privilegerte brukere og administratorer til å konfigurere Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Dette innholdet vil hjelpe dem å konfigurere systemet så det jobber godt og effektivt for organisasjonen og bedriften din.
+Dette emnet peker på innhold som vil hjelpe privilegerte brukere og administratorer til å konfigurere Microsoft Dynamics 365 for Finance and Operations. Dette innholdet vil hjelpe dem å konfigurere systemet så det jobber godt og effektivt for organisasjonen og bedriften din.
 
 Mye av innholdet som er oppført her gjelder for funksjoner i modulen **Organisasjonsstyring**. Det er imidlertid et par oppgaver, for eksempel å opprette og bruke en postmal, som kan utføres i en hvilken som helst modul for å hjelpe organisasjonen din å være mer effektiv. 
 

@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: e908d4ec41263ed4230ea5e70fa08db793abedc6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Registreringskategori er registrerings-ID for land/region som er godkjent for br
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i bestemt land/region.|
 | Begrenset til         | Typen begrensning gjelder for avgiftsregistreringstypen: Ingen, Person, Organisasjon.|
-| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. En fullstendig liste over hva som støttes i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-kategoriene, vises nedenfor. |
+| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. En fullstendig liste over hva som støttes i Microsoft Dynamics 365 for Finance and Operations-kategoriene, vises nedenfor. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angi registrerings-IDene for poster i globale adressebøker
 

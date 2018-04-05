@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet for elektronisk rapportering (ER)
@@ -107,7 +107,7 @@ Proseware, Inc. mottatte versjon 1.1 av BBS-konfigurasjon (Storbritannia fiktiv)
     * Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.1.1. Dette betyr at det er versjon 1 av egendefinerte BBS-format (Storbritannia fiktivt egendefinert), som er basert på versjon 1 av BBS-format (Storbritannia fiktivt), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Teste det egendefinerte formatet for å generere betalingsfiler
-Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Dynamics 365 for Finance and Operations-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Oppdatere den eksisterende landspesifikke konfigurasjonen
 Litware, Inc. må oppdatere BBS-konfigurasjonen (Storbritannia fiktiv) og bruke nye landkrav for administrasjon av formatet for det elektroniske dokumentet. Senere vil dette tas med i en ny versjon av denne konfigurasjonen, som vil tilbys for serviceabonnenter, inkludert Proseware, Inc.  
@@ -203,6 +203,6 @@ Proseware, Inc. blir informert om at en ny versjon 1.2 av BBS-konfigurasjon (Sto
     * Vær oppmerksom på at den opprettede konfigurasjonen lagres som fullført versjon 1.2.2: versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv egendefinert), som er basert på versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det egendefinerte formatet for generering av betalingsfiler
-Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Dynamics 365 for Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
 
 

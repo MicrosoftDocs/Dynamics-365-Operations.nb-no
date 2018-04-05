@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 6028f6007cf2fd3f21c2e6cf3f5fac85c6e0da0a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bfbc0fdfcff809a7d22362961b9778355ed7317b
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamar
 Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
 ## <a name="overview"></a>Oversikt 
-Det mobile arbeidsområdet for **leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise og svare på bestillinger i webklienten for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+Det mobile arbeidsområdet for **leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise og svare på bestillinger i webklienten for Microsoft Dynamics 365 for Finance and Operations. 
 
 >[!NOTE]
 > Det mobile arbeidsområdet skal brukes som et supplement til webgrensesnittet for leverandørsamarbeid, ikke som en erstatning. 
@@ -60,8 +60,8 @@ Det mobile arbeidsområdet for **leverandørsamarbeid** gjør det mulig for en l
 ## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations 
+Hvis Microsoft Dynamics 365 for Finance and Operations har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 

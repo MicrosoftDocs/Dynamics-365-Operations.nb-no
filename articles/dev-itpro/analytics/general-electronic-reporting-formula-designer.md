@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapporter
 
 ER støtter formeldesigneren. Under utformingen kan du derfor konfigurere uttrykk som kan brukes til følgende oppgaver ved kjøretid:
 
-- Transformere data som er mottatt fra en Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-database og som skal angis i en ER-datamodell som er utformet for å være en datakilde for ER-formater. (Disse transformasjonene kan for eksempel inneholde filtrering, gruppering og datatypekonvertering.)
+- Transformere data som er mottatt fra en Microsoft Dynamics 365 for Finance and Operations-database og som skal angis i en ER-datamodell som er utformet for å være en datakilde for ER-formater. (Disse transformasjonene kan for eksempel inneholde filtrering, gruppering og datatypekonvertering.)
 - Formater data som må sendes til et genererende elektronisk dokumentet i henhold til oppsettet og betingelsene for et bestemt ER-format. (Formatering kan for eksempel gjøres i samsvar med angitt språk eller kultur, eller koding).
 - Kontroller opprettingen av elektroniske dokumenter. (For eksempel uttrykkene kan aktivere eller deaktivere utdataene for bestemte elementer i formatet, avhengig av behandling av data. De kan også avbryte opprettingen av dokumentet eller vise meldinger til brukere.)
 
@@ -540,7 +540,7 @@ Uttrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer ogs�
 </tr>
 <tr class="even">
 <td>FORMAT (streng 1, streng 2 [, streng, 3, ...])</td>
-<td>Returner den angitte strengen etter at den er formatert ved hjelp av forekomster av <strong>%N</strong> med det <em>n</em>-te argumentet. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
+<td>Returner den angitte strengen etter at den er formatert ved hjelp av forekomster av <strong>%N</strong> med argumentet <em>n</em>th. Argumentene er strenger. Hvis et argument ikke er angitt for en parameter, returneres parameteren som <strong>&quot;%N&quot;</strong> i strengen. For verdier for <strong>real</strong>-typen begrenses strengkonverteringen til to desimalplasser.</td>
 <td>I følgende illustrasjon returnerer <strong>PaymentModel</strong>-datakilden listen over kundeposter via <strong>Kunder</strong>-komponenten og behandlingsdatodatoverdien via <strong>ProcessingDate</strong>-feltet.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>I ER-formatet som er utformet for å generere en elektronisk fil for utvalgte kunder, velges <strong>PaymentModel</strong> som en datakilde og styrer prosessflyten. Et unntak for å informere brukeren iverksettes når en valgt kunde stoppes for datoen da rapporten behandles. Formelen som er utviklet for denne typen behandlingskontroll kan bruke følgende ressurser:</p>

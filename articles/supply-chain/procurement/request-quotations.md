@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 42ab7beb8a269cd37fd9100385bd302e4945c1e0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b86363004b8702d1a654f2a1da49bba82fc8ff2a
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -46,7 +46,7 @@ Du kan opprette en tilbudsforespørsel fra planlagte bestillinger, fra en innkj�
 
 Når du har klargjort RFQ-saken og lagt til leverandører, velger du **Send** i RFQ-saken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere innstillingene for utskriftsbehandling for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
-Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
+Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Microsoft Dynamics 365 for Finance and Operations. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
  
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende tilbudsforespørselen på nytt til leverandører når du er ferdig, ved hjelp av de to tilleggshandlingene: Opprett og Fullfør.
 

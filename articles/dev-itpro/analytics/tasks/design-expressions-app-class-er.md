@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Utforme uttrykk for å kalle programklassemetoder (ER)
@@ -34,7 +34,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren Opprette en konfigurasjonsleverandør og merke den som aktiv.   
-    * La oss anta at du utformer en prosess for å analysere innkommende bankkontoutdrag for en oppdatering av programdata. Du vil motta innkommende bankkontoutdrag som TXT-filer som inneholder IBAN-koder. Som en del av importprosessen for bankkontoutdrag må du validere riktigheten av disse IBAN-kodene ved hjelp av logikken som allerede finnes i Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * La oss anta at du utformer en prosess for å analysere innkommende bankkontoutdrag for en oppdatering av programdata. Du vil motta innkommende bankkontoutdrag som TXT-filer som inneholder IBAN-koder. Som en del av importprosessen for bankkontoutdrag må du validere riktigheten av disse IBAN-kodene ved hjelp av logikken som allerede finnes i Dynamics 365 for Finance and Operations.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importere en ny ER-konfigurasjon
 1. Finn og velg ønsket post i listen.

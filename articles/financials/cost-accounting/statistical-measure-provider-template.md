@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Her er noen eksempler på vanlige statistiske dimensjonsmedlemmer.
 
 ## <a name="statistical-measure-provider-template"></a>Mal for leverandør av statistisk måling
 
-Statistiske målinger kan hentes fra mange typer datakilder. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er en god kilde til å hente statistiske målinger fra. Du kan bruke en mal for leverandør av statistiske mål for enkelt å konfigurere de statistiske målinger som du vil hente ut.
+Statistiske målinger kan hentes fra mange typer datakilder. Microsoft Dynamics 365 for Finance and Operations er en god kilde til å hente statistiske målinger fra. Du kan bruke en mal for leverandør av statistiske mål for enkelt å konfigurere de statistiske målinger som du vil hente ut.
 
 Definisjonen av en mal for leverandør av statistiske mål er generisk og kan brukes på nytt i flere statistiske dimensjonsmedlemmer.
 
@@ -132,13 +132,13 @@ Før du kan få statistiske målinger i kostnadsregnskap, må du opprette relasj
 > [!NOTE]
 > I dette eksemplet skal vi opprette en relasjon for **faktisk versjon**.
 
-Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 for Finance and Operations, Enterprise edition – statistisk målinger**, fordi vi vil trekke ut data fra Finance and Operations.
+Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 for Finance and Operations – statistiske målinger**, fordi vi vil trekke ut data fra Finance and Operations.
 
 **Datakilde**
 
 | Navn        | Datakobling                                                                     | Statistisk medlem av dimensjon |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Heltidsansatte D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – statistiske målinger | Heltidsansatte                         |
+| Heltidsansatte D365FO | Dynamics 365 for Finance and Operations – statistiske målinger | Heltidsansatte                         |
 
 **Konfigurasjon av dataleverandør**
 
@@ -220,13 +220,13 @@ Før du kan få statistiske målinger i kostnadsregnskap, må du opprette relasj
 > [!NOTE]
 > I dette eksemplet skal vi opprette en relasjon for **faktisk versjon**.
 
-Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 for Finance and Operations, Enterprise edition – statistisk målinger**, fordi vi vil trekke ut data fra Finance and Operations.
+Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 for Finance and Operations – statistiske målinger**, fordi vi vil trekke ut data fra Finance and Operations.
 
 **Datakilde**
 
 | Navn           | Datakobling                                                                     | Statistisk medlem av dimensjon |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Emb.-kostsenter D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – statistiske målinger | Emb.-kostsenter                      |
+| Emb.-kostsenter D365FO | Dynamics 365 for Finance and Operations – statistiske målinger | Emb.-kostsenter                      |
 
 Systemet gjenkjenner at ProdRouteTrans er en tabell der hver post tilhører en separat juridisk enhet. Derfor får du spørsmål om å velge den juridiske enheten som transaksjonene skal importeres fra.
 

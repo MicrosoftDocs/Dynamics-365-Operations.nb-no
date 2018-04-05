@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Følgende kolonner angir hvor operasjonene kan startes:
 - **Knappegruppe** – Operasjonen kan tilordnes til knapper i POS-knappegrupper, som er en del av et POS-skjermoppsett.
 - **Transaksjonsskjerm** – Operasjonen kan startes fra POS-knappegrupper som er konfigurert på POS-transaksjonsskjermen.
 - **Velkomstskjerm** – Operasjonen kan startes fra POS-knappegrupper som er konfigurert på POS-velkomstskjermen.
+
+Merk: Operasjonene nedenfor gjelder for den nyeste versjonen av Dynamics 365 for Retail. Noen operasjoner kan ha blitt endret eller er kanskje ikke tilgjengelig i tidligere versjoner.
 
 | ID | Operasjon | beskrivelse | Knappegruppe | Transaksjonskjermbilde | Velkomstskjermbilde | Tilgjengelig frakoblet | Spesifikk for nasjonal innstilling |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 703 | Lås kasse | Lås gjeldende kasse, slik at den ikke kan brukes, men ikke logg av gjeldende bruker. | Antall | Antall | Antall | Ja | Antall |
 | 701 | Logg av | Logg gjeldende bruker av kassen. | Ja | Ja | Ja | Ja | Antall |
 | 521 | Poengsaldo for fordelskort | Vis saldoen for poeng for det angitte fordelskortet. | Ja | Ja | Antall | Antall | Antall |
+| 918 | Behandle skift | Vis en liste over skift som er aktive, suspendert eller blitt lukket usporet. | Ja | Ja | Ja | Antall | Antall |
 | 914 | Minimer salgsstedvinduet | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 1000 | Åpne skuff | Utfører en "ikke salg"-operasjon og åpner den valgte kassaskuffen. | Ja | Ja | Ja | Ja | Antall |
 | 928 | Ordreoppfyllelse | Denne operasjonen lar brukere plukke, pakke, sende eller tilbakekalle ordrer for butikken som er plukket. | Ja | Ja | Ja | Antall | Antall |
@@ -162,7 +165,6 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 638 | Angi selger på linje | Denne operasjonen kan brukeren velge én av de kvalifiserte provisjonssalgsgrupper (selgere) for gjeldende valgte linje. | Ja | Ja | Antall | Ja | Antall |
 | 630 | Lever alle produkter | Sett oppfyllingsmodus til **Levering** for alle linjeelementene. | Ja | Ja | Antall | Ja\* | Antall |
 | 629 | Lever valgte produkter | Sett oppfyllingsmodus til **Levering** for de valgte linjene. | Ja | Ja | Antall | Ja\* | Antall |
-| 918 | Vis lukkede usporede skift | Vis en liste over skift som er blitt lukket usporet. | Ja | Ja | Ja | Antall | Antall |
 | 115 | Vis journal | Vis butikkens journal. Du kan vise transaksjoner, skrive ut kvitteringer og gavekvitteringer og tilbakekalle for retur. | Ja | Ja | Ja | Ja\*\* | Antall |
 | 802 | Lagerantall | Denne operasjonen lar brukeren opprette eller endre lagertellingsjournaler for fysisk beholdning eller syklustellinger. | Ja | Ja | Ja | Antall | Antall |
 | 401 | Undermeny | Denne operasjonen omdirigerer brukeren til en annen koblet knappegruppe. | Ja | Ja | Ja | Ja | Antall |

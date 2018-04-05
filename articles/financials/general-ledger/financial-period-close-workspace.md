@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ Du kan bruke en mal for regnskapsavslutning til å definere alle oppgaver som er
 
 Du kan tilordne en oppgave i malen til ett eller flere firmaer der denne oppgaven gjelder. Hvis en annen person er tilordnet for å fullføre arbeidsinnsatsen i hvert firma, kan det være nyttig å opprette flere oppgaver for den samme arbeidsinnsatsen. Opprett én oppgave for hvert firma. 
 
-Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan også koble til en ekstern nettadresse. 
+Menyelementet **Oppgavekobling** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En avslutningsoppgave som for eksempel skal kjøre prosessen for revaluering av valuta for leverandører, kan kobles til den tilknyttede siden **Revaluering av utenlandsk valuta** i Microsoft Dynamics 365 for Finance and Operations. Du kan også koble til en ekstern nettadresse. 
 
 > [!TIP]
 > Hvis du vil koble en spesifikk Management Reporter-rapport til en oppgave ved regnskapsperiodeavslutning, kan du bruke nettadressen for rapporten. Hvis du vil ha tilgang til nettadressen for rapporten, åpner du rapporten i rapportutformingen, og deretter klikker du **Fil** &gt; **Vis rapport** for å åpne rapporten i en nettleser. Du kan deretter kopiere nettadressen i adresselinjen i nettleseren, og lime den inn i feltet **Nettadresse til** **oppgavekobling**. 

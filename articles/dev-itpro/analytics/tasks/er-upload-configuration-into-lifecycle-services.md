@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering (ER)
@@ -92,6 +92,6 @@ I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for
 10. Klikk Åpne.
     * Velg LCS-repositorium, og åpne det.  
     * Legg merke til at den valgte konfigurasjonen vises som et anleggsmiddel for det valgte LCS-prosjektet.  
-    * Åpne LCS ved hjelp av https://lcs.dynamics.com. Åpne et prosjekt som ble brukt tidligere for depotregistrering, åpne «Anleggsbiblioteket» for dette prosjektet, og utvid innholdet av typen "GER-konfigurasjon" – den opplastede ER-konfigurasjonen vil være tilgjengelig. Legg merke til at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition hvis leverandører har tilgang til dette LCS-prosjektet.  
+    * Åpne LCS ved hjelp av https://lcs.dynamics.com. Åpne et prosjekt som ble brukt tidligere for registrering av repositoriet, åpne Aktivabibliotek for dette prosjektet og vis innholdet i aktivatypen Ger-konfigurasjonstypen – den opplastede ER-konfigurasjonen vil være tilgjengelig. Legg merke til at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst av Microsoft Dynamics 365 for Finance and Operations hvis leverandører har tilgang til dette LCS-prosjektet.  
 
 

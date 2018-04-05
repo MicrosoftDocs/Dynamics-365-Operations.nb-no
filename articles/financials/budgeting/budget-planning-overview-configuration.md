@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Denne artikkelen introduserer budsjettplanlegging og inneholder informasjon om h
 
 Du utfører budsjettplanlegging når du klargjør budsjettene som en organisasjon skal implementere. En organisasjon kan konfigurere budsjettplanlegging, og deretter konfigurere budsjettplanleggingsprosesser for å oppfylle sine policyer, prosedyrer og krav til klargjøring av budsjett. 
 
-Når du forstår konseptene og terminologien som brukes i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er det enklere for deg å implementere budsjettplanlegging i organisasjonen.
+Når du forstår konseptene og terminologien som brukes i Microsoft Dynamics 365 for Finance and Operations, er det enklere for deg å implementere budsjettplanlegging i organisasjonen.
 
 ### <a name="key-terms"></a>Viktige termer
 

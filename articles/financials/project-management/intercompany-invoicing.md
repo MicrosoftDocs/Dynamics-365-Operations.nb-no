@@ -1,6 +1,6 @@
 ---
 title: Konsernintern fakturering
-description: "Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations."
+description: "Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Finance and Operations."
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad14e2d145c6f6620bf8a31738fafa50d033d246
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations.
+Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Finance and Operations.
 
 Organisasjonen kan ha flere avdelinger, datterselskaper og andre juridiske enheter som overfører produkter og tjenester til hverandre for prosjekter. Den juridiske enheten som tilbyr tjenestene eller produktene, *den juridiske enheten som låner ut*, og den juridiske enheten som mottar tjenestene eller produktene, kalles *den juridiske enheten som låner*. 
 

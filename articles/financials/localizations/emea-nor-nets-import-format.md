@@ -18,10 +18,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dce88caa28ef5d9f3337bbb8c2621d1de52f8ab4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c0a903c5cf69ed77322326465965d44f073dc98e
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
 
-I Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations kan du importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.
+I Microsoft Dynamics 365 for Finance and Operations kan du importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.
 
 ## <a name="import-a-nets-bank-file"></a>Importer en Nets-bankfil
 Hvis du vil importere en fil fra Nets-banken, kan du fullføre trinnene nedenfor.

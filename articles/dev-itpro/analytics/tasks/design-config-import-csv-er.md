@@ -1,6 +1,6 @@
 --- 
 title: "Utforme en konfigurasjon for å importere data fra en ekstern fil i CSV-format (ER)"
-description: "Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations, Enterprise edition-programmet fra en ekstern fil i CSV-format."
+description: "Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format."
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Utforme en konfigurasjon for å importere data fra en ekstern fil i CSV-format (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations, Enterprise edition-programmet fra en ekstern fil i CSV-format. I denne fremgangsmåten skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv." 
+Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format. I denne fremgangsmåten skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv." 
 
 Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig eller Utvikler av elektronisk rapportering. Disse trinnene kan fullføres ved hjelp av USMF-datasettet. 
 
 Du må også laste ned og lagre lokalt følgende filer: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-    * Du kan konfigurere en prosess for å importere eksterne filer i XML-, TXT- eller CSV-format til tabellene i Dynamics 365 for Finance and Operations, Enterprise edition-programmet. Først må du opprette en abstrakt datamodell som representerer de importerte dataene, fra et bedriftsståsted – en konfigurasjon for ER-datamodell blir opprettet for dette. Deretter må du definere en struktur for den importerte filen som tilordnes til den utformede datamodellen som måten for å portere data fra filen til den abstrakte datamodellen – en ER-formatkonfigurasjon opprettes for dette. Deretter må ER-datamodellkonfigurasjonen utvides med en ny modelltilordning som beskriver hvordan dataene fra den importerte filen og de faste dataene fra den abstrakte datamodellen brukes til å oppdatere programtabellene eller dataenhetene.  
+    * Du kan konfigurere en prosess for å importere eksterne filer i XML-, TXT- eller CSV-format til tabellene i Dynamics 365 for Finance and Operations-programmet. Først må du opprette en abstrakt datamodell som representerer de importerte dataene, fra et bedriftsståsted – en konfigurasjon for ER-datamodell blir opprettet for dette. Deretter må du definere en struktur for den importerte filen som tilordnes til den utformede datamodellen som måten for å portere data fra filen til den abstrakte datamodellen – en ER-formatkonfigurasjon opprettes for dette. Deretter må ER-datamodellkonfigurasjonen utvides med en ny modelltilordning som beskriver hvordan dataene fra den importerte filen og de faste dataene fra den abstrakte datamodellen brukes til å oppdatere programtabellene eller dataenhetene.  
     * Følgende trinn viser hvordan eksternt sporede leverandørtransaksjoner importeres fra den eksterne CSV-filen for senere bruk i leverandørutligningen for 1099-skjemaer.   
     * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren Opprette en konfigurasjonsleverandør og merke den som aktiv.  
 2. Klikk Rapporteringskonfigurasjoner.
