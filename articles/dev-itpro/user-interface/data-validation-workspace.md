@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ I delen **Oppgaver og status** vises status for det generelle datavalideringspro
 Den siste kategorien er for den detaljerte oppgavelisten. Denne listen viser hele oppgavelisten.
 Du kan filtrere listen over oppgaver på flere måter. Klikk **Rediger oppgave** for å endre statusen til en oppgave eller tilordne en oppgave. Klikk **vedlegg** for å vise vedlegg for en oppgave.
 
-Oppgavenavnet er en hyperkobling til Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations-siden eller en annen nettside brukeren må gå til for å fullføre arbeidet. Du kan angi denne hyperkoblingen ved å bruke feltet **Menyelementnavn** når du redigerer eller oppretter en oppgave fra skjemaet **Konfigurer datavalideringsprosjekt**.
+Oppgavenavnet er en hyperkobling til Microsoft Dynamics 365 for Finance and Operations-siden eller en annen nettside brukeren må gå til for å fullføre arbeidet. Du kan angi denne hyperkoblingen ved å bruke feltet **Menyelementnavn** når du redigerer eller oppretter en oppgave fra skjemaet **Konfigurer datavalideringsprosjekt**.
 
 Du kan knytte filer, notater, bilder og nettadresser til en oppgave ved hjelp av handlingen **Vedlegg**. Du kan for eksempel legge ved en rapportfil som ble skrevet ut for en oppgave. Et ikon vises i **Vedlegg**-kolonnen for oppgaven hvis det finnes et vedlegg.
 

@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 21dbcc6a816ffd5fa0b79908e25105e7cf25d6ca
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4ea1e88c30c4139e207a257fef678e3669da211e
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="cash-registers-for-norway"></a>Kassaapparater for Norge
@@ -133,7 +133,7 @@ I tillegg angir du organisasjonsnummeret i **Registreringsnummer**-feltet i hurt
   
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Definere merverdiavgift (mva) i henhold til norske krav
 
-Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition og i Retail, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
+Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva i Microsoft Dynamics 365 for Finance and Operations og i Retail, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
 
 Du må også angi mva-grupper og aktiverer alternativet **Priser inkluderer merverdiavgift** for butikker som finnes i Norge.
 

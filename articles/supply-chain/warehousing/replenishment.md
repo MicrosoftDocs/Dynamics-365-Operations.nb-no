@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonso
 ## <a name="minmax-replenishment"></a>Etterfylling basert på minimums- og maksimumsantall
 I etterfylling basert på minimums- og maksimumsantall etterfylles lageret slik at det er mellom minimums- og maksimumsgrensene som er angitt. Vanligvis skjer denne prosessen en gang hver dag for å sikre at alle plukklokasjoner fylles til maksimumsnivået før plukkingen starter. 
 
-Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av batchjobben, evaluerer Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, om det er nødvendig med etterfylling ved å bruke sekvensen som linjene er organisert i. 
+Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av batchjobben, evaluerer Microsoft Dynamics 365 for Finance and Operations om det er nødvendig med etterfylling ved å bruke sekvensen som linjene er organisert i. 
 
 Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, kan ikke systemet fastsette hvilket element som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 

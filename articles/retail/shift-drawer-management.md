@@ -3,7 +3,7 @@ title: Behandling av skift og kassaskuff
 description: "Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for salgssted – delt og frittstående. Delte skift kan brukes av flere brukere på flere steder, mens frittstående skift bare kan brukes av én arbeider om gangen."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller e
 9.  Bruk operasjonen **Deklarer betalingsmiddel** for å deklarere det totale kontantbeløpet fra alle kassaskuffene som er inkludert i det delte skiftet.
 10. Bruk operasjonen **Lukk skift** for å lukke det delte skiftet.
 
+## <a name="shift-operations"></a>Skiftoperasjoner
+Forskjellige handlinger kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i skuffen. Avsnittet nedenfor beskriver disse skiftoperasjonene for Dynamics 365 for Retail Modern POS og Cloud POS.
 
+**Åpne skift**
 
+POS krever at en bruker har et aktivt, åpent skift for å utføre handlinger som vil resultere i en finanstransaksjon, for eksempel salg, retur eller kundeordre.  
 
+Når du logger på salgsstedet, kontrollerer systemet først om brukeren har et aktivt skift i det gjeldende registret. Hvis ikke kan brukeren deretter velge å åpne et nytt skift, gjenoppta et eksisterende skift eller fortsette å logge på i "ikke-skuff"-modus, avhengig av systemkonfigurasjonen og tillatelsene.
+
+**Rapporter startbeløp**
+
+Denne operasjonen er ofte den første handlingen som skal utføres et nylig åpnet skift. Brukere angir startbeløpet i skuffen for skiftet. Dette er viktig fordi over-/underberegningen som skjer når du lukker et skift, utgjør dette beløpet.
+
+**Flytoppføring**
+
+Flyt-oppføringene er ikke-salgstransaksjoner som utføres i et aktivt skift, og de øker pengebeløpet i skuffen. Et vanlig eksempel på en flytoppføring er å legge til flere vekslepenger i skuffen når det er lite.
+
+**Fjerning av betalingsmidler**
+
+Fjerning av betalingsmidler er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i skuffen. Dette brukes vanligvis sammen med en flytoppføring i et annet skift. Register 1 har for eksempel lite vekslepenger, så brukeren på Registrer 2 utfører en fjerning av betalingsmidler for å redusere beløpet i skuffen. Brukeren i Registrer 1 kan deretter utføre en flytoppføring for å øke beløpet.
+
+**Avbryt skift**
+
+Brukere kan deaktivere sine aktive skift for å frigjøre det gjeldende registret for en annen bruker, eller flytte skiftet til et annet register (dette er ofte kalt en "flytende kasse"). 
+
+Suspendering av skiftet forhindrer eventuelle nye transaksjoner eller endringer til skiftet før det gjenopptas.
+
+**Gjenoppta skift**
+
+Denne operasjonen gjør det mulig for en bruker å gjenoppta et tidligere suspendert skift i et register som ikke allerede har et aktivt skift.
+
+**Kasseoppgjør**
+
+Kasseoppgjøret er handling brukeren utfører for å angi totale pengebeløpet som er i skuffen, vanligvis før skiftet lukkes. Dette er verdien som sammenlignes med det forventede skiftet for å beregne over-/underbeløpet.
+
+**Deponer til safe**
+
+Deponeringer til safe kan når som helst utføres på et aktivt skift. Denne operasjonen fjerner penger fra skuffen, slik at de kan overføres til en sikrere plassering, så som en safe på bakrommet. Det totale beløpet som er registrert for deponeringer til safe, er fremdeles inkludert i skifttotalene, men trenger ikke regnes som en del av kasseoppgjøret.
+
+**Deponer til bank**
+
+I likhet med deponeringer til safe utføres også deponeringer til bank på aktive skift. Denne operasjonen fjerner penger fra skiftet for å klargjøre for bankinnskuddet.
+
+**Lukk skift usporet**
+
+Et lukket usporet skift er et skift som ikke lenger er aktivt, men ikke er fullstendig lukket. Lukkede usporede skift kan ikke gjenopptas som et suspendert skift, men prosedyrer som å deklarere startbeløp og kasseoppgjør, kan utføres på et senere tidspunkt eller fra et annet register.
+
+Lukkede usporede skift brukes ofte til å frigjøre et register for en ny bruker eller skift, uten å telle, avstemme og lukke dette skiftet fullstendig først. 
+
+**Lukk skift**
+
+Denne operasjonen beregner totaler for skift, over-/underbeløp, og fullfører deretter et aktivt eller lukket usporet skift. Lukkede skift kan ikke gjenopptas eller endres.  
+
+**Behandle skift**
+
+Denne operasjonen gir brukerne muligheten til å vise alle aktive, suspenderte og lukkede usporede skift for butikken. Avhengig av tillatelsene kan brukere utføre sine endelige lukkingsprosedyrer, for eksempel kasseoppgjør og lukke skift for lukkede usporede skift. Denne operasjonen lar også brukere vise og slette ugyldige skift hvis et skift står i en ugyldig tilstand etter å ha byttet mellom frakoblet og tilkoblet modus. Disse ugyldige skiftene inneholder ingen økonomisk informasjon eller transaksjonsdata som trengs for avstemming. 
 

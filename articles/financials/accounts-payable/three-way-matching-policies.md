@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -65,7 +65,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Han angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
-    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dette inkluderer følgende typer prissamsvar:
+    -   For varer som krever toveis eller treveis samsvar er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 for Finance and Operations. Dette inkluderer følgende typer prissamsvar:
         -   Nettoenhetspriskontroll – Nettoenhetsprisen på fakturalinjen samsvarer med nettoenhetsprisen på bestillingslinjen, innenfor toleranseprosenten. I dette eksemplet er toleransen for nettoenhetsprisen +8 %.
         -   Pristotalkontroll – Nettobeløpet på fakturalinjen samsvarer med nettobeløpet på bestillingslinjen, innenfor toleranseprosenten, beløpet eller prosenten og beløpet. I dette eksemplet er toleransen for pristotalkontroll +15 %.
 

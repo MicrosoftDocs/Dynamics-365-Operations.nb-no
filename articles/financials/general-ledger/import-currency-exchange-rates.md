@@ -19,10 +19,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 270e0de2d58550e517417076b49a5a8bdc62bc64
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig
 Delene nedenfor beskriver informasjonsflyten som brukes til å konfigurere og behandle importen av valutakurser.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurer en valutakursleverandør
-Før du kan importere valutakurser, må du definere informasjonen som kreves av leverandører som tilbyr valutakursene. Bruk siden **Konfigurer valutakursleverandører** til å velge valutakursleverandører. Noen valutakursleverandører er inkludert i demodataene i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Følgende tabell inneholder beskrivelser av kontrollene på denne siden.
+Før du kan importere valutakurser, må du definere informasjonen som kreves av leverandører som tilbyr valutakursene. Bruk siden **Konfigurer valutakursleverandører** til å velge valutakursleverandører. Noen valutakursleverandører er inkludert i demodataene i Microsoft Dynamics 365 for Finance and Operations. Følgende tabell inneholder beskrivelser av kontrollene på denne siden.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

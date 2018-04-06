@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ Et produkt er først og fremst definert av produktnummer, navn og beskrivelse. A
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribusjon, eksport og import av produktdata
 
-Produktdefinisjonen kan opprettes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Den kan også importere fra administrasjon av produktlivssyklus (PLM), administrasjon av produktdata (PDM) eller behandling av produktinformasjon (PIM). Når det brukes mer enn én forekomst av Finance and Operations, brukes én forekomst vanligvis som samme mal for produktdataene for alle andre forekomster. Denne metoden støttes av en rekke dataenheter som muliggjør eksport og import av produktdefinisjonsdata fra én forekomst til en annen.
+Produktdefinisjonen kan opprettes i Microsoft Dynamics 365 for Finance and Operations. Den kan også importere fra administrasjon av produktlivssyklus (PLM), administrasjon av produktdata (PDM) eller behandling av produktinformasjon (PIM). Når det brukes mer enn én forekomst av Finance and Operations, brukes én forekomst vanligvis som samme mal for produktdataene for alle andre forekomster. Denne metoden støttes av en rekke dataenheter som muliggjør eksport og import av produktdefinisjonsdata fra én forekomst til en annen.
 
 For å støtte distribusjonen av produktdata for mange forekomster lar Finance and Operations deg bruke Common Data Service. Produktdefinisjonene kan eksporteres fra en forekomst av Finance and Operations til Common Data Service. Produktdefinisjonene kan deretter brukes til å klargjøre andre forretningsprogrammer, for eksempel Microsoft Dynamics 365 for Sales, med produktdata.
 

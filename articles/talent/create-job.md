@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -42,7 +42,7 @@ Noen jobbdetaljer, for eksempel tittel, type og funksjon, er datoeffektive. Hvis
 ## <a name="job-titles"></a>Jobbtitler
 Før du oppretter jobber, må du definere titler for disse jobbene. Stillinger arver jobbtitler fra jobbene som stillingene er knyttet til. 
 
-Vedlikehold jobbtitler ved hjelp av **Titler**-siden, som du kan åpne ved hjelp av funksjonen Søk. På **Titler **-siden skriver du inn titlene du har tenkt å bruke for jobbene.
+Vedlikehold jobbtitler ved hjelp av **Titler**-siden, som du kan åpne ved hjelp av funksjonen Søk. På **Titler**-siden skriver du inn titlene du har tenkt å bruke for jobbene.
 
 ## <a name="job-types"></a>Jobbtyper
 Du bruker jobbtyper til å gruppere lignende jobber i kategorier. Jobbtyper er ikke nødvendige. Men hvis du har tenkt å bruke jobbtyper når du definerer rettighetsregler for kompensasjonsstyring, bør du definere jobbtyper før du definerer jobber. Noen eksempler på jobbtyper er heltid og deltid, eller lønn og timelønn. Du vedlikeholder jobbtyper ved hjelp av **Jobbtyper**-siden. Angi et navn for jobbtypen og en kort beskrivelse av den på **Jobbtyper**-siden. I feltet **Status, fritatt fra avgift** velger du ett av følgende alternativer for å angi fritaksstatusen fra avgifter Fair Labor Standards Act (FLSA) for jobber som har denne jobbtypen:
@@ -91,6 +91,6 @@ Du vedlikeholder jobboppgaver ved hjelp av **Jobboppgaver**-siden. Angi et navn 
 ## <a name="areas-of-responsibility"></a>Ansvarsområder
 Du bruker ansvarsområder for å angi arbeidsrollene, prosessene og produktene som en arbeider som er i en stilling for jobben, har ansvaret for. Et eksempel på et ansvarsområde for en jobb med navnet "Regnskap" kan være "Økonomisk rapportering for produkt A". Du vedlikeholder ansvarsområder ved hjelp av **Ansvarsområder**-siden, som du finner ved hjelp av funksjonen Søk. Angi et navn for ansvaret og en kort beskrivelse av det på **Ansvarsområder**-siden. Du kan legge inn tilleggsinformasjon i **Merknad**-feltet. Notatene kan oppdateres for en bestemt jobb uten å endre notatene du har angitt her.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Fremgangsmåter for å opprette en jobb
+Se emnet [Definere nye jobber](../fin-and-ops/hr/tasks/define-new-jobs.md) for trinnvis fremgangsmåte for å opprette en ny jobb. 
 

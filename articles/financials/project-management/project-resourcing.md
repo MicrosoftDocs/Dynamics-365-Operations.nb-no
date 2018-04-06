@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Dette emnet inneholder informasjon om ressursberegning for prosjekter.
 
-En utfordring for prosjektledere og ressursansvarlige i løpet av planleggingsfasen for prosjektet er ressursallokering, der de må finne og reservere den riktige ressursen skal arbeide på et prosjekt. I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, gir ressursmuligheter for prosjekter deg definisjon av roller som behandles som midlertidige ressurser som kan reserveres for et bestemt engasjement, eller en del av et engasjement. Denne typen ressurser lar prosjektledere og ressursansvarlige utføre følgende oppgaver:
+En utfordring for prosjektledere og ressursansvarlige i løpet av planleggingsfasen for prosjektet er ressursallokering, der de må finne og reservere den riktige ressursen skal arbeide på et prosjekt. I Microsoft Dynamics 365 for Finance and Operations kan ressursfunksjoner for prosjekter la deg definere roller som skal behandles som midlertidige ressurser som kan reserveres for et spesifikt prosjekt eller en del av et prosjekt. Denne typen ressurser lar prosjektledere og ressursansvarlige utføre følgende oppgaver:
 
 - Definer en rolle som har de nødvendige kompetansene, slik at det er enkelt å matche ressurser.
 - Bruk roller til å definere en innledende prosjekttidsplan som er basert på reserverte ressurser.

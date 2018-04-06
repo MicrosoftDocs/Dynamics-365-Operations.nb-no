@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 
 Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
 
-Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike funksjoner som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Her er noen eksempler på hvordan spørreskjemaer kan brukes:
+Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike funksjoner som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations. Her er noen eksempler på hvordan spørreskjemaer kan brukes:
 
 -   Teste ferdighetene til ansatte og søkere.
 -   Vurdere om kursdeltakere har lært kursmateriellet.

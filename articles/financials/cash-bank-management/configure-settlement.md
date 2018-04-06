@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder. 
 
-Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
+Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Finance and Operations. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
 
 -   **Automatisk utligning** – Sett dette alternativet til **Ja** hvis en transaksjon skal utlignes automatisk mot andre åpne transaksjoner når den posteres. Hvis dette alternativet er satt til **Nei**, kan brukere utligne transaksjoner manuelt når de registrerer betalinger, eller senere, ved å bruke siden **Utlign transaksjoner**.
 -   **Håndtering av kontantrabatt** – Angi hvordan en [kontantrabatt håndteres når en faktura er overbetalt](cash-discount-handling-overpayments.md). Når det gjelder en overbetaling, kan kontantrabatten reduseres, behandles som en differanse eller forbli på kontoen for kunden eller leverandøren.

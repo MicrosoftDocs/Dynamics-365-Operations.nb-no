@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/08/2018
 
 [!include[banner](../includes/banner.md)]
 
-Ved hjelp av den eksterne katalogen, kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Dynamics 365 for Finance and Operations, Enterprise edition juli 2017, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
+Ved hjelp av den eksterne katalogen, kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Dynamics 365 for Finance and Operations juli 2017, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
 
 Når den eksterne katalogen er definert og en ansatt forbereder en rekvisisjon, vil det være et alternativ som omdirigerer til et eksternt område, den eksterne katalogen, og returnere handlekurven som ble opprettet på det eksterne området. Denne kommunikasjonen er basert på cXML-protokollen og den må være definert mellom systemene for i kjøper- og selgerorganisasjonen.
 
@@ -85,7 +85,7 @@ Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 
 Et eksternt element er tilleggsinformasjon, for eksempel et brukernavn som er basert på en bruker som stempler seg ut. Det eksterne elementet er satt når utstempling oppstår, og det kan sendes i oppsettmeldingen for forespørsel.
 Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **meldingsformat**-delen av **ekstern katalog**-siden. Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
-Hvis du vil ha mer informasjon om cXML-protokollen, se: http://cxml.org/
+Hvis du vil ha mer informasjon om cXML-protokollen, kan du se: http://cxml.org/.
 
 ## <a name="post-back-message"></a>Tilbakemelding
 Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker ut fra det eksterne området og går tilbake til Finance and Operations. Tilbakemeldinger kan ikke konfigureres. Meldingene er basert på definisjonen i cXML-protokollen. Her er informasjonen som kan være en del av tilbakemeldingen som mottas på en rekvisisjonslinje:

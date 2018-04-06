@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 156cd33a0216514a70229b4e23fc86c0c68cd940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder info
 **Merk:** Denne artikkelen gjelder funksjoner i modulen **Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageroppsett
-Lagerstyringssystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
+Lagerstyringssystemet i Microsoft Dynamics 365 for Finance and Operations gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
 
 -   Du kan opprette områder for lagring med høy prioritet og lav prioritet for optimal plassering av varer.
 -   Du kan dele lageret inn i soner for å imøtekomme ulike lagringsbehov, for eksempel temperaturkrav eller ulike omsetningshastigheter for varer.

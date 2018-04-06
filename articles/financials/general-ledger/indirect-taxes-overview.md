@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ På hver transaksjon (salg/kjøp-dokumentlinjer, journaler og så videre), må d
 For hver transaksjon kan du slå opp den beregnede merverdiavgiften ved å åpne **Mva-transaksjon**-siden. Du kan slå opp merverdiavgiften for en dokumentlinje eller for hele dokumentet. Du kan justere den beregnede merverdiavgiften for bestemte dokumenter (for eksempel leverandørfaktura og økonomijournaler) hvis det opprinnelige dokumentet viser beløp som er avvikende.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mva-utligning og -rapportering
-Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations inneholder funksjonalitet som lar deg utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
+Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Microsoft Dynamics 365 for Finance and Operations inneholder funksjonalitet som lar deg utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
 
 Etter at merverdiavgiften er betalt skal saldoen på mva-oppgjørskontoen balanseres mot bankkontoen. Hvis skattemyndigheten som er angitt for utligningsperioden for merverdiavgift, er knyttet til en leverandørkonto, posteres mva-saldoen som en åpen leverandørfaktura og kan inkluderes i det vanlige betalingsforslaget.
 

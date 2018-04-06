@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 233d91138b11905d971be90154da54e61bbe2919
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b84778bd67e8c5bad6e8858d2af71f46e0dfe145
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -39,7 +39,7 @@ Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og in
 
 Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på mobilenheter. Når IT-administrator har aktivert mobile arbeidsområder for organisasjonen, kan brukere logger på appen og umiddelbart begynne å kjøre forretningsprosesser fra mobilenhetene. Mobilappen inneholder følgende funksjoner som kan hjelpe med å øke produktiviteten:
 
-- Brukere kan vise, redigere og behandle forretningsdata, selv om de har uregelmessige nettverkstilkobling eller mobilenhetene er helt frakoblet. Når en enhet etablerer en nettverkstilkobling på nytt, synkroniserer frakoblede dataoperasjoner automatisk med Dynamics 365 for Finance and Operations, Enterprise edition eller Microsoft Dynamics 365 for Finance and Operations.
+- Brukere kan vise, redigere og behandle forretningsdata, selv om de har uregelmessige nettverkstilkobling eller mobilenhetene er helt frakoblet. Når en enhet oppretter en nettverkstilkobling, synkroniseres automatisk frakoblede dataoperasjoner med Dynamics 365 for Finance and Operations.
 - IT-administratorer eller utviklere kan bygge og publisere mobile arbeidsområder som er skreddersydd til organisasjonen. Appen bruker dine eksisterende koderessurser. Derfor trenger du ikke å implementere valideringsprosedyrene, forretningslogikken eller sikkerhetskonfigurasjonen på nytt.
 - IT-administratorer eller utviklere kan lett utforme mobile arbeidsområder ved hjelp av pek og klikk-arbeidsområdeutformingen som er inkludert i webklienten.
 - IT-administratorer eller utviklere kan også optimalisere frakoblet-funksjonene for arbeidsområder ved hjelp av utvidelsesrammeverket for forretningslogikk. Fordi dataene fremdeles behandles når en enhet er frakoblet, forblir mobile scenarioer rike og jevne, selv om enheter ikke har konstant nettverkstilkobling.
@@ -90,7 +90,7 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <tr class="even">
 <td>2</td>
 <td>Systemansvarlig</td>
-<td><strong>Hvis du bruker Microsoft Dynamics 365 for Finance and Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene som leveres av Microsoft.</td>
+<td><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene som leveres av Microsoft.</td>
 <td>Hvis du vil ha mer informasjon, se følgende emner:
 <ul>
 

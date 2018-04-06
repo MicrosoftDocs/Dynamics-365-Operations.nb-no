@@ -1,6 +1,6 @@
 ---
 title: Arbeidsflyt for utgifter
-description: "Dette emnet forklarer hvordan du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, for å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring."
+description: "Dette emnet forklarer hvordan du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, for å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring."
 author: saraschi2
 manager: AnnBe
 ms.date: 09/13/2017
@@ -19,10 +19,10 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d60d2f462a1fd27d4655e68aab7f96fb28a34b77
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-Du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, til å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring. Du kan sette opp en arbeidsflyt som bruker følgende kriterier for å fastslå hvem som skal godkjenne utgiftsrapporter.
+Du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, til å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring. Du kan sette opp en arbeidsflyt som bruker følgende kriterier for å fastslå hvem som skal godkjenne utgiftsrapporter.
 
 - Ansattes rapporteringshierarki og forhåndsdefinerte godkjenningsgrenser
 - Godkjenning på flere nivåer som støtter midlertidig godkjenner og endelig godkjenner

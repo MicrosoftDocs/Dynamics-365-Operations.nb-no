@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
-ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definere avhengigheten av konfigurasjoner fra andre komponenter for elektronisk rapportering (ER)
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/25/2017
 
 For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics livssyklus tjenester (LCS).
 
-Denne fremgangsmåten viser hvordan du utformer en konfigurasjon for elektronisk rapportering (ER) og angi dens avhengighet fra andre programvarekomponenter, slik at du kan bidra til å sikre at konfigurasjonen skal lastes ned til en bestemt versjon av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet Litware, Inc. 
+Denne fremgangsmåten viser hvordan du utformer en konfigurasjon for elektronisk rapportering (ER) og angi dens avhengighet fra andre programvarekomponenter, slik at du kan bidra til å sikre at konfigurasjonen skal lastes ned til en bestemt versjon av Microsoft Dynamics 365 for Finance and Operations. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet Litware, Inc. 
 
 Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller elektronisk rapportering utvikler-rolle tilordnet. Trinnene kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom firmaer. 
 

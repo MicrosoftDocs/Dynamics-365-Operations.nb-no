@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a72963f755f8eddb19b8526d2938eff039ab7df2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/17/2018
 Planlegging og vedlikehold av en prosjektplan kan være komplisert, slik at prosjektledere må bruke verktøy som hjelper dem med denne oppgaven. Integrasjon med Microsoft Project-klienten gir støtte for å åpne og behandle en arbeidsnedbrytningsstruktur for prosjekt. Prosjektlederen kan publisere endringer tilbake til arbeidsnedbrytningsstrukturen for prosjekt i Finance and Operations.
 
 > [!NOTE]
-> Hvis du bruker juli-oppdateringen for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må du installere KB 4054797 og 4055884.
+> Hvis du bruker juli-oppdateringen for Microsoft Dynamics 365 for Finance and Operations, må du installere KB 4054797 og 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurere Microsoft Project-klienttillegget
 For å aktivere integrasjonen med Microsoft Project-klienten, kreves det et Microsoft Dynamics 365-tillegg installert på brukerens Microsoft Project-programklient. Dette gjøres ved å åpne **Prosjektstyringsarbeidsområdet**.

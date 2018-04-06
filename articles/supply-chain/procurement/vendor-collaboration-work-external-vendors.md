@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: 2d879ee5a23e3263c9dce52f4732a2be74e60f8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
+Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 
 Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 

@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 799dd89433ff561fd8a5cc5c082165ef9bb74923
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Endre en behovsprognose manuelt
@@ -44,6 +44,6 @@ Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasj
 ## <a name="modify-the-forecast-in-excel"></a>Endre prognosen i Excel
 1. Klikk Åpne i Microsoft Office.
 2. Klikk Rediger behovsprognose i Excel.
-    * I Excel kan du legge til, slette og redigere behovsprognoselinjer. Hvis du ikke kan se dataene i Excel, må du logge på Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition med alternativet "Forbli pålogget" aktivert, og du må klarere datatilkoblingsprogrammet.  
+    * I Excel kan du legge til, slette og redigere behovsprognoselinjer. Hvis du ikke kan se dataene i Excel, må du logge på Microsoft Dynamics 365 for Finance and Operations med alternativet "Forbli pålogget" aktivert, og du må klarere datatilkoblingsprogrammet.  
 
 

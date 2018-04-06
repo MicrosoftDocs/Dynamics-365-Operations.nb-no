@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2ba38ddc5c717df29462e4316dc5045d0eef8c1a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6403aabb6b029807b42ab1ccb11756dcb0dda5dc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
 - Microsoft Power BI:
 
     - Data som vises i Power BI-visualiseringer
-    - Power BI-datavisualiseringer som er innebygd i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klienten
+    - Power BI-datavisualiseringer som er innebygd i Microsoft Dynamics 365 for Finance and Operations, klient
 
 > [!IMPORTANT]
 > - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet pares i Power BI. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

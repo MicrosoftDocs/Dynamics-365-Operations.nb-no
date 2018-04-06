@@ -1,6 +1,6 @@
 ---
 title: Lagerblokkering
-description: "Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes."
+description: "Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes."
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eb8040531ec0c2b9c13fc927e5330772ad11ee1d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0567cdad6f9f27097f534381655e5b468884bed8
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Enterprise-utgaven av Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
+Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
 
 Du kan blokkere lagervarer på følgende måter:
 -   Manuelt
@@ -64,7 +64,7 @@ Du kan angi hvilke beholdningsstatuser som er blokkeringsstatuser ved hjelp av p
 <a name="see-also"></a>Se også
 --------
 
-[Opprett og oppretthold en lagerblokkering (Oppgaveveiledning)] (Oppgaver/create-maintain-inventory-blocking.md
+[Opprette og vedlikeholde en lagerblokkering](tasks/create-maintain-inventory-blocking.md)
 
 [Kvalitetsstyringsprosesser](quality-management-processes.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Definere importprosess for avansert bankavstemming
-description: Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag.
+description: Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag.
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4d7bb0fc5abedcce973632434a5cc174449cdc22
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag. 
+Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag. 
 
 Oppsettet for import av bankkontoutdrag varierer, avhengig av formatet på der elektroniske bankkontoutdraget. Finance and Operations støtter tre formater for bankkontoutdrag som standard: ISO20022, MT940 og BAI2.
 

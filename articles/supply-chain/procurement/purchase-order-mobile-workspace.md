@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: d366ae53f4a9d8e676c3bc19e0450baa254cb716
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2f495fa3507fd54499e29b4c09f504dd037c0a6c
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,13 +36,13 @@ Dette emnet gir informasjon om det mobile arbeidsområdet **Godkjenning av besti
 ## <a name="overview"></a>Oversikt 
 Bestillinger som krever godkjenning, går gjennom en godkjenningsarbeidsflyt. Arbeidsflyten kan inkludere ulike trinn som krever at en eller flere personer utfører en handling. For eksempel kan en person måtte fullføre en oppgave eller godkjenne bestillingen. 
 
-På det mobile arbeidsområdet **Godkjenning av bestilling** kan du lett vise og svare på bestillinger fra en mobil enhet. På dette arbeidsområdet kan du også utføre de samme handlingene i arbeidsflyten som du kan utføre fra Microsoft Dynamics 365 Finance and Operations, Enterprise edition, webklient.
+På det mobile arbeidsområdet **Godkjenning av bestilling** kan du lett vise og svare på bestillinger fra en mobil enhet. På dette arbeidsområdet kan du også utføre de samme handlingene i arbeidsflyten som du kan utføre fra Microsoft Dynamics 365 Finance and Operations, webklient.
 
-## <a name="prerequisites"></a>Forutsetninger
+## <a name="prerequisites"></a>Nødvendig programvare
 Forutsetningene varierer avhengig av hvilken versjon av Finance and Operations som er distribuert i organisasjonen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Godkjenning av bestilling**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations 
+Hvis Microsoft Dynamics 365 for Finance and Operations har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Godkjenning av bestilling**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 

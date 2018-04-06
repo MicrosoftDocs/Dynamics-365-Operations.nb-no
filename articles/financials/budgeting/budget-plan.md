@@ -1,6 +1,6 @@
 ---
 title: Budsjettplanlegging
-description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
+description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
 author: twheeloc
 manager: AnnBe
 ms.date: 01/12/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6440591f847cbbb6be352270e3629a49d71598e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
+Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
 
 <a name="prerequisites"></a>Forutsetninger 
 ------------------

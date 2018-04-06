@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ Tildelingsgrunnlag brukes til å måle og kvantifisere aktiviteter, for eksempel
 
 **Kostnadsregnskap**
 
-Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre. Kildedataene som brukes til å foreta kostnadsanalyser, behandles uavhengig av hverandre i Kostnadsregnskap. Oppdateringer i Kostnadsregnskap påvirker derfor ikke kildedataene. Når du samler inn kostnadsdata fra forskjellige kilder, og særlig når du importerer hovedkontoene fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kostnadselementer, er det imidlertid overflødige data, fordi de samme dataene som finnes i både Finans og Kostnadsregnskap. Denne overflødigheten er nødvendig, fordi du kan bruke Økonomistyring for ekstern rapportering og Kostnadsregnskap for intern rapportering.
+Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre. Kildedataene som brukes til å foreta kostnadsanalyser, behandles uavhengig av hverandre i Kostnadsregnskap. Oppdateringer i Kostnadsregnskap påvirker derfor ikke kildedataene. Når du samler inn kostnadsdata fra forskjellige kilder, og særlig når du importerer hovedkontoene fra Microsoft Dynamics 365 for Finance and Operations som kostnadselementer, er det imidlertid overflødige data, fordi de samme dataene finnes i både Finans og Kostnadsregnskap. Denne overflødigheten er nødvendig, fordi du kan bruke Økonomistyring for ekstern rapportering og Kostnadsregnskap for intern rapportering.
 
 **Kostnadsregnskapsfinans**
 
@@ -120,7 +120,7 @@ Det finnes to dimensjonshierarkier: kategoriseringshierarki og klassifiseringshi
 Kostnadsregnskapet støtter integrering av data fra kildesystemer via et sett med datakoblinger. Følgende datakoblinger er tilgjengelige:
 
 -  Importerte transaksjoner (forhåndskonfigurert)
--  Dynamics 365 for Finance and Operations, Enterprise Edition (forhåndskonfigurert)
+-  Dynamics 365 for Finance and Operations (forhåndskonfigurert)
 -  Dynamics AX (konfigurasjon kreves)
 
 **Merk:** Datatilkoblingens importerte transaksjoner er basert på dataenheter.
@@ -129,7 +129,7 @@ Kostnadsregnskapet støtter integrering av data fra kildesystemer via et sett me
 
 De fleste kildesystemer kan gi data som samsvarer med en eller flere datakilder i kostnadsregnskap. For å justere data fra kildesystemene med datakilden i Kostnadsregnskap, må en dataoperatør konfigureres. Tabellen nedenfor viser tilgjengeligheten av dataleverandører per datakontakt og datakilde.
 
-|  **Datakilder** |  **Datakilder for importerte transaksjoner** | **Datakobling for Dynamics 365 for Finance and Operations, Enterprise Edition**  | **Datatilkobling for Dynamics AX**  |
+|  **Datakilder** |  **Datakilder for importerte transaksjoner** | **Datakobling for Dynamics 365 for Finance and Operations**  | **Datatilkobling for Dynamics AX**  |
 |---|---|---|---|
 | Medlemmer av dimensjon for kostnadselement  |  Ja | Ja  | Ja  |
 |  Medlemmer av dimensjon for kostnadsobjekt |  Ja | Ja  | Ja  |
