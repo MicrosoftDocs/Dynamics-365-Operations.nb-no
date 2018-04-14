@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c87909d9eb3a4d717e0c40289353da0267a51f60
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aa7c7bfaf4301904e1b7ae242efaf8b660fb076a
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-expense-management"></a><span data-ttu-id="f5988-103">Konfigurere reiseregning</span><span class="sxs-lookup"><span data-stu-id="f5988-103">Configure expense management</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f5988-104">Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du konfigurerer Reiseregning og utlegg i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f5988-104">This topic describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="f5988-105">I Reiseregning kan du lagre informasjon om betalingsmetoder, reiserekvisisjoner, utgiftsrapporter, retningslinjer, og så videre.</span><span class="sxs-lookup"><span data-stu-id="f5988-105">In Expense management, you can store information about payment methods, travel requisitions, expense reports, policies, and so on.</span></span>
 

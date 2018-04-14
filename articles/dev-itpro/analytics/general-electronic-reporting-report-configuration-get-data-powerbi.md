@@ -18,17 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6587189fe2a366caebd0dbaf34487d578815bb94
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a><span data-ttu-id="f1572-103">Konfigurere elektronisk rapportering for å hente data til Power BI</span><span class="sxs-lookup"><span data-stu-id="f1572-103">Configure Electronic reporting to pull data into Power BI</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f1572-104">Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst av Finance and Operations til Power BI-tjenester.</span><span class="sxs-lookup"><span data-stu-id="f1572-104">This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</span></span> <span data-ttu-id="f1572-105">Dette emnet bruker for eksempel Intrastat-transaksjoner som forretningsdata som må overføres.</span><span class="sxs-lookup"><span data-stu-id="f1572-105">As an example, this topic uses Intrastat transactions as business data that must be transferred.</span></span> <span data-ttu-id="f1572-106">Kartvisningen for Power BI bruker disse Intrastat-transaksjonsdataene til å presentere en visning for analyse av firmaets aktiviteter for import og eksport i Power BI-rapporten.</span><span class="sxs-lookup"><span data-stu-id="f1572-106">The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</span></span>
 
@@ -118,9 +117,9 @@ ms.lasthandoff: 02/23/2018
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a><span data-ttu-id="f1572-217">Opprette en Power BI-rapport ved hjelp av det nye datasettet</span><span class="sxs-lookup"><span data-stu-id="f1572-217">Create a Power BI report by using the new dataset</span></span>
 1. <span data-ttu-id="f1572-218">Klikk på Power BI-datasettet **Import- og eksportdetaljer** som du opprettet.</span><span class="sxs-lookup"><span data-stu-id="f1572-218">Click the **Import and export details** Power BI dataset that you created.</span></span> 
 2. <span data-ttu-id="f1572-219">Konfigurer visningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-219">Configure the visualization.</span></span> <span data-ttu-id="f1572-220">Velg for eksempel visningen **Fylt kart**, og konfigurere den på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="f1572-220">For example, select the **Filled map** visualization, and configure it as follows:</span></span>
- -   <span data-ttu-id="f1572-221">Tilordne **Opprinnelsesland**-datasettfeltet til **Plassering**-feltet for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
- -   <span data-ttu-id="f1572-222">Tilordne **Mengde**-datasettfeltet til **Fargemetning**-feltet for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
- -   <span data-ttu-id="f1572-223">Legg til datasettfeltene **Aktivitet** og **År** i **Filtre**-feltsamlingen for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
+   -   <span data-ttu-id="f1572-221">Tilordne **Opprinnelsesland**-datasettfeltet til **Plassering**-feltet for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
+   -   <span data-ttu-id="f1572-222">Tilordne **Mengde**-datasettfeltet til **Fargemetning**-feltet for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
+   -   <span data-ttu-id="f1572-223">Legg til datasettfeltene **Aktivitet** og **År** i **Filtre**-feltsamlingen for kartvisningen.</span><span class="sxs-lookup"><span data-stu-id="f1572-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
 
 3. <span data-ttu-id="f1572-224">Lagre Power BI-rapporten som **Rapport for import- og eksportdetaljer**.</span><span class="sxs-lookup"><span data-stu-id="f1572-224">Save the Power BI report as **Import and export details report**.</span></span> <span data-ttu-id="f1572-225">[![Rapporten Import- og eksportdetaljer](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Vær oppmerksom på at kartet viser landene/områdene som er nevnt i Excel-filen (Østerrike og Sveits i dette eksemplet).</span><span class="sxs-lookup"><span data-stu-id="f1572-225">[![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example).</span></span> <span data-ttu-id="f1572-226">Disse landene/områdene er fargelagt for å vise størrelsen på andelen av fakturerte beløp for hver av dem.</span><span class="sxs-lookup"><span data-stu-id="f1572-226">These countries/regions are colored to show the proportion of invoiced amounts for each.</span></span> 
 4. <span data-ttu-id="f1572-227">Oppdater listen over Intrastat-transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="f1572-227">Update the list of Intrastat transactions.</span></span> <span data-ttu-id="f1572-228">Eksporttransaksjonen som stammer fra Italia legges til.</span><span class="sxs-lookup"><span data-stu-id="f1572-228">The export transaction that originated from Italy is added.</span></span> <span data-ttu-id="f1572-229">[![Listen Intrastat-transaksjoner](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span><span class="sxs-lookup"><span data-stu-id="f1572-229">[![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span></span> 

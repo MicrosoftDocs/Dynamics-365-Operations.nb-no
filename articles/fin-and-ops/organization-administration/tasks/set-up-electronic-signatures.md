@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 11fee0b2358e6a2b84c221f8eb06e32c888e5f44
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d57fc2bcc514f7be8d6edffca5ada0b91aadf073
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-electronic-signatures"></a><span data-ttu-id="5a1b4-103">Opprette elektroniske signaturer</span><span class="sxs-lookup"><span data-stu-id="5a1b4-103">Set up electronic signatures</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5a1b4-104">Bruk denne prosedyren for å definere elektroniske signaturer.</span><span class="sxs-lookup"><span data-stu-id="5a1b4-104">Use this procedure to set up electronic signatures.</span></span> <span data-ttu-id="5a1b4-105">En elektronisk signatur bekrefter identiteten til en person som er i ferd med å starte eller godkjenne en dataprosess.</span><span class="sxs-lookup"><span data-stu-id="5a1b4-105">An electronic signature confirms the identity of a person who is about to start or approve a computing process.</span></span> <span data-ttu-id="5a1b4-106">Demonstrasjonsdatafirmaet DAT brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="5a1b4-106">The demo data company used to create this procedure is DAT.</span></span>
 

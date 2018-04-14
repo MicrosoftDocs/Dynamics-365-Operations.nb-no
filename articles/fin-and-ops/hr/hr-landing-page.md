@@ -17,16 +17,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 4ded4aee8f7cb15960bcecd30ec30b812b086d92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 437e6e0cd3052083bb1094f42bb741d491b27242
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="welcome-to-human-resources"></a><span data-ttu-id="e610c-105">Velkommen til Personale</span><span class="sxs-lookup"><span data-stu-id="e610c-105">Welcome to human resources</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e610c-106">Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="e610c-106">Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.</span></span> <span data-ttu-id="e610c-107">Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn.</span><span class="sxs-lookup"><span data-stu-id="e610c-107">It also provides a framework for human resources staff to manage areas of oversight.</span></span> <span data-ttu-id="e610c-108">Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.</span><span class="sxs-lookup"><span data-stu-id="e610c-108">These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.</span></span>
 

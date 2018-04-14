@@ -19,17 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7c738d888b7177a26b28438c820ce18312947318
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-overview"></a><span data-ttu-id="62327-103">Oversikt over innkjøp og leverandører</span><span class="sxs-lookup"><span data-stu-id="62327-103">Procurement and sourcing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="62327-104">Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i modulen Innkjøp og leverandører.</span><span class="sxs-lookup"><span data-stu-id="62327-104">This article gives an overview of the functionality that's available in the Procurement and sourcing module.</span></span>
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 02/08/2018
 <span data-ttu-id="62327-108">Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for eksempel når en ansatt trenger et produkt.</span><span class="sxs-lookup"><span data-stu-id="62327-108">The need for products or services may arise from *requisitions*, for example, when an employee requires a product.</span></span> <span data-ttu-id="62327-109">*Produktkataloger* kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.</span><span class="sxs-lookup"><span data-stu-id="62327-109">*Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.</span></span>  
 
 <span data-ttu-id="62327-110">*Forbruksbeløp* kan brukes til å begrense rekvisisjonsforbruk, og *innkjøpsarbeidsflyten* legger til alternativet om å kreve godkjenning før bestilling kan skje.</span><span class="sxs-lookup"><span data-stu-id="62327-110">*Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen.</span></span> <span data-ttu-id="62327-111">Det er også mulig å angi budsjettmiddeltildelinger, om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="62327-111">It's also possible to specify budget fund allocation, if required.</span></span>  
-  
+
 <span data-ttu-id="62327-112">Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel* som sendes til flere potensielle leverandører.</span><span class="sxs-lookup"><span data-stu-id="62327-112">The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers.</span></span> <span data-ttu-id="62327-113">Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer.</span><span class="sxs-lookup"><span data-stu-id="62327-113">It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them.</span></span> <span data-ttu-id="62327-114">Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.</span><span class="sxs-lookup"><span data-stu-id="62327-114">Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.</span></span>  
 
 <span data-ttu-id="62327-115">Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel* til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel.</span><span class="sxs-lookup"><span data-stu-id="62327-115">Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process.</span></span> <span data-ttu-id="62327-116">Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren.</span><span class="sxs-lookup"><span data-stu-id="62327-116">The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order.</span></span> <span data-ttu-id="62327-117">Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert.</span><span class="sxs-lookup"><span data-stu-id="62327-117">If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled.</span></span> <span data-ttu-id="62327-118">I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.</span><span class="sxs-lookup"><span data-stu-id="62327-118">Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.</span></span>  

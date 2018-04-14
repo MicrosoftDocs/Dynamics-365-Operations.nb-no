@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b7c02e5a6f5eeee270ca4b6f91e90f7799c2ca11
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a3ba01bc05d130991e8a744d9026d53edf93ee20
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-rate-masters"></a><span data-ttu-id="bd7ce-103">Definere vurderingsstandarder</span><span class="sxs-lookup"><span data-stu-id="bd7ce-103">Set up rate masters</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bd7ce-104">Denne fremgangsmåten viser hvordan du setter opp en vurderingsstandard.</span><span class="sxs-lookup"><span data-stu-id="bd7ce-104">This procedure shows you how to set up a rate master.</span></span> <span data-ttu-id="bd7ce-105">Logistikklederen setter vanligvis opp vurderingsstandardene, avhengig av kontraktene som er signert med transportørene.</span><span class="sxs-lookup"><span data-stu-id="bd7ce-105">The logistic manager usually sets up rate masters, depending on the contracts signed with the carriers.</span></span> <span data-ttu-id="bd7ce-106">I dette scenarioet definerer du en vurderingsstandard for en flytransportør.</span><span class="sxs-lookup"><span data-stu-id="bd7ce-106">In this scenario you will set up a rate master for an air carrier.</span></span> <span data-ttu-id="bd7ce-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="bd7ce-107">The demo data company used to create this procedure is USMF.</span></span>
 

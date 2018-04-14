@@ -17,16 +17,16 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f094a5420e34a13ac654b01fb145728c7e9cca1c
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-iso20022-files"></a><span data-ttu-id="81c52-103">Importere ISO20022-filer</span><span class="sxs-lookup"><span data-stu-id="81c52-103">Import ISO20022 files</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="81c52-104">Du kan importere betalingsfiler i følgende formater:</span><span class="sxs-lookup"><span data-stu-id="81c52-104">You can import payment files that have the following formats:</span></span>
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 03/26/2018
 3. <span data-ttu-id="81c52-113">På siden **Kundebankkonto** kan du definere en kundebankkontopost ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret.</span><span class="sxs-lookup"><span data-stu-id="81c52-113">On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</span></span>
 4. <span data-ttu-id="81c52-114">På siden **Bankkontoer** kan du definere en bankkontoer for juridiske enheter ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret, valuta og adresse.</span><span class="sxs-lookup"><span data-stu-id="81c52-114">On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</span></span>
 
-    > [!NOTE]
-        > <span data-ttu-id="81c52-115">Hvis du planlegger å bruke avansert bankavstemming, på den **Avstemming** hurtigfanen angir du **Avansert bankavstemming** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="81c52-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="81c52-116">Hvis du vil avstemme uposterte importerte betalinger, kan du angi **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="81c52-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="81c52-115">Hvis du planlegger å bruke avansert bankavstemming, på den **Avstemming** hurtigfanen angir du **Avansert bankavstemming** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="81c52-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="81c52-116">Hvis du vil avstemme uposterte importerte betalinger, kan du angi **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="81c52-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
 
 5. <span data-ttu-id="81c52-117">Valgfritt: På siden **Transaksjonskodetilordning** kan du definere koblingen mellom banktransaksjonskoder i fil- og banktransaksjonstypene.</span><span class="sxs-lookup"><span data-stu-id="81c52-117">Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.</span></span>
 6. <span data-ttu-id="81c52-118">Hvis filen inneholder avgifter på transaksjonen som du vil postere sammen med den innkommende betalingen, oppretter du et betalingsgebyr på siden **Kundebetalingsgebyr**.</span><span class="sxs-lookup"><span data-stu-id="81c52-118">If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page.</span></span> <span data-ttu-id="81c52-119">Deretter, på siden **Betalingsmåter**, knytte du betalingsgebyret til bankkontoen i betalingsgebyroppsettet.</span><span class="sxs-lookup"><span data-stu-id="81c52-119">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>

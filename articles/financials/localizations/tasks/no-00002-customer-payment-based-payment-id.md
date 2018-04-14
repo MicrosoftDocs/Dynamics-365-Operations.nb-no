@@ -16,15 +16,15 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5bf91f083e7ba9aaddd2f5bd746ff62c751ea2ed
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5d896f479be8bc53f8e82b07cd4005aa7021f1f5
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="customer-payment-based-on-payment-id-norway"></a><span data-ttu-id="55fa2-103">Kundebetaling basert på betalings-ID (Norge)</span><span class="sxs-lookup"><span data-stu-id="55fa2-103">Customer payment based on payment ID (Norway)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="55fa2-104">Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="55fa2-104">This task walks you through setting up and maintaining Norwegian payment IDs.</span></span> 
 

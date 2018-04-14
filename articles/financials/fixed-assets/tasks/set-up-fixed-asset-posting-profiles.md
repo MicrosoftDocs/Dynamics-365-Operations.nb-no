@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9766d96d16429d0ce0864695a3157f54cad4054
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9bd8a506fc0bbf4d4d8127afa71fe371be10b55b
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a><span data-ttu-id="ba3a3-103">Definere posteringsprofiler for anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="ba3a3-103">Set up fixed asset posting profiles</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ba3a3-104">Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.</span><span class="sxs-lookup"><span data-stu-id="ba3a3-104">This task guide will set up Fixed asset posting profiles.</span></span>  <span data-ttu-id="ba3a3-105">Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.</span><span class="sxs-lookup"><span data-stu-id="ba3a3-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>  <span data-ttu-id="ba3a3-106">Eksemplene i oppgaveveiledningen er for en enkel posteringsprofil, men posteringsprofiler må opprettes for den bestemte kontoplanen og kravene til økonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="ba3a3-106">Examples given in the task guide are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.</span></span>
 

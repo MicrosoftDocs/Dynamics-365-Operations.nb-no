@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 903eeac732f0c5dc3d94d609ee08988029e33f0c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="654d0-104">Praksisleder for Power BI-innhold</span><span class="sxs-lookup"><span data-stu-id="654d0-104">Practice manager Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="654d0-105">Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Power BI-innhold.</span><span class="sxs-lookup"><span data-stu-id="654d0-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="654d0-106">Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.</span><span class="sxs-lookup"><span data-stu-id="654d0-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 01/17/2018
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a><span data-ttu-id="654d0-228">Enhet: ProjectAccountingCube\_TotalEstimatedCosts</span><span class="sxs-lookup"><span data-stu-id="654d0-228">Entity: ProjectAccountingCube\_TotalEstimatedCosts</span></span> 
 <span data-ttu-id="654d0-229">**Datakilde:** ProjTable</span><span class="sxs-lookup"><span data-stu-id="654d0-229">**Data source:** ProjTable</span></span>
 
-| <span data-ttu-id="654d0-230">Aggregerte nøkkelmålinger</span><span class="sxs-lookup"><span data-stu-id="654d0-230">Key aggregate measurement</span></span>       | <span data-ttu-id="654d0-231">Felt</span><span class="sxs-lookup"><span data-stu-id="654d0-231">Field</span></span>               | <span data-ttu-id="654d0-232">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="654d0-232">Description</span></span> |
-|---------------------------------|---------------------|-------------|
+
+|    <span data-ttu-id="654d0-230">Aggregerte nøkkelmålinger</span><span class="sxs-lookup"><span data-stu-id="654d0-230">Key aggregate measurement</span></span>    |        <span data-ttu-id="654d0-231">Felt</span><span class="sxs-lookup"><span data-stu-id="654d0-231">Field</span></span>        |                                          <span data-ttu-id="654d0-232">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="654d0-232">Description</span></span>                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="654d0-233">Planlagt kostnad for fullført aktivitet</span><span class="sxs-lookup"><span data-stu-id="654d0-233">Completed activity planned cost</span></span> | <span data-ttu-id="654d0-234">Sum(TotalCostPrice)</span><span class="sxs-lookup"><span data-stu-id="654d0-234">Sum(TotalCostPrice)</span></span> | <span data-ttu-id="654d0-235">Total kostpris i estimater for alle prosjekttransaksjonstypene med fullførte oppgaver</span><span class="sxs-lookup"><span data-stu-id="654d0-235">The total cost price in estimates for all project transaction types that have completed tasks.</span></span> |
+
 

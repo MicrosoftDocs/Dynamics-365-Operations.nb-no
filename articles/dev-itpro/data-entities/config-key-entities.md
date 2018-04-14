@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f5b6ab35f65dbe325f2202ab2dda71152993359d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5e6392091e90b1eaf48ddf61a6328d0863b1a9bd
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configuration-keys-and-data-entities"></a><span data-ttu-id="ff4be-103">Konfigurasjonsnøkler og dataenheter</span><span class="sxs-lookup"><span data-stu-id="ff4be-103">Configuration keys and data entities</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ff4be-104">Før du bruker dataenheter til å importere eller eksportere data, anbefaler vi at du først bestemmer virkningen av konfigurasjonsnøklene i dataenheter som du har tenkt å bruke.</span><span class="sxs-lookup"><span data-stu-id="ff4be-104">Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.</span></span> 
 

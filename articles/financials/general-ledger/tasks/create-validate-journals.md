@@ -16,15 +16,15 @@ ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ca58d2cfc1788f9a9d4659d52a4bccc255bcfd72
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b752c11987c72895a3a11cce7beda2f8528e2246
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-validate-journals"></a><span data-ttu-id="0c569-103">Opprette og validere journaler</span><span class="sxs-lookup"><span data-stu-id="0c569-103">Create and validate journals</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0c569-104">Denne oppgaveveiledningen oppretter og validerer journaler og journallinjer.</span><span class="sxs-lookup"><span data-stu-id="0c569-104">This task guide creates and validates journals and journal lines.</span></span> <span data-ttu-id="0c569-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="0c569-105">This tasks uses the USMF demo company.</span></span>  
 

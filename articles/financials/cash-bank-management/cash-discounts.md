@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 52e6003dfddc398c19055405bf936195febe0737
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cash-discounts"></a><span data-ttu-id="7b9dc-104">Kontantrabatt</span><span class="sxs-lookup"><span data-stu-id="7b9dc-104">Cash discounts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7b9dc-105">Kontantrabatter konfigureres og deles for leverandører og kunder.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-105">Cash discounts are setup and shared for Accounts payable and Accounts receivable.</span></span>  <span data-ttu-id="7b9dc-106">Den tilgjengelige kontantrabatten kan defineres på kundefaktura eller leverandørfaktura, og brukes hvis fakturaen betales innen kontantrabattdatoen.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-106">The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date.</span></span> 
 
@@ -65,6 +64,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="7b9dc-135">1. mars = 80</span><span class="sxs-lookup"><span data-stu-id="7b9dc-135">March 1 = 80</span></span>
 
 <span data-ttu-id="7b9dc-136">Det posteres en faktura på USD 1 000 med vilkårene for kontantrabatt på 20D2% 15. februar.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-136">An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 15.</span></span> <span data-ttu-id="7b9dc-137">Regnskapsvalutabeløpet på fakturaen er 1100 EUR.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-137">The accounting currency amount of the invoice is 1100 EUR.</span></span> <span data-ttu-id="7b9dc-138">En betaling på USD 980 betales med fakturaen 1. mars.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-138">A payment for 980 USD is settled with the invoice on March 1.</span></span> <span data-ttu-id="7b9dc-139">Kontantrabattbeløpet er USD 20.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-139">The cash discount amount is 20 USD.</span></span> <span data-ttu-id="7b9dc-140">Regnskapsvalutabeløpet for betalingen er EUR 784.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-140">The accounting currency amount of the payment is 784 EUR.</span></span> <span data-ttu-id="7b9dc-141">Regnskapsvalutabeløpet for kontantrabatten blir beregnet ved hjelp av valutakursen 1. mars: 20 \* 80 / 100 = EUR 16.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-141">The accounting currency amount of the cash discount is calculated by using the exchange rate as of March 1: 20 \* 80 / 100 = 16 EUR.</span></span>
+
 | <span data-ttu-id="7b9dc-142">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="7b9dc-142">**Note**</span></span>                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="7b9dc-143">Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling.</span><span class="sxs-lookup"><span data-stu-id="7b9dc-143">If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used.</span></span> |

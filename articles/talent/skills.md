@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: edcb01c177a3e43cea7f0b7936a4129d27314016
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="bd745-104">Justere kompetansen til arbeidsstyrken etter bedriftens behov</span><span class="sxs-lookup"><span data-stu-id="bd745-104">Align workforce skills with business needs</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="bd745-105">Du kan følge opp ferdighetene som ansatte, søkere eller kontaktpersoner har eller bør ha for å oppfylle rollen effektivt.</span><span class="sxs-lookup"><span data-stu-id="bd745-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="bd745-106">Du kan også angi kompetansen som kreves for en bestemt jobb.</span><span class="sxs-lookup"><span data-stu-id="bd745-106">You can also specify the skills that are required for a specific job.</span></span>
 
@@ -55,8 +54,8 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="bd745-133">Med profiler for kompetansesøk kan du søke etter nåværende ansatte eller kandidater med kvalifikasjoner som direkte samsvarer med bedriftens behov.</span><span class="sxs-lookup"><span data-stu-id="bd745-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="bd745-134">Du kan for eksempel opprette en profil for kompetansesøk for en åpen stilling i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="bd745-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="bd745-135">Ved å opprette en profil for en bestemt jobb og kopiere kompetanse, utdanning og sertifikater fra denne jobben til profilen, kan du raskt søke arbeidere, søkere og kontaktpersoner som samsvarer med ett eller flere av kriteriene som er angitt på profilen, og vise en liste over kandidater som har kvalifikasjoner som nærmest oppfyller kompetansen som kreves for jobben.</span><span class="sxs-lookup"><span data-stu-id="bd745-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
 
-><span data-ttu-id="bd745-136">**Obs!** Bare arbeidere, søkere eller kontaktpersoner som er valgt for inkludering i kompetansesøk, kan vises i resultatlisten for kompetansesøk eller inkluderes i en kompetanseprofil.</span><span class="sxs-lookup"><span data-stu-id="bd745-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="bd745-137">Hvis du vil ta med en arbeider, søker eller kontaktperson i kompetansesøk, angir du valget **Inkluder i kompetansesøk** til Ja i de følgende sidene:</span><span class="sxs-lookup"><span data-stu-id="bd745-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-
+> <span data-ttu-id="bd745-136">**Obs!** Bare arbeidere, søkere eller kontaktpersoner som er valgt for inkludering i kompetansesøk, kan vises i resultatlisten for kompetansesøk eller inkluderes i en kompetanseprofil.</span><span class="sxs-lookup"><span data-stu-id="bd745-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="bd745-137">Hvis du vil ta med en arbeider, søker eller kontaktperson i kompetansesøk, angir du valget **Inkluder i kompetansesøk** til Ja i de følgende sidene:</span><span class="sxs-lookup"><span data-stu-id="bd745-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
+> 
 > + <span data-ttu-id="bd745-138">Arbeider</span><span class="sxs-lookup"><span data-stu-id="bd745-138">Worker</span></span>
 > + <span data-ttu-id="bd745-139">Ansatt</span><span class="sxs-lookup"><span data-stu-id="bd745-139">Employee</span></span>
 > + <span data-ttu-id="bd745-140">Søker</span><span class="sxs-lookup"><span data-stu-id="bd745-140">Applicant</span></span>

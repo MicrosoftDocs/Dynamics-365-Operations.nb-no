@@ -19,19 +19,18 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a7ed8352e87a31905fe8a60556d91169f13963f3
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="credit-card-setup-authorization-and-capture"></a><span data-ttu-id="69309-104">Oppsett av kredittkort, autorisasjon og registrering</span><span class="sxs-lookup"><span data-stu-id="69309-104">Credit card setup, authorization, and capture</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="69309-105">Denne artikkelen gir en oversikt over kredittkortautorisering i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="69309-105">This article provides an overview of credit card authorization in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="69309-106">Den inneholder informasjon om å sette opp en betalingstjeneste, legge til et kredittkort til en salgsordre og annullere en autorisering.</span><span class="sxs-lookup"><span data-stu-id="69309-106">It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.</span></span>
 

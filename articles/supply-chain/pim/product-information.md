@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 981effde3f5e99035bcd790ee8d98cc6acf550fb
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-information-overview"></a><span data-ttu-id="4f645-104">Oversikt over produktinformasjon</span><span class="sxs-lookup"><span data-stu-id="4f645-104">Product information overview</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="4f645-105">Dette emnet inneholder informasjon om produktinformasjonsadministrasjon.</span><span class="sxs-lookup"><span data-stu-id="4f645-105">This topic provides information about product information management.</span></span> <span data-ttu-id="4f645-106">Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.</span><span class="sxs-lookup"><span data-stu-id="4f645-106">Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes.</span></span> 
 

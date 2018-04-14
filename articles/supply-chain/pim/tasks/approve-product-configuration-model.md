@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fa4548d3017246cbe49e2613f8990df6ea1c368b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d19c904ca7d974a8f80eebe7d237bede080c8f6
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="approve-a-product-configuration-model"></a><span data-ttu-id="6f3c1-103">Godkjenne en produktkonfigurasjonsmodell</span><span class="sxs-lookup"><span data-stu-id="6f3c1-103">Approve a product configuration model</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6f3c1-104">Kjører du denne prosedyren krever det at minst én eksisterende produktmodellkonfigurasjon er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="6f3c1-104">Running this procedure requires that at least one product configuration model is available.</span></span> <span data-ttu-id="6f3c1-105">Denne prosedyren bruker modellen for High-end-høyttaler i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="6f3c1-105">This procedure uses the High end speaker model in the demo data company USMF.</span></span> <span data-ttu-id="6f3c1-106">Legg merke til at denne modellen har allerede blitt godkjent, men fremgangsmåten leder deg gjennom hele prosessen.</span><span class="sxs-lookup"><span data-stu-id="6f3c1-106">Note that this model has already been approved, but the procedure walks you through the entire process.</span></span>
 

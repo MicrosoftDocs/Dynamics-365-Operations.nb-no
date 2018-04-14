@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a896ff1f2bf60a12b415a270853ae25f8af0f813
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58df4768f33bc4a98c5a229b698754692ce6edbb
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a><span data-ttu-id="2a7fc-103"> Utføre selvbetjening for å laste ned maskinvarestasjon</span><span class="sxs-lookup"><span data-stu-id="2a7fc-103">Perform self-service to download hardware station</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2a7fc-104">Denne prosedyren hjelper med å laste ned en forhåndsdefinert maskinvarestasjon.</span><span class="sxs-lookup"><span data-stu-id="2a7fc-104">This procedure walks through how to download a pre-defined hardware station.</span></span> <span data-ttu-id="2a7fc-105">Demonstrasjonsdatafirmaet for denne prosedyren er USRT.</span><span class="sxs-lookup"><span data-stu-id="2a7fc-105">The demo data company used for this procedure is USRT.</span></span> <span data-ttu-id="2a7fc-106">Du må ha opprettet en ny maskinvarestasjonsprofil og maskinvarestasjon før du begynner på denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="2a7fc-106">You must have created a new hardware station profile and hardware station before starting this task.</span></span>
 

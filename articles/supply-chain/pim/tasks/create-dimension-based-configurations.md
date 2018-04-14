@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: aa5c7f6758c312fd6e7dfe4e0ba1528b8d564d7a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 103d925a301e62c52faacd7bbaf100d27901728d
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-dimension-based-configurations"></a><span data-ttu-id="7dcfe-103">Opprette dimensjonsbaserte konfigurasjoner</span><span class="sxs-lookup"><span data-stu-id="7dcfe-103">Create dimension-based configurations</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7dcfe-104">Denne fremgangsmåten viser hvordan du definerer en konfigurasjon for et dimensjonsbasert produkt.</span><span class="sxs-lookup"><span data-stu-id="7dcfe-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="7dcfe-105">Dette er den siste fremgangsmåten i serien som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="7dcfe-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="7dcfe-106">Utførelsen av denne fremgangsmåten er avhengig av dataene som ble opprettet i de sju forrige registreringene.</span><span class="sxs-lookup"><span data-stu-id="7dcfe-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="7dcfe-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="7dcfe-107">The demo data company used to create this procedure is USMF.</span></span>
 

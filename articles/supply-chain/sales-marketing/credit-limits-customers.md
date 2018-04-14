@@ -17,16 +17,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3c43a42822f291607fbc9708dd07ebf99b9d7ec4
-ms.openlocfilehash: 0250706fea6d6dfa7b59729162c2afad9ca11a46
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e57389ac2882b011bf4ae98334db18a8f35846e2
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="credit-limits-for-customers"></a><span data-ttu-id="98a4a-103">Kredittgrenser for kunder</span><span class="sxs-lookup"><span data-stu-id="98a4a-103">Credit limits for customers</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="98a4a-104">Ved å angi en kredittgrense kan du spesifisere det maksimale beløpet for kreditt som settes for kundene dine.</span><span class="sxs-lookup"><span data-stu-id="98a4a-104">Setting a credit limit lets you specify the maximum amount of credit to extend to your customers.</span></span> <span data-ttu-id="98a4a-105">Hvis en kredittgrense er angitt, kontrolleres den automatisk når en bruker forsøker å oppdatere et dokument.</span><span class="sxs-lookup"><span data-stu-id="98a4a-105">If a credit limit is specified, it is checked automatically when a user attempts to update a document.</span></span> <span data-ttu-id="98a4a-106">En melding vises til brukeren hvis kredittgrensen overskrides.</span><span class="sxs-lookup"><span data-stu-id="98a4a-106">If the credit limit is exceeded, a message is displayed to the user.</span></span> <span data-ttu-id="98a4a-107">Denne artikkelen gir en oversikt over hvordan kredittgrenser fungerer, og svarer på følgende spørsmål:</span><span class="sxs-lookup"><span data-stu-id="98a4a-107">This article provides an overview of how credit limits work  and answers the following questions:</span></span>
 

@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4cf60021b96ab492c5d0b2535a117cb33ab13524
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="employee-development-power-bi-content"></a><span data-ttu-id="c96f1-103">Power BI-innhold om ansattutvikling</span><span class="sxs-lookup"><span data-stu-id="c96f1-103">Employee development Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c96f1-104">Dette emnet beskriver Power BI-innholdet om **ansattutvikling**.</span><span class="sxs-lookup"><span data-stu-id="c96f1-104">This topic describes the **Employee development** Microsoft Power BI content.</span></span>
 
@@ -45,6 +45,7 @@ ms.lasthandoff: 01/31/2018
 <span data-ttu-id="c96f1-124">Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet.</span><span class="sxs-lookup"><span data-stu-id="c96f1-124">You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard.</span></span> <span data-ttu-id="c96f1-125">Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span><span class="sxs-lookup"><span data-stu-id="c96f1-125">For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span></span>
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="c96f1-126">Forstå datamodellen og enheter</span><span class="sxs-lookup"><span data-stu-id="c96f1-126">Understanding the data model and entities</span></span>
+
 | <span data-ttu-id="c96f1-127">Enhet</span><span class="sxs-lookup"><span data-stu-id="c96f1-127">Entity</span></span>                   | <span data-ttu-id="c96f1-128">Innhold</span><span class="sxs-lookup"><span data-stu-id="c96f1-128">Contents</span></span>                                                                                                   | <span data-ttu-id="c96f1-129">Relasjoner med andre enheter</span><span class="sxs-lookup"><span data-stu-id="c96f1-129">Relationships with other entities</span></span> |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | <span data-ttu-id="c96f1-130">Kalenderforskyvning</span><span class="sxs-lookup"><span data-stu-id="c96f1-130">Calendar Offset</span></span>          | <span data-ttu-id="c96f1-131">Kalenderforskyvninger for å dele opp rapporter</span><span class="sxs-lookup"><span data-stu-id="c96f1-131">Calendar offsets to slice reports</span></span>                                                                          | <span data-ttu-id="c96f1-132">Tidligere stillingstilordning, stillingstrend, trend for ansatt, fratrådt ansatt</span><span class="sxs-lookup"><span data-stu-id="c96f1-132">Past Position Assignment, Position Trend, Employee Trend, Terminated Employee</span></span> 

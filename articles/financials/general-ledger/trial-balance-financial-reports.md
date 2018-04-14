@@ -19,17 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 77e46e8693c65410ac7c44754edcb3c181f2aa18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7363ac8d83c5d8f9da550f76ad888a666149cd6e
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="trial-balance-financial-reports"></a><span data-ttu-id="8b0ec-104">Finansrapporter for råbalanse</span><span class="sxs-lookup"><span data-stu-id="8b0ec-104">Trial balance financial reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8b0ec-105">Denne artikkelen beskriver standardrapportene for råbalanser.</span><span class="sxs-lookup"><span data-stu-id="8b0ec-105">This article describes the default reports for trial balances.</span></span> <span data-ttu-id="8b0ec-106">Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav.</span><span class="sxs-lookup"><span data-stu-id="8b0ec-106">It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</span></span> 
 
@@ -99,7 +98,7 @@ ms.lasthandoff: 03/26/2018
     -   <span data-ttu-id="8b0ec-175">**FD** – Økonomiske data som inneholder bare debet for forrige år</span><span class="sxs-lookup"><span data-stu-id="8b0ec-175">**FD** – Financial data that contains only debits for the last year</span></span>
     -   <span data-ttu-id="8b0ec-176">**FD** – Økonomiske data som inneholder bare kredit for forrige år</span><span class="sxs-lookup"><span data-stu-id="8b0ec-176">**FD** – Financial data that contains only credits for the last year</span></span>
 
- 
+
 
 <a name="see-also"></a><span data-ttu-id="8b0ec-177">Se også</span><span class="sxs-lookup"><span data-stu-id="8b0ec-177">See also</span></span>
 --------

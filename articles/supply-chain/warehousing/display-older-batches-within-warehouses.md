@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: fedb9162c81b9fa115b63402fe80cd4c857e8deb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="fc1d1-103">Konfigurer Vis eldre partier i lageret på en mobilenhet</span><span class="sxs-lookup"><span data-stu-id="fc1d1-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc1d1-104">Den **Vis eldre lagerpartier lageret** konfigurasjon kan du vise en liste over lokasjoner med partier som er eldre enn den gjeldende plasseringen til linjen arbeid.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="fc1d1-105">Listen over lokasjoner som skal vises inneholder informasjon om eldre partiene på sted med utløpsdatoen og det fysiske lageret for hver bunke.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="fc1d1-106">Du kan velge å velge fra et annet sted, eller for å fortsette plukking fra gjeldende plassering.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="fc1d1-107">Velg fra et annet sted - hvis du velger en ny plassering for å velge fra, oppdateres den gjeldende linjen i arbeid hvis du vil bruke den nye plasseringen og fortsetter arbeidet på vanlig måte med den nye plasseringen.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="fc1d1-108">For den nye adressen skal være gyldig, må det ha nok tilgjengelig antall for hele fungerer linjen.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="fc1d1-109">Hvis behovsantallet ikke er tilgjengelig, oppdateres ikke arbeid linjen, og viser listen.</span><span class="sxs-lookup"><span data-stu-id="fc1d1-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

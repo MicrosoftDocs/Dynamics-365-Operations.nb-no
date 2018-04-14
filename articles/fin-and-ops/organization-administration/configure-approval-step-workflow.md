@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="024d5-103">Konfigurere et godkjenningstrinn i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="024d5-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="024d5-104">Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.</span><span class="sxs-lookup"><span data-stu-id="024d5-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="024d5-192">Hvis brukeren ikke gjør noe med dokumentet innenfor den tillatte tiden, er dokumentet forfalt.</span><span class="sxs-lookup"><span data-stu-id="024d5-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="024d5-193">Et dokument som er forfalt, videresendes, basert på alternativene du velger i **Eskalering**-området på siden.</span><span class="sxs-lookup"><span data-stu-id="024d5-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="024d5-194">Hvis du har tilordnet godkjenningstrinnet til flere brukere eller en gruppe brukere i **Fullføringspolicy**-kategorien, velger du ett av følgende alternativer:</span><span class="sxs-lookup"><span data-stu-id="024d5-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="024d5-195">**Én enkelt godkjenner** – Handlingen som utføres på dokumentet, bestemmes av den første personen som svarer.</span><span class="sxs-lookup"><span data-stu-id="024d5-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="024d5-196">Erik har for eksempel sendt en reiseregning på NOK 15 000.</span><span class="sxs-lookup"><span data-stu-id="024d5-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="024d5-197">Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn.</span><span class="sxs-lookup"><span data-stu-id="024d5-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="024d5-198">Hvis Jorunn er den første personen som svarer på dokumentet, brukes handlingen hun bestemmer seg for, på dokumentet.</span><span class="sxs-lookup"><span data-stu-id="024d5-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="024d5-199">Hvis Jorunn avviser dokumentet, avvises det og sendes tilbake til Erik.</span><span class="sxs-lookup"><span data-stu-id="024d5-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="024d5-200">Hvis Jorunn godkjenner dokumentet, sendes det til Karen for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="024d5-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![Arbeidsflyt som har en godkjenningsprosess](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="024d5-202">**Flertallet av godkjennere** – Handlingen som skal brukes på dokumentet, fastsettes når de fleste av godkjennerne svarer.</span><span class="sxs-lookup"><span data-stu-id="024d5-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="024d5-203">Erik har for eksempel sendt en reiseregning på NOK 15 000.</span><span class="sxs-lookup"><span data-stu-id="024d5-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="024d5-204">Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn.</span><span class="sxs-lookup"><span data-stu-id="024d5-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="024d5-205">Hvis Jorunn og Johanne er de første to godkjennerne som svarer, utføres handlingen de gjør, på dokumentet.</span><span class="sxs-lookup"><span data-stu-id="024d5-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="024d5-206">Hvis Jorunn godkjenner dokumentet, men Johanne avviser det, avvises dokumentet og det sendes tilbake til Erik.</span><span class="sxs-lookup"><span data-stu-id="024d5-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="024d5-207">Hvis både Jorunn og Johanne godkjenner dokumentet, sendes det til Karen til godkjenning.</span><span class="sxs-lookup"><span data-stu-id="024d5-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

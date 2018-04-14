@@ -19,16 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 4963cc5fb94097ef831813e7732961821c20ad25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 37f3b1b4d362bd8b40977648b4aa4387011eea08
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="45bb8-104">Kjøps- og forbruksanalyse-innhold for Power BI</span><span class="sxs-lookup"><span data-stu-id="45bb8-104">Purchase spend analysis Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="45bb8-105">Dette emnet beskriver hva som er inkludert i **Kjøps- og forbruksanalyse**-innhold for Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="45bb8-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="45bb8-106">Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.</span><span class="sxs-lookup"><span data-stu-id="45bb8-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 01/17/2018
 </tbody>
 </table>
 
-<span data-ttu-id="45bb8-160">\\* Innkjøp i år og forrige år. og vekst etter innkjøpskategori</span><span class="sxs-lookup"><span data-stu-id="45bb8-160">\\* Purchase this year and last year, and growth by procurement category</span></span>
+<span data-ttu-id="45bb8-160">\* Innkjøp i år og forrige år. og vekst etter innkjøpskategori</span><span class="sxs-lookup"><span data-stu-id="45bb8-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
 ## <a name="data-model-and-entities"></a><span data-ttu-id="45bb8-161">Datamodell og enheter</span><span class="sxs-lookup"><span data-stu-id="45bb8-161">Data model and entities</span></span>
 <span data-ttu-id="45bb8-162">Følgende data brukes til å fylle ut rapportsidene i **Kjøps- og forbruksanalyse**-innholdet for Power BI.</span><span class="sxs-lookup"><span data-stu-id="45bb8-162">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="45bb8-163">Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret.</span><span class="sxs-lookup"><span data-stu-id="45bb8-163">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="45bb8-164">Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse.</span><span class="sxs-lookup"><span data-stu-id="45bb8-164">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="45bb8-165">Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="45bb8-165">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>

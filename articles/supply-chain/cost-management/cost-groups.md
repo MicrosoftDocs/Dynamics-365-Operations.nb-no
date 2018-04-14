@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 750853de01213187b4df273087c53321abe25d5d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-groups"></a><span data-ttu-id="2fdb8-104">Kostgrupper</span><span class="sxs-lookup"><span data-stu-id="2fdb8-104">Cost groups</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2fdb8-105">Kostgrupper gir grunnlaget for segmentering og analyse av kostbidrag i de beregnede kostnadene for en produsert vare, for eksempel kostbidragene for materialer, arbeidskraft og indirekte kostnader.</span><span class="sxs-lookup"><span data-stu-id="2fdb8-105">Cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost, such as the cost contributions for material, labor, and overhead.</span></span> <span data-ttu-id="2fdb8-106">Begrepet "kostgruppesegmentering" har flere synonymer innenfor produksjonsindustrien, for eksempel kostnadsspesifikasjon, nedbryting av kostnader eller kostnadsklassifisering.</span><span class="sxs-lookup"><span data-stu-id="2fdb8-106">Cost group segmentation has several synonyms within manufacturing environments, such as cost breakdown, cost decomposition, or cost classification.</span></span> 
 

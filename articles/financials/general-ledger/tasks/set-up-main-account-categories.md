@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 94e17d7cbcc8f826e806a8d4bc026a9d7844e910
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d67ca0f21388630ca7875b0cb647195a8344b80e
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-main-account-categories"></a><span data-ttu-id="8abb1-103">Definere hovedkontokategorier</span><span class="sxs-lookup"><span data-stu-id="8abb1-103">Set up main account categories</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8abb1-104">Hovedkontokategorier brukes til standardrapportene i finansiell rapportering og Power BI.</span><span class="sxs-lookup"><span data-stu-id="8abb1-104">Main account categories are used for the default reports in financial reporting and in Power BI.</span></span> <span data-ttu-id="8abb1-105">Hovedkontokategorier som opprettes som standard kan gis nytt navn, men ikke slettes.</span><span class="sxs-lookup"><span data-stu-id="8abb1-105">Main account categories that are created by default can be renamed but not deleted.</span></span> <span data-ttu-id="8abb1-106">Flere kontokategorier kan opprettes og brukes for rapportering og analyse.</span><span class="sxs-lookup"><span data-stu-id="8abb1-106">Additional account categories can be created and used for reporting and analysis purposes.</span></span> <span data-ttu-id="8abb1-107">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="8abb1-107">This task uses the USMF demo company.</span></span>
 

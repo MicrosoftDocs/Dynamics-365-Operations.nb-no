@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: c80c8316cc58bda23d79ee7804762539750f57a1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8855d695e799f89375cf2db990160936e09c569d
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a><span data-ttu-id="0c03e-104">Raddefinisjoner i Utforming av finansrapport</span><span class="sxs-lookup"><span data-stu-id="0c03e-104">Row definitions in financial report designer</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0c03e-105">En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport.</span><span class="sxs-lookup"><span data-stu-id="0c03e-105">A row definition is a report component, or building block, that specifies the contents of each row on a financial report.</span></span> <span data-ttu-id="0c03e-106">En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.</span><span class="sxs-lookup"><span data-stu-id="0c03e-106">A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.</span></span>
 

@@ -19,21 +19,21 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 034e25eea8a4db3126f7f33ae0712b6f30606651
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a><span data-ttu-id="d4706-104">Publisere journallinjer og dokumenter fra Excel</span><span class="sxs-lookup"><span data-stu-id="d4706-104">Publish journal lines and documents from Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d4706-105">Dette emnet forklarer hvordan du angir og publiserer linjer for økonomijournaler fra Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d4706-105">This topic explains how to enter and publish lines for general journals from Microsoft Excel.</span></span> <span data-ttu-id="d4706-106">Det inneholder informasjon om de ulike malene du kan bruke, avhengig av hvilken type transaksjoner som du skriver inn.</span><span class="sxs-lookup"><span data-stu-id="d4706-106">It includes information about the various templates that you can use, depending on the type of transactions that you're entering.</span></span>
 
 <span data-ttu-id="d4706-107">Brukere kan angi og publisere linjer for finansjournaler fra Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d4706-107">Users can enter and publish lines for financial journals from Microsoft Excel.</span></span> <span data-ttu-id="d4706-108">Når en bruker oppretter en journal, viser knappen **Åpne linjer i Excel** malene som er tilgjengelige.</span><span class="sxs-lookup"><span data-stu-id="d4706-108">After a user creates a journal, the **Open lines in Excel** button displays the templates that are available.</span></span> <span data-ttu-id="d4706-109">Malene er utformet for å støtte bestemte scenarier, men ikke alle kombinasjoner av kontotypen støttes i journalen.</span><span class="sxs-lookup"><span data-stu-id="d4706-109">Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal.</span></span> <span data-ttu-id="d4706-110">Tabellen nedenfor viser malene som er tilgjengelige og kontotypene som de støtter.</span><span class="sxs-lookup"><span data-stu-id="d4706-110">The following table shows the templates that are available and the account types which they support.</span></span>
+
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <span data-ttu-id="d4706-111">**Mal**</span><span class="sxs-lookup"><span data-stu-id="d4706-111">**Template**</span></span>             | <span data-ttu-id="d4706-112">**Støttede kontotyper**</span><span class="sxs-lookup"><span data-stu-id="d4706-112">**Supported account types**</span></span>                                                                                             | <span data-ttu-id="d4706-113">**Få tilgang til malen**</span><span class="sxs-lookup"><span data-stu-id="d4706-113">**How to access the template**</span></span>                                                          |

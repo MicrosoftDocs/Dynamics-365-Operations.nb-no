@@ -16,16 +16,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9bf83269c34133509734691fd018ee703c40626
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6cc5c5b8dc60e3807a535b0d40e68200fb4da165
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a><span data-ttu-id="0134d-103">Definere validering av leverandørfakturakontroll</span><span class="sxs-lookup"><span data-stu-id="0134d-103">Set up accounts payable invoice matching validation</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0134d-104">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="0134d-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="0134d-105">Rollen regnskapssjef leverandørreskontro eller regnskapssjef kan utføre disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="0134d-105">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="0134d-106">Før du begynner, må du kontrollere at konfigurasjonsnøkkelen for fakturasamsvar er valgt.</span><span class="sxs-lookup"><span data-stu-id="0134d-106">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> <span data-ttu-id="0134d-107">Hvis den juridiske enheten sporer utgifter, for eksempel frakt, ved hjelp av tillegg, må du kontrollere at konfigurasjonsnøkkelen for Tillegg er valgt.</span><span class="sxs-lookup"><span data-stu-id="0134d-107">If your legal entity tracks expenses, such as freight, by using charges, make sure that the Charges configuration key is selected.</span></span>  <span data-ttu-id="0134d-108">Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.</span><span class="sxs-lookup"><span data-stu-id="0134d-108">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</span></span> <span data-ttu-id="0134d-109">Forskjeller mellom disse dokumentene kalles samsvarende avvik.</span><span class="sxs-lookup"><span data-stu-id="0134d-109">Differences among these documents are called matching discrepancies.</span></span> <span data-ttu-id="0134d-110">Samsvarende avvik blir sammenlignet med toleransen som er angitt.</span><span class="sxs-lookup"><span data-stu-id="0134d-110">Matching discrepancies are compared with the tolerances that are specified.</span></span> <span data-ttu-id="0134d-111">Hvis et samsvarende avvik er større enn toleranseprosenten eller -beløpet, vises ikoner for samsvarsavvik i skjemaet Leverandørfaktura og i skjemaet Fakturakontrolldetaljer.</span><span class="sxs-lookup"><span data-stu-id="0134d-111">If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed in the Vendor invoice form and in the Invoice matching details form.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3f14b07ab9cd14666cf19d94698f2f1ae132ee3f
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="4f34f-103">Administrere en datakilde for kostnadsregnskapsfinansen</span><span class="sxs-lookup"><span data-stu-id="4f34f-103">Manage a data source for the cost accounting ledger</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4f34f-104">Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="4f34f-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="4f34f-105">Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter".</span><span class="sxs-lookup"><span data-stu-id="4f34f-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="4f34f-106">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="4f34f-106">This recording uses the USP2 demo data company.</span></span>
 

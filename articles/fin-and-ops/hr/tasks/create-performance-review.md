@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 21366e82be8ddfcc608164c0a4a98e321799a67c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4675a78b47ae922a570e4975c2cce68ac0d76d5a
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-performance-review"></a><span data-ttu-id="de6bf-103">Opprette en prestasjonsvurdering</span><span class="sxs-lookup"><span data-stu-id="de6bf-103">Create a performance review</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="de6bf-104">Denne fremgangsmåten viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.</span><span class="sxs-lookup"><span data-stu-id="de6bf-104">This procedure shows how to create a performance review and describes the purpose for each section of the review.</span></span> <span data-ttu-id="de6bf-105">Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="de6bf-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="de6bf-106">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="de6bf-106">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 

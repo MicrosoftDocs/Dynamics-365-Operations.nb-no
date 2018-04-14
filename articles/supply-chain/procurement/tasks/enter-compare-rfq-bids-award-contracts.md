@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5dea9d7bfb1bf7b11f6c49cccaab1b73d4e58d16
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 140d9f7a48b6cb06f02d3c4e6440d0a99a9d8161
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a><span data-ttu-id="34081-103">Angi og sammenligne tilbudsforespørsler og inngå kontrakter</span><span class="sxs-lookup"><span data-stu-id="34081-103">Enter and compare RFQ bids and award contracts</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="34081-104">Denne fremgangsmåten viser hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir budet til én av leverandørene.</span><span class="sxs-lookup"><span data-stu-id="34081-104">This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors.</span></span> <span data-ttu-id="34081-105">Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="34081-105">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="34081-106">Før du begynner, må du ha en tilbudsforespørsel med to linjer som er sendt til minst to leverandører.</span><span class="sxs-lookup"><span data-stu-id="34081-106">Before you start, you must have an RFQ with two lines that has been sent to at least two vendors.</span></span> <span data-ttu-id="34081-107">Du kan kjøre prosedyren "Opprett en tilbudsforespørsel" for å opprette dette.</span><span class="sxs-lookup"><span data-stu-id="34081-107">You can run the "Create a request for quotation" procedure as a prerequisite to create this.</span></span> <span data-ttu-id="34081-108">Du må ha definert poengsumkriterier før du kan kjøre denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="34081-108">You need to have set up scoring criteria before you can run this procedure.</span></span>
 

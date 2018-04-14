@@ -19,17 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bf9df2a31c758ba6b63ac7952e00065df04552dc
-ms.openlocfilehash: aaff0c1d71fcf2656d5d6e76a2bf4b7b3a699281
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dfb8d101c69e9bfdb918dca5cf48da1f6d2564b8
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="service-agreements"></a><span data-ttu-id="fa253-103">Serviceavtaler</span><span class="sxs-lookup"><span data-stu-id="fa253-103">Service agreements</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fa253-104">Serviceavtaler lar deg definere ressursene som brukes ved et vanlig servicebesøk, og hvordan disse ressursene skal faktureres til kunden.</span><span class="sxs-lookup"><span data-stu-id="fa253-104">Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.</span></span>
 

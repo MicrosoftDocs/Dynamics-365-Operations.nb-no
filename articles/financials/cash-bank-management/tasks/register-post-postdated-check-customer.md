@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d1e3df13c644ffa39621e73d1c907084bbd7ba7c
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="b481e-103">Registrere og postere en etterdatert sjekk for en kunde</span><span class="sxs-lookup"><span data-stu-id="b481e-103">Register and post a postdated check for a customer</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b481e-104">Du kan registrere informasjon i en etterdatert sjekk fra en kunde.</span><span class="sxs-lookup"><span data-stu-id="b481e-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="b481e-105">Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner.</span><span class="sxs-lookup"><span data-stu-id="b481e-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="b481e-106">Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde: • Definer etterdaterte sjekker på siden Kontant- og bankbehandling • Definer en betalingsmåte for etterdaterte sjekker. Rollen for denne prosedyren er Kasserer.</span><span class="sxs-lookup"><span data-stu-id="b481e-106">Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="b481e-107">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="b481e-107">This procedure uses the USMF demo company.</span></span>
 

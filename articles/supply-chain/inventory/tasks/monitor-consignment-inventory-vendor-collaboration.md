@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: c3df751e179b3741e663fb37e5e8bda955d25a83
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f071b9c2358e6720bd9c69e4ed7be6e059521113
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="31413-103">Overvåke forsendelseslager ved hjelp av leverandørsamarbeid</span><span class="sxs-lookup"><span data-stu-id="31413-103">Monitor consignment inventory using vendor collaboration</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="31413-104">Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se informasjon om lagernivået for produktet som du har plassert i forsendelse hos en kunde.</span><span class="sxs-lookup"><span data-stu-id="31413-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="31413-105">Du kan også overvåke forbruket av lageret når kunden blir eier av lageret.</span><span class="sxs-lookup"><span data-stu-id="31413-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="31413-106">Du kan bruke prosedyren i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="31413-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="31413-107">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="31413-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

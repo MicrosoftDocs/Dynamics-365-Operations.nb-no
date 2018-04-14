@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 67817a3db1aa7d90fd64509b707f075b22010dcb
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="manage-email-templates"></a><span data-ttu-id="408b7-103">Behandle e-postmaler</span><span class="sxs-lookup"><span data-stu-id="408b7-103">Manage email templates</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="408b7-104">Du kan overføre informasjon fra databasen for organisasjonens til bokmerker i et nytt dokument og bruke det i maler som hjelper deg å kommunisere effektivt med søkere og kandidater.</span><span class="sxs-lookup"><span data-stu-id="408b7-104">You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates.</span></span> <span data-ttu-id="408b7-105">For å gjøre dette, oppretter du en mal som inneholder standardtekst og bokmerker der systemdataene skal settes inn.</span><span class="sxs-lookup"><span data-stu-id="408b7-105">To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted.</span></span> <span data-ttu-id="408b7-106">Du kan for eksempel sette inn adresse- og kontaktinformasjon for en søker i et Microsoft Word-dokument som du kan bruke ved kommunikasjon med denne søkeren.</span><span class="sxs-lookup"><span data-stu-id="408b7-106">For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant.</span></span> <span data-ttu-id="408b7-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="408b7-107">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c9b2c03f87bc4d43e6795aa2e1ac378637fe11ce
-ms.openlocfilehash: c3fbaa70ee2ae581e87031e5586b500098793c25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41db5fa77c020c0929868593fec16223676e5e31
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="rename-or-modify-a-project-stage"></a><span data-ttu-id="eb3e1-103">Gi nytt navn til eller endre et prosjektstadium</span><span class="sxs-lookup"><span data-stu-id="eb3e1-103">Rename or modify a project stage</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eb3e1-104">Prosjektstadier kan fungere som en veiledning til prosjektets livssyklus.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-104">Project stages can serve as a guide to the project life cycle.</span></span> <span data-ttu-id="eb3e1-105">Du kan definere prosjektstadiene du vil inkludere i prosjektet, i Prosjektstadium-området på siden Parametere for prosjektstyring og regnskap.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-105">You can define the project stages that you want to include in your projects in the Project stage area in the Project management and accounting parameters page.</span></span> <span data-ttu-id="eb3e1-106">Dynamics 365 for Finance and Operations inneholder fem forhåndsdefinerte prosjektstadier og tre brukerdefinerte prosjektstadier.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-106">Dynamics 365 for Finance and Operations provides five predefined project stages and three user-defined stages.</span></span> <span data-ttu-id="eb3e1-107">Du kan oppdatere navnet på et prosjektstadium som du bruker til å spore fremdriften for prosjekter.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-107">You can update the name of a project stage that you are using to track the progress of projects.</span></span> <span data-ttu-id="eb3e1-108">Du kan også angi navn til brukerdefinert statusnavn.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-108">You can also provide names for user-defined status names.</span></span> <span data-ttu-id="eb3e1-109">Denne oppgaven beskriver hvordan du gi nytt navn til eller endre et prosjektstadium og bruker USSI-datasettet.</span><span class="sxs-lookup"><span data-stu-id="eb3e1-109">This task shows how to rename or modify a project stage and uses the USSI data set.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b06a5385d7c33ddcfe6bfabbfda6a1f7fa99aada
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84e4a714b1233a0fb4ebb04757ba12a5d14d6f44
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-sepa-direct-debit-mandate"></a><span data-ttu-id="48d8d-103">Definere mandat for SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="48d8d-103">Set up SEPA direct debit mandate</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="48d8d-104">Med en SEPA-avtalegiro (Single Euro Payment Area) kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat.</span><span class="sxs-lookup"><span data-stu-id="48d8d-104">A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor.</span></span> <span data-ttu-id="48d8d-105">Mandatet som kunden signerer, tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen.</span><span class="sxs-lookup"><span data-stu-id="48d8d-105">The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection.</span></span> <span data-ttu-id="48d8d-106">Dette emnet er organisert slik at det viser prosessen med å definere SEPA-avtalegiromandater.</span><span class="sxs-lookup"><span data-stu-id="48d8d-106">This topic is organized to show the process for setting up SEPA direct debit mandates.</span></span>
 

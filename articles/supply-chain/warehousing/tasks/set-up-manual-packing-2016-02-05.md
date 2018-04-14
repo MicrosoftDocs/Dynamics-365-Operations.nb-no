@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f992a6a1655cd868d79228c490d59b46bfae715
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 31b689b6c31563f24892525eed5911af3a35bd51
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-manual-packing-february--may-2016-only"></a><span data-ttu-id="940f0-103">Definere manuell pakking (bare februar og mai 2016)</span><span class="sxs-lookup"><span data-stu-id="940f0-103">Set up manual packing (February & May 2016 only)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="940f0-104">Pakkeprosessen lar deg validere og pakke produkter i containere.</span><span class="sxs-lookup"><span data-stu-id="940f0-104">The packing process allows you to validate and pack products into containers.</span></span> <span data-ttu-id="940f0-105">I denne prosessen plukker lagermedarbeidere varer fra lagerlokasjoner og flytter dem på en pakkestasjon der de kontrollerer vareantall og typer og tilordner dem til riktige containere.</span><span class="sxs-lookup"><span data-stu-id="940f0-105">In this process, warehouse workers pick products from the storage locations and move them to a packing station where they check the item quantities and types, and assign them to appropriate containers.</span></span> <span data-ttu-id="940f0-106">Når en container er fullstendig pakket, kan de lukke den og flytte den til utleveringsportene, og produktene er klare til forsendelse.</span><span class="sxs-lookup"><span data-stu-id="940f0-106">When a container is fully packed, they can close it and move it to the outbound docks, and the products are ready to ship.</span></span> <span data-ttu-id="940f0-107">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="940f0-107">This procedure uses the USMF demo company.</span></span>
 

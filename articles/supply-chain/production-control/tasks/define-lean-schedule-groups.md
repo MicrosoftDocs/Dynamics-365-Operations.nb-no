@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3e07fa270b47be3527c572dc53ca30a7bcde5ba6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 50435f858524013c3b0e67939bd29ab18b4272b0
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-lean-schedule-groups"></a><span data-ttu-id="f8e54-103">Definere lean-planleggingsgrupper</span><span class="sxs-lookup"><span data-stu-id="f8e54-103">Define lean schedule groups</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f8e54-104">Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen.</span><span class="sxs-lookup"><span data-stu-id="f8e54-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="f8e54-105">Grupperingen kan utføres som generisk tilknytning per firma eller spesifikk for en arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="f8e54-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="f8e54-106">Hver gruppe har en fargekode tilordnet for visuell indikasjon på listesiden for kanban-planlegging.</span><span class="sxs-lookup"><span data-stu-id="f8e54-106">Each group has a color code assigned for visual indication in the kanban scheduling list page.</span></span> <span data-ttu-id="f8e54-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="f8e54-107">The demo data company used to create this procedure is USMF.</span></span>
 

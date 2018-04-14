@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf3523b2768b197b3c75b9a8490f621eced91a7a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8e35b99a07d4c5eee9fae882b9d7f47ff6d63040
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a><span data-ttu-id="9cb60-103">Konfigurere en godkjenningsprosess i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="9cb60-103">Configure an approval process in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9cb60-104">Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.</span><span class="sxs-lookup"><span data-stu-id="9cb60-104">Use the following procedure to configure the properties of the approval process.</span></span>
 
@@ -136,6 +135,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="set-a-time-limit"></a><span data-ttu-id="9cb60-179">Angi en tidsfrist</span><span class="sxs-lookup"><span data-stu-id="9cb60-179">Set a time limit</span></span>
 <span data-ttu-id="9cb60-180">Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="9cb60-180">Follow these steps if the approval process must be completed in a specific time.</span></span>
+
 | <span data-ttu-id="9cb60-181">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="9cb60-181">**Note**</span></span>                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="9cb60-182">Alternativene du velger her, overstyrer alternativene du valgte i områdene **Tildeling** og **Eskalering** i hvert godkjenningstrinn.</span><span class="sxs-lookup"><span data-stu-id="9cb60-182">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span> |

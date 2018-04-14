@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4c49a9aaae2d6c7324dfb6a13f6079610bb24fa
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a><span data-ttu-id="44629-103">Generer en finansrapport</span><span class="sxs-lookup"><span data-stu-id="44629-103">Generate a financial report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="44629-104">Dette emnet inneholder generell informasjon generering av finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="44629-104">This topic provides information about generating a financial report.</span></span> 
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 12/01/2017
 ## <a name="generate-a-financial-report"></a><span data-ttu-id="44629-115">Generer en finansrapport</span><span class="sxs-lookup"><span data-stu-id="44629-115">Generate a financial report</span></span>
 
 <span data-ttu-id="44629-116">Hvis du vil generere en finansrapport med Microsoft Dynamics 365 for Finance and Operations, kan du gå til **Økonomimodul** > **Forespørsler og rapporter** > **Finansrapporter**.</span><span class="sxs-lookup"><span data-stu-id="44629-116">To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**.</span></span> 
- - <span data-ttu-id="44629-117">Velg en rapport som skal genereres, og klikk på **Generer**.</span><span class="sxs-lookup"><span data-stu-id="44629-117">Select a report to generate and click **Generate**.</span></span> 
- - <span data-ttu-id="44629-118">Fyll ut **Rapportdato**-feltet og klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="44629-118">Fill in the **Report date** field and click **OK**.</span></span>
- 
- <span data-ttu-id="44629-119">Etter at rapporten er generert, vil rapporten være tilgjengelig for visning i **Rapporter**-delen.</span><span class="sxs-lookup"><span data-stu-id="44629-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
- <span data-ttu-id="44629-120">Du kan velge å **vise** eller **slette** rapporten.</span><span class="sxs-lookup"><span data-stu-id="44629-120">You can select to **View** or **Delete** the report.</span></span>
- 
- 
+- <span data-ttu-id="44629-117">Velg en rapport som skal genereres, og klikk på **Generer**.</span><span class="sxs-lookup"><span data-stu-id="44629-117">Select a report to generate and click **Generate**.</span></span> 
+- <span data-ttu-id="44629-118">Fyll ut **Rapportdato**-feltet og klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="44629-118">Fill in the **Report date** field and click **OK**.</span></span>
+
+  <span data-ttu-id="44629-119">Etter at rapporten er generert, vil rapporten være tilgjengelig for visning i **Rapporter**-delen.</span><span class="sxs-lookup"><span data-stu-id="44629-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
+  <span data-ttu-id="44629-120">Du kan velge å **vise** eller **slette** rapporten.</span><span class="sxs-lookup"><span data-stu-id="44629-120">You can select to **View** or **Delete** the report.</span></span>
+
+
 <span data-ttu-id="44629-121">Hvis du vil generere en rapport med **Rapportutforming**, åpner du rapportdefinisjonen og klikker deretter på Generer-knappen på verktøylinjen.</span><span class="sxs-lookup"><span data-stu-id="44629-121">To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar.</span></span> <span data-ttu-id="44629-122">Vinduet Status for rapportkø åpnes og angir plasseringen av rapporten i køen.</span><span class="sxs-lookup"><span data-stu-id="44629-122">The Report Queue Status window will open and indicate the location of your report in the queue.</span></span> <span data-ttu-id="44629-123">Den genererte rapporten åpnes som standard i nettvisningsprogrammet.</span><span class="sxs-lookup"><span data-stu-id="44629-123">By default, the generated report will open in the Web Viewer.</span></span>
 
 > [!NOTE]
@@ -159,7 +158,7 @@ ms.lasthandoff: 12/01/2017
 | <span data-ttu-id="44629-237">Åpne den valgte rapportdefinisjonen</span><span class="sxs-lookup"><span data-stu-id="44629-237">Open the selected report definition</span></span>  | <span data-ttu-id="44629-238">Ctrl+R</span><span class="sxs-lookup"><span data-stu-id="44629-238">Ctrl+R</span></span>                     |
 | <span data-ttu-id="44629-239">Åpne den valgte raddefinisjonen</span><span class="sxs-lookup"><span data-stu-id="44629-239">Open the selected row definition</span></span>     | <span data-ttu-id="44629-240">Ctrl+O</span><span class="sxs-lookup"><span data-stu-id="44629-240">Ctrl+O</span></span>                     |
 
- 
+
 <a name="see-also"></a><span data-ttu-id="44629-241">Se også</span><span class="sxs-lookup"><span data-stu-id="44629-241">See also</span></span>
 --------
 

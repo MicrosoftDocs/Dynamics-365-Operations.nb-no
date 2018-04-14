@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 9e4b0cb73c56e7800bfb90c037687dd4b91887f6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 83b15e89e87d2936cd175e05fc99e7faf4c0467e
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-fraud-alerts"></a><span data-ttu-id="be097-104">Definere svindelvarsler</span><span class="sxs-lookup"><span data-stu-id="be097-104">Set up fraud alerts</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="be097-105">Dette emnet beskriver hvordan du definerer kriterier og regler for å sperre potensielle svindelordrer for videre gjennomgang.</span><span class="sxs-lookup"><span data-stu-id="be097-105">This topic explains how to set up criteria and rules to place potentially fraudulent sales orders on hold for further review.</span></span> <span data-ttu-id="be097-106">Funksjon for svindelgjennomgang brukes til å fastslå gyldigheten av informasjonen i en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="be097-106">Fraud review functionality is used to determine the validity of information in a sales order.</span></span> <span data-ttu-id="be097-107">Hvis informasjonen i salgsordren ser mistenkelig ut basert på organisasjonens svindelvilkår og -regler, kan ordren sperres for videre gjennomgang av en administrator.</span><span class="sxs-lookup"><span data-stu-id="be097-107">If the information in the sales order appears to be questionable based on an organization’s fraud criteria and rules, the order may be put on hold for further review by an administrator.</span></span>
 

@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 61c0fde1af125188e1ad1198e00af760256d7cfd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a836ce76f635fd42b0613b2abf131315b19aa5fe
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="safety-stock-fulfillment-for-items"></a><span data-ttu-id="49513-103">Fullføring av sikkerhetslager for varer</span><span class="sxs-lookup"><span data-stu-id="49513-103">Safety stock fulfillment for items</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="49513-104">Sikkerhetslager angir en tilleggsmengde for en vare i lageret for å redusere risikoen for at varen er utsolgt.</span><span class="sxs-lookup"><span data-stu-id="49513-104">Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock.</span></span> <span data-ttu-id="49513-105">Sikkerhetslager brukes som et reservelager i tilfelle salgsordrer kommer inn og leverandøren kan ikke levere flere varer for å oppfylle kundens ønskede leveringsdato.</span><span class="sxs-lookup"><span data-stu-id="49513-105">Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date.</span></span> <span data-ttu-id="49513-106">Når sikkerhetslager brukes til å oppfylle en salgsordre, reduseres sikkerhetslagerantallet.</span><span class="sxs-lookup"><span data-stu-id="49513-106">When safety stock is used to fulfill a sales order, the safety stock will be reduced.</span></span> <span data-ttu-id="49513-107">Du kan bruke hovedplanlegging å flytte beholdningen automatisk tilbake til sikkerhetsnivået.</span><span class="sxs-lookup"><span data-stu-id="49513-107">You can use Master planning to automatically bring the inventory back to the safety level.</span></span>    
 

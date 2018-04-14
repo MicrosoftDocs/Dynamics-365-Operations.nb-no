@@ -19,17 +19,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a290f6f453d8440d6e68a13915339d3da31d959a
-ms.openlocfilehash: 47c97ee32c345f584c8efa7a00b7ff3ec4b70475
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e04926abca47444d06708f34278eb02bb1640cd6
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-your-organizational-hierarchy"></a><span data-ttu-id="8253e-103">Planlegge organisasjonshierarkiet</span><span class="sxs-lookup"><span data-stu-id="8253e-103">Plan your organizational hierarchy</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8253e-104">Før du definerer organisasjoner og organisasjonshierarkier i Microsoft Dynamics 365 for Finance and Operations, må du passe på å planlegge hvordan virksomheten skal modelleres.</span><span class="sxs-lookup"><span data-stu-id="8253e-104">Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled.</span></span> <span data-ttu-id="8253e-105">Organisasjonsmodellen har en betydelig innvirkning på implementeringen av Finance and Operations og på forretningsprosesser.</span><span class="sxs-lookup"><span data-stu-id="8253e-105">The organization model has a significant effect on the implementation of Finance and Operations and on business processes.</span></span> 
 
@@ -158,7 +157,7 @@ ms.lasthandoff: 04/03/2018
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a><span data-ttu-id="8253e-254">Hvis organisasjonen er modellert som en driftsenhet</span><span class="sxs-lookup"><span data-stu-id="8253e-254">If the organization is modeled as an operating unit</span></span> 
 <span data-ttu-id="8253e-255">Hvis lover og regnskapspraksis er de samme i landene/områdene der organisasjonene dine er, kan du bruke ett sett med årsavslutningsprosedyrer.</span><span class="sxs-lookup"><span data-stu-id="8253e-255">If laws and accounting practices are the same among the countries/regions where your organizations are located, you may use a single set of year-end procedures.</span></span> <span data-ttu-id="8253e-256">Dette betyr at du kan utforme organisasjonene som driftsenheter.</span><span class="sxs-lookup"><span data-stu-id="8253e-256">This means that you can model the organizations as operating units.</span></span> <span data-ttu-id="8253e-257">Alle driftsenheter må bruke samme prosedyre for årsavslutning.</span><span class="sxs-lookup"><span data-stu-id="8253e-257">All operating units must use the same year-end closing procedure.</span></span> 
-   
+
 ### <a name="number-sequences"></a><span data-ttu-id="8253e-258">Nummerserier</span><span class="sxs-lookup"><span data-stu-id="8253e-258">Number sequences</span></span>
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a><span data-ttu-id="8253e-259">Hvis organisasjonen er modellert som en juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="8253e-259">If the organization is modeled as a legal entity</span></span>
 <span data-ttu-id="8253e-260">Nummerserier for noen referanser kan konfigureres per juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="8253e-260">Number sequences for some references can be set up per legal entity.</span></span> <span data-ttu-id="8253e-261">Noen nummerserier kan deles.</span><span class="sxs-lookup"><span data-stu-id="8253e-261">Some number sequences can be shared.</span></span> 

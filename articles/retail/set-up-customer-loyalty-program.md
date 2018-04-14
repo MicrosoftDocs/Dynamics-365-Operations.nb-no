@@ -20,17 +20,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 0c469d09905bd3afec09d08f1f4248edcc56f10f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fefd2578d4bc0b350224bc2a55fdcdb3fb461c0d
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-a-customer-loyalty-program"></a><span data-ttu-id="7ef1c-105">Konfigurere et fordelsprogram for kunde</span><span class="sxs-lookup"><span data-stu-id="7ef1c-105">Set up a customer loyalty program</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="7ef1c-106">Denne artikkelen beskriver hvordan du setter opp et fordelsprogram.</span><span class="sxs-lookup"><span data-stu-id="7ef1c-106">This article describes how to set up a loyalty program.</span></span> <span data-ttu-id="7ef1c-107">Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine.</span><span class="sxs-lookup"><span data-stu-id="7ef1c-107">Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores.</span></span> <span data-ttu-id="7ef1c-108">I Microsoft Dynamics 365 for Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal.</span><span class="sxs-lookup"><span data-stu-id="7ef1c-108">In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.</span></span>
 

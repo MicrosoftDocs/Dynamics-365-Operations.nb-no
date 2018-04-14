@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="d273a-103">Hurtigtaster</span><span class="sxs-lookup"><span data-stu-id="d273a-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d273a-104">Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d273a-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="d273a-111">Handlingssnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="d273a-112">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-112">**To do this**</span></span>                                    | <span data-ttu-id="d273a-113">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-134">Vise tilgjengelige snarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-134">View currently available shortcuts</span></span>                | <span data-ttu-id="d273a-135">Alt+Skift+K</span><span class="sxs-lookup"><span data-stu-id="d273a-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="d273a-136">Snarveier for datovelger</span><span class="sxs-lookup"><span data-stu-id="d273a-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="d273a-137">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-137">**To do this**</span></span>                        | <span data-ttu-id="d273a-138">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-153">Velg aldri (eller maks. dato)</span><span class="sxs-lookup"><span data-stu-id="d273a-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="d273a-154">N</span><span class="sxs-lookup"><span data-stu-id="d273a-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="d273a-155">Faktabokssnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="d273a-156">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-156">**To do this**</span></span>                                                                  | <span data-ttu-id="d273a-157">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-168">Skjul gjeldende faktaboks</span><span class="sxs-lookup"><span data-stu-id="d273a-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="d273a-169">Alt+0</span><span class="sxs-lookup"><span data-stu-id="d273a-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="d273a-170">Filtreringssnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="d273a-171">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-171">**To do this**</span></span>                     | <span data-ttu-id="d273a-172">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-181">Åpne avansert filtrering/sortering</span><span class="sxs-lookup"><span data-stu-id="d273a-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="d273a-182">Ctrl+Skift+F3</span><span class="sxs-lookup"><span data-stu-id="d273a-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="d273a-183">Skjemasnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="d273a-184">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-184">**To do this**</span></span>                                      | <span data-ttu-id="d273a-185">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-216">Lukk skjemaet og forkast eventuelle ulagrede endringer</span><span class="sxs-lookup"><span data-stu-id="d273a-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="d273a-217">Alt+Skift+Q</span><span class="sxs-lookup"><span data-stu-id="d273a-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="d273a-218">Snarveier for skjemanavigasjon</span><span class="sxs-lookup"><span data-stu-id="d273a-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="d273a-219">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-219">**To do this**</span></span>                                      | <span data-ttu-id="d273a-220">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-245">Bytt til linjevisning</span><span class="sxs-lookup"><span data-stu-id="d273a-245">Switch to lines view</span></span>                                | <span data-ttu-id="d273a-246">Ctrl+Skift+L</span><span class="sxs-lookup"><span data-stu-id="d273a-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="d273a-247">Rutenettsnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="d273a-248">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="d273a-249">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-283">Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)</span><span class="sxs-lookup"><span data-stu-id="d273a-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="d273a-284">Enter</span><span class="sxs-lookup"><span data-stu-id="d273a-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="d273a-285">Snarveier for inndatakontroller</span><span class="sxs-lookup"><span data-stu-id="d273a-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="d273a-286">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-286">**To do this**</span></span>                                                               | <span data-ttu-id="d273a-287">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-306">Bytt fokus mellom tekstområdet og verktøylinjen i en HTML-editorkontroll</span><span class="sxs-lookup"><span data-stu-id="d273a-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="d273a-307">F6</span><span class="sxs-lookup"><span data-stu-id="d273a-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="d273a-308">Meldingssnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="d273a-309">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-309">**To do this**</span></span>           | <span data-ttu-id="d273a-310">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-313">Gå til meldingslinjen</span><span class="sxs-lookup"><span data-stu-id="d273a-313">Go to the Message Bar</span></span>    | <span data-ttu-id="d273a-314">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="d273a-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="d273a-315">Navigasjonssnarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="d273a-316">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-316">**To do this**</span></span>                                                                | <span data-ttu-id="d273a-317">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-348">Flytt til Faktaboks-rute (som kan omfatte å åpne den)</span><span class="sxs-lookup"><span data-stu-id="d273a-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="d273a-349">Alt+M,B eller Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="d273a-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="d273a-350">Personlige snarveier</span><span class="sxs-lookup"><span data-stu-id="d273a-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="d273a-351">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="d273a-352">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d273a-397">Avslutt personliggjøring (når du er i personliggjøringsmodus)</span><span class="sxs-lookup"><span data-stu-id="d273a-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="d273a-398">ESC</span><span class="sxs-lookup"><span data-stu-id="d273a-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="d273a-399">Snarveier for segmenterte oppføringer</span><span class="sxs-lookup"><span data-stu-id="d273a-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="d273a-400">**Hvis du vil gjøre dette**</span><span class="sxs-lookup"><span data-stu-id="d273a-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="d273a-401">**Trykk**</span><span class="sxs-lookup"><span data-stu-id="d273a-401">**Press**</span></span>                        |

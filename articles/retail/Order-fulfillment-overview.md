@@ -18,16 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1ac73b50c6051ba7d3b96ae49cb7e33cf436ba9e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5ab58a7e977b5a23825c60a53c8064c831bae512
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a><span data-ttu-id="bc376-103">Butikkordreoppfyllelse</span><span class="sxs-lookup"><span data-stu-id="bc376-103">Store order fulfillment</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="bc376-104">Mange forhandlere vil optimalisere ordreoppfyllelsen ved å la butikker oppfylle ordrer.</span><span class="sxs-lookup"><span data-stu-id="bc376-104">Many retailers would like to optimize order fulfillment by enabling stores to fill orders.</span></span> <span data-ttu-id="bc376-105">Ordreoppfyllelse på butikknivå kan bidra til å forenkle scenarier med for store lagre for en bestemt butikk, eller det kan være nødvendig med hensyn til logistikk i tilfeller der en butikk har ekstra kapasitet eller befinner seg nærmere avstand for levering til kunden.</span><span class="sxs-lookup"><span data-stu-id="bc376-105">Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer.</span></span> <span data-ttu-id="bc376-106">For å løse dette behovet, er en enhetlig ordreoppfyllelsesoperasjon tilgjengelig på salgsstedet.</span><span class="sxs-lookup"><span data-stu-id="bc376-106">To address this need, a unified order fulfillment operation is available at the point of sale.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5c5fbe1791161b8d06cd1539b1717ba8690a8e05
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 21efce9bb38aa5fc93d51bf34c1fe41e89513552
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-and-process-recurring-invoices"></a><span data-ttu-id="6f744-104">Definere og behandle gjentakende fakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-104">Set up and process recurring invoices</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6f744-105">Denne artikkelen forklarer hvordan du konfigurerer og behandler gjentakende fakturaer.</span><span class="sxs-lookup"><span data-stu-id="6f744-105">This article explains how to set up and process recurring invoices.</span></span> <span data-ttu-id="6f744-106">Du kan bruke gjentakende fakturaer hvis du må fakturere kunder for det samme beløpet regelmessig.</span><span class="sxs-lookup"><span data-stu-id="6f744-106">You can use recurring invoices if you must invoice customers for the same amount on a regular basis.</span></span>
 

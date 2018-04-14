@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fa02b4fb6f309e55d0c74e477952e928ad8dfb12
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7fd7a839f5b9b3a80ad944a66cc75232a336c48f
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="search-for-vendors"></a><span data-ttu-id="00d5b-103">Søke etter leverandører</span><span class="sxs-lookup"><span data-stu-id="00d5b-103">Search for vendors</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="00d5b-104">Lær å søke etter leverandører basert på bestemte vilkår.</span><span class="sxs-lookup"><span data-stu-id="00d5b-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="00d5b-105">Dette eksemplet viser hvordan du kan søke etter leverandører som er godkjent for en bestemt innkjøpskategori og har sin primæradresse i et bestemt land.</span><span class="sxs-lookup"><span data-stu-id="00d5b-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="00d5b-106">Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="00d5b-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="00d5b-107">Denne oppgaven vil vanligvis utføres av en innkjøpsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="00d5b-107">This task would usually be carried out by a procurement professional.</span></span>
 

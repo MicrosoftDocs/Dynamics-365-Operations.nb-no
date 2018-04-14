@@ -18,15 +18,15 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4ea1e88c30c4139e207a257fef678e3669da211e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 526799368cbf32a0c5bdbd42767095f1b2c1f6b1
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="cash-registers-for-norway"></a><span data-ttu-id="cc332-104">Kassaapparater for Norge</span><span class="sxs-lookup"><span data-stu-id="cc332-104">Cash registers for Norway</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cc332-105">Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="cc332-105">This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="cc332-106">Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen.</span><span class="sxs-lookup"><span data-stu-id="cc332-106">It also provides guidelines for setting up the functionality.</span></span> <span data-ttu-id="cc332-107">Funksjonaliteten består av følgende deler:</span><span class="sxs-lookup"><span data-stu-id="cc332-107">The functionality consists of the following parts:</span></span>
 
