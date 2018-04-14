@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Opprette et masseansettelsesprosjekt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dette hjelper med å definere et masseansettelsesprosjekt. En bemanningskonsulent kan bruke masseansettelsesprosjekter til å opprette flere stillinger og ansette en rekke arbeidere i disse stillingene. Hvis du vil gjør dette, kan du gå til Personale > Rekruttering > Masseansettelsesprosjekter. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

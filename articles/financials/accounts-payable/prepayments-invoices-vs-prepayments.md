@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Med den ene metoden oppretter du en forskuddsbetalt faktura som er knyttet til en bestilling. Med den andre metoden oppretter du journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
 
 Organisasjoner kan utstede forskuddsbetalinger til leverandører for varer eller tjenester før varene eller tjenestene er oppfylt. To metoder kan brukes til å utstede forskuddsbetalinger til leverandører. Hvis du vil redusere risikoen, kan du spore forskuddsbetalinger ved å definere forskuddsbetalingen på en bestilling. For denne metoden må du opprette en forskuddsbetalt faktura som er knyttet til en bestilling. Denne metoden kalles forskuddsfakturering. Organisasjoner som ikke vil følge opp forskuddsbetalinger så tett, eller ikke mottar en forskuddsbetalt faktura fra leverandøren, kan bruke journalbilag for forskuddsbetaling i stedet for faktureringsmåten forskuddsbetaling. Du kan opprette journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling. Du kan ikke spore hvilke forskuddsbetalinger til en leverandør som gjøres mot hvilke bestillinger for denne metoden. Du kan imidlertid merke en postert forskuddsbetaling for utligning mot en bestilling.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Når du bruker forskuddsfakturering i forhold til forskuddsbetalinger
+
 | Forskuddsfakturering                                                                | Forskuddsbetalinger                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definer en verdi for forskuddsbetaling på bestillingen.                                    | Ingen verdi for forskuddsbetaling er definert på bestillingen.                    |

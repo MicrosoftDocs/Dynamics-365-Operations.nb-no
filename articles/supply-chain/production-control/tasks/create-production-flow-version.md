@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Opprette en produksjonsflytversjon
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For denne prosedyren må produksjonsparameterne for lean manufacturing og måleenheter for klassen Tid defineres. Du må også definere en verdistrøm og en produksjonsgruppe. Hvis du vil vite mer om produksjonsflyter og aktiviteter i lean manufacturing, kan du se i hvitebøkene om Lean manufacturing for Microsoft Dynamics AX. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

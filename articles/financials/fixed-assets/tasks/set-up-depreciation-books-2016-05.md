@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-depreciation-books"></a>Definere avskrivningstablåer  
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen oppretter et nytt avskrivningstablå og knytter den til en anleggsmiddelgruppe.  Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
 

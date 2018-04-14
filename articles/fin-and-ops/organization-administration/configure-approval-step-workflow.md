@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurere et godkjenningstrinn i en arbeidsflyt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.
 
@@ -145,9 +144,9 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     Hvis brukeren ikke gjør noe med dokumentet innenfor den tillatte tiden, er dokumentet forfalt. Et dokument som er forfalt, videresendes, basert på alternativene du velger i **Eskalering**-området på siden.
 4.  Hvis du har tilordnet godkjenningstrinnet til flere brukere eller en gruppe brukere i **Fullføringspolicy**-kategorien, velger du ett av følgende alternativer:
     -   **Én enkelt godkjenner** – Handlingen som utføres på dokumentet, bestemmes av den første personen som svarer. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn er den første personen som svarer på dokumentet, brukes handlingen hun bestemmer seg for, på dokumentet. Hvis Jorunn avviser dokumentet, avvises det og sendes tilbake til Erik. Hvis Jorunn godkjenner dokumentet, sendes det til Karen for godkjenning. 
-    
+
     ![Arbeidsflyt som har en godkjenningsprosess](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Flertallet av godkjennere** – Handlingen som skal brukes på dokumentet, fastsettes når de fleste av godkjennerne svarer. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn og Johanne er de første to godkjennerne som svarer, utføres handlingen de gjør, på dokumentet.
         -   Hvis Jorunn godkjenner dokumentet, men Johanne avviser det, avvises dokumentet og det sendes tilbake til Erik.
         -   Hvis både Jorunn og Johanne godkjenner dokumentet, sendes det til Karen til godkjenning.

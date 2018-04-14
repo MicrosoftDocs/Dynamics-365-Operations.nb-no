@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Power BI-innhold om ansattutvikling
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver Power BI-innholdet om **ansattutvikling**.
 
@@ -45,6 +45,7 @@ Rapporter som er inkludert i Power BI-innholdet **Ansattutvikling**, har både d
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
+
 | Enhet                   | Innhold                                                                                                   | Relasjoner med andre enheter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Kalenderforskyvning          | Kalenderforskyvninger for å dele opp rapporter                                                                          | Tidligere stillingstilordning, stillingstrend, trend for ansatt, fratrådt ansatt 

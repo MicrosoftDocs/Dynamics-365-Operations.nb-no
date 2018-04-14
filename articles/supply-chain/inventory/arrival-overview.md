@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Ankomstoversikt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer.
 

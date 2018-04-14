@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Opprette en verdistrøm
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Verdistrømmer er driftsenheter som grupperer én eller flere produksjonsflyter. Hvis du vil definere en produksjonsflyt, må du først definere en verdistrøm.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering for å hente data til Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst av Finance and Operations til Power BI-tjenester. Dette emnet bruker for eksempel Intrastat-transaksjoner som forretningsdata som må overføres. Kartvisningen for Power BI bruker disse Intrastat-transaksjonsdataene til å presentere en visning for analyse av firmaets aktiviteter for import og eksport i Power BI-rapporten.
 
@@ -118,9 +117,9 @@ Klikk **innstillinger** for den nye målposten. Følg deretter fremgangsmåten n
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Opprette en Power BI-rapport ved hjelp av det nye datasettet
 1. Klikk på Power BI-datasettet **Import- og eksportdetaljer** som du opprettet. 
 2. Konfigurer visningen. Velg for eksempel visningen **Fylt kart**, og konfigurere den på følgende måte:
- -   Tilordne **Opprinnelsesland**-datasettfeltet til **Plassering**-feltet for kartvisningen.
- -   Tilordne **Mengde**-datasettfeltet til **Fargemetning**-feltet for kartvisningen.
- -   Legg til datasettfeltene **Aktivitet** og **År** i **Filtre**-feltsamlingen for kartvisningen.
+   -   Tilordne **Opprinnelsesland**-datasettfeltet til **Plassering**-feltet for kartvisningen.
+   -   Tilordne **Mengde**-datasettfeltet til **Fargemetning**-feltet for kartvisningen.
+   -   Legg til datasettfeltene **Aktivitet** og **År** i **Filtre**-feltsamlingen for kartvisningen.
 
 3. Lagre Power BI-rapporten som **Rapport for import- og eksportdetaljer**. [![Rapporten Import- og eksportdetaljer](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Vær oppmerksom på at kartet viser landene/områdene som er nevnt i Excel-filen (Østerrike og Sveits i dette eksemplet). Disse landene/områdene er fargelagt for å vise størrelsen på andelen av fakturerte beløp for hver av dem. 
 4. Oppdater listen over Intrastat-transaksjoner. Eksporttransaksjonen som stammer fra Italia legges til. [![Listen Intrastat-transaksjoner](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

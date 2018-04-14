@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Utlånsvarer er poster som hjelper ledere med å spore fysiske varer som firmaet låner ut til arbeidere. 
 
@@ -51,7 +50,7 @@ Ledere kan vise utlånte varer til sine direkte underordnede. De kan også få t
 
 Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. Deretter kan du enten slette varen eller beholde den i oversikten, og endre beskrivelsen for å vise at varen ikke er tilgjengelig.
 
- 
+
 <a name="see-also"></a>Se også
 --------
 

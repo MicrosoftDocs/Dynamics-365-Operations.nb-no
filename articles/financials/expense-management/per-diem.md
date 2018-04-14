@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Kostgodtgjørelsesregler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En *kostgodtgjørelse* er en godtgjørelse som betales til en arbeider som er på forretningsreise. I delen Reiseregning og utlegg kan du opprette kostgodtgjørelsesregler som skal gjelde i forskjellige reisesituasjoner. Kostgodtgjørelsessatser kan være basert på tid på året, reisemål eller begge deler. Når du oppretter en kostgodtgjørelsesregel, kan du angi at en prosentandel av kostgodtgjørelsessatsen skal holdes tilbake hvis en arbeider mottar gratis måltider eller tjenester. Du kan også definere et minste eller største antall timer som avgjør hvilken kostgodtgjørelsessats som skal brukes når ansatte er på reise.
 

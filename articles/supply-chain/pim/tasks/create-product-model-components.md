@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Opprette produktmodellkomponenter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen. Komponentene må opprettes før en produktmodell kan bygges. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

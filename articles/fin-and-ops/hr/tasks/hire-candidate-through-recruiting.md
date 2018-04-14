@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Ansette en kandidat via rekruttering
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dette gjør det mulig for en bemanningskonsulent å ansette en søker som sendte en søknad ved hjelp av et bestemt rekrutteringsprosjekt. Når du ansetter en søker gjennom et rekrutteringsprosjekt, opprettes en ny arbeiderpost, og søkerens post får statusen Ansatt. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Hvis du vil fullføre denne prosedyren, kan du gå til Personale > Rekruttering > Søknader > Søknader 
 

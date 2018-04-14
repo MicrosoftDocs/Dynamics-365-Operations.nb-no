@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Utvide funksjonaliteten i Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Hvis du har opprettet en Microsoft PowerApps, kan du starte disse programmene fra koblinger i Microsoft Dynamics 365 for Talent. Hvis du vil konfigurere tilgang til programmene, må du angi informasjon i Talent på en konfigurasjonsside som kan åpnes fra **Systemadministrasjon**-arbeidsområdet.
 
@@ -38,10 +38,10 @@ Følgende informasjon angis på denne siden:
 > - Et beskrivende navn eller en identifikator for hver PowerApps-applikasjon.
 > - En unik identifikator (GUID) for hvert program som du legger til på en Talent-side. Program-ID-en er tilgjengelig på PowerApps-området [powerapps.com](http://powerapps.com/). 
 > - Siden som brukere kan åpne et program eller en rapport fra. Ikke alle Talent-sider støtter innebygde PowerApps- og Power BI-rapporter. 
-
- > [!NOTE]
- >  Angi det interne navnet på siden, i stedet for visningsnavnet som vises øverst på siden. Hvis du vil finne det interne navnet, åpner du siden som du trenger det interne navnet for, og høyreklikker hvor som helst på siden. Når menyen åpnes, holder du pekeren over **Skjemainformasjon**-elementet. Det interne skjemanavnet vises ved siden av **Skjemainformasjon**-elementet på menyen.
- 
+> 
+> [!NOTE]
+>  Angi det interne navnet på siden, i stedet for visningsnavnet som vises øverst på siden. Hvis du vil finne det interne navnet, åpner du siden som du trenger det interne navnet for, og høyreklikker hvor som helst på siden. Når menyen åpnes, holder du pekeren over **Skjemainformasjon**-elementet. Det interne skjemanavnet vises ved siden av **Skjemainformasjon**-elementet på menyen.
+> 
 > - Angi skjemakontrollen som programmet kan hente kontekstdata fra. Et program kan for eksempel bruke data om en arbeider. Hvis du angir **Arbeider**-siden i **Kontekst**-feltet, åpnes **Arbeider**-siden når du starter programmet. En oppføring i **Kontekstfelt** er valgfritt. 
 > - Angi størrelsen på dialogboksen som PowerApps-programmet skal kjøre. Dialogboksene angis som "små" eller "stor" for å optimalisere brukergrensesnittet når programmet skal kjøre på en telefon eller en større enhet, henholdsvis. 
 

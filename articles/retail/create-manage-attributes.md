@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>Opprett og administrer attributter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikkelen beskriver attributter i Microsoft Dynamics 365 for Retail. Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 
@@ -58,7 +57,7 @@ Attributter lar deg beskrive et produkt og egenskapene ved hjelp av brukerdefine
 
 ## <a name="attribute-type"></a>Attributtype
   [![attributter-fast-kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 Attributter er basert på attributtyper. Attributtyper identifiserer datatypen som kan angis for et bestemt attributt. For øyeblikket støtter Microsoft Dynamics 365 for Retail følgende attributtyper:
 
 -   **Valutaen** – Denne attributtypen støtter valutaverdier. Den kan være bundet (det vil si den kan støtte et verdiområde), eller den være tom.

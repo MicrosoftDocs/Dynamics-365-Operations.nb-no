@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="generate-affordable-care-act-reports"></a>Cenerer rapporter om Affordable Care Act
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Funksjonalitet er tilgjengelig for å hjelpe arbeidsgivere som trenger å spore opplysningene som er rapportert på skjema 1095-B og 1095-C til støtte for **Employer Mandate**-delen av Affordable Care Act. Merk at denne funksjonaliteten bare er aktivert for juridiske personer i USA.
 

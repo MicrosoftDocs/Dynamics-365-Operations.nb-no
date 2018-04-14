@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Opprette en bestilling fra en salgsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en bestilling som er basert på en salgsordre. Produktets antall på bestillingen blir deretter utpekt til å dekke behovet for den opprinnelige salgsordren. Oppfylle salgsbehov på denne måten er et alternativ til en mer omfattende og optimalisert metode for planlegging av distribusjonskrav. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 

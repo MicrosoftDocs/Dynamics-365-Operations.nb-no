@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startside for kostnadsregnskap
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Opplæringskart 
 
@@ -37,6 +37,7 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 [![Opplæringskart for kostnadsregnskap](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Hurtigkoblinger
+
 |      |   |
 |------|---|
 |  [Konfigurere grunnenheter (e-læring)](https://mbspartner.microsoft.com/Home) (krever CustomerSource-konto)  |[Opprett dimensjoner](cost-elements.md)  |

@@ -28,10 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Dette emnet inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 

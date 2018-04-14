@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Oversikt over personlige produktanbefalinger
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner. Hvis du vil ha mer informasjon, kan du se [Fjernede eller avskrevne funksjoner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Gå til bunnen av siden hvis du har problemer med produktanbefalinger for ditt miljøallerede som allerede er aktivert. 
@@ -86,9 +85,9 @@ Når du slår på **Aktiver anbefalinger** og kjører konfigurasjonjobbene, føl
 -   Modellens legitimasjon og ID gjøres tilgjengelig for CRT slik at kall til produktanbefalinger fra Cloud POS og MPOS i tilkoblet modus kan opprettholdes.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Feilsøke problemer der du allerede har aktivert produktanbefalingene 
->- Gå til **detaljhandelsparametere** > **maskinopplæring** > **deaktiver produktanbefalingene** og kjør **Global konfigurasjon for jobben [1110]**. Hvis du ikke finner kategorien **maskinopplæring**, kan du kontakte kundestøtte for Dynamics. 
-
->- Hvis du har lagt **kontroll for anbefalinger** til din transaksjonsskjerm ved hjelp av **utforming av skjermoppsett**, må fjerne den også. 
+> - Gå til **detaljhandelsparametere** > **maskinopplæring** > **deaktiver produktanbefalingene** og kjør **Global konfigurasjon for jobben [1110]**. Hvis du ikke finner kategorien **maskinopplæring**, kan du kontakte kundestøtte for Dynamics. 
+> 
+> - Hvis du har lagt **kontroll for anbefalinger** til din transaksjonsskjerm ved hjelp av **utforming av skjermoppsett**, må fjerne den også. 
 
 
 

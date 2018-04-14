@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Beholdningslukking
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Som en del av prosessen for å utligne avgangstransaksjoner med mottakstransaksjoner, kan du også velge å få økonomimodulen oppdatert for å gjenspeile justeringene som er gjort.
 

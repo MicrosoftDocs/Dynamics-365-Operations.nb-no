@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Konserninterne utgifter
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En arbeidstaker som er ansatt av en juridisk enhet i en organisasjon kan utføre arbeid for en annen juridisk enhet i samme organisasjon. I denne situasjonen kan du bruke den konserninterne kostnadsfunksjonen til å tildele arbeidstakers utgifter til den juridiske enheten som arbeidet ble utført for. Den juridiske enheten som benytter arbeidstakeren kalles den utlånende juridiske enheten. Den juridiske enheten som påføres utgifter for arbeidstakeren, kalles den lånende juridiske enheten. 
 

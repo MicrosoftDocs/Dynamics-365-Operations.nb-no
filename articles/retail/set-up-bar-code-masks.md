@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Definere strekkodemasker
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du definerer tegn for strekkodemaske, strekkodemasker og hvordan du kan tilordne strekkodemasker til strekkoder.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Informasjon om kundesamlinger behandles i en sentral visning ved hjelp av siden for innkreving i Finance and Operations. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 
@@ -70,9 +69,9 @@ Følgende listesider hjelper deg med å organisere innkrevingsinformasjon.
 
 > [!NOTE]
 > Et øyeblikksbilde av aldersfordeling må opprettes før du kan vise informasjon på disse listesidene. Informasjonen vises bare for kunder det er blitt opprettet et øyeblikksbilde av aldersfordeling for. Postene som vises på listesiden kan også filtreres på følgende måte:
-<li>Som standard har en Finance and Operations-bruker tilgang til alle kunder som har et øyeblikksbilde av aldersfordeling.</li>
-<li>Hvis det finnes kundepuljer, må en bruker defineres som en innkrevingsagent for å bruke puljer til å filtrere informasjon på innkrevingslistesidene. Informasjon er begrenset til kundene som er med i den valgte kundepuljen.</li>
-<li>Hvis en bruker er konfigurert som innkrevingsagent, er det bare puljene som er valgt for denne innkrevingsagenten, som er tilgjengelige på listesiden. Hvis Tillat agent å vise alle kundepuljer er valgt på siden Innkrevingsagent for innkrevingsagenten, er alle puljer tilgjengelige for denne agenten.</li>
+> <li>Som standard har en Finance and Operations-bruker tilgang til alle kunder som har et øyeblikksbilde av aldersfordeling.</li>
+> <li>Hvis det finnes kundepuljer, må en bruker defineres som en innkrevingsagent for å bruke puljer til å filtrere informasjon på innkrevingslistesidene. Informasjon er begrenset til kundene som er med i den valgte kundepuljen.</li>
+> <li>Hvis en bruker er konfigurert som innkrevingsagent, er det bare puljene som er valgt for denne innkrevingsagenten, som er tilgjengelige på listesiden. Hvis Tillat agent å vise alle kundepuljer er valgt på siden Innkrevingsagent for innkrevingsagenten, er alle puljer tilgjengelige for denne agenten.</li>
 
 
 ## <a name="collections-page"></a> Innkrevingssiden

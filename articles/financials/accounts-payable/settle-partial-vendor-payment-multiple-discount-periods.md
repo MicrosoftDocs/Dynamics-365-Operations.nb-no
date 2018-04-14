@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Utligne en delvis leverandørbetaling som har flere rabattperioder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen leder deg gjennom et scenario der flere delvise betalinger foretas til en leverandør som har flere kontantrabatter. 
 

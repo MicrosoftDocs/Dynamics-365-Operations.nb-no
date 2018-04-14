@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 
@@ -38,6 +37,7 @@ Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for str
 ------------------
 
 I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.
+
 | Angi registreringsmodus | Beskrivelse                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Starte                 | Registrerer en Kanban-overføringsjobb som pågående.                                                 |

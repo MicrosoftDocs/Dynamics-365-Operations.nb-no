@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-repeat-purchase-order"></a>Opprette en innkjøpsgjentakelsesordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en gjentatt bestilling ved å kopiere linjer fra et tidligere bestillingsdokument til en ny eller eksisterende bestilling. Det finnes to metoder for å opprette gjentatte ordrer. Du kan bruke handlingene som er tilgjengelige på dokumentnivå i handlingsruten, eller du kan bruke linjedetaljhandlingene. handlinger på dokumentetnivå er hovedsaklig beregnet på å opprette en ny bestilling ved å legge til linjer og hodeinformasjon fra en annen ordre, mens linjedetaljerhandlingen er hovedsaklig for å legge til linjer i en eksisterende ordre. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF. Denne oppgaven utføres vanligvis av en innkjøpsagent.
 

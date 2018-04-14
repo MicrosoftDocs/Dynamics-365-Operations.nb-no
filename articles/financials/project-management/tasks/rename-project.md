@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Gi nytt navn til eller endre et prosjektstadium
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Prosjektstadier kan fungere som en veiledning til prosjektets livssyklus. Du kan definere prosjektstadiene du vil inkludere i prosjektet, i Prosjektstadium-området på siden Parametere for prosjektstyring og regnskap. Dynamics 365 for Finance and Operations inneholder fem forhåndsdefinerte prosjektstadier og tre brukerdefinerte prosjektstadier. Du kan oppdatere navnet på et prosjektstadium som du bruker til å spore fremdriften for prosjekter. Du kan også angi navn til brukerdefinert statusnavn. Denne oppgaven beskriver hvordan du gi nytt navn til eller endre et prosjektstadium og bruker USSI-datasettet.
 

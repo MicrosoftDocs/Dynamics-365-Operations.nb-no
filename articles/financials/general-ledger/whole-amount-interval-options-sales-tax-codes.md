@@ -28,19 +28,17 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Hele beløp og alternativer for intervallberegning for mva-koder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver alternativene for feltet Beregningsmåte når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
 
 Du kan definere en mva-kode som skal beregnes basert på et helt beløp eller et fakturabeløp. Bruk Beregningsmåte-feltet på hurtigfanen Beregning på Mva-kode-siden for å velge hvordan du vil beregne en mva-kode.
--   Hele beløp – mva-satsen brukes for hele det avgiftspliktige beløpet.
--   Intervall – Det avgiftspliktige beløpet er inndelt i deler, og hver del er innenfor et intervall som har en bestemt mva-sats. Den delen av beløpet som ligger innen et gitt intervall blir avgiftsbelagt i henhold til mva-satsen for det intervallet. Mva er summen av mva-beløpene som beregnes for hvert beløpsintervall.
-> [!NOTE]                                                                                                                              
-> Intervallalternativet er bare tilgjengelig når du velger Linje i Beregningsmåte-feltet i mva-området på siden Økonomiparametere. 
+- Hele beløp – mva-satsen brukes for hele det avgiftspliktige beløpet.
+- Intervall – Det avgiftspliktige beløpet er inndelt i deler, og hver del er innenfor et intervall som har en bestemt mva-sats. Den delen av beløpet som ligger innen et gitt intervall blir avgiftsbelagt i henhold til mva-satsen for det intervallet. Mva er summen av mva-beløpene som beregnes for hvert beløpsintervall.
+  > [!NOTE]                                                                                                                              
+  > Intervallalternativet er bare tilgjengelig når du velger Linje i Beregningsmåte-feltet i mva-området på siden Økonomiparametere. 
 
 Intervaller defineres på siden Verdier for merverdiavgiftskode ved å angi minimum og maksimum grensebeløp per mva-sats. For at mva skal kunne beregnes av alle avgiftspliktige beløp, uavhengig av hvilken metode som er valgt, må intervallene oppfylle følgende regler:
 -   Det første intervallet må ha en nedre grense på 0.
@@ -51,6 +49,7 @@ Hvis et beløp er den øvre grensen til det forrige intervallet, og den nedre gr
 
 ## <a name="example-whole-amount-method-of-calculation"></a>Eksempel: beregningsmåte Hele beløp
 På Siden Verdier for merverdiavgiftskode defineres mva-satser i følgende intervaller:
+
 |                   |                   |              |
 |-------------------|-------------------|--------------|
 | **Minimumsgrense** | **Maksimumsgrense** | **Avgiftssats** |
@@ -86,7 +85,7 @@ Mva er summen av mva-beløpene som beregnes for hvert beløpsintervall.
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
- 
+
 
 Hvis du vil ha mer informasjon , kan du se [Bestemme mva-satser basert på feltene Grensegrunnlag og Beregningsmåte](marginal-base-field.md).
 

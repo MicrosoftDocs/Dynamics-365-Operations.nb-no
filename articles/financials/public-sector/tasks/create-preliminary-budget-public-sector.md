@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Opprette et foreløpig budsjett for offentlig sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan opprette foreløpige budsjettregisteroppføringer for en bestemt budsjettmodell og dimensjonsverdier. Når budsjettet er godkjent, kan du opprette opprinnelige budsjettregisteroppføringer. Denne prosedyren ble opprettet med demonstrasjonsfirmadataene for PSUS i partisjonen for offentlig sektor.
 

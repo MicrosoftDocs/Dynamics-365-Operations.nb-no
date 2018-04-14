@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkjenne en produktkonfigurasjonsmodell
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kjører du denne prosedyren krever det at minst én eksisterende produktmodellkonfigurasjon er tilgjengelig. Denne prosedyren bruker modellen for High-end-høyttaler i demodatafirmaet USMF. Legg merke til at denne modellen har allerede blitt godkjent, men fremgangsmåten leder deg gjennom hele prosessen.
 

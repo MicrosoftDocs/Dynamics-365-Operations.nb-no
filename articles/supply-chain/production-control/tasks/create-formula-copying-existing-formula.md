@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Opprette en formel ved å kopiere fra en eksisterende formel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du raskt kan opprette en ny formel ved å kopiere fra en eksisterende formel. Du kan bruke demonstrasjonsdatafirmaene USMF, USP2 eller USPI til å opprette denne prosedyren.
 

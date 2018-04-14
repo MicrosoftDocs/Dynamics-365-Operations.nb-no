@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-leave-of-absence"></a>Administrere permisjon
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dette hjelper med opprettelsen av permisjonsposter for ansatt. Du kan spore permisjonstid for årsaker som omfatter medisinske aktiviteter, utdanningsaktiviteter eller foreldreaktiviteter. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

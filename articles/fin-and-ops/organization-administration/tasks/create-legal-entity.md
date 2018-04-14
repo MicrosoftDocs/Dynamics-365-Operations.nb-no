@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Opprette en ny juridisk enhet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En juridisk enhet er en organisasjon som identifiseres via registrering hos en juridisk myndighet. Juridiske enheter kan inngå kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen. Fremgangsmåten nedenfor forklarer hvordan du oppretter en juridisk enhet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

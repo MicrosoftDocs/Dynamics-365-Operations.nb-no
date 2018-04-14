@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Et tildelingsgrunnlag er grunnlaget som kostnadsregnskap tildeler indirekte kostnader på. Et tildelingsgrunnlag kan være et antall, for eksempel maskindriftstid som brukes, kilowattimer (kWh) som brukes, eller antall kvadratmeter som er opptatt. Tildelingsgrunnlag brukes hovedsakelig til å tilordne indirekte kostnader til beholdning som produseres. En IT-avdeling tildeler for eksempel utgiftene etter antallet datamaskiner som hver avdeling bruker.
 
@@ -424,9 +424,11 @@ Her er et nærmere blikk på formelen for CC003 (IT):
 
 Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnlaget for Fast strøm er tilordnet som tildelingsgrunnlaget i den.
 
-| Kostnadsobjekt |  beskrivelse  | Størrelse | Tildelingsfaktor                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Personale | 1 837,50  | (1 837,50 ÷ 18 162,50) × beløp  |
-| CC002       | FI | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
-| CC003       | LO | 13 250,00 | (13 250,00 ÷ 18 162,50) × beløp |
+
+| Kostnadsobjekt | beskrivelse | Størrelse |        Tildelingsfaktor         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Personale      | 1 837,50  | (1 837,50 ÷ 18 162,50) × beløp  |
+|    CC002    |     FI      | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
+|    CC003    |     LO      | 13 250,00 | (13 250,00 ÷ 18 162,50) × beløp |
+
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuell beslutning i en arbeidsflyt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene i en manuell beslutning.
 
@@ -252,73 +251,74 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Angi hva som skal skje når en beslutning er forfalt
 Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En beslutning som er forfalt, kan videresendes eller tilordnes automatisk til en annen bruker. Følg denne fremgangsmåten for å videresende beslutningen hvis den er forfalt.
 
-1.  I den venstre ruten klikker du **Eskalering**.
-2.  Merk av for **Bruk videresendingsbane** hvis du vil opprette en videresendingsbane. Systemet tilordner automatisk beslutningen til brukerne som er oppført i videresendingsbanen. Tabellen nedenfor er et eksempel på en videresendingsbane.
-    | Sekvens | Videresendingsbane            |
-    |----------|----------------------------|
-    | 1        | Tilordne til: Doris           |
-    | 2        | Tilordne til: Elin            |
-    | 3        | Endelig handling: \[Valg 1\] |
+1. I den venstre ruten klikker du **Eskalering**.
+2. Merk av for **Bruk videresendingsbane** hvis du vil opprette en videresendingsbane. Systemet tilordner automatisk beslutningen til brukerne som er oppført i videresendingsbanen. Tabellen nedenfor er et eksempel på en videresendingsbane.
 
-    I dette eksempelet tilordnes den forfalte beslutningen til Doris. Hvis Doris ikke tar beslutningen innen tidsfristen, tilordnes beslutningen til Elin. Hvis Elin ikke tar beslutningen innen tidsfristen, velges **\[Valg 1\]** som beslutningen.
-3.  Klikk **Legg til videresending** for å legge til en bruker i videresendingsbanen. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 4.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Alternativ</th>
-    <th>Brukere som beslutningen videresendes til</th>
-    <th>Tilleggstrinn</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarki</td>
-    <td>Brukere i et bestemt organisasjonshierarki</td>
-    <td><ol>
-    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen videresendes til.</li>
-    <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
-    <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
-    <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
-    </ol></li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til: <ul>
-    <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen videresendes til alle brukere i området.</li>
-    <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen videresendes bare til den siste brukeren i området.</li>
-    <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Arbeidsflytbruker</td>
-    <td>Brukere i den gjeldende arbeidsflyten</td>
-    <td><ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Bruker</td>
-    <td>Bestemte Finance and Operations-brukere</td>
-    <td><ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
-    <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil videresende beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Sekvens | Videresendingsbane            |
+   |----------|----------------------------|
+   | 1        | Tilordne til: Doris           |
+   | 2        | Tilordne til: Elin            |
+   | 3        | Endelig handling: \[Valg 1\] |
 
-4.  I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
-    -   **Timer** – Angi antallet timer som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
-    -   **Dager** – Angi antallet dager som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
-    -   **Uker** – Angi antallet uker som brukeren har til å ta beslutningen.
-    -   **Måneder** – Velg dagen og uken som brukeren senest må ta beslutningen. Du vil for eksempel at brukeren skal ta beslutningen innen fredag i den tredje uken i måneden.
-    -   **År** – Velg dagen, uken og måneden som brukeren senest må ta beslutningen. Du vil for eksempel at brukeren skal ta beslutningen innen fredag i den tredje uken i desember.
+   I dette eksempelet tilordnes den forfalte beslutningen til Doris. Hvis Doris ikke tar beslutningen innen tidsfristen, tilordnes beslutningen til Elin. Hvis Elin ikke tar beslutningen innen tidsfristen, velges **\[Valg 1\]** som beslutningen.
+3. Klikk **Legg til videresending** for å legge til en bruker i videresendingsbanen. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 4.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Alternativ</th>
+   <th>Brukere som beslutningen videresendes til</th>
+   <th>Tilleggstrinn</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarki</td>
+   <td>Brukere i et bestemt organisasjonshierarki</td>
+   <td><ol>
+   <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen videresendes til.</li>
+   <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
+   <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
+   <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
+   </ol></li>
+   <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til: <ul>
+   <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen videresendes til alle brukere i området.</li>
+   <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen videresendes bare til den siste brukeren i området.</li>
+   <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Arbeidsflytbruker</td>
+   <td>Brukere i den gjeldende arbeidsflyten</td>
+   <td><ul>
+   <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Bruker</td>
+   <td>Bestemte Finance and Operations-brukere</td>
+   <td><ol>
+   <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+   <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere. Velg brukerne du vil videresende beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
-6.  Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i kategorien **Avslutt handling**.
+4. I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
+   -   **Timer** – Angi antallet timer som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
+   -   **Dager** – Angi antallet dager som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
+   -   **Uker** – Angi antallet uker som brukeren har til å ta beslutningen.
+   -   **Måneder** – Velg dagen og uken som brukeren senest må ta beslutningen. Du vil for eksempel at brukeren skal ta beslutningen innen fredag i den tredje uken i måneden.
+   -   **År** – Velg dagen, uken og måneden som brukeren senest må ta beslutningen. Du vil for eksempel at brukeren skal ta beslutningen innen fredag i den tredje uken i desember.
+
+5. Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
+6. Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i kategorien **Avslutt handling**.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
 Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt. **Obs!** Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.

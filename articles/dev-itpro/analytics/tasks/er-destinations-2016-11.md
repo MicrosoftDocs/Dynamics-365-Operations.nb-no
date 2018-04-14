@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurere mål for elektronisk rapportering (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du definerer og bruker forskjellige mål for utdatakomponenter for elektronisk rapportering (ER), for eksempel en mappe eller fil. Demonstrasjonsdatafirmaet DEMF brukes til å opprette denne prosedyren. Tyskland er landet\området for den juridiske enhetens primæradresse, men du kan bruke alle juridiske enheter for denne fremgangsmåten. 
 

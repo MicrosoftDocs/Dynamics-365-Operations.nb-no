@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Infokoder
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikkelen gir en oversikt om informasjonskoder, informasjonskodegrupper og hvordan de brukes.
 
@@ -52,7 +51,7 @@ I Dynamics 365 for Retail kan du opprette grupper av infokoder. Informasjonskode
 
 **Eksempel 2: Koble infokoder til infokodegrupper** Når du selger visse produkter, for eksempel mobilenheter, er det alltid aktuelt å samle inn et sett med spesifikk informasjon, for eksempel telefonnummer, MEID-nummer (Mobile Equipment Identifier) og serienummer. Du vil imidlertid også samle inn annen informasjon for et nettbrett enn for en mobiltelefon. Du kan definere en informasjonskodegruppe som inkluderer spørsmål om telefonnummeret, MEID-nummeret og serienummeret, og deretter koble informasjonskodegruppen til en individuell informasjonskode. Når den produktspesifikke informasjonskoden utløses, kan informasjonskodegruppen utløses i neste omgang, slik at du kan samle inn fellesdataene uten å måtte definere flere sett med koblede informasjonskoder for hver enhet.
 
- 
+
 
 
 

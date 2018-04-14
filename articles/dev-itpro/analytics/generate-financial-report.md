@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Generer en finansrapport
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet inneholder generell informasjon generering av finansrapporter. 
 
@@ -50,13 +49,13 @@ Når du genererer en rapport, brukes alternativene du har angitt i kategorien Ra
 ## <a name="generate-a-financial-report"></a>Generer en finansrapport
 
 Hvis du vil generere en finansrapport med Microsoft Dynamics 365 for Finance and Operations, kan du gå til **Økonomimodul** > **Forespørsler og rapporter** > **Finansrapporter**. 
- - Velg en rapport som skal genereres, og klikk på **Generer**. 
- - Fyll ut **Rapportdato**-feltet og klikk på **OK**.
- 
- Etter at rapporten er generert, vil rapporten være tilgjengelig for visning i **Rapporter**-delen.
- Du kan velge å **vise** eller **slette** rapporten.
- 
- 
+- Velg en rapport som skal genereres, og klikk på **Generer**. 
+- Fyll ut **Rapportdato**-feltet og klikk på **OK**.
+
+  Etter at rapporten er generert, vil rapporten være tilgjengelig for visning i **Rapporter**-delen.
+  Du kan velge å **vise** eller **slette** rapporten.
+
+
 Hvis du vil generere en rapport med **Rapportutforming**, åpner du rapportdefinisjonen og klikker deretter på Generer-knappen på verktøylinjen. Vinduet Status for rapportkø åpnes og angir plasseringen av rapporten i køen. Den genererte rapporten åpnes som standard i nettvisningsprogrammet.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Når du kjører en analyse for manglende konto, er følgende hurtigtaster tilgje
 | Åpne den valgte rapportdefinisjonen  | Ctrl+R                     |
 | Åpne den valgte raddefinisjonen     | Ctrl+O                     |
 
- 
+
 <a name="see-also"></a>Se også
 --------
 

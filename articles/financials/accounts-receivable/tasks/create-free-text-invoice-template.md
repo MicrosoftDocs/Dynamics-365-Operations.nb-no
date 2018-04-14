@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>Opprette en mal for fritekstfaktura
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne registreringen bruker demonstrasjonsfirmaet USMF. Registreringen er ment for brukeren som er ansvarlig for administrasjon og behandling av fakturaer for kunder.
 

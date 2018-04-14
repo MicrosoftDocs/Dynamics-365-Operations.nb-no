@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Konfigurere koblede produkter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å konfigurere koblede produkter. Denne prosedyren bruker demonstrasjonsdataene for USRT og tar utgangspunkt i at begge produktene allerede er opprettet og frigitt.
 

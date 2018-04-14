@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definere overvåkingspolicyer for kildedokumenter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du angir og kjører overvåkingspolicyregler. Eksemplet bruker reiseregninger med utgiftstypen hotell. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Revisorrollen inneholder de riktige tillatelsene for å kunne utføre disse oppgavene.
 

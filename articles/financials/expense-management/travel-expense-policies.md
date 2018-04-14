@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Utgiftspolicyer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan definere policyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger.         
 Ved å bruke policyer for reiseregning kan du administrere utgiftene dine på en effektiv måte.         
@@ -39,14 +39,14 @@ definer policyreglene.
 Du kan definere tre typer policyer.         
         
 - Advarsel – Tillater arbeidstakeren å sende inn en utgiftsrapport eller reiseregning, men kostnaden vil markeres for godkjennere        
-for senere rapportering.        
+  for senere rapportering.        
 
 - Feil – Krever at arbeidstakeren reviderer utgiftene for samsvar med policyen før innsending av utgiftsrapporten elle reiseregningen.       
  
- - Begrunnelse – Krever at arbeidstakeren eller en leder skal legge inn en begrunnelse for å overskride beløpet før innsending av utgiftsrapport eller reiseregning.        
+  - Begrunnelse – Krever at arbeidstakeren eller en leder skal legge inn en begrunnelse for å overskride beløpet før innsending av utgiftsrapport eller reiseregning.        
  
- Du kan også sette opp en datoperioden for når utgiftpolicyen er effektiv. For eksempel, flybilletter for fly mellom Danmark      
- og New York City kan være kostbare i høysesongen. Du kan definere en utgiftsregel for flyvninger som begrenses av      
- en grense for kostnaden på flybilletter til New York City på DKK 5000, og du kan spesifisere at regelen er gyldig mellom 15. mars og      
- 15. september.
+  Du kan også sette opp en datoperioden for når utgiftpolicyen er effektiv. For eksempel, flybilletter for fly mellom Danmark      
+  og New York City kan være kostbare i høysesongen. Du kan definere en utgiftsregel for flyvninger som begrenses av      
+  en grense for kostnaden på flybilletter til New York City på DKK 5000, og du kan spesifisere at regelen er gyldig mellom 15. mars og      
+  15. september.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Leverandørforespørselskonfigurasjoner
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 For å fullføre en leverandørforespørsel må en kontaktperson for leverandøren fullføre veiviseren for registrering av potensiell leverandør.
 
@@ -39,12 +39,12 @@ Som standard finnes det en leverandørkonfigurasjon i skjemaet Leverandørforesp
 
 Det er ikke mulig å velge land/regioner for standardkonfigurasjonen, så delen **Land/regioner** kan ikke endres.
 
-1.  Klikk **Innkjøp og leverandører** > **Oppsett** > **Leverandører**, og klikk deretter på **Leverandørforespørselskonfigurasjoner**.
-2.  Klikk på **Felt**-fanen for å sette statusen til de oppførte feltene.
--   Skjult (ikke synlige)
--   Vises (synlige, men ikke obligatoriske)
--   Obligatorisk (synlig og obligatorisk)
-3.  Klikk på **Innhold**-fanen for å angi om teksten skal vises i veiviseren, og om det skal være en bekreftelse som den potensielle leverandørbrukeren må godta før neste trinn i veiviseren. Det vil bli bedt om bekreftelse for alle vilkårene som brukeren må godta for å fortsette.
+1. Klikk **Innkjøp og leverandører** > **Oppsett** > **Leverandører**, og klikk deretter på **Leverandørforespørselskonfigurasjoner**.
+2. Klikk på **Felt**-fanen for å sette statusen til de oppførte feltene.
+3. Skjult (ikke synlige)
+4. Vises (synlige, men ikke obligatoriske)
+5. Obligatorisk (synlig og obligatorisk)
+6. Klikk på **Innhold**-fanen for å angi om teksten skal vises i veiviseren, og om det skal være en bekreftelse som den potensielle leverandørbrukeren må godta før neste trinn i veiviseren. Det vil bli bedt om bekreftelse for alle vilkårene som brukeren må godta for å fortsette.
 
 Du kan også angi en bekreftelsesmelding som skal vises når veiviseren er ferdig, og du kan legge til ett eller flere spørreskjemaer.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="mass-financial-period-close"></a>Lukke masseregnskapsperiode
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen. I tillegg viser oppgaven hvordan du begrenser brukergruppepostering til spesifikke moduler.
 

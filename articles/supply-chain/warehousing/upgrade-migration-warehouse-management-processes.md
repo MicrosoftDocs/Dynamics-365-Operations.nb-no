@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Migrere produkter og lagerstyring fra AX 2012 til Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over alternativene for migrasjon av produkt- og lagerstyring i Microsoft Dynamics 365 for Finance and Operations.
 

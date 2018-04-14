@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Purringer og importinkassoer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.
 

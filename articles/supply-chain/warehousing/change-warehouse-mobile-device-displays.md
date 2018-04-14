@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinnstillinger for lagermobilenheten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du definerer utseendet på en mobilenhetsvisning og tilordning av hurtigtaster til kontroller, for eksempel knapper. 
 

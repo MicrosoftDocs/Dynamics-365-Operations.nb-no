@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-accounts-payable"></a>Konfigurere Leverandører
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver sidene du bruker til å definere grunnleggende og valgfrie funksjoner for leverandører i Microsoft Dynamics 365 for Finance and Operations. Den beskriver også trinnene i oppsettet som du må fullføre før du begynner å definere leverandører.
 

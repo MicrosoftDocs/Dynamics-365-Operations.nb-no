@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attributter, attributtgrupper og deres tilknytninger med forskjellige detaljhandelenheter i Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter knyttes til forskjellige detaljhandelenheter, for eksempel produktkategorier og detaljhandelskanaler, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
  
@@ -227,13 +227,13 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 5. På hurtigfanen **Produkter** velger du det aktuelle produktet og så **Attributter** over produktrutenettet.
 6. Oppdater verdiene for de obligatoriske attributtene på følgende hurtigfaner:
 
-    - Delte produktmedier
-    - Delte produktattributter
-    - Kanalmedier
-    - Kanalproduktattributter
+   - Delte produktmedier
+   - Delte produktattributter
+   - Kanalmedier
+   - Kanalproduktattributter
 
-    > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
+     > [!NOTE]
+     > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
 
 ![Produktattributtverdi for grupper](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 
 5. Oppdater verdiene for de obligatoriske attributtene på følgende hurtigfaner:
 
-    - Delte produktmedier
-    - Delte produktattributter
-    - Kanalmedier
-    - Kanalproduktattributter
+   - Delte produktmedier
+   - Delte produktattributter
+   - Kanalmedier
+   - Kanalproduktattributter
 
-    > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
+     > [!NOTE]
+     > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
 

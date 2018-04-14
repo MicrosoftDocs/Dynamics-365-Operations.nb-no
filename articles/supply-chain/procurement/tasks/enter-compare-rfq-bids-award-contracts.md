@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir budet til én av leverandørene. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Før du begynner, må du ha en tilbudsforespørsel med to linjer som er sendt til minst to leverandører. Du kan kjøre prosedyren "Opprett en tilbudsforespørsel" for å opprette dette. Du må ha definert poengsumkriterier før du kan kjøre denne prosedyren.
 

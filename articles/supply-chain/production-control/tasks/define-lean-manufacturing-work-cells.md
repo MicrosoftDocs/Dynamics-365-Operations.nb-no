@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definere arbeidsceller for lean manufacturing
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En arbeidscelle er en bestemt type ressursgruppe som kan brukes i lean manufacturing-prosessaktiviteter. Arbeidsceller har innleverings- og utleveringssteder og en kapasitetsdefinisjon basert på en produksjonsflytmodell. Hvis du vil lære mer om de grunnleggende begrepene for arbeidsceller og kapasitetsberegninger for lean manufacturing, kan du se de tekniske dokumentene for Lean manufacturing. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne prosedyren
 

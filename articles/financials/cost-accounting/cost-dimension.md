@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-dimensions-and-import-dimension-members"></a>Opprette dimensjoner og importere dimensjonsmedlemmer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kostnadsregnskap er en uavhengig modul som krever data fra andre moduler. Disse dataene kategoriseres i følgende:
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Handlingsmeldinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En handlingsmelding er et systemgenerert forslag til endring av en eksisterende planlagt eller autorisert ordre.
 

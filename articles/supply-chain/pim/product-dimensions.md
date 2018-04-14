@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensjoner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
 
@@ -51,6 +50,7 @@ Produktdimensjonsverdier som størrelse, farge og stil kan opprettes på sidene 
 -   Klikk på **Behandling av produktinformasjon** &gt; **Frigitte produkter**. Velg en produktstandard. I **handlingsruten** klikker du på **Produkt**. I gruppen **Produktstandard** klikker du **Produktdimensjoner**.
 
 Antallet varianter du kan opprette for en vare, er begrenset av antallet mulige kombinasjoner av produktdimensjoner.
+
 | **Tips!**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Når du for eksempel bruker et produkt på en ordrelinje, velger du produktdimensjonene for å identifisere produktvarianten du vil arbeide med. |

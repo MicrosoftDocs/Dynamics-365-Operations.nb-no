@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Aktivitetsbasert utsetting
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver i detalj hvordan du bruker r aktiviteter i underleveranser i en produksjonsflyt for lean manufacturing.
 

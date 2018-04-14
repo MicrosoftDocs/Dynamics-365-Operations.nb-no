@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Importere og opprettholde kredittkorttransaksjoner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Utgiftsrelaterte kredittkorttransaksjoner kan konfigureres slik at de automatisk importeres på en gjentatt tidsplan. Alternativt kan transaksjonene importeres manuelt etter behov. Kredittkorttransaksjonene blir importert via dataenheten Kredittkorttransaksjon.
 

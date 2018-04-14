@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Etterdaterte sjekker
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Finance and Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
 
@@ -76,14 +75,14 @@ Hvis den opprinnelige sjekken til en leverandør eller kunde blir mistet eller s
 <td>Du kan avbryte en postert etterdatert sjekk i disse situasjonene: – Sjekken returneres av banken.
 - Sjekken brukes på feil faktura.
 - Det er gjort en kontantbetaling mot sjekken.
-</td>
-</tr>
-<tr class="even">
-<td>Stoppe betaling av en etterdatert sjekk</td>
-<td>Du kan stoppe betaling av en etterdatert sjekk som ble utstedt til en leverandør, på grunn av for eksempel utilstrekkelige midler, endring av vilkårene i avtalen med leverandøren, mottak av defekte varer fra leverandøren, eller retur av varer til leverandøren. Du kan bare stoppe betaling av sjekker som ikke er avregnet.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Stoppe betaling av en etterdatert sjekk</td>
+  <td>Du kan stoppe betaling av en etterdatert sjekk som ble utstedt til en leverandør, på grunn av for eksempel utilstrekkelige midler, endring av vilkårene i avtalen med leverandøren, mottak av defekte varer fra leverandøren, eller retur av varer til leverandøren. Du kan bare stoppe betaling av sjekker som ikke er avregnet.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

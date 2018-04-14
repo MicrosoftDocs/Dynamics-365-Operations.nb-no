@@ -29,8 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>Forutsetninger for standard kostpris
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskiver de grunnleggende trinnene for bruk av standard kostpris. Fremgangsmåten avhenger av firmaets opererasjoner. Fremgangsmåten er for eksempel forskjellig for et firmaet uten egenproduksjon, et produksjonsmiljø som ikke bruker ruting og et produksjonsmiljø som bruker ruting. 
 

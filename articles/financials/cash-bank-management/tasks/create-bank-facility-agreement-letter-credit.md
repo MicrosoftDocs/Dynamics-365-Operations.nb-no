@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Opprette en fasilitetsavtale for en remburs
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven hjelper deg med å opprette en bankfasilitetsavtale for å behandle en remburs. Du skal sette opp bankfasiliteter og posteringsprofiler før denne oppgaven.  Denne oppgaven bruker demonstrasjonsfirmaet USMF.  
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Endre datoen for økten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Som standard brukes gjeldende dato ved registrering og postering av journaloppføringer eller kildedokumenter. Du kan endre datoen som brukes for den gjeldende økten. Bruk om nødvendig denne funksjonen til å tilbakedatere journaloppføringer eller kildedokumenter.
 

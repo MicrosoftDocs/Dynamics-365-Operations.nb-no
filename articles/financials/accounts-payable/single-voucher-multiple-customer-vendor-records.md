@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere poster for kunde eller leverandør
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Finance and Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
 
@@ -251,7 +250,7 @@ Flere bilag må angis i journalen for å registrere motregningstransaksjonen for
 | 001         | Kunde         | US-008      |                 |           |  75,00     | Finans          | 999999---          |
 | 002         | Leverandør           | 1001        |                 |  75,00    |            | Finans          | 999999---          |
 
- 
+
 
 
 

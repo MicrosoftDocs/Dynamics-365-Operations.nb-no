@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Opprette nye brukere
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brukere er interne ansatte i din organisasjon, eller eksterne kunder og leverandører, som trenger tilgang til systemet for å utføre jobbene sine. Systemansvarlige kan fullføre denne fremgangsmåten for å legge til brukere i systemet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. 
 

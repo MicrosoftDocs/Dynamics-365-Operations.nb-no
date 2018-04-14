@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Timeregistrering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tidsregistreringsarbeidere kan angi ulike typer tidsregistreringer, for eksempel stemple inn, stemple ut, registrere indirekte aktiviteter og fraværsregistrering. Dette emnet beskriver registreringer, deres beregning, godkjenning og bruken av arbeidsflyt for å legge til struktur og automatisk godkjenning i prosessen med å godkjenne timeregistreringer. 
 
@@ -95,7 +94,7 @@ Du kan definere en godkjenningsprosess for arbeidsflyt som automatisk godkjenner
 | Totalt antall timeregistreringsdager            | Arbeidsflyten validerer registreringer mot for eksempel det forventede antallet timer for dagen. |                                                                                                                                                                                                                                                       |
 | Journalregistrering for timeregistrering. | Arbeidsflyten validerer hver registreringstype for datoen for registreringen.                           | Timeregistrering • innstempling • utstempling • fravær • pause • vekslekode • prosjekt • prosjektaktivitet • indirekte aktivitet produksjonsjobber • kø før • oppsett • prosess • overlapping • transport • kø etter • start assistanse • stopp assistanse |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Overføre godkjente registreringer
 Når registreringer er godkjent, kan de overføres til den periodiske lønnsjobben. En overført registrering blir postert til en aktivitet eller en jobb som den er knyttet til, for eksempel en produksjonsordre eller et prosjekt. Lønnstransaksjoner genereres for hver arbeider basert på registreringene.  

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Definere svindelvarsler
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du definerer kriterier og regler for å sperre potensielle svindelordrer for videre gjennomgang. Funksjon for svindelgjennomgang brukes til å fastslå gyldigheten av informasjonen i en salgsordre. Hvis informasjonen i salgsordren ser mistenkelig ut basert på organisasjonens svindelvilkår og -regler, kan ordren sperres for videre gjennomgang av en administrator.
 

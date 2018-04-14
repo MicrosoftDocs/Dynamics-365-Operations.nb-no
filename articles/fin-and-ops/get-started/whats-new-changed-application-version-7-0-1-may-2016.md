@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Hva er nytt eller endret i Dynamics AX-programversjon 7.0.1 (mai 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX-programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 | Konfigurer ER-mål slik at utdataresultatet av et format rettes mot bestemte mål: fil, e-post eller arkiv (Microsoft SharePoint-mappe eller Microsoft Azure Storage). | Tidligere, da du kjørte en ER-konfigurasjon, ble det vist en meldingsboks som krevde at brukerhandling for å lagre eller åpne en fil. Du kan forhåndskonfigurere separat et mål for hver formatkonfigurasjon og utdatakomponent (en mappe eller en fil). Brukere som har riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>Salgssted – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hva kan du gjøre?**           | **Hvorfor er dette viktig?**                                                                                                                                                              |
 | Bruk Google Chrome-nettleseren. | Forhandlere kan nå starte Skysalgssted fra Chrome-nettleseren, og kan bruke alle funksjoner som er tilgjengelige i Microsoft Edge og Internet Explorer-versjonen av Skysalgssted. |
 
 ## <a name="financial-reporting"></a>Finansrapportering
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hva kan du gjøre?**                                                | **Hvorfor er dette viktig?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 | Du kan ikke lenger velge alternativer for rapportutforming som ikke er gyldige. | Flere alternativer for rapportutforming som ble brukt i markedsversjoner av Management reporter, gjelder ikke for denne versjonen av Dynamics AX. Disse alternativene er knyttet til økonomisk rapportutforming, utdata og kobling. Disse alternativene er fjernet fra Utforming av finansrapport for å hindre at brukerfeil. |
 
 ## <a name="financial-management"></a>Økonomistyring
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Hva kan du gjøre?**                                       | **Hvorfor er dette viktig?**                                       |
 | Generer positive pay-filer for leverandørbetalinger. | Positive pay-filer kan genereres for å hjelpe banker med å forhindre sjekksvindel. |
 
 ## <a name="warehouse-and-production"></a>Lager og produksjon
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hva kan du gjøre?**                                                                                                                                                                                                                                                                                                                                                                    | **Hvorfor er dette viktig?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 | Produksjonsordrer med sirkelstrukturer på første nivå av stykklistene, utelates fra stykklistenivåberegning for planlegging av materialressurs.                                                                                                                                                                                                                                     | Det er ikke mulig å tilordne riktige stykklistenivåer til produktvarianter for produksjonsordrer som kan forårsake sirkularitet i stykklistehierarkiet.                                                                                                                                                                                                                                                                                                  |
 | Beregne separate stykklistenivåer for planlegging av materialressur og kostnadsberegning: • For planlegging av materialressur beregnes stykklistenivåer i den nye **ReqItemLevel**-tabellen. Avsluttede produksjonsordrer ignoreres i beregningen. • For beregning av produksjonskostnader, beregnes stykklistenivåer i **InventTable**. Avsluttede produksjonsordrer inkluderes i beregningen. | • Når du kjører planlegging av materialressurser, for eksempel hovedplanlegging, planlegging og nedbryting, må bare stykklistenivåer for planlegging av materialressurs beregnes på nytt. Det er med andre ord ikke nødvendig å beregne stykklistenivåer som brukes for etterkalkulering av produksjon. • Når du kjører etterkalkuleringsoperasjoner, for eksempel lageravslutning, må bare stykklistenivåer som brukes for etterkalkulering av produksjonen beregnes på nytt. |
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

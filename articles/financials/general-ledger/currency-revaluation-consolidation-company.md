@@ -28,10 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Revaluering av valuta i et konsolideringsfirma
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt kjøre valutarevaluering hvis det er endringer i valutakurser, slik at kontosaldoene revalueres på riktig måte. Når du konsoliderer de opprinnelig dataene, kan du bruke kategorien **Omveksling av valuta** for å velge de opprinnelige valutakursene for omveksling i løpet av konsolideringsprosessen. Når en ny valutakurs angis (for eksempel i neste måned), må du revaluere kontosaldoene. Urealisert fortjeneste og tap oppdateres deretter tilsvarende, basert på den nye valutakursen og datoen. Eksemplet nedenfor illustrerer regnskapsoppføringer som opprettes under prosessen.
 
@@ -52,6 +49,7 @@ Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt 
 | 11/10/2015 | 130100 – Kunder | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Valutakurser
+
 | Fra valuta | Til valuta | Startdato | Valutakurs |
 |---------------|-------------|------------|---------------|
 | EUR           | USD         | 1/10/2015  | 200           |

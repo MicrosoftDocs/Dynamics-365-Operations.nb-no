@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>Prosjektkontrakter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations.
 

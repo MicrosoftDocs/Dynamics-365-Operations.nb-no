@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Sende og godkjenne prosjektbudsjettendringer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren gir informasjon om endring av et prosjektbudsjett. Du kan endre et prosjektbudsjett så mange ganger som nødvendig, men du ikke kan se beløpet for en individuell endring hvis budsjettet er endret mer enn én gang. 
 

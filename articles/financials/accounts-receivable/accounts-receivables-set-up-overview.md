@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurere Kunder og Kreditt og innkreving
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende betalinger fra kunder.
 
@@ -107,7 +106,7 @@ Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kund
 |                                                      | Informasjon om manglende dekning.                     | Definer informasjon om manglende dekning for bankkontoen som skal brukes når en betaling er merket som transaksjon uten dekning på Innkrevinger-siden.                                                                                                                                              |
 |                                                      | Informasjon om selger              | Definer e-postadressen til selgere. Disse adressene vises på Innsamlinger-siden, og du kan bruke dem til å sende e-post til en selger fra denne siden.                                                                                                                |
 
- 
+
 Hvis du vil ha mer informasjon, kan du se [Kredit og innkreving i Kunder](collections-credit-accounts-receivable.md).
 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Opprette salgsordrer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en salgsordre. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Salgsordrer opprettes vanligvis av en salgsordrebehandler. 
 

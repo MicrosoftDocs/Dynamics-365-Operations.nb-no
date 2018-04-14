@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Maler for budsjettplanlegging for Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
 
@@ -42,11 +41,11 @@ Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppse
 1. Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). 
 2. Klikk **Ny** for å opprette et nytt budsjettplandokument. 
 
-  [![Liste over budsjettplaner](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Liste over budsjettplaner](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Bruk alternativet **Legg til linje** for å legge til linjer. Klikk **Oppsett** for å vise oppsettkonfigurasjonen for budsjettplandokument. 
 
-  [![Legg til budsjettplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Legg til budsjettplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. 
 1. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. 

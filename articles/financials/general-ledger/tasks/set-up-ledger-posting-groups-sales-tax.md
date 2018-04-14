@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Definere finansposteringsgrupper for merverdiavgift
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Merverdiavgiften beregnes og posteres til hovedkontoer som er angitt i finansposteringsgrupper. Finansposteringsgrupper er tilknyttet hver mva-kode. Du kan angi individuelle finansposteringsgrupper for hver mva-kode, bruke én finansposteringsgruppe for alle mva-koder eller tilordne flere finansposteringsgrupper til mva-kodene. Denne registreringen bruker demonstrasjonsfirmaet DEMF. 
 

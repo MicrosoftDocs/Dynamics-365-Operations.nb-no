@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>Salgsavtaler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. Denne artikkelen inneholder informasjon om kostnadskategorier som må du definere for disse typene produksjonsarbeid for produksjon og prosjekter.
 

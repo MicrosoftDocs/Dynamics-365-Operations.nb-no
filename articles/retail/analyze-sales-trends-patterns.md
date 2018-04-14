@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Analysere salgstrender og -mønstre
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 365 for Retail.
 

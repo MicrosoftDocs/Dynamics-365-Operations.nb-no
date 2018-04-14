@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Registrere og fjerne fordeler fra arbeidere
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>Masseoppdatering av faste anleggsmidler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået.
 

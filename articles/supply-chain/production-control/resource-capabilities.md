@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Ressursfunksjoner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon ressursfunksjoner. En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Artikkelen forklarer hvordan funksjonene og relaterte konsepter, for eksempel ferdighetsnivå og prioritet, brukes til å velge riktige ressurser for en aktivitet.
 

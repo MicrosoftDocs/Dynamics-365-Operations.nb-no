@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder og -konvensjoner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningskonvensjoner og avskrivningsmetoder som støttes av Microsoft Dynamics 365 for Finance and Operations.
 
@@ -62,7 +61,7 @@ Du kan velge mellom følgende avskrivningsmetoder:
 -   150 % saldoverdi
 -   125 % saldoverdi
 
- 
+
 
 
 

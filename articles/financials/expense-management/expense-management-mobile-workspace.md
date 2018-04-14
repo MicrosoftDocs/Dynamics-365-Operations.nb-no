@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Mobilt arbeidsområde for reiseregninger og utlegg
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **reiseregning og utlegg**. Dette arbeidsområdet lar brukere registrere og laste opp en kvittering, slik at de kan knytte det til en reiseregningsrapport senere. Brukere kan også raskt opprette en utgiftslinje ved hjelp av en tilknyttet mottak, og opprette og administrer reiseregninger. Godkjennere kan også bruke det mobile arbeidsområdet for **reiseregninger og utlegg** til å vise utgifter som er tilordnet til dem, og enten godkjenne eller avvise de reiseregninger.
 

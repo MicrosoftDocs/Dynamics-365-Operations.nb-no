@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="employee-competencies-and-development-power-bi-content"></a>Kompetanser og utvikling for ansatt-innhold for Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver Finance and Operations - Kompetanser og utvikling for ansatte for Power BI-innhold. 
 

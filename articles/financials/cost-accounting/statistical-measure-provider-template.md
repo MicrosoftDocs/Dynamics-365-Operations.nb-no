@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En statistisk dimensjon og medlemmene av denne brukes til å registrere og kontrollere ikke-monetære oppføringer i kostnadsregnskap. Statistiske dimensjonsmedlemmer kan brukes til to formål:
 

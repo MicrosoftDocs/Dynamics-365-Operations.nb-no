@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="use-a-continuity-program"></a> Bruke et kontinuitetsprogram
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle tilknyttede salgsordrer. For å fullføre denne prosedyren, må brukeren være definert som telefonsenterbruker. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
 

@@ -27,13 +27,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurere en nettbutikk
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder koblinger til emner som hjelper deg med sentral konfigurasjon og administrasjon av en nettbutikk.
 
 Emnene som er oppført i tabellen nedenfor, er til hjelp når du skal konfigurere Retail-komponenter og nettbutikken for detaljhandel i klienten.
 
 ## <a name="configure-an-online-store"></a>Konfigurere en nettbutikk
+
 | Oppgave                                                | Detaljer                                                                                                                                                                                                                                                                                                                                                   | Emner                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurer Retail-komponenter.                        | Definer og vedlikehold informasjon om detaljhandelsoperasjoner. Denne informasjonen inkluderer butikker, avgifter, produkter, gavekort, kampanjer og rabatter.                                                                                                                                                                                                          | [Konfigurere og vedlikeholde Retail](https://technet.microsoft.com/en-us/library/hh597201.aspx) (TechNet-innhold for Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
@@ -43,6 +44,7 @@ Emnene som er oppført i tabellen nedenfor, er til hjelp når du skal konfigurer
 | Tilordne attributter, og legg til metadata.                   | Velg alternativene som angir hvordan attributtene for hver kategori eller hvert kanalprodukt skal virke i nettbutikken på Microsoft SharePoint-området.                                                                                                                                                                                              | [Definere en nettbutikk](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-innhold for AX 2012)                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="configure-online-store-products"></a>Konfigurer produkter for nettbutikk
+
 | Oppgave                                 | Detaljer                                                                                                                                           | Emner                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Legg til sortimenter for nettbutikken. | Legg til sortimenter som inneholder produktene du tilbyr i en nettbutikk.                                                                  | [Definere en nettbutikk](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-innhold for AX 2012)                                                                                                                                              |
@@ -53,11 +55,12 @@ Emnene som er oppført i tabellen nedenfor, er til hjelp når du skal konfigurer
 | Behandle leveringsmåter.            | Behandle leveringsmåter som tilbys i nettbutikken.                                                                                        | [Definere leveringsmåter](https://technet.microsoft.com/en-us/library/jj728719.aspx) (TechNet-innhold for AX 2012)                                                                                                                                            |
 
 ## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Definere datautveksling mellom Microsoft Dynamics 365 for Retail og nettbutikken
+
 | Oppgave                                 | Detaljer                                                                                                                               | Emner                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Definer profiler for kanalintegrering. | Profiler gjør at komponentene i Retail kan kommunisere med hverandre. Definer profiler før du konfigurerer innstillinger for datautveksling. | [Definere en Real-time Service-profil](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet-innhold for AX 2012) [Definere en kanalprofil](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet-innhold for AX 2012) |
 
- 
+
 
 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Definere tilbehørstilordninger
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du setter opp en tilbehørstilordning. Dette gjøres vanligvis av en transportkoordinator. Du må kjøre veiledningen Definere gebyrer for hubtilbehør og tilbehørsmaler før du bruker denne veiledningen.
 

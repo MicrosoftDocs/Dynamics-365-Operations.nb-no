@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Ordrefrister
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om tidsfrister for ordreregistrering. En tidsfrist for ordreregistrering er en tidsgrense som bestemmer om en kundeordre skal behandles (og oppfylles) som om den ble mottatt på gjeldende dag eller neste dag.
 

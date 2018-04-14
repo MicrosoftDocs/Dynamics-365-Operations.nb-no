@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Fullføring av sikkerhetslager for varer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sikkerhetslager angir en tilleggsmengde for en vare i lageret for å redusere risikoen for at varen er utsolgt. Sikkerhetslager brukes som et reservelager i tilfelle salgsordrer kommer inn og leverandøren kan ikke levere flere varer for å oppfylle kundens ønskede leveringsdato. Når sikkerhetslager brukes til å oppfylle en salgsordre, reduseres sikkerhetslagerantallet. Du kan bruke hovedplanlegging å flytte beholdningen automatisk tilbake til sikkerhetsnivået.    
 

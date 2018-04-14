@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurere sikkerhet for SQL Server Reporting Services for en lokal distribusjon
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bruk fremgangsmåten i dette emnet til å konfigurere SQL Server Reporting Services (SSRS) for din distribusjon av Microsoft Dynamics 365 for Finance and Operations (lokalt).
 
@@ -52,13 +52,13 @@ Bruk fremgangsmåten i dette emnet til å konfigurere SQL Server Reporting Servi
 
     [![Kategorien URL for webportal](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  Når portalen er konfigurert, vil kategorien **Webportal** samsvarer med grafikken nedenfor.
+   Når portalen er konfigurert, vil kategorien **Webportal** samsvarer med grafikken nedenfor.
     [![Kategorien webportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Klikk URL-adressene for rapportene for å vise SQL Server Reporting Services-webportalen. 
-9.  Når du er i portalenområdet, oppretter du en ny mappe kalt **Dynamics**.
+9. Når du er i portalenområdet, oppretter du en ny mappe kalt **Dynamics**.
 
-    [![Dynamics-mappe](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![Dynamics-mappe](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. I **Reporting Services Configuration Manager** klikker du kategorien **E-postinnstillinger** og kontrollerer at innstillingene samsvarer med grafikken nedenfor.
 
@@ -68,15 +68,15 @@ Bruk fremgangsmåten i dette emnet til å konfigurere SQL Server Reporting Servi
 
     [![Kategorien Utførelseskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Ikke endre standardinnstillingene for kategorien **Krypteringsnøkler**. [![kategorien krypteringsnøkler](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    Ikke endre standardinnstillingene for kategorien **Krypteringsnøkler**. [![kategorien krypteringsnøkler](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Klikk kategorien **Abonnementinnstillinger** og kontroller at innstillingene samsvarer med grafikken nedenfor.
 
     [![Kategorien Abonnementinnstillinger](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Ikke endre standardinnstillingene for kategorien **Skalere utrulling**. [![kategorien skalere utrulling](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    Ikke endre standardinnstillingene for kategorien **Skalere utrulling**. [![kategorien skalere utrulling](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Ikke endre standardinnstillingene for kategorien **Power BI-integrasjon**. [![kategorien power bi-integrasjon](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    Ikke endre standardinnstillingene for kategorien **Power BI-integrasjon**. [![kategorien power bi-integrasjon](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Klikk **Avslutt** for å lukke **Reporting Services Configuration Manager**.
 

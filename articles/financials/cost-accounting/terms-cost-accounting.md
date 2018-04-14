@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver de viktigste begrepene som brukes i Kostnadsregnskap.
 
@@ -150,14 +149,14 @@ Formeltildelingsgrunnlag lar deg definere avanserte formler for å oppnå det ri
 |  + |  Tillegg |
 |  – |  Subtraksjon |
 | *  | Multiplikasjon  |
-    
+
 Tradisjonelle IF-setninger støttes ikke. Du kan imidlertid lage setninger og validere om de er sanne.
 
 |  **Setningsvalidering** | **Resultat**  |
 |---|---|
 |  a > b| Sann  |
 |  a > b |  Usann |
-    
+
 **Administrasjonskostnad**
 
 Indirekte kostnader refererer til de pågående utgiftene for drift av en virksomhet. De er kostnader som ikke kan kobles direkte til bestemte aktiviteter. Her er noen eksempler på indirekte kostnader:

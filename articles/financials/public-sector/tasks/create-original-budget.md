@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a>Opprette et opprinnelig budsjett og tilbakeføre foreløpige budsjettposter i offentlig sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Når du oppretter en opprinnelig budsjettpost og bruker budsjettmodellen og dimensjonsverdiene som inneholder de foreløpige budsjettbeløpene, kan de foreløpige budsjettbeløpene tilbakeføres. Denne prosedyren ble opprettet med demonstrasjonsfirmadataene for PSUS i partisjonen for offentlig sektor.
 

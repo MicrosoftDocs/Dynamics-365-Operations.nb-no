@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-element-dimensions"></a>Kostnadselementdimensjoner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Som en av de viktige søylene i kostnadsregnskap, brukes kostnadelementdimensjoner til å kategorisere og spore hvor kostnadene flyter til. 
 

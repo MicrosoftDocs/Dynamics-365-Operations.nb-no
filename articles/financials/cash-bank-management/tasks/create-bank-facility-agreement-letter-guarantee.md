@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Opprette en fasilitetsavtale for garantibrevet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven oppretter en bankfasilitetsavtale for å behandle et garantibrev. Denne oppgaven bruker demonstrasjonsfirmaet USMF. 
 

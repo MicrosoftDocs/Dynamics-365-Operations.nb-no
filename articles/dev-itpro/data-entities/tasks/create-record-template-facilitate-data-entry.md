@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Opprette en postmal for å forenkle dataregistrering
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du oppretter en postmal slik at verdiene som brukes ofte, ikke trenger å angis eksplisitt for hver nye post. I denne prosedyren skal du opprette en ny post for nye bærbare datamaskiner som skal legges til anleggsmidlene. Denne prosedyren bruker eksempelfirmaet USMF.
 

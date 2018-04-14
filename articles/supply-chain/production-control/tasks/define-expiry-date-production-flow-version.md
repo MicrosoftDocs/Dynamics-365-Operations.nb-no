@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>Angi en utløpsdato for en produksjonsflytversjon
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en gitt dato, eller planlegge erstatning av en aktiv versjon med en ny versjon, må du angi en utløpsdato for versjonen. Det er ikke nødvendig å deaktivere versjonen.
 

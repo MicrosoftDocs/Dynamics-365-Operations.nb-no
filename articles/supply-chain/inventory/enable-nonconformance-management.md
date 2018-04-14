@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nonconformance-management"></a>Behandling av avvik
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver det grunnleggende oppsettet som kreves for å bruke avvik. Ekstra oppsett er nødvendig hvis du vil bruke kvalitetsordrer.
 

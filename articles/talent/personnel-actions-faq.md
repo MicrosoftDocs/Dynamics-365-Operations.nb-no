@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Vanlige spørsmål om personalhandlinger
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet inneholder svar på spørsmål du kan ha hvis organisasjonen bruker personalhandlinger. Personalhandlinger er flere trinn du må fullføre når du utfører bestemte personalrelaterte oppgaver. Eksempler på oppgaver som kan kreve personalhandlinger, er når du oppretter nye stillinger, endrer verdier for eksisterende stillinger, ansette nye arbeidere, overføre arbeidere, endre arbeiderkompensasjon, endre stillingstilordninger eller avslutte arbeidere.
 
@@ -64,9 +64,9 @@ Ja, du kan slette personalhandlinger som har statusen **Utkast**, **Feil**, **Mi
 Hvis en forespørsel om personalhandling mislykkes, følger du denne fremgangsmåten for å rette feilen og sende forespørselen på nytt:
 
 > 1. Klikk **Feiltekst**-knappen i **handlingsruten** for å vise meldingsteksten som beskriver problemet.
-
+> 
 > 2. Klikk **Aktiver på nytt** i **handlingsruten** for å laste inn den nyeste informasjonen og sette statusen for personalhandlingen tilbake til **Utkast**.
-
+> 
 > 3. Rett opp feilen, og klikk deretter **Fullført** eller **Send inn**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Hva skjer med en personalhandling som bruker arbeidsflyt når den endelige godkjenningen er fullført?

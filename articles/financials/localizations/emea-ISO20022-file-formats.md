@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan importere betalingsfiler i følgende formater:
 
@@ -41,8 +41,8 @@ Du må oppfylle følgende forutsetninger for å importere bank varselmeldinger i
 3. På siden **Kundebankkonto** kan du definere en kundebankkontopost ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret.
 4. På siden **Bankkontoer** kan du definere en bankkontoer for juridiske enheter ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret, valuta og adresse.
 
-    > [!NOTE]
-        > Hvis du planlegger å bruke avansert bankavstemming, på den **Avstemming** hurtigfanen angir du **Avansert bankavstemming** til **Ja**. Hvis du vil avstemme uposterte importerte betalinger, kan du angi **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** til **Ja**.
+   > [!NOTE]
+   > Hvis du planlegger å bruke avansert bankavstemming, på den **Avstemming** hurtigfanen angir du **Avansert bankavstemming** til **Ja**. Hvis du vil avstemme uposterte importerte betalinger, kan du angi **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** til **Ja**.
 
 5. Valgfritt: På siden **Transaksjonskodetilordning** kan du definere koblingen mellom banktransaksjonskoder i fil- og banktransaksjonstypene.
 6. Hvis filen inneholder avgifter på transaksjonen som du vil postere sammen med den innkommende betalingen, oppretter du et betalingsgebyr på siden **Kundebetalingsgebyr**. Deretter, på siden **Betalingsmåter**, knytte du betalingsgebyret til bankkontoen i betalingsgebyroppsettet.

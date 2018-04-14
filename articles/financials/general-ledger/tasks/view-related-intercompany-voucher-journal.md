@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Vise et relatert konserninternt bilag fra en journal
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved postering av en konsernintern transaksjon fra økonomijournalen.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-benefit-expiration-dates"></a>Administrere utløpsdatoer for fordel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du kan la en fordel utløpe eller utvide den, og styre registreringsdatoene til arbeidere som er registrert i fordelen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

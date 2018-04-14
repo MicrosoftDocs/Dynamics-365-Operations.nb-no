@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 prosent saldoavskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
 
@@ -68,6 +67,7 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 -   **Regnskapsperiode** posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret. Dette beløpet avsettes i regnskapsperiodene som defineres på siden **Regnskapskalendere**.
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Eksempel på 150 % redusert saldoavskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |

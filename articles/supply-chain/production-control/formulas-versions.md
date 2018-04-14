@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Formler og formelversjoner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En formel definerer materialer, ingredienser og utfall av en bestemt prosess i prosessproduksjon. Sammen med den tilsvarende ruten definerer formelen hele prosessen i prosessproduksjon. Formler brukes til å planlegge og produsere produkter i prosessproduksjon.
 

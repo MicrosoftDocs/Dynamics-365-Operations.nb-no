@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Definer kanalspesifikke rabatter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskriver begrepene du trenger å kjenne til for å opprette en rabatt for en bestemt kanal. 
 
@@ -61,7 +60,7 @@ Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 4.  Når du har opprettet den nye **Tilbake til skolen**-rabatten, må du klikke **Prisgrupper** øverst på **Rabatt**-siden. **Rabattprisgrupper**-siden åpnes. Deretter klikker du **Ny** og velger **Houston-PG**-prisgruppen.
 5.  Nå kan du aktivere rabatten og overføre den til kanalen.
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Opprette en rentekode med et område
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Rentekoder kan defineres til å beregne forskjellige rentebeløp basert på et verdiområde. Denne prosedyren viser hvordan du legger til en rentekode og legger til et område i den.
 

@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beregningsmåter av merverdiavgift i grunnlagsfeltet
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver alternativene i Opprinnelse-feltet på siden for mva-koder, og hvordan mva beregnes basert på det valgte alternativet for en mva-kode.
 
@@ -53,11 +52,12 @@ Skattemyndighetene har innført spesielle avgifter på en vare. Avgiftsbeløpene
 -   MERVERDIAVGIFT = 25%, ved bruk av beregningsmåten prosent av bruttobeløp
 
 Hvis nettobeløpet er 10,00, er AVGIFT 1 1,00 (10,00 x 10%) og AVGIFT 2 = 2,00 (10,00 x 20%). Beløpene er som følger: bruttobeløp: nettobeløp + AVGIFT 1 beløp AVGIFT 2 beløp (10,00 + 1,00 + 2,00) = 13,00 MERVERDIAVGIFT = 13,00 x 25% = 3,25 Total AVGIFT og MERVERDIAVGIFT: 1,00 + 2,00 + 3,25 = 6,25 totalbeløp: 10,00 + 6,25 = 16,25
+
 | **Obs!**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Bare én avgiftskode med opprinnelse = prosenten av bruttobeløpet kan brukes for en transaksjon. Hvis mer enn én eller slik avgiftskode bestemmes for en transaksjon, vises en feil om at merverdiavgift ikke kan beregnes. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Prosent av merverdiavgift
 -----------------------
 
@@ -70,6 +70,7 @@ Gitt følgende mva-koder:
 -   MERVERDIAVGIFT 1 = 25%, ved bruk av metoden prosent av bruttobeløp
 
 Nettobeløp: 10,00 AVGIFT 1: 10,00 x 10% = 1,00 AVGIFT 2: 1,00 x 20% = 0,20 bruttobeløp: 10,00 + 1,00 + 0,20 = 11,20 MERVERDIAVGIFT: 11,20 x 25% = 2,80 total AVGIFT og MERVERDIAVGIFT: 1,00 + 0,20 + 2,80 = 4,00 totalbeløp: 10,00 + 4,00 = 14,00
+
 | **Obs!**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mva-beregninger med flere nivåer er ikke mulig. En avgift kan ikke beregnes basert på en avgift som allerede er beregnet basert på en annen avgift. Flere mva på mva-koder på enkeltnivå kan beregnes på en transaksjon. |
@@ -79,6 +80,7 @@ Når du velger Beløp per enhet i grunnlagsfeltet, beregnes merverdiavgift som e
 ### <a name="example"></a>Eksempel
 
 Mva-koden er definert som: USD 1,20 per enhet = boks på en salgsfakturalinje 25 bokser for en vare selges Mva-sats beregnes som 25 x 1,20 = 30,00
+
 | **Obs!**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis transaksjonen angis i en annen enhet enn enheten som er angitt i mva-koden, omregnes den automatisk basert på enhetsomregningene som er angitt på Enhetsomregninger-siden. |

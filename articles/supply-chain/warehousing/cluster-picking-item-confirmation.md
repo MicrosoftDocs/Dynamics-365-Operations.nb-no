@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekreftelse for gruppeplukking
 Gruppeplukking lar deg plukke varer for flere ordrer samtidig. Når gruppeplukking brukes, er varebekreftelse avgjørende for å bekrefte varene som legges til i grupper. Du kan bekrefte varer i gruppeplukking mens gruppeplukkingen utføres.
@@ -37,7 +37,8 @@ Varebekreftelse for gruppeplukking fungerer på samme måte som når du bekrefte
 1.  Åpne oppsettskjemaet for arbeidsbekreftelse for et menyelement på mobilenheten: **Lagerstyring** > **Lagerstyring** > **Oppsett** > **Mobilenhet** > **Menyelementer på mobilenheten**.
 2.  Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten.
 
-| Alternativ        | beskrivelse   | 
-| ------------- | ------------- |
-|Produktbekreftelse | Lar deg bekrefte hver del av beholdningen fra den mobile enheten når den skannes.|
+|        Alternativ        |                                    beskrivelse                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Produktbekreftelse | Lar deg bekrefte hver del av beholdningen fra den mobile enheten når den skannes. |
+
 
