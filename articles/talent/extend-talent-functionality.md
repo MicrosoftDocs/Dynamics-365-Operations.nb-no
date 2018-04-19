@@ -3,7 +3,7 @@ title: Utvide funksjonaliteten i Microsoft Dynamics 365 for Talent
 description: Hvis du har opprettet en Microsoft PowerApps, kan du starte disse programmene fra koblinger i Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,16 @@ Bruk **Angi innebygd Microsoft PowerApps**-siden til å konfigurere Talent-sider
 
 Følgende informasjon angis på denne siden: 
 
-> - Et beskrivende navn eller en identifikator for hver PowerApps-applikasjon.
-> - En unik identifikator (GUID) for hvert program som du legger til på en Talent-side. Program-ID-en er tilgjengelig på PowerApps-området [powerapps.com](http://powerapps.com/). 
-> - Siden som brukere kan åpne et program eller en rapport fra. Ikke alle Talent-sider støtter innebygde PowerApps- og Power BI-rapporter. 
-> 
-> [!NOTE]
->  Angi det interne navnet på siden, i stedet for visningsnavnet som vises øverst på siden. Hvis du vil finne det interne navnet, åpner du siden som du trenger det interne navnet for, og høyreklikker hvor som helst på siden. Når menyen åpnes, holder du pekeren over **Skjemainformasjon**-elementet. Det interne skjemanavnet vises ved siden av **Skjemainformasjon**-elementet på menyen.
-> 
-> - Angi skjemakontrollen som programmet kan hente kontekstdata fra. Et program kan for eksempel bruke data om en arbeider. Hvis du angir **Arbeider**-siden i **Kontekst**-feltet, åpnes **Arbeider**-siden når du starter programmet. En oppføring i **Kontekstfelt** er valgfritt. 
-> - Angi størrelsen på dialogboksen som PowerApps-programmet skal kjøre. Dialogboksene angis som "små" eller "stor" for å optimalisere brukergrensesnittet når programmet skal kjøre på en telefon eller en større enhet, henholdsvis. 
+ -  Et beskrivende navn eller en identifikator for hver PowerApps-applikasjon.
+ -  En unik identifikator (GUID) for hvert program som du legger til på en Talent-side. Program-ID-en er tilgjengelig på PowerApps-området [powerapps.com](http://powerapps.com/). 
+ -  Siden som brukere kan åpne et program eller en rapport fra. Ikke alle Talent-sider støtter innebygde PowerApps- og Power BI-rapporter. 
+
+ > [!NOTE]
+ >  Angi det interne navnet på siden, i stedet for visningsnavnet som vises øverst på siden. Hvis du vil finne det interne navnet, åpner du siden som du trenger det interne navnet for, og høyreklikker hvor som helst på siden. Når menyen åpnes, holder du pekeren over **Skjemainformasjon**-elementet. Det interne skjemanavnet vises ved siden av **Skjemainformasjon**-elementet på menyen.
+ 
+-   Angi skjemakontrollen som programmet kan hente kontekstdata fra. Et program kan for eksempel bruke data om en arbeider. Hvis du angir **Arbeider**-siden i **Kontekst**-feltet, åpnes **Arbeider**-siden når du starter programmet. En oppføring i **Kontekstfelt** er valgfritt. 
+-   Angi størrelsen på dialogboksen som PowerApps-programmet skal kjøre. Dialogboksene angis som "små" eller "stor" for å optimalisere brukergrensesnittet når programmet skal kjøre på en telefon eller en større enhet, henholdsvis. 
+
 
 Du kan også angi hvilke juridiske enheter et program skal være tilgjengelig for, eller du kan gjøre det tilgjengelig for alle dine juridiske enheter. PowerApps-programmer er som standard tilgjengelige for alle juridiske enheter.
 
