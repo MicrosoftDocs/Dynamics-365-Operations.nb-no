@@ -33,7 +33,7 @@ I Microsoft Dynamics 365 for Talent er det enkelt å endre brukergrensesnittet o
 > [!NOTE] 
 > Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
-### <a name="personalizing-talent"></a>Tilpasse Talent 
+## <a name="personalizing-talent"></a>Tilpasse Talent 
 Emnene nedenfor viser hvordan du definerer mange funksjoner i Dynamics 365 for Talent som gjør det enklere å få arbeidet gjort i tide. 
 
 -   [Tilpasse brukeropplevelsen](../fin-and-ops/get-started/personalize-user-experience.md) – Dette emnet forklarer de forskjellige måtene du kan tilpasse Talent og tilpasse deler av produktet slik at det passer bedre til dine behov.
@@ -44,7 +44,7 @@ Emnene nedenfor viser hvordan du definerer mange funksjoner i Dynamics 365 for T
 
 -   [Hurtigtaster](../fin-and-ops/get-started/shortcut-keys.md) – Dette emnet viser hurtigtaster for det amerikansk tastaturoppsettet. 
 
-### <a name="accessing-information"></a>Tilgang til informasjon
+## <a name="accessing-information"></a>Tilgang til informasjon
 Emnene nedenfor forklarer hvordan du bruker funksjonene for oppslag, søk og filtrering til å finne informasjon raskt. 
 
 -   [Bruke oppslag til å finne informasjon](../fin-and-ops/get-started/use-lookups-to-find-information.md) – Dette emnet forklarer hvordan oppslag kan bidra til å finne den riktige eller ønskede verdien. Emnet beskriver hvordan oppslag fungerer og inneholder tips som kan bidra til å optimalisere bruken av dem.
