@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
+ms.sourcegitcommit: 3662bb1a20fbdd3769b94247ac071a7cfd7e04f1
+ms.openlocfilehash: 94c07d18de06a75ad86d69d7c06a78e446f0b506
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/20/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="648db-103">Komme i gang med Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="648db-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 > [!NOTE] 
 > <span data-ttu-id="648db-107">Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; og Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="648db-107">The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent.</span></span> <span data-ttu-id="648db-108">Den samme funksjonaliteten kan forekomme i alle de tre produktene.</span><span class="sxs-lookup"><span data-stu-id="648db-108">The same functionality may appear in all 3 products.</span></span> <span data-ttu-id="648db-109">Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet.</span><span class="sxs-lookup"><span data-stu-id="648db-109">As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="648db-110">Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.</span><span class="sxs-lookup"><span data-stu-id="648db-110">Topics that are written for one product may apply to the same functionality in a related product.</span></span>
 
-### <a name="personalizing-talent"></a><span data-ttu-id="648db-111">Tilpasse Talent</span><span class="sxs-lookup"><span data-stu-id="648db-111">Personalizing Talent</span></span> 
+## <a name="personalizing-talent"></a><span data-ttu-id="648db-111">Tilpasse Talent</span><span class="sxs-lookup"><span data-stu-id="648db-111">Personalizing Talent</span></span> 
 <span data-ttu-id="648db-112">Emnene nedenfor viser hvordan du definerer mange funksjoner i Dynamics 365 for Talent som gjør det enklere å få arbeidet gjort i tide.</span><span class="sxs-lookup"><span data-stu-id="648db-112">The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner.</span></span> 
 
 -   <span data-ttu-id="648db-113">[Tilpasse brukeropplevelsen](../fin-and-ops/get-started/personalize-user-experience.md) – Dette emnet forklarer de forskjellige måtene du kan tilpasse Talent og tilpasse deler av produktet slik at det passer bedre til dine behov.</span><span class="sxs-lookup"><span data-stu-id="648db-113">[Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.</span></span>
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/13/2018
 
 -   <span data-ttu-id="648db-117">[Hurtigtaster](../fin-and-ops/get-started/shortcut-keys.md) – Dette emnet viser hurtigtaster for det amerikansk tastaturoppsettet.</span><span class="sxs-lookup"><span data-stu-id="648db-117">[Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout.</span></span> 
 
-### <a name="accessing-information"></a><span data-ttu-id="648db-118">Tilgang til informasjon</span><span class="sxs-lookup"><span data-stu-id="648db-118">Accessing information</span></span>
+## <a name="accessing-information"></a><span data-ttu-id="648db-118">Tilgang til informasjon</span><span class="sxs-lookup"><span data-stu-id="648db-118">Accessing information</span></span>
 <span data-ttu-id="648db-119">Emnene nedenfor forklarer hvordan du bruker funksjonene for oppslag, søk og filtrering til å finne informasjon raskt.</span><span class="sxs-lookup"><span data-stu-id="648db-119">The following topics explain how to use lookups, and the search and filtering features, to find information quickly.</span></span> 
 
 -   <span data-ttu-id="648db-120">[Bruke oppslag til å finne informasjon](../fin-and-ops/get-started/use-lookups-to-find-information.md) – Dette emnet forklarer hvordan oppslag kan bidra til å finne den riktige eller ønskede verdien.</span><span class="sxs-lookup"><span data-stu-id="648db-120">[Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value.</span></span> <span data-ttu-id="648db-121">Emnet beskriver hvordan oppslag fungerer og inneholder tips som kan bidra til å optimalisere bruken av dem.</span><span class="sxs-lookup"><span data-stu-id="648db-121">The topic describes how lookups work and includes tips to help you optimize your use of them.</span></span>
