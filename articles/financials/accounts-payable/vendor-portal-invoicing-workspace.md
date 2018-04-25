@@ -52,16 +52,12 @@ Ved å klikke en flis, vises det en filtrert visning av siden **Fakturaliste**.
 
 I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister. Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes. Den siste tabellisten er et alternativ for å finne fakturaer. Du kan filtrere når du søker, slik at søk utføres raskere.
 
-<a name="all-vendor-invoices-list-page"></a>Side med liste over alle leverandørfakturaer
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Side med liste over alle leverandørfakturaer
 
 Du kan vise alle posterte og uposterte leverandørfakturaer på listesiden **Leverandørsamarbeidsfakturaer**. Du kan bruke denne listesiden til å vise betalingsstatusen for fakturaene. Betalingsstatusene inkluderer Ikke-bokført, Ubetalt, Delvis betalt og Fullt betalt.
 Opprette en ny faktura fra en bestilling
---------------------------------------------
 
 Du kan opprette en ny leverandørfaktura ved å velge handlingen **Ny** i arbeidsområdet **Fakturering av leverandørsamarbeid**. Bestillingsnummeret og fakturanummeret må være oppgitt av leverandøren. Som standard vises alle linjene fra leverandørens bestilling på den nye fakturaen. Informasjon om antall og kostnad kan redigeres før du sender leverandørfakturaen til arbeidsflyten. Du kan knytte filer, notater, bilder og URL-adresser til en faktura før de sendes.
-
-
 
 Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med eksterne leverandører](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 
