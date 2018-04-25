@@ -3,7 +3,7 @@
 # [Komme i gang](talent-get-started.md)
 ## [Systemkrav og oppdateringspolicy](talent-versions-update-policy.md)
 ## [Klargjøre Microsoft Dynamics 365 for Talent](provisioning-talent.md)
-## [Fjerne et Talent-miljø](remove-test-environment.md)
+## [Fjerne et Talent-miljø](remove-talent-environment.md)
 ## [Klargjøre modulære apper for Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Utvide funksjonaliteten for Talent](extend-talent-functionality.md)
 
@@ -13,6 +13,7 @@
 ## [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md)
 ## [Definere firmaspesifikke parametere for Personale](set-up-company-specific-hr-parameters.md)
 ## [Vanlige spørsmål om personalhandlinger](personnel-actions-faq.md)
+## [Formalisere forretningsprosesser](formalize-business-processes.md)
 ## [Bruke en arbeidsflyt til å administrere informasjon om ansatte](workflow-manage-employee-information.md)
 ## [Oversikt over permisjon og fravær](leave-absence-overview.md)
 
