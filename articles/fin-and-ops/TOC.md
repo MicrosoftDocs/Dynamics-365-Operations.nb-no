@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Komme i gang
@@ -17,12 +18,14 @@
 ##### [Kjøpe Finance and Operations (lokalt)](get-started/purchase-on-premises.md)
 
 ### [Hva er nytt eller endret?](get-started/whats-new-changed.md)
+#### [Policy og skyversjoner for programvarelivssyklus](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [Policy og lokale versjoner for programvarelivssyklus](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [Funksjoner som er fjernet eller avskrevet](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
-#### [AX 2012-funksjoner som ble utsatt](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
+#### [AX 2012-funksjoner som er utsatt](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funksjoner som ikke er implementert i lokale distribusjoner](get-started/features-not-implemented-on-prem.md)
-#### [Plattform update 15 (mars 2018)](get-started/whats-new-platform-update-15.md)
-#### [Versjoner og livssykluspolicy](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
-#### [Lokale distribusjoner (mars 2018)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Finance and Operations 8.0 (april 2018)](get-started/whats-new-changed-8-0-April-2018.md)
+#### [Platform update 15 (mars 2018)](get-started/whats-new-platform-update-15.md)
+#### [Lokale distribusjoner for 7.2 med Platform update 12 (mars 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (november 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
@@ -162,6 +165,10 @@
 ###### [Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Konfigurere integrering med Field Service](../supply-chain/sales-marketing/field-service.md)
+###### [Synkronisere produkter i Finance and Operations til produkter i Field Service](../supply-chain/sales-marketing/field-service-product.md)
+###### [Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [Bruke eksterne webtjenester](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
@@ -198,6 +205,8 @@
 #### [Sikkerhet og dataenheter](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
 ### [Vise din egen database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Automatisering av dataoppgave](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Økonomistyring](../financials/index.md)
 
@@ -754,6 +763,7 @@
 #### [Filformater for betalingsmåter](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 #### [Integrering av økonomisk service (ESR)](../financials/localizations/emea-fiscal-service-integration.md)
 #### [Avhending av anleggsmidler i Estland og Litauen](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [Revaluering av utenlandsk valuta](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [Generere et overføringsdokument for en intern lageroverføring](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [Generere en Intrastat-deklarering for EU](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [Generer en rapport om EU-salgsliste](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
@@ -809,13 +819,7 @@
 
 #### [Østerrike](../financials/localizations/austria.md)
 
-#### Belgia
-##### [CODA-bankkontoutdrag](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Opprette og overføre transaksjoner til BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat-avgiftsdeklarering](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [Oppsett for PRODCOM-rapport](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Avstemmingsrapporter](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Definere rapportering for betalingssaldo](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgia](../financials/localizations/belgium.md)
 
 #### [Tsjekkia](../financials/localizations/czech-republic.md)
 
@@ -833,6 +837,7 @@
 ##### [Definere format for betalingsbilag](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### Estland
+##### [Forespørsler om personlige opplysninger](../financials/localizations/emea-est-personal-info.md)
 ##### [Mva-oppgave](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### Frankrike
@@ -859,6 +864,9 @@
 ##### [RB/SL-avskrivning](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Definere betalingsmåte](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Oppdatere betalingsmåte for kunde](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Detaljhandel
+###### [Kassaapparater](../retail/localizations/emea-fra-cash-registers.md)
+###### [Retningslinjer for distribusjon for kassaapparater](../retail/localizations/emea-fra-deployment.md)
 
 #### Tyskland
 ##### [Avskrivning for ekstraanskaffelser](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -877,6 +885,7 @@
 ##### [Metoder for avskrivning av anleggsmidler](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
 ##### [Lavkostanleggsmidler](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Flytte et anleggsmiddel til lager](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Refusjon av avgiftsdokumenter](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### Island
 ##### [Opprette en leverandørkonto og tilknytte kategorien for fakturadeklarering](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -891,6 +900,7 @@
 ##### [Avskrivning av anleggsmidler](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Bekreftelse på følgeseddeldato på fakturaer](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Postere og skrive ut en følgeseddel med leveringsdetaljer for transport](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Dele opp betaling for fakturaer som er utstedt til offentlig administrasjon](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Kildeskatt](../financials/localizations/emea-ita-withholding-tax.md)
@@ -945,6 +955,7 @@
 ##### [Salgs- og kjøpssykluser](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Spesielle oppføringer og åpningsark](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sverige
+##### [Eksportere økonomisk informasjon til revisorer i Sverige](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Importere betalingsformater](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Kassaapparater](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Sveits
@@ -1219,6 +1230,7 @@
 #### [Konfigurere SSRS for en lokal distribusjon](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Utskrift](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Installere dokumentrutingsagenten slik at nettverksskriverenheter kan brukes](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [Oppgradere dokumentrutingsagenten](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Installere nettverksskriverenheter i lokale miljøer](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Dokumentgenererings-, publiserings- og utskriftsegenskaper i lokale distribusjoner](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Kjøre dokumentrutingsagenten som en Windows-tjeneste](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1234,6 +1246,7 @@
 
 ### [Elektronisk rapportering](../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json)
 #### [Konfigurere rammeverket for elektronisk rapportering](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
+#### [Opprette en konfigurasjon](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
 ##### [Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Utforme en domenespesifikk datamodell for elektronisk rapportering](../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Definere modelltilordning og velge datakilder for elektronisk rapportering](../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
@@ -1248,48 +1261,46 @@
 ##### [Konfigurere mål for elektronisk rapportering](../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Utforme en konfigurasjon for å generere rapporter i Microsoft Word-format for elektronisk rapportering](../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Utforme en konfigurasjon for å generere rapporter i OpenXML-format for elektronisk rapportering](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [Endre et format ved å bruke en Microsoft Excel-mal på nytt for elektronisk rapportering](../dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md?toc=/fin-and-ops/toc.json)
 #### [Endre et format for elektronisk rapportering ved å bruke en Microsoft Excel-mal på nytt](../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json)
 #### [Velge definisjon av datamodell under oppretting av format for elektronisk rapportering](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Definere avhengigheten av konfigurasjoner fra andre komponenter for elektronisk rapportering](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Utforme datamodell for å bruke finansdimensjoner som en datakilde for elektronisk rapportering](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
-##### [Tilordne modeller for å bruke finansdimensjoner som en datakilde for elektronisk rapportering](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
-##### [Utforme en rapport for å bruke finansdimensjoner som en datakilde for elektronisk rapportering](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
-##### [Kjøre en rapport som bruker finansdimensjoner som en datakilde for elektronisk rapportering](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
-##### [Opprette format for telling og summering for elektronisk rapportering](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
-##### [Konfigurere beregninger for å utføre telling og summering for elektronisk rapportering](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
-##### [Bruke beregninger til å lage utdata for telling og summering for elektronisk rapportering](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
-##### [Kjøre formatet for å utføre telling og summering for elektronisk rapportering](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
-##### [Utforme et format for å bruke områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk for elektronisk rapportering](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
-##### [Kjøre et format som bruker områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk for elektronisk rapportering](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
-##### [Klargjøre datamodell for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
-##### [Utvide datamodell for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
-##### [Opprette format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
-##### [Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
-##### [Endre og kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
-##### [Utforme konfigurasjoner for å generere rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering (ER) (del 1)](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Gå gjennom konfigurasjoner for å opprette rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Generere rapporter i Microsoft Office-formater med innebygde bilder for elektronisk rapportering](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
+#### [Definere avhengigheten av konfigurasjoner fra andre komponenter for elektronisk rapportering](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Utforme datamodell for å bruke finansdimensjoner som en datakilde](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
+##### [Tilordne modeller for å bruke finansdimensjoner som en datakilde](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
+##### [Utforme en rapport for å bruke finansdimensjoner som en datakilde](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
+##### [Kjøre en rapport som bruker finansdimensjoner som en datakilde](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
+##### [Opprette format for telling og summering](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurere beregninger for å utføre telling og summering](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
+##### [Bruke beregninger til å lage utdata for telling og summering](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
+##### [Kjøre formatet for å utføre telling og summering](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
+##### [Utforme et format for å bruke områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
+##### [Kjøre et format som bruker områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
+##### [Klargjøre datamodell for å bruke dokumentbehandlingsfiler i formatutdata](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
+##### [Utvide datamodell for å bruke dokumentbehandlingsfiler i formatutdata](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
+##### [Opprette format for å bruke dokumentbehandlingsfiler i formatutdata](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
+##### [Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
+##### [Endre og kjøre format for å bruke dokumentbehandlingsfiler i formatutdata](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
+##### [Utforme konfigurasjoner for å generere rapporter i Microsoft Office-formatene med innebygde bilder](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Se gjennom konfigurasjoner for å opprette rapporter i Microsoft Office-formatene med innebygde bilder](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Generere rapporter i Microsoft Office-formater med innebygde bilder](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
 #### [Generere elektroniske dokumenter og oppdatere programdata ved hjelp av verktøyet for elektronisk rapportering](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json)
-##### [Importere konfigurasjoner for å generere dokumenter med oppdatering av programdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Generere dokumenter med oppdatering av programdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
-##### [Endre modell og tilordning for å generere dokumenter med oppdatering av programdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
-##### [Endre format for å generere dokumenter med oppdatering av programdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
-##### [Generere dokumenter med oppdatering av programdata for elektronisk rapportering](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
+##### [Importere konfigurasjoner for å generere dokumenter med programdata](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Utforme konfigurasjoner for å generere dokumenter med programdata](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
+##### [Endre modell og tilordning for å generere dokumenter med programdata](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
+##### [Endre format for å generere dokumenter med programdata](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
+##### [Generere dokumenter med programdata](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
 #### [Bygge inn bilder og figurer i forretningsdokumenter som blir generert ved hjelp av verktøyet for elektronisk rapportering](../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json)
-#### [Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
-##### [Importere en konfigurasjon fra Lifecycle Services for elektronisk rapportering](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
 #### [Administrere konfigurasjonslivssyklusen](../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json)
-#### [Opprette en konfigurasjon](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
-#### [Laste ned konfigurasjoner fra Lifecycle Services](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
-#### [Utvide funksjoner for elektronisk rapportering](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
-##### [Administrere konfigurasjoner av modelltilordning for elektronisk rapportering](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Importere en konfigurasjon fra Lifecycle Services for elektronisk rapportering](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Laste ned konfigurasjoner fra Lifecycle Services](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
+##### [Importere konfigurasjoner av elektronisk rapportering](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+#### [Administrere konfigurasjoner av modelltilordning for elektronisk rapportering](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
 ##### [Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil for elektronisk rapportering](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
-#### [Importere konfigurasjoner av elektronisk rapportering](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
 #### [Analysere innkommende dokumenter for å oppdatere programdata](../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json)
 #### [Analysere innkommende dokumenter i CSV-format](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json)
-
+##### [Utvide funksjoner for elektronisk rapportering](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
 ##### [API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3](../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json)
+
 
 ### Innebygde analytisk løsninger
 #### [Innebygd Power BI i arbeidsområder](../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json)
@@ -1451,6 +1462,7 @@
 #### [Jobbintroduksjon for leverandør](../supply-chain/procurement/vendor-onboarding.md)
 #### [Leverandørsamarbeid med eksterne leverandører](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Leverandørsamarbeid med kunder](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Import av leverandørkataloger](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Definere en ekstern katalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Bruke eksterne kataloger for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Mobilt arbeidsområde for leverandørsamarbeid](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
@@ -1598,17 +1610,19 @@
 ##### [Materialerstatning i produksjon](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registrering for produksjonsutførelse](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Tilbakemeldinger på produksjon](../supply-chain/production-control/production-feedback.md)
-##### [Timeregistrering](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Fraværsregistrering i Timeregistrering](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Aktivere lønnsprosessen for timeregistrering](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Konfigurere en arbeider som bruker den mobile jobbenheten](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Behandle finans i produksjon
 ##### [Tildele tid til jobber i en jobbunt](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Beregne materialforbruk](../supply-chain/production-control/consumption.md)
 ##### [Produksjonspostering](../supply-chain/cost-management/production-posting.md)
+#### [Timeregistrering](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Lønn basert på registreringer](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Fraværsregistrering i Timeregistrering](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Fleksigrupper](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing 
-#### [Oversikt over lean-varehandel](../supply-chain/production-control/lean-manufacturing-overview.md)
+#### [Oversikt over lean manufacturing](../supply-chain/production-control/lean-manufacturing-overview.md)
 #### [Aktivitetsbasert utsetting](../supply-chain/production-control/activity-based-subcontracting.md)
 
 #### Opprettholde produksjonshoveddata
@@ -1835,7 +1849,8 @@
 ### [Arbeidspolicyer for lager](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Flytting av beholdning med tilknyttet arbeid i Lagerstyring](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Administrere lagerarbeidere](../supply-chain/warehousing/manage-warehouse-workers.md)
-### Plukk og pakking
+### Plukking og pakking
+#### [Definere gruppeplukking](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Parti- og nummerskiltbekreftelse](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mottak av kombinerte nummerskilt](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1843,10 +1858,11 @@
 #### [Plukke eldste parti på en mobilenhet](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Stykkplukkingsbekreftelse](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Produktbekreftelse for gruppeplukking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Delvis levering av en server for transporten](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Satsvis frigivelse av delvis reserverte overføringsordrer](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Pakkematerialer og -gebyrer](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Lageropptelling
+#### [Årsakskoder for lagertelling](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Blokkere lager](../supply-chain/inventory/inventory-blocking.md)
 #### [Syklustelling](../supply-chain/warehousing/cycle-counting.md)
 #### [Definere syklustelling ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
@@ -1857,6 +1873,7 @@
 #### [Beholdningsstatus](../supply-chain/inventory/inventory-statuses.md)
 #### [Lagerbrikkeopptelling](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Etterfylling](../supply-chain/warehousing/replenishment.md)
+#### [Umiddelbar etterfylling](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Etterfylling med uttak – Kanbaner](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [Installere og konfigurere lagerappen ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Konfigurere feltnavn i lagerapp](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
