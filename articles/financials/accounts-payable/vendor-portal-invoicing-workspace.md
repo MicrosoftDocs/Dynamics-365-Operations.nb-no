@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57fc1c21394d91f6a8bd4726c9d948c8ae2cf4d0
+ms.sourcegitcommit: 8af424d1a1ce41316008649472c2b8748806c6d6
+ms.openlocfilehash: 0a76417e01b67b493b320973c14e059850ab772e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -52,16 +52,12 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="8ddc4-116">I delen **Tabellister** er statusen for fakturering delt inn på samme måte som sammendragsflisene: Utkast og Sendt, men ikke godkjente lister.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="8ddc4-117">Når du er i kladdemodus, kan en faktura sendes til arbeidsflyten eller slettes.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="8ddc4-118">Den siste tabellisten er et alternativ for å finne fakturaer.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="8ddc4-119">Du kan filtrere når du søker, slik at søk utføres raskere.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-119">You can filter as you search, to allow for faster searches.</span></span>
 
-<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="8ddc4-120">Side med liste over alle leverandørfakturaer</span><span class="sxs-lookup"><span data-stu-id="8ddc4-120">All vendor invoices list page</span></span>
------------------------------
+### <a name="all-vendor-invoices-list-page"></a><span data-ttu-id="8ddc4-120">Side med liste over alle leverandørfakturaer</span><span class="sxs-lookup"><span data-stu-id="8ddc4-120">All vendor invoices list page</span></span>
 
 <span data-ttu-id="8ddc4-121">Du kan vise alle posterte og uposterte leverandørfakturaer på listesiden **Leverandørsamarbeidsfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="8ddc4-122">Du kan bruke denne listesiden til å vise betalingsstatusen for fakturaene.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="8ddc4-123">Betalingsstatusene inkluderer Ikke-bokført, Ubetalt, Delvis betalt og Fullt betalt.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
 <span data-ttu-id="8ddc4-124">Opprette en ny faktura fra en bestilling</span><span class="sxs-lookup"><span data-stu-id="8ddc4-124">Creating a new invoice from a purchase order</span></span>
---------------------------------------------
 
 <span data-ttu-id="8ddc4-125">Du kan opprette en ny leverandørfaktura ved å velge handlingen **Ny** i arbeidsområdet **Fakturering av leverandørsamarbeid**.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="8ddc4-126">Bestillingsnummeret og fakturanummeret må være oppgitt av leverandøren.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="8ddc4-127">Som standard vises alle linjene fra leverandørens bestilling på den nye fakturaen.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="8ddc4-128">Informasjon om antall og kostnad kan redigeres før du sender leverandørfakturaen til arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="8ddc4-129">Du kan knytte filer, notater, bilder og URL-adresser til en faktura før de sendes.</span><span class="sxs-lookup"><span data-stu-id="8ddc4-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
-
-
 
 <span data-ttu-id="8ddc4-130">Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med eksterne leverandører](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span><span class="sxs-lookup"><span data-stu-id="8ddc4-130">For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span></span>
 
