@@ -3,7 +3,7 @@ title: Ett bilag
 description: "Med ett bilag for finansjournaler (generell journal, anleggsmiddeljournal, leverandørbetalingsjournal og så videre) kan du angi flere underfinansjournaltransaksjoner i forbindelse med ett bilag."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Ett bilag
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Denne funksjonaliteten blir tilgjengelig i Dynamics 365 for Finance and Operations versjon 8.0, som vil være tilgjengelig våren 2018.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 Den eksisterende funksjonaliteten for finansjournaler (generell journal, anleggsmiddeljournal, leverandørbetalingsjournal og så videre) kan du angi flere underfinansjournaltransaksjoner i forbindelse med ett bilag. Vi refererer til denne funksjonaliteten som "Ett bilag." Du kan opprette Ett bilag på en av følgende måter:
 
--   Definere journalnavnet (**Økonomimodul** \> **Journaloppsett** \>**Journalnavn**) slik at feltet **Nytt bilag** er satt til **Bare ett bilagsnummer**. Hver linje du legger til journalen, inkluderes nå på det samme bilaget. Hver linje legges inn på samme bilag, og derfor kan bilaget angis som et bilag med flere linjer, som en konto/motkonto på samme linje eller som en kombinasjon.
+-   Definere journalnavnet (**Økonomimodul** \> **Journaloppsett** \>**Journalnavn**) slik at feltet **Nytt bilag** er satt til **Bare ett bilagsnummer**. * Hver linje du legger til journalen, inkluderes nå på det samme bilaget. Hver linje legges inn på samme bilag, og derfor kan bilaget angis som et bilag med flere linjer, som en konto/motkonto på samme linje eller som en kombinasjon.
 
 [![Enkeltlinje](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Legg merke til at definisjonen av Ett bilag ikke inneholder journalnavnene som bare er angitt som **Ett bilagsnummer** og brukeren angir deretter et bilag som bare inkluderer finanskontotyper.  I dette dokumentet betyr Ett bilag at det er ett bilag som inneholder mer enn én leverandør, kunde, bank, aktiva eller prosjekt. 
 
 -   Angi et bilag med flere linjer der det ikke er noen motkonto.
 
@@ -68,13 +71,16 @@ Deretter genererer du rapporten **Utgifter etter leverandør** i arbeidsområdet
 
 På grunn av problemene som ble nevnt tidligere, vil funksjonen Ett bilag bli foreldet. Men fordi det er funksjonshull som avhenger av denne funksjonaliteten, foreldes ikke funksjonaliteten samtidig. I stedet bruker vi følgende tidsplan: 
 
--   **Versjonen våren 2018** – Funksjonaliteten blir deaktivert som standard via en parameter for økonomimodul. Du kan imidlertid aktivere funksjonen hvis organisasjonen har et scenario som faller inn under hullene i forretningsscenarier som er oppført tidligere i dette emnet.
+- **Versjonen våren 2018** – Funksjonaliteten blir deaktivert som standard via en parameter for økonomimodul. Du kan imidlertid aktivere funksjonen hvis organisasjonen har et scenario som faller inn under hullene i forretningsscenarier som er oppført tidligere i dette emnet.
 
-    -   Hvis en kunde har et forretningsscenario som ikke krever Ett bilag, må du ikke aktivere funksjonen. Vi kommer ikke til å reparere "feil" i områder som ble identifisert senere i dette emnet, hvis denne funksjonaliteten brukes selv om det finnes en annen løsning.
+  -   Hvis en kunde har et forretningsscenario som ikke krever Ett bilag, må du ikke aktivere funksjonen. Vi kommer ikke til å reparere "feil" i områder som ble identifisert senere i dette emnet, hvis denne funksjonaliteten brukes selv om det finnes en annen løsning.
 
-    -   Slutt å bruke Ett bilag for integreringer i Microsoft Dynamics 365 Finance and Operations, med mindre funksjonen kreves for et av funksjonshullene.
+  -   Slutt å bruke Ett bilag for integreringer i Microsoft Dynamics 365 Finance and Operations, med mindre funksjonen kreves for et av funksjonshullene.
 
--   **Høsten 2018 og senere versjoner** – Funksjonshullene er fylt ut. Etter at funksjonshullene er fylt ut, deaktiveres funksjonen Ett bilag permanent.
+- **Høsten 2018 og senere versjoner** – Funksjonshullene er fylt ut. Etter at funksjonshullene er fylt ut, deaktiveres funksjonen Ett bilag permanent.
+
+- > [!IMPORTANT]
+  > Vær oppmerksom på at **Bare ett bilagsnummer**-alternativet ikke er fjernet fra journalnavnoppsettet.  Dette alternativet støttes fortsatt når bilaget bare inneholder finanskontotyper.  Kunder må være forsiktige når de bruker denne innstillingen fordi bilaget ikke posteres hvis de bruker **Bare ett bilagsnummer**, men deretter angir mer enn én kunde, leverandør, bank, aktiva eller prosjekt.  Kunder kan også fremdeles angi en blanding av underfinansjournalkontotyper, for eksempel en betaling i en enkelt bilag som inneholder kontotyper fra leverandør/bank.  
 
 <a name="why-use-one-voucher"></a>Hvorfor bruke Ett bilag?
 ====================
@@ -102,13 +108,13 @@ Følgende scenarier kan gjennomføre bare ved hjelp av funksjonen Ett bilag. Dis
 
 >   Hvis en organisasjon må vise regnskapspostene fra en forretningshendelse sammen, må den bruke Ett bilag. 
 
--   **Landspesifikke funksjoner**
+- **Landspesifikke funksjoner**
 
- -   SAD-funksjonen (Single Administrative Document) for Polen krever for øyeblikket at ett bilag brukes. Inntil et grupperingsalternativ er tilgjengelig for denne funksjonen, må du fortsette å bruke funksjonen Ett bilag. Det kan være flere landspesifikke funksjoner som krever funksjonen ett bilag.
+  -   SAD-funksjonen (Single Administrative Document) for Polen krever for øyeblikket at ett bilag brukes. Inntil et grupperingsalternativ er tilgjengelig for denne funksjonen, må du fortsette å bruke funksjonen Ett bilag. Det kan være flere landspesifikke funksjoner som krever funksjonen ett bilag.
 
--   **Forskuddsbetaling for kundebetalingsjournal som har avgifter på flere "linjer"**
+- **Forskuddsbetaling for kundebetalingsjournal som har avgifter på flere "linjer"**
 
- -   En kunde gjør et forskudd for en ordre, og linjene i ordren har ulike avgifter som må registreres for forskuddsbetalingen. Kundeforskuddsbetalingen er én transaksjon som simulerer linjene i ordren slik at den aktuelle avgiften kan registreres for beløpet på hver linje.
+  -   En kunde gjør et forskudd for en ordre, og linjene i ordren har ulike avgifter som må registreres for forskuddsbetalingen. Kundeforskuddsbetalingen er én transaksjon som simulerer linjene i ordren slik at den aktuelle avgiften kan registreres for beløpet på hver linje.
 
 I dette scenariet er kundene på enkeltbilaget den samme kunden, fordi transaksjonen simulerer linjene i en kundeordre. Forskuddsbetalingen må angis på ett bilag, fordi mva-beregningen må utføres på "linjene" for enkeltbetalingen som kunden utførte.
 

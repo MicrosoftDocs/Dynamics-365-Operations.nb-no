@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Definere rentesatser for en rentekode
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rentekoder inneholder innstillinger som bestemmer nå renter belastes og hvordan de beregnes på forfalte kontoer.
 
@@ -47,17 +46,17 @@ Når en rente brukes til å beregne rente, opprettes det en egen rentenota for h
 ## <a name="interest-rates-based-on-a-percentage"></a>Rentesatser basert på en prosent
 Du kan definere rentesatser som beregner en bestemt prosent.
 
--   Rentebeløp gjelder for alle valutaer.
--   Valgfrie rentebeløpsgrenser kan angis.
--   **Prosent** velges i **Beregn rente basert på**-feltet på siden **Definer rentekoder**.
+- Rentebeløp gjelder for alle valutaer.
+- Valgfrie rentebeløpsgrenser kan angis.
+- <strong>Prosent</strong> velges** <strong>i **Beregn rente basert på</strong>-feltet på siden <strong>Definer rentekoder</strong>.
 
 For eksempel, for å definere en rentekode som setter 5 prosent rente for annenhver måned som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 2 i feltet **Beregn renter hver** og velger **Måned**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Rentesatser basert på beløp
 Du kan definere rentesatser som beregner et bestemt beløp per valuta.
--   Et rentebeløp angis for hver valuta i rentekoden.
--   Valgfrie rentebeløpsgrenser kan angis.
--   **Beløp** velges i **Beregn rente basert på**-feltet på **Definer rentekoder**-siden.
+- Et rentebeløp angis for hver valuta i rentekoden.
+- Valgfrie rentebeløpsgrenser kan angis.
+- <strong>Beløp ** velges i **Beregn rente basert på</strong>-feltet på <strong>Definer rentekoder-siden</strong>.
 
 For eksempel, for å definere en rentekode som setter en rente på 25,00 for hver 20. dag som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 20 i feltet **Beregn renter hver** og velger **Dag**.
 
@@ -84,7 +83,7 @@ Slik definerer du intervallinformasjonen.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Eksempel 2: Rente etter intervall = Dager
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Slik definerer du intervallinformasjonen.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Eksempel 3: Rente etter intervall = Måneder
 ----------------------------------------------------
 

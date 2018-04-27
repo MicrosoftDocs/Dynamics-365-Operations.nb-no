@@ -19,23 +19,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
-ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0936ae3b8d07ef221345bda272170e1482f37cbf
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed"></a>Hva er nytt eller endret?
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, kan du se [Prosessen for å oppgradere til den nyeste versjonen](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 
-[!include[release notes](../includes/release-notes.md)]
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Programversjoner
 
@@ -53,7 +53,7 @@ Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, k
 <th>Versjon</th>
 <th>Build-nummer</th>
 <th>Tilgjengelighet</th>
-<th>Få mer informasjon</th>
+<th>Finn ut mer</th>
 </tr>
 </thead>
 <tbody>
@@ -61,6 +61,13 @@ Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, k
 
 </tr>
 <tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30</td>
+<td>2018. april</td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations versjon 8.0 (april 2018)</a></td>
+</tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
@@ -122,7 +129,7 @@ Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, k
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Plattform update 15</td>
 <td>7.0.4839</td>
-<td>Mars 2018 (Dette er en bestemt versjon som bare er tilgjengelig for brukere som har valgt CAAP-programmet (fordelsprogrammet for kontinuerlig automatisk oppdatering).)</td>
+<td>Mars 2018 (Dette er en bestemt versjon som bare er tilgjengelig for brukere som har valgt CAAP-programmet (fordelsprogrammet for kontinuerlig automatisk oppdatering).) Plattformoppdatering 15 er også tilgjengelig i Dynamics 365 for Finance and Operations 8.0.)</td>
 <td><a href="whats-new-platform-update-15.md">Hva er nytt eller endret i plattformoppdatering 15 (mars 2018) for Dynamics 365 for Finance and Operations, Enterprise edition</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>

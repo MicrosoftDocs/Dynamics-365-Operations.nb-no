@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Emnet beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter. Denne informasjonen er nyttig for partnere som overfører eller overfører data til en ny lønnsimplementering fra et annet system. Ved klargjøring for å angi startsaldoer for lønn, kontrollerer vi følgende informasjon:
 
 > * Ansattposter er angitt og tilgjengelige i systemet
 > * Følgende data blir definert og tilordnet til ansatte:
-
+> 
 > > * Lønnssykluser og lønnsperioder
 > > * Inntektskoder
 > > * Avgifter
 > > * Fordeler og fradrag
-
+> 
 > * Firmaet skal har valgt en dato der startsaldoer for lønn kan angis.
-
+> 
 > * Informasjonen ble samlet om alle inntekter, fordeler/fradrag, fordelsbidrag, avgifter for ansatte, og arbeidstakeravgifter og arbeidsgiveravgifter deres og år til dato-beløp fra det gamle systemet.
 
 Når du planlegger å skrive inn startsaldoer, bør du vurdere hvor detaljert dataene skal være. De fleste bedrifter angir et enkelt, konsolidert år til dato-beløp. Hvis du trenger mer informasjon, kan du imidlertid angi saldoer kvartalsvis. Når nødvendig detaljnivå bestemmes, bestemmes også hvor mange manuelle lønnsoppgaver som må opprettes for hver arbeider. For ett enkelt år til dato-beløp trengs det bare ett manuelt utdrag for hver ansatt. Hvis vil gjøre dette bruker du år-til-dato-beløp fra den siste lønnsoppgaven fra forrige systemet som beløp som angis i det nye lønningssystemet.
@@ -128,22 +128,22 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
 
 4. Åpne kategorien **Fordelsfradrag** og angi følgende:
 
-| Felt                           | Verdi            |
-|---------------------------------|------------------|
-| Fordel                         | Fradragsbeløp |
-| 401K | Delta              | 3000.00          |
-| Tannforsikring | SubSp                  | 495.00           |
-| Utgifter til pass og stell av barn | Delta | 2500.00          |
-| Syn | SupSp                  | 500,00           |
+|       Felt       |      Verdi       |
+|-------------------|------------------|
+|      Fordel      | Fradragsbeløp |
+|       401K        |   Delta    |
+|      Tannforsikring       |      SubSp       |
+| Utgifter til pass og stell av barn |   Delta    |
+|      Syn       |      SupSp       |
 
 5. I kategorien **Fordelsbidrag** angir du følgende:
 
-| Felt              | Verdi               |
-|--------------------|---------------------|
-| Fordel            | Bidragsbeløp |
-| 401K | Delta | 3000,00             |
-| Tannforsikring | SubSp     | 495.00              |
-| Syn | SubSp     | 500,00              |
+|  Felt  |        Verdi        |
+|---------|---------------------|
+| Fordel | Bidragsbeløp |
+|  401K   |     Delta     |
+| Tannforsikring  |        SubSp        |
+| Syn  |        SubSp        |
 
 6. Angi følgende informasjon i kategorien **Avgiftsfradrag**:
 
@@ -156,8 +156,8 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
 7. Angi følgende informasjon i kategorien **Avgiftsbidrag**:
 
 8. Klikk **Beregn**.
-> [!IMPORTANT] 
-> Valider totalene i lønnsoppgaven for at de samsvarer med år-til-dato arbeiderens gamle system. Det kan hende du vil vente med å sluttføre i det neste trinnet for å gjøre en generel validering av alle lønnsoppgaver samlet. Etter validering kjører du gjennom alle lønnsoppgaver og sluttfører dem.
+   > [!IMPORTANT] 
+   > Valider totalene i lønnsoppgaven for at de samsvarer med år-til-dato arbeiderens gamle system. Det kan hende du vil vente med å sluttføre i det neste trinnet for å gjøre en generel validering av alle lønnsoppgaver samlet. Etter validering kjører du gjennom alle lønnsoppgaver og sluttfører dem.
 
 Den samme prosessen kan utføres kvartalsvis om nødvendig for alle tidligere kvartaler i hvert år. Dette er bare nødvendig hvis kunden skal vise dataene kvartalsvis uten å gå tilbake til det gamle systemet.
 

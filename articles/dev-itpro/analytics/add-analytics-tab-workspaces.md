@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved å bruke Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Denne funksjonen støttes i Dynamics 365 for Finance and Operations (versjon 7.2 og senere).
@@ -50,7 +50,7 @@ Enten du utvider et eksisterende arbeidsområde for programmet eller introdusere
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Legge til en .pbix-fil som en ressurs
 Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil bygge inn i arbeidsområdet. Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et Visual Studio-prosjekt.
 
 1. Opprett et nytt prosjekt i den aktuelle modellen.
@@ -63,12 +63,12 @@ Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et V
 5. Finn .pbix-filen som inneholder definisjonen av den analytiske rapporten, og klikk deretter **Åpne**.
 
     ![Velge en Ressursfil-dialogboks](media/analytical-workspace-select-resource.png)
-  
+
 Nå som du har lagt til .pbix-filen som en Dynamics 365-ressurs, kan du bygge inn rapportene i arbeidsområder og legge til direkte koblinger ved å bruke menyelementer.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Legge til en kategorikontroll i et arbeidsområde for program
 I dette eksemplet vil vi utvide arbeidsområdet **Reservasjonsbehandling** i Fleet Management-modellen ved å legge til **Analyse**-kategorien med definisjonen av **FMClerkWorkspace**-skjemaet.
- 
+
 Illustrasjonen nedenfor viser hvordan **FMClerkWorkspace**-skjemaet ser ut i utformingen i Microsoft Visual Studio.
 
 ![FMClerkWorkspace-skjemaet før endringer](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 16. Høyreklikk, og velg deretter **Fjern mønster**.
 17. Høyreklikk på nytt, og velg deretter **Legg til mønster** > **Arbeidsområde med kategorier**.
 18. Utfør et bygg for å bekrefte endringene.
- 
+
 Illustrasjonen nedenfor viser hvordan utformingen ser ut etter at endringene er brukt.
 
 ![FMClerkWorkspace etter endringer](media/analytical-workspace-definition-after.png)
 
 Nå som du har lagt til skjemakontrollene som skal brukes til å bygge inn arbeidsområderapporten, må du definere størrelsen på den overordnede kontrollen, slik at den passer for oppsettet. Som standard er både **filterrutesiden** og **kategorisiden** synlig i rapporten. Du kan imidlertid endre synligheten for disse kontrollene etter behov for rapportens målbruker.
- 
+
 > [!NOTE]
 > For innebygde arbeidsområder anbefaler vi at du bruker tilleggene for å skjule både **filtreringsruten** og **kategorisidene**, for konsekvens.
- 
+
 Du har nå fullført oppgaven for å utvide programskjemadefinisjonen. Hvis du vil ha mer informasjon om hvordan du bruker tillegg til å gjøre tilpasninger, se [Tilpassing: Overlag og utvidelser](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Legge til X ++-forretningslogikk for å bygge inn en visningskontroll
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametere
 
-| Navn | beskrivelse |
-|---|---|
-| resourceName | Navnet på .pbix-ressursen. |
-| formGroupControl | Skjemagruppekontrollen der Power BI-rapporten skal brukes. |
-| defaultPageName | Standard sidenavn. |
-| showFilterPane | En boolsk verdi som angir om filtreringsruten skal vises (**true**) eller skjules (**false**). |
-| showNavPane | En boolsk verdi som angir om navigasjonsruten skal vises (**true**) eller skjules (**false**). |
-| defaultFilters | Standardfiltrene for Power BI-rapporten. |
+|       Navn       |                                                              beskrivelse                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Navnet på .pbix-ressursen.                                                     |
+| formGroupControl |                                    Skjemagruppekontrollen der Power BI-rapporten skal brukes.                                     |
+| defaultPageName  |                                                         Standard sidenavn.                                                         |
+|  showFilterPane  |   En boolsk verdi som angir om filtreringsruten skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>).   |
+|   showNavPane    | En boolsk verdi som angir om navigasjonsruten skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>). |
+|  defaultFilters  |                                              Standardfiltrene for Power BI-rapporten.                                              |
+
 

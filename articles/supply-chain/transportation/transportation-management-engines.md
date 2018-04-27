@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling. 
 
@@ -47,7 +46,7 @@ Tabellen nedenfor viser transportbehandlingsmotorene som er tilgjengelige i Micr
 | **Sonemotor**                  | Beregner sonen basert på gjeldende adresse, og beregner antall soner som må krysses for å reise fra adresse A til adresse B.                                                                                                                                                                    |
 | **Fraktbrevtype**            | Standardiserer fraktfakturaen og fraktbrevlinjene og brukes til automatisk fraktbrevsamsvar.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilke motorer må konfigureres for å vurdere en forsendelse?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ En transportbehandlingsmotor krever at du definerer initialiseringsdata for å f
 -   Enkle konfigurasjonsdata.
 
 I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene for transportbehandlingsmotoren for å konfigurere initialiseringsdataene. **Eksempel på konfigurasjon av en ratemotor som refererer til en kjørelengdemotor** Eksemplet nedenfor viser oppsettet som kreves for en ratemotor som er basert på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til en kjørelengdemotor.
-| Parameter             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-typen som tolker dataene for tilordning av satsgrunnlag for et bestemt skjema. Syntaksen for parameterverdien består av to segmenter som er avgrenset av en loddrett strek (|). Det første segmentet inneholder samlingsnavnet som definerer tilordnertypen. Det andre segmentet angir det fullstendig kvalifiserte navnet på tilordnertypen. Dette inkluderer navneområdet for typen. |
-| *MileageEngineCode*   | Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Kode for generell motor som identifiserer fordelingsmotoren i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                              |
 
- 
+|          Parameter           |                                                                                  Beskrivelse                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | .NET-typen som tolker dataene for tilordning av satsgrunnlag for et bestemt skjema. Syntaksen for parameterverdien består av to segmenter som er avgrenset av en loddrett strek ( |
+|  <em>MileageEngineCode</em>  |                       Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+| <em>ApportionmentEngine</em> |                        Kode for generell motor som identifiserer fordelingsmotoren i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ Dataene som du bruker når du beregner satser i Microsoft Dynamics 365 for Finan
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Krever alle motorkonfigurasjoner metadata?
 Nei, transportbehandlingsmotorer som brukes til å hente dataene som kreves for satsberegning fra eksterne systemer, trenger ikke metadata. Satsdataene for disse motorene kan hentes fra eksterne transportsystemer, vanligvis via en webtjeneste. Du kan for eksempel bruke en kjørelengdemotor som henter data direkte fra Bing-kart, slik at du ikke trenger et metadata for denne motoren.
+
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transportbehandlingsmotorer som leveres med  Finance and Operations, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio-verktøy for Microsoft Dynamics 365 for Finance and Operations. |

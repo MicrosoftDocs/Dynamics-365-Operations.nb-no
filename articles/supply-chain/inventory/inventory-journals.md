@@ -1,9 +1,9 @@
 ---
 title: Lagerjournaler
-description: "Denne artikkelen beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning."
-author: MarkusFogelberg
+description: "Dette emnet beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Lagerjournaler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-Denne artikkelen beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning.
+Dette emnet beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning.
 
 Lagerjournaler i Microsoft Dynamics 365 for Finance and Operations brukes til å postere fysiske lagertransaksjoner av forskjellige typer, for eksempel postering av avganger og mottak, lagerbevegelser, oppretting av stykklister og avstemmingen av fysisk lager. Alle disse lagerjournalene brukes på lignende måte, men de er delt inn i forskjellige typer.
 
@@ -51,7 +50,7 @@ Følgende typer lagerjournaler er tilgjengelige:
 
 ### <a name="movement"></a>Bevegelse
 
-Når du bruker varetilgangsjournal, kan du legge kostnaden til en vare når du legger til lager, men du må tildele tilleggskostnader manuelt til en bestemt finanskonto ved å angi en motkonto i økonomimodulen når du oppretter journalen. Denne lagerjournaltypen er nyttig hvis du vil utgiftsføre en vare mot en annen avdeling, eller hvis du vil fjerne varer fra lager for utgiftsformål.
+Når du bruker varetilgangsjournal, kan du legge kostnaden til en vare når du legger til lager, men du må tildele tilleggskostnader manuelt til en bestemt finanskonto ved å angi en motkonto i økonomimodulen når du oppretter journalen. Denne lagerjournaltypen er nyttig hvis du vil overskrive standard bokføringskonti.
 
 ### <a name="inventory-adjustment"></a>Lagerjustering
 
@@ -61,8 +60,8 @@ Når du bruker en lagerjusteringsjournal, kan du legge kostnaden til en vare nå
 
 Du kan bruke overføringsjournaler for å overføre varer mellom lokasjoner for lagring, partier eller produktvarianter uten å knytte til kostnadsimplikasjoner. Du kan for eksempel overføre varer fra ett lager til et annet lager i det samme firmaet. Når du bruker en overføringsjournal, må du angi både "fra"- og "til"- lagerdimensjoner (for eksempel for Område og Lager). Lagerbeholdningen for de definerte lagerdimensjonene endres i henhold til dette. Lageroverføringer gjenspeiler den umiddelbare flyttingen av materiale. Lager i transitt spores ikke. Hvis transittlageret må spores, bør du bruke en overføringsordre. Når du posterer en overføringsjournal, opprettes det to lagertransaksjoner for hver journallinje:
 
--   En lageravgang på "fra"-lokasjonen
--   Et lagermottak på "til"-lokasjonen
+-   En lageravgang på "fra"-lokasjonen.
+-   Et lagermottak på "til"-lokasjonen.
 
 ### <a name="bom"></a>Stykkliste
 
@@ -82,7 +81,7 @@ Opptellingsjournaler lar deg rette den gjeldende lagerbeholdningen som er regist
 
 ### <a name="tag-counting"></a>Brikkeopptelling
 
-Brikkeopptellingsjournaler brukes til å tilordne en nummerert kode til et opptellingsparti. Koden bør inneholde et brikkenummer, varenummer og vareantall. For å garantere at en brikke brukes bare én gang, og at alle koder brukes, bør hvert varenummer ha et unikt sett med koder som har sin egen nummerserie. Tre statusverdier kan angis for hver enkelt kode:
+Brikkeopptellingsjournaler brukes til å tilordne en nummerert kode til et opptellingsparti. Koden bør inneholde et brikkenummer, varenummer og vareantall. For å sikre at en brikke brukes bare én gang, og at alle koder brukes, bør hvert varenummer ha et unikt sett med koder som har sin egen nummerserie. Tre statusverdier kan angis for hver enkelt kode:
 
 -   **Brukt** – Varenummeret telles for denne brikken.
 -   **Annullert** – Varenummeret annulleres for denne brikken.
@@ -95,4 +94,30 @@ En journallinje er bare tilgjengelig for én bruker av gangen. Hvis flere bruker
 
 ## <a name="posting-journal-lines"></a>Posteringsjournallinjer
 Du kan postere journallinjene du oppretter, når som helst før du låser en vare fra flere transaksjoner. Dataene du angir i en journal, forblir i journalen, selv om du lukker journalen uten å postere linjene.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Dataenhetsstøtte for lagerjournaler
+
+Dataenheter støtter følgende typer integrasjonsscenarioer:
+-    Synkron tjeneste (OData)
+-  Asynkron integrering
+
+Hvis du vil ha mer informasjon, kan du se [Dataenheter](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Ikke alle lagerjournaler er OData-aktivert. Derfor kan du ikke bruke Excel-datakoblingen for å hente data som er publisert, oppdatert og importert tilbake til Dynamics 365 for Finance and Operations. 
+
+En annen forskjell mellom journaldataenhetene er muligheten til å bruke sammensatte enheter som inneholder både hode- og linjedata. For øyeblikket kan du bruke de sammensatte enhetene for:
+-   Lagerjusteringsjournal
+-   Beholdningsbevegelsesjournal
+
+Disse to lagerjournalene støtter bare *Initialiser lager*-scenarioet som en del av importprosjektet for databehandling:
+-  Når et journalhodenummer ikke er angitt, men en nummerserie er angitt for journaltypen, oppretter automatisk importjobben journalhoder per 1000 linjer. Hvis du for eksempel importerer 2020 linjer, resulterer det i følgende tre journalhoder:
+    -  Hode 1: inneholder 1000 linjer
+    -  Hode 2: inneholder 1000 linjer
+    -  Hode 3: inneholder 20 linjer
+-  Det antas at det finnes unik linjeinformasjon per lagerdimensjon, som kan være en produkt-, lagrings- og sporingsdimensjon. Det er derfor ikke mulig å importere journallinjer der bare datofeltet er forskjellig på linjene i det samme importprosjektet.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Dataenheter](../../dev-itpro/data-entities/data-entities.md)
 

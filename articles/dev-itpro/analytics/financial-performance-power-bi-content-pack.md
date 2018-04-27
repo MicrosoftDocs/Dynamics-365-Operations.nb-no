@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: b7cb5f2096f0be5211024fc6ecbfaa61d6c48c9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-performance-power-bi-content"></a>Finansresultat-innhold for Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!Note]
 > Denne innholdspakken er avskrevet slik det står i [Power BI-innholdspakker som er publisert på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
@@ -58,7 +58,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 
 | Rapporter                      | Informasjon som rapporten inneholder |
 |-----------------------------|--------------------------------------|
-| Kontantanalyse               | Kontanter etter juridisk enhet, kontanter etter kvartal, kontanter totalt og kontanter etter konto<blockquote>[!NOTE]<br>Kontanter etter kvartal inkluderer ikke startsaldoer i totalen for det første kvartalet. Den viser summen av nye transaksjoner som er postert i hvert kvartal.</blockquote> |
+| Kontantanalyse               | Kontanter etter juridisk enhet, kontanter etter kvartal, kontanter totalt og kontanter etter konto<br><br>**Obs!** Kontanter etter kvartal inkluderer ikke startsaldoer i totalen for det første kvartalet. Den viser summen av nye transaksjoner som er postert i hvert kvartal.|
 | Likviditetsgradsanalyse      | Likviditetsgrad etter juridisk enhet, likviditetsgrad etter kvartal og saldoer for omsetningsaktiva og kortsiktig gjeld |
 | Analyse av likviditetsgrad II        | Likviditetsgrad II etter juridisk enhet, likviditetsgrad II etter kvartal og saldoer for kontanter, kundereskontro og kortsiktig gjeld |
 | Analyse av solgte varers kost | Solgte varers kost (vareforbruk) etter juridisk enhet, vareforbruk i år og i fjor etter kvartal, vareforbruk i forhold til salg etter juridisk enhet, totalt vareforbruk og vareforbruk i forhold til salg i prosent |
@@ -69,7 +69,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 | Analyse av inntekter           | Faktiske og budsjetterte inntekter før renter og avgifter etter juridisk enhet, inntekter før renter og avgifter i år og i fjor, utgifter i forhold til inntekter i prosent og faktiske og budsjetterte utgifter i forhold til inntekter |
 | Omsetningsanalyse            | Totalomsetning, faktisk og budsjettert totalomsetning etter juridisk enhet, totalomsetning i år og i fjor, budsjettavvik for omsetning etter juridisk enhet og totalomsetning i denne perioden og siste periode |
 | Utgiftsanalyse            | Totale utgifter, faktiske i forhold til budsjetterte totale utgifter etter juridisk enhet, faktiske og budsjetterte totale utgifter etter kvartal, totale utgifter etter kontokategori og driftsutgiftsgrad |
-| Analyse av fakturert inntekt     | Total kundereskontro, total kundereskontro etter juridisk enhet, total kundereskontro etter kvartal og saldoer for kontiene for kundereskontro<blockquote>[!NOTE]<br>Informasjonen inkluderer ikke startsaldoer for kundesfinanskontoene. Den viser summen av nye transaksjoner som er postert til kunder.</blockquote> |
+| Analyse av fakturert inntekt     | Total kundereskontro, total kundereskontro etter juridisk enhet, total kundereskontro etter kvartal og saldoer for kontiene for kundereskontro<br><br>**Obs!** Informasjonen inkluderer ikke startsaldoer for kundefinanskontoene. Den viser summen av nye transaksjoner som er postert til kunder. |
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 

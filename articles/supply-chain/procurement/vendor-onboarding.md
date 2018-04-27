@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Nye leverandører kan ønskes velkommen og registreres som leverandører i Microsoft Dynamics 365 for Finance and Operations basert på informasjonen som samles inn fra en person som representerer leverandøren.
@@ -164,13 +165,15 @@ De forskjellige statusene til en registreringsforespørsel for potensiell levera
 
 Ved hjelp av **Slett**-handlingen i registreringsforespørselen om potensiell leverandør kan du rydde og fjerne kjeden med poster som er opprettet, og du kan deaktivere brukerkontoen. Resultatet av **Slett**-handlingen varierer, avhengig av statusen for registreringsforespørselen for potensiell leverandør, som vist i følgende tabell.
 
-| Status                   | Statusbeskrivelse | Resultatet av Slett-handlingen |
-|--------------------------|--------------------|-----------------------------------|
-| Nytt                      | Ingen handlinger er utført i forespørselen. | Forespørselen om registrering av potensiell leverandør er slettet. |
-| Bruker forespurt           | Når du velger **Inviter bruker**, endres statusen til **Bruker forespurt**, og en potensiell brukerforespørsel opprettes og sendes til en arbeidsflyt. | Du kan ikke slette en registreringsforespørsel for potensiell leverandør som har denne statusen, fordi arbeidsflyten ikke er avsluttet. |
-| Bruker invitert             | Arbeidsflyten er godkjent, og brukeren blir opprettet. | En forespørsel om å deaktivere brukeren opprettes, og registreringsforespørselen for potensiell leverandør slettes. |
-| Registrering pågår | Den nye brukeren har logget seg på og har startet veiviseren for registrering av leverandøren. | En forespørsel om å deaktivere brukeren opprettes, og av registreringsforespørselen for potensiell leverandør slettes, og dataene som ble angitt i registreringsveiviseren for leverandøren, slettes. |
-| Leverandørforespørsel opprettet   | Registreringsveiviseren for leverandører er fullført. | En forespørsel om å deaktivere brukeren opprettes, og av registreringsforespørselen for potensiell leverandør slettes, og dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruke **Slett**-handlingen når leverandørforespørselen er i en kontrollprosess i arbeidsflyten.</blockquote> |
-| Godkjent                 | Leverandørforespørselen er godkjent. | Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes. |
-| Avslått                 | Leverandørforespørselen er avvist. | Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes. |
+
+|          Status          |                                                                                     Statusbeskrivelse                                                                                      |                                                                                                                                                            Resultatet av Slett-handlingen                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Nytt            |                                                                         Ingen handlinger er utført i forespørselen.                                                                          |                                                                                                                                              Forespørselen om registrering av potensiell leverandør er slettet.                                                                                                                                               |
+|      Bruker forespurt      | Når du velger <strong>Inviter bruker</strong>, endres statusen til <strong>Bruker forespurt</strong>, og en potensiell brukerforespørsel opprettes og sendes til en arbeidsflyt. |                                                                                                          Du kan ikke slette en registreringsforespørsel for potensiell leverandør som har denne statusen, fordi arbeidsflyten ikke er avsluttet.                                                                                                          |
+|       Bruker invitert       |                                                               Arbeidsflyten er godkjent, og brukeren blir opprettet.                                                               |                                                                                                                      En forespørsel om å deaktivere brukeren opprettes, og registreringsforespørselen for potensiell leverandør slettes.                                                                                                                      |
+| Registrering pågår |                                                         Den nye brukeren har logget seg på og har startet veiviseren for registrering av leverandøren.                                                          |                                                                                     En forespørsel om å deaktivere brukeren opprettes, og av registreringsforespørselen for potensiell leverandør slettes, og dataene som ble angitt i registreringsveiviseren for leverandøren, slettes.                                                                                      |
+|  Leverandørforespørsel opprettet  |                                                                     Registreringsveiviseren for leverandører er fullført.                                                                      | En forespørsel om å deaktivere brukeren opprettes, og av registreringsforespørselen for potensiell leverandør slettes, og dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruke <strong>Slett</strong>-handlingen når leverandørforespørselen er i en kontrollprosess i arbeidsflyten.</blockquote> |
+|         Godkjent         |                                                                               Leverandørforespørselen er godkjent.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
+|         Avslått         |                                                                               Leverandørforespørselen er avvist.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
+
 

@@ -18,24 +18,28 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 13d7478197c05211eda30f28b483ec68858ad464
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0f3f50061fc5b9b4cfc00000492840061fc3b386
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="distributions-on-an-expense-report"></a>Distribusjoner i en reiseregning
 
-[!include[banner](../includes/banner.md)] Når du oppgir utgifter på en utgiftsrapport, kan du fordele utgiften på tvers av flere prosjekter, juridiske enheter, finansielle dimensjoner eller kontoer i organisasjonen.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Når du oppgir utgifter på en utgiftsrapport, kan du fordele utgiften på tvers av flere prosjekter, juridiske enheter, finansielle dimensjoner eller kontoer i organisasjonen.
 
 For eksempel reiste Nancy, en salgsrepresentant for Fabrikams, som reiste fra København til Frankfurt. I Frankfurt møtte hun to organisasjoner for å diskutere separate prosjekter for hver organisasjon. Nancy brukte syv arbeidsdager for å jobbe med organisasjon A på prosjekt A, og tre arbeidsdager på å jobbe med organisasjon B på prosjekt B.
 
 Fordi Nancy jobbet på to separate prosjekter da hun var i Frankfurt, distribuerte hun utgifter til riktig prosjekt da hun fylte inn utgiftsrapporten. Den følgende tabellen viser hvordan Nancy fordelte utgiftene.
 
-| **Utgiftstype** | **Samlet utgiftsbeløp** | **Beløp fordelt på prosjekt A** | **Beløp fordelt på prosjekt B** |
-|------------------|--------------------------|-------------------------------------|-------------------------------------|
-| Togreise       | DKK 578                  | DKK 405                             | DKK 173                             |
-| Hotell            | EUR 725                  | EUR 557                             | EUR 168                             |
-| Måltider            | EUR 346                  | EUR 284                             | EUR 62                              |
+
+| <strong>Utgiftstype</strong> | <strong>Samlet utgiftsbeløp</strong> | <strong>Beløp fordelt på prosjekt A</strong> | <strong>Beløp fordelt på prosjekt B</strong> |
+|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
+|          Togreise           |                DKK 578                |                     DKK 405                      |                     DKK 173                      |
+|             Hotell             |                EUR 725                |                     EUR 557                      |                     EUR 168                      |
+|             Måltider             |                EUR 346                |                     EUR 284                      |                      EUR 62                      |
+
 

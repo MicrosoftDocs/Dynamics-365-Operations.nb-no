@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Denne artikkelen beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
 
@@ -78,12 +77,12 @@ Når du er klar til å registrere ansatte i en variabel kompensasjonsplan, må d
 
 **Obs!** Rettighetsregler avgjør berettigelse for både faste kompensasjonsplaner og variable kompensasjonsplaner. Rettighetsreglene bruker følgende felt i poster for jobb, stilling og ansatt til å avgjøre om en ansatt har rett til en kompensasjonsplan:
 
--   På **Jobb**-siden:
-    -   **Jobb**-feltet
-    -   Feltene **Funksjon** og **Jobbtype** i fanen **Jobbklassifisering**
-    -   **Nivå**-feltet i **Kompensasjon**-fanen
--   På **Stillinger**-siden: Feltene **Avdeling** og **Kompensasjonsområde**
--   På **Ansatte**-siden: Informasjonen om fagforeninger som er knyttet til den ansatte under **Personlige opplysninger** &gt; **Fagforeninger** i  ****Arbeider ****-fanen
+- På **Jobb**-siden:
+  -   **Jobb**-feltet
+  -   Feltene **Funksjon** og **Jobbtype** i fanen **Jobbklassifisering**
+  -   **Nivå**-feltet i **Kompensasjon**-fanen
+- På **Stillinger**-siden: Feltene **Avdeling** og **Kompensasjonsområde**
+- På <strong>Ansatte</strong>-siden: Informasjonen om fagforeninger som er knyttet til den ansatte under <strong>Personlige opplysninger</strong> &gt; <strong>Fagforeninger</strong> i *<strong><em>Arbeider</em></strong>*-fanen
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Aktivere registrering for den variable kompensasjonsplanen
 

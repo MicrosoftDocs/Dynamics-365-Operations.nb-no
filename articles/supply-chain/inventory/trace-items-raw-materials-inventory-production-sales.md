@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing av varer og råmaterialer i beholdning, produksjon og salg
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser.
 
@@ -129,7 +128,7 @@ Når du har kjørt sporingen, kan du bruke følgende alternativer på knappen **
 Hvis du vil bruke alternativet **Ny bakover** eller **Ny forover**, må du bruke funksjonen **Åpne i et nytt vindu** til å vise en ny sporing i et nytt vindu.
 
 ## <a name="can-i-save-the-trace-details"></a>Kan jeg lagre sporingsdetaljene?
-Du kan lagre informasjonen i kategorien **Detaljer** som en XML-fil, ved å klikke på **Eksporter** under ****Sporing****-handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for **Vis dokument**. **Obs!** Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge **Åpne med** og deretter velge programmet som skal brukes til å vise innholdet.
+Du kan lagre informasjonen i kategorien <strong>Detaljer</strong> som en XML-fil ved å klikke <strong>Eksporter</strong> under *<strong><em>Sporing</em></strong>* -handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for <strong>Vis dokument</strong>. <strong>Obs!</strong> Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge <strong>Åpne med</strong> og deretter velge programmet som skal brukes til å vise innholdet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jeg beregne en saldo for en bestemt vare eller ingrediens?
 Du kan eksportere informasjonen fra sammendragssidene til Microsoft Excel. Åpne den aktuelle siden, klikk ikonet **Åpne i Microsoft Office**, og velg deretter **Eksporter til Microsoft Excel**. Denne funksjonaliteten er spesielt nyttig når du vil beregne en massesaldo for en vare eller ingrediens fra siden **Transaksjonsammendrag**. På siden **Transaksjonssammendrag** kan du filtrere varen eller ingrediensen, og partiet hvis du vil, og deretter eksportere informasjonen til Excel. I Excel kan du for eksempel finne beholdningsantallet, antallet som ble solgt, og beløpet som ble brukt i produksjon.

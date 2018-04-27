@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave. En arbeidsnedbrytningsstruktur har tre viktige formål:
 
@@ -115,7 +115,7 @@ Tidsplanestimering er vanligvis det andre trinnet i opprettelsen av en arbeidsne
 
 Startdatoen for en bladnodeoppgave som ikke har forgjengere settes automatisk til planleggingsstartdatoen for prosjektet. Varigheten til en bladnodeoppgave beregnes alltid som antall virkedager mellom start-og sluttdato. 
 
-****Planleggingsregler**** Når automatisk planlegging er aktivert, gjelder følgende regler for oppgaveplanlegging for bladnodeoppgaver:
+*<strong><em>Planleggingsregler</em></strong>* Når automatisk planlegging er aktivert, gjelder følgende regler for oppgaveplanlegging for bladnodeoppgaver:
 
 -   Start- og sluttdatoene for en oppgave må være virkedager, i henhold til prosjektets planleggingskalender.
 -   Startdatoen for en oppgave som har forgjengere, settes automatisk til den seneste sluttdatoen for forgjengerne.

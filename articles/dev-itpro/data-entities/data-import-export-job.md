@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjobber
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 For å opprette og administrere dataimport- og -eksportjobber i Microsoft Dynamics 365 for Finance and Operations, kan du bruke arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 
@@ -64,13 +64,15 @@ Vi anbefaler at du tar deg tid til å velge en passende prosjektkategori for imp
 Du kan legge til spesifikke enheter for en import- eller eksportjobb eller velge en mal å bruke. Maler fyller en jobb med en liste over enheter. Alternativet **Bruk mal** er tilgjengelig etter at du har gitt jobben et navn og lagret jobben.
 
 ### <a name="set-the-data-format-for-the-job"></a>Sett dataformatet for jobben
-Når du velger et foretak, må du velge formatet for dataene som skal eksporteres eller importeres. Du kan definere formatet ved å bruke **Oppsett for datakilder**-flisen. Mange organisasjoner starter fra det formatet som er inkludert som standard i demo-datasettet. Her er en liste over noen av disse formatene:
+Når du velger et foretak, må du velge formatet for dataene som skal eksporteres eller importeres. Du kan definere formatet ved å bruke **Oppsett for datakilder**-flisen. Et kildedataformat er en kombinasjon av **type**, **filformat**, **radskilletegn** og **kolonneskilletegn**. Det finnes også andre attributter, men dette er de viktigste å forstå. I tabellen nedenfor finner du en oversikt over gyldige kombinasjoner.
 
-- AX (for data som må importeres eller eksporteres i samme format som brukes til Microsoft Dynamics 365 for Finance and Operations)
-- ColonSeparated
-- CSV
-- Excel
-- Pakke
+| **Filformat**        | **Rad-/kolonneskilletegn**                   | **XML-stil**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-I/T-                     |
+| XML                    | \-I/T-                                      | XML-attributt for XML-element |
+| Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Sekvenser enhetene
 Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport.

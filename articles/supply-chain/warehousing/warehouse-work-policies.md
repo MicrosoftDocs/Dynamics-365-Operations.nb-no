@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Arbeidspolicyer for lager
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbeidspolicyer i Microsoft Dynamics 365 for Finance and Operations kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon, basert på arbeidsordretype, lagerlokasjon og produkt.
 
@@ -68,14 +67,15 @@ Når du skal konfigurere en arbeidspolicy for lageret i dette scenariet, bør du
 
 Her er et eksempel på arbeidspolicyen som du kan sette opp, basert på disse hensynene.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Arbeidspolicynavn**<br>                 |**Arbeidsordretyper**<br>                               |
-| Ingen plassering 01     `                    |- Plassering av ferdigvare<br>                           |
-|                                         |**Lokasjoner**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkter** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Arbeidspolicynavn</strong><br> | <strong>Arbeidsordretyper</strong><br> |
+|         Ingen plassering 01     `          |     - Plassering av ferdigvare<br>      |
+|                                       |    <strong>Lokasjoner</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkter</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Fremgangsmåtene nedenfor inneholder trinnvise instruksjoner om hvordan du definerer lagerarbeidspolicyen i dette scenariet. Et eksempeloppsett som viser hvordan du rapporterer en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert beskrives også.
 
@@ -126,7 +126,7 @@ TRINN (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Velg ressursgruppe 5102 i listen.</td>
+<td>Velg ressursgruppe &#39;5102&#39; i listen.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,12 +136,12 @@ TRINN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Angi 51 i feltet Utleveringslager.</td>
+<td>Angi &#39;51&#39; i feltet Utleveringslager.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Angi 001 i feltet Utleveringslokasjon.</td>
+<td>Angi &#39;001&#39; i feltet Utleveringslokasjon.</td>
 </tr>
 <tr>
 <td></td>
@@ -169,7 +169,7 @@ TRINN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Angi L0101 i feltet Varenummer.</td>
+<td>Angi &#39;L0101&#39; i feltet Varenummer.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +204,7 @@ TRINN (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Velg Aldri i feltet Automatisk stykklisteforbruk.</td>
+<td>Velg &#39;Aldri&#39; i feltet Automatisk stykklisteforbruk.</td>
 </tr>
 <tr>
 <td></td>

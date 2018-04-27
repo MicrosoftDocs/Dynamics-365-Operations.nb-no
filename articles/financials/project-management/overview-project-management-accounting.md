@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for å tilby en tjeneste, produsere et produkt eller oppnå et resultat.  
 
@@ -83,6 +82,7 @@ Du kan bruke prognose hvis organisasjonen har et driftsperspektiv og fokuserer p
 Du kan opprette seks typer prosjekter i Microsoft Finance and Operations. Hver prosjekttype er satt opp forskjellig for kostnader og inntektsføring. Prosjekttypen du velger er avhengig av formålet med prosjektet. Tabellen nedenfor beskriver den vanlige bruken av hver prosjekttype.
 
                                                                                                                                                                          |
+
 | Prosjekttype      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tid og materialer | I Etter regning-prosjekter faktureres kunden for alle kostnader som er påløpt i et prosjekt. Disse kostnadene omfatter kostnader for timer, utgifter, varer og gebyrer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ En prosjektrelatert produksjonsordre kan kobles til en salgsordre eller et vareb
 
 Bruk én av følgende metoder avhengig av kombinasjonene av disse faktorene:
 
--   **Ferdig vare/kobling til ordre** – Koble prosjektet til en salgsordre eller et varebehov. Når du bruker denne metoden, posteres de faktiske kostnadene når salgsordren blir fakturert, eller når følgeseddelen blir oppdatert for varebehovet. Kostnaden blir postert som en ferdig vare.
--   **Ferdig vare/ingen kobling til ordre** – Faktiske kostnader kan ikke posteres før produksjonssyklusen for en vare har statusen **Avsluttet**. Kostnaden for den ferdige varen blir postert som én transaksjon.
--   **Forbrukt vare/kobling til ordre** – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen **Startet** eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjon. Når følgeseddelen blir oppdatert etter varebehovet, blir det ikke postert noen kostnader. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
--   ****Forbrukt vare/ingen kobling til ordre**** – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen **Startet** eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjonen. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
+- **Ferdig vare/kobling til ordre** – Koble prosjektet til en salgsordre eller et varebehov. Når du bruker denne metoden, posteres de faktiske kostnadene når salgsordren blir fakturert, eller når følgeseddelen blir oppdatert for varebehovet. Kostnaden blir postert som en ferdig vare.
+- **Ferdig vare/ingen kobling til ordre** – Faktiske kostnader kan ikke posteres før produksjonssyklusen for en vare har statusen **Avsluttet**. Kostnaden for den ferdige varen blir postert som én transaksjon.
+- **Forbrukt vare/kobling til ordre** – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen **Startet** eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjon. Når følgeseddelen blir oppdatert etter varebehovet, blir det ikke postert noen kostnader. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
+- *<strong><em>Forbrukt vare/ingen kobling til ordre</em></strong>* – Koble prosjektet til et varebehov. Hvis du bruker denne metoden, kan du vise de faktiske prosjektkostnadene når produksjonen har statusen <strong>Startet</strong> eller rapporteres som fullført. Kostnadene blir postert som flere varetransaksjoner i prosjekt for råvarer og brukte timer for produksjonen. Du kan også definere nivået i stykklistehierarkiet der prosjektene i produksjonen spores.
 
 ### <a name="procure-products-and-services"></a>Anskaffe produkter og tjenester
 
@@ -239,9 +239,8 @@ Tabellen nedenfor beskriver metodene for beregning av kostnaden for å fullføre
 <li>Sammenlign prognosetransaksjoner med faktiske transaksjoner.</li>
 <li>Oppretthold, reduser eller øk estimatene for neste periode.</li>
 </ol>
-Finance and Operations reduserer ikke prognoseberegnede estimater automatisk. Det er derfor en god idé å opprettholde en original prognosemodell i fastprisprosjektet for å opprette et utgangspunkt for sammenligning når prosjektet er fullført. 
-> [!NOTE] Bruk minst to prognosemodeller når du velger denne metoden. Én modell må inneholde den opprinnelige prognosen. Når det gjelder den andre modellen, må du kopiere prognosetransaksjoner fra en annen modell. Denne metoden er bare gyldig for fastprisprosjekter og investeringsprosjekter.</td>
-> </tr>
+Finance and Operations reduserer ikke prognoseberegnede estimater automatisk. Det er derfor en god idé å opprettholde en original prognosemodell i fastprisprosjektet for å opprette et utgangspunkt for sammenligning når prosjektet er fullført. &gt; [!NOTE] &gt; Bruk minst to prognosemodeller når du velger denne metoden. Én modell må inneholde den opprinnelige prognosen. Når det gjelder den andre modellen, må du kopiere prognosetransaksjoner fra en annen modell. Denne metoden er bare gyldig for fastprisprosjekter og investeringsprosjekter.</td>
+</tr>
 <tr class="odd">
 <td>Gjenstående budsjett</td>
 <td>Denne metoden bruker en modell for gjenstående budsjett til å beregne kostnaden for å fullføre prosjektet. Når du bruker denne metoden, summeres de faktiske kostnadene og de prognoseberegnede beløpene i modellen for gjenstående budsjett. Resultatet er en totalkostnad. Før du bruker denne metoden, må en modell for gjenstående budsjett defineres for å trekke fra transaksjoner basert på faktiske transaksjoner som er registrert i systemet. På <strong>Prognosemodeller</strong>-siden må du kontrollere at det er merket av for feltene i gruppen <strong>Automatisk prognosereduksjon</strong>. Vanligvis kopieres et gjenstående budsjett fra et opprinnelig budsjett. Når transaksjoner registreres, reduseres transaksjonene på det gjenstående budsjettet. Hvis du finner ut at du må justere det gjenstående budsjettet etter hvert som prosjektet går fremover, belaster du det gjenstående budsjettet med prognosetransaksjoner. <strong>Obs! </strong> Denne metoden kan bare brukes hvis en prognosemodell er knyttet til estimatet.</td>

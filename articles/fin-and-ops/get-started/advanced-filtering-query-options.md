@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert synstaks for filtrering og spørringer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren "treff" i dialogboksen Avansert filter/sortering.
 
@@ -68,7 +67,7 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <td><em>fra-verdi</em>..<em>til-verdi</em> (dobbelt punktum)</td>
 <td>Mellom de to verdiene som er atskilt med doble punktum</td>
 <td>Skriv inn fra-verdien, deretter to punktum og så til-verdien.</td>
-<td><strong>1..10</strong> finner alle verdier fra 1 til og med 10. I en streng finner imidlertid felt <strong>A..C</strong> alle verdier som begynner med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;. Denne spørringen finner for eksempel ikke &quot;Ca&quot;. Hvis du vil finne alle verdier fra &quot;A*&quot; til og med &quot;C*&quot;, skriver du inn <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> finner alle verdier fra 1 til og med 10. I en streng finner imidlertid felt <strong>A..C</strong> alle verdier som begynner med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;. Denne spørringen finner for eksempel ikke &quot;Ca&quot;. Hvis du vil finne alle verdier fra &quot;A<em>&quot; til og med &quot;C</em>&quot;, skriver du inn <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>verdi</em> (dobbelt punktum)</td>
@@ -97,20 +96,20 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <tr class="even">
 <td><em>verdi</em>* (stjerne)</td>
 <td>Begynner fra verdien som er angitt</td>
-<td>Skriv inn startverdien og deretter en stjerne (<strong>*</strong>).</td>
-<td><strong>S*</strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, for eksempel &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
+<td>Skriv inn startverdien og deretter en stjerne (<strong><em></strong>).</td>
+<td><strong>S</em></strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, som i &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>verdi</em> (stjerne)</td>
+<td><em><em>verdi</em> (stjerne)</td>
 <td>Slutter med verdien som er angitt</td>
 <td>Skriv inn en stjerne og deretter sluttverdien.</td>
-<td><strong>*øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som i &quot;nordøst&quot; og &quot;sydøst&quot;.</td>
+<td><strong></em>øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som i &quot;nordøst&quot; og &quot;sydøst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>verdi</em>* (stjerne)</td>
+<td><em><em>verdi</em></em> (stjerne)</td>
 <td>Inneholder verdien som er angitt</td>
 <td>Skriv inn en stjerne, deretter en verdi og så en ny stjerne.</td>
-<td><strong>*øs*</strong> finner en hvilken som helst streng som inneholder &quot;øs&quot;, som i &quot;nordøst&quot; og &quot;sørøst&quot;.</td>
+<td><strong><em>øs</em></strong> finner en hvilken som helst streng som inneholder &quot;øs&quot;, som i &quot;nordøst&quot; og &quot;sørøst&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (spørsmålstegn)</td>
