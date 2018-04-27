@@ -24,7 +24,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="benefit-eligibility-process"></a>Fordelsrettighetsprosess
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan fordelsrettighetsprosessen fungerer. Når prosessen er fullført, kan du vise resultatene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

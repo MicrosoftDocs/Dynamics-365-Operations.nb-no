@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Lagerkonfigurasjon
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 

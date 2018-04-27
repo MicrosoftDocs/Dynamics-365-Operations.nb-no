@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Innkjøpspolicyer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
 

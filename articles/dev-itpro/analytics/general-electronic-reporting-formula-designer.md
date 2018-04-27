@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke formler for å transformere data slik at de oppfyller kravene for fullføringen og formatering for dokumentet. Disse formlene ligner på formler i Microsoft Excel. Ulike typer funksjoner støttes i formlene: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner).
 
@@ -313,12 +313,12 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 <tr class="odd">
 <td>ORDERBY (liste [,uttrykk 1, uttrykket 2, ...])</td>
 <td>Returnerer den angitte listen når den er sortert i henhold til de angitte argumentene. Disse argumentene kan defineres som uttrykk.</td>
-<td>Hvis <strong>Leverandør </strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong> ORDERBY (leverandører, Vendors.'name()')</strong> en oversikt over leverandører sortert etter navn i stigende rekkefølge.</td>
+<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>ORDERBY (leverandører, Vendors&#39;navn()&#39;)</strong> en oversikt over leverandører sortert etter navn i stigende rekkefølge.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (liste)</td>
 <td>Returner den angitte listen i omvendt rekkefølge.</td>
-<td>Hvis <strong>Leverandør </strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> en oversikt over leverandører sortert etter navn i synkende rekkefølge.</td>
+<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;nave()&#39;)) )</strong> en oversikt over leverandører sortert etter navn i synkende rekkefølge.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (liste, betingelse)</td>
@@ -395,7 +395,9 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <tr class="even">
 <td>STRINGJOIN (liste, feltnavn, skilletegn)</td>
 <td>Returnerer en streng som består av sammenkoblede verdier for det angitte feltet fra den angitte listen. Verdiene skilles med det angitte skilletegnet.</td>
-<td>Hvis du angir <strong>SPLIT(&quot;abc&quot; , 1)</strong> som datakilde (DS), returnerer uttrykket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Hvis du angir <strong>SPLIT(&quot;abc&quot; , 1)</strong> som datakilde (DS), returnerer uttrykket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (liste, grenseverdi, grensekilde)</td>
@@ -416,7 +418,7 @@ Grensen gjelder ikke for det siste elementet i den originale listen siden verdie
 <tr class="even">
 <td>FILTER (liste, betingelse)</td>
 <td>Returnerer den angitte listen etter at spørringen er endret for å filtrere den angitte betingelsen. Denne funksjonen er ulik <strong>WHERE</strong>-funksjonen fordi den angitte betingelsen brukes på en ER-datakilde av typen <strong>Tabellposter</strong> på databasenivået. Listen og betingelsen kan defineres ved hjelp av tabeller og relasjoner.</td>
-  <td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>FILTER(leverandører, Vendors.VendGroup = &quot;40&quot;)</strong> en oversikt over bare leverandører som tilhører leverandørgruppe 40. Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til <strong>VendTable</strong>-tabellen og <strong>parmVendorBankGroup</strong> som er konfigurert som ER-datakilde returnerer verdien i strengdatatypen, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over bare leverandørkontoene som tilhører en bestemt bankgruppe.</td>
+  <td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>FILTER(leverandører, Vendors.VendGroup = &quot;40&quot;)</strong> en oversikt over bare leverandører som tilhører leverandørgruppe 40. Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til <strong>VendTable</strong>-tabellen og <strong>parmVendorBankGroup</strong> som er konfigurert som ER-datakilde returnerer verdien i strengdatatypen, returnerer <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over bare leverandørkontoene som tilhører en bestemt bankgruppe.</td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +555,7 @@ Uttrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer ogs�
 <li>Finance and Operations-etiketten SYS18389, som har følgende tekst:
 <ul>
 <li><strong>For EN-US-språk:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>For DE-språk:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>For DE-språk:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Her er formelen som kan utformes:</p>
@@ -561,7 +563,7 @@ Uttrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer ogs�
 <p>Hvis en rapport behandles for <strong>Litware Retail</strong>-kunden 17. desember 2015 i <strong>EN-US</strong>-kulturen og <strong>EN-US</strong>-språket, returnerer denne formelen teksten nedenfor, som kan vises som en unntaksmelding for brukeren:</p>
 <p>&quot;Ingenting å skrive ut. Litware Retail-kunden stoppes for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapporten behandles for <strong>Litware Retail</strong>-kunden 17 desember 2015, i <strong>DE</strong>-kulturen og <strong>DE</strong>-språket, returnerer denne formelen følgende tekst som bruker et annet datoformat:</p>
-<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail &#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 Følgende syntaks brukes i ER-formler for etiketter:
 <ul>

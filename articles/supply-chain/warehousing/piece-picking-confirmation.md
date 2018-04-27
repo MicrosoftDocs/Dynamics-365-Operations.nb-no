@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Stykkplukkingsbekreftelse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med stykkplukking kan du bekrefte hver del av lagerbeholdningen gjennom plukkings- og tellingsarbeid på en mobil enhet. For plukking kan du kontrollere hvor mye arbeid som skal behandles opptil antallet som er angitt på arbeid som skal plukkes. For opptellingsarbeid kan du skanne lageret du teller opp, og spore totalbeløpet.
 
@@ -46,8 +46,10 @@ Stykkplukking fungerer for alt opptellingsarbeid og for første plukking for all
 
 Følgende alternativer blir tilgjengelige når arbeidstypen er plukking og opptelling.
 
-| Alternativ        | beskrivelse   | 
-| ------------- | ------------- |
-| Stykkplukkingsbekreftelse   | Tilgjengelig for arbeidstypene plukking og opptelling. Produktbekreftelse velges automatisk. Lar deg bekrefte hver del av beholdningen fra den mobile enheten. | 
-| Maksimalt antall enheter     | Tilgjengelig for plukkarbeid hvis stykkplukkingsbekreftelse er aktivert. Angir en grense for hvor mange enheter som du må bekrefte. |  
+
+|           Alternativ           |                                                                            beskrivelse                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stykkplukkingsbekreftelse | Tilgjengelig for arbeidstypene plukking og opptelling. Produktbekreftelse velges automatisk. Lar deg bekrefte hver del av beholdningen fra den mobile enheten. |
+|  Maksimalt antall enheter  |                   Tilgjengelig for plukkarbeid hvis stykkplukkingsbekreftelse er aktivert. Angir en grense for hvor mange enheter som du må bekrefte.                   |
+
 

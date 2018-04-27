@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Innkjøpskataloger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver, på et høyt nivå, hvordan innkjøpere kan opprette og vedlikeholde innkjøpskataloger. Innkjøpskataloger definerer varene og tjenestene som de ansatte i firmaet kan bestille for intern bruk.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Direkte leveringer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir informasjon om direkte leveringer. Direkte leveringer er leveringer som sendes direkte fra leverandøren til kunden.
 

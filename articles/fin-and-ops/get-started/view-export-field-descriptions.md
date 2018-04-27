@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 
@@ -77,7 +76,7 @@ Det finnes flere måter å søke etter en side på i feltet **Velg en side**. I 
     -   Hvis det finnes mer enn ett treff, vises ingen beskrivelser. Du må åpne rullegardinlisten, og velg siden du vil bruke.
     -   Hvis navnet du skrev inn er en del av navnet på en annen side, vises beskrivelsene for siden. Hvis du imidlertid åpner rullegardinlisten, vises flere sider som inneholder dette navnet.
 
-Ingen beskrivelser vises for eksempel når du skriver inn **Opptelling** i feltet ****Velg en side****. Du åpner rullegardinlisten og ser at det er to sider med navnet **Opptelling**, i tillegg til flere sider som inneholder ordet Opptelling i navnet. Hvis du velger siden som har **InventJournalCount** som navn på applikasjonsobjekttre, vises feltbeskrivelsene for denne siden. Hvis du imidlertid åpner rullegardinlisten på nytt, ser du at listen nå inneholder alle sider som har "InventJournalCount"» som en del av navnet på applikasjonsobjekttreet.
+Ingen beskrivelser vises for eksempel når du skriver inn <strong>Opptelling</strong> i feltet *<strong><em>Velg en side</em></strong>*. Du åpner rullegardinlisten og ser at det er to sider med navnet <strong>Opptelling</strong>, i tillegg til flere sider som inneholder ordet Opptelling i navnet. Hvis du velger siden som har <strong>InventJournalCount</strong> som navn på applikasjonsobjekttre, vises feltbeskrivelsene for denne siden. Hvis du imidlertid åpner rullegardinlisten på nytt, ser du at listen nå inneholder alle sider som har "InventJournalCount"» som en del av navnet på applikasjonsobjekttreet.
 
 ## <a name="troubleshooting"></a>Feilsøking
 Dette avsnittet inneholder informasjon om hvordan du feilsøker problemer som kan oppstå når du bruker feltbeskrivelser.

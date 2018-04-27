@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f711ef739e8b885f2f09586f34775e826b619c82
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet.
 
@@ -204,12 +203,12 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 <thead>
 <tr class="header">
 <th>Alternativ</th>
-<th>Beskrivelse</th>
+<th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ingen</td>
+<td>None</td>
 <td>Denne standardverdien behandler ikke arbeid.</td>
 </tr>
 <tr class="even">

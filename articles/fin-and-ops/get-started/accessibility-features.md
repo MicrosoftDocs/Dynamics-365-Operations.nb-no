@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accessibility-features"></a>Tilgjengelighetsfunksjoner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver funksjonaliteten som er utviklet for å hjelpe brukere som har ulike funksjonshemminger å bruke Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Det finnes for eksempel funksjoner for personer som bruker tekniske hjelpefunksjoner for syn som Microsoft Windows Skjermleser.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Frigi produkt/produktstandard til juridiske enheter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å frigi et produkt eller en produktstandard til én eller flere juridiske enheter. Demonstrasjonsdataselskapet USRT er brukt til å opprette denne oppgaven, og oppgaven er ment for varehandelsledere og produktdesignere.
 

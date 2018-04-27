@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Opprette kuponger for detaljhandelssalg
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Oversikt over kuponger
 
@@ -46,9 +45,12 @@ Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deret
 
 ### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 
-Du kan konfigurere kuponger som kuponger med begrenset bruk. Bruksgrensen kan defineres per kunde eller kanal, eller som en global begrensning. Denne begrensningen fremtvinges når koden eller strekkoden angis eller skannes i POS eller ved registrering av salgsordre. En kupong registreres som brukt når en ordre er fullført med kupongen som er knyttet til den.
+Du kan konfigurere kuponger som kuponger med begrenset bruk. Bruksgrensen kan defineres per kunde eller kanal, eller som en global begrensning. Denne begrensningen fremtvinges når koden eller strekkoden angis eller skannes i POS eller ved registrering av salgsordre.
 
 Grensen brukes per kode på en kupong. En engangskupong som har to kupongkoder, kan for eksempel brukes to ganger: én gang for hver kupongkode. Hver kode i en kupong kan uavhengig settes til aktiv.
+
+> [!NOTE]
+> Når grensen for bruk av en kupongkode er nådd, endrer *ikke* systemet automatisk statusen for kupongkoden til "Brukes". Systemet tillater imidlertid ikke ytterligere bruk av en kuponfkode som har nådd grensen for bruk. Hvis statusen for en kupongkode er manuelt satt til annet enn "Aktiv", kan ikke denne kupongkoden som ikke kan brukes i noen kanaler.
 
 ## <a name="managing-coupons"></a>Behandle kuponger
 
@@ -68,8 +70,8 @@ Før du kan definere en kupong, må du definere kupongens strekkode og to nummer
     > [!NOTE]
     > For begge nummerserier må du angi **Område**-feltet til **Firma**. I de fleste tilfeller bør du automatisk generere begge serienumrene.
 
-5.  På siden **Delte parametere for detaljhandel**, i kategorien **Strekkoder**, velger du strekkoden du opprettet tidligere.
-6.  På siden **Detaljhandelsparametere**, i kategorien **Nummerserier**, velger du nummerseriene du opprettet for kupongnummeret og kupongkode-IDen.
+5.  På siden **Parametere for detaljhandel**, i kategorien **Strekkoder**, velger du strekkoden du opprettet tidligere.
+6.  På siden **Delte parametere for detaljhandel**, i kategorien **Nummerserier**, velger du nummerseriene du opprettet for kupongnummeret og kupongkode-IDen.
 7.  Du kan åpne **Kuponger**-siden og opprette nye kuponger.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen av delvis oppdateringer på kuponger

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Vis posterte mva-transaksjoner
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan vise posterte mva-transaksjoner fra forskjellige sider avhengig av hva du vil vise. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="project-invoicing"></a>Prosjektfakturering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer.
 

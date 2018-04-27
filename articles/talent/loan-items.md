@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e7b29b1cca0b61f295449045a2d4e38abacf05b5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ba1b158908ac2328c29f7efe23756248be5be33c
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manage-items-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Utlånsvarer er poster som hjelper ledere med å spore fysiske varer som firmaet låner ut til arbeidere. 
 
@@ -51,7 +50,7 @@ Ledere kan vise utlånte varer til sine direkte underordnede. De kan også få t
 
 Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. Deretter kan du enten slette varen eller beholde den i oversikten, og endre beskrivelsen for å vise at varen ikke er tilgjengelig.
 
- 
+
 <a name="see-also"></a>Se også
 --------
 

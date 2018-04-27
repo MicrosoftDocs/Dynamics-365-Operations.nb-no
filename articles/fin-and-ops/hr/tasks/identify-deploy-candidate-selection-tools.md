@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifisere og distribuere verktøy for kandidatvalg
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter.  Kandidater med ferdighetene du trenger, kan imidlertid allerede være ansatt i organisasjonen. Du kan søke etter en bestemt kvalifikasjon blant eksisterende ansatte eller nye søkere. Dette gjør at en rekrutterer raskt kan samle og sile søkere som har søkt en ledig stillig nå eller tidligere, eller finne potensielle kandidater fra det eksisterende utvalget av ansatte. Bruk denne oppgaveregistreringen for å lære hvordan funksjonen for kompetansesøk kan hjelpe deg med å finne riktig person for en ledig stilling. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

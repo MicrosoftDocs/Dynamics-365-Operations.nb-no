@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Etterfylling
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver etterfyllingsstrategiene som er tilgjengelige for lagre som bruker funksjonaliteten som er tilgjengelig i Lagerstyring. Informasjonen i dette emnet gjelder ikke for lagrerløsningen som er tilgjengelig i Lagerstyring.
 
@@ -67,13 +67,15 @@ Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter
 I stedet for å måtte oppsummere kravet på slutten av en allokasjonsprosess og gjøre etterfylling på grunnlag av den oppsummerte mengden, kan du søke om umiddelbar etterfyllingsstrategi. Når du bruker denne strategien, kan beholdningen etterfylles umiddelbart etter at lokaliseringsdirektivet mislykkes. Derfor kan du sette opp etterfyllingen slik at den er begrenset av bestemte enheter, og slik at den bruker mengder som er angitt for bestemte lokasjoner.
 
 ## <a name="replenishment-prerequisites"></a>Forhåndskrav for etterfylling
-| Forutsetning            | beskrivelse |
-|-------------------------|-------------|
-| Element                    | Varn må aktiveres for lagerstyringsprosesser. |
-| Lager               | Lageret må aktiveres for lagerstyringsprosesser. For å aktivere et lager for lagerbehandlingsprosesser, velg lageret på siden **Lager**, og velg deretter alternativet **Bruk lagerstyringsprosesser**. |
-| Etterfyllingsmaler | Minst én etterfyllingsmal må defineres for etterfylling basert på minimums- og maksimumsantall, etterfylling basert på bølgebehov eller etterfylling basert på lastbehov. |
-| Lokasjoner               | Lokasjoner må opprettes og kobles til en lokasjonsprofil. |
-| Lokasjonsprofiler       | Lokasjonsprofiler er nødvendig for å opprette lokasjoner. |
-| Lokasjonsdirektiver     | Lokasjonsdirektiver kreves for å veilede arbeidet til de lokasjonene hvor etterfylling er nødvendig, og til lokasjonene som beholdningen er hentet fra. |
-| Arbeidsmaler          | Arbeidsmaler av typen **Etterfylling** er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner. |
+
+|      Forutsetning       |                                                                                                                                beskrivelse                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Element           |                                                                                                        Varn må aktiveres for lagerstyringsprosesser.                                                                                                        |
+|        Lager        | Lageret må aktiveres for lagerstyringsprosesser. For å aktivere et lager for lagerbehandlingsprosesser, velg lageret på siden <strong>Lager</strong>, og velg deretter alternativet <strong>Bruk lagerstyringsprosesser</strong>. |
+| Etterfyllingsmaler |                                                                   Minst én etterfyllingsmal må defineres for etterfylling basert på minimums- og maksimumsantall, etterfylling basert på bølgebehov eller etterfylling basert på lastbehov.                                                                   |
+|        Lokasjoner        |                                                                                                       Lokasjoner må opprettes og kobles til en lokasjonsprofil.                                                                                                       |
+|    Lokasjonsprofiler    |                                                                                                        Lokasjonsprofiler er nødvendig for å opprette lokasjoner.                                                                                                        |
+|   Lokasjonsdirektiver   |                                                       Lokasjonsdirektiver kreves for å veilede arbeidet til de lokasjonene hvor etterfylling er nødvendig, og til lokasjonene som beholdningen er hentet fra.                                                        |
+|     Arbeidsmaler      |                                                   Arbeidsmaler av typen <strong>Etterfylling</strong> er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner.                                                    |
+
 

@@ -23,14 +23,14 @@ ms.contentlocale: nb-no
 ms.lasthandoff: 09/29/2017
 
 ---
-# Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel som bruker en minste beholdning-hendelse for å sikre at et bestemt produkt alltid er tilgjengelig på em bestemt lokasjon. Det opprettes en Kanban-regel for å overføre materiale til lokasjonen når lagernivået faller under 200 enheter. Ved å kjøre Behandling av utligningshendelse, opprettes de nødvendige Kanbanene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for prosessingeniøren eller verdistrømlederen, når de klargjør produksjon av et nytt eller endret produkt i et lean-miljø.
 
 
-## Opprett en ny Kanban-regel
+## <a name="create-a-new-kanban-rule"></a>Opprett en ny Kanban-regel
 1. Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.
 2. Klikk Ny.
 3. Velg Uttak i Type-feltet.
@@ -46,7 +46,7 @@ Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel so
 9. Velg Parti i feltet Hendelse for lageretterfylling.
     * Dette oppretter Kanbaner for å oppfylle materialbehov på den tilknyttede plasseringen under behandling av utligningshendelse.  
 
-## Sette minimumsantallet for varen
+## <a name="set-the-minimum-quantity-for-the-item"></a>Sette minimumsantallet for varen
 1. Klikk for å følge koblingen i Produkt-feltet.
 2. Klikk for å følge koblingen i Varenummer-feltet.
 3. Vis Produktbilde-faktaboksen.
@@ -58,7 +58,7 @@ Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel so
     * Sett Lager til 12.  
 9. Sett Minimum til 200.
 
-## Kjøre den satsvise jobben for oppretting av hendelse
+## <a name="run-the-batch-event-creation-job"></a>Kjøre den satsvise jobben for oppretting av hendelse
 1. Gå til Produksjonskontroll > Periodiske oppgaver > Satsvis behandling av Kanban-jobb > Behandling av utligningshendelse.
 2. Klikk OK.
 3. Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.

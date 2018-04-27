@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Definere og opprette avskrivningsprofiler
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Avskrivningsprofiler bestemmer typen og frekvensen for avskrivning for et anleggsmiddel.   Denne registreringen bruker demonstrasjonsfirmaet USMF og regnskapsførerrollen.
 

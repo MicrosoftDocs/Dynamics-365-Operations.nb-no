@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Sist inn, først ut etter dato (LIFO-dato) er en lagermodell basert på LIFO-prinsippet. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. Med LIFO-datoen, hvis det ikke er et mottak før avgangen, utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak. 
 
@@ -66,16 +65,16 @@ Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alterna
 
 **Nøkkel til diagrammet**
 
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO-dato når alternativet Ta med fysisk verdi brukes
 Du kan merke av i boksen **Ta med fysisk verdi** for en vare på **Varemodellgrupper**-siden. I dette tilfellet bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for boksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-datolagermodellen bare utligne transaksjoner som er økonomisk oppdatert. 
@@ -101,16 +100,16 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternative
 
 **Nøkkel til diagrammet**
 
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-date-with-marking"></a>LIFO-dato med merking
 Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. 
@@ -147,16 +146,16 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mel
 
 **Nøkkel til diagrammet**
 
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 
 

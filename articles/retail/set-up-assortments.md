@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>Definere sortimenter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikkelen beskriver hva et utvalg er og forklarer hvordan du setter opp sortimenter i Microsoft Dynamics 365 for Retail.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-signature-overview"></a>Oversikt over elektronisk signatur
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 

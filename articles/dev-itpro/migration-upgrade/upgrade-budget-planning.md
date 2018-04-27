@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
 
@@ -70,26 +69,27 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
 
 ### <a name="define-columns-and-layouts"></a>Definere kolonner og oppsett
 
-1.  På siden **Budsjettplanleggingsprosess**, klikk **Kolonner**-kategorien. Som del av oppgraderingen vil nye kolonner automatisk opprettes basert på dine budsjettplanlinjer. Kolonner bruker nå dynamiske datoer, der klokkeslett og år forskyves fra regnskapsåret som er definert i budsjettplanleggingsprosessen. **Obs!** Av ytelseshensyn under oppgraderingen antas det at alle budsjettsykluser representerer kalenderår, ikke regnskapsår. Hvis du bruker regnskapsår, må du redigere for riktig tilordning av kolonner til regnskapsåret. Disse elementene finnes for eksempel i AX 2012:
-    -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
-    -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
+1. På siden **Budsjettplanleggingsprosess**, klikk **Kolonner**-kategorien. Som del av oppgraderingen vil nye kolonner automatisk opprettes basert på dine budsjettplanlinjer. Kolonner bruker nå dynamiske datoer, der klokkeslett og år forskyves fra regnskapsåret som er definert i budsjettplanleggingsprosessen. **Obs!** Av ytelseshensyn under oppgraderingen antas det at alle budsjettsykluser representerer kalenderår, ikke regnskapsår. Hvis du bruker regnskapsår, må du redigere for riktig tilordning av kolonner til regnskapsåret. Disse elementene finnes for eksempel i AX 2012:
+   -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
+   -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
 
-    Følgende kolonner vil bli opprettet i Finance and Operations:
-    | Kolonnenavn    | Budsjettplanscenario | Tidsperiode for kolonne | Årsforskyvning |
-    |----------------|----------------------|--------------------|-------------|
-    | Jan scenario 1 | Faktiske beløp              | 1                  | 0           |
-    | Jan scenario 2 | Grunnlinje             | 1                  | 0           |
-    | Jan scenario 3 | Budsjettforespørsel       | 1                  | 0           |
-    | Jan scenario 4 | Budsjett godkjent      | 1                  | 0           |
-    | Jan scenario 5 | Faktiske beløp              | 1                  | -1          |
-    | Feb scenario 1 | Faktiske beløp              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   Følgende kolonner vil bli opprettet i Finance and Operations:
 
-    I dette eksemplet opprettes en kolonne med navnet **Jan scenario 1** for de siste transaksjonsdataene for budsjettplanen som finnes der det finnes transaksjoner i januar. Det opprettes en lignende kolonne for hvert scenario som inneholder data. Når det finnes kolonner for alle perioder i dette året, opprettes det kolonner for tidligere år.
-2.  Endre kolonnenavn, beskrivelser og eventuelt andre detaljer, enten manuelt i klienten eller ved å gjøre masseoppdateringer ved hjelp av Excel-tillegget som peker til dataenheten for budsjettplankolonner. Filtre som tidligere er angitt for matrisefelt er nå angitt i kolonnene.
-3.  Opprett et nytt budsjettplanoppsett. Et oppsett peker til flere kolonner for å definere visningen som vises i Excel og klienten. Oppsettet krever først at du angir en finansdimensjon angitt for å fastslå hvilke finansdimensjoner som kan angis. Når du angir dimensjonssettet, klikker du på **Beskrivelse** for å velge dimensjonsbeskrivelser som skal tas med i oppsettet.
-4.  I hurtigfanen **Oppsettelementer** klikker du på **Legg til** for å legge til metadata for hver rad, for eksempel en valuta, en merknad eller en budsjettklasse, som bestemmer omsetnings- kontra utgiftsrader. Deretter legger du til kolonner for tidsperioden, og scenarier som gjelder denne budsjettsyklusen og dette stadiet. Du kan gjøre disse endringene manuelt i klienten eller ved hjelp av Excel-tillegget som peker til dataenheten for oppsettelementer for budsjettplanen.
-5.  For hvert element i oppsettet velger du om kolonnen kan redigeres og om kolonnen også skal vises i Excel-arbeidsboken for dette oppsettet. **Obs!** Du bør vurdere et oppsett med tolv månedlige kolonner for alle budsjettplanscenarioer for denne prosessen for våre historiske planer.
+   | Kolonnenavn    | Budsjettplanscenario | Tidsperiode for kolonne | Årsforskyvning |
+   |----------------|----------------------|--------------------|-------------|
+   | Jan scenario 1 | Faktiske beløp              | 1                  | 0           |
+   | Jan scenario 2 | Grunnlinje             | 1                  | 0           |
+   | Jan scenario 3 | Budsjettforespørsel       | 1                  | 0           |
+   | Jan scenario 4 | Budsjett godkjent      | 1                  | 0           |
+   | Jan scenario 5 | Faktiske beløp              | 1                  | -1          |
+   | Feb scenario 1 | Faktiske beløp              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   I dette eksemplet opprettes en kolonne med navnet **Jan scenario 1** for de siste transaksjonsdataene for budsjettplanen som finnes der det finnes transaksjoner i januar. Det opprettes en lignende kolonne for hvert scenario som inneholder data. Når det finnes kolonner for alle perioder i dette året, opprettes det kolonner for tidligere år.
+2. Endre kolonnenavn, beskrivelser og eventuelt andre detaljer, enten manuelt i klienten eller ved å gjøre masseoppdateringer ved hjelp av Excel-tillegget som peker til dataenheten for budsjettplankolonner. Filtre som tidligere er angitt for matrisefelt er nå angitt i kolonnene.
+3. Opprett et nytt budsjettplanoppsett. Et oppsett peker til flere kolonner for å definere visningen som vises i Excel og klienten. Oppsettet krever først at du angir en finansdimensjon angitt for å fastslå hvilke finansdimensjoner som kan angis. Når du angir dimensjonssettet, klikker du på **Beskrivelse** for å velge dimensjonsbeskrivelser som skal tas med i oppsettet.
+4. I hurtigfanen **Oppsettelementer** klikker du på **Legg til** for å legge til metadata for hver rad, for eksempel en valuta, en merknad eller en budsjettklasse, som bestemmer omsetnings- kontra utgiftsrader. Deretter legger du til kolonner for tidsperioden, og scenarier som gjelder denne budsjettsyklusen og dette stadiet. Du kan gjøre disse endringene manuelt i klienten eller ved hjelp av Excel-tillegget som peker til dataenheten for oppsettelementer for budsjettplanen.
+5. For hvert element i oppsettet velger du om kolonnen kan redigeres og om kolonnen også skal vises i Excel-arbeidsboken for dette oppsettet. **Obs!** Du bør vurdere et oppsett med tolv månedlige kolonner for alle budsjettplanscenarioer for denne prosessen for våre historiske planer.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Oppdatere budsjettplanleggingsprosesser til å bruke det passende oppsettet for hver budsjettstadium
 

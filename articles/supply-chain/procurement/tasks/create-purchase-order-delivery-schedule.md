@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Opprette en bestilling med en leveringsplan
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en leveringsplan for en bestilling. En leveringsplan brukes når et antall i en ordre eller en journal blir bedt om å bli levert i flere leveranser. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF. Dette gjøres vanligvis av en innkjøpsagent.
 

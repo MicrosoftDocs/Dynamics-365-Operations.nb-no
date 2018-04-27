@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Denne artikkelen inneholder generell informasjon om bestillinger og koblinger til flere artikler som er knyttet til de ulike stadiene som en bestilling går gjennom.
 

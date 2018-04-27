@@ -1,5 +1,5 @@
 --- 
-title: "Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)"
+title: "Kjøre format for bruk av dokumentbehandlingsfiler i formatutdata"
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 419c3e305dfdd7d8612340b4a8e8e54e13c6362b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 554de60fb8d2b6cb03cac5dc8d01df98390ad844
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata for elektronisk rapportering (ER)
+# <a name="run-format-to-use-document-management-files-in-format-outputs"></a>Kjøre format for bruk av dokumentbehandlingsfiler i formatutdata 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata. Denne fremgangsmåten kan utføres i firmaet DEMF.
 

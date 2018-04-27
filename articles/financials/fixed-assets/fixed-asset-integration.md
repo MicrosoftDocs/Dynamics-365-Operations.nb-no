@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Integrering av anleggsmidler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="tax-directives-for-europe"></a>Mva-direktiver for Europa
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regler for fakturaer og informasjon som må være med når du oppretter fakturaer. EU-direktiv viser hvilken informasjon leverandører må oppgi til sine kunder i EU. En faktura kan for eksempel inneholde en referanse som beskriver det juridiske grunnlaget for nullsats eller fritak for mva. Hvis en faktura justerer en tidligere utstedt faktura, for eksempel en kreditnota, skal den inneholde en entydig henvisning til den opprinnelige fakturaen.
 

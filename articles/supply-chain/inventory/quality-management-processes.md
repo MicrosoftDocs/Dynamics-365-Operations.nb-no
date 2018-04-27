@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Kvalitetsstyringsprosesser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kvalitetsstyringsprosessen for materiell med avvik. Det beskriver hvordan du kan bruke kvalitetskontrollfunksjonen, hvordan du definerer og vedlikeholder avvik og hvordan du håndterer korrigeringer.
 

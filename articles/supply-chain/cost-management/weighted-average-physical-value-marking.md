@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Direkte utligning med fysisk verdi og merking
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt, der avganger fra lageret beregnes ut fra gjennomsnittsverdien for varene som mottas i lageret under lagerets periodeavslutning, pluss all lagerbeholdning fra den forrige perioden.
 
@@ -74,16 +74,16 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 ![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Summert utligning for avveid gjennomsnitt uten alternativet Ta med fysisk verdi
 Avveid gjennomsnitt brukerutligningsprinsippet om at alle mottak i en avslutningsperiode summeres i en ny transaksjon kalt Avveid gjennomsnittlig lagerlukking. Alle mottakene for perioden blir utlignet mot avgangen til den nylig opprettede lageroverføringstransaksjonen. Alle avganger for perioden blir utlignet mot mottaket av den nye lageroverføringstransaksjonen. Hvis lagerbeholdningen er positiv etter lagerlukkingen, summeres lagerbeholdningen og verdien av lageret i den nye lageroverføringstransaksjonen (tilganger). Hvis lagerbeholdningen er negativ etter lagerlukkingen, er lagerbeholdningen og verdien av lageret lik summen av de enkelte avgangene som ikke er fullt utlignet. I scenariet nedenfor er flere økonomisk oppdaterte mottak og én avgang postert. 
@@ -108,18 +108,18 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 ![Summert utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
--   Røde piler illustrerer mottakstransaksjonen som blir utlignet mot avgangstransaksjonen som ble opprettet av systemet.
--   Den grønne pilen representerer den motposterte systemgenererte mottakstransaksjonen som den opprinnelige posterte avgangstransaksjonen utlignes mot
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
+- Røde piler illustrerer mottakstransaksjonen som blir utlignet mot avgangstransaksjonen som ble opprettet av systemet.
+- Den grønne pilen representerer den motposterte systemgenererte mottakstransaksjonen som den opprinnelige posterte avgangstransaksjonen utlignes mot
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Direkte utligning for avveid gjennomsnitt med alternativet Ta med fysisk verdi
 Parameteren Ta med fysisk verdi fungerer på en annen måte med lagermodellen for avveid gjennomsnitt enn i tidligere versjoner av produktet. Merk av i boksen Ta med fysisk verdi for en vare i Varemodellgruppe-skjemaet. Systemet vil deretter bruke fysisk oppdaterte tilganger når den estimerte kostprisen eller det glidende gjennomsnittet beregnes. Avganger blir postert på grunnlag av denne estimerte kostprisen for perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Vi anbefaler en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med direkte utligning av avveid gjennomsnitt, er varemodellgruppen merket for å ta med fysisk verdi. 
@@ -137,16 +137,16 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 ![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Summert utligning for avveid gjennomsnitt med alternativet Ta med fysisk verdi
 Parameteren Ta med fysisk verdi fungerer på en annen måte med avveid gjennomsnitt enn i tidligere versjoner. Merk av i boksen Ta med fysisk verdi for en vare på Varemodellgruppe-siden. Systemet vil deretter bruke fysisk oppdaterte tilganger under beregning av den estimerte kostprisen eller det glidende gjennomsnittet. Avganger posteres basert på denne estimerte kostprisen i løpet av perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Vi anbefaler en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med summert utligning av avveid gjennomsnitt, er lagermodellen merket for å ta med fysisk verdi. 
@@ -170,18 +170,18 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 ![Summert utligning for avveid gjennomsnitt med ta med fysisk verdi](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel 1a. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
--   Røde piler illustrerer mottakstransaksjonen som blir utlignet mot avgangstransaksjonen som ble opprettet av systemet.
--   Den grønne pilen representerer den motposterte systemgenererte mottakstransaksjonen som den opprinnelige posterte avgangstransaksjonen utlignes mot
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel 1a. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
+- Røde piler illustrerer mottakstransaksjonen som blir utlignet mot avgangstransaksjonen som ble opprettet av systemet.
+- Den grønne pilen representerer den motposterte systemgenererte mottakstransaksjonen som den opprinnelige posterte avgangstransaksjonen utlignes mot
 
 ## <a name="weighted-average-with-marking"></a>Avveid gjennomsnitt med merking
 Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. 
@@ -218,16 +218,16 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 ![Avveid gjennomsnitt med merking](./media/weightedaveragewithmarking.gif) 
 
 **Nøkkel til diagram**
--   Lagertransaksjoner vises med loddrette piler.
--   Mottak til lager vises med loddrette piler over tidslinjen.
--   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
--   Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
--   Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
--   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
--   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
+- Lagertransaksjoner vises med loddrette piler.
+- Mottak til lager vises med loddrette piler over tidslinjen.
+- Avganger fra lager vises med loddrette piler under tidslinjen.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@"Unitprice".
+- Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
+- Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
+- Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
+- Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
 
 
 

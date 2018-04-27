@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations. 
 
@@ -39,6 +38,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Hvis du vil gjøre dette**                                    | **Trykk**                        |
@@ -55,6 +55,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Vise tilgjengelige snarveier                | Alt+Skift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Snarveier for datovelger
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Hvis du vil gjøre dette**                        | **Trykk**                                 |
@@ -68,6 +69,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Velg aldri (eller maks. dato)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Faktabokssnarveier
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Hvis du vil gjøre dette**                                                                  | **Trykk**                                 |
@@ -79,6 +81,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Skjul gjeldende faktaboks                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Filtreringssnarveier
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Hvis du vil gjøre dette**                     | **Trykk**                |
@@ -89,6 +92,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Åpne avansert filtrering/sortering                                      | Ctrl+Skift+F3            | 
 
 ## <a name="form-shortcuts"></a>Skjemasnarveier
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Hvis du vil gjøre dette**                                      | **Trykk**         |
@@ -110,6 +114,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Lukk skjemaet og forkast eventuelle ulagrede endringer       | Alt+Skift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Snarveier for skjemanavigasjon
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Hvis du vil gjøre dette**                                      | **Trykk**                                    |
@@ -128,6 +133,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bytt til linjevisning                                | Ctrl+Skift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Rutenettsnarveier
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Hvis du vil gjøre dette**                                                                                                         | **Trykk**                       |
@@ -148,6 +154,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Hvis du vil gjøre dette**                                                               | **Trykk**                     |
@@ -163,6 +170,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bytt fokus mellom tekstområdet og verktøylinjen i en HTML-editorkontroll | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Meldingssnarveier
+
 |                          |               |
 |--------------------------|---------------|
 | **Hvis du vil gjøre dette**           | **Trykk**     |
@@ -170,6 +178,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til meldingslinjen    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigasjonssnarveier
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Hvis du vil gjøre dette**                                                                | **Trykk**                  |
@@ -191,6 +200,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Flytt til Faktaboks-rute (som kan omfatte å åpne den)                       | Alt+M,B eller Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Personlige snarveier
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Hvis du vil gjøre dette**                                                                                                         | **Trykk**                           |
@@ -219,6 +229,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Avslutt personliggjøring (når du er i personliggjøringsmodus)                                                               | ESC                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Snarveier for segmenterte oppføringer
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Hvis du vil gjøre dette**                                                                                                          | **Trykk**                        |

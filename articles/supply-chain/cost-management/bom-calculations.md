@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM-beregninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Beregningene av kostnadsakkumulering og salgspris kalles stykklisteberegninger (BOM), og du innleder dem fra Beregninger-siden. Dette emnet gir informasjon om BOM-beregninger.
 

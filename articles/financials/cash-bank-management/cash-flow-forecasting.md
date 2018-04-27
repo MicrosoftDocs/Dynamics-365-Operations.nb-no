@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruke verktøy for kontantstrømprognose til å analysere kommende kontantstrøm- og valutabehov, slik at kan du estimere firmaets fremtidige behov for kontanter. Hvis du vil ha en prognose over kontantstrømmen, må du utføre følgende oppgaver:
 

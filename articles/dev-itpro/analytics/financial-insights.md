@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Økonomisk innsikt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Økonomisk innsikt** bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør. Power BI is er innebygd i Microsoft Dynamics 365 for Finance and Operations.
 Fokuset til **Økonomiske innsikt** er analytisk rapportering. Personer i en organisasjon kan vise, undersøke, forstå og utføre en handling. 
@@ -107,8 +107,20 @@ Selv om **Økonomisk innsikt** inneholder regnskapsoppgjør, er det ikke en erst
 
 Sammenligningsdiagrammet nedenfor vil hjelpe deg med å skille mellom de to alternativene:
 
-|                                         | **Finansrapportering**                            | **Økonomisk innsikt**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Rediger standardrapporter**                | Ja                                                | Nei                                 | | **Opprett nye rapporter**                  | Ja                                                | Nei                                 | | **Skriv ut rapporter**                       | Ja                                                | Nei                                 | | **Eksporter til Excel**                     | Ja          | Begrenset Eksporterer rådata til Excel, ikke en formatert rapport       | | **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                               | Nei                                 | | **Rapporter om underfinansdata**       | Ja Begrenset til bare leverandør, kunde    | Ja Leverandør, kunde, leverandør-/kundegrupper, leverandør-/kundeadresser osv.  | | **Rapporteringsvaluta**      | Ja Regnskapsvaluta og omveksle til rapporteringsvaluta       | Nei Bare regnskapsvaluta      | | **Sikkerhet**                | Ja Samsvarer med Finance and Operations- og rapporteringstresikkerhet | Begrenset Vis rapporter for alle firmaer (uansett Finance and Operations-sikkerhet) eller bare aktivt firma | | **Støtt ulike kontoplaner og regnskapsår** | Ja                   | Nei                   | | **Rapporter om eksterne data**                              | Nei                   | Nei                                   | | **Støtt konsolideringer**                               | Ja                          | Begrenset Kan rapportere om flere firmaer, men bare bruke regnskapsvaluta                                     |
 
+|                                                                       |               <strong>Finansrapportering</strong>                |                                      <strong>Økonomisk innsikt</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Rediger standardrapporter</strong>                 |                                Ja                                |                                                      Antall                                                       |
+|                  <strong>Opprett nye rapporter</strong>                  |                                Ja                                |                                                      Antall                                                       |
+|                    <strong>Skriv ut rapporter</strong>                     |                                Ja                                |                                                      Antall                                                       |
+|                   <strong>Eksporter til Excel</strong>                    |                                Ja                                |                           Begrenset Eksporterer rådata til Excel, ikke en formatert rapport                           |
+|  <strong>Støtt rapporteringshierarki/organisasjonshierarki</strong>  |                                Ja                                |                                                      Antall                                                       |
+|               <strong>Rapporter om underfinansdata</strong>               |               Ja Begrenset til bare leverandør, kunde                |                 Ja Leverandør, kunde, leverandør-/kundegrupper, leverandør-/kundeadresser og så videre.                 |
+|                  <strong>Rapporteringsvaluta</strong>                  |    Ja Regnskapsvaluta og omveksle til rapporteringsvaluta    |                                          Nei Bare regnskapsvaluta                                          |
+|                       <strong>Sikkerhet</strong>                       | Ja Samsvarer med Finance and Operations- og rapporteringstresikkerhet | Begrenset Vis rapporter for alle firmaer (uansett Finance and Operations-sikkerhet) eller bare aktivt selskap |
+| <strong>Støtt ulike kontoplaner og regnskapsår</strong> |                                Ja                                |                                                      Antall                                                       |
+|               <strong>rapporter om eksterne data</strong>                |                                Antall                                 |                                                      Antall                                                       |
+|                <strong>Støtt konsolideringer</strong>                |                                Ja                                |                   Begrenset Kan rapportere om flere firmaer, men bare bruke regnskapsvaluta                   |
 
 I tillegg til brukergrensesnittet i det opprinnelige **CFO-oversikt**-arbeidsområdet, finnes det nå nye KPI-er, diagrammer og regnskapsoppgjør. Følgende regnskapsoppgjør er tilgjengelige:
 

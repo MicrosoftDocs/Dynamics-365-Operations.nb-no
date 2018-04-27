@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Definere forutsetninger for behandling
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne fremgangsmåten for å aktivere prosjektstyringsprosesser for avvik. Et avvik beskriver en prosedyre eller vare som har et kvalitetsproblem, der den beskrivende informasjonen inkluderer kilden og problemtypen. Denne prosedyren bruker demonstrasjonsdatafirmaet USMF. Denne prosedyren utføres vanligvis av en kvalitetssjef.
 

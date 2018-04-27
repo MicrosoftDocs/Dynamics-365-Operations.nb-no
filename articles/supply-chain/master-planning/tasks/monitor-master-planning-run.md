@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåke en kjøring av hovedplanlegging
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Produksjonsplanleggeren vil se om det er en kjøring for hovedplanlegging pågår. Bruk USMF-demodatafirmaet til å utføre denne prosedyren.
 

@@ -3,12 +3,12 @@ title: Startside for kostnadsstyring
 description: "Med kostnadsstyring kan du håndtere vurderingen og regnskapet for råvarer, halvferdige varer, ferdigvarer og aktiva i arbeid."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Med kostnadsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbeide med vurderingen og regnskapet for råvarer, halvferdige varer, ferdigvarer og aktiva i arbeid. Det er prosessen med å definere, behandle og rapportere [Lagerregnskap](cost-object.md) og [Produksjonsregnskap](bom-calculations.md).
 

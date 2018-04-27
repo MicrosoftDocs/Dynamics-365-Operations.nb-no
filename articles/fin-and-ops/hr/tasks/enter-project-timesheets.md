@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 17195b28ebe828423b4e5bb862f5c2e9884471ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-project-timesheets"></a>Angi prosjekttimeregistreringer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren lar deg opprette en timeregistrering ved hjelp av et tomt timeregistreringsskjema. Den nye timeregistreringen kan baseres på informasjon fra en tidligere timeregistrering, eller fra prosjekt- og aktivitetstilordninger på Mine favoritter-siden. Som standard viser Alle timeregistreringer-listesiden alle timeregistreringene dine for den gjeldende perioden. Du kan bruke rullegardinlisten for Vis-feltet på Mine timeregistreringer-siden til å filtrere timeregistreringslisten etter tidsperiode eller prosjekt, eller til å vise timeregistreringer som ble opprettet på vegne av andre arbeidere. Demonstrasjonsdatafirmaet USSI brukes til å opprette denne prosedyren. Hvis du vil starte denne prosedyren, går du til Prosjektstyring og regnskap > Timeregistreringer > Mine timeregistreringer.
 

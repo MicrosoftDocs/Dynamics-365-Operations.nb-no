@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester. 
 
@@ -87,11 +86,11 @@ Du finner mer informasjon under:
  - [Definere leverandørfakturapolicyer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Registrere fakturadata i Leverandører ved hjelp av en leverandørfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [Registrere fakturadata i AP-systemet ved hjelp av fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [Registrere en leverandørfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)
 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angi søker- og søknadsdata manuelt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og søknader manuelt.   Du kan angi og vedlikeholde personlige opplysninger, intervjudatoer og -klokkeslett, referanser, kompetanser og overnattingsforespørsler for søkere. Du kan også oppdatere status for søkerens søknader om ansettelse og opprette brev eller e-postmeldinger for å kommunisere med søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken.       Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

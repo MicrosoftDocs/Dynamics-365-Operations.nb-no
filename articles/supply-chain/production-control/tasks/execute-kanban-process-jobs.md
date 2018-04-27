@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Kjøre Kanban-prosessjobber
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren fokuserer på utfører Kanban-prosessjobber. Den første jobben fullføres med det forventede antallet og har ingen feil. Den andre jobben fullføres med feil. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne prosedyren er ment for maskinoperatøren.
 

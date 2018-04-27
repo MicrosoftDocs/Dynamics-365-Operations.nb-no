@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Syklustelling
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du kan bruke syklustelling med datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Denne artikkelen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Beholdningsstyring.
 

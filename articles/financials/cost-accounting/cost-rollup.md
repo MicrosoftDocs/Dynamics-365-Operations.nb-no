@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kostnadsregnskap gir deg innsikt i hvordan kostnadsflyten er knyttet til produktene og tjenestene som leveres i en organisasjon. Hvis du vil se kostnadsgjennomsiktigheten, er det avgjørende å oppnå kostnadsfordeling mellom kostnadsobjekter basert på et passende tildelingsgrunnlag. Kostnadsfordelingen oppnås som standard for det primære kostnadselementet, som er ønskelig i noen tilfeller, men det har enkelte implikasjoner som må vurderes.
 

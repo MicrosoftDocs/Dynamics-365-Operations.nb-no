@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 % redusert saldoavskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 
@@ -68,6 +67,7 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 -   **Regnskapsperiode** beregner totalbeløpet for avskrivningen for regnskapsåret. Dette beløpet avsettes i regnskapsperiodene som defineres på siden **Regnskapskalendere**.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Eksempel på 175% redusert saldoavskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |

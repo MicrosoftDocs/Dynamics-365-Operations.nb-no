@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Sett opp arbeidsflyter for utgifter
 
-[!include[banner](../includes/banner.md)] Du kan sette opp en arbeidsflytprosess som brukes for å gjennomgå og godkjenne reise- og utleggsbilag. Dokumentene som arbeidsflyter kan defineres inkluderer kostnadsrapporter, reiserekvisisjoner og forespørsler om kontantforskudd.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Du kan sette opp en arbeidsflytprosess som brukes for å gjennomgå og godkjenne reise- og utleggsbilag. Dokumentene som arbeidsflyter kan defineres inkluderer kostnadsrapporter, reiserekvisisjoner og forespørsler om kontantforskudd.
 
 En arbeidsflyt representerer en forretningsprosess. Den definerer hvordan et dokument går gjennom systemet, og angir hvem som må utføre en oppgave eller godkjenne et dokument. Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 
@@ -42,13 +44,15 @@ En arbeidsflyt representerer en forretningsprosess. Den definerer hvordan et dok
 
 Følgende tabell viser hvilke typer arbeidsflyter du kan opprette i **Utgifter**.
 
-| **Type**                           | **Bruk denne typen til å gjøre følgende:**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Utgiftsrapport**                 | Opprett arbeidsflyter for utgiftsrapporter.                       |      
-| **Poster utgiftsrapport automatisk**    | Opprett automatiske posteringsflyter for utgiftsrapporter.              |     
-| **Utgiftslinjeelement**              | Opprett arbeidsflyter for godkjenning av linjeposter på utgiftsrapporter.         |     
-| **Poster utgiftslinjevare automatisk** | Opprett automatiske posteringsflyter for linjeposter på kostnadsrapporter.|
-| **Reiserekvisisjon**             | Opprett arbeidsflyter for godkjenning av reiserekvisisjoner.                   |    
-| **Forskuddsforespørsel**           | Opprett arbeidsflyter for godkjenning av forespørsler om kontantforskudd.                 |     
-| **Mva-fradrag**               | Opprett arbeidsflyter for godkjenning av tilbakebetaling av merverdiavgift (mva). |       
+
+|              <strong>Type</strong>              |                   <strong>Bruk denne typen til å gjøre følgende:</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Utgiftsrapport</strong>         |            Opprett arbeidsflyter for utgiftsrapporter.             |
+|  <strong>Poster utgiftsrapport automatisk</strong>   |        Opprett automatiske posteringsflyter for utgiftsrapporter.        |
+|       <strong>Utgiftslinjeelement</strong>        |     Opprett arbeidsflyter for godkjenning av linjeposter på utgiftsrapporter.      |
+| <strong>Poster utgiftslinjevare automatisk</strong> | Opprett automatiske posteringsflyter for linjeposter på kostnadsrapporter. |
+|       <strong>Reiserekvisisjon</strong>       |          Opprett arbeidsflyter for godkjenning av reiserekvisisjoner.           |
+|      <strong>Forskuddsforespørsel</strong>      |         Opprett arbeidsflyter for godkjenning av forespørsler om kontantforskudd.          |
+|        <strong>Mva-fradrag</strong>        | Opprett arbeidsflyter for godkjenning av tilbakebetaling av merverdiavgift (mva).  |
+
 

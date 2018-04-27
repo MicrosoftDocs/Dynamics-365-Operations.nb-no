@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Definere telefonsenterkanal og kanalattributter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Dette hjelper med å opprette en ny detaljhandelkanal og definere kanalattributter. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne fremgangsmåten er ment for rollen IT for detaljhandel.
 

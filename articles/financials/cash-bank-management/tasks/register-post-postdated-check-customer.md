@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og postere en etterdatert sjekk for en kunde
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner.   Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde: • Definer etterdaterte sjekker på siden Kontant- og bankbehandling • Definer en betalingsmåte for etterdaterte sjekker. Rollen for denne prosedyren er Kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 

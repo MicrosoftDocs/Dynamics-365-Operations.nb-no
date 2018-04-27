@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapport for fremoverrulling av anleggsmidler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Rull anleggsmidler forover**-rapporten inneholder, i et lesevennlig Microsoft Excel-format, de detaljerte anleggsmiddeldataene du trenger for periodeavslutning, regnskapsoppgjør og mva-rapportering. Rapporten inkluderer start- og sluttsaldoer for anleggsmidler, sammen med vurderingsbevegelser for perioden, og eventuelle nye anleggsmiddelanskaffelser og -salg som ble utført i løpet av perioden. Data rapporteres for individuelle anleggsmidler, og verdier summeres også for anleggsmiddelgrupper og den juridiske enheten.
 
@@ -41,28 +41,30 @@ Denne rapporten er tilgjengelig i Microsoft Dynamics 365 Finance and Operations,
 
 Følgende tabell beskriver feltene som er tilgjengelige i rapporten.
 
-| Felt                                       | beskrivelse |
-|---------------------------------------------|-------------|
-| Saldoer: Åpning                           | Anleggsmiddelets netto bokførte verdi per fra-datoen som er angitt i rapporten. |
-| Saldoer: Slutt                           | Anleggsmiddelets netto bokførte verdi per til-datoen som er angitt i rapporten. |
-| Anskaffelser: Inngående verdi                 | Summen av alle transaksjoner av typen **Anskaffelse** og **Anskaffelsesjustering** opptil fra-datoen som er angitt i rapporten. |
-| Anskaffelser: Periodeanskaffelser           | Summen av alle transaksjoner av typen **Anskaffelse** og **Anskaffelsesjustering** som ble postert i tidsperioden for rapporten. |
-| Anskaffelser: Periodeavhendinger              | Summen av alle tilbakeføringer av anskaffelser som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten. |
-| Anskaffelser: Lukkingsverdi                 | Summen av alle transaksjoner av typen **Anskaffelse** og **Anskaffelsesjustering** opptil til-datoen som er angitt i rapporten. |
-| Avskrivninger: Åpningsverdi                | Summen av alle transaksjoner av typen **Avskrivning**, **Avskrivningsjustering**, **Særskilte avskrivningsfradrag** og **Ekstraordinær avskrivning** opptil fra-datoen som er angitt i rapporten. |
-| Avskrivninger: Periodiske avskrivninger         | Summen av alle transaksjoner av typen **Avskrivning**, **Avskrivningsjustering** og **Ekstraordinær avskrivning** som ble postert i tidsperioden for rapporten. |
-| Avskrivninger: Periodiske spesielle avskrivninger | Summen av alle transaksjoner av typen **Særskilte avskrivningsfradrag** som ble postert i tidsperioden for rapporten. |
-| Avskrivninger: Periodeavhendinger             | Summen av alle tilbakeføringer av avskrivninger som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten. |
-| Avskrivninger Lukkingsverdi                | Summen av alle transaksjoner av typen **Avskrivning**, **Avskrivningsjustering**, **Særskilte avskrivningsfradrag** og **Ekstraordinær avskrivning** opptil til-datoen som er angitt i rapporten. |
-| Opp-/nedskrivinger: Åpningsverdi        | Summen av alle transaksjoner av typen **Skriv opp justering**, **Skriv ned justering** og **Revaluering** opptil fra-datoen som er angitt i rapporten. |
-| Opp-/nedskrivinger: Oppskrivninger for periode     | Summen av alle transaksjoner av typen **Skriv opp justering** som ble postert i tidsperioden for rapporten. |
-| Opp-/nedskrivinger: Nedskrivninger for periode   | Summen av alle transaksjoner av typen **Skriv ned justering** som ble postert i tidsperioden for rapporten. |
-| Opp-/nedskrivinger: Revalueringer for periode  | Summen av alle transaksjoner av typen **Revaluering** som ble postert i tidsperioden for rapporten. |
-| Opp-/nedskrivinger: Periodeavhendinger     | Summen av alle tilbakeføringer av oppskrivninger, nedskrivninger og revalueringer som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten. |
-| Opp-/nedskrivinger: Lukkingsverdi        | Summen av alle transaksjoner av typen **Skriv opp justering**, **Skriv ned justering** og **Revaluering** opptil til-datoen som er angitt i rapporten. |
-| Avhendinger: Avhendingsdato                    | Avhendingsdatoen for anleggsmiddeltablået. |
-| Avhendinger: Netto bokført verdi ved avhending       | Netto bokført verdi for anleggsmiddelet ved avhendingstidspunktet. |
-| Avhendinger: Salgsverdien                       | Salgsverdien for anleggsmiddeltablået med en avhending – salgstransaksjon. |
-| Avhendinger: Skrapverdi                      | Skrapverdien for anleggsmiddeltablået med en avhending – skraptransaksjon. |
-| Avhendinger: Resultat                      | Resultatverdien som beregnes som en del av avhendingstransaksjonen for anleggsmiddeltablået. |
+
+|                    Felt                    |                                                                                                                                beskrivelse                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Saldoer: Åpning              |                                                                                           Anleggsmiddelets netto bokførte verdi per fra-datoen som er angitt i rapporten.                                                                                           |
+|              Saldoer: Slutt              |                                                                                            Anleggsmiddelets netto bokførte verdi per til-datoen som er angitt i rapporten.                                                                                            |
+|         Anskaffelser: Inngående verdi         |                                                 Summen av alle transaksjoner av typen <strong>Anskaffelse</strong> og <strong>Anskaffelsesjustering</strong> opptil fra-datoen som er angitt i rapporten.                                                  |
+|      Anskaffelser: Periodeanskaffelser      |                                                 Summen av alle transaksjoner av typen <strong>Anskaffelse</strong> og <strong>Anskaffelsesjustering</strong> som ble postert i tidsperioden for rapporten.                                                  |
+|       Anskaffelser: Periodeavhendinger        |                                                                        Summen av alle tilbakeføringer av anskaffelser som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten.                                                                        |
+|         Anskaffelser: Lukkingsverdi         |                                                  Summen av alle transaksjoner av typen <strong>Anskaffelse</strong> og <strong>Anskaffelsesjustering</strong> opptil til-datoen som er angitt i rapporten.                                                   |
+|        Avskrivninger: Åpningsverdi         | Summen av alle transaksjoner av typen <strong>Avskrivning</strong>, <strong>Avskrivningsjustering</strong>, <strong>Særskilte avskrivningsfradrag</strong> og <strong>Ekstraordinær avskrivning</strong> opptil fra-datoen som er angitt i rapporten. |
+|     Avskrivninger: Periodiske avskrivninger     |                         Summen av alle transaksjoner av typen <strong>Avskrivning</strong>, <strong>Avskrivningsjustering</strong> og <strong>Ekstraordinær avskrivning</strong> som ble postert i tidsperioden for rapporten.                          |
+| Avskrivninger: Periodiske spesielle avskrivninger |                                                              Summen av alle transaksjoner av typen <strong>Særskilte avskrivningsfradrag</strong> som ble postert i tidsperioden for rapporten.                                                               |
+|       Avskrivninger: Periodeavhendinger       |                                                                       Summen av alle tilbakeføringer av avskrivninger som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten.                                                                        |
+|        Avskrivninger Lukkingsverdi         |  Summen av alle transaksjoner av typen <strong>Avskrivning</strong>, <strong>Avskrivningsjustering</strong>, <strong>Særskilte avskrivningsfradrag</strong> og <strong>Ekstraordinær avskrivning</strong> opptil til-datoen som er angitt i rapporten.  |
+|    Opp-/nedskrivinger: Åpningsverdi     |                              Summen av alle transaksjoner av typen <strong>Skriv opp justering</strong>, <strong>Skriv ned justering</strong> og <strong>Revaluering</strong> opptil fra-datoen som er angitt i rapporten.                               |
+|   Opp-/nedskrivinger: Oppskrivninger for periode   |                                                                    Summen av alle transaksjoner av typen <strong>Skriv opp justering</strong> som ble postert i tidsperioden for rapporten.                                                                    |
+|  Opp-/nedskrivinger: Nedskrivninger for periode  |                                                                   Summen av alle transaksjoner av typen <strong>Skriv ned justering</strong> som ble postert i tidsperioden for rapporten.                                                                   |
+| Opp-/nedskrivinger: Revalueringer for periode  |                                                                        Summen av alle transaksjoner av typen <strong>Revaluering</strong> som ble postert i tidsperioden for rapporten.                                                                        |
+|   Opp-/nedskrivinger: Periodeavhendinger   |                                                           Summen av alle tilbakeføringer av oppskrivninger, nedskrivninger og revalueringer som ble postert som hadde en avhendingstransaksjon i tidsperioden for rapporten.                                                           |
+|    Opp-/nedskrivinger: Lukkingsverdi     |                               Summen av alle transaksjoner av typen <strong>Skriv opp justering</strong>, <strong>Skriv ned justering</strong> og <strong>Revaluering</strong> opptil til-datoen som er angitt i rapporten.                                |
+|          Avhendinger: Avhendingsdato           |                                                                                                                Avhendingsdatoen for anleggsmiddeltablået.                                                                                                                |
+|    Avhendinger: Netto bokført verdi ved avhending    |                                                                                                    Netto bokført verdi for anleggsmiddelet ved avhendingstidspunktet.                                                                                                    |
+|            Avhendinger: Salgsverdien            |                                                                                               Salgsverdien for anleggsmiddeltablået med en avhending – salgstransaksjon.                                                                                                |
+|           Avhendinger: Skrapverdi            |                                                                                               Skrapverdien for anleggsmiddeltablået med en avhending – skraptransaksjon.                                                                                               |
+|           Avhendinger: Resultat            |                                                                                 Resultatverdien som beregnes som en del av avhendingstransaksjonen for anleggsmiddeltablået.                                                                                 |
+
 

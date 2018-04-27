@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Planlegge organisasjonshierarkiet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Før du definerer organisasjoner og organisasjonshierarkier i Microsoft Dynamics 365 for Finance and Operations, må du passe på å planlegge hvordan virksomheten skal modelleres. Organisasjonsmodellen har en betydelig innvirkning på implementeringen av Finance and Operations og på forretningsprosesser. 
 
@@ -158,7 +157,7 @@ Hvis lover og regnskapspraksis er forskjellige i landene/områdene der organisas
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Hvis organisasjonen er modellert som en driftsenhet 
 Hvis lover og regnskapspraksis er de samme i landene/områdene der organisasjonene dine er, kan du bruke ett sett med årsavslutningsprosedyrer. Dette betyr at du kan utforme organisasjonene som driftsenheter. Alle driftsenheter må bruke samme prosedyre for årsavslutning. 
-   
+
 ### <a name="number-sequences"></a>Nummerserier
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisasjonen er modellert som en juridisk enhet
 Nummerserier for noen referanser kan konfigureres per juridisk enhet. Noen nummerserier kan deles. 

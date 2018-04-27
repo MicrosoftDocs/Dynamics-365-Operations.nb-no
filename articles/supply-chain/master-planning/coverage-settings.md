@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Dekningsinnstillinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Hovedplanlegging bruker dekningsinnstillinger til å beregne varebehov. 
 
@@ -46,7 +45,7 @@ Du kan angi dekningsinnstillinger på flere måter:
 
 <!-- -->
 
--   Angi dekningsinnstillinger for en dimensjonsgruppe. Klikk **Behandling av produktinformasjon &gt; Felles &gt; Frigitte produkter**. På siden **Detaljer om frigitt produkt**, i kategorien **Generelt** i **Administrasjon**-gruppen, klikker du koblingen **Lagringsdimensjonsgruppe**. På **Lagringsdimensjonsgruppe**-siden velger du feltet **Dekningsplanlegg etter dimensjon** for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse, stil, må ha feltet **Dekningsplanlegg etter dimensjon** valgt.
+- Angi dekningsinnstillinger for en dimensjonsgruppe. Klikk <strong>Behandling av produktinformasjon &gt; Felles &gt; Frigitte produkter</strong>. På <strong>Detaljer om frigitt produkt-siden, i kategorien Generelt</strong> i <strong>Administrasjon</strong>-gruppen, klikker du koblingen <strong>Lagringsdimensjonsgruppe</strong>. På <strong>Lagringsdimensjonsgruppe</strong>-siden velger du feltet <strong>Dekningsplanlegg etter dimensjon</strong> for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse, stil, må ha feltet <strong>Dekningsplanlegg etter dimensjon</strong> valgt.
 
 
 

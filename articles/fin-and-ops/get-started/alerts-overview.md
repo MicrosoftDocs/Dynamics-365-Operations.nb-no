@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 1f0b5ff383c8bb2d1ac892ef771e15f0afec2655
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="alerts-overview"></a>Oversikt over varsler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Varsler
 Varsler utgjør et meldingssystem for kritiske hendelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke varsler til å holde deg informert om hendelser som du vil spore i løpet av arbeidsdagen. Du kan enkelt opprette ditt eget sett med varsler slik at du blir varslet om leveringer som er forfalt, ordrer som er slettet, priser som endres eller hendelser du må reagere på.
@@ -71,4 +71,7 @@ En varslingsregel har fem komponenter:
 
     > [!NOTE]
     > Dette alternativet er begrenset til administratorer for organisasjonen.
+
+## <a name="email-notifications-from-alerts"></a>E-postmeldinger fra varsler
+E-postmeldinger fra varsler er ikke aktivert ennå. Dette vil bli aktivert i en fremtidig oppdatering.
 

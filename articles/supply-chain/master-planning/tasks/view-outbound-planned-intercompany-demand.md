@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>Vise utgående planlagt konsernintern etterspørsel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten angir hvordan du viser alle planlagte bestillinger som skal oppfylles av en konsernintern leverandør. Demonstrasjonsdatafirmaet DEMF brukes til å opprette denne prosedyren.
 

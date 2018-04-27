@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen introduserer budsjettplanlegging og inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 
@@ -116,18 +115,18 @@ I budsjettplanlegging kan du tilordne beløpene eller antallene i budsjettplanli
 
 Tildelingsplaner tildeler budsjettplanlinjer automatisk under arbeidsflytbehandling. Du kan utføre tildelinger ved å bruke en av følgende fordelingsmetoder i **Tildelingsmetode**-listen:
 
--   **Tilordne på tvers av perioder** – Du kan bruke en periodetildelingsnøkkel for å tildele budsjettplanlinjer fra kildebudsjettplanscenarioet på tvers av perioder i målscenariet. **Obs!** Før du kan tildele på tvers av perioder, må du konfigurere periodetildelingsnøkler på siden ****Kategorier for periodetildeling****.
--   **Tildel til dimensjoner** – Budsjettplanlinjene tildeles kildebudsjettplanscenariet på tvers av finansdimensjonene i målscenariet. **Obs!** Før du kan tildele til dimensjoner, må du konfigurere budsjettfordelingsbetingelser på siden ****Budsjettfordelingsbetingelser****.
--   **Aggreger** – Budsjettplanlinjene aggregeres fra kildebudsjettplanscenariet i de tilknyttede budsjettplanene til målscenariet i den overordnede budsjettplanen.
--   **Distribuer** – Budsjettplanlinjene distribueres fra kildebudsjettplanscenariet i den overordnede budsjettplanen til målscenariet i de tilknyttede budsjettplanene.
--   **Bruk finansfordelingsregler** – Budsjettplanlinjene distribueres fra kildebudsjettplanscenariet i til målbudsjettplanscenariet basert på den valgte finansfordelingsregelen.
--   **Kopier fra budsjettplan** – Du kan velge en annen budsjettplan som skal brukes som kilde for tildelingen.
+- <strong>Tilordne på tvers av perioder</strong> – Du kan bruke en periodetildelingsnøkkel for å tildele budsjettplanlinjer fra kildebudsjettplanscenarioet på tvers av perioder i målscenariet. <strong>Obs!</strong> Før du kan tildele på tvers av perioder, må du konfigurere periodetildelingsnøkler på siden *<strong><em></em>Kategorier for periodetildeling</strong>*.
+- <strong>Tildel til dimensjoner</strong> – Budsjettplanlinjene tildeles kildebudsjettplanscenariet på tvers av finansdimensjonene i målscenariet. <strong>Obs!</strong> Før du kan tildele til dimensjoner, må du konfigurere budsjettfordelingsbetingelser på siden *<strong><em>Budsjettfordelingsbetingelser</em></strong>*.
+- **Aggreger** – Budsjettplanlinjene aggregeres fra kildebudsjettplanscenariet i de tilknyttede budsjettplanene til målscenariet i den overordnede budsjettplanen.
+- **Distribuer** – Budsjettplanlinjene distribueres fra kildebudsjettplanscenariet i den overordnede budsjettplanen til målscenariet i de tilknyttede budsjettplanene.
+- **Bruk finansfordelingsregler** – Budsjettplanlinjene distribueres fra kildebudsjettplanscenariet i til målbudsjettplanscenariet basert på den valgte finansfordelingsregelen.
+- **Kopier fra budsjettplan** – Du kan velge en annen budsjettplan som skal brukes som kilde for tildelingen.
 
 ### <a name="stage-allocations"></a>Stadiefordelinger
 
 Stadiefordelinger brukes til å tildele budsjettplanlinjer automatisk under arbeidsflytbehandling. Når stadiefordelinger brukes, kan budsjettplanlinjer i målscenariet opprettes og endres uten tilsyn av budsjettplanklargjøreren eller kontrolløren.
 
-Når du definerer en stadiefordeling, kan du knytte arbeidsflyten for budsjettplanlegging og stadiet til fordelingsplanen. Arbeidsflyten for budsjettplanlegging må være knyttet til en arbeidsflyt for budsjettering, som bruker den automatiserte arbeidsflytoppgaven ****Fordeling for budsjettplanleggingsstadium****. Når arbeidsflyten når det angitte stadiet, skjer fordelingen automatisk. Denne automatiserte oppgaven kan brukes til å opprette budsjettplanlinjer i et nytt scenario. 
+Når du definerer en stadiefordeling, kan du knytte arbeidsflyten for budsjettplanlegging og stadiet til fordelingsplanen. Arbeidsflyten for budsjettplanlegging må være knyttet til en arbeidsflyt for budsjettering, som bruker den automatiserte arbeidsflytoppgaven *<strong><em>Fordeling for budsjettplanleggingsstadium</em></strong>*. Når arbeidsflyten når det angitte stadiet, skjer fordelingen automatisk. Denne automatiserte oppgaven kan brukes til å opprette budsjettplanlinjer i et nytt scenario. 
 
 I eksempelskjemaet som vises tidligere i denne artikkelen, blir det utført en tildeling for å overføre beløp fra en budsjettplan og scenarier i grunnlinjestadiet for hovedkontoret til en annen budsjettplan og scenarier i estimatstadiet for salgsavdeling. Illustrasjonen nedenfor viser den aktuelle delen av eksempelskjemaet.
 

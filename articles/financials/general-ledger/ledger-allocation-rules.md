@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="ledger-allocation-rules"></a>Finansfordelingsregler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir generell informasjon om finanstildelingsregler. Den beskriver de ulike komponentene i disse tildelingsreglene og tildelingsmetodene som kan brukes for dem.
 

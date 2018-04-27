@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis kundebetaling som har rabatter på kreditnotaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen leder deg gjennom et scenario der en kontantrabatt blir utført på en kreditnota når den opprinnelige fakturaen har kontantrabatt. 
 

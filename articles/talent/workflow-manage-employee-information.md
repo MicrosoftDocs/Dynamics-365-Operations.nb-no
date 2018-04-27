@@ -27,8 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="use-workflows-to-manage-employee-information"></a>Bruke arbeidsflyter til å administrere informasjon om ansatte
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du kan bruke arbeidsflytfunksjonen for personal til å administrere informasjon om ansatte. Du kan for eksempel knytte en arbeidsflyt til en stilling, og konfigurere en godkjenningsarbeidsflyt som startes når ansatte endrer sin post.
 

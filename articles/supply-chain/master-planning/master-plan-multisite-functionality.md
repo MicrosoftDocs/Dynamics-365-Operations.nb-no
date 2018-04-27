@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Hovedplanlegging og multisite-funksjonalitet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Hovedplanlegging tar hensyn til innstillingene for område- og lagerdimensjonene. 
 

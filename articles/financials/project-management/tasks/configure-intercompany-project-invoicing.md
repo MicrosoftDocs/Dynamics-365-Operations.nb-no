@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurere konsernintern prosjektfakturering
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du konfigurerer prosjektfakturering mellom to firmaer i organisasjonen. Denne oppgaven bruker USSI-datasettet.
 

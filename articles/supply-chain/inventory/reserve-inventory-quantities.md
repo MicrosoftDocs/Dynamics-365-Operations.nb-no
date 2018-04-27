@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantall
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver de forskjellige alternativene som er tilgjengelige for reservering av lager.
 
@@ -50,6 +49,7 @@ Policyer for lagerreservasjon settes på sidene **Varemodellgrupper**, **Paramet
 ### <a name="policies-on-the-item-model-groups-page"></a>Policyer på siden Varemodellgrupper
 
 Delen **Beholdningspolicyer** inneholder policyene for lagerreservasjon som vises nedenfor.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Policy for reservasjon**  | **Beskrivelse**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Delen **Beholdningspolicyer** inneholder policyene for lagerreservasjon som vise
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Eksempel på FIFO-datokontrollert og Bakover fra forsendelsesdato
 
 I dette eksemplet finnes lagerbeholdning for varenummer A for tre ulike partinumre.
+
 | Varenummer | Partinummer | Antall | Dato             |
 |-------------|--------------|----------|------------------|
 | A           | 1000         | 5        | 2. februar 2016 |

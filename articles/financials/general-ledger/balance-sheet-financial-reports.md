@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Finansrapporter for balanse
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene. 
 
@@ -71,7 +70,7 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
     -   **DESC** – Beskrivelsen fra raddefinisjonen.
     -   **FD** – Økonomiske data hittil i år for inneværende år
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

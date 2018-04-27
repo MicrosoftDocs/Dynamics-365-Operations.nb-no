@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-books"></a>Avledede tablåer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten.
 

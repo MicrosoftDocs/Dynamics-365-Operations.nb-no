@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Utligne en etterdatert sjekk fra en kunde
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan utligne en etterdatert sjekk etter at sjekken har blitt avregnet av banken. Denne økonomiske transaksjonen avregner også mellomkontotransaksjonen for den etterdaterte sjekken. 
 

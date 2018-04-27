@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du registrerer konto- og dimensjonkombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
 
@@ -112,7 +111,7 @@ Tabellen nedenfor beskriver hurtigtastene som kan brukes når oppslaget er åpen
 </tbody>
 </table>
 
- 
+
 
 
 

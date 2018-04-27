@@ -26,7 +26,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="welcome-to-human-resources"></a>Velkommen til Personale
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn. Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.
 

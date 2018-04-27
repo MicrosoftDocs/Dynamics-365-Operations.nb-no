@@ -3,12 +3,12 @@ title: Startside for kostnadsregnskap
 description: Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for kostnadsregnskap.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startside for kostnadsregnskap
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Opplæringskart 
 
@@ -37,6 +37,7 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 [![Opplæringskart for kostnadsregnskap](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Hurtigkoblinger
+
 |      |   |
 |------|---|
 |  [Konfigurere grunnenheter (e-læring)](https://mbspartner.microsoft.com/Home) (krever CustomerSource-konto)  |[Opprett dimensjoner](cost-elements.md)  |

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
-ms.openlocfilehash: 2ca5f541abe4f85187aaefdbb03ca84e4f314b3c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 006f3d4b30711651e389dd76f871de1214c158d1
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person.  Med kompetansesøk kan du analysere eksisterende ansatte og søkere for å se om de samsvarer med kompetansesettet til en verdsatt medarbeider. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

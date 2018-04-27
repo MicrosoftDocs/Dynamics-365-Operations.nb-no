@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, budsjetteringsverktøy og rapporteringsfunksjoner i Finance and Operations. 
 

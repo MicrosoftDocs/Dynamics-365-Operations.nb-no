@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Velge mellom Modern POS og Cloud POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet gir implementerere mer bakgrunn, tips og retningslinjer for faktorer som de bør vurdere når de distribuerer Microsoft Dynamics 365 for Retail. Ved å se gjennom og følge denne veiledningen som en del av distribusjonsprosessen, kan implementerere unngå problemer som kan påvirke brukerens tilfredshet eller ytelse.
 
@@ -92,8 +92,8 @@ Vurder følgende informasjon når du planlegger POS-implementeringen i detaljhan
 
     Med mindre tilkoblingen for en gitt enhet er svært pålitelig og fleksibel, eller med mindre en viss nedetid er akseptabelt for forhandleren, anbefaler vi ett av følgende alternativer:
 
-    - Bruk MPOS i Windows, og aktiver frakoblet modus.
-    - Distribuer en lokal RSSU.
+  - Bruk MPOS i Windows, og aktiver frakoblet modus.
+  - Distribuer en lokal RSSU.
 
     Disse to alternativene ikke er gjensidig utelukkende. For den mest pålitelige topologien, kan forhandlere distribuere en lokal RSSU for å redusere avhengighet av Internett-tilkobling eller Azure-tilgjengelighet, og de kan også distribuere kasser på salgsstedet der frakoblet modus er aktivert hvis det er et problem med den lokale serveren eller nettverket.
 

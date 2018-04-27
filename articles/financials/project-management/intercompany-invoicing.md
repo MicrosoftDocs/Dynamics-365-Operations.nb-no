@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Konsernintern fakturering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -58,20 +57,22 @@ I dette eksemplet er USSI en juridisk enhet for utlån, og ressursene rapportere
 
 For dette eksemplet må FRSI være en kunde i den juridiske enheten for USSI, og USSI må være en leverandør i den juridiske enheten for FRSI. Du kan definere en konsernintern relasjon mellom de to juridiske enhetene. Fremgangsmåten nedenfor viser hvordan du definerer parameterne, slik at begge juridiske enheter kan delta i konsernintern fakturering.
 
-1.  Definer FRSI som en kunde i den juridiske enheten for USSI, og definer USSI som en leverandør i den juridiske enheten for FRSI. Det finnes tre inngangspunkter for trinnene som kreves for denne oppgaven.
-    | Trinn | Inngangspunkt                                                                       | beskrivelse   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A    | Gå til USSI, og klikk **Kunder** &gt; **Kunder** &gt; **Alle kunder**. | Opprett en ny kundepost for FRSI, og velg kundegruppen.                                                                                  |
-    | B    | Gå til FRSI, og klikk **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører**.        | Opprett en ny leverandørpost for USSI, og velg leverandørgruppe.                                                                                    |
-    | K    | I FRSI åpner du leverandørposten som du nettopp opprettet.                            | I handlingsruten i kategorien **Generelt** i **Oppsett**-gruppen, klikker du **Konsernintern**. På siden **Konserninterne** i kategorien **Handelsforbindelse**, setter du glidebryteren **Aktiv** til **Ja**. I feltet **Kundefirma** velger du kundeposten som du opprettet i trinn A. |
+1. Definer FRSI som en kunde i den juridiske enheten for USSI, og definer USSI som en leverandør i den juridiske enheten for FRSI. Det finnes tre inngangspunkter for trinnene som kreves for denne oppgaven.
 
-2.  Klikk **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Kontoparametere for prosjektstyring**, og klikk deretter kategorien **Konsernintern**. Måten du oppretter parametrene avhenger av om du er den lånende juridiske enheten eller den som låner ut den juridiske enheten.
-    -   Hvis du er den juridiske enheten som låner, velger du innkjøpskategorien som skal brukes til å samsvare med leverandørfakturaer, som genereres automatisk.
-    -   Hvis du er den juridiske enheten som låner ut, velger du en standard prosjektkategori for hver transaksjonstype for hver enhet som låner. Prosjektkategorier brukes for mva-konfigurasjon når den fakturerte kategorien i konserninterne transaksjoner bare finnes i den juridiske enheten som låner. Du kan velge å avsette inntekt for konserninterne transaksjoner. Denne avsetningen gjøres når transaksjonene posteres og tilbakeføres deretter når den konserninterne fakturaen bokføres.
+   | Trinn |                                                       Inngangspunkt                                                        |                                                                                                                                                                                               beskrivelse                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A   | Gå til USSI, og klikk <strong>Kunder</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle kunder</strong>. |                                                                                                                                                                  Opprett en ny kundepost for FRSI, og velg kundegruppen.                                                                                                                                                                  |
+   |  B   |    Gå til FRSI, og klikk <strong>Leverandører</strong> &gt; <strong>Leverandører</strong> &gt; <strong>Alle leverandører</strong>.     |                                                                                                                                                                    Opprett en ny leverandørpost for USSI, og velg leverandørgruppe.                                                                                                                                                                    |
+   |  K   |                                  I FRSI åpner du leverandørposten som du nettopp opprettet.                                  | I handlingsruten i kategorien <strong>Generelt</strong> i <strong>Oppsett</strong>-gruppen, klikker du <strong>Konsernintern</strong>. På siden <strong>Konserninterne</strong> i kategorien <strong>Handelsforbindelse</strong>, setter du glidebryteren <strong>Aktiv</strong> til <strong>Ja</strong>. I feltet <strong>Kundefirma</strong> velger du kundeposten som du opprettet i trinn A. |
 
-3.  Klikk **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Priser** &gt; **Overføringspris**.
-4.  Velg valuta, transaksjonstype og overføringsprismodell. Valutaen som brukes på fakturaen er valutaen som er konfigurert i kundeposten for den juridiske enheten som låner i den juridiske enheten som låner ut. Valutaen som brukes til å samsvare med postene i tabellen for overføringspris.
-5.  Klikk **Økonomimodul** &gt; **Posteringsoppsett** &gt; **Konserninternt regnskap**, og definere en relasjon for USSI og FRSI.
+
+2. Klikk **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Kontoparametere for prosjektstyring**, og klikk deretter kategorien **Konsernintern**. Måten du oppretter parametrene avhenger av om du er den lånende juridiske enheten eller den som låner ut den juridiske enheten.
+   -   Hvis du er den juridiske enheten som låner, velger du innkjøpskategorien som skal brukes til å samsvare med leverandørfakturaer, som genereres automatisk.
+   -   Hvis du er den juridiske enheten som låner ut, velger du en standard prosjektkategori for hver transaksjonstype for hver enhet som låner. Prosjektkategorier brukes for mva-konfigurasjon når den fakturerte kategorien i konserninterne transaksjoner bare finnes i den juridiske enheten som låner. Du kan velge å avsette inntekt for konserninterne transaksjoner. Denne avsetningen gjøres når transaksjonene posteres og tilbakeføres deretter når den konserninterne fakturaen bokføres.
+
+3. Klikk **Prosjektstyring og regnskap** &gt; **Oppsett** &gt; **Priser** &gt; **Overføringspris**.
+4. Velg valuta, transaksjonstype og overføringsprismodell. Valutaen som brukes på fakturaen er valutaen som er konfigurert i kundeposten for den juridiske enheten som låner i den juridiske enheten som låner ut. Valutaen som brukes til å samsvare med postene i tabellen for overføringspris.
+5. Klikk **Økonomimodul** &gt; **Posteringsoppsett** &gt; **Konserninternt regnskap**, og definere en relasjon for USSI og FRSI.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Eksempel 2: Opprette og postere en konsernintern timeregistrering
 USSI, den juridiske enheten som låner ut, må opprette og postere timeregistreringen for et prosjekt fra FRSI, den juridiske enheten som låner. Det finnes to inngangspunkter for trinnene som kreves for denne oppgaven.

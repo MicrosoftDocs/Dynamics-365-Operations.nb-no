@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics AX og (februar 2016) Komme i gang.
 
@@ -50,8 +49,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Definere leverandørfakturakontroll for leverandører       | Globalt             |
 | Definer leverandørfakturapolicyer                            | Globalt             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Kundereskontro
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Gå gjennom innkrevingsinformasjon                              | Globalt             |
 | Definere og generere informasjon om aldersfordeling for kunde   | Globalt             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Kontant- og bankbehandling
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Utligne en etterdatert sjekk fra en kunde                             | Globalt             |
 | Oversikt over leverandørbetaling                                              | Globalt             |
 
- 
 
+ 
 ### <a name="compliance"></a>Samsvar
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | **BPM-linje**                               | **Land/område** |
 | Definere overvåkingspolicyer for kildedokumenter | Globalt             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Kostnadsstyring
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Vise gjeldende VIA-status for en produksjonsordre                       | Globalt             |
 | Vise beholdningsoppgave og KPI etter kostnadsobjekt                     | Globalt             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | GB-00009 Opprette en kreditnota på utligningsrabatten                                               | Storbritannia                  |
 | GB-00009 Konfigurere parametere for kreditnota på rabatt for rask betaling                                   | Storbritannia                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Utvikle målsetting og strategi
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Gjøre et spørsmål avhengig av svaret på det forrige spørsmålet (betingede spørsmål) | Globalt             |
 | Gi poeng til et spørreskjema basert på prosent                                                   | Globalt             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | ER Tilordningen datamodell til valgte datakilder      | Globalt             |
 | ER Velge tjenesteleverandør                      | Globalt             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Reiseregning og utlegg
 
 |                              |                    |
@@ -298,8 +297,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | **BPM-linje**                 | **Land/område** |
 | Konfigurere reiseregning | Globalt             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Anleggsmidler
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Dele et anleggsmiddel                                       | Globalt             |
 | Overføre et anleggsmiddel                                    | Globalt             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Økonomimodul
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Vise journaloppføringer eller transaksjoner                              | Globalt             |
 | Vise relaterte konserninternt bilag fra journal                    | Globalt             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Forvaltning av menneskelig kapital
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Definere policyer for fordelsrettigheter                             | Globalt             |
 | Definere i9-dokumenttyper                                     | Globalt             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Lagerstyring
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Spore en vare eller råvare                                                     | Globalt             |
 | Overføre aktuell beholdning på lageret                                  | Globalt             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Produksjon
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Overføre materiale med Kanban-jobber                            | Globalt             |
 | Validere produksjonsflyt og versjon                          | Globalt             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Hovedplanlegging
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Identifisere kritiske materialer og leverandørkapasitet | Globalt             |
 | Endre en behovsprognose manuelt                 | Globalt             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Organisasjonsstyring
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Opprette elektroniske signaturer              | Globalt             |
 | Konfigurere alle nødvendige nummerserier ved å bruke en veiviser | Globalt             |
 
- 
 
+ 
 ### <a name="planning"></a>Planlegging
 
 |                        |                    |
@@ -510,8 +509,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | **BPM-linje**           | **Land/område** |
 | Bestemme tilgjengelighet | Globalt             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Innkjøp og leverandører
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Søke etter leverandører                                               | Globalt             |
 | Definere et innkjøpskategorihierarki                          | Globalt             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Produktinformasjon og -konfigurasjon
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Utgi en ... \financial-dimensions\dimension-based produktstandard              | Globalt             |
 | Overføre data for produktmodeller                      | Globalt             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Offentlig sektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Definere finansiering for offentlig sektor                                                         | Globalt             |
 | Definere kjøpsavtaleklassifiseringer for offentlig sektor                             | Globalt             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Detaljhandel og handel
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Prisjusteringer for detaljhandel                                                                  | Globalt             |
 | Butikkonfigurasjoner for detaljhandelsutdrag                                                | Globalt             |
 
- 
 
+ 
 ### <a name="sales"></a>Salg
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Sende ordrer som direkteleveringer           | Globalt             |
 | Sende salgsordrer uten lagerstyring      | Globalt             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Merverdiavgift
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Definere kildeskatt                             | Globalt             |
 | Vis posterte mva-transaksjoner                 | Globalt             |
 
- 
 
+ 
 ### <a name="security"></a>Sikkerhet
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Identifisere og løse konflikter i arbeidsdeling | Globalt             |
 | Definere arbeidsdeling                            | Globalt             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Lager og transport
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 | Definere transportører                                                          | Globalt             |
 | Bruke arbeidsområde for lastplanlegging for å planlegge laster og forsendelser                       | Globalt             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Oppgaveveiledninger i (februar 2016) Komme i gang-bibliotek
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-linje**                                       | **Land/område** |

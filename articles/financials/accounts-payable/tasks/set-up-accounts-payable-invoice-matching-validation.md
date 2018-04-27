@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Definere validering av leverandørfakturakontroll
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne registreringen bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef leverandørreskontro eller regnskapssjef kan utføre disse trinnene. Før du begynner, må du kontrollere at konfigurasjonsnøkkelen for fakturasamsvar er valgt. Hvis den juridiske enheten sporer utgifter, for eksempel frakt, ved hjelp av tillegg, må du kontrollere at konfigurasjonsnøkkelen for Tillegg er valgt.  Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen. Forskjeller mellom disse dokumentene kalles samsvarende avvik. Samsvarende avvik blir sammenlignet med toleransen som er angitt. Hvis et samsvarende avvik er større enn toleranseprosenten eller -beløpet, vises ikoner for samsvarsavvik i skjemaet Leverandørfaktura og i skjemaet Fakturakontrolldetaljer.
 

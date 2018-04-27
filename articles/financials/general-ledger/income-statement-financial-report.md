@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
 
@@ -60,7 +59,7 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
     -   **FD** – Økonomiske data for inneværende periode
     -   **FD** – Økonomiske data hittil i år
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

@@ -17,15 +17,17 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 3d486e5b7a7ef8f711b8f44af81292a7a8f0bcd4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Tildele et prosjektbudsjett eller en budsjettendring på tvers av perioder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)] Når du har angitt et prosjektbudsjett eller prosjektbudsjettendring og før du sender det inn til godkjenning, kan du fordele beløpene over perioder. Hvis budsjettet eller budsjettendringen blir avvist, kan du også fordele beløpene før du sender det inn på nytt. 
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+
+ Når du har angitt et prosjektbudsjett eller prosjektbudsjettendring og før du sender det inn til godkjenning, kan du fordele beløpene over perioder. Hvis budsjettet eller budsjettendringen blir avvist, kan du også fordele beløpene før du sender det inn på nytt. 
 
 Når et budsjett eller en budsjettendring er fordelt, kan du gjennomgå fordelingsbeløpene og justere dem før du sender inn budsjettet eller budsjettendringen til godkjenningsarbeidsflyten. 
 
@@ -34,7 +36,7 @@ Når et budsjett eller en budsjettendring er fordelt, kan du gjennomgå fordelin
 3. Klikk på Prosjektbudsjett i Budsjett-gruppen i kategorien Plan i handlingsruten. 
 4. Klikk på Tildel budsjett i kategorien Budsjett i handlingsruten i skjemaet Prosjektbudsjett. 
 5. I feltene Tildel fra og Tildel til i skjemaet Tildel budsjett angir du første og siste dato du vil inkludere i budsjettfordelingen. Dette er vanligvis enten første og siste dato i hele prosjektet, eller første og siste dato i inneværende år.  
-> [OBS!] Når en transaksjonstype er blitt fordelt og beløpene godkjent, kan ikke fordelingsperioden endres i fremtidige budsjettendringer. 
+   > [OBS!] Når en transaksjonstype er blitt fordelt og beløpene godkjent, kan ikke fordelingsperioden endres i fremtidige budsjettendringer. 
 6. I feltet Etter tidsperiode velger du om du vil fordele prosjektbudsjettet etter år, kvartal eller firmaets regnskapsperioder innenfor året.
 7. Velg transaksjonstypene som skal fordeles, og klikk deretter på Tildel. 
 8. I skjemaet Prosjektbudsjettfordeling eller Tildeling av prosjektbudsjettendring, går du gjennom eller oppdaterer beløpene som er tildelt. 

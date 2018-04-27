@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Definere produksjonsflytmodeller
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean manufacturing er beregnet og opprettholdt. Definisjonen av en Produksjonsflytmodell er derfor en forutsetning for definisjon av arbeidsceller. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

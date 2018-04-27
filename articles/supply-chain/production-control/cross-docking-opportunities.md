@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport.
 
@@ -76,10 +76,10 @@ I **direkteoverføringspolicyen** angir du hvilke dokumenttyper som skal brukes 
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Navn på direkteoverføringspolicy: Overføringsordre
 
--   Sekvensnummer: 10
- -   Arveidsordretype: Utstedelse for overføring
--   Direkteoverføringsbehov krever en lokasjon: Usann
--   Strategi for direkteoverførind: dato og klokkeslett
+- Sekvensnummer: 10
+  -   Arveidsordretype: Utstedelse for overføring
+- Direkteoverføringsbehov krever en lokasjon: Usann
+- Strategi for direkteoverførind: dato og klokkeslett
 
 ### <a name="sequence-number"></a>Serienummer
 

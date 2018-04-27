@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfigurere adressebøker
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne fremgangsmåten, og valgene du gjorde i planlegging av konfigurasjonen av den globale adresseboken og andre emner for adressebøker, for å definere flere adressebøker for organisasjonen.
 

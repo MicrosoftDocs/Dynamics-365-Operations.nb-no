@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cash-discounts"></a>Kontantrabatt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kontantrabatter konfigureres og deles for leverandører og kunder.  Den tilgjengelige kontantrabatten kan defineres på kundefaktura eller leverandørfaktura, og brukes hvis fakturaen betales innen kontantrabattdatoen. 
 
@@ -65,6 +64,7 @@ Regnskapsvalutaen for den juridiske enheten er EUR, og følgende valutakurser er
 -   1. mars = 80
 
 Det posteres en faktura på USD 1 000 med vilkårene for kontantrabatt på 20D2% 15. februar. Regnskapsvalutabeløpet på fakturaen er 1100 EUR. En betaling på USD 980 betales med fakturaen 1. mars. Kontantrabattbeløpet er USD 20. Regnskapsvalutabeløpet for betalingen er EUR 784. Regnskapsvalutabeløpet for kontantrabatten blir beregnet ved hjelp av valutakursen 1. mars: 20 \* 80 / 100 = EUR 16.
+
 | **Obs!**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling. |

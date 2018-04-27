@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger. Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. 
 
@@ -205,23 +204,24 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 
 Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
 
-| Infiksnotasjon    | beskrivelse                                                                                   |
+
+|  Infiksnotasjon   |                                          beskrivelse                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Tillegg                                                                                      |
-| x \* y \* z       | Multiplikasjon                                                                                |
-| x - y             | Binær subtraksjon oversettes på samme måte som binær addisjon med en negert andreverdi. |
-| x ^ y ^ z         | Eksponentiering med høyre-assosiativitet                                                   |
-| !x                | Boolsk ikke                                                                                   |
-| x -: y            | Boolsk implikasjon                                                                           |
-| x | y | z         | Boolsk eller                                                                                    |
-| x & y & z         | Boolsk og                                                                                   |
-| x == y == z       | Likhet                                                                                      |
-| x != y != z       | Spesifikk                                                                                      |
-| x &lt; y &lt; z   | Mindre enn                                                                                     |
-| x &gt; y &gt; z   | Større enn                                                                                  |
-| x &lt;= y &lt;= z | Mindre eller lik                                                                         |
-| x &gt;= y &gt;= z | Større enn eller lik                                                                      |
-| (x)               | Parenteser overstyrer standardprioritet.                                                      |
+|     x + y + z     |                                           Tillegg                                            |
+|    x \* y \* z    |                                        Multiplikasjon                                         |
+|       x - y       | Binær subtraksjon oversettes på samme måte som binær addisjon med en negert andreverdi. |
+|     x ^ y ^ z     |                          Eksponentiering med høyre-assosiativitet                          |
+|        !x         |                                          Boolsk ikke                                          |
+|      x -: y       |                                      Boolsk implikasjon                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Boolsk og                                          |
+|    x == y == z    |                                           Likhet                                            |
+|    x != y != z    |                                           Spesifikk                                            |
+|  x &lt; y &lt; z  |                                           Mindre enn                                           |
+|  x &gt; y &gt; z  |                                         Større enn                                          |
+| x &lt;= y &lt;= z |                                     Mindre eller lik                                     |
+| x &gt;= y &gt;= z |                                   Større enn eller lik                                    |
+|        (x)        |                           Parenteser overstyrer standardprioritet.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres ikke uttrykksbegrensningene mine riktig?
 Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en liste over reserverte nøkkelord som du ikke kan bruke:

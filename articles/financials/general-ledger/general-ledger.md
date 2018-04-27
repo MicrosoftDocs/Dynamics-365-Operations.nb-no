@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Økonomimodul 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bruk økonomimodulen til å definere og styre finansposter for den juridiske enheten. Økonomimodulen er et register over debet- og kreditoppføringer. Disse oppføringene klassifiseres ved hjelp av kontoene som vises i en kontoplan. 
 

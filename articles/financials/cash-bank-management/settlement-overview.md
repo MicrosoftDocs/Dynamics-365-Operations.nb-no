@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Oversikt over utligning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen.
 

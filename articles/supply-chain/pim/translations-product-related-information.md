@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Vanlige spørsmål for produktrelaterte oversettelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du administrerer oversettelser for produkter, produktdimensjonsverdier og produktattributter. 
 
@@ -95,8 +94,7 @@ En kunde ønsker å kjøpe noen små, røde t-skjorter, og navnet på t-skjorten
 <tbody>
 <tr class="odd">
 <td>Hvis du vil angi foretrukket språk for en kunde, gjør du følgende:
-<ol>  
-<li>Klikk <strong>Salg og markedsføring</strong> &gt; <strong>Felles</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
+<ol><br/><li>Klikk <strong>Salg og markedsføring</strong> &gt; <strong>Felles</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
 <li>Dobbeltklikk en kundekonto for å åpne <strong>Kunder</strong>-siden. I kategorien <strong>Generelt</strong>, i <strong>Språk</strong>-feltet, velger du <strong>språket</strong>.</li>
 </ol></td>
 </tr>

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-location-profile"></a>Opprette en lokasjonsprofil
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer. I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll. Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling. Du kan bruke prosedyren i USMF-demodatafirmaet.
 

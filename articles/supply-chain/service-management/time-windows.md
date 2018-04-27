@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="time-windows"></a>Tidsvinduer  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruke tidsvinduer for å optimalisere planleggingen av serviceordrelinjene. Du kan konfigurere systemet slik at serviceordrer opprettes automatisk. Basert på kriteriene som er definert i et tidsvindu, kan du koble til så mange serviceordrelinjer som mulig til så få serviceordrer som mulig.
 

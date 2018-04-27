@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="create-an-engaging-onboarding-experience"></a>Lag en engasjerende introduksjon ved oppstart
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Når det gjøres effektivt vil en introduksjon hjelpe nyansatte å jobbe mer effektivt, samtidig som de får en følelse av å tilhøre sin nye rolle. Introduksjonen kan hjelpe nye ansatte å forstå deres nye rolle på en raskere og riktige måte enn om de ikke hadde fått en introduksjon. De får også et forsprang på å etablere relasjoner som kan hjelpe dem med å lykkes. Alternativt vil en ineffektiv introduksjonsopplevelse få ansatte til å stille spørsmål om sitt valg å bli en del av organisasjonen. En studie utført av Gartner i 2014 viste at nesten en tredjedel av de 1005 respondentene som sluttet en jobb i løpet av de første seks månedene, gjorde det fordi retningslinjene de ble gitt av deres ledelse ikke var klare, deres opplæring var ikke effektiv, eller fordi de ikke etablerte gode relasjoner i sitt nye miljø.
 

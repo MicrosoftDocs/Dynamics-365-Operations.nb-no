@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkjenningsprosess i en arbeidsflyt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
 
@@ -136,6 +135,7 @@ Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er persone
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
 Følg denne fremgangsmåten hvis godkjenningsprosessen må fullføres innen et bestemt tidspunkt.
+
 | **Obs!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Alternativene du velger her, overstyrer alternativene du valgte i områdene **Tildeling** og **Eskalering** i hvert godkjenningstrinn. |

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Oversikt over kostnadskontroll 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbeidsområdet **Kostnadskontroll** er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter. Rapportene i arbeidsområdet blir administrert i sin helhet av regnskapsførere, slik at oppsettet og dataene som brukes til rapportering, blir konsekvent på tvers av hele organisasjonen.
 

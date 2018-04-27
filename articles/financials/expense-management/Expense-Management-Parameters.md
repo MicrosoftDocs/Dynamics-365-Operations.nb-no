@@ -17,16 +17,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 2b3a384a3b9be686b10ce1f181664b0b9bbe9969
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-parameters"></a>Parametere for reiseregning og utlegg
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 -----------------------------
 
@@ -87,9 +87,10 @@ Parametrene kontrollerer den generelle virkemåten i reiseregninger og utlegg.
 
 ### <a name="anti-corruption"></a>Antikorrupsjon
 
-| **Felt**                             | **Beskrivelse**      |
-|---------------------------------------|------------------------------------------------------------------------|
-|**Vis antikorrupsjonsattestering**   | Velg dette alternativet for å vise antikorrupsjonsteksten når du oppretter en ny reiseregningsrapport. Bestemt utgiftskategorier kan aktiveres som krever at antikorrupsjonsattestation velges i reiseregningen. For eksempel kan en gavekategori knyttet til en offentlig offisielle utgift kreve at den ansatte bekrefter at utgiften oppfyller firmapolicy som er knyttet til offentlige myndighetspersoner. |
-|**Antikorrupsjonsmelding for innsender** | Skriv inn teksten som skal vises for den ansatte når du oppretter en ny reiseregningsrapport. Klikk knappen **Oversettelser** for å skrive inn språkspesifikk tekst som skal vises basert på språket.         |
-|**Antikorrupsjonsmelding for godkjenner**  | Skriv inn teksten som skal vises for godkjenneren når du oppretter en ny reiseregningsrapport. Klikk knappen **Oversettelser** for å skrive inn språkspesifikk tekst som skal vises basert på språket.        |
+|                 <strong>Felt</strong>                 |                                                                                                                                                                                            <strong>Beskrivelse</strong>                                                                                                                                                                                             |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Vis antikorrupsjonsattestering</strong>  | Velg dette alternativet for å vise antikorrupsjonsteksten når du oppretter en ny reiseregningsrapport. Bestemt utgiftskategorier kan aktiveres som krever at antikorrupsjonsattestation velges i reiseregningen. For eksempel kan en gavekategori knyttet til en offentlig offisielle utgift kreve at den ansatte bekrefter at utgiften oppfyller firmapolicy som er knyttet til offentlige myndighetspersoner. |
+| <strong>Antikorrupsjonsmelding for innsender</strong> |                                                                                             Skriv inn teksten som skal vises for den ansatte når du oppretter en ny reiseregningsrapport. Klikk knappen <strong>Oversettelser</strong> for å skrive inn språkspesifikk tekst som skal vises basert på språket.                                                                                             |
+| <strong>Antikorrupsjonsmelding for godkjenner</strong>  |                                                                                             Skriv inn teksten som skal vises for godkjenneren når du oppretter en ny reiseregningsrapport. Klikk knappen <strong>Oversettelser</strong> for å skrive inn språkspesifikk tekst som skal vises basert på språket.                                                                                             |
+
 

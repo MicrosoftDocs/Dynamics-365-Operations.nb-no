@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Vise og utforme finansrapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 for Finance and Operations. Finansrapportering består av en visningsopplevelse i Finance and Operations og en ettklikks rapportutforming som lar deg opprette og redigere økonomiske rapporter.  
 

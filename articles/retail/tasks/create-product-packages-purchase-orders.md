@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Opprette produktpakker for bestillinger
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en produktpakke og bruke den i en bestilling. Bestillingen skal brukes til å opprette en ordre for et forhåndsdefinert sett med produkter. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
 

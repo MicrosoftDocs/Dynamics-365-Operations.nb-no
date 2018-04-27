@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-objects"></a>Serviceobjekter 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Serviceobjekter er en kundes aktiva og produkter som du kan utføre en tjeneste for. Avhengig av servicetypen du tilbyr, kan objekter være materielle eller immaterielle:
 

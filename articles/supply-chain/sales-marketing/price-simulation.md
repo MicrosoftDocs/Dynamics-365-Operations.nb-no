@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Prissimulering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om prissimulering for tilbud. Prissimulering hjelper deg med å vurdere effekten av fradrag på den fremtidige salgsprisen under tilbudsprosessen, før du fastsetter en bestemt pris.
 

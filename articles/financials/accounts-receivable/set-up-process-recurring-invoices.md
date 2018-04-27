@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Definere og behandle gjentakende fakturaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du konfigurerer og behandler gjentakende fakturaer. Du kan bruke gjentakende fakturaer hvis du må fakturere kunder for det samme beløpet regelmessig.
 

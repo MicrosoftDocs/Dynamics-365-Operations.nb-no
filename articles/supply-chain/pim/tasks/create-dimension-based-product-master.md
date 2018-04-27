@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Opprette en dimensjonsbasert produktstandard
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en ny produktstandard med dimensjonsbasert konfigurasjon-teknologi. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Dette er den første fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.
 

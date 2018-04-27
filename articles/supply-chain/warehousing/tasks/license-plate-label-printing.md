@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere utskrift av nummerskiltetikett
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten tillater automatisk utskrift av en SSCC-etikett (Serial Shipping Container Code) etter at den siste varen er plukket fra lageret i en arbeidsprosess for salgsplukk. Du kan kjøre denne prosedyren i demonstrasjonsdataselskapet USMF. Hvis du skal kjøre det på dine egne data, må du ha en nummerserie som er definert for nummerskilt. Du må definere en etikettskriver før du begynner. Gå til Organisasjonsstyring > Oppsett > Nettverksskrivere. I handlingsruten velger du Alternativer, og deretter klikker du Last ned installasjonsprogram for dokumentrutingsagent. Kjør installasjonsprogrammet og kontroller at du har en fungerende skriver satt til Aktiv før du fortsetter med prosedyren.
 

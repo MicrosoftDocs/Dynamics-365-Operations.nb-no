@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Vise journaloppføringer og transaksjoner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver de forskjellige måtene du kan vise loggoppføringer og transaksjoner. 
 
@@ -55,7 +54,7 @@ I tillegg til finansrapporter kan du bruke følgende rapporter til å vise økon
 -   **Transaksjonsopprinnelse** – Denne transaksjonsrapporten viser kontoen etter journal og etter transaksjons-, regnskaps- og rapporteringsvalutaen. Den viser også hver linjene i journalen som ble brukt som motkonto.
 
 
-##<a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 - [Kontosaldoer i økonomimodulen](general-ledger-account-balances.md) 
 - [Regnskapskildeutforsker](..\accounts-payable\accounting-source-explorer.md)
 - [Finansrapportering](financial-reporting-getting-started.md)

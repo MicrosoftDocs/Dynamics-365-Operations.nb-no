@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurere en manuell oppgave i en arbeidsflyt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Salg og markedsføring
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Definere kostnadskontrollenheter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du definerer kostnadskontrollenheter i kostnadsregnskapsfinans. Du velger kostnadsobjektdimensjonen som du vil kontrollere kostnadene for i finans. Kostnadsobjektdimensjonsmedlemmene blir omgjort til kostnadsobjekter av kostnadskontrollenhetene. Demonstrasjonsdatafirmaet USP2 brukes til å opprette denne fremgangsmåten.
 

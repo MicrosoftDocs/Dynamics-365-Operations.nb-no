@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder. Den hjelper deg gjennom et konkret eksempel for å forklare hvordan forskjellige betingelsene på rabattlinjene påvirker de endelige beløpene som krediteres til kunden. Du må bruke USMF-demodatafirmaet og utføre følgende oppgaver før du starter veiledningen: (1) Gå til siden Kundeparametere, og utvid kategorien Priser og deretter kategorien Prisdetaljer, og kontroller at alternativet Aktiver prisdetaljer er satt til Ja. (2) Gå til siden Rabattavtaler, og velg kunderabattavtalen: USMF-000001. Hvis Arbeidsflytgodkjenningsstatus-feltet ikke er satt til Godkjent, må du klikke Validering i handlingsruten for å godkjenne.
 

@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Livssyklustilstand for produkt 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Livssyklustilstand for produkter dokumenterer livssyklustilstanden til et frigitt produkt eller produktvariant. Produktlivssyklustilstander defineres av brukeren, vanligvis produktsjefen eller ansvarlig for produktstandarddata. Bestemte forretningsprosesser, for eksempel hovedplanlegging, kan påvirkes av en bestemt livssyklustilstand.   
- 
+
 Et frigitt produkt eller produktvariant kan knyttes til en produktlivssyklustilstand som dokumenterer hvilken livssyklustilstand et bestemt produkt eller en variant befinner seg i. Du kan definere antall produktlivssyklustilstander ved å tilordne statusnavn og beskrivelse. Du kan velge én livssyklustilstand som standardinnstilling for nye frigitte produkter. Frigitte produktvarianter arver produktlivssyklustilstanden fra deres frigitte produktstandard ved oppretting. Når du endrer livssyklustilstanden for en frigitt produktstandard, kan du velge å oppdatere alle eksisterende varianter som har samme opprinnelige tilstand.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Opprette en ny livssyklustilstand for produkt 
- 
+
 - Hvis du vil opprette en ny produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en ny livssyklustilstand for produkt**. 
 
 -  Hvis du vil opprette en standard produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en standard livssyklustilstand for produkt**.   
@@ -73,7 +72,7 @@ Hvis du vil ha mer informasjon om hvordan du bruker produktlivssyklustilstand fo
 
 > [!NOTE]
 > Av hensyn til ytelsen anbefales det å knytte alle foreldede frigitte produkter eller produktvarianter, spesielt når du arbeider med ikke-gjenbrukbare produktkonfigurasjonsvarianter, til en produktlivssyklustilstand som er deaktivert for hovedplanlegging.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Standard overføring, import og eksport 
 
 Produktlivssyklustilstandene støttes ikke av dataenheter, og livssyklustilstanden kan ikke settes til variabel tilstand via de frigitte produktdataenhetene.
@@ -81,18 +80,18 @@ Produktlivssyklustilstandene støttes ikke av dataenheter, og livssyklustilstand
 -  Ved overføring fra tidligere versjoner er livssyklustilstanden for alle produkter og produktvarianter tom.  
 -  Når du importerer frigitte produkter gjennom en dataenhet, brukes standard livssyklustilstand ved oppretting.  
 -  Når du importerer frigitte produktvarianter gjennom en dataenhet, importeres produktlivssyklustilstanden til den frigitte produktstandarden.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Finn foreldede produkter og produktvarianter 
- 
+
 Du kan kjøre en simuleringsanalyse for å finne de foreldede frigitte produktene eller produktvariantene og deretter oppdatere produktlivssyklusstatusen deres. Hvis du vil finne utdaterte produkter, kan du spille av eller lese oppgaveveiledningen **Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand**. Denne oppgaveveiledningen viser hvordan du finner foreldede frigitte produkter og produktvarianter og hvordan du knytter en produktlivssyklustilstand til de foreldede produktene. Den viser også hvordan du viser simuleringsresultatene og vurderer hvor mange produkter og produktvarianter som skal være tilknyttet en ny produktlivssyklustilstand når du kjører oppdateringen uten simulering.  
- 
+
 Ved å kjøre analysen i simuleringsmodus vises produktene og produktvariantene som er identifisert som foreldede, i et bestemt skjema, der de kan lett kan gjennomgås. Analysen søker etter transaksjoner og bestemte hoveddata for å identifisere produkter som ikke har etterspørsel i en variabel periode, og ingen hoveddata som kan føre til etterspørsel. Ny frigitte produkter i en variabel periode kan utelates fra analysen. Når analysesimuleringen returnerer det forventede resultatet, kan brukeren kjøre analysen og angi en ny produktlivssyklustilstand for alle produkter som er identifisert som foreldede i analysen.  
- 
+
 > [!NOTE]
 > Vær oppmerksom på at alle analyser og oppdateringer må gjøres innenfor samme juridiske enhet.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Kriterier for å velge og oppdatere frigitte produkter og produktvarianter 
- 
+
 Bruk følgende kriterier for å velge og oppdatere de frigitte produktene og produktvariantene: 
 
 -    Produktlivssyklustilstanden for produktet eller produktvarianten må være forskjellig fra den nye ønskede tilstanden. 

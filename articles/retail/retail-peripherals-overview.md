@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="retail-peripherals-overview"></a>Oversikt over eksterne enheter for detaljhandel
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter. Det beskriver ulike måter enheter kan kobles til salgsstedet og komponentene som er ansvarlig for å administrere tilkoblingen til salgsstedet.
 

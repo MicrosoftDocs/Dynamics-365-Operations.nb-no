@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-continuity-program-for-a-call-center"></a>Definere et kontinuitetsprogram for et telefonsenter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du setter opp et kontinuitetsprogram for et telefonsenter.
 

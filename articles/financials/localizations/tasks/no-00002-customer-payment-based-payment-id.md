@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="customer-payment-based-on-payment-id-norway"></a>Kundebetaling basert på betalings-ID (Norge)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er. 
 

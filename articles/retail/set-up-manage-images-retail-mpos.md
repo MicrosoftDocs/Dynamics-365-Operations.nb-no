@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurere og behandle bilder for moderne salgssted for detaljhandel
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
 
@@ -141,7 +140,7 @@ Produktbilder som må brukes i frakoblet modus kan defineres ved å laste opp n�
 6.  Mens MPOS er i tilkoblet modus, kan du kjøre katalogjobben i HK, for å være sikker på at dataene sendes minst én gang til den frakoblede databasen.
 7.  Plasser MPOS i frakoblet modus. Du bør se bildet som du lastet opp for det aktuelle produktet i HK. [![Frakoblet1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Sette opp katalog, kategori, ansatt og kunde bilder som skal vises i frakoblet modus for MPOS
 

@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Produksjonsparametere i Produksjonsutførelse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om oppsettet av produksjonsparametere i Produksjonsutførelse.
 
@@ -69,17 +69,17 @@ For hvert trinn i feltet **Automatisk stykklisteforbruk** kan du velge én av tr
 
 - **Trekkprinsipp** – dette alternativet brukes sammen med et alternativ som er definert for stykklisten i **Produksjon**- modulen. Klikk **Produksjonskontroll** &gt; **Felles** &gt; **Produksjonsordrer** &gt; **Alle produksjonsordrer**. På siden **Alle produksjonsordrer** velger du en produksjonsordre i listen, og deretter klikker du **Stykkliste** på handlingsruten. På **Stykkliste**-siden i **Oppsett**-kategorien i **Trekkprinsipp**-feltet velger du ett av følgende alternativer:
 
-    - **Start**
-    - **Fullfør**
-    - **Manuell**
-    - Tom (ingen alternativer er valgt.)
-    - **Tilgjengelig på lokasjon**
+  - **Start**
+  - **Fullfør**
+  - **Manuell**
+  - Tom (ingen alternativer er valgt.)
+  - **Tilgjengelig på lokasjon**
 
     Hvis **Trekkprinsipp** er valgt i feltet **Automatisk stykklisteforbruk** i **Start**-kategorien i produksjonsutførelse, trekkes alt materiale som er satt til **Start** i stykklisten, fra lagerbeholdningen når operasjonen startes. Alternativet **Tilgjengelig på lokasjon** brukes for produkter som er aktivert for avanserte lagerprosesser. Hvis du velger dette trekkprinsippet, tømmes materiale når lagerarbeid for råvareplukking er fullført. Materiale tømmes også når en stykklistelinje som bruker dette trekkprinsippet, er frigitt til lageret og materialet er tilgjengelig på produksjonsinnleveringsstedet.
-    
+
     > [!NOTE]
     > Hvis feltet **Trekkprinsipp** er satt til **Start** i Produksjonsutførelse, må du velge samme prinsipp på enten kategorien **Operasjoner** eller kategorien **Rapporter som fullført**. Dette kravet bidrar til å sikre at materialer trekkes fra inventar på stykkliste som bruker **Fullført** som trekkprinsipp på produksjonsordren. Hvis det samme trekkprinsippet ikke velges for verken **Operasjoner**-kategorien eller **Ferdigmeld**-kategorien, kan materialer bli trukket fra lager to ganger.
- 
+
 - **Alltid** – Hvis du velger dette alternativet for et stadium, trekkes materialene alltid fra lageret på dette stadiet. Materialer for produksjonen trekkes for eksempel fra når produksjonsordren startes. Denne innstillingen krever at **Aldri** velges på **Operasjoner**- og **Ferdigmeld**-kategorien. Dette kravet bidrar til å forhindre at varer blir trukket fra lagerbeholdningen to ganger.
 - **Aldri** – Hvis du velger dette alternativet for et stadium, skjer intet stykklisteforbruk på dette stadiet. Hvis du for eksempel velger **Aldri** i alle tre kategorier (**Start**, **Operasjoner**, og **Ferdigmeld**), må materialer trekkes fra lageret manuelt.
 
@@ -146,11 +146,13 @@ Basert på valgene som er beskrevet tidligere i denne delen, posteres plukkliste
 
 Du kan bruke følgende innstillinger hvis materialene alltid skal trekkes fra beholdningen manuelt. I så fall posteres ikke plukklistejournaler.
 
-| Kategori                | Felt                          | Innstilling    |
-|--------------------|--------------------------------|------------|
-| Start              | Oppdater start online           | **Status** |
-| Start              | Automatisk stykklisteforbruk      | **Aldri**  |
-| Operations         | Automatisk stykklisteforbruk      | **Aldri**  |
-| Ferdigmeld | Automatisk stykklisteforbruk      | **Aldri**  |
-| Ferdigmeld | Oppdater ferdig rapport online | **Status** |
+
+|        Kategori         |             Felt              |         Innstilling         |
+|--------------------|--------------------------------|-------------------------|
+|       Start        |      Oppdater start online      | <strong>Status</strong> |
+|       Start        |   Automatisk stykklisteforbruk    | <strong>Aldri</strong>  |
+|     Operations     |   Automatisk stykklisteforbruk    | <strong>Aldri</strong>  |
+| Ferdigmeld |   Automatisk stykklisteforbruk    | <strong>Aldri</strong>  |
+| Ferdigmeld | Oppdater ferdig rapport online | <strong>Status</strong> |
+
 

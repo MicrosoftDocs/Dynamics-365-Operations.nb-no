@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering. 
 

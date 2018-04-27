@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-loads-using-hub-consolidation"></a>Planlegge laster ved hjelp av hubkonsolidering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver funksjonen for konsolidering av forsendelser i en hub når du leverer varer fra forskjellige lagre til samme kunde, eller når du mottar varer fra flere leverandører på samme lager.
 

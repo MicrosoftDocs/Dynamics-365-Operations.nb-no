@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>Oppsett av konserninternt regnskap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler.
 

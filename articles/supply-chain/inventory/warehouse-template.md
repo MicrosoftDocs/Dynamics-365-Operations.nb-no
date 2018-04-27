@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon. Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke. Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
 

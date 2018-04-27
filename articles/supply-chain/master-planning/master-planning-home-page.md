@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det mest sentrale i hovedplanlegging er at selskaper kan bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet. Hovedplanlegging vurderer følgende: 
 
@@ -58,6 +57,7 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 [![Opplæringskart for hovedplanlegging](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Hurtigkoblinger
+
 |      |   |
 |------|---|
 |        [Hovedplaner](master-plans.md)       |     [Generere en begrenset plan](./tasks/constrained-plan.md)  |

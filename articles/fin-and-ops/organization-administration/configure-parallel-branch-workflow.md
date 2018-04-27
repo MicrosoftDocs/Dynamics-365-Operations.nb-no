@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurere en parallell avdeling i en arbeidsflyt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Hvis du vil konfigurere en parallell avdeling, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt.
 

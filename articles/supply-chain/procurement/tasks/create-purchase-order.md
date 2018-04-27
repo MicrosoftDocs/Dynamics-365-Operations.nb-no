@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Opprette en bestilling
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt. Det er mer vanlig at bestillinger opprettes automatisk som et resultat av hovedplanleggingen, direkte levering og andre prosesser. Bestillinger opprettes vanligvis av en innkjøpsagent. Dette eksemplet kan brukes i USMF-demodatafirmaet med verdiene som blir foreslått i notatene for de forskjellige trinnene.
 

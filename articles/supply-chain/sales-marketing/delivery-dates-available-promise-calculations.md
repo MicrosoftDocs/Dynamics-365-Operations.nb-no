@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-promising"></a>Ordrebekreftelse
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Opprette en tilbudsforespørsel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en tilbudsforespørsel. Dette gjøres vanligvis av en innkjøpsagent. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert forespørselstyper før du starter. Når du har fullført denne oppgaven og du har opprettet og sendt en tilbudsforespørsel, kan du deretter angi svarene per leverandør, sammenligne dem og gi dem kontrakten.
 

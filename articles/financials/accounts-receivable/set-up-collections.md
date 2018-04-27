@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Definer kreditt og innkreving
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene.
 
@@ -97,9 +96,9 @@ Hvis det ikke er angitt en selger, brukes kundeorganisasjonens hovedselger. Hvis
 Hvis du vil ha mer informasjon, se følgende emner:
 
  - [Opprette et purreforløp](tasks/create-collection-letter-sequence.md)
- 
+
  - [Behandle purrebrev](tasks/process-collection-letters.md)
- 
+
  - [Gå gjennom innkrevingsinformasjon](tasks/review-collections-information.md)
 
 

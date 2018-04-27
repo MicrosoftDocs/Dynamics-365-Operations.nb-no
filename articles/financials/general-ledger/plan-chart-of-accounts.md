@@ -1,9 +1,9 @@
 ---
 title: Planlegge kontoplanen
-description: "Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen."
+description: "Dette emnet inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen."
 author: aprilolson
 manager: AnnBe
-ms.date: 01/04/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,46 +19,46 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
-ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3f8d97fc42cde9053b0552fc1dfe8e6de0f5e03b
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-your-chart-of-accounts"></a>Planlegge kontoplanen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+Dette emnet inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
 
-Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
+Hvis du vil spore og vedlikeholde økonomisk informasjon i en organisasjon, kan du definere en kontoplan. En kontoplan er en samling kontoer som definerer et økonomisk rammeverk. For å spore ytterligere transaksjonene i disse kontoene, kan du legge til segmenter. Disse segmentene kalles finansdimensjoner. En utgiftskonto kan for eksempel omfatte finansdimensjoner kalt Avdeling, Kostsenter og Formål. Brukerdefinerte regler fastsetter hvordan finansdimensjonene er knyttet til hovedkontoene og til andre finansdimensjoner, og også hvordan transaksjoner registreres. Disse brukerdefinerte reglene er kjent som kontostrukturer og avanserte regler.
 
-Hvis du vil spore og vedlikeholde økonomisk informasjon i en organisasjon, kan du definere en kontoplan. En kontoplan er en samling kontoer som definerer et økonomisk rammeverk. Hvis du vil spore transaksjonene videre i disse kontoene, kan du legge til segmenter, som kalles finansdimensjoner. En utgiftskonto kan for eksempel omfatte finansdimensjoner kalt Avdeling, Kostsenter og Formål. Brukerdefinerte regler, som kalles kontostrukturer og avanserte regler, fastsetter hvordan finansdimensjonene er knyttet til hovedkontoene og andre finansdimensjoner, og også hvordan transaksjoner registreres. 
+Kontoplanen er en strukturert liste over den juridiske enhetens finanskontoer. Listen brukes til å utarbeide økonomiske rapporter til myndigheter og eiere. Kontoene grupperes først i kontotyper og aggregeres deretter ytterligere i større, overordnede kategorier. På det øverste nivået grupperes kontoene som henholdsvis inntekter og kostnader (driftskontoer) og aktiva og gjeld (balansekontoer).
 
-Kontoplanen er en strukturert liste over den juridiske enhetens finanskontoer. Listen brukes til å utarbeide økonomiske rapporter til myndigheter og eiere. Kontoene grupperes i kontotyper og aggregeres deretter ytterligere i større, overordnede kategorier. På det øverste nivået grupperes kontoene som henholdsvis inntekter og kostnader (driftskontoer) og aktiva og gjeld (balansekontoer). 
-
-En kontoplan kan deles og brukes av alle juridiske enheter i en organisasjon. Kontoplanen som brukes av en juridisk enhet, er definert på **Finans**-siden. 
+En kontoplan kan deles og brukes av alle juridiske enheter i en organisasjon. Kontoplanen som brukes av en juridisk enhet, er definert på **Finans**-siden.
 
 Her er noen av faktorene du må vurdere når du planlegger strukturen til kontoplanen for organisasjonen:
 
--   Rapporteringskravene i landet/området der organisasjonen holder til
--   Rapporteringskravene til den juridiske enheten
--   Graden av detaljer som kreves, både for den eksterne organisasjonen og organisasjonen din
+- Rapporteringskravene i landet eller området der organisasjonen holder til
+- Rapporteringskravene til den juridiske enheten
+- Graden av detaljer som kreves, både for den eksterne organisasjonen og organisasjonen din
 
-Definer kontoplanen på **Kontoplan**-siden. Hovedkontoer kan opprettes fra **Kontoplan**-siden eller **Hovedkontoer**-siden. Hovedkontoene kan ikke bruke spesialtegn som brukes som skilletegn for kontoplan. Hvis du har et spesialtegn som er det samme som skilletegnet for kontoplan, kan dette føre til ustabilitet, eller det kan bli nødvendig å alltid bruke oppslag eller undermenyen når du angir kombinasjoner av konto og dimensjon. Hvis du vil ha mer informasjon, kan du se [Opprette en hovedkonto](tasks/create-main-account.md).
+Du kan definere kontoplanen på **Kontoplan**-siden. Du kan opprette hovedkontoer fra **Kontoplan**-siden eller **Hovedkontoer**-siden. Hovedkontoene kan ikke bruke spesialtegn som brukes som skilletegn for kontoplan. Ellers kan du oppleve ustabilitet, eller du må kanskje alltid bruke oppslag eller dialogboksen når du angir kombinasjoner av kontoer og dimensjoner. Hvis du vil ha mer informasjon, kan du se [Opprette en hovedkonto](tasks/create-main-account.md).
 
+> [!NOTE]
+> I Microsoft Dynamics for Finance and Operations versjon 8.0 (april 2018) kan du endre skilletegn for kontoplan på **Parametere for økonomimodul**-siden.
 
-Det er lurt å koble hovedkontoene til hovedkontokategorier, slik at du kan dra nytte av standard økonomiske rapporter uten å måtte gjøre endringer. Derfor går det raskere og enklere å utforme og vedlikeholde rapporter. 
+Det er lurt å koble hovedkontoene til hovedkontokategorier, slik at du kan dra nytte av standard økonomiske rapporter uten å måtte gjøre endringer. Derfor går det raskere og enklere å utforme og vedlikeholde rapporter.
 
-Bruk siden **Konfigurer kontostrukturer** til å opprette kontostrukturer. Kontostrukturer brukes til å definere gyldige kombinasjoner. Kombinasjonene, sammen med hovedkontoer, utgjør en kontoplan.  Hvis du vil ha mer informasjon, kan du se [Opprette kontostrukturer](tasks/create-account-structures.md).
+Du kan opprette kontostrukturer på siden **Konfigurer kontostrukturer**. Kontostrukturer brukes til å definere gyldige kombinasjoner. Disse kombinasjonene, sammen med hovedkontoer, utgjør en kontoplan. Hvis du vil ha mer informasjon, kan du se [Opprette kontostrukturer](tasks/create-account-structures.md).
 
-**Overstyringer for juridisk enhet** 
+**Overstyringer for juridisk enhet**
 
-Ikke alle hovedkontoer er gyldige for alle juridiske enheter, og noen er kanskje bare relevante i en bestemt tidsperiode. I denne situasjonen kan delen Overstyringer for juridisk enhet brukes til å identifisere hvilke firmaer hovedkontoen skal suspenderes for, hvem som er eier, og tidsperioden dimensjonen er aktiv. Overstyringene på det delte nivået kan ikke være mer begrensende enn overstyringer på nivået for juridisk enhet.
+Ikke alle hovedkontoer er gyldige for alle juridiske enheter, og noen hovedkontoer er kanskje bare relevante i en bestemt periode. I dette scenarioet kan du bruke delen **Overstyringer for juridisk enhet** til å identifisere firmaene som hovedkontoen skal suspenderes for, eieren, og perioden dimensjonen er aktiv. Overstyringene på det delte nivået kan ikke være mer begrensende enn overstyringer på nivået for juridisk enhet.
 
-Hvis du vil ha mer informasjon, se følgende emner: [Finansdimensjoner](financial-dimensions.md)
-[Opprette og tilordne avanserte regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
+Hvis du vil ha mer informasjon, se følgende emner:
 
-
-
+- [Finansdimensjoner](financial-dimensions.md)
+- [Opprette og tilordne avanserte regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
 

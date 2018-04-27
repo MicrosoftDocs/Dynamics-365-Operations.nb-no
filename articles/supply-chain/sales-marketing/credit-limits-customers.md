@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Kredittgrenser for kunder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ved å angi en kredittgrense kan du spesifisere det maksimale beløpet for kreditt som settes for kundene dine. Hvis en kredittgrense er angitt, kontrolleres den automatisk når en bruker forsøker å oppdatere et dokument. En melding vises til brukeren hvis kredittgrensen overskrides. Denne artikkelen gir en oversikt over hvordan kredittgrenser fungerer, og svarer på følgende spørsmål:
 

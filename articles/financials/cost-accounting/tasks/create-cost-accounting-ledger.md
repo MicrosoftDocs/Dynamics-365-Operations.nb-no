@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Opprette en kostnadsregnskapsfinans
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kostnadsregnskapsfinans representerer den generelle rapporteringsenheten. Det defineres av en kostnadselementdimensjon, statistisk dimensjon, regnskapskalender og valuta. Det er agnostisk til konseptet med juridiske enheter. En juridisk enhet og dens data kan knyttes til mange poster i kostnadsregnskapsfinans. Denne registreringen bruker USP2-demodatafirmaet.
 

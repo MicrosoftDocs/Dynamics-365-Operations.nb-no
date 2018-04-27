@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>Utforme relasjonene mellom organisasjonsenheter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Dette hjelper med å utforme relasjonen mellom organisasjonsenheter. Du må opprette et nytt formål for organisasjonen før du definerer relasjonen, eller du kan bruke det eksisterende organisasjonsformålet. Demonstrasjonsdatafirmaet USRT brukes til å utføre denne fremgangsmåten. Denne oppgaven er ment for administratorrollen.
 

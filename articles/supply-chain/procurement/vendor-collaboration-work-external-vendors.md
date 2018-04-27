@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 
@@ -116,7 +116,7 @@ Bestillingen som ble sendt til leverandøren, og som har statusen <strong>Til ek
 <li>Erstatte en vare.</li>
 </ul>
 Leverandøren kan ikke endre prisinformasjon og tillegg. Leverandøren kan imidlertid foreslå disse endringene ved hjelp av merknader.</td>
-<td>Leverandørsvaret registreres som <strong>Godtatt med endringer</strong>, og statusen for bestillingen forblir <strong>Til ekstern vurdering</strong>. Statusene viser hvilke typer endringer som leverandøren har foreslått. For informasjon om automatisk forbruk av endringene kan du se delen "Oppdatere bestillingen når en leverandør foreslår endringer" senere i dette emnet. </td>
+<td>Leverandørsvaret registreres som <strong>Godtatt med endringer</strong>, og statusen for bestillingen forblir <strong>Til ekstern vurdering</strong>. Statusene viser hvilke typer endringer som leverandøren har foreslått. For informasjon om automatisk forbruk av endringene kan du se delen &quot;Oppdatere bestillingen når en leverandør foreslår endringer&quot; senere i dette emnet. </td>
 </tr>
 </tbody>
 </table>

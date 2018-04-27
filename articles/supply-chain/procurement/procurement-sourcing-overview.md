@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Oversikt over innkjøp og leverandører
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i modulen Innkjøp og leverandører.
 
@@ -39,7 +38,7 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for eksempel når en ansatt trenger et produkt. *Produktkataloger* kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.  
 
 *Forbruksbeløp* kan brukes til å begrense rekvisisjonsforbruk, og *innkjøpsarbeidsflyten* legger til alternativet om å kreve godkjenning før bestilling kan skje. Det er også mulig å angi budsjettmiddeltildelinger, om nødvendig.  
-  
+
 Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel* som sendes til flere potensielle leverandører. Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer. Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.  
 
 Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel* til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  

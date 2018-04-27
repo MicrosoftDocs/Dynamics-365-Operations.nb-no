@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbeidsflytprosessen flytter innkjøpsrekvisisjoner gjennom vurderingsprosessen, fra den innledende statusen Utkast til den endelige statusen Godkjent. Når en innkjøpsrekvisisjon sendes til gjennomgang, starter arbeidsflytprosessen. Når en innkjøpsrekvisisjon er godkjent, kan en bestilling genereres for innkjøpsrekvisisjonslinjene og sendes til leverandøren for å bli oppfylt.
 

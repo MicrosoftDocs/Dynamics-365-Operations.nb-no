@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertere regnskaps- eller rapporteringsvalutaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Et firma som må endre regnskapsvalutaen eller rapporteringsvalutaen, har to alternativer. Det første alternativet er å opprette et nytt firma, og starte på nytt. Det andre alternativet er å kjøre konverteringsprosessen for regnskaps- og rapporteringsvaluta. Dette er en svært tidkrevende prosess som endrer hver transaksjon i systemet. Det kreves også noe oppsett før prosessen kan kjøres.
 

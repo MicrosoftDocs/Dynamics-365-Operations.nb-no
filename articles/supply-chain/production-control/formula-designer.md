@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Formeldesigner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du bruker formeldesigneren til å analysere og vedlikehold formler i en trevisning.
 
@@ -116,8 +116,10 @@ Bruk funksjonene **Stykklistelinjer** eller **Formel** til å endre fomrellinjen
 ## <a name="configuring-the-tree-view"></a>Konfigurere trevisningen
 Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i formeldesigneren.
 
-| Feltgruppe | beskrivelse |
-|-------------|-------------|
-| Stykkliste         | Bruk avmerkingsboksene for å velge kriteriene som vises i trestrukturen. Formeldesigneren viser de valgte kriteriene nederst i begge kategorier. |
-| Rute       | Bruk avmerkingsboksene for å velge kriteriene som vises for rutene. |
+
+| Feltgruppe |                                                                          beskrivelse                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Stykkliste     | Bruk avmerkingsboksene for å velge kriteriene som vises i trestrukturen. Formeldesigneren viser de valgte kriteriene nederst i begge kategorier. |
+|    Rute    |                                           Bruk avmerkingsboksene for å velge kriteriene som vises for rutene.                                           |
+
 

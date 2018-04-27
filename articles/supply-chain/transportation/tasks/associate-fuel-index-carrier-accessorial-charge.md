@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transportørens tilbehørsgebyr, tilbehørsmal for drivstofftillegg og knytter en drivstoffindeks for transportør til en transportør. Du må ha definert en drivstoffindeks for transportør før du kjører denne håndboken. Du kan bruke veiledningen Definere transportørdrivstoffindeks til å gjøre dette. Disse oppsettoppgaver utføres vanligvis av prosjektleder logistikk. Demonstrasjonsdataene USMF brukes til å opprette denne fremgangsmåten.
 

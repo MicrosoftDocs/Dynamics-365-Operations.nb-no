@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mobile funksjoner i Microsoft Dynamics 365 for Finance and Operations kan utforme mobile erfaringer forretningsvirksomhet. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
@@ -127,7 +126,7 @@ Som en generell veiledning, når du arbeider med mobile designer, må du "publis
 ### <a name="create-the-workspace"></a>Opprett arbeidsområdet
 
 1.  Åpne Finance and Operations i en webleser, og logg på.
-2.  Etter at du har logget på, kan du legge til **& mode = mobile** i URL-adressen som vist i følgende eksempel, og oppdater siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Etter at du har logget på, kan du legge til **& mode = mobile** i URL-adressen som vist i følgende eksempel, og oppdater siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**. Mobile app-designer må vises akkurat slik oppgaveopptaker vises.
 4.  Klikk på **Legg til** for å opprette det nye arbeidsområdet. For dette eksemplet gir du arbeidsområdet navnet **Mine godkjenninger**.
 5.  Angi en beskrivelse.
@@ -173,23 +172,23 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 
 Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **VendMobileInvoiceHeaderDetails** i Finance and Operations. Legg merke til at, avhengig av antall fakturaer som du har på maskinen, denne siden viser den eldste fakturaen (faktura som var opprettet først). Du kan bruke filteret til venstre for å finne en spesifikk faktura. Men krever vi ikke en bestemt faktura for dette eksemplet. Vi krever bare noen fakturadata slik at vi kan utforme mobilsiden. [![Arbeidsflytside](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  I Finance and Operations erstatter du navnet på menyelementet med **VendMobileInvoiceHeaderDetails** for å åpne skjemaet
-2.  Åpne utformingen for mobil fra **Innstillinger** (tannhjul)-knappen.
-3.  Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
-4.  Velg siden **Mine leverandørfakturaer** som du opprettet tidligere, og klikk deretter **Rediger**.
-5.  På kategorien **Felt** klikker du **Rutenett**-kolonneoverskriften.
-6.  Klikk **Egenskaper** &gt; **Legg til side**. **Obs!** Når du klikker på **Rutenett**-overskriften og legger til en side, i forhold til detaljene siden opprettes automatisk.
-7.  Angi en tittel, som **Fakturaopplysninger**, og en beskrivelse, som **Vis fakturahode og linjedetaljer**.
-8.  Klikk **Velg felt**. Legg merke til at rekkefølgen som du legger til, er rekkefølgen som feltene vises til sluttbrukeren. Vil være den eneste måten å endre rekkefølgen på feltene ved å velge alle feltene på nytt. 
-9.  Legg til følgende felt fra hodet, basert på kravene for dette scenariet:
-    - Navn på leverandør
-    - Fakturatotal
-    - Fakturakonto
-    - Fakturanummer
-    - Fakturadato
-    - Fakturabeskrivelse
-    - Forfallsdato
-    - Fakturavaluta
+1. I Finance and Operations erstatter du navnet på menyelementet med **VendMobileInvoiceHeaderDetails** for å åpne skjemaet
+2. Åpne utformingen for mobil fra **Innstillinger** (tannhjul)-knappen.
+3. Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
+4. Velg siden <strong>Mine leverandørfakturaer</strong> som du opprettet tidligere, og klikk deretter Rediger.
+5. På kategorien **Felt** klikker du **Rutenett**-kolonneoverskriften.
+6. Klikk **Egenskaper** &gt; **Legg til side**. **Obs!** Når du klikker på **Rutenett**-overskriften og legger til en side, i forhold til detaljene siden opprettes automatisk.
+7. Angi en tittel, som **Fakturaopplysninger**, og en beskrivelse, som **Vis fakturahode og linjedetaljer**.
+8. Klikk **Velg felt**. Legg merke til at rekkefølgen som du legger til, er rekkefølgen som feltene vises til sluttbrukeren. Vil være den eneste måten å endre rekkefølgen på feltene ved å velge alle feltene på nytt. 
+9. Legg til følgende felt fra hodet, basert på kravene for dette scenariet:
+   - Navn på leverandør
+   - Fakturatotal
+   - Fakturakonto
+   - Fakturanummer
+   - Fakturadato
+   - Fakturabeskrivelse
+   - Forfallsdato
+   - Fakturavaluta
 
 10. Legg til følgende felt fra rutenettlinjene på siden:
     - Innkjøpskategori
@@ -199,7 +198,7 @@ Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **Ve
     - 1099-beløp
 
 11. Når du har lagt til alle feltene fra de forrige to trinnene, klikker du **Ferdig**. Siden må ligne på følgende illustrasjon.
-[![Side når felt er lagt til](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Side når felt er lagt til](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Klikk **Ferdig** for å avslutte redigeringsmodus.
 13. Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
 14. Klikk **Publiser arbeidsområde** for å lagre arbeidet
@@ -296,14 +295,14 @@ Hvis du vil legge til handlinger i arbeidsflyten, kan du bruke siden **VendMobil
 
 ### <a name="vendor-invoice-attachments"></a>Leverandørfakturavedlegg
 
-1.  Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**
-2.  Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
-3.  Velg siden **Mine leverandørfakturaer** som du opprettet tidligere, og klikk deretter **Rediger**.
-4.  Angi **Dokumentbehandling** til **Ja** som vist nedenfor. **Obs!** Hvis det er ingen krav til å vise vedlegg på den mobile enheten, kan du la dette alternativet være angitt til **Nei**, som er standardinnstillingen.
-![Dokumentstyring](./media/docmanagement-216x300.png)
-6.  Klikk **Ferdig** for å avslutte redigeringsmodus.
-7.  Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
-8.  Klikk **Publiser arbeidsområde** for å lagre arbeidet
+1. Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**
+2. Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
+3. Velg siden <strong>Fakturadetaljer</strong> som du opprettet tidligere, og klikk deretter Rediger.
+4. Angi **Dokumentbehandling** til **Ja** som vist nedenfor. **Obs!** Hvis det er ingen krav til å vise vedlegg på den mobile enheten, kan du la dette alternativet være angitt til **Nei**, som er standardinnstillingen.
+   ![Dokumentstyring](./media/docmanagement-216x300.png)
+5. Klikk **Ferdig** for å avslutte redigeringsmodus.
+6. Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.
+7. Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
 ### <a name="vendor-invoice-line-distributions"></a>Leverandørfakturalinjedistribusjoner
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Opprette konsolideringsgrupper og flere konsolideringskontoer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en konsolideringskontogruppe og deretter legger til kontoer i gruppen. Denne prosedyren bruker demonstrasjonsdatafirmaet USMF.
 

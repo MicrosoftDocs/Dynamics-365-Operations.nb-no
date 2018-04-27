@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Finansrapporter for råbalanse
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav. 
 
@@ -99,7 +98,7 @@ Hver rapport for råbalanse bruker en annen kolonnedefinisjon. Disse kolonnedefi
     -   **FD** – Økonomiske data som inneholder bare debet for forrige år
     -   **FD** – Økonomiske data som inneholder bare kredit for forrige år
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

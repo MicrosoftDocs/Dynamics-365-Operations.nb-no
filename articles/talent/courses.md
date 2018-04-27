@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Definer opplæringskurs
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Personaladministratorer og ledere kan bruke kursfunksjonene til å vedlikeholde opplysningene om opplæringen som tilbys ansatte.
 
@@ -81,15 +80,15 @@ Tabellen nedenfor viser de tre typene oppsett for kurs. Oppsettyper bestemme str
 
 ## <a name="course-tasks"></a>Kursoppgaver
 For hvert kurs kan du for eksempel utføre følgende oppgaver.
--   Registrere deltakere
--   Spesifisere en registreringsfrist
--   Definere minste og største antall deltakere
--   Tilordne en kurslokasjon og et klasserom
--   Anbefale hoteller for kursdeltakere
--   Opprette en kursbeskrivelse som du deretter annonserer i Ansattselvbetjening
+- Registrere deltakere
+- Spesifisere en registreringsfrist
+- Definere minste og største antall deltakere
+- Tilordne en kurslokasjon og et klasserom
+- Anbefale hoteller for kursdeltakere
+- Opprette en kursbeskrivelse som du deretter annonserer i Ansattselvbetjening
 
   >**Obs!** Du kan slette et kurs bare hvis ingen er registrert for kurset. 
-    
+
 ## <a name="course-statuses"></a>Kursstatuser
 Tabellen nedenfor viser de mulige kursstatusene og handlingene du kan fullføre når kurset er en bestemt status.
 

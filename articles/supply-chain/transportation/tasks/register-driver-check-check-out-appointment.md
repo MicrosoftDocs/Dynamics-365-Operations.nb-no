@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Registrere innsjekking og utsjekking for sjåfør for en avtale
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du registrerer en sjåførinsjekk og en sjåførutsjekking. Dette gjøres vanligvis av en transportkoordinator. Du kan bruke prosedyren i USMF-demodatafirmaet. Før du begynner, må det være satt opp en avtale for en last. Hvis du vil opprette en avtale, kan du utføre prosedyren Sette opp en avtale for en last som en forutsetning.
 

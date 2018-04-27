@@ -1,9 +1,9 @@
 ---
-title: Konfigurere alternativer for ordrebehandling
+title: Definere en telefonsenterkanal
 description: Dette emnet gir informasjon om hvordan du behandler ordrer for telefonsentre ved hjelp av Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Definere alternativer for ordrebehandling
+# <a name="set-up-a-call-center-channel"></a>Definere en telefonsenterkanal
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Et firma kan definere flere telefonsenterkanaler i Microsoft Dynamics 365 for Retail. Telefonsenterkanaler konfigureres under **Detaljhandel** \>**Kanaler** \>**Telefonsentre** \>**Alle telefonsentre**, og de er spesifikke for en juridisk enhet.
 
-Dette emnet gir informasjon om hvordan du behandler ordrer for telefonsentre ved hjelp av Microsoft Dynamics 365 for Retail. 
+Når det opprettes en ny telefonsenterkanal, tildeles den et driftsenhetsnummer systematisk. Fordi telefonsentre opprettes som driftsenheter, kan brukere koble telefonsenterkanalen til forskjellige detaljhandelsfunksjoner, for eksempel sortimenter, kataloger og bestemte leveringsmåter.
 
-Retail støtter flere detaljhandelskanaler, for eksempel nettbutikker, fysiske butikker og telefonsentre. I telefonsentre tar arbeidere imot kundeordrer over telefon og oppretter salgsordrer. Dette emnet beskriver hvordan du oppretter et telefonsenter og konfigurerer alternativer for samtalesenteret. Hvert telefonsenter kan ha sine egne brukere, betalingsmåter, prisgrupper, finansdimensjoner og leveringsmåter. Du kan konfigurere disse alternativene når du oppretter telefonsenteret. **Viktig:** Før telefonsenterarbeidsflyter kan brukes når en bruker oppretter salgsordrer, må brukeren tilordnes til telefonsenteret som en telefonsenterbruker. Du kan bruke siden **Telefonsenter** til å aktivere eller deaktivere funksjonsgrupper som er unike for telefonsentre. Følgende grupper funksjoner kan aktiveres:
+Et standardlager kan konfigureres på telefonsenterkanalen. Deretter, når det opprettes salgsordrer i denne kanalen, angis standardlageret automatisk i salgsordrehodet, med mindre et annet lager er definert på kunden som er valgt for salgsordren. I så fall er kundens lager angitt som standard.
 
--   **Ordrefullføring** – Denne gruppen inneholder funksjoner som er relatert til betalinger og ordrefullføring på siden **Salgsordre**.
--   **Styrt salg** – Denne gruppen inneholder funksjoner som er knyttet til kildekoder, skript og katalogforespørsler.
+Brukere må være koblet til en telefonsenterkanal for å kunne bruke funksjonene for telefonsenter. Salgsordrer som en bruker oppretter i Retail, kobles automatisk til denne brukerens telefonsenterkanal. For øyeblikket kan ikke en enkeltbruker kobles til flere telefonsenterkanaler samtidig.
 
-Når du aktiverer disse funksjonene i innstillingene for telefonsenter, blir de tilgjengelige på siden **Salgsordre** for brukere som er knyttet til telefonsenteret. De fleste av disse funksjonene krever ekstra oppsett før de kan brukes. Bilder og skript er aktivert som en del av innstillingen for styrt salg for det bestemte telefonsenteret. Hvis denne funksjonen er aktivert, vises skript og produktbilder i faktaboksruten på siden **Salgsordre**. Standardbildet som er angitt for et produkt, vises. Skript kan konfigureres for en vare, katalog, kunde eller vare i konteksten til en katalog. Telefonsenterordrer kan vise flere detaljer om hvordan prisen for en bestemt ordrelinje ble avledet. For eksempel kan ordrene vise hvilke rabatter som ble brukt. Du kan aktivere denne funksjonaliteten på **Kunder** &gt; **Oppsett** &gt; **Kundeparametere** &gt; **Priser** &gt; **Prisdetaljer**. Du kan få tilgang til siden **Prisdetaljer** fra rullegardinlisten **Salgsordrelinje**. Du kan bruke sporing av ordrehendelse for revisjonsformål, gå gjennom handlingene som utføres på en ordre i løpet av ordrens levetid, eller spore handlinger til en bestemt bruker. Du kan for eksempel registrere handlingen hver gang en bruker oppretter en salgsordre, setter en ordre på vent, overstyrer et tillegg eller oppdaterer en ordrelinje. Du kan definere ordrehendelser for å spore handlinger for bestemte brukere, brukergrupper eller alle brukere i en bestemt periode. Du kan vise hvilke handlinger som ble utført på et dokument ved å åpne siden **Ordrehendelser** fra handlingsruten på siden for dette dokumentet. Du kan konfigurere ordrehendelser på **Salg og markedsføring** &gt; **Oppsett** &gt; **Hendelser** &gt; **Ordrehendelser**. Når en kundeordre ikke kan leveres til planlagt tid, kan et firma automatisk sende e-postvarsler til kunden for å forklare ordrestatusen og gi kunden en mulighet til å avbryte bestillingen. Hvis forsinkelsen overskrider en angitt terskel, kan ordren annulleres automatisk. Opptil tre e-postmeldinger kan sendes med angitte intervaller:
+En profil for e-postvarsling kan også konfigureres på telefonsenterkanalen. Profilen definerer settet med e-postmaler som brukes når e-post sendes til kunder som foretar bestillinger via telefonsenterkanalen. Du kan konfigurere e-postutløsere mot systemhendelser, for eksempel ordreoverføring eller overføringsordre.
 
-1.  **Første varsel om annullering** – Kunden kan annullere ordren.
-2.  **Andre varsel om annullering** – Kunden kan annulere ordren.
-3.  **Siste varsel om annullering** – Systemet annullerer bestillingen, og kunden blir informert om annulleringen.
+Før salget kan behandles korrekt gjennom en telefonsenterkanal, må korrekte [betalingsmåter](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) og leveringsmåter defineres for kanalen.
 
-Du kan la enkeltkunder og -produkter være fritatt fra den automatiske varslingen og annulleringen. Det utløses et marginvarsel når du legger til en vare i en ordre. Varselet inneholder viktig informasjon om varen, for eksempel prismargin og varens lønnsomhet. Du kan bruke denne informasjonen til å avgjøre om du skal bruke en prisoverstyring når du legger til en vare i salgsordren. Du kan for eksempel definere terskler for handelsmarginene for å angi at en terskel på 40 prosent eller mer over kostnaden er akseptabel for en vare, men at en terskel på 20 til 39 prosent over kostnaden er tvilsom. Dette betyr at alle varer med en terskel mellom 20 og 39 prosent vil utløse en advarsel. Alle varer med en terskel under 20 prosent over kostnaden kan ikke selges og vareprisen kan ikke justeres. Du kan konfigurere marginvarsler på **Kunder** &gt; **Oppsett** &gt; **Kundeparametere** &gt; **Marginvarsler**. Når du definerer mva-tilordningen basert på standardregler, kan du finne en samsvarende prioritet for adresseelementer. Du kan for eksempel angi at kontroll av mva-grupper etter postnummer har høyere prioritet enn kontroll av mva-grupper etter delstat. Når du angir nye kundeadresseposter, blir mva-gruppen tilordnet automatisk basert på hvordan kundens adresse samsvarer med standardregler og prioritetssamsvar du har definert. Du kan konfigurere denne funksjonaliteten på siden **Økonomiparametere**.
+På nivået for telefonsenterkanalen kan du definere andre standardverdier som er knyttet til finansdimensjonene som skal knyttes til ordrer som opprettes av kanalen.
 
+## <a name="options-for-order-processing-behavior"></a>Alternativer for virkemåten for ordrebehandling
 
+Tre innstillinger i konfigurasjonen av et telefonsenter har en stor innvirkning på funksjonene som er tilgjengelige for salgsordrer som opprettes mot dette telefonsenteret: **Aktiver ordrefullføring**, **Aktiver styrt salg** og **Aktiver ordrepriskontroll**.
 
+### <a name="enable-order-completion"></a>Aktiver ordrefullføring
+
+Innstillingen **Aktiver ordrefullføring** på telefonsenterkanalen har en stor innvirkning på flyten av salgsordrer som er angitt for for den kanalen. Når denne innstillingen er aktivert, må alle salgsordrer gå gjennom et sett med valideringsregler før de kan bekreftes. Du kjører disse reglene ved å velge **Fullført**-knappen som legges til i handlingsruten på siden for salgsordren. Alle salgsordrer som opprettes når innstillingen **Aktiver ordrefullføring** er slått på, må gå gjennom prosessen for ordrefullføring. Denne prosessen implementerer logikken for registrering av betaling og betalingsvalidering. I tillegg til betalingsaktivering kan ordresendingsprosessen utløse [svindelkontroller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts) som du konfigurerer i systemet. Ordrer som ikke består betalings- eller svindelkontroller, blir satt på vent og kan ikke gjøres tilgjengelig for ytterligere behandling (for eksempel plukking eller levering) før problemet som forårsaket sperringen, er løst.
+
+Når innstillingen **Aktiver ordrefullføring** er slått på for telefonsenterkanalen, og hvis linjeelementer er angitt i en salagsordre og kanalbrukeren prøver å lukke eller navigere bort fra salgsordreskjemaet uten først å velge **Fullført**, bruker systemet ordrefullføringsprosessen ved å åpne siden Salgsordresammendrag og kreve at brukeren sendrer ordren korrekt. Hvis ordren ikke kan sendes riktig sammen med betalingen, kan brukeren bruke funksjonen [ordresperrer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) til å sette ordren på vent. Hvis brukeren prøver å avbryte ordren, må han eller hun avbryte den riktig ved hjelp av kanselleringsfunksjonen eller slettingsfunksjonen, avhengig av funksjonen som tillates av brukerens sikkerhet.
+
+Hvis innstillingen **Aktiver ordrefullføring** er slått på for telefonsenterkanalen, spores **Betalingsstatus**-feltet i ordren. Systemet beregner **betalingsstatusen** når salgsordren sendes. Bare ordrer med godkjent betalingsstatus kan gå gjennom systemet for flere ordrebehandlingstrinn, for eksempel plukking og forsendelse. Hvis betalinger er avslått, aktiveres **ikke behandle**-flagget for den detaljerte ordrestatusen. Dette setter ordren på vent til betalingesproblemet er løst.
+
+Hvis innstillingen **Aktiver ordrefullføring** er slått på når brukere oppretter salgsordrer og er i modus for linjeelementregistrering, er i tillegg **Kilde**-feltet tilgjengelig i det primære salgsordrehodet. **Kilde**-feltet brukes til å registrere en [katalogkildekode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) i et salgsscenario for direktemarkedsføring. Denne koden kan deretter brukes til spesialpriser og kampanjer.
+
+Selv om innstillingen **Aktiver ordrefullføring** er deaktivert, kan brukere fremdeles bruke en kildekode til en salgsordre. De må imidlertid først åpne topptekstdetaljene for salgsordre for å få tilgang til **Kilde**-feltet. Med andre ord kreves noen ekstra klikk. Samme virkemåte gjelder funksjoner som forsendelsen ble fullført og fremskyndede ordrer. Disse funksjonene er tilgjengelige for alle ordrer som opprettes i telefonsenteret. Når innstillingen **Aktiver ordrefullføring** er aktivert, kan imidlertid brukerne se konfigurasjonen av disse funksjonene på salgshodet mens de er i linjeregistreringsvisning. De trenger ikke drille ned til topptekstdetaljene for salgsordre for å finne de riktige innstillingene og feltene.
+
+### <a name="enable-direct-selling"></a>Aktiver styrt salg
+
+Hvis innstillingen **Aktiver styrt salg** er slått på for telefonsenterkanalen, kan brukere dra nytte av funksjonene mersalg og kryssalg i Retail. I så fall vises popup-vinduer under ordreregistrering, og foreslår andre produkter som telefonsenterbrukeren kan tilby til kunden. Produktene som foreslås, er basert på produktet som nettopp ble bestilt på salgsordrelinjen. Forslagene for mersalg og kryssalg er for øyeblikket konfigurert på varenivå for produkter eller kataloger. Hvis innstlinngen **Aktiver styrt salg** er deaktivert for telefonsenterkanalen, vises ikke popup-vinduer under ordreregistrering, selv om gyldig mersalg og kryssalg ble definert for en vare som bestilles.
+
+Når innstillingen **Aktiver styrt salg** er slått på, er også skript- og bildefunksjonene for siden salgsordreregistrering slått på. Et informasjonspanel er da tilgjengelig til høyre på siden under ordreregistrering. Dette panelet kan vise skript som er knyttet til den vanlige ordreregistreringsprosessen, katalogkildekoden som ble brukt, eller skript som er knyttet til varene som bestilles. Bildepanelet kan også vise et produktbilde for varene som bestilles, hvis et bilde er definert for varen i produktoppsettet.
+
+### <a name="enable-order-price-control"></a>Aktiver ordrepriskontroll
+
+Når innstillingen **Aktiver ordrepriskontroll** er slått på, kan bare autoriserte brukere endre salgsprisen for en vare under ordreregistrering. Endringene må være innenfor de definerte avvikene. Brukere som ikke har riktig autorisasjon, må sende en forespørsel om en prisendring i stedet. Forespørselen behandles deretter ved hjelp av systemarbeidsflyter for gjennomgang og godkjenning.
+
+## <a name="channel-users"></a>Kanalbrukere
+
+Når du definerer telefonsenterkanalen, må du knytte kanalbrukerne til telefonsenteret. Ellers kan ikke telefonsenteret brukes i systemet. Når brukere logger på Retail og registrerer salgsordrer eller returordrer på en side som er knyttet til ordreregistrering, blir deres bruker-ID validert mot konfigurasjonen av telefonsenterkanalen. Hvis en bruker er koblet til en bestemt telefonsenterkanal, arver ordrer som brukeren oppretter, egenskapene og standardverdiene for denne kanalen.
+
+Som standard er **Detaljhandelsalg**-flagget på salgsordrehodet aktivert for alle ordrer som telefonsenterbrukere oppretter. Ordrene kan deretter dra nytte av systemets handelsspesifikke funksjoner for pris og kampanjer.
+
+Brukere som ikke er koblet til en telefonsenterkanal, bruker standardfunksjonene for ordreregistrering i Microsoft Dynamics 365 for Finance and Operations. Ordrer som disse brukerne legger inn via skjemaet for salgsordreregistrering, identifiseres ikke systematisk som detaljhandelsordrer. I tillegg vil ikke disse ordrene som legges inn av disse brukerne, være underlagt noen av behandlingsreglene for ordrefullføring, logikk for prissetting for detaljhandel eller andre ordrevalideringer som kan defineres i konfigurasjonen av telefonsenterkanalen eller systemparameterne for telefonsenter.
+
+Når du er ferdig med å konfigurere telefonsenterkanalen og definere kanalbrukere, må du kontrollere at alle nødvendige telefonsenterparametere er definert under **Detaljhandel** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Telefonsenterparametere**. Kontroller også at relaterte nummerserier er definert.
 

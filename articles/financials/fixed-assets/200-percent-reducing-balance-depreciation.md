@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 prosent redusert saldoavskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
 
@@ -70,6 +69,7 @@ Når **Skattemessig** er valgt som avskrivningsår, er følgende alternativer ti
 -   **Regnskapsperiode** posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret. Dette beløpet avsettes i regnskapsperiodene som defineres på siden **Regnskapskalendere**.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Eksempel på 200 % saldoverdiavskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |

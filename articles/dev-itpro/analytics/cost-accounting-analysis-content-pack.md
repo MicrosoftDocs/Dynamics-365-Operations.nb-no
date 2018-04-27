@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsregnskapsanalyse-innhold for Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Kostnadsregnskapsanalyse**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
@@ -111,18 +111,20 @@ Tabellen nedenfor viser hvordan de aggregerte nøkkelmålingene brukes til å op
 
 Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte målingene for å oppnå flere detaljer og dypere analytisk innsikt.
 
-| Enhet                             | Eksempler på attributter                                                                                               |
+
+|               Enhet               |                                                Eksempler på attributter                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Finans for kostnadsregnskap            | Kostnadsregnskapsfinans                                                                                               |
-| Kostnadskontrollenheter                 | Navn på kostnadskontrollenhet                                                                                               |
-| Kostnadselementdimensjoner            | Navn på kostnadselementdimensjon, navn på medlem av dimensjon for kostnadselement, beskrivelse av medlem av dimensjon for kostnadselement          |
-| Kostnadsobjektdimensjoner             | Navn på kostnadsobjektdimensjon, navn på medlem av dimensjon for kostnadsobjekt, beskrivelse av medlem av dimensjon for kostnadsobjekt              |
-| Statistiske dimensjoner             | Navn på statistisk dimensjon, Navn på medlem av statistisk dimensjon, beskrivelse av medlem av statistisk dimensjon              |
-| Hierarkier for kostnadsobjektdimensjon  | Hierarkinavn for kostnadsobjektdimensjon, hierarkinivå for kostnadsobjektdimensjon, hierarkitre for kostnadsobjektdimensjon    |
+|      Finans for kostnadsregnskap       |                                                Kostnadsregnskapsfinans                                                |
+|         Kostnadskontrollenheter         |                                                Navn på kostnadskontrollenhet                                                |
+|      Kostnadselementdimensjoner       |     Navn på kostnadselementdimensjon, navn på medlem av dimensjon for kostnadselement, beskrivelse av medlem av dimensjon for kostnadselement      |
+|       Kostnadsobjektdimensjoner       |       Navn på kostnadsobjektdimensjon, navn på medlem av dimensjon for kostnadsobjekt, beskrivelse av medlem av dimensjon for kostnadsobjekt        |
+|       Statistiske dimensjoner       |       Navn på statistisk dimensjon, Navn på medlem av statistisk dimensjon, beskrivelse av medlem av statistisk dimensjon        |
+| Hierarkier for kostnadsobjektdimensjon  |  Hierarkinavn for kostnadsobjektdimensjon, hierarkinivå for kostnadsobjektdimensjon, hierarkitre for kostnadsobjektdimensjon   |
 | Dimensjonshierarkier for kostnadselement | Hierarkinavn for kostnadselementdimensjon, hierarkinivå for kostnadselementdimensjon, hierarkitre for kostnadselementdimensjon |
-| Hierarkier for statistisk dimensjon  | Dimensjonshierarkinavn for statistikk, dimensjonshierarkinivå for statistikk, dimensjonshierarkitre for statistikk    |
-| Transaksjonsversjoner               | Navn på versjon                                                                                                         |
-| Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
-| Regnskapsår                       | Kalenderår                                                                                                        |
-| Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
+| Hierarkier for statistisk dimensjon  |  Dimensjonshierarkinavn for statistikk, dimensjonshierarkinivå for statistikk, dimensjonshierarkitre for statistikk   |
+|        Transaksjonsversjoner        |                                                     Navn på versjon                                                     |
+|          Økonomiske kalendere          |                                            Kalender, kalenderbeskrivelse                                            |
+|            Regnskapsår            |                                                    Kalenderår                                                     |
+|           Regnskapsperioder           |                                                 Kalenderårperiode                                                 |
+
 

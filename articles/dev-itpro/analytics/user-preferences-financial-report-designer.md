@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cabaf8a579fcd9722e409630038167afb07ffc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Brukerinnstillinger i Utforming av finansrapport
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen. Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises. 
 
@@ -63,7 +62,7 @@ Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse 
 <td>Velg om du vil motta en advarsel når du avslutter programmet. Denne meldingen bidrar til å garantere at du ikke avslutter programmet ved en feiltakelse.</td>
 </tr>
 <tr class="odd">
-<td>Bruk automatisk celleunderstreking i kolonneoverskrifter</td>
+<td>Bruk celleunderstreking i kolonnehoder automatisk</td>
 <td>Velg om du vil sette inn en understreking i cellen i en ny kolonneoverskrift.</td>
 </tr>
 <tr class="even">

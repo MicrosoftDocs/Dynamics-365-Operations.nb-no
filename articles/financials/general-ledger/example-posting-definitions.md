@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1bbd9230219f11407bc7afbd59670c6287b77c02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definition-examples"></a>Eksempler på posteringsdefinisjoner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.
 
@@ -53,11 +52,11 @@ Alle bilagstransaksjoner for bestillingsdisposisjoner må være i balanse (det v
 
 ### <a name="posting-definition--match-criteria"></a>Posteringsdefinisjon – samsvarskriterier
 
-| Kontostruktur       | Kontonummer for samsvar | Prioritet |
+| Kontostruktur       | Kontonummer for samsvar | Prioritet  |
 |-------------------------|----------------------|----------|
 | Kontostruktur – resultat | \*                   | 1        |
 
-*En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+<em>En tom verdi i feltet **Samsvarskontonummer</em>* betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
 
 ### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
 
@@ -94,11 +93,11 @@ Når budsjettbevilgninger og posteringsdefinisjoner er aktivert, registreres bud
 
 ### <a name="posting-definition--match-criteria"></a>Posteringsdefinisjon – samsvarskriterier
 
-| Kontostruktur       | Kontonummer for samsvar | Prioritet |
+| Kontostruktur       | Kontonummer for samsvar | Prioritet  |
 |-------------------------|----------------------|----------|
 | Kontostruktur – resultat | \*                   | 1        |
 
-*En tom verdi i feltet **Samsvarskontonummer** betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
+<em>En tom verdi i feltet **Samsvarskontonummer</em>* betyr at alle samsvarende kontoer i den definerte kontostrukturen er en del av den samsvarende regelen.
 
 ### <a name="posting-definition--generated-entries"></a>Posteringsdefinisjon – genererte oppføringer
 

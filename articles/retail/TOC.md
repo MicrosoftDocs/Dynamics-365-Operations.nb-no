@@ -31,7 +31,7 @@
 ## [Telefonsenterkataloger](call-center-catalogs.md)
 ## [Opprette en telefonsenterkatalog](create-call-center-catalogs.md)
 ## [Definere svindelvarsler](set-up-fraud-alerts.md)
-## [Definere alternativer for ordrebehandling](set-up-order-processing-options.md)
+## [Definere et telefonsenter](set-up-order-processing-options.md)
 ## [Definere et kontinuitetsprogram for et telefonsenter](set-up-continuity-program.md)
 ## [Ordresperrer](work-with-order-holds.md)
 ## [Betalingsalternativer](work-with-payments.md)
@@ -48,9 +48,10 @@
 ## [Velge mellom Modern POS og Cloud POS](MPOS-or-CPOS.md)
 ## [POS-operasjoner, tilkoblede og frakoblede](pos-operations.md)
 ## [Skjermoppsett for demonstrasjonsdata i MPOS/CPOS](demo-data.md)
-## [Oversikt over produkt- og kundesøk i Point of Sale](POS-search-improvements.md)
+## [Oversikt over produkt- og kundesøk på salgsstedet](POS-search-improvements.md)
+## [Lageroppslag på salgsstedet](product-variants-POS.md)
 ## Eksterne enheter for maskinvare
-### [Oversikt over eksterne enheter for Retail](retail-peripherals-overview.md)
+### [Oversikt over eksterne enheter for detaljhandel](retail-peripherals-overview.md)
 ### [Microsoft-testede maskinvareenheter for POS](microsoft-tested-pos-hardware-peripherals.md)
 ### [Simulator for eksterne enheter for Retail](dev-itpro/retail-peripheral-simulator.md)
 ### [Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md)
@@ -96,6 +97,7 @@
 ## [Definere RFM-analyse](set-up-rfm-analysis.md)
 
 # Rabatter og prisjusteringer
+## [Salgsprisbehandling for detaljhandel](price-management.md)
 ## [Prisjusteringer og rabatter](price-adjustments-discounts.md)
 ## [Fastslå den optimale kombinasjonen av overlappende rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definere kanalspesifikke rabatter](define-channel-specific-discounts.md)
@@ -138,15 +140,19 @@
 ## [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](../talent/departments-jobs-positions.md)
 ## [Definere komponentene for en jobb](../talent/create-job.md)
 
-# Lokalisering og forskriftsmessige funksjoner
+# Lokalisering og forskriftsmessige funksjoner​
+## Frankrike
+### [Kassaapparater for Frankrike](localizations/emea-fra-cash-registers.md)
+### [Retningslinjer for distribusjon for kassaapparater i Frankrike](localizations/emea-fra-deployment.md)
 ## India
-### [GST-integrering for kassaapparater for India](localizations/apac-ind-cash-registers.md)
-### [Retningslinjer for distribusjon for kassaapparater for India](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST-integrering for kassaapparater](localizations/apac-ind-cash-registers.md)
+### [Retningslinjer for distribusjon for kassaapparater i India](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norge
 ### [Kassaapparater for Norge](localizations/emea-nor-cash-registers.md)
-### [Retningslinjer for distribusjon for kassaapparater for Norge](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Retningslinjer for distribusjon for kassaapparater i Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sverige
 ### [Kassaapparater for Sverige](localizations/emea-swe-cash-registers.md)
+### [Eksempel for Retail POS-integrering med kontrollenheter](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Oppgaver i Retail
 ## [Opprette et produkt](../supply-chain/pim/tasks/create-product.md)
@@ -260,15 +266,17 @@
 ### [SDK for e-handelsplattform](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Utvidelsesmuligheter for betalingskobling
+### [Betalingsintegrering med en betalingsterminal](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementere en betalingskobling og betalingsenhet (hvitbok)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Distribuere en betalingskobling](dev-itpro/deploy-payment-connector.md)
 ### [Opprette et Windows-installasjonsprogram for en betalingskobling](dev-itpro/create-windows-installer-payment-connector.md)
 
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrere Retail SDK med det kontinuerlige byggesystemet](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
-### [Eksempler på utvidelsesmuligheter for Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Emballasje for Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [Eksempler på utvidelsesmuligheter for SDK for Retail](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
+### [Emballasje for SDK for Retail](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Eksempler for Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Utvidelsespunkt for følgesedler](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Utvidelser for kanaldatabase (DB)](dev-itpro/channel-db-extensions.md)
 ### [Utvidelsesmuligheter for CDX](dev-itpro/cdx-extensibility.md)
 ### [Ordreattributter](dev-itpro/order-attributes.md)

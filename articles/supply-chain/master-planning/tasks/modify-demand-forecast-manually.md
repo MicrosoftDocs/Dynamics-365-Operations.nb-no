@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Endre en behovsprognose manuelt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne registreringen er ment for produksjonsplanleggeren. 
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Konfigurere RFM-analyse
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
 
@@ -60,25 +59,25 @@ Hvis organisasjonen bruker en sum av tallene, legges de individuelle rangeringen
     - Hvis hver del av RFM-poengsummen må inneholde et likt antall kunder, merker du av for **Jevn fordeling**. 
     - Merk av for **Legg til poengummer** for å legge sammen de tre poengsummene. Dette vil for eksempel gi en kunde en RFM-poengsum på 13 i stedet for 535. 
     - Merk av for **Lagre historikk** hvis du vil at systemet skal lagre statistiske data for kunder, slik at dataene kan brukes til å beregne RFM-poengsum.
-  
+
 5.  På hurtigfanen **Recency** gjør du følgende: 
     - I **Inndelinger**-feltet angir du hvor mange inndelinger, eller grupper, som skal brukes til å beregne recency-poengsummen for kunder. Hvis du for eksempel har 100 kunder, betyr en inndeling på 5 at det er 20 kunder for hvert resultat. De 20 kundene som har foretatt de siste kjøpene, har en recency-poengsum på 5. De neste 20 kundene har en recency-poengsum på 4 og så videre. Hvis du har 50 kunder, har 10 kunder recency-poengsummen 5, 10 har recency-poengsummen 4 og så videre. 
     - I **Prioritet**-feltet velger du hvor stor vekt du vil legge på recency-parameteren i forhold til de andre parameterne, når RFM-poengsummen beregnes for en kunde. Du kan for eksempel legge mer vekt på recency-poengsummen enn pengepoengsummen. 
     - I **Multiplikator**-feltet angir du verdien som recency-poengsummen skal multipliseres med. Hvis du ikke angir en verdi, blir ikke poengsummen multiplisert. 
     - I **Periode**-feltet velger du hvilken tidsperiode beregningen av recency-poengsummen skal baseres på. For eksempel etter uke eller måned.
-   
+
 6.  På hurtigfanen **Frekvens** gjør du følgende: 
     - I **Inndelinger**-feltet angir du hvor mange inndelinger, eller grupper, som skal brukes til å beregne frekvenspoengsummen for kunder. 
     - I **Prioritet**-feltet velger du hvor stor vekt du vil legge på frekvensparameteren i forhold til de andre, når RFM-poengsummen beregnes for en kunde. 
     - I **Multiplikator**-feltet angir du verdien som frekvenspoengsummen skal multipliseres med. Hvis du ikke angir en verdi, blir ikke poengsummen multiplisert.
-   
+
 7.  På hurtigfanen **Monetær** gjør du følgende: 
     - I **Inndelinger**-feltet angir du hvor mange inndelinger, eller grupper, som skal brukes til å beregne pengepoengsummen for kunder. 
     - I **Prioritet**-feltet velger du hvor stor vekt du vil legge på pengeparameteren i forhold til de andre, når RFM-poengsummen beregnes for en kunde. 
     - I **Multiplikator**-feltet angir du verdien som pengepoengsummen skal multipliseres med. Hvis du ikke angir en verdi, blir ikke poengsummen multiplisert. 
     - I feltet **Brutto/netto** velger du om kundens pengepoengsum skal beregnes ved hjelp av brutto eller netto fakturabeløp. 
     - Hvis en kundes returbeløp skal trekkes fra beregningen av fakturatotalen for kunden, merker du av for **Trekk fra returer**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Vise RFM-poengsum for en kunde
 Bruk denne fremgangsmåten for å vise RFM-poengsum for en kunde. 
 

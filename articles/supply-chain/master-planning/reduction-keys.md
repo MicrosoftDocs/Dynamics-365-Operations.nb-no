@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Reduksjonsnøkler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
 
@@ -39,17 +38,19 @@ Denne artikkelen inneholder eksempler som viser hvordan du definerer en reduksjo
 
 Dette eksemplet viser hvordan en reduksjonsnøkkel reduserer behovene i behovsprognosen i henhold til prosentene og tidsperiodene som er definert av reduksjonsnøkkelen.
 
-1.  På siden **Reduksjonsnøkler** definerer du følgende linjer.
-    | Vekslepenger | Enhet  | Prosent |
-    |--------|-------|---------|
-    | 1      | Måned | 100     |
-    | 2      | Måned | 75      |
-    | 3      | Måned | 50      |
-    | 4      | Måned | 25      |
+1. På siden **Reduksjonsnøkler** definerer du følgende linjer.
 
-2.  Koble reduksjonsnøkkelen til varens dekningsgruppe.
-3.  På **Hovedplaner**-siden, i **Reduksjonsprinsipp**-feltet, velger du **Prosent - reduksjonsnøkkel**.
-4.  Opprett en behovsprognose på 1 000 stykker per måned.
+   | Vekslepenger | Enhet  | Prosent |
+   |--------|-------|---------|
+   |   1    | Måned |   100   |
+   |   2    | Måned |   75    |
+   |   3    | Måned |   50    |
+   |   4    | Måned |   25    |
+
+
+2. Koble reduksjonsnøkkelen til varens dekningsgruppe.
+3. På **Hovedplaner**-siden, i **Reduksjonsprinsipp**-feltet, velger du **Prosent - reduksjonsnøkkel**.
+4. Opprett en behovsprognose på 1 000 stykker per måned.
 
 Hvis du kjører prognoseplanlegging 1. januar, forbrukes behovene i behovsprognosen i henhold til prosentene du definerer på **Reduksjonsnøkler**-siden. Følgende behovsantall overføres til hovedplanen.
 
@@ -88,20 +89,21 @@ Hvis du bruker den samme behovsprognosen på 1 000 stykker per måned, overføre
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Transaksjoner - reduksjonsprinsipp for dynamisk periodeprognose
 I de fleste tilfeller er systemer er satt opp slik at transaksjoner reduserer behovsprognose i bestemte perioder for prognose: uker, måneder og så videre. Disse er definert i reduksjonsnøkkelen. Tiden mellom to behovsprognoselinjer kan imidlertid også *angi* en periode.
 
-1.  Opprett en behovsprognose for følgende datoer og antall.
-    | Dato       | Behovsprognose |
-    |------------|-----------------|
-    | 1. januar  | 1 000           |
-    | 5. januar  | 500             |
-    | 12. januar | 1 000           |
+1. Opprett en behovsprognose for følgende datoer og antall.
 
-    I denne prognosen er det ikke en ledig periode mellom prognosedatoene: det finnes en periode på fire dager mellom første og andre dato, og det er et tidsintervall på sju dager mellom andre og tredje dato. Disse ulike intervallene er dynamiske perioder.
-2.  Opprett salgsordrelinjer på følgende måte.
-    | Dato                             | Salgsordreantall |
-    |----------------------------------|----------------------|
-    | 15. desember i fjor | 500                  |
-    | 3. januar                        | 100                  |
-    | 10. januar                       | 200                  |
+   | Dato       | Behovsprognose |
+   |------------|-----------------|
+   | 1. januar  | 1 000           |
+   | 5. januar  | 500             |
+   | 12. januar | 1 000           |
+
+   I denne prognosen er det ikke en ledig periode mellom prognosedatoene: det finnes en periode på fire dager mellom første og andre dato, og det er et tidsintervall på sju dager mellom andre og tredje dato. Disse ulike intervallene er dynamiske perioder.
+2. Opprett salgsordrelinjer på følgende måte.
+   | Dato                             | Salgsordreantall |
+   |----------------------------------|----------------------|
+   | 15. desember i fjor | 500                  |
+   | 3. januar                        | 100                  |
+   | 10. januar                       | 200                  |
 
 Prognosen reduseres på følgende måte:
 

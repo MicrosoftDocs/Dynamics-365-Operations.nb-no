@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Frigi en dimensjonsbasert produktstandard
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes for dimensjonsbaserte konfigurasjoner. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Det er en forutsetning at du har opprettet en produktstandard ved hjelp av dimensjonsbasert konfigurasjon-teknologi. Dette er den andre fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.
 

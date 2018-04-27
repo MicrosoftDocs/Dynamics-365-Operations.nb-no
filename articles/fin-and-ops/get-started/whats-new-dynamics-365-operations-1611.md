@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations-versjon 1611 (november 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller har blitt endret i Dynamics 365 for Operations versjon 1611.
 
@@ -113,6 +112,7 @@ Dette emnet beskriver funksjoner som enten er nye eller har blitt endret i Dynam
 </table>
 
 ## <a name="expense-management"></a>Reiseregning og utlegg
+
 | Hva du kan gjøre                                                            | Hvorfor dette er viktig                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tilordne avsluttede kredittkorttransaksjoner for ansatte på nytt.                     | Noen ganger når en ansatt er sluttet, blir hans eller hennes konto i Active Directory Domain Services (AD DS) deaktivert når aktive kredittkorttransaksjoner som må oppføres som utgift, blir importert. Tidligere kunne du ikke tilordne en representant for utgiftsregistrering og knytte kredittkorttransaksjonene til en utgiftsrapport. Nå kan du bruke siden **Kredittkorttransaksjoner** til å tilordne kredittkorttransaksjon på nytt for den ansatte der den tilknyttede ansatte er sluttet. Når du tilordner kredittkorttransaksjonen, kan transaksjonen velges for en utgiftsrapport og betales gjennom den vanlige prosessen for refusjon av utgiftsrapport. |
@@ -225,6 +225,7 @@ Dette emnet beskriver funksjoner som enten er nye eller har blitt endret i Dynam
 </table>
 
 ## <a name="human-capital-management"></a>Forvaltning av menneskelig kapital
+
 | Hva du kan gjøre                                                                                | Hvorfor dette er viktig                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opprett en ytelsesjournal.                                                                  | Før du fullfører gjennomgangen, samler du ofte informasjon om aktiviteter eller hendelser som bidro til din suksess som ansatt i løpet av gjennomgangsperioden. Du kan legge til en oppføring for ytelsesjournalen for å dokumentere de aktivitetene og hendelsene. Du kan også koble disse aktivitetene og hendelsene til et mål eller en evaluering av ytelse for å gi mer informasjon til kontrolløren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Følgende land vil også kreve lokalisering av detaljhandel. Lokalisering av det
 </table>
 
 ## <a name="planning-and-scheduling"></a>Planlegge og tidsplanlegge
+
 | Hva du kan gjøre                                                                                                                                                                                                      | Hvorfor dette er viktig                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Angi standardordreinnstillinger for salg og innkjøp basert på en hvilken som helst aktiv produktdimensjon i hovedplanleggingen for produktet. Derfor kan du definere standardordreinnstillinger for lagerføringsenheten (LFE) eller en delvis LFE. | Du kan angi standard ordreinnstillinger som gjelder for en produktdimensjon eller en kombinasjon av produktdimensjoner. **Eksempel** Du kan selge et produkt som heter Polo-t-skjorte. Dette produktet er tilgjengelig i to farger: grønn og blå. Det er også tilgjengelig i to størrelser: Liten eller Middels. Farge og størrelse er aktive produktdimensjoner for Polo-t-skjorte. Du kan blokkere innkjøp av alle grønne Polo-t-skjorter, uavhengig av størrelse. |
@@ -624,6 +626,7 @@ Følgende land vil også kreve lokalisering av detaljhandel. Lokalisering av det
 </table>
 
 ## <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
+
 | Hva du kan gjøre                                                                                                           | Hvorfor dette er viktig                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Bruk senere valg når du posterer fakturaforslag i en satsvis jobb.                                                            | Regnskapsførerne kan definere at en satsvis jobb skal plukke opp fakturaforslag for postering automatisk, hvis disse forslagene oppfyller kriteriene som er angitt for den satsvise jobben. Denne funksjonen forbedrer automatisering av postering av fakturaen, fordi den satsvise jobben kan kjøre fortløpende og automatisk plukker opp forslag for postering. |
@@ -690,7 +693,7 @@ Butikksystemet er et distribusjonsvalg for forhandlere som bidrar til å gjennom
 -   Standardinstallasjon er en distribusjon med én boks, men egendefinert distribusjon er tillatt.
 -   Gir enkel distribusjon/selvbetjening.
 -   Detaljshandelsserveren og butikkdatabasen er i butikken sammen med Async-klienttjenesten.
--   Detaljhandelsserveren i butikken kommuniserer direkte med AOS (Application Object Server)) i hovedkvarteret for butikksystemet.
+-   Detaljhandelsserveren i butikken kommuniserer direkte med AOS (Application Object Server) i hovedkvarteret for butikksystemet.
 -   Støtter scenarier på tvers av terminaler der det mangler HQ-tilkobling.
 -   Moderne salgssted for detaljhandel og skysalgssted kommuniserer alltid med detaljhandelsserveren i butikken.
 -   Støtt moderne salgssted for detaljhandel og skysalgssted der det ikke finnes HQ-tilkobling.
