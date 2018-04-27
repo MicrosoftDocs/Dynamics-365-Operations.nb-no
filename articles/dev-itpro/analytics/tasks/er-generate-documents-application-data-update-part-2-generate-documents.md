@@ -1,5 +1,5 @@
 --- 
-title: Generere dokumenter med oppdatering av programdata for elektronisk rapportering (ER)
+title: "Utforme konfigurasjoner for å generere dokumenter med programdata"
 description: "For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren \"ER generere dokumenter med oppdatering av programdata (del 1: importere konfigurasjoner)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,47 +16,47 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c724ce3c39ed7097a5a842b44a095628dcdfa131
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad5508ea5807f505b29f2e60a1459c9c22552694
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="generate-documents-with-application-data-update-for-electronic-reporting-er"></a><span data-ttu-id="d77a3-103">Generere dokumenter med oppdatering av programdata for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="d77a3-103">Generate documents with application data update for electronic reporting (ER)</span></span>
+# <a name="design-configurations-to-generate-documents-with-application-data"></a><span data-ttu-id="0a237-103">Utforme konfigurasjoner for å generere dokumenter med programdata</span><span class="sxs-lookup"><span data-stu-id="0a237-103">Design configurations to generate documents with application data</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d77a3-104">For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren "ER generere dokumenter med oppdatering av programdata (del 1: importere konfigurasjoner)".</span><span class="sxs-lookup"><span data-stu-id="d77a3-104">To complete the steps in this procedure, you must first complete the procedure, ER Generate documents with application data update (Part 1: Import configurations).</span></span>
-
-
-
-<span data-ttu-id="d77a3-105">Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å generere et elektronisk dokument.</span><span class="sxs-lookup"><span data-stu-id="d77a3-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document.</span></span> <span data-ttu-id="d77a3-106">I denne prosedyren skal du kjøre den ER-importerte formatkonfigurasjonen som er opprettet for eksempelfirmaet Litware, Inc. for å generere elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="d77a3-106">In this procedure, you run the ER imported format configuration that has been created for the sample company, Litware, Inc. to generate electronic documents.</span></span>
+<span data-ttu-id="0a237-104">For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren "ER generere dokumenter med oppdatering av programdata (del 1: importere konfigurasjoner)".</span><span class="sxs-lookup"><span data-stu-id="0a237-104">To complete the steps in this procedure, you must first complete the procedure, ER Generate documents with application data update (Part 1: Import configurations).</span></span>
 
 
 
-<span data-ttu-id="d77a3-107">Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig eller elektronisk rapportering utvikler.</span><span class="sxs-lookup"><span data-stu-id="d77a3-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="d77a3-108">Disse trinnene kan fullføres ved hjelp av DEMF-datasettet.</span><span class="sxs-lookup"><span data-stu-id="d77a3-108">These steps can be completed using the DEMF dataset.</span></span> 
+<span data-ttu-id="0a237-105">Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å generere et elektronisk dokument.</span><span class="sxs-lookup"><span data-stu-id="0a237-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document.</span></span> <span data-ttu-id="0a237-106">I denne prosedyren skal du kjøre den ER-importerte formatkonfigurasjonen som er opprettet for eksempelfirmaet Litware, Inc. for å generere elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="0a237-106">In this procedure, you run the ER imported format configuration that has been created for the sample company, Litware, Inc. to generate electronic documents.</span></span>
 
 
 
-<span data-ttu-id="d77a3-109">Før du begynner, må du endre land konteksten for firmaets DEMF fra DEU (Tyskland) til BEL (Belgia).</span><span class="sxs-lookup"><span data-stu-id="d77a3-109">Before you begin, change the country context for the DEMF company from DEU (Germany) to BEL (Belgium).</span></span> <span data-ttu-id="d77a3-110">Klikk Organisasjonsadministrasjon > Organisasjoner > Juridiske enheter for å oppdatere landkoden i primæradressen for den juridiske enheten DEMF.</span><span class="sxs-lookup"><span data-stu-id="d77a3-110">Click Organization administration > Organizations > Legal entities to update the country code in the primary address of the legal entity DEMF.</span></span> <span data-ttu-id="d77a3-111">Start programmet på nytt.</span><span class="sxs-lookup"><span data-stu-id="d77a3-111">Restart your application.</span></span>
+<span data-ttu-id="0a237-107">Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig eller elektronisk rapportering utvikler.</span><span class="sxs-lookup"><span data-stu-id="0a237-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="0a237-108">Disse trinnene kan fullføres ved hjelp av DEMF-datasettet.</span><span class="sxs-lookup"><span data-stu-id="0a237-108">These steps can be completed using the DEMF dataset.</span></span> 
 
 
-## <a name="run-imported-er-format"></a><span data-ttu-id="d77a3-112">Kjør importert ER-format</span><span class="sxs-lookup"><span data-stu-id="d77a3-112">Run imported ER format</span></span>
-1. <span data-ttu-id="d77a3-113">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="d77a3-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="d77a3-114">Utvid 'Intrastat (modell)' i treet.</span><span class="sxs-lookup"><span data-stu-id="d77a3-114">In the tree, expand 'Intrastat (model)'.</span></span>
-3. <span data-ttu-id="d77a3-115">Velg 'Intrastat (modell)\Intrastat (format)' i treet.</span><span class="sxs-lookup"><span data-stu-id="d77a3-115">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
-4. <span data-ttu-id="d77a3-116">Klikk Kjør.</span><span class="sxs-lookup"><span data-stu-id="d77a3-116">Click Run.</span></span>
-    * <span data-ttu-id="d77a3-117">Kjør utkastversjonen av formatkonfigurasjonen ER å generere Intrastat-rapporten.</span><span class="sxs-lookup"><span data-stu-id="d77a3-117">Run the draft version of the ER format configuration to generate the Intrastat report.</span></span>  
-5. <span data-ttu-id="d77a3-118">Skriv inn 'intrastat.xml' i feltet Angi filnavn.</span><span class="sxs-lookup"><span data-stu-id="d77a3-118">In the Enter file name field, type 'intrastat.xml'.</span></span>
-    * <span data-ttu-id="d77a3-119">Angi navnet på filen.</span><span class="sxs-lookup"><span data-stu-id="d77a3-119">Specify the name of the file.</span></span>  
-6. <span data-ttu-id="d77a3-120">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d77a3-120">Click OK.</span></span>
-    * <span data-ttu-id="d77a3-121">Se gjennom den genererte XML-filen.</span><span class="sxs-lookup"><span data-stu-id="d77a3-121">Review the generated XML file.</span></span>  
-7. <span data-ttu-id="d77a3-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d77a3-122">Close the page.</span></span>
-8. <span data-ttu-id="d77a3-123">Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d77a3-123">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-    * <span data-ttu-id="d77a3-124">Åpmne dette skjemaet for å vise Intrastat-transaksjonene som er inkludert i det genererte elektroniske dokumentet.</span><span class="sxs-lookup"><span data-stu-id="d77a3-124">Open this form to view the Intrastat transactions that are included in the generated electronic document.</span></span>  
-9. <span data-ttu-id="d77a3-125">Klikk Intrastat-arkiv.</span><span class="sxs-lookup"><span data-stu-id="d77a3-125">Click Intrastat archive.</span></span>
-    * <span data-ttu-id="d77a3-126">Fordi det utførte ER-fomatet ikke inneholder innstillinger for oppdatering av programdata, ble detaljer om den fullførte Intrastat-rapporten ikke arkivert.</span><span class="sxs-lookup"><span data-stu-id="d77a3-126">Because the executed ER format does not contain any settings for application data update, the details of the completed Intrastat report have not been archived.</span></span>  
-10. <span data-ttu-id="d77a3-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d77a3-127">Close the page.</span></span>
-11. <span data-ttu-id="d77a3-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d77a3-128">Close the page.</span></span>
+
+<span data-ttu-id="0a237-109">Før du begynner, må du endre land konteksten for firmaets DEMF fra DEU (Tyskland) til BEL (Belgia).</span><span class="sxs-lookup"><span data-stu-id="0a237-109">Before you begin, change the country context for the DEMF company from DEU (Germany) to BEL (Belgium).</span></span> <span data-ttu-id="0a237-110">Klikk Organisasjonsadministrasjon > Organisasjoner > Juridiske enheter for å oppdatere landkoden i primæradressen for den juridiske enheten DEMF.</span><span class="sxs-lookup"><span data-stu-id="0a237-110">Click Organization administration > Organizations > Legal entities to update the country code in the primary address of the legal entity DEMF.</span></span> <span data-ttu-id="0a237-111">Start programmet på nytt.</span><span class="sxs-lookup"><span data-stu-id="0a237-111">Restart your application.</span></span>
+
+
+## <a name="run-imported-er-format"></a><span data-ttu-id="0a237-112">Kjør importert ER-format</span><span class="sxs-lookup"><span data-stu-id="0a237-112">Run imported ER format</span></span>
+1. <span data-ttu-id="0a237-113">Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="0a237-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="0a237-114">Utvid 'Intrastat (modell)' i treet.</span><span class="sxs-lookup"><span data-stu-id="0a237-114">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="0a237-115">Velg 'Intrastat (modell)\Intrastat (format)' i treet.</span><span class="sxs-lookup"><span data-stu-id="0a237-115">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="0a237-116">Klikk Kjør.</span><span class="sxs-lookup"><span data-stu-id="0a237-116">Click Run.</span></span>
+    * <span data-ttu-id="0a237-117">Kjør utkastversjonen av formatkonfigurasjonen ER å generere Intrastat-rapporten.</span><span class="sxs-lookup"><span data-stu-id="0a237-117">Run the draft version of the ER format configuration to generate the Intrastat report.</span></span>  
+5. <span data-ttu-id="0a237-118">Skriv inn 'intrastat.xml' i feltet Angi filnavn.</span><span class="sxs-lookup"><span data-stu-id="0a237-118">In the Enter file name field, type 'intrastat.xml'.</span></span>
+    * <span data-ttu-id="0a237-119">Angi navnet på filen.</span><span class="sxs-lookup"><span data-stu-id="0a237-119">Specify the name of the file.</span></span>  
+6. <span data-ttu-id="0a237-120">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="0a237-120">Click OK.</span></span>
+    * <span data-ttu-id="0a237-121">Se gjennom den genererte XML-filen.</span><span class="sxs-lookup"><span data-stu-id="0a237-121">Review the generated XML file.</span></span>  
+7. <span data-ttu-id="0a237-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="0a237-122">Close the page.</span></span>
+8. <span data-ttu-id="0a237-123">Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="0a237-123">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+    * <span data-ttu-id="0a237-124">Åpmne dette skjemaet for å vise Intrastat-transaksjonene som er inkludert i det genererte elektroniske dokumentet.</span><span class="sxs-lookup"><span data-stu-id="0a237-124">Open this form to view the Intrastat transactions that are included in the generated electronic document.</span></span>  
+9. <span data-ttu-id="0a237-125">Klikk Intrastat-arkiv.</span><span class="sxs-lookup"><span data-stu-id="0a237-125">Click Intrastat archive.</span></span>
+    * <span data-ttu-id="0a237-126">Fordi det utførte ER-fomatet ikke inneholder innstillinger for oppdatering av programdata, ble detaljer om den fullførte Intrastat-rapporten ikke arkivert.</span><span class="sxs-lookup"><span data-stu-id="0a237-126">Because the executed ER format does not contain any settings for application data update, the details of the completed Intrastat report have not been archived.</span></span>  
+10. <span data-ttu-id="0a237-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="0a237-127">Close the page.</span></span>
+11. <span data-ttu-id="0a237-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="0a237-128">Close the page.</span></span>
 
 
