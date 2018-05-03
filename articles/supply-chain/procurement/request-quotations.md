@@ -57,8 +57,8 @@ Når du mottar bud via e-post, kan du angi dem på siden **Tilbudsforespørsler*
 
 Hvis en ny gjentakelse av et svar fra en leverndør er nødvendig, velger du **Retur** på siden **Tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til utskriftsinnstillingene.
 
-[!NOTE]
-Navnet på siden **Tilbudsforespørsel** er endret. I tidligere versjoner av Dynamics 365 for Finance and Operations, kalles denne siden **Svar på tilbudsforespørsel**.
+> [!NOTE]
+> Navnet på siden **Tilbudsforespørsel** er endret. I tidligere versjoner av Dynamics 365 for Finance and Operations, kalles denne siden **Svar på tilbudsforespørsel**.
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil tilbudsforespørselsen ha et poengpanel der du kan gi poeng. De totale resultatene vises i tilbudsforespørselen når du sammenligner svarene på siden **Sammenlign svar**. På siden **Sammenlign svar** kan du også sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.
 
@@ -126,8 +126,8 @@ Hvis du vil bruke årsakskoder på et bud for å angi hvorfor det ble avvist ell
 
 Du kan konfigurere hvordan utskrevne eller lagrede tilbudsforespørseldokumenter skal se ut, på **Skjemaoppsett**-siden i innkjøp og leverandører.
 
-[!NOTE]
-For en konfigurasjon for offentlig sektor må du bruke endingsprosessen for å endre en forespørsel som allerede er sendt. Når det sendes en forespørsel, er feltene låst.
+> [!NOTE]
+> For en konfigurasjon for offentlig sektor må du bruke endingsprosessen for å endre en forespørsel som allerede er sendt. Når det sendes en forespørsel, er feltene låst.
 Hvis du vil gjøre endringer i forespørselen, må du derfor velge **Opprett** for å starte endringsprosessen, som beskrevet tidligere. Låsevirkemåten kontrolleres av alternativet **Lås tilbudsforespørsler når de er sendt** på siden **Parametere for innkjøp og leverandører**. Som standard er denne parameteren satt til **Ja**, og for en konfigurasjon av offentlig sektor kan denne standardinnstillingen ikke endres. Derfor, selv om endringsprosessen kan behandles manuelt i en ikke-offentlig konfigurasjon, må den brukes for offentlig konfigurasjon.
 
 Når du oppretter en tilbudsforespørselssak av typen Bestilling og legger til en lagervare i tilbudsforespørselen, opprettes det en lagertransaksjon med tilgangsstatusen **Tilbud tilgang**. Bare linjer i saker om tilbudsforespørsel som har denne statusen, tas hensyn til når du bruker en hovedplan for å beregne forsyninger. Hvis du vil at hovedplanen skal ha med linjer i saker om tilbudsforespørsel som forventet mottak, må du konfigurere dette i oppsettet av hovedplanlegging.
