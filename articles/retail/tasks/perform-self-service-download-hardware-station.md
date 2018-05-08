@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Utføre selvbetjening for å laste ned maskinvarestasjon
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å laste ned en forhåndsdefinert maskinvarestasjon. Demonstrasjonsdatafirmaet for denne prosedyren er USRT. Du må ha opprettet en ny maskinvarestasjonsprofil og maskinvarestasjon før du begynner på denne oppgaven.
 

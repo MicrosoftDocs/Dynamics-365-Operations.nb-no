@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Søke etter leverandører
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Lær å søke etter leverandører basert på bestemte vilkår. Dette eksemplet viser hvordan du kan søke etter leverandører som er godkjent for en bestemt innkjøpskategori og har sin primæradresse i et bestemt land. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Denne oppgaven vil vanligvis utføres av en innkjøpsansvarlig.
 

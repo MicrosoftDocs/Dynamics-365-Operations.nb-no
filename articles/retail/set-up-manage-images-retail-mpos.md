@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurere og behandle bilder for moderne salgssted for detaljhandel
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Skaffe aktiva ved hjelp av innkjøp
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler.
 

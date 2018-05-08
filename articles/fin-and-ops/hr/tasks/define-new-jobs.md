@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-jobs"></a>Definere nye jobber
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven fokuserer på å opprette en ny jobb. Den vil bli fullført ved hjelp av manuell registrering og kopier fra mal-funksjonalitet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en Personale-spesialist.
 

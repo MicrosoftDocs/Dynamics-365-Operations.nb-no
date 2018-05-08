@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-performance-power-bi-content"></a>Lagerytelse-innhold for Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i **Lagerytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 

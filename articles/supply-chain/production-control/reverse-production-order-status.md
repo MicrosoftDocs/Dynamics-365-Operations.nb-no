@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-the-production-order-status"></a>Reversere produksjonsordrestatusen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre. 
 

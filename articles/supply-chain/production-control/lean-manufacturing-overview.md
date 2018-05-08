@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Oversikt over lean-varehandel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Microsoft Dynamics 365 for Finance and Operations.
 

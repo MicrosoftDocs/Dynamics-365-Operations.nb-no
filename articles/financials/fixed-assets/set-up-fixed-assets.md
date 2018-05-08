@@ -28,7 +28,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="set-up-fixed-assets"></a>Definere anleggsmidler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over oppsettet av **Anleggsmiddel**-modulen.
 

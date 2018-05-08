@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="running-average-cost-price"></a>Løpende gjennomsnittlig kostpris
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe. Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres.
 
@@ -63,7 +63,7 @@ Når du undersøker den estimerte løpende gjennomsnittlige kostprisen for varen
 
 **Obs!** Selv om avgangene resultater i en negativ beholdning, er beholdningen positiv når avgangsprisen beregnes. Derfor blir løpende gjennomsnittlig kostpris brukt, i stedet for prisen på hovedvaren. På dette stadiet har systemet en lagerverdimotregning på USD 100,00. Selv om motregningen ble bygd opp over 100 artikler, der det var en enhetsmotregning på USD 1,00 hver, har vi nå bare én artikkel i beholdningen. Motregningen på USD 100,00 er derfor tilordnet denne ene artikkelen. Resultatet er for høy estimert kostpris. 
 
-**Obs!**Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51. Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:
+**Obs!** Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51. Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:
 
 -   Du må estimere avgangspriser for beholdningsverdi og -antall.
 -   Du må justere beholdningsverdien og -antallet for avgang og mottak.

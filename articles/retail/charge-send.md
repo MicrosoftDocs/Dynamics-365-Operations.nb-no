@@ -28,7 +28,7 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="ship-an-order-from-a-different-store"></a>Sende en ordre fra en annen butikk
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Med sendefunksjonen Tillegg i Dynamics 365 for Retail kan kundeordrer registreres i én butikk og sendes fra en annen butikk. Kundeordrer i salgsstedsklienten støtter flere fullføringsalternativer. Eksempler på fullføringsalternativer:
 -   Henting fra samme butikk på en annen dato.

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurasjonsnøkler og dataenheter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Før du bruker dataenheter til å importere eller eksportere data, anbefaler vi at du først bestemmer virkningen av konfigurasjonsnøklene i dataenheter som du har tenkt å bruke. 
 

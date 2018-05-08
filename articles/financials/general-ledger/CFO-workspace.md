@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Legge til finansdimensjoner i CFO-arbeidsområdet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområdet, slik at de kan brukes for økonomi- og budsjettrapportene. CFO-arbeidsområdet har en **Oversikt**-kategori og en **Finans**-kategori. Rapportene i disse to kategoriene støttes av to mål: LedgerActivityMeasure og BudgetActivityMeasure. I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), er det en sammenheng mellom disse to tiltakene og DimensionCombinationEntity-enheten. Derfor kan du velge dimensjoner.
 

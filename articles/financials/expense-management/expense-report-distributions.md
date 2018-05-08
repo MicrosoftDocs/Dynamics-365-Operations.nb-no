@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Distribusjoner i en reiseregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Når du oppgir utgifter på en utgiftsrapport, kan du fordele utgiften på tvers av flere prosjekter, juridiske enheter, finansielle dimensjoner eller kontoer i organisasjonen.
 

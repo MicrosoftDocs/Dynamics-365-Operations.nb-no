@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generere og postere gjentakende fritekstfakturaer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Gjentakende fakturaer brukes til å fakturere kunder regelmessig for det samme beløpet. Denne registreringen bruker demonstrasjonsfirmaet USMF. Registreringen er ment for personen som er ansvarlig for administrasjon og behandling av fakturaer for kunder.
 

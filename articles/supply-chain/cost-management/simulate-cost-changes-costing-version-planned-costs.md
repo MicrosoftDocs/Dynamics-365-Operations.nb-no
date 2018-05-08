@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere kostprissendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris.
 

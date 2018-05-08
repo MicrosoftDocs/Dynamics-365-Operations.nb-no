@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Stillingsprognose
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter.
 

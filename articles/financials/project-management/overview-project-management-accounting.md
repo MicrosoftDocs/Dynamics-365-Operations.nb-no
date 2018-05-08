@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for å tilby en tjeneste, produsere et produkt eller oppnå et resultat.  
 

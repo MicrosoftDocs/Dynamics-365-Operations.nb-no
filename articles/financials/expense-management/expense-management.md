@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Reiseregning og utlegg
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bruk Utgiftsstyring for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din. Du kan også definerer utgiftspolicyer og automatisere refusjon av reiseutgifter. 
 

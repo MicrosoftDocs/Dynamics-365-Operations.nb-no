@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-schedule-for-a-site"></a>Opprette en tidsplan for et område
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du planlegger produksjonsordrer som ennå ikke er startet for et område.  USMF-demodatafirmaet brukes til å utføre denne prosedyren.
 

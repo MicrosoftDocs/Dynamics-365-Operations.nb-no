@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Lukke Kunde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tabellen nedenfor viser sidene som støtter lukkingsprosessen for Kunder.
 

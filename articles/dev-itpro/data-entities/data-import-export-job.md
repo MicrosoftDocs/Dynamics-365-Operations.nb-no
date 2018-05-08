@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjobber
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 For å opprette og administrere dataimport- og -eksportjobber i Microsoft Dynamics 365 for Finance and Operations, kan du bruke arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 

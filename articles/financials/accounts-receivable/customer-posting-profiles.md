@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kundeposteringsprofiler styrer postering av kundetransaksjoner til økonomimodulen.
 

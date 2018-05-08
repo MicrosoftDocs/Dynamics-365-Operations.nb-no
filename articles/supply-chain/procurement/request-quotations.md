@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Tilbudsforespørsler (RFQ-er)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir.
 Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.

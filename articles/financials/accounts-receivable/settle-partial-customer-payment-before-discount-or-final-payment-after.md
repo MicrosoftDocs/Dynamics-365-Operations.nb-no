@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen.
 

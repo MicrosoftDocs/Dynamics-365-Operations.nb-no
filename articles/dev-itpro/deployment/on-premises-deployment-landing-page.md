@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
 

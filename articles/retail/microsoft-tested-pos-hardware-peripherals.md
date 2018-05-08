@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>Maskinvare og periferiutstyr for salgssted
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Moderne salgssted for detaljhandel (POS) og skybasert salgssted kan bruke en rekke maskinvareenheter for salgssted med flere grensesnitt og distribusjonsalternativer for å oppnå ulike forretningsscenarioer for en forhandler. 
 

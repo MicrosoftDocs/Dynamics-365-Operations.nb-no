@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Starte en produksjonsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du starter en produksjonsordre i shop floor. Tid og materialforbruk blir rapportert i denne prosessen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Dette er den femte fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.
 

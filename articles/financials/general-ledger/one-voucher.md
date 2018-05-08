@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>Ett bilag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Denne funksjonaliteten blir tilgjengelig i Dynamics 365 for Finance and Operations versjon 8.0, som vil være tilgjengelig våren 2018.   

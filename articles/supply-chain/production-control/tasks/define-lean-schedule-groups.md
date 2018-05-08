@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-schedule-groups"></a>Definere lean-planleggingsgrupper
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen. Grupperingen kan utføres som generisk tilknytning per firma eller spesifikk for en arbeidscelle. Hver gruppe har en fargekode tilordnet for visuell indikasjon på listesiden for kanban-planlegging. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

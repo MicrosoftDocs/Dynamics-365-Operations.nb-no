@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurere Kunder og Kreditt og innkreving
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konfigurer kunder, kredit og innkreving for å spore fakturaer og innkommende betalinger fra kunder.
 

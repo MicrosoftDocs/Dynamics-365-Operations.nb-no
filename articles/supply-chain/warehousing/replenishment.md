@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Etterfylling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver etterfyllingsstrategiene som er tilgjengelige for lagre som bruker funksjonaliteten som er tilgjengelig i Lagerstyring. Informasjonen i dette emnet gjelder ikke for lagrerløsningen som er tilgjengelig i Lagerstyring.
 

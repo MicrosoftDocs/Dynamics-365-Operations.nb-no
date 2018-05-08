@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Definere et menyelement for mobilenhet for å registrere mottatte varer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven fokuserer på oppsettet for et menyelement for mobil enhet. Dette menyelementet brukes til registrering av mottak av varer som er bestilt via bestillinger. 
 

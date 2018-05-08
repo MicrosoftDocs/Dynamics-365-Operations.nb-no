@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-departments"></a>Definere nye avdelinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Avdelinger er driftsenheter som representerer et funksjonsområde i et selskap, for eksempel salg eller regnskap. Mange firmaer har organisasjonshierarkier som viser de forskjellige avdelingene i en virksomhet. Denne prosedyren hjelper med å opprette avdelinger og legge til disse avdelingene i organisasjonens avdelingshierarki. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

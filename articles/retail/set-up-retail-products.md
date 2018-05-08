@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Definere detaljhandelsprodukter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen beskriver hvordan definerer detaljhandelsprodukter i Microsoft Dynamics 365 for Retail.
 

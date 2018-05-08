@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamarbeid**. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components"></a>Definere avhengigheten av konfigurasjoner fra andre komponenter 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics livssyklus tjenester (LCS).
 

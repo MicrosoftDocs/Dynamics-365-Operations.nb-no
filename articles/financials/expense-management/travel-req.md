@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Reiserekvisisjoner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En *reiserekvisisjon* er et kildedokument som viser utgiftene som vil påløpe ved reising. En reiserekvisisjon er sendt til gjennomgang, og kan brukes til å godkjenne utgifter.
 

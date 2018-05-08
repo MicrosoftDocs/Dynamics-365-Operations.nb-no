@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="create-service-objects"></a>Opprette serviceobjekter  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
    
 Serviceobjekter er en kundes aktiva og produkter som du kan utføre en tjeneste for. 
 

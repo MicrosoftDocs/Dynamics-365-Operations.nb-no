@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="address-books-faq"></a>Vanlige spørsmål for adressebøker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <a name="how-do-i-check-for-duplicate-records"></a>Hvordan kontrollerer jeg duplikate poster?
 -------------------------------------

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>Amortisere konstante kostnader for en produsert vare
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 De konstante kostnadene til en produsert vare viser oppstillingstider for operasjonene og komponentene som har et konstant antall eller et konstant svinnbeløp. 
 

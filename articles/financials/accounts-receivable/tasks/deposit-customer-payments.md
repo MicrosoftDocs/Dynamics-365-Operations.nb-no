@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deposit-customer-payments"></a>Innbetale kundebetalinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Betale inn kundebetalinger. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

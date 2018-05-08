@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Opprette en operasjonsressurs
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess. Denne prosedyren viser hvordan du definerer en operasjonsressurs. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 

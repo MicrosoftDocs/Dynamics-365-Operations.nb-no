@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Glidende gjennomsnitt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres. 
 

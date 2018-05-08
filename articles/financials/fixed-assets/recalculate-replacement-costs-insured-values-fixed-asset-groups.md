@@ -27,7 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgrupper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver prosessen for å oppdatere erstatningskostnader og forsikrede verdier for anleggsmidler.
 

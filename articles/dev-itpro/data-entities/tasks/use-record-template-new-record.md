@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Bruke en postmal til å opprette en ny post
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du bruker en tidligere definert postmal til å opprette en ny post. Før du kan fullføre denne prosedyren, må du først fullføre prosedyren "Opprette en postmal for å forenkle dataregistrering".
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Umiddelbar etterfylling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Umiddelbar etterfylling lar deg etterfylle beholdning umiddelbart etter at en lokasjonsdirektivlinje ikke kan tilordne beholdning. Etterfyllingen er basert på én linje i oppsettet av lokasjonsdirektivet. Hvis lager ikke er tilgjengelig i måleenheten som er angitt av denne linjen, skjer etterfylling av denne målenheten umiddelbart.
 

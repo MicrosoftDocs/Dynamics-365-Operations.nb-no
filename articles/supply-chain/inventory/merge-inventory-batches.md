@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Slå sammen lagerpartier
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne emnet gir informasjon om hvordan du konsolidererer to eller flere lagerpartier i et sammenslått parti.
 

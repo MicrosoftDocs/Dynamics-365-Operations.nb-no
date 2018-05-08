@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 prosent saldoavskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
 

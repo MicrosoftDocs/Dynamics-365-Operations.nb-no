@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger. 
 

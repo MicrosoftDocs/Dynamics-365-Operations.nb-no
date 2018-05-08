@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>POS-forbedringer for serialiserte produkter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Oversikt 
 Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres som serialiserte eller ikke-serialiserte. Når produktene er serialiserte, kan hvert element tildeles et unikt nummer som hjelper til med å spore garantier, spore elementer og bekrefte eierskap. lv om muligheten til å gi serienumre for serielle produkter eksisterte i våre Modern/Cloud Point of Sale (POS), har det blitt lagt til noen forbedringer for å hjelpe kasserere å spare tid og være mer produktive.  

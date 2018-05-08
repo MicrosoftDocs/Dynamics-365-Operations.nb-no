@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokasjoner i et WMS-aktivert lager
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker avanserte lagerstyringsprosesser). Prosessen gjøres vanligvis av en lagersjef. Du kan kjøre denne veiledningen i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. En forutsetning er at du har konfigurert minst ett område.
 

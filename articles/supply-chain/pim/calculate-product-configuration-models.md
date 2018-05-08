@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="calculations-for-product-configuration-models-faq"></a>Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver beregninger for produktkonfigurasjonsmodeller og forklarer hvordan du bruker beregningene sammen med betingelser.
 

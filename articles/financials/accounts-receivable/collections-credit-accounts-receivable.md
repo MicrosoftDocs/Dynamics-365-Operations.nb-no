@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Informasjon om kundesamlinger behandles i en sentral visning ved hjelp av siden for innkreving i Finance and Operations. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkjenningsprosess i en arbeidsflyt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
 

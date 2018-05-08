@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du kan bruke Microsoft Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 

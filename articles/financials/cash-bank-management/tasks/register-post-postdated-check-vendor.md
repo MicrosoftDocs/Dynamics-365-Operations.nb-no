@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrere og postere en etterdatert sjekk for en leverandør
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan registrere detaljene for en etterdatert sjekk før du utsteder sjekken til en leverandør ved hjelp av journalbilaget. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner. Fullfør følgende oppgave før du registrerer og posterer en etterdatert sjekk fra en leverandør: 
 

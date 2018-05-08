@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="record-templates"></a>Postmaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen introduserer konseptet med postmaler og forklarer hvordan de kan brukes til å opprette poster som deler informasjon.
 

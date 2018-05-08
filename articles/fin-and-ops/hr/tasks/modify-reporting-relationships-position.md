@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Endre rapporteringsrelasjoner for en stilling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du endrer rapporteringsrelasjonen for en ansatt. Rapporteringsrelasjonen kan brukes for å rute dokumenter via arbeidsflyt. Prosedyren viser også hvordan du tilordner en ansatt til flere hierarkier. En ansatt kan for eksempel være en del av et prosjektteam med en uformell rapporteringsrelasjon til en prosjektansvarlig. Du kan definere flere rapporteringsrelasjoner for stillingen som passer til ulike prosjekt- eller matrisescenarier. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

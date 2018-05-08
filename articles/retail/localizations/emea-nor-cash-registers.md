@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="cash-registers-for-norway"></a>Kassaapparater for Norge
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 for Retail. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
 

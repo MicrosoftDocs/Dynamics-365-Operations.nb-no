@@ -27,7 +27,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Satsvis frigivelse av delvis reserverte overføringsordrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funksjonaliteten for batchfrigivelse av delvis reserverte overføringsordrer lar deg delvis frigi overføringsordrer til et lager ved å bruke en batchjobb.
 Fordi du har muligheten til å frigjøre en delmengde, behøver du ikke vente på at hele bestillingsmengden er tilgjengelig på lageret før du frigir en ordre.

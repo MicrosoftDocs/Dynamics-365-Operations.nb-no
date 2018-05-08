@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapport for fremoverrulling av anleggsmidler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Rull anleggsmidler forover**-rapporten inneholder, i et lesevennlig Microsoft Excel-format, de detaljerte anleggsmiddeldataene du trenger for periodeavslutning, regnskapsoppgjør og mva-rapportering. Rapporten inkluderer start- og sluttsaldoer for anleggsmidler, sammen med vurderingsbevegelser for perioden, og eventuelle nye anleggsmiddelanskaffelser og -salg som ble utført i løpet av perioden. Data rapporteres for individuelle anleggsmidler, og verdier summeres også for anleggsmiddelgrupper og den juridiske enheten.
 

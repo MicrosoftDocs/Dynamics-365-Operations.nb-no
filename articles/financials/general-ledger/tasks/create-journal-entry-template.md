@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Opprette en journaloppføring ved hjelp av en mal
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Posterte journalbilag kan lagres som bilagsmaler og brukes i et nytt journalbilag. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 

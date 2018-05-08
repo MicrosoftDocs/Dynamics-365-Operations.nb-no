@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-time-windows"></a>Opprette tidsvinduer   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan bruke tidsvinduer for å optimalisere planleggingen av serviceordrelinjene.
 

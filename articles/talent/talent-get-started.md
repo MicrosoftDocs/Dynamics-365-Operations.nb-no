@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Komme i gang med Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Talent er det enkelt å endre brukergrensesnittet og angi alternativer som gjør programvaren mer intuitiv for dine behov. Dette emnet inneholder koblinger til emner som inneholder informasjon om hvordan du kan tilpasse brukergrensesnittet til dine behov. Dette emnet inneholder også koblinger til informasjon som kan hjelpe deg med å finne informasjon i systemet, effektivt og nøyaktig. 
 

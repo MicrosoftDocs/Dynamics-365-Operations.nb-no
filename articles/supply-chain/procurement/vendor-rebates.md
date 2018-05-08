@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Leverandørrabatter
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
 

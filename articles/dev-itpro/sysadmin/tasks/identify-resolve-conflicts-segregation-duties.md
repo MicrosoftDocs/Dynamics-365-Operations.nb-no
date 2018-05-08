@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifisere og løse konflikter i arbeidsdeling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan definere regler for å skille aktiviteter som må utføres av forskjellige brukere. Dette konseptet kalles arbeidsdeling. Når definisjonen av en sikkerhetsrolle eller rolletildelingene til en bruker bryter reglene, logges konflikten. Alle konflikter må løses av administratoren. Fullfør fremgangsmåten nedenfor for å identifisere og løse konflikter. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

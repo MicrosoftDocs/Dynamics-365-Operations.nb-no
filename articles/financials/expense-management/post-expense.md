@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Poster en reiseregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når en reiseregning er godkjent og overført til økonomijournalen, kan den posteres i økonomimodulen. Når du posterer en reiseregning, identifiseres utgifter som er kvalifisert for tilbakebetaling av merverdiavgiften (mva). Den ansatte som er ansvarlig for verifisering av reiseregningen tilordnes oppgaven med kontroll og tilbakebetaling av mva-betalinger.
 

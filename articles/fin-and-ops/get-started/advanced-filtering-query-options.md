@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert synstaks for filtrering og spørringer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren "treff" i dialogboksen Avansert filter/sortering.
 

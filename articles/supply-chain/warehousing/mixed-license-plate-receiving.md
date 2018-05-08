@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-license-plate-receiving"></a>Mottak av kombinerte skiltnumre
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med mottak av kombinerte nummerskilt kan du bygge et nummerskiltsom  består av flere varer før du kan registrere og opprette plasseringsarbeid. 
 

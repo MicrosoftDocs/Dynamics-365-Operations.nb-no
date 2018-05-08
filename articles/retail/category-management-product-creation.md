@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Administrere produktkategorier for detaljhandel og produkter
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Dette emnet beskriver en utvidet måte å administrere produktkategorier for detaljhandel og produkter i Microsoft Dynamics 365 for Retail. Forbedringene lar forhandleransvarlige se en struktur av produktegenskaper som deles mellom hierarkiet for detaljhandelprodukt og detaljer om frigitt produkt.
 

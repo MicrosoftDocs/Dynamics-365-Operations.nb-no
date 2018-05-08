@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Årsakskoder for lagertelling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med årsakskoder kan du analysere resultatene av tellingen og eventuelle avvik som oppstår under denne prosessen. Du kan angi årsaken for å gjøre tellingen, for eksempel en skadet pall eller en lagerjustering som er basert på lagereksempler.
 

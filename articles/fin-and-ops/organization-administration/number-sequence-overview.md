@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="number-sequences"></a>Nummerserier
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nummerserier brukes for å generere lesbare, unike ID-er for hoveddataposter og transaksjonsposter som krever ID-er. En hoveddatapost eller transaksjonspost som krever en ID kalles en *referanse*.
 

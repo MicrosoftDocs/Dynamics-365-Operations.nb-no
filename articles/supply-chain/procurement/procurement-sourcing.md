@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for innkjøp og leverandører.
 

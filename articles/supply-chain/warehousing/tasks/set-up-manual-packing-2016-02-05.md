@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-manual-packing-february--may-2016-only"></a>Definere manuell pakking (bare februar og mai 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosessen plukker lagermedarbeidere varer fra lagerlokasjoner og flytter dem på en pakkestasjon der de kontrollerer vareantall og typer og tilordner dem til riktige containere. Når en container er fullstendig pakket, kan de lukke den og flytte den til utleveringsportene, og produktene er klare til forsendelse. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 

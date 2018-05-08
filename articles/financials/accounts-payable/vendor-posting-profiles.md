@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>Leverandørposteringsprofiler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Leverandørposteringsprofiler styrer postering av leverandørtransaksjoner til økonomimodulen.
 

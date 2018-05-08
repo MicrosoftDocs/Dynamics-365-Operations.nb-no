@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Startside for anleggsmidler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a> Definere kanalattributter
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Forbedre kanalen ved å legge til kanal- og produktattributter. Du må legge til kanalen i standardhierarkiet for organisasjonen før du kan definere attributtene.
 

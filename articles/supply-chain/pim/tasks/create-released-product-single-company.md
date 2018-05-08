@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Opprette et frigitt produkt for ett firma
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du oppretter ett enkelt frigitt produkt i konteksten for én enkelt juridisk enhet. Når det frigitte produktet er opprettet, er det umiddelbart tilgjengelig bare i denne enheten. Du kan gå gjennom denne prosedyren i demonstrasjonsdataselskapet USMF. Denne oppgaven utføres vanligvis av en produktdesigner.
 

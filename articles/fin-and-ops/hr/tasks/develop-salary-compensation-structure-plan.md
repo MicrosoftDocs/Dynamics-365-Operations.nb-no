@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Utvikle struktur og planer for lønn/kompensasjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen veileder deg gjennom prosessen med å opprette en fast kompensasjonsplan og aktivere ansatte som skal registreres i planen gjennom rettighetsregler. Demonstrasjonsdataselskapet USMF er brukt til å opprette denne oppgaven, og oppgaven er ment for kompensasjons- og fordelsansvarlig.
 

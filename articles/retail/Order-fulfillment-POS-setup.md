@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="set-up-order-fulfillment-for-stores"></a>Definere ordreoppfyllelse for butikker
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Oversikt
 Mange forhandlere vil optimalisere ordreoppfyllelsen ved å la butikker oppfylle ordrer. Ordreoppfyllelse på butikknivå kan bidra til å forenkle scenarier med for store lagre for en bestemt butikk, eller det kan være nødvendig med hensyn til logistikk i tilfeller der en butikk har ekstra kapasitet eller befinner seg nærmere avstand for levering til kunden. For å løse dette behovet, er en enhetlig ordreoppfyllelsesoperasjon tilgjengelig på salgsstedet.

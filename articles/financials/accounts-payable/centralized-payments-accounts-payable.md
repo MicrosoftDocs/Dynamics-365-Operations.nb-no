@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Sentraliserte betalinger for Leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 

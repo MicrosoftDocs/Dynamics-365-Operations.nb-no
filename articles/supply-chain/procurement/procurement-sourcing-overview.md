@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Oversikt over innkjøp og leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over hvilke funksjoner som er tilgjengelige i modulen Innkjøp og leverandører.
 

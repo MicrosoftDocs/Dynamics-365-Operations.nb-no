@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Arbeidspolicyer for lager
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbeidspolicyer i Microsoft Dynamics 365 for Finance and Operations kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon, basert på arbeidsordretype, lagerlokasjon og produkt.
 

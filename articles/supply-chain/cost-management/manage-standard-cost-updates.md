@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Administrere oppdateringer av standardkostnader
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Oppdateringer av standard kostdata kan behandles på to ulike måter: enversjonsmåten eller toversjonsmåten. 
 

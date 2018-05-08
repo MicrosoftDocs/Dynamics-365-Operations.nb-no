@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Aktivere lønnsprosessen for timeregistrering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du aktiverer lønnsprosessen for timeregistrering. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

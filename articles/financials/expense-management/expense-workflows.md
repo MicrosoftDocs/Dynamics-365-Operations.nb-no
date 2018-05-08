@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-workflows-for-expense"></a>Sett opp arbeidsflyter for utgifter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Du kan sette opp en arbeidsflytprosess som brukes for å gjennomgå og godkjenne reise- og utleggsbilag. Dokumentene som arbeidsflyter kan defineres inkluderer kostnadsrapporter, reiserekvisisjoner og forespørsler om kontantforskudd.
 

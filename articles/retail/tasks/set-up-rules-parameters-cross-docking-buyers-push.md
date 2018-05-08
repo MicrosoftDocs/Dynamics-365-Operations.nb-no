@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a> Definere regler og parametere for direkteoverføring og sentralt innkjøp
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren beskriver fremgangsmåten for å opprette etterfyllingsregler. Etterfyllingsregler kan brukes til å kontrollere hvordan produkter distribueres til butikkene når du bruker direkteoverføring og sentralt innkjøp. Etterfyllingsregler kan angis for butikker eller butikkgrupper. Vekten som er definert for hver linje i en regel, styrer hvordan antallene av produkter blir fordelt mellom butikkene når etterfyllingsregler brukes som distribusjonsmetode i direkteoverføring eller sentralt innkjøp. Denne prosedyren bruker demonstrasjonsfirmaet USRT.
 

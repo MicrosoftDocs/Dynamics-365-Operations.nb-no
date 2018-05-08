@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Livssyklustilstand for produkt 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Livssyklustilstand for produkter dokumenterer livssyklustilstanden til et frigitt produkt eller produktvariant. Produktlivssyklustilstander defineres av brukeren, vanligvis produktsjefen eller ansvarlig for produktstandarddata. Bestemte forretningsprosesser, for eksempel hovedplanlegging, kan påvirkes av en bestemt livssyklustilstand.   
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om dimensjonshierarkier. Du bruker et dimensjonshierarki for å definere rapporteringsstruktur, kostnadspolicyer og sikkerhetsoppsett i Kostnadsregnskap.  
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-guarantee"></a>Garantibrev
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om garantibrev. I et garantibrev godtar en bank å betale et bestemt beløp til en person hvis en av bankens kundene misligholder en betaling eller forpliktelse til denne personen. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Bygge en produktkonfigurasjonsmodell
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Behovet for å konfigurere produkter som dekker spesielle behov, er i ferd med å blir regelen i stedet for unntaket, både i relasjoner for bedrift-til-bedrift og firma-til-kunde.
 

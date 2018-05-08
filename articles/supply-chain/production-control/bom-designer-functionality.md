@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funksjonalitet for stykklisteutforming
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="organizational-training-power-bi-content"></a>Organisasjonsopplæring-innhold for Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Finance and Operations - Organisasjonsopplæringsinnhold for Power BI. 
 

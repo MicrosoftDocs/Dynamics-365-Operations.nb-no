@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Behandle justeringer av fordelspoeng
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren beskriver hvordan du slår opp fordelskortinformasjon og justerer fordelspoeng. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne oppgaven er ment for rollen som driftsleder for detaljhandel eller kundeserviceleder.
 

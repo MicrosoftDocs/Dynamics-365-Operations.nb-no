@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Ordresperrer
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet beskriver sperringer på ordrer ved hjelp av Dynamics 365 for Retail.
 

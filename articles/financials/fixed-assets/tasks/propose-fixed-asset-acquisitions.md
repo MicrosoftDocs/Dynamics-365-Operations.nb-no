@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anleggsmiddelanskaffelser
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåte viser hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
 

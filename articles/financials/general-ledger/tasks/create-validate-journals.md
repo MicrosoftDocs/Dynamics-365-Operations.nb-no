@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Opprette og validere journaler
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen oppretter og validerer journaler og journallinjer. Denne oppgaven bruker demonstrasjonsfirmaet USMF.  
 

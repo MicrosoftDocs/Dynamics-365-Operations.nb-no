@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person.  Med kompetansesøk kan du analysere eksisterende ansatte og søkere for å se om de samsvarer med kompetansesettet til en verdsatt medarbeider. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

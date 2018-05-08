@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="view-journal-entries-or-transactions"></a>Vise journaloppføringer eller transaksjoner
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du bruker av bilagstransaksjonsforespørsler for å søke etter journaloppføringer eller transaksjoner.
 

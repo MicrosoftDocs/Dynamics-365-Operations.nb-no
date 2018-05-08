@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.
 

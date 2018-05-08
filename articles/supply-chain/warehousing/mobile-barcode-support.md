@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Støtte for strekkode på mobile enheter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Fordi Android er et open source-prosjekt, kan alle produsenter av maskinvare for lagerstrekkodeskannere bygge en enhet for å kjøre Android-operativsystemet. En enhet er bare Android-kompatibel hvis den kan kjøre apper som er skrevet for Android-kjøringsmiljøet.
 En maskinvareleverandøren kan imidlertid endre og opprette overlappinger for Android-versjonen som kjører på maskinvaren. Microsoft har ikke ansvar for å sikre at en mobilapp for strekkodeskanning for Android er kompatibel med produsentens maskinvare for strekkodeskanning og Android-versjonen som kjører på den. 

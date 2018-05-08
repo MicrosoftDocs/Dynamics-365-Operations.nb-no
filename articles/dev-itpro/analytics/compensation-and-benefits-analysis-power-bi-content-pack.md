@@ -27,7 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="compensation-and-benefits-power-bi-content"></a>Kompensasjon og fordeler-innhold for Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Finance and Operations – Power BI-innholdet Kompensasjon og fordeler. 
 

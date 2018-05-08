@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilt arbeidsområde for lagerbeholdning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **lagerbeholdning**. Dette arbeidsområdet gir deg innsikt i reservert og tilgjengelig lager når som helst og hvor som helst.
 

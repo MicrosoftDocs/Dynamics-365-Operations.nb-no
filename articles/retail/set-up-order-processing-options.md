@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Definere en telefonsenterkanal
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Et firma kan definere flere telefonsenterkanaler i Microsoft Dynamics 365 for Retail. Telefonsenterkanaler konfigureres under **Detaljhandel** \>**Kanaler** \>**Telefonsentre** \>**Alle telefonsentre**, og de er spesifikke for en juridisk enhet.
 

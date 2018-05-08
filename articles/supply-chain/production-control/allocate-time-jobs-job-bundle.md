@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Tildele tid til jobber i en jobbunt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I produksjonsutførelse kan du bunte jobber. Deretter kan du starte flere jobber samtidig på Jobbliste-siden.
 

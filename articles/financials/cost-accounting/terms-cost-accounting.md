@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver de viktigste begrepene som brukes i Kostnadsregnskap.
 

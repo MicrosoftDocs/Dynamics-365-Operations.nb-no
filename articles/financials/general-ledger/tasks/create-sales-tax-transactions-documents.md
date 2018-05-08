@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Opprette mva-transaksjoner på dokumenter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Merverdiavgift på dokumenter blir beregnet ved hjelp av en mva-gruppe og en mva-gruppe for vare på dokumentlinjer. Dette hentes fra hoveddata, men kan endres manuelt hvis det er nødvendig. Den beregnede merverdiavgiften kan kontrolleres på et linje- og dokumentnivå. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

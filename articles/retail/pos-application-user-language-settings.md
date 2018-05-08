@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-application-and-user-language-settings"></a>Salgsstedsprogram og språkinnstillinger for bruker
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du endrer språkinnstillinger i moderne salgssted for detaljhandel (MPOS) og skysalgssted.
 

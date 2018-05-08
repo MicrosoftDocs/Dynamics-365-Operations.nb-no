@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkjenne leverandører for bestemte produkter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte produkter. Dette lar deg kontrollere hvilke leverandører som kan brukes når produktet legges til en bestilling. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Denne oppgaven utføres vanligvis av en innkjøpssjef.
 

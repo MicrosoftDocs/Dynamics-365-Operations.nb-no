@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX avsluttes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Vi har avsluttet WebSearchAX-siden. Vi anbefaler at du bruker områdesøk fra favorittsøkemotoren for å erstatte den.  For eksempel: 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="learning-power-bi-content"></a>Opplæringsinnhold for Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Microsoft Power BI-innholdet **Opplæring**.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Lagerstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Lagerstyringsmodulen for Dynamics 365 for Finance and Operations lar deg administrere lagerprosesser i industri, distribusjon og detaljhandel. Denne modulen har et bredt spekter av funksjoner for å støtte lageret på et optimalt nivå, når som helst. Lagerstyring er fullt integrert med andre forretningsprosesser i Finance and Operations, slik som transport, produksjon, kvalitetskontroll, innkjøp, overføring, salg og retur.
 

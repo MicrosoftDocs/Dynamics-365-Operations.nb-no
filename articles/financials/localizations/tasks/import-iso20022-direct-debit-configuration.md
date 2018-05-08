@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Importere konfigurasjon for ISO20022-avtalegiro
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du importerer en konfigurasjon for elektronisk rapportering for kundebetalinger. Denne fremgangsmåten bruker ISO 20022-avtalegiroformatet som eksempel. 
 

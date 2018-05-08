@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="customer-and-vendor-payment-formats-norway"></a>Betalingsformater for kunde og leverandør (Norge)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er. 
 

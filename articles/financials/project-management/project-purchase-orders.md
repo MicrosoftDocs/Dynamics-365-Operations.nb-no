@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-orders-for-a-project"></a>Bestillinger for et prosjekt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver flere metoder du kan bruke til å opprette bestillinger for et prosjekt. Hvilken metode du bruker, er avhengig av formålet med bestillingen og når de innkjøpte varene forbrukes og belastes et prosjekt.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I **Produksjonsstyring**-arbeidsområdet gir tre fliser deg bedre oversikt over unntak for råvarer for produksjonsordrer og partiordrer:
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="loan-items-to-a-worker"></a>Utlånsvarer til en arbeider
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du låner ut en vare til en arbeider og registrerer arbeideren som returnerer en vare. Ansatte kan også be om utlånsvarer på sidene for ansattselvbetjening. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

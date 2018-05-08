@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Sammenligne aktive estimerte og faktiske kostnader på en produksjonsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du viser årsakene til høy produksjonsavvik for en produksjonsordre. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten er ment for Lagermedarbeideren.
 

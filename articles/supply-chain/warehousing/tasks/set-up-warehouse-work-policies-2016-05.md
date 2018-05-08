@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-warehouse-work-policies"></a>Definere arbeidspolicyer for lager  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspolicy, kan du hindre oppretting av arbeid for råvareplukking og plassering av ferdige varer for et sett med produkter på bestemte lokasjoner. USMF-demodatafirmaet ble brukt til å opprette denne registreringen. Denne oppgaveveiledningen krever Dynamics AX 7.0.1 eller senere.
 

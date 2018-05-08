@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>Definere vurderingsstandarder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du setter opp en vurderingsstandard. Logistikklederen setter vanligvis opp vurderingsstandardene, avhengig av kontraktene som er signert med transportørene. I dette scenarioet definerer du en vurderingsstandard for en flytransportør. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

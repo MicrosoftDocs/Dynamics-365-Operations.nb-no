@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Oversikt over leverandørbetaling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 

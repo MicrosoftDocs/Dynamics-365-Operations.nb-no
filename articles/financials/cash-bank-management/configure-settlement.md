@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Konfigurere utligning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder. 
 

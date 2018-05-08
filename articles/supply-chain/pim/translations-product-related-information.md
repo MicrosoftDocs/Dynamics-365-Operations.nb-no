@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Vanlige spørsmål for produktrelaterte oversettelser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du administrerer oversettelser for produkter, produktdimensjonsverdier og produktattributter. 
 

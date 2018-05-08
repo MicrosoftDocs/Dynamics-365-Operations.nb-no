@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Tilordne en datamodell til utvalgte datakilder for elektronisk rapportering (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne en elektronisk rapportering (ER)-datamodell til valgte Dynamics 365 for Finance and Operations-datakilder. Denne modelltilordningen brukes senere som datakilde i en formatkonfigurasjon som skal brukes til å administrere elektroniske betalingsdokumenter. I dette eksemplet tilordner du en datamodell for eksempelfirmaet Litware, Inc. til datakilder. Når du skal fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten Velg datakildene for tilordning av modell.
 

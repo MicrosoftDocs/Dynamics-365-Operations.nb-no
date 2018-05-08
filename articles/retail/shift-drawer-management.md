@@ -29,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for salgssted – delt og frittstående. Delte skift kan brukes av flere brukere på flere steder, mens frittstående skift bare kan brukes av én arbeider om gangen.
 

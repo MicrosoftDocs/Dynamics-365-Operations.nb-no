@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Utforme konfigurasjoner for å analysere innkommende dokumenter for programdataoppdateringer (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument. I denne prosedyren må du importere de nødvendige ER-konfigurasjonene som er opprettet for eksempelfirmaet, Litware, Inc, og bruke dem til å analysere innkommende elektroniske dokumenter. For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv."
 

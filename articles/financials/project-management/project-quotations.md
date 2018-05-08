@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Prosjekttilbud
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen introduserer konseptet med prosjekttilbud, som du kan bruke til å gi et godt tilbud til en kunde som første trinn i prosjektfasen. Et prosjekttilbud kan inneholde varene og tjenestene som tilbudet er gitt for, grunnleggende kontaktinformasjon, spesielle forretningsavtaler og rabatter, og mulige avgifter og tillegg. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Power BI-innhold om ansattutvikling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Power BI-innholdet om **ansattutvikling**.
 

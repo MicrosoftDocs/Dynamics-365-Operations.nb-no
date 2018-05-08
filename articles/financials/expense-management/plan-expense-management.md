@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Konfigurere reiseregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du konfigurerer Reiseregning og utlegg i Microsoft Dynamics 365 for Finance and Operations. I Reiseregning kan du lagre informasjon om betalingsmetoder, reiserekvisisjoner, utgiftsrapporter, retningslinjer, og så videre.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 

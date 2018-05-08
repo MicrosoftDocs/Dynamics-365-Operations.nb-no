@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Definere en arbeidsmal for bestillinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren fokuserer på oppsettet for enkel arbeidsmal for som skal brukes når du plasserer mottatte varer. Arbeidsmaler bestemmer settet med instruksjoner som presenteres for lagermedarbeideren på en mobil enhet når de flytter varer fra mottaksområdet. Du kan bruke denne fremgangsmåten med data som er nevnt i demonstrasjonsdataselskapet USMF. Før du starter denne veiledningen kan du opprette en arbeidspulje-ID. I dette eksemplet brukes en arbeidpulje-ID kalt Innkommende. Denne fremgangsmåten er ment for lagersjef.
 

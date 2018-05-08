@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Mobilt arbeidsområde for mitt team
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Mitt team**. I dette arbeidsområdet kan ledere vise sine direkte underordnede og utvidede stab. De kan også sende ros til personer i rapporteringskjeden sin.
 

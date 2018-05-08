@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="release-production-orders"></a>Frigi produksjonsordrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En frigitt produksjonsordre er en ordre som har blitt autorisert for produksjon. Begrepet frigitt brukes til å beskrive en tilstand i livssyklusen til produksjonsordren, der produksjonsordren er tilgjengelig for utføring på produksjonsgulvet og for lagerprosesser. 
 

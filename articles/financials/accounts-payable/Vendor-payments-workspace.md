@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
 

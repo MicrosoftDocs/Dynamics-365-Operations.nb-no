@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Personlige utgifter i en reiseregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 På forretningsreise kan det hende at den ansatte belaster personlige utgifter med firmakredittkortet. Hvis du ikke definerer en prosess for håndtering av personlige utgifter, kan godkjenningsprosessen for reiseregning blir avbrutt når den ansatte sender den spesifiserte reiseregningen. 
 

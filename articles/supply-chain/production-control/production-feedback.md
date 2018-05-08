@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>Tilbakemeldinger på produksjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om tilbakemelding om produksjon, slik at arbeidere får tilbakemelding om produksjonsjobber. Artikkelen inneholder informasjon om de forskjellige metodene for at tilbakemelding om produksjon kan oppdateres.
 

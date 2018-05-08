@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Timeregistrering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tidsregistreringsarbeidere kan angi ulike typer tidsregistreringer, for eksempel stemple inn, stemple ut, registrere indirekte aktiviteter og fraværsregistrering. Dette emnet beskriver registreringer, deres beregning, godkjenning og bruken av arbeidsflyt for å legge til struktur og automatisk godkjenning i prosessen med å godkjenne timeregistreringer. 
 

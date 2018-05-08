@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Definere mva-grupper og mva-grupper for vare
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare. Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører. De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.  Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.  Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.  Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.  
 

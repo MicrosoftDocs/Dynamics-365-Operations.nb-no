@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolideringskontogrupper og flere konsolideringskontoer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 

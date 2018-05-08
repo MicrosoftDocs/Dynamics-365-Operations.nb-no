@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Utvikle og åpne en jobbrekvisisjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen. For hvert rekrutteringsprosjekt kan du definere informasjon, for eksempel jobben rekrutteringen gjelder for, navnet på rekruttereren, statusen for prosjektet og avdelingen der jobben er lokalisert. Når du har opprettet et rekrutteringsprosjekt, kan du skrive en stillingsannonse for prosjektet, publisere annonsen på ansattselvbetjeningssider, knytte søknader om ansettelse til prosjektet og spore aktiviteter for prosjektet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Hvis du vil starte fremgangsmåten, kan du gå til Personale > Rekruttering > Rekrutteringsprosjekter > Rekrutteringsprosjekter
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Endre eierskap for forsendelseslager basert på produksjonsbehov
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra leverandøren til den juridiske enheten når det er behov for beholdningen i produksjonen. Denne endringen av eierskap gjøres ved å opprette og postere en endringsjournal for lagereierskap. Endringsjournallinjene for lagereierskap kan opprettes manuelt eller, som vist her, basert på eksisterende produksjonsbehov. Vanligvis utfører en arbeidsleder denne oppgaven. Du kan bruke denne fremgangsmåten i USMF-demodatafirmaet eller ved hjelp av dine egne data. Hvis du bruker dine egne data, må du kontrollere at følgende forutsetninger er tilstede: et lagerjournalnavn som har blitt definert for lagereierskapsendringen, fysisk registrerte leverandøreide varer på lager og én eller flere produksjonsordrelinjer for materialet. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
 

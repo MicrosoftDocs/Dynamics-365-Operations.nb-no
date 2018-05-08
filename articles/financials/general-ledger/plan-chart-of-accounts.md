@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="plan-your-chart-of-accounts"></a>Planlegge kontoplanen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
 

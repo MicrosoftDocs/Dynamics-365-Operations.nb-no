@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Konvensjoner for anleggsmiddelavskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Avskrivningskonvensjoner brukes til å bestemme når og hvordan avskrivningen skal beregnes for både året da anleggsmiddelet anskaffes, og året da et anleggsmiddel avhendes.
 

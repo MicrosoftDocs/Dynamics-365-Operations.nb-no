@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Opprette et produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt. Demonstrasjonsdataselskapet USRT er brukt til å opprette denne oppgaven, og oppgaven er ment for varehandelsledere og produktdesignere.
 

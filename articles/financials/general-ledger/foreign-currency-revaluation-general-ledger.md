@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig. 
 
