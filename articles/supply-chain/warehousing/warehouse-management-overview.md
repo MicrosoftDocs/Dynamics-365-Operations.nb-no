@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d090a668988aeaeb8f1b779bc565d03a506a8f15
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a569d9264097d7a0b742bc7bf47c2504c58cdb4e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="warehouse-management"></a><span data-ttu-id="864ab-103">Lagerstyring</span><span class="sxs-lookup"><span data-stu-id="864ab-103">Warehouse management</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="864ab-104">Lagerstyringsmodulen for Dynamics 365 for Finance and Operations lar deg administrere lagerprosesser i industri, distribusjon og detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="864ab-104">The Warehouse management module for Dynamics 365 for Finance and Operations lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="864ab-105">Denne modulen har et bredt spekter av funksjoner for å støtte lageret på et optimalt nivå, når som helst.</span><span class="sxs-lookup"><span data-stu-id="864ab-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="864ab-106">Lagerstyring er fullt integrert med andre forretningsprosesser i Finance and Operations, slik som transport, produksjon, kvalitetskontroll, innkjøp, overføring, salg og retur.</span><span class="sxs-lookup"><span data-stu-id="864ab-106">Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 67ea9b0ac27a38b3f33523f5e4e1651316e3d2d2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6cd6b2bfa7d2d9dd74f549905d92bf3a2c16849c
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-location-profile"></a><span data-ttu-id="1b9b9-103">Opprette en lokasjonsprofil</span><span class="sxs-lookup"><span data-stu-id="1b9b9-103">Create a location profile</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1b9b9-104">Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer.</span><span class="sxs-lookup"><span data-stu-id="1b9b9-104">Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items.</span></span> <span data-ttu-id="1b9b9-105">I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll.</span><span class="sxs-lookup"><span data-stu-id="1b9b9-105">In this procedure we’ll create a profile for a location that doesn’t require license plate control.</span></span> <span data-ttu-id="1b9b9-106">Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling.</span><span class="sxs-lookup"><span data-stu-id="1b9b9-106">We’ll enable mixed items, and mixed inventory statuses, and allow cycle counting.</span></span> <span data-ttu-id="1b9b9-107">Du kan bruke prosedyren i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="1b9b9-107">You can use this procedure in the USMF demo data company.</span></span>
 

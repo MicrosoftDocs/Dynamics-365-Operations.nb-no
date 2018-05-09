@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: db6c78942d1824adf82869b1258f00a18526058f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 98f6eaf3a3d4754a4443e7f5214f97ea87b6f435
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a><span data-ttu-id="e8bfd-103">Klassifisere et produkt ved hjelp av kategorihierarkier</span><span class="sxs-lookup"><span data-stu-id="e8bfd-103">Classify a product using category hierarchies</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e8bfd-104">Bruk kategorihierarkier til å klassifisere produkter for eksport, innkjøp, salg eller andre formål.</span><span class="sxs-lookup"><span data-stu-id="e8bfd-104">Use category hierarchies to classify products for export, procurement, sales, or other purposes.</span></span> <span data-ttu-id="e8bfd-105">Denne oppgaven utføres vanligvis av en produktansvarlig.</span><span class="sxs-lookup"><span data-stu-id="e8bfd-105">This task is typically performed by a product manager.</span></span> <span data-ttu-id="e8bfd-106">Eksemplet bruker produktnummer M0009 i demonstrasjonsselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="e8bfd-106">The example uses product number M0009 in demo data company USMF.</span></span>
 

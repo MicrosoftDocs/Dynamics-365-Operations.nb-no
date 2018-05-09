@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: be973f37273e09640a9df04c80eb554ca0721132
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f9f3fd3f25ba51cd04243de3dcef33475aaea5c6
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a><span data-ttu-id="51475-103">Generere og postere gjentakende fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="51475-103">Generate and post recurring free text invoices</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="51475-104">Gjentakende fakturaer brukes til å fakturere kunder regelmessig for det samme beløpet.</span><span class="sxs-lookup"><span data-stu-id="51475-104">Recurring invoices are used to invoice customers regularly for the same amount.</span></span> <span data-ttu-id="51475-105">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="51475-105">This recording uses the USMF demo company.</span></span> <span data-ttu-id="51475-106">Registreringen er ment for personen som er ansvarlig for administrasjon og behandling av fakturaer for kunder.</span><span class="sxs-lookup"><span data-stu-id="51475-106">The recording is intended for the person responsible for managing and processing A/R invoices.</span></span>
 

@@ -20,18 +20,18 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 36ae8e44043c64984a0a8bb4e16ed5d3517041b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee7b8098278b89c19504ebde6745c598fff1a581
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="running-average-cost-price"></a><span data-ttu-id="8e808-104">Løpende gjennomsnittlig kostpris</span><span class="sxs-lookup"><span data-stu-id="8e808-104">Running average cost price</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="8e808-105">Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe.</span><span class="sxs-lookup"><span data-stu-id="8e808-105">The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group.</span></span> <span data-ttu-id="8e808-106">Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres.</span><span class="sxs-lookup"><span data-stu-id="8e808-106">However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.</span></span>
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="8e808-139">**Obs!** Selv om avgangene resultater i en negativ beholdning, er beholdningen positiv når avgangsprisen beregnes.</span><span class="sxs-lookup"><span data-stu-id="8e808-139">**Note:** Although the issues create negative inventory, inventory is positive when the issue price is calculated.</span></span> <span data-ttu-id="8e808-140">Derfor blir løpende gjennomsnittlig kostpris brukt, i stedet for prisen på hovedvaren.</span><span class="sxs-lookup"><span data-stu-id="8e808-140">Therefore, the running average cost price is used instead of the price on the item master.</span></span> <span data-ttu-id="8e808-141">På dette stadiet har systemet en lagerverdimotregning på USD 100,00.</span><span class="sxs-lookup"><span data-stu-id="8e808-141">At this point, the system has an inventory value offset of USD 100.00.</span></span> <span data-ttu-id="8e808-142">Selv om motregningen ble bygd opp over 100 artikler, der det var en enhetsmotregning på USD 1,00 hver, har vi nå bare én artikkel i beholdningen.</span><span class="sxs-lookup"><span data-stu-id="8e808-142">Although that offset was built up over 100 pieces, where there was a unit offset of USD 1.00 each, we now have only one piece in inventory.</span></span> <span data-ttu-id="8e808-143">Motregningen på USD 100,00 er derfor tilordnet denne ene artikkelen.</span><span class="sxs-lookup"><span data-stu-id="8e808-143">Therefore, the offset of USD 100.00 is allocated to this one piece.</span></span> <span data-ttu-id="8e808-144">Resultatet er for høy estimert kostpris.</span><span class="sxs-lookup"><span data-stu-id="8e808-144">The result is the overly inflated estimated cost price.</span></span> 
 
-<span data-ttu-id="8e808-145">**Obs!**Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51.</span><span class="sxs-lookup"><span data-stu-id="8e808-145">**Note:** For comparison, notice that if steps 2 and 3 are reversed in the scenario, 200 items will be issued at a unit price of USD 1.51, and one piece will remain at a unit price of USD 1.51.</span></span> <span data-ttu-id="8e808-146">Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:</span><span class="sxs-lookup"><span data-stu-id="8e808-146">Because this pricing amplification scenario can occur when negative inventory is involved, it's difficult to avoid in the following cases:</span></span>
+<span data-ttu-id="8e808-145">**Obs!** Til sammenligning kan du legge merke til at hvis trinn 2 og 3 blir snudd om i scenariet, blir 200 varer utstedt til en enhetspris på USD 1,51, og ett stykk blir stående på en enhetspris på USD 1,51.</span><span class="sxs-lookup"><span data-stu-id="8e808-145">**Note:** For comparison, notice that if steps 2 and 3 are reversed in the scenario, 200 items will be issued at a unit price of USD 1.51, and one piece will remain at a unit price of USD 1.51.</span></span> <span data-ttu-id="8e808-146">Siden dette prisforsterkingsscenariet kan oppstå når det finnes negativ beholdning, er det vanskelig å unngå i følgende tilfeller:</span><span class="sxs-lookup"><span data-stu-id="8e808-146">Because this pricing amplification scenario can occur when negative inventory is involved, it's difficult to avoid in the following cases:</span></span>
 
 -   <span data-ttu-id="8e808-147">Du må estimere avgangspriser for beholdningsverdi og -antall.</span><span class="sxs-lookup"><span data-stu-id="8e808-147">You must estimate issue prices on the on-hand value and quantity.</span></span>
 -   <span data-ttu-id="8e808-148">Du må justere beholdningsverdien og -antallet for avgang og mottak.</span><span class="sxs-lookup"><span data-stu-id="8e808-148">You must adjust the on-hand value and quantity on issues and receipts.</span></span>

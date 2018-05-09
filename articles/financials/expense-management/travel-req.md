@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 258727db58c32373a3ce3496cf4d2a9faf064425
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e2343eb7a983487b390409debd81d16acd2cc91f
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="travel-requisitions"></a><span data-ttu-id="73b2c-104">Reiserekvisisjoner</span><span class="sxs-lookup"><span data-stu-id="73b2c-104">Travel requisitions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="73b2c-105">En *reiserekvisisjon* er et kildedokument som viser utgiftene som vil påløpe ved reising.</span><span class="sxs-lookup"><span data-stu-id="73b2c-105">A *travel requisition* is a source document that lists the expenses that will be incurred for the purpose of travel.</span></span> <span data-ttu-id="73b2c-106">En reiserekvisisjon er sendt til gjennomgang, og kan brukes til å godkjenne utgifter.</span><span class="sxs-lookup"><span data-stu-id="73b2c-106">A travel requisition is submitted for review and can then be used to authorize expenses.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 04643d4d9e3c0a21f2dac3ce27a7398f7be4f775
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ebe2766976f2c7a88f9b919c8c13e05e36576e45
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="eb3fd-103">Legge til finansdimensjoner i CFO-arbeidsområdet</span><span class="sxs-lookup"><span data-stu-id="eb3fd-103">Add financial dimensions to the CFO workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="eb3fd-104">Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområdet, slik at de kan brukes for økonomi- og budsjettrapportene.</span><span class="sxs-lookup"><span data-stu-id="eb3fd-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="eb3fd-105">CFO-arbeidsområdet har en **Oversikt**-kategori og en **Finans**-kategori. Rapportene i disse to kategoriene støttes av to mål: LedgerActivityMeasure og BudgetActivityMeasure.</span><span class="sxs-lookup"><span data-stu-id="eb3fd-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="eb3fd-106">I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), er det en sammenheng mellom disse to tiltakene og DimensionCombinationEntity-enheten.</span><span class="sxs-lookup"><span data-stu-id="eb3fd-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="eb3fd-107">Derfor kan du velge dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="eb3fd-107">Therefore, you can select dimensions.</span></span>
 

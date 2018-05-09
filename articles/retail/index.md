@@ -19,16 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dce403032c239053159fd3e79f3dab013b620eaf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55de553a6732b95e4d265935b5019dac3e812585
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="welcome-to-dynamics-365-for-retail"></a><span data-ttu-id="ebca7-103">Velkommen til Dynamics 365 for Retail</span><span class="sxs-lookup"><span data-stu-id="ebca7-103">Welcome to Dynamics 365 for Retail</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="ebca7-104">Microsoft Dynamics 365 for Retail er en ende-til-ende-detaljhandelsløsning som leverer enhetlig handel på tvers av alle kanaler.</span><span class="sxs-lookup"><span data-stu-id="ebca7-104">Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels.</span></span> <span data-ttu-id="ebca7-105">Den omfatter salg, mobilitet, intelligens og produktivitet for å hjelpe forhandlere og arbeidere med å oppnå mer ved å bruke den mobile skyen.</span><span class="sxs-lookup"><span data-stu-id="ebca7-105">It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner.</span></span> <span data-ttu-id="ebca7-106">Retail formidler omfattende støtte for bruk av en rekke forretningsprosesser, for eksempel funksjoner for varehandels-, lager- og kanaladministrasjon.</span><span class="sxs-lookup"><span data-stu-id="ebca7-106">Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities.</span></span> <span data-ttu-id="ebca7-107">Løsningen formidler også dyptgående kundeopplevelser på tvers av alle berøringspunkter.</span><span class="sxs-lookup"><span data-stu-id="ebca7-107">It also provides immersive customer experiences across all touchpoints.</span></span>
 

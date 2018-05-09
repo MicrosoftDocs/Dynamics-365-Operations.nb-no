@@ -20,16 +20,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec0edb9a077cbb14581681764bc1145c0650fa94
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5d5e80ae7206d9b4b6356fea237a06ef67b982f1
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="receipt-templates-and-printing"></a><span data-ttu-id="24690-104">Kvitteringsmaler og utskrift</span><span class="sxs-lookup"><span data-stu-id="24690-104">Receipt templates and printing</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="24690-105">Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut.</span><span class="sxs-lookup"><span data-stu-id="24690-105">This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed.</span></span> <span data-ttu-id="24690-106">Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.</span><span class="sxs-lookup"><span data-stu-id="24690-106">Microsoft Dynamics 365 for Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.</span></span>
 

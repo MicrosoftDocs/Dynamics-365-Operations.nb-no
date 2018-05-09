@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57f11ab8616914c489e0f8a8424355c79b210978
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff9aa834ae03f2e1d4f6efbc1aed8594e02ef113
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-production-flow-models"></a><span data-ttu-id="0b792-103">Definere produksjonsflytmodeller</span><span class="sxs-lookup"><span data-stu-id="0b792-103">Define production flow models</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0b792-104">Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean manufacturing er beregnet og opprettholdt.</span><span class="sxs-lookup"><span data-stu-id="0b792-104">Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained.</span></span> <span data-ttu-id="0b792-105">Definisjonen av en Produksjonsflytmodell er derfor en forutsetning for definisjon av arbeidsceller.</span><span class="sxs-lookup"><span data-stu-id="0b792-105">Therefore the definition of a production flow model is a prerequisite of the definition of work cells.</span></span> <span data-ttu-id="0b792-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="0b792-106">The demo data company used to create this procedure is USMF.</span></span>
 

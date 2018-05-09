@@ -17,15 +17,15 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 734034776e1adb42ee5f131e91b6fd7d28f811ab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4e7a2fde65c8dba8b16c5a87eae0ec2bbebc3388
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-containerization"></a><span data-ttu-id="7daf5-103">Definere containerbruk</span><span class="sxs-lookup"><span data-stu-id="7daf5-103">Set up containerization</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7daf5-104">Denne fremgangsmåten beskriver hvordan du automatiserer containerbruken av laster i Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="7daf5-104">This procedure describes how to automate the containerization of loads in Warehouse management.</span></span> <span data-ttu-id="7daf5-105">Automatisert containerbruk oppretter containere og plukkarbeidet for forsendelser når en bølge behandles, og arbeidslinjer kan deles inn i antall som får plass i containerne.</span><span class="sxs-lookup"><span data-stu-id="7daf5-105">Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers.</span></span> <span data-ttu-id="7daf5-106">På denne måten kan lagermedarbeidere plukke varene direkte til den valgte containeren.</span><span class="sxs-lookup"><span data-stu-id="7daf5-106">This helps warehouse workers to pick the items directly into the chosen container.</span></span> <span data-ttu-id="7daf5-107">Sammenlignet med den manuelle pakkeprosessen kan oppgaver som oppretting av beholdere, tilordning av varer og lukking av beholdere, automatiseres av systemet.</span><span class="sxs-lookup"><span data-stu-id="7daf5-107">Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system.</span></span> <span data-ttu-id="7daf5-108">Denne fremgangsmåten bruker USMF-demofirmaet og utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="7daf5-108">This procedure uses the USMF demo company and is performed by a Warehouse manager.</span></span>
 

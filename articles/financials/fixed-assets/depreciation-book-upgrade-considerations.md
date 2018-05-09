@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfba6a237548d962bd3677d20da3745f59638ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7093023713a81980010b8254708801b58bc68475
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-book-upgrade-overview"></a><span data-ttu-id="5ed9e-105">Oversikt over oppgradering for avskrivningstablå</span><span class="sxs-lookup"><span data-stu-id="5ed9e-105">Depreciation book upgrade overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5ed9e-106">I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer.</span><span class="sxs-lookup"><span data-stu-id="5ed9e-106">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="5ed9e-107">I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.</span><span class="sxs-lookup"><span data-stu-id="5ed9e-107">In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span> <span data-ttu-id="5ed9e-108">Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen.</span><span class="sxs-lookup"><span data-stu-id="5ed9e-108">This topic provides some things to consider for the upgrade.</span></span> 
 
@@ -62,24 +62,24 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="5ed9e-145">Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans.</span><span class="sxs-lookup"><span data-stu-id="5ed9e-145">The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</span></span> 
 
 <span data-ttu-id="5ed9e-146">*// Angi en foretrukket metode for fordeling av bilag* 
-*// true, hvis du vil bruke en eksisterende nummerseriekode* 
-*// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-146">*// Specify a preferable approach of vouchers allocation* 
-*// true, if you want to use an existing number sequence code* 
-*// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
+ *// true, hvis du vil bruke en eksisterende nummerseriekode* 
+ *// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-146">*// Specify a preferable approach of vouchers allocation* 
+ *// true, if you want to use an existing number sequence code* 
+ *// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
 
 <span data-ttu-id="5ed9e-147">*// Hvis bruker fremgangsmåten for systemdefinert nummerserie, angir du parameterne for nummerserien.*
-*// Det opprettes en ny nummerserie med disse parameterne.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
-*// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="5ed9e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
+ *// Det opprettes en ny nummerserie med disse parameterne.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
+ *// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="5ed9e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
 
 <span data-ttu-id="5ed9e-149">*// Hvis du bruker fremgangsmåten for eksisterende nummerserie, angir du den eksisterende nummerseriekoden.* 
-*// Bilagstilordning går rad for rad for eksisterende nummerserier.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
-*// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="5ed9e-150">const str NumberSequenceExistingCode = ''; *// Angi omfanget for den eksisterende nummerseriekoden* 
-*// true, hvis den angitte nummerserien er delt* 
-*// false, hvis den angitte nummerserien er per firma* 
-*// Standard systemdefinert nummerserie brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
-*// true, if the specified number sequence is shared* 
-*// false, if the specified number sequence is per-company* 
-*// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="5ed9e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
+ *// Bilagstilordning går rad for rad for eksisterende nummerserier.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
+ *// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="5ed9e-150">const str NumberSequenceExistingCode = ''; *// Angi omfanget for den eksisterende nummerseriekoden* 
+ *// true, hvis den angitte nummerserien er delt* 
+ *// false, hvis den angitte nummerserien er per firma* 
+ *// Standard systemdefinert nummerserie brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.*</span><span class="sxs-lookup"><span data-stu-id="5ed9e-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
+ *// true, if the specified number sequence is shared* 
+ *// false, if the specified number sequence is per-company* 
+ *// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="5ed9e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="5ed9e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
 
 <span data-ttu-id="5ed9e-152">Bygg på nytt prosjektet som inneholder klassen når konstantene har blitt endret.</span><span class="sxs-lookup"><span data-stu-id="5ed9e-152">Rebuild the project that contains the class after the constants have been modified.</span></span> 
 

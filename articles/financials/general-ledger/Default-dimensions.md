@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b6a85480948d1280ddb7e588d41dcc09692d823c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: abc16205fbe8cd68f8883b215b3412cdd0c9a5f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-dimensions-and-posting"></a><span data-ttu-id="198fa-105">Finansdimensjoner og postering</span><span class="sxs-lookup"><span data-stu-id="198fa-105">Financial dimensions and posting</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="198fa-106">Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal.</span><span class="sxs-lookup"><span data-stu-id="198fa-106">When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal.</span></span> <span data-ttu-id="198fa-107">Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner.</span><span class="sxs-lookup"><span data-stu-id="198fa-107">These components include account structures, advanced rules, and balancing and fixed dimensions.</span></span> <span data-ttu-id="198fa-108">Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.</span><span class="sxs-lookup"><span data-stu-id="198fa-108">This topic explains what each component is and how the components work together.</span></span>
 

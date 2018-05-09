@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ee053759be244f04efaa6ef6e2cf98e6509da230
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9c2b7e14659bd4cb744c3818df1ab39990c6dc6e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a><span data-ttu-id="cfe68-103">Vedlikeholde informasjon om ansattskade og -sykdom</span><span class="sxs-lookup"><span data-stu-id="cfe68-103">Maintain employee injury and illness information</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cfe68-104">Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her.</span><span class="sxs-lookup"><span data-stu-id="cfe68-104">It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here.</span></span> 
 

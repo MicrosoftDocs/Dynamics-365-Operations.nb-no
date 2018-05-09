@@ -16,15 +16,15 @@ ms.author: epodkolz
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8a47bb852091a86e83cf36f080ec7d4449f6ecb3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fd59771b8606569acf999faeefbed3a08f0d29f
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="customer-and-vendor-payment-formats-norway"></a><span data-ttu-id="86d54-103">Betalingsformater for kunde og leverandør (Norge)</span><span class="sxs-lookup"><span data-stu-id="86d54-103">Customer and vendor payment formats (Norway)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="86d54-104">Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="86d54-104">This task walks you through setting up and maintaining Norwegian payment IDs.</span></span> 
 

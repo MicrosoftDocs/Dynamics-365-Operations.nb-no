@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4b8277073810e678fd7d4c76371eeb4709ece020
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5e5d45f15b69310b5b03a0a9093c1bd0e5647bcd
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a><span data-ttu-id="62fe1-103">Legge inn et tillegg til et anleggsmiddel</span><span class="sxs-lookup"><span data-stu-id="62fe1-103">Enter an addition to a fixed asset</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="62fe1-104">Denne fremgangsmåten viser hvordan du legger til et tillegg i et eksisterende anleggsmiddel.</span><span class="sxs-lookup"><span data-stu-id="62fe1-104">This procedure shows how to add an addition to an existing fixed asset.</span></span> <span data-ttu-id="62fe1-105">Formålet med Anleggsmiddeltillegg brukes til å spore varetillegg, vedlikehold eller forbedringer for aktiva, og er kun til informasjon.</span><span class="sxs-lookup"><span data-stu-id="62fe1-105">The purpose of Fixed asset additions is to track item additions, maintenance, or improvements for an asset, and is informational only.</span></span> <span data-ttu-id="62fe1-106">Eventuelle endringer i verdien eller levetiden til anleggsmidlet må gjøres hver for seg.</span><span class="sxs-lookup"><span data-stu-id="62fe1-106">Any changes to the fixed asset value or service life must be made separately.</span></span>   
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 84b8f08c5e72d3bae597d78cd8f1f77d59355917
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f060346308e7ee1191d0769664648cfe72c22b21
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-purchase-agreement"></a><span data-ttu-id="4bc1b-103">Opprette en kjøpsavtale</span><span class="sxs-lookup"><span data-stu-id="4bc1b-103">Create a purchase agreement</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4bc1b-104">Denne prosedyren fører deg gjennom oppretting av en kjøpsavtale.</span><span class="sxs-lookup"><span data-stu-id="4bc1b-104">This procedure guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="4bc1b-105">Dette gjøres vanligvis av en innkjøpssjef.</span><span class="sxs-lookup"><span data-stu-id="4bc1b-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="4bc1b-106">Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="4bc1b-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="4bc1b-107">Du må ha definert kjøpsavtaleklassifiseringer før du starter.</span><span class="sxs-lookup"><span data-stu-id="4bc1b-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="4bc1b-108">Når du har opprettet en avtale, kan du bruke den når du oppretter en bestilling, og dette kopierer kjøpsavtalebetingelsene til hodet og linjene i rekkefølgen som er påvirket av avtalen.</span><span class="sxs-lookup"><span data-stu-id="4bc1b-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
 

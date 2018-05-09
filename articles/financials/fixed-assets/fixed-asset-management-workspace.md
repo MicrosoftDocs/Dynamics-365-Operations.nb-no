@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2b07f9d971dc152e9168b9867e70c59481325284
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 70c7f7a9ca119abbfedf8e09e9994b2a904dc421
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-management-workspace"></a><span data-ttu-id="ee911-105">Arbeidsområde for anleggsmiddelbehandling</span><span class="sxs-lookup"><span data-stu-id="ee911-105">Fixed asset management workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ee911-106">Arbeidsområdet **Anleggsmiddelbehandling** viser informasjon som er knyttet til anleggsmidler som er angitt i systemet.</span><span class="sxs-lookup"><span data-stu-id="ee911-106">The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system.</span></span> <span data-ttu-id="ee911-107">Arbeidsområdet inneholder en sammendrag-visning og en analysevisning.</span><span class="sxs-lookup"><span data-stu-id="ee911-107">This workspace includes a summary view and an analytics view.</span></span> <span data-ttu-id="ee911-108">Kategorien **Mitt arbeid** viser sammendragsfliser, anleggsmiddeldetaljer og relatert informasjon om anleggsmidler i det gjeldende firmaet.</span><span class="sxs-lookup"><span data-stu-id="ee911-108">The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company.</span></span> <span data-ttu-id="ee911-109">Du kan også legge til analyse i analysedeen av Power BI, direkte i arbeidsområdet.</span><span class="sxs-lookup"><span data-stu-id="ee911-109">You can also add analytics to the Power BI analytics section directly in the workspace.</span></span> <span data-ttu-id="ee911-110">Kategorien **Analytics – alle firmaer** bruker funksjoner i Microsoft Power BI for å vise bilder som er knyttet til anleggsmidler i alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="ee911-110">The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.</span></span>
 

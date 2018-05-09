@@ -16,15 +16,15 @@ ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1bd87a5c65fb01e0a277d7bd790e2b86686fbf55
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5bb66578ee6118eeffeb3a89b84077e56c4fff11
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="f98ba-103">Definere overvåkingspolicyer for kildedokumenter</span><span class="sxs-lookup"><span data-stu-id="f98ba-103">Define audit policies for source documents</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f98ba-104">Denne fremgangsmåten viser hvordan du angir og kjører overvåkingspolicyregler.</span><span class="sxs-lookup"><span data-stu-id="f98ba-104">This procedure shows how to set up and run audit policy rules.</span></span> <span data-ttu-id="f98ba-105">Eksemplet bruker reiseregninger med utgiftstypen hotell.</span><span class="sxs-lookup"><span data-stu-id="f98ba-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="f98ba-106">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="f98ba-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="f98ba-107">Revisorrollen inneholder de riktige tillatelsene for å kunne utføre disse oppgavene.</span><span class="sxs-lookup"><span data-stu-id="f98ba-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
 

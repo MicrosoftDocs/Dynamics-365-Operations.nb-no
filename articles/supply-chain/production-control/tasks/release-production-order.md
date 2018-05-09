@@ -16,15 +16,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c17b9baf8efc67c5875fd31e4e39a449442efb79
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77dc4f1908836498568251c75efde930b4f88fcf
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="release-a-production-order"></a><span data-ttu-id="9921c-103">Frigi en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="9921c-103">Release a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9921c-104">Denne fremgangsmåten viser hvordan du frigir en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="9921c-104">This procedure shows how to release a production order.</span></span> <span data-ttu-id="9921c-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="9921c-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9921c-106">Dette er den fjerde fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="9921c-106">This is the fourth procedure out of seven which explains the production order lifecycle.</span></span>
 

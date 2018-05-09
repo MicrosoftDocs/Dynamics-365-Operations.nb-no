@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 841b2d20d0e2c828f0a8c49d744ee05f71bf73e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 730bb51547bd161a30dcae96b0fe716a916ea25c
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-close"></a><span data-ttu-id="1ef79-103">Beholdningslukking</span><span class="sxs-lookup"><span data-stu-id="1ef79-103">Inventory close</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1ef79-104">Som en del av prosessen for å utligne avgangstransaksjoner med mottakstransaksjoner, kan du også velge å få økonomimodulen oppdatert for å gjenspeile justeringene som er gjort.</span><span class="sxs-lookup"><span data-stu-id="1ef79-104">As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.</span></span>
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 04/13/2018
 ## <a name="reversing-a-completed-inventory-close"></a><span data-ttu-id="1ef79-155">Tilbakeføre en fullført lagerlukking</span><span class="sxs-lookup"><span data-stu-id="1ef79-155">Reversing a completed inventory close</span></span>
 <span data-ttu-id="1ef79-156">Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for å sette utligninger tilbake til statusen de hadde før justeringer ble utført.</span><span class="sxs-lookup"><span data-stu-id="1ef79-156">Occasionally, you might have to reverse a completed inventory close to return settlements to the state that they had before adjustments were made.</span></span> <span data-ttu-id="1ef79-157">Når du tilbakefører en fullført lagerlukking, blir lageret åpnet på nytt for å muliggjøre postering i perioden som lagerlukkingen dekker.</span><span class="sxs-lookup"><span data-stu-id="1ef79-157">When you reverse a completed inventory close, inventory is reopened to enable posting in the period that the inventory close covers.</span></span> <span data-ttu-id="1ef79-158">Relaterte endringer kan også foretas i økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="1ef79-158">Related changes might also be made in the general ledger.</span></span> <span data-ttu-id="1ef79-159">Når du er ferdig med å gjøre justeringer, kan du kjøre lagerlukking på nytt for perioden du arbeider med.</span><span class="sxs-lookup"><span data-stu-id="1ef79-159">After you've finished making adjustments, you can run inventory close again for the period that you're working with.</span></span> 
 
-<span data-ttu-id="1ef79-160">**Obs!**Bare den siste lagerperioden som ble lukket, kan åpnes på nytt.</span><span class="sxs-lookup"><span data-stu-id="1ef79-160">**Note:** Only the last inventory period that was closed can be reopened.</span></span> <span data-ttu-id="1ef79-161">For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.</span><span class="sxs-lookup"><span data-stu-id="1ef79-161">To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.</span></span>
+<span data-ttu-id="1ef79-160">**Obs!** Bare den siste lagerperioden som ble lukket, kan åpnes på nytt.</span><span class="sxs-lookup"><span data-stu-id="1ef79-160">**Note:** Only the last inventory period that was closed can be reopened.</span></span> <span data-ttu-id="1ef79-161">For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.</span><span class="sxs-lookup"><span data-stu-id="1ef79-161">To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.</span></span>
 
 
 

@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ba4d752304f2bd2e5b53dc3353bed3df34044d12
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a224d1d9d72b39052a6bf21b4e496ef8c02bb2fd
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-cost-accounting-ledger"></a><span data-ttu-id="c77a9-103">Opprette en kostnadsregnskapsfinans</span><span class="sxs-lookup"><span data-stu-id="c77a9-103">Create a cost accounting ledger</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c77a9-104">Kostnadsregnskapsfinans representerer den generelle rapporteringsenheten.</span><span class="sxs-lookup"><span data-stu-id="c77a9-104">A cost accounting ledger represents the overall reporting unit.</span></span> <span data-ttu-id="c77a9-105">Det defineres av en kostnadselementdimensjon, statistisk dimensjon, regnskapskalender og valuta.</span><span class="sxs-lookup"><span data-stu-id="c77a9-105">It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency.</span></span> <span data-ttu-id="c77a9-106">Det er agnostisk til konseptet med juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="c77a9-106">It is agnostic to the concept of legal entities.</span></span> <span data-ttu-id="c77a9-107">En juridisk enhet og dens data kan knyttes til mange poster i kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="c77a9-107">A legal entity and its data can be associated with many cost accounting ledgers.</span></span> <span data-ttu-id="c77a9-108">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="c77a9-108">This recording uses the USP2 demo data company.</span></span>
 

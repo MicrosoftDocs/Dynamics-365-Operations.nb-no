@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7900f7404152dd982b825d25ec6c557c74dc5cd3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 43227e495ba25610718a7914167cd6dfb19976c5
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="total-cost-allocation-method"></a><span data-ttu-id="f7dce-104">Metode for total kostnadsfordeling</span><span class="sxs-lookup"><span data-stu-id="f7dce-104">Total cost allocation method</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f7dce-105">Dette emnet inneholder retningslinjer for bruk av total kostnadsfordeling (TKF).</span><span class="sxs-lookup"><span data-stu-id="f7dce-105">This topic provides guidelines for using total cost allocation (TCA).</span></span> <span data-ttu-id="f7dce-106">TKF er en metode for å beregne kostnaden mellom hovedformelvaren for en partiordre og koproduktene som er definert for formelen.</span><span class="sxs-lookup"><span data-stu-id="f7dce-106">TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.</span></span>
 

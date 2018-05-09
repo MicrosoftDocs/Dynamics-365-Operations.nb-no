@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16b6510e4bc9e844e4bdda372733507937c27315
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3fd607bf186d82c9fbacbc208f277d2fdc4dbcb9
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a><span data-ttu-id="375d6-103">Opprette et foreløpig budsjett for offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="375d6-103">Create a preliminary budget for public sector</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="375d6-104">Du kan opprette foreløpige budsjettregisteroppføringer for en bestemt budsjettmodell og dimensjonsverdier.</span><span class="sxs-lookup"><span data-stu-id="375d6-104">You can create preliminary budget register entries for a specific budget model and dimension values.</span></span> <span data-ttu-id="375d6-105">Når budsjettet er godkjent, kan du opprette opprinnelige budsjettregisteroppføringer.</span><span class="sxs-lookup"><span data-stu-id="375d6-105">After the actual budget is approved, you can create original budget register entries.</span></span> <span data-ttu-id="375d6-106">Denne prosedyren ble opprettet med demonstrasjonsfirmadataene for PSUS i partisjonen for offentlig sektor.</span><span class="sxs-lookup"><span data-stu-id="375d6-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

@@ -20,20 +20,20 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 121b5e15912b9ecbf26f8831fdaef7637390cdd0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78a97e1ff893ecfb864052b79e56ad48efa5191c
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="adjust-on-hand-inventory-cost-values"></a><span data-ttu-id="af5d9-103">Justere kostnadsverdier for lagerbeholdning</span><span class="sxs-lookup"><span data-stu-id="af5d9-103">Adjust on-hand inventory cost values</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="af5d9-104">Bruk siden Justering av lagerbeholdning til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt.</span><span class="sxs-lookup"><span data-stu-id="af5d9-104">Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.</span></span>
 
-<span data-ttu-id="af5d9-105">Du kan bruke siden **Justering av lagerbeholdning** til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt.</span><span class="sxs-lookup"><span data-stu-id="af5d9-105">You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run.</span></span> <span data-ttu-id="af5d9-106">**Obs!** Du åpner siden **Justering av lagerbeholdning** ved å velge posten for en fullført lagerlukkingsprosess på siden **Lukking og justering** og deretter klikke **Justering** &gt; **Beholdning**.</span><span class="sxs-lookup"><span data-stu-id="af5d9-106">**Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**.</span></span> <span data-ttu-id="af5d9-107">**Eksempel:** Du har følgende transaksjoner i februar:</span><span class="sxs-lookup"><span data-stu-id="af5d9-107">**Example:** You have the following transactions in February:</span></span>
+<span data-ttu-id="af5d9-105">Du kan bruke siden **Justering av lagerbeholdning** til å justere kostnadsverdien til lagerbeholdningsantall etter at en lagerlukkingsprosess er kjørt.</span><span class="sxs-lookup"><span data-stu-id="af5d9-105">You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run.</span></span> <span data-ttu-id="af5d9-106">**Obs!**  Du åpner siden **Justering av lagerbeholdning** ved å velge posten for en fullført lagerlukkingsprosess på siden **Lukking og justering** og deretter klikke **Justering** &gt; **Beholdning**.</span><span class="sxs-lookup"><span data-stu-id="af5d9-106">**Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**.</span></span> <span data-ttu-id="af5d9-107">**Eksempel:** Du har følgende transaksjoner i februar:</span><span class="sxs-lookup"><span data-stu-id="af5d9-107">**Example:** You have the following transactions in February:</span></span>
 
 -   <span data-ttu-id="af5d9-108">1. februar: Et økonomisk lagermottak av et antall på 2 til en kostnad på USD 10,00</span><span class="sxs-lookup"><span data-stu-id="af5d9-108">February 1: An inventory financial receipt for a quantity of 2 at a cost of USD 10.00</span></span>
 -   <span data-ttu-id="af5d9-109">5. februar: Et økonomisk lagermottak av et antall på 1 til en kostnad på USD 13,00</span><span class="sxs-lookup"><span data-stu-id="af5d9-109">February 5: An inventory financial receipt for a quantity of 1 at a cost of USD 13.00</span></span>

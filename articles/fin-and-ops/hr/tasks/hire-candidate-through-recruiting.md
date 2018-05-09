@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: beed4c261b887ce545d431bbd9a413bd1745bc0c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3146c74a0749bf7a29eba1e079b9b15cab92393b
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="56e12-103">Ansette en kandidat via rekruttering</span><span class="sxs-lookup"><span data-stu-id="56e12-103">Hire a candidate through recruiting</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="56e12-104">Dette gjør det mulig for en bemanningskonsulent å ansette en søker som sendte en søknad ved hjelp av et bestemt rekrutteringsprosjekt.</span><span class="sxs-lookup"><span data-stu-id="56e12-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="56e12-105">Når du ansetter en søker gjennom et rekrutteringsprosjekt, opprettes en ny arbeiderpost, og søkerens post får statusen Ansatt.</span><span class="sxs-lookup"><span data-stu-id="56e12-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="56e12-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="56e12-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="56e12-107">Hvis du vil fullføre denne prosedyren, kan du gå til Personale > Rekruttering > Søknader > Søknader</span><span class="sxs-lookup"><span data-stu-id="56e12-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 

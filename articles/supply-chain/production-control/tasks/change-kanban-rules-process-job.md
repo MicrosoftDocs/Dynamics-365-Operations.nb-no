@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 55498a68b3f03ed8c360b479c6dcbd607a186e13
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 22423af6396a8845687c279f9992f855f73d036a
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="change-kanban-rules-for-a-process-job"></a><span data-ttu-id="fee74-103">Endre Kanban-regler for en prosessjobb</span><span class="sxs-lookup"><span data-stu-id="fee74-103">Change kanban rules for a process job</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="fee74-104">Denne prosedyren fokuserer på å endre den brukte Kanban-regelen for en gitt Kanban.</span><span class="sxs-lookup"><span data-stu-id="fee74-104">This procedure focuses on changing the used kanban rule for a given kanban.</span></span> <span data-ttu-id="fee74-105">Dette er nyttig for å nivåbelaste ressurser eller ved nedbryting.</span><span class="sxs-lookup"><span data-stu-id="fee74-105">This is useful to level load resources or in case of breakdown.</span></span> <span data-ttu-id="fee74-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="fee74-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="fee74-107">Denne prosedyren er ment for planleggeren, som arbeider i et lean manufacturing-selskap, og som er ansvarlig for verdistrømmen.</span><span class="sxs-lookup"><span data-stu-id="fee74-107">This procedure is intended for the planner, working at a lean manufacturing company, responsible for the value stream.</span></span>
 

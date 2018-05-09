@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30bff74da8399ddc15f2bc84e83887c8b5e60570
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 09a5bbe7601248fd2635fda4a0d87973a6e1ceba
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="f373f-103">Definere en prosess for minimums-/maksimumsetterfylling</span><span class="sxs-lookup"><span data-stu-id="f373f-103">Set up a min-max replenishment process</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f373f-104">Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som bruker strategien for minimums-/maksimumsetterfylling.</span><span class="sxs-lookup"><span data-stu-id="f373f-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="f373f-105">Når lagernivået synker til under minimumsnivået, opprettes det arbeid for å etterfylle lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="f373f-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="f373f-106">Fremgangsmåten viser også hvordan du bruker faste plukklokasjoner for å tillate etterfylling selv om lagernivået synker til under minimumsnivået, og hvordan du aktiverer at etterfyllingsprosessen skal kjøres regelmessig ved hjelp av en satsvis jobb.</span><span class="sxs-lookup"><span data-stu-id="f373f-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="f373f-107">Disse oppgavene vil vanligvis utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="f373f-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="f373f-108">Du kan kjøre denne prosedyren i USMF-demodatafirmaet ved hjelp av eksempelverdiene i notatene, eller du kan kjøre den på dine egne data.</span><span class="sxs-lookup"><span data-stu-id="f373f-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="f373f-109">Hvis du bruker dine egne data, må du kontrollere at du har et lager som er aktivert for lagerstyringsprosesser.</span><span class="sxs-lookup"><span data-stu-id="f373f-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 

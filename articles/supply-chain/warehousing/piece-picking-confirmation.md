@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 31b285f06ea8b7951f2439637a4fccb83db31578
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="99f82-103">Stykkplukkingsbekreftelse</span><span class="sxs-lookup"><span data-stu-id="99f82-103">Piece picking confirmation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="99f82-104">Med stykkplukking kan du bekrefte hver del av lagerbeholdningen gjennom plukkings- og tellingsarbeid på en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="99f82-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="99f82-105">For plukking kan du kontrollere hvor mye arbeid som skal behandles opptil antallet som er angitt på arbeid som skal plukkes.</span><span class="sxs-lookup"><span data-stu-id="99f82-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="99f82-106">For opptellingsarbeid kan du skanne lageret du teller opp, og spore totalbeløpet.</span><span class="sxs-lookup"><span data-stu-id="99f82-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 

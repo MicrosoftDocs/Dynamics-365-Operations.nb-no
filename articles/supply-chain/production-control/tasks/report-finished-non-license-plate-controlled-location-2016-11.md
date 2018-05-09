@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9a7901b307cffb81cce351e4e45ac8f73f328b02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9e4cf2b2d4fe1170c75514a1e554d54dc8c32140
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a><span data-ttu-id="bb3d3-103">Ferdigmelde til en skiltkontrollert lokasjon </span><span class="sxs-lookup"><span data-stu-id="bb3d3-103">Report as finished to a plate-controlled location</span></span> 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bb3d3-104">Denne oppgaveveiledningen viser et eksempel på rapportering som ferdig til en lokasjon som ikke er nummerskiltkontrollert.</span><span class="sxs-lookup"><span data-stu-id="bb3d3-104">This task guide shows an example of reporting as finished to a location that isn't license plate–controlled.</span></span> <span data-ttu-id="bb3d3-105">En gjeldende arbeidspolicy er en forutsetning for denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="bb3d3-105">An applicable work policy is the prerequisite for this task.</span></span> <span data-ttu-id="bb3d3-106">En tidligere oppgaveveiledning viste oppsettet av arbeidspolicyen.</span><span class="sxs-lookup"><span data-stu-id="bb3d3-106">A previous task guide showed the setup of the work policy.</span></span> <span data-ttu-id="bb3d3-107">Denne oppgaveveiledningen krever Dynamics AX 7.0.1 eller senere.</span><span class="sxs-lookup"><span data-stu-id="bb3d3-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
 

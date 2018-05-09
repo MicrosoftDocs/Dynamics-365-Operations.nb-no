@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 953520ec7525d85baee6baf0b70930e52120d6c0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b79362942663583b5f438e0a54fd4960ca7ef919
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a><span data-ttu-id="47f55-103">Definere arbeidsceller for lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="47f55-103">Define lean manufacturing work cells</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="47f55-104">En arbeidscelle er en bestemt type ressursgruppe som kan brukes i lean manufacturing-prosessaktiviteter.</span><span class="sxs-lookup"><span data-stu-id="47f55-104">A work cell is a specific form of resource groups that can be used in lean manufacturing process activities.</span></span> <span data-ttu-id="47f55-105">Arbeidsceller har innleverings- og utleveringssteder og en kapasitetsdefinisjon basert på en produksjonsflytmodell.</span><span class="sxs-lookup"><span data-stu-id="47f55-105">Work cells have input and output locations and a capacity definition based on a production flow model.</span></span> <span data-ttu-id="47f55-106">Hvis du vil lære mer om de grunnleggende begrepene for arbeidsceller og kapasitetsberegninger for lean manufacturing, kan du se de tekniske dokumentene for Lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="47f55-106">To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing.</span></span> <span data-ttu-id="47f55-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne prosedyren</span><span class="sxs-lookup"><span data-stu-id="47f55-107">The demo data company used to create this procedure is USMF</span></span>
 

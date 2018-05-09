@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c035f73fb35c6390be3c665c2645b1fdc411650
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a><span data-ttu-id="08ad0-103">Leverandørsamarbeid med eksterne leverandører</span><span class="sxs-lookup"><span data-stu-id="08ad0-103">Vendor collaboration with external vendors</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="08ad0-104">Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="08ad0-104">The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="08ad0-105">Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren.</span><span class="sxs-lookup"><span data-stu-id="08ad0-105">It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data.</span></span> <span data-ttu-id="08ad0-106">Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager.</span><span class="sxs-lookup"><span data-stu-id="08ad0-106">This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory.</span></span> <span data-ttu-id="08ad0-107">Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.</span><span class="sxs-lookup"><span data-stu-id="08ad0-107">It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.</span></span>
 

@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 36c3f9f0afe91c2326bafcbdcc636ae4b3406b01
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d9994b527bde6d27060dabc2d422d1ce9187a3fb
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a><span data-ttu-id="48d36-104">FIFO med fysisk verdi og merking</span><span class="sxs-lookup"><span data-stu-id="48d36-104">FIFO with physical value and marking</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="48d36-105">FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først.</span><span class="sxs-lookup"><span data-stu-id="48d36-105">First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first.</span></span> <span data-ttu-id="48d36-106">Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="48d36-106">Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction.</span></span> 
 

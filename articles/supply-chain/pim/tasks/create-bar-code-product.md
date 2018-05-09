@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6a55e25205bc7e996b6ab8c6915e2e86b758ee7a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a3434c7f96122ec7aa2f7f9b0eefbe12d089b4f3
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="25b05-103">Opprette en strekkode for et produkt</span><span class="sxs-lookup"><span data-stu-id="25b05-103">Create a bar code for a product</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="25b05-104">Denne fremgangsmåten viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel.</span><span class="sxs-lookup"><span data-stu-id="25b05-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="25b05-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="25b05-105">The demo data company used to create this procedure is USMF.</span></span>
 

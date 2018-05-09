@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 832dd57301f7a42dd8d05db8040255374f8fddad
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: da8292267961b9eb2f4f98373ffa5fec89ccd0ef
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-configuration-groups"></a><span data-ttu-id="587a3-103">Definere konfigurasjonsgrupper</span><span class="sxs-lookup"><span data-stu-id="587a3-103">Define configuration groups</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="587a3-104">Denne fremgangsmåten viser hvordan du definerer produktkonfigurasjonsgrupper ved å opprette to grupper i demodatafirmaet USMF Company.</span><span class="sxs-lookup"><span data-stu-id="587a3-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="587a3-105">Dette er den fjerde fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="587a3-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 

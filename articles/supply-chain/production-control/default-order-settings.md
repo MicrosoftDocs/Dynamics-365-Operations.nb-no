@@ -20,18 +20,18 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 06760d84cf5152f24e374cf3fb1bbea5564bbb42
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 89021e0036b5483d914e40b32fcf384fa39decbd
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a><span data-ttu-id="0266f-103">Standard ordreinnstillinger for dimensjoner og produktvarianter</span><span class="sxs-lookup"><span data-stu-id="0266f-103">Default order settings for dimensions and product variants</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="0266f-104">Standard ordreinnstillinger i Microsoft Dynamics 365 for Finance and Operations, definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen.</span><span class="sxs-lookup"><span data-stu-id="0266f-104">Default order settings in Microsoft Dynamics 365 for Finance and Operations define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method.</span></span> <span data-ttu-id="0266f-105">Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer.</span><span class="sxs-lookup"><span data-stu-id="0266f-105">Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders.</span></span> <span data-ttu-id="0266f-106">Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon.</span><span class="sxs-lookup"><span data-stu-id="0266f-106">Default order settings can be item specific, site specific, product variant specific, or product dimension specific.</span></span>
 

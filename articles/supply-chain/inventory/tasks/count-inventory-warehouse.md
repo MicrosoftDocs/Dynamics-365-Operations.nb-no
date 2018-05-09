@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9832a60ee703878701927b66b0b4b63cb7efb985
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7813f9add1c8cf3c2f22aff826daf22f54f348e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="24ab8-103">Lageropptelling på et lager</span><span class="sxs-lookup"><span data-stu-id="24ab8-103">Count inventory in a warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="24ab8-104">Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lageropptellingsjournal for å telle en bestemt vare på en lokasjon i lageret.</span><span class="sxs-lookup"><span data-stu-id="24ab8-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="24ab8-105">Fremgangsmåten gjelder for "grunnleggende lageraktiviteter"-funksjoner, tilgjengelige i lagerstyringsmodulen, ikke for lagerstyringsfunksjonaliteten som er tilgjengelig i lagerstyringsmodulen.</span><span class="sxs-lookup"><span data-stu-id="24ab8-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="24ab8-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="24ab8-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="24ab8-107">Hvis du bruker dine egne data, må du kontrollere at du har produkter og lokasjoner definert, og at du har opprettet et beholdningsjournalnavn for opptellingsjournaler.</span><span class="sxs-lookup"><span data-stu-id="24ab8-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="24ab8-108">Beholdningsopptelling utføres vanligvis av en lageransatt.</span><span class="sxs-lookup"><span data-stu-id="24ab8-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 

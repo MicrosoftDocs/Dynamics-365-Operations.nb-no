@@ -19,16 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aa80976e539e88af8b157257d043d410ede49e8d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0148bd65bad2b5c947287d18289c08c7ef7f476f
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="posting-definitions"></a><span data-ttu-id="3276b-104">Posteringsdefinisjoner</span><span class="sxs-lookup"><span data-stu-id="3276b-104">Posting definitions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="3276b-105">Denne artikkelen inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem.</span><span class="sxs-lookup"><span data-stu-id="3276b-105">This article provides information about posting definitions, and how to define and link them.</span></span> <span data-ttu-id="3276b-106">Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer.</span><span class="sxs-lookup"><span data-stu-id="3276b-106">For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.</span></span>
 

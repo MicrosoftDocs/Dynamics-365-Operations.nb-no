@@ -20,16 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d2177ddaff8ff6dcef106a008842149c381c00db
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0b54e7f6f4b0dfb994d271aaeb547e27bf03e294
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a><span data-ttu-id="59db2-103">Definere et lager ved hjelp av en mal for lagerkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="59db2-103">Set up a warehouse by using a warehouse configuration template</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="59db2-104">Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="59db2-104">This topic explains how to set up a warehouse by using a warehouse configuration template.</span></span> <span data-ttu-id="59db2-105">Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke.</span><span class="sxs-lookup"><span data-stu-id="59db2-105">There are several predefined configuration templates that you can use.</span></span> <span data-ttu-id="59db2-106">Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="59db2-106">For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
 

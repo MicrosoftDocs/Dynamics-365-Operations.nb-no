@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adecf9b2ea29abaee378f1c02c64551c3aeede6d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e73295698a17b7500db40820dd9603855810ca3a
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-process-a-conformance"></a><span data-ttu-id="65d6d-103">Opprette og behandle et avvik</span><span class="sxs-lookup"><span data-stu-id="65d6d-103">Create and process a conformance</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="65d6d-104">Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="65d6d-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="65d6d-105">Du kan kjøre denne registreringen i USMF demofirmaet, og du kan bruke de foreslåtte verdiene.</span><span class="sxs-lookup"><span data-stu-id="65d6d-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="65d6d-106">Denne prosedyren utføres vanligvis av en kvalitetsassistent.</span><span class="sxs-lookup"><span data-stu-id="65d6d-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="65d6d-107">Kjør oppgaveregistreringen "Kontrollere varekvaliteten" er en forutsetning.</span><span class="sxs-lookup"><span data-stu-id="65d6d-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="65d6d-108">Hvis du vil behandle godkjenningen av et avvik, må brukeren som kjører oppgaveregistreringen ha en "Navn"-verdi som er tilordnet på siden Brukere.</span><span class="sxs-lookup"><span data-stu-id="65d6d-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="65d6d-109">Hvis du vil bruke merknader i dokumentet, må brukeren også ha Dokumenthåndtering aktivert i brukeralternativene.</span><span class="sxs-lookup"><span data-stu-id="65d6d-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69b9c5590e6f9311696bbbed2e63a6eeba2a90bf
-ms.openlocfilehash: 3f527911183a6e9b335f30d472ff57144e6a5aff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c376273f901f0c860aea92db587a1b156ab079b5
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="requests-for-quotation-rfqs"></a><span data-ttu-id="071a4-104">Tilbudsforespørsler (RFQ-er)</span><span class="sxs-lookup"><span data-stu-id="071a4-104">Requests for quotation (RFQs)</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="071a4-105">Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er).</span><span class="sxs-lookup"><span data-stu-id="071a4-105">This topic provides an overview of requests for quotation (RFQs).</span></span> <span data-ttu-id="071a4-106">Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe.</span><span class="sxs-lookup"><span data-stu-id="071a4-106">Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.</span></span> <span data-ttu-id="071a4-107">I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir.</span><span class="sxs-lookup"><span data-stu-id="071a4-107">In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify.</span></span>
 <span data-ttu-id="071a4-108">Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.</span><span class="sxs-lookup"><span data-stu-id="071a4-108">You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.</span></span>

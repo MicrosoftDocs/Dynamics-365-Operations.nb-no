@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 66c0f41e1c98cf84b6a0afff5ee55e7c15fecd2d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2bda068c71b768eb0caadfdbf8b4fe5620bd8eea
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-procurement-catalog"></a><span data-ttu-id="89733-103">Opprette en innkjøpskatalog</span><span class="sxs-lookup"><span data-stu-id="89733-103">Create a procurement catalog</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="89733-104">Denne veiledningen viser hvordan du oppretter en innkjøpskatalog.</span><span class="sxs-lookup"><span data-stu-id="89733-104">This guide shows you how to create a procurement catalog.</span></span> <span data-ttu-id="89733-105">Denne oppgaven vil vanligvis utføres av en innkjøpsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="89733-105">This task would typically be carried out by a procurement professional.</span></span> <span data-ttu-id="89733-106">Du lærer også hvordan ansatte kan bruke katalogen når de oppretter en rekvisisjon.</span><span class="sxs-lookup"><span data-stu-id="89733-106">You will also learn how employees can use the catalog when they create a requisition.</span></span> <span data-ttu-id="89733-107">Før du kan opprette en katalog, må det være et innkjøpskategorihierarki i systemet.</span><span class="sxs-lookup"><span data-stu-id="89733-107">Before you can create a catalog, there must be a procurement category hierarchy in your system.</span></span> <span data-ttu-id="89733-108">Hierarkiet arves av den nye katalogen, sammen med alle produktene som er i hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="89733-108">The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy.</span></span> <span data-ttu-id="89733-109">Du kan bruke denne veiledningen i demonstrasjonsdatafirmaet USMF, der innkjøpskategorihierarkiet er tilgjengelig, i tillegg til eksemplene som brukes i fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="89733-109">You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.</span></span>
 

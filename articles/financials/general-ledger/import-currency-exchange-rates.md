@@ -19,16 +19,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 662a649f20fa4e22d83d22b651ec8bcdd69f8028
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="import-currency-exchange-rates"></a><span data-ttu-id="a612c-105">Importer valutakurser</span><span class="sxs-lookup"><span data-stu-id="a612c-105">Import currency exchange rates</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a612c-106">Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig å konvertere den utenlandske valutaen til den lokale valutaen.</span><span class="sxs-lookup"><span data-stu-id="a612c-106">If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency.</span></span> <span data-ttu-id="a612c-107">Dette betyr at det kreves oppdaterte valutakurser for ulike valutaer.</span><span class="sxs-lookup"><span data-stu-id="a612c-107">This means that up-to-date exchange rates for different currencies are required.</span></span> <span data-ttu-id="a612c-108">Dette emnet gir en oversikt over de nødvendige innstillingene og behandling for import av referansekurser for utenlandsk valuta publisert på Internett ved valutakursleverandører, for eksempel den europeiske sentralbanken og sentralbanken i Russland.</span><span class="sxs-lookup"><span data-stu-id="a612c-108">This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.</span></span>
 

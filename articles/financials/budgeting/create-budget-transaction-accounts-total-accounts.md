@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 85b778caf209c2fb1845665169e08210bfeb45c1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3b7c8031c40cf0ce3072577ac936aecc5de2a810
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-budget-from-transaction-accounts-and-total-accounts"></a><span data-ttu-id="18214-104">Opprette et budsjett fra transaksjonskontoer og totalkontoer</span><span class="sxs-lookup"><span data-stu-id="18214-104">Create a budget from transaction accounts and total accounts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="18214-105">Denne artikkelen inneholder en oversikt over prosessen for å opprette budsjetter basert på totalkontoer.</span><span class="sxs-lookup"><span data-stu-id="18214-105">This article provides an overview of the process for creating budgets based on total accounts.</span></span> <span data-ttu-id="18214-106">Den beskriver også hvordan du aktiverer budsjettkontroll for totalkontoer, hvis budsjettkontroll er nødvendig.</span><span class="sxs-lookup"><span data-stu-id="18214-106">It also explains how to turn on budget control for total accounts, if budget control is required.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8ac8ebede5c333835b0974843a69e70e51028117
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 05ac3b28c4d0806f71f1e0cb069c0d48137a4332
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="moving-average"></a><span data-ttu-id="cc0c0-105">Glidende gjennomsnitt</span><span class="sxs-lookup"><span data-stu-id="cc0c0-105">Moving average</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cc0c0-106">Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres.</span><span class="sxs-lookup"><span data-stu-id="cc0c0-106">Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does.</span></span> <span data-ttu-id="cc0c0-107">Forskjellen kapitaliseres og baseres på en proporsjonal beregning.</span><span class="sxs-lookup"><span data-stu-id="cc0c0-107">The difference is capitalized and is based on a proportional calculation.</span></span> <span data-ttu-id="cc0c0-108">Beløpet som gjenstår utgiftsføres.</span><span class="sxs-lookup"><span data-stu-id="cc0c0-108">The amount that remains is expensed.</span></span> 
 

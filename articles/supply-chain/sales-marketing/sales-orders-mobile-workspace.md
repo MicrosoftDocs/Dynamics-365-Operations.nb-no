@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1a02c435814e446c6ee5a25ed75e1359455b8f6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 03e8908ecb78b4f72dae8426b0165f9350d5fe85
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-orders-mobile-workspace"></a><span data-ttu-id="cf63c-104">Det mobile arbeidsområdet Salgsordrer</span><span class="sxs-lookup"><span data-stu-id="cf63c-104">Sales orders mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cf63c-105">Dette emnet gir informasjon om det mobile arbeidsområdet **Salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="cf63c-105">This topic provides information about the **Sales orders** mobile workspace.</span></span> <span data-ttu-id="cf63c-106">Dette arbeidsområdet holder deg oppdatert om salgsordrene hvor som helst og når som helst.</span><span class="sxs-lookup"><span data-stu-id="cf63c-106">This workspace helps you stay up to date about your sales orders anywhere and anytime.</span></span> 
 
