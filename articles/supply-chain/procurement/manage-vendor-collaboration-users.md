@@ -28,7 +28,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="manage-vendor-collaboration-users"></a>Administrere brukere av leverandørsamarbeid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan be om klargjøring av nye brukere for leverandørsamarbeid og hvordan du legger til nye kontakter for leverandørsamarbeid. 
 

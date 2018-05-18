@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskapsåret
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer til et nytt regnskapsår.
 

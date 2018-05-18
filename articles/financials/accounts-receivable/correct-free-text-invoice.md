@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correct-a-free-text-invoice"></a>Korrigere en fritekstfaktura
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
 

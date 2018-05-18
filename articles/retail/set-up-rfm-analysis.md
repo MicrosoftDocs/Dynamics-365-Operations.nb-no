@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Konfigurere RFM-analyse
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om regnskapsdistribusjoner og beskriver alternativene som er tilgjengelige for behandling av dem. Regnskapsdistribusjoner brukes til å tildele pengebeløp for et kildedokument til bestemte finanskontoer. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet for elektronisk rapportering (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 De fremgangsmåten nedenfor forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan vedlikeholde en formatkonfigurasjon for elektronisk rapportering (ER). Denne fremgangsmåten beskriver hvordan en egendefinert versjon av et format kan opprettes basert på formatet som mottas fra en konfigurasjonsleverandør (CP). Den forklarer også hvordan du bruker en ny, basisversjon av dette formatet.
 

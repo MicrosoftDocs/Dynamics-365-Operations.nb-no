@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Definere importprosess for avansert bankavstemming
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag. 
 

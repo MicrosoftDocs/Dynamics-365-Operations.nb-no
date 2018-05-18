@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Startside for kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger. 
 

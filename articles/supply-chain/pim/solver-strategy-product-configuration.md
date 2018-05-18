@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan bruke problemløserstrategien til å forbedre ytelsen til produktkonfigurasjon.
 

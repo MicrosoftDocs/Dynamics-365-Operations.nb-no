@@ -28,7 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester. 
 

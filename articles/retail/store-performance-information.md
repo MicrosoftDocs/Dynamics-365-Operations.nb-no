@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-store-performance"></a>Analysere butikkytelse
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Microsoft Dynamics 365 for Retail. 
 

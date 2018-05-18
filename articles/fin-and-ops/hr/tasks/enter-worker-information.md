@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-worker-information"></a>Angi arbeiderinformasjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Når en bemanningskonsulent har opprettet et masseansettelsesprosjekt og generert stillingene, er neste trinn å oppgi arbeiderinformasjon for personer som blir ansatt. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Demodataene inneholder et åpent masseansettelsesprosjekt. Hvis du vil gjør dette, kan du gå til Personale > Rekruttering > Masseansettelsesprosjekter.
 

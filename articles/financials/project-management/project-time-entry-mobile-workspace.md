@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>Mobilt arbeidsområde for registrering av prosjekttid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **registrering av prosjekttid**. Dette arbeidsområdet lar brukere angi og lagre tid mot et prosjekt ved hjelp av mobilenheten.
 

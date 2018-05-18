@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-batch-attributes-for-a-product"></a>Opprette bunkeattributter for et produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du oppretter et bunkeattributt, tilordner standard verdiområder og tar med attributtet i en gruppe. Demonstrasjonsdatafirmaet som brukes til å opprette denne prosedyren, er firmaet USP2.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuell beslutning i en arbeidsflyt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene i en manuell beslutning.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="compensation-plans"></a>Kompensasjonsplaner
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Kompensasjons- og fordelsansvarlige kan bruke kompensasjonsstyring til å vedlikeholde og behandle faste og variable kompensasjonsplaner for ansatte i organisasjonen.
 

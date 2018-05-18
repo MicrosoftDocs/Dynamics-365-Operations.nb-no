@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Definere utvidet påloggingsfunksjonalitet for Skysalgssted og MPOS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet dekker alternativene for å definere utvidet pålogging for skyesalgssted og moderne salgssted for detaljhandel.
 

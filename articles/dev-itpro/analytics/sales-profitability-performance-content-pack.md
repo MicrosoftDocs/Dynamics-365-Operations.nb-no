@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Resultat av salg og fortjeneste for Power BI-innhold
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Resultat av salg og fortjeneste**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 

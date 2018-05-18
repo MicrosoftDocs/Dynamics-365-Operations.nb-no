@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Emballasjematerialer og gebyrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Emballasjematerialegebyrer betales til et resirkuleringsfirma med bestemte intervaller. Et beløp betales per vektenhet for hvert materiale som en emballasjeenhet består av. Emballasjematerialegebyrer beregnes og rapporteres, men ingen finanstransaksjoner posteres fordi gebyrene ikke regnes som avgifter som må betales til en myndighet.
 

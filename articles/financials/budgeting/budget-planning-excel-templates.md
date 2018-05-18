@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Maler for budsjettplanlegging for Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
 

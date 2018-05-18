@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en åpen arbeidsliste
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ved hjelp av et felt for systemgruppering, kan du filtrere en åpen arbeidslisten uten å måtte redigere menyelementet på mobilenheten.
 Der det er aktuelt, fungerer systemgrupperinger for å filtrere en arbeidslisten i et enkelt arbeidshodefelt. Du kan ikke bruke systemgruppering til å filtrere på linjenivåfelter.

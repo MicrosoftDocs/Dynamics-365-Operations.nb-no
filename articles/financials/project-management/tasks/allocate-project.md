@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Tildele et prosjektbudsjett eller en budsjettendring på tvers av perioder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Når du har angitt et prosjektbudsjett eller prosjektbudsjettendring og før du sender det inn til godkjenning, kan du fordele beløpene over perioder. Hvis budsjettet eller budsjettendringen blir avvist, kan du også fordele beløpene før du sender det inn på nytt. 
 

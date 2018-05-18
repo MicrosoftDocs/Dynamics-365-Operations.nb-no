@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-transaction-options"></a>Alternativer for anleggsmiddeltransaksjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Opprette prosjektbestilling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du oppretter en prosjektbestilling. Denne oppgaven bruker USSI-datasettet.
 

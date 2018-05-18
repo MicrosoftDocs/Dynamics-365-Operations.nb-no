@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Fakturasamsvar for leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
 

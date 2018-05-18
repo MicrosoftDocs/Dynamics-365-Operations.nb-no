@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Flytting av beholdning med tilknyttet arbeid i Lagerstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ved hjelp av flytting av beholdning kan du bestemme hvilke lagermedarbeidere som har tillatelse til å flytte reservert beholdning. Dette gir en fleksibilitet i regulerte lagre der du kan velge å ikke la en arbeider velge en ny plukklokasjon for plukkarbeid som allerede er opprettet. Det kan også la en lagersjef styre hvilke funksjoner noen mindre erfarne arbeidere skal ha.
 

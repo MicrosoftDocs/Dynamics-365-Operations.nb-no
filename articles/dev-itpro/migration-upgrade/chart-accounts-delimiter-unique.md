@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="chart-of-accounts-delimiter-must-be-unique"></a>Skilletegn for kontoplan må være unik
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kunne bruke samme skilletegn for kontoplanene og dimensjonsverdiene i Microsoft Dynamics AX 2012. Du kan ikke ha samme skilletegn for kontoplan og dimensjonsverdier i Dynamics 365 for Finance and Operations,. Hvis det finnes dupliserte skilletegn, kan du endre dem etter oppgraderingen. 
 

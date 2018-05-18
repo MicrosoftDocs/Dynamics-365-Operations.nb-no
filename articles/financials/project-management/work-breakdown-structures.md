@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave. En arbeidsnedbrytningsstruktur har tre viktige formål:
 

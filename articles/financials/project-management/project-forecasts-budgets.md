@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>Prosjektprognoser og budsjetter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan styre og kontrollere prosjekter i Microsoft Dynamics 365 for Finance and Operations på to måter: prosjektprognoser og prosjektbudsjetter. 
 

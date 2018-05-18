@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder eksempler på treveis samsvar.
 

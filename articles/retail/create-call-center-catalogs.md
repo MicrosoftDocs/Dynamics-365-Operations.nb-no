@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Opprette en telefonsenterkatalog
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen gir en oversikt over prosessen for å opprette en katalog for et kundesenter. 
 

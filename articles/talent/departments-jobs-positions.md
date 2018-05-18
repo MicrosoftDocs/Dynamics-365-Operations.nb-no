@@ -28,9 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene. 
 

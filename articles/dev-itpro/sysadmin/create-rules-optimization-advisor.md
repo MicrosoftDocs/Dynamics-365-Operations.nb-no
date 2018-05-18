@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Opprette regler for optimaliseringsrådgiver
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du oppretter nye regler for **optimaliseringsrådgiver**. Du kan for eksempel opprette en ny regel som identifiserer tilbudsforespørselssakene som har en tom tittel. Bruk av titler på saker gjør dem lett å kjenne igjen og søkbare. Dette eksemplet som er ganske enkelt, viser hva som kan oppnås med optimaliseringsregler. 
 

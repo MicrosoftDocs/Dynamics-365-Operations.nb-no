@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassifisere et produkt ved hjelp av kategorihierarkier
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk kategorihierarkier til å klassifisere produkter for eksport, innkjøp, salg eller andre formål. Denne oppgaven utføres vanligvis av en produktansvarlig. Eksemplet bruker produktnummer M0009 i demonstrasjonsselskapet USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 [Med kostnadsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbeide med vurderingen og regnskapet for råvarer, halvferdige varer, ferdigvarer og aktiva i arbeid. Det er prosessen med å definere, behandle og rapportere [Lagerregnskap](cost-object.md) og [Produksjonsregnskap](bom-calculations.md).
 

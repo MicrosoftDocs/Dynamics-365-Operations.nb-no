@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem. En hoveddata- eller transaksjonspost som krever en ID kalles en referanse. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse. Du kan konfigurere alle nødvendige nummerserier samtidig ved å bruke veiviseren Definer nummerserier, eller du kan opprette eller endre enkeltnummerserier ved å bruke siden Nummerserier.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="single-voucher-and-currency-revaluation-upgrade"></a>Oppgradering av enkelt bilag og revaluering av valuta
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Noen organisasjoner angi journaler som inneholder ett enkelt bilag som har mer enn én kunde eller leverandør, og de kjører også prosess for revaluering av utenlandsk valuta for kunder eller leverandører. Dette emnet beskriver fremgangsmåten som disse organisasjonene bør følge når de oppgraderer til Microsoft Dynamics 365 for Operations versjon 1611.
 

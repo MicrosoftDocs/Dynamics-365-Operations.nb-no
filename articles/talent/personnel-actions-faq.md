@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Vanlige spørsmål om personalhandlinger
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet inneholder svar på spørsmål du kan ha hvis organisasjonen bruker personalhandlinger. Personalhandlinger er flere trinn du må fullføre når du utfører bestemte personalrelaterte oppgaver. Eksempler på oppgaver som kan kreve personalhandlinger, er når du oppretter nye stillinger, endrer verdier for eksisterende stillinger, ansette nye arbeidere, overføre arbeidere, endre arbeiderkompensasjon, endre stillingstilordninger eller avslutte arbeidere.
 

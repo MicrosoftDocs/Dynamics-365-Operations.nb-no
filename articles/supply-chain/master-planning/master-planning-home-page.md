@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det mest sentrale i hovedplanlegging er at selskaper kan bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet. Hovedplanlegging vurderer følgende: 
 

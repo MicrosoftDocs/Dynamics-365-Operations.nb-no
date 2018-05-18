@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dato for avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt. I avveid gjennomsnitt-prinsippet verdsettes frigivelser fra lageret til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden. 
 

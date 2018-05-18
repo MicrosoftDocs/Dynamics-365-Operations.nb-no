@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Lageroppslag på salgsstedet 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Lageroppslag på salgsstedet gjør det enklere for forhandlere å oppnå driftskvalitet i sanntid og få innsikt ved å koble sammen butikker, salgssted og back office. Denne funksjonaliteten gir nøyaktig sanntidsvisning av produktlageret på tvers av butikker og distribusjonssentre. Den hjelper også forhandlerne med å øke effektiviteten og kostnadsbesparelsene ved å forbedre lagerplanlegging i sanntid.
 

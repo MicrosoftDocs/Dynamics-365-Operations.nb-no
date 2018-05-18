@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurere en nettbutikk
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder koblinger til emner som hjelper deg med sentral konfigurasjon og administrasjon av en nettbutikk.
 

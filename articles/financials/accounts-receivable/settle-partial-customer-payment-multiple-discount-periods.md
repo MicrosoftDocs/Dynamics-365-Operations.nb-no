@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Utligne en delvis kundebetaling som har flere rabattperioder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen viser hvordan delvis kundebetalinger gjøres opp når det er flere rabattperioder.
 

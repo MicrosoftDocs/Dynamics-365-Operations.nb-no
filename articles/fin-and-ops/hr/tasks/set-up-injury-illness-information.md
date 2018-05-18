@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-injury-and-illness-information"></a>Definer informasjon om skade og sykdom
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbeidsgivere trenger å vite når ansatte blir skadet eller syke på grunn av farer på arbeidsplassen. Du kan bruke siden for skade og sykdom til å definere informasjon som gjør det enklere å rapportere skader eller sykdom på arbeidsplassen. Du kan definere skade- og sykdomstyper, inkludert behandlingstyper, kostnader og utfall. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

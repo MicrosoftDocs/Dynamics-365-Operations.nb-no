@@ -28,9 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Oppsett av kredittkort, autorisasjon og registrering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen gir en oversikt over kredittkortautorisering i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om å sette opp en betalingstjeneste, legge til et kredittkort til en salgsordre og annullere en autorisering.
 

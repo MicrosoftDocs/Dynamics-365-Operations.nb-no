@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk utligning og prioritering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
 

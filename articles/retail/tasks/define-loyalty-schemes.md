@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a> Definere fordelsskjemaer
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å definere en fordelsplan. Fordelsplaner er fordelsopptjenings- og innløsingsregler for et fordelsprogram. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
 

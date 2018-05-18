@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Bruke en kontantrabatt utenfor kontantrabattperioden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører. En SEPA-kredittoverføring er en bestemt type betaling i euro fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Emnet beskriver også hvordan du konfigurerer og sender en betalingsfil for kredittoverføring.
 

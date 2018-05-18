@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a> Opprette og tilknytte en enhet
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et register. Det antas at registeret allerede er opprettet.  Denne oppgaven bruker demonstrasjonsdatafirmaet USRT. Denne oppgaven er ment for administratorer, IT-ansvarlige eller IT-sjefer for detaljhandel og butikksjefer.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Juster prosjekttransaksjoner
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen viser hvordan du justerer en transaksjon for et prosjekt. Du kan imidlertid justere én prosjekttransaksjon om gangen eller velge fra en liste over alle prosjekttransaksjoner. Denne oppgaven fullføres vanligvis av prosjektansvarlig. Denne oppgaveveiledningen bruker USSI-datasettet.
 

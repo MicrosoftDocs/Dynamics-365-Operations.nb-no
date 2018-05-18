@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Definere produkter som kan være produsert eller fremskaffet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Produkter kan ha forskjellige kildeinndelinger: de kan være produsert eller fremskaffet (kjøpt). Denne artikkelen beskriver noen vanlige poeng som må vurderes når du konfigurerer produkter som støtter flere leverandører. 
 

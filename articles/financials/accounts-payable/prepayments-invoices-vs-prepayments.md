@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Med den ene metoden oppretter du en forskuddsbetalt faktura som er knyttet til en bestilling. Med den andre metoden oppretter du journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
 

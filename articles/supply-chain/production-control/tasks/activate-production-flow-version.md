@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Aktivere en produksjonsflytversjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Før du kan opprette Kanban-jobber og aktiviteter kan behandles for en produksjonsflytversjon, må du aktivere versjonen. Det er anbefalt fremgangsmåte å aktiver versjonen før utløp av gjeldende dato og klokkeslett. hvis du vil fullføre denne oppgaven, må du ha en produksjonsflytversjon med statusen Utkast for å aktivere versjonen. 
 

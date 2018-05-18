@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sepa-direct-debit-overview"></a>Oversikt over SEPA-avtalegiro
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Felles eurobetalingsområde (SEPA) er satt opp av EU-kommisjonen, og angir at alle elektroniske betalinger betraktes som innenlandsbetalinger, uavhengig av landet/regionen der personen, virksomheten eller organisasjonen, og banken befinner seg. Det er ingen forskjell mellom nasjonale betalinger og betalinger over grenser. SEPA omfatter de 28 EU-medlemslandene pluss Island, Liechtenstein, Norge, Sveits, Monaco og San Marino. SEPA bidrar til å danne ett marked for betalingstransaksjoner i EØS. I siste instans forventes det at SEPA til slutt reduserer antall betalingsformater som banker, bedrifter og enkeltpersoner må arbeide med.   
 

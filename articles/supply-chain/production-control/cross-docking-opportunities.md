@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport.
 

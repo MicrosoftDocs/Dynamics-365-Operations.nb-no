@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations-groups"></a>Beregningsgrupper for stykkliste
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om beregningsgrupper for stykklister og hvordan du definerer dem. Hvis du vil kjøre en stykklisteberegning, må du definere beregningsgrupper og tilordne dem til individuelle elementer, eller angi en standard beregningsgruppe. Beregningsinnstillingene fra beregningsgruppen brukes deretter som standardverdier på siden Stykklisteberegning på tidspunktet for stykklisteberegning. 
 

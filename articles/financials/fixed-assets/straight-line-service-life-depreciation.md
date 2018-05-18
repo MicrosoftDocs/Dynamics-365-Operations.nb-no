@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Lineær levetidsavskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
 

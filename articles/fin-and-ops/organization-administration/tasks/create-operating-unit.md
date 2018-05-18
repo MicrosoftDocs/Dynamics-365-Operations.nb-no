@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>Opprette en driftsenhet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En driftsenhet er en organisasjon som brukes til å fordele kontrollen over økonomiske ressurser og driftsprosesser i en virksomhet. Personer i en driftsenhet har plikt til å gjøre mest mulig ut av knappe ressurser, forbedre prosesser og gjøre rede for egen ytelse. Driftsenhetstypene omfatter kostsentre, forretningsenheter, avdelinger og verdistrømmer. Bruk følgende fremgangsmåte til å opprette en driftsenhet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

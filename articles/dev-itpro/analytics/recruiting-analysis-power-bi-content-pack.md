@@ -28,7 +28,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="recruiting-power-bi-content"></a>Recruiting-innhold for Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver **Recruiting**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 

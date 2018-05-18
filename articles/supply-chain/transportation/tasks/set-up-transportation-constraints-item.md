@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Definere transportbegrensninger for en vare
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valgt vare transporteres gjennom en valgt hub. Denne oppgaven utføres vanligvis av en transportkoordinator. Du kan bruke denne fremgangsmåten i USMF-demodatafirmaet eller ved hjelp av dine egne data.
 

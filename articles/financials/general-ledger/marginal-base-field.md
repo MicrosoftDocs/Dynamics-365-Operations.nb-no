@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Mva-satser basert på feltene grensegrunnlag og beregningsmetoder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan verdiene i feltene Grensegrunnlag og Beregningsmetode fastslår avgiftssats(er) i salgs- og kjøpstransaksjoner.
 

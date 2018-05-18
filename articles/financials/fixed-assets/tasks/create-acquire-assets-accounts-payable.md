@@ -24,7 +24,7 @@ ms.lasthandoff: 10/05/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Opprette og anskaffe anleggsmidler fra leverandører
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen går gjennom oppretting og anskaffelse av et anleggsmiddel med innkjøpsprosessen. Den bruker regnskapsføreren og regnskapsassistenten og demonstrasjonsselskapet USMF.
 

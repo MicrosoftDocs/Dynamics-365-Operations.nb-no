@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Oversikt over produkt- og kundesøk i Point of Sale
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Modern Point of Sale (MPOS) og Cloud Point of Sale (CPOS) gir søkefunksjonalitet som er enkel å bruke for produkter og kunder. Ettersom søkefeltet alltid er til stede på toppen av MPOS- og CPOS-vinduene, kan ansatte raskt søke etter produkter og kunder.
 

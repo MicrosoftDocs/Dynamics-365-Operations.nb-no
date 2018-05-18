@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Definere et menyelement for mobilenhet for å fullføre arbeid i en bestilling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du definerer et Mobilenhet-menyelement. I dette eksemplet brukes menyelementet til å utføre arbeid av typen Bestilling. Arbeidsklassen som er tilknyttet menyelementet, bestemmer hvilket arbeid som er gyldig. Du kan bruke denne veiledningen i USMF-demodatafirmaet. Denne fremgangsmåten utføres av en lagersjef.
 

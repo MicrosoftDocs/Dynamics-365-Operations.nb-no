@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Godkjenne innboksposter for søknad
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du går gjennom søknader som mottas gjennom selvbetjeningssidene for ansatte. I tillegg til å gå gjennom søknadene, kan du godkjenne søknaden i boksposter som du velger. Innboksposter for søknad representerer jobbsøknader som ble sendt til firmaet for vurdering. Etter at en post er godkjent, opprettes en søkerposten for personen som sendte inn søknaden. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

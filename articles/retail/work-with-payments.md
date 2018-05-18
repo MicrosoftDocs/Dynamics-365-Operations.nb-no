@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Betalingsmåter i et telefonsenter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail inneholder konfigurasjonen av telefonsenterkanalen en innstilling som heter **Aktiver ordrefullføring**. Denne innstillingen kan garantere at alle ordrer som opprettes av brukere av kanalen, bare frigis til ordrebehandling hvis de har en forhåndsbetalt eller forhåndsautorisert betaling som er innenfor de godkjente avvikene. Hvis innstillingen **Aktiver ordrefullføring** er slått på, kan telefonsenterbrukere angi betalinger mot salgsordrer for kunder ved hjelp av funksjonene for betalingsbehandling for telefonsenter. Hvis innstillingen er deaktivert, kan ikke telefonsenterbrukere bruke funksjoner for betalingsbehandling, men de kan fremdeles bruke forskuddsbetalinger for salgsordrer ved å bruke standardfunksjon for kunder.
 

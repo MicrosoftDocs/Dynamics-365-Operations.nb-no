@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Håndtere kontantrabatter for overbetalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder scenarier som viser hvordan en betaling skal håndteres når kunden tar en kontantrabatt, men også overbetaler. 
 

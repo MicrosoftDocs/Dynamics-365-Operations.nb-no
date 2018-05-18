@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Opprette egenskaper for planlegging av driftstider
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Egenskaper for planlegging av driftstider brukes til å kategorisere tidsintervallene for arbeid og definere innstillingene som operatorer må ta hensyn til. Denne fremgangsmåten viser hvordan du definerer en egenskap for planlegging av driftstider og tilhørende verdier. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 

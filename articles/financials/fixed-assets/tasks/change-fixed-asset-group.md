@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Endre en anleggsmiddelgruppe
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Anleggsmidler må tilordnes den riktige anleggsmiddelgruppen. Anleggsmiddelgruppen brukes når du:
 

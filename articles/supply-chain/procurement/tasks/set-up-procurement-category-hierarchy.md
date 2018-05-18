@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Definere et innkjøpskategorihierarki
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategorihierarki og hvordan du konfigurerer en innkjøpskategori som skal brukes i en innkjøpsprosess. Disse oppgavene vil vanligvis utføres av en innkjøpssjef. Før du starter denne fremgangsmåten, må det være et kategorihierarki av typen Innkjøp. Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF.
 

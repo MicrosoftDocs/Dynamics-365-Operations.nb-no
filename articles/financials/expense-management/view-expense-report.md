@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Vis en reiseregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du kjører en spørring for å vise transaksjoner i økonomimodulen eller Innkjøp og leverandører, kan spørringen gi for mye informasjon. Det kan derfor hende at du vil begrense søket. For å få informasjonen du trenger, kan du drille ned til en transaksjon for å se reiseregningen som den vises på.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a> Opprette en visuell profil for salgssted  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en ny visuell profil for salgssted. En visuell profil inneholder grunnleggende informasjon som bestemmer utseendet til kasser på salgsstedet. Du kan opprette flere visuelle profiler og tilordne bestemte profiler som skal kjøres på bestemte kasser. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
 

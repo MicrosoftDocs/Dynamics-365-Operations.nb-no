@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Purringer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Purringer er bankdokumenter som vanligvis brukes til kjøp og salg av varer på tvers av internasjonale grenser. 
 

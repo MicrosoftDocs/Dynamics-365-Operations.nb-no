@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-users-in-bulk"></a>Masseimportere brukere
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten kan brukes av systemansvarlige til å importere et stort antall brukere fra Active Directory-Azure.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-bill-of-lading"></a>Opprett et fraktbrev
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyringsprosesser.  
 

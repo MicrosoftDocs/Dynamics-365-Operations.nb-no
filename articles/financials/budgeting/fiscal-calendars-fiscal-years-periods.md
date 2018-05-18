@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskapskalendere, regnskapsår og perioder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 

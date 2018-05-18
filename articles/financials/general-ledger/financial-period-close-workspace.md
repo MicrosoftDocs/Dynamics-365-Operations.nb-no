@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen.
 

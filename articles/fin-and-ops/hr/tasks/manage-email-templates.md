@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-email-templates"></a>Behandle e-postmaler
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan overføre informasjon fra databasen for organisasjonens til bokmerker i et nytt dokument og bruke det i maler som hjelper deg å kommunisere effektivt med søkere og kandidater. For å gjøre dette, oppretter du en mal som inneholder standardtekst og bokmerker der systemdataene skal settes inn. Du kan for eksempel sette inn adresse- og kontaktinformasjon for en søker i et Microsoft Word-dokument som du kan bruke ved kommunikasjon med denne søkeren. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

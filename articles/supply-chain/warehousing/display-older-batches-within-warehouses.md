@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a>Konfigurer Vis eldre partier i lageret på en mobilenhet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den **Vis eldre lagerpartier lageret** konfigurasjon kan du vise en liste over lokasjoner med partier som er eldre enn den gjeldende plasseringen til linjen arbeid. Listen over lokasjoner som skal vises inneholder informasjon om eldre partiene på sted med utløpsdatoen og det fysiske lageret for hver bunke. Du kan velge å velge fra et annet sted, eller for å fortsette plukking fra gjeldende plassering. 
 - Velg fra et annet sted - hvis du velger en ny plassering for å velge fra, oppdateres den gjeldende linjen i arbeid hvis du vil bruke den nye plasseringen og fortsetter arbeidet på vanlig måte med den nye plasseringen. For den nye adressen skal være gyldig, må det ha nok tilgjengelig antall for hele fungerer linjen. Hvis behovsantallet ikke er tilgjengelig, oppdateres ikke arbeid linjen, og viser listen. 

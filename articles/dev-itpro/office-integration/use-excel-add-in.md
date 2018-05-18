@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="use-the-excel-add-in"></a>Bruke Excel-tillegget
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics Office-tillegget for Excel. Hvis du vil åpne enhetsdata, kan du starte fra Excel eller Microsoft Dynamics 365 for Finance and Operations.
 

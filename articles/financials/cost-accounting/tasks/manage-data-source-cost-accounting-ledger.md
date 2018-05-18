@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Administrere en datakilde for kostnadsregnskapsfinansen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans. Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter". Denne registreringen bruker USP2-demodatafirmaet.
 

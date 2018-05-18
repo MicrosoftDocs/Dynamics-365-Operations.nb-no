@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Oversikt over nettbutikk
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om nettbutikker for detaljhandel og hvordan du definerer dem i Microsoft Dynamics 365 for Retail.
 

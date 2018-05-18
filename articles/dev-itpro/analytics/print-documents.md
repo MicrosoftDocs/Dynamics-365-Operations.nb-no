@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="printing-in-finance-and-operations-applications"></a>Utskrift i programmer i Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I Microsoft Dynamics 365 for Finance and Operations kan du skrive ut dokumenter med en lokal skriver eller en enhet som er koblet til nettverket. Denne artikkelen gir en oversikt over hvordan dokumenter skrives ut.
 

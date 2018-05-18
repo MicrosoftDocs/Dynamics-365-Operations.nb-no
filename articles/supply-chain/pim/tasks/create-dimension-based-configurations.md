@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Opprette dimensjonsbaserte konfigurasjoner
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du definerer en konfigurasjon for et dimensjonsbasert produkt. Dette er den siste fremgangsmåten i serien som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon. Utførelsen av denne fremgangsmåten er avhengig av dataene som ble opprettet i de sju forrige registreringene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

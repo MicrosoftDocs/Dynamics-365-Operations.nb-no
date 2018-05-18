@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Hele beløp og alternativer for intervallberegning for mva-koder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver alternativene for feltet Beregningsmåte når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
 

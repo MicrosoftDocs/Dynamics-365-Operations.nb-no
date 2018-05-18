@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forutsetninger for standard kostnadskonvertering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver oppgaver som må utføres før du kjører en standard kostnadskonvertering. 
 

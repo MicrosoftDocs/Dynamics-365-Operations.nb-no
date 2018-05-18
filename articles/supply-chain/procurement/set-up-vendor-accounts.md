@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
 

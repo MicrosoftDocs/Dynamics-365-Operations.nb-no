@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Opprette kundebetalingsmåte
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Opprett en betalingsmåte for kundebetalinger. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

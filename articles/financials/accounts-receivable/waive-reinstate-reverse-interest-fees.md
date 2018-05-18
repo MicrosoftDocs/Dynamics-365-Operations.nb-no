@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Frafalle, gjenoppta eller reversere rentegebyrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan frafall, gjenopptakelse og snudd avregning for renter og gebyrer.
 

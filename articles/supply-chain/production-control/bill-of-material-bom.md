@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Stykklister og formler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst. 
 

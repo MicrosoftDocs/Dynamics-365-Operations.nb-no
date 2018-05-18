@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a>Endre et format ved å bruke en Microsoft Excel-mal på nytt for elektronisk rapportering (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For å fullføre trinnene i denne prosedyren må du først fullføre trinnene i prosedyren "ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format".
 

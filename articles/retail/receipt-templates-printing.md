@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="receipt-templates-and-printing"></a>Kvitteringsmaler og utskrift
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 

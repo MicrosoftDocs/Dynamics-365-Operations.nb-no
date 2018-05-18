@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuere spørreskjemaer ved hjelp av planlegging
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer til flere respondenter. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

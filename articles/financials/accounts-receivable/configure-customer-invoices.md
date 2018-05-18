@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En **kundefaktura for en salgsordre** er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde. Denne typen kundefaktura opprettes basert på en salgsordre, som inneholder ordrelinjer og varenumre. Varenumrene er spesifisert og postert i finans. Underfinansjournaloppføringer er ikke tilgjengelig for en kundefaktura for en salgsordre. Hvis du vil ha mer informasjon, kan du se [Opprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
 

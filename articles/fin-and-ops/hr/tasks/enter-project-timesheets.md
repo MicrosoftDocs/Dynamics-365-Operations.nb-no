@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-project-timesheets"></a>Angi prosjekttimeregistreringer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren lar deg opprette en timeregistrering ved hjelp av et tomt timeregistreringsskjema. Den nye timeregistreringen kan baseres på informasjon fra en tidligere timeregistrering, eller fra prosjekt- og aktivitetstilordninger på Mine favoritter-siden. Som standard viser Alle timeregistreringer-listesiden alle timeregistreringene dine for den gjeldende perioden. Du kan bruke rullegardinlisten for Vis-feltet på Mine timeregistreringer-siden til å filtrere timeregistreringslisten etter tidsperiode eller prosjekt, eller til å vise timeregistreringer som ble opprettet på vegne av andre arbeidere. Demonstrasjonsdatafirmaet USSI brukes til å opprette denne prosedyren. Hvis du vil starte denne prosedyren, går du til Prosjektstyring og regnskap > Timeregistreringer > Mine timeregistreringer.
 

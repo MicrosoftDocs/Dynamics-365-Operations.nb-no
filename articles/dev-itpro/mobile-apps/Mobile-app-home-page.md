@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 

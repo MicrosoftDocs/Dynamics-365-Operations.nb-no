@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver prosessen for frigivelse av råvarer for stykklistelinjer og formellinjer til lageret. Når du frigir en stykkliste- eller formellinje til lageret, kontrollerer systemet først om materialet allerede er tilgjengelig for produksjonsinnleveringsstedet i produksjonslokalet der materialene brukes i produksjonsprosessen.
 

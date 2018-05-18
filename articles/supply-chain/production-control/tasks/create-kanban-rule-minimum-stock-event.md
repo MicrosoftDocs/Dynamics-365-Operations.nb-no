@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel som bruker en minste beholdning-hendelse for å sikre at et bestemt produkt alltid er tilgjengelig på em bestemt lokasjon. Det opprettes en Kanban-regel for å overføre materiale til lokasjonen når lagernivået faller under 200 enheter. Ved å kjøre Behandling av utligningshendelse, opprettes de nødvendige Kanbanene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for prosessingeniøren eller verdistrømlederen, når de klargjør produksjon av et nytt eller endret produkt i et lean-miljø.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kjøre overføringsverktøy for testdata (beta) for Dynamics AX (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn.
 

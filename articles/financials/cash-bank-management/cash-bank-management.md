@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene. 
 

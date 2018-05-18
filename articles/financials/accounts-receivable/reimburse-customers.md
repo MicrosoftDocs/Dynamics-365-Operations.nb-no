@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reimburse-customers"></a>Refundere kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du oppretter refusjonstransaksjoner for en kundegruppe. Hvis en kunde har en kreditsaldo, kan du refundere kunden for saldobeløpet. 
 

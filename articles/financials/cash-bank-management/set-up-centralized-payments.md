@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Definere sentraliserte betalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bruk denne fremgangsmåten til å klargjøre for behandling av betalinger i én juridisk enhet på vegne av andre juridiske enheter i organisasjonen. Før du begynner, må følgende oppsett være fullført:
 

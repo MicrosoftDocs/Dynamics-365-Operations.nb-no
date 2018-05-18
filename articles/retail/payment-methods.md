@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>Betalingsmåter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Hver betalingstype en forhandler godtar, må konfigureres når systemet defineres. Denne artikkelen beskriver betalingstypene som du kan sette opp og beskriver fremgangsmåten for hvordan du definerer dem.
 

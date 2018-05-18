@@ -25,7 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Power BI-innholdet CFO-oversikt
 
-[!INCLUDE [banner](../includes/banner.md)] 
+[!include [banner](../includes/banner.md)] 
 
 Dette emnet beskriver Microsoft Power BI-innholdet **CFO-oversikt**. Power BI-innholdet gjelder for de som bruker Microsoft Dynamics 365 for Finance and Operations versjon 7.2. Hvis du bruker versjon 7.3 eller nyere, kan du se [Økonomisk innsikt](financial-insights.md).
 

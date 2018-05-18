@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="set-up-service-intervals"></a>Definere serviceintervaller  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Serviceintervallet viser hvor ofte serviceordrelinjene skal opprettes for serviceavtalelinjene når du oppretter serviceordrer.
 

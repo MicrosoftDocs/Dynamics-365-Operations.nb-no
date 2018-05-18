@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering av leverandørfaktura
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
 

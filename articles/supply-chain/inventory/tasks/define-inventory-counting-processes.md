@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Definere prosesser for lageropptelling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal. Den viser også hvordan du aktiverer opptellingspolicyer på et lager- og varenivå. Disse oppgavene vil vanligvis utføres av en lagersjef. Det er nødvendig med noen eksisterende frigitte produkter og lagre. Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF med alle lagerførte varer.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreements"></a>Opprette serviceavtaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og Prosjektstyring og regnskap for å opprette serviceavtaler.
 

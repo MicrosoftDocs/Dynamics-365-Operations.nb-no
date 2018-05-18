@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
 

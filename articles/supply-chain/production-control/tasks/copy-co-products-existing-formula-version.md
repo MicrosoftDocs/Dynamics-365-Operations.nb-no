@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Kopiere koprodukter fra en eksisterende formelversjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du kopierer koprodukter fra en eksisterende formelversjon til en annen formelversjon for et frigitt produkt. Det er en forutsetning at det finnes minst én formelversjonen knyttet til koprodukter. Demonstrasjonsdatafirmaet USP2 brukes til å opprette denne prosedyren.
 

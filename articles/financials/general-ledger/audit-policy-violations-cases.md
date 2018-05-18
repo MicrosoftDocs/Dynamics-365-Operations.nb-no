@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Overvåkingspolicybrudd og -saker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Artikkelen forklarer hvordan overvåkingssaker genereres basert på brudd på overvåkingspolicyregler. Den inneholder også informasjon om de forskjellige måtene overvåkingspolicyer bruker datoområdet for dokumentvalg.
 

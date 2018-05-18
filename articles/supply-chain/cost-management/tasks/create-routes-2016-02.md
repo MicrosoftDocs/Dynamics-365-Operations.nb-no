@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-routes-february-2016-only"></a>Opprette ruter (bare februar 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaven fokuserer på å opprette produksjonsruter for et ferdig produkt og et halvfabrikata. Det er den femte oppgaven i serien stykklisteberegning. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.
 

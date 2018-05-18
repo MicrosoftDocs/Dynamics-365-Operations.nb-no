@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a> Opprette Internett-kanaler og definere kanalattributter
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en ny Internett-kanal og legge den til i organisasjonshierarkiet. Før du kan opprette en ny Internett-kanal, må du opprette organisasjonshierarkiet. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-a-cost-element-dimension"></a>Tilordne en kostnadselementdimensjon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En kostnadskontroller kan bruke denne fremgangsmåten til å tilordne en kostnadselementdimensjon til en kostnadselementdimensjon i den juridiske MXMF-enheten. Denne registreringen bruker USP2-demodatafirmaet.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intercompany-invoicing"></a>Konsernintern fakturering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om og eksempler på konserninterne fakturering for prosjekter i Microsoft Dynamics 365 for Finance and Operations.
 

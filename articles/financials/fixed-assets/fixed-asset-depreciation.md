@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anleggsmidler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over avskrivning for anleggsmidler.
 

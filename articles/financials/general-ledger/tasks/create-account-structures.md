@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-account-structures"></a>Opprette kontostrukturer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur. Trinnene bruker demonstrasjonsdatafirmaet USMF.
 

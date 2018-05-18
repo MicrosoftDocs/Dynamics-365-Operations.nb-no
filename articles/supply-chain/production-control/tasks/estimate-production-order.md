@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Estimere en produksjonsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan kjøre denne prosedyren ved hjelp av demonstrasjonsdataselskapet USMF eller ved hjelp av ditt eget datasett. I begge tilfeller må du ha en åpen produksjonsordre med statusen Opprettet. Dette er den andre fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.
 

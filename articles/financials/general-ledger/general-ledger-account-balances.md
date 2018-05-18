@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldoer i økonomimodulen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer.
 

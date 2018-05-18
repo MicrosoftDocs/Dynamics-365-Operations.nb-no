@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Overvåke salgs- og marginytelse
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du kan overvåke på salgs- og marginytelse i sanntid i Microsoft Dynamics 365 for Retail.
 

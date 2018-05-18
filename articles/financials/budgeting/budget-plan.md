@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning"></a>Budsjettplanlegging
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
 

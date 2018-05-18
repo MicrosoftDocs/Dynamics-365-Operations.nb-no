@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Tilbakeføre en leverandørbetaling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver forskjellene mellom tilbakeføring, sletting, annullering og avvisning av en betaling. Den beskriver også de to metodene for å tilbakeføre en sjekk for leverandør. 
 

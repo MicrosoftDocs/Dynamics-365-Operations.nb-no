@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre. Som en forutsetning skal vi først opprette salgsordren. Denne prosedyren er en del av det daglige arbeidet for transportkoordinator. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 

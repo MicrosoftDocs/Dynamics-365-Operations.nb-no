@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Serviceoppgaver  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bruk serviceoppgaver til å beskrive oppgaven som skal fullføres under en serviceordre.
 Både teknikere og kunder kan se denne informasjonen.

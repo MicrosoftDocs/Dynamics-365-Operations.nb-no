@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Finansjournaltyper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations.
 

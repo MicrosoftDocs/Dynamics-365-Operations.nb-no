@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-positions"></a>Konfigurer stillinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Stillinger er et viktig element i det nederste nivået i et organisasjonshierarki. En stilling er én enkeltforekomst av en jobb. Stillingen "Salgssjef (øst)" er for eksempel én av stillingene som er knyttet til jobben "Salgssjef". Det finnes en stilling i en avdeling, og bare én arbeider kan tilordnes den. I denne oppgaven vil vi veilede deg gjennom fremgangsmåten som kreves for å opprette en stilling. Denne fremgangsmåten er ment for en personalespesialister.
 

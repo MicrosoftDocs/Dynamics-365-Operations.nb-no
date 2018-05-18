@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Produksjonsparametere i Produksjonsutførelse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om oppsettet av produksjonsparametere i Produksjonsutførelse.
 

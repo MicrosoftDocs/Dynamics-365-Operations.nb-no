@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ved tilordning av forskjellige medlemmer av kostnadselementdimensjon til et felles sett med medlemmer av kostnadselementdimensjoner, slår du sammen data i et felles format for analyseformål.
 

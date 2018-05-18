@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 

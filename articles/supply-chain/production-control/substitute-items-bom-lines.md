@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="material-substitution-in-manufacturing"></a>Materialerstatning i produksjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan erstatte materialer i løpet av produksjonsprosessen. 
 

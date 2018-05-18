@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Stykkplukkingsbekreftelse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med stykkplukking kan du bekrefte hver del av lagerbeholdningen gjennom plukkings- og tellingsarbeid på en mobil enhet. For plukking kan du kontrollere hvor mye arbeid som skal behandles opptil antallet som er angitt på arbeid som skal plukkes. For opptellingsarbeid kan du skanne lageret du teller opp, og spore totalbeløpet.
 

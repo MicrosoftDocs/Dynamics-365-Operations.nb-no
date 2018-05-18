@@ -29,9 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensjoner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Filformater for betalingsmåter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.
 

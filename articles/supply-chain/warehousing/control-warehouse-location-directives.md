@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder informasjon om blandet modus-planlegging. I blandet modus-planlegging kan du utforme forsyningskjeden etter materialflyten. Microsoft Dynamics 365 for Finance and Operations sørger for at materialflyten følger modellene dine, uavhengig av forsyningspolicyen som er valgt (kanbaner, produksjonsordrer, bestillinger, partiordrer eller overføringsordrer). 
 

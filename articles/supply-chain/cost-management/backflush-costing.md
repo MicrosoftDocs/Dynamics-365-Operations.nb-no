@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 

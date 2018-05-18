@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kostnadskategorier som brukes i produksjonsruting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kostnadskategorier som brukes i produksjonsmiljøer som bruker ruting.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125 prosent redusert saldoavskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
 

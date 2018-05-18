@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilt arbeidsområde for fakturagodkjenning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="accounting-source-explorer"></a>Regnskapskildeutforsker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om regnskapskildeutforsker, som du kan bruke for detaljert analyse av kildeinformasjonen bak regnskapsoppføringer i økonomimodulen.
 

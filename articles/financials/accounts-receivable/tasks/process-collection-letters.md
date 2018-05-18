@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-collection-letters"></a>Behandle purrebrev
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne prosedyren viser hvordan du oppretter, skriver ut og posterer purringer. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="retail-statements"></a>Detaljhandelsutdrag
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail brukes posteringsprosessen for utdraget til å ta hensyn til transaksjoner som forekommer i sky-salgsstedet eller det moderne salgsstedet. Posteringsprosessen for utdrag bruker distribusjonstidsplanen til å hente et sett med salgsstedstransaksjoner til klienten på hovedkontoret. Parameterne som er definert på sidene **Detaljhandelsparametere** og **Lagre**, brukes til å velge transaksjonene som hentes til enkeltstående utdrag.  
 

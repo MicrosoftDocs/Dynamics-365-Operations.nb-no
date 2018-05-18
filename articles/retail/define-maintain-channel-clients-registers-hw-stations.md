@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definere og vedlikeholde kanalklienter, kasser og maskinvarestasjoner
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
 

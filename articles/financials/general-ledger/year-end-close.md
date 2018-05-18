@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Årsavslutning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver den nødvendige konfigurasjonen og fremgangsmåten for å kjøre årsavslutningsprosessen i økonomimodulen. 
 

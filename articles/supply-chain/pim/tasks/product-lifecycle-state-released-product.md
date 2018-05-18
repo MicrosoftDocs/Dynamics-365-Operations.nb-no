@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>Tilordne en produktlivssyklustilstand til et frigitt produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du tilordner en produktlivssyklustilstand til et frigitt produkt. Forutsetning: Du må spille av oppgaveveiledningen Opprette en ny produktlivssyklustilstand først for å være sikker på at minst én produktlivssyklustilstand opprettes før du kan spille av denne veiledningen.
 

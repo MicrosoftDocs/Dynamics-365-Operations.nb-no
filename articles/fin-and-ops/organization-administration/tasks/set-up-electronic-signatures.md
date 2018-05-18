@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-signatures"></a>Opprette elektroniske signaturer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne prosedyren for å definere elektroniske signaturer. En elektronisk signatur bekrefter identiteten til en person som er i ferd med å starte eller godkjenne en dataprosess. Demonstrasjonsdatafirmaet DAT brukes til å opprette denne fremgangsmåten.
 

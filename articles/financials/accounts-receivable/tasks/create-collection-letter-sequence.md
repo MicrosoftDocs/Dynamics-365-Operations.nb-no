@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Opprette et purreforløp
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne oppgaveveiledningen til å opprette et purreforløp. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Vedlikeholde informasjon om ansattskade og -sykdom
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her. 
 

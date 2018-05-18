@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter en bestilling. Kjøpsavtalen må brukes når du oppretter bestillingen, fordi det finnes generelle vilkår som bør kopieres til bestillingshodet. Denne oppgaven vil vanligvis utføres av en innkjøpsagent. Som en forutsetning for denne veiledningen må du ha en gyldig kjøpsavtale med en produktantallsforpliktelse for en leverandør og varer. Den samme fremgangsmåten kan brukes hvis du har en kjøpsavtale med andre former for forpliktelser. Du kan bruke denne veiledningen i USMF-demodatafirmaet. Hvis du bruker USMF, kan du kjøre veiledningen Opprette en kjøpsavtale først for å definere de nødvendig forutsetningene for denne veiledningen.
 

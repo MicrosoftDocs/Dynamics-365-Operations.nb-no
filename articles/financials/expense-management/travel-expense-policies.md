@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Utgiftspolicyer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan definere policyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger.         
 Ved å bruke policyer for reiseregning kan du administrere utgiftene dine på en effektiv måte.         

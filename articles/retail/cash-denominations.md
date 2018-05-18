@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-cash-denominations-for-pos"></a>Konfigurere kontantstørrelser for salgssted
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Kontantstørrelser for sedler og mynter kan defineres i Back Office som skal brukes av kasserere, selgere og ledere i butikken ved salgsstedet. Disse størrelsene kan være til hjelp for å telle kontanter for dagsoppgjør eller raskt gjennomføring av et salg.
 

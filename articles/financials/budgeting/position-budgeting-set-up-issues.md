@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Feilsøke stillingsbudsjettering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder svar på spørsmål du kan ha når du konfigurerer stillingsbudsjettering. Det tar for seg vanlige spørsmål om hvordan du oppretter budsjettetkostnadselementer, kompensasjonsgrupper og kompensasjonsrutenett. 
 

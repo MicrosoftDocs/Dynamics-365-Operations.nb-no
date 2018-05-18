@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Firmakatalog**. Dette arbeidsområdet lar brukere vise og kontakte andre ansatte i organisasjonen.
 

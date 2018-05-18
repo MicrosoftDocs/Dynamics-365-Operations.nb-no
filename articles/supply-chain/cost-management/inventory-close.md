@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Beholdningslukking
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Som en del av prosessen for å utligne avgangstransaksjoner med mottakstransaksjoner, kan du også velge å få økonomimodulen oppdatert for å gjenspeile justeringene som er gjort.
 
@@ -86,7 +86,7 @@ I enkelte tilfeller kan du kanskje ikke kan gjøre noe med advarslene. Når merk
 ## <a name="reversing-a-completed-inventory-close"></a>Tilbakeføre en fullført lagerlukking
 Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for å sette utligninger tilbake til statusen de hadde før justeringer ble utført. Når du tilbakefører en fullført lagerlukking, blir lageret åpnet på nytt for å muliggjøre postering i perioden som lagerlukkingen dekker. Relaterte endringer kan også foretas i økonomimodulen. Når du er ferdig med å gjøre justeringer, kan du kjøre lagerlukking på nytt for perioden du arbeider med. 
 
-**Obs!**Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
+**Obs!** Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
 
 
 

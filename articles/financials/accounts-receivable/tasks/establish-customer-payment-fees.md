@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="establish-customer-payment-fees"></a>Opprette kundebetalingsgebyrer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Opprett betalingsgebyrer for kundebetalinger.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="cash-overview-power-bi-content"></a>Power BI-innholdet Kontantstrømoversikt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Microsoft Power BI-innholdet **Kontantstrømoversikt**. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 

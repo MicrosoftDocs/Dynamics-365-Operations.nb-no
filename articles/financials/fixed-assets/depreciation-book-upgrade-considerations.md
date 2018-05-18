@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering for avskrivningstablå
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen. 
 
@@ -62,17 +62,17 @@ Alternativ 2: **Eksisterende brukerdefinert nummerserie** - Dette alternativet l
 Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
 
 *// Angi en foretrukket metode for fordeling av bilag* 
-*// true, hvis du vil bruke en eksisterende nummerseriekode* 
-*// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;  
+ *// true, hvis du vil bruke en eksisterende nummerseriekode* 
+ *// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;  
 
 *// Hvis bruker fremgangsmåten for systemdefinert nummerserie, angir du parameterne for nummerserien.*
-*// Det opprettes en ny nummerserie med disse parameterne.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// Det opprettes en ny nummerserie med disse parameterne.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Hvis du bruker fremgangsmåten for eksisterende nummerserie, angir du den eksisterende nummerseriekoden.* 
-*// Bilagstilordning går rad for rad for eksisterende nummerserier.* const str NumberSequenceExistingCode = ''; *// Angi omfanget for den eksisterende nummerseriekoden* 
-*// true, hvis den angitte nummerserien er delt* 
-*// false, hvis den angitte nummerserien er per firma* 
-*// Standard systemdefinert nummerserie brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.* const boolean NumberSequenceExistingIsShared = true; 
+ *// Bilagstilordning går rad for rad for eksisterende nummerserier.* const str NumberSequenceExistingCode = ''; *// Angi omfanget for den eksisterende nummerseriekoden* 
+ *// true, hvis den angitte nummerserien er delt* 
+ *// false, hvis den angitte nummerserien er per firma* 
+ *// Standard systemdefinert nummerserie brukes hvis en nummerseriekode med det angitte omfanget ikke finnes.* const boolean NumberSequenceExistingIsShared = true; 
 
 Bygg på nytt prosjektet som inneholder klassen når konstantene har blitt endret. 
 

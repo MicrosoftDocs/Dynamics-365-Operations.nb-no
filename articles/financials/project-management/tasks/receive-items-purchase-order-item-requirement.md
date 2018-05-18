@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Motta varer i bestilling fra varebehov
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du mottar varer på en bestilling fra et varebehov.
 

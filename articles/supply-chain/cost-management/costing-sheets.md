@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Kostark
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Definisjon av kostark innebærer to mål. Som det første målet definerer du formatet for visning av informasjon om kostnader for solgte varer for en produsert vare eller produksjonsordre. Den formaterte visningen kalles et kostark. Som det andre målet definerer du grunnlaget for beregning av indirekte kostnader. Oppsetet av kostarket byger på kostgruppefunksjonen for visning av informasjon og for de indirekte kostnadsberegningsformlene. De to målene for oppsett av etterkalkuleringsark er beskrevet i denne artikkelen. 
 

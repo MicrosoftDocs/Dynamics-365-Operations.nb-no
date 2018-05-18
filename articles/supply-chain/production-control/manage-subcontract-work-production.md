@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Administrer utsetting arbeid i produksjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan underleveranseoperasjoner skal behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 

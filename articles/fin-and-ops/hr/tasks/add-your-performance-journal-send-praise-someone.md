@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Legge til ytelsesjournalen og sende ros til noen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte målene dine eller hvordan du gjorde det i en periode. Du kan også rose handlingene til en kollega fra journalen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-workflow"></a>Opprette en arbeidsflyt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du oppretter en arbeidsflyt.
 

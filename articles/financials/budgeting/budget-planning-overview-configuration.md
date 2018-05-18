@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen introduserer budsjettplanlegging og inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 

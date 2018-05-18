@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Etterdaterte sjekker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om støtte for etterdaterte sjekker i Microsoft Dynamics 365 for Finance and Operations. Etterdaterte sjekker er sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato. Derfor kan ikke veksles sjekken før den angitte datoen.
 

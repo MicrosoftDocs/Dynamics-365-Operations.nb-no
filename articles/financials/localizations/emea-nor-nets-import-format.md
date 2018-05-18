@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="nets-import-format"></a>Nets-importformat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
 

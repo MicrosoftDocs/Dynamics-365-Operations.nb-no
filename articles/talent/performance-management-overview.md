@@ -27,7 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="performance-management-overview"></a>Oversikt over ytelsesstyring
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
 

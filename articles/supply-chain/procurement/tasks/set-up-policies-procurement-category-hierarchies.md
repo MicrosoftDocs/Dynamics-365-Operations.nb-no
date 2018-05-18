@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Definere policyer for innkjøpskategorihierarkier
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bruk denne fremgangsmåten for å konfigurere regler for bestilling av produkter i en kategori. Reglene er definert for en bestemt innkjøpspolicy. Regelen for kategoritilgang kontrollerer hvilke innkjøpskategorier ansatte har tilgang til når de oppretter en rekvisisjon. Når en rekvisisjon opprettes, avgjør systemet hvilken innkjøpspolicy og regel for kategoritilgang som gjelder, basert på den juridiske enheten og driftsenheten som den ansatte tilhører. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Denne oppgaven utføres vanligvis av en innkjøpssjef.
 

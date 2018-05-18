@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-hardware-station"></a> Opprette og tilknytte en maskinvarestasjon
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en ny maskinvarestasjon. En ny maskinvareprofil opprettes og brukes til å legge til nye maskinvarestasjoner i en forhåndsdefinert butikk (kanal). Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.
 

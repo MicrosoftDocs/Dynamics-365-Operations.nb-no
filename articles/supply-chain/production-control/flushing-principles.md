@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Kontrollere råvareforbruk ved å bruke trekkprinsipper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Trekkprinsippene gjenspeiler ulike forbruksstrategier for råvarer som skal brukes i produksjonsprosessen. Forbruket er prosessen som trekker materialer fra lageret og setter verdien for de forbrukte materialene til **Varer i arbeid** (VIA) for produksjonsordrer og partiordrer. Råvarene forbrukes vanligvis fra en plassering som er konfigurert for prosessen som bruker materialet. Denne plasseringen er kjent som produksjonsinnleveringsstedet.
 

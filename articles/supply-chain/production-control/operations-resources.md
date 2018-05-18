@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Operations-ressurser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Operasjonsressurser utfører aktivitetene for et prosjekt eller en produksjonsprosess. De kan være av forskjellige typer og kan ha forskjellige funksjoner. 
 

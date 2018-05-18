@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Vurdere salgsytelse etter produkt
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du kan se nærmere på fortjenesten for topp 10 produktene ved hjelp av Microsoft Dynamics 365 for Retail. 
 

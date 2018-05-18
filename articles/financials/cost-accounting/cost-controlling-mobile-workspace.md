@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Kostnadskontroll**. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Informasjon som brukes i stykklisteberegninger med standardkostnader
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Stykklisteberegninger benytter seg av data fra flere kilder for å beregne standard kostpris for en produsert vare. Kildene inneholder informasjon om varer, stykklisteruter, beregningsformler for indirekte kostnader og etterkalkuleringsversjonen.
 

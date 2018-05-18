@@ -26,7 +26,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="production-performance-power-bi-content"></a>Produksjonsytelse for Power BI-innhold
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hva som er inkludert i **Produksjonsytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 

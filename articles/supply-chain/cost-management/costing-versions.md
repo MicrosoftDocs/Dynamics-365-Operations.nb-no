@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Etterkalkuleringsversjoner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kostnadsversjoner, hvordan du vedlikeholder dem, og hvilke typer data som du kan inkludere dem i. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader.
 

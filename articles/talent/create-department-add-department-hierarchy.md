@@ -28,7 +28,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Opprette en avdeling, og knytte den til avdelingshierarkiet
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
 

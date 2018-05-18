@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Etterfylling med uttak – Kanbaner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan kanban for uttak brukes til etterfylling av materialer til produksjonsaktiviteter.
 

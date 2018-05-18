@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket arbeid som genereres for et lager når en bølge behandles, og om bølger behandles manuelt eller automatisk. Du angir vilkårene ved å definere bølgemaler og spørringer som samsvarer med en bølge med frigitte linjer i bestillinger, produksjonsordrer eller Kanban-ordrer. Bølgebehandling brukes i lagre som bruker funksjonaliteten i lagerstyringsmodulen, og ikke de som bruker funksjonaliteten i lagerstyringsmodulen. Du kan kjøre denne prosedyren i demonstrasjonsdataselskapet USMF.
 

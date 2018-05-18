@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Et tildelingsgrunnlag er grunnlaget som kostnadsregnskap tildeler indirekte kostnader på. Et tildelingsgrunnlag kan være et antall, for eksempel maskindriftstid som brukes, kilowattimer (kWh) som brukes, eller antall kvadratmeter som er opptatt. Tildelingsgrunnlag brukes hovedsakelig til å tilordne indirekte kostnader til beholdning som produseres. En IT-avdeling tildeler for eksempel utgiftene etter antallet datamaskiner som hver avdeling bruker.
 
