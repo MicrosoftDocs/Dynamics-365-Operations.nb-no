@@ -24,6 +24,7 @@
 # Merverdiavgift
 ## [Oversikt over merverdiavgift](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Beregningsmåter for merverdiavgift i grunnlagsfeltet](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Mva-tilordning og overstyringer](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Hele beløp og alternativer for intervallberegning for mva-koder](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Telefonsenter
@@ -167,8 +168,9 @@
 ## [ Opprette og tilknytte en maskinvarestasjon](tasks/create-associate-hardware-station.md)
 ## [ Opprette og tilknytte kasser](tasks/create-associate-registers.md)
 ## [ Opprette, beregne og postere et utdrag for en detaljhandel](tasks/create-calculate-post-statement-retail-store.md)
+## [Forbedringer for utdragspostering](statement-posting-EOD.md)
 ## [ Opprette telefonsenterordrer](tasks/create-call-center-orders.md)
-## [ Opprette finansdimensjoner for kasser på POS og konfigurere dimensjonsverdier for kasser](tasks/create-financial-dimensions-pos.md)
+## [Opprette finansdimensjoner for kasser på POS og konfigurere dimensjonsverdier for kasser](tasks/create-financial-dimensions-pos.md)
 ## [ Opprette finansdimensjoner for Retail-kanaler og konfigurere dimensjonsverdier for butikker](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Opprette Internett-kanaler og definere kanalattributter](tasks/create-online-channel-define-channel-attributes.md)
 ## [ Opprette tillatelsesgrupper for POS](tasks/create-pos-permission-groups.md)
@@ -289,7 +291,6 @@
 ### [Ringe en POS API eller operasjon fra en POS-filtype](dev-itpro/pos-api-extension.md)
 ### [Utløsere og utskrift for Retail Modern POS](dev-itpro/pos-trigger-printing.md)
 ### [Legge til en egendefinert kontroll i en designerbasert visning som ikke er skjermbasert for Retail Modern POS](dev-itpro/pos-control-non-screen.md)
-### [Generere Retail-proxy for POS og e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
 ### [Konfigurasjonstrinn for Retail-utviklere som jobber med skydriftede utviklingsbokser](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime

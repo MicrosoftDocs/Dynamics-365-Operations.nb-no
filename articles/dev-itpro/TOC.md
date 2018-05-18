@@ -10,7 +10,12 @@
 ## [Få en evalueringskopi](dev-tools/get-evaluation-copy.md)
 ## [Registrere deg for et abonnement](dev-tools/sign-up-preview-subscription.md)
 ## [Distribuere og få tilgang til et utviklingsmiljø](dev-tools/access-instances.md)
-## [Systemkrav for utvikling](dev-tools/development-system-requirements.md)
+### [Konfigurere utvikler-VM](dev-tools/configure-developer-vm.md)
+### [Opprette en ny bruker på en utviklingsmaskin](dev-tools/enable-development-machine.md)
+### [Vanlige spørsmål om utviklings- og bygg-VM-er som ikke tillater administratortilgang](sysadmin/VMs-no-admin-access.md)
+### [Gi nytt navn til et lokalt miljø for å aktivere tilgang til Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Systemkrav for utvikling](dev-tools/development-system-requirements.md)
+## [Versjonskontroll, metadatasøk og navigasjon](dev-tools/version-control-metadata-navigation.md)
 ## Eksempel på flåtestyringsprogram
 ### [Eksempel på flåtestyringsprogram](dev-tools/fleet-management-sample.md)
 ### [Oversikt over eksempel på flåtestyringsprogram](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [Byggeoperasjoner](dev-tools/build-operations.md)
 ### [Koderedigering](dev-tools/code-editor.md)
 ### [Opprette en modell og datamodellelementer](dev-tools/create-data-model-elements.md)
-### [Opprette en ny bruker på en utviklingsmaskin](dev-tools/enable-development-machine.md)
+#### [Gi navn til retningslinjer](extensibility/NamingGuidelines.md)
+#### [Deaktivere modelltilpassings- og avskrivningsfunksjonalitet](dev-tools/lock-models.md)
 ### [Rapport for tilpassingsanalyse](dev-tools/customization-analysis-report.md)
 ### [Elementutformere](dev-tools/element-designers.md)
 ### [Elementbruk](dev-tools/element-usage.md)
@@ -31,7 +37,6 @@
 ### [Modeller](dev-tools/models.md)
 ### [Prosjekter i Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Verktøytillegg for Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Deaktivere modelltilpassings- og avskrivningsfunksjonalitet](dev-tools/lock-models.md)
 ### [Oppdatere utviklingsverktøy for Visual Studio](dev-tools/update-development-tools.md)
 ## Programmeringsspråk for X++
 ### [X++ og feilsøkerfunksjoner ](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [W-klasser](dev-ref/w-classes.md)
 #### [X-klasser](dev-ref/x-classes.md)
 
-## [Startside med utvidelsesmuligheter](extensibility/extensibility-home-page.md)
+## [Utvidelsesmuligheter](extensibility/extensibility-home-page.md)
 ### Innføring og Komme i gang
 #### [Planer for programutvidelse](extensibility/extensibility-roadmap.md)
 #### [Forespørsler om utvidelse](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptaker](user-interface/task-recorder-training-docs.md)
 
 # [Mobil plattform](mobile-apps/platform/mobile-platform-home-page.md)
-## Komme i gang
-### [Komme i gang](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Komme i gang](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Arkitektur](mobile-apps/platform/mobile-platform-architecture.md)
+### [Oversikt over hendelser for forretningslogikk](mobile-apps/platform/business-logic-events-overview.md)
 ### [Retningslinjer for utforming av side](mobile-apps/platform/page-design-guidelines.md)
 ### [Retningslinjer for utforming av handling](mobile-apps/platform/action-design-guidelines.md)
 ### [Skjemautformingskrav](mobile-apps/platform/form-design-requirements.md)
@@ -409,7 +414,7 @@
 ### [Konfigurasjonsdatamaler](data-entities/configuration-data-templates.md)
 ### [Datamaler med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore endringer i en enhet](data-entities/entity-change-track.md)
-
+### [Konfigurasjonsnøkler og dataenheter](data-entities/config-key-entities.md)
 ### [Finne informasjon om standard dataenheter](data-entities/data-entities-report.md)
 
 
@@ -418,6 +423,7 @@
 ### [Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Utvikling for dataenheter
+### [Utformingsprinsipper og anbefalte fremgangsmåter for dataenheter](dev-tools/design-best-practices.md)
 ### [Opprette nye dataenheter](data-entities/build-consuming-data-entities.md)
 ### [Dataenhetsegenskaper](data-entities/behavioral-properties-data-entities.md)
 ### [Opprette beregningskolonner og virtuelle felt](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +434,9 @@
 ### [Metadataegenskaper](data-entities/behavioral-properties-data-entities.md)
 ### [Valideringer, standarder og utilordnede felt](data-entities/validations-defaults-unmapped-fields.md)
 ### [Sikkerhet og dataenheter](data-entities/security-data-entities.md)
+### [Lage en skrivebeskyttet enhet som viser finansdimensjoner](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Vise din egen database](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +444,7 @@
 ## [Automatisering av dataoppgave](data-entities/data-task-automation.md)
 
 ## [Ressurser for å svare på en forespørsel om GDPR-data](gdpr/gdpr-home-page.md)
-### [Veiledning til EUs personvernforordning (GDPR) for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Veiledning til EUs personvernforordning (GDPR) for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-guide.md)
 ### [Anleggsmiddelklassifiseringer](gdpr/gdpr-asset-classification-values.md)
 ### [Bruke rapporten Personsøk](gdpr/gdpr-person-search-report.md)
 ### [Utvide rapporten Personsøk](gdpr/gdpr-extend-person-search-report.md)
@@ -443,8 +452,9 @@
 ### [Svare på en forespørsel om personlige data ved hjelp av Talent](gdpr/respond-dsr-request-talent.md)
 ### [Svare på en forespørsel om personlige data ved hjelp av Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
+## [Arbeidsområde for datavalidering](user-interface/data-validation-workspace.md)
 
-# [Startside for kontinuerlig levering](dev-tools/continuous-delivery-home-page.md)
+# [Kontinuerlig levering](dev-tools/continuous-delivery-home-page.md)
 ## [Vanlige spørsmål om utvikling og kontinuerlig levering](dev-tools/continuous-delivery-faq.md)
 ## [Utelukke testpakker fra byggeutdataene](dev-tools/exclude-test-packages.md)
 ## [Administrere tredjepartsmodeller og kjøretidspakker ved bruk av kildekontroll](dev-tools/manage-runtime-packages.md)
@@ -487,6 +497,7 @@
 ## [Parametermetoder for segmentert angivelseskontroll](financial/segmented-entry-control-parm-method-specification.md)
 ## [Legge til muligheten til å slå opp verdier for finansdimensjoner i Microsoft Excel-maler](financial/add-dimensions-excel-templates.md)
 ## [Opprette valutakursleverandører](financial/create-exchange-rate-providers.md)
+## [Opprette valutakursleverandører i Microsoft Dynamics Finance and Operations-versjon 8.0](financial/create-exchange-rate-8.md)
 
 # Forsyningskjedeutvikling
 ## [Veiledning til Gantt-utvikling](user-interface/gantt-development-guide.md)
@@ -579,7 +590,6 @@
 
 # [Systemadministrasjon](sysadmin/system-administration-home-page.md)
 ## [Vanlige spørsmål om månedlige plattformoppdateringer](sysadmin/faq-platform-monthly-updates.md)
-## [Virtuelle maskiner som ikke tillater vanlige spørsmål om administratortilgang](sysadmin/VMs-no-admin-access.md)
 ## [Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring](sysadmin/legal-terms-privacy-statement.md)
 ## [Rapport for lisenskoder og konfigurasjonsnøkler](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadeling mellom firmaer](sysadmin/cross-company-data-sharing.md)
