@@ -38,9 +38,6 @@ Ved å åpne enhetsdata i Excel, kan du raskt og enkelt vise, oppdatere og redig
 
 Hvis du vil vite mer om hvordan du bruker tillegget for Excel, kan du se den korte videoen om [oppretting av en Excel-mal for hode- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Åpne enhetsdata i Excel når du starter fra Finance and Operations
 1. Velg **Åpne i Microsoft Office** på en side i Finance and Operations.
 
