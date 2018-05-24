@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Definere rentesatser for en rentekode
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Rentekoder inneholder innstillinger som bestemmer nå renter belastes og hvordan de beregnes på forfalte kontoer.
 
@@ -56,7 +56,7 @@ For eksempel, for å definere en rentekode som setter 5 prosent rente for annenh
 Du kan definere rentesatser som beregner et bestemt beløp per valuta.
 - Et rentebeløp angis for hver valuta i rentekoden.
 - Valgfrie rentebeløpsgrenser kan angis.
-- <strong>Beløp ** velges i **Beregn rente basert på</strong>-feltet på <strong>Definer rentekoder-siden</strong>.
+- **Beløp** velges i **Beregn rente basert på**-feltet på **Definer rentekoder**-siden.
 
 For eksempel, for å definere en rentekode som setter en rente på 25,00 for hver 20. dag som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 20 i feltet **Beregn renter hver** og velger **Dag**.
 

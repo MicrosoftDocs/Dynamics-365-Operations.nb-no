@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generer en statistisk basislinjeprognose
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om parametere og filtre som brukes i beregningen av behovsprognose. 
 
@@ -64,7 +64,7 @@ Konsernintern planleggingsgruppe, varefordelingsnøkler og andre filtre kan bruk
 
 Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for én vare eller en varefordelingsnøkkel om gangen, kan du deretter for å få bedre ytelse merke av for **Bruk modus for forespørselssvar** i kategorien **Hovedplanlegging - Oppsett - Behovsprognose** - **Parametere for behovsprognose - Azure Machine Learning**.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oppsett av behovsprognose](demand-forecasting-setup.md)

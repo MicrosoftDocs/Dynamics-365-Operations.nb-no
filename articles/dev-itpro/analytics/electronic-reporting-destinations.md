@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Mål for elektronisk rapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan konfigurere et mål for hver formatkonfigurasjon for elektronisk rapportering (ER) og utdatakomponenten (en mappe eller en fil). Brukere som er gitt riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. Denne artikkelen beskriver administrasjon av mål for elektronisk rapportering, måltyper som støttes og sikkerhetsvurderinger.
 
@@ -51,7 +51,8 @@ Når du har opprettet en referanse, kan du opprette et mål for hver mappe eller
 
 [![Opprette et filmål](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> ![Obs!] Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
+> [!NOTE] 
+> Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
 
 [![Dialogboksen Innstillinger for mål](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -130,7 +131,8 @@ To typer rettigheter og plikter brukes for ER-mål. Én type styrer muligheten t
 | PaymAccountsPayablePaymentsClerk    | Leverandørbetalingsassistent            | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 | PaymAccountsReceivablePaymentsClerk | Kundebetalingsassistent         | ERFormatDestinationRuntimeConfigure | Konfigurer mål for elektronisk rapporteringsformat under kjøretid |
 
-> ![Obs!] To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
+> [!NOTE]
+> To rettigheter brukes i de forrige pliktene. Disse rettighetene har samme navn som tilsvarende plikter: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jeg har importert elektroniske konfigurasjoner, og jeg kan se dem på siden Elektroniske rapporteringskonfigurasjoner. Hvorfor jeg kan ikke se dem på siden Mål for elektronisk rapportering?
@@ -153,7 +155,7 @@ Formelen er spesifikk for ER-konfigurasjonen. Hvis du for eksempel bruker konfig
 
 Forutsetningen er at formatet må være tilgjengelig i ER-konfigurasjoner. Hvis du har formatet, åpner du siden **Mål for elektronisk rapportering**, og oppretter en ny referanse til denne konfigurasjonen. Deretter må du ha fire filmål, ett for hver utdatakomponent. Opprette første filmålet, gi det et navn, for eksempel **Mappe**, og velg et filnavn som representerer en mappe i konfigurasjonen. Klikk deretter **Innstillinger**, og kontroller at alle mål er deaktivert. Mappen opprettes ikke for dette filmålet. Som standard, på grunn av hierarkiske avhengigheter mellom filer og overordnede mapper, vil filer fungere på samme måte. Med andre ord, de blir ikke sendt noe sted. Hvis du vil overstyre denne standard virkemåten, må du opprette tre filmål til, ett for hver fil. Du må aktivere målet som filen skal sendes til i målinnstillingene for hver av dem.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 

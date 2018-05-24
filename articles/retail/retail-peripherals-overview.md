@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Oversikt over eksterne enheter for detaljhandel
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter. Det beskriver ulike måter enheter kan kobles til salgsstedet og komponentene som er ansvarlig for å administrere tilkoblingen til salgsstedet.
 
@@ -786,7 +786,7 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
     -   Betalingsterminal 
 
     Hvis den eksterne enheten ikke tilhører én av disse kategoriene, er ikke maskinvarestasjonen utformet for å aktivere deling av den eksterne enheten mellom flere POS-enheter.
--   Enhetsdrivere kan noen ganger føre til at Common Control Objects (CCO-er) slutter å fungere slik de skal. Hvis en enhet nylig er installert, men den ikke fungerer slik den skal eller du legger merke til andre problemer, kan du ofte løse problemet ved å installere CCO-er. Hvis du vil laste ned CCO-ene, kan du gå til <http://monroecs.com/oposccos_current.htm>.
+-   Enhetsdrivere kan noen ganger føre til at Common Control Objects (CCO-er) slutter å fungere slik de skal. Hvis en enhet nylig er installert, men den ikke fungerer slik den skal eller du legger merke til andre problemer, kan du ofte løse problemet ved å installere CCO-er. Du kan laste ned CCO-er ved å gå til <http://monroecs.com/oposccos_current.htm>.
 -   Hvis du ofte endrer eksterne enheter under testing eller feilsøking, må du kanskje tilbakestille IIS i stedet for å vente på at hurtigbufferen skal oppdatere seg selv. Følg denne fremgangsmåten for å tilbakestille IIS:
     1.  Skriv inn **CMD** på **Start**-menyen.
     2.  Høyreklikk **Ledetekst** i søkeresultatet, og klikk deretter på **Kjør som administrator**.
@@ -801,10 +801,10 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
     6.  Når DLL-vertene er avsluttet, starter du Modern POS på nytt.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Simulator for eksterne detaljhandelsenheter](dev-itpro/retail-peripheral-simulator.md)
+[Simulator for eksterne enheter for Retail](dev-itpro/retail-peripheral-simulator.md)
 
 
 

@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Kostnadsanalyse for produksjonsordrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kostnadsanalysen som du kan utføre for fullførte og gjeldende produksjonsordrer. Du kan analysere de estimerte kostnadene og faktiske kostnadene ved hjelp av siden Prisberegning eller rapporten Kostnadsestimater og etterkalkuleringer. Du kan vise informasjon om de estimerte og faktiske kostnadene (og antallene) for hver komponentvare, rutingoperasjon og indirekte kostnad.
 
@@ -59,7 +59,7 @@ Egne rapporter inneholder informasjon om hver transaksjonstype. Bruk disse rappo
 -   **Ferdigvarer i arbeid**− Denne rapporten viser gjeldende produksjonsordrer og ferdigmeldingstransaksjonene per en angitt transaksjonsdato.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Vanlige kilder til produksjonsavvik](common-sources-of-production-variances.md)

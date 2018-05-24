@@ -19,16 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 
@@ -97,7 +97,7 @@ Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet *
 
 Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Hjelp for å tilpasse felt](../../dev-itpro/user-interface/customize-field-help.md)

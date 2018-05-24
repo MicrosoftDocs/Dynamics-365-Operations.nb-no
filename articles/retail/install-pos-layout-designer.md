@@ -20,16 +20,16 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8fdebf692bd3cd8500274cc73ca5b0591dba4140
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 30adfefd5ec70ddce348dab2481d518875e01ff2
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Installere utforming av oppsett for Retail POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du kan bruke ettklikksutformingen til å utforme forskjellige oppsett for Moderne salgssted (MPOS) og Skybaser salgssted i liggende eller stående modus for butikker, kasser, kasserere og ledere.
 
@@ -51,7 +51,7 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 
 **Kjent problem:** Utformingen fungerer ikke slik den skal i nettleserne Google Chrome eller Mozilla Firefox. Vi arbeider for å løse dette problemet.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Konfigurere, laste ned, installere og aktivere moderne salgssted for detaljhandel](retail-modern-pos-device-activation.md)

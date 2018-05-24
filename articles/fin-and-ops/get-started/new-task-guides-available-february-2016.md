@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016.  Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics AX og (februar 2016) Komme i gang.
 
@@ -719,7 +719,7 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
  
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)

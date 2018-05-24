@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av leverandørportalen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX.
 
@@ -96,7 +96,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 |                           Du sender den nye versjonen av bestillingen til leverdnaørportalen.                            |                                                                                                                                                                    Den nye versjonen registreres på leverandørportalen, og statusen endres til <strong>Til ekstern vurdering</strong>.                                                                                                                                                                     |
 |                                Leverandøren godkjenner den nye versjonen av bestillingen.                                 |                                                                                                                                                     Statusen endres til <strong>Bekreftet</strong>, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen.                                                                                                                                                     |
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Konfigurering av sikkerhet for brukere av leverandørsamarbeid](configure-security-vendor-portal-users.md)

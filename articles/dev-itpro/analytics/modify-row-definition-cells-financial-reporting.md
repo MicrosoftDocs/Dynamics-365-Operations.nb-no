@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen. 
 
@@ -488,10 +488,10 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 1.  Åpne rad-, kolonne- eller tredefinisjonen som skal endres, i Rapportutforming.
 2.  Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3.  Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
-4.  Velg settet som skal slettes, og klikk deretter **Slett**. Klikk **Ja** for å slette dimensjonsverdisettet permanent.
+4.  Merk settet du vil slette, og klikk deretter **Slett**. Klikk **Ja** for å slette dimensjonsverdisettet permanent.
 
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
 

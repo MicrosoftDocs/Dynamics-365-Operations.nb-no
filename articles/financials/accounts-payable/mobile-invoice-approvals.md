@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mobile funksjoner i Microsoft Dynamics 365 for Finance and Operations kan utforme mobile erfaringer forretningsvirksomhet. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
@@ -175,9 +175,9 @@ Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **Ve
 1. I Finance and Operations erstatter du navnet på menyelementet med **VendMobileInvoiceHeaderDetails** for å åpne skjemaet
 2. Åpne utformingen for mobil fra **Innstillinger** (tannhjul)-knappen.
 3. Klikk på **Rediger**-knappen for å starte redigeringsmodus i arbeidsområdet.
-4. Velg siden <strong>Mine leverandørfakturaer</strong> som du opprettet tidligere, og klikk deretter Rediger.
+4. Velg siden **Mine leverandørfakturaer** som du opprettet tidligere, og klikk deretter **Rediger**.
 5. På kategorien **Felt** klikker du **Rutenett**-kolonneoverskriften.
-6. Klikk **Egenskaper** &gt; **Legg til side**. **Obs!** Når du klikker på **Rutenett**-overskriften og legger til en side, i forhold til detaljene siden opprettes automatisk.
+6. Klikk **Egenskaper &gt; Legg til side**. **Obs!** Når du klikker på **Rutenett**-overskriften og legger til en side, i forhold til detaljene siden opprettes automatisk.
 7. Angi en tittel, som **Fakturaopplysninger**, og en beskrivelse, som **Vis fakturahode og linjedetaljer**.
 8. Klikk **Velg felt**. Legg merke til at rekkefølgen som du legger til, er rekkefølgen som feltene vises til sluttbrukeren. Vil være den eneste måten å endre rekkefølgen på feltene ved å velge alle feltene på nytt. 
 9. Legg til følgende felt fra hodet, basert på kravene for dette scenariet:

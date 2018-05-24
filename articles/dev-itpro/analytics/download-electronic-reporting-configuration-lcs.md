@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8fae33fbe2d1433e4263ed4087dad2bc894e0b84
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1a4e8c25fb65b35a52a0d1bc0f1a745c06ca53ab
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du laster ned konfigurasjoner for elektronisk rapportering (ER) for fra Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -58,7 +58,7 @@ Denne opplæringen leder deg gjennom prosessen med å laste ned nyeste versjon a
 
 **Merk:** Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse disse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte artikler for dette emnet.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)

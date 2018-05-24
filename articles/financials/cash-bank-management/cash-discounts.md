@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Kontantrabatt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kontantrabatter konfigureres og deles for leverandører og kunder.  Den tilgjengelige kontantrabatten kan defineres på kundefaktura eller leverandørfaktura, og brukes hvis fakturaen betales innen kontantrabattdatoen. 
 
-<a name="cash-discounts"></a>Kontantrabatt
---------------
+## <a name="cash-discounts"></a>Kontantrabatt
 
 Kontantrabatter for både kunder eller leverandører kan opprettes på siden for kontantrabatter. Du kan også definere, ved hjelp av feltet Neste rabattkode, en serie med kontantrabatter som kommer etter hverandre etter hvert som tidligere kontantrabattdatoer utløper. Hvis du vil ha mer informasjon, se "Eksempel: Serie med kontantrabatter" senere i dette emnet. Hvis fakturaen, kredittransaksjonen (en betaling eller en kreditnota) eller begge deler er angitt i en annen valuta enn regnskapsvalutaen for den juridiske enheten, blir kontantrabatten beregnet ved hjelp av valutakursen som er basert på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kredittdokumentet er angitt i ulike juridiske enheter, og hvis regnskapsvalutaene for de juridiske enhetene er forskjellige, hentes valutakursen fra den juridiske enheten for fakturaen, i henhold til datoen for kredittdokumentet. Hvis du vil ha mer informasjon, se "Eksempel: Valutakurser for kontantrabatter" senere i dette emnet.
-Standardrekkefølge for kontantrabatthovedkonto
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardrekkefølge for kontantrabatthovedkonto
 
 Hvis en faktura betales tidsnok til å få en kontantrabatt, posteres kontantrabatten automatisk til en kontantrabatthovedkonto i henhold til følgende standardprioritet:
 1.  Hovedkontoen som er angitt i feltet Alternativ kontantrabattkonto på kundesiden Utlign åpne transaksjoner eller leverandørsiden Utlign åpne transaksjoner.
@@ -65,15 +64,7 @@ Regnskapsvalutaen for den juridiske enheten er EUR, og følgende valutakurser er
 
 Det posteres en faktura på USD 1 000 med vilkårene for kontantrabatt på 20D2% 15. februar. Regnskapsvalutabeløpet på fakturaen er 1100 EUR. En betaling på USD 980 betales med fakturaen 1. mars. Kontantrabattbeløpet er USD 20. Regnskapsvalutabeløpet for betalingen er EUR 784. Regnskapsvalutabeløpet for kontantrabatten blir beregnet ved hjelp av valutakursen 1. mars: 20 \* 80 / 100 = EUR 16.
 
-| **Obs!**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling. 
 
 

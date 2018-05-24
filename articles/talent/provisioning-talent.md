@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Klargjøre Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 for Talent. Dette emnet antar at du har kjøpt Talent gjennom en Cloud Solution Provider (CSP)- or enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Talent-serviceplanen, og du kan ikke fullføre trinnene i dette emnet, kan du kontakte kundestøtte.
 
@@ -54,17 +54,18 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
     > Hvis du vil vise eksisterende miljøer eller opprette nye miljøer, må leieradministratoren som klargjør Talent, være tilordnet til PowerApps P2-lisensen. Hvis organisasjonen ikke har en PowerApps P2-lisens, kan du få en fra CSP-en eller fra [PowerApps-prisingssiden](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Velg **Legg til**, og velg deretter miljøet som Talent skal klargjøres for.
-5. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
+5. Velg alternativet "Omfatter demodata" hvis du vil at ditt miljø skal ta med samme demodatasett brukt i testversjonen av Talent.  Dette er nyttig for langsiktig demo eller opplæring miljøer, og bør aldri brukes for produksjonsmiljøer.  Vær oppmerksom på at du må velge dette alternativet ved distribusjon, og kan ikke oppdatere en eksisterende distribusjon senere.
+6. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
 
     Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen oppdateres til **Distribuert**. Denne prosessen tar vanligvis bare noen få minutter. Hvis klargjøringsprosessen mislykkes, må du kontakte kundestøtte.
 
-6. Velg **Logg på Talent** for å bruke det nye miljøet ditt.
+7. Velg **Logg på Talent** for å bruke det nye miljøet ditt.
 
 > [!NOTE]
 > Hvis du ennå ikke har godkjent for de endelige kravene, kan du distribuere en testforekomst av Talent i prosjektet. Du kan deretter bruke denne forekomsten til å teste løsningen til du godkjenner. Hvis du bruker det nye miljøet for testing, må du gjenta denne fremgangsmåten for å opprette et produksjonsmiljø.
 
 > [!NOTE]
-> Talentmiljøer som klargjøres gjennom LCS, inneholder ikke demodata som er konfigurert for personaloppgaver, eller som er spesifikke for Talent. Hvis du trenger et miljø som inneholder demodata, anbefaler vi at du registrerer deg for et gratis 60-dagers [Talent-prøvemiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for kjerne-HR. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+> Siden bare to LCS miljøer er tillatt som en del av Talent-abonnementet, kan du også vurdere en gratis 60-dagers [Talent-prøvemiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for kjerne-HR. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 ## <a name="select-a-powerapps-environment"></a>Velge et PowerApps-miljø
 
@@ -104,13 +105,15 @@ Fullfør fremgangsmåten nedenfor for å kjøre skriptet:
 
 1. Last ned filen ProvisionCDSEnvironment.zip fra følgende plassering: [ProvisionCDSEnvironment-skript](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Pakk ut hele innholdet i filen ProvisionCDSEnviroinment.zip til en mappe.
+2. Fra nedlastingsmappen, høyreklikk filen ProvisionCDSEnvironment.zip nettopp lastet ned og velg **Egenskaper**.  Hvis det er en sikkerhetsmelding nederst i dialogboksen som sier "Denne filen kommer fra en annen datamaskin, og kan være blokkert for å beskytte datamaskinen", merker du av for **Fjern blokkering**, deretter klikk **Bruk** og **OK**.
 
-3. Kjør Windows PowerShell- eller Windows PowerShell ISE-programmet som administrator.
+3. Pakk ut hele innholdet i filen ProvisionCDSEnviroinment.zip til en mappe, som ikke kan være rotmappen.
 
-   Se emnet [Angi policyen for kjøring](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) hvis du vil ha mer informasjon om hvordan du angir policyen for kjøring slik at skript kan kjøres.
+4. Kjør Windows PowerShell- eller Windows PowerShell ISE-programmet som administrator.
+
+   Se emnet [Angi policyen for kjøring](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) hvis du vil ha mer informasjon om hvordan du angir policyen for kjøring slik at skript kan kjøres. Vi foreslår at du bruker følgende "Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process", men pass på å følge dine retningslinjer for sikkerhet i firmaet, og lukk PowerShell-vinduet når du er ferdig. 
   
-4. I PowerShell går du til mappen der du pakket ut filen, og kjører følgende kommando, der du erstatter verdier som anvist nedenfor:
+5. I PowerShell går du til mappen der du pakket ut filen, og kjører følgende kommando, der du erstatter verdier som anvist nedenfor:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
@@ -121,18 +124,10 @@ Fullfør fremgangsmåten nedenfor for å kjøre skriptet:
 
    **-Dealjert** er valgfritt og gir detaljert informasjon som skal sendes til kundestøtte hvis det oppstår problemer.
 
-5. Fortsett med klargjøringen.
+6. Fortsett med klargjøringen.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
-Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du [legge til brukere](../dev-itpro/sysadmin/tasks/create-new-users.md) og [tilordne de riktige rollene til dem](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i kjerne-HR-miljøet. Du må også legge til disse brukerne i PowerApps-miljøet, slik at de får tilgang til Attract and Onboard-programmene. Fremgangsmåten er beskrevet her. Hvis du trenger hjelp til å fullføre trinnene, kan du se blogginnlegget [Introdusere PowerApps-administrasjonssenteret](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) .
+Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du [legge til brukere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [tilordne de riktige rollene til dem](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i kjerne-HR-miljøet. Globale administratoren som distribuerte Talent, må også starte både Attract- og Onboard-programmene for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere.  Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil.
 
-Denne prosedyren fullføres av den globale administratoren som distribuerte Talent-miljøet.
-
-1. Åpne [PowerApps-administrasjonssenteret](https://preview.admin.powerapps.com/environments).
-2. Merk av for de aktuelle miljøene.
-3. Legg til nødvendige brukere til rollen **Miljøskaper** under kategorien **Sikkerhet**.
-
-    Merk at dette siste trinnet der du manuelt legger til brukere i PowerApps-miljøet, er midlertidig. Til slutt vil det bli fullført automatisk når brukere legges til i kjerne-HR.
 

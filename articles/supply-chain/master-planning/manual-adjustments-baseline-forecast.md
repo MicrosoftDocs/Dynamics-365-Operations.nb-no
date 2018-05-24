@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 543a88a8df4252e5bf1b6b27b5209650c1ceca0b
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
 
@@ -76,7 +76,7 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)

@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 838dc40fb3fa2b0de7fa131850754c3674266d73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Nye eller oppdaterte oppgaveveiledninger (august 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Oppgaveveiledninger i (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (august 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 ---------------------------------------------------------------------------------------------------
 
 (August 2016 – alle språk) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Microsoft Dynamics AX platformoppdatering 2 (august 2016), Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nytt eller endret](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
@@ -97,7 +97,7 @@ Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Mi
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)

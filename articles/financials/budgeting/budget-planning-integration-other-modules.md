@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integrering av budsjettplanlegging med andre moduler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Budsjettplaner kan genereres fra flere, ulike ressurser. De grunnleggende elementene i den periodiske prosessen er den samme for alle ressurser. 
 
@@ -68,7 +68,7 @@ Alternativet **Historisk** i kategorien **Mål** lar deg bruke datoene fra kilde
 
 Feltet **Aggreger total etter** øverst på siden bestemmer også datoen som skal brukes. Dette feltet summerer beløpene, og angir valgfritt den gyldige datoen til den første dagen i regnskapsåret eller regnskapsperioden. 
 
-Mange av feltene i kategorien <strong>Mål</strong> blir redigerbare eller skrivebeskyttet, avhengig av handlingen du har valgt. Når du endrer fra å opprette en ny budsjettplan for å oppdatere en eksisterende plan, blir feltet <strong>Navn på budsjettplan</strong> utilgjengelig, og feltene som er knyttet til å velge en eksisterende plan, blir tilgjengelige. I både kategoriene <strong>Mål</strong> og <strong>Kilde</strong> er feltet Finans alltid utilgjengelig, fordi verdien bestemmes av den valgte budsjettplanleggingsprosessen. 
+Mange av feltene i kategorien <strong>Mål</strong> blir redigerbare eller skrivebeskyttet, avhengig av handlingen du har valgt. Når du endrer fra å opprette en ny budsjettplan for å oppdatere en eksisterende plan, blir feltet **Navn på budsjettplan** utilgjengelig, og feltene som er knyttet til å velge en eksisterende plan, blir tilgjengelige. I både kategoriene **Mål** og **Kilde** er feltet **Finans** alltid utilgjengelig, fordi verdien bestemmes av den valgte budsjettplanleggingsprosessen. 
 
 Feltet **Budsjettklasse** lar deg angi budsjettplanlinjene som utgiftstransaksjoner eller inntektstransaksjoner. Vanligvis er inntektstransaksjoner krediteringer til en finanskonto og lagres derfor som negative beløp. Vanligvis vises disse transaksjonene også som negative beløp i budsjettplanen. Ved å sette inn budsjettklassen som et felt i planoppsettet, kan du imidlertid aktivere at inntekter skal vises som positive beløp.
 

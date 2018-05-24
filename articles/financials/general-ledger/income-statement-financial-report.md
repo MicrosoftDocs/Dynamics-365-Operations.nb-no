@@ -19,16 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ca90b949a1a2b5af4a0fd78ddf80d5add2565b9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9310508082ff710cd040b74519044f5a90c23988
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
 
@@ -61,7 +61,7 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Finansrapportering](financial-reporting-getting-started.md)

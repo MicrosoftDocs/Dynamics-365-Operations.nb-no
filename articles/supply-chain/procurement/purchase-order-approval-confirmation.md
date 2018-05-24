@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1c7209c91f3821a77e9b127d767c78df403ff6cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger.
 
@@ -75,14 +75,14 @@ Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du i
 
 Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avbryte det totale antallet eller eventuelle restantallet i en ordre, forutsatt at antallet ikke er mottatt eller fakturert.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)
 
 [Opprett bestilling](purchase-order-creation.md)
 
-[Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
+[Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 

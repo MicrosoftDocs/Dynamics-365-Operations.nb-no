@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5d13024ba15744f81406c4c8f5d5d33de658d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-fixed-compensation-plans"></a>Opprette faste kompensasjonsplaner
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
 
@@ -101,7 +101,7 @@ Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-s
 
 Systemet kontrollerer at kompensasjonsbeløpet som er angitt for en kompensasjonsplan av typen klasse eller segment, er innenfor de minste og største referansepunktene for gitt kompensasjonsnivå i den ansattes jobb. Hvis kompensasjonsbeløpet er utenfor tillatt område, vises en advarsel eller feilmelding, avhengig av toleransenivået som er angitt i den faste kompensasjonsplanen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Kompensasjonsplaner](compensation-plans.md)

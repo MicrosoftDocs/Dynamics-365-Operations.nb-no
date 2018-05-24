@@ -20,16 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen med å produsere et produkt eller en produktvariant. Den beskriver hvert trinn (operasjon) i produksjonsprosessen, og rekkefølgen disse trinnene må utføres i. For hvert trinn definerer ruten også nødvendige operasjonsressurser, nødvendig oppstillingstid og operasjonstid, og hvordan kostnader skal beregnes.
 
@@ -230,12 +230,12 @@ Hvis du ikke angir en operasjonsressurs eller ressursgruppe som en del av ressur
 -   **Ressursbunke** – Dette alternativet er stort sett den samme som **Bunke**-alternativet. Beregningen inkluderer imidlertid **Bunkekapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Stykklister og formler](bill-of-material-bom.md)
 
-[Kostnadskategorier som brukes i produksjonsruting](../cost-management/cost-categories-used-production-routings.md)
+[Kostnadskategorier brukt i produksjonsruting](../cost-management/cost-categories-used-production-routings.md)
 
 [Ressursfunksjoner](resource-capabilities.md)
 

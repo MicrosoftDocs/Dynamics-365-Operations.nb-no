@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostnadsregnskap gir deg innsikt i hvordan kostnadsflyten er knyttet til produktene og tjenestene som leveres i en organisasjon. Hvis du vil se kostnadsgjennomsiktigheten, er det avgjørende å oppnå kostnadsfordeling mellom kostnadsobjekter basert på et passende tildelingsgrunnlag. Kostnadsfordelingen oppnås som standard for det primære kostnadselementet, som er ønskelig i noen tilfeller, men det har enkelte implikasjoner som må vurderes.
 
@@ -297,7 +297,7 @@ Det klare skillet mellom **Kostnadsfordelinger** og **Policyer for opprullet kos
 
 
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 -  [Kostnadsobjektdimensjoner](cost-objects.md)
 -  [Kostnadselementdimensjoner](cost-elements.md)
 -  [Dimensjonshierarkier](dimension-hierarchy.md)

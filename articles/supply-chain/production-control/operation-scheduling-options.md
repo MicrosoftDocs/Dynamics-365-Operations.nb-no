@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 56eeb2b56261dc3e576192c0ede405996d82b2b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 41d5d933a43f5cc4c84c33bdb0896c9d4a9a28cc
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling-options"></a>Alternativer for grovplanlegging
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 
@@ -128,7 +128,7 @@ Du kan lagre de gjeldende verdiene som standardverdier. Det finnes to alternativ
 -   Angi som standard for alle
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Grovplanlegging](operations-scheduling.md)

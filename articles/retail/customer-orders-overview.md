@@ -20,16 +20,16 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ce6774ede836eb29e6ef2cd8d4baa9efb931020c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f46cf7d4df4a8cb0ad1846882292965aa492239b
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="customer-orders-overview"></a>Oversikt over kundeordrer
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet gir informasjon om kundeordrer i Moderne salgssted for detaljhandel (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 
@@ -95,10 +95,10 @@ Kundeordrer kan opprettes fra salgssted-klienten i synkron eller asynkron modus.
 
 Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om RTS er tilgjengelig. Hvis du setter dette alternativet til **Nei**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, hentes og settes de inn i Retail ved hentejobber (P-jobber). De tilsvarende salgsordrene opprettes i Retail når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Hybridkundeordrer](hybrid-customer-orders.md)
+[Hybride kundeordrer](hybrid-customer-orders.md)
 
 
 

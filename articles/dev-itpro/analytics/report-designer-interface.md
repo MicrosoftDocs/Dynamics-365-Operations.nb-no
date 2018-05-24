@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Grensesnitt for Rapportutforming
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov. 
 
@@ -220,11 +220,11 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 | [![Kolonnedefinisjon-knappen](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis kolonnedefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                                 |
 | [![Rapporteringstredefinisjon-knappen](./media/treec130389.png)](./media/treec130389.png)             | Vis rapporteringstredefinisjonen som er tilordnet den aktive rapportdefinisjonen.                                                                                         |
 | [![Rapportvisning-knappen](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportvisning, og vis den nyeste versjonen av den genererte rapporten. Denne knappen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport. |
-| [![Generer rapport-knappen](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generer en rapport fra den aktive rapportdefinisjonen. Denne knappen er tilgjengelig fra en rapportdefinisjon.                                                                      |
+| [![Generer rapport-knappen](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Genererer en rapport fra den aktive rapportdefinisjonen. Denne knappen er tilgjengelig fra en rapportdefinisjon.                                                                      |
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Finansrapportering](financial-reporting-intro.md)

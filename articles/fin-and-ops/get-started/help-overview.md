@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Oversikt over hjelpesystem
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
 
@@ -60,7 +60,7 @@ docs.microsoft.com-området ([docs.microsoft.com/dynamics365/unified-operations]
 
 -   **Tilgang til det mest oppdaterte innholdet** – Området gir oss en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor bidrar det til å sørge for at du har tilgang til den nyeste tekniske informasjonen.
 -   **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
--   **Tilgang til ulike typer innhold** – Området lar deg raskt få tilgang ulike typer innhold om Finance and Operations, for eksempel Microsoft Office Mix-presentasjoner, oppgaveveiledninger, videoer og emner.
+-   **Tilgang til ulike typer innhold** – Området lar deg raskt få tilgang ulike typer innhold om Finance and Operations, for eksempel oppgaveveiledninger, videoer og emner.
 -   **Innhold som støtter forretningsprosesser** – Området inneholder forretningsprosessfokusert innhold som drar nytte av Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Søk på docs.microsoft.com
@@ -204,7 +204,7 @@ Følgende tabell viser nettstedene våre. Våre innholdswebområder er organiser
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 [Finance and Operations-hjelpesystem (nedlastbart faktaark)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

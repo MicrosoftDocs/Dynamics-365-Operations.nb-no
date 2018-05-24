@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi for produktvariantnumre og navn
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan definere en produktnummerterminologi for å erstatte det faste formatet [Produktstandardnummer - Konfigurasjon - Størrelse - Farge - Stil]. Den nye terminologien har et bestemt format som inkluderer produktstandardnummer, aktive produktdimensjoner og skilletegn for tekst du velger. Du kan også opprette en terminologi for produktnavn. Du kan også bygge en terminologi for å identifisere konfigurasjonene som er opprettet av den restriksjonsbaserte produktkonfiguratoren. Disse terminologiene kan inneholde attributtene du velger.
 
@@ -192,10 +192,10 @@ Avhengig av terminologien kan systemet prøve å tilordne et ikke-unikt produktv
 
 Under ett trinn i konfigurasjonsprosessen foreslår systemet en konfigurasjonsverdi i henhold til terminologien. I dette trinnet kan du endre konfigurasjonsverdien manuelt. Når du lagrer konfigurasjonen, kontrolleres det om konfigurasjonsverdien er unik. Hvis verdien du angav, ikke er unik, får du en feilmelding. For å lagre konfigurasjonen må du angi en unik konfigurasjonsverdi.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Opprette produktnummerterminologi for forhåndsdefinerte produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Opprette en produktnummerterminologi for forhåndsdefinerte produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Opprette produktnummerterminologi for konfigurerte produktvarianter](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

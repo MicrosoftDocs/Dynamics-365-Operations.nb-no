@@ -3,7 +3,7 @@ title: Integrasjon med Microsoft Dynamics 365 for Field Service
 description: Dette emnet gir en oversikt over integrasjonen med Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: d32a4e376770fc73c79b94924d5ae062d201d84a
-ms.openlocfilehash: a224962152e80293f6cf3425dea74d73a283e31a
+ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
+ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/12/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -44,6 +44,12 @@ Den første fasen av integreringen mellom Field Service og Finance and Operation
 - [Arbeidsordrer i Field Service til salgsordrer i Finance and Operations](field-service-work-order.md)
 - [Fakturaer i Field Service til fritekstfakturaer i Finance and Operations](field-service-invoice.md)
 
+Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Finance og Operations, kan du se den korte YouTube videoen:
+
+> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
+
+[Synkronisere en arbeidsordre mellom Field Service og Finance and Operations (YouTube-video)](https://youtu.be/hAB4TDVMjxU)
+
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
 Field Service-integrasjon støtter følgende versjoner:
 
@@ -58,5 +64,5 @@ For å bruke Field Service-integrasjonsløsningen må du installere følgende ko
 
 - Dynamics 365 for Field Service versjon 1612 (9.0.1.733) (DB 9.0.1.733) online eller en senere versjon.
 - Prospect to Cash (P2C)-løsningen for Dynamics 365, versjon 1.15.0.1 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Field Service-integrasjonsløsning for Dynamics 365, versjon 1.0.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra AppSource. **(VENTER PÅ FRIGIVELSE)**
+- Field Service-integrasjonsløsning for Dynamics 365, versjon 1.0.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.p2cfieldserviceintegration).
 

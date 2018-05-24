@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ee9baefc95c24d23edca8438792c9648f77e1bdf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d01ef1c496c7c79795d9d740ee755e84434dfdf1
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen inneholder generell informasjon om bestillinger og koblinger til flere artikler som er knyttet til de ulike stadiene som en bestilling går gjennom.
 
@@ -82,7 +82,7 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 -   **Bekreftet** – Denne statusen blir tilordnet når bestillingen er bekreftet. Denne statusen er vanligvis den siste godkjenningsstatusen som tilordnes en ordre.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprett bestilling](purchase-order-creation.md)

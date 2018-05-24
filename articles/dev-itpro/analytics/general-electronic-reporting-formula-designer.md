@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke formler for å transformere data slik at de oppfyller kravene for fullføringen og formatering for dokumentet. Disse formlene ligner på formler i Microsoft Excel. Ulike typer funksjoner støttes i formlene: tekst, dato og klokkeslett, matematisk logiske, informasjon, konvertering av datatype og andre (domenespesifikke forretningsfunksjoner).
 
@@ -647,7 +647,7 @@ Parameteren Skriv ut valutanavn og parameteren Desimaler analyseres bare for fø
 
 ER lar deg utvide listen over funksjoner som brukes i ER-uttrykk. Det er nødvendig med noe utvikling. Hvis du vil ha mer informasjon, kan du se [Utvide listen over elektroniske rapporteringsfunksjoner](general-electronic-reporting-formulas-list-extension.md).
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 

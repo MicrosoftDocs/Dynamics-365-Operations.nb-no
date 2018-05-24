@@ -19,16 +19,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02daa312d74311432c0c468e3e691637dcf94157
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7975003620d951717c66144c8d0521de0f69158
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="import-historical-data-for-demand-forecasts"></a>Importere historiske data for behovsprognoser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 For å garantere nøyaktigheten til behovsprognoser må du ha så mange historiske behovsdata som du kan få per vare eller varetildelingsnøkkel. Hvis de historiske behovsdataene ikke allerede er importert, bruker du dataenheten **Historisk eksternt behov** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations til å importere dem.
 
@@ -57,7 +57,7 @@ Du kan bruke følgende fil som et eksempel. Last ned [HistoricalDemandData](http
 
 Når du har importert de historiske behovsdataene, kan du generere en behovsprognose.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
 

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Bruke sporing for nedbryting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting.
 
@@ -42,7 +42,7 @@ Ved å aktivere sporing kan du vise informasjon om faktorene som bidro til resul
 
 Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten. Sporing skjer når du bryter ned en ordre. For å starte sporing for ordren klikk **Oppdater**, og merk deretter av for **Aktiver sporing**. Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen. Søkeresultatene er uthevet i treet.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Hovedplaner](master-plans.md)

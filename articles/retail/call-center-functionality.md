@@ -3,7 +3,7 @@ title: Telefonsenterfunksjonalitet
 description: Dette emnet gir en oversikt over telefonsenterspesifikke salgsfunksjoner i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Telefonsenterfunksjonalitet
+# <a name="call-center"></a>Telefonsenter 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Denne artikkelen gir en oversikt over telefonsenterspesifikke salgsfunksjoner i Microsoft Dynamics 365 for Retail.
+I Dynamics 365 for Retail er et telefonsenter en type detaljhandelskanal som kan defineres i programmet. Ved å definere en bestemt kanal for telefonsenterenheter kan systemet knytte bestemte datastandarder og andre ordrebehandlingsstandarder til salgsordrer som er opprettet av en bruker av lefonsenterkanalen.
 
-Dynamics 365 for Retail støtter også telefonsentre som en type detaljhandelskanal. I et telefonsenter tar arbeidere imot ordrer fra kunder over telefon og oppretter salgsordrer. Telefonsenterfunksjonaliteten omfatter funksjoner som er utviklet for å gjøre det enklere å ta imot telefonordrer og håndtere kundeservice under oppfyllelsen av ordren. Telefonsenterarbeidere kan for eksempel angi betalingsinformasjon direkte i salgsordren, og kan vise en detaljert oversikt over gebyrer og betalinger før de sender ordren. Arbeidere har også alternativer for styring av priser, og de har tilgang til forskjellige data om kunder, produkter og priser fra siden **Salgsordre**. Telefonsentre har også forbedret funksjonalitet for sporing av kundehistorikk og ordrestatus. Hvert telefonsenter kan ha sine egne brukere, betalingsmåter, prisgrupper, finansdimensjoner og leveringsmåter. Du kan konfigurere disse alternativene når du oppretter telefonsenteret. Du kan også bruke siden **Telefonsenter** til å aktivere eller deaktivere følgende funksjonsgrupper som er unike for telefonsentre:
+Telefonsenterfunksjonene omfatter avansert utsalgspris og kampanjer, kataloger, gavekort, lojalitetsprogrammer og kuponger. Telefonsenterordrer utnyttes også av salgsstedsprogrammet (POS) til å støtte ordrefullføring på tvers av kanaler.
 
--   **Ordrefullføring** – Denne gruppen inneholder funksjoner som er relatert til betalinger og ordrefullføring på siden **Salgsordre**.
--   **Styrt salg** – Denne gruppen inneholder funksjoner som er knyttet til kildekoder, skript og katalogforespørsler.
+Det er viktig å være klar over at selv om telefonsentermodulen kan brukes av andre bransjer utenfor detaljhandelen, er ikke den gjeldende versjonen av Dynamics 365 for Retail-telefonsenterprogrammet optimalisert for bruk i B2B-ordrebehandlingsscenarier (bedrift til bedrift) eller scenarier der ordrer har store mengder salgslinjer. Det anbefales at brukere som ønsker å bruke telefonsenterfunksjoner for ordrebehandling utenfor vanlig transaksjonsbehandling direkte til kunde, tar seg tilstrekkelig tid til å teste og validere at aktivering av telefonsenterfunksjonene oppfyller funksjonelle og ytelsesbehov.
 
-Når du aktiverer disse funksjonene i innstillingene for telefonsenter, blir de tilgjengelige på siden **Salgsordre** for brukere som er knyttet til telefonsenteret. De fleste av disse funksjonene krever ekstra oppsett før de kan brukes. Før brukere kan opprette telefonsenterordrer, må du legge til disse brukerne i telefonsenteret som telefonsenterbrukere. Dette trinnet aktiverer kanalspesifikke konfigurasjon og funksjonalitet for telefonsenteret. Her er noen eksempler på hvilke funksjoner som er tilgjengelige:
+I tillegg til støtte for ordreoppretting har telefonsentermodulen også et brukervennlig kundeserviceprogram som gjør det enklere for brukerne å finne kundekontoer og gå gjennom alle tilknyttede ordredata og attributter. Kundetjenesteskjermen er utformet for at en bruker raskt skal kunne få tilgang til ordrerelaterte data som gjør at de kan svare på de fleste vanlige ordrerelaterte spørsmål fra kunder.
 
--   Veiledet salg omfatter konfigurasjonsalternativer for telefonsalgskript og produktbilder for å hjelpe og veilede salgsassistenter mens de tar imot ordrer.
--   Ordrer kan ikke fullføres før salgsassistenten har registrert minimum én betalingsmåte.
--   Regler for mersalg og kryssalg kan konfigureres til å be salgsassistenter om å fremme bestemte produkter til kunden.
--   Salgsassistenter kan registrere kildekoden for katalogen som en kunde bestiller fra.
--   Salgsassistenter kan legge til en forhandlers kuponger i ordren.
--   Salgassistenter kan selge kontinuitetsprogrammer.
--   Ordrer kan settes på vent manuelt eller automatisk, for å angi at andre undersøkelser kreves før ordren kan behandles.
+Denne siden inneholder koblinger til relevante dokumentasjon som er knyttet til installasjon, konfigurasjon og funksjonell bruk av telefonsenterfunksjonene i Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Konfigurere telefonsenteret
+[Definere alternativer for ordrebehandling](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
+[Definere svindelvarsler](set-up-fraud-alerts.md)
+[Manuelle ordresperrer](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
+[Betalingsmåter i et telefonsenter](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurere direkte markedsføring
+[Telefonsenterkataloger](call-center-catalogs.md)
+
+[Definere RFM-analyse](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
+[Definere et kontinuitetsprogram for et telefonsenter](set-up-continuity-program.md)
 
 

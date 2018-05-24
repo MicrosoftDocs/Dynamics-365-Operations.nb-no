@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Lagerkonfigurasjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 
@@ -112,7 +112,7 @@ Som navnet antyder brukes lokasjonsdirektiver til å styre arbeidstransaksjonene
 
 Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knyttet til hver lokasjonsdirektivlinje, kan du bruke en av de forhåndsdefinerte strategiene. Du kan for eksempel bruke **Tom lokasjon uten innkommende arbeid**-strategien for å søke etter ledige lokasjoner i et lager, eller du kan bruke **FEFO-partireservering**-strategien for utgående salgsplukking.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Konfigurere lokasjoner i et WMS-aktivert lager (oppgaveveiledning)](tasks/configure-locations-wms-enabled-warehouse.md)

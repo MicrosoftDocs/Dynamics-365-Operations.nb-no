@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprosessen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dette emnet forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
 
 Mange firmaer vil bare ha serienumre for service- og garantiformål, og trenger ikke vedlikeholde serienumrene på lageret fra mottak til avgang. I slike tilfeller lar Microsoft Dynamics 365 for Finance and Operations deg registrere serienumre på følgesedler eller fakturaer når varer selges. Hvis en vare returneres til deg senere, kan du spore den til en faktura for å finne ut om du solgte produktet, og om tjenesten eller garantiforpliktelsene er gyldige.
-Er eventuelle forhåndskrav gjeldende?
-----------------------------
 
 Du må aktivere serienumre for salgsprosessen ved å merke av for **Aktiv i salgsprosess** på siden **Sporingsdimensjonsgrupper**. Deretter inntreffer følgende hendelser i Microsoft Dynamics 365 for Finance and Operations:
 -   På hurtigfanen **Serienumre** er **Serienummerkontroll** avmerket. Når det er merket av for dette alternativet, må du registrere ett serienummer for hver vare på følgeseddelen eller fakturaen.
@@ -71,8 +69,8 @@ Nei, du kan ikke vise de serialiserte varene du har på lager fordi serienumre i
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jeg registrere serienumre for faktisk vekt-varer?
 Nei, du kan ikke registrere serienumre for faktisk vekt-varer under salgsprosessen. Hvis et produkt er definert som en faktisk vekt-vare, kan du ikke tilordne produktet til en sporingsdimensjonsgruppe som er konfigurert til å bruke serienumre bare i løpet av salgsprosessen.
-Kan jeg registrere serienumre på salgsstedet?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Kan jeg registrere serienumre på salgsstedet?
 
 Ja, salgsstedet ber brukeren om å angi et serienummer når brukeren selger en vare som er tilordnet en sporingsdimensjonsgruppe som er konfigurert til å bruke serienumre bare i løpet av salgsprosessen.
 
