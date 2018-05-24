@@ -20,33 +20,33 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f30227d90be5f957c4e23a08069c6dba9b07bb35
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 60f39b19a627e9c3288f30872d237b8c0ccd8ac4
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="inventory-object-values"></a><span data-ttu-id="5c332-103">Beholdningsobjektverdier</span><span class="sxs-lookup"><span data-stu-id="5c332-103">Inventory object values</span></span>
+# <a name="inventory-object-values"></a><span data-ttu-id="854ad-103">Beholdningsobjektverdier</span><span class="sxs-lookup"><span data-stu-id="854ad-103">Inventory object values</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5c332-104">Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes.</span><span class="sxs-lookup"><span data-stu-id="5c332-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
+<span data-ttu-id="854ad-104">Denne artikkelen inneholder informasjon om hvordan verdiene for et beholdningsobjekt beregnes.</span><span class="sxs-lookup"><span data-stu-id="854ad-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
 
-<span data-ttu-id="5c332-105">En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt beholdningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="5c332-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
+<span data-ttu-id="854ad-105">En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt beholdningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="854ad-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
 
-<span data-ttu-id="5c332-106">Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres.</span><span class="sxs-lookup"><span data-stu-id="5c332-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="5c332-107">Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="5c332-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
+<span data-ttu-id="854ad-106">Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres.</span><span class="sxs-lookup"><span data-stu-id="854ad-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="854ad-107">Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="854ad-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
 
-<span data-ttu-id="5c332-108">Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="5c332-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="5c332-109">Slik beregnes verdien til et beholdningsobjekt:</span><span class="sxs-lookup"><span data-stu-id="5c332-109">Here is how the value of an inventory object is calculated:</span></span> 
+<span data-ttu-id="854ad-108">Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="854ad-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="854ad-109">Slik beregnes verdien til et beholdningsobjekt:</span><span class="sxs-lookup"><span data-stu-id="854ad-109">Here is how the value of an inventory object is calculated:</span></span> 
 
-<span data-ttu-id="5c332-110">Beholdningsobjekt.Verdi = Kostnadsobjekt.Gjennomsnittlig enhetskostnad × Beholdningsobjektet.Antall</span><span class="sxs-lookup"><span data-stu-id="5c332-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
+<span data-ttu-id="854ad-110">Beholdningsobjekt.Verdi = Kostnadsobjekt.Gjennomsnittlig enhetskostnad × Beholdningsobjektet.Antall</span><span class="sxs-lookup"><span data-stu-id="854ad-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
 
-<span data-ttu-id="5c332-111">Eksemplet nedenfor viser hvordan en verdiene til et beholdningsobjekt og et kostnadsobjekt beregnes.</span><span class="sxs-lookup"><span data-stu-id="5c332-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="5c332-112">To produktkvitteringshendelser er registrert for vare A:</span><span class="sxs-lookup"><span data-stu-id="5c332-112">Two product receipt events are registered on item A:</span></span>
+<span data-ttu-id="854ad-111">Eksemplet nedenfor viser hvordan en verdiene til et beholdningsobjekt og et kostnadsobjekt beregnes.</span><span class="sxs-lookup"><span data-stu-id="854ad-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="854ad-112">To produktkvitteringshendelser er registrert for vare A:</span><span class="sxs-lookup"><span data-stu-id="854ad-112">Two product receipt events are registered on item A:</span></span>
 
--   <span data-ttu-id="5c332-113">Produktkvittering 1: Antall = 100 stk., Beløp = USD 1 000,00, Område = 1, Lager = 11, Partinr.</span><span class="sxs-lookup"><span data-stu-id="5c332-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="5c332-114">= B1</span><span class="sxs-lookup"><span data-stu-id="5c332-114">= B1</span></span>
--   <span data-ttu-id="5c332-115">Produktkvittering 2: Antall = 50 stk., Beløp = USD 800,00, Område = 1, Lager = 11, Partinr.</span><span class="sxs-lookup"><span data-stu-id="5c332-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="5c332-116">= B2</span><span class="sxs-lookup"><span data-stu-id="5c332-116">= B2</span></span>
+-   <span data-ttu-id="854ad-113">Produktkvittering 1: Antall = 100 stk., Beløp = USD 1 000,00, Område = 1, Lager = 11, Partinr.</span><span class="sxs-lookup"><span data-stu-id="854ad-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="854ad-114">= B1</span><span class="sxs-lookup"><span data-stu-id="854ad-114">= B1</span></span>
+-   <span data-ttu-id="854ad-115">Produktkvittering 2: Antall = 50 stk., Beløp = USD 800,00, Område = 1, Lager = 11, Partinr.</span><span class="sxs-lookup"><span data-stu-id="854ad-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="854ad-116">= B2</span><span class="sxs-lookup"><span data-stu-id="854ad-116">= B2</span></span>
 
-<span data-ttu-id="5c332-117">Følgende tabell viser resultatet av beregningen for et kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="5c332-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="5c332-118">Du kan vise resultatet på **Kostnadsobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="5c332-118">You can view the result on the **Cost object** page.</span></span>
+<span data-ttu-id="854ad-117">Følgende tabell viser resultatet av beregningen for et kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="854ad-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="854ad-118">Du kan vise resultatet på **Kostnadsobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="854ad-118">You can view the result on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -60,29 +60,29 @@ ms.lasthandoff: 04/13/2018
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5c332-119">Objekttype</span><span class="sxs-lookup"><span data-stu-id="5c332-119">Object type</span></span></th>
-<th><span data-ttu-id="5c332-120">Varenummer</span><span class="sxs-lookup"><span data-stu-id="5c332-120">Item number</span></span></th>
-<th><span data-ttu-id="5c332-121">Område</span><span class="sxs-lookup"><span data-stu-id="5c332-121">Site</span></span></th>
-<th><span data-ttu-id="5c332-122">Antall</span><span class="sxs-lookup"><span data-stu-id="5c332-122">Quantity</span></span></th>
-<th><span data-ttu-id="5c332-123">Lagerenhet</span><span class="sxs-lookup"><span data-stu-id="5c332-123">Inventory unit</span></span></th>
-<th><span data-ttu-id="5c332-124">Verdi</span><span class="sxs-lookup"><span data-stu-id="5c332-124">Value</span></span></th>
-<th><span data-ttu-id="5c332-125">Gjennomsnittlig enhetskostnad</span><span class="sxs-lookup"><span data-stu-id="5c332-125">Average unit cost</span></span></th>
+<th><span data-ttu-id="854ad-119">Objekttype</span><span class="sxs-lookup"><span data-stu-id="854ad-119">Object type</span></span></th>
+<th><span data-ttu-id="854ad-120">Varenummer</span><span class="sxs-lookup"><span data-stu-id="854ad-120">Item number</span></span></th>
+<th><span data-ttu-id="854ad-121">Område</span><span class="sxs-lookup"><span data-stu-id="854ad-121">Site</span></span></th>
+<th><span data-ttu-id="854ad-122">Antall</span><span class="sxs-lookup"><span data-stu-id="854ad-122">Quantity</span></span></th>
+<th><span data-ttu-id="854ad-123">Lagerenhet</span><span class="sxs-lookup"><span data-stu-id="854ad-123">Inventory unit</span></span></th>
+<th><span data-ttu-id="854ad-124">Verdi</span><span class="sxs-lookup"><span data-stu-id="854ad-124">Value</span></span></th>
+<th><span data-ttu-id="854ad-125">Gjennomsnittlig enhetskostnad</span><span class="sxs-lookup"><span data-stu-id="854ad-125">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="5c332-126">Kostnadsobjekt</span><span class="sxs-lookup"><span data-stu-id="5c332-126">Cost object</span></span></td>
-<td><span data-ttu-id="5c332-127">A</span><span class="sxs-lookup"><span data-stu-id="5c332-127">A</span></span></td>
-<td><span data-ttu-id="5c332-128">1</span><span class="sxs-lookup"><span data-stu-id="5c332-128">1</span></span></td>
-<td><span data-ttu-id="5c332-129">150</span><span class="sxs-lookup"><span data-stu-id="5c332-129">150</span></span></td>
-<td><span data-ttu-id="5c332-130">Stk.</span><span class="sxs-lookup"><span data-stu-id="5c332-130">Pcs.</span></span></td>
-<td><p><span data-ttu-id="5c332-131">USD 1 800,00</span><span class="sxs-lookup"><span data-stu-id="5c332-131">$1800.00</span></span></p></td>
-<td><p><span data-ttu-id="5c332-132">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="5c332-132">$12.00</span></span></p></td>
+<td><span data-ttu-id="854ad-126">Kostnadsobjekt</span><span class="sxs-lookup"><span data-stu-id="854ad-126">Cost object</span></span></td>
+<td><span data-ttu-id="854ad-127">A</span><span class="sxs-lookup"><span data-stu-id="854ad-127">A</span></span></td>
+<td><span data-ttu-id="854ad-128">1</span><span class="sxs-lookup"><span data-stu-id="854ad-128">1</span></span></td>
+<td><span data-ttu-id="854ad-129">150</span><span class="sxs-lookup"><span data-stu-id="854ad-129">150</span></span></td>
+<td><span data-ttu-id="854ad-130">Stk.</span><span class="sxs-lookup"><span data-stu-id="854ad-130">Pcs.</span></span></td>
+<td><p><span data-ttu-id="854ad-131">USD 1 800,00</span><span class="sxs-lookup"><span data-stu-id="854ad-131">$1800.00</span></span></p></td>
+<td><p><span data-ttu-id="854ad-132">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="854ad-132">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="5c332-133">Følgende tabell viser resultatet av beregningen for et beholdningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="5c332-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="5c332-134">Du kan vise resultatet ved å klikke **Fysisk antall** på **Kostnadsobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="5c332-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
+<span data-ttu-id="854ad-133">Følgende tabell viser resultatet av beregningen for et beholdningsobjekt.</span><span class="sxs-lookup"><span data-stu-id="854ad-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="854ad-134">Du kan vise resultatet ved å klikke **Fysisk antall** på **Kostnadsobjekt**-siden.</span><span class="sxs-lookup"><span data-stu-id="854ad-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -98,53 +98,53 @@ ms.lasthandoff: 04/13/2018
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5c332-135">Objekttype</span><span class="sxs-lookup"><span data-stu-id="5c332-135">Object type</span></span></th>
-<th><span data-ttu-id="5c332-136">Varenummer</span><span class="sxs-lookup"><span data-stu-id="5c332-136">Item number</span></span></th>
-<th><span data-ttu-id="5c332-137">Område</span><span class="sxs-lookup"><span data-stu-id="5c332-137">Site</span></span></th>
-<th><span data-ttu-id="5c332-138">Lager</span><span class="sxs-lookup"><span data-stu-id="5c332-138">Warehouse</span></span></th>
-<th><span data-ttu-id="5c332-139">Partinr.</span><span class="sxs-lookup"><span data-stu-id="5c332-139">Batch No.</span></span></th>
-<th><span data-ttu-id="5c332-140">Antall</span><span class="sxs-lookup"><span data-stu-id="5c332-140">Quantity</span></span></th>
-<th><span data-ttu-id="5c332-141">Lagerenhet</span><span class="sxs-lookup"><span data-stu-id="5c332-141">Inventory unit</span></span></th>
-<th><span data-ttu-id="5c332-142">Verdi</span><span class="sxs-lookup"><span data-stu-id="5c332-142">Value</span></span></th>
-<th><span data-ttu-id="5c332-143">Gjennomsnittlig enhetskostnad</span><span class="sxs-lookup"><span data-stu-id="5c332-143">Average unit cost</span></span></th>
+<th><span data-ttu-id="854ad-135">Objekttype</span><span class="sxs-lookup"><span data-stu-id="854ad-135">Object type</span></span></th>
+<th><span data-ttu-id="854ad-136">Varenummer</span><span class="sxs-lookup"><span data-stu-id="854ad-136">Item number</span></span></th>
+<th><span data-ttu-id="854ad-137">Område</span><span class="sxs-lookup"><span data-stu-id="854ad-137">Site</span></span></th>
+<th><span data-ttu-id="854ad-138">Lager</span><span class="sxs-lookup"><span data-stu-id="854ad-138">Warehouse</span></span></th>
+<th><span data-ttu-id="854ad-139">Partinr.</span><span class="sxs-lookup"><span data-stu-id="854ad-139">Batch No.</span></span></th>
+<th><span data-ttu-id="854ad-140">Antall</span><span class="sxs-lookup"><span data-stu-id="854ad-140">Quantity</span></span></th>
+<th><span data-ttu-id="854ad-141">Lagerenhet</span><span class="sxs-lookup"><span data-stu-id="854ad-141">Inventory unit</span></span></th>
+<th><span data-ttu-id="854ad-142">Verdi</span><span class="sxs-lookup"><span data-stu-id="854ad-142">Value</span></span></th>
+<th><span data-ttu-id="854ad-143">Gjennomsnittlig enhetskostnad</span><span class="sxs-lookup"><span data-stu-id="854ad-143">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="5c332-144">Beholdningsobjekt</span><span class="sxs-lookup"><span data-stu-id="5c332-144">Inventory object</span></span></td>
-<td><span data-ttu-id="5c332-145">A</span><span class="sxs-lookup"><span data-stu-id="5c332-145">A</span></span></td>
-<td><span data-ttu-id="5c332-146">1</span><span class="sxs-lookup"><span data-stu-id="5c332-146">1</span></span></td>
-<td><span data-ttu-id="5c332-147">11</span><span class="sxs-lookup"><span data-stu-id="5c332-147">11</span></span></td>
-<td><span data-ttu-id="5c332-148">B1</span><span class="sxs-lookup"><span data-stu-id="5c332-148">B1</span></span></td>
-<td><span data-ttu-id="5c332-149">100</span><span class="sxs-lookup"><span data-stu-id="5c332-149">100</span></span></td>
-<td><span data-ttu-id="5c332-150">Stk.</span><span class="sxs-lookup"><span data-stu-id="5c332-150">Pcs.</span></span></td>
-<td><p><span data-ttu-id="5c332-151">USD 1 200,00</span><span class="sxs-lookup"><span data-stu-id="5c332-151">$1200.00</span></span></p></td>
-<td><p><span data-ttu-id="5c332-152">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="5c332-152">$12.00</span></span></p></td>
+<td><span data-ttu-id="854ad-144">Beholdningsobjekt</span><span class="sxs-lookup"><span data-stu-id="854ad-144">Inventory object</span></span></td>
+<td><span data-ttu-id="854ad-145">A</span><span class="sxs-lookup"><span data-stu-id="854ad-145">A</span></span></td>
+<td><span data-ttu-id="854ad-146">1</span><span class="sxs-lookup"><span data-stu-id="854ad-146">1</span></span></td>
+<td><span data-ttu-id="854ad-147">11</span><span class="sxs-lookup"><span data-stu-id="854ad-147">11</span></span></td>
+<td><span data-ttu-id="854ad-148">B1</span><span class="sxs-lookup"><span data-stu-id="854ad-148">B1</span></span></td>
+<td><span data-ttu-id="854ad-149">100</span><span class="sxs-lookup"><span data-stu-id="854ad-149">100</span></span></td>
+<td><span data-ttu-id="854ad-150">Stk.</span><span class="sxs-lookup"><span data-stu-id="854ad-150">Pcs.</span></span></td>
+<td><p><span data-ttu-id="854ad-151">USD 1 200,00</span><span class="sxs-lookup"><span data-stu-id="854ad-151">$1200.00</span></span></p></td>
+<td><p><span data-ttu-id="854ad-152">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="854ad-152">$12.00</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5c332-153">Beholdningsobjekt</span><span class="sxs-lookup"><span data-stu-id="5c332-153">Inventory object</span></span></td>
-<td><span data-ttu-id="5c332-154">A</span><span class="sxs-lookup"><span data-stu-id="5c332-154">A</span></span></td>
-<td><span data-ttu-id="5c332-155">1</span><span class="sxs-lookup"><span data-stu-id="5c332-155">1</span></span></td>
-<td><span data-ttu-id="5c332-156">11</span><span class="sxs-lookup"><span data-stu-id="5c332-156">11</span></span></td>
-<td><span data-ttu-id="5c332-157">B2</span><span class="sxs-lookup"><span data-stu-id="5c332-157">B2</span></span></td>
-<td><span data-ttu-id="5c332-158">50</span><span class="sxs-lookup"><span data-stu-id="5c332-158">50</span></span></td>
-<td><span data-ttu-id="5c332-159">Stk.</span><span class="sxs-lookup"><span data-stu-id="5c332-159">Pcs.</span></span></td>
-<td><p><span data-ttu-id="5c332-160">USD 600,00</span><span class="sxs-lookup"><span data-stu-id="5c332-160">$600.00</span></span></p></td>
-<td><p><span data-ttu-id="5c332-161">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="5c332-161">$12.00</span></span></p></td>
+<td><span data-ttu-id="854ad-153">Beholdningsobjekt</span><span class="sxs-lookup"><span data-stu-id="854ad-153">Inventory object</span></span></td>
+<td><span data-ttu-id="854ad-154">A</span><span class="sxs-lookup"><span data-stu-id="854ad-154">A</span></span></td>
+<td><span data-ttu-id="854ad-155">1</span><span class="sxs-lookup"><span data-stu-id="854ad-155">1</span></span></td>
+<td><span data-ttu-id="854ad-156">11</span><span class="sxs-lookup"><span data-stu-id="854ad-156">11</span></span></td>
+<td><span data-ttu-id="854ad-157">B2</span><span class="sxs-lookup"><span data-stu-id="854ad-157">B2</span></span></td>
+<td><span data-ttu-id="854ad-158">50</span><span class="sxs-lookup"><span data-stu-id="854ad-158">50</span></span></td>
+<td><span data-ttu-id="854ad-159">Stk.</span><span class="sxs-lookup"><span data-stu-id="854ad-159">Pcs.</span></span></td>
+<td><p><span data-ttu-id="854ad-160">USD 600,00</span><span class="sxs-lookup"><span data-stu-id="854ad-160">$600.00</span></span></p></td>
+<td><p><span data-ttu-id="854ad-161">USD 12,00</span><span class="sxs-lookup"><span data-stu-id="854ad-161">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a><span data-ttu-id="5c332-162">Se også</span><span class="sxs-lookup"><span data-stu-id="5c332-162">See also</span></span>
+<a name="additional-resources"></a><span data-ttu-id="854ad-162">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="854ad-162">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="5c332-163">Kostnadsobjekter</span><span class="sxs-lookup"><span data-stu-id="5c332-163">Cost objects</span></span>](cost-object.md)
+[<span data-ttu-id="854ad-163">Kostnadsobjekter</span><span class="sxs-lookup"><span data-stu-id="854ad-163">Cost objects</span></span>](cost-object.md)
 
-[<span data-ttu-id="5c332-164">Kostnadsoppføringer</span><span class="sxs-lookup"><span data-stu-id="5c332-164">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="854ad-164">Kostnadsoppføringer</span><span class="sxs-lookup"><span data-stu-id="854ad-164">Cost entries</span></span>](cost-entries.md)
 
-[<span data-ttu-id="5c332-165">Hva er nytt eller endret?</span><span class="sxs-lookup"><span data-stu-id="5c332-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
+[<span data-ttu-id="854ad-165">Hva er nytt eller endret?</span><span class="sxs-lookup"><span data-stu-id="854ad-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 
