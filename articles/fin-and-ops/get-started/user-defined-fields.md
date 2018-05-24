@@ -3,7 +3,7 @@ title: Egendefinerte felt
 description: "Dette emnet forklarer hvordan Microsoft Dynamics 365 for Finance and Operations lar noen brukere opprette egendefinerte felt for å tilpasse programmet slik at det passer for bedriften."
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="custom-fields"></a>Egendefinerte felt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 Selv om Microsoft Dynamics 365 for Finance and Operations inneholder et omfattende sett med felt som standard for å administrere mange forretningsprosesser, har et firma noen ganger behov for å spore ytterligere informasjon i systemet. For å legge til rette for dette behovet lar Finance and Operations deg opprette egendefinerte felt for å tilpasse programmet i tråd med bedriftens behov, forutsatt at du har tilgang til funksjonen. 
 

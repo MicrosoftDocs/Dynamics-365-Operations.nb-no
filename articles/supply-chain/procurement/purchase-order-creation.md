@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 22264f0d82844e63bc7fc42705184c6ecc27e28d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-purchase-orders"></a>Opprette bestillinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver prosessen og alternativene når du oppretter en bestilling manuelt.
 
@@ -86,7 +86,7 @@ Bestillinger kan konfigureres til å kreve at budsjettmidler fordeles til ordren
 
 Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempel ha mer informasjon om produkter eller tjenester, eller det kan hende du må få godkjenning av forbruket. Det er flere måter å holde tilbake en ordre. Du kan for eksempel vente med å bekrefte ordren. Hvis en arbeidsflyt for endringsadministrasjon brukes, sender du ikke ordren til godkjenning. Hvis du må blokkere alle ordrer for en bestemt leverandør, kan du også merke leverandør som **På vent** for behandling på leverandørstandarden. Det finnes også situasjoner som kan hindre at ordren blir behandlet. Behandling kan for eksempel hindres hvis kredittgrenser er overskredet, eller hvis nødvendige budsjettmidler er ikke tilgjengelige.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)

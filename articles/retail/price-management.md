@@ -3,7 +3,7 @@ title: Prisstyring av detaljsalg
 description: "Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Prisstyring av detaljsalg
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emnet gir informasjon om prosessen for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
 
@@ -198,32 +198,6 @@ Microsoft SQL Server Express brukes ofte til kanaldatabaser på grunn av kostnad
 Når du angir salgspriser i Microsoft Dynamics 365, angir du ikke om prisverdien er inklusiv eller eksklusiv mva. Verdien er bare prisen. Med innstillingen **Pris inkluderer merverdiavgift** for detaljhandelskanaler kan du imidlertid konfigurere detaljhandelskanaler slik at de inkluderer eller ekskluderer mva fra priser. Denne innstillingen er angitt på kanalen, og kan endres også i et enkelt firma.
 
 Hvis du arbeider med både inklusive og eksklusive typer mva, er det svært viktig at du setter priser riktig, fordi totalbeløpet som kunden betaler, endres hvis innstillingen **Pris inkluderer merverdiavgift** på kanalen endres.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Effekten av innstillingen Pris inkluderer merverdiavgift på økonomiske posteringer
-Alle beløp som posteres i økonomimodulen for inntekts- og rabattkontoer, blir påvirket av innstillingen **Pris inkluderer merverdiavgift**. Følgende eksempel viser hvordan denne innstillingen påvirker økonomiske posteringer.
-
-Eksemplet beskriver bare salgsposteringer, fordi innstillingen **Pris inkluderer merverdiavgift** påvirker ikke lagerkostposteringer.
-
-#### <a name="example"></a>Eksempel
-I dette eksemplet er rabattbeløp konfigurert slik at de er bokført separat fra inntekt.
-
-Du selger et produkt for USD 100 som har en mva-sats på 10 prosent og 5 % rabatt brukes. Følgende kontoer fra USRT-demodataene brukes:
-
-- **Inntekter:** 401100
-- **Rabatt:** 403200
-- **Mva:** 202100
-
-**Tilfelle 1: Mva-eksklusiv (også kjent som merverdiavgift)**
-
-- **Inntekter:** USD 100
-- **Rabatt:** USD 5
-- **Mva:** USD 9,5 (= 10 % av USD 95)
-
-**Tilfelle 2: Mva-inklusiv (også kjent som merverdiavgift \[mva\])**
-
-- **Inntekter:** USD 90
-- **Rabatt:** USD 4,5 (= 5 prosent av USD 90)
-- **Mva:** USD 10
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Forskjeller mellom prissetting for detaljhandel og prissetting for ikke-detaljehandel
 En enkelt prissettingsmotor brukes til å beregne priser for detaljhandel på tvers av alle kanaler: Telefonsenter, Detaljhandelbutikk og Nettbutikker. Dette bidrar til å muliggjøre enhetlig handel. 

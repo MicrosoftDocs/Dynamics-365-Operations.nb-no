@@ -3,7 +3,7 @@ title: Kundeemne til kontanter
 description: Dette emnet gir en oversikt over Kundeemne til kontanter mellom Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,24 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc0fa8fe3e20ae4be3e572932f99ccc54e3b746b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prospect-to-cash"></a>Kundeemne til kontanter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Løsningen Kundeemne til kontanter gir direkte synkronisering på tvers av Dynamics 365 for Finance and Operations og Dynamics 365 for Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Når dataene flyter mellom Finance and Operations og Sales kan du utføre salgs- og markedsaktiviteter i Sales, og du kan håndtere ordrenes oppfyllelse med lagerstyring i Finance and Operations. 
 
 Hvis du vil ha mer informasjon om kundeemne til kontanter-integrering, se den korte YouTube-videoen:
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[Prospekt til kontanter-integrasjon (YouTube-video)](https://youtu.be/AVV9x5x-XCg) 
 
 I den gjeldende versjonen inneholder Kundeemne til kontanter-løsningen følgende typer direkte synkronisering:
 
@@ -76,7 +78,7 @@ Kundeemne til kontanter-integrasjon støttes i følgende versjoner:
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Støtte for kundeemne til kontanter-integrering gjennom dataenheter, kreves.
     
     > [!NOTE]
-    > Når du har installert hurtigreparasjonene, må du starte den følgende kjørselen fra skjemaet **SalesPopulateProspectToCash**. Dette skjemaet skjules siden du bare trenger det én gang. For å få tilgang til skjemaet, må du logge på miljøet og legge til følgende i URL-adressen i nettleseradressen: &mi=action:SalesPopulateProspectToCash, for eksempel `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Når skjemaet åpnes, klikker du på OK. Dette vil fylle ut et nytt felt **LineCreationSequnceNumber** i tabellen **SalesLine**, **SalesQuotationLine** og **CustInvoiceTrans** med unike verdier og oppdatere varelisten. Dette er nødvendig for at kundeemne til kontanter-integrasjonen skal fungere.
+    > Når du har installert hurtigreparasjonene, må du starte den følgende kjørselen fra skjemaet **SalesPopulateProspectToCash**. Dette skjemaet skjules siden du bare trenger det én gang. For å få tilgang til skjemaet, må du logge på miljøet og legge til følgende i URL-adressen i nettleseradressen: *&mi=action:SalesPopulateProspectToCash*, for eksempel `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Når skjemaet åpnes, klikker du på OK. Dette vil fylle ut et nytt felt **LineCreationSequnceNumber** i tabellen **SalesLine**, **SalesQuotationLine** og **CustInvoiceTrans** med unike verdier og oppdatere varelisten. Dette er nødvendig for at kundeemne til kontanter-integrasjonen skal fungere.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemkrav for Sales

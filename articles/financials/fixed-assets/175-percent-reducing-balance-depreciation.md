@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 % redusert saldoavskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over avskrivningsmetoden 175 prosent saldoavskrivning.
 
@@ -57,7 +57,7 @@ Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgj
 
 ### <a name="fiscal"></a>Skattemessig
 
-Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Hvis du velger **Skattemessig** i feltet **Avskrivningsår**, beregnes 175 % saldoavskrivning basert på regnskapsåret for den økonomiske kalenderen som er angitt for tablået, eller for den økonomiske kalenderen som er valgt på **Finans**-siden. Regnskapskalendere defineres på **Regnskapskalendere**-siden. Hvis du vil ha mer informasjon, se [Regnskapskalendere, regnskapsår og perioder](../budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen den 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver periode, og lengden på det neste regnskapsåret fastslås ved oppsettet av perioder på den siden **Regnskapskalendere**. 
 

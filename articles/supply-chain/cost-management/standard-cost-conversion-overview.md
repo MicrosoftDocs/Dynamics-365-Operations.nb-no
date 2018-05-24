@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering. 
 
@@ -96,7 +96,7 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 -   Analyser tilbakedaterte lagerbevegelser. Bruk **Lagerverdi**-rapporten til å vise tilbakedaterte lagerbevegelser som ble angitt etter konverteringen. Fra-datoen og til-datoen i rapporten bør stemme overens med startdatoen for overgangen og konverteringsdatoen (minus én dag). Rapportens utvalgskriterier bør gjenspeile de konverterte varene. Rapporten viser lagerbevegelser som ble utført for standardkostnad i løpet av overgangsperioden.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Forutsetninger for standard kostnadskonvertering](prerequisites-standard-cost-conversion.md)

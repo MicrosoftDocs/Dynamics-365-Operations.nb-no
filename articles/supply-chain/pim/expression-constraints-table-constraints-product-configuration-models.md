@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver bruken av uttrykks- og tabellbegrensninger. Begrensninger kontrollerer attributtverdiene du kan velge når du konfigurerer produkter for en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre. Du kan bruke uttrykksbegrensninger eller tabellbegrensninger, avhengig av hvordan du foretrekker å bygge begrensningene. 
 
@@ -61,8 +61,7 @@ Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen *
 | Svart          | Svart                       |
 | Svart          | Metall                       | 
 
-Du kan opprette systemdefinerte og brukerdefinerte tabellbegrensninger. Hvis du vil ha mer informasjon, se [Sy
-stemdefinerte og brukerdefinerte tabellbegrensninger](system-defined-user-defined-table-constraints.md).
+Du kan opprette systemdefinerte og brukerdefinerte tabellbegrensninger. Hvis du vil ha mer informasjon, se [Systemdefinerte og brukerdefinerte tabellbegrensninger](system-defined-user-defined-table-constraints.md).
 
 ## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvilken syntaks skal brukes for å skrive begrensninger?
 Du må bruke OML-syntaks (Optimization Modeling Language) når skriver begrensningene. Systemet bruker Microsoft Solver Foundation-begrensningsløseren til å løse begrensningene.
@@ -247,7 +246,7 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 -   Mål
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprett en uttrykksbegrensning (Oppgaveguide)](tasks/add-expression-constraint-product-configuration-model.md)

@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Prissimulering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om prissimulering for tilbud. Prissimulering hjelper deg med å vurdere effekten av fradrag på den fremtidige salgsprisen under tilbudsprosessen, før du fastsetter en bestemt pris.
 
@@ -36,7 +36,7 @@ En prissimulering for et tilbud viser et nytt totalbeløp basert på en nytt pri
 
 En prissimulering endrer ikke prisen i tilbudet. Hvis prissimuleringen brukes på hele tilbudet, behandles den som en spesialrabatt i tilbudshodet. Hvis prissimuleringen brukes på bestemte varer, behandles den som en spesialrabatt i tilbudslinjene. Enhetssalgsprisen på tilbudslinjen som opprettes, endres ikke når prissimuleringen brukes. I stedet brukes det en rabattprosent som tilsvarer prisreduksjonen i tilbudslinjen. Når en prissimuleringen brukes, overføres enhetssalgsprisen og rabattprosenten til tilbudslinjen eller tilbudshodet.  
 
-**Obs!** Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
+>Obs! Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
 
 Tilleggsvarer som legges til tilbudslinjene, kan utløse linjerabatter eller samkjøpsrabatter. De kan også utløse sluttrabatter som endrer dekningsbidragene og dekningsgradene til tilbudslinjene og hele rabatten.  
 

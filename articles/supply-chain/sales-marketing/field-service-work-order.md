@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Arbeidsordreintegrasjon krever at du definerer salgsopprinnelsen. Salgsopprinnel
 6. Sett **Salgsopprinnelsestype**-feltet til **Integrering av arbeidsordre**.
 7. Velg **Lagre**.
 
-### <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
 
-(Kommer snart)
+### <a name="setup-in-data-integration"></a>Oppsett i Dataintegrering
+
+Kontroller at **Integration-nøkkelen** finnes for **msdyn_workorders**
+1. Gå til Dataintegrering
+2. Velg fanen **Tilkoblingssett**
+3. Velg tilkoblingssettet som brukes for synkronisering av arbeidsordre
+4. Velg fanen **Integreringsnøkkel**
+5. Finn msdyn_workorders og kontroller at nøkkelen **msdyn_name (arbeidsordrenummer)** blir lagt til. Hvis den ikke vises, kan du legge den ved å klikke **Legg til nøkkel**, og klikke **Lagre** øverst på siden
+
+## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
+
+Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderHeader
+
+Filter: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderServiceLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
+
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderServiceLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
+
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderProductLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
+
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderProductLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
+
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

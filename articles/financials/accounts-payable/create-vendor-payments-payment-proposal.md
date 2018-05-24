@@ -1,6 +1,6 @@
 ---
 title: "Opprette leverandørbetalinger ved hjelp av et betalingsforslag"
-description: "Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer. Betalingsforslag brukes ofte til å opprette leverandørbetalinger fordi spørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på kriterier som forfallsdato og kontantrabatt."
+description: Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer. Betalingsforslag brukes ofte til å opprette leverandørbetalinger fordi spørringen kan brukes til å raskt velge leverandørfakturaer for betaling, basert på kriterier som forfallsdato og kontantrabatt. 
 
@@ -47,7 +47,7 @@ Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alt
 - **Kontroller leverandørsaldo** – Hvis dette alternativet er satt til **Ja**, kontroller systemet at en leverandør ikke har en debetsaldo før en faktura betales. Hvis en leverandør har en debetsaldo, opprettes ingen betaling. Leverandøren kan for eksempel ha kreditnotaer og betalinger som er postert, men ennå ikke er utlignet. I så fall skal leverandøren ikke betales. I stedet må kreditnotaene eller betalingene utlignes mot de utestående fakturaene.
 - **Slett negative betalinger** – Dette alternativet fungerer forskjellig, avhengig av om betalingene er for enkeltvise fakturaer eller summen av fakturaer som oppfyller betalingskriteriene. Dette er definert i betalingsmåten.
 - **Betaling for hver faktura** – Hvis alternativet **Slett negative betalinger** er satt til **Ja**, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges bare fakturaen for betaling. Den eksisterende betalingen utlignes ikke mot fakturaen. Hvis alternativet **Slett negative betalinger** er satt til **Nei**, og en faktura og en betaling ikke er utlignet, velges både fakturaen og betalingen for betaling. Det opprettes en betaling for betalingen, og en refusjon (negativ betaling) opprettes for betalingen.
-- <strong>Betaling for summen av fakturaer</strong> – Hvis alternativet <strong>Slett negative betalinger</strong> er satt til <strong>Ja</strong>, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges både den ikke utlignede fakturaen og betalingen for betaling og beløpene legges sammen, som gir det totale betalingsbeløpet. Unntak oppstår bare hvis summen resulterer i en refusjon. I så fall velges verken fakturaen eller betalingen. Hvis alternativet <strong>Slett negative betalinger er satt til Nei</strong>, og en faktura og betaling ikke er utlignet, velges både fakturaen og betalingen for betaling og beløpene legges sammen, som gir totalt betalingsbeløp.
+- **Betaling for summen av fakturaer** – Hvis alternativet **Slett negative betalinger** er satt til **Ja**, og det finnes en ikke utlignet faktura og betaling for en leverandør, velges både den ikke utlignede fakturaen og betalingen for betaling og beløpene legges sammen, som gir det totale betalingsbeløpet. Unntak oppstår bare hvis summen resulterer i en refusjon. I så fall velges verken fakturaen eller betalingen. Hvis alternativet **Slett negative betalinger** er satt til **Nei**, og en faktura og betaling ikke er utlignet, velges både fakturaen og betalingen for betaling og beløpene legges sammen, som gir totalt betalingsbeløp.
 - **Skriv bare ut rapport** – Sett dette alternativet til **Ja** hvis du vil se resultatene av betalingsforslaget i en rapport, men uten å opprette betalinger.
 - **Inkluder leverandørfakturaer fra andre juridiske enheter** – Hvis organisasjonen har en sentralisert prosess for betaling, og betalingsforslaget må inneholde fakturaer fra andre juridiske enheter som er inkludert i søkekriteriene, setter du dette alternativet til **Ja**.
 - **Foreslå separat leverandørbetaling per juridisk enhet** – Hvis dette alternativet settes til **Ja**, opprettes det en egen betaling for hver juridiske enhet per leverandør. Leverandøren på betalingen er leverandøren fra fakturaen fra hver juridiske enhet. Hvis dette alternativet settes til **Nei**, og den samme leverandøren har fakturaer i flere juridiske enheter, opprettes det én betaling for det samlede beløpet for de valgte fakturaene. Leverandøren på betalingen er leverandøren i den gjeldende juridiske enheten. Hvis leverandørkontoen ikke eksisterer i den gjeldende juridiske enheten, brukes leverandørkontoen for den første fakturaen som skal betales.
@@ -115,7 +115,8 @@ Dimensjonskontroll lar deg kontrollere gruppering av genererte linjer etter beta
 -   **Dimensionskontroll**-feltet er aktivert uten å definere dimensjonene ytterligere. Betalingsforslaget opprettes uten å ta hensyn til dimensjoner. Den opprettede transaksjonen arver ingen dimensjoner fra den utlignede posten.
 -   **Dimensionskontroll**-feltet er aktivert og de ytterligere dimensjonene er aktivert. Nå kan du definere hvordan dimensjonene skal kopieres til journalen. For eksempel: • Merk av for **BusinessUnit** for å opprette et betalingsforslag per forretningsenhet for betalingsmåten, • merk av for **CostCenter** for å opprette et betalingsforslag per kostsenter for betalingsmåten
 
-**Obs!** Hvis du velger flere dimensjoner i det tredje alternativet, opprettes et betalingsforslag for dimensjonskombinasjonen.
+> [[!NOTE]
+> Hvis du velger flere dimensjoner i det tredje alternativet, opprettes et betalingsforslag for dimensjonskombinasjonen.
 
 #### <a name="bank-account-selection"></a>Bankkontovalg
 

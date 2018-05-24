@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Leveringsalternativer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Salgsordretakere kan bruke siden Leveringsalternativer til å søke etter alternativer for ordrefullføring.
+Salgsordretakere kan bruke siden **Leveringsalternativer** til å søke etter alternativer for ordrefullføring.
 
-I Microsoft Dynamics 365 for Operations versjon 1611 (november 2016),kan salgsordretakere bruke siden **Leveringsalternativer** til å finne alternativer for ordrefullføring. Det nye sideoppsettet gir bedre oversikt over alle alternativer. Den lar også ordretakere se utenfor gjeldende firma for fullføringsmuligheter. De kan nå vise både konserninterne muligheter og muligheter fra eksterne leverandører. Salgsordretakere kan vise en intelligent liste med leveringsalternativer ved å sortere alternativene etter leveringsdato. I tillegg bidrar parametere til enklere administrasjon av foreslåtte leveringer. Siden transporttid kan påvirke leveringsdatoer, kan salgsordretakere utforske de forskjellige transportvalgene som transportører tilbyr. Siden det vises detaljert informasjon for hver forslag, kan salgsordretakere ta informerte avgjørelser direkte fra siden **Leveringsalternativer**.
+Det nye oppsettet på siden **Leveringsalternativer** gir en oversikt over alle alternativer. Den lar også ordretakere se utenfor gjeldende firma for fullføringsmuligheter. De kan nå vise både konserninterne muligheter og muligheter fra eksterne leverandører. Salgsordretakere kan vise en intelligent liste med leveringsalternativer ved å sortere alternativene etter leveringsdato. I tillegg bidrar parametere til enklere administrasjon av foreslåtte leveringer. Siden transporttid kan påvirke leveringsdatoer, kan salgsordretakere utforske de forskjellige transportvalgene som transportører tilbyr. Siden det vises detaljert informasjon for hver forslag, kan salgsordretakere ta informerte avgjørelser direkte fra siden **Leveringsalternativer**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Åpne siden Leveringsalternativer
-Du kan åpne siden **Leverings** **alternativer** fra salgsordrelinjen.
+Du kan åpne siden **Leveringsalternativer** fra salgsordrelinjen.
 
 1.  Klikk på **Produkter og forsyning** &gt; **Leveringsalternativer**.
 2.  Klikk på **Linjedetaljer** &gt; **Levering** &gt; **Leveringsalternativer**.
@@ -146,7 +146,7 @@ Informasjon i denne kategorien er knyttet til leveringsalternativlinjen som er v
 
 Denne kategorien uthever effekten av det valgte leveringsalternativet. Hvis du klikker på **OK**, oppdateres salgslinjen med de uthevede verdiene i VALGT-kolonnene. Legg merke til at hvis antallet på det valgte leveringsalternativet er mindre enn antall på salgslinjen, opprettes en leveringsplan og ordrelinjen deles inn i to linjer: én linje for det valgte antallet og én linje for det restantallet. Du kan også oppdatere den kommersielle linjen, slik at den samsvarer med planlinjene og påvirker prissettingen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Ordrebekreftelse](delivery-dates-available-promise-calculations.md)

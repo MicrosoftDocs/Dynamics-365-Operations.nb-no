@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
 (Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Dynamics AX-versjonen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md). <strong>Obs!</strong>  En stjerne (<strong>\</strong>*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosess ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
@@ -186,7 +186,7 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 |                  Definere transportbegrensninger for en vare                   |     Globalt     |
 |                <strong>\</strong>*Definere arbeidspolicyer for lager                 |     Globalt     |
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)

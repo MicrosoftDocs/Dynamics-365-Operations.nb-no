@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e4f306d2ee20323229b478c93c1c7eeaba50be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 29a46eb2ec36fdc7e52b148efdadd4401bc8bca2
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Hva er nytt eller endret i Dynamics AX-programversjon 7.0.1 (mai 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX-programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
 
@@ -77,7 +77,7 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Hva er nytt eller endret?](whats-new-changed.md)

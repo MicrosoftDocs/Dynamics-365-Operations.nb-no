@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-agreements"></a>Salgsavtaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
 
@@ -38,7 +38,7 @@ Gyldighetsperioden for en salgsavtale er definert av feltene **Gyldig fra** og *
 
 Du kan opprette en salgsordre direkte fra en salgsavtale ved hjelp av **Frigivelsesordre**-handlingen. Du kan også velge en gyldig salgsavtale når du tar i mot ordrer (se "Bruke salgsavtaler i ordreprosessen" i denne artikkelen).  
 
-**Obs!** I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
+> Obs! I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en salgsavtale uttrykker en forpliktelse til å selge noe. Det er vanligvis to kategorier av forpliktelse:

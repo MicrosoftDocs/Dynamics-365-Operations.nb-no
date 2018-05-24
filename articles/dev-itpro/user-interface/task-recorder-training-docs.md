@@ -19,16 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbf7edbd141f5e94c333b64beedf9126d2900d47
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 
@@ -118,14 +118,14 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Ta med oppgaveopptakene i Hjelp-ruten
 Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../../fin-and-ops/get-started/help-connect.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oversikt over Hjelp](../../fin-and-ops/get-started/help-overview.md)
 
 [Koble til Hjelp](../../fin-and-ops/get-started/help-connect.md)
 
-[Oppgaveregistrering](task-recorder.md)
+[Oppgaveopptaker](task-recorder.md)
 
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)
 

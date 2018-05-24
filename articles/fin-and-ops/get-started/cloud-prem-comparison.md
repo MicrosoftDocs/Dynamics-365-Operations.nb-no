@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Sammenligning av skyfunksjon og lokal funksjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet viser om hver funksjon er tilgjengelig i disse produktene:
 
@@ -128,7 +128,7 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 |---|---|---|---|
 | Alle Talent-områder | Alle Talent-funksjoner | Ja | Antall |
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Funksjoner som ikke er implementert i lokale distribusjoner](features-not-implemented-on-prem.md)
 

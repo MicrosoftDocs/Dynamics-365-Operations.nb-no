@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 75daeed0d0e979165d3669e83e98cf278d7fb736
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen. Hvis du vil konfigurere en godkjenningsprosess, kan du opprette en arbeidsflyt.
 
@@ -68,7 +68,7 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)

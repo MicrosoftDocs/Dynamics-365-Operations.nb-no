@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6828860d9e56dc8db80a11b4b611b9c0fdc2b62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbeidsflytprosessen flytter innkjøpsrekvisisjoner gjennom vurderingsprosessen, fra den innledende statusen Utkast til den endelige statusen Godkjent. Når en innkjøpsrekvisisjon sendes til gjennomgang, starter arbeidsflytprosessen. Når en innkjøpsrekvisisjon er godkjent, kan en bestilling genereres for innkjøpsrekvisisjonslinjene og sendes til leverandøren for å bli oppfylt.
 
@@ -106,7 +106,7 @@ Du kan definere utgiftskontrollører på siden **Kontrollører av innkjøpsrekvi
 
 Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt, må du angi alternativet **Type deltaker** til **Utgiftsdeltakere** i **Tildeling**-egenskapene for det aktuelle arbeidsflytelementet.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprette en rekvisisjon for forbruk (oppgaveveiledning)](tasks/create-requisition-consumption.md)

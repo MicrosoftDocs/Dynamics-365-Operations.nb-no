@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet.
 
@@ -407,10 +407,10 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 
 **Obs!** Du kan kreve produktbekreftelse bare for arbeid av plukkings- og plasseringstyper.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Visningsinnstillinger for lagermobilenheten](change-warehouse-mobile-device-displays.md)
+[Innstillinger for visning av lagermobilenhet](change-warehouse-mobile-device-displays.md)
 
 [Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling (oppgaveveiledning)](tasks/set-up-mobile-device-menu.md)
 

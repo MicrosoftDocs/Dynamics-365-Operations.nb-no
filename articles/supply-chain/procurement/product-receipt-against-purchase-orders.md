@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: faccf695642d236dbf74a324ccecaf91f62638be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-receipt-against-purchase-orders"></a>Produktmottak mot kjøpsordrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt.
 
@@ -61,7 +61,7 @@ Når produktmottak er behandlet på bestillingen, sette bestillingsstatusen til 
 
 Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Bestilling**. Informasjonen i journalene inneholder informasjon om antall, datoer og dimensjoner.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oversikt over bestilling](purchase-order-overview.md)

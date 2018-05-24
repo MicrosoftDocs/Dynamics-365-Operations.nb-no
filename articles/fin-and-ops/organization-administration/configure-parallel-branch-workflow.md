@@ -18,16 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 41bd03757a347a1b5f189bd50dae2545baaddf20
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d0e45f4a6b1f6bcf94103dbcf4a8ca01457dc85d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurere en parallell avdeling i en arbeidsflyt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hvis du vil konfigurere en parallell avdeling, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt.
 
@@ -47,7 +47,7 @@ Følg denne fremgangsmåten for å utforme og konfigurere elementene for en para
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprette en arbeidsflyt](create-workflow.md)

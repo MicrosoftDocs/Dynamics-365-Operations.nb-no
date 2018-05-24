@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 4da560ca3cce5a28edd2a00506f825d5d88ef0f3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cd5fc329877bbb1f8f4ec26191e66914da29d034
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerte og brukerdefinerte tabellbegrensninger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen forklarer de to typene tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell: brukerdefinert og systemdefinert. Tabellbegrensninger representerer matriser for tillatte attributtkombinasjoner, der hver enkelt rad definerer et sett med mulige attributtverdier.
 
@@ -61,7 +61,7 @@ Når du oppretter en systemdefinert tabellbegrensning, velger du en tabell, defi
 
 Før en tabellbegrensning kan tre i kraft i en produktkonfigurasjonsmodell, må tabellbegrensningen inkluderes i en betingelse på en av komponentene for modellen. Fremgangsmåten er å opprette en ny begrensning, velge tabellbegrensningstypen og deretter velge definisjonen av tabellbegrensning som skal brukes. Til slutt må alle felt i tabellbegrensningen tilordnes til attributter i produktkonfigurasjonsmodellen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Nøkkelbegreper i produktkonfigurasjonsmodeller](product-configuration-models.md)

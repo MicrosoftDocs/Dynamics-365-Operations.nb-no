@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Brukerinnstillinger i Utforming av finansrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen. Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises. 
 
@@ -74,7 +74,7 @@ Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse 
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Finansrapportering](financial-reporting-intro.md)

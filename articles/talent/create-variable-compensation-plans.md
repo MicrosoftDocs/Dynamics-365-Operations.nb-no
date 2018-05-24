@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Denne artikkelen beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
 
@@ -100,7 +100,7 @@ Du kan bruke **Overstyrer**-fanen til å overstyre bestemte verdier for den ansa
 
 **Organisasjonsmessige overstyringer** brukes til å basere belønningen til en ansatt på ytelsen til én eller flere avdelinger. Prosenten som er fordelt på tvers av avdelinger skal til sammen utgjøre 100 prosent. Det tas også hensyn til den ansattes individuelle ytelse. Disse innstillingene brukes bare hvis **Betal for ytelse** er valgt når kompensasjonsprosessen kjøres.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Kompensasjonsplaner](compensation-plans.md)

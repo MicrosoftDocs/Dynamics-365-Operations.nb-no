@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 688fa17072cb340d6d02be31528339fb98601825
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eea226fae902c19d66aff83b7ee2786d1586ef39
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Anbefalte fremgangsmåter for å importere bilag ved å bruke Økonomijournal-enheten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.  
 
@@ -57,7 +57,7 @@ Avsnittene nedenfor beskriver virkningen av disse innstillingene, og beskriver o
 
 ### <a name="voucher-number"></a>Bilagsnummer
 
--   Når du bruker innstillingen **Settbasert behandling** for Økonomijournal-enheten, må bilagsnummeret angis i den importerte filen. Hver transaksjon i økonomijournalen tilordnes bilagsnummeret som er angitt i den importerte filen, selv om bilaget ikke er balansert. Hvis du vil bruke settbasert behandling, men du også vil bruke nummerserien som er definert for bilagsnumre, er en hurtigreparasjon tilgjengelig for versjonen fra februar 2016. Hurtigreparasjonsnummeret er 3170316 og er tilgjengelig for nedlasting fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned hurtigreparasjoner fra Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+-   Når du bruker innstillingen **Settbasert behandling** for Økonomijournal-enheten, må bilagsnummeret angis i den importerte filen. Hver transaksjon i økonomijournalen tilordnes bilagsnummeret som er angitt i den importerte filen, selv om bilaget ikke er balansert. Hvis du vil bruke settbasert behandling, men du også vil bruke nummerserien som er definert for bilagsnumre, er en hurtigreparasjon tilgjengelig for versjonen fra februar 2016. Hurtigreparasjonsnummeret er 3170316 og er tilgjengelig for nedlasting fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned hurtigreparasjoner fra Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
     -   Hvis du vil aktivere denne funksjonaliteten for journalnavnet som brukes for importer, kan du sette **Nummertilordning ved postering** til **Ja**.
     -   Et bilagsnummer må fortsatt være definert i den importerte filen. Dette nummeret er imidlertid midlertidig og blir overskrevet av bilagsnummeret når journalen posteres. Du må kontrollere at linjene i journalen er gruppert på riktig måte etter midlertidig bilagsnummer. Under postering finnes for eksempel tre linjer som har det midlertidige bilagsnummeret 1. Det midlertidige bilagsnummeret for alle tre linjene blir overskrevet av det neste nummeret i nummerserien. Hvis disse tre linjene ikke er balanserte oppføringer, posteres ikke bilaget. Hvis det finnes linjer som har det midlertidige bilagsnummeret 2, overskrives dette nummeret av neste bilagsnummer i nummerserien og så videre.
 

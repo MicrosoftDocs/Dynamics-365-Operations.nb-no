@@ -19,16 +19,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e19c0eb8f28f16ba827d5218a96ee21c976aacb7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e195f9976465a933ceaaeb0bd2cbec4f814bc5f8
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-company-specific-hr-parameters"></a>Definere firmaspesifikke parametere for Personale
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Innstillingene for noen parametere for Personale deles mellom firmaer, mens innstillingene for andre parametere er firmaspesifikke. Denne artikkelen forklarer hvordan du konfigurerer firmaspesifikke Personale-parametere.
 
@@ -57,7 +57,7 @@ Innstillingene i kategorien **FMLA** definerer hvor mange timer en ansatt må ar
 
 **Obs!** Antall timer arbeidet kan ikke overskride 1 250, og lengden på ansettelse kan ikke overskride 12 måneder. Disse maksimumsverdier er i overensstemmelse med gjeldende lovgivning i USA. Til slutt bestemmer innstillingene i kategorien **Ansattselvbetjening** opplysningene som en leder kan angi på vegne av hans eller hennes ansatte.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md)

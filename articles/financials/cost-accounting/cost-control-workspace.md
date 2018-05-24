@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7cc6ba50b8df54eadc9a23990a58d1d37365cb6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-control-overview"></a>Oversikt over kostnadskontroll 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbeidsområdet **Kostnadskontroll** er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter. Rapportene i arbeidsområdet blir administrert i sin helhet av regnskapsførere, slik at oppsettet og dataene som brukes til rapportering, blir konsekvent på tvers av hele organisasjonen.
 
@@ -154,7 +154,7 @@ I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag
 
 ![Beregninger per kostnadsobjekt](./media/cost-entries-allocation-base.png)
 
-Se også 
+Tilleggsressurser 
 
 [Definere tilgangsrettigheter for kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md)
 

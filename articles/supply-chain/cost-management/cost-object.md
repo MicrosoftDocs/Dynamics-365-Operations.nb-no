@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1a1c964a890c0c59a01700a6987bfbdfe5a17ccb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d35d7971806e2f711d84f172bfacd60edf9f9225
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-objects"></a>Kostnadsobjekter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvordan kostnader og antall akkumuleres. Et kostnadsobjekt er en enhet som kostnader og antall akkumuleres for. En kostnadsobjektenhet kan være et produkt eller produktvarianter, for eksempel varianter for stil og farge.  
 
@@ -66,9 +66,9 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
     -   Postert antall
 -   Feltet **Gjennomsnittlig enhetskostnad** er et beregnet felt. Verdien beregnes ved å dele **Verdi**-verdien på **Antall**-verdien.
 
-**Obs!**  Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
+**Obs!**   Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Produktdimensjonsgruppe](https://technet.microsoft.com/en-us/library/aa499382.aspx)

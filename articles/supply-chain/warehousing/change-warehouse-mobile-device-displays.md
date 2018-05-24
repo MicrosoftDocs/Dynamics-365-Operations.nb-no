@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinnstillinger for lagermobilenheten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du definerer utseendet på en mobilenhetsvisning og tilordning av hurtigtaster til kontroller, for eksempel knapper. 
 
@@ -89,15 +89,15 @@ For å velge farge velger du siden **Velg farge** og klikker på paletten eller 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Angi datoformatet som skal brukes på mobilenheter
 Du kan utvide listen over godkjente datoformater for hver installasjon. Denne funksjonen kan for eksempel være nyttig hvis du vil angi et format som gjør det enklere for en arbeider å angi datoer på en mobilenhet. Standardformatet bestemmes av brukerens standardspråk, som er angitt i feltet **Språk** på siden **Brukeralternativer**. (Samme side brukes også til å knytte en ansatt til en bestemt lagerarbeidsbruker.) **Obs!** Portalen for lagermobilenheter bruker ikke innstillingen for feltet **Format for dato, klokkeslett og tall** på siden for **innstillinger for språk og område**. Hvis du vil endre et datoformat, må du kjenne til vanlige uttrykk i Microsoft .NET Framework. Hvis du vil ha mer informasjon, kan du se [Vanlige uttrykk i .Net Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Hvis du vil definere datoformater, kan du redigere filen Dates.ini som finnes i Content\\Settings\\Dates.ini på Portal for lagermobilenheter-serveren. Denne filen bruker vanlige .NET-uttrykk til å angi datoformatet. Det vanlige uttrykket må inneholde underordnede uttrykk som oppretter navngitte grupper for dag, måned og år (DDMMÅÅ), som vist i eksemplet nedenfor:
 
-^(?&lt;day&gt;\\d{2})(?&lt;month&gt;\\d{2})(?&lt;year&gt;\\d{2})$
+^(?&lt;dag&gt;\\d{2})(?&lt;måned&gt;\\d{2})(?&lt;år&gt;\\d{2})$
 
 Hvert underordnede uttrykk krever ett til to sifre for dagen og måneden, og ett til fire sifre for året. Det følgende underordnede uttrykket definerer for eksempel en navngitt gruppe for et år, og krever fra to til fire sifre:
 
-(?&lt;year&gt;\\d{2,4})
+(?&lt;år&gt;\\d{2,4})
 
 Du kan angi mer enn ett uttrykk i den samme filen. Hvert uttrykk må være på en egen linje. Det første uttrykket som samsvarer, brukes til å analysere datoen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)

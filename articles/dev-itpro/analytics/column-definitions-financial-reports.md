@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen gir informasjon om kolonnedefinisjoner. En kolonnedefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i kolonner i en rapport. Grunnleggende kolonnedefinisjoner kan i likhet med raddefinisjoner brukes på flere rapporter.
 
@@ -583,7 +583,7 @@ Du kan opprette en kolonne som viser alle verdiene i en angitt kolonne som en pr
 
 Du kan dividere beløpet i en kolonne med et bestemt antall perioder. Formelen **B/Perioder** dividerer for eksempel verdien i kolonne B med antall perioder i kolonne B. Hvis beregningen strekker seg over flere kolonner, angir du antall perioder som skal brukes i beregningen. Formelen **(B+C)/Perioder** summerer for eksempel beløpene i kolonnene B og C, og dividerer deretter resultatet med periodeverdien.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Raddefinisjoner i finansrapportering](row-definitions-financial-reporting.md)

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a47c631b265262f78e0fb3d956a98a7c9e9f5172
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4414ead4d2c767ecdd3e631035034b01de55b27
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter. 
 
@@ -91,7 +91,7 @@ Hvis du oppretter en konsernintern bestilling som bruker den konserninterne kjø
 ## <a name="financial-dimensions-on-purchase-agreements"></a>finansdimensjoner i kjøpsavtaler
 Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøpsavtale. Hvis du endrer dimensjonene i overskriften for avtalen eller avtalelinjen, vil endringen ikke påvirke frigitte ordrer, men den vil vises på alle nye ordrer.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprette en ny kjøpsavtale (oppgaveveiledning)](tasks/create-purchase-agreement.md)

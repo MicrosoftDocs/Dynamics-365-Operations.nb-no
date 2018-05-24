@@ -19,21 +19,21 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c0942b66859da3659be49b19986bfd146ac43130
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="connect-the-help-system"></a>Koble til hjelpesystemet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det gir en oversikt over hvordan du kobler disse komponentene og et sammendrag av hvordan du oppretter egendefinert hjelp. 
 
 ## <a name="help-architecture"></a>Hjelpearkitektur
-Illustrasjonen nedenfor viser delene av Finance and Operations-hjelpesystemet. Det integrerte hjelpesystemet i produktet henter artikler fra Finance and Operations-nettstedet https://docs.microsoft.com i tillegg til oppgaveveiledninger som er lagret i Forretningsprosessmodellereren i Lifecycle Services (LCS). 
+Illustrasjonen nedenfor viser delene av Finance and Operations-hjelpesystemet. Det integrerte hjelpesystemet i produktet henter artikler fra Finance and Operations-nettstedet på https://docs.microsoft.com i tillegg til oppgaveveiledninger som er lagret i Forretningsprosessmodellereren i Lifecycle Services (LCS). 
 > [!NOTE]
 > Funksjonene som nevnes i diagrammet med en stjerne (\*), er planlagte, men er ennå ikke tilgjengelige. [![Hjelpearkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -72,10 +72,10 @@ Du kan opprette egendefinert hjelp for Finance and Operations og for Retail ved 
 
 For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Hjelpeoversikt](help-overview.md)
+[Oversikt over Hjelp](help-overview.md)
 
 [Oversikt over oppgaveopptaker](../../dev-itpro/user-interface/task-recorder.md)
 

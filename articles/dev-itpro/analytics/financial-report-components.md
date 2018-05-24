@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Komponenter for finansrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Denne artikkelen forklarer hvordan du ordner og låse byggesteiner. 
 
@@ -109,10 +109,10 @@ Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle 
 Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til byggeblokken. Noen ganger glemmer brukere å lukke en byggeblokk eller å avslutte systemet uten å lukke byggeblokken. Derfor forblir byggeblokken utsjekket, og ingen andre brukere kan åpne den. I slike situasjoner kan en finansiell rapporteringsadministrator bruke dialogboksen **Utsjekkede varer** for å sjekke inn byggeklosser som brukere har sjekket ut. **Merk:** Du må ha administratorrolle for å sjekke inn byggeklosser ved å bruke dialogboksen **Utsjekkede varer**.
 1.  På **Verktøy**-menyen i Rapportutforming klikker du **Utsjekkede elementer**.
 2.  Velg **Vis elementer fra alle brukere** i dialogboksen **Utsjekkede elementer**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut, og brukerne som har sjekket dem ut.
-3.  Velg en byggeblokk, og klikk deretter **Angre utsjekking**.
+3.  Merk en byggeblokk, og klikk deretter **Angre utsjekking**.
 4.  Klikk **Ja** for å sjekke inn byggeblokken.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
 

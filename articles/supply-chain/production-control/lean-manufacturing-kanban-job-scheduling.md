@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac4c1afecb72d4007d830a9927bd3171ddd48ec
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f1044e6731fd757532e34292109b9d81ca38719
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-jobbplanlegging for Lean manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om visuell kontroll over planlegging av kanban-jobb og forskjellige måter å planlegge kanban-jobber.  
 
@@ -69,7 +69,7 @@ Tilgjengelig kapasitet per dag eller uke er definert av kalenderen som er tilord
 
 Listesiden **Kanban-jobbplanlegging** inneholder en faktaboks som viser tilgjengelig og bestilt periodekapasitet for den valgte arbeidscellen. Avhengig av de valgte tidsplanperiodene i produksjonsflytmodellen viser periodene dager eller uker.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 

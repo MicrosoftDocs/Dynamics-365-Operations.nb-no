@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 858328ec60e0ffa5ca46a98b365fb0fc599ae1f0
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="coverage-settings"></a>Dekningsinnstillinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hovedplanlegging bruker dekningsinnstillinger til å beregne varebehov. 
 
@@ -45,11 +45,11 @@ Du kan angi dekningsinnstillinger på flere måter:
 
 <!-- -->
 
-- Angi dekningsinnstillinger for en dimensjonsgruppe. Klikk <strong>Behandling av produktinformasjon &gt; Felles &gt; Frigitte produkter</strong>. På <strong>Detaljer om frigitt produkt-siden, i kategorien Generelt</strong> i <strong>Administrasjon</strong>-gruppen, klikker du koblingen <strong>Lagringsdimensjonsgruppe</strong>. På <strong>Lagringsdimensjonsgruppe</strong>-siden velger du feltet <strong>Dekningsplanlegg etter dimensjon</strong> for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse, stil, må ha feltet <strong>Dekningsplanlegg etter dimensjon</strong> valgt.
+- Angi dekningsinnstillinger for en dimensjonsgruppe. Klikk **Behandling av produktinformasjon &gt; Felles &gt; Frigitte produkter**. På **Detaljer om frigitt produkt**-siden, i kategorien **Generelt** i **Administrasjon**-gruppen, klikker du koblingen **Lagringsdimensjonsgruppe**. På **Lagringsdimensjonsgruppe**-siden velger du feltet **Dekningsplanlegg etter dimensjon** for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse, stil, må ha feltet **Dekningsplanlegg etter dimensjon** valgt.
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Hovedplaner](master-plans.md)

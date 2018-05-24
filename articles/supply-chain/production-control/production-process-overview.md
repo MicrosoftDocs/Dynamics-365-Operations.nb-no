@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Oversikt over produksjonsprosess
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden. 
 
@@ -78,7 +78,7 @@ Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i bl
 12. **Periodisk avslutning** – Noen regnskapsprinsipper, som periodisk gjennomsnitt, backflush-etterkalkulering, FIFO eller LIFO, krever periodiske aktiviteter for å lukke lageret eller regnskapsperioden. Vanligvis prøver systemet å rapportere alt material- og ressursforbruk samt korrigeringer av lager og svinn, før periodene lukkes. Denne rapporteringen gjøres vanligvis ved hjelp av lagerbevegelsesjournaler eller justeringsjournaler. Målet er å vurdere det økonomiske resultatet til driftsenheter per periode. I noen tilfeller når tidkrevende produksjonsordrer brukes, som strekker seg over de økonomiske rapporteringsperiodene, brukes produksjonsjournaler til å rapportere produksjonsfremdriften og ressursforbruket ved utløpet av perioden.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Tilbakemeldinger på produksjon](production-feedback.md)

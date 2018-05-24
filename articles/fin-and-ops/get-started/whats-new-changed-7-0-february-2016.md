@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016.
 
@@ -536,7 +536,7 @@ Ingen nye funksjoner er lagt til.
 </tr>
 <tr class="odd">
 <td>(EU) Rapportantall i tilleggsenheter for Intrastat ved hjelp av innstillingen for konvertering av enhet.</td>
-<td>Intrastat-artikkelkoden har et tekstfelt for å identifisere flere enheter, og **Produkt**-kortet har et felt for å identifisere antall tilleggsenheter angitt i kilo.</td>
+<td>Intrastat-artikkelkoden har et tekstfelt for å identifisere flere enheter, og <strong>Produkt</strong>-kortet har et felt for å identifisere antall tilleggsenheter angitt i kilo.</td>
 <td>Tilleggsenheter for Intrastat-artikkelkoden som er valgt fra listen over enheter. Antall tilleggsenheter beregnes gjennom innstillingene for konvertering av enhet.</td>
 <td>Det forener tilnærmingen for omberegning fra enheter av transaksjon til tilleggsenheter.</td>
 </tr>
@@ -569,7 +569,7 @@ Ingen nye funksjoner er lagt til.
 |                                                                                                                            |                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hva kan du gjøre?**                                                                                                       | **Dynamics AX 2012**                                                                                                                                                                                                                                                                          | **Dynamics AX 7.0**                                                                                                                                                                                                                                                                                                                                               | **Hvorfor er dette viktig?**                                                                                                                              |
-| Advare brukeren hvis en salgsordre eller produksjonsordre er ikke klar for levering innen planlagt dato.                         | Advarsler som er opprettet av hovedplanlegging, kalles *terminmeldinger*. *Termin* er en kontrakt mellom to parter om å kjøpe eller selge aktiva til en pris som er avtalt i dag (*terminpris*), selv om leveringen og betalingen utføres på et tidspunkt i fremtiden (*leveringsdatoen)*. | Navnet på *terminmeldinger* og *termindatoer* er endret til henholdsvis *beregnede forsinkelser* og *forsinkede datoer*.                                                                                                                                                                                                                                                   | Terminologien som ble brukt i AX 2012, var feil og førte til feil oversettelser.                                                               |
+| Advare brukeren hvis en salgsordre eller produksjonsordre er ikke klar for levering innen planlagt dato.                         | Advarsler som er opprettet av hovedplanlegging, kalles *terminmeldinger*. *Termin* er en kontrakt mellom to parter om å kjøpe eller selge aktiva til en pris som er avtalt i dag (*terminpris*), selv om leveringen og betalingen utføres på et tidspunkt i fremtiden (*leveringsdatoen*). | Navnet på *terminmeldinger* og *termindatoer* er endret til henholdsvis *beregnede forsinkelser* og *forsinkede datoer*.                                                                                                                                                                                                                                                   | Terminologien som ble brukt i AX 2012, var feil og førte til feil oversettelser.                                                               |
 | Få raskt innblikk i statusen for en hovedplanleggingskjøring, planlagte ordrer som haster, og planlagte ordrer som forårsaker forsinkelser. | Informasjonen er tilgjengelig, men den er spredt i flere skjemaer.                                                                                                                                                                                                                       | **Hovedplanlegging**-arbeidsområdet inneholder raskt informasjon om når den siste hovedplanleggingskjøring ble fullført, om eventuelle feil oppstod, hva de planlagte bestillingene er, og hvilke planlagte bestillinger som forårsaker forsinkelser.                                                                                                                                   | Du har nytte av oversikten arbeidsområdet gir. Relevant informasjon er satt sammen for å veilede med hovedplanlegging og forbedre produktiviteten. |
 | Bruk Excel til å oppdatere behovsprognoser.                                                                                      | Ikke tilgjengelig                                                                                                                                                                                                                                                                                 | Du kan dra nytte av sømløs integrasjon med Microsoft Excel når du angir behovsprognoser, oppdaterer og sletter behovsprognoser.                                                                                                                                                                                                                             | Det bidrar til å øke effektiviteten og produktiviteten.                                                                                                          |
 | Beregne fremtidig behov og opprette behovsprognoser basert på historiske transaksjonsdata.                                  | I Microsoft Dynamics AX 2012 R3 brukes prognosemodeller i Microsoft SQL Server Analysis Service til å opprette behovsprognoseforutsigelser.                                                                                                                                                | Beregn fremtidig behov ved hjelp av kraften og utvidelsesmulighetene i Microsoft Azure Machine Learning-skytjenesten. Det er enkelt å bruke og utvide prognosemodellene i Machine Learning for å oppfylle kundekrav. Tjenesten velger modell i henhold til hvilken som passer best, og tilbyr nøkkelytelsesindikatorer (KPI-er) som kan brukes til å beregne prognosenøyaktighet. | Generer mer nøyaktige prognoser ved hjelp av Machine Learning-teknikker.                                                                              |
@@ -1081,7 +1081,7 @@ Ingen nye funksjoner er lagt til.
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Hva er nytt eller endret?](whats-new-changed.md)

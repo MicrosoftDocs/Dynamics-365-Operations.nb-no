@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28037713a51a83f4b792adef8a26f02960fa6b07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nonconformance-management"></a>Behandling av avvik
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver det grunnleggende oppsettet som kreves for å bruke avvik. Ekstra oppsett er nødvendig hvis du vil bruke kvalitetsordrer.
 
@@ -47,7 +47,7 @@ Følg disse trinnene for å aktivere behandling av avvik:
 6.  Definer de relaterte operasjonene som skal tilordnes til avvik. Bruk **Operasjoner**-siden til å definere en klassifisering av arbeidet som kan utføres for et godkjent avvik. Når du tilordner en relatert operasjon til et avvik, kan du også gi detaljert informasjon, for eksempel informasjon om tilknyttede materialer, arbeidstimer og tillegg som kreves for å utføre operasjonen. Denne informasjonen brukes til å beregne en estimert kostnad for operasjonen. Den detaljerte informasjonen og de estimerte kostnadene er til referanse. De relaterte operasjonene for kvalitet er annerledes enn operasjonene som kan defineres for en produksjonsrute.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Opprette og behandle et avvik (oppgaveveiledning)](tasks/create-process-non-conformance.md)

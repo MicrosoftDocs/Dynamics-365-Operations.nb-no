@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Behovsprognose brukes til å forutse uavhengig behov fra salgsordrer og avhengig behov på et hvilket som helst frakoblingspunkt for kundeordrer. Reglene for utvidet behovsprognosereduksjon er en ideell løsning for massetilpasning.
 
@@ -53,7 +53,7 @@ Tre viktige temaer er implementert i behovsprognose:
     -   Du kan laste ned Finance and Operations behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Finance and Operations for produksjonsplanlegger som bruker på virksomhetsnivå.
     -   Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens Finance and Operations behovsprognoseeksperimenter automatisk er integrert med Finance and Operations, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
     -   Du kan opprette dine egne eksperimenter i Microsoft Azure Machine Learning Studio, publisere dem som tjenester på Azure og bruke dem til å generere behovsprognoser.
-    -   Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. Hvis du vil ha detaljer om priser for Machine Learning, se <http://aka.ms/machine-learning-price-info>.
+    -   Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. For opplysninger om priser for Machine Learning kan du se <http://aka.ms/machine-learning-price-info>.
 -   **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose i Finance and Operations bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grunnleggende flyt i behovsprognose
@@ -72,7 +72,7 @@ Du kan bruke Finance and Operations til å visualisere og endre basislinjeprogno
 ## <a name="limitations"></a>Begrensninger
 Behovsprognose i Finance and Operations er et verktøy som hjelper kunder i fabrikasjonsbransjen med å opprette prognoseprosesser. Det tilbyr kjernefunksjonaliteten for en behovsprognoseløsning og er utformet slik at det kan enkelt utvides. Behovsprognose egner seg kanskje ikke best for kunder i bransjer som detaljhandel, engros, lager, transport eller andre profesjonelle tjenester.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Oppsett av behovsprognose](demand-forecasting-setup.md)

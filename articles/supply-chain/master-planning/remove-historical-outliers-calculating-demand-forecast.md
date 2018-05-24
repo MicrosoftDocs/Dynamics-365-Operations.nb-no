@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 714a892ff4c168ee3ba1cefd25ae18345af5631b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b4805d343518a880ad0d6e6568c5493583a17783
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikkelen beskriver hvordan du utelater utestående fra de historiske dataene som brukes til å beregne en behovsprognose. Ved å ekskludere utestående kan du forbedre nøyaktighet av prognosen.
 
@@ -43,7 +43,7 @@ Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppg
 
 **Merk:** Du kan også opprette en spørring som er basert på en eksisterende spørring. Velg spørringen du vil kopiere, og klikk deretter **Duplikat**. **Spørringsdato**-feltet identifiserer versjonen. Du kan bruke spørringen som den er, eller du kan klikke **Rediger spørring** for å endre vilkårene. Du kan også endre navnet og beskrivelsen av den nye spørringen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Tilleggsressurser
 --------
 
 [Innføring i behovsprognoser](introduction-demand-forecasting.md)
