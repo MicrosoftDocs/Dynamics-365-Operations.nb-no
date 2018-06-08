@@ -3,7 +3,7 @@ title: "Satsvis utføring for varsler"
 description: Dette emnet gir informasjon om satsvis behandling av varsler i Microsoft Dynamics 365 for Finance and Operations.
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,6 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="batch-processing-for-alerts"></a>Satsvis behandling for varsler
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Varsler behandles med funksjonaliteten for satsvis behandling i Microsoft Dynamics 365 for Finance and Operations. Du må konfigurere satsvis behandling før varsler kan leveres.
 
