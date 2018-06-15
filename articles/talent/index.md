@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "Talent forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Disse prosessene omfatter ansattbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Med Talent kan du utføre disse oppgavene:
 + Gå gjennom ytelse og implementere arbeidermål.
 + Definere, levere og analysere kurs som inneholder agendaer, økter og spor.
 
+Utforsk Dynamics 365 for Talent ved å se videoen [Kom i gang med Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent er nært knyttet til Personale i Dynamics 365 for Finance and Operations. Den samme funksjonaliteten kan forekomme i begge produkter. Det kan føre til at produktnavnet i emner som hovedsakelig er relatert til Personale, vil være Dynamics 365 for Finance and Operations, mens produktnavnet i emner som hovedsakelig er relatert til Talent, vil være Dynamics 365 for Talent. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
@@ -55,6 +58,8 @@ Når du arbeider med Talent, må du bestemme hvordan du vil strukturere organisa
 -   [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md) 
 -   [Vanlige spørsmål om personalhandlinger](personnel-actions-faq.md)
 -   [Oversikt over permisjon og fravær](leave-absence-overview.md)
+-   [Slik bruker du Dynamics 365 for Talent: permisjon og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Administrere medarbeidere i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Bemanning av organisasjonen
 
@@ -71,6 +76,7 @@ Du kan definere planer for å behandle kompensasjon effektivt og rettferdig, sam
 -   [Behandle kompensasjon](process-compensation.md)
 -   [Opprette planer for fast kompensasjon](create-fixed-compensation-plans.md)
 -   [Opprette variable kompensasjonsplaner](create-variable-compensation-plans.md)
+-   [Administrere kompensasjon i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Utvikle og lære opp ansatte
 
@@ -79,6 +85,7 @@ For å hjelpe de ansatte til å nå sine karrieremål samtidig som de oppfyller 
 -   [Ytelsesstyring](performance-management-overview.md)
 -   [Justere ferdigheter og forretningsbehov for arbeidsstyrke](skills.md)
 -   [Administrere opplæring via kurs](courses.md)
+-   [Administrere ansattutvikling i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Opprette og vedlikeholde fordeler
 
@@ -87,10 +94,11 @@ I tillegg til å kompensere dine ansatte med lønn og bonuser, kan du utvikle fo
 -   [Administrere et fordelsprogram](manage-benefit-program.md)
 -   [Policyer for fordelsrettigheter](benefit-eligibility-policies.md)
 -   [Administrere varer som er lånt ut til arbeidere](loan-items.md)
+-   [Administrere ansattfordeler i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Opprettholde sikkerhet på arbeidsplassen og overholdelse
 
-Talent kan bidra til å vedlikeholde et sikkert arbeidsmiljø som er samsvar gjeldende lovgivning, herunder den amerikanske loven mot diskriminering av funksjonshemmede, Americans with Disabilities Act, og innvandrings og statsborgerskap. Du kan for eksempel administrere de fysiske kravene for bestemte jobber, samt spore forespørsler om tilpasninger som kan hjelpe organisasjonen med å optimalisere ferdighetene til arbeidsstyrken.
+Talent kan bidra til å vedlikeholde et sikkert arbeidsmiljø som er i samsvar med gjeldende lovgivning, herunder den amerikanske loven mot diskriminering av funksjonshemmede, Americans with Disabilities Act, og lover om immigrasjon og statsborgerskap. Du kan for eksempel administrere de fysiske kravene for bestemte jobber, samt spore forespørsler om tilpasninger som kan hjelpe organisasjonen med å optimalisere ferdighetene til arbeidsstyrken.
 
 -   [Bekreftelse for I-9-ansettelse](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
 -   [Overholde den amerikanske loven mot diskriminering av funksjonshemmede (Americans with Disabilities Act)](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
