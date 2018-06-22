@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Metoden som brukes for å frigi stykkliste- og formellinjer styres av **Frigivel
 - **Frigi stykkliste- og formellinjer som en del av produksjons- eller partordrefrigivelse** – I denne metoden frigis stykkliste- og formellinjer for en produksjons- eller partiordre som en del av prosessen med å frigi ordren. Vanligvis under frigivelsen av en produksjons- eller partiordre, frigis produksjonsjobber frigis til produksjonsarbeiderne og produksjonspapirer skrives ut. Under denne prosessen endres også ordrens status til **Frigitt**.
 - **Frigi stykkliste- og formellinjer via en partijobb eller som en manuell samhandling** – I denne metoden kan stykkliste- og formellinjer bare frigis gjennom **Automatisk frigivelse av stykklister og formellinjer**-partijobben eller som en manuell samhandling. Hvis du vil frigi manuelt stykkliste- og formellinjer, velger du **Frigi til lager** på produksjonsordrelistesiden eller produksjonsordredetaljsiden i handlingsruten.
 
-For en rask demonstrasjon av hvordan du frigir stykkliste- og formellinjer til produksjon ved hjelp av en satsvis jobb, kan du se denne korte YouTube-videoen:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+For en rask demonstrasjon av hvordan du frigir stykkliste- og formellinjer til produksjon ved hjelp av en satsvis jobb, kan du se denne korte YouTube-videoen: [Frigi produksjonsplukking til lageret satsvist](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigi stykkliste- og formellinjer ved hjelp av en partijobb
 
@@ -85,8 +84,7 @@ Illustrasjonen nedenfor viser en produksjonsordre som har to operasjoner, 10 og 
 
 ![Eksempel på frigivelse av materiale per operasjonsnummer](media/two-operations.PNG)
 
-For en rask demonstrasjon av hvordan du frigir materiale i forhold til mengde ferdigvarer, kan du se denne korte YouTube-videoen:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+For en rask demonstrasjon av hvordan du frigir materiale i forhold til antall ferdigvarer, kan du se denne korte YouTube-videoen: [Forbedringer i frigivelsesprosessen for produksjonsordrer i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigi materiale i forhold til mengde ferdigvarer
 

@@ -1,6 +1,6 @@
 ---
-title: Finansresultat-innhold for Power BI
-description: Dette emnet beskriver Power BI-innholdet om finansresultat.
+title: "Finansresultat for PowerBI.com-løsning"
+description: "Dette emnet beskriver PowerBI.com-løsningen for finansresultat."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Finansresultat-innhold for Power BI
+# <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Denne innholdspakken er avskrevet slik det står i [Power BI-innholdspakker tilgjengelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denne PowerBI.com-løsningen er avskrevet slik det står i [Power BI-innholdspakker tilgjengelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Dette emnet beskriver Power BI-innholdet om **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
 
 ## <a name="main-account-setup"></a>Hovedkontooppsett
 Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Instrumentbord og rapporter som er inkludert i Power BI-innholdet
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Instrumentbord og rapporter som er inkludert i PowerBI.com-løsningen
 Instrumentbordet inneholder fliser med oppsummerte data som er basert på underliggende rapporter. Hver flis viser sammendragsinformasjon for inneværende år for alle firmaer i en organisasjon. Her er noen av flisene:
 
 - Kontant
@@ -74,7 +74,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende enheter ble brukt som grunnlag for Power BI-innholdet om : **finansresultat**:
+Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresultat**:
 
 **Aggregerte dataenheter**
 

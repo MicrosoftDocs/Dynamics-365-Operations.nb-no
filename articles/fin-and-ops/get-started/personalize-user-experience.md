@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 3d969069dd5f447b449df84b097527d3814aa338
+ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
+ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -32,105 +32,122 @@ ms.lasthandoff: 11/20/2017
 
 Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 
-Det finnes mange typer tilpasninger i Dynamics 365 for Finance and Operations. Noen tilpasninger er valgene du gjør i en liste over alternativer på en konfigurasjonsside. Noen personlige tilpasninger er implisitte, for eksempel holder Finance and Operations oversikt over bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist/skjult for hurtigfanene. Andre tilpasninger er eksplisitt. For eksplisitte tilpasninger, angir du en interaktiv tilpassingsmodus og endrer utseendet på en side ved å direkte styre hvordan elementer vises eller fungerer på siden. 
+Det finnes tre grunnleggende klasser med tilpasninger i Finance and Operations. 
+- Tilpasninger gjort på en konfigurasjonsside. Eksempler er fargetema og tidssone.
+- Personlige tilpasninger som er knyttet til bruk av siden, kalt *implisitte* tilpasninger. For eksempel holder Finance and Operations oversikt over bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist eller skjult for hurtigfanene. 
+- Tilpasninger en bruker gjør for å endre utseendet på en side ved å endre hvordan et element fungerer eller vises på den siden, ofte gjennom en interaktiv tilpasningsmodus. Disse tilpasningene kalles *eksplisitte* tilpasninger. Brukeren kan for eksempel legge til, skjule eller endre rekkefølgen på elementene på siden.
 
-Alle personlige innstillinger, av en hvilken som helst type, som en bruker gjør i Finance and Operations, er bare for denne brukeren, uavhengig av firmaet som brukeren samhandler med. Endringer som en bruker gjør på en side, påvirker ikke andre brukere i systemet.
+Alle tilpasninger som en bruker gjør i Finance and Operations, er bare for denne brukeren, uavhengig av tilpasningstypen eller firmaet som brukeren samhandler med. Endringene som én bruker gjør på en side, påvirker ikke andre brukere i systemet.
 
 ## <a name="system-wide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
-I navigasjonsfeltet du vil finne et tannhjul bilde som kalles **Innstillinger**-menyknappen. Når du åpner **Innstillinger** menyen, vises en rekke valg. Hvis du velger **Alternativer**, åpnes brukerens **Alternativer** side. Der finner du fire alternativkategorier: 
+Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-menyen (tannhjulssymbolet) på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
 
--   **Visuelt** - bruk for å velge et fargetema og standardstørrelse på elementer på sidene.
--   **Innstillinger:** - Her kan du velge standarder for hver gang du åpner Finance and Operations, inkludert firma, startside og standardmodus for Vis/Rediger (som bestemmer om en side er låst for visning eller åpnet for redigering av hver gang du åpner den). Du finner også alternativer for språk, tidssone og dato, klokkeslett og nummerformat. Til slutt inneholder denne siden en rekke diverse innstillinger som vil være forskjellig fra versjon til versjon.
--   **Konto:** - Bruk for å angi bruker-IDen og andre kunderelaterte alternativer.
--   **Arbeidsflyt**  - dette er der du kan velge arbeidsflytrelaterte alternativer.
+- **Visuelt** – Velg et fargetema og standardstørrelsen på elementer på sidene.
+- **Innstillinger** – Velg standardverdier som brukes hver gang du åpner Finance and Operations. Disse verdiene inkluderer firmaet, startsiden og standard visnings-/ redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformat. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
+- **Konto:** – Juster brukernavnet ditt og andre kunderelaterte alternativer.
+- **Arbeidsflyt** – Velg arbeidsflytrelaterte alternativer.
 
 ## <a name="implicit-personalizations"></a>Implisitte tilpasninger
-Implisitte tilpasninger er de personlige tilpasningene som utføres ved å samarbeide med visse Kontroller som husker gjeldende synlig status. 
+Implisitte tilpasninger er tilpasninger som utføres ved å samhandle med kontroller som "husker" gjeldende synlige status.
 
-- **Rutenettkolonner:** - Du kan justere bredden på en kolonne i en liste ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og dra den til venstre eller høyre til ønsket bredde. Finance and Operations lagrer bredden som du ønsker og viser denne kolonnen med denne bredden hver gang du åpner siden med denne listen. 
+- **Rutenettkolonner:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Finance and Operations lagrer bredden som du angir for en kolonne. Deretter endres kolonnen til bredden hver gang du åpner siden som inneholder dette rutenettet.
+- **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Finance and Operations lagrer informasjon om hurtigfanene som du har vist og skjult. Deretter, hver gang du går tilbake til siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi Finance and Operations ikke trenger å hente informasjonen om denne hurtigfanen før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
+- **Faktabokser** – Noen sider har en del som er kjent som en *Faktaboksrute*. Denne ruten inneholder skrivebeskyttet informasjon knyttet til gjeldende emne på siden. Hver del i faktaboksruten kalles en *Faktaboks*. Du kan skjule eller vise hele faktaboksruten, og du kan også vise eller skjule individuelle faktabokser. Finance and Operations lagrer innstillingene dine. Deretter, hver gang du går tilbake til siden lagres status for faktaboksruten og de individuelle faktaboksene gjenopprettes basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en faktaboks, fordi Finance and Operations ikke trenger å hente informasjonen om denne faktaboksen før faktaboksen utvides.
+- **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan feste handlingsruten som åpen, eller du kan skjule den som standard. Deretter, neste gang du åpner siden, vil Finance and Operations gjenopprette den låste tilstanden i handlingsruten. Hvis handlingsruten er festet åpen, vil Finance and Operations også vise kategorien med handlinger som du brukte sist.
+- **Hurtigfilter** – Et *hurtigfilter* vises over mange rutenett. Med hurtigfilter kan du filtrere rutenettet basert på en kolonne som du velger. Finance and Operations lagrer kolonnen du filtrerte på. Deretter, neste gang du åpner siden som inneholder dette rutenettet, vil rutenettet filtreres i samme kolonne. Du kan imidlertid deretter filtrere rutenettet på en annen kolonne.
+- **Kolonnehodefiltre** – Når du filtrerer et rutenett ved hjelp av *Kolonnehodefiltre*, kan du endre filteroperatoren etter behov for å finne dataene du vil bruke. Du kan for eksempel endre operatoren fra **begynner med** til **er nøyaktig**. Hver gang du bruker et kolonnehodefilter og endrer filteroperatoren, lagrer Finance and Operations endringen. Den vil deretter gjenopprette filteroperatoren neste gang du filtrerer på denne kolonnen.
+- **Navigasjonsrute** – Du kan åpne *Navigasjonsruten* ved å velge **Meny**-knappen i venstre rute på en hvilken som helst side. (**Meny**-knappen kalles noen ganger *hamburger*, *hamburgermeny* eller *hamburgerknapp*.) Du kan feste navigeringsruten åpen eller beholde den skjult som standard. Når du fester navigasjonsruten åpen, vil Finance and Operations beholde den åpen helt til du skjuler den.
 
-- **Hurtigfaner** - Noen sider har utvidbare deler kalt *hurtigfaner*. Finance and Operations lagrer hvilke hurtigfaner har du utvidet, og hvilke hurtigfaner du har skjult. Hver gang du går tilbake til siden, blir de samme hurtigfanene vist eller skjult basert på siste gang de er brukt. Vi skal forklare hvordan du endrer rekkefølgen på hurtigfane inndelingene dine i denne artikkelen. I noen tilfeller kan kan skjule en hurtigfane forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne hurtigfanen før hurtigfanen utvides. 
+## <a name="explicit-personalizations"></a>Eksplisitte tilpasninger
+Forskjellige personer og firmaer har et annet perspektiv på dataene som er viktigst for dem, eller dataene de ikke trenger for måten de driver forretninger på. I Finance and Operations kan du tilpasse måten informasjonen bestilles på og samhandles med. Du kan også angi at noe informasjon skal skjules. Disse funksjonene er nøkkelen til en personlig og produktiv erfaring og eksempler på eksplisitte tilpasninger. Eksplisitte tilpasninger er tilpasningene som du utfører eksplisitt med formålet om å endre utseendet eller virkemåten for et element eller en side.
 
-- **Faktabokser** - Noen sider har en del kalt en *faktaboksrute*. Denne ruten inneholder skrivebeskyttet informasjon knyttet til gjeldende emne på siden. Hver del i faktaboksruten, kalles en faktaboks. Du kan vise eller skjule en faktaboks og Finance and Operations vil lagre dine preferanser. I noen tilfeller kan kan skjule en faktaboks forbedre ytelsen fordi Finance and Operations ikke trenger å hente informasjon om denne faktaboksen før faktaboksen utvides.
+### <a name="shortcut-menu-options"></a>Hurtigmenyvalg
+Hurtigmenyer gir flere måter å endre en side eksplisitt på, slik at de passer behovene eller kravene i firmaet ditt bedre. (En hurtigmeny er også kjent som en *høyreklikkmeny* eller *hurtigmeny*.)
 
-## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisitte tilpasninger ved hjelp av verktøylinjen for tilpasning
-Hver person og hvert firma har ulike perspektiver om hvilke data som er viktigst for dem, eller som ikke er nødvendig for hvordan de driver virksomheten. Muligheten til å tilpasse hvordan informasjonen er ordnet, samhandlet med eller skjult er viktig for å gjøre Finance and Operations til en personlig og produktiv erfaring. 
+Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjengelige direkte som valg på en hurtigmeny. For eksempel for å legge til eller skjule kolonner i et rutenett, bare høyreklikker du en kolonneoverskrift i rutenettet, og velg deretter **Legg til kolonner** eller **Skjul denne kolonnen**.
 
-Eksplisitt tilpasninger er de tilpasningene som du utfører eksplisitt med formålet å endre utseendet eller virkemåten for et element eller en side, ved å velge en meny for personlig tilpasning. Den vanligste typen eksplisitt personalisering er der du høyreklikker et element og velger **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden ikke kan tilpasses.) Når du velger denne metoden for tilpasning, vises vinduet for elementets egenskaper. 
+De vanligste typene eksplisitte tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne metoden tilpasning, vises vinduet for elementets egenskaper.
 
-[![Tilpasse egenskapene for et element](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg) 
+[![Tilpasse egenskapene for et element](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
 
-Du vil tilpasse et element på siden på denne måten hvis du bare vil endre etiketten for elementet, skjule elementet slik at det ikke vises på siden (dette endrer ikke data, det ganske enkelt viser ikke informasjonen), inkludere informasjonen i delen for hurtigfanesammendrag (hvis elementet er i hurtigfanen), hoppe over feltet når du bruker tabulatortasten, eller gjøre det slik at dataene ikke kan endres ved å merke den som "Ikke rediger." 
+Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 
-Når du vil flytte eller skjule elementer eller foreta flere endringer, kan du bruke verktøylinjen for tilpassing, tilgjengelig fra vinduet for elementegenskaper, ved å velge **Tilpass dette skjemaet**. Verktøylinje for tilpasning er også tilgjengelig på skjemaets Handlingspanel, under **Tilpass**-gruppen i kategorien **Alternativer**. Velg **Tilpass dette skjemaet** og du får opp verktøylinjen for tilpasning. 
+- Endre elementetiketten.
+- Skjul elementet slik at det ikke vises på siden. Dataene i feltet slettes eller endres ikke. Informasjonen vises bare ikke på siden lenger.
+- Ta med informasjonen i sammendragsdelen for hurtigfanen (hvis elementet er på en hurtigfane).
+- Hopper over feltet når du trykker Tab for å flytte mellom feltene på siden.
+- Hindre at dataene i feltet (for en post) blir redigert.
+
+Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduet for et instrumentbord kan la deg opprette et nytt arbeidsområde på dette instrumentbordet.
+
+### <a name="the-personalization-toolbar"></a>Verktøylinjen for tilpassing
+Når du vil flytte eller skjule elementer eller gjøre flere endringer på en side, kan du bruke **Tilpasning**-verktøylinjen. For å åpne **Tilpasning**-verktøylinjen velg **Tilpass dette skjemaet** i egenskapsvinduet for et element. Du kan også velge **Tilpass dette skjemaet** i **Tilpass**-gruppen i **Alternativer**-kategorien på handlingsruten på hver side.
 
 [![Verktøylinje for tilpassing](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Verktøylinjen for tilpassing har flere tilpassingshandlinger. 
+Når **Tilpassing**-verktøylinjen er åpen, er denne siden ikke interaktiv. Derfor kan du ikke legge inn data eller vise eller skjule inndelinger. Du kan bare endre elementene som utgjør siden.
 
-- Velg **Velg**-verktøyet når du vil merke og endre egenskapene for mange elementer, ett om gangen. Først klikker du markeringsverktøyet, og klikk deretter elementet du vil endre egenskapene for. Når du velger et element, åpnes vinduet for elementets egenskaper, og du kan endre egenskapene for det elementet. Du kan gjenta prosessen for andre elementer i skjemaet som kan tilpasses. I noen tilfeller vil du merke et element og ser at noen av egenskapene ikke kan endres. Dette betyr at basert på måten det gjeldende elementet blir brukt på kan Finance and Operations ikke endre denne egenskapen. Du kan for eksempel ikke skjule et felt som er nødvendig. 
+Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 
-- Velg **flytte**-verktøyet når du vil merke og flytte et element til et annet sted i gjeldende gruppe med elementer. (Du kan ikke flytte et element utenfor den overordnede gruppen). Først klikker du flytteverktøyet, og deretter klikker du elementet du vil flytte. Når du klikker elementet du vil flytte, skanner Finance and Operations skjemaet for å fastslå hvor dette elementet kan flyttes og oppretter en serie med "slippsoner" som vises som en farget, fet linje ved siden av området der elementet kan bli slippes når du drar elementet rundt i gjeldende gruppe. 
+- Bruk **Velg**-verktøyet til å velge og endre egenskapene for et element. Velg **Velg**-verktøyet og deretter elementet du vil endre egenskapene for. Når du velger et element, vises vinduet for elementets egenskaper, og du kan endre egenskapene for det elementet. Du kan gjenta prosessen for andre elementer som kan tilpasses på denne siden. På grunn av måten enkelte elementer brukes på, vil ikke Finance and Operations la deg endre noen av egenskapene. Derfor, når du velger et element, kan du se at noen av egenskapene ikke kan endres. Du kan for eksempel ikke skjule et felt som er nødvendig.
+- Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. (Du kan ikke flytte et element utenfor den overordnede gruppen). Velg **Flytt**-verktøyet, og velg deretter elementet du vil flytte. Når du velger et element, søker Finance and Operations på siden for å finne ut hvor elementet kan flyttes. Deretter opprettes det en rekke "slippsoner." Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
+- Bruk **Skjul**-verktøyet for å skjule et element på siden. Velg **Skjul**-verktøyet, og velg deretter elementet du vil skjule. Når du velger **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige og vises i en skyggelagt beholder. Du kan deretter vise dem igjen. Ved å velge **Velg**-verktøyet kan du se hvordan siden vil se ut når de valgte elementene er skjult.
+- Bruk **Sammendrag**-verktøyet når du vil at et element skal vises i hurtigfanesammendragsdelen. Verktøyet Sammendrag gjelder bare for feltene som finnes i en inndeling i hurtigfanen. Når du velger **Sammendrag**-verktøyet, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra hurtigfanesammendraget ved å velge feltene.
+- Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-verktøyet, vil alle elementer som hoppes over, vises i en skyggelagt beholder. Du kan deretter gjøre dem til en del av tabulatorsekvensen igjen.
+- Bruk **Rediger**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Rediger**-verktøyet, vil alle elementer som hoppes over som ikke kan redigeres, vises i en skyggelagt beholder. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
+- Bruk **Sett inn**-knappen for å se en liste over elementer som kan settes inn på en side.
 
-- Velg **Skjul**-verktøyet for å velge og skjule et element. Hvis du vil skjule et element, velger du bare Skjul-verktøyet og klikker elementet du vil skjule. Når du velger verktøyet Skjul, gjøres alle gjeldende skjulte elementer synlig og vises i en nedtonet container slik at du kan velge elementet for å vise det. 
+    - Velg **Felt**-verktøyet under **Sett inn** for å legge til et felt på siden. Når du bruker **Felt**-verktøyet, kan du bare legge til felt som er en del av sidedefinisjonen, men som ikke vises på siden for øyeblikket. Hvis du vil ha informasjon om hvordan du oppretter nye felt som ikke er en del av den gjeldende sidedefinisjonen, kan du se [Egendefinerte felt](user-defined-fields.md). Når du har valgt **Felt**-verktøy, må du først velge gruppen eller området der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til den valgte gruppen eller området. I dialogboksen velger du ett eller flere felt og deretter **Sett inn**. Hvis du vil fjerne et felt som du la til tidligere, gjentar du prosessen, men fjerner merkingen av feltet i dialogboksen.
+    - Velg **PowerApp**-verktøyet under **Sett inn** for å bygge inn en app som ble opprettet ved hjelp av Microsoft PowerApps på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en PowerApps-app på den side, kan du se [Bygge inn PowerApps](embed-power-apps.md).
 
-- Velg **markeringsverktøyet** for å se hvordan siden vil se ut med de valgte elementene skjult. 
+- Velg **Behandle**-knappen for å vise en liste over administrasjonsalternativer som er relatert til alle tilpasninger for den gjeldende siden.
 
-- Velg **sammendrag**-verktøyet når du vil vise et numerisk felt eller et strengfelt i sammendragsområdet for hurtigkategorien. Verktøyet Sammendrag gjelder bare for feltene som finnes i en inndeling i hurtigfanen. Når du velger verktøyet Sammendrag, viser Finance and Operations alle feltene som er valgt som sammendragsfelt ved å plassere dem i en nedtonet container. Interaktivt kan du legge til og fjerne felt fra en hurtigfane for sammendrag ved å klikke feltet. 
+    - Velg **Fjern** for å tilbakestille siden til standard installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Det finnes ingen angrehandling. Bruk derfor dette alternativet bare hvis du er sikker på at du vil tilbakestille siden.
+    - Velg **Import** å laste en tilpasning fra en fil som du eller noen andre har opprettet for siden. Alle gjeldende tilpasninger for siden er erstattet med de tilpasningene fra den valgte filen.
+    - Velg **Eksporter** for å lagre dine tilpasningene for siden i en fil. Du kan dele dine tilpasninger med andre brukere. Disse brukerne trenger bare å importere filen som inneholder dine tilpasninger for siden.
 
-- Velg **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger verktøyet Hopp over, vises alle elementer som er hoppet, i en nedtonet container slik at du kan velge dem på nytt for å gjøre dem til en del av tabulatorsekvensen ved å velge et element som er hoppet over. 
+- Velg **Lukk**-knappen for å lukke **Tilpasning**-verktøylinjen og returnere siden til den forrige interaktive tilstanden.
 
-- Velg **Rediger**-verktøyet når du vil merke et element som *redigerbart* eller *ikke redigerbart*. Når du velger verktøyet Rediger, vises alle gjeldende ikke-redigerbare elementer i en nedtonet container slik at du kan velge å gjøre dem redigerbare. Legg merke til noen av feltene er nødvendige og kan ikke gjøres ikke-redigerbare. Disse feltene vises med et hengelås-ikon ved siden av seg. 
+Når **Tilpass**-verktøylinjen brukes, er lagringsoperasjoner implisitte. Din tilpasninger trer i kraft så snart du oppretter dem, og du trenger ikke å velge en **Lagre**-knapp. I noen tilfeller når du velger et verktøy, vises et hengelåssymbol ved siden av et element. Dette symbolet indikerer at du ikke kan endre egenskapene for elementet som er knyttet til det valgte verktøyet, fordi endringer i disse egenskapene vil hindre at siden fungerer som den skal.
 
-- Velg verktøyet **Legg til** for å legge til et felt på siden. Du kan ikke opprette et nytt felt med verktøyet Legg til, men du kan legge til felt som er en del av den gjeldende sidedefinisjonen, men som ikke vises på siden. Når du velger verktøyet Legg til, må du først å velge gruppen eller området der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til inndelingen som du har valgt. Du kan velge ett eller flere felt for å legge til, og klikke **Sett inn** fra denne dialogboksen. Hvis du senere vil fjerne et felt som du tidligere har lagt til, gjentar du prosessen, men ganske enkelt fjerner avmerkingen for feltet som du tidligere har lagt til. 
+### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Legge til en flis, liste eller kobling til et arbeidsområde
+For noen sider som inkluderer lister, er en ekstra tilpasningsfunksjon tilgjengelig. Med **Legg til arbeidsområde**-knappen i **Tilpass** gruppen i **Alternativer**-kategorien i handlingsruten kan du vise informasjonen fra den gjeldende listen i en bestemt arbeidsområde. Du kan vise en filtrert og sortert visning av informasjonen i arbeidsområdet, eller du kan vise standardvisningen. Du kan også angi om informasjonen skal vises i arbeidsområdet som en liste, som en sammendragsflis som kan vise antall elementer i listen, eller som en kobling.
 
-- Velg **Behandle**-knappen for å se en liste over alternativer for fargehåndtering relatert til alle tilpasninger for den gjeldende siden. 
+[![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Velg **Fjern** til å tilbakestille siden til standard, installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Det finnes ingen handling Angre, så bare bruke dette alternativet når du er sikker på at du vil tilbakestille siden. 
+- Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som skal brukes for listen i arbeidsområdet.
+- Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene du vil skal oppsummeres, eller som du vil ha rask tilgang til. Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flis i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge det for å åpne den gjeldende siden i arbeidsområdet og vise den filtrerte listen som er tilknyttet flisen.
+- Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for en ny inndeling som skal inneholde denne koblingen.
 
-- Velg **Import** å bruke en tilpasning fra en tilpasningsfil som du eller noen andre har opprettet for denne siden. Import av en tilpasning fjerner eventuelle tilpasninger du har utført på hele siden, og bruker i stedet alle de personlige tilpasningene fra den valgte filen. Hvis du vil lagre eller dele en personlig tilpasning, og velger du deretter alternativet **Eksporter** for å lagre de personlige tilpasningene i en fil. 
+Når listen, flisen eller koblingen er lagt til i et arbeidsområde, kan du åpne arbeidsområdet og endre rekkefølgen på elementene i den etter ønske.
 
-- Velg knappen **Lukk** for å lukke verktøylinjen og returnere siden til den tidligere interaktive tilstanden. 
+### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Legge til et sammendrag fra et arbeidsområde til et instrumentbord
+Noen arbeidsområder inneholder fliser med antall (det vil si fliser som inneholder tall), og du vil kanskje at disse flisene skal vises på instrumentbordet også. Høyreklikk en antallflis i arbeidsområde, og velg deretter **Tilpass**. I egenskapsområdet for flisen velger du deretter **Fest til instrumentbord**. Neste gang du åpner (og oppdaterer) det valgte instrumentbordet, vil antallet vises under arbeidsområdets navigasjonsflis. Du kan velge det antallet for å gå direkte til dataene det representerer.
 
-Lagring er implisitt med tilpassingsverktøylinjen. Dine personlige innstillinger trer i kraft umiddelbart når du gjør dem og det er ikke nødvendig å klikke en **Lagre**-knapp. I noen tilfeller vil du se en hengelås-ikonet ved siden av et element når du velger et verktøy. Dette betyr at for at siden skal fungere som de skal, kan du ikke endre egenskapene knyttet til det valgte verktøyet. Når tilpasningsverktøylinjen åpnes, blir siden ikke-interaktiv. Du kan ikke legge inn data eller vise eller skjule inndelinger.
+### <a name="personalizing-your-dashboard"></a>Tilpasse instrumentbordet
+Instrumentbordet er ofte den første siden som vises når du åpner Finance and Operations. Du kan tilpasse instrumentbordet slik at det viser bare arbeidsområdeflisene som du vil se. Du kan også omorganisere flisene slik at de er i rekkefølgen du vil se dem i, gi nytt navn til arbeidsområdenavigasjonsflisene, eller legg til en helt ny arbeidsområdeflis.
 
-## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisitt tilpassing: legge til flis eller liste i et arbeidsområde
-Enkelte sider med lister vil ha en ekstra tilpassingsfunksjon tilgjengelig i Handlingspanelet under **Tilpass**-gruppen i kategorien **Alternativer**. Velg **Legg til arbeidsområde** for å åpne rullegardinlisten, som gir deg muligheten til å vise informasjonen i den nåværende listen (filtrert og sortert eller standard) på et arbeidsområde som en liste eller en oppsummeringsflis (som kan brukes til å vise antall elementer i listen). 
+For å tilpasse instrumentbordet høyreklikker du på en flis og velger **Tilpass** til å åpne flisens egenskapsvindu.
 
-[![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
-
-For å legge til en liste i arbeidsområdet, først sorter eller filtrer listen med informasjonen slik som du vil se den på arbeidsområdet, og velg deretter dialogboksen **Legg til i arbeidsområde**. Velg deretter det ønskede arbeidsområdet og velg **listen** fra rullegardinlisten **Presentasjon**. Når du velger **listen**, åpnes en dialogboks der du kan velge kolonnene du vil vise i listen, og etiketten for listen slik den vil vises i arbeidsområdet. 
-
-Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen som skal representere dataene du vil ha summert (eller vil ha rask tilgang til). Åpne deretter nedtrekksdialogen **Legg til arbeidsområde**. Velg deretter det ønskede arbeidsområdet og velg **Flis** fra rullegardinen **Presentasjon**. Når du velger **Flis**, åpnes en dialogboks der du angir en flisetikett og bestemmer flisen skal vise et antall. Når flisen plasseres på et arbeidsområde, kan du åpne den gjeldende siden fra arbeidsområdet, og den viser listen med informasjon som er knyttet til flisen. 
-
-Når listen eller flisen blir lagt til i et arbeidsområde, kan du deretter åpne dette arbeidsområdet og endre rekkefølgen for listen eller flisen i gruppen der den er plassert.
-
-## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Eksplisitt tilpassing: legge til et sammendrag fra et arbeidsområde på et instrumentbord
-Noen arbeidsområder inneholder antall paneler (side ved side med tall på dem) som du vil også se på dashbordet. I et arbeidsområde høyreklikker du en flis for antall, velger **Tilpass**, og velger deretter **Fest til instrumentbord**. Neste gang du går til (og oppdaterer) det valgte instrumentbordet, ser du det nummeret under dette arbeidsområdets navigasjonsflis på instrumentbordet.
-
-## <a name="explicit-personalization-personalizing-your-dashboard"></a>Eksplisitt tilpassing: tilpasse instrumentbordet
-Instrumentbordet er ofte den første siden som vises når du åpner Finance and Operations. Du kan tilpasse instrumentbordet for å endre navn på arbeidsområdets navigasjonsfliser, for å vise bare flisene som du ønsker å vise, endre navn på flisene, eller til å ordne flisene i rekkefølgen du vil se dem i. 
-
-For å tilpasse instrumentbordet velger du en hvilken som helst flis og høyreklikker for å åpne en hurtigmeny. På hurtigmenyen velger du **Tilpass**. Hvis den valgte flisen er én som du ønsker å skjule eller gi nytt navn eller hoppe over, kan du gjøre denne endringen direkte i egenskapsvinduet som vises. Hvis du vil ordne fliser, velger du **Tilpass dette skjemaet** i vinduet Egenskap for å åpne verktøylinjen for personlig tilpasning. Du kan deretter bruke verktøyet **Flytt** for å ordne flisene.
+- Hvis du vil skjule eller gi nytt navn til den valgte flisen, kan du gjøre denne endringen direkte i egenskapsvinduet.
+- For å omorganisere arbeidsområdeflisene velger du **Tilpass dette skjemaet** i egenskapsvinduet for å åpne **Tilpasning**-verktøylinjen. Du kan deretter bruke verktøyet **Flytt** for å ordne flisene slik du vil.
+- For å opprette en arbeidsområdeflis velger du **Legg til et arbeidsområde** i egenskapsvinduet. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til lister, fliser eller koblinger til arbeidsområder](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace)-delen i dette emnet.
 
 ## <a name="administration-of-personalization"></a>Administrasjon av tilpasning
-Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be de andre brukerne om å navigere til den tilpassede siden og importere den tilpassede filen du opprettet, eller du kan gi din personlige tilpasning til en bruker som har administratorrettigheter, som deretter kan implementere tilpassingsfilen for mange brukere på en gang.
+Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be andre brukere om å åpne den tilpassede siden og importere den tilpassede filen du opprettet. Du kan også gi din tilpasning til en bruker som har administratorrettigheter. Brukeren kan deretter bruke tilpasningsfilen til mange brukere samtidig.
 
-Brukere som har administratorrettigheter, kan også administrere tilpasninger for andre brukere på siden for **tilpassing**. Denne siden har fire kategorier: 
+Brukere som har administratorrettigheter, kan også administrere tilpasninger for andre brukere på siden for **tilpassing**. Denne siden har fire kategorier:
 
-- **Bruk** – Du kan importere eller velge en tilpasning for én eller flere brukere. Hvis du vil bruke en tilpassing på en eller flere brukere, velger du en rolle og brukere innenfor denne rollen. Velg deretter en eksisterende tilpasning eller importer en tilpasningsfil som skal brukes for brukerne du har valgt. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
-
-- **Fjern** – Du kan fjerne side- eller arbeidsområde-tilpasninger for én eller flere brukere. Velg en side for å vise en liste over brukere som har tilpasset siden. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, fjernes. Du kan ikke angre denne handlingen. Hvis siden eller arbeidsområdet har en lagret tilpasning, kan imidlertid denne tilpasningen importeres på nytt.
-
-- **Administrer per bruker** – Velg en bruker for å vise listen over sider som denne personen har tilpasset.  Du kan deretter velge å aktivere eller deaktivere muligheten til å bruke tilpassing for bestemte sider eller for hele systemet.  Du kan også importere, eksportere eller fjerne en tilpassing for denne brukeren.
-
-- **System:** – Du kan midlertidig deaktivere alle tilpasninger for alle brukere i systemet. Dette sletter ikke de personlige tilpasningene, men bare tilbakestiller alle sidene til standard tilstand for alle brukere. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Husk å eksportere eventuelle tilpasninger du kanskje vil ha senere før du utfører dette trinnet, fordi det ikke går an å gjenopprette slettede tilpasninger senere. 
+- **Bruk** – Du kan importere eller velge en tilpasning for én eller flere brukere. Hvis du vil bruke en tilpasning på én eller flere brukere, må du først velge en rolle og brukere som har denne rollen. Velg deretter en eksisterende tilpasning som skal brukes på de valgte brukerne, eller importer en tilpasningsfil. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
+- **Fjern** – Du kan fjerne alle tilpasninger for en side eller et arbeidsområde for én eller flere brukere. Velg først en side eller et arbeidsområde for å se en liste over brukerne som har tilpasset den. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden eller arbeidsområdet, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, slettes. Du kan ikke angre denne handlingen. Hvis en tilpasning ble lagret for siden eller arbeidsområdet, kan tilpasningen importeres på nytt.
+- **Administrer per bruker** – Velg en bruker for å vise listen over sider som denne personen har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for den valgte brukeren.
+- **System:** – Du kan midlertidig deaktivere alle tilpasninger for alle brukere i systemet. I så fall slettes tilpasningene. Alle sidene er akkurat tilbakestilt til standard tilstand for alle brukere. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Det er umulig å gjenopprette tilpasninger som er slettet. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Tilpassing av lagerdimensjoner
 
-Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Hvis du for eksempel bruker tilpassing for å skjule en kolonne for lagerdimensjonen for partinummer, og kolonnen vises neste gang siden åpnes, kan det skyldes at innstillingene for dimensjonsvisning styrer hvilke lagerdimensjonskolonner som vises. 
+Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Du bruker eksempelvis tilpasning for å skjule en kolonne for lagerdimensjonen for partinummer, men kolonnen vises neste gang siden åpnes. Dette skjer fordi **Dimensjonsvisning**-innstillingene kontrollerer lagerdimensjonskolonnene som vises.
 
-Innstillingene for dimensjonsvisning gjelder på tvers av alle sider, og disse innstillingene overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider. 
+Innstillingene for **Dimensjonsvisning** gjelder på tvers av alle sider og overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider.
 
-I eksemplet med lagerdimensjonen for partinummer må denne dimensjonen må fjernes som en del av alternativet **Visningsdimensjoner** for tabellen for ikke å vise denne kolonnen. Til slutt vil denne endringen gjelde ikke bare på en bestemt side, men på alle sider.
+Derfor, i eksemplet ovenfor, hvis du ikke vil at kolonnen for lagerdimensjonen for partinummer skal vises, må du fjerne den dimensjonen som en del av **Visningsdimensjoner**-alternativ for tabellen. Til slutt vil denne endringen ikke bare gjelde på én bestemt side, men på alle sider.
 
