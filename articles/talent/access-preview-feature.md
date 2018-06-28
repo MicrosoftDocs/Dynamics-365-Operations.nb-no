@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Du kan bruke innstillingen **Forhåndsvisningsfunksjoner** i Microsoft Dynamics 
     > Jobber som er postert, er synlig bare for kunder som abonnerer på ett eller flere LinkedIn-jobboversiktsprodukter. Ellers ser kunder en jobb bare hvis de eksplisitt søker etter den. Det er en forsinkelse for når jobber posteres til LinkedIn. En jobb kan ta flere timer å vises etter at den er postert fra Attract.
 
 - **Kandidatsøknad** – både interne og eksterne kandidater kan nå søke direkte fra jobbsiden på karriereområdet.
-- **Vurderinger** – som en del av den konfigurerbare ansettelsesprosessen for en bestemt jobb eller når det brukes en jobbmal, nå brukere har tilgang til en ny **Vurdering**-aktivitetstype. De kan deretter bruke prosjektet: "Måler"-app i Talent til å bygge grunnleggende vurderinger som de kan sende til kandidater. Prosjekt: "Måler" er også i offentlig forhåndsvisning. Flere leverandører legges til senere.
-- **Prosjekt: "Måler"** – prosjekt: "Måler" er en app i Talent som lar brukere opprette enkle vurderinger eller undersøkelser.
 - **Tilbudsbehandling** – brukere kan nå opprette tilbudsbrev fra maler som inneholder plassholdere. Etter hvert som kandidater går videre til tilbudstrinnet, kan rekrutteringspersoner og ansettelsesledere bruke tilbudsverktøyet til å klargjøre en kandidats formelle tilbud via maler, sende tilbudet til intern godkjenning og til slutt sende tilbudet til kandidaten for signatur. Mange nye funksjoner vil bli lagt til i tilbudsverktøyet over tid, og forhåndsvisningsfunksjonen oppdateres med disse funksjonene når vi er klar til å frigi dem for forhåndsvisning.
 
 ### <a name="core-hr"></a>Kjerne-HR
@@ -90,7 +88,7 @@ Uansett om tilbakemelding er positiv eller negativ, vil vi gjerne høre fra deg 
     - [Innhente ideer](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Kjerne-HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeldingene eller innsendingene av produktgjennomgang. Informasjon som samles inn, kan analyseres ytterligere, og den brukes ikke til å svare på forespørsler under gjeldende personvernlover. Personopplysninger som samles inn separat under disse programmene, er underlagt [Microsofts personvernerklæring](https://privacy.microsoft.com/en-us/privacystatement).
+Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeldingene eller innsendingene av produktgjennomgang. Informasjon som samles inn, kan analyseres ytterligere, og den brukes ikke til å svare på forespørsler under gjeldende personvernlover. Personopplysninger som samles inn separat under disse programmene, er underlagt [Microsofts personvernerklæring](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Bokmerk dette emnet, og kom deretter tilbake ofte for å holde deg oppdatert om nye forhåndsvisningsfunksjoner etter hvert som vi gir dem ut.

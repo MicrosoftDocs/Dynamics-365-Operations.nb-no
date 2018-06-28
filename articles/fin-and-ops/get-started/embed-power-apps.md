@@ -3,7 +3,7 @@ title: Bygge inn PowerApps
 description: "Dette emnet beskriver hvordan du bygger inn PowerApps i Finance and Operations-klienten for å øke produktets funksjonalitet."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,8 +26,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="embed-powerapps"></a>Bygge inn PowerApps
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 I plattformoppdatering 14 støtter Microsoft Dynamics 365 for Finance and Operations integrering med Microsoft PowerApps, som er en tjeneste for utviklere og ikke-tekniske brukere for å lage egendefinerte forretningsprogrammer for mobile enheter, nettbrett og Internett uten å skrive kode. PowerApps utviklet av deg, din organisasjon eller det videre økosystemet kan deretter bygges i Finance and Operations-klienten for å øke produktets funksjonalitet. Du kan for eksempel bygge en PowerApp for å utfylle Finance and Operations med informasjon som hentes fra et annet system. 
 

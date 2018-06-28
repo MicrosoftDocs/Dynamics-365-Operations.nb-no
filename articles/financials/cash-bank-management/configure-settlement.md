@@ -1,16 +1,16 @@
 ---
 title: Konfigurere utligning
-description: "Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder."
+description: "Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Dette emnet beskriver parameterne som brukes for utligning for både leverandører og kunder."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Denne artikkelen beskriver parameterne som brukes for utligning for både leverandører og kunder. 
+Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Dette emnet beskriver parameterne som brukes for utligning for både leverandører og kunder. 
 
 Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamics 365 for Finance and Operations. Utligning er å utligne en faktura mot en betaling eller en kreditnota. Disse parameterne er i **Utligning**-området på sidene **Kundeparametere** og **Leverandørparametere**.
 
@@ -58,7 +58,14 @@ Følgende parametere påvirker hvordan utligninger behandles i Microsoft Dynamic
 - **Prioriter utligning (bare AR)** – Sett dette alternativet til **Ja** for å aktivere knappen **Merk etter prioritet** på sidene **Angi kundebetalinger** og **Utlign transaksjoner**. Brukere kan bruke denne knappen til å tilordne den forhåndsbestemte utligningsrekkefølgen til transaksjoner.  Når utligningsrekkefølgen er brukt på en transaksjon, kan rekkefølgen og betalingsfordelingen endres før postering.
 - **Bruk prioritet for automatiske utligninger** – Sett dette alternativet til **Ja** for å bruke den angitte prioritetsrekkefølgen når transaksjonene utlignes automatisk. Dette feltet er tilgjengelig bare hvis **Prioriter utligning** og **Automatisk utligning** er angitt til **Ja**.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Faste dimensjoner på leverandører/kunder-hovedkontoer
 
+Når det brukes faste dimensjoner på leverandører/kunder-hovedkontoen, blir flere regnskapsoppføringer og to ekstra leverandørtransaksjoner postert av utligningsprosessen. Utligning sammenligner leverandør/kunde-finanskonto fra fakturaen og betalingen.  Når betaling og utligning er fullført sammen, som er det vanlige scenariet, posteres ikke betalingens regnskapsoppføring til økonomimodulen før utligningsprosessen også er fullført. På grunn av hendelsesrekkefølgen for behandling kan ikke utligningen fastsette den faktiske leverandør/kunde-finanskontoen fra betalingens regnskapspost. Utligningen rekonstruerer hva finanskontoen blir for betalingen. Dette er et problem når en fast dimensjon brukes for leverandør/kunde-hovedkontoen.
 
+For å rekonstruere finanskontoen hentes leverandør/kunde-hovedkontoen fra posteringsprofilen, og finansdimensjonene hentes fra leverandørtransaksjonsposten for betalingen, som definert i betalingsjournalen. Faste dimensjoner legges ikke som standard inn i betalingsjournaler, men brukes i stedet på hovedkontoen som det siste trinnet av posteringsprosessen. Dermed er den faste dimensjonsverdien trolig ikke å finne på leverandørtransaksjonen, med mindre den som standard kom fra en annen kilde, for eksempel leverandøren. Den rekonstruerte kontoen inneholder ikke den faste dimensjonen. Behandling av utligningen bestemmer at en justeringsoppføring må opprettes, fordi fakturaen som er bokført med den faste dimensjonsverdien og den rekonstruerte betalingskontoen ikke ble det.  Siden utligningen fortsetter med postering av justeringsoppføringen, er siste trinn i posteringen at den faste dimensjonen anvendes. Ved å legge til den faste dimensjon i justeringsoppføringen posteres den med en debet og kreditt til samme finanskonto. Utligningen kan ikke rulle tilbake regnskapsposten.
 
+Hvis du vil unngå ekstra regnskapsoppføringer, debet og kreditt til samme finanskonto, må følgende løsninger vurderes, avhengig av dine forretningsbehov. 
+
+-   Organisasjoner bruker ofte faste dimensjoner til å nullfylle en finansdimensjon som ikke er nødvendig. Dette er vanligvis tilfelle for balansekontoer, for eksempel leverandører/kunder. Kontostrukturer kan brukes til å ikke spore finansdimensjoner som vanligvis nullfylles.  Du kan fjerne finansdimensjonen for balansekontoer og dermed eliminere behovet for å bruke faste dimensjoner.
+-   Hvis organisasjonen din krever faste dimensjoner på kunder/leverandører-hovedkontoen, må du finne en måte å legge den faste dimensjonen til betalingen som standard, slik at den faste dimensjonsverdien lagres på leverandørtransaksjonen for betalingen. Dette gjør at systemet kan rekonstruere kunde/leverandør-hovedkontoen for å inkludere de faste dimensjonsverdiene. Den faste dimensjonsverdien kan defineres som en standard på enten leverandører eller journalnavnet for betalingsjournalen.
 

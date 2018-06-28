@@ -3,7 +3,7 @@ title: Opprette varsler
 description: "Dette emnet gir informasjon om varsler, og forklarer hvordan du oppretter en varslingsregel, slik at du får melding om hendelser, for eksempel en dato som kommer eller en bestemt endring som forekommer."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 03/23/2018
 # <a name="create-alerts"></a>Opprette varsler
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a>Komme i gang
 Før du oppretter en varslingsregel, må du vurdere når eller i hvilke situasjoner du vil motta varsler. Når du vet hvilke hendelser du vil varsles om, kan du finne siden i Microsoft Dynamics 365 for Finance and Operations der dataene som forårsaker den hendelsen, vises. Hendelsen kan være en dato som kommer, eller en bestemt endring som forekommer. Du må derfor finne siden der datoen er angitt, eller hvor feltet som endres eller den nye posten som opprettes, vises. Etter at du har denne informasjonen, kan du opprette varslingsregelen.

@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -162,6 +162,18 @@ Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktan
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 med plattformoppdatering 8
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutaomregning for regnskap og rapporteringsvalutaer
+
+Valutaomregning for regnskap og rapporteringsvalutaer ble innført når det ble innført euro.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Begrenset bruk og tillegg av funksjonen Kopier juridisk enhet som en erstatning.      |
+| **Erstattet med en annen funksjon?**   | Nei, men funksjonene Kopier juridisk enhet og Konfigurasjoner ble lagt til for å gjøre det enklere å flytte et selskap som har kjernekrav som endrer seg. |
+| **Berørte produktområder**         | Økonomistyring     |
+| **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.   |
+
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal for lagermobilenheter
 

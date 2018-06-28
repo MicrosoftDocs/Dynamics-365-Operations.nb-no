@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
+ms.sourcegitcommit: d709a7f0e087178c0961c268a78a9206ea656bbc
+ms.openlocfilehash: ca32e74b8b9f35dd9a1a48f942766bce98c5ea4b
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -41,8 +41,8 @@ Når du oppretter en betalingsmåte, finnes det fem funksjoner for betalingsmåt
 
 | Funksjon            | beskrivelse |
 |---------------------|-------------|
-| Normal              | Bruk **Normal**-funksjonen for betalingsmåten når du definerer betalingsmåter som kontant eller bilag. Når disse typene betalinger brukes til en salgsordre i telefonsenteret, posteres de umiddelbart som forhåndsbetalinger i kundekontoen. Forskuddsbetalingsbilaget posteres i transaksjonshistorikken til en kunde, der det systematisk utlignes mot fakturaen for salgsordren ved opprettelse av fakturaer. |
-| Kontroll               | Bruk **Sjekk**-funksjonen når du definerer et banksjekkinstrument som en form for betaling. Når denne typen betaling brukes for en salgsordre, må brukeren angi kundens sjekknummer som en del av betalingsplasseringen. Sjekkbetalinger behandles alltid som forskuddsbetalinger når de brukes. Som for **Normal**-betalingsfunksjonen utlignes disse forskuddsbetalingsbilagene systematisk mot fakturaene som er opprettet for ordren. |
+| Normal              | Bruk **Normal**-funksjonen for betalingsmåten når du definerer betalingsmåter som kontant eller bilag. Når disse typene betalinger brukes på en salgsordre i telefonsenteret, settes **Forskuddsbetaling**-flagget som standard til **Ja**.  Dette bokfører umiddelbart et forskuddbetalingsbilag til kundekontoen når denne ordren sendes. Brukere kan endre **Forskuddbetaling**-flagget til **Ingen** hvis ønsket, slik at betalingsbilaget ikke opprettes før postering av faktura.  Forskuddsbetalingsbilaget posteres i transaksjonshistorikken til en kunde, der det systematisk utlignes mot fakturaen for salgsordren. |
+| Kontroll               | Bruk **Sjekk**-funksjonen når du definerer et banksjekkinstrument som en form for betaling. Når denne typen betaling brukes for en salgsordre, må brukeren angi kundens sjekknummer som en del av betalingsplasseringen. Sjekkbetalinger behandles alltid som forskuddsbetalinger når de brukes, og betalingsbilag opprettes umiddelbart ved ordreoverføring. Disse forskuddsbetalingsbilagene utlignes systematisk mot fakturaene som opprettes for ordren. |
 | Kort               | Kortbetalingstyper representerer alle typer betaling som krever registrering av et kortnummer som er angitt på kundens betalingskort. Eksempler er kredittkort og gavekort. Når du konfigurerer disse betalingstypene, må du bruke **Kortoppsett**-menyen for å definere kort-IDer som er knyttet til denne betalingsmetoden. Ved ordreregistrering kan brukere angi om kortbetalingen skal forskuddsbetales, ved hjelp av alternativet **Forskuddsbetaling** som vises på siden for betalingsregistrering. Med mindre virksomheten krever forskuddsbetaling, er den vanlige flyten til en vanlig kredittkortbetaling en totrinnsprosess, der godkjenning innhentes ved ordreregistrering, og deretter utlignes og hentes betalingen fra kundekortet ved fakturering. Forskuddsbetaling anbefales for gavekortbetalinger, fordi gavekortsaldoen skal reduseres umiddelbart slik at kunden ikke kan bruke den samme verdien et annet sted. |
 | Kunde            | **Kunde**-funksjonen på en betalingsmåte betyr at betalingen blir brukt på kundens kredittgrense eller satt "på kontoen." I Retail kan en kunde være tilordnet en kredittgrense som kan valideres på tidspunktet for ordreregistrering. Betalinger som gjøres ved å bruke en betalingsmåte som er knyttet til **Kunde**-funksjonen, oppretter en gjeld mot kundens konto. Når salgsordren deretter faktureres, vises en forfalt saldo. I slike tilfeller må sender kundene vanligvis en betaling, i henhold til vilkårene som er tildelt. Et tidligere åpent kredittbilag på kundekontoen kan eventuelt brukes til å utligne saldoen som forfaller. Legg merke til at selv om du definerer denne betalingsmåten, vises den ikke blant betalingsalternativene i ordreregistrering i telefonsenteret med mindre **Tillat a konto**-flagget er angitt på i kundeposten for kunden som du arbeider med. Dette flagget finnes i kategorien **Betalingsstandarder** i kundeposten. |
 | Betalingsmiddel fjern/flyt | Funksjonen **Betalingsmiddel fjern/flyt** brukes ikke av telefonsenteret. Den er bare tilgjengelig når du definerer betalingsmåtene som POS-programmet bruker i en butikkanal. |

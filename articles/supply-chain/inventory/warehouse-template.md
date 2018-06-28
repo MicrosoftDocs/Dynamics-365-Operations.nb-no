@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
-ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -94,10 +94,7 @@ Du kan laste ned en zip-fil for datapakken. Denne filen inneholder alle dataene 
 
 **Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen.
-
-> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
-
+Hvis du vil vite mer om hvordan du bruker lagermal til å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne videoen på 3 minutter på YouTube: [Bruk lagermalen til å kopiere konfigurasjonen i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relaterte emne
 
