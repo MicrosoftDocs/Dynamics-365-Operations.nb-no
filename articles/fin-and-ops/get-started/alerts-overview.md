@@ -3,7 +3,7 @@ title: Oversikt over varsler
 description: "Dette emnet gir generell informasjon om varsler i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke varsler til å holde deg informert om hendelser som du vil spore i løpet av arbeidsdagen."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="alerts-overview"></a>Oversikt over varsler
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Varsler
 Varsler utgjør et meldingssystem for kritiske hendelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke varsler til å holde deg informert om hendelser som du vil spore i løpet av arbeidsdagen. Du kan enkelt opprette ditt eget sett med varsler slik at du blir varslet om leveringer som er forfalt, ordrer som er slettet, priser som endres eller hendelser du må reagere på.
