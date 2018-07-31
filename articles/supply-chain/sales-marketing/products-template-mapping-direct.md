@@ -3,7 +3,7 @@ title: Synkronisere produkter direkte fra Finance and Operations til produkter i
 description: "Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Informasjonen i feltet **Vedlikeholdes eksternt** brukes til å garantere at bar
 Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prislisten med samme valuta. Prislister er ordnet alfabetisk etter navn. Produktets salgspris fra Finance and Operations brukes som prisen på prislisten. Derfor må det være en prisliste i Sales for alle produktsalgsvaluta i Finance and Operations. Valutaen på frigitte salgbare produkter er satt til regnskapsvalutaen i den juridiske enheten som produktet er eksportert fra.
 
 > [!NOTE]
-> Produktsynkronisering lykkes ikke hvis det ikke er en prisliste som har en tilhørende valuta.
+> - Produktsynkronisering lykkes ikke hvis det ikke er en prisliste som har en tilhørende valuta.
+> - Du kan kontrollere den brukte prislisten med integreringen ved å tilordne pricelevelid.name [standard prisliste (navn)] i dataintegrasjonsprosjektet. Inndataene må være med bare små bokstaver. Standardverdien for en prisliste i Sales med navnet Standard, er for eksempel: Målfelt: pricelevelid.name [standard prisliste (navn)] og tilordningstype: [{"transformType": "Standard", "defaultValue": "standard"}].
 
 ## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 

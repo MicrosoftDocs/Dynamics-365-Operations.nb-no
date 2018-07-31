@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Før du definerer vareposteringsreglene, bruker du siden **Transaksjonskombinasj
 
 **4. Definer lagerparameterne som er relatert til standard kostpris.** 
 
--  Bruk **Stykklister**-kategorien på siden **Lagerparametere** til å definere to kostkontrollparametere som er relatert til standard kostpris. 
+-  Bruk kategorien **Lagerregnskap** på siden **Oppsett for regnskapspolicyer for beholdning > Parametere** til å definere to kostkontrollparametere som er relatert til standard kostpris.
 
     -  I **Oppdeling av kostnader**-feltet velger du **Ingen** eller **Underfinans**. Hvis du velger **Underfinans**, er kostnadsoppdelingen en *aktiv* kostnadsoppdeling. Aktiv kostnadsoppdeling er kritisk for beregning, opprettholding og visning av kostgruppesegmentering gjennom en produktstruktur på flere nivåer for varer med standard kostpris. Når kostnadsoppdelingen er aktiv, kan du rapportere og analysere lagerbeholdningen, varer i arbeid (VIA) og kostnader for solgte varer per kostgruppe på ett enkelt nivå, over flere nivåer eller totalt. Når kostnadsoppdelingen er aktiv, hvis du aktiverer en produsert vares kostnad, lagres kostgruppesegmenteringen i varens kostprispost. 
 

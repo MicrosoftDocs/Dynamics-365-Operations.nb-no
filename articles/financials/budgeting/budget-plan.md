@@ -1,16 +1,16 @@
 ---
 title: Budsjettplanlegging
-description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel"
-author: twheeloc
+description: "Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,9 +30,15 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne øvelsen fokuserer spesifikt på følgende forretningsprosesser eller -oppgaver: – Oppretting av organisasjonshierarki for budsjettplanlegging og konfigurasjon av brukersikkerhet – Definering av budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler – Oppretting og aktivering av budsjettetplanleggingsprosess – Oppretting av budsjettplandokument ved å trekke inn faktiske data fra økonomimodulen – Bruk av tildelinger for å justere budsjettplandokumentdata – Redigering av budsjettplandokumentdata i Excel 
+Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 365 for Finance and Operations-funksjonalitetsoppdateringer i området for budsjettplanlegging. Hensikten med denne øvelsen er å illustrere et eksempel på rask konfigurasjon av budsjettplanleggingsmodulen og vise hvordan budsjettplanlegging kan gjøres ved hjelp av denne konfigurasjonen.  Denne laben fokuserer på følgende forretningsprosesser eller -oppgaver:
+- Opprette organisasjonshierarki for budsjettplanlegging og konfigurere brukersikkerhet
+- Definere budsjettplanscenarioer, budsjettplankolonner, oppsett og Excel-maler
+- Opprette og aktivere budsjettetplanleggingsprosess
+- Opprette budsjettplandokument ved å dra inn faktiske data fra økonomimodulen
+- Bruke tildelinger til å justere budsjettplandokumentdata
+- Redigere budsjettplandokumentdata i Excel 
 
-<a name="prerequisites"></a>Forutsetninger 
+<a name="prerequisites"></a>Nødvendig programvare 
 ------------------
 
 I denne opplæringen må du ha tilgang til Finance and Operations-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon for Finance and Operations. Når du logger på Finance and Operations, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på Finance and Operations ved å bruke en annen nettleser enn Internet Explorer, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for Internet Explorer, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i Internet Explorer.
@@ -104,8 +110,6 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 2.5. Velg Gi tilgang til bestemte organisasjoner. Velg organisasjonshierarkiet som ble opprettet i det første trinnet. Velg Finans-noden, og klikk Gi tilgang til underordnede 
 
 ***Viktig!*** *Kontroller at du er i konteksten med den juridiske enheten DEMF når du utfører denne oppgaven, siden organisasjonssikkerhet brukes per juridiske enhet* 
-
-[![Gi tilgang](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
 3.1. Gå til Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Legg merke til scenariene vi skal bruke videre i denne laben, på Scenarier-siden: Faktisk, forrige år og Budsjettert. 
