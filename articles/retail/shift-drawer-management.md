@@ -1,9 +1,9 @@
 ---
 title: Behandling av skift og kassaskuff
-description: "Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for salgssted – delt og frittstående. Delte skift kan brukes av flere brukere på flere steder, mens frittstående skift bare kan brukes av én arbeider om gangen."
-author: rubencdelgado
+description: "Dette emnet beskriver hvordan du definerer og bruker skift på salgssted for detaljhande."
+author: jblucher
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
+ms.sourcegitcommit: da5519eb0746347905e3b3d3d81161850c429f57
+ms.openlocfilehash: f0856a3a36ff97773c0fadbe94fe680762c5206b
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/22/2018
 
 ---
 
@@ -31,127 +31,109 @@ ms.lasthandoff: 03/22/2018
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du definerer og bruker de to skifttypene for salgssted – delt og frittstående. Delte skift kan brukes av flere brukere på flere steder, mens frittstående skift bare kan brukes av én arbeider om gangen.
+Dette emnet beskriver hvordan du definerer og bruker skift på salgssted for detaljhande. 
 
-Det finnes to skifttyper for salgssted for detaljhandel: frittstående og delt. Frittstående skift kan bare brukes av én arbeider om gangen. Delte Skift kan brukes av flere brukere på flere steder. Derfor utgjør de effektivt ett enkelt skift for flere arbeidere i en butikk.
+I Microsoft Dynamics 365 for Retail beskriver *skift* samlingen av transaksjonsdata og aktiviteter mellom to punkter i tid for salgsstedet. For hvert skift sammenlignes forventet beløp sammenlignet med beløpet som ble talt og deklarert.
 
-## <a name="standalone-shifts"></a>Frittstående skift
-Frittstående skift brukes i tradisjonelle situasjoner med fast salgssted der kontanter avstemmes uavhengig for hver kasse på salgsstedet. I dagligvareforretninger er det for eksempel vanligvis flere faste kasser på salgsstedet, og en kasserer er tilordnet til hver kasse. I slike tilfeller bruker hver kasse sannsynligvis et frittstående skift, og kassereren er ansvarlig for kassen eller fysisk kontanter i denne kassen. Et frittstående skift omfatter all aktivitet på denne kassen i løpet av kassererens arbeidsskift. Aktiviteter kan omfatte åpningsbeløpet i kassen, fjerning og tillegg av kontanter ved bruk, som deponeringer til bank og flytoppføring, og kasseoppgjøret på slutten av skiftet.
+Skift åpnes vanligvis i begynnelsen av arbeidsdagen. På dette tidspunktet deklarerer brukeren startbeløpet som kassaskuffen inneholder. Salgstransaksjoner blir deretter utført i løpet av dagen. På slutten av dagen telles kassaskuffen, og sluttbeløpet deklareres. Skiftet lukkes, og det genereres en Z-rapport. Z-rapporten angir om det er for mye eller for lite.
 
-### <a name="set-up-a-stand-alone-shift"></a>Definere et frittstående skift
+## <a name="typical-shift-scenarios"></a>Vanlige skiftet scenarier
+Retail gir flere konfigurasjonsalternativer og salgsstedsoperasjoner for å støtte et bredt spekter av forretningsprosesser på slutten av dagen for salgsstedet. Denne delen beskriver noen vanlige skiftscenarier.
 
-Et frittstående skift angis på kasseskuffnivå. Denne fremgangsmåten beskriver hvordan du definerer et frittstående skift i en kasse på utsalgstedet.
+### <a name="fixed-till"></a>Fast kasse
+Dette er vanligvis brukt oftest. Det brukes forsatt mye. I et "fast kasse"-skift tilknyttes skiftet og kassen med en bestemt kasse. De flyttes fra én kasse til en annen. Et "fast kasse"-skift kan brukes av én bruker eller deles mellom flere brukere. "Fast kasse"-skift krever ikke noen spesiell konfigurasjon.
 
-1.  Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**.
-2.  Velg maskinvareprofilen som skal brukes for det frittstående skiftet.
-3.  I hurtigfanen **Skuff** bekrefter du at alternativet **Skuff for delt skift** er satt til **Nei**.
-4.  Klikk **Lagre**.
-5.  Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**.
-6.  Velg kassen som krever et frittstående skift, og klikk deretter **Rediger**.
-7.  I feltet **Maskinvareprofil** velger du maskinvareprofilen du valgte i trinn 2.
-8.  Klikk **Lagre**.
-9.  Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
-10. Velg distribusjonsplanen **1090**, og klikk deretter **Kjør nå** for å synkronisere endringer på salgsstedet.
+### <a name="floating-till"></a>Flytende kasse
+I et "flytende kasse"-skift kan skiftet og kassen flyttes fra én kasse til en annen. Selv om en kasse bare kan ha ett aktivt skift per kasse, kan skift stoppes og startes opp igjen senere eller på en annen kasse.
 
-### <a name="use-a-stand-alone-shift"></a>Bruke et frittstående skift
+En butikk har for eksempel to kasser. Hver kasse åpnes ved starten av dagen når kassereren åpner et nytt skift og angir startbeløpet. Når én kasserer er klar til å ta en pause, stopper kassereren hans eller hennes skift og kassen og fjerner kassen fra kassaskuffen. Denne kassen blir da tilgjengelig for andre kasserere. En annen kasserer kan logge på og åpne sitt eget skift på kassen. Etter at den pausen til den første kassereren er avsluttet, kan denne kassereren gjenoppta hans eller hennes skift når en av de andre kassene blir tilgjengelig. "Flytense kasse"-skift krever ikke noen spesiell konfigurasjon eller tillatelse.
 
-1.  Logg på salgsstedet.
-2.  Hvis ingen skift er åpent, velger du **Åpne et nytt skift**.
-3.  Gå til operasjonen **Rapporter startbeløp**, og angi kontantbeløpet som legges til kasseapparatet på starten av arbeidsdagen.
-4.  Utfør noen transaksjoner.
-5.  På slutten av dagen velger du **Deklarer betalingsmiddel** for å deklarere kontantbeløpet som gjenstår i kassaskuffen.
-6.  Angi kontantbeløpet, og klikk deretter **Lagre** for å lagre kasseoppgjøret.
-7.  Velg **Lukk skift** for å lukke skiftet.
+### <a name="single-user"></a>Enkeltbruker
+Mange forhandlere foretrekker å tillate bare én bruker pers skift for å garantere det høyeste nivået av ansvar for kontanter i kassaskuffen. Hvis bare én bruker har tilgang til å bruke kassen som er knyttet til et skift, vil denne brukeren ene og alene holdes ansvarlig for eventuelle avvik. Hvis flere brukere bruker et skift, er det vanskelig å avgjøre hvem som har gjort en feil eller som kanskje prøver å stjele fra kassen.
 
-**Obs!** Andre operasjoner er tilgjengelige under skiftet, avhengig av forretningsprosessene som er på plass. OPerasjonene **Deponer til safe**, **Deponer til bank** og **Fjerning av betalingsmidler** kan brukes for å fjerne penger fra kassen i løpet av dagen eller før skiftet lukkes. Hvis det er lite penger igjen i en kasse, kan operasjonen **Flytoppføring** brukes for å legge til kontanter i kassen.
+### <a name="multiple-users"></a>Flere brukere
+Noen forhandlerne er villige til å ofre ansvarsnivået son enkeltbrukerskift gir, og tillate flere brukere per skift. Dette er vanlig når det er flere brukere enn tilgjengelige kasser, og behovet for fleksibilitet og hastighet oppveier muligheten for tap. Det er også vanlig når butikksjefer ikke har sine egne skift, men etter behov kan bruke et skift for en av kassererne. For å logge på og bruke et skift som ble åpnet av en annen bruker, må en bruker ha salgsstedstillatelsen **Tillat pålogging av flere skift**.
 
-## <a name="shared-shifts"></a>Delte skift
-Et delt skift brukes i et miljø der flere kasserere deler en kassaskuff eller et sett med kassaskuffer hele arbeidsdagen. Vanligvis brukes et delt skift i mobile salgsstedsmiljøer. I et mobilt miljø er ikke hver kassereren tildelt og ansvarlig for én enkelt kassaskuff. I stedet må alle kasserere kunne utføre et salg og legge til kontanter i kassaskuffen som er nærmest dem. I dette scenariet er pengeskuffene som deles mellom kasserere inkludert i et delt skift. Alle kassaskuffer i et delt skift er inkludert i det samme skiftet for aktiviteter som er knyttet til behandling av kontanter for skiftet. Derfor skal startbeløpet for skiftet inkludere summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. På samme måte skal kassaoppgjøret være summen av alle kontanter i alle kassaskuffer som er inkludert i det delte skiftet. **Obs!** Bare ett delt skift kan være åpent om gangen i hver butikk. Delte skift og frittstående skift kan brukes i den samme butikken.
+### <a name="shared-shift"></a>Delte skift
+En "delt skift"-konfigurasjon lar forhandlere ha ett enkelt skift på tvers av flere kasser, pengeskuffer og brukere. Et delt skift har ett enkelt startbeløp og ett enkelt sluttbeløp som summeres på tvers av alle kassaskuffer. Delte skift er vanligst når mobilenheter brukes. I så fall er ikke en kassaskuff reservert for hver kasse. I stedet kan alle kasser dele én kassaskuff.
 
-### <a name="set-up-a-shared-shift"></a>Definere et delte skift
+For delte skift som skal brukes i en butikk må kassaskuffen konfigureres som en "kassakuff for delt skift" på **Detaljhandel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Maskinvareprofiler \> Skuff**. Brukerne må i tillegg ha ett eller begge av de delte skifttillatelsene (Tillat administrasjon av delte skift og Tillat bruk av delt skift).
 
-1.  Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**.
-2.  Velg maskinvareprofilen som skal brukes for det delte skiftet.
-3.  I hurtigfanen **Skuff** setter du alternativet **Skuff for delt skift** til **Ja**.
-4.  Klikk **Lagre**.
-5.  Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**.
-6.  Velg kassen som krever et delt skift, og klikk deretter **Rediger**.
-7.  I feltet **Maskinvareprofil** velger du maskinvareprofilen du valgte i trinn 2.
-8.  Klikk **Lagre**.
-9.  Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
-10. Velg distribusjonsplanen **1090**, og klikk deretter **Kjør nå** for å synkronisere endringer på salgsstedet.
+> [!NOTE]
+> Bare ett delt skift kan være åpent om gangen i hver butikk. Delte skift og frittstående skift kan brukes i den samme butikken.
 
-### <a name="use-a-shared-shift"></a>Bruke et delte skift
+## <a name="shift-and-drawer-operations"></a>Skift og skuffoperasjoner
+Forskjellige operasjoner kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i kassaskuffen. Dette avsnittet beskriver disse skiftoperasjonene for Micosoft Dynamics 365 for Retail Modern POS og Cloud POS.
 
-1.  Logg på salgsstedet.
-2.  Hvis salgsstedet ennå ikke er koblet til en maskinvarestasjon, velger du **Ikke-skuff-operasjon**, og velg deretter operasjonen **Velg maskinvarestasjon** for å aktivere en maskinvarestasjon for det delte skiftet. Dette trinnet er nødvendig bare første gang en kasse legges til i et miljø med delte skift.
-3.  Logg av salgsstedet, og logg deretter på.
-4.  Velg **Opprett et nytt skift**.
-5.  Velg **Rapporter startbeløp**.
-6.  Angi startbeløpet for alle kassaskuffer i butikken som er en del av det delte skiftet, og klikk deretter **Lagre**.
-    -   Hvis du vil legge til et startbeløp i hver etterfølgende kassaskuff, bruker du operasjonen **Velg maskinvarestasjon** for å aktivere maskinvarestasjonen.
-    -   Hvis du vil legge til en bestemt kassaskuff, bruker du operasjonen **Åpne skuff**.
-    -   Fortsett til alle kassaskuffene i det delte skiftet har sin del av startbeløpet.
+### <a name="open-shift"></a>Åpne skift
+Salgsstedet krever at brukere har et aktivt, åpent skift for å utføre handlinger som vil resultere i en finanstransaksjon, for eksempel salg, retur eller kundeordre.
 
-7.  Åpne hver kassaskuff på slutten av dagen, og fjerner kontantene.
-8.  Når du har fjernet kontantene fra den siste kassaskuffen, teller du alle kontantene fra alle kassaskuffene.
-9.  Bruk operasjonen **Deklarer betalingsmiddel** for å deklarere det totale kontantbeløpet fra alle kassaskuffene som er inkludert i det delte skiftet.
-10. Bruk operasjonen **Lukk skift** for å lukke det delte skiftet.
+Når en bruker logger på salgsstedet, vil systemet først kontrollerer om et aktivt skift er tilgjengelig for denne brukeren på den aktuelle kassen. Hvis et aktivt skift ikke er tilgjengelig, kan brukeren åpne et nytt skift, gjenoppta et eksisterende skift eller fortsette å logge på i "ikke-skuff"-modus, avhengig av systemkonfigurasjonen og brukerens tillatelser.
 
-## <a name="shift-operations"></a>Skiftoperasjoner
-Forskjellige handlinger kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i skuffen. Avsnittet nedenfor beskriver disse skiftoperasjonene for Dynamics 365 for Retail Modern POS og Cloud POS.
+### <a name="declare-start-amount"></a>Rapporter startbeløp
+Denne operasjonen er ofte den første operasjonen som utføres et nylig åpnet skift. For denne operasjonen angir brukere startbeløpet i kassaskuffen for skiftet. Denne operasjonen er viktig på grunn av beregningen av for mye/lite som utføres når et skift som lukkes vurderer startbeløpet.
 
-**Åpne skift**
+### <a name="float-entry"></a>Flytoppføring
+*Flytoppføringer* er ikke-salgstransaksjoner som utføres i et aktivt skift for å øke pengebeløpet i kassaskuffen. Et vanlig eksempel på en flytoppføring er å legge til flere vekslepenger i skuffen når det er lite.
 
-POS krever at en bruker har et aktivt, åpent skift for å utføre handlinger som vil resultere i en finanstransaksjon, for eksempel salg, retur eller kundeordre.  
+### <a name="tender-removal"></a>Fjerning av betalingsmidler
+*Fjerning av betalingsmidler* er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i kassaskuffen. Denne operasjonen brukes vanligvis sammen med en flytoppføringsoperasjon i et annet skift. Kasse 1 har for eksempel lite vekslepenger, så brukeren på kasse 2 utfører en fjerning av betalingsmidler for å redusere beløpet i kassaskuffen. Brukeren i kasse 1 gjør deretter en flytoppføring for å øke beløpet i hans eller hennes kassaskuff.
 
-Når du logger på salgsstedet, kontrollerer systemet først om brukeren har et aktivt skift i det gjeldende registret. Hvis ikke kan brukeren deretter velge å åpne et nytt skift, gjenoppta et eksisterende skift eller fortsette å logge på i "ikke-skuff"-modus, avhengig av systemkonfigurasjonen og tillatelsene.
-
-**Rapporter startbeløp**
-
-Denne operasjonen er ofte den første handlingen som skal utføres et nylig åpnet skift. Brukere angir startbeløpet i skuffen for skiftet. Dette er viktig fordi over-/underberegningen som skjer når du lukker et skift, utgjør dette beløpet.
-
-**Flytoppføring**
-
-Flyt-oppføringene er ikke-salgstransaksjoner som utføres i et aktivt skift, og de øker pengebeløpet i skuffen. Et vanlig eksempel på en flytoppføring er å legge til flere vekslepenger i skuffen når det er lite.
-
-**Fjerning av betalingsmidler**
-
-Fjerning av betalingsmidler er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i skuffen. Dette brukes vanligvis sammen med en flytoppføring i et annet skift. Register 1 har for eksempel lite vekslepenger, så brukeren på Registrer 2 utfører en fjerning av betalingsmidler for å redusere beløpet i skuffen. Brukeren i Registrer 1 kan deretter utføre en flytoppføring for å øke beløpet.
-
-**Avbryt skift**
-
-Brukere kan deaktivere sine aktive skift for å frigjøre det gjeldende registret for en annen bruker, eller flytte skiftet til et annet register (dette er ofte kalt en "flytende kasse"). 
+### <a name="suspend-shift"></a>Avbryt skift
+Brukere kan deaktivere sine aktive skift for å frigjøre gjeldende kasse for en annen bruker, eller flytte skiftet til en annen kasse (dette er kalles skiftet ofte et "flytende kasse"-skift).
 
 Suspendering av skiftet forhindrer eventuelle nye transaksjoner eller endringer til skiftet før det gjenopptas.
 
-**Gjenoppta skift**
+### <a name="resume-shift"></a>Gjenoppta skift
+Denne operasjonen lar bruker gjenoppta et tidligere suspendert skift i en kasse som ikke allerede har et aktivt skift.
 
-Denne operasjonen gjør det mulig for en bruker å gjenoppta et tidligere suspendert skift i et register som ikke allerede har et aktivt skift.
+### <a name="tender-declaration"></a>Kasseoppgjør
+Denne operasjonen utføres for å angi det totale beløpet som er i kassaskuffen. Brukere utføre oftest operasjonen før de lukker et skift. Det angitte beløpet sammenlignes med det forventede skiftbeløpet for å beregne over-/underbeløpet.
 
-**Kasseoppgjør**
+### <a name="safe-drop"></a>Deponer til safe
+Deponeringer til safe kan når som helst utføres på et aktivt skift. Denne operasjonen fjerner penger fra kassaskuffen, slik at de kan overføres til en sikrere plassering, så som en safe på bakrommet. Det totale beløpet som er registrert for deponeringer til safe, er fremdeles inkludert i skifttotalene, men trenger ikke regnes som en del av kasseoppgjøret.
 
-Kasseoppgjøret er handling brukeren utfører for å angi totale pengebeløpet som er i skuffen, vanligvis før skiftet lukkes. Dette er verdien som sammenlignes med det forventede skiftet for å beregne over-/underbeløpet.
-
-**Deponer til safe**
-
-Deponeringer til safe kan når som helst utføres på et aktivt skift. Denne operasjonen fjerner penger fra skuffen, slik at de kan overføres til en sikrere plassering, så som en safe på bakrommet. Det totale beløpet som er registrert for deponeringer til safe, er fremdeles inkludert i skifttotalene, men trenger ikke regnes som en del av kasseoppgjøret.
-
-**Deponer til bank**
-
+### <a name="bank-drop"></a>Deponer til bank
 I likhet med deponeringer til safe utføres også deponeringer til bank på aktive skift. Denne operasjonen fjerner penger fra skiftet for å klargjøre for bankinnskuddet.
 
-**Lukk skift usporet**
+### <a name="blind-close-shift"></a>Lukk skift usporet
+*Lukkede usporede skift* er ikke lenger er aktive, men er ikke fullstendig lukket. I motsetning til skift kan ikke lukkede usporede skift gjenopptas. Operasjoner, for eksempel Rapporter startbeløp og Kasseoppgjør, kan imidlertid utføres på dem senere eller fra en annen kasse.
 
-Et lukket usporet skift er et skift som ikke lenger er aktivt, men ikke er fullstendig lukket. Lukkede usporede skift kan ikke gjenopptas som et suspendert skift, men prosedyrer som å deklarere startbeløp og kasseoppgjør, kan utføres på et senere tidspunkt eller fra et annet register.
+Lukkede usporede skift brukes ofte til å frigjøre et register for en ny bruker eller skift, uten først å telle, avstemme og lukke dette skiftet fullstendig.
 
-Lukkede usporede skift brukes ofte til å frigjøre et register for en ny bruker eller skift, uten å telle, avstemme og lukke dette skiftet fullstendig først. 
+### <a name="close-shift"></a>Lukk skift
+Denne operasjonen beregner totaler for skift og over-/underbeløp, og fullfører deretter et aktivt eller lukket usporet skift. Avhengig av brukerens tillatelser skrives også en Z-rapport for skiftet. Lukkede skift kan ikke gjenopptas eller endres.
 
-**Lukk skift**
+### <a name="print-x"></a>Skriv ut X
+Denne operasjonen genererer og skriver ut en X-rapport for gjeldende aktive skift.
 
-Denne operasjonen beregner totaler for skift, over-/underbeløp, og fullfører deretter et aktivt eller lukket usporet skift. Lukkede skift kan ikke gjenopptas eller endres.  
+### <a name="reprint-z"></a>Skriv ut Z på nytt
+Denne operasjonen skriver ut den siste Z-rapporten på nytt som blir generert da et skift ble lukket.
 
-**Behandle skift**
+### <a name="manage-shifts"></a>Behandle skift
+Denne operasjonen lar brukerne vise alle aktive, suspenderte og lukkede usporede skift for butikken. Avhengig av tillatelsene kan brukere utføre sine endelige lukkingsprosedyrer, for eksempel Kasseoppgjør og Lukk skift for lukkede usporede skift. Denne operasjonen lar også brukere vise og slette ugyldige skift hvis et skift står i en ugyldig tilstand etter å ha byttet mellom frakoblet og tilkoblet modus. Disse ugyldige skiftene inneholder ingen økonomisk informasjon eller transaksjonsdata som trengs for avstemming.
 
-Denne operasjonen gir brukerne muligheten til å vise alle aktive, suspenderte og lukkede usporede skift for butikken. Avhengig av tillatelsene kan brukere utføre sine endelige lukkingsprosedyrer, for eksempel kasseoppgjør og lukke skift for lukkede usporede skift. Denne operasjonen lar også brukere vise og slette ugyldige skift hvis et skift står i en ugyldig tilstand etter å ha byttet mellom frakoblet og tilkoblet modus. Disse ugyldige skiftene inneholder ingen økonomisk informasjon eller transaksjonsdata som trengs for avstemming. 
+## <a name="shift-and-drawer-permissions"></a>Skift og skufftillatelser
+Følgende salgsstedstillatelser påvirker hva en bruker kan og ikke kan gjøre i ulike scenarier:
+
+- **Tillat usporet lukking**
+- **Tillat utskrift av X-rapport**
+- **Tillat utskrift av Z-rapport**
+- **Tillat kasseoppgjør**
+- **Tillat flytende rapportering**
+- **Åpne skuff uten salg**
+- **Tillat pålogging av flere skift** – Denne tillatelsen lar brukere logge på og bruke et skift som en annen bruker åpnet. Brukere som ikke har denne tillatelsen kan bare logge på og bruke skift som vedkommende har åpnet.
+- **Tillat administrasjon av delte skift** – Brukere må ha denne tillatelse for å åpne eller lukke et delt skift.
+- **Tillat bruk av delte skift** – Brukere må ha denne tillatelse for å logge på og bruke et delt skift.
+
+## <a name="back-office-end-of-day-considerations"></a>Hensyn å ta ved Back Office-dagsoppgjør
+Måten skift og kontantskuffavstemming brukes på salgsstedet er forskjellig fra måten at transaksjonsdata summers under utdragsberegning. Det er viktig at du forstår denne forskjellen. Avhengig av konfigurasjon og forretningsprosesser kan skiftdataene på salgsstedet (Z-rapporten) og et beregnede utdrag i Back Office gi deg forskjellige resultater. Denne forskjellen betyr ikke nødvendigvis at skiftdataene eller det beregnede utdraget er feil, eller at det er et problem med dataene. Det betyr at bare at de angitte parameterne kan inneholde tilleggstransaksjoner eller færre transaksjoner, eller at transaksjonene har blitt summert på forskjellige måter.
+
+Selv om alle forhandleren har ulike forretningsbehov, anbefaler vi at du stiller inn systemet på følgende måte for å unngå situasjoner der forskjeller av denne typen oppstår:
+
+Gå til **Salgssted \> Kanaler \> Detaljhandelbutikker \> Alle detaljhandelbutikker \> Utdrag/avslutning**, og for hver butikk setter du feltet **Utdragsmetod** og **Avslutningsmetode** til **Skift**.
+
+Dette oppsettet bidrar til at Back Office-utdrag inneholder de samme transaksjonene som skift på salgsstedet, og at dataene blir summert etter dette skiftet.
+
+Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 

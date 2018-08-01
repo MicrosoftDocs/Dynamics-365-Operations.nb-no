@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Som en del av forbedringene for funksjonen for utdragspostering har tre nye para
 - **Deaktivering av opptelling kreves** – når dette alternativet er satt til **Ja**, fortsetter posteringsprosessen for et utdrag, selv om forskjellen mellom det talte beløpet og transaksjonsbeløpet på utdraget er utenfor terskelen som er definert i den **Utdrag** hurtigfane for detaljhandel.
 
 I tillegg er feltet **Maksimalt antall parallell kontoutdragspostering** lagt til på hurtigfanen **Satsvis behandling**. Dette feltet angir hvor mange satsvise oppgaver som skal kjøres samtidig. For øyeblikket, må du manuelt angi verdien i dette feltet.
+
+Med den nye posteringsprosessen må du definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Detaljhandelsparametere**. Dette gjelder selv om ingen gavekort brukes av organisasjonen. 
 
 Legg merke til at alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert på detaljhandel og på siden **Detaljhandelsparametere**, gjelder for den forbedrede funksjonen for utdragspostering.
 

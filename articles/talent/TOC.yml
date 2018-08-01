@@ -1,84 +1,87 @@
-- name: Velkommen til Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
-- name: Komme i gang
-  href: talent-get-started.md
   items:
-    - name: Systemkrav og oppdateringspolicy
-      href: talent-versions-update-policy.md
-    - name: Klargjøre Microsoft Dynamics 365 for Talent
-      href: provisioning-talent.md
-    - name: Fjerne et Talent-miljø
-      href: remove-talent-environment.md
-    - name: Klargjøre modulære apper for Microsoft Dynamics 365 for Talent
-      href: modular-app-tech-faq.md
-    - name: Utvide funksjonaliteten for Talent
-      href: extend-talent-functionality.md
-    - name: Tilgang til forhåndsvisningsfunksjoner i Dynamics 365 for Talent
-      href: access-preview-feature.md
-- name: Utvikle en personalstrategi
-  href: departments-jobs-positions.md
-  items:
-    - name: Definere jobbkomponenter
-      href: create-job.md
-    - name: Opprette en avdeling og knytte den til avdelingshierarkiet
-      href: create-department-add-department-hierarchy.md
-    - name: Definere parametere for Personale på tvers av juridiske enheter
-      href: set-up-hr-parameters-across-legal-entities.md
-    - name: Definere firmaspesifikke parametere for Personale
-      href: set-up-company-specific-hr-parameters.md
-    - name: Vanlige spørsmål om personalhandlinger
-      href: personnel-actions-faq.md
-    - name: Formalisere forretningsprosesser
-      href: formalize-business-processes.md
-    - name: Bruke en arbeidsflyt til å administrere informasjon om ansatte
-      href: workflow-manage-employee-information.md
-    - name: Oversikt over permisjon og fravær
-      href: leave-absence-overview.md
-- name: Bemanning av organisasjonen
-  items:
-    - name: Oversikt over Attract
-      href: attract-overview.md
-    - name: Oversikt over Onboard
-      href: create-onboarding-experience.md
-- name: Motivere ansatte
-  items:
-    - name: Kompensasjonsplaner
-      href: compensation-plans.md
-    - name: Opprette planer for fast kompensasjon
-      href: create-fixed-compensation-plans.md
-    - name: Opprette variable kompensasjonsplaner
-      href: create-variable-compensation-plans.md
-    - name: Behandle kompensasjon
-      href: process-compensation.md
-- name: Utvikle og lære opp ansatte
-  items:
-    - name: Oversikt over ytelsesstyring
-      href: performance-management-overview.md
-    - name: Justere ferdigheter med forretningsbehov for arbeidsstyrke
-      href: skills.md
-    - name: Definere opplæringskurs
-      href: courses.md
-- name: Opprette og vedlikeholde fordeler
-  href: manage-benefit-program.md
-- name: Policyer for fordelsrettigheter
-  href: benefit-eligibility-policies.md
-  items:
-    - name: Administrere varer som er lånt ut til arbeidere
-      href: loan-items.md
-- name: Samle inn informasjon ved hjelp av spørreskjemaer
-  href: questionnaires.md
-  items:
-    - name: Utforme et spørreskjema
-      href: design-questionnaires.md
-    - name: Distribuere og fylle ut et spørreskjema
-      href: distribute-questionnaires.md
-    - name: Evaluere resultatene i et spørreskjema
-      href: evaluate-questionnaire-results.md
-- name: Sikkerhet og overholdelse på arbeidsplassen (USA)
-  items:
-    - name: Svare på en forespørsel om personlige data ved hjelp av Talent
-      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
-    - name: Bekreftelse for I-9-ansettelse
-      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
-    - name: Overholde ADA
-      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
+    - name: Komme i gang
+      href: talent-get-started.md
+      items:
+        - name: Systemkrav og oppdateringspolicy
+          href: talent-versions-update-policy.md
+        - name: Klargjøre Microsoft Dynamics 365 for Talent
+          href: provisioning-talent.md
+        - name: Fjerne et Talent-miljø
+          href: remove-talent-environment.md
+        - name: Klargjøre modulære apper for Microsoft Dynamics 365 for Talent
+          href: modular-app-tech-faq.md
+        - name: Utvide funksjonaliteten for Talent
+          href: extend-talent-functionality.md
+        - name: Tilgang til forhåndsvisningsfunksjoner i Dynamics 365 for Talent
+          href: access-preview-feature.md
+        - name: Konfigurer Talent til å støtte lønnsintegrering
+          href: configure-payroll-integration.md
+    - name: Utvikle en personalstrategi
+      href: departments-jobs-positions.md
+      items:
+        - name: Definere jobbkomponenter
+          href: create-job.md
+        - name: Opprette en avdeling og knytte den til avdelingshierarkiet
+          href: create-department-add-department-hierarchy.md
+        - name: Definere parametere for Personale på tvers av juridiske enheter
+          href: set-up-hr-parameters-across-legal-entities.md
+        - name: Definere firmaspesifikke parametere for Personale
+          href: set-up-company-specific-hr-parameters.md
+        - name: Vanlige spørsmål om personalhandlinger
+          href: personnel-actions-faq.md
+        - name: Formalisere forretningsprosesser
+          href: formalize-business-processes.md
+        - name: Bruke en arbeidsflyt til å administrere informasjon om ansatte
+          href: workflow-manage-employee-information.md
+        - name: Oversikt over permisjon og fravær
+          href: leave-absence-overview.md
+    - name: Bemanne organisasjonen
+      items:
+        - name: Oversikt over Attract
+          href: attract-overview.md
+        - name: Oversikt over Onboard
+          href: create-onboarding-experience.md
+    - name: Motivere ansatte
+      items:
+        - name: Kompensasjonsplaner
+          href: compensation-plans.md
+        - name: Opprette planer for fast kompensasjon
+          href: create-fixed-compensation-plans.md
+        - name: Opprette variable kompensasjonsplaner
+          href: create-variable-compensation-plans.md
+        - name: Behandle kompensasjon
+          href: process-compensation.md
+    - name: Utvikle og lære opp ansatte
+      items:
+        - name: Oversikt over ytelsesstyring
+          href: performance-management-overview.md
+        - name: Justere ferdigheter med forretningsbehov for arbeidsstyrke
+          href: skills.md
+        - name: Definere opplæringskurs
+          href: courses.md
+    - name: Opprette og vedlikeholde fordeler
+      href: manage-benefit-program.md
+    - name: Policyer for fordelsrettigheter
+      href: benefit-eligibility-policies.md
+      items:
+        - name: Administrere varer som er lånt ut til arbeidere
+          href: loan-items.md
+    - name: Samle inn informasjon ved hjelp av spørreskjemaer
+      href: questionnaires.md
+      items:
+        - name: Utforme et spørreskjema
+          href: design-questionnaires.md
+        - name: Distribuere og fylle ut et spørreskjema
+          href: distribute-questionnaires.md
+        - name: Evaluere resultatene i et spørreskjema
+          href: evaluate-questionnaire-results.md
+    - name: Sikkerhet og overholdelse på arbeidsplassen (USA)
+      items:
+        - name: Svare på en forespørsel om personlige data ved hjelp av Talent
+          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+        - name: Bekreftelse for I-9-ansettelse
+          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+        - name: Overholde ADA
+          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json

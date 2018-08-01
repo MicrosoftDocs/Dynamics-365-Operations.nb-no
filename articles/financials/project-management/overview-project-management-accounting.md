@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Du kan bruke prognose hvis organisasjonen har et driftsperspektiv og fokuserer p
 ### <a name="create-projects"></a>Opprett prosjekter
 
 Du kan opprette seks typer prosjekter i Microsoft Finance and Operations. Hver prosjekttype er satt opp forskjellig for kostnader og inntektsføring. Prosjekttypen du velger er avhengig av formålet med prosjektet. Tabellen nedenfor beskriver den vanlige bruken av hver prosjekttype.
-
-                                                                                                                                                                         |
-
-| Prosjekttype      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tid og materialer | I Etter regning-prosjekter faktureres kunden for alle kostnader som er påløpt i et prosjekt. Disse kostnadene omfatter kostnader for timer, utgifter, varer og gebyrer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Fast pris       | I fastprisprosjekter består fakturaene av a konto-transaksjoner. Et fastprisprosjekt faktureres i samsvar med en faktureringstidsplan som er basert på en prosjektkontrakt. Omsetning for et fastprisprosjekt kan beregnes og posteres overalt i prosjektet ved hjelp av metoden for fullføringsprosent. Alternativt kan inntekt beregnes og posteres når prosjektet er fullført, ved hjelp av metoden for fullført kontrakt. Firmaer kan ofte dra nytte av å bruke verdien for varer i arbeid (VIA) til å beregne fullføringsgraden til et prosjekt eller en gruppe prosjekter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investering        | Investeringsprosjekter er prosjekter som ikke gir umiddelbare inntekter. De brukes vanligvis til langsiktige interne prosjekter der kostnadene må kapitaliseres. Bare kostnader for varer, timer og utgifter kan registreres for et investeringsprosjekt. Kostnader i et investeringsprosjekt spores og styres ved hjelp av estimatfunksjonaliteten. Investeringsprosjekter kan defineres med en valgfri maksimal kapitalisering. Etter hvert som et investeringsprosjekt skrider fremover, registrerer du kostnadene for det i VIA-kontoer, der kostnadene holdes til prosjektet er fullført. Når prosjektet er eliminert, overfører du VIA-verdien til et anleggsmiddel, en finanskonto eller til et nytt prosjekt. Obs!  Transaksjoner på investeringsprosjekter blir ikke vist på siden **Poster kostnader**, **Avsett inntekt** eller **Opprett fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Kostnadsprosjekt      | Kostnadsprosjekter brukes vanligvis til å spore interne prosjekter, slik som investeringsprosjekter, og bare timer, utgifter og varer kan registreres for dem. Kostnadsprosjekter er imidlertid vanligvis kortere enn investeringsprosjekter. I motsetning til investeringsprosjekter kan kostnadsprosjekter i tillegg ikke kapitaliseres til balansekontoer. I stedet posteres bare prosjekttransaksjonene til resultatkontoer. **OBS!** Transaksjoner på kostnadsprosjekter gjenspeiles ikke på siden **Poster kostnader**, **Avsett inntekt** eller **Opprett fakturaforslag**. Siden kostnadsprosjekter vanligvis brukes til å spore interne prosjekter, trenger de vanligvis ikke å være knyttet til en kundekonto. Hvis definisjonen imidlertid krever at varebehov opprettes for bestillinger, må du knytte kostnadsprosjekt til en kunde. Denne tilknytningen er nødvendig fordi varebehov behandles som salgsordrelinjer, og systemet krever at det angis en kunde. Dette oppsettet fører imidlertid ikke til at varebehov opprettes automatisk fra en bestilling. Når det gjelder kostnadsprosjekter, ignoreres innstillingen **Opprett varebehov**. Hvis du trenger et varebehov i et kostnadsprosjekt, kan du opprette det manuelt, gitt at en kunde er knyttet til prosjektet. |
-| Intern          | Interne prosjekter brukes til å spore kostnader på et prosjekt som er internt i organisasjonen. Interne prosjekter kan gi et planleggingsverktøy for å styre ressursforbruk. **Obs!**  Transaksjoner på kostnadsprosjekter gjenspeiles ikke på siden **Avsett inntekt** eller **Opprett fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Klokkeslett              | Tidsprosjekter brukes til å spore tid som er knyttet til ikke-belastbare og ikke-produktive aktiviteter, for eksempel et prosjekt for å spore sykefravær for arbeidere. Transaksjoner i tidsprosjekter posteres ikke i finans. I stedet tas de med i arbeider rapporter for utnyttelse av arbeider. Bare timetransaksjoner kan registreres i tidsprosjekter. Du bruker en timejournal eller timeregistrering til å registrere timene i prosjektet. Når timene registrert, vises de som prosjekttransaksjoner, men uten tilsvarende bilagstransaksjoner. **Obs!** Transaksjoner på tidsprosjekter gjenspeiles ikke på siden **Poster kostnader**, **Avsett inntekt** eller **Opprett fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Prosjekttype</th>
+    <td>Beskrivelse</th>
+  </tr>
+  <tr>
+    <td>Tid og materialer</td>
+    <td>I Etter regning-prosjekter faktureres kunden for alle kostnader som er påløpt i et prosjekt. Disse kostnadene omfatter kostnader for timer, utgifter, varer og gebyrer.</td>
+  </tr>
+  <tr>
+    <td>Fast pris</td>
+    <td>I fastprisprosjekter består fakturaene av a konto-transaksjoner. Et fastprisprosjekt faktureres i samsvar med en faktureringstidsplan som er basert på en prosjektkontrakt. Omsetning for et fastprisprosjekt kan beregnes og posteres overalt i prosjektet ved hjelp av metoden for fullføringsprosent. Alternativt kan inntekt beregnes og posteres når prosjektet er fullført, ved hjelp av metoden for fullført kontrakt. Firmaer kan ofte dra nytte av å bruke verdien for varer i arbeid (VIA) til å beregne fullføringsgraden til et prosjekt eller en gruppe prosjekter.</td>
+  </tr>
+  <tr>
+    <td>Investering</td>
+    <td>Investeringsprosjekter er prosjekter som ikke gir umiddelbare inntekter. De brukes vanligvis til langsiktige interne prosjekter der kostnadene må kapitaliseres. Bare kostnader for varer, timer og utgifter kan registreres for et investeringsprosjekt. Kostnader i et investeringsprosjekt spores og styres ved hjelp av estimatfunksjonaliteten. Investeringsprosjekter kan defineres med en valgfri maksimal kapitalisering. Etter hvert som et investeringsprosjekt skrider fremover, registrerer du kostnadene for det i VIA-kontoer, der kostnadene holdes til prosjektet er fullført. Når prosjektet er eliminert, overfører du VIA-verdien til et anleggsmiddel, en finanskonto eller til et nytt prosjekt. <br></br> <strong>Obs! </strong> Transaksjoner på investeringsprosjekter blir ikke vist på siden <strong>Poster kostnader<strong>, <strong>Avsett inntekt</strong> eller <strong>Opprett fakturaforslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Kostnadsprosjekt</td>
+    <td>Kostnadsprosjekter brukes vanligvis til å spore interne prosjekter, slik som investeringsprosjekter, og bare timer, utgifter og varer kan registreres for dem. Kostnadsprosjekter er imidlertid vanligvis kortere enn investeringsprosjekter. I motsetning til investeringsprosjekter kan kostnadsprosjekter i tillegg ikke kapitaliseres til balansekontoer. I stedet posteres bare prosjekttransaksjonene til resultatkontoer. <br></br> <strong>OBS!</strong> Transaksjoner på kostnadsprosjekter gjenspeiles ikke på siden <strong>Poster kostnader</strong>, <strong>Avsett inntekt</strong> eller <strong>Opprett fakturaforslag</strong>. Siden kostnadsprosjekter vanligvis brukes til å spore interne prosjekter, trenger de vanligvis ikke å være knyttet til en kundekonto. Hvis definisjonen imidlertid krever at varebehov opprettes for bestillinger, må du knytte kostnadsprosjekt til en kunde. Denne tilknytningen er nødvendig fordi varebehov behandles som salgsordrelinjer, og systemet krever at det angis en kunde. Dette oppsettet fører imidlertid ikke til at varebehov opprettes automatisk fra en bestilling. Når det gjelder kostnadsprosjekter, ignoreres innstillingen <strong>Opprett varebehov</strong>. Hvis du trenger et varebehov i et kostnadsprosjekt, kan du opprette det manuelt, gitt at en kunde er knyttet til prosjektet.</td>
+  </tr>
+  <tr>
+    <td>Intern</td>
+    <td>Interne prosjekter brukes til å spore kostnader på et prosjekt som er internt i organisasjonen. Interne prosjekter kan gi et planleggingsverktøy for å styre ressursforbruk. <br></br><strong>Obs!<strong>  Transaksjoner på kostnadsprosjekter gjenspeiles ikke på siden <strong>Avsett inntekt</strong> eller <strong>Opprett fakturaforslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Klokkeslett</td>
+    <td>Tidsprosjekter brukes til å spore tid som er knyttet til ikke-belastbare og ikke-produktive aktiviteter, for eksempel et prosjekt for å spore sykefravær for arbeidere. Transaksjoner i tidsprosjekter posteres ikke i finans. I stedet tas de med i arbeider rapporter for utnyttelse av arbeider. Bare timetransaksjoner kan registreres i tidsprosjekter. Du bruker en timejournal eller timeregistrering til å registrere timene i prosjektet. Når timene registrert, vises de som prosjekttransaksjoner, men uten tilsvarende bilagstransaksjoner. <br></br><strong>Obs! </strong> Transaksjoner på tidsprosjekter gjenspeiles ikke på siden <strong>Poster kostnader</strong>, <strong>Avsett inntekt</strong> eller <strong>Opprett fakturaforslag</strong>.</td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Tilordne arbeidere, kategorier og ressurser
@@ -239,11 +259,12 @@ Tabellen nedenfor beskriver metodene for beregning av kostnaden for å fullføre
 <li>Sammenlign prognosetransaksjoner med faktiske transaksjoner.</li>
 <li>Oppretthold, reduser eller øk estimatene for neste periode.</li>
 </ol>
-Finance and Operations reduserer ikke prognoseberegnede estimater automatisk. Det er derfor en god idé å opprettholde en original prognosemodell i fastprisprosjektet for å opprette et utgangspunkt for sammenligning når prosjektet er fullført. &gt; [!NOTE] &gt; Bruk minst to prognosemodeller når du velger denne metoden. Én modell må inneholde den opprinnelige prognosen. Når det gjelder den andre modellen, må du kopiere prognosetransaksjoner fra en annen modell. Denne metoden er bare gyldig for fastprisprosjekter og investeringsprosjekter.</td>
+Finance and Operations reduserer ikke prognoseberegnede estimater automatisk. Det er derfor en god idé å opprettholde en original prognosemodell i fastprisprosjektet for å opprette et utgangspunkt for sammenligning når prosjektet er fullført. 
+<br></br> <strong>Obs! </strong> Bruk minst to prognosemodeller når du velger denne metoden. Én modell må inneholde den opprinnelige prognosen. Når det gjelder den andre modellen, må du kopiere prognosetransaksjoner fra en annen modell. Denne metoden er bare gyldig for fastprisprosjekter og investeringsprosjekter.</td>
 </tr>
 <tr class="odd">
 <td>Gjenstående budsjett</td>
-<td>Denne metoden bruker en modell for gjenstående budsjett til å beregne kostnaden for å fullføre prosjektet. Når du bruker denne metoden, summeres de faktiske kostnadene og de prognoseberegnede beløpene i modellen for gjenstående budsjett. Resultatet er en totalkostnad. Før du bruker denne metoden, må en modell for gjenstående budsjett defineres for å trekke fra transaksjoner basert på faktiske transaksjoner som er registrert i systemet. På <strong>Prognosemodeller</strong>-siden må du kontrollere at det er merket av for feltene i gruppen <strong>Automatisk prognosereduksjon</strong>. Vanligvis kopieres et gjenstående budsjett fra et opprinnelig budsjett. Når transaksjoner registreres, reduseres transaksjonene på det gjenstående budsjettet. Hvis du finner ut at du må justere det gjenstående budsjettet etter hvert som prosjektet går fremover, belaster du det gjenstående budsjettet med prognosetransaksjoner. <strong>Obs! </strong> Denne metoden kan bare brukes hvis en prognosemodell er knyttet til estimatet.</td>
+<td>Denne metoden bruker en modell for gjenstående budsjett til å beregne kostnaden for å fullføre prosjektet. Når du bruker denne metoden, summeres de faktiske kostnadene og de prognoseberegnede beløpene i modellen for gjenstående budsjett. Resultatet er en totalkostnad. Før du bruker denne metoden, må en modell for gjenstående budsjett defineres for å trekke fra transaksjoner basert på faktiske transaksjoner som er registrert i systemet. På <strong>Prognosemodeller</strong>-siden må du kontrollere at det er merket av for feltene i gruppen <strong>Automatisk prognosereduksjon</strong>. Vanligvis kopieres et gjenstående budsjett fra et opprinnelig budsjett. Når transaksjoner registreres, reduseres transaksjonene på det gjenstående budsjettet. Hvis du finner ut at du må justere det gjenstående budsjettet etter hvert som prosjektet går fremover, belaster du det gjenstående budsjettet med prognosetransaksjoner. <br></br> <strong>Obs! </strong> Denne metoden kan kun brukes hvis en prognosemodell er knyttet til estimatet.</td>
 </tr>
 <tr class="even">
 <td>Som forrige estimat</td>
@@ -318,11 +339,19 @@ Kostnadsbetalingsdatoen beregnes ikke på bufferdager. Når et prosjekt er fullf
 
 Når alle salgs- og leverandørfakturaer er fullført, kan du vise relasjonen mellom feltene på **Kontantstrøm**-siden og feltene på **Prosjektoppgaver**-siden.
 
-| Kontantstrøm-siden | Prosjektoppgaver-siden |
-|----------------|-------------------------|
-| Kontant innflyt   | Omsetning                 |
-| Kontant utflyt  | Total kostnad              |
-| Netto kontantstrøm | Bruttofortjeneste            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Gå gjennom kostnader
 
@@ -409,8 +438,4 @@ Når oppgaven beregnes, kan du vise følgende informasjon i de ulike fanene på 
 -   **Forbruk** – Informasjon om forbruket av timer, varer, utgifter og lønnstransaksjoner.
 -   **Faktura** – Informasjon om fakturaer og a konto-fakturering.
 -   **Timepris** – Timepriser for timer som posteres til inntekts- og utgiftskontoer.
-
-
-
-
 
