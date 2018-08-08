@@ -1,7 +1,7 @@
 ---
 title: Oversikt over budsjettering
 description: "Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e50c646154bf17594d1de78eedc55edd54cde1c5
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

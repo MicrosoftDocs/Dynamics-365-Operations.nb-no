@@ -1,7 +1,7 @@
 --- 
 title: "Direkteoverføre produkter fra mottakende lager til butikker"
 description: "Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle en direkteoverføring ved distribusjon av produkter fra mottaksstedet for en bestilling til én eller flere butikker."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/17/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1182474504f7d1c051fe995c516367420ccc9701
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a><span data-ttu-id="1d133-103">Direkteoverføre produkter fra mottakende lager til butikker</span><span class="sxs-lookup"><span data-stu-id="1d133-103">Cross-dock products from receiving warehouse to stores</span></span>

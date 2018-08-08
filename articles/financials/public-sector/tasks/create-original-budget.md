@@ -1,7 +1,7 @@
 --- 
 title: "Opprette et opprinnelig budsjett og tilbakeføre foreløpige budsjettposter i offentlig sektor"
 description: "Når du oppretter en opprinnelig budsjettpost og bruker budsjettmodellen og dimensjonsverdiene som inneholder de foreløpige budsjettbeløpene, kan de foreløpige budsjettbeløpene tilbakeføres."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: dc315a53e420049689828cce375630a1adf5d843
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: a6f9b20658764e1a7584a34b573d103f0a13c7d8
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="d2acd-103">Opprette et opprinnelig budsjett og tilbakeføre foreløpige budsjettposter i offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="d2acd-103">Create an original budget and reverse preliminary budget entries in the public sector</span></span>
