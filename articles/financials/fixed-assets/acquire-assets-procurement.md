@@ -1,7 +1,7 @@
 ---
 title: "Skaffe aktiva ved hjelp av innkjøp"
 description: "Dette emnet beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec

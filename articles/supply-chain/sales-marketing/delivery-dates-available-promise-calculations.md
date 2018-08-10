@@ -1,7 +1,7 @@
 ---
 title: Ordrebekreftelse
 description: Denne artikkelen inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 193933
 ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8

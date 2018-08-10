@@ -1,7 +1,7 @@
 ---
 title: Startside for hovedplanlegging
 description: "Med hovedplanlegging kan selskaper bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 

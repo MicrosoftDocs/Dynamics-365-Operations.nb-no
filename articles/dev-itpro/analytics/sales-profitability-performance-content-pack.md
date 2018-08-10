@@ -1,7 +1,7 @@
 ---
 title: Resultat av salg og fortjeneste for Power BI-innhold
 description: "Dette emnet beskriver hva som er inkludert i Power BI-innholdet Resultat av salg og fortjeneste. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
