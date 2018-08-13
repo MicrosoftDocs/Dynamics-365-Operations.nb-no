@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Power BI-innholdet CFO-oversikt](CFO-power-bi.md)
 - [Kompensasjon-innhold for Power BI](compensation-power-bi.md)
 - [Power BI-innhold for analyse av kostnadsregnskap](cost-accounting-analysis-content-pack.md) 
-- [Kostnadsbehandling-innhold for Power BI](cost-management-content-pack.md)    
+- [Kostnadsbehandling-innhold for Power BI](cost-management-content-pack.md)
 - [Power BI-innholdet Behandling av kreditt og innkrevinger](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-innhold om ansattutvikling](employee-development-PBI.md) 
 - [Power BI-innhold om økonomisk innsikt](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Resultat av salg og fortjeneste for Power BI-innhold](sales-profitability-performance-content-pack.md)
 - [Leverandørbetalinger-innhold Power BI](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Lagerytelse-innhold for Power BI](warehouse-power-bi-content.md)
-- [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)  
+- [Workforce Metrics-innhold for Power BI](workforce-analysis-power-bi-content-pack.md)
 

@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -34,44 +34,40 @@ Denne artikkelen gir informasjon om rapportdefinisjoner. En rapportdefinisjon er
 
 En rapportdefinisjon er en rapportkomponent (eller byggeblokk) som bruker en raddefinisjon, kolonnedefinisjon og valgfri rapporteringstredefinisjon for å opprette en rapport. En rapportdefinisjon inneholder også flere alternativer og innstillinger for å tilpasse en rapport. Når du har definert raddefinisjoner og kolonnedefinisjoner, må du kombinere dem i en rapportdefinisjon. Nå kan du også definere andre deler av definisjonene, for eksempel detaljnivået og rapportdatoen. Du kan deretter lagre og generere en rapport. Finansrapportering tilbyr følgende detaljnivåer for rapportering:
 
--   Økonomisk
--   Økonomisk og konto
--   Økonomisk, konto og transaksjon
+- Økonomisk
+- Økonomisk og konto
+- Økonomisk, konto og transaksjon
 
 Det kan imidlertid hende at transaksjonsdetaljer ikke er tilgjengelig i rapporter, avhengig av hvordan dataene er lagret i Microsoft Dynamics ERP-systemet.
 
 ## <a name="create-a-report-definition"></a>Opprette en rapportdefinisjon
-1.  Gå til **Fil** -menyen i Rapportutforming og klikk **Ny**, og velg deretter **Rapportdefinisjon**.
-2.  Angi riktig informasjon i kategoriene **Rapport**, **Utdata og distribusjon**, **Topptekst og bunntekst** og **Innstillinger**.
+1. Gå til **Fil** -menyen i Rapportutforming og klikk **Ny**, og velg deretter **Rapportdefinisjon**.
+2. Angi riktig informasjon i kategoriene **Rapport**, **Utdata og distribusjon**, **Topptekst og bunntekst** og **Innstillinger**.
 
 ## <a name="contents-of-a-report-definition"></a>Innholdet i en rapportdefinisjon
 Tabellen nedenfor beskriver kategoriene i en rapportdefinisjon og hvordan informasjonen brukes.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Tabulator</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Rapporter</td>
 <td>Opprett en rapport, konfigurer en rapport eller endre en eksisterende rapport.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Utdata og distribusjon</td>
 <td>Endre utdatatype og mål for rapporten.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Topptekst og bunntekst</td>
 <td>Definer og formater topptekst og bunntekst for rapporten. Du kan for eksempel legge til tekst eller bilder i toppteksten eller bunnteksten. Finansrapportering støtter BMP-, JPG- og PNG-filer for bilder. Du kan også legge til autotekstkoder for å sette inn tilleggsinformasjon, for eksempel et firmanavn, rapportnavn eller sidetall.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Innstillinger</td>
 <td>Angi innstillinger for rapportdefinisjon, for eksempel følgende innstillinger:
 <ul>
@@ -81,18 +77,13 @@ Tabellen nedenfor beskriver kategoriene i en rapportdefinisjon og hvordan inform
 <li>Generer unntaksrapport</li>
 <li>Angi valutaomregning</li>
 <li>Delsum- og filterkontodetaljer</li>
-</ul></td>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-
 

@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,18 +33,18 @@ Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Kost
 
 ## <a name="overview"></a>Oversikt
 
-Power BI-innholdet **Kostnadsregnskapsanalyse** er ment for kostnadskontrollører eller andre som er ansvarlig for å utføre kostnadskontroll i en organisasjon. Det inkluderer hovedmål, for eksempel kostnader, størrelse og kostnadssats etter faktiske kostnader, budsjettkostnader og fleksible budsjettkostnader. Det bruker transaksjonsdata fra modulen **Kostnadsregnskap** og gir en aggregert visning av kostnadene for hele organisasjonen i en rapporteringsvaluta. Ledere kan filtrere dataene etter kostnadsobjekter for å utføre kostnadskontroll for sine organisasjonsenheter, selv om organisasjonen kan ha flere juridiske enheter. 
+Power BI-innholdet **Kostnadsregnskapsanalyse** er ment for kostnadskontrollører eller andre som er ansvarlig for å utføre kostnadskontroll i en organisasjon. Det inkluderer hovedmål, for eksempel kostnader, størrelse og kostnadssats etter faktiske kostnader, budsjettkostnader og fleksible budsjettkostnader. Det bruker transaksjonsdata fra modulen **Kostnadsregnskap** og gir en aggregert visning av kostnadene for hele organisasjonen i en rapporteringsvaluta. Ledere kan filtrere dataene etter kostnadsobjekter for å utføre kostnadskontroll for sine organisasjonsenheter, selv om organisasjonen kan ha flere juridiske enheter.
 
-Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kostnader og budsjetterte kostnader, kan ledere bli varslet om positive og negative trender for sine driftsenheter. Ledere kan drille ned til kostnadselementhierarkiene eller individuelle kostnadselementer. På denne måten kan ledere få detaljert innsikt i hvordan kostnadsavvik har oppstått, og deretter iverksette effektive tiltak. 
+Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kostnader og budsjetterte kostnader, kan ledere bli varslet om positive og negative trender for sine driftsenheter. Ledere kan drille ned til kostnadselementhierarkiene eller individuelle kostnadselementer. På denne måten kan ledere få detaljert innsikt i hvordan kostnadsavvik har oppstått, og deretter iverksette effektive tiltak.
 
-Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen. 
+Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen.
 
-Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 |                                  | Faktiske kostnader etter navn på medlem av dimensjon for kostnadsobjekt og navn på medlem av dimensjon for kostnadselement                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende data brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsregnskapsanalyse**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 
+Følgende data brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsregnskapsanalyse**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.
 
@@ -113,20 +113,18 @@ Tabellen nedenfor viser hvordan de aggregerte nøkkelmålingene brukes til å op
 
 Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte målingene for å oppnå flere detaljer og dypere analytisk innsikt.
 
-
-|               Enhet               |                                                Eksempler på attributter                                                |
+| Enhet                             | Eksempler på attributter                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Finans for kostnadsregnskap       |                                                Kostnadsregnskapsfinans                                                |
-|         Kostnadskontrollenheter         |                                                Navn på kostnadskontrollenhet                                                |
-|      Kostnadselementdimensjoner       |     Navn på kostnadselementdimensjon, navn på medlem av dimensjon for kostnadselement, beskrivelse av medlem av dimensjon for kostnadselement      |
-|       Kostnadsobjektdimensjoner       |       Navn på kostnadsobjektdimensjon, navn på medlem av dimensjon for kostnadsobjekt, beskrivelse av medlem av dimensjon for kostnadsobjekt        |
-|       Statistiske dimensjoner       |       Navn på statistisk dimensjon, Navn på medlem av statistisk dimensjon, beskrivelse av medlem av statistisk dimensjon        |
-| Hierarkier for kostnadsobjektdimensjon  |  Hierarkinavn for kostnadsobjektdimensjon, hierarkinivå for kostnadsobjektdimensjon, hierarkitre for kostnadsobjektdimensjon   |
+| Finans for kostnadsregnskap            | Kostnadsregnskapsfinans                                                                                               |
+| Kostnadskontrollenheter                 | Navn på kostnadskontrollenhet                                                                                               |
+| Kostnadselementdimensjoner            | Navn på kostnadselementdimensjon, navn på medlem av dimensjon for kostnadselement, beskrivelse av medlem av dimensjon for kostnadselement          |
+| Kostnadsobjektdimensjoner             | Navn på kostnadsobjektdimensjon, navn på medlem av dimensjon for kostnadsobjekt, beskrivelse av medlem av dimensjon for kostnadsobjekt              |
+| Statistiske dimensjoner             | Navn på statistisk dimensjon, Navn på medlem av statistisk dimensjon, beskrivelse av medlem av statistisk dimensjon              |
+| Hierarkier for kostnadsobjektdimensjon  | Hierarkinavn for kostnadsobjektdimensjon, hierarkinivå for kostnadsobjektdimensjon, hierarkitre for kostnadsobjektdimensjon    |
 | Dimensjonshierarkier for kostnadselement | Hierarkinavn for kostnadselementdimensjon, hierarkinivå for kostnadselementdimensjon, hierarkitre for kostnadselementdimensjon |
-| Hierarkier for statistisk dimensjon  |  Dimensjonshierarkinavn for statistikk, dimensjonshierarkinivå for statistikk, dimensjonshierarkitre for statistikk   |
-|        Transaksjonsversjoner        |                                                     Navn på versjon                                                     |
-|          Økonomiske kalendere          |                                            Kalender, kalenderbeskrivelse                                            |
-|            Regnskapsår            |                                                    Kalenderår                                                     |
-|           Regnskapsperioder           |                                                 Kalenderårperiode                                                 |
-
+| Hierarkier for statistisk dimensjon  | Dimensjonshierarkinavn for statistikk, dimensjonshierarkinivå for statistikk, dimensjonshierarkitre for statistikk    |
+| Transaksjonsversjoner               | Navn på versjon                                                                                                         |
+| Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
+| Regnskapsår                       | Kalenderår                                                                                                        |
+| Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
 
