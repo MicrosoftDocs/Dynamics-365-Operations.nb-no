@@ -1,7 +1,7 @@
 ---
 title: Konserninterne utgifter
 description: "En arbeidstaker som er ansatt av en juridisk enhet i en organisasjon kan utføre arbeid for en annen juridisk enhet i samme organisasjon. I denne situasjonen kan du bruke den konserninterne kostnadsfunksjonen til å tildele arbeidstakers utgifter til den juridiske enheten som arbeidet ble utført for."
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -13,16 +13,14 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 5cedebeec7fa82c5bdb2c19175c65a3c99b96dbb
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 9e1f2b9593d50d5ec04f039b9b995c8792b40612
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
