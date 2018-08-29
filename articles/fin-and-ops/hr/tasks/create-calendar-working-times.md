@@ -1,5 +1,5 @@
 --- 
-title: Opprette en kalender og generere arbeidstider
+title: Opprette kalendere og generere arbeidstider
 description: Kalendere beskriver kapasitet og arbeidstid for operasjonsressurser.
 author: kherr75
 manager: AnnBe
@@ -16,36 +16,36 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ba2a5e4d96e02d627df1f7f88548ff5a214a3830
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9e0b574d83272acf9ccad49e29e80827810b783a
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-a-calendar-and-generate-working-times"></a><span data-ttu-id="2e4c4-103">Opprette en kalender og generere arbeidstider</span><span class="sxs-lookup"><span data-stu-id="2e4c4-103">Create a calendar and generate working times</span></span>
+# <a name="create-calendars-and-generate-working-times"></a><span data-ttu-id="8740b-103">Opprette kalendere og generere arbeidstider</span><span class="sxs-lookup"><span data-stu-id="8740b-103">Create calendars and generate working times</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2e4c4-104">Kalendere beskriver kapasitet og arbeidstid for operasjonsressurser.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-104">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="2e4c4-105">Denne fremgangsmåten vil hjelpe deg med å definere en arbeidskalender basert på en arbeidstidsmal.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-105">This procedure will help you define a work calendar based on a working time template.</span></span> <span data-ttu-id="2e4c4-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="8740b-104">Kalendere beskriver kapasitet og arbeidstid for operasjonsressurser.</span><span class="sxs-lookup"><span data-stu-id="8740b-104">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="8740b-105">Denne fremgangsmåten vil hjelpe deg med å definere en arbeidskalender basert på en arbeidstidsmal.</span><span class="sxs-lookup"><span data-stu-id="8740b-105">This procedure will help you define a work calendar based on a working time template.</span></span> <span data-ttu-id="8740b-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="8740b-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="2e4c4-107">Gå til Alle arbeidsområder > Administrasjon av livssyklus for ressurs.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-107">Go to All workspaces > Resource lifecycle management.</span></span>
-2. <span data-ttu-id="2e4c4-108">Klikk Kalendere.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-108">Click Calendars.</span></span>
-3. <span data-ttu-id="2e4c4-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-109">Click New.</span></span>
-4. <span data-ttu-id="2e4c4-110">Skriv inn en verdi i feltet Kalender.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-110">In the Calendar field, type a value.</span></span>
-    * <span data-ttu-id="2e4c4-111">Dette er ID-en for kalenderen som brukes som referanse når du tilordner kalendere, for eksempel til en operasjonsressurs eller en ressursgruppe.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-111">This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.</span></span>  
-5. <span data-ttu-id="2e4c4-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-112">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="2e4c4-113">I feltet Standard arbeidsdag i timer angir du et tall.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-113">In the Standard work day in hours field, enter a number.</span></span>
-7. <span data-ttu-id="2e4c4-114">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-114">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="2e4c4-115">Klikk Driftstider.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-115">Click Working times.</span></span>
-9. <span data-ttu-id="2e4c4-116">Klikk Definer driftstid.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-116">Click Compose working times.</span></span>
-    * <span data-ttu-id="2e4c4-117">Generer arbeidstimer for hver dag i perioden der du vil kunne planlegge arbeidet.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-117">Generate working hours for each day in the period where you want to be able to schedule work.</span></span> <span data-ttu-id="2e4c4-118">Som tiden går kan du generere arbeidstider for flere perioder.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-118">As time goes by, you can generate working times for additional periods.</span></span>  
-10. <span data-ttu-id="2e4c4-119">Angi en dato i Fra dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-119">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="2e4c4-120">Dette er den første dagen denne kalenderen må være åpen.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-120">This is the first day that this calendar must be open.</span></span>  
-11. <span data-ttu-id="2e4c4-121">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-121">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="2e4c4-122">Dette er den siste dagen denne kalenderen er åpen.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-122">This is the last day that this calendar is open.</span></span>  
-12. <span data-ttu-id="2e4c4-123">I feltet Driftstidsmal angir eller velger du en verdi.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-123">In the Working time template field, enter or select a value.</span></span>
-    * <span data-ttu-id="2e4c4-124">Arbeidstidsmalen definerer arbeidstiden for hver dag i uken.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-124">The working time template defines the working hours for each day of the week.</span></span>  
-13. <span data-ttu-id="2e4c4-125">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-125">Click OK.</span></span>
-14. <span data-ttu-id="2e4c4-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="2e4c4-126">Close the page.</span></span>
+1. <span data-ttu-id="8740b-107">Gå til Alle arbeidsområder > Administrasjon av livssyklus for ressurs.</span><span class="sxs-lookup"><span data-stu-id="8740b-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="8740b-108">Klikk Kalendere.</span><span class="sxs-lookup"><span data-stu-id="8740b-108">Click Calendars.</span></span>
+3. <span data-ttu-id="8740b-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="8740b-109">Click New.</span></span>
+4. <span data-ttu-id="8740b-110">Skriv inn en verdi i feltet Kalender.</span><span class="sxs-lookup"><span data-stu-id="8740b-110">In the Calendar field, type a value.</span></span>
+    * <span data-ttu-id="8740b-111">Dette er ID-en for kalenderen som brukes som referanse når du tilordner kalendere, for eksempel til en operasjonsressurs eller en ressursgruppe.</span><span class="sxs-lookup"><span data-stu-id="8740b-111">This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.</span></span>  
+5. <span data-ttu-id="8740b-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="8740b-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="8740b-113">I feltet Standard arbeidsdag i timer angir du et tall.</span><span class="sxs-lookup"><span data-stu-id="8740b-113">In the Standard work day in hours field, enter a number.</span></span>
+7. <span data-ttu-id="8740b-114">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="8740b-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="8740b-115">Klikk Driftstider.</span><span class="sxs-lookup"><span data-stu-id="8740b-115">Click Working times.</span></span>
+9. <span data-ttu-id="8740b-116">Klikk Definer driftstid.</span><span class="sxs-lookup"><span data-stu-id="8740b-116">Click Compose working times.</span></span>
+    * <span data-ttu-id="8740b-117">Generer arbeidstimer for hver dag i perioden der du vil kunne planlegge arbeidet.</span><span class="sxs-lookup"><span data-stu-id="8740b-117">Generate working hours for each day in the period where you want to be able to schedule work.</span></span> <span data-ttu-id="8740b-118">Som tiden går kan du generere arbeidstider for flere perioder.</span><span class="sxs-lookup"><span data-stu-id="8740b-118">As time goes by, you can generate working times for additional periods.</span></span>  
+10. <span data-ttu-id="8740b-119">Angi en dato i Fra dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="8740b-119">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="8740b-120">Dette er den første dagen denne kalenderen må være åpen.</span><span class="sxs-lookup"><span data-stu-id="8740b-120">This is the first day that this calendar must be open.</span></span>  
+11. <span data-ttu-id="8740b-121">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="8740b-121">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="8740b-122">Dette er den siste dagen denne kalenderen er åpen.</span><span class="sxs-lookup"><span data-stu-id="8740b-122">This is the last day that this calendar is open.</span></span>  
+12. <span data-ttu-id="8740b-123">I feltet Driftstidsmal angir eller velger du en verdi.</span><span class="sxs-lookup"><span data-stu-id="8740b-123">In the Working time template field, enter or select a value.</span></span>
+    * <span data-ttu-id="8740b-124">Arbeidstidsmalen definerer arbeidstiden for hver dag i uken.</span><span class="sxs-lookup"><span data-stu-id="8740b-124">The working time template defines the working hours for each day of the week.</span></span>  
+13. <span data-ttu-id="8740b-125">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="8740b-125">Click OK.</span></span>
+14. <span data-ttu-id="8740b-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="8740b-126">Close the page.</span></span>
 
 

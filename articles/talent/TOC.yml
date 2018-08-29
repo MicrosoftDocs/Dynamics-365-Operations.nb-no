@@ -1,29 +1,33 @@
-- name: Dynamics 365 for Talent
+- name: Velkommen til Dynamics 365 for Talent
   href: index.md
   items:
     - name: Komme i gang
       href: talent-get-started.md
       items:
+        - name: Hva er nytt eller endret?
+          items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
+              href: whats-new-talent-july2018.md
         - name: Systemkrav og oppdateringspolicy
           href: talent-versions-update-policy.md
-        - name: Klargjøre Microsoft Dynamics 365 for Talent
+        - name: Klargjøre Talent
           href: provisioning-talent.md
-        - name: Fjerne et Talent-miljø
+        - name: Fjerne Talent-miljøer
           href: remove-talent-environment.md
-        - name: Klargjøre modulære apper for Microsoft Dynamics 365 for Talent
+        - name: Klargjøre for modulære Talent-apper
           href: modular-app-tech-faq.md
         - name: Utvide funksjonaliteten for Talent
           href: extend-talent-functionality.md
-        - name: Tilgang til forhåndsvisningsfunksjoner i Dynamics 365 for Talent
+        - name: Få tilgang til forhåndsvisningsfunksjoner
           href: access-preview-feature.md
-        - name: Konfigurer Talent til å støtte lønnsintegrering
+        - name: Konfigurere lønnsintegrering mellom Talent og Dayforce
           href: configure-payroll-integration.md
-    - name: Utvikle en personalstrategi
+    - name: 'Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger'
       href: departments-jobs-positions.md
       items:
-        - name: Definere jobbkomponenter
+        - name: Definere komponentene for en jobb
           href: create-job.md
-        - name: Opprette en avdeling og knytte den til avdelingshierarkiet
+        - name: Opprette avdelinger og inkludere dem i avdelingshierarkiet
           href: create-department-add-department-hierarchy.md
         - name: Definere parametere for Personale på tvers av juridiske enheter
           href: set-up-hr-parameters-across-legal-entities.md
@@ -33,15 +37,15 @@
           href: personnel-actions-faq.md
         - name: Formalisere forretningsprosesser
           href: formalize-business-processes.md
-        - name: Bruke en arbeidsflyt til å administrere informasjon om ansatte
+        - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
           href: workflow-manage-employee-information.md
-        - name: Oversikt over permisjon og fravær
+        - name: Administrasjon av permisjon og fravær
           href: leave-absence-overview.md
     - name: Bemanne organisasjonen
       items:
-        - name: Oversikt over Attract
+        - name: Tiltrekke funksjoner og egenskaper
           href: attract-overview.md
-        - name: Oversikt over Onboard
+        - name: Opprette en engasjerende introduksjon ved oppstart
           href: create-onboarding-experience.md
     - name: Motivere ansatte
       items:
@@ -55,13 +59,13 @@
           href: process-compensation.md
     - name: Utvikle og lære opp ansatte
       items:
-        - name: Oversikt over ytelsesstyring
+        - name: Ytelsesstyring
           href: performance-management-overview.md
         - name: Justere ferdigheter med forretningsbehov for arbeidsstyrke
           href: skills.md
         - name: Definere opplæringskurs
           href: courses.md
-    - name: Opprette og vedlikeholde fordeler
+    - name: Definere og administrere et fordelsprogram
       href: manage-benefit-program.md
     - name: Policyer for fordelsrettigheter
       href: benefit-eligibility-policies.md
@@ -71,17 +75,134 @@
     - name: Samle inn informasjon ved hjelp av spørreskjemaer
       href: questionnaires.md
       items:
-        - name: Utforme et spørreskjema
+        - name: Utforme spørreskjemaer
           href: design-questionnaires.md
-        - name: Distribuere og fylle ut et spørreskjema
+        - name: Distribuere og planlegge spørreskjemaer
           href: distribute-questionnaires.md
-        - name: Evaluere resultatene i et spørreskjema
+        - name: Vise og evaluere resultatene i spørreskjemaer
           href: evaluate-questionnaire-results.md
     - name: Sikkerhet og overholdelse på arbeidsplassen (USA)
       items:
         - name: Svare på en forespørsel om personlige data ved hjelp av Talent
-          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Bekreftelse for I-9-ansettelse
-          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Overholde ADA
-          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
+          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Intelligens
+      items:
+        - name: Innebygd Power BI i arbeidsområder
+          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Mobilapp
+      items:
+        - name: Mobile arbeidsområder
+          items:
+            - name: Firmakatalog
+              href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Mitt team
+              href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Publisere et mobilt arbeidsområde
+          href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Office-integrering
+      items:
+        - name: Opplæring i Office-integrering
+          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Bruke Excel-tillegget
+          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Opprette opplevelser for Åpne i Excel
+          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Feilsøke Office-integreringen
+          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Organisasjonsstyring
+      items:
+        - name: Nummerserier
+          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Konfigurere nummerserier enkeltvis
+              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Konfigurere alle nødvendige nummerserier ved å bruke en veiviser
+              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Organisasjoner og organisasjonshierarkier
+          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Planlegge organisasjonshierarkiet
+              href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Opprette et organisasjonshierarki
+              href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Opprette en juridisk enhet
+              href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Opprette en driftsenhet
+              href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Global adressebok
+          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Planlegge hvordan du konfigurerer den globale adresseboken
+              href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Konfigurere den globale adresseboken
+              href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Vanlige spørsmål om adressebøker
+              href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Arbeidsflyt
+          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Arbeidsflytelementer
+              href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Arbeidsflythandlinger
+              href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Opprette en arbeidsflyt
+              href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+              items:
+                - name: Konfigurere egenskaper for arbeidsflyt
+                  href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en manuell oppgave
+                  href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en automatisert oppgave
+                  href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en godkjenningsprosess
+                  href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere et godkjenningstrinn
+                  href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en manuell beslutning
+                  href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en betinget beslutning
+                  href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en parallell aktivitet
+                  href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en parallell avdeling
+                  href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Konfigurere en arbeidsflyt for linjeelement
+                  href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Konfigurere den satsvise jobben for meldingsbehandling
+              href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Delegere arbeidselementer i en arbeidsflyt
+              href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Vis arbeidsflytlogg
+              href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Gi brukere muligheten til å motta arbeidsflytrelaterte e-postmeldinger
+              href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Varsler
+          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Opprette varsler
+              href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Satsvis behandling for varsler
+              href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Saksbehandling
+          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: 'Konfigurere sakssikkerhet, prosesser og kategorier'
+              href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurere dokumentstyring
+          href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Konfigurere og sende e-post
+          href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Dato-/klokkeslettdata og tidssoner
+          href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Oppgaver i Personale
+      items:
+        - name: Legge til i ytelsesjournal og sende ros til noen
+          href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Opprette et mål
+          href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Opprette en prestasjonsvurdering
+          href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json

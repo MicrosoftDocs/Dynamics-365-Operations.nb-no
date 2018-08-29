@@ -1,5 +1,5 @@
 ---
-title: Bruke hurtigimport/-eksport
+title: Hurtigimport/-eksport
 description: "Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn."
 author: margoc
 manager: AnnBe
@@ -18,27 +18,27 @@ ms.author: margoc
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4bb5bf73210abfc3fc06f7f291ae60fdf4298b71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4f2edba4add691e9ad4c7829551c6f79b9804853
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a><span data-ttu-id="d3320-103">Kjøre overføringsverktøy for testdata (beta) for Dynamics AX (AX 2012)</span><span class="sxs-lookup"><span data-stu-id="d3320-103">Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)</span></span>
+# <a name="quick-import-export"></a><span data-ttu-id="eede0-103">Hurtigimport/-eksport</span><span class="sxs-lookup"><span data-stu-id="eede0-103">Quick import export</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d3320-104">Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn.</span><span class="sxs-lookup"><span data-stu-id="d3320-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
+<span data-ttu-id="eede0-104">Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn.</span><span class="sxs-lookup"><span data-stu-id="eede0-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
 
-<span data-ttu-id="d3320-105">Vi har lagt til funksjonen for hurtigimport/-eksport for å la brukere importere eller eksportere enkle jobber som skal utføres raskt.</span><span class="sxs-lookup"><span data-stu-id="d3320-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="d3320-106">Ideelt sett brukes denne funksjonen i situasjoner som automatisk tilordner en fil til systemet og brukeren ikke trenger å gå gjennom avansert tilordning eller opprette gjentatte import- eller eksportjobber.</span><span class="sxs-lookup"><span data-stu-id="d3320-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
+<span data-ttu-id="eede0-105">Vi har lagt til funksjonen for hurtigimport/-eksport for å la brukere importere eller eksportere enkle jobber som skal utføres raskt.</span><span class="sxs-lookup"><span data-stu-id="eede0-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="eede0-106">Ideelt sett brukes denne funksjonen i situasjoner som automatisk tilordner en fil til systemet og brukeren ikke trenger å gå gjennom avansert tilordning eller opprette gjentatte import- eller eksportjobber.</span><span class="sxs-lookup"><span data-stu-id="eede0-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
 
-- <span data-ttu-id="d3320-107">Denne funksjonen støtter arbeid med både medfølgende og egendefinerte enheter.</span><span class="sxs-lookup"><span data-stu-id="d3320-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
-- <span data-ttu-id="d3320-108">Du kan importere fra filer, og hvis du bruker en ODBC-datakilde, kan du velge en spørring til bruk for å definere importen.</span><span class="sxs-lookup"><span data-stu-id="d3320-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
-- <span data-ttu-id="d3320-109">Du må ha tidligere definerte kildedataformater for AX eller Fil, og vite hvor de befinner seg.</span><span class="sxs-lookup"><span data-stu-id="d3320-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
-- <span data-ttu-id="d3320-110">Du trenger ikke å opprette en behandlingsgruppe for å bruke hurtigimport/-eksport. Systemet oppretter en automatisk når du import- eller eksportjobben utføres.</span><span class="sxs-lookup"><span data-stu-id="d3320-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="d3320-111">Du kan også velge å beholde historikken over dataene som importeres med hurtigimport/-eksport.</span><span class="sxs-lookup"><span data-stu-id="d3320-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
+- <span data-ttu-id="eede0-107">Denne funksjonen støtter arbeid med både medfølgende og egendefinerte enheter.</span><span class="sxs-lookup"><span data-stu-id="eede0-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
+- <span data-ttu-id="eede0-108">Du kan importere fra filer, og hvis du bruker en ODBC-datakilde, kan du velge en spørring til bruk for å definere importen.</span><span class="sxs-lookup"><span data-stu-id="eede0-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
+- <span data-ttu-id="eede0-109">Du må ha tidligere definerte kildedataformater for AX eller Fil, og vite hvor de befinner seg.</span><span class="sxs-lookup"><span data-stu-id="eede0-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
+- <span data-ttu-id="eede0-110">Du trenger ikke å opprette en behandlingsgruppe for å bruke hurtigimport/-eksport. Systemet oppretter en automatisk når du import- eller eksportjobben utføres.</span><span class="sxs-lookup"><span data-stu-id="eede0-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="eede0-111">Du kan også velge å beholde historikken over dataene som importeres med hurtigimport/-eksport.</span><span class="sxs-lookup"><span data-stu-id="eede0-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
 
-  <span data-ttu-id="d3320-112">Vær oppmerksom på at hurtigimport/-eksport forutsetter at du er kjent med DIXF-konseptet.</span><span class="sxs-lookup"><span data-stu-id="d3320-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
+  <span data-ttu-id="eede0-112">Vær oppmerksom på at hurtigimport/-eksport forutsetter at du er kjent med DIXF-konseptet.</span><span class="sxs-lookup"><span data-stu-id="eede0-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
 
 
 

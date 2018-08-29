@@ -1,5 +1,5 @@
 ---
-title: WebSearchAX avsluttes
+title: "Siden WebSearchAX har utgått"
 description: "Vi har avsluttet WebSearchAX-siden. Vi anbefaler at du bruker områdesøk fra favorittsøkemotoren for å erstatte den."
 author: margoc
 manager: AnnBe
@@ -18,23 +18,23 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 59e45f504fbe484f3eb842e3d6a6bbfc4fe0e50f
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 8c2375ee1dec3e816dbec19130733ebb2aac0fc3
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="websearchax-retired"></a><span data-ttu-id="b8744-104">WebSearchAX avsluttes</span><span class="sxs-lookup"><span data-stu-id="b8744-104">WebSearchAX retired</span></span>
+# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="bda9f-104">Siden WebSearchAX har utgått</span><span class="sxs-lookup"><span data-stu-id="bda9f-104">WebSearchAX page has been retired</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b8744-105">Vi har avsluttet WebSearchAX-siden.</span><span class="sxs-lookup"><span data-stu-id="b8744-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="b8744-106">Vi anbefaler at du bruker områdesøk fra favorittsøkemotoren for å erstatte den.</span><span class="sxs-lookup"><span data-stu-id="b8744-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="b8744-107">For eksempel:</span><span class="sxs-lookup"><span data-stu-id="b8744-107">For example:</span></span> 
+<span data-ttu-id="bda9f-105">Vi har avsluttet WebSearchAX-siden.</span><span class="sxs-lookup"><span data-stu-id="bda9f-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="bda9f-106">Vi anbefaler at du bruker områdesøk fra favorittsøkemotoren for å erstatte den.</span><span class="sxs-lookup"><span data-stu-id="bda9f-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="bda9f-107">For eksempel:</span><span class="sxs-lookup"><span data-stu-id="bda9f-107">For example:</span></span> 
 
-<span data-ttu-id="b8744-108">site:technet.microsoft.com dynamics ax 2012 "søkeord"</span><span class="sxs-lookup"><span data-stu-id="b8744-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="bda9f-108">site:technet.microsoft.com dynamics ax 2012 "søkeord"</span><span class="sxs-lookup"><span data-stu-id="bda9f-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="b8744-109">- eller -</span><span class="sxs-lookup"><span data-stu-id="b8744-109">-or-</span></span>
+<span data-ttu-id="bda9f-109">- eller -</span><span class="sxs-lookup"><span data-stu-id="bda9f-109">-or-</span></span>
 
-<span data-ttu-id="b8744-110">site:msdn.microsoft.com dynamics ax 2012 "søkeord"</span><span class="sxs-lookup"><span data-stu-id="b8744-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
+<span data-ttu-id="bda9f-110">site:msdn.microsoft.com dynamics ax 2012 "søkeord"</span><span class="sxs-lookup"><span data-stu-id="bda9f-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
 
 
