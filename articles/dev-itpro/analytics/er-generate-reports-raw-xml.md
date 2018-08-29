@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>Generere ER-rapporter ved å legge til innhold som rå XML
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generere rapporter ved å legge til innhold som rå XML
 
 [!include[banner](../includes/banner.md)]
 
 Du kan bruke det nye **rå XML**-formatelementet til å utforme elektronisk rapportering (ER)-formater som genererer utgående dokumenter i XML-format. I noen tilfeller kan det hende at du vil legge til rå XML-data i disse rapportene av én eller flere av følgende årsaker:
 
-- Det er enklere å bruke rå XML for den opprinnelige utformingen og pågående vedlikehold for en rapport, fordi XML-strukturen kan genereres automatisk ved å kjøre et uttrykk i kjøretid. Derfor må ikke flere bindinger fastslås for flere formatelementer under utformingen. Det er mulig når datakildene du bruker, inneholder informasjon som kan brukes til å lage XML-elementer mens rapporten genereres. 
+- Det er enklere å bruke rå XML for den opprinnelige utformingen og pågående vedlikehold for en rapport, fordi XML-strukturen kan genereres automatisk ved å kjøre et uttrykk i kjøretid. Derfor må ikke flere bindinger fastslås for flere formatelementer under utformingen. Det er mulig når datakildene du bruker, inneholder informasjon som kan brukes til å lage XML-elementer mens rapporten genereres.
 - Ingen annen metode kan brukes til å fylle ut rapporten med XML-innhold som allerede er mottatt og lagret i systemet. XML-svaret som genereres må eksempelvis kanskje inneholde innholdet i en XML-forespørsel som ble sendt tidligere.
 - Ingen annen metode kan brukes til å sette inn tegn i det genererte dokumentet basert på deres numeriske koder. Kodene for denne typen finnes ikke for noen språk og tegn. Eksempler er gresk bokstav rho (ρ) og HTML-enhetskoder som \&eacute; for en *e* med en akutt aksent (é).
 

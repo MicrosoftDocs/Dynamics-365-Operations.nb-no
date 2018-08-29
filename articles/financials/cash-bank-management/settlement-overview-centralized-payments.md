@@ -1,16 +1,16 @@
 ---
 title: Oversikt over utligning for sentraliserte betalinger
-description: "Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Dette eliminerer behovet for å legge inn den samme transaksjonen i flere juridiske enheter, og sparer tid ved å strømlinjeforme betalingsforslagsprosessen, utligningsprosessen, redigering av åpne transaksjoner og redigering av lukkede transaksjoner for sentraliserte betalinger."
+description: Dette emnet beskriver utligning for sentrale betalinger for Microsoft Dynamics 365 for Finance and Operations.
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -35,8 +35,8 @@ Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrer
 Når en kunde- eller leverandørbetaling blir lagt inn i en juridisk enhet og blir utlignet mot en faktura som ble lagt inn i en annen juridisk enhet, blir den nødvendige utligningen, forfall til- og forfall fra-transaksjonene generert automatisk for hver juridiske enhet. Det blir opprettet en utligningspost for hver kombinasjon av faktura og betaling i transaksjonen. Hver utligningspost blir tilordnet et nytt bilagsnummer, som er basert på betalingsbilag-nummerserien som er angitt på siden **Kundeparametere** for kunder og siden **Leverandørparametere** for leverandører. 
 
 Hvis det blir generert tilleggsutligningsposter for rabatter, revalueringer av utenlandsk valuta, øredifferanser, overbetalinger eller underbetalinger, blir de tilordnet den seneste datoen på betalings- eller fakturatransaksjonen. Hvis utligningen skjer etter at betalingen er postert, bruker utligningspostene den utligningsposteringsdatoen som er angitt på siden **Utlign åpne transaksjoner**.
-Posteringstyper, transaksjonstyper og standardbeskrivelser
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Posteringstyper, transaksjonstyper og standardbeskrivelser
 
 Konsernintern utligning av bilagstransaksjoner bruker posteringstypen utligning mellom firmaer, konsernintern kundeutligning og transaksjonstypene konsernintern leverandørutligning. Du kan definere informasjon for transaksjonstypen på siden **Standardbeskrivelser**. 
 
@@ -50,8 +50,7 @@ Følgende transaksjonstyper er tilgjengelige for bruk i utligninger for enkeltfi
 
 Du kan også definere standardbeskrivelser for bilagene for utligning på tvers av firmaer.
 
-<a name="currency-exchange-gains-or-losses"></a>Valutakursgevinst eller -tap
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Valutakursgevinst eller -tap
 
 Valutakursen som brukes for kunde- og leverandørtransaksjoner blir lagret med transaksjonen. Realiserte gevinster eller tap av valutakurser blir postert til den juridiske enheten for fakturaen eller den juridiske enheten for betalingen, avhengig av hvilket alternativ som er valgt i feltet **Poster valutakursgevinst eller -tap** på **Konserninternt regnskap**-siden for den juridiske enheten for betalingen. Følgende eksempler bruker disse valutaene:
 -   Regnskapsvaluta for betaling: EUR
@@ -59,7 +58,7 @@ Valutakursen som brukes for kunde- og leverandørtransaksjoner blir lagret med t
 -   Transaksjonsvaluta for betaling: DKK
 -   Transaksjonsvaluta for faktura: CAD
 
-#### <a name="currency-calculations"></a>Valutaberegninger
+### <a name="currency-calculations"></a>Valutaberegninger
 
 Når du utligner en faktura som er lagt inn i en juridisk enhet med en betaling som er lagt inn i en annen juridisk enhet, blir transaksjonsvalutaen for betalingen (DKK) omregnet i tre trinn:
 1.  Omregnet til regnskapsvalutaen for betalingen (EUR) med valutakursene fra den jurdiske enheten for betalingen.
@@ -75,17 +74,15 @@ Når siden **Utlign åpne transaksjoner** blir åpnet fra en betalingsjournal de
 
 Resultatbetalingsbeløpet blir overført til betalingsjournallinjen når du lukker siden **Utlign åpne transaksjoner**.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Postere gevinst eller tap på grunn av ulike regnskapsvalutaer
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Postere gevinst eller tap på grunn av ulike regnskapsvalutaer
 
 Hvis det finnes valutakursgevinst eller -tap, blir gevinsten eller tapet postert til den juridiske enheten som er angitt for feltet **Poster valutakursgevinst eller -tap** på siden **Konserninternt regnskap**  for den juridiske enheten for betalingen. Gevinst- eller tapsbeløpet blir omregnet til regnsapsvalutaen for den juridiske enheten det gevinst- eller tapsbeløpet blir postert, med valutakursen som er definert for den juridiske enheten.
 
-<a name="cash-discounts"></a>Kontantrabatt
---------------
+## <a name="cash-discounts"></a>Kontantrabatt
 
 Kontantrabatter som genereres under utligningsprosessen mellom firmaer, blir postert enten til den juridiske enheten for fakturaen eller den juridiske enheten for betalingen, avhengig av hvilket alternativ som er valgt i feltet **Poster kontantrabatt** på **Konserninternt regnskap**-siden for den juridiske enheten for betalingen. En tilsvarende utligningstransaksjon blir generert i den juridiske enheten for fakturaen.
 
-<a name="overpayments-and-underpayments"></a>Overbetalinger og underbetalinger
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Overbetalinger og underbetalinger
 
 Toleranse for overbetalinger/underbetalinger og øredifferanse blir bestemt basert på den juridiske enheten til betalingen av overbetalingene, og på den juridiske enheten til fakturaen av underbetalingene. Posteringskontoen som brukes, avhenger av innstillingen i feltet **Håndtering av kontantrabatt** på **Kundeparametere**-siden for kunder, og feltet **Håndtering av kontantrabatt** på  **Leverandørparametere**-siden for leverandører.
 
@@ -112,9 +109,4 @@ For leverandørbetalinger bruker forfall til- og forfall fra-transaksjonene i de
 
 ## <a name="withholding-tax"></a>Kildeskatt
 Leverandørkontoen som er knyttet til fakturaen, brukes til å bestemme om kildeskatt skal beregnes. Hvis det brukes kildeskatt, blir den beregnet i den juridiske enheten som er knyttet til fakturaen. Hvis de juridiske enhetene bruker forskjellige valutaer, brukes valutakursen fra den juridiske enheten som er knyttet til fakturaen.
-
-
-
-
-
 

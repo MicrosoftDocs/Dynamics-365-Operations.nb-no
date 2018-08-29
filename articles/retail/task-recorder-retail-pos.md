@@ -1,5 +1,5 @@
 ---
-title: Oppgaveopptaker og hjelp for salgssted
+title: Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 description: Dette emnet beskriver hvordan du bruker oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted.
 author: mugunthanm
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 12aa71843fa8b22eb7ae688ed3600168760d90da
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 0077bac6eef5c4b4925c9464d47a1297aa1177e4
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="task-recorder-and-help-for-pos"></a>Oppgaveopptaker og hjelp for salgssted
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ Dette emnet beskriver hvordan du bruker oppgaveopptaker i moderne salgssted for 
 <a name="overview"></a>Oversikt
 --------
 
-Oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptak-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
+Oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptaker-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
 
 ## <a name="architecture"></a>Arkitektur
 Oppgaveopptaker kan registrere brukerhandlinger i klienten med nøyaktig gjengivelse. Hver kontroll er utstyrt for å varsle Oppgaveopptaker om utførelsen av en handling. Kontrollen varsler Oppgaveopptaker om at en hendelse oppstod og sender all relevant informasjon om den aktuelle brukerhandlingen i sanntid. Ved hjelp av denne informasjonen kan Oppgaveregistrering registrere typen brukerhandling (for eksempel en knapp klikkes, verdiregistrering eller navigasjon) og eventuelle data som er knyttet til handlingen (for eksempel inndataverdien og typen, skjemakontekst eller postkontekst). Oppgaveopptaker behandler informasjonen detaljert nok til å sikre at en avspilling av opptaket kan utføre de registrerte handlingene nøyaktig slik brukeren har utført dem. (Avspillingsfunksjonen er ennå ikke implementert i Moderne salgssted for detaljhandel eller Skybasert salgssted.)

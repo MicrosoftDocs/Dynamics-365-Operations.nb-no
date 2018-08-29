@@ -1,5 +1,5 @@
 ---
-title: Konfigurere og behandle bilder for moderne salgssted for detaljhandel
+title: Konfigurere og behandle bilder for Retail Modern POS (MPOS)
 description: Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurere og behandle bilder for moderne salgssted for detaljhandel
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og behandle bilder for Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
@@ -48,11 +48,11 @@ Bildene som vises i moderne salgssted for detaljhandel (MPOS) må være vertsbas
 
 1.  Klikk på **Detaljhandell** &gt; **Katalogadministrasjon** &gt; **Katalogbilder**.
 2.  På siden **Katalogbilder**, i handlingsruten klikker du **Definer mal for medier**. I dialogboksen **Definer mal for medier** i feltet **Enhet** skal **Katalog** være valgt som standard.
-3.  På **Mediebane** hurtigfanen angir du gjenstående banen til bildeplasseringen. media banen Støtter **Støtter** som en variabel. For demodataene, kan du for eksempel opprette en **Kataloger** mappe for alle katalogbilder under Primær URL-adresse for media for media-serveren (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Du kan deretter har en mappe for hvert språk, for eksempel en-US eller fr-FR, og kopierer de riktige bildene under hver mappe. Hvis du ikke har forskjellige bilder for ulike språk, kan du hoppe over den **LanguageID** variabelen fra mappestrukturen og peke direkte til mappen kataloger som inneholder katalogbildene. **Obs!** Den gjeldende versjonen av Dynamics 365 for Retail støtter **{LanguageId}**-token for katalog-, produkt- og kategorienheter. (Den **{LanguageID}** token støttes ikke for kunde- og arbeiderenheter, i henhold til den eksisterende standarden som er effektive siden Microsoft Dynamics AX 6.x.)
+3.  På **Mediebane** hurtigfanen angir du gjenstående banen til bildeplasseringen. media banen Støtter **Støtter** som en variabel. For demodataene kan du for eksempel opprette en **Kataloger**-mappe for alle katalogbilder under primær URL-adresse for media for mediaserveren (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Du kan deretter har en mappe for hvert språk, for eksempel en-US eller fr-FR, og kopierer de riktige bildene under hver mappe. Hvis du ikke har forskjellige bilder for ulike språk, kan du hoppe over den **LanguageID** variabelen fra mappestrukturen og peke direkte til mappen kataloger som inneholder katalogbildene. **Obs!** Den gjeldende versjonen av Dynamics 365 for Retail støtter **{LanguageId}**-token for katalog-, produkt- og kategorienheter. (Den **{LanguageID}** token støttes ikke for kunde- og arbeiderenheter, i henhold til den eksisterende standarden som er effektive siden Microsoft Dynamics AX 6.x.)
 4.  For bilder er filnavnformatet hardkodet til katalognavnet og kan ikke endres. Derfor gi nytt navn til bildene slik at de har riktig katalog-navn, for å garantere at MPOS behandler dem på riktig måte.
 5.  I feltet **Filtype** velger du den forventede filtypen, avhengig av hvilken type bilder du har. For eksempel for demodataene er katalogen bildene satt til filtypen JPG. (Bildefilene har også endret navn slik at de har katalognavnene.)
 6.  Klikk **OK**.
-7.  For å validere at mediemalen for bilder er lagret på riktig måte, på siden **Katalogbilder** klikker du **Definer mal for medier** på nytt. For å validere malen uten å lukke **Definer mal for medier** dialogboksen kan du bruke **Generer bilde-URL-adresser for Excel** hurtigkategorien. Kontroller utseendet på bilde-URL-en, og kontroller at URL-adressen er i samsvar med standard malen som ble nevnt tidligere. Den **Definer mal for medier** dialogboksen har nå definert bildebanen implisitt for alle katalogbilder som bruker denne felles URL-banen. Denne URL-adressen gjelder for alle bilder i katalogen med mindre de overskrives. Den første delen av bildebanen hentes fra Primær URL-adresse for media som du definerte i Kanalprofilen. Den gjenstående delen av banen, hentes fra banen som du definerte i malen for mediet. De to delene slås sammen for å gi fullstendig URL-adressen til bildeplasseringen. En katalog i demodataene kalles for eksempel Fabrikam Base Catalog. Bildenavnet må derfor være Fabrikam Base Catalog.jpg slik at den bruker katalognavnet og JPG-filtypen som er konfigurert i malen. I så fall etter sammenkobling blir URL-adressen https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  For å validere at mediemalen for bilder er lagret på riktig måte, på siden **Katalogbilder** klikker du **Definer mal for medier** på nytt. For å validere malen uten å lukke **Definer mal for medier** dialogboksen kan du bruke **Generer bilde-URL-adresser for Excel** hurtigkategorien. Kontroller utseendet på bilde-URL-en, og kontroller at URL-adressen er i samsvar med standard malen som ble nevnt tidligere. Den **Definer mal for medier** dialogboksen har nå definert bildebanen implisitt for alle katalogbilder som bruker denne felles URL-banen. Denne URL-adressen gjelder for alle bilder i katalogen med mindre de overskrives. Den første delen av bildebanen hentes fra Primær URL-adresse for media som du definerte i Kanalprofilen. Den gjenstående delen av banen, hentes fra banen som du definerte i malen for mediet. De to delene slås sammen for å gi fullstendig URL-adressen til bildeplasseringen. En katalog i demodataene kalles for eksempel Fabrikam Base Catalog. Bildenavnet må derfor være Fabrikam Base Catalog.jpg slik at den bruker katalognavnet og JPG-filtypen som er konfigurert i malen. I dette tilfellet vil URL-adressen være https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam etter sammenkobling.
 8.  Kjør synkroniseringsjobbene for å overføre den nye malen til kanaldatabasen, slik at MPOS kan bruke malen til å få tilgang til bildene.
 9.  Hvis du vil oppdatere media malen for katalogbilder på kanalsiden, må du huske å kjøre **Catalog Job 1150** fra **IT for detaljhandel** &gt; **Distribusjonsplan**.[![Katalog1](./media/catalog1.png)](./media/catalog1.png)
 

@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,16 +33,23 @@ Dette emnet inneholder en liste over hjelpeemner og andre ressurser for økonomi
 
 Velg et funksjonsområde du vil finne ut mer om.
 
-:::row::: :::column::: - [Leverandører](accounts-payable/accounts-payable.md) 
-        - [Kunder](accounts-receivable/accounts-receivable.md)
+:::row:::
+    :::column:::
+        - [Leverandør](accounts-payable/accounts-payable.md) 
+        - [Kunde](accounts-receivable/accounts-receivable.md)
         - [Budsjettering](budgeting/budgeting-overview.md) 
         - [Kontant- og bankbehandling](cash-bank-management/cash-bank-management.md)
-        - [Kostnadsregnskap](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Reiseregning](expense-management/expense-management.md)
+        - [Kostnadsregnskap](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Reiseregning](expense-management/expense-management.md)
         - [Finansrapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anleggsmidler](fixed-assets/fixed-assets.md)
         - [Økonomimodul](general-ledger/general-ledger.md) 
         - [Prosjektstyring](project-management/overview-project-management-accounting.md)
-        - [Offentlig sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Offentlig sektor](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Tilleggsressurser

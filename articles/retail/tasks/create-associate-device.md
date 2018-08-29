@@ -1,5 +1,5 @@
 --- 
-title: " Opprette og tilknytte en enhet"
+title: Opprette enheter og knytte dem til registre
 description: "Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et register."
 author: jashanno
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7df1111a00fc8ad7f684075fb772b1e33916b687
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-and-associate-a-device"></a> Opprette og tilknytte en enhet
+# <a name="create-devices-and-associate-them-with-registers"></a>Opprette enheter og knytte dem til registre
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

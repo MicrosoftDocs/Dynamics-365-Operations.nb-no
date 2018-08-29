@@ -1,5 +1,5 @@
 ---
-title: "Dele opp genererte filer basert på filstørrelse og innholdsmengde"
+title: "Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde"
 description: "Dette emnet gir informasjon om deling av genererte filer basert på filstørrelsen og innholdselementmengden."
 author: NickSelin
 manager: AnnBe
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: afdf5b2596af7641182be50ced8159967164b115
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -49,5 +49,4 @@ Hvis du vil vite mer om denne funksjonen, spiller du av oppgaveveiledningen **ER
 [Mål for elektronisk rapportering](electronic-reporting-destinations.md)
 
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
-
 

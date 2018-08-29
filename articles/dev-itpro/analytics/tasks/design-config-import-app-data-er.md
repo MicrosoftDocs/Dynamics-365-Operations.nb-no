@@ -1,5 +1,5 @@
 --- 
-title: "Utforme konfigurasjoner for å analysere innkommende dokumenter for programdataoppdateringer (ER)"
+title: "Utforme ER-konfigurasjoner til å analysere innkommende dokumenter"
 description: "Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 96c9397c6a83d61b679492f66f4aa6661f1f8621
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Utforme konfigurasjoner for å analysere innkommende dokumenter for programdataoppdateringer (ER)
+# <a name="design-er-configurations-to-parse-incoming-documents"></a>Utforme ER-konfigurasjoner til å analysere innkommende dokumenter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,7 +30,7 @@ Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigu
 
 Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig eller Utvikler av elektronisk rapportering. 
 
-Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Før du begynner, må du laste ned og lagre filene i emnet "Analysere innkommende dokumenter for å oppdatere programdata" (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filene er: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Før du begynner laster du ned og lagrer filene i emnet, "Analysere innkommende dokumenter for å oppdatere programdata" (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filene er: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Kontroller at konfigurasjonsleverandøren for eksempelfirmaet "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".  

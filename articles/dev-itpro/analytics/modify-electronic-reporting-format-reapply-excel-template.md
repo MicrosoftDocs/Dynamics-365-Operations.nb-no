@@ -1,5 +1,5 @@
 ---
-title: "Endre et format for elektronisk rapportering ved å bruke en Microsoft Excel-mal på nytt"
+title: "Endre formater for elektronisk rapportering ved å bruke Excel-maler"
 description: "Dette emnet inneholder informasjon om hvordan du kan endre formatet for elektronisk rapportering (ER) som brukes til å generere forretningsdokumenter ved å bruke en endret Excel-mal."
 author: NickSelin
 manager: AnnBe
@@ -19,13 +19,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: fca7fb75b965886c2ebc06b12940434f2ffc2543
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8707f7b184bb66648edd0e48672c5514a0a5caf1
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Endre et format for elektronisk rapportering ved å bruke en Microsoft Excel-mal på nytt
+# <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Endre formater for elektronisk rapportering ved å bruke Excel-maler
 
 [!include [banner](../includes/banner.md)]
 

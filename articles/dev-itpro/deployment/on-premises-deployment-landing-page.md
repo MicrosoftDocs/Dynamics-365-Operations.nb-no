@@ -1,9 +1,9 @@
 ---
-title: Lokal distribusjon
+title: Startside for lokale distribusjoner
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: kfend
 manager: AnnBe
-ms.date: 03/15/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="on-premises-deployment-home-page"></a>Startside for lokal
+# <a name="on-premises-deployments-home-page"></a>Startside for lokale distribusjoner
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,6 +61,6 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). N
 - [Feilsøke Dynamics 365 for Finance and Operations lokalt](troubleshoot-on-prem.md)
 - [Funksjoner som ikke er implementert i lokale distribusjoner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Utgåtte funksjoner](../migration-upgrade/deprecated-features.md)
-- [Policy for programvarelivssyklus og liste over versjoner](../migration-upgrade/versions-update-policy.md)
+- [Policy og lokale versjoner for programvarelivssyklus](../migration-upgrade/on-prem-version-update-policy.md)
  
 

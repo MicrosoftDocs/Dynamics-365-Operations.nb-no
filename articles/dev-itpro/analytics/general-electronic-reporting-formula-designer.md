@@ -1,5 +1,5 @@
 ---
-title: Formeldesigner i elektronisk rapportering
+title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
+# <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ Under kjøring returnerer <strong>Etikett</strong>- og <strong>Beskrivelse</stro
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Følgende illustrasjon viser resultatet når det utformede formatet kjøres.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Basert på språkinnstillingene for de overordnede FILE- og FOLDER-formatelementene, angis oversatt tekst for etiketter og beskrivelser i utdataene i ER-formatet.</blockquote>
+<blockquote>[!NOTE] Basert på språkinnstillingene for de overordnede FILE- og FOLDER-formatelementene, angis oversatt tekst for etiketter og beskrivelser i utdataene i ER-formatet.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Følgende illustrasjon viser resultatet når det justerte formatet kjøres.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Grensen gjelder ikke for det siste elementet i den originale listen siden verdien (11) av grensekilden (vekt) overskrider den definerte grensen (9). Bruk enten funksjonen <strong>WHERE</strong> eller <strong>Aktivert</strong>-uttrykket for det tilsvarende formatelementet for å ignorere (hoppe over) underordnede lister ved rapportgenerering, om nødvendig.</blockquote>
+<blockquote>[!NOTE] Grensen gjelder ikke for det siste elementet i den originale listen siden verdien (11) av grensekilden (vekt) overskrider den definerte grensen (9). Bruk enten funksjonen <strong>WHERE</strong> eller <strong>Aktivert</strong>-uttrykket for det tilsvarende formatelementet for å ignorere (hoppe over) underordnede lister ved rapportgenerering, om nødvendig.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 | NUMBERVALUE (streng, desimaltegn, skilletegn for siffergruppering) | Konverter den angitte strengen til et tall. Det angitte desimalskilletegnet brukes mellom heltallet og delene av et desimaltall. Den angitte skilletegnet for siffergruppering brukes som tusenskilletegn. | **NUMBERVALUE("1 234,56", ",", " ")** returnerer verdien **1234.56**. |
 | VALUE (streng) | Konverter den angitte strengen til et tall. Komma og punktum-tegn (.) regnes som desimalskilletegn, og en foranstilt bindestrek (-) brukes som negativt fortegn. Iverksett et unntak hvis den angitte strengen inneholder andre ikke-numeriske tegn. | **VALUE ("1 234,56")** genererer et unntak. |
 | ROUND (tall, desimaler) | Returnerer det angitte tallet etter det er avrundet til angitt antall desimaler:<ul><li>Hvis verdien for **desimal**-parameteren er større enn 0 (null), avrundes det angitte tallet til så mange desimalplasser.</li><li>Hvis verdien for **desimal**-parameteren er **0** (null), avrundes det angitte tallet til nærmeste heltall.</li><li>Hvis verdien for **desimal**-parameteren er mindre enn 0 (null), avrundes det angitte tallet til venstre for desimalpunktet.</li></ul> | **ROUND (1200.767, 2)** avrunder til to desimalplasser og returnerer **1200.77**. **ROUND (1200.767, -3)** avrunder til nærmeste multiplum av 1 000, og returnerer **1000**. |
-| ROUNDDOWN (tall, desimaler) | Returnerer det angitte tallet etter det er avrundet ned til angitt antall desimaler.<blockquote>[!NOTE]<br>Denne funksjonen fungerer som **ROUND**, men den avrunder alltid ned det angitte tallet (mot null).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrunder ned til to desimalplasser og returnerer **1200.76**. **ROUNDDOWN (1700.767, -3)** avrunder ned til nærmeste multiplum av 1 000, og returnerer **1000**. |
-| ROUNDUP (tall, desimaler) | Returnerer det angitte tallet etter det er avrundet opp til angitt antall desimaler.<blockquote>[!NOTE]<br>Denne funksjonen fungerer som **ROUND**, men den avrunder alltid opp det angitte tallet (bort fra null).</blockquote> | **ROUNDUP (1200.763, 2)** avrunder opp til to desimalplasser og returnerer **1200.77**. **ROUNDUP (1200.767, -3)** avrunder opp til nærmeste multiplum av 1 000, og returnerer **2000**. |
+| ROUNDDOWN (tall, desimaler) | Returnerer det angitte tallet etter det er avrundet ned til angitt antall desimaler.<blockquote>[!NOTE] Denne funksjonen fungerer som **ROUND**, men den avrunder alltid ned det angitte tallet (mot null).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrunder ned til to desimalplasser og returnerer **1200.76**. **ROUNDDOWN (1700.767, -3)** avrunder ned til nærmeste multiplum av 1 000, og returnerer **1000**. |
+| ROUNDUP (tall, desimaler) | Returnerer det angitte tallet etter det er avrundet opp til angitt antall desimaler.<blockquote>[!NOTE] Denne funksjonen fungerer som **ROUND**, men den avrunder alltid opp det angitte tallet (bort fra null).</blockquote> | **ROUNDUP (1200.763, 2)** avrunder opp til to desimalplasser og returnerer **1200.77**. **ROUNDUP (1200.767, -3)** avrunder opp til nærmeste multiplum av 1 000, og returnerer **2000**. |
 
 ### <a name="data-conversion-functions"></a>Datakonversjonsfunksjoner
 
@@ -474,8 +474,8 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 
 | Funksjon | beskrivelse | Eksempel |
 |----------|-------------|---------|
-| NULLCONTAINER (liste) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten.<blockquote>[!NOTE]<br>Denne funksjonen er foreldet. Bruk **EMPTYRECORD** i stedet.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
-| EMPTYRECORD (post) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten.<blockquote>[!NOTE]<br>En **null**-post er en post der alle felt har en tom verdi. En tom verdi er **0** (null) for tall, en tom streng for strenger og så videre.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
+| NULLCONTAINER (liste) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten.<blockquote>[!NOTE] Denne funksjonen er foreldet. Bruk **EMPTYRECORD** i stedet.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
+| EMPTYRECORD (post) | Returner en **null**-post som har samme struktur som den angitte postlisten eller posten.<blockquote>[!NOTE] En **null**-post er en post der alle felt har en tom verdi. En tom verdi er **0** (null) for tall, en tom streng for strenger og så videre.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny, tom post som har samme struktur som listen som returneres av **SPLIT**-funksjonen. |
 
 ### <a name="text-functions"></a>Tekstfunksjoner
 
@@ -522,14 +522,14 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <td>CHAR (tall)</td>
 <td>Returner strengen av tegn som refereres av det angitte Unicode-tallet.</td>
 <td><strong>CHAR (255)</strong> returnerer <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Strengen som denne funksjonen returnerer, avhenger av kodingen som er valgt i det overordnede FIL-formatelementet. Listen over kodinger finner du her <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kodingsklasse</a>.</blockquote>
+<blockquote>[!NOTE] Strengen som denne funksjonen returnerer, avhenger av kodingen som er valgt i det overordnede FIL-formatelementet. Listen over kodinger finner du her <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kodingsklasse</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (streng 1 [, streng 2, …])</td>
 <td>Returner alle angitte tekststrenger etter de er satt sammen til én streng.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returnerer <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Uttrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer også <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Uttrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer også <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <p>&quot;Ingenting å skrive ut. Litware Retail-kunden stoppes for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapporten behandles for <strong>Litware Retail</strong>-kunden 17. desember 2015, i <strong>DE</strong>-kulturen og <strong>DE</strong>-språket, returnerer formelen følgende tekst som bruker et annet datoformat:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>Følgende syntaks brukes i ER-formler for etiketter:
+<blockquote>[!NOTE] Følgende syntaks brukes i ER-formler for etiketter:
 <ul>
 <li><strong>For etiketter fra Finance and Operations-ressurser:</strong> <strong>@&quot;X&quot;</strong>, der X er etikett-ID-en i applikasjonsobjekttreet (AOT)</li>
 <li><strong>For etiketter som ligger i ER-konfigurasjoner:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, der X er etikett-ID-en i ER-konfigurasjonen</li>
@@ -587,7 +587,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <tr>
 <td>NUMERALSTOTEXT (tall, språk, valuta, flagg for utskrift av valutanavn, desimaler)</td>
 <td>Returner det angitte tallet når det har blitt stavet (konvertert til tekststrenger) på det angitte språket. Språkkoden er valgfri. Når den er definert som en tom streng, brukes språkkoden for kjørekontekst. (Språkkoden for kjørekonteksten defineres for en genererende mappe eller fil.) Valutakoden er også valgfri. Når den er definert som en tom streng, brukes firmavalutaen.
-<blockquote>[!NOTE]<br>Parameteren <strong>Skriv ut valutanavn</strong> og parameteren <strong>Desimaler</strong> analyseres bare for følgende språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. I tillegg analyseres parameteren <strong>Skriv ut valutanavn</strong> bare for Finance and Operations-firmaer der land- eller områdekonteksten støtter navn for valutanedgang.</blockquote>
+<blockquote>[!NOTE] Parameteren <strong>Skriv ut valutanavn</strong> og parameteren <strong>Desimaler</strong> analyseres bare for følgende språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. I tillegg analyseres parameteren <strong>Skriv ut valutanavn</strong> bare for Finance and Operations-firmaer der land- eller områdekonteksten støtter navn for valutanedgang.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerer <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerer <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerer <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Når disse datakildene er definert, kan du bruke et uttrykk som <strong>FILTER (
 | Funksjon | beskrivelse | Eksempel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (beløp, kildevaluta, målvaluta, dato, firma) | Konverter det angitte pengebeløpet fra den angitte kildevalutaen til den angitte målvalutaen ved å bruke innstillingene for det aktuelle Finance and Operations-firmaet på den angitte datoen. | **CONVERTCURRENCY (1, "EUR", "NOK", TODAY(), "DEMF")** returnerer tilsvarende én euro i amerikanske dollar på gjeldende øktdato, basert på innstillingene for DEMF-firmaet. |
-| ROUNDAMOUNT (tall, desimaler, avrundingsregel) | Avrunder det angitte beløpet til det angitte antallet desimalplasser i henhold til den angitte avrundingsregelen.<blockquote>[!NOTE]<br>Avrundingaregelen må være angitt som en verdi av **RoundOffType**-opplistingen i Finance and Operations.</blockquote> | Hvis parameteren **model.RoundOff** er satt til **Downward**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.78**. Hvis parameteren **model.RoundOff** er satt til **Normal** eller **Avrundes opp**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.79**. |
+| ROUNDAMOUNT (tall, desimaler, avrundingsregel) | Avrunder det angitte beløpet til det angitte antallet desimalplasser i henhold til den angitte avrundingsregelen.<blockquote>[!NOTE] Avrundingaregelen må være angitt som en verdi av **RoundOffType**-opplistingen i Finance and Operations.</blockquote> | Hvis parameteren **model.RoundOff** er satt til **Downward**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.78**. Hvis parameteren **model.RoundOff** er satt til **Normal** eller **Avrundes opp**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere verdien **1000.79**. |
 | CURCredRef (sifre) | Returner en kreditorreferanse basert på sifrene i det angitte fakturanummeret. | **CURCredRef ("VEND-200002")** returnerer **"2200002"**. |
 | MOD\_97 (sifre) | Returner en kreditorreferanse som et MOD97-uttrykk basert på sifrene i det angitte fakturanummeret. | **MOD\_97 ("VEND-200002")** returnerer **"20000285"**. |
-| ISOCredRef (sifre) | Returner en ISO-kreditorreferanse (International Organization for Standardization) basert på sifrene og de alfabetiske symbolene i det angitte fakturanummeret.<blockquote>[!NOTE]<br>Inndataparameteren må oversettes før den sendes til denne funksjonen for å eliminere symboler fra bokstaver som ikke er ISO-kompatible.</blockquote> | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**. |
+| ISOCredRef (sifre) | Returner en ISO-kreditorreferanse (International Organization for Standardization) basert på sifrene og de alfabetiske symbolene i det angitte fakturanummeret.<blockquote>[!NOTE] Inndataparameteren må oversettes før den sendes til denne funksjonen for å eliminere symboler fra bokstaver som ikke er ISO-kompatible.</blockquote> | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (streng, tall) | Hent den spesifiserte ekstra finansdimensjons-ID-en. I **streng**-parameteren er dimensjoner representert som IDer atskilt med komma. **Tall**-parameteren definerer seriekoden for den forespurte dimensjonen i strengen. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerer **"CC"**. |
 | GetCurrentCompany () | Returner en tekstrepresentasjon av koden for den juridiske enheten (firma) som en bruker er logget på nå. | **GETCURRENTCOMPANY ()** returnerer **USMF** for en bruker som er logget på firmaet **Contoso Entertainment System USA** i Finance and Operations. |
 | CH\_BANK\_MOD\_10 (sifre) | Returner en kreditorreferanse som et MOD10-uttrykk basert på sifrene i det angitte fakturanummeret. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returnerer **3**. |

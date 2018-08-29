@@ -1,5 +1,5 @@
 ---
-title: Systemkrav og oppdateringspolicy for Dynamics 365 for Talent
+title: Systemkrav og oppdateringspolicy for Talent
 description: "Dette emnet viser kravene for Dynamics 365 for Talent. Oppdateringspolicyen blir også gjennomgått."
 author: rschloma
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 954f6237739defe14aaa13b19641f9f9d27b5fac
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 85318332b802aace7d705289e6a298b49799b847
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Systemkrav og oppdateringspolicy for Microsoft Dynamics 365 for Talent
+# <a name="talent-system-requirements-and-update-policy"></a>Systemkrav og oppdateringspolicy for Talent
 
 [!include [banner](includes/banner.md)]
 

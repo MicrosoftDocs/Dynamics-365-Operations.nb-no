@@ -1,5 +1,5 @@
 --- 
-title: "Endre modell og tilordning for å generere dokumenter med programdata"
+title: "Endre modeller og tilordninger for å generere dokumenter med programdata"
 description: "For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren \"ER generere dokumenter med oppdatering av programdata (del 2: generere dokumenter)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Endre modell og tilordning for å generere dokumenter med programdata
+# <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Endre modeller og tilordninger for å generere dokumenter med programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

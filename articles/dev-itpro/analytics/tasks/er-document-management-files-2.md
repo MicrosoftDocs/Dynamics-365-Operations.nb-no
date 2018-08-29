@@ -1,5 +1,5 @@
 --- 
-title: Utvide datamodell for bruk av dokumentbehandlingsfiler i formatutdata
+title: "Utvide datamodeller for å bruke dokumentbehandlingsfiler i ER-utdata"
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å bruke dokumentbehandlingsfiler (vedlegg) i ER-utdata."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bde8c612af22ba6bf4561732399fcf2cb1b5c9b3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs"></a>Utvide datamodell for bruk av dokumentbehandlingsfiler i formatutdata
+# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Utvide datamodeller for å bruke dokumentbehandlingsfiler i ER-utdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

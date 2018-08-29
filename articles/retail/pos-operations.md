@@ -1,5 +1,5 @@
 ---
-title: POS-operasjoner, tilkoblet og frakoblet
+title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 description: Dette emnet inneholder informasjon om POS-operasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-operations-online-and-offline"></a>POS-operasjoner, tilkoblet og frakoblet
+# <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
 [!include [banner](includes/banner.md)]
 

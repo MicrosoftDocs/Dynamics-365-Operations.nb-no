@@ -1,5 +1,5 @@
 --- 
-title: Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering (ER)
+title: Laste opp konfigurasjoner av elektronisk rapportering til Lifecycle Services
 description: "De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering (ER)
+# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Laste opp konfigurasjoner av elektronisk rapportering til Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
