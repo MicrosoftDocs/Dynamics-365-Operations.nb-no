@@ -1,5 +1,5 @@
 --- 
-title: "Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering (ER)"
+title: "Opprette konfigurasjonsleverandører og merke dem som aktive"
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan opprette en konfigurasjonsleverandør for elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering (ER)
+# <a name="create-configuration-providers-and-mark-them-as-active"></a>Opprette konfigurasjonsleverandører og merke dem som aktive
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

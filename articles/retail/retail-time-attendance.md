@@ -1,5 +1,5 @@
 ---
-title: Timeregistrering for detaljhandel
+title: "Administrere tid og fremmøte i Retail"
 description: "Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Timeregistrering for detaljhandel
+# <a name="time-and-attendance-management-in-retail"></a>Administrere tid og fremmøte i Retail
 
 [!include [banner](includes/banner.md)]
 
@@ -43,9 +43,9 @@ Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremm�
 
 ### <a name="plan-worker-schedules"></a>Planlegge tidsplaner for arbeidere
 
--   Bruk profiler ved hjelp av jobbplanleggeren. Hvis du vil ha mer informasjon, se <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
+-   Bruk profiler ved hjelp av jobbplanleggeren. Hvis du vil ha mer informasjon, kan du se <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Hvis du vil ha mer informasjon om konfigurasjonstrinnene, kan du se <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Detaljhandelsspesifikk konfigurasjon
 
@@ -135,7 +135,7 @@ En Dynamics 365 for Retail bruker følger arbeidsflyten for å beregne, godkjenn
 -   Masseutstempling
 -   Registrer fravær
 
-Hvis du vil ha mer informasjon om hvordan du behandler tids- og fremmøteregistreringer, se <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Hvis du vil ha mer informasjon om hvordan du behandler timeregistreringer, kan du se <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

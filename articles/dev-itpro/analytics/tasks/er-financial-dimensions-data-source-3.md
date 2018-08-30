@@ -1,5 +1,5 @@
 --- 
-title: "Utforme en rapport for å bruke finansdimensjoner som en datakilde for elektronisk rapportering (ER)"
+title: "Utforme rapporter for å bruke finansdimensjoner som datakilder"
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c67bf235f3514a19893bcefcaae6e3bb11bbb151
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 055401104ae62c75694dff0b2ee64d12b2621686
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-report-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Utforme en rapport for å bruke finansdimensjoner som en datakilde for elektronisk rapportering (ER)
+# <a name="design-reports-to-use-financial-dimensions-as-data-sources"></a>Utforme rapporter for å bruke finansdimensjoner som datakilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

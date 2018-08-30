@@ -1,5 +1,5 @@
 ---
-title: "Bruke oppslag for å finne informasjon"
+title: Finne informasjon ved hjelp av oppslag
 description: "I Microsoft Dynamics 365 for Finance and Operations har mange felt oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte."
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 013901724864092571099835b2c71b297710ff03
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Bruke oppslag for å finne informasjon
+# <a name="find-information-by-using-lookups"></a>Finne informasjon ved hjelp av oppslag
 
 [!include [banner](../includes/banner.md)]
 

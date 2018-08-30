@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Retail
+title: Velkommen til Dynamics 365 for Retail
 description: Startside for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -48,7 +48,7 @@ Kundebehov endrer seg hele tiden. Du må kunne holde tritt med endringene i kjø
 I tillegg har kunder mange alternativer for å skaffe seg det de ønsker, når de ønsker det, og til en pris de kan leve med. For å opprettholde kundelojaliteten, kan du bruke personlige varslinger og tilbud som gjør handling enklere.
 
 ## <a name="hardware-and-peripherals"></a>Maskinvare og eksterne enheter
-Moderne salgssted (MPOS) og Cloud POS for Retail kan bruke en rekke eksterne enheter for maskinvare. Både MPOS og Cloud POS tilbyr flere grensesnitts- og utviklingsalternativer som du kan bruke i dine ulike forretningsscenarier.
+Retail Modern point of sale (MPOS) og Cloud POS kan bruke en rekke eksterne enheter for maskinvare. Både MPOS og Cloud POS tilbyr flere grensesnitts- og utviklingsalternativer som du kan bruke i dine ulike forretningsscenarier.
 
 Simulatoren for eksterne enheter for Retail inkluderer en virtuell simulator og en POS-simulator. Den virtuelle simulatoren støtter hovedsakelig testing av scenarier som vanligvis krever eksterne enheter for et fysisk POS. Ved hjelp av POS-simulatoren kan du teste kompatibiliteten for fysiske eksterne enheter med Retail uten at du trenger å bruke POS-klienten.
 

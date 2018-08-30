@@ -10,9 +10,9 @@
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Distribuere et demomiljø
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
-            - name: Sammenligning av skyfunksjon og lokal funksjon
+            - name: Sammenligning av skyfunksjoner og lokale funksjoner
               href: get-started/cloud-prem-comparison.md
-            - name: Velge et distribusjonsalternativ
+            - name: Distribusjonsalternativer
               href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Skydistribusjon
@@ -23,7 +23,7 @@
                   href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
                 - name: Systemkrav for lokale distribusjoner
                   href: get-started/system-requirements-on-prem.md
-                - name: Lager for lokale distribusjoner
+                - name: Konfigurere lager for lokale distribusjoner
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
             - name: Standard og målrettede plattformversjoner
               href: get-started/public-preview-releases.md
@@ -44,11 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funksjoner som ikke er implementert i lokale distribusjoner
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations 8.0 (april 2018)
+            - name: Finance and Operations versjon 8.0 (april 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (mars 2018)
               href: get-started/whats-new-platform-update-15.md
-            - name: Lokale distribusjoner for 7.2 med Platform update 12 (mars 2018)
+            - name: 'Lokale distribusjoner av Finance and Operations, Enterprise edition 7.2 med Platform update  12 (mars 2018)'
               href: get-started/whats-new-LBD-PU12-App72.md
             - name: 'Finance and Operations, Enterprise edition 7.3'
               href: get-started/whats-new-application-7.3-update.md
@@ -82,7 +82,7 @@
               href: get-started/whats-new-changed-application-version-7-0-1-may-2016.md
             - name: Platform update 1 (mai 2016)
               href: get-started/whats-new-changed-platform-version-7-1-may-2016.md
-            - name: Dynamics AX 7.0 (februar 2016)
+            - name: AX 7.0 (februar 2016)
               href: get-started/whats-new-changed-7-0-february-2016.md
             - name: Oppdaterte oppgaveveiledninger
               items:
@@ -100,7 +100,7 @@
           items:
             - name: Tilgjengelighetsfunksjoner
               href: get-started/accessibility-features.md
-            - name: Vanlige spørsmål om klientbrukergrensesnittet
+            - name: Vanlige spørsmål om klient
               href: get-started/client-faq.md
             - name: Handlingssøk
               href: get-started/action-search.md
@@ -108,23 +108,23 @@
               href: get-started/advanced-filtering-query-options.md
             - name: Konfigurere og filtrere arbeidsområder
               href: get-started/configure-filter-workspaces.md
-            - name: Vise sider side ved side ved å bruke ikonet Åpne i nytt vindu
+            - name: Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
               href: get-started/display-pages-side-by-side.md
             - name: Hurtigtaster
               href: get-started/shortcut-keys.md
-            - name: Endre banner eller logo
+            - name: Endre bannerne eller logobildene for juridiske enheter
               href: get-started/tasks/change-banner-or-logo.md
             - name: Navigasjonssøk
               href: get-started/navigation-search.md
             - name: Tilpasse brukeropplevelsen
               href: get-started/personalize-user-experience.md
-            - name: Egendefinerte felt
+            - name: Opprette og arbeide med egendefinerte felt
               href: get-started/user-defined-fields.md
-            - name: Bygge inn PowerApps
+            - name: Bygge inn PowerApps-apper
               href: get-started/embed-power-apps.md
-            - name: Bruke oppslag for å finne informasjon
+            - name: Finne informasjon ved hjelp av oppslag
               href: get-started/use-lookups-to-find-information.md
-            - name: Endre datoen for økten
+            - name: Endre datoen for en økt
               href: organization-administration/tasks/change-date-session.md
             - name: Angi en brukers foretrukkede tidssone
               href: organization-administration/tasks/set-users-preferred-time-zone.md
@@ -132,9 +132,9 @@
               href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
         - name: Lese og kjøre dokumentasjonen
           items:
-            - name: Oversikt over Hjelp
+            - name: Hjelpesystem
               href: get-started/help-overview.md
-            - name: Koble til Hjelp
+            - name: Koble til hjelpesystemet
               href: get-started/help-connect.md
             - name: Vise og eksportere feltbeskrivelser
               href: get-started/view-export-field-descriptions.md
@@ -146,32 +146,32 @@
                   href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
             - name: Ordliste
               href: get-started/glossary.md
-        - name: Videoer for Dynamics 365 for Finance and Operations
+        - name: Videoer for Finance and Operations
           href: get-started/videos.md
-    - name: Forstå implementeringslivssyklusen
+    - name: Implementering av livssyklus for ressurs
       href: imp-lifecycle/implementation-lifecycle.md
       items:
         - name: Arkitektur for Finance and Operations
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack for Dynamics 365
+        - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
-        - name: Jobbintroduksjon
+        - name: Jobbintroduksjon for et implementeringsprosjekt
           href: imp-lifecycle/onboard.md
         - name: Klargjøre for aktivering
           href: imp-lifecycle/prepare-go-live.md
-        - name: Vanlige spørsmål for aktivering
+        - name: Vanlige spørsmål om aktivering
           href: imp-lifecycle/go-live-faq.md
         - name: Sende en serviceforespørsel
           href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-        - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure Active Directory-leiere'
+        - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure AD-leiere'
           href: get-started/subscription-overview.md
         - name: Flytte miljøer mellom datasentre
           href: get-started/move-environments-data-center.md
         - name: Flytte lisenser mellom avtaletyper
           href: get-started/move-licenses-between-agreement-types.md
-        - name: Flytte et LCS-implementeringsprosjekt til en annen Azure Active Directory-leier
+        - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
           href: get-started/move-lcs-implementation-project-tenant.md
-        - name: Implementere flere LCS-prosjekter og produksjonsmiljøer på samme Azure Active Directory-leier
+        - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Samsvar
       items:
@@ -345,10 +345,25 @@
                       href: ../supply-chain/sales-marketing/field-service-product.md
                     - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
-                    - name: "Synkronisere avtalefakturaer i\_Field Service til fritekstfakturaer i Finance and Operations"
+                    - name: Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Finance and Operations
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Bruke eksterne webtjenester
-              href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurere integrering av Project Service Automation
+                  href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
+                  items:
+                    - name: Parametere for integrering av Project Service Automation
+                      href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisere prosjektkontrakter og prosjekter
+                      href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisere prosjektoppgaver
+                      href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisere prosjektutgiftskategorier
+                      href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisere prosjektestimater fra og til prosjektprognoser
+                      href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisere faktiske prosjektdata til prosjektintegreringsjournalen
+                      href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
+                - name: Bruke eksterne webtjenester
+                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Databehandling
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -357,7 +372,7 @@
           items:
             - name: Prosjekter for konfigurasjonsdata
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
-            - name: Kopier konfigurasjonsdata mellom firmaer
+            - name: Kopiere konfigurasjonsdata mellom firmaer eller juridiske enheter
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Konfigurasjon av datapakker (bare versjon fra juli 2017)
@@ -383,9 +398,9 @@
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Dataenhetsegenskaper
               href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
-            - name: Opprette beregningskolonner og virtuelle felt
+            - name: Opprette beregnede kolonner og virtuelle felt
               href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/fin-and-ops/toc.json
-            - name: Virkemåte mellom firmaer
+            - name: Virkemåte på tvers av firmaer
               href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/fin-and-ops/toc.json
             - name: Behandle lands-/områdekoder
               href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/fin-and-ops/toc.json
@@ -462,12 +477,14 @@
               href: ../financials/accounts-payable/vendor-invoice-automation.md
             - name: Betalinger og utligninger
               items:
-                - name: Sentraliserte betalinger leverandører
+                - name: Sentraliserte betalinger for Leverandører
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Konfigurere utligning
                   href: ../financials/cash-bank-management/configure-settlement.md
                 - name: Arbeidsområde for leverandørbetalinger
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
+                - name: Angi en krysskurs
+                  href: ../financials/accounts-payable/specify-cross-rate.md
                 - name: Definere leverandørbetalingsgebyrer
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
                 - name: Definere leverandørbetalingsbetingelser
@@ -588,11 +605,11 @@
         - name: Budsjettering
           href: ../financials/budgeting/budgeting-overview.md
           items:
-            - name: 'Oversikt over budsjettplanlegging '
+            - name: Oversikt over budsjettplanlegging
               href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: 'Oversikt over budsjettkontroll '
+            - name: Oversikt over budsjettkontroll
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Oversikt over budsjettering  '
+            - name: 'Oversikt over budsjettering '
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Stillingsprognose
               href: ../financials/budgeting/position-forecasting.md
@@ -622,7 +639,7 @@
             - name: Kontantrabatter for overbetalinger
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
             - name: Oversikt over utligning
-              href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
+              href: ../financials/cash-bank-management/settlement-overview.md
             - name: Oversikt over utligning for sentraliserte betalinger
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Purringer
@@ -700,9 +717,11 @@
               href: ../financials/general-ledger/financial-dimensions.md
             - name: Kontostrukturer
               href: ../financials/general-ledger/Default-dimensions.md
+            - name: Legge til finansdimensjoner i CFO-arbeidsområdet
+              href: ../financials/general-ledger/CFO-workspace.md
             - name: Opprette kontostrukturer
               href: ../financials/general-ledger/tasks/create-account-structures.md
-            - name: 'Oversikt over budsjettering '
+            - name: Oversikt over budsjettering
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Opprette dimensjoner og importere dimensjonsmedlemmer
               href: ../financials/cost-accounting/cost-dimension.md
@@ -830,6 +849,8 @@
                   href: ../financials/fixed-assets/fixed-asset-integration.md
             - name: Avskrivningsmetoder
               items:
+                - name: Avskrivningskonvensjoner
+                  href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
                 - name: 125 % redusert saldoavskrivning
                   href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
                 - name: 150 % redusert saldoavskrivning
@@ -886,7 +907,7 @@
                   href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
                 - name: Definere bonusavskrivning
                   href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Definere avskrivningstablåer  '
+                - name: 'Definere avskrivningstablåer '
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
                 - name: Definere og opprette avskrivningsprofiler
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
@@ -915,7 +936,7 @@
                   href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
                 - name: Posteringsdefinisjoner
                   href: ../financials/general-ledger/posting-definitions.md
-                - name: 'Eksempler på posteringsdefinisjon  '
+                - name: 'Eksempler på posteringsdefinisjon '
                   href: ../financials/general-ledger/example-posting-definitions.md
                 - name: Kontosaldoer i økonomimodulen
                   href: ../financials/general-ledger/general-ledger-account-balances.md
@@ -995,10 +1016,12 @@
                   href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Revaluering av valuta i et konsolideringsfirma
                   href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
-                - name: Revaluering av utenlandsk valuta for finans
+                - name: Revaluering av utenlandsk valuta for økonomimodul
                   href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Importere valutakurser
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Ett bilag
+                  href: ../financials/general-ledger/one-voucher.md
             - name: Lukking av periodeslutt
               items:
                 - name: Lukke økonomimodulen ved periodeslutt
@@ -1141,7 +1164,7 @@
               href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
             - name: Finansrapporter for balanse
               href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: Generere en finansrapport
+            - name: Generer finansrapporter
               href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
             - name: Finansrapport for resultatregnskap
               href: ../financials/general-ledger/income-statement-financial-report.md
@@ -1149,13 +1172,13 @@
               href: ../financials/general-ledger/trial-balance-financial-reports.md
             - name: Vise finansrapporter
               href: ../financials/general-ledger/view-financial-reports.md
-            - name: Rapportutforming
+            - name: Grensesnitt for Rapportutforming
               href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-            - name: Brukerinnstillinger
+            - name: Brukerinnstillinger i Utforming av finansrapport
               href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Avanserte formateringsalternativer
               href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Organisere rapportkomponenter
+            - name: Organisere rapportkomponenter i rapportutforming
               href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Rapportdefinisjoner
               href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
@@ -1165,7 +1188,7 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Endre celler for raddefinisjon
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Tilbakestille data for finansrapportering etter gjenoppretting av en database
+            - name: Tilbakestille datatorg for finansrapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Lokalisering og forskriftsmessige funksjoner
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
@@ -1223,6 +1246,7 @@
                 - name: Vanlige spørsmål om mva-kundefakturaer
                   href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
             - name: India
+              href: ../financials/localizations/india.md
               items:
                 - name: Anleggsmidler
                   href: ../financials/localizations/apac-ind-fixed-assets.md
@@ -1268,6 +1292,7 @@
                 - name: Vanlige spørsmål om mva-terskler
                   href: ../financials/localizations/apac-ind-tax-thresholds.md
             - name: Japan
+              href: ../financials/localizations/japan.md
               items:
                 - name: Anskaffe et anleggsmiddel og gjøre krav om offentlig tilskudd
                   href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
@@ -1426,6 +1451,7 @@
                 - name: Bruke demonteringsliste for anleggsmidler
                   href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
             - name: Malaysia
+              href: ../financials/localizations/malaysia.md
               items:
                 - name: Generere kundekreditt for prosjektsalg
                   href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
@@ -1448,10 +1474,12 @@
                 - name: Definere GST-frigivelsesklausuler
                   href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
             - name: Singapore
+              href: ../financials/localizations/singapore.md
               items:
                 - name: Generer rapporten GST-05
                   href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
             - name: Thailand
+              href: ../financials/localizations/thailand.md
               items:
                 - name: Lagerkortrapporter
                   href: ../financials/localizations/apac-tha-stock-card-reports.md
@@ -1619,7 +1647,7 @@
                   href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstemmingsrapporter
                   href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Definere rapportering for betalingssaldo  '
+                - name: 'Definere rapportering for betalingssaldo '
                   href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Definer og vedlikehold PRODCOM
                   href: ../financials/localizations/emea-bel-prodcom-report.md
@@ -1744,7 +1772,7 @@
               items:
                 - name: Avskrivning for ekstraanskaffelser
                   href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: 'Revisjonsfil '
+                - name: Revisjonsfil
                   href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                   items:
                     - name: Tilpasse konfigurasjon av revisjonsfil
@@ -1759,7 +1787,7 @@
                   href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Journallisterapport
                   href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Definere elektronisk avgiftsdeklarering
+                - name: Definere elektroniske avgiftsdeklareringer
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Ungarn
               href: ../financials/localizations/hungary.md
@@ -1925,7 +1953,7 @@
             - name: Storbritannia
               href: ../financials/localizations/united-kingdom.md
               items:
-                - name: 'Skjema for byggebransjen '
+                - name: Skjema for byggebransjen
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
                 - name: Opprette en kreditt på utligningsrabatten
                   href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
@@ -1942,7 +1970,10 @@
         - name: Latin-Amerika
           items:
             - name: Brasil
+              href: ../financials/localizations/brazil.md
               items:
+                - name: Omfang for lokalisering
+                  href: ../financials/localizations/latam-bra-scope.md
                 - name: Regnskapsbøker
                   href: ../financials/localizations/latam-bra-fiscal-books.md
                   items:
@@ -2032,7 +2063,7 @@
                       href: ../financials/localizations/latam-bra-tax-payments.md
                     - name: Avgift i salgstilbud
                       href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Kildeskatt  '
+                    - name: 'Kildeskatt '
                       href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: Kildeskatt i kundebetalinger
                       href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -2105,6 +2136,7 @@
                     - name: Anleggsmidler for PIS og COFINS
                       href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
             - name: Mexico
+              href: ../financials/localizations/mexico.md
               items:
                 - name: Omfang for lokalisering
                   href: ../financials/localizations/latam-mex-scope.md
@@ -2120,7 +2152,7 @@
                   href: ../financials/localizations/latam-mex-diot-declaration-statement.md
                 - name: E-fakturering av CFDI
                   href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: 'Elektroniske fakturaer '
+                - name: Elektroniske fakturaer
                   href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
                 - name: Elektroniske finanskontoutdrag
                   href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
@@ -2144,13 +2176,15 @@
                   href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: ID-er for leverandørregistrering
                   href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
-        - name: Midt-Østen
+        - name: Saudi-Arabia
+          href: ../financials/localizations/saudi-arabia.md
           items:
             - name: Merverdiavgift
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Zakat-rapportering for Saudi-Arabia
               href: ../financials/localizations/emea-sau-zakat-reporting.md
-        - name: Nord-Amerika
+        - name: USA
+          href: ../financials/localizations/united-states.md
           items:
             - name: 1099-rapportering ved årsavslutning i USA
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
@@ -2177,7 +2211,7 @@
               href: ../talent/workflow-manage-employee-information.md
         - name: Rekruttering
           items:
-            - name: Administrere en rekrutteringsprosess
+            - name: Administrere rekrutteringsprosesser
               href: hr/manage-recruiting-process.md
             - name: Masseansettelsesprosjekter
               href: hr/mass-hire-projects.md
@@ -2219,13 +2253,13 @@
               href: ../talent/evaluate-questionnaire-results.md
         - name: Sikkerhet og overholdelse på arbeidsplassen (USA)
           items:
-            - name: Bekreftelse for I-9-ansettelse
+            - name: Verifisering av skjema I-9
               href: hr/localizations/noam-usa-form-i-9-verification.md
-            - name: Ansettelsesbekreftelse ved hjelp av skjema I-9
+            - name: Bekrefte ansettelsesrett ved hjelp av skjema I-9
               href: hr/localizations/tasks/employment-verification-i9-verification.md
-            - name: Definere dokumenttyper for I-9
+            - name: Definere dokumenttyper for skjema I-9
               href: hr/localizations/tasks/set-up-i9-document-types.md
-            - name: Overholde ADA
+            - name: Overholde den amerikanske loven mot diskriminering av funksjonshemmede (Americans with Disabilities Act)
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Behandle arbeidertilpassinger
               href: hr/localizations/tasks/manage-worker-accommodations.md
@@ -2238,44 +2272,50 @@
                   href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
                 - name: Definere arbeidssykluser og arbeidsperioder
                   href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
-                - name: 'Definere planer for fordelsavsetning  '
+                - name: Definere planer for fordelsavsetning
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Definere fordeler
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
             - name: Frekvenser og sykluser
-            - name: Oppgaver i betalingssyklus og betalingsperiode
+            - name: Definere lønnssykluser og lønnsperioder
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
-            - name: Oppgaver i lønnsberegning og -hyppighet
+            - name: Definere lønnsberegningsfrekvenser
               href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
-            - name: Oppgaver i arbeidsplan og permisjon
+            - name: Definere arbeidsplaner og permisjon
               href: hr/localizations/noam-usa-work-schedule-leave-tasks.md
             - name: Koder og avgifter
               items:
-                - name: Inntektskode og gruppeoppgaver for inntektskode
+                - name: Definere inntektskoder og inntektskodegrupper
                   href: hr/localizations/noam-usa-earning-code-group-tasks.md
-                - name: Oppgaver i avgiftsinformasjon
+                - name: 'Definere avgifter, avgiftsregioner, avgiftskoder og avgiftsgrupper'
                   href: hr/localizations/noam-usa-tax-information-tasks.md
+                - name: 'Vanlige spørsmål om avgiftskoder, avgiftsgrupper og posteringsdefinisjoner'
+                  href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+                - name: Angi startsaldoer for lønn
+                  href: hr/localizations/noam-usa-enter-beginning-balances.md
             - name: 'Tredjemannsutlegg, mva-utskrivninger og bonusutbetaling'
               items:
                 - name: Definere tredjemannsutlegg og mva-utskrivninger
                   href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
-                - name: Registrere arbeidere i tredjemannsutlegg og mva-utskrivninger
+                - name: Registrere arbeidere i tredjemannsutlegg og mva-utskrivinger
                   href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
-                - name: 'Definere bonusinntekter  '
+                - name: Definere bonusinntekter
                   href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
                 - name: 'Vanlige spørsmål om tredjemannsutlegg, mva-utskrivninger og administrative avgifter'
                   href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
-            - name: Spore fridager for FMLA
+            - name: Spore fridager for Sykemelding og permisjon
               href: hr/localizations/noam-usa-track-time-for-fmla.md
             - name: Oppgaver i lønnsbehandling
               items:
-                - name: Generere inntekter
+                - name: Vanlige spørsmål om inntekter og generering av inntekter
                   href: hr/localizations/noam-usa-earnings-generation-process.md
+                - name: Generere inntekter for arbeidere
+                  href: hr/localizations/noam-usa-generate-earnings.md
                 - name: Utstede arbeiderbetalinger
                   href: hr/localizations/noam-usa-issue-worker-payments.md
-                - name: Bokføre lønn og generere leverandørfakturaer
+                - name: Bokføre lønnsdistribusjoner og generere leverandørfakturaer
                   href: hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
-                - name: Vanlige spørsmål om lønnsoppgaver og generering av betalinger
+                - name: Vanlige spørsmål om lønnsoppgaver og betalingsgenerering
                   href: hr/localizations/noam-usa-pay-statements-payment-generation-process.md
             - name: Fullføre betalingsprosessen
               items:
@@ -2283,17 +2323,17 @@
                   href: hr/localizations/noam-usa-existing-payroll-payments.md
                 - name: Behandle eksisterende inntekter
                   href: hr/localizations/noam-usa-existing-earnings.md
-                - name: Behandle lønnsoppgaver
+                - name: Generere og arbeide med lønnsoppgaver
                   href: hr/localizations/noam-usa-pay-statements.md
             - name: Vedlikehold og rapportering
               items:
                 - name: Vanlige spørsmål om oppdateringer av lønnsdata
                   href: hr/localizations/noam-usa-payroll-data-updates.md
-                - name: Generere lønnsrapporter
+                - name: Standard lønnsrapporter
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
         - name: Oppgaver i Personale
           items:
-            - name: Legge til ytelsesjournalen og sende ros til noen
+            - name: Legge til informasjon i ytelsesjournal og sende ros
               href: hr/tasks/add-your-performance-journal-send-praise-someone.md
             - name: Analysere resultater av spørreskjema
               href: hr/tasks/analyze-questionnaire-results.md
@@ -2301,25 +2341,25 @@
               href: hr/tasks/approve-application-inbox-records.md
             - name: Fordelsrettighetsprosess
               href: hr/tasks/benefit-eligibility-process.md
-            - name: Opprette en kalender og generere arbeidstider
+            - name: Opprette kalendere og generere arbeidstider
               href: hr/tasks/create-calendar-working-times.md
-            - name: Opprette et lukket spørsmål
+            - name: Opprette lukkede spørsmål
               href: hr/tasks/create-closed-ended-question.md
-            - name: Opprette et mål
+            - name: Opprett mål
               href: hr/tasks/create-goal.md
             - name: Opprette utlånsvarer
               href: hr/tasks/create-loan-items.md
-            - name: Opprette et masseansettelsesprosjekt
+            - name: Opprette masseansettelsesprosjekter
               href: hr/tasks/create-mass-hire-project.md
-            - name: Opprette en ny fordel
+            - name: Opprett nye fordeler
               href: hr/tasks/create-new-benefit.md
-            - name: Opprette et åpent spørsmål
+            - name: Opprette åpne spørsmål
               href: hr/tasks/create-open-ended-question.md
-            - name: Opprette en prestasjonsvurdering
+            - name: Opprette prestasjonsvurderinger
               href: hr/tasks/create-performance-review.md
             - name: Definere rettighetsregler og policyer for fordel
               href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Definere kompensasjonsprosess og beregne resultater
+            - name: Definere kompensasjonsprosesser og beregne resultater
               href: hr/tasks/define-compensation-process-calculate-results.md
             - name: Definere nye avdelinger
               href: hr/tasks/define-new-departments.md
@@ -2327,19 +2367,19 @@
               href: hr/tasks/define-new-jobs.md
             - name: Levere et program for ansattfordeler
               href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Utvikle og åpne en jobbrekvisisjon
+            - name: Utvikle og åpne jobbrekvisisjoner
               href: hr/tasks/develop-open-job-requisition.md
-            - name: Utvikle struktur og planer for lønn/kompensasjon
+            - name: Utvikle strukturer og planer for lønn/kompensasjon
               href: hr/tasks/develop-salary-compensation-structure-plan.md
             - name: Utvikle en rekkefølgeplan
               href: hr/tasks/develop-succession-plan.md
             - name: Distribuere spørreskjemaer ved hjelp av planlegging
               href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: Registrere en ansatt i en fast kompensasjonsplan
+            - name: Registrere ansatte i en fast kompensasjonsplan
               href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: Registrere en ansatt i en variabel kompensasjonsplan
+            - name: Registrere ansatte i en variabel kompensasjonsplan
               href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Registrere og fjerne fordeler fra arbeidere
+            - name: Registrere arbeidere i fordeler og fjerne fordeler fra arbeidere
               href: hr/tasks/enroll-remove-benefits-workers.md
             - name: Angi søker- og søknadsdata manuelt
               href: hr/tasks/enter-applicant-application-data-manually.md
@@ -2347,25 +2387,25 @@
               href: hr/tasks/enter-project-timesheets.md
             - name: Angi arbeiderinformasjon
               href: hr/tasks/enter-worker-information.md
-            - name: Ansette en kandidat via rekruttering
+            - name: Ansette kandidater via rekruttering
               href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Ansette en eksisterende ansatt via rekruttering
+            - name: Ansette eksisterende ansatte via rekruttering
               href: hr/tasks/hire-existing-employee-through-recruiting.md
             - name: Identifisere og distribuere verktøy for kandidatvalg
               href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Utlånsvarer til en arbeider
+            - name: Utlånsvarer til arbeidere
               href: hr/tasks/loan-item-worker.md
             - name: Vedlikeholde informasjon om ansattskade og -sykdom
               href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: Gjøre et spørsmål avhengig av svaret på det forrige spørsmålet
+            - name: Gjøre spørsmål avhengige av svaret på det forrige spørsmålet
               href: hr/tasks/make-question-dependent-answer-previous-question.md
             - name: Administrere utløpsdatoer for fordel
               href: hr/tasks/manage-benefit-expiration-dates.md
             - name: Behandle e-postmaler
               href: hr/tasks/manage-email-templates.md
-            - name: Administrere permisjon
+            - name: Administrere permisjoner
               href: hr/tasks/manage-leave-absence.md
-            - name: Endre rapporteringsrelasjoner for en stilling
+            - name: Endre rapporteringsrelasjonene for stillinger
               href: hr/tasks/modify-reporting-relationships-position.md
             - name: Definere kompensasjonsrutenett
               href: hr/tasks/set-up-compensation-grids.md
@@ -2396,7 +2436,7 @@
             - name: Kostnadsregnskapsanalyse
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Sikkerhet for kostnadsregnskapsanalysen
+                - name: Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kostnadsstyring
               href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2424,7 +2464,7 @@
               href: ../dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Rekruttering
               href: ../dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: 'Resultat for detaljhandelskanal  '
+            - name: 'Resultat for detaljhandelskanal '
               href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/fin-and-ops/toc.json
             - name: Resultat av salg og fortjeneste
               href: ../dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2436,26 +2476,26 @@
               href: ../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
         - name: Rapportere og skrive ut og dokumenter
           items:
-            - name: Oversikt over dokumentrapporteringstjenester
+            - name: Oversikt over Document Reporting Services
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurere SSRS for en lokal distribusjon
+            - name: Konfigurere SSRS for lokale distribusjoner
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Utskrift
               href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Installere dokumentrutingsagenten slik at nettverksskriverenheter kan brukes
+                - name: Installere dokumentrutingsagenten slik at nettverksutskrift kan brukes
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Oppgradere dokumentrutingsagenten
                   href: ../dev-itpro/analytics/upgrade-document-routing-agent.md
                 - name: Installere nettverksskriverenheter i lokale miljøer
                   href: ../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json
-                - name: 'Dokumentgenererings-, publiserings- og utskriftsegenskaper i lokale distribusjoner'
+                - name: 'Dokumentgenerering, publisering og utskrift i lokale distribusjoner'
                   href: ../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json
                 - name: Kjøre dokumentrutingsagenten som en Windows-tjeneste
                   href: ../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json
-            - name: Hjelp med å unngå at tidkrevende rapporter blir tidsavbrutt
+            - name: Hjelpe med å unngå at tidkrevende rapporter blir tidsavbrutt
               href: ../dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/fin-and-ops/toc.json
-            - name: Liste over rapporter for SQL Server Reporting Services
+            - name: Tilgjengelige rapporter i SQL Server Reporting Services
               href: ../dev-itpro/analytics/SSRS-report.md?toc=/fin-and-ops/toc.json
             - name: Opprette sorteringsalternativer
               href: ../dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/fin-and-ops/toc.json
@@ -2465,139 +2505,141 @@
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
             - name: Utvide datasett for Application Suite-rapport
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: 'Utvide elementene på rapportmenyen '
+            - name: Utvide rapportmenyelementer for å omdirigere brukernavigeringer
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
-            - name: 'Tilpasse forretningsdokumenter '
+            - name: Opprette tilpassede utforminger for forretningsdokumenter
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
         - name: Elektronisk rapportering
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
           items:
             - name: Konfigurere rammeverket for elektronisk rapportering
               href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-            - name: Opprette en konfigurasjon
+            - name: Opprette konfigurasjoner
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Opprette en konfigurasjonsleverandør og merke den som aktiv for elektronisk rapportering
+                - name: Opprette konfigurasjonsleverandører og merke dem som aktive
                   href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Utforme en domenespesifikk datamodell for elektronisk rapportering
+                - name: Utforme domenespesifikke datamodeller
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Definere modelltilordning og velge datakilder for elektronisk rapportering
+                - name: Definere modelltilordninger og velge datakilder
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Tilordne en datamodell til utvalgte datakilder for elektronisk rapportering
+                - name: Tilordne datamodeller til valgte datakilder
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Opprette en formatkonfigurasjon for elektronisk rapportering
+                - name: Opprette formatkonfigurasjoner
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Tilordne komponenter i det opprettede formatet for datamodellelementer for elektronisk rapportering
+                - name: Tilordne komponentene for formater til datamodellelementer
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon for elektronisk rapportering
+                - name: Generere elektroniske dokumenter for betalinger ved hjelp av konfigurasjoner
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: 'Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet for elektronisk rapportering'
+                - name: Oppgradere formater ved å bruke nye grunnleggende versjoner
                   href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
             - name: Formeldesigner i elektronisk rapportering
               href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Definere elektronisk rapportering med Power BI
+            - name: Konfigurere elektronisk rapportering for å hente data til Power BI
               href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
             - name: Mål
               href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Konfigurere mål for elektronisk rapportering
+                - name: Konfigurere mål
                   href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Utforme en konfigurasjon for å generere rapporter i Microsoft Word-format for elektronisk rapportering
+            - name: Utforme konfigurasjoner til å generere rapporter i Word-format
               href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Utforme en konfigurasjon for å generere rapporter i OpenXML-format for elektronisk rapportering
+            - name: Utforme konfigurasjoner til å generere rapporter i OpenXML-format
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Endre et format for elektronisk rapportering ved å bruke en Microsoft Excel-mal på nytt
+            - name: Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Velge definisjon av datamodell under oppretting av format for elektronisk rapportering
+            - name: Velge definisjon av datamodell under oppretting av formater
               href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Definere avhengigheten av konfigurasjoner fra andre komponenter for elektronisk rapportering
+            - name: Definere avhengigheten av konfigurasjonene i andre komponenter
               href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Utforme datamodell for å bruke finansdimensjoner som en datakilde
+                - name: Utforme datamodeller til å bruke finansdimensjoner som datakilder
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Tilordne modeller for å bruke finansdimensjoner som en datakilde
+                - name: Tilordne modeller for å bruke finansdimensjoner som datakilder
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Utforme en rapport for å bruke finansdimensjoner som en datakilde
+                - name: Utforme rapporter for å bruke finansdimensjoner som datakilder
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: Kjøre en rapport som bruker finansdimensjoner som en datakilde
+                - name: Kjøre rapporter som bruker finansdimensjoner som datakilder
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Opprette format for telling og summering
+                - name: Opprette formater for å utføre telling og summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurere beregninger for å utføre telling og summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Bruke beregninger til å lage utdata for telling og summering
+                - name: Bruke beregninger til å generere utdataene for telling og summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Kjøre formatet for å utføre telling og summering
+                - name: Kjøre formater for å utføre telling og summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: Utforme et format for å bruke områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk
+                - name: Utforme formater til å legge til kolonner dynamisk som horisontalt utvidbare områder
                   href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Kjøre et format som bruker områder som kan utvides vannrett for å legge til kolonner i Excel-rapporter dynamisk
+                - name: Kjøre formater til å legge til kolonner dynamisk som horisontalt utvidbare områder
                   href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Klargjøre datamodell for å bruke dokumentbehandlingsfiler i formatutdata
+                - name: Klargjøre datamodeller for å bruke dokumentbehandlingsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Utvide datamodell for å bruke dokumentbehandlingsfiler i formatutdata
+                - name: Utvide datamodeller for å bruke dokumentbehandlingsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Opprette format for å bruke dokumentbehandlingsfiler i formatutdata
+                - name: Opprette formater for å bruke dokumentbehandlingsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Kjøre format for å bruke dokumentbehandlingsfiler i formatutdata
+                - name: Kjøre formater for å bruke dokumentbehandlingsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Endre og kjøre format for å bruke dokumentbehandlingsfiler i formatutdata
+                - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: Utforme konfigurasjoner for å generere rapporter i Microsoft Office-formatene med innebygde bilder
+                - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene med innebygde bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: "Se gjennom konfigurasjoner for å\_opprette rapporter i Microsoft Office-formatene med innebygde bilder"
+                - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene med innebygde bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Generere rapporter i Microsoft Office-formater med innebygde bilder
+                - name: Generere rapporter i Office-formater med innebygde bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
-            - name: Generere elektroniske dokumenter og oppdatere programdata ved hjelp av verktøyet for elektronisk rapportering
+            - name: Generere elektroniske dokumenter og oppdatere programdata
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Importere konfigurasjoner for å generere dokumenter med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
                 - name: Utforme konfigurasjoner for å generere dokumenter med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Endre modell og tilordning for å generere dokumenter med programdata
+                - name: Endre modeller og tilordninger for å generere dokumenter med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Endre format for å generere dokumenter med programdata
+                - name: Endre formater for å generere dokumenter med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
                 - name: Generere dokumenter med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+            - name: Generere FTI-skjemaer som kan skrives ut
+              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
             - name: Generere rapporter ved å legge til innhold som rå XML
               href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
+            - name: Spore genererte rapportresultater og sammenligne med grunnlinjeverdier
               href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
             - name: Kryssfirmadatakilder i elektronisk rapportering
               href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Bygge inn bilder og figurer i forretningsdokumenter som blir generert ved hjelp av verktøyet for elektronisk rapportering
+            - name: Bygge inn bilder og figurer i dokumenter du genererer
               href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
             - name: Administrere konfigurasjonslivssyklusen
               href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Laste opp en konfigurasjon til Lifecycle Services for elektronisk rapportering
+                - name: Laste opp konfigurasjoner til Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importere en konfigurasjon fra Lifecycle Services for elektronisk rapportering
+                - name: Importere konfigurasjoner fra Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Laste ned konfigurasjoner fra Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Importere konfigurasjoner av elektronisk rapportering
+                - name: Importere konfigurasjoner
                   href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Administrere konfigurasjoner av modelltilordning for elektronisk rapportering
+            - name: Administrere konfigurasjoner for modelltilordning
               href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil for elektronisk rapportering
+                - name: Opprette konfigurasjoner for å importere data fra eksterne filer
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurere dataimport fra SharePoint
                   href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Analysere innkommende dokumenter i Microsoft Excel
+            - name: Analysere innkommende dokumenter i Excel-format
               href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
             - name: Analysere innkommende dokumenter for å oppdatere programdata
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Analysere innkommende dokumenter i CSV-format
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Dele opp genererte filer basert på filstørrelse og innholdsmengde
+            - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Utvide funksjoner for elektronisk rapportering
+                - name: Utvide listen over funksjoner for elektronisk rapportering (ER)
                   href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
                 - name: API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3
                   href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -2609,15 +2651,15 @@
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
         - name: Tilpasningsalternativer med PowerBI.com
           items:
-            - name: Power BI-integrering
+            - name: Funksjoner og tjenester som er tilgjengelige via BI-integrering
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
-            - name: Feste Power BI-rapporterer til arbeidsområder
+            - name: Feste Power BI-rapporter til arbeidsområder
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
         - name: Verktøy for å opprette og utvide løsninger
           items:
             - name: 'Analyse, aggregerte målinger og KPI-modellering'
               href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-            - name: Forfatte analyserapporter ved hjelp av Power BI Desktop
+            - name: Opprette analyserapporter ved hjelp av Power BI Desktop
               href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
             - name: Modellere og aggregere data
               href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
@@ -2625,13 +2667,13 @@
               href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
             - name: Legge til analyse i arbeidsområder ved å bruke Power BI Embedded
               href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
-            - name: Sikre analytiske arbeidsområder og rapporter ved å bruke Power BI Embedded
+            - name: Sikre analytiske arbeidsområder og rapporter ved hjelp av Power BI Embedded
               href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
         - name: Verktøy for administrasjon av storbruker
           items:
             - name: Power BI-integrering med enhetslager
               href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-            - name: Vedlikehold av enhetslager
+            - name: Løse problemer etter vedlikehold av enhetslager
               href: ../dev-itpro/analytics/entity-store-maintenance.md
             - name: Konfigurere Power BI-integrering for arbeidsområder
               href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
@@ -2803,10 +2845,10 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Endre en behovsprognose manuelt
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilapp
+    - name: Dynamics 365 for appen Unified Operations Mobile
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Mobile arbeidsområder
+        - name: Tilgjengelige mobile arbeidsområder
           href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
           items:
             - name: Firmakatalog
@@ -2829,16 +2871,16 @@
               href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
             - name: Leverandørsamarbeid
               href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
-        - name: Publisere et mobilt arbeidsområde
+        - name: Publisere mobile arbeidsområder
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office-integrering
       href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
         - name: Opplæring i Office-integrering
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
-        - name: Bruke Excel-tillegget
+        - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
           href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
-        - name: Opprette Åpne i Excel-opplevelser
+        - name: Opprette opplevelser for Åpne i Excel
           href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
         - name: Legge til maler på menyen Åpne linjer i Excel
           href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/fin-and-ops/toc.json
@@ -2886,7 +2928,7 @@
               href: ../supply-chain/procurement/purchase-order-overview.md
             - name: Godkjenne og bekrefte bestillinger
               href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
-            - name: Kjøpsordregodkjenning mobilt arbeidsområde
+            - name: Mobilt arbeidsområde for bestillingsgodkjenning
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
             - name: Registrere mottaket av varene i bestillingen
               href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
@@ -2987,7 +3029,7 @@
           items:
             - name: Konfigurere nummerserier enkeltvis
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
-            - name: Konfigurere alle nødvendige nummerserier ved å bruke en veiviser
+            - name: Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Organisasjoner og organisasjonshierarkier
           href: organization-administration/organizations-organizational-hierarchies.md
@@ -2996,20 +3038,22 @@
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Opprette et organisasjonshierarki
               href: organization-administration/tasks/create-organization-hierarchy.md
-            - name: Opprette en juridisk enhet
+            - name: Opprett juridiske enheter
               href: organization-administration/tasks/create-legal-entity.md
-            - name: Opprette en driftsenhet
+            - name: Opprette driftsenheter
               href: organization-administration/tasks/create-operating-unit.md
         - name: Global adressebok
           href: organization-administration/overview-global-address-book.md
           items:
-            - name: Planlegge hvordan du konfigurerer den globale adresseboken
+            - name: Planlegge den globale adresseboken og andre adressebøker
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Konfigurere den globale adresseboken
               href: organization-administration/tasks/configure-global-address-book.md
             - name: Vanlige spørsmål om adressebøker
               href: organization-administration/qa-address-books.md
-        - name: Arbeidsflyt
+            - name: Konfigurere adressebøker
+              href: organization-administration/tasks/address-books.md
+        - name: Arbeidsflytsystem
           href: organization-administration/overview-workflow-system.md
           items:
             - name: Arkitektur i arbeidsflytsystemet
@@ -3018,43 +3062,43 @@
               href: organization-administration/workflow-elements.md
             - name: Arbeidsflythandlinger
               href: organization-administration/workflow-actions.md
-            - name: Opprette en arbeidsflyt
+            - name: Opprette arbeidsflyter
               href: organization-administration/create-workflow.md
               items:
                 - name: Konfigurere egenskaper for arbeidsflyt
                   href: organization-administration/configure-workflow-properties.md
-                - name: Konfigurere en manuell oppgave
+                - name: Konfigurere manuelle oppgaver
                   href: organization-administration/configure-manual-task-workflow.md
-                - name: Konfigurere en automatisert oppgave
+                - name: Konfigurere automatiserte oppgaver
                   href: organization-administration/configure-automated-task-workflow.md
-                - name: Konfigurere en godkjenningsprosess
+                - name: Konfigurere godkjenningsprosesser
                   href: organization-administration/configure-approval-process-workflow.md
-                - name: Konfigurere et godkjenningstrinn
+                - name: Konfigurere godkjenningstrinn
                   href: organization-administration/configure-approval-step-workflow.md
-                - name: Konfigurere en manuell beslutning
+                - name: Konfigurere manuelle beslutninger
                   href: organization-administration/configure-manual-decision-workflow.md
-                - name: Konfigurere en betinget beslutning
+                - name: Konfigurere betingede beslutninger
                   href: organization-administration/configure-conditional-decision-workflow.md
-                - name: Konfigurere en parallell aktivitet
+                - name: Konfigurere parallelle aktiviteter
                   href: organization-administration/configure-parallel-activity-workflow.md
-                - name: Konfigurere en parallell avdeling
+                - name: Konfigurere parallelle avdelinger
                   href: organization-administration/configure-parallel-branch-workflow.md
-                - name: Konfigurere en arbeidsflyt for linjeelement
+                - name: Konfigurere arbeidsflyter for linjeelement
                   href: organization-administration/configure-line-item-workflow.md
-            - name: Konfigurere den satsvise jobben for meldingsbehandling
+            - name: Konfigurere den satsvise jobben Meldingsbehandling for arbeidsflyt som kritisk
               href: organization-administration/workflow-batch-job-critical.md
             - name: Delegere arbeidselementer i en arbeidsflyt
               href: organization-administration/tasks/delegate-work-items-workflow.md
             - name: Vis arbeidsflytlogg
               href: organization-administration/tasks/view-workflow-history.md
-            - name: Gi brukere muligheten til å motta arbeidsflytrelaterte e-postmeldinger
+            - name: Konfigurere systemet til å sende arbeidsflytrelatert e-post til brukere
               href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
             - name: Rapport for arbeidsflyttyper
               href: organization-administration/workflow-types-report.md
         - name: Varsler
           href: get-started/alerts-overview.md
           items:
-            - name: Opprette varsler
+            - name: Opprette varslingsregler
               href: get-started/create-alerts.md
             - name: Satsvis behandling for varsler
               href: get-started/alerts-managing.md
@@ -3066,7 +3110,7 @@
         - name: Saksbehandling
           href: organization-administration/cases.md
           items:
-            - name: 'Konfigurere sakssikkerhet, prosesser og kategorier'
+            - name: 'Planlegge sakssikkerhet, prosesser og kategorier'
               href: organization-administration/plan-case-management.md
         - name: Postmaler
           href: organization-administration/record-templates.md
@@ -3526,7 +3570,7 @@
     - name: Salg og markedsføring
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
-        - name: Salgsordre
+        - name: Salgsordrer
           items:
             - name: Ordrebekreftelse
               href: ../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md
@@ -3792,7 +3836,7 @@
                       href: ../supply-chain/service-management/reverse-changes-in-a-dispatch-board.md
                     - name: Vise ikke fordelte serviceordrer
                       href: ../supply-chain/service-management/view-undispatched-service-orders.md
-                    - name: 'Endre en servicestykkliste  '
+                    - name: 'Endre en servicestykkliste '
                       href: ../supply-chain/service-management/modify-service-bom.md
                 - name: Levere service
                   items:
@@ -3893,7 +3937,7 @@
         - name: Arbeidspolicyer for lager
           href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
-            - name: 'Definere arbeidspolicyer for lager  '
+            - name: 'Definere arbeidspolicyer for lager '
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Flytting av beholdning med tilknyttet arbeid i Lagerstyring
               href: ../supply-chain/warehousing/move-inventory-associated-work.md
@@ -3935,11 +3979,11 @@
               href: ../supply-chain/inventory/inventory-blocking.md
             - name: Syklustelling
               href: ../supply-chain/warehousing/cycle-counting.md
-            - name: 'Definere syklustelling  '
+            - name: 'Definere syklustelling '
               href: ../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
             - name: Delvis lokasjonssyklustelling
               href: ../supply-chain/warehousing/partial-location-cycle-counting.md
-            - name: 'Definere delvis prosess for syklustelling for lokasjon  '
+            - name: 'Definere delvis prosess for syklustelling for lokasjon '
               href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md
             - name: Lagerjournal
               href: ../supply-chain/inventory/inventory-journals.md
@@ -3958,7 +4002,7 @@
               href: ../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md
             - name: Definere en prosess for minimums-/maksimumsetterfylling
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: 'Installere og konfigurere lagerappen  '
+        - name: 'Installere og konfigurere lagerappen '
           href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
             - name: Konfigurere feltnavn i lagerapp

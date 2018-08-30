@@ -3,7 +3,7 @@ title: Lokalisering og forskriftsmessige funksjoner
 description: "Dette emnet inneholder lister over ressurser som kan hjelpe deg å finne ut mer om lands-/områdespesifikk funksjonalitet."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 07/18/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
-ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
+ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
+ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
 ms.contentlocale: nb-no
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -147,33 +147,9 @@ De følgende avsnittene beskriver ressurser etter land/region.
 - [Mva-rapportering](../../financials/localizations/emea-vat-reporting.md)
 - [Vise transaksjoner ved utligning](../../financials/localizations/emea-transactions-settlement-form.md)
 
-### <a name="france"></a>Frankrike
--   [Kronologiske faktura- og bilagsnumre](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
--   [Nedsettende avskrivning for Frankrike](../../financials/localizations/emea-fra-derogatory-depreciation.md)
--   [NAF-koder og siret-numre](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
--   [Straff for forfalte kundebetalinger i Frankrike](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
--   [Skrive ut tekst for refusjon av engangsbeløp på en kundefaktura](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
--   [RB/SL-avskrivning](../../financials/localizations/emea-fra-rbsl-depreciation.md)
-
-#### <a name="public-sector"></a>Offentlig sektor
-   -   [Forpliktelser i offentlig sektor](../../financials/localizations/emea-fra-commitments-public-sector.md)
-   -   [Mandats de paiement i offentlig sektor](../../financials/localizations/emea-fra-mandats-de-paiement.md)
-   -   [Innkjøp og leverandører](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
-   -   [Regnskap i offentlig sektor](../../financials/localizations/emea-fra-public-sector-accounting.md)
-   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
-   -   [Betalingssperrer for leverandørfaktura](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
-
-### <a name="germany"></a>Tyskland
--   [Avskrivning for ekstraanskaffelser](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
--   [Tysk revisjonsfil (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
--   [Rapport for tysk journalliste](../../financials/localizations/emea-deu-journal-list-report.md)
--   [Skrive ut en egen etikett for kreditnotaer som stammer fra salg](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
-
-### <a name="hungary"></a>Ungarn
-
--   [Metoder for avskrivning av anleggsmidler](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Flytte et anleggsmiddel til lager](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Lavkostanleggsmidler](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+### <a name="francefinancialslocalizationsfrancemd"></a>[Frankrike](../../financials/localizations/france.md)
+### <a name="germanyfinancialslocalizationsgermanymd"></a>[Tyskland](../../financials/localizations/germany.md)
+### <a name="hungaryfinancialslocalizationshungarymd"></a>[Ungarn](../../financials/localizations/hungary.md)
 
 ### <a name="india"></a>India
 
@@ -190,22 +166,11 @@ De følgende avsnittene beskriver ressurser etter land/region.
     - [Vanlige spørsmål om mva-terskler](../../financials/localizations/apac-ind-tax-thresholds.md)
     - [Utvidelse av avgiftsmotoren](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
-### <a name="italy"></a>Italia
-
--   [Italiensk svartelisterapport](../../financials/localizations/emea-ita-black-list-report.md)
--   [Detaljer om mva-oppgaver](../../financials/localizations/emea-ita-vat-statements-details.md)
--   [Kompetansedato for transaksjoner](../../financials/localizations/emea-ita-competence-date.md)
--   [Manuell avskrivning av anleggsmidler](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
--   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
--   [Bekreftelse på følgeseddeldato på fakturaer for Italia](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
--   [Italienske sales tax books](../../financials/localizations/emea-ita-fiscal-books.md)
--   [Dele opp betaling for fakturaer som er utstedt til offentlig administrasjon](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
--   [Kildeskatt](../../financials/localizations/emea-ita-withholding-tax.md)
-
+### <a name="italyfinancialslocalizationsitalymd"></a>[Italia](../../financials/localizations/italy.md)
 ### <a name="japan"></a>Japan
 
 -  [Bankbetalingsgebyrer som er dekket av leverandører](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
--  [Konsoliderte fakturaer](../../financials/localizations/apac-jpn-consolidate-invoices.md)
+-  [Samlefakturaer](../../financials/localizations/apac-jpn-consolidate-invoices.md)
 -  [Tildelingsregler for anleggsmidler](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
 -  [Likt delt avskrivningsmetode](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
 -  [Avskrivning av anleggsmidler](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
@@ -216,19 +181,8 @@ De følgende avsnittene beskriver ressurser etter land/region.
 -  [Betale en leverandør ved å godkjenne en veksel](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
 -  [Beregning av progressiv kildeskatt](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
-### <a name="latvia"></a>Latvia
-
--   [Regnskap for anleggsmidler for skatte- og avgiftsformål](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
--   [Plassering av endringssporing for anleggsmidler](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
--   [Faktura- og følgeseddelnummerering](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Rapporten Skatt på naturressurser](../../financials/localizations/emea-lva-tax-natural-resources.md)
--   [Detaljer om mva-oppgave](../../financials/localizations/emea-lva-vat-statement-details.md)
-
-### <a name="lithuania"></a>Litauen
-
--   [Oppgave for reparasjon av anleggsmiddel](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
--   [Faktura- og følgeseddelnummerering](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Detaljer om mva-oppgave](../../financials/localizations/emea-ltu-vat-statement-details.md)
+### <a name="latviafinancialslocalizationslatviamd"></a>[Latvia](../../financials/localizations/latvia.md)
+### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Litauen](../../financials/localizations/lithuania.md)
 
 ### <a name="mexico"></a>Mexico
 
@@ -242,29 +196,9 @@ De følgende avsnittene beskriver ressurser etter land/region.
 
 -   [Goods and services tax (GST)](../../financials/localizations/apac-mys-gst.md)
 
-### <a name="netherlands"></a>Nederland
-
--   [Tidsfrist for utstedelse av faktura](../../financials/localizations/emea-invoice-issue-deadline.md)
-
-### <a name="norway"></a>Norge
-
--   [Kassaapparater for Norge](../../retail/localizations/emea-nor-cash-registers.md)
--   [Retningslinjer for distribusjon for kassaapparater for Norge](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
--   [Format for nettoimport](../../financials/localizations/emea-nor-nets-import-format.md)
--   [Mva-oppgave](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
-
-### <a name="poland"></a>Polen
-
--   [Beregne linjerabatter fra enhetsprisen](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
--   [Rettelsesmerknader](../../financials/localizations/emea-pol-correction-notes.md)
--   [Duplisere salgsfakturanummerering](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
--   [Avskrivning av anleggsmidler](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
--   [Avhending av anleggsmidler](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
--   [Returnerbar emballasje](../../financials/localizations/emea-pol-returnable-packages.md)
--   [Merverdiavgiftrapporter](../../financials/localizations/emea-pol-sales-tax-reports.md)
--   [Standard revisjonsfil (SAF)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
--   [Omsetnings- og saldoutdrag](../../financials/localizations/emea-pol-turnover-balances-statement.md)
-
+### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Nederland](../../financials/localizations/netherlands.md)
+### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norge](../../financials/localizations/norway.md)
+### <a name="polandfinancialslocalizationspolandmd"></a>[Polen](../../financials/localizations/poland.md)
 ### <a name="saudi-arabia"></a>Saudi-Arabia
 
 -   [Zakat-rapportering](../../financials/localizations/emea-sau-zakat-reporting.md)
@@ -273,29 +207,9 @@ De følgende avsnittene beskriver ressurser etter land/region.
 
 -   [Generere rapporten Singapore GST-05](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
-### <a name="spain"></a>Spania
-
--   [Alternativer for spansk veksel](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
--   [Kontantrabatt brukes i fakturaparameteren](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Betinget mva.](../../financials/localizations/emea-esp-conditional-sales-tax.md)
--   [Revalueringsgrupper for anleggsmiddel](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
--   [Fellesskapsmerverdiavgift](../../financials/localizations/emea-esp-intra-community-vat.md)
--   [Engangskunder](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
--   [Skrive ut sjekker ved å bruke det spanske oppsettet](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
--   [Alternativer for spansk egenveksel](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [Salgs- og kjøpssykluser](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Spesielle oppføringer og åpningsark](../../financials/localizations/emea-esp-opening-sheets-spain.md)
--   [Bruke regnskapsdata fra fakturakontoen](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
-
-### <a name="sweden"></a>Sverige
-
--   [Importere betalingsformater for Sverige](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Kassaapparater for Sverige](../../retail/localizations/emea-swe-cash-registers.md)
-
-### <a name="switzerland"></a>Sveits
-
--   [Import av ESR-kundebetalinger](../../financials/localizations/emea-che-esr-customer-payments-import.md)
-
+### <a name="spainfinancialslocalizationsspainmd"></a>[Spania](../../financials/localizations/spain.md)
+### <a name="swedenfinancialslocalizationsswedenmd"></a>[Sverige](../../financials/localizations/sweden.md)
+### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Sveits](../../financials/localizations/switzerland.md)
 ### <a name="thailand"></a>Thailand
 
 -   [Lagerkortrapporter](../../financials/localizations/apac-tha-stock-card-reports.md)
@@ -303,10 +217,7 @@ De følgende avsnittene beskriver ressurser etter land/region.
 -   [Urealisert mva](../../financials/localizations/apac-tha-unrealized-vat.md)
 -   [Kildeskatt](../../financials/localizations/apac-tha-withholding-tax.md)
 
-### <a name="united-kingdom"></a>Storbritannia
-
--   [Skjemaet for byggebransjen for Storbritannia](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
-
+### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Storbritannia](../../financials/localizations/united-kingdom.md)
 ### <a name="united-states"></a>USA
 
 -   [Skjema 1099 i offentlig sektor](../../financials/localizations/noam-usa-form-1099-public-sector.md)   

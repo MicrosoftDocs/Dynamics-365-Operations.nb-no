@@ -1,5 +1,5 @@
 ---
-title: Konfigurere et fordelsprogram for kunde
+title: Definere fordelsprogrammer
 description: "Denne artikkelen beskriver hvordan du setter opp et fordelsprogram. Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for å kjøpe produkter i forretningene dine. I Microsoft Dynamics 365 for Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal."
 author: scott-tucker
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fbedaa33e7cfd717a074828e47d44473d466ba5a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Konfigurere et fordelsprogram for kunde
+# <a name="set-up-customer-loyalty-programs"></a>Definere fordelsprogrammer
 
 [!include [banner](includes/banner.md)]
 

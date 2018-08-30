@@ -1,5 +1,5 @@
 --- 
-title: Utforme datamodell for bruk av finansdimensjoner som en datakilde
+title: "Utforme datamodeller for å bruke finansdimensjoner som datakilder"
 description: "De følgende trinnene forklarer hvordan en systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e55eedba1955ae79733afee1a0b3c7072147bb5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9b33d78b60ca4e4813dd4b158febee2323cea476
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source"></a>Utforme datamodell for bruk av finansdimensjoner som en datakilde 
+# <a name="design-data-models-to-use-financial-dimensions-as-data-sources"></a>Utforme datamodeller for å bruke finansdimensjoner som datakilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

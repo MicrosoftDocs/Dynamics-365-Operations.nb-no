@@ -1,5 +1,5 @@
 --- 
-title: "Gå gjennom konfigurasjoner for å lage rapporter i Microsoft Office-formater med innebygde bilder"
+title: "Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder"
 description: "For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen \"ER lage rapporter i MS Office-formater med innebygde bilder (del 1: Definere parametere)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Gå gjennom konfigurasjoner for å lage rapporter i Microsoft Office-formater med innebygde bilder
+# <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Intelligens
+title: Startside for konfigurasjon av forretningsintelligens (BI) og rapportering
 description: "Dette emnet henviser til ressursene du kan bruke til å finne ut mer om forretningsintelligens og rapporteringsverktøy som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligence"></a>Intelligens
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for konfigurasjon av forretningsintelligens (BI) og rapportering
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,13 +43,13 @@ Brukere kan samhandle med data ved å klikke eller trykke på bilder på siden. 
 
 ![Eksempel på Power BI i et arbeidsområde](./media/Power-BI-in-D365-Workspace.png)
 
- Hvis du vil finne ut mer, kan du se følgende emner:
+Hvis du vil finne ut mer, kan du se følgende emner:
 
- - [Innebygd Power BI i arbeidsområder](embed-power-bi-workspaces.md)
- - [Power BI Embedded-integrering](power-bi-embedded-integration.md)
- - [Legge til analyse i arbeidsområder ved å bruke Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Sikre analytiske arbeidsområder og rapporter ved å bruke Power BI Embedded](secure-analytical-workspaces.md)
- - [Power BI-innhold for Finance og Operations](power-bi-home-page.md)
+- [Innebygd Power BI i arbeidsområder](embed-power-bi-workspaces.md)
+- [Power BI Embedded-integrering](power-bi-embedded-integration.md)
+- [Legge til analyse i arbeidsområder ved å bruke Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Sikre analytiske arbeidsområder og rapporter ved å bruke Power BI Embedded](secure-analytical-workspaces.md)
+- [Power BI-innhold for Finance og Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Forretningsdokumenter og utskrift
 Rapporteringsløsninger brukes ofte til å lagre og kommunisere detaljene i forretningstransaksjoner. Derfor må en rapporteringsløsning kunne produsere fysiske manifestasjoner av forretningsdata ved hjelp av eksisterende enheter, for eksempel skrivere. Salgsfakturaer, kontoutdrag for kunde og sjekker er eksempler på forretningsdokumenter.

@@ -46,8 +46,6 @@ Den første fasen av integreringen mellom Field Service og Finance and Operation
 
 Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Finance and Operations, se den korte YouTube-videoen [Synkronisere en ordre for arbeid mellom Dynamics 365 for Field Service og Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
 Field Service-integrasjon støtter følgende versjoner:
 

@@ -1,5 +1,5 @@
 ---
-title: Skjermoppsettet for demonstrasjonsdataene i MPOS/CPOS
+title: Skjermoppsett for demonstrasjonsdata i Retail Modern POS (MPOS) og Cloud POS
 description: Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Microsoft Dynamics 365 for Retail.
 author: zlinster
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: e812bb13c903e72e31e62effd0c70f9b9d62de55
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="demo-data-screen-layouts-in-mposcpos"></a>Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
+# <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Skjermoppsett for demonstrasjonsdata i Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 

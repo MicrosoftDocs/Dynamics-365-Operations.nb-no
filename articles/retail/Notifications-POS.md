@@ -1,5 +1,5 @@
 ---
-title: "Vise ordrevarslinger på salgsstedet"
+title: "Vise ordrevarslinger på salgsstedet (POS)"
 description: "Dette emnet beskriver hvordan du aktiverer ordrevarslinger på salgsstedet og varselrammeverket. Til slutt kan utviklere utvide disse meldingene til andre operasjoner enn ordreoppfyllelsesoperasjoner."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="show-order-notifications-in-the-point-of-sale"></a>Vise ordrevarslinger på salgsstedet
+# <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
 [!include [banner](includes/banner.md)]
 

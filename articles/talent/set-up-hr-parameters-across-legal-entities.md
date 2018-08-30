@@ -1,5 +1,5 @@
 ---
-title: "Definere parametere for Personale på tvers av juridiske enheter"
+title: "Definere parametere for Personale (HR) på tvers av juridiske enheter"
 description: "Du må definerte delte parametere for poster som deles på tvers av firmaer, for eksempel stillingsposter. Denne artikkelen forklarer hvordan du definerer personalparametere på tvers av juridiske enheter."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1241d8da101af094ac510819376908727f9bcf07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: cc5acf7ba1b350ee2c91923c7de3b4780385f3ef
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-hr-parameters-across-legal-entities"></a>Definere parametere for Personale på tvers av juridiske enheter
+# <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>Definere parametere for Personale (HR) på tvers av juridiske enheter
 
 [!include [banner](includes/banner.md)]
 

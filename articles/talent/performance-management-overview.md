@@ -1,5 +1,5 @@
 ---
-title: Oversikt over ytelsesstyring
+title: Ytelsesstyring
 description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
 author: mikefalkner
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 426e0f8096a65b2233cf04663c38335ee6e9bb2d
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="performance-management-overview"></a>Oversikt over ytelsesstyring
+# <a name="performance-management"></a>Ytelsesstyring
 
 [!include [banner](includes/banner.md)]
 

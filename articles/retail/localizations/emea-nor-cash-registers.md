@@ -1,5 +1,5 @@
 ---
-title: Kassaapparater for Norge
+title: Kassefunksjoner for Norge
 description: "Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen."
 author: EvgenyPopovMBS
 manager: vastrup
@@ -18,13 +18,13 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4ea1e88c30c4139e207a257fef678e3669da211e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 2fa48ea11b9bfa156d6c20f18b4247780ed23219
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="cash-registers-for-norway"></a>Kassaapparater for Norge
+# <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 --- 
-title: " Overføre produkter fra distribusjonssenter til butikk ved hjelp av sentralt innkjøp"
-description: "Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle et sentralt innkjøp ved distribusjon av produkter fra en lokasjon til én eller flere butikker."
+title: "Overføre produkter fra distribusjonssentre til butikker via sentralt innkjøp"
+description: "Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle et sentralt innkjøp ved distribusjon av produkter fra én lokasjon til én eller flere butikker."
 author: rubencdelgado
 manager: AnnBe
 ms.date: 02/17/2016
@@ -17,17 +17,17 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9d9a5d4fdece1cfb573224bd54d96ccd281c0f09
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ed47b4f052dab99dec058910e4b8558481b34e59
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Overføre produkter fra distribusjonssenter til butikk ved hjelp av sentralt innkjøp
+# <a name="push-products-from-distribution-centers-to-stores-via-buyers-push"></a>Overføre produkter fra distribusjonssentre til butikker via sentralt innkjøp
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle et sentralt innkjøp ved distribusjon av produkter fra en lokasjon til én eller flere butikker. Brukeren kan definere flere konfigurasjoner og få systemet til å foreslå hvordan produktene skal distribueres, eller manuelt angi hvor produktene skal distribueres og hvor mye som skal distribueres til hver butikk. Denne prosedyren inneholder ikke oppsettet av dataene som skal brukes i det sentrale innkjøpet, for eksempel etterfyllingsregler, organisasjonshierarkier og vekt. Denne prosedyren bruker demonstrasjonsfirmaet USRT.
+Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle et sentralt innkjøp ved distribusjon av produkter fra én lokasjon til én eller flere butikker. Brukeren kan definere flere konfigurasjoner og få systemet til å foreslå hvordan produktene skal distribueres, eller manuelt angi hvor produktene skal distribueres og hvor mye som skal distribueres til hver butikk. Denne prosedyren inneholder ikke oppsettet av data som kan brukes i det sentrale innkjøpet, for eksempel etterfyllingsregler, organisasjonshierarkier og vekt. Denne prosedyren bruker demonstrasjonsfirmaet USRT.
 
 1. Gå til Kjøp etter ordre.
 2. Klikk Ny.
