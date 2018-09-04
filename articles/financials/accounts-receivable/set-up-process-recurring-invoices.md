@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 056bc38fc69422b17b1b7720ce37089b27e8aa2e
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: ac9e836b0baa24c40554844ea4f3288b80e0c654
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -55,11 +55,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="generate-the-recurring-invoices"></a><span data-ttu-id="6f744-125">Generere gjentakende fakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-125">Generate the recurring invoices</span></span>
 <span data-ttu-id="6f744-126">På siden **Gjentakende fakturaer**er det en oppgave som behandler maler for gjentakende faktura.</span><span class="sxs-lookup"><span data-stu-id="6f744-126">On the **Recurring invoices** page, there is a task that processes recurring invoice templates.</span></span> <span data-ttu-id="6f744-127">Du angir fakturadatoen og malen du vil generere fakturaer fra.</span><span class="sxs-lookup"><span data-stu-id="6f744-127">You specify the invoice date and the template to generate the invoices from.</span></span> <span data-ttu-id="6f744-128">Fakturaer genereres og tilordnes ett gjentakende ID-nummer for hver gruppe med fakturaer som behandles.</span><span class="sxs-lookup"><span data-stu-id="6f744-128">Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.</span></span>
-<span data-ttu-id="6f744-129">Postere gjentakende fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-129">Post recurring free text invoices</span></span>
+
+<a name="post-recurring-free-text-invoices"></a><span data-ttu-id="6f744-129">Postere gjentakende fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-129">Post recurring free text invoices</span></span>
 ---------------------------------
 
 <span data-ttu-id="6f744-130">Når gjentakende fakturaer er generert, vises ID-ene for fakturagjentakelse i en posteringsoppgave på siden **Gjentakende fakturaer**.</span><span class="sxs-lookup"><span data-stu-id="6f744-130">After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page.</span></span> <span data-ttu-id="6f744-131">Du kan vise alle fakturaene for en gjentakelses- ID ved å klikke koblingen.</span><span class="sxs-lookup"><span data-stu-id="6f744-131">You can view all of the invoices for a recurrence ID by clicking the link.</span></span> <span data-ttu-id="6f744-132">Du kan slette enkeltfakturaer under gjennomgangen av fakturaer for gjentakelses-ID-en.</span><span class="sxs-lookup"><span data-stu-id="6f744-132">During your review of the invoices for the recurrence ID, you can delete individual invoices.</span></span> <span data-ttu-id="6f744-133">Kundens innstillinger for gjentakelse tilbakestilles for denne malen, slik at den kan genereres på nytt senere.</span><span class="sxs-lookup"><span data-stu-id="6f744-133">The customer's recurrence settings will be reset for that template, so that it can be regenerated later.</span></span> <span data-ttu-id="6f744-134">Du kan postere én, mange eller alle fakturaer for en gjentakelses-ID.</span><span class="sxs-lookup"><span data-stu-id="6f744-134">You can post one, many, or all of the invoices for a recurrence ID.</span></span> <span data-ttu-id="6f744-135">Hvis arbeidsflyter er aktivert, må du klikke **Send** før du kan postere fakturaene.</span><span class="sxs-lookup"><span data-stu-id="6f744-135">If workflows are enabled, you must click **Submit** before you can post the invoices.</span></span>
-<span data-ttu-id="6f744-136">Skrive ut gjentakende fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-136">Print recurring free text invoices</span></span>
+
+<a name="print-recurring-free-text-invoices"></a><span data-ttu-id="6f744-136">Skrive ut gjentakende fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="6f744-136">Print recurring free text invoices</span></span>
 ----------------------------------
 
 <span data-ttu-id="6f744-137">Når gjentakende fakturaer er postert, kan du skrive ut fakturaene på listesiden for fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="6f744-137">After recurring invoices are posted, you can print the invoices from the free text invoice list page.</span></span> <span data-ttu-id="6f744-138">Du kan skrive ut fakturaene som er valgt, eller du kan velge et område med fakturaer som skal skrives ut.</span><span class="sxs-lookup"><span data-stu-id="6f744-138">You can print the invoices that are selected, or you can select a range of invoices to print.</span></span>
