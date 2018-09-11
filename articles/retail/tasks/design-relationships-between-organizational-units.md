@@ -3,29 +3,30 @@ title: Utforme relasjonene mellom organisasjonsenheter
 description: "Dette hjelper med å utforme relasjonen mellom organisasjonsenheter."
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection,  HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7c00940d3c839702ef66a45a8ab9c878e8d2c542
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: b0e013d2987514594e027e3b2a2f0eb19d44c968
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="9295c-103">Utforme relasjonene mellom organisasjonsenheter</span><span class="sxs-lookup"><span data-stu-id="9295c-103">Design the relationships between organizational units</span></span>
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9295c-104">Dette hjelper med å utforme relasjonen mellom organisasjonsenheter.</span><span class="sxs-lookup"><span data-stu-id="9295c-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="9295c-105">Du må opprette et nytt formål for organisasjonen før du definerer relasjonen, eller du kan bruke det eksisterende organisasjonsformålet.</span><span class="sxs-lookup"><span data-stu-id="9295c-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="9295c-106">Demonstrasjonsdatafirmaet USRT brukes til å utføre denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="9295c-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="9295c-107">Denne oppgaven er ment for administratorrollen.</span><span class="sxs-lookup"><span data-stu-id="9295c-107">This task is intended for the administrator role.</span></span>
 

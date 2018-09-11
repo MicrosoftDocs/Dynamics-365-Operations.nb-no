@@ -3,23 +3,24 @@ title: "Identifisere og distribuere verktøy for kandidatvalg"
 description: "Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter."
 author: kherr75
 manager: AnnBe
-ms.date: 02/16/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6cbaaf6fcb943089886f60e72f4fbab5029b2f8d
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 552009ae1cae0797191b4cdaeba3a1731b501a7d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="a50b2-103">Identifisere og distribuere verktøy for kandidatvalg</span><span class="sxs-lookup"><span data-stu-id="a50b2-103">Identify and deploy candidate selection tools</span></span>

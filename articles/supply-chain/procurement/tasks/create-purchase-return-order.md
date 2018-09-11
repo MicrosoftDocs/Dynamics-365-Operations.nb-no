@@ -3,23 +3,24 @@ title: "Opprette en innkjøpsreturordre"
 description: "Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjelp av Kreditnota-handlingen, for å kopiere linjer fra et leverandørfakturadokument til en ny bestilling."
 author: FrankDahl
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 50f54f27a639a8093b811fc32ddf98881397c71b
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: f07593159255ca7984661fc11278e2ac2ca3322b
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-purchase-return-order"></a><span data-ttu-id="8edaa-103">Opprette en innkjøpsreturordre</span><span class="sxs-lookup"><span data-stu-id="8edaa-103">Create a purchase return order</span></span>

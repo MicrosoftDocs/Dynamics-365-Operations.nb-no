@@ -1,26 +1,27 @@
----
+--- 
 title: "Justere lagernivåer i lageret (grunnleggende lageraktiviteter)"
 description: "Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en beholdningsjusteringsjournal for å justere lagernivåer for produkter i lageret."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 43083d52b6b656cd7dd31f4d4cf4225efd8fd28c
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 75ff53872fd81d5b25964c1ba65127f9feaf2b45
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="713b2-103">Justere lagernivåer i lageret (grunnleggende lageraktiviteter)</span><span class="sxs-lookup"><span data-stu-id="713b2-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
@@ -58,4 +59,5 @@ ms.lasthandoff: 08/07/2018
 4. <span data-ttu-id="713b2-133">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="713b2-133">Click OK.</span></span>
 5. <span data-ttu-id="713b2-134">Lukk skjemaet.</span><span class="sxs-lookup"><span data-stu-id="713b2-134">Close the form.</span></span>
 6. <span data-ttu-id="713b2-135">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="713b2-135">Close the page.</span></span>
+
 

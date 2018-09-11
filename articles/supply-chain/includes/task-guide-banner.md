@@ -1,2 +1,1 @@
-> [!NOTE]
-> <span data-ttu-id="95251-101">Vi godtar ikke endringer i dette emnet, fordi det er generert fra en forretningsprosess i Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="95251-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>
+
