@@ -1,28 +1,29 @@
 --- 
-title: Legge til informasjon i ytelsesjournalen og sende ros
+title: Legge til ytelsesjournalen og sende ros til noen
 description: "Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte målene dine eller hvordan du gjorde det i en periode."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="add-information-to-your-performance-journal-and-send-praise"></a>Legge til informasjon i ytelsesjournalen og sende ros
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Legge til ytelsesjournalen og sende ros til noen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -42,7 +43,7 @@ Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte 
 9. Skriv inn en verdi i feltet Nøkkelord.
 10. Klikk Legg til ekstern kobling.
 11. Skriv inn "Envision" i Beskrivelse-feltet.
-12. Skriv inn <https://www.microsoft.com/en/envision/default> i feltet Internett-adresse.
+12. I Internett-adresse-feltet skriver du inn "https://www.microsoft.com/en/envision/default".
 13. Klikk tittelen under Lagre-knappen med navnet Ytelsesjournal for å gå tilbake til rutenettet.
     * Du kan legge til den valgte journalen eller journalene i et mål, slik at de vises når du åpner målet. En kobling vil bli lagt til i kategorien Hurtigkoblinger. Hvis du legger til en journal til et mål, og deretter legger målet til en vurdering, vises journalen automatisk i vurderingen.  
     * Du kan legge til den valgte journalen eller journalene i en vurdering, slik at de vises når du åpner vurderingen.    En kobling vil bli lagt til i hurtigfanen Koblinger.  

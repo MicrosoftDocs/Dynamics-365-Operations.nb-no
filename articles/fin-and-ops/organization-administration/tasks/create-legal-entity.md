@@ -1,28 +1,29 @@
 --- 
-title: Opprett juridiske enheter
+title: Opprette en ny juridisk enhet
 description: En juridisk enhet er en organisasjon som identifiseres via registrering hos en juridisk myndighet.
 author: sericks007
 manager: AnnBe
-ms.date: 06/09/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 4cbfbc5eab20cd94eb8e92f81f18b1f6b5b9cac1
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-legal-entities"></a>Opprett juridiske enheter
+# <a name="create-a-legal-entity"></a>Opprette en ny juridisk enhet
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

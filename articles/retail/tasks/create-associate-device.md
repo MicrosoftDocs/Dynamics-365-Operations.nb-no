@@ -1,31 +1,32 @@
 --- 
-title: Opprette enheter og knytte dem til registre
+title: " Opprette og tilknytte en enhet"
 description: "Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et register."
 author: jashanno
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 7df1111a00fc8ad7f684075fb772b1e33916b687
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="create-devices-and-associate-them-with-registers"></a>Opprette enheter og knytte dem til registre
+# <a name="create-and-associate-a-device"></a> Opprette og tilknytte en enhet
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et register. Det antas at registeret allerede er opprettet.  Denne oppgaven bruker demonstrasjonsdatafirmaet USRT. Denne oppgaven er ment for administratorer, IT-ansvarlige eller IT-sjefer for detaljhandel og butikksjefer.
 
