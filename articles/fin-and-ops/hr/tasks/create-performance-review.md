@@ -3,7 +3,7 @@ title: Opprette en prestasjonsvurdering
 description: "Denne fremgangsmåten viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Konfigurere den globale adresseboken
 description: "Bruk denne fremgangsmåten til å angi standardverdier og sikkerhetspolicyer for den globale adresseboken."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

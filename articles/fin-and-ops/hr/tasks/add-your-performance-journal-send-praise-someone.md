@@ -3,7 +3,7 @@ title: Legge til ytelsesjournalen og sende ros til noen
 description: "Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte målene dine eller hvordan du gjorde det i en periode."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
