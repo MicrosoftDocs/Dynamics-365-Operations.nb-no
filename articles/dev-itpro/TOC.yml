@@ -263,7 +263,7 @@
               href: extensibility/naming-guidelines-extensions.md
             - name: Redusere modellbegrensninger for å refaktorere overlag til utvidelser
               href: extensibility/refactoring-over-layering.md
-        - name: Hvordan kan jeg?
+        - name: Opprette tillegg
           items:
             - name: Legge til verdier i opplistinger
               href: extensibility/add-enum-value.md
@@ -307,13 +307,35 @@
               href: extensibility/pricing-app73.md
             - name: Utvidelse av tabellutforming
               href: extensibility/map-extensions.md
-            - name: Utvidede tabelltilordninger brukt som grensesnitt
+            - name: Utvide tabelltilordninger som brukes som grensesnitt
               href: extensibility/maps-as-interfaces.md
-            - name: Utvidede tabelltilordninger brukt for versjonskontroll
+            - name: Utvide tabelltilordninger som brukes for versjonskontroll
               href: extensibility/maps-with-versioning.md
+        - name: Opprette utvidbare løsninger
+          items:
+            - name: Skrive utvidbar kode
+              href: extensibility/writing-extensible-code.md
+            - name: Klasser
+              href: extensibility/extensible-classes.md
+            - name: Metoder
+              href: extensibility/extensible-methods.md
+            - name: Skjemaer
+              href: extensibility/extensible-forms.md
+            - name: Utvidede datatyper
+              href: extensibility/extensible-edts.md
+            - name: Utvidbare opplistinger
+              href: extensibility/extensible-enums.md
+            - name: Representanter
+              href: extensibility/extensible-code-delegates.md
+            - name: Tabeller
+              href: extensibility/extensible-tables.md
+            - name: Utvidelsesattributter for metoder
+              href: extensibility/extensibility-attributes.md
+            - name: Dele endringer
+              href: extensibility/breaking-changes.md
     - name: Ytelse
       items:
-        - name: Registrere sporinger ved hjelp av Trace parser
+        - name: Registrere sporinger ved hjelp av Trace-parser
           href: perf-test/trace-trace-tutorial.md
         - name: SDK for ytelse og testing av flere brukere via Visual Studio Online
           href: perf-test/perfsdk-tutorial.md
@@ -1184,6 +1206,8 @@
       items:
         - name: Opprette regler for optimaliseringsrådgiver
           href: sysadmin/create-rules-optimization-advisor.md
+    - name: "Rapportere en\_produksjonsnedetid"
+      href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
     - name: Ressurser for Lifecycle Services
@@ -1236,6 +1260,8 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Starte miljøtjenester på nytt
       href: lifecycle-services/restart-environment-services.md
+    - name: "Rapportere en\_produksjonsnedetid"
+      href: lifecycle-services/report-production-outage.md
     - name: Spore brukerpålogginger
       href: lifecycle-services/user-logins.md
     - name: Aktivabibliotek

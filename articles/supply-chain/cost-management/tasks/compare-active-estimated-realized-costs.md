@@ -3,7 +3,7 @@ title: "Sammenligne aktive estimerte og faktiske kostnader på en produksjonsord
 description: "Denne fremgangsmåten viser hvordan du viser årsakene til høy produksjonsavvik for en produksjonsordre."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a99170c76040ad37b540177236db4a74dfcd09e8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: ed9fac210ba19795cd1d7608b582965564decc2e
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a><span data-ttu-id="acdda-103">Sammenligne aktive estimerte og faktiske kostnader på en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="acdda-103">Compare active, estimated, and realized costs on a production order</span></span>

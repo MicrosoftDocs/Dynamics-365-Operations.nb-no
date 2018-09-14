@@ -3,7 +3,7 @@ title: "Opprette en postmal for å forenkle dataregistrering"
 description: "Denne fremgangsmåten beskriver hvordan du oppretter en postmal slik at verdiene som brukes ofte, ikke trenger å angis eksplisitt for hver nye post."
 author: margoc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: d64f32de2fb90397a72d938b937bd1f90e675287
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 36d14c386322adab0cc0ba9b7b47c874aefbe519
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a><span data-ttu-id="b9784-103">Opprette en postmal for å forenkle dataregistrering</span><span class="sxs-lookup"><span data-stu-id="b9784-103">Create a record template to facilitate data entry</span></span>
