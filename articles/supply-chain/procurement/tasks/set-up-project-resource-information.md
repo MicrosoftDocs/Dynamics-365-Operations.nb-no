@@ -3,7 +3,7 @@ title: Definere informasjon om prosjektressurs
 description: Denne prosedyren viser hvordan du setter opp en prosjektressurs.
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

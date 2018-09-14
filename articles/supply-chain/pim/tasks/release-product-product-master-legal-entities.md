@@ -3,7 +3,7 @@ title: Frigi produkt/produktstandard til juridiske enheter
 description: "Denne prosedyren hjelper med å frigi et produkt eller en produktstandard til én eller flere juridiske enheter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

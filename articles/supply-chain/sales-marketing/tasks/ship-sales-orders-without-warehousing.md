@@ -3,7 +3,7 @@ title: Sende salgsordrer uten lagerstyring
 description: "Denne veiledningen beskriver hvordan du oppdaterer en salgsordre når produkter sendes til kunden."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

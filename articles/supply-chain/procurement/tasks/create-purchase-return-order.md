@@ -3,7 +3,7 @@ title: "Opprette en innkjøpsreturordre"
 description: "Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjelp av Kreditnota-handlingen, for å kopiere linjer fra et leverandørfakturadokument til en ny bestilling."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

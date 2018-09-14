@@ -3,7 +3,7 @@ title: Utforme relasjonene mellom organisasjonsenheter
 description: "Dette hjelper med å utforme relasjonen mellom organisasjonsenheter."
 author: mugunthanm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

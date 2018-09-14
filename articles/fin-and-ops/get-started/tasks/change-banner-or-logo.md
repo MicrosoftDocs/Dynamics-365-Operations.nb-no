@@ -3,7 +3,7 @@ title: Endre banner eller logo
 description: "Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller logobilde som vises for en juridisk enhet."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

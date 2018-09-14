@@ -3,7 +3,7 @@ title: Konfigurere lokasjoner i et WMS-aktivert lager
 description: Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker avanserte lagerstyringsprosesser).
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

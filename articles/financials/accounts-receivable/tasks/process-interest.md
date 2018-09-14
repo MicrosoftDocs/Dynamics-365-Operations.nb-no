@@ -3,7 +3,7 @@ title: Behandle rente
 description: Denne prosedyren viser hvordan du oppretter, skriver ut og posterer rentenotaer.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

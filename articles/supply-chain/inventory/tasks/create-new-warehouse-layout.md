@@ -3,7 +3,7 @@ title: Opprette et nytt lageroppsett
 description: "Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i lageret."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

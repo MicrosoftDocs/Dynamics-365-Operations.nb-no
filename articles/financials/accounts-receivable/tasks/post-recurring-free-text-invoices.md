@@ -3,7 +3,7 @@ title: Generere og postere gjentakende fritekstfakturaer
 description: "Gjentakende fakturaer brukes til å fakturere kunder regelmessig for det samme beløpet."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

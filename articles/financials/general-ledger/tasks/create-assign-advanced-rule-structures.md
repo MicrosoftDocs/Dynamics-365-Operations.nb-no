@@ -3,7 +3,7 @@ title: Opprette og tilordne avanserte regelstrukturer
 description: "Denne oppgaveveiledningen viser trinn for å opprette og tilordne en avansert regelstruktur til en kontostruktur."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

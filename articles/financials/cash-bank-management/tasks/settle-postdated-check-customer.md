@@ -3,7 +3,7 @@ title: Utligne en etterdatert sjekk fra en kunde
 description: Du kan utligne en etterdatert sjekk etter at sjekken har blitt avregnet av banken.
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

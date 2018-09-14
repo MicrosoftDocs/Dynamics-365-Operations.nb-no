@@ -3,7 +3,7 @@ title: " Definere regler og parametere for direkteoverføring og sentralt innkj�
 description: "Denne prosedyren beskriver fremgangsmåten for å opprette etterfyllingsregler."
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

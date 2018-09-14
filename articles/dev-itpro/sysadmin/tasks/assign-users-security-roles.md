@@ -3,7 +3,7 @@ title: Tilordne brukere til sikkerhetsroller
 description: "For å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må brukere tilordnes sikkerhetsroller."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

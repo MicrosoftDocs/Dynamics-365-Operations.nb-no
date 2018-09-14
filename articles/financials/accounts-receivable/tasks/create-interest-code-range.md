@@ -3,7 +3,7 @@ title: "Opprette en rentekode med et område"
 description: "Rentekoder kan defineres til å beregne forskjellige rentebeløp basert på et verdiområde."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

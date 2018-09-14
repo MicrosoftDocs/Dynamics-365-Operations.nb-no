@@ -3,7 +3,7 @@ title: 'Opprette kostnadselementer  '
 description: "Det finnes flere måter å opprette kostnadselementer på i kostnadsregnskap."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

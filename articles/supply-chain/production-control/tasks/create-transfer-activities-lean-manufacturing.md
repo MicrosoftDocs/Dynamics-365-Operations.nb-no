@@ -3,7 +3,7 @@ title: "Opprette overføringsaktiviteter for lean manufacturing"
 description: "Opprett en overføringsaktivitet for lean manufacturing."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

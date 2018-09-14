@@ -3,7 +3,7 @@ title: " Opprette og tilknytte en enhet"
 description: "Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et register."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

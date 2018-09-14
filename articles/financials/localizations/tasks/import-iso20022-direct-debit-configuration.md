@@ -3,7 +3,7 @@ title: Importere konfigurasjon for ISO20022-avtalegiro
 description: "Denne fremgangsmåten viser hvordan du importerer en konfigurasjon for elektronisk rapportering for kundebetalinger."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

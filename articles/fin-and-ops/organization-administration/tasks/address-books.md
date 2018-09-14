@@ -3,7 +3,7 @@ title: "Konfigurere adressebøker"
 description: "Bruk denne fremgangsmåten, og valgene du gjorde i planlegging av konfigurasjonen av den globale adresseboken og andre emner for adressebøker, for å definere flere adressebøker for organisasjonen."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

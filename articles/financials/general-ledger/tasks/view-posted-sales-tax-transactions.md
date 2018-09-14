@@ -3,7 +3,7 @@ title: Vis posterte mva-transaksjoner
 description: Du kan vise posterte mva-transaksjoner fra forskjellige sider avhengig av hva du vil vise.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

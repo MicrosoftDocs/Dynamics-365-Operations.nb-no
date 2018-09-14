@@ -3,7 +3,7 @@ title: Definere kildeskatt
 description: "Withholding tax er en leverandørskatt som ikke fører til merverditransaksjoner."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

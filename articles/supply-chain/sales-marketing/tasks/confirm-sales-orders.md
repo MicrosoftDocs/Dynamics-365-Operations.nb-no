@@ -3,7 +3,7 @@ title: Bekrefte salgsordrer
 description: "Denne fremgangsmåten beskriver hvordan du bekrefter salgsordrer."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vis kostnadsoppføringer for et kostnadsobjekt"
 description: "Denne prosedyren viser hvordan du viser kostnadsoppføringer for et kostnadsobjekt."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

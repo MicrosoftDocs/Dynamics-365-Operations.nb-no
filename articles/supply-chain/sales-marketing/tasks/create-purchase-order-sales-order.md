@@ -3,7 +3,7 @@ title: Opprette en bestilling fra en salgsordre
 description: "Denne fremgangsmåten viser hvordan du oppretter en bestilling som er basert på en salgsordre."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

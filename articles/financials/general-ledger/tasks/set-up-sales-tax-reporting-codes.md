@@ -3,7 +3,7 @@ title: Definer mva-rapporteringskoder
 description: "Mva-rapporteringskodene refererer til et feltnummer på en mva-rapport."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

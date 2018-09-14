@@ -3,7 +3,7 @@ title: Definere et finanskontoalias
 description: "Denne fremgangsmåten viser hvordan du oppretter et kontoalias som inneholder en snarvei for å angi et kontonummer."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

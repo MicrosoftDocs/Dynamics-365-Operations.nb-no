@@ -3,7 +3,7 @@ title: Definere prosesser for lageropptelling
 description: "Dette hjelper deg gjennom konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

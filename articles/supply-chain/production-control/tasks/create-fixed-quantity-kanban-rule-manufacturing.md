@@ -3,7 +3,7 @@ title: Opprette en Kanban-regel med fast antall for produksjon
 description: "Denne prosedyren fokuserer på oppsettet som kreves for å opprette en Kanban-regel for fast produksjon for utløsing av transformasjonsaktiviteter, på en arbeidscelle, i et lean-miljø."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Opprette en postmal for å forenkle dataregistrering"
 description: "Denne fremgangsmåten beskriver hvordan du oppretter en postmal slik at verdiene som brukes ofte, ikke trenger å angis eksplisitt for hver nye post."
 author: margoc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

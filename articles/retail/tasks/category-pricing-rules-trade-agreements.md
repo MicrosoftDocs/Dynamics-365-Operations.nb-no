@@ -3,7 +3,7 @@ title: " Kategoriprisregler for å opprette forretningsavtaler"
 description: Denne prosedyren viser hvordan du oppretter salgsprisforretningsavtaler med en kategoriprisregel.
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

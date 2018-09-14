@@ -3,7 +3,7 @@ title: "Opprette en verdistrøm"
 description: "Verdistrømmer er driftsenheter som grupperer én eller flere produksjonsflyter."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

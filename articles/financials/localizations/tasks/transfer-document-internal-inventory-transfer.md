@@ -3,7 +3,7 @@ title: "Generere et overføringsdokument for en intern lageroverføring"
 description: "Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

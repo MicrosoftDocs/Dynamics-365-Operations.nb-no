@@ -3,7 +3,7 @@ title: Opprett en ny fordel
 description: "Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Legge til et bilde i et produkt
 description: "Denne fremgangsmåten viser hvordan du legger til et bilde til et produkt. Demonstrasjonsdatafirmaet som brukes i denne oppgaven, er USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

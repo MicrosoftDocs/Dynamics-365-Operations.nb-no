@@ -3,7 +3,7 @@ title: "Vise journaloppføringer eller transaksjoner"
 description: "Denne prosedyren viser hvordan du bruker av bilagstransaksjonsforespørsler for å søke etter journaloppføringer eller transaksjoner."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

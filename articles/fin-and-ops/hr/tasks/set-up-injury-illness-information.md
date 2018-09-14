@@ -3,7 +3,7 @@ title: Definer informasjon om skade og sykdom
 description: "Arbeidsgivere trenger å vite når ansatte blir skadet eller syke på grunn av farer på arbeidsplassen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Registrere mottaket av varene i bestillingen
 description: "Denne fremgangsmåten viser hvordan du registrerer mottak av varer direkte i en bestilling."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

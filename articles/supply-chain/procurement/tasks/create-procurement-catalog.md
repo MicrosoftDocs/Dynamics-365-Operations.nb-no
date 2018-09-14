@@ -3,7 +3,7 @@ title: "Opprette en innkjøpskatalog"
 description: "Denne veiledningen viser hvordan du oppretter en innkjøpskatalog."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

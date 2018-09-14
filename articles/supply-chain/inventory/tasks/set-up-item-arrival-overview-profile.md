@@ -3,7 +3,7 @@ title: Definere en profil for vareankomstoversikt
 description: "Denne oppgaven fokuserer på oppsettet for en profil for ankomstoversikt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Lukke masseregnskapsperiode
 description: "Denne fremgangsmåten viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

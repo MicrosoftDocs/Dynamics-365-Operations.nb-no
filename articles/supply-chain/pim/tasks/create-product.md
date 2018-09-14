@@ -3,7 +3,7 @@ title: Opprette et produkt
 description: "Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

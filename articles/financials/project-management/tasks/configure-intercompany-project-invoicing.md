@@ -3,7 +3,7 @@ title: Konfigurere konsernintern prosjektfakturering
 description: Denne prosedyren viser hvordan du konfigurerer prosjektfakturering mellom to firmaer i organisasjonen.
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

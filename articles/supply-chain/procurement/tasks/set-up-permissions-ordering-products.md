@@ -3,7 +3,7 @@ title: "Definere tillatelser for bestilling av produkter på vegne av andre"
 description: "Denne fremgangsmåten viser hvordan du gir arbeidere tillatelse til å klargjøre innkjøpsrekvisisjoner på vegne av andre arbeidere."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

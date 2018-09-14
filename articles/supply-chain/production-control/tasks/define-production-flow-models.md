@@ -3,7 +3,7 @@ title: Definere produksjonsflytmodeller
 description: Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean manufacturing er beregnet og opprettholdt.
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

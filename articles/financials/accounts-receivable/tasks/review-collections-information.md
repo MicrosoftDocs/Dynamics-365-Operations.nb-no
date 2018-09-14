@@ -3,7 +3,7 @@ title: "Gå gjennom innkrevingsinformasjon"
 description: "Denne prosedyren hjelper deg med å gå gjennom innkrevingsinformasjon og forskjellige oppsettsalternativer og innkrevingstransaksjoner."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

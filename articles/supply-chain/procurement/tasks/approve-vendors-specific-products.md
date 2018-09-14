@@ -3,7 +3,7 @@ title: "Godkjenne leverandører for bestemte produkter"
 description: "Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte produkter."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

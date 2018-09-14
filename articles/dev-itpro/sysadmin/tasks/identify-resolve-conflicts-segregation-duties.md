@@ -3,7 +3,7 @@ title: "Identifisere og løse konflikter i arbeidsdeling"
 description: "Du kan definere regler for å skille aktiviteter som må utføres av forskjellige brukere."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

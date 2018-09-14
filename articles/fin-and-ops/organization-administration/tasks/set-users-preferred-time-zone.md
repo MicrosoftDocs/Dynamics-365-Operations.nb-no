@@ -3,7 +3,7 @@ title: Angi en brukers foretrukket tidssone
 description: Denne prosedyren beskriver hvordan en bruker med Systemansvarlig-rollen kan angi tidssonen for en bruker.
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

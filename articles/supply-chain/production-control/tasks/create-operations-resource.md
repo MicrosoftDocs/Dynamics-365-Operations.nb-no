@@ -3,7 +3,7 @@ title: Opprette en operasjonsressurs
 description: "En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

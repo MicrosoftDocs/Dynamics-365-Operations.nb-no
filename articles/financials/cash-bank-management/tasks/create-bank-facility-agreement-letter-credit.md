@@ -3,7 +3,7 @@ title: Opprette en fasilitetsavtale for en remburs
 description: "Denne oppgaven hjelper deg med å opprette en bankfasilitetsavtale for å behandle en remburs."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

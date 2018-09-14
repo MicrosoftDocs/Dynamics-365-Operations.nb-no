@@ -3,7 +3,7 @@ title: "Opprette en tidsplan for et område"
 description: "Denne fremgangsmåten viser hvordan du planlegger produksjonsordrer som ennå ikke er startet for et område."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

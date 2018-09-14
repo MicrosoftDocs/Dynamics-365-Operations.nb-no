@@ -3,7 +3,7 @@ title: "Opprette et purreforløp"
 description: "Bruk denne oppgaveveiledningen til å opprette et purreforløp."
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

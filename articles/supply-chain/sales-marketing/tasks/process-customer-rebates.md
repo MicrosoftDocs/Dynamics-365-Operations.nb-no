@@ -3,7 +3,7 @@ title: Generere og behandle kunderabatter
 description: "Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

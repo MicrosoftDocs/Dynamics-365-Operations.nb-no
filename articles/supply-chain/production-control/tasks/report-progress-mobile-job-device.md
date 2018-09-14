@@ -3,7 +3,7 @@ title: "Rapportere fremdrift på en mobil jobbenhet"
 description: Denne prosedyren viser hvordan du starter og rapporterer fremdriften for en produksjonsjobb i registreringsskjemaet for jobbenheten.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

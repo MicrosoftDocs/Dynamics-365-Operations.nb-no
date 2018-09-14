@@ -3,7 +3,7 @@ title: "Administrere utløpsdatoer for fordel"
 description: "Denne fremgangsmåten beskriver hvordan du kan la en fordel utløpe eller utvide den, og styre registreringsdatoene til arbeidere som er registrert i fordelen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

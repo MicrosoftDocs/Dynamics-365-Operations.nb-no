@@ -3,7 +3,7 @@ title: Frigi en dimensjonsbasert produktstandard
 description: "Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes for dimensjonsbaserte konfigurasjoner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

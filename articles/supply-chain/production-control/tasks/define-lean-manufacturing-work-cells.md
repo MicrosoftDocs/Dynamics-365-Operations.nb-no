@@ -3,7 +3,7 @@ title: Definere arbeidsceller for lean manufacturing
 description: En arbeidscelle er en bestemt type ressursgruppe som kan brukes i lean manufacturing-prosessaktiviteter.
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

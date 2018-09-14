@@ -3,7 +3,7 @@ title: Samarbeide med kunder for intern forsyningskjede
 description: "Denne fremgangsmåten angir hvordan du viser alle planlagte bestillinger som skal oppfylles av en konsernintern leverandør."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

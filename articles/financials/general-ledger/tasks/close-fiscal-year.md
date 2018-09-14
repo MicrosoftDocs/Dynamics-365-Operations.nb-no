@@ -3,7 +3,7 @@ title: "Lukke regnskapsåret"
 description: "Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer til et nytt regnskapsår."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

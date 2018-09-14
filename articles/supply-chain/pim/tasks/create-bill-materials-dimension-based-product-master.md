@@ -3,7 +3,7 @@ title: Opprette en stykkliste for en dimensjonsbasert produktstandard
 description: "For denne prosedyren skal du har fullført de 4 forrige veiledningene i disse trinnene med åtte registreringer."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

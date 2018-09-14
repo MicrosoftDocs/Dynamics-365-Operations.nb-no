@@ -3,7 +3,7 @@ title: Definere nye jobber
 description: "Denne oppgaven fokuserer på å opprette en ny jobb."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

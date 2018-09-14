@@ -3,7 +3,7 @@ title: "Godkjenne innboksposter for søknad"
 description: "Denne fremgangsmåten viser hvordan du går gjennom søknader som mottas gjennom selvbetjeningssidene for ansatte."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

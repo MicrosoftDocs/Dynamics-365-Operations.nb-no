@@ -3,7 +3,7 @@ title: Tilbakestill Kanban-jobbstatus
 description: "Denne prosedyren fokuserer på å tilbakestille en ugyldig Kanban-jobbstatus."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

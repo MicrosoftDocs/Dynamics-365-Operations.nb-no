@@ -3,7 +3,7 @@ title: Sette opp en avtale for en last
 description: Denne prosedyren viser hvordan du konfigurerer og planlegger en mottakssoneavtale for last.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Overvåke en kjøring av hovedplanlegging"
 description: "Produksjonsplanleggeren vil se om det er en kjøring for hovedplanlegging pågår."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

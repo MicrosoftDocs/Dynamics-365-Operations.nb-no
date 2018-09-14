@@ -3,7 +3,7 @@ title: Legge inn et tillegg til et anleggsmiddel
 description: "Denne fremgangsmåten viser hvordan du legger til et tillegg i et eksisterende anleggsmiddel."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

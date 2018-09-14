@@ -3,7 +3,7 @@ title: "Angi en utløpsdato for en produksjonsflytversjon"
 description: "For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en gitt dato, eller planlegge erstatning av en aktiv versjon med en ny versjon, må du angi en utløpsdato for versjonen."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: " Definere kanalattributter"
 description: "Forbedre kanalen ved å legge til kanal- og produktattributter."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

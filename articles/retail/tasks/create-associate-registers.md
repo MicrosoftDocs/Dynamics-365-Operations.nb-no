@@ -3,7 +3,7 @@ title: " Opprette og tilknytte kasser"
 description: "Denne fremgangsmåten beskriver hvordan du oppretter en kasse for et salgssted (POS)."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

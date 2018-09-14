@@ -3,7 +3,7 @@ title: Avhende et anleggsmiddel ved hjelp av en fritekstfaktura
 description: "Denne fremgangsmåte viser hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

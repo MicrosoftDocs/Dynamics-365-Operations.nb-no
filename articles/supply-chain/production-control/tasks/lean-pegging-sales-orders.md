@@ -3,7 +3,7 @@ title: Lean-utligning fra salgsordrer
 description: "Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der varen produseres med Kanbaner."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

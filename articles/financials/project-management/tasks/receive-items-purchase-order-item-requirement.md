@@ -3,7 +3,7 @@ title: Motta varer i bestilling fra varebehov
 description: "Denne fremgangsmåten viser hvordan du mottar varer på en bestilling fra et varebehov."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

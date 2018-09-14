@@ -3,7 +3,7 @@ title: "Aktivere lønnsprosessen for timeregistrering"
 description: "Denne fremgangsmåten viser hvordan du aktiverer lønnsprosessen for timeregistrering."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

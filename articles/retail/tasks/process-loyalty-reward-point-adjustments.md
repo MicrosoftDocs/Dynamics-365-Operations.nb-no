@@ -3,7 +3,7 @@ title: " Behandle justeringer av fordelspoeng"
 description: "Denne prosedyren beskriver hvordan du slår opp fordelskortinformasjon og justerer fordelspoeng."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

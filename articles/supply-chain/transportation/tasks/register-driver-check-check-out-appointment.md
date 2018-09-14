@@ -3,7 +3,7 @@ title: "Registrere innsjekking og utsjekking for sjåfør for en avtale"
 description: "Denne fremgangsmåten viser hvordan du registrerer en sjåførinnsjekking og sjåførutsjekking."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

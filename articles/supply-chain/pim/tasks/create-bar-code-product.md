@@ -3,7 +3,7 @@ title: Opprette en strekkode for et produkt
 description: "Denne fremgangsmåten viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

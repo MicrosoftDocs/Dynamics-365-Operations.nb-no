@@ -3,7 +3,7 @@ title: "Legge til en foregående aktivitet i en produksjonsflytaktivitet"
 description: "Alle aktiviteter må være sekvensert i en produksjonsflytversjon."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

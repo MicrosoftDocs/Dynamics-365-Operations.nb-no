@@ -3,7 +3,7 @@ title: Mva-tilordning og overstyringer
 description: "Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til kanaler for detaljhandel."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

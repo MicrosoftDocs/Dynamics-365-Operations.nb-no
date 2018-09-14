@@ -3,7 +3,7 @@ title: Definere lean-planleggingsgrupper
 description: "Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
