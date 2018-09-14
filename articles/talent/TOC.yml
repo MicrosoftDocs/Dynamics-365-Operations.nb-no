@@ -6,6 +6,8 @@
       items:
         - name: Hva er nytt eller endret?
           items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (august 2018)
+              href: whats-new-talent-august2018.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
               href: whats-new-talent-july2018.md
         - name: Systemkrav og oppdateringspolicy
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: Klargjøre for modulære Talent-apper
           href: modular-app-tech-faq.md
-        - name: Utvide funksjonaliteten for Talent
-          href: extend-talent-functionality.md
+        - name: Bygge inn PowerApps-apper
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Få tilgang til forhåndsvisningsfunksjoner
           href: access-preview-feature.md
         - name: Konfigurere lønnsintegrering mellom Talent og Dayforce
