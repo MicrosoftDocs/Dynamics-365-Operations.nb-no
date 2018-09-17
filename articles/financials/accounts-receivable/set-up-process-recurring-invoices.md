@@ -55,11 +55,13 @@ En kunde kan ha flere maler som har forskjellige frekvenser.
 
 ## <a name="generate-the-recurring-invoices"></a>Generere gjentakende fakturaer
 På siden **Gjentakende fakturaer**er det en oppgave som behandler maler for gjentakende faktura. Du angir fakturadatoen og malen du vil generere fakturaer fra. Fakturaer genereres og tilordnes ett gjentakende ID-nummer for hver gruppe med fakturaer som behandles.
-Postere gjentakende fritekstfakturaer
+
+<a name="post-recurring-free-text-invoices"></a>Postere gjentakende fritekstfakturaer
 ---------------------------------
 
 Når gjentakende fakturaer er generert, vises ID-ene for fakturagjentakelse i en posteringsoppgave på siden **Gjentakende fakturaer**. Du kan vise alle fakturaene for en gjentakelses- ID ved å klikke koblingen. Du kan slette enkeltfakturaer under gjennomgangen av fakturaer for gjentakelses-ID-en. Kundens innstillinger for gjentakelse tilbakestilles for denne malen, slik at den kan genereres på nytt senere. Du kan postere én, mange eller alle fakturaer for en gjentakelses-ID. Hvis arbeidsflyter er aktivert, må du klikke **Send** før du kan postere fakturaene.
-Skrive ut gjentakende fritekstfakturaer
+
+<a name="print-recurring-free-text-invoices"></a>Skrive ut gjentakende fritekstfakturaer
 ----------------------------------
 
 Når gjentakende fakturaer er postert, kan du skrive ut fakturaene på listesiden for fritekstfakturaer. Du kan skrive ut fakturaene som er valgt, eller du kan velge et område med fakturaer som skal skrives ut.

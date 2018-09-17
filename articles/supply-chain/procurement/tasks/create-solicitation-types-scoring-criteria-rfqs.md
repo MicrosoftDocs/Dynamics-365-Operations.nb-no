@@ -3,18 +3,19 @@ title: "Opprette forespørselstyper og poengkriterier for tilbudsforespørsler"
 description: "Denne veiledningen viser hvordan du oppretter en forespørsels og knytter den til en poengberegningsmetode."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ Denne veiledningen viser hvordan du oppretter en forespørsels og knytter den ti
 1. Gå til Innkjøp og leverandører > Tilbudsforespørsler > Alle tilbudsforespørsler.
 2. Klikk Ny.
 3. I Forespørselstype-feltet velger du forespørselstypen som du nettopp opprettet. 
+    *   
 4. Klikk OK.
 5. Klikk Poengkriterier.
     * Poengkriteriene som vises, er de fra poengberegningsmetoden som du knyttet til forespørselstypen. Du kan velge å legge til eller slette kriteriene på denne siden. Du kan også legge til nye kriterier ved å kopiere dem fra andre poengberegningsmetoder.  

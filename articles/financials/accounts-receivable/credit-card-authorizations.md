@@ -44,11 +44,13 @@ Hvis du vil bruke kredittkort, må du definere og aktivere en betalingstjeneste 
 
 ## <a name="adding-a-new-credit-card"></a>Legge til et nytt kredittkort
 Du kan opprette nye kredittkortoppføringer på Kunder-siden ved hjelp av Kunde, Oppsett, Kredittkort. Du kan også opprette kredittkortposter når du registrerer salgsordrer på siden Salgsordre ved hjelp av Behandle, Kunde, Kredittkort, Registrer.
-Legge til et kredittkort i en salgsordre
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Legge til et kredittkort i en salgsordre
 -------------------------------------
 
 Du kan legge til et kredittkort i en salgsordre ved å velge et kredittkort i kredittkortoppslaget i hurtigfanen Pris og rabatter på siden Salgsordre. Velg Kredittkort og Autoriser i kategorien Behandle i handlingsruten for å starte godkjenningsprosessen.
-Autorisere et kredittkort
+
+<a name="authorizing-a-credit-card"></a>Autorisere et kredittkort
 -------------------------
 
 Når et kredittkort autoriseres, verifiseres kredittkortnummeret og kredittkortinnehaverens navn, og tilgjengelig kredittkortsaldo kontrolleres. Du kan også autorisere verdien for kortbekreftelse og kortinnehaverens adresse. Deretter trekkes fakturabeløpet fra kundens tilgjengelige kredittkortsaldo. Betalingstjenesten sender informasjon som angir om kredittkortet er godkjent eller ikke. Når salgsordren faktureres, belastes kredittkortet med fakturabeløpet.
