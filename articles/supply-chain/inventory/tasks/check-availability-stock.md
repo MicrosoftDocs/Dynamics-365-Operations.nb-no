@@ -1,7 +1,7 @@
 --- 
 title: Kontrollere lagertilgjengeligheten
 description: "Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbeholdning for et bestemt varenummer."
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
