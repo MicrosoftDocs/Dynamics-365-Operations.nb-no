@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Du kan også finne innholdet med en hvilken som helst søkemotor. For å få bes
 Finance and Operations, Retail og Talent deler en enkelt innholdsfortegnelse på nettstedet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen over innholdsfortegnelsen til å finne emner du leter etter.
 
 ### <a name="follow-a-topic"></a>Følge et emne
-Hvis du vil følge et emne, klikker du på +Følg-knappen under kommentarboksen. Du må logge på å følge emnet. Se [Legg igjen en kommentar](#leave-us-a-comment) for mer informasjon.  
+Hvis du vil følge et emne, klikker du på +Følg-knappen under kommentarboksen. Du må logge på å følge emnet. Se [Send tilbakemelding til oss](#leave-us-feedback) for mer informasjon.  
 
 ### <a name="use-an-rss-feed"></a>Bruke et RSS-feed
 Hvis du vil abonnere på et RSS-feed for alle oppdateringer i enhetlig drift-innholdet, kan du bruke følgende kobling fra en leser som støtter RSS-feeder, for eksempel Internet Explorer eller en RSS-feedbehandler: 

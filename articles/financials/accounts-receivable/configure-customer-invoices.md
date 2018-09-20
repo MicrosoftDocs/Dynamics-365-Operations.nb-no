@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
+ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.openlocfilehash: 6d7c9a61f935503b74ac27b354c875df095d84b4
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/14/2018
 
 ---
 
@@ -36,9 +36,9 @@ En **fritekstfaktura** er ikke relatert til en salgsordre. Den inneholder ordrel
 
 Du finner mer informasjon under: 
 
-[Opprette en fritekstfaktura](tasks/create-free-text-invoice.md)
+[Opprette en fritekstfaktura](../accounts-receivable/create-free-text-invoice-new.md)
 
-[Opprette en mal for fritekstfaktura](tasks/create-free-text-invoice-template.md)
+[Opprette en mal for fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
 
 [Tilordne en mal for fritekstfaktura til en kunde](tasks/assign-free-text-invoice-template-customer.md)
 

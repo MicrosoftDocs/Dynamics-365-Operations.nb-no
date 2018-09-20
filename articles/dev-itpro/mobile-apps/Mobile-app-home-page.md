@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -138,9 +138,10 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <td>8</td>
 <td>Bruker</td>
 <td>Last ned og installer mobilappen.</td>
-<td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android-telefoner</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhone</a></li></ul>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations-appen for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations-appen for iOS</a><BR/>
+(Windows Phone støttes ikke)
 </td>
 </tr>
 <tr class="odd">

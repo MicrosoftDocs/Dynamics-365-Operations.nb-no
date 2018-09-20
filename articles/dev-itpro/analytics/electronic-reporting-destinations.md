@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Formatkonfigurasjoner for elektronisk rapportering (ER) inneholder vanligvis min
 ## <a name="availability-and-general-prerequisites"></a>Tilgjengelighet og generelle forutsetninger
 ER-målfunksjonaliteten er ikke tilgjengelig i Microsoft Dynamics AX 7.0 (februar 2016). Derfor må du installere Microsoft Dynamics 365 for Operations versjon 1611 (november 2016) for å bruke alle funksjonene som er beskrevet i dette emnet. Du kan også installere én av følgende forutsetninger. Vær imidlertid oppmerksom på at disse alternativene gir en mer begrenset ER-målopplevelse.
 
--   Microsoft Dynamics AX-applikasjonsobjekt 7.0.1 (mai 2016)
--   [Hurtigreparasjonen for program](https://fix.lcs.dynamics.com/issue/results/?q=3160213) for administrasjon av mål for elektronisk rapportering
+- Microsoft Dynamics AX-applikasjonsobjekt 7.0.1 (mai 2016)
+- [Hurtigreparasjonen for program](https://fix.lcs.dynamics.com/issue/results/?q=3160213) for administrasjon av mål for elektronisk rapportering
 
 Du kan definere mål bare for ER-konfigurasjoner som er importert, og formater som er tilgjengelige på siden **Elektroniske rapporteringskonfigurasjoner**.
 
 ## <a name="overview"></a>Oversikt
 Funksjonen for administrasjon av elektronisk rapportering er tilgjengelig på **Organisasjonsstyring** &gt; **Elektronisk rapportering**. Her kan du overstyre standard virkemåte for en konfigurasjon. Importerte konfigurasjoner vises ikke her før du klikker **Ny** og deretter velger du en konfigurasjon å opprette innstillinger for i feltet **Referanse**.
 
-[![Velge en konfigurasjon i referansefeltet](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Velge en konfigurasjon i referansefeltet](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Når du har opprettet en referanse, kan du opprette et mål for hver mappe eller for en fil. 
+Når du har opprettet en referanse, kan du opprette et mål for hver mappe eller for en fil.
 
 [![Opprette et filmål](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Du kan opprette ett filmål for hver utdatakomponent med samme format, for eksempel en mappe eller en fil som velges i **Filnavn**-feltet. Du kan deretter aktivere og deaktivere enkeltmål for filmålet separat i dialogboksen **Innstillinger for mål**. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
 
 [![Dialogboksen Innstillinger for mål](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Når du klikker **Rediger** for **Til** eller **Kopi**-feltet, vises dialogbokse
 
 Hvis du velger typen **E-post for utskriftsbehandling**, kan du angi faste e-postadresser i **Til**-feltet. Hvis du vil bruke e-postadresser som ikke er faste, må du velge kildetypen e-post for et filmål. Følgende verdier støttes: **kunde**, **leverandør**, **kundeemne**, **kontakt**, **konkurrent**, **arbeider**, **søker**, **potensiell leverandør** og **sperret leverandør**. Når du har valgt en e-postkildetype, bruker du knappen ved siden av feltet **Kildekonto for e-post** til å åpne skjemaet **Formeldesigner**. Du kan bruke dette skjemaet til å knytte en formel som representerer den valgte partskontoen til e-postmålet.
 
-[![Konfigurere e-posttypen for utskriftsbehandling](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Konfigurere e-posttypen for utskriftsbehandling](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Legg merke til at formler er spesifikke for ER-konfigurasjonen. Angi en dokumentspesifikk referanse til en kunde- eller leverandørparttype i **Formel**-feltet. I stedet for å skrive inn kan du finne en datakildenode som representerer kunde- eller leverandørkontoen, og deretter klikke **Legg til datakilde** for å oppdatere formelen. Hvis du for eksempel bruker konfigurasjonen ISO 20022 Kredittoverføring, er noden som representerer en leverandørkonto **'$PaymentsForCoveringLetter'. Creditor.Identification.SourceID**. Du kan eventuelt angi en hvilken som helst strengverdi, for eksempel **DE-001**, for å lagre en formel.
 
@@ -87,23 +87,27 @@ I dialogboksen **E-post til** klikker du på papirkurven ved siden av feltet **K
 
 Bruk denne e-posttypen hvis konfigurasjonen du bruker, har en node i datakildene som representerer en e-postadresse. Du kan bruke datakilder og funksjoner i formeldesigner for å få en riktig formatert e-postadresse.
 
-[![Tilordne en datakilde for en e-postadresse for et e-postmål](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![Tilordne en datakilde for en e-postadresse for et e-postmål](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Obs!** En SMTP-server (Simple Mail Transfer Protocol) må være konfigurert og tilgjengelig. Du kan angi SMTP-serveren i Finance and Operations på **Systemadministrasjon** &gt; **Oppsett** &gt; **E-post** &gt; **E-postparametere**.
+> [!NOTE]
+> En SMTP-server (Simple Mail Transfer Protocol) må være konfigurert og tilgjengelig. Du kan angi SMTP-serveren i Finance and Operations på **Systemadministrasjon** &gt; **Oppsett** &gt; **E-post** &gt; **E-postparametere**.
 
 ### <a name="archive-destination"></a>Arkivmål
 
 Du kan bruke dette alternativet for å sende utdata til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Sett **Aktivert** til **Ja** for å sende utdata til et mål som er definert av den valgte dokumenttypen. Bare dokumenttyper der gruppen er satt til **Fil** er tilgjengelige for valg. Du definerer dokumenttyper under **Organisasjonsstyring** &gt; **Dokumentbehandling** &gt; **Dokumenttyper**. Konfigurasjonen for ER-mål er den samme som konfigurasjonen for systemet for dokumentbehandling.
 
-[![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-Plasseringen bestemmer hvor filen lagres. Etter at **Arkiv**-målet er aktivert, kan resultatene av konfigurasjonskjøringen lagres i jobbarkivet. Du kan vise resultatene på **Organisasjonsstyring** &gt; **Elektronisk rapportering** &gt; **Arkiverte jobber for elektronisk rapportering**. **Merk:** Du kan velge en dokumenttype for jobbarkivet i Finance and Operations, på **Organisasjonsstyring** &gt; **Arbeidsområder** &gt; **Elektronisk rapportering** &gt; **Parametere for elektronisk rapportering**.
+Plasseringen bestemmer hvor filen lagres. Etter at **Arkiv**-målet er aktivert, kan resultatene av konfigurasjonskjøringen lagres i jobbarkivet. Du kan vise resultatene på **Organisasjonsstyring** &gt; **Elektronisk rapportering** &gt; **Arkiverte jobber for elektronisk rapportering**.
+
+> [!NOTE]
+> Du kan velge en dokumenttype for jobbarkivet i Finance and Operations, på **Organisasjonsstyring** &gt; **Arbeidsområder** &gt; **Elektronisk rapportering** &gt; **Parametere for elektronisk rapportering**.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Du kan lagre en fil i en bestemt SharePoint-mappe. Du definerer standard SharePoint-server på **Organisasjonsstyring** &gt; **Dokumenthåndtering** &gt; **Parametere for dokumenthåndtering**, i kategorien **SharePoint**. Etter at SharePoint-mappen er konfigurert kan du velge den som folderen hvor ER-utgangen skal lagres for dokumenttypen. 
+Du kan lagre en fil i en bestemt SharePoint-mappe. Du definerer standard SharePoint-server på **Organisasjonsstyring** &gt; **Dokumenthåndtering** &gt; **Parametere for dokumenthåndtering**, i kategorien **SharePoint**. Etter at SharePoint-mappen er konfigurert kan du velge den som folderen hvor ER-utgangen skal lagres for dokumenttypen.
 
-[![Velge en SharePoint-mappe](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![Velge en SharePoint-mappe](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure Storage
 
@@ -119,7 +123,10 @@ Hvis du setter **Aktivert** til **Ja**, opprettes det en forhåndsvisning av utd
 
 ### <a name="power-bi-destination"></a>Power BI-mål
 
-Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra din forekomst av Finance and Operations til Microsoft Power BI-tjenester. De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet. Se [Bruk en elektronisk rapporteringskonfigurasjon til å forsyne Power BI med data fra Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md) hvis du vil ha mer informasjon. **Tips:** Hvis du vil overstyre standard virkemåte (det vil si i dialogboksen for konfigurasjon), kan du opprette en målreferanse og et filmål for den primære utdatakomponenten, og deretter deaktivere alle mål.
+Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra din forekomst av Finance and Operations til Microsoft Power BI-tjenester. De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet. Se [Bruk en elektronisk rapporteringskonfigurasjon til å forsyne Power BI med data fra Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md) hvis du vil ha mer informasjon.
+
+> [!TIP]
+> Hvis du vil overstyre standard virkemåte (det vil si i dialogboksen for konfigurasjon), kan du opprette en målreferanse og et filmål for den primære utdatakomponenten, og deretter deaktivere alle mål.
 
 ## <a name="security-considerations"></a>Sikkerhetshensyn
 To typer rettigheter og plikter brukes for ER-mål. Én type styrer muligheten til å opprettholde de generelle målene som er konfigurert for en juridisk enhet (det vil si tilgang til siden **Mål for elektronisk rapportering**). Den andre typen styrer en muligheten for et program til å overstyre ved kjøretid, målinnstillingene som er konfigurert av en ER-utvikler eller ER-funksjonskonsulent.
@@ -158,7 +165,4 @@ Forutsetningen er at formatet må være tilgjengelig i ER-konfigurasjoner. Hvis 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
-
-
-
 

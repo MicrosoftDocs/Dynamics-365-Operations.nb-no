@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Du kan legge til spesifikke enheter for en import- eller eksportjobb eller velge
 ### <a name="set-the-data-format-for-the-job"></a>Sett dataformatet for jobben
 Når du velger et foretak, må du velge formatet for dataene som skal eksporteres eller importeres. Du kan definere formatet ved å bruke **Oppsett for datakilder**-flisen. Et kildedataformat er en kombinasjon av **type**, **filformat**, **radskilletegn** og **kolonneskilletegn**. Det finnes også andre attributter, men dette er de viktigste å forstå. I tabellen nedenfor finner du en oversikt over gyldige kombinasjoner.
 
-| **Filformat**        | **Rad-/kolonneskilletegn**                   | **XML-stil**             |
+| Filformat            | Rad-/kolonneskilletegn                       | XML-stil                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-I/T-                     |
 | XML                    | \-I/T-                                      | XML-attributt for XML-element |
 | Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Sekvenser enhetene
 Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport.

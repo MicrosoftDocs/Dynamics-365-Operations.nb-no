@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > Denne PowerBI.com-løsningen er avskrevet slik det står i [Power BI-innholdspakker tilgjengelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette emnet beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
@@ -58,7 +58,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 
 | Rapporter                      | Informasjon som rapporten inneholder |
 |-----------------------------|--------------------------------------|
-| Kontantanalyse               | Kontanter etter juridisk enhet, kontanter etter kvartal, kontanter totalt og kontanter etter konto<br><br>**Obs!** Kontanter etter kvartal inkluderer ikke startsaldoer i totalen for det første kvartalet. Den viser summen av nye transaksjoner som er postert i hvert kvartal.|
+| Kontantanalyse               | Kontanter etter juridisk enhet, kontanter etter kvartal, kontanter totalt og kontanter etter konto<blockquote>[!NOTE] Kontanter etter kvartal inkluderer ikke startsaldoer i totalen for det første kvartalet. Den viser summen av nye transaksjoner som er postert i hvert kvartal.</blockquote> |
 | Likviditetsgradsanalyse      | Likviditetsgrad etter juridisk enhet, likviditetsgrad etter kvartal og saldoer for omsetningsaktiva og kortsiktig gjeld |
 | Analyse av likviditetsgrad II        | Likviditetsgrad II etter juridisk enhet, likviditetsgrad II etter kvartal og saldoer for kontanter, kundereskontro og kortsiktig gjeld |
 | Analyse av solgte varers kost | Solgte varers kost (vareforbruk) etter juridisk enhet, vareforbruk i år og i fjor etter kvartal, vareforbruk i forhold til salg etter juridisk enhet, totalt vareforbruk og vareforbruk i forhold til salg i prosent |
@@ -69,7 +69,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 | Analyse av inntekter           | Faktiske og budsjetterte inntekter før renter og avgifter etter juridisk enhet, inntekter før renter og avgifter i år og i fjor, utgifter i forhold til inntekter i prosent og faktiske og budsjetterte utgifter i forhold til inntekter |
 | Omsetningsanalyse            | Totalomsetning, faktisk og budsjettert totalomsetning etter juridisk enhet, totalomsetning i år og i fjor, budsjettavvik for omsetning etter juridisk enhet og totalomsetning i denne perioden og siste periode |
 | Utgiftsanalyse            | Totale utgifter, faktiske i forhold til budsjetterte totale utgifter etter juridisk enhet, faktiske og budsjetterte totale utgifter etter kvartal, totale utgifter etter kontokategori og driftsutgiftsgrad |
-| Analyse av fakturert inntekt     | Total kundereskontro, total kundereskontro etter juridisk enhet, total kundereskontro etter kvartal og saldoer for kontiene for kundereskontro<br><br>**Obs!** Informasjonen inkluderer ikke startsaldoer for kundefinanskontoene. Den viser summen av nye transaksjoner som er postert til kunder. |
+| Analyse av fakturert inntekt     | Total kundereskontro, total kundereskontro etter juridisk enhet, total kundereskontro etter kvartal og saldoer for kontiene for kundereskontro<blockquote>[!NOTE] Informasjonen inkluderer ikke startsaldoer for kundesfinanskontoene. Den viser summen av nye transaksjoner som er postert til kunder.</blockquote> |
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -89,5 +89,5 @@ Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresu
 - Finanskontoer
 - ChartofAccounts
 
-Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet. 
+Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet.
 

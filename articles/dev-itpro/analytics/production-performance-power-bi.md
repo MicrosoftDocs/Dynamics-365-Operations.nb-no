@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: nb-no
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Dette Power BI-innholdet lar deg også analysere produksjonsavvik. Produksjonsav
 **Produksjonsytelse** for Power BI-innhold inneholder data som kommer fra produksjonsordrer og partiordrer. Rapportene inneholder ikke data som er knyttet til kanban-produksjoner.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Power BI-innholdet **Produksjonsytelse** vises på **Produksjonsytelse**-siden (**Produksjonskontroll** > **Forespørsler og rapporter** > **Analyse av produksjonsytelse** > **Produksjonsytelse**). 
+Power BI-innholdet **Produksjonsytelse** vises på **Produksjonsytelse**-siden (**Produksjonskontroll** \> **Forespørsler og rapporter** \> **Analyse av produksjonsytelse** \> **Produksjonsytelse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 
@@ -51,8 +51,8 @@ Power BI-innholdet **Produksjonsytelse** vises på **Produksjonsytelse**-siden (
 
 Tabellen nedenfor gir en oversikt over effektene som er inkludert.
 
-| Rapportside                                | Diagrammer                                               | Fliser |
-|--------------------------------------------|------------------------------------------------------|-------|
+| Rapportside                                | Diagrammer | Fliser |
+|--------------------------------------------|--------|-------|
 | Produksjonsytelse                     | <ul><li>Antall produksjoner etter dato</li><li>Antall produksjoner etter produkt og varegruppe</li><li>Antall planlagte produksjoner etter dato</li><li>10 dårligste produkter etter til planlagt tid og i sin helhet</li></ul> | <ul><li>Totalt antall ordrer</li><li>Prosent til planlagt tid og i sin helhet</li><li>Ufullstendig %</li><li>For tidlig %</li><li>For sent %</li></ul> |
 | Mangler etter produkt                         | <ul><li>Antall defekte (spm) etter dato</li><li>Antall defekte (spm) etter produkt og varegruppe</li><li>Antall produsert etter dato</li><li>Topp 10 produkter etter effektiv sats</li></ul> | <ul><li>Antall defekte (spm)</li><li>Defekt antall</li><li>Totalt antall</li></ul> |
 | Manglertrend etter produkt                   | Antall defekte (spm) etter antall produsert | Antall defekte (spm) |
@@ -88,35 +88,35 @@ Tabellen nedenfor viser hvordan de aggregerte nøkkelmålingene brukes til å op
 
 | Mål                  | Slik beregnes målet |
 |--------------------------|-------------------------------|
-| Produksjonsavvik, %   | SUM('Produksjonsavvik'[produksjonsavvik]) / SUM('Produksjonsavvik'[estimert kostnad]) |
+| Produksjonsavvik, %   | SUM('Produksjonsavvik'\[produksjonsavvik\]) / SUM('Produksjonsavvik'\[estimert kostnad\]) |
 | Alle planlagte ordrer       | COUNTROWS('Planlagt produksjonsordre') |
-| For tidlig                    | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'[Planlagt sluttdato] \< 'Planlagt produksjonsordre'[Behovsdato])) |
-| For sent                     | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'[Planlagt sluttdato] \> 'Planlagt produksjonsordre'[Behovsdato])) |
-| Til planlagt tid                  | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'[Planlagt sluttdato] = 'Planlagt produksjonsordre'[Behovsdato])) |
-| Til planlagt tid                | IF ( 'Planlagt produksjonsordre'[til planlagt tid] \<\> 0, 'Planlagt produksjonsordre'[til planlagt tid], IF ('Planlagt produksjonsordre'[Alle planlagte ordrer] \<\> 0, 0, BLANK()) ) / 'Planlagt produksjonsordre'[Alle planlagte ordrer] |
-| Fullført                | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er RAF'ed] = TRUE)) |
-| Antall defekte (spm)     | IF( 'Produksjonsordre'[Totalt antall] = 0, BLANK(), (SUM('Produksjonsordre'[Defekt antall]) / 'Produksjonsordre'[Totalt antall]) \* 1000000) |
-| Forsinket produksjon  | 'Produksjonsordre' [For sent \#] / 'Produksjonsordre'[Fullført] |
-| For tidlig og i sin helhet          | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er i sin helhet] = TRUE && 'Produksjonsordre'[Er for tidlig] = TRUE)) |
-| For tidlig \#                 | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er for tidlig] = TRUE)) |
-| For tidlig %                  | IFERROR( IF('Produksjonsordre'[For tidlig \#] \<\> 0, 'Produksjonsordre'[For tidlig \#], IF('Produksjonsordre'[Totalt antall ordrer] = 0, BLANK(), 0)) / 'Produksjonsordre'[Totalt antall ordrer], BLANK()) |
-| Ufullstendig               | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er i sin helhet] = FALSE && 'Produksjonsordre'[Er RAF'ed] = TRUE)) |
-| Ufullstendig %             | IFERROR( IF('Produksjonsordre'[Ufullstendig] \<\> 0, 'Produksjonsordre'[Ufullstendig], IF('Produksjonsordre'[Totalt antall ordrer] = 0, BLANK(), 0)) / 'Produksjonsordre'[Totalt antall ordrer], BLANK()) |
-| Er forsinket               | 'Produksjonsordre'[Er RAF'ed] = TRUE && 'Produksjonsordre'[Forsinket verdi] = 1 |
-| Er tidlig                 | 'Produksjonsordre'[Er RAF'ed] = TRUE && 'Produksjonsordre'[Antall dager forsinket] \< 0 |
-| Er i sin helhet               | 'Produksjonsordre'[Antall korrekte] \>= 'Produksjonsordre'[Planlagt antall] |
-| Er RAF'ed                | 'Produksjonsordre'[Produksjonsstatusverdi] = 5 \|\| 'Produksjonsordre'[Produksjonsstatusverdi] = 7 |
-| For sent og i sin helhet           | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er i sin helhet] = TRUE && 'Produksjonsordre'[Er forsinket] = TRUE)) |
-| For sent \#                  | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er forsinket] = TRUE)) |
-| For sent %                   | IFERROR( IF('Produksjonsordre'[For sent \#] \<\> 0, 'Produksjonsordre'[For sent \#], IF('Produksjonsordre'[Totalt antall ordrer] = 0, BLANK(), 0)) / 'Produksjonsordre'[Totalt antall ordrer], BLANK()) |
-| Til planlagt tid og i sin helhet        | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'[Er i sin helhet] = TRUE && 'Produksjonsordre'[Er forsinket] = FALSE && 'Produksjonsordre'[Er for tidlig] = FALSE)) |
-| Prosent til planlagt tid og i sin helhet      | IFERROR( IF('Produksjonsordre'[Til planlagt tid og i sin helhet] \<\> 0, 'Produksjonsordre'[Til planlagt tid og i sin helhet], IF('Produksjonsordre'[Fullført] = 0, BLANK(), 0)) / 'Produksjonsordre'[Fullført], BLANK()) |
+| For tidlig                    | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'\[Planlagt sluttdato\] \< 'Planlagt produksjonsordre'\[Behovsdato\])) |
+| Forsinket                     | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'\[Planlagt sluttdato\] \> 'Planlagt produksjonsordre'\[Behovsdato\])) |
+| Til planlagt tid                  | COUNTROWS(FILTER('Planlagt produksjonsordre', 'Planlagt produksjonsordre'\[Planlagt sluttdato\] = 'Planlagt produksjonsordre'\[Behovsdato\])) |
+| Til planlagt tid                | IF ( 'Planlagt produksjonsordre'\[til planlagt tid\] \<\> 0, 'Planlagt produksjonsordre'\[til planlagt tid\], IF ('Planlagt produksjonsordre'\[Alle planlagte ordrer\] \<\> 0, 0, BLANK()) ) / 'Planlagt produksjonsordre'\[Alle planlagte ordrer\] |
+| Fullført                | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er RAF'ed\] = TRUE)) |
+| Antall defekte (spm)     | IF( 'Produksjonsordre'\[Totalt antall\] = 0, BLANK(), (SUM('Produksjonsordre'\[Defekt antall\]) / 'Produksjonsordre'\[Totalt antall\]) \* 1000000) |
+| Forsinket produksjon  | 'Produksjonsordre'\[For sent \#\] / 'Produksjonsordre'\[Fullført\] |
+| For tidlig og i sin helhet          | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er i sin helhet\] = TRUE && 'Produksjonsordre'\[Er for tidlig\] = TRUE)) |
+| For tidlig \#                 | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er for tidlig\] = TRUE)) |
+| For tidlig %                  | IFERROR( IF('Produksjonsordre'\[For tidlig \#\] \<\> 0, 'Produksjonsordre'\[For tidlig \#\], IF('Produksjonsordre'\[Totalt antall ordrer\] = 0, BLANK(), 0)) / 'Produksjonsordre'\[Totalt antall ordrer\], BLANK()) |
+| Ufullstendig               | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er i sin helhet\] = FALSE && 'Produksjonsordre'\[Er RAF'ed\] = TRUE)) |
+| Ufullstendig %             | IFERROR( IF('Produksjonsordre'\[Ufullstendig\] \<\> 0, 'Produksjonsordre'\[Ufullstendig\], IF('Produksjonsordre'\[Totalt antall ordrer\] = 0, BLANK(), 0)) / 'Produksjonsordre'\[Totalt antall ordrer\], BLANK()) |
+| Er forsinket               | 'Produksjonsordre'\[Er RAF'ed\] = TRUE && 'Produksjonsordre'\[Forsinket verdi\] = 1 |
+| Er tidlig                 | 'Produksjonsordre'\[Er RAF'ed\] = TRUE && 'Produksjonsordre'\[Antall dager forsinket\] \< 0 |
+| Er i sin helhet               | 'Produksjonsordre'\[Antall korrekte\] \>= 'Produksjonsordre'\[Planlagt antall\] |
+| Er RAF'ed                | 'Produksjonsordre'\[Produksjonsstatusverdi\] = 5 \|\| 'Produksjonsordre'\[Produksjonsstatusverdi\] = 7 |
+| For sent og i sin helhet           | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er i sin helhet\] = TRUE && 'Produksjonsordre'\[Er forsinket\] = TRUE)) |
+| For sent \#                  | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er forsinket\] = TRUE)) |
+| For sent %                   | IFERROR( IF('Produksjonsordre'\[For sent \#\] \<\> 0, 'Produksjonsordre'\[For sent \#\], IF('Produksjonsordre'\[Totalt antall ordrer\] = 0, BLANK(), 0)) / 'Produksjonsordre'\[Totalt antall ordrer\], BLANK()) |
+| Til planlagt tid og i sin helhet        | COUNTROWS(FILTER('Produksjonsordre', 'Produksjonsordre'\[Er i sin helhet\] = TRUE && 'Produksjonsordre'\[Er forsinket\] = FALSE && 'Produksjonsordre'\[Er for tidlig\] = FALSE)) |
+| Prosent til planlagt tid og i sin helhet      | IFERROR( IF('Produksjonsordre'\[Til planlagt tid og i sin helhet\] \<\> 0, 'Produksjonsordre'\[Til planlagt tid og i sin helhet\], IF('Produksjonsordre'\[Fullført\] = 0, BLANK(), 0)) / 'Produksjonsordre'\[Fullført\], BLANK()) |
 | Totalt antall ordrer             | COUNTROWS('Produksjonsordre') |
-| Totalt antall           | SUM('Produksjonsordre'[Antall korrekte]) + SUM('Produksjonsordre'[Defekt antall]) |
-| Antall defekte (spm)        | IF( 'Rutetransaksjoner'[Behandlet antall] = 0, BLANK(), (SUM('Rutetransaksjoner'[Defekt antall]) / 'Rutetransaksjoner'[Behandlet antall]) \* 1000000) |
-| Antall defekte kombinert (spm) | IF( 'Rutetransaksjoner'[Totalt antall kombinert] = 0, BLANK(), (SUM('Rutetransaksjoner'[Defekt antall]) / 'Rutetransaksjoner'[Totalt antall kombinert]) \* 1000000) |
-| Behandlet antall       | SUM('Rutetransaksjoner'[Antall korrekte]) + SUM('Rutetransaksjoner'[Defekt antall]) |
-| Totalt antall kombinert     | SUM('Produksjonsordre'[Antall korrekte]) + SUM('Rutetransaksjoner'[Defekt antall]) |
+| Totalt antall           | SUM('Produksjonsordre'\[Antall korrekte\]) + SUM('Produksjonsordre'\[Defekt antall\]) |
+| Antall defekte (spm)        | IF( 'Rutetransaksjoner'\[Behandlet antall\] = 0, BLANK(), (SUM('Rutetransaksjoner'\[Defekt antall\]) / 'Rutetransaksjoner'\[Behandlet antall\]) \* 1000000) |
+| Antall defekte kombinert (spm) | IF( 'Rutetransaksjoner'\[Totalt antall kombinert\] = 0, BLANK(), (SUM('Rutetransaksjoner'\[Defekt antall\]) / 'Rutetransaksjoner'\[Totalt antall kombinert\]) \* 1000000) |
+| Behandlet antall       | SUM('Rutetransaksjoner'\[Antall korrekte\]) + SUM('Rutetransaksjoner'\[Defekt antall\]) |
+| Totalt antall kombinert     | SUM('Produksjonsordre'\[Antall korrekte\]) + SUM('Rutetransaksjoner'\[Defekt antall\]) |
 
 Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele opp de aggregerte målingene, slik at du kan få flere detaljer og dypere analytisk innsikt.
 
@@ -130,6 +130,4 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Enheter                  | ID og navn                                                   |
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
-
-
 

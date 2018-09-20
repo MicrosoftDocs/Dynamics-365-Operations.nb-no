@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7207febc58dbab1df5551ae0f74ad74d9ced8e56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,73 +35,72 @@ Når du har utformet byggeblokker og genererte rapporter, er det nyttig å organ
 Du kan gi nytt navn til mapper, rapporter, byggeblokker og andre objekter i rapportutforming, for å bidra til å organisere filene dine. Avhengig av hvilken type objekt du gir nytt navn, må du kanskje oppdatere tilknytninger til dette objektet.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
-I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. **Obs!** Når du gir nytt navn til en byggeblokk, må du oppdatere alle rapporteringsdefinisjoner som bruker byggeblokken. Hvis ikke, kan ikke en ny rapport genereres.
+I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner.
+
+> [!NOTE]
+> Når du gir nytt navn til en byggeblokk, må du oppdatere alle rapporteringsdefinisjoner som bruker byggeblokken. Hvis ikke, kan ikke en ny rapport genereres.
 
 ### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
 
-1.  I Report Designer kan du bruke navigasjonsruten til å finne mappen eller objektet du vil gi nytt navn.
-2.  Høyreklikk mappen eller objektet, og klikk deretter **Gi nytt navn**. **Navn**-feltet i navigasjonsruten blir tilgjengelig.
-3.  Skriv inn et nytt navn, og trykk deretter Enter.
-4.  Hvis byggeblokken er en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon, må du oppdatere andre byggeblokker som er knyttet til det. Høyreklikk byggeblokken du ga nytt navn i trinn 3, velg **Tilknytninger** og velg deretter et element i listen for å oppdatere det.
-5.  Gjenta trinn 4 til alle tilknyttede elementer er oppdaterte.
+1. I Report Designer kan du bruke navigasjonsruten til å finne mappen eller objektet du vil gi nytt navn.
+2. Høyreklikk mappen eller objektet, og klikk deretter **Gi nytt navn**. **Navn**-feltet i navigasjonsruten blir tilgjengelig.
+3. Skriv inn et nytt navn, og trykk deretter Enter.
+4. Hvis byggeblokken er en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon, må du oppdatere andre byggeblokker som er knyttet til det. Høyreklikk byggeblokken du ga nytt navn i trinn 3, velg **Tilknytninger** og velg deretter et element i listen for å oppdatere det.
+5. Gjenta trinn 4 til alle tilknyttede elementer er oppdaterte.
 
 ## <a name="create-and-manage-report-groups"></a>Opprette og administrere rapportgrupper.
 Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hvis du vil opprette, endre, slette og generere rapportgrupper, må du ha rolle som utformer eller administrator. Brukere som har generatorrollen kan generere rapportgrupper og kan også endre innstillingen for brukerrapportdefinisjonene for rapportgrupper.
 
 ### <a name="create-a-report-group"></a>Opprette en rapportgruppe
 
-1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2.  På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på verktøylinjen.
-3.  Klikk kategorien **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
-4.  Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
-5.  I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
-6.  Klikk **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
+1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+2. På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på verktøylinjen.
+3. Klikk kategorien **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
+4. Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
+5. I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
+6. Klikk **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
 
 ### <a name="modify-a-report-group"></a>Endre en rapportgruppe
 
-1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2.  Dobbeltklikk rapportgruppen du vil endre.
-3.  I kategorien **Rapportgruppe** gjør du de ønskede endringene.
-4.  På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen. Du kan også klikke **Lagre**-knappen ![Lagre](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Lagre") på verktøylinjen.
+1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+2. Dobbeltklikk rapportgruppen du vil endre.
+3. I kategorien **Rapportgruppe** gjør du de ønskede endringene.
+4. På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen. Du kan også klikke **Lagre**-knappen ![Lagre](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Lagre") på verktøylinjen.
 
-**Obs!** Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
+> [OBS!] Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapport for en rapportgruppe
 
-1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2.  Åpne rapportgruppen som skal genereres.
-3.  Klikk **Generer rapport**-knappen ![Generer rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generer rapport") for å generere rapporter.
+1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+2. Åpne rapportgruppen som skal genereres.
+3. Klikk **Generer rapport**-knappen ![Generer rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generer rapport") for å generere rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
-1.  Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2.  Høyreklikk rapportgruppen som skal slettes, og velg deretter **Slett**.
-3.  Når det vises en bekreftelsesmelding, klikker du **Ja**.
+1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+2. Høyreklikk rapportgruppen som skal slettes, og velg deretter **Slett**.
+3. Når det vises en bekreftelsesmelding, klikker du **Ja**.
 
 ## <a name="report-group-tab-controls"></a>Kontroller i kategorien Rapportgruppe
 Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Styring</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Overstyre firma, detaljer og datoinnstillinger fra individuelle rapportdefinisjoner</td>
 <td>Merk av for dette alternativet for å overstyre individuelle rapportdefinisjoner av rapportene i denne rapportgruppen for generering av bare disse rapportene.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Firmanavn</td>
 <td>Velg firmaet som skal brukes for rapportene.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Detaljnivå</td>
 <td>Angi detaljnivået som rapportene inneholder.
 <ul>
@@ -110,7 +109,7 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 <li><strong>Økonomisk, Konto og Transaksjon</strong> − En rapport som inneholder et overordnet sammendrag og transaksjonsdetaljer.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Provisorisk</td>
 <td>Angi aktivitetstypene som rapportene inneholder.
 <ul>
@@ -119,11 +118,11 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 <li><strong>Bare upostert aktivitet</strong>− Inkluderer bare transaksjonene som er registrert, men som ennå ikke er postert i finansdataene.</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Ta med alle rapporteringsvalutaer</td>
 <td>Alle tilleggsrapporteringsvalutaer som er konfigurert i Microsoft Dynamics ERP-systemet, vises her. Merk av for dette alternativet for å generere tilleggsrapporter i valutaene som er angitt. For å vise rapportene i nettvisningsprogrammet ved å klikke <strong>Valuta</strong>-knappen og velge en valuta.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Datoinformasjon ikke lagret med rapportdefinisjon</td>
 <td><ul>
 <li>Basisperiode</li>
@@ -132,14 +131,14 @@ Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
 </ul>
 Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Datoinformasjon lagret med rapportdefinisjon</td>
 <td><ul>
 <li>Rapportdato</li>
 <li>Standard basisperiode</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Rapporter i gruppen</td>
 <td>Legg til, fjerne og endre rapportrekkefølgen i rapportgruppen.
 <ul>
@@ -151,13 +150,7 @@ Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</t
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-
 

@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,31 @@ Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle
 Finansrapportering inkluderer støtte for dimensjon. Derfor er kontosegmenter eller dimensjoner tilgjengelig umiddelbart. Ingen ekstra verktøy eller konfigurasjonstrinn er nødvendig.
 
 ## <a name="financial-reporting-setup"></a>Oppsett for finansrapportering
-**Oppsett for finansrapportering**-siden inneholder en liste over alle finansdimensjonene i systemet. **Finans** > **Finansoppsett** > **Oppsett for finansrapportering**. 
+**Oppsett for finansrapportering**-siden inneholder en liste over alle finansdimensjonene i systemet. **Økonomimodul** \> **Finansoppsett** \> **Oppsett for finansrapportering**.
 
 **Oppsett for finansrapportering**-siden har to deler som fastsetter dataene du rapporterer i Finansrapportering:
 
-• **Kategorien Dimensjon** - Siden forskjellige firmaer bruker ulike dimensjoner og kontostrukturer, er det ikke mulig å bestemme rekkefølgen som brukere vil vise alle finansdimensjoner i rapporter. På denne siden kan du angi rekkefølgen du vil finansdimensjonene skal vises når du bygger og viser en rapport i Finansrapportering.
-
-• **Kategorien Attributter** er der du kan velge om du vil ha muligheten til å bruke **Leverandører** og **Kunder** som attributter for filtrering og rapportutforming. Rapportering av leverandør og kunde vil bare være nyttig hvis du ikke angir flere leverandører eller kunder i ett bilag ved postering av transaksjoner. Hvis du velger leverandør og/eller kunde, legges det til ekstra tid i integreringen.
-
-
+- **Kategorien Dimensjon** - Siden forskjellige firmaer bruker ulike dimensjoner og kontostrukturer, er det ikke mulig å bestemme rekkefølgen som brukere vil vise alle finansdimensjoner i rapporter. På denne siden kan du angi rekkefølgen du vil finansdimensjonene skal vises når du bygger og viser en rapport i Finansrapportering.
+- **Kategorien Attributter** er der du kan velge om du vil ha muligheten til å bruke **Leverandører** og **Kunder** som attributter for filtrering og rapportutforming. Rapportering av leverandør og kunde vil bare være nyttig hvis du ikke angir flere leverandører eller kunder i ett bilag ved postering av transaksjoner. Hvis du velger leverandør og/eller kunde, legges det til ekstra tid i integreringen.
 
 ## <a name="financial-reporting-components"></a>Komponenter for finansrapportering
 Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og planlegge rapporter.
 
-| Komponent        | Funksjoner                                                                                                                                                                                                                                                                           | Tilleggsinformasjon                                                                          |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Rapportutforming  | Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport. Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen. Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov. |                                                                                                 |
-| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom.                                                                                                                                                                                          | [Generere en finansrapport](generate-financial-report.md) |
+| Komponent        | Funksjoner | Tilleggsinformasjon |
+|------------------|-----------|------------------------|
+| Rapportutforming  | Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport. Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen. Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov. | |
+| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom. | [Generere en finansrapport](generate-financial-report.md) |
 
 ## <a name="features"></a>Funksjoner
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Funksjon</th>
 <th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Fleksibel rapportutforming</td>
 <td>Rapportutforming inneholder følgende rapporteringsalternativer når du utformer en rapport:
 <ul>
@@ -70,9 +67,10 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 <li>Styre hvordan dimensjonsbeskrivelser er formatert og vises.</li>
 <li>Identifiser kontoer eller dimensjoner som er utelatt fra rapportbyggeblokker.</li>
 <li>Formatere overskrifter rullende prognoser.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Finansrapportsamarbeid</td>
 <td>Følgende funksjoner lar deg administrere generering og distribusjon av rapporter:
 <ul>
@@ -80,9 +78,10 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 <li>Eksportere til det skrivebeskyttede XPS-formatet, som gir bedre dokumentsikkerhet ved hjelp av digitale signaturer.</li>
 <li>Eksportere til et Microsoft Excel-regneark.</li>
 <li>Hvis du vil dele rapporter, kan du opprette e-postmeldinger som inneholder koblinger til rapportene.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Vise interaktiv rapport</td>
 <td>Interaktive funksjoner lar deg utføre følgende oppgaver:
 <ul>
@@ -99,8 +98,4 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 [Generere en finansrapport](generate-financial-report.md)
-
-
-
-
 
