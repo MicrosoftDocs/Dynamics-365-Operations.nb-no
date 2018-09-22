@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
+ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/22/2018
 
 ---
 
@@ -35,7 +35,9 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="d4d60-105">Et prosjekt er en gruppe aktiviteter som er utformet for å tilby en tjeneste, produsere et produkt eller oppnå et resultat.</span><span class="sxs-lookup"><span data-stu-id="d4d60-105">A project is a group of activities that is designed to provide a service, produce a product, or achieve a result.</span></span> <span data-ttu-id="d4d60-106">Prosjekter forbruker ressurser og genererer økonomiske resultater i form av inntekter eller aktiva.</span><span class="sxs-lookup"><span data-stu-id="d4d60-106">Projects consume resources and generate financial results in the form of revenues or assets.</span></span>
 
 ## <a name="projects-across-industries"></a><span data-ttu-id="d4d60-107">Prosjekter på tvers av bransjer</span><span class="sxs-lookup"><span data-stu-id="d4d60-107">Projects across industries</span></span>
-<span data-ttu-id="d4d60-108">Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor.</span><span class="sxs-lookup"><span data-stu-id="d4d60-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span> <span data-ttu-id="d4d60-109">[![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="d4d60-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
+<span data-ttu-id="d4d60-108">Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor.</span><span class="sxs-lookup"><span data-stu-id="d4d60-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span>
+
+<span data-ttu-id="d4d60-109">[![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="d4d60-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
 
 <span data-ttu-id="d4d60-110">I et telefonsenter kan en henvendelse om kundestøtte brukes til å beskrive et sett med handlinger som kreves for å løse problemet til kunden.</span><span class="sxs-lookup"><span data-stu-id="d4d60-110">In a call center, a ticket can be used to describe the set of actions that are required to resolve a call.</span></span> <span data-ttu-id="d4d60-111">Konsulentfirmaer, for eksempel administrasjon eller teknisk rådgivning organisasjoner eller reklamebyråer, refererer til sine aktiviteter som prosjekter.</span><span class="sxs-lookup"><span data-stu-id="d4d60-111">Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects.</span></span> <span data-ttu-id="d4d60-112">I markedsføring representerer en kampanje et sett med arbeid som skal leveres.</span><span class="sxs-lookup"><span data-stu-id="d4d60-112">In marketing, a campaign represents a set of work that must be delivered.</span></span> <span data-ttu-id="d4d60-113">I prosjektbasert produksjon angir en produksjonsordre det ulike arbeidet som må gjøres for å produsere ferdige varer.</span><span class="sxs-lookup"><span data-stu-id="d4d60-113">In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods.</span></span> <span data-ttu-id="d4d60-114">Uansett hvilket navn du bruker for dem, omfatter disse prosjektene ressurser, tidsplaner og kostnader, og funksjonaliteten for prosjektstyring og regnskap i Microsoft Dynamics 365 for Finance and Operations kan bidra i planleggingen, utførelsen og analysen av disse prosjektene.</span><span class="sxs-lookup"><span data-stu-id="d4d60-114">Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.</span></span>
 
