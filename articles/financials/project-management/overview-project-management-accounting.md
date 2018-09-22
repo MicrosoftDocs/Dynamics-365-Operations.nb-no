@@ -35,7 +35,9 @@ Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for �
 Et prosjekt er en gruppe aktiviteter som er utformet for å tilby en tjeneste, produsere et produkt eller oppnå et resultat. Prosjekter forbruker ressurser og genererer økonomiske resultater i form av inntekter eller aktiva.
 
 ## <a name="projects-across-industries"></a>Prosjekter på tvers av bransjer
-Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor. [![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Funksjonaliteten for prosjektstyring og regnskap kan brukes i flere bransjer, som vist i illustrasjonen nedenfor.
+
+[![Prosjekter på tvers av bransjer](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 I et telefonsenter kan en henvendelse om kundestøtte brukes til å beskrive et sett med handlinger som kreves for å løse problemet til kunden. Konsulentfirmaer, for eksempel administrasjon eller teknisk rådgivning organisasjoner eller reklamebyråer, refererer til sine aktiviteter som prosjekter. I markedsføring representerer en kampanje et sett med arbeid som skal leveres. I prosjektbasert produksjon angir en produksjonsordre det ulike arbeidet som må gjøres for å produsere ferdige varer. Uansett hvilket navn du bruker for dem, omfatter disse prosjektene ressurser, tidsplaner og kostnader, og funksjonaliteten for prosjektstyring og regnskap i Microsoft Dynamics 365 for Finance and Operations kan bidra i planleggingen, utførelsen og analysen av disse prosjektene.
 
