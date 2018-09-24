@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Mva-fradrag i Reiseregning og utlegg
 
+[!include [banner](../includes/banner.md)]
+
 For å motta refusjoner for transaksjoner som er kvalifisert for mva-refusjon, må et firma eller organisasjon identifisere, samle inn, kontrollere og sende nøyaktig informasjon. Denne prosessen omfatter flere oppgaver, og avhengig av størrelsen på firmaet ditt, kan den omfatte flere ansatte eller roller.
 
 Hvis du vil få refusjon for mva ved hjelp av Reiseregning og utlegg, må følgende forutsetninger være tilstede:

@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Resu
 
 Power BI-innholdet **Resultat av salg og fortjeneste** ble opprettet slik at salgsledere kan overvåke salghovedmål for omsetning, bruttofortjeneste og bruttofortjeneste. Den bruker salgstransaksjonsdata, og gir både en aggregert visning av salgstall for hele selskapet og en analyse av salgsresultat for kunder og produkter.
 
-Rapporter uthever endringer i inntekts- og fortjenestevekst over tid. Derfor kan de brukes til å varsle ledere om positive og negative trender for individuelle kunder og produkter. I tillegg sammenligner diagrammer inntekter og lønnsomhet over ulike produktkategorier og kundegrupper med hverandre. Kategori- og distriktsledere kan derfor identifisere etternølere og ledere. Til slutt, en omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder. Dette gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde. 
+Rapporter uthever endringer i inntekts- og fortjenestevekst over tid. Derfor kan de brukes til å varsle ledere om positive og negative trender for individuelle kunder og produkter. I tillegg sammenligner diagrammer inntekter og lønnsomhet over ulike produktkategorier og kundegrupper med hverandre. Kategori- og distriktsledere kan derfor identifisere etternølere og ledere. Til slutt, en omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder. Dette gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde.
 
 **Resultat av salg og fortjeneste**-innholdet lar salgssjefer analysere salgsresultat på følgende måter:
 
--   Inntekt, hittil i år (etter kundegruppe og enkeltkunder, salgkategorier og enkeltprodukter og områder)
--   Inntektsendring, årlig (etter kundeområder og salgskategorier)
+- Inntekt, hittil i år (etter kundegruppe og enkeltkunder, salgkategorier og enkeltprodukter og områder)
+- Inntektsendring, årlig (etter kundeområder og salgskategorier)
 
 Fortjenesten kan analyseres på følgende måter:
 
--   Bruttofortjeneste og fortjenestemargin (etter kundegrupper og salgskategorier for produkt)
--   Bruttofortjenesteendring, årlig
--   Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
+- Bruttofortjeneste og fortjenestemargin (etter kundegrupper og salgskategorier for produkt)
+- Bruttofortjenesteendring, årlig
+- Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste**-siden (**Salg og markedsføring** > **Forespørsler og rapporter** > **Analyse av salgsytelse** > **Resultat av salg og fortjeneste**). 
+Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste**-siden (**Salg og markedsføring** \> **Forespørsler og rapporter** \> **Analyse av salgsytelse** \> **Resultat av salg og fortjeneste**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Resultat av salg og fortjeneste** for Power BI-innhold omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
@@ -77,19 +77,18 @@ Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av s
 
 \* Inntekt i år og forrige år. og vekst etter salgskategori.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md). 
+Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
-De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 De aggregerte nøkkelmålingene for fakturalinjer, som du finner nedenfor, brukes som grunnlag for innholdspakken.
 
-| Enhet        | Aggregerte nøkkelmålinger                   | Datakilde for Dynamics 365                    | Felt                                        | beskrivelse                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Fakturalinjer | Omsetning                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløpet i regnskapsvaluta            |
-|               | Solgte varers kost                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Summen av kostbeløp og justering.    |
-|               | Provisjonslinjebeløp – regnskapsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisjonsbeløpet i regnskapsvalutaen. |
+| Enhet        | Aggregerte nøkkelmålinger                   | Datakilde for Dynamics 365 | Felt                                        | beskrivelse                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Fakturalinjer | Omsetning                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | Beløpet i regnskapsvaluta            |
+|               | Solgte varers kost                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | Summen av kostbeløp og justering.    |
+|               | Provisjonslinjebeløp – regnskapsvaluta | CustInvoiceTrans             | SUM(CommissAmountMST)                        | Provisjonsbeløpet i regnskapsvalutaen. |
 
 Tabellen nedenfor viser aggregerte nøkkelmålinger for fakturalinjeenheten som brukes til å opprette flere beregnede målinger i datasettet for innholdspakken.
 

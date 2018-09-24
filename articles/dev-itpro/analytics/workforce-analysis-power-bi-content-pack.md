@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ Dette emnet beskriver **Workforce Metrics**-innholdet for Microsoft Power BI. De
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
 **Workforce Metrics**-innholdet for Power BI vises i arbeidsområdet **Personaladministrasjon** hvis du bruker ett av disse produktene:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 Tabellen nedenfor viser målene som vises for hver rapport.
 
-| Rapporter                                           | Mål                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mål for personer                                   | Sammendrag av andre rapporter                                                                                                                           |
-| Arbeidsstokken analyse firmanavn, avdeling, sted | Antall ansatte etter selskap, etter avdeling, etter sted og totalt antall ansatte                                                                                                                           |
-| Analysejobb for antall ansatte, trinn, leder            | Antall ansatte etter jobb, etter trinn, etter leder og totalt antall ansatte                                                                                                                                      |
-| Trendanalyse for antall ansatte                         | Antall ansatte inneværende år sammenlignet med fjoråret etter selskap og rullerende antall ansatte for de siste 12 månedene                                                                                                                        |
+| Rapporter                                           | Mål |
+|--------------------------------------------------|---------|
+| Mål for personer                                   | Sammendrag av andre rapporter |
+| Arbeidsstokken analyse firmanavn, avdeling, sted | Antall ansatte etter selskap, etter avdeling, etter sted og totalt antall ansatte |
+| Analysejobb for antall ansatte, trinn, leder            | Antall ansatte etter jobb, etter trinn, etter leder og totalt antall ansatte |
+| Trendanalyse for antall ansatte                         | Antall ansatte inneværende år sammenlignet med fjoråret etter selskap og rullerende antall ansatte for de siste 12 månedene |
 | FTE-analyse                                     | Total heltidsekvivalent (FTE), total tilordnet FTE, FTE etter avdeling, FTE for de siste 12 månedene og FTE etter jobb |
 | Demografi for arbeidsstyrken                           | Antall ansatte etter alder, kjønn, etnisitet, veteranstatus, ekteskapelig status, antall heltidsstudenter, gjennomsnittlig fartstid, gjennomsnittsalder, forholdet mellom kvinnelige og mannlige ansatte og språk som ansatte snakker |
-| Stillingsanalyse                                | Åpne stillinger etter avdeling, ledig-til-besatt-stillinger, aktiv-til-inaktive-stillinger og stillinger etter avdeling                                                                                                   |
-| Avgangsanalyse                               | Avgang inneværende år sammenlignet med fjoråret, avgang, ansatte som slutter etter alder og kjønn, gjennomsnittlig fartstid for ansatte som slutter denne måneden og ansatte som slutter etter årsak                                                                   |
-| Personer etter avdeling                             | Ansatte med et personalnummer etter avdeling, stilling og start- og sluttdatoer for tildeling                                                                                                                       |
-| Ansiennitetsanalyse                               | Liste over gjennomsnittlig fartstid, gjennomsnittlig antall år med arbeidserfaring etter selskap og ansiennitet                                                                                                                                                              |
-| Ansattes jubileer                           | Jubileer denne måneden, jubileer neste måned, ansatte etter arbeidserfaring og jubileer, arbeidserfaring etter avdeling                                                                                                                                                                    |
-| Ansattes fødselsdager                               | Fødselsdager denne måneden, fødselsdager neste måned, ansattes fødselsdager og fødselsdager etter måned og avdeling                                                                                                                                                                    |
-| Masseansettelsesprosjekter                               | Totalt antall masseansettelsesprosjekter, masseansettelsesprosjekter etter status, masseansettelsesprosjekter etter avdeling og eier, masseansettelsesprosjekter etter jobb og masseansettelsesprosjekter                                                                                                                                                                    |
+| Stillingsanalyse                                | Åpne stillinger etter avdeling, ledig-til-besatt-stillinger, aktiv-til-inaktive-stillinger og stillinger etter avdeling |
+| Avgangsanalyse                               | Avgang inneværende år sammenlignet med fjoråret, avgang, ansatte som slutter etter alder og kjønn, gjennomsnittlig fartstid for ansatte som slutter denne måneden og ansatte som slutter etter årsak |
+| Personer etter avdeling                             | Ansatte med et personalnummer etter avdeling, stilling og start- og sluttdatoer for tildeling |
+| Ansiennitetsanalyse                               | Liste over gjennomsnittlig fartstid, gjennomsnittlig antall år med arbeidserfaring etter selskap og ansiennitet |
+| Ansattes jubileer                           | Jubileer denne måneden, jubileer neste måned, ansatte etter arbeidserfaring og jubileer, arbeidserfaring etter avdeling |
+| Ansattes fødselsdager                               | Fødselsdager denne måneden, fødselsdager neste måned, ansattes fødselsdager og fødselsdager etter måned og avdeling |
+| Masseansettelsesprosjekter                               | Totalt antall masseansettelsesprosjekter, masseansettelsesprosjekter etter status, masseansettelsesprosjekter etter avdeling og eier, masseansettelsesprosjekter etter jobb og masseansettelsesprosjekter |
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Pass på at du laster ned **Workforce Metrics**-innholdet for Power BI som gjelder for versjonen av Microsoft Dynamics 365 som du bruker.
 
->[!NOTE]
->PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
+> [!NOTE]
+> PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Tabellen nedenfor viser enhetene som innholdet er basert på.
@@ -88,6 +88,4 @@ Tabellen nedenfor viser enhetene som innholdet er basert på.
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                 | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb |
 | Masseansettelsesprosjekt        | Antall masseansettelsesprosjekter, prosjekteier og prosjektstatus                     | Firma, masseansettelseslinje |
 | Masseansettelseslinje           | Avdeling, ansettelsestype og stilling                                           | Dato, jobb, masseansettelsesprosjekt |
-
-
 

@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,7 +39,7 @@ Rapporter som er inkludert i Power BI-innholdet **Ansattutvikling**, har både d
 | Analyse av ansattes kompetansenivå | Ansattes kompetansenivåer etter avdeling, ansatte etter kompetansenivå og kompetansetype, og laveste og høyeste nivå per kompetanse |
 | Kompetanseprofil                 | Kompetanseprofil for den valgte ansatte |
 | Kompetanseanalyse                | Kompetanse etter type og vurdering |
-| Analyse av ytelsesvurdering   | Ansatte etter laveste og høyeste vurdering etter jobb, ansattvurderinger etter avdeling, ansatte etter vurdering og stillingstype og høyeste og laveste vurdering etter stilling  |
+| Analyse av ytelsesvurdering   | Ansatte etter laveste og høyeste vurdering etter jobb, ansattvurderinger etter avdeling, ansatte etter vurdering og stillingstype og høyeste og laveste vurdering etter stilling |
 | Resultatanalyse, ansatt | Ansattvurderinger for valgte vurdering etter leder |
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
@@ -48,7 +48,7 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 
 | Enhet                   | Innhold                                                                                                   | Relasjoner med andre enheter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Kalenderforskyvning          | Kalenderforskyvninger for å dele opp rapporter                                                                          | Tidligere stillingstilordning, stillingstrend, trend for ansatt, fratrådt ansatt 
+| Kalenderforskyvning          | Kalenderforskyvninger for å dele opp rapporter                                                                          | Tidligere stillingstilordning, stillingstrend, trend for ansatt, fratrådt ansatt |
 | Firma                  | Selskaper til å filtrere rapporter etter                                                                             | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Gjeldende stilling         | Stillinger per gjeldende dato, tilsvarende fulltidsekvivalent (FTE), ledige stillinger og ledig-til-besatt-stillinger | Jobb, stilling |
 | Gjeldende ansatt         | Arbeidere fra og med gjeldende dato, alder og antall ansatte                                                         | Firma, geografisk plassering, ansattnavn, rapporterer til, ansattittel, demografi, jobb, ansettelse, stilling |
@@ -65,10 +65,9 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende arbeider, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb |
-| Jobb                      | Funksjon, type og tittel                                                                                      | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
+| Jobb                      | Funksjon, type og tittel                                                                                  | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
 | Jobb, foretrukket kompetanse      | Viktighet, vurdering, kompetanse og kompetansenivå                                                                 | Jobb |
-| Kompetanseanalyse, ansatt  | Sertifisert, nivå, nivådato og kompetanse                                                                    | Ansattnavn, kompetanse |  
+| Kompetanseanalyse, ansatt  | Sertifisert, nivå, nivådato og kompetanse                                                                    | Ansattnavn, kompetanse |
 | Ytelse              | Vurdering, beskrivelse og vurderingsmodell                                                                      | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
-|  Kompetanse                   | Kompetanse, kompetansetype og vurdering                                                                              | Kompetanseanalyse – ansatt, Jobb – foretrukket kompetanse |                                                                                                                        
-
+| Kompetanse                    | Kompetanse, kompetansetype og vurdering                                                                              | Kompetanseanalyse – ansatt, Jobb – foretrukket kompetanse |
 

@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Power BI-innholdet **Fordeler** vises i arbeidsområdet **Fordelsbehandling** hv
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Rapporter som er inkludert i Power BI-innholdet **Fordeler**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
 
-| Rapporter                       | Innhold                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Oversikt over fordelsregistrering  | Planer med flest og færrest registreringer, registrering etter ansattgruppe og valgte alternativer for fordelsplan |
-| Ansattfordeler            | Ansattregistrering etter valgt fordel                                                        |
-                                                                                             
-Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Rapporter                      | Innhold                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Oversikt over fordelsregistrering | Planer med flest og færrest registreringer, registrering etter ansattgruppe og valgte alternativer for fordelsplan |
+| Ansattfordeler           | Ansattregistrering etter valgt fordel                                                        |
 
+Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Fordeler**. Denne tabellen viser enhetene som innholdet er basert på.
@@ -72,6 +71,4 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Fordeler
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
-
-
 

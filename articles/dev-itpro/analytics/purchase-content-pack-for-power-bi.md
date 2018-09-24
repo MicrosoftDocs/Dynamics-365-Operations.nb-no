@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ Dette emnet beskriver hva som er inkludert i **Kjøps- og forbruksanalyse**-innh
 
 **Kjøps- og forbruksanalyse**-innhold for Power BI ble utformet for å hjelpe innkjøpsledere og ledere som er ansvarlige for budsjetter, med å holde øye med kjøpsutgifter. Ledere kan analysere kjøpsutgifter på følgende måter:
 
--   Kjøp hittil i år (etter leverandørgruppe og enkeltleverandører, innkjøpskategori og enkeltprodukter og leverandørplassering)
--   Årlig kjøpsendring (etter leverandørgruppe og innkjøpkategori)
+- Kjøp hittil i år (etter leverandørgruppe og enkeltleverandører, innkjøpskategori og enkeltprodukter og leverandørplassering)
+- Årlig kjøpsendring (etter leverandørgruppe og innkjøpkategori)
 
 Innholdet bruker kjøpstransaksjonsdata, og gir både en aggregert visning av kjøpstall for hele selskapet og en analyse av kjøpsutgifter etter leverandør og vare. Rapportene uthever endringer i kjøpsutgifter over tid. Derfor kan de brukes til å varsle ledere om positive og negative utgiftstrender for individuelle leverandører og produkter. I tillegg viser diagrammer kjøpsutgifter for forskjellige innkjøpskategorier og leverandørgrupper. Kategori- og distriktsledere kan derfor bruke diagrammene til å identifisere endringer i forbruksatferd.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av innkjøp og forbruk**-siden (**Innkjøp og leverandører** > **Forespørsler og rapporter** > **Analyse av innkjøpsytelse** > **Analyse av innkjøp og forbruk**). 
+Power BI-innholdet **Analyse av innkjøp** og forbruk vises på **Analyse av innkjøp og forbruk**-siden (**Innkjøp og leverandører** \> **Forespørsler og rapporter** \> **Analyse av innkjøpsytelse** \> **Analyse av innkjøp og forbruk**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Kjøps- og forbruksanalyse**-innhold for Power BI inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Rapportside</th>
 <th>Diagrammer</th>
 <th>Fliser</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Kjøp etter leverandør</td>
 <td><ul>
 <li>De 10 viktigste leverandørene etter kjøp (stablet liggende stolpediagram)</li>
@@ -76,7 +71,7 @@ Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av inn
 <li>Totalt antall aktive leverandører</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Kjøp etter produkt</td>
 <td><ul>
 <li>Kjøp etter innkjøpskategori / produktnavn (stående stolpediagram)</li>
@@ -89,7 +84,7 @@ Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av inn
 <li>Antall produkter som står for 80 % av innkjøp</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Innkjøp etter periode*</td>
 <td><ul>
 <li>Innkjøp etter måned / dag (stående stolpediagram)</li>
@@ -102,7 +97,7 @@ Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av inn
 <li>Årlig innkjøpsvekst i %</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Kjøp etter leverandørplassering</td>
 <td><ul>
 <li>Kjøp etter by</li>
@@ -111,7 +106,7 @@ Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av inn
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Kjøps- og forbruksanalyse etter tid</td>
 <td><ul>
 <li>Kjøp inneværende år etter måned / dag (linjediagram)</li>
@@ -119,7 +114,7 @@ Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av inn
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Kjøps- og forbruksanalyse etter leverandør</td>
 <td><ul>
 <li>De 10 viktigste leverandørkjøpene i % av kjøp (trakt)</li>

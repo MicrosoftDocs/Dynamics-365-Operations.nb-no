@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Merk: Operasjonene nedenfor gjelder for den nyeste versjonen av Dynamics 365 for
 | 707 | Aktiver enhet | Aktiver gjeldende enhet ved å tillate at en godkjent bruker angir tilkoblingsinformasjon og tilordner en enhet og kasse-ID. | Antall | Antall | Antall | Antall | Antall |
 | 134 | Legg til tilknytning | Legg til en forhåndsvalgt tilknytning i en transaksjon. Velg tilknytningen på siden **Knappeegenskaper**. | Ja | Ja | Antall | Ja | Antall |
 | 135 | Legg til tilknytning fra en liste | Legg til en tilknytning til en transaksjon ved å velge den i en liste. | Ja | Ja | Ja | Ja | Antall |
+| 137 | Legge til en tilknytning for en kunde | Du kan legge til en tilknytning til en kunde på siden **Kundedetaljer**. | Antall | Antall | Antall | Ja | Antall |
+| 138 | Fjerne tilknytning fra kunde | Du kan fjerne en tilknytning på siden **Kundedetaljer**. | Antall | Antall | Antall | Ja | Antall |
 | 643 | Legg til kupongkode | Legg til en kupong ved å angi koden i POS. | Ja | Ja | Antall | Ja | Antall |
 | 117 | Legg til fordelskort | Be brukeren om å angi et fordelskortnummer som skal legges til den gjeldende transaksjonen. | Ja | Ja | Antall | Ja | Antall |
 | 136 | Legg til serienummer | Denne operasjonen lar brukeren angi et serienummer for det valgte produktet. | Ja | Ja | Antall | Ja | Antall |

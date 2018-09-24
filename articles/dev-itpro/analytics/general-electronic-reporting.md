@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ En forretningsenhet for en datamodell representeres som en beholder (post). Egen
 
 En enkelt datamodellkomponent kan inneholde flere hierarkier for domenespesifikke forretningsenheter. Det kan også inneholde modelltilordninger som støtter en rapportspesifikk dataflyt ved kjøring. Hierarkiene skilles med én enkelt post som er valgt som roten for modelltilordning. Datamodellen for betalingsområdet kan for eksempel støtte følgende tilordninger:
 
-- Firma > Leverandør > Betalingstransaksjoner for AP-område
-- Kunde > Firma > betalingstransaksjoner for AR-område
+- Firma \> Leverandør \> Betalingstransaksjoner for AP-område
+- Kunde \> Firma \> Betalingstransaksjoner for AR-område
 
 Vær oppmerksom på at forretningsenheter, for eksempel firma og betalingstransaksjoner, utformes én gang. Forskjellige tilordninger kan deretter bruke dem på nytt.
 
@@ -74,7 +74,7 @@ En modelltilordning som støtter utgående elektroniske dokumenter har følgende
 - Den støtter parametere for inndata som kan defineres som datakilder for en datamodell når noen data må angis under kjøring.
 - Det støtter transformasjon av Finance and Operasjons-data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
 
-[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 En modelltilordning som støtter innkommende elektroniske dokumenter har følgende funksjoner:
 
@@ -175,7 +175,7 @@ Nødvendige **LCS-prosjekt**-repositorier kan registreres individuelt for hver e
 ## <a name="supported-scenarios"></a>Scenarier som støttes
 ### <a name="building-a-data-model"></a>Bygge en datamodell
 
-ER tilbyr en modellutforming som du kan bruke for å bygge en datamodell for et bestemt forretningsområde. Alle områdespesifikke forretningsenheter og relasjoner mellom dem, kan være representert i en datamodell som en hierarkisk struktur. Illustrasjonen nedenfor viser et eksempel på denne typen datamodell (datamodellen for betalingsområde). 
+ER tilbyr en modellutforming som du kan bruke for å bygge en datamodell for et bestemt forretningsområde. Alle områdespesifikke forretningsenheter og relasjoner mellom dem, kan være representert i en datamodell som en hierarkisk struktur. Illustrasjonen nedenfor viser et eksempel på denne typen datamodell (datamodellen for betalingsområde).
 
 [![Datamodell for betalingsområde](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgave
 
 Datamodellinnhold (etiketter og beskrivelser) kan oversettes til andre språk som Finance and Operations støtter. Du vil kanskje oversette datamodellinnhold av følgende årsaker:
 
--   Gjøre innholdet tydeligere under utformingen for formatutviklere som snakker andre3 språk, som skal bruke datamodellen for datatilordning av formatkomponenter.
--   Gjøre innholdet mer brukervennlig ved kjøretid ved å presentere spørsmål og hjelp for kjøretidsparameterne, og konfigurerte valideringsmeldinger (feil og advarsler) på foretrukket språk for påloggede brukere.
+- Gjøre innholdet tydeligere under utformingen for formatutviklere som snakker andre3 språk, som skal bruke datamodellen for datatilordning av formatkomponenter.
+- Gjøre innholdet mer brukervennlig ved kjøretid ved å presentere spørsmål og hjelp for kjøretidsparameterne, og konfigurerte valideringsmeldinger (feil og advarsler) på foretrukket språk for påloggede brukere.
 
-Illustrasjonen nedenfor viser et eksempel hvor datamodellinnhold oversettes fra engelsk til japansk. 
+Illustrasjonen nedenfor viser et eksempel hvor datamodellinnhold oversettes fra engelsk til japansk.
 
 [![Datamodellinnhold på engelsk](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Datamodellinnhold oversatt til japansk](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurere datamodelltilordninger for utgående dokumenter
 
-ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodeller som de har utformet, til bestemte Finance and Operations-datakilder. Basert på tilordningen, importeres dataene i kjøretid fra valgte datakilder til datamodellen. Datamodellen brukes deretter som en abstrakt datakilde ER-formater som genererer utgående elektroniske dokumenter. Illustrasjonen nedenfor viser et eksempel på denne typen datamodelltilordning (modelltilordning for **SEPA-kredittoverføring** for datamodell for betalingsområde). 
+ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodeller som de har utformet, til bestemte Finance and Operations-datakilder. Basert på tilordningen, importeres dataene i kjøretid fra valgte datakilder til datamodellen. Datamodellen brukes deretter som en abstrakt datakilde ER-formater som genererer utgående elektroniske dokumenter. Illustrasjonen nedenfor viser et eksempel på denne typen datamodelltilordning (modelltilordning for **SEPA-kredittoverføring** for datamodell for betalingsområde).
 
 [![Eksempel på en datamodelltilordning](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodelle
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Lagre en utformet modellkomponent som en modellkonfigurasjon
 
-ER kan lagre en utformet datamodell sammen med tilknyttede datatilordninger som en modellkonfigurasjon for gjeldende Finance and Operations-forekomst. Illustrasjonen nedenfor viser et eksempel på denne typen datamodellkonfigurasjon (konfigurasjon for betalingsmodell). 
+ER kan lagre en utformet datamodell sammen med tilknyttede datatilordninger som en modellkonfigurasjon for gjeldende Finance and Operations-forekomst. Illustrasjonen nedenfor viser et eksempel på denne typen datamodellkonfigurasjon (konfigurasjon for betalingsmodell).
 
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Tilordningen datamodell til valgte datakilder** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) .
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Bygge et format som bruker en datamodell som basis
 
-ER støtter at en formatutforming som du kan bruke til å bygge formatet for et elektronisk dokument for et valgt forretningsområde ved å velge modellkomponenten som basis. Samme ER-formatutforming lar deg tilordne et format som du oppretter for en valgt datamodelltilordning for området som en datakilde. Illustrasjonen nedenfor viser et eksempel på denne typen format (formatkonfigurasjon som støtter **BBS**-betalingsformatet for Storbritannia). 
+ER støtter at en formatutforming som du kan bruke til å bygge formatet for et elektronisk dokument for et valgt forretningsområde ved å velge modellkomponenten som basis. Samme ER-formatutforming lar deg tilordne et format som du oppretter for en valgt datamodelltilordning for området som en datakilde. Illustrasjonen nedenfor viser et eksempel på denne typen format (formatkonfigurasjon som støtter **BBS**-betalingsformatet for Storbritannia).
 
 [![Eksempel på et format som har en datamodell som grunnlag](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgave
 - [Mal for betalingsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Bundet mal for betalingsrappor (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Bygge en konfigurasjon for å importere data fra innkommende elektroniske dokumenter  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Bygge en konfigurasjon for å importere data fra innkommende elektroniske dokumenter
 ER-formatutformingen kan brukes til å beskrive et elektronisk dokument som er planlagt for import av data i enten XML-eller tekstformat. Formatet som uformes, brukes til å analysere et innkommende dokument. Utforming av ER-formattilordning kan brukes til å definere bindingen av elementene i formatet som er utformet, til datamodellen. Illustrasjonene nedenfor viser et eksempel på denne typen format og formattilordning. I dette eksemplet importeres NETS-bankkontoutdrag som inneholder betalingsdetaljer for leverandøren i tekstformat.
 
 [![ER-formatutforming](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ ER kan lagre et utformet format sammen med de konfigurerte datatilordningene som
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfigurere Finance and Operations til å begynne å bruke opprettet format internt
 
-Finance and Operations kan konfigureres til å begynne å bruke et opprettet format til å generere elektroniske rapporter. Referansen til den opprettede formatkonfigurasjonen må defineres i innstillingene for et bestemte område. Hvis du for eksempel vil begynne å bruke en ER-formatkonfigurasjon for elektroniske leverandørbetalinger i BBS-format, må formatkonfigurasjonen refereres i bestemte betalingsmåter, som vist i illustrasjonene nedenfor: 
+Finance and Operations kan konfigureres til å begynne å bruke et opprettet format til å generere elektroniske rapporter. Referansen til den opprettede formatkonfigurasjonen må defineres i innstillingene for et bestemte område. Hvis du for eksempel vil begynne å bruke en ER-formatkonfigurasjon for elektroniske leverandørbetalinger i BBS-format, må formatkonfigurasjonen refereres i bestemte betalingsmåter, som vist i illustrasjonene nedenfor:
 
 [![Formatkonfigurasjon for BSS (Storbritannia)](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 |                                                  |                       | Deklarering av leverandørfaktura (IS)                   | Format for deklarering av leverandørfaktura for Island                      |
 |                                                  |                       | Rapport for deklarering av leverandørfaktura (IS)            | Rapport for deklarering av leverandørfaktura for Island                      |
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Lokaliseringskrav – Opprette en elektronisk rapporteringskonfigurasjon](electronic-reporting-configuration.md)
 
 [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

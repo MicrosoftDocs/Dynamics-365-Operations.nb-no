@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ La oss et eksempel der det er én Excel-fil med regneark som heter **Områder** 
 
 Hvis du legger til den andre enheten, **Lagre**, uten å forlate **Legg til fil**-skjemaet, vil regnearkoppslaget la deg velge **Lagre**-regnearket uten at du må laste opp filen på nytt. Den eneste grunnen til å laste opp en ny fil ville være hvis **Lagre**-dataene var i en annen fil.
 
-![Flere regneark](./media/AddFileMultipleWorkSheets.png) 
+![Flere regneark](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Ordne tilordning av regneark til enhet
 
@@ -51,5 +51,4 @@ I tilfeller der en ny versjon av samme fil eller en helt ny fil må lastes opp f
 ## <a name="upload-a-file-using-run-project"></a>Laste opp en fil ved hjelp av Kjør prosjekt
 
 Du kan laste opp en Excel-fil når du bruker **Kjør prosjekt**-alternativet for å kjøre et importprosjekt. Du må være forsiktig og bare laste opp filer som har de samme regnearkene som de eksisterende tilordningene på dataenhetene i dataprosjektet. Hvis et regneark ikke finnes i den nylig opplastede filen, vises en feilmelding og importen stoppes. Hvis tilordningen til regnearket må endres for en enhet, må tilordningene i dataprosjektet først oppdateres fra dataprosjektet før du kan bruke filen i **Kjør prosjekt**-opplevelsen.
-
 

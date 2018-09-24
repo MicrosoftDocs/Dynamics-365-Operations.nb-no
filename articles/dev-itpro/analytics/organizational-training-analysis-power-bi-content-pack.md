@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 18567a3241fce02e17df368f544e545fad93e1d9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/23/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Finance and Operations - Organisasjonsopplæringsinnhold for Power BI. 
+Dette emnet beskriver Finance and Operations - Organisasjonsopplæringsinnhold for Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som er inkludert i innholdspakken
 Når du har knyttet innholdspakken til Finance and Operations-dataene dine, viser rapportene organisasjonens data. Hvis du aldri har brukt Microsoft Power BI før, kan du finne ut mer på siden [Guided Learning for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som er inkludert i innholdspakken, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
@@ -44,23 +44,19 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Finance and Operations-data brukes til å fylle ut rapporter i Organisasjonsopplæring-innholdspakken. Tabellen nedenfor viser enhetene som innholdspakken er basert på.
 
-| Enhet                    | Innhold                                                         | Relasjoner med andre enheter                                                                                                                                                                  |
-|---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Training\_CalendarOffset  | Kalenderforskyvninger for å dele opp rapporter                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Company         | Selskaper til å filtrere rapporter etter                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Course          | Kurs, beskrivelse, instruktørnavn, sted, rom og status | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
-| Training\_CourseAgenda    | Agenda, kurs og start- og sluttidspunktene                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
-| Training\_CourseAttendees | Navn, status, jobb og registreringsdato                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
-| Training\_CourseSkill     | Kompetanse, kompetansetype og nivå                                     | Training\_Course                                                                                                                                                                                   |
-| Training\_Date            | Dager, uker, måneder og år.                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Demographics    | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Employment      | Startdato, sluttdato og overgangsdato                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Job             | Funksjon, type og tittel                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
-| Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees                                                                                                                                                                          |
-| Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees                                                                                                                                                                          |
-
-
-
-
+| Enhet                    | Innhold                                                         | Relasjoner med andre enheter |
+|---------------------------|------------------------------------------------------------------|-----------------------------------|
+| Training\_CalendarOffset  | Kalenderforskyvninger for å dele opp rapporter                                | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Company         | Selskaper til å filtrere rapporter etter                                   | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Course          | Kurs, beskrivelse, instruktørnavn, sted, rom og status | Training\_CourseAgenda, Training\_CourseAttendees, Training\_CourseSkill |
+| Training\_CourseAgenda    | Agenda, kurs og start- og sluttidspunktene                          | Training\_Company, Training\_CalendarOffset, Training\_Date, Training\_Course |
+| Training\_CourseAttendees | Navn, status, jobb og registreringsdato                         | Training\_Company, Training\_CalendarOffset, Training\_Date, Training\_Demographics, Training\_Employment, Training\_Course, Training\_WorkerName, Training\_WorkerTitle, Training\_Job, Training\_Position |
+| Training\_CourseSkill     | Kompetanse, kompetansetype og nivå                                     | Training\_Course |
+| Training\_Date            | Dager, uker, måneder og år.                                   | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Demographics    | Fødselsdato, kjønn, etnisk opprinnelse og ekteskapelig status         | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Employment      | Startdato, sluttdato og overgangsdato                        | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Job             | Funksjon, type og tittel                                        | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
+| Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees |
+| Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees |
 

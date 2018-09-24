@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil 
 Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et Visual Studio-prosjekt.
 
 1. Opprett et nytt prosjekt i den aktuelle modellen.
-2. Velg prosjektet i Solution Explorer, høyreklikk, og velg deretter **Legg til** > **Nytt element**.
+2. Velg prosjektet i Solution Explorer, høyreklikk, og velg deretter **Legg til** \> **Nytt element**.
 3. I dialogboksen **Legg til nytt element** under **Operations-artefakter** velger du **Ressurs**-malen.
 4. Angi et navn som skal brukes til å referere til rapporten i X++-metadataene, og klikk deretter **Legg til**.
 
@@ -77,7 +77,7 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 
 1. Åpne skjemautformingen for å utvide definisjonen av utformingen.
 2. I designdefinisjonen velger du det øverste elementet som heter **Design | Pattern: Workspace Operational**.
-3. Høyreklikk, og velg deretter **Ny** > **Kategori** for å legge til en ny kontroll som heter **FormTabControl1**.
+3. Høyreklikk, og velg deretter **Ny** \> **Kategori** for å legge til en ny kontroll som heter **FormTabControl1**.
 4. Velg **FormTabControl1** i skjemautformingen.
 5. Høyreklikk, og velg deretter **Ny kategoriside** for å legge til en ny kategoriside.
 6. Endre navnet på kategorisiden til noe som gir mening, som **Arbeidsområde**.
@@ -86,12 +86,12 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 9. Endre navnet på kategorisiden til noe som gir mening, som **Analyse**.
 10. I skjemautformingen velger du **Analyse (kategoriside)**.
 11. Angi **Tekst**-egenskapen til **Analyse**.
-12. Høyreklikk kontrollen, og velg deretter **Ny** > **Gruppe** for å legge til en ny skjemagruppekontroll.
+12. Høyreklikk kontrollen, og velg deretter **Ny** \> **Gruppe** for å legge til en ny skjemagruppekontroll.
 13. Endre navnet på skjemagruppen til noe som gir mening, som **powerBIReportGroup**.
 14. I skjemautformingen velger du **PanoramaBody (kategori)**, og dra deretter kontrollen til **Arbeidsområde**-kategorien.
 15. I designdefinisjonen velger du det øverste elementet som heter **Design | Pattern: Workspace Operational**.
 16. Høyreklikk, og velg deretter **Fjern mønster**.
-17. Høyreklikk på nytt, og velg deretter **Legg til mønster** > **Arbeidsområde med kategorier**.
+17. Høyreklikk på nytt, og velg deretter **Legg til mønster** \> **Arbeidsområde med kategorier**.
 18. Utfør et bygg for å bekrefte endringene.
 
 Illustrasjonen nedenfor viser hvordan utformingen ser ut etter at endringene er brukt.
@@ -116,7 +116,7 @@ Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisn
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisn
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Denne delen gir informasjon om hjelpeklassen som brukes til å bygge inn en Powe
 #### <a name="syntax"></a>Syntaks
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametere
 
-|       Navn       |                                                              beskrivelse                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Navnet på .pbix-ressursen.                                                     |
-| formGroupControl |                                    Skjemagruppekontrollen der Power BI-rapporten skal brukes.                                     |
-| defaultPageName  |                                                         Standard sidenavn.                                                         |
-|  showFilterPane  |   En boolsk verdi som angir om filtreringsruten skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>).   |
-|   showNavPane    | En boolsk verdi som angir om navigasjonsruten skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>). |
-|  defaultFilters  |                                              Standardfiltrene for Power BI-rapporten.                                              |
-
+| Navn             | beskrivelse                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Navnet på .pbix-ressursen.                                                                              |
+| formGroupControl | Skjemagruppekontrollen der Power BI-rapporten skal brukes.                                              |
+| defaultPageName  | Standard sidenavn.                                                                                       |
+| showFilterPane   | En boolsk verdi som angir om filtreringsruten skal vises (**true**) eller skjules (**false**).     |
+| showNavPane      | En boolsk verdi som angir om navigasjonsruten skal vises (**true**) eller skjules (**false**). |
+| defaultFilters   | Standardfiltrene for Power BI-rapporten.                                                                 |
 

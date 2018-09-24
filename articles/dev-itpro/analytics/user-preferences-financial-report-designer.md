@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen. Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises. 
+Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse din brukersamhandling i Utforming av finansrapport og styrer den første påloggingen. Du kan også styre hvordan individuelle rapporter, rapportbiblioteket og standard filplassering vises.
 
-<a name="set-user-preferences"></a>Angi brukerinnstilling
---------------------
+## <a name="set-user-preferences"></a>Angi brukerinnstilling
 
-1.  På **Verktøy**-menyen i Rapportutforming klikker du **Alternativer**.
-2.  Velg innstillinger i dialogboksen **Alternativer**.
-3.  Klikk **OK**.
+1. På **Verktøy**-menyen i Rapportutforming klikker du **Alternativer**.
+2. Velg innstillinger i dialogboksen **Alternativer**.
+3. Klikk **OK**.
 
 ## <a name="options-dialog-box-options"></a>Alternativene i dialogboksen Alternativer
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Brukeralternativ</th>
 <th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Ved oppstart</td>
 <td>Velg hva du ser når Rapportutforming starter. Velg ett av følgende alternativer:
 <ul>
@@ -57,28 +56,22 @@ Denne artikkelen beskriver hvordan du angir brukerinnstillinger for å tilpasse 
 <li><strong>Vis tomt miljø</strong> – Åpne et tomt utformingsvindu.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Vis bekreftelse før avslutning av Rapportutforming</td>
 <td>Velg om du vil motta en advarsel når du avslutter programmet. Denne meldingen bidrar til å garantere at du ikke avslutter programmet ved en feiltakelse.</td>
 </tr>
-<tr class="odd">
-<td>Bruk celleunderstreking i kolonnehoder automatisk</td>
+<tr>
+<td>Bruk automatisk celleunderstreking i kolonneoverskrifter</td>
 <td>Velg om du vil sette inn en understreking i cellen i en ny kolonneoverskrift.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Filplassering for Management Reporter</td>
 <td>Angi standardplasseringen for filer. Programmet bruker standardplasseringen når du eksporterer byggeblokkgrupper.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-
 

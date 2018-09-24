@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Legg til plasseringsroller og partsrelasjonstyper 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Legg til lokasjonsroller
 
 Det er to måter å legge til nye lokasjonsroller for adresse og kontaktinformasjon:

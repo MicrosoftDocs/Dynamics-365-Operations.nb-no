@@ -3,7 +3,7 @@ title: Integrasjon med Microsoft Dynamics 365 for Field Service
 description: Dette emnet gir en oversikt over integrasjonen med Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
-ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: cb21667021a32381fd8038e1c9f0182b05622e3d
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -44,7 +44,7 @@ Den første fasen av integreringen mellom Field Service og Finance and Operation
 - [Arbeidsordrer i Field Service til salgsordrer i Finance and Operations](field-service-work-order.md)
 - [Fakturaer i Field Service til fritekstfakturaer i Finance and Operations](field-service-invoice.md)
 
-Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Finance and Operations, se den korte YouTube-videoen [Synkronisere en ordre for arbeid mellom Dynamics 365 for Field Service og Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
+Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Finance and Operations, se den korte YouTube-videoen [Synkronisere en arbeidsordre med Microsoft Dynamics 365-integrering](https://www.youtube.com/watch?v=46ylO7raZAo).
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
 Field Service-integrasjon støtter følgende versjoner:
