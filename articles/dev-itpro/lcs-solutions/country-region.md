@@ -3,7 +3,7 @@ title: Lokalisering og forskriftsmessige funksjoner
 description: "Dette emnet inneholder lister over ressurser som kan hjelpe deg å finne ut mer om lands-/områdespesifikk funksjonalitet."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
-ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -87,7 +87,7 @@ Hvis du vil finne ut mer, kan du se [Oppgaveveiledninger](../../fin-and-ops/get-
         - [Belgia](../../financials/localizations/belgium.md)
         - [Brasil](../../financials/localizations/brazil.md)
         - [Kina](../../financials/localizations/china.md)
-        - [I Tsjekkia](../../financials/localizations/czech-republic.md)
+        - [Tsjekkia](../../financials/localizations/czech-republic.md)
         - [Estland](../../financials/localizations/estonia.md)
         - [Europa](../../financials/localizations/europe.md)
         - [Frankrike](../../financials/localizations/france.md)
@@ -102,11 +102,12 @@ Hvis du vil finne ut mer, kan du se [Oppgaveveiledninger](../../fin-and-ops/get-
         - [Litauen](../../financials/localizations/lithuania.md)
         - [Mexico](../../financials/localizations/mexico.md)
         - [Malaysia](../../financials/localizations/malaysia.md)
-        - [De](../../financials/localizations/netherlands.md)
+        - [Nederland](../../financials/localizations/netherlands.md)
         - [Norge](../../financials/localizations/norway.md)
     :::column-end:::
     :::column:::
         - [Polen](../../financials/localizations/poland.md)
+        - [Russland](../../financials/localizations/russia.md)
         - [Saudi-Arabia](../../financials/localizations/saudi-arabia.md)
         - [Singapore](../../financials/localizations/singapore.md)
         - [Spania](../../financials/localizations/spain.md)

@@ -38,17 +38,23 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Policy og lokale versjoner for programvarelivssyklus
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: Slutt på vanlig støtte for Microsoft Dynamics AX 2009 og 2012
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Funksjoner som er fjernet eller avskrevet
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: AX 2012-funksjoner som er utsatt
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funksjoner som ikke er implementert i lokale distribusjoner
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations versjon 8.1 (oktober 2018)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (september 2018)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations versjon 8.0 (april 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (mars 2018)
               href: get-started/whats-new-platform-update-15.md
-            - name: 'Lokale distribusjoner av Finance and Operations, Enterprise edition 7.2 med Platform update  12 (mars 2018)'
+            - name: 'Lokale distribusjoner av Finance and Operations, Enterprise edition 7.2 med Platform update 12 (mars 2018)'
               href: get-started/whats-new-LBD-PU12-App72.md
             - name: 'Finance and Operations, Enterprise edition 7.3'
               href: get-started/whats-new-application-7.3-update.md
@@ -68,7 +74,7 @@
               href: get-started/whats-new-platform-update-7.md
             - name: Platform update 6 (april 2017)
               href: get-started/whats-new-platform-update-6.md
-            - name: Plattform update 5 (mars 2017)
+            - name: Platform update 5 (mars 2017)
               href: get-started/whats-new-platform-update-5.md
             - name: Platform update 4 (februar 2017)
               href: get-started/whats-new-platform-update-4.md
@@ -454,8 +460,12 @@
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
-            - name: Fakturasamsvar og konserninterne bestillinger
+            - name: Fakturakontroll og konserninterne bestillinger
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Definere leverandørfakturapolicyer
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Registrere leverandørfaktura og avstemme mot mottatt antall
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Oversikt over positiv betaling
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Definere og generere positive betalingsfiler
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Behandle rente
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Definere leverandørfakturapolicyer
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: Registrere leverandørfaktura og avstemme mot mottatt antall
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Opprette en kundefaktura
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: Innbetale kundebetalinger
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Definere og generere informasjon om aldersfordeling for kunde
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Kopiere kunder ved hjelp av delte nummerserier
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Arbeidsflyt for kunde
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Betalinger og utligninger
@@ -1543,8 +1551,6 @@
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Avhending av anleggsmidler i Estland og Litauen
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Revaluering av utenlandsk valuta
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Generere et overføringsdokument for en intern lageroverføring
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Generere en rapport om EU-salgsliste
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Utvidelse for avhendingsfunksjonalitet for anleggsmiddel
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Revaluering av utenlandsk valuta
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Returnerbar emballasje
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Merverdiavgiftsrapporter
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Omsetnings- og saldoutdrag
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Russland
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Forskuddsinnehavere
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Opprett en avansert regel
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Daglig drift for innehavere av forskudd
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Anleggsmidler
+              items:
+                - name: Anskaffelse av anleggsmidler og å ta dem i bruk
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Opprett og postere budsjettjournaler for anskaffelse av anleggsmidler
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Opptelling av anleggsmidler
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Revaluering av valuta for anleggsmidler
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Delvis demontering av anleggsmiddel (likvidasjon)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Konfigurere og behandle betalingsordrer
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Konfigurere valutakurser for valutatransaksjoner
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Forhåndsvise finanstransaksjoner
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Konfigurere kontrollører
+              href: ../financials/localizations/rus-officials.md
+            - name: Konfigurere bankkontoer
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Merverdiavgift (mva) for mva-agenter
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Konfigurere dimensjonskontroll for utligninger
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Saudi-Arabia
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Alternativer for veksel
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Beregne forfallsdatoer og rapportere gjennomsnittlig periode for betalinger
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Betinget mva.
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Krediter fakturering

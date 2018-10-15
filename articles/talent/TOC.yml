@@ -6,6 +6,14 @@
       items:
         - name: Hva er nytt eller endret?
           items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (1. oktober 2018)
+              href: whats-new-talent-october-01.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (24. september 2018)
+              href: whats-new-talent-september-24.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (17. september 2018)
+              href: whats-new-talent-september-17-2018.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (10. september 2018)
+              href: whats-new-talent-september-10.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (august 2018)
               href: whats-new-talent-august2018.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
@@ -20,10 +28,14 @@
           href: modular-app-tech-faq.md
         - name: Bygge inn PowerApps-apper
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Core HR og Common Data Service for apper
+          href: CoreHREntities.md
         - name: Få tilgang til forhåndsvisningsfunksjoner
           href: access-preview-feature.md
         - name: Konfigurere lønnsintegrering mellom Talent og Dayforce
           href: configure-payroll-integration.md
+        - name: Få kundestøtte for Talent
+          href: talent-support.md
     - name: 'Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger'
       href: departments-jobs-positions.md
       items:
@@ -41,11 +53,16 @@
           href: formalize-business-processes.md
         - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
           href: workflow-manage-employee-information.md
-        - name: Administrasjon av permisjon og fravær
-          href: leave-absence-overview.md
+    - name: Administrere permisjon og fravær
+      href: leave-absence-overview.md
+      items:
+        - name: Avsette tid basert på arbeidstimer
+          href: leave-accrue-hours-worked.md
+        - name: Arbeidstidskalendere
+          href: working-time-calendars.md
     - name: Bemanne organisasjonen
       items:
-        - name: Tiltrekke funksjoner og egenskaper
+        - name: Funksjoner og egenskaper for Attract
           href: attract-overview.md
         - name: Opprette en engasjerende introduksjon ved oppstart
           href: create-onboarding-experience.md
@@ -59,6 +76,8 @@
           href: create-variable-compensation-plans.md
         - name: Behandle kompensasjon
           href: process-compensation.md
+        - name: Definere komponentene for en jobb
+          href: create-job.md
     - name: Utvikle og lære opp ansatte
       items:
         - name: Ytelsesstyring
