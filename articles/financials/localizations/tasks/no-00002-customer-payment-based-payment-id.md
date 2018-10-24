@@ -1,91 +1,92 @@
 --- 
-title: "Kundebetaling basert på betalings-ID (Norge)"
+title: "NO-00002 Kundebetaling basert på betalings-ID"
 description: "Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 10/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9ed03e87fcc6477150719cafcf6aba10c91f03c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a64b9be0706d9571979efc527d2eeb3d6f31b3e8
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="customer-payment-based-on-payment-id-norway"></a><span data-ttu-id="55fa2-103">Kundebetaling basert på betalings-ID (Norge)</span><span class="sxs-lookup"><span data-stu-id="55fa2-103">Customer payment based on payment ID (Norway)</span></span>
+# <a name="no-00002-customer-payment-based-on-payment-id"></a><span data-ttu-id="dd115-103">NO-00002 Kundebetaling basert på betalings-ID</span><span class="sxs-lookup"><span data-stu-id="dd115-103">NO-00002 Customer payment based on payment ID</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="55fa2-104">Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="55fa2-104">This task walks you through setting up and maintaining Norwegian payment IDs.</span></span> 
+<span data-ttu-id="dd115-104">Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="dd115-104">This task walks you through setting up and maintaining Norwegian payment IDs.</span></span> 
 
-<span data-ttu-id="55fa2-105">En betalingsidentifikasjon (ID) er en unik identifikator for kundebetalinger som utlignes elektronisk.</span><span class="sxs-lookup"><span data-stu-id="55fa2-105">A payment identification (ID) is a unique identifier for customer payments that are settled electronically.</span></span> <span data-ttu-id="55fa2-106">Den kan deles inn i ulike deler, for eksempel kundekontonummer, fakturanummer, prefiks, suffiks og ekstern referanse.</span><span class="sxs-lookup"><span data-stu-id="55fa2-106">It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference.</span></span> <span data-ttu-id="55fa2-107">Når du mottar en betaling fra en kunde, identifiserer betalings-IDen betalingstransaksjonen for en salgsfaktura som er mottatt fra en bank.</span><span class="sxs-lookup"><span data-stu-id="55fa2-107">When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.</span></span>
+<span data-ttu-id="dd115-105">En betalingsidentifikasjon (ID) er en unik identifikator for kundebetalinger som utlignes elektronisk.</span><span class="sxs-lookup"><span data-stu-id="dd115-105">A payment identification (ID) is a unique identifier for customer payments that are settled electronically.</span></span> <span data-ttu-id="dd115-106">Den kan deles inn i ulike deler, for eksempel kundekontonummer, fakturanummer, prefiks, suffiks og ekstern referanse.</span><span class="sxs-lookup"><span data-stu-id="dd115-106">It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference.</span></span> <span data-ttu-id="dd115-107">Når du mottar en betaling fra en kunde, identifiserer betalings-IDen betalingstransaksjonen for en salgsfaktura som er mottatt fra en bank.</span><span class="sxs-lookup"><span data-stu-id="dd115-107">When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.</span></span>
 
-<span data-ttu-id="55fa2-108">Denne oppgaven ble opprettet med demodatafirmaet DEMF med land/område for primæradresse for juridisk enhet oppdatert til å være Norge.</span><span class="sxs-lookup"><span data-stu-id="55fa2-108">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span> <span data-ttu-id="55fa2-109">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="55fa2-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="dd115-108">Denne oppgaven ble opprettet med demodatafirmaet DEMF med land/område for primæradresse for juridisk enhet oppdatert til å være Norge.</span><span class="sxs-lookup"><span data-stu-id="dd115-108">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span> <span data-ttu-id="dd115-109">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="dd115-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-a-payment-id"></a><span data-ttu-id="55fa2-110">Konfigurere en betalings-ID</span><span class="sxs-lookup"><span data-stu-id="55fa2-110">Set up a payment ID</span></span>
-1. <span data-ttu-id="55fa2-111">Gå til Kunder > Betalingsoppsett > Betalings-ID.</span><span class="sxs-lookup"><span data-stu-id="55fa2-111">Go to Accounts receivable > Payments setup > Payment ID.</span></span>
-2. <span data-ttu-id="55fa2-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55fa2-112">Click New.</span></span>
-3. <span data-ttu-id="55fa2-113">Skriv inn en verdi i Betalings-ID-feltet.</span><span class="sxs-lookup"><span data-stu-id="55fa2-113">In the Payment ID type field, type a value.</span></span>
-4. <span data-ttu-id="55fa2-114">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="55fa2-114">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="55fa2-115">Angi en verdi i feltet Lengde på betalings-ID.</span><span class="sxs-lookup"><span data-stu-id="55fa2-115">In the Payment ID length field, enter a number.</span></span>
-6. <span data-ttu-id="55fa2-116">Angi et tall i feltet Konto fra posisjon.</span><span class="sxs-lookup"><span data-stu-id="55fa2-116">In the Account from position field, enter a number.</span></span>
-7. <span data-ttu-id="55fa2-117">Angi et tall i feltet Konto til posisjon.</span><span class="sxs-lookup"><span data-stu-id="55fa2-117">In the Account to position field, enter a number.</span></span>
-8. <span data-ttu-id="55fa2-118">Angi et tall i feltet Faktura fra posisjon.</span><span class="sxs-lookup"><span data-stu-id="55fa2-118">In the Invoice from position field, enter a number.</span></span>
-9. <span data-ttu-id="55fa2-119">Angi et tall i feltet Faktura til posisjon.</span><span class="sxs-lookup"><span data-stu-id="55fa2-119">In the Invoice to position field, enter a number.</span></span>
-10. <span data-ttu-id="55fa2-120">Velg et Modulus 10 i feltet Modulus.</span><span class="sxs-lookup"><span data-stu-id="55fa2-120">In the Modulo field, select 'Modulo 10'.</span></span>
-    * <span data-ttu-id="55fa2-121">Velg moduluskontrollmetoden som skal beregne sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="55fa2-121">Select the modulo check method to calculate the check number.</span></span> <span data-ttu-id="55fa2-122">Det siste sifferet i en betalings-ID er reservert for sjekknummeret for å verifisere at betalings-IDen er gyldig.</span><span class="sxs-lookup"><span data-stu-id="55fa2-122">The last digit of a payment ID is reserved for the check number to verify that the payment ID is valid.</span></span> <span data-ttu-id="55fa2-123">Følgende alternativer er tilgjengelige: - Modulus 10 – Samlet lengde på betalings ID-en deles på 10.</span><span class="sxs-lookup"><span data-stu-id="55fa2-123">The following options are available:     Modulo 10 – The total length of the payment ID is divided by 10.</span></span> <span data-ttu-id="55fa2-124">Resten blir sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="55fa2-124">The remainder is the check number.</span></span>   <span data-ttu-id="55fa2-125">Modulus 11 – Samlet lengde på betalings-ID-en deles på 11.</span><span class="sxs-lookup"><span data-stu-id="55fa2-125">Modulo 11 – The total length of the payment ID is divided by 11.</span></span> <span data-ttu-id="55fa2-126">Resten blir sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="55fa2-126">The remainder is the check number.</span></span>   <span data-ttu-id="55fa2-127">- (Ingen) – Sjekknummer beregnes ikke.</span><span class="sxs-lookup"><span data-stu-id="55fa2-127">- (None) – No check number is calculated.</span></span>  
-11. <span data-ttu-id="55fa2-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-128">Click Save.</span></span>
-    * <span data-ttu-id="55fa2-129">Når du har lagret posten, kan du forhåndsvise den valgte betalings-ID-en i feltet Betalings-ID-test.</span><span class="sxs-lookup"><span data-stu-id="55fa2-129">After saving the record, you can preview the selected payment ID in the Payment ID test field.</span></span>  
-12. <span data-ttu-id="55fa2-130">Gå til Kunder > Betalingsoppsett > Betalings-ID per land/område.</span><span class="sxs-lookup"><span data-stu-id="55fa2-130">Go to Accounts receivable > Payments setup > Payment ID per country/region.</span></span>
-13. <span data-ttu-id="55fa2-131">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="55fa2-131">Click New.</span></span>
-14. <span data-ttu-id="55fa2-132">Angi eller velg en verdi i Land/område-feltet.</span><span class="sxs-lookup"><span data-stu-id="55fa2-132">In the Country/region field, enter or select a value.</span></span>
-15. <span data-ttu-id="55fa2-133">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="55fa2-133">In the Payment ID type field, enter or select a value.</span></span>
-16. <span data-ttu-id="55fa2-134">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-134">Click Save.</span></span>
+## <a name="set-up-a-payment-id"></a><span data-ttu-id="dd115-110">Konfigurere en betalings-ID</span><span class="sxs-lookup"><span data-stu-id="dd115-110">Set up a payment ID</span></span>
+1. <span data-ttu-id="dd115-111">Gå til Kunder > Betalingsoppsett > Betalings-ID.</span><span class="sxs-lookup"><span data-stu-id="dd115-111">Go to Accounts receivable > Payments setup > Payment ID.</span></span>
+2. <span data-ttu-id="dd115-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="dd115-112">Click New.</span></span>
+3. <span data-ttu-id="dd115-113">Skriv inn en verdi i Betalings-ID-feltet.</span><span class="sxs-lookup"><span data-stu-id="dd115-113">In the Payment ID type field, type a value.</span></span>
+4. <span data-ttu-id="dd115-114">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="dd115-114">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="dd115-115">Angi en verdi i feltet Lengde på betalings-ID.</span><span class="sxs-lookup"><span data-stu-id="dd115-115">In the Payment ID length field, enter a number.</span></span>
+6. <span data-ttu-id="dd115-116">Angi et tall i feltet Konto fra posisjon.</span><span class="sxs-lookup"><span data-stu-id="dd115-116">In the Account from position field, enter a number.</span></span>
+7. <span data-ttu-id="dd115-117">Angi et tall i feltet Konto til posisjon.</span><span class="sxs-lookup"><span data-stu-id="dd115-117">In the Account to position field, enter a number.</span></span>
+8. <span data-ttu-id="dd115-118">Angi et tall i feltet Faktura fra posisjon.</span><span class="sxs-lookup"><span data-stu-id="dd115-118">In the Invoice from position field, enter a number.</span></span>
+9. <span data-ttu-id="dd115-119">Angi et tall i feltet Faktura til posisjon.</span><span class="sxs-lookup"><span data-stu-id="dd115-119">In the Invoice to position field, enter a number.</span></span>
+10. <span data-ttu-id="dd115-120">Velg et Modulus 10 i feltet Modulus.</span><span class="sxs-lookup"><span data-stu-id="dd115-120">In the Modulo field, select 'Modulo 10'.</span></span>
+    * <span data-ttu-id="dd115-121">Velg moduluskontrollmetoden som skal beregne sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="dd115-121">Select the modulo check method to calculate the check number.</span></span> <span data-ttu-id="dd115-122">Det siste sifferet i en betalings-ID er reservert for sjekknummeret for å verifisere at betalings-IDen er gyldig.</span><span class="sxs-lookup"><span data-stu-id="dd115-122">The last digit of a payment ID is reserved for the check number to verify that the payment ID is valid.</span></span> <span data-ttu-id="dd115-123">Følgende alternativer er tilgjengelige: - Modulus 10 – Samlet lengde på betalings ID-en deles på 10.</span><span class="sxs-lookup"><span data-stu-id="dd115-123">The following options are available:     Modulo 10 – The total length of the payment ID is divided by 10.</span></span> <span data-ttu-id="dd115-124">Resten blir sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="dd115-124">The remainder is the check number.</span></span>   <span data-ttu-id="dd115-125">Modulus 11 – Samlet lengde på betalings-ID-en deles på 11.</span><span class="sxs-lookup"><span data-stu-id="dd115-125">Modulo 11 – The total length of the payment ID is divided by 11.</span></span> <span data-ttu-id="dd115-126">Resten blir sjekknummeret.</span><span class="sxs-lookup"><span data-stu-id="dd115-126">The remainder is the check number.</span></span>   <span data-ttu-id="dd115-127">- (Ingen) – Sjekknummer beregnes ikke.</span><span class="sxs-lookup"><span data-stu-id="dd115-127">- (None) – No check number is calculated.</span></span>  
+11. <span data-ttu-id="dd115-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dd115-128">Click Save.</span></span>
+    * <span data-ttu-id="dd115-129">Når du har lagret posten, kan du forhåndsvise den valgte betalings-ID-en i feltet Betalings-ID-test.</span><span class="sxs-lookup"><span data-stu-id="dd115-129">After saving the record, you can preview the selected payment ID in the Payment ID test field.</span></span>  
+12. <span data-ttu-id="dd115-130">Gå til Kunder > Betalingsoppsett > Betalings-ID per land/område.</span><span class="sxs-lookup"><span data-stu-id="dd115-130">Go to Accounts receivable > Payments setup > Payment ID per country/region.</span></span>
+13. <span data-ttu-id="dd115-131">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="dd115-131">Click New.</span></span>
+14. <span data-ttu-id="dd115-132">Angi eller velg en verdi i Land/område-feltet.</span><span class="sxs-lookup"><span data-stu-id="dd115-132">In the Country/region field, enter or select a value.</span></span>
+15. <span data-ttu-id="dd115-133">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="dd115-133">In the Payment ID type field, enter or select a value.</span></span>
+16. <span data-ttu-id="dd115-134">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dd115-134">Click Save.</span></span>
 
-## <a name="attach-a-payment-id-to-a-customer"></a><span data-ttu-id="55fa2-135">Knytte en betalings-ID til en kunde</span><span class="sxs-lookup"><span data-stu-id="55fa2-135">Attach a payment ID to a customer</span></span>
-1. <span data-ttu-id="55fa2-136">Gå til Kunder > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="55fa2-136">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="55fa2-137">Bruk hurtigfilteret til å filtrere på Konto-feltet med en verdi lik DE-010.</span><span class="sxs-lookup"><span data-stu-id="55fa2-137">Use the Quick Filter to filter on the Account field with a value of 'DE-010'.</span></span>
-3. <span data-ttu-id="55fa2-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="55fa2-138">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="55fa2-139">Utvid delen Betalingstandarder.</span><span class="sxs-lookup"><span data-stu-id="55fa2-139">Expand the Payment defaults section.</span></span>
-5. <span data-ttu-id="55fa2-140">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="55fa2-140">Click Edit.</span></span>
-6. <span data-ttu-id="55fa2-141">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="55fa2-141">In the Payment ID type field, enter or select a value.</span></span>
-7. <span data-ttu-id="55fa2-142">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-142">Click Save.</span></span>
-8. <span data-ttu-id="55fa2-143">Gå til Kunder > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="55fa2-143">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
-9. <span data-ttu-id="55fa2-144">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="55fa2-144">Use the Quick Filter to find records.</span></span> <span data-ttu-id="55fa2-145">Du kan for eksempel filtrere på Betalingsmåte-feltet med verdien ELEKTRONISK.</span><span class="sxs-lookup"><span data-stu-id="55fa2-145">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
-10. <span data-ttu-id="55fa2-146">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="55fa2-146">Click Edit.</span></span>
-11. <span data-ttu-id="55fa2-147">Utvid delen Betalingskontroll.</span><span class="sxs-lookup"><span data-stu-id="55fa2-147">Expand the Payment control section.</span></span>
-12. <span data-ttu-id="55fa2-148">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="55fa2-148">In the Payment ID type field, enter or select a value.</span></span>
-13. <span data-ttu-id="55fa2-149">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-149">Click Save.</span></span>
-14. <span data-ttu-id="55fa2-150">Gå til Kunder > Oppsett > Kundegrupper.</span><span class="sxs-lookup"><span data-stu-id="55fa2-150">Go to Accounts receivable > Setup > Customer groups.</span></span>
-15. <span data-ttu-id="55fa2-151">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="55fa2-151">Click Edit.</span></span>
-16. <span data-ttu-id="55fa2-152">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="55fa2-152">In the Payment ID type field, enter or select a value.</span></span>
-17. <span data-ttu-id="55fa2-153">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-153">Click Save.</span></span>
+## <a name="attach-a-payment-id-to-a-customer"></a><span data-ttu-id="dd115-135">Knytte en betalings-ID til en kunde</span><span class="sxs-lookup"><span data-stu-id="dd115-135">Attach a payment ID to a customer</span></span>
+1. <span data-ttu-id="dd115-136">Gå til Kunder > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="dd115-136">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="dd115-137">Bruk hurtigfilteret til å filtrere på Konto-feltet med en verdi lik DE-010.</span><span class="sxs-lookup"><span data-stu-id="dd115-137">Use the Quick Filter to filter on the Account field with a value of 'DE-010'.</span></span>
+3. <span data-ttu-id="dd115-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dd115-138">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="dd115-139">Utvid delen Betalingstandarder.</span><span class="sxs-lookup"><span data-stu-id="dd115-139">Expand the Payment defaults section.</span></span>
+5. <span data-ttu-id="dd115-140">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="dd115-140">Click Edit.</span></span>
+6. <span data-ttu-id="dd115-141">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="dd115-141">In the Payment ID type field, enter or select a value.</span></span>
+7. <span data-ttu-id="dd115-142">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dd115-142">Click Save.</span></span>
+8. <span data-ttu-id="dd115-143">Gå til Kunder > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="dd115-143">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
+9. <span data-ttu-id="dd115-144">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="dd115-144">Use the Quick Filter to find records.</span></span> <span data-ttu-id="dd115-145">Du kan for eksempel filtrere på Betalingsmåte-feltet med verdien ELEKTRONISK.</span><span class="sxs-lookup"><span data-stu-id="dd115-145">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
+10. <span data-ttu-id="dd115-146">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="dd115-146">Click Edit.</span></span>
+11. <span data-ttu-id="dd115-147">Utvid delen Betalingskontroll.</span><span class="sxs-lookup"><span data-stu-id="dd115-147">Expand the Payment control section.</span></span>
+12. <span data-ttu-id="dd115-148">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="dd115-148">In the Payment ID type field, enter or select a value.</span></span>
+13. <span data-ttu-id="dd115-149">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dd115-149">Click Save.</span></span>
+14. <span data-ttu-id="dd115-150">Gå til Kunder > Oppsett > Kundegrupper.</span><span class="sxs-lookup"><span data-stu-id="dd115-150">Go to Accounts receivable > Setup > Customer groups.</span></span>
+15. <span data-ttu-id="dd115-151">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="dd115-151">Click Edit.</span></span>
+16. <span data-ttu-id="dd115-152">Angi eller velg en verdi i feltet Betalings-ID-type.</span><span class="sxs-lookup"><span data-stu-id="dd115-152">In the Payment ID type field, enter or select a value.</span></span>
+17. <span data-ttu-id="dd115-153">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dd115-153">Click Save.</span></span>
 
-## <a name="update-the-payment-id"></a><span data-ttu-id="55fa2-154">Oppdatere betalings-ID-en</span><span class="sxs-lookup"><span data-stu-id="55fa2-154">Update the payment ID</span></span>
-1. <span data-ttu-id="55fa2-155">Gå til Kunder > Periodiske oppgaver > Oppdater betalings-ID for faktura.</span><span class="sxs-lookup"><span data-stu-id="55fa2-155">Go to Accounts receivable > Periodic tasks > Update invoice payment ID.</span></span>
-2. <span data-ttu-id="55fa2-156">Merk av for Slett betalings-ID hvis du vil slette betalings-ID-informasjon fra alle dokumenter.</span><span class="sxs-lookup"><span data-stu-id="55fa2-156">Select the Delete payment ID check box to delete the payment ID information from all documents</span></span>
-    * <span data-ttu-id="55fa2-157">Dette alternativet bør bare brukes når du vil fjerne eller oppdatere betalings-ID-er for dokumenter som fikk tilordnet betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="55fa2-157">This option should be used only when you want to remove or update Payment IDs for documents that got Payment IDs assigned.</span></span> <span data-ttu-id="55fa2-158">Du vil se en dialogboks der du kan slette betalings-ID fra bestemte dokumenttyper.</span><span class="sxs-lookup"><span data-stu-id="55fa2-158">You will be offered a dialog to delete Payment ID from specific type of documents.</span></span>  
-3. <span data-ttu-id="55fa2-159">Velg Ja i feltet Oppdater betalings-ID for faktura.</span><span class="sxs-lookup"><span data-stu-id="55fa2-159">Select Yes in the Update invoice payment ID field.</span></span>
-4. <span data-ttu-id="55fa2-160">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="55fa2-160">Click OK.</span></span>
-5. <span data-ttu-id="55fa2-161">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="55fa2-161">Click Yes.</span></span>
-6. <span data-ttu-id="55fa2-162">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="55fa2-162">Click Yes.</span></span>
-7. <span data-ttu-id="55fa2-163">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="55fa2-163">Click Yes.</span></span>
-8. <span data-ttu-id="55fa2-164">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="55fa2-164">Click Yes.</span></span>
+## <a name="update-the-payment-id"></a><span data-ttu-id="dd115-154">Oppdatere betalings-ID-en</span><span class="sxs-lookup"><span data-stu-id="dd115-154">Update the payment ID</span></span>
+1. <span data-ttu-id="dd115-155">Gå til Kunder > Periodiske oppgaver > Oppdater betalings-ID for faktura.</span><span class="sxs-lookup"><span data-stu-id="dd115-155">Go to Accounts receivable > Periodic tasks > Update invoice payment ID.</span></span>
+2. <span data-ttu-id="dd115-156">Merk av for Slett betalings-ID hvis du vil slette betalings-ID-informasjon fra alle dokumenter.</span><span class="sxs-lookup"><span data-stu-id="dd115-156">Select the Delete payment ID check box to delete the payment ID information from all documents</span></span>
+    * <span data-ttu-id="dd115-157">Dette alternativet bør bare brukes når du vil fjerne eller oppdatere betalings-ID-er for dokumenter som fikk tilordnet betalings-ID-er.</span><span class="sxs-lookup"><span data-stu-id="dd115-157">This option should be used only when you want to remove or update Payment IDs for documents that got Payment IDs assigned.</span></span> <span data-ttu-id="dd115-158">Du vil se en dialogboks der du kan slette betalings-ID fra bestemte dokumenttyper.</span><span class="sxs-lookup"><span data-stu-id="dd115-158">You will be offered a dialog to delete Payment ID from specific type of documents.</span></span>  
+3. <span data-ttu-id="dd115-159">Velg Ja i feltet Oppdater betalings-ID for faktura.</span><span class="sxs-lookup"><span data-stu-id="dd115-159">Select Yes in the Update invoice payment ID field.</span></span>
+4. <span data-ttu-id="dd115-160">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="dd115-160">Click OK.</span></span>
+5. <span data-ttu-id="dd115-161">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="dd115-161">Click Yes.</span></span>
+6. <span data-ttu-id="dd115-162">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="dd115-162">Click Yes.</span></span>
+7. <span data-ttu-id="dd115-163">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="dd115-163">Click Yes.</span></span>
+8. <span data-ttu-id="dd115-164">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="dd115-164">Click Yes.</span></span>
 
-## <a name="view-the-payment-id"></a><span data-ttu-id="55fa2-165">Vise betalings-ID-en</span><span class="sxs-lookup"><span data-stu-id="55fa2-165">View the payment ID</span></span>
-1. <span data-ttu-id="55fa2-166">Gå til Kundereskontro > Forespørsler og rapporter > Fakturaer > Fakturajournal.</span><span class="sxs-lookup"><span data-stu-id="55fa2-166">Go to Accounts receivable > Inquiries and reports > Invoices > Invoice journal.</span></span>
-2. <span data-ttu-id="55fa2-167">Klikk Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="55fa2-167">Click Show filters.</span></span>
-3. <span data-ttu-id="55fa2-168">Bruk følgende filtre: Angi en filterverdi for "" i feltet "Betalings-ID" ved hjelp av filteroperatoren "er ikke".</span><span class="sxs-lookup"><span data-stu-id="55fa2-168">Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.</span></span>
+## <a name="view-the-payment-id"></a><span data-ttu-id="dd115-165">Vise betalings-ID-en</span><span class="sxs-lookup"><span data-stu-id="dd115-165">View the payment ID</span></span>
+1. <span data-ttu-id="dd115-166">Gå til Kundereskontro > Forespørsler og rapporter > Fakturaer > Fakturajournal.</span><span class="sxs-lookup"><span data-stu-id="dd115-166">Go to Accounts receivable > Inquiries and reports > Invoices > Invoice journal.</span></span>
+2. <span data-ttu-id="dd115-167">Klikk Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="dd115-167">Click Show filters.</span></span>
+3. <span data-ttu-id="dd115-168">Bruk følgende filtre: Angi en filterverdi for "" i feltet "Betalings-ID" ved hjelp av filteroperatoren "er ikke".</span><span class="sxs-lookup"><span data-stu-id="dd115-168">Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.</span></span>
 
 
