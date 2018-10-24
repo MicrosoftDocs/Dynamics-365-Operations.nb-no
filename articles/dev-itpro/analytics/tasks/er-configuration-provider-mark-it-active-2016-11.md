@@ -3,23 +3,24 @@ title: "Opprette konfigurasjonsleverandører og merke dem som aktive"
 description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan opprette en konfigurasjonsleverandør for elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Opprette konfigurasjonsleverandører og merke dem som aktive
@@ -33,10 +34,11 @@ De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen sy
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 2. Klikk Konfigurasjonsleverandører.
 3. Klikk Ny.
-    * En leverandørpost har et unikt navn og URL-adresse. Gå gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (`http://www.litware.com`) allerede finnes.  
+    * En leverandørpost har et unikt navn og URL-adresse. Gå gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (http://www.litware.com) allerede finnes.  
 4. Skriv inn Litware, Inc. i Navn-feltet.
     * Litware, Inc  
-5. Skriv inn `http://www.litware.com` i feltet Internett-adresse.
+5. Skriv inn http://www.litware.com i feltet Internett-adresse.
+    * http://www.litware.com  
 6. Klikk Lagre.
 7. Lukk siden.
 

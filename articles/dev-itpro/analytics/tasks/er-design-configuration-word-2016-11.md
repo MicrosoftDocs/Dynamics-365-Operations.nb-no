@@ -1,25 +1,26 @@
 --- 
 title: "Utforme ER-konfigurasjoner for å generere rapporter i Word-format"
-description: "De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å generere rapporter som Microsoft-filer."
+description: "De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapporteringsformat til å generere rapporter som Microsoft Word-filer."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforme ER-konfigurasjoner for å generere rapporter i Word-format
@@ -30,9 +31,9 @@ De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig ell
 
 For å fullføre disse trinnene må du først fullføre trinnene i oppgaveveiledningen "Opprette en ER-konfigurasjon for generering av rapporter i OPENXML-format". På forhånd, må du også laste ned og lagre følgende maler lokalt, for eksempelrapporten:
 
-[Mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Bundet mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Bundet mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynamics 365 for Operations, versjon 1611.
 
@@ -49,7 +50,7 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynam
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Erstatt Excel-malen med Word-malen
     * For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i OPENXML-format. Vi vil importere rapportens mal i Word-format.  
 1. Klikk Vedlegg.
-    * Erstatt den eksisterende Excel-malen med Word-malen som du lastet ned tidligere, Mal for betalingsrapport. Legg merke til at denne malen bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata.  
+    * Erstatt den eksisterende Excel-malen med Word-malen som du lastet ned tidligere, SampleVendPaymDocReport.docx. Legg merke til at denne malen bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata.  
 2. Klikk Slett.
 3. Klikk Ja.
 4. Klikk Ny.

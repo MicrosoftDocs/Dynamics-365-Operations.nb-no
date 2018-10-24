@@ -1,41 +1,42 @@
 --- 
-title: "Opprette ER-konfigurasjoner for å importere data fra eksterne filer"
-description: "De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil."
+title: "ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil"
+description: "De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations, Enterprise Edition-programmet fra en ekstern fil."
 author: NickSelin
 manager: AnnBe
-ms.date: 02/22/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 70bf788b5924e382ab927fcff4c86908923e09d7
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-er-configurations-to-import-data-from-external-files"></a>Opprette ER-konfigurasjoner for å importere data fra eksterne filer
+# <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen, "Opprette en konfigurasjonsleverandør og merke den som aktiv." Disse trinnene kan fullføres ved hjelp av USMF-datasettet. Du må også laste ned og lagre følgende filer lokalt ved hjelp av koblinger fra emnet Oversikt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations, Enterprise Edition-programmet fra en ekstern fil. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen, "Opprette en konfigurasjonsleverandør og merke den som aktiv." Disse trinnene kan fullføres ved hjelp av USMF-datasettet. Du må også laste ned og lagre følgende filer lokalt ved hjelp av koblinger fra emnet Oversikt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * ER gir bedrifter muligheten til å konfigurere prosessen med å importere eksterne datafiler til tabeller i Dynamics 365 for Finance and Operations i enten XML- eller TXT-format. Først må en abstrakt datamodell og en ER-datamodellkonfigurasjon utformes til å representere dataene du importerer. Deretter må du definere strukturen til filen du importerer, og metoden du vil bruke til å overføre dataene fra filen til den abstrakte datamodellen. ER-formatkonfigurasjonen som tilordnes til den utformede datamodellen, må opprettes for den abstrakte datamodellen. Deretter må datamodellkonfigurasjonen utvides med en tilordning som beskriver hvordan de importerte dataene beholdes som abstrakte datamodelldata og hvordan de brukes til å oppdatere tabeller i Dynamics 365 for Finance and Operations.  ER-datamodellkonfigurasjonen må legges til med en ny modelltilordning som beskriver bindingen av datamodellen til programmets mål.  
-    * Følgende scenario viser funksjonene for ER-dataimport. Dette inkluderer leverandørtransaksjoner som spores eksternt, og deretter importeres til Dynamics 365 for Finance and Operations for å rapporteres senere i leverandørens utligning for 1099-skjema.   
+    * ER gir bedrifter muligheten til å konfigurere prosessen med å importere eksterne datafiler til tabeller i Dynamics 365 for Finance and Operations, Enterprise Edition i enten XML- eller TXT-format. Først må en abstrakt datamodell og en ER-datamodellkonfigurasjon utformes til å representere dataene du importerer. Deretter må du definere strukturen til filen du importerer, og metoden du vil bruke til å overføre dataene fra filen til den abstrakte datamodellen. ER-formatkonfigurasjonen som tilordnes til den utformede datamodellen, må opprettes for den abstrakte datamodellen. Deretter må datamodellkonfigurasjonen utvides med en tilordning som beskriver hvordan de importerte dataene beholdes som abstrakte datamodelldata og hvordan de brukes til å oppdatere tabeller i Dynamics 365 for Finance and Operations, Enterprise Edition.  ER-datamodellkonfigurasjonen må legges til med en ny modelltilordning som beskriver bindingen av datamodellen til programmets mål.  
+    * Følgende scenario viser funksjonene for ER-dataimport. Dette inkluderer leverandørtransaksjoner som spores eksternt, og deretter importeres til Dynamics 365 for Finance and Operations, Enterprise Edition for å rapporteres senere i leverandørens utligning for 1099-skjema.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Legg til en ny ER-konfigurasjon
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Bekreft at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".   
 2. Klikk Rapporteringskonfigurasjoner.
-    * I stedet for å opprette en ny modell for å støtte dataimport, laster du inn filen, 1099model.xml, som du lastet ned tidligere. Denne filen inneholder den egendefinerte datamodellen for leverandørers transaksjoner. Denne datamodellen er tilordnet til Dynamics 365 for Finance and Operations-datakomponenter i AOT-dataenheten.   
+    * I stedet for å opprette en ny modell for å støtte dataimport, laster du inn filen, 1099model.xml, som du lastet ned tidligere. Denne filen inneholder den egendefinerte datamodellen for leverandørers transaksjoner. Denne datamodellen er tilordnet til Dynamics 365 for Finance and Operations, Enterprise Edition-datakomponenter i AOT-dataenheten.   
 3. Klikk Veksle.
 4. Klikk Last fra XML-fil.
     * Klikk Bla gjennom og gå til 1099model.xml-filen som du lastet ned tidligere.  
@@ -44,7 +45,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 
 ## <a name="review-data-model-settings"></a>Se gjennom innstillingene for datamodell
 1. Klikk Utforming.
-    * Denne modellen er utviklet for å representere leverandørenes transaksjoner fra et bedriftsståsted og er atskilt fra implementeringen i Dynamics 365 for Finance and Operations.   
+    * Denne modellen er utviklet for å representere leverandørenes transaksjoner fra et bedriftsståsted og er atskilt fra implementeringen i Dynamics 365 for Finance and Operations, Enterprise Edition.   
 2. Utvid 1099-MISC i treet.
 3. Velg 1099-MISC\Transaksjoner i treet.
 4. Utvid 1099-MISC\Transaksjoner i treet.
@@ -106,7 +107,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 1. Velg 1099-betalingsmodell i treet.
 2. Klikk Utforming.
 3. Klikk Tilordne modell til datakilde.
-    * Tilordningen "For import for manuelle 1099-transaksjoner" er definert med retningstypen Til mål. Dette betyr at den er angitt for å støtte dataimport og inneholder innstillingen for regler som definerer hvordan den importerte eksterne filen og beholdt som abstrakte datamodelldata brukes til å oppdatere tabeller i Dynamics 365 for Finance and Operations-programmet.  
+    * Tilordningen "For import for manuelle 1099-transaksjoner" er definert med retningstypen Til mål. Dette betyr at den er angitt for å støtte dataimport og inneholder innstillingen for regler som definerer hvordan den importerte eksterne filen og beholdt som abstrakte datamodelldata brukes til å oppdatere tabeller i Dynamics 365 for Finance and Operations, Enterprise Edition-programmet.  
 4. Klikk Utforming.
 5. Utvid modell: Datamodellen 1099-betalingsmodell i treet.
 6. Utvid modell: Datamodellen 1099-betalingsmodell\Transaksjoner: Postliste i treet.
@@ -120,7 +121,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 12. I treet velger du tax1099trans: Tabellen VendSettlementTax1099 poster= modell.Validert.
 13. Klikk Rediger mål.
     * Dette ER-målet ble lagt til for å angi hvor de importerte dataene skal oppdatere programtabellene. I dette tilfellet er datatabellen VendSettlementTax1099 valgt. Fordi posthandlingen Sett inn post er valgt, settes de importerte transaksjonene inn i tabellen VendSettlementTax1099. Legg merke til at en enkelt modelltilordning kan inneholde flere mål. Dette betyr at de importerte dataene kan brukes til å oppdatere flere programtabeller samtidig. Tabeller, visninger og dataenheter kan brukes som ER-mål.   
-    * Hvis tilordningen skal kalles fra et punkt i Dynamics 365 for Finance and Operations-programmet (for eksempel knapp eller menyelement) som er spesielt utviklet for denne handlingen, skal ER-målet merkes som integreringspunktet. I dette eksemplet er dette punktet ERTableDestination#VendSettlementTax1099.  
+    * Hvis tilordningen skal kalles fra et punkt i Dynamics 365 for Finance and Operations, Enterprise Edition-programmet (for eksempel knapp eller menyelement) som er spesielt utviklet for denne handlingen, skal ER-målet merkes som integreringspunktet. I dette eksemplet er dette punktet ERTableDestination#VendSettlementTax1099.  
 14. Klikk Avbryt.
 15. Klikk Vis alle.
 16. Klikk Vis bare tilordnet.
@@ -176,15 +177,15 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 18. Lukk siden.
 19. Lukk siden.
 20. Klikk Rediger.
-    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
+    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
 21. Velg Ja i feltet Standard for modelltilordning.
 22. Velg 1099-betalingsmodell i treet.
 23. Klikk Utforming.
 24. Klikk Tilordne modell til datakilde.
 25. Klikk Kjør.
-    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
+    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
     * Hvis du ikke har installert hurtigreparasjonen KB 4012871, legger du merke til at dialogboksen inneholder et ekstra spørsmål om modelltilordning som brukes til å analysere filen du importerer. Dataene blir deretter overført fra dialogboksen til datamodellen. For øyeblikket kan du velge hvilken formattilordning som må brukes, avhengig av typen fil du planlegger å importere.  
-    * Hvis du har tenkt å kalle denne modelltilordningen fra et punkt i Dynamics 365 for Finance and Operations som er spesielt utformet for handlingen, må ER-målet og formattilordningen være merket som en del av integreringen.  
+    * Hvis du har tenkt å kalle denne modelltilordningen fra et punkt i Dynamics 365 for Finance and Operations, Enterprise Edition som er spesielt utformet for handlingen, må ER-målet og formattilordningen være merket som en del av integreringen.  
 26. Klikk Avbryt.
 27. Lukk siden.
 28. Lukk siden.

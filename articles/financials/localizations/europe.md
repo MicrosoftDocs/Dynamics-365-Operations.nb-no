@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe deg med å sette opp Dynamics 365 for Finance and Operations for juridiske enheter med en primær postadresse i Brasil. 
+Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe deg med å sette opp Dynamics 365 for Finance and Operations for juridiske enheter med en primær postadresse i Europa. 
 
 - [Forskuddsinnehavere](emea-advance-holders.md)
  - [Transaksjoner for innehavere av forskudd](emea-advance-holders-transactions.md)
@@ -44,10 +44,8 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md)
 - [Integrering av økonomisk service (ESR)](emea-fiscal-service-integration.md)
 - [Avhending av anleggsmidler i Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Revaluering av utenlandsk valuta](emea-foreign-currency-revaluation.md)
 - [Generere et overføringsdokument for en intern lageroverføring](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generere en Intrastat-deklarering for EU](tasks/eur-00002-eu-intrastat-declaration.md)
-- [Generer en rapport om EU-salgsliste](tasks/eur-00011-eu-sales-list-report.md)
+- [Generere en rapport om EU-salgsliste](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importere ISO20022-filer](emea-ISO20022-file-formats.md)
   - [Importere konfigurasjon for ISO20022-avtalegiro](tasks/import-iso20022-direct-debit-configuration.md)
@@ -61,6 +59,8 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
   - [Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Overføre transaksjoner til Intrastat](tasks/transfer-transactions-intrastat.md)
+  - [Angi en lasteadresse for en fellesskapstransaksjon](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Generere en Intrastat-deklarering for EU](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagerjournalrapporter](emea-set-up-report-inventory-journal-names.md)
 - [Tidsfrister for utstedelse av faktura](emea-invoice-issue-deadline.md)
 - [Fakturabehandling](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Definere rapportering for EU-salgsliste](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Definere format for betalingsbilag for prosjektfakturaer](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Definere signatarer for utskriftsskjemaer](emea-set-up-signers-for-printing-forms.md)
-- [Definere overføringsdokumentene for varebevegelse i et selskap](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Angi en lasteadresse for en fellesskapstransaksjon](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno-regnskapsføring](emea-storno.md)
 - [Avgiftsdirektiver](emea-tax-directives.md)
 - [Oppdatere hvordan beløp vises i rapporter og dokumenter](emea-amount-printing-forms.md)

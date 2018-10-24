@@ -1,28 +1,29 @@
 --- 
-title: "Kundebetaling basert på betalings-ID (Norge)"
+title: "NO-00002 Kundebetaling basert på betalings-ID"
 description: "Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 10/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5bf91f083e7ba9aaddd2f5bd746ff62c751ea2ed
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a64b9be0706d9571979efc527d2eeb3d6f31b3e8
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="customer-payment-based-on-payment-id-norway"></a>Kundebetaling basert på betalings-ID (Norge)
+# <a name="no-00002-customer-payment-based-on-payment-id"></a>NO-00002 Kundebetaling basert på betalings-ID
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
