@@ -1,28 +1,29 @@
 --- 
-title: "Betalingsformater for kunde og leverandør (Norge)"
+title: "NO-00003 Betalingsformater for kunde og leverandør"
 description: "Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er."
 author: epodkolz
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e0f4c228c35f82d16da18d07ff1af5fce8b88ac8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7df2cfb3be42cbf1f7c915f217b463403442342c
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="customer-and-vendor-payment-formats-norway"></a>Betalingsformater for kunde og leverandør (Norge)
+# <a name="no-00003-customer-and-vendor-payment-formats"></a>NO-00003 Betalingsformater for kunde og leverandør
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

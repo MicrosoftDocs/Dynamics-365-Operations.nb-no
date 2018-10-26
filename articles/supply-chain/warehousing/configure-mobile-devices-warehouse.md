@@ -1,9 +1,9 @@
 ---
-title: Konfigurere mobilenheter for lagerarbeid
-description: "Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet."
+title: Definere mobilenheter for lagerarbeid
+description: "Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheter for lagerarbeid
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobil enhet.
+Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 
-**Obs!** Denne artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten**. Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
+**Obs!** Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten**. Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
 
 -   Behandle en forespørsel eller utfør en aktivitet, for eksempel utskrift av en etikett, generering av numre for nummerskilt, oppstart av en produksjonsordre eller raskt oppslag for informasjon om varer på en lokasjon.
 -   Opprett arbeid som skal utføres via en annen prosess. Mottak av en vare for en bestilling kan for eksempel opprette plasseringsarbeid for en annen arbeider.
@@ -193,7 +193,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurere menyelementer for å behandle eksisterende arbeid
-I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Flere alternativer blir deretter tilgjengelig i **Generell**-kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige.
+I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Flere alternativer blir deretter tilgjengelig i **Generell**-kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige. Du kan velge alternativet under feltet **Styrt av** på sidden **Menyelementer på mobilenheten**. 
 
 <table>
 
@@ -247,6 +247,10 @@ Dette alternativet er for eksempel nyttig når flere paller klargjøres for en l
 <tr class="even">
 <td>Gruppering av syklustelling</td>
 <td>Arbeideren velger en sone, arbeidspulje eller lokasjon, og Microsoft Dynamics 365 for Finance and Operations tilordner arbeid basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
+</tr>
+ <tr class="odd">
+<td>Transportlasting</td>
+<td>Denne funksjonen lar flere lagermedarbeidere laste beholdning fra samme eller andre belastninger på den samme lastebilen, med belastninger som er helt eller delvis levert.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Tabellen nedenfor beskriver disse alternativene.
 <td>Velg dette alternativet for å tillate arbeidere å kombinere arbeid for en salgsordre eller last i en enkelt arbeidsenhet. En arbeider kan bare utføre arbeid for salgsordren eller lasten. Dette er for eksempel nyttig når du må øke et antall for en salgsordre etter at lasten, leveringen og arbeidet er opprettet for salgsordren. Dette alternativet er tilgjengelig når menyelementet bruker eksisterende arbeid, og arbeidet styres av brukeren eller systemet.</td>
 </tr>
 <tr class="even">
-<td>Ingen</td>
+<td>Plukk eldste parti</td>
 <td>Angir om arbeideren først må velge det eldste partiet på lokasjonen. Følgende alternativer er tilgjengelige:
 <ul>
 <li><strong>Ingen</strong> – Arbeideren kan plukke et hvilket som helst parti i lokasjonen. Arbeideren mottar ingen melding.</li>

@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -64,7 +64,7 @@ Forskjellige personer og firmaer har et annet perspektiv på dataene som er vikt
 ### <a name="shortcut-menu-options"></a>Hurtigmenyvalg
 Hurtigmenyer gir flere måter å endre en side eksplisitt på, slik at de passer behovene eller kravene i firmaet ditt bedre. (En hurtigmeny er også kjent som en *høyreklikkmeny* eller *hurtigmeny*.)
 
-Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjengelige direkte som valg på en hurtigmeny. For eksempel for å legge til eller skjule kolonner i et rutenett, bare høyreklikker du en kolonneoverskrift i rutenettet, og velg deretter **Legg til kolonner** eller **Skjul denne kolonnen**.
+Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjengelige direkte som valg på en hurtigmeny. For eksempel, fra og med plattformoppdatering 17, hvis du vil legge til eller skjule kolonner i et rutenett, bare høyreklikker du en kolonneoverskrift i rutenettet, og velg deretter **Legg til kolonner** eller **Skjul denne kolonnen**.
 
 De vanligste typene eksplisitte tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne metoden tilpasning, vises vinduet for elementets egenskaper.
 
@@ -81,27 +81,38 @@ Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduet for et instrumentbord kan la deg opprette et nytt arbeidsområde på dette instrumentbordet.
 
 ### <a name="the-personalization-toolbar"></a>Verktøylinjen for tilpassing
-Når du vil flytte eller skjule elementer eller gjøre flere endringer på en side, kan du bruke **Tilpasning**-verktøylinjen. For å åpne **Tilpasning**-verktøylinjen velg **Tilpass dette skjemaet** i egenskapsvinduet for et element. Du kan også velge **Tilpass dette skjemaet** i **Tilpass**-gruppen i **Alternativer**-kategorien på handlingsruten på hver side.
+Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke er tilgjengelige gjennom andre mekanismer (for eksempel endre rekkefølgen på elementene), kan du bruke **Tilpassing**-verktøylinjen. For å åpne **Tilpasning**-verktøylinjen velg **Tilpass dette skjemaet** i egenskapsvinduet for et element. Du kan også velge **Tilpass dette skjemaet** i **Tilpass**-gruppen i **Alternativer**-kategorien på handlingsruten på hver side.
 
 [![Verktøylinje for tilpassing](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Når **Tilpassing**-verktøylinjen er åpen, er denne siden ikke interaktiv. Derfor kan du ikke legge inn data eller vise eller skjule inndelinger. Du kan bare endre elementene som utgjør siden.
+#### <a name="navigating-the-page"></a>Navigere på siden 
+Muligheten til å navigere på siden mens **Tilpassing-verktøylinjeen** er åpen, avhenger av plattformversjonen du kjører. 
 
+- Før plattformoppdatering 19, mens **Tilpassing**-verktøylinjen er åpen, er siden skrivebeskyttet (du kan ikke angi noe), og ikke-interaktiv (du kan bare gjøre endringer i elementene som vises på siden). Hvis du vil gjøre endringer i elementer i en skjult inndeling eller en annen kategori, må du lukke **Tilpassing**- verktøylinjen, utvide en inndeling eller bytte til den ønskede kategorien, og åpne deretter **Tilpassing**-verktøylinjen.  
+
+- Fra og med plattformoppdateringen 19, hvis **Tilpassing**-verktøylinjen er åpen, siden er fortsatt skrivebeskyttet, men er mye mer interaktiv. Spesifikt kan du utvide eller skjule faktaboksruten, bytte kategorier og utvide eller skjule deler mens **Tilpassing**-verktøylinjen er åpen, på samme måte som du vanligvis gjør på siden. Hvis du vil bruke en personlig endring på en inndeling eller kategori som kan skjules (for eksempel skjule en hurtigfane), vil du utløse knappen som vises ved siden av inndelingen eller kategorien som kan skjules, når den får tastaturfokus, eller når du holder musepekeren over den.  
+
+#### <a name="personalization-tools"></a>Verktøy for tilpassing
 Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 
 - Bruk **Velg**-verktøyet til å velge og endre egenskapene for et element. Velg **Velg**-verktøyet og deretter elementet du vil endre egenskapene for. Når du velger et element, vises vinduet for elementets egenskaper, og du kan endre egenskapene for det elementet. Du kan gjenta prosessen for andre elementer som kan tilpasses på denne siden. På grunn av måten enkelte elementer brukes på, vil ikke Finance and Operations la deg endre noen av egenskapene. Derfor, når du velger et element, kan du se at noen av egenskapene ikke kan endres. Du kan for eksempel ikke skjule et felt som er nødvendig.
-- Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. (Du kan ikke flytte et element utenfor den overordnede gruppen). Velg **Flytt**-verktøyet, og velg deretter elementet du vil flytte. Når du velger et element, søker Finance and Operations på siden for å finne ut hvor elementet kan flyttes. Deretter opprettes det en rekke "slippsoner." Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
-- Bruk **Skjul**-verktøyet for å skjule et element på siden. Velg **Skjul**-verktøyet, og velg deretter elementet du vil skjule. Når du velger **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige og vises i en skyggelagt beholder. Du kan deretter vise dem igjen. Ved å velge **Velg**-verktøyet kan du se hvordan siden vil se ut når de valgte elementene er skjult.
-- Bruk **Sammendrag**-verktøyet når du vil at et element skal vises i hurtigfanesammendragsdelen. Verktøyet Sammendrag gjelder bare for feltene som finnes i en inndeling i hurtigfanen. Når du velger **Sammendrag**-verktøyet, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra hurtigfanesammendraget ved å velge feltene.
-- Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-verktøyet, vil alle elementer som hoppes over, vises i en skyggelagt beholder. Du kan deretter gjøre dem til en del av tabulatorsekvensen igjen.
-- Bruk **Rediger**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Rediger**-verktøyet, vil alle elementer som hoppes over som ikke kan redigeres, vises i en skyggelagt beholder. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
-- Bruk **Sett inn**-knappen for å se en liste over elementer som kan settes inn på en side.
 
+- Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. (Du kan ikke flytte et element utenfor den overordnede gruppen). Velg **Flytt**-verktøyet, og velg deretter elementet du vil flytte. Når du velger et element, søker Finance and Operations på siden for å finne ut hvor elementet kan flyttes. Deretter opprettes det en rekke "slippsoner." Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
+
+- Bruk **Skjul**-verktøyet for å skjule et element på siden. Velg **Skjul**-verktøyet, og velg deretter elementet du vil skjule. Når du velger **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige og vises i en skyggelagt beholder. Du kan deretter vise dem igjen. Ved å velge **Velg**-verktøyet kan du se hvordan siden vil se ut når de valgte elementene er skjult.
+    - Fra og med plattformoppdatering 18 kan du skjule obligatoriske felt og inndelinger som inneholder obligatoriske felt. Dermed kan du opprette en forenklet opplevelse der obligatoriske felt som er standard innen forretningslogikk, ikke vises. Skjulte obligatoriske felt blir også midlertidig gjort synlig hvis de er tomme når lagring forsøkes. 
+
+- Bruk **Sammendrag**-verktøyet når du vil at et element skal vises i hurtigfanesammendragsdelen. Verktøyet Sammendrag gjelder bare for feltene som finnes i en inndeling i hurtigfanen. Når du velger **Sammendrag**-verktøyet, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra hurtigfanesammendraget ved å velge feltene.
+
+- Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-verktøyet, vil alle elementer som hoppes over, vises i en skyggelagt beholder. Du kan deretter gjøre dem til en del av tabulatorsekvensen igjen.
+
+- Bruk **Rediger**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Rediger**-verktøyet, vil alle elementer som hoppes over som ikke kan redigeres, vises i en skyggelagt beholder. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
+
+- Bruk **Sett inn**-knappen for å se en liste over elementer som kan settes inn på en side.
     - Velg **Felt**-verktøyet under **Sett inn** for å legge til et felt på siden. Når du bruker **Felt**-verktøyet, kan du bare legge til felt som er en del av sidedefinisjonen, men som ikke vises på siden for øyeblikket. Hvis du vil ha informasjon om hvordan du oppretter nye felt som ikke er en del av den gjeldende sidedefinisjonen, kan du se [Egendefinerte felt](user-defined-fields.md). Når du har valgt **Felt**-verktøy, må du først velge gruppen eller området der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til den valgte gruppen eller området. I dialogboksen velger du ett eller flere felt og deretter **Sett inn**. Hvis du vil fjerne et felt som du la til tidligere, gjentar du prosessen, men fjerner merkingen av feltet i dialogboksen.
     - Velg **PowerApp**-verktøyet under **Sett inn** for å bygge inn en app som ble opprettet ved hjelp av Microsoft PowerApps på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en PowerApps-app på den side, kan du se [Bygge inn PowerApps](embed-power-apps.md).
 
 - Velg **Behandle**-knappen for å vise en liste over administrasjonsalternativer som er relatert til alle tilpasninger for den gjeldende siden.
-
     - Velg **Fjern** for å tilbakestille siden til standard installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Det finnes ingen angrehandling. Bruk derfor dette alternativet bare hvis du er sikker på at du vil tilbakestille siden.
     - Velg **Import** å laste en tilpasning fra en fil som du eller noen andre har opprettet for siden. Alle gjeldende tilpasninger for siden er erstattet med de tilpasningene fra den valgte filen.
     - Velg **Eksporter** for å lagre dine tilpasningene for siden i en fil. Du kan dele dine tilpasninger med andre brukere. Disse brukerne trenger bare å importere filen som inneholder dine tilpasninger for siden.

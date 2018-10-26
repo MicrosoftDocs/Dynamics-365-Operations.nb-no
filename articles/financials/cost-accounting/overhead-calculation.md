@@ -3,7 +3,7 @@ title: Beregning av indirekte kostnader
 description: Dette emnet beskriver de vanlige prosessene for beregning og tildeling av indirekte kostnader.
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -183,7 +183,7 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
 <td>CC099</td>
 <td>Standard kostsenter</td>
 <td>10001</td>
-<td>Elektrisitet</td>
+<td>Strøm</td>
 <td>Variabel kostnad</td>
 <td>9,000.00</td>
 <td>31. januar 2017</td>
@@ -191,8 +191,7 @@ I noen tilfeller er deler av kostnaden et fast gebyr, og restkostnadene er baser
 </tbody>
 </table>
 
-Hvis du vil ha detaljert informasjon om kostnadsatferd, kan du se Policy for kostnadsatferd. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
-
+For mer informasjon, se [Opprette og tilordne en kostnadsadferdspolicy til en kostnadskontrollenhet](tasks/create-assign-cost-behavior-policy-cost-control-unit.md)
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Trinn 2: Behandle beregning av kostnadsdistribusjon
 
 Kostnadsdistribusjon brukes til å omfordele kostnadene fra ett kostnadsobjekt til ett eller flere kostnadsobjekter ved å bruke et relevant tildelingsgrunnlag. Forskjellen mellom kostnadsdistribusjon og kostnadsfordeling er at kostnadsdistribusjon alltid skjer på nivået for primærkostnadselementet for den opprinnelige kostnaden.
@@ -422,7 +421,7 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 <td>CC002</td>
 <td>Finans</td>
 <td>10001</td>
-<td>Elektrisitet</td>
+<td>Strøm</td>
 <td>Variabel kostnad</td>
 <td>7,714.29</td>
 <td>31. januar 2017</td>
@@ -430,7 +429,7 @@ De faste kostnadene skal fordeles likt på de individuelle kostnadsobjektene som
 </tbody>
 </table>
 
-Hvis du vil ha detaljert informasjon om kostnadsdistribusjon og tildelingsgrunnlag, kan du se Kostnadsdistribusjonspolicy og Tildelingsgrunnlag. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
+For mer informasjon, se [Opprette og tilordne en kostnadsdistribusjonspolicy til en kostnadskontrollenhet](tasks/create-assign-cost-distribution-policy-cost-control-unit.md) 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Trinn 3: Behandle beregningen av indirekte kostnader
 
@@ -610,7 +609,7 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 <td>Prosj 2</td>
 <td>internt prosj 2</td>
 <td>10001</td>
-<td>Elektrisitet</td>
+<td>Strøm</td>
 <td>Variabel kostnad</td>
 <td>10,00</td>
 <td>31. januar 2017</td>
@@ -618,7 +617,7 @@ Tabellen nedenfor viser resultatet når personaleprosjektene brukes som tildelin
 </tbody>
 </table>
 
-Hvis du vil ha mer informasjon om policyen for sats for indirekte kostnader, kan du se Policy for sats for indirekte kostnader og Tildelingsgrunnlag. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
+For mer informasjon, se [Beregn indirekte kostnader](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Trinn 4: Behandle beregning av kostnadstildeling
 
@@ -720,12 +719,13 @@ Kostnadsobjekt CC004 Emballasje bidrar til flere kostnadsobjekter. Et statistisk
 <tr>
 <td>Prod 2</td>
 <td>Produkt 2</td>
-<td>15</td>
+<td>sept.</td>
 </tr>
 </tbody>
 </table>
 
-**Obs!** I Finance and Operations kan statistiske målinger, som produksjonstimer som produktet bruker, avledes fra kildedataene. Hvis du vil ha mer informasjon om statistiske målleverandører, kan du se Maler for leverandør av statistisk måling. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.) Tabellen nedenfor viser resultatet når personaletjenestene brukes som tildelingsgrunnlag for totale kostnader (faste kostnader og variable kostnader).
+> [!NOTE]
+> I Finance and Operations kan statistiske målinger, som produksjonstimer som produktet bruker, avledes fra kildedataene. Hvis du vil ha mer informasjon, kan du se [Mal for leverandør av statistisk måling](statistical-measure-provider-template.md#statistical-measure-provider-template). Tabellen nedenfor viser resultatet når personaletjenestene brukes som tildelingsgrunnlag for totale kostnader (faste kostnader og variable kostnader).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ I finansbokføring blir en kostnad på 10 000,00 for strøm postert til en midl
 </table>
 
 > [!NOTE]
-> Dette emnet beskriver hvordan et primærkostnadselementet, 10001 Strøm, flyter gjennom kostnadsobjektene. Denne indirekte kostnaden tildeles derfor til det laveste nivået i organisasjonen. Med andre ord vil kostnadsobjektene på laveste nivå bære kostnaden. Hvis du trenger en visuell flyt for kostnaden mellom kostnadsobjektene, kan du bruke policyreglene for kostnadsakkumulering til å visualisere kostnadsflyten. Hvis du vil ha mer informasjon, kan du se policyen for kostnadsakkumulering. (Vær oppmerksom på at dette emnet er ikke fullføre ennå, men kommer snart.)
+> Dette emnet beskriver hvordan et primærkostnadselementet, 10001 Strøm, flyter gjennom kostnadsobjektene. Denne indirekte kostnaden tildeles derfor til det laveste nivået i organisasjonen. Med andre ord vil kostnadsobjektene på laveste nivå bære kostnaden. Hvis du trenger en visuell flyt for kostnaden mellom kostnadsobjektene, kan du bruke policyreglene for kostnadsakkumulering til å visualisere kostnadsflyten. Hvis du vil ha mer informasjon, kan du se [Kostnadsopprulling](cost-rollup.md).
 
 
 

@@ -3,7 +3,7 @@ title: Modellere en lean-organisasjon
 description: Denne artikkelen inneholder informasjon om de viktigste begrepene i modellering av en lean-organisasjon.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
+ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
+ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -40,20 +40,22 @@ I produksjonsscenarioer som er basert på produksjonsordrer utstedes materialer 
 
 For å redusere leveringstider og overflødig beholdning mellom arbeidssentre som er forårsaket av partiproduksjon, introduserer lean manufacturing Kanban-etterfylling og supermarkeder i produksjon og lageretterfylling. Disse funksjonene forstyrrer vanligvis produksjonen av delvis uavhengige kanban-sykluser. Etterfylling for en kanban for et halvfabrikata utløses ikke lenger av en ordre for ferdige produkter. 
 
-Hvis du vil gjenopprette en kontekst for produksjon og kostnader for de forskjellige kanban-scenariene som foreslås i Microsoft Dynamics 365 for Finance and Operations, introduseres aktivitetsbaserte produksjonsflyter som ryggraden for lean manufacturing. Alle kanban-regler refererer til denne forhåndsdefinerte strukturen. Den aktivitetsbaserte modellen støtter oppsettet av et større utvalg av scenarier enn tidligere versjoner av Lean manufacturing for Dynamics AX støttet. Denne modellen øker imidlertid ikke kompleksiteten for produksjonsarbeidere, fordi alle scenarier bruker samme aktivitetsbaserte brukergrensesnittet.
+Hvis du vil gjenopprette en kontekst for produksjon og kostnader for de forskjellige kanban-scenariene som foreslås i Microsoft Dynamics 365 for Finance and Operations, introduseres aktivitetsbaserte produksjonsflyter som ryggraden for lean manufacturing. Alle kanban-regler refererer til denne forhåndsdefinerte strukturen. Den aktivitetsbaserte modellen støtter oppsettet av en rekke ulike scenarier. Denne modellen øker imidlertid ikke kompleksiteten for produksjonsarbeidere, fordi alle scenarier bruker samme aktivitetsbaserte brukergrensesnittet.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikata (ikke stykklistenivåer)
-Lean manufacturing for Microsoft Dynamics AX integrerer Kanbaner for lagerførte produkter og halvfabrikata i ett enkelt rammeverk, og tilbyr derfor en felles brukeropplevelse i alle situasjoner. På grunn av denne arkitekturen trenger ikke lenger flere stykklistenivåer å introduseres for å aktivere kanbaner som skal brukes for halvfabrikata. Denne arkitekturen bidrar også til å redusere lagertransaksjoner til et minimum.
+Lean manufacturing integrerer Kanbaner for lagerførte produkter og halvfabrikata i ett enkelt rammeverk, og tilbyr derfor en felles brukeropplevelse i alle situasjoner. På grunn av denne arkitekturen trenger ikke lenger flere stykklistenivåer å introduseres for å aktivere kanbaner som skal brukes for halvfabrikata. Denne arkitekturen bidrar også til å redusere lagertransaksjoner til et minimum.
 
 ## <a name="products-and-material-in-work-in-progress"></a>Produkter og materialer i varer i arbeid
 Reduksjonen av partistørrelser til den ideelle tilstanden for en enkelt flyt i lean manufacturing kan føre til en dramatisk økning av lagertransaksjoner hvis hver plukkingsprosess eller kanban-registrering fører til transaksjoner for de forbrukte varene. Arkitekturen for produksjonsflyten tillater overføringen av materiale til produksjonsflyten med uttak-Kanbaner i lagrings- eller transporthåndteringsenhetsstørrelser. Verdien for det utstedte materialet legges til i VIA-kontoen (varer i arbeid) som er relatert til produksjonsflyten. Denne virkemåten ligner virkemåten for materiale som er tilordnet en produksjonsordre. Det samme prinsippet kan brukes for produkter og halvfabrikata. Med mindre disse produktene opprettes, overføres eller brukes i en produksjonsflyt, er lagertransaksjoner valgfrie. Når varene er postert til lageret, reduseres VIA-kontoen for produksjonsflyten ved å trekke fra den tilknyttede standardkostnaden.
 
 ## <a name="value-streams-and-value-stream-mapping"></a>Verdistrømmer og verdistrømtilordning
-Arkitekturen for Lean manufacturing for Microsoft Dynamics AX er inspirert av de fem Lean-prinsippene som ble formulert av Womack og Jones: kundeverdi, verdistrøm, flyt, pull og perfeksjon. En godkjent metode for å implementere løsninger for lean manufacturing i den fysiske verdenen på produksjonen, er verdistrømtilordning (VSM). Denne metoden ble innført av Rother og Shook i publikasjonen "Learning to See" ved Lean Manufacturing Institute. 
+Arkitekturen for Lean manufacturing for er inspirert av de fem Lean-prinsippene som ble formulert av Womack og Jones: kundeverdi, verdistrøm, flyt, pull og perfeksjon. En godkjent metode for å implementere løsninger for lean manufacturing i den fysiske verdenen på produksjonen, er verdistrømtilordning (VSM). Denne metoden ble innført av Rother og Shook i publikasjonen "Learning to See" ved Lean Manufacturing Institute. 
 
-I Dynamics AX kan den fremtidig tilstand for verdistrøm modelleres som en produksjonsflytversjon. Alle prosesser i verdistrømmen modelleres som Prosessaktiviteter. Bevegelser eller overføringer kan modelleres som overføringsaktiviteter hvis overføringsstatusen må registreres eller hvis en integrering med lagerplukking eller konsoliderte leveranser er nødvendig. 
+I Finance and Operations kan den fremtidig tilstanden for verdistrøm modelleres som en produksjonsflytversjon. Alle prosesser i verdistrømmen modelleres som Prosessaktiviteter. Bevegelser eller overføringer kan modelleres som overføringsaktiviteter hvis overføringsstatusen må registreres eller hvis en integrering med lagerplukking eller konsoliderte leveranser er nødvendig. 
 
-Selve verdistrømmen modelleres som en driftsenhet i Dynamics AX. Derfor kan verdistrømmen brukes som en finansdimensjon.
+Selve verdistrømmen modelleres som en driftsenhet. Derfor kan verdistrømmen brukes som en finansdimensjon.
+
+Hvis du vil ha mer informasjon om driftsenheter, kan du se [Opprette en driftsenhet](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Etterkalkulering for lean manufacturing basert på produksjonsflyten
 Den periodiske konsolideringen av kostnader for en produksjonsflyt retter opp den relaterte VIA-kontoen, og gjør det mulig å fastsette avvik for produktene som kommer fra produksjonsflyten.
@@ -62,7 +64,7 @@ Den periodiske konsolideringen av kostnader for en produksjonsflyt retter opp de
 For å gi bedre støtte for kontinuerlig forbedring implementeres produksjonsflyter i tidseffektive versjoner. Derfor kan en eksisterende produksjonsflytversjon, sammen med alle relaterte kanban-regler, kopieres til en fremtidig versjon av produksjonsflyten. I tillegg kan den fremtidige tilstanden for produksjonsflyten modelleres før den er godkjent og aktivert for produksjon. For å bidra til å garantere en sømløs materialflyt på overgangsdatoen og senere, relateres eksisterende kanbaner fra gamle produksjonsflytversjoner automatisk til den nye versjonen.
 
 ## <a name="simplicity"></a>Enkelhet
-For implementering av Lean manufacturing for Dynamics AX, har vi valgt tilnærmingen for produksjonsflyt og aktivitet som gjør det mulig å modellere enkle og sammensatte produksjonsscenarier i en enkelt skalerbar arkitektur. En nærmere kikk på aktivitetskonseptet viser en ny enkelhet for brukerne som trenger det: shop floor- og logistikkarbeidere. Ved å rapportere mot aktivitetsbaserte jobber i stedet for lagertransaksjoner, overfører et felles brukergrensesnitt for alle varianter av lean manufacturing forretningskompleksitet fra brukergrensesnittet til der det hører til: produksjonsflyten som ryggraden i lean manufacturing.
+For implementering av Lean manufacturing har vi valgt tilnærmingen for produksjonsflyt og aktivitet som gjør det mulig å modellere enkle og sammensatte produksjonsscenarier i en enkelt skalerbar arkitektur. En nærmere kikk på aktivitetskonseptet viser en ny enkelhet for brukerne som trenger det: shop floor- og logistikkarbeidere. Ved å rapportere mot aktivitetsbaserte jobber i stedet for lagertransaksjoner, overfører et felles brukergrensesnitt for alle varianter av lean manufacturing forretningskompleksitet fra brukergrensesnittet til der det hører til: produksjonsflyten som ryggraden i lean manufacturing.
 
 
 

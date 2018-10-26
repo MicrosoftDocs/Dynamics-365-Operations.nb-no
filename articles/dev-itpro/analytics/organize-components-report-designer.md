@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -37,12 +37,9 @@ Du kan gi nytt navn til mapper, rapporter, byggeblokker og andre objekter i rapp
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
 I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner.
 
-> [!NOTE]
-> Når du gir nytt navn til en byggeblokk, må du oppdatere alle rapporteringsdefinisjoner som bruker byggeblokken. Hvis ikke, kan ikke en ny rapport genereres.
-
 ### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
 
-1. I Report Designer kan du bruke navigasjonsruten til å finne mappen eller objektet du vil gi nytt navn.
+1. Bruk navigasjonsruten i Rapportutforming til å finne mappen eller objektet som skal gis nytt navn.
 2. Høyreklikk mappen eller objektet, og klikk deretter **Gi nytt navn**. **Navn**-feltet i navigasjonsruten blir tilgjengelig.
 3. Skriv inn et nytt navn, og trykk deretter Enter.
 4. Hvis byggeblokken er en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon, må du oppdatere andre byggeblokker som er knyttet til det. Høyreklikk byggeblokken du ga nytt navn i trinn 3, velg **Tilknytninger** og velg deretter et element i listen for å oppdatere det.

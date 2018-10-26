@@ -1,28 +1,29 @@
 --- 
-title: Tilordne komponentene i formater til datamodellelementer
+title: ER Tilordne komponenter i det opprettede formatet til datamodellelementer (november 2016)
 description: "Følgende prosedyre viser hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne datamodellelementer til komponenter i den opprettede konfigurasjonen for elektronisk rapportering (ER), som definerer et elektronisk dokumentformat for forretningsområdet for betalinger."
 author: NickSelin
 manager: AnnBe
-ms.date: 02/27/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e065cfbfc645bb7ac48134fe43d87bec013e8c81
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a24ef0e091379f14a163a6385be988143a1ec608
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="map-the-components-of-formats-to-data-model-elements"></a>Tilordne komponentene i formater til datamodellelementer
+# <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Tilordne komponenter i det opprettede formatet til datamodellelementer (november 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

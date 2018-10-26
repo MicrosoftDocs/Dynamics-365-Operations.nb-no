@@ -32,18 +32,18 @@ Attract gir muligheter til å håndtere prosessen med å ansette nye talenter. K
 
 Attract har følgende funksjoner.
 
-### <a name="attract-dashboard"></a>Attract-dashbord
+## <a name="attract-dashboard"></a>Attract-dashbord
 Dette er hvor medlemmer av ansettelsesteamet kan se detaljene for jobbene de deltar i. Det er også hvor en ansettelsesansvarlig eller rekrutterer kan legge til en ny jobb for til Attract, enten ved å lage en individuell eller importere flere samtidig fra et Excel-regneark.
 
-### <a name="jobs"></a>Jobber
+## <a name="jobs"></a>Jobber
 På siden **Jobb** vil detaljer som stillingsbeskrivelser og arbeidsted vises og redigeres. Siden **Jobb** er der ansettelsesteamet er satt sammen og du kan legge til eller endre rekrutterere og intervjuere på teamet. Ny kandidater kan også legges til på siden **Jobb**.
 
-### <a name="candidates"></a>Kandidater
+## <a name="candidates"></a>Kandidater
 Kandidater kan legges til en jobb individuelt, eller lastes opp i større antall fra et Excel-regneark. Alle kandidater legges automatisk til første fase, Søknadsfasen, i rekrutteringsprosessen for alle jobber. Alt av kandidatens søknadsinformasjon kan sees og administreres her. Tilleggsdokumenter kan lastes opp og vises, sammen med kontaktinformasjon som e-postadresser, telefonnumre og lenker til deres sosiale medier-kontoer. Hvis kandidaten har gitt en lenke til sin LinkedIn-profil, og LinkedIn-integrasjonen (som krever en LinkedIn-rekrutteringslisens) er opprettet, vil kandidatens profil vises.
 
-### <a name="stages"></a>Stadier
+## <a name="stages"></a>Stadier
 Attract gir en forhåndsdefinert ansettelsesprosess som inneholder fire grunnleggende trinn: Søk, Utvelgelse, Intervju og Tilbud. nye kandidater starter i søknadsfasen hvor deres CV, følgebrev, portefølje og andre søknadsdokumenter blir gjennomgått. Derfra kan en kandidat gå videre til utvelgelsesfasen, hvor de inviteres til å delta i en telefonsamtale eller et Skype-videointervju. Ansettelsesansvarlig eller den som rekrutterer kan gi tilbakemelding om kandidaten og videreføre dem til neste trinn. Personlige intervjuer planlegges med tilgjengelige medlemmer av ansettelsesteamet. Etter intervjuene blir tilbakemeldinger fra intervjuet tatt opp og gjennomgått. Utvalgte kandidater avanserer til avsluttende trinn, hvor et tilbud gis og forberedes for deres gjennomgang og godkjennelse. 
 
-### <a name="candidate-app"></a>Kandidat-app
+## <a name="candidate-app"></a>Kandidat-app
 kandidater mottar en epost så snart de har blitt lagt til en jobb med en kobling for å få appen. Denne webappen gir kandidater jobbinformasjon og er verktøyet for å kommunisere med ansettelsesteamet. Kandidater kan også sende inn tilgjengelighet for intervjuer.
 

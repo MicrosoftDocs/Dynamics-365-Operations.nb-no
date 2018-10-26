@@ -1,28 +1,29 @@
 --- 
-title: "Utvikle en rekkefølgeplan"
+title: "Utvikle rekkefølgeplan"
 description: "Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du å finne en person med lignende ferdigheter til en annen person."
 author: kherr75
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 006f3d4b30711651e389dd76f871de1214c158d1
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
 ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
+# <a name="develop-succession-plan"></a>Utvikle rekkefølgeplan
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -37,7 +38,7 @@ Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du
 7. Klikk Person.
 8. Skriv inn et navn i Person-feltet, eller velg rullegardinlisten.  Eksempel: Cassie Hicks.
 9. Klikk OK.
-10. Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
+10. Utvid hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
 11. Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen som skal inkluderes.
 12. Merk den første raden i listen.  Eksempel: Regnskapsfører
 13. Klikk i avmerkingsboksen Valgfritt.
