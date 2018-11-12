@@ -25,6 +25,7 @@ ms.lasthandoff: 10/16/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avhende et anleggsmiddel ved hjelp av en fritekstfaktura
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåten viser hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.
 
