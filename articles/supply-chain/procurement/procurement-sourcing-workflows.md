@@ -50,11 +50,12 @@ Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
 | Arbeidsflyt for søknad om tillegging av leverandører  | Opprett arbeidsflyter for gjennomgang og godkjenning for å legge til nye leverandører via leverandørforespørsler. |
 
 ## <a name="creating-a-workflow"></a>Opprette en arbeidsflyt
+
 Hvis du vil opprette en arbeidsflyt, kan du gå til Innkjøp og leverandører &gt; Oppsett &gt; Arbeidsflyter for innkjøp og leverandører, og opprette en ny arbeidsflyt ved å velge typen arbeidsflyt som du vil opprette.  
 
 Du kan dra arbeidsflytelementer til utformingen og koble elementene til en flyt på arbeidsflytlerretet. Arbeidsflytelementene må konfigureres. For arbeidsflytelementer for godkjenning og oppgave kan du konfigurere hvilken deltaker som skal utføre handlingen.
-Deltakertyper
-----------------------
+
+## <a name="types-of-participants"></a>Deltakertyper
 
 Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 
@@ -68,13 +69,12 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
-[Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
+- [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 
-[Jobbintroduksjon for leverandører](vendor-onboarding.md)
+- [Jobbintroduksjon for leverandører](vendor-onboarding.md)
 
 
