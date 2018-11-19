@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Utligninger
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Med utligninger kan du samsvare debet- og kredittransaksjoner i økonomimodulen og merke dem som utlignet. På denne måten kan du kontrollere at relaterte transaksjoner er fjernet. Du kan også tilbakeføre utligninger hvis de ble opprettet ved en feiltakelse.
 
