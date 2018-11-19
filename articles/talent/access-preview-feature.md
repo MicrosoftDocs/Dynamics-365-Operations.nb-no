@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Du kan bruke innstillingen **Forhåndsvisningsfunksjoner** i Microsoft Dynamics 
 1. Logg på Microsoft Dynamics 365 for Talent: Attract.
 2. På **Oppsett**-menyen (tannhjulssymbolet) i øvre høyre hjørne, velg **Administrasjonsinnstillinger**.
 3. På fanen **Funksjonsbehandling** velger du alternativet ved siden av **Forhåndsvisningsfunksjoner**, slik at det blir blått.
-4. Oppdater nettleseren for å begynne å se de nye funksjonene. (Alle brukere som allerede er pålogget, ser funksjonene neste gang de logger på, eller de kan oppdatere nettleseren for å vise funksjonene umiddelbart.)
+4. Du kan også styre enkeltfunksjoner ved å aktivere/deaktivere bestemte funksjoner på denne siden.
+5. Oppdater nettleseren for å begynne å se de nye funksjonene. (Alle brukere som allerede er pålogget, ser funksjonene neste gang de logger på, eller de kan oppdatere nettleseren for å vise funksjonene umiddelbart.)
 
 #### <a name="core-hr"></a>Kjerne-HR
 
@@ -61,12 +62,11 @@ Du kan bruke innstillingen **Forhåndsvisningsfunksjoner** i Microsoft Dynamics 
 
 ## <a name="features-that-are-currently-in-preview"></a>Funksjoner som for øyeblikket forhåndsvises
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Tiltrekk
 
-- **Jobbmaler** – nå kan du opprette maler for ansettelsesprosessen. Brukere kan allerede tilpasse ansettelsesprosessen for en bestemt jobb. De kan imidlertid nå opprette maler for prosessen og deretter velge ønsket mal når det opprettes en bestemt jobb. Denne funksjonen kan derfor strømlinjeforme oppsettsprosessen for jobben.
-- **Karriereområde** – den gjeldende versjonen av karriereområdet viser bare alle åpne jobber. Imidlertid legges flere funksjoner til på området i fremtiden. Jobber kan merkes som enten interne eller eksterne. Interne brukere som logger på området, ser både interne jobber og eksterne jobber. Eksterne brukere og brukere som ikke er logget på, vil imidlertid bare se eksterne jobber.
-- **Jobbpostering** – du kan nå postere jobber til karriereområdet.
-- **LinkedIn-jobbpostering** – du kan nå postere jobber til LinkedIn.
+- **Relevante kandidater i en jobb** – rekrutterere og ansettelsesansvarlige kan enkelt se hvilke kandidater som kan være mest relevante for jobben på tvers av alle søkere. De øverste 5 søkerne vises basert på relevans av CV/profilen til jobbeskrivelsen.
+- **Relevante jobber** – kandidater ser nå en liste over andre jobber som er relevante for dem basert på deres CV/profil og beskrivelser av jobben.  Dette vises for øyeblikket til kandidater når de søker, som et forslag til andre muligheter.
+- **Støtte for EEO/OFCCP** – nye aktivitetstyper aktiverer bruken av et forhåndsdefinert skjema for innsamling av EEO- og OFCCP-data fra kandidaten.  Dette er et forhåndsdefinert skjema og kan ikke redigeres.
 
     > [!NOTE]
     > Jobber som er postert, er synlig bare for kunder som abonnerer på ett eller flere LinkedIn-jobboversiktsprodukter. Ellers ser kunder en jobb bare hvis de eksplisitt søker etter den. Det er en forsinkelse for når jobber posteres til LinkedIn. En jobb kan ta flere timer å vises etter at den er postert fra Attract.

@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Legg til/fjern skjema som favoritt (med fokus på et skjema i navigasjonsruten)   | Skift+F                    |
 | Flytt til standard handlingsrute                                              | Alt+M,A eller Ctrl+F6         |
 | Flytt til filterruten (som kan omfatte å åpne den)                        | Alt+M,F eller Ctrl+F3         |
-| Flytt fokus til sidens innhold (med fokus i navigasjonslisten)            | Alt+M,M eller Ctrl+F3         |
+| Flytt fokus til sidens innhold (med fokus i Filter-ruten)                | Alt+M,M eller Ctrl+F3         |
 | Flytt til navigasjonslisten på Detaljer-skjema (som kan omfatte å åpne det)    | Alt+M,S eller Ctrl+F8         |
 | Flytt fokus til sidens innhold (med fokus i navigasjonslisten)            | Alt+M,M eller Ctrl+F8         |
 | Lukk navigasjonslisten i Detaljer-skjemaet (med fokus i navigasjonslisten) | ESC                        |

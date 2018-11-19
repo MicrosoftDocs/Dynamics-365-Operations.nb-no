@@ -3,7 +3,7 @@ title: Definere automatisk fraktavstemming
 description: "Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavstemming."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Definere automatisk fraktavstemming
@@ -36,9 +36,9 @@ Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavste
     * Fraktbrevtypen definerer hvordan fraktbrev og transportørfakturaer skal sammenlignes.  
 2. Klikk Ny.
 3. Skriv inn en verdi i feltet Fraktbrevtype.
-4. I Motormontering-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
+4. I Motormontering-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.dll.
     * Dette er standard kodebibliotek for samsvarsmotoren for transportstyring.  
-5. I Motorklasse-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.dll.
+5. I Motorklasse-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
     * Dette er standard klasse for samsvarsmotoren for transportstyring.  
 6. Klikk Ny.
 7. I Beskrivelse-feltet velger du verdien som skal samsvare på fraktbrevet og transportørfakturaen.  

@@ -3,14 +3,14 @@ title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/23/2018
 
 ---
 
@@ -192,7 +192,7 @@ Når du legger til **System**-datakilden i en ER-tilordning som refererer til pr
 Du kan begrense hvordan verdier blir sendt til parametere av denne metodetypen:
 
 - Bare konstanter kan sendes til metoder av denne typen. Verdiene for konstantene defineres under utformingen.
-- Bare primitive (grunnleggende) datatyper støttes for parametere av denne typen. (De primitive datatypene er heltall, reelle tall, boolsk, streng og så videre).
+- Bare primitive (grunnleggende) datatyper støttes for parametere av denne typen. (De primitive datatypene er heltall, reelle tall, boolsk, streng og så videre.)
 
 #### <a name="paths"></a>Baner
 
@@ -250,6 +250,12 @@ Tabellen nedenfor beskriver datamanipuleringsfunksjonene som du kan bruke til å
 <td>SPLIT (inndata, lengde)</td>
 <td>Del den angitte inndatastrengen i delstrenger, der har har den angitte lengden. Returner resultatet som en ny liste.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returnerer en ny liste som består av to poster som har et <strong>STRING</strong>-felt. Feltet i den første posten inneholder teksten <strong>&quot;abc&quot;</strong>, og feltet i den andre posten inneholder teksten <strong>&quot;d&quot;</strong>.</td>
+</tr>
+<tr>
+<td>SPLIT (inndata, skilletegn)</td>
+<td>Del den angitte inndatastrengen i delstrenger, basert på det angitte skilletegnet.</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returnerer en ny liste som består av tre poster som har et <strong>STRING</strong>-felt. Feltet i den første posten inneholder teksten <strong>&quot;X&quot;</strong>, feltet i den andre posten inneholder teksten &quot;&nbsp;&quot;, og feltet i den tredje posten inneholder teksten <strong>&quot;y&quot;</strong>. Hvis skilletegn er tomt, returneres en ny liste som består av én post som har et <strong>STRING</strong>-felt som inneholder inndatateksten. Hvis inndataen er tom, returneres det en ny, tom liste.
+Hvis enten inndataen eller skilletegnet ikke er angitt (null), iverksettes et programunntak.</td>
 </tr>
 <tr>
 <td>SPLITLIST (liste, nummer)</td>
@@ -323,12 +329,12 @@ VELG ... FRA CUSTINVOICETABLE T1 KRYSSKOBLET MED CUSTINVOICEJOUR T2 KRYSSKOBLET 
 <tr>
 <td>ORDERBY (liste [,uttrykk 1, uttrykket 2, ...])</td>
 <td>Returnerer den angitte listen når den er sortert i henhold til de angitte argumentene. Disse argumentene kan defineres som uttrykk.</td>
-<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>ORDERBY (leverandører, Vendors&#39;navn()&#39;)</strong> en oversikt over leverandører sortert etter navn i stigende rekkefølge.</td>
+<td>Hvis <strong>Leverandør </strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong> ORDERBY (leverandører, Vendors.'name()')</strong> en oversikt over leverandører sortert etter navn i stigende rekkefølge.</td>
 </tr>
 <tr>
 <td>REVERSE (liste)</td>
 <td>Returner den angitte listen i omvendt rekkefølge.</td>
-<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;nave()&#39;)) )</strong> en oversikt over leverandører sortert etter navn i synkende rekkefølge.</td>
+<td>Hvis <strong>Leverandør </strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> en oversikt over leverandører sortert etter navn i synkende rekkefølge.</td>
 </tr>
 <tr>
 <td>WHERE (liste, betingelse)</td>
@@ -399,12 +405,13 @@ Under kjøring returnerer <strong>Etikett</strong>- og <strong>Beskrivelse</stro
 </ul>
 Under kjøring returnerer <strong>Etikett</strong>- og <strong>Beskrivelse</strong>-feltet verdier som er basert på formatets språkinnstillinger og det angitte språket. <strong>Er oversatt</strong>-feltet indikerer at <strong>Etikett</strong>-feltet er oversatt til det angitte språket.
 </td>
-<td>Du bruker for eksempel <strong>Beregnet felt</strong>-datakildetypen til å konfigurere <strong>enumType_de</strong>- og <strong>enumType_deCH</strong>-datakildene for <strong>enumType</strong> datamodellopplistingen:
+<td>Du bruker for eksempel <strong>Beregnet felt</strong>-datakildetypen til å konfigurere <strong>enumType_de</strong>- og <strong>enumType_deCH</strong>-datakildene for <strong>enumType</strong> datamodellopplistingen.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for opplistingsverdien på sveitsisk (tysk) hvis denne oversettelsen er tilgjengelig. Hvis sveitsisk (tysk) oversettelse ikke er tilgjengelig, er etiketten på tysk: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for opplistingsverdien på sveitsisk (tysk) hvis denne oversettelsen er tilgjengelig. Hvis sveitsisk (tysk) oversettelse ikke er tilgjengelig, er etiketten på tysk.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -421,7 +428,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Følgende illustrasjon viser resultatet når formatet kjøres. I dette tilfellet er utdataene en flat liste over artikkelvarer.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
-<p>I illustrasjonene nedenfor er det samme formatet justert slik at det viser listen over artikkelvarer i grupper når et enkelt parti må inneholde artikler, og den totale vekten ikke må overskride grensen på 9.</p>
+<p>I illustrasjonene nedenfor er det samme formatet justert slik at det viser listen over artikkelvarer i partier når et enkelt parti må inneholde artikler, og den totale vekten må ikke overskride grensen på 9.</p>
 <p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Følgende illustrasjon viser resultatet når det justerte formatet kjøres.</p>
@@ -432,7 +439,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <tr>
 <td>FILTER (liste, betingelse)</td>
 <td>Returnerer den angitte listen etter at spørringen er endret for å filtrere den angitte betingelsen. Denne funksjonen er ulik <strong>WHERE</strong>-funksjonen fordi den angitte betingelsen brukes på en ER-datakilde av typen <strong>Tabellposter</strong> på databasenivået. Listen og betingelsen kan defineres ved hjelp av tabeller og relasjoner.</td>
-<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>FILTER(leverandører, Vendors.VendGroup = &quot;40&quot;)</strong> en oversikt over bare leverandører som tilhører leverandørgruppe 40. Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til <strong>VendTable</strong>-tabellen, og <strong>parmVendorBankGroup</strong> er konfigurert som en ER-datakilde som returnerer en verdi av <strong>Streng</strong>-datatypen, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over bare leverandørkontoene som tilhører en spesifikk bankgruppe.</td>
+<td>Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer <strong>FILTER(leverandører, Vendors.VendGroup = &quot;40&quot;)</strong> en oversikt over bare leverandører som tilhører leverandørgruppe 40. Hvis <strong>Leverandør</strong> er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, og <strong>parmVendorBankGroup</strong> er konfigurert som en ER-datakilde som returnerer en verdi av <strong>String</strong>-datatypen, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over bare leverandørkontoene som tilhører en spesifikk bankgruppe.</td>
 </tr>
 </tbody>
 </table>
@@ -446,10 +453,67 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 | NOT (betingelse) | Returner den omvendte logiske verdien til den angitte betingelsen. | **NOT (SANN)** returnerer **USANN**. |
 | AND (betingelse 1\[, betingelse 2, ...\]) | Returnerer **SANN** hvis *alle* angitte betingelser er oppfylt. Hvis ikke, returnes **USANN**. | **AND (1=1, "a"="a")** returnerer **SANN**. **AND (1=2, "a"="a")** returnerer **USANN**. |
 | OR (betingelse 1\[, betingelse 2, ...\]) | Returnerer **USANN** hvis *alle* angitte betingelser ikke er oppfylt. Returnerer **SANN** hvis *en* angitt betingelse er oppfylt. | **OR (1=2, "a"="a")** returnerer **SANN**. |
+| VALUEIN (inndata, liste, uttrykk for listeelement) | Bestem om de angitte inndataene samsvarer med en verdi for et element i den angitte listen. Returnerer **TRUE** hvis de angitte inndataene tilsvarer resultatet av å kjøre det angitte uttrykket for minst én post. Hvis ikke, returnes **USANN**. **Inndata**-parameteren representerer banen til et datakildeelement. Verdien for dette elementet samsvares. **Liste**-parameteren representerer banen til et datakildeelement av postlistetypen som en liste over poster som inneholder et uttrykk. Verdien for dette elementet blir sammenlignet med de angitte inndataene. **Uttrykk for listeelement**-argumentet representerer et uttrykk som enten henviser til eller inneholder ett enkelt felt i den angitte listen som skal brukes for den samsvarende. | For eksempler se delen [Eksempler: VALUEIN (inndata, liste, uttrykk for listeelement)](#examples-valuein-input-list-list-item-expression) nedenfor. |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Eksempler: VALUEIN (inndata, liste, uttrykk for listeelement)
+Generelt oversettes **VALUEIN**-funksjonen til et sett med **OR**-betingelser:
+
+(inndata = list.item1.value) OR (inndata = list.item2.value) OR …
+
+##### <a name="example-1"></a>Eksempel 1
+Du definerer følgende datakilde i modelltilordningen: **List** (**Beregnet felt**-type). Denne datakilden inneholder uttrykket **SPLIT ("a,b,c", ",")**.
+
+Når en datakilde kalles opp som er konfigurert som uttrykket **VALUEIN ("B", List, List.Value)**, returneres **TRUE**. I dette tilfellet oversettes **VALUEIN**-funksjonen til følgende sett med betingelser:
+
+**(("B" = "a") eller ("B" = "b") eller ("B" = "c"))**, der **("B" = "b")** er lik **TRUE**
+
+Når en datakilde kalles opp som er konfigurert som uttrykket **VALUEIN ("B", List, LEFT(List.Value, 0))**, returneres **FALSE**. I dette tilfellet oversettes **VALUEIN**-funksjonen til følgende betingelse:
+
+**("B" = "")**, som ikke er lik **TRUE**
+
+Legg merke til at den øvre grensen for antall tegn i teksten i en slik betingelse 32 768 tegn. Du bør derfor ikke opprette datakilder som kan overstige denne grensen ved kjøretid. Hvis grensen overskrides, kan programmet slutte å kjøre, og et unntak vil bli registrert. Denne situasjonen kan for eksempel oppstå hvis datakilden er konfigurert som **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, og **List1**- og **List2**-listene inneholder et stort antall poster.
+
+I noen tilfeller kan **VALUEIN**-funksjonen oversettes til en databasesetning ved hjelp av **EXISTS JOIN**-operatoren. Denne virkemåter skjer når **FILTER**-funksjonen brukes og følgende betingelser er oppfylt:
+
+- **BE OM SPØRRING**-valget er deaktivert for datakilden for **VALUEIN**-funksjonen som refererer til listen over poster. (Ingen flere betingelser brukes på denne datakilden ved kjøretid.)
+- Ingen nestede uttrykk konfigureres for datakilden for **VALUEIN**-funksjonen som refererer til listen over poster.
+- Et listeelement for **VALUEIN**-funksjonen refererer til et felt (ikke et uttrykk eller en metode) i den angitte datakilden.
+
+Vurder å bruke dette alternativet i stedet for **WHERE**-funksjonen som er beskrevet tidligere i dette eksemplet.
+
+##### <a name="example-2"></a>Eksempel 2
+
+Du definerer de følgende datakildene i modelltilordningen:
+
+- **In** (**Tabellposter**-type), som refererer til tabellen Intrastat
+- **Port** (**Tabellposter**-type), som refererer til tabellen IntrastatPort
+
+Når en datakilde kalles opp som er konfigurert som uttrykket **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)**, genereres følgende SQL-setningen for å returnere filtrerte poster i Intrastat-tabellen:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+For **dataAreaId**-feltene genereres den endelige SQL-setningen ved hjelp av **IN**-operatoren.
+
+##### <a name="example-3"></a>Eksempel 3
+
+Du definerer de følgende datakildene i modelltilordningen:
+
+- **Le** (**Beregnet felt**-type), som inneholder uttrykket **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (**Tabellposter**-type), som refererer til Intrastat-tabellen og som alternativet **Kryssfirma** er aktivert for
+
+Når en datakilde kalles opp som er konfigurert som uttrykket **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** inneholder den endelige SQL-setningen følgende betingelse:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Matematiske funksjoner
 
-| Funksjon | Beskrivelse | Eksempel |
+| Funksjon | beskrivelse | Eksempel |
 |----------|-------------|---------|
 | ABS (tall) | Returner den absolutte verdien av det angitte tallet. (Altså returner tallet uten fortegn.) | **ABS (-1)** returnerer **1**. |
 | POWER (tall, potens) | Returner resultatet av å sette det angitte positive tallet til angitt potens. | **POWER (10, 2)** returnerer **100**. |
@@ -539,7 +603,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 </tr>
 <tr>
 <td>REPLACE (streng, mønster, erstatning, flagg for vanlig uttrykk)</td>
-<td>Når flagget for vanlig uttrykk er <strong>sann</strong>, returneres den angitte strengen etter at den er endret ved å bruke det vanlige uttrykket som er angitt som et mønsterargument for denne funksjonen. Dette uttrykket brukes til å søke etter tegn som skal erstattes. Tegn i det angitte erstatningsargumentet brukes til å erstatte tegnene som blir funnet. Når flagget for vanlig uttrykk er <strong>usann</strong>, fungerer denne funksjonen som <strong>TRANSLATE</strong>.</td>
+<td>Når den angitte parameteren <strong>flagg for vanlig uttrykk</strong> er <strong>sann</strong>, returneres den angitte strengen etter at den er endret, ved å bruke det vanlige uttrykket som er angitt som <strong>mønster</strong>-argument for denne funksjonen. Dette uttrykket brukes til å søke etter tegn som skal erstattes. Tegn i det angitte <strong>erstatning</strong>-argumentet brukes til å erstatte tegnene som blir funnet. Når den angitte parameteren <strong>flagg for vanlig uttrykk</strong> er <strong>usann</strong>, fungerer denne funksjonen som <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> bruker et vanlig uttrykk som fjerner alle ikke-numeriske symboler, og returnerer <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, usann)</strong> erstatter mønsteret <strong>&quot;cd&quot;</strong> med strengen <strong>&quot;GH&quot;</strong> og returnerer <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -562,19 +626,19 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 <li>Finance and Operations-etiketten SYS18389, som har følgende tekst:
 <ul>
 <li><strong>For EN-US-språk:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>For DE-språk:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
+<li><strong>For DE-språk:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Her er formelen som kan utformes:</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>Hvis en rapport behandles for <strong>Litware Retail</strong>-kunden 17. desember 2015 i <strong>EN-US</strong>-kulturen og <strong>EN-US</strong>-språket, returnerer denne formelen teksten nedenfor, som kan vises som en unntaksmelding for brukeren:</p>
+<p>Hvis en rapport behandles for <strong>Litware Retail</strong>-kunden 17. desember 2015 i <strong>EN-US</strong>-kulturen og <strong>EN-US</strong>-språket, returnerer denne formelen teksten nedenfor, som kan vises for brukeren som en unntaksmelding:</p>
 <p>&quot;Ingenting å skrive ut. Litware Retail-kunden stoppes for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapporten behandles for <strong>Litware Retail</strong>-kunden 17. desember 2015, i <strong>DE</strong>-kulturen og <strong>DE</strong>-språket, returnerer formelen følgende tekst som bruker et annet datoformat:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] Følgende syntaks brukes i ER-formler for etiketter:
 <ul>
-<li><strong>For etiketter fra Finance and Operations-ressurser:</strong> <strong>@&quot;X&quot;</strong>, der X er etikett-ID-en i applikasjonsobjekttreet (AOT)</li>
-<li><strong>For etiketter som ligger i ER-konfigurasjoner:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, der X er etikett-ID-en i ER-konfigurasjonen</li>
+<li><strong>For etiketter fra Finance and Operations-ressurser:</strong> <strong>@&quot;X&quot;</strong>, der <strong>X</strong> er etikett-ID-en i applikasjonsobjekttreet (AOT)</li>
+<li><strong>For etiketter som ligger i ER-konfigurasjoner:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, der <strong>X</strong> er etikett-ID-en i ER-konfigurasjonen</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for oppl
 </tr>
 <tr>
 <td>GUIDVALUE (inndata)</td>
-<td>Konverter den angitte inndataen for <strong>Streng</strong>-datatypen til et dataelement i <strong>GUID</strong>-datatype.</td>
+<td>Konverter den angitte inndataen for <strong>Streng</strong>-datatypen til et dataelement i <strong>GUID</strong>-datatype.<blockquote>[!NOTE] For å konvertere i motsatt retning (det vil si å konvertere angitt inndata av datatypen <strong>GUID</strong> til et dataelement av datatypen <strong>String</strong>), kan du bruke funksjonen <strong>TEXT()</strong>.</blockquote></td>
 <td>Du definerer de følgende datakildene i modelltilordningen:
 <ul>
 <li><strong>myID</strong> (<strong>Beregnet-felt</strong>-type), som inneholder uttrykket <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
@@ -637,7 +701,7 @@ Når disse datakildene er definert, kan du bruke et uttrykk som <strong>FILTER (
 
 | Funksjon | beskrivelse | Eksempel |
 |----------|-------------|---------|
-| TEXT (inndata) | Returner angitte inndata etter at de er konvertert til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for den gjeldende forekomsten av Finance and Operations. For verdier for **real**-typen begrenses strengkonverteringen til to desimalplasser. | Hvis de nasjonale innstillingene for Finance and Operations-forekomstens server er definert som **EN-US**, returnerer **TEXT (NOW ())** gjeldende dato for Finance and Operations-økten, 17. desember 2015, som tekststrengen **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returnerer **"0.33"**. |
+| TEXT (inndata) | Returner angitte inndata etter at de er konvertert til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for den gjeldende forekomsten av Finance and Operations. For verdier for **real**-typen begrenses strengkonverteringen til to desimalplasser. | Hvis de nasjonale innstillingene for Finance and Operations-forekomstens server er definert som **EN-US**, returnerer **TEXT (NOW ())** gjeldende dato for Finance and Operations-økten, 17. desember 2015, som tekststrengen **12/17/2015 07:59:23 AM**. **TEXT (1/3)** returnerer **"0.33"**. |
 | QRCODE (streng) | Returner et Quick Response Code-bilde (QR-kode) i base64-binærformat for den angitte strengen. | **QRCODE ("eksempeltekst")** returnerer **U2FtcGxlIHRleHQ =**. |
 
 ### <a name="data-collection-functions"></a>Datainnsamlingsfunksjoner
@@ -645,11 +709,11 @@ Når disse datakildene er definert, kan du bruke et uttrykk som <strong>FILTER (
 | Funksjon | beskrivelse | Eksempel |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Returner navnet på elementet til det gjeldende formatet. Returner en tom streng når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av. | For å lære mer om bruk av denne funksjonen, se oppgaveveiledningen **ER Bruke data med formatet utdata for telling og summering**, som er en del av forretningsprosessen **Anskaffe/utvikle komponenter for IT-tjeneste/-løsning**. |
-| SUMIFS (nøkkelstreng for summering, kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner summen av XML-nodeverdiene (der navnet er definert som en nøkkel) som har blitt samlet inn i løpet av formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av områder og verdier). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
-| SUMIF (nøkkelstreng for summering, kriterieområdestreng, kriterieverdistreng) | Returner summen av XML-nodeverdiene (der navnet er definert som en nøkkel) som har blitt samlet inn i løpet av formatkjøringen, og som oppfyller den angitte betingelsen (område og verdi). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
-| COUNTIFS (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner antallet XML-noder som har blitt samlet inn i løpet av formatkjøringen, og som oppfyller de angitte betingelsene (en kombinasjon av områder og verdier). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
-| COUNTIF (områdekriteriestreng, kriterieverdistreng) | Returner antallet XML-noder som har blitt samlet inn i løpet av formatkjøringen, og som oppfyller den spesifiserte betingelsen (område og verdi). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
-| COLLECTEDLIST (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner listen med XML-nodeverdier for XML som har blitt samlet inn i løpet av formatkjøringen, og som oppfyller de spesifiserte betingelsene (område og verdi). Returner en tom liste når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av. | |
+| SUMIFS (nøkkelstreng for summering, kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner summen av verdiene som ble samlet inn for XML-noder (der navnet er definert som en nøkkel) da formatet ble kjørt, og som oppfyller de angitte betingelsene (kombinasjon av områder og verdier). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
+| SUMIF (nøkkelstreng for summering, kriterieområdestreng, kriterieverdistreng) | Returner summen av verdiene som ble samlet inn for XML-noder (der navnet er definert som en nøkkel) da formatet ble kjørt, og som oppfyller den angitte betingelsen (område og verdi). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
+| COUNTIFS (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner antallet XML-noder som ble samlet inn da formatet ble kjørt, og som oppfyller de angitte betingelsene (en kombinasjon av områder og verdier). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
+| COUNTIF (områdekriteriestreng, kriterieverdistreng) | Returner antallet XML-noder som ble samlet inn da formatet ble kjørt, og som oppfyller den angitte betingelsen (område og verdi). Returner en **0** (null)-verdi når flagget **Samle inn utdatadetaljer** for de gjeldende filene er deaktivert. | |
+| COLLECTEDLIST (kriterieområde1 streng, kriterieverdi1 streng \[, kriterieområde2 streng, kriterieverdi2 streng, …\]) | Returner listen av verdier som ble samlet inn for XML-noder da formatet ble kjørt, og som oppfyller de angitte betingelsene (område og verdi). Returner en tom liste når flagget **Samle inn utdatadetaljer** for de gjeldende filene er slått av. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Andre funksjoner (spesifikke for forretningsområder)
 
@@ -667,6 +731,9 @@ Når disse datakildene er definert, kan du bruke et uttrykk som <strong>FILTER (
 | FA\_BALANCE (anleggsmiddelkode, verdimodellkode, rapporteringsår, rapporteringsdato) | Returner den klargjorte databeholderen for den faste anleggsmiddelsaldoen. Rapporteringsåret må angis som en verdi for opplistingen **AssetYear** i Finance and Operations. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerer den klargjorte databeholderen for saldoer for anleggsmidlet **"COMP-000001"** som har verdimodellen **"Gjeldende"** på den gjeldende datoen for Finance and Operations-økten. |
 | TABLENAME2ID (streng) | Returner en heltallsrepresentasjon for en tabell-ID for det angitte tabellnavnet. | **TABLENAME2ID ("Intrastat")** returnerer **1510**. |
 | ISVALIDCHARACTERISO7064 (streng) | Returner den boolske verdien **SANN** når den angitte strengen representerer et gyldig internasjonalt bankkontonummer (IBAN). Hvis ikke, returner den boolske verdien **USANN**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerer **SANN**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerer **USANN**. |
+| NUMSEQVALUE (nummerseriekode, område, område-id) | Returner den nye genererte verdien for en nummerserie, basert på den angitte nummerseriekoden, område og område-ID. Området må være angitt som en verdi av **ERExpressionNumberSequenceScopeType**-nummereringen (**Delt**, **Juridisk enhet** eller **Firma**). For **Delt**-området angi en tom streng som område-ID. For områdene **Firma** og **Juridisk enhet** angi firmakoden som område-ID. For områdene **Firma** og **Juridisk enhet**, hvis du angir en tom streng som område-ID, brukes den gjeldende firmakoden. | Du definerer de følgende datakildene i modelltilordningen:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-opplisting**), som refererer til opplistingen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (**Beregnet felt**-type), som inneholder uttrykket **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Når **NumSeq**-datatypen kalles opp, returneres den nye genererte verdien for **Gene\_1**-nummerserien som er konfigurert for firmaet som levererte konteksten som ER-formatet kjøres under. |
+| NUMSEQVALUE (nummerseriekode) | Returner den nye genererte verdien for en nummerserie, basert på den angitte nummerserien, omfanget **Firma** og (som område-ID) koden for firmaet som leverer konteksten som ER-formatet kjører under. | Du definerer følgende datakilde i modelltilordningen: **NumSeq** (**Beregnet felt**-type). Denne datakilden inneholder uttrykket **NUMSEQVALUE ("Gene\_1")**. Når **NumSeq**-datatypen kalles opp, returneres den nye genererte verdien for **Gene\_1**-nummerserien som er konfigurert for firmaet som levererte konteksten som ER-formatet kjøres under. |
+| NUMSEQVALUE (post-ID for nummerserie) | Returner den nye genererte verdien for en nummerserie, basert på den angitte post-ID-en for nummerserie. | Du definerer de følgende datakildene i modelltilordningen:<ul><li>**LedgerParms** (**Tabell**-type), som refererer til tabellen LedgerParameters</li><li>**NumSeq** (**Beregnet felt**-type), som inneholder uttrykket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Når **NumSeq**-datatypen kalles opp, returneres den nye genererte verdien for nummerserien som er konfigurert i økonomimodul-parameterne for firmaet som leverer konteksten som ER-formatet kjøres under. Denne nummerserien identifiserer journaler unikt og fungerer som et partinummer som kobler sammen transaksjonene. |
 
 ### <a name="functions-list-extension"></a>Funksjonslisteutvidelse
 
@@ -674,7 +741,6 @@ ER lar deg utvide listen over funksjoner som brukes i ER-uttrykk. Det er nødven
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over elektronisk rapportering](general-electronic-reporting.md)
-
-[Utvide listen over elektroniske rapporteringsfunksjoner (ER)](general-electronic-reporting-formulas-list-extension.md)
+- [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
+- [Utvide listen over elektroniske rapporteringsfunksjoner (ER)](general-electronic-reporting-formulas-list-extension.md)
 

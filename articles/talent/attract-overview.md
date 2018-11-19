@@ -1,6 +1,6 @@
 ---
-title: Attract-funksjoner og -muligheter
-description: "Attract gir muligheter til å håndtere prosessen med å ansette nye talenter. Kandidater kan legges til ledige jobber og avansere fra trinn til trinn, inntil et tilbud gis eller søknaden avlås."
+title: Funksjoner og egenskaper for Attract
+description: "Dette emnet beskriver funksjonene i Attract for å administrere prosessen med å ansette nye talenter."
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,32 +18,32 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
-# <a name="attract-features-and-capabilities"></a>Attract-funksjoner og -muligheter
+# <a name="attract-features-and-capabilities"></a>Funksjoner og egenskaper for Attract
 
 [!include [banner](includes/banner.md)]
 
-Attract gir muligheter til å håndtere prosessen med å ansette nye talenter. Kandidater kan legges til ledige jobber og avansere fra trinn til trinn, inntil et tilbud gis eller søknaden avlås. I hvert trinn går kandidatene gjennom aktiviteter som utvelgelsessamtaler, vurderinger eller planlegging av intervjuer. Etter at de søker får kandidatene en e-postinvitasjon for å logge inn i Attract. Her kan de følge statusen sin for jobben, deres søknad, og besvare oppgaver som tildeles dem.
+Attract gir muligheter til å håndtere prosessen med å ansette nye talenter. Kandidater kan legges til ledige jobber og kan avansere fra trinn til trinn, inntil et tilbud gis eller søknaden avlås. I hvert trinn går kandidatene gjennom aktiviteter som utvelgelsessamtaler, vurderinger og intervjuer. Etter at de søker får kandidatene en e-postinvitasjon for å logge inn i Attract. Her kan de følge statusen for jobben og søknaden. De kan også svare på aktiviteter som er tilordnet til dem.
 
-Attract har følgende funksjoner.
+Dette emnet beskriver funksjonene i Attract.
 
 ## <a name="attract-dashboard"></a>Attract-dashbord
-Dette er hvor medlemmer av ansettelsesteamet kan se detaljene for jobbene de deltar i. Det er også hvor en ansettelsesansvarlig eller rekrutterer kan legge til en ny jobb for til Attract, enten ved å lage en individuell eller importere flere samtidig fra et Excel-regneark.
+På instrumentbordet kan medlemmer av ansettelsesteamet vise detaljene for jobbene de deltar i. Dette er også hvor en ansettelsesansvarlig eller rekrutterer kan legge til nye jobber i Attract, enten ved å lage dem individuelt eller importere flere samtidig fra et Microsoft Excel-regneark.
 
 ## <a name="jobs"></a>Jobber
-På siden **Jobb** vil detaljer som stillingsbeskrivelser og arbeidsted vises og redigeres. Siden **Jobb** er der ansettelsesteamet er satt sammen og du kan legge til eller endre rekrutterere og intervjuere på teamet. Ny kandidater kan også legges til på siden **Jobb**.
+På siden **Jobb** vil detaljer som stillingsbeskrivelser og arbeidsted vises og redigeres. Siden **Jobb** er også der ansettelsesteamet er satt sammen og du kan legge til eller endre rekrutterere og intervjuere på teamet. Ny kandidater kan også legges til på siden **Jobb**.
 
 ## <a name="candidates"></a>Kandidater
-Kandidater kan legges til en jobb individuelt, eller lastes opp i større antall fra et Excel-regneark. Alle kandidater legges automatisk til første fase, Søknadsfasen, i rekrutteringsprosessen for alle jobber. Alt av kandidatens søknadsinformasjon kan sees og administreres her. Tilleggsdokumenter kan lastes opp og vises, sammen med kontaktinformasjon som e-postadresser, telefonnumre og lenker til deres sosiale medier-kontoer. Hvis kandidaten har gitt en lenke til sin LinkedIn-profil, og LinkedIn-integrasjonen (som krever en LinkedIn-rekrutteringslisens) er opprettet, vil kandidatens profil vises.
+Kandidater kan legges til en jobb individuelt, eller de kan lastes opp i større antall fra et Excel-regneark. Alle kandidater legges automatisk til første fase, Søknadsfasen, i rekrutteringsprosessen for alle jobber. I dette trinnet kan alt av kandidaters søknadsinformasjon vises og administreres. Tilleggsdokumenter kan lastes opp og vises, sammen med kontaktinformasjon som e-postadresser, telefonnumre og lenker til deres sosiale medier-kontoer. Hvis en kandidat inkluderte en kobling til LinkedIn-profilen sin, og hvis LinkedIn-integrasjon er satt opp, vises kandidatens profil. (LinkedIn-integrasjon krever en lisens for LinkedIn-rekrutter.)
 
 ## <a name="stages"></a>Stadier
-Attract gir en forhåndsdefinert ansettelsesprosess som inneholder fire grunnleggende trinn: Søk, Utvelgelse, Intervju og Tilbud. nye kandidater starter i søknadsfasen hvor deres CV, følgebrev, portefølje og andre søknadsdokumenter blir gjennomgått. Derfra kan en kandidat gå videre til utvelgelsesfasen, hvor de inviteres til å delta i en telefonsamtale eller et Skype-videointervju. Ansettelsesansvarlig eller den som rekrutterer kan gi tilbakemelding om kandidaten og videreføre dem til neste trinn. Personlige intervjuer planlegges med tilgjengelige medlemmer av ansettelsesteamet. Etter intervjuene blir tilbakemeldinger fra intervjuet tatt opp og gjennomgått. Utvalgte kandidater avanserer til avsluttende trinn, hvor et tilbud gis og forberedes for deres gjennomgang og godkjennelse. 
+Attract gir en forhåndsdefinert ansettelsesprosess som har fire grunnleggende trinn: Søk, Utvelgelse, Intervju og Tilbud. Nye kandidater starter i søkefasen hvor deres CV, følgebrev, portefølje og andre søknadsdokumenter blir gjennomgått. Derfra kan kandidater gå videre til utvelgelsesfasen, hvor de inviteres til å delta i en telefonsamtale eller et Skype-videointervju. Ansettelsesansvarlig eller den som rekrutterer, kan gi tilbakemelding om kandidater og videreføre dem til neste trinn, som er intervjutrinnet. Personlige intervjuer blir deretter planlagt med tilgjengelige medlemmer av ansettelsesteamet. Disse intervjuene kan tilpasses som en-til-en- eller panelintervjuer med forskjellige lengder. Etter intervjuene blir tilbakemeldinger fra intervjuet tatt opp og gjennomgått. Valgte kandidater videreføres deretter til det siste trinnet, tilbudstrinnet. Under dette trinnet blir et tilbud gitt og klargjort for gjennomgang og godkjenning av kandidaten.
 
 ## <a name="candidate-app"></a>Kandidat-app
-kandidater mottar en epost så snart de har blitt lagt til en jobb med en kobling for å få appen. Denne webappen gir kandidater jobbinformasjon og er verktøyet for å kommunisere med ansettelsesteamet. Kandidater kan også sende inn tilgjengelighet for intervjuer.
+Så snart de har blitt lagt til en jobb, mottar kandidater en e-post med en kobling for å laste ned webappen. Appen gir jobbinformasjon og brukes til å kommunisere med ansettelsesteamet. Kandidater kan også bruke den til å sende inn tilgjengelighet for intervjuer.
 

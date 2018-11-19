@@ -3,7 +3,7 @@ title: Startside for lokale distribusjoner
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: kfend
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
-ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
+ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
+ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 # <a name="on-premises-deployments-home-page"></a>Startside for lokale distribusjoner
@@ -31,37 +31,44 @@ ms.lasthandoff: 10/16/2018
 Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
 
 ## <a name="get-started"></a>Komme i gang
-- [Hva er nytt eller endret i lokale distribusjoner av Dynamics 365 for Finance and Operations, Enterprise edition 7.2 med plattformoppdatering 12 (mars 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Oversikt over Dynamics 365 for Finance and Operations (lokalt)](on-premises-overview.md)
-- [Planlegge for lokal distribusjon](plan-onprem-deployment.md)
+- [Alternativ for lokal distribusjon](on-premises-overview.md)
+- [Planlegge og klargjøre for lokale distribusjoner](plan-onprem-deployment.md)
 - [Systemkrav for lokale distribusjoner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Størrelsesangivelse for maskinvare for lokale miljøer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Kjøpe Dynamics 365 for Finance and Operations (lokalt)](../../fin-and-ops/get-started/purchase-on-premises.md)
-- [Sammenligning av skyfunksjon og lokal funksjon](../../fin-and-ops/get-started/cloud-prem-comparison.md)
+- [Kjøp Finance and Operations (lokalt)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Sammenligning av skyfunksjoner og lokale funksjoner](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
-## <a name="onboard"></a>Onboard
-- [Opprette et lokalt prosjekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Konfigurere og distribuere i lokale miljøer (Platform update 12)](setup-deploy-on-premises-pu12.md)
+## <a name="onboard"></a>Jobbintroduksjon
+- [Opprette lokale projekter in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [Opprette og distribuere lokale miljøer (Plattformoppdatering 12 og nyere)](setup-deploy-on-premises-pu12.md)
 - [Konfigurere og distribuere i lokale miljøer (Platform update 8 og 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Installere nettverksskriverenheter i lokale miljøer](../analytics/install-network-printer-onprem.md)
-- [Konfigurere sikkerhet for SQL Server Reporting Services for en lokal distribusjon](../analytics/configure-ssrs-on-premises.md)
+- [Konfigurere sikkerhet for SQL Server Reporting Services for lokale distribusjoner](../analytics/configure-ssrs-on-premises.md)
 - [Utvikle og distribuere tilpassede modeller til lokale miljøer](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Arbeide i den lokale distribusjonen
 - [Konfigurere dokumentstyring](../../fin-and-ops/organization-administration/configure-document-management.md)
-- [Importere konfigurasjoner for elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
-- [Dokumentgenererings-, publiserings- og utskriftsegenskaper i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurere omvendt proxy for det lokale miljøet ditt](onprem-reverseproxy.md)
-- [Definere teknisk støtte](../lifecycle-services/support-experience.md)
-- [Feilsøking av klientens Internett-tilkobling](../user-interface/client-disconnected.md)
-- [Bruke oppdateringer i en lokal distribusjon](apply-updates-on-premises.md)
-- [Distribuere e lokale distribusjon på nytt](redeploy-on-prem.md)
+- [Importere konfigurasjoner for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Dokumentgenerering, publisering og utskrift i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
+- [Konfigurere omvendte proxyer for lokale miljøer](onprem-reverseproxy.md)
+- [Konfigurere teknisk støtte for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Internett-tilkobling for klient](../user-interface/client-disconnected.md)
+- [Bruke oppdateringer i lokale distribusjoner](apply-updates-on-premises.md)
+- [Omplassere lokale miljøer](redeploy-on-prem.md)
+
+## <a name="retail"></a>Retail
+- [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](../../retail/retail-onprem.md)
+- [Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø](deploy-retail-onprem.md)
+- [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurere og installere Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+
 
 ## <a name="other-resources"></a>Andre ressurser
-- [Feilsøke Dynamics 365 for Finance and Operations lokalt](troubleshoot-on-prem.md)
+- [Feilsøke lokale distribusjoner](troubleshoot-on-prem.md)
 - [Lokal diagnostikk](on-premises-diagnostics.md)
-- [Funksjoner som ikke er implementert i lokale distribusjoner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [Utgåtte funksjoner](../migration-upgrade/deprecated-features.md)
+- [Funksjoner som ikke implementeres i lokale distribusjoner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [Funksjoner som er fjernet eller avskrevet](../migration-upgrade/deprecated-features.md)
 - [Policy og lokale versjoner for programvarelivssyklus](../migration-upgrade/on-prem-version-update-policy.md)
  
 

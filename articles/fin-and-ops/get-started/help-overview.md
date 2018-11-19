@@ -3,7 +3,7 @@ title: Hjelpesystem for Finance and Operations
 description: "Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen."
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Finance and Operations inkluderer et hjelpesystem som er basert på to hovedkomp
 -   Et dokumentasjonsområde
 -   Oppgaveveiledninger
 
-Du får tilgang til både hjelpeemner og oppgaveveiledninger fra Hjelp-ruten, uanset hvilket produkt du bruker. Følgende skjermbilde viser Dynamics 365 for Finance and Operations
+Du får tilgang til hjelp fra Hjelp-ruten i alle produkter du bruker. Følgende skjermbilde viser Finance and Operations.
 
 ![Hjelp-rute](./media/help-pane-ops-task-guides.png)
 
 Dette emnet beskriver hjelpesystemet og forklarer hvordan du kan opprette egendefinerte dokumentasjons- og opplæringsressurser for organisasjonen.
 
 > [!IMPORTANT]
-> Kategorien **oppgaveveiledninger** er ikke tilgjengelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbeider for å aktivere denne funksjonaliteten i fremtidige utgaver. Oppgaveveiledningene i Kom i gang-delen i Talene vil fortsatt være tilgjengelig for å dekke grunnleggende funksjonalitet. Prosedyrehjelp er også tilgjengelig på docs.microsoft.com-området ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for både Retail og Talent.
+> **Oppgaveveiledning** er ikke for tiden ikke tilgjengelig for Retail eller i Hjelp-ruten for Talent (noen oppgaveveiledninger er tilgjengelige i Kom i gang-ruten for Talent). Prosedyrehjelp er tilgjengelig på docs.microsoft.com-området ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for både Retail og Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
 
@@ -64,17 +64,16 @@ docs.microsoft.com-området ([docs.microsoft.com/dynamics365/unified-operations]
 -   **Innhold som støtter forretningsprosesser** – Området inneholder forretningsprosessfokusert innhold som drar nytte av Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Søk på docs.microsoft.com
-Vi får mange spørsmål om hvordan du søker etter innholdet vårt. Hvis du starter fra en side om Finance and Operations på området vårt, begrenser vi søket slik at det bare gjelder for Finance and Operations-innhold. Du kan fjerne omfanget ved å klikke X ved siden av Operations i søkeboksen. 
+Vi får mange spørsmål om hvordan du søker etter innholdet vårt. Hvis du starter fra en side om Finance and Operations på området vårt, begrenser vi søket slik at det bare gjelder for Finance and Operations-innhold. Du kan fjerne omfanget ved å klikke X ved siden av Unified Operations i søkeboksen. 
 
 ![Søk i ordrer](./media/search-scope-2.png)
 
 Du kan også finne innholdet med en hvilken som helst søkemotor. For å få best resultater anbefaler vi at du bruker et områdesøk, for eksempel området: docs.microsoft.com dynamics 365 "søkeord"  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innholdsfortegnelsen
-Finance and Operations, Retail og Talent deler en enkelt innholdsfortegnelse på nettstedet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen over innholdsfortegnelsen til å finne emner du leter etter.
+Finance and Operations og Retail deler en enkelt innholdsfortegnelse på nettstedet for dokumenter, noe som gjør det mulig for kundene å se i emnet i konteksten. Det gjør det også mulig å bruke filterkontrollen over innholdsfortegnelsen til å finne emner du leter etter. 
 
-### <a name="follow-a-topic"></a>Følge et emne
-Hvis du vil følge et emne, klikker du på +Følg-knappen under kommentarboksen. Du må logge på å følge emnet. Se [Send tilbakemelding til oss](#leave-us-feedback) for mer informasjon.  
+Du kan få hjelp for Dynamics 365-produkter ved å søke etter dem, eller ved å klikke Dynamics 365 i områdesøkebanen for å komme til hubsiden vår. 
 
 ### <a name="use-an-rss-feed"></a>Bruke et RSS-feed
 Hvis du vil abonnere på et RSS-feed for alle oppdateringer i enhetlig drift-innholdet, kan du bruke følgende kobling fra en leser som støtter RSS-feeder, for eksempel Internet Explorer eller en RSS-feedbehandler: 
@@ -106,17 +105,18 @@ Hvis du vil ha mer informasjon, kan du se håndboken for vår bidragsyter: https
 
 
 > [!NOTE]
-> Vi godtar for øyeblikket bare bidrag til våre engelske repositorier.  
+> Vi godtar for øyeblikket bare bidrag til vårt engelske innholdssett.  
 
 
 ## <a name="task-guides"></a>Oppgaveveiledninger
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra Hjelp-ruten. Når du først klikker en oppgaveveiledning, vil Hjelp-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er nå tilgjengelige. 
 
-Vi vil gi ulike sett med oppgaveveiledninger for hvert produkt, for eksempel 365 Dynamics for Retail, Dynamics 365 for Finance and Operations, eller Dynamics 365 for Talent. Delen Tilgang til oppgaveveiledninger fra Hjelp-ruten beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
+Microsoft sendte oppgaveveiledningbiblioteker for versjoner til desember 2017 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hvordan du finner den riktige oppgaveveiledningen for produktet. 
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
 Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start oppgaveveiledning** nederst i Hjelp-ruten. En svart peker åpnes og angir handlingen som du må utføre. Følg instruksjonene som vises i brukergrensesnittet, og legg inn data i henhold til instruksjonene. 
+
 ![Oppgaveveiledning – trinnvis instruksjon](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start opp
 
 Oppgaveveiledninger opprettes ved hjelp av Oppgaveregistrering. Når du bruker Oppgaveregistrering, registreres alle handlingene du utfører i grensesnittet i Finance and Operations (for eksempel velge menyer, endre innstillinger og skrive inn data). Samlet kalles trinnene som du registrerer en oppgaveregistrering. Som forklart i den forrige delen kan oppgaveregistreringer vises i Hjelp-ruten og spilles av som oppgaveveiledninger. Det finnes imidlertid andre måter som du kan bruke oppgaveregistreringer på:
 
--   **Lagre oppgaveregistreringer til BPM** – Du kan lagre en oppgaveregistrering på en linje i et hierarki i et BPM-bibliotek i LCS. Når du lagrer en oppgaveregistrering på BPM, genereres og vises et flytskjema sammen med trinnene i registreringen. **Merk:** For å vise en oppgaveregistrering i Finance and Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek.
+-   **Lagre oppgaveregistreringer til BPM** – Du kan lagre en oppgaveregistrering på en linje i et hierarki i et BPM-bibliotek i LCS. Når du lagrer en oppgaveregistrering på BPM, genereres og vises et flytskjema sammen med trinnene i registreringen. 
+
+    > [!Note]
+    > For å vise en oppgaveregistrering i Finance and Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek.
+    
 -   **Lagre oppgaveregistreringer som Word-dokumenter** – Ved å lagre en oppgaveregistrering som et Microsoft Word-dokument, kan du enkelt lage utskrivbare opplæringsveiledninger for organisasjonen.
 
 Hvis du vil ha mer informasjon om Oppgaveopptaker, kan du se [Oppgaveopptaker i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
@@ -142,7 +146,7 @@ Hvis du vil ha tilgang til hjelpeinnhold i Finance and Operations, velger du **H
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
-Fra Hjelp-ruten har du tilgang til artikler som gjelder for Finance and Operations-klienten. Når du først åpner Hjelp-ruten og klikker kategorien **Wiki**, ser du artikler som gjelder for siden du er på i Finance and Operations. Hvis det ikke finnes noen artikler, kan du angi nøkkelord for å presisere søket. Når du klikker en artikkel i Hjelp-ruten, åpnes en ny kategori i leseren og viser artikkelen. 
+Fra Hjelp-ruten har du tilgang til artikler som gjelder for Finance and Operations-klienten. Når du først åpner Hjelp-ruten og klikker kategorien **Hjelp**, ser du artikler som gjelder for siden du er på i Finance and Operations. Hvis det ikke finnes noen artikler, kan du angi nøkkelord for å presisere søket. Når du klikker en artikkel i Hjelp-ruten, åpnes en ny kategori i leseren og viser artikkelen. 
 
 > [!IMPORTANT]
 > Denne delen gjelder ikke for Dynamics 365 for Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Talent. 
@@ -160,7 +164,9 @@ Før du kan få tilgang til oppgaveveiledninger fra **Hjelp**-ruten må en syste
 Følge denne fremgangsmåten på siden **Systemparametere**:
 
 1.  **Viktig:** Første gang du åpner kategorien Hjelp, må du koble til Lifecycle Services. Husk å klikke koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og klikk **OK** for å få tilgang til parameterskjemaet.
+
 ![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Velg Lifecycle Services-prosjektet du vil koble til.
 3.  Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
     - For Finance and Operations, for Microsoft-innhold, velger du QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations fra februar 2017. 
@@ -173,38 +179,29 @@ Etter at en systemadministrator har fullført disse trinnene, kan du åpne Hjelp
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Hvor er oversatt oppgaveveiledningene?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Hvor er de oversatt oppgaveveiledningene for Microsoft-biblioteker?
 
 Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittelen. Hvis du vil vise lokaliserte oppgaveveiledninger i Finance and Operations, kontroller at du er koblet til et egnet biblioteket. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
 -   Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
 -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-Følgende tabell viser nettstedene våre. Våre innholdswebområder er organiserte for å støtte livssyklusen til kunden. Hver fase støttes av et annet sett med områder. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
+
+- [Finance and Operations-hjelpesystem (nedlastbart faktaark)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Oppgaveopptaker](../../dev-itpro/user-interface/task-recorder.md)
+- [Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak](../../dev-itpro/user-interface/task-recorder.md)
+
+Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 
 | Område                                                                     | beskrivelse                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365.                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Finance and Operations-prosjekter, fra førsalg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Inneholder omfattende opplæringsressurser og er det primære brukerstøtteområdet for Dynamics 365 for Finance and Operations. Pålogging kan være nødvendig for å få tilgang til bestemte ressurser på området.                                                                      |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Microsofts område for gratis e-læring.                                                                                                                                                               |
+| [Lifecycle Services](https://lcs.dynamics.com/en/)\*                      | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Finance and Operations-prosjekter, fra førsalg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
 | [Kundestøtteblogg](http://aka.ms/AXSupportBlog)                              | Gir tips som posteres av Dynamics 365 for Finance and Operations-kundestøtteteamet.                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | Er vert for innhold fra tidligere versjoner som er skrevet for utviklere.                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | Vert for innhold fra tidligere versjoner som er skrevet for IT-medarbeidere og programbrukere.                                                                                                                                           |
-| [Dynamics-fellesskap](http://community.dynamics.com/)                  | Vert for blogger, forum og videoer.                                                                                                                                                                                                           |
+| [Docs.microsoft.com/tidligere versjoner](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | Vert for innhold fra tidligere versjoner.                                                                                                                                                                       |
+| [Dynamics-fellesskap](https://community.dynamics.com/)                  | Vert for blogger, forum og videoer.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Gir informasjon om evaluering og salg.                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Vert for opplæringsressurser for Finance and Operations, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Kan kreve en serviceplan for å få tilgang til noen ressurser på området.     |
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
-[Finance and Operations-hjelpesystem (nedlastbart faktaark)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
-
-[Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak](../../dev-itpro/user-interface/task-recorder.md)
-
-[Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
-[Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
-[Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
-[Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
 

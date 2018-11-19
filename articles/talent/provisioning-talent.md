@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Klargjøre Talent
@@ -47,7 +47,7 @@ Hvis du vil ha informasjon om hvordan du kan komme i gang med Talent, se **Talen
 Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
 
 1. I LCS prosjektet velger du flisen **Talent-appbehandling**.
-2. Talent klargjøres alltid i et Microsoft PowerApps-miljø for å aktivere PowerApps-integrering og -utvidelsesmuligheter. Les delen "Velge et PowerApps-miljø" i dette emnet før du fortsetter. 
+2. Talent klargjøres alltid i et Microsoft PowerApps-miljø for å aktivere PowerApps-integrering og -utvidelsesmuligheter. Les delen "Velge et PowerApps-miljø" i dette emnet før du fortsetter. Hvis du ikke allerede har et PowerApps-miljø, velger du Administrer miljøer i LCS eller navigerer til PowerApps-administrasjonssenteret. Følg deretter trinnene til [Opprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Hvis du vil vise eksisterende miljøer eller opprette nye miljøer, må leieradministratoren som klargjør Talent, være tilordnet til PowerApps P2-lisensen. Hvis organisasjonen ikke har en PowerApps P2-lisens, kan du få en fra CSP-en eller fra [PowerApps-prisingssiden](https://powerapps.microsoft.com/en-us/pricing/).
@@ -73,7 +73,7 @@ Integreringen mellom Talent- og PowerApps-miljøer gjør at du kan integrere og 
 Bruk følgende retningslinjer når du skal avgjøre hvilket PowerApps-miljø Talent skal distribueres i: 
 1. Velg Behandle miljøer i LCS, eller gå direkte til PowerApps-administrasjonssenteret, der du kan vise eksisterende miljøer og opprette nye miljøer.
 2. Ett enkelt Talent-miljø er tilordnet til ett enkelt PowerApps-miljø.
-3. Et PowerApps-miljø inneholder Talent-programmet, sammen med de tilsvarende PowerApps-, Flyt- og CDS-programmene. Hvis PowerApps-miljøet slettes, slettes også appene i det.
+3. Et PowerApps-miljø inneholder Talent-programmet, sammen med de tilsvarende PowerApps-, Flyt- og CDS-programmene. Hvis PowerApps-miljøet slettes, slettes også appene i det. Når du klargjør et Talent-miljø, kan enten "Prøveversjon" eller "Produksjon" klargjøres. Velg miljø basert på hvordan miljøet vil bli brukt. 
 4. Dataintegrering og teststrategier skal vurderes, for eksempel: Sandkasse, UAT, Produksjon. Vi anbefaler derfor at du vurderer forskjellige konsekvenser for distribusjonen, fordi det ikke er enkelt å endre hvilket Talent-miljø som skal tilordnes til PowerApps-miljøet senere.
 5. Følgende PowerApps-miljøer kan ikke brukes for Talent og filtreres fra valglisten i LCS:
  

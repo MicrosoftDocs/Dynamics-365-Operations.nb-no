@@ -3,7 +3,7 @@ title: Finansdimensjoner
 description: Dette emnet beskriver de ulike typene finansdimensjoner og hvordan de er definert.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Her er noen av begrensningene:
 
 ## <a name="custom-dimensions"></a>Egendefinerte dimensjoner
 
-For å opprette en brukerdefinert finansdimensjon velger du **&lt;&nbsp;Egendefinerte dimensjoner&nbsp;&gt;** i feltet **Bruk verdier fra**.
+For å opprette en brukerdefinert finansdimensjon velger du **Egendefinert dimensjon** i feltet **Bruk verdier fra**.
 
-Du kan også angi en kontomaske for å begrense mengden og typen informasjon som kan angis for dimensjonsverdier. Du kan angi tegn som forblir de samme for hver dimensjonsverdi, for eksempel bokstaver eller en bindestrek (-). Du kan også angi nummertegn (\#) og og-tegn (&) om plassholdere for tegn som vil endres hver gang en dimensjonsverdi opprettes. Bruk et nummertegn (\#) som plassholder for et tall og et og-tegn (&) som plassholder for en bokstav. Feltet for formatmasken er bare tilgjengelig når du velger **&lt;&nbsp;Egendefinert dimensjon&nbsp;&gt;** i feltet **Bruk verdier fra**.
+Du kan også angi en kontomaske for å begrense mengden og typen informasjon som kan angis for dimensjonsverdier. Du kan angi tegn som forblir de samme for hver dimensjonsverdi, for eksempel bokstaver eller en bindestrek (-). Du kan også angi nummertegn (\#) og og-tegn (&) om plassholdere for tegn som vil endres hver gang en dimensjonsverdi opprettes. Bruk et nummertegn (\#) som plassholder for et tall og et og-tegn (&) som plassholder for en bokstav. Feltet for formatmasken er bare tilgjengelig når du velger **Egendefinert dimensjon** i feltet **Bruk verdier fra**.
 
 **Eksempel**
 
@@ -108,14 +108,30 @@ Du kan definere avledede verdier på dimensjonssiden.
 
 Angi dimensjonskombinasjonene som skal avledes fra dimensjonsfeltene, i den første kolonnen. Hvis du for eksempel vil bruke kostsenteret som dimensjonenen som avdelingen og lokasjonen er avledet fra, angir du kostsenter 10, avdeling 20 og lokasjon 30. Deretter, når du angir kostsenter 10 i en hovedoppføring eller på en transaksjonsside, angis avdeling 20 og lokasjon 30 som standard.
 
-Den avledede dimensjonsprosessen overstyrer ikke eksisterende verdier for avledede dimensjoner. Hvis du angir kostsenter 10, og ingen andre dimensjoner er angitt, blir for eksempel avdeling 20 og lokasjon 30 angitt som standard. Men hvis du endrer kostsenteret, endres ikke verdiene som allerede er opprettet. Derfor kan du opprette standarddimensjoner på hovedoppføringer, og disse dimensjonene endres ikke etter avledede dimensjoner.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Overstyre eksisterende verdier med avledede dimensjoner
+ 
+Den avledede dimensjonsprosessen overstyrer som standard ikke eksisterende verdier for avledede dimensjoner. Hvis du angir kostsenter 10, og ingen andre dimensjoner er angitt, blir for eksempel avdeling 20 og lokasjon 30 angitt som standard. Men hvis du endrer kostsenteret, endres ikke verdiene som allerede er opprettet. Derfor kan du opprette standarddimensjoner på hovedoppføringer, og disse dimensjonene endres ikke etter avledede dimensjoner.
+
+Du kan endre virkemåten til avledede dimensjoner for å overstyre eksisterende verdier, ved å merke av for **Erstatt eksisterende dimensjonsverdier med avledede verdier** på siden **Avledede dimensjoner**. Hvis dette feltet er valgt, kan du angi en dimensjon med avledede dimensjonsverdier, så vil de avledede dimensjonsverdiene overskrive verdier som allerede finnes. Hvis vi bruker det forrige eksemplet: Hvis du angir kostsenter 10, og ingen andre dimensjoner er angitt, blir for eksempel avdeling 20 og lokasjon 30 angitt som standard. Hvis verdiene imidlertid allerede var avdeling 50 og lokasjon 60, endres verdiene nå til avdeling 20 og lokasjon 30.
+ 
+Avledede dimensjoner med denne innstillingen erstatter ikke automatisk de eksisterende standard dimensjonsverdiene når dimensjonsverdier angis som standard. Dimensjonsverdier vil bare bli overskrevet når du angir en ny dimensjonsverdi på en side, og det finnes eksisterende avledede verdier for denne dimensjonen på siden.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Hindre endringer ved hjelp av avledede dimensjoner
+ 
+Når du bruker **Legg til segment** på siden **Avledede dimensjoner** for å legge til et segment som en avledet dimensjon, angis et alternativ nederst på siden **Legg til segment** der du kan unngå endringer i dimensjonen når den hentes inn på en side. Standardinnstillingen er deaktivert, så den hindrer ikke de avledede dimensjonsverdiene fra å bli endret. Endre innstillingen til **Ja** hvis du vil hindre at dimensjonen blir endret etter at den er avledet. Hvis for eksempel verdien for avdelingsdimensjonen er avledet fra verdien for kostsenterdimensjonen, kan ikke avdelingsverdien endres hvis innstillingen **Hindre endringer** er **Ja**. 
+ 
+Innstillingen hindrer ikke endringer hvis dimensjonsverdien er gyldig, men den er ikke oppført i listen over avledede dimensjoner. For eksempel hvis Avdeling 20 er avledet fra Kostsenter 10, og du angir Kostsenter 10, kan du ikke redigere Avdeling 20. Hvis du imidlertid angir Kostsenter 20, og det ikke er i listen over avledede dimensjoner for Kostsenter, kan du redigere avdelingsverdien. 
+ 
+I alle tilfeller blir kontoverdien og alle dimensjonsverdiene likevel validert mot kontostrukturene etter at de avledede dimensjonsverdier er brukt. Hvis du bruker avledede dimensjoner, og valideringen mislykkes når de brukes på en side, må du endre de avledede dimensjonsverdiene på siden for avledede dimensjoner før du kan bruke dem i transaksjoner. 
+ 
+Når du endrer dimensjoner i hurtigfanen **Finansdimensjoner**, vil ikke dimensjonen som er merket for å hindre endringer, kunne redigeres. Hvis du angir en konto og dimensjoner i den segmenterte angivelseskontrollen på en side, er dimensjonene redigerbare. Men når du flytter markeringen fra den segmenterte angivelseskontrollen og flytter til et annet felt eller iverksetter en handling, vil kontoen og dimensjonene bli validert mot den avledede dimensjonslisten og kontostrukturene for å sikre at du har angitt riktige verdier. 
 
 ### <a name="derived-dimensions-and-entities"></a>Avledede dimensjoner og enheter
 
 Du kan definere avledede dimensjonssegmenter og -verdier ved hjelp av enheter.
 
 - Den avledede dimensjonsenheten angir de drivende dimensjonene og segmentene som skal brukes for disse dimensjonene.
-- Enheten DerivedDimensionValue lar deg importere verdiene som skal avledes for hver drivende dimensjon.
+- Avledede dimensjonsverdier-enheten lar deg importere verdiene som skal avledes for hver drivende dimensjon.
 
 Når du bruker en enhet til å importere data, hvis denne enheten importerer dimensjoner, brukes reglene for avledet dimensjon under importen, med mindre enheten spesifikt overstyrer disse dimensjonene.
 

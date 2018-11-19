@@ -3,7 +3,7 @@ title: Definer mva-utligningsperioder
 description: "Mva-utligningsperioder inneholder informasjon om periodintervallene som det må rapporteres og betales merverdiavgift for."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Definer mva-utligningsperioder
@@ -50,13 +50,15 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 12. Angi antall enheter i periodeintervallet per periode. Et kvartal har for eksempel 3 måneder.
 13. Merk av eller fjern merket i avmerkingsboksen Bruk satsvis behandling for utligning av merverdiavgift.
     * Utligningsprosessen for utligningsperioden kan behandles som en satsvis jobb i bakgrunnen. Dette anbefales for et stort antall mva-transaksjoner i et periodeintervall.  
-14. Utvid kategorien Periodeintervaller.
-15. Klikk Legg til.
-16. Merk den valgte raden i listen.
-17. Angi en dato i Fra dato-feltet.
-18. Angi en dato i Til dato-feltet.
-19. Klikk Nytt periodeintervall.
+14. Merk eller fjern merket i avmerkingsboksen Hindre generering av transaksjoner for motregningsavgift.
+    * Som standard genererer systemet transaksjoner for motregningsavgift under utligningsprosessen, som kan føre til ytelsesproblemer hvis det finnes et stort antall avgiftstransaksjoner i et periodeintervall. Merk av i denne avmerkingsboksen for å hindre generering av transaksjoner for motregningsavgift.
+15. Utvid kategorien Periodeintervaller.
+16. Klikk Legg til.
+17. Merk den valgte raden i listen.
+18. Angi en dato i Fra dato-feltet.
+19. Angi en dato i Til dato-feltet.
+20. Klikk Nytt periodeintervall.
     * Når det første periodeintervallet er angitt, kan du opprette nye perioder automatisk. Du kan gå tilbake og legge til nye periodeintervallene etter behov.  
-20. Lukk siden.
+21. Lukk siden.
 
 
