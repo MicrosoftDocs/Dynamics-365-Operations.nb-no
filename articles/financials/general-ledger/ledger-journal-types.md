@@ -1,9 +1,9 @@
 ---
 title: Finansjournaltyper
-description: "Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet beskriver journaltypene som du kan definere for finansjournaler.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet beskriver journaltypene som du kan definere for finansjournaler. Bruk **Journalnavn**-siden til å definere journaler som du kan bruke i Microsoft Dynamics 365 for Finance and Operations.
 
 | Journaltype                      | Formål                       | Angi transaksjoner på denne siden                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ Denne artikkelen beskriver journaltypene som du kan definere for finansjournaler
 | Lønnsutbetaling              | Utsted betalinger som er basert på lønnsoppgaver. Du kan ikke angi transaksjoner manuelt i denne journalen. Du må generere lønnsoppgaver og deretter sende de uttrykkene for betaling.                                                                                                                                                              |                                                                |
 | Tidsbestemt                          | Opprett periodiske transaksjoner for den periodiske journalen.                                                                                                                                                                                                                                                                                                      | Periodiske journaler                                              |
 | Poster anleggsmidler                 | Poster anleggsmiddeltransaksjoner.                                                                                                                                                                                                                                                                                                                              | Anleggsmidler                                                   |
-| Prosjekt - utgifter                | Opprett utgiftstransaksjoner i prosjekt.                                                                                                                                                                                                                                                                                                                        | Utgift                                                        |
+| Prosjekt - utgifter                | Opprett utgiftstransaksjoner i prosjekt.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Justering for rapporteringsvaluta     | Opprett justeringer i rapporteringsvalutaen for saldoer på finanskontoer.               | Justeringsjournaler for rapporteringsvaluta                         |
 | Statistikktransaksjoner            | Opprette statistiske transaksjoner.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Leverandør: bankremisse            | Opprett en remitteringsfil for egenveksel som kan sendes til organisasjonens bank.                                                                                                                                                                                                                                                                      | Remitteringsjournal                                             |
 | Leverandørbetaling               | Opprette transaksjoner for leverandørbetaling.                                                                                                                                                                                                                                                                                                                    | Betalingsjournal                                                |

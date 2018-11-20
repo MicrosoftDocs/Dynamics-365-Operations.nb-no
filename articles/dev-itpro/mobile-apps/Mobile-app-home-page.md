@@ -3,7 +3,7 @@ title: Startside for Dynamics 365 for Unified Operations Mobile-appen
 description: "Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
+ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
+ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
@@ -61,7 +61,7 @@ Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, 
 ## <a name="implementation-process"></a>Implementeringsprosess
 Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. 
 
-![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)
+[![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å implementere både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.
 

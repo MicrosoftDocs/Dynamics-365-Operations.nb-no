@@ -14,6 +14,8 @@
       href: dev-itpro/choose-deployment.md
     - name: Få kundestøtte for Retail
       href: retail-support.md
+    - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Forstå implementeringslivssyklusen
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -139,14 +141,12 @@
       href: demo-data.md
     - name: Produkt- og kundesøk på salgsstedet
       href: POS-search-improvements.md
-    - name: Lageroppslag på salgsstedet
+    - name: Beholdningsoppslag på salgsstedet
       href: product-variants-POS.md
     - name: Eksterne enheter for maskinvare
       items:
         - name: Eksterne enheter for detaljhandel
           href: retail-peripherals-overview.md
-        - name: Microsoft-testede eksterne enheter for salgssted
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: Simulator for eksterne enheter for Retail
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Koble eksterne enheter til salgsstedet
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Rabatter og prisjusteringer
   items:
-    - name: Salgsprisbehandling for Retail
+    - name: Detaljhandelsrabatter
+      href: retail-discounts-overview.md
+    - name: Salgsprisbehandling for detaljhandel
       href: price-management.md
     - name: Prisjusteringer og rabatter
       href: price-adjustments-discounts.md
@@ -269,11 +271,11 @@
       href: ../supply-chain/production-control/default-order-settings.md
     - name: Søke etter produkter og produktvarianter under ordreregistrering
       href: ../supply-chain/pim/search-products-product-variants.md
-- name: Lojalitet
+- name: Fordel
   items:
-    - name: Definere fordelsprogrammer for kunde
+    - name: Fordelsoversikt
       href: set-up-customer-loyalty-program.md
-- name: Lager
+- name: Beholdning
   items:
     - name: Butikklagerstyring
       href: work-with-store-inventory.md
@@ -305,8 +307,10 @@
       href: ../talent/departments-jobs-positions.md
     - name: Konfigurere komponentene for en jobb
       href: ../talent/create-job.md
-- name: Lokalisering og forskriftsmessige funksjoner
+- name: Lokalisering og forskriftsmessige funksjoner​
   items:
+    - name: Økonomisk integrering for detaljhandelskanal
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Øst-Europa
       items:
         - name: Forskuddsfakturaer for Retail for Øst-Europa
@@ -315,6 +319,8 @@
           href: localizations/emea-eeu-petty-cash-for-retail.md
         - name: Kundefakturaer for Retail og retursalgsordrer i østeuropeiske land
           href: localizations/emea-eeu-retail-invoices.md
+        - name: "Retningslinjer for distribusjon for\_kassaapparater for Tsjekkia, Ungarn og Polen"
+          href: localizations/emea-eeu-deployment.md
     - name: Frankrike
       items:
         - name: Kassefunksjonalitet
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Støtte for oppgradering og N-1 for India
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Italia
+      items:
+        - name: Integrering av bilagsskriver
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norge
       items:
         - name: Kassefunksjonalitet
@@ -488,9 +498,11 @@
           href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: Legge til egendefinerte kontroller i salgsstedsvisninger
           href: dev-itpro/pos-custom-control.md
-        - name: Legge til POS-operasjoner i POS-oppsett ved hjelp av utforming for knappegruppe
+        - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
           href: dev-itpro/add-POS-operations.md
-        - name: Utvidelse for POS-betaling
+        - name: API-er for Retail POS
+          href: dev-itpro/POS-APIs.md
+        - name: Utvidelse for salgsstedsbetaling
           href: dev-itpro/pos-payment-extension.md
         - name: Støtte for eksterne gavekort
           href: dev-itpro/gift-card.md

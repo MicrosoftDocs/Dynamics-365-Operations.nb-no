@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
+ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -71,7 +71,7 @@ Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av
 
 ### <a name="assignment"></a>Tildeling
 
-Skjermoppsett kan tilordnes på butikk- eller brukernivå. Brukertildelingen overstyrer kasse- og butikktildelinger, og kassetildelingen overstyrer butikktildelingen. I et enkelt scenario der alle brukere bruker det samme oppsettet uavhengig av kasse eller rolle, kan skjermoppsett bare angis for butikknivået. I scenarier der bestemte kasser eller brukere krever spesialisert oppsett, kan oppsettene tilordnes.
+Skjermoppsett kan tilordnes på butikk-, kasse- eller brukernivå. Brukertildelingen overstyrer kasse- og butikktildelinger, og kassetildelingen overstyrer butikktildelingen. I et enkelt scenario der alle brukere bruker det samme oppsettet uavhengig av kasse eller rolle, kan skjermoppsett bare angis for butikknivået. I scenarier der bestemte kasser eller brukere krever spesialisert oppsett, kan oppsettene tilordnes.
 
 ### <a name="layout-sizes"></a>Oppsettstørrelser
 

@@ -3,7 +3,7 @@ title: Synkronisere prosjektkontrakter og prosjekter direkte fra Project Service
 description: "Dette emnet beskriver malen og underliggende oppgaver som brukes til å synkronisere prosjektkontrakter og prosjekter direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations."
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 65a274323a2d95c9c76727c9e40aa7e649e6350a
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -95,8 +95,8 @@ Når Project Service Automation til Finance and Operations-integrasjonsløsninge
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
 - Før synkronisering av prosjektkontrakter og prosjekter kan skje må du synkronisere kontoer.
-- I tilkoblingssettet, legg til et integreringsnøkkelfelttilordning for **msdyn\_organizationalunits** til **msdyn\_name \[Name\]**. Du må kanskje først legge til et prosjekt i tilkoblingssettet. Hvis du vil ha mer informasjon om integreringsnøkler, kan du se [Dynamics 365-dataintegrasjon](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
-- I tilkoblingssettet, legg til et integreringsnøkkelfelttilordning for **msdyn\_projects** til **msdynce\_projectnumber \[Project Number\]**. Du må kanskje først legge til et prosjekt i tilkoblingssettet. Hvis du vil ha mer informasjon om integreringsnøkler, kan du se [Dynamics 365-dataintegrasjon](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
+- I tilkoblingssettet, legg til et integreringsnøkkelfelttilordning for **msdyn\_organizationalunits** til **msdyn\_name \[Name\]**. Du må kanskje først legge til et prosjekt i tilkoblingssettet. Hvis du vil ha mer informasjon, se [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- I tilkoblingssettet, legg til et integreringsnøkkelfelttilordning for **msdyn\_projects** til **msdynce\_projectnumber \[Project Number\]**. Du må kanskje først legge til et prosjekt i tilkoblingssettet. Hvis du vil ha mer informasjon, se [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 - **SourceDataID** for prosjektkontrakter og prosjekter kan oppdateres til en annen verdi eller fjernes fra tilordningen. Standardmalverdien er **Project Service Automation**.
 - **PaymentTerms**-tilordningen må oppdateres, slik at den gjenspeiler gyldige betalingsbetingelser i Finance and Operations. Du kan også fjerne tilordningen fra prosjektoppgaven. Standard verditilordning har standardverdier for demonstrasjonsdata. Tabellen nedenfor viser verdiene i Project Service Automation.
 

@@ -1,11 +1,20 @@
-- name: Velkommen til Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: Komme i gang
       href: talent-get-started.md
       items:
         - name: Hva er nytt eller endret?
+          href: whats-new.md
           items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)
+              href: whats-new-talent-october-31.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (19. oktober 2018)
+              href: whats-new-talent-october-19.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (15. oktober 2018)
+              href: whats-new-talent-october-11.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (8. oktober 2018)
+              href: whats-new-talent-october-8.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (1. oktober 2018)
               href: whats-new-talent-october-01.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (24. september 2018)
@@ -30,6 +39,8 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR og Common Data Service for apper
           href: CoreHREntities.md
+        - name: Integreringer
+          href: talent-financeandoperations-integration.md
         - name: Få tilgang til forhåndsvisningsfunksjoner
           href: access-preview-feature.md
         - name: Konfigurere lønnsintegrering mellom Talent og Dayforce
@@ -64,7 +75,35 @@
       items:
         - name: Funksjoner og egenskaper for Attract
           href: attract-overview.md
-        - name: Opprette en engasjerende introduksjon ved oppstart
+        - name: Opprette en prosessmal i Attract
+          href: Process-templates-Attract.md
+        - name: 'Opprette, godkjenne og postere jobber i Attract'
+          href: Creating-jobs-Attract.md
+        - name: Leverandører med talentsamlinger
+          href: attract-talent-pools.md
+        - name: Leverandører med LinkedIn-rekrutterer
+          href: attract-linked-in-recruiter.md
+        - name: "Aktiviteter i ansettelsesprosess\_i Attract"
+          href: activities-attract.md
+        - name: Utvidelsesmulighet
+          href: extensibility-attract.md
+        - name: Karriereområde og kandidaterfaringer
+          href: career-site.md
+        - name: Konfigurere tilbudsbehandling
+          href: offer-setup.md
+        - name: 'Opprette, godkjenne og signere tilbud'
+          href: creating-offers.md
+        - name: Opprette og administrere e-postmaler
+          href: email-templates.md
+        - name: Rapportering og analyse
+          href: Reporting-Analytics-Attract.md
+        - name: Administrasjon av sikkerhet og rolle i Attract
+          href: security-attract.md
+        - name: Administratorinnstillinger i Attract
+          href: Admin-Settings-Attract.md
+        - name: Intelligente anbefalinger
+          href: Intelligent-Recommendations.md
+        - name: Opprette en engasjerende jobbintroduksjon
           href: create-onboarding-experience.md
     - name: Motivere ansatte
       items:

@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Vis utligninger
 
-Knappen **Vis utligninger** i handlingsruten gir rask tilgang til utligningshistorikken og mer informasjon om hele utligningstransaksjonen. Du kan også vise flere transaksjoner som er knyttet til den valgte transaksjonen, fordi de var en del av samme utligningen, eller fordi de er betalinger som ble opprettet i samme betalingsjournalen.
+Knappen **Vis utligninger** i handlingsruten gir rask tilgang til utligningshistorikken og detaljert informasjon om utligningstransaksjonen. Du kan også vise flere transaksjoner som er knyttet til den valgte transaksjonen, fordi de var en del av samme utligningen, eller fordi de er betalinger som ble opprettet i samme betalingsjournalen.
 
 1. Velg **Kunder \> Alle kunder**.
 2. Velg en kunde som har transaksjoner, og gå deretter til handlingsruten, kategorien **Kunde**, og velg **Transaksjoner**.
@@ -49,7 +49,7 @@ Knappen **Vis utligninger** i handlingsruten gir rask tilgang til utligningshist
 
 ## <a name="global-transactions"></a>Globale transaksjoner
 
-Knappen **Globale transaksjoner** er lagt til på kundesiden. Med denne knappen kan du vise alle transaksjoner for en kunde på tvers av alle juridiske enheter. Listesiden **Kundetransaksjoner** viser transaksjoner bare for de juridiske enhetene som brukeren har tilgang til, basert på hans eller hennes sikkerhetsinnstillinger.
+Knappen **Globale transaksjoner** vises også på **Kundetransaksjoner**-listesiden. Med denne knappen kan du vise alle transaksjoner for en kunde på tvers av alle juridiske enheter. Listesiden **Kundetransaksjoner** viser transaksjoner bare for de juridiske enhetene som brukeren har tilgang til, basert på hans eller hennes sikkerhetsinnstillinger.
 
 Listesiden viser alle transaksjoner for kunder som har samme part-ID som kunden du startet med. Hvis kunden US-001 i én juridisk enhet har samme part-ID som kunde DE-001 i en annen juridisk enhet, vises for eksempel alle transaksjoner for begge kunde-ID-ene.
 
@@ -67,13 +67,13 @@ Filteret for å vise åpne transaksjoner er erstattet med et nytt filter som lar
 - **Alle** – Vis alle transaksjoner for de valgte kundene (åpne og lukkede).
 - **Lukket** – Vis bare transaksjoner som er fullstendig utlignet og lukket.
 - **Åpen** – Vis bare transaksjoner som ikke er fullstendig utlignet.
-- **Åpne per dato** – Vis bare transaksjoner som ikke er helt utlignet per en dato du angir. Når du velger dette alternativet, kan du endre datoen som vises ved siden av filteret. Transaksjoner som har en verdi for **Siste utligningsdato** etter datoen du angir, vises i listen, selv om disse transaksjonene utlignes fullstendig per gjeldende dato. Saldoen representerer imidlertid saldoene per gjeldende dato, ikke per den valgte datoen.
+- **Åpne inkludert lukket på eller etter dato** – Vis bare transaksjoner som ikke er fullstendig utlignet på eller etter en dato du angir. Når du velger dette alternativet, kan du endre datoen som vises ved siden av filteret. Transaksjoner som har en verdi for **Siste utligningsdato** på eller etter datoen du angir, vises i listen, selv om disse transaksjonene utlignes fullstendig per gjeldende dato. Saldoen representerer imidlertid saldoene per gjeldende dato, ikke per den valgte datoen.
 
-Et filter er også lagt til, som lar deg skjule valutaomregningstransaksjoner. Bare merk av for **Skjul revaluering av valuta**.
+Velg **Skjul revaluering av valuta**-avmerkingsboksen for å skjule valutaomregningstransaksjoner.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Enklere å endre forfallsdatoer og rabattdatoer
+## <a name="modify-due-dates-and-discount-dates"></a>Endre forfallsdatoer og rabattdatoer
 
-Du kan oppdatere forfallsdatoer og rabattdatoer for åpne kundetransaksjoner. I versjon 8.1 er opplevelsen forbedret. Du kan nå legge til forfallsdatoer på listesiden **Kundetransaksjoner**. Ved å klikke på forfallsdatoen på listesiden **Kundetransaksjoner** kan du også endre forfallsdatoer, rabattdatoer, betalingsbetingelser og vilkår for kontantrabatt i dialogboksen **Forfallsdato for oppdatering og kontantrabattdatoer**.
+Du kan oppdatere forfallsdatoer og rabattdatoer for åpne kundetransaksjoner. I versjon 8.1 kan du nå legge til forfallsdatoer på listesiden **Kundetransaksjoner**. Ved å klikke på forfallsdatoen på listesiden **Kundetransaksjoner** kan du også endre forfallsdatoer, rabattdatoer, betalingsbetingelser og vilkår for kontantrabatt i dialogboksen **Forfallsdato for oppdatering og kontantrabattdatoer**.
 
 ### <a name="activate-the-feature"></a>Aktivere funksjonen
 
