@@ -1,0 +1,66 @@
+---
+title: Salgsfunksjonalitet for telefonsenter
+description: Dette emnet gir en oversikt over telefonsenterspesifikke salgsfunksjoner i Microsoft Dynamics 365 for Retail.
+author: josaw1
+manager: AnnBe
+ms.date: 04/03/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 16361
+ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 2b536ad4f29a3bb76294ef2fba30c529c24f1375
+ms.contentlocale: nb-no
+ms.lasthandoff: 08/09/2018
+
+---
+
+# <a name="call-center-sales-functionality"></a>Salgsfunksjonalitet for telefonsenter
+
+[!include [banner](includes/banner.md)]
+
+I Dynamics 365 for Retail er et telefonsenter en type detaljhandelskanal som kan defineres i programmet. Ved å definere en bestemt kanal for telefonsenterenheter kan systemet knytte bestemte datastandarder og andre ordrebehandlingsstandarder til salgsordrer som er opprettet av en bruker av lefonsenterkanalen.
+
+Telefonsenterfunksjonene omfatter avansert utsalgspris og kampanjer, kataloger, gavekort, lojalitetsprogrammer og kuponger. Telefonsenterordrer utnyttes også av salgsstedsprogrammet (POS) til å støtte ordrefullføring på tvers av kanaler.
+
+Det er viktig å være klar over at selv om telefonsentermodulen kan brukes av andre bransjer utenfor detaljhandelen, er ikke den gjeldende versjonen av Dynamics 365 for Retail-telefonsenterprogrammet optimalisert for bruk i B2B-ordrebehandlingsscenarier (bedrift til bedrift) eller scenarier der ordrer har store mengder salgslinjer. Det anbefales at brukere som ønsker å bruke telefonsenterfunksjoner for ordrebehandling utenfor vanlig transaksjonsbehandling direkte til kunde, tar seg tilstrekkelig tid til å teste og validere at aktivering av telefonsenterfunksjonene oppfyller funksjonelle og ytelsesbehov.
+
+I tillegg til støtte for ordreoppretting har telefonsentermodulen også et brukervennlig kundeserviceprogram som gjør det enklere for brukerne å finne kundekontoer og gå gjennom alle tilknyttede ordredata og attributter. Kundetjenesteskjermen er utformet for at en bruker raskt skal kunne få tilgang til ordrerelaterte data som gjør at de kan svare på de fleste vanlige ordrerelaterte spørsmål fra kunder.
+
+Denne siden inneholder koblinger til relevante dokumentasjon som er knyttet til installasjon, konfigurasjon og funksjonell bruk av telefonsenterfunksjonene i Dynamics 365 for Retail.
+
+## <a name="configure-the-call-center"></a>Konfigurere telefonsenteret
+[Definere alternativer for ordrebehandling](set-up-order-processing-options.md)
+
+## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
+[Definere svindelvarsler](set-up-fraud-alerts.md)
+
+[Manuelle ordresperrer](work-with-order-holds.md)
+
+## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
+[Betalingsmåter i et telefonsenter](work-with-payments.md)
+
+## <a name="configure-delivery-modes"></a>Konfigurere leveringsmåter
+[Konfigurere leveringsmåter og tillegg for telefonsenter](configure-call-center-delivery.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurere direkte markedsføring
+[Telefonsenterkataloger](call-center-catalogs.md)
+
+[Definere RFM-analyse](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
+[Definere et kontinuitetsprogram for et telefonsenter](set-up-continuity-program.md)
+
+
