@@ -1,0 +1,628 @@
+- name: Velkommen til Dynamics 365 for Retail
+  href: index.md
+- name: Komme i gang
+  items:
+    - name: Hva er nytt eller endret?
+      href: get-started/whats-new.md
+    - name: Før du kjøper Retail
+      href: get-started/before-you-buy.md
+    - name: Registrere deg for et forhåndsvisningsabonnement
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Distribuere et demomiljø
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Distribusjonsalternativer
+      href: dev-itpro/choose-deployment.md
+    - name: Få kundestøtte for Retail
+      href: retail-support.md
+    - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
+      href: ../fin-and-ops/get-started/one-version.md
+- name: Forstå implementeringslivssyklusen
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Jobbintroduksjon
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Klargjøre for aktivering
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Vanlige spørsmål om aktivering
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Sende en serviceforespørsel
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure Active Directory-leiere'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Flytte miljøer mellom datasentre
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Flytte lisenser mellom avtaletyper
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: Flytte et LCS-implementeringsprosjekt til en annen Azure Active Directory-leier
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Implementere flere LCS-prosjekter og produksjonsmiljøer på samme Azure Active Directory-leier
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Implementere Finance and Operations Retail-prosjekter
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Konfigurere nye miljøer, Azure DevOps og grener for Retail-prosjekter'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Oppdatere kode og miljøer for Retail-prosjekter
+      href: dev-itpro/updating-environments.md
+    - name: Testings- og ytelsesproblemer
+      href: dev-itpro/retail-implementation-testing-performance.md
+- name: Behandling av distribuert ordre (DOM)
+  href: dom.md
+- name: Betalinger
+  items:
+    - name: Betalingsmåter
+      href: payment-methods.md
+    - name: 'Kredittkortoppsett, autorisasjon og registrering'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Konfigurere kontantstørrelser for salgsstedet
+      href: cash-denominations.md
+    - name: Definere scenarier for betaling av faktura
+      href: payinvoice.md
+    - name: Vanlige spørsmål om betalinger
+      href: dev-itpro/payments-retail.md
+- name: Bestillinger
+  items:
+    - name: Oversikt over bestilling
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Opprette bestillinger
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Mottaksseddel mot bestillinger
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Godkjenne og bekrefte bestillinger
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Mobilt arbeidsområde for bestillingsgodkjenning
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Kontoutdrag
+  items:
+    - name: Detaljhandelsutdrag
+      href: retail-statements.md
+    - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Forbedringer for utdragsposteringfunksjonalitet
+      href: statement-posting-EOD.md
+    - name: Konfigurere Retail-parametere som påvirker detaljhandelsutdrag
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: Konfigurere innstillinger for betalingsmåte som påvirker detaljhandelsutdrag
+      href: tasks/payment-configurations-retail-statements.md
+    - name: Konfigurere og kjøre en jobb for å beregne utdrag
+      href: tasks/run-job-calculate-statements.md
+    - name: Konfigurere og kjøre en jobb for å postere utdrag
+      href: tasks/run-job-post-statements.md
+    - name: Konfigurere oppbevaringsinnstillinger som påvirker detaljhandelsutdrag
+      href: tasks/store-configurations-retail-statements.md
+- name: Merverdiavgift
+  items:
+    - name: Oversikt over merverdiavgift
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Beregningsmåter for merverdiavgift i grunnlagsfeltet
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: ' Mva-tilordning og overstyringer'
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Hele beløp og alternativer for intervallberegning for mva-koder
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Telefonsenter
+  items:
+    - name: Salgsfunksjonalitet for telefonsenter
+      href: call-center-functionality.md
+    - name: Telefonsenterkataloger
+      href: call-center-catalogs.md
+    - name: Konfigurere leveringsmåter og tillegg
+      href: configure-call-center-delivery.md
+    - name: Definere og arbeide med svindelvarsler
+      href: set-up-fraud-alerts.md
+    - name: Definere telefonsenterkanaler
+      href: set-up-order-processing-options.md
+    - name: Definere kontinuitetsprogrammer for telefonsentre
+      href: set-up-continuity-program.md
+    - name: Konfigurere og arbeide med ordresperrer i telefonsenter
+      href: work-with-order-holds.md
+    - name: Betalingsmåter
+      href: work-with-payments.md
+- name: Kanaloppsett og -behandling
+  items:
+    - name: Initialisere data for utgangsverdi i nye Retail-miljøer
+      href: enable-configure-retail-functionality.md
+    - name: Definere og vedlikeholde detaljhandelskanaler
+      href: define-maintain-retail-channels.md
+    - name: Sortimentstyring
+      href: assortments.md
+    - name: Konfigurere nettbutikker
+      href: online-stores.md
+    - name: Konfigurere og installere Retail hardware station
+      href: retail-hardware-station-configuration-installation.md
+    - name: Timeregistrering i Retail
+      href: retail-time-attendance.md
+- name: Modern Point of Sale (MPOS) og Cloud POS
+  items:
+    - name: Velge mellom MPOS og Cloud POS
+      href: MPOS-or-CPOS.md
+    - name: Tilkoblede og frakoblede POS-operasjoner
+      href: pos-operations.md
+    - name: Enhetsaktivering av et tilpasset Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
+      href: demo-data.md
+    - name: Produkt- og kundesøk på salgsstedet
+      href: POS-search-improvements.md
+    - name: Beholdningsoppslag på salgsstedet
+      href: product-variants-POS.md
+    - name: Eksterne enheter for maskinvare
+      items:
+        - name: Eksterne enheter for detaljhandel
+          href: retail-peripherals-overview.md
+        - name: Simulator for eksterne enheter for Retail
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: Koble eksterne enheter til salgsstedet
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Skjermoppsett
+      items:
+        - name: Skjermoppsett for salgsstedet
+          href: pos-screen-layouts.md
+        - name: Installere oppsettsutforming for Retail POS
+          href: install-pos-layout-designer.md
+        - name: Velge varslingsinnstillinger
+          href: Notifications-POS.md
+        - name: POS-program og innstillinger for brukerspråk
+          href: pos-application-user-language-settings.md
+        - name: Definere og administrere bilder for MPOS
+          href: set-up-manage-images-retail-mpos.md
+    - name: Informasjonskoder og informasjonskodegrupper
+      href: info-codes-retail.md
+    - name: POS-forbedringer for serialiserte produkter
+      href: serialized-inventory.md
+    - name: Produktanbefalinger
+      items:
+        - name: Personlige produktanbefalinger
+          href: personalized-product-recommendations.md
+        - name: Legge til en kontroll for anbefalinger i POS-enheter
+          href: add-recommendations-control-pos-screen.md
+    - name: Frakoblet funksjonalitet for POS
+      href: pos-offline-functionality.md
+    - name: Behandling av skift og kassaskuff
+      href: shift-drawer-management.md
+    - name: Kundeordrer
+      items:
+        - name: Kundeordrer i MPOS
+          href: customer-orders-overview.md
+        - name: Hybride kundeordrer
+          href: hybrid-customer-orders.md
+    - name: Salgsmedarbeidere
+      items:
+        - name: Spore provisjoner på salgsstedet ved hjelp av salgsgrupper
+          href: pos-sales-groups-track-commissions.md
+    - name: Levere ordrer fra en annen butikk
+      href: charge-send.md
+    - name: Enhetsaktivering
+      items:
+        - name: 'Konfigurere, installere og aktivere MPOS'
+          href: retail-modern-pos-device-activation.md
+        - name: Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
+          href: extended-logon.md
+        - name: Administrere aktiveringskontoer for Retail og validere enheter
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Kvitteringer
+      items:
+        - name: Definere og utforme kvitteringsformater
+          href: receipt-templates-printing.md
+        - name: Sende e-postkvitteringer fra MPOS
+          href: email-receipts.md
+    - name: Oppgaveopptaker og hjelp for POS og Cloud POS
+      href: task-recorder-retail-pos.md
+- name: Ordreoppfyllelse
+  items:
+    - name: Butikkordreoppfyllelse
+      href: Order-fulfillment-overview.md
+    - name: Definere ordreoppfyllelse for butikker
+      href: Order-fulfillment-POS-setup.md
+    - name: Vise ordrevarslinger på salgsstedet
+      href: Notifications-POS.md
+- name: Konfigurere og behandle en utveksling i en returordre
+  href: orderexchanges.md
+- name: Overvåkning og analyse
+  items:
+    - name: Overvåke salgs- og marginytelse
+      href: monitor-sales-margin-performance.md
+    - name: Analysere salgstrender og -mønstre
+      href: analyze-sales-trends-patterns.md
+    - name: Vurdere salgsytelse etter produkt
+      href: sales-performance-products.md
+    - name: Vurdere kunde- og produktlønnsomhet
+      href: assess-customer-product-profitability.md
+    - name: Analysere butikkytelse
+      href: store-performance-information.md
+    - name: 'Definere RFM-analyse (Recency, Frequency, and Monetary)'
+      href: set-up-rfm-analysis.md
+- name: Rabatter og prisjusteringer
+  items:
+    - name: Detaljhandelsrabatter
+      href: retail-discounts-overview.md
+    - name: Salgsprisbehandling for Retail
+      href: price-management.md
+    - name: Prisjusteringer og rabatter
+      href: price-adjustments-discounts.md
+    - name: Bruke flere detaljhandelsrabatter for et produkt
+      href: Apply-multiple-retail-discounts.md
+    - name: Fastslå den optimale kombinasjonen av overlappende rabatter
+      href: optimal-combination-overlapping-discounts.md
+    - name: Definere kanalspesifikke rabatter
+      href: define-channel-specific-discounts.md
+    - name: Alternativer for å hindre rabatter for detaljhandelsprodukter
+      href: prevent-discounts.md
+    - name: Definere kuponger for detaljhandelssalg
+      href: retail-coupons.md
+- name: Produkter og varehandel
+  items:
+    - name: Oversikt over produktinformasjon
+      href: ../supply-chain/pim/product-information.md
+    - name: Detaljhandelshierarkier
+      href: retail-hierarchies.md
+    - name: Attributter og attributtgrupper
+      href: attribute-attributegroups-lifecycle.md
+    - name: Opprette og administrere attributter
+      href: create-manage-attributes.md
+    - name: Definere detaljhandelsprodukter
+      href: set-up-retail-products.md
+    - name: Administrere produktkategorier og produkter for Retail
+      href: category-management-product-creation.md
+    - name: Produktdimensjoner
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Definere strekkoder
+      href: set-up-bar-codes.md
+    - name: Definere strekkodemasker
+      href: set-up-bar-code-masks.md
+    - name: Definere sortimenter
+      href: set-up-assortments.md
+    - name: Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment
+      href: sell-return-outside-assortments.md
+    - name: Standard ordreinnstillinger for dimensjoner og produktvarianter
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: Søke etter produkter og produktvarianter under ordreregistrering
+      href: ../supply-chain/pim/search-products-product-variants.md
+- name: Fordel
+  items:
+    - name: Fordelsoversikt
+      href: set-up-customer-loyalty-program.md
+- name: Beholdning
+  items:
+    - name: Butikklagerstyring
+      href: work-with-store-inventory.md
+    - name: Registrere serienumre i salgsprosessen
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Lagerjournaler
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Lagerbrikkeopptelling
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: FIFO med fysisk verdi og merking
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: LIFO-dato med fysisk verdi og merking
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: LIFO med fysisk verdi og merking
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Dato for avveid gjennomsnitt
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Direkte utligning med fysisk verdi og merking
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karanteneordrer
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Løpende gjennomsnittlig kostpris
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Spore glidende gjennomsnitt av kostpris per lagerdimensjon
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+- name: Personale
+  items:
+    - name: 'Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger'
+      href: ../talent/departments-jobs-positions.md
+    - name: Konfigurere komponentene for en jobb
+      href: ../talent/create-job.md
+- name: Lokalisering og forskriftsmessige funksjoner​
+  items:
+    - name: Økonomisk integrering for detaljhandelskanal
+      href: localizations/fiscal-integration-for-retail-channel.md
+    - name: Øst-Europa
+      items:
+        - name: Forskuddsfakturaer for Retail for Øst-Europa
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Administrere håndkasse for Retail for Øst-Europa
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Kundefakturaer for Retail og retursalgsordrer i østeuropeiske land
+          href: localizations/emea-eeu-retail-invoices.md
+        - name: "Retningslinjer for distribusjon for\_kassaapparater for Tsjekkia, Ungarn og Polen"
+          href: localizations/emea-eeu-deployment.md
+    - name: Frankrike
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-fra-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/emea-fra-deployment.md
+    - name: India
+      items:
+        - name: GST-integrering (Goods and Services Tax) for kasser
+          href: localizations/apac-ind-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Støtte for oppgradering og N-1 for India
+          href: localizations/apac-ind-n-1-for-india.md
+    - name: Italia
+      items:
+        - name: Integrering av bilagsskriver
+          href: localizations/emea-ita-fpi-sample.md
+    - name: Norge
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-nor-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Sverige
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-swe-cash-registers.md
+        - name: Eksempel for Retail POS-integrering med kontrollenheter
+          href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+- name: Oppgaver i Retail
+  items:
+    - name: Opprette et produkt
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Konfigurere koblede produkter
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Frigi produkt/produktstandard til juridiske enheter
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Opprette kanalspesifikke forretningsavtaler
+      href: tasks/base-price-trade-agreements.md
+    - name: Opprette forretningsavtaler ved hjelp av kategoriprisregler
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: Konfigurere kredittkortbehandling
+      href: tasks/configure-credit-card-processing.md
+    - name: Konfigurere funksjonalitetsprofiler for salgsrepresentanter
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: Konfigurere maskinlæringsbaserte produktanbefalinger
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: Opprette enheter og knytte dem til registre
+      href: tasks/create-associate-device.md
+    - name: Opprette maskinvarestasjoner
+      href: tasks/create-associate-hardware-station.md
+    - name: Opprette kasser på salgssted
+      href: tasks/create-associate-registers.md
+    - name: Opprette telefonsenterordrer
+      href: tasks/create-call-center-orders.md
+    - name: Opprette finansdimensjoner for kasser på salgssted og konfigurere dimensjonsverdier i kasser
+      href: tasks/create-financial-dimensions-pos.md
+    - name: Opprette finansdimensjoner for detaljhandelskanaler og konfigurere dimensjonsverdier i butikker
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: Opprette Internett-kanaler og definere kanalattributter
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: Opprette tillatelsesgrupper for salgssted
+      href: tasks/create-pos-permission-groups.md
+    - name: Opprette visuelle POS-profiler
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: Opprette produktpakker for bestillinger
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: Opprette telefonsenterkanaler og definere kanalattributter
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: Definere kanalattributter
+      href: tasks/define-channel-attributes.md
+    - name: Definere kontinuitetsplaner
+      href: tasks/define-continuity-schedules.md
+    - name: ' Definere fordelsprogrammer'
+      href: tasks/define-loyalty-programs.md
+    - name: ' Definere fordelspoeng'
+      href: tasks/define-loyalty-reward-points.md
+    - name: ' Definere fordelsskjemaer'
+      href: tasks/define-loyalty-schemes.md
+    - name: Utforme relasjonene mellom organisasjonsenheter
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Administrere sortimenter
+      href: tasks/manage-assortments-2016-11.md
+    - name: Laste ned maskinvarestasjoner ved hjelp av selvbetjening
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: Postere elektroniske salg og betalinger
+      href: tasks/posting-online-sales-payments.md
+    - name: Behandle justeringer av fordelspoeng
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Overføre produkter fra distribusjonssentre til butikker via sentralt innkjøp
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Opprette prisjusteringer for detaljhandel
+      href: tasks/retail-price-adjustments.md
+    - name: Generere og kjøre medfølgende rapporter
+      href: tasks/run-out-box-reports.md
+    - name: Definere regler og parametere for direkteoverføring og sentralt innkjøp
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Selge kontinuitetsprogrammer og behandle salgsordrer
+      href: tasks/use-continuity-program.md
+    - name: Konfigurere detaljhandelsarbeidere
+      href: tasks/worker.md
+- name: Utvikling og administrasjon for detaljhandel
+  href: dev-itpro/dev-retail-home-page.md
+  items:
+    - name: Arkitektur
+      items:
+        - name: Retail-komponenter
+          href: retail-components.md
+        - name: Arkitektur for Retail Server
+          href: dev-itpro/retail-server-architecture.md
+        - name: Commerce Data Exchange og kommunikasjon for Retail-kanal
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Arkitektur for Retail Modern POS
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Publiseringsarkitektur for nettbutikk for detaljhandel
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Retail Channel Performance Power BI-innhold
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Retail-funksjoner som er tilgjengelige i lokale distribusjoner
+          href: retail-onprem.md
+    - name: Distribusjon og hurtigreparasjoner
+      items:
+        - name: Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Konfigurere og installere Retail Store Scale Unit
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Konfigurasjon og installasjon av Retail Modern POS
+          href: retail-modern-pos-device-activation.md
+        - name: Administrere Retail-kontoer og -enheter fra hovedkvarter
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Aktivering av enhet for Retail POS
+          href: dev-itpro/retail-device-activation.md
+        - name: Hjelpe med å sikre Cloud POS i delte miljøer
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: Konfigurasjon og installasjon av Retail hardware station
+          href: retail-hardware-station-configuration-installation.md
+        - name: Massedistribusjon av selvbetjeningskomponenter for Retail
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Hendelser for Retail-komponenter for diagnose og feilsøking
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Bruke en distribuerbar pakke
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Oppgradering og N-1-støtte
+      items:
+        - name: Støtte for oppgradering og N-1 for detaljhandel
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: 'Installasjon, konfigurasjon, og overgang for distribusjon i faser'
+          href: dev-itpro/n-1-installation-configuration.md
+    - name: Implementeringsveiledning
+      items:
+        - name: Implementeringsveiledning for enhetsbehandling
+          href: implementation-considerations-devices.md
+    - name: Miljøkonfigurasjon
+      items:
+        - name: Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: Administrere Bing-kart
+          href: dev-itpro/manage-bing-maps.md
+    - name: Lokalisere utvidelsesressurser og etikettfiler for Retail
+      href: dev-itpro/extension-resource-localization.md
+    - name: Utvidelsesmuligheter for salgssted
+      items:
+        - name: Skjermoppsett for Retail POS
+          href: pos-screen-layouts.md
+        - name: Åpne URL-adresse i POS
+          href: Open-URL-in-POS.md
+        - name: Installere utforming av oppsett for salgssted
+          href: install-pos-layout-designer.md
+        - name: Retail Modern POS i frakoblet modus
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: Utvide skjermvisningen for POS Dual
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: Utvidelsesmulighet for Retail Modern POS og Cloud POS-utløser
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Legge til egendefinerte kontroller i salgsstedsvisninger
+          href: dev-itpro/pos-custom-control.md
+        - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
+          href: dev-itpro/add-POS-operations.md
+        - name: API-er for Retail POS
+          href: dev-itpro/POS-APIs.md
+        - name: Utvidelse for salgsstedsbetaling
+          href: dev-itpro/pos-payment-extension.md
+        - name: Støtte for eksterne gavekort
+          href: dev-itpro/gift-card.md
+        - name: Opprette og bruke merking i appen Retail Experience
+          href: dev-itpro/create-retail-experience-app.md
+        - name: Definere POS Hybrid-app på Android og iOS
+          href: dev-itpro/hybridApp.md
+        - name: Overstyre forespørselsbehandling for salgssted
+          href: dev-itpro/pos-handler.md
+    - name: Utvidelsesmulighet for maskinvarestasjon
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Utvidelsesmuligheter for Retail Server
+      items:
+        - name: Utvide en OData-kontroller for Retail Server
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Opprette en Web-API-kontroller for Retail Server
+          href: dev-itpro/odata-controllers-api.md
+        - name: Kunde- og forbruker-API-er for Retail Server
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Utvide standard metadatakontroller for Retail Server
+          href: dev-itpro/extend-metadata.md
+        - name: Kalle CRT-tjenesten i frakoblet modus
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Utvidelsesmulighet for Commerce Runtime (CRT)
+      items:
+        - name: Arkitektur for og konfigurasjon av CRT
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: CRT-tjenester
+          href: dev-itpro/crt-services.md
+        - name: Utvidelsesmulighet for CRT og Retail Server
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Legge til kundeinnstillingsdata i kanaldatabaser
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Legge til egenskaper i salgsordrer
+          href: dev-itpro/add-properties-sales-order.md
+        - name: Utvidelsesmulighet og utløsere for CRT
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: Blokkere transaksjoner ved hjelp av utløsere
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: Implementere en returpolicy ved hjelp av utløsere
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Utvidelsesmuligheter for e-handel
+      items:
+        - name: Konfigurer nettbutikker
+          href: dev-itpro/configure-online-store.md
+        - name: Konfigurere godkjenningsleverandører
+          href: dev-itpro/configure-authentication-providers.md
+        - name: E-handelsplattform
+          href: dev-itpro/ecommerce-platform.md
+        - name: SDK for e-handelsplattform
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Utvidelsesmuligheter for betalingskobling
+      items:
+        - name: Opprette en betalingsintegrering for en betalingsterminal
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Implementere en betalingskobling og betalingsenhet (hvitbok)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Distribuere betalingskoblinger
+          href: dev-itpro/deploy-payment-connector.md
+        - name: 'Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal'
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
+          href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Betalingsdatabruk
+          href: payment-connector-data-fields.md
+    - name: SDK for Retail
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: Kommende endringer i SDK for Retail
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: Flette byggesystemene for Retail og Finance and Operations
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: Eksempler på utvidelsesmulighet for SDK for Retail
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Opprette distribuerbare pakker for detaljhandel
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: Eksempler på SDK for Retail
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Utvidelsespunkt for følgesedler
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Utvidelser for kanaldatabase
+          href: dev-itpro/channel-db-extensions.md
+        - name: Aktivere egendefinert CDX-synkronisering via utvidelse
+          href: dev-itpro/cdx-extensibility.md
+        - name: Legge til egendefinerte felt i panelet POS-totaler
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Definere og angi ordreattributter
+          href: dev-itpro/order-attributes.md
+        - name: Kundeattributter
+          href: dev-itpro/customer-attributes.md
+        - name: 'Retail Typescript og C#-proxyer'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Kjøre eksemplene for Retail POS
+          href: dev-itpro/pos-run-samples.md
+        - name: Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper
+          href: dev-itpro/pos-view-extension.md
+        - name: Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Legge til egendefinerte kolonner i et rutenett for POS-transaksjon
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: Ringe APIer eller operasjoner for salgssted fra POS-utvidelser
+          href: dev-itpro/pos-api-extension.md
+        - name: Utløsere og utskrift for Retail Modern POS
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
+          href: dev-itpro/cloud-dev-box.md
+    - name: Commerce Runtime
+      items:
+        - name: Fordelsutvidelse
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
