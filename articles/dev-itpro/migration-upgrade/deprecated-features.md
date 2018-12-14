@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller avskrevet
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Med eksport av genererte elektroniske filer med deklarasjoner til mappen for å 
 | **Berørte produktområder**         | Økonomimodul, mva |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Veiviser for registre for fortjenesteavgift
+Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne funksjonen oppretter X++-objekter for nye registre, som deretter opprettes som maler med den riktige beregningslogikken lagt til.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Funksjonen er ikke kompatibel med Dynamics 365 for Finance and Operations-utvidelsesmodellen. |
+| **Erstattet med en annen funksjon?**   | Antall |
+| **Berørte produktområder**         | Mva |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med plattformoppdatering 15
 Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdatering 15 er kumulativ og inneholder nye eller endrede funksjoner fra plattformoppdatering 13, plattformoppdatering 14 og plattformoppdatering 15.
@@ -993,6 +1006,17 @@ Produktkonfigurator ble brukt til å konfigurere varer dynamisk fra en salgsordr
 | **Erstattet med en annen funksjon?**   | Ja. Restriksjonsbasert konfigurasjon ble innført i Dynamics AX 2012, der avskrivningen av Produktkonfigurator i fremtidige versjoner allerede var annonsert. Restriksjonsbasert konfigurasjonsteknologi er valgt i produktstandardene for å muliggjøre konfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Bygge en produktkonfigurasjonsmodell](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Berørte produktområder**         | Behandling av produktinformasjon, salg og markedsføring  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Produksjonsapp
+Dette er appen for tavleenheter som kjører Windows 8.1 RT og Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Med endringen i en webbasert klient er det mulig å levere lignende funksjonalitet via den opprinnelige Dynamics AX 7.0-klienten. Jobbkortenheten har et brukergrensesnitt for produksjon som er optimalisert for berørings- og tavleformfaktorer. |
+| **Erstattet med en annen funksjon?**   | Ja. Jobbkortenheten, som er en innebygd del av Dynamics AX 7.0.                                                                           |
+| **Berørte produktområder**         | Produksjonskontroll                                                |
+| **Status**                         | Avskrevet: En fjerningsdato fra Microsoft-butikken ikke ennå er satt for denne funksjonen.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Gi nytt navn til produktdimensjon
 

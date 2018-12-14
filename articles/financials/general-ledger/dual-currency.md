@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Dobbel valuta
+
+[!include [banner](../includes/banner.md)]
 
 Funksjonen som ble innført i Microsoft Dynamics 365 for Finance and Operations versjon 8.1 (oktober 2018), gjør det mulig å bruke rapporteringsvalutaen på nytt som en ekstra regnskapsvaluta. Denne funksjonen kalles *dobbel valuta*. Endringene for dobbel valuta kan ikke slås av ved hjelp av en konfigurasjonsnøkkel eller parameter. Fordi rapporteringsvalutaen brukes som en sekundær regnskapsvaluta, er måten rapporteringsvalutaen beregnes på i posteringslogikken, endret.
 
@@ -67,8 +69,8 @@ Følgende moduler bruker rapporteringsvalutaen som en sekundær regnskapsvaluta:
 
 - [Økonomimodul](#general-ledger)
 - [Finansrapportering](#financial-reporting)
-- [Leverandører](#accounts-payable/accounts-receivable)
-- [Kunder](#accounts-payable/accounts-receivable)
+- [Leverandører](#accounts-payable-and-accounts-receivable)
+- [Kunder](#accounts-payable-and-accounts-receivable)
 - [Kontant- og bankbehandling](#cash-and-bank-management)
 - [Anleggsmidler](#fixed-assets)
 
@@ -90,7 +92,7 @@ En forbedring av **Finansrapportering**-modulen gjør at du kan inkludere rappor
 
 Denne endringen er tilgjengelig gjennom **Valutavisning**-innstillingen i kolonnedefinisjonen. Hvis du velger **Rapporteringsvaluta fra Finans**, oversettes ikke beløpene i kolonnen. I stedet rapporteres de direkte fra økonomimodulen. Hvis du vil at kolonnen skal vise oversatte beløp, velger du **Oversett til XXXX**-alternativet, der *XXXX* er rapporteringsvalutaen som skal vises i kolonnen. I så fall oversettes regnskapsvalutabeløpene til den valgte valutaen ved å bruke den eksisterende oversettelsesfunksjonen.
 
-### <a name="accounts-payableaccounts-receivable"></a>Leverandør/kunde
+### <a name="accounts-payable-and-accounts-receivable"></a>Leverandører og kunder
 
 Modulene **leverandører** og **kunder** har allerede sporet rapporteringsvalutabeløp. Beløpene ble imidlertid ikke vist eller brukt for forskjellige prosesser. Følgende endringer ble gjort:
 

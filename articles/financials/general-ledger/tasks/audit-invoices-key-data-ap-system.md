@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 70a7a1f7d7a8221a72addfbee1d21f813df4eb46
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>Revidere fakturaer og nøkkeldata i AP-system
@@ -35,34 +35,31 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef le
 
 
 ## <a name="create-a-purchase-order"></a>Opprette en bestilling
-1. Gå til Alle bestillinger.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget.
-4. Angi en verdi i Leverandørkonto-feltet.
-5. Klikk OK.
-6. Klikk Legg til linje.
-7. Skriv inn en verdi i Varenummer-feltet.
-8. Klikk Kjøp i handlingsruten.
-9. Klikk Bekreft.
+1. Gå til **Alle bestillinger**.
+2. Klikk **Ny**.
+3. Angi en verdi i **Leverandørkonto**-feltet.
+4. Klikk **OK**.
+5. Klikk **Legg til linje**.
+6. Skriv inn en verdi i **Varenummer**-feltet.
+7. Klikk **Innkjøp** i handlingsruten.
+8. Klikk **Bekreft**.
 
 ## <a name="post-a-product-receipt"></a>Postere en produktkvittering
-1. Klikk Motta i handlingsruten.
-2. Klikk Produktkvittering.
-3. Merk den valgte raden i listen.
-4. Skriv inn en verdi i feltet Produktkvittering.
-5. Klikk OK.
+1. Klikk **Motta** i handlingsruten.
+2. Klikk **Produktkvittering**.
+3. Skriv inn en verdi i feltet **Produktkvittering**.
+4. Klikk **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Registrere og samsvare en leverandørfakturaer med en produktkvittering
-1. Klikk Faktura i handlingsruten.
-2. Klikk Faktura.
-3. Skriv inn en verdi i Nummer-feltet.
-4. Klikk Standard fra: Bestilt antall for å åpne dialogboksen.
-5. Velg et alternativ i feltet Standardantall for linjer.
-6. Klikk OK.
-7. Klikk Ja.
-8. Klikk Avstem produktkvitteringer.
-9. Klikk OK.
-10. Klikk Gå gjennom i handlingsruten.
-11. Klikk Samsvarende detaljer.
+1. Klikk **Faktura** i handlingsruten.
+2. Skriv inn en verdi i **Nummer**-feltet.
+3. Klikk **Standard fra: Bestilt antall** for å åpne dialogboksen.
+4. Velg et alternativ i feltet **Standardantall for linjer**.
+5. Klikk **OK**.
+6. Klikk **Ja**.
+7. Klikk **Avstem produktkvitteringer**.
+8. Klikk **OK**.
+9. Klikk **Gå gjennom** i handlingsruten.
+10. Klikk **Samsvarende detaljer**.
 
 

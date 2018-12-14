@@ -3,7 +3,7 @@ title: Koble til hjelpesystemet
 description: Dette emnet beskriver komponentene i hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations, og gir en oversikt over hvordan du kobler dem og et sammendrag over hvordan du oppretter egendefinert hjelp.
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: a2ca5f5302751ad2c4ddc3c6921a8a9b6c2d57df
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -68,9 +68,19 @@ Oversatte oppgaveveiledninger ble først levert i APQC Unified Library fra mai 2
 > -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
 
 ## <a name="creating-custom-help"></a>Opprette egendefinert hjelp
+Du kan bruke støttelinjer for å opprette egendefinert hjelp, eller du kan koble et webområde til Hjelp-ruten. 
+
+### <a name="create-custom-help-with-task-guides"></a>Opprette egendefinert hjelp med oppgaveveiledninger
 Du kan opprette egendefinert hjelp for Finance and Operations og for Retail ved å opprette oppgaveregistreringer som gjenspeiler implementeringen, og lagre dem i et bibliotek for LCS-forretningsprosess. Du kan ikke opprette egendefinerte oppgaveveiledninger for Talent. 
 
 For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder.md).
+
+### <a name="connect-a-custom-site"></a>Koble til et tilpasset område
+Microsoft har en hvitbok og eksempelkode som beskriver hvordan du kan opprette og koble et område med tilpasset hjelp til Hjelp-ruten. Hvis du vil ha mer informasjon,  kan du se: 
+- [Lage egendefinert hjelp for Finance and Operations (hvitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Egendefinert hjelp for GitHub-repositoriet](https://github.com/microsoft/dynamics356f-o-custom-help)
+
+
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

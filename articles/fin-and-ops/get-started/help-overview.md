@@ -1,9 +1,9 @@
 ---
 title: Hjelpesystem for Finance and Operations
-description: "Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen."
+description: Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. Det forklarer også hvordan du kan angi egendefinerte dokumentasjon og opplæring for organisasjonen. 
+Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations. 
 
 > [!NOTE] 
 > Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
@@ -48,8 +48,6 @@ Finance and Operations inkluderer et hjelpesystem som er basert på to hovedkomp
 Du får tilgang til hjelp fra Hjelp-ruten i alle produkter du bruker. Følgende skjermbilde viser Finance and Operations.
 
 ![Hjelp-rute](./media/help-pane-ops-task-guides.png)
-
-Dette emnet beskriver hjelpesystemet og forklarer hvordan du kan opprette egendefinerte dokumentasjons- og opplæringsressurser for organisasjonen.
 
 > [!IMPORTANT]
 > **Oppgaveveiledning** er ikke for tiden ikke tilgjengelig for Retail eller i Hjelp-ruten for Talent (noen oppgaveveiledninger er tilgjengelige i Kom i gang-ruten for Talent). Prosedyrehjelp er tilgjengelig på docs.microsoft.com-området ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for både Retail og Talent.
@@ -83,7 +81,7 @@ Hvis du vil abonnere på et RSS-feed for alle oppdateringer i enhetlig drift-inn
 ### <a name="give-feedback"></a>Gi tilbakemelding 
 Vi setter stor pris på tilbakemelding fra kunder. Du kan kommentere eller foreslå endringer i innholdet via GitHub. Hvis du vil ha mer informasjon om tilbakemeldingssystemet, se [dette blogginnlegget](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Send tilbakemelding til oss 
+#### <a name="leave-us-feedback"></a>Send tilbakemelding til oss 
 Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en kommentar nederst på siden.  
 
 1. Klikk på **Tilbakemelding** til å få tilgang til kommentarene nederst på siden, og klikk deretter på enten **Tilbakemelding for produkt** eller **Logg på for å sende tilbakemelding om dokumentasjon**.
@@ -93,8 +91,6 @@ Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en komme
 2. Skriv inn kommentarene, og klikk deretter på **Send tilbakemelding**.
 
 ![Legg inn kommentar](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en endring eller bidra med innhold via GitHub
 Hvis du vil foreslå en endring, må du har en GitHub-konto og signerer en lisensavtale for bidragsyter.  Når du sender en pull-forespørsel, vil vi gå gjennom de foreslåtte endringene. Hvis det er nødvendig, vil vi diskutere dem internt og deretter kontakte deg.  
@@ -122,22 +118,7 @@ Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start opp
 > [!IMPORTANT] 
 > Dataene som du angir når du spiller av en oppgaveveiledning, er ekte. Hvis du er i et produksjonsmiljø, legges dataene inn i firmaet som du bruker for øyeblikket.
 
-### <a name="it-all-begins-with-task-recorder"></a>Alt begynner med Oppgaveregistrering
-
-Oppgaveveiledninger opprettes ved hjelp av Oppgaveregistrering. Når du bruker Oppgaveregistrering, registreres alle handlingene du utfører i grensesnittet i Finance and Operations (for eksempel velge menyer, endre innstillinger og skrive inn data). Samlet kalles trinnene som du registrerer en oppgaveregistrering. Som forklart i den forrige delen kan oppgaveregistreringer vises i Hjelp-ruten og spilles av som oppgaveveiledninger. Det finnes imidlertid andre måter som du kan bruke oppgaveregistreringer på:
-
--   **Lagre oppgaveregistreringer til BPM** – Du kan lagre en oppgaveregistrering på en linje i et hierarki i et BPM-bibliotek i LCS. Når du lagrer en oppgaveregistrering på BPM, genereres og vises et flytskjema sammen med trinnene i registreringen. 
-
-    > [!Note]
-    > For å vise en oppgaveregistrering i Finance and Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek.
-    
--   **Lagre oppgaveregistreringer som Word-dokumenter** – Ved å lagre en oppgaveregistrering som et Microsoft Word-dokument, kan du enkelt lage utskrivbare opplæringsveiledninger for organisasjonen.
-
-Hvis du vil ha mer informasjon om Oppgaveopptaker, kan du se [Oppgaveopptaker i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Opprette egendefinerte oppgaveregistreringer
-
-Du kan opprette dine egne oppgaveregistreringer, eller du kan laste ned og tilpasse oppgaveregistering som Microsoft tilbyr. Du kan derfor opprette tilpasset Hjelp for organisasjonen som viser din spesifikke Finance and Operations-implementering. For å vise en oppgaveregistrering i Finance and Operations Hjelp-ruten og spille den av som en oppgaveveiledning, må du lagre registreringen i et BPM-bibliotek i LCS. Hvis du er partner og du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Hvis du vil se fullstendige instruksjoner, kan du se [Bruke oppgaveregistreringer til å opprette dokumentasjon og opplæring](../../dev-itpro/user-interface/task-recorder.md).
+Du kan bruke oppgaveopptakeren til å opprette dine egne egendefinerte oppgaveveiledninger. Hvis du vil ha mer informasjon, se [Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Hjelp i produktet
 Hvis du vil ha tilgang til hjelpeinnhold i Finance and Operations, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl + Skift +?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger. 
@@ -184,6 +165,11 @@ Etter at en systemadministrator har fullført disse trinnene, kan du åpne Hjelp
 Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittelen. Hvis du vil vise lokaliserte oppgaveveiledninger i Finance and Operations, kontroller at du er koblet til et egnet biblioteket. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**. 
 -   Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
 -   Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
+
+## <a name="creating-custom-help"></a>Opprette egendefinert hjelp
+Du kan opprette hjelp for brukerne ved å opprette egendefinerte oppgaveveiledninger eller koble ditt eget nettsted til Hjelp-ruten. Hvis du vil ha mer informasjon, kan du se: 
+- [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder.md).
+- [Lage egendefinert hjelp for Finance and Operations (hvitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

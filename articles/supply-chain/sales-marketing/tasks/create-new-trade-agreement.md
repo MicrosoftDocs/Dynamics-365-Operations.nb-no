@@ -3,7 +3,7 @@ title: Opprette en ny forretningsavtale
 description: "Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du registrerer en ny salgspris for produkt som du har avtalt med en bestemt kunde."
 author: omulvad
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb7a945243387f85ec5f38cc3b969d8d030ff25
+ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
+ms.openlocfilehash: e132cd20437b7929e81fcaa123d70bb57fb320c8
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="create-a-new-trade-agreement"></a>Opprette en ny forretningsavtale
@@ -66,4 +66,7 @@ Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du reg
     * Se gjennom detaljene i forretningsavtalen for priser som du nettopp opprettet.    
 5. Lukk siden.
 
+## <a name="additional-resources"></a>Tilleggsressurser
+### <a name="community-blogs"></a>Fellesskapsblogger
+- [Salgspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 

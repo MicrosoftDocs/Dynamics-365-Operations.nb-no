@@ -7,6 +7,10 @@
         - name: Hva er nytt eller endret?
           href: whats-new.md
           items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)
+              href: whats-new-talent-november-27.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (15. november 2018)
+              href: whats-new-talent-november-15.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)
               href: whats-new-talent-october-31.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (19. oktober 2018)
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: Opprette og administrere e-postmaler
           href: email-templates.md
-        - name: Rapportering og analyse
-          href: Reporting-Analytics-Attract.md
         - name: Administrasjon av sikkerhet og rolle i Attract
           href: security-attract.md
         - name: Administratorinnstillinger i Attract
@@ -266,3 +268,27 @@
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Opprette en prestasjonsvurdering
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Feilsøke Talent
+      items:
+        - name: Analyserapporter blir ikke oppdatert
+          href: analytic-reports-not-updated.md
+        - name: Kan ikke opprette et miljø i PowerApps-administrasjonssenteret
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Frakoblinger for Talent-klient
+          href: client-disconnects.md
+        - name: Hvordan sikkerhetskopieringer av database håndteres
+          href: database-backups.md
+        - name: Unngå avkorting av tekst i stillingshierarki og eksport til Visio
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Kjøre kompensasjonsprosessen
+          href: run-compensation-process.md
+        - name: Lagre oppgaveveiledninger i LCS og spille dem av på nytt
+          href: save-play-task-guides-LCS.md
+        - name: Tilgang til private adresser etter sikkerhetsrolle
+          href: security-roles-addresses.md
+        - name: Talent vises ikke blant appene i Microsoft Dynamics 365 (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'Brukeren har tilgang til Core HR, men ikke appen Onboard eller Attract'
+          href: user-access-core-hr.md
+        - name: Rapporteringsalternativer i Talent
+          href: talent-reporting-options.md

@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -76,7 +76,7 @@ Merk: Operasjonene nedenfor gjelder for den nyeste versjonen av Dynamics 365 for
 | 621 | Opprett tilbud | Konverter POS-transaksjonen til et salgstilbud. | Ja | Ja | Antall | Ja\* | Antall |
 | 636 | Opprett detaljhandelstransaksjon | Denne operasjonen lar brukeren opprette en standard salgstransaksjon når standard POS-virkemåte er å opprette kundeordrer. | Ja | Ja | Antall | Ja | Antall |
 | 600 | Kunde | Legg til den angitt kunden i transaksjonen. | Antall | Antall | Antall | Ja | Antall |
-| 11 000 | Innbetaling på kundekonto | Foreta en innbetaling på kundens konto. | Ja | Ja | Ja | Ja | Ja |
+| 11 00 | Innbetaling på kundekonto | Foreta en innbetaling på kundens konto. | Ja | Ja | Ja | Ja | Ja |
 | 612 | Legg til kunde | Denne operasjonen lar brukeren opprette en ny kundepost. | Ja | Ja | Ja | Ja† | Antall |
 | 603 | Fjern kunde | Fjern kunden fra gjeldende transaksjon. | Ja | Ja | Antall | Ja | Antall |
 | 602 | Kundesøk | Denne operasjonen lar brukeren søke etter en kundepost ved å gå til kundesøkesiden i POS. | Ja | Ja | Ja | Ja | Antall |
@@ -152,6 +152,7 @@ Merk: Operasjonene nedenfor gjelder for den nyeste versjonen av Dynamics 365 for
 | 644 | Fjern kupongkode | Be brukeren om å fjerne kuponger ved å velge dem i en liste over kuponger som er knyttet til transaksjonen. | Ja | Ja | Antall | Ja | Antall |
 | 1057 | Skriv ut Z på nytt | Skrive ut Z-rapporten for det forrige eller valgte skiftet. | Ja | Ja | Ja | Antall | Antall |
 | 1216 | Angi et nytt passord | Denne operasjonen lar en bruker som har tillatelse for tilbakestilling av passord, tilbakestille passord for en annen ansatt ved hjelp av et midlertidig passord. | Ja | Ja | Ja | Antall | Antall |
+| 1219 | Åpne URL-adresse på salgssted | Denne operasjonen gjør det mulig for en bruker å åpne en administratorkonfigurert URL-adresse på salgsstedet. | Ja | Ja | Ja | Ja | Antall | 
 | 109 | Returprodukt | Utfør retur av enkeltprodukter. Det neste skannede produktet vises som et returprodukt som har negativt antall og pris. | Ja | Ja | Antall | Ja | Antall |
 | 114 | Returtransaksjon | Tilbakekall en tidligere transaksjon etter kvitteringsnummer for å returnere noen av eller alle produktene. | Ja | Ja | Ja | Ja§ | Antall |
 | 1211 | Deponer til safe | Utfør en deponering til safe, og flytt penger fra kassen til safen. | Ja | Ja | Ja | Ja | Antall |

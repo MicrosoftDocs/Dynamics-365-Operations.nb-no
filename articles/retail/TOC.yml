@@ -47,6 +47,8 @@
       href: dev-itpro/updating-environments.md
     - name: Testings- og ytelsesproblemer
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Behandling av distribuert ordre (DOM)
+  href: dom.md
 - name: Betalinger
   items:
     - name: Betalingsmåter
@@ -55,6 +57,8 @@
       href: ../financials/accounts-receivable/credit-card-authorizations.md
     - name: Konfigurere kontantstørrelser for salgsstedet
       href: cash-denominations.md
+    - name: Definere scenarier for betaling av faktura
+      href: payinvoice.md
     - name: Vanlige spørsmål om betalinger
       href: dev-itpro/payments-retail.md
 - name: Bestillinger
@@ -213,6 +217,8 @@
       href: Order-fulfillment-POS-setup.md
     - name: Vise ordrevarslinger på salgsstedet
       href: Notifications-POS.md
+- name: Konfigurere og behandle en utveksling i en returordre
+  href: orderexchanges.md
 - name: Overvåkning og analyse
   items:
     - name: Overvåke salgs- og marginytelse
@@ -231,10 +237,12 @@
   items:
     - name: Detaljhandelsrabatter
       href: retail-discounts-overview.md
-    - name: Salgsprisbehandling for detaljhandel
+    - name: Salgsprisbehandling for Retail
       href: price-management.md
     - name: Prisjusteringer og rabatter
       href: price-adjustments-discounts.md
+    - name: Bruke flere detaljhandelsrabatter for et produkt
+      href: Apply-multiple-retail-discounts.md
     - name: Fastslå den optimale kombinasjonen av overlappende rabatter
       href: optimal-combination-overlapping-discounts.md
     - name: Definere kanalspesifikke rabatter
@@ -488,6 +496,8 @@
       items:
         - name: Skjermoppsett for Retail POS
           href: pos-screen-layouts.md
+        - name: Åpne URL-adresse i POS
+          href: Open-URL-in-POS.md
         - name: Installere utforming av oppsett for salgssted
           href: install-pos-layout-designer.md
         - name: Retail Modern POS i frakoblet modus
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Opprette og bruke merking i appen Retail Experience
           href: dev-itpro/create-retail-experience-app.md
+        - name: Definere POS Hybrid-app på Android og iOS
+          href: dev-itpro/hybridApp.md
+        - name: Overstyre forespørselsbehandling for salgssted
+          href: dev-itpro/pos-handler.md
     - name: Utvidelsesmulighet for maskinvarestasjon
       href: dev-itpro/hardware-station-extensibility.md
     - name: Utvidelsesmuligheter for Retail Server
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
           href: dev-itpro/create-windows-installer-payment-connector.md
-    - name: SDK for detaljhandel
+        - name: Betalingsdatabruk
+          href: payment-connector-data-fields.md
+    - name: SDK for Retail
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Kommende endringer i SDK for Retail
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Flette byggesystemene for Retail og Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Eksempler på utvidelsesmulighet for SDK for Retail

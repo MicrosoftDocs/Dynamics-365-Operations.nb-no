@@ -1,9 +1,9 @@
 ---
-title: "Produktmottak mot kjøpsordrer"
-description: "Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt."
+title: Mottaksseddel mot bestillinger
+description: "Dette emnet beskriver de ulike alternativene for å registrere produktene som mottatt."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
-# <a name="product-receipt-against-purchase-orders"></a>Produktmottak mot kjøpsordrer
+# <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt.
+Dette emnet beskriver de ulike alternativene for å registrere produktene som mottatt.
 
 Produktmottak er prosessen med å registrere at produkter som ble bestilt, er mottatt, slik at bestillingslinjer deretter kan behandles for fakturering. I noen tilfeller går produkter gjennom forhåndsregistreringen, der tilleggsinformasjon fra leverandøren registreres før varene mottas. Når produkter ankommer, merkes de først som **Registrert**. Produktene kan deretter gå gjennom flere prosesser, for eksempel kvalitetsstyring, før de til slutt merkes som **Mottatt**.
 
@@ -46,8 +46,6 @@ Produkter som er mottatt i lageret kan gå gjennom kvalitetsinspeksjon før de e
 
 ## <a name="product-receipt"></a>Produktkvittering
 Vanligvis brukes handlingen **Produktmottak** på siden **Bestillinger** til å merke produkter som **Mottatt** på bestillingen. Siden **Posterer produktkvittering** har flere forskjellige alternativer for antallet som er registrert som mottatt. Du kan for eksempel sette feltet **Antall** til **Bestilt antall** eller **Motta nå-antall**. Hvis en prosess for ankomst i lageret er brukt, du vil ofte sette dette feltet til **Registrert antall**. Du kan endre antallet for hver ordrelinje som vil bli merket som **Mottatt**, for å ta hensyn til eventuelle avvik, for eksempel underlevering og overlevering. Under produktmottak må du angi en identifikator for produktmottak, som vanligvis er en referanse til følgeseddelen fra leverandøren. Denne identifikatoren er nødvendig for regnskap, fordi den gjør det mulig å aktivere kontrollere eller revisjoner av leverandørfølgesedler mot det som er mottatt, og registrert lager eller utgifter.  
-
-Hvis en ansatt bestilte varer ved hjelp av en innkjøpsrekvisisjon, kan den ansatt bli bedt om å bekrefte mottak av produktet selv. Du kan konfigurere denne virkemåten ved hjelp av en arbeidsflyt. Du kan konfigurere arbeidsflytbetingelsene slik at de samsvarer med forretningsprosessen.  
 
 Bestillinger kan opprettes for produkter som ikke er ment som beholdning, men regnes som en utgift. Denne kategorien inneholder ordrelinjer der produktene er merket som **Ikke lagerført** av lagermodellgruppen, og også linjer som bruker innkjøpskategorier. I slike tilfeller kan det hende varene ikke går gjennom ankomstregistrering og -mottak i lageret. I stedet brukes handlingen **Produktmottak** til å registrere mottaket direkte på bestillingen, og mottaket er basert på det bestilte antallet, ikke det registrerte antallet.  
 
