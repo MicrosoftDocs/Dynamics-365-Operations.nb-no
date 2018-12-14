@@ -3,7 +3,7 @@ title: Startside for hovedplanlegging
 description: "Med hovedplanlegging kan selskaper bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: nb-no
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 
 ## <a name="quick-links"></a>Hurtigkoblinger
 
-|      |   |
-|------|---|
-|        [Hovedplaner](master-plans.md)       |     [Generere en begrenset plan](./tasks/constrained-plan.md)  |
-| [Opprette en materialplan for koprodukter](./tasks/create-material-plan-co-products.md)   |  [Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)  |
-| [Opprette en konsernintern plan](./tasks/create-intercompany-plan.md) | [Oversikt over behovsprognose](introduction-demand-forecasting.md)  | 
-|[Reduksjonsnøkler](reduction-keys.md)| [Grunnleggende om hovedplanlegging](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (e-læring) (krever CustomerSource-konto)     |
-|  [Hovedplanlegging for prosessproduksjon](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (e-læring) (krever CustomerSource-konto) | [Konsernintern hovedplanlegging](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (e-læring) (krever CustomerSource-konto)|
+- [Hovedplaner](master-plans.md)  
+- [Generere en begrenset plan](./tasks/constrained-plan.md)
+- [Opprette en materialplan for koprodukter](./tasks/create-material-plan-co-products.md)
+- [Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
+- [Opprette en konsernintern plan](./tasks/create-intercompany-plan.md)
+- [Oversikt over behovsprognose](introduction-demand-forecasting.md)
+- [Reduksjonsnøkler](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Tilleggsressurser
 

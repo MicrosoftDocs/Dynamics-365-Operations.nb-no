@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille 
 
 #### <a name="repository"></a>Repositorium
 
-Et ER-repositorium lagrer ER-konfigurasjoner. To typer ER-repositorier støtte, **Operasjonsressurser** og **LCS-prosjekt**.
+Et ER-repositorium lagrer ER-konfigurasjoner. Fire typer ER-repositorier støttes: **Operasjonsressurser**, **LCS-prosjekt (LCS)**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)**.
 
 Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, gir ut som en del av Finance and Operations-løsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomst av Finance and Operations og brukes til elektronisk rapportering. De kan også brukes til tilleggslokaliseringer og tilpassinger.
 
 **LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende Finance and Operations-forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Finance and Operations-forekomst.
 
-Nødvendige **LCS-prosjekt**-repositorier kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Finance and Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
+Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende Finance and Operations-forekomst. Legg merke til at dette repositoriet er tilgjengelig i følgende Dynamics 365 for Finance and Operations-miljøer:
+- skyvertsbaserte miljøer distribuert for utviklingsformål (som inneholder testmodeller av vedlagte serier)
+- lokalt distribuerte miljøer (lokale forretningsdata (LBD))
+
+Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER)](/electronic-reporting-import-ger-configurations.md) for mer informasjon om dette.
+
+Et **RCS-forekomst**-repositorium gir tilgang til listen over konfigurasjoner for et bestemt RCS-prosjekt som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten av Finance and Operations, og bruke dem til elektronisk rapportering.
+
+Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER) fra Forskriftsmessig konfigurasjonstjeneste (RCS)](/rcs-download-configurations.md) for mer informasjon om dette.
+
+Nødvendige repositorier for **LCS-prosjekt**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)** kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Finance and Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
 
 ## <a name="supported-scenarios"></a>Scenarier som støttes
 ### <a name="building-a-data-model"></a>Bygge en datamodell
