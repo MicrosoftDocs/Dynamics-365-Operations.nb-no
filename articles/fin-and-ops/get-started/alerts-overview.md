@@ -34,11 +34,13 @@ Varsler utgjør et meldingssystem for kritiske hendelser i Microsoft Dynamics 36
 Det finnes flere vanlige scenarier hvor varslingsfunksjonen i Finance and Operations kan brukes i ERP (Enterprise Resource Planning). Her er noen eksempler.
 
 ### <a name="scenario-1-create-an-alert-rule-for-new-sales-orders"></a>Scenario 1: Opprett en varslingsregel for nye salgsordrer
+
 1. Åpne siden **Alle salgsordrer**.
 2. Velg **Opprett et egendefinert varsel** i gruppen **Del** i fanen **Alternativer** i handlingsruten.
 3. Velg **Post er opprettet** i feltet **Hendelse** i hurtigfanen **Varsle meg når** i dialogboksen **Opprett varslingsregel**.
 
 ### <a name="scenario-2-create-an-alert-rule-for-postponement-of-a-delivery-date"></a>Scenario 2: Opprett en varslingsregel for utsettelse av en leveringsdato
+
 1. Åpne siden **Alle kjøpsordrer**.
 2. Velg en bestillings-ID for å få tilgang til bestillingsdetaljer.
 3. Utvid hurtigfanen **Bestillingshode**.
@@ -49,6 +51,7 @@ Det finnes flere vanlige scenarier hvor varslingsfunksjonen i Finance and Operat
 Når du lukker dialogboksen **Opprett varslingsregel**, vises regelen på siden **Administrer varselregler**. Du kan bruke siden **Administrer varselregler** til å oppdatere dine eksisterende varselregler. Du kan for eksempel endre hendelsestriggerne, oppdatere varslinger om systemhendelser, og oppdatere utløpsdatoer. Bruk knappen **Varsle meg** i fanen **Alternativer** i handlingsruten for å åpne siden **Administrer varselregler**.
 
 ## <a name="what-occurs-when-an-alert-rule-is-created"></a>Hva skjer når en varslingsregel opprettes?
+
 Når du oppretter varselregler, kan du knytte en forhåndsdefinert hendelse til et bestemt felt. Datoen som er angitt i feltet, kommer, eller innholdet i feltet endres. Du kan også knytte en hendelse til postene på en bestemt side. En post opprettes for eksempel eller slettes.
 
 Når den valgte hendelsen skjer for feltet eller for en post på siden, sendes det et varsel til deg. Du oppretter for eksempel en regel der du knytter feltet **Leveringsdato** til en bestemt bestillingslinje med hendelsen **tid siden forfall**. Du setter tidsrammen til fem dager. I dette tilfellet sendes det et varsel fem dager etter leveringsdatoen for bestillingslinjen.
@@ -56,9 +59,11 @@ Når den valgte hendelsen skjer for feltet eller for en post på siden, sendes d
 Du kan også forbedre varselreglene ved å angi betingelser. Du kan for eksempel bli varslet om nye bestillinger som opprettes for bestemte leverandørkontoer.
 
 ## <a name="preparing-for-an-alert"></a>Klargjør for et varsel
+
 Før du oppretter en varslingsregel, må du vurdere når eller i hvilke situasjoner du vil motta varsler. Når du vet hvilke hendelser du vil varsles om, kan du finne siden i Finance and Operations der dataene som forårsaker den hendelsen, vises. Hendelsen kan være en dato som kommer, eller en bestemt endring som forekommer. Du må derfor finne siden der datoen er angitt, eller hvor feltet som endres eller den nye posten som opprettes, vises. Etter at du har denne informasjonen, kan du opprette varslingsregelen.
 
 ## <a name="components-of-an-alert-rule"></a>Komponentene i en varslingsregel
+
 En varslingsregel har fem komponenter:
 
 - **Hendelse** – Hendelsen som utløser en varslingsregel kan være en dato som kommer, eller en bestemt endring som forekommer. Du definerer hendelser i hurtigfanen **Send e-postvarsel når jobbstatus endres** i dialogboksen **Opprett varslingsregel**.
@@ -71,5 +76,6 @@ En varslingsregel har fem komponenter:
     > Dette alternativet er begrenset til administratorer for organisasjonen.
 
 ## <a name="email-notifications-from-alerts"></a>E-postmeldinger fra varsler
+
 E-postmeldinger fra varsler er ikke aktivert ennå. Dette vil bli aktivert i en fremtidig oppdatering.
 
