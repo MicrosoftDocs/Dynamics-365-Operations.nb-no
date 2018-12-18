@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 770796b42e79ad616b469e1dbf5149789bff0788
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,28 +31,29 @@ ms.lasthandoff: 08/09/2018
 
 <span data-ttu-id="a1626-104">Dette emnet beskriver arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a1626-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-<a name="what-is-workflow"></a><span data-ttu-id="a1626-105">Hva er arbeidsflyt?</span><span class="sxs-lookup"><span data-stu-id="a1626-105">What is workflow?</span></span>
------------------
+## <a name="what-is-workflow"></a><span data-ttu-id="a1626-105">Hva er arbeidsflyt?</span><span class="sxs-lookup"><span data-stu-id="a1626-105">What is workflow?</span></span>
 
 <span data-ttu-id="a1626-106">Begrepet *arbeidsflyt* kan defineres på to måter: som et system og en forretningsprosess.</span><span class="sxs-lookup"><span data-stu-id="a1626-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
+
 ### <a name="workflow-is-a-system"></a><span data-ttu-id="a1626-107">Workflow er et system</span><span class="sxs-lookup"><span data-stu-id="a1626-107">Workflow is a system</span></span>
 
 <span data-ttu-id="a1626-108">Arbeidsflyt er et system som installeres med Finance and Operations, og som kjøres på Application Object Server (AOS).</span><span class="sxs-lookup"><span data-stu-id="a1626-108">Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="a1626-109">Arbeidsflytsystemet inneholder funksjonalitet du kan bruke til å opprette enkle arbeidsflyter eller forretningsprosesser.</span><span class="sxs-lookup"><span data-stu-id="a1626-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
 
 ### <a name="workflow-is-a-business-process"></a><span data-ttu-id="a1626-110">Arbeidsflyt er en forretningsprosess</span><span class="sxs-lookup"><span data-stu-id="a1626-110">Workflow is a business process</span></span>
 
-<span data-ttu-id="a1626-111">En arbeidsflyt representerer en forretningsprosess.</span><span class="sxs-lookup"><span data-stu-id="a1626-111">A workflow represents a business process.</span></span> <span data-ttu-id="a1626-112">Det definerer hvordan et dokument går eller flyttes gjennom systemet ved å vise hvem som må utføre en oppgave, ta avgjørelser eller godkjenne et dokument.</span><span class="sxs-lookup"><span data-stu-id="a1626-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="a1626-113">Illustrasjonen nedenfor viser for eksempel en arbeidsflyt for reiseregninger.</span><span class="sxs-lookup"><span data-stu-id="a1626-113">For example, the following illustration shows a workflow for expense reports.</span></span> 
+<span data-ttu-id="a1626-111">En arbeidsflyt representerer en forretningsprosess.</span><span class="sxs-lookup"><span data-stu-id="a1626-111">A workflow represents a business process.</span></span> <span data-ttu-id="a1626-112">Det definerer hvordan et dokument går eller flyttes gjennom systemet ved å vise hvem som må utføre en oppgave, ta avgjørelser eller godkjenne et dokument.</span><span class="sxs-lookup"><span data-stu-id="a1626-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="a1626-113">Illustrasjonen nedenfor viser for eksempel en arbeidsflyt for reiseregninger.</span><span class="sxs-lookup"><span data-stu-id="a1626-113">For example, the following illustration shows a workflow for expense reports.</span></span>
 
-![Arbeidsflyt med elementer som er tilordnet til brukere](./media/workflow_user.gif) 
+![Arbeidsflyt med elementer som er tilordnet til brukere](./media/workflow_user.gif)
 
 <span data-ttu-id="a1626-115">Hvis du vil forstå denne arbeidsflyten bedre, kan vi anta at Erik sender en reiseregningsrapport på NOK 42 000.</span><span class="sxs-lookup"><span data-stu-id="a1626-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="a1626-116">I denne situasjonen må Henrik gå gjennom kvitteringene som Erik sendte til ham.</span><span class="sxs-lookup"><span data-stu-id="a1626-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="a1626-117">Deretter må Dag og Jorunn godkjenne reiseregningsrapporten.</span><span class="sxs-lookup"><span data-stu-id="a1626-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="a1626-118">La oss nå anta at Erik sender en reiseregningsrapport på NOK 11 000.</span><span class="sxs-lookup"><span data-stu-id="a1626-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="a1626-119">I denne situasjonen må Henrik se gjennom kvitteringene, og Dag, Jorunn og Karen må godkjenne reiseregningsrapporten.</span><span class="sxs-lookup"><span data-stu-id="a1626-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
 
 ## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="a1626-120"> Fordeler ved bruk av arbeidsflytsystemet</span><span class="sxs-lookup"><span data-stu-id="a1626-120">Benefits of using the workflow system</span></span>
 
 <span data-ttu-id="a1626-121">Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:</span><span class="sxs-lookup"><span data-stu-id="a1626-121">There are several benefits of using the workflow system in your organization:</span></span>
--   <span data-ttu-id="a1626-122">**Konsekvente prosesser** – Du kan definere hvordan bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter, skal behandles.</span><span class="sxs-lookup"><span data-stu-id="a1626-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="a1626-123">Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.</span><span class="sxs-lookup"><span data-stu-id="a1626-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
--   <span data-ttu-id="a1626-124">**Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for arbeidsflytforekomster.</span><span class="sxs-lookup"><span data-stu-id="a1626-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="a1626-125">Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.</span><span class="sxs-lookup"><span data-stu-id="a1626-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
--   <span data-ttu-id="a1626-126">**Sentralisert arbeidsliste** – Brukere kan vise en sentralisert arbeidsliste som viser arbeidsflytoppgavene og -godkjenningene som er tilordnet til dem.</span><span class="sxs-lookup"><span data-stu-id="a1626-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
+
+- <span data-ttu-id="a1626-122">**Konsekvente prosesser** – Du kan definere hvordan bestemte dokumenter, for eksempel innkjøpsrekvisisjoner og reiseregningsrapporter, skal behandles.</span><span class="sxs-lookup"><span data-stu-id="a1626-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="a1626-123">Ved hjelp av arbeidsflytsystemet kan du sikre at dokumenter behandles og godkjennes på en konsekvent og effektiv måte.</span><span class="sxs-lookup"><span data-stu-id="a1626-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+- <span data-ttu-id="a1626-124">**Prosessynlighet** – Du kan spore status, logg og ytelsesstatistikk for arbeidsflytforekomster.</span><span class="sxs-lookup"><span data-stu-id="a1626-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="a1626-125">Dette gjør at du kan finne ut om det må gjøres endringer i arbeidsflyten for å forbedre effektiviteten.</span><span class="sxs-lookup"><span data-stu-id="a1626-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+- <span data-ttu-id="a1626-126">**Sentralisert arbeidsliste** – Brukere kan vise en sentralisert arbeidsliste som viser arbeidsflytoppgavene og -godkjenningene som er tilordnet til dem.</span><span class="sxs-lookup"><span data-stu-id="a1626-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
 
 
 ## <a name="workflow-content"></a><span data-ttu-id="a1626-127">Arbeidsflytinnhold</span><span class="sxs-lookup"><span data-stu-id="a1626-127">Workflow content</span></span>
