@@ -35,15 +35,13 @@ Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 
 
 Som en del av Dynamics 365 for Retail kan brukere studere salgstrender og -mønstre i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet i en periode på flere år ved å åpne den medfølgende rapporten **Kanalsalg etter år**. Du kan åpne denne rapporten fra et av følgende steder:
 
--   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
--   Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
--   Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter år**
+- Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
+- Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter år**
+- Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter år**
 
 Brukerne kan også studere salgstrender og -mønstre etter time på tvers av forskjellige nivåer i organisasjonshierarkiet i en valgt periode år ved å åpne den medfølgende rapporten **Kanalsalg etter time**. Du kan åpne denne rapporten fra et av følgende steder:
 
--   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
--   Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
--   Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter time**
-
-
+- Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
+- Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
+- Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter time**
 

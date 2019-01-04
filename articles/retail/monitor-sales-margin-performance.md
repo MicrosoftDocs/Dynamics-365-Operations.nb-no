@@ -35,21 +35,19 @@ Du kan overvåke på salgs- og marginytelse i sanntid i Microsoft Dynamics 365 f
 
 Som en del av Dynamics 365 for Retail kan brukere overvåke salgs- og marginytelsen i sanntid på tvers av forskjellige nivåer av organisasjonshierarkiet for følgende dimensjoner:
 
--   Produkter
--   Kategorier
--   Rabatter
--   År som tidsperiode
--   Registrer/terminaler
--   Stab/ansatte
--   Kunder
--   Driftsenheter
+- Produkter
+- Kategorier
+- Rabatter
+- År som tidsperiode
+- Registrer/terminaler
+- Stab/ansatte
+- Kunder
+- Driftsenheter
 
 I tillegg kan to egne rapporter som drar nytte av struktureres hierarkisk rutenett, la brukere overvåke salgs- og marginytelse ved å drille ned fra den øverste kategorinoden til individuelle bladnoder i kategorien i den standard detaljhandelproduktkategori. Brukere kan også gå nedover fra toppen driftsenheten til en individuell kanal i organisasjonshierarkiet som er definert som standard organisasjonshierarkiet for detaljhandel for rapporteringshierarkiformål. Du kan åpne rapportene fra et av følgende steder:
 
--   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
--   Arbeidsområdet **Kategori- og produktstyring** &gt; **Detaljhandel** &gt; **Produkt og kategorier** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
--   Arbeidsområdet **Prisings- og rabattstyring** &gt; **Detaljhandel** &gt; **Prising og rabatter** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
--   Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter**
-
-
+- Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
+- Arbeidsområdet **Kategori- og produktstyring** &gt; **Detaljhandel** &gt; **Produkt og kategorier** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
+- Arbeidsområdet **Prisings- og rabattstyring** &gt; **Detaljhandel** &gt; **Prising og rabatter** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter**
+- Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter**
 

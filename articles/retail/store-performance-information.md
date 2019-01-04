@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Microsoft Dynamics 365 for Retail. 
+Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Microsoft Dynamics 365 for Retail.
 
 Som en del av Microsoft Dynamics 365 for Retail kan brukere studere butikkytelse i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet i en valgt periode ved å åpne den medfølgende rapporten **Kanalsammendrag** fra ett av følgende steder:
 
--   Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**
--   Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**
--   Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsammendrag**
+- Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**
+- Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**
+- Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsammendrag**
 
 Denne rapporten gir en oversikt over følgende sammendrag som en del av butikkytelse:
 
--   Bruttosalgssammendrag
--   Sammendrag for betalingsmiddeltype
--   Mva-sammendrag
--   Sammendrag for prisoverstyringer
--   Rabattsammendrag
-
-
+- Bruttosalgssammendrag
+- Sammendrag for betalingsmiddeltype
+- Mva-sammendrag
+- Sammendrag for prisoverstyringer
+- Rabattsammendrag
 
