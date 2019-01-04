@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/13/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -40,6 +40,7 @@ ms.lasthandoff: 11/13/2018
 ![Enheter for skjermoppsett for salgssted](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a><span data-ttu-id="af2c7-108">Visuell profil</span><span class="sxs-lookup"><span data-stu-id="af2c7-108">Visual profile</span></span>
+
 <span data-ttu-id="af2c7-109">Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere.</span><span class="sxs-lookup"><span data-stu-id="af2c7-109">Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</span></span> <span data-ttu-id="af2c7-110">Alle brukere som logger på kassen ser samme tema, farger og bilder.</span><span class="sxs-lookup"><span data-stu-id="af2c7-110">Every user who signs in to the register sees the same theme, colors, and images.</span></span>
 
 ![Velkomstskjerm for salgsstedet med lyst tema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ ms.lasthandoff: 11/13/2018
 - <span data-ttu-id="af2c7-123">**Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet.</span><span class="sxs-lookup"><span data-stu-id="af2c7-123">**Application background** – You can specify a background image that is used instead of the solid theme color throughout the application.</span></span> <span data-ttu-id="af2c7-124">For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.</span><span class="sxs-lookup"><span data-stu-id="af2c7-124">As for login backgrounds, the file size should be kept as small as possible.</span></span>
 
 ## <a name="screen-layouts"></a><span data-ttu-id="af2c7-125">Skjermoppsett</span><span class="sxs-lookup"><span data-stu-id="af2c7-125">Screen layouts</span></span>
+
 <span data-ttu-id="af2c7-126">Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i velkomstskjermen og **Transaksjon**-skjermbildet for salgsstedet.</span><span class="sxs-lookup"><span data-stu-id="af2c7-126">Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.</span></span>
 
 ![Visning for skjermoppsett for salgssted](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ ms.lasthandoff: 11/13/2018
 ![Oppsettstørrelser for salgssted](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a><span data-ttu-id="af2c7-163">Knappegrupper</span><span class="sxs-lookup"><span data-stu-id="af2c7-163">Button grids</span></span>
+
 <span data-ttu-id="af2c7-164">For hvert oppsettstørrelse i et skjermoppsett kan du konfigurere og tilordne knappegrupper for velkomstskjermbildet for salgsstedet og **Transaksjon**-skjermbildet.</span><span class="sxs-lookup"><span data-stu-id="af2c7-164">For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen.</span></span> <span data-ttu-id="af2c7-165">Knappegrupper for velkomstskjermen plasseres automatisk fra venstre mot høyre, fra det laveste nummeret (velkomstskjerm 1) til det høyeste nummeret.</span><span class="sxs-lookup"><span data-stu-id="af2c7-165">Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</span></span>
 
 <span data-ttu-id="af2c7-166">Plasseringen av knappegrupper er angitt i utforming av skjermoppsett i oppsett for fullstendig sakgssted.</span><span class="sxs-lookup"><span data-stu-id="af2c7-166">In Full POS layouts, the placement of button grids is specified in the screen layout designer.</span></span>
@@ -104,6 +107,7 @@ ms.lasthandoff: 11/13/2018
 ![Knappegrupper for kompakt oppsett](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a><span data-ttu-id="af2c7-170">Bilder</span><span class="sxs-lookup"><span data-stu-id="af2c7-170">Images</span></span>
+
 <span data-ttu-id="af2c7-171">Du kan angi bilder som skal inkluderes i brukergrensesnittet for salgsstedet for hvert oppsettstørrelse i et skjermoppsett.</span><span class="sxs-lookup"><span data-stu-id="af2c7-171">For each layout size in a screen layout, you can specify images to include in the POS UI.</span></span> <span data-ttu-id="af2c7-172">Ett enkelt bilde kan angis for velkomstskjermen for oppsett for fullstendig sakgssted.</span><span class="sxs-lookup"><span data-stu-id="af2c7-172">For Full POS layouts, a single image can be specified for the welcome screen.</span></span> <span data-ttu-id="af2c7-173">Dette bildet vises som det første grensesnittelement til venstre.</span><span class="sxs-lookup"><span data-stu-id="af2c7-173">This image appears as the first UI element on the left.</span></span> <span data-ttu-id="af2c7-174">I **Transaksjon**-skjermbildet kan bilder brukes som kategoribilder eller logoer.</span><span class="sxs-lookup"><span data-stu-id="af2c7-174">On the **Transaction** screen, images can be used as tab images or as a logo.</span></span> <span data-ttu-id="af2c7-175">Oppsett for kompakt salgssted bruker ikke disse bildene.</span><span class="sxs-lookup"><span data-stu-id="af2c7-175">Compact POS layouts don't use these images.</span></span>
 
 ### <a name="screen-layout-designer"></a><span data-ttu-id="af2c7-176">Utforming av skjermoppsett</span><span class="sxs-lookup"><span data-stu-id="af2c7-176">Screen layout designer</span></span>
@@ -141,11 +145,13 @@ ms.lasthandoff: 11/13/2018
     - <span data-ttu-id="af2c7-222">**Egendefinert kontroll** – Den egendefinerte kontrollen fungerer som en plassholder i skjermoppsettet og lar deg kan reservere plass for egendefinert innhold.</span><span class="sxs-lookup"><span data-stu-id="af2c7-222">**Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</span></span> <span data-ttu-id="af2c7-223">Den egendefinerte kontrollen er bare tilgjengelig for fullstendige oppsett.</span><span class="sxs-lookup"><span data-stu-id="af2c7-223">The custom control is available only for Full layouts.</span></span>
 
 ### <a name="compact-layout-designer"></a><span data-ttu-id="af2c7-224">Utforming for kompakt oppsett</span><span class="sxs-lookup"><span data-stu-id="af2c7-224">Compact layout designer</span></span>
+
 <span data-ttu-id="af2c7-225">På samme måte som utforming for fullstendig oppsett kan du med utforming for kompakt oppsett konfigurere skjermoppsettet for salgsstedet for telefoner og små nettbrett.</span><span class="sxs-lookup"><span data-stu-id="af2c7-225">Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</span></span> <span data-ttu-id="af2c7-226">I dette tilfellet er imidlertid selve oppsettet fast.</span><span class="sxs-lookup"><span data-stu-id="af2c7-226">However, in this case, the layout itself is fixed.</span></span> <span data-ttu-id="af2c7-227">Du kan konfigurere kontrollene i oppsettet ved å høyreklikke og ved hjelp av hurtigmenyen.</span><span class="sxs-lookup"><span data-stu-id="af2c7-227">You can configure the controls in the layout by right-clicking and using the shortcut menu.</span></span> <span data-ttu-id="af2c7-228">Du kan imidlertid ikke bruke dra og slipp-operasjoner for mer innhold.</span><span class="sxs-lookup"><span data-stu-id="af2c7-228">However, you can't use drag-and-drop operations for additional content.</span></span>
 
 ![Utforming for kompakt oppsett](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a><span data-ttu-id="af2c7-230">Utforming for knappegruppe</span><span class="sxs-lookup"><span data-stu-id="af2c7-230">Button grid designer</span></span>
+
 <span data-ttu-id="af2c7-231">Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på velkomstskjermbildet for salgsstedet og **Transaksjon**-skjermen for både fullstendige og kompakte oppsett.</span><span class="sxs-lookup"><span data-stu-id="af2c7-231">The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts.</span></span> <span data-ttu-id="af2c7-232">Du kan bruke samme knappegruppen på tvers av oppsett og oppsettyper.</span><span class="sxs-lookup"><span data-stu-id="af2c7-232">The same button grid can be used across layouts and layout types.</span></span> <span data-ttu-id="af2c7-233">På samme måte som utforming for skjermoppsett bruker utforming for knappegruppe ClickOnce-distribusjonsteknologi til å laste ned, installere og starte den nyeste versjonen av appen hver gang brukeren åpner den.</span><span class="sxs-lookup"><span data-stu-id="af2c7-233">Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="af2c7-234">Husk å sjekke nettleserkravene for ClickOnce.</span><span class="sxs-lookup"><span data-stu-id="af2c7-234">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="af2c7-235">Noen nettlesere, for eksempel Google Chrome, krever tillegg.</span><span class="sxs-lookup"><span data-stu-id="af2c7-235">Some browsers, such as Google Chrome, require extensions.</span></span>
 
 ![Utforming for knappegruppe](../retail/media/Button-Grid-Designer.png)
