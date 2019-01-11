@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: Endringer i utvidelsesmuligheter versjon 8.1.2
               href: extensibility/extensibility-changes-812.md
+            - name: Endringer i utvidelsesmuligheter versjon 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Grunnleggende
           items:
             - name: Påtrengende tilpassinger
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Skydistribusjon
       items:
+        - name: Distribusjon av selvbetjening
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Distribuere et nytt miljø
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Vanlige spørsmål om distribusjon
+              href: deployment/deploymentFAQ.md
+            - name: Kjente problemer med distribusjon av selvbetjening
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Vedlikeholdsoperasjoner for distribusjoner
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Oppdatere et miljø
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: Feilsøke miljøer som distribueres gjennom distribusjon av selvbetjening
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Fullføre jobbintroduksjon for Azure Resource Manager
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute og Finance and Operations
           href: deployment/expressroute.md
         - name: Arkitektur for Finance and Operations
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Ta i bruk oppdateringer i skymiljøer
+          href: deployment/apply-deployable-package-system.md
+        - name: Bruke oppdateringer og utvidelser i skybaserte komponenter i Retail-kanal
+          href: deployment/Update-retail-channel.md
+        - name: Initialisere skybaserte komponenter i Retail-kanal
+          href: deployment/Initialize-Retail-Channels.md
     - name: Lokal distribusjon
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Opprette distribuerbare pakker med modeller
           href: deployment/create-apply-deployable-package.md
-        - name: Ta i bruk oppdateringer i skymiljøer
-          href: deployment/apply-deployable-package-system.md
         - name: Installere distribuerbare pakker fra kommandolinjen
           href: deployment/install-deployable-package.md
         - name: Avinstallere en pakke
@@ -1021,8 +1042,6 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Oppgradere Dynamics AX-plattformen til utgaven fra august 2016
           href: migration-upgrade/update-platform-each-release.md
-        - name: Oppgradere sandkassemiljøer
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 'Oppgradere data i utviklings-, demonstrasjons- eller sandkassemiljøer'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Oppdatere utviklingsverktøy

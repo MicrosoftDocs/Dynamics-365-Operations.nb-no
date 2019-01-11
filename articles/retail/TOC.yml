@@ -147,9 +147,11 @@
       href: POS-search-improvements.md
     - name: Beholdningsoppslag på salgsstedet
       href: product-variants-POS.md
+    - name: Suspendere og gjenoppta transaksjoner på salgsstedet
+      href: pos-suspend-recall-transactions.md
     - name: Eksterne enheter for maskinvare
       items:
-        - name: Eksterne enheter for detaljhandel
+        - name: Eksterne enheter for Retail
           href: retail-peripherals-overview.md
         - name: Simulator for eksterne enheter for Retail
           href: dev-itpro/retail-peripheral-simulator.md
@@ -478,8 +480,10 @@
       items:
         - name: Støtte for oppgradering og N-1 for detaljhandel
           href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: 'Installasjon, konfigurasjon, og overgang for distribusjon i faser'
+        - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
           href: dev-itpro/n-1-installation-configuration.md
+        - name: Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail
+          href: dev-itpro/retailSDK-update.md
     - name: Implementeringsveiledning
       items:
         - name: Implementeringsveiledning for enhetsbehandling

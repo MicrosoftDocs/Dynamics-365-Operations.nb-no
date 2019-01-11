@@ -7,6 +7,10 @@
         - name: Hva er nytt eller endret?
           href: whats-new.md
           items:
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)
+              href: whats-new-talent-december-14.md
+            - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (6. desember 2018)
+              href: whats-new-talent-december-6.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)
               href: whats-new-talent-november-27.md
             - name: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (15. november 2018)
@@ -71,6 +75,8 @@
     - name: Administrere permisjon og fravær
       href: leave-absence-overview.md
       items:
+        - name: Permisjons- og fraværskonsepter
+          href: leave-absence-concepts.md
         - name: Avsette tid basert på arbeidstimer
           href: leave-accrue-hours-worked.md
         - name: Arbeidstidskalendere
@@ -128,10 +134,13 @@
         - name: Definere opplæringskurs
           href: courses.md
     - name: Definere og administrere et fordelsprogram
-      href: manage-benefit-program.md
-    - name: Policyer for fordelsrettigheter
-      href: benefit-eligibility-policies.md
       items:
+        - name: Administrere et fordelsprogram
+          href: manage-benefit-program.md
+        - name: Policyer for fordelsrettigheter
+          href: benefit-eligibility-policies.md
+        - name: Generere rapporter om lov om Affordable Care
+          href: generate-aca-reports.md
         - name: Administrere varer som er lånt ut til arbeidere
           href: loan-items.md
     - name: Samle inn informasjon ved hjelp av spørreskjemaer
@@ -276,8 +285,6 @@
           href: create-envi-powerapps-admin-ctr.md
         - name: Frakoblinger for Talent-klient
           href: client-disconnects.md
-        - name: Hvordan sikkerhetskopieringer av database håndteres
-          href: database-backups.md
         - name: Unngå avkorting av tekst i stillingshierarki og eksport til Visio
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Kjøre kompensasjonsprosessen
