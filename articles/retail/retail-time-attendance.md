@@ -20,123 +20,124 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
-# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="e4984-103">Administrere tid og fremmøte i Retail</span><span class="sxs-lookup"><span data-stu-id="e4984-103">Time and attendance management in Retail</span></span>
+# <a name="time-and-attendance-management-in-retail"></a><span data-ttu-id="a0313-103">Administrere tid og fremmøte i Retail</span><span class="sxs-lookup"><span data-stu-id="a0313-103">Time and attendance management in Retail</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="e4984-104">Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="e4984-104">This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail.</span></span> 
+<span data-ttu-id="a0313-104">Dette emnet beskriver scenarier som støttes for administrasjon av tid og fremmøte i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="a0313-104">This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail.</span></span>
 
-<a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="e4984-105">Behandle konfigurasjon og planlegging for arbeider</span><span class="sxs-lookup"><span data-stu-id="e4984-105">Manage worker setup and scheduling</span></span>
-----------------------------------
+## <a name="manage-worker-setup-and-scheduling"></a><span data-ttu-id="a0313-105">Behandle konfigurasjon og planlegging for arbeider</span><span class="sxs-lookup"><span data-stu-id="a0313-105">Manage worker setup and scheduling</span></span>
 
-### <a name="initial-configuration"></a><span data-ttu-id="e4984-106"> Opprinnelig konfigurasjon</span><span class="sxs-lookup"><span data-stu-id="e4984-106">Initial configuration</span></span>
+### <a name="initial-configuration"></a><span data-ttu-id="a0313-106"> Opprinnelig konfigurasjon</span><span class="sxs-lookup"><span data-stu-id="a0313-106">Initial configuration</span></span>
 
--   <span data-ttu-id="e4984-107">Kjør konfigurasjonsveiviseren.</span><span class="sxs-lookup"><span data-stu-id="e4984-107">Run the configuration wizard.</span></span>
--   <span data-ttu-id="e4984-108">Registrer arbeidere som timeregistreringsarbeidere.</span><span class="sxs-lookup"><span data-stu-id="e4984-108">Register workers as time registration workers.</span></span>
+- <span data-ttu-id="a0313-107">Kjør konfigurasjonsveiviseren.</span><span class="sxs-lookup"><span data-stu-id="a0313-107">Run the configuration wizard.</span></span>
+- <span data-ttu-id="a0313-108">Registrer arbeidere som timeregistreringsarbeidere.</span><span class="sxs-lookup"><span data-stu-id="a0313-108">Register workers as time registration workers.</span></span>
 
-### <a name="plan-worker-schedules"></a><span data-ttu-id="e4984-109">Planlegge tidsplaner for arbeidere</span><span class="sxs-lookup"><span data-stu-id="e4984-109">Plan worker schedules</span></span>
+### <a name="plan-worker-schedules"></a><span data-ttu-id="a0313-109">Planlegge tidsplaner for arbeidere</span><span class="sxs-lookup"><span data-stu-id="a0313-109">Plan worker schedules</span></span>
 
--   <span data-ttu-id="e4984-110">Bruk profiler ved hjelp av jobbplanleggeren.</span><span class="sxs-lookup"><span data-stu-id="e4984-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="e4984-111">Hvis du vil ha mer informasjon, kan du se <https://technet.microsoft.com/en-us/library/aa551234.aspx>.</span><span class="sxs-lookup"><span data-stu-id="e4984-111">For more information, see <https://technet.microsoft.com/en-us/library/aa551234.aspx>.</span></span>
+- <span data-ttu-id="a0313-110">Bruk profiler ved hjelp av jobbplanleggeren.</span><span class="sxs-lookup"><span data-stu-id="a0313-110">Apply profiles by using the work planner.</span></span> <span data-ttu-id="a0313-111">Hvis du vil ha mer informasjon, kan du se [Bruke profiler ved hjelp av jobbplanlegger](https://technet.microsoft.com/library/aa551234.aspx).</span><span class="sxs-lookup"><span data-stu-id="a0313-111">For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).</span></span>
 
-<span data-ttu-id="e4984-112">Hvis du vil ha mer informasjon om konfigurasjonstrinnene, kan du se <https://technet.microsoft.com/en-us/library/aa496971.aspx>.</span><span class="sxs-lookup"><span data-stu-id="e4984-112">For information about the configuration steps, see <https://technet.microsoft.com/en-us/library/aa496971.aspx>.</span></span>
+<span data-ttu-id="a0313-112">Hvis du vil ha informasjon om konfigurasjonstrinnene, kan du se [Definere timeregistrering](https://technet.microsoft.com/library/aa496971.aspx).</span><span class="sxs-lookup"><span data-stu-id="a0313-112">For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).</span></span>
 
-### <a name="retail-specific-configuration"></a><span data-ttu-id="e4984-113">Detaljhandelsspesifikk konfigurasjon</span><span class="sxs-lookup"><span data-stu-id="e4984-113">Retail-specific configuration</span></span>
+### <a name="retail-specific-configuration"></a><span data-ttu-id="a0313-113">Detaljhandelsspesifikk konfigurasjon</span><span class="sxs-lookup"><span data-stu-id="a0313-113">Retail-specific configuration</span></span>
 
--   <span data-ttu-id="e4984-114">Aktiver en funksjonalitetsprofil for tidsklokke, for arbeidere som du vil aktivere tidsregistreringer for.</span><span class="sxs-lookup"><span data-stu-id="e4984-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="e4984-115">Klikk på **Funksjonalitetsprofiler for salgssted** &gt; **Funksjoner** &gt; **Tidsregistreringer for salgssted** &gt; **Aktiver tidsregistreringer**.</span><span class="sxs-lookup"><span data-stu-id="e4984-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
--   <span data-ttu-id="e4984-116">Konfigurer grupper for tillatelser for salgssted for å aktivere tillatelsen Vis tidsklokkeoppføringer.</span><span class="sxs-lookup"><span data-stu-id="e4984-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="e4984-117">Med denne tillatelsen kan en bruker vise tidsklokkeregistreringene for andre arbeidere i butikken (og fra alle andre butikker som brukeren er tilknyttet, via adresseboken).</span><span class="sxs-lookup"><span data-stu-id="e4984-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="e4984-118">Du vil kanskje aktivere denne tillatelsen for en lederrolle, men ikke en kassererrolle.</span><span class="sxs-lookup"><span data-stu-id="e4984-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="e4984-119">Klikk på **Salgsstedstillatelsesgrupper** &gt; **Vis tidsklokkeoppføringer**.</span><span class="sxs-lookup"><span data-stu-id="e4984-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
+- <span data-ttu-id="a0313-114">Aktiver en funksjonalitetsprofil for tidsklokke, for arbeidere som du vil aktivere tidsregistreringer for.</span><span class="sxs-lookup"><span data-stu-id="a0313-114">Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for.</span></span> <span data-ttu-id="a0313-115">Klikk på **Funksjonalitetsprofiler for salgssted** &gt; **Funksjoner** &gt; **Tidsregistreringer for salgssted** &gt; **Aktiver tidsregistreringer**.</span><span class="sxs-lookup"><span data-stu-id="a0313-115">Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.</span></span>
+- <span data-ttu-id="a0313-116">Konfigurer grupper for tillatelser for salgssted for å aktivere tillatelsen Vis tidsklokkeoppføringer.</span><span class="sxs-lookup"><span data-stu-id="a0313-116">Configure point of sale (POS) permissions groups to enable the View timeclock entries permission.</span></span> <span data-ttu-id="a0313-117">Med denne tillatelsen kan en bruker vise tidsklokkeregistreringene for andre arbeidere i butikken (og fra alle andre butikker som brukeren er tilknyttet, via adresseboken).</span><span class="sxs-lookup"><span data-stu-id="a0313-117">This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book).</span></span> <span data-ttu-id="a0313-118">Du vil kanskje aktivere denne tillatelsen for en lederrolle, men ikke en kassererrolle.</span><span class="sxs-lookup"><span data-stu-id="a0313-118">You might want to enable this permission for a manager role but not for a cashier role.</span></span> <span data-ttu-id="a0313-119">Klikk på **Salgsstedstillatelsesgrupper** &gt; **Vis tidsklokkeoppføringer**.</span><span class="sxs-lookup"><span data-stu-id="a0313-119">Click **POS permission groups** &gt; **View time clock entries**.</span></span>
 
-## <a name="register-time"></a><span data-ttu-id="e4984-120">Kassetid</span><span class="sxs-lookup"><span data-stu-id="e4984-120">Register time</span></span>
-### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="e4984-121">Tidsregistreringer for kasserer og ikke-kasserer</span><span class="sxs-lookup"><span data-stu-id="e4984-121">Cashier and non-cashier time registrations</span></span>
+## <a name="register-time"></a><span data-ttu-id="a0313-120">Kassetid</span><span class="sxs-lookup"><span data-stu-id="a0313-120">Register time</span></span>
 
--   <span data-ttu-id="e4984-122">På salgssted:</span><span class="sxs-lookup"><span data-stu-id="e4984-122">On POS:</span></span>
-    -   <span data-ttu-id="e4984-123">Stemple inn operasjoner:</span><span class="sxs-lookup"><span data-stu-id="e4984-123">Clock-in operations:</span></span>
-        -   <span data-ttu-id="e4984-124">Logg på med en ikke-skuff-operasjon eller et nytt skift.</span><span class="sxs-lookup"><span data-stu-id="e4984-124">Log on with a non-drawer operation or New shift.</span></span>
-        -   <span data-ttu-id="e4984-125">Velg en tidsklokkeoperasjon.</span><span class="sxs-lookup"><span data-stu-id="e4984-125">Select a Time Clock operation.</span></span>
-        -   <span data-ttu-id="e4984-126">Velg en ønsket operasjon:</span><span class="sxs-lookup"><span data-stu-id="e4984-126">Select a desired operation:</span></span>
-            -   <span data-ttu-id="e4984-127">Innstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-127">Clock-in</span></span>
-            -   <span data-ttu-id="e4984-128">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="e4984-128">Break for Work</span></span>
-            -   <span data-ttu-id="e4984-129">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="e4984-129">Break for Lunch</span></span>
-            -   <span data-ttu-id="e4984-130">Utstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-130">Clock-out</span></span>
+### <a name="cashier-and-non-cashier-time-registrations"></a><span data-ttu-id="a0313-121">Tidsregistreringer for kasserer og ikke-kasserer</span><span class="sxs-lookup"><span data-stu-id="a0313-121">Cashier and non-cashier time registrations</span></span>
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><span data-ttu-id="e4984-131">Gjeldende tilstand</span><span class="sxs-lookup"><span data-stu-id="e4984-131">Current state</span></span></th>
-    <th><span data-ttu-id="e4984-132">Tilgjengelige operasjoner</span><span class="sxs-lookup"><span data-stu-id="e4984-132">Available operations</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><span data-ttu-id="e4984-133">Innstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-133">Clock-in</span></span></td>
-    <td><ul>
-    <li><span data-ttu-id="e4984-134">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="e4984-134">Break for Work</span></span></li>
-    <li><span data-ttu-id="e4984-135">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="e4984-135">Break for Lunch</span></span></li>
-    <li><span data-ttu-id="e4984-136">Utstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-136">Clock-out</span></span></li>
-    </ul></td>
-    </tr>
-    <tr class="even">
-    <td><span data-ttu-id="e4984-137">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="e4984-137">Break for Work</span></span></td>
-    <td><span data-ttu-id="e4984-138">Innstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-138">Clock-in</span></span></td>
-    </tr>
-    <tr class="odd">
-    <td><span data-ttu-id="e4984-139">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="e4984-139">Break for Lunch</span></span></td>
-    <td><span data-ttu-id="e4984-140">Innstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-140">Clock-in</span></span></td>
-    </tr>
-    <tr class="even">
-    <td><span data-ttu-id="e4984-141">Utstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-141">Clock-out</span></span></td>
-    <td><span data-ttu-id="e4984-142">Innstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-142">Clock-in</span></span></td>
-    </tr>
-    </tbody>
-    </table>
+- <span data-ttu-id="a0313-122">På salgssted:</span><span class="sxs-lookup"><span data-stu-id="a0313-122">On POS:</span></span>
 
-    <span data-ttu-id="e4984-143">[![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="e4984-143">[![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
--   <span data-ttu-id="e4984-144">Vis bekreftelsesmeldingen, og valider at den gjeldende aktivitetstiden er riktig.</span><span class="sxs-lookup"><span data-stu-id="e4984-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
--   <span data-ttu-id="e4984-145">Loggbok:</span><span class="sxs-lookup"><span data-stu-id="e4984-145">Logbook:</span></span>
-    -   <span data-ttu-id="e4984-146">Klikk **Loggbok** for å vise tidsklokkeaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="e4984-146">Click **Logbook** to view time clock activity.</span></span>
-    -   <span data-ttu-id="e4984-147">Bruk tidsfiltre for å velge forskjellige tidsvinduer.</span><span class="sxs-lookup"><span data-stu-id="e4984-147">Use time filters to select different time windows.</span></span>
-    -   <span data-ttu-id="e4984-148">Hvis du arbeider på flere butikklokasjoner, kan du se tidsregistreringene fra alle butikkene der du har registrert tid.</span><span class="sxs-lookup"><span data-stu-id="e4984-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="e4984-149">Du kan bruke butikkfilteret for å vise tidsregistreringer fra en valgt butikk.</span><span class="sxs-lookup"><span data-stu-id="e4984-149">You can use the store filter to view time registrations from a selected store.</span></span>
+    - <span data-ttu-id="a0313-123">Stemple inn operasjoner:</span><span class="sxs-lookup"><span data-stu-id="a0313-123">Clock-in operations:</span></span>
 
-<!-- -->
+        - <span data-ttu-id="a0313-124">Logg på med en ikke-skuff-operasjon eller et nytt skift.</span><span class="sxs-lookup"><span data-stu-id="a0313-124">Log on with a non-drawer operation or New shift.</span></span>
+        - <span data-ttu-id="a0313-125">Velg en tidsklokkeoperasjon.</span><span class="sxs-lookup"><span data-stu-id="a0313-125">Select a Time Clock operation.</span></span>
+        - <span data-ttu-id="a0313-126">Velg en ønsket operasjon:</span><span class="sxs-lookup"><span data-stu-id="a0313-126">Select a desired operation:</span></span>
 
--   <span data-ttu-id="e4984-150">Ulike tidssoner:</span><span class="sxs-lookup"><span data-stu-id="e4984-150">Different time zones:</span></span>
-    -   <span data-ttu-id="e4984-151">Hvis du viser tiden fra en annen lokasjon (for kassererens loggbok eller ved hjelp av **Vis tidsklokkeoppføringer** for et lederscenario), og den er i en annen tidssone, blir tidspostene som du ser, konvertert til den lokale tidssonen.</span><span class="sxs-lookup"><span data-stu-id="e4984-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="e4984-152">Du er for eksempel en leder for to butikker, én i Arizona og den andre i Nevada.</span><span class="sxs-lookup"><span data-stu-id="e4984-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="e4984-153">En kasserer registrerer en innstempling klokken 9:00</span><span class="sxs-lookup"><span data-stu-id="e4984-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="e4984-154">i Arizona.</span><span class="sxs-lookup"><span data-stu-id="e4984-154">in Arizona.</span></span> <span data-ttu-id="e4984-155">På dette tidspunktet er klokken 8:00 i Nevada.</span><span class="sxs-lookup"><span data-stu-id="e4984-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="e4984-156">Derfor, hvis du er i butikken i Nevada og ser på timeregistreringsposter, er timeregistreringen merket som 8:00.</span><span class="sxs-lookup"><span data-stu-id="e4984-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
+            - <span data-ttu-id="a0313-127">Innstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-127">Clock-in</span></span>
+            - <span data-ttu-id="a0313-128">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="a0313-128">Break for Work</span></span>
+            - <span data-ttu-id="a0313-129">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="a0313-129">Break for Lunch</span></span>
+            - <span data-ttu-id="a0313-130">Utstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-130">Clock-out</span></span>
 
-## <a name="view-worker-time-registrations"></a><span data-ttu-id="e4984-157">Vise tidsregistrering for arbeidere</span><span class="sxs-lookup"><span data-stu-id="e4984-157">View worker time registrations</span></span>
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="e4984-158">Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype</span><span class="sxs-lookup"><span data-stu-id="e4984-158">View worker time registrations, and filter by store or activity type</span></span>
+        <table>
+        <thead>
+        <tr>
+        <th><span data-ttu-id="a0313-131">Gjeldende tilstand</span><span class="sxs-lookup"><span data-stu-id="a0313-131">Current state</span></span></th>
+        <th><span data-ttu-id="a0313-132">Tilgjengelige operasjoner</span><span class="sxs-lookup"><span data-stu-id="a0313-132">Available operations</span></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><span data-ttu-id="a0313-133">Innstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-133">Clock-in</span></span></td>
+        <td>
+        <ul>
+        <li><span data-ttu-id="a0313-134">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="a0313-134">Break for Work</span></span></li>
+        <li><span data-ttu-id="a0313-135">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="a0313-135">Break for Lunch</span></span></li>
+        <li><span data-ttu-id="a0313-136">Utstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-136">Clock-out</span></span></li>
+        </ul>
+        </td>
+        </tr>
+        <tr>
+        <td><span data-ttu-id="a0313-137">Arbeidspause</span><span class="sxs-lookup"><span data-stu-id="a0313-137">Break for Work</span></span></td>
+        <td><span data-ttu-id="a0313-138">Innstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-138">Clock-in</span></span></td>
+        </tr>
+        <tr>
+        <td><span data-ttu-id="a0313-139">Lunsjpause</span><span class="sxs-lookup"><span data-stu-id="a0313-139">Break for Lunch</span></span></td>
+        <td><span data-ttu-id="a0313-140">Innstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-140">Clock-in</span></span></td>
+        </tr>
+        <tr>
+        <td><span data-ttu-id="a0313-141">Utstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-141">Clock-out</span></span></td>
+        <td><span data-ttu-id="a0313-142">Innstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-142">Clock-in</span></span></td>
+        </tr>
+        </tbody>
+        </table>
 
-<span data-ttu-id="e4984-159">På salgssted:</span><span class="sxs-lookup"><span data-stu-id="e4984-159">On POS:</span></span>
+        <span data-ttu-id="a0313-143">[![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)</span><span class="sxs-lookup"><span data-stu-id="a0313-143">[![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)</span></span>
 
--   <span data-ttu-id="e4984-160">Velg **Vis tidsklokkeoppføringer**.</span><span class="sxs-lookup"><span data-stu-id="e4984-160">Select **View timeclock entries**.</span></span>
--   <span data-ttu-id="e4984-161">Du kan se aktiviteter for tidsklokkeregistrering fra alle arbeidere som er tilordnet til de samme butikkene som du er tilordnet til.</span><span class="sxs-lookup"><span data-stu-id="e4984-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
--   <span data-ttu-id="e4984-162">Du kan bruke aktivitetstypen og butikkfiltre for å filtrere etter tidsregistreringer.</span><span class="sxs-lookup"><span data-stu-id="e4984-162">You can use the activity type and store filters to filter on time registrations.</span></span>
+- <span data-ttu-id="a0313-144">Vis bekreftelsesmeldingen, og valider at den gjeldende aktivitetstiden er riktig.</span><span class="sxs-lookup"><span data-stu-id="a0313-144">View the confirmation message, and validate that the current activity time is correct.</span></span>
+- <span data-ttu-id="a0313-145">Loggbok:</span><span class="sxs-lookup"><span data-stu-id="a0313-145">Logbook:</span></span>
 
-## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="e4984-163">Behandle og administrere tidsregistreringer</span><span class="sxs-lookup"><span data-stu-id="e4984-163">Process and manage time registrations</span></span>
-<span data-ttu-id="e4984-164">En Dynamics 365 for Retail bruker følger arbeidsflyten for å beregne, godkjenne og overføre tidsregistreringer til lønn.</span><span class="sxs-lookup"><span data-stu-id="e4984-164">A Dynamics 365 for Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
+    - <span data-ttu-id="a0313-146">Klikk **Loggbok** for å vise tidsklokkeaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="a0313-146">Click **Logbook** to view time clock activity.</span></span>
+    - <span data-ttu-id="a0313-147">Bruk tidsfiltre for å velge forskjellige tidsvinduer.</span><span class="sxs-lookup"><span data-stu-id="a0313-147">Use time filters to select different time windows.</span></span>
+    - <span data-ttu-id="a0313-148">Hvis du arbeider på flere butikklokasjoner, kan du se tidsregistreringene fra alle butikkene der du har registrert tid.</span><span class="sxs-lookup"><span data-stu-id="a0313-148">If you work at multiple store locations, you see your time registrations from all the stores where you recorded time.</span></span> <span data-ttu-id="a0313-149">Du kan bruke butikkfilteret for å vise tidsregistreringer fra en valgt butikk.</span><span class="sxs-lookup"><span data-stu-id="a0313-149">You can use the store filter to view time registrations from a selected store.</span></span>
 
-### <a name="primary-operations"></a><span data-ttu-id="e4984-165">Primære operasjoner</span><span class="sxs-lookup"><span data-stu-id="e4984-165">Primary operations</span></span>
+- <span data-ttu-id="a0313-150">Ulike tidssoner:</span><span class="sxs-lookup"><span data-stu-id="a0313-150">Different time zones:</span></span>
 
--   <span data-ttu-id="e4984-166">Beregn</span><span class="sxs-lookup"><span data-stu-id="e4984-166">Calculate</span></span>
--   <span data-ttu-id="e4984-167">Godkjenn</span><span class="sxs-lookup"><span data-stu-id="e4984-167">Approve</span></span>
--   <span data-ttu-id="e4984-168">Send til lønn</span><span class="sxs-lookup"><span data-stu-id="e4984-168">Submit to payroll</span></span>
+    - <span data-ttu-id="a0313-151">Hvis du viser tiden fra en annen lokasjon (for kassererens loggbok eller ved hjelp av **Vis tidsklokkeoppføringer** for et lederscenario), og den er i en annen tidssone, blir tidspostene som du ser, konvertert til den lokale tidssonen.</span><span class="sxs-lookup"><span data-stu-id="a0313-151">If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone.</span></span> <span data-ttu-id="a0313-152">Du er for eksempel en leder for to butikker, én i Arizona og den andre i Nevada.</span><span class="sxs-lookup"><span data-stu-id="a0313-152">For example, you are a manager for two stores, one in Arizona and the other in Nevada.</span></span> <span data-ttu-id="a0313-153">En kasserer registrerer en innstempling klokken 9:00</span><span class="sxs-lookup"><span data-stu-id="a0313-153">A cashier registers a clock-in at 9:00 A.M.</span></span> <span data-ttu-id="a0313-154">i Arizona.</span><span class="sxs-lookup"><span data-stu-id="a0313-154">in Arizona.</span></span> <span data-ttu-id="a0313-155">På dette tidspunktet er klokken 8:00 i Nevada.</span><span class="sxs-lookup"><span data-stu-id="a0313-155">At that moment, the time in Nevada is 8:00 A.M.</span></span> <span data-ttu-id="a0313-156">Derfor, hvis du er i butikken i Nevada og ser på timeregistreringsposter, er timeregistreringen merket som 8:00.</span><span class="sxs-lookup"><span data-stu-id="a0313-156">Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.</span></span>
 
-### <a name="other-common-operations"></a><span data-ttu-id="e4984-169">Andre vanlige operasjoner</span><span class="sxs-lookup"><span data-stu-id="e4984-169">Other common operations</span></span>
+## <a name="view-worker-time-registrations"></a><span data-ttu-id="a0313-157">Vise tidsregistrering for arbeidere</span><span class="sxs-lookup"><span data-stu-id="a0313-157">View worker time registrations</span></span>
 
--   <span data-ttu-id="e4984-170">Masseutstempling</span><span class="sxs-lookup"><span data-stu-id="e4984-170">Bulk Clock-out</span></span>
--   <span data-ttu-id="e4984-171">Registrer fravær</span><span class="sxs-lookup"><span data-stu-id="e4984-171">Register Absence</span></span>
+### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a><span data-ttu-id="a0313-158">Vis tidsregistreringer for arbeider, og filtrer etter butikk eller aktivitetstype</span><span class="sxs-lookup"><span data-stu-id="a0313-158">View worker time registrations, and filter by store or activity type</span></span>
 
-<span data-ttu-id="e4984-172">Hvis du vil ha mer informasjon om hvordan du behandler timeregistreringer, kan du se <https://technet.microsoft.com/en-us/library/aa573180.aspx>.</span><span class="sxs-lookup"><span data-stu-id="e4984-172">For more information about how to process time and attendance registrations, see <https://technet.microsoft.com/en-us/library/aa573180.aspx>.</span></span>
+<span data-ttu-id="a0313-159">På salgssted:</span><span class="sxs-lookup"><span data-stu-id="a0313-159">On POS:</span></span>
 
+- <span data-ttu-id="a0313-160">Velg **Vis tidsklokkeoppføringer**.</span><span class="sxs-lookup"><span data-stu-id="a0313-160">Select **View timeclock entries**.</span></span>
+- <span data-ttu-id="a0313-161">Du kan se aktiviteter for tidsklokkeregistrering fra alle arbeidere som er tilordnet til de samme butikkene som du er tilordnet til.</span><span class="sxs-lookup"><span data-stu-id="a0313-161">You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.</span></span>
+- <span data-ttu-id="a0313-162">Du kan bruke aktivitetstypen og butikkfiltre for å filtrere etter tidsregistreringer.</span><span class="sxs-lookup"><span data-stu-id="a0313-162">You can use the activity type and store filters to filter on time registrations.</span></span>
 
+## <a name="process-and-manage-time-registrations"></a><span data-ttu-id="a0313-163">Behandle og administrere tidsregistreringer</span><span class="sxs-lookup"><span data-stu-id="a0313-163">Process and manage time registrations</span></span>
 
+<span data-ttu-id="a0313-164">En Dynamics 365 for Retail bruker følger arbeidsflyten for å beregne, godkjenne og overføre tidsregistreringer til lønn.</span><span class="sxs-lookup"><span data-stu-id="a0313-164">A Dynamics 365 for Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.</span></span>
+
+### <a name="primary-operations"></a><span data-ttu-id="a0313-165">Primære operasjoner</span><span class="sxs-lookup"><span data-stu-id="a0313-165">Primary operations</span></span>
+
+- <span data-ttu-id="a0313-166">Beregn</span><span class="sxs-lookup"><span data-stu-id="a0313-166">Calculate</span></span>
+- <span data-ttu-id="a0313-167">Godkjenn</span><span class="sxs-lookup"><span data-stu-id="a0313-167">Approve</span></span>
+- <span data-ttu-id="a0313-168">Send til lønn</span><span class="sxs-lookup"><span data-stu-id="a0313-168">Submit to payroll</span></span>
+
+### <a name="other-common-operations"></a><span data-ttu-id="a0313-169">Andre vanlige operasjoner</span><span class="sxs-lookup"><span data-stu-id="a0313-169">Other common operations</span></span>
+
+- <span data-ttu-id="a0313-170">Masseutstempling</span><span class="sxs-lookup"><span data-stu-id="a0313-170">Bulk Clock-out</span></span>
+- <span data-ttu-id="a0313-171">Registrer fravær</span><span class="sxs-lookup"><span data-stu-id="a0313-171">Register Absence</span></span>
+
+<span data-ttu-id="a0313-172">Hvis du vil ha mer informasjon om hvordan du behandler registreringer av timeregistrering, kan du se [Behandle registreringer av timeregistrering](https://technet.microsoft.com/library/aa573180.aspx).</span><span class="sxs-lookup"><span data-stu-id="a0313-172">For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).</span></span>
 
