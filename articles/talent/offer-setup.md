@@ -3,7 +3,7 @@ title: Konfigurere tilbudsbehandling
 description: Dette emnet beskriver hvordan du setter opp tilbud i Talent.
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsbehandling 
@@ -105,7 +105,7 @@ Gjør følgende for å laste opp regelfilen for tilbudsdata:
 
 1.  Du kan slette en eksisterende regelsettopplasting hvis plassholderen som defineres, ikke brukes i en annen dokumentmal.
 
->[!MERKNADER]
+>[!NOTE]
 > - Hver plassholder kan bare ha ett unikt sett med kolonner som den er avhengig av. Hvis for eksempel **Årslønn** er avhengig av **Jobbsted** og **Nivå**, kan du ikke laste opp et annet regelsett der **Årslønn** er avhengig av et annet sett med kolonner.
 
 > - Du kan laste ned eksempelsett med tilbudsdata i kategorien **Eksempler** på siden **Regler for tilbudsdata**.
@@ -136,7 +136,7 @@ Hvis du vil opprette en tilbudsdokumentmal, må du gjøre følgende:
 
     - Sett hashtag på tilbudsdataplassholderen direkte på posisjonen. Skriv inn **\#**, og skriv deretter inn navnet på tilbudsdataplassholderen. Alternativer vises i rullegardinlisten. Klikk eller trykk på **Enter** for å sette inn tilbudsdataplassholderen.
 
-    >[!MERKNADER]
+    >[!NOTE]
     > - Hvis du vil tilknytte en plassholder til tilbudsdokumentmalen uten å vise verdien til kandidaten, holder du pekeren over tilbudsdataplassholderen og klikker på **Fest**-ikonet. Dette vil flytte plassholderen til **Festede tilbudsdata**-delen i tilbudsdokumentmalen. For å fjerne festingen følg de samme trinnene, men klikk på **Løsne** i listen over tilbudsdataplassholdere.
 
     > - Hvis du vil vise listen over aktive tilbudsdataplassholdere, må du bytte til **Aktiv**-kategorien i høyre rute.
@@ -175,7 +175,7 @@ Tilbudspakker er tilbudsartefaktene som deles med kandidaten og består av en ko
 
 1.  Klikk på **Legg til mal**.
 
-    >[!MERKNADER]
+    >[!NOTE]
     > - Du kan velge å opprette en ny mal eller velge fra en eksisterende mal.
 
     > - Hvis du vil legge til en eksisterende mal, må du kontrollere at tilbudsdokumentmalen ble lagret, fullført og merket som aktiv.
@@ -198,8 +198,10 @@ Det er flere deler av tilbudsopprettingsprosessen som kan konfigureres av en Att
 
 - **Kandidatens tilbudserfaring** – Som administrator kan du velge å angi om alle tilbud skal ha en utløpsdato, og i så fall hva som skal være standard forskyvning for utløpsdatoen. Du kan også konfigurere om kandidater kan avvise et tilbud.
 
-- **e-signaturer** – For øyeblikket er det eneste tilgjengelige alternativet for kandidater å skrive inn navnet i tilbudspakken under godkjenning av tilbudet. Vi vil introdusere partnerintegrasjoner med andre elektroniske signaturleverandører i fremtiden.
+- **e-signaturer** - Som administrator kan du også velge metoden som kandidater kan bruke til å signere tilbud.
+    - Adobe Sign - Alle tilbudspakker blir sendt og signert via Adobe Sign. Hver tilbudsoppretter som publiserer tilbudet, må ha sin Adobe Sign-lisens knyttet til Attract. 
 
+    - ESign - Dette er standardvalget, som følger med som standard, der brukeren kan signere et tilbud ved å skrive inn navn og initialer.
 
 Hvis du vil vite mer om tilbudsopprettingsprosessen, kan du se [Opprette, godkjenne og signere tilbud](./creating-offers.md).
 

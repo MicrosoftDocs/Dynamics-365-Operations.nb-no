@@ -20,10 +20,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 0300ed4a10f6979fb673447323f7fdf61041529f
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,10 +31,9 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskriver begrepene du trenger å kjenne til for å opprette en rabatt for en bestemt kanal. 
+Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskriver begrepene du trenger å kjenne til for å opprette en rabatt for en bestemt kanal.
 
-<a name="channel-specific-discounts"></a>Kanalspesifikke rabatter
---------------------------
+## <a name="channel-specific-discounts"></a>Kanalspesifikke rabatter
 
 Forhandlere tilbyr ofte ulike rabatter i forskjellige kanaler. Det kan gjøres for å målrette lokale markedsforhold eller for å forholde seg til konkurrerende forhandlere.
 
@@ -46,27 +45,22 @@ Microsoft Dynamics 365 for Retail bruker prisgrupper til å definere kanalspesif
 
 Diagrammet over illustrerer relasjonen mellom enheter som kan være på en transaksjon (kanal, katalog, tilknytning, kunde, fordelskort) og de ulike typene rabatter som kan konfigureres. Alle transaksjoner skjer i en kanal, slik at kanalen er garantert å finnes på en transaksjon. De gjenværende enhetene er valgfrie. Det er en kobling til en relatert prisgruppe på hver hoveddataside der du kan vise og legge til prisgrupper etter behov. En prisgruppe brukes til å relatere fire forskjellige typer enheter til rabatter, prisjusteringer og forretningsavtaler. Vi anbefaler at du planlegger en strategi for hvordan du navngir prisgrupper for å holde orden på dem. Ett alternativ er å bruke en bokstav eller tallprefiks eller suffiks til å skille mellom de ulike typene. For eksempel 1-xxxxx for kanalprisgrupper og 2-xxxxx i katalogprisgrupper. Det er fire forespørselssider som fokuserer på hver detaljhandelsenhet som kan ha rabatter som er knyttet til dem.
 
--   **Prisgrupper for detaljhandelskanal**– Denne siden viser en liste over kanaler og rabatter som er koblet sammen for hver prisgruppe.
--   **Katalogprisgrupper**– Denne siden viser en liste over kanaler og rabatter som er koblet sammen for hver prisgruppe.
--   **Prisgrupper for fordelsprogram**– Denne siden viser en liste over fordelsprogrammer og rabatter som er koblet sammen for hver prisgruppe.
--   **Prisgrupper for tilknytninger**– Denne siden viser en liste over tilknytninger og rabatter som er koblet sammen for hver prisgruppe.
+- **Prisgrupper for detaljhandelskanal** – Denne siden viser en liste over kanaler og rabatter som er koblet sammen for hver prisgruppe.
+- **Katalogprisgrupper** – Denne siden viser en liste over kataloger og rabatter som er koblet sammen for hver prisgruppe.
+- **Prisgrupper for fordelsprogram** – Denne siden viser en liste over fordelsprogrammer og rabatter som er koblet sammen for hver prisgruppe.
+- **Prisgrupper for tilknytninger** – Denne siden viser en liste over tilknytninger og rabatter som er koblet sammen for hver prisgruppe.
 
 ## <a name="example-channel-discount-set-up"></a>Eksempel på kanalrabattoppsett
+
 Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 
-1.  Du har for eksempel en kanal som kalles **Houston**, og du skal opprette en ny rabatt kalt **Tilbake til skolen**.
-2.  Fordi pris- og rabattstrategien inneholder muligheten for kanalrabatter, oppretter du alltid en kanalspesifikk prisgruppe når du oppretter en kanal.
-3.  Du har prisgruppen **Houston-PG**, og den er tilordnet til **Houston**-kanalen.
-4.  Når du har opprettet den nye **Tilbake til skolen**-rabatten, må du klikke **Prisgrupper** øverst på **Rabatt**-siden. **Rabattprisgrupper**-siden åpnes. Deretter klikker du **Ny** og velger **Houston-PG**-prisgruppen.
-5.  Nå kan du aktivere rabatten og overføre den til kanalen.
+1. Du har for eksempel en kanal som kalles **Houston**, og du skal opprette en ny rabatt kalt **Tilbake til skolen**.
+2. Fordi pris- og rabattstrategien inneholder muligheten for kanalrabatter, oppretter du alltid en kanalspesifikk prisgruppe når du oppretter en kanal.
+3. Du har prisgruppen **Houston-PG**, og den er tilordnet til **Houston**-kanalen.
+4. Når du har opprettet den nye **Tilbake til skolen**-rabatten, må du klikke **Prisgrupper** øverst på **Rabatt**-siden. **Rabattprisgrupper**-siden åpnes. Deretter klikker du **Ny** og velger **Houston-PG**-prisgruppen.
+5. Nå kan du aktivere rabatten og overføre den til kanalen.
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)
-
-
-
 

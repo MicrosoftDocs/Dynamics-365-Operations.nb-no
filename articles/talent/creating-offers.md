@@ -3,7 +3,7 @@ title: Opprette, godkjenne og signere tilbud
 description: Dette emnet beskriver hvordan du kan opprette, godkjenne og registrere et tilbud for en kandidat ved hjelp av Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: f6b17dca13431a9d674920833b4a44141fac0bd8
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -104,6 +104,11 @@ Det finnes flere handlinger du kan utføre før du sender tilbudet til kandidate
 -  Du kan angi en utløpsdato for tilbudet. Kandidater forventes å godta eller avvise tilbudet før utløpsdatoen.  Kandidaten sendes en påminnelse 48 timer før tilbudet utløper.
 
 -  Det kan være du vil inkludere flere dokumenter i tilbudsgodkjenningsprosessen. Du vil ha muligheten til å vise dokumenttypen som kreves.
+
+- Alternativet for e-signatur: Hvis Adobe Sign ble valgt som foretrukken e-signeringsmetode, må tilbudsopprettere koble til Adobe Sign-lisensen deres. Det er to måter å gjøre dette på. Gå til Bruker **Innstillinger** i **Tilbud**, og under **Tilkoblinger** kobler du til **Adobe Sign**. Du kan eventuelt bli bedt om å koble Send tilbud til kandidatskjermen hvis tilkoblingen ikke ble opprettet basert på brukerinnstillingene. 
+
+> [!NOTE]
+> Brukere trenger bare å koble til Adobe Sign-kontoene én gang. Den samme brukerlisensen brukes for alle fremtidige tilbudspakker som sendes ut av samme bruker. 
 
 -  Du kan vise og redigere e-postmalen etter behov.
 

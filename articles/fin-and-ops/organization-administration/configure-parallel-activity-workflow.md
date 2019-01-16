@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ Hvis du vil konfigurere en parallell aktivitet, kan du fullføre fremgangsmåten
 En parallell aktivitet består av grener i arbeidsflyten som kjører samtidig.
 
 ## <a name="name-a-parallel-activity"></a>Navngi en parallell aktivitet
+
 Følg denne fremgangsmåten for å angi et navn for en parallell aktivitet.
-1.  Høyreklikk den parallelle aktiviteten, og klikk deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.
-2.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
-3.  I feltet **Navn** angir du et unikt navn på den parallelle aktiviteten.
-4.  Klikk **Lukk**.
+
+1. Høyreklikk den parallelle aktiviteten, og klikk deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.
+2. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+3. I feltet **Navn** angir du et unikt navn på den parallelle aktiviteten.
+4. Klikk **Lukk**.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurere grenene til en parallell aktivitet
+
 Følg denne fremgangsmåten for å legge til og konfigurere grenene til denne parallelle aktiviteten.
+
 1. Dobbeltklikk den parallelle aktiviteten for å vise grenene til den parallelle aktiviteten.
-2. Hvis du vil legge til en gren, kan du dra **Gren**-elementet fra **Arbeidsflytelementer**-området til et innsettingspunkt på lerretet. Den følgende illustrasjonen viser et innsettingspunkt. ![Innsettingspunkt](./media/workflow_insertionpoint.gif)
+2. Hvis du vil legge til en gren, kan du dra **Gren**-elementet fra **Arbeidsflytelementer**-området til et innsettingspunkt på lerretet. Den følgende illustrasjonen viser et innsettingspunkt.
 
-   |                                              <strong>Obs!</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Rekkefølgen på grenene er ikke viktig fordi alle grenene til en parallell aktivitet kjøres samtidig. |
+    ![Innsettingspunkt](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Rekkefølgen på grenene er ikke viktig fordi alle grenene til en parallell aktivitet kjøres samtidig.
 
 3. Hvis du vil konfigurere hver gren, kan du se [Konfigurere en parallell gren](configure-parallel-branch-workflow.md).
-
-
-
-
-
 

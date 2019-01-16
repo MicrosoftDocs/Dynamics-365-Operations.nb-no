@@ -3,7 +3,7 @@ title: Generere rapporter om Affordable Care Act (ACA)
 description: "Funksjonalitet er tilgjengelig for å hjelpe arbeidsgivere som trenger å spore opplysningene som er rapportert på skjema 1095-B og 1095-C til støtte for Employer Mandate-delen av Affordable Care Act. Merk at denne funksjonaliteten bare er aktivert for juridiske personer i USA."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generere rapporter om Affordable Care Act (ACA)
@@ -54,7 +54,7 @@ På siden **Behandling for dekningsdato for avhengig** kan du angi datoene da de
 ## <a name="generate-1095b-and-1095c-forms"></a>Generere skjemaene 1095B og 1095C
 Du kan også generere 109-B- og 1095-C-skjemaer fra produktet, og levere dem til alle ansatte. Elektronisk generering av 1095-C og tilhørende 1094-C-overføringsfiler som kan brukes til å sende til Skattemyndighetene, kan også genereres fra systemet.  
 
-Når du genererer 1095-C-skjemaet, angir i kalenderen eller skatteåret samt om du vil skrive ut skjemaet med to sider eller skjemaer med tre sider. Skjemaet med tre sider er bare nødvendig hvis arbeidsgiveren ga selvforsikret dekning og en ansatt har mer en seks dekkede avhengig, inkludert seg selv. Når skjemaet med to sider genereres, finner systemet automatisk ut om en ansatt har mer enn 6 avhengige dekket, og vil ikke ta med den ansatte når skjemaet genereres. Når skjemaet med tre sider genereres, vil systemet dessuten bare ta med bare de ansatte som har mer enn seks avhengige dekket.
+Når du genererer skjemaet 1095-C, skriver du inn i det aktuelle skatteåret og angir om personnumre skal maskeres. Hvis du skriver ut 1095-C-skjemaer for mer enn 500 ansatte, får du mer enn én PDF-fil. Det anbefales at du øker **Maksimal filstørrelse** i **Parametere for dokumentstyring**-vinduet til 150 MB.
 
 ## <a name="viewing-information"></a>Vise informasjon
 Du kan bruke siden **Affordable Care-dekning for arbeidere** hvis du vil se hvilke ansatte som er tilordnet til hver dekningsgruppe, hvilke ansatte som ikke trenger å være med i en rapport, og hvilke ansatte som ikke er tilordnet.

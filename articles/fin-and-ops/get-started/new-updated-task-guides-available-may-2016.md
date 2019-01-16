@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/09/2018
 
 Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 
-(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Dynamics AX-versjonen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md). <strong>Obs!</strong>  En stjerne (<strong>\</strong>*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosess ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
+(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Dynamics AX-versjonen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+
+> [!NOTE]
+> En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosess ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
 
@@ -62,15 +64,15 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
-|                                  BPM-linje                                  | Land/område |
+| BPM-linje                                                                   | Land/område |
 |----------------------------------------------------------------------------|----------------|
-|                         ER Konfigurere mål                          |     Globalt     |
-|     ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format     |     Globalt     |
-| ER Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon |     Globalt     |
-|             ER Importere en konfigurasjon fra Lifecycle Services              |     Globalt     |
-|               <strong>\</strong>*ER Velge tjenesteleverandør                |     Globalt     |
-|   ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet    |     Globalt     |
-|             ER Laste opp en konfigurasjon til Lifecycle Services              |     Globalt     |
+| ER Konfigurere mål                                                  | Globalt         |
+| ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format         | Globalt         |
+| ER Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon | Globalt         |
+| ER Importere en konfigurasjon fra Lifecycle Services                          | Globalt         |
+| \*ER Velge tjenesteleverandør                                               | Globalt         |
+| ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet      | Globalt         |
+| ER Laste opp en konfigurasjon til Lifecycle Services                          | Globalt         |
 
 ### <a name="human-capital-management"></a>Forvaltning av menneskelig kapital
 
@@ -176,25 +178,21 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 
 ### <a name="warehouse-and-transportation"></a>Lager og transport
 
-|                                     BPM-linje                                     | Land/område |
-|----------------------------------------------------------------------------------|----------------|
-|                            Konfigurere bølgebehandling                             |     Globalt     |
-| <strong>\</strong>*Rapporter som ferdig til en lokasjon som ikke er kontrollert av nummerskilt. |     Globalt     |
-|                      Definere en prosess for minimums/maksimumsetterfylling                      |     Globalt     |
-|                             Konfigurer containerbruk                              |     Globalt     |
-|                              Definere manuell pakking                               |     Globalt     |
-|                  Definere transportbegrensninger for en vare                   |     Globalt     |
-|                <strong>\</strong>*Definere arbeidspolicyer for lager                 |     Globalt     |
+|                                     BPM-linje                    | Land/område |
+|-----------------------------------------------------------------|----------------|
+| Konfigurere bølgebehandling                                       | Globalt         |
+| \*Rapporter som ferdig til en lokasjon som ikke er kontrollert av nummerskilt. | Globalt         |
+| Definere en prosess for minimums/maksimumsetterfylling                          | Globalt         |
+| Konfigurer containerbruk                                         | Globalt         |
+| Definere manuell pakking                                           | Globalt         |
+| Definere transportbegrensninger for en vare                   | Globalt         |
+| \*Definere arbeidspolicyer for lager                                 | Globalt         |
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
-
-
-
 

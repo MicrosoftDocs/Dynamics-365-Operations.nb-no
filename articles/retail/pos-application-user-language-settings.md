@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 1ea4309d57a7b6b4ca4ae3fdd995c95d93c5c080
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -34,40 +34,37 @@ ms.lasthandoff: 08/09/2018
 Dette emnet beskriver hvordan du endrer språkinnstillinger i moderne salgssted for detaljhandel (MPOS) og skysalgssted.
 
 ## <a name="overview"></a>Oversikt
+
 Modern POS (MPOS) og Cloud POS for detaljhandelen støtter miljøer der innstillinger for språk og oversettelser kan variere mellom lageret og brukerinnstillinger. Butikken kan for eksempel være plassert i et område der engelsk er mest vanlig for kundene, men noen arbeidere foretrekker å bruke programmet med franske oversettelser.
 
 ## <a name="data-language"></a>Språk for data
-Uavhengig av brukerens innstillinger, vil MPOS og Cloud POS alltid bruke butikkens språkinnstillinger for å bestemme oversettelser som brukes for data. Dette sikrer at alle brukere og kunder får en ensartet opplevelse.  Eksempler på data omfatter:
 
--   Produkter
--   Attributter og verdier
--   Kategorinavn
--   Transaksjonsmottak for utskrift eller sending via e-post
--   Navn på betalingsmåte
--   Linjevisningmeldinger
+Uavhengig av brukerens innstillinger, vil MPOS og Cloud POS alltid bruke butikkens språkinnstillinger for å bestemme oversettelser som brukes for data. Dette sikrer at alle brukere og kunder får en ensartet opplevelse. Eksempler på data omfatter:
+
+- Produkter
+- Attributter og verdier
+- Kategorinavn
+- Transaksjonsmottak for utskrift eller sending via e-post
+- Navn på betalingsmåte
+- Linjevisningmeldinger
 
 Butikkens språk brukes også for POS-påloggingshovedskjermen fordi brukeren ikke er kjent før du logger på. Hvis en oversettelse ikke er tilgjengelig for butikkens språk, vil POS gå tilbake til selskapets språk.
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurere språkinnstillingene for butikken
 
-Butikkens språkinnstillinger settes fra **Alle detaljhandelsbutikker** på siden **Detaljhandel** under **Generelt &gt; Regionale innstillinger &gt; Språk. **Bruk rullegardinlisten for å velge språk for hver butikk.
+Butikkens språkinnstillinger settes fra **Alle detaljhandelsbutikker** på siden **Detaljhandel** under **Generelt &gt; Regionale innstillinger &gt; Språk**. Bruk rullegardinlisten for å velge språk for hver butikk.
 
 ## <a name="user-interface-language"></a>Språk for brukergrensesnittet
+
 POS-brukerens språkinnstilling bestemmer oversettelser som brukes i brukergrensesnittet for programmet. Dette inkluderer alle etiketter, menyer og lister som ikke anses data. Ett unntak er teksten som vises på POS-knappegrupper. Knappegruppene støtter ikke oversettelser, slik at de alltid vises teksten som er definert på-knappen. For å støtte oversatte knapper, må du kopiere og opprettholder egen knapp rutenett og tilordne dem til brukere etter behov.
 
 ### <a name="configuring-the-users-language-setting"></a>Konfigurere språkinnstillingene for brukeren
 
-Salgsstedsbrukerens språkinnstillinger settes fra **Alle arbeidere** på siden **Arbeider** under **Detaljhandel &gt; Språk**.  Den angis ikke i hovedprofilkategorien.  Denne innstillingen brukes ikke av salgssted. Hvis brukerens språk ikke er angitt eller den er satt til et språk der oversettelsene ikke er tilgjengelige, tilbakestiller Salgsstedet til butikkens språk.  
+Salgsstedsbrukerens språkinnstillinger settes fra **Alle arbeidere** på siden **Arbeider** under **Detaljhandel &gt; Språk**. Den angis ikke i hovedprofilkategorien. Denne innstillingen brukes ikke av salgssted. Hvis brukerens språk ikke er angitt eller den er satt til et språk der oversettelsene ikke er tilgjengelige, tilbakestiller Salgsstedet til butikkens språk.
 
-|             |                            |                                                                   |
-|-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Språket i Brukergrensesnittet** ** **      | **Data-språk (produkter, kvitteringsformater, linjevisning, osv.)** |
-| **Firma** | Standard                    | Standard                                                           |
-| **Butikk**   | Overstyrer firma          | Overstyrer firma                                                 |
-| **Bruker**    | Overstyrer butikk eller firma | Aldri                                                             |
-
-
-
-
-
+|             | Språket i Brukergrensesnittet                  | Data-språk (produkter, kvitteringsformater, linjevisning, osv.) |
+|-------------|----------------------------|---------------------------------------------------------------|
+| **Firma** | Standard                    | Standard                                                       |
+| **Butikk**   | Overstyrer firma          | Overstyrer firma                                             |
+| **Bruker**    | Overstyrer butikk eller firma | Aldri                                                         |
 

@@ -3,7 +3,7 @@ title: Oversikt over utligning
 description: "Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen."
 author: kweekley
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
+ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
+ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2018
 
 ---
 
@@ -52,5 +52,8 @@ Når transaksjonene er utlignet, økes eller reduseres den utestående saldoen f
 
 Hvis en [-betaling er mindre enn fakturabeløpet](../accounts-payable/vendor-payments-partial-amount.md) på grunn av en kontantrabatt, avskrivning eller underbetaling, kan fakturaen og betalingen fortsatt lukkes, avhengig av oppsettet for utligning i leverandørparametere og kundeparametere. Utligning kan også generere transaksjoner. Utligningen av en faktura og betaling kan for eksempel gi en kontantrabatt, realisert fortjeneste eller tap, mva-justeringer, avskrivninger eller øredifferanser.
 
+
+## <a name="additional-resources"></a>Tilleggsressurser
+- [Utlign rest](settle-remainder.md)
 
 

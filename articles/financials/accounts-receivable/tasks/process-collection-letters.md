@@ -3,69 +3,82 @@ title: Behandle purrebrev
 description: Denne prosedyren viser hvordan du oppretter, skriver ut og posterer purringer.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 12/04/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CustPosting, SysQueryForm, CustCollectionLetterNote
+ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.search.validFrom: 2018-12-01
+ms.dyn365.ops.version: 8.1.3
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dc837ea6513992a5f94e48baa366e279df297866
+ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
+ms.openlocfilehash: 33d9fd62a780ab109474eefa9e322a9c529f9e72
 ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 12/06/2018
 
 ---
 # <a name="process-collection-letters"></a>Behandle purrebrev
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
 
 Denne prosedyren viser hvordan du oppretter, skriver ut og posterer purringer. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
-
 ## <a name="set-up-a-collection-letter-sequence-on-the-posting-profile"></a>Angi et purreforløp på posteringsprofilen
-1. Gå til Kreditt og innkreving > Oppsett > Kundeposteringsprofiler.
-2. Klikk Rediger.
-    * Velg et purreforløp fra rullegardinlisten. Hvis du ikke vil generere purringer for transaksjoner ved hjelp av denne posteringsprofilen, lar du feltet stå tomt.  
-    * I fanen Tabellrestriksjoner kan du endre måten purringer behandles på. Hvis dette feltet er satt til Ja, opprettes purringer for denne posteringsprofilen.  
-3. Lukk siden.
+1. Gå til **Kreditt og innkreving > Oppsett > Kundeposteringsprofiler**.
+2. Klikk **Rediger**.
+3. Velg et purreforløp fra rullegardinlisten. Hvis du ikke vil generere purringer for transaksjoner ved hjelp av denne posteringsprofilen, lar du feltet stå tomt.  
+4. Utvid fanen Tabellrestriksjoner for å endre måten purringer behandles på. Hvis dette feltet er satt til **Ja**, opprettes purringer for denne posteringsprofilen.  
 
 ## <a name="create-collection-letters"></a>Opprett purringer
-1. Gå til Kreditt og innkreving > Purring > Opprett purringer.
-    * Du må velge transaksjonstypene for purringene. Alle åpne transaksjoner for disse typene inkluderes i beregningen.  
-2. Velg et alternativ for Purring-feltet.
+1. Gå til **Kreditt og innkreving > Purring > Opprett purringer**.
+2. Velg transaksjonstypene for purringene. Alle åpne transaksjoner for disse typene inkluderes i beregningen.  
+2. Velg et alternativ for **Purring**-feltet.
 3. Angi datoen på purringen.
-    * Det er to alternativer for posteringsprofil: Konto – bruk posteringsprofilen som er tilordnet kundekontoen for hver rentenota.   Velg – Bruk posteringsprofilen som du velger i Posteringsprofil-feltet.  
-    * Velg en posteringsprofil hvis du har endret Bruk posteringsprofil fra til Velg.  
-4. Utvid delen Poster som skal inkluderes.
-5. Klikk Filter.
-6. Angi en kunde-ID i Kriterier-feltet. Skriv for eksempel inn USA-001.
-7. Klikk OK.
-8. Klikk OK.
+4. Velg en posteringsprofil hvis du har endret **Bruk posteringsprofil fra** til **Velg**. Det finnes to alternativer for posteringsprofil:   
+   - **Konto** – Bruk posteringsprofilen som er tilordnet kundekontoen for hver rentenota.   
+   - **Velg** – Bruk posteringsprofilen som du velger i **Posteringsprofil**-feltet.  
+5. Utvid delen **Poster som skal inkluderes**.
+6. Klikk **Filter**.
+7. Angi en kunde-ID i **Kriterier**-feltet. Skriv for eksempel inn US-001.
+8. Klikk **OK**.
+9. Klikk **OK**.
 
 ## <a name="print-collection-letters"></a>Skrive ut purringer
-1. Gå til Kreditt og innkreving > Purring > Gjennomgå og behandle purrebrev.
-2. Velg Opprettet i Status-feltet.
-3. Velg Ikke skrevet ut i feltet Utskrevet.
-4. Klikk Skriv ut.
-5. Klikk Purrenota.
-6. Utvid delen Poster som skal inkluderes.
-7. Angi fristen for posteringer
-8. Klikk OK for å skrive ut den valgte purringen.
+1. Gå til **Kreditt og innkreving > Purring > Gjennomgå og behandle purrebrev**.
+2. Velg **Opprettet** i **Status**-feltet.
+3. Velg **Ikke skrevet ut** i feltet **Utskrevet**.
+4. Klikk **Skriv ut**.
+5. Klikk **Purrenota**.
+6. Utvid delen **Poster som skal inkluderes**.
+7. Angi fristen for posteringer.
+8. Klikk **OK** for å skrive ut den valgte purringen.
+9. Poster purringen.
+   1. Klikk **Poster**.
+   2. Angi posteringsdatoen for purringen.
+   3. Utvid delen **Poster som skal inkluderes**.
+   4. Klikk **OK**.
+   5. Velg **Postert** i **Status**-feltet.
+   6. Velg et alternativ i feltet **Utskrevet**.
 
-## <a name="post-the-collection-letter"></a>Postere purringen
-1. Klikk Poster.
-2. Angi posteringsdatoen for purringen.
-3. Utvid delen Poster som skal inkluderes.
-4. Klikk OK.
-5. Velg Postert i Status-feltet.
-6. Velg et alternativ i feltet Utskrevet.
+## <a name="control-collection-letters-at-the-customer-level"></a>Kontrollere purringer på kundenivå
+Du kan også definere purringer på kundenivået slik at purrekoden for hver transaksjon spores, men behandlingen av purringer baseres på ett purrenivå som lagres for kunden. Enkeltpurringen vil inneholde alle transaksjoner som er forfalt for kunden. Fordi respittdagene nå spores på kundenivået, sendes ikke den neste purringen før antallet respittdager har gått for neste purring i sekvensen, selv om transaksjoner forfaller etter den siste purringen ble sendt. Dette alternativet reduserer antall purringer som sendes per kunde. 
 
+### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Definere kunden for å kontrollere purringer på kundenivå
+1.  Gå til **Kreditt og innkreving > Oppsett > Kundeparametere**, og klikk på **Innkrevinger**-kategorien. 
+2.  Endre verdien for **Opprett en purring per** til **Kunde**. 
+3.  Gå til **Kreditt og innkreving > Purring > Gjennomgå og behandle purrebrev**. Bare én purring genereres for en kunde med alle forfalte transaksjoner.
+
+## <a name="ignore-payments-and-credit-memos-when-calculating-the-collection-letter-code"></a>Ignorere betalinger og kreditnotaer ved beregning av purrekoden
+Hvis du tar med betalinger og kreditnotaer i transaksjonene som skal inkluderes i purringene, har du kanskje betalinger eller kreditnotaer som skal utløse en purring. Du kan styre hvordan betalinger og kreditnotaer kontrollerer purrekoden ved å endre verdien for parameteren **Ignorer betalinger og kreditnotaer for beregning av purrekode**. 
+
+Når du skal ignorere betalinger og kreditnotaer ved beregning av purrekoden, gjør du følgende:
+1. Gå til **Kreditt og innkreving > Oppsett > Kundeparametere**, og klikk på **Innkrevinger**-kategorien. 
+2. Ende verdien for **Ignorer betalinger og kreditnotaer for beregning av purrekode** til **Ja**.
 

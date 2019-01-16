@@ -3,7 +3,7 @@ title: Aktiviteter i prosessene
 description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Intervjuaktiviteten er valgfri. Denne aktiviteten har tre komponenter: kandidatt
 - Hvis du vil sende e-post til kandidater for å spørre om de er tilgjengelige, kan du angi alternativet **Spør om kandidattilgjengelighet** til **På**. Hvis du setter alternativet til **Av**, vises ikke dette trinnet i ansettelsesprosessen for jobben.
 - Hvis du vil ha en live-stream eller en telefonkonferanse ved hjelp av Skype for Business, setter du **Nettmøte**-feltet til **Skype for Business**. Den riktige **Bli med i Skype-møte**-koblingen legges deretter til i møteinnkallelsen.
 - Hvis du vil sende e-post til kandidater for å fullføre tidsplanen, angir du alternativet **Send e-post til kandidat** til **På**. Hvis du setter alternativet til **Av**, vil kandidater få intervjuplanen først når de logger på kandidatportalen.
+
+>[!NOTE]
+> - For alle 1:1-intervjuer sendes påminnelser til intervjuerne hvert døgn hvis intervjueren ikke har svart (godtatt eller avslått) på intervjuforespørselen.
+> - For alle panelintervjuer finnes det ingen automatiske påminnelser for å svare på intervjuforespørselen. Hvis du vil utløse en påminnelse manuelt, redigerer du intervjuet og bruker **Oppdater og send**-alternativet for å sende forespørselen tilbake til intervjuerne.
 
 Komponenten tilbakemelding lar folk angi anbefalinger for en søker. De kan også angi eventuelle tilbakemeldinger de har. Hvis du aktiverer alternativet **Arv tilbakemeldingsdeltakere fra ansettelsesteam**, angis rekrutterer, ansettelsesansvarlig og intervjuere automatisk i tilbakemeldingskomponenten. Organisasjoner kan la intervjuere vise tilbakemeldingen fra andre før de sender sine egen tilbakemelding. Organisasjoner kan også la intervjuerne redigere tilbakemeldingen etter at de har sendt den.
 

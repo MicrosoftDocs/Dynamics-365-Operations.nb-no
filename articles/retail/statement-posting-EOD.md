@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Som en del av forbedringene for funksjonen for utdragspostering har tre nye para
 
 I tillegg er feltet **Maksimalt antall parallell kontoutdragspostering** lagt til på hurtigfanen **Satsvis behandling**. Dette feltet angir hvor mange satsvise oppgaver som skal kjøres samtidig. For øyeblikket, må du manuelt angi verdien i dette feltet.
 
-Med den nye posteringsprosessen må du definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Detaljhandelsparametere**. Dette gjelder selv om ingen gavekort brukes av organisasjonen. 
+Med den nye posteringsprosessen må du definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Detaljhandelsparametere**. Dette gjelder selv om ingen gavekort brukes av organisasjonen.
 
 Legg merke til at alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert på detaljhandel og på siden **Detaljhandelsparametere**, gjelder for den forbedrede funksjonen for utdragspostering.
 
 ## <a name="processing"></a>Behandling
+
 Utdrag kan beregnes og posteres satsvis ved hjelp av menyelementene **Beregn utdrag satsvis** og **Poster utdrag satsvis**. Eventuelt utdrag kan manuelt beregnes og posteres ved hjelp av **Detaljhandelsutdrag**, som er tilgjengelig via den forbedrede funksjonen for utdragspostering.
 
 Prosessen og fremgangsmåten for beregning og postering av utdrag satsvis er de samme som de var i den eldre funksjonen for utdragspostering. Imidlertid er betydelige forbedringer gjort i kjernebakgrunnsbehandlingen av utdragene. Disse forbedringene gjør prosessen mer fleksibel og gir bedre oversikt over tilstander og feilinformasjon. Brukere kan derfor løse den opprinnelige årsaken til feil og deretter fortsette posteringsprosessen uten å forårsake datafeil og uten at det er nødvendig med datareparasjoner.
@@ -71,6 +72,7 @@ Prosessen og fremgangsmåten for beregning og postering av utdrag satsvis er de 
 Delene nedenfor beskriver noen av de store forbedringene for utdragspostering som vises i brukergrensesnittet for detaljhandelutdrag og posterte utdrag.
 
 ### <a name="status-details"></a>Statusdetaljer
+
 En ny statusmodell er introdusert i utdragsposteringsrutinen over beregnings- og posteringsprosessene.
 
 Tabellen nedenfor beskriver de forskjellige statusene og rekkefølgen deres i løpet av beregningsprosessen.
@@ -109,9 +111,11 @@ Hver tilstand i tabellene ovenfor er uavhengig av natur, og en hierarkisk avheng
 Hodet i den andre og tredje delen viser også den overordnede statusen for den aktuelle prosessen.
 
 ### <a name="event-logs"></a>Hendelseslogger
+
 Et utdrag går gjennom ulike operasjoner (for eksempel, Opprett, Beregn, Slett og Poster), og flere forekomster av den samme operasjonen kan kalles under livssyklusen for utdraget. Når et utdrag opprettes og beregnes, kan en bruker for eksempel fjerne utdraget og beregne det på nytt. **Hendelseslogger**-knappen i gruppen **Utførelsesdetaljer** av utdraget gir en fullstendig revisjonssporing for de ulike operasjonene som ble kalt på et utdrag, sammen med informasjon om når disse operasjonene ble kalt.
 
 ### <a name="aggregated-transactions"></a>Aggregerte transaksjoner
+
 Under posteringsprosessen samles salgstransaksjonene basert på konfigurasjonen. Disse samlede transaksjonene lagres i systemet og brukes til å opprette salgsordrer. Hver samlet transaksjon oppretter én tilsvarende salgsordre i systemet. Du kan vise de samlede transaksjonene ved hjelp av **Aggregerte transaksjoner**-knappen i gruppen **Utførelsesdetaljer** av utdraget.
 
 Kategorien **Salgsordredetaljer** for en aggregert transaksjon viser følgende informasjon:
@@ -136,11 +140,13 @@ Visningen av aggregerte transaksjoner gir følgende fordeler:
 - Den aggregerte XML-filen gjør det enklere å identifisere problemer under oppretting av salgsordre og fakturering.
 
 ### <a name="journal-vouchers"></a>Journalbilag
+
 **Journalbilag**-knappen i gruppen **Utførelsesdetaljer** i utdraget viser alle de ulike bilagstransaksjonene som er opprettet for et utdrag, og som er knyttet til rabatter, inntekts-/ utgiftskontoer, gavekort og så videre.
 
 For øyeblikket vises disse dataene bare for posterte utdrag.
 
 ### <a name="payment-journals"></a>Betalingsjournaler
+
 **Betalingsjournaler**-knappen i gruppen **Utførelsesdetaljer** i utdraget viser alle de ulike betalingsjournalene som er opprettet for et utdrag.
 
 For øyeblikket vises disse dataene bare for posterte utdrag.
