@@ -34,42 +34,46 @@ Dette emnet beskriver de ulike elementene som utgjør en arbeidsflyt.
 En arbeidsflyt består av elementer. Delene nedenfor beskriver hver elementtype.
 
 ## <a name="tasks"></a>Oppgaver
+
 En *oppgave* er en arbeidsenhet som må utføres. To typer oppgaver kan legges til en arbeidsflyt: manuelle og automatiserte oppgaver.
 
 ### <a name="manual-task"></a>Manuell oppgave
 
 En *manuell oppgave* er en arbeidsenhet som må utføres av en bruker. En arbeidsflyt for reiseregningsrapport kan for eksempel ha manuelle oppgaver som krever at den tilordnede brukeren utfører følgende handlinger:
 
--   Se gjennom kvitteringene som sendes sammen med en reiseregning.
--   Ring en ansatts leder.
+- Se gjennom kvitteringene som sendes sammen med en reiseregning.
+- Ring en ansatts leder.
 
 ### <a name="automated-task"></a>Automatisert oppgave
 
 En *automatisert oppgave* er en arbeidsenhet som må utføres av systemet. Ingen brukerhandling er nødvendig. En arbeidsflyt for reiseregningsrapport kan for eksempel ha automatiserte oppgaver som krever at systemet utfører følgende handlinger:
 
--   Utfør en kredittsjekk.
--   Opprett en kundepost for kunden hvis en post ikke allerede finnes.
+- Utfør en kredittsjekk.
+- Opprett en kundepost for kunden hvis en post ikke allerede finnes.
 
 ## <a name="approval-processes"></a>Godkjenningsprosesser
+
 En *godkjenningsprosess* er en prosess som består av separate trinn. I hvert godkjenningstrinn, kan brukeren utføre følgende handlinger:
 
--   Godkjenne dokumentet
--   Avvise dokumentet
--   Be om en endring i dokumentet
--   Tilordne dokumentet til en annen bruker for godkjenning
+- Godkjenne dokumentet
+- Avvise dokumentet
+- Be om en endring i dokumentet
+- Tilordne dokumentet til en annen bruker for godkjenning
 
 ## <a name="line-item-workflow-elements"></a>Elementer for arbeidsflyt for linjeelementer
+
 Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som *dokumentarbeidsflyten*.) Du kan legge til et *arbeidsflyt for linjeelementer*-elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen.
 
-![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif) 
+![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif)
 
 I dette scenariet vil du kanskje opprette følgende arbeidsflyter for linjeelementer:
 
--   **Arbeidsflyt for linjeelement 1** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 1111.
--   **Arbeidsflyt for linjeelement 2** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 2222.
--   **Arbeidsflyt for linjeelement 3** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 3333.
+- **Arbeidsflyt for linjeelement 1** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 1111.
+- **Arbeidsflyt for linjeelement 2** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 2222.
+- **Arbeidsflyt for linjeelement 3** – Denne arbeidsflyten brukes til å behandle linjeelementer der prosjekt-IDen er 3333.
 
 ## <a name="flow-control-elements"></a>Flytkontrollelementer
+
 Følgende elementer lar deg utforme arbeidsflyter som har alternative grener eller grener som kjøres samtidig.
 
 ### <a name="manual-decision"></a>Manuell beslutning
@@ -87,7 +91,4 @@ En *parallellaktivitet* er et arbeidsflytelement som omfatter to eller flere arb
 ### <a name="subworkflow"></a>Underarbeidsflyt
 
 En *underarbeidsflyt* er en arbeidsflyt som kjøres i en annen arbeidsflyt.
-
-
-
 

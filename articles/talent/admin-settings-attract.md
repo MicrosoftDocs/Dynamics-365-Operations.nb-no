@@ -3,7 +3,7 @@ title: Administratorinnstillinger i Attract
 description: Dette emnet forklarer hvordan du aktiverer funksjonalitet for organisasjoner og brukere i Attract.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 52b48d5daab985c43d59f29ad7b80dda99a7fcef
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -37,7 +37,7 @@ Angi et visningsnavn for firmaet, og legg til en firmalogo. Visningsnavnet og lo
 
 ## <a name="linkedin-integration"></a>LinkedIn-integrering
 
-Konfigurer integrasjonen med tilkobling til rekrutteringssystemet for LinkedIn (RSC). Når du kobler til LinkedIn med påloggingsinformasjonen for LinkedIn, kan du synkronisere en kandidats LinkedIn-profil, søknader, intervjutilbakemelding og merknader fra ansettelsesteam. Det kreves en full LinkedIn-rekrutterer-lisens. Hvis du vil ha mer informasjon om RSC, se [Tilkobling til rekrutterersystem (RSC) – vanlige spørsmål](https://www.linkedin.com/help/recruiter/answer/90483).
+Konfigurer integrasjonen med tilkobling til rekrutteringssystemet for LinkedIn (RSC). Når du kobler til LinkedIn med påloggingsinformasjonen for LinkedIn, kan du synkronisere en kandidats LinkedIn-profil, søknader, intervjutilbakemelding og merknader fra ansettelsesteam. Det kreves en full LinkedIn-rekrutterer-lisens. Hvis du vil ha mer informasjon om LinkedIn Recruiter, se [Tilkobling til rekrutterersystem (RSC) – vanlige spørsmål](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Brukerrettigheter
 

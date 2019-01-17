@@ -32,6 +32,7 @@ ms.lasthandoff: 08/09/2018
 Dette emnet gir informasjon om prosessen for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
 
 ## <a name="terminology"></a>Terminologi
+
 Følgende termer brukes i dette emnet.
 
 | Semester | Definisjonen, bruk og merknader |
@@ -42,6 +43,7 @@ Følgende termer brukes i dette emnet.
 | Beste pris | Når mer enn én pris eller rabatt kan brukes på et produkt, det minste prisbeløpet og/eller det største rabattbeløpet som gir lavest mulig nettobeløpet som kunden må betale. I dette emnet kalles begrepet beste pris alltid "beste pris." Den beste prisen er forskjellig fra, og bør ikke forveksles med **Beste pris**-opplistingsverdien for en rabatts samtidighetsmodus. |
 
 ## <a name="price-groups"></a>Prisgrupper
+
 Prisgrupper er kjernen i pris- og rabattstyring i Detaljhandel. Prisgrupper brukes til å tilordne priser og rabatter til detaljhandelsenheter (dvs. kanaler, kataloger og fordelsprogrammer). Siden prisgrupper brukes for all prissetting og alle rabatter, er det svært viktig at du planlegger hvordan du skal bruke dem før du begynner.
 
 En prisgruppe er bare et navn, en beskrivelse, og eventuelt en prissettingsprioritet. Det viktigste å huske om prisgrupper er at de brukes til å behandle mange-til-mange-relasjoner som rabatter og priser har med detaljhandelsenheter.
@@ -57,17 +59,20 @@ Som den røde stiplede linjen i illustrasjonen viser, støtter Retail hovedfunks
 De følgende delene gir mer informasjon om detaljhandelsenhetene som du kan bruke til å angi ulike priser når prisgruppene brukes. Konfigurasjonen av priser og rabatter for alle disse enhetene gjøres i to trinn. Denne fremgangsmåten kan utføres i begge rekkefølger. Den logiske rekkefølgen er imidlertid å definere prisgruppene på enhetene først, fordi dette er sannsynligvis et engangs oppsett som utføres under implementering. Deretter, når priser og rabatter opprettes, kan du angi prisgruppene på disse prisene og rabattene individuelt.
 
 ### <a name="channels"></a>Kanaler
+
 I detaljhandelen er det svært vanlig å ha ulike priser i forskjellige kanaler. To primære faktorer som påvirker kanalspesifikke priser, er kostnader og lokale markedsforhold.
 
 - **Kostnader** – Jo lengre unna en kanal er fra produktkilden, jo mer det koster det å lagre et produkt. Ferskvare har for eksempel en begrenset holdbarhet og bestemte produksjonskrav (for eksempel en vekstsesong). Om vinteren koster fersk salat sannsynlig mer i nordlige klimaer enn i sørlige klimaer. Hvis du angir priser for kanaler over et stort geografisk område, vil du sannsynligvis angi ulike priser i forskjellige kanaler.
 - **Lokale markedsforhold** – en butikk som har en direkte konkurrent rett over gaten, vil være mye mer prisbevisst enn en butikk som ikke har en direkte konkurrent i nærheten.
- 
+
 ### <a name="affiliations"></a>Tilknytninger
+
 Den generelle definisjonen av en tilknytning er en kobling til eller tilknytning til en gruppe. I Retail er tilknytninger grupper av kunder. Tilknytninger er et mye mer fleksibelt verktøy for prissetting og rabatter enn kjernekonseptet for kunde- og rabattgrupper i Microsoft Dynamics 365. Først kan en tilknytning brukes for både priser og rabatter, mens prissetting for ikke-detaljhandel har en annen gruppe for hver type rabatt og pris. Deretter kan en kunde tilhøre flere tilknytninger, men kan bare tilhøre én prisgruppe som ikke gjelder for detaljhandel, for hver type. Til slutt, selv om tilknytninger kan settes opp slik at de er koblet til en kunde, trenger de ikke det. En ad hoc-tilknytning kan brukes for anonyme kunder på salgsstedet. Et typisk eksempel på en anonym tilknytningsrabatt er senior- eller studentrabatt, der en kunde kan motta en rabatt bare ved vise et kort for gruppemedlemskap.
 
 Selv om tilknytninger oftest er tilknyttet rabatter, kan du også bruke dem til å angi differensiell prising. Når en forhandler selger til en ansatt, kan det for eksempel hende at du vil endre salgsprisen i stedet for å bruke en rabatt på toppen av den vanlige prisen. Som et annet eksempel kan en forhandler som selger til både forbrukerkunder og bedriftskunder, tilby bedriftskunder bedre priser, basert på deres innkjøpsvolum. Tilknytninger muliggjør begge disse scenariene.
 
 ### <a name="loyalty-programs"></a>Fordelsprogrammer
+
 Fordelsprogrammer er vanligvis bare en tilknytning som har et eget navn i forhold til priser og rabatter. Både priser og rabatter kan angis for et fordelsprogram, på samme måte som de kan angis for en tilknytning. Hvordan kunder mottar fordelspriser under en transaksjon eller en ordre, er imidlertid forskjellig fra hvordan de får tilknytningsprising. Kunder kan bare få fordelspriser hvis et fordelskort legges til en transaksjon. Når et fordelskort er lagt til en transaksjon, legges også fordelsprogrammet til. Fordelsprogrammet gir deretter spesialpriser og -rabatter.
 
 Fordelsprogrammer kan ha flere nivåer, og rabattene kan være forskjellig for ulike lag. På denne måten kan forhandlere gi hyppige kunder større fordeler uten å plassere disse kundene manuelt i en spesialgruppe.
@@ -75,14 +80,17 @@ Fordelsprogrammer kan ha flere nivåer, og rabattene kan være forskjellig for u
 Fordelsprogrammer har flere funksjoner enn priser og rabatter. Når det gjelder prissetting og rabatter, er de imidlertid det samme som tilknytninger.
 
 ### <a name="catalogs"></a>Kataloger
+
 Noen forhandlerne bruker fysiske eller virtuelle kataloger til å markedsføre produkter til, og prise dem for, fokuserte grupper av kunder. Som en del av sin forretningsmodell for å målrette markedsføring via en katalog, kan disse forhandlerne definere differensielle priser på de ulike katalogene. Microsoft Dynamics 365 støtter denne funksjonen ved at du kan definere katalogspesifikke rabatter og priser, på samme måte som du kan definere kanalspesifikke eller tilknytningsspesifikke rabatter. Når du redigerer en katalog, kan du knytte prisgrupper til katalogen, på samme måte som du kan knytte dem til en kanal, tilknytning eller fordelsprogrammet.
 
 ### <a name="best-practices-for-price-groups"></a>Gode fremgangsmåter for prisgrupper
+
 Ikke bruk en prisgruppe for flere enhetstyper for detaljhandel. I stedet bruker du ett sett med prisgrupper for kanaler, et annet sett med prisgrupper for tilknytninger eller fordelsprogrammer, og så videre. Du kan bruke et prefiks eller suffiks i navnet på prisgruppen for å gruppere forskjellige typer prisgrupper du bruker, visuelt.
 
 Unngå å definere prisgrupper direkte for en kunde. I stedet bruker du en tilknytning. På denne måten kan du tilordne alle typer priser og rabatter til kunder, ikke bare salgsprisforretningsavtaler.
 
 ## <a name="pricing-priority"></a>Prisingsprioritet
+
 En prisingsprioritet alene er bare et tall og en beskrivelse. Prisingsprioriteter kan brukes på prisgrupper, eller de kan brukes direkte på rabatter. Når prisingsprioriteter blir brukt, kan en forhandler overstyre prinsippet om beste pris ved å kontrollere rekkefølgen som priser og rabatter brukes i for produkter. Et større nummer for prisingsprioritet evalueres før et lavere nummer for prisingsprioritet. I tillegg, hvis det finnes en pris eller rabatt med et hvilket som helst prioritetsnummer, ignoreres alle priser eller rabatter som har lavere prioritetstall.
 
 Pris og rabatt kan komme fra to forskjellige prisingsprioriteter fordi prisingsprioriteter gjelder uavhengig for priser og rabatter.
@@ -96,6 +104,7 @@ Som beskrevet i delen "Beste pris" i dette emnet, velger prissettingsmotoren for
 Med funksjonen for prisingsprioritet kan forhandleren imidlertid opprette en prisingsprioritet for butikkpriser som er høyere enn prisingsprioriteten for regionale priser. Forhandleren kan eventuelt opprette en prisingsprioritet bare for butikkpriser og holde regionale priser på standard prisingsprioritet, som er 0 (null). Begge oppsettene bidrar til å sikre at butikkpriser alltid brukes før regionale priser.
 
 ### <a name="pricing-priority-example"></a>Eksempel på prisingsprioritet
+
 La oss se på et eksempel, der butikkpriser overstyrer andre priser.
 
 En nasjonal forhandler fastsetter de fleste priser per område, og det har fire områder: Nord-øst, Sør-øst, Midt-vest og Vest. Det har identifisert flere høykostnadsmarkeder som støtter høyere priser. Disse markedene er i New York City, Chicago og San Francisco Bay-området.
@@ -117,6 +126,7 @@ T-skjorten selger til samme pris (det vil si USD 15) i både Boston- og Manhatta
 > For hver prisingsprioritet kreves en full gjennomgang av logikken for prissettingsmotoren for detaljhandel. For å opprettholde ytelsen til pris- og rabattberegningen, bør du derfor bruke prisingsprioriteter forsiktig.
 
 ## <a name="types-of-prices"></a>Typer priser
+
 I Microsoft Dynamics 365 kan du angi prisen på et produkt på tre steder:
 
 - Direkte på produktet (basisprisen)
@@ -126,7 +136,9 @@ I Microsoft Dynamics 365 kan du angi prisen på et produkt på tre steder:
 Basisprisen og forretningsavtaleprisen er en del av kjernen i Microsoft Dynamics 365, og er tilgjengelige selv om du ikke bruker Retail. Funksjonen for prisjustering er bare tilgjengelig i Retail. Neste del inneholder mer informasjon om hvert av disse alternativene for å angi priser, og forklarer hvordan alternativene fungerer sammen.
 
 ## <a name="setting-prices"></a>Angi priser
+
 ### <a name="base-price"></a>Basispris
+
 Det er enklest å definere prisen for en vare direkte i produktet. Verdien du angir direkte på et produkt, kalles ofte basisprisen for produktet. Du angir basisprisen i **Pris**-feltet i **Selg**-kategorien på siden **Detaljer om frigitt produkt**. Verdien du angir, er i firmavaluta. Som standard er prisen for et antall på 1 for måleenheten som er angitt i **Enhet**-feltet i **Selg**-kategorien. Den faktiske prisen per enhet av et produkt er basert på måleenheten, prisantallet og valutaen.
 
 Hvis et produkt har én pris for alle, tilbyr basisprisen den mest effektive måten å behandle prisen på produktet på. Selv om du bruker forretningsavtaler til å angi priser, kan du også angi basisprisen på et produkt. Hvis du ikke bruker en forretningsavtale av typen **Alle**, har du en tilbakefallspris som brukes når ingen forretningsavtale gjelder.
@@ -136,9 +148,10 @@ Hvis valutaene for en detaljhandelkanal er forskjellig fra firmaets valuta, best
 Selv om prisenheten ikke er et vanlig scenario for detaljhandel, støtter prissettingsmotoren for detaljhandel den. Hvis prisenheten er satt til en annen verdi enn **0** (null), er prisen per enhet lik pris ÷ prisenhet. Hvis et produkt for eksempel er USD 10,00 og prisenheten er 50, er prisen for et antall på 1 USD 0,20 (= USD 10,00 ÷ 50).
 
 ### <a name="sales-price-trade-agreement"></a>Forretningsavtale for salgspris
+
 Ved å bruke journal for forretningsavtaler kan du opprette forretningsavtaler for salgspris for hvert produkt. I Microsoft Dynamics 365 finnes det tre kundeområder for forretningsavtaler for salgspris: **Tabell**, **Gruppe** og **Alle**. Kundeområdet avgjør hvilke kunder en bestemt salgsprisforretningsavtale gjelder for.
 
-En salgsprisforretningsavtale av typen **Tabell** er for en enkelt kunde som er angitt direkte i forretningsavtalen. Denne situasjonen er ikke et vanlig firma-til-kunde (B2C)-scenario. Men hvis det oppstår, bruker prissettingsmotoren for detaljhandel **Tabell**-forretningsavtaler når den fastsetter prisen. 
+En salgsprisforretningsavtale av typen **Tabell** er for en enkelt kunde som er angitt direkte i forretningsavtalen. Denne situasjonen er ikke et vanlig firma-til-kunde (B2C)-scenario. Men hvis det oppstår, bruker prissettingsmotoren for detaljhandel **Tabell**-forretningsavtaler når den fastsetter prisen.
 
 En salgsprisforretningsavtale av typen **Gruppe** er typen som brukes oftest med detaljhandelsfunksjonalitet. Utenfor Retail er salgsprisforretningsavtaler av typen **Gruppe** for en enkelt kundegruppe. I Retail er imidlertid begrepet for en kundegruppe utvidet slik at det er en mer generell prisgruppe for detaljhandel. En prisgruppe kan kobles til en kanal for detaljhandel, tilknytning, fordelsprogram eller katalog. Hvis du vil ha detaljert informasjon om prisgrupper, kan du se delen "Prisgrupper" tidligere i dette emnet.
 
@@ -146,7 +159,8 @@ En salgsprisforretningsavtale av typen **Gruppe** er typen som brukes oftest med
 > En forretningsavtalepris brukes alltid før basisprisen.
 
 ### <a name="price-adjustment"></a>Prisjustering
-Som navnet tilsier, brukes en prisjustering til å endre prisen som enten ble satt direkte på produktet eller ved hjelp av en forretningsavtale. En prisjustering kan bare brukes til å redusere prisen, ikke heve den. En prisjustering er den anbefalte metoden for forhandler å opprette, spore og administrere prisavslag for sine produkter over tid. 
+
+Som navnet tilsier, brukes en prisjustering til å endre prisen som enten ble satt direkte på produktet eller ved hjelp av en forretningsavtale. En prisjustering kan bare brukes til å redusere prisen, ikke heve den. En prisjustering er den anbefalte metoden for forhandler å opprette, spore og administrere prisavslag for sine produkter over tid.
 
 Det finnes tre typer prisjusteringer: prosent rabatt, beløp rabatt av og pris. En prisjustering for typen prosent rabatt eller beløp rabatt brukes alltid på en salgstransaksjon. En prisjustering av pristypen brukes imidlertid bare hvis den justerte prisen er mindre enn prisen som ble angitt ved hjelp av basisprisen eller forretningsavtaleprisen. Hvis prisen som er angitt i en prisjustering, er større enn den ujusterte prisen, brukes derfor ikke prisjusteringen.
 
@@ -158,13 +172,14 @@ Det eneste unntaket til prinsippet med å finne den beste prisen for kunden er e
 
 Prissettingsmotoren for detaljhandel returnerer tre priser for hvert produkt: basisprisen, forretningsavtaleprisen og den aktive prisen.
 
-Basisprisen er bare egenskapen for produktet og er den samme for alle overalt. 
+Basisprisen er bare egenskapen for produktet og er den samme for alle overalt.
 
 Hvis alternativet **Finn neste** er satt til **Ja** i salgsprisforretningsavtalen, brukes den laveste prisen som blir funnet for gjeldende salgsprisforretningsavtaler, som forretningsavtaleprisen. Du finner forretningsavtaler ved å bruke prisgrupper eller **ALLE**-kontokoden. Forretningsavtalene kan også tilordnes direkte til en kunde. Hvis alternativet **Finn neste** er satt til **Ingen**, brukes den første forretningsavtaleprisen som blir funnet. Hvis ingen salgsprisforretningsavtaler blir funnet, settes forretningsavtaleprisen lik basisprisen.
 
 Den aktive prisen beregnes ved å ta forretningsavtaleprisen og bruke den største prisjusteringen som gjelder for produktet. Hvis ingen prisjusteringer blir funnet, eller hvis den beregnede aktive prisen er større enn forretningsavtaleprisen, settes den aktive prisen lik forretningsavtaleprisen. Husk at du ikke kan øke prisen på et produkt ved hjelp av en prisjustering. Du finner de aktuelle prisjusteringene bare ved å bruke prisgrupper som er tilordnet til en kanal, katalog, tilknytning eller fordelskortprogrammet.
 
 ## <a name="category-price-rules"></a>Kategoriprisregler
+
 Kategoriprisregler-funksjonen i Retail gir deg en enkel måte å opprette nye forretningsavtaler for alle produktene i en kategori. Med denne funksjonen kan du også automatisk finne eksisterende forretningsavtaler for produkter i kategorien, og la dem utløpe.
 
 Når du velger alternativet for å la eksisterende forretningsavtaler utløpe, oppretter systemet en ny forretningsavtalejournal for produkter i kategorien som har en aktiv forretningsavtale. Journalen må imidlertid posteres manuelt. Kategoriprisreglene kan bare finne eksisterende forretningsavtaler hvis du vil bruke den samme prisregelen (det vil si hvis du oppretter en ny prisregel som bruker den samme kategorien som var før). Hvis du ikke bruker den samme prisregelen, vil ikke de eksisterende forretningsavtalene bli utløpt.
@@ -186,6 +201,7 @@ Prisene kan økes eller reduseres ved hjelp av feltene **Prisregel** og **Prisgr
 Du kan bruke de ekstra produktkategoriene sammen med kategoriprisreglene for enkelt å oppdatere priser for forskjellige produkter fra ulike produktkategorier.
 
 ## <a name="best-practices"></a>Anbefalte fremgangsmåter
+
 Microsoft SQL Server Express brukes ofte til kanaldatabaser på grunn av kostnaden (gratis). Husk at SQL Server Express har maskinvarebegrensninger og begrensninger på datastørrelsen. Hvis du ikke planlegger på riktig måte, kan du raskt nå datastørrelsesgrensene for SQL Server Express. Denne vurderingen gjelder ikke bare for prising, men også for andre deler av produktet. Her følger noen nyttige tips som kan hjelpe deg med å redusere størrelsen på dataene:
 
 - Hvis du bruker forretningsavtaler, og prisene endres, bør du la de gamle forretningsavtalene utløpe ved å angi en sluttdato. Over tid bidrar dette til å redusere antallet forretningsavtaler som holdes i kanaldatabaser. Den hjelper også å redusere mengden data som prisberegningsalgoritmen må arbeide med.
@@ -195,12 +211,14 @@ Microsoft SQL Server Express brukes ofte til kanaldatabaser på grunn av kostnad
     Hvis ikke alle verdier for en dimensjon gir en annen pris, kan du også definere en forretningsavtale for produktstandarden og la alle produktdimensjoner stå tomme. Deretter definerer du en egen forretningsavtale for hver dimensjonsverdi som fører til en annen pris. Hvis for eksempel størrelsen XXL har en høyere pris, men alle andre størrelser har samme pris, trenger du bare to forretningsavtaler: én for produktstandarden og én for størrelsen XXL.
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Priser inkludert mva i forhold til salgspriser eksklusive mva
+
 Når du angir salgspriser i Microsoft Dynamics 365, angir du ikke om prisverdien er inklusiv eller eksklusiv mva. Verdien er bare prisen. Med innstillingen **Pris inkluderer merverdiavgift** for detaljhandelskanaler kan du imidlertid konfigurere detaljhandelskanaler slik at de inkluderer eller ekskluderer mva fra priser. Denne innstillingen er angitt på kanalen, og kan endres også i et enkelt firma.
 
 Hvis du arbeider med både inklusive og eksklusive typer mva, er det svært viktig at du setter priser riktig, fordi totalbeløpet som kunden betaler, endres hvis innstillingen **Pris inkluderer merverdiavgift** på kanalen endres.
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Forskjeller mellom prissetting for detaljhandel og prissetting for ikke-detaljehandel
-En enkelt prissettingsmotor brukes til å beregne priser for detaljhandel på tvers av alle kanaler: Telefonsenter, Detaljhandelbutikk og Nettbutikker. Dette bidrar til å muliggjøre enhetlig handel. 
+
+En enkelt prissettingsmotor brukes til å beregne priser for detaljhandel på tvers av alle kanaler: Telefonsenter, Detaljhandelbutikk og Nettbutikker. Dette bidrar til å muliggjøre enhetlig handel.
 
 Prissetting for detaljhandel er utformet for å fungere med detaljhandelsenheter i stedet for enheter som ikke gjelder for detaljhandel. Det er spesielt utformet for å angi priser per butikk, ikke etter lager.
 

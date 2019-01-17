@@ -59,4 +59,3 @@ Du kan bruke den nye utvidede strukturen for produktegenskaper til å velge oppd
 
 ![Dialogboksen Oppdater produkter](media/NewUpdateProductsEnhancedView.PNG)
 
-

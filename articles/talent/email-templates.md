@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent - Attract: Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger i Attract er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
+
+> [!NOTE]
+> Hvis du vil bruke e-postmaler, må organisasjonen ha tillegget for omfattende ansettelse.
 
 ## <a name="global-template-configurations"></a>Globale malkonfigurasjoner
 

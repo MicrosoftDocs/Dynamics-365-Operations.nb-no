@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a0359f8312e5e3fe1349dbc89831c98c46cd61ff
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,24 +34,22 @@ Hvis du vil konfigurere en parallell avdeling, kan du fullføre fremgangsmåtene
 En parallell avdeling er egentlig en arbeidsflyt som kjøres i konteksten til en overordnet arbeidsflyt.
 
 ## <a name="name-a-branch"></a>Navn på en avdeling
+
 Følg denne fremgangsmåten for å angi et navn for en parallell avdeling.
-1.  Høyreklikk den parallelle avdelingen, og klikk deretter **Egenskaper**. **Egenskaper**-skjemaet vises.
-2.  Klikk **Grunnleggende innstillinger** i ruten til venstre.
-3.  I feltet **Navn** angir du et unikt navn på den parallelle avdelingen.
-4.  Klikk **Lukk**.
+
+1. Høyreklikk den parallelle avdelingen, og klikk deretter **Egenskaper**. **Egenskaper**-skjemaet vises.
+2. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+3. I feltet **Navn** angir du et unikt navn på den parallelle avdelingen.
+4. Klikk **Lukk**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Utforme og konfigurere elementene for en avdeling
+
 Følg denne fremgangsmåten for å utforme og konfigurere elementene for en parallell avdeling.
-1.  Dobbeltklikk den parallelle avdelingen.
-2.  Dra arbeidsflytelementer til arbeidsområdet, og konfigurer deretter elementene, akkurat som når du skal opprette en ny arbeidsflyt. Hvis du vil ha mer informasjon, kan du se Opprette en arbeidsflyt.
 
+1. Dobbeltklikk den parallelle avdelingen.
+2. Dra arbeidsflytelementer til arbeidsområdet, og konfigurer deretter elementene, akkurat som når du skal opprette en ny arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Opprette en arbeidsflyt](create-workflow.md).
 
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Opprette en arbeidsflyt](create-workflow.md)
-
-
-
 

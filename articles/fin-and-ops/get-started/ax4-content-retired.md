@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2018-04-10
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: eb240a75c758037de9eb1fde55b0bfde00a16dd7
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7455a10f3e2fc603b6699d77127376cde12f2144
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 08/09/2018
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 4.0-innholdet er avsluttet på TechNet og MSDN. Hvis du vil ha mer informasjon,  kan du se: 
+Microsoft Dynamics AX 4.0-innholdet er avsluttet på TechNet og MSDN. Hvis du vil ha mer informasjon,  kan du se:
 
-- [Livssykluspolicy for Microsoft](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0) 
-- [Støttede oppgraderingsbaner til Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362093.aspx) 
+- [Livssykluspolicy for Microsoft](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
+- [Støttede oppgraderingsbaner til Dynamics AX 2012](https://technet.microsoft.com/library/dd362093.aspx)
 

@@ -3,7 +3,7 @@ title: Finansdimensjoner
 description: Dette emnet beskriver de ulike typene finansdimensjoner og hvordan de er definert.
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Du kan bruke verdier fra overordnede oppføringer, for eksempel kunder og levera
 Denne funksjonen styres av en innstilling i dimensjonen. Denne innstillingen kalles **Kopier verdier til denne dimensjonen i hver nye DimensionName som er opprettet**, der **DimensionName** er navnet på dimensjonen. Funksjonen er deaktivert som standard. Men den kan aktiveres når som helst.
 
 Hvis det allerede finnes poster for dimensjonen, oppdateres de overordnede postene når du aktiverer funksjonen. Imidlertid oppdateres ikke eksisterende dokumenter og transaksjoner.
+
+Hvis du bruker en mal til å opprette en hovedoppføring, må du kontrollere at malverdien for hoveddimensjonen er tom. Hvis du for eksempel oppretter kunder fra en mal, må du kontrollere at kundedimensjonen i malen er tom. Kundedimensjonsverdien hentes som standard fra det nye kundenummeret når du oppretter den nye kunden.  
 
 ## <a name="derived-dimensions"></a>Avledede dimensjoner
 

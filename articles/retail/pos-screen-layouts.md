@@ -40,6 +40,7 @@ Illustrasjonen nedenfor viser forholdet mellom de forskjellige enhetene som utgj
 ![Enheter for skjermoppsett for salgssted](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuell profil
+
 Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere. Alle brukere som logger på kassen ser samme tema, farger og bilder.
 
 ![Velkomstskjerm for salgsstedet med lyst tema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 - **Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.
 
 ## <a name="screen-layouts"></a>Skjermoppsett
+
 Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i velkomstskjermen og **Transaksjon**-skjermbildet for salgsstedet.
 
 ![Visning for skjermoppsett for salgssted](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Ved oppstart velger salgsstedsprogrammet automatisk den nærmeste oppsettstørre
 ![Oppsettstørrelser for salgssted](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Knappegrupper
+
 For hvert oppsettstørrelse i et skjermoppsett kan du konfigurere og tilordne knappegrupper for velkomstskjermbildet for salgsstedet og **Transaksjon**-skjermbildet. Knappegrupper for velkomstskjermen plasseres automatisk fra venstre mot høyre, fra det laveste nummeret (velkomstskjerm 1) til det høyeste nummeret.
 
 Plasseringen av knappegrupper er angitt i utforming av skjermoppsett i oppsett for fullstendig sakgssted.
@@ -104,6 +107,7 @@ Knappegrupper i oppsett for kompakt salgssted plasseres automatisk fra topp mot 
 ![Knappegrupper for kompakt oppsett](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Bilder
+
 Du kan angi bilder som skal inkluderes i brukergrensesnittet for salgsstedet for hvert oppsettstørrelse i et skjermoppsett. Ett enkelt bilde kan angis for velkomstskjermen for oppsett for fullstendig sakgssted. Dette bildet vises som det første grensesnittelement til venstre. I **Transaksjon**-skjermbildet kan bilder brukes som kategoribilder eller logoer. Oppsett for kompakt salgssted bruker ikke disse bildene.
 
 ### <a name="screen-layout-designer"></a>Utforming av skjermoppsett
@@ -141,11 +145,13 @@ Utformingen for fullstendig oppsett lar brukere dra grensesnittkontroller til **
     - **Egendefinert kontroll** – Den egendefinerte kontrollen fungerer som en plassholder i skjermoppsettet og lar deg kan reservere plass for egendefinert innhold. Den egendefinerte kontrollen er bare tilgjengelig for fullstendige oppsett.
 
 ### <a name="compact-layout-designer"></a>Utforming for kompakt oppsett
+
 På samme måte som utforming for fullstendig oppsett kan du med utforming for kompakt oppsett konfigurere skjermoppsettet for salgsstedet for telefoner og små nettbrett. I dette tilfellet er imidlertid selve oppsettet fast. Du kan konfigurere kontrollene i oppsettet ved å høyreklikke og ved hjelp av hurtigmenyen. Du kan imidlertid ikke bruke dra og slipp-operasjoner for mer innhold.
 
 ![Utforming for kompakt oppsett](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Utforming for knappegruppe
+
 Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på velkomstskjermbildet for salgsstedet og **Transaksjon**-skjermen for både fullstendige og kompakte oppsett. Du kan bruke samme knappegruppen på tvers av oppsett og oppsettyper. På samme måte som utforming for skjermoppsett bruker utforming for knappegruppe ClickOnce-distribusjonsteknologi til å laste ned, installere og starte den nyeste versjonen av appen hver gang brukeren åpner den. Husk å sjekke nettleserkravene for ClickOnce. Noen nettlesere, for eksempel Google Chrome, krever tillegg.
 
 ![Utforming for knappegruppe](../retail/media/Button-Grid-Designer.png)

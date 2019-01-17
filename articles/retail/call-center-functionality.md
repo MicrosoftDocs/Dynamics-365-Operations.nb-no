@@ -42,25 +42,30 @@ I tillegg til støtte for ordreoppretting har telefonsentermodulen også et bruk
 Denne siden inneholder koblinger til relevante dokumentasjon som er knyttet til installasjon, konfigurasjon og funksjonell bruk av telefonsenterfunksjonene i Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Konfigurere telefonsenteret
+
 [Definere alternativer for ordrebehandling](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
+
 [Definere svindelvarsler](set-up-fraud-alerts.md)
 
 [Manuelle ordresperrer](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
+
 [Betalingsmåter i et telefonsenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurere leveringsmåter
+
 [Konfigurere leveringsmåter og tillegg for telefonsenter](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurere direkte markedsføring
+
 [Telefonsenterkataloger](call-center-catalogs.md)
 
 [Definere RFM-analyse](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
-[Definere et kontinuitetsprogram for et telefonsenter](set-up-continuity-program.md)
 
+[Definere et kontinuitetsprogram for et telefonsenter](set-up-continuity-program.md)
 

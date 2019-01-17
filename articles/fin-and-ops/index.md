@@ -51,7 +51,7 @@ Mye av innholdet gjelder også for de tilknyttede produktene Microsoft Dynamics 
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Introdusere et prosjekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Klargjøre for aktivering</a></p>
-  
+
 <h3><a href="../financials/index.md">Økonomistyring</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Leverandører</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Kunder</a></p>
@@ -65,7 +65,7 @@ Mye av innholdet gjelder også for de tilknyttede produktene Microsoft Dynamics 
 <p><a href="../financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale forskriftsmessige funksjoner</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Personale</a></h3>
+<h3><a href="hr/hr-landing-page.md">Personale</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Fordeler</a></p>
 <p><a href="../talent/performance-management-overview.md">Utvikling og opplæring for ansatte</a></p>
 <p><a href="../talent/questionnaires.md">Spørreskjema</a></p>

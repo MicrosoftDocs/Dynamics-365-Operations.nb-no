@@ -3,7 +3,7 @@ title: Opprette, godkjenne og postere jobber i Attract
 description: "Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Hvis du vil ha mer informasjon om aktiviteter som kan legges til ansettelsespros
 
 ## <a name="postings"></a>Posteringer
 
-Når en jobb er aktivert, kan den posteres. Bare rekrutteringspersoner og administratorer kan postere jobber. Jobben kan posteres til Talent Careers (et karriereområde i Microsoft Dynamics 365 for Talent) eller LinkedIn. Attract-teamet jobber kontinuerlig for å samarbeide med jobbtavleaggregatorer. Denne listen utvides derfor over tid.
+Når en jobb er aktivert, kan den posteres. Bare rekrutteringspersoner og administratorer kan postere jobber. Jobben kan posteres til Talent Careers (et karriereområde i Microsoft Dynamics 365 for Talent) eller LinkedIn. 
+
+> [!NOTE]
+> Det er tre viktige ting å merke seg om jobbposteringsprosessen til LinkedIn.
+> 1. Jobber som posteres til LinkedIn, posteres som "Begrensede oppføringer" (Limited Listings). Begrensede oppføringer kan ikke fremmes på LinkedIn-området. Hvis du vil fremme begrensede oppføringer-jobber som er postert på LinkedIn, fra Attract, må du bruke LinkedIn for å aktivere "jobbpakking" (Job Wrapping). Se koblingene nedenfor og ta kontakt med kundestøtte for LinkedIn hvis du vil ha mer informasjon.
+>
+>    [Begrensede oppføringer kontra premium jobbplasser for jobbpakking](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Vanlige spørsmål om jobbpakking](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Når du posterer jobber på LinkedIn, sender Attract Microsoft 365-organisasjonsnavnet mot jobben. LinkedIn kobler jobbene til et firma på LinkedIn-siden basert på organisasjonsnavnet som blir sendt. Hvis jobben er oppført mot feil firma på LinkedIn, må du kontrollere at Microsoft 365-organisasjonsnavnet samsvarer med firmanavnet på LinkedIn.  
+>
+>    [Endre adressekontakt og mye mer](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Hvis du har problemer etter dette trinnet, kontakt kundestøtte for LinkedIn. 
+> 
+> 1. Det kan ta opptil 24 timer før jobber som posteres på LinkedIn, blir synlige for kandidater fra LinkedIn på grunn av gjeldende satsvise LinkedIn-jobbposteringsprosess.
+
+Attract-teamet jobber kontinuerlig for å samarbeide med jobbtavleaggregatorer. Denne listen utvides over tid.
 
 Hvis du vil ha mer informasjon om ledige stillinger, se [Karriereområde-funksjonalitet i Attract](./career-site.md).
 

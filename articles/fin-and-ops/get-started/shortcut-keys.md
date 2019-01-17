@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: nb-no
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations. 
+Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations.
 
-**Obs!** Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
+> [!NOTE]
+> Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 
 ## <a name="finding-a-shortcut"></a>Finne en hurtigtast
-Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden. 
 
+Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Hvis du vil gjøre dette**                                    | **Trykk**                        |
-| Åpent handlingssøk                                | Ctrl+’ eller Alt+Q                  |
-| Flytt til standard handlingsrute                  | Alt+M,A eller Ctrl+F6               |
-| Åpne en kategori i handlingsruten eller i en meny           | Enter eller Mellomrom eller Alt+pil ned |
-| Flytt til neste/forrige alternativ på en meny            | Pil ned / Pil opp            |
-| Luk en kategori i handlingsruten eller i en meny          | ESC                              |
-| Simuler et høyreklikk                            | Skift+F10                        |
-| Åpne hurtigmenyen Finance and Operations      | Ctrl+F10                         |
-| Kjør standardknappen på en skjema-/dialogboks   | Alt+Enter                        |
-| Klikk en knapp eller flis                            | Enter eller Mellomrom                   |
-| Vis oppdatert informasjon for en flis for antall         | Alt+Pil opp                     |
-| Vise tilgjengelige snarveier                | Alt+Skift+K                      |                              
+| Hvis du vil gjøre dette                                      | Trykk                            |
+|-------------------------------------------------|----------------------------------|
+| Åpent handlingssøk                              | Ctrl+' eller Alt+Q                  |
+| Flytt til standard handlingsrute                | Alt+M,A eller Ctrl+F6               |
+| Åpne en kategori i handlingsruten eller i en meny         | Enter eller Mellomrom eller Alt+pil ned |
+| Flytt til neste/forrige alternativ på en meny          | Pil ned / Pil opp            |
+| Luk en kategori i handlingsruten eller i en meny        | ESC                              |
+| Simuler et høyreklikk                          | Skift+F10                        |
+| Åpne hurtigmenyen Finance and Operations    | Ctrl+F10                         |
+| Kjør standardknappen på en skjema-/dialogboks | Alt+Enter                        |
+| Klikk en knapp eller flis                          | Enter eller Mellomrom                   |
+| Vis oppdatert informasjon for en flis for antall       | Alt+Pil opp                     |
+| Vise tilgjengelige snarveier              | Alt+Skift+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Snarveier for datovelger
 
-|                                       |                                           |
+| Hvis du vil gjøre dette                            | Trykk                                     |
 |---------------------------------------|-------------------------------------------|
-| **Hvis du vil gjøre dette**                        | **Trykk**                                 |
 | Åpne datovelger                  | Alt+Pil ned                            |
 | Flytt mellom datoer i datovelgeren | Ctrl+piltaster                           |
 | Gå til neste/forrige måned       | Side ned / Side opp                       |
@@ -70,9 +69,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="factbox-shortcuts"></a>Faktabokssnarveier
 
-|                                                                                 |                                           |
+| Hvis du vil gjøre dette                                                                      | Trykk                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Hvis du vil gjøre dette**                                                                  | **Trykk**                                 |
 | Åpne faktaboksruten (eller flytte fokus til faktaboksruten hvis den allerede er åpen) | Alt+M,B eller Ctrl+F2                        |
 | Lukk faktaboksruten (med fokus i faktaboksruten)                         | ESC                                       |
 | Flytt til neste/forrige faktaboks (med fokus i faktaboksruten)              | Alt+Skift+Pil ned / Alt+Skift+Pil opp |
@@ -82,42 +80,39 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="filtering-shortcuts"></a>Filtreringssnarveier
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Hvis du vil gjøre dette**                     | **Trykk**                |
-| Åpne rutenettfiltrering for gjeldende kolonne                        | Ctrl+G                   |
-| Lukk rutenettfiltrering for gjeldende kolonne                       | ESC                      |
+| Hvis du vil gjøre dette                                                                                                          | Trykk                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Åpne rutenettfiltrering for gjeldende kolonne                                                                          | Ctrl+G                   |
+| Lukk rutenettfiltrering for gjeldende kolonne                                                                         | ESC                      |
 | Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedskjemaet hvis filtreringsruten allerede er åpen) | Alt+M,F eller Ctrl+F3       |
-| Lukk filtreringsruten (med fokus i filtreringsruten)             | ESC                      |
-| Åpne avansert filtrering/sortering                                      | Ctrl+Skift+F3            | 
+| Lukk filtreringsruten (med fokus i filtreringsruten)                                                               | ESC                      |
+| Åpne avansert filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
 
 ## <a name="form-shortcuts"></a>Skjemasnarveier
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Hvis du vil gjøre dette**                                      | **Trykk**         |
-| Opprett en ny post                                 | Alt+N             |
-| Slette en post                                     | Alt+Del eller Alt+F9 |
-| Lagre post                                         | Alt+S eller Ctrl+S   |
-| Tilbakestill (gjenopprett)                                    | Ctrl+Skift+F5     |
-| Dataoppdatering                                        | Skift+F5          |
-| Gå til det første synlige feltet på skjemaet         | Alt+Skift+F       |
-| Aktiver/deaktiver redigeringsmodus                                    | F2                |
-| Legge ved et dokument                                   | Ctrl+Skift+A      |
-| Eksporter til Excel                                     | Ctrl+Skift+E      |
-| Gå til forrige post (utenfor et rutenett)        | Ctrl+Pil opp     |
-| Gå til neste post (utenfor et rutenett)            | Ctrl+Pil ned   |
-| Gå til første post (utenfor et rutenett)           | CTRL+HOME         |
-| Gå til siste post (utenfor et rutenett)            | CTRL+END          |
-| Lukk skjemaet (klikk Tilbake)                         | ESC               |
-| Lukk skjemaet med eksplisitt lagring                   | Skift+Esc         |
-| Lukk skjemaet og forkast eventuelle ulagrede endringer       | Alt+Skift+Q       |
+| Hvis du vil gjøre dette                                    | Trykk             |
+|-----------------------------------------------|-------------------|
+| Opprett en ny post                           | Alt+N             |
+| Slette en post                               | Alt+Del eller Alt+F9 |
+| Lagre post                                   | Alt+S eller Ctrl+S   |
+| Tilbakestill (gjenopprett)                              | Ctrl+Skift+F5     |
+| Dataoppdatering                                  | Skift+F5          |
+| Gå til det første synlige feltet på skjemaet   | Alt+Skift+F       |
+| Aktiver/deaktiver redigeringsmodus                              | F2                |
+| Legge ved et dokument                             | Ctrl+Skift+A      |
+| Eksporter til Excel                               | Ctrl+Skift+E      |
+| Gå til forrige post (utenfor et rutenett)  | Ctrl+Pil opp     |
+| Gå til neste post (utenfor et rutenett)      | Ctrl+Pil ned   |
+| Gå til første post (utenfor et rutenett)     | CTRL+HOME         |
+| Gå til siste post (utenfor et rutenett)      | CTRL+END          |
+| Lukk skjemaet (klikk Tilbake)                   | ESC               |
+| Lukk skjemaet med eksplisitt lagring             | Skift+Esc         |
+| Lukk skjemaet og forkast eventuelle ulagrede endringer | Alt+Skift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Snarveier for skjemanavigasjon
 
-|                                                     |                                              |
+| Hvis du vil gjøre dette                                          | Trykk                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Hvis du vil gjøre dette**                                      | **Trykk**                                    |
 | Gå til neste/forrige felt                     | Tab / Skift+Tab                              |
 | Gå til neste/forrige kategori                       | Alt+Skift+Pil høyre / Alt+Skift+Pil venstre |
 | Gå til &lt;n&gt;. kategori                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="grid-shortcuts"></a>Rutenettsnarveier
 
-|                                                                                                                        |                                 |
+| Hvis du vil gjøre dette                                                                                                             | Trykk                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Hvis du vil gjøre dette**                                                                                                         | **Trykk**                       |
 | Gå til neste/forrige kolonne                                                                                       | Tab / Skift+Tab                 |
 | Gå til neste/forrige rad                                                                                          | Pil ned / Pil opp           |
-| Flytt til neste/forrige rad uten å velge<br><br>**Merk:** Denne snarveien gjelder kun for flere valgscenarier. | Ctrl+Pil opp / Ctrl+Pil ned |
-| Velg/tøm gjeldende rad<br><br>**Merk:** Denne snarveien gjelder kun for flere valgscenarier.                    | Ctrl+mellomrom / Ctrl+klikk         |
-| Legg til neste/forrige rad til det valgte settet<br><br>**Merk:** Denne snarveien gjelder kun for flere valgscenarier.   | Shift+Space                     |
-| Legg til en rekke rader til det valgte settet<br><br>**Merk:** Denne snarveien gjelder kun for flere valgscenarier.         | Skift+klikk                     |
+| Flytt til neste/forrige rad uten å velge<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote> | Ctrl+Pil opp / Ctrl+Pil ned |
+| Velg/tøm gjeldende rad<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>                    | Ctrl+mellomrom / Ctrl+klikk         |
+| Legg til neste/forrige rad til det valgte settet<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>   | Shift+Space                     |
+| Legg til en rekke rader til det valgte settet<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>         | Skift+klikk                     |
 | Gå til neste/forrige side med data                                                                                   | Side opp / Side ned             |
 | Opprett en ny rad nederst i rutenettet                                                                             | Pil ned (fra den siste raden)  |
 | Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
-| Utfør standardhandling i et rutenett<br><br>**Merk:** Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.                 | Enter                           |
+| Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
 | Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 
-|                                                                              |                               |
+| Hvis du vil gjøre dette                                                                   | Trykk                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Hvis du vil gjøre dette**                                                               | **Trykk**                     |
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
 | Angi øktdatoen i et datofelt                                       | D+Tab                         |
 | Angi gjeldende dato i et datofelt                                       | T+Tab                         |
@@ -171,17 +164,15 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="messaging-shortcuts"></a>Meldingssnarveier
 
-|                          |               |
+| Hvis du vil gjøre dette               | Trykk         |
 |--------------------------|---------------|
-| **Hvis du vil gjøre dette**           | **Trykk**     |
 | Gå til meldingssentret | Ctrl+Skift+F7 |
 | Gå til meldingslinjen    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigasjonssnarveier
 
-|                                                                               |                            |
+| Hvis du vil gjøre dette                                                                    | Trykk                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Hvis du vil gjøre dette**                                                                | **Trykk**                  |
 | Gå til instrumentbordet                                                           | Alt+Skift+Home             |
 | Flytt til navigasjonslinjen                                                    | Alt+M,N eller Alt+Shift+F1    |
 | Flytt til selskapsvelgeren                                                    | Ctrl+Skift+O               |
@@ -201,9 +192,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="personalization-shortcuts"></a>Personlige snarveier
 
-|                                                                                                                        |                                     |
+| Hvis du vil gjøre dette                                                                                                             | Trykk                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Hvis du vil gjøre dette**                                                                                                         | **Trykk**                           |
 | Overfør siden til personliggjøringsmodus                                                                          | Ctrl+Skift+P                        |
 | Bruk Valgverktøyet (når du er i personliggjøringsmodus)                                                                     | S                                   |
 | Åpne dialogboksen for hurtigkontroll av den valgte kontrollen (når du bruker Valgverktøyet)                              | Mellomrom eller Enter                      |
@@ -230,9 +220,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="segmented-entry-shortcuts"></a>Snarveier for segmenterte oppføringer
 
-|                                                                                                                         |                                  |
+| Hvis du vil gjøre dette                                                                                                              | Trykk                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Hvis du vil gjøre dette**                                                                                                          | **Trykk**                        |
 | Åpne rullegardinlisten (når rullegardinlisten er lukket)                                                             | Alt+Pil ned                   |
 | Flytt fokus til inndatafeltet for det gjeldende segmentet i rullegardinlisten (når rullegardinlisten allerede er åpen) | Alt+Pil ned                   |
 | Lukk rullegardinlisten                                                                                                | Alt+Pil opp                     |
@@ -244,5 +233,4 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå opp/ned en rad i oppslaget                                                                                        | Pil opp / Pil ned            |
 | Gå opp/ned en side i oppslaget                                                                                       | Side opp / Side ned              |
 | Gå til toppen/bunnen av oppslaget                                                                                    | Home / End                       |
-
 

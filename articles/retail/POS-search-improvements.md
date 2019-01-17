@@ -66,7 +66,7 @@ Opplevelsen for lokale produktsøk er nå mer brukervennlig. Følgende forbedrin
 - Forhandlere kan nå konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
 - Produktsøkalgoritmen søker nå også etter de søkevilkårene i **Søkenavn**-egenskapen for produktet.
 
-![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+    ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøk
 

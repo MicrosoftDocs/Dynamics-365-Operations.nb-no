@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -28,8 +28,9 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a>Oversikt 
-Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres som serialiserte eller ikke-serialiserte. Når produktene er serialiserte, kan hvert element tildeles et unikt nummer som hjelper til med å spore garantier, spore elementer og bekrefte eierskap. lv om muligheten til å gi serienumre for serielle produkter eksisterte i våre Modern/Cloud Point of Sale (POS), har det blitt lagt til noen forbedringer for å hjelpe kasserere å spare tid og være mer produktive.  
+## <a name="overview"></a>Oversikt
+
+Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres som serialiserte eller ikke-serialiserte. Når produktene er serialiserte, kan hvert element tildeles et unikt nummer som hjelper til med å spore garantier, spore elementer og bekrefte eierskap. lv om muligheten til å gi serienumre for serielle produkter eksisterte i våre Modern/Cloud Point of Sale (POS), har det blitt lagt til noen forbedringer for å hjelpe kasserere å spare tid og være mer produktive.
 
 ## <a name="pos-improvements"></a>POS-forbedringer
 
@@ -37,9 +38,9 @@ Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres s
 
     For hvert serialisert element der man hoppet over serienummeret, vises en kommentar under transaksjonslinjen. Kommentaren forteller at serienummer ikke er oppgitt for denne artikkelen. Derfor kan kassereren raskt finne produkter som mangler serienummer.
 
-    En ny **Legg til serienummer**-operasjoner gir også serienummeret for produkter som mangler et serienummer. Etter at serienummer er gitt kan det ikke redigeres. Kassereren må annullere linjen og legge til produktet på nytt. 
+    En ny **Legg til serienummer**-operasjoner gir også serienummeret for produkter som mangler et serienummer. Etter at serienummer er gitt kan det ikke redigeres. Kassereren må annullere linjen og legge til produktet på nytt.
     
-- **Serienummer er ikke påkrevd for å plassere kundeordrer** – Kundeordrer kan plasseres i en butikk og oppfylles fra en annen butikk. En kasserer som plasserer en kundeordre trenger ikke å oppgi serienummeret. Serienummeret vil gis under henting eller i hente-trinnet. Imidlertid må det oppgis et serienummer for alle linjeposter hvor leveringstypen er valgt som **Gjennomført**. Hvis ikke kan ikke transaksjonen fullføres.    
+- **Serienummer er ikke påkrevd for å plassere kundeordrer** – Kundeordrer kan plasseres i en butikk og oppfylles fra en annen butikk. En kasserer som plasserer en kundeordre trenger ikke å oppgi serienummeret. Serienummeret vil gis under henting eller i hente-trinnet. Imidlertid må det oppgis et serienummer for alle linjeposter hvor leveringstypen er valgt som **Gjennomført**. Hvis ikke kan ikke transaksjonen fullføres.
 - **Serialiserte produkter samles ikke på transaksjonsskjermbildet**. – Innstillingen for **Aggregate produkter** i feltgruppen **Terminal** på siden **Funksjonalitetsprofil** lar deg aggregere de samme ikke-serielle produktene på transaksjonsskjermen. Når de samme produktene er aggregert, er de lettere å se i transaksjonsnettverket. Men fordi serienumrene generelt er unike, og salgsmedarbeidere ikke trenger å skrive inn serienumre til kassa, gjelder ikke innstillingen for **Aggregerte produkter** ved serialiserte produkter. Derfor blir ikke serielle produkter samlet på transaksjonsskjermbildet hvis innstillingen for **Aggreger produkter** er valgt.
 - **Muligheten til å søke i journaler etter serienummer** – Det er nå også mulig å søke etter serienummer i journalene. Hvis du vil gjøre dette, åpner du operasjonen "Journaler" og trykker på knappen "Avansert søk" i feltet i appen. Ved hjelp av knappen "Legg til filter" kan et filter brukes for å søke etter serienumrene også.
 

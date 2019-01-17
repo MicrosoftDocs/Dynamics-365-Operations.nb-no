@@ -20,10 +20,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9220cc12abf7134d425e088939d20ea03239a75a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 61ac8e5fbdc4d91bb5bc5372a7fb96633043473a
 ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,19 +33,19 @@ ms.lasthandoff: 11/03/2017
 
 Denne artikkelen inneholder informasjon om prisjusteringer og rabatter i detaljhandel og handel i Microsoft Dynamics 365 for Retail.
 
-I Dynamics 365 for Retail kan du justere prisen på produkter og du kan også definere rabatter som gjelder for en linjevare eller en transaksjon ved salgsstedet, i en salgsordre for telefonsenter eller en elektronisk ordre. Både prisjusteringer og rabatter kan knyttes til prisgrupper. Du kan angi én enkelt startdato og sluttdato eller en regelmessig periode, en rabattkode og noen ytterligere attributter for både prisjusteringer og rabatter. Prisjusteringer og rabatter kan brukes på produkter, varianter eller hierarkier. Hvis mer enn én rabatt gjelder for et produkt, kan en kunde få enten en av rabattene eller en kombinert rabatt, avhengig av konfigurasjonen av rabatten. Dynamics 365 for Retail bruker automatisk rabatten eller kombinasjon av rabatter som gir den beste prisen til kunden. Når du definerer en prisjustering eller rabatt, må du bekrefte at prisgrupper tilordnes til riktige kanaler, kataloger, tilknytninger eller fordelsprogrammer som du vil at rabatten skal gjelde for. Hvis du i tillegg vil generere rabatt-ID-en automatisk, kan du definere nummerserier på **Detaljhandelsparametere**-siden før du definerer en ny rabatt eller prisjustering. **Obs!** Du kan slette en prisjustering eller rabatt. Statistisk informasjon går imidlertid tapt.
+I Dynamics 365 for Retail kan du justere prisen på produkter og du kan også definere rabatter som gjelder for en linjevare eller en transaksjon ved salgsstedet, i en salgsordre for telefonsenter eller en elektronisk ordre. Både prisjusteringer og rabatter kan knyttes til prisgrupper. Du kan angi én enkelt startdato og sluttdato eller en regelmessig periode, en rabattkode og noen ytterligere attributter for både prisjusteringer og rabatter. Prisjusteringer og rabatter kan brukes på produkter, varianter eller hierarkier. Hvis mer enn én rabatt gjelder for et produkt, kan en kunde få enten en av rabattene eller en kombinert rabatt, avhengig av konfigurasjonen av rabatten. Dynamics 365 for Retail bruker automatisk rabatten eller kombinasjon av rabatter som gir den beste prisen til kunden. Når du definerer en prisjustering eller rabatt, må du bekrefte at prisgrupper tilordnes til riktige kanaler, kataloger, tilknytninger eller fordelsprogrammer som du vil at rabatten skal gjelde for. Hvis du i tillegg vil generere rabatt-ID-en automatisk, kan du definere nummerserier på **Detaljhandelsparametere**-siden før du definerer en ny rabatt eller prisjustering.
 
-### <a name="types-of-discounts"></a>Rabattyper
+> [!NOTE]
+> Du kan slette en prisjustering eller rabatt. Statistisk informasjon går imidlertid tapt.
+
+## <a name="types-of-discounts"></a>Rabattyper
 
 Det finnes fire typer detaljhandelsrabatter:
 
--   **Enkel rabatt** – en enkelt prosent eller et enkelt beløp.
--   **Kvantumsrabatt** – en rabatt som brukes når to eller flere varer som kjøpes.
--   **Samlerabatt** – en rabatt som brukes ved kjøp av en bestemt kombinasjon av produkter.
--   **Terskelrabatt** – en rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp.
+- **Enkel rabatt** – en enkelt prosent eller et enkelt beløp.
+- **Kvantumsrabatt** – en rabatt som brukes når to eller flere varer som kjøpes.
+- **Samlerabatt** – en rabatt som brukes ved kjøp av en bestemt kombinasjon av produkter.
+- **Terskelrabatt** – en rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp.
 
 Både prisjusteringer og rabatter kan knyttes til prisgrupper. Prisgrupper kan deretter knyttes til kanaler, kataloger, tilknytninger og fordelsprogrammer.
-
-
-
 

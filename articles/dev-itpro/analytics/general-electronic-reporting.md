@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som e
 - skyvertsbaserte miljøer distribuert for utviklingsformål (som inneholder testmodeller av vedlagte serier)
 - lokalt distribuerte miljøer (lokale forretningsdata (LBD))
 
-Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER)](/electronic-reporting-import-ger-configurations.md) for mer informasjon om dette.
+Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md) for mer informasjon om dette.
 
 Et **RCS-forekomst**-repositorium gir tilgang til listen over konfigurasjoner for et bestemt RCS-prosjekt som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten av Finance and Operations, og bruke dem til elektronisk rapportering.
 
-Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER) fra Forskriftsmessig konfigurasjonstjeneste (RCS)](/rcs-download-configurations.md) for mer informasjon om dette.
+Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER) fra Forskriftsmessig konfigurasjonstjeneste (RCS)](./rcs-download-configurations.md) for mer informasjon om dette.
 
 Nødvendige repositorier for **LCS-prosjekt**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)** kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Finance and Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
 

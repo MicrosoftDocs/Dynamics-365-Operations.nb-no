@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 *Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter knyttes til forskjellige detaljhandelenheter, for eksempel produktkategorier og detaljhandelskanaler, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
- 
+
 Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 
 | Kategori   | Attributt                | Tillatte verdier          | Standardverdi |
@@ -50,7 +50,7 @@ Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 | Plasma     | Driftstemperatur fra      | 0–43 grader              | 32            |
 |            | Driftstemperatur til        | 0–43 grader              | 100           |
 | Projektor | Garanti for projiseringsrør | 6, 12 eller 18 måneder         | 12            |
-|            | Antall projiseringsrør    | 1–5                         | 3             |
+|            | \# Antall projiseringsrør   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Attributter og attributtyper
 
@@ -90,7 +90,7 @@ Med *Attributtmetadata* kan du velge alternativer for å angi hvordan attributte
 
 Innstillingene for attributtet kan overstyres på kanalnivå for detaljhandelsprodukter. Denne funksjonen diskuteres senere i dette emnet.
 
-Som du kanskje har merket deg, inneholder **Attributter**-siden alternativer som er knyttet til Attributtmetadata. Under **Attributtmetadata for POS**, påvirker et alternativ som heter **"Kan justeres"** atferden til attributtverdier i POS, eller måten systemet behandler disse attributtverdiene. Bare attributtene der du kan angi **"Kan justeres"** til **"Ja"**, vises for finjustering eller filtrering av produkter i Retail POS.
+Som du kanskje har merket deg, inneholder **Attributter**-siden alternativer som er knyttet til Attributtmetadata. Under **Attributtmetadata for POS**, påvirker et alternativ som heter **Kan justeres** atferden til attributtverdier i POS, eller måten systemet behandler disse attributtverdiene. Bare attributtene der du kan angi **Kan justeres** til **Ja**, vises for finjustering eller filtrering av produkter i Retail POS.
 
 Her er de gjenværende alternativene for attributtet metadata på siden **Attributter**:
 
@@ -104,7 +104,7 @@ Her er de gjenværende alternativene for attributtet metadata på siden **Attrib
 
 Disse alternativene er egentlig beregnet for å forbedre søkefunksjonen for nettbutikkfasaden. Selv om Finance and Operations ikke inneholder nettbutikkfasade, er eCommerce Publishing Software Development Kit (SDK) inkludert. Kunder kan bruke denne SDK for å plassere varer i en søkeindeks etter eget valg. Selv om den unike produktinformasjonen blir importert, skal kunder fortsatt kunne skille mellom søkbare data, data som kan inngå i spørringen, og så videre. På den måten kan de bygge en optimal indeks for å være sikker på at de bare indeksere attributter som *etter deres synspunktt*, skal indekseres.
 
-Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinnstillinger for attributtfilter.
 
@@ -121,7 +121,7 @@ Siden **Innstillinger for filtervisning** inneholder følgende felt:
 - **Visningskontroll**- følgende alternativer er tilgjengelige:
 
     - **Liste** - dette alternativet er tilgjengelig for alle atributtyper.
-    - **Område** – denne muligheten er tilgjengelig for følgende atributtyper: **Valuta**, **Desimal** og **Integer**. 
+    - **Område** – denne muligheten er tilgjengelig for følgende atributtyper: **Valuta**, **Desimal** og **Integer**.
     - **Glidebryter** – denne muligheten er tilgjengelig for følgende atributtyper: **Valuta**, **Desimal** og **Integer**.
     - **Glidebryter med linjer** – denne muligheten er tilgjengelig for følgende atributtyper: **Valuta**, **Desimal** og **Integer**.
 
@@ -228,13 +228,13 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 5. På hurtigfanen **Produkter** velger du det aktuelle produktet og så **Attributter** over produktrutenettet.
 6. Oppdater verdiene for de obligatoriske attributtene på følgende hurtigfaner:
 
-   - Delte produktmedier
-   - Delte produktattributter
-   - Kanalmedier
-   - Kanalproduktattributter
+    - Delte produktmedier
+    - Delte produktattributter
+    - Kanalmedier
+    - Kanalproduktattributter
 
-     > [!NOTE]
-     > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
+    > [!NOTE]
+    > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
 
 ![Produktattributtverdi for grupper](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 
 5. Oppdater verdiene for de obligatoriske attributtene på følgende hurtigfaner:
 
-   - Delte produktmedier
-   - Delte produktattributter
-   - Kanalmedier
-   - Kanalproduktattributter
+    - Delte produktmedier
+    - Delte produktattributter
+    - Kanalmedier
+    - Kanalproduktattributter
 
-     > [!NOTE]
-     > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
+    > [!NOTE]
+    > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
 
