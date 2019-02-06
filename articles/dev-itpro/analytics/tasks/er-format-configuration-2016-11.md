@@ -35,8 +35,10 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 2. Klikk på **Rapporteringskonfigurasjoner**.
 3. Velg **Betalinger (forenklet model)** i treet.
 4. Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.
+
  > [!NOTE]
  > Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**. 
+ 
 5. I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.
 6. Skriv inn **BACS (britisk fiktivt)** i **Navn**-feltet.
 7. I **Beskrivelse**-feltet skriver du inn **BACS-leverandørbetalingsformat (fiktivt Storbritannia)**.
@@ -44,6 +46,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
     * Du kan definere et bestemt format for elektronisk dokument. La dette feltet stå tomt hvis du vil velge et format under kjøring.  
 8. Angi eller velg en verdi i feltet **Definisjon av datamodell**.
 9. Klikk **Opprett konfigurasjon**. En ny konfigurasjon er opprettet. Utkastversjonen kan brukes til å lagre utformingsformatet for behandling av elektroniske dokumenter.  
+
  > [!NOTE]
  > Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.
 
