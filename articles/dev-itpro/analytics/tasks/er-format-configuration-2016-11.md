@@ -17,10 +17,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
+ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 6fa5023a29c95ab9f10d8aacd51edc1a06c3c152
 ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
+ms.lasthandoff: 02/06/2019
 
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="8c3e4-103">ER Opprette en formatkonfigurasjon (november 2016)</span><span class="sxs-lookup"><span data-stu-id="8c3e4-103">ER Create a format configuration (November 2016)</span></span>
@@ -35,8 +35,10 @@ ms.lasthandoff: 12/18/2018
 2. <span data-ttu-id="8c3e4-109">Klikk på **Rapporteringskonfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-109">Click **Reporting configurations**.</span></span>
 3. <span data-ttu-id="8c3e4-110">Velg **Betalinger (forenklet model)** i treet.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-110">In the tree, select **Payments (simplified model)**.</span></span>
 4. <span data-ttu-id="8c3e4-111">Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-111">Click **Create configuration** to open the drop dialog.</span></span>
+
  > [!NOTE]
  > <span data-ttu-id="8c3e4-112">Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
+ 
 5. <span data-ttu-id="8c3e4-113">I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
 6. <span data-ttu-id="8c3e4-114">Skriv inn **BACS (britisk fiktivt)** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
 7. <span data-ttu-id="8c3e4-115">I **Beskrivelse**-feltet skriver du inn **BACS-leverandørbetalingsformat (fiktivt Storbritannia)**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
@@ -44,6 +46,7 @@ ms.lasthandoff: 12/18/2018
     * <span data-ttu-id="8c3e4-119">Du kan definere et bestemt format for elektronisk dokument.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="8c3e4-120">La dette feltet stå tomt hvis du vil velge et format under kjøring.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-120">Leave this field blank if you want to select a format at run-time.</span></span>  
 8. <span data-ttu-id="8c3e4-121">Angi eller velg en verdi i feltet **Definisjon av datamodell**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-121">In the **Data model definition** field, enter or select a value.</span></span>
 9. <span data-ttu-id="8c3e4-122">Klikk **Opprett konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-122">Click **Create configuration**.</span></span> <span data-ttu-id="8c3e4-123">En ny konfigurasjon er opprettet.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-123">A new configuration has been created.</span></span> <span data-ttu-id="8c3e4-124">Utkastversjonen kan brukes til å lagre utformingsformatet for behandling av elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
+
  > [!NOTE]
  > <span data-ttu-id="8c3e4-125">Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="8c3e4-125">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span>
 
