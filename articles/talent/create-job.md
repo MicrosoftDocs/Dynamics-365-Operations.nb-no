@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="988d8-104">Dette emnet beskriver de grunnleggende elementene som en jobb kan inneholde, og gir eksempler på hvordan du kan bruke disse elementene i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="988d8-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="job-titles"></a><span data-ttu-id="988d8-115">Jobbtitler</span><span class="sxs-lookup"><span data-stu-id="988d8-115">Job titles</span></span>
 <span data-ttu-id="988d8-116">Før du oppretter jobber, må du definere titler for disse jobbene.</span><span class="sxs-lookup"><span data-stu-id="988d8-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="988d8-117">Stillinger arver jobbtitler fra jobbene som stillingene er knyttet til.</span><span class="sxs-lookup"><span data-stu-id="988d8-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="988d8-118">Vedlikehold jobbtitler ved hjelp av **Titler**-siden, som du kan åpne ved hjelp av funksjonen Søk.</span><span class="sxs-lookup"><span data-stu-id="988d8-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="988d8-119">På **Titler**-siden skriver du inn titlene du har tenkt å bruke for jobbene.</span><span class="sxs-lookup"><span data-stu-id="988d8-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="988d8-118">Vedlikehold jobbtitler ved hjelp av **Titler**-siden, som du kan åpne ved hjelp av funksjonen Søk.</span><span class="sxs-lookup"><span data-stu-id="988d8-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="988d8-119">På **Titler**-siden skriver du inn titlene du har tenkt å bruke for jobbene.</span><span class="sxs-lookup"><span data-stu-id="988d8-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="988d8-120">Jobbtyper</span><span class="sxs-lookup"><span data-stu-id="988d8-120">Job types</span></span>
 <span data-ttu-id="988d8-121">Du bruker jobbtyper til å gruppere lignende jobber i kategorier.</span><span class="sxs-lookup"><span data-stu-id="988d8-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="988d8-122">Jobbtyper er ikke nødvendige.</span><span class="sxs-lookup"><span data-stu-id="988d8-122">Job types aren't required.</span></span> <span data-ttu-id="988d8-123">Men hvis du har tenkt å bruke jobbtyper når du definerer rettighetsregler for kompensasjonsstyring, bør du definere jobbtyper før du definerer jobber.</span><span class="sxs-lookup"><span data-stu-id="988d8-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="988d8-124">Noen eksempler på jobbtyper er heltid og deltid, eller lønn og timelønn.</span><span class="sxs-lookup"><span data-stu-id="988d8-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="988d8-125">Du vedlikeholder jobbtyper ved hjelp av **Jobbtyper**-siden.</span><span class="sxs-lookup"><span data-stu-id="988d8-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="988d8-126">Angi et navn for jobbtypen og en kort beskrivelse av den på **Jobbtyper**-siden.</span><span class="sxs-lookup"><span data-stu-id="988d8-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="988d8-127">I feltet **Status, fritatt fra avgift** velger du ett av følgende alternativer for å angi fritaksstatusen fra avgifter Fair Labor Standards Act (FLSA) for jobber som har denne jobbtypen:</span><span class="sxs-lookup"><span data-stu-id="988d8-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
