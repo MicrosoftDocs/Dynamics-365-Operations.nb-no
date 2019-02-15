@@ -1,13 +1,13 @@
 ---
 title: Kopiere kunder ved hjelp av delte nummerserier
-description: "Dette emnet forklarer hvordan du bruker delte nummerserier til å kopiere en kunde til en annen juridisk enhet og samtidig beholde samme kunde-ID."
+description: Dette emnet forklarer hvordan du bruker delte nummerserier til å kopiere en kunde til en annen juridisk enhet og samtidig beholde samme kunde-ID.
 author: mikefalkner
 manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302667"
 ---
-
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopiere kunder ved hjelp av delte nummerserier
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Du kan også kopiere kunder mellom juridiske enheter hvis du bruker manuelle kun
 
 ## <a name="copy-a-customer"></a>Kopiere en kunde
 
-Hvis du vil kopiere en kunde, velger du **Ny** på listesiden **Alle kunder** for å åpne dialogboksen **Opprett kunde**. Legg merke til at den nye kunde-ID-en ikke tilordnes umiddelbart. Denne virkemåten er forskjellig fra virkemåten i tidligere versjoner av Microsoft Dynamics 365 for Finance and Operations. Systemet kan ikke fastslå riktig nummerserie å bruke fordi du ennå ikke har valgt kundegruppe. I tillegg kan det heller ikke fastslå om du prøver å opprette en ny kunde eller kopiere en kunde. Derfor tilordnes ikke kunde-ID-en før du velger **Lagre** nederst i dialogboksen.
+Hvis du vil kopiere en kunde, velger du **Ny** på listesiden **Alle kunder** for å åpne dialogboksen **Opprett kunde**. Legg merke til at den nye kunde-ID-en ikke tilordnes umiddelbart. Denne virkemåten skiller seg fra virkemåten i tidligere versjoner av Microsoft Dynamics 365 for Finance and Operations. Systemet kan ikke fastslå riktig nummerserie å bruke fordi du ennå ikke har valgt kundegruppe. I tillegg kan det heller ikke fastslå om du prøver å opprette en ny kunde eller kopiere en kunde. Derfor tilordnes ikke kunde-ID-en før du velger **Lagre** nederst i dialogboksen.
 
 Hvis du oppretter en ny kunde, kan du fortsette å fylle ut alle feltene på vanlig måte. Når du er ferdig og du velger **Lagre**, vil du se at kunde-ID-en ble tilordnet automatisk. For manuelle nummerserier ser du også at den manuelle kunde-ID-en ble brukt.
 
@@ -66,4 +65,3 @@ Du kan også kopiere kunder ved hjelp av søkefunksjonen for mva-organisasjonsnu
 
 1. Alternativet **Kopier kunde** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere kunden til gjeldende juridisk enhet, setter du alternativet til **Ja**. 
 2. Velg **Velg**. Den nye kunden opprettes.
-

@@ -5,25 +5,25 @@ author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302697"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -64,7 +64,7 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
         1. I Microsoft Dynamics Lifecycle Services åpner du det delte aktivabiblioteket, velger **Modell** som aktivatype og laster ned **DOM-lisensfilen**.
         2. Start Microsoft IIS-behandling, høyreklikk **AOSService-nettlokasjon**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<roten for AOS-tjeneste\>\\webroot**. Noter deg banen for \<roten for AOS-tjeneste\>, fordi du skal bruke den i neste trinn.
         3. Kopiere konfigurasjonsfilen i katalogen **\<roten for AOS-tjeneste\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå til klienten Retail-hovedkvarter og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og kontroller at det ikke vises noen feilmeldinger.
+        4. Gå til klienten Retail Headquarters og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og kontroller at det ikke vises noen feilmeldinger.
 
         > [!NOTE]
         > Den forenklede problemløseren blir formidlet slik at forhandlere kan teste DOM-funksjonen uten å måtte distribuere spesiallisensen. Organisasjoner bør ikke bruke den forenklede problemløseren i produksjonsmiljøer.
@@ -229,4 +229,3 @@ Her er et par ting du bør vurdere når du bruker DOM-funksjonen:
 - DOM ser for øyeblikket bare på ordrer som er opprettet fra detaljhandelskanaler. Salgsordrer blir identifisert som detaljhandelsordrer når alternativet **Detaljhandelssalg** er satt til **Ja**.
 - Microsoft har ikke testet DOM med avanserte lagerstyringsfunksjoner. Kunder og partnere må være forsiktige med å fastslå om DOM er kompatibel med de avanserte funksjonene og prosessene for lagerstyring som er relevante for dem.
 - DOM er tilgjengelig bare på skyversjonen av Retail. Funksjonen støttes ikke i lokale distribusjoner.
-

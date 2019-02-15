@@ -1,13 +1,13 @@
 ---
-title: "Startside for leverandører"
-description: "Dette emnet gir en oversikt over leverandører."
+title: Startside for leverandører
+description: Dette emnet gir en oversikt over leverandører.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302687"
 ---
-
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
 [!include [banner](../includes/banner.md)]
@@ -130,7 +129,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Det finnes mange innlegg om Leverandører i [produktteambloggen for Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av Leverandører, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
+Det finnes mange innlegg om Leverandører i [Microsoft Dynamics-produktteambloggen for AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av Leverandører, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
@@ -140,7 +139,6 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For 
 #### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 
 
 
