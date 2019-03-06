@@ -1,33 +1,32 @@
 ---
-title: Integrasjon med Microsoft Dynamics 365 for Field Service
-description: Dette emnet gir en oversikt over integrasjonen med Microsoft Dynamics 365 for Field Service.
+title: Integrering med Microsoft Dynamics 365 for Field Service
+description: Dette emnet inneholder en oversikt over integreringen med Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377884"
 ---
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrasjon med Microsoft Dynamics 365 for Field Service
+# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrering med Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,23 +47,7 @@ Den første fasen av integreringen mellom Field Service og Finance and Operation
 
 Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Finance and Operations, se den korte YouTube-videoen [Synkronisere en arbeidsordre med Microsoft Dynamics 365-integrering](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
-Field Service-integrasjon støtter følgende versjoner:
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations versjon 8.0 (april 2018) eller senere
-
-- Dynamics 365 for Finance and Operations versjon 8.0 (april 2018) ble utgitt i april 2018 og har programbuild-nummer 8.0.30.8020 med plattformoppdatering 15 (7.0.4841.35234). 
-
-## <a name="system-requirements-for-field-service"></a>Systemkrav for Field Service
-For å bruke Field Service-integrasjonsløsningen må du installere følgende komponenter:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 eller senere
-
-- Dynamics 365 for Field Service versjon 1612 (9.0.1.733) (DB 9.0.1.733) online eller en senere versjon.
-- Prospect to Cash (P2C)-løsningen for Dynamics 365, versjon 1.15.0.1 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Field Service-integrasjonsløsning for Dynamics 365, versjon 1.0.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration).
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrasjon med Microsoft Dynamics 365 for Field Service, inkludert informasjon om lager og prosjekt
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrasjon med Microsoft Dynamics 365 for Field Service, inkludert informasjon om lager og prosjekt
 
 Den ekstra funksjonaliteten i andre fase fokuserer på å gi teknikere innsikt i lagerinformasjon fra Finance and Operations slik at de kan oppdatere lagernivåer og overføre materiell. I tillegg vil firmaer som installerer eller vedlikeholder solgte varer, dra nytte av bedre styring og synlighet i hele salgs- og serviceprosessen med integrering fra prosjekter.
 
@@ -87,15 +70,16 @@ Den ekstra funksjonaliteten i andre fase fokuserer på å gi teknikere innsikt i
 - Arbeidsordrer med prosjekt (Field Service til Fin and Ops) - Arbeidsordrer i Field Service til salgsordrer i Finance and Operations, med støtte for prosjekt [Avansert spørring] 
 - Field Service-produkter med lagerenhet (Fin and Ops til Sales) - Salgbare frigitte produkter i Finance and Operations til Sales-produkter for Field Service, inkludert lagerenhet 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
+## <a name="system-requirements"></a>Systemkrav
+
+### <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
 Field Service-integrasjon støtter følgende versjoner:
 
-- Dynamics 365 for Finance and Operations versjon 8.1.2 (desember 2019) ble utgitt i desember 2019 og har programbuild-nummer 8.1.195 med plattformoppdatering 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operations versjon 8.1.2 (desember 2019) ble utgitt i desember 2019 og har programbyggnummer 8.1.195 med plattformoppdatering 22 (7.0.5095). 
 
-## <a name="system-requirements-for-field-service"></a>Systemkrav for Field Service
+### <a name="system-requirements-for-field-service"></a>Systemkrav for Field Service
 For å bruke Field Service-integrasjonsløsningen må du installere følgende komponenter:
 
 - Field Service for Dynamics 365 (versjon 8.2.0.286) eller en nyere versjon på Dynamics 365 9.1.x - utgitt november 2018
 - Prospect to Cash (P2C)-løsningen for Dynamics 365, versjon 1.15.0.1 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Field Service Integration, Project and Inventory-løsningen for Dynamics 365, versjon 2.0.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-

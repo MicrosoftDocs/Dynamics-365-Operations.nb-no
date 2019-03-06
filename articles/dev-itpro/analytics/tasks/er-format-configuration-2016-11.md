@@ -1,13 +1,13 @@
---- 
+---
 title: ER Opprette en formatkonfigurasjon (november 2016)
-description: "De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER)."
+description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377555"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Opprette en formatkonfigurasjon (november 2016)
 
@@ -35,8 +35,10 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 2. Klikk på **Rapporteringskonfigurasjoner**.
 3. Velg **Betalinger (forenklet model)** i treet.
 4. Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.
+
  > [!NOTE]
  > Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**. 
+ 
 5. I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.
 6. Skriv inn **BACS (britisk fiktivt)** i **Navn**-feltet.
 7. I **Beskrivelse**-feltet skriver du inn **BACS-leverandørbetalingsformat (fiktivt Storbritannia)**.
@@ -44,9 +46,6 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
     * Du kan definere et bestemt format for elektronisk dokument. La dette feltet stå tomt hvis du vil velge et format under kjøring.  
 8. Angi eller velg en verdi i feltet **Definisjon av datamodell**.
 9. Klikk **Opprett konfigurasjon**. En ny konfigurasjon er opprettet. Utkastversjonen kan brukes til å lagre utformingsformatet for behandling av elektroniske dokumenter.  
- > [!NOTE]
- > Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Utforme formatet på et elektronisk dokument
 1. Klikk **Utforming**.
@@ -159,5 +158,4 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 41. Klikk **OK**.
 42. Klikk **Lagre**.
 43. Lukk siden.
-
 
