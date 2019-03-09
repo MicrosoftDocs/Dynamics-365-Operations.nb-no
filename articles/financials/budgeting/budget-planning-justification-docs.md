@@ -1,13 +1,13 @@
 ---
 title: Dokumenter for budsjettplanleggingsjusteringer
-description: "Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett for å forklare hvorfor et bestemt budsjett er nødvendig."
+description: Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett for å forklare hvorfor et bestemt budsjett er nødvendig.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333582"
 ---
-
 # <a name="budget-planning-justification-documents"></a>Dokumenter for budsjettplanleggingsjusteringer
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Justeringsdokumenter gir en narrativ beskrivelse for dem som ber om et budsjett 
 
 En budsjettplanmal opprettes av budsjettansvarlig i Microsoft Word og tilordnes den gjeldende budsjettplanleggingsprosessen. Budsjetteierne kan deretter åpne malen og la data fylles ut automatisk i Word basert på budsjettforespørselen. De kan deretter legge til ekstra tekst eller data før de lagrer og knytter det personlige justeringsdokumentet til budsjettplanen.
 
-##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Definer Microsoft Dynamics Office-tillegget for Microsoft Word
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Konfigurere Microsoft Dynamics Office-tillegget for Microsoft Word
 
 1.  Åpne et nytt Microsoft Word-dokument.
 2.  Klikk **Sett inn** på båndet, og klikk **Butikk**.
@@ -69,7 +68,6 @@ En budsjettplanmal opprettes av budsjettansvarlig i Microsoft Word og tilordnes 
 1.  Opprett en ny budsjettplan eller åpne en eksisterende budsjettplan i Finance and Operations.
 2.  På **Justering**-rullegardinmenyen velger du **Opprett ny justering**.
 3.  Når du har fylt ut detaljene, velger du å laste opp det egendefinerte dokumentet fra **Justering**-rullegardinmenyen.
-
 
 
 

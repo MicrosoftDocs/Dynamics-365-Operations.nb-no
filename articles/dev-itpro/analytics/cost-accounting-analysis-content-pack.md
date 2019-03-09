@@ -1,13 +1,13 @@
 ---
-title: Kostnadsregnskapsanalyse-innhold for Power BI
-description: "Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Power BI-innholdet Kostnadsregnskapsanalyse
+description: Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347451"
 ---
-
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsregnskapsanalyse-innhold for Power BI
+# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innholdet Kostnadsregnskapsanalyse
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,10 +40,10 @@ Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere h
 
 Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../financials/cost-accounting/cost-accounting-home-page.md).
 
-Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse-innhold** for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BI](setup-security-cost-accounting-content-pack.md).
+Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse**-innhold for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BII](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-Du kan finne **Kostnadsregnskapsanalyse-innhold** for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
+Du kan finne **Kostnadsregnskapsanalyse**-innhold for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -127,4 +126,3 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
 | Regnskapsår                       | Kalenderår                                                                                                        |
 | Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
-

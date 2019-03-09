@@ -1,13 +1,13 @@
---- 
-title: "Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr"
-description: "Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transportørens tilbehørsgebyr, tilbehørsmal for drivstofftillegg og knytter en drivstoffindeks for transportør til en transportør."
+---
+title: Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr
+description: Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transportørens tilbehørsgebyr, tilbehørsmal for drivstofftillegg og knytter en drivstoffindeks for transportør til en transportør.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a2b8534231c5fa50b1e0f709e09d318bb8202a43
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349797"
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr
 
@@ -76,5 +76,4 @@ Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transpo
 5. Klikk rullegardinknappen i feltet Drivstoffindeks for transportør for å åpne oppslaget.
 6. Klikk koblingen i den valgte raden i listen.
 7. Klikk Lagre.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Registrere og postere en etterdatert sjekk for en leverandør"
-description: "Du kan registrere detaljene for en etterdatert sjekk før du utsteder sjekken til en leverandør ved hjelp av journalbilaget."
+---
+title: Registrere og postere en etterdatert sjekk for en leverandør
+description: Du kan registrere detaljene for en etterdatert sjekk før du utsteder sjekken til en leverandør ved hjelp av journalbilaget.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a5788948c40f20e686565198c84facd68a935d9c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dd1c9d29d34e51a479d4df4086e97269f71f7448
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326222"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrere og postere en etterdatert sjekk for en leverandør
 
@@ -55,5 +55,4 @@ Rollen til denne oppgaveveiledningen er kasserer. Denne oppgaven bruker demonstr
 15. Klikk Poster.
 16. Lukk siden.
 17. Velg kategorien Etterdaterte sjekker.
-
 

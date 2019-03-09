@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere kontantstørrelser for salgsstedet"
-description: "Kontantstørrelser for sedler og mynter kan defineres i Back Office som skal brukes av kasserere, selgere og ledere i butikken ved salgsstedet."
+title: Konfigurere kontantstørrelser for salgsstedet
+description: Kontantstørrelser for sedler og mynter kan defineres i Back Office som skal brukes av kasserere, selgere og ledere i butikken ved salgsstedet.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343518"
 ---
-
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurere kontantstørrelser for salgsstedet
 
 [!include [banner](includes/banner.md)]
@@ -53,4 +52,3 @@ Ved kontantbetaling i salgsstedet POS kan brukeren bruke seddelstørrelsene til 
 
 - **Større eller lik det forfalte beløpet** – Som standard viser salgssted bare seddelstørrelser som er større enn det forfalte beløpet, noe som muliggjør ett trykks betaling. Hvis det forfalte beløpet for eksempel er $ 7,50, kan salgssted vise følgende størrelser: $ 10, $ 20, $ 50 og $ 100. Berøres noen av disse beløpene, gjennomføres automatisk salget for dette beløpet. Sedlene $1 og $5 vises ikke siden disse beløpene er lavere enn beløpet som forfaller.
 - **Alle størrelser** – Velg dette alternativet for alltid å vise alle seddelstørrelser i salgssted, uavhengig av forfalt beløp. Dette betyr at brukeren kan bruke en kombinasjon av sedler for å nå det forfalte beløpet. Hvis for eksempel det forfalte beløpet er $ 25,00, kan brukeren velge $ 20 og $ 5 for å fullføre salget.
-

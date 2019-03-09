@@ -1,13 +1,13 @@
 ---
 title: Frigi stykkliste- og formellinjer til lageret
-description: "Dette emnet beskriver prosessen for frigivelse av råvarer for stykklistelinjer og formellinjer til lageret."
+description: Dette emnet beskriver prosessen for frigivelse av råvarer for stykklistelinjer og formellinjer til lageret.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343150"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Metoden som brukes for å frigi stykkliste- og formellinjer styres av **Frigivel
 - **Frigi stykkliste- og formellinjer som en del av produksjons- eller partordrefrigivelse** – I denne metoden frigis stykkliste- og formellinjer for en produksjons- eller partiordre som en del av prosessen med å frigi ordren. Vanligvis under frigivelsen av en produksjons- eller partiordre, frigis produksjonsjobber frigis til produksjonsarbeiderne og produksjonspapirer skrives ut. Under denne prosessen endres også ordrens status til **Frigitt**.
 - **Frigi stykkliste- og formellinjer via en partijobb eller som en manuell samhandling** – I denne metoden kan stykkliste- og formellinjer bare frigis gjennom **Automatisk frigivelse av stykklister og formellinjer**-partijobben eller som en manuell samhandling. Hvis du vil frigi manuelt stykkliste- og formellinjer, velger du **Frigi til lager** på produksjonsordrelistesiden eller produksjonsordredetaljsiden i handlingsruten.
 
-For en rask demonstrasjon av hvordan du frigir stykkliste- og formellinjer til produksjon ved hjelp av en satsvis jobb, kan du se denne korte YouTube-videoen: [Frigi produksjonsplukking til lageret satsvist](https://www.youtube.com/watch?v=8urAJn50dQ8).
+For en rask demonstrasjon av hvordan du frigir stykkliste- og formellinjer til produksjon ved hjelp av en satsvis jobb, kan du se denne korte YouTube-videoen: [Frigi produksjonsplukking til lageret satsvis](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigi stykkliste- og formellinjer ved hjelp av en partijobb
 
@@ -84,7 +83,7 @@ Illustrasjonen nedenfor viser en produksjonsordre som har to operasjoner, 10 og 
 
 ![Eksempel på frigivelse av materiale per operasjonsnummer](media/two-operations.PNG)
 
-For en rask demonstrasjon av hvordan du frigir materiale i forhold til antall ferdigvarer, kan du se denne korte YouTube-videoen: [Forbedringer i frigivelsesprosessen for produksjonsordrer i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
+For en rask demonstrasjon av hvordan du frigir materiale i forhold til mengde ferdigvarer, kan du se denne korte YouTube-videoen: [Forbedringer i frigivelsesprosessen for produksjonsordrer i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigi materiale i forhold til mengde ferdigvarer
 
@@ -99,4 +98,3 @@ Du kan frigi råvarer for en delvis mengde ferdigvarer eller i en bestemt enhet.
     Enhetene som er tilgjengelige, er definert i enhetssekvensgruppe-ID-en for den ferdige varen.
 
     En ferdigvare har for eksempel følgende enhetsomregning mellom pund (lbs.) og pall (PL): 1 PL = 100 lbs. Hvis du vil opprette en produksjonsordre for 10 000 lbs. med ferdigvare, kan du frigi råvarer for antallet paller som du planlegger å produsere. Velg **PL** som enhet, og velg deretter et tilsvarende tall i **Antall**-feltet.
-

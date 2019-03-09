@@ -1,13 +1,13 @@
 ---
 title: Nye eller oppdaterte oppgaveveiledninger (mai 2016)
-description: "Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang."
+description: Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341356"
 ---
-
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -33,10 +32,10 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 
-(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Dynamics AX-versjonen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for hjelp for Microsoft Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
 > [!NOTE]
-> En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosess ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
+> En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosessen ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
 
@@ -195,4 +194,3 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
-

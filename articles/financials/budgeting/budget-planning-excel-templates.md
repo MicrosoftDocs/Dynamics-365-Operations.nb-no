@@ -1,13 +1,13 @@
 ---
-title: Maler for budsjettplanlegging for Excel
+title: Budsjettplanleggingsmaler for Excel
 description: Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337055"
 ---
-
-# <a name="budget-planning-templates-for-excel"></a>Maler for budsjettplanlegging for Excel
+# <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
 [!include [banner](../includes/banner.md)]
 
@@ -136,7 +135,6 @@ Ja, de fleste standard Excel-funksjonene virker i budsjettplanmaler. Vi anbefale
 Du kan også opprette og bruke pivottabeller og diagrammer for flere grupperinger og visualiseringer av budsjettdata. I **Data**-kategorien i **Tilkoblinger**-gruppen klikker du **Oppdater alle**, og klikker deretter **Tilkoblingsegenskaper**. Klikk kategorien **Bruk**. Under **Oppdater** velger du avmerkningsboksen **Oppdater data når filen åpnes**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

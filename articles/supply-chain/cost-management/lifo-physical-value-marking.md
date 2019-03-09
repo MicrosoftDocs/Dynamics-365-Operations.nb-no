@@ -1,13 +1,13 @@
 ---
 title: LIFO med fysisk verdi og merking
-description: "LIFO (\"Last in, First out\") er en lagermodell der de siste (nyeste) tilgangene tas ut først. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen."
+description: LIFO ("Last in, First out") er en lagermodell der de siste (nyeste) tilgangene tas ut først. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344208"
 ---
-
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   4a. Fysisk lagermottak av et antall på 1 til kost USD 30,00 per stykk.
 -   4b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   5a. Fysisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
--   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
+-   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med LIFO-metoden blir den sist økonomisk oppdaterte avgangen utlignet mot den sist økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD 10,00.
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
@@ -64,7 +63,7 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -98,7 +97,7 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transa
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -140,14 +139,13 @@ Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjo
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitspris.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
 - Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
-
 
 
 

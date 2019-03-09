@@ -5,9 +5,9 @@ author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e94b59540c9ef188a07e2e24ef4a04829b9d37f8
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341908"
 ---
-
 # <a name="retail-hierarchies"></a>Detaljhandelhierarkier
 
 [!include [banner](includes/banner.md)]
@@ -46,4 +45,3 @@ Tabellen nedenfor viser de tilgjengelige typene detaljhandelskategorihierarkier 
 | Navigasjonshierarki for detaljhandel   | Bruk denne hierarkitypen til å gruppere og ordne produkter i kategorier slik at produktene kan blas gjennom på Internett eller på salgsstedet. |
 
 Ved å bruke et hierarki for detaljhandelkategori til å strukturere produktene, kan du definere og vedlikeholde produktattributter og egenskaper på kategorinivå. Disse attributtene og egenskapene omfatter innstillinger for produktdimensjoner og POS-innstillinger. Alle produkter som du tilordner til kategoriene automatisk, arver attributtene og egenskapene som du definerer. Du kan også kopiere egenskapsinnstillingene for et produkt til flere produkter i en valgt kategori samtidig.
-

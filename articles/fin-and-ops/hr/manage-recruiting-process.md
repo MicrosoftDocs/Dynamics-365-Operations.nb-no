@@ -1,13 +1,13 @@
 ---
 title: Administrere rekrutteringsprosesser
-description: "Denne artikkelen beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en Rekruttering prosess, inkludert aktiviteter for å annonsere ledige stillinger og rekruttere søkere, spore søker- og søknadsinformasjon, intervjue søkere og velge én eller flere kandidater for å besette de ledige stillingene i organisasjonen."
+description: Denne artikkelen beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en Rekruttering prosess, inkludert aktiviteter for å annonsere ledige stillinger og rekruttere søkere, spore søker- og søknadsinformasjon, intervjue søkere og velge én eller flere kandidater for å besette de ledige stillingene i organisasjonen.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9695a7a3f98220f48627e85a51bc6dae5adb35c2
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345680"
 ---
-
 # <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprosesser
 
 [!include [banner](../includes/banner.md)]
@@ -105,4 +104,3 @@ Hvis en søknad må vurderes av flere arbeidere, kan du bruke siden **Søknadsru
 ## <a name="hiring-applicants"></a>Ansette søkere
 
 Bruk siden **Søknader** for å ansette en søker. Når du ansetter en søker, vil søknadsposten ha statusen **Ansatt** og søkerens personoppføring for global adressebok knyttes til den nye arbeiderposten. Endringer i den globale adressebokinformasjon for den nye arbeiderposten vises også i søkerposten. Dette kan redusere dataregistrering hvis den nye arbeideren fortsatt søker på en annen jobb innenfor organisasjonen. For å ansette en eksisterende arbeider til en ny stilling velger du **Endre stilling** i rullegardinmenyen **Søknadsstatus** for å starte overføringsprosessen.
-

@@ -1,13 +1,13 @@
---- 
-title: "Klargjøre en Kanban-prosessjobb når materialer ikke er tilgjengelige for arbeidscellen"
-description: "Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen materialer ikke er tilgjengelige for arbeidscellen. Derfor er det nødvendig å plukker materialer fra lageret."
+---
+title: Klargjøre en Kanban-prosessjobb når materialer ikke er tilgjengelige for arbeidscellen
+description: Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen materialer ikke er tilgjengelige for arbeidscellen. Derfor er det nødvendig å plukker materialer fra lageret.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f7e7eb46bda13ef7e72189f921686a9889a8773c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5a47af6910a9686e74ab6d1069dd02079e60cb8a
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339907"
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a>Klargjøre en Kanban-prosessjobb når materialer ikke er tilgjengelige for arbeidscellen
 
@@ -51,5 +51,4 @@ Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen mat
     * Vare P0002 er nå tilgjengelig i plukklisten for kanban-jobben. Dette betyr at vi kan forberede kanban med alle de nødvendige materialene.  
 6. Klikk Klargjør.
     * Legg merke til at et ikon i jobbstatusen angir at jobben er klar.  
-
 

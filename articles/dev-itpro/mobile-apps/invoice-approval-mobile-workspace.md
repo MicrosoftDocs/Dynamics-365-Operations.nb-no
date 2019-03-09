@@ -1,13 +1,13 @@
 ---
-title: "Mobilt arbeidsområde for fakturagodkjenning"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for fakturagodkjenning. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode."
+title: Mobilt arbeidsområde for fakturagodkjenning
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for fakturagodkjenning. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327004"
 ---
-
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilt arbeidsområde for fakturagodkjenning
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
 
-Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Oversikt
 
@@ -49,7 +48,7 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations må være distribuert i organisasjonen din.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations må distribueres i organisasjonen.</td>
 <td>Systemansvarlig</td>
 <td>Se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.
 </td>
@@ -72,7 +71,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 ## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 
 1.  Start appen på mobilenheten.
-2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
+2.  Angi URL-adressen for Microsoft Dynamics365.
 3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
@@ -88,4 +87,3 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 7.  Velg **Vedlegg** for å vise notater eller filer som er knyttet til fakturaen.
 8.  På siden **Fakturadetaljer** velger du riktig handling i arbeidsflyten forl å fullføre gjennomgangen.
 9.  Velg **Ferdig**.
-

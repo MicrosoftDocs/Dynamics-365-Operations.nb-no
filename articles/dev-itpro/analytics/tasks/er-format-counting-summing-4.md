@@ -1,13 +1,13 @@
---- 
-title: "ER Konfigurere format for å utføre telling og summering (del 4 - Kjøre format)"
-description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata."
+---
+title: ER Konfigurere format for å utføre telling og summering (del 4 - Kjøre format)
+description: De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, InventItemIdLookupSimple, IntrastatCommodityLookup, ERFormatMappingRunLogTable, DocuView
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 17989b7fa2baf14472ec19a041cb5ce7e5c0380d
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336204"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4-run-format"></a>ER Konfigurere format for å utføre telling og summering (del 4: Kjøre format)
 
@@ -31,7 +31,7 @@ De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som sy
 
 For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "ER Konfigurere format for å utføre telling og summering (del 3: Bruke beregninger for å lage utdata)".
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
 
 
 ## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a>Teste denne konfigurasjonen for generering av Intrastat-rapporter
@@ -103,5 +103,4 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 20. Klikk Vedlegg.
 21. Klikk Åpne.
     * Se gjennom den opprettede XML-filen som inneholder tellings- og summeringsdetaljer som ble samlet inn under kjøringen av den valgte konfigurasjonen.  
-
 

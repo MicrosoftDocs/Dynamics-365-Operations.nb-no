@@ -1,40 +1,39 @@
 ---
 title: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
-description: "Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales."
+description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348256"
 ---
-
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Før du kan bruke kundeemne til kontanter-løsningen, må du ha kjennskap til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
-Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
+Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere produkter direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
@@ -79,7 +78,7 @@ Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prisl
 
 > [!NOTE]
 > - Produktsynkronisering lykkes ikke hvis det ikke er en prisliste som har en tilhørende valuta.
-> - Du kan kontrollere den brukte prislisten med integreringen ved å tilordne pricelevelid.name [standard prisliste (navn)] i dataintegrasjonsprosjektet. Inndataene må være med bare små bokstaver. Standardverdien for en prisliste i Sales med navnet Standard, er for eksempel: Målfelt: pricelevelid.name [standard prisliste (navn)] og tilordningstype: [{"transformType": "Standard", "defaultValue": "standard"}].
+> - Du kan kontrollere den brukte prislisten med integreringen ved å tilordne pricelevelid.name [standard prisliste (navn)] i dataintegrasjonsprosjektet. Inndataene må være med bare små bokstaver. Standardverdien for en prisliste i Sales med navnet Standard, er for eksempel: Målfelt: pricelevelid.name [standard prisliste (navn)] og tilordningstype: [ { "transformType": "Standard", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -120,7 +119,6 @@ Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Datainteg
 [Synkronisere salgsordrehoder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales](sales-invoice-template-mapping-direct.md)
-
 
 
 

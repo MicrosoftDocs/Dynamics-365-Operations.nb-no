@@ -5,9 +5,9 @@ author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344530"
 ---
-
 # <a name="replenishment"></a>Etterfylling
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonso
 ## <a name="minmax-replenishment"></a>Etterfylling basert på minimums- og maksimumsantall
 I etterfylling basert på minimums- og maksimumsantall etterfylles lageret slik at det er mellom minimums- og maksimumsgrensene som er angitt. Vanligvis skjer denne prosessen en gang hver dag for å sikre at alle plukklokasjoner fylles til maksimumsnivået før plukkingen starter. 
 
-Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av batchjobben, evaluerer Microsoft Dynamics 365 for Finance and Operations om det er nødvendig med etterfylling ved å bruke sekvensen som linjene er organisert i. 
+Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer Microsoft Dynamics 365 for Finance and Operations om etterfylling kreves, ved å bruke rekkefølgen linjene er organisert i. 
 
 Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, kan ikke systemet fastsette hvilket element som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 
@@ -77,5 +76,4 @@ I stedet for å måtte oppsummere kravet på slutten av en allokasjonsprosess og
 |    Lokasjonsprofiler    |                                                                                                        Lokasjonsprofiler er nødvendig for å opprette lokasjoner.                                                                                                        |
 |   Lokasjonsdirektiver   |                                                       Lokasjonsdirektiver kreves for å veilede arbeidet til de lokasjonene hvor etterfylling er nødvendig, og til lokasjonene som beholdningen er hentet fra.                                                        |
 |     Arbeidsmaler      |                                                   Arbeidsmaler av typen <strong>Etterfylling</strong> er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner.                                                    |
-
 

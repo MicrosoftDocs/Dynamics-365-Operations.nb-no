@@ -1,13 +1,13 @@
---- 
-title: "Bruke konfigurasjoner for modelltilordning for aggregerte beregninger på databasenivået"
-description: "Denne fremgangsmåten gir informasjon om hvordan du utformer en ny konfigurasjon for ER-modelltilordning (elektronisk rapportering) og bruker innebygde ER-funksjoner for effektive aggregerte beregninger."
+---
+title: Bruke konfigurasjoner for modelltilordning for aggregerte beregninger på databasenivået
+description: Denne fremgangsmåten gir informasjon om hvordan du utformer en ny konfigurasjon for ER-modelltilordning (elektronisk rapportering) og bruker innebygde ER-funksjoner for effektive aggregerte beregninger.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313641"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Bruke konfigurasjoner for modelltilordning for aggregerte beregninger på databasenivået
 
@@ -37,7 +37,7 @@ Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig el
 3. Velg Intrastat-modell\Intrastat-eksempeltilordning i treet.
 4. Klikk Utforming.
 5. Klikk Utforming.
-6. I treet velger du Dynamics 365 for Operations\Tabellposter.
+6. Velg Dynamics 365 for Operations\Tabellposter i treet.
 7. Klikk Legg til rot.
     * Legg til en ny datakilde som representerer postene du vil gruppere.  
 8. Skriv inn Transaksjoner i Navn-feltet.
@@ -116,5 +116,4 @@ Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig el
 67. Utvid 'Artikkelpost(Intrastat)' i treet.
 68. Klikk Lagre.
     * Legg merke til at "Utførelse på"-feltet angir at denne grupperingen vil bli utført under kjøring i minnet selv om det ikke er definert noen aggregeringer og den valgte datakilden av typen Tabellposter refererer til den samme Intrastat-tabellen. Dette skyldes at datakilden inneholder enkelte beregnede felt som ennå ikke kan oversettes til SQL-databasenivået.  
-
 

@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5e05c0c195ddb948547ae008d050686bbcdc6ed3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d50cbba648beb9831e186cd160853abe79c4e4
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323324"
 ---
-
 # <a name="bonus-depreciation"></a>Bonusavskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Når bonusavskrivning beregnes ved av forslagsprosessen, opprettes det en bonusa
 Du kan opprette et ubegrenset antall bonusavskrivningsposter. Når du har tildelt disse postene til tablået for anleggsmiddelgruppe, brukes de for anleggsmiddeltablået. 
 
 Bonusavskrivning angis som en prosent eller et fast beløp. Når du posterer avskrivningsforslag, posteres bonusavskrivningstransaksjoner til tablået som transaksjoner som er atskilte fra avskrivningstransaksjonene.
-
 
 
 

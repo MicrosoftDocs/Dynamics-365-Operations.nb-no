@@ -1,14 +1,14 @@
 ---
 title: Elektroniske finanskonsolideringer
-description: "Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul."
+description: Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: fd29dc5f932c9cd274a42923e1ff659dd5d8e9d6
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341264"
 ---
-
 # <a name="consolidate-online"></a>Konsolider på nettet
 
 [!include [banner](../includes/banner.md)]
@@ -97,4 +96,3 @@ I kategorien **Valutaveksling** definerer du juridisk enhet, konto, valutakursty
 Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
-

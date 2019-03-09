@@ -1,13 +1,13 @@
 ---
 title: Opprette og behandle et avvik
-description: "Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre."
+description: Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eksisterende kvalitetsordre.
 author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5187c44aac881273900b2fc0ca91045a65cd838
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336296"
 ---
 # <a name="create-and-process-a-conformance"></a>Opprette og behandle et avvik
 
@@ -78,4 +78,3 @@ Bruk denne fremgangsmåten til å utføre behandling av avvik, basert på en eks
 3. Klikk Ja.
 4. Lukk siden.
 5. Lukk siden.
-

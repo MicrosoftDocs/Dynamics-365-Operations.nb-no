@@ -1,13 +1,13 @@
 ---
 title: Definere mobilenheter for lagerarbeid
-description: "Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet."
+description: Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347957"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
 [!include [banner](../includes/banner.md)]
@@ -208,12 +207,12 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>Ingen</td>
 <td>Denne standardverdien behandler ikke arbeid.</td>
 </tr>
 <tr class="even">
 <td>Systemstyrt</td>
-<td>Microsoft Dynamics 365 for Finance and Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider, og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
 </tr>
 <tr class="odd">
 <td>Brukerstyrt</td>
@@ -225,7 +224,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
-<td>Microsoft Dynamics 365 for Finance and Operations grupperer arbeid for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
+<td>Microsoft Dynamics 365 for Finance and Operations-grupper arbeider for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
 <ul>
 <li><strong>Systemgrupperingsfelt</strong> – Velg feltet som arbeideren skanner for å gruppere arbeidet.</li>
 <li><strong>Systemgrupperingsetikett</strong> – Skriv inn tekst for å informere arbeideren om hva som må skannes for å gruppere arbeidet.</li>
@@ -246,7 +245,7 @@ Dette alternativet er for eksempel nyttig når flere paller klargjøres for en l
 </tr>
 <tr class="even">
 <td>Gruppering av syklustelling</td>
-<td>Arbeideren velger en sone, arbeidspulje eller lokasjon, og Microsoft Dynamics 365 for Finance and Operations tilordner arbeid basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
+<td>Arbeideren velger en sone, arbeidspulje eller plassering, og Microsoft Dynamics 365 for Finance and Operations tilordner arbeid som er basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
 </tr>
  <tr class="odd">
 <td>Transportlasting</td>
@@ -371,7 +370,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Systemgrupperingsetikett</td>
-<td>Angi teksten som skal informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Microsoft Dynamics 365 for Finance and Operations. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
+<td>Angi teksten som vil informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Microsoft Dynamics 365 for Finance and Operations. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
 </tr>
 <tr class="even">
 <td>Bruk standarddata</td>
@@ -420,6 +419,5 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 
 [Definere et menyelement for mobilenhet for å registrere mottatte varer (oppgaveveiledning)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Fordeler ved å bruke lagerstatuser](../inventory/inventory-statuses.md)
-
 
 

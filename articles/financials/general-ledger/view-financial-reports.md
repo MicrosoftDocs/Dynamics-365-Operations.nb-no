@@ -1,13 +1,13 @@
 ---
 title: Vis finansrapporter
-description: "Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder."
+description: Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312951"
 ---
-
 # <a name="view-financial-reports"></a>Vis finansrapporter
 
 [!include [banner](../includes/banner.md)]
@@ -88,7 +87,6 @@ Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten
 --------
 
 [Finansrapportering for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
-
 
 
 

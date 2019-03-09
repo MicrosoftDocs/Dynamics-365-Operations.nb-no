@@ -1,32 +1,31 @@
 ---
 title: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
-description: "Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: efe943f5c874ed041ce7984272ebc19f57cca6ef
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313802"
 ---
-
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 11/01/2018
 Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Før du kan bruke kundeemne til kontanter-løsningen, må du ha kjennskap til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
@@ -141,5 +140,4 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i datainte
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
-
 

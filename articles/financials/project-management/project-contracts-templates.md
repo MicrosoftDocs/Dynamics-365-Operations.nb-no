@@ -1,13 +1,13 @@
 ---
 title: Synkronisere prosjektkontrakter og prosjekter direkte fra Project Service Automation til Finance and Operations
-description: "Dette emnet beskriver malen og underliggende oppgaver som brukes til å synkronisere prosjektkontrakter og prosjekter direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet beskriver malen og de underliggende oppgavene som brukes til å synkronisere prosjektkontrakter og prosjekter direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312123"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synkronisere prosjektkontrakter og prosjekter direkte fra Project Service Automation til Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver malen og underliggende oppgaver som brukes til å synkronisere prosjektkontrakter og prosjekter direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet beskriver malen og de underliggende oppgavene som brukes til å synkronisere prosjektkontrakter og prosjekter direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE] 
 > Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.0, må du installere KB 4074835.
@@ -47,7 +46,7 @@ Illustrasjonen nedenfor viser hvordan dataene synkroniseres mellom Project Servi
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
-For å få tilgang til de tilgjengelige malene velg **Prosjekter** i administrasjonssenter for Microsoft PowerApps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
+For å få tilgang til tilgjengelige maler velg **Prosjekter** i administrasjonssenter for Microsoft PowerApps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
 
 Følgende mal og underliggende oppgaver brukes til å synkronisere prosjektkontrakter og prosjekter fra Project Service Automation til Finance and Operations:
 
@@ -135,4 +134,3 @@ Illustrasjonen nedenfor viser eksempler på maloppgavetilordningene i Dataintegr
 [![Tilordning av mal](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Tilordning av mal](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

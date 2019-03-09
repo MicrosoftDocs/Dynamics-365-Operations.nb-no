@@ -1,13 +1,13 @@
 ---
 title: Oversikt over produktkonfigurasjonsmodeller
-description: "Denne artikkelen definerer termer og begreper som er relevante for produktkonfigurasjonsmodeller. Produktkonfigurasjonsmodeller lar deg bygge en generell produktstruktur som kan brukes til å konfigurere mange produktvarianter for ett enkelt produkt."
+description: Denne artikkelen definerer termer og begreper som er relevante for produktkonfigurasjonsmodeller. Produktkonfigurasjonsmodeller lar deg bygge en generell produktstruktur som kan brukes til å konfigurere mange produktvarianter for ett enkelt produkt.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313963"
 ---
-
 # <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
 
 [!include [banner](../includes/banner.md)]
@@ -133,7 +132,7 @@ En systemdefinert tabellbegrensning representerer en tilordning mellom et attrib
 <li>Velg <strong>Produktstandard</strong> i feltet <strong>Produktets undertype</strong>.</li>
 <li>I feltet <strong>Konfigurasjonsteknologi</strong> velger du <strong>Restriksjonsbasert konfigurasjon</strong>.</li>
 </ul>
-Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent i kategorien <strong>Generelt</strong> på siden <strong>Detaljer om frigitt produkt</strong>. Hvis <strong>Restriksjonsbasert konfigurasjon</strong> er valgt i feltet <strong>Konfigurasjonsteknologi</strong>, kan produktet brukes som en komponent eller delkomponent. Du kan skjule delkomponenter slik at de ikke vises for brukeren under en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet delkomponenten, skjules også.</td>
+Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent i kategorien <strong>Generelt</strong> på siden <strong>Detaljer om frigitt produkt</strong>. Hvis <strong>Restriksjonsbasert konfigurasjon</strong> er valgt i feltet <strong>Konfigurasjonsteknologi</strong>, kan produktet brukes som en komponent eller delkomponent. Du kan skjule delkomponenter, slik at de ikke vises for brukeren under en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet delkomponenten, skjules også.</td>
 </tr>
 <tr class="odd">
 <td>Brukerkrav</td>
@@ -141,7 +140,7 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 </tr>
 <tr class="even">
 <td>Stykklistelinjer</td>
-<td>Stykklistelinjer representerer de individuelle materialene for komponentene i produktkonfigurasjonsmodellen. På siden <strong>Detaljer om stykklistelinje</strong> er alle varer valgbare. Det kan legges til en betingelse på stykklistelinjen slik at stykklistelinjer som velges for en spesifikk produktvariant, kan variere, basert på brukerens valg når produktkonfigurasjonsmodellen konfigureres. Betingelser er uttrykk som må oppfylles for at attributter, stykklistelinjer og ruteoperasjoner skal inkluderes i en produktkonfigurasjonsmodell. På siden <strong>Detaljer om stykklistelinje</strong> kan du velge en spesifikk verdi. Du kan også tilordne til et attributt at verdien er valgt når produktkonfigurasjonsmodellen konfigureres.</td>
+<td>Stykklistelinjer representerer de individuelle materialene for komponentene i produktkonfigurasjonsmodellen. På siden <strong>Detaljer om stykklistelinje</strong> er alle varer valgbare. Det kan legges til en betingelse på stykklistelinjen, slik at stykklistelinjer som velges for en spesifikk produktvariant, kan variere basert på brukerens valg når produktkonfigurasjonsmodellen konfigureres. Betingelser er uttrykk som må oppfylles for at attributter, stykklistelinjer og ruteoperasjoner skal inkluderes i en produktkonfigurasjonsmodell. På siden <strong>Detaljer om stykklistelinje</strong> kan du velge en spesifikk verdi. Du kan også tilordne til et attributt at verdien er valgt når produktkonfigurasjonsmodellen konfigureres.</td>
 </tr>
 <tr class="odd">
 <td>Ruteoperasjoner</td>
@@ -149,7 +148,6 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 </tr>
 </tbody>
 </table>
-
 
 
 

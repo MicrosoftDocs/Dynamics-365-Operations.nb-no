@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette Internett-kanal og definere kanalattributter
-description: "Denne prosedyren hjelper med å opprette en ny Internett-kanal og legge den til i organisasjonshierarkiet."
+description: Denne prosedyren hjelper med å opprette en ny Internett-kanal og legge den til i organisasjonshierarkiet.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312376"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Opprette Internett-kanal og definere kanalattributter
 
@@ -60,5 +60,4 @@ Denne prosedyren hjelper med å opprette en ny Internett-kanal og legge den til 
 9. Klikk Publiser for å åpne nedtrekksdialogen.
 10. Angi dato og klokkeslett i feltet Gyldighetsdato.
 11. Klikk Publiser.
-
 

@@ -5,9 +5,9 @@ author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317298"
 ---
-
 # <a name="schedule-workload-capacity"></a>Planlegge kapasitet for arbeidsmengde
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Hvis denne informasjonen ikke blir korrekt spesifisert, vil du motta en melding 
 3. I feltet **Ordretype** velger du **Planlagt og bekreftet**, **Planlagt** eller **Bekreftet** for å angi hvilke typer ordrer som skal prosjekteres i rapporten.
 4. Velg en belastningstype i **Belastningstype**-feltet for å angi om arbeidsmengdekapasiteten skal prosjekteres for volum eller vekt.
 5. I feltet **Arbeidsmengdekapasitet** velger du et arbeidsmengdekapasitetsoppsett.
-

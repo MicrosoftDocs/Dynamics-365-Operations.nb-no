@@ -1,13 +1,13 @@
 ---
 title: Regnskapsdistribusjoner
-description: "Denne artikkelen inneholder informasjon om regnskapsdistribusjoner og beskriver alternativene som er tilgjengelige for behandling av dem. Regnskapsdistribusjoner brukes til å tildele pengebeløp for et kildedokument til bestemte finanskontoer."
+description: Denne artikkelen inneholder informasjon om regnskapsdistribusjoner og beskriver alternativene som er tilgjengelige for behandling av dem. Regnskapsdistribusjoner brukes til å tildele pengebeløp for et kildedokument til bestemte finanskontoer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ba6a581efe8353ccb9e02606db58d18550d71af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 52cb689723584c862d85fa51a643b42096372a29
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320472"
 ---
-
 # <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
 [!include [banner](../includes/banner.md)]
@@ -53,10 +52,9 @@ Generiske funksjoner for regnskapsdistribusjon gir følgende alternativer for be
     -   **Rett**-knappen vises og er aktivert for dokumenter som støtter rettelser. **Rett** oppretter nye distribusjoner. Først opprettes distribusjoner som de opprinnelige distribusjonene. Disse distribusjonene kan ikke endres. Deretter opprettes nye, riktige regnskapsdistribusjoner. Disse distribusjonene kan endres hvis de opprinnelige distribusjonene kan endres.
     -   **Prosjektdetaljer**-knappen aktiveres som en utvidelse når en linje knyttes til et prosjekt. Prosjektregnskapsdistribusjoner gjøre at du kan endre detaljer, for eksempel finansieringskilden og linjeegenskapen.
     -   Du kan vise gjeldende regnskapsstatus for dokument i **Referanse**. Statusen er for hele dokumentet og angir om dokumentet er under behandling eller fullført.
--   ** Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjene og pengebeløpene i dokumentet. Du kan ikke endre regnskapsdistribusjonene fra denne visningen.
+-   **Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjene og pengebeløpene i dokumentet. Du kan ikke endre regnskapsdistribusjonene fra denne visningen.
 
 
 Se [Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) for mer informasjon.
-
 
 

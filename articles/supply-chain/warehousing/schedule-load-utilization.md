@@ -1,13 +1,13 @@
 ---
 title: Planlegg kapasitetsutnyttelse
-description: "Dette emnet forklarer hvordan du definerer og planlegger belastningen på et lager."
+description: Dette emnet forklarer hvordan du definerer og planlegger belastningen på et lager.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 15f3735f79671ac41789d39a5473722a5f35fde0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d52ad452c615a61739582431fcd100a7efa3d93a
-ms.openlocfilehash: 350666cee8f2643c53e9eed8ee73299bbea1e757
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332041"
 ---
-
 # <a name="schedule-load-utilization"></a>Planlegg kapasitetsutnyttelse
 
 [!include[banner](../includes/banner.md)]
@@ -73,4 +72,3 @@ Du kan prosjektere plassutnyttelsen ved å generere rapporten **Utnyttelse av la
 
 4. I feltet **Belastningstype** velger du **Volum** eller **Vekt** for å angi to lagerdriftsenheten du vil prosjektere plass for.
 5. Angi oppsettet for plassbruk som prosjekteringen skal baseres på, i feltet **Plassbrukoppsett**.
-

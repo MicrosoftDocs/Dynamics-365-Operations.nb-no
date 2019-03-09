@@ -1,13 +1,13 @@
 ---
-title: "Søk etter produkter og produktvarianter under ordreregistrering"
-description: "Bruk feltet **Varenummer** til å søke etter produkter og produktvarianter når du oppretter en salgsordrelinje eller en bestillingslinje manuelt. Dermed kan du raskt finne produktvarianter når du bare har konfigurasjonsstrengen eller én av produktdimensjonene tilgjengelige."
+title: Søk etter produkter og produktvarianter under ordreregistrering
+description: Bruk feltet **Varenummer** til å søke etter produkter og produktvarianter når du oppretter en salgsordrelinje eller en bestillingslinje manuelt. Dermed kan du raskt finne produktvarianter når du bare har konfigurasjonsstrengen eller én av produktdimensjonene tilgjengelige.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323117"
 ---
-
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søk etter produkter og produktvarianter under ordreregistrering
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Bruk feltet **Varenummer** til å søke etter produkter og produktvarianter når
 
 Noen ganger er det å ha for mye av noe ikke den beste situasjonen å være i, og dette er spesielt viktig hvis du selger en rekke produkter som er like, og du samtidig prøver å huske varenumre eller navn i produktsøk for å finne det riktige produktet til en salgsordre. Du kan bruke feltet **Varenummer** på en salgsordrelinje eller en bestillingslinje som et søkefelt. Du kan angi en del av et produktnavn, tall eller dimensjon og få et oppslag som viser alle elementene som samsvarer med søkeordet.
 
-## <a name="how-search-works"></a>Slik fungerer søket
+## <a name="how-searchworks"></a>Slik fungerer søket
 Når du søker etter produkter og produktvarianter, er det viktig å forstå hvordan søkefunksjonen finner produktene som samsvarer med teksten du angir. De viktigste søkereglene for å levere søkeresultater er:
 
 -   Søkeresultatene vil returnere en samsvarende post, uavhengig av feltet som søketeksten er angitt i.
@@ -47,7 +46,7 @@ Når du søker etter produkter og produktvarianter, er det viktig å forstå hvo
 
 ### <a name="examples"></a>Eksempler
 
-Følgende eksempler bruker produkter og produktvarianter som illustrerer hvordan søk skal håndteres i ulike scenarier. **Forutsetning:** Under **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere &gt; Søketype** velger du alternativet **Fullstendig samsvar**.
+Følgende eksempler bruker produkter og produktvarianter som illustrerer hvordan søk skal håndteres i ulike scenarier. **Forutsetning:** Under **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere &gt; Søketype** velger du alternativet **Fullstendig samsvar**.
 
 | Produkttype     | Produktnavn    | Visningsproduktnummer | Varenummer | Konfigurasjon |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -61,14 +60,14 @@ Hvis du skriver inn "05", får du bare den andre produktvarianten som resultat f
 
 Hvis du skriver inn "snakke 05", vil du ikke får noen treff. Dette skyldes at det søkes etter den fullstendige teksten som er angitt. Søket prøver ikke å finne "snakke", avgrenser deretter resultatene til de som inneholder "05".  
 
-Du kan begrense antallet søkeresultater ved å bruke feltet **Antall resultater** på siden **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere**. Hvis du setter dette feltet til 0, returneres alle søkeresultatene. Hvis du setter det til 10, returneres det for eksempel maksimalt 10 søkeresultater.
+Du kan begrense antallet søkeresultater ved å bruke feltet **Antall resultater** på siden **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere** . Hvis du setter dette feltet til 0, returneres alle søkeresultatene. Hvis du setter det til 10, returneres det for eksempel maksimalt 10 søkeresultater.
 
-## <a name="configure-the-product-search"></a>Konfigurere produktsøket
+## <a name="configure-the-productsearch"></a>Konfigurere produktsøket
 Før du kan bruke søkefunksjonen for produktet og produktvarianten, følger du denne fremgangsmåten for å konfigurere produktsøket. [![3 trinn for å konfigurere produktsøk\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
-### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Trinn 1: Ta med ID-er og dimensjoner for alle relevante produkter og produktvarianter i søkekriteriene
+### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Trinn 1: Ta med ID-er og dimensjoner for alle relevante produkter og produktvarianter i søkekriteriene
 
-Eksempler på ID-er og dimensjoner for produkter og produktvarianter som du kan søke etter, er **Produktnavn, Varenummer**, **Visningsproduktnummer, Konfigurasjon, Farge, Størrelse, Stil, Søkenavn osv**.  
+Eksempler på ID-er og dimensjoner for produkter og produktvarianter som du kan søke etter, er **Produktnavn, Varenummer**, **Visningsproduktnummer, Konfigurasjon, Farge, Størrelse, Stil, Søkenavn osv**.  
 
 Gå til siden **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkekriterier**. På siden **Søkekriterier** kan du definere kriterier for kunde, kundeemne og produktsøk. Sørg for at du filtrerer siden ved å bruke produktsøkekriterier. Du kan gjøre dette ved å bytte til **Produkt** på menyen på siden.  
 
@@ -76,7 +75,7 @@ Hvis du vil legge til visningsproduktnummer i søkekriteriene, klikker du på **
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Trinn 2: Fylle ut databasetabellen som skal brukes for produktsøk
 
-På siden **Søkekriterier** klikker du knappen **Oppdater søkedata**. I dialogboksen **Oppdater søkedata** kontrollerer du at **Kilde** er satt til **Produkt** og klikker deretter **OK**. Systemet vil slå sammen alle søkekriterier som er angitt i trinn 1, i én tabell. Hvis du har mange produkter og produktvarianter, kan denne operasjonen ta ganske lang tid, og du mottar kanskje en advarsel. Det anbefales at du planlegger utfylling av søketabellen på den satsvise serveren på et tidspunkt da serveren ikke er for opptatt.  
+På siden **Søkekriterier** klikker du knappen **Oppdater søkedata**. I dialogboksen **Oppdater søkedata** kontrollerer du at  **Kilde** er satt til **Produkt**, og klikker deretter **OK**. Systemet vil slå sammen alle søkekriterier som er angitt i trinn 1, i én tabell. Hvis du har mange produkter og produktvarianter, kan denne operasjonen ta ganske lang tid, og du mottar kanskje en advarsel. Det anbefales at du planlegger utfylling av søketabellen på den satsvise serveren på et tidspunkt da serveren ikke er for opptatt.  
 
 Inntil tabellen fylles ut, vil ikke produktsøk gi riktige resultater. Hvis du ikke får noen søkeresultater, må du sørge for at denne tabellen fylles ut.  
 
@@ -86,8 +85,7 @@ Tabellen trenger bare fylles ut når søkekriteriene blir endret. Nylig utgitte 
 
 Du kan aktivere denne funksjonaliteten ved å gå til **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere** og sette **Aktiver oppslag for søk** til **Ja** i kategorien **Generelt**.  
 
-For salgsordreregistrering er standard atferd å åpne siden **Produktsøk** når du begynner å skrive i feltet **Varenummer**, og deretter trykker du **Tab**-tasten. Siden **Produktsøk** endrer konteksten under oppretting av ordrelinjer, og kan anses som unødvendig påtrengende. Hvis du foretrekker å få søkeresultatene i et oppslag og ikke miste kontekst under ordrelinjeregistrering, kan du i stedet bruke søkeoppslaget. Hvis du søker etter et produkt eller en produktvariant, men ikke velger noe i oppslaget og trykker **Tab**-tasten, vises siden **Produktsøk**.
-
+For salgsordreregistrering er standard atferd å åpne siden **Produktsøk** når du begynner å skrive i feltet  **Varenummer**, og deretter trykker du **Tab**-tasten. Siden **Produktsøk** endrer konteksten under oppretting av ordrelinjer, og kan anses som unødvendig påtrengende. Hvis du foretrekker å få søkeresultatene i et oppslag og ikke miste kontekst under ordrelinjeregistrering, kan du i stedet bruke søkeoppslaget. Hvis du søker etter et produkt eller en produktvariant, men ikke velger noe i oppslaget og trykker **Tab**-tasten, vises siden **Produktsøk**.
 
 
 

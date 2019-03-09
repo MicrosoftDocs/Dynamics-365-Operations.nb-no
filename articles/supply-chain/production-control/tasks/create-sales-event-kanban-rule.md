@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en Kanban-regel for salgshendelse
-description: "Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløses under salgsordreopprettelse."
+description: Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløses under salgsordreopprettelse.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d2bee6e81acd029406c95237f0b4ba4ab2565ea1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f1f66157b2e74ad1b490e10112cbc121ac9826fb
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342023"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Opprette en Kanban-regel for salgshendelse
 
@@ -73,5 +73,4 @@ Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløse
 1. Klikk Produkt og forsyning.
 2. Klikk Vis utligningstre.
     * Legg merke til at en kanban med samme antall som salgslinjen er opprettet. Du kan også se materialutstedelsene som trengs for å produsere L0050. Dette er det siste trinnet i prosedyren.  
-
 

@@ -5,9 +5,9 @@ author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff4b40663f0da6bcc01b00f3f44cd8d8b43b56a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b35b8ea652ccb06c45b8091cc7f57e849e1a5915
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331627"
 ---
-
 # <a name="150-percent-reducing-balance-depreciation"></a>150 prosent saldoavskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 | Levetid i år             | 5      |
 | Årlig avskrivningsprosent | 30 %    |
 
-Metoden 150 % saldoavskrivning dividerer 150 prosent med antall levetidsår. Avskrivningsbeløpet for året beregnes ved å multiplisere denne prosentandelen med anleggsmiddelets netto bokført verdi.
+Metoden 150 % saldoavskrivning dividerer 150 prosent med antall levetidsår. Avskrivningsbeløpet for året beregnes ved å multiplisere denne prosentandelen med anleggsmiddelets netto bokført verdi.
 
 | Periode | Beregning av årlig avskrivningsbeløp | Bokført verdi             | Netto bokverdi på slutten av året |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
@@ -86,7 +85,6 @@ Metoden 150 % saldoavskrivning dividerer 150 prosent med antall levetidsår. Avs
 
 > [!NOTE]
 > Vanligvis når beløpet som beregnes ved å bruke 150% saldoavskrivningsmetode, blir mindre enn beløpet som ville blitt beregnet ved hjelp av den lineære metoden, går man over til lineær avskrivning resten av levetiden.
-
 
 
 

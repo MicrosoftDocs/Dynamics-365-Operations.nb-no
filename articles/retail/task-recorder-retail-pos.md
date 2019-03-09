@@ -1,13 +1,13 @@
 ---
 title: Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
-description: Dette emnet beskriver hvordan du bruker oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted.
+description: Dette emnet beskriver hvordan du bruker Oppgaveopptaker i Retail Modern POS og Cloud POS.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346002"
 ---
-
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker oppgaveopptaker i moderne salgssted for detaljhandel og skysalgssted.
+Dette emnet beskriver hvordan du bruker Oppgaveopptaker i Retail Modern POS og Cloud POS.
 
 ## <a name="overview"></a>Oversikt
 
@@ -56,7 +55,7 @@ Følg disse trinnene for å aktivere oppgaveopptak på salgssted.
 
 Følg denne fremgangsmåten for å opprette en ny registrering ved hjelp av oppgaveopptaker.
 
-1. Start moderne salgssted for detaljhandel og skysalgssted, og logg på.
+1. Start Retail Modern POS eller Cloud POS, og logg på.
 2. På **Innstillinger**-siden, i delen **Oppgaveopptaker**, klikker du **Åpne Oppgaveregistrering**. Ruten **Oppgaveopptaker** vises. Du kan klikke **Lukk**-knappen (**X**) i øvre høyre hjørne for å lukke ruten **Oppgaveopptaker** før du begynner et nytt opptak. For å åpne ruten igjen gjentar du trinn 2.
 
     [![Rute for oppgaveopptaker](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
@@ -69,7 +68,7 @@ Følg denne fremgangsmåten for å opprette en ny registrering ved hjelp av oppg
     > [![Spørsmålstegn](./media/help.jpg)](./media/help.jpg)
 
 4. Når du har klikket **Start**, går oppgaveopptak inn i opptaksmodus. Ruten for **oppgaveopptak** viser informasjon og kontroller som er knyttet til opptaksprosessen.
-5. Utfør handlingene du vil utføre i grensesnittet for moderne salgssted for detaljhandel og skysalgssted.
+5. Utfør handlingene du vil utføre i grensesnittet for Retail Modern POS eller Cloud POS.
 6. Klikk **Stopp** for å avslutte opptaksøkten.
 
 ## <a name="download-options"></a>Nedlastingsalternativer
@@ -80,7 +79,7 @@ Når du har avsluttet opptaksøkten, vises flere alternativer, slik at du kan la
 
 ### <a name="save-to-this-pc"></a>Lagre på denne PC-en
 
-Du kan bruke opptakspakken til å spille av en oppgaveveiledning, vedlikeholde opptaket eller redigere merknader i opptaket. (Denne funksjonen er ennå ikke implementert i Moderne salgssted for detaljhandel eller Skybasert salgssted.)
+Du kan bruke opptakspakken til å spille av en oppgaveveiledning, vedlikeholde opptaket eller redigere merknader i opptaket. (Denne funksjonen er ennå ikke implementert i Retail Modern POS og Cloud POS.)
 
 ### <a name="export-as-word-document"></a>Eksporter som Word-dokument
 
@@ -108,7 +107,7 @@ For å gjenoppta opptaksøkten når du har stanset midlertid, klikker du **Forts
 
 ### <a name="capture-screenshots"></a>Ta skjermbilder
 
-Oppgaveopptaker kan ta skjermbilder av brukergrensesnittet for Moderne salgssted for detaljhandel mens du tar opp en forretningsprosess. Hvis du vil aktivere opptaksfunksjonen for skjermbilde, kan du angi **Ta skjermbilder** til **Ja** og deretter kjøre opptaket. Når opptaket er fullført, klikker du på **Stopp** og laster ned Word-dokumentet. Dokumentet inneholder trinnene med relevante skjermbilder.
+Oppgaveopptaker kan ta skjermbilder av brukergrensesnittet for Retail Modern POS mens du tar opp en forretningsprosess. Hvis du vil aktivere opptaksfunksjonen for skjermbilde, kan du angi **Ta skjermbilder** til **Ja** og deretter kjøre opptaket. Når opptaket er fullført, klikker du på **Stopp** og laster ned Word-dokumentet. Dokumentet inneholder trinnene med relevante skjermbilder.
 
 > [!NOTE]
 > Funksjonen for å ta skjermbilder støttes ikke i skysalgssted.
@@ -137,14 +136,13 @@ Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveve
 
 Teksten du skriver inn i **Merknader**-feltet, vises *under* trinnteksten i oppgaveveiledningen. Hvis brukeren skal lese merknadsteksten, må han/hun utvide trinnteksten i popup-vinduet. Denne plasseringen er egnet for valgfritt lesemateriale eller annen informasjon som kan være nyttig for brukeren, men som brukeren ikke trenger for å fullføre handlingen.
 
-## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjelp i moderne salgssted for detaljhandel og skysalgssted
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjelp i Retail Modern POS og Cloud POS
 
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i moderne salgssted for detaljhandel og skysalgssted, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-and-ops/get-started/help-connect.md). Hjelp for moderne salgssted for detaljhandel og skysalgssted søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Microsoft Dynamics 365 for Retail, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
+Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i Retail Modern POS og Cloud POS, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-and-ops/get-started/help-connect.md). Hjelp for Retail Modern POS og Cloud POS søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Microsoft Dynamics 365 for Retail, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
 
 [![Hjelp-knappen](./media/help.jpg)](./media/help.jpg)
 
 Når du klikker en oppgaveveiledning i søkeresultatene, kan du se trinnene som et hjelpeemne eller eksportere trinnene til et Word-dokument.
 
 > [!NOTE]
-> Hjelp i moderne salgssted for detaljhandel Cloud POS henter ikke frem oppgaveveiledninger i henhold til hvilket skjema du bruker eller hva du holder på med. Du må skrive inn prosessnavnet i søkeboksen, og deretter klikke **Søk**.
-
+> Hjelp i Retail Modern POS og Cloud POS henter ikke frem oppgaveveiledninger i henhold til hvilket skjema du bruker eller hva du holder på med. Du må skrive inn prosessnavnet i søkeboksen, og deretter klikke **Søk**.

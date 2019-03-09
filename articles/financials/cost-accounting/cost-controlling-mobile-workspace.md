@@ -1,13 +1,13 @@
 ---
-title: "Mobilt arbeidsområde for kostnadskontroll"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst."
+title: Mobilt arbeidsområde for kostnadskontroll
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for kostnadskontroll. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: b6cdb69f32de2118e685c149605d50b78105c098
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 39578744654215795f43fec8dcc70c264b66fb0b
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317574"
 ---
-
 # <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Kostnadskontroll**. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 
-Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Oversikt
 Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusen for individuelle kostnadselementer.
@@ -144,5 +143,4 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 10. Velg koblingen **Detaljer for gjeldende periode**.
 11. Vise ytelsen til individuelle kostnadselementer.
 12. Du kan også søke etter bestemte kostnadselementer.
-
 

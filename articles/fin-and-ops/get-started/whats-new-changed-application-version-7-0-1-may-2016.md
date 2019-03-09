@@ -1,13 +1,13 @@
 ---
-title: Hva er nytt eller endret i Dynamics AX-programversjon 7.0.1 (mai 2016)
-description: Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX-programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
+title: Hva er nytt eller endret i Dynamics AX programversjon 7.0.1 (mai 2016)
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics AX programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314515"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Hva er nytt eller endret i Dynamics AX-programversjon 7.0.1 (mai 2016)
+# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Hva er nytt eller endret i Dynamics AX programversjon 7.0.1 (mai 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX-programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
+Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics AX programversjon 7.0.1. Denne versjonen ble utgitt i mai 2016, og har build-nummeret 7.0.1265.23014.
 
 ## <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
@@ -38,20 +37,20 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 | Konfigurer en dialogboks for kjøretid for utforming av rapporter for elektronisk rapportering (ER), slik at brukere kan velge finansdimensjonene de ønsker. | Ved kjøretid kan brukere velge flere finansdimensjoner i dialogboksen for å kjøre en ER-rapport. Detaljer om de valgte finansdimensjonene vises i det elektroniske dokumentet som genereres. |
 | Konfigurer tilgang til flere finansdimensjoner under utformingen av en ER-rapport via en enkelt tilordning til den aktuelle datakilden. | Samme ER-rapportkonfigurasjon kan brukes til å generere elektroniske dokumenter som presenterer transaksjonsdata sammen med detaljer for finansdimensjoner, uavhengig av hvor mange finansdimensjoner som er valgt av brukeren eller konfigurert for gjeldende juridiske enhet eller forekomst. |
 | Konfigurer en ER-rapport for å skrive inn data i dynamisk genererte kolonner i et elektronisk dokument som er opprettet i OPENXML-regnearkformat. | En ER-rapport kan registrere data i et OPENXML-regneark som genereres, via vannrett replikering av kolonner. Derfor kan den samme ER-rapportkonfigurasjonen brukes på nytt for å generere elektroniske dokumenter som har et annet antall dynamisk genererte kolonner. |
-| Konfigurer ER-mål slik at utdataresultatet av et format rettes mot bestemte mål: fil, e-post eller arkiv (Microsoft SharePoint-mappe eller Microsoft Azure Storage). | Tidligere, da du kjørte en ER-konfigurasjon, ble det vist en meldingsboks som krevde at brukerhandling for å lagre eller åpne en fil. Du kan forhåndskonfigurere separat et mål for hver formatkonfigurasjon og utdatakomponent (en mappe eller en fil). Brukere som har riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. |
+| Konfigurer ER-mål, slik at utdataresultatet av et format rettes mot bestemte mål: fil, e-post eller arkiv (Microsoft SharePoint-mappe eller Microsoft Azure Storage). | Tidligere, da du kjørte en ER-konfigurasjon, ble det vist en meldingsboks som krevde at brukerhandling for å lagre eller åpne en fil. Du kan forhåndskonfigurere separat et mål for hver formatkonfigurasjon og utdatakomponent (en mappe eller en fil). Brukere som har riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>Salgssted – Microsoft Dynamics AX Retail
 
 | Hva kan du gjøre? | Hvorfor er dette viktig? |
 |------------------|------------------------|
-| Bruk Google Chrome-nettleseren. | Forhandlere kan nå starte Skysalgssted fra Chrome-nettleseren, og kan bruke alle funksjoner som er tilgjengelige i Microsoft Edge og Internet Explorer-versjonen av Skysalgssted. |
+| Bruk Google Chrome-nettleseren. | Forhandlere kan nå starte Skysalgssted fra Chrome-nettleseren, og kan bruke alle funksjoner som er tilgjengelige i Microsoft Edge og Internet Explorer versjon av Cloud POS. |
 
 ## <a name="financial-reporting"></a>Finansrapportering
 
 | Hva kan du gjøre? | Hvorfor er dette viktig? |
 |------------------|------------------------|
 | Bygg data for finansrapportering på nytt. | Når du flytter Dynamics AX-databasene mellom miljøer eller gjør andre omfattende endringer i miljøet, kan det hende den økonomiske rapporteringsdatabasen må bygges på nytt. Et Windows PowerShell-skript følger nå med for å bygge databasen på nytt for deg. |
-| Du kan ikke lenger velge alternativer for rapportutforming som ikke er gyldige. | Flere alternativer for rapportutforming som ble brukt i markedsversjoner av Management reporter, gjelder ikke for denne versjonen av Dynamics AX. Disse alternativene er knyttet til økonomisk rapportutforming, utdata og kobling. Disse alternativene er fjernet fra Utforming av finansrapport for å hindre at brukerfeil. |
+| Du kan ikke lenger velge alternativer for rapportutforming som ikke er gyldige. | Flere alternativer for rapportutforming som ble brukt i markedsversjoner av Management Reporter, gjelder ikke for denne versjonen av Dynamics AX. Disse alternativene er knyttet til økonomisk rapportutforming, utdata og kobling. Disse alternativene er fjernet fra Utforming av finansrapport for å hindre at brukerfeil. |
 
 ## <a name="financial-management"></a>Økonomistyring
 
@@ -107,4 +106,3 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 [Hva er nytt eller endret?](whats-new-changed.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
-

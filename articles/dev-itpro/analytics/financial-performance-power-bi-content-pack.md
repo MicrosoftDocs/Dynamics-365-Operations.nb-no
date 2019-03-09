@@ -1,13 +1,13 @@
 ---
-title: "Finansresultat for PowerBI.com-løsning"
-description: "Dette emnet beskriver PowerBI.com-løsningen for finansresultat."
+title: Finansresultat for PowerBI.com-løsning
+description: Dette emnet beskriver PowerBI.com-løsningen for finansresultat.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315113"
 ---
-
 # <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
 [!include [banner](../includes/banner.md)]
@@ -90,4 +89,3 @@ Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresu
 - ChartofAccounts
 
 Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet.
-

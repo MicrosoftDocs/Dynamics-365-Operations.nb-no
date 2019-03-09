@@ -1,13 +1,13 @@
---- 
+---
 title: Definere ressursfunksjoner
-description: "Ressursfunksjoner beskriver hva operasjonsressursene kan utføre."
+description: Ressursfunksjoner beskriver hva operasjonsressursene kan utføre.
 author: sorenva
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0940883d0e9edf56e61b5ecd817062aac5e0f8a6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 99c230c0e6a580f77d863b6f0be298615966c479
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340160"
 ---
 # <a name="define-resource-capabilities"></a>Definere ressursfunksjoner
 
@@ -48,5 +48,4 @@ Ressursfunksjoner beskriver hva operasjonsressursene kan utføre. Under planlegg
     * Når du planlegger jobber og operasjoner, kan du angi om du velger ressursene etter prioritet. Hvis du vil gjøre dette, og mer enn én ressurs kan utføre jobben eller operasjonen etter ønsket dato, velges ressursen som har lavest prioritet i forhold til den nødvendige kapasiteten.  
 5. Angi et nummer i Nivå-feltet.
     * Når du angir at en jobb eller operasjon krever en bestemt funksjon, kan du også angi det minste tillatelsesnivå som kreves. Bruk ressursnivået til å skille mellom ressurser som kan utføre den samme jobben, men med forskjellige hastigheter, styrker, størrelser og så videre.  
-
 

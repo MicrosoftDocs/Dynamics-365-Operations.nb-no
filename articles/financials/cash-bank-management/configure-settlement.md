@@ -1,13 +1,13 @@
 ---
 title: Konfigurere utligning
-description: "Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Dette emnet beskriver parameterne som brukes for utligning for både leverandører og kunder."
+description: Hvordan og når transaksjonene utlignes kan det være komplekse temaer, slik at det er svært viktig at du forstår og definerer parameterne for å dekke dine forretningsbehov. Dette emnet beskriver parameterne som brukes for utligning for både leverandører og kunder.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319276"
 ---
-
 # <a name="configure-settlement"></a>Konfigurere utligning
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Hvis du vil unngå ekstra regnskapsoppføringer, debet og kreditt til samme fina
 
 -   Organisasjoner bruker ofte faste dimensjoner til å nullfylle en finansdimensjon som ikke er nødvendig. Dette er vanligvis tilfelle for balansekontoer, for eksempel leverandører/kunder. Kontostrukturer kan brukes til å ikke spore finansdimensjoner som vanligvis nullfylles.  Du kan fjerne finansdimensjonen for balansekontoer og dermed eliminere behovet for å bruke faste dimensjoner.
 -   Hvis organisasjonen din krever faste dimensjoner på kunder/leverandører-hovedkontoen, må du finne en måte å legge den faste dimensjonen til betalingen som standard, slik at den faste dimensjonsverdien lagres på leverandørtransaksjonen for betalingen. Dette gjør at systemet kan rekonstruere kunde/leverandør-hovedkontoen for å inkludere de faste dimensjonsverdiene. Den faste dimensjonsverdien kan defineres som en standard på enten leverandører eller journalnavnet for betalingsjournalen.
-

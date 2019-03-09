@@ -5,27 +5,26 @@ author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336595"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Sette opp kuponger for detaljhandelssalg
 
 [!include [banner](includes/banner.md)]
@@ -76,9 +75,8 @@ Før du kan definere en kupong, må du definere kupongens strekkode og to nummer
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen av delvis oppdateringer på kuponger
 
-Kupongfunksjonen består av flere forskjellige funksjoner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Detaljhandel Hovedkontor og kanalen kan delvis oppdateres på tvers av komponenter. Det er derfor viktig at du forstår hvordan delvise oppdateringer påvirker kupongfunksjonaliteten i sin helhet.
+Kupongfunksjonen består av flere forskjellige funksjoner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Retail Hovedkontor (HQ) og kanalen kan delvis oppdateres på tvers av komponenter. Det er derfor viktig at du forstår hvordan delvise oppdateringer påvirker kupongfunksjonaliteten i sin helhet.
 
 - **Hovedkontor oppdateres delvis, men Retail og POS oppdateres ikke.** I en Hovedkontor-oppdatering oppdateres kupong- og rabattsidene, og utsalgsprismotoren oppdateres også. Hvis bare én av de to komponentene oppdateres, vil enkelte av sidene i detaljhandel ikke stemme overens med prisberegningsdataene. Derfor kan uventede kontantberegninger eller feil oppstå under rabattberegninger.
 - **Hovedkontor oppdateres, men Retail og POS oppdateres ikke (N-1).** Fordi ikke alle detaljhandelbutikker kan oppdateres samtidig, anbefaler vi at du oppdaterer Hovedkontor før du oppdaterer detaljhandelbutikker. I scenarioet med N-1 vil ikke ny funksjonalitet som er knyttet til kuponger, være tilgjengelig i butikker som ennå ikke er oppdatert. Kupongfunksjonen introduserer for eksempel "utelat" linjer. Hvis du bruker utelat linjer i en rabatt, kan de ikke brukes i en butikk for detaljhandel som kjører en tidligere versjon.
 - **Hovedkontor oppdateres ikke, men detaljhandelsserver og POS oppdateres (N+1).** Fordi den oppdaterte prismotoren i detaljhandelsserver kan håndtere eldre rabattkoder under prisberegninger, skal ikke oppdateringen ha noen funksjonell innvirkning i dette scenariet.
-

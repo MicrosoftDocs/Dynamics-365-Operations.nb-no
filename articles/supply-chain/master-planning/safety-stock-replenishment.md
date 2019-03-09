@@ -1,32 +1,31 @@
 ---
-title: "Fullføring av sikkerhetslager for varer"
-description: "Dette emnet omhandler fullføring av sikkerhetslager og hvordan du konfigurerer sikkerhetslagerantall for varer."
+title: Fullføring av sikkerhetslager for varer
+description: Dette emnet omhandler fullføring av sikkerhetslager og hvordan du konfigurerer sikkerhetslagerantall for varer.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341540"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Fullføring av sikkerhetslager for varer
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Oppfylling av behovstransaksjonen for sikkerhetslageret er ikke prioritert hvis 
 Under dekningsfasen i hovedplanlegging er ikke etterfylling av sikkerhetslageret lenger underprioritert. Lagerbeholdningen kan brukes før eventuelle andre behovstyper. Under forsinkelsesberegningen legges den nye logikken til over de forsinkede salgslinjene, stykklistelinjebehovene og alle de andre behovstypene, for å bestemme om de kan leveres innen tidsfristen, forutsatt at sikkerhetslageret brukes. Hvis systemet identifiserer at det kan redusere forsinkelser ved å bruke sikkerhetslageret, vil salgslinjene eller stykklistelinjene erstatte den opprinnelige dekningen med sikkerhetslageret, og systemet vil utløse etterfylling for sikkerhetslageret i stedet.
 
 Hvis planen eller varen ikke er definert for forsinket beregning, vil sikkerhetslagerbegrensningen ha samme prioritet som andre behovstyper. Dette betyr at det er en reserve med lagerbeholdning og annen tilgjengelige beholdning før andre behovstyper.
-

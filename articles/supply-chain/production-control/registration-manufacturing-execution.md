@@ -1,13 +1,13 @@
 ---
-title: "Registrering for produksjonsutførelse"
-description: "Dette emnet beskriver viktige begreper og termer du må forstå for å kunne konfigurere og bruke produksjonsutførelse."
+title: Registrering for produksjonsutførelse
+description: Dette emnet beskriver viktige begreper og termer du må forstå for å kunne konfigurere og bruke produksjonsutførelse.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318172"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Registrering for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Arbeidere kan utføre ulike typer registreringer i produksjonsutførelse for arb
 -   **Registrere pauser** (tilgjengelig med tid og fremmøte) – I løpet av arbeidsdagen kan arbeidere registrere at de forlater arbeidsstasjonen for å ta en pause. Flere pausetyper kan defineres. Når en arbeider kommer tilbake og logger på på nytt, registrerer systemet at arbeideren er tilbake, og pauseregistreringen stopper.
 -   **Registrere indirekte aktiviteter** (tilgjengelig med tid og fremmøte) – Indirekte aktiviteter er ikke-produktive aktiviteter som arbeidere kan delta på i løpet av en arbeidsdag, for eksempel et avdelingsmøte, et teammøte eller en vedlikeholdsjobb i produksjonen. Arbeidere kan foreta registreringer på indirekte aktiviteter som er definert.
 -   **Registrere overtid** (tilgjengelig med tid og fremmøte) – Arbeidere som har blitt bedt om å arbeide utover vanlig arbeidstid, kan velge om de ekstra timene skal registreres som fleksitid eller overtid.
-
 
 
 

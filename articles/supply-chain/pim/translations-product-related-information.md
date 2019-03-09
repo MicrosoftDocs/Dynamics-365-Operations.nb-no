@@ -1,13 +1,13 @@
 ---
-title: "Vanlige spørsmål for produktrelaterte oversettelser"
+title: Vanlige spørsmål for produktrelaterte oversettelser
 description: Dette emnet beskriver hvordan du administrerer oversettelser for produkter, produktdimensjonsverdier og produktattributter.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Product information
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d124e2608f01878487bc8fc9af2e27d143c8ae9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342874"
 ---
-
 # <a name="product-related-translations-faq"></a>Vanlige spørsmål for produktrelaterte oversettelser
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Hvis du vil administrere oversettelser for verdier i en dimensjonsverdigruppe, g
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Når kan oversettelser av produktrelatert informasjon håndteres?
 Oversettelser av produktrelatert informasjon kan håndteres når som helst. Når oversettelser oppdateres for en dimensjonsverdi som er knyttet til et produkt, oppdateres produktinformasjonen, uavhengig av om produktet har transaksjoner.
-
 
 
 

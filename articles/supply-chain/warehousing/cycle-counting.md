@@ -1,13 +1,13 @@
 ---
 title: Syklustelling
-description: "Denne artikkelen beskriver hvordan du kan bruke syklustelling med datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Denne artikkelen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Beholdningsstyring."
+description: Denne artikkelen beskriver hvordan du kan bruke syklustelling med datalagerstyringsløsningen som er tilgjengelig i Lagerstyring. Denne artikkelen gjelder ikke for datalagerstyringsløsningen som er tilgjengelig i Beholdningsstyring.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323232"
 ---
-
 # <a name="cycle-counting"></a>Syklustelling
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Denne artikkelen beskriver hvordan du kan bruke syklustelling med datalagerstyri
 Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lagerbeholdning. Prosessen for syklustelling kan beskrives i tre trinn:
 
 1.  **Opprette syklustellingsarbeid** – Syklustellingsarbeid kan opprettes automatisk basert på terskelparameterne for varer, eller ved å bruke en syklustellingsplan. Du kan også opprette syklustellingsarbeid manuelt ved hjelp av vare- eller lagerparameterne på siden **Syklustellingsarbeid etter vare** eller siden **Syklustellingsarbeid etter lokasjon**.
-2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Finance and Operations. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
+2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Microsoft Dynamics 365 for Finance and Operations. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
 3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid**-siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
 
 Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
@@ -138,7 +137,6 @@ Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 [Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
-
 
 
 

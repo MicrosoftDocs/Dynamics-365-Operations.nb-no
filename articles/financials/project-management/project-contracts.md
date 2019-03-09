@@ -1,13 +1,13 @@
 ---
 title: Prosjektkontrakter
-description: "Dette emnet beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310375"
 ---
-
 # <a name="project-contracts"></a>Prosjektkontrakter
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver og gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations.
+Denne artikkelen gir eksempler på prosjektkontrakter som du kan opprette for forskjellige typer prosjekter og finansieringskilder, og hvordan du kan behandle kontrakter og fakturere prosjektkunder i Microsoft Dynamics 365 for Finance and Operations.
 
 Prosjekttypen du oppretter for en prosjektkontrakt, fastsetter metoden som brukes til å fakturere prosjektkunder. Du kan endre en prosjektkontrakt og det tilknyttede prosjektet, men du kan ikke endre prosjekttypen. 
 
@@ -342,7 +341,6 @@ Når du definerer prosjektkontrakten, godtar du å fakturere kunden månedlig fo
 -   Du oppretter en kundefaktura på slutten av hver kalendermåned i løpet av prosjektet.
 
 I løpet av den første måneden registrerer konsulentene totalt 800 timer på prosjektet. Kostnaden for kontorutstyr som belastes prosjektet, er 2000. På slutten av måneden kan du derfor opprette en faktura på 122 000, som beregnes til 800 timer til 150 per time, pluss 2 000 for kontorrekvisita.
-
 
 
 

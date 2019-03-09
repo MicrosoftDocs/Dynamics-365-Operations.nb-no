@@ -1,13 +1,13 @@
 ---
-title: Power BI-innhold om ansattutvikling
+title: Power BI-innholdet Ansattutvikling
 description: Dette emnet beskriver Power BI-innholdet om ansattutvikling.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347175"
 ---
-
-# <a name="employee-development-power-bi-content"></a>Power BI-innhold om ansattutvikling
+# <a name="employee-development-power-bi-content"></a>Power BI-innholdet Ansattutvikling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Power BI-innholdet om **ansattutvikling**.
+Dette emnet beskriver Microsoft Power BI-innholdet om **ansattutvikling**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 Rapporter som er inkludert i Power BI-innholdet **Ansattutvikling**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
@@ -70,4 +69,3 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 | Kompetanseanalyse, ansatt  | Sertifisert, nivå, nivådato og kompetanse                                                                    | Ansattnavn, kompetanse |
 | Ytelse              | Vurdering, beskrivelse og vurderingsmodell                                                                      | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
 | Kompetanse                    | Kompetanse, kompetansetype og vurdering                                                                              | Kompetanseanalyse – ansatt, Jobb – foretrukket kompetanse |
-

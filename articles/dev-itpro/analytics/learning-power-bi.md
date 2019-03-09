@@ -1,13 +1,13 @@
 ---
-title: "Opplæringsinnhold for Power BI"
-description: "Dette emnet beskriver opplæringsinnholdet i Power BI."
+title: Power BI-innholdet Opplæring
+description: Dette emnet beskriver Power BI-innholdet Opplæring.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321461"
 ---
-
-# <a name="learning-power-bi-content"></a>Opplæringsinnhold for Power BI
+# <a name="learning-power-bi-content"></a>Power BI-innholdet Opplæring
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,12 +30,12 @@ Dette emnet beskriver Microsoft Power BI-innholdet **Opplæring**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
-Rapporter som er inkludert i Power BI-innholdet **Opplæring**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
+Rapportene som er inkludert i Power BI-innholdet **Opplæring**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
 
 | Rapporter                | Innhold |
 |-----------------------|----------|
 | Oversikt over opplæring     | Sammendrag av andre rapporter |
-| Kursanalyse       | Registrering etter plassering, deltakere etter status, kurs etter type per firma og kursfremmøte etter jobb |
+| Kursanalyse       | Registrering etter plassering, deltakere etter status, kurs etter type per firma og kursfremmøte etter jobb |
 | Registreringsanalyse | Registreringsliste |
 | Kurstyper          | Kurstyper etter kompetanse |
 | Instruktøranalyse   | Forholdet mellom kurs og instruktører, antall instruktører, kurs etter instruktør, kurs per instruktør og kursagenda etter instruktør |
@@ -64,4 +63,3 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Opplæri
 | Posisjon         | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Kursagenda, kursdeltakere |
 | Navn på ansatt    | Fornavn, etternavn og fullt navn                             | Kursdeltakere |
 | Ansattittel   | Tittel og ansiennitetsdato                                         | Kursdeltakere |
-

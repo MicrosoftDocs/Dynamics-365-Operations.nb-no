@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en produksjonsflytversjon
-description: "Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon."
+description: Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320679"
 ---
 # <a name="create-a-production-flow-version"></a>Opprette en produksjonsflytversjon
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For denne prosedyren må produksjonsparameterne for lean manufacturing og måleenheter for klassen Tid defineres. Du må også definere en verdistrøm og en produksjonsgruppe. Hvis du vil vite mer om produksjonsflyter og aktiviteter i lean manufacturing, kan du se i hvitebøkene om Lean manufacturing for Microsoft Dynamics AX. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For denne prosedyren må produksjonsparameterne for lean manufacturing og måleenheter for klassen Tid defineres. Du må også definere en verdistrøm og en produksjonsgruppe. Hvis du vil vite mer om produksjonsflyter og aktiviteter i lean manufacturing, kan du se i hvitebøkene om Lean manufacturing for Microsoft Dynamics AX Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 
 ## <a name="create-a-production-flow"></a>Opprette en produksjonsflyt
@@ -63,5 +63,4 @@ Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For den
 12. Angi et tall i feltet Periode for faktisk syklustid (dager).
     * Angi antall dager i perioden for faktisk syklustid. Perioden for faktisk syklustid er antall dager jobber aggregeres fra det faktiske minuttet bakover for å beregne den faktiske syklustiden. Verdien kan endres når som helst, og brukes bare for beregning av de faktiske syklustider.  
 13. Klikk Lagre.
-
 

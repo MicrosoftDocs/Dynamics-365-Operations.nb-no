@@ -1,13 +1,13 @@
 ---
-title: "Det mobile arbeidsområdet Reiseregning og utlegg"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for reiseregning og utlegg. Dette arbeidsområdet lar brukere registrere og laste opp en kvittering, slik at de kan knytte det til en reiseregningsrapport senere. Brukere kan også raskt opprette en utgiftslinje ved hjelp av en tilknyttet mottak, og opprette og administrer reiseregninger."
+title: Det mobile arbeidsområdet Reiseregning og utlegg
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for reiseregning og utlegg. Dette arbeidsområdet lar brukere registrere og laste opp en kvittering, slik at de kan knytte det til en reiseregningsrapport senere. Brukere kan også raskt opprette en utgiftslinje ved hjelp av en tilknyttet mottak, og opprette og administrer reiseregninger.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344346"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Mobilt arbeidsområde for reiseregninger og utlegg
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Dette emnet gir informasjon om det mobile arbeidsområdet for **reiseregning og utlegg**. Dette arbeidsområdet lar brukere registrere og laste opp en kvittering, slik at de kan knytte det til en reiseregningsrapport senere. Brukere kan også raskt opprette en utgiftslinje ved hjelp av en tilknyttet mottak, og opprette og administrer reiseregninger. Godkjennere kan også bruke det mobile arbeidsområdet for **reiseregninger og utlegg** til å vise utgifter som er tilordnet til dem, og enten godkjenne eller avvise de reiseregninger.
 
 
-Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 
 ## <a name="overview"></a>Oversikt
@@ -42,7 +41,7 @@ Mange organisasjoner krever at en kopi av en kvittering knyttes til en reiserela
 
 Det mobile arbeidsområdet for **reiseregninger og utlegg** lar brukere utføre disse oppgavene:
 
-- Ta et bilde av en kvittering og laste den opp til Microsoft Dynamics 365 for Finance and Operations. Du kan deretter knytte bildet til en reiseregningsrapport senere.
+- Ta et bilde av en kvittering og last den opp til Microsoft Dynamics 365 for Finance and Operations. Du kan deretter knytte bildet til en reiseregningsrapport senere.
 - Laste opp en fil som en registrerte kvitteringer. Du kan deretter knytte filen til en reiseregningsrapport senere.
 - Opprette en ny utgiftslinje ved hjelp av en tilknyttet kvittering. Du kan deretter legge til linjeelementet i en reiseregningsrapport senere, og sende den inn til godkjenning og refusjon.
 
@@ -61,7 +60,7 @@ Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, kan du også b
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations 
-Hvis Microsoft Dynamics 365 for Finance and Operations har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Reiseregninger og utlegg**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Microsoft Dynamics 365 for Finance and Operations har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Reiseregning**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
@@ -94,7 +93,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Laste ned og installere Dynamics 365 for Operations-mobilappen
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Last ned og installer mobilappen for Dynamics 365 for Operations.
 Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 - [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -243,4 +242,3 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 22. Velg **Send**.
 23. Skriv inn eventuelle kommentarer for godkjenneren.
 24. Velg **Ferdig**.
-

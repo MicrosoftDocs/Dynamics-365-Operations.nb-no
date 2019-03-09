@@ -1,13 +1,13 @@
 ---
 title: Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
-description: "Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Med den ene metoden oppretter du en forskuddsbetalt faktura som er knyttet til en bestilling. Med den andre metoden oppretter du journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling."
+description: Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Med den ene metoden oppretter du en forskuddsbetalt faktura som er knyttet til en bestilling. Med den andre metoden oppretter du journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310145"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Forskuddsbetalte fakturaer er vanlig forretningspraksis. En leverandør sender f
 3.  Leverandørkoordinatoren registrerer den forskuddsbetalte fakturaen mot bestillingen, og deretter betales den forskuddsbetalte fakturaen.
 4.  Når leverandøren har levert varene eller tjenestene, og de tilknyttede leverandørfakturaene er mottatt, bruker leverandørkoordinatoren forskuddsbetalingsbeløpet som allerede er betalt mot fakturaen.
 5.  Leverandørkoordinatoren betaler og utligner det gjenstående beløpet på fakturaen.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Bygge en produktkonfigurasjonsmodell
-description: "Behovet for å konfigurere produkter som dekker spesielle behov, er i ferd med å blir regelen i stedet for unntaket, både i relasjoner for bedrift-til-bedrift og firma-til-kunde."
+description: Behovet for å konfigurere produkter som dekker spesielle behov, er i ferd med å blir regelen i stedet for unntaket, både i relasjoner for bedrift-til-bedrift og firma-til-kunde.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327464"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Bygge en produktkonfigurasjonsmodell
 
 [!include [banner](../includes/banner.md)]
@@ -158,7 +157,6 @@ Formålet med konfigurasjonen er å opprette en spesifikk variant av produktet s
 ### <a name="multiple-sites-and-intercompany"></a>Flere områder og konserninterne
 
 Hvis konfigurasjonen utføres på et område, eller med et firma, som er forskjellig fra området eller firmaet der produksjonen skal foregå, blir stykklisten og ruten opprettet for og plassert på leverandørområdet hos leveringsfirmaet. Produktvarianten lanseres i alle firmaene som deltar i forsyningskjeden.
-
 
 
 

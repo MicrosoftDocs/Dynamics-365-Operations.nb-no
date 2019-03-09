@@ -1,13 +1,13 @@
---- 
+---
 title: Definere og generere informasjon om aldersfordeling for kunde
-description: "Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordelingsperioden, aldersfordele kundesaldoer og vise saldoer i den aldersfordelte saldolisten og Innkrevinger-siden."
+description: Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordelingsperioden, aldersfordele kundesaldoer og vise saldoer i den aldersfordelte saldolisten og Innkrevinger-siden.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9fd8738cfd3466464c9fec1760e9a369ff3a4a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e9f393acaa47d485a583b99ace459474f30be6a
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334640"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Definere og generere informasjon om aldersfordeling for kunde
 
@@ -61,5 +61,4 @@ Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordel
 2. Velg en kunde med en saldo.
 3. Vis faktaboksområdet Aldersfordeling for å vise de aldersfordelte saldoene.
     * Definisjonen av aldersfordelingsperiode for faktaboksen hentes fra standarddefinisjonen av aldersfordelingsperiode angitt i parameterne. Du kan endre den ved hjelp av Samle inn-menyen.  
-
 

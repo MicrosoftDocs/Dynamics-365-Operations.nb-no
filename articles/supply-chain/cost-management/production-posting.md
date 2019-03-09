@@ -5,9 +5,9 @@ author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332409"
 ---
-
 # <a name="production-posting"></a>Produksjonspostering
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ I **Parametere for produksjonskontroll** kan du bruke feltet **Finanspostering**
 -   **Produksjonsgrupper** – Bruk finanskontoene som er definert for produksjonsgruppene for både material- og tidsforbruk. Produksjonsgrupper er knyttet til de frigitte produktene og kopiert til produksjonsordrene ved opprettelse av disse ordrene. Postering på produksjonsordrer vil deretter følge produksjonsgrupper som er knyttet til produksjonsordren.
 
 **Obs!** Hvis standardmetoden for beregning av kostnaden på ferdigvaren ble brukt, gjenspeiler de siste transaksjonene dette. Hvis faktiske kostnader og kostnadene som beregnes ved hjelp av standardmetoden er forskjellige, posteres differansen til kontoen som viser resultat.
-
 
 
 

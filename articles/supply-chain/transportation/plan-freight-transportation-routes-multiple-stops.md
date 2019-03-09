@@ -1,13 +1,13 @@
 ---
 title: Planlegge ruter for frakttransport med flere stopp
-description: "Denne artikkelen beskriver de ulike elementene som du bruker for å planlegge transportruter i Dynamics 365 for Finance and Operations."
+description: Denne artikkelen beskriver de ulike elementene som du bruker for å planlegge transportruter i Dynamics 365 for Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328315"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planlegge ruter for frakttransport med flere stopp
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ En planlagt rute er en forhåndsdefinert ruteplan som har en tidsplan for leveri
 
 ## <a name="load-building-workbench"></a>Arbeidsområde for lastplanlegging
 Arbeidsområde for lastplanlegging bruker kundeadresser og leveringsdatoer fra salgsordrer og planlagte ruter som er tilgjengelige, for å foreslå en last. Verdiene fra ruten angis i arbeidsområdet som standard. Du kan imidlertid velge en fra-dato som er eldre enn fra-datoen på ruten. Når en last blir foreslått, sjekkes leveringsadresse og leveringsdato for alle åpne ordrer. Hvis postnummeret for leveringsadressen samsvarer med postnummeret for en hub i ruteplanen, og hvis leveringsdatoen er innenfor området som er valgt i vilkårene, foreslås salgsordren for lasten. Det tas også hensyn til kapasiteten i lastmalen. Bare én last foreslås om gangen. Hvis du har en salgsordre som ikke er inkludert, må du kanskje bruke en annen lastmal (for eksempel en lastmal for en større lastebil eller container) eller planlegge en ekstra levering.
-
 
 
 

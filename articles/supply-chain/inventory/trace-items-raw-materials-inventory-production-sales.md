@@ -1,13 +1,13 @@
 ---
-title: "Sporing av varer og råmaterialer i beholdning, produksjon og salg"
-description: "Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser."
+title: Sporing av varer og råmaterialer i beholdning, produksjon og salg
+description: Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310076"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing av varer og råmaterialer i beholdning, produksjon og salg
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Hvis du vil bruke alternativet **Ny bakover** eller **Ny forover**, må du bruke
 Du kan lagre informasjonen i kategorien <strong>Detaljer</strong> som en XML-fil ved å klikke <strong>Eksporter</strong> under *<strong><em>Sporing</em></strong>* -handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for <strong>Vis dokument</strong>. <strong>Obs!</strong> Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge <strong>Åpne med</strong> og deretter velge programmet som skal brukes til å vise innholdet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jeg beregne en saldo for en bestemt vare eller ingrediens?
-Du kan eksportere informasjonen fra sammendragssidene til Microsoft Excel. Åpne den aktuelle siden, klikk ikonet **Åpne i Microsoft Office**, og velg deretter **Eksporter til Microsoft Excel**. Denne funksjonaliteten er spesielt nyttig når du vil beregne en massesaldo for en vare eller ingrediens fra siden **Transaksjonsammendrag**. På siden **Transaksjonssammendrag** kan du filtrere varen eller ingrediensen, og partiet hvis du vil, og deretter eksportere informasjonen til Excel. I Excel kan du for eksempel finne beholdningsantallet, antallet som ble solgt, og beløpet som ble brukt i produksjon.
+Du kan eksportere informasjonen fra sammendragssider til Microsoft Excel. Åpne den aktuelle siden, klikk ikonet **Åpne i Microsoft Office**, og velg deretter **Eksporter til Microsoft Excel**. Denne funksjonaliteten er spesielt nyttig når du vil beregne en massesaldo for en vare eller ingrediens fra siden **Transaksjonsammendrag**. På siden **Transaksjonssammendrag** kan du filtrere varen eller ingrediensen, og partiet hvis du vil, og deretter eksportere informasjonen til Excel. I Excel kan du for eksempel finne beholdningsantallet, antallet som ble solgt, og beløpet som ble brukt i produksjon.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Kan jeg undersøke om det er problemer med varer eller råvarer som går igjen?
 Sporingsdetaljene inkluderer informasjon om kvalitetsordrer og avvik som gjelder varen eller råvarer. Du kan vise et sammendrag av kvalitetsordrer og avvik ved å klikke **Kvalitetsordrer** eller **Avvik** i handlingsruten. **Obs!** Destruktive kvalitetsordrer kan forekomme flere ganger i sporingsdetaljene. Når en destruktiv kvalitetsordre opprettes for et dokument, for eksempel en bestilling, vises den for hver transaksjon for dokumentet.
@@ -141,4 +140,3 @@ Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore koprodukter og biprodukter?
 Du kan spore koprodukter, men du kan ikke spore et biprodukt fordi sporingsdimensjoner vanligvis ikke er tilordnet til biprodukter. Når du sporer en vare, inkluderes eventuelle relaterte koprodukter i sporingsdetaljene. En node som inneholder et koprodukt inneholder ordet "koprodukt" i detaljene. Du kan også vise detaljer om et koprodukt ved å velge noden i sporingsdetaljene og deretter klikke hurtigfanen **Produksjon**.
-

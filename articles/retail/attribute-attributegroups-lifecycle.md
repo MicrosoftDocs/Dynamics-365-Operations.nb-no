@@ -1,37 +1,36 @@
 ---
 title: Attributter og attributtgrupper
-description: "Dette emnet beskriver hvordan du bruker attributter til å beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt."
+description: Dette emnet beskriver hvordan du bruker attributter til å beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326245"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Attributter og attributtgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter knyttes til forskjellige detaljhandelenheter, for eksempel produktkategorier og detaljhandelskanaler, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
+*Attributter* gir en metode for å beskrive et produkt og dets egenskaper ved hjelp av brukerdefinerte felt (som **Minnestørrelse**, **Harddiskkapasitet**, **Is Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter knyttes til forskjellige detaljhandelsenheter, for eksempel produktkategorier og kanaler for detaljhandel, og du kan angi standardverdier for dem. Produkter arver attributtene og standardverdiene når de blir knyttet til produktkategoriene eller detaljhandelskanaler. Standardverdiene kan overstyres på nivået for det individuelle produktet, på nivået for detaljhandelskanalen, eller i en detaljhandelskatalog.
 
 Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 
@@ -257,4 +256,3 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter opprettes i Finance and Operations, gjelder de for alle detaljhandelsprodukter.
-

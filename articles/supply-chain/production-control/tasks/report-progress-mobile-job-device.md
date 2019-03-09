@@ -1,13 +1,13 @@
---- 
-title: "Rapportere fremdrift på en mobil jobbenhet"
+---
+title: Rapportere fremdrift på en mobil jobbenhet
 description: Denne prosedyren viser hvordan du starter og rapporterer fremdriften for en produksjonsjobb i registreringsskjemaet for jobbenheten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, JmgRegistrationTouchStart, JmgRegistrationTouchReportFeedback, JmgRegistrationTouchAssignedJobs, JmgRegistrationTouchBreak, JmgRegistrationTouchLeave, JmgRegistrationTouchIndirectActivity, JmgDialogForm
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1f5d06b0165a7a3cf7ed9dab46d0bca4d37fdc12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acbedc6d27624d9a8d1e6fb9bb0d9abed1b4377f
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330408"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Rapportere fremdrift på en mobil jobbenhet
 
@@ -64,5 +64,4 @@ Hvis du vil kjøre denne prosedyren, må du ha rollen Systemansvarlig eller Mask
 28. Velg for å stemple ut.
 29. Klikk OK.
 30. Velg en årsak til hvorfor du stempler ut tidlig.
-
 

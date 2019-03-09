@@ -1,13 +1,13 @@
 ---
 title: Purringer og importinkassoer
-description: "Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser."
+description: Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323048"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>Purringer og importinkassoer
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ En remburs kan enten være **gjenkallelig** eller **ugjenkallelig**. En remburs 
 En importinkasso er en avtale mellom banken og eksportøren (selgeren) der banken avtaler å levere forsendelsesdokumentasjonen til den internasjonale importøren (kjøperen). Banken forventes å levere forsendelsesdokumentasjonen ved mottak av kontant betaling for de sendte varene, eller ved mottak av en signert anvisning mot betalingen. 
 
 En importinkasso er med på å garantere at selgeren betales når kjøperen henter forsendelsesdokumentene for å motta de importerte varene.
-
 
 
 

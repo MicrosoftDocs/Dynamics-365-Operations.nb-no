@@ -1,13 +1,13 @@
 ---
 title: Importer valutakurser
-description: "Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig å konvertere den utenlandske valutaen til den lokale valutaen. Dette betyr at det kreves oppdaterte valutakurser for ulike valutaer. Dette emnet gir en oversikt over de nødvendige innstillingene og behandling for import av referansekurser for utenlandsk valuta publisert på Internett ved valutakursleverandører, for eksempel den europeiske sentralbanken og sentralbanken i Russland."
+description: Hvis en juridisk enhet har mottatt fakturaer i fremmed valuta, er det nødvendig å konvertere den utenlandske valutaen til den lokale valutaen. Dette betyr at det kreves oppdaterte valutakurser for ulike valutaer. Dette emnet gir en oversikt over de nødvendige innstillingene og behandling for import av referansekurser for utenlandsk valuta publisert på Internett ved valutakursleverandører, for eksempel den europeiske sentralbanken og sentralbanken i Russland.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333398"
 ---
-
 # <a name="import-currency-exchange-rates"></a>Importer valutakurser
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Du kan importere valutakursene fra kilden for valutakursleverandører, og define
 | **Opprett nødvendige valutapar**    | Dette alternativet styrer automatisk oppretting av valutapar, hvis valutaparene som importeres, ikke finnes. Dette alternativet er kanskje ikke tilgjengelig for enkelte leverandører.                                                                                                                                                                                               |
 | **Overstyr eksisterende valutakurser**   | Dette alternativet styrer oppdatering av den eksisterende valutakursen for et valutapar når valutakursen for en bestemt dato allerede finnes. Hvis du ikke velger denne avmerkingsboksen, importeres ikke valutakursen for de bestemte datoene hvis det allerede finnes en annen valutakurs.                                                                                       |
 | **Hindre import på nasjonal helligdag** | Dette alternativet styrer importen av valutakursen for en dato som er en offentlig helligdag. Hvis du for eksempel velger denne avmerkingsboksen og bruker den europeiske sentralbanken som valutakursleverandøren, vil systemet ikke oppdatere valutakursen på en offentlig fridag som er knyttet til den gjeldende juridiske enheten. Dette alternativet er kanskje ikke tilgjengelig for enkelte leverandører. |
-
 
 
 

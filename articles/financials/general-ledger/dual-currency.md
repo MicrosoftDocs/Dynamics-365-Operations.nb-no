@@ -5,25 +5,24 @@ author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330316"
 ---
-
 # <a name="dual-currency"></a>Dobbel valuta
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ I tillegg er store endringer gjort i avskrivningsprosessen. Disse endringene kre
     - Hvis en type avskrivningstransaksjon angis i anleggsmiddeljournalen, vises rapporteringvalutabeløpene i de nye kolonnene. Disse beløpene kan endres.
     - Hvis regnskapsvalutaen og rapporteringsvalutaene i finans er identiske, vil beløpene holdes synkroniserte. Hvis du endrer **kredit**-beløpet, endres **Kredit i rapporteringsvaluta**-beløpet automatisk slik at det samsvarer.
     - Hvis en annen transaksjonstype angis i anleggsmiddeljournalen, vises aldri beløpene **Debet i rapporteringsvaluta** og **Kredit i rapporteringsvaluta**, verken før eller etter postering. Regnskapsvaluta- og rapporteringsvalutabeløpene er fremdeles tilgjengelige på bilaget som posteres til økonomimodulen.
-

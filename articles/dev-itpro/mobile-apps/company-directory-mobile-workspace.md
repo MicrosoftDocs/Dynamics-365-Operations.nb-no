@@ -1,13 +1,13 @@
 ---
-title: "Mobilt arbeidsområde for firmakatalog"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for firmakatalog, som lar brukere vise og kontakte andre ansatte i organisasjonen."
+title: Mobilt arbeidsområde for firmakatalog
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for firmakatalog, som lar brukere vise og kontakte andre ansatte i organisasjonen.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308627"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet **Firmakatalog**. Dette arbeidsområdet lar brukere vise og kontakte andre ansatte i organisasjonen.
 
-Dette mobile arbeidsområdet kan brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Dette mobile arbeidsområdet kan brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Oversikt
 Det mobile arbeidsområdet **Firmakatalog** lar brukere utføre disse oppgavene:
@@ -77,7 +76,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 1.  Start appen på mobilenheten.
-2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
+2.  Angi URL-adressen for Microsoft Dynamics365.
 3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
@@ -91,4 +90,3 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 1.  Velg arbeidsområdet **Firmakatalog** i mobilappen.
 2.  I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.
 3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
-

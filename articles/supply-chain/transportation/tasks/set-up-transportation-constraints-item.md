@@ -1,13 +1,13 @@
---- 
+---
 title: Definere transportbegrensninger for en vare
-description: "Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valgt vare transporteres gjennom en valgt hub."
+description: Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valgt vare transporteres gjennom en valgt hub.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 900ea1476c95d295a151125afe46aebd9642630e
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338136"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Definere transportbegrensninger for en vare
 
@@ -43,5 +43,4 @@ Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valg
 9. Velg et alternativ i feltet Begrensningshandling.
 10. Klikk Lagre.
 11. Lukk siden.
-
 

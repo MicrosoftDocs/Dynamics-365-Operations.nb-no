@@ -1,13 +1,13 @@
---- 
-title: "Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder"
-description: "For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen \"ER lage rapporter i MS Office-formater med innebygde bilder (del 1: Definere parametere)\"."
+---
+title: Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
+description: 'For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER lage rapporter i MS Office-formater med innebygde bilder (del 1: Definere parametere)".'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331420"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
 
@@ -91,5 +91,4 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 14. Utvid 'labels: Container' i treet.
     * Enkelte etiketter vises i skjemaet forhåndstrykt sjekk inkluderes i rapporten når den opprettes for testformål. Imidlertid skrives disse ikke ut ved utskrift av reell, fordi det fortrykte skjemaet inneholder allerede dem.  
 15. Lukk siden.
-
 

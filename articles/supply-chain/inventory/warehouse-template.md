@@ -5,28 +5,27 @@ author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338067"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ Du kan laste ned en zip-fil for datapakken. Denne filen inneholder alle dataene 
 
 **Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Hvis du vil vite mer om hvordan du bruker lagermal til å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne videoen på 3 minutter på YouTube: [Bruk lagermalen til å kopiere konfigurasjonen i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen: [Bruk lagermalen til å kopiere konfigurasjonen i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relaterte emne
 
 [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal"
-description: "Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten."
+title: Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
+description: Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 29cb4b940875b96cabaff540360674da528f8f39
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322519"
 ---
-
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
 
 [!include [banner](../includes/banner.md)]
@@ -67,4 +66,3 @@ Avsnittene nedenfor beskriver virkningen av disse innstillingene, og beskriver o
 - Hvis feltet **Bilagsnummer** er satt til **Automatisk generert**, kan ikke importen fullføres. Innstillingen **Automatisk generert** for feltet **Bilagsnummer** støttes ikke.
 
 Økonomijournal-enheten bruker settbasert behandling som standard. Når du evaluerer forretningskravene for organisasjonen, kan du endre innstillingen **Settbasert behandling** ved å klikke **Dataenheter** i arbeidsområdet **Databehandling**. Settbasert behandling brukes til å øke hastigheten på importprosessen. Hvis du ikke bruker settbasert behandling, vil import av Økonomijournal-enheten være langsommere.
-

@@ -1,13 +1,13 @@
 ---
 title: Oppdatere standardkostnader for en ny produsert vare
-description: "Denne artikkelen gir råd for å oppdatere standardkostnader for en ny produsert vare."
+description: Denne artikkelen gir råd for å oppdatere standardkostnader for en ny produsert vare.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc8725bcab61fa20a4c35a83473b00e54cf0bf28
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cfb04a98f7d01f7766bea97157ca3c44c51e326
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325509"
 ---
-
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Oppdatere standardkostnader for en ny produsert vare
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Hvis du vi legge til nye produksjonsvarer i hele den frosne perioden, kan du gj�
 5.  Bruk siden **Oppsett av etterkalkuleringsversjon** for å endre blokkeringsflagget for å tillate aktivering av ventende kostnadsposter i den andre etterkalkuleringsversjonen.
 6.  Bruk siden **Aktiver priser** (som du åpner fra siden **Vedlikehold av etterkalkuleringsversjon**) for å aktivere alle ventende kostnadsposter i den andre etterkalkuleringsversjonen. Du kan også aktivere de ventende kostnadspostene for enkelte varer ved å klikke knappen **Aktiver** på **Varepris**-siden.
 7.  For å unngå ytterligere datavedlikehold kan du bruke siden **Oppsett av etterkalkuleringsversjon** til å endre blokkeringsflaggene som er vedlagt den andre etterkalkuleringsversjonen. Blokkeringspolicyene forhindrer innlegging av nye uavsluttede kostnader og aktivering av uavsluttede kostpriser.
-
 
 
 

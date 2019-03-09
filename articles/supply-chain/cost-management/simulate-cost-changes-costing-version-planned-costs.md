@@ -1,13 +1,13 @@
 ---
 title: Simulere kostprissendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
-description: "Denne artikkelen beskriver hvordan du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris."
+description: Denne artikkelen beskriver hvordan du kan simulere virkningen av kostnadsendringer på beregningen av kostpris for en produsert vare med en egen kostnadsberegningsversjon for planlagt kostpris.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318885"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere kostprissendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ Scenariene nedenfor viser hvordan kostversjonen for simulering brukes til å sim
 -   Simuler kostprisendringen i en beregningsformel for indirekte kostnader. Kostprisendringen kan for eksempel gjenspeile en forventet økning eller reduksjon i de generelle administrasjonskostnadene for produksjon. Definer den endrede beregningsformelen for indirekte kostnader ved å angi en uavsluttet kostnadspost i kostnadsberegningsversjonen for simulering på siden **Oppsett av kostark**, hvor du også validerer og lagrer endringen.
 
 Når du har angitt de simulerte kostprisendringene, beregner du kostprisen for produserte varer som påvirkes av kostprisendringene. Bruk **Beregning**-siden for kostnadsberegningsversjonen for simulering, og identifiser de valgte produserte varene som vil bli påvirket av kostprisendringene. Stykklisteberegningene vil gjelde alle produserte varer hvis du ikke velger bestemte varer. Du kan også bruke alternativet for stykklisteberegning for brukssted. Vis varekostprispostene i kostnadsberegningsversjonen for simulering for å analysere hvordan de simulerte kostprisendringene påvirket kostprisen for de valgte produserte varene. Bruk sidene **Varepris** og **Beregn varekostnad** for å vise og analysere kostnadene.
-
 
 
 

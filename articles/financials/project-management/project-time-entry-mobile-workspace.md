@@ -1,13 +1,13 @@
 ---
-title: "Mobilt arbeidsområde for registrering av prosjekttid"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for registrering av prosjekttid. Dette arbeidsområdet lar brukere angi og lagre tid mot et prosjekt ved hjelp av mobilenheten."
+title: Mobilt arbeidsområde for registrering av prosjekttid
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for registrering av prosjekttid. Dette arbeidsområdet lar brukere angi og lagre tid mot et prosjekt ved hjelp av mobilenheten.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,21 +18,20 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e671fe6e7c99bfb6d66f3b00560c3b0c404d2343
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9bf79af6eea6f899158fc3c8d523587cb11c90ad
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333007"
 ---
-
 # <a name="project-time-entry-mobile-workspace"></a>Mobilt arbeidsområde for registrering av prosjekttid
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **registrering av prosjekttid**. Dette arbeidsområdet lar brukere angi og lagre tid mot et prosjekt ved hjelp av mobilenheten.
 
-Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations. 
+Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile. 
 
 ## <a name="overview"></a>Oversikt
 Prosjektressurser er ofte på stedet eller reiser som en del av det daglige arbeidet. Det mobile arbeidsområdet **Registrering av prosjekttid** lar brukere angi fakturerbar eller ikke-fakturerbar tid mot et prosjekt på mobilenheten etter eget valg. Derfor kan prosjektressurser registrere oppføringer når som helst og hvor som helst. De kan også vise oppføringer som allerede er registrert. 
@@ -114,4 +113,3 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 11. Velg linjeegenskapen.
 12. Valgfritt: Angi eventuelle eksterne og interne kommentarer.
 13. Velg **Ferdig**.
-

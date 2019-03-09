@@ -1,14 +1,14 @@
 ---
-title: "Konvertering for måleenhet per produktvariant"
-description: "Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter."
+title: Konvertering for måleenhet per produktvariant
+description: Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
 ms.openlocfilehash: 9d5d6fd65717cd886f1c6576aabf2bc59ca4fcaf
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345933"
 ---
-
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering for måleenhet per produktvariant
 
 [!include [banner](../includes/banner.md)]
@@ -94,4 +93,3 @@ De frigitte produktvariantene liten, middels og stor har samme enhetsomregning m
 Hvis et produkt har mange produktvarianter med forskjellige enhetsomregninger, er det lurt å eksportere enhetskonverteringene fra **Enhetsomregning**-siden til et Excel-regneark, oppdatere konverteringene og deretter publisere dem tilbake til Finance and Operations.
 
 Alternativet for å eksportere til Excel og publisere endringene tilbake til Finance and Operations, aktiveres fra **Åpne i Microsoft Office**-menyelementet i handlingsruten på **Enhetsomregning**-siden.
-

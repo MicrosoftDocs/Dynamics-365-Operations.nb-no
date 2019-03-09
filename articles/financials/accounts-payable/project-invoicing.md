@@ -1,13 +1,13 @@
 ---
 title: Prosjektfakturering
-description: "Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer."
+description: Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346324"
 ---
-
 # <a name="project-invoicing"></a>Prosjektfakturering
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Det samme dokumentet kan inkludere transaksjoner som er valgt for kreditering, k
 For å kreditere et fakturert beløp velger du først det fakturerte beløpet som skal krediteres, og deretter oppretter du en kreditnota. Du oppretter en kreditnota ved å følge samme fremgangsmåte som for generering av en kundefaktura. 
 
 Du kan opprette en faktura som har et negativt beløp, som blir en faktura som klassifiseres som en kreditnota. For å opprette og skrive ut en kreditnota må du velge transaksjonene som tidligere er postert for en kundefaktura, og deretter redigere transaksjonene. Med mindre primæradressen til den juridiske enheten er i Tyskland, vil tittelen på fakturaen være "Korrigerende faktura".
-
 
 
 

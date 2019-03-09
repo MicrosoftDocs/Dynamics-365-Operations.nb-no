@@ -5,9 +5,9 @@ author: NickSelin
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331098"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Hvis du vil importere data fra en innkommende fil ved hjelp av Elektronisk rapportering-rammeverket (ER), må du konfigurere et ER-format som støtter importen, og deretter kjøre en modelltilordning av typen **Til målet** som bruker dette formatet som datakilde. Hvis du vil importere data, må du navigere til filen som du vil importere. Den innkommende filen kan velges manuelt av brukeren. Med den nye ER-muligheten som støtter import av data fra Microsoft SharePoint, kan denne prosessen konfigureres som uovervåket. Du kan bruke ER-konfigurasjoner til å utføre dataimport fra filer som er lagret i Microsoft SharePoint-mappene. Dette emnet forklarer hvordan du fullfører import fra SharePoint til Microsoft Dynamics 365 for Finance and Operations. Eksemplene bruker leverandørtransaksjoner som forretningsdata.
+Hvis du vil importere data fra en innkommende fil ved hjelp av Elektronisk rapportering-rammeverket (ER), må du konfigurere et ER-format som støtter importen, og deretter kjøre en modelltilordning av typen **Til målet** som bruker dette formatet som datakilde. Hvis du vil importere data, må du navigere til filen som du vil importere. Den innkommende filen kan velges manuelt av brukeren. Med den nye ER-muligheten som støtter import av data fra Microsoft SharePoint, kan denne prosessen konfigureres som uovervåket. Du kan bruke ER-konfigurasjoner til å utføre dataimport fra filer som er lagret i Microsoft SharePoint-mappene. Dette emnet forklarer hvordan du fullfører importen fra SharePoint til Microsoft Dynamics 365 for Finance and Operations. Eksemplene bruker leverandørtransaksjoner som forretningsdata.
 
-## <a name="prerequisites"></a>Nødvendig programvare
+## <a name="prerequisites"></a>Forutsetninger
 Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
 
 - Tilgang til Finance and Operations for én av følgende roller:
@@ -129,7 +129,7 @@ Du kan også åpne siden **Filtilstander for kildene** ved å velge **Organisasj
 
     [![Siden for ER-filtilstand for de valgte kildene](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
-## <a name="import-data-from-sharepoint-files"></a>Importer data fra SharePoint-filer
+## <a name="import-data-from-sharepoint-files"></a>Importere data fra SharePoint-filer
 1. Åpne ER-konfigurasjonstreet, velg **1099-betalingsmodellen**, og utvid listen over ER-modellkomponenter.
 2. Velg navnet på modelltilordningen for å åpne listen over modelltilordninger av den valgte ER-modellkonfigurasjonen.
 
@@ -167,7 +167,7 @@ Du kan også åpne siden **Filtilstander for kildene** ved å velge **Organisasj
 
     [![Eksempel på Microsoft Excel-fil for import fra SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
-2. Last opp den oppdaterte Excel-filen som inneholder leverandørtransaksjoner til SharePoint-mappen **Kilde for import av filer (hoved)** .
+2. Last opp den oppdaterte Excel-filen som inneholder leverandørtransaksjoner til SharePoint-mappen **Kilde for import av filer (hoved)**.
 3. I Finance and Operations åpne ER-konfigurasjonstreet, velg **1099-betalingsmodellen**, og utvid listen over ER-modellkomponenter.
 4. Velg navnet på modelltilordningen for å oppdatere modelltilordning, slik at leverandørkoden som er feil, regnes som en feil under import av data.
 5. Velg **Utforming**.
@@ -192,4 +192,3 @@ Du kan også åpne siden **Filtilstander for kildene** ved å velge **Organisasj
 11. I Finance and Operations velger du **Leverandører** \> **Periodiske oppgaver** \> **Avgift 1099** \> **Leverandørutligning for 1099-skjema**, skriv inn riktige verdier i **Fra dato**- og **Til dato**-feltene, og velg deretter **Manuelle 1099-transaksjoner**.
 
     Bare transaksjoner for bilaget V-00001 er tilgjengelige. Det finnes ingen transaksjoner for bilaget V-00002, selv om feilen for den sist importerte transaksjonen ble funnet i Excel-filen.
-

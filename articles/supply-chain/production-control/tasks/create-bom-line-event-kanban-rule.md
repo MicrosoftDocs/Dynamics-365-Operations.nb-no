@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en Kanban-regel for hendelse for stykklistelinje
-description: "Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-regel for hendelse for å sikre forsyning for stykklistelinjer for produksjon i et blandet lean-produksjonsmiljø og klassisk produksjonsmiljø."
+description: Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-regel for hendelse for å sikre forsyning for stykklistelinjer for produksjon i et blandet lean-produksjonsmiljø og klassisk produksjonsmiljø.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 82a4252548fd030f2a044436ff607da5125d2854
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 452cc5cf6060b71f91ad43e39e756dc23d759448
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337101"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Opprette en Kanban-regel for hendelse for stykklistelinje
 
@@ -82,5 +82,4 @@ Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-rege
 8. Merk den valgte raden i listen.
     * Legg merke til kanbanen som er opprettet for å levere M0001 for den estimerte produksjonsordren.  
     * Dette er det siste trinnet!  
-
 

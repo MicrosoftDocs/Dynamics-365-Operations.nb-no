@@ -1,30 +1,29 @@
 ---
 title: Brukeren har tilgang til Core HR, men ikke appen Onboard eller Attract
-description: "Dette emnet forklarer hvordan du løser problemet der en bruker får tilgang til Microsoft Dynamics 365 for Talent Core HR, men får tilgang til appen Attract eller Onboard."
+description: Dette emnet forklarer hvordan du løser problemet der en bruker får tilgang til Microsoft Dynamics 365 for Talent Core HR, men får tilgang til appen Attract eller Onboard.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 2e5d0b1bf993aec89c7d2c6d4916732f5824310d
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305668"
 ---
-
 # <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a>Brukeren har tilgang til Core HR, men ikke appen Onboard eller Attract
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 12/04/2018
 - Microsoft Dynamics Lifecycle Services-distribusjonen (LCS) ble utført av bruker A.
 - Bruker A la til bruker B som bruker i Microsoft Dynamics 365 for Talent Core HR.
 
-**Utstede**
+**Avgang**
 
 Bruker B har tilgang til Core HR, men har ikke tilgang til appene Talent: Attract eller Talent: Onboard. Når brukeren prøver å gå til **Opplev-appene**, kommer han eller hun til et prøvemiljø i stedet.
 
@@ -47,4 +46,3 @@ Hvis du vil ha informasjon, kan du se delen "Gi tilgang til utviklingsmiljøet" 
 **Langsiktig løsning**
 
 Microsoft vurderer å tilordne de nødvendige rettighetene til Onboard og Attract automatisk når en bruker legges til i Core HR.
-

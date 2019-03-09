@@ -1,13 +1,13 @@
---- 
-title: "Velge datamodelldefinisjoner når du oppretter formater"
-description: "For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren \"ER Opprette en konfigurasjonsleverandør og merke den som aktiv\"."
+---
+title: Velge datamodelldefinisjoner når du oppretter formater
+description: For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv".
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334502"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Velge datamodelldefinisjoner når du oppretter formater
 
@@ -81,7 +81,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Bruk ER designer til å angi modelltilordningene for de nødvendige rotelementene.  
 2. Klikk Utforming.
     * Simuler innstillingen for den valgte modelltilordningen for rotelementet til den valgte modellen.  
-3. I treet velger du Dynamics 365 for Operations\Tabellposter.
+3. Velg Dynamics 365 for Operations\Tabellposter i treet.
 4. Klikk Legg til rot.
 5. I Navn-feltet skriver du inn "Finans".
 6. Skriv inn 'LedgerJournalTrans' i Tabell-feltet.
@@ -98,5 +98,4 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 4. Angi eller velg en verdi i feltet Definisjon av datamodell.
     * Merk at nå er det bare ett rotelement som er tilgjengelig til å tilordne til datakildene til programmet. Når minst én modelltilordning er introdusert, kan bare modellens rotelementer som er tilordnet til programmets datakilder, velges som en modelldefinisjon når ER-formatet er lagt til.   
 5. Lukk siden.
-
 

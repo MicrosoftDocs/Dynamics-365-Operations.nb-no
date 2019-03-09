@@ -1,13 +1,13 @@
 ---
-title: "Opprette leverandørbetalinger ved hjelp av et betalingsforslag"
+title: Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 description: Dette emnet gir en oversikt over alternativer for betalingsforslag og inneholder noen eksempler som viser hvordan betalingsforslag fungerer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327418"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alt
 
 ### <a name="option-1-by-cash-discount"></a>Alternativ 1: Etter kontantrabatt
 
-April velger **kontantrabatt** som forslag. Hun skriver inn datoområdet 26. juni til 10. juli. Følgende fakturaer inkluderes i forslaget:
+April velger **kontantrabatt** som forslag. Hun skriver inn datoområdet 26. juni til 10. juli. Følgende fakturaer inkluderes i forslaget:
 
 -   1002, fordi rabattdatoen 4. juli er i betalingsdatoområdet.
 -   1004, fordi rabattdatoen 1. juli er i betalingsdatoområdet.
@@ -120,8 +119,7 @@ Dimensjonskontroll lar deg kontrollere gruppering av genererte linjer etter beta
 
 #### <a name="bank-account-selection"></a>Bankkontovalg
 
-Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan definere disse kombinasjonene på siden **Betalingsmåter** ved hjelp av **Bankkontoer**-knappen som er tilgjengelig for hver betalingsmåte med **Kontotype for postering** = **Bank**.
-
+Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan definere disse kombinasjonene på siden **Betalingsmåter** ved hjelp av **Bankkontoer**-knappen som er tilgjengelig for hver betalingsmåte med **Kontotype for postering** = **Bank**.
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Administrer utsetting arbeid i produksjon
-description: "Dette emnet forklarer hvordan underleveranseoperasjoner skal behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør."
+description: Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326590"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Administrer utsetting arbeid i produksjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan underleveranseoperasjoner skal behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
+Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 
 I [produksjonsprosesser](production-process-overview.md), arbeidet kan gjøres av ressurser som eies eller administreres av leverandører. Leverandør ressurser brukes vanligvis til nivå periodiske overflødige behovet som bruke enn de som den disponible kapasiteten i et firma eier ressurser. Leverandøren vil kanskje også kunne tilby spesifikke [ressursfunksjoner](resource-capabilities.md) eller ressurser til en lavere pris.  
 
@@ -101,7 +100,6 @@ Halvferdige produkter er unntaket for denne regelen. Hvis du vil overføre halvf
 **Merk:** En produksjonsrute for en enkelt produksjonsordre kan ikke krysse flere områder. Denne regelen gjelder også for det usatte arbeidet. Derfor må lagrene som representerer de leverandøradministrerte materialeplasseringene, være definert i det samme området som de interne ressursene som brukes i ruten. Selv om produksjonsflyter kan krysse av områder, kan de ikke transporter halvferdige varer fra ett område til et annet, fordi operasjonen antyder en endring i kostnadskontekst.  
 
 Det utgående lageret, og plasseringen av en utsatt ressursgruppe fordeles vanligvis direkte til lageret, og plasseringen av det neste trinnet i operasjonen i ruten eller produksjonsflyten. Dette oppsettet bidrar til å redusere mengden av jobbrapportering som oppstår, eller antallet ekstra overføringer operasjonene som må modelleres.
-
 
 
 

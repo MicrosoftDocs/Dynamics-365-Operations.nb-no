@@ -1,13 +1,13 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Operations-versjon 1611 (november 2016)
-description: Dette emnet beskriver funksjoner som enten er nye eller har blitt endret i Dynamics 365 for Operations versjon 1611.
+title: Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Operations versjon 1611.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339079"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations-versjon 1611 (november 2016)
+# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller har blitt endret i Dynamics 365 for Operations versjon 1611.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Operations versjon 1611.
 
 ## <a name="cost-accounting"></a>Kostnadsregnskap
 
@@ -764,7 +763,7 @@ Sømløse omnikanalhandelsfunksjoner refererer til administrasjon og ordrebehand
 
 | Hva du kan gjøre | Hvorfor dette er viktig |
 |-----------------|-----------------------|
-| Vis personlig produktanbefalinger på flere berøringspunkter på salgsstedet (POS) for å avgjøre hva en kunde kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker | For forhandlere med store kataloger bidrar personlige anbefalinger det enklere for kunden å finne produkter og gir butikkansatte intelligente kunderelasjoner. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg for forhandlere og forbedring av kundebevaring. I Microsoft Dynamics 365 for Retail er produktanbefalingene drevet av kognitive tjenester og Microsoft Azure Machine Learning. |
+| Vis personlig produktanbefalinger på flere berøringspunkter på salgsstedet (POS) for å avgjøre hva en kunde kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker | For forhandlere med store kataloger bidrar personlige anbefalinger det enklere for kunden å finne produkter og gir butikkansatte intelligente kunderelasjoner. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg for forhandlere og forbedring av kundebevaring. I Microsoft Dynamics 365 for Retail er produktanbefalinger drevet av kognitive tjenester og Microsoft Azure machine learning. |
 
 ### <a name="pos-task-recorder"></a>Oppgaveregistrering for salgssted
 
@@ -783,9 +782,9 @@ Butikksystemet er et distribusjonsvalg for forhandlere som bidrar til å gjennom
 - Detaljshandelsserveren og butikkdatabasen er i butikken sammen med Async-klienttjenesten.
 - Detaljhandelsserveren i butikken kommuniserer direkte med AOS (Application Object Server) i hovedkvarteret for butikksystemet.
 - Støtter scenarier på tvers av terminaler der det mangler HQ-tilkobling.
-- Moderne salgssted for detaljhandel og skysalgssted kommuniserer alltid med detaljhandelsserveren i butikken.
-- Støtt moderne salgssted for detaljhandel og skysalgssted der det ikke finnes HQ-tilkobling.
-- Støtt en spesifikk frakoblet database for moderne salgssted for detaljhandel (isolert til hver forekomst av det moderne salgsstedet for detaljhandel) der det mangler HQ-tilkobling.
+- Retail Modern POS og Cloud POS kommuniserer alltid med detaljhandelsserveren i butikken.
+- Støtter Retail Modern POS og Cloud POS der det ikke finnes HQ-tilkobling.
+- Støtter en spesifikk frakoblet database for Retail Modern POS (isolert til hver forekomst av Retail Modern POS) der det mangler HQ-tilkobling.
 - Godkjenning er basert på tjeneste-til-tjeneste bare for butikksystemet.
 - Servicebesøk i sanntid støttes ikke uten en Internett-tilkobling.
 - Direkte databasetilkobling for Retail Modern POS til kanaldatabasen støttes ikke.
@@ -796,14 +795,14 @@ Butikksystemet er et distribusjonsvalg for forhandlere som bidrar til å gjennom
 | En forhandler laster ned det selvbetjente installasjonsprogrammet for butikksystemet fra kanaldatabasesiden i Dynamics AX-hovedkontoret, og laster også ned konfigurasjonsfilen. | Forhandleren kan laste ned selvbetjeningspakken sømløst. |
 | En forhandler installerer butikksystemet ved hjelp av det selvbetjente installasjonsprogrammet. | Forhandleren kan installere butikksystemet ved hjelp av selvbetjeningspakken. |
 | IT-sjefen konfigurerer butikksystemet i Dynamics 365 for Operations (kanaldatabase, kanalprofil, butikk og distribusjonspakke). | IT-sjefen kan konfigurere butikksystemet enkelt og effektivt. |
-| En forhandler styret et moderne salgssted for detaljhandel i lokale butikker og kan utføre sanntidsoperasjoner, for eksempel utstede gavekort, når det finnes en tilkobling. | Forhandleren kan utføre sanntidshandlinger fra butikksystemet når det finnes en tilkobling. |
+| En forhandler styrer Retail Modern POS i lokale butikker og kan utføre sanntidsoperasjoner, for eksempel utstede gavekort, når det finnes en tilkobling. | Forhandleren kan utføre sanntidshandlinger fra butikksystemet når det finnes en tilkobling. |
 | En forhandler kan synkronisere data fra det lokale butikksystemet til hovedkvarteret når det finnes en tilkobling. | Forhandleren kan synkronisere til og fra butikksystemet når det finnes en tilkobling. |
 | En forhandler kan etablere sikker kommunikasjon mellom det lokale butikksystemet og hovedkvarteret. | Forhandleren kan kommunisere sikkert fra butikksystemet når det finnes en tilkobling. |
 | Den IT-ansvarlige og Microsoft Operations kan overvåke og rapportere om det lokale butikksystemet (endringer i diagnostikk og rapportering). | Den IT-ansvarlige og Microsoft Operations kan overvåke butikksystemet sikkert og feilsøke effektivt. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universal Windows Platform-app for moderne salgssted for detaljhandel
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universal Windows Platform-app for Retail Modern POS
 
-For øyeblikket er det moderne salgsstedet for detaljhandel bare tilgjengelig bare som et Windows 8.1-program for stasjonære datamaskiner og nettbrett, og som skysalgssted for stasjonære PC-er eller nettbrett. I denne versjonen blir moderne salgssted for detaljhandel konvertert til en UWP-app (Universal Windows Platform). Denne endringen gjør at moderne salgssted for detaljhandel kan kjøres på alle Windows 10-enheter (PC, nettbrett eller telefon), og du kan til og med veksle mellom visninger for Continuum-aktiverte enheter.
+For øyeblikket er Retail Modern POS bare tilgjengelig som et Windows 8.1-program for stasjonære datamaskiner og nettbrett og som skysalgssted for stasjonære PC-er eller nettbrett. I denne versjonen blir moderne salgssted for detaljhandel konvertert til en UWP-app (Universal Windows Platform). Denne endringen gjør at Retail Modern POS kan kjøres på alle Windows 10-enheter (PC, nettbrett eller telefon), og du kan til og med veksle mellom visninger for Continuum-aktiverte enheter.
 
 | Hva du kan gjøre | Hvorfor dette er viktig |
 |-----------------|-----------------------|
@@ -828,7 +827,7 @@ For øyeblikket er det moderne salgsstedet for detaljhandel bare tilgjengelig ba
 | Gi leverandører muligheten til å respondere på hver bestillingslinje og foreslå endringer. | I noen tilfeller vil leverandører godta noen bestillingslinjer, men avviser andre. Leverandører kan nå administrere bestillingslinjer individuelt. Hver linje kan avvises, godkjennes eller godkjennes med endringer. Leverandører kan for eksempel endre leveringsdatoen, dele opp levering og antall, eller foreslå en alternativ vare. |
 | Gi leverandører mulighet til å administrere informasjon for kontaktpersonen. | Leverandører kan vedlikeholde informasjon om kontaktperson for sitt firma. Denne informasjonen inkluderer navn, e-postadresser og telefonnumre. Det gis tilgang til denne funksjonen via en dedikert sikkerhetsrolle. |
 | Del dokumenter som er knyttet til bestillinger og leverandører. | Når du må dele dokumenter med en leverandør, for eksempel et dokument om krav, er det nyttig å koble dokumentet til den relevante bestillingen. Leverandøren kan dele notater og vedlegg med kunden ved å koble dokumentet til hans eller hennes svar på bestillingen. Dokumentbehandling er det underliggende støttende rammeverket, og bare notater og vedlegg som er klassifisert som "eksterne", kan deles med leverandører. |
-| Klargjør nye leverandørbrukere. | Hvis leverandørene bruker grensesnittet for leverandørsamarbeid, har de en sømløs måte å be om nye brukerkontoer på når nye kontakter må ha tilgang til leverandørsamarbeid. Innkjøpsansvarlige kan sende en forespørsel om en brukerkonto for en kontaktperson i leverandørorganisasjonen. En kontaktperson for leverandøren som allerede er en bruker av leverandørsamarbeid, kan også sende denne typen forespørsel. Denne forespørselen oppretter til slutt en ny bruker i Dynamics 365 for Operations med leverandørspesifikke sikkerhetsroller. Det gjør det også enklere å sende en forespørsel til Microsoft Azure B2B-portalen for å klargjøre en ny brukerkonto for Azure Active Directory (Azure AD) for brukeren. Leverandører kan også be om at bestemte leverandørbruker deaktiveres, eller at sikkerhetsroller endres. |
+| Klargjør nye leverandørbrukere. | Hvis leverandørene bruker grensesnittet for leverandørsamarbeid, har de en sømløs måte å be om nye brukerkontoer på når nye kontakter må ha tilgang til leverandørsamarbeid. Innkjøpsansvarlige kan sende en forespørsel om en brukerkonto for en kontaktperson i leverandørorganisasjonen. En kontaktperson for leverandøren som allerede er en bruker av leverandørsamarbeid, kan også sende denne typen forespørsel. Denne forespørselen oppretter til slutt en ny bruker i Dynamics 365 for Operations med leverandørspesifikke sikkerhetsroller. Det gjør det også enklere en foreta en forespørsel til Microsoft Azure B2B-portalen for å klargjøre brukeren med en ny Azure Active Directory (Azure AD)-brukerkonto. Leverandører kan også be om at bestemte leverandørbruker deaktiveres, eller at sikkerhetsroller endres. |
 | Få mer informasjon om støtte for leverandørsamarbeid i Dynamics 365 for Operations. | Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [leverandørsamarbeid med eksterne leverandører](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Leverandørsamarbeid med kunder](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Administrere brukere av leverandørsamarbeid](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Konfigurere og vedlikeholde leverandørsamarbeid](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) og [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### <a name="intercompany-order-processing"></a>Konsernintern ordrebehandling
@@ -885,7 +884,7 @@ For øyeblikket er det moderne salgsstedet for detaljhandel bare tilgjengelig ba
 | Hva du kan gjøre | Hvorfor dette er viktig |
 |-----------------|-----------------------|
 | Modeller forskjellige containertyper. | Du kan bruke andre containertyper i lageret for å optimalisere lagring og av andre grunner. Den nye containertypeenheten har de fysiske egenskapene til containertypene. Nå kan du knytte nummerskilt med en bestemt containertype og bruke lagringsgrenser for lokasjon. Du kan for eksempel bruke denne funksjonen til å kontrollere hvor mange paller (eller andre typer container) du tillater på et bestemt sted. Containertyper er også lagt til i enhetssekvensgrupper for å legge til standard containertyper for mottaksprosessen. Containertypene kan brukes med innkommende og utgående lokasjonsdirektiver. De kan også brukes i lagerbeholdningsvisningen for å finne ut hvor mange containere som for tiden finnes på lager. Hvis du vil ha mer informasjon, kan du se blogginnlegget [Bruk av nummerskilt som er tilknyttet en containertype for å drive lagerstyringsprosesser](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). Selv om dette blogginnlegget beskriver en oppdatering for Microsoft Dynamics AX 2012, er den samme støtten nå lagt til Dynamics 365 for Operations. |
-| Tilbakefør forsendelser. | I et lager må du kunne håndtere sene endringer. Noen varer kan for eksempel bli skadet slik at du ikke kan levere. En kunde kan også sende en sen forespørsel om å avbryte eller endre en ordre. I Dynamics 365 for Operations kan du nå tilbakeføre en forsendelse. Derfor kan du annullere en følgeseddel slik at du kan oppdatere den med riktig antall senere. På samme måte kan du annullere produktkvitteringer på den innkommende flyten slik at du kan opprette en oppdatert versjon. |
+| Tilbakefør forsendelser. | I et lager må du kunne håndtere sene endringer. Noen varer kan for eksempel bli skadet slik at du ikke kan levere. En kunde kan også sende en sen forespørsel om å avbryte eller endre en ordre. I Dynamics 365 for Operations er det nå mulig å tilbakeføre en forsendelse. Derfor kan du annullere en følgeseddel slik at du kan oppdatere den med riktig antall senere. På samme måte kan du annullere produktkvitteringer på den innkommende flyten slik at du kan opprette en oppdatert versjon. |
 | Bruk paller som har ulike varer. | Du kan nå motta og registrere en "blandet" pall. En blandet pall består av ulike varer som er samlet på en pall for én eller flere bestillinger eller linjer. Alle registreringer kan oppsummeres i ett målnummerskilt. Denne prosessen aktiveres via mobilenheten for lageret. Når pallen med blandede varer mottas på lageret, identifiserer for eksempel mottaksassistenten varene og antallene på pallen før pallen flyttes til dedikerte plasseringslokasjoner. Plasseringslokasjonene identifiseres av arbeidsmaler og lokasjonsdirektiver. Hvis plasseringslokasjonene er spredt over flere varer som har faste lokasjoner, oppretter denne funksjonen så mange plasseringsarbeidslinjer som det finnes ulike varer på den blandede pallen. Denne funksjonen gjør registrering og plassering av de mottatte pallene med blandede varer raskere og mer fleksibel. Hvis du vil ha mer informasjon, kan du se blogginnlegget [Motta og registrere en pall med blandede kildedokumentlinjer som bruker ett nummerskilt](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) og informasjon om støtte for blandet pall i [annonseringen av vår nyeste kumulative oppdatering](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). Selv om dette blogginnlegget beskriver en oppdatering for AX 2012, er den samme støtten nå lagt til Dynamics 365 for Operations. |
 
 ### <a name="minor-feature-enhancements-in-supply-chain-management"></a>Små funksjonsforbedringer i forsyningskjedeadministrasjonen
@@ -946,4 +945,3 @@ For øyeblikket er det moderne salgsstedet for detaljhandel bare tilgjengelig ba
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hva er nytt eller endret?](whats-new-changed.md)
-

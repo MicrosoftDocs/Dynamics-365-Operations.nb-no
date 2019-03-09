@@ -5,9 +5,9 @@ author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326429"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Generer en statistisk basislinjeprognose
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Når prognosestrategien er satt til **Kopier over historisk behov**, ignoreres s
 
 For å unngå forvirring i produksjonsplanene, kan et bestemt antall prognoseperioder låses. Dette nummeret angis **Låsningshorisont** feltet. På siden **Justert behovsprognose** er cellene for låste perioder deaktivert, for å gi en visuell indikasjon på at disse verdiene ikke skal endres. 
 
-Startdatoen for behovsprognose for basislinje behøver ikke være gjeldende dato eller en dato i fremtiden. Hvis du vil angi en annen startdato, kan du bruke feltet **Startdato for basislinjeprognose - Fra-dato**. I juni, kan brukerne for eksempel generere en prognose for neste år. Fordi prognoseperioder mellom slutten av historiske behov og starten på basislinjen mangler, er det ikke sikkert at forutsigelser blir nøyaktige. Hvis du bruker behovsprognosetjenesten for Microsoft Dynamics 365 for Finance and Operations, er det fire måter som du kan fylle ut manglene på. Du kan velge metoden du vil ha ved å angi parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametere for behovsprognose**. 
+Startdatoen for behovsprognose for basislinje behøver ikke være gjeldende dato eller en dato i fremtiden. Hvis du vil angi en annen startdato, kan du bruke feltet **Startdato for basislinjeprognose - Fra-dato**. I juni, kan brukerne for eksempel generere en prognose for neste år. Fordi prognoseperioder mellom slutten av historiske behov og starten på basislinjen mangler, er det ikke sikkert at forutsigelser blir nøyaktige. Hvis du bruker Microsoft Dynamics 365 for Finance and Operations behovsprognoseservice, er det fire måter som du kan fylle ut manglene på. Du kan velge metoden du vil ha ved å angi parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametere for behovsprognose**. 
 
 Feltet **Startdato for basislinjeprognose** - **Fra-dato** må være satt til begynnelsen av en prognoseperioden, for eksempel i USA en søndag, hvis prognoseperioden er uken. Systemet justerer automatisk feltet **Startdato for basislinjeprognose** - **Fra-dato** slik at det samsvarer med begynnelsen av en prognoseperiode. 
 
@@ -72,7 +71,6 @@ Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for 
 [Gjøre manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
 
 [Godkjenne den justerte prognosen](authorize-adjusted-forecast.md)
-
 
 
 

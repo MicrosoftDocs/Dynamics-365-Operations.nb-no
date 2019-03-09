@@ -1,13 +1,13 @@
 ---
-title: "Økonomisk innsikt"
-description: "Økonomisk innsikt bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør."
+title: Økonomisk innsikt
+description: Økonomisk innsikt bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør.
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308857"
 ---
-
 # <a name="financial-insights"></a>Økonomisk innsikt
 
 [!include [banner](../includes/banner.md)]
 
-**Økonomisk innsikt** bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør. Power BI is er innebygd i Microsoft Dynamics 365 for Finance and Operations. Fokuset til **Økonomiske innsikt** er analytisk rapportering. Personer i en organisasjon kan vise, undersøke, forstå og utføre en handling. 
+**Økonomisk innsikt** bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør. Power BI er innebygd i Microsoft Dynamics 365 Finance and Operations. Fokuset til **Økonomiske innsikt** er analytisk rapportering. Personer i en organisasjon kan vise, undersøke, forstå og utføre en handling. 
 
 **Økonomisk innsikt** kombinerer data fra økonomimodulen og underfinans for å gi en mer fullstendig oversikt over den økonomiske situasjonen i en organisasjon.
 
@@ -126,7 +125,7 @@ I tillegg til brukergrensesnittet i det opprinnelige **CFO-oversikt**-arbeidsomr
 I den første versjonen av **Økonomisk innsikt** kan ingen av de visuelle effektene redigeres. I fremtidige versjoner kan brukere som har riktig sikkerhet, opprette nye visuelle effekter, kopiere eksisterende effekter og redigere dem. Selv om .pbix-filene som inneholder rapportene, er tilgjengelige som ressurser, anbefaler vi ikke at du redigerer standardrapportene. Flere endringer vil bli gjort i visuelle effekter for datamodellen, standardrapporter og tilpasset regnskapsoppgjør som brukes til å opprette regnskapsoppgjørene. Derfor, hvis du vil dra nytte av nye funksjoner og endringer i datamodellen i neste versjon, må du gjøre om eventuelle endringer du foretok i standardrapportene via Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrering
-Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette er den samme ruten som er tilgjengelig via Power BI-skrivebordet. Det finnes forskjellige nivåer med filtrering, noen er kanskje ikke tilgjengelige, avhengig av hva du har valgt på en side (kategori), eller om du bruker funksjonene for gjennomgang:
+Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette er den samme ruten som er tilgjengelig via Power BI Desktop. Det finnes forskjellige nivåer med filtrering, noen er kanskje ikke tilgjengelige, avhengig av hva du har valgt på en side (kategori), eller om du bruker funksjonene for gjennomgang:
 
 - **Rapportnivåfiltrere** – Disse filtrene brukes på alle visuelle effekter på alle sider (kategorier).
 - **Sidenivåfiltre** – Disse filtrene brukes på alle visuelle effekter i den aktive kategorien. Disse filtrene brukes over rapportnivåfiltrene.
@@ -194,7 +193,7 @@ Når du har drillet ned på en enkelt rad, kreves det flere klikk for å gå til
 
 Du kan fortsette å bruke **Drill opp**-knappen for å gå tilbake til det høyeste nivået i summeringen for radene.
 
-Power BI har også en knapp som gjør det mulig å gå til neste nivå i hierarkiet (den andre knappen etter **Drill på**-feltet). Effekten av denne knappen er forskjellig fra effekten av **Vis**-knappen (den tredje knappen etter **Drill på**-feltet), som brukes til å utvide hierarkiet. Når du utvider hierarkiet, beholdes hierarkiet i rapporten. Hvis du for eksempel som vist tidligere utvider på hovedkontotypen, ser du fortsatt hovedkontotypen i rapporten. Men når du går til neste nivå i hierarkiet, viser ikke lenger rapporten overordnet i hierarkiet, som vist i illustrasjonen nedenfor.
+Power BII har også en knapp som gjør det mulig å gå til neste nivå i hierarkiet (den andre knappen etter **Drill på**-feltet). Effekten av denne knappen er forskjellig fra effekten av **Vis**-knappen (den tredje knappen etter **Drill på**-feltet), som brukes til å utvide hierarkiet. Når du utvider hierarkiet, beholdes hierarkiet i rapporten. Hvis du for eksempel som vist tidligere utvider på hovedkontotypen, ser du fortsatt hovedkontotypen i rapporten. Men når du går til neste nivå i hierarkiet, viser ikke lenger rapporten overordnet i hierarkiet, som vist i illustrasjonen nedenfor.
 
 ![Råbalanse](./media/trial-balance5.png)
 
@@ -250,4 +249,3 @@ Informasjonen i følgende ressurser er ikke nødvendig for å aktivere de inneby
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

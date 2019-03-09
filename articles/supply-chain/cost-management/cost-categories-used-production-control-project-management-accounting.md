@@ -1,13 +1,13 @@
 ---
 title: Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
-description: "Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. Denne artikkelen inneholder informasjon om kostnadskategorier som må du definere for disse typene produksjonsarbeid for produksjon og prosjekter."
+description: Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. Denne artikkelen inneholder informasjon om kostnadskategorier som må du definere for disse typene produksjonsarbeid for produksjon og prosjekter.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326038"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapporte
 -   Finanskontoene som er relatert til kostnader og salg, er vanligvis definert for kategorigruppen som er tilordnet til kostnadskategorien. Imidlertid kan bestemte kontoer defineres for en individuell kostnadskategori.
 
 Tilleggsknappene på **Kostnadskategorier**-siden gir tilgang til prosjektrelatert informasjon om en valgt kostnadskategori. Du kan for eksempel vise prosjektrelaterte transaksjoner, definere ansatte eller prosjekter, definere timekostnader og salgspriser og vise rapporter.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Definere ER-modelltilordninger og velge datakilder for dem
-description: "De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan velge datakilder for en elektronisk rapporteringsdatamodell."
+description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan velge datakilder for en elektronisk rapporteringsdatamodell.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348877"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definere ER-modelltilordninger og velge datakilder for dem
 
@@ -51,7 +51,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>Definer nødvendige datakilder for den gjeldende modelltilordningen
 1. Klikk Utforming.
-2. I treet velger du Dynamics 365 for Operations\Tabellposter.
+2. Velg Dynamics 365 for Operations\Tabellposter i treet.
 3. Klikk Legg til rot.
     * Angi denne datakilden hvis du vil åpne betalingstransaksjoner.  
 4. Skriv inn Transaksjoner i Navn-feltet.
@@ -110,7 +110,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 41. Utvid Transaksjoner i treet.
 42. I treet viser eller skjuler du Transaksjoner\$Amount.
 43. Vis eller skjul Transaksjoner i treet.
-44. I treet velger du Dynamics 365 for Operations\Tabellposter.
+44. Velg Dynamics 365 for Operations\Tabellposter i treet.
 45. Klikk Legg til rot.
     * Angi denne datakilden for å vise detaljer for firmaets bankkonto.  
 46. Skriv inn BankAccount i Navn-feltet.
@@ -157,5 +157,4 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 70. Lukk siden.
 71. Lukk siden.
 72. Lukk siden.
-
 

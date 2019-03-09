@@ -5,9 +5,9 @@ author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340827"
 ---
-
 # <a name="info-codes-and-info-code-groups"></a>Informasjonskoder og informasjonskodegrupper
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Informasjonskoder gjør det mulig å hente data på i en salgsstedskasse (POS). 
 
 ## <a name="info-codes-group"></a>Informasjonskodegruppe
 
-I Dynamics 365 for Retail kan du opprette grupper av infokoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
+I Dynamics 365 for Retail kan du opprette grupper med informasjonskoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
 
 - Definere færre infokoder, og enkelt bruke dem på nytt. Informasjonskoder som er inkludert i informasjonskodegrupper, har ingen forhåndsdefinerte avhengigheter om andre informasjonskoder. Du kan ta med den samme informasjonskoden i flere informasjonskodegrupper og deretter bruke prioritering til å vise de samme informasjonskodene i rekkefølgen som er mest aktuell i en gitt situasjon.
 - Koble informasjonskoder til andre koder eller informasjonskodegrupper for å samle inn informasjon om et produkt eller en transaksjon, uten å definere en egen informasjonskode eller koblede informasjonskoden for hvert scenario.
@@ -57,4 +56,3 @@ Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, u
 **Eksempel 2: Koble infokoder til infokodegrupper**
 
 Når du selger visse produkter, for eksempel mobilenheter, er det alltid aktuelt å samle inn et spesifikt sett med informasjon, for eksempel telefonnummer, MEID-nummer (Mobile Equipment Identifier) og serienummer. Du vil imidlertid også samle inn annen informasjon for et nettbrett enn for en mobiltelefon. Du kan definere en informasjonskodegruppe som inkluderer spørsmål om telefonnummeret, MEID-nummeret og serienummeret, og deretter koble informasjonskodegruppen til en individuell informasjonskode. Når den produktspesifikke informasjonskoden utløses, kan informasjonskodegruppen utløses i neste omgang, slik at du kan samle inn fellesdataene uten å måtte definere flere sett med koblede informasjonskoder for hver enhet.
-

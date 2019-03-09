@@ -1,13 +1,13 @@
 ---
 title: Formalisere forretningsprosesser
-description: "Dette emnet beskriver hvordan du kan bruke forretningsprosessfunksjonen til å opprette en mal for forretningsprosessen for prosesser som må fullføres i organisasjonen."
+description: Dette emnet beskriver hvordan du kan bruke forretningsprosessfunksjonen til å opprette en mal for forretningsprosessen for prosesser som må fullføres i organisasjonen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305691"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprosesser
 
@@ -58,7 +58,7 @@ Kompliserte oppgaver kan kreve flere trinn, eller personen som utfører oppgaven
 I en mal for forretningsprosess kan du starte en forretningsprosess ved å velge **Start prosess**. Når en prosess er startet, opprettes det oppgaver for de valgte arbeiderne eller stillingene som er definert i oppgavene som er inkludert i malen. En forfallsdato blir også tilordnet til hver oppgave ved å legge til eller trekke fra antallet forskyvningsdager fra måldatoen, som beskrevet i dele "Oppgaver". Du kan vise aktive forretningsprosesser i arbeidsområdet **Forretningsprosesser**.
 
 ## <a name="employee-self-service"></a>Ansattselvbetjening
-Når en oppgave er tilordnet til en ansatt, kan den ansatt vise den, og alle hans eller hennes andre tilordnede oppgaver på siden **Ansattselvbetjening**. For hver forretningsprosessoppgave som er tilordnet ham eller henne, kan den ansatt se navnet og beskrivelsen av oppgaven, instruksjoner for å fullføre den og navnet på kontaktpersonen. Fra siden **Ansattselvbetjening** kan den ansatte også åpne den tilhørende siden i Microsoft Dynamics 365 eller den tilknyttede websiden, og kan merke oppavene som pågår, er avbrutt eller fullført.
+Når en oppgave er tilordnet til en ansatt, kan den ansatt vise den, og alle hans eller hennes andre tilordnede oppgaver på siden **Ansattselvbetjening**. For hver forretningsprosessoppgave som er tilordnet ham eller henne, kan den ansatt se navnet og beskrivelsen av oppgaven, instruksjoner for å fullføre den og navnet på kontaktpersonen. Fra siden **Ansattselvbetjening** kan den ansatte også åpne den tilhørende siden i Microsoft Dynamics 365 eller den tilknyttede websiden, og kan merke oppgavene som pågår, er avbrutt eller fullført.
 
 ## <a name="business-process-workspace"></a>Arbeidsområdet Forretningsprosess
 Personaleksperter kan vise de aktive forretningsprosessene fra arbeidsområdet **Forretningsprosess**. Dette arbeidsområdet viser alle aktive prosesser og oppgavene som er knyttet til hver av dem. Den omfattende oppgavelisten kan filtreres etter forfallsdato. Arbeidsområdet viser også forfalte oppgaver og oppgaver som er spesifikt tilordnet til personaleksperter. Personaleksperten kan også oppdatere statusen til alle oppgaver, og om nødvendig kan oppgaver tilordnes på nytt slik at den generelle forretningsprosessen har fremdrift.
@@ -74,5 +74,4 @@ Hvis du vil opprette eller kopiere en mal for forretningsprosessen eller starte 
 - Velge **Start prosess** for å starte den valgte forretningsprosessen, tilordne oppgaver og beregne forfallsdatoer.
 
 Hvis du vil vise aktive prosesser og tilknyttede oppgaver, åpner du arbeidsområdet **Forretningsprosesser**.
-
 

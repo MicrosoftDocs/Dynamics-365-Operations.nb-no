@@ -1,13 +1,13 @@
 ---
-title: "Salg og markedsføring"
-description: "Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg."
+title: Salg og markedsføring
+description: Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer data i salgsflyten. Disse dataene inkluderer det innledende salgsordreinitiativet, fremtidig oppfølgningshandling og påfølgende salg.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 4de2ac36ec13f95c7603d097a0800b317014bbd0
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321070"
 ---
-
 # <a name="sales-and-marketing"></a>Salg og markedsføring
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ I salg og markedsføring kan de første samhandlingene du har med potensielle ku
 
 ### <a name="campaigns"></a>Kampanjer
 
-En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I i Microsoft Dynamics 365 for Finance and Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
+En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I Microsoft Dynamics 365 for Finance and Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
 
 ## <a name="sales"></a>Salg
 Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg](./media/sales01.jpg)](./media/sales01.jpg)
@@ -126,4 +125,3 @@ En proformafaktura er en faktura som er klargjort som et estimat av det faktiske
 #### <a name="blogs"></a>Blogger
 
 Du finner en oversikt over en salgsprosess i posten [Hvordan salg fungerer i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-

@@ -1,13 +1,13 @@
 ---
 title: Startside for Dynamics 365 for Unified Operations Mobile-appen
-description: "Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon."
+description: Dette emnet beskriver appen Microsoft Dynamics 365 for Unified Operations Mobile og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321392"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Startside for Dynamics 365 for Unified Operations Mobile-appen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver mobilappen Microsoft Dynamics 365 for enhetlig drift og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
+Dette emnet beskriver appen Microsoft Dynamics 365 for Unified Operations Mobile og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 
 > [!NOTE]
-> Mobilappen var tidligere kalt *Microsoft Dynamics 365 for Finance and operations*.
+> Mobilappen ble tidligere kalt *Microsoft Dynamics 365 for Finance and Operations*.
 
 <a name="overview"></a>Oversikt
 --------
@@ -90,7 +89,7 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <tr class="even">
 <td>2</td>
 <td>Systemansvarlig</td>
-<td><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene som leveres av Microsoft.</td>
+<td><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong>Laste ned og installere KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</td>
 <td>Hvis du vil ha mer informasjon, se følgende emner:
 <ul>
 
@@ -153,4 +152,3 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 </tr>
 </tbody>
 </table>
-

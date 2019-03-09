@@ -1,13 +1,13 @@
---- 
-title: "Konfigurere bølgebehandling"
-description: "Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket arbeid som genereres for et lager når en bølge behandles, og om bølger behandles manuelt eller automatisk."
+---
+title: Konfigurere bølgebehandling
+description: Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket arbeid som genereres for et lager når en bølge behandles, og om bølger behandles manuelt eller automatisk.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337515"
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
@@ -68,5 +68,4 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 24. Velg et alternativ i feltet Frigi til lager.
     * Når det gjelder salgsordrer og Kanban-bestillinger, må beholdning reserveres før ordren frigis til lageret. Hvis ikke, varer eller tildelingslinjer kan ikke behandles i en Bølge. For produksjonsordrer kan du også velge Tillat delvis reservasjon. Dette er for eksempel nyttig hvis du har materialene du trenger for å starte produksjon, og du kan deretter vente til tilleggsmaterialene bli tilgjengelige for å fullføre prosessen. Hvis du velger dette alternativet, må du gjenta prosessen med frigivelse til lager manuelt når tilleggsmaterialene flere blir tilgjengelige.  
 25. Lukk siden.
-
 

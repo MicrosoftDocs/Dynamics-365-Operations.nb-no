@@ -5,9 +5,9 @@ author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308788"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
 [!include [banner](includes/banner.md)]
@@ -188,4 +187,3 @@ Aktiveringsrelatert tilleggsinformasjon inkluderer arbeideren som endret aktiver
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alle endringer i en klient på salgsstedet, unntatt endringer i statusen for enhetsaktivering, må synkroniseres til kanaldatabasen for å tre i kraft. Hvis du vil synkronisere endringer til kanaldatabasen, går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**, og kjører den nødvendige distribusjonsplan. For klientendringer må du kjøre distribusjonsplanene "Kasser" og "Kanalkonfigurasjon".
-

@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309754"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurere manuelle oppgaver i en arbeidsflyt
 
 [!include [banner](../includes/banner.md)]
@@ -383,4 +382,3 @@ Når den manuelle oppgaven tilordnes en bruker, må brukeren utføre en handling
 5. Merk av for **Deleger** hvis brukeren skal kunne tilordne oppgaven til andre brukere.
 6. Merk av for **Tilordne på nytt** hvis brukeren skal kunne tilordne oppgaven på nytt til andre brukere i arbeidselementkøen.
 7. Merk av for **Frigi** hvis brukeren skal kunne tilordne oppgaven på nytt til arbeidselementkøen. En annen bruker kan deretter fullføre oppgaven.
-

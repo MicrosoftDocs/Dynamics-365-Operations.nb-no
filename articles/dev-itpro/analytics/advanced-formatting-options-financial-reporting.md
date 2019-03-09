@@ -1,13 +1,13 @@
 ---
 title: Avanserte formateringsalternativer i finansrapportering
-description: "Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger."
+description: Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335583"
 ---
-
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Tabellen nedenfor beskriver de avanserte formateringsfunksjonene som er tilgjeng
 ## <a name="advanced-cell-placement"></a>Avansert celleplassering
 Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte verdier i bestemte celler. Fremtvinging brukes for eksempel ofte til å flytte den riktige saldoen i et kontantstrømutdrag. Du kan bruke fremtvinging til følgende formål:
 
-- Flytte verdier fra Microsoft Excel til bestemte celler.
+- Flytte verdier fra Microsoft Excel til spesifikke celler.
 - Hardkode bestemte verdier i en rapport.
 - Endre fortegn ved å kopiere en verdi fra en tidligere celle og multipliseres med verdien -1.
 
@@ -209,14 +208,14 @@ I dette eksemplet betyr beregningsformelen **@100+@330** at beløpet i rad 100 l
 
 | Radkode | Beskrivelse                 | Formatkode | Relaterte formler/rader/enheter | Utskriftskontroll | Radmodifikator | Kobling til finansdimensjoner |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Kontanter i begynnelsen av perioden |             |                            | NP            | BB           | +Konto=\[1100:1110\]       |
-| 370      | Kontanter i begynnelsen av året   | CAL         | @100+@330                  | NP            |              |                              |
-| 400      | Kontanter i begynnelsen av perioden | TOT         | 340+370                    |               |              |                              |
+| 340      | Kontanter på begynnelsen av perioden |             |                            | SIU            | Startsaldo           | +Konto=\[1100:1110\]       |
+| 370      | Kontanter på begynnelsen av året   | BER         | @100+@330                  | SIU            |              |                              |
+| 400      | Kontanter på begynnelsen av perioden | TOT         | 340+370                    |               |              |                              |
 
 Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter**, må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall.
 
 > [!NOTE]
-> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG**). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@GROSS\_MARGIN/@SALES**).
+> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG**). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@BRUTTOFORTJENESTE/@SALG**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt rad
 
@@ -267,8 +266,8 @@ Begrepet **Perioder** i en **IF**-setning, representerer antall perioder for rap
 **THEN**- og **ELSE**-formler kan være alle gyldige beregninger, fra svært enkel verditilordninger til komplekse formler. Setningen **IF A.200&gt;0 THEN A=B.200** betyr "Hvis verdien i cellen i kolonne A i rad 200 er større enn 0 (null), plasserer verdien fra cellen i kolonne B i rad 200 i cellen i kolonne A i gjeldende rad." Den foregående **IF/THEN**-setning legger til en verdi i én kolonne i gjeldende rad. Du kan imidlertid også bruke en krøllalfa (@) i sann/usann-evalueringer eller formelen for å representere alle kolonner. Her er noen andre eksempler som er beskrevet i følgende deler:
 
 - **IF A.200 &gt;0 THEN B.200**: Hvis verdien i celle A.200 er positiv, blir verdien fra celle B.200 lagt til i alle kolonner i gjeldende rad.
-- **IF A.200 &gt;0 THEN @200**: Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lagt til i den tilsvarende kolonnen i gjeldende rad.
-- **IF @200 &gt;0 THEN @200**: Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
+- **IF A.200 &gt; 0 THEN @200**: Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lag til i den tilsvarende kolonnen i gjeldende rad.
+- **IF @200 &gt; 0 THEN @200**: Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrense en beregning for en rapporteringsenhet i en raddefinisjon
 
@@ -277,11 +276,11 @@ Hvis du vil begrense en beregning til én enkelt rapporteringsenhet i et rapport
 > [!NOTE]
 > Hvis du vil bruke denne funksjonen, må et rapporteringstre være tilknyttet raddefinisjonen.
 
-Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF@Unit**-konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR**-kombinasjoner i en **IF**-setning. Her er et eksempel: IF @Unit(SALG) OR @Unit(SALGVEST) THEN 5 ELSE @100. Du kan angi en enhet i en beregningstypebegrensning på én av følgende måter:
+Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF @Unit**-konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR**-kombinasjoner i en **IF**-setning. Her er et eksempel: IF @Unit(SALG) OR @Unit(SALGVEST) THEN 5 ELSE @100. Du kan angi en enhet i en beregningstypebegrensning på én av følgende måter:
 
 - Angi et enhetsnavn for å inkludere enheter som samsvarer. **IF @Unit(SALG)** muliggjør beregningen for alle enheter med navnet SALG, selv om det finnes flere SALG-enheter i rapporteringstreet.
-- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit(ACME:SALG**) for å begrense beregningen til SALG-enheter i TINDE-firmaet.
-- Skriv inn den fullstendige hierarkikoden fra rapporteringstreet for å begrense beregningen til en bestemt enhet. Skriv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALG)**.
+- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit(TINDE:SALG**) for å begrense beregningen til SALG-enheter i TINDE-firmaet.
+- Angi den fullstendige hierarkikoden fra rapporteringstreet for å begrense beregningen til en bestemt enhet. Skriv for eksempel **IF @Unit(SAMMENDRAG^TINDE^VESTKYST^SALG)**.
 
 > [!NOTE]
 > Hvis du vil finne den fullstendige hierarkikoden, høyreklikker du definisjonen av rapporteringstreet og velger **Kopier rapporteringsenhet-ID (H-kode)**.
@@ -298,4 +297,3 @@ En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avheng
 
 > [!NOTE]
 > Du kan ikke sette resultatene av en beregning inn i andre kolonner. Resultatet må være i kolonnen som inneholder formelen.
-

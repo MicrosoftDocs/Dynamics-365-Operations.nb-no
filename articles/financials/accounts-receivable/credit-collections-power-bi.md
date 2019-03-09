@@ -1,13 +1,13 @@
 ---
 title: Power BI-innholdet Behandling av kreditt og innkrevinger
-description: "Dette emnet beskriver hva som er inkludert i Power BI-innholdet Behandling av kreditt og innkrevinger. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver hva som er inkludert i Power BI-innholdet Behandling av kreditt og innkrevinger. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325187"
 ---
-
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
 [!include [banner](../includes/banner.md)]
@@ -43,12 +42,12 @@ Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Syst
 
 Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vil se dataene på tvers av alle firmaer, tilordner du plikten **CustCollectionsBICrossCompany** til rollen.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger**-arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
-Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **CustCollectionsBICrossCompany**.
+Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringene i Power BI-innholdet **CustCollectionsBICrossCompany**.
 
 | Rapportside                 | Visualisering |
 |-----------------------------|---------------|
@@ -88,5 +87,4 @@ Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Behandlin
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Antallet rentenotaer som har blitt opprettet.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Antall salgsordrer totalt som er på vent.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Summen av transaksjoner som er avskrevet.                 |
-
 

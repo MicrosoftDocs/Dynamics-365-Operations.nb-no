@@ -1,31 +1,31 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)
+title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)?
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
 ms.openlocfilehash: 6bd049bfe4639136276ab2f14e6310e45d1254f2
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305587"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-november-27-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-november-27-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (27. november 2018)?
 
 [!include [banner](includes/banner.md)]
 
@@ -64,4 +64,3 @@ Med denne oppdateringen vises avsluttede ansatte som er ansatt på nytt, bare é
 
 - **Problem**: Når du legger til en ny tilknytning til en arbeider, nedtones **Ny** og **Rediger**-knappene. 
 - **Løsning:** Før du åpner vedleggssiden må du kontrollere at faktaboksene på **Arbeider**-siden er lukket. Hvis faktaboksene er lukket når **Arbeider**-siden lastes, blir vedleggsknappene aktivert. (Dette problemet vil bli løst i neste plattformoppdatering.)
-

@@ -1,13 +1,13 @@
---- 
-title: "Opprett utlånsvarer"
-description: "Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel telefoner eller datamaskiner, som firmaet låner ut til arbeidere."
+---
+title: Opprett utlånsvarer
+description: Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel telefoner eller datamaskiner, som firmaet låner ut til arbeidere.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e17005bda302c58f5a6560fe9c4eda04e918c92f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cef1f9b2e3d202d7eea3a967fa8a6c371c6ac3a5
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341839"
 ---
 # <a name="create-loan-items"></a>Opprett utlånsvarer
 
@@ -58,5 +58,4 @@ Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel 
     * Hvis startnummeret for en utlånsvare for eksempel er 10, angir du to nummersymboler i Format-feltet.  
 14. Klikk OK.
 15. Oppdater siden.
-
 

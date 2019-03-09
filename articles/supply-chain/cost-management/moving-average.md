@@ -1,13 +1,13 @@
 ---
 title: Glidende gjennomsnitt
-description: "Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres."
+description: Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0befa0e31347c9ee15ac0426fa3314b151a0200d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348072"
 ---
-
 # <a name="moving-average"></a>Glidende gjennomsnitt
 
 [!include [banner](../includes/banner.md)]
@@ -113,8 +112,7 @@ I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for �
 | 8. oktober        | 8. oktober    | Revaluering for glidende gjennomsnitt |          | 4,00   | 16,00             |
 |                  | 31. oktober   | Sum                      | 2        | 32,00  | 16,00             |
 
- **Obs!** Du kan ikke avstemme økonomi med lager ved hjelp av **Sortering etter transaksjonstidspunkt**. Rapporten må skrives ut ved hjelp av **Posteringsdato**-alternativet.
-
+ **Obs!** Du kan ikke avstemme økonomi med lager ved hjelp av **Sortering etter transaksjonstidspunkt**. Rapporten må skrives ut ved hjelp av **Posteringsdato**-alternativet.
 
 
 

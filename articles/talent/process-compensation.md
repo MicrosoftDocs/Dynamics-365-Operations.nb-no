@@ -1,13 +1,13 @@
 ---
 title: Behandle kompensasjon
-description: "Med kompensasjonsbehandling kan du beregne nye kompensasjonsbeløp for de ansatte basert på justeringer av egenkapitalen, mål for personlig tilleggsøkning og ytelse."
+description: Med kompensasjonsbehandling kan du beregne nye kompensasjonsbeløp for de ansatte basert på justeringer av egenkapitalen, mål for personlig tilleggsøkning og ytelse.
 author: kherr75
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 0886f60dbdfc531893cd2c1b23df5b52a4a2f4b6
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305652"
 ---
-
 # <a name="process-compensation"></a>Behandle kompensasjon
 
 [!include [banner](includes/banner.md)]
@@ -80,4 +79,3 @@ Når du har kontrollert kompensasjonsbeløpene for en ansatt og gjort eventuelle
 Når en eller flere ansatthendelser får statusen oppdatert til Godkjent, kan de lastes til de ansattes faste kompensasjonsposter. Dette kan gjøres ved å velge hver ansatthendelse én om gangen og klikke **Last inn ansattkompensasjon** på siden **Ansattresultater**, eller ved å klikke **Last inn kompensasjon** på siden **Prosessresultater** for å laste inn alle godkjente ansatthendelser samtidig.
 
 Hvis du velger **OK** i dialogboksen **Last inn kompensasjon**, legges kompensasjonshandlingslinjer som ikke er null, til på siden **Fast kompensasjon for ansatt**.
-

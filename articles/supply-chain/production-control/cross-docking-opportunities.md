@@ -1,13 +1,13 @@
 ---
-title: "Direkteoverføring fra produksjonsordrer til utleveringsporter"
-description: "Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport."
+title: Direkteoverføring fra produksjonsordrer til utleveringsporter
+description: Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av materiale som er rapportert ferdig, fra en produksjonslinje til en utleveringsport.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329028"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ Eksemplet nedenfor viser tre varianter av en flyt som starter på slutten av pro
 Et produkt som er rapportert som fullført til produksjonsutleveringsstedet (3), og en truckfører vil hente pallen på dette stedet (3).
 
 -   Hvis det er planlagt en aktivitet (6) for overføring produktet fra produksjon (1) til et distribusjonssenter (7), vil deretter truckføreren bli henvist av systemet til å sette pallen ved en rampedør (4).
--   Hvis en lastebil er allerede tilordnet rampedøren, blir truckføreren beedt om å laste produktet rett på lastebilen.
+-   Hvis en lastebil er allerede tilordnet rampedøren, blir truckføreren bedt om å laste produktet rett på lastebilen.
 -   Hvis det ikke er noen planlagt aktiviteten for overføring av produktet, blir truckføreren bedt om å plassere produktet et sted på det interne lageret (5).
 
 [![Opportunistisk direkteoverføring](./media/scenario1.png)](./media/scenario1.png)
@@ -126,6 +125,5 @@ Når et produkt som er rapportert som fullført på produksjonslinjen overføres
 ### <a name="additional-information"></a>Tilleggsinformasjon
 
 -   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet. 
-
 
 

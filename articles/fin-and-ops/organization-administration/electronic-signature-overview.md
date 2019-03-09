@@ -1,13 +1,13 @@
 ---
 title: Elektroniske signaturer
-description: Denne artikkelen gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
+description: Denne artikkelen emnet gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325670"
 ---
-
 # <a name="electronic-signatures"></a>Elektroniske signaturer
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
+Denne artikkelen emnet gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="what-is-an-electronic-signature"></a>Hva er en elektronisk signatur?
 
@@ -111,4 +110,3 @@ Hvis du vil angi godkjennere, følger du denne fremgangsmåten.
 1. På siden **Alternativer** i kategorien **Kontoer**, klikker du **Angi godkjenner**.
 2. I feltet **Bruker-ID for godkjenner** velger du ID-en for brukeren som må signere for en annen brukers endringer.
 3. I feltet **Signer for bruker-ID** velger du ID-en til brukeren som har endringer det må signeres for.
-

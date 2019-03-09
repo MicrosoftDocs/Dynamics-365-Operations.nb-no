@@ -1,13 +1,13 @@
---- 
+---
 title: Administrere ER-modelltilordning i separate ER-konfigurasjoner
-description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan administrere modelltilordninger for elektronisk rapportering (ER) i separate ER-konfigurasjoner."
+description: De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan administrere modelltilordninger for elektronisk rapportering (ER) i separate ER-konfigurasjoner.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349153"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Administrere ER-modelltilordning i separate ER-konfigurasjoner
 
@@ -70,7 +70,7 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 6. Klikk Utforming.
     * Merk at konfigurasjonen for opprettede tilordningen inneholder en ny, tom tilordning med samme navn som opprettet konfigurasjonen. Vær oppmerksom på at når en konfigurasjon for valgte overordnede inneholder tilordninger av verdimodellen, vil de bli kopiert til en ny konfigurasjon for tilordning.   
 7. Klikk Utforming.
-8. I treet velger du Dynamics 365 for Operations\Tabell.
+8. Velg Dynamics 365 for Operations\Tabell i treet.
 9. Klikk Legg til rot.
 10. I Navn-feltet skriver du inn Firma.
     * Firma  
@@ -123,7 +123,7 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 5. Klikk Opprett konfigurasjon.
 6. Klikk Utforming.
 7. Klikk Utforming.
-8. I treet velger du Dynamics 365 for Operations\Tabell.
+8. Velg Dynamics 365 for Operations\Tabell i treet.
 9. Klikk Legg til rot.
 10. I Navn-feltet skriver du inn Firma.
     * Firma  
@@ -161,5 +161,4 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 6. Klikk Kjør.
 7. Klikk OK.
     * Legg merke til at den standard tilordning konfigurasjonen brukes av denne formatkonfigurasjonen for generering av det elektroniske dokumentet (opprettet utdataene inneholder firmakoden).  
-
 

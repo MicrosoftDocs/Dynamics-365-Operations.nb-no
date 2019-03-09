@@ -1,13 +1,13 @@
---- 
+---
 title: Deaktivere en produksjonsflytversjon
-description: "Når en aktiv produksjonsflytversjon ikke lenger er nødvendig, kan den deaktiveres."
+description: Når en aktiv produksjonsflytversjon ikke lenger er nødvendig, kan den deaktiveres.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 091cafd02bd568323e586373fc8b0f983afee343
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4a7eee6617e12d59a3d06207f5f6b58c93e28240
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340758"
 ---
 # <a name="deactivate-a-production-flow-version"></a>Deaktivere en produksjonsflytversjon
 
@@ -45,5 +45,4 @@ Til denne prosedyren trenger du en produksjonsflyt med en versjon som kan deakti
 5. Klikk Deaktiver.
     * Ikke fortsett hvis du ikke er 100 % sikker på at denne produksjonsflytversjonen er foreldet. Når du klikker OK, utløper alle aktive Kanban-regler og alle produksjons- og etterfyllingsaktiviteter for denne produksjonsflytversjonen opphører umiddelbart.  
 6. Klikk OK.
-
 

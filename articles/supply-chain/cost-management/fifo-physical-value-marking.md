@@ -1,13 +1,13 @@
 ---
 title: FIFO med fysisk verdi og merking
-description: "FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først. Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen."
+description: FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først. Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d3a6c412e497952c0c7f5b113990bbe693b0f22
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348831"
 ---
-
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk verdi og merking
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   4a. Fysisk lagermottak av et antall på 1 til kost USD 30,00 per stykk.
 -   4b. Økonomisk lagertilgang av et antall på 1 til kost USD 30,00 per stykk.
 -   5a. Fysisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
--   5b. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
+-   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med FIFO-metoden blir den først økonomisk oppdaterte avgangen utlignet mot den først økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD -10,00.
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner. Illustrasjonene nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![FIFO uten ta med fysisk verdi](./media/fifowithoutincludephysicalvalue.gif) 
@@ -62,7 +61,7 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -92,7 +91,7 @@ Transaksjon 5b utlignes mot 1b. Det vi være en justering på negative USD 11,25
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -122,14 +121,13 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
 - Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
-
 
 
 

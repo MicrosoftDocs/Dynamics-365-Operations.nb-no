@@ -1,13 +1,13 @@
---- 
+---
 title: Registrere og postere en etterdatert sjekk for en kunde
 description: Du kan registrere informasjon i en etterdatert sjekk fra en kunde.
 author: kweekley
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 131e4f364c62d03b95fb4b77f472828b9483d5e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/26/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347382"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og postere en etterdatert sjekk for en kunde
 
@@ -49,5 +49,4 @@ Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også 
     * Angi bankdetaljene for den etterdaterte sjekken.  
 15. Klikk Poster.
 16. Lukk siden.
-
 

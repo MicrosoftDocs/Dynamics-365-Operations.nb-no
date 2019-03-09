@@ -1,13 +1,13 @@
---- 
+---
 title: Tilordne brukere til sikkerhetsroller
-description: "For å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må brukere tilordnes sikkerhetsroller."
+description: Brukere må tilordnes sikkerhetsroller for å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
 ms.reviewer: margoc
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349958"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilordne brukere til sikkerhetsroller
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-For å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, må brukere tilordnes sikkerhetsroller. Denne fremgangsmåten beskriver hvordan systemansvarlige kan tilordne brukere roller automatisk, basert på forretningsdata. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+Brukere må tilordnes sikkerhetsroller for å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Denne fremgangsmåten beskriver hvordan systemansvarlige kan tilordne brukere roller automatisk, basert på forretningsdata. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Tilordne brukere automatisk til roller
@@ -52,5 +52,4 @@ For å få tilgang til Microsoft Dynamics 365 for Finance and Operations, Enterp
     * Velg en bruker.  
 6. Klikk Utelat fra rolle.
     * Klikk Utelat fra rolle for å utelate de valgte brukerne fra rollen. Hvis du vil fjerne utelatelser, velger du brukeren du vil fjerne utelatelser for og klikker deretter Tilbakestill status. Når du fjerner en utelatelse ved å tilbakestille statusen for brukeren, tilordnes brukerens rolle automatisk på nytt. Brukeren tilordnes imidlertid ikke umiddelbart rollen eller utelates fra rollen når du tilbakestiller statusen. I stedet blir brukeren tilordnet rollen eller fjernet fra rollen neste gang reglene for automatisk rolletilordning kjøres.  
-
 

@@ -1,14 +1,14 @@
 ---
-title: "Tilgang til forhåndsvisningsfunksjoner i Talent"
-description: "Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene, og det viser hvilke funksjoner som er aktivert for forhåndsvisning."
+title: Tilgang til forhåndsvisningsfunksjoner i Talent
+description: Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene, og det viser hvilke funksjoner som er aktivert for forhåndsvisning.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305615"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Tilgang til forhåndsvisningsfunksjoner i Talent
 
 [!include[banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Du kan bruke innstillingen **Forhåndsvisningsfunksjoner** i Microsoft Dynamics 
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>Aktivere eller deaktivere forhåndsvisningsfunksjoner
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>Tiltrekk
 
 1. Logg på Microsoft Dynamics 365 for Talent: Attract.
 2. På **Oppsett**-menyen (tannhjulssymbolet) i øvre høyre hjørne, velg **Administrasjonsinnstillinger**.
@@ -92,4 +91,3 @@ Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeld
 
 > [!TIP]
 > Bokmerk dette emnet, og kom deretter tilbake ofte for å holde deg oppdatert om nye forhåndsvisningsfunksjoner etter hvert som vi gir dem ut.
-

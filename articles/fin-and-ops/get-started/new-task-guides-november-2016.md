@@ -1,13 +1,13 @@
 ---
 title: Nye eller oppdaterte oppgaveveiledninger (november 2016)
-description: "Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (november 2016 – alle språk) APQC Unified Library for Microsoft Dynamics 365 for Operations. Det ble ikke utgitt nytt bibliotek for Komme i gang."
+description: Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (november 2016 – alle språk) APQC Unified Library for Microsoft Dynamics 365 for Operations. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348923"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Nye eller oppdaterte oppgaveveiledninger (november 2016)
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (november 2016 – alle språk) APQC Unified Library for Microsoft Dynamics 365 for Operations. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 
-(November 2016 – alle språk) APQC Unified-biblioteket inneholder oppgaveveiledningene som er ment å brukes for å få hjelp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformoppdatering 3, Microsoft Dynamics AX plattformoppdatering 2, Dynamics AX mai 2016-oppdatering og Microsoft Dynamics AX februar 2016-utgivelse. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nytt eller endret](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(November 2016 – alle språk) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformoppdatering 3, Microsoft Dynamics AX plattformoppdatering 2, Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nytt eller endret](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
 > [!NOTE]
-> En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosess ble opprettet for Dynamics 365 for Operations-versjonen fra november 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
+> En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosessen ble opprettet for Dynamics 365 for Operations-versjonen fra november 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Leverandørreskontro
 
@@ -549,4 +548,3 @@ Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Mi
 [Nye eller oppdaterte oppgaveveiledninger som er tilgjengelige (mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger som er tilgjengelige (august 2016)](new-updated-task-guides-available-august-2016.md)
-

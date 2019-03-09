@@ -1,13 +1,13 @@
 ---
-title: "Arbeidsområde for regnskapsperiodeavslutning"
-description: "Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen."
+title: Arbeidsområde for regnskapsperiodeavslutning
+description: Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326912"
 ---
-
 # <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
 [!include [banner](../includes/banner.md)]
@@ -106,7 +105,6 @@ Tilordne den aktuelle kalenderen til avslutningstidsplanen for å angi virkedage
 Du må også definere firmaene som skal knyttes til avslutningstidsplanen. Hvis maloppgaver tilordnes til flere firmaer, blir det opprettet separate oppgaver for hvert firma som er i avslutningstidsplanen, og de blir tildelt maloppgaven. 
 
 Når en avslutningstidsplan er fullført, velger du alternativet **Lukket** for den. Oppgaveloggen vil fortsatt være tilgjengelig fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**, men avslutningstidsplanen vil bli fjernet fra arbeidsområdet. Når en avslutningstidsplan er merket som **Lukket**, kan du ikke legge til oppgaver i den, redigerer oppgaver eller fjerne oppgaver fra den.
-
 
 
 

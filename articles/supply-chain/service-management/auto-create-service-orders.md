@@ -1,31 +1,30 @@
 ---
 title: Automatisk opprette serviceordrer
-description: "Du kan generere serviceordrer som er basert på serviceavtale, for den gyldige perioden for serviceavtalen."
+description: Du kan generere serviceordrer som er basert på serviceavtale, for den gyldige perioden for serviceavtalen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0189a9f99ffbb6ed2387211ba9e3b9f3bcdb3b52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2d942d4448e0f792945603d3f5960fb82095be30
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331190"
 ---
-
 # <a name="automatically-create-service-orders"></a>Automatisk opprette serviceordrer 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +57,5 @@ Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. Hvis serviceperio
 Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. To serviceavtalelinjer er knyttet til serviceavtalen. Den første serviceavtalelinjen har startdatoen 2. januar 2012 og sluttdatoen 1. mars 2012. Den andre serviceavtalelinjen har startdatoen 1. april 2012 og sluttdatoen 31. desember 2012. Du kan angi en periode i skjemaet **Opprett serviceordrer** som går fra 1. oktober 2012 til 31. desember 2012. Det genereres derfor bare serviceordrer for den andre avtalelinjen, siden startdatoen og sluttdatoen for den første avtalelinjen er før perioden du angav for serviceordren.
 
   
-
 
 

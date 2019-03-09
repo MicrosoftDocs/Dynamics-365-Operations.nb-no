@@ -1,14 +1,14 @@
 ---
 title: Intelligente anbefalinger
-description: "Dette emnet forklarer hvordan maskinopplæring kan brukes til å gi anbefalinger for jobber og jobbkandidater."
+description: Dette emnet forklarer hvordan maskinopplæring kan brukes til å gi anbefalinger for jobber og jobbkandidater.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305639"
 ---
-
 # <a name="intelligent-recommendations"></a>Intelligente anbefalinger
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ For hvilken som helst anbefalt kandidat kan du velge **Vis kandidat** på kandid
 ## <a name="job-recommendations"></a>Jobbanbefalinger 
 
 Når en potensiell ansatt bruker karriereområdet til å søke på en jobb, anbefales andre ledige stillinger i organisasjonen. Anbefalingene er basert på kandidatens tidligere søknader og hans eller hennes CV eller kandidatprofil. Derfor hjelper jobbanbefalinger kandidater med å raskt identifisere jobbene som passer best for disse. Jobbanbefalinger gis til kandidater hvis mer enn ti jobber er postert på karriereområdet. Kandidater kan åpne detaljer for en jobbpostering fra anbefalingskortet. De kan også gi tilbakemelding om en anbefaling for å forbedre fremtidige anbefalinger.
-

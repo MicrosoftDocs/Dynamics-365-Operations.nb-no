@@ -1,39 +1,38 @@
 ---
 title: Kundeemne til kontanter
-description: Dette emnet gir en oversikt over Kundeemne til kontanter mellom Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Sales.
+description: Dette emnet gir en oversikt over Kundeemne til kontanter-løsningen mellom Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309501"
 ---
-
 # <a name="prospect-to-cash"></a>Kundeemne til kontanter
 
 [!include [banner](../includes/banner.md)]
 
-Løsningen Kundeemne til kontanter gir direkte synkronisering på tvers av Dynamics 365 for Finance and Operations og Dynamics 365 for Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Når dataene flyter mellom Finance and Operations og Sales kan du utføre salgs- og markedsaktiviteter i Sales, og du kan håndtere ordrenes oppfyllelse med lagerstyring i Finance and Operations. 
+Kundeemne til kontanter-løsningen gir direkte synkronisering på tvers av Dynamics 365 for Finance and Operations og Dynamics 365 for Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Når dataene flyter mellom Finance and Operations og Sales kan du utføre salgs- og markedsaktiviteter i Sales, og du kan håndtere ordrenes oppfyllelse med lagerstyring i Finance and Operations. 
 
-Hvis du vil ha mer informasjon om Prospekt til kontanter-integrasjon, se den korte YouTube-videoen [Prospekt til kontanter-integrasjon](https://www.youtube.com/watch?v=AVV9x5x-XCg).
+Hvis du vil ha mer informasjon om Kundeemne til kontanter-integrasjonen, se den korte YouTube-videoen [Kundeemne til kontanter-integrasjon](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 I den gjeldende versjonen inneholder Kundeemne til kontanter-løsningen følgende typer direkte synkronisering:
 
@@ -47,13 +46,13 @@ I den gjeldende versjonen inneholder Kundeemne til kontanter-løsningen følgend
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav for Finance and Operations
 Kundeemne til kontanter-integrasjon støttes i følgende versjoner:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017)
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (desember 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (desember 2017) - programbygg 7.3.11971.56116 med plattformoppdatering 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations Enterprise Edition (desember 2017) – programbygg 7.3.11971.56116 med plattformoppdatering 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) – plattformoppdatering 8 (programbygg 7.2.11792.56024 med plattformbygg 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations Enterprise Edition (juli 2017) – med plattformoppdatering 8 (programbygg 7.2.11792.56024 med plattformbygg 7.0.4565.16212).
 - Følgende hurtigreparasjoner vil kreves:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Denne hurtigreparasjonen gjør det mulig å synkronisere salgsordre via dataintegreringsfunksjonen fra Sales til Finance and Operations. I tillegg inneholder den flere forbedringer.
@@ -81,6 +80,5 @@ Kundeemne til kontanter-integrasjon støttes i følgende versjoner:
 
 For å bruke Kundeemne til kontanter-løsningen må du installere følgende komponenter:
 
-- Dynamics 365 for Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) nett eller en senere versjon.
-- Kundeemne til kontanter-løsningen for Dynamics 365 for Sales, versjon 1.15.0.0 eller en senere versjon. Løsningen er tilgjengelig for nedlasting fra AppSource. [Last ned Dynamics 365, kundeemne til kontanter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-
+- Dynamics 365 for Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) online eller en senere versjon
+- Kundeemne til kontanter-løsningen for Dynamics 365 for Sales, versjon 1.15.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra AppSource. [Last ned Dynamics 365, kundeemne til kontanter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

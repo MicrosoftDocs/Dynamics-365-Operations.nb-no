@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innholdet Kontantstrømoversikt"
-description: "Dette emnet beskriver Power BI-innholdet Kontantstrømoversikt. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Power BI-innholdet Kontantstrømoversikt
+description: Dette emnet beskriver Power BI-innholdet Kontantstrømoversikt. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: saraschi2
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 5d02a009ca988f91a212e467d4f9784248bbae76
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318655"
 ---
-
 # <a name="cash-overview-power-bi-content"></a>Power BI-innholdet Kontantstrømoversikt
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Dette emnet beskriver Microsoft Power BI-innholdet **Kontantstrømoversikt**. De
 
 Power BI-innholdet **Kontantstrømoversikt** ble opprettet for personer som er ansvarlige for kontanter i organisasjonen. Power BI-innholdet **Kontantstrømoversikt** gir oversikt over kontantstrømmen. Det gir i tillegg prognoser som kan hjelpe deg å ta bedre beslutninger og derfor forbedre tilstanden til kontantstrømmen. Du kan analysere kontanter etter juridisk enhet, valuta og bankkonto for å få en bedre forståelse av overskudd og underskudd.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
 Rapporter fra Power BI-innholdet **Kontantstrømoversikt** vises i **Kontantstrømoversikt**- og **Bank**-arbeidsområdet.
 
@@ -68,6 +67,5 @@ Tabellen nedenfor viser enhetene som Power BI-innholdet **Kontantstrømoversikt*
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Summering av kontant innflyt, utflyt og saldo ved hjelp av regnskapsvalutaen for hvert firma |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summering av kontant innflyt, utflyt og saldo ved hjelp av systemvalutaen for alle firmaer |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summering av netto transaksjonsbeløp og saldo for valutaer ved hjelp av transaksjonsvalutaen |
-
 
 

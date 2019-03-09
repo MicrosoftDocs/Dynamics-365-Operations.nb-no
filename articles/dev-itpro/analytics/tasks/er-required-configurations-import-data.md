@@ -1,13 +1,13 @@
---- 
-title: "ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil"
-description: "De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations, Enterprise Edition-programmet fra en ekstern fil."
+---
+title: ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
+description: De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til Dynamics 365 for Finance and Operations, Enterprise Edition-programmet fra en ekstern fil.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "337377"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 
@@ -177,17 +177,16 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 18. Lukk siden.
 19. Lukk siden.
 20. Klikk Rediger.
-    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
+    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
 21. Velg Ja i feltet Standard for modelltilordning.
 22. Velg 1099-betalingsmodell i treet.
 23. Klikk Utforming.
 24. Klikk Tilordne modell til datakilde.
 25. Klikk Kjør.
-    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
+    * Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
     * Hvis du ikke har installert hurtigreparasjonen KB 4012871, legger du merke til at dialogboksen inneholder et ekstra spørsmål om modelltilordning som brukes til å analysere filen du importerer. Dataene blir deretter overført fra dialogboksen til datamodellen. For øyeblikket kan du velge hvilken formattilordning som må brukes, avhengig av typen fil du planlegger å importere.  
     * Hvis du har tenkt å kalle denne modelltilordningen fra et punkt i Dynamics 365 for Finance and Operations, Enterprise Edition som er spesielt utformet for handlingen, må ER-målet og formattilordningen være merket som en del av integreringen.  
 26. Klikk Avbryt.
 27. Lukk siden.
 28. Lukk siden.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Utforme spørreskjemaer"
-description: "Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform."
+title: Utforme spørreskjemaer
+description: Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305640"
 ---
-
 # <a name="design-questionnaires"></a>Utforme spørreskjemaer
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse 
 Du bør definere alle parametere før du begynner å opprette dataene. Du kan endre innstillingene for spørreskjemaparametere når som helst.
 
 ## <a name="questionnaire-components"></a>Spørreskjemakomponenter
-Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
+Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
 
 [![Spørreskjemakomponenter](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -238,5 +237,4 @@ Alternativt kan du definere du et spørreskjema slik at hvis en respondent velge
 [Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
-
 

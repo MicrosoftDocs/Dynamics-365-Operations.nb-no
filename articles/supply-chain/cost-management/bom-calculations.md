@@ -5,9 +5,9 @@ author: AndersGirke
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 29ea9ddefba3416a33cd0e2f873624cc5c781a55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341563"
 ---
-
 # <a name="bom-calculations"></a>BOM-beregninger
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,6 @@ En ordrespesifikk stykklisteberegning er en variant av en stykklisteberegning fo
 
 -   En ordrespesifikk stykklisteberegning genererer ikke en post for varekost innenfor en etterkalkuleringsversjon. Dette betyr at policyene for stykklisteberegning ikke gjelder når en post for varekost opprettes eller når en kostnadspost overskrives.
 -   En ordrespesifikk stykklisteberegning vil alltid bruke de aktive kostnadspostene for komponenter, kostnadskategoriene og beregningsformlene for indirekte kostnader.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Gå gjennom innkrevingsinformasjon"
-description: "Denne prosedyren hjelper deg med å gå gjennom innkrevingsinformasjon og forskjellige oppsettsalternativer og innkrevingstransaksjoner."
+---
+title: Gå gjennom innkrevingsinformasjon
+description: Denne prosedyren hjelper deg med å gå gjennom innkrevingsinformasjon og forskjellige oppsettsalternativer og innkrevingstransaksjoner.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349107"
 ---
 # <a name="review-collections-information"></a>Gå gjennom innkrevingsinformasjon
 
@@ -131,5 +131,4 @@ Denne prosedyren hjelper deg med å gå gjennom innkrevingsinformasjon og forskj
     * Velg en innkrevingssak som er tilordnet til kunden, eller la dette feltet stå tomt. Hvis en sak er valgt, vises bare transaksjoner og aktiviteter som er tilknyttet saken, i dette skjemaet.  
 8. Klikk Vis liste.
     * Velg en kundekonto eller godta standardoppføringen. Som standard er dette den valgte kundekontoen på listesiden eller i skjemaet som du åpnet dette skjemaet fra. Hvis du åpnet skjemaet fra en listeside, er kundene i listen kundene som er inkludert i purringspuljen som brukes på listesiden.  
-
 

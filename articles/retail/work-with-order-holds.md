@@ -1,13 +1,13 @@
 ---
 title: Konfigurere og arbeide med telefonsenterordresperringer
-description: "Dette emnet beskriver hvordan du arbeider med sperringer på ordrer ved hjelp av Microsoft Dynamics 365 for Retail."
+description: Dette emnet beskriver hvordan du arbeider med sperringer på ordrer ved hjelp av Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335307"
 ---
-
-# <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbeide med telefonsenterordresperringer
+# <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbeide med ordresperrer i telefonsenter
 
 [!include [banner](includes/banner.md)]
 
@@ -104,4 +103,3 @@ Hvis brukerne vil fjerne en sperring, men gjør flere endringer i bestillingen f
 ## <a name="reporting-options"></a>Rapporteringsalternativer
 
 Gå til **Retail** \> **Forespørsler og rapporter** \> **Telefonsenterrapporter** \> **Rapport for ordresperre** for å kjøre en rapport om ordresperrer etter datointervall, sperrekode eller andre relaterte kriterier.
-

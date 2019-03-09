@@ -1,13 +1,13 @@
 ---
 title: Arbeidsflyt for utgifter
-description: "Dette emnet forklarer hvordan du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, for å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring."
+description: Dette emnet forklarer hvordan du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, for å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowtableListPageRnr
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 037a6ae00b7d559f79860901f0cb2ad6ddddd7aa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310122"
 ---
-
 # <a name="expense-workflow"></a>Arbeidsflyt for utgifter
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, til å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring. Du kan sette opp en arbeidsflyt som bruker følgende kriterier for å fastslå hvem som skal godkjenne utgiftsrapporter.
+Du kan bruke arbeidsflytsystemet i Microsoft Dynamics 365 for Finance and Operations, for å sette opp en godkjenningsprosess for utgiftsrapporter i utgiftsstyring. Du kan sette opp en arbeidsflyt som bruker følgende kriterier for å fastslå hvem som skal godkjenne utgiftsrapporter.
 
 - Ansattes rapporteringshierarki og forhåndsdefinerte godkjenningsgrenser
 - Godkjenning på flere nivåer som støtter midlertidig godkjenner og endelig godkjenner
@@ -58,4 +57,3 @@ Følgende prosess er et eksempel på kostnadsstyringsarbeidsflyten for en kostna
 Etter at disse kravene er bekreftet vil utgiftsrapporten legges ut.
 
 Etter at utgiftsrapporten er lagt ut autoriseres betaling for utgiftsrapporten, og den ansatte blir refundert.
-

@@ -1,13 +1,13 @@
 ---
 title: Amortisere konstante kostnader for en produsert vare
-description: "De konstante kostnadene til en produsert vare viser oppstillingstider for operasjonene og komponentene som har et konstant antall eller et konstant svinnbeløp."
+description: De konstante kostnadene til en produsert vare viser oppstillingstider for operasjonene og komponentene som har et konstant antall eller et konstant svinnbeløp.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 7ccd5ce3e2ed58db8f13eebbcfa6fe5fb544d6c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 75c0f5bcff0aae63aa8c7dae9b0767f8c7e6a81c
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329465"
 ---
-
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>Amortisere konstante kostnader for en produsert vare
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,6 @@ Kostnadspartistørrelsesantallet for en produsert vare brukes i en stykklisteber
 -   Angitt beregningsantall i en ordrespesifikk stykklisteberegning − En ordrespesifikk stykklisteberegning kan utføres for en linjevare på en salgsordre, et salgstilbud eller en serviceordre. Det angitte beregningsantallet bruker som standard antallet på linjen der varen opprinnelig kommer fra, men standardantallet kan overstyres. Du kan velge om den ordrespesifikke stykklisteberegningen skal bruke modusen produksjon-etter-ordre eller nedbryting på flere nivåer.
 
 Det beregnede beløpet for nedbetaling av en produsert vares konstante kostnader, kalles tillegg.
-
 
 
 

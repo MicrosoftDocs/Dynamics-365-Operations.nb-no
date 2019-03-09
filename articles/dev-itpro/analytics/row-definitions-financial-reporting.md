@@ -1,13 +1,13 @@
 ---
 title: Raddefinisjoner i Utforming av finansrapport
-description: "En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer."
+description: En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350441"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 
 ### <a name="format-row-text"></a>Formatere radtekst
 
-Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Du kan endre tekstformatet ved hjelp av kontrollene på formateringsverktøylinjen. Disse kontrollene er standardkontroller for Microsoft Windows.
+Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Du kan endre tekstformatet ved hjelp av kontrollene på formateringsverktøylinjen. Disse kontrollene er standard Microsoft Windows-kontroller.
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Rapportutforming.
 2. Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
 3. Klikk verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter på **Øk innrykk** ![Øk innrykk](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Øk innrykk") på verktøylinjen.
 
@@ -189,4 +188,3 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-

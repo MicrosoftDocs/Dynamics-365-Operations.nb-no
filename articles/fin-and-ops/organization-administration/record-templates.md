@@ -1,13 +1,13 @@
 ---
 title: Postmaler
-description: "Denne artikkelen introduserer konseptet med postmaler og forklarer hvordan de kan brukes til å opprette poster som deler informasjon."
+description: Denne artikkelen introduserer konseptet med postmaler og forklarer hvordan de kan brukes til å opprette poster som deler informasjon.
 author: pvillads
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 426fd8fafec061b649cbb31109ffe8fabc24917d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef5e95d9d6beed10cd6c80aa131c5cbef85c07a8
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323577"
 ---
-
 # <a name="record-templates"></a>Postmaler
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikkelen introduserer konseptet med postmaler og forklarer hvordan de kan brukes til å opprette poster som deler informasjon.
 
-Postmaler kan bidra til å opprette poster raskere i Microsoft Dynamics 365 for Finance and Operations. Du kan opprette postmaler for bare noen av posttypene i Microsoft Dynamics 365 for Finance and Operations.
+Postmaler kan hjelpe deg å opprette poster mer effektivt i Microsoft Dynamics 365 for Finance and Operations. Du kan opprette postmaler for bare noen av posttypene i Microsoft Dynamics 365 for Finance and Operations.
 
 Tenk deg for eksempel at du skriver inn informasjon om billeie for leiebilbedrifter som er plassert i San Francisco. Siden de fleste kundene sannsynligvis er fra San Francisco-området, vil det være praktisk hvis du kan automatisk fylle ut verdiene for feltene **Status**, **Land** og **Poststed** på leieskjemaet.
 
@@ -39,4 +38,3 @@ Tenk deg for eksempel at du skriver inn informasjon om billeie for leiebilbedrif
 > Du kan bare søke på maler for de områdene av Finance and Operations du har tilgang til. Du kan imidlertid se navnene på alle malene når du oppretter en ny post, og det samme gjelder også for andre brukere hvis du oppretter maler som er tilgjengelige for alle brukere. Husk å ta hensyn til dette når du gir malene navn. Unngå for eksempel å bruke navn som inneholder ord som provisjon hvis det der konfidensielt at enkelte ansatte i firmaet har provisjonsbasert lønn.
 
 Når én eller flere maler som du har tilgang til, finnes for et bestemt skjema og du prøver å opprette en ny post i skjemaet, vises siden **Velg en mal for**. Når du velger en mal fra listen, opprettes den nye posten med standardinformasjon som er basert på malen du velger. Hvis du ikke vil bruke maler når du oppretter nye poster, merker du av for **Ikke spør meg igjen** på siden **Velg en mal for**. Hvis du vil vise dialogboksen for valg av mal på nytt, høyreklikker du på **Postinformasjon** og deretter **Vis malvalg**.
-

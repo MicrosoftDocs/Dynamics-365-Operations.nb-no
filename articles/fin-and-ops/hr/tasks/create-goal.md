@@ -1,13 +1,13 @@
---- 
-title: "Opprette et mål"
-description: "Du kan opprette mål, legge til aktiviteter i mål, spore målinger og koble målene til en vurdering."
+---
+title: Opprette et mål
+description: Du kan opprette mål, legge til aktiviteter i mål, spore målinger og koble målene til en vurdering.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350717"
 ---
 # <a name="create-a-goal"></a>Opprette et mål
 
@@ -59,5 +59,4 @@ Du kan opprette mål, legge til aktiviteter i mål, spore målinger og koble må
     * Det finnes ofte mål som er de samme eller ligner for gruppemedlemmer eller alle ansatte.     HR-administratorer eller ledere kan opprette målmaler for disse målene. Du kan legge til et mål fra en mal, og deretter endre det slik at det samsvarer med tidslinjene.  
     * Det finnes ofte flere mål som er de samme eller ligner for gruppemedlemmer eller alle ansatte.     HR-administratorer eller ledere kan opprette målgrupper som inneholder én eller flere målmaler. Du kan legge til mål fra en målgruppe, og deretter endre dem slik at det samsvarer med tidslinjene.  
     * Når du oppretter en vurdering, kan du legge til mål i vurderingen. Se oppgaveveiledningen for vurderinger for å se hvordan du kan legge til mål i vurderingene.  
-
 

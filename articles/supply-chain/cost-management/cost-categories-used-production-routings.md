@@ -1,13 +1,13 @@
 ---
 title: Kostnadskategorier som brukes i produksjonsruting
-description: "Denne artikkelen inneholder informasjon om kostnadskategorier som brukes i produksjonsmiljøer som bruker ruting."
+description: Denne artikkelen inneholder informasjon om kostnadskategorier som brukes i produksjonsmiljøer som bruker ruting.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315803"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>Kostnadskategorier som brukes i produksjonsruting
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Kostprisposten for en kostnadskategori kan være områdespesfikk eler gjelde hel
 En rutingsoperasjon arver generelt kostnadskategoriene som er tilordnet til operasjonsressursen eller hovedoperasjonen. Når en produksjonsordre opprettes, gjenspeiler rutingsoperasjonene i produksjonsruten den valgte ruteversjonen. Du kan overstyre kostnadskategoriene som er tilordnet til operasjonene i produksjonsruten. 
 
 Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. I dette tilfellet kreves en kostnadskategori for produksjon og prosjekter. Du må definere mer prosjektrelatert informasjon når en kostnadskategori er flagget for bruk i prosjekter.
-
 
 
 

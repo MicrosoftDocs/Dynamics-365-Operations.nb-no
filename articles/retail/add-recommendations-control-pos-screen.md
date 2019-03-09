@@ -1,13 +1,13 @@
 ---
-title: "Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter"
-description: "Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail."
+title: Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
+description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320449"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
 
 [!include [banner](includes/banner.md)]
@@ -67,7 +66,7 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
     [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Klikk **X** for å lagre og avslutte utforming av oppsett.
-4. I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.
+4. Gå til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner** i Dynamics 365 for Retail.
 5. Velg  **1090, Kasser** i listen.
 6. Klikk **Kjør nå**.
 
@@ -88,11 +87,10 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 7. I **Bilde**-feltet velger du bildet som skal vises i kategorien.
 8. Klikk **OK**. Den nye kategorien vises i knappegruppen.
 9. Klikk **X** for å lagre og avslutte utforming av oppsett.
-10. I Dynamics 365 for Retail går du til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner**.
+10. Gå til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner** i Dynamics 365 for Retail.
 11. Velg  **1090, Kasser** i listen.
 12. Klikk **Kjør nå**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over personlige produktanbefalinger](personalized-product-recommendations.md)
-

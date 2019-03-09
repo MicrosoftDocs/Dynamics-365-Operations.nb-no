@@ -1,13 +1,13 @@
 ---
-title: "Løse avvik under kontroll for fakturatotaler"
-description: "Du kan bruke kontroll av fakturatotaler som hjelp for å garantere at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik."
+title: Løse avvik under kontroll for fakturatotaler
+description: Du kan bruke kontroll av fakturatotaler som hjelp for å garantere at totale fakturabeløp ikke avviker fra forventede beløp med mer enn et godkjent avvik.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTotalPriceTolerance
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 67aa0b89eed1f82290659029dfcce92ca3710aea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18250a735d0421daa90b923504aeb94b5003a6a7
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331512"
 ---
-
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Løse avvik under kontroll for fakturatotaler
 
 [!include [banner](../includes/banner.md)]
@@ -43,6 +42,5 @@ Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren h
 -   Be om at leverandøren krediterer hele beløpet og gir deg en ny, korrigert faktura.
 
 Hvis du vil ha mer informasjon, se [Undersøke eller løse unntak](tasks/research-resolve-exceptions.md).
-
 
 

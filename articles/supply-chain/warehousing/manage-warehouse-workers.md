@@ -1,13 +1,13 @@
 ---
 title: Administrere lagerarbeidere
-description: "Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene."
+description: Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310996"
 ---
-
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Analyse av tiden som brukes til å behandle arbeidselementer kan hjelpe oppnå f
 
 -   **Arbeid etter bruker** – Denne rapporten viser arbeiderproduktivitet, basert på faktisk tid mot forventet tid.
 -   **Arbeid etter arbeidstransaksjonstype** – Du kan bruke denne rapporten til å undersøke ineffektivitet i bestemte lagerprosesser. Anta for eksempel at du legger merke til at plukk for overføringsordrer tar lengre tid denne uken enn i tidligere uker. Du kan deretter bruke denne informasjonen for ytterligere undersøkelse.
-
 
 
 

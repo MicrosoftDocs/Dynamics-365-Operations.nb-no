@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en hovedkonto
-description: "Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksisterende kontoplan."
+description: Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksisterende kontoplan.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5fd332121bae2be55ada39b33e5f381096c9b74d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331581"
 ---
 # <a name="create-a-main-account"></a>Opprette en hovedkonto
 
@@ -53,5 +53,4 @@ Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksistere
 20. Klikk koblingen i den valgte raden i listen.
 21. Velg metoden for å beregne valutakurser for kontoen i Type valutaveksling-feltet.
 22. Lukk siden.
-
 

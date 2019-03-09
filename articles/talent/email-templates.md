@@ -5,10 +5,10 @@ author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,18 +18,17 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305675"
 ---
-
 # <a name="email-templates"></a>E-postmaler
 [!include[banner](../includes/banner.md)]
 
-Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent - Attract: Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger i Attract er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
+Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent: Attract. Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger i Attract er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
 
 > [!NOTE]
 > Hvis du vil bruke e-postmaler, må organisasjonen ha tillegget for omfattende ansettelse.
@@ -81,4 +80,3 @@ Når ansettelsesteamet sender en e-post, kan den bruke malene som administratore
 
 > [!NOTE] 
 > Du kan opprette flere maler for e-postmeldinger som sendes automatisk. Imidlertid du kan angi bare én mal som den aktive malen. Siden denne prosessen blir utløst av hendelser, kan bare administratoren avgjøre hvilken mal som skal brukes, på grunnlag av kombinasjonen **Standard**- og **Sendt automatisk**-kort i malbiblioteket.
-

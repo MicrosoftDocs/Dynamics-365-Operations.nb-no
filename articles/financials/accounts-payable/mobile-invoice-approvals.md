@@ -1,13 +1,13 @@
 ---
 title: Mobile fakturagodkjenninger
-description: "Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier i Dynamics 365 for Finance and Operations, ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle."
+description: Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier i Dynamics 365 for Finance and Operations ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314400"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
 [!include [banner](../includes/banner.md)]
 
-Mobile funksjoner i Microsoft Dynamics 365 for Finance and Operations kan utforme mobile erfaringer forretningsvirksomhet. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
+Mobilfunksjoner i Microsoft Dynamics 365 for Finance and Operations lar forretningsbrukere utforme mobilopplevelser. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
 <a name="prerequisites"></a>Forutsetninger
 -------------
@@ -37,11 +36,11 @@ Mobile funksjoner i Microsoft Dynamics 365 for Finance and Operations kan utform
 | Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Før du leser håndboken for mobil                                                                                |[Mobil plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Et miljø som har Microsoft Dynamics 365 for Operations versjon 1611 og for Microsoft Dynamics for Operations plattformoppdatering 3 (november 2016)                   |
+| Dynamics 365 for Finance and Operations                                                                             | Et miljø som har Microsoft Dynamics 365 for Operations versjon 1611 og Microsoft Dynamics for Operations plattformoppdatering 3 (november 2016)                   |
 | Installer hurtigreparasjon KB 3204341.                                                                              | Oppgaveregistrering kan feilaktig registrere to Lukk-kommandoer for rullegardindialoger. Dette er inkludert i Dynamics 365 for Operations plattformoppdatering 3 (November 2016 oppdatering) |
 | Installer hurtigreparasjon KB 3207800.                                                                              | Denne hurtigreparasjonen gjør at vedlegg skal vises på den mobile klienten. Dette er inkludert i Dynamics 365 for Operations plattformoppdatering 3 (November 2016 oppdatering).           |
 | Installer hurtigreparasjon KB 3208224.                                                                              | Programkode for godkjenning av leverandørfaktura på mobil : Dette er inkludert i Microsoft Dynamics AX 7.0.1 (mai 2016).                          |
-| En Android- eller iOS- eller Windows-enhet som har mobilappen installert for Dynamics 365 for Finance and Operations | Søk etter appen i riktig applager.                                                                                                                     |
+| En Android- eller iOS- eller Windows-enhet som har mobilappen installert for Finance and Operations | Søk etter appen i riktig applager.                                                                                                                     |
 
 ## <a name="introduction"></a>Innledning
 Mobile godkjenninger for leverandørfakturaer krever de tre hurtigreparasjonene som er nevnt i delen "Forutsetninger". Disse hurtigreparasjonene gir ikke et arbeidsområde for fakturagodkjenninger. Hvis du vil vite hva et arbeidsområde er i forbindelse med mobil, kan du lese håndboken for mobil som er nevnt i delen "Forutsetninger". Arbeidsområdet for fakturagodkjenninger må være utformet. 
@@ -126,7 +125,7 @@ Som en generell veiledning, når du arbeider med mobile designer, må du "publis
 ### <a name="create-the-workspace"></a>Opprett arbeidsområdet
 
 1.  Åpne Finance and Operations i en webleser, og logg på.
-2.  Etter at du har logget på, kan du legge til **& mode = mobile** i URL-adressen som vist i følgende eksempel, og oppdater siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
+2.  Etter at du har logget på, kan du legge til **&mode=mobile** i URL-adressen som vist i følgende eksempel, og oppdater siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**. Mobile app-designer må vises akkurat slik oppgaveopptaker vises.
 4.  Klikk på **Legg til** for å opprette det nye arbeidsområdet. For dette eksemplet gir du arbeidsområdet navnet **Mine godkjenninger**.
 5.  Angi en beskrivelse.
@@ -488,7 +487,6 @@ Følgende variasjoner kan gjøres for scenario 1, basert på kravene for scenari
     3.  Ideelt sett bør distribusjonene vises i konteksten for en fakturalinje i dette scenariet. Sørg derfor for at brukeren kan gå til en linje for å se siden distribusjoner. Bruk sidekoblingsmuligheten til å opprette gjennomgangen, akkurat som du gjorde for hode- og detaljer-sidene i scenario 1.
 
 2.  Fordi mer enn én beløpstype forventes på distribusjoner i scenario 2 (merverdiavgift, gebyrer og så videre), vil det være nyttig å vise beskrivelsen av beløpstype. (Vi har utelatt informasjonen i scenario 1.)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Startside for innkjøp og leverandører"
-description: "Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for innkjøp og leverandører."
+title: Startside for innkjøp og leverandører
+description: Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for innkjøp og leverandører.
 author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 091b50c26cf596fc03e42f60fc662b8d1f25f06b
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338596"
 ---
-
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
 [!include [banner](../includes/banner.md)]
@@ -55,12 +54,12 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md)
 -   [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)
--   [Konfigurere og vedlikehold leverandørsamarbeid](set-up-maintain-vendor-collaboration.md)
--   [Demonstrasjonsskript for forsendelseslager for beholdning for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
+-   [Definere og vedlikeholde leverandørsamarbeid](set-up-maintain-vendor-collaboration.md)
+-   [Demonstrasjonsskript for forsendelseslager for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
 -   [Overvåke forsendelseslager ved hjelp av leverandørsamarbeid](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbeide med leverandører ved å bruke leveandørportalen](collaborate-vendors-vendor-portal.md) (bare februar 2016- og mai 2016-versjonene av Dynamics AX)
 -   [Konfigurasjon av sikkerhet for leverandørportalbrukere](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Finance and Operations)
--   [Mobil område for leverandørsamarbeid for Microsoft Dynamics 365 for Finance and Operations-appen](vendor-collaboration-mobile-workspace.md)
+-   [Mobilt arbeidsområde for leverandørsamarbeid for Microsoft Dynamics 365 for Finance and Operations-app](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Innkjøpsproduktstyring
 -   [Innkjøpskataloger](procurement-catalogs.md)
@@ -102,7 +101,6 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (hvitebok)
 -   [Innkjøpspolicyer](purchase-policies.md)
 -   [Opprette innkjøpspolicyer](tasks/create-purchasing-policies.md)
-
 
 
 

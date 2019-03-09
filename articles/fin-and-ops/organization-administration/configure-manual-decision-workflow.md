@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341402"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurere manuelle beslutninger i en arbeidsflyt
 
 [!include [banner](../includes/banner.md)]
@@ -372,4 +371,3 @@ Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt
     - **År** – Velg dagen, uken og måneden da beslutningen må være tatt. Du vil for eksempel at beslutningen skal tas innen fredag i den tredje uken i desember.
 
 4. Hvis tidsgrensen overskrides, vil systemet ta beslutningen. I listen **Handling** velger du alternativet som systemet skal velge.
-

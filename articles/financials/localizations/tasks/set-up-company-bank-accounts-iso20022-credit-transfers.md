@@ -1,13 +1,13 @@
---- 
-title: "Definere firmaets bankkontoer for ISO20022-kreditoverføringer"
+---
+title: Definere firmaets bankkontoer for ISO20022-kreditoverføringer
 description: Denne prosedyren beskriver hvordan du definerer firmaspesifikk bankkontoinformasjon som kreves for generering av betalingsfilen.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334939"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Definere firmaets bankkontoer for ISO20022-kreditoverføringer
 
@@ -31,7 +31,7 @@ Denne prosedyren beskriver hvordan du definerer firmaspesifikk bankkontoinformas
 
 Demonstrasjonsdatafirmaet DEMF brukes til å opprette denne prosedyren.
 
-Dette er den andre prosedyren av fem, som illustrerer leverandørbetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+Dette er den andre prosedyren av fem, som illustrerer leverandørbetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
 
 
 ## <a name="set-up-iban-and-swift-code"></a>Konfigurere IBAN- og SWIFT-kode
@@ -51,5 +51,4 @@ Dette er den andre prosedyren av fem, som illustrerer leverandørbetalingsproses
 3. Utvid delen Bankkontoinformasjon.
 4. Angi eller velg en verdi i Bankkonto-feltet.
 5. Klikk Lagre.
-
 

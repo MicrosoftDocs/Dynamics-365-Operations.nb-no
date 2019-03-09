@@ -1,36 +1,35 @@
 ---
-title: "Åpne URL-adresse på salgssted"
-description: "Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Microsoft Dynamics 365 for Retail."
+title: Åpne URL-adresse på salgssted
+description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Microsoft Dynamics 365 for Retail.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 11/14/2018
+ms.date: 01/28/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b07406b4e218b45bdde87c4a579814fe0edbc286
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327096"
 ---
-
-# <a name="open-url-in-pos"></a>Åpne URL-adresse på salgssted
+# <a name="open-url-in-pos"></a>Åpne URL-adresse i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan konfigurere en knapp på salgsstedet for detaljhandel (POS) for å åpne en URL-adresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle.
+Dette emnet beskriver hvordan du kan konfigurere en knapp på salgsstedet for detaljhandel (POS) for å åpne en URL-adresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle. Denne funksjonen er tilgjengelig som en del av Dynamics 365 for Finance and Operations versjon 8.1.3-versjonen (build 8.1.227.10014) og senere. 
 
 Denne funksjonen tillater konfigurasjon av en knapp på salgsstedet ved hjelp av knappgruppedesigneren for å åpne en URL-adresse. Dette støttes for øyeblikket i følgende konfigurasjoner:
 
@@ -84,4 +83,3 @@ Hvis du vil konfigurere en URL-adresse som skal åpnes i POS, følger du denne f
 5. Velg **Åpne URL** som handling.
 6. Skriv inn URL-en du vil bruke.
 7. Konfigurer om du vil åpne URL-adressen i et nytt vindu.
-

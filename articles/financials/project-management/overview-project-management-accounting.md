@@ -1,13 +1,13 @@
 ---
 title: Prosjektstyring og regnskap
-description: "Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for å tilby en tjeneste, produsere et produkt eller oppnå et resultat."
+description: Prosjektstyrings- og regnskapsfunksjonaliteten kan brukes i flere bransjer for å tilby en tjeneste, produsere et produkt eller oppnå et resultat.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311341"
 ---
-
 # <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 
 [!include [banner](../includes/banner.md)]
@@ -206,7 +205,7 @@ Du kan bestille varer fra firmaets lager for forbruk på et prosjekt. Du kan ogs
 
 Måten du bestiller varer på, er avhengig av hvor du bestiller dem fra:
 
--   Hvis du vil bestille varer fra firmaets lager, må du registrere ordren som et varebehovet. Hvis du bruker siden **Varebehov**, kan du definere behovet slik at du mottar varer som delleveringer. Derfor kan du utsette forbruk av et antall av varene inntil det er behov for varene.
+-   Hvis du vil bestille varer fra firmaets lager, må du registrere ordren som et varebehovet. Hvis du bruker siden **Varebehov**, kan du definere behovet slik at du mottar varer som delleveringer. Derfor kan du utsette forbruk av et antall av varene inntil det er behov for varene.
 -   Hvis du vil bestille varer fra en ekstern leverandør, må du opprette ordren som en bestilling på **Bestilling**-siden.
 
 > [!NOTE] 
@@ -301,7 +300,7 @@ Du kan lage en prognose for kontant innflyt for et valgt prosjekt basert på opp
 -   **Prosjektdato:** 5. mars 2012.
 -   **Fakturadato:** 31. mars 2012. Denne datoen fastsettes basert på fakturafrekvensen. I dette eksemplet setter du fakturafrekvensen til gjeldende måned. Derfor blir alle transaksjoner som er postert i mars, fakturert på den siste dagen i måneden.
 -   **Forfallsdato:** 14. April 2012. Denne datoen fastsettes basert på betalingsbetingelsene som er angitt for prosjektet. I dette eksemplet valgte du betalingsbetingelser på 14 dager. Derfor blir 14 dager lagt til fakturadatoen, noe som gir forfallsdatoen 14. april 2012.
--   **Forventet salgsbetalingsdato:** 27. april 2012. Denne datoen beregnes ved å legge sammen antall dager i feltet **Generelle bufferdager** på siden **Parametere for prosjektstyring og regnskap** med antall dager i feltet **Individuelle bufferdager** på **Prosjektkontrakter**-siden og deretter legge sammen totalen med antall dager i **Forfallsdato**-feltet. I dette eksemplet angav du **3** i feltet **Generelle bufferdager** og **10** i feltet **Individuelle bufferdager**. Derfor blir 13 dager lagt til forfallsdatoen, noe som gir den forventede salgsbetalingsdatoen 27. april 2012.
+-   **Forventet salgsbetalingsdato:** 27. april 2012. Denne datoen beregnes ved å legge sammen antall dager i feltet **Generelle bufferdager** på siden **Parametere for prosjektstyring og regnskap** med antall dager i feltet **Individuelle bufferdager** på **Prosjektkontrakter**-siden og deretter legge sammen totalen med antall dager i **Forfallsdato**-feltet. I dette eksemplet angav du **3** i feltet **Generelle bufferdager** og **10** i feltet **Individuelle bufferdager**. Derfor blir 13 dager lagt til forfallsdatoen, noe som gir den forventede salgsbetalingsdatoen 27. april 2012.
 
 De generelle bufferdagene kan enten erstatte de individuelle bufferdagene eller legges til de individuelle bufferdagene:
 
@@ -441,4 +440,3 @@ Når oppgaven beregnes, kan du vise følgende informasjon i de ulike fanene på 
 -   **Forbruk** – Informasjon om forbruket av timer, varer, utgifter og lønnstransaksjoner.
 -   **Faktura** – Informasjon om fakturaer og a konto-fakturering.
 -   **Timepris** – Timepriser for timer som posteres til inntekts- og utgiftskontoer.
-

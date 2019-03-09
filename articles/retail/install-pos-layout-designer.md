@@ -1,13 +1,13 @@
 ---
 title: Installere utforming av oppsett for salgssted (POS) for detaljhandel
-description: "Du kan bruke ettklikksutformingen til å utforme forskjellige oppsett for Moderne salgssted (MPOS) og Skybaser salgssted i liggende eller stående modus for butikker, kasser, kasserere og ledere."
+description: Du kan bruke ettklikksutformingen til å utforme forskjellige oppsett for Retail Modern POS (MPOS) og Skybaser salgssted i liggende eller stående modus for butikker, kasser, kasserere og ledere.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327648"
 ---
-
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Installere utforming av oppsett for salgssted (POS) for detaljhandel
 
 [!include [banner](includes/banner.md)]
 
-Du kan bruke ettklikksutformingen til å utforme forskjellige oppsett for Moderne salgssted (MPOS) og Skybaser salgssted i liggende eller stående modus for butikker, kasser, kasserere og ledere.
+Du kan bruke ettklikksutformingen til å utforme forskjellige oppsett for Retail Modern POS (MPOS) og Skybaser salgssted i liggende eller stående modus for butikker, kasser, kasserere og ledere.
 
 Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av oppsettet for kasseapparat. Et oppsett styrer plasseringen av ulike objekter. Eksempler omfatter det totale oppsettet, varerutenettoppsettet, kundeoppsettet, betalingsoppsettet og oppsettet av ulike menyknapper. Oppsett omfatter også det generelle utseendet i salgsgrensesnittet som er vises for ansatte.
 
@@ -41,7 +40,7 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 2. Velg et oppsett som har programtypen **Moderne salgssted for Windows** eller **Skybasert salgssted**, og klikk deretter **Utforming av oppsett**.
 3. I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å installere ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.)
 4. I meldingsboksen **Programinstallasjon – sikkerhetsvarsel** som vises, klikker du **Kjør** for å installere utformingsverten for detaljhandel. En fremdriftsindikator viser fremdriften for installasjonen.
-5. Når installasjonen er fullført, angir du brukernavnet og passordet for Microsoft Dynamics 365 for Retail på siden **Logg på**, og deretter klikker du **Logg på** for å starte utformingen.
+5. Når installasjonen er fullført, angir du Microsoft Dynamics 365 for Retail-brukernavnet og passordet på **Logg på**-siden , og klikker deretter på **Logg på** for å starte utformingen.
 6. Når legitimasjonen er validert og utformingen starter, kan du begynne å utforme ditt eget oppsett eller endre det eksisterende oppsettet.
 
     [![Oppsett i ettklikksutformingen](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -57,11 +56,10 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 
 - Programmet starter ikke, og du blir bedt om å kontakte leverandøren.
 
-    **Løsning:** I Internet Explorer legger du til URL-adressen for Dynamics 365 for Retail i klarerte områder. Klikk **Innstilling** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
+    **Løsning**: I Internet Explorer legger du til URL-adressen for Dynamics 365 for Retail i klarerte områder. Klikk **Innstilling** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
 
 **Kjent problem:** Utformingen fungerer ikke slik den skal i nettleserne Google Chrome eller Mozilla Firefox. Vi arbeider for å løse dette problemet.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Konfigurere, laste ned, installere og aktivere moderne salgssted for detaljhandel](retail-modern-pos-device-activation.md)
-
+[Konfigurere, laste ned, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md)

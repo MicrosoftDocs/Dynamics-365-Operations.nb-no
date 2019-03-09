@@ -1,13 +1,13 @@
 ---
-title: Workforce Metrics-innhold for Power BI
-description: "Dette emnet beskriver Workforce Metrics-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Power BI-innholdet Metrikk for arbeidsstyrke
+description: Dette emnet beskriver Metrikk for arbeidsstyrke-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345795"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Workforce Metrics-innhold for Power BI
+# <a name="workforce-metrics-power-bi-content"></a>Power BI-innholdet Metrikk for arbeidsstyrke
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver **Workforce Metrics**-innholdet for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver **Metrikk for arbeidsstyrke**-innholdet for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
-**Workforce Metrics**-innholdet for Power BI vises i arbeidsområdet **Personaladministrasjon** hvis du bruker ett av disse produktene:
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
+**Metrikk for arbeidsstyrke**-innholdet for Power BI vises i arbeidsområdet **Personaladministrasjon** hvis du bruker ett av disse produktene:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
@@ -59,7 +58,7 @@ Tabellen nedenfor viser målene som vises for hver rapport.
 
 Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Pass på at du laster ned **Workforce Metrics**-innholdet for Power BI som gjelder for versjonen av Microsoft Dynamics 365 som du bruker.
+Pass på at du laster ned **Metrikk for arbeidsstyrke**-innholdet for Power BI som gjelder for versjonen av Microsoft Dynamics 365 du bruker.
 
 > [!NOTE]
 > PBIX-filene som er tilgjengelige i Lifecycle Services, gjelder bare for Finance and Operations.
@@ -88,4 +87,3 @@ Tabellen nedenfor viser enhetene som innholdet er basert på.
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                 | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb |
 | Masseansettelsesprosjekt        | Antall masseansettelsesprosjekter, prosjekteier og prosjektstatus                     | Firma, masseansettelseslinje |
 | Masseansettelseslinje           | Avdeling, ansettelsestype og stilling                                           | Dato, jobb, masseansettelsesprosjekt |
-

@@ -1,13 +1,13 @@
---- 
-title: "Initialisere lagernivåer i lageret"
-description: "Denne prosedyren viser hvordan du får lagerbeholdningen oppdatert manuelt ved hjelp av en varetilgangsjournal."
+---
+title: Initialisere lagernivåer i lageret
+description: Denne prosedyren viser hvordan du får lagerbeholdningen oppdatert manuelt ved hjelp av en varetilgangsjournal.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4bfa40c19e34631edb68b8cff42e7f72eb9ce2ad
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45c93febbbc4ea78fe2b87735ed96fd773605d96
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332294"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Initialisere lagernivåer i lageret
 
@@ -59,5 +59,4 @@ Denne prosedyren viser hvordan du får lagerbeholdningen oppdatert manuelt ved h
 24. Klikk OK.
 25. Lukk siden.
 26. Lukk siden.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Oversikt over behovsprognose
-description: "Behovsprognose brukes til å forutse uavhengig behov fra salgsordrer og avhengig behov på et hvilket som helst frakoblingspunkt for kundeordrer. Reglene for utvidet behovsprognosereduksjon er en ideell løsning for massetilpasning."
+description: Behovsprognose brukes til å forutse uavhengig behov fra salgsordrer og avhengig behov på et hvilket som helst frakoblingspunkt for kundeordrer. Reglene for utvidet behovsprognosereduksjon er en ideell løsning for massetilpasning.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310007"
 ---
-
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Diagrammet nedenfor viser grunnleggende flyt i behovsprognose.
 
 [![diagram for innføring i behovsprognose](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Genereringslogg for behovsprognose starter i Finance and Operations. Historiske transaksjonsdata fra den transaksjonelle Finance and Operations-databasen samles inn og fyller ut en oppsamlingstabell. Denne oppsamlingstabellen mates senere til en Machine Learning-tjeneste. Ved å utføre minimal tilpassing kan du koble ulike datakilder til oppsamlingstabellen. Datakildene kan inneholde Microsoft Excel-filer, kommadelte (CSV)-filer og data fra Microsoft Dynamics AX 2009 og Microsoft Dynamics AX 2012. Derfor kan du generere behovsprognoser som vurderer historiske data som er spredt mellom flere systemer. Hoveddata, for eksempel elementnavn og enheter, må imidlertid være de samme på tvers av ulike datakilder.
+Genereringslogg for behovsprognose starter i Finance and Operations. Historiske transaksjonsdata fra den transaksjonelle Finance and Operations-databasen samles inn og fyller ut en oppsamlingstabell. Denne oppsamlingstabellen mates senere til en Machine Learning-tjeneste. Ved å utføre minimal tilpassing kan du koble ulike datakilder til oppsamlingstabellen. Datakildene kan omfatte Microsoft Excel-filer, kommadelte (CSV)-filer og data fra Microsoft Dynamics AX 2009 og Microsoft Dynamics AX 2012. Derfor kan du generere behovsprognoser som vurderer historiske data som er spredt mellom flere systemer. Hoveddata, for eksempel elementnavn og enheter, må imidlertid være de samme på tvers av ulike datakilder.
 
 Hvis du bruker Machine Learning-eksperimentene for Finance and Operations behovsprognose, ser de etter en beste tilpasning blant tidsserieprognosemetoder for å beregne en basislinjeprognose. Parameterne for disse prognosemetodene styres i Finance and Operations. 
 
@@ -88,7 +87,6 @@ Behovsprognose i Finance and Operations er et verktøy som hjelper kunder i fabr
 [Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
 
 
 
