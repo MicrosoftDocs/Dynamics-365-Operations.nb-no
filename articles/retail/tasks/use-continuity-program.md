@@ -1,13 +1,13 @@
---- 
+---
 title: Bruke kontinuitetsprogram
-description: "Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle tilknyttede salgsordrer."
+description: Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle tilknyttede salgsordrer.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
@@ -17,49 +17,48 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 45bd4a3cc9f9b03c713d33638d6dc93aa696c581
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358169"
 ---
-# <a name="using-continuity-program"></a><span data-ttu-id="aa895-103">Bruke kontinuitetsprogram</span><span class="sxs-lookup"><span data-stu-id="aa895-103">Using continuity program</span></span>
+# <a name="using-continuity-program"></a><span data-ttu-id="c7943-103">Bruke kontinuitetsprogram</span><span class="sxs-lookup"><span data-stu-id="c7943-103">Using continuity program</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="aa895-104">Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle tilknyttede salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="aa895-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="aa895-105">For å fullføre denne prosedyren, må brukeren være definert som telefonsenterbruker.</span><span class="sxs-lookup"><span data-stu-id="aa895-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="aa895-106">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="aa895-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="c7943-104">Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle tilknyttede salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="c7943-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="c7943-105">For å fullføre denne prosedyren, må brukeren være definert som telefonsenterbruker.</span><span class="sxs-lookup"><span data-stu-id="c7943-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="c7943-106">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="c7943-106">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="aa895-107">Gå til Detaljhandel og handel > Kunder > Kundestøtte.</span><span class="sxs-lookup"><span data-stu-id="aa895-107">Go to Retail and commerce > Customers > Customer service.</span></span>
-2. <span data-ttu-id="aa895-108">I Søketekst-feltet skriver du inn Karin og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="aa895-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
-    * <span data-ttu-id="aa895-109">Avansert søk-dialogboksen skal vises.</span><span class="sxs-lookup"><span data-stu-id="aa895-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="aa895-110">Hvis ikke, klikker du Søk til høyre for dette feltet.</span><span class="sxs-lookup"><span data-stu-id="aa895-110">If it doesn't, click Search to the right of this field.</span></span>  
-3. <span data-ttu-id="aa895-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="aa895-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="aa895-112">Det skal bare være én rad som vises med Karen Berg.</span><span class="sxs-lookup"><span data-stu-id="aa895-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="aa895-113">Merk raden ved å klikke på avmerkingskolonnen helt til venstre i rutenettet.</span><span class="sxs-lookup"><span data-stu-id="aa895-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
-4. <span data-ttu-id="aa895-114">Klikk Velg.</span><span class="sxs-lookup"><span data-stu-id="aa895-114">Click Select.</span></span>
-5. <span data-ttu-id="aa895-115">Klikk Ny salgsordre.</span><span class="sxs-lookup"><span data-stu-id="aa895-115">Click New sales order.</span></span>
-    * <span data-ttu-id="aa895-116">Det er lurt å notere seg salgsordrenummeret.</span><span class="sxs-lookup"><span data-stu-id="aa895-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="aa895-117">Du vil trenge det senere i prosedyren.</span><span class="sxs-lookup"><span data-stu-id="aa895-117">You'll need it later in this procedure.</span></span>  
-6. <span data-ttu-id="aa895-118">I Varenummer-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="aa895-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
-    * <span data-ttu-id="aa895-119">Dette er en kontinuitetsvare i demonstrasjonsdataene for USRT.</span><span class="sxs-lookup"><span data-stu-id="aa895-119">This is a continuity item in the USRT demo data.</span></span>  
-7. <span data-ttu-id="aa895-120">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="aa895-120">Click Complete.</span></span>
-8. <span data-ttu-id="aa895-121">Angi Visa i Betalingsmetode-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa895-121">In the Payment method field, enter 'Visa'.</span></span>
-9. <span data-ttu-id="aa895-122">Klikk Legg til kredittkort.</span><span class="sxs-lookup"><span data-stu-id="aa895-122">Click Add credit card.</span></span>
-    * <span data-ttu-id="aa895-123">Angi den nødvendige kredittkortinformasjonen på denne siden.</span><span class="sxs-lookup"><span data-stu-id="aa895-123">Enter the required credit card information on this page.</span></span>  
-10. <span data-ttu-id="aa895-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="aa895-124">Click OK.</span></span>
-11. <span data-ttu-id="aa895-125">Vid delen Betaling.</span><span class="sxs-lookup"><span data-stu-id="aa895-125">Expand the Payment section.</span></span>
-    * <span data-ttu-id="aa895-126">Hvis du vil sende en telefonsenterordre, må betalinger angis for ordren.</span><span class="sxs-lookup"><span data-stu-id="aa895-126">To submit a call center order, payments have to be entered for the order.</span></span>  
-12. <span data-ttu-id="aa895-127">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="aa895-127">Click OK.</span></span>
-13. <span data-ttu-id="aa895-128">Klikk Send.</span><span class="sxs-lookup"><span data-stu-id="aa895-128">Click Submit.</span></span>
-    * <span data-ttu-id="aa895-129">Du er ferdig med å opprette en ny kontinuitetsordre.</span><span class="sxs-lookup"><span data-stu-id="aa895-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="aa895-130">Nå skal du kjøre to satsvise prosesser som brukes til å behandle kontinuitetsordrene.</span><span class="sxs-lookup"><span data-stu-id="aa895-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
-14. <span data-ttu-id="aa895-131">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aa895-131">Close the page.</span></span>
-15. <span data-ttu-id="aa895-132">Gå til Detaljhandel og handel > Kontinuitet > Behandle kontinuitetsbetalinger.</span><span class="sxs-lookup"><span data-stu-id="aa895-132">Go to Retail and commerce > Continuity > Process continuity payments.</span></span>
-16. <span data-ttu-id="aa895-133">I Kontinuitetsvare-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="aa895-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
-17. <span data-ttu-id="aa895-134">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="aa895-134">Click OK.</span></span>
-18. <span data-ttu-id="aa895-135">Gå til Detaljhandel og handel > Kontinuitet > Opprett underordnede kontinuitetsordrer.</span><span class="sxs-lookup"><span data-stu-id="aa895-135">Go to Retail and commerce > Continuity > Create continuity child orders.</span></span>
-    * <span data-ttu-id="aa895-136">Denne prosessen oppretter nye salgsordrer basert på innstillingene for kontinuitetsprogrammene dine.</span><span class="sxs-lookup"><span data-stu-id="aa895-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
-19. <span data-ttu-id="aa895-137">I Kontinuitetsvare-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="aa895-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
-    * <span data-ttu-id="aa895-138">Vare 88000 er en kontinuitetsvare i demonstrasjonsdataene for USRT.</span><span class="sxs-lookup"><span data-stu-id="aa895-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
-20. <span data-ttu-id="aa895-139">Angi eller velg en verdi i feltet Salgsordre.</span><span class="sxs-lookup"><span data-stu-id="aa895-139">In the Sales order field, enter or select a value.</span></span>
-    * <span data-ttu-id="aa895-140">Angi salgsordrenummeret du noterte deg tidligere i denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="aa895-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="aa895-141">Dette vil holde behandlingstiden nede på et minimum for denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="aa895-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="aa895-142">Salgsordre-feltet er valgfritt – du kan behandle alle ordrer for et hvilken som helst program.</span><span class="sxs-lookup"><span data-stu-id="aa895-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
-21. <span data-ttu-id="aa895-143">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="aa895-143">Click OK.</span></span>
-
+1. <span data-ttu-id="c7943-107">Gå til Detaljhandel og handel > Kunder > Kundestøtte.</span><span class="sxs-lookup"><span data-stu-id="c7943-107">Go to Retail and commerce > Customers > Customer service.</span></span>
+2. <span data-ttu-id="c7943-108">I Søketekst-feltet skriver du inn Karin og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="c7943-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
+    * <span data-ttu-id="c7943-109">Avansert søk-dialogboksen skal vises.</span><span class="sxs-lookup"><span data-stu-id="c7943-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="c7943-110">Hvis ikke, klikker du Søk til høyre for dette feltet.</span><span class="sxs-lookup"><span data-stu-id="c7943-110">If it doesn't, click Search to the right of this field.</span></span>  
+3. <span data-ttu-id="c7943-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="c7943-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="c7943-112">Det skal bare være én rad som vises med Karen Berg.</span><span class="sxs-lookup"><span data-stu-id="c7943-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="c7943-113">Merk raden ved å klikke på avmerkingskolonnen helt til venstre i rutenettet.</span><span class="sxs-lookup"><span data-stu-id="c7943-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
+4. <span data-ttu-id="c7943-114">Klikk Velg.</span><span class="sxs-lookup"><span data-stu-id="c7943-114">Click Select.</span></span>
+5. <span data-ttu-id="c7943-115">Klikk Ny salgsordre.</span><span class="sxs-lookup"><span data-stu-id="c7943-115">Click New sales order.</span></span>
+    * <span data-ttu-id="c7943-116">Det er lurt å notere seg salgsordrenummeret.</span><span class="sxs-lookup"><span data-stu-id="c7943-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="c7943-117">Du vil trenge det senere i prosedyren.</span><span class="sxs-lookup"><span data-stu-id="c7943-117">You'll need it later in this procedure.</span></span>  
+6. <span data-ttu-id="c7943-118">I Varenummer-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="c7943-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="c7943-119">Dette er en kontinuitetsvare i demonstrasjonsdataene for USRT.</span><span class="sxs-lookup"><span data-stu-id="c7943-119">This is a continuity item in the USRT demo data.</span></span>  
+7. <span data-ttu-id="c7943-120">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="c7943-120">Click Complete.</span></span>
+8. <span data-ttu-id="c7943-121">Angi Visa i Betalingsmetode-feltet.</span><span class="sxs-lookup"><span data-stu-id="c7943-121">In the Payment method field, enter 'Visa'.</span></span>
+9. <span data-ttu-id="c7943-122">Klikk Legg til kredittkort.</span><span class="sxs-lookup"><span data-stu-id="c7943-122">Click Add credit card.</span></span>
+    * <span data-ttu-id="c7943-123">Angi den nødvendige kredittkortinformasjonen på denne siden.</span><span class="sxs-lookup"><span data-stu-id="c7943-123">Enter the required credit card information on this page.</span></span>  
+10. <span data-ttu-id="c7943-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c7943-124">Click OK.</span></span>
+11. <span data-ttu-id="c7943-125">Vid delen Betaling.</span><span class="sxs-lookup"><span data-stu-id="c7943-125">Expand the Payment section.</span></span>
+    * <span data-ttu-id="c7943-126">Hvis du vil sende en telefonsenterordre, må betalinger angis for ordren.</span><span class="sxs-lookup"><span data-stu-id="c7943-126">To submit a call center order, payments have to be entered for the order.</span></span>  
+12. <span data-ttu-id="c7943-127">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c7943-127">Click OK.</span></span>
+13. <span data-ttu-id="c7943-128">Klikk Send.</span><span class="sxs-lookup"><span data-stu-id="c7943-128">Click Submit.</span></span>
+    * <span data-ttu-id="c7943-129">Du er ferdig med å opprette en ny kontinuitetsordre.</span><span class="sxs-lookup"><span data-stu-id="c7943-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="c7943-130">Nå skal du kjøre to satsvise prosesser som brukes til å behandle kontinuitetsordrene.</span><span class="sxs-lookup"><span data-stu-id="c7943-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
+14. <span data-ttu-id="c7943-131">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="c7943-131">Close the page.</span></span>
+15. <span data-ttu-id="c7943-132">Gå til Detaljhandel og handel > Kontinuitet > Behandle kontinuitetsbetalinger.</span><span class="sxs-lookup"><span data-stu-id="c7943-132">Go to Retail and commerce > Continuity > Process continuity payments.</span></span>
+16. <span data-ttu-id="c7943-133">I Kontinuitetsvare-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="c7943-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+17. <span data-ttu-id="c7943-134">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c7943-134">Click OK.</span></span>
+18. <span data-ttu-id="c7943-135">Gå til Detaljhandel og handel > Kontinuitet > Opprett underordnede kontinuitetsordrer.</span><span class="sxs-lookup"><span data-stu-id="c7943-135">Go to Retail and commerce > Continuity > Create continuity child orders.</span></span>
+    * <span data-ttu-id="c7943-136">Denne prosessen oppretter nye salgsordrer basert på innstillingene for kontinuitetsprogrammene dine.</span><span class="sxs-lookup"><span data-stu-id="c7943-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
+19. <span data-ttu-id="c7943-137">I Kontinuitetsvare-feltet skriver du inn 88000 og trykker deretter Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="c7943-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="c7943-138">Vare 88000 er en kontinuitetsvare i demonstrasjonsdataene for USRT.</span><span class="sxs-lookup"><span data-stu-id="c7943-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
+20. <span data-ttu-id="c7943-139">Angi eller velg en verdi i feltet Salgsordre.</span><span class="sxs-lookup"><span data-stu-id="c7943-139">In the Sales order field, enter or select a value.</span></span>
+    * <span data-ttu-id="c7943-140">Angi salgsordrenummeret du noterte deg tidligere i denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="c7943-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="c7943-141">Dette vil holde behandlingstiden nede på et minimum for denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="c7943-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="c7943-142">Salgsordre-feltet er valgfritt – du kan behandle alle ordrer for et hvilken som helst program.</span><span class="sxs-lookup"><span data-stu-id="c7943-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
+21. <span data-ttu-id="c7943-143">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="c7943-143">Click OK.</span></span>
 

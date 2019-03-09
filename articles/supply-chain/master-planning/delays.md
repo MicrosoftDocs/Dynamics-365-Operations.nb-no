@@ -1,13 +1,13 @@
 ---
 title: Forsinkelser
-description: "Denne artikkelen inneholder informasjon om forsinkede datoer i hovedplanlegging. En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato."
+description: Denne artikkelen inneholder informasjon om forsinkede datoer i hovedplanlegging. En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,37 +19,35 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: a87b19732f413aa2844101f76dea83535da86599
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359618"
 ---
-
-# <a name="delays"></a><span data-ttu-id="57587-104">Forsinkelser</span><span class="sxs-lookup"><span data-stu-id="57587-104">Delays</span></span>
+# <a name="delays"></a><span data-ttu-id="03b92-104">Forsinkelser</span><span class="sxs-lookup"><span data-stu-id="03b92-104">Delays</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="57587-105">Denne artikkelen inneholder informasjon om forsinkede datoer i hovedplanlegging.</span><span class="sxs-lookup"><span data-stu-id="57587-105">This article provides information about delayed dates in master planning.</span></span> <span data-ttu-id="57587-106">En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato.</span><span class="sxs-lookup"><span data-stu-id="57587-106">A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.</span></span>
+<span data-ttu-id="03b92-105">Denne artikkelen inneholder informasjon om forsinkede datoer i hovedplanlegging.</span><span class="sxs-lookup"><span data-stu-id="03b92-105">This article provides information about delayed dates in master planning.</span></span> <span data-ttu-id="03b92-106">En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato.</span><span class="sxs-lookup"><span data-stu-id="03b92-106">A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.</span></span>
 
-<span data-ttu-id="57587-107">Hovedplanlegging kan beregne den tidligste fullføringsdatoen for en transaksjon, basert på leveringstider, materialtilgjengelighet, tilgjengelig kapasitet og forskjellige planleggingsparametere.</span><span class="sxs-lookup"><span data-stu-id="57587-107">Master planning can calculate the earliest fulfillment date for a transaction, based on lead times, material availability, capacity availability, and various planning parameters.</span></span> 
+<span data-ttu-id="03b92-107">Hovedplanlegging kan beregne den tidligste fullføringsdatoen for en transaksjon, basert på leveringstider, materialtilgjengelighet, tilgjengelig kapasitet og forskjellige planleggingsparametere.</span><span class="sxs-lookup"><span data-stu-id="03b92-107">Master planning can calculate the earliest fulfillment date for a transaction, based on lead times, material availability, capacity availability, and various planning parameters.</span></span> 
 
-<span data-ttu-id="57587-108">Hvis hovedplanleggingen beregner en ordredato som kommer før gjeldende dato, kan ikke ordren fullføres i tide.</span><span class="sxs-lookup"><span data-stu-id="57587-108">If master planning calculates an order date that precedes the current date, the order can't be fulfilled on time.</span></span> <span data-ttu-id="57587-109">Derfor er ordren forsinket.</span><span class="sxs-lookup"><span data-stu-id="57587-109">Therefore, the order is delayed.</span></span> <span data-ttu-id="57587-110">I så fall fremoverplanlegger hovedplanleggingen ordren fra gjeldende dato og inkluderer leveringstider.</span><span class="sxs-lookup"><span data-stu-id="57587-110">In this case, master planning forward-plans the order from the current date and includes lead times.</span></span> <span data-ttu-id="57587-111">Disse leveringstidene starter med komponentvarer på lavere nivå.</span><span class="sxs-lookup"><span data-stu-id="57587-111">These lead times start with any lower-level component items.</span></span> <span data-ttu-id="57587-112">Ordren får deretter en forsinkelsesdato.</span><span class="sxs-lookup"><span data-stu-id="57587-112">The order then receives a delayed date.</span></span> <span data-ttu-id="57587-113">En forsinket dato er en realistisk forfallsdato basert på gjeldende data.</span><span class="sxs-lookup"><span data-stu-id="57587-113">A delayed date is a realistic due date, based on the current data.</span></span> <span data-ttu-id="57587-114">Hovedplanlegging beregner også antall dager forsinket.</span><span class="sxs-lookup"><span data-stu-id="57587-114">Master planning also calculates the number of delay days.</span></span> 
+<span data-ttu-id="03b92-108">Hvis hovedplanleggingen beregner en ordredato som kommer før gjeldende dato, kan ikke ordren fullføres i tide.</span><span class="sxs-lookup"><span data-stu-id="03b92-108">If master planning calculates an order date that precedes the current date, the order can't be fulfilled on time.</span></span> <span data-ttu-id="03b92-109">Derfor er ordren forsinket.</span><span class="sxs-lookup"><span data-stu-id="03b92-109">Therefore, the order is delayed.</span></span> <span data-ttu-id="03b92-110">I så fall fremoverplanlegger hovedplanleggingen ordren fra gjeldende dato og inkluderer leveringstider.</span><span class="sxs-lookup"><span data-stu-id="03b92-110">In this case, master planning forward-plans the order from the current date and includes lead times.</span></span> <span data-ttu-id="03b92-111">Disse leveringstidene starter med komponentvarer på lavere nivå.</span><span class="sxs-lookup"><span data-stu-id="03b92-111">These lead times start with any lower-level component items.</span></span> <span data-ttu-id="03b92-112">Ordren får deretter en forsinkelsesdato.</span><span class="sxs-lookup"><span data-stu-id="03b92-112">The order then receives a delayed date.</span></span> <span data-ttu-id="03b92-113">En forsinket dato er en realistisk forfallsdato basert på gjeldende data.</span><span class="sxs-lookup"><span data-stu-id="03b92-113">A delayed date is a realistic due date, based on the current data.</span></span> <span data-ttu-id="03b92-114">Hovedplanlegging beregner også antall dager forsinket.</span><span class="sxs-lookup"><span data-stu-id="03b92-114">Master planning also calculates the number of delay days.</span></span> 
 
-<span data-ttu-id="57587-115">I noen tilfeller kan det hende du velger ikke å beregne forsinkelser, for eksempel når brukerne vet at de kan fremskynde leveringstider ved å velge alternative leveringsmåter.</span><span class="sxs-lookup"><span data-stu-id="57587-115">In some situations, you might choose not to calculate delays, such as when users know that they can expedite lead times by selecting alternative modes of delivery.</span></span> 
+<span data-ttu-id="03b92-115">I noen tilfeller kan det hende du velger ikke å beregne forsinkelser, for eksempel når brukerne vet at de kan fremskynde leveringstider ved å velge alternative leveringsmåter.</span><span class="sxs-lookup"><span data-stu-id="03b92-115">In some situations, you might choose not to calculate delays, such as when users know that they can expedite lead times by selecting alternative modes of delivery.</span></span> 
 
-<span data-ttu-id="57587-116">Du kan konfigurere hvordan forsinkelser beregnes for en dekningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="57587-116">You can configure how delays are calculated for a coverage group.</span></span> <span data-ttu-id="57587-117">Du kan deretter knytte dekningsgruppen til en vare senere.</span><span class="sxs-lookup"><span data-stu-id="57587-117">You can then attach the coverage group to an item later.</span></span> 
+<span data-ttu-id="03b92-116">Du kan konfigurere hvordan forsinkelser beregnes for en dekningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="03b92-116">You can configure how delays are calculated for a coverage group.</span></span> <span data-ttu-id="03b92-117">Du kan deretter knytte dekningsgruppen til en vare senere.</span><span class="sxs-lookup"><span data-stu-id="03b92-117">You can then attach the coverage group to an item later.</span></span> 
 
-<span data-ttu-id="57587-118">På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for beregning av forsinkelser.</span><span class="sxs-lookup"><span data-stu-id="57587-118">On the **Master planning parameters** page, you can set the start time for the calculation of delays.</span></span> <span data-ttu-id="57587-119">Hvis en ordre er utført etter dette tidspunktet, legges det til én dag i forsinkelsen av ordren.</span><span class="sxs-lookup"><span data-stu-id="57587-119">If an order is fulfilled after this time, a delay of one day is added to the delay date of the order.</span></span> 
+<span data-ttu-id="03b92-118">På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for beregning av forsinkelser.</span><span class="sxs-lookup"><span data-stu-id="03b92-118">On the **Master planning parameters** page, you can set the start time for the calculation of delays.</span></span> <span data-ttu-id="03b92-119">Hvis en ordre er utført etter dette tidspunktet, legges det til én dag i forsinkelsen av ordren.</span><span class="sxs-lookup"><span data-stu-id="03b92-119">If an order is fulfilled after this time, a delay of one day is added to the delay date of the order.</span></span> 
 
-<span data-ttu-id="57587-120">**Obs!**  I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen*, og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.</span><span class="sxs-lookup"><span data-stu-id="57587-120">**Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.</span></span>
+<span data-ttu-id="03b92-120">**Obs!**  I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen*, og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.</span><span class="sxs-lookup"><span data-stu-id="03b92-120">**Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="57587-121">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="57587-121">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="03b92-121">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="03b92-121">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="57587-122">Dekningsinnstillinger</span><span class="sxs-lookup"><span data-stu-id="57587-122">Coverage settings</span></span>](coverage-settings.md)
-
+[<span data-ttu-id="03b92-122">Dekningsinnstillinger</span><span class="sxs-lookup"><span data-stu-id="03b92-122">Coverage settings</span></span>](coverage-settings.md)
 
 
 

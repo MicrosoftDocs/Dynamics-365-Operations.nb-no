@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette produktmodellkomponenter
-description: "Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen."
+description: Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCComponentList
 audience: Application User
 ms.reviewer: shylaw
@@ -16,26 +16,25 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 070f8aa61f6aead46e35a52a180d42fcc08bd3a7
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361987"
 ---
-# <a name="create-product-model-components"></a><span data-ttu-id="cfccd-103">Opprette produktmodellkomponenter</span><span class="sxs-lookup"><span data-stu-id="cfccd-103">Create product model components</span></span>
+# <a name="create-product-model-components"></a><span data-ttu-id="17a64-103">Opprette produktmodellkomponenter</span><span class="sxs-lookup"><span data-stu-id="17a64-103">Create product model components</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="cfccd-104">Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen.</span><span class="sxs-lookup"><span data-stu-id="cfccd-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="cfccd-105">Komponentene må opprettes før en produktmodell kan bygges.</span><span class="sxs-lookup"><span data-stu-id="cfccd-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="cfccd-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="cfccd-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="17a64-104">Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen.</span><span class="sxs-lookup"><span data-stu-id="17a64-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="17a64-105">Komponentene må opprettes før en produktmodell kan bygges.</span><span class="sxs-lookup"><span data-stu-id="17a64-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="17a64-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="17a64-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="cfccd-107">Klikk Definisjon av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="cfccd-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="cfccd-108">Klikk Produktkonfigurasjonsmodeller.</span><span class="sxs-lookup"><span data-stu-id="cfccd-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="cfccd-109">Klikk Modell i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="cfccd-109">On the Action Pane, click Model.</span></span>
-4. <span data-ttu-id="cfccd-110">Klikk Komponenter.</span><span class="sxs-lookup"><span data-stu-id="cfccd-110">Click Components.</span></span>
-5. <span data-ttu-id="cfccd-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="cfccd-111">Click New.</span></span>
-6. <span data-ttu-id="cfccd-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="cfccd-112">In the Name field, type a value.</span></span>
-7. <span data-ttu-id="cfccd-113">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="cfccd-113">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="cfccd-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="cfccd-114">Close the page.</span></span>
-
+1. <span data-ttu-id="17a64-107">Klikk Definisjon av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="17a64-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="17a64-108">Klikk Produktkonfigurasjonsmodeller.</span><span class="sxs-lookup"><span data-stu-id="17a64-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="17a64-109">Klikk Modell i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="17a64-109">On the Action Pane, click Model.</span></span>
+4. <span data-ttu-id="17a64-110">Klikk Komponenter.</span><span class="sxs-lookup"><span data-stu-id="17a64-110">Click Components.</span></span>
+5. <span data-ttu-id="17a64-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="17a64-111">Click New.</span></span>
+6. <span data-ttu-id="17a64-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="17a64-112">In the Name field, type a value.</span></span>
+7. <span data-ttu-id="17a64-113">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="17a64-113">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="17a64-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="17a64-114">Close the page.</span></span>
 
