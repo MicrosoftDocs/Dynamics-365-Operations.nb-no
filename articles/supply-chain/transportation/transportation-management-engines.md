@@ -1,13 +1,13 @@
 ---
 title: Transportbehandlingsmotorer
-description: "Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling."
+description: Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361136"
 ---
-
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene fo
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
 ----------------------------------------------------------
 
-Transportbehandlingsmotorer som er avhengige av data som er definert i Dynamics 365 for Finance and Operations kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
+Transportbehandlingsmotorer som er avhengige av data som er definert i Dynamics 365 for Finance and Operations, kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Hva kan brukes som søkedata i satsberegninger?
 Dataene som du bruker når du beregner satser i Microsoft Dynamics 365 for Finance and Operations, kontrolleres av metadatakonfigurasjonen. Hvis du for eksempel vil søke etter satser basert på postnumre, må du definere metadata som er basert på oppslagstypen for et postnummer.
@@ -79,7 +78,7 @@ Nei, transportbehandlingsmotorer som brukes til å hente dataene som kreves for 
 
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transportbehandlingsmotorer som leveres med  Finance and Operations, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio-verktøy for Microsoft Dynamics 365 for Finance and Operations. |
+| Transportbehandlingsmotorer som leveres med  Finance and Operations, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio Tools for Microsoft Dynamics 365 for Finance and Operations Visual Studio. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hvordan konfigurerer jeg metadataene for en transportbehandlingsmotor?
 Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike typer motorer.
@@ -90,7 +89,7 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | **Sonemotor**                                | Krever at metadata konfigureres direkte i sonemalen.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transittidmotor** og **Kjørelengdemotor** | Henter metadataene direkte fra kjørelengdemotorens skjema for konfigurasjonsoppsett.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Eksempel på metadata for en ratemotor** Transportbehandlingsmotoren krever identifikasjon av den opprinnelige adressen, målfylke og land/region, og start- og sluttpunktet for forsendelsen. Når disse kravene brukes, ser metadataene ut som dataene i tabellen nedenfor. Tabellen inneholder også informasjon om hvilken type inndata som kreves.
+  **Eksempel på metadata for en ratemotor** Transportbehandlingsmotoren krever identifikasjon av den opprinnelige adressen, målfylke og land/region, og start- og sluttpunktet for forsendelsen. Når disse kravene brukes, ser metadataene ut som dataene i tabellen nedenfor. Tabellen inneholder også informasjon om hvilken type inndata som kreves.
 -   Definer denne informasjonen i **Transportstyring** &gt; **Oppsett** på siden **Vurderingsgrunnlagstype**.
 
 | Rekkefølge | Navn                          | Felttype | Datatype | Oppslagstype    | Obligatorisk |
@@ -100,7 +99,6 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
-
 
 
 

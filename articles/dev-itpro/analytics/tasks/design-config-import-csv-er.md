@@ -1,13 +1,13 @@
---- 
-title: "Utforme ER-konfigurasjoner for å importere data fra eksterne CSV-filer"
-description: "Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format."
+---
+title: Utforme ER-konfigurasjoner for å importere data fra eksterne CSV-filer
+description: Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365230"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforme ER-konfigurasjoner for å importere data fra eksterne CSV-filer
 
@@ -119,5 +119,4 @@ For testformål kan du utføre formattilordningen med filen 1099entriescsv.csv s
     * Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Vær oppmerksom på at alle 7 linjene i den importerte CSV-filen ble behandlet. Feltenes titler linje 1 ble hoppet over, 4 transaksjoner ble riktig analysert, og 2 transaksjoner ble gjenkjent som ikke gyldige.   
 3. Lukk siden.
 4. Lukk siden.
-
 

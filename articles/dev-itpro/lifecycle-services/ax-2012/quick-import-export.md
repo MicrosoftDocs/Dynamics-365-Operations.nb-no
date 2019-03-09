@@ -1,13 +1,13 @@
 ---
 title: Hurtigimport/-eksport
-description: "Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn."
+description: Formålet med hurtigimport/-eksport er å la deg importere og eksportere med færre trinn.
 author: margoc
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Application User
 ms.reviewer: margoc
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 89041
 ms.assetid: 990d64e6-d436-4c79-9bb5-bf8c5c5a048f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 4f2edba4add691e9ad4c7829551c6f79b9804853
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357732"
 ---
-
 # <a name="quick-import-export"></a>Hurtigimport/-eksport
 
 [!include [banner](../../includes/banner.md)]
@@ -35,11 +34,10 @@ Vi har lagt til funksjonen for hurtigimport/-eksport for å la brukere importere
 
 - Denne funksjonen støtter arbeid med både medfølgende og egendefinerte enheter.
 - Du kan importere fra filer, og hvis du bruker en ODBC-datakilde, kan du velge en spørring til bruk for å definere importen.
-- Du må ha tidligere definerte kildedataformater for AX eller Fil, og vite hvor de befinner seg.
+- Du må ha tidligere definerte kildedataformater for AX eller Fil og vite hvor de befinner seg.
 - Du trenger ikke å opprette en behandlingsgruppe for å bruke hurtigimport/-eksport. Systemet oppretter en automatisk når du import- eller eksportjobben utføres. Du kan også velge å beholde historikken over dataene som importeres med hurtigimport/-eksport.
 
   Vær oppmerksom på at hurtigimport/-eksport forutsetter at du er kjent med DIXF-konseptet.
-
 
 
 

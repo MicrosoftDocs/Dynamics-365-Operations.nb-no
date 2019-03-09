@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365943"
 ---
-
 # <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
 
 [!include [banner](../includes/banner.md)]
@@ -128,7 +127,7 @@ Kostnadsregnskapet støtter integrering av data fra kildesystemer via et sett me
 
 De fleste kildesystemer kan gi data som samsvarer med en eller flere datakilder i kostnadsregnskap. For å justere data fra kildesystemene med datakilden i Kostnadsregnskap, må en dataoperatør konfigureres. Tabellen nedenfor viser tilgjengeligheten av dataleverandører per datakontakt og datakilde.
 
-|  **Datakilder** |  **Datakilder for importerte transaksjoner** | **Datakobling for Dynamics 365 for Finance and Operations**  | **Datatilkobling for Dynamics AX**  |
+|  **Datakilder** |  **Datakilder for importerte transaksjoner** | **Dynamics 365 for Finance and Operations-datakobling**  | **Dynamics AX-datatilkobling**  |
 |---|---|---|---|
 | Medlemmer av dimensjon for kostnadselement  |  Ja | Ja  | Ja  |
 |  Medlemmer av dimensjon for kostnadsobjekt |  Ja | Ja  | Ja  |
@@ -204,6 +203,5 @@ Oppgaver er visninger for ledere som har ansvar for å kontrollere kostnader. Ut
 **Versjon**
 
 Versjoner brukes til å simulere, vise og sammenligne ulike resultater. Som standard vises alle faktiske kostnader i en grunnleggende versjon som kalles *Faktiske*. Du kan arbeide med så mange versjoner du har behov, for budsjetter og beregninger. Du kan for eksempel importere budsjettdata til en opprinnelig versjon og deretter endre budsjettet i en revidert versjon. For beregninger kan du opprette flere versjoner. I disse ulike versjonene kan du deretter opprette beregninger ved hjelp av andre beregningsregler som skal brukes for kostnadsfordeling.
-
 
 

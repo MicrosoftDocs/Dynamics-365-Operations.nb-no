@@ -1,13 +1,13 @@
 ---
 title: Komponenter for finansrapport
-description: "Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper."
+description: Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368151"
 ---
-
 # <a name="financial-report-components"></a>Komponenter for finansrapport
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,7 @@ Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan o
 
 ### <a name="export-a-building-block-group"></a>Eksportere en byggeblokkgruppe
 
-Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom Finance and Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
+Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom Finance and Operations-installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
 
 1. På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
 2. Velg byggeblokkgruppen som skal eksporteres, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Eksporter**.
@@ -128,4 +127,3 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-

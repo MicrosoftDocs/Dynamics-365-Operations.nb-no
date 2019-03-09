@@ -1,13 +1,13 @@
---- 
-title: "Identifisere og løse konflikter i arbeidsdeling"
-description: "Du kan definere regler for å skille aktiviteter som må utføres av forskjellige brukere."
+---
+title: Identifisere og løse konflikter i arbeidsdeling
+description: Du kan definere regler for å skille aktiviteter som må utføres av forskjellige brukere.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9d4a6bd14090213cc19a072d030bc26886c7a8d0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353109"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifisere og løse konflikter i arbeidsdeling
 
@@ -48,5 +48,4 @@ Du kan definere regler for å skille aktiviteter som må utføres av forskjellig
     * Velg en regel.  
 2. Klikk Valider plikter og roller.
     * Hvis noen eksisterende roller bryter en valgt regel, vises en melding som inneholder navnet på rollen og navnene på pliktene som er i konflikt med hverandre. Administratoren må angi reduksjonen for sikkerhetsrisikoen eller endre rollen slik at den ikke er et brudd på regler for arbeidsdeling.     Hvis ingen roller bryter en valgt regel, får du en melding som angir at alle roller er i samsvar.  
-
 

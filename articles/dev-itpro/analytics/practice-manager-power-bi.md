@@ -1,31 +1,30 @@
 ---
-title: Praksisleder for Power BI-innhold
-description: "Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Power BI-innholdet Praksisleder
+description: Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367806"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Praksisleder for Power BI-innhold
+# <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +38,7 @@ Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Powe
 
 Alle beløp i innholdet vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
 Power BI-innholdet **Praksisleder** vises i **Prosjektstyring**-arbeidsområdet.
 
@@ -119,4 +118,3 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Aggregerte nøkkelmålinger       | Felt               | beskrivelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt kostnad for fullført aktivitet | Sum(TotalCostPrice) | Total kostpris i estimater for alle prosjekttransaksjonstypene med fullførte oppgaver |
-

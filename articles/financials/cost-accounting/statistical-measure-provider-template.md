@@ -1,32 +1,31 @@
 ---
-title: "Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling"
-description: "Dette emnet gir informasjon om statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling. Statistiske dimensjonsmedlemmere kan brukes som tildelingsgrunnlag i policyer som kostnadsdistribusjon og kostnadstildeling. De kan også brukes til å rapportere ikke-monetært kostnadsforbruk."
+title: Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
+description: Dette emnet gir informasjon om statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling. Statistiske dimensjonsmedlemmere kan brukes som tildelingsgrunnlag i policyer som kostnadsdistribusjon og kostnadstildeling. De kan også brukes til å rapportere ikke-monetært kostnadsforbruk.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cc9170f10fe2be0446b1c974a50dbdf1cb5fe236
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8c74c47a5e0ca72fc4509786b091a70b5e292b54
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360308"
 ---
-
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Her er noen eksempler på vanlige statistiske dimensjonsmedlemmer.
 
 ## <a name="statistical-measure-provider-template"></a>Mal for leverandør av statistisk måling
 
-Statistiske målinger kan hentes fra mange typer datakilder. Microsoft Dynamics 365 for Finance and Operations er en god kilde til å hente statistiske målinger fra. Du kan bruke en mal for leverandør av statistiske mål for enkelt å konfigurere de statistiske målinger som du vil hente ut.
+Statistiske målinger kan hentes fra mange typer datakilder. Microsoft Dynamics 365 for Finance and Operations er en flott kilde å trekke ut statistiske målinger fra. Du kan bruke en mal for leverandør av statistiske mål for enkelt å konfigurere de statistiske målinger som du vil hente ut.
 
 Definisjonen av en mal for leverandør av statistiske mål er generisk og kan brukes på nytt i flere statistiske dimensjonsmedlemmer.
 
@@ -138,7 +137,7 @@ Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **
 
 | Navn        | Datakobling                                                                     | Statistisk medlem av dimensjon |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Heltidsansatte D365FO | Dynamics 365 for Finance and Operations – statistiske målinger | Heltidsansatte                         |
+| Heltidsansatte D365FO | Dynamics 365 for Finance and Operations – Statistiske målinger | Heltidsansatte                         |
 
 **Konfigurasjon av dataleverandør**
 
@@ -226,7 +225,7 @@ Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **
 
 | Navn           | Datakobling                                                                     | Statistisk medlem av dimensjon |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Emb.-kostsenter D365FO | Dynamics 365 for Finance and Operations – statistiske målinger | Emb.-kostsenter                      |
+| Emb.-kostsenter D365FO | Dynamics 365 for Finance and Operations – Statistiske målinger | Emb.-kostsenter                      |
 
 Systemet gjenkjenner at ProdRouteTrans er en tabell der hver post tilhører en separat juridisk enhet. Derfor får du spørsmål om å velge den juridiske enheten som transaksjonene skal importeres fra.
 
@@ -347,4 +346,3 @@ Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Strøm,
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tildelingsgrunnlag](allocation-bases.md)
-

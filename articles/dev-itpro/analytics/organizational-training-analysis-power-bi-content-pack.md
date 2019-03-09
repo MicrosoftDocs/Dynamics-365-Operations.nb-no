@@ -1,13 +1,13 @@
 ---
-title: "Organisasjonsopplæring-innhold for Power BI"
-description: "Dette emnet beskriver Finance and Operations - Organisasjonsopplæringsinnhold for Power BI."
+title: Power BI-innholdet Organisasjonsopplæring
+description: Dette emnet beskriver Finance and Operations - Organisasjonsopplæringsinnhold for Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367530"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Organisasjonsopplæring-innhold for Power BI
+# <a name="organizational-training-power-bi-content"></a>Power BI-innholdet Organisasjonsopplæring
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,4 +58,3 @@ Finance and Operations-data brukes til å fylle ut rapporter i Organisasjonsoppl
 | Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees |
-

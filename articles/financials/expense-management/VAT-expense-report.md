@@ -1,13 +1,13 @@
 ---
 title: Mva-fradrag i Reiseregning og utlegg
-description: "Dette emnet forklarer hvordan du kan få refusjoner for transaksjoner som er kvalifisert for mva-refusjon."
+description: Dette emnet forklarer hvordan du kan få refusjoner for transaksjoner som er kvalifisert for mva-refusjon.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359572"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Mva-fradrag i Reiseregning og utlegg
 
 [!include [banner](../includes/banner.md)]
@@ -68,11 +67,10 @@ Når Magnus mottar orginalene fra Nancy, kontrollerer han orginalene mot de digi
 
 ## <a name="send-vat-recovery-data-to-the-third-party-vendor-to-file-international-recovery-returns"></a>Send data om mva-refusjon til tredjepartsleverandører for å søke om internasjonal refusjon
 
-Når Magnus er klar til å sende utgiftsrapportdata til tredjepartsleverandører som skal sende inn søknader om mva-fradrag, han åpner siden **Avgiftsfradrag for utgifter**. Han filtrerer siden slik at den bare viser reiseregningene som er merket som **Klar for fradrag**. Så velger Magnus **Fil** &gt; **Eksporter til Excel**. Mva-informasjonen fra reiseregningene eksporteres til et Excel-regneark. Magnus sender regnearket til en tredjeparts-leverandør og inkluderer en melding om at orginalene er sent med bud.
+Når Magnus er klar til å sende utgiftsrapportdata til tredjepartsleverandører som skal sende inn søknader om mva-fradrag, han åpner siden **Avgiftsfradrag for utgifter**. Han filtrerer siden slik at den bare viser reiseregningene som er merket som **Klar for fradrag**. Så velger Magnus **Fil** &gt; **Eksporter til Excel**. Mva-informasjonen fra reiseregningene eksporteres til et Microsoft Excel-regneark. Magnus sender regnearket til en tredjeparts-leverandør og inkluderer en melding om at orginalene er sent med bud.
 
 ## <a name="process-expenses-for-domestic-vat-recovery"></a>Behandle utgifter for innenlandsk mva-refusjon
 
 Magnus må kontrollere at transaksjonene for reiseregningen er kvalifisert for mva-refusjon og at de digitale kvitteringene er knyttet til regningene. For å behandle kvalifiserte utgifter for innenlandsk refusjon, åpner Magnes siden **Avgiftsfradrag for utgifter** og velger reiseregningen som krever verifisering. Han kontrollerer at kvitteringene står registrert på bedriften, og ikke på den ansette. For mva-fradrag må kvitteringene registreres på selskapet. Magnus bekrefter deretter at riktig mva-gruppe og mva-koder for vare ble brukt.
 
 Når Magnus mottar orginalene, endrer han statusen for reiseregningen til **Klar for fradrag**. Han kan deretter sende refusjonen til den riktige skattemyndigheten. I dette tilfellet er den rette skattemyndighet i USA tjenesten IRS (Internal Revenue).
-

@@ -1,13 +1,13 @@
 ---
 title: Mva-rapport for Norge
-description: "Dette emnet forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge."
+description: Dette emnet forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge.
 author: epodkolz
 ms.author: epodkolz
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 manager: annbe
 audience: Application User
 ms.reviewer: shylaw
@@ -15,14 +15,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 9c289e1cce79a6f7fb211e52f42ac6b04570c747
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 8a6a739751d5cf2ed8828779537cb72069075752
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371344"
 ---
-
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
 [!include [banner](../includes/banner.md)]
@@ -118,4 +117,3 @@ Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i mod
 
 > [!NOTE]
 > Du kan kombinere flere mva-betalinger og skrive ut én kombinert rapport/XML-fil som inneholder summerte data for alle valgte oppføringer. Du kan kombinere bare poster som er knyttet til en utligningsperiode, og som har samme verdier for **Fra-dato** og **Til-dato**. Du kan for eksempel kombinere en **Originalversjon**-post med dens **Rettelser/Siste rettelser**-post.
-

@@ -1,13 +1,13 @@
 ---
 title: Nets-importformat
-description: "Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format."
+description: Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Norway
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: b6fb40aff3014cd6950dd3fcb93007454df03735
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fa2e207cf9e281e636f3e8632a8d6ef8a55f875a
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371338"
 ---
-
 # <a name="nets-import-format"></a>Nets-importformat
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ OCR-, Avtalegiro- og eFaktura-transaksjoner må importeres og utlignes basert p�
 
 ## <a name="einvoice-and-avtalegiro-enrollment-import"></a>Import av eFaktura- og AvtaleGiro-innmelding
 Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende kundekontoen, angitt i feltene <strong>Betalingsmåte</strong> og <strong>Betalingsspesifikasjon</strong>. Dette definerer egenskapene for eksportmeldinger som genereres for denne kundekontoen i fremtiden. Et sett med regler som skal utføres under import av filen, skal angitt på siden <strong>Importer fil og kan defineres på siden Integreringstyper for eFaktura</strong>. I forskjellige tilfeller kan du bruke forskjellige integreringstyper. Spesifikke regler skal angis på siden <strong>Endring i betalingsmåte for eFaktura</strong>. Reglene kan angis basert på meldingen <strong>Status</strong>, for eksempel Aktiv for abonnementsmeldinger, Slettet for abonnementskanselleringer og Advarsel hvis betaleren krever skriftlige varslingsattributter. Dette krever at betalingsspesifikasjoner defineres for den valgte betalingsmetoden. På siden <strong>eFaktura-innmelding og svar</strong> kan du vise importerte eFaktura-meldinger. Du kan generere svarmeldinger for å bekrefte at registreringsmeldinger et mottatt, når registreringer er klare til postering. Poster registreringene for at oppdateringene av kundekonto skal tre i kraft. For AvtaleGiro-meldinger brukes endringer av betalingsmåte under filimporten.
-
 
 
 

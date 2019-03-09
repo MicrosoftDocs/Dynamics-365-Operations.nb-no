@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9fe717752da4c697cf0d896c0d40832330f0d118
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352718"
 ---
-
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,6 @@ Kjør backflush-etterkalkulering for periodisk å verdiberegne VIA og produsere 
     -   Alle indirekte kostnader som beregnes for det forbrukte materialet i perioden, beregnes og trekkes fra VIA. Gjenstående indirekte kostnader posteres som et avvik.
 
 5.  Beregn produksjonsavvikene til standardkostnad. Avviket beregnes per kostgruppe.
-
 
 
 

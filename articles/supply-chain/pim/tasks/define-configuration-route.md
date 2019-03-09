@@ -1,13 +1,13 @@
---- 
+---
 title: Definere konfigurasjonsrute
-description: "Denne prosedyren fokuserer på å definere en konfigurasjonsrute som bestemmer rekkefølgen som konfigurasjonsgrupper vises i."
+description: Denne prosedyren fokuserer på å definere en konfigurasjonsrute som bestemmer rekkefølgen som konfigurasjonsgrupper vises i.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abe1d5c5a8ec744ec61739e3ec6505236022b8d8
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361182"
 ---
 # <a name="define-configuration-route"></a>Definere konfigurasjonsrute
 
@@ -45,5 +45,4 @@ Denne prosedyren fokuserer på å definere en konfigurasjonsrute som bestemmer r
 14. Finn og velg ønsket post i listen.
 15. Klikk koblingen i den valgte raden i listen.
 16. Klikk Lagre.
-
 

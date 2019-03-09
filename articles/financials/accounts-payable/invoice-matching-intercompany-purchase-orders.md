@@ -1,13 +1,13 @@
 ---
 title: Fakturakontroll og konserninterne bestillinger
-description: "Den juridiske enheten for innkjøp som er involvert i en konsernintern handelstransaksjon kan være konfigurert til å bruke leverandørfakturasamsvar. I så fall må posteringskravene for både konsernintern handel og leverandørfakturasamsvar være oppfylt før konserninterne leverandørfakturaer kan posteres."
+description: Den juridiske enheten for innkjøp som er involvert i en konsernintern handelstransaksjon kan være konfigurert til å bruke leverandørfakturasamsvar. I så fall må posteringskravene for både konsernintern handel og leverandørfakturasamsvar være oppfylt før konserninterne leverandørfakturaer kan posteres.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357571"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturakontroll og konserninterne bestillinger
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Du følger eksempelvis disse trinnene.
 2.  Utfør en fakturaoppdatering for ICSO999 i Fabrikam Salg. Posteringen er ikke vellykket, fordi varen ikke finnes på lager og er ennå ikke mottatt. Derfor kan ikke den finansielle informasjonen oppdateres.
 3.  Registrer at varene er mottatt, og posterer en følgeseddel for ICSO999 i Fabrikam Salg. En produktkvittering for ICPO333 posteres automatisk i Fabrikam Innkjøp. Det mottatte antallet av vare B-R14 i Fabrikam Innkjøp endres til 100.
 4.  Utfør en fakturaoppdatering for ICSO999 i Fabrikam Salg. Posteringen er vellykket i begge de juridiske enhetene. Det innkjøpte antallet av vare B-R14 i Fabrikam Innkjøp endres til 100. 
-
 
 
 

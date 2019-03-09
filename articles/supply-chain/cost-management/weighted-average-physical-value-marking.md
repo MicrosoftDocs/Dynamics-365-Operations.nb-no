@@ -1,13 +1,13 @@
 ---
 title: Direkte utligning med fysisk verdi og merking
-description: "Avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt, der avganger fra lageret beregnes ut fra gjennomsnittsverdien for varene som mottas i lageret under lagerets periodeavslutning, pluss all lagerbeholdning fra den forrige perioden."
+description: Avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt, der avganger fra lageret beregnes ut fra gjennomsnittsverdien for varene som mottas i lageret under lagerets periodeavslutning, pluss all lagerbeholdning fra den forrige perioden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355685"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Direkte utligning med fysisk verdi og merking
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -111,7 +110,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -140,7 +139,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -173,7 +172,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Quantity@Unitprice.
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@Enhetspris.
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
@@ -221,14 +220,13 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Lagertransaksjoner vises med loddrette piler.
 - Mottak til lager vises med loddrette piler over tidslinjen.
 - Avganger fra lager vises med loddrette piler under tidslinjen.
-- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@"Unitprice".
+- Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet Antall@"Enhetspris".
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
 - Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
-
 
 
 

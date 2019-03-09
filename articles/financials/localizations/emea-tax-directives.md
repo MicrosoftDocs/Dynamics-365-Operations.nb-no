@@ -1,13 +1,13 @@
 ---
 title: Mva-direktiver for Europa
-description: "Du kan angi å inkludere en forklaring for avgiftskoder på salgsfakturaer og prosjektfakturaer. Du kan skrive ut referansenumre på salgsfakturaer, fritekstfakturaer og prosjektfakturaer."
+description: Du kan angi å inkludere en forklaring for avgiftskoder på salgsfakturaer og prosjektfakturaer. Du kan skrive ut referansenumre på salgsfakturaer, fritekstfakturaer og prosjektfakturaer.
 author: epodkolz
 manager: AnnBe
 ms.date: 05/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1a2d4531e13d158dd8b93d9b9e94a17a8f94c50a
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371342"
 ---
-
 # <a name="tax-directives-for-europe"></a>Mva-direktiver for Europa
 
 [!include [banner](../includes/banner.md)]
@@ -31,5 +30,4 @@ EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regl
 
 - His du vil skrive ut en beskrivelse av mva-koder på en salgsfaktura, en fritekstfaktura eller en prosjektfakturarapport, definerer du avgiftsdirektivets referansetekst på mva-kodene.
 - For kreditnotaer skrives nummeret og datoen for den opprinnelige fakturaen ut sammen med årsaken til rettelsen.
-
 

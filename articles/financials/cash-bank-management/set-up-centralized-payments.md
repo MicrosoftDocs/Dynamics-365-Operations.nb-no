@@ -1,13 +1,13 @@
 ---
 title: Definere sentraliserte betalinger
-description: "Bruk denne fremgangsmåten til å klargjøre for behandling av betalinger i én juridisk enhet på vegne av andre juridiske enheter i organisasjonen."
+description: Bruk denne fremgangsmåten til å klargjøre for behandling av betalinger i én juridisk enhet på vegne av andre juridiske enheter i organisasjonen.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb0769d605b831da09046a1e7bf0c2a704dba398
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2e309655bbc1d0fe7a088062b90fab34c642ab29
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361918"
 ---
-
 # <a name="set-up-centralized-payments"></a>Definere sentraliserte betalinger
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Når du oppretter en betaling i en juridisk enhet som utligner fakturaer i andre
 
 ## <a name="set-up-default-descriptions"></a>Definere standardbeskrivelser
 Du kan definere standardbeskrivelser for bilagene for utligning på tvers av firmaer. Standardbeskrivelsen blir tatt med på innbetalings- og utbetalingstransaksjonene under prosessen med utligning på tvers av firmaer. På siden **Standardbeskrivelser** kan du opprette nye beskrivelser for både **Konsernintern kundeutligning** og **Konsernintern leverandørutligning** ved å velge et språk og deretter skrive inn tekst.
-
 
 
 

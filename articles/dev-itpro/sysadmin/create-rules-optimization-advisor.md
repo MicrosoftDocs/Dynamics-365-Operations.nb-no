@@ -1,32 +1,31 @@
 ---
-title: "Opprette regler for optimaliseringsrådgiver"
-description: "Dette emnet beskriver hvordan du legger til nye regler i optimaliseringsrådgiver."
+title: Opprette regler for optimaliseringsrådgiver
+description: Dette emnet beskriver hvordan du legger til nye regler i optimaliseringsrådgiver.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: ca73120a5a0da4dc348c2d16dca8e7654876af5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354167"
 ---
-
 # <a name="create-rules-for-optimization-advisor"></a>Opprette regler for optimaliseringsrådgiver
 
 [!include [banner](../includes/banner.md)]
@@ -196,7 +195,7 @@ class ScanNewRulesJob
 
 Regelen vil vises i **Valideringsregel for diagnostikk**-skjemaet, som er tilgjengelig fra **Systemadministrasjon** > **Periodiske oppgaver** > **Vedlikehold valideringsregel for diagnostikk**. Hvis du vil at det skal evalueres, går du til **Systemadministrasjon** > **Periodiske oppgaver** > **Planlegg valideringsregel for diagnostikk** og velg frekvens for regelen, for eksempel **Daglig**. Klikk **OK**. Gå til **Systemadministrasjon** > **Optimaliseringsrådgiver** for å vise den nye salgsmuligheten. 
 
-Eksemplet nedenfor er en kodesnutt med skjelettet til en regel, inkludert alle nødvendige metoder og attributter. Det hjelper deg med å komme i gang med å skrive nye regler. Etikettene og handlingsmenyelementer som brukes i eksemplet, brukes bare til demonstrasjonsformål.
+Eksemplet nedenfor er en kodesnutt med skjelettet til en regel, inkludert alle nødvendige metoder og attributter. Det hjelper deg med å komme i gang med å skrive nye regler. Etikettene og handlingsmenyelementer som brukes i eksemplet, brukes bare til demonstrasjonsformål.
 
 ```
 [DiagnosticsRuleAttribute]
@@ -255,5 +254,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-Hvis du vil vite mer, kan du se den korte YouTube-videoen: [Optimaliseringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
-
+Hvis du vil ha mer informasjon, se den korte YouTube-videoen: [Optimaliseringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

@@ -1,30 +1,29 @@
 ---
 title: Importere data fra Excel-dataenhetsmaler med flere regneark
-description: Dette emnet beskriver hvordan du importerer data ved hjelp av Excel-dataenhetsmaler for Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emnet beskriver hvordan du importerer data ved hjelp av Excel-dataenhetsmaler til Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351269"
 ---
-
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importere data fra Excel-dataenhetsmaler med flere regneark
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ I tilfeller der en ny versjon av samme fil eller en helt ny fil må lastes opp f
 ## <a name="upload-a-file-using-run-project"></a>Laste opp en fil ved hjelp av Kjør prosjekt
 
 Du kan laste opp en Excel-fil når du bruker **Kjør prosjekt**-alternativet for å kjøre et importprosjekt. Du må være forsiktig og bare laste opp filer som har de samme regnearkene som de eksisterende tilordningene på dataenhetene i dataprosjektet. Hvis et regneark ikke finnes i den nylig opplastede filen, vises en feilmelding og importen stoppes. Hvis tilordningen til regnearket må endres for en enhet, må tilordningene i dataprosjektet først oppdateres fra dataprosjektet før du kan bruke filen i **Kjør prosjekt**-opplevelsen.
-

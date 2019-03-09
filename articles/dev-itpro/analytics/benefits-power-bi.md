@@ -1,13 +1,13 @@
 ---
 title: Power BI-innholdet Fordeler
-description: "Dette emnet beskriver Power BI-innholdet Fordeler. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver Power BI-innholdet Fordeler. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,28 +16,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355248"
 ---
-
 # <a name="benefits-power-bi-content"></a>Power BI-innholdet Fordeler
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver Microsoft Power BI-innholdet **Fordeler**. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Fordeler** vises i arbeidsområdet **Fordelsbehandling** hvis du bruker et av følgende produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
-Rapporter som er inkludert i Power BI-innholdet **Fordeler**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
+Rapportene som er inkludert i Power BI-innholdet **Fordeler**, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.
 
 | Rapporter                      | Innhold                                                                                       |
 |-----------------------------|------------------------------------------------------------------------------------------------|
@@ -71,4 +70,3 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Fordeler
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
-

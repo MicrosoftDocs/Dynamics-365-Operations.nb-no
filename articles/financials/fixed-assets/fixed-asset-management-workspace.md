@@ -1,35 +1,34 @@
 ---
-title: "Arbeidsområde for anleggsmiddelbehandling"
-description: "Dette emnet gir informasjon om arbeidsområdet Anleggsmiddelbehandling. Arbeidsområdet viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Det omfatter visning av et sammendrag og en visning for analyse."
+title: Arbeidsområde for anleggsmiddelbehandling
+description: Dette emnet gir informasjon om arbeidsområdet Anleggsmiddelbehandling. Arbeidsområdet viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Det omfatter visning av et sammendrag og en visning for analyse.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 1e8e02bf308b5506aef41d302755911f6a9ce3e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352327"
 ---
-
 # <a name="fixed-asset-management-workspace"></a>Arbeidsområde for anleggsmiddelbehandling
 
 [!include [banner](../includes/banner.md)]
 
-Arbeidsområdet **Anleggsmiddelbehandling** viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Arbeidsområdet inneholder en sammendrag-visning og en analysevisning. Kategorien **Mitt arbeid** viser sammendragsfliser, anleggsmiddeldetaljer og relatert informasjon om anleggsmidler i det gjeldende firmaet. Du kan også legge til analyse i analysedeen av Power BI, direkte i arbeidsområdet. Kategorien **Analytics – alle firmaer** bruker funksjoner i Microsoft Power BI for å vise bilder som er knyttet til anleggsmidler i alle firmaer.
+Arbeidsområdet **Anleggsmiddelbehandling** viser informasjon som er knyttet til anleggsmidler som er angitt i systemet. Arbeidsområdet inneholder en sammendrag-visning og en analysevisning. Kategorien **Mitt arbeid** viser sammendragsfliser, anleggsmiddeldetaljer og relatert informasjon om anleggsmidler i det gjeldende firmaet. Du kan også legge til analyse i analysedelen av Power BI, direkte i arbeidsområdet. Kategorien **Analytics – alle firmaer** bruker funksjoner i Microsoft Power BI for å vise bilder som er knyttet til anleggsmidler i alle firmaer.
 
 ## <a name="my-work"></a>Mitt arbeid
 
@@ -75,4 +74,3 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 | Vurderingskart        | Anleggsmiddeldetaljer |
 
 Hvis du vil vise analyse med data, må du først fornye AssetTransactionMeasure samlet målene på siden **Enhetslager**.
-

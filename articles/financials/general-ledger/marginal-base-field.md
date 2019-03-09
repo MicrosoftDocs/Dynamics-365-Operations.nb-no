@@ -1,13 +1,13 @@
 ---
-title: "Mva-satser basert på feltene grensegrunnlag og beregningsmetoder"
-description: "Dette emnet beskriver hvordan verdiene i feltene Grensegrunnlag og Beregningsmetode fastslår avgiftssats(er) i salgs- og kjøpstransaksjoner."
+title: Mva-satser basert på feltene grensegrunnlag og beregningsmetoder
+description: Dette emnet beskriver hvordan verdiene i feltene Grensegrunnlag og Beregningsmetode fastslår avgiftssats(er) i salgs- og kjøpstransaksjoner.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0128743e608ec56bea2301ac576551065a1ff290
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf0f8f2e3f553ea181e8cc9ab5b712fce64a89d4
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366426"
 ---
-
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Mva-satser basert på feltene grensegrunnlag og beregningsmetoder
 
 [!include [banner](../includes/banner.md)]
@@ -184,7 +183,6 @@ Grensegrunnlag: **Fakturatotal inkl. andre mva-beløp** Beregningsmetode: **Inte
 Det er en spesialavgift på 5,00 for hver lampe. Avgiften blir lagt til nettobeløpet før beregningen av merverdiavgiften. Du kjøper åtte lamper som koster 25,00 per stykk. Nettobeløpet for fakturaen er 200,00. Bruttobeløpet på fakturaen er 200,00 + (8 x 5,00) = 240,00. Mva beregnes på følgende måte: Total merverdiavgift = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Total avgift = 5,00 x 8 = 40,00 Totalt fakturabeløp = 200,00 + 39,00 + 40,00 = 279,00
 
 For mer informasjon, se [Alternativer for beregning av hele beløp og intervall for mva-koder](whole-amount-interval-options-sales-tax-codes.md) og [Beregningsmetoder for merverdiavgift i Opprinnelse-feltet](sales-tax-calculation-methods-origin-field.md).
-
 
 
 

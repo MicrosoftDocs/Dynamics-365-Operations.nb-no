@@ -1,13 +1,13 @@
 ---
-title: "Administrere brukere av leverandørsamarbeid"
-description: "Dette emnet beskriver hvordan du kan be om klargjøring av nye brukere for leverandørsamarbeid og hvordan du legger til nye kontakter for leverandørsamarbeid."
+title: Administrere brukere av leverandørsamarbeid
+description: Dette emnet beskriver hvordan du kan be om klargjøring av nye brukere for leverandørsamarbeid og hvordan du legger til nye kontakter for leverandørsamarbeid.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
-ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356697"
 ---
-
 # <a name="manage-vendor-collaboration-users"></a>Administrere brukere av leverandørsamarbeid
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Når en forespørsel sendes inn, legges den til i listen **Brukerforespørsler f
 Før du kan be om at en ny bruker klargjøres, må vedkommende defineres som en kontakt for én eller flere leverandørkontoer. Slik oppretter du en forespørsel for en ny bruker for leverandørsamarbeid:
 
 1. På siden **Alle kontakter** klikker du **Klargjør leverandørbruker**.
-2. Angi en e-postadresse for brukeren. Denne adressen brukes av brukeren for å logge på Finance and Operations. Hvis e-postadressen tilhører et domene som er registrert som en leier i Microsoft Azure, må e-postadressen være en eksisterende Azure Active Directory-konto (AAD) for at klargjøringsprosessen skal fullføres. Hvis e-postadressen ikke tilhører et domene som er registrert i Microsoft Azure, opprettes en ADD-konto som en del av klargjøringsprosessen, og den nye brukeren mottar en e-postinvitasjon. E-postadresser for forbrukere med domener som @hotmail.com, @gmail.com eller @comcast.net, kan ikke brukes for å registrere en Finance and Operations-bruker.
+2. Angi en e-postadresse for brukeren. Denne adressen brukes av brukeren for å logge på Finance and Operations. Hvis e-postadressen tilhører et domene som er registrert som en leier i Microsoft Azure, må e-postadressen være en eksisterende Azure Active Directory-konto (AAD) for at klargjøringsprosessen skal fullføres. Hvis e-postadressen ikke tilhører et domene som er registrert i Microsoft Azure, opprettes en AAD-konto som en del av klargjøringsprosessen, og den nye brukeren mottar en e-postinvitasjon. E-postadresser for forbrukere med domener som @hotmail.com, @gmail.com eller @comcast.net, kan brukes for å registrere en bruker for Finance and Operations.
 3. Sett alternativet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for alle de juridiske enhetene som brukeren må ha tilgang til.
 4. I delen **Tilordne brukerroller** merker du av for **Tilordne** for sikkerhetsrollene som den nye brukeren skal ha.
 5. Klikk **Send**.
@@ -91,7 +90,6 @@ Slik ber du om at sikkerhetsrollene endres for en bruker:
 2.  Skriv inn en kommentar i feltet **Bestillingsårsak**.
 3.  I delen **Vedlikehold brukerroller** velger du sikkerhetsrollene som du vil tilordne, eller fjerner dem du vil fjerne.
 4.  Klikk **Send**.
-
 
 
 

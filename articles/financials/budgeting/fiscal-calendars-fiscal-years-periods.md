@@ -1,13 +1,13 @@
 ---
-title: "Regnskapskalendere, regnskapsår og perioder"
-description: "Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering."
+title: Regnskapskalendere, regnskapsår og perioder
+description: Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 431d654aaffc27d54fd590dc7d5d2ab6c2313908
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361665"
 ---
-
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskapskalendere, regnskapsår og perioder
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Budsjettsykluser er tidsrommet et budsjett brukes i. Budsjettsykluser kan inklud
 
 ## <a name="maintain-periods-for-your-organization"></a>Vedlikeholde perioder for organisasjonen
 Du kan bruke Finanskalender-siden til å vise detaljene for regnskapskalenderen, regnskapsåret og periodene som brukes i organisasjonen. Du kan også endre statusen for periodene og velge hvilke brukere som kan postere regnskapstransaksjoner til perioder. I begynnelsen av en ny periode vil du for eksempel kanskje at en gruppe brukere skal fullføre posteringene av finanstransaksjoner i den forrige perioden, mens andre grupper bare arbeider i den nye perioden.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Ansette eksisterende ansatte via rekruttering
 description: Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i organisasjonen.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365391"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansette eksisterende ansatte via rekruttering
 
@@ -40,5 +40,4 @@ Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i
 8. Hvis du vil, kan du velge en årsakskode. Eksempel: Omorganisering
 9. Klikk Endre stilling.
     * Du kan også endre kompensasjon på dette tidspunktet. Hvis du ikke tilordner kompensasjon på dette tidspunktet, kan du endre den ved å gå til arbeiderskjemaet, velge kategorien Kompensasjon og velge Fast plan. Når du har valgt Endre stilling, oppdateres statusen for søknaden til Ansatt.  
-
 

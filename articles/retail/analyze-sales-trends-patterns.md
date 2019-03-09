@@ -1,13 +1,13 @@
 ---
-title: "Analysere salgstrender og -mønstre"
-description: "Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 365 for Retail."
+title: Analysere salgstrender og -mønstre
+description: Du kan se nærmere på salgstrender og -mønstre i sanntid i Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelReport, SysReportViewerForm, RetailStoreManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b2a23b6013fd9096457647142a40a6710da6ca88
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358008"
 ---
-
 # <a name="analyze-sales-trends-and-patterns"></a>Analysere salgstrender og -mønstre
 
 [!include [banner](includes/banner.md)]
@@ -44,4 +43,3 @@ Brukerne kan også studere salgstrender og -mønstre etter time på tvers av for
 - Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
 - Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
 - Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter time**
-

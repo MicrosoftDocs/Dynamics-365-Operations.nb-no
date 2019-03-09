@@ -1,13 +1,13 @@
 ---
-title: "Timeregistreringer for prosjekt på en mobilenhet"
-description: "Mine timeregistreringer (optimalisert for mobil) lar ansatte opprette og sende prosjekttimelister for å registrere timene sine på et bestemt prosjekt på en mobil enhet."
+title: Timeregistreringer for prosjekt på en mobilenhet
+description: Mine timeregistreringer (optimalisert for mobil) lar ansatte opprette og sende prosjekttimelister for å registrere timene sine på et bestemt prosjekt på en mobil enhet.
 author: abruer
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
+ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e09433a9bb819cf24ee74443dd7e2d80a2b6b2e
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360952"
 ---
-
 # <a name="project-timesheets-on-a-mobile-device"></a>Timeregistreringer for prosjekt på en mobilenhet
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ Android vil være kompatibel med plattformoppdatering 16, når den blir tilgjeng
 13. Valgfritt: Angi flere timeregistreringslinjer.
 
 14. Når du er ferdig med å angi timeregistreringslinjene, velger du **Arbeidsflyt** \> **Send**-handlingen for å sende inn timeregistreringen til arbeidsflytgodkjenningsprosessen.
-

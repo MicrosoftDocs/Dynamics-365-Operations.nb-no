@@ -1,13 +1,13 @@
---- 
+---
 title: Behandle sortimenter (november 2016)
-description: "Denne fremgangsmåten viser hvordan du oppretter og publiserer et nytt produktsortiment og bruker demonstrasjonsdatafirmaet USRT."
+description: Denne fremgangsmåten viser hvordan du oppretter og publiserer et nytt produktsortiment og bruker demonstrasjonsdatafirmaet USRT.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363666"
 ---
 # <a name="manage-assortments-november-2016"></a>Behandle sortimenter (november 2016)
 
@@ -53,5 +53,4 @@ Denne fremgangsmåten viser hvordan du oppretter og publiserer et nytt produktso
 ## <a name="publish-an-assortment"></a>Publisere et sortiment
 1. Klikk Publiser.
 2. Klikk Ja.
-
 

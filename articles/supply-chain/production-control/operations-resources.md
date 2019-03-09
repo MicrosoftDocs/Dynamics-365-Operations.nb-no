@@ -1,13 +1,13 @@
 ---
 title: Operations-ressurser
-description: "Operasjonsressurser utfører aktivitetene for et prosjekt eller en produksjonsprosess. De kan være av forskjellige typer og kan ha forskjellige funksjoner."
+description: Operasjonsressurser utfører aktivitetene for et prosjekt eller en produksjonsprosess. De kan være av forskjellige typer og kan ha forskjellige funksjoner.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366610"
 ---
-
 # <a name="operations-resources"></a>Operations-ressurser
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Når en ressursgruppe brukes som en lean-arbeidscelle, er kapasiteten for arbeid
 
 ## <a name="costing-resources"></a>Etterkalkuleringsressurser
 Når du definerer en aktivitet, for eksempel en ruteoperasjon eller en prosjekttimeprognose, kan du angi behovet for en bestemt operasjonsressurs eller ressursgruppe. Du kan imidlertid også angi behovet for en operasjonsressurs av en bestemt type, eller en operasjonsressurs som har en bestemt funksjon eller kompetanse. Derfor gjøres ikke den faktiske ressurstildelingen før aktiviteten er planlagt og kapasiteten er reservert. I en ruteoperasjon kan du derfor angi at estimering og stykklisteberegning må være basert på en bestemt operasjonsressurs. Det refereres til denne operasjonsressursen som etterkalkuleringsressursen. Du kan også overføre kostnadskategoriene og operasjonstider fra etterkalkuleringsressursen til aktiviteten. Når operasjonen er planlagt, utføres anslag og stykklisteberegning ved hjel av operasjonsressursen som faktisk er planlagt.
-
 
 
 

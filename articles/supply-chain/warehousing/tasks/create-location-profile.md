@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en lokasjonsprofil
-description: "Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer."
+description: Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8bc7705b7db46af8fbe8bf9e78a878a53249b452
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a4a159b0e849a73efb362ccadb841bd25c323290
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361389"
 ---
 # <a name="create-a-location-profile"></a>Opprette en lokasjonsprofil
 
@@ -41,5 +41,4 @@ Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver ege
 9. Velg Ja i feltet Tillat syklustelling.
 10. Klikk Lagre.
 11. Gå til Lagerstyring > Oppsett > Lager > Lokasjonsprofiler.
-
 

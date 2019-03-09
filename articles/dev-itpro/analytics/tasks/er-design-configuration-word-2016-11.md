@@ -1,13 +1,13 @@
---- 
-title: "Utforme ER-konfigurasjoner for å generere rapporter i Word-format"
-description: "De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapporteringsformat til å generere rapporter som Microsoft Word-filer."
+---
+title: Utforme ER-konfigurasjoner for å generere rapporter i Word-format
+description: De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapporteringsformat til å generere rapporter som Microsoft Word-filer.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362355"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforme ER-konfigurasjoner for å generere rapporter i Word-format
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å generere rapporter som Microsoft-filer. Denne fremgangsmåten kan utføres i firmaet GBSI.
+De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapporteringsformat (ER) til å generere rapporter som Microsoft Word-filer. Denne fremgangsmåten kan utføres i firmaet GBSI.
 
 For å fullføre disse trinnene må du først fullføre trinnene i oppgaveveiledningen "Opprette en ER-konfigurasjon for generering av rapporter i OPENXML-format". På forhånd, må du også laste ned og lagre følgende maler lokalt, for eksempelrapporten:
 
@@ -35,7 +35,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i oppgaveveiled
 - [Bundet mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynamics 365 for Operations, versjon 1611.
+Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynamics 365 for Operations versjon 1611.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Velg den eksisterende ER-rapportkonfigurasjonen
@@ -99,5 +99,4 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynam
 16. Klikk OK.
 17. Klikk OK.
     * Analyser de genererte utdataene. Legg merke til at de opprettede utdataene vises i Word-format og inneholder detaljer for de behandlede betalingene.  
-
 

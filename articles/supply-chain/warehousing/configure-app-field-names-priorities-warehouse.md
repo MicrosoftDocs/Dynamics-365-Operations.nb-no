@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere navn på appfelt i lagerapp"
-description: "Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Finance and Operations."
+title: Konfigurere navn på appfelt i lagerapp
+description: Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d029481d31a0064a193e2cb9eeaf79df28bfa159
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351338"
 ---
-
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere navn på appfelt i lagerapp
 
 [!include [banner](../includes/banner.md)]
@@ -143,8 +142,7 @@ Gjenstående metadata, for eksempel lokasjon, vises ikke på oppgavesiden, men v
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Warehousing](install-configure-warehousing-app.md)
-
+[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager](install-configure-warehousing-app.md)
 
 
 

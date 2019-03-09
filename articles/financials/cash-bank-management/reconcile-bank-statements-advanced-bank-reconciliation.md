@@ -1,13 +1,13 @@
 ---
 title: Avstemme bankkontoutdrag med avansert bankavstemming
-description: Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Dette emnet beskriver avstemmingsprosessen.
+description: Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Dette emnet beskriver avstemmingsprosessen.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364977"
 ---
-
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag med avansert bankavstemming
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
 
 [!include [banner](../includes/banner.md)]
 
-Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Dette emnet beskriver avstemmingsprosessen.  
+Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Dette emnet beskriver avstemmingsprosessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
 -----------------------------------
@@ -94,7 +93,6 @@ Når du har fullført avstemningsprosessen, bør du markere regnearket for avste
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Postere nye transaksjoner som er tilknyttet den valgte avstemmingen
 Bankkontoutdragstransaksjoner du merket som **Ny** på avstemmingsregnearket, posteres på siden **Bankkontoutdrag**. På siden **Bankkontoutdrag** velger du utdrags-ID for å vise utdragsdetaljene. På **Regnskap**-menyen kan du bruke alternativene **Vis distribusjoner** og **Vis regnskap** for å vise detaljene bak de nye transaksjonene og de tilhørende bankpostene. Velg alternativet **Poster** for å postere bankkontoutdragslinjer som er merket som **Ny** i økonomimodulen. Vær oppmerksom på at posteringer bare kan fullføres én gang per bankkontoutdrag.
-
 
 
 

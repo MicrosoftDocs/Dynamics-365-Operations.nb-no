@@ -1,13 +1,13 @@
 ---
 title: Dato avveid gjennomsnitt
-description: "Dato avveid gjennomsnitt er en lagermodell basert på avveid gjennomsnitt-prinsippet, hvor frigivelser fra lageret verdsettes til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden."
+description: Dato avveid gjennomsnitt er en lagermodell basert på avveid gjennomsnitt-prinsippet, hvor frigivelser fra lageret verdsettes til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355409"
 ---
-
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ Lagertransaksjoner som forlater lageret, for eksempel salgsordrer, lagerjournale
 
 Utligninger er lagerlukkingsposteringer som justerer avganger med det avveide gjennomsnittet som gjelder på datoen for lagerlukking. 
 
-**Obs!** Hvis du vil ha mer informasjon om utligninger, kan du se artikkelen om lagerlukking. Eksemplene nedenfor viser virkningene når avveid gjennomsnitt brukes i fem konfigurasjoner:
+**Obs!** Hvis du vil ha mer informasjon om utligninger, kan du se artikkelen om lagerlukking. Eksemplene nedenfor viser virkningene når avveid gjennomsnitt brukes i fem konfigurasjoner:
 
 -   Direkte utligning med dato for avveid gjennomsnitt når alternativet **Ta med fysisk verdi** ikke brukes
 -   Summert utligning med dato for avveid gjennomsnitt når alternativet **Ta med fysisk verdi** ikke brukes
@@ -195,7 +194,6 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 -   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
-
 
 
 

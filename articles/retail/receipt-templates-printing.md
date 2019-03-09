@@ -1,13 +1,13 @@
 ---
 title: Definer og utforme kvitteringsformater
-description: "Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett."
+description: Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357824"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>Definer og utforme kvitteringsformater
 
 [!include [banner](includes/banner.md)]
@@ -55,8 +54,8 @@ Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokum
 1. Klikk på **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Kvitteringsformater**.
 2. På siden **Kvitteringsformat** velger du et skjemaoppsett, og klikk deretter **Utforming**.
 3. Klikk **Kjør** for å installere utformingsverten for detaljhandel.
-4. I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å installere ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.) Fremdriftsindikatoren viser fremdriften for installasjonen.
-5. Når installasjonen er fullført, angir du Microsoft Dynamics 365 for Retail-brukernavnet og passordet, og klikk deretter på **Logg på** for å starte utformingen.
+4. I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å starte installasjonen av ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.) Fremdriftsindikatoren viser fremdriften for installasjonen.
+5. Når installasjonen er fullført, angir du Dynamics 365 for Retail-brukernavnet og -passordet, og deretter klikker du **Logg på** for å starte utformingen.
 6. Når legitimasjonen er validert og utformingen starter, kan du begynne å utforme kvitteringsformatet eller endre et eksisterende format.
 7. Hvis du vil opprette elementene for skjemaet, velger du delen **Hode**, **Linjer** eller **Bunntekst**, og deretter drar du et element fra denne delen til arbeidsområdet. De fleste elementene inneholder variabler som automatisk fylles ut med data fra databasen. Andre elementer, for eksempel **Tekst**, lar deg skrive ut egendefinert tekst på kvitteringen.
 
@@ -83,4 +82,3 @@ Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 > [!NOTE]
 > Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
-

@@ -1,13 +1,13 @@
 ---
 title: Behandling av generell journal
-description: "Dette emnet beskriver funksjoner i Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill."
+description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358445"
 ---
-
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner i Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av generell enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
+Dette emnet beskriver funksjoner i Microsoft Dynamics 365 for Finance and Operations som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.  
 
 ## <a name="journal-names"></a>Journalnavn
 
@@ -97,4 +96,3 @@ Hvis du vil ha mer informasjon, se følgende emner:
 Du finner **Simuler postering** på **Valider**-menyen for de fleste journaler. Når du validerer en journal ved hjelp av **Valider**-funksjonen, tester systemet journalen for bestemte feiltilstander. Hvis du bruker funksjonen **Simuler postering**, vil systemet kjøre alle de samme prosessene som kjøres under postering, uten faktisk å postere journalen. Du kan deretter se gjennom posteringsmeldingene som vises, korrigere eventuelle feil du finner, og deretter klikke **Poster**-menyen for å postere journalen. 
 
 **Simuler postering** er ikke tilgjengelig for partiprosessering. Det finnes imidlertid tilgjengelig kode for å simulere postering i parti, og utviklere kan utvide koden for å legge til denne funksjonaliteten.  
-

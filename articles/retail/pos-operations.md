@@ -1,38 +1,37 @@
 ---
 title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
-description: Dette emnet inneholder informasjon om POS-operasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
+description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353822"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
 [!include [banner](includes/banner.md)]
 
 De fleste handlinger som brukere utfører på salgsstedet (POS) anses som operasjoner. Operasjoner konfigureres og behandles i back office for Microsoft Dynamics 365 for Retail. Mange operasjoner kan legges til for knapper i POS-knappegruppen. Brukere kan deretter velge knappene for å aktivere operasjonene og utføre arbeidet. Andre operasjoner er en del av det primære POS-programmet, og startes fra knappene på skjermen eller som en del av andre arbeidsflyter eller prosesser.
 
-Tabellen nedenfor inneholder informasjon om operasjonene som er tilgjengelige i Retail Modern POS og Cloud POS for Dynamics 365 for Retail. Tabellen angir også hvor i programmet operasjonene kan startes, og om de er tilgjengelige når POS er i frakoblet modus.
+Tabellen nedenfor gir informasjon om operasjonene som er tilgjengelige i Retail Modern POS og Cloud POS for Dynamics 365 for Retail. Tabellen angir også hvor i programmet operasjonene kan startes, og om de er tilgjengelige når POS er i frakoblet modus.
 
 Enkelte operasjoner er ikke tilgjengelige i Retail Modern POS eller Cloud POS for Dynamics 365 for Retail. Noen av disse operasjonene kan være landsspesifikke operasjoner som krever ekstra tillegg og konfigurasjon. Andre er funksjoner fra Microsoft Dynamics AX 2012 som ikke støttes for øyeblikket.
 
@@ -199,4 +198,3 @@ Følgende kolonner angir hvor operasjonene kan startes:
 § Når salgsstedet er frakoblet, kan bare transaksjoner i gjeldende frakoblede database tilbakekalles for retur.
 
 \*\* Når salgsstedet er frakoblet, kan bare transaksjoner i gjeldende frakoblede kanaldatabase vises i journalen.
-

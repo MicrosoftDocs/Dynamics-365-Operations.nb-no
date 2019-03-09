@@ -1,13 +1,13 @@
 ---
-title: "Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører"
+title: Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 description: Dette emnet inneholder informasjon om blandet modus-planlegging.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358238"
 ---
-
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,6 @@ For arbeid som er uavhengig av en policy for forsyning, trenger du ikke endre in
 
 ## <a name="process-manufacturing--the-production-type"></a>Prosessproduksjon – Produksjonstypen
 Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel**, **koprodukt**, **biprodukt** eller **planleggingselement**. Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
-
 
 
 

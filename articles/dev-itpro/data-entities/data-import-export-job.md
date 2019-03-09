@@ -1,13 +1,13 @@
 ---
 title: Dataimport- og -eksportjobber
-description: "Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber."
+description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360216"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjobber
 
 [!include [banner](../includes/banner.md)]
 
-For å opprette og administrere dataimport- og -eksportjobber i Microsoft Dynamics 365 for Finance and Operations, kan du bruke arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
+For å opprette og administrere dataimport- og -eksportjobber i Microsoft Dynamics 365 for Finance and Operations, bruker du arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 
 > [!NOTE]
 > Dette emnet forutsetter at du er kjent med [dataenheter](data-entities.md).
@@ -158,4 +157,3 @@ Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjo
 - **Dataprosjekter** – Hvis kun ett dataprosjekt er valgt, vil alle oppføringer for alle enheter på tvers av jobber for valgte dataprosjekter slettes.
 
 Du kan også kombinere alternativene for å ytterligere begrense oppføringssettet som er slettet.
-

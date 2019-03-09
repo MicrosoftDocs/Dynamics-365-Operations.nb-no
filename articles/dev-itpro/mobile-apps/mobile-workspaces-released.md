@@ -1,13 +1,13 @@
 ---
-title: "Tilgjengelige mobile arbeidsområder"
-description: "Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk."
+title: Tilgjengelige mobile arbeidsområder
+description: Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk.
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354972"
 ---
-
 # <a name="available-mobile-workspaces"></a>Tilgjengelige mobile arbeidsområder
 
 [!include [banner](../includes/banner.md)]
@@ -30,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med mobilappen Microsoft Dynamics 365 for enhetlig drift.
 
 > [!NOTE]
-> Mobilappen var tidligere kalt *Microsoft Dynamics 365 for Finance and operations*.
+> Mobilappen ble tidligere kalt *Microsoft Dynamics 365 for Finance and Operations*.
 
 | Mobilt arbeidsområde     | beskrivelse   | Tilgjengelighet   |
 |----------------------|---------------|--------------|
@@ -44,5 +43,4 @@ Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med m
 | [Lagerbeholdning ](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få innsikt i reservert og tilgjengelig beholdning.                                                                                                    |   2017. januar       |
 | [Salgsordrer](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde deg oppdatert om salgsordrene.                                                                                                                          |  2017. januar                  |
 | [Leverandørsamarbeid](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverandører kan holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter. |2017. januar    |
-
 

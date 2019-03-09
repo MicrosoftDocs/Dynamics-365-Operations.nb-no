@@ -5,9 +5,9 @@ author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 1e3e8ca7356001d113c676b25bd27f890ef1d650
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: 2afdc11b428ffe5d2ca0f65d040507e89e0b8c02
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371354"
 ---
-
 # <a name="payment-slip-report-for-europe"></a>Betalingsseddelrapport for Europa
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Når du har satt opp formatet for betalingsseddelvedlegg for salgsfakturaer, fri
 2.  Opprett en ny kunde, eller velg en eksisterende kunde.
 3.  På hurtigfanen **Faktura og levering** i feltene **På en kundefaktura**, **På en fritekstfaktura**, **På en rentenota**, **På en purring**, **På en prosjektfaktura** og **På et kontoutdrag**, velger du formatet for betalingsseddelvedlegg som skal følge dokumenter for hver type som sendes til den valgte kunden.
 4.  Lukk skjemaet for å lagre endringene.
-
 
 
 

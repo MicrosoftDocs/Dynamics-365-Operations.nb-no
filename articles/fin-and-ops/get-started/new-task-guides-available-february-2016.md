@@ -5,9 +5,9 @@ author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366449"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-bibliotekene per februar 2016. Biblioteker som ble publisert, inkluderer (februar 2016) APQC Unified-bibliotek for Microsoft Dynamics AX og (februar 2016) Komme i gang.
 
-## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (februar 2016) APQC Unified Library for Microsoft Dynamics AX
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (februar 2016) APQC Unified-biblioteket for Microsoft Dynamics AX
 
 (Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics AX 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics AX. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
 
@@ -647,4 +646,3 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
-
