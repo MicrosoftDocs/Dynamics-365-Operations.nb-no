@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en operasjonsressurs
-description: "En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess."
+description: En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess.
 author: sorenva
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,68 +17,67 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f9d8f13e29ea813eb9721ddca795b67837e2aa5e
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350073"
 ---
-# <a name="create-an-operations-resource"></a><span data-ttu-id="b5efe-103">Opprette en operasjonsressurs</span><span class="sxs-lookup"><span data-stu-id="b5efe-103">Create an operations resource</span></span>
+# <a name="create-an-operations-resource"></a><span data-ttu-id="15146-103">Opprette en operasjonsressurs</span><span class="sxs-lookup"><span data-stu-id="15146-103">Create an operations resource</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b5efe-104">En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess.</span><span class="sxs-lookup"><span data-stu-id="b5efe-104">An operations resource performs the activities of a project or a production process.</span></span> <span data-ttu-id="b5efe-105">Denne prosedyren viser hvordan du definerer en operasjonsressurs.</span><span class="sxs-lookup"><span data-stu-id="b5efe-105">This procedures shows you how to define an operations resource.</span></span> <span data-ttu-id="b5efe-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="b5efe-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="15146-104">En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess.</span><span class="sxs-lookup"><span data-stu-id="15146-104">An operations resource performs the activities of a project or a production process.</span></span> <span data-ttu-id="15146-105">Denne prosedyren viser hvordan du definerer en operasjonsressurs.</span><span class="sxs-lookup"><span data-stu-id="15146-105">This procedures shows you how to define an operations resource.</span></span> <span data-ttu-id="15146-106">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="15146-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="b5efe-107">Gå til Ressurser.</span><span class="sxs-lookup"><span data-stu-id="b5efe-107">Go to Resources.</span></span>
-2. <span data-ttu-id="b5efe-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b5efe-108">Click New.</span></span>
-3. <span data-ttu-id="b5efe-109">Skriv inn en verdi i Ressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-109">In the Resource field, type a value.</span></span>
-4. <span data-ttu-id="b5efe-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="b5efe-110">In the Description field, type a value.</span></span>
+1. <span data-ttu-id="15146-107">Gå til Ressurser.</span><span class="sxs-lookup"><span data-stu-id="15146-107">Go to Resources.</span></span>
+2. <span data-ttu-id="15146-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="15146-108">Click New.</span></span>
+3. <span data-ttu-id="15146-109">Skriv inn en verdi i Ressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-109">In the Resource field, type a value.</span></span>
+4. <span data-ttu-id="15146-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="15146-110">In the Description field, type a value.</span></span>
 
-## <a name="define-capacity-and-consumption-parameters"></a><span data-ttu-id="b5efe-111">Definere parametere for kapasitet og forbruk</span><span class="sxs-lookup"><span data-stu-id="b5efe-111">Define capacity and consumption parameters</span></span>
-1. <span data-ttu-id="b5efe-112">Utvid delen Operasjon.</span><span class="sxs-lookup"><span data-stu-id="b5efe-112">Expand the Operation section.</span></span>
-2. <span data-ttu-id="b5efe-113">Angi et nummer i Svinnprosent-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-113">In the Scrap percentage field, enter a number.</span></span>
-3. <span data-ttu-id="b5efe-114">Angi eller velg en verdi i Oppsettkategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-114">In the Setup category field, enter or select a value.</span></span>
-    * <span data-ttu-id="b5efe-115">Angi kostkategorien som definerer hvordan du kan ta hensyn til kostnadene for oppsett.</span><span class="sxs-lookup"><span data-stu-id="b5efe-115">Specify the cost category that defines how to account for the cost of setup.</span></span>  
-4. <span data-ttu-id="b5efe-116">Angi eller velg en verdi i Kjøretid-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-116">In the Run time category field, enter or select a value.</span></span>
-    * <span data-ttu-id="b5efe-117">Angi kostkategorien som definerer hvordan du kan ta hensyn til kostnadene for operasjonstid.</span><span class="sxs-lookup"><span data-stu-id="b5efe-117">Specify the cost category that defines how to account for the cost of run time.</span></span>  
-5. <span data-ttu-id="b5efe-118">Angi eller velg en verdi i Antallskategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-118">In the Quantity category field, enter or select a value.</span></span>
-    * <span data-ttu-id="b5efe-119">Angi kostkategorien som definerer hvordan du kan ta hensyn til ressurskostnadene basert på produsert antall.</span><span class="sxs-lookup"><span data-stu-id="b5efe-119">Specify the cost category that defines how to account for the resource cost based on the output quantity.</span></span>  
-6. <span data-ttu-id="b5efe-120">Velg et alternativ i Kapasitetsenhet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-120">In the Capacity unit field, select an option.</span></span>
-    * <span data-ttu-id="b5efe-121">Angi enheten som skal brukes til å uttrykke kapasitet for operasjonsressursen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-121">Specify the unit in which to express the capacity of the operations resource.</span></span>  
-7. <span data-ttu-id="b5efe-122">Angi et tall i Kapasitet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-122">In the Capacity field, enter a number.</span></span>
-8. <span data-ttu-id="b5efe-123">Angi et tall i Effektivitetsprosent-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-123">In the Efficiency percentage field, enter a number.</span></span>
-    * <span data-ttu-id="b5efe-124">Angi effektiviteten som du forventer fra operasjonsressursen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-124">Specify the efficiency that you expect from the operations resource.</span></span> <span data-ttu-id="b5efe-125">Effektivitetsprosenten justerer produksjonen for operasjonsressursen, og påvirker tiden som er reservert for ressursen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-125">The efficiency percentage adjusts the throughput of the operations resource and affects the time that is reserved for the resource.</span></span>  
-9. <span data-ttu-id="b5efe-126">Angi et tall i prosentfeltet for grovplanlegging.</span><span class="sxs-lookup"><span data-stu-id="b5efe-126">In the Operations scheduling percentage field, enter a number.</span></span>
-    * <span data-ttu-id="b5efe-127">Angi maksimumsprosenten av kapasiteten til operasjonsressursen du vil bruke til grovplanlegging.</span><span class="sxs-lookup"><span data-stu-id="b5efe-127">Specify the maximum percentage of capacity of the operations resource that you want to use in operations scheduling.</span></span>  
-10. <span data-ttu-id="b5efe-128">Velg Ja i Begrenset kapasitet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-128">Select Yes in the Finite capacity field.</span></span>
-    * <span data-ttu-id="b5efe-129">Sett dette alternativet til Ja hvis operasjonsressursen skal planlegges på grunnlag av faktisk kapasitet som er tilgjengelig, og hvis eksisterende kapasitetsreservasjoner skal anses.</span><span class="sxs-lookup"><span data-stu-id="b5efe-129">Set this option to Yes if the operations resource should be scheduled based on the actual capacity that is available, and if existing capacity reservations should be considered.</span></span> <span data-ttu-id="b5efe-130">Hvis dette alternativet er satt til Nei, antas operasjonsressursen å ha ubegrenset kapasitet, og ressursen kan være overbestilt.</span><span class="sxs-lookup"><span data-stu-id="b5efe-130">If this option is set to No, the operations resource is assumed to have infinite capacity, and the resource might be overbooked.</span></span>  
-11. <span data-ttu-id="b5efe-131">Velg Ja i Flaskehalsressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-131">Select Yes in the Bottleneck resource field.</span></span>
+## <a name="define-capacity-and-consumption-parameters"></a><span data-ttu-id="15146-111">Definere parametere for kapasitet og forbruk</span><span class="sxs-lookup"><span data-stu-id="15146-111">Define capacity and consumption parameters</span></span>
+1. <span data-ttu-id="15146-112">Utvid delen Operasjon.</span><span class="sxs-lookup"><span data-stu-id="15146-112">Expand the Operation section.</span></span>
+2. <span data-ttu-id="15146-113">Angi et nummer i Svinnprosent-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-113">In the Scrap percentage field, enter a number.</span></span>
+3. <span data-ttu-id="15146-114">Angi eller velg en verdi i Oppsettkategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-114">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="15146-115">Angi kostkategorien som definerer hvordan du kan ta hensyn til kostnadene for oppsett.</span><span class="sxs-lookup"><span data-stu-id="15146-115">Specify the cost category that defines how to account for the cost of setup.</span></span>  
+4. <span data-ttu-id="15146-116">Angi eller velg en verdi i Kjøretid-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-116">In the Run time category field, enter or select a value.</span></span>
+    * <span data-ttu-id="15146-117">Angi kostkategorien som definerer hvordan du kan ta hensyn til kostnadene for operasjonstid.</span><span class="sxs-lookup"><span data-stu-id="15146-117">Specify the cost category that defines how to account for the cost of run time.</span></span>  
+5. <span data-ttu-id="15146-118">Angi eller velg en verdi i Antallskategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-118">In the Quantity category field, enter or select a value.</span></span>
+    * <span data-ttu-id="15146-119">Angi kostkategorien som definerer hvordan du kan ta hensyn til ressurskostnadene basert på produsert antall.</span><span class="sxs-lookup"><span data-stu-id="15146-119">Specify the cost category that defines how to account for the resource cost based on the output quantity.</span></span>  
+6. <span data-ttu-id="15146-120">Velg et alternativ i Kapasitetsenhet-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-120">In the Capacity unit field, select an option.</span></span>
+    * <span data-ttu-id="15146-121">Angi enheten som skal brukes til å uttrykke kapasitet for operasjonsressursen.</span><span class="sxs-lookup"><span data-stu-id="15146-121">Specify the unit in which to express the capacity of the operations resource.</span></span>  
+7. <span data-ttu-id="15146-122">Angi et tall i Kapasitet-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-122">In the Capacity field, enter a number.</span></span>
+8. <span data-ttu-id="15146-123">Angi et tall i Effektivitetsprosent-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-123">In the Efficiency percentage field, enter a number.</span></span>
+    * <span data-ttu-id="15146-124">Angi effektiviteten som du forventer fra operasjonsressursen.</span><span class="sxs-lookup"><span data-stu-id="15146-124">Specify the efficiency that you expect from the operations resource.</span></span> <span data-ttu-id="15146-125">Effektivitetsprosenten justerer produksjonen for operasjonsressursen, og påvirker tiden som er reservert for ressursen.</span><span class="sxs-lookup"><span data-stu-id="15146-125">The efficiency percentage adjusts the throughput of the operations resource and affects the time that is reserved for the resource.</span></span>  
+9. <span data-ttu-id="15146-126">Angi et tall i prosentfeltet for grovplanlegging.</span><span class="sxs-lookup"><span data-stu-id="15146-126">In the Operations scheduling percentage field, enter a number.</span></span>
+    * <span data-ttu-id="15146-127">Angi maksimumsprosenten av kapasiteten til operasjonsressursen du vil bruke til grovplanlegging.</span><span class="sxs-lookup"><span data-stu-id="15146-127">Specify the maximum percentage of capacity of the operations resource that you want to use in operations scheduling.</span></span>  
+10. <span data-ttu-id="15146-128">Velg Ja i Begrenset kapasitet-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-128">Select Yes in the Finite capacity field.</span></span>
+    * <span data-ttu-id="15146-129">Sett dette alternativet til Ja hvis operasjonsressursen skal planlegges på grunnlag av faktisk kapasitet som er tilgjengelig, og hvis eksisterende kapasitetsreservasjoner skal anses.</span><span class="sxs-lookup"><span data-stu-id="15146-129">Set this option to Yes if the operations resource should be scheduled based on the actual capacity that is available, and if existing capacity reservations should be considered.</span></span> <span data-ttu-id="15146-130">Hvis dette alternativet er satt til Nei, antas operasjonsressursen å ha ubegrenset kapasitet, og ressursen kan være overbestilt.</span><span class="sxs-lookup"><span data-stu-id="15146-130">If this option is set to No, the operations resource is assumed to have infinite capacity, and the resource might be overbooked.</span></span>  
+11. <span data-ttu-id="15146-131">Velg Ja i Flaskehalsressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-131">Select Yes in the Bottleneck resource field.</span></span>
 
-## <a name="define-working-times"></a><span data-ttu-id="b5efe-132">Definere arbeidstider</span><span class="sxs-lookup"><span data-stu-id="b5efe-132">Define working times</span></span>
-1. <span data-ttu-id="b5efe-133">Utvid seksjonen Kalendere.</span><span class="sxs-lookup"><span data-stu-id="b5efe-133">Expand the Calendars section.</span></span>
-2. <span data-ttu-id="b5efe-134">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b5efe-134">Click Add.</span></span>
-3. <span data-ttu-id="b5efe-135">Angi eller velg en verdi i Kalender-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-135">In the Calendar field, enter or select a value.</span></span>
-    * <span data-ttu-id="b5efe-136">Angi arbeidstidskalenderen som definerer kapasiteten (i timer) for ressursen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-136">Specify the working time calendar that defines the capacity (in hours) of the resource.</span></span>  
-4. <span data-ttu-id="b5efe-137">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-137">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="b5efe-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b5efe-138">In the list, click the link in the selected row.</span></span>
+## <a name="define-working-times"></a><span data-ttu-id="15146-132">Definere arbeidstider</span><span class="sxs-lookup"><span data-stu-id="15146-132">Define working times</span></span>
+1. <span data-ttu-id="15146-133">Utvid seksjonen Kalendere.</span><span class="sxs-lookup"><span data-stu-id="15146-133">Expand the Calendars section.</span></span>
+2. <span data-ttu-id="15146-134">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="15146-134">Click Add.</span></span>
+3. <span data-ttu-id="15146-135">Angi eller velg en verdi i Kalender-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-135">In the Calendar field, enter or select a value.</span></span>
+    * <span data-ttu-id="15146-136">Angi arbeidstidskalenderen som definerer kapasiteten (i timer) for ressursen.</span><span class="sxs-lookup"><span data-stu-id="15146-136">Specify the working time calendar that defines the capacity (in hours) of the resource.</span></span>  
+4. <span data-ttu-id="15146-137">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="15146-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="15146-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="15146-138">In the list, click the link in the selected row.</span></span>
 
-## <a name="define-resource-capabilities"></a><span data-ttu-id="b5efe-139">Definere ressursfunksjoner</span><span class="sxs-lookup"><span data-stu-id="b5efe-139">Define resource capabilities</span></span>
-1. <span data-ttu-id="b5efe-140">Vis delen Muligheter.</span><span class="sxs-lookup"><span data-stu-id="b5efe-140">Expand the Capabilities section.</span></span>
-2. <span data-ttu-id="b5efe-141">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b5efe-141">Click Add.</span></span>
-    * <span data-ttu-id="b5efe-142">En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-142">A capability is the ability of an operations resource to perform a particular activity.</span></span> <span data-ttu-id="b5efe-143">Planleggingsmotoren tildeler ressurser ved å sammenligne ressurskravene for hver aktivitet med egenskapene til de tilgjengelige operasjonsressursene.</span><span class="sxs-lookup"><span data-stu-id="b5efe-143">The scheduling engine allocates resources by matching the resource requirements of each activity to the capabilities of the available operations resources.</span></span>  
-3. <span data-ttu-id="b5efe-144">Angi eller velg en verdi i Funksjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-144">In the Capability field, enter or select a value.</span></span>
-4. <span data-ttu-id="b5efe-145">Angi et nummer i Nivå-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-145">In the Level field, enter a number.</span></span>
-    * <span data-ttu-id="b5efe-146">Angi ferdighetsnivået som ressursen behandler muligheten med.</span><span class="sxs-lookup"><span data-stu-id="b5efe-146">Specify the level of proficiency by which the resource processes the capability.</span></span>  
-5. <span data-ttu-id="b5efe-147">Angi et tall i Prioritet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-147">In the Priority field, enter a number.</span></span>
-    * <span data-ttu-id="b5efe-148">Angi prioriteten for operasjonsressursen med hensyn til kapasiteten.</span><span class="sxs-lookup"><span data-stu-id="b5efe-148">Specify the priority of the operations resource with respect to the capability.</span></span> <span data-ttu-id="b5efe-149">Når du planlegger etter prioritet, velges først operasjonsressursen med den høyeste prioriteten (lavest numerisk verdi).</span><span class="sxs-lookup"><span data-stu-id="b5efe-149">When scheduling by priority, the operations resource with the highest priority (lowest numeric value) is selected first.</span></span>  
+## <a name="define-resource-capabilities"></a><span data-ttu-id="15146-139">Definere ressursfunksjoner</span><span class="sxs-lookup"><span data-stu-id="15146-139">Define resource capabilities</span></span>
+1. <span data-ttu-id="15146-140">Vis delen Muligheter.</span><span class="sxs-lookup"><span data-stu-id="15146-140">Expand the Capabilities section.</span></span>
+2. <span data-ttu-id="15146-141">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="15146-141">Click Add.</span></span>
+    * <span data-ttu-id="15146-142">En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet.</span><span class="sxs-lookup"><span data-stu-id="15146-142">A capability is the ability of an operations resource to perform a particular activity.</span></span> <span data-ttu-id="15146-143">Planleggingsmotoren tildeler ressurser ved å sammenligne ressurskravene for hver aktivitet med egenskapene til de tilgjengelige operasjonsressursene.</span><span class="sxs-lookup"><span data-stu-id="15146-143">The scheduling engine allocates resources by matching the resource requirements of each activity to the capabilities of the available operations resources.</span></span>  
+3. <span data-ttu-id="15146-144">Angi eller velg en verdi i Funksjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-144">In the Capability field, enter or select a value.</span></span>
+4. <span data-ttu-id="15146-145">Angi et nummer i Nivå-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-145">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="15146-146">Angi ferdighetsnivået som ressursen behandler muligheten med.</span><span class="sxs-lookup"><span data-stu-id="15146-146">Specify the level of proficiency by which the resource processes the capability.</span></span>  
+5. <span data-ttu-id="15146-147">Angi et tall i Prioritet-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-147">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="15146-148">Angi prioriteten for operasjonsressursen med hensyn til kapasiteten.</span><span class="sxs-lookup"><span data-stu-id="15146-148">Specify the priority of the operations resource with respect to the capability.</span></span> <span data-ttu-id="15146-149">Når du planlegger etter prioritet, velges først operasjonsressursen med den høyeste prioriteten (lavest numerisk verdi).</span><span class="sxs-lookup"><span data-stu-id="15146-149">When scheduling by priority, the operations resource with the highest priority (lowest numeric value) is selected first.</span></span>  
 
-## <a name="assign-resource-to-resource-group"></a><span data-ttu-id="b5efe-150">Tilordne ressurs til ressursgruppe</span><span class="sxs-lookup"><span data-stu-id="b5efe-150">Assign resource to resource group</span></span>
-1. <span data-ttu-id="b5efe-151">Utvid seksjonen Ressursgrupper.</span><span class="sxs-lookup"><span data-stu-id="b5efe-151">Expand the Resource groups section.</span></span>
-2. <span data-ttu-id="b5efe-152">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b5efe-152">Click Add.</span></span>
-    * <span data-ttu-id="b5efe-153">Ressursgruppen definerer området, produksjonsenheten og lagerkonteksten for operasjonsressurser.</span><span class="sxs-lookup"><span data-stu-id="b5efe-153">The resource group defines the site, production unit, and warehouse context for operations resources.</span></span> <span data-ttu-id="b5efe-154">Operasjonsressursen kan bare planlegges når tilordnet til en ressursgruppe, og bare på området der ressursgruppen finnes.</span><span class="sxs-lookup"><span data-stu-id="b5efe-154">The operations resource can only be scheduled when assigned to a resource group, and only on the site where the resource group is located.</span></span>  
-3. <span data-ttu-id="b5efe-155">Angi eller velg en verdi i Ressursgruppe-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-155">In the Resource group field, enter or select a value.</span></span>
-4. <span data-ttu-id="b5efe-156">Angi eller velg en verdi i Innleveringssted-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5efe-156">In the Input location field, enter or select a value.</span></span>
-    * <span data-ttu-id="b5efe-157">Angi lagerlokasjonen der operasjonsressursen forbruker materialer.</span><span class="sxs-lookup"><span data-stu-id="b5efe-157">Specify the warehouse location from where the operations resource is consuming materials.</span></span>  
-
+## <a name="assign-resource-to-resource-group"></a><span data-ttu-id="15146-150">Tilordne ressurs til ressursgruppe</span><span class="sxs-lookup"><span data-stu-id="15146-150">Assign resource to resource group</span></span>
+1. <span data-ttu-id="15146-151">Utvid seksjonen Ressursgrupper.</span><span class="sxs-lookup"><span data-stu-id="15146-151">Expand the Resource groups section.</span></span>
+2. <span data-ttu-id="15146-152">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="15146-152">Click Add.</span></span>
+    * <span data-ttu-id="15146-153">Ressursgruppen definerer området, produksjonsenheten og lagerkonteksten for operasjonsressurser.</span><span class="sxs-lookup"><span data-stu-id="15146-153">The resource group defines the site, production unit, and warehouse context for operations resources.</span></span> <span data-ttu-id="15146-154">Operasjonsressursen kan bare planlegges når tilordnet til en ressursgruppe, og bare på området der ressursgruppen finnes.</span><span class="sxs-lookup"><span data-stu-id="15146-154">The operations resource can only be scheduled when assigned to a resource group, and only on the site where the resource group is located.</span></span>  
+3. <span data-ttu-id="15146-155">Angi eller velg en verdi i Ressursgruppe-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-155">In the Resource group field, enter or select a value.</span></span>
+4. <span data-ttu-id="15146-156">Angi eller velg en verdi i Innleveringssted-feltet.</span><span class="sxs-lookup"><span data-stu-id="15146-156">In the Input location field, enter or select a value.</span></span>
+    * <span data-ttu-id="15146-157">Angi lagerlokasjonen der operasjonsressursen forbruker materialer.</span><span class="sxs-lookup"><span data-stu-id="15146-157">Specify the warehouse location from where the operations resource is consuming materials.</span></span>  
 

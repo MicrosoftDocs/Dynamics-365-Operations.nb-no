@@ -1,13 +1,13 @@
---- 
+---
 title: ER Tilordningen datamodell til valgte datakilder
-description: "De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne en elektronisk rapportering (ER)-datamodell til valgte Dynamics 365 for Finance and Operations, Enterprise Edition-datakilder."
+description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne en elektronisk rapportering (ER)-datamodell til valgte Dynamics 365 for Finance and Operations, Enterprise Edition-datakilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
 ms.reviewer: kfend
@@ -16,135 +16,134 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 249bf3f3806ed43eccf39086bdf9697a3e879c27
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331558"
 ---
-# <a name="er-map-data-model-to-selected-data-sources"></a><span data-ttu-id="93411-103">ER Tilordningen datamodell til valgte datakilder</span><span class="sxs-lookup"><span data-stu-id="93411-103">ER Map data model to selected data sources</span></span>
+# <a name="er-map-data-model-to-selected-data-sources"></a><span data-ttu-id="666e6-103">ER Tilordningen datamodell til valgte datakilder</span><span class="sxs-lookup"><span data-stu-id="666e6-103">ER Map data model to selected data sources</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="93411-104">De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne en elektronisk rapportering (ER)-datamodell til valgte Dynamics 365 for Finance and Operations, Enterprise Edition-datakilder.</span><span class="sxs-lookup"><span data-stu-id="93411-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition data sources.</span></span> <span data-ttu-id="93411-105">Denne modelltilordningen brukes senere som datakilde i en formatkonfigurasjon som skal brukes til å administrere elektroniske betalingsdokumenter.</span><span class="sxs-lookup"><span data-stu-id="93411-105">This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents.</span></span> <span data-ttu-id="93411-106">I dette eksemplet tilordner du en datamodell for eksempelfirmaet Litware, Inc. til datakilder.</span><span class="sxs-lookup"><span data-stu-id="93411-106">In this example, you map a data model for sample company, Litware, Inc. to data sources.</span></span> <span data-ttu-id="93411-107">Når du skal fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten Velg datakildene for tilordning av modell.</span><span class="sxs-lookup"><span data-stu-id="93411-107">To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.</span></span>
+<span data-ttu-id="666e6-104">De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan tilordne en elektronisk rapportering (ER)-datamodell til valgte Dynamics 365 for Finance and Operations, Enterprise Edition-datakilder.</span><span class="sxs-lookup"><span data-stu-id="666e6-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition data sources.</span></span> <span data-ttu-id="666e6-105">Denne modelltilordningen brukes senere som datakilde i en formatkonfigurasjon som skal brukes til å administrere elektroniske betalingsdokumenter.</span><span class="sxs-lookup"><span data-stu-id="666e6-105">This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents.</span></span> <span data-ttu-id="666e6-106">I dette eksemplet tilordner du en datamodell for eksempelfirmaet Litware, Inc. til datakilder.</span><span class="sxs-lookup"><span data-stu-id="666e6-106">In this example, you map a data model for sample company, Litware, Inc. to data sources.</span></span> <span data-ttu-id="666e6-107">Når du skal fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten Velg datakildene for tilordning av modell.</span><span class="sxs-lookup"><span data-stu-id="666e6-107">To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.</span></span>
 
 
-## <a name="open-er-configurations-tree"></a><span data-ttu-id="93411-108">Åpne ER-konfigurasjonstreet</span><span class="sxs-lookup"><span data-stu-id="93411-108">Open ER configurations tree</span></span>
-1. <span data-ttu-id="93411-109">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="93411-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="93411-110">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="93411-110">Click Configurations.</span></span>
+## <a name="open-er-configurations-tree"></a><span data-ttu-id="666e6-108">Åpne ER-konfigurasjonstreet</span><span class="sxs-lookup"><span data-stu-id="666e6-108">Open ER configurations tree</span></span>
+1. <span data-ttu-id="666e6-109">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="666e6-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="666e6-110">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="666e6-110">Click Configurations.</span></span>
 
-## <a name="select-created-model-mapping"></a><span data-ttu-id="93411-111">Velg opprettet modelltilordning</span><span class="sxs-lookup"><span data-stu-id="93411-111">Select created model mapping</span></span>
-1. <span data-ttu-id="93411-112">Velg Betalinger (forenklet model) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-112">In the tree, select 'Payments (simplified model)'.</span></span>
-    * <span data-ttu-id="93411-113">Kontroller at modellkonfigurasjonen Betalinger (forenklet modell) er opprettet på forhånd.</span><span class="sxs-lookup"><span data-stu-id="93411-113">Make sure that the model configuration “Payments (simplified model)” has been created in advance.</span></span> <span data-ttu-id="93411-114">Ellers stopper du nå og går tilbake etter at du har fullført oppgaveveiledningen Opprette en ny konfigurasjon med datamodellen for det valgte domenet.</span><span class="sxs-lookup"><span data-stu-id="93411-114">Otherwise, stop now and return after completion of the task guide ‘Create a new configuration with data model of the selected domain’.</span></span>  
-2. <span data-ttu-id="93411-115">Velg Modellutforming.</span><span class="sxs-lookup"><span data-stu-id="93411-115">Click Model designer.</span></span>
-3. <span data-ttu-id="93411-116">Klikk Tilordne modell til datakilde.</span><span class="sxs-lookup"><span data-stu-id="93411-116">Click Map model to datasource.</span></span>
-4. <span data-ttu-id="93411-117">Velg posten Tilordning for kredittoverføring.</span><span class="sxs-lookup"><span data-stu-id="93411-117">Select the 'CT mapping' record.</span></span>
-    * <span data-ttu-id="93411-118">Tilordning for kredittoverføring</span><span class="sxs-lookup"><span data-stu-id="93411-118">CT mapping</span></span>  
+## <a name="select-created-model-mapping"></a><span data-ttu-id="666e6-111">Velg opprettet modelltilordning</span><span class="sxs-lookup"><span data-stu-id="666e6-111">Select created model mapping</span></span>
+1. <span data-ttu-id="666e6-112">Velg Betalinger (forenklet model) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-112">In the tree, select 'Payments (simplified model)'.</span></span>
+    * <span data-ttu-id="666e6-113">Kontroller at modellkonfigurasjonen Betalinger (forenklet modell) er opprettet på forhånd.</span><span class="sxs-lookup"><span data-stu-id="666e6-113">Make sure that the model configuration “Payments (simplified model)” has been created in advance.</span></span> <span data-ttu-id="666e6-114">Ellers stopper du nå og går tilbake etter at du har fullført oppgaveveiledningen Opprette en ny konfigurasjon med datamodellen for det valgte domenet.</span><span class="sxs-lookup"><span data-stu-id="666e6-114">Otherwise, stop now and return after completion of the task guide ‘Create a new configuration with data model of the selected domain’.</span></span>  
+2. <span data-ttu-id="666e6-115">Velg Modellutforming.</span><span class="sxs-lookup"><span data-stu-id="666e6-115">Click Model designer.</span></span>
+3. <span data-ttu-id="666e6-116">Klikk Tilordne modell til datakilde.</span><span class="sxs-lookup"><span data-stu-id="666e6-116">Click Map model to datasource.</span></span>
+4. <span data-ttu-id="666e6-117">Velg posten Tilordning for kredittoverføring.</span><span class="sxs-lookup"><span data-stu-id="666e6-117">Select the 'CT mapping' record.</span></span>
+    * <span data-ttu-id="666e6-118">Tilordning for kredittoverføring</span><span class="sxs-lookup"><span data-stu-id="666e6-118">CT mapping</span></span>  
 
-## <a name="bind-created-data-sources-to-data-model-elements"></a><span data-ttu-id="93411-119">Bind opprettede datakilder til datamodellelementer</span><span class="sxs-lookup"><span data-stu-id="93411-119">Bind created data sources to data model elements</span></span>
-1. <span data-ttu-id="93411-120">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="93411-120">Click Designer.</span></span>
-2. <span data-ttu-id="93411-121">I konsolltreet velger du Dato og klokkeslett for behandling(ProcessingDateTime).</span><span class="sxs-lookup"><span data-stu-id="93411-121">In the tree, select 'Processing date & time(ProcessingDateTime)'.</span></span>
-3. <span data-ttu-id="93411-122">I konsolltreet velger du Behandlingsdato(ProcessingDateTime).</span><span class="sxs-lookup"><span data-stu-id="93411-122">In the tree, select 'Processing date(ProcessingDateTime)'.</span></span>
-4. <span data-ttu-id="93411-123">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-123">Click Bind.</span></span>
-5. <span data-ttu-id="93411-124">Velg Betalingsmeldingsidentifikasjon(MessageIdentification) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-124">In the tree, select 'Payment message identification(MessageIdentification)'.</span></span>
-6. <span data-ttu-id="93411-125">Utvid Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-125">In the tree, expand 'Transactions'.</span></span>
-7. <span data-ttu-id="93411-126">Velg Transaksjoner\Journalpartinummer(JournalNum) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-126">In the tree, select 'Transactions\Journal batch number(JournalNum)'.</span></span>
-8. <span data-ttu-id="93411-127">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-127">Click Bind.</span></span>
-9. <span data-ttu-id="93411-128">Velg Betalinger i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-128">In the tree, select 'Payments'.</span></span>
-10. <span data-ttu-id="93411-129">Velg Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-129">In the tree, select 'Transactions'.</span></span>
-11. <span data-ttu-id="93411-130">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-130">Click Bind.</span></span>
-12. <span data-ttu-id="93411-131">Utvid Betalinger= Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-131">In the tree, expand 'Payments= Transactions'.</span></span>
-13. <span data-ttu-id="93411-132">Utvid Betalinger= Transaksjoner\Kreditor i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-132">In the tree, expand 'Payments= Transactions\Creditor'.</span></span>
-14. <span data-ttu-id="93411-133">Utvid Betalinger= Transaksjoner\Kreditor\Konto i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-133">In the tree, expand 'Payments= Transactions\Creditor\Account'.</span></span>
-15. <span data-ttu-id="93411-134">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="93411-134">In the tree, select 'Payments= Transactions\Creditor\Account\Currency code(Currency)'.</span></span>
-16. <span data-ttu-id="93411-135">I treet utvider du Transaksjoner\vendBankAccountInTransactionCompany().</span><span class="sxs-lookup"><span data-stu-id="93411-135">In the tree, expand 'Transactions\vendBankAccountInTransactionCompany()'.</span></span>
-17. <span data-ttu-id="93411-136">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Valuta(CurrencyCode).</span><span class="sxs-lookup"><span data-stu-id="93411-136">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Currency(CurrencyCode)'.</span></span>
-18. <span data-ttu-id="93411-137">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-137">Click Bind.</span></span>
-19. <span data-ttu-id="93411-138">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\IBAN-kode(IBAN).</span><span class="sxs-lookup"><span data-stu-id="93411-138">In the tree, select 'Payments= Transactions\Creditor\Account\IBAN code(IBAN)'.</span></span>
-20. <span data-ttu-id="93411-139">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\IBAN(BankIBAN).</span><span class="sxs-lookup"><span data-stu-id="93411-139">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\IBAN(BankIBAN)'.</span></span>
-21. <span data-ttu-id="93411-140">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-140">Click Bind.</span></span>
-22. <span data-ttu-id="93411-141">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\Nummer.</span><span class="sxs-lookup"><span data-stu-id="93411-141">In the tree, select 'Payments= Transactions\Creditor\Account\Number'.</span></span>
-23. <span data-ttu-id="93411-142">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Bankkontonummer(AccountNum).</span><span class="sxs-lookup"><span data-stu-id="93411-142">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Bank account number(AccountNum)'.</span></span>
-24. <span data-ttu-id="93411-143">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-143">Click Bind.</span></span>
-25. <span data-ttu-id="93411-144">Utvid Betalinger= Transaksjoner\Kreditor\Agent i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-144">In the tree, expand 'Payments= Transactions\Creditor\Agent'.</span></span>
-26. <span data-ttu-id="93411-145">I treet velger du Betalinger = Transaksjoner\Kreditor\Agent\Navn.</span><span class="sxs-lookup"><span data-stu-id="93411-145">In the tree, select 'Payments= Transactions\Creditor\Agent\Name'.</span></span>
-27. <span data-ttu-id="93411-146">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Navn.</span><span class="sxs-lookup"><span data-stu-id="93411-146">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Name'.</span></span>
-28. <span data-ttu-id="93411-147">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-147">Click Bind.</span></span>
-29. <span data-ttu-id="93411-148">I treet velger du Betalinger= Transaksjoner\Kreditor\Agent\Rutingsnummer(RoutingNumber).</span><span class="sxs-lookup"><span data-stu-id="93411-148">In the tree, select 'Payments= Transactions\Creditor\Agent\Routing number(RoutingNumber)'.</span></span>
-30. <span data-ttu-id="93411-149">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Rutingsnummer(RegistrationNum).</span><span class="sxs-lookup"><span data-stu-id="93411-149">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Routing number(RegistrationNum)'.</span></span>
-31. <span data-ttu-id="93411-150">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-150">Click Bind.</span></span>
-32. <span data-ttu-id="93411-151">I treet velger du Betalinger = Transaksjoner\Kreditor\Agent\SWIFT-kode(SWIFT).</span><span class="sxs-lookup"><span data-stu-id="93411-151">In the tree, select 'Payments= Transactions\Creditor\Agent\SWIFT code(SWIFT)'.</span></span>
-33. <span data-ttu-id="93411-152">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\SWIFT-kode(SWIFTNo).</span><span class="sxs-lookup"><span data-stu-id="93411-152">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\SWIFT code(SWIFTNo)'.</span></span>
-34. <span data-ttu-id="93411-153">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-153">Click Bind.</span></span>
-35. <span data-ttu-id="93411-154">I treet velger du Betalinger = Transaksjoner\Kreditor\Navn.</span><span class="sxs-lookup"><span data-stu-id="93411-154">In the tree, select 'Payments= Transactions\Creditor\Name'.</span></span>
-36. <span data-ttu-id="93411-155">Utvid Transaksjoner\findVendTable() i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-155">In the tree, expand 'Transactions\findVendTable()'.</span></span>
-37. <span data-ttu-id="93411-156">I treet velger du Transaksjoner\findVendTable()\name().</span><span class="sxs-lookup"><span data-stu-id="93411-156">In the tree, select 'Transactions\findVendTable()\name()'.</span></span>
-38. <span data-ttu-id="93411-157">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-157">Click Bind.</span></span>
-39. <span data-ttu-id="93411-158">I treet velger du Betalinger = Transaksjoner\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="93411-158">In the tree, select 'Payments= Transactions\Currency code(Currency)'.</span></span>
-40. <span data-ttu-id="93411-159">Utvid Transaksjoner\>Relasjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-159">In the tree, expand 'Transactions\>Relations'.</span></span>
-41. <span data-ttu-id="93411-160">I treet utvider du Transaksjoner\>Relasjoner\Valutatabell(Valuta).</span><span class="sxs-lookup"><span data-stu-id="93411-160">In the tree, expand 'Transactions\>Relations\Currency table(Currency)'.</span></span>
-42. <span data-ttu-id="93411-161">I treet velger du Transaksjoner\>Relasjoner\Valutatabell(Valuta)\Valutakode(CurrencyCodeISO).</span><span class="sxs-lookup"><span data-stu-id="93411-161">In the tree, select 'Transactions\>Relations\Currency table(Currency)\Currency code(CurrencyCodeISO)'.</span></span>
-43. <span data-ttu-id="93411-162">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-162">Click Bind.</span></span>
-44. <span data-ttu-id="93411-163">Utvid Betalinger= Transaksjoner\Debitor i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-163">In the tree, expand 'Payments= Transactions\Debtor'.</span></span>
-45. <span data-ttu-id="93411-164">Utvid Betalinger= Transaksjoner\Debitor\Konto i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-164">In the tree, expand 'Payments= Transactions\Debtor\Account'.</span></span>
-46. <span data-ttu-id="93411-165">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="93411-165">In the tree, select 'Payments= Transactions\Debtor\Account\Currency code(Currency)'.</span></span>
-47. <span data-ttu-id="93411-166">Velg Bankkonto(BankAccount) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-166">In the tree, select 'Bank Account(BankAccount)'.</span></span>
-48. <span data-ttu-id="93411-167">Utvid Bankkonto(BankAccount) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-167">In the tree, expand 'Bank Account(BankAccount)'.</span></span>
-49. <span data-ttu-id="93411-168">I treet velger du Bankkonto(BankAccount)\Valuta(CurrencyCode).</span><span class="sxs-lookup"><span data-stu-id="93411-168">In the tree, select 'Bank Account(BankAccount)\Currency(CurrencyCode)'.</span></span>
-50. <span data-ttu-id="93411-169">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-169">Click Bind.</span></span>
-51. <span data-ttu-id="93411-170">I treet velger du Bankkonto(BankAccount)\IBAN.</span><span class="sxs-lookup"><span data-stu-id="93411-170">In the tree, select 'Bank Account(BankAccount)\IBAN'.</span></span>
-52. <span data-ttu-id="93411-171">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\IBAN-kode(IBAN).</span><span class="sxs-lookup"><span data-stu-id="93411-171">In the tree, select 'Payments= Transactions\Debtor\Account\IBAN code(IBAN)'.</span></span>
-53. <span data-ttu-id="93411-172">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-172">Click Bind.</span></span>
-54. <span data-ttu-id="93411-173">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\Nummer.</span><span class="sxs-lookup"><span data-stu-id="93411-173">In the tree, select 'Payments= Transactions\Debtor\Account\Number'.</span></span>
-55. <span data-ttu-id="93411-174">I treet velger du Bankkonto(BankAccount)\Bankkontonummer(AccountNum).</span><span class="sxs-lookup"><span data-stu-id="93411-174">In the tree, select 'Bank Account(BankAccount)\Bank account number(AccountNum)'.</span></span>
-56. <span data-ttu-id="93411-175">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-175">Click Bind.</span></span>
-57. <span data-ttu-id="93411-176">Utvid Betalinger= Transaksjoner\Debitor\Agent i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-176">In the tree, expand 'Payments= Transactions\Debtor\Agent'.</span></span>
-58. <span data-ttu-id="93411-177">I treet velger du Betalinger = Transaksjoner\Debitor\Agent\Navn.</span><span class="sxs-lookup"><span data-stu-id="93411-177">In the tree, select 'Payments= Transactions\Debtor\Agent\Name'.</span></span>
-59. <span data-ttu-id="93411-178">Velg Bankkonto(BankAccount)\Navn i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-178">In the tree, select 'Bank Account(BankAccount)\Name'.</span></span>
-60. <span data-ttu-id="93411-179">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-179">Click Bind.</span></span>
-61. <span data-ttu-id="93411-180">I treet velger du Betalinger= Transaksjoner\Debitor\Agent\Rutingsnummer(RoutingNumber).</span><span class="sxs-lookup"><span data-stu-id="93411-180">In the tree, select 'Payments= Transactions\Debtor\Agent\Routing number(RoutingNumber)'.</span></span>
-62. <span data-ttu-id="93411-181">I treet velger du Bankkonto(BankAccount)\Rutingsnummer(RegistrationNum).</span><span class="sxs-lookup"><span data-stu-id="93411-181">In the tree, select 'Bank Account(BankAccount)\Routing number(RegistrationNum)'.</span></span>
-63. <span data-ttu-id="93411-182">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-182">Click Bind.</span></span>
-64. <span data-ttu-id="93411-183">I treet velger du Betalinger = Transaksjoner\Debitor\Agent\SWIFT-kode(SWIFT).</span><span class="sxs-lookup"><span data-stu-id="93411-183">In the tree, select 'Payments= Transactions\Debtor\Agent\SWIFT code(SWIFT)'.</span></span>
-65. <span data-ttu-id="93411-184">I treet velger du Bankkonto(BankAccount)\SWIFT-kode(SWIFTNo).</span><span class="sxs-lookup"><span data-stu-id="93411-184">In the tree, select 'Bank Account(BankAccount)\SWIFT code(SWIFTNo)'.</span></span>
-66. <span data-ttu-id="93411-185">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-185">Click Bind.</span></span>
-67. <span data-ttu-id="93411-186">I treet velger du Betalinger = Transaksjoner\Debitor\Navn.</span><span class="sxs-lookup"><span data-stu-id="93411-186">In the tree, select 'Payments= Transactions\Debtor\Name'.</span></span>
-68. <span data-ttu-id="93411-187">Velg Firmainformasjon (Firma) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-187">In the tree, select 'Company information(Company)'.</span></span>
-69. <span data-ttu-id="93411-188">Utvid Firmainformasjon (Firma) i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-188">In the tree, expand 'Company information(Company)'.</span></span>
-70. <span data-ttu-id="93411-189">Velg Firmainformasjon (Firma)\Navn i treet.</span><span class="sxs-lookup"><span data-stu-id="93411-189">In the tree, select 'Company information(Company)\Name'.</span></span>
-71. <span data-ttu-id="93411-190">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-190">Click Bind.</span></span>
-72. <span data-ttu-id="93411-191">I treet velger du Betalinger = Transaksjoner\Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="93411-191">In the tree, select 'Payments= Transactions\Description'.</span></span>
-73. <span data-ttu-id="93411-192">I treet velger du Transaksjoner\Beskrivelse(Txt).</span><span class="sxs-lookup"><span data-stu-id="93411-192">In the tree, select 'Transactions\Description(Txt)'.</span></span>
-74. <span data-ttu-id="93411-193">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-193">Click Bind.</span></span>
-75. <span data-ttu-id="93411-194">I treet velger du Betalinger = Transaksjoner\Ende-til-ende-identifikasjonskode(End2EndID).</span><span class="sxs-lookup"><span data-stu-id="93411-194">In the tree, select 'Payments= Transactions\End to end identification code(End2EndID)'.</span></span>
-76. <span data-ttu-id="93411-195">I treet velger du Transaksjoner\$EndToEndID.</span><span class="sxs-lookup"><span data-stu-id="93411-195">In the tree, select 'Transactions\$EndToEndID'.</span></span>
-77. <span data-ttu-id="93411-196">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-196">Click Bind.</span></span>
-78. <span data-ttu-id="93411-197">I treet velger du Betalinger = Transaksjoner\Instruert beløp(InstructedAmount).</span><span class="sxs-lookup"><span data-stu-id="93411-197">In the tree, select 'Payments= Transactions\Instructed amount(InstructedAmount)'.</span></span>
-79. <span data-ttu-id="93411-198">I treet velger du Transaksjoner\$Amount.</span><span class="sxs-lookup"><span data-stu-id="93411-198">In the tree, select 'Transactions\$Amount'.</span></span>
-80. <span data-ttu-id="93411-199">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-199">Click Bind.</span></span>
-81. <span data-ttu-id="93411-200">I treet velger du Betalinger = Transaksjoner\Transaksjonsdato(TransactionDate).</span><span class="sxs-lookup"><span data-stu-id="93411-200">In the tree, select 'Payments= Transactions\Transaction date(TransactionDate)'.</span></span>
-82. <span data-ttu-id="93411-201">I treet velger du Transaksjoner\Dato(TransDate).</span><span class="sxs-lookup"><span data-stu-id="93411-201">In the tree, select 'Transactions\Date(TransDate)'.</span></span>
-83. <span data-ttu-id="93411-202">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="93411-202">Click Bind.</span></span>
+## <a name="bind-created-data-sources-to-data-model-elements"></a><span data-ttu-id="666e6-119">Bind opprettede datakilder til datamodellelementer</span><span class="sxs-lookup"><span data-stu-id="666e6-119">Bind created data sources to data model elements</span></span>
+1. <span data-ttu-id="666e6-120">Klikk Utforming.</span><span class="sxs-lookup"><span data-stu-id="666e6-120">Click Designer.</span></span>
+2. <span data-ttu-id="666e6-121">I konsolltreet velger du Dato og klokkeslett for behandling(ProcessingDateTime).</span><span class="sxs-lookup"><span data-stu-id="666e6-121">In the tree, select 'Processing date & time(ProcessingDateTime)'.</span></span>
+3. <span data-ttu-id="666e6-122">I konsolltreet velger du Behandlingsdato(ProcessingDateTime).</span><span class="sxs-lookup"><span data-stu-id="666e6-122">In the tree, select 'Processing date(ProcessingDateTime)'.</span></span>
+4. <span data-ttu-id="666e6-123">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-123">Click Bind.</span></span>
+5. <span data-ttu-id="666e6-124">Velg Betalingsmeldingsidentifikasjon(MessageIdentification) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-124">In the tree, select 'Payment message identification(MessageIdentification)'.</span></span>
+6. <span data-ttu-id="666e6-125">Utvid Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-125">In the tree, expand 'Transactions'.</span></span>
+7. <span data-ttu-id="666e6-126">Velg Transaksjoner\Journalpartinummer(JournalNum) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-126">In the tree, select 'Transactions\Journal batch number(JournalNum)'.</span></span>
+8. <span data-ttu-id="666e6-127">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-127">Click Bind.</span></span>
+9. <span data-ttu-id="666e6-128">Velg Betalinger i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-128">In the tree, select 'Payments'.</span></span>
+10. <span data-ttu-id="666e6-129">Velg Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-129">In the tree, select 'Transactions'.</span></span>
+11. <span data-ttu-id="666e6-130">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-130">Click Bind.</span></span>
+12. <span data-ttu-id="666e6-131">Utvid Betalinger= Transaksjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-131">In the tree, expand 'Payments= Transactions'.</span></span>
+13. <span data-ttu-id="666e6-132">Utvid Betalinger= Transaksjoner\Kreditor i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-132">In the tree, expand 'Payments= Transactions\Creditor'.</span></span>
+14. <span data-ttu-id="666e6-133">Utvid Betalinger= Transaksjoner\Kreditor\Konto i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-133">In the tree, expand 'Payments= Transactions\Creditor\Account'.</span></span>
+15. <span data-ttu-id="666e6-134">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="666e6-134">In the tree, select 'Payments= Transactions\Creditor\Account\Currency code(Currency)'.</span></span>
+16. <span data-ttu-id="666e6-135">I treet utvider du Transaksjoner\vendBankAccountInTransactionCompany().</span><span class="sxs-lookup"><span data-stu-id="666e6-135">In the tree, expand 'Transactions\vendBankAccountInTransactionCompany()'.</span></span>
+17. <span data-ttu-id="666e6-136">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Valuta(CurrencyCode).</span><span class="sxs-lookup"><span data-stu-id="666e6-136">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Currency(CurrencyCode)'.</span></span>
+18. <span data-ttu-id="666e6-137">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-137">Click Bind.</span></span>
+19. <span data-ttu-id="666e6-138">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\IBAN-kode(IBAN).</span><span class="sxs-lookup"><span data-stu-id="666e6-138">In the tree, select 'Payments= Transactions\Creditor\Account\IBAN code(IBAN)'.</span></span>
+20. <span data-ttu-id="666e6-139">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\IBAN(BankIBAN).</span><span class="sxs-lookup"><span data-stu-id="666e6-139">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\IBAN(BankIBAN)'.</span></span>
+21. <span data-ttu-id="666e6-140">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-140">Click Bind.</span></span>
+22. <span data-ttu-id="666e6-141">I treet velger du Betalinger = Transaksjoner\Kreditor\Konto\Nummer.</span><span class="sxs-lookup"><span data-stu-id="666e6-141">In the tree, select 'Payments= Transactions\Creditor\Account\Number'.</span></span>
+23. <span data-ttu-id="666e6-142">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Bankkontonummer(AccountNum).</span><span class="sxs-lookup"><span data-stu-id="666e6-142">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Bank account number(AccountNum)'.</span></span>
+24. <span data-ttu-id="666e6-143">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-143">Click Bind.</span></span>
+25. <span data-ttu-id="666e6-144">Utvid Betalinger= Transaksjoner\Kreditor\Agent i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-144">In the tree, expand 'Payments= Transactions\Creditor\Agent'.</span></span>
+26. <span data-ttu-id="666e6-145">I treet velger du Betalinger = Transaksjoner\Kreditor\Agent\Navn.</span><span class="sxs-lookup"><span data-stu-id="666e6-145">In the tree, select 'Payments= Transactions\Creditor\Agent\Name'.</span></span>
+27. <span data-ttu-id="666e6-146">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Navn.</span><span class="sxs-lookup"><span data-stu-id="666e6-146">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Name'.</span></span>
+28. <span data-ttu-id="666e6-147">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-147">Click Bind.</span></span>
+29. <span data-ttu-id="666e6-148">I treet velger du Betalinger= Transaksjoner\Kreditor\Agent\Rutingsnummer(RoutingNumber).</span><span class="sxs-lookup"><span data-stu-id="666e6-148">In the tree, select 'Payments= Transactions\Creditor\Agent\Routing number(RoutingNumber)'.</span></span>
+30. <span data-ttu-id="666e6-149">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\Rutingsnummer(RegistrationNum).</span><span class="sxs-lookup"><span data-stu-id="666e6-149">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\Routing number(RegistrationNum)'.</span></span>
+31. <span data-ttu-id="666e6-150">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-150">Click Bind.</span></span>
+32. <span data-ttu-id="666e6-151">I treet velger du Betalinger = Transaksjoner\Kreditor\Agent\SWIFT-kode(SWIFT).</span><span class="sxs-lookup"><span data-stu-id="666e6-151">In the tree, select 'Payments= Transactions\Creditor\Agent\SWIFT code(SWIFT)'.</span></span>
+33. <span data-ttu-id="666e6-152">I treet velger du Transaksjoner\vendBankAccountInTransactionCompany()\SWIFT-kode(SWIFTNo).</span><span class="sxs-lookup"><span data-stu-id="666e6-152">In the tree, select 'Transactions\vendBankAccountInTransactionCompany()\SWIFT code(SWIFTNo)'.</span></span>
+34. <span data-ttu-id="666e6-153">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-153">Click Bind.</span></span>
+35. <span data-ttu-id="666e6-154">I treet velger du Betalinger = Transaksjoner\Kreditor\Navn.</span><span class="sxs-lookup"><span data-stu-id="666e6-154">In the tree, select 'Payments= Transactions\Creditor\Name'.</span></span>
+36. <span data-ttu-id="666e6-155">Utvid Transaksjoner\findVendTable() i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-155">In the tree, expand 'Transactions\findVendTable()'.</span></span>
+37. <span data-ttu-id="666e6-156">I treet velger du Transaksjoner\findVendTable()\name().</span><span class="sxs-lookup"><span data-stu-id="666e6-156">In the tree, select 'Transactions\findVendTable()\name()'.</span></span>
+38. <span data-ttu-id="666e6-157">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-157">Click Bind.</span></span>
+39. <span data-ttu-id="666e6-158">I treet velger du Betalinger = Transaksjoner\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="666e6-158">In the tree, select 'Payments= Transactions\Currency code(Currency)'.</span></span>
+40. <span data-ttu-id="666e6-159">Utvid Transaksjoner\>Relasjoner i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-159">In the tree, expand 'Transactions\>Relations'.</span></span>
+41. <span data-ttu-id="666e6-160">I treet utvider du Transaksjoner\>Relasjoner\Valutatabell(Valuta).</span><span class="sxs-lookup"><span data-stu-id="666e6-160">In the tree, expand 'Transactions\>Relations\Currency table(Currency)'.</span></span>
+42. <span data-ttu-id="666e6-161">I treet velger du Transaksjoner\>Relasjoner\Valutatabell(Valuta)\Valutakode(CurrencyCodeISO).</span><span class="sxs-lookup"><span data-stu-id="666e6-161">In the tree, select 'Transactions\>Relations\Currency table(Currency)\Currency code(CurrencyCodeISO)'.</span></span>
+43. <span data-ttu-id="666e6-162">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-162">Click Bind.</span></span>
+44. <span data-ttu-id="666e6-163">Utvid Betalinger= Transaksjoner\Debitor i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-163">In the tree, expand 'Payments= Transactions\Debtor'.</span></span>
+45. <span data-ttu-id="666e6-164">Utvid Betalinger= Transaksjoner\Debitor\Konto i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-164">In the tree, expand 'Payments= Transactions\Debtor\Account'.</span></span>
+46. <span data-ttu-id="666e6-165">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\Valutakode(Valuta).</span><span class="sxs-lookup"><span data-stu-id="666e6-165">In the tree, select 'Payments= Transactions\Debtor\Account\Currency code(Currency)'.</span></span>
+47. <span data-ttu-id="666e6-166">Velg Bankkonto(BankAccount) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-166">In the tree, select 'Bank Account(BankAccount)'.</span></span>
+48. <span data-ttu-id="666e6-167">Utvid Bankkonto(BankAccount) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-167">In the tree, expand 'Bank Account(BankAccount)'.</span></span>
+49. <span data-ttu-id="666e6-168">I treet velger du Bankkonto(BankAccount)\Valuta(CurrencyCode).</span><span class="sxs-lookup"><span data-stu-id="666e6-168">In the tree, select 'Bank Account(BankAccount)\Currency(CurrencyCode)'.</span></span>
+50. <span data-ttu-id="666e6-169">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-169">Click Bind.</span></span>
+51. <span data-ttu-id="666e6-170">I treet velger du Bankkonto(BankAccount)\IBAN.</span><span class="sxs-lookup"><span data-stu-id="666e6-170">In the tree, select 'Bank Account(BankAccount)\IBAN'.</span></span>
+52. <span data-ttu-id="666e6-171">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\IBAN-kode(IBAN).</span><span class="sxs-lookup"><span data-stu-id="666e6-171">In the tree, select 'Payments= Transactions\Debtor\Account\IBAN code(IBAN)'.</span></span>
+53. <span data-ttu-id="666e6-172">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-172">Click Bind.</span></span>
+54. <span data-ttu-id="666e6-173">I treet velger du Betalinger = Transaksjoner\Debitor\Konto\Nummer.</span><span class="sxs-lookup"><span data-stu-id="666e6-173">In the tree, select 'Payments= Transactions\Debtor\Account\Number'.</span></span>
+55. <span data-ttu-id="666e6-174">I treet velger du Bankkonto(BankAccount)\Bankkontonummer(AccountNum).</span><span class="sxs-lookup"><span data-stu-id="666e6-174">In the tree, select 'Bank Account(BankAccount)\Bank account number(AccountNum)'.</span></span>
+56. <span data-ttu-id="666e6-175">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-175">Click Bind.</span></span>
+57. <span data-ttu-id="666e6-176">Utvid Betalinger= Transaksjoner\Debitor\Agent i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-176">In the tree, expand 'Payments= Transactions\Debtor\Agent'.</span></span>
+58. <span data-ttu-id="666e6-177">I treet velger du Betalinger = Transaksjoner\Debitor\Agent\Navn.</span><span class="sxs-lookup"><span data-stu-id="666e6-177">In the tree, select 'Payments= Transactions\Debtor\Agent\Name'.</span></span>
+59. <span data-ttu-id="666e6-178">Velg Bankkonto(BankAccount)\Navn i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-178">In the tree, select 'Bank Account(BankAccount)\Name'.</span></span>
+60. <span data-ttu-id="666e6-179">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-179">Click Bind.</span></span>
+61. <span data-ttu-id="666e6-180">I treet velger du Betalinger= Transaksjoner\Debitor\Agent\Rutingsnummer(RoutingNumber).</span><span class="sxs-lookup"><span data-stu-id="666e6-180">In the tree, select 'Payments= Transactions\Debtor\Agent\Routing number(RoutingNumber)'.</span></span>
+62. <span data-ttu-id="666e6-181">I treet velger du Bankkonto(BankAccount)\Rutingsnummer(RegistrationNum).</span><span class="sxs-lookup"><span data-stu-id="666e6-181">In the tree, select 'Bank Account(BankAccount)\Routing number(RegistrationNum)'.</span></span>
+63. <span data-ttu-id="666e6-182">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-182">Click Bind.</span></span>
+64. <span data-ttu-id="666e6-183">I treet velger du Betalinger = Transaksjoner\Debitor\Agent\SWIFT-kode(SWIFT).</span><span class="sxs-lookup"><span data-stu-id="666e6-183">In the tree, select 'Payments= Transactions\Debtor\Agent\SWIFT code(SWIFT)'.</span></span>
+65. <span data-ttu-id="666e6-184">I treet velger du Bankkonto(BankAccount)\SWIFT-kode(SWIFTNo).</span><span class="sxs-lookup"><span data-stu-id="666e6-184">In the tree, select 'Bank Account(BankAccount)\SWIFT code(SWIFTNo)'.</span></span>
+66. <span data-ttu-id="666e6-185">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-185">Click Bind.</span></span>
+67. <span data-ttu-id="666e6-186">I treet velger du Betalinger = Transaksjoner\Debitor\Navn.</span><span class="sxs-lookup"><span data-stu-id="666e6-186">In the tree, select 'Payments= Transactions\Debtor\Name'.</span></span>
+68. <span data-ttu-id="666e6-187">Velg Firmainformasjon (Firma) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-187">In the tree, select 'Company information(Company)'.</span></span>
+69. <span data-ttu-id="666e6-188">Utvid Firmainformasjon (Firma) i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-188">In the tree, expand 'Company information(Company)'.</span></span>
+70. <span data-ttu-id="666e6-189">Velg Firmainformasjon (Firma)\Navn i treet.</span><span class="sxs-lookup"><span data-stu-id="666e6-189">In the tree, select 'Company information(Company)\Name'.</span></span>
+71. <span data-ttu-id="666e6-190">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-190">Click Bind.</span></span>
+72. <span data-ttu-id="666e6-191">I treet velger du Betalinger = Transaksjoner\Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="666e6-191">In the tree, select 'Payments= Transactions\Description'.</span></span>
+73. <span data-ttu-id="666e6-192">I treet velger du Transaksjoner\Beskrivelse(Txt).</span><span class="sxs-lookup"><span data-stu-id="666e6-192">In the tree, select 'Transactions\Description(Txt)'.</span></span>
+74. <span data-ttu-id="666e6-193">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-193">Click Bind.</span></span>
+75. <span data-ttu-id="666e6-194">I treet velger du Betalinger = Transaksjoner\Ende-til-ende-identifikasjonskode(End2EndID).</span><span class="sxs-lookup"><span data-stu-id="666e6-194">In the tree, select 'Payments= Transactions\End to end identification code(End2EndID)'.</span></span>
+76. <span data-ttu-id="666e6-195">I treet velger du Transaksjoner\$EndToEndID.</span><span class="sxs-lookup"><span data-stu-id="666e6-195">In the tree, select 'Transactions\$EndToEndID'.</span></span>
+77. <span data-ttu-id="666e6-196">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-196">Click Bind.</span></span>
+78. <span data-ttu-id="666e6-197">I treet velger du Betalinger = Transaksjoner\Instruert beløp(InstructedAmount).</span><span class="sxs-lookup"><span data-stu-id="666e6-197">In the tree, select 'Payments= Transactions\Instructed amount(InstructedAmount)'.</span></span>
+79. <span data-ttu-id="666e6-198">I treet velger du Transaksjoner\$Amount.</span><span class="sxs-lookup"><span data-stu-id="666e6-198">In the tree, select 'Transactions\$Amount'.</span></span>
+80. <span data-ttu-id="666e6-199">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-199">Click Bind.</span></span>
+81. <span data-ttu-id="666e6-200">I treet velger du Betalinger = Transaksjoner\Transaksjonsdato(TransactionDate).</span><span class="sxs-lookup"><span data-stu-id="666e6-200">In the tree, select 'Payments= Transactions\Transaction date(TransactionDate)'.</span></span>
+82. <span data-ttu-id="666e6-201">I treet velger du Transaksjoner\Dato(TransDate).</span><span class="sxs-lookup"><span data-stu-id="666e6-201">In the tree, select 'Transactions\Date(TransDate)'.</span></span>
+83. <span data-ttu-id="666e6-202">Klikk Bind.</span><span class="sxs-lookup"><span data-stu-id="666e6-202">Click Bind.</span></span>
 
-## <a name="validate-created-mapping"></a><span data-ttu-id="93411-203">Valider opprettet tilordning</span><span class="sxs-lookup"><span data-stu-id="93411-203">Validate created mapping</span></span>
-1. <span data-ttu-id="93411-204">Klikk Valider.</span><span class="sxs-lookup"><span data-stu-id="93411-204">Click Validate.</span></span>
-    * <span data-ttu-id="93411-205">Valider den nye tilordningen for å sikre at alle bindinger er i orden.</span><span class="sxs-lookup"><span data-stu-id="93411-205">Validate the new mapping to ensure that all bindings are okay.</span></span>  
-2. <span data-ttu-id="93411-206">Klikk pilen for å vise eller skjule delen Feilliste.</span><span class="sxs-lookup"><span data-stu-id="93411-206">Click the arrow to expand or collapse the Error List section.</span></span>
-3. <span data-ttu-id="93411-207">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="93411-207">Click Save.</span></span>
-4. <span data-ttu-id="93411-208">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="93411-208">Close the page.</span></span>
-5. <span data-ttu-id="93411-209">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="93411-209">Close the page.</span></span>
-6. <span data-ttu-id="93411-210">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="93411-210">Close the page.</span></span>
+## <a name="validate-created-mapping"></a><span data-ttu-id="666e6-203">Valider opprettet tilordning</span><span class="sxs-lookup"><span data-stu-id="666e6-203">Validate created mapping</span></span>
+1. <span data-ttu-id="666e6-204">Klikk Valider.</span><span class="sxs-lookup"><span data-stu-id="666e6-204">Click Validate.</span></span>
+    * <span data-ttu-id="666e6-205">Valider den nye tilordningen for å sikre at alle bindinger er i orden.</span><span class="sxs-lookup"><span data-stu-id="666e6-205">Validate the new mapping to ensure that all bindings are okay.</span></span>  
+2. <span data-ttu-id="666e6-206">Klikk pilen for å vise eller skjule delen Feilliste.</span><span class="sxs-lookup"><span data-stu-id="666e6-206">Click the arrow to expand or collapse the Error List section.</span></span>
+3. <span data-ttu-id="666e6-207">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="666e6-207">Click Save.</span></span>
+4. <span data-ttu-id="666e6-208">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="666e6-208">Close the page.</span></span>
+5. <span data-ttu-id="666e6-209">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="666e6-209">Close the page.</span></span>
+6. <span data-ttu-id="666e6-210">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="666e6-210">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-model-configuration"></a><span data-ttu-id="93411-211">Endre statusen til gjeldende versjon av modellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="93411-211">Change the status of the current version of model configuration</span></span>
-1. <span data-ttu-id="93411-212">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="93411-212">Click Change status.</span></span>
-    * <span data-ttu-id="93411-213">Endre statusen for utformet modellkonfigurasjon – fra Utkast til Fullført for å gjøre den tilgjengelig for utforming av betalingsformat.</span><span class="sxs-lookup"><span data-stu-id="93411-213">Change the status of designed model configuration – from Draft to Completed to make it available for payment format design.</span></span>  
-2. <span data-ttu-id="93411-214">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="93411-214">Click Complete.</span></span>
-    * <span data-ttu-id="93411-215">Velg Fullført.</span><span class="sxs-lookup"><span data-stu-id="93411-215">Select Complete.</span></span>  
-3. <span data-ttu-id="93411-216">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="93411-216">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="93411-217">For eksempel versjon 1.</span><span class="sxs-lookup"><span data-stu-id="93411-217">For example, 'version 1'.</span></span>  
-4. <span data-ttu-id="93411-218">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="93411-218">Click OK.</span></span>
-5. <span data-ttu-id="93411-219">Velg den fullførte versjonen av den gjeldende konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="93411-219">Select the completed version of the current configuration.</span></span>
-    * <span data-ttu-id="93411-220">Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.</span><span class="sxs-lookup"><span data-stu-id="93411-220">Note that the created configuration is saved as completed version 1.</span></span>  
-
+## <a name="change-the-status-of-the-current-version-of-model-configuration"></a><span data-ttu-id="666e6-211">Endre statusen til gjeldende versjon av modellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="666e6-211">Change the status of the current version of model configuration</span></span>
+1. <span data-ttu-id="666e6-212">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="666e6-212">Click Change status.</span></span>
+    * <span data-ttu-id="666e6-213">Endre statusen for utformet modellkonfigurasjon – fra Utkast til Fullført for å gjøre den tilgjengelig for utforming av betalingsformat.</span><span class="sxs-lookup"><span data-stu-id="666e6-213">Change the status of designed model configuration – from Draft to Completed to make it available for payment format design.</span></span>  
+2. <span data-ttu-id="666e6-214">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="666e6-214">Click Complete.</span></span>
+    * <span data-ttu-id="666e6-215">Velg Fullført.</span><span class="sxs-lookup"><span data-stu-id="666e6-215">Select Complete.</span></span>  
+3. <span data-ttu-id="666e6-216">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="666e6-216">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="666e6-217">For eksempel versjon 1.</span><span class="sxs-lookup"><span data-stu-id="666e6-217">For example, 'version 1'.</span></span>  
+4. <span data-ttu-id="666e6-218">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="666e6-218">Click OK.</span></span>
+5. <span data-ttu-id="666e6-219">Velg den fullførte versjonen av den gjeldende konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="666e6-219">Select the completed version of the current configuration.</span></span>
+    * <span data-ttu-id="666e6-220">Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.</span><span class="sxs-lookup"><span data-stu-id="666e6-220">Note that the created configuration is saved as completed version 1.</span></span>  
 

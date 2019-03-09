@@ -1,0 +1,171 @@
+---
+title: Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations
+description: Dette emnet forklarer hvilke data som synkroniseres i en integrasjon med Talent og Finance and Operations.
+author: negudava
+manager: AnnBe
+ms.date: 01/09/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: negudava
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: aea025bc4898d6399e82030cf1f52b21949e014f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305663"
+---
+# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a><span data-ttu-id="dbb25-103">Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="dbb25-103">Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="dbb25-104">Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som synkroniseres når Dynamics 365 for Talent er integrert med Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-104">This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finance and Operations.</span></span>
+
+## <a name="is-all-data-synchronized-or-just-some-data-entities"></a><span data-ttu-id="dbb25-105">Er alle data synkronisert eller bare noen dataenheter?</span><span class="sxs-lookup"><span data-stu-id="dbb25-105">Is all data synchronized or just some data entities?</span></span>
+
+<span data-ttu-id="dbb25-106">Med Core Human Resources (HR) synkroniseres et delsett av dataene.</span><span class="sxs-lookup"><span data-stu-id="dbb25-106">With Core Human Resources (HR), a subset of the data is synchronized.</span></span> <span data-ttu-id="dbb25-107">For en liste over alle enheter, kan du se [Integrasjon fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).</span><span class="sxs-lookup"><span data-stu-id="dbb25-107">For a list of all the entities, see [Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).</span></span>
+
+<span data-ttu-id="dbb25-108">For Attract og Onboard hører alle data til i Common Data Service (CDS) for Apps.</span><span class="sxs-lookup"><span data-stu-id="dbb25-108">For Attract and Onboard, all data is native to Common Data Services (CDS) for Apps.</span></span>
+
+## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a><span data-ttu-id="dbb25-109">Kan jeg opprette en ny tilordning uten å bruke malene?</span><span class="sxs-lookup"><span data-stu-id="dbb25-109">Can I create a new mapping without using the templates?</span></span>
+
+<span data-ttu-id="dbb25-110">Malene er startpunktet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-110">Templates are the starting point.</span></span> <span data-ttu-id="dbb25-111">Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon.</span><span class="sxs-lookup"><span data-stu-id="dbb25-111">You can create your own template, but a template is always needed when creating an integration project.</span></span> <span data-ttu-id="dbb25-112">Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).</span><span class="sxs-lookup"><span data-stu-id="dbb25-112">For more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).</span></span>
+
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a><span data-ttu-id="dbb25-113">Kan jeg tilordne finansdimensjoner for å overføre mellom Talent og Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="dbb25-113">Can I map financial dimensions to transfer between Talent and Finance and Operations?</span></span>
+
+<span data-ttu-id="dbb25-114">Finansdimensjoner er ikke i CDS for Apps og er dermed ikke en del av standardmalen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-114">Financial dimensions aren’t currently in CDS for Apps and as a result aren’t part of the default template.</span></span> <span data-ttu-id="dbb25-115">Denne enheten er planlagt, men ingen tidslinje for frigivelse er for øyeblikket tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="dbb25-115">This entity is planned, but currently no release timeline is available.</span></span>
+
+<span data-ttu-id="dbb25-116">For data som ligger i Finance and Operations, men ikke finnes i Talent, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Talent.</span><span class="sxs-lookup"><span data-stu-id="dbb25-116">For data that resides in Finance and Operations but does not exist in Talent, link the two systems together by using **Configure Links** in Talent.</span></span> <span data-ttu-id="dbb25-117">Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance and Operations, se [Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)](whats-new-talent-october-31.md).</span><span class="sxs-lookup"><span data-stu-id="dbb25-117">For more information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).</span></span>
+
+![](media/MapFinancialDimensions.png)
+
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a><span data-ttu-id="dbb25-118">Noen ganger når jeg importerer ansatte, blir de inaktive arbeidere i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-118">Sometimes when I import employees, they go into inactive workers in Finance and Operations.</span></span> <span data-ttu-id="dbb25-119">Hvorfor?</span><span class="sxs-lookup"><span data-stu-id="dbb25-119">Why?</span></span>
+
+<span data-ttu-id="dbb25-120">Du kan få denne feilen hvis ansatte ikke har en aktiv ansettelsesdetaljpost i Talent.</span><span class="sxs-lookup"><span data-stu-id="dbb25-120">You may get this error if employees don’t have an active employment detail record in Talent.</span></span> <span data-ttu-id="dbb25-121">Hvis du vil løse dette problemet, kan du gå til **Personaladministrasjon \> Ansatte \> Ansettelseshistorikk \> Datobehandling**, og kontroller at det finnes en aktiv ansettelsesdetaljpost.</span><span class="sxs-lookup"><span data-stu-id="dbb25-121">To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.</span></span>
+
+## <a name="if-i-select-to-map-only-a-subset-of-fields-will-changes-made-to-non-mapped-fields-trigger-a-sync"></a><span data-ttu-id="dbb25-122">Hvis jeg velger å tilordne bare et delsett av feltene, vil endringer i ikke-tilordnede felt utløse en synkronisering?</span><span class="sxs-lookup"><span data-stu-id="dbb25-122">If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?</span></span>
+
+<span data-ttu-id="dbb25-123">Datasynkronisering følger tidsplanen for kjøring.</span><span class="sxs-lookup"><span data-stu-id="dbb25-123">Data sync follows the execution schedule.</span></span> <span data-ttu-id="dbb25-124">Integreringen henter en post hvis et felt i posten endres, uansett om feltet er en del av integreringstilordning.</span><span class="sxs-lookup"><span data-stu-id="dbb25-124">The integration will pick up a record if any field in the record changes regardless if the field is part of integration mapping.</span></span>
+
+## <a name="how-can-i-send-only-active-worker-changes-and-not-the-terminated-records"></a><span data-ttu-id="dbb25-125">Hvordan kan jeg sende bare aktive arbeiderendringer og ikke de avsluttede postene?</span><span class="sxs-lookup"><span data-stu-id="dbb25-125">How can I send only active worker changes and not the terminated records?</span></span>
+
+<span data-ttu-id="dbb25-126">Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de sendes til målet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-126">With the use of "Advanced query", you can filter and reshape source data before passing it into the destination.</span></span>
+
+![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+
+## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a><span data-ttu-id="dbb25-127">Kan jeg angi hvilke felt som skal sendes til Finance and Operations for en bestemt enhet?</span><span class="sxs-lookup"><span data-stu-id="dbb25-127">Can I specify which fields to send to Finance and Operations for a specific entity?</span></span>
+
+<span data-ttu-id="dbb25-128">Feltene kan legges til eller fjernes fra integrasjonsoppgaven.</span><span class="sxs-lookup"><span data-stu-id="dbb25-128">Fields can be added or removed from the integration task.</span></span> <span data-ttu-id="dbb25-129">Ikke alle datafelt som finnes på CDS for Apps (CDS 2.0)-enheten, fylles ut fra Core HR.</span><span class="sxs-lookup"><span data-stu-id="dbb25-129">Not all data fields that exist on the CDS for Apps (CDS 2.0) entity will be populated from Core HR.</span></span>
+<span data-ttu-id="dbb25-130">Tilleggsdata fylles via PowerApps.</span><span class="sxs-lookup"><span data-stu-id="dbb25-130">Additional data can be populated via PowerApps.</span></span>
+
+![](media/SpecifyFieldsIncludedInIntegration.png)
+
+## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a><span data-ttu-id="dbb25-131">Jeg har satt opp integrasjon som en satsvis jobb, men Talent mistet forbindelsen til målsystemet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-131">I set up integration as a batch job, but Talent lost connection to the destination system.</span></span> <span data-ttu-id="dbb25-132">Hvordan kan jeg sende det samme settet med endringer til målsystemet?</span><span class="sxs-lookup"><span data-stu-id="dbb25-132">How can I send the same set of changes to the destination system?</span></span>
+
+<span data-ttu-id="dbb25-133">Det kreves ingen spesielle oppsett for unntaksbehandling.</span><span class="sxs-lookup"><span data-stu-id="dbb25-133">No special setup is required for exception handling.</span></span> <span data-ttu-id="dbb25-134">Dataintegratoren finner og rapporterer feil som oppstår ved kilden og målet, og tillater nye manuelle forsøk.</span><span class="sxs-lookup"><span data-stu-id="dbb25-134">The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries.</span></span> <span data-ttu-id="dbb25-135">Den tillater imidlertid ikke manuell datakorrigering.</span><span class="sxs-lookup"><span data-stu-id="dbb25-135">However, it doesn’t allow manual data correction.</span></span> <span data-ttu-id="dbb25-136">Hvis dataoppdateringer kreves, skal dette skje enten ved kilden eller målet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-136">If data updates are needed, that should happen either at the source or the destination.</span></span>
+
+## <a name="can-i-set-up-bi-directional-integration"></a><span data-ttu-id="dbb25-137">Kan jeg konfigurere toveis integrasjon?</span><span class="sxs-lookup"><span data-stu-id="dbb25-137">Can I set up bi-directional integration?</span></span>
+
+<span data-ttu-id="dbb25-138">Nei, integrasjon er énveis (fra Talent til Finance and Operations).</span><span class="sxs-lookup"><span data-stu-id="dbb25-138">No, integration is currently one-way (Talent to Finance and Operations).</span></span> <span data-ttu-id="dbb25-139">Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Talent til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-139">However, there is a default template available to send data from Talent to Finance and Operations.</span></span>
+
+## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a><span data-ttu-id="dbb25-140">Kan jeg tillate sletting av oppføringer som en del av min integrasjon?</span><span class="sxs-lookup"><span data-stu-id="dbb25-140">Can I allow record deletion as part of my integration?</span></span>
+
+<span data-ttu-id="dbb25-141">Nei, Dataintegrator registrerer ikke slettede poster for dataoverføring.</span><span class="sxs-lookup"><span data-stu-id="dbb25-141">No, Data Integrator will not capture deleted records for data transfer.</span></span> <span data-ttu-id="dbb25-142">Bare oppretting og oppdatering av data (UPSERT) er for øyeblikket inkludert.</span><span class="sxs-lookup"><span data-stu-id="dbb25-142">Only data creation and updates (UPSERT) are currently included.</span></span>
+
+## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a><span data-ttu-id="dbb25-143">Kan jeg utføre kjøringen med feil på nytt?</span><span class="sxs-lookup"><span data-stu-id="dbb25-143">Can I rerun the errored execution?</span></span> <span data-ttu-id="dbb25-144">Sendes i så fall en fullstendig fil eller bare endringene?</span><span class="sxs-lookup"><span data-stu-id="dbb25-144">If so, will it send a full file or only the changes?</span></span>
+
+<span data-ttu-id="dbb25-145">Den første kjøringen av Dataintegrator er alltid en full kjøring.</span><span class="sxs-lookup"><span data-stu-id="dbb25-145">The first run of Data Integrator is always a full run.</span></span> <span data-ttu-id="dbb25-146">Senere kjøringer er basert på endringssporing.</span><span class="sxs-lookup"><span data-stu-id="dbb25-146">Subsequent runs are based on change tracking.</span></span> <span data-ttu-id="dbb25-147">Når en feilkjøring utføres, trekker den ut postene i omfanget for kjøringen og sender ut de siste endringene fra CDS.</span><span class="sxs-lookup"><span data-stu-id="dbb25-147">When an error run is executed, it extracts the records in scope of the run and sends out the most recent changes from CDS.</span></span>
+
+## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a><span data-ttu-id="dbb25-148">Når jeg lagrer prosjektet, får jeg feilen: "Prosjektet har tilordningsfeil."</span><span class="sxs-lookup"><span data-stu-id="dbb25-148">When I save the project, I get the error: “Project has mapping errors."</span></span> <span data-ttu-id="dbb25-149">Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-149">What do I do?</span></span>
+
+<span data-ttu-id="dbb25-150">Kontroller oppsettet for integrasjonsnøklene, foreta nødvendige endringer i oppsettet, og oppdater enhetene i prosjektet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-150">Check the setup of your integration keys, make any required changes to the setup, then refresh the entities in the project.</span></span>
+
+<span data-ttu-id="dbb25-151">Når standardmalen brukes, blir nøklene for integrering automatisk importert.</span><span class="sxs-lookup"><span data-stu-id="dbb25-151">When the default template is used, the integration keys will be automatically imported.</span></span> <span data-ttu-id="dbb25-152">Dette problemet kan oppstå når nye aktiviteter legges til i den eksisterende malen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-152">This issue may occur when new tasks are added to the existing template.</span></span>
+
+## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a><span data-ttu-id="dbb25-153">Hvis jeg har N antall juridiske enheter der arbeidere har ansettelser, trenger jeg å opprette en tilordning for hver av dem?</span><span class="sxs-lookup"><span data-stu-id="dbb25-153">If I have N number of legal entities where workers have employments, do I need to create a mapping for each of them?</span></span>
+
+<span data-ttu-id="dbb25-154">Ja, for hver juridiske enhet i Finance and Operations må du ha et eget integrasjonsprosjekt i dataintegreringen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-154">Yes, for each legal entity in Finance and Operations, you'll need a separate integration project in the data integration.</span></span>
+
+## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a><span data-ttu-id="dbb25-155">Jeg vil overføre data som ikke er en del av standardmalen fra Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dbb25-155">I need to transfer data that is not part of the default template provided by Microsoft.</span></span> <span data-ttu-id="dbb25-156">Kan jeg gjøre dette?</span><span class="sxs-lookup"><span data-stu-id="dbb25-156">Can I do this?</span></span>
+
+<span data-ttu-id="dbb25-157">Ja, feltene kan legges til eller fjernes fra den eksisterende malen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-157">Yes, fields can be added to or removed from the existing template.</span></span> <span data-ttu-id="dbb25-158">Malen kan endres for å ta med flere data fra andre CDS for Apps-enheter.</span><span class="sxs-lookup"><span data-stu-id="dbb25-158">The template can be modified to include additional data from other CDS for Apps entities.</span></span> <span data-ttu-id="dbb25-159">Enheten må være i CDS for Apps for at den skal inkluderes i malen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-159">The entity must be in CDS for Apps for it to be included in the template.</span></span> 
+
+## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a><span data-ttu-id="dbb25-160">Jeg har nettopp opprettet nye Finance and Operations- og Talent-miljøer, og jeg får feilen "Dataverdien bryter integritetsbegrensninger."</span><span class="sxs-lookup"><span data-stu-id="dbb25-160">I just created new Finance and Operations and Talent environments, and I'm getting the error "The data value violates integrity constraints."</span></span> <span data-ttu-id="dbb25-161">Hvorfor?</span><span class="sxs-lookup"><span data-stu-id="dbb25-161">Why?</span></span>
+
+<span data-ttu-id="dbb25-162">Årsaker til denne feilen kan omfatte:</span><span class="sxs-lookup"><span data-stu-id="dbb25-162">Reasons for this error can include:</span></span>
+
+- <span data-ttu-id="dbb25-163">Dataoverføringen resulterte i duplisert postuttrekk ved kilden (CDS).</span><span class="sxs-lookup"><span data-stu-id="dbb25-163">The data transfer resulted in duplicate records extraction at the source (CDS).</span></span>
+
+- <span data-ttu-id="dbb25-164">Dataoverføringen har nullverdier for feltene som kreves i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-164">The data transfer has null values for fields that are required in Finance and Operations.</span></span> <span data-ttu-id="dbb25-165">Kontroller at dataene er i CDS og oppfyller kravene fra Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-165">Verify the data that is in CDS and meets the requirements of Finance and Operations.</span></span>
+
+## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a><span data-ttu-id="dbb25-166">Hvis det er kjøringsfeil og ansatt-ID-en ikke synkroniseres, hvordan kan jeg finne den historiske jobben som har feil ansattpost?</span><span class="sxs-lookup"><span data-stu-id="dbb25-166">If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?</span></span>
+
+<span data-ttu-id="dbb25-167">Dataintegratoren oppretter flere prosjekter i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-167">Data Integrator will create multiple projects in Finance and Operations.</span></span> <span data-ttu-id="dbb25-168">Relasjonen mellom Dataintegrator-oppgaven og Finance and Operations-prosjektet er én til én.</span><span class="sxs-lookup"><span data-stu-id="dbb25-168">The relationship between the Data Integrator task and the Finance and Operations project is one to one.</span></span>
+
+<span data-ttu-id="dbb25-169">Spor tiden fra Dataintegrator-kjøringshistorikken, og se etter indeksen -1 i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-169">Trace the time from the Data Integrator execution history and look for the index -1 project in Finance and Operations.</span></span> <span data-ttu-id="dbb25-170">Hvis oppgavenummeret er 9 i Dataintegrator, er indeksen i Finance and Operations 8.</span><span class="sxs-lookup"><span data-stu-id="dbb25-170">If the task number is 9 in Data Integrator, the index in Finance and Operations is 8.</span></span>
+
+1. <span data-ttu-id="dbb25-171">Lagre oppgaveindeksen fra Dataintegrator (i dette eksemplet er det "9").</span><span class="sxs-lookup"><span data-stu-id="dbb25-171">Capture the task index from Data Integrator (in this example it is "9").</span></span>
+
+![Lagre oppgaveindeksen fra Dataintegrator](media/CaptureTaskIndex.png)
+
+2. <span data-ttu-id="dbb25-173">Spor kjøretiden for prosjektet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-173">Track the execution time of the project.</span></span>
+
+![Spore kjøretiden for prosjektet](media/CaptureTimeOfExecution.png)
+
+3. <span data-ttu-id="dbb25-175">I Finance and Operations, identifiser - 1.</span><span class="sxs-lookup"><span data-stu-id="dbb25-175">In Finance and Operations, identify index - 1.</span></span> <span data-ttu-id="dbb25-176">I dette eksemplet samsvarer prosjektet med suffikset "8" og utførelsestiden for indeksen "0"-prosjektet med kjøretiden i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="dbb25-176">In this example, the project with suffix "8" and execution time of index "0" project matches with the execution time in Step 2.</span></span>
+
+![Identifisere indeks](media/IdentifyIndex.png)
+
+## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a><span data-ttu-id="dbb25-178">Etter integrering av Talent og Finance and Operations vises ikke Talent-dataene mine i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-178">After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations.</span></span> <span data-ttu-id="dbb25-179">Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-179">What do I do?</span></span>
+
+<span data-ttu-id="dbb25-180">Integreringen til Finance and Operations er en totrinns prosess.</span><span class="sxs-lookup"><span data-stu-id="dbb25-180">The integration to Finance and Operations is a two-step process.</span></span> <span data-ttu-id="dbb25-181">Først bekrefter du at Talent-dataene er oppdaterte og tilgjengelige i CDS.</span><span class="sxs-lookup"><span data-stu-id="dbb25-181">First, verify that the Talent data is updated and available in CDS.</span></span> <span data-ttu-id="dbb25-182">Dette er en nær sanntidssynkronisering og kan kontrolleres i PowerApps ved å se på dataene i dataenhetene.</span><span class="sxs-lookup"><span data-stu-id="dbb25-182">This is a near real-time sync and can be verified in PowerApps by looking at the data within the data entities.</span></span>
+
+![Data i CDS](media/DataInCDS.png)
+
+<span data-ttu-id="dbb25-184">Hvis dataene ikke vises som forventet i CDS, må du kontrollere at enheten støttes i integreringen.</span><span class="sxs-lookup"><span data-stu-id="dbb25-184">If the data is not appearing as expected in CDS, verify that the entity is supported in the integration.</span></span> <span data-ttu-id="dbb25-185">Hvis du vil inkludere flere data i CDS, må en endring utføres på Microsoft-siden.</span><span class="sxs-lookup"><span data-stu-id="dbb25-185">To include additional data in CDS, a change will be required on the Microsoft side.</span></span>
+
+<span data-ttu-id="dbb25-186">Hvis enheten støttes og dataene er tilgjengelige i CDS, må du kontrollere tilordningen er riktig i Dataintegrator.</span><span class="sxs-lookup"><span data-stu-id="dbb25-186">If the entity is supported and the data is available in CDS, verify the mapping is correct in Data Integrator.</span></span> <span data-ttu-id="dbb25-187">Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt.</span><span class="sxs-lookup"><span data-stu-id="dbb25-187">If the integrator mapping looks okay, then verify the data management jobs have successfully run.</span></span> <span data-ttu-id="dbb25-188">Feil kan oppstå under kjøring av satsvise jobber.</span><span class="sxs-lookup"><span data-stu-id="dbb25-188">Errors may occur during the execution of the batch jobs.</span></span> <span data-ttu-id="dbb25-189">Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).</span><span class="sxs-lookup"><span data-stu-id="dbb25-189">For more information about Data Management, see [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).</span></span>
+
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a><span data-ttu-id="dbb25-190">Adressene til mine ansatte er feil når jeg importere dem til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-190">The addresses for my employees are incorrect after I import them into Finance and Operations.</span></span> <span data-ttu-id="dbb25-191">Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-191">What should I do?</span></span>
+
+<span data-ttu-id="dbb25-192">Nummerserien for **Plasserings-ID** bruker samme mønster i både Talent og Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-192">The number sequence for **Location ID** uses the same pattern in both Talent and Finance and Operations.</span></span> <span data-ttu-id="dbb25-193">Nummerserien må være unik på begge sider, slik at det ikke finnes noen adressekollisjoner ved integrering av data fra CDS til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-193">The number sequence needs to be unique on both sides so there are no address collisions when integrating data from CDS to Finance and Operations.</span></span>
+
+<span data-ttu-id="dbb25-194">Under implementering av Talent må du kontrollere at nummerseriene ikke er de samme i Talent og Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-194">During implementation of Talent, verify that the number sequences are not the same in Talent and Finance and Operations.</span></span> <span data-ttu-id="dbb25-195">Valider at alle nummerserier ikke er identiske der data kan vedlikeholdes i begge systemene.</span><span class="sxs-lookup"><span data-stu-id="dbb25-195">Validate that all number sequences are not identical where data may be maintained in both systems.</span></span>
+
+## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a><span data-ttu-id="dbb25-196">Når jeg oppretter tilkoblingssettet mitt, vises ikke tilkoblingen i rullegardinlisten Tilkobling.</span><span class="sxs-lookup"><span data-stu-id="dbb25-196">When creating my connection set, I am unable to see the connection in the Connection drop-down list.</span></span> <span data-ttu-id="dbb25-197">Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-197">What do I do?</span></span>
+
+<span data-ttu-id="dbb25-198">Kontroller at du velger Dynamics 365 for Finance and Operations (som er i forhåndsvisning) og Common Data Service når du oppretter tilkoblinger.</span><span class="sxs-lookup"><span data-stu-id="dbb25-198">Make sure when creating your connections, you choose Dynamics 365 for Finance and Operations (currently in preview) and Common Data Service.</span></span>
+
+## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a><span data-ttu-id="dbb25-199">Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-199">When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?</span></span>
+
+<span data-ttu-id="dbb25-200">Kontroller at du tilordner til de riktige juridiske enhetene.</span><span class="sxs-lookup"><span data-stu-id="dbb25-200">Ensure that you are mapping to the correct legal entities.</span></span> <span data-ttu-id="dbb25-201">Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Talent og CDS, også finnes i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="dbb25-201">Legal entity syncing is not part of the default template, so it is expected that each legal entity that is present in Talent and CDS is also present in Finance and Operations.</span></span>
+<span data-ttu-id="dbb25-202">Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.</span><span class="sxs-lookup"><span data-stu-id="dbb25-202">Also, make sure that you are selecting the correct legal entities for the associated Connection Set.</span></span>
+
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a><span data-ttu-id="dbb25-203">Når jeg har definert prosjektet, ser det ut til at felttilordningen for Finance and Operations er tomt.</span><span class="sxs-lookup"><span data-stu-id="dbb25-203">After setting up my project, the field mapping for Finance and Operations appears to be empty.</span></span> <span data-ttu-id="dbb25-204">Hva gjør jeg?</span><span class="sxs-lookup"><span data-stu-id="dbb25-204">What should I do?</span></span>
+
+<span data-ttu-id="dbb25-205">Oppdater dataenhetene i Finance and Operations ved å gå til **Databehandling \> Rammeverkparametere \> Enhetsinnstillinger \> Oppdater enhetsliste**.</span><span class="sxs-lookup"><span data-stu-id="dbb25-205">Refresh the data entities in Finance and Operations by going to **Data management \> Framework Parameters \> Entity settings \> Refresh entity list.**</span></span> <span data-ttu-id="dbb25-206">Dette tar noen minutter å fullføre, og deretter skal du se tilordningene.</span><span class="sxs-lookup"><span data-stu-id="dbb25-206">This should take a couple of minutes to complete, then you should see those mappings.</span></span> <span data-ttu-id="dbb25-207">Dette problemet skjer ved opprettelse av nye prosjekter.</span><span class="sxs-lookup"><span data-stu-id="dbb25-207">This issue occurs when new projects are created.</span></span>
+
+![Mangler felttilordning](media/MissingFieldMapping.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="dbb25-209">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="dbb25-209">Additional resources</span></span>
+
+- <span data-ttu-id="dbb25-210">Dataintegrator (DI):</span><span class="sxs-lookup"><span data-stu-id="dbb25-210">Data Integrator (DI):</span></span> 
+
+  - [<span data-ttu-id="dbb25-211">Integrere data til Common Data Service for Apps</span><span class="sxs-lookup"><span data-stu-id="dbb25-211">Integrate data into Common Data Service for Apps</span></span>](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+
+  - [<span data-ttu-id="dbb25-212">Feiladministrasjon og feilsøking av dataintegrator</span><span class="sxs-lookup"><span data-stu-id="dbb25-212">Data Integrator error management and troubleshooting</span></span>](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+
+  - [<span data-ttu-id="dbb25-213">Svarer på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow, og Common Data Service for Apps</span><span class="sxs-lookup"><span data-stu-id="dbb25-213">Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service for Apps</span></span>](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+
+- <span data-ttu-id="dbb25-214">Databehandling:</span><span class="sxs-lookup"><span data-stu-id="dbb25-214">Data Management:</span></span>
+
+  - [<span data-ttu-id="dbb25-215">Databehandling</span><span class="sxs-lookup"><span data-stu-id="dbb25-215">Data management</span></span>](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

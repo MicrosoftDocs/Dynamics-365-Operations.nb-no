@@ -1,13 +1,13 @@
---- 
+---
 title: Definere etterdaterte sjekker
-description: "Dette emnet forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger."
+description: Dette emnet forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,53 +16,52 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e4b18ebe1388998b45e5ef38318b0ade9153f7c8
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342621"
 ---
-# <a name="set-up-postdated-checks"></a><span data-ttu-id="cde48-103">Definere etterdaterte sjekker</span><span class="sxs-lookup"><span data-stu-id="cde48-103">Set up postdated checks</span></span>
+# <a name="set-up-postdated-checks"></a><span data-ttu-id="90978-103">Definere etterdaterte sjekker</span><span class="sxs-lookup"><span data-stu-id="90978-103">Set up postdated checks</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="cde48-104">Dette emnet forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger.</span><span class="sxs-lookup"><span data-stu-id="cde48-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="cde48-105">Du kan også angi avregningskontoer for utstedte sjekker, mottatte sjekker og kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="cde48-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="cde48-106">Etterdaterte sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato.</span><span class="sxs-lookup"><span data-stu-id="cde48-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="cde48-107">Du kan angi om sjekken skal gjenspeiles i regnskapet før forfallsdatoen.</span><span class="sxs-lookup"><span data-stu-id="cde48-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
+<span data-ttu-id="90978-104">Dette emnet forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger.</span><span class="sxs-lookup"><span data-stu-id="90978-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="90978-105">Du kan også angi avregningskontoer for utstedte sjekker, mottatte sjekker og kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="90978-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="90978-106">Etterdaterte sjekker som er utstedt for å foreta og motta betalinger på en fremtidig dato.</span><span class="sxs-lookup"><span data-stu-id="90978-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="90978-107">Du kan angi om sjekken skal gjenspeiles i regnskapet før forfallsdatoen.</span><span class="sxs-lookup"><span data-stu-id="90978-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
 
 
 
-<span data-ttu-id="cde48-108">Rollen til denne prosedyren er kasserer.</span><span class="sxs-lookup"><span data-stu-id="cde48-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="cde48-109">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="cde48-109">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="90978-108">Rollen til denne prosedyren er kasserer.</span><span class="sxs-lookup"><span data-stu-id="90978-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="90978-109">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="90978-109">This procedure uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-postdated-checks"></a><span data-ttu-id="cde48-110">Definere etterdaterte sjekker</span><span class="sxs-lookup"><span data-stu-id="cde48-110">Set up postdated checks</span></span>
-1. <span data-ttu-id="cde48-111">Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.</span><span class="sxs-lookup"><span data-stu-id="cde48-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="cde48-112">Velg kategorien Etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="cde48-112">Click the Postdated checks tab.</span></span>
-3. <span data-ttu-id="cde48-113">Merk av eller fjern merket i avmerkingsboksen Aktiver etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="cde48-113">Select or clear the Enable postdated checks check box.</span></span>
-4. <span data-ttu-id="cde48-114">Merk av eller fjern merket i avmerkingsboksen Poster journaloppføringer for etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="cde48-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
-5. <span data-ttu-id="cde48-115">Angi ønskede verdier i feltet Avregningskonto for utstedte sjekker.</span><span class="sxs-lookup"><span data-stu-id="cde48-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
-6. <span data-ttu-id="cde48-116">Angi ønskede verdier i feltet Avregningskonto for mottatte sjekker.</span><span class="sxs-lookup"><span data-stu-id="cde48-116">In the Clearing account for received checks field, specify the desired values.</span></span>
-7. <span data-ttu-id="cde48-117">Skriv inn en verdi i feltet Økonomijournal for klarering av oppføringer.</span><span class="sxs-lookup"><span data-stu-id="cde48-117">In the General journal for clearing entries field, type a value.</span></span>
-8. <span data-ttu-id="cde48-118">Skriv inn en verdi i feltet Overfør etterdaterte sjekker til denne leverandørbetalingsjournalen.</span><span class="sxs-lookup"><span data-stu-id="cde48-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
-9. <span data-ttu-id="cde48-119">Angir ønskede verdier feltet Clearingkonto for kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="cde48-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
-10. <span data-ttu-id="cde48-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="cde48-120">Click Save.</span></span>
-11. <span data-ttu-id="cde48-121">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="cde48-121">Close the page.</span></span>
-12. <span data-ttu-id="cde48-122">Gå til Leverandører > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="cde48-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
-13. <span data-ttu-id="cde48-123">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="cde48-123">Click New.</span></span>
-14. <span data-ttu-id="cde48-124">Skriv inn en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="cde48-124">In the Method of payment field, type a value.</span></span>
-15. <span data-ttu-id="cde48-125">Velg alternativet Etterdatert sjekklareringspostering for å indikere at sjekkbeløpet posteres til en avregningskonto.</span><span class="sxs-lookup"><span data-stu-id="cde48-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
-16. <span data-ttu-id="cde48-126">Velg Bank i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="cde48-126">In the Account type field, select 'Bank'.</span></span>
-    * <span data-ttu-id="cde48-127">Motkontoen for betalingsmetoden vil være en bank.</span><span class="sxs-lookup"><span data-stu-id="cde48-127">The offset account of the payment method will be a bank.</span></span>  
-17. <span data-ttu-id="cde48-128">Angi ønskede verdier i feltet Betalingskonto.</span><span class="sxs-lookup"><span data-stu-id="cde48-128">In the Payment account field, specify the desired values.</span></span>
-    * <span data-ttu-id="cde48-129">Velg bankkontoen som brukes til å trekke fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="cde48-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
-18. <span data-ttu-id="cde48-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="cde48-130">Close the page.</span></span>
-19. <span data-ttu-id="cde48-131">Gå til Kunder > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="cde48-131">Go to Accounts receivable > Payment setup > Methods of payment</span></span>
-20. <span data-ttu-id="cde48-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="cde48-132">Click New.</span></span>
-21. <span data-ttu-id="cde48-133">Skriv inn en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="cde48-133">In the Method of payment field, type a value.</span></span>
-22. <span data-ttu-id="cde48-134">Velg alternativet Etterdatert sjekklareringspostering for å indikere at sjekkbeløpet posteres til en avregningskonto.</span><span class="sxs-lookup"><span data-stu-id="cde48-134">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
-23. <span data-ttu-id="cde48-135">Velg Bank i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="cde48-135">In the Account type field, select 'Bank'.</span></span>
-    * <span data-ttu-id="cde48-136">Motkontoen for betalingsmetoden vil være en bank.</span><span class="sxs-lookup"><span data-stu-id="cde48-136">The offset account of the payment method will be a bank.</span></span>  
-24. <span data-ttu-id="cde48-137">Angi ønskede verdier i feltet Betalingskonto.</span><span class="sxs-lookup"><span data-stu-id="cde48-137">In the Payment account field, specify the desired values.</span></span>
-    * <span data-ttu-id="cde48-138">Velg bankkontoen som brukes til å trekke fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="cde48-138">Select the bank account that is used to deduct the invoice amount.</span></span>  
-25. <span data-ttu-id="cde48-139">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="cde48-139">Close the page.</span></span>
-
+## <a name="set-up-postdated-checks"></a><span data-ttu-id="90978-110">Definere etterdaterte sjekker</span><span class="sxs-lookup"><span data-stu-id="90978-110">Set up postdated checks</span></span>
+1. <span data-ttu-id="90978-111">Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.</span><span class="sxs-lookup"><span data-stu-id="90978-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="90978-112">Velg kategorien Etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="90978-112">Click the Postdated checks tab.</span></span>
+3. <span data-ttu-id="90978-113">Merk av eller fjern merket i avmerkingsboksen Aktiver etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="90978-113">Select or clear the Enable postdated checks check box.</span></span>
+4. <span data-ttu-id="90978-114">Merk av eller fjern merket i avmerkingsboksen Poster journaloppføringer for etterdaterte sjekker.</span><span class="sxs-lookup"><span data-stu-id="90978-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
+5. <span data-ttu-id="90978-115">Angi ønskede verdier i feltet Avregningskonto for utstedte sjekker.</span><span class="sxs-lookup"><span data-stu-id="90978-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
+6. <span data-ttu-id="90978-116">Angi ønskede verdier i feltet Avregningskonto for mottatte sjekker.</span><span class="sxs-lookup"><span data-stu-id="90978-116">In the Clearing account for received checks field, specify the desired values.</span></span>
+7. <span data-ttu-id="90978-117">Skriv inn en verdi i feltet Økonomijournal for klarering av oppføringer.</span><span class="sxs-lookup"><span data-stu-id="90978-117">In the General journal for clearing entries field, type a value.</span></span>
+8. <span data-ttu-id="90978-118">Skriv inn en verdi i feltet Overfør etterdaterte sjekker til denne leverandørbetalingsjournalen.</span><span class="sxs-lookup"><span data-stu-id="90978-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
+9. <span data-ttu-id="90978-119">Angir ønskede verdier feltet Clearingkonto for kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="90978-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
+10. <span data-ttu-id="90978-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="90978-120">Click Save.</span></span>
+11. <span data-ttu-id="90978-121">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90978-121">Close the page.</span></span>
+12. <span data-ttu-id="90978-122">Gå til Leverandører > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="90978-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
+13. <span data-ttu-id="90978-123">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="90978-123">Click New.</span></span>
+14. <span data-ttu-id="90978-124">Skriv inn en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="90978-124">In the Method of payment field, type a value.</span></span>
+15. <span data-ttu-id="90978-125">Velg alternativet Etterdatert sjekklareringspostering for å indikere at sjekkbeløpet posteres til en avregningskonto.</span><span class="sxs-lookup"><span data-stu-id="90978-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
+16. <span data-ttu-id="90978-126">Velg Bank i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="90978-126">In the Account type field, select 'Bank'.</span></span>
+    * <span data-ttu-id="90978-127">Motkontoen for betalingsmetoden vil være en bank.</span><span class="sxs-lookup"><span data-stu-id="90978-127">The offset account of the payment method will be a bank.</span></span>  
+17. <span data-ttu-id="90978-128">Angi ønskede verdier i feltet Betalingskonto.</span><span class="sxs-lookup"><span data-stu-id="90978-128">In the Payment account field, specify the desired values.</span></span>
+    * <span data-ttu-id="90978-129">Velg bankkontoen som brukes til å trekke fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="90978-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
+18. <span data-ttu-id="90978-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90978-130">Close the page.</span></span>
+19. <span data-ttu-id="90978-131">Gå til Kunder > Betalingsoppsett > Betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="90978-131">Go to Accounts receivable > Payment setup > Methods of payment</span></span>
+20. <span data-ttu-id="90978-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="90978-132">Click New.</span></span>
+21. <span data-ttu-id="90978-133">Skriv inn en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="90978-133">In the Method of payment field, type a value.</span></span>
+22. <span data-ttu-id="90978-134">Velg alternativet Etterdatert sjekklareringspostering for å indikere at sjekkbeløpet posteres til en avregningskonto.</span><span class="sxs-lookup"><span data-stu-id="90978-134">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
+23. <span data-ttu-id="90978-135">Velg Bank i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="90978-135">In the Account type field, select 'Bank'.</span></span>
+    * <span data-ttu-id="90978-136">Motkontoen for betalingsmetoden vil være en bank.</span><span class="sxs-lookup"><span data-stu-id="90978-136">The offset account of the payment method will be a bank.</span></span>  
+24. <span data-ttu-id="90978-137">Angi ønskede verdier i feltet Betalingskonto.</span><span class="sxs-lookup"><span data-stu-id="90978-137">In the Payment account field, specify the desired values.</span></span>
+    * <span data-ttu-id="90978-138">Velg bankkontoen som brukes til å trekke fakturabeløpet.</span><span class="sxs-lookup"><span data-stu-id="90978-138">Select the bank account that is used to deduct the invoice amount.</span></span>  
+25. <span data-ttu-id="90978-139">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90978-139">Close the page.</span></span>
 

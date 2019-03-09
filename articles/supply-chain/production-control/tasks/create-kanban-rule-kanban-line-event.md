@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette Kanban-regel ved hjelp av en hendelse for Kanban-linje
-description: "Denne fremgangsmåten oppretter en Kanban-regel ved å bruke hendelsesinnstillingen for Kanban-linjen for å utløse trekk fra en prosessaktivitet."
+description: Denne fremgangsmåten oppretter en Kanban-regel ved å bruke hendelsesinnstillingen for Kanban-linjen for å utløse trekk fra en prosessaktivitet.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,56 +17,55 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: bff5f16c1911739a29d50c546c3c2a9ab85c2371
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350234"
 ---
-# <a name="create-a-kanban-rule-using-a-kanban-line-event"></a><span data-ttu-id="070ff-103">Opprette Kanban-regel ved hjelp av en hendelse for Kanban-linje</span><span class="sxs-lookup"><span data-stu-id="070ff-103">Create a kanban rule using a kanban line event</span></span>
+# <a name="create-a-kanban-rule-using-a-kanban-line-event"></a><span data-ttu-id="e9822-103">Opprette Kanban-regel ved hjelp av en hendelse for Kanban-linje</span><span class="sxs-lookup"><span data-stu-id="e9822-103">Create a kanban rule using a kanban line event</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="070ff-104">Denne fremgangsmåten oppretter en Kanban-regel ved å bruke hendelsesinnstillingen for Kanban-linjen for å utløse trekk fra en prosessaktivitet.</span><span class="sxs-lookup"><span data-stu-id="070ff-104">This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity.</span></span> <span data-ttu-id="070ff-105">Kanban-regelen blir utløst av en kanban-prosessaktivitet, med et antall like eller større enn 25 hver.</span><span class="sxs-lookup"><span data-stu-id="070ff-105">The kanban rule is triggered by a kanban process activity, with a quantity equal to or greater than 25 each.</span></span> <span data-ttu-id="070ff-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="070ff-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="070ff-107">Denne oppgaven er ment for prosessingeniøren eller verdistrømlederen, når de klargjør produksjon av et nytt eller endret produkt i et lean-miljø.</span><span class="sxs-lookup"><span data-stu-id="070ff-107">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
+<span data-ttu-id="e9822-104">Denne fremgangsmåten oppretter en Kanban-regel ved å bruke hendelsesinnstillingen for Kanban-linjen for å utløse trekk fra en prosessaktivitet.</span><span class="sxs-lookup"><span data-stu-id="e9822-104">This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity.</span></span> <span data-ttu-id="e9822-105">Kanban-regelen blir utløst av en kanban-prosessaktivitet, med et antall like eller større enn 25 hver.</span><span class="sxs-lookup"><span data-stu-id="e9822-105">The kanban rule is triggered by a kanban process activity, with a quantity equal to or greater than 25 each.</span></span> <span data-ttu-id="e9822-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="e9822-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="e9822-107">Denne oppgaven er ment for prosessingeniøren eller verdistrømlederen, når de klargjør produksjon av et nytt eller endret produkt i et lean-miljø.</span><span class="sxs-lookup"><span data-stu-id="e9822-107">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
 
 
-## <a name="create-a-kanban-rule"></a><span data-ttu-id="070ff-108">Opprette en Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="070ff-108">Create a kanban rule</span></span>
-1. <span data-ttu-id="070ff-109">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="070ff-109">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-2. <span data-ttu-id="070ff-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="070ff-110">Click New.</span></span>
-3. <span data-ttu-id="070ff-111">Velg Hendelse i feltet Etterfyllingsstrategi.</span><span class="sxs-lookup"><span data-stu-id="070ff-111">In the Replenishment strategy field, select 'Event'.</span></span>
-    * <span data-ttu-id="070ff-112">Dette genererer Kanbaner direkte fra behovet.</span><span class="sxs-lookup"><span data-stu-id="070ff-112">This generates kanbans directly from demand.</span></span> <span data-ttu-id="070ff-113">Den brukes til å definere regler som definerer et bestillingsproduktscenario.</span><span class="sxs-lookup"><span data-stu-id="070ff-113">It is used to set up rules that define a make-to-order scenario.</span></span>  
-4. <span data-ttu-id="070ff-114">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="070ff-114">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="070ff-115">Angi eller velg SpeakerAssemblyAndPolish.</span><span class="sxs-lookup"><span data-stu-id="070ff-115">Enter or select SpeakerAssemblyAndPolish.</span></span> <span data-ttu-id="070ff-116">Den første aktiviteten i en Kanban-regel er en prosessaktivitet i produksjonsflyten.</span><span class="sxs-lookup"><span data-stu-id="070ff-116">The first activity of a manufacturing kanban rule is a process activity in the production flow.</span></span> <span data-ttu-id="070ff-117">Når du velger aktiviteten, blir gyldighetsdatoene for aktiviteten kopiert til gyldighetsdatoene for Kanban-regelen.</span><span class="sxs-lookup"><span data-stu-id="070ff-117">When you select the activity, the validity dates of the activity are copied to the validity dates of the kanban rule.</span></span>  
-5. <span data-ttu-id="070ff-118">Vis delen Detaljer.</span><span class="sxs-lookup"><span data-stu-id="070ff-118">Expand the Details section.</span></span>
-6. <span data-ttu-id="070ff-119">Skriv L0001 i Produkt-feltet.</span><span class="sxs-lookup"><span data-stu-id="070ff-119">In the Product field, type 'L0001'.</span></span>
-7. <span data-ttu-id="070ff-120">Utvid delen Hendelser.</span><span class="sxs-lookup"><span data-stu-id="070ff-120">Expand the Events section.</span></span>
-8. <span data-ttu-id="070ff-121">Velg Automatisk i hendelsesfeltet Kanban-linje.</span><span class="sxs-lookup"><span data-stu-id="070ff-121">In the Kanban line event field, select 'Automatic'.</span></span>
-    * <span data-ttu-id="070ff-122">Dette genererer hendelses-Kanbaner ved behov.</span><span class="sxs-lookup"><span data-stu-id="070ff-122">This generates event kanbans on demand.</span></span>  <span data-ttu-id="070ff-123">Dette feltet brukes for å konfigurere Kanban-regler som etterfyller materiale som kreves for en etterfølgende prosessaktivitet.</span><span class="sxs-lookup"><span data-stu-id="070ff-123">The field is used to configure kanban rules that replenish material that is required for a downstream process activity.</span></span> <span data-ttu-id="070ff-124">Når du velger Automatisk, opprettes hendelses-Kanbaner med behovet.</span><span class="sxs-lookup"><span data-stu-id="070ff-124">When you select Automatic, the event kanbans are created with the demand.</span></span> <span data-ttu-id="070ff-125">Denne innstillingen anbefales hvis du har tenkt å utføre produksjon på samme dag.</span><span class="sxs-lookup"><span data-stu-id="070ff-125">This setting is recommended if you expect to execute production on the same day.</span></span>  
-9. <span data-ttu-id="070ff-126">Sett Minimumsantall for hendelse til 25.</span><span class="sxs-lookup"><span data-stu-id="070ff-126">Set Minimum event quantity to '25'.</span></span>
-    * <span data-ttu-id="070ff-127">Hendelses-Kanbaner genereres når behovsantallet er lik eller større enn dette feltet.</span><span class="sxs-lookup"><span data-stu-id="070ff-127">Event kanbans are generated when the demand quantity is equal to or more than this field.</span></span> <span data-ttu-id="070ff-128">Dette er nyttig hvis du vil produsere et ordreantall som er mindre enn dette feltet på en maskin og flere enn dette feltet på en annen maskin.</span><span class="sxs-lookup"><span data-stu-id="070ff-128">This is useful if you want to produce an order quantity less than this field on one machine and more than this field on another machine.</span></span>  
-10. <span data-ttu-id="070ff-129">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="070ff-129">Click Save.</span></span>
+## <a name="create-a-kanban-rule"></a><span data-ttu-id="e9822-108">Opprette en Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="e9822-108">Create a kanban rule</span></span>
+1. <span data-ttu-id="e9822-109">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="e9822-109">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="e9822-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e9822-110">Click New.</span></span>
+3. <span data-ttu-id="e9822-111">Velg Hendelse i feltet Etterfyllingsstrategi.</span><span class="sxs-lookup"><span data-stu-id="e9822-111">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="e9822-112">Dette genererer Kanbaner direkte fra behovet.</span><span class="sxs-lookup"><span data-stu-id="e9822-112">This generates kanbans directly from demand.</span></span> <span data-ttu-id="e9822-113">Den brukes til å definere regler som definerer et bestillingsproduktscenario.</span><span class="sxs-lookup"><span data-stu-id="e9822-113">It is used to set up rules that define a make-to-order scenario.</span></span>  
+4. <span data-ttu-id="e9822-114">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="e9822-114">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="e9822-115">Angi eller velg SpeakerAssemblyAndPolish.</span><span class="sxs-lookup"><span data-stu-id="e9822-115">Enter or select SpeakerAssemblyAndPolish.</span></span> <span data-ttu-id="e9822-116">Den første aktiviteten i en Kanban-regel er en prosessaktivitet i produksjonsflyten.</span><span class="sxs-lookup"><span data-stu-id="e9822-116">The first activity of a manufacturing kanban rule is a process activity in the production flow.</span></span> <span data-ttu-id="e9822-117">Når du velger aktiviteten, blir gyldighetsdatoene for aktiviteten kopiert til gyldighetsdatoene for Kanban-regelen.</span><span class="sxs-lookup"><span data-stu-id="e9822-117">When you select the activity, the validity dates of the activity are copied to the validity dates of the kanban rule.</span></span>  
+5. <span data-ttu-id="e9822-118">Vis delen Detaljer.</span><span class="sxs-lookup"><span data-stu-id="e9822-118">Expand the Details section.</span></span>
+6. <span data-ttu-id="e9822-119">Skriv L0001 i Produkt-feltet.</span><span class="sxs-lookup"><span data-stu-id="e9822-119">In the Product field, type 'L0001'.</span></span>
+7. <span data-ttu-id="e9822-120">Utvid delen Hendelser.</span><span class="sxs-lookup"><span data-stu-id="e9822-120">Expand the Events section.</span></span>
+8. <span data-ttu-id="e9822-121">Velg Automatisk i hendelsesfeltet Kanban-linje.</span><span class="sxs-lookup"><span data-stu-id="e9822-121">In the Kanban line event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="e9822-122">Dette genererer hendelses-Kanbaner ved behov.</span><span class="sxs-lookup"><span data-stu-id="e9822-122">This generates event kanbans on demand.</span></span>  <span data-ttu-id="e9822-123">Dette feltet brukes for å konfigurere Kanban-regler som etterfyller materiale som kreves for en etterfølgende prosessaktivitet.</span><span class="sxs-lookup"><span data-stu-id="e9822-123">The field is used to configure kanban rules that replenish material that is required for a downstream process activity.</span></span> <span data-ttu-id="e9822-124">Når du velger Automatisk, opprettes hendelses-Kanbaner med behovet.</span><span class="sxs-lookup"><span data-stu-id="e9822-124">When you select Automatic, the event kanbans are created with the demand.</span></span> <span data-ttu-id="e9822-125">Denne innstillingen anbefales hvis du har tenkt å utføre produksjon på samme dag.</span><span class="sxs-lookup"><span data-stu-id="e9822-125">This setting is recommended if you expect to execute production on the same day.</span></span>  
+9. <span data-ttu-id="e9822-126">Sett Minimumsantall for hendelse til 25.</span><span class="sxs-lookup"><span data-stu-id="e9822-126">Set Minimum event quantity to '25'.</span></span>
+    * <span data-ttu-id="e9822-127">Hendelses-Kanbaner genereres når behovsantallet er lik eller større enn dette feltet.</span><span class="sxs-lookup"><span data-stu-id="e9822-127">Event kanbans are generated when the demand quantity is equal to or more than this field.</span></span> <span data-ttu-id="e9822-128">Dette er nyttig hvis du vil produsere et ordreantall som er mindre enn dette feltet på en maskin og flere enn dette feltet på en annen maskin.</span><span class="sxs-lookup"><span data-stu-id="e9822-128">This is useful if you want to produce an order quantity less than this field on one machine and more than this field on another machine.</span></span>  
+10. <span data-ttu-id="e9822-129">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="e9822-129">Click Save.</span></span>
 
-## <a name="create-sales-order-and-trigger-kanban-chain"></a><span data-ttu-id="070ff-130">Opprette salgsordre og utløse Kanban-kjede</span><span class="sxs-lookup"><span data-stu-id="070ff-130">Create sales order and trigger kanban chain</span></span>
-1. <span data-ttu-id="070ff-131">Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="070ff-131">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
-2. <span data-ttu-id="070ff-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="070ff-132">Click New.</span></span>
-3. <span data-ttu-id="070ff-133">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="070ff-133">In the Customer account field, enter or select a value.</span></span>
-    * <span data-ttu-id="070ff-134">Velg kundekontoen USA-003, Forest Wholesales.</span><span class="sxs-lookup"><span data-stu-id="070ff-134">Select Customer account US-003, Forest Wholesales.</span></span>  
-4. <span data-ttu-id="070ff-135">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="070ff-135">Click OK.</span></span>
-5. <span data-ttu-id="070ff-136">Skriv inn L0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="070ff-136">In the Item number field, type 'L0001'.</span></span>
-    * <span data-ttu-id="070ff-137">L0001 er varen du opprettet Kanban-regelen for.</span><span class="sxs-lookup"><span data-stu-id="070ff-137">L0001 is the item for which you created the kanban rule.</span></span>  
-6. <span data-ttu-id="070ff-138">Sett verdien for Antall til 27.</span><span class="sxs-lookup"><span data-stu-id="070ff-138">Set Quantity to '27'.</span></span>
-    * <span data-ttu-id="070ff-139">Siden 27 er høyere enn minimumsantallet 25 i Kanban-regelen, utløser dette en hendelses-Kanban.</span><span class="sxs-lookup"><span data-stu-id="070ff-139">Because 27 is higher than the minimum quantity of 25 on the kanban rule, this will trigger an event kanban.</span></span>  
-7. <span data-ttu-id="070ff-140">Skriv inn 1 i feltet Område.</span><span class="sxs-lookup"><span data-stu-id="070ff-140">In the Site field, type '1'.</span></span>
-8. <span data-ttu-id="070ff-141">Angi eller velg en verdi i feltet Lager.</span><span class="sxs-lookup"><span data-stu-id="070ff-141">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="070ff-142">Velg lager 13.</span><span class="sxs-lookup"><span data-stu-id="070ff-142">Select warehouse 13.</span></span>  
-9. <span data-ttu-id="070ff-143">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="070ff-143">Click Save.</span></span>
+## <a name="create-sales-order-and-trigger-kanban-chain"></a><span data-ttu-id="e9822-130">Opprette salgsordre og utløse Kanban-kjede</span><span class="sxs-lookup"><span data-stu-id="e9822-130">Create sales order and trigger kanban chain</span></span>
+1. <span data-ttu-id="e9822-131">Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="e9822-131">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="e9822-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e9822-132">Click New.</span></span>
+3. <span data-ttu-id="e9822-133">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="e9822-133">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="e9822-134">Velg kundekontoen USA-003, Forest Wholesales.</span><span class="sxs-lookup"><span data-stu-id="e9822-134">Select Customer account US-003, Forest Wholesales.</span></span>  
+4. <span data-ttu-id="e9822-135">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e9822-135">Click OK.</span></span>
+5. <span data-ttu-id="e9822-136">Skriv inn L0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="e9822-136">In the Item number field, type 'L0001'.</span></span>
+    * <span data-ttu-id="e9822-137">L0001 er varen du opprettet Kanban-regelen for.</span><span class="sxs-lookup"><span data-stu-id="e9822-137">L0001 is the item for which you created the kanban rule.</span></span>  
+6. <span data-ttu-id="e9822-138">Sett verdien for Antall til 27.</span><span class="sxs-lookup"><span data-stu-id="e9822-138">Set Quantity to '27'.</span></span>
+    * <span data-ttu-id="e9822-139">Siden 27 er høyere enn minimumsantallet 25 i Kanban-regelen, utløser dette en hendelses-Kanban.</span><span class="sxs-lookup"><span data-stu-id="e9822-139">Because 27 is higher than the minimum quantity of 25 on the kanban rule, this will trigger an event kanban.</span></span>  
+7. <span data-ttu-id="e9822-140">Skriv inn 1 i feltet Område.</span><span class="sxs-lookup"><span data-stu-id="e9822-140">In the Site field, type '1'.</span></span>
+8. <span data-ttu-id="e9822-141">Angi eller velg en verdi i feltet Lager.</span><span class="sxs-lookup"><span data-stu-id="e9822-141">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="e9822-142">Velg lager 13.</span><span class="sxs-lookup"><span data-stu-id="e9822-142">Select warehouse 13.</span></span>  
+9. <span data-ttu-id="e9822-143">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="e9822-143">Click Save.</span></span>
 
-## <a name="view-the-kanban-generated-by-the-kanban-rule"></a><span data-ttu-id="070ff-144">Vise Kanban som er generert av Kanban-regelen</span><span class="sxs-lookup"><span data-stu-id="070ff-144">View the kanban generated by the kanban rule</span></span>
-1. <span data-ttu-id="070ff-145">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="070ff-145">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-2. <span data-ttu-id="070ff-146">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="070ff-146">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="070ff-147">Vis delen Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="070ff-147">Expand the Kanbans section.</span></span>
-    * <span data-ttu-id="070ff-148">Legg merke til at en Kanban for 27 ble opprettet for å behandle aktiviteten basert på den opprettede Kanban-regelen.</span><span class="sxs-lookup"><span data-stu-id="070ff-148">Notice that a kanban for 27 was created to process the  activity based on the created kanban rule.</span></span>  
-    * <span data-ttu-id="070ff-149">Dette er det siste trinnet.</span><span class="sxs-lookup"><span data-stu-id="070ff-149">This is the last step.</span></span>  
-
+## <a name="view-the-kanban-generated-by-the-kanban-rule"></a><span data-ttu-id="e9822-144">Vise Kanban som er generert av Kanban-regelen</span><span class="sxs-lookup"><span data-stu-id="e9822-144">View the kanban generated by the kanban rule</span></span>
+1. <span data-ttu-id="e9822-145">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="e9822-145">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="e9822-146">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="e9822-146">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="e9822-147">Vis delen Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="e9822-147">Expand the Kanbans section.</span></span>
+    * <span data-ttu-id="e9822-148">Legg merke til at en Kanban for 27 ble opprettet for å behandle aktiviteten basert på den opprettede Kanban-regelen.</span><span class="sxs-lookup"><span data-stu-id="e9822-148">Notice that a kanban for 27 was created to process the  activity based on the created kanban rule.</span></span>  
+    * <span data-ttu-id="e9822-149">Dette er det siste trinnet.</span><span class="sxs-lookup"><span data-stu-id="e9822-149">This is the last step.</span></span>  
 

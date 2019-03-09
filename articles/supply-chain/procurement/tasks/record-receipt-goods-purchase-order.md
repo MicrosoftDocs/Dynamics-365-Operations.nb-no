@@ -1,13 +1,13 @@
---- 
+---
 title: Registrere mottaket av varene i bestillingen
-description: "Denne fremgangsmåten viser hvordan du registrerer mottak av varer direkte i en bestilling."
+description: Denne fremgangsmåten viser hvordan du registrerer mottak av varer direkte i en bestilling.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,40 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 14d1d43479f9864d8fd5ed94a98a654e75eeedf0
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343219"
 ---
-# <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="d22e2-103">Registrere mottaket av varene i bestillingen</span><span class="sxs-lookup"><span data-stu-id="d22e2-103">Record the receipt of goods on the purchase order</span></span>
+# <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="51ca3-103">Registrere mottaket av varene i bestillingen</span><span class="sxs-lookup"><span data-stu-id="51ca3-103">Record the receipt of goods on the purchase order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d22e2-104">Denne fremgangsmåten viser hvordan du registrerer mottak av varer direkte i en bestilling.</span><span class="sxs-lookup"><span data-stu-id="d22e2-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="d22e2-105">Det er også mulig å registrere produktmottak i lageret, og deretter registrere det senere på bestillingen.</span><span class="sxs-lookup"><span data-stu-id="d22e2-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="d22e2-106">Denne oppgaven gjøres vanligvis av en innkjøpsagent eller en leverandørkoordinator.</span><span class="sxs-lookup"><span data-stu-id="d22e2-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="d22e2-107">Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="d22e2-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="d22e2-108">Eksemplet inneholder fremgangsmåte for å opprette en enkel bestilling, slik at du kan spille av prosedyren som en oppgaveveiledning.</span><span class="sxs-lookup"><span data-stu-id="d22e2-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="d22e2-109">Hvis du bruker fremgangsmåten på dine egne data, begynner du med underoppgaven Registrere varemottak.</span><span class="sxs-lookup"><span data-stu-id="d22e2-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
+<span data-ttu-id="51ca3-104">Denne fremgangsmåten viser hvordan du registrerer mottak av varer direkte i en bestilling.</span><span class="sxs-lookup"><span data-stu-id="51ca3-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="51ca3-105">Det er også mulig å registrere produktmottak i lageret, og deretter registrere det senere på bestillingen.</span><span class="sxs-lookup"><span data-stu-id="51ca3-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="51ca3-106">Denne oppgaven gjøres vanligvis av en innkjøpsagent eller en leverandørkoordinator.</span><span class="sxs-lookup"><span data-stu-id="51ca3-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="51ca3-107">Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="51ca3-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="51ca3-108">Eksemplet inneholder fremgangsmåte for å opprette en enkel bestilling, slik at du kan spille av prosedyren som en oppgaveveiledning.</span><span class="sxs-lookup"><span data-stu-id="51ca3-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="51ca3-109">Hvis du bruker fremgangsmåten på dine egne data, begynner du med underoppgaven Registrere varemottak.</span><span class="sxs-lookup"><span data-stu-id="51ca3-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 
 
-## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a><span data-ttu-id="d22e2-110">Klargjøre en ny bestilling for mottak av varer</span><span class="sxs-lookup"><span data-stu-id="d22e2-110">Prepare a new purchase order for receipt of goods</span></span>
-1. <span data-ttu-id="d22e2-111">Gå til Innkjøp og leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="d22e2-111">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="d22e2-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d22e2-112">Click New.</span></span>
-3. <span data-ttu-id="d22e2-113">Angi US-101 i Leverandørkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="d22e2-113">In the Vendor account field, enter US-101.</span></span>
-4. <span data-ttu-id="d22e2-114">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d22e2-114">Click OK.</span></span>
-5. <span data-ttu-id="d22e2-115">Angi M0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="d22e2-115">In the Item number field, enter M0001.</span></span>
-6. <span data-ttu-id="d22e2-116">Angi 5 i Antall-feltet.</span><span class="sxs-lookup"><span data-stu-id="d22e2-116">In the Quantity field, enter 5.</span></span>
-7. <span data-ttu-id="d22e2-117">Klikk Kjøp i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d22e2-117">On the Action Pane, click Purchase.</span></span>
-8. <span data-ttu-id="d22e2-118">Klikk Bekreft.</span><span class="sxs-lookup"><span data-stu-id="d22e2-118">Click Confirm.</span></span>
+## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a><span data-ttu-id="51ca3-110">Klargjøre en ny bestilling for mottak av varer</span><span class="sxs-lookup"><span data-stu-id="51ca3-110">Prepare a new purchase order for receipt of goods</span></span>
+1. <span data-ttu-id="51ca3-111">Gå til Innkjøp og leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="51ca3-111">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="51ca3-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="51ca3-112">Click New.</span></span>
+3. <span data-ttu-id="51ca3-113">Angi US-101 i Leverandørkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="51ca3-113">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="51ca3-114">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="51ca3-114">Click OK.</span></span>
+5. <span data-ttu-id="51ca3-115">Angi M0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="51ca3-115">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="51ca3-116">Angi 5 i Antall-feltet.</span><span class="sxs-lookup"><span data-stu-id="51ca3-116">In the Quantity field, enter 5.</span></span>
+7. <span data-ttu-id="51ca3-117">Klikk Kjøp i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="51ca3-117">On the Action Pane, click Purchase.</span></span>
+8. <span data-ttu-id="51ca3-118">Klikk Bekreft.</span><span class="sxs-lookup"><span data-stu-id="51ca3-118">Click Confirm.</span></span>
 
-## <a name="record-receipt-of-goods"></a><span data-ttu-id="d22e2-119">Registrere varemottak</span><span class="sxs-lookup"><span data-stu-id="d22e2-119">Record receipt of goods</span></span>
-1. <span data-ttu-id="d22e2-120">Klikk Motta i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d22e2-120">On the Action Pane, click Receive.</span></span>
-2. <span data-ttu-id="d22e2-121">Klikk Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="d22e2-121">Click Product receipt.</span></span>
-    * <span data-ttu-id="d22e2-122">Antall-feltet lar deg velge forskjellige alternativer for antallet som du vil motta.</span><span class="sxs-lookup"><span data-stu-id="d22e2-122">The Quantity field allows you to select different options for the quantity that you want to receive.</span></span> <span data-ttu-id="d22e2-123">Hvis et antall for eksempel er registrert på lageret tidligere, kan du velge Registrert antall.</span><span class="sxs-lookup"><span data-stu-id="d22e2-123">For example, if a quantity has previously been registered in the warehouse, you can select Registered quantity.</span></span>  <span data-ttu-id="d22e2-124">I dette eksemplet bruker du verdien Bestilt antall.</span><span class="sxs-lookup"><span data-stu-id="d22e2-124">For this example, use the value Ordered quantity.</span></span>   
-3. <span data-ttu-id="d22e2-125">Skriv inn en verdi i Produktkvittering-feltet.</span><span class="sxs-lookup"><span data-stu-id="d22e2-125">In the Product receipt field, type any value.</span></span>
-    * <span data-ttu-id="d22e2-126">Dette feltet brukes til å angi en referanse som skal brukes som bilag for produktkvitteringsjournalen.</span><span class="sxs-lookup"><span data-stu-id="d22e2-126">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
-4. <span data-ttu-id="d22e2-127">Vis Linjer-delen.</span><span class="sxs-lookup"><span data-stu-id="d22e2-127">Expand the Lines section.</span></span>
-5. <span data-ttu-id="d22e2-128">Sett verdien for Antall til 4.</span><span class="sxs-lookup"><span data-stu-id="d22e2-128">Set Quantity to '4'.</span></span>
-    * <span data-ttu-id="d22e2-129">Her kan du fortsatt manuelt angi antallet som blir mottatt for hver linje i ordren.</span><span class="sxs-lookup"><span data-stu-id="d22e2-129">Here you are able to manually specify the quantity that is being received for each line on the order.</span></span>  
-6. <span data-ttu-id="d22e2-130">Skjul Linjer-delen.</span><span class="sxs-lookup"><span data-stu-id="d22e2-130">Collapse the Lines section.</span></span>
-7. <span data-ttu-id="d22e2-131">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d22e2-131">Click OK.</span></span>
-    * <span data-ttu-id="d22e2-132">Varene er nå registrert som mottatt i bestillingen, og en produktkvitteringsjournal er opprettet som dokument for å gjenspeile dette.</span><span class="sxs-lookup"><span data-stu-id="d22e2-132">The goods have now been recorded as received on the purchase order, and a product receipt journal has been created as document to reflect this.</span></span> <span data-ttu-id="d22e2-133">Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt og når.</span><span class="sxs-lookup"><span data-stu-id="d22e2-133">You can use the Product receipt action to review the journals created with the purchase order, and see what was received, and when.</span></span>  
-
+## <a name="record-receipt-of-goods"></a><span data-ttu-id="51ca3-119">Registrere varemottak</span><span class="sxs-lookup"><span data-stu-id="51ca3-119">Record receipt of goods</span></span>
+1. <span data-ttu-id="51ca3-120">Klikk Motta i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="51ca3-120">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="51ca3-121">Klikk Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="51ca3-121">Click Product receipt.</span></span>
+    * <span data-ttu-id="51ca3-122">Antall-feltet lar deg velge forskjellige alternativer for antallet som du vil motta.</span><span class="sxs-lookup"><span data-stu-id="51ca3-122">The Quantity field allows you to select different options for the quantity that you want to receive.</span></span> <span data-ttu-id="51ca3-123">Hvis et antall for eksempel er registrert på lageret tidligere, kan du velge Registrert antall.</span><span class="sxs-lookup"><span data-stu-id="51ca3-123">For example, if a quantity has previously been registered in the warehouse, you can select Registered quantity.</span></span>  <span data-ttu-id="51ca3-124">I dette eksemplet bruker du verdien Bestilt antall.</span><span class="sxs-lookup"><span data-stu-id="51ca3-124">For this example, use the value Ordered quantity.</span></span>   
+3. <span data-ttu-id="51ca3-125">Skriv inn en verdi i Produktkvittering-feltet.</span><span class="sxs-lookup"><span data-stu-id="51ca3-125">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="51ca3-126">Dette feltet brukes til å angi en referanse som skal brukes som bilag for produktkvitteringsjournalen.</span><span class="sxs-lookup"><span data-stu-id="51ca3-126">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+4. <span data-ttu-id="51ca3-127">Vis Linjer-delen.</span><span class="sxs-lookup"><span data-stu-id="51ca3-127">Expand the Lines section.</span></span>
+5. <span data-ttu-id="51ca3-128">Sett verdien for Antall til 4.</span><span class="sxs-lookup"><span data-stu-id="51ca3-128">Set Quantity to '4'.</span></span>
+    * <span data-ttu-id="51ca3-129">Her kan du fortsatt manuelt angi antallet som blir mottatt for hver linje i ordren.</span><span class="sxs-lookup"><span data-stu-id="51ca3-129">Here you are able to manually specify the quantity that is being received for each line on the order.</span></span>  
+6. <span data-ttu-id="51ca3-130">Skjul Linjer-delen.</span><span class="sxs-lookup"><span data-stu-id="51ca3-130">Collapse the Lines section.</span></span>
+7. <span data-ttu-id="51ca3-131">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="51ca3-131">Click OK.</span></span>
+    * <span data-ttu-id="51ca3-132">Varene er nå registrert som mottatt i bestillingen, og en produktkvitteringsjournal er opprettet som dokument for å gjenspeile dette.</span><span class="sxs-lookup"><span data-stu-id="51ca3-132">The goods have now been recorded as received on the purchase order, and a product receipt journal has been created as document to reflect this.</span></span> <span data-ttu-id="51ca3-133">Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt og når.</span><span class="sxs-lookup"><span data-stu-id="51ca3-133">You can use the Product receipt action to review the journals created with the purchase order, and see what was received, and when.</span></span>  
 

@@ -5,55 +5,54 @@ author: Darinkramer
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-22
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: 7da597a682006cddb44ff9354813b07c15c1a449
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305683"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-19-2018"></a><span data-ttu-id="13345-103">Hva er nytt eller endret i Dynamics 365 for Talent Core HR (19. oktober 2018)</span><span class="sxs-lookup"><span data-stu-id="13345-103">What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-19-2018"></a><span data-ttu-id="b54d3-103">Hva er nytt eller endret i Dynamics 365 for Talent Core HR (19. oktober 2018)</span><span class="sxs-lookup"><span data-stu-id="b54d3-103">What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)</span></span>
 
 [!include[banner](includes/banner.md)]
 
-<span data-ttu-id="13345-104">**Build 8.1.1067**</span><span class="sxs-lookup"><span data-stu-id="13345-104">**Build 8.1.1067**</span></span>
+<span data-ttu-id="b54d3-104">**Build 8.1.1067**</span><span class="sxs-lookup"><span data-stu-id="b54d3-104">**Build 8.1.1067**</span></span>
 
-<span data-ttu-id="13345-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Core HR.</span><span class="sxs-lookup"><span data-stu-id="13345-105">This topic describes features that are either new or changed in Core HR.</span></span>
+<span data-ttu-id="b54d3-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Core HR.</span><span class="sxs-lookup"><span data-stu-id="b54d3-105">This topic describes features that are either new or changed in Core HR.</span></span>
 
-## <a name="allow-managers-to-update-time-off-requests"></a><span data-ttu-id="13345-106">Tillate ledere å oppdatere fraværsforespørsler</span><span class="sxs-lookup"><span data-stu-id="13345-106">Allow managers to update time off requests</span></span>
+## <a name="allow-managers-to-update-time-off-requests"></a><span data-ttu-id="b54d3-106">Tillate ledere å oppdatere fraværsforespørsler</span><span class="sxs-lookup"><span data-stu-id="b54d3-106">Allow managers to update time off requests</span></span>
 
-<span data-ttu-id="13345-107">Fraværsforespørsler fra ansatte må oppdateres etter at de godkjennes gjennom arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="13345-107">Employee time off requests may need to be updated after they are approved through the workflow.</span></span> <span data-ttu-id="13345-108">I mange tilfeller gjør lederen disse oppdateringene på vegne av den ansatte.</span><span class="sxs-lookup"><span data-stu-id="13345-108">In many cases, the manager makes these updates on the employee’s behalf.</span></span> <span data-ttu-id="13345-109">Denne nye funksjonen gjør det mulig for ledere å oppdatere fravær eller avbryte fraværsforespørsler på vegne av de ansatte.</span><span class="sxs-lookup"><span data-stu-id="13345-109">This new feature provides the ability for managers to update time off or cancel time off requests on behalf of their employees.</span></span> <span data-ttu-id="13345-110">Denne funksjonen styres av parameteren **Arbeid på vegne av** som kan angis på siden **Personalparametere**.</span><span class="sxs-lookup"><span data-stu-id="13345-110">This capability is controlled by the **Work on behalf** parameter that can be set on the **Human Resource Parameters** page.</span></span> 
+<span data-ttu-id="b54d3-107">Fraværsforespørsler fra ansatte må oppdateres etter at de godkjennes gjennom arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="b54d3-107">Employee time off requests may need to be updated after they are approved through the workflow.</span></span> <span data-ttu-id="b54d3-108">I mange tilfeller gjør lederen disse oppdateringene på vegne av den ansatte.</span><span class="sxs-lookup"><span data-stu-id="b54d3-108">In many cases, the manager makes these updates on the employee’s behalf.</span></span> <span data-ttu-id="b54d3-109">Denne nye funksjonen gjør det mulig for ledere å oppdatere fravær eller avbryte fraværsforespørsler på vegne av de ansatte.</span><span class="sxs-lookup"><span data-stu-id="b54d3-109">This new feature provides the ability for managers to update time off or cancel time off requests on behalf of their employees.</span></span> <span data-ttu-id="b54d3-110">Denne funksjonen styres av parameteren **Arbeid på vegne av** som kan angis på siden **Personalparametere**.</span><span class="sxs-lookup"><span data-stu-id="b54d3-110">This capability is controlled by the **Work on behalf** parameter that can be set on the **Human Resource Parameters** page.</span></span> 
  
-## <a name="allow-hr-to-update-time-off-requests"></a><span data-ttu-id="13345-111">Tillate HR å oppdatere fraværsforespørsler</span><span class="sxs-lookup"><span data-stu-id="13345-111">Allow HR to update time off requests</span></span>
+## <a name="allow-hr-to-update-time-off-requests"></a><span data-ttu-id="b54d3-111">Tillate HR å oppdatere fraværsforespørsler</span><span class="sxs-lookup"><span data-stu-id="b54d3-111">Allow HR to update time off requests</span></span>
 
-<span data-ttu-id="13345-112">På samme måte som funksjonen ovenfor, må fraværsforespørsler fra ansatte kanskje oppdateres av HR etter at de tidligere er godkjent via arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="13345-112">Similar to the feature above, employee time off requests may need to be updated by HR after they have been previously approved through the workflow.</span></span> <span data-ttu-id="13345-113">Denne funksjonen gjør det mulig for HR å oppdatere fraværsforespørsler.</span><span class="sxs-lookup"><span data-stu-id="13345-113">This feature provides the ability for HR users to update time off requests.</span></span> <span data-ttu-id="13345-114">Funksjonaliteten aktiveres i **Mennesker**-arbeidsområdet og på siden **Arbeider** ved hjelp av et nytt alternativ som kalles **Vis fridager**.</span><span class="sxs-lookup"><span data-stu-id="13345-114">The capability is enabled in the **People** workspace and on the **Worker** page, using a new option called **View time off**.</span></span> <span data-ttu-id="13345-115">På disse sidene kan HR-brukere vise forespørsler og oppdatere fraværestransaksjoner, på lignende måte som ledere kan utføre disse handlingene.</span><span class="sxs-lookup"><span data-stu-id="13345-115">On those pages, HR users can view requests and update time off transactions, similar to how managers can perform these actions.</span></span>
+<span data-ttu-id="b54d3-112">På samme måte som funksjonen ovenfor, må fraværsforespørsler fra ansatte kanskje oppdateres av HR etter at de tidligere er godkjent via arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="b54d3-112">Similar to the feature above, employee time off requests may need to be updated by HR after they have been previously approved through the workflow.</span></span> <span data-ttu-id="b54d3-113">Denne funksjonen gjør det mulig for HR å oppdatere fraværsforespørsler.</span><span class="sxs-lookup"><span data-stu-id="b54d3-113">This feature provides the ability for HR users to update time off requests.</span></span> <span data-ttu-id="b54d3-114">Funksjonaliteten aktiveres i **Mennesker**-arbeidsområdet og på siden **Arbeider** ved hjelp av et nytt alternativ som kalles **Vis fridager**.</span><span class="sxs-lookup"><span data-stu-id="b54d3-114">The capability is enabled in the **People** workspace and on the **Worker** page, using a new option called **View time off**.</span></span> <span data-ttu-id="b54d3-115">På disse sidene kan HR-brukere vise forespørsler og oppdatere fraværestransaksjoner, på lignende måte som ledere kan utføre disse handlingene.</span><span class="sxs-lookup"><span data-stu-id="b54d3-115">On those pages, HR users can view requests and update time off transactions, similar to how managers can perform these actions.</span></span>
 
-<span data-ttu-id="13345-116">Sikkerhetsplikten som styrer tilgang til denne funksjonaliteten er:</span><span class="sxs-lookup"><span data-stu-id="13345-116">The security duty that controls access to this functionality is:</span></span>
-- <span data-ttu-id="13345-117">Plikt: Opprettholde arbeiderspesifikke permisjons- og fraværsprosesser.</span><span class="sxs-lookup"><span data-stu-id="13345-117">Duty: Maintain worker-specific leave and absence processes.</span></span>
-- <span data-ttu-id="13345-118">Rettighet: Opprettholde forespørsler om permisjon og fravær for alle arbeidere.</span><span class="sxs-lookup"><span data-stu-id="13345-118">Privilege: Maintain leave and absence requests for all workers.</span></span>
+<span data-ttu-id="b54d3-116">Sikkerhetsplikten som styrer tilgang til denne funksjonaliteten er:</span><span class="sxs-lookup"><span data-stu-id="b54d3-116">The security duty that controls access to this functionality is:</span></span>
+- <span data-ttu-id="b54d3-117">Plikt: Opprettholde arbeiderspesifikke permisjons- og fraværsprosesser.</span><span class="sxs-lookup"><span data-stu-id="b54d3-117">Duty: Maintain worker-specific leave and absence processes.</span></span>
+- <span data-ttu-id="b54d3-118">Rettighet: Opprettholde forespørsler om permisjon og fravær for alle arbeidere.</span><span class="sxs-lookup"><span data-stu-id="b54d3-118">Privilege: Maintain leave and absence requests for all workers.</span></span>
 
-## <a name="other-changes"></a><span data-ttu-id="13345-119">Andre endringer</span><span class="sxs-lookup"><span data-stu-id="13345-119">Other changes</span></span>
-<span data-ttu-id="13345-120">Følgende oppdateringer er gjort i denne versjonen:</span><span class="sxs-lookup"><span data-stu-id="13345-120">The following updates have been made in this release:</span></span>
-- <span data-ttu-id="13345-121">Endringer i arbeideransettelseshandlinger, slik at de ikke lenger "sitter fast" i **Arbeidsflyt fullført**-tilstanden.</span><span class="sxs-lookup"><span data-stu-id="13345-121">Changes to worker hire actions so that they are no longer "stuck" in **Workflow complete** state.</span></span>
-- <span data-ttu-id="13345-122">Ansettelsesposten kan nå opprettes uten en startdato for ansettelse.</span><span class="sxs-lookup"><span data-stu-id="13345-122">Employment record can now be created without an employment start date.</span></span>
-- <span data-ttu-id="13345-123">Dynamics 365 Talent-registreringsdatoen for et kurs i Ansattselvbetjening bruker nå tidssoneforskyvningen på datoen.</span><span class="sxs-lookup"><span data-stu-id="13345-123">The Dynamics 365 Talent registration date for a course shown in Employee self-service now applies the time zone offset to the date.</span></span>
-- <span data-ttu-id="13345-124">Excel-filer kan importeres flere ganger uten feil ved hjelp av **Ansattenhet**.</span><span class="sxs-lookup"><span data-stu-id="13345-124">Excel files can be imported multiple times without any errors using **Employee Entity**.</span></span>
+## <a name="other-changes"></a><span data-ttu-id="b54d3-119">Andre endringer</span><span class="sxs-lookup"><span data-stu-id="b54d3-119">Other changes</span></span>
+<span data-ttu-id="b54d3-120">Følgende oppdateringer er gjort i denne versjonen:</span><span class="sxs-lookup"><span data-stu-id="b54d3-120">The following updates have been made in this release:</span></span>
+- <span data-ttu-id="b54d3-121">Endringer i arbeideransettelseshandlinger, slik at de ikke lenger "sitter fast" i **Arbeidsflyt fullført**-tilstanden.</span><span class="sxs-lookup"><span data-stu-id="b54d3-121">Changes to worker hire actions so that they are no longer "stuck" in **Workflow complete** state.</span></span>
+- <span data-ttu-id="b54d3-122">Ansettelsesposten kan nå opprettes uten en startdato for ansettelse.</span><span class="sxs-lookup"><span data-stu-id="b54d3-122">Employment record can now be created without an employment start date.</span></span>
+- <span data-ttu-id="b54d3-123">Dynamics 365 Talent-registreringsdatoen for et kurs i Ansattselvbetjening bruker nå tidssoneforskyvningen på datoen.</span><span class="sxs-lookup"><span data-stu-id="b54d3-123">The Dynamics 365 Talent registration date for a course shown in Employee self-service now applies the time zone offset to the date.</span></span>
+- <span data-ttu-id="b54d3-124">Excel-filer kan importeres flere ganger uten feil ved hjelp av **Ansattenhet**.</span><span class="sxs-lookup"><span data-stu-id="b54d3-124">Excel files can be imported multiple times without any errors using **Employee Entity**.</span></span>
 
-## <a name="known-issue"></a><span data-ttu-id="13345-125">Kjent problem</span><span class="sxs-lookup"><span data-stu-id="13345-125">Known issue</span></span>
+## <a name="known-issue"></a><span data-ttu-id="b54d3-125">Kjent problem</span><span class="sxs-lookup"><span data-stu-id="b54d3-125">Known issue</span></span>
 
-- <span data-ttu-id="13345-126">**Problem**: Når du legger til en ny tilknytning til en arbeider, nedtones **Ny** og **Rediger**-knappene.</span><span class="sxs-lookup"><span data-stu-id="13345-126">**Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out.</span></span> 
-- <span data-ttu-id="13345-127">**Løsning:** Før du åpner vedleggssiden må du kontrollere at faktaboksene på **Arbeider**-siden er lukket.</span><span class="sxs-lookup"><span data-stu-id="13345-127">**Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="13345-128">Hvis faktaboksene er lukket når **Arbeider**-siden lastes, blir vedleggsknappene aktivert.</span><span class="sxs-lookup"><span data-stu-id="13345-128">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="13345-129">(Dette problemet vil bli løst i neste plattformoppdatering.)</span><span class="sxs-lookup"><span data-stu-id="13345-129">(This issue will be fixed in the next platform update.)</span></span>
-
+- <span data-ttu-id="b54d3-126">**Problem**: Når du legger til en ny tilknytning til en arbeider, nedtones **Ny** og **Rediger**-knappene.</span><span class="sxs-lookup"><span data-stu-id="b54d3-126">**Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out.</span></span> 
+- <span data-ttu-id="b54d3-127">**Løsning:** Før du åpner vedleggssiden må du kontrollere at faktaboksene på **Arbeider**-siden er lukket.</span><span class="sxs-lookup"><span data-stu-id="b54d3-127">**Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="b54d3-128">Hvis faktaboksene er lukket når **Arbeider**-siden lastes, blir vedleggsknappene aktivert.</span><span class="sxs-lookup"><span data-stu-id="b54d3-128">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="b54d3-129">(Dette problemet vil bli løst i neste plattformoppdatering.)</span><span class="sxs-lookup"><span data-stu-id="b54d3-129">(This issue will be fixed in the next platform update.)</span></span>

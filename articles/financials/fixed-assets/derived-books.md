@@ -1,13 +1,13 @@
 ---
-title: "Avledede tablåer"
-description: "Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten."
+title: Avledede tablåer
+description: Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,35 +18,33 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 153b6437205d5a849fa6a90c0d3b9f3d51dd6768
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313917"
 ---
-
-# <a name="derived-books"></a><span data-ttu-id="1ba5c-103">Avledede tablåer</span><span class="sxs-lookup"><span data-stu-id="1ba5c-103">Derived books</span></span>
+# <a name="derived-books"></a><span data-ttu-id="d4082-103">Avledede tablåer</span><span class="sxs-lookup"><span data-stu-id="d4082-103">Derived books</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1ba5c-104">Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-104">This article provides an overview of derived book functionality.</span></span>
+<span data-ttu-id="d4082-104">Denne artikkelen inneholder en oversikt over den avledede tablåfunksjonaliteten.</span><span class="sxs-lookup"><span data-stu-id="d4082-104">This article provides an overview of derived book functionality.</span></span>
 
-<span data-ttu-id="1ba5c-105">Formålet med avledede tablåer er å forenkle postering av anleggsmiddeltablåtransaksjoner som er planlagt for regelmessige intervaller.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="1ba5c-106">Du kan velge ett tablå som det primære tablået.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-106">You choose one book as the primary book.</span></span> <span data-ttu-id="1ba5c-107">Dette er vanligvis tablået som brukes til regnskapsavskrivning.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="1ba5c-108">Du knytter det deretter til de andre tablåene som brukes til å postere transaksjoner i samme intervaller som det primære tablået.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="1ba5c-109">Tablåer for avskrivning av skatt brukes ofte som avledede tablåer.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-109">Tax depreciation books are often set up as derived books.</span></span> 
+<span data-ttu-id="d4082-105">Formålet med avledede tablåer er å forenkle postering av anleggsmiddeltablåtransaksjoner som er planlagt for regelmessige intervaller.</span><span class="sxs-lookup"><span data-stu-id="d4082-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="d4082-106">Du kan velge ett tablå som det primære tablået.</span><span class="sxs-lookup"><span data-stu-id="d4082-106">You choose one book as the primary book.</span></span> <span data-ttu-id="d4082-107">Dette er vanligvis tablået som brukes til regnskapsavskrivning.</span><span class="sxs-lookup"><span data-stu-id="d4082-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="d4082-108">Du knytter det deretter til de andre tablåene som brukes til å postere transaksjoner i samme intervaller som det primære tablået.</span><span class="sxs-lookup"><span data-stu-id="d4082-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="d4082-109">Tablåer for avskrivning av skatt brukes ofte som avledede tablåer.</span><span class="sxs-lookup"><span data-stu-id="d4082-109">Tax depreciation books are often set up as derived books.</span></span> 
 
-<span data-ttu-id="1ba5c-110">De vanligste transaksjonene som brukes til å postere til avledede tablåer, er anskaffelse, anskaffelsesjusteringer og anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
+<span data-ttu-id="d4082-110">De vanligste transaksjonene som brukes til å postere til avledede tablåer, er anskaffelse, anskaffelsesjusteringer og anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="d4082-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
 
-## <a name="example"></a><span data-ttu-id="1ba5c-111">Eksempel</span><span class="sxs-lookup"><span data-stu-id="1ba5c-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d4082-111">Eksempel</span><span class="sxs-lookup"><span data-stu-id="d4082-111">Example</span></span>
 
-<span data-ttu-id="1ba5c-112">Tablå B og tablå C er satt opp som avledede tablåer for tablå A for anskaffelsestransaksjonstypen.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="1ba5c-113">I tablå A oppgir du en anskaffelsestransaksjon på 1500,00 for anleggsmiddel 123.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
+<span data-ttu-id="d4082-112">Tablå B og tablå C er satt opp som avledede tablåer for tablå A for anskaffelsestransaksjonstypen.</span><span class="sxs-lookup"><span data-stu-id="d4082-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="d4082-113">I tablå A oppgir du en anskaffelsestransaksjon på 1500,00 for anleggsmiddel 123.</span><span class="sxs-lookup"><span data-stu-id="d4082-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
 
-<span data-ttu-id="1ba5c-114">Når transaksjonen er postert, genereres en anskaffelsestransaksjon på 1500,00 som posteres for anleggsmiddel 123 i tablå B, og for anleggsmiddel 123 i tablå C.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="1ba5c-115">Når du forbereder transaksjonene for det primære tablået som skal posteres i anleggsmiddeljournalen, kan du også vise og endre transaksjonene til de avledede tablåene.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="1ba5c-116">Hvis du forbereder de primære tablåtransaksjonene i en annen journal, vises ikke transaksjonene til den avledede verdien.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="1ba5c-117">De posteres imidlertid til de passende kontoene og posteringslagene når du posterer de primære tablåtransaksjonene.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
+<span data-ttu-id="d4082-114">Når transaksjonen er postert, genereres en anskaffelsestransaksjon på 1500,00 som posteres for anleggsmiddel 123 i tablå B, og for anleggsmiddel 123 i tablå C.</span><span class="sxs-lookup"><span data-stu-id="d4082-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="d4082-115">Når du forbereder transaksjonene for det primære tablået som skal posteres i anleggsmiddeljournalen, kan du også vise og endre transaksjonene til de avledede tablåene.</span><span class="sxs-lookup"><span data-stu-id="d4082-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="d4082-116">Hvis du forbereder de primære tablåtransaksjonene i en annen journal, vises ikke transaksjonene til den avledede verdien.</span><span class="sxs-lookup"><span data-stu-id="d4082-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="d4082-117">De posteres imidlertid til de passende kontoene og posteringslagene når du posterer de primære tablåtransaksjonene.</span><span class="sxs-lookup"><span data-stu-id="d4082-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
 
 > [!NOTE]                                                                                                                               
-> <span data-ttu-id="1ba5c-118">Tablåer som brukes til å postere transaksjoner i intervaller som er forskjellig fra intervallene til det primære tablået, må knyttes til de faste anleggsmidlene som separate tablåer, og ikke som avledede tablåer.</span><span class="sxs-lookup"><span data-stu-id="1ba5c-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
+> <span data-ttu-id="d4082-118">Tablåer som brukes til å postere transaksjoner i intervaller som er forskjellig fra intervallene til det primære tablået, må knyttes til de faste anleggsmidlene som separate tablåer, og ikke som avledede tablåer.</span><span class="sxs-lookup"><span data-stu-id="d4082-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
 
-<span data-ttu-id="1ba5c-119">Hvis du vil ha mer informasjon, kan du se [Postere med avledede tablåer](post-derived-value-models.md).</span><span class="sxs-lookup"><span data-stu-id="1ba5c-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
-
+<span data-ttu-id="d4082-119">Hvis du vil ha mer informasjon, kan du se [Postere med avledede tablåer](post-derived-value-models.md).</span><span class="sxs-lookup"><span data-stu-id="d4082-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
 
 
 

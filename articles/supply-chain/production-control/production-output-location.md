@@ -1,13 +1,13 @@
 ---
 title: Produksjonsutleveringssted
-description: "Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet."
+description: Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,28 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 9445db6d78d46831ed961977d6041459f118fee9
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315780"
 ---
-
-# <a name="production-output-location"></a><span data-ttu-id="90285-103">Produksjonsutleveringssted</span><span class="sxs-lookup"><span data-stu-id="90285-103">Production output location</span></span>
+# <a name="production-output-location"></a><span data-ttu-id="3ca3c-103">Produksjonsutleveringssted</span><span class="sxs-lookup"><span data-stu-id="3ca3c-103">Production output location</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="90285-104">Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.</span><span class="sxs-lookup"><span data-stu-id="90285-104">This topic describes the hierarchy that is used to identify the production output location.</span></span>
+<span data-ttu-id="3ca3c-104">Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-104">This topic describes the hierarchy that is used to identify the production output location.</span></span>
 
-<span data-ttu-id="90285-105">Produksjonsutleveringsstedet er stedet der en ferdig vare først lagres etter at den er produsert.</span><span class="sxs-lookup"><span data-stu-id="90285-105">The production output location is the location where a finished good is first stored after it's produced.</span></span> <span data-ttu-id="90285-106">Dette stedet er vanligvis nær produksjonsprosessen som produserer den ferdige varen.</span><span class="sxs-lookup"><span data-stu-id="90285-106">Usually, this location is close to the production process that produces the finished good.</span></span> <span data-ttu-id="90285-107">Produksjonsutleveringsstedet brukes som et midlertidig lager for materialet før det flyttes til forsendelsesområdet, et lagringssted, et produksjonsinnleveringssted for en produksjonsprosess nedstrøms og så videre.</span><span class="sxs-lookup"><span data-stu-id="90285-107">The production output location is used as intermediate storage for the material before it's moved on to the shipment area, a storage location, a production input location for a downstream production process, and so on.</span></span> 
+<span data-ttu-id="3ca3c-105">Produksjonsutleveringsstedet er stedet der en ferdig vare først lagres etter at den er produsert.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-105">The production output location is the location where a finished good is first stored after it's produced.</span></span> <span data-ttu-id="3ca3c-106">Dette stedet er vanligvis nær produksjonsprosessen som produserer den ferdige varen.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-106">Usually, this location is close to the production process that produces the finished good.</span></span> <span data-ttu-id="3ca3c-107">Produksjonsutleveringsstedet brukes som et midlertidig lager for materialet før det flyttes til forsendelsesområdet, et lagringssted, et produksjonsinnleveringssted for en produksjonsprosess nedstrøms og så videre.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-107">The production output location is used as intermediate storage for the material before it's moved on to the shipment area, a storage location, a production input location for a downstream production process, and so on.</span></span> 
 
-<span data-ttu-id="90285-108">Et standard produksjonsutleveringssted angis når ferdige varer rapporteres på en produksjonsordre eller partiordre.</span><span class="sxs-lookup"><span data-stu-id="90285-108">A default production output location is set when finished goods are reported on a production order or batch order.</span></span> <span data-ttu-id="90285-109">Det følgende hierarkiet brukes til å identifisere dette utleveringsstedet:</span><span class="sxs-lookup"><span data-stu-id="90285-109">The following hierarchy is used to identify this output location:</span></span>
+<span data-ttu-id="3ca3c-108">Et standard produksjonsutleveringssted angis når ferdige varer rapporteres på en produksjonsordre eller partiordre.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-108">A default production output location is set when finished goods are reported on a production order or batch order.</span></span> <span data-ttu-id="3ca3c-109">Det følgende hierarkiet brukes til å identifisere dette utleveringsstedet:</span><span class="sxs-lookup"><span data-stu-id="3ca3c-109">The following hierarchy is used to identify this output location:</span></span>
 
-1. <span data-ttu-id="90285-110">Bruk utleveringsstedet som er definert i produksjonsordrer eller partiordrehodet.</span><span class="sxs-lookup"><span data-stu-id="90285-110">Use the output location that is defined on the production order or batch order header.</span></span>
-2. <span data-ttu-id="90285-111">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert på ressursen som brukes av den siste operasjonen som er definert i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="90285-111">If no location is found there, use the output location that is defined on the resource that is used by the last operation that is defined in the production route.</span></span>
-3. <span data-ttu-id="90285-112">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert på ressursgruppen som brukes av ressursen for den siste operasjonen som er definert i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="90285-112">If no location is found there, use the output location that is defined on the resource group that is used by the resource for the last operation that is defined in the production route.</span></span>
-4. <span data-ttu-id="90285-113">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert i lageret som er definert for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="90285-113">If no location is found there, use the output location that is defined on the warehouse that is defined for the production order.</span></span>
+1. <span data-ttu-id="3ca3c-110">Bruk utleveringsstedet som er definert i produksjonsordrer eller partiordrehodet.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-110">Use the output location that is defined on the production order or batch order header.</span></span>
+2. <span data-ttu-id="3ca3c-111">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert på ressursen som brukes av den siste operasjonen som er definert i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-111">If no location is found there, use the output location that is defined on the resource that is used by the last operation that is defined in the production route.</span></span>
+3. <span data-ttu-id="3ca3c-112">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert på ressursgruppen som brukes av ressursen for den siste operasjonen som er definert i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-112">If no location is found there, use the output location that is defined on the resource group that is used by the resource for the last operation that is defined in the production route.</span></span>
+4. <span data-ttu-id="3ca3c-113">Hvis det ikke finnes noe sted der, kan du bruke utleveringsstedet som er definert i lageret som er definert for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-113">If no location is found there, use the output location that is defined on the warehouse that is defined for the production order.</span></span>
 
-<span data-ttu-id="90285-114">Et standard produksjonsutleveringssted angis bare for produkter som er definert ved hjelp av avanserte lagerprosesser.</span><span class="sxs-lookup"><span data-stu-id="90285-114">A default production output location is set only for products that are set up by using advanced warehouse processes.</span></span> <span data-ttu-id="90285-115">Når denne typen vare er rapportert som fullført, opprettes lagerarbeid av typen **Plasser ferdigvarer** eller **Plasser koprodukt og biprodukt**.</span><span class="sxs-lookup"><span data-stu-id="90285-115">When this type of item is reported as finished, warehouse work of the **Finished goods put away** or **Co-product and by-product put away** type is created.</span></span> <span data-ttu-id="90285-116">Denne typen arbeid bruker produksjonsutleveringsstedet som plukkested.</span><span class="sxs-lookup"><span data-stu-id="90285-116">This type of work uses the production output location as the pick location.</span></span> <span data-ttu-id="90285-117">Plasseringsstedet bestemmes av instruksjonene for stedet.</span><span class="sxs-lookup"><span data-stu-id="90285-117">The put-away location is determined by the location directives.</span></span>
-
+<span data-ttu-id="3ca3c-114">Et standard produksjonsutleveringssted angis bare for produkter som er definert ved hjelp av avanserte lagerprosesser.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-114">A default production output location is set only for products that are set up by using advanced warehouse processes.</span></span> <span data-ttu-id="3ca3c-115">Når denne typen vare er rapportert som fullført, opprettes lagerarbeid av typen **Plasser ferdigvarer** eller **Plasser koprodukt og biprodukt**.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-115">When this type of item is reported as finished, warehouse work of the **Finished goods put away** or **Co-product and by-product put away** type is created.</span></span> <span data-ttu-id="3ca3c-116">Denne typen arbeid bruker produksjonsutleveringsstedet som plukkested.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-116">This type of work uses the production output location as the pick location.</span></span> <span data-ttu-id="3ca3c-117">Plasseringsstedet bestemmes av instruksjonene for stedet.</span><span class="sxs-lookup"><span data-stu-id="3ca3c-117">The put-away location is determined by the location directives.</span></span>

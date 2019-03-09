@@ -1,13 +1,13 @@
---- 
+---
 title: Definere ressursfunksjoner
-description: "Ressursfunksjoner beskriver hva operasjonsressursene kan utføre."
+description: Ressursfunksjoner beskriver hva operasjonsressursene kan utføre.
 author: sorenva
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: shylaw
@@ -17,36 +17,35 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0940883d0e9edf56e61b5ecd817062aac5e0f8a6
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340160"
 ---
-# <a name="define-resource-capabilities"></a><span data-ttu-id="bbdca-103">Definere ressursfunksjoner</span><span class="sxs-lookup"><span data-stu-id="bbdca-103">Define resource capabilities</span></span>
+# <a name="define-resource-capabilities"></a><span data-ttu-id="72d39-103">Definere ressursfunksjoner</span><span class="sxs-lookup"><span data-stu-id="72d39-103">Define resource capabilities</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bbdca-104">Ressursfunksjoner beskriver hva operasjonsressursene kan utføre.</span><span class="sxs-lookup"><span data-stu-id="bbdca-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="bbdca-105">Under planlegging sammenlignes kravene for hver jobb og en operasjon mot mulighetene i de tilgjengelige ressursene.</span><span class="sxs-lookup"><span data-stu-id="bbdca-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="bbdca-106">Denne oppgaveveiledning hjelper deg med å opprette en ressursfunksjon og tilordne den til en ressurs.</span><span class="sxs-lookup"><span data-stu-id="bbdca-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="bbdca-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="bbdca-107">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="72d39-104">Ressursfunksjoner beskriver hva operasjonsressursene kan utføre.</span><span class="sxs-lookup"><span data-stu-id="72d39-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="72d39-105">Under planlegging sammenlignes kravene for hver jobb og en operasjon mot mulighetene i de tilgjengelige ressursene.</span><span class="sxs-lookup"><span data-stu-id="72d39-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="72d39-106">Denne oppgaveveiledning hjelper deg med å opprette en ressursfunksjon og tilordne den til en ressurs.</span><span class="sxs-lookup"><span data-stu-id="72d39-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="72d39-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="72d39-107">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-resource-capability"></a><span data-ttu-id="bbdca-108">Opprett en ressursfunksjon</span><span class="sxs-lookup"><span data-stu-id="bbdca-108">Create a resource capability</span></span>
-1. <span data-ttu-id="bbdca-109">Gå til Ressursfunksjoner.</span><span class="sxs-lookup"><span data-stu-id="bbdca-109">Go to Resource capabilities.</span></span>
-2. <span data-ttu-id="bbdca-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="bbdca-110">Click New.</span></span>
-3. <span data-ttu-id="bbdca-111">Skriv inn IDen til ressursfunksjonen i Funksjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-111">In the Capability field, type the ID of the resource capability.</span></span>
-    * <span data-ttu-id="bbdca-112">For en bestemt operasjon kan du bruke funksjons-IDen til å angi at ressurser må ha denne muligheten til å utføre operasjonen.</span><span class="sxs-lookup"><span data-stu-id="bbdca-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
-4. <span data-ttu-id="bbdca-113">Angi en kort beskrivelse av funksjonen i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-113">In the Description field, enter a description of the capability.</span></span>
+## <a name="create-a-resource-capability"></a><span data-ttu-id="72d39-108">Opprett en ressursfunksjon</span><span class="sxs-lookup"><span data-stu-id="72d39-108">Create a resource capability</span></span>
+1. <span data-ttu-id="72d39-109">Gå til Ressursfunksjoner.</span><span class="sxs-lookup"><span data-stu-id="72d39-109">Go to Resource capabilities.</span></span>
+2. <span data-ttu-id="72d39-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="72d39-110">Click New.</span></span>
+3. <span data-ttu-id="72d39-111">Skriv inn IDen til ressursfunksjonen i Funksjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-111">In the Capability field, type the ID of the resource capability.</span></span>
+    * <span data-ttu-id="72d39-112">For en bestemt operasjon kan du bruke funksjons-IDen til å angi at ressurser må ha denne muligheten til å utføre operasjonen.</span><span class="sxs-lookup"><span data-stu-id="72d39-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
+4. <span data-ttu-id="72d39-113">Angi en kort beskrivelse av funksjonen i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-113">In the Description field, enter a description of the capability.</span></span>
 
-## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="bbdca-114">Tilordne funksjon til en ressurs</span><span class="sxs-lookup"><span data-stu-id="bbdca-114">Assign capability to a resource</span></span>
-1. <span data-ttu-id="bbdca-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="bbdca-115">Click Add.</span></span>
-2. <span data-ttu-id="bbdca-116">Skriv inn IDen til ressursen i Ressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-116">In the Resource field, type the ID of the resource.</span></span>
-    * <span data-ttu-id="bbdca-117">En ressursfunksjon kan tilordnes til én eller flere ressurser.</span><span class="sxs-lookup"><span data-stu-id="bbdca-117">A resource capability can be assigned to one or more resources.</span></span>  
-3. <span data-ttu-id="bbdca-118">Angi en dato i Utløp-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-118">In the Expiration field, enter a date.</span></span>
-    * <span data-ttu-id="bbdca-119">Du kan bruke dette feltet til å angi at en ressurs har funksjonen i en begrenset periode.</span><span class="sxs-lookup"><span data-stu-id="bbdca-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
-4. <span data-ttu-id="bbdca-120">Angi et tall i Prioritet-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-120">In the Priority field, enter a number.</span></span>
-    * <span data-ttu-id="bbdca-121">Når du planlegger jobber og operasjoner, kan du angi om du velger ressursene etter prioritet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="bbdca-122">Hvis du vil gjøre dette, og mer enn én ressurs kan utføre jobben eller operasjonen etter ønsket dato, velges ressursen som har lavest prioritet i forhold til den nødvendige kapasiteten.</span><span class="sxs-lookup"><span data-stu-id="bbdca-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
-5. <span data-ttu-id="bbdca-123">Angi et nummer i Nivå-feltet.</span><span class="sxs-lookup"><span data-stu-id="bbdca-123">In the Level field, enter a number.</span></span>
-    * <span data-ttu-id="bbdca-124">Når du angir at en jobb eller operasjon krever en bestemt funksjon, kan du også angi det minste tillatelsesnivå som kreves.</span><span class="sxs-lookup"><span data-stu-id="bbdca-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="bbdca-125">Bruk ressursnivået til å skille mellom ressurser som kan utføre den samme jobben, men med forskjellige hastigheter, styrker, størrelser og så videre.</span><span class="sxs-lookup"><span data-stu-id="bbdca-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
-
+## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="72d39-114">Tilordne funksjon til en ressurs</span><span class="sxs-lookup"><span data-stu-id="72d39-114">Assign capability to a resource</span></span>
+1. <span data-ttu-id="72d39-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="72d39-115">Click Add.</span></span>
+2. <span data-ttu-id="72d39-116">Skriv inn IDen til ressursen i Ressurs-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-116">In the Resource field, type the ID of the resource.</span></span>
+    * <span data-ttu-id="72d39-117">En ressursfunksjon kan tilordnes til én eller flere ressurser.</span><span class="sxs-lookup"><span data-stu-id="72d39-117">A resource capability can be assigned to one or more resources.</span></span>  
+3. <span data-ttu-id="72d39-118">Angi en dato i Utløp-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-118">In the Expiration field, enter a date.</span></span>
+    * <span data-ttu-id="72d39-119">Du kan bruke dette feltet til å angi at en ressurs har funksjonen i en begrenset periode.</span><span class="sxs-lookup"><span data-stu-id="72d39-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
+4. <span data-ttu-id="72d39-120">Angi et tall i Prioritet-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-120">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="72d39-121">Når du planlegger jobber og operasjoner, kan du angi om du velger ressursene etter prioritet.</span><span class="sxs-lookup"><span data-stu-id="72d39-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="72d39-122">Hvis du vil gjøre dette, og mer enn én ressurs kan utføre jobben eller operasjonen etter ønsket dato, velges ressursen som har lavest prioritet i forhold til den nødvendige kapasiteten.</span><span class="sxs-lookup"><span data-stu-id="72d39-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
+5. <span data-ttu-id="72d39-123">Angi et nummer i Nivå-feltet.</span><span class="sxs-lookup"><span data-stu-id="72d39-123">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="72d39-124">Når du angir at en jobb eller operasjon krever en bestemt funksjon, kan du også angi det minste tillatelsesnivå som kreves.</span><span class="sxs-lookup"><span data-stu-id="72d39-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="72d39-125">Bruk ressursnivået til å skille mellom ressurser som kan utføre den samme jobben, men med forskjellige hastigheter, styrker, størrelser og så videre.</span><span class="sxs-lookup"><span data-stu-id="72d39-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
 
